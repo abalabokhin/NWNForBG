@@ -130,5 +130,5 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
   BUT_ONLY_IF_IT_CHANGES*/
 
 //Areas
-COPY ~TorturedSoulsLite/are~ ~override~
+COPY ~NWNForBG/are~ ~override~
 
