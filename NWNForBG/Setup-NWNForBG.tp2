@@ -1,0 +1,878 @@
+
+// NWN For BG
+
+BACKUP ~NWNForBG\backup~
+AUTHOR ~Alexander Kanechev~
+VERSION ~0.1~
+
+ALWAYS
+ ACTION_IF (GAME_IS ~eet~) BEGIN
+  OUTER_SET bg2_chapter = 12
+ END ELSE BEGIN
+  OUTER_SET bg2_chapter = 0
+ END
+ OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+  OUTER_SET bg2_chapter = bg2_chapter + 1
+  OUTER_SPRINT name_source ~bg2_chapter_%i%~
+  OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+ END
+ END
+
+//AUTO_TRA ~TorturedSoulsLite/tra/%s~
+
+//LANGUAGE ~English~
+//~english~
+//~TorturedSoulsLite/tra/english/setup.tra~
+
+/////////////////////
+//Main Component
+/////////////////////
+BEGIN ~WNW For BG~
+DESIGNATED 0 LABEL ~NWN_MainComponent~
+
+/* -------------------------------------------------------------------------------------------------- *
+* Adds CamDawg's custom IsValidForPartyDialogue state used throughout yeslicknpc. Thanks Cam! *
+* -------------------------------------------------------------------------------------------------- */
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+//Splash Screens
+
+//COPY ~TorturedSoulsLite/2da/vpstart.2da~ ~override/vpstart.2da~
+//REPLACE ~scrtxt09~ @3
+
+//COPY ~TorturedSoulsLite/2da/vpfin.2da~ ~override/vpfinva.2da~
+//REPLACE ~scrtxt11~ @4
+
+//COPY ~TorturedSoulsLite/2da/vpfin.2da~ ~override/vpfinth.2da~
+//REPLACE ~scrtxt11~ @5
+
+//COPY ~TorturedSoulsLite/2da/vpyoshnd.2da~ ~override~
+//REPLACE ~yoshifin~ @6
+
+//Adding Kachiko to 2DAs
+
+//APPEND ~PDIALOG.2da~
+//~VPKACHI VPKACHIP VPKACHIJ VPKACHID VPKACHP2 VPKACHJ2 VPKACHD2 VPKACH25~
+//UNLESS ~VPKACHI~
+
+//APPEND ~INTERDIA.2da~
+//~VPKACHI VPKACHIB VPKACHB2~
+//UNLESS ~VPKACHI~
+
+
+// Lizardman Animation
+//ACTION_IF NOT FILE_EXISTS_IN_GAME ~MLI2A1.bam~ THEN BEGIN 
+//    COPY ~TorturedSoulsLite/anim/lizard~ ~override~
+//END 
+
+// Icons
+//COPY ~TorturedSoulsLite/bam~ ~override~
+
+//Music & Ambient
+//LAF HANDLE_AUDIO
+//STR_VAR
+// audio_path = ~TorturedSoulsLite/audio/sounds~
+// oggdec_path = ~TorturedSoulsLite/audio~
+// sox_path = ~TorturedSoulsLite/audio~
+//END
+
+//Epilogue Art
+//COPY ~TorturedSoulsLite/portraits/vphashiL.bmp~ ~override~
+
+//Dialogues
+//COMPILE ~TorturedSoulsLite/dlg/vpppireni.d~
+//~TorturedSoulsLite/dlg/vpppsaem.d~
+//~TorturedSoulsLite/dlg/vpsailoff.d~
+//~TorturedSoulsLite/dlg/vpaino.d~
+//~TorturedSoulsLite/dlg/vpalome.d~
+//~TorturedSoulsLite/dlg/vpchess.d~
+//~TorturedSoulsLite/dlg/vpchrdr1.d~
+//~TorturedSoulsLite/dlg/vphasuno.d~
+//~TorturedSoulsLite/dlg/vphitomi.d~
+//~TorturedSoulsLite/dlg/vphsiang.d~
+//~TorturedSoulsLite/dlg/vpkachb2.d~
+//~TorturedSoulsLite/dlg/vpkachi.d~
+//~TorturedSoulsLite/dlg/vpkachib.d~
+//~TorturedSoulsLite/dlg/vpkachij.d~
+//~TorturedSoulsLite/dlg/vpkachj2.d~
+//~TorturedSoulsLite/dlg/vpkiotsi.d~
+//~TorturedSoulsLite/dlg/vplulu.d~
+//~TorturedSoulsLite/dlg/vpmasaki.d~
+//~TorturedSoulsLite/dlg/vpnajoki.d~
+//~TorturedSoulsLite/dlg/vpnanny.d~
+//~TorturedSoulsLite/dlg/vpnklead.d~
+//~TorturedSoulsLite/dlg/vpnsons.d~
+//~TorturedSoulsLite/dlg/vpogi.d~
+//~TorturedSoulsLite/dlg/vpotako.d~
+//~TorturedSoulsLite/dlg/vpsasaki.d~
+//~TorturedSoulsLite/dlg/vpnpcrem.d~
+
+//COMPILE EVAL ~TorturedSoulsLite/dlg/vpyoshimo.d~
+
+//Scripts
+//COMPILE ~TorturedSoulsLite/scripts/TSCutK01.baf~
+//~TorturedSoulsLite/scripts/TSCutK02.baf~
+
+//COMPILE EVAL ~TorturedSoulsLite/scripts/vpkachi.baf~
+//COMPILE EVAL ~TorturedSoulsLite/scripts/vpkachid.baf~
+
+//EXTEND_TOP ~AR1516.BCS~ ~TorturedSoulsLite/scripts/ar1516.baf~
+//EXTEND_BOTTOM ~AR6200.BCS~ ~TorturedSoulsLite/scripts/ar6200.baf~
+//EXTEND_TOP ~YOSHIMO.BCS~ ~TorturedSoulsLite/scripts/yoshimo.baf~
+//EXTEND_TOP ~YOSHX.BCS~ ~TorturedSoulsLite/scripts/yoshx.baf~
+//EXTEND_TOP ~PPSAEM2.BCS~ ~TorturedSoulsLite/scripts/ppsaem2.baf~
+
+// Modified Original Scripts
+/*COPY_EXISTING ~cut41c.bcs~ ~override/vp41cn.bcs~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~ActionOverride("ppsaem",DestroySelf())~ ~ActionOverride("ppsaem",DestroySelf()) ActionOverride("Yoshimo",LeaveParty()) ActionOverride("Yoshimo",EscapeArea()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeArea())~
+ END
+  BUT_ONLY_IF_IT_CHANGES*/
+
+//Areas
+COPY ~TorturedSoulsLite/are~ ~override~
+
+//COPY_EXISTING ~TT0100.ARE~ ~override~
+// SAY 0x3e10 @7
+
+//COPY_EXISTING ~TT0301.ARE~ ~override~ 
+// SAY 0x354 @8
+// SAY 0x418 @8
+// SAY 0x4dc @9
+
+//COPY_EXISTING ~TT0307.ARE~ ~override~
+// SAY 0x684 @10
+// SAY 0x5c0 @11
+
+APPEND ~MASTAREA.2DA~
+~NW1000 value
+NW1100 value
+NW1200 value
+NW1300 value
+NW1400 value
+NW2400 value
+NW2300 value
+NW2100 value
+NW2000 value
+NW2200 value
+NW2700 value
+NW2800 value
+NW2900 value
+NW2510 value
+NW2500 value
+NW2600 value
+NW2601 value
+NW2E00 value
+NW2E31 value
+NW2E55 value
+NW1033 value
+NW3000 value
+NW3100 value
+NW3200 value
+NW3300 value
+NW3400 value
+NW3500 value
+NW4000 value~
+UNLESS ~NW1000~
+
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+ COPY ~TorturedSoulsLite/tis/EE~ ~override~
+END ELSE BEGIN
+ COPY ~TorturedSoulsLite/tis/Original~ ~override~
+END
+
+//Items
+COPY ~TorturedSoulsLite/eff~ ~override~
+
+COPY ~TorturedSoulsLite/itm/vpaxecha.itm~ ~override~
+ SAY NAME2 @12
+ SAY DESC @13
+
+COPY ~TorturedSoulsLite/itm/vpbeltst.itm~ ~override~
+ SAY NAME2 @14
+ SAY DESC @15
+ 
+COPY ~TorturedSoulsLite/itm/vpbess.itm~ ~override~
+ SAY NAME2 @16
+ SAY DESC @17
+
+COPY ~TorturedSoulsLite/itm/vpbishop.itm~ ~override~
+ SAY NAME1 @18
+ SAY NAME2 @19
+ SAY UNIDENTIFIED_DESC @20
+ SAY DESC @21
+ 
+COPY ~TorturedSoulsLite/itm/vpbknigh.itm~ ~override~
+ SAY NAME2 @22
+ SAY DESC @23
+ 
+COPY ~TorturedSoulsLite/itm/vpbbow.itm~ ~override~
+ SAY NAME2 @24
+ SAY DESC @25
+
+COPY ~TorturedSoulsLite/itm/vpbook08.itm~ ~override~
+ 
+COPY ~TorturedSoulsLite/itm/vpbootfo.itm~ ~override~
+ SAY NAME2 @26
+ SAY DESC @27
+ 
+COPY ~TorturedSoulsLite/itm/vpboring.itm~ ~override~
+ SAY NAME2 @28
+
+COPY ~TorturedSoulsLite/itm/vpedven.itm~ ~override~
+ SAY NAME2 @28 
+ 
+COPY ~TorturedSoulsLite/itm/vpbowham.itm~ ~override~
+ SAY NAME2 @29
+ SAY DESC @30
+ 
+COPY ~TorturedSoulsLite/itm/vpkatair.itm~ ~override~
+ SAY NAME2 @31
+ SAY DESC @32
+ 
+COPY ~TorturedSoulsLite/itm/vpkatear.itm~ ~override~
+ SAY NAME2 @33
+ SAY DESC @34
+ 
+COPY ~TorturedSoulsLite/itm/vpkatfir.itm~ ~override~
+ SAY NAME2 @35
+ SAY DESC @36
+
+COPY ~TorturedSoulsLite/itm/vpkatwat.itm~ ~override~
+ SAY NAME2 @37
+ SAY DESC @38
+ 
+COPY ~TorturedSoulsLite/itm/vpwardex.itm~ ~override~
+ SAY NAME2 @39
+ SAY DESC @40
+
+COPY ~TorturedSoulsLite/itm/vpgodble.itm~ ~override~
+ SAY NAME2 @41
+ SAY DESC @42
+ 
+COPY ~TorturedSoulsLite/itm/vpkswor1.itm~ ~override~
+ SAY NAME2 @43
+ SAY DESC @44
+ 
+COPY ~TorturedSoulsLite/itm/vpkswor2.itm~ ~override~
+ SAY NAME2 @45
+ SAY DESC @46
+
+COPY ~TorturedSoulsLite/itm/vpkedl.itm~ ~override~
+ SAY NAME2 @47
+ SAY DESC @48
+
+COPY ~TorturedSoulsLite/itm/vpkeybro.itm~ ~override~
+ SAY NAME2 @49
+ SAY UNIDENTIFIED_DESC @50
+ SAY DESC @50
+  
+COPY ~TorturedSoulsLite/itm/vpkeycop.itm~ ~override~
+ SAY NAME2 @51
+ SAY UNIDENTIFIED_DESC @52
+ SAY DESC @52
+  
+COPY ~TorturedSoulsLite/itm/vpkeydun.itm~ ~override~
+ SAY NAME2 @53
+ SAY UNIDENTIFIED_DESC @54
+ SAY DESC @54
+  
+COPY ~TorturedSoulsLite/itm/vpkeyele.itm~ ~override~
+ SAY NAME2 @55
+ SAY UNIDENTIFIED_DESC @56
+ SAY DESC @56
+  
+COPY ~TorturedSoulsLite/itm/vpkeygol.itm~ ~override~
+ SAY NAME2 @57
+ SAY UNIDENTIFIED_DESC @58
+ SAY DESC @58
+
+COPY ~TorturedSoulsLite/itm/vpkeypla.itm~ ~override~
+ SAY NAME2 @59
+ SAY UNIDENTIFIED_DESC @60
+ SAY DESC @60
+
+COPY ~TorturedSoulsLite/itm/vpkeysil.itm~ ~override~
+ SAY NAME2 @61
+ SAY UNIDENTIFIED_DESC @62
+ SAY DESC @62
+
+COPY ~TorturedSoulsLite/itm/vpknight.itm~ ~override~
+ SAY NAME1 @18
+ SAY NAME2 @63
+ SAY UNIDENTIFIED_DESC @20
+ SAY DESC @64
+
+COPY ~TorturedSoulsLite/itm/vpnring2.itm~ ~override~
+ SAY NAME2 @65
+ SAY DESC @66
+
+COPY ~TorturedSoulsLite/itm/vpyoring.itm~ ~override~
+ SAY NAME2 @67
+ SAY DESC @68
+
+COPY ~TorturedSoulsLite/itm/vpotakam.itm~ ~override~
+ SAY NAME1 @69
+ SAY NAME2 @69
+ SAY UNIDENTIFIED_DESC @70
+ SAY DESC @70
+  
+COPY ~TorturedSoulsLite/itm/vptsrope.itm~ ~override~
+ SAY NAME2 @72
+ SAY UNIDENTIFIED_DESC @73
+ SAY DESC @73
+ 
+COPY ~TorturedSoulsLite/itm/vppursta.itm~ ~override~
+ SAY DESC @75
+ 
+COPY ~TorturedSoulsLite/itm/vpringed.itm~ ~override~
+ SAY NAME2 @76
+ SAY DESC @77
+   
+COPY ~TorturedSoulsLite/itm/vprobear.itm~ ~override~
+ SAY NAME2 @78
+ SAY DESC @79
+   
+COPY ~TorturedSoulsLite/itm/vproghat.itm~ ~override~
+ SAY NAME1 @80
+ SAY NAME2 @81
+ SAY UNIDENTIFIED_DESC @82
+ SAY DESC @83
+
+COPY ~TorturedSoulsLite/itm/vpscarab.itm~ ~override~
+ SAY NAME2 @84
+ SAY DESC @85
+
+COPY ~TorturedSoulsLite/itm/vpwardti.itm~ ~override~
+ SAY NAME2 @86
+ 
+COPY ~TorturedSoulsLite/itm/vptrrin2.itm~ ~override~
+ SAY NAME2 @87
+ SAY DESC @88
+
+COPY ~TorturedSoulsLite/itm/vppot1a.itm~ ~override~
+ SAY NAME2 @89
+ SAY DESC @90
+  
+COPY ~TorturedSoulsLite/itm/vppot3c.itm~ ~override~
+ SAY NAME2 @91
+ SAY DESC @90
+  
+COPY ~TorturedSoulsLite/itm/vppot4b.itm~ ~override~
+ SAY NAME2 @92
+ SAY DESC @90
+ 
+COPY ~TorturedSoulsLite/itm/vppot4c.itm~ ~override~
+ SAY NAME2 @93
+ SAY DESC @94
+ 
+COPY ~TorturedSoulsLite/itm/vppot5b.itm~ ~override~
+ SAY NAME2 @95
+ SAY DESC @90
+
+COPY ~TorturedSoulsLite/itm/vpwuhalt.itm~ ~override~
+ SAY NAME2 @96
+ SAY DESC @97
+ 
+COPY ~TorturedSoulsLite/itm/vpwujen.itm~ ~override~
+ SAY NAME2 @400
+ SAY DESC @98
+
+COPY ~TorturedSoulsLite/itm/vpogi.itm~ ~override~
+ SAY NAME2 @99
+ SAY DESC @100
+
+COPY ~TorturedSoulsLite/itm/vpkenbra.itm~ ~override~
+ SAY NAME2 @101
+ SAY DESC @102
+
+COPY ~TorturedSoulsLite/itm/vpyoleat.itm~ ~override~
+ SAY NAME2 @103
+ SAY DESC @104
+
+COPY ~TorturedSoulsLite/itm/vpyokat.itm~ ~override~
+ SAY NAME2 @105
+ SAY DESC @106
+
+COPY ~TorturedSoulsLite/itm/vpunknin.itm~ ~override~
+COPY ~TorturedSoulsLite/itm/vpcharts.itm~ ~override~
+COPY ~TorturedSoulsLite/itm/vpdaxe.itm~ ~override~
+COPY ~TorturedSoulsLite/itm/vpdplate.itm~ ~override~
+COPY ~TorturedSoulsLite/itm/vpdshld.itm~ ~override~
+COPY ~TorturedSoulsLite/itm/vpelhyd1.itm~ ~override~
+COPY ~TorturedSoulsLite/itm/vpmasitm.itm~ ~override~
+
+//2da Appends
+
+APPEND ~item_use.2da~
+~vpnring2 vpkachi 9382 2 99999
+vpkswor1 vpkachi 9382 2 99999
+vpkswor2 vpkachi 9382 2 99999
+vpyokat yoshimo 9382 2 99998
+vpyoring yoshimo 9382 2 99998~
+UNLESS ~vpsleat~
+
+COPY_EXISTING ~item_use.2da~ ~override~
+REPLACE ~99999~ @135
+REPLACE ~99998~ #9141
+
+APPEND ~TOOLTIP.2DA~
+~vproghat 77777774 77777775 -1
+vpscarab 77777776 77777777 -1
+vpwujen 77777783 99998921 -1
+vpbkingh 77777783 99998921 -1
+vpnring2 99999921 99999922 99999923
+vpringed 88888887 88888888 88888889~
+UNLESS ~vproghat~
+
+COPY_EXISTING ~TOOLTIP.2DA~ ~override~
+REPLACE ~99998921~ #8786 //Heal
+REPLACE ~77777774~ #12015 //Blindness 
+REPLACE ~77777775~ #13016 //Color Spray
+REPLACE ~77777776~ #12046 //Friends
+REPLACE ~77777777~ #14033 //Charm
+REPLACE ~77777783~ #35603 //Greater Restoration
+REPLACE ~99999921~ #12021 //Improved Invisibility
+REPLACE ~99999922~ #25937 //Improved Haste
+REPLACE ~88888887~ #13070 //Fireshield (Blue)
+REPLACE ~88888888~ #13075 //Stoneskin
+REPLACE ~88888889~ #15211 //Conjure Fire Elemental
+
+//Stores
+COPY ~TorturedSoulsLite/sto/vphasuno.sto~ ~override/vphasuno.sto~
+SAY NAME2 @118
+
+///////////////////////////////
+//Creatures
+//////////////////////////////
+
+COPY ~TorturedSoulsLite/cre/vpaino.cre~ ~override~
+ SAY NAME1 @119
+ SAY NAME2 @120
+
+COPY ~TorturedSoulsLite/cre/vpainoa.cre~ ~override~
+ SAY NAME1 @119
+ SAY NAME2 @120
+
+COPY ~TorturedSoulsLite/cre/vpalome.cre~ ~override~
+ SAY NAME1 @121
+ SAY NAME2 @122
+
+COPY ~TorturedSoulsLite/cre/vpbasil.cre~ ~override~
+ SAY NAME1 @123
+ SAY NAME2 @123
+
+COPY ~TorturedSoulsLite/cre/vpbisho1.cre~ ~override~
+ SAY NAME1 @124
+ SAY NAME2 @124
+
+COPY ~TorturedSoulsLite/cre/vpbishop.cre~ ~override~
+ SAY NAME1 @124
+ SAY NAME2 @124
+
+COPY ~TorturedSoulsLite/cre/vpbknigh.cre~ ~override~
+ SAY NAME1 @125
+ SAY NAME2 @125
+
+COPY ~TorturedSoulsLite/cre/vpchess.cre~ ~override~
+ SAY NAME1 @126
+ SAY NAME2 @126
+
+COPY ~TorturedSoulsLite/cre/vpchrdr1.cre~ ~override~
+ SAY NAME1 @127
+ SAY NAME2 @127
+ 
+COPY ~TorturedSoulsLite/cre/vpdeadkf.cre~ ~override~
+COPY ~TorturedSoulsLite/cre/vpdeadkm.cre~ ~override~
+
+COPY ~TorturedSoulsLite/cre/vpwatelg.cre~ ~override~
+ SAY NAME1 @128
+ SAY NAME2 @128
+ 
+COPY ~TorturedSoulsLite/cre/vpwatel.cre~ ~override~
+ SAY NAME1 @128
+ SAY NAME2 @128
+
+COPY ~TorturedSoulsLite/cre/vpgzomb.cre~ ~override~
+ SAY NAME1 @129
+ SAY NAME2 @129
+
+COPY ~TorturedSoulsLite/cre/vphaksu.cre~ ~override~
+
+COPY ~TorturedSoulsLite/cre/vphheal.cre~ ~override~
+ SAY NAME1 @118
+ SAY NAME2 @118
+
+COPY ~TorturedSoulsLite/cre/vphitomi.cre~ ~override~
+ SAY NAME1 @130
+ SAY NAME2 @131
+
+COPY ~TorturedSoulsLite/cre/vphkensf.cre~ ~override~
+ SAY NAME1 @132
+ SAY NAME2 @132
+
+COPY ~TorturedSoulsLite/cre/vphkens.cre~ ~override~
+ SAY NAME1 @132
+ SAY NAME2 @132
+
+COPY ~TorturedSoulsLite/cre/vpsamur1.cre~ ~override~
+ SAY NAME1 @133
+ SAY NAME2 @133
+
+COPY ~TorturedSoulsLite/cre/vpsamur2.cre~ ~override~
+ SAY NAME1 @134
+ SAY NAME2 @134
+
+COPY ~TorturedSoulsLite/cre/vpkachis.cre~ ~override~
+ SAY NAME1 @135
+ SAY NAME2 @135
+
+ COPY ~TorturedSoulsLite/cre/vpkachid.cre~ ~override~
+ SAY NAME1 @135
+ SAY NAME2 @135
+
+COPY ~TorturedSoulsLite/cre/vpking.cre~ ~override~
+ SAY NAME1 @136
+ SAY NAME2 @136
+ 
+COPY ~TorturedSoulsLite/cre/vpkiotsi.cre~ ~override~
+ SAY NAME1 @137
+ SAY NAME2 @137
+ 
+COPY ~TorturedSoulsLite/cre/vpknight.cre~ ~override~
+ SAY NAME1 @138
+ SAY NAME2 @138
+ 
+COPY ~TorturedSoulsLite/cre/vpknigh1.cre~ ~override~
+ SAY NAME1 @138
+ SAY NAME2 @138
+ 
+COPY ~TorturedSoulsLite/cre/vplulu.cre~ ~override~
+ SAY NAME1 @139
+ SAY NAME2 @140
+ 
+COPY ~TorturedSoulsLite/cre/vpmasaki.cre~ ~override~
+ SAY NAME1 @141
+ SAY NAME2 @142
+
+COPY ~TorturedSoulsLite/cre/vpmichio.cre~ ~override~
+ SAY NAME1 @143
+ SAY NAME2 @144
+ 
+COPY ~TorturedSoulsLite/cre/vpmomoko.cre~ ~override~
+ SAY NAME1 @145
+ SAY NAME2 @146
+ 
+COPY ~TorturedSoulsLite/cre/vpnajoki.cre~ ~override~
+ SAY NAME1 @147
+ SAY NAME2 @148
+ 
+COPY ~TorturedSoulsLite/cre/vpnajoka.cre~ ~override~
+ SAY NAME1 @147
+ SAY NAME2 @148
+ 
+COPY ~TorturedSoulsLite/cre/vpnanny.cre~ ~override~
+ SAY NAME1 @149
+ SAY NAME2 @149
+ 
+COPY ~TorturedSoulsLite/cre/vpnkens.cre~ ~override~
+ SAY NAME1 @150
+ SAY NAME2 @150
+
+COPY ~TorturedSoulsLite/cre/vpmkens.cre~ ~override~
+ SAY NAME1 @150
+ SAY NAME2 @150
+
+COPY ~TorturedSoulsLite/cre/vpfkens.cre~ ~override~
+ SAY NAME1 @150
+ SAY NAME2 @150
+
+COPY ~TorturedSoulsLite/cre/vpnlead.cre~ ~override~
+ SAY NAME1 @151
+ SAY NAME2 @151
+ 
+COPY ~TorturedSoulsLite/cre/vpnmonk.cre~ ~override~
+ SAY NAME1 @152
+ SAY NAME2 @152
+ 
+COPY ~TorturedSoulsLite/cre/vpogi.cre~ ~override~
+ SAY NAME1 @153
+ SAY NAME2 @154
+ 
+COPY ~TorturedSoulsLite/cre/vpotako.cre~ ~override~
+ SAY NAME1 @155
+ SAY NAME2 @156
+ 
+COPY ~TorturedSoulsLite/cre/vppawn.cre~ ~override~
+ SAY NAME1 @157
+ SAY NAME2 @157
+
+COPY ~TorturedSoulsLite/cre/vpqueen.cre~ ~override~
+ SAY NAME1 @158
+ SAY NAME2 @158
+ 
+COPY ~TorturedSoulsLite/cre/vprook.cre~ ~override~
+ SAY NAME1 @159
+ SAY NAME2 @159
+ 
+COPY ~TorturedSoulsLite/cre/vpsasaki.cre~ ~override~
+ SAY NAME1 @160
+ SAY NAME2 @161
+
+COPY ~TorturedSoulsLite/cre/vpstonvf.cre~ ~override~
+ SAY NAME1 @162
+ SAY NAME2 @162
+ 
+COPY ~TorturedSoulsLite/cre/vpstonvm.cre~ ~override~
+ SAY NAME1 @162
+ SAY NAME2 @162
+ 
+COPY ~TorturedSoulsLite/cre/vpundken.cre~ ~override~
+ SAY NAME1 @151
+ SAY NAME2 @151
+
+COPY ~TorturedSoulsLite/cre/vpwbish.cre~ ~override~
+ SAY NAME1 @163
+ SAY NAME2 @163
+
+COPY ~TorturedSoulsLite/cre/vphsiang.cre~ ~override~
+ SAY NAME1 @164
+ SAY NAME2 @164
+ 
+COPY ~TorturedSoulsLite/cre/vpkuku.cre~ ~override~
+ SAY NAME1 @165
+ SAY NAME2 @165
+
+COPY ~TorturedSoulsLite/cre/vpliz06.cre~ ~override~
+COPY ~TorturedSoulsLite/cre/vpliz07.cre~ ~override~
+
+COPY ~TorturedSoulsLite/cre/vpkachi.cre~ ~override~
+  SAY NAME1 @135
+  SAY NAME2 @135
+  SAY BIO @211
+
+//Adding Sound and Music
+
+LAF HANDLE_AUDIO
+STR_VAR
+ audio_path = ~TorturedSoulsLite/audio/sounds~
+ oggdec_path = ~TorturedSoulsLite/audio~
+ sox_path = ~TorturedSoulsLite/audio~
+END
+*/
+//////////////////////
+//Kachiko Spawn Point
+//////////////////////
+
+BEGIN ~Kachiko appears in Irenicus Dungeon (Original)~
+DESIGNATED 10 LABEL ~TSL_KachikoSpawn_Dungeon~
+SUBCOMPONENT ~Kachiko Spawn Point~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+EXTEND_TOP ~AR0603.BCS~ ~TorturedSoulsLite/scripts/ar0603.baf~
+
+BEGIN ~Kachiko appears after talking with Renal~
+DESIGNATED 11 LABEL ~TSL_KachikoSpawn_Docks~
+SUBCOMPONENT ~Kachiko Spawn Point~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+EXTEND_TOP ~AR0300.BCS~ ~TorturedSoulsLite/scripts/ar0300.baf~
+
+///////////////////////////////
+//Portraits
+//////////////////////////////
+
+BEGIN ~Kachiko Original Portrait (poemmaker2)~
+DESIGNATED 20 LABEL ~TSL_KachikoPortrait_Original~
+SUBCOMPONENT ~Kachiko Portrait~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+COPY ~TorturedSoulsLite/portraits/vpkachi1L.bmp~ ~override/vpkachiL.bmp~
+COPY ~TorturedSoulsLite/portraits/vpkachi1M.bmp~ ~override/vpkachiM.bmp~
+COPY ~TorturedSoulsLite/portraits/vpkachi1S.bmp~ ~override/vpkachiS.bmp~
+
+BEGIN ~Kachiko Alternate Portrait 1 (Enkida)~
+DESIGNATED 21 LABEL ~TSL_KachikoPortrait_Alt1~
+SUBCOMPONENT ~Kachiko Portrait~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+COPY ~TorturedSoulsLite/portraits/vpkachi2L.bmp~ ~override/vpkachiL.bmp~
+COPY ~TorturedSoulsLite/portraits/vpkachi2M.bmp~ ~override/vpkachiM.bmp~
+COPY ~TorturedSoulsLite/portraits/vpkachi2S.bmp~ ~override/vpkachiS.bmp~
+
+BEGIN ~Kachiko Alternate Portrait 2~
+DESIGNATED 22 LABEL ~TSL_KachikoPortrait_Alt2~
+SUBCOMPONENT ~Kachiko Portrait~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+COPY ~TorturedSoulsLite/portraits/vpkachi3L.bmp~ ~override/vpkachiL.bmp~
+COPY ~TorturedSoulsLite/portraits/vpkachi3M.bmp~ ~override/vpkachiM.bmp~
+COPY ~TorturedSoulsLite/portraits/vpkachi3S.bmp~ ~override/vpkachiS.bmp~
+
+///////////////////////////////
+//Soundsets
+//////////////////////////////
+
+BEGIN ~Kachiko Default Soundset~
+DESIGNATED 30 LABEL ~TSL_KachikoSoundset_New~
+SUBCOMPONENT ~Kachiko Soundset~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+COPY_EXISTING ~vpkachi.cre~ ~override~
+  SAY MORALE @174
+  SAY LEADER @175
+  SAY BATTLE_CRY1 @176
+  SAY BATTLE_CRY2 @177
+  SAY BATTLE_CRY3 @178
+  SAY BATTLE_CRY4 @179
+  SAY BATTLE_CRY5 @180
+  SAY TIRED @181
+  SAY BORED @182
+  SAY DAMAGE ~~ [KACHIST]
+  SAY DYING ~~ [KACHIDI]
+  SAY HURT @185
+  SAY AREA_DUNGEON ~~ [KACHIDU]
+  SAY AREA_FOREST ~~ [KACHIOU]
+  SAY AREA_DAY ~~ [KACHIDA]
+  SAY AREA_NIGHT ~~ [KACHINI]
+  SAY SELECT_COMMON1 @190
+  SAY SELECT_COMMON2 @191
+  SAY SELECT_COMMON3 @192
+  SAY SELECT_COMMON4 @193
+  SAY SELECT_COMMON5 @194
+  SAY SELECT_COMMON6 @195
+  SAY SELECT_ACTION1 @196
+  SAY SELECT_ACTION2 @197
+  SAY SELECT_ACTION3 @198
+  SAY SELECT_ACTION4 @199
+  SAY SELECT_ACTION5 @200
+  SAY SELECT_ACTION6 @201
+  SAY SELECT_ACTION7 @202
+  SAY SELECT_RARE1 @203
+  SAY SELECT_RARE1 @204
+  SAY REACT_TO_DIE_GENERAL @205
+  SAY CRITICAL_HIT ~~ [KACHICR]
+  SAY CRITICAL_MISS ~~ [KACHIMI]
+  SAY TARGET_IMMUNE ~~ [KACHIIM]
+  SAY INVENTORY_FULL ~~ [KACHICA]
+  SAY SPELL_DISRUPTED ~~ [KACHIFA]
+  
+LAF HANDLE_AUDIO
+ STR_VAR
+ audio_path = ~TorturedSoulsLite/audio/ss_new~
+ oggdec_path = ~TorturedSoulsLite/audio~
+ sox_path = ~TorturedSoulsLite/audio~
+END
+
+BEGIN ~Kachiko Legacy Soundset~
+DESIGNATED 31 LABEL ~TSL_KachikoSoundset_Old~
+SUBCOMPONENT ~Kachiko Soundset~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+COPY_EXISTING ~vpkachi.cre~ ~override~
+  SAY LEADER @213
+  SAY BATTLE_CRY1 @214
+  SAY BATTLE_CRY2 @215
+  SAY TIRED ~~ [KACHITI]
+  SAY 0xdc @217
+  SAY DAMAGE ~~ [KACHIST]
+  SAY DYING ~~ [KACHIDI]
+  SAY HURT @218
+  SAY AREA_DUNGEON @219
+  SAY AREA_FOREST @220
+  SAY AREA_DAY @221
+  SAY AREA_NIGHT @222
+  SAY SELECT_COMMON1 @223
+  SAY SELECT_COMMON2 @224
+  SAY SELECT_COMMON3 @225
+  SAY SELECT_COMMON4 @226
+  SAY SELECT_COMMON5 @227
+  SAY SELECT_COMMON6 @228
+  SAY SELECT_ACTION1 @229
+  SAY SELECT_ACTION2 @230
+  SAY SELECT_ACTION3 @231
+  SAY SELECT_ACTION4 @232
+  SAY SELECT_ACTION5 @233
+  SAY SELECT_ACTION6 @228
+  SAY CRITICAL_HIT @234
+  SAY CRITICAL_MISS @235
+  SAY TARGET_IMMUNE @236
+  SAY INVENTORY_FULL @237
+  SAY SPELL_DISRUPTED @238
+  
+LAF HANDLE_AUDIO
+ STR_VAR
+  audio_path = ~TorturedSoulsLite/audio/ss_old~
+  oggdec_path = ~TorturedSoulsLite/audio~
+  sox_path = ~TorturedSoulsLite/audio~
+END
+
+///////////////////////////////
+//Legacy Voicelines
+//////////////////////////////
+
+BEGIN @239
+DESIGNATED 40 LABEL ~TSL_KachikoVoicelines~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+LAF HANDLE_AUDIO
+ STR_VAR
+ audio_path = ~TorturedSoulsLite/audio/vo_old~
+ oggdec_path = ~TorturedSoulsLite/audio~
+ sox_path = ~TorturedSoulsLite/audio~
+END
+
+////////////////
+//NPC Portraits
+////////////////
+
+BEGIN ~Add Portraits to Island NPCs?~
+DESIGNATED 50 LABEL ~TSL_MiscPortraits~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+COPY ~TorturedSoulsLite/portraits/npc~ ~override~
+
+///////////////////////////
+//Crossmod Compatability
+///////////////////////////
+
+BEGIN ~Crossmod Content~
+DESIGNATED 60 LABEL ~TSL_Crossmod~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~Setup-TorturedSoulsLite.tp2~ ~0~) ~Please, install Tortured Souls Main Component~
+
+// Alternatives
+ACTION_IF FILE_EXISTS_IN_GAME ~b!aster2.dlg~ BEGIN
+	PRINT ~Alternatives Compatability...~
+
+  //To Brynnlaw/Island Dialogue
+	COMPILE ~TorturedSoulsLite/dlg/crossmod/alternatives.d~ USING ~TorturedSoulsLite/tra/%LANGUAGE%/crossmod/alternatives.tra~
+
+  //Aster to Brynnlaw w/o Kachiko
+  COPY_EXISTING ~b!alt41d.bcs~ ~override/vpal41dn.bcs~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~ActionOverride("b!aster2",DestroySelf())~ ~ActionOverride("b!aster2",DestroySelf()) ActionOverride("Yoshimo",LeaveParty()) ActionOverride("Yoshimo",EscapeArea()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeArea())~
+     END
+     BUT_ONLY
+
+  //Malficus to Brynnlaw w/o Kachiko
+  COPY_EXISTING ~b!mal41d.bcs~ ~override/vpma41dn.bcs~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~ActionOverride("b!mal2",DestroySelf())~ ~ActionOverride("b!mal2",DestroySelf()) ActionOverride("Yoshimo",LeaveParty()) ActionOverride("Yoshimo",EscapeArea()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeArea())~
+    END
+    BUT_ONLY
+
+  //To Island Cutscenes
+  COMPILE ~TorturedSoulsLite/scripts/crossmod/vpal41di.baf~ 
+  ~TorturedSoulsLite/scripts/crossmod/vpma41di.baf~
+  
+  //From Island Cutscenes
+  COMPILE EVAL ~TorturedSoulsLite/scripts/crossmod/vpalend.baf~
+  COMPILE EVAL ~TorturedSoulsLite/scripts/crossmod/vpmaend.baf~
+  
+  //From Island Splashes
+  COPY ~TorturedSoulsLite/2da/vpfin.2da~ ~override/vpfinal.2da~
+    REPLACE ~scrtxt11~ @300
+    
+  COPY ~TorturedSoulsLite/2da/vpfin.2da~ ~override/vpfinma.2da~
+    REPLACE ~scrtxt11~ @301
+END
