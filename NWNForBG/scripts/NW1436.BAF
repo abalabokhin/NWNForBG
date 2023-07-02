@@ -1,0 +1,40 @@
+IF
+	PartyHasItem("Nwkey08")  // ???? ?????????
+	CombatCounter(0)
+	Global("ChangeDryadScript","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Crewtd3",ChangeAIScript("CDRYAD",CLASS))
+		ActionOverride("Crewtd3",ChangeAIScript("WTRUNSGT",DEFAULT))
+		SetGlobal("ChangeDryadScript","MYAREA",1)
+		ActionOverride("Crewtd3",DestroyItem("NWHP1"))  // ???? ?????
+END
+
+IF
+	PartyHasItem("Crewtd3")  // ????? ????? ??????
+	Global("ABCDENW","MYAREA",0)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NW_Cultist_Attack","GLOBAL",1)
+		SetGlobal("ABCDENW","MYAREA",1)
+END
+
+IF
+	Global("MeldanenSpawn","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MeldanenTimer","NW1436",ONE_ROUND)
+		SetGlobal("MeldanenSpawn","MYAREA",2)
+END
+
+IF
+	GlobalTimerExpired("MeldanenTimer","NW1436")
+	Global("MeldanenSpawn","MYAREA",2)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("Meldanen",[645.792],9)  // ????????
+		CreateCreatureDoor("Meldgu04",[475.792],12)  // ??????????? ?????????
+		CreateCreatureDoor("Meldgu05",[608.840],10)  // ??????????? ?????????
+		SetGlobal("MeldanenSpawn","MYAREA",3)
+END
+

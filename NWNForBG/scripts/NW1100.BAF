@@ -1,0 +1,120 @@
+IF
+	OnCreation()
+	Global("Reveal","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Reveal","MYAREA",1)
+		Explore()
+		Continue()
+END
+
+IF
+	GlobalGT("NWNDocksDone","GLOBAL",0)
+	Global("ChangeSpawns","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("ChangeSpawns","NW1100",1)  // ????
+		SpawnPtDeactivate("Spawnp1")
+		SpawnPtDeactivate("Spawnp2")
+		SpawnPtDeactivate("Spawnp3")
+		Continue()
+END
+
+IF
+	Global("AmuletQuest","MYAREA",1)
+	OR(3)
+		InMyArea("HEMMEL")  // ?????? ?????????
+		InMyArea("AGNES")  // ????? ?????????
+		InMyArea("MORDEN")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("HEMMEL",EscapeAreaDestroy(60))
+		SmallWait(2)
+		ActionOverride("AGNES",EscapeAreaDestroy(60))
+		SmallWait(2)
+		ActionOverride("MORDEN",EscapeAreaDestroy(60))
+END
+
+IF
+	Global("KnowsAboutAuction","MYAREA",0)
+	PartyHasItem("Nwmisc28")  // ?????????? ?? ????????
+THEN
+	RESPONSE #100
+		SetGlobal("KnowsAboutAuction","MYAREA",1)
+END
+
+IF
+	Global("NW1109_Vizited","GLOBAL",1)
+	InMyArea("Andguard")  // ????????
+	InMyArea(Player1)
+	!Dead("Androd")  // ??????
+THEN
+	RESPONSE #100
+		SetGlobal("NW1109_Vizited","GLOBAL",2)
+		DisplayStringHead("Andguard",103109)  // ??, ?????? ???? ????? ??????, ???? ?????? ?????? ??????.
+		ActionOverride("Andguard",EscapeAreaDestroy(60))
+END
+
+IF
+	Global("NW1109_Vizited","GLOBAL",1)
+	InMyArea("Andguard")  // ????????
+	InMyArea(Player1)
+	Dead("Androd")  // ??????
+THEN
+	RESPONSE #100
+		SetGlobal("NW1109_Vizited","GLOBAL",2)
+		DisplayStringHead("Andguard",103110)  // ?? ???, ? ????? ??????? ??????, ???? ?????? ?????.
+		ActionOverride("Andguard",EscapeAreaDestroy(60))
+END
+
+IF
+	Global("1100ADOOR","GLOBAL",1)
+	OpenState("Door1",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("1100ADOOR","GLOBAL",0)
+END
+
+IF
+	Global("1100ADOOR","GLOBAL",1)
+	OpenState("Door1",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("1100ADOOR","GLOBAL",0)
+		OpenDoor("Door1")
+END
+
+IF
+	Global("1100BDOOR","GLOBAL",1)
+	OpenState("Door3",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("1100BDOOR","GLOBAL",0)
+END
+
+IF
+	Global("1100BDOOR","GLOBAL",1)
+	OpenState("Door3",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("1100BDOOR","GLOBAL",0)
+		OpenDoor("Door3")
+END
+
+IF
+	Global("Aqueducts","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Aqueducts","GLOBAL",2)
+		TriggerActivation("DockInfo",FALSE)
+		TriggerActivation("To1119",TRUE)
+END
+
+IF
+	Global("NWSewers1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("NWSewers1","GLOBAL",2)
+		TriggerActivation("To1120",TRUE)
+END
+

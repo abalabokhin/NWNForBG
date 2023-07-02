@@ -1,0 +1,16 @@
+IF
+	OpenState("Lever",TRUE)
+	OpenState("Gate",FALSE)
+THEN
+	RESPONSE #100
+		OpenDoor("Gate")
+END
+
+IF
+	OpenState("Lever",FALSE)
+	OpenState("Gate",TRUE)
+THEN
+	RESPONSE #100
+		CloseDoor("Gate")
+END
+

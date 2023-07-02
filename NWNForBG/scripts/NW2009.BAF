@@ -1,0 +1,16 @@
+IF
+	GlobalGT("SolomonRing","GLOBAL",1)
+	InMyArea("Solomon")  // ???????
+THEN
+	RESPONSE #100
+		ActionOverride("Solomon",DestroySelf())
+END
+
+IF
+	GlobalGT("GoToLuskan","GLOBAL",0)
+	InMyArea("Darktong")  // ????????? ????????
+THEN
+	RESPONSE #100
+		ActionOverride("Darktong",DestroySelf())
+END
+

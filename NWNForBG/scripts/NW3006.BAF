@@ -1,0 +1,18 @@
+IF
+	Dead("Jevon")  // ??????
+	Global("JevonDead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JevonDead","MYAREA",1)
+		IncrementGlobal("MemberDied","GLOBAL",1)
+END
+
+IF
+	Dead("Zed")  // ???
+	Global("ZedDead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ZedDead","MYAREA",1)
+		IncrementGlobal("MemberDied","GLOBAL",1)
+END
+

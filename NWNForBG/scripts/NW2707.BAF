@@ -1,0 +1,20 @@
+IF
+	Global("MansHand","MYAREA",0)
+	OR(2)
+		InParty("Boddinok")  // ????????
+		Global("BoddinokReleased","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("MansHand","MYAREA",1)
+		ActionOverride("Chest1",CreateItem("Nwmisc39",1,0,0))  // ???? ???????????
+END
+
+IF
+	Global("Door1Opened","MYAREA",1)
+	OpenState("DoorX1",FALSE)
+THEN
+	RESPONSE #100
+		Unlock("DoorX1")
+		OpenDoor("DoorX1")
+END
+

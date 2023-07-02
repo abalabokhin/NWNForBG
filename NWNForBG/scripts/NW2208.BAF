@@ -1,0 +1,21 @@
+IF
+	Global("PlayerHasSword","MYAREA",0)
+	!Contains("Swordnw1","Sword")  // ???????? ????-??
+THEN
+	RESPONSE #100
+		SetGlobal("PlayerHasSword","MYAREA",1)
+		CloseDoor("Door1")
+		ContainerEnable("Sword",FALSE)
+END
+
+IF
+	OR(2)
+		GlobalGT("YuantiRiddle","MYAREA",0)
+		Dead("YUANTINW")  // ????-??
+	Global("ExitTo2210","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ExitTo2210","MYAREA",1)
+		TriggerActivation("To2210",TRUE)
+END
+

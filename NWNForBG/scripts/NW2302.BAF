@@ -1,0 +1,66 @@
+IF
+	HasItem("Marker",Player1)  // ??????
+	Global("ToCave2","NW2302",0)
+	InMyArea("2302WT")  // ??????
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		TakePartyItem("Marker")  // ??????
+		ActionOverride("2302WT",StartDialog("PASSAGE",Player1))
+END
+
+IF
+	HasItem("Marker",Player2)  // ??????
+	Global("ToCave2","NW2302",0)
+	InMyArea("2302WT")  // ??????
+	InMyArea(Player2)
+THEN
+	RESPONSE #100
+		TakePartyItem("Marker")  // ??????
+		ActionOverride("2302WT",StartDialog("PASSAGE",Player2))
+END
+
+IF
+	HasItem("Marker",Player3)  // ??????
+	Global("ToCave2","NW2302",0)
+	InMyArea("2302WT")  // ??????
+	InMyArea(Player3)
+THEN
+	RESPONSE #100
+		TakePartyItem("Marker")  // ??????
+		ActionOverride("2302WT",StartDialog("PASSAGE",Player3))
+END
+
+IF
+	HasItem("Marker",Player4)  // ??????
+	Global("ToCave2","NW2302",0)
+	InMyArea("2302WT")  // ??????
+	InMyArea(Player4)
+THEN
+	RESPONSE #100
+		TakePartyItem("Marker")  // ??????
+		ActionOverride("2302WT",StartDialog("PASSAGE",Player4))
+END
+
+IF
+	HasItem("Marker",Player5)  // ??????
+	Global("ToCave2","NW2302",0)
+	InMyArea("2302WT")  // ??????
+	InMyArea(Player5)
+THEN
+	RESPONSE #100
+		TakePartyItem("Marker")  // ??????
+		ActionOverride("2302WT",StartDialog("PASSAGE",Player5))
+END
+
+IF
+	HasItem("Marker",Player6)  // ??????
+	Global("ToCave2","NW2302",0)
+	InMyArea("2302WT")  // ??????
+	InMyArea(Player6)
+THEN
+	RESPONSE #100
+		TakePartyItem("Marker")  // ??????
+		ActionOverride("2302WT",StartDialog("PASSAGE",Player6))
+END
+

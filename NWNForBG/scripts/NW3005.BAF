@@ -1,0 +1,714 @@
+IF
+	Contains("PLAT04","Anvil")  // ?????? ?????? ??????
+	Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",1)
+END
+
+IF
+	Contains("CHAN02","Anvil")  // ???????? +1
+	Contains("Holywanw","Anvil")  // ?????? ?????? ????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",2)
+END
+
+IF
+	Contains("LEAT07","Anvil")  // ???????? ??????? ?????? +2
+	Contains("GarSkull","Anvil")  // ????? ????????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",3)
+END
+
+IF
+	Contains("AX1H02","Anvil")  // ?????? ????? +1
+	Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",4)
+END
+
+IF
+	Contains("HALB02","Anvil")  // ???????? +1
+	Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",5)
+END
+
+IF
+	Contains("AX1H02","Anvil")  // ?????? ????? +1
+	Contains("Drablood","Anvil")  // ????? ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",6)
+END
+
+IF
+	Contains("BLUN01","Anvil")  // ??????
+	Contains("Ironwood","Anvil")  // ???????? ??????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",7)
+END
+
+IF
+	Contains("BLUN05","Anvil")  // ?????? +1
+	Contains("Ironwood","Anvil")  // ???????? ??????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",8)
+END
+
+IF
+	Contains("HAMM02","Anvil")  // ?????? ????? +1
+	Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",9)
+END
+
+IF
+	Contains("BLUN03","Anvil")  // ??? +1
+	Contains("Ironwood","Anvil")  // ???????? ??????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",10)
+END
+
+IF
+	Contains("BLUN05","Anvil")  // ?????? +1
+	Contains("Holywanw","Anvil")  // ?????? ?????? ????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",11)
+END
+
+IF
+	Contains("BLUN07","Anvil")  // ??????????? +1
+	Contains("Magdust","Anvil")  // ????????? ????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",12)
+END
+
+IF
+	Contains("HAMM03","Anvil")  // ?????? ????? +2
+	Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",13)
+END
+
+IF
+	Contains("SW2H02","Anvil")  // ????????? ??? +1
+	Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",14)
+END
+
+IF
+	Contains("SW1H44","Anvil")  // ?????? +1
+	Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",15)
+END
+
+IF
+	Contains("SW1H05","Anvil")  // ??????? ??? +1
+	Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",16)
+END
+
+IF
+	Contains("SW1H02","Anvil")  // ?????????? ??? +1
+	Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",17)
+END
+
+IF
+	Contains("SW1H22","Anvil")  // ???????? +1
+	Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",18)
+END
+
+IF
+	Contains("SW1H08","Anvil")  // ???????? ??? +1
+	Contains("Magdust","Anvil")  // ????????? ????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",19)
+END
+
+IF
+	Contains("HALB03","Anvil")  // ???????? +2
+	Contains("Drablood","Anvil")  // ????? ???????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",20)
+END
+
+IF
+	Contains("SPER02","Anvil")  // ????? +1
+	Contains("Magdust","Anvil")  // ????????? ????
+	Global("PlantedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",21)
+END
+
+IF
+	Global("PlantedItems","MYAREA",1)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("RITHTEL2"))  // ?????????
+		ActionOverride("Anvil",DestroyItem("PLAT04"))  // ?????? ?????? ??????
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("PLATNWN1",1,1,0))  // ??????? ??????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",2)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Holywanw"))  // ?????? ?????? ????
+		ActionOverride("Anvil",DestroyItem("CHAN02"))  // ???????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("CHANNW1",5,0,0))  // ????? ??????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",3)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("GarSkull"))  // ????? ????????
+		ActionOverride("Anvil",DestroyItem("LEAT07"))  // ???????? ??????? ?????? +2
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("LEATNW1",1,1,0))  // ??????? ?????? ????? ?????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",4)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Adamant"))  // ???????
+		ActionOverride("Anvil",DestroyItem("AX1H02"))  // ?????? ????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("AX1HNW1",1,0,0))  // ????? +4
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",5)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Adamant"))  // ???????
+		ActionOverride("Anvil",DestroyItem("HALB02"))  // ???????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("HALBNW1",1,0,0))  // ????????? ????? ????????? ???????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",6)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Drablood"))  // ????? ???????
+		ActionOverride("Anvil",DestroyItem("AX1H02"))  // ?????? ????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("AX1HNW2",1,1,0))  // ???????? ???? +4
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",7)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Ironwood"))  // ???????? ??????
+		ActionOverride("Anvil",DestroyItem("BLUN01"))  // ??????
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("BLUNNW1",1,0,0))  // ?????? ??????????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",8)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Ironwood"))  // ???????? ??????
+		ActionOverride("Anvil",DestroyItem("BLUN05"))  // ?????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("BLUNNW2",1,0,0))  // ?????? ?? ????????? ??????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",9)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("RITHTEL2"))  // ?????????
+		ActionOverride("Anvil",DestroyItem("HAMM02"))  // ?????? ????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("HAMMNW1",1,0,0))  // ????? ????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",10)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Ironwood"))  // ???????? ??????
+		ActionOverride("Anvil",DestroyItem("BLUN03"))  // ??? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("BLUNNW3",1,0,0))  // ??????? ??????????
+		SmallWait(5)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",11)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Holywanw"))  // ?????? ?????? ????
+		ActionOverride("Anvil",DestroyItem("BLUN05"))  // ?????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("BLUNNW4",1,0,0))  // ?????? ????????? +4
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",12)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Magdust"))  // ????????? ????
+		ActionOverride("Anvil",DestroyItem("BLUN07"))  // ??????????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("BLUNNW5",1,1,2))  // ???????? ???????????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",13)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Adamant"))  // ???????
+		ActionOverride("Anvil",DestroyItem("HAMM03"))  // ?????? ????? +2
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("HAMMNW2",1,0,0))  // ?????? ????? +4
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",14)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Adamant"))  // ???????
+		ActionOverride("Anvil",DestroyItem("SW2H02"))  // ????????? ??? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SW2HNW1",1,0,0))  // ????????? ??? ?????????????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",15)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Adamant"))  // ???????
+		ActionOverride("Anvil",DestroyItem("SW1H44"))  // ?????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SW1HNW1",1,0,0))  // ?????????????? ??????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",16)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("RITHTEL2"))  // ?????????
+		ActionOverride("Anvil",DestroyItem("SW1H05"))  // ??????? ??? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SW1HNW2",1,0,0))  // ?????????? ??????? ???
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",17)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("RITHTEL2"))  // ?????????
+		ActionOverride("Anvil",DestroyItem("SW1H02"))  // ?????????? ??? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SW1HNW3",1,0,0))  // ?????????? ?????????? ???
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",18)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Adamant"))  // ???????
+		ActionOverride("Anvil",DestroyItem("SW1H22"))  // ???????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SW1HNW4",1,0,0))  // ???????? ?????????? ?????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",19)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Magdust"))  // ????????? ????
+		ActionOverride("Anvil",DestroyItem("SW1H08"))  // ???????? ??? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SW1HNW5",1,1,2))  // ???????? ??? ?????? ????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",20)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Drablood"))  // ????? ???????
+		ActionOverride("Anvil",DestroyItem("HALB03"))  // ???????? +2
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("HALBNW2",1,1,0))  // ???????? ????????
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	Global("PlantedItems","MYAREA",21)
+	Global("ForgeStuffNW","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Anvil",DestroyItem("Magdust"))  // ????????? ????
+		ActionOverride("Anvil",DestroyItem("SPER02"))  // ????? +1
+		SetGlobal("BarunSay","MYAREA",1)
+		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("PlantedItems","MYAREA",0)
+		ActionOverride("Anvil",CreateItem("SPERNW1",1,1,2))  // ???????? ???
+		SmallWait(3)
+		ActionOverride("Barun",StartDialogueNoSet([PC]))
+END
+
+IF
+	OR(2)
+		!Contains("PLAT04","Anvil")  // ?????? ?????? ??????
+		!Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("CHAN02","Anvil")  // ???????? +1
+		!Contains("Holywanw","Anvil")  // ?????? ?????? ????
+	Global("PlantedItems","MYAREA",2)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("LEAT07","Anvil")  // ???????? ??????? ?????? +2
+		!Contains("GarSkull","Anvil")  // ????? ????????
+	Global("PlantedItems","MYAREA",3)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("AX1H02","Anvil")  // ?????? ????? +1
+		!Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",4)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("HALB02","Anvil")  // ???????? +1
+		!Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",5)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("AX1H02","Anvil")  // ?????? ????? +1
+		!Contains("Drablood","Anvil")  // ????? ???????
+	Global("PlantedItems","MYAREA",6)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("BLUN01","Anvil")  // ??????
+		!Contains("Ironwood","Anvil")  // ???????? ??????
+	Global("PlantedItems","MYAREA",7)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("BLUN05","Anvil")  // ?????? +1
+		!Contains("Ironwood","Anvil")  // ???????? ??????
+	Global("PlantedItems","MYAREA",8)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("HAMM02","Anvil")  // ?????? ????? +1
+		!Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",9)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("BLUN03","Anvil")  // ??? +1
+		!Contains("Ironwood","Anvil")  // ???????? ??????
+	Global("PlantedItems","MYAREA",10)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("BLUN05","Anvil")  // ?????? +1
+		!Contains("Holywanw","Anvil")  // ?????? ?????? ????
+	Global("PlantedItems","MYAREA",11)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("BLUN07","Anvil")  // ??????????? +1
+		!Contains("Magdust","Anvil")  // ????????? ????
+	Global("PlantedItems","MYAREA",12)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("HAMM03","Anvil")  // ?????? ????? +2
+		!Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",13)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SW2H02","Anvil")  // ????????? ??? +1
+		!Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",14)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SW1H44","Anvil")  // ?????? +1
+		!Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",15)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SW1H05","Anvil")  // ??????? ??? +1
+		!Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",16)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SW1H02","Anvil")  // ?????????? ??? +1
+		!Contains("RITHTEL2","Anvil")  // ?????????
+	Global("PlantedItems","MYAREA",17)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SW1H22","Anvil")  // ???????? +1
+		!Contains("Adamant","Anvil")  // ???????
+	Global("PlantedItems","MYAREA",18)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SW1H08","Anvil")  // ???????? ??? +1
+		!Contains("Magdust","Anvil")  // ????????? ????
+	Global("PlantedItems","MYAREA",19)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("HALB03","Anvil")  // ???????? +2
+		!Contains("Drablood","Anvil")  // ????? ???????
+	Global("PlantedItems","MYAREA",20)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+
+IF
+	OR(2)
+		!Contains("SPER02","Anvil")  // ????? +1
+		!Contains("Magdust","Anvil")  // ????????? ????
+	Global("PlantedItems","MYAREA",21)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedItems","MYAREA",0)
+END
+

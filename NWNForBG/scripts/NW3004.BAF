@@ -1,0 +1,11 @@
+IF
+	Global("LillianJob","GLOBAL",2)
+	OpenState("Sphere",FALSE)
+	Global("ActivateOrb","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ActivateOrb","MYAREA",1)
+		OpenDoor("Sphere")
+		TriggerActivation("SnowOrb",TRUE)
+END
+

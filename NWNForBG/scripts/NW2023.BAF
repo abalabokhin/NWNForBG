@@ -1,0 +1,8 @@
+IF
+	Global("LuscanVizited","GLOBAL",1)
+	InMyArea("Aribeth")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Aribeth",DestroySelf())
+END
+

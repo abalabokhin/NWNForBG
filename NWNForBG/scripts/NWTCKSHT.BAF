@@ -1,0 +1,51 @@
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		SelectWeaponAbility(SLOT_WEAPON0,1)
+		SelectWeaponAbility(SLOT_WEAPON1,1)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SelectWeaponAbility(SLOT_WEAPON0,0)
+		SelectWeaponAbility(SLOT_WEAPON1,0)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SelectWeaponAbility(SLOT_WEAPON0,0)
+		SelectWeaponAbility(SLOT_WEAPON1,0)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	AttackedBy([PC],DEFAULT)
+THEN
+	RESPONSE #100
+		Shout(5)
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],5)
+	Allegiance(Myself,NEUTRAL)
+	!Name("Nyphith",Myself)  // ???????
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+

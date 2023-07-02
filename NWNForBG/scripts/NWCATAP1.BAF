@@ -1,0 +1,33 @@
+IF
+	Dead("Catap2")  // ??????????
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	Global("Begin","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Begin","LOCALS",1)
+		SetGlobalTimer("AttackWall","LOCALS",TWO_MINUTES)
+END
+
+IF
+	Detect("Nwtarg1")  // ???????????
+	GlobalTimerExpired("AttackWall","LOCALS")
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("jwsiege","Nwtarg1")  // No such index
+		SetGlobalTimer("AttackWall","LOCALS",FOUR_MINUTES)
+END
+
+IF
+	Detect("Nwtarg2")  // ???????????
+	GlobalTimerExpired("AttackWall","LOCALS")
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("jwsiege","Nwtarg2")  // No such index
+		SetGlobalTimer("AttackWall","LOCALS",FOUR_MINUTES)
+END
+

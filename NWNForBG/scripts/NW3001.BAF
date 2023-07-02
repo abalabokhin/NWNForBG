@@ -1,0 +1,10 @@
+IF
+	Global("TeleportToNewervinter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("TeleportToNewervinter","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("ToNever2")
+END
+

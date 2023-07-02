@@ -1,0 +1,11 @@
+IF
+	Global("OpenDoor","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("OpenDoor","MYAREA",2)
+		ActionOverride("Grommin",FaceObject("Door3"))
+		Unlock("Door3")
+		OpenDoor("Door3")
+		ActionOverride("Grommin",FaceObject(Player1))
+END
+

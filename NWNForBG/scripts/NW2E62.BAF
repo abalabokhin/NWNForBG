@@ -1,0 +1,28 @@
+IF
+	GlobalLT("LuscanTower","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("LuscanTower","GLOBAL",5)
+END
+
+IF
+	Dead("Brazier3")  // ???????
+	Global("BrazierDestroyed","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BrazierDestroyed","MYAREA",1)
+		OpenDoor("Brazier")
+		AmbientActivate("Fire_gr",FALSE)
+		SoundActivate("Fire1",FALSE)
+END
+
+IF
+	InMyArea("Nyphith")  // ???????
+	Global("NyphithusQuest","GLOBAL",2)
+	Global("NyphithusQuest","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NyphithusQuest","MYAREA",1)
+		ActionOverride("Nyphith",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
+END
+

@@ -1,0 +1,11 @@
+IF
+	IsOverMe([PC])
+	Global("VoleronSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VoleronSpawn","MYAREA",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("Volsp")
+END
+

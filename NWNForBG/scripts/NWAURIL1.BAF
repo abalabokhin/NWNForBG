@@ -1,0 +1,8 @@
+IF
+	Global("Scroll","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Scroll","LOCALS",1)
+		GiveItemCreate("NWMISC69",Myself,1,1,0)  // ??????
+END
+

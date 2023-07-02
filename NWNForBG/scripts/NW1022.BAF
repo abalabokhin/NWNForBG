@@ -1,0 +1,9 @@
+IF
+	Global("DialogChange","MYAREA",0)
+	GlobalGT("NWNChapter","GLOBAL",3)
+THEN
+	RESPONSE #100
+		ActionOverride("Malecom5",SetDialog("NWMAN1"))
+		SetGlobal("DialogChange","MYAREA",1)
+END
+

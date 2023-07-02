@@ -1,0 +1,76 @@
+IF
+	Global("Siege_Is_Lifted","GLOBAL",1)
+	Global("IlcardDoor","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("IlcardDoor","MYAREA",1)
+		Unlock("Gate")
+END
+
+IF
+	Dead("Catapul2")
+	Global("Catapult2Dead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Catapult2Dead","MYAREA",1)
+		OpenDoor("Catapul2")
+END
+
+IF
+	Dead("Catapul3")
+	Global("Catapult3Dead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Catapult3Dead","MYAREA",1)
+		OpenDoor("Catapul3")
+END
+
+IF
+	Dead("Catapul4")
+	Global("Catapult4Dead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Catapult4Dead","MYAREA",1)
+		OpenDoor("Catapul4")
+END
+
+IF
+	Dead("Catapul5")
+	Global("Catapult5Dead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Catapult5Dead","MYAREA",1)
+		OpenDoor("Catapul5")
+END
+
+IF
+	Global("Catapult2Dead","MYAREA",1)
+	Global("Catapult3Dead","MYAREA",1)
+	Global("Catapult4Dead","MYAREA",1)
+	Global("Catapult5Dead","MYAREA",1)
+	GlobalLT("Siege_Is_Lifted","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Siege_Is_Lifted","GLOBAL",2)
+END
+
+IF
+	Global("UtgartSpawn","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("UtgartSpawn","MYAREA",2)
+		Wait(3)
+		CreateCreature("Moosewa4",[50.1794],12)  // ???? ??????? ????
+		CreateCreature("Moosewa4",[57.1654],12)  // ???? ??????? ????
+		CreateCreature("Moosewa4",[110.1688],12)  // ???? ??????? ????
+		CreateCreature("Moosewa4",[124.1748],12)  // ???? ??????? ????
+END
+
+IF
+	NumDeadGT("Moosewa4",3)  // ???? ??????? ????
+	Global("Rescue","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Rescue","MYAREA",1)
+END
+

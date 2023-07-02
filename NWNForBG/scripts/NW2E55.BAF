@@ -1,0 +1,69 @@
+IF
+	OnCreation()
+	Global("Reveal","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Reveal","MYAREA",1)
+		Explore()
+		Continue()
+END
+
+IF
+	Global("IslundPermission","MYAREA",1)
+	Global("TownDoor","MYAREA",0)
+	OpenState("Door1",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("TownDoor","MYAREA",1)
+END
+
+IF
+	Global("IslundPermission","MYAREA",1)
+	Global("TownDoor","MYAREA",0)
+	OpenState("Door1",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("TownDoor","MYAREA",1)
+		Unlock("Door1")
+END
+
+IF
+	Global("Hostile","MYAREA",1)
+	Global("MageGuard","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MageGuard","MYAREA",1)
+		CreateCreatureDoor("Islund4",[2212.1347],4)  // ???
+		CreateCreatureDoor("Islund5",[1931.1417],6)  // ???
+		CreateCreatureDoor("Islund4",[1583.1344],10)  // ???
+		CreateCreatureDoor("Islund5",[1628.1137],12)  // ???
+		Continue()
+END
+
+IF
+	Global("2E59_To_2E55","GLOBAL",1)
+	OpenState("Door2",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("2E59_To_2E55","GLOBAL",0)
+END
+
+IF
+	Global("2E59_To_2E55","GLOBAL",1)
+	OpenState("Door2",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("2E59_To_2E55","GLOBAL",0)
+		Unlock("Door2")
+		OpenDoor("Door2")
+END
+
+IF
+	Global("NW2E59_Vizited","GLOBAL",1)
+	OpenState("Door2",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("NW2E59_Vizited","GLOBAL",2)
+		Unlock("Door2")
+END
+

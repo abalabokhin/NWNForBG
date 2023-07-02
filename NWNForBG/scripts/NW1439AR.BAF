@@ -1,0 +1,56 @@
+IF
+	Global("Encounter","MYAREA",1)
+	Global("Pause1","MYAREA",0)
+	OR(2)
+		Entered([PC])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("Encounter","MYAREA",0)
+		SetGlobal("Pause1","MYAREA",1)
+		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		Continue()
+END
+
+IF
+	Global("Encounter","MYAREA",2)
+	Global("Pause2","MYAREA",0)
+	OR(2)
+		Entered([PC])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("Encounter","MYAREA",0)
+		SetGlobal("Pause2","MYAREA",1)
+		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		Continue()
+END
+
+IF
+	Global("Encounter","MYAREA",3)
+	Global("Pause3","MYAREA",0)
+	OR(2)
+		Entered([PC])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("Encounter","MYAREA",0)
+		SetGlobal("Pause3","MYAREA",1)
+		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		Continue()
+END
+
+IF
+	Global("Encounter","MYAREA",4)
+	Global("Pause4","MYAREA",0)
+	OR(2)
+		Entered([PC])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("Encounter","MYAREA",0)
+		SetGlobal("Pause4","MYAREA",1)
+		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		Continue()
+END
+

@@ -1,0 +1,10 @@
+IF
+	NumDeadGT("Formpri1",17)
+	Dead("Nwhug4")  // ??????? ?????
+	Global("Ambient_off","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Ambient_off","MYAREA",1)
+		SoundActivate("RiotYellsMob",FALSE)
+END
+

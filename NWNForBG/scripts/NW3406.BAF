@@ -1,0 +1,60 @@
+IF
+	Global("WaterElementalSummon","MYAREA",1)
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPDISPMA",[726.1403])
+		SetGlobal("WaterElementalSummon","MYAREA",2)
+		Wait(2)
+		CreateVisualEffect("SPROTECT",[726.1403])
+		Wait(1)
+		CreateCreature("NWWATER",[726.1403],14)  // ??? ????
+		Wait(1)
+		ActionOverride("NWWATER",DisplayStringHead(Myself,106071))  // ??? ????? ????, ? ??? ????? ???? ? ??????? ? ???? ?????
+END
+
+IF
+	Global("ToNax","MYAREA",2)
+THEN
+	RESPONSE #100
+		SetGlobal("ToNax","MYAREA",3)
+		ActionOverride("Nwwater",DestroySelf())
+END
+
+IF
+	OpenState("Door01",TRUE)
+	!Global("NaxJob","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("NaxJob","GLOBAL",2)
+END
+
+IF
+	!HasItem("Snoworb","Sphere")  // ??????? ?????
+	Global("SnoworbContainerClose","MYAREA",0)
+THEN
+	RESPONSE #100
+		OpenDoor("Door04")
+		SetGlobal("SnoworbContainerClose","MYAREA",1)
+END
+
+IF
+	HasItem("Snoworb","Sphere")  // ??????? ?????
+	Global("SnoworbContainerClose","MYAREA",1)
+THEN
+	RESPONSE #100
+		CloseDoor("Door04")
+		SetGlobal("SnoworbContainerClose","MYAREA",0)
+END
+
+IF
+	Global("3406Gong","MYAREA",4)
+	Global("3406Door04","MYAREA",0)
+THEN
+	RESPONSE #100
+		PlaySound("EFF_M28")
+		SetGlobal("3406Door04","MYAREA",1)
+		Unlock("Door03")
+		OpenDoor("Door03")
+		ContainerEnable("Sphere",TRUE)
+END
+

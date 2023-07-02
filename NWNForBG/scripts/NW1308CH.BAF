@@ -1,0 +1,23 @@
+IF
+	OR(2)
+		!Global("AttemptingOpenChest","MYAREA",0)
+		!Global("ChestOpen","MYAREA",0)
+	OR(2)
+		Clicked([PC])
+		Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Global("AttemptingOpenChest","MYAREA",0)
+	Global("ChestOpen","MYAREA",0)
+	OR(2)
+		Clicked([PC])
+		Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		SetGlobal("AttemptingOpenChest","MYAREA",1)
+END
+

@@ -1,0 +1,38 @@
+IF
+	GlobalLT("LuscanTower","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("LuscanTower","GLOBAL",3)
+END
+
+IF
+	Global("AbyssPortalClosed","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AbyssPortalClosed","MYAREA",2)
+		CreateVisualEffect("ICFIRSDI",[434.493])
+		AmbientActivate("Abyssf",FALSE)
+		Continue()
+END
+
+IF
+	Global("HellPortalClosed","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("HellPortalClosed","MYAREA",2)
+		CreateVisualEffect("ICFIRSDI",[385.567])
+		AmbientActivate("Hellf",FALSE)
+		Continue()
+END
+
+IF
+	GlobalGT("HellPortalClosed","MYAREA",0)
+	GlobalGT("AbyssPortalClosed","MYAREA",0)
+	Global("AmbientDeactivate","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AmbientDeactivate","MYAREA",1)
+		SoundActivate("Braziers",FALSE)
+		AddexperienceParty(42000)
+END
+

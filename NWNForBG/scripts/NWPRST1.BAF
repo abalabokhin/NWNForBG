@@ -1,0 +1,28 @@
+IF
+	Die()
+	Global("Change","LOCALS",0)
+THEN
+	RESPONSE #100
+		ChangeSpecifics(Myself,PERSON_2)
+		SetGlobal("Change","LOCALS",1)
+END
+
+IF
+	Global("NWNChapter","GLOBAL",2)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+

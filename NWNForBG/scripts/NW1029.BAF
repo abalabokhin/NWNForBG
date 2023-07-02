@@ -1,0 +1,9 @@
+IF
+	GlobalGT("NWNChapter","GLOBAL",1)
+	Global("Creatures","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Creatures","MYAREA",1)
+		ActionOverride("SLEEPFH",DestroySelf())
+END
+

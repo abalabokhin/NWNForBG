@@ -1,0 +1,8 @@
+IF
+	Global("NW101X_Vizited","GLOBAL",0)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("NW101X_Vizited","GLOBAL",1)
+END
+

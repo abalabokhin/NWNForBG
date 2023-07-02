@@ -1,0 +1,9 @@
+IF
+	Global("OgreSound","MYAREA",0)
+	Dead("Dergiab")  // ???????
+THEN
+	RESPONSE #100
+		SoundActivate("Ogre",FALSE)  // ???-???????
+		SetGlobal("OgreSound","MYAREA",1)
+END
+

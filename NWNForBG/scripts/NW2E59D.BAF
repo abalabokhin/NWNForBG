@@ -1,0 +1,8 @@
+IF
+	Clicked([ANYONE])
+	!Global("2E59_To_2E55","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E59_To_2E55","GLOBAL",1)
+END
+

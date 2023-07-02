@@ -1,0 +1,123 @@
+IF
+	OnCreation()
+	Global("Reveal","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Reveal","MYAREA",1)
+		Explore()
+		Continue()
+END
+
+IF
+	Global("1300DOORA","GLOBAL",1)
+	OpenState("Door05",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("1300DOORA","GLOBAL",0)
+END
+
+IF
+	Global("1300DOORA","GLOBAL",1)
+	OpenState("Door05",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("1300DOORA","GLOBAL",0)
+		OpenDoor("Door05")
+END
+
+IF
+	Global("1300DOORB","GLOBAL",1)
+	OpenState("Door06",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("1300DOORB","GLOBAL",0)
+END
+
+IF
+	Global("1300DOORB","GLOBAL",1)
+	OpenState("Door06",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("1300DOORB","GLOBAL",0)
+		OpenDoor("Door06")
+END
+
+IF
+	Global("1300DOORC","GLOBAL",1)
+	OpenState("Door03",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("1300DOORC","GLOBAL",0)
+END
+
+IF
+	Global("1300DOORC","GLOBAL",1)
+	OpenState("Door03",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("1300DOORC","GLOBAL",0)
+		Unlock("Door03")
+		OpenDoor("Door03")
+END
+
+IF
+	NumDeadGT("Johnsth",2)  // ????????? ???????????
+	Global("JohnsthDead","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JohnsthDead","MYAREA",1)
+END
+
+IF
+	GlobalLT("SedosQuest","GLOBAL",3)
+	GlobalGT("SedosQuest","GLOBAL",0)
+	Dead("Crewtd2")  // ???????
+THEN
+	RESPONSE #100
+		SetGlobal("SedosQuest","GLOBAL",3)
+		Continue()
+END
+
+IF
+	Global("PeninsulaDone","GLOBAL",0)
+	Dead("Crewtd2")  // ???????
+THEN
+	RESPONSE #100
+		SetGlobal("PeninsulaDone","GLOBAL",1)
+		IncrementGlobal("NW_Cultist_Attack","GLOBAL",1)
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalLT("SedosQuest","GLOBAL",3)
+		!Dead("Alaefin")  // ??????? ???????
+	Global("SpawnPointActive","MYAREA",0)
+	NumDeadGT("Thug1300",10)
+	OR(3)
+		!InMyArea("Johns")  // ?????? ?????
+		Dead("Johns")  // ?????? ?????
+		Global("JohnsQuest","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnPointActive","MYAREA",1)
+		SpawnPtActivate("Sphug1")
+		SpawnPtActivate("Sphug2")
+		SpawnPtActivate("Sphug3")
+		SpawnPtActivate("Sphug4")
+END
+
+IF
+	OR(2)
+		GlobalGT("SedosQuest","GLOBAL",2)
+		Dead("Alaefin")  // ??????? ???????
+	Global("SpawnPointActive","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnPointActive","MYAREA",2)
+		SpawnPtDeactivate("Sphug1")
+		SpawnPtDeactivate("Sphug2")
+		SpawnPtDeactivate("Sphug3")
+		SpawnPtDeactivate("Sphug4")
+END
+

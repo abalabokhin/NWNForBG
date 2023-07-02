@@ -1,0 +1,19 @@
+IF
+	Global("DoorOpened","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("DoorOpened","GLOBAL",2)
+		TriggerActivation("To1419",TRUE)
+		TriggerActivation("Bookcas2",TRUE)
+		TriggerActivation("Bookcas1",FALSE)
+		OpenDoor("Bookcase")
+END
+
+IF
+	Global("TelmaSecret","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SoundActivate("Undead",FALSE)
+		SetGlobal("TelmaSecret","GLOBAL",3)
+END
+

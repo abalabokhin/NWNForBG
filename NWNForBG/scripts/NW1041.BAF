@@ -1,0 +1,24 @@
+IF
+	Global("ArmorQuest","GLOBAL",1)
+THEN
+	RESPONSE #100
+		TakeItemReplace("Misc18","MINHP1Y","Nwplat1")  // ????????? ??????
+		TakeItemReplace("Misc18","MINHP1Y","Nwplat2")  // ????????? ??????
+		TakeItemReplace("Misc18","MINHP1Y","Nwplat3")  // ????????? ??????
+		TakeItemReplace("Misc18","MINHP1Y","Nwplat4")  // ????????? ??????
+		AddexperienceParty(36000)
+		SetGlobal("ArmorQuest","GLOBAL",2)
+END
+
+IF
+	Global("In1042PlatAll","GLOBAL",1)
+	Global("PlatNoActions","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlatNoActions","MYAREA",1)
+		ClearActions("Nwplat1")
+		ClearActions("Nwplat2")
+		ClearActions("Nwplat3")
+		ClearActions("Nwplat4")
+END
+

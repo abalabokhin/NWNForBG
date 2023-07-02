@@ -1,0 +1,13 @@
+IF
+	Global("ALHELOR_SPAWN","MYAREA",0)
+	OR(2)
+		Global("NeurikQuest","GLOBAL",7)
+		Global("NeurikQuest","GLOBAL",8)
+THEN
+	RESPONSE #100
+		SetGlobal("ALHELOR_SPAWN","MYAREA",1)
+		Unlock("Chest1")
+		Unlock("Chest2")
+		CreateCreature("ALHELOR2",[230.268],11)  // ???????
+END
+

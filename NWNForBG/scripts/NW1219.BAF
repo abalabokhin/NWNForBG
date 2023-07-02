@@ -1,0 +1,10 @@
+IF
+	Global("KultDoor","GLOBAL",1)
+	OpenState("Door1",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("KultDoor","GLOBAL",2)
+		Unlock("Door1")
+		OpenDoor("Door1")
+END
+

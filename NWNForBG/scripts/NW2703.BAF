@@ -1,0 +1,18 @@
+IF
+	Global("DeadJanis","GLOBAL",1)
+	GlobalTimerExpired("Janis","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("DeadJanis","GLOBAL",2)
+		SetGlobal("SPRITE_IS_DEADJANIS","GLOBAL",1)
+END
+
+IF
+	Global("RevatQuest","GLOBAL",2)
+	Global("JanisSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JanisSpawn","MYAREA",1)
+		CreateCreature("Janis2",[328.335],14)  // ??????
+END
+

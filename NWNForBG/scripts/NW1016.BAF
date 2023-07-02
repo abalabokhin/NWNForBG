@@ -1,0 +1,9 @@
+IF
+	Global("DialogChange","MYAREA",0)
+	GlobalGT("NWNChapter","GLOBAL",3)
+THEN
+	RESPONSE #100
+		ActionOverride("NWWOMAN2",SetDialog("NWWOMAN2"))
+		SetGlobal("DialogChange","MYAREA",1)
+END
+

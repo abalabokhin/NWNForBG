@@ -1,0 +1,157 @@
+IF
+	OnCreation()
+	Global("Reveal","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Reveal","MYAREA",1)
+		Explore()
+		Continue()
+END
+
+IF
+	Global("Door1410","GLOBAL",1)
+	OpenState("Door11",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1410","GLOBAL",0)
+		Unlock("Door11")
+		OpenDoor("Door11")
+END
+
+IF
+	Global("Door1410","GLOBAL",1)
+	OpenState("Door11",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1410","GLOBAL",0)
+END
+
+IF
+	Global("Door1406","GLOBAL",1)
+	OpenState("Door16",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("MeldanenDoor","MYAREA",2)
+		SetGlobal("Door1406","GLOBAL",0)
+		Unlock("Door16")
+		OpenDoor("Door16")
+END
+
+IF
+	Global("MeldanenDoor","MYAREA",1)
+	OpenState("Door16",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("MeldanenDoor","MYAREA",2)
+		Unlock("Door16")
+END
+
+IF
+	Global("Door1406","GLOBAL",1)
+	OpenState("Door16",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1406","GLOBAL",0)
+END
+
+IF
+	Global("GateOpened","MYAREA",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Harn",MoveToPoint([1231.3261]))
+		PlaySound("IronG")
+		OpenDoor("Door02")
+		Wait(2)
+		ActionOverride("Harn",MoveToPoint([1030.3244]))
+		SetGlobal("GateOpened","MYAREA",2)
+		ActionOverride("Harn",Face(0))
+END
+
+IF
+	GlobalLT("TreeActive","MYAREA",2)
+	OR(2)
+		TimeLT(DAWN_END)
+		TimeGT(20)
+THEN
+	RESPONSE #100
+		SetGlobal("Door14Unlocked","MYAREA",0)
+		CloseDoor("Door14")
+		Lock("Door14")
+		Continue()
+END
+
+IF
+	TimeGT(DAWN_END)
+	TimeLT(20)
+	Global("Door14Unlocked","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Door14Unlocked","MYAREA",1)
+		Unlock("Door14")
+		Continue()
+END
+
+IF
+	Global("Nwnzoo","GLOBAL",1)
+	AreaCheck("NW1400")  // ??????????
+	Global("TreeActive","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("TreeActive","MYAREA",1)
+		SetGlobal("Nwnzoo","GLOBAL",2)
+		TakePartyItem("NyatScrl")  // ?????? ???????? ????? ????????
+		DestroyItem("NyatScrl")  // ?????? ???????? ????? ????????
+		PlaySound("EFF_M27")
+		AmbientActivate("Tree1",TRUE)
+		AmbientActivate("Tree2",TRUE)
+		AmbientActivate("Tree3",TRUE)
+		Wait(1)
+		DisplayStringHead(Player1,104324)  // ?? ??????????? ?????? ???????? ????? ????????, ? ?????? ?????????????. ??? ???????? ????????? ???????, ????????, ??? ???????? ?? ????????  ?????? ????? ???????? ?????, ????????? ?????? ??? ??????.
+END
+
+IF
+	Global("TreeActive","MYAREA",1)
+	OR(2)
+		GlobalGT("NyatarQuest","GLOBAL",2)
+		GlobalGT("AnimalsRescued","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("TreeActive","MYAREA",2)
+		AmbientActivate("Tree1",FALSE)
+		AmbientActivate("Tree2",FALSE)
+		AmbientActivate("Tree3",FALSE)
+END
+
+IF
+	Global("Door1410","GLOBAL",1)
+	OpenState("Door11",FALSE)
+THEN
+	RESPONSE #100
+		Unlock("Door11")
+		OpenDoor("Door11")
+		SetGlobal("Door1410","GLOBAL",0)
+END
+
+IF
+	GlobalGT("FormosaQuest","GLOBAL",1)
+	!Dead("Formosa")  // ???????
+	Global("OpenWarehouse","GLOBAL",0)
+	Delay(3)
+THEN
+	RESPONSE #100
+		SetGlobal("OpenWarehouse","GLOBAL",1)
+		ActionOverride("Formosa",EscapeAreaObject("To1402"))
+		Unlock("Door20")
+		OpenDoor("Door20")
+END
+
+IF
+	Global("BlackLakeDone","GLOBAL",0)
+	OR(2)
+		GlobalGT("FormosaQuest","GLOBAL",1)
+		GlobalGT("MeldanenQuest","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("BlackLakeDone","GLOBAL",1)
+END
+

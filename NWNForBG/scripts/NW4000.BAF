@@ -1,0 +1,45 @@
+IF
+	Global("Siege","MYAREA",0)
+	OpenState("Door01",TRUE)
+THEN
+	RESPONSE #100
+		PlaySound("IronG")
+		CloseDoor("Door01")
+END
+
+IF
+	Global("Siege","MYAREA",1)
+	OpenState("Door01",FALSE)
+THEN
+	RESPONSE #100
+		PlaySound("IronG")
+		OpenDoor("Door01")
+END
+
+IF
+	Dead("Catap2")  // ??????????
+	Dead("Catap3")
+	Dead("Nwgolem3")  // ??????? ?????
+	Dead("Nwgolem4")  // ??????? ?????
+	Global("Siege","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Siege","MYAREA",1)
+END
+
+IF
+	Dead("Catap2")  // ??????????
+	OpenState("Catapul2",TRUE)
+THEN
+	RESPONSE #100
+		CloseDoor("Catapul2")
+END
+
+IF
+	Dead("Catap3")
+	OpenState("Catapul3",TRUE)
+THEN
+	RESPONSE #100
+		CloseDoor("Catapul3")
+END
+

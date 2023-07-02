@@ -1,0 +1,27 @@
+IF
+	Global("MyContainer","NW2905",0)
+	Dead("Relmar")  // ??????
+THEN
+	RESPONSE #100
+		ContainerEnable("Stones",TRUE)
+		SetGlobal("MyContainer","NW2905",1)
+END
+
+IF
+	Global("SpiritSaved","GLOBAL",1)
+	Global("AreaSong","MYAREA",0)
+THEN
+	RESPONSE #100
+		PlaySong(114)
+		SetGlobal("AreaSong","MYAREA",1)
+END
+
+IF
+	Dead("Spiritfo")  // ??? ????
+	Global("AreaSong","MYAREA",0)
+THEN
+	RESPONSE #100
+		PlaySong(143)
+		SetGlobal("AreaSong","MYAREA",1)
+END
+

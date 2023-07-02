@@ -1,0 +1,11 @@
+IF
+	Global("PlayerHasJournal","MYAREA",0)
+	!Contains("WanevJ1","Table1")  // ??????? ???????
+THEN
+	RESPONSE #100
+		CloseDoor("Journal")
+		Lock("Journal")
+		ContainerEnable("Table1",FALSE)
+		SetGlobal("PlayerHasJournal","MYAREA",1)
+END
+

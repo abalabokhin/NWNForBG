@@ -1,0 +1,7 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		SetGlobal("ElectricDead","MYAREA",1)
+END
+

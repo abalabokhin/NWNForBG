@@ -1,0 +1,46 @@
+IF
+	GlobalGT("NWNChapter","GLOBAL",1)
+	Global("Creatures","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Creatures","MYAREA",1)
+		ActionOverride("Sick1",DestroySelf())
+		ActionOverride("Sick2",DestroySelf())
+		ActionOverride("Sick3",DestroySelf())
+		ActionOverride("Nurse2",DestroySelf())
+		OpenDoor("Mattress")
+		AmbientActivate("Flame3s1",FALSE)
+		AmbientActivate("Flame4s1",FALSE)
+		AmbientActivate("Flame4s2",FALSE)
+		SoundActivate("Ailing1",FALSE)
+		SoundActivate("Ailing2",FALSE)
+END
+
+IF
+	Global("NWNChapter","GLOBAL",4)
+	Global("DoorToNW4011","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("To1001",FALSE)
+		TriggerActivation("To4011",TRUE)
+		SetGlobal("DoorToNW4011","MYAREA",1)
+		Continue()
+END
+
+IF
+	GlobalGT("NWNChapter","GLOBAL",3)
+	Global("Creatures","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Creatures","MYAREA",2)
+		CreateCreature("SICKMH2",[1659.525],10)  // ??????? ??????
+		CreateCreature("INJURED1",[1690.606],10)  // ??????? ??????
+		CreateCreature("INJURED1",[1760.630],10)  // ??????? ??????
+		CreateCreature("Nurse5",[1595.611],12)  // ???????
+		CloseDoor("Mattress")
+		AmbientActivate("Flame3s1",TRUE)
+		AmbientActivate("Flame4s1",TRUE)
+		AmbientActivate("Flame4s2",TRUE)
+		SoundActivate("Ailing2",TRUE)
+END
+

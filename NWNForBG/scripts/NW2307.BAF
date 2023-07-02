@@ -1,0 +1,72 @@
+IF
+	PartyHasItem("Vgem")  // ??????????? ?????? ???????
+	Global("WanevGem","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WanevGem","GLOBAL",1)
+END
+
+IF
+	Global("GuglashHeart","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ContainerEnable("Brazier",FALSE)
+		SetGlobal("GuglashHeart","GLOBAL",2)
+		AmbientActivate("Portal",FALSE)
+		SoundActivate("Portal2",FALSE)
+		AmbientActivate("Brazier2",TRUE)  // ???????
+END
+
+IF
+	Dead("ElefirNW")  // ????? ?????????? ????
+	Global("GuglashHeart","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Sprite_Is_DeadElefirNW","GLOBAL",0)
+		CreateCreature("ElefirNW",[597.767],0)  // ????? ?????????? ????
+END
+
+IF
+	Dead("MepsmoNW")  // ??????? ?????
+	Global("GuglashHeart","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Sprite_Is_DeadMepsmoNW","GLOBAL",0)
+		CreateCreature("MepsmoNW",[597.767],0)  // ??????? ?????
+END
+
+IF
+	Dead("MepfirNW")  // ???????? ?????
+	Global("GuglashHeart","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Sprite_Is_DeadMepfirNW","GLOBAL",0)
+		CreateCreature("MepfirNW",[597.767],0)  // ???????? ?????
+END
+
+IF
+	Dead("MepmagNW")  // ???????? ?????
+	Global("GuglashHeart","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Sprite_Is_DeadMepmagNW","GLOBAL",0)
+		CreateCreature("MepmagNW",[597.767],0)  // ???????? ?????
+END
+
+IF
+	GlobalGT("GuglashHeart","GLOBAL",0)
+	GlobalGT("WanevQuest","GLOBAL",0)
+	GlobalLT("WanevQuest","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("WanevQuest","GLOBAL",3)
+END
+
+IF
+	GlobalGT("GuglashHeart","GLOBAL",0)
+	Global("WanevQuest2","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("WanevQuest2","GLOBAL",2)
+END
+

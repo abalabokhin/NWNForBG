@@ -1,0 +1,34 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Aribeth",MoveToPoint([1032.798]))
+		MoveToPoint([1054.757])
+		MoveViewPoint([1040.770],SLOW)
+		ActionOverride("Fenthick",JumpToPoint([1032.798]))
+		ActionOverride("Desther",JumpToPoint([1032.798]))
+		Wait(5)
+		DisplayStringHead("Aribeth",103349)  // ????? ?? ????, ??? ???? ???? ?????.
+		SetGlobal("MakingMedicine","GLOBAL",2)
+		Wait(3)
+		MoveToPoint([712.1086])
+		ActionOverride("Fenthick",EscapeAreaObject("To1000"))
+		ActionOverride("Desther",EscapeAreaObject("To1000"))
+		ActionOverride("Aribeth",EscapeAreaObject("To1000"))
+		Wait(3)
+		FadeToColor([20.0],0)
+		Wait(3)
+		LeaveAreaLUAPanic("NW1030","",[1364.644],10)
+		LeaveAreaLUA("NW1030","",[1364.644],10)
+		ActionOverride(Player2,LeaveAreaLUA("NW1030","",[1196.703],12))
+		ActionOverride(Player3,LeaveAreaLUA("NW1030","",[1167.780],11))
+		ActionOverride(Player4,LeaveAreaLUA("NW1030","",[1253.747],11))
+		ActionOverride(Player5,LeaveAreaLUA("NW1030","",[1306.797],8))
+		ActionOverride(Player6,LeaveAreaLUA("NW1030","",[1283.859],8))
+		MultiPlayerSync()
+		Wait(1)
+		FadeFromColor([20.0],0)
+		EndCutSceneMode()
+END
+

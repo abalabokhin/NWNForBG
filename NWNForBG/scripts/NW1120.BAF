@@ -1,0 +1,9 @@
+IF
+	Global("NWNDocksDone","GLOBAL",0)
+	PartyHasItem("CREWTD4")  // ???? ?????????
+THEN
+	RESPONSE #100
+		SetGlobal("NWNDocksDone","GLOBAL",1)
+		IncrementGlobal("NW_Cultist_Attack","GLOBAL",1)
+END
+

@@ -1,0 +1,87 @@
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Shout(ALERT_151)
+		SetGlobal("Hostile","MYAREA",1)
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],ALERT_151)
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("Hostile","MYAREA",1)
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Global("Hostile","MYAREA",1)
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!Range(NearestEnemyOf(Myself),3)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	Heard([ANYONE],ALERT_151)
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+IF
+	Heard([ANYONE],HP_LT_20_ASSIST)
+	InMyGroup(LastHeardBy(Myself))
+	!Name("Nwgolst1",Myself)  // ???????? ?????
+	!HaveAnySpells()
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),30)
+END
+
+IF
+	General(Myself,HUMANOID)
+	BreakingPoint()
+	Global("Panic","LOCALS",0)
+THEN
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49766)  // ? ?????? ?? ????!
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49767)  // ??????!
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49768)  // ??????!
+END
+
+IF
+	HitBy(Myself,CRUSHING)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+

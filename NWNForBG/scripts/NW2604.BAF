@@ -1,0 +1,10 @@
+IF
+	OnCreation()
+	!Exists("CHARWHOM")  // ??????????
+	!Global("JaregQuest","GLOBAL",5)
+	Global("CharwoodCreatute","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("CHARWHOM",[345.310],13)  // ??????????
+END
+

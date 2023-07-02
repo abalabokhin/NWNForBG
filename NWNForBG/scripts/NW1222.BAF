@@ -1,0 +1,20 @@
+IF
+	Global("Door1221Opened","GLOBAL",1)
+	OpenState("Door1221",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1221Opened","GLOBAL",0)
+		Continue()
+END
+
+IF
+	Global("Door1221Opened","GLOBAL",1)
+	OpenState("Door1221",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1221Opened","GLOBAL",0)
+		Unlock("Door1221")
+		OpenDoor("Door1221")
+		Continue()
+END
+

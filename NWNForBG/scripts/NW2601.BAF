@@ -1,0 +1,132 @@
+IF
+	Global("CharwoodChange","MYAREA",0)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("GUARDCH",DestroySelf())
+		TakePartyItem("Key2601")  // ????
+		CloseDoor("Door6")
+		Lock("Door6")
+		SetGlobal("CharwoodChange","MYAREA",1)
+END
+
+IF
+	Global("CharwoodCreatute","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodCreatute","GLOBAL",0)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		CreateCreature("Mobley2",[3612.1240],11)  // ?????
+		AddexperienceParty(150000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GENEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		CreateCreature("Mobley2",[3612.1240],11)  // ?????
+		AddexperienceParty(125000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GOOD)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		CreateCreature("Mobley2",[3612.1240],11)  // ?????
+		AddexperienceParty(100000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",6)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(125000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",6)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GENEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(200000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",6)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GOOD)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(125000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",2)
+		CreateCreature("Skelarn2",[2674.1595],2)  // ??????-??????
+		CreateCreature("Skelwan2",[2731.1595],4)  // ???? ?????
+		CreateCreature("Skelarn2",[1705.1365],0)  // ??????-??????
+		CreateCreature("Skelwan2",[1596.1467],12)  // ???? ?????
+		CreateCreature("Skelarn2",[1501.1274],4)  // ??????-??????
+		CreateCreature("Skelarn2",[1349.1729],0)  // ??????-??????
+		CreateCreature("Skelwan2",[1477.1524],12)  // ???? ?????
+		CreateCreature("Skelarn2",[1040.1303],4)  // ??????-??????
+		CreateCreature("Skelarn2",[558.1483],12)  // ??????-??????
+		CreateCreature("Skelarn2",[1606.1492],12)  // ??????-??????
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",1)
+	Exists("Quintnw")  // ????? ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Quintnw",DestroySelf())
+END
+
+IF
+	OR(2)
+		Global("Charwood_Is_Cursed","GLOBAL",1)
+		Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("Charwood_Letter","GLOBAL",0)
+THEN
+	RESPONSE #100
+		TakePartyItem("QUINTT")  // ?????? ?????? ???????
+		DestroyItem("QUINTT")  // ?????? ?????? ???????
+		TakePartyItem("KARLATT")  // ?????? ??????? ???????
+		DestroyItem("KARLATT")  // ?????? ??????? ???????
+		TakePartyItem("BELIALT")  // ????????? ???????, ?????????? ????
+		DestroyItem("BELIALT")  // ????????? ???????, ?????????? ????
+END
+

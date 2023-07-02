@@ -1,0 +1,46 @@
+IF
+	Global("2400MapVizible","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("2400MapVizible","MYAREA",1)
+		RevealAreaOnMap("NW2400")  // ?????
+END
+
+IF
+	Global("2300DOOR","GLOBAL",1)
+	OpenState("Door1",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("2300DOOR","GLOBAL",0)
+END
+
+IF
+	Global("2300DOOR","GLOBAL",1)
+	OpenState("Door1",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("2300DOOR","GLOBAL",0)
+		OpenDoor("Door1")
+END
+
+IF
+	Global("2300Bridge","MYAREA",0)
+	OR(2)
+		Dead("Lerk")  // ????
+		Global("BridgeIsOpen","MYAREA",1)
+THEN
+	RESPONSE #100
+		OpenDoor("Bridge")
+		SetGlobal("2300Bridge","MYAREA",1)
+		TriggerActivation("BrClosed",FALSE)
+END
+
+IF
+	Global("SolomonSpawn","NW2300",0)  // ????? ??????
+	!Dead("Solomon")  // ???????
+THEN
+	RESPONSE #100
+		SetGlobal("SolomonSpawn","NW2300",1)  // ????? ??????
+		CreateCreature("Solomon",[501.3589],8)  // ???????
+END
+

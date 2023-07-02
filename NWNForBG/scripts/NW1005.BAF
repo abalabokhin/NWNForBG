@@ -1,0 +1,32 @@
+IF
+	OR(2)
+		GlobalGT("DestherIsTraitor","GLOBAL",0)
+		GlobalGT("NWNChapter","GLOBAL",1)
+	Exists("Oleff")  // ?????
+	Global("DestroyOleff","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Oleff",DestroySelf())
+		SetGlobal("DestroyOleff","MYAREA",1)
+END
+
+IF
+	Global("DeadActor","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("DeadActor","MYAREA",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWN_BG")
+END
+
+IF
+	GlobalGT("NWNChapter","GLOBAL",1)
+	Exists("Oleff")  // ?????
+	Global("DestroyOleff","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Oleff",DestroySelf())
+		SetGlobal("DestroyOleff","MYAREA",1)
+END
+

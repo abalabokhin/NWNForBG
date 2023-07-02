@@ -1,0 +1,11 @@
+IF
+	Global("MansHand","MYAREA",0)
+	OR(2)
+		InParty("Grimgnaw")  // ????????
+		Global("GrimgnawReleased","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("MansHand","MYAREA",1)
+		ActionOverride("Container1",CreateItem("Nwmisc42",1,0,0))  // ??????? ????
+END
+

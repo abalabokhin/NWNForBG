@@ -1,0 +1,23 @@
+IF
+	See(Player1)
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		Dialogue(Player1)
+END
+
+IF
+	!See([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Global("Messenger_of_Neverwinter","GLOBAL",2)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

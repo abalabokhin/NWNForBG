@@ -1,0 +1,47 @@
+IF
+	Global("PlayerHasZgem","MYAREA",0)
+	PartyHasItem("Zgem")  // ??????????? ?????? ???????
+THEN
+	RESPONSE #100
+		SetGlobal("PlayerHasZgem","MYAREA",1)
+END
+
+IF
+	Global("NW2207Vizited","GLOBAL",1)
+	InMyArea("Dydd")  // ????
+THEN
+	RESPONSE #100
+		ActionOverride("Dydd",DestroySelf())
+		Continue()
+END
+
+IF
+	Global("NW2207Vizited","GLOBAL",1)
+	Global("GamDestroyed","MYAREA",0)
+	InMyArea("Gam")  // ???
+	!Global("GamCure","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("GamDestroyed","MYAREA",1)
+		ActionOverride("Gam",DestroySelf())
+		Continue()
+END
+
+IF
+	Global("NW2207Vizited","GLOBAL",1)
+	InMyArea("Gorkan")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Gorkan",DestroySelf())
+		Continue()
+END
+
+IF
+	Global("NW2207Vizited","GLOBAL",1)
+	InMyArea("Kasma")  // ?????
+THEN
+	RESPONSE #100
+		ActionOverride("Kasma",DestroySelf())
+		Continue()
+END
+

@@ -1,0 +1,127 @@
+IF
+	Global("Mysave","LOCALS",0)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("Mysave","LOCALS",1)
+		MakeGlobal()
+END
+
+IF
+	See([0.0.0.0.CULTIST])
+	Allegiance(Myself,GOODCUTOFF)
+	Global("ArmorQuest","GLOBAL",3)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	Global("In1042PlatAll","GLOBAL",1)
+	AreaCheck("NW1041")
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Global("In1043PlatAll","GLOBAL",1)
+	AreaCheck("NW1042")
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Global("inafight","MYAREA",0)
+	Allegiance(Myself,GOODCUTOFF)
+	OR(7)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+THEN
+	RESPONSE #100
+		Enemy()
+		SetGlobal("inafight","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("inafight","MYAREA",1)
+	Allegiance(Myself,GOODCUTOFF)
+THEN
+	RESPONSE #100
+		Enemy()
+		Continue()
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	GlobalLT("ArmorQuest","GLOBAL",3)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	See([0.0.0.0.CULTIST])
+	Allegiance(Myself,GOODCUTOFF)
+	Global("ArmorQuest","GLOBAL",3)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	!See([0.0.0.0.CULTIST])
+	!See([PC])
+	Allegiance(Myself,GOODCUTOFF)
+	Global("ArmorQuest","GLOBAL",3)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	!See([0.0.0.0.CULTIST])
+	See([PC])
+	Allegiance(Myself,GOODCUTOFF)
+	Global("ArmorQuest","GLOBAL",3)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		MoveToObjectFollow(Player1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),4)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),4)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	Help([ENEMY])
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(LastHelp(Myself)))
+END
+

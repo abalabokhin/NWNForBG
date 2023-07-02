@@ -1,0 +1,9 @@
+IF
+	Entered([ANYONE])
+	IsOverMe([ANYONE])
+	Global("MoragCutScene","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MoragCutScene","MYAREA",1)
+END
+

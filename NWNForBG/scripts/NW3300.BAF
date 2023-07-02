@@ -1,0 +1,38 @@
+IF
+	Global("CultHostile","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CultHostile","MYAREA",1)
+END
+
+IF
+	Global("PatrolHostile","MYAREA",1)
+THEN
+	RESPONSE #100
+		Explore()
+		SetGlobal("PatrolHostile","MYAREA",2)
+		CreateCreature("ORCNW6",[128.131],14)  // ???-???????
+		CreateCreature("ORCNW5",[165.198],12)  // ???-?????
+		CreateCreature("ORCNW5",[205.243],8)  // ???-?????
+		CreateCreature("ORCNW5",[154.154],12)  // ???-?????
+END
+
+IF
+	Dead("Guzud")  // ?????
+	Global("FitePit","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("FitePitTimer","GLOBAL",ONE_HOUR)
+		SetGlobal("FitePit","MYAREA",1)
+END
+
+IF
+	Global("FitePit","MYAREA",1)
+	GlobalTimerExpired("FitePitTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		AmbientActivate("Pit",FALSE)
+		SoundActivate("Fire",FALSE)
+		SetGlobal("FitePit","MYAREA",2)
+END
+

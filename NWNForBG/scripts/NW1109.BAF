@@ -1,0 +1,14 @@
+IF
+	Global("NW1109_Vizited","GLOBAL",0)
+	OR(6)
+		AreaCheckObject("NW1109",Player1)
+		AreaCheckObject("NW1109",Player2)
+		AreaCheckObject("NW1109",Player3)
+		AreaCheckObject("NW1109",Player4)
+		AreaCheckObject("NW1109",Player5)
+		AreaCheckObject("NW1109",Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("NW1109_Vizited","GLOBAL",1)
+END
+

@@ -1,0 +1,106 @@
+IF
+	Global("LuscanVizited","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LuscanVizited","GLOBAL",1)
+		SetGlobal("CultInLuskan","GLOBAL",2)
+		Explore()
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalGT("NWNChapter","GLOBAL",2)
+		Dead("Baram")  // ?????? ??????? ?????
+	Global("SpawnsBaram","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnsBaram","MYAREA",1)
+		SpawnPtDeactivate("Baram1")
+		SpawnPtDeactivate("Baram2")
+		SpawnPtDeactivate("Baram3")
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalGT("NWNChapter","GLOBAL",2)
+		Dead("Kurt")  // ?????? ??????? ????
+	Global("SpawnsKurt","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnsKurt","MYAREA",1)
+		SpawnPtDeactivate("Kurt1")
+		SpawnPtDeactivate("Kurt2")
+		SpawnPtDeactivate("Kurt3")
+		Continue()
+END
+
+IF
+	OpenState("Luke22",FALSE)
+	Global("2E56to2E00A","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E56to2E00A","GLOBAL",0)
+END
+
+IF
+	OpenState("Luke22",TRUE)
+	Global("2E56to2E00A","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E56to2E00A","GLOBAL",0)
+		CloseDoor("Luke22")
+END
+
+IF
+	OpenState("Luke23",FALSE)
+	Global("2E56to2E00B","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E56to2E00B","GLOBAL",0)
+END
+
+IF
+	OpenState("Luke23",TRUE)
+	Global("2E56to2E00B","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E56to2E00B","GLOBAL",0)
+		CloseDoor("Luke23")
+END
+
+IF
+	OpenState("Luke24",FALSE)
+	Global("2E56to2E00C","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E56to2E00C","GLOBAL",0)
+END
+
+IF
+	OpenState("Luke24",TRUE)
+	Global("2E56to2E00C","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("2E56to2E00C","GLOBAL",0)
+		CloseDoor("Luke24")
+END
+
+IF
+	GlobalGT("CultInLuskan","GLOBAL",3)
+	Global("ExitEnabled","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ExitEnabled","MYAREA",1)
+		TriggerActivation("To2200",TRUE)
+END
+
+IF
+	GlobalGT("LuscanTower","GLOBAL",2)
+	Allegiance("TOWERGRD",NEUTRAL)  // ????? ?????
+THEN
+	RESPONSE #100
+		ActionOverride("TOWERGRD",Enemy())
+END
+

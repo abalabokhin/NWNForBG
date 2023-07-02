@@ -1,0 +1,10 @@
+IF
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("ChangeDoor","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ChangeDoor","MYAREA",1)
+		TriggerActivation("Door2601",FALSE)
+		TriggerActivation("Door2600",TRUE)
+END
+

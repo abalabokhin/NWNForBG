@@ -1,0 +1,19 @@
+IF
+	Contains("NWMISC25","Chest1")  // ?????????????? ???
+	Global("DoorLocked","NW1221",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DoorLocked","NW1221",1)
+		Unlock("Door1")
+		OpenDoor("Door1")
+END
+
+IF
+	Global("NW1216_Vizited","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("NW1216_Vizited","GLOBAL",2)
+		TriggerActivation("Info1",FALSE)
+		TriggerActivation("To1218",TRUE)
+END
+

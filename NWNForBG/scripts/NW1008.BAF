@@ -1,0 +1,57 @@
+IF
+	OR(2)
+		Global("DestherIsTraitor","GLOBAL",1)
+		GlobalGT("NWNChapter","GLOBAL",1)
+	InMyArea("Eltura")  // ???????
+	Global("EscapeEltura","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("EscapeEltura","MYAREA",1)
+		ActionOverride("Eltura",DestroySelf())
+		Continue()
+END
+
+IF
+	OR(2)
+		Global("DestherIsTraitor","GLOBAL",1)
+		GlobalGT("NWNChapter","GLOBAL",1)
+	!InMyArea("Eltura")  // ???????
+	Global("EscapeEltura","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("EscapeEltura","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("StairsEnabled","MYAREA",0)
+	OR(2)
+		Global("CloakTower","GLOBAL",4)
+		Global("NWNChapter","GLOBAL",4)
+THEN
+	RESPONSE #100
+		TriggerActivation("Stairs",FALSE)
+		TriggerActivation("To1009",TRUE)
+		SetGlobal("StairsEnabled","MYAREA",1)
+END
+
+IF
+	Global("NW101X_Vizited","GLOBAL",1)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("EltTest2")
+END
+
+IF
+	Global("ElturaCreated","MYAREA",0)
+	Global("NWNChapter","GLOBAL",4)
+THEN
+	RESPONSE #100
+		ActionOverride("Magenw",DestroySelf())
+		CreateCreature("Eltura4",[488.500],2)  // ???????
+		SetGlobal("ElturaCreated","MYAREA",1)
+END
+

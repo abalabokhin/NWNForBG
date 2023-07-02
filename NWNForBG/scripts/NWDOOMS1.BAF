@@ -1,0 +1,89 @@
+IF
+	GlobalGT("NWNChapter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	GlobalLT("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #10
+		PlaySound("BEDWIN43")
+		RunAwayFrom(LastSeenBy(Myself),30)
+	RESPONSE #90
+		RunAwayFrom(LastSeenBy(Myself),30)
+END
+
+IF
+	GlobalLT("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #10
+		PlaySound("FCHIL05")
+		RunAwayFrom(LastSeenBy(Myself),30)
+	RESPONSE #90
+		RunAwayFrom(LastSeenBy(Myself),30)
+END
+
+IF
+	Detect([PC])
+	Global("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #50
+		PlaySound("BDHIGG03")
+		RunAwayFrom(LastSeenBy(Myself),30)
+	RESPONSE #50
+		RunAwayFrom(LastSeenBy(Myself),30)
+END
+
+IF
+	Detect([PC])
+	Global("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #50
+		PlaySound("PEASF209")
+		RunAwayFrom(LastSeenBy(Myself),30)
+	RESPONSE #50
+		RunAwayFrom(LastSeenBy(Myself),30)
+END
+
+IF
+	!Detect([PC])
+	Global("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastSeenBy(Myself),30)
+END
+
+IF
+	!Detect([PC])
+	Global("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastSeenBy(Myself),30)
+END
+

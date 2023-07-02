@@ -1,0 +1,10 @@
+IF
+	Dead("NWDRACO2")  // ????????????
+	Global("RestSet","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RestSet","MYAREA",1)
+		SetRestEncounterProbabilityDay(0)
+		SetRestEncounterProbabilityNight(0)
+END
+

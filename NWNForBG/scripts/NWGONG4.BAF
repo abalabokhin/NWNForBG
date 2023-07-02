@@ -1,0 +1,28 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // ??????? ??????, ????? ???????????? ???.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("NWGongUzed","MYAREA",3)
+THEN
+	RESPONSE #100
+		PlaySound("Gongnw04")
+		SetGlobal("NWGongUzed","MYAREA",4)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	!Global("NWGongUzed","MYAREA",3)
+THEN
+	RESPONSE #100
+		PlaySound("Gongnw04")
+		SetGlobal("NWGongUzed","MYAREA",0)
+END
+

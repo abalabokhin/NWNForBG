@@ -1,0 +1,378 @@
+IF
+	Global("LinaExist","GLOBAL",0)
+	Global("LinaReleased","GLOBAL",0)
+	LevelLT(Player1,15)
+THEN
+	RESPONSE #100
+		SetGlobal("LinaExist","GLOBAL",1)
+		CreateCreature("Lina12",[668.390],2)  // ????
+		ActionOverride("Lina",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("LinaExist","GLOBAL",0)
+	Global("LinaReleased","GLOBAL",0)
+	LevelGT(Player1,14)
+	LevelLT(Player1,17)
+THEN
+	RESPONSE #100
+		SetGlobal("LinaExist","GLOBAL",1)
+		CreateCreature("Lina14",[668.390],2)  // ????
+		ActionOverride("Lina",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("LinaExist","GLOBAL",0)
+	Global("LinaReleased","GLOBAL",0)
+	LevelGT(Player1,16)
+	LevelLT(Player1,19)
+THEN
+	RESPONSE #100
+		SetGlobal("LinaExist","GLOBAL",1)
+		CreateCreature("Lina16",[668.390],2)  // ????
+		ActionOverride("Lina",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("LinaExist","GLOBAL",0)
+	Global("LinaReleased","GLOBAL",0)
+	LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetGlobal("LinaExist","GLOBAL",1)
+		CreateCreature("Lina18",[668.390],2)  // ????
+		ActionOverride("Lina",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("LinaExist","GLOBAL",1)
+	Global("LinaMove","MYAREA",0)
+	Global("LinaOut","GLOBAL",0)
+	!InMyArea("Lina")  // ????
+	!InParty("Lina")  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("LinaMove","MYAREA",1)
+		MoveGlobal("NW2020","Lina",[668.390])  // ????
+		Continue()
+END
+
+IF
+	Global("DaelanExist","GLOBAL",0)
+	Global("DaelanReleased","GLOBAL",0)
+	LevelLT(Player1,15)
+THEN
+	RESPONSE #100
+		SetGlobal("DaelanExist","GLOBAL",1)
+		CreateCreature("Daelan12",[439.313],0)  // ??????
+		ActionOverride("Daelan",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("DaelanExist","GLOBAL",0)
+	Global("DaelanReleased","GLOBAL",0)
+	LevelGT(Player1,14)
+	LevelLT(Player1,17)
+THEN
+	RESPONSE #100
+		SetGlobal("DaelanExist","GLOBAL",1)
+		CreateCreature("Daelan14",[439.313],0)  // ??????
+		ActionOverride("Daelan",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("DaelanExist","GLOBAL",0)
+	Global("DaelanReleased","GLOBAL",0)
+	LevelGT(Player1,16)
+	LevelLT(Player1,19)
+THEN
+	RESPONSE #100
+		SetGlobal("DaelanExist","GLOBAL",1)
+		CreateCreature("Daelan16",[439.313],0)  // ??????
+		ActionOverride("Daelan",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("DaelanExist","GLOBAL",0)
+	Global("DaelanReleased","GLOBAL",0)
+	LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetGlobal("DaelanExist","GLOBAL",1)
+		CreateCreature("Daelan18",[439.313],0)  // ??????
+		ActionOverride("Daelan",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("DaelanExist","GLOBAL",1)
+	Global("DaelanMove","MYAREA",0)
+	Global("DaelanOut","GLOBAL",0)
+	!InMyArea("Daelan")  // ??????
+	!InParty("Daelan")  // ??????
+THEN
+	RESPONSE #100
+		SetGlobal("DaelanMove","MYAREA",1)
+		MoveGlobal("NW2020","Daelan",[439.313])  // ??????
+		Continue()
+END
+
+IF
+	Global("BoddinokExist","GLOBAL",0)
+	Global("BoddinokReleased","GLOBAL",0)
+	LevelLT(Player1,15)
+THEN
+	RESPONSE #100
+		SetGlobal("BoddinokExist","GLOBAL",1)
+		CreateCreature("Boddin12",[252.504],12)  // ????????
+		ActionOverride("Boddinok",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("BoddinokExist","GLOBAL",0)
+	Global("BoddinokReleased","GLOBAL",0)
+	LevelGT(Player1,14)
+	LevelLT(Player1,17)
+THEN
+	RESPONSE #100
+		SetGlobal("BoddinokExist","GLOBAL",1)
+		CreateCreature("Boddin14",[252.504],12)  // ????????
+		ActionOverride("Boddinok",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("BoddinokExist","GLOBAL",0)
+	Global("BoddinokReleased","GLOBAL",0)
+	LevelGT(Player1,16)
+	LevelLT(Player1,19)
+THEN
+	RESPONSE #100
+		SetGlobal("BoddinokExist","GLOBAL",1)
+		CreateCreature("Boddin15",[252.504],12)  // ????????
+		ActionOverride("Boddinok",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("BoddinokExist","GLOBAL",0)
+	Global("BoddinokReleased","GLOBAL",0)
+	LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetGlobal("BoddinokExist","GLOBAL",1)
+		CreateCreature("Boddin16",[252.504],12)  // ????????
+		ActionOverride("Boddinok",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("BoddinokExist","GLOBAL",1)
+	Global("BoddinokMove","MYAREA",0)
+	Global("BoddinokOut","GLOBAL",0)
+	!InMyArea("Boddinok")  // ????????
+	!InParty("Boddinok")  // ????????
+THEN
+	RESPONSE #100
+		SetGlobal("BoddinokMove","MYAREA",1)
+		MoveGlobal("NW2020","Boddinok",[252.504])  // ????????
+		Continue()
+END
+
+IF
+	Global("GrimgnawExist","GLOBAL",0)
+	Global("GrimgnawReleased","GLOBAL",0)
+	LevelLT(Player1,15)
+THEN
+	RESPONSE #100
+		SetGlobal("GrimgnawExist","GLOBAL",1)
+		CreateCreature("GRIMGN12",[492.290],2)  // ????????
+		ActionOverride("Grimgnaw",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("GrimgnawExist","GLOBAL",0)
+	Global("GrimgnawReleased","GLOBAL",0)
+	LevelGT(Player1,14)
+	LevelLT(Player1,17)
+THEN
+	RESPONSE #100
+		SetGlobal("GrimgnawExist","GLOBAL",1)
+		CreateCreature("GRIMGN14",[492.290],2)  // ????????
+		ActionOverride("Grimgnaw",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("GrimgnawExist","GLOBAL",0)
+	Global("GrimgnawReleased","GLOBAL",0)
+	LevelGT(Player1,16)
+	LevelLT(Player1,19)
+THEN
+	RESPONSE #100
+		SetGlobal("GrimgnawExist","GLOBAL",1)
+		CreateCreature("GRIMGN16",[492.290],2)  // ????????
+		ActionOverride("Grimgnaw",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("GrimgnawExist","GLOBAL",0)
+	Global("GrimgnawReleased","GLOBAL",0)
+	LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetGlobal("GrimgnawExist","GLOBAL",1)
+		CreateCreature("GRIMGN16",[492.290],2)  // ????????
+		ActionOverride("Grimgnaw",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("GrimgnawExist","GLOBAL",1)
+	Global("GrimgnawMove","MYAREA",0)
+	Global("GrimgnawOut","GLOBAL",0)
+	!InMyArea("Grimgnaw")  // ????????
+	!InParty("Grimgnaw")  // ????????
+THEN
+	RESPONSE #100
+		SetGlobal("GrimgnawMove","MYAREA",1)
+		MoveGlobal("NW2020","Grimgnaw",[492.290])  // ????????
+		Continue()
+END
+
+IF
+	Global("SharwynExist","GLOBAL",0)
+	Global("SharwynReleased","GLOBAL",0)
+	LevelLT(Player1,15)
+THEN
+	RESPONSE #100
+		SetGlobal("SharwynExist","GLOBAL",1)
+		CreateCreature("Sharwy12",[668.390],2)  // ??????
+		ActionOverride("Sharwyn",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("SharwynExist","GLOBAL",0)
+	Global("SharwynReleased","GLOBAL",0)
+	LevelGT(Player1,14)
+	LevelLT(Player1,17)
+THEN
+	RESPONSE #100
+		SetGlobal("SharwynExist","GLOBAL",1)
+		CreateCreature("Sharwy14",[668.390],2)  // ??????
+		ActionOverride("Sharwyn",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("SharwynExist","GLOBAL",0)
+	Global("SharwynReleased","GLOBAL",0)
+	LevelGT(Player1,16)
+	LevelLT(Player1,19)
+THEN
+	RESPONSE #100
+		SetGlobal("SharwynExist","GLOBAL",1)
+		CreateCreature("Sharwy16",[668.390],2)  // ??????
+		ActionOverride("Sharwyn",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("SharwynExist","GLOBAL",0)
+	Global("SharwynReleased","GLOBAL",0)
+	LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetGlobal("SharwynExist","GLOBAL",1)
+		CreateCreature("Sharwy18",[668.390],2)  // ??????
+		ActionOverride("Sharwyn",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("SharwynExist","GLOBAL",1)
+	Global("SharwynMove","MYAREA",0)
+	Global("SharwynOut","GLOBAL",0)
+	!InMyArea("Sharwyn")  // ??????
+	!InParty("Sharwyn")  // ??????
+THEN
+	RESPONSE #100
+		SetGlobal("SharwynMove","MYAREA",1)
+		MoveGlobal("NW2020","Sharwyn",[668.390])  // ??????
+		Continue()
+END
+
+IF
+	Global("TomiExist","GLOBAL",0)
+	Global("LinaReleased","GLOBAL",0)
+	LevelLT(Player1,15)
+THEN
+	RESPONSE #100
+		SetGlobal("TomiExist","GLOBAL",1)
+		CreateCreature("Tomi12",[275.477],12)  // ???? ?????????
+		ActionOverride("Tomi",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("TomiExist","GLOBAL",0)
+	Global("TomiReleased","GLOBAL",0)
+	LevelGT(Player1,14)
+	LevelLT(Player1,17)
+THEN
+	RESPONSE #100
+		SetGlobal("TomiExist","GLOBAL",1)
+		CreateCreature("Tomi14",[275.477],12)  // ???? ?????????
+		ActionOverride("Tomi",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("TomiExist","GLOBAL",0)
+	Global("TomiReleased","GLOBAL",0)
+	LevelGT(Player1,16)
+	LevelLT(Player1,19)
+THEN
+	RESPONSE #100
+		SetGlobal("TomiExist","GLOBAL",1)
+		CreateCreature("Tomi16",[275.477],12)  // ???? ?????????
+		ActionOverride("Tomi",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("TomiExist","GLOBAL",0)
+	Global("TomiReleased","GLOBAL",0)
+	LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetGlobal("TomiExist","GLOBAL",1)
+		CreateCreature("Tomi18",[275.477],12)  // ???? ?????????
+		ActionOverride("Tomi",MakeGlobal())
+		Continue()
+END
+
+IF
+	Global("TomiExist","GLOBAL",1)
+	Global("TomiMove","MYAREA",0)
+	Global("TomiOut","GLOBAL",0)
+	!InMyArea("Tomi")  // ???? ?????????
+	!InParty("Tomi")  // ???? ?????????
+THEN
+	RESPONSE #100
+		SetGlobal("TomiMove","MYAREA",1)
+		MoveGlobal("NW2020","Tomi",[275.477])  // ???? ?????????
+		Continue()
+END
+

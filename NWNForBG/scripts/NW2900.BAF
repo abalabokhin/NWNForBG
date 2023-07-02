@@ -1,0 +1,21 @@
+IF
+	OR(2)
+		GlobalGT("SpiritSaved","GLOBAL",0)
+		Dead("SpiritFo")  // ??? ????
+	Global("AreaChange","NW2900",0)  // ?????? ????
+THEN
+	RESPONSE #100
+		CreateCreature("SQUIREL2",[1597.1571],8)  // ?????
+		CreateCreature("SQUIREL2",[2067.1382],4)  // ?????
+		CreateCreature("SQUIREL2",[1707.2104],6)  // ?????
+		CreateCreature("SQUIREL2",[1981.138],0)  // ?????
+		CreateCreature("SQUIREL2",[351.1750],12)  // ?????
+		CreateCreature("DEER01",[1714.3270],6)  // ????
+		CreateCreature("DEER01",[914.3181],10)  // ????
+		CreateCreature("MOOSENW1",[2165.2996],12)  // ????
+		CreateCreature("MOOSENW1",[4482.910],4)  // ????
+		CreateCreature("RABBIT01",[603.726],12)  // ??????
+		CreateCreature("RABBIT01",[658.899],8)  // ??????
+		SetGlobal("AreaChange","NW2900",1)  // ?????? ????
+END
+

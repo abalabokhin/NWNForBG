@@ -1,0 +1,9 @@
+IF
+	Global("ChestOpen","MYAREA",1)
+	Global("ABCD23","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ABCD23","MYAREA",1)
+		Unlock("Chest1")
+END
+

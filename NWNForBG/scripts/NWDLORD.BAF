@@ -1,0 +1,108 @@
+IF
+	Allegiance(Myself,ENEMY)
+	See([PC])
+	Global("MySpell","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("MySpell","LOCALS",0)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect([PC])
+	!See([PC])
+	Delay(12)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (???????? ???????)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("udWail","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)  // SPWI913.SPL (????? ??????)
+		SetGlobal("udWail","LOCALS",1)
+		SetGlobal("MySpell","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("charm","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("charm","LOCALS",1)
+		Spell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (?????????? ?????????)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Delay(12)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (?????????? ???????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("symbol","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("symbol","LOCALS",1)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_STUN)  // SPWI898.SPL (??????: ???????????)
+		SetGlobal("MySpell","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	StateCheck(LastSeenBy,STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy)
+		AttackOneRound(LastSeenBy)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Prep","LOCALS",1)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+		SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Prep","LOCALS",2)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CONFUSION)  // SPWI401.SPL (??????????????)
+		SetGlobal("Prep","LOCALS",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy,STATE_HELPLESS)
+	GlobalLT("TANARIPARALYZE","LOCALS",7)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),TANARI_PARALYZE)  // SPIN999.SPL (???????????)
+		IncrementGlobal("TANARIPARALYZE","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #70
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+	RESPONSE #30
+		ForceSpell(Myself,WIZARD_SUN_FIRE)  // SPWI523.SPL (????? ??????)
+		SetGlobal("MySpell","LOCALS",1)
+END
+

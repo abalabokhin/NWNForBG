@@ -1,0 +1,10 @@
+IF
+	GlobalGT("NeurikQuest","GLOBAL",0)
+	Global("BrunSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BrunSpawn","MYAREA",1)
+		CreateCreature("BrunW",[576.379],15)  // ?????????
+		Continue()
+END
+

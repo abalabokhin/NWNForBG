@@ -1,0 +1,36 @@
+IF
+	Global("DeadActor","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("DeadActor","MYAREA",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWN_BG")
+END
+
+IF
+	GlobalGT("MakingMedicine","GLOBAL",1)
+	InMyArea("Aribeth")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Aribeth",DestroySelf())
+		Continue()
+END
+
+IF
+	GlobalGT("MakingMedicine","GLOBAL",1)
+	InMyArea("Fenthick")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Fenthick",DestroySelf())
+		Continue()
+END
+
+IF
+	GlobalGT("MakingMedicine","GLOBAL",1)
+	InMyArea("Desther")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Desther",DestroySelf())
+END
+

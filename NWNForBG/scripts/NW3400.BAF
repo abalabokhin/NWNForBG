@@ -1,0 +1,20 @@
+IF
+	Global("PatrolHostile","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("PatrolHostile","MYAREA",2)
+		CreateCreature("Orcnw4",[4135.576],14)  // ???-??????
+		CreateCreature("Orcnw4",[4210.709],11)  // ???-??????
+		CreateCreature("Orcnw3",[4409.689],10)  // ???
+		CreateCreature("Orcnw3",[3838.646],12)  // ???
+		CreateCreature("Orcnw5",[4672.381],0)  // ???-?????
+		CreateCreature("Orcnw3",[4452.668],10)  // ???
+END
+
+IF
+	Global("CultHostile","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CultHostile","MYAREA",1)
+END
+

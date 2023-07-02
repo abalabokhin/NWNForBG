@@ -1,0 +1,11 @@
+IF
+	Global("NW_Medicine","GLOBAL",2)
+	Global("NW_Medicine2","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NW_Medicine2","MYAREA",1)
+		ActionOverride("SLEEPFH",DestroySelf())
+		ActionOverride("SLEEPMH",DestroySelf())
+		OpenDoor("Carpet")
+END
+

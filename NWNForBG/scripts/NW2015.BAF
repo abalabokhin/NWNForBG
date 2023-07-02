@@ -1,0 +1,40 @@
+IF
+	Global("Premium","MYAREA",0)
+	Global("DeceiveNeurrik","GLOBAL",-3)
+	Global("NeurikQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Premium","MYAREA",1)
+		ReputationInc(1)
+END
+
+IF
+	Global("Premium","MYAREA",0)
+	Global("DeceiveNeurrik","GLOBAL",1)
+	Global("NeurikQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Premium","MYAREA",1)
+		ReputationInc(-1)
+END
+
+IF
+	Global("Premium","MYAREA",0)
+	Global("DeceiveNeurrik","GLOBAL",2)
+	Global("NeurikQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Premium","MYAREA",1)
+		ReputationInc(-2)
+END
+
+IF
+	Global("Premium","MYAREA",0)
+	Global("DeceiveNeurrik","GLOBAL",3)
+	Global("NeurikQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Premium","MYAREA",1)
+		ReputationInc(-3)
+END
+

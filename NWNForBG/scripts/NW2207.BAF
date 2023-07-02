@@ -1,0 +1,7 @@
+IF
+	Global("NW2207Vizited","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NW2207Vizited","GLOBAL",1)
+END
+

@@ -1,0 +1,30 @@
+IF
+	Global("NW1405_DOOR_STATE","MYAREA",0)
+	OpenState(Myself,TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("NW1405_DOOR_STATE","MYAREA",1)
+		DisplayStringNoNameHead([PC],107627)  // ???????? ?????? ???? ????????????? ?????.
+		OpenDoor("Door1")
+		OpenDoor("Door2")
+		OpenDoor("Door3")
+		OpenDoor("Door4")
+		OpenDoor("Door5")
+		OpenDoor("Door6")
+END
+
+IF
+	!Global("NW1405_DOOR_STATE","MYAREA",0)
+	OpenState(Myself,FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("NW1405_DOOR_STATE","MYAREA",0)
+		DisplayStringNoNameHead([PC],107628)  // ???????? ?????? ???? ????????????? ?????.
+		CloseDoor("Door1")
+		CloseDoor("Door2")
+		CloseDoor("Door3")
+		CloseDoor("Door4")
+		CloseDoor("Door5")
+		CloseDoor("Door6")
+END
+

@@ -1,0 +1,50 @@
+IF
+	GlobalLT("LuscanTower","GLOBAL",7)
+THEN
+	RESPONSE #100
+		SetGlobal("LuscanTower","GLOBAL",7)
+END
+
+IF
+	Global("ArklemQuest","GLOBAL",2)
+	Global("ActivateWay","MYAREA",0)
+THEN
+	RESPONSE #100
+		Unlock("Door1")
+		OpenDoor("Door1")
+		SetGlobal("ActivateWay","MYAREA",1)
+		ActionOverride("Arklem",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
+END
+
+IF
+	Dead("Braz02")
+	OpenState("Brazier1",FALSE)  // ???????
+THEN
+	RESPONSE #100
+		IncrementGlobal("BrazierDestroyed","MYAREA",1)
+		OpenDoor("Brazier1")  // ???????
+		AmbientActivate("Fire1",FALSE)
+		Continue()
+END
+
+IF
+	Dead("Braz03")
+	OpenState("Brazier2",FALSE)  // ???????
+THEN
+	RESPONSE #100
+		IncrementGlobal("BrazierDestroyed","MYAREA",1)
+		OpenDoor("Brazier2")  // ???????
+		AmbientActivate("Fire2",FALSE)
+		Continue()
+END
+
+IF
+	Dead("Braz04")
+	OpenState("Brazier3",FALSE)  // ???????
+THEN
+	RESPONSE #100
+		IncrementGlobal("BrazierDestroyed","MYAREA",1)
+		OpenDoor("Brazier3")  // ???????
+		AmbientActivate("Fire3",FALSE)
+END
+

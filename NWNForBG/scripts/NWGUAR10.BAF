@@ -1,0 +1,35 @@
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(2)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		Global("Hostile","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Hostile","MYAREA",1)
+		Enemy()
+		ChangeAIScript("",OVERRIDE)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	GlobalTimerExpired("MyAttack","LOCALS")
+	Global("Switch","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Switch","LOCALS",0)
+		SetGlobalTimer("MyPause","LOCALS",THREE_ROUNDS)
+		Face(5)
+		ClearActions(Myself)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	!GlobalTimerNotExpired("MyPause","LOCALS")
+	Global("Switch","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MyAttack","LOCALS",FOUR_ROUNDS)
+		SetGlobal("Switch","LOCALS",1)
+		AttackReevaluate("NWDummy2",18)
+END
+

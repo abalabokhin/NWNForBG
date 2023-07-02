@@ -1,0 +1,40 @@
+IF
+	Global("Discharge_Off","MYAREA",0)
+	OpenState("Switch",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Discharge_Off","MYAREA",1)
+		ContainerEnable("Jar",TRUE)
+		AmbientActivate("Discharge",FALSE)
+		SoundActivate("Electro",FALSE)
+		TriggerActivation("Trap1",FALSE)
+		TriggerActivation("Trap2",FALSE)
+		TriggerActivation("Trap3",FALSE)
+		TriggerActivation("Trap4",FALSE)
+		TriggerActivation("Trap5",FALSE)
+		TriggerActivation("Trap6",FALSE)
+		TriggerActivation("Trap7",FALSE)
+		TriggerActivation("Trap8",FALSE)
+		TriggerActivation("Trap9",FALSE)
+END
+
+IF
+	!Global("Discharge_Off","MYAREA",0)
+	OpenState("Switch",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("Discharge_Off","MYAREA",0)
+		ContainerEnable("Jar",FALSE)
+		AmbientActivate("Discharge",TRUE)
+		SoundActivate("Electro",TRUE)
+		TriggerActivation("Trap1",TRUE)
+		TriggerActivation("Trap2",TRUE)
+		TriggerActivation("Trap3",TRUE)
+		TriggerActivation("Trap4",TRUE)
+		TriggerActivation("Trap5",TRUE)
+		TriggerActivation("Trap6",TRUE)
+		TriggerActivation("Trap7",TRUE)
+		TriggerActivation("Trap8",TRUE)
+		TriggerActivation("Trap9",TRUE)
+END
+

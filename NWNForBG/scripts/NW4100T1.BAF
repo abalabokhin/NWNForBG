@@ -1,0 +1,17 @@
+IF
+	HasItem("Nwword4",Myself)  // ????? ??????
+	Global("PortalEnable","MYAREA",0)
+THEN
+	RESPONSE #100
+		ContainerEnable("Altar2",FALSE)
+		AmbientActivate("Altar",FALSE)
+		SetGlobal("PortalEnable","MYAREA",1)
+		AmbientActivate("Bubbl0",TRUE)
+		AmbientActivate("Bubbl1",TRUE)
+		AmbientActivate("Bubbl2",TRUE)
+		AmbientActivate("Bubbl3",TRUE)
+		AmbientActivate("Bubbl4",TRUE)
+		AmbientActivate("Bubbl5",TRUE)
+		TriggerActivation("To4101",TRUE)
+END
+

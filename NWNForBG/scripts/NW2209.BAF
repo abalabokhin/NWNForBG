@@ -1,0 +1,27 @@
+IF
+	Global("GorkanSpawned","MYAREA",0)
+	!Dead("Gorkan")  // ??????
+THEN
+	RESPONSE #100
+		CreateCreature("Gorkan",[2140.1787],12)  // ??????
+		SetGlobal("GorkanSpawned","MYAREA",1)
+END
+
+IF
+	Global("KasmaSpawned","MYAREA",0)
+	!Dead("Kasma")  // ?????
+THEN
+	RESPONSE #100
+		CreateCreature("Kasma",[3566.1864],12)  // ?????
+		SetGlobal("KasmaSpawned","MYAREA",1)
+END
+
+IF
+	Global("KasmaDead","MYAREA",1)
+	!Dead("Kasma")  // ?????
+THEN
+	RESPONSE #100
+		Kill("Kasma")  // ?????
+		SetGlobal("KasmaDead","MYAREA",2)
+END
+

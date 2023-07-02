@@ -1,0 +1,36 @@
+IF
+	Contains("Nwgem09","Blue")  // ???????? ????
+	Contains("Nwgem11","Green")  // ???????? ?????
+	Contains("Nwgem12","Purple")  // ???????? ?????????
+	Contains("Nwgem10","White")  // ???????? ?????
+	Global("PlantedNWGems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PlantedNWGems","MYAREA",1)
+		CreateVisualEffect("SPFLESHS",[452.893])
+		CreateVisualEffect("SPFLESHS",[436.1055])
+		CreateVisualEffect("SPFLESHS",[1065.589])
+		CreateVisualEffect("SPFLESHS",[1111.1028])
+		CreateVisualEffect("ICRMPARI",[835.728])
+		PlaySound("EFF_P80")
+		ContainerEnable("Blue",FALSE)
+		ContainerEnable("Green",FALSE)
+		ContainerEnable("Purple",FALSE)
+		ContainerEnable("White",FALSE)
+		ContainerEnable("Pedestal",TRUE)
+		TriggerActivation("BlueInf",FALSE)
+		TriggerActivation("GreenInf",FALSE)
+		TriggerActivation("PurplInf",FALSE)
+		TriggerActivation("WhiteInf",FALSE)
+END
+
+IF
+	Global("SucubusJob","GLOBAL",4)
+	OpenState("Door01",FALSE)
+THEN
+	RESPONSE #100
+		OpenDoor("Door01")
+		Wait(1)
+		ActionOverride("Sucubus",MoveToPoint([3197.936]))
+END
+

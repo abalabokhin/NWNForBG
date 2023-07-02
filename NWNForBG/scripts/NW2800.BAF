@@ -1,0 +1,50 @@
+IF
+	GlobalGT("AavillQuest","GLOBAL",0)
+	Global("BridgeOpen","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BridgeOpen","MYAREA",1)
+		TriggerActivation("Bridge",FALSE)
+		TriggerActivation("To2900",TRUE)
+END
+
+IF
+	Global("Druid1Saved","GLOBAL",1)
+	Global("Druid1Spawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("Druidnw1",[1276.802],1)  // ??????
+		SetGlobal("Druid1Spawn","MYAREA",1)
+		TakeItemReplace("AMUL22","PARALYZE","Druidnw1")  // ???????? ????????????????? ? ???
+		Continue()
+END
+
+IF
+	Global("Druid2Saved","GLOBAL",1)
+	Global("Druid2Spawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("Druidnw2",[1356.873],4)  // ???
+		SetGlobal("Druid2Spawn","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("Druid3Saved","GLOBAL",1)
+	Global("Druid3Spawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("Druidnw3",[1180.917],9)  // ??????
+		SetGlobal("Druid3Spawn","MYAREA",1)
+		Continue()
+END
+
+IF
+	GlobalGT("KendrackQuest","GLOBAL",0)
+	Global("WyvernSpawn","NW2800",0)  // ???? ???????
+THEN
+	RESPONSE #100
+		SetGlobal("WyvernSpawn","NW2800",1)  // ???? ???????
+		CreateCreature("Wyvernb",[2267.1536],10)  // ???????
+END
+

@@ -1,0 +1,10 @@
+IF
+	Contains("NWMISC26","Chest1")  // ?????????????? ???
+	Global("DoorLocked","NW1119",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DoorLocked","NW1119",1)
+		Unlock("Door1")
+		OpenDoor("Door1")
+END
+

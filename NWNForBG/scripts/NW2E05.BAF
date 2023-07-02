@@ -1,0 +1,11 @@
+IF
+	Global("EvaineReturn","MYAREA",0)
+	Global("ElynwydQuest","GLOBAL",2)
+	!Dead("Evaine")  // ?????
+THEN
+	RESPONSE #100
+		CreateCreature("Evaine",[449.338],11)  // ?????
+		SetGlobal("EvaineReturn","MYAREA",1)
+		ActionOverride("Evaine",SetNumTimesTalkedTo(1))
+END
+

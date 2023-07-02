@@ -1,0 +1,99 @@
+IF
+	OnCreation()
+	Global("Reveal","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Reveal","MYAREA",1)
+		Explore()
+		Continue()
+END
+
+IF
+	GlobalGT("NWNChapter","GLOBAL",1)
+	Global("MapChanged","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Corpse1",DestroySelf())
+		ActionOverride("Corpse2",DestroySelf())
+		SetGlobal("MapChanged","MYAREA",1)
+		CloseDoor("Bonfi1")
+		CloseDoor("Bonfi2")
+		CloseDoor("Bonfi3")
+		CloseDoor("Bonfi4")
+		OpenDoor("Door17")
+		SoundActivate("FirePit1",FALSE)
+		SoundActivate("FirePit2",FALSE)
+		SoundActivate("FirePit3",FALSE)
+		AmbientActivate("Bonfire1",FALSE)
+		AmbientActivate("Bonfire2",FALSE)
+		AmbientActivate("Bonfire3",FALSE)
+		SoundActivate("Wailing",FALSE)
+		Unlock("Door1")
+		OpenDoor("Door1")
+END
+
+IF
+	Global("NWNChapter","GLOBAL",4)
+	Global("DoorToNW4011","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("To1001",FALSE)
+		TriggerActivation("To1006",FALSE)
+		TriggerActivation("To4011",TRUE)
+		TriggerActivation("To4012",TRUE)
+		TriggerActivation("To1100",FALSE)
+		TriggerActivation("To1200",FALSE)
+		TriggerActivation("To1300",FALSE)
+		TriggerActivation("To1400",FALSE)
+		SetGlobal("DoorToNW4011","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("NWNChapter","GLOBAL",4)
+	Global("DialogChange1","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Nyatar",SetDialog("NYATAR2"))
+		ActionOverride("Gategr1",SetDialog("NWGUAR18"))
+		ActionOverride("Nwguard2",SetDialog("NWGUAR18"))
+		ActionOverride("Nwguard3",SetDialog("NWGUAR18"))
+		ActionOverride("Nwguard4",SetDialog("NWGUAR18"))
+		ActionOverride("Warder",SetDialog("NWGUAR18"))
+		SetGlobal("DialogChange1","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("NWNChapter","GLOBAL",4)
+	Global("ActorChange","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Betani",DestroySelf())
+		ActionOverride("Borlan",DestroySelf())
+		ActionOverride("Belarian",SetDialog("NWMAN1"))
+		ActionOverride("Stand",SetDialog("NWMAN1"))
+		ActionOverride("Eravian",SetDialog("NWGUAR18"))
+		ActionOverride("Errol",SetDialog("NWMAN1"))
+		ActionOverride("Galion",SetDialog("NWGUAR18"))
+		ActionOverride("Harlnwn1",DestroySelf())
+		ActionOverride("Harris",DestroySelf())
+		ActionOverride("Issabon",DestroySelf())
+		ActionOverride("Mano",SetDialog("NWGUAR18"))
+		SetGlobal("ActorChange","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("EnteredAreaChapter4","MYAREA",0)
+	Global("NWNChapter","GLOBAL",4)
+THEN
+	RESPONSE #100
+		CreateCreatureImpassable("NWCATAP1",[3109.2838],8)  // ??????????
+		CreateCreatureImpassable("NWCATAP2",[4053.2823],8)  // ??????????
+		CreateCreature("NWTARG1",[2826.2524],0)  // ???????????
+		CreateCreature("NWTARG2",[2561.1474],2)  // ???????????
+		RevealAreaOnMap("NW4000")  // ?????????? ????????????
+		SetGlobal("EnteredAreaChapter4","MYAREA",1)
+END
+

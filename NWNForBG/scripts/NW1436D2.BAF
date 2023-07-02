@@ -1,0 +1,18 @@
+IF
+	Clicked([ANYONE])
+	Global("MeldanenSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MeldanenSpawn","MYAREA",1)
+END
+
+IF
+	OR(2)
+		Entered([PC])
+		IsOverMe([PC])
+	Global("MeldanenSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MeldanenSpawn","MYAREA",1)
+END
+

@@ -1,0 +1,123 @@
+IF
+	HPPercentLT(Player1,15)
+	Global("Pause4","MYAREA",0)
+	Global("Pause3","MYAREA",0)
+	Global("Pause2","MYAREA",0)
+	Global("Pause1","MYAREA",0)
+	GlobalGT("Encounter","MYAREA",0)
+	CheckStat(Player1,0,EXTRAPROFICIENCY14)
+	!CheckStatGT(Player1,0,STONESKINS)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		ClearActions(Player1)
+		ApplySpell(Player1,WIZARD_ABSOLUTE_IMMUNITY)  // SPWI907.SPL (?????????? ?????????)
+END
+
+IF
+	OR(3)
+		Dead("Agar")  // ????
+		Dead("Fashi")  // ????
+		Dead("Chrusk")  // ?????
+	Global("NWArenaBreak","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NWArenaBreak","GLOBAL",1)
+END
+
+IF
+	Dead("Claudus")  // ??????
+	!Global("NWArenaBreak","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("NWArenaBreak","GLOBAL",2)
+END
+
+IF
+	Global("Pause1","MYAREA",1)
+	Global("NWArena","GLOBAL",0)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat1A")
+END
+
+IF
+	Global("Pause1","MYAREA",1)
+	Global("NWArena","GLOBAL",1)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat1B")
+END
+
+IF
+	Global("Pause2","MYAREA",1)
+	Global("NWArena","GLOBAL",1)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat1A")
+END
+
+IF
+	Global("Pause2","MYAREA",1)
+	Global("NWArena","GLOBAL",2)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat1B")
+END
+
+IF
+	Global("Pause3","MYAREA",1)
+	Global("NWArena","GLOBAL",2)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat1A")
+END
+
+IF
+	Global("Pause3","MYAREA",1)
+	Global("NWArena","GLOBAL",3)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat1B")
+END
+
+IF
+	Global("Pause4","MYAREA",1)
+	Global("NWArena","GLOBAL",3)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat2A")
+END
+
+IF
+	Global("Pause4","MYAREA",1)
+	Global("NWArena","GLOBAL",4)
+	Global("Encounter","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWBat2B")
+END
+

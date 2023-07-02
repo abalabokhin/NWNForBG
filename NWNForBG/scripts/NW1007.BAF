@@ -1,0 +1,40 @@
+IF
+	Global("TamoraTired","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("TamoraTired","MYAREA",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("Tamora")
+END
+
+IF
+	Global("LuceTired","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("LuceTired","MYAREA",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("Luce")
+END
+
+IF
+	Global("TanitTired","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("TanitTired","MYAREA",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("Tanit")
+END
+
+IF
+	Global("TanitTired","MYAREA",3)
+THEN
+	RESPONSE #100
+		SetGlobal("TanitTired","MYAREA",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("Tanit2")
+END
+

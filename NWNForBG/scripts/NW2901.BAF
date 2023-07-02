@@ -1,0 +1,11 @@
+IF
+	Global("SharwynItem","MYAREA",0)
+	OR(2)
+		InParty("Sharwyn")  // ??????
+		Global("SharwynReleased","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("SharwynItem","MYAREA",1)
+		ActionOverride("Cabinet2",CreateItem("Nwmisc45",1,0,0))  // ????? ????? ?????
+END
+

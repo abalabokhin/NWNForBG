@@ -1,0 +1,90 @@
+IF
+	OnCreation()
+	Global("Reveal","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Reveal","MYAREA",1)
+		Explore()
+		Continue()
+END
+
+IF
+	Dead("Zor")  // ???
+	Dead("Stirge")  // ?????
+	Dead("WyvernB")  // ???????
+	Dead("Delilah")  // ??????
+	InMyArea("SHALDRI1")  // ?????????
+	!Dead("SHALDRI1")  // ?????????
+THEN
+	RESPONSE #100
+		ActionOverride("SHALDRI1",DestroySelf())
+END
+
+IF
+	Global("SolomonRing","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("SolomonRing","GLOBAL",2)
+END
+
+IF
+	Global("ChangeAmbientSound","NW2000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ChangeAmbientSound","NW2000",1)
+		SoundActivate("GroveDay",FALSE)
+		SoundActivate("GroveNight",FALSE)
+		SoundActivate("SS_Owls",FALSE)
+END
+
+IF
+	Global("AarinTalk","GLOBAL",1)
+	Global("SONFPL2Exists","NW2000",0)
+	AreaCheck("NW2000")
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("SONFPL2Exists","NW2000",1)
+		CreateCreatureObjectOffset("SonfPL2",Player1,[600.0])  // ??? ???????
+END
+
+IF
+	Gender(Player1,MALE)
+	Dead("Solomon")  // ???????
+	Global("JahelSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JahelSpawn","GLOBAL",1)
+		CreateCreature("Jahel",[4538.1899],0)  // ???????
+END
+
+IF
+	Gender(Player1,FEMALE)
+	Dead("Solomon")  // ???????
+	Global("TaranSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("TaranSpawn","GLOBAL",1)
+		CreateCreature("Taran",[4538.1899],0)  // ??????
+END
+
+IF
+	OR(2)
+		Global("SearchNeva","GLOBAL",3)
+		Dead("Neva")  // ????
+	InMyArea("Jahel")  // ???????
+THEN
+	RESPONSE #100
+		ActionOverride("Jahel",DestroySelf())
+END
+
+IF
+	OR(2)
+		Global("SearchNeva","GLOBAL",3)
+		Dead("Neva")  // ????
+	InMyArea("Taran")  // ??????
+THEN
+	RESPONSE #100
+		ActionOverride("Taran",DestroySelf())
+END
+

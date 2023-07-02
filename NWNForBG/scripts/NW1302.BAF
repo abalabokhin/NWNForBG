@@ -1,0 +1,9 @@
+IF
+	GlobalLT("SedosQuest","GLOBAL",3)
+	GlobalGT("SedosQuest","GLOBAL",0)
+	Dead("Crewtd2")  // ???????
+THEN
+	RESPONSE #100
+		SetGlobal("SedosQuest","GLOBAL",3)
+END
+

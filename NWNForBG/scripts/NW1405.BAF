@@ -1,0 +1,81 @@
+IF
+	Global("Creatures","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Creatures","MYAREA",1)
+		CreateCreatureImpassable("NWPHEAS2",[1777.769],4)  // ?????
+		CreateCreatureImpassable("NWPHEAS2",[1751.757],12)  // ?????
+END
+
+IF
+	InMyArea(Player1)
+	Delay(3)
+	Global("ZooScene","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("ZooScene","MYAREA",1)
+		HideGUI()
+		StartCutSceneMode()
+		StartCutScene("NWZOOCUT")
+		UnhideGUI()
+END
+
+IF
+	OR(2)
+		!InMyArea("Nwbear2")  // ????? ???????
+		Dead("Nwbear2")  // ????? ???????
+	Global("BearSound","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BearSound","MYAREA",1)
+		SoundActivate("SS-Bear",FALSE)
+		Continue()
+END
+
+IF
+	OR(2)
+		!InMyArea("Nwwolf2")  // ????
+		Dead("Nwwolf2")  // ????
+	Global("WolfSound","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WolfSound","MYAREA",1)
+		SoundActivate("Wolf",FALSE)
+		Continue()
+END
+
+IF
+	OR(2)
+		!InMyArea("Nwleop2")  // ???????
+		Dead("Nwleop2")  // ???????
+	Global("LeopardSound","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LeopardSound","MYAREA",1)
+		SoundActivate("Leopard",FALSE)
+		Continue()
+END
+
+IF
+	OR(2)
+		!InMyArea("Nwpanth2")  // ???????
+		Dead("Nwpanth2")  // ???????
+	Global("PatherSound","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PatherSound","MYAREA",1)
+		SoundActivate("Panther",FALSE)
+		Continue()
+END
+
+IF
+	Dead("Nwsnake2")  // ?????????? ????
+	Global("SnakeSound","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SnakeSound","MYAREA",1)
+		SoundActivate("SS-Rattle",FALSE)
+		Continue()
+END
+

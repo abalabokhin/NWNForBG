@@ -1,0 +1,17 @@
+IF
+	Global("Hostile","MYAREA",1)
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPCLOUD1",[839.278])
+		CreateVisualEffect("SPCLOUD1",[773.335])
+		CreateVisualEffect("SPCLOUD1",[953.472])
+		CreateVisualEffect("SPCLOUD1",[1001.453])
+		CreateVisualEffect("SPCLOUD1",[835.411])
+		SetGlobal("Hostile","MYAREA",2)
+		CreateCreature("MEPAIRNW",[839.278],13)  // ????????? ?????
+		CreateCreature("MEPDUSNW",[773.335],12)  // ??????? ?????
+		CreateCreature("MEPAIRNW",[953.472],6)  // ????????? ?????
+		CreateCreature("MEPDUSNW",[1001.453],5)  // ??????? ?????
+		CreateCreature("SetServ",[835.411],10)  // ?????
+END
+

@@ -1,0 +1,95 @@
+IF
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("MapChange","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MapChange","MYAREA",1)
+		Explore()
+		HideAreaOnMap("NW2601")  // ??????
+		RevealAreaOnMap("NW2600")  // ??????
+		HideAreaOnMap("NW2510")  // ????????? ???
+		RevealAreaOnMap("NW2500")  // ????????? ???
+		Continue()
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(100000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GENEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(125000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GOOD)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(150000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",6)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(100000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",6)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GENEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(125000)
+END
+
+IF
+	Global("JaregQuest","GLOBAL",6)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("CharwoodExpierrince","MYAREA",0)
+	Alignment(Player1,MASK_GOOD)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodExpierrince","MYAREA",1)
+		AddexperienceParty(200000)
+END
+
+IF
+	OR(2)
+		Global("Charwood_Is_Cursed","GLOBAL",1)
+		Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("Charwood_Letter","GLOBAL",0)
+THEN
+	RESPONSE #100
+		TakePartyItem("QUINTT")  // ?????? ?????? ???????
+		DestroyItem("QUINTT")  // ?????? ?????? ???????
+		TakePartyItem("KARLATT")  // ?????? ??????? ???????
+		DestroyItem("KARLATT")  // ?????? ??????? ???????
+		TakePartyItem("BELIALT")  // ????????? ???????, ?????????? ????
+		DestroyItem("BELIALT")  // ????????? ???????, ?????????? ????
+END
+

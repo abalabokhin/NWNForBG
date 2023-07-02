@@ -1,0 +1,9 @@
+IF
+	Global("MoragCutScene","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("MoragCutScene","MYAREA",2)
+		StartCutSceneMode()
+		StartCutScene("Morag3")
+END
+

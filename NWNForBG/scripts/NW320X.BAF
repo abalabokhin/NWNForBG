@@ -1,0 +1,16 @@
+IF
+	Global("NW_Medicine","GLOBAL",2)
+	OR(4)
+		AreaCheck("NW3202")
+		AreaCheck("NW3203")
+		AreaCheck("NW3204")
+		AreaCheck("NW3205")
+	OR(2)
+		InMyArea("SLEEPFH")  // ???????
+		InMyArea("SLEEPMH")  // ???????
+THEN
+	RESPONSE #100
+		ActionOverride("SLEEPFH",DestroySelf())
+		ActionOverride("SLEEPMH",DestroySelf())
+END
+

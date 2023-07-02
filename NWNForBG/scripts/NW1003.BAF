@@ -1,0 +1,10 @@
+IF
+	Global("NWNChapter","GLOBAL",4)
+	Global("DoorToNW4011","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("To1001",FALSE)
+		TriggerActivation("To4011",TRUE)
+		SetGlobal("DoorToNW4011","MYAREA",1)
+END
+

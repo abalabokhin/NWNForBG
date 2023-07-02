@@ -1,0 +1,19 @@
+IF
+	Contains("NWMISC24","Chest1")  // ?????????????? ??????
+	Global("DoorLocked","NW1419",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DoorLocked","NW1419",1)
+		Unlock("Door1")
+		OpenDoor("Door1")
+END
+
+IF
+	PartyHasItem("NWMISC16")  // ?????? ?????? ???????
+	GlobalLT("TelmaSecret","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SoundActivate("Undead",FALSE)
+		SetGlobal("TelmaSecret","GLOBAL",2)
+END
+

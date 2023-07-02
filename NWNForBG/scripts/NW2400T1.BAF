@@ -1,0 +1,11 @@
+IF
+	OR(2)
+		Entered([GOODCUTOFF])
+		Entered([PC])
+	Global("RevealNW2510","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RevealNW2510","GLOBAL",1)
+		RevealAreaOnMap("NW2510")  // ????????? ???
+END
+

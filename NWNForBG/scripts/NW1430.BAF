@@ -1,0 +1,59 @@
+IF
+	TimeLT(23)
+	OR(2)
+		Time(DAWN_END)
+		TimeGT(DAWN_END)
+	!Global("Switch_Day_Night","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Switch_Day_Night","MYAREA",1)
+		AmbientActivate("Portal",FALSE)
+		SoundActivate("Port",FALSE)
+		TriggerActivation("INFORM",TRUE)
+		TriggerActivation("To1426",FALSE)
+END
+
+IF
+	OR(2)
+		Time(23)
+		TimeGT(23)
+	!Global("Switch_Day_Night","MYAREA",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Switch_Day_Night","MYAREA",2)
+		AmbientActivate("Portal",TRUE)
+		SoundActivate("Port",TRUE)
+		TriggerActivation("INFORM",FALSE)
+		TriggerActivation("To1426",TRUE)
+END
+
+IF
+	TimeLT(DAWN_END)
+	OR(2)
+		Time(MIDNIGHT)
+		TimeGT(MIDNIGHT)
+	!Global("Switch_Day_Night","MYAREA",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Switch_Day_Night","MYAREA",2)
+		AmbientActivate("Portal",TRUE)
+		TriggerActivation("INFORM",FALSE)
+		TriggerActivation("To1426",TRUE)
+END
+
+IF
+	OpenState("Curtain",TRUE)
+	Global("Curtain_Opened","MYAREA",1)
+THEN
+	RESPONSE #100
+		CloseDoor("Curtain")
+END
+
+IF
+	OpenState("Curtain",FALSE)
+	Global("Curtain_Opened","MYAREA",2)
+THEN
+	RESPONSE #100
+		OpenDoor("Curtain")
+END
+

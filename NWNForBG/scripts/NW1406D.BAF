@@ -1,0 +1,10 @@
+IF
+	OR(2)
+		Clicked([ANYONE])
+		IsOverMe([ANYONE])
+	!Global("Door1406","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1406","GLOBAL",1)
+END
+

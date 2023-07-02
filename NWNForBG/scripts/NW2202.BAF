@@ -1,0 +1,26 @@
+IF
+	Global("SexWithZamitra","GLOBAL",1)
+	Global("ZamitraSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ZamitraSpawn","MYAREA",1)
+		CreateCreature("Zamitra2",[553.891],10)  // ???????
+END
+
+IF
+	Global("ZamitraGem","NW2202",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ZamitraGem","NW2202",2)
+		ActionOverride("Contain5",CreateItem("Zgem",0,0,0))  // ??????????? ?????? ???????
+END
+
+IF
+	Global("KendrackQuest","GLOBAL",1)
+	Global("ZorSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ZorSpawn","MYAREA",1)
+		CreateCreature("Zor",[971.362],2)  // ???
+END
+

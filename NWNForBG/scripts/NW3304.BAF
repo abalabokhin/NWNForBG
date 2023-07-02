@@ -1,0 +1,11 @@
+IF
+	Global("SundialNW","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("SundialNW","MYAREA",0)
+		ClearAllActions()
+		SaveGame(12)
+		StartCutSceneMode()
+		StartCutScene("To3306")
+END
+

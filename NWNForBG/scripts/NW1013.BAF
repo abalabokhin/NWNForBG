@@ -1,0 +1,9 @@
+IF
+	GlobalGT("NWNChapter","GLOBAL",3)
+	Global("MercenarExist","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MercenarExist","MYAREA",0)
+		ActionOverride("Mercenar",DestroySelf())
+END
+

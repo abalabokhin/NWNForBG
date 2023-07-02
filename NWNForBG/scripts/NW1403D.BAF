@@ -1,0 +1,10 @@
+IF
+	OR(2)
+		Entered([ANYONE])
+		IsOverMe([ANYONE])
+	Global("Alarm","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Alarm","MYAREA",1)
+END
+
