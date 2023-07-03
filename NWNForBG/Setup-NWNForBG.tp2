@@ -132,3 +132,6 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 //Areas
 COPY ~NWNForBG/are~ ~override~
 
+//Creatures
+COPY ~NWNForBG/cre~ ~override~
+
