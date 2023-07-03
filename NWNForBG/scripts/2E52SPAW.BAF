@@ -1,0 +1,18 @@
+IF
+	IsOverMe([PC])
+	!Global("SpawnPortal","MYAREA",1)
+	Global("PortalDeactivate","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnPortal","MYAREA",1)
+END
+
+IF
+	!IsOverMe([PC])
+	Global("SpawnPortal","MYAREA",1)
+	Global("PortalDeactivate","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnPortal","MYAREA",0)
+END
+

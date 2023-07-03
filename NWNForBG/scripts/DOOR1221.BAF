@@ -1,0 +1,8 @@
+IF
+	Clicked([ANYONE])
+	Global("Door1221Opened","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Door1221Opened","GLOBAL",1)
+END
+

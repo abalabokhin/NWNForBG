@@ -1,0 +1,10 @@
+IF
+	Global("GulnanTalk","MYAREA",0)
+	OR(2)
+		Entered([ANYONE])
+		IsOverMe([ANYONE])
+THEN
+	RESPONSE #100
+		SetGlobal("GulnanTalk","MYAREA",1)
+END
+

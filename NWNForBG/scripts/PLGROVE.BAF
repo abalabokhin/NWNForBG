@@ -1,0 +1,29 @@
+IF
+	!Global("ChangeAmbientSound","NW2000",1)
+	OR(2)
+		Entered([ANYONE])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Global("ChangeAmbientSound","NW2000",1)
+	OR(2)
+		Entered(Player1)
+		IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("ChangeAmbientSound","NW2000",2)
+		SoundActivate("Dogs",FALSE)
+		SoundActivate("Merchants1",FALSE)
+		SoundActivate("Merchants3",FALSE)
+		SoundActivate("Port_Night",FALSE)
+		SoundActivate("Port_Day",FALSE)
+		SoundActivate("Buyers",FALSE)
+		SoundActivate("GroveDay",TRUE)
+		SoundActivate("GroveNight",TRUE)
+		SoundActivate("SS_Owls",TRUE)
+END
+

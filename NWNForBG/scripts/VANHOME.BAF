@@ -1,0 +1,24 @@
+IF
+	Global("ChangeAmbientSound","NW2304",2)
+	OR(2)
+		Entered([ANYONE])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	OR(2)
+		Global("ChangeAmbientSound","NW2304",1)
+		Global("ChangeAmbientSound","NW2304",0)
+	OR(2)
+		Entered([PC])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("ChangeAmbientSound","NW2304",2)
+		SoundActivate("Cave",FALSE)
+		SoundActivate("Home",TRUE)
+END
+

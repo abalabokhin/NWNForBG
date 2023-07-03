@@ -1,0 +1,8 @@
+IF
+	!See([PC])
+	Global("Alarm","MYAREA",1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+

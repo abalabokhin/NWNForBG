@@ -1,0 +1,17 @@
+IF
+	Allegiance(Myself,NEUTRAL)
+	Global("VaatHostile","MYAREA",1)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("VaatHostile","MYAREA",0)
+THEN
+	RESPONSE #100
+		ClearActions(Myself)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+END
+

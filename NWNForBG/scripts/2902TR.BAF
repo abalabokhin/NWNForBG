@@ -1,0 +1,27 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,15)
+	Global("Druid1Free","NW2902",0)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffset("2902TR",LastTrigger,[1.1])  // No such index
+		ActionOverride("2902TR",StartDialog("COCOON",LastTrigger))
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,15)
+	GlobalGT("Druid1Free","NW2902",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,102268)  // ???? ?????? ????? ????.
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,15)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // ??????? ??????, ????? ???????????? ???.
+END
+

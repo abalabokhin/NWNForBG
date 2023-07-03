@@ -1,0 +1,18 @@
+IF
+	Entered([PC])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14381)  // ??????? ?????????
+		ReallyForceSpell(LastTrigger,TRAP_POISON_CONFUSION_DARTS)  // SPWI029.SPL (No such index)
+		Wait(2)
+END
+
+IF
+	Opened([PC])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14381)  // ??????? ?????????
+		ReallyForceSpell(LastTrigger,TRAP_POISON_CONFUSION_DARTS)  // SPWI029.SPL (No such index)
+		Wait(2)
+END
+

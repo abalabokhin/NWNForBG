@@ -1,9 +1,0 @@
-IF
-	Global("NWNChapter","GLOBAL",4)
-	Global("MyDialog","LOCALS",0)
-THEN
-	RESPONSE #100
-		SetDialog("NWWOMAN2")
-		SetGlobal("MyDialog","LOCALS",1)
-END
-

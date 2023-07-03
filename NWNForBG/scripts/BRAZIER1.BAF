@@ -1,0 +1,62 @@
+IF
+	Global("BelialTalk","MYAREA",2)
+THEN
+	RESPONSE #100
+		ContainerEnable("Brazier0",TRUE)
+		DestroySelf()
+END
+
+IF
+	SpellCastOnMe(Player1,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	Global("Player1IsSummoner","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BelialTalk","MYAREA",1)
+		SetGlobal("Player1IsSummoner","MYAREA",1)
+END
+
+IF
+	SpellCastOnMe(Player2,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	Global("Player2IsSummoner","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BelialTalk","MYAREA",1)
+		SetGlobal("Player2IsSummoner","MYAREA",1)
+END
+
+IF
+	SpellCastOnMe(Player3,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	Global("Player3IsSummoner","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BelialTalk","MYAREA",1)
+		SetGlobal("Player3IsSummoner","MYAREA",1)
+END
+
+IF
+	SpellCastOnMe(Player4,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	Global("Player4IsSummoner","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BelialTalk","MYAREA",1)
+		SetGlobal("Player4IsSummoner","MYAREA",1)
+END
+
+IF
+	SpellCastOnMe(Player5,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	Global("Player5IsSummoner","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BelialTalk","MYAREA",1)
+		SetGlobal("Player5IsSummoner","MYAREA",1)
+END
+
+IF
+	SpellCastOnMe(Player6,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	Global("Player6IsSummoner","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BelialTalk","MYAREA",1)
+		SetGlobal("Player6IsSummoner","MYAREA",1)
+END
+

@@ -1,0 +1,82 @@
+IF
+	OR(2)
+		IsOverMe([ANYONE])
+		Entered([ANYONE])
+	OR(2)
+		OpenState("Door1",TRUE)
+		Global("1400_DOOR13","MYAREA",1)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Entered(Player1)
+	Global("UsedDoor1","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",1)  // ????
+		CreateCreature("1110DOOR",[2427.1058],0)  // ????? ??-?? ?????
+		ActionOverride("1110DOOR",StartDialogueNoSet(Player1))
+END
+
+IF
+	OR(2)
+		IsOverMe(Player2)
+		Entered(Player2)
+	Global("UsedDoor1","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",1)  // ????
+		CreateCreature("1110DOOR",[2427.1058],0)  // ????? ??-?? ?????
+		ActionOverride("1110DOOR",StartDialogueNoSet(Player2))
+END
+
+IF
+	OR(2)
+		IsOverMe(Player3)
+		Entered(Player3)
+	Global("UsedDoor1","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",1)  // ????
+		CreateCreature("1110DOOR",[2427.1058],0)  // ????? ??-?? ?????
+		ActionOverride("1110DOOR",StartDialogueNoSet(Player3))
+END
+
+IF
+	OR(2)
+		IsOverMe(Player4)
+		Entered(Player4)
+	Global("UsedDoor1","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",1)  // ????
+		CreateCreature("1110DOOR",[2427.1058],0)  // ????? ??-?? ?????
+		ActionOverride("1110DOOR",StartDialogueNoSet(Player4))
+END
+
+IF
+	OR(2)
+		IsOverMe(Player5)
+		Entered(Player5)
+	Global("UsedDoor1","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",1)  // ????
+		CreateCreature("1110DOOR",[2427.1058],0)  // ????? ??-?? ?????
+		ActionOverride("1110DOOR",StartDialogueNoSet(Player5))
+END
+
+IF
+	OR(2)
+		IsOverMe(Player6)
+		Entered(Player6)
+	Global("UsedDoor1","NW1100",0)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",1)  // ????
+		CreateCreature("1110DOOR",[2427.1058],0)  // ????? ??-?? ?????
+		ActionOverride("1110DOOR",StartDialogueNoSet(Player6))
+END
+

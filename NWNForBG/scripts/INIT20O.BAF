@@ -1,0 +1,11 @@
+IF
+	Range([PC],20)
+	NumTimesTalkedTo(0)
+	See([PC])
+	Allegiance(Myself,NEUTRAL)
+	!Global("PatrolHostile","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+

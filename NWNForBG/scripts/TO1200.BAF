@@ -1,0 +1,8 @@
+IF
+	Clicked([ANYONE])
+	Global("BeggarsNestDoor","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BeggarsNestDoor","GLOBAL",1)
+END
+

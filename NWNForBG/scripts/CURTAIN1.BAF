@@ -1,0 +1,19 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,8)
+THEN
+	RESPONSE #100
+		SetGlobal("Curtain_Opened","MYAREA",2)
+		OpenDoor("Curtain")
+		TriggerActivation("Trigger2",TRUE)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,8)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // ??????? ??????, ????? ???????????? ???.
+END
+

@@ -1,0 +1,41 @@
+IF
+	Entered([PC])
+	Global("NWNChapter","GLOBAL",1)
+	Global("NW_Cultist_Attack","GLOBAL",0)
+	Global("NWNGultspaun","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectDoor("NWCULTL1",Player1,0,0,0)  // ????????? ??????
+		CreateCreatureObjectDoor("NWCULT2M",Player1,0,0,0)  // ???? ??????
+		CreateCreatureObjectDoor("NWCULT5M",Player1,0,0,0)  // ???? ??????
+		SetGlobal("NWNGultspaun","GLOBAL",1)
+END
+
+IF
+	Entered([PC])
+	Global("NWNChapter","GLOBAL",1)
+	Global("NW_Cultist_Attack","GLOBAL",1)
+	Global("NWNGultspaun","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectDoor("NWCULTL2",Player1,0,0,0)  // ????????? ??????
+		CreateCreatureObjectDoor("NWCULT1M",Player1,0,0,0)  // ???? ??????
+		CreateCreatureObjectDoor("NWCULT2F",Player1,0,0,0)  // ???? ??????
+		CreateCreatureObjectDoor("NWCULT4M",Player1,0,0,0)  // ??? ??????
+		SetGlobal("NWNGultspaun","GLOBAL",2)
+END
+
+IF
+	Entered([PC])
+	Global("NWNChapter","GLOBAL",1)
+	GlobalGT("NW_Cultist_Attack","GLOBAL",2)
+	Global("NWNGultspaun","GLOBAL",2)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectDoor("NWCULTL3",Player1,0,0,0)  // ????????? ??????
+		CreateCreatureObjectDoor("NWCULT1M",Player1,0,0,0)  // ???? ??????
+		CreateCreatureObjectDoor("NWCULT2M",Player1,0,0,0)  // ???? ??????
+		CreateCreatureObjectDoor("NWCULT5M",Player1,0,0,0)  // ???? ??????
+		SetGlobal("NWNGultspaun","GLOBAL",3)
+END
+

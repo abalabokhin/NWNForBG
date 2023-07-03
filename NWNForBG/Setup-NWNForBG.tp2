@@ -135,3 +135,12 @@ COPY ~NWNForBG/are~ ~override~
 //Creatures
 COPY ~NWNForBG/cre~ ~override~
 
+//Sounds
+COPY ~NWNForBG/audio~ ~override~
+
+//Animations
+COPY ~NWNForBG/anim~ ~override~
+
+//Items
+COPY ~NWNForBG/itm~ ~override~
+

@@ -1,0 +1,20 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // ??????? ??????, ????? ???????????? ???.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		SetGlobal("DoorOpened","GLOBAL",0)
+		CloseDoor("Bookcase")
+		TriggerActivation("To1419",FALSE)
+		TriggerActivation("Bookcas1",TRUE)
+		TriggerActivation("Bookcas2",FALSE)
+END
+

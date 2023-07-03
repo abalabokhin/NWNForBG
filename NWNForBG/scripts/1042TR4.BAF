@@ -1,0 +1,9 @@
+IF
+	Entered([PC])
+	Global("ArmorQuest","GLOBAL",3)
+	Global("In1043PlatAll","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("In1043PlatAll","GLOBAL",1)
+END
+

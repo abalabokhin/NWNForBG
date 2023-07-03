@@ -1,0 +1,54 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // ??????? ??????, ????? ???????????? ???.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Nw4002Entered","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SaveGame(0)
+		StartCutSceneMode()
+		FadeToColor([10.0],0)
+		Wait(1)
+		SetGlobal("Nw4002Entered","GLOBAL",1)
+		Wait(1)
+		ActionOverride(Player1,LeaveAreaLUA("NW4002","",[1090.741],10))
+		ActionOverride(Player2,LeaveAreaLUA("NW4002","",[1046.737],10))
+		ActionOverride(Player3,LeaveAreaLUA("NW4002","",[1103.777],10))
+		ActionOverride(Player4,LeaveAreaLUA("NW4002","",[930.743],10))
+		ActionOverride(Player5,LeaveAreaLUA("NW4002","",[1094.844],10))
+		ActionOverride(Player6,LeaveAreaLUA("NW4002","",[933.860],10))
+		Wait(2)
+		MultiPlayerSync()
+		FadeFromColor([20.0],0)
+		EndCutSceneMode()
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Nw4002Entered","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SaveGame(0)
+		StartCutSceneMode()
+		FadeToColor([10.0],0)
+		Wait(1)
+		Wait(1)
+		ActionOverride(Player1,LeaveAreaLUA("NW4002","",[1090.741],10))
+		ActionOverride(Player2,LeaveAreaLUA("NW4002","",[1046.737],10))
+		ActionOverride(Player3,LeaveAreaLUA("NW4002","",[1103.777],10))
+		ActionOverride(Player4,LeaveAreaLUA("NW4002","",[930.743],10))
+		ActionOverride(Player5,LeaveAreaLUA("NW4002","",[1094.844],10))
+		ActionOverride(Player6,LeaveAreaLUA("NW4002","",[933.860],10))
+		MultiPlayerSync()
+		FadeFromColor([20.0],0)
+		EndCutSceneMode()
+END
+

@@ -1,0 +1,32 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,3)
+	OR(3)
+		!Global("UsedRune","NW2510",0)  // ????????? ???
+		!Global("Portal2110","GLOBAL",0)
+		!Global("UndeadSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,3)
+	Global("UsedRune","NW2510",0)  // ????????? ???
+	Global("Portal2110","GLOBAL",0)
+	Global("UndeadSpawn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UsedRune","NW2510",1)  // ????????? ???
+		CreateCreature("2510RUNE",[597.1732],0)  // No such index
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,3)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // ??????? ??????, ????? ???????????? ???.
+END
+

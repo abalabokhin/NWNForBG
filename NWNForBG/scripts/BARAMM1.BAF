@@ -1,0 +1,9 @@
+IF
+	Detect([PC])
+	Range([PC],10)
+	Global("SpawnShadows","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnShadows","MYAREA",1)
+END
+

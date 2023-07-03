@@ -1,0 +1,23 @@
+IF
+	OR(2)
+		GlobalGT("NeurikQuest","GLOBAL",3)
+		GlobalGT("String","MYAREA",0)
+	OR(2)
+		Entered([ANYONE])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	GlobalLT("NeurikQuest","GLOBAL",4)
+	Global("String","MYAREA",0)
+	OR(2)
+		Entered([ANYONE])
+		IsOverMe([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("String","MYAREA",1)
+END
+

@@ -1,0 +1,10 @@
+IF
+	!HasItem("NWBOOK48",Myself)  // ??????????? ?????
+	!Global("NotBook","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("NotBook","MYAREA",1)
+		OpenDoor("Book")
+		ContainerEnable("Table1",FALSE)
+END
+
