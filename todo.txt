@@ -6,4 +6,7 @@
 
 Possible bugs:
 
-No NW1022.MOS, NW1023.MOS, but it is probably Ok.
+- No NW1022.MOS, NW1023.MOS, and for many other files but it is probably Ok.
+- Check are (move to) NW2019 & NW3100 - there some AR3314 and AR3000 lines inside, but should not affect
+anything
+
