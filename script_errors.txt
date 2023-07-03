@@ -62,14 +62,6 @@ Near Text: )
 Near Text: )
         [CheckStatGT] argument [HIDEINSHADOWSCP] not found in [Stats.IDS]
 
-[NWNForBG/scripts/NWACTOR.BAF] PARSE ERROR at line 760 column 8-33
-Near Text: )
-        [Heard] argument [LEAVE2] not found in [SHOUTIDS.IDS]
-
-[NWNForBG/scripts/NWACTOR.BAF] PARSE ERROR at line 777 column 8-33
-Near Text: )
-        [Heard] argument [LEAVE2] not found in [SHOUTIDS.IDS]
-
 [NWNForBG/scripts/NWMAG16A.BAF] PARSE ERROR at line 77 column 16-46
 Near Text: )
         [ForceSpell] argument [COM_ICELANCE] not found in [Spell.IDS]
@@ -89,4 +81,3 @@ ERROR: parsing [NWNForBG/scripts/NWMAG16A.BAF]: Parsing.Parse_error
 ERROR: error compiling [NWNForBG/scripts/NWMAG16A.BAF]: Parsing.Parse_error
 ERROR: compiling [NWNForBG/scripts/NWMAG16A.BAF]!
 Stopping installation because of error.
-
