@@ -144,3 +144,6 @@ COPY ~NWNForBG/anim~ ~override~
 //Items
 COPY ~NWNForBG/itm~ ~override~
 
+//Scripts
+COMPILE ~NWNForBG/scripts~
+
