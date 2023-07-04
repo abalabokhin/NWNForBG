@@ -196,7 +196,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SHOUT","LOCALS",1)
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 END
 
 IF

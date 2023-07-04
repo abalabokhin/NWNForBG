@@ -34,7 +34,7 @@ IF
 THEN
 	RESPONSE #100
 		Enemy()
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Continue()
 END
 
@@ -44,7 +44,7 @@ IF
 	!Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END

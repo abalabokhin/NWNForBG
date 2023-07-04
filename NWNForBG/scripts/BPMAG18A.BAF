@@ -105,7 +105,7 @@ IF
 		Allegiance(LastAttackerOf(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END
@@ -118,7 +118,7 @@ IF
 		Allegiance(LastHitter(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END

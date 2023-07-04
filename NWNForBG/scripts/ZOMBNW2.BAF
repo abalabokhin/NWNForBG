@@ -50,7 +50,7 @@ IF
 		Allegiance(LastAttackerOf(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END
@@ -64,7 +64,7 @@ IF
 		Allegiance(LastHitter(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END
@@ -386,7 +386,7 @@ END
 
 IF
 	Allegiance(Myself,NEUTRAL)
-	Heard([NEUTRAL],ALERT_151)
+	Heard([NEUTRAL],HELP_ME_GROUP151)
 	!Class(Myself,INNOCENT)
 	!Global("BP_PlotMan","LOCALS",1)
 	!Range(LastHeardBy(Myself),1)
@@ -408,7 +408,7 @@ END
 
 IF
 	Allegiance(Myself,EVILCUTOFF)
-	Heard([EVILCUTOFF],ALERT_151)
+	Heard([EVILCUTOFF],HELP_ME_GROUP151)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),12)
 	OR(3)

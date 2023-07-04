@@ -5,13 +5,13 @@ IF
 		Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		SetGlobal("Hostile","MYAREA",1)
 		Enemy()
 END
 
 IF
-	Heard([ANYONE],ALERT_151)
+	Heard([ANYONE],HELP_ME_GROUP151)
 	OR(2)
 		Allegiance(Myself,GOODBUTBLUE)
 		Allegiance(Myself,NEUTRAL)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-	Heard([ANYONE],ALERT_151)
+	Heard([ANYONE],HELP_ME_GROUP151)
 	!Class(Myself,INNOCENT)
 	!See(NearestEnemyOf(Myself))
 THEN
