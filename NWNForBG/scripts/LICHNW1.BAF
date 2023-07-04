@@ -10,8 +10,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],ALERT_79)
-		Heard([EVILCUTOFF],ALERT_79)
+		Heard([NEUTRAL],HELP79)
+		Heard([EVILCUTOFF],HELP79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN

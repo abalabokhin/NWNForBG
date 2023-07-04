@@ -7,8 +7,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_79)
-		Heard([NEUTRAL],ALERT_79)
+		Heard([EVILCUTOFF],HELP79)
+		Heard([NEUTRAL],HELP79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -25,7 +25,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,88741)  // ?? ??????! ??? ???????? ????? ????!
-		Shout(ALERT_101)
+		Shout(HELP101)
 		Enemy()
 END
 
@@ -73,8 +73,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_101)
-		Heard([NEUTRAL],ALERT_101)
+		Heard([EVILCUTOFF],HELP101)
+		Heard([NEUTRAL],HELP101)
 	!Range(LastHeardBy(Myself),1)
 	!Allegiance(Myself,ENEMY)
 	!Allegiance(Myself,PC)
@@ -83,7 +83,7 @@ IF
 THEN
 	RESPONSE #75
 		Enemy()
-		Shout(ALERT_101)
+		Shout(HELP101)
 		RunAwayFrom(LastAttackerOf(LastHeardBy(Myself)),40)
 	RESPONSE #25
 		Continue()
@@ -91,8 +91,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_101)
-		Heard([NEUTRAL],ALERT_101)
+		Heard([EVILCUTOFF],HELP101)
+		Heard([NEUTRAL],HELP101)
 	!Range(LastHeardBy(Myself),1)
 	!Allegiance(Myself,ENEMY)
 	!Allegiance(Myself,PC)

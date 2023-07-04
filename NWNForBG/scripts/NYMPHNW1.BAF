@@ -2919,7 +2919,7 @@ IF
 		StateCheck(LastAttackerOf(Myself),STATE_DISABLED)
 	OR(8)
 		RandomNumGT(100,33)
-		!Heard([ENEMY],ALERT_101)
+		!Heard([ENEMY],HELP101)
 		Range(LastHeardBy(Myself),0)
 		!See(LastAttackerOf(LastHeardBy(Myself)))
 		!Range(LastAttackerOf(LastHeardBy(Myself)),20)

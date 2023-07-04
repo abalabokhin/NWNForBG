@@ -56,8 +56,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_101)
-		Heard([NEUTRAL],ALERT_101)
+		Heard([EVILCUTOFF],HELP101)
+		Heard([NEUTRAL],HELP101)
 	!Range(LastHeardBy(Myself),1)
 	!Allegiance(Myself,ENEMY)
 	!Allegiance(Myself,PC)
@@ -66,8 +66,8 @@ IF
 THEN
 	RESPONSE #75
 		Enemy()
-		Shout(ALERT_101)
-		Shout(ALERT_79)
+		Shout(HELP101)
+		Shout(HELP79)
 		Shout(HEALME_83)
 		Shout(ALERT_151)
 		RunAwayFrom(LastAttackerOf(LastHeardBy(Myself)),40)
@@ -77,8 +77,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_101)
-		Heard([NEUTRAL],ALERT_101)
+		Heard([EVILCUTOFF],HELP101)
+		Heard([NEUTRAL],HELP101)
 	!Range(LastHeardBy(Myself),1)
 	!Allegiance(Myself,ENEMY)
 	!Allegiance(Myself,PC)

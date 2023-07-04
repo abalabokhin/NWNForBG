@@ -495,7 +495,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("RZ_Call_For_Help","LOCALS",THREE_ROUNDS)
-		Shout(ALERT_101)
+		Shout(HELP101)
 		Continue()
 END
 
@@ -535,7 +535,7 @@ IF
 	Global("RZ_See_Enemy","LOCALS",0)
 	OR(2)
 		Heard([ENEMY],ALERT_100)
-		Heard([ENEMY],ALERT_101)
+		Heard([ENEMY],HELP101)
 	!Range(LastHeardBy(Myself),0)
 	OR(2)
 		!See(NearestEnemyOf(Myself))
@@ -3947,7 +3947,7 @@ IF
 		StateCheck(LastAttackerOf(Myself),STATE_DISABLED)
 	OR(8)
 		RandomNumGT(100,33)
-		!Heard([ENEMY],ALERT_101)
+		!Heard([ENEMY],HELP101)
 		Range(LastHeardBy(Myself),0)
 		!See(LastAttackerOf(LastHeardBy(Myself)))
 		!Range(LastAttackerOf(LastHeardBy(Myself)),20)
