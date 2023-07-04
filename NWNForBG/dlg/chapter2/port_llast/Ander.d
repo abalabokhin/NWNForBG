@@ -35,7 +35,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY ~ћое им€ Ёндер, сэр. я помогаю здесь Ёлхелору, когда он в этом нуждаетс€.~ ~ћое им€ Ёндер, леди. я помогаю здесь Ёлхелору, когда он в этом нуждаетс€.~
-  IF ~  InMyArea("Alhelor1")!StateCheck("Alhelor1",CD_STATE_NOTVALID)~ THEN EXTERN ~ALHELOR~ 24
+  IF ~  InMyArea("Alhelor1")!StateCheck("Alhelor1",CD_STATE_NOTVALID)~ THEN EXTERN ~ALHELOR~ WER01
   IF ~  OR(2)!InMyArea("Alhelor1")StateCheck("Alhelor1",CD_STATE_NOTVALID)~ THEN GOTO 25
 END
 

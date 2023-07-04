@@ -8,14 +8,14 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
 ~  !PartyHasItem("UrtRing")Global("UrtIsSaved","GLOBAL",0)!Dead("Urt")!Global("Stairs","MYAREA",1)~ THEN BEGIN 0 // from:
   SAY ~Убирайтесь. Мы не хотим, чтобы с вами в этот дом пришла беда.~
 //  IF ~~ THEN EXIT
-IF ~~ THEN EXTERN ~EISNM~ 8
+IF ~~ THEN EXTERN ~EISNM~ EXT01
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !PartyHasItem("UrtRing")Global("UrtIsSaved","GLOBAL",0)!Dead("Urt")Global("Stairs","MYAREA",1)~ THEN BEGIN 0 // from:
   SAY ~Не подходите к этим ступеням... ~
 //  IF ~~ THEN EXIT
-IF ~~ THEN EXTERN ~EISNM~ 9
+IF ~~ THEN EXTERN ~EISNM~ EXT02
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
