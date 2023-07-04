@@ -1,0 +1,56 @@
+IF
+	AttackedBy([PC],DEFAULT)
+	!Global("JohnsAttaked","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("JohnsAttaked","MYAREA",1)
+		Shout(ALERT_101)
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	Global("JohnsAttaked","MYAREA",1)
+	See([PC.0.0.MAGE])
+	!StateCheck([PC.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE],0,HELD)
+	!StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+	!CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+	!StateCheck([PC.0.0.MAGE],STATE_DEAD)
+THEN
+	RESPONSE #100
+		Attack([PC.0.0.MAGE])
+END
+
+IF
+	Global("JohnsAttaked","MYAREA",1)
+	OR(6)
+		!See([PC.0.0.MAGE])
+		StateCheck([PC.0.0.MAGE],STATE_DISABLED)
+		CheckStatGT([PC.0.0.MAGE],0,HELD)
+		StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+		CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+		StateCheck([PC.0.0.MAGE],STATE_DEAD)
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	See([PC])
+	See("Johns")  // ?????? ?????
+	!Dead("Johns")  // ?????? ?????
+	!Global("JohnsAttaked","MYAREA",1)
+THEN
+	RESPONSE #100
+		Attack("Johns")  // ?????? ?????
+END
+
+IF
+	See([PC])
+	Dead("Johns")  // ?????? ?????
+	!Global("JohnsAttaked","MYAREA",1)
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
+

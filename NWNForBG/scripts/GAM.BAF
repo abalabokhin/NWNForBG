@@ -1,0 +1,87 @@
+IF
+	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("Cure","LOCALS",0)
+	AreaCheck("NW2210")
+	See([PC])
+	NumTimesTalkedTo(0)
+	Range(LastSeenBy(Myself),12)
+	!StateCheck(LastSeenBy(Myself),CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	OR(9)
+		SpellCastOnMe([GOODCUTOFF],CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (??????? ?????? ???)
+		SpellCastOnMe([GOODCUTOFF],CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (??????? ??????? ???)
+		SpellCastOnMe([GOODCUTOFF],CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (??????? ????????? ???)
+		SpellCastOnMe([GOODCUTOFF],CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+		SpellCastOnMe([GOODCUTOFF],CLERIC_HEAL)  // SPPR607.SPL (?????????)
+		SpellCastOnMe([GOODCUTOFF],PALADIN_LAY_ON_HANDS)  // SPCL211.SPL (?????????? ???)
+		SpellCastOnMe([GOODCUTOFF],MONK_LAY_ON_HANDS)  // SPCL815.SPL (?????????? ???)
+		SpellCastOnMe([GOODCUTOFF],INNATE_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
+		SpellCastOnMe([GOODCUTOFF],MAZZY_LAY)  // SPIN827.SPL (?????????? ???)
+	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("Promise","LOCALS",1)
+	GlobalLT("Cure","LOCALS",2)
+	AreaCheck("NW2210")
+THEN
+	RESPONSE #100
+		SetGlobal("Cure","LOCALS",2)
+		ForceSpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		ActionOverride(Myself,Polymorph(FIGHTER_MALE_HUMAN))
+END
+
+IF
+	HasItem("Potn52",Myself)  // ????? ??????????? ???????
+	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("Cure","LOCALS",1)
+	AreaCheck("NW2210")
+THEN
+	RESPONSE #100
+		SetGlobal("Cure","LOCALS",2)
+		UseItem("Potn52",Myself)  // ????? ??????????? ???????
+		Wait(1)
+		Polymorph(FIGHTER_MALE_HUMAN)
+END
+
+IF
+	HasItem("Potn55",Myself)  // ????? ????????????? ???????
+	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("Cure","LOCALS",1)
+	AreaCheck("NW2210")
+THEN
+	RESPONSE #100
+		SetGlobal("Cure","LOCALS",2)
+		UseItem("Potn55",Myself)  // ????? ????????????? ???????
+		Wait(1)
+		Polymorph(FIGHTER_MALE_HUMAN)
+END
+
+IF
+	HasItem("Potn08",Myself)  // ????? ???????
+	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("Cure","LOCALS",1)
+	AreaCheck("NW2210")
+THEN
+	RESPONSE #100
+		SetGlobal("Cure","LOCALS",2)
+		UseItem("Potn08",Myself)  // ????? ???????
+		Wait(1)
+		Polymorph(FIGHTER_MALE_HUMAN)
+END
+
+IF
+	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("Cure","LOCALS",2)
+	AreaCheck("NW2210")
+	See([PC])
+	Range(LastSeenBy(Myself),12)
+	StateCheck(Myself,STATE_NORMAL)
+	!StateCheck(LastSeenBy(Myself),CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+

@@ -1,0 +1,97 @@
+IF
+	See([PC])
+	Global("Fireball","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+		Wait(2)
+		ReallyForceSpell([PC],RED_FIREBALL)  // SPWI957.SPL (???????? ???)
+		SetGlobal("Fireball","LOCALS",1)
+END
+
+IF
+	Global("DeathFight","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],POWERWORD_STUN)  // SPWI959.SPL (????? ????: ???????????)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",1)
+END
+
+IF
+	Global("DeathFight","LOCALS",1)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),POWERWORD_KILL)  // SPWI960.SPL (????? ????: ??????)
+		SetGlobal("DeathFight","LOCALS",2)
+		Wait(2)
+END
+
+IF
+	Global("DeathFight","LOCALS",2)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+		Wait(2)
+		ForceSpell([PC],RED_FIREBALL)  // SPWI957.SPL (???????? ???)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		Wait(1)
+		SetGlobal("DeathFight","LOCALS",3)
+END
+
+IF
+	Global("DeathFight","LOCALS",3)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],POWERWORD_BLIND)  // SPWI958.SPL (????? ????: ??????????)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",4)
+END
+
+IF
+	Global("DeathFight","LOCALS",4)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],FEAR)  // SPWI956.SPL (??????: ?????)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",5)
+END
+
+IF
+	Global("DeathFight","LOCALS",5)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],PAIN)  // SPWI955.SPL (??????: ????)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",6)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+

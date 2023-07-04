@@ -1,0 +1,22 @@
+IF
+	!Range(Player1,10)
+	!Range(Player2,10)
+	!Range(Player3,10)
+	!Range(Player4,10)
+	!Range(Player5,10)
+	!Range(Player6,10)
+	Global("UsedDoor1","NW1100",1)  // ????
+THEN
+	RESPONSE #100
+		SetGlobal("UsedDoor1","NW1100",0)  // ????
+END
+
+IF
+	OR(2)
+		OpenState("Door1",TRUE)
+		Unlocked("Door1")
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

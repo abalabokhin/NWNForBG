@@ -1,0 +1,26 @@
+IF
+	Range([PC],15)
+	Global("Talked","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Talked","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	OR(7)
+		Global("FireDead","MYAREA",1)
+		Global("ColdDead","MYAREA",1)
+		Global("ElectricDead","MYAREA",1)
+		Global("AcidDead","MYAREA",1)
+		Global("SlashDead","MYAREA",1)
+		Global("PiercindDead","MYAREA",1)
+		Global("CrushingDead","MYAREA",1)
+THEN
+	RESPONSE #100
+		DestroyItem("Morag5")  // ?????? ??????????
+		ChangeAIScript("BPMAG20B",CLASS)
+		ChangeAIScript("WTASIGHT",DEFAULT)
+		ChangeAIScript("",OVERRIDE)
+END
+

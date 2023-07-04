@@ -1,0 +1,18 @@
+IF
+	PartyHasItem("DRAGEGG2")  // ???? ???????? ???????
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	OR(2)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		SpellCastOnMe([ANYONE],0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

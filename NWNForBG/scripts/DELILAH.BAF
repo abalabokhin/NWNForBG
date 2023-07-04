@@ -1,0 +1,58 @@
+IF
+	Global("Talk","LOCALS",0)
+	NumTimesTalkedTo(0)
+	See([PC])
+	Range(LastSeenBy,15)
+	Delay(2)
+THEN
+	RESPONSE #100
+		SetGlobal("Talk","LOCALS",1)
+		StartDialogueNoSet(LastTrigger)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	Global("Attack","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		ClearAllActions()
+		ApplySpellRES("DELILAH",Myself)  // No such index
+		DisplayStringHead(Myself,102682)  // ??????! ??????. ? ??????! ?????... ????????? ???. ?... ?? ???? ????????.
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Attack","LOCALS",1)
+		SetGlobal("Talk","LOCALS",2)
+		Wait(2)
+		RunAwayFrom(LastTrigger,24)
+		Wait(2)
+		MoveViewObject(Myself,FAST)
+		FaceObject(LastTrigger)
+		Wait(1)
+		DestroyItem("MINHP1")  // No such index
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		StartDialogueNoSet(LastTrigger)
+END
+
+IF
+	!See([GOODCUTOFF])
+	Global("DalilahTalk","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	Range(Player1,50)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	OR(2)
+		HitBy([PC],CRUSHING)
+		AttackedBy([PC],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	Global("Attack","LOCALS",2)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

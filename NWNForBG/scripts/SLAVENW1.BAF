@@ -1,0 +1,28 @@
+IF
+	Global("MyString","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("MyString","LOCALS",1)
+		DisplayStringHead(Myself,103723)  // ??????? ???? ????????. ????? ??????!
+END
+
+IF
+	HPPercentLT(Myself,40)
+	Global("Dialogue1","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("Dialogue1","LOCALS",1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		DestroyItem("MIN1HP")  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+

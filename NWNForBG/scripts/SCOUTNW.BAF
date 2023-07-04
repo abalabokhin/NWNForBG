@@ -1,0 +1,20 @@
+IF
+	See([PC])
+	Global("Alarm","MYAREA",0)
+	Global("Escape","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Alarm","MYAREA",1)
+		SetGlobal("Escape","LOCALS",1)
+		DisplayStringHead(Myself,103689)  // ?????????! ???????????!
+		EscapeAreaObject("Door1")
+END
+
+IF
+	Global("Alarm","MYAREA",1)
+	Global("Escape","LOCALS",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

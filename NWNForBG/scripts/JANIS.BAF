@@ -1,0 +1,40 @@
+IF
+	Global("DeadJanis","GLOBAL",1)
+	GlobalTimerExpired("Janis","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("DeadJanis","GLOBAL",2)
+		CreateVisualEffectObject("SPDEATH3",Myself)
+		PlaySound("DELOR04")
+		Wait(1)
+		Kill(Myself)
+END
+
+IF
+	Global("JanisHasRing","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("JanisHasRing","LOCALS",2)
+		SetGlobal("JanisQuest","GLOBAL",2)
+		DestroyItem("OtilukeR")  // ?????? ????????????? ????
+END
+
+IF
+	Global("JanisHasRing","LOCALS",2)
+	Delay(3)
+THEN
+	RESPONSE #100
+		SetGlobal("JanisHasRing","LOCALS",3)
+		StartDialogueNoSet(LastTalkedToBy(Myself))
+END
+
+IF
+	Global("EscapeJanis","LOCALS",0)
+	Global("RevatQuest","GLOBAL",3)
+	Delay(3)
+THEN
+	RESPONSE #100
+		SetGlobal("EscapeJanis","LOCALS",1)
+		StartDialogueNoSet(LastTalkedToBy(Myself))
+END
+

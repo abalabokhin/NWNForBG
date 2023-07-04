@@ -1,0 +1,24 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("MooseHastile","MYAREA",1)
+		Enemy()
+END
+
+IF
+	Global("MooseHastile","MYAREA",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

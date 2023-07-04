@@ -1,0 +1,121 @@
+IF
+	See([PC])
+	!GlobalTimerNotExpired("MyString2","LOCALS")
+	Global("ABCDE","LOCALS",0)
+	CombatCounter(0)
+	Allegiance(Myself,NEUTRAL)
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MyString2","LOCALS",THREE_ROUNDS)
+		DisplayStringHead(Myself,106542)  // ?????? ?? ???????!
+		PlaySound("HODD051")
+		SetGlobal("ABCDE","LOCALS",1)
+END
+
+IF
+	See([PC])
+	GlobalTimerExpired("MyString2","LOCALS")
+	Global("ABCDE","LOCALS",1)
+	CombatCounter(0)
+	Allegiance(Myself,NEUTRAL)
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MyString2","LOCALS",THREE_ROUNDS)
+		DisplayStringHead(Myself,106543)  // ?????? ???????????!
+		PlaySound("HODD052")
+		SetGlobal("ABCDE","LOCALS",2)
+END
+
+IF
+	See([PC])
+	GlobalTimerExpired("MyString2","LOCALS")
+	Global("ABCDE","LOCALS",2)
+	CombatCounter(0)
+	Allegiance(Myself,NEUTRAL)
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MyString2","LOCALS",THREE_ROUNDS)
+		DisplayStringHead(Myself,106544)  // ??? ??????????????? ?????? ? ??? ?????????! ??? ??????? ??????? ?? ???????!
+		PlaySound("HODD053")
+		SetGlobal("ABCDE","LOCALS",0)
+END
+
+IF
+	Dead("Nwdraco1")  // ??'???'??'???'?????'????
+	HasItem("Minhp1",Myself)  // No such index
+THEN
+	RESPONSE #100
+		DestroyItem("Minhp1")  // No such index
+END
+
+IF
+	See([0.0.0.0.PERSON_9])
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+	GlobalTimerNotExpired("MyString","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MyString","LOCALS",THREE_ROUNDS)
+		DisplayStringHead(Myself,106549)  // ? ?? ?????????-?? ????????!
+		PlaySound("HODD050")
+		AttackReevaluate(LastTrigger,30)
+END
+
+IF
+	See([0.0.0.0.PERSON_9])
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastTrigger,30)
+END
+
+IF
+	GlobalTimerExpired("MyDead","LOCALS")
+	HPPercentLT(Myself,10)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		Rest()
+END
+
+IF
+	!GlobalTimerNotExpired("MyDead","LOCALS")
+	HPPercentLT(Myself,10)
+THEN
+	RESPONSE #100
+		PlayDead(60)
+		SetGlobalTimer("MyDead","LOCALS",ONE_TURN)
+END
+
+IF
+	Heard([ANYONE],INCOMING_111)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+

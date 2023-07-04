@@ -1,0 +1,40 @@
+IF
+	Global("Run","LOCALS",1)
+	Delay(10)
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",0)
+		MoveToPointNoInterrupt([3036.1543])
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),150)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastAttackerOf(Myself),150)
+END
+
+IF
+	Global("Run","LOCALS",0)
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",1)
+		RandomWalk()
+END
+

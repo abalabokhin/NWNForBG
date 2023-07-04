@@ -1,0 +1,43 @@
+IF
+	OR(12)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+		SpellCastOnMe([PC],0)
+		SpellCastOnMe([FAMILIAR],0)
+		SpellCastOnMe([ALLY],0)
+		SpellCastOnMe([CONTROLLED],0)
+		SpellCastOnMe([CHARMED],0)
+	Global("AttackMyself","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AttackMyself","LOCALS",1)
+		ClearAllActions()
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	Global("BrazierDestroyed","MYAREA",3)
+	!Global("ArklemQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartDialogueNoSet(Player1)
+END
+

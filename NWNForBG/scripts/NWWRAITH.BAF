@@ -1,0 +1,9 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,ILLUSION_DEATH)  // SPIN835.SPL (No such index)
+		Wait(1)
+		DestroySelf()
+END
+

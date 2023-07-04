@@ -1,0 +1,56 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("RR#FEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	AreaCheck("NW1030")
+	Global("NWNChapter","GLOBAL",2)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	AttackedBy([PC],DEFAULT)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		CreateCreatureObjectDoor("KHELBEN",Myself,0,0,0)  // ?????? ???????
+		ActionOverride("WINSKI",ForceSpell(Player1,SAREVOK_STRIKE))  // SPWI979.SPL (????????? ????)
+		Wait(2)
+		Kill(Player1)
+		SetInterrupt(TRUE)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

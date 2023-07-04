@@ -1,0 +1,101 @@
+IF
+	OR(2)
+		GlobalGT("SpiritSaved","GLOBAL",0)
+		Dead("SpiritFo")  // ??? ????
+	Global("MyChange","LOCALS",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("MyChange","LOCALS",1)
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalGT("SpiritSaved","GLOBAL",0)
+		Dead("SpiritFo")  // ??? ????
+	Global("MyChange","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("MyChange","LOCALS",1)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		Continue()
+END
+
+IF
+	Range([GOODCUTOFF],7)
+	Allegiance(Myself,NEUTRAL)
+	!See([PC.0.0.DRUID])
+	!See([PC.0.0.RANGER])
+	!See([PC.0.0.FIGHTER_DRUID])
+	!See([PC.0.0.CLERIC_RANGER])
+	Global("ENDOFBG1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	!See([PC.0.0.DRUID])
+	!See([PC.0.0.RANGER])
+	!See([PC.0.0.FIGHTER_DRUID])
+	!See([PC.0.0.CLERIC_RANGER])
+	Global("ENDOFBG1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Range([GOODCUTOFF],7)
+	Allegiance(Myself,NEUTRAL)
+	!See([PC.0.0.DRUID])
+	!See([PC.0.0.RANGER])
+	!See([PC.0.0.FIGHTER_DRUID])
+	!See([PC.0.0.CLERIC_RANGER])
+	!See([PC.0.0.DRUID])
+	!See([PC.0.0.RANGER])
+	!See([PC.0.0.FIGHTER_DRUID])
+	!See([PC.0.0.CLERIC_RANGER])
+	Global("ENDOFBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	!See([PC.0.0.DRUID])
+	!See([PC.0.0.RANGER])
+	!See([PC.0.0.FIGHTER_DRUID])
+	!See([PC.0.0.CLERIC_RANGER])
+	!See([PC.0.0.DRUID])
+	!See([PC.0.0.RANGER])
+	!See([PC.0.0.FIGHTER_DRUID])
+	!See([PC.0.0.CLERIC_RANGER])
+	Global("ENDOFBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	HitBy([ANYONE],FIRE)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		RunAwayFrom(LastAttackerOf(Myself),200)
+		SetInterrupt(TRUE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+

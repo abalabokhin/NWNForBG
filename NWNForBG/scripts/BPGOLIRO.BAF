@@ -1,0 +1,47 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		Shout(DEAD_MEAT)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	ActionListEmpty()
+	Range(NearestEnemyOf(Myself),15)
+	Delay(6)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,GOLEM_GASCLOUD)  // SPIN979.SPL (?????? ????)
+END
+
+IF
+	ActionListEmpty()
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		SelectWeaponAbility(SLOT_WEAPON0,1)
+		SelectWeaponAbility(SLOT_WEAPON1,1)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	ActionListEmpty()
+	Range(NearestEnemyOf(Myself),5)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SelectWeaponAbility(SLOT_WEAPON0,0)
+		SelectWeaponAbility(SLOT_WEAPON1,0)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

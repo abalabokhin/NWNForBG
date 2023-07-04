@@ -1,0 +1,22 @@
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SpellNoDec(NearestEnemyOf(Myself),CLERIC_ENERGY_DRAIN)  // SPPR714.SPL (??????, ????)
+	RESPONSE #100
+		SpellNoDec(NearestEnemyOf(Myself),CLERIC_SYMBOL_STUN)  // SPPR718.SPL (??????: ???????????)
+	RESPONSE #100
+		SpellNoDec(NearestEnemyOf(Myself),CLERIC_SOL_SEARING_ORB)  // SPPR614.SPL (?????????? ??? ????)
+	RESPONSE #100
+		SpellNoDec(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+

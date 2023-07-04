@@ -1,0 +1,152 @@
+IF
+	Allegiance(Myself,ENEMY)
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+	HPPercentLT(Myself,50)
+	See([PC])
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPWI2E0",Myself)  // No such index
+END
+
+IF
+	OR(5)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+THEN
+	RESPONSE #100
+		Enemy()
+		Shout(ALERT_100)
+END
+
+IF
+	HitBy([GOODCUTOFF],CRUSHING)
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+THEN
+	RESPONSE #100
+		Shout(ALERT_100)
+		Continue()
+END
+
+IF
+	OR(5)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+	Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+THEN
+	RESPONSE #100
+		Shout(ALERT_100)
+		Continue()
+END
+
+IF
+	Heard([ANYONE],ALERT_100)
+	Allegiance(Myself,NEUTRAL)
+	!Class(Myself,INNOCENT)
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+THEN
+	RESPONSE #100
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Heard([ANYONE],ALERT_100)
+	Allegiance(Myself,NEUTRAL)
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],ALERT_100)
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+	Name("Barams",Myself)  // ?????? (?????? ???????)
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+IF
+	OR(5)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	Name("Kurts",Myself)  // ?????? (???????? ????)
+THEN
+	RESPONSE #100
+		Enemy()
+		Shout(MDK_SHOUT_122)
+END
+
+IF
+	HitBy([GOODCUTOFF],CRUSHING)
+	Name("Kurts",Myself)  // ?????? (???????? ????)
+THEN
+	RESPONSE #100
+		Shout(MDK_SHOUT_122)
+		Continue()
+END
+
+IF
+	OR(5)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+	Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+	Name("Kurts",Myself)  // ?????? (???????? ????)
+THEN
+	RESPONSE #100
+		Shout(MDK_SHOUT_122)
+		Continue()
+END
+
+IF
+	Heard([ANYONE],MDK_SHOUT_122)
+	Allegiance(Myself,NEUTRAL)
+	!Class(Myself,INNOCENT)
+	Name("Kurts",Myself)  // ?????? (???????? ????)
+THEN
+	RESPONSE #100
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Heard([ANYONE],MDK_SHOUT_122)
+	Allegiance(Myself,NEUTRAL)
+	Name("Kurts",Myself)  // ?????? (???????? ????)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],MDK_SHOUT_122)
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+	Name("Kurts",Myself)  // ?????? (???????? ????)
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+

@@ -1,0 +1,79 @@
+IF
+	!GlobalTimerNotExpired("MyDead","LOCALS")
+	HPPercentLT(Myself,10)
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		PlayDead(120)
+		SetGlobalTimer("MyDead","LOCALS",TWO_TURNS)
+END
+
+IF
+	GlobalTimerExpired("MyDead","LOCALS")
+	HPPercentLT(Myself,10)
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		Rest()
+END
+
+IF
+	Dead("Nwdraco1")  // ??'???'??'???'?????'????
+	HasItem("Minhp1",Myself)  // No such index
+THEN
+	RESPONSE #100
+		DestroyItem("Minhp1")  // No such index
+END
+
+IF
+	See([0.0.0.0.PERSON_9])
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+	GlobalTimerNotExpired("MyString","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("MyString","LOCALS",THREE_ROUNDS)
+		DisplayStringHead(Myself,106549)  // ? ?? ?????????-?? ????????!
+		PlaySound("HODD050")
+		AttackReevaluate(LastTrigger,30)
+END
+
+IF
+	See([0.0.0.0.PERSON_9])
+	!Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastTrigger,30)
+END
+
+IF
+	Heard([ANYONE],INCOMING_111)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	AttackedBy([PC],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+	Dead("Nwdraco1")  // ??'???'??'???'?????'????
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+

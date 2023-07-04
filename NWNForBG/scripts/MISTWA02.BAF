@@ -1,0 +1,27 @@
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerExpired("HorCon","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("HorCon","LOCALS",FIVE_ROUNDS)
+		ForceSpell(Myself,MIST_HORROR)  // SPIN675.SPL (?????????? ????)
+END
+
+IF
+	HPLT(Myself,11)
+	Global("LastFog","LOCALS",0)
+	Range(NearestEnemyOf(Myself),25)
+THEN
+	RESPONSE #100
+		SetGlobal("LastFog","LOCALS",1)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_FOG)  // SPWI614.SPL (????? ??????)
+END
+
+IF
+	!See([GOODCUTOFF])
+	Range(Player1,40)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+

@@ -1,0 +1,80 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("RR#FEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+	Global("Movie","LOCALS",0)
+	!GlobalTimerNotExpired("MyTimer","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToPoint([4434.3285])
+		SetGlobal("Movie","LOCALS",1)
+		SetGlobalTimer("MyTimer","LOCALS",4)
+		Face(6)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+	Global("Movie","LOCALS",1)
+	!GlobalTimerNotExpired("MyTimer","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToPoint([3579.2955])
+		SetGlobal("Movie","LOCALS",2)
+		SetGlobalTimer("MyTimer","LOCALS",4)
+		Face(10)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+	Global("Movie","LOCALS",2)
+	!GlobalTimerNotExpired("MyTimer","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToPoint([4095.2663])
+		SetGlobal("Movie","LOCALS",3)
+		SetGlobalTimer("MyTimer","LOCALS",4)
+		Face(2)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+	Global("Movie","LOCALS",3)
+	!GlobalTimerNotExpired("MyTimer","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToPoint([3720.2850])
+		SetGlobal("Movie","LOCALS",0)
+		SetGlobalTimer("MyTimer","LOCALS",4)
+		Face(14)
+END
+

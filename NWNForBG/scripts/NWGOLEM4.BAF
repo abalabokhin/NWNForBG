@@ -1,0 +1,27 @@
+IF
+	Dead("MageG4")  // ?????? ??????
+	HasItem("NWGOLEM3",Myself)  // ??????
+THEN
+	RESPONSE #100
+		DestroyItem("NWGOLEM3")  // ??????
+END
+
+IF
+	!Range("GolemP",100)
+	!See([PC])
+THEN
+	RESPONSE #100
+		ClearActions(Myself)
+		MoveToPointNoInterrupt([1293.821])
+		Face(12)
+END
+
+IF
+	Range("GolemP",100)
+	CombatCounter(0)
+	!See([PC])
+THEN
+	RESPONSE #100
+		RandomWalk()
+END
+

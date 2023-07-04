@@ -1,0 +1,363 @@
+IF
+	HaveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		RemoveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		Wait(2)
+END
+
+IF
+	HaveSpell(WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+	OR(6)
+		See(Player6)
+		See(Player5)
+		See(Player4)
+		See(Player3)
+		See(Player2)
+		See(Player1)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+		RemoveSpell(WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+		Wait(2)
+END
+
+IF
+	HaveSpell(WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+		RemoveSpell(WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+		Wait(2)
+END
+
+IF
+	HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (?????????)
+	OR(3)
+		See([PC])
+		!StateCheck(LastSeenBy(Myself),STATE_HASTED)
+		Global("HASTED_HARPY","LOCALS",0)
+	RandomNum(3,1)
+THEN
+	RESPONSE #100
+		SetGlobal("HASTED_HARPY","LOCALS",1)
+		ForceSpell(LastSeenBy(Myself),WIZARD_HASTE)  // SPWI305.SPL (?????????)
+		RemoveSpell(WIZARD_HASTE)  // SPWI305.SPL (?????????)
+		Wait(2)
+END
+
+IF
+	!Global("CASTING_FAILED","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CASTING_FAILED","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+		Continue()
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",2)
+		Continue()
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",3)
+		Continue()
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",4)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+	!HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+	OR(6)
+		See(Player6)
+		See(Player5)
+		See(Player4)
+		See(Player3)
+		See(Player2)
+		See(Player1)
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",2)
+	!HaveSpell(WZART_BELTYNS_BURNING_BLOOD)  // SPWI429.SPL (??????? ????? ???????)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",2)
+	OR(6)
+		See(Player6)
+		See(Player5)
+		See(Player4)
+		See(Player3)
+		See(Player2)
+		See(Player1)
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WZART_BELTYNS_BURNING_BLOOD)  // SPWI429.SPL (??????? ????? ???????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",3)
+	!HaveSpell(WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",3)
+	OR(6)
+		See(Player6)
+		See(Player5)
+		See(Player4)
+		See(Player3)
+		See(Player2)
+		See(Player1)
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",4)
+	!HaveSpell(WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+THEN
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",4)
+	OR(6)
+		See(Player6)
+		See(Player5)
+		See(Player4)
+		See(Player3)
+		See(Player2)
+		See(Player1)
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+	Global("CASTING_FAILED","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_4","LOCALS",5)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_4","LOCALS",5)
+	OR(6)
+		See(Player6)
+		See(Player5)
+		See(Player4)
+		See(Player3)
+		See(Player2)
+		See(Player1)
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Continue()
+END
+
+IF
+	!Global("CASTING_FAILED","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CASTING_FAILED","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+		Continue()
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",2)
+		Continue()
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",3)
+		Continue()
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",4)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+	!HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+	See(NearestEnemyOf(Myself))
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",2)
+	!HaveSpell(WZART_BELTYNS_BURNING_BLOOD)  // SPWI429.SPL (??????? ????? ???????)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",2)
+	See(NearestEnemyOf(Myself))
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WZART_BELTYNS_BURNING_BLOOD)  // SPWI429.SPL (??????? ????? ???????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",3)
+	!HaveSpell(WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+THEN
+	RESPONSE #100
+		IncrementGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",3)
+	See(NearestEnemyOf(Myself))
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",4)
+	!HaveSpell(WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+THEN
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",1)
+		IncrementGlobal("CASTING_FAILED","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",4)
+	See(NearestEnemyOf(Myself))
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+		Wait(2)
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+	Global("CASTING_FAILED","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("NEQHRPAH_CASTING_SET_5","LOCALS",5)
+		Continue()
+END
+
+IF
+	Global("NEQHRPAH_CASTING_SET_5","LOCALS",5)
+	See(NearestEnemyOf(Myself))
+	GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("SPELL_SET_2","LOCALS",1)
+		Continue()
+END
+
+IF
+	HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (?????????)
+	See([PC])
+	!StateCheck(LastSeenBy(Myself),STATE_HASTED)
+	Global("HASTED_HARPY","LOCALS",1)
+	RandomNum(3,1)
+THEN
+	RESPONSE #100
+		SetGlobal("HASTED_HARPY","LOCALS",2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_HASTE)  // SPWI305.SPL (?????????)
+		RemoveSpell(WIZARD_HASTE)  // SPWI305.SPL (?????????)
+		Wait(2)
+END
+

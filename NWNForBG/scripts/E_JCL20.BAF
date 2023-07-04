@@ -1,0 +1,227 @@
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	Global("Preparation","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ApplySpell(Myself,CLERIC_DEATH_WARD)  // SPPR409.SPL (?????????? ?? ??????)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+		SetGlobal("Preparation","LOCALS",1)
+END
+
+IF
+	!GlobalTimerNotExpired("TrueSeeing","LOCALS")
+	Detect(NearestEnemyOf(Myself))
+	OR(12)
+		StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("TrueSeeing","LOCALS",ONE_TURN)
+		SpellNoDec(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+	RandomNum(2,1)
+	Global("BladeBarrier","LOCALS",0)
+THEN
+	RESPONSE #100
+		Spell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+		SetGlobal("BladeBarrier","LOCALS",1)
+END
+
+IF
+	See([GOODCUTOFF.0.SKELETON.0.0.SUMMONED])
+	HaveSpell(CLERIC_SUNRAY)  // SPPR707.SPL (??? ??????)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_SUNRAY)  // SPPR707.SPL (??? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	HaveSpell(CLERIC_SYMBOL_FEAR)  // SPPR706.SPL (??????: ?????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_SYMBOL_FEAR)  // SPPR706.SPL (??????: ?????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_FREE_ACTION)  // SPPR403.SPL (??????? ????????)
+	See(NearestMyGroupOfType)
+	StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_FREE_ACTION)  // SPPR403.SPL (??????? ????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	HaveSpell(CLERIC_MASS_CURE)  // SPPR514.SPL (???????? ???????)
+	HPPercentLT(Myself,80)
+	OR(3)
+		HPPercentLT(LastSeenBy(Myself),80)
+		HPPercentLT(SecondNearestMyGroupOfType,80)
+		HPPercentLT(ThirdNearestMyGroupOfType,80)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_MASS_CURE)  // SPPR514.SPL (???????? ???????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	HaveSpell(CLERIC_FINGER_OF_DEATH)  // SPPR708.SPL (????? ??????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_FINGER_OF_DEATH)  // SPPR708.SPL (????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	HaveSpell(CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	HPPercentLT(LastSeenBy(Myself),10)
+	HaveSpell(CLERIC_HEAL)  // SPPR607.SPL (?????????)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_HEAL)  // SPPR607.SPL (?????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),4)
+	HPPercentLT(Myself,10)
+	HaveSpell(CLERIC_HEAL)  // SPPR607.SPL (?????????)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_HEAL)  // SPPR607.SPL (?????????)
+END
+
+IF
+	Heard([ANYONE],HP_LT_20_ASSIST)
+	HaveSpell(CLERIC_HEAL)  // SPPR607.SPL (?????????)
+THEN
+	RESPONSE #100
+		Spell(LastHeardBy(Myself),CLERIC_HEAL)  // SPPR607.SPL (?????????)
+END
+
+IF
+	Heard([ANYONE],HP_LT_20_ASSIST)
+	HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+THEN
+	RESPONSE #100
+		Spell(LastHeardBy(Myself),CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+END
+
+IF
+	Heard([ANYONE],HP_LT_20_ASSIST)
+	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (??????? ????????? ???)
+THEN
+	RESPONSE #100
+		Spell(LastHeardBy(Myself),CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (??????? ????????? ???)
+END
+
+IF
+	Heard([ANYONE],HP_LT_20_ASSIST)
+	HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (??????? ??????? ???)
+THEN
+	RESPONSE #100
+		Spell(LastHeardBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (??????? ??????? ???)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	HaveSpell(CLERIC_AERIAL_SERVANT)  // SPPR601.SPL (????????? ?????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_AERIAL_SERVANT)  // SPPR601.SPL (????????? ?????)
+END
+
+IF
+	HaveSpell(CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (???????? ????????)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (???????? ????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (?????? ??????)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (?????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+

@@ -1,0 +1,30 @@
+IF
+	Global("spiderqueen","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],WIZARD_WEB)  // SPWI215.SPL (???????)
+		ReallyForceSpell(Myself,SPIDER_SUMMON)  // SPWI986.SPL (No such index)
+		CreateCreatureObject("NWDEMSPI",Myself,0,0,0)  // ???????????? ?????????? ????
+		SetGlobal("spiderqueen","LOCALS",1)
+		SetGlobalTimer("Summon","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,RED_FIREBALL)  // SPWI957.SPL (???????? ???)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("Summon","LOCALS")
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)  // SPWI986.SPL (No such index)
+		CreateCreatureObject("NWDEMSPI",Myself,0,0,0)  // ???????????? ?????????? ????
+		SetGlobalTimer("Summon","LOCALS",TWO_ROUNDS)
+END
+

@@ -1,0 +1,10 @@
+IF
+	See([0.0.0.INNOCENT])
+	!StateCheck(LastSeenBy(Myself),STATE_DEAD)
+	See([PC])
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate([0.0.0.INNOCENT],12)
+END
+

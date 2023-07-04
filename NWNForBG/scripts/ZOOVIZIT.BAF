@@ -1,0 +1,188 @@
+IF
+	Die()
+	Class(Myself,INNOCENT)
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,FIGHTER)
+END
+
+IF
+	Global("PANIC","LOCALS",1)
+	GlobalTimerExpired("MyExit","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("PANIC","LOCALS",2)
+		DisplayStringHead(Myself,17688)  // ???? ?????? ??????!
+		EscapeAreaObject("To1400")
+END
+
+IF
+	Global("NW1405_DOOR_STATE","MYAREA",1)
+	OpenState("Door1",TRUE)
+	See([PC])
+	Global("PANIC","LOCALS",0)
+	Name("Billiam",Myself)  // ???????
+THEN
+	RESPONSE #100
+		SetGlobal("PANIC","LOCALS",1)
+		DisplayStringHead(Myself,103868)  // Aaa! ??????????! ?????? ???????!
+		SetGlobalTimer("MyExit","LOCALS",TWO_TURNS)
+		RandomWalkContinuous()
+END
+
+IF
+	Global("NW1405_DOOR_STATE","MYAREA",1)
+	OpenState("Door1",TRUE)
+	See([PC])
+	Global("PANIC","LOCALS",0)
+	Name("Hubert",Myself)  // ??????
+THEN
+	RESPONSE #100
+		SetGlobal("PANIC","LOCALS",1)
+		DisplayStringHead(Myself,103869)  // ?????! ????? ??? ?????? ??????!
+		SetGlobalTimer("MyExit","LOCALS",TWO_TURNS)
+		RandomWalkContinuous()
+END
+
+IF
+	Global("NW1405_DOOR_STATE","MYAREA",1)
+	OpenState("Door1",TRUE)
+	See([PC])
+	Global("PANIC","LOCALS",0)
+	!Name("Hubert",Myself)  // ??????
+	!Name("Billiam",Myself)  // ???????
+THEN
+	RESPONSE #100
+		SetGlobal("PANIC","LOCALS",1)
+		SetGlobalTimer("MyExit","LOCALS",TWO_TURNS)
+		RandomWalkContinuous()
+END
+
+IF
+	!StateCheck(Myself,STATE_CHARMED)
+	See([0.0.DEMONIC.0.0.SUMMONED_DEMON])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+THEN
+	RESPONSE #100
+		PlaySound("PEASM209")
+		RandomWalkContinuous()
+END
+
+IF
+	!StateCheck(Myself,STATE_CHARMED)
+	See([0.0.DEMONIC.0.0.SUMMONED_DEMON])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+THEN
+	RESPONSE #100
+		PlaySound("PEASF209")
+		RandomWalkContinuous()
+END
+
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("RR#FEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #10
+		PlaySound("BEDWIN43")
+		RandomWalkContinuous()
+	RESPONSE #90
+		RandomWalkContinuous()
+END
+
+IF
+	GlobalLT("ENDOFBG1","GLOBAL",2)
+	See([ENEMY])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #10
+		PlaySound("FCHIL05")
+		RandomWalkContinuous()
+	RESPONSE #90
+		RandomWalkContinuous()
+END
+
+IF
+	Detect([PC])
+	See([ENEMY])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #50
+		PlaySound("BDHIGG03")
+		RandomWalkContinuous()
+	RESPONSE #50
+		RandomWalkContinuous()
+END
+
+IF
+	Detect([PC])
+	See([ENEMY])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #50
+		PlaySound("PEASF209")
+		RandomWalkContinuous()
+	RESPONSE #50
+		RandomWalkContinuous()
+END
+
+IF
+	!Detect([PC])
+	See([ENEMY])
+	Gender(Myself,MALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	!Detect([PC])
+	See([ENEMY])
+	Gender(Myself,FEMALE)
+	General(Myself,HUMANOID)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+

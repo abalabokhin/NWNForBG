@@ -1,0 +1,35 @@
+IF
+	GlobalGT("JaregQuest","GLOBAL",4)
+	Global("Charwood_Is_Saved","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	Die()
+	!Global("JaregQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("CharwoodCreatute","GLOBAL",1)
+		DestroySelf()
+END
+
+IF
+	Global("MyEnd","LOCALS",0)
+	Global("JaregQuest","GLOBAL",5)
+	Global("Charwood_Is_Cursed","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,102611)  // ???????????????!!!!!!!!!!!!!
+		CreateVisualEffectObject("SPDEATH3",Myself)
+		SetGlobal("MyEnd","LOCALS",1)
+END
+
+IF
+	Global("MyEnd","LOCALS",1)
+THEN
+	RESPONSE #100
+		Kill(Myself)
+END
+

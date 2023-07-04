@@ -1,0 +1,9 @@
+IF
+	Global("MyString","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("MyString","LOCALS",1)
+		DisplayStringHead(Myself,103725)  // ??????? ?? ???????!
+END
+

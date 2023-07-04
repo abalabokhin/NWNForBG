@@ -1,0 +1,30 @@
+IF
+	Global("Run","LOCALS",1)
+	Delay(10)
+	AreaCheck("NW2608")
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",0)
+		MoveToPointNoInterrupt([795.1046])
+		Face(6)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastAttackerOf(Myself),150)
+		SetGlobal("Run","LOCALS",1)
+END
+
+IF
+	Global("Run","LOCALS",0)
+	ActionListEmpty()
+	Delay(12)
+	AreaCheck("NW2608")
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",1)
+		RandomWalk()
+END
+

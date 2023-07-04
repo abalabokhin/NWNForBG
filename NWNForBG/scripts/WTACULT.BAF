@@ -1,0 +1,489 @@
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo1",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo1",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo2",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo2",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo3",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo3",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo4",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo4",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo5",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo5",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo6",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo6",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo7",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo7",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo8",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo8",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo9",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo9",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo10",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo10",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo11",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo11",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo12",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo12",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo1",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo1",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo2",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo2",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo3",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo3",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo4",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo4",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo5",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo5",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo6",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo6",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo7",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo7",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo8",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo8",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo9",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo9",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo10",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo10",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo11",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo11",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",1)
+	HasItem("CultMo12",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo12",Myself)  // No such index
+		SetGlobalTimer("Summon2","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo1",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo1",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo2",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo2",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo3",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo3",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo4",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo4",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo5",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo5",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo6",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo6",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo7",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo7",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo8",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo8",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo9",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo9",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo10",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo10",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo11",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo11",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Summon2","LOCALS")
+	Global("HostileBeastCult","GLOBAL",1)
+	Global("TheSummons","LOCALS",0)
+	HasItem("CultMo12",Myself)  // No such index
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		UseItem("CultMo12",Myself)  // No such index
+		SetGlobalTimer("Summon","LOCALS",ONE_DAY)
+		SetGlobal("TheSummons","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!Global("HostileBeastCult","GLOBAL",1)
+	OR(5)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+THEN
+	RESPONSE #100
+		SetGlobal("HostileBeastCult","GLOBAL",1)
+END
+
+IF
+	Global("HostileBeastCult","GLOBAL",1)
+	OR(5)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+

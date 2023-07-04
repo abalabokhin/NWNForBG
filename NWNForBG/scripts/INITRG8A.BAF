@@ -1,0 +1,49 @@
+IF
+	Range([PC],8)
+	NumTimesTalkedTo(0)
+	See(Player1)
+	Global("NWNChapter","GLOBAL",0)
+	OR(2)
+		Allegiance(Myself,NEUTRAL)
+		Allegiance(Myself,GOODBUTBLUE)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	Die()
+	Global("DeadActor","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DeadActor","MYAREA",1)
+END
+
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("RR#FEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+

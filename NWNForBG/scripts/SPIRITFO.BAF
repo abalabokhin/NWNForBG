@@ -1,0 +1,20 @@
+IF
+	HPPercentLT(Myself,20)
+	Global("Dialog","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("Dialog","LOCALS",1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		DestroyItem("MINHP1")  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+

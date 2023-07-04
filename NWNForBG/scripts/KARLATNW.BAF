@@ -1,0 +1,20 @@
+IF
+	Global("Run","LOCALS",1)
+	Delay(10)
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",0)
+		MoveToPointNoInterrupt([2444.738])
+		Face(8)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,102956)  // ??????? ? ??????, ????????? ??????!
+		ReallyForceSpell(LastTrigger,WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		RunAwayFrom(LastAttackerOf(Myself),150)
+		SetGlobal("Run","LOCALS",1)
+END
+

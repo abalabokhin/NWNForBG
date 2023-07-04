@@ -1,0 +1,590 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		Shout(ALERT)
+END
+
+IF
+	Global("BPCHARM","LOCALS",1)
+	!StateCheck(Myself,STATE_CHARMED)
+THEN
+	RESPONSE #100
+		SetGlobal("BPCHARM","LOCALS",0)
+		ClearActions(Myself)
+		Continue()
+END
+
+IF
+	OR(2)
+		Heard([NEUTRAL],ALERT)
+		Heard([EVILCUTOFF],ALERT)
+	Allegiance(Myself,NEUTRAL)
+	!Specifics(Myself,PERSON_4)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+	!Allegiance(Myself,PC)
+THEN
+	RESPONSE #100
+		Enemy()
+		Shout(ALERT)
+END
+
+IF
+	HitBy([GOODCUTOFF],CRUSHING)
+	!Allegiance(Myself,GOODCUTOFF)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Shout(ALERT)
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	Heard([EVILCUTOFF],ALERT)
+	!See([GOODCUTOFF])
+	!TargetUnreachable(LastHeardBy(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	OR(2)
+		!Allegiance(Myself,EVILCUTOFF)
+		!Detect([GOODCUTOFF])
+THEN
+	RESPONSE #100
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("SHOUT","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SHOUT","LOCALS",1)
+		Shout(ALERT)
+END
+
+IF
+	TargetUnreachable(LastSeenBy(Myself))
+	Delay(6)
+THEN
+	RESPONSE #100
+		ClearActions(Myself)
+END
+
+IF
+	Range(NearestEnemyOf(Myself),2)
+	OR(2)
+		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY7)
+		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY11)
+THEN
+	RESPONSE #80
+		RunAwayFrom(NearestEnemyOf(Myself),4)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	General(Myself,UNDEAD)
+	OR(2)
+		TurnedBy([GOODCUTOFF.0.0.CLERIC_ALL])
+		TurnedBy([GOODCUTOFF.0.0.PALADIN_ALL])
+THEN
+	RESPONSE #100
+END
+
+IF
+	HasItem("potn52",Myself)  // ????? ??????????? ???????
+	!GlobalTimerNotExpired("POT","LOCALS")
+	HPPercentLT(Myself,70)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+		SetGlobalTimer("POT","LOCALS",ONE_ROUND)
+		UseItem("potn52",Myself)  // ????? ??????????? ???????
+END
+
+IF
+	HasItem("POTN08",Myself)  // ????? ???????
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	HPPercentLT(Myself,85)
+	RandomNumLT(103,48)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		UseItem("POTN08",Myself)  // ????? ???????
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(Myself,35)
+	CheckStatGT(Myself,7,INT)
+	OR(3)
+		General(Myself,HUMANOID)
+		General(Myself,GIANTHUMANOID)
+		CheckStatGT(Myself,12,INT)
+	!HasItem("POTN52",Myself)  // ????? ??????????? ???????
+	!GlobalTimerNotExpired("BPW","LOCALS")
+	See([EVILCUTOFF])
+THEN
+	RESPONSE #80
+		SetGlobalTimer("BPW","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,16252)  // ??, ??? ????? ???????, ? ??? ????? ??????.
+		Shout(HEALME)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	HitBy([ANYONE],POISON)
+	CheckStatGT(Myself,7,INT)
+	OR(3)
+		General(Myself,HUMANOID)
+		General(Myself,GIANTHUMANOID)
+		CheckStatGT(Myself,12,INT)
+	!StateCheck(Myself,STATE_POISONED)
+	!HasItem("DAGG16",LastAttackerOf(Myself))  // ??????????? ??????????? ??????
+	!HasItem("SPER10",LastAttackerOf(Myself))  // ????? ???????? +4
+	!HasItem("HALB05",LastAttackerOf(Myself))  // ??????? ??????? +4
+	!HasItem("ETTERC2",LastAttackerOf(Myself))  // ?????
+	!HasItem("Wyvern2",LastAttackerOf(Myself))  // ?????
+	!Kit(LastAttackerOf(Myself),ASSASIN)
+	!HasItem("DAGG16",LastHitter(Myself))  // ??????????? ??????????? ??????
+	!HasItem("SPER10",LastHitter(Myself))  // ????? ???????? +4
+	!HasItem("ETTERC2",LastHitter(Myself))  // ?????
+	!HasItem("Wyvern2",LastHitter(Myself))  // ?????
+	!Kit(LastHitter(Myself),ASSASIN)
+THEN
+	RESPONSE #100
+		Shout(HEALME_83)
+		RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+
+IF
+	ActionListEmpty()
+	StateCheck(Myself,STATE_POISONED)
+	CheckStatGT(Myself,7,INT)
+	OR(3)
+		General(Myself,HUMANOID)
+		General(Myself,GIANTHUMANOID)
+		CheckStatGT(Myself,12,INT)
+	!GlobalTimerNotExpired("POIS","LOCALS")
+	See([EVILCUTOFF])
+	!HasItem("POTN17",Myself)  // ??????? ????????
+	!HasItem("POTN20",Myself)  // ???????????
+THEN
+	RESPONSE #100
+		Shout(HEALME_83)
+		DisplayStringHead(Myself,103002)  // ???????, ???? ????????!
+		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
+END
+
+IF
+	ActionListEmpty()
+	HasItem("mage01",Myself)  // ?????? ???????????
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	RandomNumLT(182,112)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+		UseItem("mage01",Myself)  // ?????? ???????????
+END
+
+IF
+	ActionListEmpty()
+	HasItem("potn10",Myself)  // ????? ???????????
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	RandomNumLT(102,62)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+		UseItem("potn10",Myself)  // ????? ???????????
+END
+
+IF
+	ActionListEmpty()
+	HasItem("potn14",Myself)  // ????? ????????
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	!StateCheck(Myself,STATE_HASTED)
+	RandomNumGT(114,68)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+		UseItem("potn14",Myself)  // ????? ????????
+END
+
+IF
+	ActionListEmpty()
+	HasItem("POTN36",Myself)  // ????? ??????????? ?????????
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Class(Myself,THIEF_ALL)
+	RandomNumLT(14,6)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		UseItem("POTN36",Myself)  // ????? ??????????? ?????????
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+END
+
+IF
+	ActionListEmpty()
+	HitBy([GOODCUTOFF],CRUSHING)
+	CheckStatGT(Myself,7,INT)
+	OR(3)
+		General(Myself,HUMANOID)
+		General(Myself,GIANTHUMANOID)
+		CheckStatGT(Myself,12,INT)
+	!GlobalTimerNotExpired("RANG","LOCALS")
+	!StateCheck(Myself,STATE_POISONED)
+	OR(2)
+		See(LastAttackerOf(Myself))
+		See(LastHitter(Myself))
+	!Range(LastSeenBy(Myself),7)
+	!TargetUnreachable(LastSeenBy(Myself))
+	!InWeaponRange(LastSeenBy(Myself))
+	HPGT(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #10
+		DisplayStringHead(Myself,102401)  // ?????! ???????? ??? ????????? ????...
+		SetGlobalTimer("RANG","LOCALS",ONE_ROUND)
+	RESPONSE #20
+		DisplayStringHead(Myself,102402)  // ??????? ??????? ? ???????? ??????!
+		SetGlobalTimer("RANG","LOCALS",ONE_ROUND)
+	RESPONSE #30
+		DisplayStringHead(Myself,102403)  // ????! ????????????? ???? ??????!
+		SetGlobalTimer("RANG","LOCALS",ONE_ROUND)
+	RESPONSE #40
+		DisplayStringHead(Myself,102404)  // ???????? ???????! ????? ????, ??? ?? ??????? ???? ??? ??????????? ???...
+		SetGlobalTimer("RANG","LOCALS",ONE_ROUND)
+END
+
+IF
+	ActionListEmpty()
+	NumItemsGT("POTN55",Myself,1)  // ????? ????????????? ???????
+	OR(3)
+		Heard(ThirdNearest([EVILCUTOFF]),HEALME)
+		Heard(SecondNearest([EVILCUTOFF]),HEALME)
+		Heard([EVILCUTOFF],HEALME)
+	Range(LastHeardBy(Myself),10)
+	!GlobalTimerNotExpired("GAVE","LOCALS")
+	CheckStatGT(Myself,7,INT)
+	HPGT(LastHeardBy(Myself),0)
+	HPPercentGT(Myself,75)
+	!Range([EVILCUTOFF.0.0.CLERIC_ALL],10)
+	!NumItemsGT("POTN55",LastHeardBy(Myself),0)  // ????? ????????????? ???????
+	!NumItemsGT("POTN52",LastHeardBy(Myself),0)  // ????? ??????????? ???????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("GAVE","LOCALS",TWO_ROUNDS)
+		DisplayStringHead(Myself,72809)  // ???! ????!
+		GiveItem("POTN55",LastHeardBy(Myself))  // ????? ????????????? ???????
+		SmallWait(2)
+		ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,18526))  // ?????.
+END
+
+IF
+	ActionListEmpty()
+	NumItemsGT("POTN52",Myself,1)  // ????? ??????????? ???????
+	OR(3)
+		Heard(ThirdNearest([EVILCUTOFF]),HEALME)
+		Heard(SecondNearest([EVILCUTOFF]),HEALME)
+		Heard([EVILCUTOFF],HEALME)
+	!GlobalTimerNotExpired("GAVE","LOCALS")
+	CheckStatGT(Myself,7,INT)
+	HPGT(LastHeardBy(Myself),0)
+	HPPercentGT(Myself,75)
+	Range(LastHeardBy(Myself),10)
+	!Range([EVILCUTOFF.0.0.CLERIC_ALL],10)
+	!NumItemsGT("POTN55",LastHeardBy(Myself),0)  // ????? ????????????? ???????
+	!NumItemsGT("POTN52",LastHeardBy(Myself),0)  // ????? ??????????? ???????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("GAVE","LOCALS",TWO_ROUNDS)
+		DisplayStringHead(Myself,72809)  // ???! ????!
+		GiveItem("POTN52",LastHeardBy(Myself))  // ????? ??????????? ???????
+		SmallWait(2)
+		ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,18526))  // ?????.
+END
+
+IF
+	ActionListEmpty()
+	HasItem("POTN17",Myself)  // ??????? ????????
+	OR(3)
+		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
+		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
+		Heard([EVILCUTOFF],HEALME_83)
+	Range(LastHeardBy(Myself),10)
+	!GlobalTimerNotExpired("GAVE","LOCALS")
+	CheckStatGT(Myself,7,INT)
+	!StateCheck(Myself,STATE_POISONED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("GAVE","LOCALS",TWO_ROUNDS)
+		GiveItem("POTN17",LastHeardBy(Myself))  // ??????? ????????
+END
+
+IF
+	ActionListEmpty()
+	Heard([EVILCUTOFF],ALERT_69)
+	!HaveAnySpells()
+	Range(LastHeardBy(Myself),30)
+	HPPercentGT(Myself,50)
+	CheckStatGT(Myself,7,INT)
+	!GlobalTimerNotExpired("BPSB","LOCALS")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,102290)  // ?????? ???? ???? ???????!
+		AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),180)
+		SetGlobalTimer("BPSB","LOCALS",THREE_ROUNDS)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	RandomNumLT(32,21)
+	Heard([EVILCUTOFF],ASSIST)
+	HPGT(LastHeardBy(Myself),1)
+	HPGT(LastHitter(LastHeardBy(Myself)),1)
+	HPGT(LastAttackerOf(LastHeardBy(Myself)),1)
+	Range(LastHeardBy(Myself),25)
+	Range(LastHitter(LastHeardBy(Myself)),40)
+	Range(LastAttackerOf(LastHeardBy(Myself)),40)
+	!See(LastHitter(LastHeardBy(Myself)))
+	!See(LastAttackerOf(LastHeardBy(Myself)))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	RandomNumLT(31,21)
+	OR(6)
+		See(NearestEnemyOf(Myself))
+		See(WeakestOf)
+		See(WorstAC)
+		See(MostDamagedOf)
+		See(LastAttackerOf(Myself))
+		See(LastHitter(Myself))
+	RandomNumLT(27,19)
+	OR(4)
+		See([GOODCUTOFF.0.0.0.0.SUMMONED_DEMON])
+		See([GOODCUTOFF.0.0.0.0.SUMMONED])
+		See([GOODCUTOFF.0.0.0.SIMULACRUM])
+		See([GOODCUTOFF.0.0.0.0.ILLUSIONARY])
+	RandomNumLT(29,19)
+	OR(16)
+		See([PC.0.0.RANGER])
+		See([PC.0.0.PALADIN])
+		See([PC.0.0.BARD])
+		See([PC.0.0.DRUID])
+		See([PC.0.0.FIGHTER_DRUID])
+		See([PC.0.0.FIGHTER_CLERIC])
+		See([PC.0.0.CLERIC_RANGER])
+		See([PC.0.0.FIGHTER_MAGE])
+		See([PC.0.0.CLERIC])
+		See([PC.0.0.CLERIC_THIEF])
+		See([PC.0.0.MAGE_THIEF])
+		See([PC.0.0.FIGHTER_MAGE_THIEF])
+		See([PC.0.0.FIGHTER_MAGE_CLERIC])
+		See([PC.0.0.MAGE])
+		See([PC.0.0.CLERIC_MAGE])
+		See([PC.0.0.SORCERER])
+	RandomNumLT(30,16)
+	See(Protagonist)
+	RandomNumLT(26,10)
+	OR(4)
+		See([GOODCUTOFF.0.0.RANGER])
+		See([GOODCUTOFF.0.0.DRUID])
+		See([GOODCUTOFF.0.0.PALADIN])
+		See([GOODCUTOFF.0.0.CLERIC])
+	RandomNumLT(28,10)
+	OR(3)
+		See([GOODCUTOFF.0.0.MONK])
+		See([GOODCUTOFF.0.0.BARD])
+		See([GOODCUTOFF.0.0.THIEF])
+	RandomNumLT(24,9)
+	OR(3)
+		See(StrongestOf)
+		See(BestAC)
+		See(LeastDamagedOf)
+	RandomNumLT(25,9)
+	See(WeakestOf)
+	RandomNumLT(23,8)
+	See(WorstAC)
+	RandomNumLT(21,8)
+	See(MostDamagedOf)
+	RandomNumLT(32,11)
+	OR(8)
+		See([GOODCUTOFF.0.0.MAGE])
+		See([GOODCUTOFF.0.0.SORCERER])
+		See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE]))
+		See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+		See(FourthNearestEnemyOfType([GOODCUTOFF.0.0.MAGE]))
+		See(FourthNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	RandomNumLT(20,8)
+	!See(TenthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(3)
+		Allegiance(LastSeenBy(Myself),ENEMY)
+		Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+		Allegiance(LastSeenBy(Myself),GOODBUTRED)
+THEN
+	RESPONSE #100
+END
+
+IF
+	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+THEN
+	RESPONSE #80
+		Continue()
+	RESPONSE #20
+END
+
+IF
+	ActionListEmpty()
+	StateCheck(Myself,STATE_INVISIBLE)
+	OR(5)
+		Class(Myself,THIEF)
+		Class(Myself,FIGHTER_THIEF)
+		Class(Myself,FIGHTER_MAGE_THIEF)
+		Class(Myself,MAGE_THIEF)
+		Class(Myself,CLERIC_THIEF)
+	HPPercentGT(Myself,25)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		EquipMostDamagingMelee()
+		MoveToObject(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	ActionListEmpty()
+	CheckStatGT(Myself,0,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	ActionListEmpty()
+	HasItem("wand02",Myself)  // ???? ??????
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStatGT(Myself,8,INT)
+	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+	!HasBounceEffects(LastSeenBy(Myself))
+	!LevelGT(LastSeenBy(Myself),10)
+	RandomNumLT(56,24)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand02",LastSeenBy(Myself))  // ???? ??????
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(Myself,25)
+	Range(LastHitter(Myself),10)
+	CheckStatGT(Myself,7,INT)
+	OR(3)
+		General(Myself,HUMANOID)
+		General(Myself,GIANTHUMANOID)
+		CheckStatGT(Myself,12,INT)
+	!GlobalTimerNotExpired("BPW","LOCALS")
+THEN
+	RESPONSE #40
+		DisplayStringHead(Myself,49767)  // ??????!
+		Shout(ASSIST)
+		SetGlobalTimer("BPW","LOCALS",TWO_MINUTES)
+		RunAwayFrom(LastHitter(Myself),40)
+	RESPONSE #60
+		DisplayStringHead(Myself,49766)  // ? ?????? ?? ????!
+		Shout(ASSIST)
+		SetGlobalTimer("BPW","LOCALS",TWO_MINUTES)
+		AttackReevaluate(LastHitter(Myself),15)
+END
+
+IF
+	ActionListEmpty()
+	OR(3)
+		!Range(NearestEnemyOf(Myself),5)
+		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY7)
+		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	OR(2)
+		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY7)
+		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+THEN
+	RESPONSE #25
+		Continue()
+	RESPONSE #75
+END
+
+IF
+	ActionListEmpty()
+	!Range(LastSeenBy(Myself),8)
+THEN
+	RESPONSE #90
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself))
+	RESPONSE #90
+		EquipMostDamagingMelee()
+		AttackOneRound(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(LastSeenBy(Myself))
+END
+

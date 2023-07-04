@@ -1,0 +1,265 @@
+IF
+	Global("MyString","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("MyString","LOCALS",1)
+		DisplayStringHead(Myself,102790)  // ?????????? ??????????? ???????????! ??????????? ?????? ??????????!
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Prep","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		DisplayString(Myself,39968)  // ?????????? ??????????: ????????? ? ????????
+		ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI602.SPL (????? ????????????)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (?????? ?? ??????? ????????)
+		SetGlobal("Prep","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CACOFIEND)  // SPWI707.SPL (?????????)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_PROTECTION_FROM_EVIL)  // SPWI113.SPL (?????? ?? ???)
+		SpellNoDecRES("fl#canpc",LastSeenBy(Myself))  // ?????????
+		RemoveSpell(WIZARD_CACOFIEND)  // SPWI707.SPL (?????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (?????????? ???????????)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (?????????? ???????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (?????? ?? ??????? ????????)
+	CheckStatLT(Myself,1,PICKPOCKETCP)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (?????? ?? ??????? ????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+	CheckStatLT(Myself,1,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_PROTECTION_FROM_EVIL)  // SPWI113.SPL (?????? ?? ???)
+	CheckStatLT(Myself,1,MELEETHAC0MOD)
+	See([0.0.DEMONIC])
+	!StateCheck(LastTrigger,STATE_DEAD)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_PROTECTION_FROM_EVIL)  // SPWI113.SPL (?????? ?? ???)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	!StateCheck([PC.0.0.FIGHTER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER])
+	!Kit([PC.0.0.FIGHTER],INQUISITOR)
+	!Race([PC.0.0.FIGHTER],ELF)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.FIGHTER],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER],99,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER],ENEMY)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.FIGHTER],1,EXTRAPROFICIENCY9)
+	CheckStatGT([PC.0.0.FIGHTER],0,SAVEVSSPELL)
+	CheckStatGT([PC.0.0.FIGHTER],50,RESISTMAGIC)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER],WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	!StateCheck([PC.0.0.RANGER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.RANGER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+	!CheckStatGT([PC.0.0.RANGER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.RANGER])
+	!Kit([PC.0.0.RANGER],INQUISITOR)
+	!Race([PC.0.0.RANGER],ELF)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.RANGER],UNDEAD)
+	!CheckStatGT([PC.0.0.RANGER],99,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.RANGER],ENEMY)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.RANGER],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.RANGER],1,EXTRAPROFICIENCY9)
+	CheckStatGT([PC.0.0.RANGER],0,SAVEVSSPELL)
+	CheckStatGT([PC.0.0.RANGER],50,RESISTMAGIC)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.RANGER],WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	!StateCheck([PC.0.0.PALADIN],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.PALADIN],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+	!CheckStatGT([PC.0.0.PALADIN],0,SCRIPTINGSTATE9)
+	See([PC.0.0.PALADIN])
+	!Kit([PC.0.0.PALADIN],INQUISITOR)
+	!Race([PC.0.0.PALADIN],ELF)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.PALADIN],UNDEAD)
+	!CheckStatGT([PC.0.0.PALADIN],99,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.PALADIN],ENEMY)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.PALADIN],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.PALADIN],1,EXTRAPROFICIENCY9)
+	CheckStatGT([PC.0.0.PALADIN],0,SAVEVSSPELL)
+	CheckStatGT([PC.0.0.PALADIN],50,RESISTMAGIC)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.PALADIN],WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER_THIEF])
+	!Kit([PC.0.0.FIGHTER_THIEF],INQUISITOR)
+	!Race([PC.0.0.FIGHTER_THIEF],ELF)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.FIGHTER_THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],99,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER_THIEF],ENEMY)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.FIGHTER_THIEF],1,EXTRAPROFICIENCY9)
+	CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SAVEVSSPELL)
+	CheckStatGT([PC.0.0.FIGHTER_THIEF],50,RESISTMAGIC)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER_THIEF],WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WIZARD_CHAOS)  // SPWI508.SPL (????)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,SCRIPTINGSTATE9)
+	See(SecondNearestEnemyOf(Myself))
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_CONFUSED)
+	!General(SecondNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearestEnemyOf(Myself),ENEMY)
+	CheckStatGT(SecondNearestEnemyOf(Myself),0,SAVEVSSPELL)
+THEN
+	RESPONSE #200
+		ApplySpellRES("dw#mgsee",Myself)  // ??????
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(SecondNearestEnemyOf(Myself),WIZARD_CHAOS)  // SPWI508.SPL (????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CONFUSION)  // SPWI401.SPL (??????????????)
+	!StateCheck(NearestEnemyOf(Myself),STATE_CONFUSED)
+	!Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_CONFUSION)  // SPWI401.SPL (??????????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_TELEPORT_FIELD)  // SPWI421.SPL (???? ????????????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_TELEPORT_FIELD)  // SPWI421.SPL (???? ????????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MINOR_SPELL_TURNING)  // SPWI522.SPL (????? ????????? ??????????)
+	CheckStat(Myself,0,SCRIPTINGSTATE9)
+	CheckStat(Myself,0,SHIELDGLOBE)
+	CheckStat(Myself,0,MINORGLOBE)
+	CheckStat(Myself,0,EXTRAPROFICIENCY2)
+	CheckStat(Myself,0,EXTRAPROFICIENCY15)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_MINOR_SPELL_TURNING)  // SPWI522.SPL (????? ????????? ??????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_IMPROVED_HASTE)  // SPWI613.SPL (?????????? ?????????)
+	!StateCheck(Myself,STATE_HASTED)
+	CheckStat(Myself,0,IMPROVEDHASTE)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_IMPROVED_HASTE)  // SPWI613.SPL (?????????? ?????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

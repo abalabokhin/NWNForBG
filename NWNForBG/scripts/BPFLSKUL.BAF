@@ -1,0 +1,78 @@
+IF
+	Die()
+THEN
+	RESPONSE #50
+		ReallyForceSpellDead(Myself,SKULL_EXPLODE)  // SPIN564.SPL (?????-???????)
+		DestroySelf()
+END
+
+IF
+	Global("BPNearEnough","LOCALS",0)
+	Range(NearestEnemyOf(Myself),15)
+THEN
+	RESPONSE #100
+		SetGlobal("BPNearEnough","LOCALS",1)
+END
+
+IF
+	Global("BPNearEnough","LOCALS",1)
+	!Range(NearestEnemyOf(Myself),15)
+THEN
+	RESPONSE #100
+		SetGlobal("BPNearEnough","LOCALS",0)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("resetp","LOCALS")
+	Global("BPNearEnough","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("resetp","LOCALS",FIVE_ROUNDS)
+		SpellNoDec(Myself,WIZARD_FIRE_SHIELD_RED)  // SPWI418.SPL (??????? ???????? ???)
+END
+
+IF
+	ActionListEmpty()
+	!AreaCheck("AR5201")
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),10)
+	Global("belch","LOCALS",0)
+	Global("BPNearEnough","LOCALS",1)
+	RandomNum(4,1)
+THEN
+	RESPONSE #100
+		SetGlobal("belch","LOCALS",1)
+		SpellNoDec(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),5)
+	Global("BPNearEnough","LOCALS",1)
+	!GlobalTimerNotExpired("renewflame","LOCALS")
+THEN
+	RESPONSE #15
+		SetGlobalTimer("renewflame","LOCALS",ONE_ROUND)
+		SpellNoDec(NearestEnemyOf(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (???????? ???)
+	RESPONSE #40
+		SetGlobalTimer("renewflame","LOCALS",ONE_ROUND)
+		SpellNoDec(NearestEnemyOf(Myself),FLAMING_SKULL_BOLT)  // SPIN539.SPL (??? ?????)
+	RESPONSE #50
+		SetGlobalTimer("renewflame","LOCALS",ONE_ROUND)
+		SpellNoDec(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+	RESPONSE #100
+		SetGlobalTimer("renewflame","LOCALS",ONE_ROUND)
+		SpellNoDec(NearestEnemyOf(Myself),WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+END
+

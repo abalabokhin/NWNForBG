@@ -1,0 +1,557 @@
+IF
+	Global("J#CearaFight","GLOBAL",9)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	!Global("J#CearaFight","GLOBAL",9)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!CheckStat(Myself,4,EXTRAPROFICIENCY14)
+	HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+	HPPercentLT(Myself,40)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+	HPPercentLT(Myself,40)
+	CheckStatLT(Myself,2,STONESKINS)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(Myself,STATE_MIRRORIMAGE)
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (?????????? ?????)
+	HPPercentLT(Myself,40)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (?????????? ?????)
+END
+
+IF
+	HPPercentLT(Myself,40)
+	!HasItem("POTN52",Myself)  // ????? ??????????? ???????
+	!GlobalTimerNotExpired("J#Shouted","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#Shouted","LOCALS",THREE_ROUNDS)
+		DisplayStringHead(Myself,46151)  // ?? ??????!
+		Shout(ASSIST)
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	Global("J#CearaFight","GLOBAL",8)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	OR(9)
+		See([GOODCUTOFF])
+		See([GOODCUTOFF.0.0.THIEF_ALL])
+		See([GOODCUTOFF.0.0.BARD_ALL])
+		See([GOODCUTOFF.0.0.FIGHTER_ALL])
+		See([GOODCUTOFF.0.0.RANGER_ALL])
+		See([GOODCUTOFF.0.0.PALADIN_ALL])
+		See([GOODCUTOFF.0.0.DRUID_ALL])
+		See([GOODCUTOFF.0.0.CLERIC_ALL])
+		See([GOODCUTOFF.0.0.MAGE_ALL])
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.THIEF_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.FIGHTER_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.RANGER_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.PALADIN_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_SLEEPING)
+	!StateCheck(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_CHARMED)
+	!StateCheck(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_STUNNED)
+	!StateCheck(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_NORMAL)
+	See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_CHARMED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_NORMAL)
+	See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_CHARMED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]),STATE_NORMAL)
+	See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	Range(NearestEnemyOf(Myself),8)
+	OR(2)
+		CheckStatGT(Myself,1,STONESKINS)
+		HPPercentGT(Myself,40)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	Range(NearestEnemyOf(Myself),8)
+	HPPercentLT(Myself,40)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),45)
+END
+
+IF
+	GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!Range(NearestEnemyOf(Myself),8)
+	HasItem("bolt04",Myself)  // ?????????? ?????? ?????
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!Range(NearestEnemyOf(Myself),8)
+	!HasItem("bolt04",Myself)  // ?????????? ?????? ?????
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_BREACH)  // SPWI513.SPL (??????)
+	OR(6)
+		CheckStatGT(LastSeenBy(Myself),3,SCRIPTINGSTATE5)
+		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY12)
+		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY16)
+		CheckStatGT(LastSeenBy(Myself),0,PICKPOCKETCP)
+		CheckStatGT(LastSeenBy(Myself),0,DETECTILLUSIONSCP)
+		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY14)
+	CheckStatGT(LastSeenBy(Myself),2,STONESKINS)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_BREACH)  // SPWI513.SPL (??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_SYMBOL_STUN)  // SPWI816.SPL (??????: ???????????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_SYMBOL_STUN)  // SPWI816.SPL (??????: ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (???? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (???? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_SLOWED)
+	HaveSpell(WIZARD_SLOW)  // SPWI312.SPL (??????????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_SLOW)  // SPWI312.SPL (??????????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_SPHERE_OF_CHAOS)  // SPWI711.SPL (????? ?????)
+	Range(LastSeenBy(Myself),15)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastSeenBy(Myself),30)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_SPHERE_OF_CHAOS)  // SPWI711.SPL (????? ?????)
+	!Range(LastSeenBy(Myself),15)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		ActionOverride(LastSeenBy(Myself),Shout(901))
+		Spell(LastSeenBy(Myself),WIZARD_SPHERE_OF_CHAOS)  // SPWI711.SPL (????? ?????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_FINGER_OF_DEATH)  // SPWI713.SPL (????? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_FINGER_OF_DEATH)  // SPWI713.SPL (????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI503.SPL (????? ??????)
+	!Range(LastSeenBy(Myself),12)
+THEN
+	RESPONSE #100
+		MoveToObject(LastSeenBy(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI503.SPL (????? ??????)
+	Range(LastSeenBy(Myself),12)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		ActionOverride(LastSeenBy(Myself),Shout(901))
+		Spell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)  // SPWI503.SPL (????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_SPIDER_SPAWN)  // SPWI423.SPL (????????? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_SPIDER_SPAWN)  // SPWI423.SPL (????????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	HaveSpell(WIZARD_MONSTER_SUMMONING_2)  // SPWI407.SPL (?????????? ???????? II)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_MONSTER_SUMMONING_2)  // SPWI407.SPL (?????????? ???????? II)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(Nearest([EVILCUTOFF.0.0.THIEF_ALL]),STATE_INVISIBLE)
+	HaveSpell(WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (?????????? ???????????)
+	See(Nearest([EVILCUTOFF.0.0.THIEF_ALL]))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (?????????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (?????? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (?????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (????????? ?????? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (????????? ?????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_LARLOCH_MINOR_DRAIN)  // SPWI119.SPL (????? ????????? ???????)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_LARLOCH_MINOR_DRAIN)  // SPWI119.SPL (????? ????????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+THEN
+	RESPONSE #100
+		MoveToObject(LastSeenBy(Myself))
+		SetGlobalTimer("J#CastAttack","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+END
+
+IF
+	Range(NearestEnemyOf(Myself),8)
+	OR(2)
+		CheckStatGT(Myself,1,STONESKINS)
+		HPPercentGT(Myself,40)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	Range(NearestEnemyOf(Myself),8)
+	HPPercentLT(Myself,40)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),45)
+END
+
+IF
+	!Range(NearestEnemyOf(Myself),8)
+	HasItem("bolt04",Myself)  // ?????????? ?????? ?????
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	!Range(NearestEnemyOf(Myself),8)
+	!HasItem("bolt04",Myself)  // ?????????? ?????? ?????
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+

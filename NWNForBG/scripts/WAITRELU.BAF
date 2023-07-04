@@ -1,0 +1,55 @@
+IF
+	Global("Drink","LOCALS",1)
+	GlobalTimerExpired("Player1Drink","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(LastTalkedToBy(Myself))
+		Dialogue(LastTalkedToBy(Myself))
+END
+
+IF
+	Detect([PC])
+	Allegiance(Myself,NEUTRAL)
+	Global("quest1","LOCALS",0)
+THEN
+	RESPONSE #100
+		MoveToObject("Way3")
+		ActionOverride("DRUNK2",DisplayStringHead(Myself,4592))  // ??? ??? ???, ????????
+		Wait(1)
+		DisplayStringHead(Myself,4604)  // ??? ????? ???????.
+		Wait(2)
+		MoveToObject("Way4")
+		Wait(1)
+		MoveToObject("Way3")
+		DisplayStringHead(Myself,4611)  // ???, ?????.
+		Wait(2)
+		SetGlobal("quest1","LOCALS",1)
+END
+
+IF
+	Detect([PC])
+	Allegiance(Myself,NEUTRAL)
+	Global("quest1","LOCALS",1)
+THEN
+	RESPONSE #10
+		Wait(1)
+		MoveToObject("Way1")
+	RESPONSE #10
+		Wait(2)
+		MoveToObject("Way2")
+	RESPONSE #10
+		Wait(1)
+		MoveToObject("Way3")
+	RESPONSE #10
+		Wait(2)
+		MoveToObject("Way4")
+	RESPONSE #10
+		Wait(1)
+		MoveToObject("Way5")
+	RESPONSE #1
+		Wait(1)
+		MoveToObject("COPCUST3")  // ????????
+		DisplayStringHead(Myself,4590)  // ???? ??? ??????.
+		Wait(2)
+END
+

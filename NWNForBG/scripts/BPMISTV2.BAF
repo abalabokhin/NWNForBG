@@ -1,0 +1,70 @@
+IF
+	Difficulty(EASIEST)
+	HPPercentLT(Myself,50)
+	Allegiance(Myself,ENEMY)
+	!GlobalTimerNotExpired("FadeOut","LOCALS")
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (???????????)
+		SetGlobalTimer("FadeOut","LOCALS",FIVE_ROUNDS)
+END
+
+IF
+	Difficulty(EASY)
+	HPPercentLT(Myself,50)
+	Allegiance(Myself,ENEMY)
+	!GlobalTimerNotExpired("FadeOut","LOCALS")
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (???????????)
+		SetGlobalTimer("FadeOut","LOCALS",THREE_ROUNDS)
+END
+
+IF
+	DifficultyGT(NORMAL)
+	HPPercentLT(Myself,50)
+	Allegiance(Myself,ENEMY)
+	!GlobalTimerNotExpired("FadeOut","LOCALS")
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (???????????)
+		SetGlobalTimer("FadeOut","LOCALS",ONE_ROUND)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	Allegiance(Myself,ENEMY)
+	!GlobalTimerNotExpired("FadeOut","LOCALS")
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (???????????)
+		SetGlobalTimer("FadeOut","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	GlobalTimerNotExpired("FadeOut","LOCALS")
+	HPPercentLT(Myself,60)
+	StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #30
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LARLOCH_MINOR_DRAIN)  // SPWI119.SPL (????? ????????? ???????)
+	RESPONSE #70
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("FadeOut","LOCALS")
+	Detect([GOODCUTOFF])
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #65
+		SetGlobalTimer("FadeOut","LOCALS",ONE_ROUND)
+		ApplySpell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (???????????)
+	RESPONSE #35
+		Continue()
+END
+

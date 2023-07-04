@@ -1,0 +1,5598 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("rest","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("rtime","LOCALS",2000)
+		SetGlobal("rest","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("rest","LOCALS",1)
+	!GlobalTimerNotExpired("rtime","LOCALS")
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("longprep","LOCALS",0)
+		SetGlobal("instantprep","LOCALS",0)
+		SetGlobalTimer("redefend","LOCALS",2000)
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		Rest()
+END
+
+IF
+	Detect([PC])
+	!See([PC])
+	Allegiance(Myself,ENEMY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	CheckStatGT(Myself,7,LEVEL)
+	!GlobalTimerNotExpired("detect","LOCALS")
+THEN
+	RESPONSE #50
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SetGlobalTimer("detect","LOCALS",1000)
+		DisplayString(Myself,102782)  // ???????... ? ???????? ???-??...
+		SpellNoDec(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	RESPONSE #50
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SetGlobalTimer("detect","LOCALS",1000)
+		DisplayString(Myself,102783)  // ? ????? ?????. ???? ?? ????????.
+		SpellNoDec(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	RESPONSE #50
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SetGlobalTimer("detect","LOCALS",1000)
+		DisplayString(Myself,102784)  // ???????, ?????????? ??? ??????, ??????????, ????????!
+		SpellNoDec(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	RESPONSE #50
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SetGlobalTimer("detect","LOCALS",1000)
+		DisplayString(Myself,102785)  // ???????... ?????????, ??? ??????? ????????? ??????????...
+		SpellNoDec(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	RESPONSE #800
+		SetGlobalTimer("detect","LOCALS",FIVE_ROUNDS)
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(7)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+THEN
+	RESPONSE #100
+		Enemy()
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	Global("DMWWNoNeutralPrebuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!HasItem("POTN10",Myself)  // ????? ???????????
+	Global("potionprep","LOCALS",0)
+	General(Myself,HUMANOID)
+	!HasItem("dwexhe",Myself)  // ????? ??????????? ???????
+THEN
+	RESPONSE #100
+		GiveItemCreate("dwexhe",Myself,0,0,0)  // ????? ??????????? ???????
+		Continue()
+	RESPONSE #100
+		GiveItemCreate("POTN08",Myself,0,0,0)  // ????? ???????
+		GiveItemCreate("POTN08",Myself,0,0,0)  // ????? ???????
+		Continue()
+	RESPONSE #100
+		GiveItemCreate("dwexhe",Myself,0,0,0)  // ????? ??????????? ???????
+		GiveItemCreate("dwexhe",Myself,0,0,0)  // ????? ??????????? ???????
+		Continue()
+END
+
+IF
+	!HasItem("POTN10",Myself)  // ????? ???????????
+	Global("potionprep","LOCALS",0)
+	General(Myself,HUMANOID)
+	Class(Myself,THIEF_ALL)
+THEN
+	RESPONSE #100
+		GiveItemCreate("potn10",Myself,0,0,0)  // ????? ???????????
+		GiveItemCreate("potn10",Myself,0,0,0)  // ????? ???????????
+		Continue()
+END
+
+IF
+	HasItem("POTN10",Myself)  // ????? ???????????
+	Global("potionprep","LOCALS",0)
+	General(Myself,HUMANOID)
+	!HasItem("dwexhe",Myself)  // ????? ??????????? ???????
+THEN
+	RESPONSE #100
+		GiveItemCreate("dwexhe",Myself,0,0,0)  // ????? ??????????? ???????
+		Continue()
+	RESPONSE #100
+		GiveItemCreate("POTN08",Myself,0,0,0)  // ????? ???????
+		GiveItemCreate("POTN08",Myself,0,0,0)  // ????? ???????
+		Continue()
+	RESPONSE #100
+		GiveItemCreate("dwexhe",Myself,0,0,0)  // ????? ??????????? ???????
+		GiveItemCreate("dwexhe",Myself,0,0,0)  // ????? ??????????? ???????
+		Continue()
+END
+
+IF
+	HasItem("POTN10",Myself)  // ????? ???????????
+	Global("potionprep","LOCALS",0)
+	General(Myself,HUMANOID)
+	Class(Myself,THIEF_ALL)
+THEN
+	RESPONSE #100
+		GiveItemCreate("POTN10",Myself,0,0,0)  // ????? ???????????
+		GiveItemCreate("POTN10",Myself,0,0,0)  // ????? ???????????
+		Continue()
+END
+
+IF
+	!Global("potionprep","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("potionprep","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("longprep","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("longprep","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("instantprep","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("instantprep","LOCALS",1)
+		SetGlobalTimer("redefend","LOCALS",0)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(12)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+		SpellCastOnMe([PC],0)
+		SpellCastOnMe([FAMILIAR],0)
+		SpellCastOnMe([ALLY],0)
+		SpellCastOnMe([CONTROLLED],0)
+		SpellCastOnMe([CHARMED],0)
+	!Global("inafight","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("inafight","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",1)
+		SetGlobalTimer("willmelee","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!Detect(NearestEnemyOf(Myself))
+	!HPPercentLT(Myself,100)
+	!Global("inafight","LOCALS",1)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	AttackedBy([ENEMY.UNDEAD],DEFAULT)
+	Allegiance(LastAttackerOf(Myself),ENEMY)
+	General(LastAttackerOf(Myself),UNDEAD)
+THEN
+	RESPONSE #100
+		ClearActions(LastAttackerOf(Myself))
+		Continue()
+END
+
+IF
+	StateCheck(Myself,STATE_PANIC)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	See([GOODCUTOFF.0.0.SKELETON])
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!GlobalTimerNotExpired("turninitialise","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("turninitialise","LOCALS",FIVE_ROUNDS)
+		SetGlobalTimer("turning","LOCALS",4)
+		Continue()
+END
+
+IF
+	See([GOODCUTOFF.0.0.SKELETON])
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	OR(2)
+		!GlobalTimerNotExpired("turninitialise","LOCALS")
+		GlobalTimerNotExpired("turning","LOCALS")
+THEN
+	RESPONSE #100
+		Turn()
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(WorstAC(Myself),STATE_INVISIBLE)
+	See(WorstAC(Myself))
+	Range(WorstAC(Myself),10)
+	!CheckStatGT(WorstAC(Myself),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(WorstAC(Myself),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(WorstAC(Myself),0,SCRIPTINGSTATE9)
+	!CheckStat(WorstAC(Myself),1,EXTRAPROFICIENCY9)
+	!CheckStat(WorstAC(Myself),7,SCRIPTINGSTATE7)
+	!CheckStatGT(WorstAC(Myself),50,RESISTMAGIC)
+	!StateCheck(WorstAC(Myself),STATE_MIRRORIMAGE)
+	!CheckStatGT(WorstAC(Myself),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",WorstAC(Myself))  // ???? ?????????
+	!General(WorstAC(Myself),UNDEAD)
+	!CheckStat(WorstAC(Myself),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(WorstAC(Myself),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck([PC],STATE_INVISIBLE)
+	See([PC])
+	Range([PC],10)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	!CheckStat([PC],1,EXTRAPROFICIENCY9)
+	!CheckStat([PC],7,SCRIPTINGSTATE7)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	!StateCheck([PC],STATE_MIRRORIMAGE)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",[PC])  // ???? ?????????
+	!General([PC],UNDEAD)
+	!CheckStat([PC],4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC],30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(SecondNearest([PC]),STATE_INVISIBLE)
+	See(SecondNearest([PC]))
+	Range(SecondNearest([PC]),10)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	!CheckStat(SecondNearest([PC]),1,EXTRAPROFICIENCY9)
+	!CheckStat(SecondNearest([PC]),7,SCRIPTINGSTATE7)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	!StateCheck(SecondNearest([PC]),STATE_MIRRORIMAGE)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",SecondNearest([PC]))  // ???? ?????????
+	!General(SecondNearest([PC]),UNDEAD)
+	!CheckStat(SecondNearest([PC]),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(SecondNearest([PC]),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(ThirdNearest([PC]),STATE_INVISIBLE)
+	See(ThirdNearest([PC]))
+	Range(ThirdNearest([PC]),10)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	!CheckStat(ThirdNearest([PC]),1,EXTRAPROFICIENCY9)
+	!CheckStat(ThirdNearest([PC]),7,SCRIPTINGSTATE7)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	!StateCheck(ThirdNearest([PC]),STATE_MIRRORIMAGE)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",ThirdNearest([PC]))  // ???? ?????????
+	!General(ThirdNearest([PC]),UNDEAD)
+	!CheckStat(ThirdNearest([PC]),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(ThirdNearest([PC]),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(FourthNearest([PC]),STATE_INVISIBLE)
+	See(FourthNearest([PC]))
+	Range(FourthNearest([PC]),10)
+	!CheckStatGT(FourthNearest([PC]),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(FourthNearest([PC]),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(FourthNearest([PC]),0,SCRIPTINGSTATE9)
+	!CheckStat(FourthNearest([PC]),1,EXTRAPROFICIENCY9)
+	!CheckStat(FourthNearest([PC]),7,SCRIPTINGSTATE7)
+	!CheckStatGT(FourthNearest([PC]),50,RESISTMAGIC)
+	!StateCheck(FourthNearest([PC]),STATE_MIRRORIMAGE)
+	!CheckStatGT(FourthNearest([PC]),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",FourthNearest([PC]))  // ???? ?????????
+	!General(FourthNearest([PC]),UNDEAD)
+	!CheckStat(FourthNearest([PC]),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(FourthNearest([PC]),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(FifthNearest([PC]),STATE_INVISIBLE)
+	See(FifthNearest([PC]))
+	Range(FifthNearest([PC]),10)
+	!CheckStatGT(FifthNearest([PC]),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(FifthNearest([PC]),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(FifthNearest([PC]),0,SCRIPTINGSTATE9)
+	!CheckStat(FifthNearest([PC]),1,EXTRAPROFICIENCY9)
+	!CheckStat(FifthNearest([PC]),7,SCRIPTINGSTATE7)
+	!CheckStatGT(FifthNearest([PC]),50,RESISTMAGIC)
+	!StateCheck(FifthNearest([PC]),STATE_MIRRORIMAGE)
+	!CheckStatGT(FifthNearest([PC]),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",FifthNearest([PC]))  // ???? ?????????
+	!General(FifthNearest([PC]),UNDEAD)
+	!CheckStat(FifthNearest([PC]),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(FifthNearest([PC]),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(SixthNearest([PC]),STATE_INVISIBLE)
+	See(SixthNearest([PC]))
+	Range(SixthNearest([PC]),10)
+	!CheckStatGT(SixthNearest([PC]),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(SixthNearest([PC]),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(SixthNearest([PC]),0,SCRIPTINGSTATE9)
+	!CheckStat(SixthNearest([PC]),1,EXTRAPROFICIENCY9)
+	!CheckStat(SixthNearest([PC]),7,SCRIPTINGSTATE7)
+	!CheckStatGT(SixthNearest([PC]),50,RESISTMAGIC)
+	!StateCheck(SixthNearest([PC]),STATE_MIRRORIMAGE)
+	!CheckStatGT(SixthNearest([PC]),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",SixthNearest([PC]))  // ???? ?????????
+	!General(SixthNearest([PC]),UNDEAD)
+	!CheckStat(SixthNearest([PC]),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(SixthNearest([PC]),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),10)
+	!CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(NearestEnemyOf(Myself),0,SCRIPTINGSTATE9)
+	!CheckStat(NearestEnemyOf(Myself),1,EXTRAPROFICIENCY9)
+	!CheckStat(NearestEnemyOf(Myself),7,SCRIPTINGSTATE7)
+	!CheckStatGT(NearestEnemyOf(Myself),50,RESISTMAGIC)
+	!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	!CheckStatGT(NearestEnemyOf(Myself),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",NearestEnemyOf(Myself))  // ???? ?????????
+	!General(NearestEnemyOf(Myself),UNDEAD)
+	!CheckStat(NearestEnemyOf(Myself),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(SecondNearestEnemyOf(Myself))
+	Range(SecondNearestEnemyOf(Myself),10)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,SCRIPTINGSTATE9)
+	!CheckStat(SecondNearestEnemyOf(Myself),1,EXTRAPROFICIENCY9)
+	!CheckStat(SecondNearestEnemyOf(Myself),7,SCRIPTINGSTATE7)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGIC)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",SecondNearestEnemyOf(Myself))  // ???? ?????????
+	!General(SecondNearestEnemyOf(Myself),UNDEAD)
+	!CheckStat(SecondNearestEnemyOf(Myself),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(SecondNearestEnemyOf(Myself),30)
+END
+
+IF
+	HasItem("slaylive",Myself)  // ???????????
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(ThirdNearestEnemyOf(Myself))
+	Range(ThirdNearestEnemyOf(Myself),10)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,EXTRAPROFICIENCY2)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,EXTRAPROFICIENCY15)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,SCRIPTINGSTATE9)
+	!CheckStat(ThirdNearestEnemyOf(Myself),1,EXTRAPROFICIENCY9)
+	!CheckStat(ThirdNearestEnemyOf(Myself),7,SCRIPTINGSTATE7)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTMAGIC)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,SCRIPTINGSTATE2)
+	!HasItemEquiped("clck26",ThirdNearestEnemyOf(Myself))  // ???? ?????????
+	!General(ThirdNearestEnemyOf(Myself),UNDEAD)
+	!CheckStat(ThirdNearestEnemyOf(Myself),4,EXTRAPROFICIENCY14)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(ThirdNearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!Range(NearestEnemyOf(Myself),10)
+	!GlobalTimerNotExpired("willmelee","LOCALS")
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatGT(Myself,0,SANCTUARY)
+	!HasItem("dw#move0",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	StateCheck(Myself,STATE_CHARMED)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	StateCheck(Myself,STATE_CHARMED)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.MAGE],STATE_INVISIBLE)
+	See([PC.0.0.MAGE])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE],ENEMY)
+	!StateCheck([PC.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE],0,HELD)
+	!StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+	Range([PC.0.0.MAGE],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.MAGE],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_INVISIBLE)
+	See([PC.0.0.MAGE_THIEF])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_THIEF],ENEMY)
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,HELD)
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,STONESKINS)
+	Range([PC.0.0.MAGE_THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.MAGE_THIEF],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.THIEF],STATE_INVISIBLE)
+	See([PC.0.0.THIEF])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!StateCheck([PC.0.0.THIEF],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.THIEF],0,STONESKINS)
+	Range([PC.0.0.THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.THIEF],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.BARD],STATE_INVISIBLE)
+	See([PC.0.0.BARD])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!StateCheck([PC.0.0.BARD],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.BARD],0,STONESKINS)
+	Range([PC.0.0.BARD],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.BARD],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_INVISIBLE)
+	See([PC.0.0.MAGE_ALL])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_ALL],ENEMY)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,HELD)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,STONESKINS)
+	Range([PC.0.0.MAGE_ALL],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.MAGE_ALL],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_INVISIBLE)
+	See([PC.0.0.THIEF_ALL])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF_ALL],ENEMY)
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,HELD)
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,STONESKINS)
+	Range([PC.0.0.THIEF_ALL],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.THIEF_ALL],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.CLERIC],STATE_INVISIBLE)
+	See([PC.0.0.CLERIC])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.CLERIC],ENEMY)
+	!StateCheck([PC.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.CLERIC],0,HELD)
+	!StateCheck([PC.0.0.CLERIC],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC.0.0.CLERIC],0,STONESKINS)
+	Range([PC.0.0.CLERIC],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.CLERIC],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC],STATE_INVISIBLE)
+	See([PC])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!StateCheck([PC],STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT([PC],0,STONESKINS)
+	Range([PC],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(SecondNearest([PC]),STATE_INVISIBLE)
+	See(SecondNearest([PC]))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!StateCheck(SecondNearest([PC]),STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT(SecondNearest([PC]),0,STONESKINS)
+	Range(SecondNearest([PC]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(SecondNearest([PC]),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(ThirdNearest([PC]),STATE_INVISIBLE)
+	See(ThirdNearest([PC]))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!StateCheck(ThirdNearest([PC]),STATE_MIRRORIMAGE)
+	True()
+	!CheckStatGT(ThirdNearest([PC]),0,STONESKINS)
+	Range(ThirdNearest([PC]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(ThirdNearest([PC]),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.MAGE],STATE_INVISIBLE)
+	See([PC.0.0.MAGE])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE],ENEMY)
+	!StateCheck([PC.0.0.MAGE],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.MAGE],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+	True()
+	Range([PC.0.0.MAGE],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.MAGE],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_INVISIBLE)
+	See([PC.0.0.MAGE_THIEF])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_THIEF],ENEMY)
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_THIEF],0,STONESKINS)
+	True()
+	Range([PC.0.0.MAGE_THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.MAGE_THIEF],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.THIEF],STATE_INVISIBLE)
+	See([PC.0.0.THIEF])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	!StateCheck([PC.0.0.THIEF],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF],0,STONESKINS)
+	True()
+	Range([PC.0.0.THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.THIEF],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.BARD],STATE_INVISIBLE)
+	See([PC.0.0.BARD])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	!StateCheck([PC.0.0.BARD],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.BARD],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.BARD],0,STONESKINS)
+	True()
+	Range([PC.0.0.BARD],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.BARD],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_INVISIBLE)
+	See([PC.0.0.MAGE_ALL])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_ALL],ENEMY)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_ALL],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_ALL],0,STONESKINS)
+	True()
+	Range([PC.0.0.MAGE_ALL],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.MAGE_ALL],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_INVISIBLE)
+	See([PC.0.0.THIEF_ALL])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF_ALL],ENEMY)
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF_ALL],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF_ALL],0,STONESKINS)
+	True()
+	Range([PC.0.0.THIEF_ALL],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.THIEF_ALL],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC.0.0.CLERIC],STATE_INVISIBLE)
+	See([PC.0.0.CLERIC])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.CLERIC],ENEMY)
+	!StateCheck([PC.0.0.CLERIC],STATE_IMMOBILE)
+	!CheckStatGT([PC.0.0.CLERIC],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.CLERIC],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.CLERIC],0,STONESKINS)
+	True()
+	Range([PC.0.0.CLERIC],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC.0.0.CLERIC],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck([PC],STATE_INVISIBLE)
+	See([PC])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	!StateCheck([PC],STATE_IMMOBILE)
+	!CheckStatGT([PC],0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC],0,STONESKINS)
+	True()
+	Range([PC],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate([PC],30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(SecondNearest([PC]),STATE_INVISIBLE)
+	See(SecondNearest([PC]))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	!StateCheck(SecondNearest([PC]),STATE_IMMOBILE)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([PC]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([PC]),0,STONESKINS)
+	True()
+	Range(SecondNearest([PC]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(SecondNearest([PC]),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(ThirdNearest([PC]),STATE_INVISIBLE)
+	See(ThirdNearest([PC]))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	!StateCheck(ThirdNearest([PC]),STATE_IMMOBILE)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([PC]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([PC]),0,STONESKINS)
+	True()
+	Range(ThirdNearest([PC]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(ThirdNearest([PC]),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(NearestEnemyOf(Myself),ENEMY)
+	!StateCheck(NearestEnemyOf(Myself),STATE_IMMOBILE)
+	!CheckStatGT(NearestEnemyOf(Myself),0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(NearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(NearestEnemyOf(Myself),0,STONESKINS)
+	True()
+	Range(NearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(SecondNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_IMMOBILE)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,STONESKINS)
+	True()
+	Range(SecondNearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(SecondNearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(ThirdNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMMOBILE)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,STONESKINS)
+	True()
+	Range(ThirdNearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(ThirdNearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(LastAttackerOf(Myself),STATE_INVISIBLE)
+	See(LastAttackerOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastAttackerOf(Myself),ENEMY)
+	!StateCheck(LastAttackerOf(Myself),STATE_IMMOBILE)
+	!CheckStatGT(LastAttackerOf(Myself),0,HELD)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(LastAttackerOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(LastAttackerOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(LastAttackerOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(LastAttackerOf(Myself),0,STONESKINS)
+	True()
+	Range(LastAttackerOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	HasItem("dw#move0",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.MAGE])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE],ENEMY)
+	!StateCheck([PC.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.MAGE])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.MAGE_THIEF])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_THIEF],ENEMY)
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_THIEF],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.MAGE_THIEF])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.THIEF])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.THIEF])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.BARD])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.BARD],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.BARD],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.BARD])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.MAGE_ALL])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_ALL],ENEMY)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_ALL],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.MAGE_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.MAGE_ALL],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.MAGE_ALL])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.THIEF_ALL])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF_ALL],ENEMY)
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF_ALL],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.THIEF_ALL],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.THIEF_ALL])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC.0.0.CLERIC])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.CLERIC],ENEMY)
+	!StateCheck([PC.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.CLERIC],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.CLERIC],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC.0.0.CLERIC],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC.0.0.CLERIC])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See([PC])
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([PC],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([PC],0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject([PC])
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(SecondNearest([PC]))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([PC]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([PC]),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(SecondNearest([PC]))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(ThirdNearest([PC]))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([PC]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([PC]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([PC]),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(ThirdNearest([PC]))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(NearestEnemyOf(Myself),ENEMY)
+	!StateCheck(NearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(NearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(NearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(NearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(SecondNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(SecondNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(ThirdNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(ThirdNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(FourthNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(FourthNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FourthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FourthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(FourthNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(FifthNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(FifthNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FifthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FifthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(FifthNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(SixthNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SixthNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SixthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SixthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(SixthNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(SeventhNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SeventhNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(SeventhNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(SeventhNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	See(EighthNearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(EighthNearestEnemyOf(Myself),ENEMY)
+	!StateCheck(EighthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,HELD)
+	True()
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(EighthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(EighthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		MoveToObject(EighthNearestEnemyOf(Myself))
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(Player4,STATE_INVISIBLE)
+	See(Player4)
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(Player4,30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(Player5,STATE_INVISIBLE)
+	See(Player5)
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(Player5,30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(Player6,STATE_INVISIBLE)
+	See(Player6)
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(Player6,30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(Player3,STATE_INVISIBLE)
+	See(Player3)
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(Player3,30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(Player2,STATE_INVISIBLE)
+	See(Player2)
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(Player2,30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(Player1,STATE_INVISIBLE)
+	See(Player1)
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(Player1,30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	ActionListEmpty()
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!GlobalTimerNotExpired("setmeleetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	GlobalTimerNotExpired("castspell","LOCALS")
+	!Allegiance(Myself,ENEMY)
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_SANCTUARY)  // SPPR109.SPL (?????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	HPPercentLT(Myself,70)
+	!CheckStatGT(Myself,0,SANCTUARY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_SANCTUARY)  // SPPR109.SPL (?????????)
+	RESPONSE #50
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	HPPercentLT(Myself,50)
+	CheckStatGT(Myself,0,SANCTUARY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("Potn52",Myself)  // ????? ??????????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,50)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102249)  // ???? ????? ??????????? ???????
+		UseItem("Potn52",Myself)  // ????? ??????????? ???????
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(NearestEnemyOf(Myself))
+	HPPercentLT(Myself,50)
+	OR(2)
+		!Range(NearestEnemyOf(Myself),10)
+		StateCheck(NearestEnemyOf(Myself),STATE_DISABLED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SecondNearestEnemyOf(Myself))
+	HPPercentLT(Myself,50)
+	OR(2)
+		!Range(SecondNearestEnemyOf(Myself),10)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_DISABLED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(ThirdNearestEnemyOf(Myself))
+	HPPercentLT(Myself,50)
+	OR(2)
+		!Range(ThirdNearestEnemyOf(Myself),10)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_DISABLED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)  // SPPR502.SPL (??????? ??????????? ???)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+	!StateCheck(FifthNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(FifthNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(FifthNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	StateCheck(FifthNearest([ENEMY.HUMANOID]),STATE_PANIC)
+	!Global("remfear","LOCALS",1)
+	Allegiance(FifthNearest([ENEMY.HUMANOID]),ENEMY)
+	See(FifthNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+	!StateCheck(FourthNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(FourthNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(FourthNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	StateCheck(FourthNearest([ENEMY.HUMANOID]),STATE_PANIC)
+	!Global("remfear","LOCALS",1)
+	Allegiance(FourthNearest([ENEMY.HUMANOID]),ENEMY)
+	See(FourthNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+	!StateCheck(ThirdNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	StateCheck(ThirdNearest([ENEMY.HUMANOID]),STATE_PANIC)
+	!Global("remfear","LOCALS",1)
+	Allegiance(ThirdNearest([ENEMY.HUMANOID]),ENEMY)
+	See(ThirdNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+	!StateCheck(SecondNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	StateCheck(SecondNearest([ENEMY.HUMANOID]),STATE_PANIC)
+	!Global("remfear","LOCALS",1)
+	Allegiance(SecondNearest([ENEMY.HUMANOID]),ENEMY)
+	See(SecondNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+	!StateCheck([ENEMY.HUMANOID],STATE_NOT_TARGETABLE)
+	!CheckStatGT([ENEMY.HUMANOID],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([ENEMY.HUMANOID],0,SCRIPTINGSTATE9)
+	StateCheck([ENEMY.HUMANOID],STATE_PANIC)
+	!Global("remfear","LOCALS",1)
+	Allegiance([ENEMY.HUMANOID],ENEMY)
+	See([ENEMY.HUMANOID])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	StateCheck(LastSeenBy(Myself),STATE_PANIC)
+	!Global("remfear","LOCALS",1)
+	Allegiance(LastSeenBy(Myself),ENEMY)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_REMOVE_FEAR)  // SPPR108.SPL (?????? ??????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+	!StateCheck(FifthNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(FifthNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(FifthNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	CheckStatGT(FifthNearest([ENEMY.HUMANOID]),0,HELD)
+	Allegiance(FifthNearest([ENEMY.HUMANOID]),ENEMY)
+	See(FifthNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+	!StateCheck(FourthNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(FourthNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(FourthNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	CheckStatGT(FourthNearest([ENEMY.HUMANOID]),0,HELD)
+	Allegiance(FourthNearest([ENEMY.HUMANOID]),ENEMY)
+	See(FourthNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+	!StateCheck(ThirdNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	CheckStatGT(ThirdNearest([ENEMY.HUMANOID]),0,HELD)
+	Allegiance(ThirdNearest([ENEMY.HUMANOID]),ENEMY)
+	See(ThirdNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+	!StateCheck(SecondNearest([ENEMY.HUMANOID]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([ENEMY.HUMANOID]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([ENEMY.HUMANOID]),0,SCRIPTINGSTATE9)
+	CheckStatGT(SecondNearest([ENEMY.HUMANOID]),0,HELD)
+	Allegiance(SecondNearest([ENEMY.HUMANOID]),ENEMY)
+	See(SecondNearest([ENEMY.HUMANOID]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+	!StateCheck([ENEMY.HUMANOID],STATE_NOT_TARGETABLE)
+	!CheckStatGT([ENEMY.HUMANOID],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([ENEMY.HUMANOID],0,SCRIPTINGSTATE9)
+	CheckStatGT([ENEMY.HUMANOID],0,HELD)
+	Allegiance([ENEMY.HUMANOID],ENEMY)
+	See([ENEMY.HUMANOID])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	CheckStatGT(LastSeenBy(Myself),0,HELD)
+	Allegiance(LastSeenBy(Myself),ENEMY)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (?????? ????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("Potn55",Myself)  // ????? ????????????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,50)
+	!Global("shapeshift","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102248)  // ???? ????? ????????????? ???????
+		UseItem("Potn55",Myself)  // ????? ????????????? ???????
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("POTN52",Myself)  // ????? ??????????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,50)
+	!Global("shapeshift","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102249)  // ???? ????? ??????????? ???????
+		UseItem("POTN52",Myself)  // ????? ??????????? ???????
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("potn08",Myself)  // ????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,90)
+	!See(NearestEnemyOf(Myself))
+	!Global("shapeshift","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102246)  // ???? ????? ???????
+		UseItem("potn08",Myself)  // ????? ???????
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("Potn52",Myself)  // ????? ??????????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,90)
+	!See(NearestEnemyOf(Myself))
+	!Global("shapeshift","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102249)  // ???? ????? ??????????? ???????
+		UseItem("Potn52",Myself)  // ????? ??????????? ???????
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("POTN08",Myself)  // ????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,90)
+	!See(NearestEnemyOf(Myself))
+	!Global("shapeshift","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102246)  // ???? ????? ???????
+		UseItem("POTN08",Myself)  // ????? ???????
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HasItem("POTN52",Myself)  // ????? ??????????? ???????
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,90)
+	!See(NearestEnemyOf(Myself))
+	!Global("shapeshift","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,102249)  // ???? ????? ??????????? ???????
+		UseItem("POTN52",Myself)  // ????? ??????????? ???????
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(12)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+		SpellCastOnMe([PC],0)
+		SpellCastOnMe([FAMILIAR],0)
+		SpellCastOnMe([ALLY],0)
+		SpellCastOnMe([CONTROLLED],0)
+		SpellCastOnMe([CHARMED],0)
+	!GlobalTimerNotExpired("whatthe","LOCALS")
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("whatthe","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	GlobalTimerNotExpired("whatthe","LOCALS")
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chasePC","LOCALS",0)
+	InParty(Player2)
+	!StateCheck(Player2,STATE_REALLY_DEAD)
+	InParty(Player3)
+	!StateCheck(Player3,STATE_REALLY_DEAD)
+	InParty(Player4)
+	!StateCheck(Player4,STATE_REALLY_DEAD)
+	InParty(Player5)
+	!StateCheck(Player5,STATE_REALLY_DEAD)
+	InParty(Player6)
+	!StateCheck(Player6,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",1)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",2)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",3)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",4)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",5)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",6)
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chasePC","LOCALS",0)
+	InParty(Player2)
+	!StateCheck(Player2,STATE_REALLY_DEAD)
+	InParty(Player3)
+	!StateCheck(Player3,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",1)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",2)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",3)
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chasePC","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasePC","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!GlobalTimerNotExpired("teleportpursuetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	!Detect([PC])
+	CheckStatGT(Myself,10,LEVEL)
+	GlobalLT("teleportpursue","LOCALS",1)
+	!Range(Player4,30)
+	InMyArea(Player4)
+THEN
+	RESPONSE #100
+		SpellNoDec(Player4,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (????? ?????????)
+		SetGlobalTimer("teleportpursuetimer","LOCALS",THREE_ROUNDS)
+		IncrementGlobal("teleportpursue","LOCALS",1)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!GlobalTimerNotExpired("teleportpursuetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	!Detect([PC])
+	CheckStatGT(Myself,10,LEVEL)
+	GlobalLT("teleportpursue","LOCALS",1)
+	!Range(Player2,30)
+	InMyArea(Player2)
+THEN
+	RESPONSE #100
+		SpellNoDec(Player2,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (????? ?????????)
+		SetGlobalTimer("teleportpursuetimer","LOCALS",THREE_ROUNDS)
+		IncrementGlobal("teleportpursue","LOCALS",1)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!GlobalTimerNotExpired("teleportpursuetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	!Detect([PC])
+	CheckStatGT(Myself,10,LEVEL)
+	GlobalLT("teleportpursue","LOCALS",1)
+	!Range(Player6,30)
+	InMyArea(Player6)
+THEN
+	RESPONSE #100
+		SpellNoDec(Player6,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (????? ?????????)
+		SetGlobalTimer("teleportpursuetimer","LOCALS",THREE_ROUNDS)
+		IncrementGlobal("teleportpursue","LOCALS",1)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!GlobalTimerNotExpired("teleportpursuetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	!Detect([PC])
+	CheckStatGT(Myself,10,LEVEL)
+	GlobalLT("teleportpursue","LOCALS",1)
+	!Range(Player1,30)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		SpellNoDec(Player1,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (????? ?????????)
+		SetGlobalTimer("teleportpursuetimer","LOCALS",THREE_ROUNDS)
+		IncrementGlobal("teleportpursue","LOCALS",1)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!GlobalTimerNotExpired("teleportpursuetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	!Detect([PC])
+	CheckStatGT(Myself,10,LEVEL)
+	GlobalLT("teleportpursue","LOCALS",1)
+	!Range(Player5,30)
+	InMyArea(Player5)
+THEN
+	RESPONSE #100
+		SpellNoDec(Player5,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (????? ?????????)
+		SetGlobalTimer("teleportpursuetimer","LOCALS",THREE_ROUNDS)
+		IncrementGlobal("teleportpursue","LOCALS",1)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!GlobalTimerNotExpired("teleportpursuetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	!Detect([PC])
+	CheckStatGT(Myself,10,LEVEL)
+	GlobalLT("teleportpursue","LOCALS",1)
+	!Range(Player3,30)
+	InMyArea(Player3)
+THEN
+	RESPONSE #100
+		SpellNoDec(Player3,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (????? ?????????)
+		SetGlobalTimer("teleportpursuetimer","LOCALS",THREE_ROUNDS)
+		IncrementGlobal("teleportpursue","LOCALS",1)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!Global("chasePC","LOCALS",0)
+	OR(3)
+		!CheckStatGT(Myself,12,LEVEL)
+		GlobalGT("teleportpursue","LOCALS",2)
+		!InMyArea(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",0)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	ActionListEmpty()
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	ActionListEmpty()
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",2)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	ActionListEmpty()
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",3)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	ActionListEmpty()
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",4)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	ActionListEmpty()
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",5)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	ActionListEmpty()
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",6)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player6)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck(ThirdNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!Kit(ThirdNearest([PC]),UNDEADHUNTER)
+	!Kit(ThirdNearest([PC]),INQUISITOR)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(ThirdNearest([PC]),UNDEAD)
+	!CheckStatGT(ThirdNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See(ThirdNearest([PC]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck(SecondNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!Kit(SecondNearest([PC]),UNDEADHUNTER)
+	!Kit(SecondNearest([PC]),INQUISITOR)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(SecondNearest([PC]),UNDEAD)
+	!CheckStatGT(SecondNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See(SecondNearest([PC]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!Kit([PC],UNDEADHUNTER)
+	!Kit([PC],INQUISITOR)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY17)
+	!General([PC],UNDEAD)
+	!CheckStatGT([PC],0,MINORGLOBE)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.THIEF],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!Kit([PC.0.0.THIEF],UNDEADHUNTER)
+	!Kit([PC.0.0.THIEF],INQUISITOR)
+	!CheckStatGT([PC.0.0.THIEF],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC.0.0.THIEF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.BARD],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!Kit([PC.0.0.BARD],UNDEADHUNTER)
+	!Kit([PC.0.0.BARD],INQUISITOR)
+	!CheckStatGT([PC.0.0.BARD],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.BARD],UNDEAD)
+	!CheckStatGT([PC.0.0.BARD],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC.0.0.BARD])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,HELD)
+	!Kit([PC.0.0.FIGHTER_THIEF],UNDEADHUNTER)
+	!Kit([PC.0.0.FIGHTER_THIEF],INQUISITOR)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.FIGHTER_THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER_THIEF],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC.0.0.FIGHTER_THIEF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.PALADIN],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.PALADIN],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.PALADIN],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC.0.0.PALADIN],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.PALADIN],0,HELD)
+	!Kit([PC.0.0.PALADIN],UNDEADHUNTER)
+	!Kit([PC.0.0.PALADIN],INQUISITOR)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.PALADIN],UNDEAD)
+	!CheckStatGT([PC.0.0.PALADIN],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.PALADIN],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.PALADIN],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC.0.0.PALADIN])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.RANGER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.RANGER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.RANGER],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC.0.0.RANGER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.RANGER],0,HELD)
+	!Kit([PC.0.0.RANGER],UNDEADHUNTER)
+	!Kit([PC.0.0.RANGER],INQUISITOR)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.RANGER],UNDEAD)
+	!CheckStatGT([PC.0.0.RANGER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.RANGER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.RANGER],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC.0.0.RANGER])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.FIGHTER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck([PC.0.0.FIGHTER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER],0,HELD)
+	!Kit([PC.0.0.FIGHTER],UNDEADHUNTER)
+	!Kit([PC.0.0.FIGHTER],INQUISITOR)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.FIGHTER],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See([PC.0.0.FIGHTER])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	NumCreature([ENEMY.HUMANOID],1)
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!CheckStatGT(LastSeenBy(Myself),0,HELD)
+	!Kit(LastSeenBy(Myself),UNDEADHUNTER)
+	!Kit(LastSeenBy(Myself),INQUISITOR)
+	!CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY17)
+	!General(LastSeenBy(Myself),UNDEAD)
+	!CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	Global("shapeshift","LOCALS",0)
+	!GlobalTimerNotExpired("earlyhold","LOCALS")
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #80
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+		SetGlobalTimer("earlyhold","LOCALS",TWO_ROUNDS)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See([ENEMY])
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY19)
+	Range([ENEMY],10)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SecondNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY19)
+	Range(SecondNearest([ENEMY]),10)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(ThirdNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY19)
+	Range(ThirdNearest([ENEMY]),10)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FourthNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY19)
+	Range(FourthNearest([ENEMY]),10)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FifthNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!CheckStatGT(FifthNearest([ENEMY]),0,EXTRAPROFICIENCY19)
+	Range(FifthNearest([ENEMY]),10)
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (?????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See([ENEMY])
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck([ENEMY],STATE_CHANT)
+	Range([ENEMY],20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (?????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SecondNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(SecondNearest([ENEMY]),STATE_CHANT)
+	Range(SecondNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (?????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(ThirdNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(ThirdNearest([ENEMY]),STATE_CHANT)
+	Range(ThirdNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (?????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FourthNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(FourthNearest([ENEMY]),STATE_CHANT)
+	Range(FourthNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (?????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FifthNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(FifthNearest([ENEMY]),STATE_CHANT)
+	Range(FifthNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See([ENEMY])
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck([ENEMY],STATE_BLESS)
+	Range([ENEMY],20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SecondNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(SecondNearest([ENEMY]),STATE_BLESS)
+	Range(SecondNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(ThirdNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(ThirdNearest([ENEMY]),STATE_BLESS)
+	Range(ThirdNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FourthNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(FourthNearest([ENEMY]),STATE_BLESS)
+	Range(FourthNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FifthNearest([ENEMY]))
+	GlobalTimerExpired("redefend","LOCALS")
+	NumCreatureGT([ENEMY],3)
+	!StateCheck(FifthNearest([ENEMY]),STATE_BLESS)
+	Range(FifthNearest([ENEMY]),20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	!CheckStat(ThirdNearest([PC]),6,SCRIPTINGSTATE7)
+	See(ThirdNearest([PC]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	!CheckStat(SecondNearest([PC]),6,SCRIPTINGSTATE7)
+	See(SecondNearest([PC]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC],0,SANCTUARY)
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	!CheckStatGT([PC],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	!CheckStat([PC],6,SCRIPTINGSTATE7)
+	See([PC])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.CLERIC],0,SANCTUARY)
+	!StateCheck([PC.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.CLERIC],0,HELD)
+	!CheckStatGT([PC.0.0.CLERIC],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.CLERIC],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.CLERIC],ENEMY)
+	!CheckStat([PC.0.0.CLERIC],6,SCRIPTINGSTATE7)
+	See([PC.0.0.CLERIC])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,SANCTUARY)
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,HELD)
+	!CheckStatGT([PC.0.0.THIEF_ALL],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.THIEF_ALL],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF_ALL],ENEMY)
+	!CheckStat([PC.0.0.THIEF_ALL],6,SCRIPTINGSTATE7)
+	See([PC.0.0.THIEF_ALL])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,SANCTUARY)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,HELD)
+	!CheckStatGT([PC.0.0.MAGE_ALL],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.MAGE_ALL],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_ALL],ENEMY)
+	!CheckStat([PC.0.0.MAGE_ALL],6,SCRIPTINGSTATE7)
+	See([PC.0.0.MAGE_ALL])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	!CheckStat([PC.0.0.BARD],6,SCRIPTINGSTATE7)
+	See([PC.0.0.BARD])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	!CheckStat([PC.0.0.THIEF],6,SCRIPTINGSTATE7)
+	See([PC.0.0.THIEF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,SANCTUARY)
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,HELD)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_THIEF],ENEMY)
+	!CheckStat([PC.0.0.MAGE_THIEF],6,SCRIPTINGSTATE7)
+	See([PC.0.0.MAGE_THIEF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!CheckStatGT([PC.0.0.MAGE],0,SANCTUARY)
+	!StateCheck([PC.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE],0,HELD)
+	!CheckStatGT([PC.0.0.MAGE],50,RESISTMAGIC)
+	!CheckStatGT([PC.0.0.MAGE],50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE],ENEMY)
+	!CheckStat([PC.0.0.MAGE],6,SCRIPTINGSTATE7)
+	See([PC.0.0.MAGE])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HasItem("wand11",Myself)  // ???? ?????
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!CheckStatGT(LastSeenBy(Myself),0,HELD)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	!CheckStat(LastSeenBy(Myself),6,SCRIPTINGSTATE7)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand11",LastSeenBy(Myself))  // ???? ?????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!CheckStatGT(LastSeenBy(Myself),0,HELD)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	!CheckStat(LastSeenBy(Myself),6,SCRIPTINGSTATE7)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #80
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR214.SPL (?????? ?????? ????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Myself,0,SCRIPTINGSTATE6)
+	GlobalTimerExpired("redefend","LOCALS")
+	Range(NearestEnemyOf(Myself),10)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR214.SPL (?????? ?????? ????)
+		SetGlobalTimer("redefend","LOCALS",8)
+	RESPONSE #50
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_CHAOTIC_COMMANDS)  // SPPR508.SPL (????????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY5)
+	GlobalTimerExpired("redefend","LOCALS")
+	!Range(NearestEnemyOf(Myself),10)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CHAOTIC_COMMANDS)  // SPPR508.SPL (????????? ???????)
+		SetGlobalTimer("redefend","LOCALS",8)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
+	!StateCheck(Player2,STATE_NOT_TARGETABLE)
+	!CheckStatGT(Player2,0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Player2,0,SCRIPTINGSTATE9)
+	See(Player2)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(Player2,ENEMY)
+	!StateCheck(Player2,STATE_DISABLED)
+	!CheckStatGT(Player2,0,HELD)
+	!CheckStatGT(Player2,0,EXTRAPROFICIENCY2)
+	!CheckStatGT(Player2,0,EXTRAPROFICIENCY15)
+	!CheckStatGT(Player2,0,SCRIPTINGSTATE9)
+	!CheckStat(Player2,1,EXTRAPROFICIENCY9)
+	!CheckStatGT(Player2,0,MINORGLOBE)
+	!GlobalTimerNotExpired("doomed2","LOCALS")
+	!GlobalTimerNotExpired("doomed","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Player2,CLERIC_DOOM)  // SPPR113.SPL (????????????)
+		SetGlobalTimer("doomed2","LOCALS",ONE_TURN)
+		SetGlobalTimer("doomed","LOCALS",TWO_ROUNDS)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
+	!StateCheck(Player4,STATE_NOT_TARGETABLE)
+	!CheckStatGT(Player4,0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Player4,0,SCRIPTINGSTATE9)
+	See(Player4)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(Player4,ENEMY)
+	!StateCheck(Player4,STATE_DISABLED)
+	!CheckStatGT(Player4,0,HELD)
+	!CheckStatGT(Player4,0,EXTRAPROFICIENCY2)
+	!CheckStatGT(Player4,0,EXTRAPROFICIENCY15)
+	!CheckStatGT(Player4,0,SCRIPTINGSTATE9)
+	!CheckStat(Player4,1,EXTRAPROFICIENCY9)
+	!CheckStatGT(Player4,0,MINORGLOBE)
+	!GlobalTimerNotExpired("doomed4","LOCALS")
+	!GlobalTimerNotExpired("doomed","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Player4,CLERIC_DOOM)  // SPPR113.SPL (????????????)
+		SetGlobalTimer("doomed4","LOCALS",ONE_TURN)
+		SetGlobalTimer("doomed","LOCALS",TWO_ROUNDS)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
+	!StateCheck(Player6,STATE_NOT_TARGETABLE)
+	!CheckStatGT(Player6,0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Player6,0,SCRIPTINGSTATE9)
+	See(Player6)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(Player6,ENEMY)
+	!StateCheck(Player6,STATE_DISABLED)
+	!CheckStatGT(Player6,0,HELD)
+	!CheckStatGT(Player6,0,EXTRAPROFICIENCY2)
+	!CheckStatGT(Player6,0,EXTRAPROFICIENCY15)
+	!CheckStatGT(Player6,0,SCRIPTINGSTATE9)
+	!CheckStat(Player6,1,EXTRAPROFICIENCY9)
+	!CheckStatGT(Player6,0,MINORGLOBE)
+	!GlobalTimerNotExpired("doomed6","LOCALS")
+	!GlobalTimerNotExpired("doomed","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Player6,CLERIC_DOOM)  // SPPR113.SPL (????????????)
+		SetGlobalTimer("doomed6","LOCALS",ONE_TURN)
+		SetGlobalTimer("doomed","LOCALS",TWO_ROUNDS)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
+	!StateCheck(Player1,STATE_NOT_TARGETABLE)
+	!CheckStatGT(Player1,0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Player1,0,SCRIPTINGSTATE9)
+	See(Player1)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(Player1,ENEMY)
+	!StateCheck(Player1,STATE_DISABLED)
+	!CheckStatGT(Player1,0,HELD)
+	!CheckStatGT(Player1,0,EXTRAPROFICIENCY2)
+	!CheckStatGT(Player1,0,EXTRAPROFICIENCY15)
+	!CheckStatGT(Player1,0,SCRIPTINGSTATE9)
+	!CheckStat(Player1,1,EXTRAPROFICIENCY9)
+	!CheckStatGT(Player1,0,MINORGLOBE)
+	!GlobalTimerNotExpired("doomed1","LOCALS")
+	!GlobalTimerNotExpired("doomed","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Player1,CLERIC_DOOM)  // SPPR113.SPL (????????????)
+		SetGlobalTimer("doomed1","LOCALS",ONE_TURN)
+		SetGlobalTimer("doomed","LOCALS",TWO_ROUNDS)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
+	!StateCheck(Player3,STATE_NOT_TARGETABLE)
+	!CheckStatGT(Player3,0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Player3,0,SCRIPTINGSTATE9)
+	See(Player3)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(Player3,ENEMY)
+	!StateCheck(Player3,STATE_DISABLED)
+	!CheckStatGT(Player3,0,HELD)
+	!CheckStatGT(Player3,0,EXTRAPROFICIENCY2)
+	!CheckStatGT(Player3,0,EXTRAPROFICIENCY15)
+	!CheckStatGT(Player3,0,SCRIPTINGSTATE9)
+	!CheckStat(Player3,1,EXTRAPROFICIENCY9)
+	!CheckStatGT(Player3,0,MINORGLOBE)
+	!GlobalTimerNotExpired("doomed3","LOCALS")
+	!GlobalTimerNotExpired("doomed","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Player3,CLERIC_DOOM)  // SPPR113.SPL (????????????)
+		SetGlobalTimer("doomed3","LOCALS",ONE_TURN)
+		SetGlobalTimer("doomed","LOCALS",TWO_ROUNDS)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
+	!StateCheck(Player5,STATE_NOT_TARGETABLE)
+	!CheckStatGT(Player5,0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(Player5,0,SCRIPTINGSTATE9)
+	See(Player5)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(Player5,ENEMY)
+	!StateCheck(Player5,STATE_DISABLED)
+	!CheckStatGT(Player5,0,HELD)
+	!CheckStatGT(Player5,0,EXTRAPROFICIENCY2)
+	!CheckStatGT(Player5,0,EXTRAPROFICIENCY15)
+	!CheckStatGT(Player5,0,SCRIPTINGSTATE9)
+	!CheckStat(Player5,1,EXTRAPROFICIENCY9)
+	!CheckStatGT(Player5,0,MINORGLOBE)
+	!GlobalTimerNotExpired("doomed5","LOCALS")
+	!GlobalTimerNotExpired("doomed","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Player5,CLERIC_DOOM)  // SPPR113.SPL (????????????)
+		SetGlobalTimer("doomed5","LOCALS",ONE_TURN)
+		SetGlobalTimer("doomed","LOCALS",TWO_ROUNDS)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,SCRIPTINGSTATE9)
+	See([PC.0.0.MAGE_ALL])
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.MAGE_ALL],1,EXTRAPROFICIENCY9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_ALL],ENEMY)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,HELD)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.MAGE_ALL],80,SPELLFAILUREPRIEST)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.MAGE_ALL],CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	!StateCheck([PC.0.0.CLERIC_ALL],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,SCRIPTINGSTATE9)
+	See([PC.0.0.CLERIC_ALL])
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.CLERIC_ALL],1,EXTRAPROFICIENCY9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.CLERIC_ALL],ENEMY)
+	!StateCheck([PC.0.0.CLERIC_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,HELD)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.CLERIC_ALL],80,SPELLFAILUREPRIEST)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.CLERIC_ALL],CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	!StateCheck([PC.0.0.DRUID_ALL],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,SCRIPTINGSTATE9)
+	See([PC.0.0.DRUID_ALL])
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.DRUID_ALL],1,EXTRAPROFICIENCY9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.DRUID_ALL],ENEMY)
+	!StateCheck([PC.0.0.DRUID_ALL],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,HELD)
+	!CheckStatGT([PC.0.0.DRUID_ALL],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.DRUID_ALL],80,SPELLFAILUREPRIEST)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.DRUID_ALL],CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	!StateCheck([PC.0.0.BARD],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	See([PC.0.0.BARD])
+	!CheckStatGT([PC.0.0.BARD],0,EXTRAPROFICIENCY2)
+	!CheckStatGT([PC.0.0.BARD],0,EXTRAPROFICIENCY15)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	!CheckStat([PC.0.0.BARD],1,EXTRAPROFICIENCY9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!CheckStatGT([PC.0.0.BARD],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.BARD],80,SPELLFAILUREPRIEST)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.BARD],CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (???????????? ?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_COMMAND)  // SPPR102.SPL (??????)
+	!StateCheck([PC],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	See([PC])
+	Range([PC],6)
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!Kit([PC],UNDEADHUNTER)
+	!Kit([PC],INQUISITOR)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY17)
+	!General([PC],UNDEAD)
+	!CheckStatGT([PC],0,MINORGLOBE)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC],CLERIC_COMMAND)  // SPPR102.SPL (??????)
+		SetGlobalTimer("killhelpless","LOCALS",ONE_ROUND)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_COMMAND)  // SPPR102.SPL (??????)
+	!StateCheck(SecondNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	See(SecondNearest([PC]))
+	Range(SecondNearest([PC]),6)
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!Kit(SecondNearest([PC]),UNDEADHUNTER)
+	!Kit(SecondNearest([PC]),INQUISITOR)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(SecondNearest([PC]),UNDEAD)
+	!CheckStatGT(SecondNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(SecondNearest([PC]),CLERIC_COMMAND)  // SPPR102.SPL (??????)
+		SetGlobalTimer("killhelpless","LOCALS",ONE_ROUND)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_COMMAND)  // SPPR102.SPL (??????)
+	!StateCheck(ThirdNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	See(ThirdNearest([PC]))
+	Range(ThirdNearest([PC]),6)
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!Kit(ThirdNearest([PC]),UNDEADHUNTER)
+	!Kit(ThirdNearest([PC]),INQUISITOR)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(ThirdNearest([PC]),UNDEAD)
+	!CheckStatGT(ThirdNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(ThirdNearest([PC]),CLERIC_COMMAND)  // SPPR102.SPL (??????)
+		SetGlobalTimer("killhelpless","LOCALS",ONE_ROUND)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck(ThirdNearest([PC]),STATE_INVISIBLE)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See(ThirdNearest([PC]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck(SecondNearest([PC]),STATE_INVISIBLE)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See(SecondNearest([PC]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC],STATE_INVISIBLE)
+	!CheckStatGT([PC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.CLERIC],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.CLERIC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.CLERIC],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.CLERIC],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.CLERIC])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.THIEF_ALL],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.THIEF_ALL],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF_ALL],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.THIEF_ALL])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.MAGE_ALL],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.MAGE_ALL],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_ALL],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.MAGE_ALL])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.BARD],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.BARD])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.THIEF],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.THIEF],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.THIEF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.MAGE_THIEF],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.MAGE_THIEF],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE_THIEF],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.MAGE_THIEF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck([PC.0.0.MAGE],STATE_INVISIBLE)
+	!CheckStatGT([PC.0.0.MAGE],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.MAGE],0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.MAGE],ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See([PC.0.0.MAGE])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	Global("shapeshift","LOCALS",0)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #70
+		ApplySpellRES("dw#mgsee",Myself)  // ??????
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_ANIMAL_SUMMONING_2)  // SPPR501.SPL (?????????? ???????? II)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMAL_SUMMONING_1)  // SPPR402.SPL (?????????? ???????? I)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		ApplySpellRES("dw#mgsee",Myself)  // ??????
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_ANIMAL_SUMMONING_1)  // SPPR402.SPL (?????????? ???????? I)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_ANIMATE_DEAD)  // SPPR301.SPL (???????? ??????)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE9)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+THEN
+	RESPONSE #70
+		ApplySpellRES("dw#mgsee",Myself)  // ??????
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_ANIMATE_DEAD)  // SPPR301.SPL (???????? ??????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC.0.0.FIGHTER],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC.0.0.FIGHTER],0,SANCTUARY)
+	See([PC.0.0.FIGHTER])
+	!StateCheck([PC.0.0.FIGHTER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER],0,HELD)
+	!Kit([PC.0.0.FIGHTER],UNDEADHUNTER)
+	!Kit([PC.0.0.FIGHTER],INQUISITOR)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.FIGHTER],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC.0.0.FIGHTER])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC.0.0.RANGER],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC.0.0.RANGER],0,SANCTUARY)
+	See([PC.0.0.RANGER])
+	!StateCheck([PC.0.0.RANGER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.RANGER],0,HELD)
+	!Kit([PC.0.0.RANGER],UNDEADHUNTER)
+	!Kit([PC.0.0.RANGER],INQUISITOR)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.RANGER],UNDEAD)
+	!CheckStatGT([PC.0.0.RANGER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.RANGER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.RANGER],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC.0.0.RANGER])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC.0.0.PALADIN],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC.0.0.PALADIN],0,SANCTUARY)
+	See([PC.0.0.PALADIN])
+	!StateCheck([PC.0.0.PALADIN],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.PALADIN],0,HELD)
+	!Kit([PC.0.0.PALADIN],UNDEADHUNTER)
+	!Kit([PC.0.0.PALADIN],INQUISITOR)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.PALADIN],UNDEAD)
+	!CheckStatGT([PC.0.0.PALADIN],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.PALADIN],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.PALADIN],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC.0.0.PALADIN])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SANCTUARY)
+	See([PC.0.0.FIGHTER_THIEF])
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,HELD)
+	!Kit([PC.0.0.FIGHTER_THIEF],UNDEADHUNTER)
+	!Kit([PC.0.0.FIGHTER_THIEF],INQUISITOR)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.FIGHTER_THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER_THIEF],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC.0.0.FIGHTER_THIEF])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC.0.0.BARD],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	See([PC.0.0.BARD])
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!Kit([PC.0.0.BARD],UNDEADHUNTER)
+	!Kit([PC.0.0.BARD],INQUISITOR)
+	!CheckStatGT([PC.0.0.BARD],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.BARD],UNDEAD)
+	!CheckStatGT([PC.0.0.BARD],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC.0.0.BARD])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC.0.0.THIEF],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	See([PC.0.0.THIEF])
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!Kit([PC.0.0.THIEF],UNDEADHUNTER)
+	!Kit([PC.0.0.THIEF],INQUISITOR)
+	!CheckStatGT([PC.0.0.THIEF],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC.0.0.THIEF])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck([PC],STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT([PC],0,SANCTUARY)
+	See([PC])
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!Kit([PC],UNDEADHUNTER)
+	!Kit([PC],INQUISITOR)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY17)
+	!General([PC],UNDEAD)
+	!CheckStatGT([PC],0,MINORGLOBE)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",[PC])  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(SecondNearest([PC]),STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	See(SecondNearest([PC]))
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!Kit(SecondNearest([PC]),UNDEADHUNTER)
+	!Kit(SecondNearest([PC]),INQUISITOR)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(SecondNearest([PC]),UNDEAD)
+	!CheckStatGT(SecondNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",SecondNearest([PC]))  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(ThirdNearest([PC]),STATE_INVISIBLE)
+	HasItem("wand04",Myself)  // ???? ???????????
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	See(ThirdNearest([PC]))
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!Kit(ThirdNearest([PC]),UNDEADHUNTER)
+	!Kit(ThirdNearest([PC]),INQUISITOR)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(ThirdNearest([PC]),UNDEAD)
+	!CheckStatGT(ThirdNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+	Global("shapeshift","LOCALS",0)
+THEN
+	RESPONSE #70
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand04",ThirdNearest([PC]))  // ???? ???????????
+		SetInterrupt(TRUE)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC.0.0.FIGHTER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER])
+	!StateCheck([PC.0.0.FIGHTER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER],0,HELD)
+	!Kit([PC.0.0.FIGHTER],INQUISITOR)
+	!Race([PC.0.0.FIGHTER],ELF)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.FIGHTER],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC.0.0.RANGER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.RANGER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.RANGER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.RANGER])
+	!StateCheck([PC.0.0.RANGER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.RANGER],0,HELD)
+	!Kit([PC.0.0.RANGER],INQUISITOR)
+	!Race([PC.0.0.RANGER],ELF)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.RANGER],UNDEAD)
+	!CheckStatGT([PC.0.0.RANGER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.RANGER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.RANGER],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.RANGER],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC.0.0.PALADIN],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.PALADIN],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.PALADIN],0,SCRIPTINGSTATE9)
+	See([PC.0.0.PALADIN])
+	!StateCheck([PC.0.0.PALADIN],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.PALADIN],0,HELD)
+	!Kit([PC.0.0.PALADIN],INQUISITOR)
+	!Race([PC.0.0.PALADIN],ELF)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.PALADIN],UNDEAD)
+	!CheckStatGT([PC.0.0.PALADIN],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.PALADIN],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.PALADIN],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.PALADIN],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER_THIEF])
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,HELD)
+	!Kit([PC.0.0.FIGHTER_THIEF],INQUISITOR)
+	!Race([PC.0.0.FIGHTER_THIEF],ELF)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.FIGHTER_THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER_THIEF],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER_THIEF],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC.0.0.BARD],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	See([PC.0.0.BARD])
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!Kit([PC.0.0.BARD],INQUISITOR)
+	!Race([PC.0.0.BARD],ELF)
+	!CheckStatGT([PC.0.0.BARD],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.BARD],UNDEAD)
+	!CheckStatGT([PC.0.0.BARD],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.BARD],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC.0.0.THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.THIEF])
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!Kit([PC.0.0.THIEF],INQUISITOR)
+	!Race([PC.0.0.THIEF],ELF)
+	!CheckStatGT([PC.0.0.THIEF],0,EXTRAPROFICIENCY5)
+	!General([PC.0.0.THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.THIEF],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck([PC],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	See([PC])
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!Kit([PC],INQUISITOR)
+	!Race([PC],ELF)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY5)
+	!General([PC],UNDEAD)
+	!CheckStatGT([PC],0,MINORGLOBE)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC],CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck(SecondNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	See(SecondNearest([PC]))
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!Kit(SecondNearest([PC]),INQUISITOR)
+	!Race(SecondNearest([PC]),ELF)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY5)
+	!General(SecondNearest([PC]),UNDEAD)
+	!CheckStatGT(SecondNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(SecondNearest([PC]),CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!StateCheck(ThirdNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	See(ThirdNearest([PC]))
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!Kit(ThirdNearest([PC]),INQUISITOR)
+	!Race(ThirdNearest([PC]),ELF)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY5)
+	!General(ThirdNearest([PC]),UNDEAD)
+	!CheckStatGT(ThirdNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(ThirdNearest([PC]),CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.FIGHTER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER])
+	!StateCheck([PC.0.0.FIGHTER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER],0,HELD)
+	!Kit([PC.0.0.FIGHTER],UNDEADHUNTER)
+	!Kit([PC.0.0.FIGHTER],INQUISITOR)
+	!CheckStatGT([PC.0.0.FIGHTER],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.FIGHTER],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.RANGER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.RANGER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.RANGER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.RANGER])
+	!StateCheck([PC.0.0.RANGER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.RANGER],0,HELD)
+	!Kit([PC.0.0.RANGER],UNDEADHUNTER)
+	!Kit([PC.0.0.RANGER],INQUISITOR)
+	!CheckStatGT([PC.0.0.RANGER],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.RANGER],UNDEAD)
+	!CheckStatGT([PC.0.0.RANGER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.RANGER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.RANGER],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.RANGER],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.PALADIN],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.PALADIN],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.PALADIN],0,SCRIPTINGSTATE9)
+	See([PC.0.0.PALADIN])
+	!StateCheck([PC.0.0.PALADIN],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.PALADIN],0,HELD)
+	!Kit([PC.0.0.PALADIN],UNDEADHUNTER)
+	!Kit([PC.0.0.PALADIN],INQUISITOR)
+	!CheckStatGT([PC.0.0.PALADIN],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.PALADIN],UNDEAD)
+	!CheckStatGT([PC.0.0.PALADIN],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.PALADIN],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.PALADIN],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.PALADIN],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER_THIEF])
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,HELD)
+	!Kit([PC.0.0.FIGHTER_THIEF],UNDEADHUNTER)
+	!Kit([PC.0.0.FIGHTER_THIEF],INQUISITOR)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.FIGHTER_THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER_THIEF],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER_THIEF],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.BARD],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	See([PC.0.0.BARD])
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!Kit([PC.0.0.BARD],UNDEADHUNTER)
+	!Kit([PC.0.0.BARD],INQUISITOR)
+	!CheckStatGT([PC.0.0.BARD],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.BARD],UNDEAD)
+	!CheckStatGT([PC.0.0.BARD],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.BARD],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC.0.0.THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.THIEF])
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!Kit([PC.0.0.THIEF],UNDEADHUNTER)
+	!Kit([PC.0.0.THIEF],INQUISITOR)
+	!CheckStatGT([PC.0.0.THIEF],0,EXTRAPROFICIENCY17)
+	!General([PC.0.0.THIEF],UNDEAD)
+	!CheckStatGT([PC.0.0.THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.THIEF],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck([PC],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	See([PC])
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!Kit([PC],UNDEADHUNTER)
+	!Kit([PC],INQUISITOR)
+	!CheckStatGT([PC],0,EXTRAPROFICIENCY17)
+	!General([PC],UNDEAD)
+	!CheckStatGT([PC],0,MINORGLOBE)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC],CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck(SecondNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	See(SecondNearest([PC]))
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!Kit(SecondNearest([PC]),UNDEADHUNTER)
+	!Kit(SecondNearest([PC]),INQUISITOR)
+	!CheckStatGT(SecondNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(SecondNearest([PC]),UNDEAD)
+	!CheckStatGT(SecondNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(SecondNearest([PC]),CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!StateCheck(ThirdNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	See(ThirdNearest([PC]))
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!Kit(ThirdNearest([PC]),UNDEADHUNTER)
+	!Kit(ThirdNearest([PC]),INQUISITOR)
+	!CheckStatGT(ThirdNearest([PC]),0,EXTRAPROFICIENCY17)
+	!General(ThirdNearest([PC]),UNDEAD)
+	!CheckStatGT(ThirdNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(ThirdNearest([PC]),CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC.0.0.FIGHTER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER])
+	!StateCheck([PC.0.0.FIGHTER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER],0,HELD)
+	!CheckStatGT([PC.0.0.FIGHTER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC.0.0.RANGER],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.RANGER],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.RANGER],0,SCRIPTINGSTATE9)
+	See([PC.0.0.RANGER])
+	!StateCheck([PC.0.0.RANGER],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.RANGER],0,HELD)
+	!CheckStatGT([PC.0.0.RANGER],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.RANGER],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.RANGER],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.RANGER],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC.0.0.PALADIN],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.PALADIN],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.PALADIN],0,SCRIPTINGSTATE9)
+	See([PC.0.0.PALADIN])
+	!StateCheck([PC.0.0.PALADIN],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.PALADIN],0,HELD)
+	!CheckStatGT([PC.0.0.PALADIN],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.PALADIN],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.PALADIN],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.PALADIN],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.FIGHTER_THIEF])
+	!StateCheck([PC.0.0.FIGHTER_THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,HELD)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.FIGHTER_THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.FIGHTER_THIEF],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.FIGHTER_THIEF],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC.0.0.BARD],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.BARD],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.BARD],0,SCRIPTINGSTATE9)
+	See([PC.0.0.BARD])
+	!StateCheck([PC.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.BARD],0,HELD)
+	!CheckStatGT([PC.0.0.BARD],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.BARD],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.BARD],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.BARD],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC.0.0.THIEF],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC.0.0.THIEF],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC.0.0.THIEF],0,SCRIPTINGSTATE9)
+	See([PC.0.0.THIEF])
+	!StateCheck([PC.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([PC.0.0.THIEF],0,HELD)
+	!CheckStatGT([PC.0.0.THIEF],0,MINORGLOBE)
+	!CheckStatGT([PC.0.0.THIEF],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC.0.0.THIEF],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC.0.0.THIEF],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck([PC],STATE_NOT_TARGETABLE)
+	!CheckStatGT([PC],0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT([PC],0,SCRIPTINGSTATE9)
+	See([PC])
+	!StateCheck([PC],STATE_DISABLED)
+	!CheckStatGT([PC],0,HELD)
+	!CheckStatGT([PC],0,MINORGLOBE)
+	!CheckStatGT([PC],50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance([PC],ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell([PC],CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck(SecondNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(SecondNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(SecondNearest([PC]),0,SCRIPTINGSTATE9)
+	See(SecondNearest([PC]))
+	!StateCheck(SecondNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([PC]),0,HELD)
+	!CheckStatGT(SecondNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(SecondNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearest([PC]),ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(SecondNearest([PC]),CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	!StateCheck(ThirdNearest([PC]),STATE_NOT_TARGETABLE)
+	!CheckStatGT(ThirdNearest([PC]),0,SANCTUARY)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	!CheckStatGT(ThirdNearest([PC]),0,SCRIPTINGSTATE9)
+	See(ThirdNearest([PC]))
+	!StateCheck(ThirdNearest([PC]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([PC]),0,HELD)
+	!CheckStatGT(ThirdNearest([PC]),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearest([PC]),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearest([PC]),ENEMY)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(ThirdNearest([PC]),CLERIC_RIGID_THINKING)  // SPPR311.SPL (????????? ????????)
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(NearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(NearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(NearestEnemyOf(Myself),0,HELD)
+	!Kit(NearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(NearestEnemyOf(Myself),0,TRAPSCP)
+	!General(NearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(NearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(NearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(NearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HELD)
+	!Kit(SecondNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(SecondNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SecondNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HELD)
+	!Kit(ThirdNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(ThirdNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(ThirdNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,HELD)
+	!Kit(FourthNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(FourthNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(FourthNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,HELD)
+	!Kit(FifthNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(FifthNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(FifthNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,HELD)
+	!Kit(SixthNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(SixthNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SixthNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(SeventhNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(SeventhNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,HELD)
+	!Kit(SeventhNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(SeventhNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(SeventhNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(SeventhNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(EighthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,SANCTUARY)
+	!StateCheck(EighthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,HELD)
+	!Kit(EighthNearestEnemyOf(Myself),CAVALIER)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,TRAPSCP)
+	!General(EighthNearestEnemyOf(Myself),UNDEAD)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,MINORGLOBE)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(EighthNearestEnemyOf(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(EighthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HasItem("wand02",Myself)  // ???? ??????
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	CheckStatLT(Player1,5,LEVEL)
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!CheckStatGT(LastSeenBy(Myself),0,HELD)
+	!Kit(LastSeenBy(Myself),CAVALIER)
+	!CheckStatGT(LastSeenBy(Myself),0,TRAPSCP)
+	!General(LastSeenBy(Myself),UNDEAD)
+	!CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand02",LastSeenBy(Myself))  // ???? ??????
+		SetInterrupt(TRUE)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HasItem("wand02",Myself)  // ???? ??????
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!CheckStatGT(LastSeenBy(Myself),0,HELD)
+	!Kit(LastSeenBy(Myself),CAVALIER)
+	!CheckStatGT(LastSeenBy(Myself),0,TRAPSCP)
+	!General(LastSeenBy(Myself),UNDEAD)
+	!CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	Allegiance(Myself,ENEMY)
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	!General(Myself,UNDEAD)
+	!Class(Myself,SKELETON_WARRIOR)
+	Global("shapeshift","LOCALS",0)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,31971)  // *?????????? ????*
+		UseItem("wand02",LastSeenBy(Myself))  // ???? ??????
+		SetInterrupt(TRUE)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(NearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(NearestEnemyOf(Myself),ENEMY)
+	!CheckStat(NearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SecondNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(SecondNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(SecondNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(SecondNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(ThirdNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(ThirdNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(ThirdNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(ThirdNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FourthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(FourthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(FourthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(FourthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FifthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(FifthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(FifthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(FifthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SixthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(SixthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(SixthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(SixthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SeventhNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(SeventhNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(SeventhNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(SeventhNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(EighthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(EighthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(EighthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(EighthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(NearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(NearestEnemyOf(Myself),ENEMY)
+	!CheckStat(NearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SecondNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(SecondNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(SecondNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(SecondNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(ThirdNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(ThirdNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(ThirdNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(ThirdNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FourthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(FourthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(FourthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(FourthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(FifthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(FifthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(FifthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(FifthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SixthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(SixthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(SixthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(SixthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(SeventhNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(SeventhNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(SeventhNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(SeventhNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	HaveSpell(CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+	See(EighthNearestEnemyOf(Myself))
+	!CheckStatGT(FourthNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT(SecondNearest([ENEMY]),0,EXTRAPROFICIENCY4)
+	!CheckStatGT([ENEMY],0,EXTRAPROFICIENCY4)
+	!CheckStatGT(Myself,0,EXTRAPROFICIENCY4)
+	OR(4)
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_INVISIBLE)
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		Gender(EighthNearestEnemyOf(Myself),ILLUSIONARY)
+	!Allegiance(EighthNearestEnemyOf(Myself),ENEMY)
+	!CheckStat(EighthNearestEnemyOf(Myself),3,SCRIPTINGSTATE7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_INVISIBILITY_PURGE)  // SPPR309.SPL (?????? ???????????)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	Global("shapeshift","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+	OR(3)
+		!See(Player1)
+		StateCheck(Player1,STATE_IMMOBILE)
+		CheckStatGT(Player1,0,HELD)
+	OR(3)
+		!See(Player2)
+		StateCheck(Player2,STATE_IMMOBILE)
+		CheckStatGT(Player2,0,HELD)
+	OR(3)
+		!See(Player3)
+		StateCheck(Player3,STATE_IMMOBILE)
+		CheckStatGT(Player3,0,HELD)
+	OR(3)
+		!See(Player4)
+		StateCheck(Player4,STATE_IMMOBILE)
+		CheckStatGT(Player4,0,HELD)
+	OR(3)
+		!See(Player5)
+		StateCheck(Player5,STATE_IMMOBILE)
+		CheckStatGT(Player5,0,HELD)
+	OR(3)
+		!See(Player6)
+		StateCheck(Player6,STATE_IMMOBILE)
+		CheckStatGT(Player6,0,HELD)
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("willmelee","LOCALS",1000)
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+END
+

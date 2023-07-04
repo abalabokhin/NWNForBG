@@ -1,0 +1,79 @@
+IF
+	OR(11)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+		SpellCastOnMe([FAMILIAR],0)
+		SpellCastOnMe([ALLY],0)
+		SpellCastOnMe([CONTROLLED],0)
+		SpellCastOnMe([CHARMED],0)
+	!GlobalTimerNotExpired("MyString","LOCALS")
+	GlobalLT("KaohionQuest","GLOBAL",3)
+THEN
+	RESPONSE #100
+		PlaySound("Tanar04")
+		DisplayStringHead(Myself,102920)  // ??????! ???? ?????? ?????, ???? ????? ???...  ? ???????? ????? ??????.
+		SetGlobalTimer("MyString","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	Range([PC],20)
+	Delay(2)
+	Global("KaohionQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		MoveViewObject(Myself,INSTANT)
+		ClearAllActions()
+		StartCutSceneMode()
+		PlaySound("Tanar01")
+		DisplayStringHead(Myself,102921)  // ?????!!! ?? ?? ??? ?????????!!! ???? ??????? ??????????????!!! ?? ?????? ????????!!! ????????????!!!
+		Wait(1)
+		CreateVisualEffectObject("spflsrin",Myself)
+		Wait(1)
+		CreateVisualEffectObject("sppowrrd",Myself)
+		Wait(2)
+		CreateVisualEffectObject("spfirepi",Myself)
+		Wait(1)
+		CreateVisualEffectObject("spplanar",Myself)
+		Wait(2)
+		SetGlobal("KaohionQuest","GLOBAL",6)
+		EndCutSceneMode()
+		DestroySelf()
+END
+
+IF
+	Global("KaohionQuest","GLOBAL",3)
+	Global("Visual","LOCALS",0)
+	Range([PC],20)
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("spfirepi",Myself)
+		Wait(2)
+		SetGlobal("Visual","LOCALS",1)
+		Continue()
+END
+
+IF
+	Range([PC],20)
+	See([PC])
+	Delay(2)
+	Global("KaohionQuest","GLOBAL",3)
+	Global("Visual","LOCALS",1)
+THEN
+	RESPONSE #100
+		PlaySound("Tanar04")
+		StartDialogueNoSet(LastTrigger)
+END
+
+IF
+	Global("KaohionQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,DRYAD_TELEPORT)  // SPWI995.SPL (????? ?????????)
+END
+

@@ -1,0 +1,71 @@
+IF
+	Die()
+	!Global("JaregQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		Wait(5)
+		ApplySpellRES("CHFEM1",Myself)  // ???????????
+END
+
+IF
+	Global("JaregQuest","GLOBAL",5)
+	Global("MyDead","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MyDead","LOCALS",1)
+		CreateCreatureObjectOffset("Skelarn2",Myself,[15.0])  // ??????-??????
+END
+
+IF
+	OR(2)
+		TookDamage()
+		HPPercentLT(Myself,100)
+	Race(LeastDamagedOf(Myself),SKELETON)
+THEN
+	RESPONSE #100
+		Kill(Myself)
+END
+
+IF
+	Global("Run","LOCALS",1)
+	Delay(10)
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",0)
+		MoveToPointNoInterrupt([1396.1287])
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Global("JaregQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),150)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	!Global("JaregQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastAttackerOf(Myself),150)
+END
+
+IF
+	Global("Run","LOCALS",0)
+	ActionListEmpty()
+	!Global("JaregQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("Run","LOCALS",1)
+		RandomWalk()
+END
+

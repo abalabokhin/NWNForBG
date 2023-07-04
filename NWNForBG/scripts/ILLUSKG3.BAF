@@ -1,0 +1,44 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,WIZARD_ICE_STORM)  // SPWI404.SPL (??????? ?????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("MyString","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MyString","LOCALS",1)
+		DisplayStringHead(Myself,102870)  // ???? ???? ????? ???????? ? ????? ???????, ????????!
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		SelectWeaponAbility(SLOT_WEAPON0,1)
+		SelectWeaponAbility(SLOT_WEAPON1,1)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SelectWeaponAbility(SLOT_WEAPON0,0)
+		SelectWeaponAbility(SLOT_WEAPON1,0)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SelectWeaponAbility(SLOT_WEAPON0,0)
+		SelectWeaponAbility(SLOT_WEAPON1,0)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

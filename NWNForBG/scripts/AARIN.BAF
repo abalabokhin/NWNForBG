@@ -1,0 +1,258 @@
+IF
+	Global("Start","LOCALS",0)
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		SetGlobal("Start","LOCALS",1)
+END
+
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("RR#FEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("MaeAttack","LOCALS",1)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_SHADOW_DOOR)  // SPWI505.SPL (??????? ?????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SHADOW_DOOR)  // SPWI505.SPL (??????? ?????)
+		SetGlobal("Behavior","LOCALS",1)
+END
+
+IF
+	GlobalGT("Behavior","LOCALS",0)
+	GlobalLT("Behavior","LOCALS",9)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",9)
+END
+
+IF
+	Global("Behavior","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",2)
+		ApplySpell(Myself,WIZARD_SPIRIT_ARMOR)  // SPWI414.SPL (???????? ??????)
+END
+
+IF
+	HaveSpell(WIZARD_STRENGTH)  // SPWI214.SPL (????)
+	Global("Behavior","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",3)
+		Spell(Myself,WIZARD_STRENGTH)  // SPWI214.SPL (????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MINOR_SPELL_TURNING)  // SPWI522.SPL (????? ????????? ??????????)
+	Global("Behavior","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",4)
+		Spell(Myself,WIZARD_MINOR_SPELL_TURNING)  // SPWI522.SPL (????? ????????? ??????????)
+		Wait(2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_PHANTOM_BLADE)  // SPWI518.SPL (?????????? ??????)
+	Global("Behavior","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",5)
+		Spell(Myself,WIZARD_PHANTOM_BLADE)  // SPWI518.SPL (?????????? ??????)
+		Wait(2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+	Global("Behavior","LOCALS",5)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",6)
+		Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+		Wait(2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_TENSERS_TRANSFORMATION)  // SPWI603.SPL (????????????? ???????)
+	Global("Behavior","LOCALS",6)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",7)
+		Spell(Myself,WIZARD_TENSERS_TRANSFORMATION)  // SPWI603.SPL (????????????? ???????)
+		SetGlobal("MaeAttack","LOCALS",1)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	Allegiance(Myself,ENEMY)
+	HaveSpell(WIZARD_POWER_WORD_SILENCE)  // SPWI612.SPL (????? ????: ????????)
+	OR(3)
+		Detect([PC.0.0.CLERIC])
+		Detect([PC.0.0.CLERIC_MAGE])
+		Detect([PC.0.0.MAGE])
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_SILENCE)  // SPWI612.SPL (????? ????: ????????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)  // SPWI812.SPL (?????? ???????? ???-????????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)  // SPWI812.SPL (?????? ???????? ???-????????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (?????????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_HASTE)  // SPWI305.SPL (?????????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),4)
+	HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+THEN
+	RESPONSE #70
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself))
+	RESPONSE #30
+		Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FIREBALL)  // SPWI304.SPL (???????? ???)
+	!Range(NearestEnemyOf(Myself),8)
+	!See(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (???????? ???)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MONSTER_SUMMONING_3)  // SPWI504.SPL (?????????? ???????? III)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MONSTER_SUMMONING_3)  // SPWI504.SPL (?????????? ???????? III)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI503.SPL (????? ??????)
+	!Range(NearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)  // SPWI503.SPL (????? ??????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (????? ??????????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CHAOS)  // SPWI508.SPL (????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CHAOS)  // SPWI508.SPL (????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+END
+
+IF
+	Global("Behavior","LOCALS",9)
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #30
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+	RESPONSE #30
+		EquipRanged()
+		AttackReevaluate(SecondNearestEnemyOf(Myself),30)
+	RESPONSE #30
+		EquipRanged()
+		AttackReevaluate(ThirdNearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #30
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

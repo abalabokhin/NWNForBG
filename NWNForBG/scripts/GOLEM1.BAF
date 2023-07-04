@@ -1,0 +1,19 @@
+IF
+	Global("Door1Opened","MYAREA",1)
+	Global("Moved","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Moved","LOCALS",1)
+		MoveToPointNoInterrupt([2965.1689])
+		Face(0)
+END
+
+IF
+	Global("Door1Opened","MYAREA",1)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ApplySpellRES("STONGNW",Myself)  // No such index
+END
+

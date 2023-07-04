@@ -1,0 +1,144 @@
+IF
+	Range([PC],15)
+	NumTimesTalkedTo(0)
+	See([PC])
+	OR(2)
+		Allegiance(Myself,NEUTRAL)
+		Allegiance(Myself,GOODBUTBLUE)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("RR#PICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("RR#FEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	HPPercentLT(Myself,40)
+	GlobalLT("Attack","LOCALS",2)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartCutSceneMode()
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Attack","LOCALS",2)
+		ClearAllActions()
+		Wait(1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		Wait(2)
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)  // SPIN746.SPL (No such index)
+		DestroyItem("MIN1HP")  // No such index
+		EndCutSceneMode()
+		StartDialogueNoSet(LastTrigger)
+END
+
+IF
+	Global("Attack","LOCALS",3)
+	Global("StoneSkinReset","LOCALS",0)
+	GlobalGT("StoneSkin","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("StoneSkin","LOCALS",0)
+		SetGlobal("StoneSkinReset","LOCALS",1)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("Attack","LOCALS",0)
+	Global("Prepare1","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prepare1","LOCALS",1)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (?????????? ?????)
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		ReallyForceSpell(Myself,WIZARD_SPELL_TRAP)  // SPWI902.SPL (??????? ??????????)
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	CheckStatLT(Myself,1,STONESKINS)
+	!GlobalTimerNotExpired("Prep","LOCALS")
+	GlobalLT("StoneSkin","LOCALS",5)
+	RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Prep","LOCALS",TWO_ROUNDS)
+		IncrementGlobal("StoneSkin","LOCALS",1)
+		ForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		ForceSpell(Myself,WIZARD_SHIELD)  // SPWI114.SPL (???)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	CheckStatLT(Myself,1,STONESKINS)
+	!GlobalTimerNotExpired("Prep","LOCALS")
+	GlobalLT("StoneSkin","LOCALS",5)
+	RandomNum(2,2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Prep","LOCALS",TWO_ROUNDS)
+		IncrementGlobal("StoneSkin","LOCALS",1)
+		ForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)  // SPWI907.SPL (?????????? ?????????)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(2)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		HitBy([GOODCUTOFF],CRUSHING)
+	!Global("Attack","LOCALS",1)
+	!Global("Attack","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobal("StoneSkin","LOCALS",0)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (?????????? ?????)
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI602.SPL (????? ????????????)
+		ReallyForceSpell(Myself,WIZARD_SPELL_TRAP)  // SPWI902.SPL (??????? ??????????)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)  // SPWI418.SPL (??????? ???????? ???)
+		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+		ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (???????? ???????)
+		ReallyForceSpellRES("SPCL665T",Myself)  // ??? ????????
+		Enemy()
+END
+

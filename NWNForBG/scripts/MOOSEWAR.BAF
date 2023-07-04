@@ -1,0 +1,36 @@
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("MooseHastile","MYAREA",1)
+		Enemy()
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	AreaCheck("NW3201")
+	Global("ZokanHostile","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ZokanHostile","GLOBAL",1)
+		Enemy()
+END
+
+IF
+	Global("MooseHastile","MYAREA",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Global("ZokanHostile","GLOBAL",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

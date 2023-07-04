@@ -1,0 +1,17 @@
+IF
+	!Range([PC],8)
+	See([0.0.IMP])
+THEN
+	RESPONSE #100
+		AttackOneRound(LastTrigger)
+END
+
+IF
+	Range([PC],8)
+	See([PC])
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,103657)  // ?? ??????, ??????, ??????, ??-??-??!
+		ChangeAIScript("",OVERRIDE)
+END
+

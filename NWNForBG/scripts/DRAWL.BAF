@@ -1,0 +1,12 @@
+IF
+	See([PC])
+	Range(LastSeenBy,15)
+	Global("DrawlScene","NW1220",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DrawlScene","NW1220",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("Drawl1")
+END
+

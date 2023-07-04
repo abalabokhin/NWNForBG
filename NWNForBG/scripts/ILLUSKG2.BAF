@@ -1,0 +1,98 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,ILLUSION_DEATH)  // SPIN835.SPL (No such index)
+		Wait(1)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),15)
+	Range(SecondNearestEnemyOf(Myself),15)
+	Global("MyString","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MyString","LOCALS",1)
+		DisplayStringHead(Myself,102869)  // ????? ???????? ???????? ????? ???????? ??? ??????.
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),15)
+	Range(SecondNearestEnemyOf(Myself),15)
+	!GlobalTimerNotExpired("warcry","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("warcry","LOCALS",1000)
+		SpellNoDec(Myself,WARRIOR_WAR_CRY)  // SPCL908.SPL (?????? ????)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN55",Myself)  // ????? ????????????? ???????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+		UseItem("POTN55",Myself)  // ????? ????????????? ???????
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Range(NearestEnemyOf(Myself),8)
+	!GlobalTimerNotExpired("WhirlwindAttack","LOCALS")
+	GlobalLT("WhirlwindUsed","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("WhirlwindAttack","LOCALS",ONE_ROUND)
+		IncrementGlobal("WhirlwindUsed","LOCALS",1)
+		ReallyForceSpellRES("SPCL900",Myself)  // ???????? ?????
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	RandomNum(2,1)
+	Range(NearestEnemyOf(Myself),10)
+	!StateCheck(Myself,STATE_HASTED)
+	!CheckStatGT(Myself,4,NUMBEROFATTACKS)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN14",Myself)  // ????? ????????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // *??????? ?????*
+		UseItem("POTN14",Myself)  // ????? ????????
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	GlobalLT("KaiUsed","LOCALS",5)
+	Range(LastSeenBy(Myself),6)
+	!GlobalTimerNotExpired("KaiAttack","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("KaiAttack","LOCALS",TWO_MINUTES)
+		IncrementGlobal("KaiUsed","LOCALS",1)
+		ReallyForceSpellRES("SPCL144",Myself)  // ???
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+

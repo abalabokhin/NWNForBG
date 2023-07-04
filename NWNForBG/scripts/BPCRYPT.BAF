@@ -1,0 +1,9 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("CastHorror","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(LastSeenBy(Myself),WIZARD_HORROR)  // SPWI205.SPL (????)
+		SetGlobal("CastHorror","LOCALS",1)
+END
+

@@ -1,0 +1,10 @@
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+	!GlobalTimerNotExpired("MyString","LOCALS")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,89933)  // ??? ????? ?????????? ? ????.
+		SetGlobalTimer("MyString","LOCALS",TWO_ROUNDS)
+END
+

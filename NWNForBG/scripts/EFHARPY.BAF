@@ -1,0 +1,11 @@
+IF
+	!Global("EFHARPY_inactive","LOCALS",1)
+	LOS([PC],25)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SPIN138",Myself)  // No such index
+		SetGlobal("EFHARPY_inactive","LOCALS",1)
+	RESPONSE #50
+		Continue()
+END
+

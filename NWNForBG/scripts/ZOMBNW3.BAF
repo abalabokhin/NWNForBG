@@ -1,0 +1,24 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,WIZARD_CLOUDKILL)  // SPWI502.SPL (???????????? ??????)
+END
+
+IF
+	Global("ZombieSpell","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ZombieSpell","LOCALS",1)
+		SetGlobalTimer("SeaZombieLord","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("SeaZombieLord","LOCALS")
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),ZOMBIE_LEVEL_DRAIN)  // SPIN666.SPL (??????????? ???????)
+		SetGlobalTimer("SeaZombieLord","LOCALS",TWO_MINUTES)
+END
+
