@@ -1,0 +1,13 @@
+[NWNForBG/scripts/BPGPHEAL.BAF] PARSE ERROR at line 946 column 16-65
+Near Text: )
+        [StateCheck] argument [STATE_OUT_OF_ACTION] not found in [State.IDS]
+
+[NWNForBG/scripts/BPMAG12A.BAF] PARSE ERROR at line 1069 column 16-61
+Near Text: )
+        [StateCheck] argument [STATE_ENCHANTED] not found in [State.IDS]
+
+[NWNForBG/scripts/NYMPHNW1.BAF] PARSE ERROR at line 1046 column 8-41
+Near Text: )
+        [StateCheck] argument [RZ_STATE_DISPEL] not found in [State.IDS]
+
+Don't know where to get this states - not in BGT version"
