@@ -44,7 +44,7 @@ IF
 	Range(NearestEnemyOf(Myself),2)
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #80
 		RunAwayFrom(NearestEnemyOf(Myself),4)
@@ -171,7 +171,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HELP83)
+		Shout(HEALME_83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -188,7 +188,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HELP83)
+		Shout(HEALME_83)
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
 
@@ -230,9 +230,9 @@ IF
 		See([GOODCUTOFF.0.0.DRUID_ALL])
 		See([GOODCUTOFF.0.0.MAGE_ALL])
 		See([GOODCUTOFF.0.0.SORCERER])
-	CheckStat(Myself,0,EXTRAPROFICIENCY15)
-	CheckStat(Myself,0,SCRIPTINGSTATE9)
-	CheckStat(Myself,0,EXTRAPROFICIENCY2)
+	CheckStat(Myself,0,WIZARD_SPELL_TURNING)
+	CheckStat(Myself,0,WIZARD_SPELL_TRAP)
+	CheckStat(Myself,0,WIZARD_SPELL_DEFLECTION)
 	RandomNumLT(7,3)
 THEN
 	RESPONSE #100
@@ -293,9 +293,9 @@ IF
 		See([GOODCUTOFF.0.0.DRUID_ALL])
 		See([GOODCUTOFF.0.0.MAGE_ALL])
 		See([GOODCUTOFF.0.0.SORCERER])
-	CheckStat(Myself,0,EXTRAPROFICIENCY15)
-	CheckStat(Myself,0,SCRIPTINGSTATE9)
-	CheckStat(Myself,0,EXTRAPROFICIENCY2)
+	CheckStat(Myself,0,WIZARD_SPELL_TURNING)
+	CheckStat(Myself,0,WIZARD_SPELL_TRAP)
+	CheckStat(Myself,0,WIZARD_SPELL_DEFLECTION)
 	CheckStat(Myself,0,SHIELDGLOBE)
 	CheckStat(Myself,0,MINORGLOBE)
 	RandomNumLT(14,4)
@@ -333,7 +333,7 @@ IF
 	CheckStat(Myself,0,FISTDAMAGE)
 	CheckStat(Myself,0,TITLE1)
 	CheckStat(Myself,0,MELEEDAMAGE)
-	CheckStat(Myself,0,EXTRAPROFICIENCY17)
+	CheckStat(Myself,0,CLERIC_FREE_ACTION)
 	OR(8)
 		StateCheck([EVILCUTOFF],STATE_CONFUSED)
 		StateCheck([EVILCUTOFF],STATE_SILENCED)
@@ -616,7 +616,7 @@ IF
 	HasItem("SCRL7S",Myself)  // ???? ??????
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStatGT(Myself,11,INT)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatLT(LastSeenBy(Myself),60,RESISTELECTRICITY)
 	CheckStatLT(LastSeenBy(Myself),60,RESISTMAGIC)
 	RandomNumLT(64,37)
@@ -646,7 +646,7 @@ IF
 	HasItem("SCRL7I",Myself)  // ?????????? ??????
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStatGT(Myself,11,INT)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatGT(LastSeenBy(Myself),6,SAVEVSDEATH)
 	RandomNumLT(61,37)
 THEN
@@ -661,7 +661,7 @@ IF
 	HasItem("SCRL2F",Myself)  // ????? ??????
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStatGT(Myself,11,INT)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatLT(LastSeenBy(Myself),70,RESISTMAGICCOLD)
 	RandomNumLT(47,29)
 THEN
@@ -689,7 +689,7 @@ IF
 	ActionListEmpty()
 	HaveSpellRES("SPIMIX01")  // ????????? ????
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatLT(LastSeenBy(Myself),60,RESISTMAGICFIRE)
 	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
 	RandomNumLT(109,55)
@@ -715,7 +715,7 @@ IF
 	HasItem("SCRL5N",Myself)  // ??????????
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStatGT(Myself,11,INT)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	OR(3)
 		Class(LastSeenBy(Myself),FIGHTER_ALL)
@@ -735,7 +735,7 @@ IF
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStatGT(Myself,8,INT)
 	LevelLT(LastSeenBy(Myself),11)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(61,21)
 THEN
 	RESPONSE #100
@@ -750,7 +750,7 @@ IF
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStatGT(Myself,11,INT)
 	Range(LastSeenBy(Myself),8)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(129,65)
 THEN
 	RESPONSE #100
@@ -823,7 +823,7 @@ IF
 	OR(3)
 		!Range(NearestEnemyOf(Myself),5)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #100
 		EquipRanged()
@@ -833,7 +833,7 @@ END
 IF
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #25
 		Continue()

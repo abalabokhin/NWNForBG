@@ -94,10 +94,10 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,88741)  // ?? ??????! ??? ???????? ????? ????!
-		Shout(HELP101)
-		Shout(HELP79)
-		Shout(HELP83)
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_101)
+		Shout(ALERT_79)
+		Shout(HEALME_83)
+		Shout(ALERT_151)
 		Enemy()
 		Continue()
 END
@@ -336,7 +336,7 @@ END
 
 IF
 	Allegiance(Myself,NEUTRAL)
-	Heard([NEUTRAL],HELP_ME_GROUP151)
+	Heard([NEUTRAL],ALERT_151)
 	!Class(Myself,INNOCENT)
 	!Global("BP_PlotMan","LOCALS",1)
 	!Range(LastHeardBy(Myself),1)
@@ -355,7 +355,7 @@ END
 
 IF
 	Allegiance(Myself,EVILCUTOFF)
-	Heard([EVILCUTOFF],HELP_ME_GROUP151)
+	Heard([EVILCUTOFF],ALERT_151)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),12)
 	OR(3)
@@ -1266,9 +1266,9 @@ IF
 	HasItem("POTN20",Myself)  // ???????????
 	Allegiance(Myself,NEUTRAL)
 	OR(3)
-		Heard(ThirdNearest([NEUTRAL]),HELP83)
-		Heard(SecondNearest([NEUTRAL]),HELP83)
-		Heard([NEUTRAL],HELP83)
+		Heard(ThirdNearest([NEUTRAL]),HEALME_83)
+		Heard(SecondNearest([NEUTRAL]),HEALME_83)
+		Heard([NEUTRAL],HEALME_83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
@@ -1287,9 +1287,9 @@ IF
 	HasItem("POTN20",Myself)  // ???????????
 	Allegiance(Myself,EVILCUTOFF)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
-		Heard(SecondNearest([EVILCUTOFF]),HELP83)
-		Heard([EVILCUTOFF],HELP83)
+		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
+		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
+		Heard([EVILCUTOFF],HEALME_83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
@@ -1308,9 +1308,9 @@ IF
 	HasItem("POTN17",Myself)  // ??????? ????????
 	Allegiance(Myself,NEUTRAL)
 	OR(3)
-		Heard(ThirdNearest([NEUTRAL]),HELP83)
-		Heard(SecondNearest([NEUTRAL]),HELP83)
-		Heard([NEUTRAL],HELP83)
+		Heard(ThirdNearest([NEUTRAL]),HEALME_83)
+		Heard(SecondNearest([NEUTRAL]),HEALME_83)
+		Heard([NEUTRAL],HEALME_83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
@@ -1327,9 +1327,9 @@ IF
 	HasItem("POTN17",Myself)  // ??????? ????????
 	Allegiance(Myself,EVILCUTOFF)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
-		Heard(SecondNearest([EVILCUTOFF]),HELP83)
-		Heard([EVILCUTOFF],HELP83)
+		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
+		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
+		Heard([EVILCUTOFF],HEALME_83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")

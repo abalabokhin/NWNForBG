@@ -9,7 +9,7 @@ IF
 	AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
 	RESPONSE #100
-		Shout(HELPME)
+		Shout(ALERT_99)
 		AttackOneRound(NearestEnemyOf(Myself))
 END
 
@@ -26,7 +26,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		Shout(HELPME)
+		Shout(ALERT_99)
 		Enemy()
 END
 
@@ -34,12 +34,12 @@ IF
 	HitBy([GOODCUTOFF],CRUSHING)
 THEN
 	RESPONSE #100
-		Shout(HELPME)
+		Shout(ALERT_99)
 		Continue()
 END
 
 IF
-	Heard([ANYONE],HELPME)
+	Heard([ANYONE],ALERT_99)
 	Allegiance(Myself,NEUTRAL)
 	!Class(Myself,INNOCENT)
 THEN
@@ -50,7 +50,7 @@ THEN
 END
 
 IF
-	Heard([ANYONE],HELPME)
+	Heard([ANYONE],ALERT_99)
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
@@ -66,7 +66,7 @@ THEN
 END
 
 IF
-	Heard([ANYONE],HELPME)
+	Heard([ANYONE],ALERT_99)
 	!Class(Myself,INNOCENT)
 	!See(NearestEnemyOf(Myself))
 THEN

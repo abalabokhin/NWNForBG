@@ -17,8 +17,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],HELP79)
-		Heard([EVILCUTOFF],HELP79)
+		Heard([NEUTRAL],ALERT_79)
+		Heard([EVILCUTOFF],ALERT_79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -86,7 +86,7 @@ IF
 THEN
 	RESPONSE #100
 		Enemy()
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 		Continue()
 END
 
@@ -98,7 +98,7 @@ IF
 		Allegiance(LastHitter(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 		Enemy()
 		Continue()
 END
@@ -337,7 +337,7 @@ IF
 	Range(NearestEnemyOf(Myself),2)
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #80
 		RunAwayFrom(NearestEnemyOf(Myself),4)
@@ -450,7 +450,7 @@ IF
 	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 THEN
 	RESPONSE #100
-		Shout(HELP83)
+		Shout(HEALME_83)
 		DisplayStringHead(Myself,102289)  // ????????! ????... ????????!
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -750,7 +750,7 @@ IF
 	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
 	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 THEN
 	RESPONSE #80
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
@@ -799,7 +799,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(ENEMY_CLERIC_SLAY_LIVING)  // SPPR599.SPL (???????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(42,26)
 THEN
 	RESPONSE #100
@@ -811,7 +811,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(ENEMY_CLERIC_HARM)  // SPPR699.SPL (?????????? ?????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(43,27)
 THEN
 	RESPONSE #100
@@ -836,7 +836,7 @@ IF
 	HaveSpell(CLERIC_CAUSE_CRITICAL_WOUNDS)  // SPPR510.SPL (????????? ??????????? ???)
 	!HasItem("CRITICAL",Myself)  // ????????? ??????????? ???
 	!HasItem("SERIOUS",Myself)  // ????????? ????????? ???
-	CheckStat(LastSeenBy(Myself),0,DETECTILLUSIONSCP)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	RandomNumLT(48,28)
 THEN
@@ -866,7 +866,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
 	General(LastSeenBy(Myself),HUMANOID)
 	RandomNumLT(46,27)
@@ -881,7 +881,7 @@ IF
 	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(51,29)
 THEN
 	RESPONSE #100
@@ -895,7 +895,7 @@ IF
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	!HasItem("CRITICAL",Myself)  // ????????? ??????????? ???
 	!HasItem("SERIOUS",Myself)  // ????????? ????????? ???
-	CheckStat(LastSeenBy(Myself),0,DETECTILLUSIONSCP)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
 	RandomNumLT(52,26)
 THEN
 	RESPONSE #100
@@ -960,7 +960,7 @@ IF
 	OR(3)
 		!Range(NearestEnemyOf(Myself),5)
 		CheckStatGT(LastSeenBy(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 	!HasItem("CRITICAL",Myself)  // ????????? ??????????? ???
 	!HasItem("SERIOUS",Myself)  // ????????? ????????? ???
 	!HasItemSlot(Myself,SLOT_MISC0)
@@ -975,7 +975,7 @@ END
 IF
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #25
 		Continue()

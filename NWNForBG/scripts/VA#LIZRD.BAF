@@ -81,7 +81,7 @@ IF
 	CombatCounter(0)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("RZ_Rest_Timer","LOCALS",XAROM_TIMER)
+		SetGlobalTimer("RZ_Rest_Timer","LOCALS",SHROM_TIMER)
 		SetGlobal("RZ_Rest","LOCALS",0)
 		SetGlobal("Out_of_Spells","LOCALS",0)
 		SetGlobal("Out_of_Area_Spells","LOCALS",0)
@@ -495,7 +495,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("RZ_Call_For_Help","LOCALS",THREE_ROUNDS)
-		Shout(HELP101)
+		Shout(ALERT_101)
 		Continue()
 END
 
@@ -535,7 +535,7 @@ IF
 	Global("RZ_See_Enemy","LOCALS",0)
 	OR(2)
 		Heard([ENEMY],ALERT_100)
-		Heard([ENEMY],HELP101)
+		Heard([ENEMY],ALERT_101)
 	!Range(LastHeardBy(Myself),0)
 	OR(2)
 		!See(NearestEnemyOf(Myself))
@@ -3947,7 +3947,7 @@ IF
 		StateCheck(LastAttackerOf(Myself),STATE_DISABLED)
 	OR(8)
 		RandomNumGT(100,33)
-		!Heard([ENEMY],HELP101)
+		!Heard([ENEMY],ALERT_101)
 		Range(LastHeardBy(Myself),0)
 		!See(LastAttackerOf(LastHeardBy(Myself)))
 		!Range(LastAttackerOf(LastHeardBy(Myself)),20)

@@ -45,8 +45,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],HELP79)
-		Heard([EVILCUTOFF],HELP79)
+		Heard([NEUTRAL],ALERT_79)
+		Heard([EVILCUTOFF],ALERT_79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -109,7 +109,7 @@ IF
 THEN
 	RESPONSE #100
 		Enemy()
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 		Continue()
 END
 
@@ -121,7 +121,7 @@ IF
 		Allegiance(LastHitter(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 		Enemy()
 		Continue()
 END
@@ -359,7 +359,7 @@ IF
 	Range(NearestEnemyOf(Myself),2)
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #80
 		RunAwayFrom(NearestEnemyOf(Myself),4)
@@ -484,7 +484,7 @@ IF
 	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 THEN
 	RESPONSE #100
-		Shout(HELP83)
+		Shout(HEALME_83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -634,7 +634,7 @@ IF
 	HaveSpell(CLERIC_FREE_ACTION)  // SPPR403.SPL (??????? ????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	Global("SNAFU","LOCALS",0)
-	CheckStat(Myself,0,EXTRAPROFICIENCY17)
+	CheckStat(Myself,0,CLERIC_FREE_ACTION)
 	OR(4)
 		RandomNumLT(7,3)
 		StateCheck(Myself,STATE_HELPLESS)
@@ -792,7 +792,7 @@ IF
 	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
 	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 THEN
 	RESPONSE #80
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
@@ -806,7 +806,7 @@ IF
 	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
 	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	OR(2)
 		General(LastSeenBy(Myself),HUMANOID)
 		General(LastSeenBy(Myself),ANIMAL)
@@ -872,7 +872,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(ENEMY_CLERIC_HARM)  // SPPR699.SPL (?????????? ?????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(43,27)
 THEN
 	RESPONSE #100
@@ -896,7 +896,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatLT(LastSeenBy(Myself),50,RESISTMAGICFIRE)
 	RandomNumLT(47,29)
 THEN
@@ -925,7 +925,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
 	General(LastSeenBy(Myself),HUMANOID)
 	RandomNumLT(46,27)
@@ -970,7 +970,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_POISON)  // SPPR411.SPL (??)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_POISONED)
 	RandomNumLT(54,32)
 THEN
@@ -984,7 +984,7 @@ IF
 	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(55,30)
 THEN
 	RESPONSE #100
@@ -1019,7 +1019,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	OR(2)
 		General(LastSeenBy(Myself),HUMANOID)
 		General(LastSeenBy(Myself),ANIMAL)
@@ -1090,7 +1090,7 @@ IF
 	OR(3)
 		!Range(NearestEnemyOf(Myself),5)
 		CheckStatGT(LastSeenBy(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 	!HasItemSlot(Myself,SLOT_MISC0)
 	!HasItemSlot(Myself,SLOT_MISC1)
 	!HasItemSlot(Myself,SLOT_MISC2)
@@ -1103,7 +1103,7 @@ END
 IF
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #25
 		Continue()

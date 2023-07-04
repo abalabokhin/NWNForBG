@@ -61,7 +61,7 @@ IF
 	RandomNum(12,1)
 	GlobalLT("MantleCounter","LOCALS",2)
 	CheckStatLT(Myself,3,STONESKINS)
-	CheckStatLT(Myself,3,EXTRAPROFICIENCY14)
+	CheckStatLT(Myself,3,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
 	OR(2)
 		See(NearestEnemyOf(Myself))
 		Global("psSpellUp","LOCALS",1)

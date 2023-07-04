@@ -190,7 +190,7 @@ END
 
 IF
 	See(Myself)
-	!CheckStatGT(Myself,0,EXTRAPROFICIENCY17)
+	!CheckStatGT(Myself,0,CLERIC_FREE_ACTION)
 	!CheckStatGT(Myself,0,SCRIPTINGSTATE4)
 	GlobalTimerNotExpired("seedefences","LOCALS")
 	Heard([ANYONE],410)
@@ -445,7 +445,7 @@ END
 
 IF
 	See(Myself)
-	!CheckStatGT(Myself,0,EXTRAPROFICIENCY17)
+	!CheckStatGT(Myself,0,CLERIC_FREE_ACTION)
 	!CheckStatGT(Myself,0,SCRIPTINGSTATE4)
 	GlobalTimerNotExpired("seedefences","LOCALS")
 	Heard([ANYONE],410)

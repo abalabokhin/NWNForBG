@@ -16,7 +16,7 @@ END
 
 IF
 	!GlobalTimerNotExpired("J#CastAttack","LOCALS")
-	!CheckStat(Myself,4,EXTRAPROFICIENCY14)
+	!CheckStat(Myself,4,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
 	HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
 	HPPercentLT(Myself,40)
 THEN
@@ -315,11 +315,11 @@ IF
 	HaveSpell(WIZARD_BREACH)  // SPWI513.SPL (??????)
 	OR(6)
 		CheckStatGT(LastSeenBy(Myself),3,SCRIPTINGSTATE5)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY12)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY16)
-		CheckStatGT(LastSeenBy(Myself),0,PICKPOCKETCP)
-		CheckStatGT(LastSeenBy(Myself),0,DETECTILLUSIONSCP)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY14)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_THE_ELEMENTS)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
 	CheckStatGT(LastSeenBy(Myself),2,STONESKINS)
 THEN
 	RESPONSE #100

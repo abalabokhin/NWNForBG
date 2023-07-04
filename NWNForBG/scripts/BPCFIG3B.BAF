@@ -17,8 +17,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],HELP79)
-		Heard([EVILCUTOFF],HELP79)
+		Heard([NEUTRAL],ALERT_79)
+		Heard([EVILCUTOFF],ALERT_79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -36,7 +36,7 @@ IF
 THEN
 	RESPONSE #100
 		Enemy()
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 		Continue()
 END
 
@@ -48,7 +48,7 @@ IF
 		Allegiance(LastHitter(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 		Enemy()
 		Continue()
 END
@@ -67,7 +67,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SHOUT","LOCALS",1)
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 END
 
 IF
@@ -83,7 +83,7 @@ IF
 	Range(NearestEnemyOf(Myself),2)
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #70
 		RunAwayFrom(NearestEnemyOf(Myself),4)
@@ -139,7 +139,7 @@ IF
 	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 THEN
 	RESPONSE #100
-		Shout(HELP83)
+		Shout(HEALME_83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -147,7 +147,7 @@ END
 IF
 	ActionListEmpty()
 	HaveSpell(WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (?????? ?? ??????? ????????)
-	CheckStat(Myself,0,PICKPOCKETCP)
+	CheckStat(Myself,0,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	OR(2)
 		!Range(NearestEnemyOf(Myself),6)
@@ -385,7 +385,7 @@ IF
 	HaveSpell(WIZARD_DIRE_CHARM)  // SPWI316.SPL (??????? ??????????)
 	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 THEN
 	RESPONSE #80
 		Spell(LastSeenBy(Myself),WIZARD_DIRE_CHARM)  // SPWI316.SPL (??????? ??????????)
@@ -399,7 +399,7 @@ IF
 	HaveSpell(WIZARD_CHARM_PERSON)  // SPWI104.SPL (?????????? ?????????)
 	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 THEN
 	RESPONSE #80
 		Spell(LastSeenBy(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (?????????? ?????????)
@@ -553,9 +553,9 @@ IF
 	HaveSpell(WIZARD_SPELL_THRUST)  // SPWI321.SPL (?????? ??????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	OR(4)
-		CheckStat(LastSeenBy(Myself),1,EXTRAPROFICIENCY2)
+		CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
 		CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
-		CheckStat(LastSeenBy(Myself),1,EXTRAPROFICIENCY15)
+		CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
 		CheckStatGT(LastSeenBy(Myself),0,DISABLECHUNKYDEATH)
 	RandomNumLT(16,11)
 THEN
@@ -568,7 +568,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI503.SPL (????? ??????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatLT(LastSeenBy(Myself),50,RESISTMAGICCOLD)
 	RandomNumLT(17,11)
 THEN
@@ -594,7 +594,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(WIZARD_DIRE_CHARM)  // SPWI316.SPL (??????? ??????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!Range(LastSeenBy(Myself),5)
 	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	RandomNumLT(37,19)
@@ -621,7 +621,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	RandomNumLT(39,17)
 THEN
@@ -651,7 +651,7 @@ END
 IF
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #25
 		Continue()

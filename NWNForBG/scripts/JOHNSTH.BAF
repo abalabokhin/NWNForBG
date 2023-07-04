@@ -4,7 +4,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("JohnsAttaked","MYAREA",1)
-		Shout(HELP101)
+		Shout(ALERT_101)
 		Attack(LastAttackerOf(Myself))
 END
 

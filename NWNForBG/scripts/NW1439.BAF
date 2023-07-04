@@ -5,7 +5,7 @@ IF
 	Global("Pause2","MYAREA",0)
 	Global("Pause1","MYAREA",0)
 	GlobalGT("Encounter","MYAREA",0)
-	CheckStat(Player1,0,EXTRAPROFICIENCY14)
+	CheckStat(Player1,0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
 	!CheckStatGT(Player1,0,STONESKINS)
 THEN
 	RESPONSE #100

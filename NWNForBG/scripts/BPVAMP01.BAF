@@ -17,8 +17,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],HELP79)
-		Heard([EVILCUTOFF],HELP79)
+		Heard([NEUTRAL],ALERT_79)
+		Heard([EVILCUTOFF],ALERT_79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -196,14 +196,14 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SHOUT","LOCALS",1)
-		Shout(HELP_ME_GROUP151)
+		Shout(ALERT_151)
 END
 
 IF
 	Range(NearestEnemyOf(Myself),2)
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(NearestEnemyOf(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #80
 		RunAwayFrom(NearestEnemyOf(Myself),4)
@@ -400,7 +400,7 @@ IF
 	!Kit(LastSeenBy(Myself),CAVALIER)
 	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
 	CheckStat(LastSeenBy(Myself),0,MISSILEDAMAGE)
-	CheckStat(LastSeenBy(Myself),0,TRAPSCP)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
 	!CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
 THEN
 	RESPONSE #100
@@ -534,7 +534,7 @@ IF
 	ActionListEmpty()
 	OR(2)
 		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
-		CheckStatGT(LastSeenBy(Myself),0,EXTRAPROFICIENCY11)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
 THEN
 	RESPONSE #25
 		Continue()

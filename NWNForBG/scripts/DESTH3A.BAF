@@ -192,7 +192,7 @@ IF
 	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
 	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 THEN
 	RESPONSE #80
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
@@ -206,7 +206,7 @@ IF
 	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
 	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	OR(2)
 		General(LastSeenBy(Myself),HUMANOID)
 		General(LastSeenBy(Myself),ANIMAL)
@@ -282,7 +282,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
 	General(LastSeenBy(Myself),HUMANOID)
 	RandomNumLT(36,24)
@@ -386,7 +386,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(ENEMY_CLERIC_SLAY_LIVING)  // SPPR599.SPL (???????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(43,27)
 THEN
 	RESPONSE #100
@@ -398,7 +398,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(ENEMY_CLERIC_HARM)  // SPPR699.SPL (?????????? ?????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(45,27)
 THEN
 	RESPONSE #100
@@ -410,7 +410,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	CheckStatLT(LastSeenBy(Myself),50,RESISTMAGICFIRE)
 	RandomNumLT(46,28)
 THEN
@@ -438,7 +438,7 @@ IF
 	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	RandomNumLT(49,27)
 THEN
 	RESPONSE #100
@@ -485,7 +485,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	OR(2)
 		General(LastSeenBy(Myself),HUMANOID)
 		General(LastSeenBy(Myself),ANIMAL)
@@ -501,7 +501,7 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (????????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	CheckStat(LastSeenBy(Myself),0,EXTRAPROFICIENCY15)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
 	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
 	RandomNumLT(55,24)
 THEN
