@@ -594,7 +594,7 @@ IF
 	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -1007,9 +1007,9 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
-		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
-		Heard([EVILCUTOFF],HEALME_83)
+		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
+		Heard(SecondNearest([EVILCUTOFF]),HELP83)
+		Heard([EVILCUTOFF],HELP83)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	Global("SNAFU","LOCALS",0)
@@ -1026,9 +1026,9 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_NEUTRALIZE_POISON)  // SPPR404.SPL (????????????? ???)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
-		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
-		Heard([EVILCUTOFF],HEALME_83)
+		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
+		Heard(SecondNearest([EVILCUTOFF]),HELP83)
+		Heard([EVILCUTOFF],HELP83)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	Global("SNAFU","LOCALS",0)

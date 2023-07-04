@@ -171,7 +171,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -188,7 +188,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
 
