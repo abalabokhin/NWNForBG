@@ -4,7 +4,7 @@
 
 BEGIN ~GOLEM4~
 
-~   True()~ THEN BEGIN 0 // from:
+IF ~~ THEN BEGIN 0 // from:
   SAY ~Страж Щита стоит, уставившись прямо перед собой. Вас он не слышит.~
   IF ~~ THEN EXIT
 END

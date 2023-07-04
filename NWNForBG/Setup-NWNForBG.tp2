@@ -245,3 +245,22 @@ CLEAR_IDS_MAP
 //Scripts
 COMPILE ~NWNForBG/scripts~
 
+//dlg
+COMPILE ~NWNForBG/dlg~
+
+COMPILE ~NWNForBG/dlg/chapter1/beggars_nest~
+COMPILE ~NWNForBG/dlg/chapter1/blacklake~
+COMPILE ~NWNForBG/dlg/chapter1/docs~
+COMPILE ~NWNForBG/dlg/chapter1/helms_hold~
+COMPILE ~NWNForBG/dlg/chapter1/neverwinter_center~
+COMPILE ~NWNForBG/dlg/chapter1/peninsula~
+
+COMPILE ~NWNForBG/dlg/chapter2~
+COMPILE ~NWNForBG/dlg/chapter2/luskan~
+COMPILE ~NWNForBG/dlg/chapter2/green_griffon~
+COMPILE ~NWNForBG/dlg/chapter2/port_llast~
+
+COMPILE ~NWNForBG/dlg/chapter3~
+COMPILE ~NWNForBG/dlg/chapter3/beorunnas_well~
+
+COMPILE ~NWNForBG/dlg/chapter3~
