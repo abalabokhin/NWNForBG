@@ -11,8 +11,8 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY ~За воротами находится нейтральная территория. Катапульты разбили город на куски, и улицы теперь кишат солдатами Лускана. Но хуже всего эти проклятые боевые големы.~
-  IF ~  !Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
-  IF ~  Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
+  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
+  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 6
   IF ~~ THEN REPLY ~Есть какие-нибудь сведения о местонахождении Арибет или Маугрима?~ GOTO 7
@@ -44,8 +44,8 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
   SAY ~Сказать по правде, в последнее время говорят, что големы совершенно неожиданно остановились. Должно быть, с ними что-то случилось. Но мы уже потерпели огромный урон. Слишком многие пали, защищая Невервинтер. Не думаю, что нам удастся удержать Сердце города до тех пор, пока не прибудут войска Союза Лордов.~
-  IF ~  !Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
-  IF ~  Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
+  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
+  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
   IF ~~ THEN REPLY ~Есть какие-нибудь сведения о местонахождении Арибет или Маугрима?~ GOTO 7
   IF ~~ THEN REPLY ~До свидания.~ GOTO 2
 END
@@ -67,8 +67,8 @@ END
 IF ~~ THEN BEGIN 9 // from: 7.1
   SAY ~Скорее всего, они где-нибудь спрятались и теперь думают, как им пробраться в Сердце города и уничтожить замок Невер до того, как сюда прибудет подкрепление. Одним богам известно, где они могут быть: в заброшенном доме, в старой лавке... они могут быть где угодно!~
   IF ~~ THEN REPLY ~Ты можешь еще что-нибудь рассказать о них?~ GOTO 10
-  IF ~  !Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
-  IF ~  Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
+  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
+  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 6
   IF ~~ THEN REPLY ~До свидания.~ GOTO 2
@@ -78,8 +78,8 @@ IF ~~ THEN BEGIN 10 // from: 9.1
   SAY ~Как ты, возможно, понимаешь, люди рассказывают разные истории. Но я сомневаюсь в их правдивости. А я лично не желаю распространять ложные слухи и нагнетать страх и панику.~
   IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~ Я не распространяю слухи, а твоя информация может помочь закончить эту войну.~ GOTO 11
   IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~ Я не распространяю слухи, а твоя информация может помочь закончить эту войну.~ GOTO 12
-  IF ~  !Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
-  IF ~  Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
+  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
+  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 6
   IF ~~ THEN REPLY ~До свидания.~ GOTO 2
@@ -92,8 +92,8 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 10.2
   SAY ~Некоторые говорят, что Маугрим и этот его культ собираются провести какой-то ритуал. А цель их - уничтожить Невервинтер раз и навсегда.~
-  IF ~  !Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
-  IF ~  Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
+  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
+  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 6
   IF ~~ THEN REPLY ~До свидания.~ GOTO 2
@@ -101,8 +101,8 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 11.1
   SAY ~Хотя мне кажется, им можно даже не напрягаться. По-моему, у нас и так мало шансов удержать Сердце города до прибытия подкрепления Союза Лордов.~
-  IF ~  !Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
-  IF ~  Global(CatepultDestroy,"GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
+  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 3
+  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY ~Что тебе известно о катапультах?~ GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY ~Что ты можешь рассказать мне о боевых големах?~ GOTO 6
   IF ~~ THEN REPLY ~До свидания.~ GOTO 2
