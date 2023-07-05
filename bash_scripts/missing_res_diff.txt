@@ -1,28 +1,4 @@
-Number of hits: 1681
-File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
-File: BELARIAN.CRE, Name: Once a great general in a celestial army, the Winged's days were spent warring against the fiends of the Abyss. During a tremendous battle against these demon hordes, one of her command decisions resulted in the destruction of a quarter of her legions. Furious over the loss, she abandoned her post and waded into battle herself, cutting down lesser demons by the dozen. Though she was personally victorious in combat, the larger battle was lostвЂ”without her leadership, her remaining forces were thrown into disarray and forced to withdraw. For dereliction of duty and her inability to control her emotions, the god she served stripped her of her rank and cast her out of her home plane.
-
-STATISTICS:
-
-Combat abilities:
-вЂ“ 15% chance of decapitating the opponent with each successful attack
-вЂ“ Each hit drains 1d6 Hit Points from the target and transfers them to the wielder. This will not heal beyond the wielder's maximum.
-
-THAC0: +5
-Damage: 1d10+5, +5 extra vs. chaotic
-Damage type: Slashing
-Speed Factor: 5
-Proficiency Type: Two-handed Sword 
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 7, Attribute: Dialogue=BELARIAN.DLG
-File: BFISHER3.CRE, Name: Fisherman, Attribute: Dialogue=BFISHER3.DLG
-File: COMMONW2.CRE, Name: name:, Attribute: Dialogue=COMMONW2.DLG
-File: COMMONW3.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
-File: COMMONW4.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
-File: COMMONW5.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
+Number of hits: 1656
 File: CRYPTXX.ITM, Name: To all appearances a standard war hammer, one lingering long in its presence will soon discover it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, this hammer has several voidstone shards worked into its metal head. A powerful weapon when used against most targets, its one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this normally devastating weapon.
 
 STATISTICS:
@@ -44,11 +20,6 @@ Requires:
  9 Strength
 
 Weight: 4, Attribute: Resource=DSPELLXX.VEF
-File: ERROL.CRE, Name: It's important to use defensive spells that prevent attackers from harming your spellcasters, as they are typically weak in close combat., Attribute: Dialogue=ERROL.DLG
-File: GALION.CRE, Name: At the outset of battle, be sure to cast as many spells that enhance your party as you can., Attribute: Dialogue=GALION.DLG
-File: HPRIEST.CRE, Name: Cleric Of Helm, Attribute: Dialogue=HPRIEST.DLG
-File: ISSABON.CRE, Name: I... I didn't want to do it!, Attribute: Dialogue=ISSABON.DLG
-File: JAROO.CRE, Name: Impossible! These gnats have injured me!, Attribute: Dialogue=JAROO.DLG
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -60,19 +31,11 @@ File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Magic Item Merchant, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Magic Item Merchant, Attribute: Override script=NWGUAR17.BCS
-File: NWPRST1.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
-File: NWPRST2.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
-File: NWPRST3.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
-File: NWPRST4.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
-File: SETSERV.CRE, Name: Servant, Attribute: Dialogue=ZOMBIE.DLG
-File: SHALDRI2.CRE, Name: Я? Ох, да я никто, правда. народ здесь думает, что я какой-то начальник в ополчении, но я не стражник. Моя должность неофициальна, если можно так выразиться. Однако меня здесь любят достаточно, чтобы можно было делать дела. Это ведь ценно, не правда ли? Гораздо ценнее униформы и всякого прочего. Итак, какое у вас дело?, Attribute: Dialogue=SHALDRI2.DLG
-File: SHAMANUT.CRE, Name: Shadow Druid, Attribute: Dialogue=SHAMANUT.DLG
-File: SLAVENW2.CRE, Name: Вы уже получили свою награду. Я благодарю вас за вашу помощь, но мы не можем себе позволить предложить вам что-нибудь еще., Attribute: Dialogue=ZOMBIE.DLG
 File: SPIN116W.SPL, Name: Меня обокрали, если вам очень нужно знать! Она уничтожила моих самых слабых овечек, а теперь остальные следуют за ее легионами нежити! Меня хотят распотрошить на ее алтаре! МЕНЯ! Это неправильно! Это Джаред, слуга  Сирика, потрошит других! А не какой-то червь!, Attribute: Resource=#FF_P109.WAV
 File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUAI.SPL
 File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUWA.SPL
@@ -91,4 +54,5 @@ File: SPWI328.SPL, Name: These pear-shaped variations on the common yarting have
 STATISTICS:
 
 Weight: 3, Attribute: Resource=ICELANH.VEF
-File: YESGAR.CRE, Name: Не хочешь, не верь, тупица. Что было, то я и говорю., Attribute: Dialogue=YESGAR.DLG
+File: ZOMBIE.dlg, Attribute: Next dialogue=BASSIL.DLG
+File: ZOMBIE.dlg, Attribute: Next dialogue=BASSIL.DLG
