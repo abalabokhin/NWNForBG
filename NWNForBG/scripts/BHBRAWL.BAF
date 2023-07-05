@@ -167,7 +167,7 @@ IF
 	!Kit(LastHitter(Myself),ASSASIN)
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		RunAwayFrom(NearestEnemyOf(Myself),15)
 END
 
@@ -185,7 +185,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,103002)  // ???????, ???? ????????!
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -328,9 +328,9 @@ IF
 	ActionListEmpty()
 	HasItem("POTN17",Myself)  // ??????? ????????
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
-		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
-		Heard([EVILCUTOFF],HEALME_83)
+		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
+		Heard(SecondNearest([EVILCUTOFF]),HELP83)
+		Heard([EVILCUTOFF],HELP83)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
 	CheckStatGT(Myself,7,INT)

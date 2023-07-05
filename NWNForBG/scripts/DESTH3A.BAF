@@ -67,10 +67,10 @@ IF
 	ActionListEmpty()
 	Global("BP_SweetZone","LOCALS",0)
 	OR(4)
-		CheckStat(Myself,11,HIDEINSHADOWSCP)
-		CheckStat(Myself,16,HIDEINSHADOWSCP)
-		CheckStat(Myself,17,HIDEINSHADOWSCP)
-		CheckStat(Myself,20,HIDEINSHADOWSCP)
+		CheckStat(Myself,11,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,16,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,17,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,20,WIZARD_GREATER_MALISON)
 THEN
 	RESPONSE #80
 		SetGlobal("BP_SweetZone","LOCALS",1)

@@ -74,10 +74,10 @@ IF
 	ActionListEmpty()
 	Global("BP_SweetZone","LOCALS",0)
 	OR(4)
-		CheckStat(Myself,11,HIDEINSHADOWSCP)
-		CheckStat(Myself,16,HIDEINSHADOWSCP)
-		CheckStat(Myself,17,HIDEINSHADOWSCP)
-		CheckStat(Myself,20,HIDEINSHADOWSCP)
+		CheckStat(Myself,11,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,16,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,17,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,20,WIZARD_GREATER_MALISON)
 THEN
 	RESPONSE #100
 		SetGlobal("BP_SweetZone","LOCALS",1)
@@ -132,12 +132,12 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	OR(2)
 		See(LastAttackerOf(Myself))
 		See(LastHitter(Myself))
-	CheckStatLT(LastSeenBy(Myself),11,HIDEINSHADOWSCP)
+	CheckStatLT(LastSeenBy(Myself),11,WIZARD_GREATER_MALISON)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
 	RESPONSE #100
@@ -149,12 +149,12 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	OR(2)
 		See(TenthNearest([GOODCUTOFF]))
 		See(TenthNearest([PC]))
-	CheckStatLT(LastSeenBy(Myself),11,HIDEINSHADOWSCP)
+	CheckStatLT(LastSeenBy(Myself),11,WIZARD_GREATER_MALISON)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
 	RESPONSE #100
@@ -166,10 +166,10 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	See(TenthNearest)
-	CheckStatLT(TenthNearest,11,HIDEINSHADOWSCP)
+	CheckStatLT(TenthNearest,11,WIZARD_GREATER_MALISON)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
 	RESPONSE #100
@@ -179,11 +179,11 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 	See(Nearest)
-	CheckStatGT(Nearest,10,HIDEINSHADOWSCP)
+	CheckStatGT(Nearest,10,WIZARD_GREATER_MALISON)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPCHASE","LOCALS",ONE_ROUND)
@@ -192,7 +192,7 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 	!See([GOODCUTOFF])
@@ -407,7 +407,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,102289)  // ????????! ????... ????????!
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -1269,8 +1269,8 @@ IF
 	Global("MORPH","LOCALS",0)
 	!HasItem("FBLADE",Myself)  // ????????? ??????
 	!HasItem("SHILLE",Myself)  // ???????
-	CheckStatGT(LastSeenBy(Myself),10,HIDEINSHADOWSCP)
-	CheckStatLT(Myself,11,HIDEINSHADOWSCP)
+	CheckStatGT(LastSeenBy(Myself),10,WIZARD_GREATER_MALISON)
+	CheckStatLT(Myself,11,WIZARD_GREATER_MALISON)
 	!HasItemSlot(Myself,SLOT_MISC0)
 	!HasItemSlot(Myself,SLOT_MISC1)
 	!HasItemSlot(Myself,SLOT_MISC2)

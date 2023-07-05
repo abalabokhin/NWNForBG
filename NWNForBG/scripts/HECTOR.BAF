@@ -53,8 +53,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],ALERT_79)
-		Heard([EVILCUTOFF],ALERT_79)
+		Heard([NEUTRAL],HELP79)
+		Heard([EVILCUTOFF],HELP79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -72,10 +72,10 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,88741)  // ?? ??????! ??? ???????? ????? ????!
-		Shout(ALERT_101)
-		Shout(ALERT_79)
-		Shout(HEALME_83)
-		Shout(ALERT_151)
+		Shout(HELP101)
+		Shout(HELP79)
+		Shout(HELP83)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END
@@ -89,10 +89,10 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,88741)  // ?? ??????! ??? ???????? ????? ????!
-		Shout(ALERT_101)
-		Shout(ALERT_79)
-		Shout(HEALME_83)
-		Shout(ALERT_151)
+		Shout(HELP101)
+		Shout(HELP79)
+		Shout(HELP83)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END
@@ -118,8 +118,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_101)
-		Heard([NEUTRAL],ALERT_101)
+		Heard([EVILCUTOFF],HELP101)
+		Heard([NEUTRAL],HELP101)
 	!Range(LastHeardBy(Myself),1)
 	!Allegiance(Myself,ENEMY)
 	!Allegiance(Myself,PC)
@@ -128,10 +128,10 @@ IF
 THEN
 	RESPONSE #75
 		Enemy()
-		Shout(ALERT_101)
-		Shout(ALERT_79)
-		Shout(HEALME_83)
-		Shout(ALERT_151)
+		Shout(HELP101)
+		Shout(HELP79)
+		Shout(HELP83)
+		Shout(HELP_ME_GROUP151)
 		RunAwayFrom(LastAttackerOf(LastHeardBy(Myself)),40)
 	RESPONSE #25
 		Continue()
@@ -139,8 +139,8 @@ END
 
 IF
 	OR(2)
-		Heard([EVILCUTOFF],ALERT_101)
-		Heard([NEUTRAL],ALERT_101)
+		Heard([EVILCUTOFF],HELP101)
+		Heard([NEUTRAL],HELP101)
 	!Range(LastHeardBy(Myself),1)
 	!Allegiance(Myself,ENEMY)
 	!Allegiance(Myself,PC)
@@ -313,12 +313,12 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	OR(2)
 		See(LastAttackerOf(Myself))
 		See(LastHitter(Myself))
-	CheckStatLT(LastSeenBy(Myself),11,HIDEINSHADOWSCP)
+	CheckStatLT(LastSeenBy(Myself),11,WIZARD_GREATER_MALISON)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
 	RESPONSE #100
@@ -329,12 +329,12 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	OR(2)
 		See(TenthNearest([GOODCUTOFF]))
 		See(TenthNearest([PC]))
-	CheckStatLT(LastSeenBy(Myself),11,HIDEINSHADOWSCP)
+	CheckStatLT(LastSeenBy(Myself),11,WIZARD_GREATER_MALISON)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
 	RESPONSE #100
@@ -345,10 +345,10 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	See(TenthNearest)
-	CheckStatLT(TenthNearest,11,HIDEINSHADOWSCP)
+	CheckStatLT(TenthNearest,11,WIZARD_GREATER_MALISON)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
 	RESPONSE #100
@@ -357,11 +357,11 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 	See([ANYONE])
-	CheckStatGT(LastSeenBy(Myself),10,HIDEINSHADOWSCP)
+	CheckStatGT(LastSeenBy(Myself),10,WIZARD_GREATER_MALISON)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPCHASE","LOCALS",ONE_ROUND)
@@ -369,7 +369,7 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,10,HIDEINSHADOWSCP)
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
 	CheckStatGT(Myself,5,INT)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 	!See([GOODCUTOFF])
@@ -425,7 +425,7 @@ END
 
 IF
 	Allegiance(Myself,NEUTRAL)
-	Heard([NEUTRAL],ALERT_151)
+	Heard([NEUTRAL],HELP_ME_GROUP151)
 	!Class(Myself,INNOCENT)
 	!Global("BP_PlotMan","LOCALS",1)
 	!Range(LastHeardBy(Myself),1)
@@ -444,7 +444,7 @@ END
 
 IF
 	Allegiance(Myself,EVILCUTOFF)
-	Heard([EVILCUTOFF],ALERT_151)
+	Heard([EVILCUTOFF],HELP_ME_GROUP151)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),12)
 	OR(3)
@@ -1355,9 +1355,9 @@ IF
 	HasItem("POTN20",Myself)  // ???????????
 	Allegiance(Myself,NEUTRAL)
 	OR(3)
-		Heard(ThirdNearest([NEUTRAL]),HEALME_83)
-		Heard(SecondNearest([NEUTRAL]),HEALME_83)
-		Heard([NEUTRAL],HEALME_83)
+		Heard(ThirdNearest([NEUTRAL]),HELP83)
+		Heard(SecondNearest([NEUTRAL]),HELP83)
+		Heard([NEUTRAL],HELP83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
@@ -1376,9 +1376,9 @@ IF
 	HasItem("POTN20",Myself)  // ???????????
 	Allegiance(Myself,EVILCUTOFF)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
-		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
-		Heard([EVILCUTOFF],HEALME_83)
+		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
+		Heard(SecondNearest([EVILCUTOFF]),HELP83)
+		Heard([EVILCUTOFF],HELP83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
@@ -1397,9 +1397,9 @@ IF
 	HasItem("POTN17",Myself)  // ??????? ????????
 	Allegiance(Myself,NEUTRAL)
 	OR(3)
-		Heard(ThirdNearest([NEUTRAL]),HEALME_83)
-		Heard(SecondNearest([NEUTRAL]),HEALME_83)
-		Heard([NEUTRAL],HEALME_83)
+		Heard(ThirdNearest([NEUTRAL]),HELP83)
+		Heard(SecondNearest([NEUTRAL]),HELP83)
+		Heard([NEUTRAL],HELP83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")
@@ -1416,9 +1416,9 @@ IF
 	HasItem("POTN17",Myself)  // ??????? ????????
 	Allegiance(Myself,EVILCUTOFF)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
-		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
-		Heard([EVILCUTOFF],HEALME_83)
+		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
+		Heard(SecondNearest([EVILCUTOFF]),HELP83)
+		Heard([EVILCUTOFF],HELP83)
 	!Range(LastHeardBy(Myself),1)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("GAVE","LOCALS")

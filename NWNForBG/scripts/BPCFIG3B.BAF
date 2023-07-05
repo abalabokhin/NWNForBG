@@ -17,8 +17,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],ALERT_79)
-		Heard([EVILCUTOFF],ALERT_79)
+		Heard([NEUTRAL],HELP79)
+		Heard([EVILCUTOFF],HELP79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -36,7 +36,7 @@ IF
 THEN
 	RESPONSE #100
 		Enemy()
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Continue()
 END
 
@@ -48,7 +48,7 @@ IF
 		Allegiance(LastHitter(Myself),GOODCUTOFF)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 		Continue()
 END
@@ -67,7 +67,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SHOUT","LOCALS",1)
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 END
 
 IF
@@ -139,7 +139,7 @@ IF
 	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END

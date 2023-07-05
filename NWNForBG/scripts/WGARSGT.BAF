@@ -171,7 +171,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -188,7 +188,7 @@ IF
 	!HasItem("POTN20",Myself)  // ???????????
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
 
@@ -810,8 +810,8 @@ END
 
 IF
 	ActionListEmpty()
-	CheckStatGT(LastSeenBy(Myself),10,HIDEINSHADOWSCP)
-	CheckStatLT(Myself,11,HIDEINSHADOWSCP)
+	CheckStatGT(LastSeenBy(Myself),10,WIZARD_GREATER_MALISON)
+	CheckStatLT(Myself,11,WIZARD_GREATER_MALISON)
 THEN
 	RESPONSE #100
 		EquipRanged()

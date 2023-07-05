@@ -17,8 +17,8 @@ END
 
 IF
 	OR(2)
-		Heard([NEUTRAL],ALERT_79)
-		Heard([EVILCUTOFF],ALERT_79)
+		Heard([NEUTRAL],HELP79)
+		Heard([EVILCUTOFF],HELP79)
 	Allegiance(Myself,NEUTRAL)
 	!Global("BP_PlotMan","LOCALS",1)
 THEN
@@ -33,7 +33,7 @@ IF
 THEN
 	RESPONSE #100
 		Enemy()
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 END
 
 IF
@@ -42,7 +42,7 @@ IF
 	!Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #100
-		Shout(ALERT_151)
+		Shout(HELP_ME_GROUP151)
 		Enemy()
 END
 
@@ -178,7 +178,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,102574)  // ? ? ???????? ??????! ??? ????? ????????? ??????!
-		Shout(HEALME_83)
+		Shout(HELP83)
 		RunAwayFrom(NearestEnemyOf(Myself),15)
 END
 
@@ -224,7 +224,7 @@ IF
 	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 THEN
 	RESPONSE #100
-		Shout(HEALME_83)
+		Shout(HELP83)
 		DisplayStringHead(Myself,88737)  // ????????! ????... ????????.
 		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
 END
@@ -449,9 +449,9 @@ IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
 	OR(3)
-		Heard(ThirdNearest([EVILCUTOFF]),HEALME_83)
-		Heard(SecondNearest([EVILCUTOFF]),HEALME_83)
-		Heard([EVILCUTOFF],HEALME_83)
+		Heard(ThirdNearest([EVILCUTOFF]),HELP83)
+		Heard(SecondNearest([EVILCUTOFF]),HELP83)
+		Heard([EVILCUTOFF],HELP83)
 	Range(LastHeardBy(Myself),10)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	!StateCheck(Myself,STATE_POISONED)

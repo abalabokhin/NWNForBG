@@ -6,7 +6,7 @@ IF
 		Global("NeurikQuest","GLOBAL",0)
 		PartyHasItem("UrtRing")  // ?????? ????
 		GlobalGT("UrtIsSaved","GLOBAL",0)
-		Dead("Urt")  // ????????
+		Dead("Urt")  // ???
 		GlobalGT("Stairs","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -20,7 +20,7 @@ IF
 	GlobalGT("NeurikQuest","GLOBAL",0)
 	!PartyHasItem("UrtRing")  // ?????? ????
 	Global("UrtIsSaved","GLOBAL",0)
-	!Dead("Urt")  // ????????
+	!Dead("Urt")  // ???
 	Global("Stairs","MYAREA",0)
 THEN
 	RESPONSE #100
