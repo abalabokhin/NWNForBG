@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1656
+Number of hits: 1654
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -1678,5 +1678,3 @@ File: ZILARC01.CRE, Name: Black Reaver, Attribute: Dialogue=ZILARC01.DLG
 File: ZILFGT01.CRE, Name: Black Reaver, Attribute: Dialogue=ZILFGT01.DLG
 File: ZILFGT02.CRE, Name: Black Reaver, Attribute: Dialogue=ZILFGT02.DLG
 File: ZILMAG01.CRE, Name: Black Reaver, Attribute: Dialogue=ZILMAG01.DLG
-File: ZOMBIE.dlg, Attribute: Next dialogue=BASSIL.DLG
-File: ZOMBIE.dlg, Attribute: Next dialogue=BASSIL.DLG
