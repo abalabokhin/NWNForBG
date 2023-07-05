@@ -153,6 +153,9 @@ COPY ~NWNForBG/bmp~ ~override~
 //other BAM, not related to maps
 COPY ~NWNForBG/bam~ ~override~
 
+//EFF
+COPY ~NWNForBG/eff~ ~override~
+
 //SHOUTIDS.IDS
 APPEND ~SHOUTIDS.IDS~ ~2 LEAVE2~            UNLESS ~2 LEAVE2~
 APPEND ~SHOUTIDS.IDS~ ~66 DEAD_MEAT~        UNLESS ~66 DEAD_MEAT~
