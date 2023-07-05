@@ -1,6 +1,4 @@
-Number of hits: 1731
-File: #FIREAU.VVC, Attribute: Animation=FIAURAC.BAM
-File: #FROSTAU.VVC, Attribute: Animation=FRAURAC.BAM
+Number of hits: 1714
 File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
 File: ARCHELNW.CRE, Name: Так ты, выходит, сбежал из тюрьмы?, Attribute: Dialogue=ARCHELNW.DLG
 File: ARIBETH5.CRE, Name: Nevermind. Lesser beings can hardly be expected to understand the intricacies of planar biology., Attribute: Dialogue=ARIBETH5.DLG
@@ -31,7 +29,6 @@ File: COMMONW2.CRE, Name: name:, Attribute: Dialogue=COMMONW2.DLG
 File: COMMONW3.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
 File: COMMONW4.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
 File: COMMONW5.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
-File: CONJUH.VVC, Attribute: Animation=CONJUH.BAM
 File: CRYPTXX.ITM, Name: To all appearances a standard war hammer, one lingering long in its presence will soon discover it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, this hammer has several voidstone shards worked into its metal head. A powerful weapon when used against most targets, its one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this normally devastating weapon.
 
 STATISTICS:
@@ -53,21 +50,18 @@ Requires:
  9 Strength
 
 Weight: 4, Attribute: Resource=DSPELLXX.VEF
-File: CULTMO1.CRE, Name: Glabrezu, Attribute: Override script=CULTPRO.BCS
-File: CULTMO1.CRE, Name: Glabrezu, Attribute: Race script=DEMGLAB4.BCS
-File: CULTMO1.CRE, Name: Glabrezu, Attribute: Default script=WTASI3.BCS
-File: CULTMO12.CRE, Name: Interesting, though not unheard of. We often try to guide those that have already fallen. Some live well and then fall unexpectedly. Tell me of this man., Attribute: Override script=CULTPRO.BCS
-File: CULTMO2.CRE, Name: Cornugon, Attribute: Override script=CULTPRO.BCS
-File: CULTMO2.CRE, Name: Cornugon, Attribute: General script=WTASI3.BCS
-File: CULTMO3.CRE, Name: Speak., Attribute: Override script=CULTPRO.BCS
 File: DIZIL.CRE, Name: В конечном итоге я вернусь в мой Орден и отрапортую им о том, что Алаганда мертва. Но это может подождать, пока не завершится выполнение твоего задания. Отметина Смерти на тебе, <CHARNAME>. Пока я остаюсь с тобой, я знаю, что служу воле Безмолвного Лорда., Attribute: Dialogue=DIZIL.DLG
 File: ERROL.CRE, Name: It's important to use defensive spells that prevent attackers from harming your spellcasters, as they are typically weak in close combat., Attribute: Dialogue=ERROL.DLG
 File: ESMERNW.CRE, Name: Я ищу хорошего мошенника для помощи в моем задании., Attribute: Dialogue=ESMERNW.DLG
-File: FINBALOR.CRE, Name: Balor, Attribute: Default script=FINBALOR.BCS
-File: FINBALOR.CRE, Name: Balor, Attribute: Spell=GATE5.SPL
-File: FINBALOR.CRE, Name: Balor, Attribute: Spell=GATE5.SPL
-File: FINBALOR.CRE, Name: Balor, Attribute: Item=BALSWD.ITM
 File: GALION.CRE, Name: At the outset of battle, be sure to cast as many spells that enhance your party as you can., Attribute: Dialogue=GALION.DLG
+File: GATE5.SPL, Name: Gate, Attribute: Resource=CAMB2SU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=SUCCSU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=ALUFSU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=CAMB2SU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=NABASSU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=BABAUSU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=MARILSU.EFF
+File: GATE5.SPL, Name: Gate, Attribute: Resource=GLABSU.EFF
 File: GORANNW.CRE, Name: Я никогда там сам не был, но я знаю, что он находится далеко на юге от Порт-Лласта. Однако я знаю, что там притаилась какая-то великая опасность. Мой Орден посылал множество эмиссаров, чтобы разведать тот район, но никто так и не вернулся. Существует какая-то свирепая и опасная сила, которая действует в Чарвуде, но я не могу сказать, что это такое. Это все, что я знаю., Attribute: Dialogue=GORANNW.DLG
 File: HAEDRAL2.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL2.DLG
 File: HAEDRAL3.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL3.DLG
@@ -94,16 +88,9 @@ Special Abilities:
 File: MAUGRIM2.CRE, Name: The head of the Lathander temple mentioned a threat to his temple and yours and sent me here to help., Attribute: Dialogue=MAUGRIM2.DLG
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
-File: MINT2BOT.VVC, Attribute: Animation=MINT2BOT.BAM
-File: MINT2TOP.VVC, Attribute: Animation=MINT2TOP.BAM
-File: MINT3BOT.VVC, Attribute: Animation=MINT3BOT.BAM
-File: MINT3TOP.VVC, Attribute: Animation=MINT3TOP.BAM
-File: MINTSBOT.VVC, Attribute: Animation=MINTSBOT.BAM
-File: MINTSTOP.VVC, Attribute: Animation=MINTSTOP.BAM
 File: MORAG4.CRE, Name: 000000001-Quick-Save-3, Attribute: Dialogue=MORAG4.DLG
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
-File: NECROH.VVC, Attribute: Animation=NECROH.BAM
 File: NURSE3.CRE, Name: magic, Attribute: Dialogue=NURSE3.DLG
 File: NURSE4.CRE, Name: magic, Attribute: Dialogue=NURSE3.DLG
 File: NW1040.ARE, Attribute: Rest movie (day)=RESTDUNG.WBM
@@ -125,13 +112,10 @@ File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
-File: RR#GHAST.CRE, Name: Ghast, Attribute: Override script=RR#GHAST.BCS
-File: RR#GHAST.CRE, Name: Ghast, Attribute: Item=RR#GHAST.ITM
 File: SETSERV.CRE, Name: Servant, Attribute: Dialogue=ZOMBIE.DLG
 File: SHALDRI2.CRE, Name: Я? Ох, да я никто, правда. народ здесь думает, что я какой-то начальник в ополчении, но я не стражник. Моя должность неофициальна, если можно так выразиться. Однако меня здесь любят достаточно, чтобы можно было делать дела. Это ведь ценно, не правда ли? Гораздо ценнее униформы и всякого прочего. Итак, какое у вас дело?, Attribute: Dialogue=SHALDRI2.DLG
 File: SHAMANUT.CRE, Name: Shadow Druid, Attribute: Dialogue=SHAMANUT.DLG
 File: SLAVENW2.CRE, Name: Вы уже получили свою награду. Я благодарю вас за вашу помощь, но мы не можем себе позволить предложить вам что-нибудь еще., Attribute: Dialogue=ZOMBIE.DLG
-File: SLIVINH.VVC, Attribute: Animation=SLIVINH.BAM
 File: SPIN116W.SPL, Name: Меня обокрали, если вам очень нужно знать! Она уничтожила моих самых слабых овечек, а теперь остальные следуют за ее легионами нежити! Меня хотят распотрошить на ее алтаре! МЕНЯ! Это неправильно! Это Джаред, слуга  Сирика, потрошит других! А не какой-то червь!, Attribute: Resource=#FF_P109.WAV
 File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUAI.SPL
 File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUWA.SPL
@@ -154,5 +138,4 @@ File: TAMORA2.CRE, Name: Ваша повозка повреждена. Сове�
 File: TANIT2.CRE, Name: Я могу проводить вас к "Сияющему Змею". Там, говорят, безопасно., Attribute: Dialogue=TANIT2.DLG
 File: TERENNW.CRE, Name: Я не прочь узнать, что ты думаешь о предательстве Арибет. Что ты чувствуешь по этому поводу?, Attribute: Dialogue=TERENNW.DLG
 File: VALENW.CRE, Name: Продолжай то, что ты начал мне говорить перед этим., Attribute: Dialogue=VALENW.DLG
-File: WVHITH.VVC, Attribute: Animation=WVHITH.BAM
 File: YESGAR.CRE, Name: Не хочешь, не верь, тупица. Что было, то я и говорю., Attribute: Dialogue=YESGAR.DLG
