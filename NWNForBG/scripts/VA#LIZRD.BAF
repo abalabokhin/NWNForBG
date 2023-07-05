@@ -81,7 +81,7 @@ IF
 	CombatCounter(0)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("RZ_Rest_Timer","LOCALS",SHROM_TIMER)
+		SetGlobalTimer("RZ_Rest_Timer","LOCALS",TWELVE_HOURS)
 		SetGlobal("RZ_Rest","LOCALS",0)
 		SetGlobal("Out_of_Spells","LOCALS",0)
 		SetGlobal("Out_of_Area_Spells","LOCALS",0)

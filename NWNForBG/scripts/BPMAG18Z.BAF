@@ -748,7 +748,7 @@ END
 
 IF
 	ActionListEmpty()
-	CheckStatGT(Myself,0,SETTRAPSCP)
+	CheckStatGT(Myself,0,WIZARD_TENSERS_TRANSFORMATION)
 THEN
 	RESPONSE #100
 		AttackOneRound(LastSeenBy(Myself))

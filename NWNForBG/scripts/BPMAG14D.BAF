@@ -1082,7 +1082,7 @@ END
 
 IF
 	ActionListEmpty()
-	CheckStatGT(Myself,0,SETTRAPSCP)
+	CheckStatGT(Myself,0,WIZARD_TENSERS_TRANSFORMATION)
 THEN
 	RESPONSE #100
 		AttackOneRound(LastSeenBy(Myself))
@@ -1162,7 +1162,7 @@ END
 IF
 	ActionListEmpty()
 	HaveSpell(WIZARD_TENSERS_TRANSFORMATION)  // SPWI603.SPL (????????????? ???????)
-	CheckStat(Myself,0,SETTRAPSCP)
+	CheckStat(Myself,0,WIZARD_TENSERS_TRANSFORMATION)
 	HasItem("PHANBLAD",Myself)  // ?????????? ??????
 	GlobalTimerNotExpired("BPT","LOCALS")
 	HPPercentGT(Myself,65)
