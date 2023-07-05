@@ -1,4 +1,4 @@
-Number of hits: 1726
+Number of hits: 1706
 File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
 File: ARCHELNW.CRE, Name: Так ты, выходит, сбежал из тюрьмы?, Attribute: Dialogue=ARCHELNW.DLG
 File: ARIBETH5.CRE, Name: Nevermind. Lesser beings can hardly be expected to understand the intricacies of planar biology., Attribute: Dialogue=ARIBETH5.DLG
@@ -53,26 +53,6 @@ Weight: 4, Attribute: Resource=DSPELLXX.VEF
 File: DIZIL.CRE, Name: В конечном итоге я вернусь в мой Орден и отрапортую им о том, что Алаганда мертва. Но это может подождать, пока не завершится выполнение твоего задания. Отметина Смерти на тебе, <CHARNAME>. Пока я остаюсь с тобой, я знаю, что служу воле Безмолвного Лорда., Attribute: Dialogue=DIZIL.DLG
 File: ERROL.CRE, Name: It's important to use defensive spells that prevent attackers from harming your spellcasters, as they are typically weak in close combat., Attribute: Dialogue=ERROL.DLG
 File: ESMERNW.CRE, Name: Я ищу хорошего мошенника для помощи в моем задании., Attribute: Dialogue=ESMERNW.DLG
-File: FINALUF.CRE, Name: Alu-Fiend, Attribute: Default script=FINALUF.BCS
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Default script=FINBABAU.BCS
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Spell=GATE6.SPL
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Spell=GATE6.SPL
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Item=FINBABAU.ITM
-File: FINCAMB2.CRE, Name: Cambion, Attribute: Default script=FINCAMB2.BCS
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Default script=FINGLAB.BCS
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Spell=GATE4.SPL
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Spell=GATE4.SPL
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Item=FINGLAB.ITM
-File: FINMARIL.CRE, Name: Marilith, Attribute: Default script=FINMARIL.BCS
-File: FINMARIL.CRE, Name: Marilith, Attribute: Spell=GATE3.SPL
-File: FINMARIL.CRE, Name: Marilith, Attribute: Spell=GATE3.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Default script=FINNABAS.BCS
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Item=FINNABAS.ITM
-File: FINSUCC.CRE, Name: Succubus, Attribute: Default script=FINSUCC.BCS
 File: GALION.CRE, Name: At the outset of battle, be sure to cast as many spells that enhance your party as you can., Attribute: Dialogue=GALION.DLG
 File: GORANNW.CRE, Name: Я никогда там сам не был, но я знаю, что он находится далеко на юге от Порт-Лласта. Однако я знаю, что там притаилась какая-то великая опасность. Мой Орден посылал множество эмиссаров, чтобы разведать тот район, но никто так и не вернулся. Существует какая-то свирепая и опасная сила, которая действует в Чарвуде, но я не могу сказать, что это такое. Это все, что я знаю., Attribute: Dialogue=GORANNW.DLG
 File: HAEDRAL2.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL2.DLG
@@ -149,4 +129,5 @@ Weight: 3, Attribute: Resource=ICELANH.VEF
 File: TAMORA2.CRE, Name: Ваша повозка повреждена. Советую прогуляться пешком., Attribute: Dialogue=TAMORA2.DLG
 File: TANIT2.CRE, Name: Я могу проводить вас к "Сияющему Змею". Там, говорят, безопасно., Attribute: Dialogue=TANIT2.DLG
 File: TERENNW.CRE, Name: Я не прочь узнать, что ты думаешь о предательстве Арибет. Что ты чувствуешь по этому поводу?, Attribute: Dialogue=TERENNW.DLG
-File: TOBPAR05.CRE, Name: Delga Deepdelver, Att
+File: VALENW.CRE, Name: Продолжай то, что ты начал мне говорить перед этим., Attribute: Dialogue=VALENW.DLG
+File: YESGAR.CRE, Name: Не хочешь, не верь, тупица. Что было, то я и говорю., Attribute: Dialogue=YESGAR.DLG

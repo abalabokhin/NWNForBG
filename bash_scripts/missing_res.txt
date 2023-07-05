@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1726
+Number of hits: 1706
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
@@ -425,29 +425,9 @@ File: EYESEK01.CRE, Name: Seeker, Attribute: Dialogue=EYESEK01.DLG
 File: EYESNT01.CRE, Name: Sentinel, Attribute: Dialogue=EYESNT01.DLG
 File: EYEVIG01.CRE, Name: Vigilant, Attribute: Dialogue=EYEVIG01.DLG
 File: FDAWNX.VVC, Attribute: Resource=AM9100M1.VVC
-File: FINALUF.CRE, Name: Alu-Fiend, Attribute: Default script=FINALUF.BCS
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Default script=FINBABAU.BCS
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Spell=GATE6.SPL
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Spell=GATE6.SPL
-File: FINBABAU.CRE, Name: Here we are indeed., Attribute: Item=FINBABAU.ITM
-File: FINCAMB2.CRE, Name: Cambion, Attribute: Default script=FINCAMB2.BCS
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Default script=FINGLAB.BCS
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Spell=GATE4.SPL
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Spell=GATE4.SPL
-File: FINGLAB.CRE, Name: Glabrezu, Attribute: Item=FINGLAB.ITM
-File: FINMARIL.CRE, Name: Marilith, Attribute: Default script=FINMARIL.BCS
-File: FINMARIL.CRE, Name: Marilith, Attribute: Spell=GATE3.SPL
-File: FINMARIL.CRE, Name: Marilith, Attribute: Spell=GATE3.SPL
 File: FINMEL01.ITM, Name: No such index, Attribute: Icon=0.BAM
 File: FINMEL01.ITM, Name: No such index, Attribute: Ground icon=0.BAM
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Default script=FINNABAS.BCS
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Spell=GATE2.SPL
-File: FINNABAS.CRE, Name: Nabassu, Attribute: Item=FINNABAS.ITM
 File: FINSOL01.ITM, Name: No such index, Attribute: Resource=SPDISMA.VEF
-File: FINSUCC.CRE, Name: Succubus, Attribute: Default script=FINSUCC.BCS
 File: FIRBAN03.CRE, Name: Bandit, Attribute: Dialogue=FIRBAN03.DLG
 File: FIREB1.CRE, Name: Firebead Elvenhair, Attribute: Dialogue=FIREB1.DLG
 File: FIREBE.CRE, Name: Firebead Elvenhair, Attribute: Dialogue=FIREBE.DLG
