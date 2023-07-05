@@ -1,9 +1,10 @@
-Number of hits: 1718
+Number of hits: 1740
 File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
 File: ARCHELNW.CRE, Name: Так ты, выходит, сбежал из тюрьмы?, Attribute: Dialogue=ARCHELNW.DLG
 File: ARIBETH5.CRE, Name: Nevermind. Lesser beings can hardly be expected to understand the intricacies of planar biology., Attribute: Dialogue=ARIBETH5.DLG
 File: ASGARD.CRE, Name: Я так понимаю, что либо так, либо мне придется твою железку из задницы выковыривать... Хорошо, аргумент веский. Пусть будет 600 золотых. Я буду обслуживать тебя, <LADYLORD>, как я это понимаю... или как скажешь. Если захочешь мне дать ценный совет, просто свистни, ага?, Attribute: Dialogue=ASGARD.DLG
 File: ASHIRA.CRE, Name: Этот район на карантине? Вы кого-нибудь впускаете или выпускаете?, Attribute: Dialogue=ASHIRA.DLG
+File: BALORSU.EFF, Attribute: Resource=FINBALOR.CRE
 File: BELARIAN.CRE, Name: Once a great general in a celestial army, the Winged's days were spent warring against the fiends of the Abyss. During a tremendous battle against these demon hordes, one of her command decisions resulted in the destruction of a quarter of her legions. Furious over the loss, she abandoned her post and waded into battle herself, cutting down lesser demons by the dozen. Though she was personally victorious in combat, the larger battle was lostвЂ”without her leadership, her remaining forces were thrown into disarray and forced to withdraw. For dereliction of duty and her inability to control her emotions, the god she served stripped her of her rank and cast her out of her home plane.
 
 STATISTICS:
@@ -23,6 +24,7 @@ Requires:
 
 Weight: 7, Attribute: Dialogue=BELARIAN.DLG
 File: BFISHER3.CRE, Name: Fisherman, Attribute: Dialogue=BFISHER3.DLG
+File: CBDNCSWD.CRE, Name: 000000001-Quick-Save-2, Attribute: Item=CBDNCSWD.ITM
 File: CHANYNW.CRE, Name: Ты когда-нибудь бывал в Чарвуде?, Attribute: Dialogue=CHANYNW.DLG
 File: CLET.CRE, Name: Как ты сбежал из тюрьмы?, Attribute: Dialogue=CLET.DLG
 File: COMMONW2.CRE, Name: name:, Attribute: Dialogue=COMMONW2.DLG
@@ -51,6 +53,16 @@ Requires:
 
 Weight: 4, Attribute: Resource=DSPELLXX.VEF
 File: CSALRING.ITM, Name: No such index, Attribute: Resource=#FROSTAU.VEF
+File: CULTMO1.CRE, Name: Glabrezu, Attribute: Override script=CULTPRO.BCS
+File: CULTMO1.CRE, Name: Glabrezu, Attribute: Race script=DEMGLAB4.BCS
+File: CULTMO1.CRE, Name: Glabrezu, Attribute: Default script=WTASI3.BCS
+File: CULTMO12.CRE, Name: Interesting, though not unheard of. We often try to guide those that have already fallen. Some live well and then fall unexpectedly. Tell me of this man., Attribute: Override script=CULTPRO.BCS
+File: CULTMO2.CRE, Name: Cornugon, Attribute: Override script=CULTPRO.BCS
+File: CULTMO2.CRE, Name: Cornugon, Attribute: General script=WTASI3.BCS
+File: CULTMO2.CRE, Name: Cornugon, Attribute: Item=RAHVINR1.ITM
+File: CULTMO2.CRE, Name: Cornugon, Attribute: Item=RAHVINR2.ITM
+File: CULTMO2.CRE, Name: Cornugon, Attribute: Item=RAHVIN.ITM
+File: CULTMO3.CRE, Name: Speak., Attribute: Override script=CULTPRO.BCS
 File: DIZIL.CRE, Name: В конечном итоге я вернусь в мой Орден и отрапортую им о том, что Алаганда мертва. Но это может подождать, пока не завершится выполнение твоего задания. Отметина Смерти на тебе, <CHARNAME>. Пока я остаюсь с тобой, я знаю, что служу воле Безмолвного Лорда., Attribute: Dialogue=DIZIL.DLG
 File: ERROL.CRE, Name: It's important to use defensive spells that prevent attackers from harming your spellcasters, as they are typically weak in close combat., Attribute: Dialogue=ERROL.DLG
 File: ESMERNW.CRE, Name: Я ищу хорошего мошенника для помощи в моем задании., Attribute: Dialogue=ESMERNW.DLG
@@ -107,9 +119,12 @@ File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
+File: RR#DGZ03.EFF, Attribute: Resource=RR#GHAST.CRE
 File: SETSERV.CRE, Name: Servant, Attribute: Dialogue=ZOMBIE.DLG
 File: SHALDRI2.CRE, Name: Я? Ох, да я никто, правда. народ здесь думает, что я какой-то начальник в ополчении, но я не стражник. Моя должность неофициальна, если можно так выразиться. Однако меня здесь любят достаточно, чтобы можно было делать дела. Это ведь ценно, не правда ли? Гораздо ценнее униформы и всякого прочего. Итак, какое у вас дело?, Attribute: Dialogue=SHALDRI2.DLG
 File: SHAMANUT.CRE, Name: Shadow Druid, Attribute: Dialogue=SHAMANUT.DLG
+File: SLANTH01.EFF, Attribute: Resource=LSHADOW.CRE
+File: SLANTH02.EFF, Attribute: Resource=LSHADFI.CRE
 File: SLAVENW2.CRE, Name: Вы уже получили свою награду. Я благодарю вас за вашу помощь, но мы не можем себе позволить предложить вам что-нибудь еще., Attribute: Dialogue=ZOMBIE.DLG
 File: SPIN116W.SPL, Name: Меня обокрали, если вам очень нужно знать! Она уничтожила моих самых слабых овечек, а теперь остальные следуют за ее легионами нежити! Меня хотят распотрошить на ее алтаре! МЕНЯ! Это неправильно! Это Джаред, слуга  Сирика, потрошит других! А не какой-то червь!, Attribute: Resource=SLIVINH.VEF
 File: SPIN116W.SPL, Name: Меня обокрали, если вам очень нужно знать! Она уничтожила моих самых слабых овечек, а теперь остальные следуют за ее легионами нежити! Меня хотят распотрошить на ее алтаре! МЕНЯ! Это неправильно! Это Джаред, слуга  Сирика, потрошит других! А не какой-то червь!, Attribute: Resource=#FF_P109.WAV
@@ -129,6 +144,13 @@ File: SPMINTI.SPL, Name: Благодарю вас. По крайней мере
 File: SPMINTI.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=MINT2BOT.VEF
 File: SPMINTI.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=MINTSTOP.VEF
 File: SPMINTI.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=MINTSBOT.VEF
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR953.SPL
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR954.SPL
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR955.SPL
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR956.SPL
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR957.SPL
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR958.SPL
+File: SPMINTID.SPL, Name: Благодарю вас. По крайней мере, мне вернули какую-то его часть. Это его не заменит, но... хотя бы что-то., Attribute: Resource=SPPR959.SPL
 File: SPPR329.SPL, Name: Вы потеряли стражника? Кто это был?, Attribute: Resource=DSPELLX.VEF
 File: SPPR714.SPL, Name: Хорошо... оставьте меня. Думаю, я останусь здесь. Я мало что могу сделать в одиночку., Attribute: Resource=CONJUH.VEF
 File: SPWI328.SPL, Name: These pear-shaped variations on the common yarting have four sets of paired strings that produce rich tones. They are popular peasant instruments.
