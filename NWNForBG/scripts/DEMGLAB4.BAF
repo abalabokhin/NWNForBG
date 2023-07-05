@@ -1,0 +1,71 @@
+IF
+	OR(6)
+		See(Player1)
+		See(Player2)
+		See(Player3)
+		See(Player4)
+		See(Player5)
+		See(Player6)
+	!StateCheck(LastSeenBy,STATE_HELPLESS)
+	GlobalLT("TANARIPARALYZE","LOCALS",3)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy,TANARI_PARALYZE)  // SPIN999.SPL (???????????)
+		IncrementGlobal("TANARIPARALYZE","LOCALS",1)
+END
+
+IF
+	OR(6)
+		See(Player1)
+		See(Player2)
+		See(Player3)
+		See(Player4)
+		See(Player5)
+		See(Player6)
+	StateCheck(LastSeenBy,STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy)
+		AttackOneRound(LastSeenBy)
+END
+
+IF
+	See([0.0.0.MAGE])
+	Global("Prep","LOCALS",1)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy,WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+		SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+	OR(6)
+		See(Player1)
+		See(Player2)
+		See(Player3)
+		See(Player4)
+		See(Player5)
+		See(Player6)
+	Global("Prep","LOCALS",2)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CONFUSION)  // SPWI401.SPL (??????????????)
+		SetGlobal("Prep","LOCALS",3)
+END
+
+IF
+	OR(6)
+		See(Player1)
+		See(Player2)
+		See(Player3)
+		See(Player4)
+		See(Player5)
+		See(Player6)
+	!StateCheck(LastSeenBy,STATE_HELPLESS)
+	GlobalLT("TANARIPARALYZE","LOCALS",7)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy,TANARI_PARALYZE)  // SPIN999.SPL (???????????)
+		IncrementGlobal("TANARIPARALYZE","LOCALS",1)
+END
+

@@ -1,0 +1,9 @@
+IF
+	Summoned(Myself)
+	Global("Protect","LOCALS",0)
+THEN
+	RESPONSE #100
+		ProtectObject(LastSummonerOf(Myself),12)
+		SetGlobal("Protect","LOCALS",1)
+END
+
