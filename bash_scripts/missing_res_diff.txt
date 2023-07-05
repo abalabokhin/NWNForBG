@@ -1,9 +1,5 @@
-Number of hits: 1706
+Number of hits: 1681
 File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
-File: ARCHELNW.CRE, Name: Так ты, выходит, сбежал из тюрьмы?, Attribute: Dialogue=ARCHELNW.DLG
-File: ARIBETH5.CRE, Name: Nevermind. Lesser beings can hardly be expected to understand the intricacies of planar biology., Attribute: Dialogue=ARIBETH5.DLG
-File: ASGARD.CRE, Name: Я так понимаю, что либо так, либо мне придется твою железку из задницы выковыривать... Хорошо, аргумент веский. Пусть будет 600 золотых. Я буду обслуживать тебя, <LADYLORD>, как я это понимаю... или как скажешь. Если захочешь мне дать ценный совет, просто свистни, ага?, Attribute: Dialogue=ASGARD.DLG
-File: ASHIRA.CRE, Name: Этот район на карантине? Вы кого-нибудь впускаете или выпускаете?, Attribute: Dialogue=ASHIRA.DLG
 File: BELARIAN.CRE, Name: Once a great general in a celestial army, the Winged's days were spent warring against the fiends of the Abyss. During a tremendous battle against these demon hordes, one of her command decisions resulted in the destruction of a quarter of her legions. Furious over the loss, she abandoned her post and waded into battle herself, cutting down lesser demons by the dozen. Though she was personally victorious in combat, the larger battle was lostвЂ”without her leadership, her remaining forces were thrown into disarray and forced to withdraw. For dereliction of duty and her inability to control her emotions, the god she served stripped her of her rank and cast her out of her home plane.
 
 STATISTICS:
@@ -23,8 +19,6 @@ Requires:
 
 Weight: 7, Attribute: Dialogue=BELARIAN.DLG
 File: BFISHER3.CRE, Name: Fisherman, Attribute: Dialogue=BFISHER3.DLG
-File: CHANYNW.CRE, Name: Ты когда-нибудь бывал в Чарвуде?, Attribute: Dialogue=CHANYNW.DLG
-File: CLET.CRE, Name: Как ты сбежал из тюрьмы?, Attribute: Dialogue=CLET.DLG
 File: COMMONW2.CRE, Name: name:, Attribute: Dialogue=COMMONW2.DLG
 File: COMMONW3.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
 File: COMMONW4.CRE, Name: name:, Attribute: Dialogue=COMMONW3.DLG
@@ -50,41 +44,15 @@ Requires:
  9 Strength
 
 Weight: 4, Attribute: Resource=DSPELLXX.VEF
-File: DIZIL.CRE, Name: В конечном итоге я вернусь в мой Орден и отрапортую им о том, что Алаганда мертва. Но это может подождать, пока не завершится выполнение твоего задания. Отметина Смерти на тебе, <CHARNAME>. Пока я остаюсь с тобой, я знаю, что служу воле Безмолвного Лорда., Attribute: Dialogue=DIZIL.DLG
 File: ERROL.CRE, Name: It's important to use defensive spells that prevent attackers from harming your spellcasters, as they are typically weak in close combat., Attribute: Dialogue=ERROL.DLG
-File: ESMERNW.CRE, Name: Я ищу хорошего мошенника для помощи в моем задании., Attribute: Dialogue=ESMERNW.DLG
 File: GALION.CRE, Name: At the outset of battle, be sure to cast as many spells that enhance your party as you can., Attribute: Dialogue=GALION.DLG
-File: GORANNW.CRE, Name: Я никогда там сам не был, но я знаю, что он находится далеко на юге от Порт-Лласта. Однако я знаю, что там притаилась какая-то великая опасность. Мой Орден посылал множество эмиссаров, чтобы разведать тот район, но никто так и не вернулся. Существует какая-то свирепая и опасная сила, которая действует в Чарвуде, но я не могу сказать, что это такое. Это все, что я знаю., Attribute: Dialogue=GORANNW.DLG
-File: HAEDRAL2.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL2.DLG
-File: HAEDRAL3.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL3.DLG
 File: HPRIEST.CRE, Name: Cleric Of Helm, Attribute: Dialogue=HPRIEST.DLG
 File: ISSABON.CRE, Name: I... I didn't want to do it!, Attribute: Dialogue=ISSABON.DLG
-File: JAILGUAR.CRE, Name: Guard, Attribute: Dialogue=JAILGUAR.DLG
 File: JAROO.CRE, Name: Impossible! These gnats have injured me!, Attribute: Dialogue=JAROO.DLG
-File: LEES.CRE, Name: Ты че, воображаешь, я буду работать бесплатно? Да за кого ты меня принимаешь? За эльфа?! Тьф-фу! Подзаработаешь - милости просим., Attribute: Dialogue=LEES.DLG
-File: LUCE2.CRE, Name: Shapeshift: Greater Werewolf
-
-Strength: 21
-Dexterity: 20
-
-Base Armor Class: -6
-Number of Attacks: 3
-Attack Damage: 1d8 (slashing)
-
-Special Abilities:
-вЂ“ Fire Resistance: 50%
-вЂ“ Cold Resistance: 50%
-вЂ“ Electricity Resistance: 50%
-вЂ“ Acid Resistance: 50%
-вЂ“ Magic Resistance: 40%, Attribute: Dialogue=LUCE2.DLG
-File: MAUGRIM2.CRE, Name: The head of the Lathander temple mentioned a threat to his temple and yours and sent me here to help., Attribute: Dialogue=MAUGRIM2.DLG
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
-File: MORAG4.CRE, Name: 000000001-Quick-Save-3, Attribute: Dialogue=MORAG4.DLG
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
-File: NURSE3.CRE, Name: magic, Attribute: Dialogue=NURSE3.DLG
-File: NURSE4.CRE, Name: magic, Attribute: Dialogue=NURSE3.DLG
 File: NW1040.ARE, Attribute: Rest movie (day)=RESTDUNG.WBM
 File: NW1040.ARE, Attribute: Rest movie (night)=RESTDUNG.WBM
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -96,9 +64,6 @@ File: NWPRST1.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.
 File: NWPRST2.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
 File: NWPRST3.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
 File: NWPRST4.CRE, Name: No! No, no, waitвЂ”!, Attribute: Dialogue=NWPRIEST.DLG
-File: OLEFF3.CRE, Name: Опять, да, ворюга? Неимется тебе! Эти жалкие попытки воровства пора присечь., Attribute: Dialogue=OLEFF3.DLG
-File: OPHALA2.CRE, Name: Как боги могут быть настолько жестоки., Attribute: Dialogue=OPHALA2.DLG
-File: PERIGOR.CRE, Name: Сущность тех, кого забрала чума была украдена прямо из ужасной хватки моего владыки, Смерти. Эта болезнь обманом отнимает у Безмолвного Лорда то, что принадлежит ему по праву. Я не знаю, как мы можем остановить Воющую Смерть, но я жажду поискать в Гнезде Нищих ответ на это., Attribute: Dialogue=PERIGOR.DLG
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
@@ -126,8 +91,4 @@ File: SPWI328.SPL, Name: These pear-shaped variations on the common yarting have
 STATISTICS:
 
 Weight: 3, Attribute: Resource=ICELANH.VEF
-File: TAMORA2.CRE, Name: Ваша повозка повреждена. Советую прогуляться пешком., Attribute: Dialogue=TAMORA2.DLG
-File: TANIT2.CRE, Name: Я могу проводить вас к "Сияющему Змею". Там, говорят, безопасно., Attribute: Dialogue=TANIT2.DLG
-File: TERENNW.CRE, Name: Я не прочь узнать, что ты думаешь о предательстве Арибет. Что ты чувствуешь по этому поводу?, Attribute: Dialogue=TERENNW.DLG
-File: VALENW.CRE, Name: Продолжай то, что ты начал мне говорить перед этим., Attribute: Dialogue=VALENW.DLG
 File: YESGAR.CRE, Name: Не хочешь, не верь, тупица. Что было, то я и говорю., Attribute: Dialogue=YESGAR.DLG

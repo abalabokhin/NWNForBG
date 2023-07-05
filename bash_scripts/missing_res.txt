@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1706
+Number of hits: 1681
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: 2207GUAR.CRE, Name: Guard, Attribute: Dialogue=2207GUAR.DLG
@@ -92,8 +92,6 @@ File: AR5509.ARE, Name: Amkethran Crypt, Attribute: Rest movie (day)=RESTDUNG.WB
 File: AR5509.ARE, Name: Amkethran Crypt, Attribute: Rest movie (night)=RESTDUNG.WBM
 File: AR6008.ARE, Name: Frost Salamander Cave, Attribute: Area script=AR6008.BCS
 File: AR6300.ARE, Name: Oasis in Tethyr, Attribute: Area script=AR6300.BCS
-File: ARCHELNW.CRE, Name: Так ты, выходит, сбежал из тюрьмы?, Attribute: Dialogue=ARCHELNW.DLG
-File: ARIBETH5.CRE, Name: Nevermind. Lesser beings can hardly be expected to understand the intricacies of planar biology., Attribute: Dialogue=ARIBETH5.DLG
 File: ARKANISG.CRE, Name: Arkanis Gath, Attribute: Dialogue=ARKANISG.DLG
 File: ARNBOY01.CRE, Name: Apprentice Torturer Douglas, Attribute: Class script=ARNBOY01.BCS
 File: ARNFGT01.CRE, Name: Shadow Thief, Attribute: Dialogue=ARNFGT01.DLG
@@ -105,8 +103,6 @@ File: AROW1A.ITM, Name: Arrow +2, Attribute: Icon=IAROW1A.BAM
 File: ARROPHEO.ITM, Name: Short Sword +1, Attribute: Resource=PHEOGURD.CRE
 File: ARTEMIS.CRE, Name: Artemis Entreri, Attribute: Dialogue=ARTEMIS.DLG
 File: ARVAL.CRE, Name: High Mornmaster Arval, Attribute: Dialogue=ARVAL.DLG
-File: ASGARD.CRE, Name: Я так понимаю, что либо так, либо мне придется твою железку из задницы выковыривать... Хорошо, аргумент веский. Пусть будет 600 золотых. Я буду обслуживать тебя, <LADYLORD>, как я это понимаю... или как скажешь. Если захочешь мне дать ценный совет, просто свистни, ага?, Attribute: Dialogue=ASGARD.DLG
-File: ASHIRA.CRE, Name: Этот район на карантине? Вы кого-нибудь впускаете или выпускаете?, Attribute: Dialogue=ASHIRA.DLG
 File: BALTH01A.SPL, Name: No such index, Attribute: Resource=BALTH01B.EFF
 File: BALTH02.SPL, Name: Lunar Stance!, Attribute: Spell icon=SPCL917C.BAM
 File: BALTH03.SPL, Name: Dragon Fist, Attribute: Spell icon=SPCL906C.BAM
@@ -248,7 +244,6 @@ File: CHALSLAY.CRE, Name: Slayer, Attribute: Resource=CDHGNYA1.SPL
 File: CHALTROL.CRE, Name: Giant Troll, Attribute: Dialogue=CHEVIL03.DLG
 File: CHANG01.CRE, Name: Angelo, Attribute: Dialogue=CHANG01.DLG
 File: CHANG02.CRE, Name: Angelo, Attribute: Dialogue=CHANG01.DLG
-File: CHANYNW.CRE, Name: Ты когда-нибудь бывал в Чарвуде?, Attribute: Dialogue=CHANYNW.DLG
 File: CHEVIL01.CRE, Name: Kobold Commando, Attribute: Race script=KOBOLSU.BCS
 File: CHEVIL01.CRE, Name: Kobold Commando, Attribute: Dialogue=CHEVIL01.DLG
 File: CHEVIL02.CRE, Name: Doppelganger, Attribute: Dialogue=CHEVIL01.DLG
@@ -273,7 +268,6 @@ File: CHSAM01.CRE, Name: Semaj, Attribute: Dialogue=CHSAM01.DLG
 File: CHSAM02.CRE, Name: Semaj, Attribute: Dialogue=CHSAM01.DLG
 File: CHTAZ01.CRE, Name: Tazok, Attribute: Dialogue=CHTAZ01.DLG
 File: CHTAZ02.CRE, Name: Tamoko, Attribute: Dialogue=CHTAZ01.DLG
-File: CLET.CRE, Name: Как ты сбежал из тюрьмы?, Attribute: Dialogue=CLET.DLG
 File: CLGIJJ01.CRE, Name: Gijjal of the House Malario, Attribute: Dialogue=CLGIJJ01.DLG
 File: CLGOL01.CRE, Name: Clay Golem, Attribute: Dialogue=CLGOL01.DLG
 File: CLLATP01.CRE, Name: Dawnmistress, Attribute: Dialogue=CLLATP01.DLG
@@ -376,7 +370,6 @@ File: DEMOSUM4.CRE, Name: Cambion, Attribute: Dialogue=DEMOSUM4.DLG
 File: DERRICK.CRE, Name: Derrick, Attribute: Dialogue=DERRICK.DLG
 File: DEVAEVIL.CRE, Name: Fallen Deva, Attribute: Dialogue=DEVAEVIL.DLG
 File: DEVAGOOD.CRE, Name: Deva, Attribute: Dialogue=DEVAGOOD.DLG
-File: DIZIL.CRE, Name: В конечном итоге я вернусь в мой Орден и отрапортую им о том, что Алаганда мертва. Но это может подождать, пока не завершится выполнение твоего задания. Отметина Смерти на тебе, <CHARNAME>. Пока я остаюсь с тобой, я знаю, что служу воле Безмолвного Лорда., Attribute: Dialogue=DIZIL.DLG
 File: DMANNO.CRE, Name: Announcer, Attribute: Override script=DMANNO.BCS
 File: DMASK1.CRE, Name: Commoner, Attribute: Dialogue=DMASK1.DLG
 File: DOPCLE01.CRE, Name: Kiel the Legion Killer, Attribute: Override script=DOPKIE.BCS
@@ -416,7 +409,6 @@ File: ELEKOB01.CRE, Name: Kobold Commando, Attribute: General script=KBWARR01.BC
 File: ELMIND.CRE, Name: Elminster, Attribute: Dialogue=ELMIND.DLG
 File: ENTTEST1.VVC, Attribute: Animation=SPENTAXL.BAM
 File: ERROL.CRE, Name: It's important to use defensive spells that prevent attackers from harming your spellcasters, as they are typically weak in close combat., Attribute: Dialogue=ERROL.DLG
-File: ESMERNW.CRE, Name: Я ищу хорошего мошенника для помощи в моем задании., Attribute: Dialogue=ESMERNW.DLG
 File: EYEBHL01.CRE, Name: Eye of the Beholder, Attribute: Dialogue=EYEBHL01.DLG
 File: EYEDED01.CRE, Name: Eye of the Dead, Attribute: Dialogue=EYEDED01.DLG
 File: EYEEGL01.CRE, Name: Eagle Eye, Attribute: Dialogue=EYEEGL01.DLG
@@ -471,7 +463,6 @@ File: GORAIR01.CRE, Name: Lesser Air Elemental, Attribute: Resource=CDHGNYA1.SPL
 File: GORAIR02.CRE, Name: Greater Air Elemental, Attribute: Resource=CDSW1H58.SPL
 File: GORAIR02.CRE, Name: Greater Air Elemental, Attribute: Resource=CDMOUND.SPL
 File: GORAIR02.CRE, Name: Greater Air Elemental, Attribute: Resource=CDHGNYA1.SPL
-File: GORANNW.CRE, Name: Я никогда там сам не был, но я знаю, что он находится далеко на юге от Порт-Лласта. Однако я знаю, что там притаилась какая-то великая опасность. Мой Орден посылал множество эмиссаров, чтобы разведать тот район, но никто так и не вернулся. Существует какая-то свирепая и опасная сила, которая действует в Чарвуде, но я не могу сказать, что это такое. Это все, что я знаю., Attribute: Dialogue=GORANNW.DLG
 File: GORCHR.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: GORCHR.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: GORCHR.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -726,8 +717,6 @@ File: GUIW20.CHU, Attribute: Button=GUIWDB20.BAM
 File: GUIW20.CHU, Attribute: Button=GUIWDB20.BAM
 File: GUIW20.CHU, Attribute: Button=GUIWDB20.BAM
 File: GUIW20.CHU, Attribute: Button=GUIWDB20.BAM
-File: HAEDRAL2.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL2.DLG
-File: HAEDRAL3.CRE, Name: Ну, здравствуйте, <CHARNAME>. Я слышала, что в городе появился новый знаток магии. Гильдия Звездного Плаща приветствует вас!, Attribute: Dialogue=HAEDRAL3.DLG
 File: HAERPROF.SPL, Name: No such index, Attribute: Spell icon=0.BAM
 File: HAGUAR01.CRE, Name: Arresting Officer, Attribute: Dialogue=HAGUARD0.DLG
 File: HAGUAR02.CRE, Name: Arresting Soldier, Attribute: Dialogue=HAGUARD0.DLG
@@ -788,7 +777,6 @@ File: JAGA3.CRE, Name: Nadinal, Attribute: Dialogue=JAGA3.DLG
 File: JAGA4.CRE, Name: Iko, Attribute: Dialogue=JAGA4.DLG
 File: JAHEIRD.CRE, Name: Jaheira, Attribute: Override script=JAHEIRD.BCS
 File: JAHEIRD.CRE, Name: Jaheira, Attribute: Dialogue=JAHEIRD.DLG
-File: JAILGUAR.CRE, Name: Guard, Attribute: Dialogue=JAILGUAR.DLG
 File: JAMAGE1.CRE, Name: Gracien, Attribute: Dialogue=JAMAGE1.DLG
 File: JAMAGE2.CRE, Name: Malacazar, Attribute: Dialogue=JAMAGE2.DLG
 File: JANOS.CRE, Name: Janos, Attribute: Dialogue=JANOS.DLG
@@ -841,32 +829,15 @@ File: KPTROL04.CRE, Name: Troll, Attribute: Class script=KPTROL04.BCS
 File: KPTROL04.CRE, Name: Troll, Attribute: Dialogue=KPTROL04.DLG
 File: kptrol13.CRE, Name: Troll, Attribute: Dialogue=KPTROL03.DLG
 File: KSHADOW.CRE, Name: Shadow, Attribute: Dialogue=KSHADOW.DLG
-File: LEES.CRE, Name: Ты че, воображаешь, я буду работать бесплатно? Да за кого ты меня принимаешь? За эльфа?! Тьф-фу! Подзаработаешь - милости просим., Attribute: Dialogue=LEES.DLG
 File: LEGDOR.CRE, Name: Legdoril, Attribute: Dialogue=LEGDOR.DLG
 File: LIGHTSTO.PRO, Name: Call Lightning Storm, Attribute: Projectile animation=MAGMIS.BAM
 File: LIIA.CRE, Name: Liia Jannath, Attribute: Dialogue=LIIA.DLG
 File: LLYLLA.CRE, Name: Llylla, Attribute: Override script=LLYLLA.BCS
 File: LLYLLA.CRE, Name: Llylla, Attribute: Dialogue=LLYLLA.DLG
-File: LUCE2.CRE, Name: Shapeshift: Greater Werewolf
-
-Strength: 21
-Dexterity: 20
-
-Base Armor Class: -6
-Number of Attacks: 3
-Attack Damage: 1d8 (slashing)
-
-Special Abilities:
-вЂ“ Fire Resistance: 50%
-вЂ“ Cold Resistance: 50%
-вЂ“ Electricity Resistance: 50%
-вЂ“ Acid Resistance: 50%
-вЂ“ Magic Resistance: 40%, Attribute: Dialogue=LUCE2.DLG
 File: MAGE05.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: MAGE05.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: MAGE05.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
 File: MALLA01.CRE, Name: Malla, Attribute: Default script=MALLA01.BCS
-File: MAUGRIM2.CRE, Name: The head of the Lathander temple mentioned a threat to his temple and yours and sent me here to help., Attribute: Dialogue=MAUGRIM2.DLG
 File: MDHSSS.CRE, Name: Greater Air Elemental, Attribute: Override script=MDHSSS.BCS
 File: MDHSSS.CRE, Name: Greater Air Elemental, Attribute: Dialogue=MDHSSS.DLG
 File: MEKEAR01.CRE, Name: Lesser Earth Elemental, Attribute: Dialogue=MEKEAR01.DLG
@@ -895,7 +866,6 @@ File: MISTPO01.CRE, Name: Poison Mist, Attribute: Resource=CDMOUND.SPL
 File: MISTPO01.CRE, Name: Poison Mist, Attribute: Resource=CDHGNYA1.SPL
 File: MONK.CRE, Name: Monk, Attribute: Dialogue=MONK.DLG
 File: MONKTU20.CRE, Name: Tutor, Attribute: Dialogue=MONKTU20.DLG
-File: MORAG4.CRE, Name: 000000001-Quick-Save-3, Attribute: Dialogue=MORAG4.DLG
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NALIN.CRE, Name: Nalin, Attribute: Dialogue=NALIN.DLG
@@ -907,8 +877,6 @@ File: NOBW4.CRE, Name: Noblewoman, Attribute: Dialogue=NOBW4.DLG
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDSW1H58.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDMOUND.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDHGNYA1.SPL
-File: NURSE3.CRE, Name: magic, Attribute: Dialogue=NURSE3.DLG
-File: NURSE4.CRE, Name: magic, Attribute: Dialogue=NURSE3.DLG
 File: NW1040.ARE, Attribute: Rest movie (day)=RESTDUNG.WBM
 File: NW1040.ARE, Attribute: Rest movie (night)=RESTDUNG.WBM
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -1062,8 +1030,6 @@ File: ohtyr1.SPL, Name: Exaltation, Attribute: Resource=SPPR422.ITM
 File: ohtyr1.SPL, Name: Exaltation, Attribute: Resource=CONFUSH.VEF
 File: ohtyr1.SPL, Name: Exaltation, Attribute: Resource=#FF_P106.WAV
 File: OISIG.CRE, Name: High Watcher Oisig, Attribute: Dialogue=OISIG.DLG
-File: OLEFF3.CRE, Name: Опять, да, ворюга? Неимется тебе! Эти жалкие попытки воровства пора присечь., Attribute: Dialogue=OLEFF3.DLG
-File: OPHALA2.CRE, Name: Как боги могут быть настолько жестоки., Attribute: Dialogue=OPHALA2.DLG
 File: PAIREL01.CRE, Name: Air Elemental, Attribute: Dialogue=PAIREL01.DLG
 File: PALRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: PALRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
@@ -1077,7 +1043,6 @@ File: PCAPT03.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT03.DLG
 File: PCAPT04.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT04.DLG
 File: PCAPT05.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT05.DLG
 File: PCAPT06.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT06.DLG
-File: PERIGOR.CRE, Name: Сущность тех, кого забрала чума была украдена прямо из ужасной хватки моего владыки, Смерти. Эта болезнь обманом отнимает у Безмолвного Лорда то, что принадлежит ему по праву. Я не знаю, как мы можем остановить Воющую Смерть, но я жажду поискать в Гнезде Нищих ответ на это., Attribute: Dialogue=PERIGOR.DLG
 File: PHLYDI.CRE, Name: Phlydia, Attribute: Dialogue=PHLYDI.DLG
 File: PIRMUR11.CRE, Name: Guard, Attribute: Override script=PIRMUR11.BCS
 File: PIRMUR11.CRE, Name: Guard, Attribute: Dialogue=PIRMUR11.DLG
@@ -1586,18 +1551,15 @@ File: SWORD01.CRE, Name: Magical Sword, Attribute: Parent resource=MISC9Y.SPL
 File: SWORD01.CRE, Name: Magical Sword, Attribute: Parent resource=MISC9Y.SPL
 File: SWORD01.CRE, Name: Magical Sword, Attribute: Parent resource=MISC9Y.SPL
 File: TALKNI02.CRE, Name: Storm Knight, Attribute: Dialogue=TALKNI02.DLG
-File: TAMORA2.CRE, Name: Ваша повозка повреждена. Советую прогуляться пешком., Attribute: Dialogue=TAMORA2.DLG
 File: TANADV01.CRE, Name: Strachan Fireblade, Attribute: Dialogue=TANADV01.DLG
 File: TANADV02.CRE, Name: Adventurer, Attribute: Dialogue=TANADV02.DLG
 File: TANADV03.CRE, Name: Adventurer, Attribute: Dialogue=TANADV03.DLG
 File: TANADV04.CRE, Name: Adventurer, Attribute: Dialogue=TANADV04.DLG
 File: TANADV05.CRE, Name: Adventurer, Attribute: Dialogue=TANADV05.DLG
 File: TANADV06.CRE, Name: Dunbar the Fifth, Attribute: Dialogue=TANADV06.DLG
-File: TANIT2.CRE, Name: Я могу проводить вас к "Сияющему Змею". Там, говорят, безопасно., Attribute: Dialogue=TANIT2.DLG
 File: TANSKW1.CRE, Name: Skeleton Warrior, Attribute: Dialogue=TANSKW1.DLG
 File: TANTHF01.CRE, Name: Rune Assassin, Attribute: Dialogue=TANTHF01.DLG
 File: TASLOISU.CRE, Name: Tasloi Elite Trooper, Attribute: Class script=KOBOLSU.BCS
-File: TERENNW.CRE, Name: Я не прочь узнать, что ты думаешь о предательстве Арибет. Что ты чувствуешь по этому поводу?, Attribute: Dialogue=TERENNW.DLG
 File: TETHTO2.CRE, Name: Tethtoril, Attribute: Dialogue=TETHTO2.DLG
 File: TETHTO3.CRE, Name: Tethtoril, Attribute: Dialogue=TETHTO3.DLG
 File: TOBBAN01.CRE, Name: Sharik Nefal, Attribute: Dialogue=TOBBAN01.DLG
@@ -1653,7 +1615,6 @@ File: VAKG02.CRE, Name: Archer, Attribute: Dialogue=VAKG02.DLG
 File: VAKG03.CRE, Name: Thief, Attribute: Dialogue=VAKG03.DLG
 File: VAKG04.CRE, Name: Goon, Attribute: Dialogue=VAKG04.DLG
 File: VAKOLA.CRE, Name: Vakola, Attribute: Dialogue=VAKOLA.DLG
-File: VALENW.CRE, Name: Продолжай то, что ты начал мне говорить перед этим., Attribute: Dialogue=VALENW.DLG
 File: VALMAG01.CRE, Name: Mage, Attribute: Dialogue=VALMAG01.DLG
 File: VALMAG02.CRE, Name: Mage, Attribute: Dialogue=VALMAG02.DLG
 File: VALMAG03.CRE, Name: Mage, Attribute: Dialogue=VALMAG02.DLG
