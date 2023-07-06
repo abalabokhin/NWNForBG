@@ -1,33 +1,46 @@
-
 // NWN For BG
-
 BACKUP ~NWNForBG\backup~
 AUTHOR ~Alexander Kanechev~
 VERSION ~0.1~
 
 ALWAYS
- ACTION_IF (GAME_IS ~eet~) BEGIN
-  OUTER_SET bg2_chapter = 12
- END ELSE BEGIN
-  OUTER_SET bg2_chapter = 0
- END
- OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
-  OUTER_SET bg2_chapter = bg2_chapter + 1
-  OUTER_SPRINT name_source ~bg2_chapter_%i%~
-  OUTER_SET EVAL ~%name_source%~ = bg2_chapter
- END
- END
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+  ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
 
-//AUTO_TRA ~TorturedSoulsLite/tra/%s~
+    OUTER_SET cd_always = 1 // just do this once per install
 
-//LANGUAGE ~English~
-//~english~
-//~TorturedSoulsLite/tra/english/setup.tra~
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN ~setup-ee~ END // since this file is only used for EE games, it's already converted to utf8
+    ACTION_DEFINE_ARRAY cdreload BEGIN setup END
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charset = 1
+      STR_VAR
+        tra_path = EVAL ~%MOD_FOLDER%/tra~
+        noconvert_array = cdnoconvert
+        reload_array = cdreload
+    END
+  END
+END
+
+AUTO_TRA ~NWNForBG/tra/%s~
+
+LANGUAGE ~Russian~
+~russian~
+~NWNForBG/tra/russian/setup.tra~
 
 /////////////////////
 //Main Component
 /////////////////////
-BEGIN ~WNW For BG~
+BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
 /* -------------------------------------------------------------------------------------------------- *
