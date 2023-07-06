@@ -4,76 +4,76 @@ BEGIN ~HECTOR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("HectorFollow","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Ты мертвый? Гектор тебя бить, если мертвый! Нет... ты живой.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Гектор бить? Ты что, имбецил?~ GOTO 1
-  IF ~~ THEN REPLY ~Не могу вам помочь. Прощайте.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я? Я, Гектор. Я работаю на Альдо и работаю хорошо. Надо найти части повозки, но я нашел только всякие сломанные штуки. Ты видишь где-нибудь целые части?~
-  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY ~Он мне встретился. Он ищет вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Мне жаль, но у меня нет частей для повозок.~ GOTO 5
-  IF ~~ THEN REPLY ~Вас не беспокоят зомби или чума?~ GOTO 6
+  SAY @4
+  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: ALDO 2
-  SAY ~Я старался, босс! Но нигде нет никаких частей. Клянусь!~
+  SAY @8
   IF ~~ THEN EXTERN ~ALDO~ 14 // Хорошо, хорошо, расслабься, увалень. Надо подумать, что нам делать дальше. Видимо, пора покидать корабль. Нет частей - нет повозки. Ну что же.
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.3
-  SAY ~Ладно. Я буду искать здесь. Нет... не подходит... эти все сломанные. Может, где-то...~
+  SAY @9
   IF ~~ THEN DO ~SetGlobal("KnowHector","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Ооо, он, наверное, злится. Я не могу найти частей, а значит, он не сможет везти свои вещи. А он очень любит свои вещи! Может, ты... э... пойдешь со мной и скажешь ему, что частей нет? Он иногда очень сильно злится.~
-  IF ~  Global("AldoQuest","GLOBAL",0)~ THEN REPLY ~Может, я и отведу тебя к нему. Где он?~ GOTO 7
-  IF ~~ THEN REPLY ~Можете пойти со мной, только под ногами не путайтесь!~ GOTO 7
-  IF ~~ THEN REPLY ~Не мои проблемы.~ GOTO 3
+  SAY @10
+  IF ~  Global("AldoQuest","GLOBAL",0)~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Альдо будет вне себя. Он не хочет оставлять свои вещи. Он очень любит свои вещи. Может, ты... э... пойдешь со мной и скажешь ему, что частей нет? Он иногда очень сильно злится.~
-  IF ~  Global("AldoQuest","GLOBAL",0)~ THEN REPLY ~Может, я и отведу тебя к нему. Где он?~ GOTO 7
-  IF ~~ THEN REPLY ~Можете пойти со мной, только под ногами не путайтесь!~ GOTO 7
-  IF ~~ THEN REPLY ~Не мои проблемы.~ GOTO 3
+  SAY @14
+  IF ~  Global("AldoQuest","GLOBAL",0)~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.3
-  SAY ~Я? Я не боюсь! Гектор сильно бить зомби, и бить мор тоже, если он будет со мной драться. Может быть. Я никогда еще не видел моров. Я боюсь только Альдо. Ему нужны части для повозки, и я их ищу. Ничего пока не нахожу. Только сломанные штуки.~
-  IF ~~ THEN REPLY ~Возможно, вы слишком глупы, чтобы бояться.~ GOTO 8
-  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY ~Он мне встретился. Он ищет вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Мне жаль, но у меня нет частей для повозок.~ GOTO 5
-  IF ~~ THEN REPLY ~Не могу вам помочь. Прощайте.~ GOTO 3
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 8
+  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.1
-  SAY ~Хорошо, хорошо! Альдо охраняет свою повозку на востоке Гнезда Нищих. Э... только не позволяй ему доставать тебя. Он очень злится...~
+  SAY @17
   IF ~~ THEN DO ~SetGlobal("HectorFollow","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.1
-  SAY ~Мне все равно, почему. Я не боюсь зомби, и тебя не боюсь. Мне просто нужны части, так что давай их сюда, или я из тебя их выбью.~
-  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY ~Он мне встретился. Он ищет вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Мне жаль, но у меня нет частей для повозок.~ GOTO 5
-  IF ~~ THEN REPLY ~Не могу вам помочь. Прощайте.~ GOTO 3
+  SAY @18
+  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // --------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("HectorFollow","GLOBAL",0)~ THEN BEGIN 9 // from:
-  SAY ~Эй, еще есть с кем поговорить! Отлично, а то я не хочу возвращаться к Альдо без частей для повозки. Нигде не могу найти ничего подходящего. Ты видишь части для повозки?~
-  IF ~~ THEN REPLY ~Что будешь делать, если он мертв? Куда тогда пойдешь?~ GOTO 10
-  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY ~Он мне встретился. Он ищет вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Мне жаль, но у меня нет частей для повозок.~ GOTO 5
-  IF ~~ THEN REPLY ~Вас не беспокоят зомби или чума?~ GOTO 6
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 10
+  IF ~  GlobalGT("AldoQuest","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
-  SAY ~Если Альдо мертвый, значит, мой помощь ему не надо больше. Наверно, надо уходи. Наверно, когда-нибудь достать повозку только для себя. Да, Гектор, повозчик. Это хорошо.~
+  SAY @21
   IF ~~ THEN DO ~EscapeAreaDestroy(60)~ EXIT
 END
 
@@ -81,19 +81,19 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("HectorFollow","GLOBAL",0)~ THEN BEGIN 11 // from:
-  SAY ~Мы должны найти Альдо. Ох, он разозлится.~
-  IF ~~ THEN REPLY ~Что будешь делать, если он мертв? Куда тогда пойдешь?~ GOTO 10
-  IF ~~ THEN REPLY ~Оставайтесь пока здесь, хорошо?~ GOTO 12
-  IF ~~ THEN REPLY ~Мы его найдем. Вперед.~ GOTO 13
+  SAY @22
+  IF ~~ THEN REPLY @20 GOTO 10
+  IF ~~ THEN REPLY @23 GOTO 12
+  IF ~~ THEN REPLY @24 GOTO 13
 END
 
 IF ~~ THEN BEGIN 12 // from: 11.2
-  SAY ~Ладно. Может, части есть здесь где-нибудь? Может быть.~
+  SAY @25
   IF ~~ THEN DO ~SetGlobal("Pause","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 11.3
-  SAY ~Ладно, но он разозлится, если не скоро.~
+  SAY @26
   IF ~~ THEN DO ~SetGlobal("Pause","LOCALS",0)~ EXIT
 END
 

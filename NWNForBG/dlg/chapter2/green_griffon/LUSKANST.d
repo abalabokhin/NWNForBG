@@ -4,37 +4,37 @@ BEGIN ~LUSKANST~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("GoToLuskan","GLOBAL",1)~ THEN BEGIN 0 // from:
-  SAY ~Хмммм, итак, это тебя Аарин Генд просил пропустить в ворота. С тобой будут неприятности, это видно. Ты точно знаешь, что делаешь?~
-  IF ~~ THEN REPLY ~Что там такое происходит в Лускане?~ GOTO 1
-  IF ~~ THEN REPLY ~Мне нужно найти культ.~ GOTO 2
-  IF ~~ THEN REPLY ~Просто пропусти меня в город.~ GOTO 3
-  IF ~~ THEN REPLY ~Я пока не готов.~ ~Я пока не готова.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Драка не на жизнь, а на смерть. Высшие Капитаны начали войну... это тянется уже несколько недель. Лускан просто разрывают на куски. Думаю, у тебя полно вопросов, но у меня нет времени на разговоры. Я дал Аарину обещание, и я его сдержу... так ты хочешь внутрь или нет?~
-  IF ~~ THEN REPLY ~Да, пропусти меня.~ GOTO 3
-  IF ~~ THEN REPLY ~Я пока не готов.~ ~Я пока не готова.~ GOTO 4
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.3
-  SAY ~Да, Аарин что-то такое говорил. И задавал множество вопросов про магов в Башне. Правду сказать, чем меньше я знаю о твоей задаче, тем спокойнее мне живется. Так ты собираешься внутрь или нет?~
-  IF ~~ THEN REPLY ~Да, пропусти меня.~ GOTO 3
-  IF ~~ THEN REPLY ~Я пока не готов.~ ~Я пока не готова.~ GOTO 4
+  SAY @7
+  IF ~~ THEN REPLY @6 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Вот значит как? Тебе повезло, что Аарин мой старый друг... обещание есть обещание. Хорошо... теперь врата для тебя открыты. Но помни: я не смогу выпустить тебя наружу. Проверь, все ли у тебя при себе?~
+  SAY @8
   IF ~~ THEN DO ~SetGlobal("GoToLuskan","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Да? Ну, если ты передумаешь, то я буду здесь, чтобы тебя впустить. Обещание есть обещание.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("GoToLuskan","GLOBAL",1)~ THEN BEGIN 5 // from:
-  SAY ~Врата открыты для тебя. Но помни: как только ты войдешь в Лускан, ты уже не сможешь выйти обратно... и точка. Так что запасись, как следует, всем, что может понадобиться, прежде чем входить.~
+  SAY @10
   IF ~~ THEN EXIT
 END

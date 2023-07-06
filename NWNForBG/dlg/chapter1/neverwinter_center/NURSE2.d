@@ -4,153 +4,153 @@ BEGIN ~NURSE2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,1)~ THEN BEGIN 0 // from:
-  SAY ~Я могу что-то сделать для вас, <SIRMAAM>?~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Давайте быстрее - мне лучше вернуться к своим пациентам, чтобы облегчить их страдания.~
-  IF ~~ THEN REPLY ~Что вы можете сказать о чуме?~ GOTO 3
-  IF ~~ THEN REPLY ~Вы не слышали никаких свежих сплетен?~ GOTO 4
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Пусть ваши боги хранят вас от чумы.~
+  SAY @7
   IF ~~ THEN EXIT
 
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Думаю, как и все, хотя и поменьше некоторых. Мне много пришлось повидать больных и умирающих с тех пор, как я работаю здесь, ухаживая за больными.~
-  IF ~~ THEN REPLY ~Вы ничего не слышали о лекарстве от Воющей Смерти?~ GOTO 6
-  IF ~~ THEN REPLY ~Вы ничего не слышали о нападении на Академию?~ GOTO 7
-  IF ~~ THEN REPLY ~Как получилось, что вы ухаживаете здесь за больными?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @8
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Мне довелось кое-что слышать. Дестер и Арибет все время ссорятся, а Фентик пытается помирить их. Никто из них не обращает внимания на сиделку, которая тихо занимается своим делом, так что я много чего знаю о каждом из них.~
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Дестере.~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите, что знаете об Арибет.~ GOTO 11
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Фентике.~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Я здесь, чтобы ухаживать за больными и умирающими, а не рассказывать о достопримечательностях. Кроме того, вам нужно лишь выйти в парадную дверь Зала Правосудия. В Сердце города есть всевозможные лавки, трактиры и прочие заведения.~
-  IF ~~ THEN REPLY ~Что вы можете сказать о чуме?~ GOTO 3
-  IF ~~ THEN REPLY ~Вы не слышали никаких свежих сплетен?~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @17
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.1
-  SAY ~От чумы нет лекарства, это все знают! Я лишь могу попробовать облегчить их страдания и сделать их последние дни не такими тяжелыми.~
-  IF ~~ THEN REPLY ~И все? Вы не слышали сплетен о лекарстве из Уотердипа?~ GOTO 13
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @18
+  IF ~~ THEN REPLY @19 GOTO 13
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.2
-  SAY ~Я слышала, как Фентик и Дестер шушукались об этом, но они замолчали, едва завидев меня. Дестер так злобно на меня посмотрел...~
-  IF ~~ THEN REPLY ~О чем они говорили?~ GOTO 14
-  IF ~~ THEN REPLY ~Вам не очень нравится Дестер, так?~ GOTO 15
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 14
+  IF ~~ THEN REPLY @22 GOTO 15
+  IF ~~ THEN REPLY @2 GOTO 6
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.3
-  SAY ~До эпидемии я была повитухой. Но теперь рождается мало детей - все больше мертвые. Я услышала, что замку Невер требуется медсестры для ухода за больными, вот и пришла.~
-  IF ~~ THEN REPLY ~Вы не боитесь сами заразиться чумой?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @23
+  IF ~~ THEN REPLY @24 GOTO 16
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.4
-  SAY ~Мне нужно ухаживать за больными, но для вас пара минут найдется.~
-  IF ~~ THEN REPLY ~Что вы можете сказать о чуме?~ GOTO 3
-  IF ~~ THEN REPLY ~Вы не слышали никаких свежих сплетен?~ GOTO 4
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @25
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 10 // from: 4.1
-  SAY ~Арибет он не нравится. Это все, что я знаю. У него острый язык и мрачное лицо, но я думаю, дело не только в этом. Да и не мое дело говорить о таких вещах.~
-  IF ~~ THEN REPLY ~Скажите мне. Не будет никакого вреда.~ GOTO 17
-  IF ~~ THEN REPLY ~Расскажите, что знаете об Арибет.~ GOTO 11
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Фентике.~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @26
+  IF ~~ THEN REPLY @27 GOTO 17
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 11 // from: 4.2
-  SAY ~Леди Арибет всегда рекомендовала Фентику не слишком доверять Дестеру и его хельмитам. Вы в курсе, что они любовники? Фентик и Арибет, я имею в виду. Да конечно ж, вы в курсе. Все это знают.~
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Дестере.~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Фентике.~ GOTO 12
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @28
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 6
 END
 
 IF ~~ THEN BEGIN 12 // from: 4.3
-  SAY ~Бедный Фентик. Он оказался между Дестером и Арибет, и ему вечно приходится переходить то на одну сторону, то на другую, когда они спорят, как лучше спасти город. Вы думаете, что он всегда на стороне Арибет, потому что они любовники. Но Фентик честный человек, и когда Арибет не права, он так ей и говорит.~
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Дестере.~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите, что знаете об Арибет.~ GOTO 11
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @29
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 6
 END
 
 IF ~~ THEN BEGIN 13 // from: 6.1
-  SAY ~Лекарство из Уотердипа? Как они собираются доставить его в Невервинтер, когда у нас тут карантин? Через стены перебросят?! Да вы с ума сошли.~
-  IF ~~ THEN REPLY ~Вы ничего не слышали о нападении на Академию?~ GOTO 7
-  IF ~~ THEN REPLY ~Как получилось, что вы ухаживаете здесь за больными?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @30
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 14 // from: 7.1
-  SAY ~Дестер говорит, что атаку спровоцировала Арибет, а Фентик пытается защищать ее. Больше я ничего не знаю.~
-  IF ~~ THEN REPLY ~Вам не очень нравится Дестер, так?~ GOTO 15
-  IF ~~ THEN REPLY ~Вы ничего не слышали о лекарстве от Воющей Смерти?~ GOTO 6
-  IF ~~ THEN REPLY ~Как получилось, что вы ухаживаете здесь за больными?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @31
+  IF ~~ THEN REPLY @22 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 15 // from: 7.2
-  SAY ~Мрачный он, этот тип. Ожесточенный человек с острым языком. Но он - из духовенства, а его хельмиты много сделали для города, помогая больным. Дестер не очень-то дружелюбен, но это же не преступление. Я просто стараюсь держаться от него подальше.~
-  IF ~~ THEN REPLY ~О чем они говорили?~ GOTO 14
-  IF ~~ THEN REPLY ~Вы ничего не слышали о лекарстве от Воющей Смерти?~ GOTO 6
-  IF ~~ THEN REPLY ~Как получилось, что вы ухаживаете здесь за больными?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @32
+  IF ~~ THEN REPLY @21 GOTO 14
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 16 // from: 8.1
-  SAY ~Некоторые люди ни за что не станут общаться с больными. Они закрываются в домах и не выходят оттуда, какая нужда бы их не влекла. И все равно подхватывают Воющую Смерть. Хельмиты же не заболевают, помогая больным, так почему я обязательно заболею? Мор забирает, кого захочет и когда захочет. Никто и ничего не может с этим поделать.~
+  SAY @33
   IF ~~ THEN GOTO 18
 END
 
 IF ~~ THEN BEGIN 17 // from: 10.1
-  SAY ~Дестер и его хельмиты появились вскоре после начала мора, как раз вовремя, чтобы оказаться запертыми в городе, когда установили карантин. Дестер говорит, что они приехали, потому что услышали о страданиях Невервинтера, но леди Арибет считает, что это не сходится по времени. По крайней мере, так она сказала Фентику.~
-  IF ~~ THEN REPLY ~Расскажите, что знаете об Арибет.~ GOTO 11
-  IF ~~ THEN REPLY ~Расскажите, что знаете о Фентике.~ GOTO 12
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @34
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.1
-  SAY ~Хотите узнать что-нибудь еще? Или я могу вернуться к моим обязанностям?~
-  IF ~~ THEN REPLY ~Вы ничего не слышали о лекарстве от Воющей Смерти?~ GOTO 6
-  IF ~~ THEN REPLY ~Вы ничего не слышали о нападении на Академию?~ GOTO 7
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @35
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,2)~ THEN BEGIN 19 // from:
-  SAY ~Что вы хотите? Только побыстрее - разве вы не видите, сколько у меня дел?~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @36
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 

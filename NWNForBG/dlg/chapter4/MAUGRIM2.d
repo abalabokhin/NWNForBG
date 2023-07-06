@@ -10,17 +10,17 @@ BEGIN ~MAUGRIM2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Вижу, Мораг была права, <CHARNAME>. У Арибет не хватило сил победить тебя. Но она свою роль уже выполнила.~ [MAUGR056]
+  SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Слишком поздно. Ритуал закончен, пробуждение Древних началось!~ [MAUGR057]
+  SAY @1
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Раса Созидателей возродится, и на тебе я впервые испробую силу, которой наделила меня моя королева!~ [MAUGR058]
+  SAY @2
   IF ~~ THEN EXIT
 END
 

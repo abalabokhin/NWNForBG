@@ -4,197 +4,183 @@ BEGIN ~HASHER~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("HasherJob","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Приветствую, друг! Хашер Глина к твоим услугам. Хочешь посмотреть на мои товары, это новейшее отделение моей сети магазинов для искателей приключений?~
-  IF ~~ THEN REPLY ~Что значит самое новое отделение?~ GOTO 1
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY ~Я ищу Слова Власти.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Ну, у меня был небольшой магазин на юге. Дела шли хорошо, но без расширения больших денег не получишь. Поэтому я оставил сына приглядывать за магазином и приехал сюда, чтобы развивать свою торговую империю. Когда я увидел всех этих богатеньких искателей приключений, которые собрались здесь, у Колодца Беорунна, я понял, что это идеальное место для открытия нового магазина, по крайней мере, до тех пор, пока я не получу лицензию, позволяющую мне торговать в Невервинтере.~
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY ~Я ищу Слова Власти.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @4
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Конечно! Я никогда не отказываю клиентам.~
+  SAY @6
   IF ~~ THEN DO ~  StartStore("Hasher",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Увы, боюсь, такого нет у меня в ассортименте. Ха-ха! А если серьезно, я и правда ничего об этом не знаю. Может быть, тебе стоит поговорить с Лилиан Кэмбридж, этой археологиней, которую привез Аарин Генд. Судя по тому, что я слышал, она проводит большую часть времени в таверне.~
+  SAY @7
   IF ~  Global("HasherJob","GLOBAL",0)~ THEN GOTO 5
   IF ~  GlobalGT("HasherJob","GLOBAL",0)~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
-  SAY ~Ну что ж, хорошего тебе дня. Возвращайся в любое время, этот магазинчик открыт днем и ночью. И не забудь навестить моего друга гнома, вон он, в углу стоит. Он очень хороший кузнец. Что касается оружия и брони, если того, что тебе нужно, нет у меня в продаже, он, возможно, сможет сделать это.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 3.1
-  SAY ~Может быть, она поможет тебе больше, чем я.~
-  IF ~~ THEN REPLY ~Что ты имеешь в виду?~ GOTO 7
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.2
-  SAY ~Могу я что-нибудь еще для вас сделать?~
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @12
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
-  SAY ~Когда я услышал, что здесь появился археолог, я пошел, чтобы поговорить с ней про один предмет, который я разыскиваю уже очень давно. Но это ее не заинтересовало. Она сказала, что ей нужны только предметы, имеющие историческое значение, и что у нее нет времени рыскать в поисках безделушек. Я даже предложил ей щедрую награду, но, ее, казалось, больше интересует бутылка вина, стоящая на столе.~
-  IF ~~ THEN REPLY ~Может быть, я смогу помочь тебе.~ GOTO 9
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.3
-  SAY ~Не знаю, что бы тебе такого рассказать, я тут сам недавно. Только что приехал сюда из южной части Побережья Мечей, чтобы проследить за открытием нового отделения моего предприятия.~
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY ~Я ищу Слова Власти.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @15
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
-  SAY ~Может быть, и сможешь. Ты вроде ничего так <MALEFEMALE>, не без способностей. Давай так договоримся, ты помогаешь мне, а я отдаю тебе ту награду, которую обещал Лилиан.~
- IF ~~ THEN REPLY ~Что за работа?~ GOTO 10
- IF ~~ THEN REPLY ~Какова плата?~ GOTO 11
-  IF ~~ THEN REPLY ~Меня это не интересует.~ GOTO 12
+  SAY @16
+ IF ~~ THEN REPLY @17 GOTO 10
+ IF ~~ THEN REPLY @18 GOTO 11
+  IF ~~ THEN REPLY @19 GOTO 12
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
-  SAY ~Я, помимо того, что веду торговлю, также собираю редкие драгоценные камни. Сейчас меня очень интересует камень, который называется Звездный Светящийся Сапфир. Он очень ценен, это я тебе гарантирую, но больше чем за 2000 золотых ты его не продашь. Я коллекционер, и мне он интересен, именно поэтому я предлагаю тебе 4000 золотых, если ты найдешь мне этот камень.~
- IF ~  PartyHasItem("NWGEM08")~ THEN REPLY ~У меня есть с собой этот Сапфир.~ GOTO 13
- IF ~~ THEN REPLY ~Зачем тебе это нужно?~ GOTO 14
-  IF ~~ THEN REPLY ~Меня это не интересует.~ GOTO 12
+  SAY @20
+ IF ~  PartyHasItem("NWGEM08")~ THEN REPLY @21 GOTO 13
+ IF ~~ THEN REPLY @22 GOTO 14
+  IF ~~ THEN REPLY @19 GOTO 12
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.2
-  SAY ~Я дам тебе 4000 золотых, Лилиан я предложил столько же.~
- IF ~~ THEN REPLY ~Что за работа?~ GOTO 10
-  IF ~~ THEN REPLY ~Меня это не интересует.~ GOTO 12
+  SAY @23
+ IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @19 GOTO 12
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.3
-  SAY ~Ну ладно. Передумаешь, возвращайся. Я могу помочь тебе еще чем-нибудь?~
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @24
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.1
-  SAY ~Отлично. Как я и обещал тебе, вот твоя награда. 4000 золотых, кажется, мы договаривались именно о такой цене.~
- IF ~~ THEN REPLY ~Спасибо, Хашер.~ GOTO 15
- IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Мне пришлось столкнуться с кучей проблем, чтобы добыть тебе этот драгоценный камень, Хашер.~ GOTO 16
- IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Мне пришлось столкнуться с кучей проблем, чтобы добыть тебе этот драгоценный камень, Хашер.~ GOTO 17
-  IF ~~ THEN REPLY ~Залезь в свой кошелек поглубже, Глина, или я задушу тебя твоими собственными кишками!~ GOTO 18
+  SAY @25
+ IF ~~ THEN REPLY @26 GOTO 15
+ IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @27 GOTO 16
+ IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @27 GOTO 17
+  IF ~~ THEN REPLY @28 GOTO 18
 END
 
 IF ~~ THEN BEGIN 14 // from: 10.2
-  SAY ~Этот Сапфир был частью приданого Лайенн Шеру, младшей дочери одного влиятельного купца, его семья была очень известна в Уотердипе примерно два века назад. Но Лайенн не была готова к замужеству. Она очень хотела стать магом и в утро своей свадьбы она сбежала на север в поисках славы и удачи.~
+  SAY @29
  IF ~~ THEN GOTO 19
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.1
-  SAY ~Не за что, не за что, <SIRMAAM>.~
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4000)AddexperienceParty(122000)EraseJournalEntry(%Вернуть Звездный Сапфир
-
-Хашер Глина из магазина для искателей приключений ищет того, кто сможет принести ему Звездный Сапфир. Этот драгоценный камень был похоронен вместе с магом Лайенном Шеру, чья полная ловушек гробница должна находиться где-то в Лесу Стужи.%)~ SOLVED_JOURNAL ~Вернуть Звездный Сапфир
-
-Звездный Сапфир был доставлен Хашеру Глине.~ EXIT
+  SAY @30
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4000)AddexperienceParty(122000)EraseJournalEntry(@41)~ SOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 13.2
-  SAY ~Ну ладно, видимо, это действительно было не так просто. Представляю себе, насколько сложно было избежать всех ловушек в гробнице Лайенн. Так что вот тебе еще 400 золотых. Я и так заплатил тебе куда больше, чем стоит этот камень, но видимо, такова участь всех коллекционеров.~
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(122000)EraseJournalEntry(%Вернуть Звездный Сапфир
-
-Хашер Глина из магазина для искателей приключений ищет того, кто сможет принести ему Звездный Сапфир. Этот драгоценный камень был похоронен вместе с магом Лайенном Шеру, чья полная ловушек гробница должна находиться где-то в Лесу Стужи.%)~ SOLVED_JOURNAL ~Вернуть Звездный Сапфир
-
-Звездный Сапфир был доставлен Хашеру Глине.~ EXIT
+  SAY @32
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(122000)EraseJournalEntry(@41)~ SOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 13.3
-  SAY ~Прости, но я и так плачу тебе больше, чем стоит этот камень, мы с тобой заключили сделку, если я ничего не путаю. И передоговариваться я не собираюсь.~
- IF ~~ THEN REPLY ~Ладно.~ GOTO 15
-  IF ~~ THEN REPLY ~Залезь в свой кошелек поглубже, Глина, или я задушу тебя твоими собственными кишками!~ GOTO 18
+  SAY @33
+ IF ~~ THEN REPLY @34 GOTO 15
+  IF ~~ THEN REPLY @28 GOTO 18
 END
 
 IF ~~ THEN BEGIN 18 // from: 13.4
-  SAY ~Так, давай ты... успокоишься. Я вижу, тебя это все очень расстраивает, но я считаю, мы можем избежать насилия. Не нужно принимать все так близко к сердцу. Вот, возьми еще 400 золотых. Надеюсь, этого хватит, чтобы разрядить обстановку. А теперь давай забудем о наших трениях, что было, то было.~
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(102000)EraseJournalEntry(%Вернуть Звездный Сапфир
-
-Хашер Глина из магазина для искателей приключений ищет того, кто сможет принести ему Звездный Сапфир. Этот драгоценный камень был похоронен вместе с магом Лайенном Шеру, чья полная ловушек гробница должна находиться где-то в Лесу Стужи.%)~ SOLVED_JOURNAL ~Вернуть Звездный Сапфир
-
-Звездный Сапфир был доставлен Хашеру Глине.~ EXIT
+  SAY @35
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(102000)EraseJournalEntry(@41)~ SOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 14.1
-  SAY ~Если верить документам, Лайенн стала достаточно могущественной волшебницей. Она даже сумела предсказать свою смерть и построить сложную, забитую ловушками гробницу, в которой должны были покоиться ее останки.~
- IF ~  PartyHasItem("NWGEM08")~ THEN REPLY ~У меня есть с собой этот Сапфир.~ GOTO 13
- IF ~~ THEN REPLY ~И ты считаешь, Звездный Сапфир по-прежнему находится в ее гробнице?~ GOTO 20
-  IF ~~ THEN REPLY ~Меня это не интересует.~ GOTO 12
+  SAY @36
+ IF ~  PartyHasItem("NWGEM08")~ THEN REPLY @21 GOTO 13
+ IF ~~ THEN REPLY @37 GOTO 20
+  IF ~~ THEN REPLY @19 GOTO 12
 END
 
 IF ~~ THEN BEGIN 20 // from: 19.2
-  SAY ~Судя по всему, Звездный Сапфир был одним из самых ценных ее сокровищ. Он напоминал ей о жизни в Уотердипе, от которой она отказалась. Звездный Сапфир стал бы отличным дополнением к моей коллекции. Принеси мне его, и я заплачу тебе 4000 золотых, именно столько я предложил Лилиан. Это куда больше, чем можно выручить за этот камень у обычного торговца.~
- IF ~~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 21
-  IF ~~ THEN REPLY ~Меня это не интересует.~ GOTO 12
+  SAY @38
+ IF ~~ THEN REPLY @39 GOTO 21
+  IF ~~ THEN REPLY @19 GOTO 12
 END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
-  SAY ~Отлично. Никто точно не знает, где похоронена Лайенн, но ходят слухи, что это где-то в Лесу Стужи. Если кому-то и удалось обнаружить, где находится эта гробница, этот кто-то не вернулся и не сообщил об этом. Но это не должно тебя пугать. Мне кажется, все у тебя получится. Просто принеси мне Звездный Сапфир, когда найдешь его, и я отдам тебе твою награду.~
-  IF ~~ THEN DO ~  SetGlobal("HasherJob","GLOBAL",1)~ UNSOLVED_JOURNAL ~Вернуть Звездный Сапфир
-
-Хашер Глина из магазина для искателей приключений ищет того, кто сможет принести ему Звездный Сапфир. Этот драгоценный камень был похоронен вместе с магом Лайенном Шеру, чья полная ловушек гробница должна находиться где-то в Лесу Стужи.~ EXIT
+  SAY @40
+  IF ~~ THEN DO ~  SetGlobal("HasherJob","GLOBAL",1)~ UNSOLVED_JOURNAL @41 EXIT
 END
 
 // ----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("HasherJob","GLOBAL",1)~ THEN BEGIN 22 // from:
-  SAY ~Здравствуй еще раз. Удалось найти Звездный Сапфир? Или ты хочешь посмотреть мои товары? Не люблю хвастаться, но у Хашера Глины самый богатый ассортимент.~
- IF ~  PartyHasItem("NWGEM08")~ THEN REPLY ~У меня есть с собой этот Сапфир.~ GOTO 13
-  IF ~~ THEN REPLY ~Расскажи мне про Звездный Сапфир еще раз.~ GOTO 23
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 4
+  SAY @42
+ IF ~  PartyHasItem("NWGEM08")~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @43 GOTO 23
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @44 GOTO 4
 END
 
 IF ~~ THEN BEGIN 23 // from: 22.2
-  SAY ~Он был похоронен вместе с магом Лайенн, в ее гробнице, где-то в районе Леса Стужи. Принеси мне его, и я заплачу тебе 4000 золотых, как мы и договаривались. Итак, вам нужно что-нибудь еще?~
- IF ~  PartyHasItem("NWGEM08")~ THEN REPLY ~У меня есть с собой этот Сапфир.~ GOTO 13
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 4
+  SAY @45
+ IF ~  PartyHasItem("NWGEM08")~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @44 GOTO 4
 END
 
 // ----------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("HasherJob","GLOBAL",1)~ THEN BEGIN 24 // from:
-  SAY ~Приветствую, друг! Хашер Глина к твоим услугам. Хочешь посмотреть на мои товары, это новейшее отделение моей сети магазинов для искателей приключений?~
-  IF ~~ THEN REPLY ~Что значит самое новое отделение?~ GOTO 25
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY ~Я ищу Слова Власти.~ GOTO 26
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 25
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 26
+  IF ~~ THEN REPLY @44 GOTO 4
 END
 
 IF ~~ THEN BEGIN 25 // from: 24.1
-  SAY ~Ну, у меня был небольшой магазин на юге. Дела шли хорошо, но без расширения больших денег не получишь. Поэтому я оставил сына приглядывать за магазином и приехал сюда, чтобы развивать свою торговую империю. Когда я увидел всех этих богатеньких искателей приключений, которые собрались здесь, у Колодца Беорунна, я понял, что это идеальное место для открытия нового магазина, по крайней мере, до тех пор, пока я не получу лицензию, позволяющую мне торговать в Невервинтере.~
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY ~Я ищу Слова Власти.~ GOTO 26
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @4
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 26
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 
 IF ~~ THEN BEGIN 26 // from: 24.2
-  SAY ~Увы, боюсь, такого нет у меня в ассортименте. Ха-ха! А если серьезно, я и правда ничего об этом не знаю. Может быть, тебе стоит поговорить с Лилиан Кэмбридж, этой археологиней, которую привез Аарин Генд. Судя по тому, что я слышал, она проводит большую часть времени в таверне. Могу я что-нибудь еще для вас сделать?~
-  IF ~~ THEN REPLY ~Мне бы хотелось посмотреть на твои товары.~ GOTO 2
-  IF ~~ THEN REPLY ~Мне нужно идти~ GOTO 4
+  SAY @46
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @5 GOTO 4
 END
 

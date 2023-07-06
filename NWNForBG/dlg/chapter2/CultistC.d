@@ -4,80 +4,80 @@
 BEGIN ~CULTISTC~
 
 IF ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Что?! Кто вы!? Одна из этих гнусных машин? Вы должны быть мертвы! Все вы! Скоро придет конец вашей бесконечной истории!~
-  IF ~~ THEN REPLY ~Кто вы? Вы ведь не из Чарвуда?~ GOTO 1
-  IF ~~ THEN REPLY ~Успокойтесь. О чем вы говорите?~ GOTO 1
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1 0.2
-  SAY ~Нет, я не стану разговаривать с еще одним из вас. Я знаю, кто вы! Я убью вас, а вы вернетесь! Этому не будет конца! Видите, вы рассказываете мне свои жалкие сказки, а потом вы их забудете! Почему!? ВАС ТУТ НЕТ!!!~
-  IF ~~ THEN REPLY ~Что вы имеете в виду, что я не здесь?~ GOTO 3
-  IF ~~ THEN REPLY ~Я ищу культ, который распространил чуму в Невервинтере.~ GOTO 4
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 5
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.3
-  SAY ~Время? В этом месте нет ничего КРОМЕ времени! Я убил их всех! Но они возвращаются! Я и тебя убью, миллион раз убью, если придется!!!~
+  SAY @8
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Почему я вообще с тобой разговариваю!? Тебя здесь нет, их здесь нет, я и насчет себя сомневаюсь. Что со мной? Я... здесь?~
-  IF ~~ THEN REPLY ~Я ищу культ, который распространил чуму в Невервинтере.~ GOTO 4
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 5
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @9
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Ты -  ты ищешь культ? Мор в Невервинтере? Это свежие новости, это новости извне! Я знаю об этом! Ты знаешь об этом! Нет, этого не может быть! Это обман!! Я все знаю, но тебе ничего не скажу... Это мое! Мой секрет!~
-  IF ~~ THEN REPLY ~Послушайте, это очень важно, скажите мне.~ GOTO 6
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 5
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Зачем тебе это?! Тебя здесь нет. Здесь никого нет! Это все ложь! Откуда мне знать, что я ищу, когда здесь ничего нет? КАК?!~
-  IF ~~ THEN REPLY ~Что вы ищете?~ GOTO 7
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
-  SAY ~Что изменится, если я скажу призраку? Ты ведь все забудешь раньше, чем я успею договорить до половины! Дестер и мор -- это только начало. Цели Культа Ока гораздо выше. Уж я-то знаю, они послали меня сюда на поиски...~
-  IF ~~ THEN REPLY ~Что вы ищете?~ GOTO 7
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Где находится база культа? Кто там главный?~ GOTO 8
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Где находится база культа? Кто там главный?~ GOTO 9
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @14
+  IF ~~ THEN REPLY @13 GOTO 7
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @15 GOTO 8
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1 6.1
-  SAY ~Мне очень важно найти это. Очень важно! Но это тайна - я тебе не скажу! Убирайся!~
-  IF ~~ THEN REPLY ~Вы можете все рассказать мне. Возможно, я смогу помочь.~ GOTO 10
-  IF ~~ THEN REPLY ~Я ищу культ, который распространил чуму в Невервинтере.~ GOTO 4
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @16
+  IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.2
-  SAY ~Мы следуем за Великим, Маугримом, в сердце Лускана. И даже он лишь сосуд для сил более древних... Там, говорю же. А сейчас настало время убить тебя, призрак. Снова, и снова, и снова! Это будет хорошей тренировкой перед тем, что грядет...~
+  SAY @18
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.1 7.1
-  SAY ~Ты задаешь слишком много вопросов, призрак... Я думаю, в отличие от других, ты не вернешься, когда я убью тебя.~
+  SAY @19
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 8.1
-  SAY ~Помощь? Да, используй старое, чтобы найти древнее, используй безумное, чтобы найти то, что сводит с ума! Культ Ока, они послали меня сюда, чтобы что-то найти, древний артефакт необычайной важности! Они послали меня в этот сумасшедший дом!~
-  IF ~~ THEN REPLY ~Культ? Тот, что из Невервинтера?~ GOTO 11
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Где находится база культа? Кто там главный?~ GOTO 8
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Где находится база культа? Кто там главный?~ GOTO 9
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 11
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @15 GOTO 8
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1
-  SAY ~Дестер и мор -- это только начало. Цели Культа Ока гораздо выше. Уж я-то знаю, они послали меня сюда на поиски...~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Где находится база культа? Кто там главный?~ GOTO 8
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Где находится база культа? Кто там главный?~ GOTO 9
-  IF ~~ THEN REPLY ~У меня нет на это времени. До свидания.~ GOTO 2
+  SAY @22
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @15 GOTO 8
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @3 GOTO 2
 END

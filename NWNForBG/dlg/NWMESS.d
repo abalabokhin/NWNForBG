@@ -9,24 +9,24 @@ BEGIN ~NWMESS~
 
 IF ~  NumberOfTimesTalkedTo(0)
 ~ THEN BEGIN 0 // from:
-  SAY ~Здравствуйте! Я пришел из Невервинтера за помощью. В моем городе свирепствует чума и она явно не естественного происхождения. Леди Арибет и лорд Нашер отправили меня в Аскатлу чтобы найти героев способных помочь Невервинтеру. Может быть Вы сможете помочь?~
-  IF ~~ THEN REPLY ~Мне это не интересно. Поищите кого-нибудь другого~ EXIT
-  IF ~~ THEN REPLY ~Ну, пожалуй, я попробую помочь. Где находится этот город?~ GOTO 1
+  SAY @0
+  IF ~~ THEN REPLY @1 EXIT
+  IF ~~ THEN REPLY @2 GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Это на севере от Аскатлы. Если вы согласны помочь, я телепортирую Вас к леди Арибет в академию Невервинтера.~
-  IF ~~ THEN REPLY ~Не сейчас~ GOTO 2
-  IF ~~ THEN REPLY ~Да, я готов.~ ~Да, я готова~ GOTO 3
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 2
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 4.0 1.0
-  SAY ~Что ж, я буду ждать Вас здесь.~
+  SAY @6
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 4.1 1.1
-  SAY ~Тогда приготовьтесь, сейчас Вы окажетесь в академии Невервинтера. Леди Арибет Вам все подробно объяснит.~
+  SAY @7
   IF ~~ THEN DO ~SetGlobal("Messenger_of_Neverwinter","GLOBAL",2)
 ClearAllActions()
 StartCutSceneMode()
@@ -36,7 +36,7 @@ END
 
 IF ~  !NumberOfTimesTalkedTo(0)
 ~ THEN BEGIN 4 // from:
-  SAY ~Вы вернулись. Значит ли это что Вы нам поможете?~
-  IF ~~ THEN REPLY ~Не сейчас~ GOTO 2
-  IF ~~ THEN REPLY ~Да, я готов.~ ~Да, я готова~ GOTO 3
+  SAY @8
+  IF ~~ THEN REPLY @4 GOTO 2
+  IF ~~ THEN REPLY @5 GOTO 3
 END

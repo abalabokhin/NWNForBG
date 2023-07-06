@@ -3,83 +3,83 @@ BEGIN ~CALLAHAN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("BeggarsNestDone","GLOBAL",0)RandomNum(2,1)~ THEN BEGIN 0 // from:
-  SAY ~Хотите выпить? Трудные времена, телу нужна смазка, чтобы оно смогло двигаться дальше.~
-  IF ~~ THEN REPLY ~Мне хотелось бы иметь точную информацию о зомби в этом районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Я обойдусь без этого, спасибо. Прощайте.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я вас не виню. Здесь кругом чистое безумие. Сначала мор, потом это. Скоро мы все попадем в Лабиринты, вот что я вам скажу.~
-  IF ~~ THEN REPLY ~Откуда появляется нежить?~ GOTO 4
-  IF ~~ THEN REPLY ~Что такое 'Лабиринты'?~ GOTO 5
-  IF ~~ THEN REPLY ~Кто-нибудь сражается с нежитью?~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне пора заняться делом. Прощайте.~ GOTO 3
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Конечно, <SIRMAAM>.~
+  SAY @10
  IF ~~ THEN DO ~StartStore("Callahan",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Будьте осторожны. Чем больше людей пока еще теплые, тем лучше.~
+  SAY @11
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Мертвецы. Если честно, они не появляются из конкретного места. Люди, что умирают от мора, снова встают прямо там, где находит их смерть. Еще есть около Великого Кладбища на севере. Я хочу сказать, поди разбери, в этом месте полно мертвецов.~
-  IF ~~ THEN REPLY ~Что такое 'Лабиринты'?~ GOTO 5
-  IF ~~ THEN REPLY ~Кто-нибудь сражается с нежитью?~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне пора заняться делом. Прощайте.~ GOTO 3
+  SAY @12
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Простите. Это местное поверье. "Лабиринты Проклятых, ведущие глубоко из-под могил к самым дверям Ада". Это о склепах под Великим Кладбищем. Люди воображают ужасные вещи, потому что не видят их. Пустяки.~
-  IF ~~ THEN REPLY ~Откуда появляется нежить?~ GOTO 4
-  IF ~~ THEN REPLY ~Кто-нибудь сражается с нежитью?~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне пора заняться делом. Прощайте.~ GOTO 3
+  SAY @13
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.3
-  SAY ~Харбен Ашенсмит здесь, и знаменитый охотник за нежитью, Дрейк. Он выигрывал мой конкурс 'кто съест больше маринованных яиц' два года подряд.  Он будет это отрицать, даже не позволит вам спросить, но вы просто подумайте об этом, когда он будет чересчур серьезничать. И еще хельмиты Дестера тоже где-то в этом районе. Кажется, они основали здесь святилище.~
-  IF ~~ THEN REPLY ~Откуда появляется нежить?~ GOTO 4
-  IF ~~ THEN REPLY ~Что такое 'Лабиринты'?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне пора заняться делом. Прощайте.~ GOTO 3
+  SAY @14
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 // ----------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("BeggarsNestDone","GLOBAL",0)RandomNum(2,2)~ THEN BEGIN 7 // from:
-  SAY ~Я здесь, чтобы прислуживать, хотя я мало что могу предложить. Самое худшее - это то, что мне перестали поставлять пиво.~
-  IF ~~ THEN REPLY ~Мне хотелось бы иметь точную информацию о зомби в этом районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Я обойдусь без этого, спасибо. Прощайте.~ GOTO 3
+  SAY @15
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 3
 END
 
 // ----------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 8 // from:
-  SAY ~Говорят, есть причина радоваться, что нежить теперь снова вала в спячку, так сказать. Повезло вам, что ни говори.~
-  IF ~~ THEN REPLY ~Мне нужно выпить. Что вы можете предложить?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу отдохнуть. У вас есть свободные комнаты?~ GOTO 2
-  IF ~~ THEN REPLY ~Прощайте.~ GOTO 9
+  SAY @16
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 2
+  IF ~~ THEN REPLY @17 GOTO 9
 END
 
 IF ~~ THEN BEGIN 9 // from: 8.1
-  SAY ~Приходи еще, когда пожелаешь.~
+  SAY @18
   IF ~~ THEN EXIT
 END
 

@@ -10,153 +10,151 @@ BEGIN ~MELDANEN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("Pause","LOCALS",1)~ THEN BEGIN 0 // from:
-  SAY ~Формоса послала вас убить меня, так ведь! Так ведь?! Почему вы здесь?!~ [MELDAN54]
-  IF ~~ THEN REPLY ~Я здесь, чтобы освободить дриаду, которую вы украли, колдун.~ GOTO 1
-  IF ~~ THEN REPLY ~Так значит, дриада у вас? Невероятно!~ GOTO 2
-  IF ~~ THEN REPLY ~Ну... есть проблема дриады в клетке.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я ее не крал! Я нашел ее блуждающей по улицам и забрал домой. Вообще-то я собирался приготовить из нее лекарство от мора и продавать потом по бешеным ценам. Однако, ее... чары... ослабили мою решимость и приостановили мои исследования. Ба! Ясное дело, забирайте ее, иначе я никогда не смогу избавиться от ее влияния.~
+  SAY @4
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Вы... здесь из-за дриады? Да... да, она блуждала по улицам, и мне пришлось взять ее домой. Сначала мне пришло в голову использовать ее, чтобы найти лекарство от чумы и продать его очень дорого. Однако, ее... чары... ослабили мою решимость и приостановили мои исследования. Ба! Ясное дело, забирайте ее, иначе я никогда не смогу избавиться от ее влияния.~
+  SAY @5
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Вы... пришли за дриадой, не за мной? Так она действительно одно из уотердипских существ, как я и подозревал. Сначала мне пришло в голову использовать ее, чтобы найти лекарство от чумы и продать его тому, кто больше заплатит, чтобы подзаработать. Однако, ее... чары... ослабили мою решимость и приостановили мои исследования. Ба! Ясное дело, забирайте ее, иначе я никогда не смогу избавиться от ее влияния.~
+  SAY @6
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Итак... вы говорите, что Формоса не посылала вас? Вы... вы пощадите меня, если я дам вам ключ от клетки дриады?~
-  IF ~~ THEN REPLY ~Кто эта Формоса? Представления не имею, о чем вы говорите.~ GOTO 5
-  IF ~~ THEN REPLY ~Мне вас совершенно не жалко, но эти ваши мольбы довольно забавны.~ GOTO 6
-  IF ~~ THEN REPLY ~Нет, меня послала Формоса. Теперь вы умрете.~ GOTO 6
-  IF ~~ THEN REPLY ~Именно так. Отдайте мне дриаду, и вы можете идти.~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужен ключ от вашего склада и дриада. Тогда я оставлю вас в живых.~ GOTO 8
-  IF ~~ THEN REPLY ~Сделайте мне предложение, и я его рассмотрю.~ GOTO 9
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
-  SAY ~Эта глупая эльфийская женщина вас не посылала? Тогда что вам нужно?~
-  IF ~~ THEN REPLY ~Убить вас, я полагаю. И сейчас самое время мне этим заняться.~ GOTO 6
-  IF ~~ THEN REPLY ~Просто ищу способ заработать.~ GOTO 10
-  IF ~~ THEN REPLY ~Я никому не хочу причинять вреда. Вы на меня напали, помните?~ GOTO 11
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 6
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
-  SAY ~Нет! Я убью тебя, тупица, обещаю!!~
+  SAY @18
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("Attack","LOCALS",2)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.4
-  SAY ~Вы... удивительно милосердны. Думаю, мне следует быть благодарным. Вот ключ от клетки дриады... заберите ее. Надеюсь, что никогда вас больше не увижу. О, и возможно, тебе стоит так же и Формосе отнести этот ключ. Помимо клетки дриады он также открывает мой склад. Теперь иди. Уходи.~
+  SAY @19
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.5
-  SAY ~Вы... удивительно милосердны. Думаю, мне следует быть благодарным. Вот ключ от клетки дриады... заберите ее. Надеюсь, что никогда вас больше не увижу. Помимо клетки дриады он также открывает мой склад. Теперь иди. Уходи.~
+  SAY @20
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.6
-  SAY ~Сохраните мою жизнь, и я дам вам 1800 золотых. Это все, что у меня есть... и явно больше, чем Формоса может заплатить вам.~
-  IF ~~ THEN REPLY ~А почему бы мне самому не взять ваши деньги?~ GOTO 12
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY ~Мне понадобится ваш серебряный зуб и ключ от вашего склада.~ GOTO 13
-  IF ~  Global("FormosaQuest","GLOBAL",0)~ THEN REPLY ~Похоже, что эта Формоса хочет убить вас. Заплатите мне больше, и я разберусь с ней.~ GOTO 14
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY ~Предложите мне больше, и я покончу с Формосой для вас.~ GOTO 14
-  IF ~~ THEN REPLY ~Отлично. Золото и дриада, и вы свободны.~ GOTO 15
-  IF ~~ THEN REPLY ~Нет, я лучше убью вас.~ GOTO 6
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 12
+  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 13
+  IF ~  Global("FormosaQuest","GLOBAL",0)~ THEN REPLY @24 GOTO 14
+  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 6
 END
 
 IF ~~ THEN BEGIN 10 // from: 5.2
-  SAY ~Если вы пришли за деньгами, у меня они есть. И я с удовольствием предложу их вам в обмен на выполнение одной работы, хотите?~
-  IF ~~ THEN REPLY ~Что, собственно, вы имеете в виду?~ GOTO 16
-  IF ~~ THEN REPLY ~А почему бы мне просто не забрать все, что у вас есть?~ GOTO 17
-  IF ~~ THEN REPLY ~Слишком много хлопот. Я лучше убью вас.~ GOTO 6
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 16
+  IF ~~ THEN REPLY @30 GOTO 17
+  IF ~~ THEN REPLY @31 GOTO 6
 END
 
 IF ~~ THEN BEGIN 11 // from: 5.3
-  SAY ~Моя усадьба хорошо охраняется. Хотите убедить меня, что попали сюда совершенно случайно? Ищете деньги и ценности, так ведь?~
+  SAY @32
   IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.1
-  SAY ~Н-ну... Это... это все деньги, какие у меня есть. Пожалуйста, умоляю вас, сжальтесь надо мной!~
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY ~Мне понадобится ваш серебряный зуб и ключ от вашего склада.~ GOTO 13
-  IF ~  Global("FormosaQuest","GLOBAL",0)~ THEN REPLY ~Похоже, что эта Формоса хочет убить вас. Заплатите мне больше, и я разберусь с ней.~ GOTO 14
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY ~Предложите мне больше, и я покончу с Формосой для вас.~ GOTO 14
-  IF ~~ THEN REPLY ~Отлично. Золото и дриада, и вы свободны.~ GOTO 15
-  IF ~~ THEN REPLY ~Нет, я лучше убью вас.~ GOTO 6
+  SAY @33
+  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 13
+  IF ~  Global("FormosaQuest","GLOBAL",0)~ THEN REPLY @24 GOTO 14
+  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 6
 END
 
 IF ~~ THEN BEGIN 13 // from: 9.2
-  SAY ~Итак, вас послала эта дрянь. Ха! Отлично... Я вырву мой серебряный зуб и отдам вам и его и ключ. Это небольшая цена за мою жизнь.~
-  IF ~~ THEN REPLY ~Отлично. Я возьму зуб и ваше золото... а потом бегите, не то я передумаю.~ GOTO 18
-  IF ~~ THEN REPLY ~Мне совсем не обязательно делать это. Если вы заплатите мне больше, я позабочусь для вас о Формосе.~ GOTO 14
-  IF ~~ THEN REPLY ~Забудьте об этом. Только дриада имеет значение... уходите.~ GOTO 8
-  IF ~~ THEN REPLY ~Просто дайте мне зуб и ключ. Берите свое золото и бегите.~ GOTO 19
-  IF ~~ THEN REPLY ~Забудьте о зубе. Ключа и вашего золота будет вполне достаточно.~ GOTO 20
+  SAY @34
+  IF ~~ THEN REPLY @35 GOTO 18
+  IF ~~ THEN REPLY @36 GOTO 14
+  IF ~~ THEN REPLY @37 GOTO 8
+  IF ~~ THEN REPLY @38 GOTO 19
+  IF ~~ THEN REPLY @39 GOTO 20
 END
 
 IF ~~ THEN BEGIN 14 // from: 9.3
-  SAY ~Я могу сейчас же дать вам 1500 золотых монет. Если вы разберетесь с Формосой и вернетесь, я добавлю еще 1500 золотых и заплачу их вам.~
-  IF ~~ THEN REPLY ~Кроме того, вы отдадите мне дриаду. Тогда я это сделаю.~ GOTO 21
-  IF ~~ THEN REPLY ~Нет, просто отдайте мне дриаду и ваше золото, и я оставлю вас в покое.~ GOTO 22
-  IF ~~ THEN REPLY ~Нет, я никого не убиваю... Мне нужна дриада. Идите себе.~ GOTO 8
-  IF ~~ THEN REPLY ~Слишком много хлопот. Я лучше убью вас.~ GOTO 6
+  SAY @40
+  IF ~~ THEN REPLY @41 GOTO 21
+  IF ~~ THEN REPLY @42 GOTO 22
+  IF ~~ THEN REPLY @43 GOTO 8
+  IF ~~ THEN REPLY @31 GOTO 6
 END
 
 IF ~~ THEN BEGIN 15 // from: 4.6
-  SAY ~С-спасибо, за ваше великодушие... каким бы оно ни было. Когда-нибудь я отплачу этой твари за мое унижение. Вот 1800 золотых монет, это все, что у меня есть... и ключ от клетки дриады. Возьмите ее... возьмите ее и убирайтесь. Надеюсь, что никогда вас больше не увижу.~
+  SAY @44
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1800)~ EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 10.1
-  SAY ~У меня есть 1500 золотых... возьмите их, и убейте Формосу, пока она не убедила еще какого-нибудь осла попытаться убить меня. Когда вы вернетесь, я заплачу вам еще 1500 золотых.~
-  IF ~~ THEN REPLY ~А почему бы мне просто не забрать все, что у вас есть?~ GOTO 17
-  IF ~~ THEN REPLY ~Кроме того, вы отдадите мне дриаду. Тогда я это сделаю.~ GOTO 21
-  IF ~~ THEN REPLY ~Нет, просто отдайте мне дриаду и ваше золото, и я оставлю вас в покое.~ GOTO 22
-  IF ~~ THEN REPLY ~Нет, я никого не убиваю... Мне нужна дриада. Идите себе.~ GOTO 8
-  IF ~~ THEN REPLY ~Слишком много хлопот. Я лучше убью вас.~ GOTO 6
+  SAY @45
+  IF ~~ THEN REPLY @30 GOTO 17
+  IF ~~ THEN REPLY @41 GOTO 21
+  IF ~~ THEN REPLY @42 GOTO 22
+  IF ~~ THEN REPLY @43 GOTO 8
+  IF ~~ THEN REPLY @31 GOTO 6
 END
 
 IF ~~ THEN BEGIN 17 // from: 10.2
-  SAY ~Ничего. Я не сомневаюсь, что вы уже ограбили мой дом. Но... если вы убьете для меня Формосу, то позже я могу дать вам еще больше золота... золота, которого никаким другим способом вы получить не сможете.~
-  IF ~~ THEN REPLY ~Кроме того, вы отдадите мне дриаду. Тогда я это сделаю.~ GOTO 21
-  IF ~~ THEN REPLY ~Нет, просто отдайте мне дриаду и ваше золото, и я оставлю вас в покое.~ GOTO 22
-  IF ~~ THEN REPLY ~Нет, я никого не убиваю... Мне нужна дриада. Идите себе.~ GOTO 8
-  IF ~~ THEN REPLY ~Слишком много хлопот. Я лучше убью вас.~ GOTO 6
+  SAY @46
+  IF ~~ THEN REPLY @41 GOTO 21
+  IF ~~ THEN REPLY @42 GOTO 22
+  IF ~~ THEN REPLY @43 GOTO 8
+  IF ~~ THEN REPLY @31 GOTO 6
 END
 
 IF ~~ THEN BEGIN 18 // from: 13.1
-  SAY ~Думаю, мне следует согласиться на ваши условия. Отлично... АГГГГХ!... в-вот... это мой зуб... и ключ от склада. А вот мой выкуп: 1800 золотых. Ключ от склада также отпирает клетку дриады. Возьмите ее... возьмите и уходите. Надеюсь, я больше никогда вас не увижу.~
+  SAY @47
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)GiveItem("NWTooth1",LastTalkedToBy)GivePartyGold(1800)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 13.4
-  SAY ~Полагаю, мне придется принять это за проявление великодушия. Отлично... АГГХХ!... в-вот... вот мой зуб... и ключ от склада. Насчет дриады... ключ от склада также отпирает ее клетку. Возьмите его... и возьмите ее и уходите. Надеюсь, я больше никогда вас не увижу.~
+  SAY @48
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)GiveItem("NWTooth1",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 13.5
-  SAY ~Полагаю, мне следует отблагодарить вас за великодушие... Вот... возьмите ключ, который нужен этой девке. Берите. А вот мой выкуп: 1800 золотых. Ключ от склада также отпирает клетку дриады. Возьмите ее... возьмите и уходите. Надеюсь, я больше никогда вас не увижу.~
+  SAY @49
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1800)~ EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 14.1
-  SAY ~Как хотите. Вы найдете эту эльфийскую шлюху причитающей на площади в юго-восточной части района. Как бы мне хотелось посмотреть на предсмертное выражение ее лица! Вот 1500 золотых монет и ключ от клетки дриады. Вы получите остаток денег, когда я буду уверен, что Формоса мертва. Тогда и поговорим.~
-  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("MeldanenQuest","GLOBAL",1)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1500)~ UNSOLVED_JOURNAL ~Чернозерье: убийство Формосы
-
-Отчаяние - хороший помощник в заключении выгодных сделок. Похоже, чародей Мелданен хочет отплатить подстрекательнице Формосе ее же монетой. Пока она прилюдно призывает на главной площади района убить его, Мелданен сделал мне более выгодное предложение частного характера, касающееся ее собственной жизни.~ EXIT
+  SAY @50
+  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("MeldanenQuest","GLOBAL",1)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1500)~ UNSOLVED_JOURNAL @51 EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.2
-  SAY ~Как хотите. В конце концов, я могу купить себе жизнь и сбежать из дома. Вот 1800 золотых монет, это все, что у меня есть... и ключ от клетки дриады. Возьмите ее... возьмите ее и убирайтесь. Надеюсь, что никогда вас больше не увижу.~
+  SAY @52
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1800)~ EXIT
 END
 
@@ -164,7 +162,7 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)OR(2)Global("MeldanenQuest","GLOBAL",0)GlobalGT("MeldanenQuest","GLOBAL",1)~ THEN BEGIN 23 // from:
-  SAY ~Я ухожу. Теперь оставьте меня.~ [MELDAN55]
+  SAY @53
   IF ~~ THEN EXIT
 END
 
@@ -172,7 +170,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("MeldanenQuest","GLOBAL",1)!Dead("Formosa")~ THEN BEGIN 24 // from:
-  SAY ~Формоса все еще жива. Я жду, когда же вы убьете эту тварь.~
+  SAY @54
   IF ~~ THEN EXIT
 END
 
@@ -180,39 +178,35 @@ END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("MeldanenQuest","GLOBAL",1)Dead("Formosa")~ THEN BEGIN 25 // from:
-  SAY ~До меня дошло, что Формоса действительно мертва, как мы и договаривались. Отличная работа. Вот обещанные 1500 золотых, хотя их трудно было получить. Надеюсь, этого достаточно.~ [MELDAN52]
-  IF ~~ THEN REPLY ~Вам не кажется, что за спасение вашей жизни вы могли бы заплатить чуть побольше золота?~ GOTO 26
-  IF ~~ THEN REPLY ~Подумай получше... твоя жизнь висит на волоске, тупица.~ GOTO 27
-  IF ~~ THEN REPLY ~Достаточно, давай деньги.~ GOTO 28
-  IF ~~ THEN REPLY ~Это не имеет значения... Я все равно не оставлю вас в живых.~ GOTO 29
+  SAY @55
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @57 GOTO 27
+  IF ~~ THEN REPLY @58 GOTO 28
+  IF ~~ THEN REPLY @59 GOTO 29
 END
 
 IF ~~ THEN BEGIN 26 // from: 25.1
-  SAY ~Э... да, конечно... но это почти все, что у меня есть. Я не могу собрать больше денег.~
-  IF ~~ THEN REPLY ~Подумай получше... твоя жизнь висит на волоске, тупица.~ GOTO 27
-  IF ~~ THEN REPLY ~Этого достаточно, давай деньги.~ GOTO 28
-  IF ~~ THEN REPLY ~Это не имеет значения... Я все равно не оставлю вас в живых.~ GOTO 29
+  SAY @60
+  IF ~~ THEN REPLY @57 GOTO 27
+  IF ~~ THEN REPLY @61 GOTO 28
+  IF ~~ THEN REPLY @59 GOTO 29
 END
 
 IF ~~ THEN BEGIN 27 // from: 25.2
-  SAY ~Я... Я... У меня больше нет денег. Пожалуйста... возьмите золото и уходите, умоляю вас!~
-  IF ~~ THEN REPLY ~Этого достаточно, давай деньги.~ GOTO 28
-  IF ~~ THEN REPLY ~Это не имеет значения... Я все равно не оставлю вас в живых.~ GOTO 29
+  SAY @62
+  IF ~~ THEN REPLY @61 GOTO 28
+  IF ~~ THEN REPLY @59 GOTO 29
 END
 
 IF ~~ THEN BEGIN 28 // from: 25.3
-  SAY ~Вот. Теперь уходите... Надеюсь, я больше никогда вас не увижу.~
-  IF ~~ THEN DO ~SetGlobal("MeldanenQuest","GLOBAL",2)AddexperienceParty(150000)GivePartyGold(1500)EraseJournalEntry(%Чернозерье: убийство Формосы
-
-Отчаяние - хороший помощник в заключении выгодных сделок. Похоже, чародей Мелданен хочет отплатить подстрекательнице Формосе ее же монетой. Пока она прилюдно призывает на главной площади района убить его, Мелданен сделал мне более выгодное предложение частного характера, касающееся ее собственной жизни.%)~ SOLVED_JOURNAL ~Чернозерье: убийство Формосы
-
-Леди Формоса была убита по заказу чародея Мелданена. Он выплатил убийцам их деньги, в том числе и за то, чтобы они не болтали об этом деле.~ EXIT
+  SAY @63
+  IF ~~ THEN DO ~SetGlobal("MeldanenQuest","GLOBAL",2)AddexperienceParty(150000)GivePartyGold(1500)EraseJournalEntry(@51)~ SOLVED_JOURNAL @64 EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.4
-  SAY ~Что? Но... У меня больше ничего ценного нет! Зачем вы это делаете?!~
-  IF ~~ THEN REPLY ~Это была просто шутка. Это золото вполне сгодится.~ GOTO 28
-  IF ~~ THEN REPLY ~Держу пари, у вас есть больше, чем вы говорите. Я просто обыщу ваш труп!~ GOTO 6
-  IF ~~ THEN REPLY ~Потому что я наслаждаюсь этим, разумеется.~ GOTO 6
+  SAY @65
+  IF ~~ THEN REPLY @66 GOTO 28
+  IF ~~ THEN REPLY @67 GOTO 6
+  IF ~~ THEN REPLY @68 GOTO 6
 END
 

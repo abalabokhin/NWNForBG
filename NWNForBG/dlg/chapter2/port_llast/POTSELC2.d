@@ -8,23 +8,23 @@
 BEGIN ~POTSELC2~
 
 IF ~  NumberOfTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Добро пожаловать в мою лавку! Я здесь торгую микстурами. Хотите взглянуть на мои товары?~
-  IF ~~ THEN REPLY ~Да, пожалуй. Покажите, что у вас есть.~ GOTO 2
-  IF ~~ THEN REPLY ~О, нет-нет, как-нибудь в другой раз.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 2
+  IF ~~ THEN REPLY @2 GOTO 3
 END
 
 IF ~  NumTimesTalkedToGT(0)~ THEN BEGIN 1 // from:
-  SAY ~Вы вернулись! Хотите взглянуть на мои микстуры?~
-  IF ~~ THEN REPLY ~Да, пожалуй.~ GOTO 2
-  IF ~~ THEN REPLY ~Нет, как-нибудь в другой раз.~ GOTO 3
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 2
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from:
-  SAY ~Уверен, вы останетесь довольны, <SIRMAAM>!~
+  SAY @6
   IF ~~ THEN DO ~StartStore("PotSelC2",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from:
-  SAY ~Надеюсь, мы еще увидимся!~
+  SAY @7
   IF ~~ THEN EXIT
 END

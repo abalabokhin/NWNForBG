@@ -4,23 +4,23 @@ BEGIN ~JAILGUAR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Постойте-ка, <SIRMAAM>. Здесь, знаете ли, тюрьма, а тюрьма, она для заключенных, понятно? Если хотите поговорить с ними, сначала нужно поговорить со мной.~
-  IF ~~ THEN REPLY ~Лорд Нашер послал меня допросить пленника.~ GOTO 1
-  IF ~~ THEN REPLY ~С дороги, или я заставлю тебя гнить в тюремной камере!~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~О, Нашер говорил, что сюда придет <MALEFEMALE>. Это ведь вы, да? Проходите, <SIRMAAM>.~
+  SAY @3
   IF ~~ THEN DO ~Unlock("Door01")OpenDoor("Door01")~ EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Ну, только не надо расстраивайся! Я лишь делаю свою работу! Сюда нельзя просто так войти и... Ох, погодите минуточку!~
+  SAY @4
   IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
-  SAY ~Вы  <MALEFEMALE> от Нашера, пришли, чтобы проведать заключенного? Проходите.~
+  SAY @5
   IF ~~ THEN DO ~Unlock("Door01")OpenDoor("Door01")~ EXIT
 END
 
@@ -28,7 +28,7 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)~ THEN BEGIN 4 // from:
-  SAY ~Вы тот, кого Нашер послал проведать заключенного, правильно? Проходите.~ ~Вы та, кого Нашер послал проведать заключенного, правильно? Проходите.~
+  SAY @6
   IF ~~ THEN EXIT
 END
 

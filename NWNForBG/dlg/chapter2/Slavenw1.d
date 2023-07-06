@@ -4,79 +4,79 @@ BEGIN ~SLAVENW1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Нет, пожалуйста, не надо больше! Я сдаюсь!~
+  SAY @0
   IF ~~ THEN DO ~SetGlobal("SlaveSurrenders","LOCALS",1)~ GOTO 1
 END
 
 IF~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я не знаю, что происходит. Где я? Где моя одежда?~
-  IF ~ ~ THEN REPLY ~О чем ты говоришь? И почему ты напал на меня?~ GOTO 2
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 3
+  SAY @1
+  IF ~ ~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Я... я не помню, как напал на тебя. Я даже не знаю, кто ты и где мы. Последнее, что я помню - это как я шел через Лес, пытаясь понять, что же случилось со всеми этими животными. Я ускользнул от нескольких медведей и пары кабанов, но я начинал сильно уставать. Наткнулся на открытую полянку и... я увидел... кажется, это была женщина. Да, точно, прекрасная женщина.~
+  SAY @4
   IF ~ ~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
-  SAY ~Это последнее, что я помню. Дальше я очнулся и увидел, что ты атакуешь меня, хоть ты и говоришь, что я напал первый. Все это очень странно.~
-  IF ~ ~ THEN REPLY ~Ты что, ничего не помнишь о том, как тебя захватили?~ GOTO 5
-  IF ~~ THEN REPLY ~Разреши мне задать пару вопросов о том, что произошло до того, как ты попал в плен.~ GOTO 6
-  IF ~ ~ THEN REPLY ~Ну ладно, убирайся отсюда немедленно.~ GOTO 7
-  IF ~~ THEN REPLY ~По-моему, ты хочешь надуть меня. Умри, идиот!~ GOTO 8
+  SAY @5
+  IF ~ ~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~ ~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.2
-  SAY ~Я следопыт здесь, в... мм... мы ведь в лесу Невервинтер? Я не узнаю этого места.~
-  IF ~~ THEN REPLY ~Да, это тот самый Лес. Так зачем ты напал на меня?~ GOTO 2
-  IF ~~ THEN REPLY ~Я здесь задаю вопросы. Надо было раньше думать, прежде чем нападать на меня.~ GOTO 2
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 2
+  IF ~~ THEN REPLY @12 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
-  SAY ~Гм... нет, я ничего не помню, прости.~
-  IF ~~ THEN REPLY ~Разреши мне задать пару вопросов о том, что произошло до того, как ты попал в плен.~ GOTO 6
-  IF ~ ~ THEN REPLY ~Ну ладно, убирайся отсюда немедленно.~ GOTO 7
-  IF ~~ THEN REPLY ~По-моему, ты хочешь надуть меня. Умри, идиот!~ GOTO 8
+  SAY @13
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~ ~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
-  SAY ~Я постараюсь, хоть ничего и не могу обещать. Я не очень-то много узнал.~
-  IF ~~ THEN REPLY ~Ты выяснил что-нибудь о том, что случилось с животными в Лесу?~ GOTO 9
-  IF ~~ THEN REPLY ~Тут пропали несколько друидов. Ты не знаешь, что с ними произошло?~ GOTO 10
-  IF ~~ THEN REPLY ~Мне говорили о ведьме по имени Сетара. Что ты о ней знаешь?~ GOTO 11
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.3
-  SAY ~Спасибо. Удачи вам, сэр.~ ~Спасибо. Удачи вам, леди.~
+  SAY @18
   IF ~~ THEN DO ~ForceSpellRES("SLAVENW4",Myself)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.2
-  SAY ~Я так просто не сдамся.~
+  SAY @19
   IF ~~ THEN DO ~Enemy()Attack(LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 6 1
-  SAY ~Тут не о чем особо рассказывать. Я не мог с ними поговорить, не мог успокоить. Они были просто невероятно враждебны. А больше узнать я так и не успел.~
-  IF ~~ THEN REPLY ~Тут пропали несколько друидов. Ты не знаешь, что с ними произошло?~ GOTO 10
-  IF ~~ THEN REPLY ~Мне говорили о ведьме по имени Сетара. Что ты о ней знаешь?~ GOTO 11
-  IF ~ ~ THEN REPLY ~Ну ладно, убирайся отсюда немедленно.~ GOTO 7
-  IF ~~ THEN REPLY ~По-моему, ты хочешь надуть меня. Умри, идиот!~ GOTO 8
+  SAY @20
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~ ~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
 END
 
 IF ~~ THEN BEGIN 10 // from: 6 2
-  SAY ~Не имею ни малейшего понятия. Возможно, тебе следует поискать в этом месте, но берегись, если они такие же, каким был я, то могут и напасть на тебя.~
-  IF ~~ THEN REPLY ~Ты выяснил что-нибудь о том, что случилось с животными в Лесу?~ GOTO 9
-  IF ~~ THEN REPLY ~Мне говорили о ведьме по имени Сетара. Что ты о ней знаешь?~ GOTO 11
-  IF ~ ~ THEN REPLY ~Ну ладно, убирайся отсюда немедленно.~ GOTO 7
-  IF ~~ THEN REPLY ~По-моему, ты хочешь надуть меня. Умри, идиот!~ GOTO 8
+  SAY @21
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~ ~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
 END
 
 IF ~~ THEN BEGIN 11 // from: 6 3
-  SAY ~Я немножко слышал про нее. Она любит помогать лесным созданиям, но не очень-то часто встречается с людьми. Ходят какие-то байки о том, что когда-то она была прекрасна, но внезапно стала уродливой. Это все, что я про нее знаю.~
-  IF ~~ THEN REPLY ~Ты выяснил что-нибудь о том, что случилось с животными в Лесу?~ GOTO 9
-  IF ~~ THEN REPLY ~Тут пропали несколько друидов. Ты не знаешь, что с ними произошло?~ GOTO 10
-  IF ~ ~ THEN REPLY ~Ну ладно, убирайся отсюда немедленно.~ GOTO 7
-  IF ~~ THEN REPLY ~По-моему, ты хочешь надуть меня. Умри, идиот!~ GOTO 8
+  SAY @22
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~ ~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
 END

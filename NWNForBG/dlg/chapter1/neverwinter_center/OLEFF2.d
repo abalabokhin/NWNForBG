@@ -4,22 +4,22 @@ BEGIN ~OLEFF2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("DestherIsTraitor","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~ѕриветствую, вас! ¬ы оказали неоценимую услугу всему Ќевервинтеру в эти т€желые времена.~ [OLEFF055]
+  SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1  // 0.1
-  SAY ~¬ знак благодарности лорд Ќашер подумал, что вы захотите поприсутствовать при ритуале создани€ лекарства после того, как вс€ ваша работа будет закончена.~ [OLEFF056]
+  SAY @1
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // 1.1
-  SAY ~ќднако перед тем как мы начнем ритуал, остальные четверо собравшихс€ здесь, несомненно, захот€т переговорить с вами и принести вам свою персональную благодарность за все, чего вы достигли.~ [OLEFF057]
+  SAY @2
   IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // 0.2
-  SAY ~Ќу, давайте, поговорите с ними - мне еще нужно принести городскому глашатаю радостные вести.~ [OLEFF058]
+  SAY @3
   IF ~  Global("Blanc","LOCALS",0)~ THEN DO ~IncrementGlobal("MedicineTalkNWN","MYAREA",1)SetGlobal("Blanc","LOCALS",1)~ EXIT
   IF ~  Global("Blanc","LOCALS",1)~ THEN EXIT
 END
@@ -28,7 +28,7 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("DestherIsTraitor","GLOBAL",0)~ THEN BEGIN 4 // from:
-  SAY ~ќлефф удивленно смотрит на вас, €вно не понима€, почему вы тратите врем€ на разговоры, когда ритуал ждет. — бесконечным терпением он повтор€ет, что от вас требуетс€.~
+  SAY @4
   IF ~~ THEN GOTO 1
 END
 
@@ -36,7 +36,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)GlobalGT("DestherIsTraitor","GLOBAL",0)~ THEN BEGIN 5 // from:
-  SAY ~ќлефф слишком потр€сен, чтобы говорить, вместо этого он указывает вам на портал, чтобы вы вошли в него и вернули украденное лекарство.~
+  SAY @5
   IF ~~ THEN EXIT
 END
 

@@ -8,254 +8,254 @@ BEGIN ~RHAINE~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)IsGabber(Player1)~ THEN BEGIN 0 // from:
-  SAY ~Кто... Кто вы? Послушайте... Сейчас я никого не принимаю. Я... Мне нужно пойти в другое место, нравится мне это или нет. Так что, пожалуйста, уходите.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Что-то ты не очень довольна этим.~ GOTO 2
-  IF ~~ THEN REPLY ~Можно мне задать тебе вопрос?~ GOTO 3
-  IF ~~ THEN REPLY ~Что это значит: "в другое место"?~ GOTO 4
-  IF ~  Global("Bela_Rhaine","GLOBAL",1)~ THEN REPLY ~Бела сказала мне навестить вас.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  Global("Bela_Rhaine","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Рэйн. Меня зовут Рэйн. Мне... Мне скоро нужно уходить. Не могли бы вы выйти отсюда?~
-  IF ~~ THEN REPLY ~Что-то ты не очень довольна этим.~ GOTO 2
-  IF ~~ THEN REPLY ~Можно мне задать вам вопрос?~ GOTO 3
-  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY ~Бела сказала мне навестить вас.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @7
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @8 GOTO 3
+  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Я не люблю Высших Капитанов, и если бы меня спросили, то никогда не стала бы служить им. Но мне приходится выполнять приказы.~
-  IF ~~ THEN REPLY ~Зачем же вы служите Высшим Капитанам, если не хотите этого?~ GOTO 7
-  IF ~~ THEN REPLY ~Почему? Они что, плохо вам платят?~ GOTO 8
-  IF ~~ THEN REPLY ~Расскажите мне все, что вы знаете об этих Высших Капитанах.~ GOTO 7
-  IF ~~ THEN REPLY ~Возможно, я смогу вам помочь.~ GOTO 7
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 7
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Пожалуйста, нет. Я не в настроении разговаривать. Мне скоро нужно уходить и... Надо подготовиться.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY ~Бела сказала мне навестить вас.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @14
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~В другое место. В такое место, куда я не хочу идти, но выбора у меня нет.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Что-то ты не очень довольна этим.~ GOTO 2
-  IF ~~ THEN REPLY ~Можно мне задать вам вопрос?~ GOTO 3
-  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY ~Бела сказала мне навестить вас.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @15
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @8 GOTO 3
+  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Правда? А зачем бы ей это делать?~
-  IF ~~ THEN REPLY ~Как вы думаете, почему она послала меня к вам?~ GOTO 9
-  IF ~~ THEN REPLY ~Мне казалось, что Высших Капитанов следует остановить.~ GOTO 2
-  IF ~~ THEN REPLY ~Мы обсуждали Высших Капитанов.~ GOTO 2
-  IF ~~ THEN REPLY ~Ладно, забудь.~ GOTO 6
+  SAY @16
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @18 GOTO 2
+  IF ~~ THEN REPLY @19 GOTO 2
+  IF ~~ THEN REPLY @20 GOTO 6
 END
 
 IF ~~ THEN BEGIN 6 // from: 0.1
-  SAY ~Спасибо. Я лишь хочу остаться в покое.~
+  SAY @21
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 0.2
-  SAY ~Послушайте... Я не хочу нажить себе никаких неприятностей, а если я стану обсуждать Высших Капитанов, то проблем мне не избежать.~
-  IF ~  CheckStatGT(LastTalkedToBy,11,CHR)~ THEN REPLY ~Все, что вы мне расскажете, я сохраню в тайне.~ GOTO 10
-  IF ~  CheckStatLT(LastTalkedToBy,12,CHR)~ THEN REPLY ~Все, что вы мне расскажете, я сохраню в тайне.~ GOTO 11
-  IF ~  CheckStatGT(LastTalkedToBy,14,STR)~ THEN REPLY ~Более верный способ нажить неприятности - это не отвечать на мои вопросы, ясно?~ GOTO 12
-  IF ~  CheckStatGT(LastTalkedToBy,15,INT)~ THEN REPLY ~Если желаете, я заплачу вам за информацию.~ GOTO 13
-  IF ~  CheckStatLT(LastTalkedToBy,16,INT)~ THEN REPLY ~Если желаете, я заплачу вам за информацию.~ GOTO 14
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @22
+  IF ~  CheckStatGT(LastTalkedToBy,11,CHR)~ THEN REPLY @23 GOTO 10
+  IF ~  CheckStatLT(LastTalkedToBy,12,CHR)~ THEN REPLY @23 GOTO 11
+  IF ~  CheckStatGT(LastTalkedToBy,14,STR)~ THEN REPLY @24 GOTO 12
+  IF ~  CheckStatGT(LastTalkedToBy,15,INT)~ THEN REPLY @25 GOTO 13
+  IF ~  CheckStatLT(LastTalkedToBy,16,INT)~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 IF ~~ THEN BEGIN 8 // from: 0.2
-  SAY ~Хффф. Наверное, вы считаете, что куртизанки за деньги готовы на все, но вы глубоко заблуждаетесь.~
-  IF ~~ THEN REPLY ~Думаю, немного золота заставит вас передумать...~ GOTO 49
-  IF ~~ THEN REPLY ~Возможно, я смогу вам помочь.~ GOTO 7
-  IF ~~ THEN REPLY ~Мне хотелось бы узнать побольше об этих Высших Капитанах.~ GOTO 7
+  SAY @27
+  IF ~~ THEN REPLY @28 GOTO 49
+  IF ~~ THEN REPLY @13 GOTO 7
+  IF ~~ THEN REPLY @29 GOTO 7
 END
 
 IF ~~ THEN BEGIN 9 // from: 1.2
-  SAY ~Я не стану говорить за мисс Белу. Может быть, она думает, что вы можете помочь мне, я не знаю.~
+  SAY @30
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 10 // from: 0.2
-  SAY ~Хорошо. Думаю, большой беды не будет. Я расскажу вам все, что знаю. Высший Капитан Курт и Высший Капитан Барам практически взяли нас в заложники. Мисс Бела должна делать, что они говорят, или они оставят нас всех без работы... Превратят в рабов, или еще что похуже. Орет и я должны ходить на базы Высших Капитанов и устраивать там представление... И делать все, что они прикажут. Это отвратительно, но мы ничего не можем поделать.~
+  SAY @31
   IF ~~ THEN GOTO 15
 END
 
 IF ~~ THEN BEGIN 11 // from: 0.2
-  SAY ~Да, точно... Послушайте, не обижайтесь, но мне бы хотелось, чтобы вы оставили меня в покое, хорошо?~
-  IF ~  CheckStatGT(LastTalkedToBy,14,STR)~ THEN REPLY ~Более верный способ нажить неприятности - это не отвечать на мои вопросы, ясно?~ GOTO 12
-  IF ~  CheckStatGT(LastTalkedToBy,15,INT)~ THEN REPLY ~Если желаете, я заплачу вам за информацию.~ GOTO 13
-  IF ~  CheckStatLT(LastTalkedToBy,16,INT)~ THEN REPLY ~Если желаете, я заплачу вам за информацию.~ GOTO 14
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @32
+  IF ~  CheckStatGT(LastTalkedToBy,14,STR)~ THEN REPLY @24 GOTO 12
+  IF ~  CheckStatGT(LastTalkedToBy,15,INT)~ THEN REPLY @25 GOTO 13
+  IF ~  CheckStatLT(LastTalkedToBy,16,INT)~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 IF ~~ THEN BEGIN 12 // from: 0.2
-  SAY ~Таких, как вы, везде полно, верно? Хорошо, хорошо. Мне уже все равно. Я расскажу вам все, что знаю. Высший Капитан Курт и Высший Капитан Барам практически взяли нас в заложники. Мисс Бела должна делать, что они говорят, или они оставят нас всех без работы... Превратят в рабов, или еще что похуже. Орет и я должны ходить на базы Высших Капитанов и устраивать там представление... И делать все, что они прикажут. Это отвратительно, но мы ничего не можем поделать.~
+  SAY @33
   IF ~~ THEN GOTO 15
 END
 
 IF ~~ THEN BEGIN 13 // from: 0.2
-  SAY ~Вы думаете, что мне очень нужны деньги, да? (вздыхает) Ладно, неважно. Я расскажу вам все, что знаю. Высший Капитан Курт и Высший Капитан Барам практически взяли нас в заложники. Мисс Бела должна делать, что они говорят, или они оставят нас всех без работы... Превратят в рабов, или еще что похуже. Орет и я должны ходить на базы Высших Капитанов и устраивать там представление... И делать все, что они прикажут. Это отвратительно, но мы ничего не можем поделать.~
+  SAY @34
   IF ~~ THEN GOTO 15
 END
 
 IF ~~ THEN BEGIN 14 // from: 0.2
-  SAY ~Не нужно мне ваше золото. И неприятности тоже не нужны. Просто оставьте меня в покое, ладно? На сегодня с меня уже достаточно вопросов.~
+  SAY @35
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 0.2
-  SAY ~Мисс Бела изо всех сил старается помочь нам, но ни она, ни мы ничего не можем с этим поделать. Хоть бы... Хоть бы кто-нибудь умертвил этих людей ужасной и мучительной смертью. Тогда бы все это закончилось.~
-  IF ~~ THEN REPLY ~А если бы кто-нибудь захотел вам помочь... ?~ GOTO 16
-  IF ~~ THEN REPLY ~Что они заставляют вас делать?~ GOTO 17
-  IF ~~ THEN REPLY ~Кто такой этот Орет, о котором вы говорите?~ GOTO 23
-  IF ~~ THEN REPLY ~Вы можете рассказать мне о Высших Капитанах?~ GOTO 18
-  IF ~~ THEN REPLY ~Почему вы сами не предпримете что-нибудь?~ GOTO 19
+  SAY @36
+  IF ~~ THEN REPLY @37 GOTO 16
+  IF ~~ THEN REPLY @38 GOTO 17
+  IF ~~ THEN REPLY @39 GOTO 23
+  IF ~~ THEN REPLY @40 GOTO 18
+  IF ~~ THEN REPLY @41 GOTO 19
 END
 
 IF ~~ THEN BEGIN 16 // from: 0.2
-  SAY ~Можно было бы рассказать им все, что я знаю, если бы это принесло этим ублюдкам смерть.~
-  IF ~~ THEN REPLY ~Как мне тогда найти Курта?~ GOTO 20
-  IF ~~ THEN REPLY ~Как мне тогда найти Барама?~ GOTO 21
-  IF ~~ THEN REPLY ~Не-а. Забудь.~ GOTO 22
+  SAY @42
+  IF ~~ THEN REPLY @43 GOTO 20
+  IF ~~ THEN REPLY @44 GOTO 21
+  IF ~~ THEN REPLY @45 GOTO 22
 END
 
 IF ~~ THEN BEGIN 17 // from: 0.2
-  SAY ~Иногда они швыряют меня своим людям. А иногда они... я... лучше я не буду говорить об этом.~
-  IF ~~ THEN REPLY ~А если бы кто-нибудь захотел вам помочь... ?~ GOTO 16
-  IF ~~ THEN REPLY ~Кто такой этот Орет, о которой вы говорите?~ GOTO 23
-  IF ~~ THEN REPLY ~Вы можете рассказать мне о Высших Капитанах?~ GOTO 18
-  IF ~~ THEN REPLY ~Почему вы сами не предпримете что-нибудь?~ GOTO 19
+  SAY @46
+  IF ~~ THEN REPLY @37 GOTO 16
+  IF ~~ THEN REPLY @47 GOTO 23
+  IF ~~ THEN REPLY @40 GOTO 18
+  IF ~~ THEN REPLY @41 GOTO 19
 END
 
 IF ~~ THEN BEGIN 18 // from: 0.2
-  SAY ~Да. Я знаю о них больше, чем мне бы этого хотелось.~
-  IF ~~ THEN REPLY ~Где я могу найти Курта?~ GOTO 20
-  IF ~~ THEN REPLY ~Где я могу найти Барама?~ GOTO 21
-  IF ~~ THEN REPLY ~Расскажите мне о Курте.~ GOTO 24
-  IF ~~ THEN REPLY ~Расскажите мне о Бараме.~ GOTO 25
-  IF ~~ THEN REPLY ~Можно ли с ними договориться?~ GOTO 26
+  SAY @48
+  IF ~~ THEN REPLY @49 GOTO 20
+  IF ~~ THEN REPLY @50 GOTO 21
+  IF ~~ THEN REPLY @51 GOTO 24
+  IF ~~ THEN REPLY @52 GOTO 25
+  IF ~~ THEN REPLY @53 GOTO 26
 END
 
 IF ~~ THEN BEGIN 19 // from: 0.2
-  SAY ~Если бы мне только удалось убить их! Но я не могу, это причинило бы мисс Беле такие неприятности, что страшно себе и представить... А я этого не хочу. Пожалуйста... Оставьте меня в покое! Я ничего не могу сделать, и никто не может мне помочь!~
+  SAY @54
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 49 // from: 0.2
-  SAY ~Ха! Убирайтесь отсюда! Убирайтесь из моей комнаты и оставьте меня, наконец, в покое. Хватит с меня таких, как вы.~
+  SAY @55
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 0.2
-  SAY ~Курт в районе западных доков. Его люди выходят из пролома в стене. Не советую вам ходить туда. Рядом с руинами его старой башни есть проход. Я использую его, когда хожу к нему.~
+  SAY @56
   IF ~  Global("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 27
   IF ~  GlobalGT("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 28
 END
 
 IF ~~ THEN BEGIN 21 // from: 0.2
-  SAY ~У Барама есть база в городской канализации, там полно его отрядов и нежити, которую ему вызывают союзники-чародеи. Главный вход - это дыра в канализацию к северу отсюда. Его база надежно защищена, но отнюдь не неприступна. Там есть черный ход, о котором мало кто знает... ~
+  SAY @57
   IF ~  Global("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 29
   IF ~  GlobalGT("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 30
 END
 
 IF ~~ THEN BEGIN 22 // from: 0.2
-  SAY ~Тогда... пожалуйста, оставьте меня в покое.~
+  SAY @58
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 0.2
-  SAY ~Орет - это один из мужчин, работающий в заведении мисс Белы. Он ненавидит эту работу так же, как и я. Если вам так уж нужно переговорить с ним, то у него есть здесь своя комната.~
-  IF ~~ THEN REPLY ~А если бы кто-нибудь захотел вам помочь... ?~ GOTO 16
-  IF ~~ THEN REPLY ~Вы можете рассказать мне о Высших Капитанах?~ GOTO 18
-  IF ~~ THEN REPLY ~Почему вы сами не предпримете что-нибудь?~ GOTO 19
+  SAY @59
+  IF ~~ THEN REPLY @37 GOTO 16
+  IF ~~ THEN REPLY @40 GOTO 18
+  IF ~~ THEN REPLY @41 GOTO 19
 END
 
 IF ~~ THEN BEGIN 24 // from: 0.2
-  SAY ~Он сумасшедший. Он всегда безумно желал власти, но даже его люди теперь говорят, что он окончательно сошел с ума. Если он чего-то хочет, он ни перед чем не остановится. Он думает лишь о том, как убить Барама и захватить город, говорит, что тогда он вся слава будет его. По-моему, он не понимает, что он и его люди сотворили с Лусканом.~
-  IF ~~ THEN REPLY ~Где я могу найти Курта?~ GOTO 20
-  IF ~~ THEN REPLY ~Где я могу найти Барама?~ GOTO 21
-  IF ~~ THEN REPLY ~Расскажите мне о Бараме.~ GOTO 25
-  IF ~~ THEN REPLY ~Можно ли с ними договориться?~ GOTO 26
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @60
+  IF ~~ THEN REPLY @49 GOTO 20
+  IF ~~ THEN REPLY @50 GOTO 21
+  IF ~~ THEN REPLY @52 GOTO 25
+  IF ~~ THEN REPLY @53 GOTO 26
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 25 // from: 0.2
-  SAY ~Барам очень... хитрый человек. Он больше полагается на коварство, чем на силу, и не остановится ни перед какой низостью, лишь бы добиться своего. Он путается с некромантами... На его базе полно нежити, его люди боятся и нервничают. Даже сам Барам какой-то странный... По-моему, он что-то с собой сделал. Что-то противоестественное.~
-  IF ~~ THEN REPLY ~Где я могу найти Курта?~ GOTO 20
-  IF ~~ THEN REPLY ~Где я могу найти Барама?~ GOTO 21
-  IF ~~ THEN REPLY ~Расскажите мне о Курте.~ GOTO 24
-  IF ~~ THEN REPLY ~Можно ли с ними договориться?~ GOTO 26
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @61
+  IF ~~ THEN REPLY @49 GOTO 20
+  IF ~~ THEN REPLY @50 GOTO 21
+  IF ~~ THEN REPLY @51 GOTO 24
+  IF ~~ THEN REPLY @53 GOTO 26
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 26 // from: 0.2
-  SAY ~Я не знаю. Они могли бы заключить с вами сделку, если бы решили, что это поможет им убить другого Высшего Капитана. Но что бы они там ни обещали, они не сдержат слова.~
-  IF ~~ THEN REPLY ~Где я могу найти Курта?~ GOTO 20
-  IF ~~ THEN REPLY ~Где я могу найти Барама?~ GOTO 21
-  IF ~~ THEN REPLY ~Расскажите мне о Курте.~ GOTO 24
-  IF ~~ THEN REPLY ~Расскажите мне о Бараме.~ GOTO 25
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @62
+  IF ~~ THEN REPLY @49 GOTO 20
+  IF ~~ THEN REPLY @50 GOTO 21
+  IF ~~ THEN REPLY @51 GOTO 24
+  IF ~~ THEN REPLY @52 GOTO 25
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 27 // from: 0.2
-  SAY ~У Барама есть база в городской канализации, там полно его отрядов и нежити, которую ему вызывают союзники-чародеи. Главный вход - это дыра в канализацию на к северу отсюда. Его база надежно защищена, но отнюдь не неприступна. Там есть черный ход, о котором мало кто знает... У меня есть ключ, с помощью которого вы могли бы войти... если хотите.~
+  SAY @63
   IF ~~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 28 // from: 0.2
-  SAY ~Это все, что я могу сказать вам по этому поводу.~
-  IF ~~ THEN REPLY ~Где я могу найти Барама?~ GOTO 21
-  IF ~~ THEN REPLY ~Расскажите мне о Курте.~ GOTO 24
-  IF ~~ THEN REPLY ~Расскажите мне о Бараме.~ GOTO 25
-  IF ~~ THEN REPLY ~Можно ли с ними договориться?~ GOTO 26
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @64
+  IF ~~ THEN REPLY @50 GOTO 21
+  IF ~~ THEN REPLY @51 GOTO 24
+  IF ~~ THEN REPLY @52 GOTO 25
+  IF ~~ THEN REPLY @53 GOTO 26
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 29 // from: 0.2
-  SAY ~Курт засел в районе западных доков. Его люди выходят из пролома в стене. Не советую вам ходить туда. Рядом с руинами его старой башни есть проход. Я использую его, когда хожу к нему.  Вам нужен ключ, чтобы пробраться на его базу. Чтобы попасть к Бараму тоже нужен ключ, возьмите ключи, если хотите. Я не знаю, что у вас за планы, но этим ублюдкам они точно не понравятся!~
-  IF ~~ THEN REPLY ~Да, дай мне ключи.~ GOTO 32
-  IF ~~ THEN REPLY ~Нет, не надо мне никаких ключей.~ GOTO 34
+  SAY @65
+  IF ~~ THEN REPLY @66 GOTO 32
+  IF ~~ THEN REPLY @67 GOTO 34
 END
 
 IF ~~ THEN BEGIN 30 // from: 0.2
-  SAY ~Это все, что я могу сказать вам по этому поводу.~
-  IF ~~ THEN REPLY ~Где я могу найти Курта?~ GOTO 20
-  IF ~~ THEN REPLY ~Расскажите мне о Курте.~ GOTO 24
-  IF ~~ THEN REPLY ~Расскажите мне о Бараме.~ GOTO 25
-  IF ~~ THEN REPLY ~Можно ли с ними договориться?~ GOTO 26
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @64
+  IF ~~ THEN REPLY @49 GOTO 20
+  IF ~~ THEN REPLY @51 GOTO 24
+  IF ~~ THEN REPLY @52 GOTO 25
+  IF ~~ THEN REPLY @53 GOTO 26
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 31 // from: 0.2
-  SAY ~Чтобы пробраться на базу Курта через дверь в башне тоже нужен ключ. Возьмите, если хотите. Я не знаю, что у вас за планы, но этим ублюдкам они точно не понравятся!~
-  IF ~~ THEN REPLY ~Да, дай мне ключи.~ GOTO 32
-  IF ~~ THEN REPLY ~Нет, не надо мне никаких ключей.~ GOTO 34
+  SAY @68
+  IF ~~ THEN REPLY @66 GOTO 32
+  IF ~~ THEN REPLY @67 GOTO 34
 END
 
 IF ~~ THEN BEGIN 32 // from: 0.2
-  SAY ~Вот... Этим вы сможете отпереть все решетки. Но они хорошо охраняются, и если Барам увидит, что у вас есть ключ, он решит, что вы враг. Я не хочу лезть в ваши дела, но если сможете, убейте эту мелкую крысу. Мне будет приятно знать, что дни его закончены.~
+  SAY @69
   IF ~~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 33 // from: 0.2
-  SAY ~А это копия ключа от логова Курта, но будьте осторожны... Если стражники Курта увидят, как вы заходите, они решат, что вы враг и попытаются убить вас. Курт заслуживает смерти, друг мой... Если представится шанс, убейте его, не колеблясь. Все жители Лускана и я будем вам за это благодарны.~
+  SAY @70
   IF ~~ THEN DO ~SetGlobal("PlayerHasLuscanKey","GLOBAL",1)
 GiveItemCreate("Nwkey10",LastTalkedToBy,0,0,0)
 GiveItemCreate("Nwkey11",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 0.2
-  SAY ~Как хотите. А теперь оставьте меня в покое. ~
+  SAY @71
   IF ~~ THEN EXIT
 END
 
@@ -263,37 +263,37 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)Global("PlayerHasLuscanKey","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 35 // from:
-  SAY ~Вы опять здесь? Послушайте, вам же сказано, что у меня есть дела... Чего вы от меня хотите?~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько вопросов о Высших Капитанах?~ GOTO 18
-  IF ~~ THEN REPLY ~Мне бы хотелось нанять вас.~ GOTO 36
-  IF ~  Dead("Baram")Global("QuestDone","MYAREA",0)~ THEN REPLY ~Мне показалось, тебе стоит это узнать: Барам мертв.~ GOTO 37
-  IF ~  Dead("Kurt")Global("QuestDone","MYAREA",0)~ THEN REPLY ~Мне показалось, тебе стоит знать: Курт мертв.~ GOTO 38
+  SAY @72
+  IF ~~ THEN REPLY @73 GOTO 18
+  IF ~~ THEN REPLY @74 GOTO 36
+  IF ~  Dead("Baram")Global("QuestDone","MYAREA",0)~ THEN REPLY @75 GOTO 37
+  IF ~  Dead("Kurt")Global("QuestDone","MYAREA",0)~ THEN REPLY @76 GOTO 38
 END
 
 IF ~~ THEN BEGIN 36 // from: 0.2
-  SAY ~Все вы, мужчины, одинаковы! Вон отсюда! Вон!!!~
+  SAY @77
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 0.2
-  SAY ~О, какое облегчение. Барам был даже почти хуже Курта. Такой был псих. Полагаю, это тебя нам нужно за это благодарить. Конечно, тебя, иначе откуда тебе знать. Спасибо тебе за это. Город у тебя в долгу. Может, тебе заодно удалось избавиться и от Курта?~
-  IF ~  Dead("Kurt")~ THEN REPLY ~Вообще-то, да. Он тоже мертв.~ GOTO 39
-  IF ~~ THEN REPLY ~Нет.~ GOTO 40
+  SAY @78
+  IF ~  Dead("Kurt")~ THEN REPLY @79 GOTO 39
+  IF ~~ THEN REPLY @80 GOTO 40
 END
 
 IF ~~ THEN BEGIN 38 // from: 0.2
-  SAY ~Правда? Что ж, отлично. Этот самодовольный гад заслужил самых жутких страданий... Надеюсь, он молил о пощаде перед смертью. Наверное, стоит поблагодарить тебя за то, что мир избавился от этого негодяя. Может, тебе заодно удалось избавиться и от Барама?~
-  IF ~  Dead("Kurt")~ THEN REPLY ~Вообще-то, да. Он тоже мертв.~ GOTO 39
-  IF ~~ THEN REPLY ~Нет.~ GOTO 40
+  SAY @81
+  IF ~  Dead("Kurt")~ THEN REPLY @79 GOTO 39
+  IF ~~ THEN REPLY @80 GOTO 40
 END
 
 IF ~~ THEN BEGIN 39 // from: 0.2
-  SAY ~Что? Ты шутишь, да? Нет, ты не шутишь... Я вижу по твоим глазам. Это прекрасные новости! Спасибо! Спасибо тебе! Наконец-то, мне удалось избавиться от гнета этих негодяев! Так жаль, что мне нечем вознаградить тебя! Мы все тебе очень обязаны. Да благословят тебя боги, <LADYLORD>!~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("QuestDone","MYAREA",1)AddexperienceParty(75000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 0.2
-  SAY ~Ну что ж, наверное, ничего особенно не изменится, когда он поймет, что теперь он  единственный Высший Капитан... если это действительно так. Но спасибо тебе в любом случае.~
+  SAY @83
   IF ~~ THEN EXIT
 END
 
@@ -305,33 +305,33 @@ Gender(LastTalkedToBy,MALE)
 Global("PlayerHasLuscanKey","GLOBAL",1)
 IsGabber(Player1)
 Global("QuestDone","MYAREA",0)~ THEN BEGIN 41 // from:
-  SAY ~Снова вернулись? Я же вам уже дала ключи. Надеюсь, вы используете их, чтобы убить Высших Капитанов... или что вы там запланировали. Что же вы еще хотите?~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько вопросов о Высших Капитанах?~ GOTO 18
-  IF ~~ THEN REPLY ~Мне бы хотелось нанять вас.~ GOTO 36
-  IF ~  Dead("Baram")Global("QuestDone","MYAREA",0)~ THEN REPLY ~Мне показалось, тебе стоит это узнать: Барам мертв.~ GOTO 37
-  IF ~  Dead("Kurt")Global("QuestDone","MYAREA",0)~ THEN REPLY ~Мне показалось, тебе стоит знать: Курт мертв.~ GOTO 38
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @84
+  IF ~~ THEN REPLY @73 GOTO 18
+  IF ~~ THEN REPLY @74 GOTO 36
+  IF ~  Dead("Baram")Global("QuestDone","MYAREA",0)~ THEN REPLY @75 GOTO 37
+  IF ~  Dead("Kurt")Global("QuestDone","MYAREA",0)~ THEN REPLY @76 GOTO 38
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 // -----------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Gender(LastTalkedToBy,FEMALE)Global("QuestDone","MYAREA",0)~ THEN BEGIN 42 // from:
-  SAY ~Кем бы вы ни были, мисс, вы ошиблись комнатой.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 43
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 44
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @85
+  IF ~~ THEN REPLY @1 GOTO 43
+  IF ~~ THEN REPLY @86 GOTO 44
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 IF ~~ THEN BEGIN 43 // from: 0.2
-  SAY ~Меня зовут Рэйн. Послушайте, мисс... Я сейчас никого не принимаю, так что оставьте меня одну.~
-  IF ~~ THEN REPLY ~Почему вы не работаете?~ GOTO 44
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 44
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @87
+  IF ~~ THEN REPLY @88 GOTO 44
+  IF ~~ THEN REPLY @86 GOTO 44
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 IF ~~ THEN BEGIN 44 // from: 0.2
-  SAY ~Пожалуйста, оставьте меня в покое. Неужели в этом месте девушке нельзя остаться одной, ее все время будут беспокоить? Уверена, здесь полно мужчин, с которыми можно поговорить, мисс... А теперь уходите!~
+  SAY @89
   IF ~~ THEN EXIT
 END
 
@@ -339,21 +339,21 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  !IsGabber(Player1)Gender(LastTalkedToBy,MALE)Global("QuestDone","MYAREA",0)~ THEN BEGIN 45 // from:
-  SAY ~Почему-то мне кажется, что вы ошиблись комнатой. Прошу вас покинуть меня.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 46
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 47
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @90
+  IF ~~ THEN REPLY @1 GOTO 46
+  IF ~~ THEN REPLY @86 GOTO 47
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 IF ~~ THEN BEGIN 46 // from: 0.2
-  SAY ~Меня зовут Рэйн. Послушайте, мисс... Я сейчас никого не принимаю, так что оставьте меня одну.~
-  IF ~~ THEN REPLY ~Почему вы не работаете?~ GOTO 47
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 47
-  IF ~~ THEN REPLY ~Что ж, тогда извините.~ GOTO 6
+  SAY @87
+  IF ~~ THEN REPLY @88 GOTO 47
+  IF ~~ THEN REPLY @86 GOTO 47
+  IF ~~ THEN REPLY @26 GOTO 6
 END
 
 IF ~~ THEN BEGIN 47 // from: 0.2
-  SAY ~Не хочу я отвечать ни на какие вопросы. Я прошу вас оставить меня в покое... Пожалуйста, уходите.~
+  SAY @91
   IF ~~ THEN EXIT
 END
 
@@ -361,7 +361,7 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("QuestDone","MYAREA",1)~ THEN BEGIN 48 // from:
-  SAY ~Мне очень жаль, но мне действительно пора идти!~
+  SAY @92
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 

@@ -6,103 +6,103 @@ BEGIN ~LEAH~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)AreaCheck("NW2103")~ THEN BEGIN 0 // from:
-  SAY ~О? Сюда! О, спасибо - я думала, что умру здесь. Каждый раз, когда они приближались ко мне, от них так гнусно пахло - я была так испугана.~ [LEAH051]
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Лия. Меня зовут Лия. Я работала на ферме, когда на меня напали эти твари. Они похитили меня и - о...~
-  IF ~~ THEN REPLY ~Лия! Мне нужно задать вам несколько вопросов.~ GOTO 3
-  IF ~  Global("FarmerQuest","GLOBAL",2)~ THEN REPLY ~Мы говорили с вашим мужем, Лия. Он думает, что вы умерли.~ GOTO 4
-  IF ~~ THEN REPLY ~Ну хорошо. Я думаю, для вас вполне безопасно будет убраться отсюда, Лия.~ GOTO 5
-  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY ~Мне и в голову не могло прийти, что тут окажутся пленники. Вы можете выйти сами?~ GOTO 6
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~  Global("FarmerQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Пожалуйста, не уходите! Я не хочу оставаться здесь, я не выдержу одна... Я так испугана. Тут так темно...~
+  SAY @9
   IF ~~ THEN DO ~SetGlobal("Pause","LOCALS",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Что? Какие вопросы? О чем вы хотите просить?~
-  IF ~~ THEN REPLY ~Что вы можете рассказать об этих пещерах?~ GOTO 8
-  IF ~~ THEN REPLY ~Почему монстры похитили вас?~ GOTO 9
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 9
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Да вы что? Он - о... это было так ужасно. Я просто хочу домой. Вы поможете мне бежать?~
-  IF ~~ THEN REPLY ~Конечно. Вы может уйти, путь свободен.~ GOTO 5
-  IF ~~ THEN REPLY ~Лия! Мне нужно задать вам несколько вопросов.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 5
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Огромное, огромное вам спасибо, <SIRMAAM>. Не могу даже выразить, как я вам благодарна. Когда закончите здесь, пожалуйста, приходите навестить нас с мужем.~
+  SAY @15
   IF ~~ THEN DO ~SetGlobal("LeahSaved","GLOBAL",1)SetGlobal("Pause","LOCALS",0)EscapeArea()~ EXIT // возможно сделать скрипт и довести ее до выхода
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
-  SAY ~Я... Я думаю, да. Значит, вы убили чудовищ, которые охраняли меня?~
-  IF ~~ THEN REPLY ~Да. Просто идите по кровавому следу и все будет в порядке.~ GOTO 5
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @16
+  IF ~~ THEN REPLY @17 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
-  SAY ~Вы хотите, чтобы я... ждала здесь? В этом месте? Думаю, у меня нет выбора, но, пожалуйста, возвращайтесь скорее! Пожалуйста...~
+  SAY @18
   IF ~~ THEN DO ~SetGlobal("Pause","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.1
-  SAY ~Я даже не знаю... тут очень темно, и я мало что видела. По большей части они просто держали меня здесь и кричали на меня. Время от времени они вытаскивали меня наружу и заставляли что-нибудь сделать для них, чаще всего прислуживать. А когда я заканчивала стирать, шить или еще что-то, они опять приводили меня сюда.~
-  IF ~~ THEN REPLY ~Почему монстры похитили вас?~ GOTO 9
-  IF ~~ THEN REPLY ~Теперь вам нужно выбраться отсюда.~ GOTO 5
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @19
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @20 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.2
-  SAY ~По-моему, им просто была нужна прислуга. Никакой слишком тяжелой или изнурительной работы, правда. Только мне от этого было не легче... Я больна, устала и изголодалась... я совсем не могу спать, и просто хочу вернуться к мужу.~
-  IF ~~ THEN REPLY ~Мне очень жаль, что приходится задавать все новые вопросы, но они о чем-то говорили?~ GOTO 10
-  IF ~~ THEN REPLY ~Что вы можете рассказать об этих пещерах?~ GOTO 8
-  IF ~~ THEN REPLY ~Теперь вам нужно выбраться отсюда.~ GOTO 5
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 10
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @20 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
-  SAY ~Э... если подумать... они что-то говорили о своем "хозяине." Для них это было что-то вроде угрозы, они боялись его. И кажется особо храбрых чудовищ этот хозяин как-то вознаграждал. Ну, по крайней мере, так мне показалось.~
-  IF ~~ THEN REPLY ~Что вы можете рассказать об этих пещерах?~ GOTO 8
-  IF ~~ THEN REPLY ~Теперь вам нужно выбраться отсюда.~ GOTO 5
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @23
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @20 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 // --------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Pause","LOCALS",2)~ THEN BEGIN 11 // from:
-  SAY ~Пожалуйста! Не оставляйте меня здесь, умоляю вас. Меня зовут Лия. Мой муж наверняка очень тревожится обо мне!~ [LEAH054]
-  IF ~~ THEN REPLY ~Лия! Мне нужно задать вам несколько вопросов.~ GOTO 3
-  IF ~  Global("FarmerQuest","GLOBAL",2)~ THEN REPLY ~Мы говорили с вашим мужем, Лия. Он думает, что вы умерли.~ GOTO 4
-  IF ~~ THEN REPLY ~Ну хорошо. Я думаю, для вас вполне безопасно будет убраться отсюда, Лия.~ GOTO 5
-  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY ~Мне и в голову не могло прийти, что тут окажутся пленники. Вы можете выйти сами?~ GOTO 6
-  IF ~~ THEN REPLY ~Мне надо убедиться в том, что там безопасно. Вы можете подождать здесь? Я скоро вернусь.~ GOTO 7
+  SAY @24
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~  Global("FarmerQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
 END
 
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Pause","LOCALS",1)~ THEN BEGIN 12 // from:
-  SAY ~(хнычет) Я так тоскую по моей семье!~ [LEAH050]
-  IF ~~ THEN REPLY ~Лия! Мне нужно задать вам несколько вопросов.~ GOTO 3
-  IF ~~ THEN REPLY ~Ну хорошо. Я думаю, для вас вполне безопасно будет убраться отсюда, Лия.~ GOTO 5
-  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY ~Мне и в голову не могло прийти, что тут окажутся пленники. Вы можете выйти сами?~ GOTO 6
-  IF ~~ THEN REPLY ~Подождите здесь? Я скоро вернусь.~ GOTO 7
+  SAY @25
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @26 GOTO 7
 END
 
 // --------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("LeahSaved","GLOBAL",0)AreaCheck("NW2100")~ THEN BEGIN 13 // from:
-  SAY ~Спасибо вам за все, что вы сделали!~ [LEAH056]
+  SAY @27
   IF ~~ THEN EXIT
 END

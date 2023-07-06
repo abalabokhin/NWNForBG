@@ -8,24 +8,24 @@ BEGIN ~ELDAN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Прекрасная коллекция. Напоминает мне о днях, проведенных с Адароном Эйсизом. Мы охотились на самых больших и страшных... э... А на что же мы охотились? Кабаны! Вот кто это был! Мерзкие создания! Да, вот это было время... А этих зверей, похоже, плохо кормят... Чего на таких охотиться... Не то, что раньше... Раньше они бы не посмели сажать животных в клетки. Звери напуганы... Им страшно. Разве это честь  - сражаться с ними?~
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Да, сэр, все не то, что было раньше. Совсем не то.~
-  IF ~~ THEN REPLY ~Э-эй? Ты меня слышишь?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Мне кажется, времена сейчас совсем другие.~
+  SAY @5
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~(Кашляя) Раньше все было по-другому. Совсем по-другому.~
+  SAY @6
   IF ~~ THEN EXIT
 END
 

@@ -4,214 +4,214 @@ BEGIN ~CUSTOME6~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,1)Global("NWNDocksDone","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Что вам нужно? Говорите быстрее. У меня есть время, но не так много.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Время у меня есть, это точно. Что вы хотите знать?~
-  IF ~~ THEN REPLY ~Вы знаете что-нибудь о чуме?~ GOTO 3
-  IF ~~ THEN REPLY ~Что-нибудь необычное здесь происходит?~ GOTO 4
-  IF ~~ THEN REPLY ~Какие места в районе Порта самые важные?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Ну, тогда ладно. Прощайте.~
+  SAY @7
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Нет, да мне и все равно. Я об этом даже не думаю. Конечно, я пришел сюда... но мы все здесь по непонятным причинам.~
-  IF ~~ THEN REPLY ~Что-нибудь необычное здесь происходит?~ GOTO 4
-  IF ~~ THEN REPLY ~Какие места в районе Порта самые важные?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @8
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~О, вы только посмотрите. "Кровавые моряки" так круто выглядят, а аукцион задерживается. Во имя бездны, что-то не вижу здесь шишек из "Кровавых моряков".~
-  IF ~~ THEN REPLY ~Я хочу узнать о "Кровавых моряках".~ GOTO 6
-  IF ~~ THEN REPLY ~Я хочу спросить об аукционе.~ GOTO 7
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Сейчас мест немного. Из-за мора многие из них закрылись. Полагаю, спросить вы можете, но я мало чем смогу вам помочь. Есть еще "Золотое яблоко" и "Двадцатка-в-колчане". По-моему, просто пара обычных мест. Я предпочитаю посидеть здесь, в таверне Сиди.~
-  IF ~~ THEN REPLY ~Расскажите мне о таверне Сиди.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажите мне о "Золотом яблоке".~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите мне про "Двадцатку-в-колчане".~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужны основные услуги. Нормальные, простые вещи.~ GOTO 12
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 11
+  IF ~~ THEN REPLY @17 GOTO 12
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
-  SAY ~Их дела меня не касаются, особенно их внутренние разборки... Мне больше ничего говорить не стоит. Я плохо плаваю, особенно в мешке, набитом камнями.~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY ~Если сказать мне, не будет никакого вреда.~ GOTO 13
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY ~Если сказать мне, не будет никакого вреда.~ GOTO 14
-  IF ~  Race(LastTalkedToBy(Myself),DWARF)~ THEN REPLY ~Вы дварф, как и я. Может, не станете упираться?~ GOTO 15
-  IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY ~Ну же, солнышко. Вы ведь мне скажете, правда?~ GOTO 16
-  IF ~~ THEN REPLY ~Я хочу спросить об аукционе.~ GOTO 7
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @18
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @19 GOTO 13
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @19 GOTO 14
+  IF ~  Race(LastTalkedToBy(Myself),DWARF)~ THEN REPLY @20 GOTO 15
+  IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @21 GOTO 16
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.2
-  SAY ~Кажется, никто не знает, что здесь происходит. Сам Венгаул Кровавый Парус организовал все это, но он опаздывает. Все могут отменить. Говорят, на продажу выставляется лекарство от чумы. Слухи множатся, и мне кажется, кое-кто опасался, что об этом узнают стражники. Не знаю, как это получилось. Кажется, Венгаул хотел, чтобы они узнали. Он любит порисоваться. Постоянно идет на риск. Некоторым из его людей это не нравится.~
-  IF ~~ THEN REPLY ~Я хочу узнать о "Кровавых моряках".~ GOTO 6
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @22
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
-  SAY ~Э, ну только если побыстрее.~
-  IF ~~ THEN REPLY ~Вы знаете что-нибудь о чуме?~ GOTO 3
-  IF ~~ THEN REPLY ~Что-нибудь необычное здесь происходит?~ GOTO 4
-  IF ~~ THEN REPLY ~Какие места в районе Порта самые важные?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @23
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.1
-  SAY ~Это место? Именно здесь все и случается. Именно здесь обычно продают товары с черного рынка, но сейчас здесь происходит что-то странное.~
-  IF ~~ THEN REPLY ~Что вы имеете в виду, говоря 'странное'?~ GOTO 17
-  IF ~~ THEN REPLY ~Расскажите мне о "Золотом яблоке".~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите мне про "Двадцатку-в-колчане".~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужны основные услуги. Нормальные, простые вещи.~ GOTO 12
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @24
+  IF ~~ THEN REPLY @25 GOTO 17
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 11
+  IF ~~ THEN REPLY @17 GOTO 12
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 10 // from: 5.2
-  SAY ~"Золотое яблоко"? Отличная небольшая таверна. Но в ней мало что происходит. таверна Сиди - вот куда надо идти, чтобы увидеть бурление жизни. "Золотое яблоко" находится в южной части района, если вас это интересует.~
-  IF ~~ THEN REPLY ~Расскажите мне о таверне Сиди.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажите мне про "Двадцатку-в-колчане".~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужны основные услуги. Нормальные, простые вещи.~ GOTO 12
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @26
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 11
+  IF ~~ THEN REPLY @17 GOTO 12
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 11 // from: 5.3
-  SAY ~"Э, это единственное место, что сейчас работает. Здесь много того-сего, и вообще, большая часть товаров с черного рынка попадает сюда. Это к востоку от таверны Сиди. В северо-восточной части района, по-моему.~
-  IF ~~ THEN REPLY ~Расскажите мне о таверне Сиди.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажите мне о "Золотом яблоке".~ GOTO 10
-  IF ~~ THEN REPLY ~Мне нужны основные услуги. Нормальные, простые вещи.~ GOTO 12
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @27
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 12
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 12 // from: 5.4
-  SAY ~"Э, вам придется делать покупки либо здесь, либо в "Двадцатке-в-колчане". Большинство других мест закрыто из-за мора. Вы должны отправиться в Сердце Города, если вам нужны храмы и башни магов.~
-  IF ~~ THEN REPLY ~Расскажите мне о таверне Сиди.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажите мне о "Золотом яблоке".~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите мне про "Двадцатку-в-колчане".~ GOTO 11
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @28
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 13 // from: 6.1
-  SAY ~Полагаю, вы правы. Возможно, они слишком заняты, чтобы волноваться о том, что я здесь рассказываю. "Кровавые моряки" не всегда были такими резкими, но теперь все изменилось. Каллик больше не позволяет Венгаулу делать все так, как тот захочет.~
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле.~ GOTO 18
-  IF ~~ THEN REPLY ~Расскажите мне о Каллике.~ GOTO 19
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @29
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 14 // from: 6.2
-  SAY ~Простите, но я не хочу в это вмешиваться. Каллик хочет бросить вызов Венгаулу, это его дело, не мое и не ваше.~
-  IF ~  Race(LastTalkedToBy(Myself),DWARF)~ THEN REPLY ~Вы дварф, как и я. Может, не станете упираться?~ GOTO 15
-  IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY ~Ну же, солнышко. Вы ведь мне скажете, правда?~ GOTO 16
-  IF ~~ THEN REPLY ~Я хочу спросить об аукционе.~ GOTO 7
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @32
+  IF ~  Race(LastTalkedToBy(Myself),DWARF)~ THEN REPLY @20 GOTO 15
+  IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @21 GOTO 16
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 15 // from: 6.3
-  SAY ~Полагаю, я могу кое-что вам рассказать. Потом ненадолго лягу на дно, если что, чтобы у меня не было неприятностей. "Кровавые моряки" не всегда были такими резкими, но теперь все изменилось. Каллик больше не позволяет Венгаулу делать все так, как тот захочет.~
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле.~ GOTO 18
-  IF ~~ THEN REPLY ~Расскажите мне о Каллике.~ GOTO 19
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @33
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 16 // from: 6.4
-  SAY ~Что ж, думаю, ничего плохого нет в том, что поговорю с вами. Я могу просто лечь на дно, если возникнут проблемы. "Кровавые моряки" не всегда были такими резкими, но теперь все изменилось. Каллик больше не позволяет Венгаулу делать все так, как тот захочет.~
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле.~ GOTO 18
-  IF ~~ THEN REPLY ~Расскажите мне о Каллике.~ GOTO 19
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @34
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 17 // from: 9.1
-  SAY ~О, вы только посмотрите. "Кровавые моряки" так круто выглядят, а аукцион задерживается. Во имя бездны, что-то не вижу здесь шишек из "Кровавых моряков".~
-  IF ~~ THEN REPLY ~Я хочу узнать о "Кровавых моряках".~ GOTO 6
-  IF ~~ THEN REPLY ~Я хочу спросить об аукционе.~ GOTO 7
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 18 // from: 13.1
-  SAY ~А, всеми любимый лидер и основатель "Кровавых моряков". Ну, сейчас уже не всеми любимый. Как говорят. Видите ли, он любит привлекать к себе лишнее внимание. Все его планы обычно подразумевают общественное внимание. Его больше заботит имидж, чем прибыль. Некоторым из его людей это очень не нравится. Говорят, у него проблемы с его офицерами. Они хотят быть покруче, но привлекать поменьше внимания.~
-  IF ~~ THEN REPLY ~Так вот почему его здесь сегодня нет?~ GOTO 20
-  IF ~~ THEN REPLY ~Расскажите мне о Каллике.~ GOTO 19
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @35
+  IF ~~ THEN REPLY @36 GOTO 20
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 19 // from: 13.2
-  SAY ~Каллик... ну, Каллик - не очень милый человек. Его больше волнует золото, чем проявление храбрости или стиля. У него хорошо получается забирать деньги у своих жертв, но на него очень тяжело работать. Если бы не Венгаул, он был бы еще хуже. Некоторые «Кровавые моряки» предпочитают работать на него, и, кажется, все идет к тому, что он бросит вызов Венгаулу.~
-  IF ~~ THEN REPLY ~А у него поддержки достаточно для этого?~ GOTO 21
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле.~ GOTO 18
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @37
+  IF ~~ THEN REPLY @38 GOTO 21
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.1
-  SAY ~О, тот Венгаул, которого я знаю, любит честные бои. Он никогда не бежит от опасности. Кажется, в том, что он здесь планировал, что-то пошло не так. Я говорю вам, что это не мое дело. Но мы видели, как несколько парней Каллика спускаются вниз, а теперь подвал заперт. Что-то происходит... Но я не знаю что.~
-  IF ~~ THEN REPLY ~Расскажите мне о Каллике.~ GOTO 19
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @39
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 21 // from: 19.1
-  SAY ~Каллик обладает немалой властью. Многие "Кровавые моряки" предпочли бы зарабатывать больше, а не играть в бесплатном спектакле. На самом деле, Каллик захватил черный рынок. Он один из нескольких парней, что спускались вниз с ключом. Мне казалось, он здесь будет. Это не в его стиле - сидеть дома, если где-то что-то происходит. Он действительно хочет наступить на мозоль Венгаулу.~
-  IF ~~ THEN REPLY ~Где его дом?~ GOTO 22
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле.~ GOTO 18
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @40
+  IF ~~ THEN REPLY @41 GOTO 22
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 22 // from: 21.1
-  SAY ~Хмм? Кажется, это чуть восточнее от центра района. Но не советую вам туда соваться. Если, конечно, вам не нужны неприятности.~
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле.~ GOTO 18
-  IF ~~ THEN REPLY ~Лучше я спрошу у вас еще что-нибудь.~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @42
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 // ----------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,2)Global("NWNDocksDone","GLOBAL",0)~ THEN BEGIN 23 // from:
-  SAY ~Добрая встреча, друг мой. Прекрасный вечер в трактире, а? Много клиентов.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @43
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 // ----------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,3)Global("NWNDocksDone","GLOBAL",0)~ THEN BEGIN 24 // from:
-  SAY ~Ну и почему вы меня беспокоите? Вы мне совершенно не интересны.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @44
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 // ----------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NWNDocksDone","GLOBAL",0)~ THEN BEGIN 25 // from:
-  SAY ~А, тут нечего разговаривать. Аукцион закончился, бои закончились. Теперь ничего больше не происходит, так что можешь оставить меня в покое.~
+  SAY @45
   IF ~~ THEN EXIT
 END
 

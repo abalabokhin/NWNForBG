@@ -8,7 +8,7 @@ BEGIN ~HUBERT~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~’отелось бы, чтобы эти клетки открыли! “огда бы мы могли пустить животных на м€со и все такое! ћожет, даже оставить себе их головы!~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

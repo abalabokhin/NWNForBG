@@ -4,361 +4,359 @@ BEGIN ~ANDER~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalLT("NeurikQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
-  SAY ~Здравствуйте, сэр. Вам что-нибудь нужно? Хотите что-то спросить у меня?~ [ENDER052] ~Здравствуйте, леди. Вам что-нибудь нужно? Хотите что-то спросить у меня?~ [ENDER052]
-  IF ~  NumTimesTalkedTo(0)~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~  !NumTimesTalkedTo(0)~ THEN REPLY ~Кто ты?~ GOTO 2
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",1)~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 26
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",0)~ THEN REPLY ~У нас был разговор с Ньюриком. Он сказал, что мне нужно с вами увидеться.~ GOTO 5
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~До свидания.~ GOTO 6
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @0
+  IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 1
+  IF ~  !NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",1)~ THEN REPLY @2 GOTO 26
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",0)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 26 // from: 0.4
-  SAY ~Да, пожалуйста. Это, наверное, опять вопросы о Черном Волке, я думаю. И что вы хотите услышать?~
-  IF ~~ THEN REPLY ~Расскажи еще раз про свою встречу с этим зверем.~ GOTO 12
-  IF ~~ THEN REPLY ~Где находится пещера Черного Волка?~ GOTO 20
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне об Элхелоре?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 12
+  IF ~~ THEN REPLY @7 GOTO 20
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 0.6
-  SAY ~Надеюсь, вы хорошо проведете время в Порт-Лласте. До свидания.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 0.7
-  SAY ~Да благословят вас боги, сэр!~ ~Да благословят вас боги, леди!~
+  SAY @11
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Мое имя Эндер, сэр. Я помогаю здесь Элхелору, когда он в этом нуждается.~ ~Мое имя Эндер, леди. Я помогаю здесь Элхелору, когда он в этом нуждается.~
+  SAY @12
   IF ~  InMyArea("Alhelor1")!StateCheck("Alhelor1",CD_STATE_NOTVALID)~ THEN EXTERN ~ALHELOR~ WER01
   IF ~  OR(2)!InMyArea("Alhelor1")StateCheck("Alhelor1",CD_STATE_NOTVALID)~ THEN GOTO 25
 END
 
 IF ~~ THEN BEGIN 25 // from: 1.2
-  SAY ~Он продает товары для охотников на оборотней. С тех пор как я повстречался с верфольфом, я решил посвятить свою жизнь борьбе с этими жуткими созданиями. Но я не могу сражаться с ними, вот и помогаю Элхелору, хоть какая-то от этого польза.~
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Что еще за вервольф?~ GOTO 8
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Что еще за вервольф?~ GOTO 9
+  SAY @13
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @14 GOTO 8
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Вы не помните меня? О, наверное, нет... мое имя Эндер, и я помогаю Элхелору продавать его снадобья от волколаков.~
-  IF ~  ~ THEN REPLY ~Средства против оборотней?~ GOTO 4
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~У нас был разговор с Ньюриком. Он сказал, что мне нужно с вами увидеться.~ GOTO 5
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~До свидания.~ GOTO 6
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @15
+  IF ~  ~ THEN REPLY @16 GOTO 4
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.2
-  SAY ~Я... я знаю, что Элхелору это нравится, но мне не стоит об этом говорить, мне очень жаль. Но можете спросить Ньюрика об этом чудовище, если хотите.~
-  IF ~~ THEN REPLY ~Почему ты не можешь об этом говорить?~ GOTO 10
-  IF ~~ THEN REPLY ~Кто такой этот Ньюрик?~ GOTO 11
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @19 GOTO 11
+  IF ~~ THEN REPLY @4 GOTO 6
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.3
-  SAY ~Я... я полагаю, ничего страшного, если мы поговорим об этом, раз Ньюрик сам разрешил. Он сказал, что я должен попытаться забыть... перестать об этом думать все время. Я не знаю. Я пытаюсь. Иногда чувствую себя вроде нормально, а потом... Все, что я мог видеть - эти глаза, глядящие из пещеры, и я как будто знал, что что-то не так - полная паника. Как бы там ни было...~
+  SAY @20
   IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.1
-  SAY ~Каратис был охотник на оборотней, и он пришел охотиться на Черного Волка! Того, кого мы называли вервольфом из Порт-Лласта. Каратису нужна была некоторая помощь, так что вызвались я и несколько моих друзей: Бран, Гет и Урт. Мы-то вообще не думали, что волк этот настоящий, а Каратис платил неплохо. Вместе мы... вышли на охоту за Черным Волком. Мы отыскали волчьи следы и шли по ним до пещеры. Пока мы разбивали лагерь, Каратис пошел туда. Она прямо рядом с Лусканом, эта пещера... в горах к востоку от 'Зеленого Грифона'. ~
+  SAY @21
   IF ~~ THEN DO ~SetGlobal("TalkAboutWerewolw","LOCALS",1)EraseJournalEntry(%Порт-Лласт: Охотник за оборотнями
 
-Жрец Тира Ньюрик, возглавляющий храм в Порт-Лласте, говорит об ужасной трагедии, которая постигла нескольких юношей в городе. Сэр Каратис Железное Сердце, странствующий охотник на оборотней, нанял четырех парней, чтобы те помогли ему поймать злобного ликантропа, известного как Черный Волк. Однако это была ловушка, так как сэр Каратис сам был Черным Волком. Его когти пронзили плоть Брана, Урта и Гета, превратив их в оборотней. И только самому младшему, Эндеру, удалось сбежать. Ньюрик считает, что если этих троих юношей найти достаточно быстро, их можно будет излечить c помощью амулетов. Сейчас Эндер все свое время проводит в таверне "Герб Союза". Ньюрик рекомендует поговорить с этим парнем, чтобы узнать, где сейчас могут прятаться его друзья.%)~ UNSOLVED_JOURNAL ~Порт-Лласт: Охотник за оборотнями
-
-Ньюрик, жрец Тира из храма в Порт-Лласте, рассказывает об ужасной трагедии, происшедшей с несколькими молодыми жителями города. Сэр Каратис Железное сердце, странствующий  охотник за вервольфами, попросил четверых мальчиков помочь ему выследить ужасного ликантропа, известного под именем Черный Волк. Но это была ловушка, и сэр Каратис сам оказался Черным Волком. Его когти разорвали плоть Брана, Урта и Гета, заразив их ужасной болезнью, и лишь младшему мальчику, Эндеру, удалось бежать. Ньюрик считает, что трех юношей еще можно излечить от ужасного недуга при помощи изготовленных им талисманов.~ GOTO 13
+Жрец Тира Ньюрик, возглавляющий храм в Порт-Лласте, говорит об ужасной трагедии, которая постигла нескольких юношей в городе. Сэр Каратис Железное Сердце, странствующий охотник на оборотней, нанял четырех парней, чтобы те помогли ему поймать злобного ликантропа, известного как Черный Волк. Однако это была ловушка, так как сэр Каратис сам был Черным Волком. Его когти пронзили плоть Брана, Урта и Гета, превратив их в оборотней. И только самому младшему, Эндеру, удалось сбежать. Ньюрик считает, что если этих троих юношей найти достаточно быстро, их можно будет излечить c помощью амулетов. Сейчас Эндер все свое время проводит в таверне "Герб Союза". Ньюрик рекомендует поговорить с этим парнем, чтобы узнать, где сейчас могут прятаться его друзья.%)~ UNSOLVED_JOURNAL @22 GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
-  SAY ~Каратис вышел вскоре после того, как мы разбили лагерь, но вышел уже оборотнем. Я так испугался! Все еще вижу его морду перед собой, так ясно... Я побежал, не мог удержаться. Мы все побежали. Я единственный, кому удалось... скрыться. Остальные, наверное, сейчас тоже стали зверьми. Или погибли.~
-  IF ~~ THEN REPLY ~Почему Каратис вошел в пещеру один?~ GOTO 14
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне об Элхелоре?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @23
+  IF ~~ THEN REPLY @24 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Это... это касательно моей встречи с Черным Волком? На самом деле мне не стоит говорить об этом, сэр, мне очень жаль. Можете спросить Ньюрика об этом чудовище. Э... или может, вы здесь не за этим?~ ~Это... это касательно моей встречи с Черным Волком? На самом деле мне не стоит говорить об этом, леди, мне очень жаль. Можете спросить Ньюрика об этом чудовище. Э... или может, вы здесь не за этим?~
-  IF ~~ THEN REPLY ~Почему ты не можешь об этом говорить?~ GOTO 10
-  IF ~~ THEN REPLY ~Кто такой этот Ньюрик?~ GOTO 11
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @25
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @19 GOTO 11
+  IF ~~ THEN REPLY @4 GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
-  SAY ~Я знаю, это глупо звучит. Я... я сам повстречал вервольфа, и если товары Элхелора помогают бороться с ними, тогда я горд помогать ему.~
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Расскажи мне про встречу с вервольфом.~ GOTO 9
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Расскажи мне про встречу с вервольфом.~ GOTO 8
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~У нас был разговор с Ньюриком. Он сказал, что мне нужно с вами увидеться.~ GOTO 5
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY ~До свидания.~ GOTO 6
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @26
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 9
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 8
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
-  SAY ~О. Он разрешил мне рассказать вам о Черном Волке, я думаю? И вы, значит, хотите о нем услышать?~
-  IF ~~ THEN REPLY ~Да, расскажи мне.~ GOTO 9
-  IF ~~ THEN REPLY ~Нет, спасибо.~ GOTO 6
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 9
+  IF ~~ THEN REPLY @30 GOTO 6
 END
 
 IF ~~ THEN BEGIN 10 // from: 8.1
-  SAY ~Ну... не то, чтобы я не могу об этом говорить. Ньюрик говорит, что не стоит этого делать, если я хочу... поскорее перестать думать об этом. Но если он разрешит мне, наверное, я смогу вам все рассказать...~
-  IF ~~ THEN REPLY ~Кто такой этот Ньюрик?~ GOTO 11
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @31
+  IF ~~ THEN REPLY @19 GOTO 11
+  IF ~~ THEN REPLY @4 GOTO 6
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.2
-  SAY ~Он жрец в храме Тира. Ему многое известно о Черном волке. Ну... на самом деле ему обо всем многое известно.~
-  IF ~~ THEN REPLY ~Почему ты не можешь об этом говорить?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @32
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @4 GOTO 6
 END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
-  SAY ~Он слишком волновался за нас, и он полагал это своим долгом. Не думаю, что я смог бы войти туда один или даже вместе с ним. Я вообще не думаю, что когда-нибудь смогу вернуться к этой пещере.~
-  IF ~~ THEN REPLY ~Тогда зачем Каратису понадобилась ваша помощь?~ GOTO 18
-  IF ~~ THEN REPLY ~Вы уверены, что зверем был Каратис?~ GOTO 19
-  IF ~~ THEN REPLY ~Где находится пещера Черного Волка?~ GOTO 20
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне об Элхелоре?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @33
+  IF ~~ THEN REPLY @34 GOTO 18
+  IF ~~ THEN REPLY @35 GOTO 19
+  IF ~~ THEN REPLY @7 GOTO 20
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 16 // from: 14.5
-  SAY ~Я могу припомнить только, что он сказал в тот самый момент, когда я вернулся из пещеры. Не то чтобы плохие слова, просто какие-то неуместные.~
-  IF ~~ THEN REPLY ~И что он сказал?~ GOTO 46
+  SAY @36
+  IF ~~ THEN REPLY @37 GOTO 46
 END
 
 IF ~~ THEN BEGIN 46 // from: 16.1
-  SAY ~Он сказал, что будет беречь меня от оборотней, пока я помогаю ему продавать эти его товары. Вряд ли это что-то значит, наверное.~
-  IF ~~ THEN REPLY ~Тогда зачем Каратису понадобилась ваша помощь?~ GOTO 18
-  IF ~~ THEN REPLY ~Вы уверены, что зверем был Каратис?~ GOTO 19
-  IF ~~ THEN REPLY ~Где находится пещера Черного Волка?~ GOTO 20
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @38
+  IF ~~ THEN REPLY @34 GOTO 18
+  IF ~~ THEN REPLY @35 GOTO 19
+  IF ~~ THEN REPLY @7 GOTO 20
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 18 // from: 14.1
-  SAY ~Он опасался, что Черный Волк попытается сбежать. Он хотел, чтобы мы не дали ему улизнуть... и мы не знали, что делать, когда он зашел туда, а вышел уже зверем... Извините, если... вам ведь больше ничего не нужно?~
-  IF ~~ THEN REPLY ~Вы уверены, что зверем был Каратис?~ GOTO 19
-  IF ~~ THEN REPLY ~Где находится пещера Черного Волка?~ GOTO 20
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне об Элхелоре?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @39
+  IF ~~ THEN REPLY @35 GOTO 19
+  IF ~~ THEN REPLY @7 GOTO 20
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 19 // from: 14.2
-  SAY ~Я - я думаю, да. Он был одет, как Каратис, и даже внешне был с ним схож. Он выглядел так, будто испытывал боль, и еще смятение... Не знаю, смогу ли я когда-нибудь забыть это видение, пока я жив...~
-  IF ~~ THEN REPLY ~Где находится пещера Черного Волка?~ GOTO 20
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне об Элхелоре?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @40
+  IF ~~ THEN REPLY @7 GOTO 20
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 20 // from: 14.3
-  SAY ~Это была пещера почти у самого Лускана, в горах к востоку от 'Зеленого Грифона'.~
-  IF ~~ THEN REPLY ~Почему Каратис вошел в пещеру один?~ GOTO 14
-  IF ~~ THEN REPLY ~Вы не знаете, где могут быть остальные?~ GOTO 15
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне об Элхелоре?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @41
+  IF ~~ THEN REPLY @24 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 15
+  IF ~~ THEN REPLY @9 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 15 // from: 14.4
-  SAY ~Вы имеете в виду Урта, Брана и Гета? Я знаю места, где они любили бывать раньше - я там еще не искал... Я хотел, но я, я... не могу.~
-  IF ~~ THEN REPLY ~Вы знаете, где может быть Урт?~ GOTO 21
-  IF ~~ THEN REPLY ~Как насчет Брана? Куда он мог пойти?~ GOTO 22
-  IF ~~ THEN REPLY ~Может, вы скажете мне, где искать Гета?~ GOTO 23
-  IF ~~ THEN REPLY ~Что насчет сэра Каратиса? Где бы он мог быть?~ GOTO 24
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @42
+  IF ~~ THEN REPLY @43 GOTO 21
+  IF ~~ THEN REPLY @44 GOTO 22
+  IF ~~ THEN REPLY @45 GOTO 23
+  IF ~~ THEN REPLY @46 GOTO 24
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 21 // from: 15.1
-  SAY ~Его семья может и знать. Я сам бы хотел их спросить, но... мне слишком стыдно разговаривать с ними. Я не знаю, что случилось с Уртом, и я думаю, скорее всего, они ненавидят меня. Если вы захотите расспросить их про Урта, они живут в западной части города, у городской стены. Только... не говорите им ничего про меня.~
-  IF ~~ THEN REPLY ~Как насчет Брана? Куда он мог пойти?~ GOTO 22
-  IF ~~ THEN REPLY ~Может, вы скажете мне, где искать Гета?~ GOTO 23
-  IF ~~ THEN REPLY ~Что насчет сэра Каратиса? Где бы он мог быть?~ GOTO 24
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @47
+  IF ~~ THEN REPLY @44 GOTO 22
+  IF ~~ THEN REPLY @45 GOTO 23
+  IF ~~ THEN REPLY @46 GOTO 24
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 22 // from: 15.2
-  SAY ~Брану всегда нравилась таинственность Чарвуда. Не удивлюсь, если он сейчас там. Если найдете его, передавайте от меня привет... скажите, что я все еще думаю о нем.~
-  IF ~~ THEN REPLY ~Вы знаете, где может быть Урт?~ GOTO 21
-  IF ~~ THEN REPLY ~Может, вы скажете мне, где искать Гета?~ GOTO 23
-  IF ~~ THEN REPLY ~Что насчет сэра Каратиса? Где бы он мог быть?~ GOTO 24
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @48
+  IF ~~ THEN REPLY @43 GOTO 21
+  IF ~~ THEN REPLY @45 GOTO 23
+  IF ~~ THEN REPLY @46 GOTO 24
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 23 // from: 15.3
-  SAY ~Гет как раз и втравил меня во все это... и он вечно тащил меня с собой в лес Невервинтер, чтобы поиграть в героев. Может, он туда пошел.~
-  IF ~~ THEN REPLY ~Вы знаете, где может быть Урт?~ GOTO 21
-  IF ~~ THEN REPLY ~Как насчет Брана? Куда он мог пойти?~ GOTO 22
-  IF ~~ THEN REPLY ~Что насчет сэра Каратиса? Где бы он мог быть?~ GOTO 24
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @49
+  IF ~~ THEN REPLY @43 GOTO 21
+  IF ~~ THEN REPLY @44 GOTO 22
+  IF ~~ THEN REPLY @46 GOTO 24
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 24 // from: 15.4
-  SAY ~Может, вам стоит посмотреть в логове оборотня? На самом деле я не знаю. Он вообще-то не из этих мест, так что мог отправиться куда угодно.~
-  IF ~~ THEN REPLY ~Вы знаете, где может быть Урт?~ GOTO 21
-  IF ~~ THEN REPLY ~Как насчет Брана? Куда он мог пойти?~ GOTO 22
-  IF ~~ THEN REPLY ~Может, вы скажете мне, где искать Гета?~ GOTO 23
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @50
+  IF ~~ THEN REPLY @43 GOTO 21
+  IF ~~ THEN REPLY @44 GOTO 22
+  IF ~~ THEN REPLY @45 GOTO 23
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NeurikQuest","GLOBAL",3)GlobalLT("NeurikQuest","GLOBAL",7)~ THEN BEGIN 27 // from:
-  SAY ~Необходимо убить этого Черного Волка, <SIRMAAM> ! Пожалуйста, пока он не причинил вреда еще кому-нибудь!~
-  IF ~  GlobalLT("NeurikQuest","GLOBAL",6)~ THEN REPLY ~Напомни, где находится пещера Черного Волка?~ GOTO 48
-  IF ~  !InMyArea("Alhelor1")~ THEN REPLY ~А где сейчас Элхелор?~ GOTO 49
-  IF ~  !InMyArea("Alhelor1")~ THEN REPLY ~А не мог бы ты продать мне кое-что из лавки Элхелора?~ GOTO 47
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @51
+  IF ~  GlobalLT("NeurikQuest","GLOBAL",6)~ THEN REPLY @52 GOTO 48
+  IF ~  !InMyArea("Alhelor1")~ THEN REPLY @53 GOTO 49
+  IF ~  !InMyArea("Alhelor1")~ THEN REPLY @54 GOTO 47
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NeurikQuest","GLOBAL",6)GlobalLT("NeurikQuest","GLOBAL",10)!Dead("Alhelor")!Dead("Alhelor1")Global("TalkAboutAlhelor","LOCALS",0)~ THEN BEGIN 28 // from:
-  SAY ~Если вы ищете Элхелора, то он ушел домой немного передохнуть. Может быть, я могу ответить на ваши вопросы?~ [ENDER051]
-  IF ~  NumTimesTalkedTo(0)~ THEN REPLY ~Кто ты?~ GOTO 29
-  IF ~~ THEN REPLY ~Кто такой Элхелор?~ GOTO 31
-  IF ~~ THEN REPLY ~Эндер... на самом деле Элхелор это Черный Волк.~ GOTO 32
-  IF ~~ THEN REPLY ~Скажи мне, где живет этот Элхелор.~ GOTO 33
-  IF ~~ THEN REPLY ~Как жаль, а я хотел купить у него снаряжение.~ GOTO 47
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @55
+  IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 29
+  IF ~~ THEN REPLY @56 GOTO 31
+  IF ~~ THEN REPLY @57 GOTO 32
+  IF ~~ THEN REPLY @58 GOTO 33
+  IF ~~ THEN REPLY @59 GOTO 47
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 29 // from: 28.1
-  SAY ~Мое имя Эндер, <SIRMAAM>. Я помогаю здесь Элхелору, когда он в этом нуждается.~
-  IF ~~ THEN REPLY ~Кто такой Элхелор?~ GOTO 31
-  IF ~~ THEN REPLY ~Эндер... на самом деле Элхелор это Черный Волк.~ GOTO 32
-  IF ~~ THEN REPLY ~Скажи мне, где живет этот Элхелор.~ GOTO 33
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @60
+  IF ~~ THEN REPLY @56 GOTO 31
+  IF ~~ THEN REPLY @57 GOTO 32
+  IF ~~ THEN REPLY @58 GOTO 33
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 30 // from: 28.2
-  SAY ~Вы не помните меня? О, наверное, нет... мое имя Эндер, и я помогаю Элхелору продавать его снадобья от волколаков.~
-  IF ~~ THEN REPLY ~Кто такой Элхелор?~ GOTO 31
-  IF ~~ THEN REPLY ~Эндер... на самом деле Элхелор это Черный Волк.~ GOTO 32
-  IF ~~ THEN REPLY ~Скажи мне, где живет этот Элхелор.~ GOTO 33
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @15
+  IF ~~ THEN REPLY @56 GOTO 31
+  IF ~~ THEN REPLY @57 GOTO 32
+  IF ~~ THEN REPLY @58 GOTO 33
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 31 // from: 28.3
-  SAY ~О, простите. Он торговец, вроде коробейника... обычно он здесь, но сейчас сказал, что устал, и отправился домой пораньше. Живет на северо-востоке города. Довольно маленький домик у городской стены. Скромный такой, знаете? Может, заглянете завтра? У нас тут лучшее собрание средств от оборотней в округе. Ну, если честно, кроме нас, тут такого никто и не продает... но мы все равно лучшие!~
-  IF ~  NumTimesTalkedTo(0)~ THEN REPLY ~Кто ты?~ GOTO 29
-  IF ~~ THEN REPLY ~Эндер... на самом деле Элхелор это Черный Волк.~ GOTO 32
-  IF ~~ THEN REPLY ~Скажи мне, где живет этот Элхелор.~ GOTO 33
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @61
+  IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 29
+  IF ~~ THEN REPLY @57 GOTO 32
+  IF ~~ THEN REPLY @58 GOTO 33
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 33 // from: 28.5
-  SAY ~Он живет на северо-востоке города.. У него небольшой домик, скромный такой, знаете ли. Элхелора обычно можно найти здесь, но он сказал, что устал.~
-  IF ~  NumTimesTalkedTo(0)~ THEN REPLY ~Кто ты?~ GOTO 29
-  IF ~~ THEN REPLY ~Кто такой Элхелор?~ GOTO 31
-  IF ~~ THEN REPLY ~Эндер... на самом деле Элхелор это Черный Волк.~ GOTO 32
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @62
+  IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 29
+  IF ~~ THEN REPLY @56 GOTO 31
+  IF ~~ THEN REPLY @57 GOTO 32
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 32 // from: 28.4
-  SAY ~Ч-что? Это не может быть правдой. Это такая шутка, сэр?~ ~Ч-что? Это не может быть правдой. Это такая шутка, леди?~
-  IF ~~ THEN REPLY ~Я не шучу, Эндер. Мне просто хотелось предупредить тебя.~ GOTO 34
-  IF ~~ THEN REPLY ~Я понимаю, что это звучит странно, но я докопаюсь до сути.~ GOTO 34
-  IF ~~ THEN REPLY ~Просто скажи мне, не приходилось ли тебе видеть его после того, как он ушел.~ GOTO 34
+  SAY @63
+  IF ~~ THEN REPLY @64 GOTO 34
+  IF ~~ THEN REPLY @65 GOTO 34
+  IF ~~ THEN REPLY @66 GOTO 34
 END
 
 IF ~~ THEN BEGIN 34 // from: 32
-  SAY ~Я... это так... Однако, я не сомневаюсь в ваших словах. Элхелор всегда казался мне несколько странным. Но мне никогда и в голову не приходило... каким же дураком я был! Спасибо, что рассказали, сэр. Теперь я точно буду его остерегаться. Я не видел Элхелора с тех пор, как он отправился к себе домой. Если вы поторопитесь, вы сможете застать его там и убить раз и навсегда!~ ~Я... это так... Однако, я не сомневаюсь в ваших словах. Элхелор всегда казался мне несколько странным. Но мне никогда и в голову не приходило... каким же дураком я был! Спасибо, что рассказали, леди. Теперь я точно буду его остерегаться. Я не видел Элхелора с тех пор, как он отправился к себе домой. Если вы поторопитесь, вы сможете застать его там и убить раз и навсегда!~
+  SAY @67
   IF ~~ THEN DO ~SetGlobal("TalkAboutAlhelor","LOCALS",1)~ EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NeurikQuest","GLOBAL",6)GlobalLT("NeurikQuest","GLOBAL",10)!Dead("Alhelor")!Dead("Alhelor1")Global("TalkAboutAlhelor","LOCALS",1)~ THEN BEGIN 35 // from:
-  SAY ~Элхелор ушел домой, это маленький домик на северо-востоке города.. Пожалуйста, покончите с этим зверем, я боюсь.~
-  IF ~~ THEN REPLY ~А не мог бы ты продать мне кое-что из его товаров?~ GOTO 47
-  IF ~~ THEN REPLY ~Я сделаю это, прощай. ~ EXIT
+  SAY @68
+  IF ~~ THEN REPLY @69 GOTO 47
+  IF ~~ THEN REPLY @70 EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NeurikQuest","GLOBAL",6)Dead("Alhelor")~ THEN BEGIN 36 // from:
-  SAY ~Наконец-то все закончилось. Элхелор мертв, но я знаю, что все равно буду с трудом засыпать по ночам. Вы что-нибудь от меня хотели?~ [ENDER050]
-  IF ~~ THEN REPLY ~Проблемы со сном? По-моему, это что-то новенькое.~ GOTO 37
-  IF ~~ THEN REPLY ~И что ты теперь планируешь делать?~ GOTO 38
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @71
+  IF ~~ THEN REPLY @72 GOTO 37
+  IF ~~ THEN REPLY @73 GOTO 38
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 37 // from: 36.1
-  SAY ~О, простите. Я подумал... ладно, неважно. Это долгая история, и она уже в прошлом. Не стоит и говорить, что мы тут больше можем не беспокоиться о вервольфах, раз Элхелор погиб.~
-  IF ~~ THEN REPLY ~И что ты теперь планируешь делать?~ GOTO 38
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @74
+  IF ~~ THEN REPLY @73 GOTO 38
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 38 // from: 36.2
-  SAY ~Я даже не знаю. Я в замешательстве. И я очень зол. Не могу поверить, что Элхелор нас всех так обманул! Я-то думал, что он и вправду помогает нам бороться с оборотнями. Какой же я глупец. И что же мне теперь делать... все мои друзья мертвы, и уж теперь-то я точно не могу помогать Элхелору в лавке. (вздыхает)~
-  IF ~~ THEN REPLY ~Так может тебе открыть свою собственную лавку?~ GOTO 39
-  IF ~~ THEN REPLY ~Я думаю, тебе надо уехать.~ GOTO 40
-  IF ~~ THEN REPLY ~Ты, должно быть, скопил денег, пока помогал Элхелору?~ GOTO 41
-  IF ~~ THEN REPLY ~Да, ты совершенно бесполезен.~ GOTO 42
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @75
+  IF ~~ THEN REPLY @76 GOTO 39
+  IF ~~ THEN REPLY @77 GOTO 40
+  IF ~~ THEN REPLY @78 GOTO 41
+  IF ~~ THEN REPLY @79 GOTO 42
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 39 // from: 38.1
-  SAY ~Открыть свою собственную лавку...? Да... наверное, это выход. У Элхелора должны еще оставаться где-то товары. Да... Я попробую!~
-  IF ~~ THEN REPLY ~Ладно, попытайся.~ GOTO 43
-  IF ~~ THEN REPLY ~Вот... 300 золотых тебе помогут.~ GOTO 44
+  SAY @80
+  IF ~~ THEN REPLY @81 GOTO 43
+  IF ~~ THEN REPLY @82 GOTO 44
 END
 
 IF ~~ THEN BEGIN 40 // from: 38.2
-  SAY ~Уехать из Порт-Лласта? Ну... наверное, вы правы. Больше мне нечего здесь делать...~
-  IF ~~ THEN REPLY ~Ладно, попытайся.~ GOTO 43
-  IF ~~ THEN REPLY ~Вот... 300 золотых тебе помогут.~ GOTO 44
-  IF ~~ THEN REPLY ~Да ты даже выход из города не найдешь!~ GOTO 42
+  SAY @83
+  IF ~~ THEN REPLY @81 GOTO 43
+  IF ~~ THEN REPLY @82 GOTO 44
+  IF ~~ THEN REPLY @84 GOTO 42
 END
 
 IF ~~ THEN BEGIN 41 // from: 38.3
-  SAY ~Только... только чуть-чуть. Я помогал ему только ради опыта работы.~
-  IF ~~ THEN REPLY ~Так может тебе открыть свою собственную лавку?~ GOTO 39
-  IF ~~ THEN REPLY ~Я думаю, тебе надо уехать.~ GOTO 40
-  IF ~~ THEN REPLY ~Хорошо. Теперь отдавай золото мне, и поживее.~ GOTO 45
-  IF ~~ THEN REPLY ~Да, ты совершенно бесполезен.~ GOTO 42
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @85
+  IF ~~ THEN REPLY @76 GOTO 39
+  IF ~~ THEN REPLY @77 GOTO 40
+  IF ~~ THEN REPLY @86 GOTO 45
+  IF ~~ THEN REPLY @79 GOTO 42
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 42 // from: 38.4
-  SAY ~Я... я думал... Извините... я... мне наверное надо идти...~
+  SAY @87
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 43 // from: 39.1
-  SAY ~Спасибо! Спасибо, сэр... вы мне так помогли!~ ~Спасибо! Спасибо, леди... вы мне так помогли!~
+  SAY @88
   IF ~~ THEN DO ~SetGlobal("AnderIsMerchant","GLOBAL",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 39.2
-  SAY ~Триста... золотых? Это так щедро, <LADYLORD>. Я... я не могу описать, как я благодарен. Благослови вас боги!~
+  SAY @89
   IF ~~ THEN DO ~SetGlobal("AnderIsMerchant","GLOBAL",2)TakePartyGold(300)ReputationInc(1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 41.3
-  SAY ~Что? Вы... вы что, меня грабите? Да есть ли еще честные люди в этом мире? Л-ладно! Забирай! Все забирай!~
+  SAY @90
   IF ~~ THEN DO ~GiveGoldForce(300)ReputationInc(-1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 28.1
-  SAY ~Элхелор поручил мне заменить его, вот все его товары, выбирайте.~
+  SAY @91
   IF ~~ THEN DO ~StartStore("Alhelor",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 48 // from: 27.1
-  SAY ~Это была пещера почти у самого Лускана, в горах к востоку от 'Зеленого Грифона'.~
-  IF ~  !InMyArea("Alhelor1")~ THEN REPLY ~А где сейчас Элхелор?~ GOTO 49
-  IF ~  !InMyArea("Alhelor1")~ THEN REPLY ~А не мог бы ты продать мне кое-что из лавки Элхелора?~ GOTO 47
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @41
+  IF ~  !InMyArea("Alhelor1")~ THEN REPLY @53 GOTO 49
+  IF ~  !InMyArea("Alhelor1")~ THEN REPLY @54 GOTO 47
+  IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 49 // from: 27.2
-  SAY ~Он ушел домой немного передохнуть.~
-  IF ~  GlobalLT("NeurikQuest","GLOBAL",6)~ THEN REPLY ~Напомни, где находится пещера Черного Волка?~ GOTO 48
-  IF ~  !InMyArea("Alhelor1")~ THEN REPLY ~А не мог бы ты продать мне кое-что из лавки Элхелора?~ GOTO 47
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @92
+  IF ~  GlobalLT("NeurikQuest","GLOBAL",6)~ THEN REPLY @52 GOTO 48
+  IF ~  !InMyArea("Alhelor1")~ THEN REPLY @54 GOTO 47
+  IF ~~ THEN REPLY @4 GOTO 7
 END

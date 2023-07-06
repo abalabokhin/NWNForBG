@@ -4,30 +4,30 @@ BEGIN ~ZAMITGRD~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  InMyArea("Zamitra")!Dead("Zamitra")RandomNum(2,1)~ THEN BEGIN 0 // from:
-  SAY ~Я воин Черной Гвардии Замитры! Можете поговорить с ней, если только она в настроении.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~   InMyArea("Zamitra")!Dead("Zamitra")RandomNum(2,2)~ THEN BEGIN 1 // from:
-  SAY ~Прочь отсюда, мужчина! Может, хозяйка Замитра и стерпит ваши косые взгляды, но уж я точно нет!~ ~Прочь отсюда, женщина! Может, хозяйка Замитра и стерпит ваши косые взгляды, но уж я точно нет!~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !InMyArea("Zamitra")Global("SexWithZamitra","GLOBAL",1)Global("PlayerHasZgem","MYAREA",0)~ THEN BEGIN 12 // from:
-  SAY ~Думаю, утром хозяйка будет довольна. Она всегда добивается от мужчин того, чего хочет.~
+  SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  !Dead("Zamitra")Global("PlayerHasZgem","MYAREA",1)~ THEN BEGIN 3 // from:
-  SAY ~Замитра совсем обезумела. Наверняка какой-то мужчина виноват. Я ненавижу мужчин.~
+  SAY @3
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  False()~ THEN BEGIN 4 // from:
-  SAY ~У хозяйки Замитры украли драгоценный камень. Это все из-за меня!~
+  SAY @4
   IF ~~ THEN EXIT
 END

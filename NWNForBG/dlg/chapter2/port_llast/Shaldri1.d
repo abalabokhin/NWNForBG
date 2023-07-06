@@ -4,313 +4,313 @@ BEGIN ~SHALDRI1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  IsGabber(Player1)Gender(LastTalkedToBy(Myself),MALE)Global("ShaldrissaWasOffended","LOCALS",0)~ THEN BEGIN 0 // from:
-  SAY ~Привет, парниша. Я тебя не узнаю. Должно быть, ты пришел сюда недавно. Что такой бравый искатель приключений, как ты, делает в таком дерьмовом городишке, как этот?~ [SHALD052]
-  IF ~~ THEN REPLY ~Мне показалось, это не такое уж плохое место. Вообще, как тебя зовут?~ GOTO 1
-  IF ~~ THEN REPLY ~Да уж, тебе точно тут будет скучновато. Как твое имя?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.1
-  SAY ~Мужчина со вкусом и манерами! Как чудесно такого встретить. Меня зовут Шалдрисса. А тебя как?~
-  IF ~~ THEN REPLY ~Меня зовут <CHARNAME>. Ты можешь ответить на несколько вопросов?~ GOTO 4
-  IF ~~ THEN REPLY ~Мое имя <CHARNAME>. Как приятно встретить такую юную, прекрасную девушку, как ты.~ GOTO 5
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.2
-  SAY ~Ты просто его еще не знаешь. Когда ты проживешь тут достаточно времени, ты по-настоящему возненавидишь его. Меня зовут Шалдрисса. А тебя как?~
-  IF ~~ THEN REPLY ~Меня зовут <CHARNAME>. Ты можешь ответить на несколько вопросов?~ GOTO 4
-  IF ~~ THEN REPLY ~Мое имя <CHARNAME>. Как приятно встретить такую юную, прекрасную девушку, как ты.~ GOTO 5
+  SAY @7
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~(вздыхает) Тогда прощай.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1 2.1
-  SAY ~Я буду счастлива ответить на любые вопросы, которые у тебя есть. Я довольно хорошо знаю обо всем, что у нас в городе происходит - да тут и знать-то особо нечего, это такая помойка.~
-  IF ~~ THEN REPLY ~Ты слышала что-нибудь о культе в этом районе?~ GOTO 6
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 7
-  IF ~~ THEN REPLY ~Ты не знаешь, где я могу найти работу?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 9
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.2
-  SAY ~Боги, какой изысканный джентльмен. Такого редко встретишь в нашей помойке.~
-  IF ~~ THEN REPLY ~Я бы не против задать тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~По-моему, ты пробуждаешь во мне все самое лучшее.~ GOTO 11
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 4
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
-  SAY ~Культ? Ха! Хотела бы я, чтобы в Порт-Лласте было что-нибудь такое интересное. Мне ТАК скучно!~
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 7
-  IF ~~ THEN REPLY ~Ты не знаешь, где я могу найти работу?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 9
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @18
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.2
-  SAY ~В этом городе? Я же сказала тебе, тут вообще ничего не происходит!~
-  IF ~~ THEN REPLY ~Ты слышала что-нибудь о культе в этом районе?~ GOTO 6
-  IF ~~ THEN REPLY ~Ты не знаешь, где я могу найти работу?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 9
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @19
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
-  SAY ~И зачем тебе искать работу в этом городе? Ну если тебе интересно, то мой отец - мэр Кендрак, и я знаю, что у него есть вакансия. В Уотердипе случился побег из тюрьмы, и мой отец предлагает огромную награду любому, кто выследит беглых преступников. Я тебе говорю об этом только потому, что эта работа поможет нам... я имею в виду, тебе избежать смерти от скуки в этом городе.~
-  IF ~~ THEN REPLY ~Ты слышала что-нибудь о культе в этом районе?~ GOTO 6
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 9
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @20
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.4
-  SAY ~Если ты пойдешь на север, юг или восток, ты можешь выйти из города. Если достанешь лодку и отправишься на запад, ты тоже выйдешь из города. Вот и все указания, которые тебе нужны.~
-  IF ~~ THEN REPLY ~Ты слышала что-нибудь о культе в этом районе?~ GOTO 6
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 7
-  IF ~~ THEN REPLY ~Ты не знаешь, где я могу найти работу?~ GOTO 8
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @21
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 10 // from: 4.5
-  SAY ~Ты что, шутишь? Это просто мелкий городишко, который населяют мелочные людишки. Если мне придется остаться здесь, я закончу жизнь сварливой старой девой, живущей без всякой радости. Молодая женщина с острым умом ищет приключений... и сильного мужчину, который бы мог защитить ее.~
-  IF ~~ THEN REPLY ~По-моему, мне не нравится, куда ты клонишь. Почему бы тебе не ответить на пару вопросов?~ GOTO 4
-  IF ~~ THEN REPLY ~Это очень интересно. А что еще нужно женщине вроде тебя?~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @22
+  IF ~~ THEN REPLY @23 GOTO 4
+  IF ~~ THEN REPLY @24 GOTO 12
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 11 // from: 5.3
-  SAY ~Честно? А я-то надеялась пробудить в тебе самое худшее. Этот город наводит на меня скуку своим приличием.~
-  IF ~~ THEN REPLY ~Я бы не против задать тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
-  IF ~~ THEN REPLY ~Ну, я, разумеется, не хочу, чтобы ты скучала. Почему бы нам не поговорить об этом в более уединенном месте?~ GOTO 13
+  SAY @25
+  IF ~~ THEN REPLY @16 GOTO 4
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @26 GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 11.3
-  SAY ~М-м-м. Почему бы нам сначала не узнать друг друга поближе?~
-  IF ~~ THEN REPLY ~Я бы не против задать тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Почему ты так ненавидишь этот город?~ GOTO 10
+  SAY @27
+  IF ~~ THEN REPLY @16 GOTO 4
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 12 // from: 10.2
-  SAY ~Женщине вроде меня нужно утешение, страсть, богатство и сила. Не могу поверить, что я с тобой так откровенна. От тебя у меня голова кружится, я... У меня коленки подгибаются лишь оттого, что ты так близко. Так как ты думаешь? Найдется ли у тебя место для решительной молодой женщины, которая будет следовать за тобой и... служить тебе?~
-  IF ~~ THEN REPLY ~М-м, мне надо об этом подумать. Сначала я хочу, чтобы ты ответила на несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Я так не думаю. Еще только не хватало в разгар битвы следить, чтоб с тобой ничего не случилось.~ GOTO 14
-  IF ~~ THEN REPLY ~Может, мы с тобой это обсудим как следует утром, когда проснемся?~ GOTO 15
-  IF ~~ THEN REPLY ~Мне нравится, если ты будешь рядом. Бери оружие и доспехи, мы встретиться здесь через час.~ GOTO 16
-  IF ~~ THEN REPLY ~Извини, мне пора уходить. До свидания.~ GOTO 3
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 4
+  IF ~~ THEN REPLY @30 GOTO 14
+  IF ~~ THEN REPLY @31 GOTO 15
+  IF ~~ THEN REPLY @32 GOTO 16
+  IF ~~ THEN REPLY @33 GOTO 3
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.2
-  SAY ~Нет? Ах ты никчемный болван! Тогда убирайся с глаз моих. Никогда не хочу тебя больше видеть!~
+  SAY @34
   IF ~~ THEN DO ~SetGlobal("ShaldrissaWasOffended","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.3
-  SAY ~О, я не могу делать это здесь. Если ты возьмешь меня с собой и заберешь из этого места, тогда, конечно, мы сможем что-нибудь устроить.~
-  IF ~~ THEN REPLY ~М-м, мне надо об этом подумать. Сначала я хочу, чтобы ты ответила на несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Я так не думаю. Еще только не хватало в разгар битвы следить, чтоб с тобой ничего не случилось.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне нравится, если ты будешь рядом. Бери оружие и доспехи, мы встретиться здесь через час.~ GOTO 16
-  IF ~~ THEN REPLY ~Извини, мне пора уходить. До свидания.~ GOTO 3
+  SAY @35
+  IF ~~ THEN REPLY @29 GOTO 4
+  IF ~~ THEN REPLY @30 GOTO 14
+  IF ~~ THEN REPLY @32 GOTO 16
+  IF ~~ THEN REPLY @33 GOTO 3
 END
 
 IF ~~ THEN BEGIN 16 // from: 12.4 15.3
-  SAY ~Оружие и доспехи? У меня ничего этого нет. Может, ты одолжишь мне 1000 золотых, чтобы я смогла купить их?~
-  IF ~~ THEN REPLY ~1000 золотых? Ты что, с ума сошла? Я столько тебе не дам!~ GOTO 14
-  IF ~~ THEN REPLY ~Я думаю, 200 золотых тебе хватит для начала.~ GOTO 17
-  IF ~~ THEN REPLY ~Ладно, 1000 золотых звучит разумно, вот, бери.~ DO ~TakePartyGold(1000)~ GOTO 18
+  SAY @36
+  IF ~~ THEN REPLY @37 GOTO 14
+  IF ~~ THEN REPLY @38 GOTO 17
+  IF ~~ THEN REPLY @39 DO ~TakePartyGold(1000)~ GOTO 18
 END
 
 IF ~~ THEN BEGIN 17 // from: 16.2
-  SAY ~200 золотых? Ты шутишь? Хочешь, чтобы я одевалась, как уличная беспризорница? Прошу, будь серьезней. Мне нужно 1000 золотых, чтобы достойно начать свой путь искательницы приключений.~
-  IF ~~ THEN REPLY ~1000 золотых? Ты что, с ума сошла? Я столько тебе не дам!~ GOTO 14
-  IF ~~ THEN REPLY ~Ладно, 1000 золотых звучит разумно, вот, бери.~ GOTO 18
+  SAY @40
+  IF ~~ THEN REPLY @37 GOTO 14
+  IF ~~ THEN REPLY @39 GOTO 18
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.3
-  SAY ~На самом деле, этого, наверное, не хватит на все, что мне нужно купить. Лучше пусть будет 2000.~
-  IF ~~ THEN REPLY ~Что ты собралась покупать? Золотую колесницу? Забудь об этом!~ GOTO 14
-  IF ~~ THEN REPLY ~Ну, полагаю, я могу дать тебе 2000 золотых.~ DO ~TakePartyGold(1000)~ GOTO 19
+  SAY @41
+  IF ~~ THEN REPLY @42 GOTO 14
+  IF ~~ THEN REPLY @43 DO ~TakePartyGold(1000)~ GOTO 19
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.2
-  SAY ~Конечно, это не покроет все мои долги. Вот 3000 точно хватит.~
-  IF ~~ THEN REPLY ~По-моему, с меня хватит. Счастливо оставаться.~ GOTO 14
-  IF ~~ THEN REPLY ~Ну, уж нет. Это уже слишком.~ GOTO 14
+  SAY @44
+  IF ~~ THEN REPLY @45 GOTO 14
+  IF ~~ THEN REPLY @46 GOTO 14
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  IsGabber(Player1)Gender(LastTalkedToBy(Myself),FEMALE)~ THEN BEGIN 20 // from:
-  SAY ~О, приветствую, миледи! Ты, наверно, одна из этих новых искателей приключений в городе. Я так счастлива видеть, что целеустремленная женщина может чего-то добиться в этом мире.~ [SHALD053]
-  IF ~~ THEN REPLY ~М-м, конечно. Как тебя зовут?~ GOTO 21
-  IF ~~ THEN REPLY ~Сила женщины безгранична. Никогда не довольствуйся меньшим, чем то, чего ты заслуживаешь.~ GOTO 22
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @47
+  IF ~~ THEN REPLY @48 GOTO 21
+  IF ~~ THEN REPLY @49 GOTO 22
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
-  SAY ~Меня зовут Шалдрисса. А как зовут такую храбрую искательницу приключений, как ты?~
-  IF ~~ THEN REPLY ~Это зависит от того, кого я убиваю. Я предпочитаю чтобы меня называли <CHARNAME>.~ GOTO 23
-  IF ~~ THEN REPLY ~Девочка, мое имя <CHARNAME>. Пожалуйста, поменьше юношеской экспансивности.~ GOTO 24
-  IF ~~ THEN REPLY ~Тебе необязательно знать мое имя.~ GOTO 25
+  SAY @50
+  IF ~~ THEN REPLY @51 GOTO 23
+  IF ~~ THEN REPLY @52 GOTO 24
+  IF ~~ THEN REPLY @53 GOTO 25
 END
 
 IF ~~ THEN BEGIN 22 // from: 20.2
-  SAY ~О, как это верно. Как прекрасно - встретить такое глубокое понимание жизненных проблем. Меня зовут Шалдрисса. А как зовут такую храбрую искательницу приключений, как ты?~
-  IF ~~ THEN REPLY ~Это зависит от того, кого я убиваю. Я предпочитаю чтобы меня называли <CHARNAME>.~ GOTO 23
-  IF ~~ THEN REPLY ~Девочка, мое имя <CHARNAME>. Пожалуйста, поменьше юношеской экспансивности.~ GOTO 24
-  IF ~~ THEN REPLY ~Тебе необязательно знать мое имя.~ GOTO 25
+  SAY @54
+  IF ~~ THEN REPLY @51 GOTO 23
+  IF ~~ THEN REPLY @52 GOTO 24
+  IF ~~ THEN REPLY @53 GOTO 25
 END
 
 IF ~~ THEN BEGIN 23 // from: 21.1 22.1
-  SAY ~Ты так замечательно говоришь. Непохоже ни на кого в этом городе. Здесь все вообще такие скучные.~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Сейчас я прошу тебя ответить на пару вопросов.~ GOTO 27
-  IF ~~ THEN REPLY ~Ты просто слишком юная и восторженная. Думаю, сейчас тебе следует уйти.~ GOTO 28
+  SAY @55
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @57 GOTO 27
+  IF ~~ THEN REPLY @58 GOTO 28
 END
 
 IF ~~ THEN BEGIN 24 // from: 21.2 22.2
-  SAY ~О, я понимаю, что меня занесло. Просто этот город такой унылый и душный, а встретить кого-нибудь интересного вроде тебя так восхитительно!~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Сейчас я прошу тебя ответить на пару вопросов.~ GOTO 27
-  IF ~~ THEN REPLY ~Ты просто слишком юная и восторженная. Думаю, сейчас тебе следует уйти.~ GOTO 28
+  SAY @59
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @57 GOTO 27
+  IF ~~ THEN REPLY @58 GOTO 28
 END
 
 IF ~~ THEN BEGIN 25 // from: 21.3 22.3
-  SAY ~Эй! Это несправедливо. Я же назвала тебе свое имя.~
-  IF ~~ THEN REPLY ~Тогда это твой первый урок как искательницы приключений. Жизнь несправедлива.~ GOTO 29
-  IF ~~ THEN REPLY ~Ты просто слишком юная и восторженная. Думаю, сейчас тебе следует уйти.~ GOTO 28
+  SAY @60
+  IF ~~ THEN REPLY @61 GOTO 29
+  IF ~~ THEN REPLY @58 GOTO 28
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.1
-  SAY ~О, я поняла. Ладно, полагаю, я попробую это запомнить. Несомненно, у тебя есть опыт. Хотела бы я жить так же, как ты.~
-  IF ~~ THEN REPLY ~Что? Спать на земле, под дождем? Или жить в миллиметрах от смерти?~ GOTO 30
-  IF ~~ THEN REPLY ~Ты просто слишком юная и восторженная. Думаю, сейчас тебе следует уйти.~ GOTO 28
+  SAY @62
+  IF ~~ THEN REPLY @63 GOTO 30
+  IF ~~ THEN REPLY @58 GOTO 28
 END
 
 IF ~~ THEN BEGIN 28 // from: 23.3
-  SAY ~Как грубо! Я ни за что не буду больше с тобой разговаривать!~
+  SAY @64
   IF ~~ THEN DO ~SetGlobal("ShaldrissaWasOffended","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 29.1
-  SAY ~Да что угодно! Я просто хочу быть подальше от этого скучного, провинциального городка.~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Сейчас я прошу тебя ответить на пару вопросов.~ GOTO 27
-  IF ~~ THEN REPLY ~Ты просто слишком юная и восторженная. Думаю, сейчас тебе следует уйти.~ GOTO 28
+  SAY @65
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @57 GOTO 27
+  IF ~~ THEN REPLY @58 GOTO 28
 END
 
 IF ~~ THEN BEGIN 27 // from: 23.2
-  SAY ~Я буду счастлива ответить на любые вопросы, которые у тебя есть. Я довольно хорошо знаю обо всем, что у нас в городе происходит - да тут и знать-то особо нечего, это такая помойка.~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Что ты можешь рассказать мне о чуме в Невервинтере?~ GOTO 31
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 32
-  IF ~~ THEN REPLY ~В городе есть подходящая работа?~ GOTO 33
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @9
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @66 GOTO 31
+  IF ~~ THEN REPLY @11 GOTO 32
+  IF ~~ THEN REPLY @67 GOTO 33
+  IF ~~ THEN REPLY @68 GOTO 34
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 31 // from: 27.1
-  SAY ~Невервинтер? Это, наверное, где-то не здесь! Чума там или нет, а все лучше, чем в этом городе.~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 32
-  IF ~~ THEN REPLY ~В городе есть подходящая работа?~ GOTO 33
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @69
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @11 GOTO 32
+  IF ~~ THEN REPLY @67 GOTO 33
+  IF ~~ THEN REPLY @68 GOTO 34
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 32 // from: 27.2
-  SAY ~В этом городе? Я же сказала тебе, тут вообще ничего не происходит!~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Что ты можешь рассказать мне о чуме в Невервинтере?~ GOTO 31
-  IF ~~ THEN REPLY ~В городе есть подходящая работа?~ GOTO 33
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @19
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @66 GOTO 31
+  IF ~~ THEN REPLY @67 GOTO 33
+  IF ~~ THEN REPLY @68 GOTO 34
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 33 // from: 27.3
-  SAY ~И зачем тебе искать работу в этом городе? Ну если тебе интересно, то мой отец - мэр Кендрак, и я знаю, что у него есть вакансия. В Уотердипе случился побег из тюрьмы, и мой отец предлагает огромную награду любому, кто выследит беглых преступников. Я тебе говорю об этом только потому, что эта работа поможет нам... я имею в виду, тебе избежать смерти от скуки в этом городе.~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Что ты можешь рассказать мне о чуме в Невервинтере?~ GOTO 31
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 32
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @20
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @66 GOTO 31
+  IF ~~ THEN REPLY @11 GOTO 32
+  IF ~~ THEN REPLY @68 GOTO 34
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 34 // from: 27.4
-  SAY ~Если ты пойдешь на север, юг или восток, ты можешь выйти из города. Если достанешь лодку и отправишься на запад, ты тоже выйдешь из города. Вот и все указания, которые тебе нужны.~
-  IF ~~ THEN REPLY ~Что же именно тебе не нравится в этом городе?~ GOTO 26
-  IF ~~ THEN REPLY ~Что ты можешь рассказать мне о чуме в Невервинтере?~ GOTO 31
-  IF ~~ THEN REPLY ~Происходит ли в городе что-нибудь необычное?~ GOTO 32
-  IF ~~ THEN REPLY ~В городе есть подходящая работа?~ GOTO 33
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @21
+  IF ~~ THEN REPLY @56 GOTO 26
+  IF ~~ THEN REPLY @66 GOTO 31
+  IF ~~ THEN REPLY @11 GOTO 32
+  IF ~~ THEN REPLY @67 GOTO 33
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 26 // from: 23.1
-  SAY ~Ты что, шутишь? Это же гиблое место. Здесь делать нечего. Я как только просыпаюсь, уже зеваю со скуки.~
-  IF ~~ THEN REPLY ~Есть вещи похуже, чем скука, малышка. Жизнь в этом мире довольно опасна.~ GOTO 35
-  IF ~~ THEN REPLY ~Будь довольна своей счастливой безопасной жизнью и кончай ныть.~ GOTO 28
+  SAY @70
+  IF ~~ THEN REPLY @71 GOTO 35
+  IF ~~ THEN REPLY @72 GOTO 28
 END
 
 IF ~~ THEN BEGIN 35 // from: 26.1
-  SAY ~И я уверена, тебе уже пришлось это пережить. Разве не видишь - именно такой возможности я и жажду.~
-  IF ~~ THEN REPLY ~Тогда зачем ты мне об этом говоришь?~ GOTO 36
-  IF ~~ THEN REPLY ~Будь довольна своей счастливой безопасной жизнью и кончай ныть.~ GOTO 28
+  SAY @73
+  IF ~~ THEN REPLY @74 GOTO 36
+  IF ~~ THEN REPLY @72 GOTO 28
 END
 
 IF ~~ THEN BEGIN 36 // from: 35.1
-  SAY ~Ты можешь взять меня с собой! Ты можешь научить меня всему, а я буду твоей верной ученицей. Вместе мы можем стать знаменитыми.~
-  IF ~~ THEN REPLY ~Я не хочу, чтобы у меня в разгар боя суетилась под ногами взбалмошная сопливая девчонка. Найди свой собственный путь в жизни.~ GOTO 37
-  IF ~~ THEN REPLY ~Не знаю. Может, ты лучше сначала ответишь мне на пару вопросов?~ GOTO 27
-  IF ~~ THEN REPLY ~Это неплохая идея. Почему бы тебе не взять свое оружие и доспехи и не встретиться со мной здесь через несколько минут?~ GOTO 38
+  SAY @75
+  IF ~~ THEN REPLY @76 GOTO 37
+  IF ~~ THEN REPLY @77 GOTO 27
+  IF ~~ THEN REPLY @78 GOTO 38
 END
 
 IF ~~ THEN BEGIN 37 // from: 36.1
-  SAY ~Нет? Ах ты стерва! Я больше с тобой не разговариваю.~
+  SAY @79
   IF ~~ THEN DO ~SetGlobal("ShaldrissaWasOffended","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 36.3
-  SAY ~О боги. У меня ничего такого нет. Вот что, дай мне 1000 золотых, я побегу и куплю кое-какое снаряжение.~
-  IF ~~ THEN REPLY ~1000 золотых? Да ни в жисть!~ GOTO 37
-  IF ~~ THEN REPLY ~Это несколько чересчур. Как насчет 200 золотых, едой я поделюсь?~ GOTO 39
-  IF ~~ THEN REPLY ~Ладно. Я дам тебе денег.~ GOTO 40
+  SAY @80
+  IF ~~ THEN REPLY @81 GOTO 37
+  IF ~~ THEN REPLY @82 GOTO 39
+  IF ~~ THEN REPLY @83 GOTO 40
 END
 
 IF ~~ THEN BEGIN 39 // from: 38.2
-  SAY ~Ты хочешь, чтоб я одевалась, как уличная беспризорница? Я так не думаю. 1000 золотых - не меньше.~
-  IF ~~ THEN REPLY ~1000 золотых? Да ни в жисть!~ GOTO 37
-  IF ~~ THEN REPLY ~Ладно. Я дам тебе денег.~ DO ~TakePartyGold(1000)~ GOTO 40
+  SAY @84
+  IF ~~ THEN REPLY @81 GOTO 37
+  IF ~~ THEN REPLY @83 DO ~TakePartyGold(1000)~ GOTO 40
 END
 
 IF ~~ THEN BEGIN 40 // from: 38.3 39.2
-  SAY ~На самом деле, этого даже недостаточно. Как насчет 2000?~
-  IF ~~ THEN REPLY ~Что ты собралась покупать? Золотую колесницу? Забудь об этом!~ GOTO 37
-  IF ~~ THEN REPLY ~2000? Ладно.~ DO ~TakePartyGold(1000)~ GOTO 41
+  SAY @85
+  IF ~~ THEN REPLY @42 GOTO 37
+  IF ~~ THEN REPLY @86 DO ~TakePartyGold(1000)~ GOTO 41
 END
 
 IF ~~ THEN BEGIN 41 // from: 38.3 39.2
-  SAY ~Конечно же, это не покроет мои здешние долги, так что лучше пусть будет 3000.~
-  IF ~~ THEN REPLY ~Ладно, глупое ты, жадное дитя, просто забудь обо всем этом.~ GOTO 37
-  IF ~~ THEN REPLY ~Ну, уж нет. Это уже слишком.~ GOTO 37
+  SAY @87
+  IF ~~ THEN REPLY @88 GOTO 37
+  IF ~~ THEN REPLY @46 GOTO 37
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !IsGabber(Player1)~ THEN BEGIN 42 // from:
-  SAY ~Мне нужно кое-кого повидать.~ [SHALD050]
+  SAY @89
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  IsGabber(Player1)Global("ShaldrissaWasOffended","LOCALS",1)~ THEN BEGIN 43 // from:
-  SAY ~Я же сказала, что не хочу тебя больше видеть. Уходи.~ [SHALD051]
+  SAY @90
   IF ~~ THEN EXIT
 END

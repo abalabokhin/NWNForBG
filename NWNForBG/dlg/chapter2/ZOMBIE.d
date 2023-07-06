@@ -8,9 +8,9 @@
 BEGIN ~ZOMBIE~
 
 IF ~~ THEN BEGIN 0 // from:
-  SAY ~Ý-ý-ý...~ [ZOMBI01]
+  SAY @0
 END
 
 IF ~~ THEN BEGIN 1 // from:
-  SAY ~Õ-õ-õ...~
+  SAY @1
 END

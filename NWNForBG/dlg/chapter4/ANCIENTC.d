@@ -8,22 +8,22 @@ BEGIN ~ANCIENTC~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Умри, раб! Как смеешь ты вторгаться во внутреннее святилище Мораг!~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Разрушьте их города! **шипит** Смерть теплокровным!~ [LIZARD51]
+  SAY @1
   IF ~~ THEN EXTERN ~MORAG3~ 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Смерть предателям! **шипит** Смерть рабам Слов!~ [LIZARD52]
+  SAY @2
   IF ~~ THEN EXTERN ~MORAG3~ 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
-  SAY ~Да здравствует Мораг! **шипит** Веди нас к мести!~ [LIZARD53]
+  SAY @3
   IF ~~ THEN EXTERN ~MORAG3~ 4
 END
 

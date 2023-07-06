@@ -4,57 +4,57 @@ BEGIN ~EDEGAR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Добро пожаловать в Храм Тира. Если вам требуются услуги жреца, пожалуйста, поговорите с Ньюриком.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY ~Я здесь по поводу дела Ролгана.~ GOTO 2
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я Эдегар, младший прислужник в Храме Тира. Я не обладаю практически никакими божественными силами, я стараюсь быть полезным, выполняя в этом храме рутинные обязанности.~
+  SAY @4
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Конечно, конечно. Ньюрик оказал мне великую честь, выбрав меня в качестве присяжного для решения этого дела. Я с нетерпением жду момента, когда смогу выполнить свои обязанности и принести людям справедливость Тира.~
-  IF ~~ THEN REPLY ~Что ты думаешь об этом деле?~ GOTO 5
-  IF ~~ THEN REPLY ~Сколько будет стоить твое решение в пользу Ролгана?~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 3
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Да пребудет с тобой и хранит тебя от бед меч справедливости Тира.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Если вам необходимы услуги настоящего клерика, вам стоит поговорить с Ньюриком.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.1
-  SAY ~Даже несмотря на то, что я не одобряю поклонение жителей Утгардта языческим богам, я не собираюсь осуждать его заранее. Настоящим преступником в этом деле является демон алкоголя. Хотя, разумеется, алкоголь не оправдывает поведения этого жителя Утгардта. Любой, кто позволил себе напиться, должен осознавать последствия данного поступка. Именно поэтому я так осуждаю употребление алкогольных напитков.~
+  SAY @10
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.2
-  SAY ~Ты осмеливаешься предложить мне взятку здесь, в Зале Справедливости! Я считаю своим долгом сообщить об этом Ньюрику, чтобы тебя отстранили от дела!~
-  IF ~~ THEN REPLY ~Это была всего лишь шутка, успокойся...~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 9
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @3 GOTO 9
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
-  SAY ~Но мой разум открыт для твоих аргументов. Желаю тебе удачи в этом деле, <LADYLORD>. Пусть свершится правосудие Тира.~
+  SAY @13
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.1
-  SAY ~Что ж, это была шутка дурного тона. Я не сообщу о тебе Ньюрику, но советую в будущем относиться к этому делу со всей возможной серьезностью.~
+  SAY @14
   IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.2
-  SAY ~Ступай.~
+  SAY @15
   IF ~~ THEN DO ~SetGlobal("TrialBroken","GLOBAL",2)~ EXIT
 END
 
@@ -62,27 +62,27 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 10 // from:
-  SAY ~Приветствую, <CHARNAME>. Надеюсь, у тебя нет чувства вины из-за того, что тебе не удалось добиться оправдания для этого воина-утгардта. Твоя совесть чиста. ~
+  SAY @16
   IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1
-  SAY ~Твой долг в этом деле выполнен, и улики представлены суду, так что справедливость смогла восторжествовать. Иногда людям трудно принять тот факт, что правосудие Тира может быть жестким. Я знаю, Ньюрик благодарен тебе за всю помощь храму в этом деле.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 3
+  SAY @17
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // ----------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 12 // from:
-  SAY ~Приветствую, <CHARNAME>. Прими поздравления с прекрасным выступлением на суде над Ролганом. Справедливость восторжествовала, его оправдали, и это целиком твоя заслуга. ~
+  SAY @18
   IF ~~ THEN GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
-  SAY ~Я знаю, Ньюрик благодарен тебе за всю помощь храму в этом деле.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 3
+  SAY @19
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 

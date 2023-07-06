@@ -4,34 +4,34 @@ BEGIN ~DURGA2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~¬ам что-нибудь нужно? ћеч или, может быть, щит? ” мен€ очень много работы, но € никогда не отказываю покупателю.~
-  IF ~~ THEN REPLY ~я хочу взгл€нуть на твои товары.~ GOTO 1
-  IF ~~ THEN REPLY ~ћогу € задать вам несколько вопросов?~ GOTO 2
-  IF ~~ THEN REPLY ~”дивительно, что ты все еще здесь, учитыва€, что лусканцы так близко.~ GOTO 3
-  IF ~~ THEN REPLY ~ƒо свидани€.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~»з-за войны выбор товаров у мен€ сильно уменьшилс€, но пара неплохих вещей еще осталась.~
+  SAY @5
   IF ~~ THEN DO ~  StartStore("Durga",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Ќет у мен€ времени ни на какие вопросы отвечать. я и так еле успеваю продавать свои товары. ¬ойна - это ужасно, но зато она приносит хорошую прибыль.~
-  IF ~~ THEN REPLY ~я хочу взгл€нуть на твои товары.~ GOTO 1
-  IF ~~ THEN REPLY ~”дивительно, что ты все еще здесь, учитыва€, что лусканцы так близко.~ GOTO 3
-  IF ~~ THEN REPLY ~ƒо свидани€.~ GOTO 4
+  SAY @6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Ћорд Ќашер приказал мне достать как можно больше мечей и щитов, чтобы помочь защитить Ќевервинтер. Ќо € не жалуюсь. ¬ такие времена, как сейчас, каждый должен вносить свой вклад в общее дело. ј то золото, которое мне платит лорд Ќашер, никому не мешает.~
-  IF ~~ THEN REPLY ~я хочу взгл€нуть на твои товары.~ GOTO 1
-  IF ~~ THEN REPLY ~ћогу € задать вам несколько вопросов?~ GOTO 2
-  IF ~~ THEN REPLY ~ƒо свидани€.~ GOTO 4
+  SAY @7
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~≈сли вам когда-нибудь потребуютс€ качественное оружие или доспехи, вы знаете, где мен€ найти.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 

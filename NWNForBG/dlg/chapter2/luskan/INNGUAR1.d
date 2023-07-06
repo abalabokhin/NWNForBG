@@ -4,19 +4,19 @@ BEGIN ~INNGUAR1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,1)~ THEN BEGIN 0 // from:
-  SAY ~ћы не хотим, чтобы сражени€ с улиц просочились и сюда, понимаете? Ќе создавайте никаких проблем, и все будет в пор€дке.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,2)~ THEN BEGIN 1 // from:
-  SAY ~≈сли у вас есть вопросы, обратитесь к мистеру √ромовому  улаку. ќн владелец таверны.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,3)~ THEN BEGIN 2 // from:
-  SAY ~Ёти люди здесь лишь потому, что здесь безопасно. ј мо€ работа - смотреть, чтобы тут на них никто не напал.~
+  SAY @2
   IF ~~ THEN EXIT
 END
 

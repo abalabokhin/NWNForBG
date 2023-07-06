@@ -3,104 +3,104 @@
 BEGIN ~BUGBEARP~
 
 IF ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~На помощь! Моя в плену тут. Твоя освободит моя, да? Или твоя работает с орки и гоблины? Моя просто хочет уйти. Моя не любит тюрьмы! Помоги! Пожалуйста, помоги!~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Это засада? Я тебе не доверяю.~ GOTO 2
-  IF ~~ THEN REPLY ~Расслабься! Я ни на кого не работаю. Просто скажи мне, кто ты.~ GOTO 1
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Моя багбир, пленник в этой пещере! Пленник от войны с орками и гоблинами. Моя хочет уйти, но моя застрял тут. Твоя поможет, да?~
-  IF ~~ THEN REPLY ~Откуда мне знать, что вы действительно в плену, и что все это не уловка?~ GOTO 2
-  IF ~~ THEN REPLY ~Ты мне кое-что расскажешь и тогда, может быть, я тебя отпущу.~ GOTO 3
-  IF ~~ THEN REPLY ~И чего мне с того будет, если я тебя спасу?~ GOTO 4
-  IF ~~ THEN REPLY ~Сейчас я убью тебя, чудовище!~ GOTO 5
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 2
+  IF ~~ THEN REPLY @6 GOTO 3
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @8 GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Моя не имеет оружие. У моя нет другие багбиры. Здесь никого нет. Твоя видит? Моя просто не хочет быть пленник. Назад на войну с орками и гоблинами.~
-  IF ~~ THEN REPLY ~Ты мне кое-что расскажешь и тогда, может быть, я тебя отпущу.~ GOTO 3
-  IF ~~ THEN REPLY ~И чего мне с того будет, если я тебя спасу?~ GOTO 4
-  IF ~~ THEN REPLY ~Сейчас я убью тебя, чудовище!~ GOTO 5
+  SAY @9
+  IF ~~ THEN REPLY @6 GOTO 3
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @8 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.2
-  SAY ~Ага, хорошо. Моя не много знать, кроме решетки тюрьма, но моя будем отвечать на вопросы. Мы хотим из тюрьмы, о да!~
-  IF ~~ THEN REPLY ~Почему тебя держали здесь в плену? Из-за чего эта война?~ GOTO 6
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Что ты можешь мне рассказать об этих орках и гоблинах?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 6
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.2
-  SAY ~Моя пленник, да. Моя нечего давать. Но моя знает вещи. Может, твоя задавает моя вопросы? Моя пробовать ответить?~
-  IF ~~ THEN REPLY ~Отлично. Скажи мне кое-что.~ GOTO 3
-  IF ~~ THEN REPLY ~Ты ничтожество. Убирайся.~ GOTO 9
-  IF ~~ THEN REPLY ~Сейчас я убью тебя, чудовище!~ GOTO 5
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 3
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @8 GOTO 5
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.3
-  SAY ~Моя бежит! Моя бежит!~
+  SAY @18
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.1
-  SAY ~Мы сражается с орками и гоблинами. Нас побили и взяли в плен. Все хотят угодить хозяину, поэтому надо сражаться и делать силу.~
-  IF ~~ THEN REPLY ~Я не понимаю, что значит делать силу.~ GOTO 10
-  IF ~~ THEN REPLY ~Кто такой хозяин?~ GOTO 11
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Что ты можешь мне рассказать об этих орках и гоблинах?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 10
+  IF ~~ THEN REPLY @21 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.2
-  SAY ~Моя может сказать твоя, что в пещера живут орки, гоблины, и мы, багбиры. Мы сражается очень много. Тут в пещера небезопасно для твоя, чужеземец.~
-  IF ~~ THEN REPLY ~Почему тебя держали здесь в плену? Из-за чего эта война?~ GOTO 6
-  IF ~~ THEN REPLY ~Что ты можешь мне рассказать об этих орках и гоблинах?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @22
+  IF ~~ THEN REPLY @11 GOTO 6
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.3
-  SAY ~Орки и гоблины повсюду. Мы, багбиры, сильный, мы хорошо сражается. Но мы никогда не побеждает надолго. Слишком много врагов.~
-  IF ~~ THEN REPLY ~А у этих племен есть вожди?~ GOTO 12
-  IF ~~ THEN REPLY ~Почему тебя держали здесь в плену? Из-за чего эта война?~ GOTO 6
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @23
+  IF ~~ THEN REPLY @24 GOTO 12
+  IF ~~ THEN REPLY @11 GOTO 6
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.4
-  SAY ~Мой быть свободный? О, радость! Теперь моя убегать. Спасибо тебе большой.~
+  SAY @25
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.1
-  SAY ~Если мы, багбиры, побьем орки и гоблин, хозяин будет довольный нами. Берет нас для своя армия. И тогда мы самый сильный.~
-  IF ~~ THEN REPLY ~Армия? Что ты имеешь в виду?~ GOTO 13
-  IF ~~ THEN REPLY ~Кто такой хозяин?~ GOTO 11
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Что ты можешь мне рассказать об этих орках и гоблинах?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @26
+  IF ~~ THEN REPLY @27 GOTO 13
+  IF ~~ THEN REPLY @21 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 11 // from: 6.2
-  SAY ~Дергиаб хозяин. Он большой огр, но умеет делать магия! Он очень сильный воин, убивает всех, кто хочет сражается с ним и победить его власть.~
-  IF ~~ THEN REPLY ~Я не понимаю, что значит делать силу.~ GOTO 10
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Что ты можешь мне рассказать об этих орках и гоблинах?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @28
+  IF ~~ THEN REPLY @20 GOTO 10
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.1
-  SAY ~Вождь орков и вождь гоблинов в пещерах. Если их убить, племена разваливается. Мы не знаем, что делает без вождь. Мы, багбиры, тоже имеет вождь. Но моя в плену, не знает, где.~
-  IF ~~ THEN REPLY ~Почему тебя держали здесь в плену? Из-за чего эта война?~ GOTO 6
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @29
+  IF ~~ THEN REPLY @11 GOTO 6
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.1
-  SAY ~Моя не обманывает, когда говорит, что не знает... гордые воины ушли с хозяин, но моя не знай, куда они пойти и зачем.~
-  IF ~~ THEN REPLY ~Кто такой хозяин?~ GOTO 11
-  IF ~~ THEN REPLY ~Можешь рассказать мне что-нибудь об этих пещерах?~ GOTO 7
-  IF ~~ THEN REPLY ~Что ты можешь мне рассказать об этих орках и гоблинах?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит вопросов. Ты можешь идти.~ GOTO 9
+  SAY @30
+  IF ~~ THEN REPLY @21 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END

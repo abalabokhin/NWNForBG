@@ -4,182 +4,182 @@ BEGIN ~MELDGU01~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)Global("MeldanenDoor","MYAREA",0)~ THEN BEGIN 0 // from:
-  SAY ~Извините, <SIRMAAM>, но я не могу впустить вас. Мой наниматель ценит одиночество.~
-  IF ~~ THEN REPLY ~Кто здесь живет?~ GOTO 1
-  IF ~~ THEN REPLY ~Может быть, я могу встретиться с владельцем?~ GOTO 2
-  IF ~~ THEN REPLY ~Отлично. Тогда могу ли я задать вам несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~Я служу в городской страже под началом Арибет. Думаю, я могу войти.~ GOTO 4
-  IF ~~ THEN REPLY ~Отойди в сторону и дай мне войти, иначе пеняй на себя.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Это ни что иное, как дом благородного Мелданена, одного из величайших волшебников города! Этот человек ценит уединение, так что вы лучше проходите себе мимо. Если вы не будете беспокоить его, он не будет беспокоить вас, хе-хе.~
-  IF ~~ THEN REPLY ~Может быть, я могу встретиться с владельцем?~ GOTO 2
-  IF ~~ THEN REPLY ~Отлично. Тогда могу ли я задать вам несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~Я служу в городской страже под началом Арибет. Думаю, я могу войти.~ GOTO 4
-  IF ~~ THEN REPLY ~Отойди в сторону и дай мне войти, иначе пеняй на себя.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @7
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Нет. Он ни с кем не встречается. И, чтобы вы не задавали этого вопроса, у него нет приемных... часов. А теперь ступайте.~
-  IF ~~ THEN REPLY ~Отлично. Тогда могу ли я задать вам несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~Я служу в городской страже под началом Арибет. Думаю, я могу войти.~ GOTO 4
-  IF ~~ THEN REPLY ~Отойди в сторону и дай мне войти, иначе пеняй на себя.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @8
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Только если это не займет весь день. Мое время дорого.~
-  IF ~~ THEN REPLY ~Что, собственно, тут происходит?~ GOTO 7
-  IF ~~ THEN REPLY ~Вы ничего не слышали о странных существах в округе?~ GOTO 8
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,INT)~ THEN REPLY ~Вы пока не ощущаете никаких симптомов чумы? Если нет, скоро ощутите.~ GOTO 9
-  IF ~~ THEN REPLY ~Как я могу попасть внутрь?~ GOTO 10
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,INT)~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @13 GOTO 10
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Мне все равно, будь вы хоть сам распроклятый лорд Нашер, и лорду Мелданену тоже плевать. Внутрь вы не войдете.~
-  IF ~~ THEN REPLY ~Как насчет 200 золотых? Это заставит вас передумать?~ GOTO 11
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,STR)~ THEN REPLY ~Тебе не стоит связываться со мной, тупица. Подумай как следует.~ GOTO 12
-  IF ~~ THEN REPLY ~Я же ГОВОРЮ, я служу Арибет! Ты рискуешь разгневать ее! Забудь о Мелданене, подумай о себе!~ GOTO 13
-  IF ~~ THEN REPLY ~Что ж, тогда придется все усложнить. Настало время умереть, тупица.~ GOTO 14
-  IF ~~ THEN REPLY ~Отлично. Тогда могу ли я задать вам несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,STR)~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @17 GOTO 13
+  IF ~~ THEN REPLY @18 GOTO 14
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
-  SAY ~Правда? А может, вы вернетесь туда, откуда пришли, а я просто забуду о ваших словах, а?~
-  IF ~~ THEN REPLY ~Как насчет 200 золотых? Это заставит вас передумать?~ GOTO 11
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,STR)~ THEN REPLY ~Тебе не стоит связываться со мной, тупица. Подумай как следует.~ GOTO 12
-  IF ~~ THEN REPLY ~Я служу Арибет! Ты рискуешь разгневать ее! Забудь о Мелданене, подумай о себе!~ GOTO 13
-  IF ~~ THEN REPLY ~Что ж, тогда придется все усложнить. Настало время умереть, тупица.~ GOTO 14
-  IF ~~ THEN REPLY ~Отлично. Тогда могу ли я задать вам несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @19
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,STR)~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @20 GOTO 13
+  IF ~~ THEN REPLY @18 GOTO 14
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 6 // from: 0.6
-  SAY ~Идите себе.~
+  SAY @21
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.1
-  SAY ~Конечно. Лорд Мелданен живет здесь. Он из породы колдунов, так что некоторые обычные странности у него есть. И довольно много. Но все в порядке. Мы не ходим внутрь особняка... ну, кроме этого тупицы, Громмина... так что все странности остаются внутри, а мы - в безопасности. Там нет ничего, о чем вам стоило бы беспокоиться. Здешний народ просто очень суеверен, вот и все.~
-  IF ~~ THEN REPLY ~Вы ничего не слышали о странных существах в округе?~ GOTO 8
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,INT)~ THEN REPLY ~Вы пока не ощущаете никаких симптомов чумы? Если нет, скоро ощутите.~ GOTO 9
-  IF ~~ THEN REPLY ~Как я могу попасть внутрь?~ GOTO 10
+  SAY @22
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,INT)~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @13 GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.2
-  SAY ~У лорда Мелданена много странных созданий. Это что-то вроде его хобби. Вам бы лучше задать более конкретный вопрос.~
-  IF ~~ THEN REPLY ~Может быть в последнее время он получил каких-нибудь новых животных?~ GOTO 15
-  IF ~~ THEN REPLY ~Что, собственно, тут происходит?~ GOTO 7
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,INT)~ THEN REPLY ~Вы пока не ощущаете никаких симптомов чумы? Если нет, скоро ощутите.~ GOTO 9
-  IF ~~ THEN REPLY ~Как я могу попасть внутрь?~ GOTO 10
+  SAY @23
+  IF ~~ THEN REPLY @24 GOTO 15
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),17,INT)~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @13 GOTO 10
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.3
-  SAY ~Ч-что вы имеете в виду? В Чернозерье нет чумы!~
-  IF ~~ THEN REPLY ~Пока нет. Но вы в опасности. Поэтому я здесь.~ GOTO 16
-  IF ~~ THEN REPLY ~Конечно, нет. Простите меня... Разрешите узнать еще кое-что.~ GOTO 17
-  IF ~~ THEN REPLY ~Что ж, тогда придется все усложнить. Настало время умереть, тупица.~ GOTO 14
+  SAY @25
+  IF ~~ THEN REPLY @26 GOTO 16
+  IF ~~ THEN REPLY @27 GOTO 17
+  IF ~~ THEN REPLY @18 GOTO 14
 END
 
 IF ~~ THEN BEGIN 10 // from: 3.4
-  SAY ~(Вздыхает) Если это все, что вас удивляет, просто забудьте об этом. Лорд Мелданен не видится ни с кем, кроме нескольких избранных друзей. А они не ходят через парадный вход. Так что работа у меня очень простая. Я никого не впускаю, уже... долго.~
-  IF ~~ THEN REPLY ~Позвольте спросить вас еще кое о чем.~ GOTO 3
-  IF ~~ THEN REPLY ~Я служу в городской страже под началом Арибет. Думаю, я могу войти.~ GOTO 4
-  IF ~~ THEN REPLY ~Отойди в сторону и дай мне войти, иначе пеняй на себя.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 11 // from: 4.1
-  SAY ~Хмм, да, это было бы мило. Мне вообще-то все равно, что случится с этим богатеем. Ладно, входите. Я притворюсь, что ничего не вижу.~
+  SAY @30
   IF ~~ THEN DO ~SetGlobal("MeldanenDoor","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 4.2
-  SAY ~Пф. Ну, я... э, видите ли... Полагаю, людям не следует (кашляет) препятствовать городской страже. Нет, <SIRMAAM>. Ладно, входите. Я притворюсь, что ничего не вижу.~
+  SAY @31
   IF ~~ THEN DO ~SetGlobal("MeldanenDoor","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 4.3
-  SAY ~С-смотрите, я не хочу никаких неприятностей от ее светлости. Игра не стоит свеч. Мне еще работать в этом городе. Я позволю вам войти.~
+  SAY @32
   IF ~~ THEN DO ~SetGlobal("MeldanenDoor","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 4.4
-  SAY ~Что?! Атаковать эту дрянь!!~
+  SAY @33
   IF ~~ THEN DO ~SetGlobal("MeldanenGuard","MYAREA",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.1
-  SAY ~Ну, нет, таких созданий, о которых я думаю, тут нет. Хотя здесь есть... ну, об этом не стоит говорить. Ерунда.~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY ~Нет, нет, я хочу услышать об этом. Это создание опасно?~ GOTO 18
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Нет, нет, я хочу услышать об этом. Это создание опасно?~ GOTO 19
-  IF ~~ THEN REPLY ~Скажите мне. Я не стану спрашивать дважды.~ GOTO 20
-  IF ~~ THEN REPLY ~Позвольте спросить вас еще кое о чем.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @34
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @35 GOTO 18
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @35 GOTO 19
+  IF ~~ THEN REPLY @36 GOTO 20
+  IF ~~ THEN REPLY @29 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 16 // from: 9.1
-  SAY ~Это... это магия колдуна, да? Так и есть! Это он принес нам чуму! Я не хочу остаться тут, чтобы умереть! Я убегу отсюда!! Бежать, бежааать!!~
+  SAY @37
   IF ~~ THEN DO ~SetGlobal("MeldanenDoor","MYAREA",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 9.2
-  SAY ~Эх... э, да, конечно...~
-  IF ~~ THEN REPLY ~Что, собственно, тут происходит?~ GOTO 7
-  IF ~~ THEN REPLY ~Вы ничего не слышали о странных существах в округе?~ GOTO 8
-  IF ~~ THEN REPLY ~Как я могу попасть внутрь?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @38
+  IF ~~ THEN REPLY @10 GOTO 7
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 18 // from: 15.1
-  SAY ~Нет, не опасно. Но ее даже не стоит называть *созданием*. Она вполне симпатичная... только, ну, не знаю... странновата. Не знаю, что лорд Мелданен мог хотеть от нее... э, кроме... ну, это очевидно. Полагаю, даже колдун иногда чувствует одиночество?~
-  IF ~~ THEN REPLY ~А эта... гостья... Мелданена все еще здесь?~ GOTO 21
-  IF ~~ THEN REPLY ~Позвольте спросить вас еще кое о чем.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @39
+  IF ~~ THEN REPLY @40 GOTO 21
+  IF ~~ THEN REPLY @29 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 19 // from: 15.2
-  SAY ~Не стоит об этом. Я не буду обсуждать дела лорда Мелданена.~
-  IF ~~ THEN REPLY ~Скажите мне. Я не стану спрашивать дважды.~ GOTO 20
-  IF ~~ THEN REPLY ~Позвольте спросить вас еще кое о чем.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @41
+  IF ~~ THEN REPLY @36 GOTO 20
+  IF ~~ THEN REPLY @29 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 20 // from: 15.3
-  SAY ~Меня не волнует, сколько раз вы меня спрашиваете. Вот задирать меня не стоит, это точно.~
-  IF ~~ THEN REPLY ~Ну, вот. Вы этого хотели... так умрите же!~ GOTO 14
-  IF ~~ THEN REPLY ~Позвольте спросить вас еще кое о чем.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @42
+  IF ~~ THEN REPLY @43 GOTO 14
+  IF ~~ THEN REPLY @29 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 21 // from: 18.1
-  SAY ~Не знаю. Я так думаю. Мы не видели, как она уходила, это точно.~
-  IF ~~ THEN REPLY ~Позвольте спросить вас еще кое о чем.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @44
+  IF ~~ THEN REPLY @29 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 // -------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)Global("MeldanenDoor","MYAREA",0)~ THEN BEGIN 22 // from:
-  SAY ~Слушайте, убирайтесь отсюда, вы! Вам-то наверняка нельзя внутрь.~
-  IF ~~ THEN REPLY ~Кто здесь живет?~ GOTO 1
-  IF ~~ THEN REPLY ~Может быть, я могу встретиться с владельцем?~ GOTO 2
-  IF ~~ THEN REPLY ~Отлично. Тогда могу ли я задать вам несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~Я служу в городской страже под началом Арибет. Думаю, я могу войти.~ GOTO 4
-  IF ~~ THEN REPLY ~Отойди в сторону и дай мне войти, иначе пеняй на себя.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @45
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 // -------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("MeldanenDoor","MYAREA",0)~ THEN BEGIN 23 // from:
-  SAY ~Входите, если вам это нужно. Я притворюсь, что ничего не вижу.~
+  SAY @46
   IF ~~ THEN EXIT
 END
 

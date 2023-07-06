@@ -4,100 +4,100 @@ BEGIN ~DULCIMAE~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Благодарю за помощь, я как раз пробиралась домой, когда эти скоты нашли меня.~
-  IF ~~ THEN REPLY ~Кто вы? И что делаете на улице?~ GOTO 1
-  IF ~~ THEN REPLY ~С чего вы взяли, что я спасаю вас? Гоните монету...~ GOTO 2
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я служанка леди Танглбрук. Я шла домой со своей утренней смены когда... все *это* началось!~
-  IF ~~ THEN REPLY ~Кто напал на вас?~ GOTO 5
-  IF ~~ THEN REPLY ~Разве здесь недостаточно стражников, чтобы охранять вас?~ GOTO 6
-  IF ~~ THEN REPLY ~Что вы знаете об этой тюрьме?~ GOTO 7
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Что!? Вот, это все, что у меня есть... А теперь оставь меня в покое!~
+  SAY @9
   IF ~~ THEN DO ~GiveGoldForce(92)IncrementGlobal("EvilNW1","GLOBAL",1)EscapeAreaDestroy(50)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Правда? Я уж думала, никогда не доберусь. Мне нужно прямо к капитану Киппу у врат. Я должна рассказать, что я видела.~
+  SAY @10
   IF ~~ THEN DO ~SetGlobal("Follow","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Спасибо еще раз, я так и сделаю...~
+  SAY @11
   IF ~~ THEN DO ~EscapeAreaDestroy(50)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.1
-  SAY ~Сбежавшие из тюрьмы. Кто-то сказал, что их освободил сам главный надзиратель... Мне это не нравится.~
-  IF ~~ THEN REPLY ~Главный надзиратель, да?~ GOTO 8
-  IF ~~ THEN REPLY ~Разве здесь недостаточно стражников, чтобы охранять вас?~ GOTO 6
-  IF ~~ THEN REPLY ~Что вы знаете об этой тюрьме?~ GOTO 7
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.2
-  SAY ~Еще и с этим карантином? Боюсь, они и так очень заняты. Простой народ вроде нас должен защищать себя сам.~
-  IF ~~ THEN REPLY ~Кто напал на вас?~ GOTO 5
-  IF ~~ THEN REPLY ~Что вы знаете об этой тюрьме?~ GOTO 7
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @14
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.3
-  SAY ~Капитан Элейфин - главный надзиратель. Он держит всех в кулаке... по крайней мере, держал раньше. Говорят, что это он освободил заключенных.~
-  IF ~~ THEN REPLY ~Главный надзиратель, да?~ GOTO 8
-  IF ~~ THEN REPLY ~Кто напал на вас?~ GOTO 5
-  IF ~~ THEN REPLY ~Разве здесь недостаточно стражников, чтобы охранять вас?~ GOTO 6
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @15
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
-  SAY ~Он хороший человек, клянусь! Каждый день он встречается в туннелях с леди Танглбрук, чтобы по-дружески сыграть в шахматы... Они ведь двоюродные брат с сестрой...~
-  IF ~~ THEN REPLY ~Туннели? Что за туннели?~ GOTO 9
-  IF ~~ THEN REPLY ~Разве здесь недостаточно стражников, чтобы охранять вас?~ GOTO 6
-  IF ~~ THEN REPLY ~Что вы знаете об этой тюрьме?~ GOTO 7
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @16
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 9 // from: 8.1
-  SAY ~Из-за Воющей Смерти леди Танглбрук очень боялась выходить на улицу. Чтобы успокоить ее, Элейфин провел туннели между тюрьмой и ее поместьем, чтобы они могли продолжать там свои игры.~
-  IF ~~ THEN REPLY ~Где это имение?~ GOTO 10
-  IF ~~ THEN REPLY ~Разве здесь недостаточно стражников, чтобы охранять вас?~ GOTO 6
-  IF ~~ THEN REPLY ~Что вы знаете об этой тюрьме?~ GOTO 7
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @18
+  IF ~~ THEN REPLY @19 GOTO 10
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
-  SAY ~Танглбрук? Это на дальнем конце полуострова. Как я уже говорила, она до ужаса боится Воющей Смерти и заперла за мной дверь, когда я вышла. Может, вы бы могли навестить ее, проверить, все ли в порядке. Хоть она и боится, но оставляет нам запасной ключ под ковриком на лужайке у ее поместья..~
-  IF ~~ THEN REPLY ~Разве здесь недостаточно стражников, чтобы охранять вас?~ GOTO 6
-  IF ~~ THEN REPLY ~Что вы знаете об этой тюрьме?~ GOTO 7
-  IF ~~ THEN REPLY ~Не проводить ли вас до ворот из района?~ GOTO 3
-  IF ~~ THEN REPLY ~Вам лучше идти. Держитесь в тени.~ GOTO 4
+  SAY @20
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Follow","LOCALS",1)~ THEN BEGIN 11 // from:
-  SAY ~Что, что-то не так? Мне нужно добраться до врат полуострова и поговорить с капитаном Киппом.~
-  IF ~~ THEN REPLY ~Тсс, идите за мной.~ DO ~SetGlobal("Pause","LOCALS",0)~ EXIT
-  IF ~~ THEN REPLY ~Подождите здесь минутку.~ GOTO 12
+  SAY @21
+  IF ~~ THEN REPLY @22 DO ~SetGlobal("Pause","LOCALS",0)~ EXIT
+  IF ~~ THEN REPLY @23 GOTO 12
 END
 
 IF ~~ THEN BEGIN 12 // from: 11.2
-  SAY ~Если уж бросаешь меня здесь, пожалуйста, не задерживайся...~
+  SAY @24
   IF ~~ THEN DO ~SetGlobal("Pause","LOCALS",1)~ EXIT
 END
 
@@ -105,7 +105,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Follow","LOCALS",2)~ THEN BEGIN 13 // from:
-  SAY ~Вот и врата района! Огромное спасибо вам за помощь, друг мой.~
+  SAY @25
   IF ~~ THEN DO ~SetGlobal("Follow","LOCALS",3)AddexperienceParty(12000)~ EXIT
 END
 
@@ -113,7 +113,7 @@ END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Follow","LOCALS",3)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 14 // from:
-  SAY ~Огромное спасибо вам за помощь, друг мой.~
+  SAY @26
   IF ~~ THEN EXIT
 END
 
@@ -121,7 +121,7 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  OR(2)GlobalGT("SedosQuest","GLOBAL",2)GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 15 // from:
-  SAY ~Да благословит Хельм искателей приключений! Все пришло в норму, после того, как бунт в тюрьме был подавлен!~
+  SAY @27
   IF ~~ THEN EXIT
 END
 

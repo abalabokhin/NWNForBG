@@ -4,124 +4,124 @@ BEGIN ~ERAVIAN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Отойдите, <SIRMAAM>. Все эти бедняги - жертвы чумы.. Вы можете заразиться, насколько я понимаю.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я скажу вам, что смогу. Только посторонитесь от этих тел, <SIRMAAM>. Постарайтесь не вдыхать дым... фу... это отвратительно...~
-  IF ~~ THEN REPLY ~Вы не боитесь заразиться?~ GOTO 3
-  IF ~~ THEN REPLY ~Откуда поступают все эти тела?~ GOTO 4
-  IF ~~ THEN REPLY ~Да, занятие у вас не из приятных.~ GOTO 5
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Не расскажете ли, что происходит в этом районе?~ GOTO 7
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 8
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Уходите и оставьте меня выполнять эту мрачную обязанность.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Да. Если меня свалит, я буду далеко не первым среди городских стражников. Я могу лишь молить Хельма не оставлять меня и защитить от этого зла.~
-  IF ~~ THEN REPLY ~Откуда поступают все эти тела?~ GOTO 4
-  IF ~~ THEN REPLY ~Да, занятие у вас не из приятных.~ GOTO 5
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Не расскажете ли, что происходит в этом районе?~ GOTO 7
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @11
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Эти? Разумеется, это все жертвы чумы. Многие из этих олухов пытались пробраться в Сердце города и умерли у карантинных ворот. Хотя некоторые из них местные. Несмотря на все наши усилия, Воющая Смерть добралась и до центра. Думаю, дальше будет еще хуже. Пока не настанет улучшение.~
+  SAY @12
   IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.1
-  SAY ~Стыд какой - сжигать этих бедняг, их ведь даже нормально не похоронят. Но выбора нет. Помоги нам, Ильматер, совсем нет выбора.~
-  IF ~~ THEN REPLY ~Вы не боитесь заразиться?~ GOTO 3
-  IF ~~ THEN REPLY ~Да, занятие у вас не из приятных.~ GOTO 5
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Не расскажете ли, что происходит в этом районе?~ GOTO 7
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @13
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Совсем нет. Воющая Смерть уже унесла мою жену и единственного сына. По мне, так хуже уже не будет. Если я заражусь чумой, это еще ничего. Я хотя бы снова увижу свою семью. Есть и другие стражники, им, по крайней мере, есть для кого жить.~
-   IF ~~ THEN REPLY ~Вы не боитесь заразиться?~ GOTO 3
-  IF ~~ THEN REPLY ~Откуда поступают все эти тела?~ GOTO 4
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Не расскажете ли, что происходит в этом районе?~ GOTO 7
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @14
+   IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
-  SAY ~Все знают что-то о чуме. Половина неправда, а половина - сплетни. Не думаю, что мне есть, что добавить.~
-  IF ~~ THEN REPLY ~Что вы можете сказать о чуме?~ GOTO 10
-  IF ~~ THEN REPLY ~Не слышали ли вы о каких-нибудь странных животных в этой местности?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~~ THEN REPLY @18 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
-  SAY ~Тут Воющая смерть, идиотина. Ах, простите, <SIRMAAM>. Нормальным людям нечего сейчас делать в Сердце города.~
-  IF ~~ THEN REPLY ~Вы не боитесь заразиться?~ GOTO 3
-  IF ~~ THEN REPLY ~Откуда поступают все эти тела?~ GOTO 4
-  IF ~~ THEN REPLY ~Да, занятие у вас не из приятных.~ GOTO 5
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @19
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 8 // from: 1.6
-  SAY ~Я не из этого района. И я бы не стал показывать вам дорогу, <SIRMAAM>, даже если бы был местным. Спросите у кого-нибудь еще.~
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Не расскажете ли, что происходит в этом районе?~ GOTO 7
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @20
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.1
-  SAY ~Кроме очевидного? Похоже, боги не в силах излечить Воющую Смерть. Все эти церковные благословления абсолютно бесполезны. Можно подумать, что боги забыли о нас, правда? Ожидаешь только худшего. Можно даже подумать, что скоро наступит зима. Вам еще что-нибудь нужно?~
-  IF ~~ THEN REPLY ~Не слышали ли вы о каких-нибудь странных животных в этой местности?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @21
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~~ THEN REPLY @18 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 11 // from: 6.2
-  SAY ~Животные? Что-то знакомое. Я слышал о животных, пришедших из Уотердипа, но и только. Без сомнения, что-то в городе беспокоит стражников. Но пока я на этом посту, мне многого не говорят.~
-  IF ~~ THEN REPLY ~Так вы не слышали ничего о животных поблизости?~ GOTO 13
-  IF ~~ THEN REPLY ~Что вы можете сказать о чуме?~ GOTO 10
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @22
+  IF ~~ THEN REPLY @23 GOTO 13
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @18 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 12 // from: 6.3
-  SAY ~Что вы хотите знать?~
-  IF ~~ THEN REPLY ~Вы не боитесь заразиться?~ GOTO 3
-  IF ~~ THEN REPLY ~Откуда поступают все эти тела?~ GOTO 4
-  IF ~~ THEN REPLY ~Я исследую чуму. Возможно, вы могли бы рассказать мне о ней...~ GOTO 6
-  IF ~~ THEN REPLY ~Не расскажете ли, что происходит в этом районе?~ GOTO 7
-  IF ~~ THEN REPLY ~Можно мне спросить у вас дорогу?~ GOTO 8
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @24
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 13 // from: 11.1
-  SAY ~*Вздыхает* Смотрите, что я делаю, <SIRMAAM>. Мало кто решится говорить со мной на расстоянии, если вообще решится. Может, вам лучше спросить об этом в местной таверне. Вы еще что-то хотели?~
-  IF ~~ THEN REPLY ~Что вы можете сказать о чуме?~ GOTO 10
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @25
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @18 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 // -------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)~ THEN BEGIN 14 // from:
-  SAY ~Отойдите. Эти трупы заражены чумой.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @26
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 

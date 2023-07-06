@@ -4,512 +4,462 @@ BEGIN ~ERB~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Gender(LastTalkedToBy,FEMALE)CheckStatGT(LastTalkedToBy,9,CHR)CheckStatLT(LastTalkedToBy,15,CHR)~ THEN BEGIN 0 // from:
-  SAY ~Ага, еще одна молодая женщина хочет испытать мастерство гнома во всей его красе!~ [ERB058]
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Меня зовут Эрб Янсен, потомок Янсенов из Кальвера... Но эта ветвь на самом деле - изгнанники из клана Янсенов с Громовой Горы, так что не стоит мне этим хвалиться. Хотя это целая история - как моя семья переселялась в Кальвер. По дороге нельзя было найти ни кусочка репы, скажу я вам. Но еще более примечательно то, как я оказался на этой работе, потому что раньше я был экспертом по сундукам.~
-  IF ~~ THEN REPLY ~Что?... Эксперт по сундукам?~ GOTO 6
-  IF ~~ THEN REPLY ~Первый раз слышу о месте под названием Кальвер.~ GOTO 7
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @6
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Разумеется да! Эксперт по увеселению девушек. С того самого судьбоносного дня, как мисс Бела заметила молодого наивного гнома, пришедшего в этот прекрасный город с рюкзаком репы за плечами. Сначала мне казалось, что я здесь в качестве гостя... И очень желанного, надо сказать... Хотя чаевые казались мне немного странными. Но это была прекрасная работа. Мои дела идут намного лучше, чем у дядюшки Федарда Янсена.~
-  IF ~~ THEN REPLY ~Кто такой дядюшка Федард?~ GOTO 10
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 10
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~О, правда? Это впервые происходит с молодым гномом. Заманчивое предложение, но у меня проблемы, и я не могу принимать клиентов.~
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Что вас расстроило?~ GOTO 11
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Что вас расстроило?~ GOTO 18
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @13
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @14 GOTO 11
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @14 GOTO 18
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Думаю, пока мне не принесли еще один бокал вина, у меня есть время. Спрашивайте.~
-  IF ~  GlobalGT("ErbQuest","GLOBAL",0)~ THEN REPLY ~Я хочу еще раз спросить о том, как достать кольцо.~ GOTO 12
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @15
+  IF ~  GlobalGT("ErbQuest","GLOBAL",0)~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Прощайте, <SIRMAAM>. Пусть вам всегда улыбается удача.~
+  SAY @17
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 0.4
-  SAY ~Ах, да, вот это было золотое время! Изготовление хороших сундуков когда-то считалось благородной профессией. Это были настоящие произведения искусства, не то, что сегодняшние штуковины, которые сможет вскрыть любой вороватый кретин. Я ни на что не намекаю, не думайте. Как и любой молодой гном из Кальвера, я думал лишь о прекрасных сундуках и о том, как с их помощью заработать на жизнь. Увы, ничего не вышло. Теперь мне приходится развлекать женщин.~
-  IF ~~ THEN REPLY ~Первый раз слышу о месте под названием Кальвер.~ GOTO 7
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @18
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 7 // from: 0.2
-  SAY ~Конечно, после великого Неурожая Репы в '45, нет никакого Кальвера.~
-  IF ~~ THEN REPLY ~Понятно. Так значит, все умерли?~ GOTO 14
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 14
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 8 // from: 0.2
-  SAY ~Я знаю, что военные лидеры города, эти Высшие Капитаны, пытаются убить друг друга и захватить власть. А кроме этого мне ничего не известно... Я не самый политический гном по эту сторону Анаврока, знаете ли.~
+  SAY @21
   IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN GOTO 15
   IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN GOTO 16
 END
 
 IF ~~ THEN BEGIN 9 // from: 1.2
-  SAY ~Может быть, это все мое потрясающее чувство дежа вю, но могу поклясться, что вы уже получили работу. Мое кольцо, помните? Или вы уже все забыли?~
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @22
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 10 // from: 0.2
-  SAY ~Сегодня все так говорят. Я же говорил ему, что крылатое приспособление никогда не взлетит. Насколько я знаю, он все еще на дне того каньона.~
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @23
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 11 // from: 0.3
-  SAY ~Мне кажется, вы уже слышали от меня мою историю... И вы согласились возвратить мне кольцо. Или вы уже все забыли?~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @24
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 12 // from: 0.4
-  SAY ~Да? Ну тогда приступайте.~
-  IF ~~ THEN REPLY ~Зачем вам нужно кольцо?~ GOTO 19
-  IF ~~ THEN REPLY ~Скажите еще раз, где мне найти леди Джедейл.~ GOTO 20
-  IF ~~ THEN REPLY ~Разве это не воровство?~ GOTO 21
-  IF ~~ THEN REPLY ~Может, я могу спросить у вас кое-что еще.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 27
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Нет, мне это неинтересно.~ GOTO 28
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @25
+  IF ~~ THEN REPLY @26 GOTO 19
+  IF ~~ THEN REPLY @27 GOTO 20
+  IF ~~ THEN REPLY @28 GOTO 21
+  IF ~~ THEN REPLY @29 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @30 GOTO 27
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @31 GOTO 28
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 0.2
-  SAY ~Когда найдете кольцо, возвращайтесь ко мне, <SIRMAAM>. Буду ждать с нетерпением.~
+  SAY @32
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 0.2
-  SAY ~Конечно, нет! Это была бы очень неприятная история. Все были очень голодны и взаправду *думали*, что непременно умрут. Длительные путешествия без запаса репы очень опасны. Нет, нет, это злобный дядюшка Пинто продал права какому-то человеку за мешок репы в приступе жадности. Они пришли и переименовали его в 'Уотердип' или еще в какую-то ерунду.~
-  IF ~~ THEN REPLY ~Это хорошая история.~ GOTO 22
-  IF ~~ THEN REPLY ~Сомневаюсь, что это правда.~ GOTO 23
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @33
+  IF ~~ THEN REPLY @34 GOTO 22
+  IF ~~ THEN REPLY @35 GOTO 23
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 15 // from: 0.2
-  SAY ~Вы хотели что-нибудь еще?~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @36
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 16 // from: 0.2
-  SAY ~Больше мне особо нечего сказать. Мои извинения... Обычно я люблю поболтать, просто сейчас у я кое-чем расстроен.~
-  IF ~~ THEN REPLY ~Почему вы так расстроены?~ GOTO 24
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @37
+  IF ~~ THEN REPLY @38 GOTO 24
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 17 // from: 0.4
-  SAY ~Да будь я полуросликом... Хотя... у меня есть для вас кое-какая работа. Маленькое поручение, которое довольно опасно выполнять, когда на улицах творится такое.~
-  IF ~~ THEN REPLY ~Расскажите мне о работе.~ GOTO 18
-  IF ~~ THEN REPLY ~Может, я могу спросить у вас кое-что еще.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @39
+  IF ~~ THEN REPLY @40 GOTO 18
+  IF ~~ THEN REPLY @29 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 18 // from: 0.3
-  SAY ~Как бы мне это объяснить? Значит... у одной из моих клиенток, красивой благородной дамы по имени леди Джедейл, есть нечто, что принадлежит мне. То есть, теперь это фактически принадлежит ей, раз оно у нее... Но я хочу получить этот предмет обратно. Это кольцо, маленький презент от меня, на нем выгравировано мое имя. Заберите его у нее и отдайте мне прямо в руки, я буду самым счастливым гномом на земле.~
-  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY ~У меня есть кольцо.~ GOTO 25
-  IF ~~ THEN REPLY ~Зачем вам нужно кольцо?~ GOTO 19
-  IF ~~ THEN REPLY ~А нельзя просто выкупить его у нее?~ GOTO 26
-  IF ~~ THEN REPLY ~Разве это не воровство?~ GOTO 21
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 27
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Нет, мне это неинтересно.~ GOTO 28
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @41
+  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY @42 GOTO 25
+  IF ~~ THEN REPLY @26 GOTO 19
+  IF ~~ THEN REPLY @43 GOTO 26
+  IF ~~ THEN REPLY @28 GOTO 21
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @30 GOTO 27
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @31 GOTO 28
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 19 // from: 0.4
-  SAY ~Ха-ха... понимаете ли... Этот подарок был сделан под влиянием момента. Муж леди Джедейл очень могущественный человек, мне не следовало забывать этого, но я забылся в порыве страсти. Когда вернется лорд Джедейл, у его жены не должно быть моего кольца. Он славится своим крутым нравом, а мне очень дороги мои ножки, хоть они и короткие.~
+  SAY @44
   IF ~~ THEN GOTO 29
 END
 
 IF ~~ THEN BEGIN 20 // from: 0.4
-  SAY ~Вы найдете ее у себя дома на северной стороне округа. Запомните... не причиняйте ей вреда без надобности. Она же человек, так что это не ее вина, что у нее шариков в голове не хватает.~
-  IF ~~ THEN REPLY ~Зачем вам нужно кольцо?~ GOTO 19
-  IF ~~ THEN REPLY ~Разве это не воровство?~ GOTO 21
-  IF ~~ THEN REPLY ~Может, я могу спросить у вас кое-что еще.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 27
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Нет, мне это неинтересно.~ GOTO 28
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @45
+  IF ~~ THEN REPLY @26 GOTO 19
+  IF ~~ THEN REPLY @28 GOTO 21
+  IF ~~ THEN REPLY @29 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @30 GOTO 27
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @31 GOTO 28
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 21 // from: 0.3
-  SAY ~Конечно нет. Кольцо было подарком, а я веду себя некрасиво. Но приходится, поскольку это вопрос жизни и смерти, так что я пойду на эту жертву.~
-  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY ~У меня есть кольцо.~ GOTO 25
-  IF ~~ THEN REPLY ~Зачем вам нужно кольцо?~ GOTO 19
-  IF ~~ THEN REPLY ~Скажите, где мне найти леди Джедейл.~ GOTO 20
-  IF ~~ THEN REPLY ~А нельзя просто выкупить его у нее?~ GOTO 26
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 27
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Нет, мне это неинтересно.~ GOTO 28
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @46
+  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY @42 GOTO 25
+  IF ~~ THEN REPLY @26 GOTO 19
+  IF ~~ THEN REPLY @47 GOTO 20
+  IF ~~ THEN REPLY @43 GOTO 26
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @30 GOTO 27
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @31 GOTO 28
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 22 // from: 0.2
-  SAY ~Не так ли? Разумеется, мои родственники выгнали дядюшку Пинто из города за такую глупость. Они думали, нужно было просить как минимум два мешка. Так вот... Вы что-нибудь еще хотели?~
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @48
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 23 // from: 0.2
-  SAY ~Разумеется, не обошлось и без золота... Но дядюшка Пинто всегда говорил только о репе. Но в следующем году мы собрали огромный урожай, и его все осуждали за эту сделку. Какая жалость, все же. Так вот... Вы что-нибудь еще хотели?~
-  IF ~~ THEN REPLY ~Вы знаете, что происходит в Лускане?~ GOTO 8
-  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 9
-  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY ~Если знаете, скажите, где найти работу.~ GOTO 17
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @49
+  IF ~~ THEN REPLY @9 GOTO 8
+  IF ~  GlobalGT("ErbQuest","GLOBAL",1)~ THEN REPLY @10 GOTO 9
+  IF ~  GlobalLT("ErbQuest","GLOBAL",2)~ THEN REPLY @10 GOTO 17
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 24 // from: 0.2
-  SAY ~Да будь я полуросликом... Хотя... у меня есть для вас кое-какая работа. Маленькое поручение, которое довольно опасно выполнять, когда на улицах творится такое.~
-  IF ~~ THEN REPLY ~Расскажите мне о работе.~ GOTO 18
-  IF ~~ THEN REPLY ~Может, я могу спросить у вас кое-что еще.~ GOTO 4
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @39
+  IF ~~ THEN REPLY @40 GOTO 18
+  IF ~~ THEN REPLY @29 GOTO 4
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 25 // from: 0.3
-  SAY ~Как же вам удалось убедить эту женщину расстаться с ним? Ну да неважно... Лучше мне этого не знать. Моя тетушка Бинни сказала, выйдя замуж за несчастного старого дядюшку Торчкозуба: 'неведение - это счастье'.~
-  IF ~  GlobalGT("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~Помнится, вы говорили о награде?~ GOTO 30
-  IF ~  GlobalGT("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,7,CHR)CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~Помнится, вы говорили о награде?~ GOTO 31
-  IF ~  GlobalGT("ErbQuest","GLOBAL",0)CheckStatLT(LastTalkedToBy,8,CHR)~ THEN REPLY ~Помнится, вы говорили о награде?~ GOTO 32
-  IF ~  Global("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~А разве мне не полагается награда?~ GOTO 30
-  IF ~  Global("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,7,CHR)CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~А разве мне не полагается награда?~ GOTO 31
-  IF ~  Global("ErbQuest","GLOBAL",0)CheckStatLT(LastTalkedToBy,8,CHR)~ THEN REPLY ~А разве мне не полагается награда?~ GOTO 32
+  SAY @50
+  IF ~  GlobalGT("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY @51 GOTO 30
+  IF ~  GlobalGT("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,7,CHR)CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY @51 GOTO 31
+  IF ~  GlobalGT("ErbQuest","GLOBAL",0)CheckStatLT(LastTalkedToBy,8,CHR)~ THEN REPLY @51 GOTO 32
+  IF ~  Global("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY @52 GOTO 30
+  IF ~  Global("ErbQuest","GLOBAL",0)CheckStatGT(LastTalkedToBy,7,CHR)CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY @52 GOTO 31
+  IF ~  Global("ErbQuest","GLOBAL",0)CheckStatLT(LastTalkedToBy,8,CHR)~ THEN REPLY @52 GOTO 32
 END
 
 IF ~~ THEN BEGIN 26 // from: 0.3
-  SAY ~Ха! Леди была так рада, когда получила подарок... И очень рассердилась, когда потребовалось его вернуть. Она говорит, что кольцо ей нравится. Нравится гораздо больше, чем я, видимо. Вот почему мне нужен кто-то, кто достанет мне кольцо. Со мной она сейчас и говорить не станет.~
-  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY ~У меня есть кольцо.~ GOTO 25
-  IF ~~ THEN REPLY ~Зачем вам нужно кольцо?~ GOTO 19
-  IF ~~ THEN REPLY ~Разве это не воровство?~ GOTO 21
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 27
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Нет, мне это неинтересно.~ GOTO 28
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @53
+  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY @42 GOTO 25
+  IF ~~ THEN REPLY @26 GOTO 19
+  IF ~~ THEN REPLY @28 GOTO 21
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @30 GOTO 27
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @31 GOTO 28
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 27 // from: 0.3
-  SAY ~Превосходно! Леди Джедейл у себя дома, неподалеку отсюда. Идите на север, а там поверните направо... Если можете, будьте с ней вежливы. Я не хочу, чтобы этой чудаковатой барышне причинили вред... Иначе потом могут сильно навредить мне.~
-  IF ~~ THEN DO ~SetGlobal("ErbQuest","GLOBAL",2)~ UNSOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.~ EXIT
+  SAY @54
+  IF ~~ THEN DO ~SetGlobal("ErbQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @55 EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 0.3
-  SAY ~Хорошо, хорошо... Будь по-вашему. Дженни Янсен тоже была мелочной, вот и осталась бедной старой девой в маленькой хижине и с тремя зубами. Выбор за вами.~
+  SAY @56
   IF ~~ THEN DO ~SetGlobal("ErbQuest","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 0.3
-  SAY ~Леди Джедейл, скажем так, не думает о том, что ее муж не будет рад, когда найдет у своей жены мое кольцо. Она меньше в этом разбирается, чем эльфы понимают в обуви, так я скажу. Наверное, вы захотите задать пару вопросов, прежде чем идти за моим кольцом?~
-  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY ~У меня есть кольцо.~ GOTO 25
-  IF ~~ THEN REPLY ~А нельзя просто выкупить его у нее?~ GOTO 26
-  IF ~~ THEN REPLY ~Разве это не воровство?~ GOTO 21
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Ладно, я это сделаю.~ GOTO 27
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~Нет, мне это неинтересно.~ GOTO 28
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @57
+  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY @42 GOTO 25
+  IF ~~ THEN REPLY @43 GOTO 26
+  IF ~~ THEN REPLY @28 GOTO 21
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @30 GOTO 27
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @31 GOTO 28
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 IF ~~ THEN BEGIN 30 // from: 0.3
-  SAY ~Как только я вас увидел, я тут же подумал, что у вас все получится! "Эрб, - подумал я, - вот <MALEFEMALE>, еще удачливее, чем дядюшка Большезад!" И вам все удалось. Так значит вот... 650 золотых за кольцо.~
-  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY ~Вы могли бы дать и побольше собрату-гному!~ GOTO 33
-  IF ~  CheckStatGT(LastTalkedToBy,16,INT)~ THEN REPLY ~Его, знаете ли, было нелегко достать. Думаю, вы могли бы заплатить и побольше.~ GOTO 34
-  IF ~  CheckStatLT(LastTalkedToBy,17,INT)~ THEN REPLY ~Его, знаете ли, было нелегко достать. Думаю, вы могли бы заплатить и побольше.~ GOTO 35
-  IF ~~ THEN REPLY ~Выкладывайте еще деньги, а не то вы не успеете даже пожалеть об этом!~ GOTO 36
-  IF ~~ THEN REPLY ~Спасибо - с вами очень приятно иметь дело.~ GOTO 37
+  SAY @58
+  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY @59 GOTO 33
+  IF ~  CheckStatGT(LastTalkedToBy,16,INT)~ THEN REPLY @60 GOTO 34
+  IF ~  CheckStatLT(LastTalkedToBy,17,INT)~ THEN REPLY @60 GOTO 35
+  IF ~~ THEN REPLY @61 GOTO 36
+  IF ~~ THEN REPLY @62 GOTO 37
 END
 
 IF ~~ THEN BEGIN 31 // from: 0.3
-  SAY ~Да, конечно! Разве я не обещал вам, а? Никто не посмеет сказать, что Эрб не сдержал своего слова... Не то, что моя бедная сумасшедшая тетушка Фанни, три раза выходившая замуж. Хммм... на чем мы остановились? Ах, да. Вот вам 500 золотых за кольцо.~
-  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY ~Вы могли бы дать и побольше собрату-гному!~ GOTO 38
-  IF ~  CheckStatGT(LastTalkedToBy,16,INT)~ THEN REPLY ~Его, знаете ли, было нелегко достать. Думаю, вы могли бы заплатить и побольше.~ GOTO 39
-  IF ~  CheckStatLT(LastTalkedToBy,17,INT)~ THEN REPLY ~Его, знаете ли, было нелегко достать. Думаю, вы могли бы заплатить и побольше.~ GOTO 40
-  IF ~~ THEN REPLY ~Выкладывайте еще деньги, а не то вы не успеете даже пожалеть об этом!~ GOTO 41
-  IF ~~ THEN REPLY ~Спасибо - с вами очень приятно иметь дело.~ GOTO 42
+  SAY @63
+  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY @59 GOTO 38
+  IF ~  CheckStatGT(LastTalkedToBy,16,INT)~ THEN REPLY @60 GOTO 39
+  IF ~  CheckStatLT(LastTalkedToBy,17,INT)~ THEN REPLY @60 GOTO 40
+  IF ~~ THEN REPLY @61 GOTO 41
+  IF ~~ THEN REPLY @62 GOTO 42
 END
 
 IF ~~ THEN BEGIN 32 // from: 0.3
-  SAY ~Нужно признать, что сначала у меня было плохое предчувствие... Как когда случайно проглотишь кусочек меди. Все это дело сулило мне немалые проблемы. Но все вышло в лучшем виде! Как насчет 350 золотых?~
-  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY ~Вы могли бы дать и побольше собрату-гному!~ GOTO 43
-  IF ~  CheckStatGT(LastTalkedToBy,16,INT)~ THEN REPLY ~Его, знаете ли, было нелегко достать. Думаю, вы могли бы заплатить и побольше.~ GOTO 44
-  IF ~  CheckStatLT(LastTalkedToBy,17,INT)~ THEN REPLY ~Его, знаете ли, было нелегко достать. Думаю, вы могли бы заплатить и побольше.~ GOTO 45
-  IF ~~ THEN REPLY ~Выкладывайте еще деньги, а не то вы не успеете даже пожалеть об этом!~ GOTO 46
-  IF ~~ THEN REPLY ~Спасибо - с вами очень приятно иметь дело.~ GOTO 47
+  SAY @64
+  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY @59 GOTO 43
+  IF ~  CheckStatGT(LastTalkedToBy,16,INT)~ THEN REPLY @60 GOTO 44
+  IF ~  CheckStatLT(LastTalkedToBy,17,INT)~ THEN REPLY @60 GOTO 45
+  IF ~~ THEN REPLY @61 GOTO 46
+  IF ~~ THEN REPLY @62 GOTO 47
 END
 
 IF ~~ THEN BEGIN 33 // from: 0.3
-  SAY ~Похоже, глядя на меня, все думают, что мы, гномы, гораздо удачливее всех остальных. Что ж, хорошо... Вот вам еще 100 монет за беспокойство. Не тратьте их все в одном месте. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @65
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 0.3
-  SAY ~Пожалуй, вы и впрямь заслуживаете немного больше. Представляю себе, как неприятно было иметь дело с леди Джедейл. Если ее разозлить, она еще страшней грифона, у которого выдрали перья из хвоста. Вот еще 100 монет. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @67
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 0.3
-  SAY ~Очень мило с вашей стороны пытаться надуть меня, но эта награда уже больше, чем само кольцо стоит.~
-  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY ~Вы могли бы дать и побольше собрату-гному!~ GOTO 33
-  IF ~~ THEN REPLY ~Выкладывайте еще деньги, а не то вы не успеете даже пожалеть об этом!~ GOTO 36
-  IF ~~ THEN REPLY ~Спасибо - с вами очень приятно иметь дело.~ GOTO 37
+  SAY @68
+  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY @59 GOTO 33
+  IF ~~ THEN REPLY @61 GOTO 36
+  IF ~~ THEN REPLY @62 GOTO 37
 END
 
 IF ~~ THEN BEGIN 36 // from: 0.3
-  SAY ~Ну-ну, успокойтесь. Не нужно так сердиться. Не нужно применять силу и выказывать недовольство. Вот, у меня есть еще 100 монет. Возьмите - они ваши. Но больше у меня ничего нет. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @69
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 0.3
-  SAY ~А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(650)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @70
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(650)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 0.3
-  SAY ~Похоже, глядя на меня, все думают, что мы, гномы, гораздо удачливее всех остальных. Что ж, хорошо... Вот вам еще 100 монет за беспокойство. Не тратьте их все в одном месте. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @65
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 0.3
-  SAY ~Пожалуй, вы и впрямь заслуживаете немного больше. Представляю себе, как неприятно было иметь дело с леди Джедейл. Если ее разозлить, она еще страшней грифона, у которого выдрали перья из хвоста. Вот еще 100 монет. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @67
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 0.3
-  SAY ~Да, конечно! Разве я не обещал вам, а? Никто не посмеет сказать, что Эрб не сдержал своего слова... Не то, что моя бедная сумасшедшая тетушка Фанни, три раза выходившая замуж. Хммм... на чем мы остановились? Ах, да. Вот вам 500 золотых за кольцо.~
-  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY ~Вы могли бы дать и побольше собрату-гному!~ GOTO 38
-  IF ~~ THEN REPLY ~Выкладывайте еще деньги, а не то вы не успеете даже пожалеть об этом!~ GOTO 41
-  IF ~~ THEN REPLY ~Спасибо - с вами очень приятно иметь дело.~ GOTO 42
+  SAY @63
+  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY @59 GOTO 38
+  IF ~~ THEN REPLY @61 GOTO 41
+  IF ~~ THEN REPLY @62 GOTO 42
 END
 
 IF ~~ THEN BEGIN 41 // from: 0.3
-  SAY ~Ну-ну, успокойтесь. Не нужно так сердиться. Не нужно применять силу и выказывать недовольство. Вот, у меня есть еще 100 монет. Возьмите - они ваши. Но больше у меня ничего нет. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @69
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 0.3
-  SAY ~А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(500)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @70
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(500)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 43 // from: 0.3
-  SAY ~Похоже, глядя на меня, все думают, что мы, гномы, гораздо удачливее всех остальных. Что ж, хорошо... Вот вам еще 100 монет за беспокойство. Не тратьте их все в одном месте. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @65
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 0.3
-  SAY ~Пожалуй, вы и впрямь заслуживаете немного больше. Представляю себе, как неприятно было иметь дело с леди Джедейл. Если ее разозлить, она еще страшней грифона, у которого выдрали перья из хвоста. Вот еще 100 монет. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @67
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 0.3
-  SAY ~Очень мило с вашей стороны пытаться надуть меня, но эта награда уже больше, чем само кольцо стоит.~
-  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY ~Вы могли бы дать и побольше собрату-гному!~ GOTO 43
-  IF ~~ THEN REPLY ~Выкладывайте еще деньги, а не то вы не успеете даже пожалеть об этом!~ GOTO 46
-  IF ~~ THEN REPLY ~Спасибо - с вами очень приятно иметь дело.~ GOTO 47
+  SAY @68
+  IF ~  Race(LastTalkedToBy,GNOME)~ THEN REPLY @59 GOTO 43
+  IF ~~ THEN REPLY @61 GOTO 46
+  IF ~~ THEN REPLY @62 GOTO 47
 END
 
 IF ~~ THEN BEGIN 46 // from: 0.3
-  SAY ~Ну-ну, успокойтесь. Не нужно так сердиться. Не нужно применять силу и выказывать недовольство. Вот, у меня есть еще 100 монет. Возьмите - они ваши. Но больше у меня ничего нет. А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @69
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 0.3
-  SAY ~А теперь мне нужно ненадолго уехать, на случай, если леди Джедейл решит разыскать меня, или еще что похуже. Очень хорошо, что карлики такие низкие и умеют хорошо прятаться. Прощайте, друг мой!~
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(350)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(%Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он вдруг обеспокоился тем, что кольцо может найти ее ревнивый муж, поэтому попросил искателей приключений вернуть ему кольцо настолько деликатно, насколько это возможно.%)EscapeArea()~ SOLVED_JOURNAL ~Лускан: Деликатная проблема Эрба
-
-Эрб Янсен нажил себе большие неприятности из-за кольца, которое подарил своей любовнице из Лускана, леди Джедейл. Он обеспоен тем, что кольцо может найти ее ревнивый муж, и поэтому попросил искателей приключений вернуть ему кольцо. Им удалось это сделать, и Эрб, получив свое кольцо обратно, сказал, что он будет им вечно благодарен.~ EXIT
+  SAY @70
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(350)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
 END
 
 // -----------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Gender(LastTalkedToBy,FEMALE)CheckStatGT(LastTalkedToBy,14,CHR)~ THEN BEGIN 48 // from:
-  SAY ~О, здравствуйте, мой маленький милый персик. Вы совсем не похожи на всяких старух, которых мне всегда приходится обслуживать. Хотя мне дареному коню в зубы смотреть не приходится...~ [ERB057]
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @71
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 // -----------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Gender(LastTalkedToBy,FEMALE)CheckStatLT(LastTalkedToBy,10,CHR)~ THEN BEGIN 49 // from:
-  SAY ~Хммм. Вижу, что когда дело доходит до женщин, желающих карликов на улицах Лускана, никого не находится. Ну что ж! В моей жизни мне приходилось выполнять работу и потруднее!~ [ERB059]
-  IF ~~ THEN REPLY ~Вы хотите оскорбить меня?~ GOTO 50
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @72
+  IF ~~ THEN REPLY @73 GOTO 50
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 50 // from: 0.3
-  SAY ~Разумеется, нет. Мои чары так сильны, что даже самые красивые леди ищут со мной встречи... Так что у вас есть полное право требовать самого лучшего.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @74
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 // -----------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)~ THEN BEGIN 51 // from:
-  SAY ~Я спрашиваю себя: этот парень пришел поболтать или он у него к карлику другое дело, о котором я не смею даже спрашивать? Надеюсь, что первое, но с таким прекрасным карликом, как я, возможно все, что угодно.~ [ERB056]
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы один из мужчин борделя?~ GOTO 2
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @75
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 // -----------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)GlobalLT("ErbQuest","GLOBAL",2)~ THEN BEGIN 52 // from:
-  SAY ~Вы снова вернулись? В конце концов, ко мне все возвращаются... даже наемные убийцы, ну да не будем об этом.~ [ERB055]
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Перед этим вы сказали что-то насчет работы.~ GOTO 18
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @76
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @77 GOTO 18
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 // -----------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Gender(LastTalkedToBy,FEMALE)GlobalLT("ErbQuest","GLOBAL",2)~ THEN BEGIN 52 // from:
-  SAY ~Как мило. Вы снова вернулись, чтобы полюбоваться на карлика во всей его красе, так?~ [ERB054]
-  IF ~~ THEN REPLY ~Мне бы хотелось задать вам несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Перед этим вы сказали что-то насчет работы.~ GOTO 18
-  IF ~~ THEN REPLY ~Я хочу тебя снять.~ GOTO 3
-  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 5
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @78
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @77 GOTO 18
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~  !Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 // -----------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("ErbQuest","GLOBAL",2)~ THEN BEGIN 52 // from:
-  SAY ~Как проходит поиск? Скажите мне, что кольцо у вас... Мой третий большой палец чешется, как безумный, а это значит, что война может кончиться в любую секунду.~ [ERB053]
-  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY ~У меня есть кольцо.~ GOTO 25
-  IF ~~ THEN REPLY ~Я хочу еще раз спросить о том, как достать кольцо.~ GOTO 12
-  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY ~До свидания.~ GOTO 13
+  SAY @79
+  IF ~  PartyHasItem("Nwmisc61")~ THEN REPLY @42 GOTO 25
+  IF ~~ THEN REPLY @16 GOTO 12
+  IF ~  Global("ErbQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 13
 END
 
 // -----------------------------------------
 
 IF WEIGHT #7 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("ErbQuest","GLOBAL",3)~ THEN BEGIN 52 // from:
-  SAY ~Мне и вправду нужно идти... В Мирабаре есть ящик с хлебом на мое имя.~ [ERB052]
+  SAY @80
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 

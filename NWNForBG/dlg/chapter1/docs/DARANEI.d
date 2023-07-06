@@ -4,221 +4,221 @@ BEGIN ~DARANEI~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)!Dead("Vengaul")~ THEN BEGIN 0 // from:
-  SAY ~Спасибо, что спасли меня... если, конечно, вы именно это сделали. Я не знаю вас, и не знаю ваших мотивов.~ [DARANE51]
-  IF ~~ THEN REPLY ~Успокойтесь. Я не причиню вам вреда.~ GOTO 1
-  IF ~~ THEN REPLY ~А я не знаю вас. Неужели мне до вас есть дело?~ GOTO 2
-  IF ~~ THEN REPLY ~Если понадобится, вы умрете.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Приятно слышать добрый голос. Этих людей нельзя было назвать ласковыми, а их вопросы все время становились все более и более настойчивыми. Я Дара'ней, и я рассчитываю на ваше милосердие. Я надеялась, что вас послал Венгаул, но у меня нет от него вестей. Его аукцион не состоялся.~
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @4
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @6 GOTO 6
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @7 GOTO 7
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~У меня нет ответа. Хотя я в худшем положении, мне приходиться верить, что вы не причините мне вреда. Я Дара'ней, и я рассчитываю на ваше милосердие. Я надеялась, что вас послал Венгаул, но у меня нет от него вестей. Его аукцион не состоялся.~
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @9
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @6 GOTO 6
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @7 GOTO 7
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Я не могу сражаться с вами, так же как и с теми, кто держал меня в плену раньше. По крайней мере, у них были на то причины. А о вас я знаю очень мало. Я Дара'ней, и я рассчитываю на ваше милосердие. Я надеялась, что вас послал Венгаул, но у меня нет от него вестей. Его аукцион не состоялся.~
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @10
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @6 GOTO 6
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @7 GOTO 7
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Отлично. Как я уже сказала, меня зовут Дара'ней. Я... служу Венгаулу Кровавому Парусу, Алому Клинку и врагу лорда Нашера Алагондара.~
-  IF ~~ THEN REPLY ~Почему вас заключили здесь?~ GOTO 9
-  IF ~~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 9
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Если не возражаете, я задам вопрос первой? Кому вы служите? Я ничего не скажу, если вы собираетесь использовать мои слова против людей, которых я люблю.~
-  IF ~~ THEN REPLY ~Я действую в качестве стражника под началом Арибет и Нашера.~ DO ~SetGlobal("PlayerIntroduced","LOCALS",1)~ GOTO 10
-  IF ~~ THEN REPLY ~Может быть, я здесь, чтобы убить вас. Может быть, решение просто пока не принято.~ GOTO 11
-  IF ~~ THEN REPLY ~Это не ваше дело.~ GOTO 12
+  SAY @13
+  IF ~~ THEN REPLY @14 DO ~SetGlobal("PlayerIntroduced","LOCALS",1)~ GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 12
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.3
-  SAY ~Ну, не знаю. Хотелось бы мне, чтобы Венгаул никогда не находил этого существа. Это принесло нам только неприятности.~
-  IF ~~ THEN REPLY ~Какое существо вы имеете в виду?~ GOTO 13
-  IF ~~ THEN REPLY ~Вернемся к моим предыдущим вопросам.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 13
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
-  SAY ~Венгаул "Кровавый парус", Алый Клинок. Он бывший вождь взбунтовавшихся "Кровавых моряков", и мой нареченный. Увы, мы уже очень давно в разлуке.~
-  IF ~~ THEN REPLY ~Почему "Кровавые моряки" бунтуют?~ GOTO 15
-  IF ~~ THEN REPLY ~Где сейчас Венгаул Кровавый Парус?~ GOTO 16
-  IF ~~ THEN REPLY ~Вернемся к моим предыдущим вопросам.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 15
+  IF ~~ THEN REPLY @22 GOTO 16
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 8 // from: 1.7
-  SAY ~Прощайте. Я останусь здесь. Венгаул найдет меня, когда сочтет, что для этого настало время. Если только его игра не выйдет из под контроля окончательно...~
+  SAY @23
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.1
-  SAY ~Это были люди Каллика. Он был лейтенантом Венгаула, и хотел, чтобы они допросили меня и выяснили, где скрывается Венгаул. Может показаться, что Каллик больше не хочет преследовать моего Венгаула, но я не думаю, что он дошел до этого.~
-  IF ~~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @24
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 10 // from: 5.1
-  SAY ~Ясно. Я начинаю понимать, почему вас так интересует Венгаул и его "Кровавые моряки". Задавайте свои вопросы. Я попытаюсь ответить.~
-  IF ~~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @25
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 11 // from: 5.2
-  SAY ~Тогда зачем вы меня спасли? Возможно, вы сами не знаете ответа, но я не могу доверять человеку, который открыто угрожает мне. Если таковы ваши намерения, больше я вам ничего не скажу. Я могу пожертвовать своей жалкой жизнью, чтобы оградить от опасности моего возлюбленного, Венгаула.~
+  SAY @26
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 5.3
-  SAY ~Как я могу доверять вам, если вы не хотите соблюдать элементарную вежливость по отношению ко мне? Неужели я так многого прошу? Если таковы ваши намерения, больше я вам ничего не скажу. Я могу пожертвовать своей жалкой жизнью, чтобы оградить от опасности моего возлюбленного, Венгаула.~
+  SAY @27
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 6.1
-  SAY ~Венгаул сказал, что это был кокатрис из Уотердипа, и что это как-то связано с чумой. Он даже утверждал, что это часть лекарства. Он нашел его на улицах, пока городская стража занималась чумой и тем, что случилось в Академии. Если б не он, кокатрис бы исчез. Он хотел убедиться, что тварь попадет в правильные руки, но сначала он решил пригласить лорда Нашера на этот 'аукцион'. Для Венгаула это было всего лишь игрой.~
-  IF ~~ THEN REPLY ~Лорд Нашер? Зачем ему приходить?~ GOTO 17
-  IF ~~ THEN REPLY ~Вернемся к моим предыдущим вопросам.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 17
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 14 // from: 6.2
-  SAY ~Я отвечу, если буду в силах.~
-  IF ~~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @30
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 15 // from: 7.1
-  SAY ~Похоже, что они устали от Венгаула. Его методы ведения дел иногда... трудны для понимания. Они ценят его грандиозные планы меньше, чем раньше. Он всегда подчеркивал, что все нужно делать со стилем, но теперь им нужны только деньги.~
-  IF ~~ THEN REPLY ~Кто руководит восстанием?~ GOTO 21
-  IF ~~ THEN REPLY ~Где сейчас Венгаул Кровавый Парус?~ GOTO 16
-  IF ~~ THEN REPLY ~Вернемся к моим предыдущим вопросам.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @31
+  IF ~~ THEN REPLY @32 GOTO 21
+  IF ~~ THEN REPLY @22 GOTO 16
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 16 // from: 7.2
-  SAY ~Не могу сказать наверняка, но он старый, закоренелый пират. Он сказал, я буду знать, где его найти, и у меня есть несколько мыслей по этому поводу. Венгаул в бегах, он направляется туда, где, как он считает, он будет в безопасности. Либо в "Серебряные паруса", либо в Акведуки. Мне кажется, из обоих этих мест можно попасть в его подземную сокровищницу.~
-  IF ~~ THEN REPLY ~Если вы поможете мне найти его, я сохраню ему жизнь.~ GOTO 22
-  IF ~~ THEN REPLY ~Я хочу найти его. Не могу обещать, что он не пострадает.~ GOTO 23
-  IF ~~ THEN REPLY ~Скажите мне, где он, или я убью вас!~ GOTO 24
+  SAY @33
+  IF ~~ THEN REPLY @34 GOTO 22
+  IF ~~ THEN REPLY @35 GOTO 23
+  IF ~~ THEN REPLY @36 GOTO 24
 END
 
 IF ~~ THEN BEGIN 17 // from: 13.1
-  SAY ~Эти двое старые соперники. Они вечно искали способа навредить друг другу. Венгаул считал, что Нашер не сможет пройти мимо этого дела. Видите ли, Венгаул хотел, чтобы Нашер пришел в эту глупую таверну и признался перед всеми, что он совершил ошибку, что ему нужен был Венгаул. Потом он собирался отдать кокатриса. Все это было для него игрой.~
-  IF ~~ THEN REPLY ~Идиот! Он играет с человеческими жизнями!~ GOTO 18
-  IF ~~ THEN REPLY ~Эта его игра не понравилась его "Кровавым морякам".~ GOTO 19
-  IF ~~ THEN REPLY ~Вернемся к моим предыдущим вопросам.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @37
+  IF ~~ THEN REPLY @38 GOTO 18
+  IF ~~ THEN REPLY @39 GOTO 19
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 18 // from: 17.1
-  SAY ~Он все время играет с жизнями, точно так же, как и Нашер. Так поступают все правители. Только на этот раз ставки были слишком высоки. Видите ли, люди Венгаула так и не доставили послание лорду Нашеру. Более того, лейтенант, которому он больше всего доверял, устроил заговор с целью его убить. Все планы расстроены.~
+  SAY @40
   IF ~~ THEN GOTO 20
 END
 
 IF ~~ THEN BEGIN 19 // from: 17.2
-  SAY ~Нет, эта игра с Нашером приняла немного более серьезный характер, чем он того желал. На этот раз ставки были слишком высоки. Видите ли, люди Венгаула так и не доставили послание лорду Нашеру. Более того, лейтенант, которому он больше всего доверял, устроил заговор с целью его убить. Все планы расстроены.~
+  SAY @41
   IF ~~ THEN GOTO 20
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.1 19.1
-  SAY ~Венгаул собирался вернуть эту тварь. Он никогда не причинил бы вреда невинным людям. Просто все вышло из-под контроля.~
-  IF ~~ THEN REPLY ~Где сейчас Венгаул Кровавый Парус?~ GOTO 16
-  IF ~~ THEN REPLY ~Кто руководит восстанием?~ GOTO 21
+  SAY @42
+  IF ~~ THEN REPLY @22 GOTO 16
+  IF ~~ THEN REPLY @32 GOTO 21
 END
 
 IF ~~ THEN BEGIN 21 // from: 20.2
-  SAY ~Каллик, лейтенант Венгаула. Он не одобрял этого аукциона, поэтому теперь сам пытается захватить власть над "Кровавыми моряками". Он совершенно не ценит стильных комбинаций. Каллик убьет Венгаула, если найдет его. Под его руководством "Кровавые моряки" станут еще ужаснее. Венгаул пытался вести себя цивилизованно.~
-  IF ~~ THEN REPLY ~Где сейчас Каллик?~ GOTO 25
-  IF ~~ THEN REPLY ~Где сейчас Венгаул Кровавый Парус?~ GOTO 16
+  SAY @43
+  IF ~~ THEN REPLY @44 GOTO 25
+  IF ~~ THEN REPLY @22 GOTO 16
 END
 
 IF ~~ THEN BEGIN 22 // from: 16.1
-  SAY ~Я хочу в это верить. Он действительно думал помочь своим аукционом... да еще покрасоваться, он это любит. Что же... найдите его.~
+  SAY @45
   IF ~  Global("Medallion","LOCALS",0)~ THEN GOTO 26
   IF ~  Global("Medallion","LOCALS",1)~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 23 // from: 16.2
-  SAY ~Так вы надеетесь соблазнить меня тем, что можете убить или не убивать его? Полагаю, ничего честнее я сегодня не слышала.~
+  SAY @46
   IF ~  Global("Medallion","LOCALS",0)~ THEN GOTO 26
   IF ~  Global("Medallion","LOCALS",1)~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 24 // from: 16.3
-  SAY ~Если вы из тех, кто способен на такое, то убьете и меня тоже! Я не предам своего возлюбленного Венгаула! Я не знаю, как попасть в Акведуки, и я не дам вам моего мед... то есть, я не стану помогать вам добраться до "Серебряных парусов"!~
+  SAY @47
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 21.1
-  SAY ~Он не мог ждать, пока его люди покончат со мной. Возможно, он догадался, где может быть Венгаул, и ушел его искать.~
-  IF ~~ THEN REPLY ~Где сейчас Венгаул Кровавый Парус?~ GOTO 16
-  IF ~~ THEN REPLY ~Вернемся к моим предыдущим вопросам.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @48
+  IF ~~ THEN REPLY @22 GOTO 16
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 26 // from: 22.1 23.1
-  SAY ~Возьмите этот медальон. Это был его подарок. Он сказал, что это ключ, и что с этим ключом я смогу войти в "Серебряные паруса", если захочу найти его. "Серебряные паруса" находятся на востоке центральной части Портового района. Там есть проход вниз. Венгаул говорит, что это безопасное место... для него, во всяком случае.~
+  SAY @49
   IF ~~ THEN DO ~SetGlobal("Medallion","LOCALS",1)GiveItem("Nwmisc50",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 22.2 23.2
-  SAY ~Вы уже получили мой медальон. Венгаул сказал, что это ключ, который позволит мне войти в "Серебряные Паруса", если мне понадобится его найти. "Серебряные паруса" находятся на востоке центральной части Портового района. Там есть проход вниз. Венгаул говорит, что это безопасное место... для него, во всяком случае.~
-  IF ~~ THEN REPLY ~Почему "Кровавые моряки" бунтуют?~ GOTO 15
-  IF ~~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @50
+  IF ~~ THEN REPLY @21 GOTO 15
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 // ----------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)!Dead("Vengaul")~ THEN BEGIN 28 // from:
-  SAY ~Вы вернулись. Что еще я могу сказать вам? Что еще, вы думаете, я знаю?~ [NWDOOR52]
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 4
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить кое-что о вас.~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 6
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Что вы знаете об аукционе?~ GOTO 5
-  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 7
-  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY ~Я хочу спросить про Венгаула.~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 8
+  SAY @51
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @6 GOTO 6
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("PlayerIntroduced","LOCALS",1)~ THEN REPLY @7 GOTO 7
+  IF ~  Global("PlayerIntroduced","LOCALS",0)~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 // ----------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !Dead("Vengaul")~ THEN BEGIN 29 // from:
-  SAY ~Кто там еще? Опять люди с угрозами? Мне не следует ничего говорить. У меня была надежда, что кто-то поможет... но теперь я никому не могу доверять, ведь Венгаула нет!~ [NWDOOR50]
+  SAY @52
   IF ~~ THEN EXIT
 END
 

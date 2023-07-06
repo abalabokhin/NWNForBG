@@ -4,19 +4,19 @@ BEGIN ~ESCORT~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,1)~ THEN BEGIN 0 // from:
-  SAY ~Тебе придется подождать своей очереди, дорогуша. Выходи.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,2)~ THEN BEGIN 1 // from:
-  SAY ~Тебя что, приглашали в мою комнату? Не приглашали. Пожалуйста, уходите.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,3)~ THEN BEGIN 2 // from:
-  SAY ~Что вы делаете, зачем пришли?! Вон отсюда! Вон!!!~
+  SAY @2
   IF ~~ THEN EXIT
 END
 

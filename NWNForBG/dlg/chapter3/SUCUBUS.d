@@ -4,227 +4,227 @@ BEGIN ~SUCUBUS~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Посетитель? Какая неожиданность. Пожалуйста, не позволяйте старым сказкам о демонах удержать вас от... разговоров. Я могу очень сильно помочь вам.~
-  IF ~~ THEN REPLY ~Кто вы? Что вы тут делаете?~ GOTO 1
-  IF ~~ THEN REPLY ~Как вы можете мне помочь?~ GOTO 2
-  IF ~~ THEN REPLY ~Простите. Я не разговариваю с демонами. До свидания.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Открыв свое истинное имя смертному, я оказалась вынужденной служить магу Лайенне и лишена своей силы; я не повторю этой ошибки. Вам нужно знать только, что даже после ее смерти я остаюсь на службе у Лайенн, привязана к этой гробнице, не в силах бежать, слишком слабая, чтобы освободиться от своих магических уз.~
+  SAY @4
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Ну, я могу дать вам множество вещей. И могу многое сделать для вас. Я могу... помочь вам. Но вы тоже должны будете помочь мне. Вам придется принести мне... кое-что. Вещи, которые нужны, чтобы вернуть мне утраченные силы, после чего я смогу... помочь вам.~
-  IF ~~ THEN REPLY ~Мне придется продать свою душу, или что-то вроде этого?~ GOTO 5
-  IF ~~ THEN REPLY ~Что вы хотите от меня?~ GOTO 6
-  IF ~~ THEN REPLY ~Расскажите мне еще о том, как вы можете помочь мне.~ GOTO 7
-  IF ~~ THEN REPLY ~Пожалуй, лучше вам не стоит помогать мне. До свидания.~ GOTO 3
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Но если вы позволите мне помочь вам, и сами поможете мне взамен, я разорву эти узы и вернусь в свой родной план. Позвольте мне... помочь вам.~
-  IF ~~ THEN REPLY ~Как вы можете мне помочь?~ GOTO 2
-  IF ~~ THEN REPLY ~Простите. Я не разговариваю с демонами. До свидания.~ GOTO 3
+  SAY @11
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.1
-  SAY ~Меня не интересует ваша душа, смертный. Моя единственное желание - вырваться из-под власти заклинания, привязавшего меня к этой гробнице. Для этого мне нужна ваша помощь... а взамен я предложу вам свою помощь.~
-  IF ~~ THEN REPLY ~Что вы хотите от меня?~ GOTO 6
-  IF ~~ THEN REPLY ~Расскажите мне еще о том, как вы можете помочь мне.~ GOTO 7
-  IF ~~ THEN REPLY ~Пожалуй, лучше вам не стоит помогать мне. До свидания.~ GOTO 3
+  SAY @12
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.2
-  SAY ~В этой гробнице находятся... талисманы... моей силы. Кольцо, ожерелье и драгоценный камень были взяты у меня, когда Лайенн вынудила меня служить ей. Когда ко мне вернулиться эти талисманы, я смогу восстановить свои силы и выбраться из этой тюрьмы. За каждое украшение, которое ты приносишь мне, смертный, я... помогу тебе.~
-  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY ~У меня здесь один из ваших талисманов.~ GOTO 8
-  IF ~~ THEN REPLY ~Отлично, я сделаю это.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажите мне еще о том, как вы можете помочь мне.~ GOTO 7
-  IF ~~ THEN REPLY ~Значит, без этих талисманов вы здесь в ловушке?~ GOTO 10
-  IF ~~ THEN REPLY ~Я не стану делать это для вас!~ GOTO 3
+  SAY @13
+  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY @14 GOTO 8
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 3
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.3
-  SAY ~Я суккуб, демон. Я очень сильна, смертный. Вам нужна магия? Я могу дать вам великую магию. Или же я могу выполнить для вас какую-нибудь службу. В этом храме множество дверей, дверей, которые не так уж легко открыть. Я открою их для вас, если вы хотите. Если вы поможете мне, смертный, вы получите огромное вознаграждение. Это я вам обещаю.~
-  IF ~~ THEN REPLY ~Мне придется продать свою душу, или что-то вроде этого?~ GOTO 5
-  IF ~~ THEN REPLY ~Что вы хотите от меня?~ GOTO 6
-  IF ~~ THEN REPLY ~Пожалуй, лучше вам не стоит помогать мне. До свидания.~ GOTO 3
+  SAY @18
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @9 GOTO 3
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.1
-  SAY ~Тогда вы должны дать его мне, чтобы я восстановила часть своих сил и смогла... помочь вам. Пожалуйста, отдайте то, что по праву принадлежит мне.~
-  IF ~  PartyHasItem("Sucitm1")GlobalLT("SucubusJob","GLOBAL",2)~ THEN REPLY ~Возьмите кольцо. А теперь, как вы мне поможете?~ GOTO 11
-  IF ~  PartyHasItem("Sucitm1")Global("SucubusJob","GLOBAL",2)~ THEN REPLY ~Возьмите кольцо. А теперь, как вы мне поможете?~ GOTO 12
-  IF ~  PartyHasItem("Sucitm1")Global("SucubusJob","GLOBAL",3)~ THEN REPLY ~Возьмите кольцо. А теперь, как вы мне поможете?~ GOTO 13
-  IF ~  PartyHasItem("Sucitm2")GlobalLT("SucubusJob","GLOBAL",2)~ THEN REPLY ~Возьмите ожерелье. А теперь, как вы мне поможете?~ GOTO 14
-  IF ~  PartyHasItem("Sucitm2")Global("SucubusJob","GLOBAL",2)~ THEN REPLY ~Возьмите ожерелье. А теперь, как вы мне поможете?~ GOTO 15
-  IF ~  PartyHasItem("Sucitm2")Global("SucubusJob","GLOBAL",3)~ THEN REPLY ~Возьмите ожерелье. А теперь, как вы мне поможете?~ GOTO 13
-  IF ~  PartyHasItem("Sucitm3")GlobalLT("SucubusJob","GLOBAL",2)~ THEN REPLY ~Возьмите драгоценный камень. А теперь, как вы мне поможете?~ GOTO 16
-  IF ~  PartyHasItem("Sucitm3")Global("SucubusJob","GLOBAL",2)~ THEN REPLY ~Возьмите драгоценный камень. А теперь, как вы мне поможете?~ GOTO 17
-  IF ~  PartyHasItem("Sucitm3")Global("SucubusJob","GLOBAL",3)~ THEN REPLY ~Возьмите драгоценный камень. А теперь, как вы мне поможете?~ GOTO 13
+  SAY @19
+  IF ~  PartyHasItem("Sucitm1")GlobalLT("SucubusJob","GLOBAL",2)~ THEN REPLY @20 GOTO 11
+  IF ~  PartyHasItem("Sucitm1")Global("SucubusJob","GLOBAL",2)~ THEN REPLY @20 GOTO 12
+  IF ~  PartyHasItem("Sucitm1")Global("SucubusJob","GLOBAL",3)~ THEN REPLY @20 GOTO 13
+  IF ~  PartyHasItem("Sucitm2")GlobalLT("SucubusJob","GLOBAL",2)~ THEN REPLY @21 GOTO 14
+  IF ~  PartyHasItem("Sucitm2")Global("SucubusJob","GLOBAL",2)~ THEN REPLY @21 GOTO 15
+  IF ~  PartyHasItem("Sucitm2")Global("SucubusJob","GLOBAL",3)~ THEN REPLY @21 GOTO 13
+  IF ~  PartyHasItem("Sucitm3")GlobalLT("SucubusJob","GLOBAL",2)~ THEN REPLY @22 GOTO 16
+  IF ~  PartyHasItem("Sucitm3")Global("SucubusJob","GLOBAL",2)~ THEN REPLY @22 GOTO 17
+  IF ~  PartyHasItem("Sucitm3")Global("SucubusJob","GLOBAL",3)~ THEN REPLY @22 GOTO 13
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.3
-  SAY ~Благодарю вас, смертный. Я буду ждать здесь, пока вы не вернете мне талисманы, чтобы я смогла восстановить свои силы и... помочь вам.~
+  SAY @23
   IF ~  Global("SucubusJob","GLOBAL",0)~ THEN DO ~SetGlobal("SucubusJob","GLOBAL",1)~ EXIT
   IF ~  GlobalGT("SucubusJob","GLOBAL",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.5
-  SAY ~Лайенн пленила меня, чтобы я могла служить ей, маги часто поступают так с моими сородичами. Даже ее смерть не освободила меня из этой тюрьмы. Но если вы принесете мне эти украшения, талисманы моей силы, мое служение будет окончено. Взамен я смогу воспользоваться своей силой, чтобы... помочь вам.~
-  IF ~~ THEN REPLY ~Откуда мне знать, что я могу доверять вам?~ GOTO 18
-  IF ~~ THEN REPLY ~Отлично, я сделаю это.~ GOTO 9
-  IF ~~ THEN REPLY ~Я не стану делать это для вас!~ GOTO 3
+  SAY @24
+  IF ~~ THEN REPLY @25 GOTO 18
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @17 GOTO 3
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.1 Кольцо
-  SAY ~Обещание служить вам связывает меня так же, как чары, привязавшие меня к этой гробнице. Один-единственный талисман не может освободить меня, но он даст мне достаточно сил, чтобы служить вам. Скажите мне, смертный, что я должна сделать? Я могу сделать вас сильнее. А еще я могу дать вам могучую магию, которую так цените вы, смертные.~
-  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY ~Я хочу увеличить свою силу.~ GOTO 19
-  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY ~Дайте мне мощный магический предмет.~ GOTO 20
-  IF ~~ THEN REPLY ~Я не хочу, чтобы вы что-то для меня делали.~ GOTO 21
+  SAY @26
+  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY @27 GOTO 19
+  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY @28 GOTO 20
+  IF ~~ THEN REPLY @29 GOTO 21
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.2 Кольцо
-  SAY ~Обещание служить вам связывает меня так же, как чары, привязавшие меня к этой гробнице. Один-единственный талисман не может освободить меня, но он даст мне достаточно сил, чтобы служить вам. Скажите мне, смертный, что я должна сделать? Я могу сделать вас сильнее. А еще я могу дать вам могучую магию, которую так цените вы, смертные.~
-  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY ~Я хочу увеличить свою силу.~ GOTO 22
-  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY ~Дайте мне мощный магический предмет.~ GOTO 23
-  IF ~~ THEN REPLY ~Я не хочу, чтобы вы что-то для меня делали.~ GOTO 24
+  SAY @26
+  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY @27 GOTO 22
+  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY @28 GOTO 23
+  IF ~~ THEN REPLY @29 GOTO 24
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.3
-  SAY ~Моя сила полностью восстановлена! Я свободна от этой гнусной тюрьмы и от клятв, которые связывают меня! А теперь, глупый смертный, я пожру твою душу!~
+  SAY @30
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")TakePartyItem("Sucitm2")TakePartyItem("Sucitm3")DestroyItem("Sucitm1")DestroyItem("Sucitm2")DestroyItem("Sucitm3")
 SetGlobal("SucubusJob","GLOBAL",4)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.4 Ожерелье
-  SAY ~Обещание служить вам связывает меня так же, как чары, привязавшие меня к этой гробнице. Один-единственный талисман не может освободить меня, но он даст мне достаточно сил, чтобы служить вам. Скажите мне, смертный, что я должна сделать? Я могу сделать вас сильнее. А еще я могу дать вам могучую магию, которую так цените вы, смертные.~
-  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY ~Я хочу увеличить свою силу.~ GOTO 25
-  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY ~Дайте мне мощный магический предмет.~ GOTO 26
-  IF ~~ THEN REPLY ~Я не хочу, чтобы вы что-то для меня делали.~ GOTO 27
+  SAY @26
+  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY @27 GOTO 25
+  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY @28 GOTO 26
+  IF ~~ THEN REPLY @29 GOTO 27
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.5 Ожерелье
-  SAY ~Обещание служить вам связывает меня так же, как чары, привязавшие меня к этой гробнице. Один-единственный талисман не может освободить меня, но он даст мне достаточно сил, чтобы служить вам. Скажите мне, смертный, что я должна сделать? Я могу сделать вас сильнее. А еще я могу дать вам могучую магию, которую так цените вы, смертные.~
-  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY ~Я хочу увеличить свою силу.~ GOTO 28
-  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY ~Дайте мне мощный магический предмет.~ GOTO 29
-  IF ~~ THEN REPLY ~Я не хочу, чтобы вы что-то для меня делали.~ GOTO 30
+  SAY @26
+  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY @27 GOTO 28
+  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY @28 GOTO 29
+  IF ~~ THEN REPLY @29 GOTO 30
 END
 
 IF ~~ THEN BEGIN 16 // from: 8.6 Камень
-  SAY ~Обещание служить вам связывает меня так же, как чары, привязавшие меня к этой гробнице. Один-единственный талисман не может освободить меня, но он даст мне достаточно сил, чтобы служить вам. Скажите мне, смертный, что я должна сделать? Я могу сделать вас сильнее. А еще я могу дать вам могучую магию, которую так цените вы, смертные.~
-  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY ~Я хочу увеличить свою силу.~ GOTO 31
-  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY ~Дайте мне мощный магический предмет.~ GOTO 32
-  IF ~~ THEN REPLY ~Я не хочу, чтобы вы что-то для меня делали.~ GOTO 33
+  SAY @26
+  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY @27 GOTO 31
+  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY @28 GOTO 32
+  IF ~~ THEN REPLY @29 GOTO 33
 END
 
 IF ~~ THEN BEGIN 17 // from: 8.7 Камень
-  SAY ~Обещание служить вам связывает меня так же, как чары, привязавшие меня к этой гробнице. Один-единственный талисман не может освободить меня, но он даст мне достаточно сил, чтобы служить вам. Скажите мне, смертный, что я должна сделать? Я могу сделать вас сильнее. А еще я могу дать вам могучую магию, которую так цените вы, смертные.~
-  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY ~Я хочу увеличить свою силу.~ GOTO 34
-  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY ~Дайте мне мощный магический предмет.~ GOTO 35
-  IF ~~ THEN REPLY ~Я не хочу, чтобы вы что-то для меня делали.~ GOTO 36
+  SAY @26
+  IF ~  Global("StrengthIncreased","LOCALS",0)~ THEN REPLY @27 GOTO 34
+  IF ~  Global("Ring","LOCALS",0)~ THEN REPLY @28 GOTO 35
+  IF ~~ THEN REPLY @29 GOTO 36
 END
 
 IF ~~ THEN BEGIN 18 // from: 10.1
-  SAY ~Я связана словом, так же, как я привязана к этой тюрьме. Я обещала помочь вам и сделаю то, что обещала. Принесите мне мои талисманы и я... помогу вам. Такова моя священная клятва.~
-  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY ~У меня здесь один из ваших талисманов.~ GOTO 8
-  IF ~~ THEN REPLY ~Отлично, я сделаю это.~ GOTO 9
-  IF ~~ THEN REPLY ~Я не стану делать это для вас!~ GOTO 3
+  SAY @31
+  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY @14 GOTO 8
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @17 GOTO 3
 END
 
 IF ~~ THEN BEGIN 19 // from: 11.1
-  SAY ~Что ж, пусть будет так. Примите эту книгу. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @32
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")SetGlobal("SucubusJob","GLOBAL",2)SetGlobal("StrengthIncreased","LOCALS",1)GiveItemCreate("Book04",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 11.2
-  SAY ~Да, вы хотите получить великую силу. Я призову предмет из моего плана, чтобы... помочь вам. Возьмите этот предмет, смертный. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @33
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")SetGlobal("SucubusJob","GLOBAL",2)SetGlobal("Ring","LOCALS",1)GiveItemCreate("Sucitm4",LastTalkedToBy,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 11.3
-  SAY ~Вы уверены? Я у вас на службе, смертный. Я просто хочу... помочь вам. Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @34
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")SetGlobal("SucubusJob","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 12.1
-  SAY ~Что ж, пусть будет так. Примите эту книгу. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @32
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")SetGlobal("SucubusJob","GLOBAL",3)SetGlobal("StrengthIncreased","LOCALS",1)GiveItemCreate("Book04",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 12.2
-  SAY ~Да, вы хотите получить великую силу. Я призову предмет из моего плана, чтобы... помочь вам. Возьмите этот предмет, смертный. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @33
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")SetGlobal("SucubusJob","GLOBAL",3)SetGlobal("Ring","LOCALS",1)GiveItemCreate("Sucitm4",LastTalkedToBy,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 12.3
-  SAY ~Вы уверены? Я у вас на службе, смертный. Я просто хочу... помочь вам. Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @34
   IF ~~ THEN DO ~TakePartyItem("Sucitm1")SetGlobal("SucubusJob","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 14.1
-  SAY ~Что ж, пусть будет так. Примите эту книгу. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @32
   IF ~~ THEN DO ~TakePartyItem("Sucitm2")SetGlobal("SucubusJob","GLOBAL",2)SetGlobal("StrengthIncreased","LOCALS",1)GiveItemCreate("Book04",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 14.2
-  SAY ~Да, вы хотите получить великую силу. Я призову предмет из моего плана, чтобы... помочь вам. Возьмите этот предмет, смертный. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @33
   IF ~~ THEN DO ~TakePartyItem("Sucitm2")SetGlobal("SucubusJob","GLOBAL",2)SetGlobal("Ring","LOCALS",1)GiveItemCreate("Sucitm4",LastTalkedToBy,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 14.3
-  SAY ~Вы уверены? Я у вас на службе, смертный. Я просто хочу... помочь вам. Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @34
   IF ~~ THEN DO ~TakePartyItem("Sucitm2")SetGlobal("SucubusJob","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 15.1
-  SAY ~Что ж, пусть будет так. Примите эту книгу. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @32
   IF ~~ THEN DO ~TakePartyItem("Sucitm2")SetGlobal("SucubusJob","GLOBAL",3)SetGlobal("StrengthIncreased","LOCALS",1)GiveItemCreate("Book04",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 15.2
-  SAY ~Да, вы хотите получить великую силу. Я призову предмет из моего плана, чтобы... помочь вам. Возьмите этот предмет, смертный. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @33
   IF ~~ THEN DO ~TakePartyItem("Sucitm2")SetGlobal("SucubusJob","GLOBAL",3)SetGlobal("Ring","LOCALS",1)GiveItemCreate("Sucitm4",LastTalkedToBy,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 15.3
-  SAY ~Вы уверены? Я у вас на службе, смертный. Я просто хочу... помочь вам. Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @34
   IF ~~ THEN DO ~TakePartyItem("Sucitm2")SetGlobal("SucubusJob","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 16.1
-  SAY ~Что ж, пусть будет так. Примите эту книгу. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @32
   IF ~~ THEN DO ~TakePartyItem("Sucitm3")SetGlobal("SucubusJob","GLOBAL",2)SetGlobal("StrengthIncreased","LOCALS",1)GiveItemCreate("Book04",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 16.2
-  SAY ~Да, вы хотите получить великую силу. Я призову предмет из моего плана, чтобы... помочь вам. Возьмите этот предмет, смертный. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @33
   IF ~~ THEN DO ~TakePartyItem("Sucitm3")SetGlobal("SucubusJob","GLOBAL",2)SetGlobal("Ring","LOCALS",1)GiveItemCreate("Sucitm4",LastTalkedToBy,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 16.3
-  SAY ~Вы уверены? Я у вас на службе, смертный. Я просто хочу... помочь вам. Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @34
   IF ~~ THEN DO ~TakePartyItem("Sucitm3")SetGlobal("SucubusJob","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 17.1
-  SAY ~Что ж, пусть будет так. Примите эту книгу. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @32
   IF ~~ THEN DO ~TakePartyItem("Sucitm3")SetGlobal("SucubusJob","GLOBAL",3)SetGlobal("StrengthIncreased","LOCALS",1)GiveItemCreate("Book04",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 17.2
-  SAY ~Да, вы хотите получить великую силу. Я призову предмет из моего плана, чтобы... помочь вам. Возьмите этот предмет, смертный. Моя сила еще не полностью восстановлена. Я все еще привязана к этому месту. Принесите мне остальные талисманы, чтобы я смогла освободиться и даровать вам еще большее вознаграждение.~
+  SAY @33
   IF ~~ THEN DO ~TakePartyItem("Sucitm3")SetGlobal("SucubusJob","GLOBAL",3)SetGlobal("Ring","LOCALS",1)GiveItemCreate("Sucitm4",LastTalkedToBy,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 17.3
-  SAY ~Вы уверены? Я у вас на службе, смертный. Я просто хочу... помочь вам. Выбор за вами, смертный, хотя вы не знаете, от чего отказываетесь. Если вы все же решите принять мое предложение, я буду ждать здесь, чтобы... помочь вам.~
+  SAY @34
   IF ~~ THEN DO ~TakePartyItem("Sucitm3")SetGlobal("SucubusJob","GLOBAL",3)~ EXIT
 END
 
@@ -232,27 +232,27 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("SucubusJob","GLOBAL",0)~ THEN BEGIN 37 // from:
-  SAY ~Я вас не знаю, но слышал что Вы работаете с <CHARNAME>, верно? Вы <CLASS> и работаете на Аарина Генда, так?~
-  IF ~~ THEN REPLY ~Кто вы? Что вы тут делаете?~ GOTO 1
-  IF ~~ THEN REPLY ~Как вы можете мне помочь?~ GOTO 2
-  IF ~~ THEN REPLY ~Простите. Я не разговариваю с демонами. До свидания.~ GOTO 3
+  SAY @35
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // ----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)GlobalGT("SucubusJob","GLOBAL",0)~ THEN BEGIN 38 // from:
-  SAY ~Приветствую вас еще раз, смертный. Вы принесли мне мои пропавшие украшения? Талисманы необходимы мне, чтобы помочь вам.~
-  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY ~У меня здесь один из ваших талисманов.~ GOTO 8
-  IF ~~ THEN REPLY ~Нет, я не отдам вам талисман, который вы хотите.~ GOTO 39
-  IF ~~ THEN REPLY ~Как вы можете мне помочь?~ GOTO 2
-  IF ~~ THEN REPLY ~Простите. Я не разговариваю с демонами. До свидания.~ GOTO 3
+  SAY @36
+  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY @14 GOTO 8
+  IF ~~ THEN REPLY @37 GOTO 39
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 39 // from: 38.2
-  SAY ~Но без талисмана у меня не хватит сил... помочь вам. Не обрекайте меня на вечное заключение. Если вы поможете мне, смертный, я смогу помочь вам. Пожалуйста, молю вас, принесите мне талисман.~
-  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY ~У меня здесь один из ваших талисманов.~ GOTO 8
-  IF ~~ THEN REPLY ~Как вы можете мне помочь?~ GOTO 2
-  IF ~~ THEN REPLY ~Простите. Я не разговариваю с демонами. До свидания.~ GOTO 3
+  SAY @38
+  IF ~OR(3)PartyHasItem("Sucitm1")PartyHasItem("Sucitm2")PartyHasItem("Sucitm3")~ THEN REPLY @14 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 

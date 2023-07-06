@@ -3,96 +3,96 @@
 BEGIN ~NWTOWNM1~
 
 IF ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Пожалуйста! Вы... вы ведь не похожи на этих солдат... Вы ведь не тронете меня, правда?~
-  IF ~  CheckStatGT(LastTalkedToBy,10,CHR)~ THEN REPLY ~Я искатель приключений, и мне нужна информация. Я не причиню никому вреда~ GOTO 1
-  IF ~  CheckStatLT(LastTalkedToBy,11,CHR)~ THEN REPLY ~Я искатель приключений, и мне нужна информация. Я не причиню никому вреда~ GOTO 2
-  IF ~~ THEN REPLY ~Убирайтесь с дороги! Я возьму все, что захочу!~ GOTO 3
-  IF ~~ THEN REPLY ~Я уже ухожу.~ GOTO 4
+  SAY @0
+  IF ~  CheckStatGT(LastTalkedToBy,10,CHR)~ THEN REPLY @1 GOTO 1
+  IF ~  CheckStatLT(LastTalkedToBy,11,CHR)~ THEN REPLY @1 GOTO 2
+  IF ~~ THEN REPLY @2 GOTO 3
+  IF ~~ THEN REPLY @3 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я... думаю, вы неплохой человек. Вы просто так меня напугали! К тому же, тут повсюду рыщут эти солдаты... Итак... что вам от меня нужно? Почему вы здесь?~
-  IF ~~ THEN REPLY ~Почему вы так напуганы? Вы же слышали, я не причиню вам вреда.~ GOTO 5
-  IF ~~ THEN REPLY ~Что происходит в этом городе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~ Я вам не верю! Вы как и все остальные солдаты, это точно!!! Пришли, чтобы ограбить или убить меня!!!~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.2
-  SAY ~Ааааа! Грабитель!!! Убирайтесь, убирайтесь!!!~
+  SAY @9
   IF ~~ THEN DO ~SetGlobal("Hostile","LOCALS",1)RandomWalk()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
-  SAY ~Слава Ильматеру! Ну идите, идите!!!~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.4
-  SAY ~Я... Я не знаю. Просто уже несколько недель по улицам рыщут вооруженные солдаты.. Они берут все, что хотят. Если они думают, что вы можете сражаться, они заставляют вас вступить в армию одного из Высших Капитанов... Иначе просто убьют. И... не дай боги, они решат, что вы работаете на другого из Высших Капитанов...~
-  IF ~~ THEN REPLY ~Расскажите мне об этих Высших Капитанах.~ GOTO 8
-  IF ~~ THEN REPLY ~Разве никто не может прекратить это?~ GOTO 9
-  IF ~~ THEN REPLY ~Что происходит в этом городе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
-  SAY ~Н-никто точно не знает. Несколько недель назад Высшие Капитаны просто начали... пытаться убить друг друга. У каждого из них собственная армия, и они день и ночь сражаются на улицах. Жгут дома, убивают людей... Все рассыпается на части! Еще хуже теперь, когда погибло много людей... На улицах появляются монстры. Большие крысы и ходячие трупы. Говорят, что Высшие Капитаны и их берут в армию.~
-  IF ~~ THEN REPLY ~Расскажите мне об этих Высших Капитанах.~ GOTO 8
-  IF ~~ THEN REPLY ~Разве никто не может прекратить это?~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @14
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.2
-  SAY ~Будьте осторожней на этих улицах. Если вас увидят, то убьют.~
+  SAY @15
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
-  SAY ~Я не... не очень много знаю о них. Их было пятеро, и все они вроде как были капитанами пиратов. Все говорят, что они сошли с ума. Может быть, каждый из них хочет захватить город? Я не знаю... но они убивают всех подряд, и им наплевать на то, что с нами происходит.~
-  IF ~~ THEN REPLY ~Разве никто не может прекратить это?~ GOTO 9
-  IF ~~ THEN REPLY ~Что происходит в этом городе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @16
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.4
-  SAY ~Н-нет... кто? Может быть, волшебники? Я не знаю.~
-  IF ~~ THEN REPLY ~Какие волшебники?~ GOTO 10
-  IF ~~ THEN REPLY ~Расскажите мне об этих Высших Капитанах.~ GOTO 8
-  IF ~~ THEN REPLY ~Что происходит в этом городе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.1
-  SAY ~Волшебники из этого Братства Таинств. Они живут в большой башне на острове около устья реки. Я больше ничего о них не знаю, клянусь! Просто... просто они должны быть очень могущественными, вот и все.~
-  IF ~~ THEN REPLY ~Расскажите мне о Высших Капитанах.~ GOTO 8
-  IF ~~ THEN REPLY ~Что происходит в этом городе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 8
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 // --------------------------------------------------
 
 IF ~  !NumTimesTalkedTo(0)!Global("Hostile","LOCALS",1)~ THEN BEGIN 11
-  SAY ~Опять вернулись? Вам... что-нибудь нужно?~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 12
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 12 // from: 0.1
-  SAY ~Вопросы? И что же вы хотите знать?~
-  IF ~~ THEN REPLY ~Почему вы так напуганы? Вы же слышали, я не причиню вам вреда.~ GOTO 5
-  IF ~~ THEN REPLY ~Что происходит в этом городе?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @23
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 // --------------------------------------------------
 
 IF ~  Global("Hostile","LOCALS",1)~ THEN BEGIN 11
-  SAY ~Не трогайте меня! Пожалуйста, не трогайте меня!!!~
+  SAY @24
   IF ~~ THEN DO ~RandomWalk()~ EXIT
 END
 

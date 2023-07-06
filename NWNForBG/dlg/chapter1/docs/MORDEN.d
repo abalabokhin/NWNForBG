@@ -4,7 +4,7 @@ BEGIN ~MORDEN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~’оз€ин очень прив€зан к своим... вещам.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

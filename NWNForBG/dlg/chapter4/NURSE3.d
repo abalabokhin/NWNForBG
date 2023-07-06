@@ -4,25 +4,25 @@ BEGIN ~NURSE3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,1)~ THEN BEGIN 0 // from:
-  SAY ~Ётот человек истекает кровью - простите, вам € не могу помочь.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,2)~ THEN BEGIN 1 // from:
-  SAY ~ѕоговорите со жрецом, у мен€ сейчас нет времени, извините.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,3)~ THEN BEGIN 2 // from:
-  SAY ~ѕожалуйста, выйдите, пациенты должны поспать!~
+  SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,4)~ THEN BEGIN 3 // from:
-  SAY ~ћне бы очень хотелось помочь вам, но нужно вернутьс€ к своим пациентам.~
+  SAY @3
   IF ~~ THEN EXIT
 END
 

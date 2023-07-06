@@ -1,11 +1,6 @@
 #!/bin/bash
 
+find ../NWNForBG/dlg -name "*.d"  -exec wine ./weidu.exe --traify {} \;
 
-
-filename='missing_bcs.txt'
-echo Start
-while read p; do
-    cp /home/paladin/Games/exported_script/${p} ../NWNForBG/scripts
-done < "$filename"
 
 

@@ -14,7 +14,7 @@ BEGIN ~AARIN2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  !IsGabber(Player1)~ THEN BEGIN 0 // from:
-  SAY ~Прошу меня извинить, но где же <CHARNAME>? Я буду разговаривать только с ним.~ ~Прошу меня извинить, но где же <CHARNAME>? Я буду разговаривать только с ней.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
@@ -22,340 +22,320 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Chapter3AarinJob","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 1 // from:
-  SAY ~Это уже стало чем-то вроде привычки, не правда ли, <CHARNAME>? Снова Невервинтеру угрожает опасность, и мы снова зовем на помощь вас, в надежде, что вы спасете нас.~ [AARIN310]
+  SAY @1
   IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 2
   IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.1
-  SAY ~Я должен признать, <CHARNAME>, я обрадовался, когда лорд Нашер сказал, что это задание также будет поручено вам. Мысль о расставании с вами была для меня... неприятной.~ [AARIN311]
+  SAY @2
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.3
-  SAY ~На этот раз вы будете отчитываться только передо мной. После предательства Арибет лорд Нашер сделал меня после должности начальника разведки своей правой рукой.~ [AARIN313]
+  SAY @3
   IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.4
-  SAY ~Невервинтер нуждается во мне, <CHARNAME> - и в вас. Мы должны сделать все от  нас зависящее, чтобы отвратить от города эту ужасную угрозу.~ [AARIN312]
-  IF ~~ THEN REPLY ~Для меня большая честь служить Невервинтеру, Аарин.~ GOTO 6
-  IF ~~ THEN REPLY ~Есть и более противные способы зарабатывать себе на хлеб. Невервинтер хорошо платит своим слугам.~ GOTO 6
-  IF ~~ THEN REPLY ~У нас мало времени, Генд. Давайте займемся делами.~ GOTO 7
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Честно говоря, я бы предпочел оставаться в тени. Но Невервинтер нуждается во мне, и я ни на что не жалуюсь.~ [AARIN314]
-  IF ~~ THEN REPLY ~Для меня большая честь служить Невервинтеру, Аарин.~ GOTO 6
-  IF ~~ THEN REPLY ~Есть и более противные способы зарабатывать себе на хлеб. Невервинтер хорошо платит своим слугам.~ GOTO 6
-  IF ~~ THEN REPLY ~У нас мало времени, Генд. Давайте займемся делами.~ GOTO 7
+  SAY @8
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.5
-  SAY ~Невервинтеру сейчас очень нужны союзники, <CHARNAME> - и все равно, служат они ради денег, ради славы или ради чести.~ [AARIN315]
+  SAY @9
   IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.1
-  SAY ~Конечно, <CHARNAME>. Позвольте мне перейти к делу.~ [AARIN340]
+  SAY @10
   IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8 // from: 2.1
-  SAY ~Я изучил доклады моих агентов о том, что происходит на поле боя, и могу сказать, что положение остается крайне тяжелым.~ [AARIN316]
+  SAY @11
   IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9 // from: 8.1
-  SAY ~Армии Лускана движутся к Невервинтеру во главе с Арибет, опустошая все земли на своем пути, оставляя за собой только боль и страдания.~ [AARIN317]
+  SAY @12
   IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
-  SAY ~Возможно, даже более этого тревожат сообщения о том, что к Арибет и армии Лускана для грабежа и разбоя присоединяются орки и некоторые племена Утгардта.~ [AARIN318]
-  IF ~~ THEN REPLY ~Я не могу поверить, что Арибет предала Невервинтер!~ GOTO 11
-  IF ~~ THEN REPLY ~Неужели никто не встанет на защиту Невервинтера?~ GOTO 13
-  IF ~~ THEN REPLY ~Узнали наши шпионы что-нибудь о Маугриме?~ GOTO 15
-  IF ~~ THEN REPLY ~Так что вам нужно от меня?~ GOTO 16
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 11
+  IF ~~ THEN REPLY @15 GOTO 13
+  IF ~~ THEN REPLY @16 GOTO 15
+  IF ~~ THEN REPLY @17 GOTO 16
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1
-  SAY ~Возможно, если бы мы были чуть более внимательными, предательство Арибет не стало бы для нас такой неожиданностью. После казни Фентика она так и не оправилась. Она покинула нас, но мне кажется, что этого бы не случилось, если бы мы сами не повернулись спиной к ее страданиям. Но сейчас уже поздно сожалеть об этом.~ [AARIN319]
+  SAY @18
   IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12 // from: 11.1
-  SAY ~Арибет поклялась отомстить Невервинтеру; боль утраты совершенно ослепила ее. Теперь нам придется присмотреть за тем, чтобы она не свершило отмщение, которого так желает.~ [AARIN321]
-  IF ~~ THEN REPLY ~Неужели никто не встанет на защиту Невервинтера?~ GOTO 13
-  IF ~~ THEN REPLY ~Узнали наши шпионы что-нибудь о Маугриме?~ GOTO 15
-  IF ~~ THEN REPLY ~Как мы можем остановить ее?~ GOTO 17
+  SAY @19
+  IF ~~ THEN REPLY @15 GOTO 13
+  IF ~~ THEN REPLY @16 GOTO 15
+  IF ~~ THEN REPLY @20 GOTO 17
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.2
-  SAY ~Союз Лордов пришел нам на помощь. Если бы не они, истерзанный чумой город был бы уже в осаде. Несколько утгардских племен тоже на нашей стороне. Племя Черного Льва разбило лагерь у Колодца Беорунна, это место священно для утгардтов.~ [AARIN322]
+  SAY @21
   IF ~~ THEN GOTO 14
 END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
-  SAY ~Но Арибет и армию Лускана лучше предоставить полководцам, <CHARNAME>. Ваша задача гораздо важнее.~ [AARIN324]
-  IF ~~ THEN REPLY ~Я не могу поверить, что Арибет предала Невервинтер!~ GOTO 11
-  IF ~~ THEN REPLY ~Узнали наши шпионы что-нибудь о Маугриме?~ GOTO 15
-  IF ~~ THEN REPLY ~Так что вам нужно от меня?~ GOTO 16
+  SAY @22
+  IF ~~ THEN REPLY @14 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 15
+  IF ~~ THEN REPLY @17 GOTO 16
 END
 
 IF ~~ THEN BEGIN 15 // from: 10.3
-  SAY ~У меня очень мало сведений о Маугриме, я знаю лишь, что он не с армией Лускана. Похоже, он решил предоставить сражения Арибет. Я считаю, что Арибет и лусканцы - это только западня, попытка отвлечь нас от главной угрозы.~ [AARIN325]
-  IF ~~ THEN REPLY ~Западня?~ GOTO 16
-  IF ~~ THEN REPLY ~Я не могу поверить, что Арибет предала Невервинтер!~ GOTO 11
-  IF ~~ THEN REPLY ~Неужели никто не встанет на защиту Невервинтера?~ GOTO 13
+  SAY @23
+  IF ~~ THEN REPLY @24 GOTO 16
+  IF ~~ THEN REPLY @14 GOTO 11
+  IF ~~ THEN REPLY @15 GOTO 13
 END
 
 IF ~~ THEN BEGIN 16 // from: 10.4
-  SAY ~Нам было непросто собрать информацию о секте Маугрима, <CHARNAME> - но все же мы выяснили, что они фанатично ищут какие-то древние артефакты, называемые Словами Власти.~ [AARIN327]
+  SAY @25
   IF ~~ THEN GOTO 18
 END
 
 IF ~~ THEN BEGIN 17 // from: 11.1
-  SAY ~Я считаю, что Арибет и лусканцы - это только западня, попытка отвлечь нас от главной угрозы.~ [AARIN326]
-  IF ~~ THEN REPLY ~Западня?~ GOTO 18
-  IF ~~ THEN REPLY ~Неужели никто не встанет на защиту Невервинтера?~ GOTO 13
-  IF ~~ THEN REPLY ~Так что вам нужно от меня?~ GOTO 16
+  SAY @26
+  IF ~~ THEN REPLY @24 GOTO 18
+  IF ~~ THEN REPLY @15 GOTO 13
+  IF ~~ THEN REPLY @17 GOTO 16
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.1
-  SAY ~Хотя пока мы не знаем, что это за Слова и зачем они нужны Маугриму, нам известно, где находятся по крайней мере три этих артефакта. Мы не можем позволить сектантам захватить их.~ [AARIN328]
+  SAY @27
   IF ~~ THEN GOTO 19
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
-  SAY ~Вы должны найти эти Слова раньше Маугрима, <CHARNAME>. Если вы этого не сделаете, боюсь, даже победа Союза Лордов окажется тщетной.~ [AARIN329]
-  IF ~~ THEN REPLY ~Есть идеи о том, где искать эти Слова Власти?~ GOTO 20
-  IF ~~ THEN REPLY ~И что мне делать, если я найду эти Слова Власти?~ GOTO 24
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 25
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 27
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 20
+  IF ~~ THEN REPLY @30 GOTO 24
+  IF ~~ THEN REPLY @31 GOTO 25
+  IF ~~ THEN REPLY @32 GOTO 27
 END
 
 IF ~~ THEN BEGIN 20 // from: 19.1
-  SAY ~Мы знаем, где сторонники Маугрима ведут поиски: в горах и холмах севера, в лесах на западе, и даже среди отдаленных южных ферм.~ [AARIN330]
+  SAY @33
   IF ~~ THEN GOTO 21
 END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
-  SAY ~Я бы очень хотел дать вам более точные указания, <CHARNAME>. Возможно, вам еще что-нибудь подскажет Лилиан Кэмбридж, эксперт по древним артефактам, она утверждает, что ей что-то известно о Словах Власти.~ [AARIN331]
+  SAY @34
   IF ~~ THEN GOTO 22
 END
 
 IF ~~ THEN BEGIN 22 // from: 21.1
-  SAY ~Лиллиан пообещала помочь одному из моих агентов в этом деле всем, чем сможет. Я думаю, ты сможешь найти ее в таверне в юго-восточной части моего лагеря.~ [AARIN332]
+  SAY @35
   IF ~~ THEN GOTO 23
 END
 
 IF ~~ THEN BEGIN 23 // from: 22.1
-  SAY ~Я знаю, что это задание может показаться вам невыполнимым, <CHARNAME>, но просто не могу придумать никого другого, кто был бы способен выполнить его.~ [AARIN333]
-  IF ~~ THEN REPLY ~И что мне делать, если я найду эти Слова Власти?~ GOTO 24
-  IF ~~ THEN REPLY ~И что я с этого буду иметь?~ GOTO 26
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 25
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 27
+  SAY @36
+  IF ~~ THEN REPLY @30 GOTO 24
+  IF ~~ THEN REPLY @37 GOTO 26
+  IF ~~ THEN REPLY @31 GOTO 25
+  IF ~~ THEN REPLY @32 GOTO 27
 END
 
 IF ~~ THEN BEGIN 24 // from: 19.2
-  SAY ~Если вы найдете одно из этих Слов, принесите его мне. По сети подземных ходов мы безопасно переправим его в замок Лорда Нашера.~ [AARIN336]
-  IF ~~ THEN REPLY ~Есть идеи о том, где искать эти Слова Власти?~ GOTO 20
-  IF ~~ THEN REPLY ~И что я с этого буду иметь?~ GOTO 26
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 25
-  IF ~~ THEN REPLY ~Что-нибудь еще?~ GOTO 109
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 27
+  SAY @38
+  IF ~~ THEN REPLY @29 GOTO 20
+  IF ~~ THEN REPLY @37 GOTO 26
+  IF ~~ THEN REPLY @31 GOTO 25
+  IF ~~ THEN REPLY @39 GOTO 109
+  IF ~~ THEN REPLY @32 GOTO 27
 END
 
 IF ~~ THEN BEGIN 25 // from: 19.3
-  SAY ~Этот лагерь является одновременно базой для поиска Слов Власти и военным центром. В местных зданиях вы найдете любой магазин, который вам может понадобиться..~ [AARIN337]
-  IF ~~ THEN REPLY ~Есть идеи о том, где искать эти Слова Власти?~ GOTO 20
-  IF ~~ THEN REPLY ~И что мне делать, если я найду эти Слова Власти?~ GOTO 24
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 27
+  SAY @40
+  IF ~~ THEN REPLY @29 GOTO 20
+  IF ~~ THEN REPLY @30 GOTO 24
+  IF ~~ THEN REPLY @32 GOTO 27
 END
 
 IF ~~ THEN BEGIN 26 // from: 23.2
-  SAY ~Не беспокойтесь, мой меркантильный друг, если вам удастся обнаружить хоть одно Слово Власти, вы получите  огромное вознаграждение. Невервинтер и Союз Лордов будут очень щедры.~ [AARIN334]
-  IF ~~ THEN REPLY ~Есть идеи о том, где искать эти Слова Власти?~ GOTO 20
-  IF ~~ THEN REPLY ~И что мне делать, если я найду эти Слова Власти?~ GOTO 24
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 25
-  IF ~~ THEN REPLY ~Что-нибудь еще?~ GOTO 109
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 27
+  SAY @41
+  IF ~~ THEN REPLY @29 GOTO 20
+  IF ~~ THEN REPLY @30 GOTO 24
+  IF ~~ THEN REPLY @31 GOTO 25
+  IF ~~ THEN REPLY @39 GOTO 109
+  IF ~~ THEN REPLY @32 GOTO 27
 END
 
 IF ~~ THEN BEGIN 109 // from: 24.3
-  SAY ~Мне очень жаль, но мне нечего больше вам сказать. Даже те крохи информации, которые я вам уже сообщил, дорого стоили нам - многие из моих лучших людей заплатили за них жизнью.~ [AARIN335]
-  IF ~~ THEN REPLY ~Есть идеи о том, где искать эти Слова Власти?~ GOTO 20
-  IF ~~ THEN REPLY ~И что мне делать, если я найду эти Слова Власти?~ GOTO 24
-  IF ~~ THEN REPLY ~И что я с этого буду иметь?~ GOTO 26
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 25
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 27
+  SAY @42
+  IF ~~ THEN REPLY @29 GOTO 20
+  IF ~~ THEN REPLY @30 GOTO 24
+  IF ~~ THEN REPLY @37 GOTO 26
+  IF ~~ THEN REPLY @31 GOTO 25
+  IF ~~ THEN REPLY @32 GOTO 27
 END
 
 IF ~~ THEN BEGIN 27 // from: 26.1
-  SAY ~Я желаю вам удачи в выполнении задания, <CHARNAME>. От вас зависит судьба Невервинтера.~ [AARIN339]
-  IF ~~ THEN DO ~SetGlobal("Chapter3AarinJob","GLOBAL",1)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Слова Власти должны быть найдены прежде, чем Маугрим со своим культом обнаружит их и обратит эти древние артефакты против Невервинтера. Хоть они и были утрачены многие столетия назад, есть информация о том, что три Слова Власти можно найти в землях поблизости от Колодца Беорунна. Как только все Слова Власти будут найдены, их нужно доставить обратно в Колодец Беорунна Аарину Генду, чтобы тот переправил их в замок Невер.~ EXIT
+  SAY @43
+  IF ~~ THEN DO ~SetGlobal("Chapter3AarinJob","GLOBAL",1)~ UNSOLVED_JOURNAL @44 EXIT
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Chapter3AarinJob","GLOBAL",1)IsGabber(Player1)GlobalGT("AarinFriend","GLOBAL",0)!Global("AarinFriend","GLOBAL",9)~ THEN BEGIN 28 // from:
-  SAY ~Как приятно снова видеть вас, <CHARNAME> - как всегда. Так жаль, что мы не можем проводить больше времени вместе.~ [AARIN341]
+  SAY @45
   IF ~~ THEN GOTO 29
 END
 
 IF ~~ THEN BEGIN 29 // from: 28.1
-  SAY ~Долг зовет нас, и у каждого из нас есть свое дело. Моя роль в том, чтобы координировать действия Союза Лордов, вы же должны найти Слова Власти.~ [AARIN342]
+  SAY @46
   IF ~~ THEN GOTO 30
 END
 
 IF ~~ THEN BEGIN 30 // from: 29.1
-  SAY ~Есть что-нибудь, что я могу сделать для вас, <CHARNAME>? Э... я хочу сказать, чтобы помочь вам в ваших поисках.~ [AARIN343]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 31
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 34
-  IF ~~ THEN REPLY ~Не могли бы вы повторить, в чем состоит моя задача?~ GOTO 35
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @47
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 31
+  IF ~~ THEN REPLY @31 GOTO 34
+  IF ~~ THEN REPLY @49 GOTO 35
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 31 // from: 30.1
-  SAY ~Это хорошая новость, и боги знают, что в последнее время хороших новостей было очень мало.~ [AARIN345]
+  SAY @50
   IF ~~ THEN GOTO 32
 END
 
 IF ~~ THEN BEGIN 32 // from: 31.1
-  SAY ~Войска Лускана с Арибет во главе одерживают победу за победой над армией Союза Лордов, и все это время Маугрим и его сторонники продолжают поиски Слов Власти.~ [AARIN346]
+  SAY @51
   IF ~~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 33 // from: 32.1
-  SAY ~По крайней мере, то, которое сейчас здесь, они не получат. Мои агенты переправят Слово в замок Невервинтер, там оно будет в безопасности, пока писцы лорда Нашера не поймут, зачем оно нужно.~ [AARIN347]
+  SAY @52
   IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 38
   IF ~  GlobalLT("AarinFriend","GLOBAL",5)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN GOTO 39
   IF ~  GlobalLT("AarinFriend","GLOBAL",5)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN GOTO 40
 END
 
 IF ~~ THEN BEGIN 34 // from: 30.2
-  SAY ~Этот лагерь является одновременно базой для поиска Слов Власти и военным центром. В местных зданиях вы найдете любой магазин, который вам может понадобиться.~ [AARIN337]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 31
-  IF ~~ THEN REPLY ~Не могли бы вы повторить, в чем состоит моя задача?~ GOTO 35
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @53
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 31
+  IF ~~ THEN REPLY @49 GOTO 35
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 35 // from: 30.3
-  SAY ~Пока мы не знаем, что такое Слова и зачем они нужны Маугриму, нам известно, где находятся по крайней мере три этих артефакта. Мы не можем позволить сектантам захватить их.~ [AARIN328]
+  SAY @54
   IF ~~ THEN GOTO 36
 END
 
 IF ~~ THEN BEGIN 36 // from: 35.1
-  SAY ~Вы должны найти эти Слова раньше Маугрима, <CHARNAME>. Если вы этого не сделаете, боюсь, даже победа Союза Лордов окажется тщетной.~ [AARIN329]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 31
-  IF ~~ THEN REPLY ~Где бы мне раздобыть припасы?~ GOTO 34
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @28
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 31
+  IF ~~ THEN REPLY @31 GOTO 34
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 37 // from: 36.2
-  SAY ~Я желаю вам удачи в выполнении задания, <CHARNAME>. От вас зависит судьба Невервинтера.~ [AARIN339]
+  SAY @43
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 33.1
-  SAY ~Вы действительно замечательная женщина, <CHARNAME> - хотя я и так это знал. По поручению города Невервинтера и самого лорда Нашера, прошу вас принять это вознаграждение в размере 3000 золотых.~ [AARIN348]
-  IF ~~ THEN REPLY ~Вы очень великодушны, Аарин. Я благодарю вас за это вознаграждение.~ GOTO 41
-  IF ~~ THEN REPLY ~Добывать Слова Власти не просто, Аарин. Припасы и снаряжение стоят недешево.~ GOTO 42
+  SAY @55
+  IF ~~ THEN REPLY @56 GOTO 41
+  IF ~~ THEN REPLY @57 GOTO 42
 END
 
 IF ~~ THEN BEGIN 39 // from: 33.2
-  SAY ~По поручению города Невервинтера и самого лорда Нашера, предлагаю вам принять это вознаграждение в размере 2500 золотых в знак нашей благодарности.~ [AARIN362]
-  IF ~~ THEN REPLY ~Вы очень великодушны, Аарин. Я благодарю вас за это вознаграждение.~ GOTO 43
-  IF ~~ THEN REPLY ~Добывать Слова Власти не просто, Аарин. Припасы и снаряжение стоят недешево.~ GOTO 44
+  SAY @58
+  IF ~~ THEN REPLY @56 GOTO 43
+  IF ~~ THEN REPLY @57 GOTO 44
 END
 
 IF ~~ THEN BEGIN 40 // from: 33.3
-  SAY ~Невервинтеру нужны такие люди, как вы, <CHARNAME>. Для меня большая честь предложить вам 3000 золотых в обмен на Слово Власти.~ [AARIN349]
-  IF ~~ THEN REPLY ~Вы очень великодушны, Аарин. Я благодарю вас за это вознаграждение.~ GOTO 41
-  IF ~~ THEN REPLY ~Добывать Слова Власти не просто, Аарин. Припасы и снаряжение стоят недешево.~ GOTO 42
+  SAY @59
+  IF ~~ THEN REPLY @56 GOTO 41
+  IF ~~ THEN REPLY @57 GOTO 42
 END
 
 IF ~~ THEN BEGIN 41 // from: 38.1
-  SAY ~Если мои источники не ошибаются, есть еще несколько Слов Власти, которые нужно найти. Я надеюсь, вы продолжите поиски, <CHARNAME>.~ [AARIN350]
-  IF ~~ THEN REPLY ~Я думаю, вам следует знать о человекоящерице, с которой мы встретились. Она говорит, что ее зовут Хэдралин, и вроде бы готова помочь.~ GOTO 45
+  SAY @60
+  IF ~~ THEN REPLY @61 GOTO 45
 END
 
 IF ~~ THEN BEGIN 42 // from: 38.2
-  SAY ~Времена сейчас сложные. Я это знаю лучше, чем кто-либо. Но я не могу так запросто тратить средства, выделенные мне Союзом Лордов.~ [AARIN360]
+  SAY @62
   IF ~~ THEN GOTO 41
 END
 
 IF ~~ THEN BEGIN 43 // from: 39.1  2500
-  SAY ~Если мои источники не ошибаются, есть еще несколько Слов Власти, которые нужно найти. Я надеюсь, вы продолжите поиски, <CHARNAME>.~ [AARIN350]
-  IF ~~ THEN REPLY ~Я думаю, вам следует знать о человекоящерице, с которой мы встретились. Она говорит, что ее зовут Хэдралин, и вроде бы готова помочь.~ GOTO 46
+  SAY @60
+  IF ~~ THEN REPLY @61 GOTO 46
 END
 
 IF ~~ THEN BEGIN 44 // from: 39.2  2500
-  SAY ~Времена сейчас сложные. Я это знаю лучше, чем кто-либо. Но я не могу так запросто тратить средства, выделенные мне Союзом Лордов.~ [AARIN360]
+  SAY @62
   IF ~~ THEN GOTO 43
 END
 
 IF ~~ THEN BEGIN 45 // from: 41.1  3000
-  SAY ~Обычно Невервинтер считает человекоящеров своими врагами, но сейчас ваше сообщение меня не удивило. У меня есть сведения о том, что какая-то ящерица и ее сторонники сражаются с сектантами Маугрима.~ [AARIN351]
+  SAY @63
   IF ~~ THEN GOTO 47
 END
 
 IF ~~ THEN BEGIN 46 // from: 43.1  2500
-  SAY ~Обычно Невервинтер считает человекоящеров своими врагами, но сейчас ваше сообщение меня не удивило. У меня есть сведения о том, что какая-то ящерица и ее сторонники сражаются с сектантами Маугрима.~ [AARIN351]
+  SAY @63
   IF ~~ THEN GOTO 48
 END
 
 IF ~~ THEN BEGIN 47 // from: 45.1  3000
-  SAY ~Наверное, это та самая Хэдралин, о которой вы упомянули. Я тщательно обдумаю вашу информацию. Но вам не стоит этим заниматься. Вы должны сосредоточиться на поисках Слов.~ [AARIN352]
+  SAY @64
   IF ~~ THEN GOTO 49
 END
 
 IF ~~ THEN BEGIN 48 // from: 46.1  2500
-  SAY ~Наверное, это та самая Хэдралин, о которой вы упомянули. Я тщательно обдумаю вашу информацию. Но вам не стоит этим заниматься. Вы должны сосредоточиться на поисках Слов.~ [AARIN352]
+  SAY @64
   IF ~~ THEN GOTO 50
 END
 
 IF ~~ THEN BEGIN 49 // from: 47.1  3000
-  SAY ~Желаю вам удачи в вашей миссии, <CHARNAME>. Возвращайтесь ко мне, когда у вас будет еще одно Слово власти.~ [AARIN353]
-   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
-   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
-   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
+  SAY @65
+   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
+   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
+   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 48.1  3000
-  SAY ~Желаю вам удачи в вашей миссии, <CHARNAME>. Возвращайтесь ко мне, когда у вас будет еще одно Слово власти.~ [AARIN353]
-   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
-   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
-   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
+  SAY @65
+   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
+   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
+   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Chapter3AarinJob","GLOBAL",1)IsGabber(Player1)OR(2)Global("AarinFriend","GLOBAL",0)Global("AarinFriend","GLOBAL",9)~ THEN BEGIN 51 // from:
-  SAY ~Вы вернулись, <CHARNAME>. Можете вы что-нибудь доложить мне?~ [AARIN344]
+  SAY @67
   IF ~~ THEN GOTO 29
 END
 
@@ -363,418 +343,368 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Chapter3AarinJob","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 52 // from:
-  SAY ~<CHARNAME>, город Невервинтер в вечном долгу перед вами за первое Слово Власти. Мы надеемся, что вы будете продолжать поиски и снова обыграете Маугрима и его сторонников.~ [AARIN367]
+  SAY @68
   IF ~~ THEN GOTO 53
 END
 
 IF ~~ THEN BEGIN 53 // from: 52.1
-  SAY ~Но сейчас не время почивать на лаврах - нужно найти и другие Слова, пока они не попали в когти Маугрима.~ [AARIN368]
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY ~Я бы хотела поговорить с вами, Аарин. Насчет этого амулета, который вы дали мне.~ GOTO 54
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Вы что-нибудь узнали о человекоящерице Хэдралин?~ GOTO 61
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @69
+  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @73 GOTO 61
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 54 // from: 53.1
-  SAY ~Амулет моей матери... тот, что я дал тебе. Он все еще у тебя?~ [AARIN369]
-  IF ~~ THEN REPLY ~Вы думаете, я от этого избавилась?~ GOTO 63
-  IF ~~ THEN REPLY ~Вы хотите сказать, что просите вернуть его?~ GOTO 63
-  IF ~~ THEN REPLY ~С тех пор, как вы дали мне этот амулет, мы с вами разговариваем только о делах.~ GOTO 64
+  SAY @74
+  IF ~~ THEN REPLY @75 GOTO 63
+  IF ~~ THEN REPLY @76 GOTO 63
+  IF ~~ THEN REPLY @77 GOTO 64
 END
 
 IF ~~ THEN BEGIN 55 // from: 53.2
-  SAY ~Почему вы раньше ничего не сказали?~ [AARIN387]
+  SAY @78
   IF ~~ THEN GOTO 56
 END
 
 IF ~~ THEN BEGIN 56 // from: 55.1
-  SAY ~Надеюсь, это замедлит продвижение армий, идущих к Невервинтеру. В конце концов, потеря еще одного Слова Власти должна нанести сильный удар по планам Маугрима и его культа, каковы бы они ни были!~ [AARIN388]
+  SAY @79
   IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 72
   IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)~ THEN GOTO 73
 END
 
 IF ~~ THEN BEGIN 57 // from: 53.2
-  SAY ~У моих агентов нет никакой свежей информации о культе Маугрима. Мы так и не узнали, зачем они устроили эпидемию, и даже не догадываемся, для чего им нужны Слова Власти.~ [AARIN402]
+  SAY @80
   IF ~~ THEN GOTO 58
 END
 
 IF ~~ THEN BEGIN 58 // from: 57.1
-  SAY ~Но я могу поклясться собственной жизнью в том, что, к чему бы они не готовились, это обернется трагедией для Невервинтера. Мы рассчитываем, что вы остановите их, <CHARNAME>.~ [AARIN403]
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY ~Я бы хотела поговорить с вами, Аарин. Насчет этого амулета, который вы дали мне.~ GOTO 54
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Вы что-нибудь узнали о человекоящерице Хэдралин?~ GOTO 61
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @81
+  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @73 GOTO 61
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 59 // from: 53.4
-  SAY ~Сам город до сих пор держится храбро - пока что. Но если вам не удастся выполнить задание, <CHARNAME>, боюсь, мы проиграем.~ [AARIN404]
+  SAY @82
   IF ~~ THEN GOTO 60
 END
 
 IF ~~ THEN BEGIN 60 // from: 59.4
-  SAY ~Арибет воодушевляет свои войска страстным желанием уничтожить Невервинтер и все, что дорого этому городу. Солдаты всегда сражаются лучше, когда у них есть цель - даже если эта цель основана на ненависти.~ [AARIN405]
-  IF ~~ THEN REPLY ~Как может Арибет поступить так с городом, которому она некогда служила?~ GOTO 74
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY ~Я бы хотела поговорить с вами, Аарин. Насчет этого амулета, который вы дали мне.~ GOTO 54
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Вы что-нибудь узнали о человекоящерице Хэдралин?~ GOTO 61
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @83
+  IF ~~ THEN REPLY @84 GOTO 74
+  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @73 GOTO 61
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 61 // from: 53.5
-  SAY ~У меня нет никакой новой информации, кроме сообщений о стычках между сектантами и некой загадочной группой человекоящеров.~ [AARIN411]
+  SAY @85
   IF ~~ THEN GOTO 62
 END
 
 IF ~~ THEN BEGIN 62 // from: 61.1
-  SAY ~Но лишь потому, что Хэдралин враждует с Маугримом, нельзя считать, что она на нашей стороне. Я бы хотел лично поговорить с ней, прежде чем мы решим, можно ей доверять, или нет.~ [AARIN412]
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY ~Я бы хотела поговорить с вами, Аарин. Насчет этого амулета, который вы дали мне.~ GOTO 54
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @86
+  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 63 // from: 54.1
-  SAY ~Нет... нет, конечно нет! Мне очень жаль, что у тебя создалось такое впечатление.~ [AARIN370]
+  SAY @87
   IF ~~ THEN GOTO 64
 END
 
 IF ~~ THEN BEGIN 64 // from: 63.1
-  SAY ~Я... Мне очень жаль, <CHARNAME>. Я хотел, чтобы ты приняла этот амулет. Он многое значил для меня - как и ты. А теперь я не знаю, что делать дальше.~ [AARIN371]
+  SAY @88
   IF ~~ THEN GOTO 65
 END
 
 IF ~~ THEN BEGIN 65 // from: 64.1
-  SAY ~Мне казалось... казалось, между нами возникла связь. Я чувствовал ее. Но теперь я... не уверен.~ [AARIN372]
-  IF ~~ THEN REPLY ~Неуверен?~ GOTO 66
-  IF ~~ THEN REPLY ~А что теперь?~ GOTO 66
+  SAY @89
+  IF ~~ THEN REPLY @90 GOTO 66
+  IF ~~ THEN REPLY @91 GOTO 66
 END
 
 IF ~~ THEN BEGIN 66 // from: 65.1
-  SAY ~Все происходит так быстро: этот культ, предательство Арибет, наступление армий Лускана.~ [AARIN373]
+  SAY @92
   IF ~~ THEN GOTO 67
 END
 
 IF ~~ THEN BEGIN 67 // from: 66.1
-  SAY ~Внезапно я стал правой рукой лорда Нашера, количество моих обязанностей существенно возросло. А вы... мы все снова рассчитываем на вас. Только вы можете спасти нас там, где этого не сможет сделать никто другой.~ [AARIN374]
+  SAY @93
   IF ~~ THEN GOTO 68
 END
 
 IF ~~ THEN BEGIN 68 // from: 67.1
-  SAY ~И я не был уверен, что вы хотите продолжать все это. Ну, то, что касается нас. И я подумал, что пусть лучше следующий шаг сделаете вы.~ [AARIN375]
-  IF ~~ THEN REPLY ~Почему вы не объяснили все это мне?~ GOTO 69
-  IF ~~ THEN REPLY ~Вы хотите сказать, что слишком заняты для ухаживаний?~ GOTO 69
-  IF ~~ THEN REPLY ~Что ж, я сделала следующий шаг. Что теперь?~ GOTO 69
-  IF ~~ THEN REPLY ~Мне очень жаль, Аарин. Боюсь, я не разделяю ваших чувств. Мы просто друзья.~ GOTO 86
+  SAY @94
+  IF ~~ THEN REPLY @95 GOTO 69
+  IF ~~ THEN REPLY @96 GOTO 69
+  IF ~~ THEN REPLY @97 GOTO 69
+  IF ~~ THEN REPLY @98 GOTO 86
 END
 
 IF ~~ THEN BEGIN 69 // from: 68.1
-  SAY ~Я... Я не знаю. Простите меня, если я ошибусь, но все это очень ново для меня. За исключением Калли, у меня ни с кем и никогда не было таких близких отношений.~ [AARIN376]
+  SAY @99
   IF ~~ THEN GOTO 70
 END
 
 IF ~~ THEN BEGIN 70 // from: 69.1
-  SAY ~И даже то, что было у нас с Калли, началось как очередное задание Невервинтера. С вами все иначе, <CHARNAME>. Я... Я хочу быть с вами.~ [AARIN377]
+  SAY @100
   IF ~~ THEN GOTO 71
 END
 
 IF ~~ THEN BEGIN 71 // from: 70.1
-  SAY ~Но сейчас от нас обоих ждут слишком многого. Столько людей зависит от нас. Не знаю, смогу ли я хоть ненадолго забыть об этом ради вас.~ [AARIN378]
-  IF ~~ THEN REPLY ~Мы справимся с этим, Аарин. Это будет непросто, но у нас есть за что сражаться.~ GOTO 78
-  IF ~~ THEN REPLY ~В эти мрачные времена никто не должен быть один. Мы поможем друг другу нести нашу ношу.~ GOTO 80
-  IF ~~ THEN REPLY ~Я не знаю, могу ли доверять человеку, который не ставит нашу любовь превыше всего, Аарин.~ GOTO 110
+  SAY @101
+  IF ~~ THEN REPLY @102 GOTO 78
+  IF ~~ THEN REPLY @103 GOTO 80
+  IF ~~ THEN REPLY @104 GOTO 110
 END
 
 IF ~~ THEN BEGIN 110 // from: 71.3
-  SAY ~Я... Простите меня, <CHARNAME>. Я не могу обещать вам, что вы всегда будете на первом месте в моей жизни. Я хотел бы сделать это... но не могу.~ [AARIN450]
+  SAY @105
   IF ~~ THEN GOTO 111
 END
 
 IF ~~ THEN BEGIN 111 // from: 110.1
-  SAY ~Вы хотите получить то, чего я не могу дать, а я боюсь взять то, что вы предлагаете. Возможно... возможно, нам лучше прекратить все это, <CHARNAME>.~ [AARIN451]
+  SAY @106
   IF ~~ THEN DO ~SetGlobal("AarinFriend","GLOBAL",0)~ GOTO 112
 END
 
 IF ~~ THEN BEGIN 112 // from: 111.1
-  SAY ~Я больше не буду тревожить вас этим, <CHARNAME>. У нас много работы. Мы должны сосредоточиться на спасении Невервинтера.~ [AARIN452]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Вы что-нибудь узнали о человекоящерице Хэдралин?~ GOTO 61
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @107
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @73 GOTO 61
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 72 // from: 56.1
-  SAY ~Я с огромным удовольствием и гордостью вручаю тебе эти 3500 золотых, моя леди. В эти темные времена ты стала воистину блестящим примером для нас.~ [AARIN389]
-  IF ~~ THEN REPLY ~Мы снова разговаривали с Хэдралин, Аарин.~ GOTO 89
-  IF ~~ THEN REPLY ~Я не хочу показаться неблагодарной свиньей, Аарин, но золото не может защитить от тех врагов, с которыми мне приходится сражаться.~ GOTO 93
+  SAY @108
+  IF ~~ THEN REPLY @109 GOTO 89
+  IF ~~ THEN REPLY @110 GOTO 93
 END
 
 IF ~~ THEN BEGIN 73 // from: 56.2
-  SAY ~Союз Лордов очень благодарен тем, кто в это темное время является для нас образцом, и Невервинтер очень щедр к своим защитникам. <CHARNAME>, я получил распоряжение вручить вам за выполнение этого задания 3500 золотых.~ [AARIN390]
-  IF ~~ THEN REPLY ~Мы снова разговаривали с Хэдралин, Аарин.~ GOTO 89
-  IF ~~ THEN REPLY ~Я не хочу показаться неблагодарной свиньей, Аарин, но золото не может защитить от тех врагов, с которыми мне приходится сражаться.~ GOTO 93
+  SAY @111
+  IF ~~ THEN REPLY @109 GOTO 89
+  IF ~~ THEN REPLY @110 GOTO 93
 END
 
 IF ~~ THEN BEGIN 74 // from: 60.1
-  SAY ~Не судите ее так строго, <CHARNAME>. Любовь и ненависть -- две стороны одной медали; и то и другое нам редко удается контролировать.~ [AARIN406]
+  SAY @112
   IF ~~ THEN GOTO 75
 END
 
 IF ~~ THEN BEGIN 75 // from: 74.1
-  SAY ~Арибет любила Невервинтер, так же, как она любила Фентика - и город, который она любила, обрушил свою ненависть и жажду мщения на человека, которого она любила.~ [AARIN407]
+  SAY @113
   IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 76
   IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)~ THEN GOTO 77
 END
 
 IF ~~ THEN BEGIN 76 // from: 75.1
-  SAY ~Я знаю, каково человеку, когда есть кто-то, с чьей гибелью просто невозможно смириться. Если бы лорд Нашер казнил вас, <CHARNAME>, возможно, я впал бы в такое же безумие, как Арибет.~ [AARIN408]
-  IF ~~ THEN REPLY ~Я думаю, вы правы, Аарин.~ GOTO 77
-  IF ~~ THEN REPLY ~Я поверить не могу, что вы ее защищаете!~ GOTO 77
-  IF ~~ THEN REPLY ~Смерть Фентика не оправдание предательству своего города!~ GOTO 77
+  SAY @114
+  IF ~~ THEN REPLY @115 GOTO 77
+  IF ~~ THEN REPLY @116 GOTO 77
+  IF ~~ THEN REPLY @117 GOTO 77
 END
 
 IF ~~ THEN BEGIN 77 // from: 76.1
-  SAY ~Я не говорю, что согласен с действиями Арибет - я только говорю, что, возможно, могу понять их. Однако я остаюсь преданным Невервинтеру, и мечтаю только о том, чтобы помешать Арибет отомстить.~ [AARIN410]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @118
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 78 // from: 71.1
-  SAY ~Твоя правда, <CHARNAME>. Я не хочу терять все то, что у нас есть.~ [AARIN379]
+  SAY @119
   IF ~~ THEN GOTO 79
 END
 
 IF ~~ THEN BEGIN 79 // from: 78.1
-  SAY ~Много раз я думал о том, что мне нужен наперсник, кто-то, к кому можно обратиться за советом и ...утешением. И теперь, когда у меня есть ты, я бы стал дураком, отпустив тебя.~ [AARIN380]
+  SAY @120
   IF ~~ THEN GOTO 81
 END
 
 IF ~~ THEN BEGIN 80 // from: 71.2
-  SAY ~Все так, <CHARNAME>. Наверное, я так привык к одиночеству, к тому, чтобы полагаться только на себя, что успел забыть, как надо просить о помощи.~ [AARIN386]
+  SAY @121
   IF ~~ THEN GOTO 79
 END
 
 IF ~~ THEN BEGIN 81 // from: 79.1
-  SAY ~Пообещай мне, <CHARNAME>... пообещай мне, что мы будем помогать друг другу, чтобы ни случилось. Пообещай, что мы пройдем этот путь вместе до самого конца.~ [AARIN381]
-  IF ~~ THEN REPLY ~Вам не придется проходить через это в одиночку, Аарин. Я обещаю.~ GOTO 82
-  IF ~~ THEN REPLY ~Я не могу этого обещать, Аарин. Будущее так туманно.~ GOTO 83
+  SAY @122
+  IF ~~ THEN REPLY @123 GOTO 82
+  IF ~~ THEN REPLY @124 GOTO 83
 END
 
 IF ~~ THEN BEGIN 82 // from: 81.1
-  SAY ~Возможно, когда все это закончится... но подобные мысли лучше оставить на потом. Сейчас мы должно сосредоточиться на том, чтобы остановить Маугрима и Арибет - или у нас может и не быть будущего.~ [AARIN382]
+  SAY @125
   IF ~~ THEN GOTO 84
 END
 
 IF ~~ THEN BEGIN 83 // from: 81.2
-  SAY ~Прости меня, <CHARNAME> - я не имею права требовать от тебя этого. Видимо, нам остается только ждать, чтобы понять, что готовит нам судьба.~ [AARIN385]
+  SAY @126
   IF ~~ THEN GOTO 82
 END
 
 IF ~~ THEN BEGIN 84 // from: 82.1
-  SAY ~Если бы это было возможно, <CHARNAME>, я бы отправился с тобой. Но я занимаюсь информацией и анализом данных разведки. Я нужен здесь.~ [AARIN383]
+  SAY @127
   IF ~~ THEN GOTO 85
 END
 
 IF ~~ THEN BEGIN 85 // from: 84.1
-  SAY ~Но, даже несмотря на то, что я не могу отправиться с тобой на поиски Слов Власти, <CHARNAME>, знай, чтобы  ни случилось с тобой, мой дух всегда будет рядом.~ [AARIN384]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Вы что-нибудь узнали о человекоящерице Хэдралин?~ GOTO 61
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @128
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @73 GOTO 61
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 86 // from: 68.4
-  SAY ~Просто друзья? О... Я... простите меня, <CHARNAME>. Я просто думал... думал, что нас связывает нечто большее.~ [AARIN455]
+  SAY @129
   IF ~~ THEN GOTO 87
 END
 
 IF ~~ THEN BEGIN 87 // from: 86.1
-  SAY ~Черт побери, Аарин - ты проклятый дурак! Я... мне очень жаль, <CHARNAME>. Надеюсь, мы больше не будем поднимать эту тему.~ [AARIN456]
+  SAY @130
   IF ~~ THEN DO ~SetGlobal("AarinFriend","GLOBAL",0)~ GOTO 88
 END
 
 IF ~~ THEN BEGIN 88 // from: 87.1
-  SAY ~Мы друзья и союзники в защите Невервинтера, и ничего больше. Итак, могу ли я чем-то помочь вам в сражении  за наше общее дело?~ [AARIN457]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 55
-  IF ~~ THEN REPLY ~Узнали вы еще что-нибудь о Маугриме и его сторонниках?~ GOTO 57
-  IF ~~ THEN REPLY ~Как дела на фронте?~ GOTO 59
-  IF ~~ THEN REPLY ~Вы что-нибудь узнали о человекоящерице Хэдралин?~ GOTO 61
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @131
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
+  IF ~~ THEN REPLY @71 GOTO 57
+  IF ~~ THEN REPLY @72 GOTO 59
+  IF ~~ THEN REPLY @73 GOTO 61
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 89 // from: 72.1
-  SAY ~Хэдралин? Что на этот раз сказала ящерица?~ [AARIN393]
-  IF ~~ THEN REPLY ~Она говорила о древних расах Создателей. Она утверждает, что сама является одной из них. Я думаю, что она друг нам.~ GOTO 90
+  SAY @132
+  IF ~~ THEN REPLY @133 GOTO 90
 END
 
 IF ~~ THEN BEGIN 90 // from: 89.1
-  SAY ~Я не эксперт в истории, но разве это не означает, что ей должно быть уже несколько тысяч лет? Я не знаю, стоит ли ей верить, и какое все это имеет отношение к Маугриму. Но я постараюсь разобраться.~ [AARIN394]
+  SAY @134
   IF ~~ THEN GOTO 91
 END
 
 IF ~~ THEN BEGIN 91 // from: 90.1
-  SAY ~Предоставьте Хэдралин мне. Маугрим и его дружки все еще занимаются поисками, а это означает, что они надеются обнаружить по крайней мере еще одно Слово Власти. Найдите его раньше Маугрима.~ [AARIN395]
+  SAY @135
   IF ~~ THEN GOTO 92
 END
 
 IF ~~ THEN BEGIN 92 // from: 91.1
-  SAY ~Я желаю вам удачи в выполнении задания, <CHARNAME>. От вас зависит судьба Невервинтера.~ [AARIN339]
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(%Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(%Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(%Слова Власти
-
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ EXIT
+  SAY @43
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@66)~ UNSOLVED_JOURNAL @136 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@66)~ UNSOLVED_JOURNAL @136 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@66)~ UNSOLVED_JOURNAL @136 EXIT
 END
 
 
 IF ~~ THEN BEGIN 93 // from: 72.2
-  SAY ~Мне бы хотелось, чтобы я мог чем-то поделиться с вами, но те несколько магических предметов, которые выделил мне Союз Лордов, нужны для защиты Невервинтера. Очень жаль, но мне нечего вам предложить.~ [AARIN400]
-  IF ~~ THEN REPLY ~Мы снова разговаривали с Хэдралин, Аарин.~ GOTO 89
+  SAY @137
+  IF ~~ THEN REPLY @109 GOTO 89
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Chapter3AarinJob","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 94 // from:
-  SAY ~Я только что получил последние отчеты с фронта, и они меня не обрадовали. Стены Невервинтера проломлены, и Союз Лордов отступил к замку Невер.~ [AARIN417]
+  SAY @138
   IF ~~ THEN GOTO 95
 END
 
 IF ~~ THEN BEGIN 95 // from: 94.1
-  SAY ~Арибет, которая отлично знакома с нашей стратегией, побеждает в каждой битве. Половина города уже захвачена войсками Лускана. А что с вашим заданием - может быть, вы преуспели там, где это не удалось нашим войскам?~ [AARIN418]
-  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY ~У меня есть одно из Слов Власти.~ GOTO 96
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 37
+  SAY @139
+  IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 96
+  IF ~~ THEN REPLY @32 GOTO 37
 END
 
 IF ~~ THEN BEGIN 96 // from: 95.1
-  SAY ~Наконец-то хорошие новости, и никак нельзя сказать, что они пришли слишком рано. Я как раз собирался направиться в Замок Невервинтер, чтобы убедиться в том, что уже отосланные туда слова не достанутся Арибет.~ [AARIN419]
+  SAY @140
   IF ~~ THEN GOTO 97
 END
 
 IF ~~ THEN BEGIN 97 // from: 96.1
-  SAY ~Прежде, чем уехать, я готов открыть мои чемоданы - там лежат деньги, предназначенные для защиты города, а вы сделали для этого больше, чем кто-либо другой. Уж лучше я отдам деньги вам, чем их разграбит лусканская армия.~ [AARIN420]
+  SAY @141
   IF ~~ THEN GOTO 98
 END
 
 IF ~~ THEN BEGIN 98 // from: 97.1
-  SAY ~Что бы ни ожидало нас, <CHARNAME>, я хочу сказать, что горжусь тем, что мне довелось работать вместе с вами. У меня есть 5000 золотых - возьмите их. Вы их действительно заслужили.~ [AARIN422]
+  SAY @142
   IF ~~ THEN GOTO 99
 END
 
 IF ~~ THEN BEGIN 99 // from: 98.1
-  SAY ~А будет и еще больше, если вы поедете со мной в Невервинтер, помогать защищать город. <CHARNAME>, <MANWOMAN> вроде вас - именно та личность, в которой отчаянно нуждается Союз Лордов.~ [AARIN423]
-  IF ~~ THEN REPLY ~Конечно, Аарин. Покуда я дышу, я буду сражаться, чтобы спасти Невервинтер.~ GOTO 100
-  IF ~~ THEN REPLY ~Я пойду с вами, Генд, но только потому, что здесь я, очевидно, получу выгоду.~ GOTO 100
-  IF ~~ THEN REPLY ~А нет ли у вас какого-нибудь лишнего магического снаряжения, которое может помочь в обороне Невервинтера?~ GOTO 103
+  SAY @143
+  IF ~~ THEN REPLY @144 GOTO 100
+  IF ~~ THEN REPLY @145 GOTO 100
+  IF ~~ THEN REPLY @146 GOTO 103
 END
 
 IF ~~ THEN BEGIN 100 // from: 99.1
-  SAY ~Времени совсем не осталось. Мы должны вернуться в замок Невер, чтобы защищать его стены и Слова Власти от Арибет и Маугрима!~ [AARIN459]
+  SAY @147
   IF ~~ THEN GOTO 101
 END
 
 IF ~~ THEN BEGIN 101 // from: 100.1
-  SAY ~Если вы готовы, мы отправимся прямо сейчас.~ [AARIN460]
-  IF ~~ THEN REPLY ~Да, все готово.~ GOTO 102
-  IF ~~ THEN REPLY ~У меня еще остались дела здесь~ GOTO 104
+  SAY @148
+  IF ~~ THEN REPLY @149 GOTO 102
+  IF ~~ THEN REPLY @150 GOTO 104
 END
 
 IF ~~ THEN BEGIN 102 // from: 101.1
-  SAY ~Надеюсь, что мы прибудем не слишком поздно.~ [AARIN461]
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(%Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.~ EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(%Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.~ EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(%Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.~ EXIT
+  SAY @151
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
 END
 
 IF ~~ THEN BEGIN 103 // from: 99.3
-  SAY ~Хотел бы я, чтобы у меня была возможность хоть что-нибудь дать вам, но увы, мы все отправили на фронт.~ [AARIN426]
+  SAY @153
   IF ~~ THEN GOTO 100
 END
 
 IF ~~ THEN BEGIN 104 // from: 101.2
-  SAY ~Поторопитесь <CHARNAME>. Мы можем опоздать.~
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(%Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.~ EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(%Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.~ EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(%Слова Власти
-
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.%)~ UNSOLVED_JOURNAL ~Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.~ EXIT
+  SAY @154
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Chapter3AarinJob","GLOBAL",4)IsGabber(Player1)!AreaCheck("NW1030")~ THEN BEGIN 105 // from:
-  SAY ~Времени совсем не осталось. Мы должны вернуться в замок Невер, чтобы защищать его стены и Слова Власти от Арибет и Маугрима!~ [AARIN459]
+  SAY @147
   IF ~~ THEN GOTO 106
 END
 
 IF ~~ THEN BEGIN 106 // from: 105.1
-  SAY ~Если вы готовы, мы отправимся прямо сейчас.~ [AARIN460]
-  IF ~~ THEN REPLY ~Да, все готово.~ GOTO 107
-  IF ~~ THEN REPLY ~У меня еще остались дела здесь~ GOTO 108
+  SAY @148
+  IF ~~ THEN REPLY @149 GOTO 107
+  IF ~~ THEN REPLY @150 GOTO 108
 END
 
 IF ~~ THEN BEGIN 107 // from: 106.1
-  SAY ~Надеюсь, что мы прибудем не слишком поздно.~ [AARIN461]
-   IF ~~ THEN DO ~EraseJournalEntry(%Слова Власти
-
-Слова Власти должны быть найдены прежде, чем Маугрим со своим культом обнаружит их и обратит эти древние артефакты против Невервинтера. Хоть они и были утрачены многие столетия назад, есть информация о том, что три Слова Власти можно найти в землях поблизости от Колодца Беорунна. Как только все Слова Власти будут найдены, их нужно доставить обратно в Колодец Беорунна Аарину Генду, чтобы тот переправил их в замок Невер.%)ClearAllActions()StartCutSceneMode()StartCutScene("ToNever2")~ EXIT
+  SAY @151
+   IF ~~ THEN DO ~EraseJournalEntry(@44)ClearAllActions()StartCutSceneMode()StartCutScene("ToNever2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 108 // from: 106.2
-  SAY ~Поторопитесь <CHARNAME>. Мы можем опоздать.~
+  SAY @154
    IF ~~ THEN EXIT
 END
 

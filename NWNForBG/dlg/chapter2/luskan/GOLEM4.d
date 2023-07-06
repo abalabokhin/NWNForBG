@@ -5,7 +5,7 @@
 BEGIN ~GOLEM4~
 
 IF ~~ THEN BEGIN 0 // from:
-  SAY ~Страж Щита стоит, уставившись прямо перед собой. Вас он не слышит.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

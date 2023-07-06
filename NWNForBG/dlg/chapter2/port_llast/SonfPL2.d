@@ -4,92 +4,90 @@ BEGIN ~SONFPL2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("FarmerQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Вы... Вы ведь искатель приключений, так? То есть... Я хочу сказать, приветствую вас. Э... Ну, мы с моим папой хотели бы попросить вас о помощи.~
-  IF ~~ THEN REPLY ~Ты ничего обо мне не знаешь?~ GOTO 1
-  IF ~~ THEN REPLY ~Успокойся. Что случилось?~ GOTO 2
-  IF ~~ THEN REPLY ~Я получу за это какую-нибудь награду?~ GOTO 3
-  IF ~~ THEN REPLY ~У меня нет времени все это выслушивать.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Э-э... Нет. А должен? Я живу на ферме за городом, так что боюсь, новости до нас просто не доходят. Но мы слышали, что в Порт-Лласт прибыло множество искателей приключений. И папа послал меня сюда, чтобы я нашел кого-нибудь и отправил к нему. Это и правда очень важно!~
-  IF ~~ THEN REPLY ~Это никак не связано с культом?~ GOTO 5
-  IF ~~ THEN REPLY ~Тогда расскажи мне, что случилось.~ GOTO 2
-  IF ~~ THEN REPLY ~Я получу за это какую-нибудь награду?~ GOTO 3
-  IF ~~ THEN REPLY ~У меня нет времени все это выслушивать.~ GOTO 4
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.1
-  SAY ~Э-э... может быть. Я ничего не знаю ни о каком культе. Вам нужно поговорить об этом с моим папой.~
-  IF ~~ THEN REPLY ~Тогда расскажи мне, что случилось.~ GOTO 2
-  IF ~~ THEN REPLY ~Я получу за это какую-нибудь награду?~ GOTO 3
-  IF ~~ THEN REPLY ~У меня нет времени все это выслушивать.~ GOTO 4
+  SAY @8
+  IF ~~ THEN REPLY @7 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.2
-  SAY ~Ну, мы с папой... Его зовут Геррол, в Порт-Лласте его все знают... мы живем на ферме к северу от городских ворот. На холмах вокруг нашей фермы обитает множество монстров. Обычно они нас особо не беспокоили, но в последнее время они совсем обнаглели и начали нападать на путешественников, караваны и так далее.~
+  SAY @9
   IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.1
-  SAY ~Они даже похитили мою мать на прошлой неделе, пока нас с папой не было на ферме! И папа послал меня в город за помощью.~
-  IF ~~ THEN REPLY ~Наверняка, кто-нибудь из властей может тебе помочь.~ GOTO 7
-  IF ~~ THEN REPLY ~Ты хочешь чтобы я нашел твою мать?~ ~Ты хочешь чтобы я нашла твою мать?~ GOTO 8
-  IF ~~ THEN REPLY ~Почему вы с твоим отцом просто не уйдете отсюда?~ GOTO 9
-  IF ~~ THEN REPLY ~Меня это не касается.~ GOTO 10
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Наверное. Мне кажется, папа мог бы вам заплатить, если вы поможете. По крайней мере, вы могли бы с ним об этом поговорить.~
-  IF ~~ THEN REPLY ~Это никак не связано с культом?~ GOTO 5
-  IF ~~ THEN REPLY ~Тогда расскажи мне, что случилось.~ GOTO 2
-  IF ~~ THEN REPLY ~У меня нет времени все это выслушивать.~ GOTO 4
+  SAY @15
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Но... Но пожалуйста! Нам никто больше не сможет помочь! У каждого здесь свои срочные дела!~
-  IF ~~ THEN REPLY ~У меня тоже есть свои дела. Прошу меня извинить.~ GOTO 10
-  IF ~~ THEN REPLY ~Проваливай, парень.~ GOTO 10
-  IF ~~ THEN REPLY ~Хорошо-хорошо. В таком случае, расскажи мне, в чем дело.~ GOTO 2
+  SAY @16
+  IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @19 GOTO 2
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.4
-  SAY ~Я... о... хорошо. Видимо, мне вас не переубедить.~
+  SAY @20
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 6.1
-  SAY ~Папа говорит, он разослал множество писем о наших проблемах, но мэр весь поглощен помощью Невервинтеру, у него нет времени помогать нам. Несколько других искателей приключений взялись за это, но никто из них не вернулся назад. Я надеялся... Может, вам удастся то, что не удалось им...~
-  IF ~~ THEN REPLY ~Хорошо, я помогу вам.~ GOTO 11
-  IF ~~ THEN REPLY ~Ты хочешь чтобы я нашел твою мать?~ ~Ты хочешь чтобы я нашла твою мать?~ GOTO 8
-  IF ~~ THEN REPLY ~Почему вы с твоим отцом просто не уйдете отсюда?~ GOTO 9
-  IF ~~ THEN REPLY ~Меня это не касается.~ GOTO 10
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.2
-  SAY ~Нам просто нужна ваша помощь! Я только прошу, чтобы вы поговорили с моим папой Герролом, вот и все.~
-  IF ~~ THEN REPLY ~Хорошо, я помогу вам.~ GOTO 11
-  IF ~~ THEN REPLY ~Наверняка, кто-нибудь из властей может тебе помочь.~ GOTO 7
-  IF ~~ THEN REPLY ~Почему вы с твоим отцом просто не уйдете отсюда?~ GOTO 9
-  IF ~~ THEN REPLY ~Меня это не касается.~ GOTO 10
+  SAY @23
+  IF ~~ THEN REPLY @22 GOTO 11
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.3
-  SAY ~Папа говорит, что ни за что не оставит маму... и к тому же, это наша земля. Папа не хочет уходить. Не могли бы вы... просто поговорить с ним?~
-  IF ~~ THEN REPLY ~Хорошо, я помогу вам.~ GOTO 11
-  IF ~~ THEN REPLY ~Наверняка, кто-нибудь из властей может тебе помочь.~ GOTO 7
-  IF ~~ THEN REPLY ~Меня это не касается.~ GOTO 10
+  SAY @24
+  IF ~~ THEN REPLY @22 GOTO 11
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 11 // from: 7.1
-  SAY ~Это было бы прекрасно. Уверен, папа оценит вашу помощь. Чтобы попасть на нашу ферму, нужно выйти из восточных ворот и повернуть на север. Я пока постараюсь найти еще кого-нибудь, чтобы послать к папе, пока он не позовет меня обратно. Но я уверен, что у вас все получится. Просто отправляйтесь к нему и поговорите с ним.~
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL ~Перекресток: Жена Геррола 
-
-Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.~ EXIT
+  SAY @25
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @26 EXIT
 END
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("FarmerQuest","GLOBAL",1)~ THEN BEGIN 12 // from:
-  SAY ~Пажалуйста, найдите мою маму!~
+  SAY @27
   IF ~~ THEN EXIT
 END

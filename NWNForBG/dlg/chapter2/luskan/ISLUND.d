@@ -4,169 +4,169 @@ BEGIN ~ISLUND~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("IslundPermission","MYAREA",0)~ THEN BEGIN 0 // from:
-  SAY ~Здравствуйте, добро пожаловать, <LADYLORD>. Насколько я понимаю по вашему пропуску, вы член делегации Малхоранда, да?~ [ISLUND54]
-  IF ~~ THEN REPLY ~(Дать ему пропуск) Вот, посмотрите сами..~ GOTO 1
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Вы проделали... очень далекий путь. Мне ничего не говорили о приглашении гостей из Малхоранда. Мы вас не ожидали.~
-  IF ~  CheckStatGT(LastTalkedToBy,9,CHR)~ THEN REPLY ~Вы смеете меня допрашивать?!~ GOTO 2
-  IF ~  CheckStatLT(LastTalkedToBy,10,CHR)~ THEN REPLY ~Вы смеете меня допрашивать?!~ GOTO 3
-  IF ~~ THEN REPLY ~Башня сообщает вам обо всех ваших гостях?~ GOTO 4
-  IF ~~ THEN REPLY ~Вы меня пропустите, не то я... рассержусь.~ GOTO 5
-  IF ~~ THEN REPLY ~Отлично, тогда я просто убью вас немедленно.~ GOTO 6
+  SAY @2
+  IF ~  CheckStatGT(LastTalkedToBy,9,CHR)~ THEN REPLY @3 GOTO 2
+  IF ~  CheckStatLT(LastTalkedToBy,10,CHR)~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Э... ну конечно нет, <LADYLORD>. Темпус знает, что у волшебников хватает посетителей с тех пор, как сражения были остановлены. Разрешите мне открыть вам дверь.~
+  SAY @7
   IF ~~ THEN DO ~SetGlobal("IslundPermission","MYAREA",1)TakePartyItem("PermitTo")Unlock("Door1")OpenDoor("Door1")~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Охрана безопасности башни входит в мои обязанности, <LADYLORD>. Я только выполняю их.~
+  SAY @8
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Ну... да, по большей части они именно так и делают. Из-за хаоса и боев в башне у нас тут такой раздрай, и все-таки...~
+  SAY @9
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
-  SAY ~Не стоит обижаться, <LADYLORD>... мне просто показалось это странным, вот и все.~
+  SAY @10
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
-  SAY ~Что?! Каким образом вы перешли мост?! Посторонние в башне!!~
+  SAY @11
   IF ~~ THEN DO ~SetGlobal("Hostile","MYAREA",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.2
-  SAY ~Малхоранд... Здесь уже бывали жители вашей страны. У них темная кожа, и одеваются они очень экстравагантно. Вы... совсем на них не похожи.~
-  IF ~  CheckStatGT(LastTalkedToBy,9,CHR)~ THEN REPLY ~Я посол Малхоранда, уверяю вас.~ GOTO 8
-  IF ~  CheckStatLT(LastTalkedToBy,10,CHR)~ THEN REPLY ~Я посол Малхоранда, уверяю вас.~ GOTO 9
-  IF ~~ THEN REPLY ~Вы отказываетесь пропустить меня?~ GOTO 10
-  IF ~~ THEN REPLY ~Пусть так. Теперь ты покойник.~ GOTO 6
+  SAY @12
+  IF ~  CheckStatGT(LastTalkedToBy,9,CHR)~ THEN REPLY @13 GOTO 8
+  IF ~  CheckStatLT(LastTalkedToBy,10,CHR)~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 6
 END
 
 IF ~~ THEN BEGIN 8 // from: 2.2
-  SAY ~Это справедливо. В любом случая, это не мое дело. Темпус знает, сколько у волшебников посетителей в последнее время. Тогда разрешите мне открыть вам дверь. Я предлагаю вам зайти в комнату сразу справа от двери, <LADYLORD>. Вам придется подождать вместе с другими послами, пока кто-нибудь за вами не спустится.~
+  SAY @16
   IF ~~ THEN DO ~SetGlobal("IslundPermission","MYAREA",1)TakePartyItem("PermitTo")Unlock("Door1")OpenDoor("Door1")~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.1
-  SAY ~У волшебников куча посетителей... прямо скажем, представители со всего севера съехались. Но из таких дальних стран, как Малхоранд, никого нет. Как удобно - это ведь очень трудно проверить.~
-  IF ~~ THEN REPLY ~Тогда вам лучше спросить у ваших волшебников.~ GOTO 12
-  IF ~~ THEN REPLY ~Вы отказываетесь пропустить меня?~ GOTO 10
-  IF ~~ THEN REPLY ~Пусть так. Теперь ты покойник.~ GOTO 6
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 12
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 6
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.3
-  SAY ~Я... полагаю, нет. Мне стало трудно связываться с магами после этих сражений, но у вас тут официальная печать. Темпус знает, сколько у них посетителей в последнее время. Тогда разрешите мне открыть вам дверь. Я предлагаю вам зайти в комнату сразу справа от двери, <LADYLORD>. Вам придется подождать вместе с другими послами, пока кто-нибудь за вами не спустится. ~
+  SAY @19
   IF ~~ THEN DO ~SetGlobal("IslundPermission","MYAREA",1)TakePartyItem("PermitTo")Unlock("Door1")OpenDoor("Door1")~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.1
-  SAY ~Предупреждаю, может пройти некоторое время, пока за вами придут. После сражения в башне был назначен новый Тайный Архимаг, но, по-моему, там все равно царит хаос. Я также советую вам не проходить дальше главного зала. Конечно, сражение закончено, но волшебники могут принять вас за непрошеного гостя, если вы зайдете, куда не следует. А сейчас они не в том настроении, чтобы задавать вопросы непрошеным гостям. Надеюсь, вы понимаете.~
-  IF ~~ THEN REPLY ~У меня есть несколько вопросов.!~ GOTO 13
-  IF ~~ THEN REPLY ~Прекрасно! Сейчас ты умрешь.~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @22 GOTO 6
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 12 // from: 7.2
-  SAY ~Пфффф. Маги почти не выходили на контакт с тех пор, как прекратилось сражение. Ваша печать действительна... И, видит Темпус, за последнее время здесь было полно странных посетителей!~
-  IF ~~ THEN REPLY ~Вы отказываетесь пропустить меня?~ GOTO 10
-  IF ~~ THEN REPLY ~Пусть так. Теперь ты покойник.~ GOTO 6
+  SAY @24
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 6
 END
 
 IF ~~ THEN BEGIN 13 // from: 11.1
-  SAY ~Думаю, вреда в этом не будет. Спрашивайте.~
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~Расскажите мне о Башне Хозяина.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @25
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @28 GOTO 17
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 14 // from: 11.3
-  SAY ~До встречи, <LADYLORD>. ~
+  SAY @29
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.1
-  SAY ~Ну, Архимагом раньше был Арклем Грит. Теперь его нет, я знаю, что его место кто-то занял, но не знаю точно, кто это.~
-  IF ~~ THEN REPLY ~Бывший Архимаг умер?~ GOTO 18
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~Расскажите мне о Башне Хозяина.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @30
+  IF ~~ THEN REPLY @31 GOTO 18
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @28 GOTO 17
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 16 // from: 13.2
-  SAY ~Ага, думаю, обычный народ ничего об этом не слышал, верно? Волшебники в башне решили поубивать друг друга, чем они до сих пор и занимались. Я не знаю, с чего все это началось, и хорошо, что я тут не при чем. Главное то, что теперь все закончилось, хотя в башне сейчас настоящий погром.~
-  IF ~~ THEN REPLY ~Что значит - погром?~ GOTO 19
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Расскажите мне о Башне Хозяина.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @32
+  IF ~~ THEN REPLY @33 GOTO 19
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @28 GOTO 17
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 17 // from: 13.3
-  SAY ~Ну... Это большое здание, <LADYLORD>. Говорят, что она была здесь задолго до того, как построили город, и что ее давным-давно создали с помощью магии. Братство поселилось там лет этак двадцать назад. Бывший Архимаг Таинств сделал Лускан таким, какой он сейчас. Я мало что знаю об этом месте. Мы, стражники, обычно не заходим туда и не встречаемся с волшебниками... По мне, так это только к лучшему.~
-  IF ~~ THEN REPLY ~Не знаете, есть ли в башне какой-нибудь культ?~ GOTO 20
-  IF ~~ THEN REPLY ~Не слышали ли вы о ком-нибудь по имени Маугрим?~ GOTO 21
-  IF ~~ THEN REPLY ~Каковы размеры этой башни?~ GOTO 22
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @34
+  IF ~~ THEN REPLY @35 GOTO 20
+  IF ~~ THEN REPLY @36 GOTO 21
+  IF ~~ THEN REPLY @37 GOTO 22
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 18 // from: 15.1
-  SAY ~Скорее всего, он погиб в сражении, но точно я не знаю.~
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~Расскажите мне о Башне Хозяина.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @38
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @28 GOTO 17
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 19 // from: 16.1
-  SAY ~Ну... Я не хотел сказать, что охрана покажется вам недостаточной, <LADYLORD>. Хотя многие волшебники погибли в сражении. Как я понимаю, во время этого сражения произошло много... несчастных случаев. Понимаете, тут еще придется подчистить... Вот вам еще одна причина не бродить тут без дела.~
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Расскажите мне о Башне Хозяина.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @39
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @28 GOTO 17
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 20 // from: 17.1
-  SAY ~Культ? Нет, ни о чем таком я не знаю. Насколько мне известно, эти волшебники никогда не отличались религиозностью.~
-  IF ~~ THEN REPLY ~Не слышали ли вы о ком-нибудь по имени Маугрим?~ GOTO 21
-  IF ~~ THEN REPLY ~Каковы размеры этой башни?~ GOTO 22
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @40
+  IF ~~ THEN REPLY @36 GOTO 21
+  IF ~~ THEN REPLY @37 GOTO 22
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 21 // from: 17.2
-  SAY ~Хммм. Кто-то по имени Маугрим приезжал сюда довольно давно. Просился переговорить с волшебниками. С тех пор он здесь, но его не видно и не слышно. Думаю, он уже мертв.~
-  IF ~~ THEN REPLY ~Не знаете, есть ли в башне какой-нибудь культ?~ GOTO 20
-  IF ~~ THEN REPLY ~Каковы размеры этой башни?~ GOTO 22
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @41
+  IF ~~ THEN REPLY @35 GOTO 20
+  IF ~~ THEN REPLY @37 GOTO 22
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 IF ~~ THEN BEGIN 22 // from: 17.3
-  SAY ~Понятия не имею. По правде я думаю, что и волшебники тоже. Они же не ходят по башне как нормальные люди - по всяким там лестницам и залам... Там есть такие особые камни, что переносят их в разные комнаты внутри. Темпус его знает, как им удается различить, кому куда позволено входить и кому куда нужно попасть. Если вы увидите такой телепортирующий камень, не советую вам шутковать с ним. Вы можете очутиться где-нибудь за пределами башни... А это уж совсем ни к чему.~
-  IF ~~ THEN REPLY ~Не знаете, есть ли в башне какой-нибудь культ?~ GOTO 20
-  IF ~~ THEN REPLY ~Не слышали ли вы о ком-нибудь по имени Маугрим?~ GOTO 21
-  IF ~~ THEN REPLY ~Кто этот новый Тайный Архимаг?~ GOTO 15
-  IF ~~ THEN REPLY ~Вы упомянули о сражении...?~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @42
+  IF ~~ THEN REPLY @35 GOTO 20
+  IF ~~ THEN REPLY @36 GOTO 21
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @27 GOTO 16
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 
 // ----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("IslundPermission","MYAREA",0)~ THEN BEGIN 23 // from:
-  SAY ~Можете войти в башню, если хотите. Но помните, не выходите за пределы посольских покоев.~ [ISLUND53]
-  IF ~~ THEN REPLY ~У меня есть несколько вопросов.!~ GOTO 13
-  IF ~~ THEN REPLY ~Прекрасно! Сейчас ты умрешь.~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 14
+  SAY @43
+  IF ~~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @22 GOTO 6
+  IF ~~ THEN REPLY @23 GOTO 14
 END
 

@@ -4,7 +4,7 @@ BEGIN ~MOOSEKID~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NW_Medicine","GLOBAL",1)~ THEN BEGIN 0 // from:
-  SAY ~Я вас знаю! Моя мама говорит, из-за вас всем больным стало лучше.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
@@ -12,7 +12,7 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalLT("NW_Medicine","GLOBAL",2)~ THEN BEGIN 1 // from:
-  SAY ~Мне плохо. Я хочу маму.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 

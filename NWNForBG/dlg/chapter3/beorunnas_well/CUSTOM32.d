@@ -4,25 +4,25 @@ BEGIN ~CUSTOM32~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,1)~ THEN BEGIN 0 // from:
-  SAY ~¬ этом лагере делать нечего - только пить и дожидатьс€ приказа, который отправит теб€ на передовую.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,2)GlobalGT("ILCARD_Free","GLOBAL",0)~ THEN BEGIN 1 // from:
-  SAY ~—лышали новости? ќсаду с форта »лкарда сн€ли! ј мен€ уже чуть было тоже не отправили туда сражатьс€. ƒумаю, за такую удачу не грех и пропустить стаканчик!~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,2)Global("ILCARD_Free","GLOBAL",0)~ THEN BEGIN 2 // from:
-  SAY ~ѕо лагерю ход€т слухи, что форт »лкард осадило одно из этих м€тежных варварских племен. я так понимаю, что некоторых из нас скоро отправ€т туда, чтобы мы тоже участвовали в сражении.~
+  SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,3)~ THEN BEGIN 3 // from:
-  SAY ~Ёй, а вы ведь <CHARNAME> - герой Ќевервинтера! я бы купил вам выпить, если бы в этой дыре не драли с нас так!~
+  SAY @3
   IF ~~ THEN EXIT
 END
 

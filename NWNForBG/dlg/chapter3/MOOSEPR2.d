@@ -4,53 +4,53 @@ BEGIN ~MOOSEPR2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Самое время кому-нибудь появиться и спасти меня! Кто знает, что еще могли придумать эти дикари, помедли ты еще хоть немного!~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Они тебя ранили?~ GOTO 2
-  IF ~~ THEN REPLY ~Как Утгардты захватили тебя?~ GOTO 3
-  IF ~~ THEN REPLY ~Можешь аккуратно выбраться отсюда сама?~ GOTO 4
-  IF ~~ THEN REPLY ~Хватит болтать. Пришла пора тебе умереть.~ GOTO 5
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~О, да. Давай теперь будем тратить время на представление. Не стоит волноваться о том, как ты вытащишь меня отсюда! Это была бы слишком наглая просьба, так ведь? Меня зовут Майлин, если тебе это нужно. Папа оставил мне неплохое наследство, и я собиралась купить себе небольшую ферму в пригороде. А потом пришли эти проклятые дикари и все испортили!~
-  IF ~~ THEN REPLY ~Они тебя ранили?~ GOTO 2
-  IF ~~ THEN REPLY ~Как Утгардты захватили тебя?~ GOTO 3
-  IF ~~ THEN REPLY ~Можешь аккуратно выбраться отсюда сама?~ GOTO 4
-  IF ~~ THEN REPLY ~Хватит болтать. Пришла пора тебе умереть.~ GOTO 5
+  SAY @6
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Пока все, что они сделали, это бросили меня в эту клетку. Возможно, чтобы сохранить меня для какого-то языческого ритуала, с помощью которого они надеялись избавиться от эпидемии, которая уничтожила почти все племя.~
-  IF ~~ THEN REPLY ~Что еще ты можешь мне рассказать?~ GOTO 6
-  IF ~~ THEN REPLY ~Как Утгардты захватили тебя?~ GOTO 3
-  IF ~~ THEN REPLY ~Можешь аккуратно выбраться отсюда сама?~ GOTO 4
-  IF ~~ THEN REPLY ~Хватит болтать. Пришла пора тебе умереть.~ GOTO 5
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Как ты смеешь говорить, что это моя вина? Ничего подобного! Я просто работала в своем саду, когда на меня напали эти варвары! Они уничтожили мой дом и притащили меня в эту тюрьму, вопя при этом непрерывно.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Они тебя ранили?~ GOTO 2
-  IF ~~ THEN REPLY ~Можешь аккуратно выбраться отсюда сама?~ GOTO 4
-  IF ~~ THEN REPLY ~Хватит болтать. Пришла пора тебе умереть.~ GOTO 5
+  SAY @9
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.3
-  SAY ~Я полагаю, что сама могу найти дорогу обратно, эти дикари слишком ослаблены заболеванием. Вот так помощь! Хмффф! Мама была права. За стенами фермы жить небезопасно. Я отправляюсь прямо в Невервинтер, и, можешь поверить, еще очень нескоро покину этот город!~
+  SAY @10
   IF ~~ THEN DO ~AddexperienceParty(10000)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.4
-  SAY ~Как вы смеете разговаривать со мной в таком тоне! Я вам глаза выцарапаю!~
+  SAY @11
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.1
-  SAY ~Что ты ожидаешь от меня услышать? Меня схватили. Тот факт, что они не убили меня или не сделали еще что похуже, наверное, значит только то, что они готовят какую-то ужасную невообразимую пытку! Грязные дикари!~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Как Утгардты захватили тебя?~ GOTO 3
-  IF ~~ THEN REPLY ~Можешь аккуратно выбраться отсюда сама?~ GOTO 4
-  IF ~~ THEN REPLY ~Хватит болтать. Пришла пора тебе умереть.~ GOTO 5
+  SAY @12
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 

@@ -4,153 +4,153 @@ BEGIN ~DARKTONG~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("KnowDarktong","LOCALS",0)Global("GoToLuskan","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Эвона! Ты, там... ты ведь из Невервинтера, ага? Пашешь на Арибет?~
-  IF ~~ THEN REPLY ~Так точно, и горжусь этим.~ GOTO 1
-  IF ~~ THEN REPLY ~Арибет? Ага!~ GOTO 2
-  IF ~~ THEN REPLY ~Оставьте меня в покое, чужестранец.~ GOTO 3
-  IF ~~ THEN REPLY ~Проваливай.~ EXIT
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 EXIT
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я так и думал, это ж твоими стараниями замутили наконец лекарство от Воющей! Ясное дело, надо было тебя ждать!~
-  IF ~~ THEN REPLY ~А ты кто такой?~ GOTO 4
-  IF ~~ THEN REPLY ~Я не хочу с вами говорить.~ GOTO 3
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Я так и думал, вот только в рассказах не упоминалось, что ты... эээ... не того маленько.~
-  IF ~~ THEN REPLY ~А ты кто такой?~ GOTO 4
-  IF ~~ THEN REPLY ~Проваливай.~ GOTO 3
+  SAY @8
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @4 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Как пожелаешь.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1 2.1
-  SAY ~Меня звать Чернослов. Чернослов Костолом. Я тут с тех пор, как благодаря тебе убралась Воющая - пытаюсь вызнать, откуда бы она могла взяться.~
-  IF ~~ THEN REPLY ~Что вам удалось обнаружить?~ GOTO 5
-  IF ~~ THEN REPLY ~Что ты тут делаешь?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 5
+  IF ~~ THEN REPLY @12 GOTO 6
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
-  SAY ~Я слышал, что тебе рассказали, ясное дело... за этой чумой стоит культ, и он где-то на Севере. Я точно не уверен, где, но кой-какие подозрения имеются.~
-  IF ~~ THEN REPLY ~Где, по-твоему, этот культ находится?~ GOTO 8
-  IF ~~ THEN REPLY ~Что творится в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~Почему бы вам не присоединиться ко мне?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 8
+  IF ~~ THEN REPLY @16 GOTO 9
+  IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
-  SAY ~Ну, с тех пор, как я попал в засаду на перекрестке, моя раненная нога держит меня на месте. Я, правда, кое-что нашел... Может, я окажусь тебе полезен.~
-  IF ~~ THEN REPLY ~Что вам удалось обнаружить?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @18
+  IF ~~ THEN REPLY @11 GOTO 5
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.3
-  SAY ~Тада слушай. Найдешь что-нибудь, свистни мне. Одна голова хорошо, а две лучше, и все такое. Мы, приключенцы, должны держаться вместе, чтобы найти этих ублюдочных членов культа и наказать их! Огромной тебе удачи! Эх, было бы здорово колено, так бы за тобой и побежал!.~
+  SAY @19
   IF ~~ THEN DO ~SetGlobal("KnowDarktong","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
-  SAY ~Это на перекрестке, и я скажу те, почему. Там целая сеть пещер, где всю жизнь водились гоблины, но теперь их там сотни, да и кое-что похуже имеется. Я ходил туда, чтоб самому убедиться. Похоже, там орки, багбиры, да и гоблины все эти холмы заполонили. Там-то и колено мое почикали, ага. Паскудные гоблины на меня выскочили из засады, пока я соображал, че к чему.~
-  IF ~~ THEN REPLY ~Так что заставляет вас думать, что здесь замешан культ?~ GOTO 11
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 11
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.2
-  SAY ~Все время, пока я тут восстанавливаю здоровье элем, этот пацан Эндер ошивается в гостинице и тока и говорит, что о каких-то волколюдях. Псих какой-то, понимаешь. Воображает, что тут одни тока оборотни кругом.~
-  IF ~~ THEN REPLY ~Где, по-твоему, этот культ находится?~ GOTO 8
-  IF ~~ THEN REPLY ~Почему бы вам не присоединиться ко мне?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @22
+  IF ~~ THEN REPLY @15 GOTO 8
+  IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 10 // from: 5.3
-  SAY ~С тобой-то? Ну, вот уж предложение, прям лестно даже. Тока вот с этим дурным коленом я пока что не в форме. Однако вот что тебе скажу: всегда рад поделиться информацией. Если найдешь чего, обязательно мне свистни. Одна голова хорошо, а две лучше, ага?~
-  IF ~~ THEN REPLY ~Ты можешь мне помочь иначе. Мне нужно золото на расходы.~ GOTO 12
-  IF ~~ THEN REPLY ~Где, по-твоему, этот культ находится?~ GOTO 8
-  IF ~~ THEN REPLY ~Что творится в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @23
+  IF ~~ THEN REPLY @24 GOTO 12
+  IF ~~ THEN REPLY @15 GOTO 8
+  IF ~~ THEN REPLY @16 GOTO 9
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.1
-  SAY ~Две причины. Во-первых, твари начали сбиваться в стаи, как раз когда эта чума разразилась в Невервинтере. Во-вторых, теми гоблинами, что на меня напали, управлял человек. Обычно-то так не бывает. Может, это был сектант как раз. А может, и нет. Да по-любому, я кишками чую, что-то здесь не так.~
-  IF ~~ THEN REPLY ~Конечно, я это проверю.~ GOTO 13
-  IF ~~ THEN REPLY ~У меня еще один вопрос.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @25
+  IF ~~ THEN REPLY @26 GOTO 13
+  IF ~~ THEN REPLY @27 GOTO 14
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 12 // from: 10.1
-  SAY ~Ну, я бы с радостью, приятель, но мне надо на что-то жить самому. С раненой ногой я много не заработаю.~ ~Ну, я бы с радостью, подруга, но мне надо на что-то жить самому. С раненой ногой я много не заработаю.~
-  IF ~~ THEN REPLY ~Хорошо, но я еще задам тебе несколько вопросов.~ GOTO 14
-  IF ~  RandomNum(2,1)~ THEN REPLY ~Леди Арибет повелела мне собрать деньги на поиски.~ GOTO 15
-  IF ~  RandomNum(2,2)~ THEN REPLY ~Леди Арибет повелела мне собрать деньги на поиски.~ GOTO 16
-  IF ~~ THEN REPLY ~Лучше бы тебе выдать мне немного денег прежде, чем я ампутирую твоею хилую ножку.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 14
+  IF ~  RandomNum(2,1)~ THEN REPLY @30 GOTO 15
+  IF ~  RandomNum(2,2)~ THEN REPLY @30 GOTO 16
+  IF ~~ THEN REPLY @31 GOTO 17
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 13 // from: 11.1
-  SAY ~Тада слушай. Найдешь что-нибудь, свистни мне. Одна голова хорошо, а две лучше, и все такое. Мы, приключенцы, должны держаться вместе, чтобы найти тех ублюдков и наказать их! Огромной тебе удачи! Эх, было бы здорово колено, так бы за тобой и побежал!~
+  SAY @32
   IF ~~ THEN DO ~SetGlobal("KnowDarktong","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 11.2
-  SAY ~Что я могу для вас сделать?~
-  IF ~~ THEN REPLY ~Что творится в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~Что ты тут делаешь?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @33
+  IF ~~ THEN REPLY @16 GOTO 9
+  IF ~~ THEN REPLY @12 GOTO 6
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.2
-  SAY ~Чтобы помочь найти этот проклятый культ, я даже готов пожертвовать 100 монет. Как-нибудь прокормлюсь без них. Помни мою щедрость. Когда вернешься, расскажи мне обо всем. Я хочу быть в курсе дела, хоть и не могу ходить.~
+  SAY @34
   IF ~~ THEN DO ~GiveGoldForce(100)SetGlobal("KnowDarktong","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 12.3
-  SAY ~Нет, дружище, я не могу так просто отдать золото, я ведь ранен, знаешь ли. Я бы с радостью помог тебе разобраться в этом деле. Ты мне скажи, когда что-то выяснишь, может, я тебе чем помогу.~
-  IF ~~ THEN REPLY ~Хорошо, но я еще задам тебе несколько вопросов.~ GOTO 14
-  IF ~~ THEN REPLY ~Лучше бы тебе выдать мне немного денег прежде, чем я ампутирую твоею хилую ножку.~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @35
+  IF ~~ THEN REPLY @29 GOTO 14
+  IF ~~ THEN REPLY @31 GOTO 17
+  IF ~~ THEN REPLY @13 GOTO 7
 END
 
 IF ~~ THEN BEGIN 17 // from: 12.4
-  SAY ~Нога, конечно, болит, но вот... а, я понял. Ну, раз дело обернулось так, я могу тебе дать немного золота. Вот 100 монет, все, что у меня есть. Помни мою щедрость. Когда вернешься, расскажи мне обо всем. Я хочу быть в курсе дела, хоть и не могу ходить.~
+  SAY @36
   IF ~~ THEN DO ~SetGlobal("KnowDarktong","LOCALS",1)GiveGoldForce(100)ReputationInc(-1)~ EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("KnowDarktong","LOCALS",0)!Global("KnowDarktong","LOCALS",66)Global("GoToLuskan","GLOBAL",0)~ THEN BEGIN 18 // from:
-  SAY ~Эй, привет! Новости есть? Эх, прогулялся бы я с тобой, кабы не больное колено!~
-  IF ~  GlobalGT("KnowDarktong","LOCALS",1)~ THEN REPLY ~Погоди-ка... у меня такое чувство, будто ты пытаешься присвоить себе мои находки.~ GOTO 19
-  IF ~~ THEN REPLY ~Мне нечего тебе сказать.~ GOTO 20
-  IF ~  GlobalGT("Evidence","GLOBAL",0)Global("Luscan","LOCALS",0)~ THEN REPLY ~Я подозреваю, что этот культ может базироваться в Лускане.~ GOTO 21
-  IF ~  Global("Caves","LOCALS",0)Global("GanonJournal","GLOBAL",1)~ THEN REPLY ~В пещерах, о которых вы упоминали был сектант, который устраивал все эти беспорядки.~ GOTO 22
+  SAY @37
+  IF ~  GlobalGT("KnowDarktong","LOCALS",1)~ THEN REPLY @38 GOTO 19
+  IF ~~ THEN REPLY @39 GOTO 20
+  IF ~  GlobalGT("Evidence","GLOBAL",0)Global("Luscan","LOCALS",0)~ THEN REPLY @40 GOTO 21
+  IF ~  Global("Caves","LOCALS",0)Global("GanonJournal","GLOBAL",1)~ THEN REPLY @41 GOTO 22
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
-  SAY ~Да ладно те, парень, хорош хамить. Не буду больше ходить вокруг да около, раз уж ты такая... обидчивая штучка, а?~ ~Да ладно те, хорош хамить. Не буду больше ходить вокруг да около, раз уж ты такая... обидчивая штучка, а?~
+  SAY @42
   IF ~~ THEN DO ~SetGlobal("KnowDarktong","LOCALS",66)AddXPObject(Player1,10000)EscapeAreaObject("Door2000")~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.2
-  SAY ~Ну же, давай, действуй. Надо наказать тех, кто напустил чуму на бедный Невервинтер.~
+  SAY @43
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 18.3
-  SAY ~Лускан, а? Гм, надо подумать. Ты пока продолжай искать, дружище. Лускан...~
+  SAY @44
   IF ~~ THEN DO ~IncrementGlobal("KnowDarktong","LOCALS",1)SetGlobal("Luscan","LOCALS",1)AddXPObject(Player1,-5000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 18.4
-  SAY ~Так я и думал! Видишь теперь - старина Чернослов просто так не скажет. И никогда я дурного не посоветую.~
+  SAY @45
   IF ~~ THEN DO ~IncrementGlobal("KnowDarktong","LOCALS",1)SetGlobal("Caves","LOCALS",1)AddXPObject(Player1,-5000)~ EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("GoToLuskan","GLOBAL",0)~ THEN BEGIN 23 // from:
-  SAY ~Ничего личного, дружок, хоть это ничего и не меняет. Надо было старому Чернослову урвать и себе кусочек славы... давай покончим с этим!~
+  SAY @46
   IF ~~ THEN DO ~Enemy()Attack(LastTalkedToBy)~ EXIT
 END

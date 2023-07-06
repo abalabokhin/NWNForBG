@@ -4,167 +4,167 @@ BEGIN ~PATROL01~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN BEGIN 0 // from:
-  SAY ~Представьтесь, <SIRMAAM>! Район Черного озера закрыт для всех, кроме жителей района и городской стражи!~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Через ворота же меня пропустили, правда?~ GOTO 1
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY ~Через ворота же меня пропустили, правда?~ GOTO 2
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY ~Следите за своим тоном. Не надо меня раздражать.~ GOTO 3
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Следите за своим тоном. Не надо меня раздражать.~ GOTO 4
-  IF ~~ THEN REPLY ~Я служу в страже и работаю на Арибет.~ GOTO 5
+  SAY @0
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @1 GOTO 1
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @1 GOTO 2
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @2 GOTO 3
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @2 GOTO 4
+  IF ~~ THEN REPLY @3 GOTO 5
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Что ж, да... Думаю, это действительно так. К тому же, вы ведь работаете на леди Арибет, правда? Прошу прощения, <LADYLORD>. Знаете, народ в отчаянии, и все такое, так что приходится осторожничать. На всякий случай, я расскажу о вас другим патрульным.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~А кто говорит, что вы прошли через ворота? Только не я. Вот что, <SIRMAAM>, у меня строжайшие распоряжения относительно посторонних в этом районе.~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY ~Следите за своим тоном. Не надо меня раздражать.~ GOTO 3
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Следите за своим тоном. Не надо меня раздражать.~ GOTO 4
-  IF ~~ THEN REPLY ~Я служу в страже и работаю на Арибет.~ GOTO 5
+  SAY @7
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @2 GOTO 3
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @2 GOTO 4
+  IF ~~ THEN REPLY @3 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Э... да, <LADYLORD>. Думаю, теперь я вас узнаю. Вы ведь из тех, кто работает на Арибет де Тильмаранд, правда? Прошу прощения, <LADYLORD>. Знаете, народ в отчаянии, и все такое, так что приходится осторожничать. На всякий случай, я расскажу о вас другим патрульным.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @8
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~А меня это меньше всего интересует, <SIRMAAM>. В городе мор!~
-  IF ~~ THEN REPLY ~Да, и мне все равно, какие там у вас приказы приказы. Я иду куда хочу.~ GOTO 8
-  IF ~~ THEN REPLY ~Я служу в страже и работаю на Арибет.~ GOTO 5
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 8
+  IF ~~ THEN REPLY @3 GOTO 5
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
-  SAY ~Точно, теперь я припоминаю. Прошу прощения, <LADYLORD>. Знаете, народ в отчаянии, и все такое, так что приходится осторожничать. На всякий случай, я расскажу о вас другим патрульным.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @11
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
-  SAY ~Полагаю, я могу ответить на несколько вопросов, <SIRMAAM>.~
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.2
-  SAY ~Как хотите, <SIRMAAM>.~
+  SAY @15
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.1
-  SAY ~Я думаю, вы имеете на это право, ведь вы трудитесь на благо города. Хотя, по-моему, вам стоило бы вести себя повежливее с заслуженными стражниками; лишние друзья вам не помешают.~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @16
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.1
-  SAY ~К счастью, не больше других. У патрульной службы в районе Черного озера, в конце концов, есть свои преимущества.~
-  IF ~~ THEN REPLY ~Вы ничего не слышали о сбежавших уотердипских существах?~ GOTO 11
-  IF ~~ THEN REPLY ~В последнее время не замечали ничего странного?~ GOTO 12
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 11
+  IF ~~ THEN REPLY @19 GOTO 12
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.2
-  SAY ~Может и так, всякое может быть. А что именно вас интересует?~
-  IF ~~ THEN REPLY ~Вы видели что-нибудь странное?~ GOTO 12
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY ~Вы не знаете, не нужна ли кому-нибудь помощь?~ GOTO 13
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("Formosa")~ THEN REPLY ~Вы не знаете, не нужна ли кому-нибудь помощь?~ GOTO 14
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)Dead("Formosa")~ THEN REPLY ~Вы не знаете, не нужна ли кому-нибудь помощь?~ GOTO 13
-  IF ~~ THEN REPLY ~Может, интересные места какие-нибудь знаете?~ GOTO 19
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 12
+  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY @22 GOTO 13
+  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("Formosa")~ THEN REPLY @22 GOTO 14
+  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)Dead("Formosa")~ THEN REPLY @22 GOTO 13
+  IF ~~ THEN REPLY @23 GOTO 19
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.1
-  SAY ~Говорят, что в городе сбежали какие-то животные... но в районе Черного Озера ничего подобного никто не видел, это уж точно.~
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY ~Не знаете, не происходило ли чего странного с тех пор, как создания сбежали?~ GOTO 15
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY ~Не знаете, не происходило ли чего странного с тех пор, как создания сбежали?~ GOTO 16
-  IF ~~ THEN REPLY ~Есть идеи, куда бы они могли податься, если бы оказались здесь?~ GOTO 17
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @24
+  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @25 GOTO 15
+  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~~ THEN REPLY @26 GOTO 17
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.2
-  SAY ~Ну... здесь нет никакой чумы. С тех пор, как мы закрыли район, к нам новости доходят редко.~
-  IF ~~ THEN REPLY ~Тут вообще не было случаев мора?~ GOTO 18
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @27
+  IF ~~ THEN REPLY @28 GOTO 18
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.2
-  SAY ~Больше нет. Там были неприятности с одной женщиной по имени Формоса, но все уже успокоилось. Теперь тут ничего особенного не происходит. Вы хотели знать что-то еще?~
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @29
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 14 // from: 10.3
-  SAY ~Хмм. Эта Формоса на юго-восточной площади продолжает вопить о том, как ей нужна помощь. Если вы спросите меня, я скажу, что кто-то должен заткнуть ей рот. Вы хотели знать что-то еще?~
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @30
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 15 // from: 11.1
-  SAY ~Ну, у Мелданена был какой-то необычный гость, но теперь все уже разрешилось. Теперь тут ничего особенного происходит. Вы хотели знать что-то еще?~
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @31
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 16 // from: 11.2
-  SAY ~Хмм. Знаете, именно тогда у Мелданена появилась эта новая посетительница. Странная женщина, и он очень просил стражников никому о ней не рассказывать. Даже заплатил нам немного. И все-таки я вам скажу. Девушка эта странная, в духе этого сумасшедшего времени... хотя, откуда мне знать? Мелданен живет в особняке на севере района, вот туда и идите. Вы хотели знать что-то еще?~
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @32
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 17 // from: 11.3
-  SAY ~Можете попробовать зайти в зверинец на северо-востоке. Не знаю, может, там что-то и прячется. Вам еще что-нибудь нужно?~
-  IF ~~ THEN REPLY ~В последнее время не замечали ничего странного?~ GOTO 12
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @33
+  IF ~~ THEN REPLY @19 GOTO 12
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 18 // from: 12.1
-  SAY ~Было несколько случаев... но мы немедленно поместили их в карантин. А так, нет... к счастью, никаких вспышек. Хотя неизвестно, сколько это еще продлится. Вы хотели знать что-то еще?~
-  IF ~~ THEN REPLY ~Вы ничего не слышали о сбежавших уотердипских существах?~ GOTO 11
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @34
+  IF ~~ THEN REPLY @18 GOTO 11
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 IF ~~ THEN BEGIN 19 // from: 10.5
-  SAY ~Я не знаю. Может, зверинец? Это на северо-востоке. А мне нравятся "Голая Доска"... вам следует посетить тамошний подвал. Хех. Вы хотели знать что-то еще?~
-  IF ~~ THEN REPLY ~Вы видели что-нибудь странное?~ GOTO 12
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY ~Вы не знаете, не нужна ли кому-нибудь помощь?~ GOTO 13
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("Formosa")~ THEN REPLY ~Вы не знаете, не нужна ли кому-нибудь помощь?~ GOTO 14
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)Dead("Formosa")~ THEN REPLY ~Вы не знаете, не нужна ли кому-нибудь помощь?~ GOTO 13
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 9
-  IF ~~ THEN REPLY ~Что-нибудь интересное происходит в районе Черного озера?~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @35
+  IF ~~ THEN REPLY @21 GOTO 12
+  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY @22 GOTO 13
+  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("Formosa")~ THEN REPLY @22 GOTO 14
+  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)Dead("Formosa")~ THEN REPLY @22 GOTO 13
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 
 // -------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN BEGIN 20 // from:
-  SAY ~Эй, вы! Представьтесь немедленно и скажите мне, как вы попали в район!~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Через ворота же меня пропустили, правда?~ GOTO 1
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY ~Через ворота же меня пропустили, правда?~ GOTO 2
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY ~Следите за своим тоном. Не надо меня раздражать.~ GOTO 3
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Следите за своим тоном. Не надо меня раздражать.~ GOTO 4
-  IF ~~ THEN REPLY ~Я служу в страже и работаю на Арибет.~ GOTO 5
+  SAY @36
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @1 GOTO 1
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @1 GOTO 2
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @2 GOTO 3
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @2 GOTO 4
+  IF ~~ THEN REPLY @3 GOTO 5
 END
 
 // -------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)~ THEN BEGIN 21 // from:
-  SAY ~Приветствую, <LADYLORD>. Вам что-нибудь нужно?~
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 7
+  SAY @37
+  IF ~~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @6 GOTO 7
 END
 

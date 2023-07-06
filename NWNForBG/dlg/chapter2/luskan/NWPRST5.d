@@ -4,123 +4,123 @@ BEGIN ~NWPRST5~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Class(LastTalkedToBy,CLERIC_ALL)!Alignment(LastTalkedToBy,MASK_EVIL)~ THEN BEGIN 0 // from:
-  SAY ~Приветствую вас в этом храме Тира, <BROTHERSISTER>... вернее, в его останках. Боюсь, многих моих собратьев убили, или они просто покинули нас.~
-  IF ~~ THEN REPLY ~Я нуждаюсь в исцелении.~ GOTO 1
-  IF ~~ THEN REPLY ~Есть ли у вас какие-нибудь целебные припасы на продажу?~ GOTO 2
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Вы выжили в битве на улице, правда? Тогда вы заслужили благословление Тира. Это самое меньшее, чем я могу помочь вам.~
+  SAY @5
   IF ~~ THEN DO ~ForceSpell(LastTalkedToBy,CLERIC_HEAL)~ EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Когда на храм напали, большинство запасов унесли. Оставшиеся служители помогли мне собрать кое-какие настойки, зелья и тому подобное... Пойдемте, я покажу вам.~
+  SAY @6
   IF ~~ THEN DO ~StartStore("NWPRST5",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Я расскажу вам, что смогу. Что бы вы хотели знать?~
-  IF ~~ THEN REPLY ~Что здесь произошло?~ GOTO 5
-  IF ~~ THEN REPLY ~Расскажите мне о том, что происходит в Лускане.~ GOTO 6
-  IF ~~ THEN REPLY ~Я нуждаюсь в исцелении.~ GOTO 1
-  IF ~~ THEN REPLY ~Есть ли у вас какие-нибудь целебные припасы на продажу?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Прощайте. Да хранит вас Тир.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 3.1
-  SAY ~От храмов сейчас мало что осталось, хотя раньше был храм Справедливого на севере. Теперь больше никто не нуждается в правосудии. Когда Высшие Капитаны начали воевать друг с другом, все они ожидали, что воины-жрецы из нашего храма помогут им. Мы же хотели помогать всем, а не служить лишь одному... И получили лишь подозрения. На нас нападали несколько раз, но храм пал только недавно. Меня не было в храме, но по возвращении мне сказали, что чародеи и солдаты внезапно ворвались, убили большинство моих собратьев и разграбили храм.~
+  SAY @11
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.2
-  SAY ~Это очень большой вопрос, друг мой. Что в городе вас озадачивает?~
-  IF ~~ THEN REPLY ~За что тут все сражаются?~ GOTO 8
-  IF ~~ THEN REPLY ~Вы знаете о каких-нибудь действующих культах в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~Разве нет никого, кто мог бы остановить войну?~ GOTO 10
-  IF ~~ THEN REPLY ~У меня есть другие вопросы.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
-  SAY ~Те немногие, кто выжил в битве, оказались в заключении. Я не знаю, что там с ними сделали. Должно быть, их все-таки заставили служить Высшим Капитанам. Мы с остальными служителями можем лишь собирать то, что осталось, и нам надо спешить. К счастью, ваш лорд Нашер передавал нам очень щедрые пожертвования... Приютить Аарина Генда и других - самое меньшее, что мы можем сделать.~
-  IF ~~ THEN REPLY ~Расскажите мне о том, что происходит в Лускане.~ GOTO 6
-  IF ~~ THEN REPLY ~Я нуждаюсь в исцелении.~ GOTO 1
-  IF ~~ THEN REPLY ~Есть ли у вас какие-нибудь целебные припасы на продажу?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @17
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.1
-  SAY ~Никто не уверен. Было пять Высших Капитанов, которые правили городом... Должно быть, это было по приказу волшебников из Братства Таинств, но городом управляли капитаны пиратов. Несколько недель назад, без всякого предупреждения, Высшие Капитаны вдруг начали истреблять друг друга. Наш храм не единственное, что пострадало в этой борьбе.~
-  IF ~~ THEN REPLY ~Вы знаете о каких-нибудь действующих культах в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~Разве нет никого, кто мог бы остановить войну?~ GOTO 10
-  IF ~~ THEN REPLY ~У меня есть другие вопросы.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @18
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.2
-  SAY ~Хммм... культы, говорите? Мне говорили обо всех мелких сектах, действующих в Лускане. Все они незначительны. Когда-то мой старший наставник выразил беспокойство по поводу, что несколько Высших Капитанов подозревали в связях с культом, посвященным злой богине Орил... Но мне мало что об этом известно.~
-  IF ~~ THEN REPLY ~За что тут все сражаются?~ GOTO 8
-  IF ~~ THEN REPLY ~Разве нет никого, кто мог бы остановить войну?~ GOTO 10
-  IF ~~ THEN REPLY ~У меня есть другие вопросы.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @19
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @16 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.3
-  SAY ~Никто, кроме, разве что, вторжения Союза Лордов... или, возможно, вмешательства Братства Таинств. Каковы бы ни были причины, их совершенно не заботит этот произвол.~
-  IF ~~ THEN REPLY ~Почему вы так решили?~ GOTO 11
-  IF ~~ THEN REPLY ~За что тут все сражаются?~ GOTO 8
-  IF ~~ THEN REPLY ~Вы знаете о каких-нибудь действующих культах в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~У меня есть другие вопросы.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 11
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1
-  SAY ~Кто же знает? Братство всегда находилось в Башне Хозяина. Никто кроме самих Высших Капитанов их не видел.~
-  IF ~~ THEN REPLY ~За что тут все сражаются?~ GOTO 8
-  IF ~~ THEN REPLY ~Вы знаете о каких-нибудь действующих культах в городе?~ GOTO 9
-  IF ~~ THEN REPLY ~У меня есть другие вопросы.~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @22
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 // -----------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Class(LastTalkedToBy,CLERIC_ALL)Alignment(LastTalkedToBy,MASK_EVIL)~ THEN BEGIN 12 // from:
-  SAY ~Добро пожаловать, <BROTHERSISTER>. Приветствую вас в доме Искалеченного Бога. В эти трудные времена нас осталось совсем мало... Я лишь прошу вас не навредить.~
-  IF ~~ THEN REPLY ~Я нуждаюсь в исцелении.~ GOTO 1
-  IF ~~ THEN REPLY ~Есть ли у вас какие-нибудь целебные припасы на продажу?~ GOTO 2
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @23
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 // -----------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Class(LastTalkedToBy,PALADIN)~ THEN BEGIN 13 // from:
-  SAY ~Искалеченный Бог приветствует ярого защитника добра, <LADYLORD>. Надеюсь, наш храм сумеет оказать вам достойный прием... Здесь теперь совсем мало моих собратьев.~
-  IF ~~ THEN REPLY ~Я нуждаюсь в исцелении.~ GOTO 1
-  IF ~~ THEN REPLY ~Есть ли у вас какие-нибудь целебные припасы на продажу?~ GOTO 2
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @24
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 // -----------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  !Class(LastTalkedToBy,PALADIN)!Class(LastTalkedToBy,CLERIC_ALL)~ THEN BEGIN 14 // from:
-  SAY ~Приветствую. Это дом Тира, Слепого Владыки... вернее, это был его дом. Нас несколько раз грабили, а многих моих собратьев теперь с нами нет.~
-  IF ~~ THEN REPLY ~Я нуждаюсь в исцелении.~ GOTO 1
-  IF ~~ THEN REPLY ~Есть ли у вас какие-нибудь целебные припасы на продажу?~ GOTO 2
-  IF ~~ THEN REPLY ~Нельзя ли мне задать несколько вопросов?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @25
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 

@@ -4,474 +4,474 @@ BEGIN ~NASCHER2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)!Dead("Morag")~ THEN BEGIN 0 // from:
-  SAY ~Мы снова встретились, <CHARNAME>. Как тебе известно, я Нашер Алагондар, лорд Невервинтера. Когда-то я был искателем приключений, как и ты, хотя это было очень давно.~ [NASHE115]
+  SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // 0.1
-  SAY ~Аарин Генд говорит, благодаря твоим усилиям нам удалось укрепить оборону города. Прими за это мою благодарность, хотя боюсь, что все это было напрасно.~ [NASHE116]
+  SAY @1
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // 1.1
-  SAY ~Арибет слишком хорошо известна наша система обороны, поэтому нам не удалось противостоять ее силам. Врагу удалось прорваться в наши стены. Все потеряно.~ [NASHE117]
+  SAY @2
   IF ~~ THEN EXTERN ~AARIN3~ 1
 END
 
 IF ~~ THEN BEGIN 3 // from: AARIN3.1
-  SAY ~И какая нам от этого польза, Аарин? Мы не знаем, как их использовать. Какая бы магия ни была заключена в этих каменных плитах, для нас она бесполезна.~ [NASHE119]
+  SAY @3
   IF ~~ THEN EXTERN ~AARIN3~ 2
 END
 
 IF ~~ THEN BEGIN 4 // from: AARIN3.2
-  SAY ~Я не доверяю этому созданию, Аарин, и тебе не советую! Мы не причинили ей никакого вреда. Если бы она действительно была нашим союзником, она могла бы рассказать нам все, что ей известно.~ [NASHE121]
+  SAY @4
   IF ~~ THEN EXTERN ~AARIN3~ 3
 END
 
 IF ~~ THEN BEGIN 5 // from: AARIN3.3
-  SAY ~И какая нам от этого польза, Аарин? Это существо ничего не желает нам о нем рассказывать. Камень-Источник не имеет для нас никакого смысла без Слов силы.~ [NASHE123]
+  SAY @5
   IF ~~ THEN EXTERN ~AARIN3~ 4
 END
 
 IF ~~ THEN BEGIN 6 // from: AARIN3.4
-  SAY ~Довольно, Аарин. <CHARNAME>, если желаешь поговорить с Хэдралин, то пожалуйста. Но я не отпущу ее из подземелья, пока у ворот города стоит враг.~ [NASHE125]
+  SAY @6
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 6.1
-  SAY ~Лично мне кажется, что это пустая трата времени: Слова Власти, Камень-Источник, Хэдралин. Чем они могут помочь против армии Арибет? Наша судьба решена... мы все обречены.~ [NASHE126]
-  IF ~~ THEN REPLY ~Лорд Нашер, могу я задать несколько вопросов?~ GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
-  SAY ~После всего, что вы сделали для нашего города, ответить на ваши вопросы, <CHARNAME> самое меньшее, что я могу для вас сделать. Хотя Аарин знает больше моего.~ [NASHE127]
-  IF ~~ THEN REPLY ~Что вы можете сказать мне о Хэдралин?~ GOTO 11
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне о Словах Власти, которые недавно были доставлены сюда?~ GOTO 12
-  IF ~~ THEN REPLY ~Что вы можете сказать мне о Камне-Источнике?~ GOTO 13
-  IF ~~ THEN REPLY ~Каковы последние новости с поля боя?~ GOTO 14
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY ~Я хочу спросить вас об Арибет.~ GOTO 15
-  IF ~  Global("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY ~Я хочу спросить вас об Арибет.~ GOTO 24
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 12
+  IF ~~ THEN REPLY @13 GOTO 13
+  IF ~~ THEN REPLY @14 GOTO 14
+  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY @15 GOTO 15
+  IF ~  Global("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY @15 GOTO 24
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.2
-  SAY ~Конечно, <CHARNAME>, конечно. Но прежде, чем ты уйдешь... Возможно, Генд прав. Возможно, тебе стоит поговорить с этим существом - Хэдралин.~ [NASHE175]
+  SAY @16
   IF ~~ THEN GOTO 16
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.3
-  SAY ~Можешь приходить и уходить, когда пожелаешь, <CHARNAME>. Ты заслуживаешь такое право. Возможно, если бы в Невервинтере было побольше таких людей, как ты, все было бы не так плохо.~ [NASHE178]
+  SAY @17
   IF ~~ THEN GOTO 17
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.1
-  SAY ~Мы захватили человекоящерицу, которая рыскала у стен города вскоре после того, как нас атаковали силы Лускана. После предательства Арибет я никому не могу доверять, поэтому мы заперли ее в одну из камер в подземелье.~ [NASHE128]
+  SAY @18
   IF ~~ THEN GOTO 18
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.2
-  SAY ~Я отдал их Мастеру Форду, главному археологу Невервинтера. Судя по всему, он считает, что Слова каким-то образом связаны с Камнем-Источником.~ [NASHE135]
+  SAY @19
   IF ~~ THEN GOTO 19
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.3
-  SAY ~Когда мы схватили Хэдралин, она что-то бормотала о Камне-Источнике и тайном подземелье замка Невер. Ее речи казались сумасшедшим бредом, но я все же решил проверить эту информацию.~ [NASHE139]
+  SAY @20
   IF ~~ THEN GOTO 20
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.4
-  SAY ~Вести неутешительные. При первой атаке со стороны Лускана, противник имел огромное численное преимущество. Кроме того, удар был нанесен с такой необузданной яростью, что защитникам пришлось отступить в Сердце города.~ [NASHE142]
+  SAY @21
   IF ~  !Dead("MAUGRIM")Global("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN GOTO 21
   IF ~  Dead("MAUGRIM")OR(2)GlobalGT("AribetSurrendered","GLOBAL",0)Dead("Aribeth")~ THEN GOTO 22
   IF ~  !Dead("MAUGRIM")OR(2)GlobalGT("AribetSurrendered","GLOBAL",0)Dead("Aribeth")~ THEN GOTO 23
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.5
-  SAY ~Я понимаю, что тебя интересует ее судьба, <CHARNAME>, и я также понимаю, что ты не успокоишься, пока я не отвечу на твой вопрос.~ [NASHE165]
+  SAY @22
   IF ~~ THEN GOTO 25
 END
 
 IF ~~ THEN BEGIN 16 // from: 9.1
-  SAY ~Сомневаюсь, что это принесет хоть какую-нибудь пользу, но может быть - просто может быть - ей известно что-то, что может спасти нас. В конце концов, мы в отчаянном положении.~ [NASHE176]
+  SAY @23
   IF ~~ THEN GOTO 26
 END
 
 IF ~~ THEN BEGIN 17 // from: 10.1
-  SAY ~Любую важную информацию, которую ты получишь, необходимо передать прямо Аарину Генду. Я сделал его ответственным за всю систему обороны города.~ [NASHE177]
+  SAY @24
   IF ~~ THEN DO ~SetGlobal("Nascher2Talk","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 11.1
-  SAY ~Она шипела и что-то лепетала о том, что Маугрим хочет заполучить Слова Власти и о  Камне-Источнике, но ничего вразумительного нам добиться от нее не удалось.~ [NASHE129]
+  SAY @25
   IF ~~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 19 // from: 12.1
-  SAY ~Сначала я надеялся, что он сможет понять, как раскрыть их силу. Однако, несмотря на всю свою мудрость и опыт, даже Мастер Форд не смог ничего узнать о Словах Власти и о Камне.~ [NASHE136]
-  IF ~~ THEN REPLY ~Где я могу найти Мастера Форда?~ GOTO 28
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @26
+  IF ~~ THEN REPLY @27 GOTO 28
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 20 // from: 13.1
-  SAY ~Главным в этом поиске был назначен Мастер Форд, главный эксперт-археолог Невервинтера. Ему удалось открыть ранее неизвестное помещение под замком.~ [NASHE140]
+  SAY @29
   IF ~~ THEN GOTO 30
 END
 
 IF ~~ THEN BEGIN 21 // from: 14.1
-  SAY ~Арибет слишком хорошо знала всю нашу систему обороны. У нас не было никаких шансов. Мои войска мне верны, но в данном случае надежды у нас мало. Замок Невер падет. Это всего лишь вопрос времени.~ [NASHE143]
-  IF ~~ THEN REPLY ~А что если я смогу убить Арибет и Маугрима?~ GOTO 31
-  IF ~~ THEN REPLY ~Неужели никто не может прийти нам на помощь?~ GOTO 32
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
+  SAY @30
+  IF ~~ THEN REPLY @31 GOTO 31
+  IF ~~ THEN REPLY @32 GOTO 32
+  IF ~~ THEN REPLY @28 GOTO 29
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.2
-  SAY ~Несмотря на потерю Маугрима и Арибет, силы Лускана продолжают бороться столь же яростно. Мы не сможем продержаться до того, как подоспеет подкрепление Союза Лордов.~ [NASHE149]
+  SAY @33
   IF ~~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 23 // from: 14.3
-  SAY ~Несмотря на потерю Арибет, силы Лускана продолжают бороться столь же яростно. Мы не сможем продержаться до того, как подоспеет подкрепление Союза Лордов.~ [NASHE149]
+  SAY @34
   IF ~~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 24 // from: 8.6
-  SAY ~Арибет? Она предательница! И наказанием за ее преступления будет смерть...~ [NASHE168]
+  SAY @35
   IF ~~ THEN EXTERN ~AARIN3~ 5
 END
 
 IF ~~ THEN BEGIN 25 // from: 15.1
-  SAY ~Но на этот вопрос не так просто ответить. Арибет принесла смерть в Невервинтер. Закон гласит, что за это она сама заслуживает смерти.~ [NASHE166]
+  SAY @36
   IF ~~ THEN GOTO 35
 END
 
 IF ~~ THEN BEGIN 26 // from: 16.1
-  SAY ~Любую важную информацию, которую ты получишь, необходимо передать прямо Аарину Генду. Я сделал его ответственным за всю систему обороны города.~ [NASHE177]
+  SAY @24
   IF ~~ THEN DO ~SetGlobal("Nascher2Talk","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 18.1
-  SAY ~Боюсь, она наполовину сумасшедшая и, судя по всему, нам она не доверяет. Но Генд считает, что она может довериться тебе. Если желаешь, можешь попробовать поговорить с ней в подземелье.~ [NASHE130]
-  IF ~~ THEN REPLY ~Где я могу найти Хэдралин?~ GOTO 36
-  IF ~~ THEN REPLY ~Вы можете выпустить Хэдралин из подземелья?~ GOTO 37
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @37
+  IF ~~ THEN REPLY @38 GOTO 36
+  IF ~~ THEN REPLY @39 GOTO 37
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 28 // from: 19.1
-  SAY ~С тех пор, как мы узнали, что Камень-Источник находится в тайном подземелье замка Невер, Мастер Форд все свое время проводит изучая его.~ [NASHE137]
+  SAY @40
   IF ~~ THEN GOTO 38
 END
 
 IF ~~ THEN BEGIN 29 // from: 19.2
-  SAY ~Возможно, Генд сможет больше тебе помочь, но я сделаю все от меня зависящее.~ [NASHE134]
-  IF ~~ THEN REPLY ~Что вы можете сказать мне о Хэдралин?~ GOTO 11
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне о Словах Власти, которые недавно были доставлены сюда?~ GOTO 12
-  IF ~~ THEN REPLY ~Что вы можете сказать мне о Камне-Источнике?~ GOTO 13
-  IF ~~ THEN REPLY ~Каковы последние новости с поля боя?~ GOTO 14
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY ~Я хочу спросить вас об Арибет.~ GOTO 15
-  IF ~  Global("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY ~Я хочу спросить вас об Арибет.~ GOTO 24
-  IF ~~ THEN REPLY ~Я хочу узнать побольше о вас, лорд Нашер~ GOTO 39
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @41
+  IF ~~ THEN REPLY @11 GOTO 11
+  IF ~~ THEN REPLY @12 GOTO 12
+  IF ~~ THEN REPLY @13 GOTO 13
+  IF ~~ THEN REPLY @14 GOTO 14
+  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY @15 GOTO 15
+  IF ~  Global("AribetSurrendered","GLOBAL",0)!Dead("Aribeth")~ THEN REPLY @15 GOTO 24
+  IF ~~ THEN REPLY @42 GOTO 39
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 30 // from: 20.1
-  SAY ~Внутри был найден невероятных размеров кристалл - Камень-Источник. Если ты хочешь узнать о нем подробнее, тебе нужно поговорить с Мастером Фордом.~ [NASHE141]
-  IF ~~ THEN REPLY ~Где я могу найти Мастера Форда?~ GOTO 28
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @43
+  IF ~~ THEN REPLY @27 GOTO 28
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 31 // from: 21.1
-  SAY ~Боюсь только, уже слишком поздно. Наша оборона сломлена. Удар уже нанесен.~ [NASHE144]
+  SAY @44
   IF ~~ THEN GOTO 40
 END
 
 IF ~~ THEN BEGIN 32 // from: 21.2
-  SAY ~К нам на помощь направляются войска Союза Лордов, но они слишком далеко. К тому времени, как они прибудут сюда, от Невервинтера останутся лишь обгоревшие трупы и обуглившиеся развалины.~ [NASHE148]
-  IF ~~ THEN REPLY ~А что если я смогу убить Арибет и Маугрима?~ GOTO 31
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @45
+  IF ~~ THEN REPLY @31 GOTO 31
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 33 // from: 22.1
-  SAY ~Нашим противником движет какая-то зловещая сила. Я чувствую это своими старыми костями. Или может быть, это просто возмездие за то, что я натворил.~ [NASHE150]
-  IF ~~ THEN REPLY ~Что ты имеешь в виду?~ GOTO 41
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @46
+  IF ~~ THEN REPLY @47 GOTO 41
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 34 // from: AARIN3.5
-  SAY ~Я не спрашивал твоего мнения, Генд. Откуда тебе знать о таких вещах?~ [NASHE169]
+  SAY @48
   IF ~~ THEN EXTERN ~AARIN3~ 6
 END
 
 IF ~~ THEN BEGIN 35 // from: 25.1
-  SAY ~Однако, я помню, что однажды человека уже судили и казнили за такое же преступление. Это был Фентик, возлюбленный Арибет... Этот приговор не поправить, но, возможно, стоит учесть прошлые ошибки.~ [NASHE167]
-  IF ~~ THEN REPLY ~Закон есть закон, лорд Нашер. Арибет заслуживает смерти.~ GOTO 54
-  IF ~~ THEN REPLY ~Поступку Арибет нет прощенья, лорд Нашер. Она заслуживает смерти.~ GOTO 54
-  IF ~~ THEN REPLY ~Ее смерть только продолжит порочный круг мщения и кровопролития.~ GOTO 55
+  SAY @49
+  IF ~~ THEN REPLY @50 GOTO 54
+  IF ~~ THEN REPLY @51 GOTO 54
+  IF ~~ THEN REPLY @52 GOTO 55
 END
 
 IF ~~ THEN BEGIN 36 // from: 27.1
-  SAY ~Она заперта в подземелье замка. Просто идите на юго-запад и спуститесь по лестнице.~ [NASHE131]
-  IF ~~ THEN REPLY ~Вы можете выпустить Хэдралин из подземелья?~ GOTO 37
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @53
+  IF ~~ THEN REPLY @39 GOTO 37
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 37 // from: 27.2
-  SAY ~Мне очень жаль, <CHARNAME>, но я не стану этого делать. По крайней мере, пока в городе враг. Возможно, она нам друг, но также есть вероятность, что она шпион.~ [NASHE132]
+  SAY @54
   IF ~~ THEN GOTO 43
 END
 
 IF ~~ THEN BEGIN 38 // from: 28.1
-  SAY ~Можешь поговорить с ним и узнать, что ему удалось выяснить, если хочешь. Хотя мне кажется, лучше попытаться получить какую-нибудь информацию от этого существа Хэдралин, если тебе удастся ее разговорить.~ [NASHE138]
-  IF ~~ THEN REPLY ~Что вы можете сказать мне о Хэдралин?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @55
+  IF ~~ THEN REPLY @11 GOTO 11
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 39 // from: 29.7
-  SAY ~Когда-то я был таким же искателем приключений, как ты, <CHARNAME>. Если бы не отчаянная ситуация, я бы велел позвать сюда бардов, которые спели бы тебе о моих былых подвигах.~ [NASHE172]
+  SAY @56
   IF ~~ THEN GOTO 44
 END
 
 IF ~~ THEN BEGIN 40 // from: 31.1
-  SAY ~Если убить и Арибет, и Маугрима, есть вероятность, что боевой дух воинов Лускана будет сломлен. Однако, по-моему, на это вряд ли приходится рассчитывать.~ [NASHE145]
+  SAY @57
   IF ~~ THEN GOTO 46
 END
 
 IF ~~ THEN BEGIN 41 // from: 33.1
-  SAY ~На моих руках кровь Фентика. После чумы толпа требовала крови, и она ее получила.  Фентик был виновен лишь в том, что доверился Дестеру. Он не был врагом Невервинтера.~ [NASHE151]
+  SAY @58
   IF ~~ THEN GOTO 47
 END
 
 IF ~~ THEN BEGIN 42 // from: AARIN3.6
-  SAY ~Ты... ты сказал мне, что не станешь служить господину, который поступает неправильно. Генд, неужели ты хочешь сказать, что казнь Фентика была неправильной?~ [NASHE170]
+  SAY @59
   IF ~~ THEN EXTERN ~AARIN3~ 7
 END
 
 IF ~~ THEN BEGIN 43 // from: 37.1
-  SAY ~Кроме того, ей не причиняют никакого вреда. Мы всего лишь контролируем ее. Если у нее есть информация, которая может нам помочь, она должна добровольно поделиться ей независимо от того, находится она у нас в плену или нет.~ [NASHE133]
-  IF ~~ THEN REPLY ~Где я могу найти Хэдралин?~ GOTO 36
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @60
+  IF ~~ THEN REPLY @38 GOTO 36
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 44 // from: 39.1
-  SAY ~Но я давно уже ушел в отставку. Теперь я правитель Невервинтера, и моя жизнь состоит из административных обязанностей и распределения полномочий. Вряд ли об этом можно слагать легенды.~ [NASHE173]
+  SAY @61
   IF ~~ THEN GOTO 45
 END
 
 IF ~~ THEN BEGIN 45 // from: 44.1
-  SAY ~Я скучаю по тем дня славы и героизма, <CHARNAME>. Но я пожертвовал ими, чтобы служить городу, который люблю всем сердцем. Увы, моя жертва была напрасной. Невервинтер падет, и я ничем не могу ему помочь.~ [NASHE174]
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @62
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 46 // from: 40.1
-  SAY ~Воины Лускана боролись с такой свирепостью и яростью, какой мне никогда еще не приходилось видеть. Нашим противником движет какая-то зловещая сила.~ [NASHE146]
+  SAY @63
   IF ~~ THEN GOTO 49
 END
 
 IF ~~ THEN BEGIN 47 // from: 41.1
-  SAY ~И все же его повесили за то, что он не смог защитить город, хотя это был его долг. Так можем ли мы винить Арибет в том, что она предала нас после того, как мы казнили ее возлюбленного?~ [NASHE152]
-  IF ~~ THEN REPLY ~Вы действовали по закону, лорд Нашер. У вас не было иного выбора.~ GOTO 50
-  IF ~~ THEN REPLY ~Что сделано, то сделано, лорд Нашер. Сейчас нет смысла тратить время на переживания.~ GOTO 50
-  IF ~~ THEN REPLY ~Возможно, казнь Фентика была несправедливой, но это не оправдывает предательство  Арибет!~ GOTO 50
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY ~Возможно, вы сможете искупить свою вину.~ GOTO 51
-  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY ~Возможно, вы сможете искупить свою вину.~ GOTO 52
+  SAY @64
+  IF ~~ THEN REPLY @65 GOTO 50
+  IF ~~ THEN REPLY @66 GOTO 50
+  IF ~~ THEN REPLY @67 GOTO 50
+  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 51
+  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 52
 END
 
 IF ~~ THEN BEGIN 48 // from: AARIN3.7
-  SAY ~Я... я больше не хочу это обсуждать. Не нам решать судьбу Арибет, и у меня нет времени на философские беседы. Могу я чем-нибудь еще помочь тебе, <CHARNAME>?~ [NASHE171]
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @69
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 49 // from: 46.1
-  SAY ~Или это можно назвать своего рода возмездием. Невервинтер, возможно, сам навлек на себя это проклятие.~ [NASHE147]
-  IF ~~ THEN REPLY ~Что ты имеешь в виду?~ GOTO 41
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @70
+  IF ~~ THEN REPLY @47 GOTO 41
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 50 // from: 47.1
-  SAY ~Именно это я твержу себе снова и снова, <CHARNAME>. Но мои уши глухи к моим же словам.~ [NASHE153]
+  SAY @71
   IF ~~ THEN GOTO 53
 END
 
 IF ~~ THEN BEGIN 51 // from: 47.4
-  SAY ~Ты... ты просишь меня пощадить Арибет? После того, что она сделала? После того, как она собрала армию и пошла против Невервинтера, убивая собственный народ?~ [NASHE156]
-  IF ~~ THEN REPLY ~Вы правы. Она заслуживает смерти.~ GOTO 54
-  IF ~~ THEN REPLY ~Ее смерть только продолжит порочный круг мщения и кровопролития.~ GOTO 55
+  SAY @72
+  IF ~~ THEN REPLY @73 GOTO 54
+  IF ~~ THEN REPLY @52 GOTO 55
 END
 
 IF ~~ THEN BEGIN 52 // from: 47.5
-  SAY ~Боюсь, для этого уже слишком поздно, <CHARNAME>. Фентик мертв, а Арибет... Возможно, если бы у меня была возможность снова вынести тот приговор, он был бы иным. Не таким жестоким.~ [NASHE163]
+  SAY @74
   IF ~~ THEN GOTO 56
 END
 
 IF ~~ THEN BEGIN 53 // from: 50.1
-  SAY ~Я всего лишь хотел, как лучше для Невервинтера. Хотел исцелить раны, оставшиеся от Воющей Смерти. Но даже когда я выносил приговор Фентику, в душе я понимал, что так поступать нельзя. Это несправедливо.~ [NASHE154]
+  SAY @75
   IF ~~ THEN GOTO 57
 END
 
 IF ~~ THEN BEGIN 54 // from: 51.1
-  SAY ~Так и будет, <CHARNAME>, но не сейчас. У нас идет война, а Арибет обладает ценной информацией о нашем противнике.~ [NASHE157]
+  SAY @76
   IF ~~ THEN GOTO 58
 END
 
 IF ~~ THEN BEGIN 55 // from: 51.2
-  SAY ~На преступления Арибет нельзя просто так махнуть рукой. И все же... в твоих словах есть доля правды.~ [NASHE160]
+  SAY @77
   IF ~~ THEN GOTO 59
 END
 
 IF ~~ THEN BEGIN 56 // from: 52.1
-  SAY ~Но боюсь, такой возможности мне не представится никогда. Я должен жить с тяжким грузом своего греха, так же как и мой город. Невервинтер падет.~ [NASHE164]
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @78
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 57 // from: 53.1
-  SAY ~Фентик погиб, чтобы утолить жажду мести горожан. Теперь Невервинтер падет, чтобы утолить жажду мести Арибет. Наверное, это и есть справедливость.~ [NASHE155]
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY ~Возможно, вы сможете искупить свою вину.~ GOTO 51
-  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY ~Возможно, вы сможете искупить свою вину.~ GOTO 52
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY ~Может быть, у тебя есть шанс все поправить.~ GOTO 51
-  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY ~Может быть, у тебя есть шанс все поправить.~ GOTO 52
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @79
+  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 51
+  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 52
+  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY @80 GOTO 51
+  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY @80 GOTO 52
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 58 // from: 54.1
-  SAY ~Пока мы боремся с силами Лускана, Арибет слишком ценна для нас, чтобы ее казнить. Однако, если стены замка Невер падут, я скорее лично убью ее, чем отпущу на свободу.~ [NASHE158]
+  SAY @81
   IF ~~ THEN GOTO 60
 END
 
 IF ~~ THEN BEGIN 59 // from: 55.1
-  SAY ~Я часто раздумывал, не совершил ли я ошибку, казнив Фентика. Если бы он был жив, возможно, этого никогда бы не случилось. В конце концов, он мог бы постараться загладить свою вину.~ [NASHE161]
+  SAY @82
   IF ~~ THEN GOTO 61
 END
 
 IF ~~ THEN BEGIN 60 // from: 58.1
-  SAY ~Можешь не беспокоиться, справедливость восторжествует, когда придет время, <CHARNAME>. Это все?~ [NASHE159]
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @83
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 61 // from: 59.1
-  SAY ~Возможно, Фентик заслуживал второго шанса. Возможно, все мы его заслуживаем. Мне... мне нужно тщательно обдумать это дело прежде, чем выносить решение.~ [NASHE162]
-  IF ~~ THEN REPLY ~Мне хотелось бы еще кое о чем спросить вас.~ GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @84
+  IF ~~ THEN REPLY @28 GOTO 29
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("AribetSurrendered","GLOBAL",0)!Dead("Morag")~ THEN BEGIN 62 // from:
-  SAY ~Каким-то чудом город все еще не пал, и Аарин Генд цепляется за надежду, что мы все еще можем выжить. Но я старше и мудрее него. Я таких иллюзий не питаю.~ [NASHE113]
+  SAY @85
   IF ~~ THEN GOTO 63
 END
 
 IF ~~ THEN BEGIN 63 // from: 62.1
-  SAY ~Именно поэтому я назначил Генда ответственным за оборону города. Пусть он расправляется с поступающими докладами. У меня больше не хватает на это сил.~ [NASHE114]
-  IF ~~ THEN REPLY ~Лорд Нашер, могу я задать несколько вопросов?~ GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @86
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("Morag")~ THEN BEGIN 64 // from:
-  SAY ~Сейчас странные времена, <CHARNAME>. Мой город превратился в развалины. Его вот-вот захватят силы Лускана, а Арибет, лидер наших врагов, сидит в нашем же подземелье, ожидая, когда я решу ее судьбу.~ [NASHE106]
+  SAY @87
   IF ~~ THEN GOTO 65
 END
 
 IF ~~ THEN BEGIN 65 // from: 64.1
-  SAY ~Если бы все не было так мрачно, я мог бы посмеяться над абсурдностью ситуации. (Вздыхает) Что тебе нужно от меня, <CHARNAME>?~ [NASHE107]
-  IF ~~ THEN REPLY ~Как вы планируете поступить с Арибет?~ GOTO 71
-  IF ~~ THEN REPLY ~Арибет в вашем подземелье? Что вы имеете в виду?~ GOTO 73
-  IF ~~ THEN REPLY ~Лорд Нашер, могу я задать несколько вопросов?~ GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @88
+  IF ~~ THEN REPLY @89 GOTO 71
+  IF ~~ THEN REPLY @90 GOTO 73
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Dead("Morag")~ THEN BEGIN 66 // from:
-  SAY ~Мы снова встретились, <CHARNAME>. Как тебе известно, я Нашер Алагондар, лорд Невервинтера. Когда-то я был искателем приключений, как и ты, хотя это было очень давно.~ [NASHE115]
+  SAY @0
   IF ~~ THEN GOTO 67
 END
 
 IF ~~ THEN BEGIN 67 // from: 66.1
-  SAY ~Это огромная честь,разговаривать с Вами. Отныне Вы герой Невервинтера, Ваше имя навсегда бкдет записано в историю города!~
+  SAY @91
   IF ~  Global("Chapter4End","GLOBAL",0)~ THEN DO ~SetGlobal("Chapter4End","GLOBAL",1)AddexperienceParty(500000)~ EXIT
   IF ~  !Global("Chapter4End","GLOBAL",0)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 68 // AARIN3.13
-  SAY ~И чем же это Слово может нам помочь? Во имя бездны, у нас уже есть целых три штуки!~ [NASHE179]
+  SAY @92
   IF ~~ THEN EXTERN ~AARIN3~ 14
 END
 
 IF ~~ THEN BEGIN 69 // AARIN3.14
-  SAY ~И как же нам это сделать, Генд? Ты знаешь, как их использовать?~ [NASHE180]
+  SAY @93
   IF ~~ THEN EXTERN ~AARIN3~ 15
 END
 
 IF ~~ THEN BEGIN 70 // AARIN3.15
-  SAY ~Хватит попусту тратить время Генда, <CHARNAME>. Иди поговори с Хэдралин, если ты думаешь, что это Слово может нам помочь.~ [NASHE181]
+  SAY @94
   IF ~~ THEN EXTERN ~AARIN3~ 16
 END
 
 IF ~~ THEN BEGIN 71 // from: 65.1
-  SAY ~Пока продолжается война, она будет жить. Она может дать нам ценную информацию о тактике и численности войск противника.~ [NASHE108]
+  SAY @95
   IF ~~ THEN GOTO 72
 END
 
 IF ~~ THEN BEGIN 72 // from: 71.1
-  SAY ~Что же касается ее судьбы, когда все это кончится... это я еще не решил. Такие дела стоит отложить на потом.~ [NASHE109]
-  IF ~~ THEN REPLY ~Лорд Нашер, могу я задать несколько вопросов?~ GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @96
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 73 // from: 65.2
-  SAY ~Прошу прощения, <CHARNAME>. Я полагал, что ты уже в курсе. Арибет сдалась нам. Она хочет искупить вину за свои преступления против Невервинтера.~ [NASHE110]
+  SAY @97
   IF ~~ THEN GOTO 74
 END
 
 IF ~~ THEN BEGIN 74 // from: 73.1
-  SAY ~Поначалу мне показалось, что это ловушка, но она дала нам ценную информацию об армии Лускана, которая помогла спасти жизни многим нашим людям.~ [NASHE111]
+  SAY @98
   IF ~~ THEN GOTO 75
 END
 
 IF ~~ THEN BEGIN 75 // from: 74.1
-  SAY ~Город может пасть, но Арибет помогла спасти жизни многих невинных людей. Хотя не стоит забывать о тысячах, которых она помогла убить.~ [NASHE112]
-  IF ~~ THEN REPLY ~Как вы планируете поступить с Арибет?~ GOTO 71
-  IF ~~ THEN REPLY ~Лорд Нашер, могу я задать несколько вопросов?~ GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY ~Мне пора идти.~ GOTO 10
+  SAY @99
+  IF ~~ THEN REPLY @89 GOTO 71
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END

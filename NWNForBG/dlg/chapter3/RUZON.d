@@ -6,33 +6,33 @@ BEGIN ~RUZON~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Уходите. Оставьте нас. Гонмир мертв, и остальные скоро последуют за ним. Оставьте меня в покое.~
-  IF ~~ THEN REPLY ~Вам нужна помощь?~ GOTO 1
-  IF ~~ THEN REPLY ~Что вы здесь делаете?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Со мной все в порядке. Когда я вернусь к Колодцу, Ньюрик вылечит меня. Гонмиру не так повезло.~
-  IF ~~ THEN REPLY ~Что вы здесь делаете?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @4
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Мы с Гонмиром были ранены во время битвы за форт. Они отослали нас назад в Колодец и Ньюрик исцелил нас. Тогда мы вернулись и снова сражались. Похоже, Гонмир отправился в свое последнее путешествие. Он мертв. Один из этих варваров попал в него стрелой. Я думал, он справится, но...~
-  IF ~~ THEN REPLY ~Форт?~ GOTO 4
-  IF ~~ THEN REPLY ~Вам нужна помощь?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Как угодно. Я не стану дожидаться здесь смерти, я вернусь к Колодцу.~
+  SAY @7
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Да-а, форт Илкард. Это дальше по дороге. Но я бы на вашем месте туда не ходил, если вы не боец.~
-  IF ~~ THEN REPLY ~Вам нужна помощь?~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @8
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 

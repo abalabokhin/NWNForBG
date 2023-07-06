@@ -4,55 +4,55 @@ BEGIN ~OPHALA2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Настали странные времена, <LADYLORD>. Кровати "Маски Лунного Камня" теперь предназначены для раненых солдат. Кто бы мог подумать.~ [OPHALA54]
-  IF ~~ THEN REPLY ~Мне нужны твои услуги.~ GOTO 1
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 2
-  IF ~~ THEN REPLY ~Разве это место не было публичным домом?~ GOTO 3
-  IF ~~ THEN REPLY ~Пока.~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Что ж, боюсь большую часть обычных услуг "Маски Лунного Камня" мы больше не предоставляем. Мой посох теперь используется для ухода за ранеными, а все кровати заняты либо умирающими, либо теми, кто уже умер. Обстановка романтике не способствует. Однако если вас интересует снаряжение для какой-нибудь тайной операции, я могу помочь.~
-  IF ~~ THEN REPLY ~Да, дай мне взглянуть на твои товары.~ GOTO 5
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 2
-  IF ~~ THEN REPLY ~Разве это место не было публичным домом?~ GOTO 3
-  IF ~~ THEN REPLY ~Пока.~ GOTO 4
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~У меня нет времени на разговоры. У нас дел невпроворот! Мне никогда еще не приходилось видеть столько мужчин и женщин, которые не в силах даже пошевелиться. Ну, по крайней мере, не из-за ранений.~
+  SAY @7
   IF ~  GlobalGT("LuceJob","GLOBAL",1)~ THEN GOTO 6
   IF ~  GlobalLT("LuceJob","GLOBAL",2)~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~"Маска Лунного Камня" известна своими... приватными услугами... которые мы предоставляем посетителям. Но сейчас слишком много раненых. В храме мест нет, а у нас здесь больше кроватей, чем в любом другом заведении города. Неужели это так странно, что в это тяжелое время мы оказываем раненым Невервинтера более необходимые услуги?~
-  IF ~~ THEN REPLY ~Мне нужны твои услуги.~ GOTO 1
-  IF ~~ THEN REPLY ~Могу я задать вам несколько вопросов?~ GOTO 2
-  IF ~~ THEN REPLY ~Пока.~ GOTO 4
+  SAY @8
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Тогда уходите. У меня слишком много дел, чтобы тратить время на прощания.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.1
-  SAY ~Ваше золото мне понадобится на новые бинты и чистые простыни. Наши запачканы свежей кровью, знаешь ли.~
+  SAY @10
   IF ~~ THEN DO ~StartStore("Ophala",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.1
-  SAY ~Да и от Люс проку нет. Раньше была одной из лучших моих девочек, но с тех пор, как она нашла свою потерявшуюся сестру, она только и делает, что кудахчет над этой девчонкой.~
-  IF ~~ THEN REPLY ~Мне нужны твои услуги.~ GOTO 1
-  IF ~~ THEN REPLY ~Разве это место не было публичным домом?~ GOTO 3
-  IF ~~ THEN REPLY ~Пока.~ GOTO 4
+  SAY @11
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.2
-  SAY ~Да и от Люс проку нет. Раньше она была одной из лучших моих девочек, но с тех пор, как исчезла ее младшая сестренка, она только и сидит в хандре там, в углу.~
-  IF ~~ THEN REPLY ~Мне нужны твои услуги.~ GOTO 1
-  IF ~~ THEN REPLY ~Разве это место не было публичным домом?~ GOTO 3
-  IF ~~ THEN REPLY ~Пока.~ GOTO 4
+  SAY @12
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 

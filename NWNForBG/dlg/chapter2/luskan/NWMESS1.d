@@ -4,7 +4,7 @@ BEGIN ~NWMESS1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Ётот камень вибрирует от переполн€ющей его энергии.  ажетс€, он обеспечивают чему-то питание.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

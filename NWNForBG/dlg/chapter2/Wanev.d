@@ -5,7 +5,7 @@ BEGIN ~WANEV~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Как, во имя богов, вы сюда попали?! Готовьтесь к немедленной смерти!~ [WANEV050]
+  SAY @0
   IF ~~ THEN DO ~SetGlobal("Attack","LOCALS",1)Enemy()~ EXIT
 END
 
@@ -39,247 +39,237 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Attack","LOCALS",2)~ THEN BEGIN 1 // from:
-  SAY ~Пожалуйста! Не надо больше! Я сдаюсь!~ [WANEV051]
+  SAY @1
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Возможно, я напал на вас чересчур поспешно. Пожалуйста, примите мои извинения.~ [WANEV052]
-  IF ~~ THEN REPLY ~Лучше ответьте на мои вопросы до того, как я довершу начатое вами.~ GOTO 3
-  IF ~~ THEN REPLY ~Извинения тебе уже не помогут, маг! Умри!~ GOTO 4
+  SAY @2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
-  SAY ~А я бы предпочел задать встречный вопрос. Зачем вы явились в мой дом?~
-  IF ~~ THEN REPLY ~Кто вы, собственно говоря?~ GOTO 5
-  IF ~~ THEN REPLY ~Нет, так дело не пойдет. Отвечайте на мои вопросы, не то я убью вас.~ GOTO 6
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.2
-  SAY ~Тогда я сотру вас в порошок!~
+  SAY @8
   IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)Rest()SetGlobal("Attack","LOCALS",3)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 3.1
-  SAY ~Я Вэйнив, эльф, владеющий магическими искусствами и хорошо известный в своем кругу. Я весьма уязвлен тем, что вы меня победили. Мои глупые друзья просто животики надорвут.~
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY ~Меня прислали сюда, чтобы забрать у тебя драгоценный камень.~ GOTO 12
-  IF ~~ THEN REPLY ~Мне нужны сокровища. Все до единой ценные вещи.~ GOTO 7
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 51
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY ~Здесь есть лестница на верхние этажи, но почему-то я не могу по ней пройти.~ GOTO 52
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @9
+  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 51
+  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.2
-  SAY ~Какие у вас ко мне вопросы?~
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY ~Меня прислали сюда, чтобы забрать у тебя драгоценный камень.~ GOTO 12
-  IF ~~ THEN REPLY ~Мне нужны сокровища. Все до единой ценные вещи.~ GOTO 7
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 51
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY ~Здесь есть лестница на верхние этажи, но почему-то я не могу по ней пройти.~ GOTO 52
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @15
+  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 51
+  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
-  SAY ~(вздыхает) Меня победил обычный домушник? Отлично, ну так забирай мое золото, варвар!~
-  IF ~~ THEN REPLY ~Ну же, у вас должно быть кое-что еще. Выкладывайте!~ DO ~GivePartyGold(980)~ GOTO 9
-  IF ~~ THEN REPLY ~Этого недостаточно! Давай еще, не то я досыта накормлю тебя сталью!~ DO ~GivePartyGold(980)~ GOTO 10
+  SAY @16
+  IF ~~ THEN REPLY @17 DO ~GivePartyGold(980)~ GOTO 9
+  IF ~~ THEN REPLY @18 DO ~GivePartyGold(980)~ GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.2
-  SAY ~Спасибо, что не убили меня. Возьмите этот оберег, и мои слуги не тронут вас.~
+  SAY @19
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 5.2
-  SAY ~Спасибо, что не убили меня.~
+  SAY @20
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
-  SAY ~Вы не оставите мне даже на то, чтобы прокормиться?! Берите и проваливайте!~
+  SAY @21
   IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
-  SAY ~Остановитесь, умоляю! Если вы такой отчаянный человек, забирайте это и уходите!~
+  SAY @22
   IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1 11.1
-  SAY ~Золота больше нет. Отныне эти ублюдки в Бормочущей Дюжине будут называть меня 'Вэйнив, нищий идиот'! Моя репутация - коту под хвост!~
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY ~Меня прислали сюда, чтобы забрать у тебя драгоценный камень.~ GOTO 12
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY ~Здесь есть лестница на верхние этажи, но почему-то я не могу по ней пройти.~ GOTO 52
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 51
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @23
+  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
+  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 51
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 12 // from: 10.2
-  SAY ~Так значит, Элайт до сих пор надеется вернуться домой. Что ж, он будет разочарован. Он не получит драгоценный камень.~
-  IF ~~ THEN REPLY ~Меня наняли, чтобы забрать у тебя драгоценный камень, и я это сделаю. Дай сюда камень немедленно!~ GOTO 13
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~У меня нет вопросов.~ GOTO 51
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @24
+  IF ~~ THEN REPLY @25 GOTO 13
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @12 GOTO 51
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
-  SAY ~Вы не понимаете! Я потерял драгоценный камень и вернуть его не в моих силах. Так что лучше забудьте об этой работе и уходите отсюда.~
-  IF ~~ THEN REPLY ~Это невозможно. Скажите мне, что произошло с драгоценным камнем.~ GOTO 14
-  IF ~~ THEN REPLY ~Я не желаю выслушивать оправдания. Скажи мне, где драгоценный камень, а не то пожалеешь.~ GOTO 15
+  SAY @26
+  IF ~~ THEN REPLY @27 GOTO 14
+  IF ~~ THEN REPLY @28 GOTO 15
 END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
-  SAY ~Что ж, в конце концов, если вы ищете смерти, какое мне до этого дело?~
+  SAY @29
   IF ~~ THEN GOTO 16
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.2
-  SAY ~Не нужно сердиться. Я все вам расскажу.~
+  SAY @30
   IF ~~ THEN GOTO 16
 END
 
 IF ~~ THEN BEGIN 16 // from: 14.1 15.1
-  SAY ~Я слышал, что Элэйт собирается захватить драгоценный камень, и до получения этой информации меня эта побрякушка не особенно интересовала. Я заинтересовался, зачем он хотел ее украсть. Признаюсь честно, я не из терпеливых. У меня есть дела получше, чем копаться в библиотеке в поисках сведений о каком-то драгоценном камне. Так что я решил призвать беса или какого-нибудь младшего демона и поручить эту работу им. Однако произошла, э, небольшая неприятность.~
+  SAY @31
   IF ~~ THEN DO ~SetGlobal("KnowAboutGem","LOCALS",1)~ GOTO 17
 END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
-  SAY ~Я был немного небрежен во время подготовки, и маленькому демону удалось вырваться из круга вызывания. Это послужит мне уроком: никогда не читайте заклинания в пьяном виде. Этот негодяй растянул портал и начал вызывать себе на подмогу других демонов. Я как можно быстрее запечатал эту зону и сразу протрезвел.~
-  IF ~~ THEN REPLY ~А драгоценность?~ GOTO 18
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~Мне все равно. До свидания.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~Мне все равно. До свидания.~ GOTO 51
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @32
+  IF ~~ THEN REPLY @33 GOTO 18
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @34 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @34 GOTO 51
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 18 // from: 17.1
-  SAY ~В спешке я забыл камень в комнате для вызывания. Так что, как вы понимаете, там полно демонов, а драгоценный камень лежит внутри, и, скорее всего, его стянул этот проклятый бес!~
-  IF ~~ THEN REPLY ~Где это находится, и как мне туда попасть?~ GOTO 19
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~Мне все равно. До свидания.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~Мне все равно. До свидания.~ GOTO 51
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @35
+  IF ~~ THEN REPLY @36 GOTO 19
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @34 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @34 GOTO 51
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
-  SAY ~Вы можете пройти туда вон по той лестнице, которая находится у вас за спиной, правда, из соображений безопасности, я запечатал ее своей магией.~
-  IF ~~ THEN REPLY ~Снимите магические печати, и я добуду драгоценность.~ GOTO 20
-  IF ~~ THEN REPLY ~Есть там что-нибудь, что может помочь мне не превратиться в обед для демонов?~ GOTO 21
+  SAY @37
+  IF ~~ THEN REPLY @38 GOTO 20
+  IF ~~ THEN REPLY @39 GOTO 21
 END
 
 IF ~~ THEN BEGIN 20 // from: 19.1
-  SAY ~Возьмите этот свиток. Записанное на нем заклинание снимет магическую печать с лестницы, и знайте: если вам удастся закрыть портал, я буду очень благодарен. Драгоценный камень в любом случае можете забрать. Что скажете?~
-  IF ~  GlobalLT("Attack","LOCALS",3)~ THEN REPLY ~Я постараюсь закрыть портал, когда найду драгоценный камень.~ GOTO 22
-  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY ~Я постараюсь закрыть портал, когда найду драгоценный камень.~ GOTO 25
-  IF ~~ THEN REPLY ~За хорошее вознаграждение.~ GOTO 23
-  IF ~  GlobalLT("Attack","LOCALS",3)!PartyHasItem("WANEVSTH")~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 24
-  IF ~  GlobalLT("Attack","LOCALS",3)PartyHasItem("WANEVSTH")~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 50
-  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 26
+  SAY @40
+  IF ~  GlobalLT("Attack","LOCALS",3)~ THEN REPLY @41 GOTO 22
+  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY @41 GOTO 25
+  IF ~~ THEN REPLY @42 GOTO 23
+  IF ~  GlobalLT("Attack","LOCALS",3)!PartyHasItem("WANEVSTH")~ THEN REPLY @43 GOTO 24
+  IF ~  GlobalLT("Attack","LOCALS",3)PartyHasItem("WANEVSTH")~ THEN REPLY @43 GOTO 50
+  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY @43 GOTO 26
 END
 
 IF ~~ THEN BEGIN 21 // from: 19.2
-  SAY ~Если бы была какая-нибудь уловка, я бы и сам справился с этой задачей.~
-  IF ~~ THEN REPLY ~Снимите магические печати, и я добуду драгоценность.~ GOTO 20
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~Это слишком опасно. До свидания.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~Это слишком опасно. До свидания.~ GOTO 51
+  SAY @44
+  IF ~~ THEN REPLY @38 GOTO 20
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @45 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @45 GOTO 51
 END
 
 IF ~~ THEN BEGIN 22 // from: 20.1
-  SAY ~Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце на жаровню. Тогда портал будет закрыт. Зовут его Гулгаш. Пожалуйста, возвращайтесь, как только закроете портал, а я тем временем поищу подходящее вознаграждение.~
+  SAY @46
   IF ~  PartyHasItem("WANEVSTH")~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ EXIT
+SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @47 EXIT
   IF ~  !PartyHasItem("WANEVSTH")~ THEN GOTO 49
 END
 
 IF ~~ THEN BEGIN 49 // from: 22.2
-  SAY ~Возьмите этот оберег, и мои слуги не тронут вас.~
+  SAY @48
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ EXIT
+SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @47 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.2
-  SAY ~Не сомневаюсь, что смогу предложить вам магическое снаряжение немалой ценности, если вы сумеете все поправить.~
-  IF ~  GlobalLT("Attack","LOCALS",3)~ THEN REPLY ~Я постараюсь закрыть портал, когда найду драгоценный камень.~ GOTO 22
-  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY ~Я постараюсь закрыть портал, когда найду драгоценный камень.~ GOTO 25
-  IF ~  GlobalLT("Attack","LOCALS",3)!PartyHasItem("WANEVSTH")~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 24
-  IF ~  GlobalLT("Attack","LOCALS",3)PartyHasItem("WANEVSTH")~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 50
-  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 26
+  SAY @49
+  IF ~  GlobalLT("Attack","LOCALS",3)~ THEN REPLY @41 GOTO 22
+  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY @41 GOTO 25
+  IF ~  GlobalLT("Attack","LOCALS",3)!PartyHasItem("WANEVSTH")~ THEN REPLY @43 GOTO 24
+  IF ~  GlobalLT("Attack","LOCALS",3)PartyHasItem("WANEVSTH")~ THEN REPLY @43 GOTO 50
+  IF ~  GlobalGT("Attack","LOCALS",2)~ THEN REPLY @43 GOTO 26
 END
 
 IF ~~ THEN BEGIN 24 // from: 20.3
-  SAY ~Что ж, ладно. Если передумаете, я буду очень благодарен. Возьмите этот оберег, и мои слуги не тронут вас.~
+  SAY @50
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
 SetGlobal("WanevQuest","GLOBAL",2)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 20.4
-  SAY ~Что ж, ладно. Если передумаете, я буду очень благодарен.~
+  SAY @51
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
 SetGlobal("WanevQuest","GLOBAL",2)GiveItem("VScroll",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 20.2
-  SAY ~Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце на жаровню. Тогда портал будет закрыт. Зовут его Гулгаш. Пожалуйста, возвращайтесь, как только закроете портал, а я тем временем поищу подходящее вознаграждение.~
-  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ EXIT
+  SAY @46
+  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @47 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 20.5
-  SAY ~Что ж, ладно. Если передумаете, я буду очень благодарен.~
+  SAY @51
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
 SetGlobal("WanevQuest","GLOBAL",2)GiveItem("VScroll",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 52 // from: 14.1 15.1
-  SAY ~Я запечатал ее магией. Дело в том, что я призвал беса чтобы поручить ему кое-какую работу. Однако произошла, э, небольшая неприятность. Я был немного небрежен во время подготовки, и маленькому демону удалось вырваться из круга вызывания. Это послужит мне уроком: никогда не читайте заклинания в пьяном виде. Этот негодяй растянул портал и начал вызывать себе на подмогу других демонов. Я как можно быстрее запечатал эту зону и сразу протрезвел.~
-  IF ~~ THEN REPLY ~Я помогу тебе решить эту проблему, разумеется за вознаграждение.~ GOTO 53
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~Мне все равно. До свидания.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~Мне все равно. До свидания.~ GOTO 51
-  IF ~~ THEN REPLY ~Ты мне ни к чему. Умри!~ GOTO 4
+  SAY @52
+  IF ~~ THEN REPLY @53 GOTO 53
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @34 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @34 GOTO 51
+  IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 53 // from: 14.1 15.1
-  SAY ~Отлично! Возьмите этот свиток. Записанное на нем заклинание снимет магическую печать с лестницы, и знайте: если вам удастся закрыть портал, я буду очень благодарен. Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце на жаровню. Тогда портал будет закрыт. Зовут его Гулгаш. Пожалуйста, возвращайтесь, как только закроете портал, а я тем временем поищу подходящее вознаграждение.~
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~Я сделаю это. Надеюсь награда будет достойная!~ DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ EXIT
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~Я сделаю это. Надеюсь награда будет достойная!~ GOTO 54
-  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY ~Это слишком опасно. До свидания.~ GOTO 8
-  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY ~Это слишком опасно. До свидания.~ GOTO 51
+  SAY @54
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @55 DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
+SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @56 EXIT
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @55 GOTO 54
+  IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @45 GOTO 8
+  IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @45 GOTO 51
 END
 
 IF ~~ THEN BEGIN 54 // from: 14.1 15.1
-  SAY ~Возьмите этот оберег, и мои слуги не тронут вас.~
+  SAY @48
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ EXIT
+SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @56 EXIT
 END
 
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("WanevQuest","GLOBAL",0)Global("WanevQuest2","GLOBAL",0)Global("Attack","LOCALS",3)~ THEN BEGIN 27 // from:
-  SAY ~А теперь что вам нужно? Только не торопитесь, и не трогайте меня.~ [WANEV053]
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)Global("KnowAboutGem","LOCALS",0)~ THEN REPLY ~Меня прислали сюда, чтобы забрать у тебя драгоценный камень.~ GOTO 12
-  IF ~  Global("KnowAboutGem","LOCALS",1)~ THEN REPLY ~Ты сказал, что потерял драгоценный камень?~ GOTO 28
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY ~Здесь есть лестница на верхние этажи, но почему-то я не могу по ней пройти.~ GOTO 52
-  IF ~~ THEN REPLY ~Я думаю, пора тебе попрощаться с жизнью. Умри!~ GOTO 4
-  IF ~~ THEN REPLY ~Мне ничего не нужно. Прощай.~ GOTO 29
+  SAY @57
+  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)Global("KnowAboutGem","LOCALS",0)~ THEN REPLY @10 GOTO 12
+  IF ~  Global("KnowAboutGem","LOCALS",1)~ THEN REPLY @58 GOTO 28
+  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~~ THEN REPLY @59 GOTO 4
+  IF ~~ THEN REPLY @60 GOTO 29
 END
 
 IF ~~ THEN BEGIN 28 // from: 27.2
-  SAY ~Разумеется. Я совершил ошибку во время призвания этого беса, и он открыл демонический портал в комнатах для вызывания.~
+  SAY @61
   IF ~~ THEN GOTO 18
 END
 
 IF ~~ THEN BEGIN 29// from: 27.4
-  SAY ~Прощайте. Постарайтесь тут ничего не сломать.~
+  SAY @62
   IF ~~ THEN EXIT
 END
 
@@ -287,28 +277,26 @@ END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("WanevQuest","GLOBAL",2)Global("WanevQuest2","GLOBAL",0)~ THEN BEGIN 30 // from:
-  SAY ~Приветствую. Ну как, не передумали насчет закрытия портала?~ [WANEV054]
-  IF ~~ THEN REPLY ~Я постараюсь закрыть портал, когда найду драгоценный камень.~ GOTO 31
-  IF ~~ THEN REPLY ~За хорошее вознаграждение.~ GOTO 32
-  IF ~~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 33
-  IF ~~ THEN REPLY ~Мне ничего не нужно. Прощай.~ GOTO 29
+  SAY @63
+  IF ~~ THEN REPLY @41 GOTO 31
+  IF ~~ THEN REPLY @42 GOTO 32
+  IF ~~ THEN REPLY @43 GOTO 33
+  IF ~~ THEN REPLY @60 GOTO 29
 END
 
 IF ~~ THEN BEGIN 31 // from: 30.1
-  SAY ~Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце на жаровню. Тогда портал будет закрыт. Зовут его Гулгаш. Пожалуйста, возвращайтесь, как только закроете портал, а я тем временем поищу подходящее вознаграждение.~
-  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)~ UNSOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ EXIT
+  SAY @46
+  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @47 EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 30.2
-  SAY ~Не сомневаюсь, что смогу предложить вам магическое снаряжение немалой ценности, если вы сумеете все поправить.~
-  IF ~~ THEN REPLY ~Я постараюсь закрыть портал, когда найду драгоценный камень.~ GOTO 31
-  IF ~~ THEN REPLY ~Меня это не интересует. Мне нужна только драгоценность.~ GOTO 33
+  SAY @49
+  IF ~~ THEN REPLY @41 GOTO 31
+  IF ~~ THEN REPLY @43 GOTO 33
 END
 
 IF ~~ THEN BEGIN 33 // from: 30.3
-  SAY ~Что ж, ладно. Если передумаете, я буду очень благодарен.~
+  SAY @51
   IF ~~ THEN EXIT
 END
 
@@ -316,127 +304,111 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  OR(2)Global("WanevQuest","GLOBAL",1)Global("WanevQuest","GLOBAL",3)Global("WanevQuest2","GLOBAL",0)~ THEN BEGIN 34// from:
-  SAY ~И вновь приветствую. Ну что, удалось вам убить беса и закрыть портал?~ [WANEV055]
-  IF ~  !Global("WanevQuest","GLOBAL",3)~ THEN REPLY ~Пока мне не удалось закрыть портал.~ GOTO 35
-  IF ~~ THEN REPLY ~Еще раз, что мне предлагается сделать?~ GOTO 36
-  IF ~  Global("WanevQuest","GLOBAL",3)~ THEN REPLY ~Портал был закрыт.~ GOTO 37
+  SAY @64
+  IF ~  !Global("WanevQuest","GLOBAL",3)~ THEN REPLY @65 GOTO 35
+  IF ~~ THEN REPLY @66 GOTO 36
+  IF ~  Global("WanevQuest","GLOBAL",3)~ THEN REPLY @67 GOTO 37
 END
 
 IF ~~ THEN BEGIN 35 // from: 34.1
-  SAY ~Пожалуйста, возвращайтесь, когда закроете портал.~
+  SAY @68
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 34.2
-  SAY ~Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце в жаровню. Тогда портал будет закрыт. Зовут его Гулгаш.~
+  SAY @69
   IF ~~ THEN GOTO 35
 END
 
 IF ~~ THEN BEGIN 37 // from: 34.3
-  SAY ~Ах, великолепно. Вот, возьмите за труды. Уязвленное самолюбие и потеря нескольких магических предметов -- небольшая плата за возвращение комнаты для вызывания.~
-  IF ~  Race(LastTalkedToBy,ELF)~ THEN REPLY ~Мы с вами одной расы. Может, вы примете это в расчет, и дадите немного побольше.~ GOTO 38
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Если бы не я, ваш дом наводнили бы демоны. Я хочу вознаграждение побольше.~ GOTO 39
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Если бы не я, ваш дом наводнили бы демоны. Я хочу вознаграждение побольше.~ GOTO 40
-  IF ~  Alignment(LastTalkedToBy,MASK_EVIL)~ THEN REPLY ~Почему бы вам не добавить мне пару монеток, если не хотите, чтобы вам сделали очень больно?~ GOTO 41
-  IF ~~ THEN REPLY ~Этого достаточно. До встречи!~ GOTO 42
+  SAY @70
+  IF ~  Race(LastTalkedToBy,ELF)~ THEN REPLY @71 GOTO 38
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @72 GOTO 39
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @72 GOTO 40
+  IF ~  Alignment(LastTalkedToBy,MASK_EVIL)~ THEN REPLY @73 GOTO 41
+  IF ~~ THEN REPLY @74 GOTO 42
 END
 
 IF ~~ THEN BEGIN 38 // from: 37.1
-  SAY ~Почему бы и нет, дружище! Вот вам еще немного денег!~
+  SAY @75
   IF ~~ THEN GOTO 43
 END
 
 IF ~~ THEN BEGIN 39 // from: 37.2
-  SAY ~Хмм. Вы избавили меня от множества неприятностей! Вот, возьмите еще немного денег!~
+  SAY @76
   IF ~~ THEN GOTO 43
 END
 
 IF ~~ THEN BEGIN 40 // from: 37.3
-  SAY ~Ваша награда весьма ценна. И этого более чем достаточно.~
-  IF ~  Race(LastTalkedToBy,ELF)~ THEN REPLY ~Мы с вами одной расы. Может, вы примете это в расчет, и дадите немного побольше.~ GOTO 38
-  IF ~  Alignment(LastTalkedToBy,MASK_EVIL)~ THEN REPLY ~Почему бы вам не добавить мне пару монеток, если не хотите, чтобы вам сделали очень больно?~ GOTO 41
-  IF ~~ THEN REPLY ~Этого достаточно. До встречи!~ GOTO 42
+  SAY @77
+  IF ~  Race(LastTalkedToBy,ELF)~ THEN REPLY @71 GOTO 38
+  IF ~  Alignment(LastTalkedToBy,MASK_EVIL)~ THEN REPLY @73 GOTO 41
+  IF ~~ THEN REPLY @74 GOTO 42
 END
 
 IF ~~ THEN BEGIN 41 // from: 37.4
-  SAY ~Спокойнее, дружище. Это не повод для насилия. Вот, берите мои последние деньги!~
+  SAY @78
   IF ~~ THEN GOTO 43
 END
 
 IF ~~ THEN BEGIN 42 // from: 37.5
-  SAY ~Что ж, у меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~
-  IF ~~ THEN REPLY ~Конечно. Это было бы неплохо.~ GOTO 44
-  IF ~~ THEN REPLY ~Я и без вас найду дорогу.~ GOTO 45
+  SAY @79
+  IF ~~ THEN REPLY @80 GOTO 44
+  IF ~~ THEN REPLY @81 GOTO 45
 END
 
 IF ~~ THEN BEGIN 43 // from: 38 39 41
-  SAY ~Что ж, у меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~
-  IF ~~ THEN REPLY ~Конечно. Это было бы неплохо.~ GOTO 46
-  IF ~~ THEN REPLY ~Я и без вас найду дорогу.~ GOTO 47
+  SAY @79
+  IF ~~ THEN REPLY @80 GOTO 46
+  IF ~~ THEN REPLY @81 GOTO 47
 END
 
 IF ~~ THEN BEGIN 44 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив хранил у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и в зале кишели всякие чудовища и демоны. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив хранил у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и в зале кишели всякие чудовища и демоны. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив хранил у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и в зале кишели всякие чудовища и демоны. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
 AddexperienceParty(80000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив хранил у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и в зале кишели всякие чудовища и демоны. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
 END
 
 // ---------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("WanevQuest","GLOBAL",3)~ THEN BEGIN 48// from:
-  SAY ~А теперь что вам нужно? Только не торопитесь, и не трогайте меня.~ [WANEV053]
+  SAY @57
   IF ~~ THEN EXIT
 END
 
@@ -444,39 +416,39 @@ END
 
 IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("WanevQuest2","GLOBAL",0)GlobalLT("WanevQuest2","GLOBAL",3)~ THEN BEGIN 55// from:
-  SAY ~И вновь приветствую. Ну что, удалось вам убить беса и закрыть портал?~ [WANEV055]
-  IF ~  !Global("WanevQuest2","GLOBAL",2)~ THEN REPLY ~Пока мне не удалось закрыть портал.~ GOTO 35
-  IF ~~ THEN REPLY ~Еще раз, что мне предлагается сделать?~ GOTO 36
-  IF ~  Global("WanevQuest2","GLOBAL",2)~ THEN REPLY ~Портал закрыт.~ GOTO 56
+  SAY @64
+  IF ~  !Global("WanevQuest2","GLOBAL",2)~ THEN REPLY @65 GOTO 35
+  IF ~~ THEN REPLY @66 GOTO 36
+  IF ~  Global("WanevQuest2","GLOBAL",2)~ THEN REPLY @84 GOTO 56
 END
 
 IF ~~ THEN BEGIN 56 // from: 34.3
-  SAY ~Ах, великолепно. Вот, возьмите за труды. Уязвленное самолюбие и потеря нескольких магических предметов -- небольшая плата за возвращение комнаты для вызывания.~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Если бы не я, ваш дом наводнили бы демоны. Я хочу вознаграждение побольше.~ GOTO 57
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~Если бы не я, ваш дом наводнили бы демоны. Я хочу вознаграждение побольше.~ GOTO 58
-  IF ~~ THEN REPLY ~Этого достаточно. До встречи!~ GOTO 59
+  SAY @70
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @72 GOTO 57
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @72 GOTO 58
+  IF ~~ THEN REPLY @74 GOTO 59
 END
 
 IF ~~ THEN BEGIN 57 // from: 37.2
-  SAY ~Хмм. Вы избавили меня от множества неприятностей! Вот, возьмите еще немного денег! У меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~
-  IF ~~ THEN REPLY ~Конечно. Это было бы неплохо.~ GOTO 60
-  IF ~~ THEN REPLY ~Я и без вас найду дорогу.~ GOTO 61
+  SAY @85
+  IF ~~ THEN REPLY @80 GOTO 60
+  IF ~~ THEN REPLY @81 GOTO 61
 END
 
 IF ~~ THEN BEGIN 58 // from: 37.3
-  SAY ~Ваша награда весьма ценна. И этого более чем достаточно. У меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~
-  IF ~~ THEN REPLY ~Конечно. Это было бы неплохо.~ GOTO 62
-  IF ~~ THEN REPLY ~Я и без вас найду дорогу.~ GOTO 63
+  SAY @86
+  IF ~~ THEN REPLY @80 GOTO 62
+  IF ~~ THEN REPLY @81 GOTO 63
 END
 
 IF ~~ THEN BEGIN 59 // from: 37.5
-  SAY ~Что ж, у меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~
-  IF ~~ THEN REPLY ~Конечно. Это было бы неплохо.~ GOTO 62
-  IF ~~ THEN REPLY ~Я и без вас найду дорогу.~ GOTO 63
+  SAY @79
+  IF ~~ THEN REPLY @80 GOTO 62
+  IF ~~ THEN REPLY @81 GOTO 63
 END
 
 IF ~~ THEN BEGIN 60 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
 SetGlobal("WanevQuest2","GLOBAL",0)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
@@ -484,15 +456,11 @@ GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
 AddexperienceParty(80000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и зал заполнился всякими чудовищами и демонами. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
 END
 
 IF ~~ THEN BEGIN 61 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
 SetGlobal("WanevQuest2","GLOBAL",0)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
@@ -500,39 +468,27 @@ GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
 AddexperienceParty(80000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и зал заполнился всякими чудовищами и демонами. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
 END
 
 IF ~~ THEN BEGIN 62 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
 SetGlobal("WanevQuest2","GLOBAL",0)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и зал заполнился всякими чудовищами и демонами. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
 END
 
 IF ~~ THEN BEGIN 63 // from: 42.1
-  SAY ~Очень хорошо. До свидания.~
+  SAY @82
   IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
 SetGlobal("WanevQuest2","GLOBAL",0)
 GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(%Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.%)~ SOLVED_JOURNAL ~Южная дорога: Закрытие портала Вэйнива
-
-Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и зал заполнился всякими чудовищами и демонами. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ EXIT
+EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
 END

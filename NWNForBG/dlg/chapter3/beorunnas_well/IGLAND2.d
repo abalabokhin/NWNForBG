@@ -4,48 +4,48 @@ BEGIN ~IGLAND2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 0 // from:
-  SAY ~Ванда, вы готовы отвечать на вопросы прокурора?~
+  SAY @0
   IF ~~ THEN EXTERN ~VAND~ 12
 END
 
 IF ~~ THEN BEGIN 1 // from: VAND 12
-  SAY ~Я чувствую некоторую враждебность с вашей стороны, юная леди. Пожалуйста, запомните, я всего лишь выполняю свою работу. Я не виноват в том, что ваш муж оказался убийцей.~
+  SAY @1
   IF ~~ THEN EXTERN ~NEURIK2~ 37
 END
 
 IF ~~ THEN BEGIN 2 // from: NEURIK2 37
-  SAY ~Прошу прощения, ваша честь. Но эта женщина смотрит на меня так, как будто бы хочет убить меня. Ее необходимо арестовать.~
+  SAY @2
   IF ~~ THEN EXTERN ~VAND~ 13
 END
 
 IF ~~ THEN BEGIN 3 // from: VAND 13
-  SAY ~Да, вы, жители Утгардта, очень серьезно относитесь к вопросам чести. Разве не был Ролган опозорен, когда проиграл в карты все, что у него было? Разве не хотел он сделать все, что угодно, лишь бы только избавиться от этого позора?~
+  SAY @3
   IF ~~ THEN EXTERN ~VAND~ 14
 END
 
 IF ~~ THEN BEGIN 4 // from: VAND 14
-  SAY ~Это вы так говорите. Но мы знаем, насколько важна для жителей Утгардта честь, а Ролган, бесспорно, гордый воин. Разумеется, такие умные и замечательные присяжные, как эти, должны понимать, что гордость могла подвинуть Ролгана на то, чтобы убить Гриффа, это была отчаянная попытка сохранить свою оскорбленную честь.~
+  SAY @4
   IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
-  SAY ~Защита может приступать к перекрестному допросу. У меня больше нет вопросов к этой свидетельнице, поскольку она практически признала, что ее муж - невменяемый маньяк-убийца.~
+  SAY @5
   IF ~~ THEN EXTERN ~NEURIK2~ 38
 END
 
 IF ~~ THEN BEGIN 6 // from: NEURIK2 38
-  SAY ~Простите, судья. Я ни слова больше не скажу, пока <LADYLORD> <CHARNAME> пытается защитить этих преступников.~
+  SAY @6
   IF ~~ THEN EXTERN ~VAND~ 15
 END
 
 IF ~~ THEN BEGIN 7 // from: VAND 17
-  SAY ~Дороже жизни? Значит, Грифф стал человеческой жертвой, принесенной Утгару во время одного из ваших дикарских языческих ритуалов?~
+  SAY @7
   IF ~~ THEN DO ~IncrementGlobal("Justification","GLOBAL",1)~ EXTERN ~NEURIK2~ 39
 END
 
 IF ~~ THEN BEGIN 8 // from: NEURIK2 39
-  SAY ~Если это порадует суд, обвинение закончило с этим делом. Может быть, мы сразу перейдем к казни? Нет? Ладно, защита может вызвать своих свидетелей, если захочет, хотя лично я не вижу в этом никакого смысла.~
-  IF ~~ THEN REPLY ~Мне бы хотелось вызвать на допрос Ролгана.~ DO ~SetGlobal("IslandDialogue","GLOBAL",3)~ EXIT
-  IF ~~ THEN REPLY ~Я могу приступать к финальным прениям.~ DO ~SetGlobal("IslandDialogue","GLOBAL",4)~ EXIT
+  SAY @8
+  IF ~~ THEN REPLY @9 DO ~SetGlobal("IslandDialogue","GLOBAL",3)~ EXIT
+  IF ~~ THEN REPLY @10 DO ~SetGlobal("IslandDialogue","GLOBAL",4)~ EXIT
 END
 

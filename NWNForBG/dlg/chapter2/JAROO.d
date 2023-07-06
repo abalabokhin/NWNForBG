@@ -4,22 +4,22 @@ BEGIN ~JAROO~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Vizited","LOCALS",0)GlobalLT("KnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 0 // from:
-  SAY ~Итак... это *последняя* группа участников, да? Очень хорошо. Меня зовут Джару - Мастер Игры. Позвольте рассказать, что вас ждет:~ [JAROO050]
+  SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Вход в подземелье стоит 1000 золотых. Выйдя из этого подвала через северную дверь, вы попадете на 1 уровень лабиринта, всего уровней - три. Вы должны исследовать все подземелья и найти четыре хрустальных предмета. Если сможете это сделать и ответить на загадку, вернетесь сюда в качестве победителей.~
+  SAY @1
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Ни я, ни Мутамин не берем на себя ответственность за вашу смерть или смерть любого из ваших компаньонов. Если вы войдете в подземелье, то сделаете это на свой страх и риск.~ [JAROO056]
+  SAY @2
   IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
-  SAY ~А теперь, если кто-нибудь хочет войти, давайте мне деньги, и я пропущу вас в лабиринт.~ [JAROO057]
+  SAY @3
   IF ~~ THEN DO ~SetGlobal("Vizited","LOCALS",1)~ EXIT
 END
 
@@ -27,37 +27,35 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Vizited","LOCALS",1)GlobalLT("KnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 4 // from:
-  SAY ~Да, <LADYLORD>? Вы готовы войти в подземелье?~ [JAROO051]
-  IF ~  PartyGoldGT(999)~ THEN REPLY ~Да, пропусти меня. Вот ваши 1000 золотых.~ GOTO 5
-  IF ~~ THEN REPLY ~Я пока не готов.~ ~Я пока не готова.~ GOTO 6
-  IF ~~ THEN REPLY ~Да, а 1000 золотых платить обязательно?~ GOTO 7
+  SAY @4
+  IF ~  PartyGoldGT(999)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 5.1
-  SAY ~Отлично, входите, я открою решетку. Итак, состязание начинается!~
+  SAY @8
   IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("KnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(%Северная дорога: Испытание Мутамина
 
-Содержатель таверны Мутамин проводит незаконные состязания в подземелье под таверной "Зеленый Грифон", что стоит на дороге в Лускан. Те, у кого есть ключ от подвала, спускаются вниз, где они должны переговорить с его помощником Джару.%)~ UNSOLVED_JOURNAL ~Северная дорога: Испытание Мутамина
-
-Содержатель таверны Мутамин проводит незаконные состязания в подземелье под таверной "Зеленый Грифон", что стоит на дороге в Лускан.Распорядитель состязания Джару объяснил все правила и подал сигнал к началу гонки. Команды соперников должны пробежать по подземелью, в которых полно монстров, ловушек и сокровищ и найти четыре хрустальных предмета. В конце подземелья им придется разгадать загадку. Команда, первой давшая ответ на свою загадку, объявляется победившей.~ EXIT
+Содержатель таверны Мутамин проводит незаконные состязания в подземелье под таверной "Зеленый Грифон", что стоит на дороге в Лускан. Те, у кого есть ключ от подвала, спускаются вниз, где они должны переговорить с его помощником Джару.%)~ UNSOLVED_JOURNAL @9 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 5.2
-  SAY ~Как хотите. Я побуду здесь, на случай, если вы передумаете.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.3
-  SAY ~Да. Каждый взнос добавляется к сумме, которую получит победитель, прошедший все подземелье. Поскольку у вас у всех равные шансы на успех, боюсь, что предлагать кому-то одному скидку не вполне честно. Так вы готовы к состязанию?~
-  IF ~  PartyGoldGT(999)~ THEN REPLY ~Да, пропусти меня. Вот ваши 1000 золотых.~ GOTO 5
-  IF ~~ THEN REPLY ~Я пока не готов.~ ~Я пока не готова.~ GOTO 6
+  SAY @11
+  IF ~  PartyGoldGT(999)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
 END
 
 // ------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("KnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 8 // from:
-  SAY ~Поторопитесь, <LADYLORD>. Состязание уже началось, другие участники могут вас опередить.~
+  SAY @12
   IF ~~ THEN EXIT
 END
 
@@ -65,7 +63,7 @@ END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("KnowsAboutMatch","GLOBAL",4)~ THEN BEGIN 9 // from:
-  SAY ~Вы выиграли состязание. Поздравляю! Поговорите с Мутамином, он выдаст вам приз!~ [JAROO052]
+  SAY @13
   IF ~~ THEN EXIT
 END
 
@@ -73,7 +71,7 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("KnowsAboutMatch","GLOBAL",4)GlobalLT("KnowsAboutMatch","GLOBAL",7)~ THEN BEGIN 10 // from:
-  SAY ~Состязание уже выиграно. Приходите в другой раз, когда мы подготовим новое состязание!~ [JAROO053]
+  SAY @14
   IF ~~ THEN EXIT
 END
 
@@ -81,7 +79,7 @@ END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("KnowsAboutMatch","GLOBAL",6)~ THEN BEGIN 11 // from:
-  SAY ~Я сожалею, но вы проиграли состязание. Приходите в другой раз, когда мы подготовим новое состязание!~
+  SAY @15
   IF ~~ THEN EXIT
 END
 

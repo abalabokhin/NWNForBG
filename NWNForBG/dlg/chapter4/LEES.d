@@ -10,74 +10,74 @@ BEGIN ~LEES~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("LeesQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Кто вы? Вы ведь не один из этих лусканских солдат, правда? Люс сказала держаться от них подальше, потому что они могут меня обидеть.~ [LEES053]
-  IF ~  Global("LuceJob","GLOBAL",1)~ THEN REPLY ~Ты Лииса? Младшая сестренка Люс?~ GOTO 1
-  IF ~~ THEN REPLY ~Я не трону тебя, девочка.~ GOTO 2
-  IF ~~ THEN REPLY ~Что ты здесь делаешь?~ GOTO 3
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~Отстань, малявка!~ GOTO 5
+  SAY @0
+  IF ~  Global("LuceJob","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Люс - моя сестра, но я не могу вернуться к ней. Мне слишком страшно. Я хочу вернуться в "Маску Лунного Камня". Там работает Люс. Я скучаю по ней. Здесь очень холодно, а по ночам очень страшно.~
-  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY ~Теперь ты в безопасности, Лииса. Можешь возвращаться в "Маску Лунного Камня".~ GOTO 6
-  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY ~Теперь ты в безопасности, Лииса. Можешь возвращаться в "Маску Лунного Камня".~ GOTO 7
-  IF ~~ THEN REPLY ~Прости, дитятко. Я не могу тебе помочь.~ GOTO 8
-  IF ~~ THEN REPLY ~Отстань, малявка!~ GOTO 5
+  SAY @6
+  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Я Лииса. Я пришла сюда с Люс. Она моя большая сестра. Она красивая. Здесь было много солдат, и нам пришлось спрятаться. Люс заснула, потому что было темно. Я услышала шум и испугалась. И я убежала. А потом пришли чудовища. Я хочу вернуться в "Маску Лунного Камня". Там работает Люс. Я скучаю по ней. Здесь очень холодно, а по ночам очень страшно.~
-  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY ~Теперь ты в безопасности, Лииса. Можешь возвращаться в "Маску Лунного Камня".~ GOTO 6
-  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY ~Теперь ты в безопасности, Лииса. Можешь возвращаться в "Маску Лунного Камня".~ GOTO 7
-  IF ~~ THEN REPLY ~Прости, дитятко. Я не могу тебе помочь.~ GOTO 8
-  IF ~~ THEN REPLY ~Отстань, малявка!~ GOTO 5
+  SAY @9
+  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Я Лииса. Я пришла сюда с Люс. Она моя большая сестра. Она красивая. Здесь было много солдат, и нам пришлось спрятаться. Люс заснула, потому что было темно. Я услышала шум и испугалась. И я убежала. А потом пришли чудовища. Я хочу вернуться в "Маску Лунного Камня". Там работает Люс. Я скучаю по ней. Здесь очень холодно, а по ночам очень страшно.~
-  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY ~Теперь ты в безопасности, Лииса. Можешь возвращаться в "Маску Лунного Камня".~ GOTO 6
-  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY ~Теперь ты в безопасности, Лииса. Можешь возвращаться в "Маску Лунного Камня".~ GOTO 7
-  IF ~~ THEN REPLY ~Прости, дитятко. Я не могу тебе помочь.~ GOTO 8
-  IF ~~ THEN REPLY ~Отстань, малявка!~ GOTO 5
+  SAY @9
+  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @8 GOTO 8
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Я ничего не знаю. Мне холодно. Пожалуйста, не обижайте меня.~
-  IF ~~ THEN REPLY ~Я не трону тебя, девочка.~ GOTO 2
-  IF ~~ THEN REPLY ~Что ты здесь делаешь?~ GOTO 3
-  IF ~~ THEN REPLY ~Отстань, малявка!~ GOTO 5
+  SAY @10
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
-  SAY ~О-ой!!~
+  SAY @11
   IF ~~ THEN DO ~RunAwayFrom(LastTalkedToBy(Myself),15)SetGlobal("LeesQuest","GLOBAL",9)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
-  SAY ~Можно? Господи, спасибо! Вы очень добры, <MALEFEMALE>. Дождаться не могу, когда снова увижу Люс!~
-  IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL ~Лииса согласилась вернуться в Маску Лунного Камня, где она сможет воссоединиться со своей сестрой Люс.~ EXIT
+  SAY @12
+  IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @13 EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.2
-  SAY ~Мне нельзя доверять незнакомцам. Так меня Люс учила.~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY ~Тогда давай познакомимся. Я <CHARNAME>. Мы друзья с твоей сестрой, Люс.~ GOTO 9
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Тогда давай познакомимся. Я <CHARNAME>. Мы друзья с твоей сестрой, Люс.~ GOTO 10
-  IF ~~ THEN REPLY ~Прости, дитятко. Я не могу тебе помочь.~ GOTO 8
+  SAY @14
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @15 GOTO 9
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @15 GOTO 10
+  IF ~~ THEN REPLY @8 GOTO 8
 END
 
 IF ~~ THEN BEGIN 8 // from: 1.3
-  SAY ~О. Ну ладно, <SIRMAAM>. Похоже, у вас много дел. Надо ведь бороться с этими солдатами и все такое. Если вы увидите Люс, скажите ей, чтобы забрала меня отсюда, ладно?~
+  SAY @16
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
-  SAY ~Что ж, если вы знаете Люс, значит, все нормально. Ладно, я пойду с вами в "Маску Лунного Камня"! Вы очень добры, дождаться не могу, когда снова увижу Люс!~
+  SAY @17
   IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
-  SAY ~Лучше я останусь здесь. Мне слишком страшно из-за этих боев. Если вы увидите Люс, скажите ей, чтобы забрала меня отсюда, ладно?~
+  SAY @18
   IF ~~ THEN EXIT
 END
 
@@ -85,12 +85,12 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~ Global("LeesQuest","GLOBAL",9)~ THEN BEGIN 11 // from:
-  SAY ~Когда я вернусь в "Маску Лунного Камня", я снова увижу Люс! Я так по ней соскучилась.~ [LEES051]
+  SAY @19
   IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12 // from: 11.1
-  SAY ~Надеюсь, она не сердится, что я убежала. Мне просто было очень страшно. Я не хотела теряться.~ [LEES052]
+  SAY @20
   IF ~~ THEN EXIT
 END
 
@@ -98,7 +98,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~ RandomNum(2,1)GlobalGT("LeesQuest","GLOBAL",0)!Global("LeesQuest","GLOBAL",9)~ THEN BEGIN 13 // from:
-  SAY ~Здесь тепло. А на улицах всегда было холодно.~ [LEES050]
+  SAY @21
   IF ~~ THEN EXIT
 END
 
@@ -106,7 +106,7 @@ END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~ RandomNum(2,2)GlobalGT("LeesQuest","GLOBAL",0)!Global("LeesQuest","GLOBAL",9)~ THEN BEGIN 11 // from:
-  SAY ~У нас получилось! У нас получилось! Я снова буду со своей сестрой Люс!~ [LEES054]
+  SAY @22
   IF ~~ THEN EXIT
 END
 

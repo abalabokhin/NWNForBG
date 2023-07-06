@@ -4,7 +4,7 @@ BEGIN ~MOOSECLE~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NW_Medicine","GLOBAL",1)~ THEN BEGIN 0 // from:
-  SAY ~“ы великий герой! »з поколени€ в поколение будет передаватьс€ истори€ о том, как ты спас людей Ћос€ от ¬оющей —мерти.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
@@ -12,7 +12,7 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalLT("NW_Medicine","GLOBAL",2)~ THEN BEGIN 1 // from:
-  SAY ~ћне очень жаль, но мне нужно сконцентрироватьс€ на духах моих предков и молитьс€, чтобы они спасли нас от этой чумы.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 

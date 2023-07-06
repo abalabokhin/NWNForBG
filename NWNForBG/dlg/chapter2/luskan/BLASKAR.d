@@ -5,7 +5,7 @@
 BEGIN ~BLASKAR~
 
   IF~   True()~ THEN BEGIN 0 // from:
-  SAY ~Незваные гости? Да ты хоть знаешь, кто я, тупица?! Я Верховный Волшебник Бласкар Лотлон, и ты сильно пожалеешь о нашей встрече!~
+  SAY @0
   IF ~~ THEN DO ~SetGlobal("Hostile","MYAREA",1)Enemy()~ EXIT
 END
 

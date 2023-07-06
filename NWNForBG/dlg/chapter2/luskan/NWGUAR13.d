@@ -4,36 +4,36 @@ BEGIN ~NWGUAR13~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  CheckStatGT(LastTalkedToBy,9,CHR)~ THEN BEGIN 0 // from:
-  SAY ~Здравствуйте, <SIRMAAM>. Вы за Высшего Капитана Курта или за Высшего Капитана Барама?~
-  IF ~~ THEN REPLY ~Я никого не поддерживаю.~ GOTO 1
-  IF ~~ THEN REPLY ~За Курта.~ GOTO 2
-  IF ~~ THEN REPLY ~За Барама.~ GOTO 3
-  IF ~~ THEN REPLY ~Это вас не касается.~ GOTO 4
-  IF ~~ THEN REPLY ~Кто они такие?~ GOTO 5
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Хорошо. Если у вас есть проблемы, поговорите с мисс Белой, понятно?~
+  SAY @6
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Прекрасно. Только не забывайте, что здесь полно людей Барама. Мне не нужны здесь неприятности, предупреждаю вас. Если у вас есть проблемы, то поговорите с мисс Белой. А если нет, делайте все, что захотите.~
+  SAY @7
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Прекрасно. Только не забывайте, что здесь полно людей Курта. Мне не нужны здесь неприятности, предупреждаю вас. Если у вас есть проблемы, то поговорите с мисс Белой. А если нет, делайте все, что захотите.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Прекрасно. Здесь полно людей из обеих армий... Это нейтральное место по приказу самих Высших Капитанов, так что неприятности мне не нужны. Если у вас есть насчет этого вопросы, то поговорите с мисс Белой. А если нет, то никаких проблем не будет. Понятно?~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Вы что, за дурака меня держите? Смотрите... Здесь есть солдаты обеих армий, так что от вас мне проблемы не нужны. Это нейтральная территория. Если у вас есть насчет этого вопросы, то поговорите с мисс Белой. А если нет, то никаких проблем не будет. Понятно?~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
@@ -41,11 +41,11 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  CheckStatLT(LastTalkedToBy,10,CHR)~ THEN BEGIN 6 // from:
-  SAY ~Эй, вы... Лучше бы вам уйти и не создавать проблем. Вы за Высшего Капитана Курта или за Высшего Капитана Барама?~
-  IF ~~ THEN REPLY ~Я никого не поддерживаю.~ GOTO 1
-  IF ~~ THEN REPLY ~За Курта.~ GOTO 2
-  IF ~~ THEN REPLY ~За Барама.~ GOTO 3
-  IF ~~ THEN REPLY ~Это вас не касается.~ GOTO 4
-  IF ~~ THEN REPLY ~Кто они такие?~ GOTO 5
+  SAY @11
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 GOTO 5
 END
 

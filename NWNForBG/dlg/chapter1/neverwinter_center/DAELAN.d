@@ -4,240 +4,240 @@ BEGIN ~DAELAN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Приветствую, <SIRMAAM>. Вижу, чума, что свирепствует в Невервинтере, еще не коснулась тебя. Среди всех этих страданий и горя мы, не тронутые заразой, должны благодарить судьбу за наше здоровье.~ [DAELAN51]
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я Даэлан Красный Тигр из племен Утгардта, что на Холодном Севере. Но уже больше года назад я оставил свой народ и пришел в Невервинтер. Теперь я зарабатываю себе на жизнь собственной секирой.~
-  IF ~~ THEN REPLY ~Ты очень хорошо говоришь для полуорка.~ GOTO 3
-  IF ~  !Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY ~Прости, но я мало что знаю о племенах Утгардта.~ GOTO 4
-  IF ~  Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY ~Прости, но я мало что знаю о племенах Утгардта.~ GOTO 5
-  IF ~~ THEN REPLY ~Зачем же представитель племен Утгардта явился в город?~ GOTO 6
-  IF ~~ THEN REPLY ~Я ищу хорошего наемника, который помог бы мне выполнить задание.~ GOTO 7
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~  !Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY @5 GOTO 4
+  IF ~  Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Как пожелаешь, <SIRMAAM>. Возвращайся, если когда-нибудь захочешь нанять воина великой доблести и мастерства.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Мой отец был орком, и его нелюдская кровь течет в моих жилах. Но я был воспитан матерью среди племен Утгардта.~
-  IF ~  !Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY ~Прости, но я мало что знаю о племенах Утгардта.~ GOTO 4
-  IF ~  Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY ~Прости, но я мало что знаю о племенах Утгардта.~ GOTO 5
-  IF ~~ THEN REPLY ~Зачем же представитель племен Утгардта явился в город?~ GOTO 6
-  IF ~~ THEN REPLY ~Я ищу хорошего наемника, который помог бы мне выполнить задание.~ GOTO 7
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @9
+  IF ~  !Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY @5 GOTO 4
+  IF ~  Kit(LastTalkedToBy(Myself),BARBARIAN)~ THEN REPLY @5 GOTO 5
+  IF ~~ THEN REPLY @6 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~В городе кое-кто называет мой народ дикарями и варварами, но они ничего не знают об Утгардте. Мы великие воины и охотники, кочуем вслед за стадами и кормимся тем, что дает земля.~
+  SAY @10
   IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Многие обычаи моего народа могут быть знакомы тебе. Нас тоже называют варварами, поскольку мы охотники и воины, живем племенами и кормимся тем, что дает земля.~
+  SAY @11
   IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
-  SAY ~Мое племя благородное, но небольшое. Там, где мы живем, у молодого воина мало возможностей проявить себя или заслужить жену. Но я молод и силен, и мой народ известен своим боевым искусством. Здесь, в Невервинтере, я нашел работу в доках - охранял груз и перевозимые товары.~
-  IF ~~ THEN REPLY ~И что случилось?~ GOTO 8
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
-  SAY ~Я не чуждаюсь битвы и кровопролития, но я честный воин. Я не буду выполнять никаких сомнительных заданий. Если бы мне нужна была такая работа, я нашел бы себе дело и в доках.~
-  IF ~~ THEN REPLY ~Я работаю на Арибет. Мне поручили найти пропавших созданий, которые послужат ингредиентами для лекарства от чумы.~ GOTO 9
-  IF ~~ THEN REPLY ~Я работаю на Леди Арибет. Моя миссия конфиденциальна.~ GOTO 10
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.1
-  SAY ~С приходом чумы все изменилось. Из-за карантина корабли не приходят и не отходят. Ни работы, ни денег. Мне пришлось оставить доки. Многие из рабочих в доках заразились - среди них те, которых я знал как друзей. Я остался, чтобы попытаться облегчить их страдания, но в конце концов ничего не смог сделать, чтобы спасти их от Воющей смерти.~
+  SAY @17
   IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
-  SAY ~Репутация Арибет хорошо известна по всему городу, так что я не опасаюсь, что твое задание опозорит меня. Я буду работать на тебя, если ты дашь хорошую цену за мои услуги. Я не из тех, кто хвалится собственными способностями, но боевые навыки и ярость утгардтских племен хорошо известны по всему Северу.~
+  SAY @18
   IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 10 // from: 4.2
-  SAY ~Я понимаю. Если ты работаешь на Арибет, то, уверен, задание твое должно быть очень важным.~
+  SAY @19
   IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.1
-  SAY ~Когда мои друзья там умерли, не было больше смысла оставаться в доках. Тем более, что стало еще... хуже. Теперь я зарабатываю себе на жизнь как вольный наемник.~
-  IF ~~ THEN REPLY ~Что ты имеешь в виду - в доках стало 'хуже'?~ GOTO 17
-  IF ~~ THEN REPLY ~Я ищу хорошего наемника, который помог бы мне выполнить задание.~ GOTO 7
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 17
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.1
-  SAY ~Я сомневаюсь, что ты найдешь здесь другого наемника, который так же хорошо управлялся бы с секирой. Всего лишь 850 золотых, и я твой покорный слуга.~
-  IF ~  PartyGoldGT(849)~ THEN REPLY ~Мне не помешает хороший боец. Вот твои 850 монет. Добро пожаловать на борт, Даэлан.~ GOTO 13
-  IF ~  PartyGoldGT(599)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~По-моему, это дороговато. Я дам тебе 600.~ GOTO 14
-  IF ~  PartyGoldGT(599)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY ~По-моему, это дороговато. Я дам тебе 600.~ GOTO 15
-  IF ~~ THEN REPLY ~Я не могу себе позволить тратить столько на компаньона.~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @22
+  IF ~  PartyGoldGT(849)~ THEN REPLY @23 GOTO 13
+  IF ~  PartyGoldGT(599)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @24 GOTO 14
+  IF ~  PartyGoldGT(599)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN REPLY @24 GOTO 15
+  IF ~~ THEN REPLY @25 GOTO 16
+  IF ~~ THEN REPLY @26 GOTO 2
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
-  SAY ~Ты об этом не пожалеешь. Мои способности в твоем распоряжении. Я последую за тобой и буду делать все, что в моих силах; согласно отданным тобой приказам.~
+  SAY @27
   IF ~~ THEN DO ~TakePartyGold(850)DestroyGold(850)SetGlobal("DaelanReleased","GLOBAL",1)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.2
-  SAY ~Работать на тебя - честь. Пусть будет 600, и все мои способности в твоем распоряжении. Я последую за тобой и буду делать все, что в моих силах; согласно отданным тобой приказам.~
+  SAY @28
   IF ~~ THEN DO ~TakePartyGold(600)DestroyGold(600)SetGlobal("DaelanReleased","GLOBAL",1)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.3
-  SAY ~Прости, но 850 монет - мое последнее слово. Если ты не хочешь меня нанять, я уверен, другие не откажутся.~
-  IF ~  PartyGoldGT(849)~ THEN REPLY ~Мне не помешает хороший боец. Вот твои 850 монет. Добро пожаловать на борт, Даэлан.~ GOTO 13
-  IF ~~ THEN REPLY ~Я не могу себе позволить тратить столько на компаньона.~ GOTO 16
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @29
+  IF ~  PartyGoldGT(849)~ THEN REPLY @23 GOTO 13
+  IF ~~ THEN REPLY @25 GOTO 16
+  IF ~~ THEN REPLY @26 GOTO 2
 END
 
 IF ~~ THEN BEGIN 16 // from: 12.4
-  SAY ~К сожалению, я должен зарабатывать на жизнь своим искусством. Я не могу работать бесплатно.~
+  SAY @30
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 11.1
-  SAY ~Из-за карантина порт перекрыли, так что там теперь вдесятеро больше пиратов и других преступников - людей без чести. А раз городской страже и с чумой работы хватает, эти злодеи захватили контроль над доками. Воин Утгардта не знает страха, но я не стану бесчестить мое племя. Я отказываюсь служить этим людям! Я не буду опускаться до обычного убийцы или бандита!~
-  IF ~~ THEN REPLY ~Ты можешь рассказать мне что-нибудь еще о доках?~ GOTO 18
-  IF ~~ THEN REPLY ~Я ищу хорошего наемника, который помог бы мне выполнить задание.~ GOTO 7
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @31
+  IF ~~ THEN REPLY @32 GOTO 18
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 18 // from: 17.1
-  SAY ~Перед тем, как уйти, я слышал о каком-то аукционе, что намечается в таверне Тертого Джима. Кое-что покрупнее обычной торговли краденым, контрабандой и беззащитными рабами, которая процветает в этом мерзком логове порока. Слухи распространяются быстро. Может, я бы и разузнал больше перед уходом, но подобные сделки меня не интересуют. Я воин, а не контрабандист.~
+  SAY @33
   IF ~~ THEN GOTO 19
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
-  SAY ~Мало что еще я могу сказать тебе о доках, но я знаю, что этот район опасен. Если собираешься туда, не лишним было бы захватить с собой наемника.~
-  IF ~~ THEN REPLY ~Честно говоря, я не откажусь нанять кого-нибудь, кто помог бы мне с заданием.~ GOTO 7
-  IF ~~ THEN REPLY ~Нет, спасибо. До свидания.~ GOTO 2
+  SAY @34
+  IF ~~ THEN REPLY @35 GOTO 7
+  IF ~~ THEN REPLY @36 GOTO 2
 END
 
 // -----------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 20 // from:
-  SAY ~Я рад, что ты снова здесь, <SIRMAAM>. Что привело тебя обратно в 'Продажные клинки'?~ [DAELAN52]
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 1
-  IF ~~ THEN REPLY ~Я ищу хорошего наемника, который помог бы мне выполнить задание.~ GOTO 7
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 21
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @37
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @38 GOTO 21
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 21 // from: 19.2
-  SAY ~Я мало что могу рассказать тебе о городе. С тех пор, как началась чума, я провел большую часть времени здесь, в поисках работы. Я знаю кое-что о доках, потому что я работал там до чумы. Когда я уходил, это было опасное и дурное место... хотя я подозреваю, что с тех пор стало только хуже.~
-  IF ~~ THEN REPLY ~Что ты имеешь в виду - в доках стало 'хуже'?~ GOTO 17
-  IF ~~ THEN REPLY ~Ты очень хорошо говоришь для полуорка.~ GOTO 3
-  IF ~~ THEN REPLY ~Я ищу хорошего наемника, который помог бы мне выполнить задание.~ GOTO 7
-  IF ~~ THEN REPLY ~Сейчас мне не до разговоров. До свидания.~ GOTO 2
+  SAY @39
+  IF ~~ THEN REPLY @21 GOTO 17
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @7 GOTO 7
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 // --------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",1)~ THEN BEGIN 22 // from:
-  SAY ~<CHARNAME>! Как я рад видеть тебя снова, хотя и не сказать, чтобы я этого не ожидал. Я слышал, что Арибет наняла тебя, чтобы задавить гнусный культ, выпустивший эту чуму.~ [DAELAN53]
-  IF ~~ THEN REPLY ~Какая неожиданность видеть тебя здесь, Даэлан.~ GOTO 23
-  IF ~~ THEN REPLY ~Опять ты? Ты что, увязался за мной, как какой-нибудь несчастный потерявшийся щеночек?~ GOTO 24
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 25
+  SAY @40
+  IF ~~ THEN REPLY @41 GOTO 23
+  IF ~~ THEN REPLY @42 GOTO 24
+  IF ~~ THEN REPLY @26 GOTO 25
 END
 
 IF ~~ THEN BEGIN 23 // from: 22.1
-  SAY ~Я знаю, мы шли разными путями, <CHARNAME>, но, похоже, боги сочли нелишним еще раз свести нас вместе. После того, как наши пути разошлись в Невервинтере, я вернулся в 'Продажные клинки', чтобы предлагать свои умения за плату. Там ко мне обратилась леди Арибет по поручению самого лорда Нашера.~
+  SAY @43
   IF ~~ THEN GOTO 26
 END
 
 IF ~~ THEN BEGIN 24 // from: 22.2
-  SAY ~Я благодарен за все, что тебе довелось сделать для меня, <CHARNAME>, но здесь наши пути расходятся. Не обольщайся, Даэлан Красный Тигр принадлежит лишь себе.~
+  SAY @44
   IF ~~ THEN GOTO 26
 END
 
 IF ~~ THEN BEGIN 25 // from: 22.3
-  SAY ~Прощайте, <SIRMAAM>. Мое оружие всегда к вашим услугам, если вам потребуется помощь искусного и доблестного воина.~
+  SAY @45
   IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 23.1
-  SAY ~Похоже, лорд Нашер намерен искоренить культ, что принес городу так много страданий. Он приказал всем наемникам Невервинтера собраться в гавани Порт-Лласт, чтобы присоединиться к поискам.~
-  IF ~~ THEN REPLY ~Так Арибет и тебя призвала на службу?~ GOTO 27
-  IF ~~ THEN REPLY ~Сколько будет стоить нанять тебя?~ GOTO 27
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 25
+  SAY @46
+  IF ~~ THEN REPLY @47 GOTO 27
+  IF ~~ THEN REPLY @48 GOTO 27
+  IF ~~ THEN REPLY @26 GOTO 25
 END
 
 IF ~~ THEN BEGIN 27 // from: 26.1
-  SAY ~Когда Арибет призвала наемников, нам всем заплатили вперед за наши услуги - хорошо заплатили. Лорд Нашер не экономит на мерах по искоренению этих сектантов. Нам велели просто помогать любому, кто этого потребует. Итак, в связи с этим, могу я что-нибудь для тебя сделать?~
-  IF ~~ THEN REPLY ~У тебя есть какие-нибудь сведения о культе, который стоит за Воющей смертью?~ GOTO 28
-  IF ~~ THEN REPLY ~Мне бы не помешал хороший боец.~ GOTO 29
-  IF ~~ THEN REPLY ~Сейчас мне ничего не нужно.~ GOTO 30
+  SAY @49
+  IF ~~ THEN REPLY @50 GOTO 28
+  IF ~~ THEN REPLY @51 GOTO 29
+  IF ~~ THEN REPLY @52 GOTO 30
 END
 
 IF ~~ THEN BEGIN 28 // from: 27.1
-  SAY ~Я ничего не слышал об этом культе, хотя многие подозревают - как и я - что ответы следует искать в городе Лускан.~
-  IF ~~ THEN REPLY ~Лускан?~ GOTO 31
-  IF ~~ THEN REPLY ~Что это за город?~ GOTO 31
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 25
+  SAY @53
+  IF ~~ THEN REPLY @54 GOTO 31
+  IF ~~ THEN REPLY @55 GOTO 31
+  IF ~~ THEN REPLY @26 GOTO 25
 END
 
 IF ~~ THEN BEGIN 29 // from: 27.2
-  SAY ~Я буду счастлив служить твоему делу своим оружием.~
+  SAY @56
   IF ~~ THEN DO ~SetGlobal("DaelanReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 27.3
-  SAY ~Тогда я должен попрощаться с вами. Если вам когда-нибудь понадобится умелый и доблестный воин, поговорите со мной еще раз. ~
+  SAY @57
   IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 27.2
-  SAY ~Этот город долго был врагом Невервинтера. Проклятие всего Севера, он широко известен как родной дом для убийц и воров - место, где нет чести! Меня бы не удивило, если бы связи с культом обнаружились в этом логове зла. Могу я тебе чем-нибудь помочь, <CHARNAME>?~
-  IF ~~ THEN REPLY ~Мне бы не помешал хороший боец.~ GOTO 29
-  IF ~~ THEN REPLY ~Сейчас мне ничего не нужно.~ GOTO 30
+  SAY @58
+  IF ~~ THEN REPLY @51 GOTO 29
+  IF ~~ THEN REPLY @52 GOTO 30
 END
 
 // --------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",1)~ THEN BEGIN 32 // from:
-  SAY ~Приветствую еще раз, <SIRMAAM>. Это я, Даэлан Красный Тигр, воин из утгардтского племени Красного Тигра. Помните? Мне не терпится отомстить культу, что выпустил свою чуму на Невервинтер.~ [DAELAN55]
-  IF ~~ THEN REPLY ~Так ты работаешь на Арибет?~ GOTO 33
-  IF ~~ THEN REPLY ~Не было ли каких-нибудь слухов о культе с тех пор, как ты здесь?~ GOTO 28
-  IF ~~ THEN REPLY ~Если тебе так нужна месть, чего ты ждешь, стоя здесь?~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 30
+  SAY @59
+  IF ~~ THEN REPLY @60 GOTO 33
+  IF ~~ THEN REPLY @61 GOTO 28
+  IF ~~ THEN REPLY @62 GOTO 34
+  IF ~~ THEN REPLY @26 GOTO 30
 END
 
 IF ~~ THEN BEGIN 33 // from: 32.1
-  SAY ~Похоже, лорд Нашер намерен искоренить культ, что принес городу так много страданий. Он приказал всем наемникам Невервинтера собраться в гавани Порт-Лласт, чтобы присоединиться к поискам. Я ответил на зов без промедления. Я потерял много друзей из-за чумы, и мне не терпится отомстить за их смерть. Подлые трусы, что выпустили это проклятье, должны заплатить.~
-  IF ~~ THEN REPLY ~Не было ли каких-нибудь слухов о культе с тех пор, как ты здесь?~ GOTO 28
-  IF ~~ THEN REPLY ~Если тебе так нужна месть, чего ты ждешь, стоя здесь?~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 30
+  SAY @63
+  IF ~~ THEN REPLY @61 GOTO 28
+  IF ~~ THEN REPLY @62 GOTO 34
+  IF ~~ THEN REPLY @26 GOTO 30
 END
 
 IF ~~ THEN BEGIN 34 // from: 32.3
-  SAY ~Мало бы я сделал, если бы рванулся туда в одиночку. Мне приказали явиться сюда и помочь любому, кому может понадобиться моя сила. Твоя репутация хорошо известна, <CHARNAME>. Я не такой великий герой, как ты, но я умелый воин из племени Красного Тигра. Мой народ известен своей храбростью, честью и яростью в бою. Я мог бы сильно тебе помочь в поисках этого культа, если пожелаешь.~
-  IF ~~ THEN REPLY ~Лишний боец не помешает. Присоединяйся.~ GOTO 35
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 36
+  SAY @64
+  IF ~~ THEN REPLY @65 GOTO 35
+  IF ~~ THEN REPLY @26 GOTO 36
 END
 
 IF ~~ THEN BEGIN 35 // from: 34.1
-  SAY ~Разумеется, я склонюсь перед твоей волей, <CHARNAME>. Для меня честь послужить делу такого великого героя. Я последую за тобой и будут выполнять твои приказы как можно лучше.~
+  SAY @66
   IF ~~ THEN DO ~SetGlobal("DaelanReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 34.2
-  SAY ~Если тебе понадобится сильный воин, который бы помогал тебе, возвращайся и поговори со мной. Моя секира действительно может помочь тебе в задании.~
+  SAY @67
   IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)~ EXIT
 END
 
@@ -245,30 +245,30 @@ END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 37 // from:
-  SAY ~Приветствую и рад видеть. Вы же <CHARNAME>, правильно? Честь спасения Невервинтера принадлежит вам. Ваши деяния стали чем-то вроде легенды.~ [DAELAN54]
-  IF ~~ THEN REPLY ~Ну, это не только моя заслуга. Арибет и другие городские стражи сделали не меньше.~ GOTO 38
-  IF ~~ THEN REPLY ~Да, это, по всей видимости, я.~ GOTO 39
+  SAY @68
+  IF ~~ THEN REPLY @69 GOTO 38
+  IF ~~ THEN REPLY @70 GOTO 39
 END
 
 IF ~~ THEN BEGIN 38 // from: 37.1
-  SAY ~Скромность заставляет тебя делить почести на всех, но от этого твоя честно заслуженная слава не станет меньше.~
+  SAY @71
   IF ~~ THEN GOTO 39
 END
 
 IF ~~ THEN BEGIN 39 // from: 37.2
-  SAY ~Я Даэлан Красный Тигр, благородный воин из племен Утгардта, что на севере. Не сомневаюсь, что ты делаешь здесь то же, что и я: помогаешь Арибет извести культ, на чьей совести Вопящая смерть.~
-  IF ~~ THEN REPLY ~Так ты работаешь на Арибет?~ GOTO 33
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 30
+  SAY @72
+  IF ~~ THEN REPLY @60 GOTO 33
+  IF ~~ THEN REPLY @26 GOTO 30
 END
 
 // --------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 40 // from:
-  SAY ~Приветствую еще раз, <SIRMAAM>. Это я, Даэлан Красный Тигр, воин из утгардтского племени Красного Тигра. Помните? Мне не терпится отомстить культу, что выпустил свою чуму на Невервинтер.~ [DAELAN55]
-  IF ~~ THEN REPLY ~Так ты работаешь на Арибет?~ GOTO 33
-  IF ~~ THEN REPLY ~Не было ли каких-нибудь слухов о культе с тех пор, как ты здесь?~ GOTO 28
-  IF ~~ THEN REPLY ~Если тебе так нужна месть, чего ты ждешь, стоя здесь?~ GOTO 34
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 30
+  SAY @59
+  IF ~~ THEN REPLY @60 GOTO 33
+  IF ~~ THEN REPLY @61 GOTO 28
+  IF ~~ THEN REPLY @62 GOTO 34
+  IF ~~ THEN REPLY @26 GOTO 30
 END
 

@@ -4,48 +4,48 @@ BEGIN ~OLEFF4~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Справедливые приветствуют тебя. Добро пожаловать в Дом Тира. Я Преподобный Судья Олефф Ускар, на службе Искалеченного Бога~ [OLEFF052]
-  IF ~~ THEN REPLY ~Здравствуйте, Олефф. Не ответите ли на мои вопросы?~ GOTO 1
-  IF ~~ THEN REPLY ~Довольно болтовни. У меня к вам вопросы.~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Эта тирранская обитель приветствует ваше вежливое обращение. Спрашивайте что угодно, я постараюсь ответить.~
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~~ THEN REPLY ~Каковы догматы тирранского вероучения?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужны услуги храма. Что вы можете предложить?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.3
-  SAY ~Тир велит мне делать благие дела, но следите за вашим тоном. В этом месте не терпят неуважения.~
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~  ~ THEN REPLY ~Каковы догматы тирранского вероучения?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужны услуги храма. Что вы можете предложить?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @8
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~  ~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.4
-  SAY ~Тир направит тебя к справедливости.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Я настоятель храма Тира в Невервинтере.~
-  IF ~~ THEN REPLY ~Мне нужны услуги храма. Что вы можете предложить?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @10
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Есть много форм поклонения Тиру. Он Слепой Владыка, Справедливый. Он страж и господин справедливости. Священники обязаны открывать правду, наказывать виновных, исправлять неправое и всегда быть честными и справедливыми. Мы бываем судьями, присяжными и, если потребуется, палачами. Благосклонная сила и неусыпная бдительность ведут к справедливости.~
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~~ THEN REPLY ~Мне нужны услуги храма. Что вы можете предложить?~ GOTO 6
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @11
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.6
-  SAY ~Храмовые услуги доступны всем страждущим.~
+  SAY @12
   IF ~~ THEN DO ~StartStore("Oleff",LastTalkedToBy(Myself))~ EXIT
 END
 

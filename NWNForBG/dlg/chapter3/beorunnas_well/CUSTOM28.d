@@ -4,31 +4,31 @@ BEGIN ~CUSTOM28~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,1)~ THEN BEGIN 0 // from:
-  SAY ~Это таверна - не бог весть что, но, по крайней мере, нам есть куда прийти и отдохнуть после целого дня муштры.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,2)GlobalLT("JusamJob","GLOBAL",2)~ THEN BEGIN 1 // from:
-  SAY ~Говорят, что война идет плохо. Похоже, что племя Лосей из Утгардта присоединилось к армии Лускана. Интересно, когда мой отряд призовут на передовую для подкрепления?~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,2)GlobalGT("JusamJob","GLOBAL",1)~ THEN BEGIN 2 // from:
-  SAY ~Слышали хорошие новости? Друид Юсам говорит, что нам больше не надо беспокоиться из-за этого лосиного племени варваров!~
+  SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,3)~ THEN BEGIN 3 // from:
-  SAY ~Я не знаю, что хуже - захватчики из Лускана или эти кровожадные дикари из Утгардта, с которыми нам приходится сражаться бок о бок.~
+  SAY @3
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(4,4)~ THEN BEGIN 4 // from:
-  SAY ~Что вы здесь делаете? Мне казалось, что такой герой, как вы, не станет тратить свое время в переполненной дыре, как эта.~
+  SAY @4
   IF ~~ THEN EXIT
 END
 

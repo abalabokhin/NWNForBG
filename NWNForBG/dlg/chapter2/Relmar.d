@@ -4,139 +4,139 @@ BEGIN ~RELMAR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Что за <MALEFEMALE>, что за гусь делит со мною сковороду-с?~
-  IF ~  IsGabber(Player1)~ THEN REPLY ~Эээ, я <CHARNAME>. Кто ты?~ GOTO 1
-  IF ~  !IsGabber(Player1)~ THEN REPLY ~Мое имя не имеет значения, а вот ты кто такой?~ GOTO 1
-  IF ~~ THEN REPLY ~Я не понимаю тебя. О чем ты говоришь?~ GOTO 2
+  SAY @0
+  IF ~  IsGabber(Player1)~ THEN REPLY @1 GOTO 1
+  IF ~  !IsGabber(Player1)~ THEN REPLY @2 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Кто есть я? Моя есть кто? Я дереву сказал не то. Я скажу, а ты пойми, мое имя - за дверьми. Дверь откроешь, если сможешь, ну а нет, так ручки сложишь.~
-  IF ~~ THEN REPLY ~Я сейчас попробую задать несколько вопросов. Как ты думаешь, ты способен на них ответить?~ GOTO 3
-  IF ~~ THEN REPLY ~Ты сошел с ума!~ GOTO 4
-  IF ~~ THEN REPLY ~Как насчет того, чтобы отрезать тебе язык, если ты не перестанешь говорить стихами?~ GOTO 5
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Ой-хой, поделюся ерундой, коль ответ найдешь, он - твой. Но лисичка без хвоста, и задачка не проста, проиграешь, как с куста.~
-  IF ~~ THEN REPLY ~Я сейчас попробую задать несколько вопросов. Как ты думаешь, ты способен на них ответить?~ GOTO 3
-  IF ~~ THEN REPLY ~Ты сошел с ума!~ GOTO 4
-  IF ~~ THEN REPLY ~Как насчет того, чтобы отрезать тебе язык, если ты не перестанешь говорить стихами?~ GOTO 5
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
+  SAY @9
+  IF ~~ THEN REPLY @5 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Я летаю в облаках, проживаю в башмаках, есть мозги - придумай, как.~
-  IF ~~ THEN REPLY ~Что свело тебя с ума?~ GOTO 7
-  IF ~~ THEN REPLY ~Что вы здесь делаете?~ GOTO 8
-  IF ~~ THEN REPLY ~Ты можешь перестать говорить стихами?~ GOTO 9
-  IF ~~ THEN REPLY ~Что ты знаешь о Духе Леса?~ GOTO 10
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~Не мой это план, вот такой вот изъян.~
-  IF ~~ THEN REPLY ~Ну вот, это почти разумно. Ты имеешь в виду, что ты сошел с ума, потому что находишься на плане Духа?~ GOTO 11
-  IF ~~ THEN REPLY ~Как насчет того, чтобы отрезать тебе язык, если ты не перестанешь говорить стихами?~ GOTO 5
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 11
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Там ништяк и тут ништяк, где ж мой долбаный колпак? Пока-пока, сыграешь в мертвяка!~
+  SAY @17
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
-  SAY ~Где колпак, кто ж его спер? Твоя работа, и кончен разговор! Пока-пока, сыграешь в мертвяка!~
+  SAY @18
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.1
-  SAY ~Я, наверно, много выпил - весь мой мозг в осадок выпал! Не мой это план, вот такой вот изъян.~
-  IF ~~ THEN REPLY ~Ну вот, это почти разумно. Ты имеешь в виду, что ты сошел с ума, потому что находишься на плане Духа?~ GOTO 11
-  IF ~~ THEN REPLY ~Как насчет того, чтобы отрезать тебе язык, если ты не перестанешь говорить стихами?~ GOTO 5
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
+  SAY @19
+  IF ~~ THEN REPLY @16 GOTO 11
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.2
-  SAY ~Успех был мал, я здесь застрял. Они сказали - здрасте, но не прощай, вот напасть вот.~
-  IF ~~ THEN REPLY ~То есть, кто-то оставил тебя здесь, и теперь ты не можешь выбраться?~ GOTO 12
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @20
+  IF ~~ THEN REPLY @21 GOTO 12
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.3
-  SAY ~Терзает голову мотив, и лишь пока пою, я жив.~
-  IF ~~ THEN REPLY ~Что свело тебя с ума?~ GOTO 7
-  IF ~~ THEN REPLY ~Что вы здесь делаете?~ GOTO 8
-  IF ~~ THEN REPLY ~Что ты знаешь о Духе Леса?~ GOTO 10
+  SAY @23
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 10
 END
 
 IF ~~ THEN BEGIN 10 // from: 3.4
-  SAY ~Мне поручили странный ход - отправить дерево в расход. Дух расхворался, но не сдох, хоть я и сделал все, что мог. Рубил, травил, с души кромсал, и все равно в аду застрял.~
-  IF ~~ THEN REPLY ~Так это ты ранил Духа Леса. Ты знаешь, как его можно вылечить?~ GOTO 13
-  IF ~~ THEN REPLY ~Значит, ты отравил дерево, и от этого Дух заболел? Зачем кому-то понадобилось вредить Духу?~ GOTO 14
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @24
+  IF ~~ THEN REPLY @25 GOTO 13
+  IF ~~ THEN REPLY @26 GOTO 14
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 11 // from: 7.1
-  SAY ~Ждал, ждал, да и весь пропал. Были мозги, а сейчас одни куски.~
-  IF ~~ THEN REPLY ~Кажется, я понимаю. Теперь я попробую задать тебе другие вопросы.~ GOTO 20
+  SAY @27
+  IF ~~ THEN REPLY @28 GOTO 20
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.1
-  SAY ~Как мыши в норы ускакали, меня в нору пускать не стали. Мне поручили странный ход - отправить дерево в расход. Дух расхворался, но не сдох, хоть я и сделал все, что мог. Рубил, травил, с души кромсал, и все равно в аду застрял.~
-  IF ~~ THEN REPLY ~Так это ты ранил Духа Леса. Ты знаешь, как его можно вылечить?~ GOTO 13
-  IF ~~ THEN REPLY ~Значит, ты отравил дерево, и от этого Дух заболел? Зачем кому-то понадобилось вредить Духу?~ GOTO 14
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @29
+  IF ~~ THEN REPLY @25 GOTO 13
+  IF ~~ THEN REPLY @26 GOTO 14
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.1
-  SAY ~Есть пузырь, и есть бальзам, только тайну не продам.~
-  IF ~~ THEN REPLY ~Не бойся, я никому не расскажу твой секрет. Ты можешь доверять мне.~ GOTO 15
+  SAY @30
+  IF ~~ THEN REPLY @31 GOTO 15
 END
 
 IF ~~ THEN BEGIN 14 // from: 10.2
-  SAY ~Есть камень с руной сокровенной, что Дух хранил, как клад священный. Не знаю, что там был за знак - булыжник этот стырил маг! Зачем все это, я не знал - я сделал то, что Маугрим сказал.~
-  IF ~~ THEN REPLY ~Кто этот Маугрим?~ GOTO 16
+  SAY @32
+  IF ~~ THEN REPLY @33 GOTO 16
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.1
-  SAY ~Там на северо-востоке, в куче каменных обломков ты найдешь свой пузырек.~
-  IF ~~ THEN REPLY ~Зачем кому-то понадобилось ранить Духа?~ GOTO 14
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @34
+  IF ~~ THEN REPLY @35 GOTO 14
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 16 // from: 14.1
-  SAY ~Мышка пискнет - лев как прыгнет, тут конец ее настигнет.~
-  IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY ~Ты боишься этого Маугрима. Не беспокойся, я лев еще покруче, чем он.~ GOTO 17
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY ~Ты боишься этого Маугрима. Не беспокойся, я лев еще покруче, чем он.~ GOTO 18
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @36
+  IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @37 GOTO 17
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @37 GOTO 18
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
-  SAY ~Маугрим таится в башне, он волшебник силы страшной. Башня рвется к облакам в гнусном городе Лускан. Строит планы, как паук, а работать гонит слуг.~
-  IF ~~ THEN REPLY ~Ты имеешь в виду, другие члены культа тоже причиняют вред?~ GOTO 19
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @38
+  IF ~~ THEN REPLY @39 GOTO 19
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.2
-  SAY ~Крякай, утка, бей крылом - гости ждут уж за столом. Жрать тебя придут другие - в том-то самый и облом.~
-  IF ~~ THEN REPLY ~Так значит, есть еще члены культа, которые вредят?~ GOTO 19
-  IF ~~ THEN REPLY ~Я не собираюсь больше это выслушивать. До свидания.~ GOTO 6
-  IF ~~ THEN REPLY ~По-моему, твоя голова тебе только мешает. Готовься к смерти!~ GOTO 5
+  SAY @40
+  IF ~~ THEN REPLY @41 GOTO 19
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @22 GOTO 5
 END
 
 IF ~~ THEN BEGIN 19 // from: 17.1 18.1
-  SAY ~Других сектантов знал троих, но как их звать, спроси у них. Один имел к пещерам страсть, на север от портовых ласт. Второй в Лускане лег на дно, коль не удрал уже давно. Последний в Чарвуде блуждал, совсем как я, безумен стал. Теперь пора нам всем на борт, возьму колпак, постой - о, черт!~
+  SAY @42
   IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 20 // from: 11.1
-  SAY ~Я летаю в облаках, проживаю в башмаках, есть мозги - придумай, как.~
-  IF ~~ THEN REPLY ~Что вы здесь делаете?~ GOTO 8
-  IF ~~ THEN REPLY ~Что ты знаешь о Духе Леса?~ GOTO 10
+  SAY @10
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 10
 END

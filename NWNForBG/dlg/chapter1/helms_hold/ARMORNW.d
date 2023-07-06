@@ -3,12 +3,12 @@
 BEGIN ~ARMORNW~
 
 IF ~  Global("ArmorQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Судя по виду, эти оживленные доспехи готовы к бою, однако они не двигаются. Они пристально смотрят на алтарь в центре зала.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF ~  GlobalGT("ArmorQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Под твоим командованием мы отправляемся на битву с врагами Хельма.~
+  SAY @1
   IF ~~ THEN DO ~SetGlobal("ArmorQuest","GLOBAL",3)~ EXIT
 END
 

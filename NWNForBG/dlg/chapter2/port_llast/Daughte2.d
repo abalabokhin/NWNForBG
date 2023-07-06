@@ -4,130 +4,130 @@ BEGIN ~DAUGHTE2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Новый день и новый искатель приключений. Хотя у вас не такой бандитский вид, как у большинства из них.~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~У вас в городе много искателей приключений?~ GOTO 2
-  IF ~~ THEN REPLY ~Хорошо, мне пора уходить.~ GOTO 7
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 7
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Хорошо... И какими же они могут быть?~
-  IF ~~ THEN REPLY ~Какие последние новости, чего происходит в городе?~ GOTO 3
-  IF ~~ THEN REPLY ~Что такая девушка, как вы, делает в этом городе?~ GOTO 4
-  IF ~~ THEN REPLY ~Не могли бы вы помочь мне найти некоторые места?~ GOTO 5
-  IF ~~ THEN REPLY ~Я ищу кое-каких людей.~ GOTO 6
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
-  SAY ~Все изменилось с тех пор, как Каратис увел Урта и других парней. Теперь здесь небезопасно.~
-  IF ~~ THEN REPLY ~Кто такой Каратис?~ GOTO 8
-  IF ~~ THEN REPLY ~Кара-тист? Это кто?~ GOTO 8
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 8
+  IF ~~ THEN REPLY @12 GOTO 8
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.1.2
-  SAY ~Он был такой красивый, тут все девчонки были в него влюблены! Он сказал, что он охотник на оборотней и взял парней с собой на охоту. Единственный, кто вернулся, был Эндер. Если вы хотите послушать его историю, ищите его в "Гербе Союза".~
-  IF ~~ THEN REPLY ~Что такая девушка, как вы, делает в этом городе?~ GOTO 4
-  IF ~~ THEN REPLY ~Не могли бы вы помочь мне найти некоторые места?~ GOTO 5
-  IF ~~ THEN REPLY ~Я ищу кое-каких людей.~ GOTO 6
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @13
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
-  SAY ~О, иногда я мечтаю отправиться куда-нибудь. Многие из наших девушек провели ночь дома у Вэйнива просто, чтобы посмотреть, на что это похоже...~
-  IF ~~ THEN REPLY ~Кто такой Вэйнив и где он живет?~ GOTO 9
-  IF ~~ THEN REPLY ~Вэйнив? Это кто? Где он?~ GOTO 9
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 9
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.1.2
-  SAY ~Он отвратительный маленький волшебник, у него есть коттедж здесь, в городе. Он всегда пытается пригласить местных девушек к себе домой. Мы все смеемся над ним у него за спиной, но все-таки ходим в его коттедж. У него есть башня где-то на пути в Чарвуд, но мне не доводилось бывать там.~
-  IF ~~ THEN REPLY ~Какие последние новости, чего происходит в городе?~ GOTO 3
-  IF ~~ THEN REPLY ~Не могли бы вы помочь мне найти некоторые места?~ GOTO 5
-  IF ~~ THEN REPLY ~Я ищу кое-каких людей.~ GOTO 6
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @17
+  IF ~~ THEN REPLY @5 GOTO 3
+  IF ~~ THEN REPLY @7 GOTO 5
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
-  SAY ~Что вы ищете?~
-  IF ~~ THEN REPLY ~Где я могу найти таверну?~ GOTO 10
-  IF ~~ THEN REPLY ~Где я могу найти магазин с магическими или обычными товарами?~ GOTO 11
-  IF ~~ THEN REPLY ~У меня есть еще вопросы.~ GOTO 1
-  IF ~~ THEN REPLY ~Ладно, я пойду.~ GOTO 7
+  SAY @18
+  IF ~~ THEN REPLY @19 GOTO 10
+  IF ~~ THEN REPLY @20 GOTO 11
+  IF ~~ THEN REPLY @21 GOTO 1
+  IF ~~ THEN REPLY @22 GOTO 7
 END
 
 IF ~~ THEN BEGIN 10 // from: 5.1
-  SAY ~"Герб Союза", это единственная таверна в городе, она на юге у причалов. Эль там дрянной, но беседы всегда очень хорошие... Мама не любит, когда я хожу туда.~
-  IF ~~ THEN REPLY ~Где я могу найти магазин с магическими или обычными товарами?~ GOTO 11
-  IF ~~ THEN REPLY ~У меня остались еще вопросы.~ GOTO 1
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @23
+  IF ~~ THEN REPLY @20 GOTO 11
+  IF ~~ THEN REPLY @24 GOTO 1
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 11 // from: 5.2
-  SAY ~"Друг моего папы, Хальял, держит "Треснувшую Наковальню", это в центре города. Я не особо разбираюсь в снаряжении, но у него обязательно есть то, что вы ищете.~
-  IF ~~ THEN REPLY ~Где я могу найти таверну?~ GOTO 10
-  IF ~~ THEN REPLY ~У меня остались еще вопросы.~ GOTO 1
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @25
+  IF ~~ THEN REPLY @19 GOTO 10
+  IF ~~ THEN REPLY @24 GOTO 1
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
-  SAY ~Кого вы ищете?~
-  IF ~~ THEN REPLY ~В Порт-Лласте есть следопыт или друид, с которым можно поговорить?~ GOTO 12
-  IF ~~ THEN REPLY ~Не знаете, где мне найти священника?~ GOTO 13
-  IF ~~ THEN REPLY ~У меня остались еще вопросы.~ GOTO 1
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @26
+  IF ~~ THEN REPLY @27 GOTO 12
+  IF ~~ THEN REPLY @28 GOTO 13
+  IF ~~ THEN REPLY @24 GOTO 1
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 12 // from: 6.1
-  SAY ~Здесь есть Баллард. Он в роще на северо-востоке. Говорит, иногда птицы поют песни обо мне.~
-  IF ~~ THEN REPLY ~Не знаете, где мне найти священника?~ GOTO 13
-  IF ~~ THEN REPLY ~У меня остались еще вопросы.~ GOTO 1
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @29
+  IF ~~ THEN REPLY @28 GOTO 13
+  IF ~~ THEN REPLY @24 GOTO 1
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 13 // from: 6.2
-  SAY ~Конечно. Ньюрик содержит храм на городской площади, и он довольно мил... Мне нравится, что ваша леди Арибет тоже здесь, такая серьезная, грациозная и все такое.~
-  IF ~~ THEN REPLY ~В Порт-Лласте есть следопыт или друид, с которым можно поговорить?~ GOTO 12
-  IF ~~ THEN REPLY ~У меня остались еще вопросы.~ GOTO 1
-  IF ~~ THEN REPLY ~Ладно, тогда я пойду.~ GOTO 7
+  SAY @30
+  IF ~~ THEN REPLY @27 GOTO 12
+  IF ~~ THEN REPLY @24 GOTO 1
+  IF ~~ THEN REPLY @9 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
-  SAY ~Пока.~
+  SAY @31
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Ах, эта эпидемия в Невервинтере. Все больные и напуганные люди перебираются сюда. Мне это не нравится. Люди воняют. Не обижайтесь. Шалдрисса, наверное, единственная, кому нравятся такие, как вы. Она думает, что все вы собираетесь забрать ее отсюда. Если это заставит ее заткнуться, то мне хотелось бы, чтобы это поскорее случилось.~
-  IF ~  RandomNum(2,1)~ THEN REPLY ~Кто такая Шалдрисса?~ GOTO 14
-  IF ~  RandomNum(2,2)~ THEN REPLY ~Кто такая Шалдрисса?~ GOTO 15
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~Хорошо, мне пора уходить.~ GOTO 7
+  SAY @32
+  IF ~  RandomNum(2,1)~ THEN REPLY @33 GOTO 14
+  IF ~  RandomNum(2,2)~ THEN REPLY @33 GOTO 15
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 7
 END
 
 IF ~~ THEN BEGIN 14 // from: 2.1
-  SAY ~Это всего лишь девушка, которая не может быть счастлива там, где она находится. Но когда-нибудь ее желание исполнится. Она проснется с грязью в волосах и в ужасно пахнущей одежде, а потом со слезами вернется в Порт-Лласт.~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~Хорошо, мне пора уходить.~ GOTO 7
+  SAY @34
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 7
 END
 
 IF ~~ THEN BEGIN 15 // from: 2.2
-  SAY ~А с чего бы мне говорить вам? Почему бы вам не найти ее и не спросить? Она где-то здесь. Вот посмотрите, она вам будет "очень-очень рада".~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~Хорошо, мне пора уходить.~ GOTO 7
+  SAY @35
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 7
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)RandomNum(2,1)~ THEN BEGIN 16 // from:
-  SAY ~Хмм. У вас определенно не такой крутой вид, как у других искателей приключений, которые приходили сюда. Чего вы хотите?~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~У вас в городе много искателей приключений?~ GOTO 2
-  IF ~~ THEN REPLY ~Хорошо, мне пора уходить.~ GOTO 7
+  SAY @36
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 7
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)RandomNum(2,2)~ THEN BEGIN 17 // from:
-  SAY ~Но с другой стороны вы смотритесь гораздо круче других искателей приключений, которые приходили сюда. Или, по крайней мере, приятнее. Но мне все равно.~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~У вас в городе много искателей приключений?~ GOTO 2
-  IF ~~ THEN REPLY ~Хорошо, мне пора уходить.~ GOTO 7
+  SAY @37
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 7
 END

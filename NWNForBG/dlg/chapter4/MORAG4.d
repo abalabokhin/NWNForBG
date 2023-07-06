@@ -8,24 +8,24 @@ BEGIN ~MORAG4~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Ты могущественный раб, хоть и <RACE>. Тебе удалость расправиться с Маугримом, пророком, что предрек мое пришествие.~ [MORAG64]
+  SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Тебе удалось победить Арибет, которую я выбрала себе в герои среди рас рабов. Тебе удалось убить многих моих воинов и жрецов.~ [MORAG65]
+  SAY @1
   IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Но теперь перед тобой Мораг, королева Древних, верховная жрица Созидателей! На колени, раб, и я оставлю тебя в живых!~ [MORAG66]
-  IF ~~ THEN REPLY ~Твое время кончилось, Мораг. Древним не суждено восстать!~ GOTO 3
-  IF ~~ THEN REPLY ~Я ни перед кем не преклоняюсь, Мораг!~ GOTO 3
-  IF ~~ THEN REPLY ~Пора тебе умереть, Мораг!~ GOTO 3
+  SAY @2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
-  SAY ~Я разорву твою плоть и буду пировать твоей душой!~ [MORAG68]
+  SAY @6
   IF ~~ THEN DO ~SetGlobal("MoragHostile","MYAREA",1)Enemy()~ EXIT
 END
 

@@ -3,114 +3,114 @@
 BEGIN ~MERCUNIQ~
 
 IF ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Что я могу для вас сделать, гражданин? Один из Веселых Людей Мэра к вашим услугам!~
-  IF ~~ THEN REPLY ~Не могли бы вы ответить на несколько моих вопросов?~ GOTO 1
-  IF ~~ THEN REPLY ~Прочь с дороги, солдафон.~ GOTO 2
-  IF ~~ THEN REPLY ~Все в порядке, я пойду пожалуй.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Думаю, можно.~
-  IF ~~ THEN REPLY ~Ты наемник. Это значит, тебя можно нанять?~ GOTO 4
-  IF ~~ THEN REPLY ~Скажите, где еще вы служили?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 6
-  IF ~~ THEN REPLY ~Я ищу определенных людей.~ GOTO 7
-  IF ~~ THEN REPLY ~Все в порядке, я пойду пожалуй.~ GOTO 3
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Следите за языком, гражданин.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Не лезьте в неприятности, гражданин.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Только не я, монстров мне уже хватило по уши. Мэр Кендрак оплачивает мне квартиру и стол, а я охраняю Порт-Лласт от пьяных моряков и тех чудищ, что слоняются поблизости. Этих развлечений мне вполне достаточно. Можете поговорить с другими наемниками в мэрии. Это здание позади меня.~
-  IF ~~ THEN REPLY ~Скажите, где еще вы служили?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 6
-  IF ~~ THEN REPLY ~Я ищу определенных людей.~ GOTO 7
-  IF ~~ THEN REPLY ~Все в порядке, я пойду пожалуй.~ GOTO 3
+  SAY @11
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Мне довелось побывать в Невервинтере незадолго до появления Воющей и даже поработать на пиратской гичке в Лускане до того, как они вышибли оттуда всех нас, чужеземцев.~
-  IF ~~ THEN REPLY ~Что вы можете рассказать мне о Лускане?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 6
-  IF ~~ THEN REPLY ~Я ищу определенных людей.~ GOTO 7
-  IF ~~ THEN REPLY ~Все в порядке, я пойду пожалуй.~ GOTO 3
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.3
-  SAY ~Ну и что вы ищете?~
-  IF ~~ THEN REPLY ~Мне нужно место, где можно переночевать и надраться.~ GOTO 9
-  IF ~~ THEN REPLY ~Какие у вас тут есть магазины?~ GOTO 10
-  IF ~~ THEN REPLY ~Есть в этом районе какие-нибудь другие города?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~~ THEN REPLY @18 GOTO 1
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.4
-  SAY ~Кого вы ищете?~
-  IF ~~ THEN REPLY ~В Порт-Лласте есть следопыт или друид, с которым можно поговорить?~ GOTO 12
-  IF ~~ THEN REPLY ~Не знаете, где мне найти священника?~ GOTO 13
-  IF ~~ THEN REPLY ~Кто здесь главный?~ GOTO 14
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 12
+  IF ~~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @22 GOTO 14
+  IF ~~ THEN REPLY @18 GOTO 1
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
-  SAY ~Перед моим уходом Высшие Капитаны грызлись не на жизнь, а на смерть, оспаривая расположение Братства Таинств. Сомневаюсь, что сейчас что-то изменилось.~
-  IF ~~ THEN REPLY ~Мне нужно сориентироваться.~ GOTO 6
-  IF ~~ THEN REPLY ~Я ищу определенных людей.~ GOTO 7
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @23
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @8 GOTO 7
+  IF ~~ THEN REPLY @24 GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.1
-  SAY ~Некоторые из нас постоянно квартируют в "Гербе Союза" - в центре города. Эль там плоховат, но простыни чистые.~
-  IF ~~ THEN REPLY ~Какие у вас тут есть магазины?~ GOTO 10
-  IF ~~ THEN REPLY ~Есть в этом районе какие-нибудь другие города?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @25
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~~ THEN REPLY @18 GOTO 1
+  IF ~~ THEN REPLY @24 GOTO 3
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.2
-  SAY ~Всякие простые вещи можно попробовать найти в "Треснувшей Наковальне", это на восток от казарм, по дороге. Там есть все необходимые предметы. Мне говорили, что Хальял прячет под прилавком и кое-что особенное. Еще в шатре, рядом с мэрией, какой-то заезжий алхимик продает разные зелья.~
-  IF ~~ THEN REPLY ~Мне нужно место, где можно переночевать и надраться.~ GOTO 9
-  IF ~~ THEN REPLY ~Есть в этом районе какие-нибудь другие города?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @26
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @17 GOTO 11
+  IF ~~ THEN REPLY @18 GOTO 1
+  IF ~~ THEN REPLY @24 GOTO 3
 END
 
 IF ~~ THEN BEGIN 11 // from: 6.3
-  SAY ~На юге находится Чарвуд. мне никогда не приходилось бывать там. Там живет во всех отношениях тихий народ, который никогда не отходит далеко от дома.~
-  IF ~~ THEN REPLY ~Мне нужно место, где можно переночевать и надраться.~ GOTO 9
-  IF ~~ THEN REPLY ~Какие у вас тут есть магазины?~ GOTO 10
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @27
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @18 GOTO 1
+  IF ~~ THEN REPLY @24 GOTO 3
 END
 
 IF ~~ THEN BEGIN 12 // from: 7.1
-  SAY ~Наведайтесь в рощу за городскими стенами. это на северо-востоке города и поищите там парня по имени Баллард.~
-  IF ~~ THEN REPLY ~Не знаете, где мне найти священника?~ GOTO 13
-  IF ~~ THEN REPLY ~Кто здесь главный?~ GOTO 14
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @28
+  IF ~~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @22 GOTO 14
+  IF ~~ THEN REPLY @18 GOTO 1
+  IF ~~ THEN REPLY @24 GOTO 3
 END
 
 IF ~~ THEN BEGIN 13 // from: 7.22
-  SAY ~Храм - в центре города, вон там, рядом с причалом. Трудно его не заметить.~
-  IF ~~ THEN REPLY ~В Порт-Лласте есть следопыт или друид, с которым можно поговорить?~ GOTO 12
-  IF ~~ THEN REPLY ~Кто здесь главный?~ GOTO 14
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @29
+  IF ~~ THEN REPLY @20 GOTO 12
+  IF ~~ THEN REPLY @22 GOTO 14
+  IF ~~ THEN REPLY @18 GOTO 1
+  IF ~~ THEN REPLY @24 GOTO 3
 END
 
 IF ~~ THEN BEGIN 14 // from: 9.2
-  SAY ~Мэр Кендрак конечно, он меня и нанял. Мэра всегда можно найти в мэрии на западе города. Тьфу... Да что я объясняю, мы с тобой около нее и стоим. ~
-  IF ~~ THEN REPLY ~В Порт-Лласте есть следопыт или друид, с которым можно поговорить?~ GOTO 12
-  IF ~~ THEN REPLY ~Не знаете, где мне найти священника?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне нужно спросит вас о другом..~ GOTO 1
-  IF ~~ THEN REPLY ~Спасибо, это все, что я хотел узнать.~ ~Спасибо, это все, что я хотела узнать.~ GOTO 3
+  SAY @30
+  IF ~~ THEN REPLY @20 GOTO 12
+  IF ~~ THEN REPLY @21 GOTO 13
+  IF ~~ THEN REPLY @18 GOTO 1
+  IF ~~ THEN REPLY @24 GOTO 3
 END

@@ -4,7 +4,7 @@ BEGIN ~CLEANUP~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~ѕусть огни гор€т по€рче, € всегда говорю.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

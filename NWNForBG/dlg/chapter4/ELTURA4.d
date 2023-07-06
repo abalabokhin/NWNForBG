@@ -4,34 +4,34 @@ BEGIN ~ELTURA4~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Вам не повезло оказаться в Башне Плаща в такое жуткое время, друг мой. Остальные члены моей гильдии покинули это место, чтобы помочь своими заклинаниями в боях. С тех пор о них ничего не было слышно.~ [ELTUR061]
-  IF ~~ THEN REPLY ~Мне нужны припасы. Ты все еще их продаешь?~ GOTO 1
-  IF ~~ THEN REPLY ~Ты не хочешь присоединиться к остальным?~ GOTO 2
-  IF ~~ THEN REPLY ~Я хочу воспользоваться вашей лобораторией~ GOTO 4
-  IF ~~ THEN REPLY ~Мне пора идти.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 4
+  IF ~~ THEN REPLY @4 GOTO 3
 
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я заберу все золото, что у тебя есть. Я использую особое заклинание для защиты замка, и каждая унция золота, которую я могу вложить в него, сделает его сильнее.~
+  SAY @5
   IF ~~ THEN DO ~  StartStore("ELTURA2",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~У меня было странное чувство, что здесь может появиться кто-нибудь, подобный тебе. Похоже, предчувствие меня не обмануло.~
-  IF ~~ THEN REPLY ~Мне нужны припасы. Ты все еще их продаешь?~ GOTO 1
-  IF ~~ THEN REPLY ~Я хочу воспользоваться вашей лобораторией~ GOTO 4
-  IF ~~ THEN REPLY ~Мне пора идти.~ GOTO 3
+  SAY @6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 4
+  IF ~~ THEN REPLY @4 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.4
-  SAY ~Передай этому Братству Таинств, что этот замок никогда не попадет в их грязные лапы. По крайней мере, пока от меня что-нибудь зависит...~
+  SAY @7
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.3
-  SAY ~Стол для магических эксперементов находится на верхнем этаже башни. Однако, если у вас нет книг с рецептами, вы вряд ли сможете что-нибудь сделать.~
-  IF ~~ THEN REPLY ~Мне нужны припасы. Ты все еще их продаешь?~ GOTO 1
-  IF ~~ THEN REPLY ~Мне пора идти.~ GOTO 3
+  SAY @8
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @4 GOTO 3
 END
 

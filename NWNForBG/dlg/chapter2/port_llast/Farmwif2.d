@@ -4,129 +4,129 @@ BEGIN ~FARMWIF2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Ну что за <DAYNIGHT>, а, сэр? Приветствую. Вы, похоже, многое повидали.~ ~Ну что за <DAYNIGHT>, а, миледи? Приветствую. Вы, похоже, многое повидали.~
-  IF ~~ THEN REPLY ~Мне пришлось многое повидать во время своих странствий.~ GOTO 1
-  IF ~~ THEN REPLY ~Как сборщику податей, мне приходится навещать много людей.~ GOTO 2
-  IF ~~ THEN REPLY ~Почему ты так говоришь?~ GOTO 3
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Ага, вот и я вижу много странных вещей, которые происходят в этом городе.~
-  IF ~~ THEN REPLY ~Почему ты так говоришь?~ GOTO 3
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @6
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~А, хмм... сборщик податей. Ну, прощай, мне пора к детям.~
-  IF ~~ THEN REPLY ~Я служу Леди Арибет, и собираю средства для того, чтобы помочь обнаружить культ, который начал эпидемию в Невервинтере.~ GOTO 5
-  IF ~~ THEN REPLY ~Только пособник культа, на который объявлена всенародная охота, откажется пожертвовать деньги на его обнаружение.~ GOTO 6
-  IF ~~ THEN REPLY ~Прости, не обращай внимания. Я хочу задать еще несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @10 GOTO 4
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.1
-  SAY ~Мда, на такое дело я могу пожертвовать 50 золотых. Придется Салли еще год натирать ноги в рваных башмаках, а Билли обойдется без подарка на день рождения.~
+  SAY @11
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.2
-  SAY ~Нет! Они меня бросят в тюрьму или казнят, а мои дети тогда точно умрут с голоду. Вот, возьми эти 50 золотых. Бедная малышка Салли, теперь ей еще год придется натирать ноги в этих рваных башмаках, а Билли останется без подарка на день рождения.~
+  SAY @12
   IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1.6.2
-  SAY ~Мне нужно вернуться к детям. Теперь у меня нет денег на лекарство для маленькой Мэри, придется надеяться, что от моего нежного ухода она сама выздоровеет.~
+  SAY @13
   IF ~~ THEN DO ~GiveGoldForce(50)
 SetGlobal("Fraud","LOCALS",1)
 ReputationInc(-1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Ой, мне не хотелось вас обижать. Мне просто показалось, что у вас вид путешественника. Вы все знаете про дальние страны, как я знаю про наш городок.~
-  IF ~~ THEN REPLY ~Как сборщику податей, мне приходится навещать много людей.~ GOTO 2
-  IF ~~ THEN REPLY ~У меня есть к тебе несколько вопросов.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @14
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Я с радостью окажу вам любую поддержку. Некоторые люди в городе считают, что их это не касается, но я верю в политику руководства.~
-  IF ~~ THEN REPLY ~Ничего необычного не слышно в последнее время?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 9
-  IF ~~ THEN REPLY ~Я ищу работу.~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 8
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.1
-  SAY ~Вот именно. Тут в городской роще прячется очень необычный следопыт. Он рассказывает страшные вещи про животных, которые бросаются на людей. Это дурной знак для всех нас.~
-  IF ~~ THEN REPLY ~Что-нибудь еще?~ GOTO 11
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 9
-  IF ~~ THEN REPLY ~Я ищу работу.~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 11
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 8.1
-  SAY ~Ходят слухи о том, что тут в округе бегают вервольфы и кусают людей. Это еще один знак того, что мир сошел с ума. Я тут говорила своей приятельнице пару дней назад, что мир точно стоит на пути к разрушению. Это все странности, что мне приходят на ум. Я могу тебе еще чем-то помочь?~
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 9
-  IF ~~ THEN REPLY ~Я ищу работу.~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @21
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.2
-  SAY ~О, я знаю город, как свои пять пальцев. Прелестный городок, не правда ли? Жаль, что все мы стоим на пути к разрушению.~
-  IF ~~ THEN REPLY ~Где я могу купить экипировку?~ GOTO 12
-  IF ~~ THEN REPLY ~Где я могу найти целителя?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 4
-  IF ~~ THEN REPLY ~Вот как. Ну, пока.~ EXIT
+  SAY @22
+  IF ~~ THEN REPLY @23 GOTO 12
+  IF ~~ THEN REPLY @24 GOTO 13
+  IF ~~ THEN REPLY @25 GOTO 4
+  IF ~~ THEN REPLY @26 EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.1
-  SAY ~В "Треснувшей Наковальне" есть любое снаряжение, чего только не пожелает душа искателя приключений. Надеюсь, что кто-то из моих сыновей устроится туда работать, как только они научатся считать. Еще что-нибудь?~
-  IF ~~ THEN REPLY ~Где я могу найти целителя?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 4
-  IF ~~ THEN REPLY ~Вот как. Ну, пока.~ EXIT
+  SAY @27
+  IF ~~ THEN REPLY @24 GOTO 13
+  IF ~~ THEN REPLY @25 GOTO 4
+  IF ~~ THEN REPLY @26 EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 9.2
-  SAY ~Тут есть храм Тира. Священник - добрый парень. Он многим тут помогает. Хотелось бы только, чтобы он смог увести нас с этого пути к разрушению. Еще что-нибудь?~
-  IF ~~ THEN REPLY ~Где я могу купить экипировку?~ GOTO 12
-  IF ~~ THEN REPLY ~Мне бы хотелось задать другой вопрос.~ GOTO 4
-  IF ~~ THEN REPLY ~Вот как. Ну, пока.~ EXIT
+  SAY @28
+  IF ~~ THEN REPLY @23 GOTO 12
+  IF ~~ THEN REPLY @25 GOTO 4
+  IF ~~ THEN REPLY @26 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 4.3
-  SAY ~Вы должны пойти и поговорить в мэром Кендраком. Он был чем-то обеспокоен, но я не знаю чем. Он изо всех сил старается поддерживать порядок в Порт-Лласте. Чем вам еще помочь?~
-  IF ~~ THEN REPLY ~Ничего необычного не слышно в последнее время?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 9
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @29
+  IF ~~ THEN REPLY @16 GOTO 8
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Fraud","LOCALS",1)~ THEN BEGIN 14 // from:
-  SAY ~У меня нет времени разговаривать со сборщиком податей. Мне слишком много голодных ртов надо накормить, недосуг просто стоять тут и точить лясы.~
+  SAY @30
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Fraud","LOCALS",0)~ THEN BEGIN 15 // from:
-  SAY ~Опять вы?. Что-то хотите спросить?.~
-  IF ~~ THEN REPLY ~Ничего необычного не слышно в последнее время?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне нужны указания.~ GOTO 9
-  IF ~~ THEN REPLY ~Я ищу работу.~ GOTO 10
-  IF ~~ THEN REPLY ~До свидания.~ EXIT
+  SAY @31
+  IF ~~ THEN REPLY @16 GOTO 8
+  IF ~~ THEN REPLY @17 GOTO 9
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @5 EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Impossible","GLOBAL",1)~ THEN BEGIN 16 // from:
-  SAY ~Я так понимаю, что вы из героев, которые очистили от монстров пещеры к востоку от города. Так держать!~
+  SAY @32
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Impossible","GLOBAL",1)~ THEN BEGIN 17 // from:
-  SAY ~Это вы, должно быть, те самые герои, который устранили опасность в лесу Невервинтер. Мы все так гордимся вами.~
+  SAY @33
   IF ~~ THEN EXIT
 END

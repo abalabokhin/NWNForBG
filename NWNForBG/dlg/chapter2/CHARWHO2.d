@@ -3,62 +3,62 @@
 BEGIN ~CHARWHO2~
 
 IF ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Я вас знаю?~
-  IF ~  NumTimesTalkedTo(0)~ THEN REPLY ~Мне так не кажется.~ GOTO 1
-  IF ~  !NumTimesTalkedTo(0)~ THEN REPLY ~Мы уже разговаривали раньше.~ GOTO 2
-  IF ~~ THEN REPLY ~Может быть, вы говорили c кем-то другим?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @0
+  IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 1
+  IF ~  !NumTimesTalkedTo(0)~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~О. Я уже не знаю. Мой рассудок... словно чистый лист в последние дни... или годы?~
+  SAY @5
   IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Правда? Я уже не знаю. Может с вами, может ни с кем, а может с сотней. Я не знаю.~
+  SAY @6
   IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Я уже не знаю. Может, вы десятый человек, с которым я разговариваю, а может первый. Я просто не знаю.~
+  SAY @7
   IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Если б я был на вашем месте, то ушел бы. Я хочу уйти, но не могу.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1 2 3
-  SAY ~Я жду, что что-то случится, но даже если оно случается, оно никогда не продолжается. Я жду и присматриваю за замком. Ничего.~
-  IF ~~ THEN REPLY ~Чего вы здесь ждете?~ GOTO 6
-  IF ~~ THEN REPLY ~Что такое с этой деревней? Вы все очень странные.~ GOTO 7
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 4
+  SAY @9
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 6 // from: 5.1
-  SAY ~Конец. Я помню начало, но нам никогда не добраться до конца, и я думаю, мы все это заслужили. Кроме Квинта.  Я его не виню. Он единственный боролся, и у него одного не было на это причин. Странно, правда?~
-  IF ~~ THEN REPLY ~Кто такой Квинт?~ GOTO 8
-  IF ~~ THEN REPLY ~Что случилось со всеми вами?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне немедленно нужно попасть в замок.~ GOTO 9
-  IF ~~ THEN REPLY ~Я ухожу~ GOTO 4
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 8
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 4
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.2
-  SAY ~Да, верно, разве нет? Мы видели, как это начиналось, но оно не закончилось, и мы получили по заслугам. Все, кроме Квинта.  Я его не виню. Он единственный боролся, и у него одного не было на это причин. Странно, правда?~
-  IF ~~ THEN REPLY ~Кто такой Квинт?~ GOTO 8
-  IF ~~ THEN REPLY ~Что случилось со всеми вами?~ GOTO 8
-  IF ~~ THEN REPLY ~Мне немедленно нужно попасть в замок.~ GOTO 9
-  IF ~~ THEN REPLY ~Я ухожу~ GOTO 4
+  SAY @17
+  IF ~~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 8
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @16 GOTO 4
 END
 
 IF ~~ THEN BEGIN 8 // from: 6.1 7.1
-  SAY ~О, вы все узнаете там. Там это случилось. Я не могу сказать. Я знаю, это безумие в моей голове. Я знаю, уже ничего не осталось... ни от кого из нас... Замок, вот где все это случилось. Там это было. Смерть пришла ко всем и решила остаться...~
+  SAY @18
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.2 7.2
-  SAY ~Да, это единственный путь. Я хочу уйти, но это не имеет смысла. Я знаю, это я безумен. Я знаю, уже ничего не осталось... ни от кого из нас. Замок, вот где все это случилось. Там это было. Смерть пришла ко всем и решила остаться...~
+  SAY @19
   IF ~~ THEN EXIT
 END

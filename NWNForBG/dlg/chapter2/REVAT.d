@@ -4,114 +4,112 @@ BEGIN ~REVAT~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Мамочка? Ой, ты не мамочка. Ой, какой большой беда.~
-  IF ~~ THEN REPLY ~Звучит грустно. Как тебя зовут?~ GOTO 1
-  IF ~~ THEN REPLY ~Ну, ну, приятель. Все будет хорошо. Могу я задать тебе пару вопросов?~ GOTO 2
-  IF ~~ THEN REPLY ~Тебе не кажется, что ты уже несколько великоват, чтобы так плакать? Как тебя зовут?~ GOTO 3
-  IF ~~ THEN REPLY ~Э-э, не переживай, может, я смогу помочь. Почему бы тебе не ответить на пару вопросов?~ GOTO 4
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Моя звать Реват. Я рад твоя видеть, жалко, что день такой плохой.~
-  IF ~~ THEN REPLY ~Что плохого случилось сегодня?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Моя стараться, но моя слишком плохо, чтоб говорить. Плохой день, очень плохой у меня.~
-  IF ~~ THEN REPLY ~Почему бы тебе первому не представиться?~ GOTO 1
-  IF ~~ THEN REPLY ~Что плохого случилось сегодня?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @8
+  IF ~~ THEN REPLY @9 GOTO 1
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Твоя бы тоже плакал, когда такой плохой день. Моя звать Реват. Я рад твоя видеть, жалко, что день такой плохой.~
-  IF ~~ THEN REPLY ~Что плохого случилось сегодня?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @10
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
-  SAY ~Я стараться, но у моя очень плохой день. Я плохо настроений, чтоб говорить.~
-  IF ~~ THEN REPLY ~Как тебя зовут?~ GOTO 1
-  IF ~~ THEN REPLY ~Что плохого случилось сегодня?~ GOTO 5
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 6
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 1
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.1
-  SAY ~Тролли украсть моя мамочка. Моя надо ее назад, или я в большой беда. Мамочка есть хороший акохеролог, знаешь, это такой копатель старых штук. Я есть ее помощник. Моя защищать ее. Только моя плохо делать эта работа.~
-  IF ~~ THEN REPLY ~Почему? Что случилось не так?~ GOTO 7
-  IF ~~ THEN REPLY ~И почему это меня не удивляет?~ GOTO 8
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 7
+  IF ~~ THEN REPLY @15 GOTO 8
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.1
-  SAY ~Ага, поки-поки. Все уходить поки-поки.~
+  SAY @16
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
-  SAY ~Я говорить с другой охранник, когда смотреть назад, мамочка уже пропадай. Моя тогда не волноваться. Она, бывает, уходить, потом приходить назад. Потом мы слышать звуки, как гавкать бешеный собаки. Мы повернуться, а там стояй тролли и огры.~
-  IF ~~ THEN REPLY ~Тролли такие гадкие.~ GOTO 9
-  IF ~~ THEN REPLY ~И как великий воин, ты храбро удрал.~ GOTO 10
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 9
+  IF ~~ THEN REPLY @19 GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.2
-  SAY ~Я думать, моя это заслужить. Но все равно некрасиво. Я говорить с другой охранник, когда смотреть назад, мамочка уже пропадай. Моя тогда не волноваться. Она, бывает, уходить, потом приходить назад. Потом мы слышать звуки, как гавкать бешеный собаки. Мы повернуться, а там стояй тролли и огры.~
-  IF ~~ THEN REPLY ~Тролли такие гадкие.~ GOTO 9
-  IF ~~ THEN REPLY ~И как великий воин, ты храбро удрал.~ GOTO 10
+  SAY @20
+  IF ~~ THEN REPLY @18 GOTO 9
+  IF ~~ THEN REPLY @19 GOTO 10
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
-  SAY ~Да. Гадкие тролли. Мерзкие огры. Тогда мы встай и начать драться. Много охраны убили чудища, но мы драться храбро. Потом тролль стукнуть меня по голова и порезать. У моя кровь в глазах, больше ничего не видеть. Тогда Джакс хватать моя рука и тащить из пещеры. Моя повезло выжить. Больше никто тут помочь моя не может, а я страшно ходить назад в темный пещера. Моя надо ждать тут, может, она приходить.~
-  IF ~~ THEN REPLY ~А ты не думаешь, что твою мамочку могли съесть тролли?~ GOTO 11
-  IF ~~ THEN REPLY ~А где они могут держать твою маму?~ GOTO 12
-  IF ~~ THEN REPLY ~Сколько ты заплатишь за возвращение твоей мамочки?~ GOTO 13
-  IF ~~ THEN REPLY ~Не бойся, я верну тебе твою маму.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне бы хотелось помочь, но сейчас у меня много дел.~ GOTO 15
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 11
+  IF ~~ THEN REPLY @23 GOTO 12
+  IF ~~ THEN REPLY @24 GOTO 13
+  IF ~~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
-  SAY ~Не так быть! Твоя слушай история. Моя сказать про тролли.~
+  SAY @27
   IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.1
-  SAY ~Нет! Не говори, что тролли сожрай мамочка! Мамочка нельзя есть, или моя сирота! Ты находить мамочка.~
-  IF ~~ THEN REPLY ~А где они могут держать твою маму?~ GOTO 12
-  IF ~~ THEN REPLY ~Сколько ты заплатишь за возвращение твоей мамочки?~ GOTO 13
-  IF ~~ THEN REPLY ~Не бойся, я верну тебе твою маму.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне бы хотелось помочь, но сейчас у меня много дел.~ GOTO 15
+  SAY @28
+  IF ~~ THEN REPLY @23 GOTO 12
+  IF ~~ THEN REPLY @24 GOTO 13
+  IF ~~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
 END
 
 IF ~~ THEN BEGIN 12 // from: 9.2
-  SAY ~Она там в пещерах. То место, куда ты ходить помогай Джакс. Моя слышать, твой разговор.~
-  IF ~~ THEN REPLY ~А ты не думаешь, что твою мамочку могли съесть тролли?~ GOTO 11
-  IF ~~ THEN REPLY ~Сколько ты заплатишь за возвращение твоей мамочки?~ GOTO 13
-  IF ~~ THEN REPLY ~Не бойся, я верну тебе твою маму.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне бы хотелось помочь, но сейчас у меня много дел.~ GOTO 15
+  SAY @29
+  IF ~~ THEN REPLY @22 GOTO 11
+  IF ~~ THEN REPLY @24 GOTO 13
+  IF ~~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
 END
 
 IF ~~ THEN BEGIN 13 // from: 9.3
-  SAY ~Я плати 740 золотых. У моя больше нету. Это все, что дать мамочка.~
-  IF ~~ THEN REPLY ~А ты не думаешь, что твою мамочку могли съесть тролли?~ GOTO 11
-  IF ~~ THEN REPLY ~А где они могут держать твою маму?~ GOTO 12
-  IF ~~ THEN REPLY ~Не бойся, я верну тебе твою маму.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне бы хотелось помочь, но сейчас у меня много дел.~ GOTO 15
+  SAY @30
+  IF ~~ THEN REPLY @22 GOTO 11
+  IF ~~ THEN REPLY @23 GOTO 12
+  IF ~~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
 END
 
 IF ~~ THEN BEGIN 14 // from: 9.4
-  SAY ~О-о, твоя добрый <MALEFEMALE>. Твой найти моя мамочка. Моя сказать, что знать. Они держать мамочка в пещера, тут рядом. Она такая хорошая и милая, только если не хватать уши, если не орать, когда тарелка разбить, или молоко пролить, или горошек не есть, или скакать, или... но моя нельзя так про нее говорить.~
+  SAY @31
   IF ~~ THEN GOTO 16
 END
 
 IF ~~ THEN BEGIN 16 // from: 14.1
-  SAY ~Вот... я давай тебе колечко, показать мамочка. Это колечко папочки, а папочка умирать. Я его не знать, но моя мамочка говорить, он быть милый, спокойный человек. Моя друг говорить, его запилить до смерти, но я это не понимать. Иди быстрей, помогать спастись мамочка.~
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",1)GiveItemCreate("RingReva",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL ~Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Чтобы освободиться от магических пут, которые удерживают ее, ей потребуется кольцо, которое находится у ее слабоумного сына, Ревата.~ EXIT
+  SAY @32
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",1)GiveItemCreate("RingReva",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @33 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 9.5
-  SAY ~О нет! Моя никогда больше не видеть мамочка! Я жаль, что твоя не помогать. Моя совсем другой теперь без мамочка. Поки.~
+  SAY @34
   IF ~~ THEN DO ~SetGlobal("KnowRevat","LOCALS",1)~ EXIT
 END
 
@@ -119,96 +117,80 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("RevatQuest","GLOBAL",0)~ THEN BEGIN 17 // from:
-  SAY ~О, твоя вернуться. Чего ты хотеть?~
-  IF ~~ THEN REPLY ~Можешь ты еще раз рассказать мне, что случилось?~ GOTO 5
-  IF ~  Global("KnowRevat","LOCALS",1)~ THEN REPLY ~Я думаю, я спасу твою мать.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне ничего ненужно, прощай.~ EXIT
+  SAY @35
+  IF ~~ THEN REPLY @36 GOTO 5
+  IF ~  Global("KnowRevat","LOCALS",1)~ THEN REPLY @37 GOTO 14
+  IF ~~ THEN REPLY @38 EXIT
 END
 
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("RevatQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
-  SAY ~Эй, твоя уже находить мамочка? Я в такой большой беда. Моя надо мамочка назад целый.~
-  IF ~~ THEN REPLY ~Скажи мне еще раз, где я могу найти ее?~ GOTO 19
-  IF ~~ THEN REPLY ~Я продолжаю ее искать.~ GOTO 20
-  IF ~  OR(2)Dead("Janis")Global("DeadJanis","GLOBAL",2)~ THEN REPLY ~Мне жаль, но твоя мамочка погибла, троллей было слишком много.~ GOTO 21
+  SAY @39
+  IF ~~ THEN REPLY @40 GOTO 19
+  IF ~~ THEN REPLY @41 GOTO 20
+  IF ~  OR(2)Dead("Janis")Global("DeadJanis","GLOBAL",2)~ THEN REPLY @42 GOTO 21
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
-  SAY ~Она в пещера с тролли и огры тут рядом. Моя больше не знать. Пожалуйста, быстрей найди мамочка. Моя много скучать по ней.~
+  SAY @43
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.2
-  SAY ~Пожалуйста, быстрей найди мамочка. Моя много скучать по ней.~
+  SAY @44
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 18.3
-  SAY ~Не-е-е-е-е-е-е-е-ет! Мамочка не умереть! Мамочка не умереть! Твоя лгай! Моя пойти найти мамочка. Она не умереть.~
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",6)EraseJournalEntry(%Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Чтобы освободиться от магических пут, которые удерживают ее, ей потребуется кольцо, которое находится у ее слабоумного сына, Ревата.%)EscapeArea() ~ SOLVED_JOURNAL ~Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Хоть ей и удалось освободиться от чар, которые удерживали ее, при попытке бежать женщина погибла. Ее сын был поставлен в известность.~ EXIT
+  SAY @45
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",6)EraseJournalEntry(@33)EscapeArea() ~ SOLVED_JOURNAL @46 EXIT
 END
 
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("RevatQuest","GLOBAL",2)~ THEN BEGIN 22 // from:
-  SAY ~Ура! Моя так рад твой находить мамочка! Она выдрать моя ухо, когда приходить; моя так ее любить. Вот. Мамочка сказать отдать тебе 740 золотых, как моя обещай.~
-  IF ~~ THEN REPLY ~Ты оценишь свою мамочку всего лишь в 740 монет?~ GOTO 23
-  IF ~~ THEN REPLY ~Не хотелось бы называть тебя тупым, но, мы договаривались на большую сумму.~ GOTO 24
-  IF ~~ THEN REPLY ~Спасибо. Этого вполне хватит.~ GOTO 25
-  IF ~~ THEN REPLY ~Нет, мне не нужно вознаграждение. Мне было приятно сделать это.~ GOTO 26
+  SAY @47
+  IF ~~ THEN REPLY @48 GOTO 23
+  IF ~~ THEN REPLY @49 GOTO 24
+  IF ~~ THEN REPLY @50 GOTO 25
+  IF ~~ THEN REPLY @51 GOTO 26
 END
 
 IF ~~ THEN BEGIN 23 // from: 22.1
-  SAY ~Эээ... точно. Мамочка стоить 740 монет, ведь это все, что у меня есть.~
-  IF ~~ THEN REPLY ~Не хотелось бы называть тебя тупым, но, мы договаривались на большую сумму.~ GOTO 24
-  IF ~~ THEN REPLY ~Спасибо. Этого вполне хватит.~ GOTO 25
-  IF ~~ THEN REPLY ~Нет, мне не нужно вознаграждение. Мне было приятно сделать это.~ GOTO 26
+  SAY @52
+  IF ~~ THEN REPLY @49 GOTO 24
+  IF ~~ THEN REPLY @50 GOTO 25
+  IF ~~ THEN REPLY @51 GOTO 26
 END
 
 IF ~~ THEN BEGIN 24 // from: 22.2
-  SAY ~Ой-ой, моя много забывать. Извини. Вот 990 монет. Больше у моя ничего нет, вообще ничего. Теперь моя не могу купить зверушка.~
+  SAY @53
   IF ~~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 27 // from: 24.1
-  SAY ~Ладно, мамочка сказать моя теперь надо уходить. Поки-поки.~
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(990)EraseJournalEntry(%Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Чтобы освободиться от магических пут, которые удерживают ее, ей потребуется кольцо, которое находится у ее слабоумного сына, Ревата.%)ReputationInc(-1)~ SOLVED_JOURNAL ~Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Она освободилась от магических чар, которые удерживали ее, и наконец смогла вернуться к своему сыну.~ EXIT
+  SAY @54
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(990)EraseJournalEntry(@33)ReputationInc(-1)~ SOLVED_JOURNAL @55 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 22.3
-  SAY ~Спасибо твоя большое. Моя рад мамочка вернуться. Привет, мамочка, я иду!~
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(740)EraseJournalEntry(%Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Чтобы освободиться от магических пут, которые удерживают ее, ей потребуется кольцо, которое находится у ее слабоумного сына, Ревата.%)~ SOLVED_JOURNAL ~Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Она освободилась от магических чар, которые удерживали ее, и наконец смогла вернуться к своему сыну.~ EXIT
+  SAY @56
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(740)EraseJournalEntry(@33)~ SOLVED_JOURNAL @55 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 22.4
-  SAY ~О, твоя лучший друг в целом свете, <SIRMAAM>. Я приглашай заходить к нам, когда будешь в Уотердип. Мамочка говорить надо уходить. Поки-поки.~
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)EraseJournalEntry(%Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Чтобы освободиться от магических пут, которые удерживают ее, ей потребуется кольцо, которое находится у ее слабоумного сына, Ревата.%)ReputationInc(1)~ SOLVED_JOURNAL ~Восточная дорога: Мать слабоумного
-
-Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Она освободилась от магических чар, которые удерживали ее, и наконец смогла вернуться к своему сыну.~ EXIT
+  SAY @57
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)EraseJournalEntry(@33)ReputationInc(1)~ SOLVED_JOURNAL @55 EXIT
 END
 
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("LentonQuest","GLOBAL",3)~ THEN BEGIN 28 // from:
-  SAY ~Мамочка сказать, нам надо идти. Поки-поки.~
+  SAY @58
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
@@ -216,6 +198,6 @@ END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("LentonQuest","GLOBAL",3)~ THEN BEGIN 29 // from:
-  SAY ~Моя пойти найти мамочка. Она не умереть.~
+  SAY @59
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END

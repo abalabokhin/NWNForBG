@@ -6,512 +6,490 @@ BEGIN ~NWDRACO4~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("Draco4Job","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Итак, вы наконец пришли. Полагаю, мои слуги-великаны мертвы. Это не имеет значения. Они мне не нужны. Я найду других слуг. Возможно, даже вы сможете услужить мне, <CHARNAME>.~ [DRACO453]
+  SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Подойдите ближе, я не причиню вам вреда. Последние дни веков моей жизни текут медленно, и я с удовольствием поговорю с вами, чтобы избавиться от этой монотонности.~ [DRACO455]
-  IF ~~ THEN REPLY ~Откуда ты знаешь мое имя?~ GOTO 2
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 3
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 4
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Я стар, как само время, я повелеваю извечной мудростью времен. Ваше имя и ваши деяния известны мне, <CHARNAME>, и я буду помнить о них еще долго после того, как история сотрет ваше имя со своих страниц.~
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 3
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 4
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @8
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.2
-  SAY ~Я Клаут, Червь Севера, старейший из драконов, величайшее из смертных существ, обитавших в королевствах. Моя сила и мои познания не имеют пределов!~
-  IF ~~ THEN REPLY ~Откуда ты знаешь мое имя?~ GOTO 2
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @9
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
-  SAY ~Я Клаут, древний червь. Мне известно многое, что сокрыто. Я даже знаю, что вы ищете Слова Власти, оставшиеся от Расы Созидателей, чтобы спасти город, который вы называете Невервинтер. Задавайте свой вопрос, <CHARNAME>, и я отвечу, если это понравится мне.~
-  IF ~~ THEN REPLY ~Расскажите мне о Словах Власти.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 10
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 11
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же пещерах?~ GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 9
+  IF ~~ THEN REPLY @12 GOTO 10
+  IF ~~ THEN REPLY @13 GOTO 11
+  IF ~~ THEN REPLY @14 GOTO 12
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.4
-  SAY ~А, у вас одна из моих сфер сущности. В ритуальных комнатах под селением огненных великанов мои слуги используют эти сферы для поимки душ зрелых драконов. Но, поскольку вы здесь, я подозреваю, что мои слуги убиты. Ничего страшного, я найду других слуг. Многие готовы оказывать мне услуги, чтобы получить часть золота, которым я владею.~
-  IF ~~ THEN REPLY ~Может быть я смогу сделать это для вас.~ GOTO 20
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 20
+  IF ~~ THEN REPLY @17 GOTO 13
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.5
-  SAY ~Ах, сфера сущности, в которой уже находится душа зрелого дракона, которую я могу поглотить. Дайте ее мне, <CHARNAME>, и я вознагражу вас целой горой золота из своих обильных запасов.~
-  IF ~~ THEN REPLY ~Вот, возьмите ваш шар.~ GOTO 14
-  IF ~~ THEN REPLY ~А что если я предпочту уничтожить шар?~ GOTO 21
-  IF ~~ THEN REPLY ~Мне бы хотелось получить что-то более существенное. Может быть, мощный магический предмет?~ GOTO 15
+  SAY @18
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @20 GOTO 21
+  IF ~~ THEN REPLY @21 GOTO 15
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.6
-  SAY ~Тогда ваша жизнь закончится, <CHARNAME>. Я видел, что ждет вас после этого мира: нескончаемое черное пустое пространство. Вы готовы принять это послежизненое ничто? Говорите со мной, если осмелитесь, или бегите, как бессмысленный комок пыли, под мощным порывом славы моего существования. Но не нападайте на меня, если только вы не готовы к смерти.~
-  IF ~~ THEN REPLY ~Заткнись, старый мешок с дерьмом! Ты просто драконье мясо!~ GOTO 16
-  IF ~~ THEN REPLY ~Я не боюсь смерти, Клаут. А ты?~ GOTO 16
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @22
+  IF ~~ THEN REPLY @23 GOTO 16
+  IF ~~ THEN REPLY @24 GOTO 16
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 8 // from: 1.7
-  SAY ~Ваши приходы и уходы не имеют для меня никакого значения. Вы незначительны, как и все остальное, помимо моего собственного существования. Уходите, или оставайтесь, мне все равно. Ибо я, Клаут, вечен.~
+  SAY @25
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.1
-  SAY ~Эти древние Слова были придуманы расой Созидателей, когда я был еще молод. Сила Слов велика. Некогда я даже думал, что их магия способна помочь мне, хотя теперь я знаю, что это не так. ~
+  SAY @26
   IF ~~ THEN GOTO 17
 END
 
 IF ~~ THEN BEGIN 10 // from: 4.2
-  SAY ~Эта земля не всегда покрывалась льдом и снегом. Некогда здесь были буйные джунгли, которыми правила раса безжалостных ящеров, которые сделали всех низших существ -- людей, гномов и эльфов -- своими рабами. Но земля менялась, мир становился холоднее, Древние вымерли и стали забытой расой в тумане времен. И теперь лишь Слова Власти напоминают об их былом величии.~
-  IF ~~ THEN REPLY ~Расскажите мне о Словах Власти.~ GOTO 9
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 11
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же пещерах?~ GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @27
+  IF ~~ THEN REPLY @11 GOTO 9
+  IF ~~ THEN REPLY @13 GOTO 11
+  IF ~~ THEN REPLY @14 GOTO 12
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 11 // from: 4.3
-  SAY ~Маугрим и его секта просто ничто, капля воды в океане истории. Он мечтает о величии, о наследии Расы Созидателей и о Словах Власти... но все это мечты глупца. Его люди пришли ко мне в поисках Слова Власти, но я отослал их. Маугрим слеп, одержим безумной жаждой власти. Я не желаю иметь дело с безумцем. Я слишком многое могу потерять.~
-  IF ~~ THEN REPLY ~Что значит "потерять слишком много"?~ GOTO 18
-  IF ~~ THEN REPLY ~Расскажите мне о Словах Власти.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 10
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же пещерах?~ GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 18
+  IF ~~ THEN REPLY @11 GOTO 9
+  IF ~~ THEN REPLY @12 GOTO 10
+  IF ~~ THEN REPLY @14 GOTO 12
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 12 // from: 4.4
-  SAY ~С драконом? Вряд ли здесь допустимо применение этого термина. Это существо просто сосуд для сущности моего существования, глупое животное, созданное силой моих слуг чародеев из яиц другого дракона. ~
-  IF ~~ THEN REPLY ~Может быть я смогу сделать это для вас.~ GOTO 20
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @30
+  IF ~~ THEN REPLY @16 GOTO 20
+  IF ~~ THEN REPLY @17 GOTO 13
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 13 // from: 5.2
-  SAY ~Ваши угрозы для меня ничего не значат. Я могу создать новые сферы и найти новых слуг. Многие готовы оказывать мне услуги, чтобы получить часть золота, которым я владею.~
-  IF ~~ THEN REPLY ~Может быть я смогу сделать это для вас.~ GOTO 20
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @31
+  IF ~~ THEN REPLY @16 GOTO 20
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 14 // from: 6.1
-  SAY ~Вот ваша награда, <CHARNAME>. 10000 золотых. А теперь я поглощу эту сладкую сущность жизни!~
-  IF ~~ THEN DO~TakePartyItem("SphereE2")GiveGoldForce(10000)DestroyItem("SphereE2")ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(%Клаут - древний красный дракон
-
-Клаут, великий красный червь Севера, признал, что он обладает одним из Слов Власти. Он предложил обменять Слово Власти на яйца другого дракона.%)EraseJournalEntry(%Клаут - древний красный дракон
-
-Клаут обменял Слово Власти на яйца другого дракона, которые нужны ему для выполнения своих темных ритуалов.%)~ SOLVED_JOURNAL ~Клаут - древний красный дракон
-
-Клаут, древний красный червь Севера, мертв.~ EXIT
+  SAY @32
+  IF ~~ THEN DO~TakePartyItem("SphereE2")GiveGoldForce(10000)DestroyItem("SphereE2")ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@63)EraseJournalEntry(@66)~ SOLVED_JOURNAL @33 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 6.3
-  SAY ~Вы выполнили простую задачу, <CHARNAME>. С вашей стороны не потребовалось особых способностей, не пришлось идти на риск. Если золото, которое я предлагаю, вам не нужно, оставьте сферу себе. Я могу сделать новые сферы и найти других слуг.~
-  IF ~~ THEN REPLY ~Вот, возьмите ваш шар.~ GOTO 14
-  IF ~~ THEN REPLY ~А что если я предпочту уничтожить шар?~ GOTO 21
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @34
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @20 GOTO 21
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 16 // from: 7.1
-  SAY ~С вами говорит вековая мудрость, но вы отказываетесь слушать. Пусть будет так. Я дам вам смерть, которой вы так страстно желаете.~
+  SAY @35
   IF ~~ THEN DO~ForceSpell(LastTalkedToBy(Myself),DRAGON_WING_BUFFET)SetGlobal("KlautHostile","MYAREA",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 9.1
-  SAY ~Магия Слов не того сорта, что нужен мне, чтобы продлить мою жизнь, а потому Слово Власти лежит в моей сокровищнице, столь же бессмысленное, как и все прочие материальные сокровища, которые я собрал за долгие века своей жизни. Я знаю, что вы желаете получить это Слово, <CHARNAME>, и оно бесполезно для меня. Так что я могу дать вам его в обмен.~
-  IF ~~ THEN REPLY ~Забудьте об этом, я не собираюсь заключать с вами сделку!~ GOTO 24
-  IF ~~ THEN REPLY ~В обмен? Какой еще обмен?~ DO ~SetGlobal("Suggestion","LOCALS",1)~ GOTO 25
+  SAY @36
+  IF ~~ THEN REPLY @37 GOTO 24
+  IF ~~ THEN REPLY @38 DO ~SetGlobal("Suggestion","LOCALS",1)~ GOTO 25
 END
 
 IF ~~ THEN BEGIN 18 // from: 11.1
-  SAY ~Моя единственная забота -- это мое существование. Маугрим и его сторонники не смогли распознать мое величие. В то же время, они собрали достаточно сил, чтобы представлять для меня определенную угрозу. Вот почему я отослал их.~
-  IF ~~ THEN REPLY ~Расскажите мне о Словах Власти.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 10
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же пещерах?~ GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @39
+  IF ~~ THEN REPLY @11 GOTO 9
+  IF ~~ THEN REPLY @12 GOTO 10
+  IF ~~ THEN REPLY @14 GOTO 12
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 19 // from: 12.1
-  SAY ~За несколько месяцев их тела проходят путь от яиц до полноценных взрослых особей, но их разум остается пустым. Потом, когда они достигают зрелости, и сущность их полностью вырастает, я полностью впитываю их, чтобы поддержать собственную жизнь.~
-  IF ~~ THEN REPLY ~Вы питаетесь собственными сородичами! Да вы просто гнусный каннибал!~ GOTO 22
-  IF ~~ THEN REPLY ~Расскажите мне о Словах Власти.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 10
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 11
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @40
+  IF ~~ THEN REPLY @41 GOTO 22
+  IF ~~ THEN REPLY @11 GOTO 9
+  IF ~~ THEN REPLY @12 GOTO 10
+  IF ~~ THEN REPLY @13 GOTO 11
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 20 // from: 5.1
-  SAY ~Если вы сделаете это, я вознагражу вас, <CHARNAME>. Поместите в сферу сущность живого, зрелого дракона и принесите ее мне, а я награжу вас целой горой золота.~
-  IF ~~ THEN REPLY ~Золото? Вообще-то, мне бы хотелось получить другое вознаграждение. Может быть, мощный магический предмет?~ GOTO 23
-  IF ~~ THEN REPLY ~А как пользоваться этой сферой?~ GOTO 58
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @42
+  IF ~~ THEN REPLY @43 GOTO 23
+  IF ~~ THEN REPLY @44 GOTO 58
+  IF ~~ THEN REPLY @17 GOTO 13
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 21 // from: 6.2
-  SAY ~Тогда вы не получите вознаграждения. Я могу сделать новые сферы, могу найти других слуг. Оставьте сферу себе, если хотите, мне все равно.~
-  IF ~~ THEN REPLY ~Вот, возьмите ваш шар.~ GOTO 14
-  IF ~~ THEN REPLY ~Мне бы хотелось получить что-то более существенное. Может быть, мощный магический предмет?~ GOTO 15
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @45
+  IF ~~ THEN REPLY @19 GOTO 14
+  IF ~~ THEN REPLY @21 GOTO 15
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 22 // from: 19.1
-  SAY ~Мои сородичи? Я уникален! Во всем мире нет ни одного существа, подобного мне! Чего стоит жизнь обычного дракона по сравнению с моим вечным существованием? Я велик и ужасен, как никакое другое существо! Если меня поглотит тьма, окружающая меня, мир даже не поймет, что потерял. Я не жду понимания и от вас, <CHARNAME>. По грустной иронии лишь я один достаточно мудр, чтобы понимать, насколько ценна моя жизнь.~
-  IF ~~ THEN REPLY ~Мне кажется, вы безумный эгоманьяк.~ GOTO 26
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @46
+  IF ~~ THEN REPLY @47 GOTO 26
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.1
-  SAY ~Это простая задача, <CHARNAME>. С вашей стороны не требуется ни особых способностей, ни особого умения. Если золото вас не интересует, не делайте ничего. Позже придут другие, они справятся с этой задачей для меня.~
-  IF ~~ THEN REPLY ~А как пользоваться этой сферой?~ GOTO 58
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 13
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @48
+  IF ~~ THEN REPLY @44 GOTO 58
+  IF ~~ THEN REPLY @17 GOTO 13
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 24 // from: 17.1
-  SAY ~Тогда вы не получите Слова Власти, которым я обладаю. Другие смогут оказывать мне эти услуги, раз вы не можете или не хотите.~
-  IF ~~ THEN REPLY ~Постойте, мое мнение изменилось. Выкладывайте свое предложение.~ GOTO 25
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @49
+  IF ~~ THEN REPLY @50 GOTO 25
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 25 // from: 17.2
-  SAY ~Есть одна-единственная вещь, которая нужна мне, и это продление моей жизни. Я провожу темные ритуалы, чтобы подпитывать мою сущность, и для этих ритуалов мне нужны яйца других драконов. Принесите мне эти сокровища, и я дам вам Слово Власти.~
-  IF ~  OR(2)PartyHasItem("Dragegg1")PartyHasItem("Dragegg2")~ THEN REPLY ~Драконьи яйца у меня при себе.~ GOTO 27
-  IF ~~ THEN REPLY ~Где я могу найти эти драконьи яйца?~ GOTO 28
-  IF ~~ THEN REPLY ~Откуда мне знать, что я могу доверять вам?~ GOTO 29
-  IF ~~ THEN REPLY ~Я вернусь, как только драконьи яйца будут у меня!~ GOTO 30
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
+  SAY @51
+  IF ~  OR(2)PartyHasItem("Dragegg1")PartyHasItem("Dragegg2")~ THEN REPLY @52 GOTO 27
+  IF ~~ THEN REPLY @53 GOTO 28
+  IF ~~ THEN REPLY @54 GOTO 29
+  IF ~~ THEN REPLY @55 GOTO 30
+  IF ~~ THEN REPLY @4 GOTO 31
 END
 
 IF ~~ THEN BEGIN 26 // from: 22.1
-  SAY ~Ваши насмешки ничего не значат для меня. Беспокоит ли вас жужжание мухи? Приберегите свои оскорбления для того, кто сочтет возможным обращать на них внимание.~
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @56
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 27 // from: 25.1
-  SAY ~Тогда все, что вам нужно сделать, это отдать их мне, и Слово Власти ваше, <CHARNAME>.~
-  IF ~~ THEN REPLY ~Берите яйца.~ GOTO 32
-  IF ~~ THEN REPLY ~Думаю, за эти яйца я заслуживаю дополнительного вознаграждения.~ GOTO 33
+  SAY @57
+  IF ~~ THEN REPLY @58 GOTO 32
+  IF ~~ THEN REPLY @59 GOTO 33
 END
 
 IF ~~ THEN BEGIN 28 // from: 25.2
-  SAY ~В логове самки дракона, разумеется. Я знаю, что несколько самок до сих пор отваживаются устраивать гнезда в этих горах. Возвращайтесь ко мне с яйцами дракона, и я дам вам Слово Власти.~
-  IF ~~ THEN REPLY ~Откуда мне знать, что я могу доверять вам?~ GOTO 29
-  IF ~~ THEN REPLY ~Я вернусь, как только драконьи яйца будут у меня!~ GOTO 30
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
+  SAY @60
+  IF ~~ THEN REPLY @54 GOTO 29
+  IF ~~ THEN REPLY @55 GOTO 30
+  IF ~~ THEN REPLY @4 GOTO 31
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.3
-  SAY ~Вы столь незначительны, что ниже моего достоинства предавать вас. Но если это недостаточно надежно для вас, вы можете просто не браться за эту работу. Я найду других людей, которые принесут мне драконьи яйца.~
-  IF ~~ THEN REPLY ~Где я могу найти эти драконьи яйца?~ GOTO 28
-  IF ~~ THEN REPLY ~Я вернусь, как только драконьи яйца будут у меня!~ GOTO 30
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
+  SAY @61
+  IF ~~ THEN REPLY @53 GOTO 28
+  IF ~~ THEN REPLY @55 GOTO 30
+  IF ~~ THEN REPLY @4 GOTO 31
 END
 
 IF ~~ THEN BEGIN 30 // from: 25.4
-  SAY ~Тогда ступайте. Вернувшись, вы получите заслуженную награду.~
-  IF ~~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",1)~ UNSOLVED_JOURNAL ~Клаут - древний красный дракон
-
-Клаут, великий красный червь Севера, признал, что он обладает одним из Слов Власти. Он предложил обменять Слово Власти на яйца другого дракона.~ EXIT
+  SAY @62
+  IF ~~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",1)~ UNSOLVED_JOURNAL @63 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from:
-  SAY ~Задавайте свой вопрос, <CHARNAME>, и я отвечу, если это понравится мне.~
-  IF ~~ THEN REPLY ~Расскажите мне о Словах Власти.~ GOTO 9
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 10
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 11
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же пещерах?~ GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @64
+  IF ~~ THEN REPLY @11 GOTO 9
+  IF ~~ THEN REPLY @12 GOTO 10
+  IF ~~ THEN REPLY @13 GOTO 11
+  IF ~~ THEN REPLY @14 GOTO 12
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 32 // from: 27.1
-  SAY ~Тогда я отдам вам наследство Расы Созидателей. Этот ключ откроет палату за мной, где хранится Слово. Слово Власти ваше, <CHARNAME>, тем более, что для меня оно бесполезно.~
-  IF ~  PartyHasItem("Dragegg1")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg1")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(%Клаут - древний красный дракон
-
-Клаут, великий красный червь Севера, признал, что он обладает одним из Слов Власти. Он предложил обменять Слово Власти на яйца другого дракона.%)~ SOLVED_JOURNAL ~Клаут - древний красный дракон
-
-Клаут обменял Слово Власти на яйца другого дракона, которые нужны ему для выполнения своих темных ритуалов.~ EXIT
-  IF ~  PartyHasItem("Dragegg2")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg2")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(%Клаут - древний красный дракон
-
-Клаут, великий красный червь Севера, признал, что он обладает одним из Слов Власти. Он предложил обменять Слово Власти на яйца другого дракона.%)~ SOLVED_JOURNAL ~Клаут - древний красный дракон
-
-Клаут обменял Слово Власти на яйца другого дракона, которые нужны ему для выполнения своих темных ритуалов.~ EXIT
+  SAY @65
+  IF ~  PartyHasItem("Dragegg1")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg1")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@63)~ SOLVED_JOURNAL @66 EXIT
+  IF ~  PartyHasItem("Dragegg2")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg2")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@63)~ SOLVED_JOURNAL @66 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 27.2
-  SAY ~Ниже моего достоинства торговаться с таким существом, как вы, <RACE>. Я древний красный дракон, а вы всего лишь смертная тварь. Мое предложение остается прежним. Больше вы от меня ничего не получите.~
-  IF ~~ THEN REPLY ~Отлично, забирайте яйца.~ GOTO 32
-  IF ~~ THEN REPLY ~Тогда я, пожалуй, попросту оставлю яйца себе, Клаут!~ GOTO 34
+  SAY @67
+  IF ~~ THEN REPLY @68 GOTO 32
+  IF ~~ THEN REPLY @69 GOTO 34
 END
 
 IF ~~ THEN BEGIN 34 // from: 33.2
-  SAY ~Оставьте их у себя, для меня это ничего не значит. Другие смогут оказывать мне эти услуги; найдутся другие кладки яиц. Поскольку вы здесь не для того, чтобы отдать мне яйца, полагаю, у вас были другие причины прийти и поговорить со мной. О какой милости вы хотите просить меня, <CHARNAME>?~
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @70
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)!Global("Draco4Job","GLOBAL",2)~ THEN BEGIN 35 // from:
-  SAY ~Итак, вы вернулись, <CHARNAME>.~ [DRACO454]
+  SAY @71
   IF ~  Global("Draco4Job","GLOBAL",1)~ THEN GOTO 36
   IF ~  !Global("Draco4Job","GLOBAL",1)~ THEN GOTO 37
 END
 
 IF ~~ THEN BEGIN 36 // from: 35.1
-  SAY ~Вы обдумали мое предложение? Вы принесли мне яйца дракона?~
-  IF ~~ THEN REPLY ~Нет, у меня пока нет яиц.~ GOTO 38
-  IF ~  OR(2)PartyHasItem("Dragegg1")PartyHasItem("Dragegg2")~ THEN REPLY ~Драконьи яйца у меня при себе.~ GOTO 27
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @72
+  IF ~~ THEN REPLY @73 GOTO 38
+  IF ~  OR(2)PartyHasItem("Dragegg1")PartyHasItem("Dragegg2")~ THEN REPLY @52 GOTO 27
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 37 // from: 35.2
-  SAY ~Подойдите ближе, я не причиню вам вреда. Последние дни веков моей жизни текут медленно, и я с удовольствием поговорю с вами, чтобы избавиться от этой монотонности.~ [DRACO455]
-  IF ~~ THEN REPLY ~Откуда ты знаешь мое имя?~ GOTO 2
-  IF ~~ THEN REPLY ~Кто ты?~ GOTO 3
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 4
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 6
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @4 GOTO 4
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 38 // from: 36.1
-  SAY ~Поскольку вы здесь не для того, чтобы отдать мне яйца, полагаю, у вас были другие причины прийти и поговорить со мной. О какой милости вы хотите просить меня, <CHARNAME>?~
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 31
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 7
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @74
+  IF ~~ THEN REPLY @4 GOTO 31
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~ Global("Draco4Job","GLOBAL",2)~ THEN BEGIN 39 // from:
-  SAY ~И снова вы возвращаетесь, чтобы поговорить со мной, <CHARNAME>. Я отдал вам Слово Власти - что еще вы хотите получить от Клаута?~ [DRACO451]
-  IF ~  OR(2)PartyHasItem("Dragegg2")PartyHasItem("Dragegg1")~ THEN REPLY ~У меня есть для вас еще драконьи яйца.~ GOTO 40
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 42
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 44
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @75
+  IF ~  OR(2)PartyHasItem("Dragegg2")PartyHasItem("Dragegg1")~ THEN REPLY @76 GOTO 40
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 44
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 40 // from: 39.1
-  SAY ~Поскольку Слово Власти больше мне не принадлежит, я могу предложить вам в обмен на яйца только золото. Я дам вам 8000 золотых, если хотите.~
-  IF ~~ THEN REPLY ~Вот, возьмите яйца.~ GOTO 45
-  IF ~~ THEN REPLY ~Мне кажется, я заслуживаю большего, чем 8000 золотых.~ GOTO 46
+  SAY @77
+  IF ~~ THEN REPLY @78 GOTO 45
+  IF ~~ THEN REPLY @79 GOTO 46
 END
 
 IF ~~ THEN BEGIN 41 // from: 39.2
-  SAY ~А, у вас одна из моих сфер сущности. В ритуальных комнатах под селением огненных великанов мои слуги используют эти сферы для поимки душ зрелых драконов. Но, поскольку вы здесь, я подозреваю, что мои слуги убиты. Ничего страшного, я найду других слуг. Многие готовы оказывать мне услуги, чтобы получить часть золота, которым я владею.~
-  IF ~~ THEN REPLY ~Может быть я смогу сделать это для вас.~ GOTO 47
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 48
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 47
+  IF ~~ THEN REPLY @17 GOTO 48
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 42 // from: 39.3
-  SAY ~Ах, сфера сущности, в которой уже находится душа зрелого дракона, которую я могу поглотить. Дайте ее мне, <CHARNAME>, и я вознагражу вас целой горой золота из своих обильных запасов.~
-  IF ~~ THEN REPLY ~Вот, возьмите ваш шар.~ GOTO 50
-  IF ~~ THEN REPLY ~А что если я предпочту уничтожить шар?~ GOTO 51
-  IF ~~ THEN REPLY ~Мне бы хотелось получить что-то более существенное. Может быть, мощный магический предмет?~ GOTO 52
+  SAY @18
+  IF ~~ THEN REPLY @19 GOTO 50
+  IF ~~ THEN REPLY @20 GOTO 51
+  IF ~~ THEN REPLY @21 GOTO 52
 END
 
 IF ~~ THEN BEGIN 43 // from: 39.4
-  SAY ~Задавайте свой вопрос, <CHARNAME>, и я отвечу, если это понравится мне.~
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 53
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 54
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же строениях?~ GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 42
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @64
+  IF ~~ THEN REPLY @12 GOTO 53
+  IF ~~ THEN REPLY @13 GOTO 54
+  IF ~~ THEN REPLY @80 GOTO 55
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 44 // from: 39.6
-  SAY ~Тогда ваша жизнь закончится, <CHARNAME>. Я видел, что ждет вас после этого мира: нескончаемое черное пустое пространство. Вы готовы принять это послежизненое ничто? Говорите со мной, если осмелитесь, или бегите, как бессмысленный комок пыли, под мощным порывом славы моего существования. Но не нападайте на меня, если только вы не готовы к смерти.~
-  IF ~~ THEN REPLY ~Заткнись, старый мешок с дерьмом! Ты просто драконье мясо!~ GOTO 56
-  IF ~~ THEN REPLY ~Я не боюсь смерти, Клаут. А ты?~ GOTO 56
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @22
+  IF ~~ THEN REPLY @23 GOTO 56
+  IF ~~ THEN REPLY @24 GOTO 56
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 45 // from: 40.1
-  SAY ~Тогда золото ваше, <CHARNAME>, поскольку для меня оно все равно бесполезно.~
+  SAY @81
   IF ~  PartyHasItem("Dragegg2")~ THEN DO ~TakePartyItem("Dragegg2")GiveGoldForce(8000)~ EXIT
   IF ~  PartyHasItem("Dragegg1")~ THEN DO ~TakePartyItem("Dragegg1")GiveGoldForce(8000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 40.2
-  SAY ~Ниже моего достоинства торговаться с таким существом, как вы, <CHARNAME>. Я древний красный дракон, а вы всего лишь смертная тварь <RACE>. Мое предложение остается прежним. Больше вы от меня ничего не получите.~
-  IF ~~ THEN REPLY ~Отлично, забирайте яйца.~ GOTO 45
-  IF ~~ THEN REPLY ~Тогда, думаю, я просто оставлю эти яйца себе!~ GOTO 57
+  SAY @82
+  IF ~~ THEN REPLY @68 GOTO 45
+  IF ~~ THEN REPLY @83 GOTO 57
 END
 
 IF ~~ THEN BEGIN 47 // from: 41.1
-  SAY ~Если вы сделаете это, я вознагражу вас, <CHARNAME>. Поместите в сферу сущность живого, зрелого дракона и принесите ее мне, а я награжу вас целой горой золота.~
-  IF ~~ THEN REPLY ~Золото? Мне бы хотелось получить другое вознаграждение. Может быть, мощный магический предмет?~ GOTO 49
-  IF ~~ THEN REPLY ~А как пользоваться этой сферой?~ GOTO 58
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @42
+  IF ~~ THEN REPLY @84 GOTO 49
+  IF ~~ THEN REPLY @44 GOTO 58
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 48 // from: 41.2
-  SAY ~Ваши угрозы для меня ничего не значат. Я могу создать новые сферы и найти новых слуг. Многие готовы оказывать мне услуги, чтобы получить часть золота, которым я владею.~
-  IF ~~ THEN REPLY ~Может быть я смогу сделать это для вас.~ GOTO 47
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @31
+  IF ~~ THEN REPLY @16 GOTO 47
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 49 // from: 47.1
-  SAY ~Это простая задача, <CHARNAME>. С вашей стороны не требуется ни особых способностей, ни особого умения. Если золото вас не интересует, не делайте ничего. Позже придут другие, они справятся с этой задачей для меня.~
-  IF ~~ THEN REPLY ~А как пользоваться этой сферой?~ GOTO 58
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 48
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @48
+  IF ~~ THEN REPLY @44 GOTO 58
+  IF ~~ THEN REPLY @17 GOTO 48
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 50 // from: 42.1
-  SAY ~Вот ваша награда, <CHARNAME>. 10000 золотых. А теперь я поглощу эту сладкую сущность жизни!~
-  IF ~~ THEN DO~TakePartyItem("SphereE2")DestroyItem("SphereE2")GiveGoldForce(10000)ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(%Клаут - древний красный дракон
-
-Клаут, великий красный червь Севера, признал, что он обладает одним из Слов Власти. Он предложил обменять Слово Власти на яйца другого дракона.%)EraseJournalEntry(%Клаут - древний красный дракон
-
-Клаут обменял Слово Власти на яйца другого дракона, которые нужны ему для выполнения своих темных ритуалов.%)~ SOLVED_JOURNAL ~Клаут - древний красный дракон
-
-Клаут, древний красный червь Севера, мертв.~ EXIT
+  SAY @32
+  IF ~~ THEN DO~TakePartyItem("SphereE2")DestroyItem("SphereE2")GiveGoldForce(10000)ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@63)EraseJournalEntry(@66)~ SOLVED_JOURNAL @33 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 42.2
-  SAY ~Тогда вы не получите вознаграждения. Я могу сделать новые сферы, могу найти других слуг. Оставьте сферу себе, если хотите, <CHARNAME>, мне все равно.~
-  IF ~~ THEN REPLY ~Вот, возьмите ваш шар.~ GOTO 50
-  IF ~~ THEN REPLY ~А что если я предпочту уничтожить шар?~ GOTO 51
-  IF ~~ THEN REPLY ~Мне бы хотелось получить что-то более существенное. Может быть, мощный магический предмет?~ GOTO 52
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 44
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @85
+  IF ~~ THEN REPLY @19 GOTO 50
+  IF ~~ THEN REPLY @20 GOTO 51
+  IF ~~ THEN REPLY @21 GOTO 52
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 44
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 52 // from: 42.3
-  SAY ~Вы выполнили простую задачу, <CHARNAME>. С вашей стороны не потребовалось особых способностей, не пришлось идти на риск. Если золото, которое я предлагаю, вам не нужно, оставьте сферу себе. Я могу сделать новые сферы и найти других слуг.~
-  IF ~~ THEN REPLY ~Вот, возьмите ваш шар.~ GOTO 50
-  IF ~~ THEN REPLY ~А что если я предпочту уничтожить шар?~ GOTO 51
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY ~Мне нужна твоя голова в качестве трофея, червь!~ GOTO 44
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @34
+  IF ~~ THEN REPLY @19 GOTO 50
+  IF ~~ THEN REPLY @20 GOTO 51
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 44
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 53 // from: 43.1
-  SAY ~Эта земля не всегда покрывалась льдом и снегом. Некогда здесь были буйные джунгли, которыми правила раса безжалостных ящеров, которые сделали всех низших существ -- людей, гномов и эльфов -- своими рабами. Но земля менялась, мир становился холоднее, Древние вымерли и стали забытой расой в тумане времен. И теперь лишь Слова Власти напоминают об их былом величии.~
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 54
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же строениях?~ GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 42
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @27
+  IF ~~ THEN REPLY @13 GOTO 54
+  IF ~~ THEN REPLY @80 GOTO 55
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 54 // from: 43.2
-  SAY ~Маугрим и его секта просто ничто, капля воды в океане истории. Он мечтает о величии, о наследии Расы Созидателей и о Словах Власти... но все это мечты глупца. Его люди пришли ко мне в поисках Слова Власти, но я отослал их. Маугрим слеп, одержим безумной жаждой власти. Я не желаю иметь дело с безумцем. Я слишком многое могу потерять.~
-  IF ~~ THEN REPLY ~Что значит "потерять слишком много"?~ GOTO 59
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 53
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же строениях?~ GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 42
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @28
+  IF ~~ THEN REPLY @29 GOTO 59
+  IF ~~ THEN REPLY @12 GOTO 53
+  IF ~~ THEN REPLY @80 GOTO 55
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 55 // from: 43.3
-  SAY ~С драконом? Вряд ли здесь допустимо применение этого термина. Это существо просто сосуд для сущности моего существования, глупое животное, созданное силой моих слуг чародеев из яиц другого дракона.~
+  SAY @86
   IF ~~ THEN GOTO 60
 END
 
 IF ~~ THEN BEGIN 56 // from: 44.1
-  SAY ~С вами говорит вековая мудрость, но вы отказываетесь слушать. Пусть будет так. Я дам вам смерть, которой вы так страстно желаете.~
+  SAY @35
   IF ~~ THEN DO~ForceSpell(LastTalkedToBy(Myself),DRAGON_WING_BUFFET)SetGlobal("KlautHostile","MYAREA",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 57 // from: 46.2
-  SAY ~Оставьте их у себя, для меня это ничего не значит. Другие смогут оказывать мне эти услуги; найдутся другие кладки яиц.~
+  SAY @87
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 58 // from: 49.1
-  SAY ~Найдите в селении великанов лестницу, ведущую в ритуальные комнаты, где живет синий дракон. Сфера впитает душу дракона, если поместить ее на пьедестал. Тогда принесите сферу мне.~
-  IF ~~ THEN REPLY ~Я вернусь, как только наполню сферу!~ GOTO 61
-  IF ~~ THEN REPLY ~Что если я просто уничтожу эту сферу сущности?~ GOTO 48
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 43
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @88
+  IF ~~ THEN REPLY @89 GOTO 61
+  IF ~~ THEN REPLY @17 GOTO 48
+  IF ~~ THEN REPLY @4 GOTO 43
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 59 // from: 54.1
-  SAY ~Моя единственная забота -- это мое существование. Маугрим и его сторонники не смогли распознать мое величие. В то же время, они собрали достаточно сил, чтобы представлять для меня определенную угрозу. Вот почему я отослал их.~
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 53
-  IF ~~ THEN REPLY ~Что случилось с драконом в другом логове, в этих же строениях?~ GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 42
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @39
+  IF ~~ THEN REPLY @12 GOTO 53
+  IF ~~ THEN REPLY @80 GOTO 55
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 60 // from: 55.1
-  SAY ~За несколько месяцев их тела проходят путь от яиц до полноценных взрослых особей, но их разум остается пустым. Потом, когда они достигают зрелости, и сущность их полностью вырастает, я полностью впитываю их, чтобы поддержать собственную жизнь.~
-  IF ~~ THEN REPLY ~Вы питаетесь собственными сородичами! Да вы просто гнусный каннибал!~ GOTO 61
-  IF ~~ THEN REPLY ~Расскажи мне о Расе Созидателей.~ GOTO 53
-  IF ~~ THEN REPLY ~Вы что-нибудь знаете о Маугриме и его культе?~ GOTO 54
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY ~У меня здесь сфера сущности.~ GOTO 42
-  IF ~~ THEN REPLY ~Мне нужно идти.~ GOTO 8
+  SAY @40
+  IF ~~ THEN REPLY @41 GOTO 61
+  IF ~~ THEN REPLY @12 GOTO 53
+  IF ~~ THEN REPLY @13 GOTO 54
+  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 61 // from: 58.1
-  SAY ~Тогда ступайте. Вернувшись, вы получите заслуженную награду.~
+  SAY @62
   IF ~~ THEN EXIT
 END
 

@@ -4,7 +4,7 @@ BEGIN ~PATROL02~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Ётот вольнонаемный охранник холодно смотрит на вас. “аких особенно цен€т за их крайнюю жестокость. ѕохоже, он вполне способен посто€ть за себ€, если возникнет необходимость.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

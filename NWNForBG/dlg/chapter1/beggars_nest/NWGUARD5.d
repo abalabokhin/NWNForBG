@@ -4,7 +4,7 @@ BEGIN ~NWGUARD5~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Извиняюсь, но я бы предпочел не разговаривать когда вокруг стоит запах горящих тел. Если тебе нужна информация, поговори с моим начальством.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 

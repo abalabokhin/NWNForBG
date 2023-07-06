@@ -5,24 +5,24 @@ BEGIN ~NEYBOR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Follow","LOCALS",0)~ THEN BEGIN 0 // from:
-  SAY ~Я ничего не делаю, дружище. Просто сижу в уголке...~
-  IF ~~ THEN REPLY ~Не знаете, почему в этом районе так много воров?~ GOTO 1
-  IF ~~ THEN REPLY ~Как ваше имя?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Ничего ни про что не знаю... просто стою себе на углу. Вы бы, э, вели себя поосторожней с этой вашей одеждой... Выглядит дорого... Кой чего стоит... Да-а.~
+  SAY @4
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~У меня ничего нет. Нет. Просто безымянный парень на углу. Не о чем волноваться... Вы бы, э, вели себя поосторожней с этой вашей одеждой... Выглядит дорого... Кой чего стоит... Да-а.~
+  SAY @5
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Вы бы, э, вели себя поосторожней с этой вашей одеждой... Выглядит дорого... Кой чего стоит... Да-а.~
+  SAY @6
   IF ~~ THEN EXIT
 END
 
@@ -30,71 +30,71 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("Follow","LOCALS",0)~ THEN BEGIN 4 // from:
-  SAY ~Что? Никого я не преследую... просто... э... прогуливаюсь. Да, точно.~
-  IF ~  Global("Warning","LOCALS",1)~ THEN REPLY ~Сколько можно говорить, чтобы вы не преследовали меня.~ GOTO 5
-  IF ~~ THEN REPLY ~Вы догуляетесь до могилы! Почему вы преследуете людей?!~ GOTO 6
-  IF ~~ THEN REPLY ~Я что, выгляжу, как тупица? Я же вижу, что вы собираетесь ограбить меня.~ GOTO 6
+  SAY @7
+  IF ~  Global("Warning","LOCALS",1)~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @10 GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
-  SAY ~Что? Я никогда... Я имею в виду... Ой, извините. Я просто пытаюсь надыбать немного золота... У меня и в мыслях не было причинять вам вред.~
-  IF ~~ THEN REPLY ~Зачем вам нужно золото?~ GOTO 7
-  IF ~  Global("KnowsAboutAuction","MYAREA",1)~ THEN REPLY ~Это для аукциона в Таверне Сиди?~ GOTO 8
-  IF ~~ THEN REPLY ~Прогуляйтесь где-нибудь в другом месте.~ GOTO 9
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~  Global("KnowsAboutAuction","MYAREA",1)~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
-  SAY ~Я не... То есть... Да будь оно все проклято! Так никогда денег не заработать! Слушайте, мне проблемы не нужны. Я просто ищу легкую добычу. Вы явно не из таких, так что я просто пойду себе.~
-  IF ~~ THEN REPLY ~Зачем вам нужно золото?~ GOTO 7
-  IF ~  Global("KnowsAboutAuction","MYAREA",1)~ THEN REPLY ~Это для аукциона в Таверне Сиди?~ GOTO 8
-  IF ~~ THEN REPLY ~Прогуляйтесь где-нибудь в другом месте.~ GOTO 9
+  SAY @15
+  IF ~~ THEN REPLY @12 GOTO 7
+  IF ~  Global("KnowsAboutAuction","MYAREA",1)~ THEN REPLY @13 GOTO 8
+  IF ~~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
-  SAY ~Я не знаю, мне просто сказали, что лекарство от мора выставляется на аукцион в Таверне Сиди. А теперь разрешите мне вернуться к работе... Мне никогда столько не заработать. Держу пари, денег не хватит, даже если обворовать целый район.~
-  IF ~~ THEN REPLY ~Что вы можете мне рассказать про аукцион?~ GOTO 10
-  IF ~~ THEN REPLY ~Я не люблю проныр. Так что лучше бегите отсюда.~ GOTO 11
+  SAY @16
+  IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @18 GOTO 11
 END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
-  SAY ~Вы об этом знаете? Никто не должен был знать. И все же, все знают. Как-то это просочилось, или вроде того. Я не знаю, мне просто сказали, что лекарство от мора выставляется на аукцион в Таверне Сиди. А теперь разрешите мне вернуться к работе... Мне никогда столько не заработать. Держу пари, денег не хватит, даже если обворовать целый район.~
-  IF ~~ THEN REPLY ~Что вы можете мне рассказать про аукцион?~ GOTO 10
-  IF ~~ THEN REPLY ~Я не люблю проныр. Так что лучше бегите отсюда.~ GOTO 11
+  SAY @19
+  IF ~~ THEN REPLY @17 GOTO 10
+  IF ~~ THEN REPLY @18 GOTO 11
 END
 
 IF ~~ THEN BEGIN 9 // from: 2.3
-  SAY ~О, нет проблем. Вы не волнуйтесь. Я пойду своей дорогой. Да, своей дорогой... Симпатичные у вас вещички...~
+  SAY @20
   IF ~~ THEN DO ~SetGlobal("Warning","LOCALS",1)RunAwayFrom(LastTalkedToBy(Myself),20)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.1
-  SAY ~Кто, я? Я об этом мало что знаю. Это в Таверне Сиди. Занимаются этим "Кровавые моряки"... а это значит, что тут замешан Венгаул.~
-  IF ~~ THEN REPLY ~Что вы знаете о Таверне Сиди?~ GOTO 12
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле и о "Кровавых моряках".~ GOTO 13
-  IF ~~ THEN REPLY ~Я не люблю проныр. Так что лучше бегите отсюда.~ GOTO 11
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 12
+  IF ~~ THEN REPLY @23 GOTO 13
+  IF ~~ THEN REPLY @18 GOTO 11
 END
 
 IF ~~ THEN BEGIN 11 // from: 7.2
-  SAY ~О, нет проблем. Вы не волнуйтесь. Я пойду своей дорогой. Да, своей дорогой... Симпатичные у вас вещички...~
+  SAY @20
   IF ~~ THEN DO ~SetGlobal("KnowsAboutAuction","MYAREA",1)SetGlobal("Warning","LOCALS",1)EscapeAreaDestroy(90)~ EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 10.1
-  SAY ~Ничего такого, чего вам не скажет всякий. Это в северной части центра района, именно там находится черный рынок. Парень вроде меня даже внутрь не попадет. У них на входе стоит вышибала, который не пропускает никого, кроме "Кровавых моряков". Их форму трудно достать. Конечно, если бы у меня было достаточно денег, может, она сказала бы что-нибудь другое. Я не знаю.~
-  IF ~~ THEN REPLY ~Расскажите мне о Венгауле и о "Кровавых моряках".~ GOTO 13
-  IF ~~ THEN REPLY ~Я не люблю проныр. Так что лучше бегите отсюда.~ GOTO 11
+  SAY @24
+  IF ~~ THEN REPLY @23 GOTO 13
+  IF ~~ THEN REPLY @18 GOTO 11
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.2
-  SAY ~Ну, всякий, кто проживет здесь достаточно долго, знает Венгаула Кровавого Моряка. Он хвастун и любит выставляться. А "Кровавые моряки" - это его... пираты, по большей части.~
-  IF ~~ THEN REPLY ~По большей части? Что вы имеете в виду?~ GOTO 14
-  IF ~~ THEN REPLY ~Что вы знаете о Таверне Сиди?~ GOTO 12
-  IF ~~ THEN REPLY ~Я не люблю проныр. Так что лучше бегите отсюда.~ GOTO 11
+  SAY @25
+  IF ~~ THEN REPLY @26 GOTO 14
+  IF ~~ THEN REPLY @22 GOTO 12
+  IF ~~ THEN REPLY @18 GOTO 11
 END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
-  SAY ~Что ж, это большая группа. Один человек не может править всеми. Венгаул, он просто циркач, и ему нужны организаторы. Говорят, его первый лейтенант сейчас очень зол. Каллик его зовут... но больше я ничего не скажу... Я больше ничего не знаю.~
-  IF ~~ THEN REPLY ~Что вы знаете о Таверне Сиди?~ GOTO 12
-  IF ~~ THEN REPLY ~Я не люблю проныр. Так что лучше бегите отсюда.~ GOTO 11
+  SAY @27
+  IF ~~ THEN REPLY @22 GOTO 12
+  IF ~~ THEN REPLY @18 GOTO 11
 END
 

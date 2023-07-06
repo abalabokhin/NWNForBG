@@ -9,535 +9,535 @@ BEGIN ~STIRGE~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~А, достойный противник! Приветствую, я - Стирж, убийца детей, недавно сбежал из тюряги в Уотердипе! Я и четверо моих товарищей по побегу теперь среди самых разыскиваемых преступников по всему Побережью Мечей.~
-  IF ~~ THEN REPLY ~Убийца детей? В таком случае мне следует убить тебя.~ GOTO 1
-  IF ~~ THEN REPLY ~Стирж? Так ты же один из тех беглых преступников, за которых назначена награда!~ GOTO 2
-  IF ~~ THEN REPLY ~Почему ты все это говоришь первому встречному?~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Не так быстро! В конце концов, тебе нужна не моя смерть - скорее доказательство смерти. Если тебе довелось читать объявления о награде, развешанные по всему Побережью Мечей, ты знаешь, что одно лишь мое клейменое ухо может служить свидетельством. Если ты сохранишь мне жизнь и выслушаешь, что я тебе скажу, я сам срежу ухо со своей головы и отдам тебе в качестве доказательства.~
+  SAY @4
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Если этого было недостаточно, я в придачу с удовольствием расскажу тебе, где можно найти некоторых других беглых заключенных. Они такие же подлецы, как и я, и награда за них такая же. Ну давай же, послушай, что я тебе расскажу. Разумеется, тебе любопытно узнать, как я, Стирж - убийца детей, удрал из самой надежной тюрьмы в Уотердипе.~
-  IF ~~ THEN REPLY ~Ну ладно, как ты выбрался?~ GOTO 5
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @5
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Совершенно верно, друг мой. Я участник единственного удавшегося побега из самой неприступной тюрьмы Уотердипа. Но погоди рубить сплеча, выслушай меня сначала, пожалуйста.~
-  IF ~~ THEN REPLY ~Зачем это мне слушать, дварф?~ GOTO 7
-  IF ~~ THEN REPLY ~Убийца детей? В таком случае мне следует убить тебя.~ GOTO 1
+  SAY @8
+  IF ~~ THEN REPLY @9 GOTO 7
+  IF ~~ THEN REPLY @1 GOTO 1
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~А почему мне с тобой не поделиться? Важно дать тебе понять - я не просто какая-то немытая деревенщина, что слоняется среди трухлявых пеньков! Я Стирж - убийца детей!~
-  IF ~~ THEN REPLY ~Убийца детей? В таком случае мне следует убить тебя.~ GOTO 1
-  IF ~~ THEN REPLY ~Стирж? Так ты же один из тех беглых преступников, за которых назначена награда!~ GOTO 2
+  SAY @10
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
-  SAY ~Я как раз собирался об этом поведать. Рад был заметить искорку нетерпения, что проскочила в воздухе между твоими ушами. Я оказался в тюрьме, что было весьма некстати. Я хотел выйти, чтобы вернуться к тому делу, которое у меня лучше всего получается. Я обнаружил, что побег из уотердипской тюрьмы считается невозможным, и понял, что для осуществления невозможного мне понадобится помощь.~
-  IF ~~ THEN REPLY ~Итак, ты отправился к другим заключенным?~ GOTO 8
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @11
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
-  SAY ~Правда? Как изящно!~
+  SAY @13
   IF ~~ THEN DO ~Enemy()UseItem("Potn10",Myself)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.1
-  SAY ~О, <GIRLBOY>, у меня на все найдется причина. В конце концов, тебе ведь не смерть моя нужна, а только ее доказательства. Тот, кто внимательно читал объявления о назначении награды, знает, что в качестве доказательства им нужно только мое татуированное ухо. Если ты сохранишь мне жизнь и выслушаешь, что я тебе скажу, я сам срежу ухо со своей головы и отдам тебе в качестве доказательства.~
+  SAY @14
   IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
-  SAY ~Да, так и есть. Ну не умница ли? Кто-то определенно сегодня встал с той ноги! Итак, верно, я установил отношения с Зором, Далилой, Вайверном и Езгаром. Я знал, что все они заинтересованы в побеге и, в отличие от остальных, обладают необходимыми талантами.~
-  IF ~~ THEN REPLY ~И что это за таланты?~ GOTO 9
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 9
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 9 // from: 8.1
-  SAY ~Единственно нужные таланты! Те, что работают только вместе. Зор был здоровый зверюга! Он мог опрокинуть ворота или проломиться сквозь дверь! Яды Далилы помогли вывести из строя многих стражников в тюрьме. А Вайверн смог вызвать животных, которые помогли нам бежать. Он использовал их, чтобы обмениваться сообщениями, отвлекать внимание и даже чтобы сбить охрану с нашего следа. Это было так волнующе!~
-  IF ~~ THEN REPLY ~А какая была твоя роль в побеге?~ GOTO 10
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @17
+  IF ~~ THEN REPLY @18 GOTO 10
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
-  SAY ~Я? Я помог собрать все это воедино. Моим вкладом были мозги, которые выработали план и руководили слаженной работой... Ну, со мной руководил еще и Езгар, но он был вроде как для понту - его больше слушались.~
-  IF ~~ THEN REPLY ~Ты пока еще только бежишь. Разве это успех?~ GOTO 11
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @19
+  IF ~~ THEN REPLY @20 GOTO 11
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1
-  SAY ~Ой, неправда! Никто еще не сбегал из этой тюрьмы! Мы были первые. Наружу мы выбрались. Конечно, сейчас нас еще могут поймать, но это уже ничего не изменит. Мы сбежали.~
-  IF ~~ THEN REPLY ~Ну, и что дальше?~ GOTO 12
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @21
+  IF ~~ THEN REPLY @22 GOTO 12
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 12 // from: 11.1
-  SAY ~Теперь мы сыграем в игру. Ты меня побьешь - я отрежу себе ухо и отдам тебе, поскольку тебе ведь только одно нужно, не так ли? Награду ведь ты получишь за мою ухо. Игра, в которую мы сразимся, самая старая на свете. Я называю тебе слово, а тебе надо ответить на него другим словом, которое может победить мое, но при этом не является его противоположностью.~
+  SAY @23
   IF ~~ THEN GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
-  SAY ~Если ты победишь, я скажу, где Далила, и отдам тебе мое дорогое ухо. Если нет - выясняем отношения на клинках.~
-  IF ~~ THEN REPLY ~Ну ладно, давай сыграем.~ GOTO 14
-  IF ~~ THEN REPLY ~Можешь ты мне показать, как играть?~ GOTO 15
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @24
+  IF ~~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @26 GOTO 15
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
-  SAY ~Надеюсь, ты достойный противник. Посмотрим... Давай начнем с малого. Мое слово - Тьма.~
-  IF ~~ THEN REPLY ~Свет.~ GOTO 16
-  IF ~~ THEN REPLY ~Ветер.~ GOTO 17
-  IF ~~ THEN REPLY ~Свеча.~ GOTO 18
-  IF ~~ THEN REPLY ~Тень.~ GOTO 19
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 20
-  IF ~~ THEN REPLY ~Радость.~ GOTO 21
-  IF ~~ THEN REPLY ~Огонь.~ GOTO 22
-  IF ~~ THEN REPLY ~Камень.~ GOTO 23
-  IF ~~ THEN REPLY ~Туман.~ GOTO 24
+  SAY @27
+  IF ~~ THEN REPLY @28 GOTO 16
+  IF ~~ THEN REPLY @29 GOTO 17
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @32 GOTO 20
+  IF ~~ THEN REPLY @33 GOTO 21
+  IF ~~ THEN REPLY @34 GOTO 22
+  IF ~~ THEN REPLY @35 GOTO 23
+  IF ~~ THEN REPLY @36 GOTO 24
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.2
-  SAY ~Ну, например, я назову тьму. Если ты скажешь "Свет", ты проиграешь, потому что это противоположное понятие. Ты можешь, однако, сказать "Свеча", на что я могу ответить "Ветер".~
-  IF ~~ THEN REPLY ~Ну ладно, давай сыграем.~ GOTO 14
-  IF ~~ THEN REPLY ~Хватит с меня разговоров с убийцей детей. Защищайся!~ GOTO 6
+  SAY @37
+  IF ~~ THEN REPLY @25 GOTO 14
+  IF ~~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 16 // from: 14.1
-  SAY ~Прости, но свет - противоположность тьмы. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @38
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 14.2
-  SAY ~Ветер проносится сквозь тьму, но не побеждает ее. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @39
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 14.3
-  SAY ~Ах да, свеча отбрасывает тьму, хоть и не так далеко. Значит, мое новое слово - Ветер.~
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 25
-  IF ~~ THEN REPLY ~Стена.~ GOTO 26
-  IF ~~ THEN REPLY ~Корабль.~ GOTO 27
-  IF ~~ THEN REPLY ~Птица.~ GOTO 28
-  IF ~~ THEN REPLY ~Якорь.~ GOTO 29
-  IF ~~ THEN REPLY ~Камень.~ GOTO 30
-  IF ~~ THEN REPLY ~Небо.~ GOTO 31
-  IF ~~ THEN REPLY ~Дружба.~ GOTO 32
+  SAY @40
+  IF ~~ THEN REPLY @32 GOTO 25
+  IF ~~ THEN REPLY @41 GOTO 26
+  IF ~~ THEN REPLY @42 GOTO 27
+  IF ~~ THEN REPLY @43 GOTO 28
+  IF ~~ THEN REPLY @44 GOTO 29
+  IF ~~ THEN REPLY @35 GOTO 30
+  IF ~~ THEN REPLY @45 GOTO 31
+  IF ~~ THEN REPLY @46 GOTO 32
 END
 
 IF ~~ THEN BEGIN 19 // from: 14.4
-  SAY ~Нет, тень - это часть тьмы и не может победить ее. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @47
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 14.5
-  SAY ~Как верно! Блистающая сфера солнца, хоть и создает тьму, отбрасывая тени, но и побеждает ее своим сиянием. В таком случае, мое новое слово - облака.~
-  IF ~~ THEN REPLY ~Лето.~ GOTO 33
-  IF ~~ THEN REPLY ~Ветер.~ GOTO 34
-  IF ~~ THEN REPLY ~Молния.~ GOTO 35
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 36
-  IF ~~ THEN REPLY ~Дождь.~ GOTO 37
-  IF ~~ THEN REPLY ~Камень.~ GOTO 38
-  IF ~~ THEN REPLY ~Море.~ GOTO 39
-  IF ~~ THEN REPLY ~Дневной свет.~ GOTO 40
+  SAY @48
+  IF ~~ THEN REPLY @49 GOTO 33
+  IF ~~ THEN REPLY @29 GOTO 34
+  IF ~~ THEN REPLY @50 GOTO 35
+  IF ~~ THEN REPLY @32 GOTO 36
+  IF ~~ THEN REPLY @51 GOTO 37
+  IF ~~ THEN REPLY @35 GOTO 38
+  IF ~~ THEN REPLY @52 GOTO 39
+  IF ~~ THEN REPLY @53 GOTO 40
 END
 
 IF ~~ THEN BEGIN 21 // from: 14.6
-  SAY ~Интересно. Если тьма - метафора несчастья, то радость, несомненно, побеждает ее. Мое новое слово, в таком случае - Трагедия.~
-  IF ~~ THEN REPLY ~Смех.~ GOTO 41
-  IF ~~ THEN REPLY ~Комедия.~ GOTO 42
-  IF ~~ THEN REPLY ~Скорбь.~ GOTO 43
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 44
-  IF ~~ THEN REPLY ~Справедливость.~ GOTO 45
-  IF ~~ THEN REPLY ~Месть.~ GOTO 46
-  IF ~~ THEN REPLY ~Камень.~ GOTO 47
-  IF ~~ THEN REPLY ~Радость.~ GOTO 48
+  SAY @54
+  IF ~~ THEN REPLY @55 GOTO 41
+  IF ~~ THEN REPLY @56 GOTO 42
+  IF ~~ THEN REPLY @57 GOTO 43
+  IF ~~ THEN REPLY @32 GOTO 44
+  IF ~~ THEN REPLY @58 GOTO 45
+  IF ~~ THEN REPLY @59 GOTO 46
+  IF ~~ THEN REPLY @35 GOTO 47
+  IF ~~ THEN REPLY @33 GOTO 48
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.7
-  SAY ~Да, нет ничего лучше горячего огня, чтобы отбросить тьму. В таком случае, мое новое слово - Вода.~
-  IF ~~ THEN REPLY ~Холод.~ GOTO 49
-  IF ~~ THEN REPLY ~Дамба.~ GOTO 50
-  IF ~~ THEN REPLY ~Небо.~ GOTO 51
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 52
-  IF ~~ THEN REPLY ~Жизнь.~ GOTO 53
-  IF ~~ THEN REPLY ~Ветер.~ GOTO 54
-  IF ~~ THEN REPLY ~Камень.~ GOTO 55
-  IF ~~ THEN REPLY ~Рыба.~ GOTO 56
+  SAY @60
+  IF ~~ THEN REPLY @61 GOTO 49
+  IF ~~ THEN REPLY @62 GOTO 50
+  IF ~~ THEN REPLY @45 GOTO 51
+  IF ~~ THEN REPLY @32 GOTO 52
+  IF ~~ THEN REPLY @63 GOTO 53
+  IF ~~ THEN REPLY @29 GOTO 54
+  IF ~~ THEN REPLY @35 GOTO 55
+  IF ~~ THEN REPLY @64 GOTO 56
 END
 
 IF ~~ THEN BEGIN 23 // from: 14.8
-  SAY ~Камень? Черт, я вообще не представляю ход твоих мыслей, но он точно не победит тьму. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @65
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 14.9
-  SAY ~Нет, туман может гнездиться в хладном сердце тьмы, но не победить ее. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @66
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 18.1
-  SAY ~Ветер не помеха сиянию солнца, но оно не победит его. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @67
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 18.2
-  SAY ~Ага! Хорошо построенная стена убережет любой дом от ветра. В таком случае, мое следующее слово будет - Война, что рушит многие стены.~
-  IF ~~ THEN REPLY ~Добро.~ GOTO 57
-  IF ~~ THEN REPLY ~Мир.~ GOTO 58
-  IF ~~ THEN REPLY ~Армии.~ GOTO 59
-  IF ~~ THEN REPLY ~Ангелы.~ GOTO 60
-  IF ~~ THEN REPLY ~Камень.~ GOTO 61
-  IF ~~ THEN REPLY ~Радость.~ GOTO 62
+  SAY @68
+  IF ~~ THEN REPLY @69 GOTO 57
+  IF ~~ THEN REPLY @70 GOTO 58
+  IF ~~ THEN REPLY @71 GOTO 59
+  IF ~~ THEN REPLY @72 GOTO 60
+  IF ~~ THEN REPLY @35 GOTO 61
+  IF ~~ THEN REPLY @33 GOTO 62
 END
 
 IF ~~ THEN BEGIN 27 // from: 18.3
-  SAY ~Корабль может использовать ветер, чтобы наполнить паруса, но корабль его не побеждает. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @73
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 18.4
-  SAY ~Птица может лететь по ветру, но она его не побеждает. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @74
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 18.5
-  SAY ~Ах, корабль на якоре не унесет и буйным ветром. В таком случае, мое новое слово ржавчина.~
-  IF ~~ THEN REPLY ~Вода.~ GOTO 63
-  IF ~~ THEN REPLY ~Время.~ GOTO 64
-  IF ~~ THEN REPLY ~Молния.~ GOTO 65
-  IF ~~ THEN REPLY ~Огонь.~ GOTO 66
-  IF ~~ THEN REPLY ~Камень.~ GOTO 67
-  IF ~~ THEN REPLY ~Масло.~ GOTO 68
+  SAY @75
+  IF ~~ THEN REPLY @76 GOTO 63
+  IF ~~ THEN REPLY @77 GOTO 64
+  IF ~~ THEN REPLY @50 GOTO 65
+  IF ~~ THEN REPLY @34 GOTO 66
+  IF ~~ THEN REPLY @35 GOTO 67
+  IF ~~ THEN REPLY @78 GOTO 68
 END
 
 IF ~~ THEN BEGIN 30 // from: 18.6
-  SAY ~Как верно. Все ветры мира не смогут удержать падающий камень наверху. В таком случае, мое новое слово - Мороз, ибо он раскалывает даже валуны.~
-  IF ~~ THEN REPLY ~Лето.~ GOTO 69
-  IF ~~ THEN REPLY ~Цветы.~ GOTO 70
-  IF ~~ THEN REPLY ~Огонь.~ GOTO 71
-  IF ~~ THEN REPLY ~Перчатки.~ GOTO 72
-  IF ~~ THEN REPLY ~Камень.~ GOTO 73
-  IF ~~ THEN REPLY ~Муравей.~ GOTO 74
+  SAY @79
+  IF ~~ THEN REPLY @49 GOTO 69
+  IF ~~ THEN REPLY @80 GOTO 70
+  IF ~~ THEN REPLY @34 GOTO 71
+  IF ~~ THEN REPLY @81 GOTO 72
+  IF ~~ THEN REPLY @35 GOTO 73
+  IF ~~ THEN REPLY @82 GOTO 74
 END
 
 IF ~~ THEN BEGIN 31 // from: 18.7
-  SAY ~Нет, небо глядит на ветра свысока, но их не побеждает. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @83
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 18.8
-  SAY ~Дружба действительно - крепкие узы, но она мало что общего имеет с ветром. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @84
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 20.1
-  SAY ~Ах, лето - время, когда облаков немного, но оно не побеждает их. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @85
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 20.2
-  SAY ~Ага, ветер способен разорвать облака. Но что может победить ветер? Полагаю, я побежден, друг мой. Мне остается лишь уступить. Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @86
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 35 // from: 20.3
-  SAY ~Молния - гневная дочь отца-облака. Но как бы она ни буйствовала, вряд ли она уничтожит породившего ее. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @88
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 20.4
-  SAY ~Мы только что установили, что облако сильнее, чем солнце. Следовательно, твое предположение не может быть верным. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @89
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 20.5
-  SAY ~Дождь - порождение облака, но в своем падении он не отрицает родителя. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @90
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 20.6
-  SAY ~Камни и облака, боюсь, имеют мало общего друг с другом. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @91
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 20.7
-  SAY ~Облака часто собираются над морем, и разумеется, если море создает их, нельзя сказать, что оно же их и побеждает. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @92
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 20.8
-  SAY ~Ага, даже в облачный день заметна разница между днем и ночью. Разумеется, дневной свет выходит здесь победителем. Мое новое слово тогда будет - Ночная тень - но постой! По правде говоря, эти два понятия противоположны, и я проиграл в моей собственной игре! Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @93
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 41 // from: 21.1
-  SAY ~Нет, поскольку смех над трагедией не делает ее менее трагичной. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @94
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 21.2
-  SAY ~Ха! Комедия ведь - противоположность трагедии! Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @95
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 43 // from: 21.3
-  SAY ~Ах, как мудро. Лишь с помощью скорби можно одолеть трагедию и возродиться к новой жизни. Увы, я не знаю, что могло бы победить скорбь. Полагаю, в этот день победа досталась тебе. Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @96
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 44 // from: 21.4
-  SAY ~Солнце освещает трагедию без всякого сострадания. Боюсь, оно не может ее победить. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @97
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 21.5
-  SAY ~Верно, Справедливость может выправить неправильное и исцелить раны, оставленные трагедией. В таком случае, мое новое слово - Фанатизм.~
-  IF ~~ THEN REPLY ~Сочувствие.~ GOTO 76
-  IF ~~ THEN REPLY ~Вера.~ GOTO 77
-  IF ~~ THEN REPLY ~Сила.~ GOTO 78
-  IF ~~ THEN REPLY ~Предназначение.~ GOTO 79
-  IF ~~ THEN REPLY ~Камень.~ GOTO 80
-  IF ~~ THEN REPLY ~Образование.~ GOTO 81
+  SAY @98
+  IF ~~ THEN REPLY @99 GOTO 76
+  IF ~~ THEN REPLY @100 GOTO 77
+  IF ~~ THEN REPLY @101 GOTO 78
+  IF ~~ THEN REPLY @102 GOTO 79
+  IF ~~ THEN REPLY @35 GOTO 80
+  IF ~~ THEN REPLY @103 GOTO 81
 END
 
 IF ~~ THEN BEGIN 46 // from: 21.6
-  SAY ~Нет, многие отвечают на трагедию местью, но месть всего лишь начинает новую трагедию, и весь круг повторяется. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @104
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 21.7
-  SAY ~Ты определенно тупица, дружок, хотя это будет истинная трагедия, если падающий камень не окончит твое жалкое существование прямо сейчас... Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @105
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 48 // from: 21.8
-  SAY ~Если трагедия побеждает радость, как мы только что установили, то радость не может победить трагедию. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @106
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 49 // from: 22.1
-  SAY ~Нет, холод может заморозить воду, но весной вода все равно окажется на прежнем месте. Она просто изменяет форму, но не проигрывает. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @107
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 22.2
-  SAY ~Ага, дамба остановит прибой яростных вод и тем победит их. Но, поскольку наводнение может захлестнуть и дамбу, мое следующее слово - Наводнение.~
-  IF ~~ THEN REPLY ~Сушь.~ GOTO 82
-  IF ~~ THEN REPLY ~Корабль.~ GOTO 83
-  IF ~~ THEN REPLY ~Рыба.~ GOTO 84
-  IF ~~ THEN REPLY ~Слезы.~ GOTO 85
-  IF ~~ THEN REPLY ~Камень.~ GOTO 86
-  IF ~~ THEN REPLY ~Предназначение.~ GOTO 87
+  SAY @108
+  IF ~~ THEN REPLY @109 GOTO 82
+  IF ~~ THEN REPLY @42 GOTO 83
+  IF ~~ THEN REPLY @64 GOTO 84
+  IF ~~ THEN REPLY @110 GOTO 85
+  IF ~~ THEN REPLY @35 GOTO 86
+  IF ~~ THEN REPLY @102 GOTO 87
 END
 
 IF ~~ THEN BEGIN 51 // from: 22.3
-  SAY ~Небо равнодушно взирает сверху на спокойные воды. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @111
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 52 // from: 22.4
-  SAY ~Очень верно замечено. Солнце может высушить воду, оставив от нее лишь соль. Мое новое слово, таким образом, облака.~
-  IF ~~ THEN REPLY ~Лето.~ GOTO 33
-  IF ~~ THEN REPLY ~Ветер.~ GOTO 34
-  IF ~~ THEN REPLY ~Молния.~ GOTO 35
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 36
-  IF ~~ THEN REPLY ~Дождь.~ GOTO 37
-  IF ~~ THEN REPLY ~Камень.~ GOTO 38
-  IF ~~ THEN REPLY ~Море.~ GOTO 39
-  IF ~~ THEN REPLY ~Дневной свет.~ GOTO 40
+  SAY @112
+  IF ~~ THEN REPLY @49 GOTO 33
+  IF ~~ THEN REPLY @29 GOTO 34
+  IF ~~ THEN REPLY @50 GOTO 35
+  IF ~~ THEN REPLY @32 GOTO 36
+  IF ~~ THEN REPLY @51 GOTO 37
+  IF ~~ THEN REPLY @35 GOTO 38
+  IF ~~ THEN REPLY @52 GOTO 39
+  IF ~~ THEN REPLY @53 GOTO 40
 END
 
 IF ~~ THEN BEGIN 53 // from: 22.5
-  SAY ~Нет, жизнь родилась в воде, питается водой и источает воду. Если бы одна могла победить другую, они бы вряд ли так долго прожили вместе. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @113
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 54 // from: 22.6
-  SAY ~Ветер может покрыть воду рябью, а то и разрушительными волнами. Хоть он и бичует воду, приводя ее в ярость, но победить ее не может. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @114
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 55 // from: 22.7
-  SAY ~По правде говоря, они почти уравновешивают друг друга, но если запастись временем и терпением, мы увидим, что на самом деле вода истачивает камень. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @115
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 56 // from: 22.7
-  SAY ~Рыба нуждается в воде даже сильнее, чем мы, чтобы жить. Зачем рыбе побеждать воду - чтобы разевать рот на суше? Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @116
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 57 // from: 26.1
-  SAY ~Точно, лишь истинное сердечное добро, способное объять весь мир, может победить войну. Мое новое слово - Зло. Погоди! Что же я наделал? Я назвал противоположность! Тьфу, я проиграл в собственной игре! Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @117
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 58 // from: 26.2
-  SAY ~Но мир - противоположность войны, боюсь, так что это не считается. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @118
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 59 // from: 26.3
-  SAY ~Пожалуй, как раз война побеждает армии, а не наоборот. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @119
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 60 // from: 26.4
-  SAY ~Ах, даже на внешних Планах демоны и ангелы ведут непрерывную войну. Как бы они ни были благородны, саму войну им не победить. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @120
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 61 // from: 26.5
-  SAY ~Камень? Ума не приложу, что ты хочешь этим сказать. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @121
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 62 // from: 26.6
-  SAY ~Нет уж, пока воины веселятся, рубя и кромсая, радости не победить войну. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @122
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 63 // from: 29.1
-  SAY ~Но именно вода помогает ржавчине грызть металл. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @123
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 64 // from: 29.2
-  SAY ~Ах, но ход времени лишь бросает в пищу ржавчине все больше вещей. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @124
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 65 // from: 29.3
-  SAY ~Молния проходит сквозь металл, ржавый или нет, но она не мешает ржавчине продолжать свою неспешную работу. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @125
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 66 // from: 29.4
-  SAY ~Ага, огонь может нагреть ржавый прут, но он не остановит ржавчину, если она принялась за дело. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @126
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 67// from: 29.5
-  SAY ~Почему все так и норовят выбрать камень?! Камнем можно ободрать большие куски Ржавчины, но он не остановит ее продвижение. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @127
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 68 // from: 29.6
-  SAY ~Как мудро. Именно, масло просачивается в самое сердце ржавчины и не позволяет ей двигаться дальше. Но я что-то устал от этой игры. Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @128
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 69// from: 30.1
-  SAY ~Нет. К тому времени, как приходит лето, мороз уже давным-давно побежден. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @129
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 70// from: 30.2
-  SAY ~Ничуть не бывало. Нежные цветы часто гибнут под действием утреннего мороза. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @130
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 71// from: 30.3
-  SAY ~А, да, правильно разведенный огонь уничтожит мороз вокруг. Мое новое слово тогда будет вода.~
-  IF ~~ THEN REPLY ~Холод.~ GOTO 49
-  IF ~~ THEN REPLY ~Дамба.~ GOTO 50
-  IF ~~ THEN REPLY ~Небо.~ GOTO 51
-  IF ~~ THEN REPLY ~Солнце.~ GOTO 52
-  IF ~~ THEN REPLY ~Жизнь.~ GOTO 53
-  IF ~~ THEN REPLY ~Ветер.~ GOTO 54
-  IF ~~ THEN REPLY ~Камень.~ GOTO 55
-  IF ~~ THEN REPLY ~Рыба.~ GOTO 56
+  SAY @131
+  IF ~~ THEN REPLY @61 GOTO 49
+  IF ~~ THEN REPLY @62 GOTO 50
+  IF ~~ THEN REPLY @45 GOTO 51
+  IF ~~ THEN REPLY @32 GOTO 52
+  IF ~~ THEN REPLY @63 GOTO 53
+  IF ~~ THEN REPLY @29 GOTO 54
+  IF ~~ THEN REPLY @35 GOTO 55
+  IF ~~ THEN REPLY @64 GOTO 56
 END
 
 IF ~~ THEN BEGIN 72// from: 30.4
-  SAY ~Ах, перчатки сохранят твои пальцы от укусов мороза, но остановить его вокруг они неспособны. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @132
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 73// from: 30.5
-  SAY ~Гм. По-моему, мы только что выяснили, что мороз побеждает камни. Как же ты предлагаешь камням взять реванш? Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @133
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 74// from: 30.6
-  SAY ~Нет, муравьи укрывают себя от мороза, ибо знают, что он несет им смерть. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @134
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 75
-  SAY ~Итак, пока я - ой - его режу, позволь рассказать, что я знаю про - ой - Далилу. Она отравитель, так что следи за ее - ой - клинком. Езгар устроил так, что ее наняли в какой-то караван, проходивший к востоку от города, чтобы она могла спрятаться на время.~
+  SAY @135
   IF ~~ THEN GOTO 88
 END
 
 IF ~~ THEN BEGIN 76 // from: 45.1
-  SAY ~Верно, сочувствие со стороны врагов может успокоить фанатика и усмирить его буйство. Но эта игра мне надоела. Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @136
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 77// from: 45.2
-  SAY ~Наоборот, сама вера творит величайших фанатиков. Разве паладины не совершают фанатичных действий во имя своего верования? Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @137
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 78// from: 45.3
-  SAY ~Нет, сила лишь подбрасывает дров в костер фанатизма. Сделайте мученика из одного человека, и на его место встанут сотни последователей. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @138
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 79// from: 45.4
-  SAY ~Ах, одни не предназначены стать фанатиками, зато другие предназначены. Предназначение в этом случае беспристрастно. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @139
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 80// from: 45.5
-  SAY ~Тебе уже давно хотелось сказать это, не так ли... Ты хоть понимаешь, что это неправильно? *Вздыхает*. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @140
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 81// from: 45.6
-  SAY ~Нет, образованный фанатик всего лишь более убедителен. Образование не отрицает самого фанатизма. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @141
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 82// from: 50.1
-  SAY ~Ах, но наводнение и засуха - противоположности! Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @142
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 83 // from: 50.2
-  SAY ~Ага, корабль может перенести наводнение и тем победить его... Но я устал от этой игры. Ладно, давай я расскажу тебе о Далиле и отрежу это досадное ухо, ценой которого могу купить себе жизнь.~
-  IF ~~ THEN REPLY ~Быстро, давай сюда свое ухо, дварф!~ GOTO 75
+  SAY @143
+  IF ~~ THEN REPLY @87 GOTO 75
 END
 
 IF ~~ THEN BEGIN 84// from: 50.3
-  SAY ~Ах, рыбы могут радоваться наводнению или задохнуться в иле, которое оно поднимает со дна. Но они могут мало что сделать, чтобы остановить его. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @144
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 85// from: 50.4
-  SAY ~Ха-ха, плачь, если хочешь. Слезы лишь добавят к наводнению соленой воды. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @145
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 86// from: 50.5
-  SAY ~Ах, наводнение может даже валуны сдвигать с места и катить их многие мили. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @146
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 87// from: 50.6
-  SAY ~Ах, мудрецы и оракулы могут предсказывать наводнения и другие катастрофы, но само предназначение не отвратит их. Моя победа. Это значит, что я не буду ни предлагать тебе свое ухо, ни намекать на местонахождение этой холодной Далилы. К оружию!~
+  SAY @147
   IF ~~ THEN DO ~ApplySpell(Myself,WIZARD_INVISIBILITY)ApplySpellRES("runrun",Myself)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 88// from: 75.1
-  SAY ~Это все, что я знаю. Если не возражаешь, сейчас я собираюсь покинуть тебя.~
+  SAY @148
   IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADSTIRGE","GLOBAL",1)GiveItem("EarBand",LastTalkedToBy)SetGlobal("StirgeDestroy","MYAREA",1)~ EXIT
 END
 

@@ -10,107 +10,107 @@ BEGIN ~TELMA~
 IF ~  NumberOfTimesTalkedTo(0)
 Global("TelmaSecret","GLOBAL",0)
 ~ THEN BEGIN 0 // from:
-  SAY ~Здрасте. Зачем пришли? Да нет, я, в общем-то, не против... Не знаю, почему бы вам и не зайти. Вы можете ходить, где вам вздумается. Правда. Я не хотела поднимать панику. Меня зовут Тельма... Если вам это интересно.~
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 16.0 0.0
-  SAY ~Думаю... Почему вы здесь? Еще раз скажу - я не то, чтобы против, но для вас здесь ничего нет...~
-  IF ~~ THEN REPLY ~Ты не слышала ничего странного? Никаких сплетен?~ GOTO 3
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @3
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 19.1 18.1 17.2 16.1 10.2 7.1 4.2 3.3 1.2 0.1
-  SAY ~А, ну тогда ладно. Э... Пожалуйста, закройте за собой дверь...~
+  SAY @6
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 7.0 4.1 1.0
-  SAY ~Нет! То есть, конечно, нет. С чего бы мне знать о чем-то странном? Вот разве что чума. Разве этого недостаточно?~
-  IF ~~ THEN REPLY ~Ты нервничаешь. Здесь что-то спрятано?~ GOTO 5
-  IF ~~ THEN REPLY ~Ты волнуешься. Что с тобой?~ GOTO 6
-  IF ~~ THEN REPLY ~Что вы знаете о чуме?~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 GOTO 6
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 4 // from: 3.2 1.1
-  SAY ~Люди умирают, куда бы ни пошли и что бы ни делали. Может, богачи могут что-то сделать, но я всего лишь прислуга.~
-  IF ~~ THEN REPLY ~Что слышно об экспериментах с исцелением?~ GOTO 7
-  IF ~~ THEN REPLY ~Ты не слышала ничего странного? Никаких сплетен?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 5 // from: 3.0
-  SAY ~Я... Ну, я не хотела, чтобы вы подумали, что... А, черт с ним. Похоже, вы и так знаете. Под моим домом что-то есть. Понимаете, мы раскопали... э... погреб, ну, место за книжным шкафом... Чтобы прятать вещи от городских стражников. Но ничего у нас не вышло.~
+  SAY @12
   IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.1
-  SAY ~Со мной-то конечно, все в порядке. Все хорошо. Никаких странностей. Совсем никаких.~
+  SAY @13
   IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)
-~ THEN REPLY ~Если там что-то странное, скажи мне.~ GOTO 9
+~ THEN REPLY @14 GOTO 9
   IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)
-~ THEN REPLY ~Если там что-то странное, скажи мне.~ GOTO 10
+~ THEN REPLY @14 GOTO 10
   IF ~  Gender(LastTalkedToBy(Myself),MALE)
-~ THEN REPLY ~Ладно, ты хорошая девочка, у тебя же нет от меня секретов?~ GOTO 11
-  IF ~~ THEN REPLY ~Что-то здесь не так. Что это?! Скажи, или умрешь!~ GOTO 12
+~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 12
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.0
-  SAY ~Ну, я прислуживал лорду Фонтлботтому на еженедельной встрече в клубе Джелдера, он принадлежит старому Джиму Джелдера, и он что-то такое сказал. Он сказал: "Лечебные существа пропали после нападения". По мне так полнейшая чушь. Он не в себе, с тех пор, как... Ну... Да он всегда не в себе.~
-  IF ~~ THEN REPLY ~Ты не слышала ничего странного? Никаких сплетен?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @17
+  IF ~~ THEN REPLY @4 GOTO 3
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 8 // from: 11.0 9.0 5.0
-  SAY ~Там внизу что-то плохое. Там дверь, которая не открывается и... Из-за нее доносятся *звуки*. Посмотрите на шкаф и скажите слово "Хэлуэт". Сами увидите.~
-  IF ~~ THEN REPLY ~Какие звуки?~ GOTO 12
-  IF ~~ THEN REPLY ~Я посмотрю, ладно?~ GOTO 13
-  IF ~~ THEN REPLY ~Я хочу посмотреть. С дороги.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 15
+  SAY @18
+  IF ~~ THEN REPLY @19 GOTO 12
+  IF ~~ THEN REPLY @20 GOTO 13
+  IF ~~ THEN REPLY @21 GOTO 14
+  IF ~~ THEN REPLY @2 GOTO 15
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.0
-  SAY ~Может, вы что-то с этим сделаете? Мне не придется больше беспокоиться? Думаю, я могу говорить с вами. Мы нашли запись в старой книге, а когда мы произнесли слово, шкаф открылся. Мы хотели выкопать там тайник, чтобы стражники его не нашли, но там был... Там был туннель.~
+  SAY @22
   IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.1
-  SAY ~Ох, нет, меня это не интересует. Я не знаю, что происходит, и не хочу знать.~
+  SAY @23
   IF ~  Gender(LastTalkedToBy(Myself),MALE)
-~ THEN REPLY ~Ладно, ты хорошая девочка, у тебя же нет от меня секретов?~ GOTO 11
-  IF ~~ THEN REPLY ~Что-то здесь не так. Что это?! Скажи, или умрешь!~ GOTO 12
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+~ THEN REPLY @15 GOTO 11
+  IF ~~ THEN REPLY @16 GOTO 12
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.0 6.2
-  SAY ~Вы дерзки - пришли в мой дом, а теперь строите мне глазки. Перестаньте. Я скажу, если вы потом уйдете. Мы нашли запись в старой книге, а когда мы произнесли слово, шкаф открылся. Мы хотели выкопать там тайник, чтобы стражники его не нашли, но там был... Там был туннель.~
+  SAY @24
   IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 12 // from: 10.1 8.0 6.3
-  SAY ~Я не знаю, и не хочу это выяснять! Может, вы хотите, но я пока в своем уме.~
-  IF ~~ THEN REPLY ~Я посмотрю, ладно?~ GOTO 13
-  IF ~~ THEN REPLY ~Я хочу посмотреть. С дороги.~ GOTO 14
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 15
+  SAY @25
+  IF ~~ THEN REPLY @20 GOTO 13
+  IF ~~ THEN REPLY @21 GOTO 14
+  IF ~~ THEN REPLY @2 GOTO 15
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.0 8.1
-  SAY ~Что ж, вам решать. Вход скрыт за книжным шкафом. Пожалуйста, постарайтесь ничего не потревожить. Мне еще здесь жить.~
+  SAY @26
   IF ~~ THEN DO ~SetGlobal("TelmaSecret","GLOBAL",1)
 ~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.1 8.2
-  SAY ~Ладно, ладно, вход за книжным шкафом. Пожалуйста, не доставляйте мне проблем. Мне еще здесь жить.~
+  SAY @27
   IF ~~ THEN DO ~SetGlobal("TelmaSecret","GLOBAL",1)
 ~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.2 8.3
-  SAY ~А, ну тогда ладно. Э... Пожалуйста, закройте за собой дверь...~
+  SAY @6
   IF ~~ THEN DO ~SetGlobal("TelmaSecret","GLOBAL",1)
 ~ EXIT
 END
@@ -118,43 +118,43 @@ END
 IF ~  !NumberOfTimesTalkedTo(0)
 Global("TelmaSecret","GLOBAL",0)
 ~ THEN BEGIN 16 // from:
-  SAY ~Опять вы? Что вам нужно?~
-  IF ~~ THEN REPLY ~Мне хотелось бы задать несколько вопросов.~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @28
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~  Global("TelmaSecret","GLOBAL",1)
 ~ THEN BEGIN 17 // from:
-  SAY ~Пожалуйста... Я уже сказала все, что знаю... Я хочу, чтобы мой дом оставили в покое. Просто уйдите... Это уже не секрет.~
-  IF ~~ THEN REPLY ~Расскажи мне про этот секрет еще раз.~ GOTO 18
-  IF ~~ THEN REPLY ~Скажи, что тут происходит! Говори, или умрешь!~ GOTO 19
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @29
+  IF ~~ THEN REPLY @30 GOTO 18
+  IF ~~ THEN REPLY @31 GOTO 19
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 18 // from: 17.0
-  SAY ~Мы нашли запись в старой книге, а когда мы произнесли слово, шкаф открылся. Мы хотели выкопать там тайник, чтобы стражники его не нашли, но там был... Там был туннель. Там внизу что-то плохое. Там дверь, которая не открывается и... Из-за нее доносятся *звуки*. Посмотрите на шкаф и скажите слово "Хэлуэт". Сами увидите.~
-  IF ~~ THEN REPLY ~Какие звуки?~ GOTO 20
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @32
+  IF ~~ THEN REPLY @19 GOTO 20
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 19 // from: 17.1
-  SAY ~Зачем обижать меня? Конечно, я скажу... Но зачем угрожать?! Это всего лишь слово... Просто маленькое странное слово. Говоришь, и шкаф открывается. Слово будет "Хэлуэт". Я даже не знаю, что оно значит. Просто... Раньше мы прятали в проходе всякие вещи. Но далеко мы не забирались. Там страшно... И пахнет... плохо. Это старое место... Мы копали погреб, и нашли его... Лучше б не находили! Там что-то есть... За дверью.~
-  IF ~~ THEN REPLY ~Ты ничего не скрываешь?!~ GOTO 21
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 2
+  SAY @33
+  IF ~~ THEN REPLY @34 GOTO 21
+  IF ~~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.0
-  SAY ~Я не знаю, и не хочу это выяснять! Может, вы хотите, но я пока в своем уме.~
+  SAY @25
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 19.0
-  SAY ~Я не знаю, не знаю! Пожалуйста! Уходите! Уходите!~
+  SAY @35
   IF ~~ THEN EXIT
 END
 
 IF ~  GlobalGT("TelmaSecret","GLOBAL",1)
 ~ THEN BEGIN 22 // from:
-  SAY ~Не знаю, почему вы в моем доме. Что бы там ни было в подвале, этого больше нет. Может, теперь все станет по-прежнему.~
+  SAY @36
   IF ~~ THEN EXIT
 END

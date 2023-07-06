@@ -4,86 +4,86 @@ BEGIN ~LUSKANGD~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("GoToLuskan","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Лучше поворачивайте назад, путники. Ворота Лускана закрыты.~
-  IF ~~ THEN REPLY ~Почему ворота закрыты?~ GOTO 1
-  IF ~~ THEN REPLY ~Пропустите меня... немедленно.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Врата заперты, чтобы не допустить распространения невервинтерской чумы, <SIRMAAM>. Лишняя предосторожность никогда не помешает.~
-  IF ~~ THEN REPLY ~Но ведь чумы в Невервинтере больше нет.~ GOTO 4
-  IF ~~ THEN REPLY ~Я не сомневаюсь, что есть какой-то способ попасть в город.~ GOTO 5
-  IF ~~ THEN REPLY ~Пропустите меня... немедленно.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Это что, угроза? Даже если вы перебьете всех нас, ворота вам все равно не откроют, тупица.~
-  IF ~~ THEN REPLY ~Я войду в ворота -  если понадобится, перешагнув через тебя!~ GOTO 6
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @7
+  IF ~~ THEN REPLY @8 GOTO 6
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Вид у вас запыленный... Может, немножко развеселитесь, если зайдете в "Зеленый Грифон". По крайней мере, у вас будет, где остановиться. Прощайте.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Ха! Не знаю, правду вы говорите, или нет, ворота мы все равно не откроем. Нас можно называть по-разному, но уж легковерными точно нельзя. Кроме того, в Лускане сейчас слишком много внутренних проблем. Так что лучше поворачивайте и ступайте, откуда пришли.~
-  IF ~~ THEN REPLY ~Что еще за "внутренние проблемы"?~ GOTO 7
-  IF ~~ THEN REPLY ~Я не сомневаюсь, что есть какой-то способ попасть в город.~ GOTO 5
-  IF ~~ THEN REPLY ~Пропустите меня... немедленно.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @10
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Ищите, не стесняйтесь, только предупреждаю, наш город очень хорошо укреплен. Думаю, даже крыса не проскользнет внутрь во время карантина.~
-  IF ~~ THEN REPLY ~Но ведь чумы в Невервинтере больше нет.~ GOTO 4
-  IF ~~ THEN REPLY ~Пропустите меня... немедленно.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @12
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 2.1
-  SAY ~Ты что, сумасшедший? Я же сказал, ВОРОТА ЗАКРЫТЫ!~ ~Ты что, сумасшедшая? Я же сказал, ВОРОТА ЗАКРЫТЫ!~
+  SAY @13
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.1
-  SAY ~Послушайте, ну что вы меня допрашиваете? В Лускане небезопасно, и к тому же вокруг бушует мор. Неужели вам нужна еще какая-то информация? Но можете не волноваться, обычный порядок скоро будет восстановлен. Мы откроем ворота и вы сможете попасть в Лускан.~
-  IF ~~ THEN REPLY ~Возможно, я смогу помочь городу.~ GOTO 8
-  IF ~~ THEN REPLY ~Как насчет небольшого пожертвования в пользу "города", ну, скажем 300 золотых?~ GOTO 9
-  IF ~~ THEN REPLY ~Я не сомневаюсь, что есть какой-то способ попасть в город.~ GOTO 5
-  IF ~~ THEN REPLY ~Пропустите меня... немедленно.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 8
+  IF ~~ THEN REPLY @16 GOTO 9
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
-  SAY ~Я в этом сомневаюсь, <SIRMAAM>. Заходите попозже, когда наши проблемы будут решены.~
-  IF ~~ THEN REPLY ~Как насчет небольшого пожертвования в пользу "города", ну, скажем 300 золотых?~ GOTO 9
-  IF ~~ THEN REPLY ~Я не сомневаюсь, что есть какой-то способ попасть в город.~ GOTO 5
-  IF ~~ THEN REPLY ~Пропустите меня... немедленно.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, хорошо, я пойду.~ GOTO 3
+  SAY @17
+  IF ~~ THEN REPLY @16 GOTO 9
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.2
-  SAY ~И потом дожидаться кучи неприятностей от сержанта? Нет, спасибо, <SIRMAAM>... ворота слишком хорошо охраняются. Приходите лучше, когда эти проблемы будут уже решены.~
+  SAY @18
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("GoToLuskan","GLOBAL",1)~ THEN BEGIN 10 // from:
-  SAY ~Хмм... судя по описанию, вы как раз та личность... С вами хочет говорить сержант, <SIRMAAM>.~
+  SAY @19
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("GoToLuskan","GLOBAL",2)~ THEN BEGIN 11 // from:
-  SAY ~Не знаю, как вы уговорили сержанта, но если он согласился, проходите. Лускан сейчас - опасное место, но, в конце концов, вы же своей шеей рискуете.~
+  SAY @20
   IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12 // from: 11
-  SAY ~Я должен предупредить... если вы войдете в город, выпустить вас мы уже не сможем. Решате - внутрь или наружу.~
+  SAY @21
   IF ~~ THEN EXIT
 END

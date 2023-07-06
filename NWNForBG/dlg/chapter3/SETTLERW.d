@@ -4,13 +4,13 @@ BEGIN ~SETTLERW~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,1)~ THEN BEGIN 0 // from:
-  SAY ~ ак можно было мне в этом запутатьс€? я даже не знаю толком, как мечом махать!~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,2)~ THEN BEGIN 1 // from:
-  SAY ~я умол€ла командира ƒамаса отпустить мен€, проверить как там мое хоз€йство, но у него каменное сердце.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 

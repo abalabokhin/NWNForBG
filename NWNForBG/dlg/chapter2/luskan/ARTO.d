@@ -5,33 +5,33 @@
 BEGIN ~ARTO~
 
 IF ~  True()~ THEN BEGIN 0 // from:
-  SAY ~Приветствую! Я Арто, красный волшебник Тая. У меня есть множество тайных и магических вещиц, которые я с удовольствием продам вам практически по разумной цене.~
-  IF ~~ THEN REPLY ~Давай посмотрим на твой товар.~ GOTO 1
-  IF ~~ THEN REPLY ~Кто эти красные волшебники?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Только вам придется что-нибудь купить. Я предпочитаю не показывать свои товары нищим и бандитам.~
+  SAY @4
   IF ~~ THEN DO ~StartStore("Arto",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Красные волшебники - мастера магических таинств. У нас есть анклавы по всем королевствам, мы предлагаем широкий ассортимент различных товаров из Тая. Я -торговец и член одного из этих анклавов.~
-  IF ~~ THEN REPLY ~Давай посмотрим на твой товар.~ GOTO 1
-  IF ~~ THEN REPLY ~Так это ваш анклав? Впечатляет. Нет, правда.~ GOTO 4
-  IF ~~ THEN REPLY ~Это твоя анклав? Жалкий вид.~ GOTO 4
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @5
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @6 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.2
-  SAY ~Да, заходите еще.~
+  SAY @8
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
-  SAY ~Это НЕ мой анклав, ты, лысая обезьяна. Я здесь по необходимости. Мой анклав был уничтожен Высшими Капитанами, как и большая часть города. Когда все успокоится, я вернусь. Ну так как, хотите вы что-нибудь купить, или нет?~
-  IF ~~ THEN REPLY ~Давай посмотрим на твой товар.~ GOTO 1
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 3
+  SAY @9
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 

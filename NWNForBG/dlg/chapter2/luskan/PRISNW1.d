@@ -4,37 +4,37 @@ BEGIN ~PRISNW1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(6,1)~ THEN BEGIN 0 // from:
-  SAY ~¬се они отправились ловить мен€, думают, € ничего не знаю, но €-то знаю.~
+  SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(6,2)~ THEN BEGIN 1 // from:
-  SAY ~Ёто те, которые бросили мен€ сюда, все они сговорились убрать мен€, чтобы € им не мешал.~
+  SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(6,3)~ THEN BEGIN 2 // from:
-  SAY ~—коро € отомщу... ќчень скоро.~
+  SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(6,4)~ THEN BEGIN 3 // from:
-  SAY ~Ќикогда не стоит недооценивать силу ненависти, она согревает человека изнутри.~
+  SAY @3
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(6,5)~ THEN BEGIN 4 // from:
-  SAY ~ћен€ окружают лишь лжецы и предатели, они крадут мои мысли, чтобы заставить мен€ страдать! Ќо у мен€ есть тайные мысли, которые им никогда не найти!~
+  SAY @4
   IF ~~ THEN EXIT
 END 
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(6,6)~ THEN BEGIN 5 // from:
-  SAY ~я вижу, они, наконец, пришли убить мен€, заткнуть мен€, избавитьс€ от своей проблемы. Ќо нет, этого € им не позволю, они у мен€ захлебнутс€ в собственной крови.~
+  SAY @5
   IF ~~ THEN EXIT
 END
 

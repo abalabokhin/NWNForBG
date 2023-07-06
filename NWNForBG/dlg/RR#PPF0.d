@@ -9,6 +9,6 @@ BEGIN ~RR#PPF0~
 
 IF ~  True()
 ~ THEN BEGIN 0 // from:
-  SAY ~Идите прочь! Не хочу иметь никаких дел с жалкими карманниками!~
+  SAY @0
   IF ~~ THEN EXIT
 END

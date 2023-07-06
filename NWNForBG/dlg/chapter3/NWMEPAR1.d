@@ -4,7 +4,7 @@ BEGIN ~NWMEPAR1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Гонги! Я знаю секрет... вам я скажу и свободен я буду!~
+  SAY @0
   IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("GongDemo")~ EXIT
 END
 
@@ -12,13 +12,13 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)~ THEN BEGIN 1 // from:
-  SAY ~Разве я не понятно продемонстрировал очередность ударов по гонгам?~
-  IF ~~ THEN REPLY ~Нет мне все понятно.~ EXIT
-  IF ~~ THEN REPLY ~Покажи еще раз.~ GOTO 2
+  SAY @1
+  IF ~~ THEN REPLY @2 EXIT
+  IF ~~ THEN REPLY @3 GOTO 2
 END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
-  SAY ~Смотри, слушай и запоминай~
+  SAY @4
   IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("GongDemo")~ EXIT
 END
 

@@ -4,85 +4,85 @@ BEGIN ~DOGNW1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NyatarQuest","GLOBAL",0)OR(3)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)HasItemEquiped("NyatAmul",LastTalkedToBy(Myself))~ THEN BEGIN 0 // from:
-  SAY ~Собака радостно реагирует на ваше появление, возбужденно виляет хвостом и позволяет себя погладить. Она выжидающе смотрит на вас своими дружелюбными глазами.~
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Спросить собаку о всякой полезной информации.~ GOTO 2
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Собака отвечает вам образами из своего сознания. Она неплохо себя чувствует в этом районе города, но проголодалась. Так же, как и другие существа в районе, собака избегает только двух мест, где она ощущает присутствие жутких тварей.~
-  IF ~~ THEN REPLY ~Спросить о первом месте.~ GOTO 4
-  IF ~~ THEN REPLY ~Спросить о втором месте.~ GOTO 5
-  IF ~~ THEN REPLY ~Дать собаке кусочек угощения.~ GOTO 6
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Собака с трудом понимает, что вам может показаться полезным... хотя она с удовольствием расскажет вам о тех местах в этом районе, где можно выпросить еду. Собака описывает вам последние новости. Она пыталась уговорить старого человека не ходить в плохое место неподалеку. Человек не послушался... и не вернулся.~
-  IF ~~ THEN REPLY ~Спросить о плохом месте.~ GOTO 7
-  IF ~~ THEN REPLY ~Спросить о старом человеке.~ GOTO 8
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @8
+  IF ~~ THEN REPLY @9 GOTO 7
+  IF ~~ THEN REPLY @10 GOTO 8
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~По вашей команде собака радостно убегает, чтобы вернуться к своим обычным делам.~
+  SAY @11
   IF ~~ THEN DO ~RunAwayFrom(LastTalkedToBy(Myself),60)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Ваше сознание заполняют примитивные ощущения, оживляя образы самых странных тварей... ни один из образов не проявляется настолько ясно, чтобы вы могли его описать. Собака вспоминает множество зверей за решеткой... в самых разнообразных клетках. Все они расположены в одном месте, в северо-восточной части района.~
-  IF ~~ THEN REPLY ~Спросить о втором месте.~ GOTO 5
-  IF ~~ THEN REPLY ~Дать собаке кусочек угощения.~ GOTO 6
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @12
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
-  SAY ~Этот вопрос в собачьем сознании пробуждает самые темные образы. Большой дом в северной части района... туда собака не ходит. В сознании собаки этот дом связан со злой магией и ужасными запахами. Ее собратья, неосторожно подходившие слишком близко к этому дому, никогда не возвращались.~
-  IF ~~ THEN REPLY ~Спросить о первом месте.~ GOTO 4
-  IF ~~ THEN REPLY ~Дать собаке кусочек угощения.~ GOTO 6
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @13
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @7 GOTO 6
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.3
-  SAY ~Вы выуживаете из своей сумки полоски сушеного мяса. Собака радостно проглатывает их и с благодарностью виляет хвостом.~
-  IF ~~ THEN REPLY ~Ваше восприятие подсказывает, что  собака чем-то встревожена. ~ GOTO 9
-  IF ~~ THEN REPLY ~Спросить о первом месте.~ GOTO 4
-  IF ~~ THEN REPLY ~Спросить о втором месте.~ GOTO 5
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @14
+  IF ~~ THEN REPLY @15 GOTO 9
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @6 GOTO 5
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.1
-  SAY ~Собака поскуливает, когда вы спрашиваете об этом. Есть большой дом в северной части района, куда собака не ходит... он пахнет опасностью и злом.~
-  IF ~~ THEN REPLY ~Спросить о старом человеке.~ GOTO 8
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @16
+  IF ~~ THEN REPLY @10 GOTO 8
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 8 // from: 2.2
-  SAY ~Собака вызывает образ приятного человека средних лет. Это приятная ассоциация... а по форме вы догадываетесь, что это был городской стражник.~
-  IF ~~ THEN REPLY ~Спросить о плохом месте.~ GOTO 7
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @17
+  IF ~~ THEN REPLY @9 GOTO 7
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.1
-  SAY ~Собака знает, что недавно в районе появилось еще одно существо... не опасное, но сильно связанное с силами природы. По простому образу, созданному собакой, вы понимаете, что пес, собственно говоря, видел дриаду. Дриада была расстроена... но собака не знает, что с ней случилось.~
-  IF ~~ THEN REPLY ~Спросить о странных и необычных тварях в районе.~ GOTO 1
-  IF ~~ THEN REPLY ~Спросить собаку о всякой полезной информации.~ GOTO 2
-  IF ~~ THEN REPLY ~Отослать собаку.~ GOTO 3
+  SAY @18
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // -------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("NyatarQuest","GLOBAL",0)!Alignment(LastTalkedToBy(Myself),MASK_EVIL)~ THEN BEGIN 10 // from:
-  SAY ~Собака с любопытством смотрит на вас. Она настроена вполне дружелюбно.~
+  SAY @19
   IF ~~ THEN EXIT
 END
 
@@ -90,7 +90,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("NyatarQuest","GLOBAL",0)Alignment(LastTalkedToBy(Myself),MASK_EVIL)~ THEN BEGIN 11 // from:
-  SAY ~Собака оскаливает зубы и рычит, явно обеспокоенная вашим приближением.~
+  SAY @20
   IF ~~ THEN EXIT
 END
 
@@ -98,7 +98,7 @@ END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NyatarQuest","GLOBAL",0)!Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)!HasItemEquiped("NyatAmul",LastTalkedToBy(Myself))~ THEN BEGIN 12 // from:
-  SAY ~Собака с любопытством смотрит на вас. Она настроена вполне дружелюбно.~
+  SAY @19
   IF ~~ THEN EXIT
 END
 

@@ -4,41 +4,41 @@ BEGIN ~SOLDGNW3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(1,2)Global("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Вы - подкрепление? Это хорошо. Делайте, что считаете нужным. Моим людям приказано удерживать позицию.~
-  IF ~~ THEN REPLY ~Что вы видели?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы забыли про свой долг стражника?~ GOTO 2
-  IF ~~ THEN REPLY ~Нежить как-нибудь связана с мором?~ GOTO 3
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Как вы думаете, что мы видели? Вокруг только смерть. Я захочу встретиться с нежитью не раньше, чем превращусь в тупоумного искателя приключений. Никогда мне не нравилось работать рядом с Великим Кладбищем. Кажется, чума наполнила его до самых краев.~
-  IF ~~ THEN REPLY ~Где это? Это оттуда появилась нежить?~ GOTO 4
-  IF ~~ THEN REPLY ~Вы забыли про свой долг стражника?~ GOTO 2
-  IF ~~ THEN REPLY ~Нежить как-нибудь связана с мором?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @4
+  IF ~~ THEN REPLY @5 GOTO 4
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
-  SAY ~Что вы об этом знаете? Вы не ветеран. Вы только что сюда прибыли. Такой бой не входит в наши обязанности. Мои люди следят за порядком, они не сражаются со всякой мерзостью. Это злая магия, и у нас нет средств противодействия ей.~
-  IF ~~ THEN REPLY ~Что вы видели?~ GOTO 1
-  IF ~~ THEN REPLY ~Нежить как-нибудь связана с мором?~ GOTO 3
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @7
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @3 GOTO 3
+  IF ~~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
-  SAY ~Откуда мне знать, бесы вас возьми? Что я могу знать о нежити? Или о чуме? Это не моя проблема. Я знаю, что нежить постоянно на нас нападает. Кто бы за этим не стоял, он хочет нашей смерти. Точка. Я не собираюсь туда идти, словно идиот.~
-  IF ~~ THEN REPLY ~Что вы видели?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы забыли про свой долг стражника?~ GOTO 2
-  IF ~~ THEN REPLY ~До свидания.~ GOTO 5
+  SAY @8
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Великое Кладбище находится на севере Гнезда Нищих. Идите туда, если хотите. Я ничего не хочу об этом знать.~
+  SAY @9
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
-  SAY ~Идите, куда хотите. Мои люди будут удерживать эту позицию. По крайней мере, здесь безопасно.~
+  SAY @10
   IF ~~ THEN EXIT
 END
 
@@ -46,17 +46,17 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,2)Global("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 6 // from:
-  SAY ~В чем дело? Мне уже надоело объясняться. Мои люди не собираются рисковать своими жизнями. Точка.~
-  IF ~~ THEN REPLY ~Что вы видели?~ GOTO 1
-  IF ~~ THEN REPLY ~Вы забыли про свой долг стражника?~ GOTO 2
-  IF ~~ THEN REPLY ~Нежить как-нибудь связана с мором?~ GOTO 3
+  SAY @11
+  IF ~~ THEN REPLY @1 GOTO 1
+  IF ~~ THEN REPLY @2 GOTO 2
+  IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // ----------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 7 // from:
-  SAY ~Вижу, нежити вокруг стало намного меньше, но мы не собираемся рисковать. Мы остаемся здесь.~
+  SAY @12
   IF ~~ THEN EXIT
 END
 

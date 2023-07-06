@@ -4,177 +4,171 @@ BEGIN ~NYATAR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("NyatarQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
-  SAY ~Здравствуйте. Да благословят вас Мать Земли Чаунти и Отец Деревьев Сильванус. Я Ниатар, слуга природы.~ [NYATAR52]
-  IF ~  IsGabber(Player1)~ THEN REPLY ~Привет, я <CHARNAME>. Можно задать несколько вопросов?~ GOTO 1
-  IF ~  IsGabber(Player1)~ THEN REPLY ~Я <CHARNAME>. У меня есть вопросы.~ GOTO 2
-  IF ~  IsGabber(Player1)~ THEN REPLY ~Я <CHARNAME>. Заткнись и отвечай на вопросы.~ GOTO 2
-  IF ~  !IsGabber(Player1)~ THEN REPLY ~У меня есть вопросы.~ GOTO 2
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @0
+  IF ~  IsGabber(Player1)~ THEN REPLY @1 GOTO 1
+  IF ~  IsGabber(Player1)~ THEN REPLY @2 GOTO 2
+  IF ~  IsGabber(Player1)~ THEN REPLY @3 GOTO 2
+  IF ~  !IsGabber(Player1)~ THEN REPLY @4 GOTO 2
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
-  SAY ~Я приветствую ваше вежливое обращение. Спрашивайте, что угодно, я постараюсь ответить.~
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~~ THEN REPLY ~Разве в центре города есть места, связанные с природой?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @6
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2 0.3 0.4
-  SAY ~Я помогу, чем смогу, но следите за своим тоном в обители природы. Я стремлюсь к гармонии со всем, и в том числе с людьми, с которыми приходится общаться.~
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~~ THEN REPLY ~Разве в центре города есть места, связанные с природой?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @10
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.5
-  SAY ~Иди, и оставайся в гармонии с природой.~
+  SAY @11
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
-  SAY ~Я думаю, что и город должен стремиться к гармонии; то есть, никогда нельзя забывать о природе. *Вздыхает* Но это непросто в такое время.~
+  SAY @12
   IF ~  Class(LastTalkedToBy(Myself),DRUID_ALL)~ THEN GOTO 6
   IF ~  Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN GOTO 7
   IF ~  !Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.2
-  SAY ~Природа повсюду. Ее нельзя ограничить стенами или объявлениями о собственности. Она присутствует даже в сердце Невервинтера. Особенно в такое время, когда население так ослаблено чумой. Вся гармония рушится, когда люди теряют надежду. Я никак не могу повлиять на судьбу города. Эта чума неестественна. Я не могу уехать, пока здесь царит такая мерзость.~
-  IF ~~ THEN REPLY ~Почему вы так уверены, что эта чума - неестественна?~ GOTO 9
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @13
+  IF ~~ THEN REPLY @14 GOTO 9
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
-  SAY ~Вы же <BROTHERSISTER>-друид, не так ли? Я не могу ошибаться. Мы родственники в глазах Матери Земли. Вы все поймете. Многие люди страдают от чумы, но животные тоже терпят муки. Они томятся в клетках, в загоне квартала Черного озера. Там находится Невервинтерский зоопарк. Им управляет охотник и его "благородное " окружение. Это грязно, это безжалостно, это неправильно! С животными плохо обращаются.~
-  IF ~~ THEN REPLY ~Животные в клетках? Это недопустимо. Во всяком случае не во время чумы.~ GOTO 10
-  IF ~~ THEN REPLY ~Зоопарк ничего не значит по сравнению с чумой.~ GOTO 11
+  SAY @15
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
 END
 
 IF ~~ THEN BEGIN 7 // from: 4.2
-  SAY ~Вы... вы следопыт, не так ли? Я не могу ошибаться, если передо мной <BROTHERSISTER> из леса, я сразу узнаю. Вы все поймете. Многие люди страдают от чумы, но животные тоже терпят муки. Они томятся в клетках, в загоне квартала Черного озера. Там находится Невервинтерский зоопарк. Им управляет охотник и его "благородное " окружение. Это грязно, это безжалостно, это неправильно! С животными плохо обращаются.~
-  IF ~~ THEN REPLY ~Животные в клетках? Это недопустимо. Во всяком случае не во время чумы.~ GOTO 10
-  IF ~~ THEN REPLY ~Зоопарк ничего не значит по сравнению с чумой.~ GOTO 11
+  SAY @18
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
-  SAY ~Вы не поймете. Только <BROTHERSISTER> по природе сможет понять, что нужно делать. Насколько важно мое занятие.~
-  IF ~  OR(2)CheckStatGT(LastTalkedToBy(Myself),15,WIS)CheckStatGT(LastTalkedToBy(Myself),15,CHR)~ THEN REPLY ~Может, я все же смогу помочь?~ GOTO 12
-  IF ~  CheckStatLT(LastTalkedToBy(Myself),16,WIS)CheckStatLT(LastTalkedToBy(Myself),16,CHR)~ THEN REPLY ~Может, я все же смогу помочь?~ GOTO 13
-  IF ~~ THEN REPLY ~Разве в центре города есть места, связанные с природой?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @19
+  IF ~  OR(2)CheckStatGT(LastTalkedToBy(Myself),15,WIS)CheckStatGT(LastTalkedToBy(Myself),15,CHR)~ THEN REPLY @20 GOTO 12
+  IF ~  CheckStatLT(LastTalkedToBy(Myself),16,WIS)CheckStatLT(LastTalkedToBy(Myself),16,CHR)~ THEN REPLY @20 GOTO 13
+  IF ~~ THEN REPLY @8 GOTO 5
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.1
-  SAY ~Она убивает дух. Жертвы гниют изнутри, и жизнь уходит из них... Но куда она уходит? Здесь пропадает очень много энергии! В природе все, что умирает, возрождается в другом месте, но эта Воющая Смерть, словно вор, крадет самую суть человека. Это НЕ естественно.~
-  IF ~~ THEN REPLY ~Какова ваша должность?~ GOTO 4
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @21
+  IF ~~ THEN REPLY @7 GOTO 4
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.1
-  SAY ~Я делал все, чтобы его закрыли, но теперь всех заботит только чума. Представители власти, с которыми я говорил, умерли от нее. Это лишь дало зоопарку отсрочку. Они знают, что закон настроен против них, но теперь у них будет время скрыть свои грязные дела. Я боюсь, что животных просто убьют и растащат на трофеи. Всем существам нужно милосердие. Медведь, пантера, волк и лев - их всех надо спасти.~
-  IF ~~ THEN REPLY ~Что вы знаете об этом охотнике?~ GOTO 14
-  IF ~~ THEN REPLY ~Для чего нужен зоопарк?~ GOTO 15
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Я помогу вам освободить животных.~ GOTO 16
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Мне неинтересно вам помогать.~ GOTO 17
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Я помогу.~ GOTO 18
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Мне это неинтересно.~ GOTO 19
+  SAY @22
+  IF ~~ THEN REPLY @23 GOTO 14
+  IF ~~ THEN REPLY @24 GOTO 15
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 17
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @27 GOTO 18
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @28 GOTO 19
 END
 
 IF ~~ THEN BEGIN 11 // from: 6.2
-  SAY ~Вы думаете, как все. Я делал все, чтобы его закрыли, но теперь всех заботит только чума. Представители власти, с которыми я говорил, умерли от нее. Это лишь дало зоопарку отсрочку. Они знают, что закон настроен против них, но теперь у них будет время скрыть свои грязные дела. Я боюсь, что животных просто убьют и растащат на трофеи. Всем существам нужно милосердие. Медведь, пантера, волк и лев - их всех надо спасти.~
-  IF ~~ THEN REPLY ~Что вы знаете об этом охотнике?~ GOTO 14
-  IF ~~ THEN REPLY ~Для чего нужен зоопарк?~ GOTO 15
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Я помогу вам освободить животных.~ GOTO 16
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Мне неинтересно вам помогать.~ GOTO 17
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Я помогу.~ GOTO 18
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Мне это неинтересно.~ GOTO 19
+  SAY @29
+  IF ~~ THEN REPLY @23 GOTO 14
+  IF ~~ THEN REPLY @24 GOTO 15
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 17
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @27 GOTO 18
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @28 GOTO 19
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.1
-  SAY ~Возможно, я сужу слишком быстро. У вас честное лицо. Может, вы поймете, почему это так важно. Многие люди страдают от чумы, но животные тоже терпят муки. Они томятся в клетках, в загоне квартала Черного озера. Там находится Невервинтерский зоопарк. Им управляет охотник и его "благородное " окружение. Это грязно, это безжалостно, это неправильно! С животными плохо обращаются.~
-  IF ~~ THEN REPLY ~Животные в клетках? Это недопустимо. Во всяком случае не во время чумы.~ GOTO 10
-  IF ~~ THEN REPLY ~Зоопарк ничего не значит по сравнению с чумой.~ GOTO 11
+  SAY @30
+  IF ~~ THEN REPLY @16 GOTO 10
+  IF ~~ THEN REPLY @17 GOTO 11
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.2
-  SAY ~Нет, я ценю ваше предложение, но оставим это тому, кто больше понимает в гармонии.~
-  IF ~~ THEN REPLY ~В центре города есть места, связанные с природой?~ GOTO 5
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @31
+  IF ~~ THEN REPLY @32 GOTO 5
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 14 // from: 11.1
-  SAY ~Монтгомери «Точный Выстрел» Визерсон. Его семья всегда защищала права животных, но Монтгомери изменил свои взгляды, когда умер его отец. Свой успех он определяет тем, чем ему удалось завладеть: семьей, делами и природой, одним существом за другим. Он живет вне гармонии. От него зависят несколько аристократов. Их влияние защитило его от того небольшого давления, которое я смог оказать на него с помощью закона.~
-  IF ~~ THEN REPLY ~Для чего нужен зоопарк?~ GOTO 15
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Я помогу вам освободить животных.~ GOTO 16
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Мне неинтересно вам помогать.~ GOTO 17
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Я помогу.~ GOTO 18
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Мне это неинтересно.~ GOTO 19
+  SAY @33
+  IF ~~ THEN REPLY @24 GOTO 15
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 17
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @27 GOTO 18
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @28 GOTO 19
 END
 
 IF ~~ THEN BEGIN 15 // from: 11.2
-  SAY ~Они утверждают, что хотят показать простому народу красоту природы, но на самом деле, туда пускают лишь членов нескольких богатых семейств. Есть гуманные способы делать такие вещи, но зоопарк лишь держит животных в плену, показывая превосходство рода людского. О животных в зоопарке заботятся так, что лучше бы уж они приколотили их головы на стену!~
-  IF ~~ THEN REPLY ~Что вы знаете об этом охотнике?~ GOTO 14
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Я помогу вам освободить животных.~ GOTO 16
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Мне неинтересно вам помогать.~ GOTO 17
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Я помогу.~ GOTO 18
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Мне это неинтересно.~ GOTO 19
+  SAY @34
+  IF ~~ THEN REPLY @23 GOTO 14
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 17
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @27 GOTO 18
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @28 GOTO 19
   IF ~  GlobalGT("NyatarQuest","GLOBAL",1)~ THEN GOTO 28
 END
 
 IF ~~ THEN BEGIN 16 // from: 11.3
-  SAY ~Это я и надеялся от вас услышать. Возьмите несколько вещей, они вам пригодятся. Я долго думал, что может понадобиться. Этот ключ поможет пройти в зоопарк. Мой зверек-помощник "нашел" его, а я сделал копии. Вас может остановить стража, но не двери. Это свиток "перехода через растения". Используйте его на большом дереве у зоопарка, и все животные, которых вы приведете туда, окажутся здесь.~
+  SAY @35
   IF ~  OR(2)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN GOTO 20
   IF ~  !Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN GOTO 21
 END
 
 IF ~~ THEN BEGIN 20 // from: 16.1
-  SAY ~Пожалуйста, поговорите с животными, я знаю, что вы можете. Отведите их на свободу, к большому дереву, пока они еще живы. Их незачем держать в плену.~
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару.~ EXIT
+  SAY @36
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @37 EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 16.2
-  SAY ~Возьмите этот амулет. Он позволит вам говорить с животными, как делают друиды или следопыты. Пожалуйста, отведите животных к большому дереву, освободите их!~
+  SAY @38
   IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)
-GiveItemCreate("NyatAmul",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару. Для того чтобы мы могли разговаривать с животными, нужно надеть Амулет общения с животными, который Ниатар нам также любезно предоставил.~ EXIT
+GiveItemCreate("NyatAmul",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @39 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 11.4
-  SAY ~Я понимаю ваше нежелание, сейчас ведь такое сложное время, но маленькие вещи тоже имеют значение. Пожалуйста, возьмите это на случай, если передумаете. Этот ключ поможет пройти в зоопарк. Мой зверек-помощник "нашел" его, а я сделал копии. Вас может остановить стража, но не двери.Это свиток "перехода через растения". Используйте его на большом дереве у зоопарка, и все животные, которых вы приведете туда, окажутся здесь.~
+  SAY @40
   IF ~  OR(2)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN GOTO 22
   IF ~  !Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN GOTO 23
 END
 
 IF ~~ THEN BEGIN 22 // from: 17.1
-  SAY ~Пожалуйста, поговорите с животными, я знаю, что вы можете. Отведите их на свободу, к большому дереву, пока они еще живы. Их незачем держать в плену.~
+  SAY @36
   IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",1)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 17.2
-  SAY ~Возьмите этот амулет. Он позволит вам говорить с животными, как делают друиды или следопыты. Пожалуйста, отведите животных к большому дереву, освободите их!~
+  SAY @38
   IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",1)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)
 GiveItemCreate("NyatAmul",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 15.4
-  SAY ~Рад это слышать. Помнится, я дал вам ключ от зоопарка и свиток перехода через растения. Используйте свиток на большом дереве у зоопарка, и все животные, которых вы приведете туда, окажутся здесь.~
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)~ UNSOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару.~ EXIT
+  SAY @41
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @37 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 15.5
-  SAY ~Пожалуйста, подумайте над этим еще раз. Животные не должны погибнуть.~
+  SAY @42
   IF ~~ THEN EXIT
 END
 
@@ -182,137 +176,113 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)GlobalLT("NyatarQuest","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 24 // from:
-  SAY ~Здравствуйте снова, <CHARNAME>. Природа приветствует вас. Надеюсь, вы провели день лучше, чем эти бедные создания в зоопарке.~ [NYATAR53]
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Какие животные? Может, вам нужна помощь?~ GOTO 4
-  IF ~  GlobalGT("AnimalsRescued","GLOBAL",0)GlobalLT("NyatarQuest","GLOBAL",3)~ THEN REPLY ~В деле освобождения животных наметился прогресс.~ GOTO 25
-  IF ~  GlobalGT("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Расскажите еще раз, что нужно делать.~ GOTO 26
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @43
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @44 GOTO 4
+  IF ~  GlobalGT("AnimalsRescued","GLOBAL",0)GlobalLT("NyatarQuest","GLOBAL",3)~ THEN REPLY @45 GOTO 25
+  IF ~  GlobalGT("NyatarQuest","GLOBAL",0)~ THEN REPLY @46 GOTO 26
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 26 // from: 24.3
-  SAY ~Многие люди страдают от чумы, но животные тоже терпят муки. Они томятся в клетках, в загоне квартала Черного озера. Там находится Невервинтерский зоопарк. Им управляет охотник и его "благородное " окружение. Это грязно, это безжалостно, это неправильно! С животными плохо обращаются.~
+  SAY @47
   IF ~~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 27 // from: 26.1
-  SAY ~Я делал все, чтобы его закрыли, но теперь всех заботит только чума. Представители власти, с которыми я говорил, умерли от нее. Это лишь дало зоопарку отсрочку. Они знают, что закон настроен против них, но теперь у них будет время скрыть свои грязные дела. Я боюсь, что животных просто убьют и растащат на трофеи. Всем существам нужно милосердие. Медведь, пантера, волк и лев - их всех надо спасти.~
-  IF ~  GlobalLT("NyatarQuest","GLOBAL",2)~ THEN REPLY ~Что вы знаете об этом охотнике?~ GOTO 14
-  IF ~  GlobalLT("NyatarQuest","GLOBAL",2)~ THEN REPLY ~Для чего нужен зоопарк?~ GOTO 15
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Я помогу вам освободить животных.~ GOTO 16
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Мне неинтересно вам помогать.~ GOTO 17
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Я помогу.~ GOTO 18
-  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY ~Мне это неинтересно.~ GOTO 19
+  SAY @22
+  IF ~  GlobalLT("NyatarQuest","GLOBAL",2)~ THEN REPLY @23 GOTO 14
+  IF ~  GlobalLT("NyatarQuest","GLOBAL",2)~ THEN REPLY @24 GOTO 15
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 17
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @27 GOTO 18
+  IF ~  Global("NyatarQuest","GLOBAL",1)~ THEN REPLY @28 GOTO 19
   IF ~  GlobalGT("NyatarQuest","GLOBAL",1)~ THEN GOTO 28
 END
 
 IF ~~ THEN BEGIN 28 // from: 26.7
-  SAY ~Помнится, я дал вам ключ от зоопарка и свиток перехода через растения. Используйте свиток на большом дереве у зоопарка, и все животные, которых вы приведете туда, окажутся здесь.~
-  IF ~  GlobalGT("AnimalsRescued","GLOBAL",0)GlobalLT("NyatarQuest","GLOBAL",3)~ THEN REPLY ~В деле освобождения животных наметился прогресс.~ GOTO 25
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @48
+  IF ~  GlobalGT("AnimalsRescued","GLOBAL",0)GlobalLT("NyatarQuest","GLOBAL",3)~ THEN REPLY @45 GOTO 25
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 25 // from: 24.2
-  SAY ~Полезная информация. Это правда, мои животные-шпионы обо всем мне докладывают. Я подумал, нужно все время держать запертых животных под наблюдением.~
+  SAY @49
   IF ~  Global("AnimalsRescued","GLOBAL",5)GlobalGT("AnimalsDead","GLOBAL",0)~ THEN GOTO 29
   IF ~  Global("AnimalsRescued","GLOBAL",5)Global("AnimalsDead","GLOBAL",0)~ THEN GOTO 30
   IF ~  GlobalLT("AnimalsRescued","GLOBAL",5)~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.1
-  SAY ~Все животные уж точно теперь свободны, но смерть нескольких существ - это ужасное завершение задания...~
+  SAY @50
   IF ~  Global("AnimalsDead","GLOBAL",5)~ THEN GOTO 32
   IF ~  GlobalLT("AnimalsDead","GLOBAL",5)!Global("AnimalsDead","GLOBAL",1)~ THEN GOTO 33
   IF ~  Global("AnimalsDead","GLOBAL",1)~ THEN GOTO 34
 END
 
 IF ~~ THEN BEGIN 30 // from: 25.2
-  SAY ~Все животные на свободе и в безопасности. Жаль, что их смотрители умерли. Каждый имеет шанс на жизнь... Может, они просто упустили свой шанс. Можно сказать, что все закончилось успешно, и я награжу вас соответственно. Уверен, вы останетесь довольны. Прошу вас, примите эту награду с благословлением Матери Земли, Отца Деревьев и моим тоже.~
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(120000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару.%)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару. Для того чтобы мы могли разговаривать с животными, нужно надеть Амулет общения с животными, который Ниатар нам также любезно предоставил.%)~ SOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар доволен. Все животные были освобождены из зоопарка и теперь находятся под защитой друида.~ EXIT
+  SAY @51
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(120000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @52 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 25.3
-  SAY ~Кое-что сдвинулось, но не все животные свободны. Пожалуйста, если вы можете помочь, то сейчас как раз самое время.~
-  IF ~  GlobalGT("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Расскажите еще раз, что нужно делать.~ GOTO 26
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @53
+  IF ~  GlobalGT("NyatarQuest","GLOBAL",0)~ THEN REPLY @46 GOTO 26
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 IF ~~ THEN BEGIN 32 // from: 29.1
-  SAY ~Они все мертвы. Вы же не можете назвать это успешным завершением, не так ли? Я не могу. А я-то надеялся на маленький лучик света среди этой чумы... Пожалуйста, оставьте меня. Я не хочу говорить. Это трагедия.~
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",9)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару.%)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару. Для того чтобы мы могли разговаривать с животными, нужно надеть Амулет общения с животными, который Ниатар нам также любезно предоставил.%)~ SOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар убит горем, что является вполне объяснимой реакцией на смерть всех животных из зоопарка Чернозерья в Невервинтере.~ EXIT
+  SAY @54
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",9)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @55 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 29.2
-  SAY ~Ну, хотя бы кто-то из животных спасен. Уже кое-что. Хоть какая-то жизнь среди этого времени смерти. Я не совсем доволен, но могло быть и хуже. Я хочу наградить вас за то, что вы сделали, но сами понимаете, награда не может быть слишком щедрой. Результат мог бы быть намного лучше. Возьмите эту награду и скажите спасибо. Наше сотрудничество не было особенно успешным.~
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(80000)GiveGoldForce(900)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару.%)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару. Для того чтобы мы могли разговаривать с животными, нужно надеть Амулет общения с животными, который Ниатар нам также любезно предоставил.%)~ SOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар благодарен за освобождение животных из зоопарка Чернозерья в Невервинтере, но он сильно опечален тем, что некоторые из них погибли. По крайней мере, им больше не придется сидеть в клетке.~ EXIT
+  SAY @56
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(80000)GiveGoldForce(900)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @57 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 29.2
-  SAY ~Убито только одно животное. Ну что ж, почти победа. По сравнению со всем остальным - победа жизни, наконец. Вот, примите с моим благословлением. Уверен, вам понравится. Ваше служение было на уровне.~
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(100000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару.%)EraseJournalEntry(%Центр Невервинтера: спасение животных
-
-Ниатар, друид под Великим Древом в Сердце города, утверждает, что с животными в зоопарке Чернозерья плохо обращаются, и просит их освободить. Он предоставил свиток заклинания "Телепортация через растения", который можно будет применить на одно из деревьев возле зоопарка. Как только освобожденное животное доберется до этого дерева, оно будет немедленно телепортировано к Ниатару. Для того чтобы мы могли разговаривать с животными, нужно надеть Амулет общения с животными, который Ниатар нам также любезно предоставил.%)~ SOLVED_JOURNAL ~Центр Невервинтера: спасение животных
-
-Ниатар благодарен за освобождение животных из зоопарка Чернозерья в Невервинтере, но он сильно опечален тем, что некоторые из них погибли. По крайней мере, им больше не придется сидеть в клетке.~ EXIT
+  SAY @58
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(100000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @57 EXIT
 END
 
 // ---------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)GlobalLT("NyatarQuest","GLOBAL",3)!IsGabber(Player1)~ THEN BEGIN 38 // from:
-  SAY ~Здравствуйте снова, природа приветствует вас. Надеюсь, вы провели день лучше, чем эти бедные создания в зоопарке.~ [NYATAR53]
-  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Какие животные? Может, вам нужна помощь?~ GOTO 4
-  IF ~  GlobalGT("AnimalsRescued","GLOBAL",0)GlobalLT("NyatarQuest","GLOBAL",3)~ THEN REPLY ~В деле освобождения животных наметился прогресс.~ GOTO 25
-  IF ~  GlobalGT("NyatarQuest","GLOBAL",0)~ THEN REPLY ~Расскажите еще раз, что нужно делать.~ GOTO 26
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @59
+  IF ~  Global("NyatarQuest","GLOBAL",0)~ THEN REPLY @44 GOTO 4
+  IF ~  GlobalGT("AnimalsRescued","GLOBAL",0)GlobalLT("NyatarQuest","GLOBAL",3)~ THEN REPLY @45 GOTO 25
+  IF ~  GlobalGT("NyatarQuest","GLOBAL",0)~ THEN REPLY @46 GOTO 26
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 // ---------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("NyatarQuest","GLOBAL",3)Global("NWN1Quest","GLOBAL",0)~ THEN BEGIN 35 // from:
-  SAY ~Чума все свирепствует, но есть и хорошие новости. Животные больше не томятся в этом ужасном зоопарке. Спасибо за вашу помощь, она просто бесценна!~ [NYATAR51]
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @60
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 // ---------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("NyatarQuest","GLOBAL",3)GlobalGT("NWN1Quest","GLOBAL",0)~ THEN BEGIN 36 // from:
-  SAY ~Чума больше не свирепствует, а животные больше не томятся в этом ужасном зоопарке. Спасибо за вашу помощь, она просто бесценна!~
-  IF ~~ THEN REPLY ~Мне нужно пополнить запасы. Что вы можете предложить?~ DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
-  IF ~~ THEN REPLY ~Ну, прощай.~ GOTO 3
+  SAY @61
+  IF ~~ THEN REPLY @9 DO ~StartStore("Nyatar",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @5 GOTO 3
 END
 
 // ---------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("NyatarQuest","GLOBAL",9)~ THEN BEGIN 37 // from:
-  SAY ~Все умирает. Люди... Животные... Один человек ничего не может... Или может? Пожалуйста, оставьте меня в покое. Я не хочу ни с кем говорить.~ [NYATAR50]
+  SAY @62
   IF ~~ THEN EXIT
 END
 
