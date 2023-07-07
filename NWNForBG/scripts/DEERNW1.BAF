@@ -7,7 +7,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("MyChange","LOCALS",1)
-		SetName(102678)  // ?????
+		SetName(@102678)  // ?????
 		ChangeEnemyAlly(Myself,NEUTRAL)
 		ChangeAIScript("GENSHY",OVERRIDE)
 		ChangeAIScript("WDRUNSGT",DEFAULT)
