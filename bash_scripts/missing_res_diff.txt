@@ -1,56 +1,30 @@
-Number of hits: 1654
-File: CRYPTXX.ITM, Name: To all appearances a standard war hammer, one lingering long in its presence will soon discover it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, this hammer has several voidstone shards worked into its metal head. A powerful weapon when used against most targets, its one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this normally devastating weapon.
-
-STATISTICS:
-
-Equipped abilities:
-вЂ“ Strength: -1
-
-Combat abilities:
-вЂ“ The target suffers -1 to Strength for 5 rounds per hit (minimum 1 Strength; Save vs. Spell negates)
-вЂ“ Does no damage to the undead
-вЂ“ Bonuses to hit and damage based on strength do not apply to this weapon
-
-THAC0: +3
-Damage: 1d4+4 (magic)
-Speed Factor: 1
-Proficiency Type: War Hammer
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4, Attribute: Resource=DSPELLXX.VEF
+Number of hits: 1652
+File: CRYPTXX.ITM, Name: Кость из склепа, Attribute: Resource=DSPELLXX.VEF
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
-File: NW1040.ARE, Attribute: Rest movie (day)=RESTDUNG.WBM
-File: NW1040.ARE, Attribute: Rest movie (night)=RESTDUNG.WBM
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
-File: NWGUAR11.CRE, Name: Magic Item Merchant, Attribute: Override script=NWGUAR17.BCS
-File: NWGUAR12.CRE, Name: Magic Item Merchant, Attribute: Override script=NWGUAR17.BCS
+File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
+File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
-File: SPIN116W.SPL, Name: Меня обокрали, если вам очень нужно знать! Она уничтожила моих самых слабых овечек, а теперь остальные следуют за ее легионами нежити! Меня хотят распотрошить на ее алтаре! МЕНЯ! Это неправильно! Это Джаред, слуга  Сирика, потрошит других! А не какой-то червь!, Attribute: Resource=#FF_P109.WAV
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUAI.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUWA.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUEA.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUFI.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#PLSAL.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#PLWYV.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#PLSPD.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#WOLFI.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#BRBR.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#BRBR.ITM
-File: SPPR329.SPL, Name: Вы потеряли стражника? Кто это был?, Attribute: Resource=DSPELLX.VEF
-File: SPPR955.SPL, Name: У меня больше ничего нет! И не надо со мной торговаться! Возьмете вы это или нет, но перестаньте насмехаться надо мной!, Attribute: Resource=REDBLAZE.VEF
-File: SPWI328.SPL, Name: These pear-shaped variations on the common yarting have four sets of paired strings that produce rich tones. They are popular peasant instruments.
-
-STATISTICS:
-
-Weight: 3, Attribute: Resource=ICELANH.VEF
+File: SPIN116W.SPL, Name: Погребальный Звон, Attribute: Resource=#FF_P109.WAV
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUAI.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUWA.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUEA.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUFI.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#PLSAL.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#PLWYV.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#PLSPD.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#WOLFI.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.ITM
+File: SPPR329.SPL, Name: Наслать Болезнь, Attribute: Resource=DSPELLX.VEF
+File: SPPR955.SPL, Name: Глаз Пепла, Attribute: Resource=REDBLAZE.VEF
+File: SPWI328.SPL, Name: Ледяное Копье, Attribute: Resource=ICELANH.VEF

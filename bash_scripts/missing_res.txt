@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1654
+Number of hits: 1652
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -259,27 +259,7 @@ File: COPAMB04.CRE, Name: Gladiator, Attribute: Dialogue=COPAMB04.DLG
 File: COPAMB05.CRE, Name: Copper Coronet Guard, Attribute: Dialogue=COPAMB05.DLG
 File: COWLD.CRE, Name: Cowled Wizard, Attribute: Dialogue=COWLD.DLG
 File: COWLED01.CRE, Name: Cowled Wizard, Attribute: Dialogue=COWLD.DLG
-File: CRYPTXX.ITM, Name: To all appearances a standard war hammer, one lingering long in its presence will soon discover it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, this hammer has several voidstone shards worked into its metal head. A powerful weapon when used against most targets, its one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this normally devastating weapon.
-
-STATISTICS:
-
-Equipped abilities:
-вЂ“ Strength: -1
-
-Combat abilities:
-вЂ“ The target suffers -1 to Strength for 5 rounds per hit (minimum 1 Strength; Save vs. Spell negates)
-вЂ“ Does no damage to the undead
-вЂ“ Bonuses to hit and damage based on strength do not apply to this weapon
-
-THAC0: +3
-Damage: 1d4+4 (magic)
-Speed Factor: 1
-Proficiency Type: War Hammer
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4, Attribute: Resource=DSPELLXX.VEF
+File: CRYPTXX.ITM, Name: Кость из склепа, Attribute: Resource=DSPELLXX.VEF
 File: CUARDUL.CRE, Name: Matron Mother Ardulace, Attribute: Dialogue=CUARDUL.DLG
 File: CUBODHI.CRE, Name: Bodhi, Attribute: Dialogue=CUBODHI.DLG
 File: CUCOW1.CRE, Name: Cowled Enforcer, Attribute: Dialogue=CUCOW1.DLG
@@ -846,13 +826,11 @@ File: NOBW4.CRE, Name: Noblewoman, Attribute: Dialogue=NOBW4.DLG
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDSW1H58.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDMOUND.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDHGNYA1.SPL
-File: NW1040.ARE, Attribute: Rest movie (day)=RESTDUNG.WBM
-File: NW1040.ARE, Attribute: Rest movie (night)=RESTDUNG.WBM
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
-File: NWGUAR11.CRE, Name: Magic Item Merchant, Attribute: Override script=NWGUAR17.BCS
-File: NWGUAR12.CRE, Name: Magic Item Merchant, Attribute: Override script=NWGUAR17.BCS
+File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
+File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -1259,17 +1237,17 @@ File: SPER12.ITM, Name: Ixil's Spike +6, Attribute: Resource=CDHGNYA1.SPL
 File: SPIDHU1.ITM, Name: No such index, Attribute: Icon=PLYWYVRN.BAM
 File: SPIDSW1.ITM, Name: Attack, Attribute: Icon=PLYWYVRN.BAM
 File: SPIN112.SPL, Name: Dispel Magic, Attribute: Resource=SPDISMA.VEF
-File: SPIN116W.SPL, Name: Меня обокрали, если вам очень нужно знать! Она уничтожила моих самых слабых овечек, а теперь остальные следуют за ее легионами нежити! Меня хотят распотрошить на ее алтаре! МЕНЯ! Это неправильно! Это Джаред, слуга  Сирика, потрошит других! А не какой-то червь!, Attribute: Resource=#FF_P109.WAV
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUAI.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUWA.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUEA.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#DRUFI.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#PLSAL.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#PLWYV.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#PLSPD.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#WOLFI.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#BRBR.SPL
-File: SPIN141.SPL, Name: Будьте осторожны. И помните, я щедро вас награжу за ваши усилия., Attribute: Resource=LI#BRBR.ITM
+File: SPIN116W.SPL, Name: Погребальный Звон, Attribute: Resource=#FF_P109.WAV
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUAI.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUWA.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUEA.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUFI.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#PLSAL.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#PLWYV.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#PLSPD.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#WOLFI.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.SPL
+File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.ITM
 File: SPIN550.SPL, Name: Anti-Magic Ray, Attribute: Resource=GBERRY2.ITM
 File: SPIN550.SPL, Name: Anti-Magic Ray, Attribute: Resource=GBERRY3.ITM
 File: SPIN550.SPL, Name: Anti-Magic Ray, Attribute: Resource=GBERRY4.ITM
@@ -1318,7 +1296,7 @@ File: splion2.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion3.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion4.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion5.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
-File: SPPR329.SPL, Name: Вы потеряли стражника? Кто это был?, Attribute: Resource=DSPELLX.VEF
+File: SPPR329.SPL, Name: Наслать Болезнь, Attribute: Resource=DSPELLX.VEF
 File: SPPR350.SPL, Name: Spiritual Clarity, Attribute: Resource=BDAURAFE.ITM
 File: SPPR350.SPL, Name: Spiritual Clarity, Attribute: Resource=BDMYCSP1.ITM
 File: SPPR350.SPL, Name: Spiritual Clarity, Attribute: Resource=BDMYCSP2.ITM
@@ -1365,7 +1343,7 @@ File: SPPR403.SPL, Name: Free Action, Attribute: Resource=CDSW1H58.SPL
 File: SPPR403.SPL, Name: Free Action, Attribute: Resource=CDMOUND.SPL
 File: SPPR403.SPL, Name: Free Action, Attribute: Resource=CDHGNYA1.SPL
 File: SPPR707.EFF, Attribute: Resource=SPPR707D.SPL
-File: SPPR955.SPL, Name: У меня больше ничего нет! И не надо со мной торговаться! Возьмете вы это или нет, но перестаньте насмехаться надо мной!, Attribute: Resource=REDBLAZE.VEF
+File: SPPR955.SPL, Name: Глаз Пепла, Attribute: Resource=REDBLAZE.VEF
 File: sprngb03.ITM, Name: Perhaps you should have been more careful about wearing such a thing to this part of the city. Have you tried retracing your steps?, Attribute: Resource=CDSW1H58.SPL
 File: sprngb03.ITM, Name: Perhaps you should have been more careful about wearing such a thing to this part of the city. Have you tried retracing your steps?, Attribute: Resource=CDMOUND.SPL
 File: sprngb03.ITM, Name: Perhaps you should have been more careful about wearing such a thing to this part of the city. Have you tried retracing your steps?, Attribute: Resource=CDHGNYA1.SPL
@@ -1400,11 +1378,7 @@ File: spsnak4.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: spsnak5.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: SPWI010.SPL, Name: No such index, Attribute: Resource=SPDISMA.VEF
 File: SPWI299.SPL, Name: Summon Cow, Attribute: Resource=WYVERN.WBM
-File: SPWI328.SPL, Name: These pear-shaped variations on the common yarting have four sets of paired strings that produce rich tones. They are popular peasant instruments.
-
-STATISTICS:
-
-Weight: 3, Attribute: Resource=ICELANH.VEF
+File: SPWI328.SPL, Name: Ледяное Копье, Attribute: Resource=ICELANH.VEF
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDSW1H58.SPL
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDMOUND.SPL
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDHGNYA1.SPL
