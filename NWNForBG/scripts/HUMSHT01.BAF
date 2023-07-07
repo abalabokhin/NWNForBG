@@ -169,15 +169,15 @@ IF
 THEN
 	RESPONSE #50
 		SetGlobalTimer("BPW","LOCALS",ONE_ROUND)
-		DisplayStringHead(Myself,@49766)  // ? ?????? ?? ????!
+		DisplayStringHead(Myself,#49766)  // ? ?????? ?? ????!
 		Shout(ASSIST)
 	RESPONSE #50
 		SetGlobalTimer("BPW","LOCALS",ONE_ROUND)
-		DisplayStringHead(Myself,@49767)  // ??????!
+		DisplayStringHead(Myself,#49767)  // ??????!
 		Shout(ASSIST)
 	RESPONSE #50
 		SetGlobalTimer("BPW","LOCALS",ONE_ROUND)
-		DisplayStringHead(Myself,@49768)  // ??????!
+		DisplayStringHead(Myself,#49768)  // ??????!
 		Shout(ASSIST)
 END
 

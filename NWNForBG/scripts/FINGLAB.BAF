@@ -19,7 +19,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("GateAway","LOCALS",1)
 		CreateVisualEffectObject("SPGFLSH1",Myself)
-		DisplayString(Myself,@14260)  // ?????
+		DisplayString(Myself,#14260)  // ?????
 		DestroySelf()
 END
 
