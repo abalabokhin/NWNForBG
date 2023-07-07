@@ -43,110 +43,3374 @@ LANGUAGE ~Russian~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
-/* -------------------------------------------------------------------------------------------------- *
-* Adds CamDawg's custom IsValidForPartyDialogue state used throughout yeslicknpc. Thanks Cam! *
-* -------------------------------------------------------------------------------------------------- */
-APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
-
-//Splash Screens
-
-//COPY ~TorturedSoulsLite/2da/vpstart.2da~ ~override/vpstart.2da~
-//REPLACE ~scrtxt09~ @3
-
-//COPY ~TorturedSoulsLite/2da/vpfin.2da~ ~override/vpfinva.2da~
-//REPLACE ~scrtxt11~ @4
-
-//COPY ~TorturedSoulsLite/2da/vpfin.2da~ ~override/vpfinth.2da~
-//REPLACE ~scrtxt11~ @5
-
-//COPY ~TorturedSoulsLite/2da/vpyoshnd.2da~ ~override~
-//REPLACE ~yoshifin~ @6
-
-//Adding Kachiko to 2DAs
-
-//APPEND ~PDIALOG.2da~
-//~VPKACHI VPKACHIP VPKACHIJ VPKACHID VPKACHP2 VPKACHJ2 VPKACHD2 VPKACH25~
-//UNLESS ~VPKACHI~
-
-//APPEND ~INTERDIA.2da~
-//~VPKACHI VPKACHIB VPKACHB2~
-//UNLESS ~VPKACHI~
-
-
-// Lizardman Animation
-//ACTION_IF NOT FILE_EXISTS_IN_GAME ~MLI2A1.bam~ THEN BEGIN 
-//    COPY ~TorturedSoulsLite/anim/lizard~ ~override~
-//END 
-
-// Icons
-//COPY ~TorturedSoulsLite/bam~ ~override~
-
-//Music & Ambient
-//LAF HANDLE_AUDIO
-//STR_VAR
-// audio_path = ~TorturedSoulsLite/audio/sounds~
-// oggdec_path = ~TorturedSoulsLite/audio~
-// sox_path = ~TorturedSoulsLite/audio~
-//END
-
-//Epilogue Art
-//COPY ~TorturedSoulsLite/portraits/vphashiL.bmp~ ~override~
-
-//Dialogues
-//COMPILE ~TorturedSoulsLite/dlg/vpppireni.d~
-//~TorturedSoulsLite/dlg/vpppsaem.d~
-//~TorturedSoulsLite/dlg/vpsailoff.d~
-//~TorturedSoulsLite/dlg/vpaino.d~
-//~TorturedSoulsLite/dlg/vpalome.d~
-//~TorturedSoulsLite/dlg/vpchess.d~
-//~TorturedSoulsLite/dlg/vpchrdr1.d~
-//~TorturedSoulsLite/dlg/vphasuno.d~
-//~TorturedSoulsLite/dlg/vphitomi.d~
-//~TorturedSoulsLite/dlg/vphsiang.d~
-//~TorturedSoulsLite/dlg/vpkachb2.d~
-//~TorturedSoulsLite/dlg/vpkachi.d~
-//~TorturedSoulsLite/dlg/vpkachib.d~
-//~TorturedSoulsLite/dlg/vpkachij.d~
-//~TorturedSoulsLite/dlg/vpkachj2.d~
-//~TorturedSoulsLite/dlg/vpkiotsi.d~
-//~TorturedSoulsLite/dlg/vplulu.d~
-//~TorturedSoulsLite/dlg/vpmasaki.d~
-//~TorturedSoulsLite/dlg/vpnajoki.d~
-//~TorturedSoulsLite/dlg/vpnanny.d~
-//~TorturedSoulsLite/dlg/vpnklead.d~
-//~TorturedSoulsLite/dlg/vpnsons.d~
-//~TorturedSoulsLite/dlg/vpogi.d~
-//~TorturedSoulsLite/dlg/vpotako.d~
-//~TorturedSoulsLite/dlg/vpsasaki.d~
-//~TorturedSoulsLite/dlg/vpnpcrem.d~
-
-//COMPILE EVAL ~TorturedSoulsLite/dlg/vpyoshimo.d~
-
-//Scripts
-//COMPILE ~TorturedSoulsLite/scripts/TSCutK01.baf~
-//~TorturedSoulsLite/scripts/TSCutK02.baf~
-
-//COMPILE EVAL ~TorturedSoulsLite/scripts/vpkachi.baf~
-//COMPILE EVAL ~TorturedSoulsLite/scripts/vpkachid.baf~
-
-//EXTEND_TOP ~AR1516.BCS~ ~TorturedSoulsLite/scripts/ar1516.baf~
-//EXTEND_BOTTOM ~AR6200.BCS~ ~TorturedSoulsLite/scripts/ar6200.baf~
-//EXTEND_TOP ~YOSHIMO.BCS~ ~TorturedSoulsLite/scripts/yoshimo.baf~
-//EXTEND_TOP ~YOSHX.BCS~ ~TorturedSoulsLite/scripts/yoshx.baf~
-//EXTEND_TOP ~PPSAEM2.BCS~ ~TorturedSoulsLite/scripts/ppsaem2.baf~
-
-// Modified Original Scripts
-/*COPY_EXISTING ~cut41c.bcs~ ~override/vp41cn.bcs~
-  DECOMPILE_AND_PATCH BEGIN
-    REPLACE_TEXTUALLY ~ActionOverride("ppsaem",DestroySelf())~ ~ActionOverride("ppsaem",DestroySelf()) ActionOverride("Yoshimo",LeaveParty()) ActionOverride("Yoshimo",EscapeArea()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeArea())~
- END
-  BUT_ONLY_IF_IT_CHANGES*/
-
 //Areas
 COPY ~NWNForBG/are~ ~override~
 
+COPY ~are/nw1000.are~ ~override~
+  SAY 0x34AC	@103091
+  SAY 0x36F8	@103092
+  SAY 0x37BC	@103093
+  SAY 0x3880	@103094
+  SAY 0x3B90	@103095
+  SAY 0x47D0	@107450
+  SAY 0x83FC	@103096
+  SAY 0x8430	@103097
+  SAY 0x8464	@103094
+  SAY 0x8498	@103098
+  SAY 0x84CC	@103091
+  SAY 0x8500	@103092
+  SAY 0x8534	@103099
+  SAY 0x8568	@103093
+  SAY 0x85D0	@103100
+  SAY 0x8604	@103095
+  SAY 0x8638	@103101
+
+COPY ~are/nw1001.are~ ~override~
+  SAY 0xD5C	@103102
+
+COPY ~are/nw1008.are~ ~override~
+  SAY 0x528	@104315
+
+COPY ~are/nw1033.are~ ~override~
+  SAY 0x3654	@104318
+  SAY 0x36BC	@104319
+
+COPY ~are/nw1100.are~ ~override~
+  SAY 0x2224	@103104
+  SAY 0x22E8	@103108
+  SAY 0x23AC	@103106
+  SAY 0x2470	@103107
+  SAY 0x68FC	@103103
+  SAY 0x6930	@103104
+  SAY 0x6964	@103105
+  SAY 0x6998	@103106
+  SAY 0x69CC	@103107
+  SAY 0x6A00	@103108
+
+COPY ~are/nw1200.are~ ~override~
+  SAY 0x3764	@103114
+  SAY 0x3BFC	@103113
+  SAY 0x7A34	@103103
+  SAY 0x7A9C	@103114
+  SAY 0x7B04	@103113
+
+COPY ~are/nw1221.are~ ~override~
+  SAY 0x1BD0	@103115
+
+COPY ~are/nw1300.are~ ~override~
+  SAY 0x3E6C	@103103
+  SAY 0x3EA0	@103116
+
+COPY ~are/nw1311.are~ ~override~
+  SAY 0xB88	@103117
+
+COPY ~are/nw1400.are~ ~override~
+  SAY 0x49F8	@103119
+  SAY 0x51A0	@103118
+  SAY 0x5264	@103118
+  SAY 0x5328	@103118
+  SAY 0x53EC	@103120
+  SAY 0x78C8	@104322
+  SAY 0x7BE8	@104323
+  SAY 0x8B0C	@103121
+  SAY 0x8B40	@103119
+  SAY 0x8B74	@103103
+  SAY 0x8BA8	@103122
+  SAY 0x8BDC	@103123
+  SAY 0x8C10	@103120
+  SAY 0x8C44	@103118
+  SAY 0x8C78	@103124
+
+COPY ~are/nw1426.are~ ~override~
+  SAY 0x308	@103125
+
+COPY ~are/nw1430.are~ ~override~
+  SAY 0x3CC	@103125
+
+COPY ~are/nw2000.are~ ~override~
+  SAY 0x3C74	@103127
+  SAY 0x45A4	@103128
+  SAY 0xA0C8	@103129
+  SAY 0xA130	@103130
+  SAY 0xA164	@103131
+  SAY 0xA198	@103132
+  SAY 0xA1CC	@103097
+  SAY 0xA200	@103133
+  SAY 0xA234	@103128
+  SAY 0xA268	@103134
+
+COPY ~are/nw2100.are~ ~override~
+  SAY 0x3324	@103137
+  SAY 0x33E8	@103138
+  SAY 0x34AC	@103139
+  SAY 0x4D3C	@103139
+  SAY 0x4D70	@103140
+  SAY 0x4DA4	@103141
+  SAY 0x4DD8	@103142
+  SAY 0x4E0C	@103143
+  SAY 0x4E40	@103144
+  SAY 0x4E74	@103145
+  SAY 0x4EA8	@103146
+
+COPY ~are/nw2102.are~ ~override~
+  SAY 0x6D1C	@107657
+  SAY 0x6D50	@107655
+
+COPY ~are/nw2103.are~ ~override~
+  SAY 0x2CC4	@107658
+  SAY 0x2D88	@107658
+  SAY 0x2E4C	@107658
+  SAY 0x2F10	@107658
+  SAY 0x2FD4	@107658
+  SAY 0x6264	@107656
+  SAY 0x62CC	@107657
+
+COPY ~are/nw2104.are~ ~override~
+  SAY 0x32D8	@104327
+  SAY 0x339C	@104328
+  SAY 0x3460	@104328
+  SAY 0x3524	@104329
+  SAY 0x5B18	@107656
+  SAY 0x5B4C	@107655
+
+COPY ~are/nw2200.are~ ~override~
+  SAY 0x17D0	@103149
+  SAY 0x3248	@103147
+  SAY 0x327C	@103148
+  SAY 0x32B0	@103149
+  SAY 0x334C	@103150
+
+COPY ~are/nw2300.are~ ~override~
+  SAY 0x3790	@103170
+  SAY 0x5164	@103150
+  SAY 0x5200	@103171
+  SAY 0x5234	@103172
+
+COPY ~are/nw2306.are~ ~override~
+  SAY 0x418	@103177
+
+COPY ~are/nw2400.are~ ~override~
+  SAY 0x2D30	@103142
+  SAY 0x2D64	@103178
+  SAY 0x2D98	@103179
+  SAY 0x2DCC	@103180
+  SAY 0x2E34	@103181
+
+COPY ~are/nw2500.are~ ~override~
+  SAY 0x1F0C	@103172
+  SAY 0x1F40	@103182
+  SAY 0x1F74	@103183
+
+COPY ~are/nw2510.are~ ~override~
+  SAY 0x32C8	@103172
+  SAY 0x32FC	@103182
+  SAY 0x3330	@103183
+
+COPY ~are/nw2600.are~ ~override~
+  SAY 0x2930	@103180
+  SAY 0x2964	@103184
+
+COPY ~are/nw2601.are~ ~override~
+  SAY 0xC00	@103129
+  SAY 0x28B4	@103180
+  SAY 0x28E8	@103184
+
+COPY ~are/nw2608.are~ ~override~
+  SAY 0xBD4	@104330
+  SAY 0xC98	@104331
+
+COPY ~are/nw2700.are~ ~override~
+  SAY 0x3AD8	@103150
+  SAY 0x3B0C	@103185
+  SAY 0x3B40	@103186
+  SAY 0x3B74	@103187
+
+COPY ~are/nw2800.are~ ~override~
+  SAY 0xDF4	@103192
+  SAY 0x19C0	@103141
+  SAY 0x19F4	@103193
+
+COPY ~are/nw2900.are~ ~override~
+  SAY 0x2644	@103194
+  SAY 0x4040	@103187
+  SAY 0x4074	@103195
+  SAY 0x40A8	@103196
+  SAY 0x40DC	@103197
+
+COPY ~are/nw2e00.are~ ~override~
+  SAY 0x4318	@103204
+  SAY 0x43DC	@103202
+  SAY 0x44A0	@103203
+  SAY 0x9A14	@103097
+  SAY 0x9A48	@103199
+  SAY 0x9A7C	@103200
+  SAY 0x9AB0	@103201
+  SAY 0x9AE4	@103202
+
+COPY ~are/nw2e31.are~ ~override~
+  SAY 0x3C80	@103205
+  SAY 0x6864	@103199
+  SAY 0x6898	@103206
+
+COPY ~are/nw2e56.are~ ~override~
+  SAY 0x32E0	@103216
+  SAY 0x3314	@103217
+
+COPY ~are/nw2e57.are~ ~override~
+  SAY 0x26DC	@103218
+  SAY 0x3078	@104332
+
+COPY ~are/nw2e58.are~ ~override~
+  SAY 0x80C	@103219
+
+COPY ~are/nw2e65.are~ ~override~
+  SAY 0x574	@103223
+  SAY 0x638	@103223
+  SAY 0x6FC	@103223
+  SAY 0x7C0	@103223
+  SAY 0x884	@103223
+
+COPY ~are/nw3000.are~ ~override~
+  SAY 0x2A64	@103202
+  SAY 0x2B28	@103202
+  SAY 0x2BEC	@107739
+  SAY 0x49FC	@104510
+  SAY 0x4AF8	@107737
+  SAY 0x4B2C	@107738
+  SAY 0x4B60	@107739
+  SAY 0x4B94	@103202
+  SAY 0x4BFC	@103097
+
+COPY ~are/nw3302.are~ ~override~
+  SAY 0x1674	@105945
+
+COPY ~are/nw3303.are~ ~override~
+  SAY 0x1570	@107761
+  SAY 0x1634	@107761
+  SAY 0x16F8	@107760
+  SAY 0x17BC	@107760
+  SAY 0x4264	@107757
+
+COPY ~are/nw3400.are~ ~override~
+  SAY 0x2750	@107753
+  SAY 0x2784	@107754
+  SAY 0x27B8	@107755
+  SAY 0x27EC	@107756
+
+COPY ~are/nw3404.are~ ~override~
+  SAY 0xFC8	@106045
+  SAY 0x108C	@106043
+  SAY 0x1150	@106047
+  SAY 0x1214	@106049
+
+COPY ~are/nw3406.are~ ~override~
+  SAY 0x1958	@106136
+  SAY 0x1AE0	@106138
+  SAY 0x1C68	@106140
+  SAY 0x1DF0	@106142
+
+COPY ~are/nw3500.are~ ~override~
+  SAY 0x1414	@107768
+  SAY 0x1448	@107769
+  SAY 0x147C	@107770
+  SAY 0x14E4	@107771
+  SAY 0x1518	@107772
+  SAY 0x154C	@107773
+
+COPY ~are/nw3501.are~ ~override~
+  SAY 0x1370	@106347
+  SAY 0x1434	@106347
+  SAY 0x14F8	@106347
+
+COPY ~are/nw4002.are~ ~override~
+  SAY 0x6FC	@107078
+
+COPY ~are/nw4011.are~ ~override~
+  SAY 0xE6C	@103102
+
 //Creatures
 COPY ~NWNForBG/cre~ ~override~
+COPY ~cre/aarin1.cre~ ~override~
+  SAY 0x8	@102275
+  SAY 0xC	@102275
+
+COPY ~cre/aarin2.cre~ ~override~
+  SAY 0x8	@102275
+  SAY 0xC	@102275
+
+COPY ~cre/aavill.cre~ ~override~
+  SAY 0x8	@102296
+  SAY 0xC	@102296
+
+COPY ~cre/acolpois.cre~ ~override~
+  SAY 0x8	@103897
+  SAY 0xC	@103897
+
+COPY ~cre/aelaith.cre~ ~override~
+  SAY 0x8	@102299
+  SAY 0xC	@102299
+
+COPY ~cre/agar.cre~ ~override~
+  SAY 0x8	@102323
+  SAY 0xC	@102323
+
+COPY ~cre/agnes.cre~ ~override~
+  SAY 0x8	@102325
+  SAY 0xC	@102325
+
+COPY ~cre/alaefin.cre~ ~override~
+  SAY 0x8	@102328
+  SAY 0xC	@102328
+
+COPY ~cre/aldo.cre~ ~override~
+  SAY 0x8	@102332
+  SAY 0xC	@102332
+
+COPY ~cre/alhelor.cre~ ~override~
+  SAY 0x8	@102334
+  SAY 0xC	@102334
+
+COPY ~cre/andar.cre~ ~override~
+  SAY 0x8	@105367
+  SAY 0xC	@105367
+
+COPY ~cre/ander.cre~ ~override~
+  SAY 0x8	@102372
+  SAY 0xC	@102372
+
+COPY ~cre/andguar1.cre~ ~override~
+  SAY 0x8	@102492
+  SAY 0xC	@102492
+
+COPY ~cre/androd.cre~ ~override~
+  SAY 0x8	@102375
+  SAY 0xC	@102375
+
+COPY ~cre/apparat.cre~ ~override~
+  SAY 0x8	@102382
+  SAY 0xC	@102382
+  SAY 0xEC	@104042
+
+COPY ~cre/archelnw.cre~ ~override~
+  SAY 0x8	@106877
+  SAY 0xC	@106877
+
+COPY ~cre/archeol1.cre~ ~override~
+  SAY 0x8	@102390
+  SAY 0xC	@102390
+
+COPY ~cre/archeol2.cre~ ~override~
+  SAY 0x8	@102390
+  SAY 0xC	@102390
+
+COPY ~cre/archeol3.cre~ ~override~
+  SAY 0x8	@102390
+  SAY 0xC	@102390
+
+COPY ~cre/archeol4.cre~ ~override~
+  SAY 0x8	@102390
+  SAY 0xC	@102390
+
+COPY ~cre/aribeth1.cre~ ~override~
+  SAY 0x8	@102400
+  SAY 0xC	@102400
+  SAY 0xA4	@104043
+  SAY 0xC8	@104045
+  SAY 0xCC	@104047
+  SAY 0xDC	@104046
+  SAY 0xE0	@104048
+  SAY 0xE4	@104049
+  SAY 0xEC	@104050
+  SAY 0xF0	@104051
+
+COPY ~cre/aribeth2.cre~ ~override~
+  SAY 0x8	@102400
+  SAY 0xC	@102400
+
+COPY ~cre/aribeth3.cre~ ~override~
+  SAY 0x8	@102400
+  SAY 0xC	@102400
+  SAY 0xA4	@104043
+  SAY 0xC8	@104045
+  SAY 0xCC	@104047
+  SAY 0xDC	@104046
+  SAY 0xE0	@104048
+  SAY 0xE4	@104049
+  SAY 0xEC	@104050
+  SAY 0xF0	@104051
+
+COPY ~cre/aribeth4.cre~ ~override~
+  SAY 0x8	@102400
+  SAY 0xC	@102400
+  SAY 0xA4	@104043
+  SAY 0xC8	@104045
+  SAY 0xCC	@104047
+  SAY 0xDC	@104046
+  SAY 0xE0	@104048
+  SAY 0xE4	@104049
+  SAY 0xEC	@104050
+  SAY 0xF0	@104051
+
+COPY ~cre/aribeth5.cre~ ~override~
+  SAY 0x8	@102400
+  SAY 0xC	@102400
+  SAY 0xA4	@104043
+  SAY 0xC8	@104045
+  SAY 0xCC	@104047
+  SAY 0xDC	@104046
+  SAY 0xE0	@104048
+  SAY 0xE4	@104049
+  SAY 0xEC	@104050
+  SAY 0xF0	@104051
+
+COPY ~cre/arklem.cre~ ~override~
+  SAY 0x8	@102405
+  SAY 0xC	@102405
+
+COPY ~cre/arness.cre~ ~override~
+  SAY 0x8	@105604
+  SAY 0xC	@105604
+
+COPY ~cre/arto.cre~ ~override~
+  SAY 0x8	@102408
+  SAY 0xC	@102408
+
+COPY ~cre/aruph.cre~ ~override~
+  SAY 0x8	@102423
+  SAY 0xC	@102423
+
+COPY ~cre/arwyl.cre~ ~override~
+  SAY 0x8	@106541
+  SAY 0xC	@106541
+
+COPY ~cre/asgard.cre~ ~override~
+  SAY 0x8	@106902
+  SAY 0xC	@106902
+
+COPY ~cre/ashira.cre~ ~override~
+  SAY 0x8	@107500
+  SAY 0xC	@107500
+
+COPY ~cre/auction.cre~ ~override~
+  SAY 0x8	@102425
+  SAY 0xC	@102425
+
+COPY ~cre/averic.cre~ ~override~
+  SAY 0x8	@104762
+  SAY 0xC	@104762
+
+COPY ~cre/avista.cre~ ~override~
+  SAY 0x8	@102436
+  SAY 0xC	@102436
+
+COPY ~cre/ballard.cre~ ~override~
+  SAY 0x8	@102448
+  SAY 0xC	@102448
+
+COPY ~cre/baram1.cre~ ~override~
+  SAY 0x8	@102480
+  SAY 0xC	@102480
+
+COPY ~cre/baram2.cre~ ~override~
+  SAY 0x8	@102480
+  SAY 0xC	@102480
+
+COPY ~cre/barams01.cre~ ~override~
+  SAY 0x8	@102671
+  SAY 0xC	@102671
+
+COPY ~cre/barams02.cre~ ~override~
+  SAY 0x8	@102671
+  SAY 0xC	@102671
+
+COPY ~cre/barams03.cre~ ~override~
+  SAY 0x8	@102671
+  SAY 0xC	@102671
+
+COPY ~cre/barams04.cre~ ~override~
+  SAY 0x8	@102671
+  SAY 0xC	@102671
+
+COPY ~cre/barams05.cre~ ~override~
+  SAY 0x8	@104052
+  SAY 0xC	@104052
+
+COPY ~cre/barams06.cre~ ~override~
+  SAY 0x8	@104053
+  SAY 0xC	@104053
+
+COPY ~cre/barax.cre~ ~override~
+  SAY 0x8	@102516
+  SAY 0xC	@102516
+
+COPY ~cre/bart2e03.cre~ ~override~
+  SAY 0xC8	@104054
+  SAY 0xCC	@104055
+  SAY 0xDC	@104056
+
+COPY ~cre/bartnw1.cre~ ~override~
+  SAY 0xC8	@104054
+  SAY 0xCC	@104055
+  SAY 0xDC	@104056
+
+COPY ~cre/bartnw2.cre~ ~override~
+  SAY 0xC8	@104054
+  SAY 0xCC	@104055
+  SAY 0xDC	@104056
+
+COPY ~cre/barun.cre~ ~override~
+  SAY 0x8	@104980
+  SAY 0xC	@104980
+
+COPY ~cre/bela.cre~ ~override~
+  SAY 0x8	@102528
+  SAY 0xC	@102528
+
+COPY ~cre/belarian.cre~ ~override~
+  SAY 0x8	@102529
+  SAY 0xC	@102529
+
+COPY ~cre/bertran2.cre~ ~override~
+  SAY 0x8	@102543
+  SAY 0xC	@102543
+
+COPY ~cre/betani.cre~ ~override~
+  SAY 0x8	@102544
+  SAY 0xC	@102544
+
+COPY ~cre/billiam.cre~ ~override~
+  SAY 0x8	@102553
+  SAY 0xC	@102553
+
+COPY ~cre/blaskar.cre~ ~override~
+  SAY 0x8	@102554
+  SAY 0xC	@102554
+
+COPY ~cre/bodak1.cre~ ~override~
+  SAY 0x8	@105958
+  SAY 0xC	@105958
+
+COPY ~cre/borlan.cre~ ~override~
+  SAY 0x8	@102573
+  SAY 0xC	@102573
+
+COPY ~cre/brazier1.cre~ ~override~
+  SAY 0x8	@102577
+  SAY 0xC	@102577
+  SAY 0xEC	@104042
+
+COPY ~cre/brazier2.cre~ ~override~
+  SAY 0x8	@102577
+  SAY 0xC	@102577
+  SAY 0xEC	@104042
+
+COPY ~cre/brazier3.cre~ ~override~
+  SAY 0x8	@102577
+  SAY 0xC	@102577
+  SAY 0xEC	@104042
+
+COPY ~cre/brazier4.cre~ ~override~
+  SAY 0x8	@102577
+  SAY 0xC	@102577
+  SAY 0xEC	@104042
+
+COPY ~cre/brigan.cre~ ~override~
+  SAY 0x8	@102579
+  SAY 0xC	@102579
+
+COPY ~cre/briley.cre~ ~override~
+  SAY 0x8	@102580
+  SAY 0xC	@102580
+  SAY 0xC8	@104081
+  SAY 0xCC	@104082
+  SAY 0xDC	@104083
+
+COPY ~cre/bugbear.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbearp.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbenw0.cre~ ~override~
+  SAY 0x8	@102585
+  SAY 0xC	@102585
+  SAY 0xA4	@104092
+  SAY 0xA8	@104093
+  SAY 0xB8	@104093
+  SAY 0xC8	@104094
+  SAY 0xCC	@104095
+  SAY 0xDC	@104096
+  SAY 0xEC	@104097
+  SAY 0xF0	@104098
+  SAY 0x10C	@104094
+  SAY 0x110	@104099
+
+COPY ~cre/bugbenw1.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104092
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104088
+  SAY 0xCC	@104089
+  SAY 0xDC	@104100
+  SAY 0xE0	@104086
+  SAY 0xE4	@104087
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbenw2.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104092
+  SAY 0xA8	@104101
+  SAY 0xB8	@104085
+  SAY 0xCC	@104100
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104102
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbenw3.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbenw4.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbenw5.cre~ ~override~
+  SAY 0x8	@102586
+  SAY 0xC	@102586
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbenw6.cre~ ~override~
+  SAY 0x8	@102587
+  SAY 0xC	@102587
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/bugbpris.cre~ ~override~
+  SAY 0x8	@102584
+  SAY 0xC	@102584
+  SAY 0xA4	@104084
+  SAY 0xA8	@104085
+  SAY 0xB8	@104085
+  SAY 0xC8	@104086
+  SAY 0xCC	@104087
+  SAY 0xDC	@104088
+  SAY 0xEC	@104089
+  SAY 0xF0	@104090
+  SAY 0x10C	@104086
+  SAY 0x110	@104091
+
+COPY ~cre/callahan.cre~ ~override~
+  SAY 0x8	@102590
+  SAY 0xC	@102590
+
+COPY ~cre/callik.cre~ ~override~
+  SAY 0x8	@102591
+  SAY 0xC	@102591
+
+COPY ~cre/caretake.cre~ ~override~
+  SAY 0x8	@102594
+  SAY 0xC	@102594
+
+COPY ~cre/catapul2.cre~ ~override~
+  SAY 0x8	@105488
+  SAY 0xC	@105488
+  SAY 0xEC	@105489
+  SAY 0xF0	@105490
+
+COPY ~cre/catapult.cre~ ~override~
+  SAY 0x8	@105488
+  SAY 0xC	@105488
+  SAY 0xEC	@105489
+  SAY 0xF0	@105490
+
+COPY ~cre/cbdncswd.cre~ ~override~
+  SAY 0x8	@103056
+  SAY 0xC	@103056
+
+COPY ~cre/chaljal.cre~ ~override~
+  SAY 0x8	@102597
+  SAY 0xC	@102597
+
+COPY ~cre/chanynw.cre~ ~override~
+  SAY 0x8	@107367
+  SAY 0xC	@107367
+
+COPY ~cre/charon.cre~ ~override~
+  SAY 0x8	@102610
+  SAY 0xC	@102610
+  SAY 0xC8	@104081
+  SAY 0xCC	@104082
+  SAY 0xDC	@104083
+
+COPY ~cre/chfem1.cre~ ~override~
+  SAY 0x8	@74135
+  SAY 0xC	@74135
+
+COPY ~cre/chfem2.cre~ ~override~
+  SAY 0x8	@74135
+  SAY 0xC	@74135
+
+COPY ~cre/chfem3.cre~ ~override~
+  SAY 0x8	@74135
+  SAY 0xC	@74135
+
+COPY ~cre/chrusk.cre~ ~override~
+  SAY 0x8	@102616
+  SAY 0xC	@102616
+
+COPY ~cre/citizen1.cre~ ~override~
+  SAY 0x8	@102617
+  SAY 0xC	@102617
+
+COPY ~cre/citizen2.cre~ ~override~
+  SAY 0x8	@102617
+  SAY 0xC	@102617
+
+COPY ~cre/citizen3.cre~ ~override~
+  SAY 0x8	@102617
+  SAY 0xC	@102617
+
+COPY ~cre/claudus.cre~ ~override~
+  SAY 0x8	@102618
+  SAY 0xC	@102618
+
+COPY ~cre/clet.cre~ ~override~
+  SAY 0x8	@106878
+  SAY 0xC	@106878
+
+COPY ~cre/commonw1.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+  SAY 0xC8	@104081
+  SAY 0xCC	@104082
+  SAY 0xDC	@104083
+
+COPY ~cre/commonw2.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/commonw3.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/commonw4.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/commonw5.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/constanc.cre~ ~override~
+  SAY 0x8	@102630
+  SAY 0xC	@102630
+
+COPY ~cre/cristov.cre~ ~override~
+  SAY 0x8	@102664
+  SAY 0xC	@102664
+
+COPY ~cre/cultistc.cre~ ~override~
+  SAY 0x8	@102670
+  SAY 0xC	@102670
+
+COPY ~cre/cultmo12.cre~ ~override~
+  SAY 0x8	@103228
+  SAY 0xC	@103228
+
+COPY ~cre/cultmo3.cre~ ~override~
+  SAY 0x8	@103344
+  SAY 0xC	@103344
+
+COPY ~cre/custom10.cre~ ~override~
+  SAY 0xC8	@104081
+  SAY 0xCC	@104082
+  SAY 0xDC	@104083
+
+COPY ~cre/custom15.cre~ ~override~
+  SAY 0x8	@102671
+  SAY 0xC	@102671
+
+COPY ~cre/custom23.cre~ ~override~
+  SAY 0xA4	@104109
+  SAY 0x10C	@104109
+  SAY 0x198	@86463
+
+COPY ~cre/custom26.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/custom27.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/custom30.cre~ ~override~
+  SAY 0x8	@102629
+  SAY 0xC	@102629
+
+COPY ~cre/custom8.cre~ ~override~
+  SAY 0xC8	@104110
+  SAY 0xCC	@104111
+  SAY 0xDC	@104112
+
+COPY ~cre/dalcia.cre~ ~override~
+  SAY 0x8	@105368
+  SAY 0xC	@105368
+
+COPY ~cre/damas.cre~ ~override~
+  SAY 0x8	@105545
+  SAY 0xC	@105545
+
+COPY ~cre/daranei.cre~ ~override~
+  SAY 0x8	@102673
+  SAY 0xC	@102673
+
+COPY ~cre/darius.cre~ ~override~
+  SAY 0x8	@102674
+  SAY 0xC	@102674
+
+COPY ~cre/darktong.cre~ ~override~
+  SAY 0x8	@102676
+  SAY 0xC	@102676
+
+COPY ~cre/deadkem.cre~ ~override~
+  SAY 0xC8	@104137
+  SAY 0xCC	@104138
+  SAY 0xDC	@104139
+  SAY 0xEC	@104140
+  SAY 0xF0	@104141
+
+COPY ~cre/deernw1.cre~ ~override~
+  SAY 0x8	@102679
+  SAY 0xC	@102679
+
+COPY ~cre/degriab.cre~ ~override~
+  SAY 0x8	@102681
+  SAY 0xC	@102681
+
+COPY ~cre/delilah.cre~ ~override~
+  SAY 0x8	@102683
+  SAY 0xC	@102683
+
+COPY ~cre/deltagar.cre~ ~override~
+  SAY 0x8	@102684
+  SAY 0xC	@102684
+
+COPY ~cre/delvar.cre~ ~override~
+  SAY 0x8	@106616
+  SAY 0xC	@106616
+
+COPY ~cre/desther.cre~ ~override~
+  SAY 0x8	@102686
+  SAY 0xC	@102686
+  SAY 0xA4	@104146
+  SAY 0xC8	@104147
+  SAY 0xCC	@104148
+  SAY 0xDC	@104149
+  SAY 0xE0	@104150
+  SAY 0xEC	@104151
+  SAY 0xF0	@104152
+  SAY 0x10C	@104146
+
+COPY ~cre/desther2.cre~ ~override~
+  SAY 0x8	@102686
+  SAY 0xC	@102686
+  SAY 0xA4	@104146
+  SAY 0xC8	@104147
+  SAY 0xCC	@104148
+  SAY 0xDC	@104149
+  SAY 0xE0	@104150
+  SAY 0xEC	@104151
+  SAY 0xF0	@104152
+  SAY 0x10C	@104146
+
+COPY ~cre/desther3.cre~ ~override~
+  SAY 0x8	@102686
+  SAY 0xC	@102686
+  SAY 0xA4	@104146
+  SAY 0xC8	@104147
+  SAY 0xCC	@104148
+  SAY 0xDC	@104149
+  SAY 0xE0	@104150
+  SAY 0xEC	@104151
+  SAY 0xF0	@104152
+  SAY 0x10C	@104146
+
+COPY ~cre/dizil.cre~ ~override~
+  SAY 0x8	@107296
+  SAY 0xC	@107296
+
+COPY ~cre/dlwater.cre~ ~override~
+  SAY 0x8	@106135
+  SAY 0xC	@106135
+
+COPY ~cre/dognw1.cre~ ~override~
+  SAY 0x8	@104153
+  SAY 0xC	@104153
+
+COPY ~cre/dognw2.cre~ ~override~
+  SAY 0x8	@102687
+  SAY 0xC	@102687
+
+COPY ~cre/dognw4.cre~ ~override~
+  SAY 0x8	@102687
+  SAY 0xC	@102687
+
+COPY ~cre/doomsay2.cre~ ~override~
+  SAY 0x8	@102688
+  SAY 0xC	@102688
+
+COPY ~cre/doomsay3.cre~ ~override~
+  SAY 0x8	@102688
+  SAY 0xC	@102688
+
+COPY ~cre/doomsay4.cre~ ~override~
+  SAY 0x8	@102688
+  SAY 0xC	@102688
+
+COPY ~cre/doomsay5.cre~ ~override~
+  SAY 0x8	@102688
+  SAY 0xC	@102688
+  SAY 0xEC	@104137
+  SAY 0xF0	@104138
+
+COPY ~cre/drake.cre~ ~override~
+  SAY 0x8	@102691
+  SAY 0xC	@102691
+
+COPY ~cre/drawl.cre~ ~override~
+  SAY 0x8	@102692
+  SAY 0xC	@102692
+
+COPY ~cre/druidnw1.cre~ ~override~
+  SAY 0x8	@102693
+  SAY 0xC	@102693
+  SAY 0xDC	@104154
+
+COPY ~cre/druidnw2.cre~ ~override~
+  SAY 0x8	@102694
+  SAY 0xC	@102694
+  SAY 0xA4	@104155
+  SAY 0xC8	@104156
+  SAY 0xCC	@104157
+  SAY 0xF0	@104158
+  SAY 0x10C	@104155
+
+COPY ~cre/druidnw3.cre~ ~override~
+  SAY 0x8	@102695
+  SAY 0xC	@102695
+
+COPY ~cre/dumal.cre~ ~override~
+  SAY 0x8	@102696
+  SAY 0xC	@102696
+
+COPY ~cre/durga.cre~ ~override~
+  SAY 0x8	@102699
+  SAY 0xC	@102699
+
+COPY ~cre/dydd.cre~ ~override~
+  SAY 0x8	@102701
+  SAY 0xC	@102701
+
+COPY ~cre/eckel.cre~ ~override~
+  SAY 0x8	@105547
+  SAY 0xC	@105547
+
+COPY ~cre/edegar.cre~ ~override~
+  SAY 0x8	@105256
+  SAY 0xC	@105256
+
+COPY ~cre/eisnf.cre~ ~override~
+  SAY 0x8	@102704
+  SAY 0xC	@102704
+
+COPY ~cre/eisnm.cre~ ~override~
+  SAY 0x8	@102705
+  SAY 0xC	@102705
+
+COPY ~cre/eldan.cre~ ~override~
+  SAY 0x8	@102706
+  SAY 0xC	@102706
+
+COPY ~cre/elgar.cre~ ~override~
+  SAY 0x8	@102707
+  SAY 0xC	@102707
+
+COPY ~cre/eltura1.cre~ ~override~
+  SAY 0x8	@102712
+  SAY 0xC	@102712
+
+COPY ~cre/eltura2.cre~ ~override~
+  SAY 0x8	@102712
+  SAY 0xC	@102712
+
+COPY ~cre/eltura3.cre~ ~override~
+  SAY 0x8	@102712
+  SAY 0xC	@102712
+
+COPY ~cre/elynwyd.cre~ ~override~
+  SAY 0x8	@102761
+  SAY 0xC	@102761
+
+COPY ~cre/eravian.cre~ ~override~
+  SAY 0x8	@102762
+  SAY 0xC	@102762
+
+COPY ~cre/erb.cre~ ~override~
+  SAY 0x8	@102763
+  SAY 0xC	@102763
+
+COPY ~cre/ergus.cre~ ~override~
+  SAY 0x8	@102764
+  SAY 0xC	@102764
+
+COPY ~cre/errol.cre~ ~override~
+  SAY 0x8	@102765
+  SAY 0xC	@102765
+
+COPY ~cre/esmernw.cre~ ~override~
+  SAY 0x8	@106879
+  SAY 0xC	@106879
+
+COPY ~cre/evaine.cre~ ~override~
+  SAY 0x8	@102766
+  SAY 0xC	@102766
+
+COPY ~cre/falseh00.cre~ ~override~
+  SAY 0x8	@102767
+  SAY 0xC	@102767
+
+COPY ~cre/falseh01.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/falseh02.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/falseh03.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/falseh04.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/falseh05.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/falseh06.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/falseh07.cre~ ~override~
+  SAY 0x8	@102768
+  SAY 0xC	@102768
+
+COPY ~cre/farmer3.cre~ ~override~
+  SAY 0x8	@86409
+  SAY 0xC	@86409
+
+COPY ~cre/farmer4.cre~ ~override~
+  SAY 0x8	@74135
+  SAY 0xC	@74135
+
+COPY ~cre/fashi.cre~ ~override~
+  SAY 0x8	@102769
+  SAY 0xC	@102769
+
+COPY ~cre/fencebr.cre~ ~override~
+  SAY 0x8	@104763
+  SAY 0xC	@104763
+
+COPY ~cre/fencepl.cre~ ~override~
+  SAY 0x8	@102772
+  SAY 0xC	@102772
+
+COPY ~cre/fenthic2.cre~ ~override~
+  SAY 0x8	@102775
+  SAY 0xC	@102775
+  SAY 0xA4	@104172
+  SAY 0xC8	@104175
+  SAY 0xCC	@104174
+  SAY 0xD0	@104173
+  SAY 0xDC	@104171
+  SAY 0xE0	@104170
+  SAY 0xEC	@104169
+  SAY 0xF0	@104168
+  SAY 0x10C	@104172
+
+COPY ~cre/fenthic3.cre~ ~override~
+  SAY 0x8	@102775
+  SAY 0xC	@102775
+  SAY 0xA4	@104172
+  SAY 0xC8	@104175
+  SAY 0xCC	@104174
+  SAY 0xD0	@104173
+  SAY 0xDC	@104171
+  SAY 0xE0	@104170
+  SAY 0xEC	@104169
+  SAY 0xF0	@104168
+  SAY 0x10C	@104172
+
+COPY ~cre/fenthick.cre~ ~override~
+  SAY 0x8	@102775
+  SAY 0xC	@102775
+  SAY 0xA4	@104172
+  SAY 0xC8	@104175
+  SAY 0xCC	@104174
+  SAY 0xD0	@104173
+  SAY 0xDC	@104171
+  SAY 0xE0	@104170
+  SAY 0xEC	@104169
+  SAY 0xF0	@104168
+  SAY 0x10C	@104172
+
+COPY ~cre/festilia.cre~ ~override~
+  SAY 0x8	@104176
+  SAY 0xC	@104176
+
+COPY ~cre/fgboss.cre~ ~override~
+  SAY 0x8	@106344
+  SAY 0xC	@106344
+
+COPY ~cre/finbabau.cre~ ~override~
+  SAY 0x8	@74188
+  SAY 0xC	@74188
+
+COPY ~cre/finbalor.cre~ ~override~
+  SAY 0xF0	@88631
+
+COPY ~cre/flarg.cre~ ~override~
+  SAY 0x8	@102779
+  SAY 0xC	@102779
+
+COPY ~cre/formergu.cre~ ~override~
+  SAY 0x8	@102780
+  SAY 0xC	@102780
+
+COPY ~cre/formosa.cre~ ~override~
+  SAY 0x8	@102781
+  SAY 0xC	@102781
+
+COPY ~cre/fortbow1.cre~ ~override~
+  SAY 0x8	@105598
+  SAY 0xC	@105598
+
+COPY ~cre/fortbow2.cre~ ~override~
+  SAY 0x8	@105598
+  SAY 0xC	@105598
+
+COPY ~cre/fortbow4.cre~ ~override~
+  SAY 0x8	@105598
+  SAY 0xC	@105598
+
+COPY ~cre/fortmage.cre~ ~override~
+  SAY 0x8	@105599
+  SAY 0xC	@105599
+
+COPY ~cre/fortsol1.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol2.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol3.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol4.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol5.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol6.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol7.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol8.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsol9.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/fortsolb.cre~ ~override~
+  SAY 0x8	@105588
+  SAY 0xC	@105588
+
+COPY ~cre/ftobe2.cre~ ~override~
+  SAY 0x8	@86810
+  SAY 0xC	@86810
+
+COPY ~cre/f_deathk.cre~ ~override~
+  SAY 0x8	@103898
+  SAY 0xC	@103898
+  SAY 0xC8	@104159
+  SAY 0xEC	@104160
+  SAY 0xF0	@104161
+  SAY 0x10C	@104162
+  SAY 0x1B8	@104162
+
+COPY ~cre/f_harpy.cre~ ~override~
+  SAY 0x8	@102839
+  SAY 0xC	@102839
+  SAY 0xA4	@104163
+  SAY 0xEC	@104166
+  SAY 0xF0	@104167
+
+COPY ~cre/galion.cre~ ~override~
+  SAY 0x8	@102786
+  SAY 0xC	@102786
+
+COPY ~cre/galrone.cre~ ~override~
+  SAY 0x8	@102787
+  SAY 0xC	@102787
+
+COPY ~cre/gam.cre~ ~override~
+  SAY 0x8	@102788
+  SAY 0xC	@102788
+
+COPY ~cre/ganon.cre~ ~override~
+  SAY 0x8	@102789
+  SAY 0xC	@102789
+
+COPY ~cre/gategr1.cre~ ~override~
+  SAY 0x8	@102793
+  SAY 0xC	@102793
+
+COPY ~cre/gerrol.cre~ ~override~
+  SAY 0x8	@102794
+  SAY 0xC	@102794
+
+COPY ~cre/gilda.cre~ ~override~
+  SAY 0x8	@102798
+  SAY 0xC	@102798
+
+COPY ~cre/gilles.cre~ ~override~
+  SAY 0x8	@102803
+  SAY 0xC	@102803
+
+COPY ~cre/gobking.cre~ ~override~
+  SAY 0x8	@102802
+  SAY 0xC	@102802
+  SAY 0xA4	@104177
+  SAY 0xA8	@104178
+  SAY 0xB8	@104178
+  SAY 0xC8	@104179
+  SAY 0xCC	@104180
+  SAY 0xDC	@104181
+  SAY 0xEC	@104182
+  SAY 0xF0	@104183
+  SAY 0x10C	@104184
+  SAY 0x110	@104185
+
+COPY ~cre/goblinw1.cre~ ~override~
+  SAY 0xA4	@104188
+  SAY 0xA8	@104189
+  SAY 0xB8	@104189
+  SAY 0xC8	@104190
+  SAY 0xCC	@104191
+  SAY 0xD0	@104192
+  SAY 0xDC	@104206
+  SAY 0xEC	@104193
+  SAY 0xF0	@104194
+  SAY 0x10C	@104195
+  SAY 0x110	@104196
+  SAY 0x114	@104188
+
+COPY ~cre/goblinw2.cre~ ~override~
+  SAY 0xA4	@104188
+  SAY 0xA8	@104189
+  SAY 0xB8	@104189
+  SAY 0xC8	@104190
+  SAY 0xCC	@104191
+  SAY 0xD0	@104192
+  SAY 0xDC	@104206
+  SAY 0xEC	@104193
+  SAY 0xF0	@104194
+  SAY 0x10C	@104195
+  SAY 0x110	@104196
+  SAY 0x114	@104188
+
+COPY ~cre/goblinw3.cre~ ~override~
+  SAY 0xA4	@104188
+  SAY 0xA8	@104189
+  SAY 0xB8	@104189
+  SAY 0xC8	@104190
+  SAY 0xCC	@104191
+  SAY 0xD0	@104192
+  SAY 0xDC	@104206
+  SAY 0xEC	@104193
+  SAY 0xF0	@104194
+  SAY 0x10C	@104195
+  SAY 0x110	@104196
+  SAY 0x114	@104188
+
+COPY ~cre/goblinw4.cre~ ~override~
+  SAY 0xA4	@104188
+  SAY 0xA8	@104189
+  SAY 0xB8	@104189
+  SAY 0xC8	@104190
+  SAY 0xCC	@104191
+  SAY 0xD0	@104192
+  SAY 0xDC	@104206
+  SAY 0xEC	@104193
+  SAY 0xF0	@104194
+  SAY 0x10C	@104195
+  SAY 0x110	@104196
+  SAY 0x114	@104188
+
+COPY ~cre/goblinw6.cre~ ~override~
+  SAY 0x8	@102804
+  SAY 0xC	@102804
+  SAY 0xA4	@104188
+  SAY 0xA8	@104189
+  SAY 0xB8	@104189
+  SAY 0xC8	@104190
+  SAY 0xCC	@104191
+  SAY 0xD0	@104192
+  SAY 0xDC	@104206
+  SAY 0xEC	@104193
+  SAY 0xF0	@104194
+  SAY 0x10C	@104195
+  SAY 0x110	@104196
+  SAY 0x114	@104188
+
+COPY ~cre/gorannw.cre~ ~override~
+  SAY 0x8	@107368
+  SAY 0xC	@107368
+
+COPY ~cre/gorkan.cre~ ~override~
+  SAY 0x8	@102806
+  SAY 0xC	@102806
+
+COPY ~cre/graxx.cre~ ~override~
+  SAY 0x8	@102807
+  SAY 0xC	@102807
+  SAY 0xC8	@95694
+  SAY 0xCC	@95695
+  SAY 0xD0	@95696
+  SAY 0xD4	@95697
+  SAY 0xF4	@95700
+  SAY 0x10C	@95707
+  SAY 0x110	@95703
+
+COPY ~cre/gregornw.cre~ ~override~
+  SAY 0x8	@102808
+  SAY 0xC	@102808
+  SAY 0xA4	@104202
+  SAY 0x10C	@104203
+  SAY 0x110	@104204
+  SAY 0x114	@104205
+  SAY 0x118	@104202
+
+COPY ~cre/grommin2.cre~ ~override~
+  SAY 0x8	@102812
+  SAY 0xC	@102812
+
+COPY ~cre/guardch.cre~ ~override~
+  SAY 0x8	@102813
+  SAY 0xC	@102813
+
+COPY ~cre/guardian.cre~ ~override~
+  SAY 0x8	@102815
+  SAY 0xC	@102815
+
+COPY ~cre/gulgash.cre~ ~override~
+  SAY 0x8	@102817
+  SAY 0xC	@102817
+  SAY 0xEC	@104232
+  SAY 0xF0	@104233
+
+COPY ~cre/gulnan.cre~ ~override~
+  SAY 0x8	@102822
+  SAY 0xC	@102822
+
+COPY ~cre/gunner1.cre~ ~override~
+  SAY 0x8	@105605
+  SAY 0xC	@105605
+
+COPY ~cre/gunner2.cre~ ~override~
+  SAY 0x8	@105605
+  SAY 0xC	@105605
+
+COPY ~cre/gunner3.cre~ ~override~
+  SAY 0x8	@105605
+  SAY 0xC	@105605
+
+COPY ~cre/gunner4.cre~ ~override~
+  SAY 0x8	@105605
+  SAY 0xC	@105605
+
+COPY ~cre/gurak.cre~ ~override~
+  SAY 0x8	@102825
+  SAY 0xC	@102825
+
+COPY ~cre/guzud.cre~ ~override~
+  SAY 0x8	@105723
+  SAY 0xC	@105723
+
+COPY ~cre/gzombie.cre~ ~override~
+  SAY 0x8	@102856
+  SAY 0xC	@102856
+
+COPY ~cre/haedral2.cre~ ~override~
+  SAY 0x8	@106748
+  SAY 0xC	@106748
+
+COPY ~cre/haedral3.cre~ ~override~
+  SAY 0x8	@106748
+  SAY 0xC	@106748
+
+COPY ~cre/halia.cre~ ~override~
+  SAY 0x8	@105546
+  SAY 0xC	@105546
+
+COPY ~cre/harben.cre~ ~override~
+  SAY 0x8	@102835
+  SAY 0xC	@102835
+
+COPY ~cre/harn.cre~ ~override~
+  SAY 0x8	@102838
+  SAY 0xC	@102838
+
+COPY ~cre/harpynw.cre~ ~override~
+  SAY 0x8	@102839
+  SAY 0xC	@102839
+  SAY 0xC8	@104164
+  SAY 0xCC	@104163
+  SAY 0xEC	@104166
+  SAY 0xF0	@104167
+
+COPY ~cre/harris.cre~ ~override~
+  SAY 0x8	@102840
+  SAY 0xC	@102840
+
+COPY ~cre/hasher.cre~ ~override~
+  SAY 0x8	@104981
+  SAY 0xC	@104981
+
+COPY ~cre/hector.cre~ ~override~
+  SAY 0x8	@102847
+  SAY 0xC	@102847
+
+COPY ~cre/hellilnw.cre~ ~override~
+  SAY 0x8	@102848
+  SAY 0xC	@102848
+
+COPY ~cre/helmite1.cre~ ~override~
+  SAY 0x8	@102851
+  SAY 0xC	@102851
+
+COPY ~cre/helmite2.cre~ ~override~
+  SAY 0x8	@102851
+  SAY 0xC	@102851
+
+COPY ~cre/helmite3.cre~ ~override~
+  SAY 0x8	@102851
+  SAY 0xC	@102851
+
+COPY ~cre/hemmel.cre~ ~override~
+  SAY 0x8	@102854
+  SAY 0xC	@102854
+
+COPY ~cre/henna.cre~ ~override~
+  SAY 0x8	@102855
+  SAY 0xC	@102855
+  SAY 0xA4	@104155
+  SAY 0xC8	@104156
+  SAY 0xCC	@104157
+  SAY 0xF0	@104158
+  SAY 0x10C	@104155
+
+COPY ~cre/hillboss.cre~ ~override~
+  SAY 0x8	@106380
+  SAY 0xC	@106380
+
+COPY ~cre/hillgian.cre~ ~override~
+  SAY 0x8	@106382
+  SAY 0xC	@106382
+
+COPY ~cre/histachi.cre~ ~override~
+  SAY 0x8	@103154
+  SAY 0xC	@103154
+
+COPY ~cre/histanw1.cre~ ~override~
+  SAY 0x8	@102856
+  SAY 0xC	@102856
+
+COPY ~cre/hodd.cre~ ~override~
+  SAY 0x8	@106540
+  SAY 0xC	@106540
+
+COPY ~cre/hoff.cre~ ~override~
+  SAY 0x8	@102857
+  SAY 0xC	@102857
+
+COPY ~cre/holga.cre~ ~override~
+  SAY 0x8	@102858
+  SAY 0xC	@102858
+
+COPY ~cre/hook1.cre~ ~override~
+  SAY 0x8	@103881
+  SAY 0xC	@103881
+  SAY 0xA8	@104234
+  SAY 0xB8	@104234
+  SAY 0xC8	@104235
+  SAY 0xCC	@104236
+  SAY 0xDC	@104237
+  SAY 0xEC	@104238
+  SAY 0xF0	@104239
+
+COPY ~cre/hrpmatn2.cre~ ~override~
+  SAY 0x8	@102861
+  SAY 0xC	@102861
+  SAY 0xA4	@104166
+  SAY 0xC8	@104164
+  SAY 0xCC	@104163
+  SAY 0xEC	@104166
+  SAY 0xF0	@104167
+
+COPY ~cre/hrpmatnw.cre~ ~override~
+  SAY 0x8	@102861
+  SAY 0xC	@102861
+  SAY 0xA4	@104166
+  SAY 0xC8	@104164
+  SAY 0xCC	@104163
+  SAY 0xEC	@104166
+  SAY 0xF0	@104167
+
+COPY ~cre/hubert.cre~ ~override~
+  SAY 0x8	@102864
+  SAY 0xC	@102864
+
+COPY ~cre/illuskg1.cre~ ~override~
+  SAY 0x8	@102867
+  SAY 0xC	@102867
+
+COPY ~cre/illuskg2.cre~ ~override~
+  SAY 0x8	@102868
+  SAY 0xC	@102868
+
+COPY ~cre/illuskg3.cre~ ~override~
+  SAY 0x8	@102871
+  SAY 0xC	@102871
+
+COPY ~cre/imptow1.cre~ ~override~
+  SAY 0x8	@102875
+  SAY 0xC	@102875
+  SAY 0xEC	@104232
+  SAY 0xF0	@104233
+
+COPY ~cre/ingo.cre~ ~override~
+  SAY 0x8	@102876
+  SAY 0xC	@102876
+
+COPY ~cre/injured1.cre~ ~override~
+  SAY 0x8	@107298
+  SAY 0xC	@107298
+
+COPY ~cre/innguar1.cre~ ~override~
+  SAY 0x8	@102878
+  SAY 0xC	@102878
+  SAY 0xA4	@104203
+  SAY 0x10C	@104203
+  SAY 0x110	@104204
+  SAY 0x114	@104205
+  SAY 0x118	@104202
+
+COPY ~cre/islund.cre~ ~override~
+  SAY 0x8	@102884
+  SAY 0xC	@102884
+
+COPY ~cre/issabon.cre~ ~override~
+  SAY 0x8	@102885
+  SAY 0xC	@102885
+
+COPY ~cre/jace.cre~ ~override~
+  SAY 0x8	@102886
+  SAY 0xC	@102886
+
+COPY ~cre/jadale.cre~ ~override~
+  SAY 0x8	@102887
+  SAY 0xC	@102887
+
+COPY ~cre/jaer.cre~ ~override~
+  SAY 0x8	@102890
+  SAY 0xC	@102890
+
+COPY ~cre/jalek.cre~ ~override~
+  SAY 0x8	@102892
+  SAY 0xC	@102892
+
+COPY ~cre/janis1.cre~ ~override~
+  SAY 0x8	@102893
+  SAY 0xC	@102893
+
+COPY ~cre/janken.cre~ ~override~
+  SAY 0x8	@102894
+  SAY 0xC	@102894
+
+COPY ~cre/jarednw.cre~ ~override~
+  SAY 0x8	@102895
+  SAY 0xC	@102895
+
+COPY ~cre/jaroo.cre~ ~override~
+  SAY 0x8	@102898
+  SAY 0xC	@102898
+  SAY 0xEC	@104242
+  SAY 0xF0	@104243
+
+COPY ~cre/jax.cre~ ~override~
+  SAY 0x8	@102899
+  SAY 0xC	@102899
+
+COPY ~cre/jellymu.cre~ ~override~
+  SAY 0xEC	@86887
+
+COPY ~cre/jeloli01.cre~ ~override~
+  SAY 0x8	@88261
+  SAY 0xC	@88261
+
+COPY ~cre/jemanie.cre~ ~override~
+  SAY 0x8	@102900
+  SAY 0xC	@102900
+
+COPY ~cre/jerol.cre~ ~override~
+  SAY 0x8	@102901
+  SAY 0xC	@102901
+
+COPY ~cre/jerome.cre~ ~override~
+  SAY 0x8	@102914
+  SAY 0xC	@102914
+
+COPY ~cre/jevon.cre~ ~override~
+  SAY 0x8	@105108
+  SAY 0xC	@105108
+
+COPY ~cre/johns.cre~ ~override~
+  SAY 0x8	@102917
+  SAY 0xC	@102917
+
+COPY ~cre/johnsth.cre~ ~override~
+  SAY 0x8	@102918
+  SAY 0xC	@102918
+
+COPY ~cre/jones.cre~ ~override~
+  SAY 0x8	@102919
+  SAY 0xC	@102919
+
+COPY ~cre/kaohinon.cre~ ~override~
+  SAY 0x8	@102922
+  SAY 0xC	@102922
+  SAY 0xA4	@104246
+  SAY 0xA8	@104247
+  SAY 0xB8	@104247
+  SAY 0xC8	@104248
+  SAY 0xCC	@104247
+  SAY 0xD0	@104246
+  SAY 0xEC	@104249
+  SAY 0xF0	@104250
+  SAY 0x10C	@104248
+  SAY 0x110	@104251
+  SAY 0x114	@104252
+
+COPY ~cre/karlatnw.cre~ ~override~
+  SAY 0x8	@102957
+  SAY 0xC	@102957
+
+COPY ~cre/kasma.cre~ ~override~
+  SAY 0x8	@102964
+  SAY 0xC	@102964
+
+COPY ~cre/keener.cre~ ~override~
+  SAY 0x8	@102965
+  SAY 0xC	@102965
+
+COPY ~cre/kellisai.cre~ ~override~
+  SAY 0x8	@102966
+  SAY 0xC	@102966
+
+COPY ~cre/kendrack.cre~ ~override~
+  SAY 0x8	@102967
+  SAY 0xC	@102967
+
+COPY ~cre/kipp.cre~ ~override~
+  SAY 0x8	@102971
+  SAY 0xC	@102971
+  SAY 0xA4	@104203
+  SAY 0x10C	@104203
+  SAY 0x110	@104204
+  SAY 0x114	@104205
+  SAY 0x118	@104202
+
+COPY ~cre/klaut.cre~ ~override~
+  SAY 0x8	@106162
+  SAY 0xC	@106162
+
+COPY ~cre/kreshnar.cre~ ~override~
+  SAY 0x8	@105703
+  SAY 0xC	@105703
+
+COPY ~cre/krestal.cre~ ~override~
+  SAY 0x8	@102972
+  SAY 0xC	@102972
+  SAY 0xA4	@104258
+  SAY 0xB8	@104259
+  SAY 0xC8	@104260
+  SAY 0xCC	@104261
+  SAY 0xD0	@104262
+  SAY 0xEC	@104263
+  SAY 0xF0	@104264
+  SAY 0x10C	@104265
+  SAY 0x110	@104266
+
+COPY ~cre/kurdan.cre~ ~override~
+  SAY 0x8	@102974
+  SAY 0xC	@102974
+
+COPY ~cre/kurt1.cre~ ~override~
+  SAY 0x8	@102977
+  SAY 0xC	@102977
+
+COPY ~cre/kurt2.cre~ ~override~
+  SAY 0x8	@102977
+  SAY 0xC	@102977
+
+COPY ~cre/kurtgob.cre~ ~override~
+  SAY 0x8	@102978
+  SAY 0xC	@102978
+  SAY 0xA4	@104177
+  SAY 0xA8	@104178
+  SAY 0xB8	@104178
+  SAY 0xC8	@104179
+  SAY 0xCC	@104180
+  SAY 0xDC	@104181
+  SAY 0xEC	@104182
+  SAY 0xF0	@104183
+  SAY 0x10C	@104184
+  SAY 0x110	@104185
+
+COPY ~cre/kurtgu1.cre~ ~override~
+  SAY 0x8	@102979
+  SAY 0xC	@102979
+
+COPY ~cre/kurtgu2.cre~ ~override~
+  SAY 0x8	@102980
+  SAY 0xC	@102980
+
+COPY ~cre/kurts01.cre~ ~override~
+  SAY 0x8	@102981
+  SAY 0xC	@102981
+
+COPY ~cre/kurts02.cre~ ~override~
+  SAY 0x8	@102981
+  SAY 0xC	@102981
+
+COPY ~cre/kurts03.cre~ ~override~
+  SAY 0x8	@102981
+  SAY 0xC	@102981
+
+COPY ~cre/kurts04.cre~ ~override~
+  SAY 0x8	@102981
+  SAY 0xC	@102981
+
+COPY ~cre/kurts05.cre~ ~override~
+  SAY 0x8	@102982
+  SAY 0xC	@102982
+
+COPY ~cre/kurts06.cre~ ~override~
+  SAY 0x8	@102983
+  SAY 0xC	@102983
+
+COPY ~cre/kurts07.cre~ ~override~
+  SAY 0x8	@102984
+  SAY 0xC	@102984
+
+COPY ~cre/kurts08.cre~ ~override~
+  SAY 0x8	@102982
+  SAY 0xC	@102982
+
+COPY ~cre/kurtsl1.cre~ ~override~
+  SAY 0x8	@102982
+  SAY 0xC	@102982
+
+COPY ~cre/kurtsl2.cre~ ~override~
+  SAY 0x8	@102982
+  SAY 0xC	@102982
+
+COPY ~cre/ladynw01.cre~ ~override~
+  SAY 0x8	@102985
+  SAY 0xC	@102985
+
+COPY ~cre/leah.cre~ ~override~
+  SAY 0x8	@102986
+  SAY 0xC	@102986
+
+COPY ~cre/lees.cre~ ~override~
+  SAY 0x8	@106904
+  SAY 0xC	@106904
+
+COPY ~cre/lenton.cre~ ~override~
+  SAY 0x8	@102997
+  SAY 0xC	@102997
+
+COPY ~cre/lerk.cre~ ~override~
+  SAY 0x8	@102998
+  SAY 0xC	@102998
+  SAY 0xA4	@104267
+  SAY 0xC8	@104268
+  SAY 0xCC	@104269
+  SAY 0xEC	@104270
+  SAY 0xF0	@104271
+  SAY 0x10C	@104267
+
+COPY ~cre/lillian.cre~ ~override~
+  SAY 0x8	@104760
+  SAY 0xC	@104760
+
+COPY ~cre/listen01.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/listen02.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/listen03.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+  SAY 0xC8	@104289
+  SAY 0xCC	@104290
+  SAY 0xDC	@104291
+
+COPY ~cre/listen04.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/listen05.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/listen06.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/listen07.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/lizarnw1.cre~ ~override~
+  SAY 0x8	@103001
+  SAY 0xC	@103001
+
+COPY ~cre/lizarnw2.cre~ ~override~
+  SAY 0x8	@103001
+  SAY 0xC	@103001
+
+COPY ~cre/lizarnw3.cre~ ~override~
+  SAY 0x8	@103006
+  SAY 0xC	@103006
+
+COPY ~cre/lizarnw5.cre~ ~override~
+  SAY 0x8	@107507
+  SAY 0xC	@107507
+
+COPY ~cre/lizslav1.cre~ ~override~
+  SAY 0x8	@105878
+  SAY 0xC	@105878
+
+COPY ~cre/lizslav2.cre~ ~override~
+  SAY 0x8	@105878
+  SAY 0xC	@105878
+
+COPY ~cre/lizslav3.cre~ ~override~
+  SAY 0x8	@105878
+  SAY 0xC	@105878
+
+COPY ~cre/liztime.cre~ ~override~
+  SAY 0x8	@105967
+  SAY 0xC	@105967
+
+COPY ~cre/lodar.cre~ ~override~
+  SAY 0x8	@104761
+  SAY 0xC	@104761
+
+COPY ~cre/lokar.cre~ ~override~
+  SAY 0x8	@105877
+  SAY 0xC	@105877
+
+COPY ~cre/londa.cre~ ~override~
+  SAY 0x8	@103007
+  SAY 0xC	@103007
+
+COPY ~cre/luce.cre~ ~override~
+  SAY 0x8	@103011
+  SAY 0xC	@103011
+
+COPY ~cre/luce2.cre~ ~override~
+  SAY 0x8	@103011
+  SAY 0xC	@103011
+
+COPY ~cre/luscanw1.cre~ ~override~
+  SAY 0x8	@106914
+  SAY 0xC	@106914
+
+COPY ~cre/luscanw2.cre~ ~override~
+  SAY 0x8	@106915
+  SAY 0xC	@106915
+
+COPY ~cre/luscanw3.cre~ ~override~
+  SAY 0x8	@106905
+  SAY 0xC	@106905
+
+COPY ~cre/luscanw4.cre~ ~override~
+  SAY 0x8	@106916
+  SAY 0xC	@106916
+
+COPY ~cre/lydia.cre~ ~override~
+  SAY 0x8	@103013
+  SAY 0xC	@103013
+
+COPY ~cre/macgsnw.cre~ ~override~
+  SAY 0x8	@103014
+  SAY 0xC	@103014
+
+COPY ~cre/mageg3.cre~ ~override~
+  SAY 0x8	@106906
+  SAY 0xC	@106906
+
+COPY ~cre/mageg4.cre~ ~override~
+  SAY 0x8	@106906
+  SAY 0xC	@106906
+
+COPY ~cre/malecom1.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/malecom2.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/malecom3.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/malecom4.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/malecom5.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/malecom6.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/mano.cre~ ~override~
+  SAY 0x8	@103020
+  SAY 0xC	@103020
+
+COPY ~cre/marcusnw.cre~ ~override~
+  SAY 0x8	@103023
+  SAY 0xC	@103023
+
+COPY ~cre/marrok.cre~ ~override~
+  SAY 0x8	@103028
+  SAY 0xC	@103028
+
+COPY ~cre/mary.cre~ ~override~
+  SAY 0x8	@103029
+  SAY 0xC	@103029
+
+COPY ~cre/mattily.cre~ ~override~
+  SAY 0x8	@103030
+  SAY 0xC	@103030
+
+COPY ~cre/maugrim.cre~ ~override~
+  SAY 0x8	@103031
+  SAY 0xC	@103031
+
+COPY ~cre/maugrim2.cre~ ~override~
+  SAY 0x8	@103031
+  SAY 0xC	@103031
+
+COPY ~cre/maureen.cre~ ~override~
+  SAY 0x8	@103032
+  SAY 0xC	@103032
+
+COPY ~cre/mcustnw1.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+
+COPY ~cre/mcustnw2.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+  SAY 0xA4	@104292
+  SAY 0x10C	@104292
+
+COPY ~cre/mcustnw3.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+
+COPY ~cre/mcustnw4.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+
+COPY ~cre/mcustnw5.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+
+COPY ~cre/mcustnw6.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+
+COPY ~cre/melclean.cre~ ~override~
+  SAY 0x8	@103034
+  SAY 0xC	@103034
+
+COPY ~cre/meldcust.cre~ ~override~
+  SAY 0x8	@103039
+  SAY 0xC	@103039
+
+COPY ~cre/meldgu01.cre~ ~override~
+  SAY 0x8	@103040
+  SAY 0xC	@103040
+
+COPY ~cre/meldgu03.cre~ ~override~
+  SAY 0x8	@103042
+  SAY 0xC	@103042
+  SAY 0xEC	@104232
+  SAY 0xF0	@104233
+
+COPY ~cre/meldgu04.cre~ ~override~
+  SAY 0x8	@103043
+  SAY 0xC	@103043
+
+COPY ~cre/meldgu05.cre~ ~override~
+  SAY 0x8	@103043
+  SAY 0xC	@103043
+
+COPY ~cre/meldgu08.cre~ ~override~
+  SAY 0x8	@103042
+  SAY 0xC	@103042
+  SAY 0xEC	@104232
+  SAY 0xF0	@104233
+
+COPY ~cre/meldgu09.cre~ ~override~
+  SAY 0x8	@103043
+  SAY 0xC	@103043
+
+COPY ~cre/minnw1.cre~ ~override~
+  SAY 0xC8	@104293
+  SAY 0xCC	@104294
+  SAY 0xD0	@104295
+  SAY 0xDC	@104296
+  SAY 0xEC	@104297
+  SAY 0xF0	@104298
+  SAY 0x10C	@104299
+  SAY 0x110	@104300
+  SAY 0x114	@104301
+
+COPY ~cre/minnw1a.cre~ ~override~
+  SAY 0xC8	@104293
+  SAY 0xCC	@104294
+  SAY 0xD0	@104295
+  SAY 0xDC	@104296
+  SAY 0xEC	@104297
+  SAY 0xF0	@104298
+  SAY 0x10C	@104299
+  SAY 0x110	@104300
+  SAY 0x114	@104300
+
+COPY ~cre/minnw2.cre~ ~override~
+  SAY 0x8	@103044
+  SAY 0xC	@103044
+  SAY 0xC8	@104293
+  SAY 0xCC	@104294
+  SAY 0xD0	@104295
+  SAY 0xDC	@104296
+  SAY 0xEC	@104297
+  SAY 0xF0	@104298
+  SAY 0x10C	@104299
+  SAY 0x110	@104300
+  SAY 0x114	@104300
+
+COPY ~cre/minnw3.cre~ ~override~
+  SAY 0xC8	@104293
+  SAY 0xCC	@104294
+  SAY 0xD0	@104295
+  SAY 0xDC	@104296
+  SAY 0xEC	@104297
+  SAY 0xF0	@104298
+  SAY 0x10C	@104299
+  SAY 0x110	@104300
+  SAY 0x114	@104300
+
+COPY ~cre/mobley.cre~ ~override~
+  SAY 0x8	@103051
+  SAY 0xC	@103051
+
+COPY ~cre/mobley2.cre~ ~override~
+  SAY 0x8	@103051
+  SAY 0xC	@103051
+
+COPY ~cre/montgom.cre~ ~override~
+  SAY 0x8	@103053
+  SAY 0xC	@103053
+
+COPY ~cre/moosecl1.cre~ ~override~
+  SAY 0x8	@105667
+  SAY 0xC	@105667
+
+COPY ~cre/moosecu1.cre~ ~override~
+  SAY 0x8	@105701
+  SAY 0xC	@105701
+
+COPY ~cre/moosecu2.cre~ ~override~
+  SAY 0x8	@105701
+  SAY 0xC	@105701
+
+COPY ~cre/moosecu3.cre~ ~override~
+  SAY 0x8	@105701
+  SAY 0xC	@105701
+
+COPY ~cre/moosecu4.cre~ ~override~
+  SAY 0x8	@105701
+  SAY 0xC	@105701
+
+COPY ~cre/moosedru.cre~ ~override~
+  SAY 0x8	@105603
+  SAY 0xC	@105603
+
+COPY ~cre/mooseki2.cre~ ~override~
+  SAY 0x8	@105668
+  SAY 0xC	@105668
+
+COPY ~cre/moosekid.cre~ ~override~
+  SAY 0x8	@105668
+  SAY 0xC	@105668
+
+COPY ~cre/moosepa1.cre~ ~override~
+  SAY 0x8	@105669
+  SAY 0xC	@105669
+
+COPY ~cre/moosepa2.cre~ ~override~
+  SAY 0x8	@105669
+  SAY 0xC	@105669
+
+COPY ~cre/moosepa3.cre~ ~override~
+  SAY 0x8	@105669
+  SAY 0xC	@105669
+
+COPY ~cre/moosewa1.cre~ ~override~
+  SAY 0x8	@105606
+  SAY 0xC	@105606
+
+COPY ~cre/moosewa2.cre~ ~override~
+  SAY 0x8	@105606
+  SAY 0xC	@105606
+
+COPY ~cre/moosewa3.cre~ ~override~
+  SAY 0x8	@105606
+  SAY 0xC	@105606
+
+COPY ~cre/morag.cre~ ~override~
+  SAY 0x8	@103057
+  SAY 0xC	@103057
+
+COPY ~cre/morag1.cre~ ~override~
+  SAY 0x8	@103068
+  SAY 0xC	@103068
+
+COPY ~cre/morag2.cre~ ~override~
+  SAY 0x8	@103057
+  SAY 0xC	@103057
+  SAY 0xEC	@104137
+
+COPY ~cre/morag3.cre~ ~override~
+  SAY 0x8	@103057
+  SAY 0xC	@103057
+  SAY 0xEC	@104137
+
+COPY ~cre/morag4.cre~ ~override~
+  SAY 0x8	@103057
+  SAY 0xC	@103057
+  SAY 0xEC	@104137
+
+COPY ~cre/morden.cre~ ~override~
+  SAY 0x8	@103069
+  SAY 0xC	@103069
+
+COPY ~cre/mulland.cre~ ~override~
+  SAY 0x8	@103070
+  SAY 0xC	@103070
+
+COPY ~cre/mung.cre~ ~override~
+  SAY 0x8	@103071
+  SAY 0xC	@103071
+
+COPY ~cre/mutguard.cre~ ~override~
+  SAY 0x8	@103072
+  SAY 0xC	@103072
+
+COPY ~cre/mygtrol.cre~ ~override~
+  SAY 0x8	@103899
+  SAY 0xC	@103899
+
+COPY ~cre/nascher.cre~ ~override~
+  SAY 0x8	@103075
+  SAY 0xC	@103075
+
+COPY ~cre/nax.cre~ ~override~
+  SAY 0x8	@106133
+  SAY 0xC	@106133
+
+COPY ~cre/neurik.cre~ ~override~
+  SAY 0x8	@103076
+  SAY 0xC	@103076
+  SAY 0x10C	@104302
+  SAY 0x110	@104303
+
+COPY ~cre/neybor.cre~ ~override~
+  SAY 0x8	@103085
+  SAY 0xC	@103085
+
+COPY ~cre/nob1400a.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400b.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+  SAY 0xA4	@104304
+  SAY 0xB8	@104305
+  SAY 0x10C	@104304
+  SAY 0x110	@104306
+
+COPY ~cre/nob1400c.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400d.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400e.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400f.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400g.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400h.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nob1400i.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+
+COPY ~cre/nsabish.cre~ ~override~
+  SAY 0xC8	@104307
+  SAY 0xCC	@104308
+  SAY 0xDC	@104309
+  SAY 0xEC	@104310
+  SAY 0xF0	@104311
+  SAY 0x10C	@104312
+  SAY 0x110	@104313
+  SAY 0x1C0	@104314
+
+COPY ~cre/nuglat.cre~ ~override~
+  SAY 0x8	@103087
+  SAY 0xC	@103087
+
+COPY ~cre/nurse.cre~ ~override~
+  SAY 0x8	@103088
+  SAY 0xC	@103088
+  SAY 0xC8	@104137
+
+COPY ~cre/nurse2.cre~ ~override~
+  SAY 0x8	@103089
+  SAY 0xC	@103089
+
+COPY ~cre/nurse3.cre~ ~override~
+  SAY 0x8	@103089
+  SAY 0xC	@103089
+
+COPY ~cre/nurse4.cre~ ~override~
+  SAY 0x8	@103089
+  SAY 0xC	@103089
+
+COPY ~cre/nw1400f1.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/nw1400m1.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+
+COPY ~cre/nw1400m2.cre~ ~override~
+  SAY 0x8	@103000
+  SAY 0xC	@103000
+  SAY 0xA4	@104325
+  SAY 0x10C	@104325
+
+COPY ~cre/nwarena1.cre~ ~override~
+  SAY 0x8	@103226
+  SAY 0xC	@103226
+
+COPY ~cre/nwarena3.cre~ ~override~
+  SAY 0x8	@103226
+  SAY 0xC	@103226
+  SAY 0xA4	@104333
+  SAY 0x10C	@104333
+
+COPY ~cre/nwarena4.cre~ ~override~
+  SAY 0x8	@103226
+  SAY 0xC	@103226
+
+COPY ~cre/nwauril1.cre~ ~override~
+  SAY 0x8	@103227
+  SAY 0xC	@103227
+
+COPY ~cre/nwbody1.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwbody2.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwbody3.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwbody4.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwbody5.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwbody6.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwbody7.cre~ ~override~
+  SAY 0x8	@103234
+  SAY 0xC	@103234
+
+COPY ~cre/nwcult01.cre~ ~override~
+  SAY 0x8	@103338
+  SAY 0xC	@103338
+
+COPY ~cre/nwcult03.cre~ ~override~
+  SAY 0x8	@103340
+  SAY 0xC	@103340
+
+COPY ~cre/nwcult04.cre~ ~override~
+  SAY 0x8	@103341
+  SAY 0xC	@103341
+
+COPY ~cre/nwcult05.cre~ ~override~
+  SAY 0x8	@103338
+  SAY 0xC	@103338
+
+COPY ~cre/nwcult06.cre~ ~override~
+  SAY 0x8	@103339
+  SAY 0xC	@103339
+
+COPY ~cre/nwcult07.cre~ ~override~
+  SAY 0x8	@105702
+  SAY 0xC	@105702
+  SAY 0xC8	@104137
+
+COPY ~cre/nwcult1.cre~ ~override~
+  SAY 0x8	@103339
+  SAY 0xC	@103339
+  SAY 0xC8	@104137
+
+COPY ~cre/nwcult2.cre~ ~override~
+  SAY 0x8	@103338
+  SAY 0xC	@103338
+
+COPY ~cre/nwcult3.cre~ ~override~
+  SAY 0x8	@103343
+  SAY 0xC	@103343
+
+COPY ~cre/nwcult4.cre~ ~override~
+  SAY 0x8	@103338
+  SAY 0xC	@103338
+
+COPY ~cre/nwdeer2.cre~ ~override~
+  SAY 0x8	@102678
+  SAY 0xC	@102678
+
+COPY ~cre/nwdraco1.cre~ ~override~
+  SAY 0x8	@106475
+  SAY 0xC	@106475
+
+COPY ~cre/nwdraco2.cre~ ~override~
+  SAY 0x8	@106289
+  SAY 0xC	@106289
+
+COPY ~cre/nwdraco3.cre~ ~override~
+  SAY 0x8	@106292
+  SAY 0xC	@106292
+
+COPY ~cre/nwgolem1.cre~ ~override~
+  SAY 0x8	@103362
+  SAY 0xC	@103362
+
+COPY ~cre/nwgolem2.cre~ ~override~
+  SAY 0x8	@103363
+  SAY 0xC	@103363
+
+COPY ~cre/nwgolem3.cre~ ~override~
+  SAY 0x8	@106903
+  SAY 0xC	@106903
+
+COPY ~cre/nwgolem4.cre~ ~override~
+  SAY 0x8	@106903
+  SAY 0xC	@106903
+
+COPY ~cre/nwguar11.cre~ ~override~
+  SAY 0x8	@102813
+  SAY 0xC	@102813
+
+COPY ~cre/nwguar12.cre~ ~override~
+  SAY 0x8	@102813
+  SAY 0xC	@102813
+
+COPY ~cre/nwguar13.cre~ ~override~
+  SAY 0x8	@103364
+  SAY 0xC	@103364
+
+COPY ~cre/nwguar14.cre~ ~override~
+  SAY 0x8	@103364
+  SAY 0xC	@103364
+
+COPY ~cre/nwguar16.cre~ ~override~
+  SAY 0x8	@103364
+  SAY 0xC	@103364
+
+COPY ~cre/nwguard2.cre~ ~override~
+  SAY 0xA4	@104203
+  SAY 0x110	@104205
+
+COPY ~cre/nwguard6.cre~ ~override~
+  SAY 0xA4	@104203
+  SAY 0x110	@104205
+
+COPY ~cre/nwharpy.cre~ ~override~
+  SAY 0x8	@102839
+  SAY 0xC	@102839
+  SAY 0xA4	@104163
+  SAY 0xC8	@104164
+  SAY 0xCC	@104163
+  SAY 0xEC	@104166
+  SAY 0xF0	@104167
+
+COPY ~cre/nwhealer.cre~ ~override~
+  SAY 0x8	@105600
+  SAY 0xC	@105600
+
+COPY ~cre/nwhug1.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+  SAY 0xDC	@104340
+
+COPY ~cre/nwhug10.cre~ ~override~
+  SAY 0x8	@103367
+  SAY 0xC	@103367
+
+COPY ~cre/nwhug11.cre~ ~override~
+  SAY 0x8	@103368
+  SAY 0xC	@103368
+  SAY 0xC8	@104338
+  SAY 0xCC	@104339
+
+COPY ~cre/nwhug12.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+
+COPY ~cre/nwhug2.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+
+COPY ~cre/nwhug3.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+  SAY 0xDC	@104338
+
+COPY ~cre/nwhug4.cre~ ~override~
+  SAY 0x8	@103368
+  SAY 0xC	@103368
+
+COPY ~cre/nwhug6.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+
+COPY ~cre/nwhug7.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+
+COPY ~cre/nwhug8.cre~ ~override~
+  SAY 0x8	@103366
+  SAY 0xC	@103366
+  SAY 0xDC	@104340
+
+COPY ~cre/nwhug9.cre~ ~override~
+  SAY 0x8	@103367
+  SAY 0xC	@103367
+
+COPY ~cre/nwlich1.cre~ ~override~
+  SAY 0x8	@103404
+  SAY 0xC	@103404
+
+COPY ~cre/nwlich2.cre~ ~override~
+  SAY 0x8	@103404
+  SAY 0xC	@103404
+
+COPY ~cre/nwlieut1.cre~ ~override~
+  SAY 0x8	@103405
+  SAY 0xC	@103405
+
+COPY ~cre/nwlizfig.cre~ ~override~
+  SAY 0x8	@107546
+  SAY 0xC	@107546
+
+COPY ~cre/nwlizmag.cre~ ~override~
+  SAY 0x8	@107547
+  SAY 0xC	@107547
+
+COPY ~cre/nwmouth.cre~ ~override~
+  SAY 0x8	@103524
+  SAY 0xC	@103524
+
+COPY ~cre/nwnobm1.cre~ ~override~
+  SAY 0x8	@103086
+  SAY 0xC	@103086
+  SAY 0xA4	@104345
+  SAY 0xB8	@104346
+  SAY 0x10C	@104345
+
+COPY ~cre/nwnobw1.cre~ ~override~
+  SAY 0x8	@103527
+  SAY 0xC	@103527
+
+COPY ~cre/nwplat1.cre~ ~override~
+  SAY 0x8	@103528
+  SAY 0xC	@103528
+
+COPY ~cre/nwprst1.cre~ ~override~
+  SAY 0x8	@103538
+  SAY 0xC	@103538
+
+COPY ~cre/nwprst2.cre~ ~override~
+  SAY 0x8	@103538
+  SAY 0xC	@103538
+
+COPY ~cre/nwprst3.cre~ ~override~
+  SAY 0x8	@103538
+  SAY 0xC	@103538
+
+COPY ~cre/nwprst4.cre~ ~override~
+  SAY 0x8	@103538
+  SAY 0xC	@103538
+
+COPY ~cre/nwprst5.cre~ ~override~
+  SAY 0x8	@103538
+  SAY 0xC	@103538
+
+COPY ~cre/nwprst6.cre~ ~override~
+  SAY 0x8	@103538
+  SAY 0xC	@103538
+
+COPY ~cre/nwprst7.cre~ ~override~
+  SAY 0x8	@103539
+  SAY 0xC	@103539
+
+COPY ~cre/nwsailo1.cre~ ~override~
+  SAY 0x8	@103547
+  SAY 0xC	@103547
+
+COPY ~cre/nwsailo2.cre~ ~override~
+  SAY 0x8	@103547
+  SAY 0xC	@103547
+
+COPY ~cre/nwsailo3.cre~ ~override~
+  SAY 0x8	@103547
+  SAY 0xC	@103547
+
+COPY ~cre/nwsailo4.cre~ ~override~
+  SAY 0x8	@103547
+  SAY 0xC	@103547
+
+COPY ~cre/nwsailo5.cre~ ~override~
+  SAY 0x8	@103547
+  SAY 0xC	@103547
+
+COPY ~cre/nwsailo6.cre~ ~override~
+  SAY 0x8	@103548
+  SAY 0xC	@103548
+
+COPY ~cre/nwsailo7.cre~ ~override~
+  SAY 0x8	@103547
+  SAY 0xC	@103547
+
+COPY ~cre/nwsailo8.cre~ ~override~
+  SAY 0x8	@103549
+  SAY 0xC	@103549
+
+COPY ~cre/nwsally.cre~ ~override~
+  SAY 0x8	@103564
+  SAY 0xC	@103564
+
+COPY ~cre/nwshad01.cre~ ~override~
+  SAY 0xC8	@104347
+  SAY 0xCC	@104348
+  SAY 0xD0	@104349
+  SAY 0xDC	@104350
+  SAY 0xEC	@104351
+  SAY 0xF0	@104352
+
+COPY ~cre/nwsimb1.cre~ ~override~
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwsimb2.cre~ ~override~
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwsimb3.cre~ ~override~
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwsimb4.cre~ ~override~
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwsimb5.cre~ ~override~
+  SAY 0x8	@107526
+  SAY 0xC	@107526
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwsimb6.cre~ ~override~
+  SAY 0x8	@107527
+  SAY 0xC	@107527
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwsimb7.cre~ ~override~
+  SAY 0x8	@107528
+  SAY 0xC	@107528
+  SAY 0xEC	@107529
+  SAY 0xF0	@107530
+
+COPY ~cre/nwtownm2.cre~ ~override~
+  SAY 0xA4	@104325
+  SAY 0x10C	@104325
+
+COPY ~cre/nwyuan1.cre~ ~override~
+  SAY 0x8	@103588
+  SAY 0xC	@103588
+
+COPY ~cre/nwyuan2.cre~ ~override~
+  SAY 0x8	@103588
+  SAY 0xC	@103588
+
+COPY ~cre/nyatar.cre~ ~override~
+  SAY 0x8	@103600
+  SAY 0xC	@103600
+
+COPY ~cre/nymphnw5.cre~ ~override~
+  SAY 0x8	@104353
+  SAY 0xC	@104353
+
+COPY ~cre/obuld.cre~ ~override~
+  SAY 0x8	@106406
+  SAY 0xC	@106406
+
+COPY ~cre/oleff.cre~ ~override~
+  SAY 0x8	@103613
+  SAY 0xC	@103613
+
+COPY ~cre/oleff2.cre~ ~override~
+  SAY 0x8	@103613
+  SAY 0xC	@103613
+
+COPY ~cre/oleff3.cre~ ~override~
+  SAY 0x8	@103613
+  SAY 0xC	@103613
+
+COPY ~cre/ophala.cre~ ~override~
+  SAY 0x8	@103620
+  SAY 0xC	@103620
+
+COPY ~cre/ophala2.cre~ ~override~
+  SAY 0x8	@103620
+  SAY 0xC	@103620
+
+COPY ~cre/orcnw0.cre~ ~override~
+  SAY 0x8	@103627
+  SAY 0xC	@103627
+
+COPY ~cre/orcnw5.cre~ ~override~
+  SAY 0x8	@103628
+  SAY 0xC	@103628
+
+COPY ~cre/orcnw6.cre~ ~override~
+  SAY 0x8	@103629
+  SAY 0xC	@103629
+
+COPY ~cre/oreth.cre~ ~override~
+  SAY 0x8	@103630
+  SAY 0xC	@103630
+
+COPY ~cre/palla.cre~ ~override~
+  SAY 0x8	@105442
+  SAY 0xC	@105442
+
+COPY ~cre/patrol01.cre~ ~override~
+  SAY 0x8	@103373
+  SAY 0xC	@103373
+
+COPY ~cre/patrol02.cre~ ~override~
+  SAY 0x8	@103373
+  SAY 0xC	@103373
+
+COPY ~cre/patrol09.cre~ ~override~
+  SAY 0x8	@105722
+  SAY 0xC	@105722
+
+COPY ~cre/patron1.cre~ ~override~
+  SAY 0x8	@103033
+  SAY 0xC	@103033
+
+COPY ~cre/pens.cre~ ~override~
+  SAY 0x8	@103633
+  SAY 0xC	@103633
+
+COPY ~cre/perigor.cre~ ~override~
+  SAY 0x8	@107297
+  SAY 0xC	@107297
+
+COPY ~cre/pete.cre~ ~override~
+  SAY 0x8	@103637
+  SAY 0xC	@103637
+
+COPY ~cre/phoebe.cre~ ~override~
+  SAY 0x8	@103638
+  SAY 0xC	@103638
+
+COPY ~cre/plate57.cre~ ~override~
+  SAY 0x8	@104355
+  SAY 0xC	@104355
+
+COPY ~cre/plfood.cre~ ~override~
+  SAY 0x8	@103648
+  SAY 0xC	@103648
+
+COPY ~cre/plscroll.cre~ ~override~
+  SAY 0x8	@103649
+  SAY 0xC	@103649
+
+COPY ~cre/potselc2.cre~ ~override~
+  SAY 0x8	@103650
+  SAY 0xC	@103650
+
+COPY ~cre/prichev.cre~ ~override~
+  SAY 0x8	@103653
+  SAY 0xC	@103653
+
+COPY ~cre/prisnw3.cre~ ~override~
+  SAY 0x8	@106381
+  SAY 0xC	@106381
+
+COPY ~cre/prisnw5.cre~ ~override~
+  SAY 0x8	@106377
+  SAY 0xC	@106377
+
+COPY ~cre/punkin.cre~ ~override~
+  SAY 0x8	@103654
+  SAY 0xC	@103654
+
+COPY ~cre/quintnw.cre~ ~override~
+  SAY 0x8	@103660
+  SAY 0xC	@103660
+
+COPY ~cre/quintnw2.cre~ ~override~
+  SAY 0x8	@103660
+  SAY 0xC	@103660
+
+COPY ~cre/refugee1.cre~ ~override~
+  SAY 0x8	@103663
+  SAY 0xC	@103663
+
+COPY ~cre/refugee2.cre~ ~override~
+  SAY 0x8	@103663
+  SAY 0xC	@103663
+
+COPY ~cre/relmar.cre~ ~override~
+  SAY 0x8	@103664
+  SAY 0xC	@103664
+
+COPY ~cre/revat.cre~ ~override~
+  SAY 0x8	@103667
+  SAY 0xC	@103667
+
+COPY ~cre/rhaine.cre~ ~override~
+  SAY 0x8	@103668
+  SAY 0xC	@103668
+
+COPY ~cre/rimardo.cre~ ~override~
+  SAY 0x8	@103669
+  SAY 0xC	@103669
+
+COPY ~cre/rolgan.cre~ ~override~
+  SAY 0x8	@105257
+  SAY 0xC	@105257
+
+COPY ~cre/rolkid.cre~ ~override~
+  SAY 0x8	@105107
+  SAY 0xC	@105107
+
+COPY ~cre/ruzon.cre~ ~override~
+  SAY 0x8	@105602
+  SAY 0xC	@105602
+
+COPY ~cre/sapphira.cre~ ~override~
+  SAY 0x8	@105856
+  SAY 0xC	@105856
+
+COPY ~cre/saulter.cre~ ~override~
+  SAY 0x8	@103688
+  SAY 0xC	@103688
+
+COPY ~cre/sedos.cre~ ~override~
+  SAY 0x8	@103699
+  SAY 0xC	@103699
+
+COPY ~cre/servant2.cre~ ~override~
+  SAY 0x8	@103703
+  SAY 0xC	@103703
+
+COPY ~cre/setara.cre~ ~override~
+  SAY 0x8	@103704
+  SAY 0xC	@103704
+  SAY 0xC8	@104364
+  SAY 0xCC	@104365
+  SAY 0xDC	@104366
+  SAY 0xEC	@104367
+  SAY 0xF0	@104368
+
+COPY ~cre/settler1.cre~ ~override~
+  SAY 0x8	@105587
+  SAY 0xC	@105587
+
+COPY ~cre/settler2.cre~ ~override~
+  SAY 0x8	@105587
+  SAY 0xC	@105587
+
+COPY ~cre/settler3.cre~ ~override~
+  SAY 0x8	@105587
+  SAY 0xC	@105587
+
+COPY ~cre/settler4.cre~ ~override~
+  SAY 0x8	@105587
+  SAY 0xC	@105587
+
+COPY ~cre/shaldri1.cre~ ~override~
+  SAY 0x8	@103711
+  SAY 0xC	@103711
+
+COPY ~cre/shaldri2.cre~ ~override~
+  SAY 0x8	@103711
+  SAY 0xC	@103711
+
+COPY ~cre/silverbk.cre~ ~override~
+  SAY 0x8	@104395
+  SAY 0xC	@104395
+
+COPY ~cre/skelnw04.cre~ ~override~
+  SAY 0xC8	@104396
+  SAY 0xCC	@104397
+  SAY 0xDC	@104398
+  SAY 0xEC	@104399
+  SAY 0xF0	@104400
+
+COPY ~cre/skelnw05.cre~ ~override~
+  SAY 0x8	@103718
+  SAY 0xC	@103718
+
+COPY ~cre/skelwan2.cre~ ~override~
+  SAY 0x8	@103719
+  SAY 0xC	@103719
+
+COPY ~cre/skelwanw.cre~ ~override~
+  SAY 0x8	@103719
+  SAY 0xC	@103719
+
+COPY ~cre/slaadgr1.cre~ ~override~
+  SAY 0x8	@103721
+  SAY 0xC	@103721
+
+COPY ~cre/slaadlrd.cre~ ~override~
+  SAY 0x8	@106378
+  SAY 0xC	@106378
+
+COPY ~cre/slaadre1.cre~ ~override~
+  SAY 0x8	@103722
+  SAY 0xC	@103722
+
+COPY ~cre/slavenw1.cre~ ~override~
+  SAY 0x8	@103724
+  SAY 0xC	@103724
+
+COPY ~cre/slavenw2.cre~ ~override~
+  SAY 0x8	@103724
+  SAY 0xC	@103724
+
+COPY ~cre/slavenw3.cre~ ~override~
+  SAY 0x8	@103724
+  SAY 0xC	@103724
+
+COPY ~cre/slavetm1.cre~ ~override~
+  SAY 0x8	@105966
+  SAY 0xC	@105966
+
+COPY ~cre/slavetm2.cre~ ~override~
+  SAY 0x8	@105966
+  SAY 0xC	@105966
+
+COPY ~cre/slavetm3.cre~ ~override~
+  SAY 0x8	@105966
+  SAY 0xC	@105966
+
+COPY ~cre/sleepfat.cre~ ~override~
+  SAY 0xEC	@86891
+
+COPY ~cre/solomon.cre~ ~override~
+  SAY 0x8	@103732
+  SAY 0xC	@103732
+
+COPY ~cre/sonpl1.cre~ ~override~
+  SAY 0x8	@103736
+  SAY 0xC	@103736
+
+COPY ~cre/sonpl2.cre~ ~override~
+  SAY 0x8	@103736
+  SAY 0xC	@103736
+
+COPY ~cre/soren.cre~ ~override~
+  SAY 0x8	@103737
+  SAY 0xC	@103737
+  SAY 0xA4	@104203
+  SAY 0x10C	@104205
+
+COPY ~cre/spidnw0.cre~ ~override~
+  SAY 0x8	@103741
+  SAY 0xC	@103741
+  SAY 0xA4	@104404
+  SAY 0xC8	@104405
+  SAY 0xEC	@104406
+  SAY 0xF0	@104407
+
+COPY ~cre/spidnw3.cre~ ~override~
+  SAY 0x8	@103741
+  SAY 0xC	@103741
+  SAY 0xEC	@104406
+  SAY 0xF0	@104407
+
+COPY ~cre/spidphas.cre~ ~override~
+  SAY 0x8	@86252
+  SAY 0xC	@86252
+
+COPY ~cre/spiritfo.cre~ ~override~
+  SAY 0x8	@103742
+  SAY 0xC	@103742
+
+COPY ~cre/stalkenw.cre~ ~override~
+  SAY 0x8	@103752
+  SAY 0xC	@103752
+
+COPY ~cre/stand.cre~ ~override~
+  SAY 0x8	@103755
+  SAY 0xC	@103755
+
+COPY ~cre/sundial.cre~ ~override~
+  SAY 0x8	@107758
+  SAY 0xC	@107758
+  SAY 0xEC	@104042
+
+COPY ~cre/susptype.cre~ ~override~
+  SAY 0x8	@103759
+  SAY 0xC	@103759
+
+COPY ~cre/tamora.cre~ ~override~
+  SAY 0x8	@103790
+  SAY 0xC	@103790
+
+COPY ~cre/tamora2.cre~ ~override~
+  SAY 0x8	@103790
+  SAY 0xC	@103790
+
+COPY ~cre/tanit.cre~ ~override~
+  SAY 0x8	@103791
+  SAY 0xC	@103791
+
+COPY ~cre/tanit2.cre~ ~override~
+  SAY 0x8	@103791
+  SAY 0xC	@103791
+
+COPY ~cre/telma.cre~ ~override~
+  SAY 0x8	@103794
+  SAY 0xC	@103794
+
+COPY ~cre/tempsla1.cre~ ~override~
+  SAY 0x8	@105965
+  SAY 0xC	@105965
+
+COPY ~cre/tempsla2.cre~ ~override~
+  SAY 0x8	@105965
+  SAY 0xC	@105965
+
+COPY ~cre/tempsla3.cre~ ~override~
+  SAY 0x8	@105965
+  SAY 0xC	@105965
+
+COPY ~cre/terennw.cre~ ~override~
+  SAY 0x8	@107369
+  SAY 0xC	@107369
+
+COPY ~cre/thoms.cre~ ~override~
+  SAY 0x8	@103795
+  SAY 0xC	@103795
+
+COPY ~cre/thurin.cre~ ~override~
+  SAY 0x8	@103796
+  SAY 0xC	@103796
+
+COPY ~cre/tolan.cre~ ~override~
+  SAY 0x8	@103797
+  SAY 0xC	@103797
+
+COPY ~cre/toras.cre~ ~override~
+  SAY 0x8	@103802
+  SAY 0xC	@103802
+
+COPY ~cre/torgo.cre~ ~override~
+  SAY 0x8	@103805
+  SAY 0xC	@103805
+
+COPY ~cre/towergrd.cre~ ~override~
+  SAY 0x8	@103806
+  SAY 0xC	@103806
+
+COPY ~cre/trolca01.cre~ ~override~
+  SAY 0x8	@103900
+  SAY 0xC	@103900
+
+COPY ~cre/trollnw1.cre~ ~override~
+  SAY 0x8	@103810
+  SAY 0xC	@103810
+
+COPY ~cre/ulfnog.cre~ ~override~
+  SAY 0x8	@103813
+  SAY 0xC	@103813
+
+COPY ~cre/uncas.cre~ ~override~
+  SAY 0x8	@105721
+  SAY 0xC	@105721
+
+COPY ~cre/uthard1.cre~ ~override~
+  SAY 0x8	@105453
+  SAY 0xC	@105453
+
+COPY ~cre/uthard2.cre~ ~override~
+  SAY 0x8	@105453
+  SAY 0xC	@105453
+
+COPY ~cre/uthard3.cre~ ~override~
+  SAY 0x8	@105453
+  SAY 0xC	@105453
+
+COPY ~cre/uthard4.cre~ ~override~
+  SAY 0x8	@105453
+  SAY 0xC	@105453
+
+COPY ~cre/vaath.cre~ ~override~
+  SAY 0x8	@106615
+  SAY 0xC	@106615
+
+COPY ~cre/valenw.cre~ ~override~
+  SAY 0x8	@107370
+  SAY 0xC	@107370
+
+COPY ~cre/vand.cre~ ~override~
+  SAY 0x8	@105369
+  SAY 0xC	@105369
+
+COPY ~cre/vengaul.cre~ ~override~
+  SAY 0x8	@103819
+  SAY 0xC	@103819
+  SAY 0xDC	@104340
+
+COPY ~cre/victim1.cre~ ~override~
+  SAY 0x8	@103019
+  SAY 0xC	@103019
+
+COPY ~cre/walters.cre~ ~override~
+  SAY 0x8	@103826
+  SAY 0xC	@103826
+
+COPY ~cre/wanev.cre~ ~override~
+  SAY 0x8	@103831
+  SAY 0xC	@103831
+
+COPY ~cre/welcar.cre~ ~override~
+  SAY 0x8	@103842
+  SAY 0xC	@103842
+  SAY 0xDC	@104154
+
+COPY ~cre/wererat.cre~ ~override~
+  SAY 0x8	@103843
+  SAY 0xC	@103843
+  SAY 0xA4	@104436
+  SAY 0xA8	@104437
+  SAY 0xB8	@104437
+  SAY 0xC8	@104438
+  SAY 0xCC	@104439
+  SAY 0xDC	@104440
+  SAY 0xEC	@104441
+  SAY 0xF0	@104442
+  SAY 0x10C	@104438
+  SAY 0x110	@104439
+  SAY 0x114	@104443
+
+COPY ~cre/wererat2.cre~ ~override~
+  SAY 0x8	@103843
+  SAY 0xC	@103843
+  SAY 0xA4	@104436
+  SAY 0xA8	@104437
+  SAY 0xB8	@104437
+  SAY 0xC8	@104438
+  SAY 0xCC	@104439
+  SAY 0xDC	@104440
+  SAY 0xEC	@104441
+  SAY 0xF0	@104442
+  SAY 0x10C	@104438
+  SAY 0x110	@104439
+  SAY 0x114	@104443
+
+COPY ~cre/werersl.cre~ ~override~
+  SAY 0x8	@103843
+  SAY 0xC	@103843
+  SAY 0xA4	@104436
+  SAY 0xA8	@104437
+  SAY 0xB8	@104437
+  SAY 0xC8	@104438
+  SAY 0xCC	@104439
+  SAY 0xDC	@104440
+  SAY 0xEC	@104441
+  SAY 0xF0	@104442
+  SAY 0x10C	@104438
+  SAY 0x110	@104439
+  SAY 0x114	@104443
+
+COPY ~cre/wintorp.cre~ ~override~
+  SAY 0x8	@103844
+  SAY 0xC	@103844
+
+COPY ~cre/wittian.cre~ ~override~
+  SAY 0x8	@103845
+  SAY 0xC	@103845
+
+COPY ~cre/wvirginw.cre~ ~override~
+  SAY 0x8	@103846
+  SAY 0xC	@103846
+
+COPY ~cre/yari.cre~ ~override~
+  SAY 0x8	@103851
+  SAY 0xC	@103851
+
+COPY ~cre/yeanasha.cre~ ~override~
+  SAY 0x8	@103852
+  SAY 0xC	@103852
+
+COPY ~cre/yesgar.cre~ ~override~
+  SAY 0x8	@103855
+  SAY 0xC	@103855
+
+COPY ~cre/yeti1.cre~ ~override~
+  SAY 0x8	@106660
+  SAY 0xC	@106660
+
+COPY ~cre/yusam.cre~ ~override~
+  SAY 0x8	@105427
+  SAY 0xC	@105427
+
+COPY ~cre/yvette.cre~ ~override~
+  SAY 0x8	@103858
+  SAY 0xC	@103858
+
+COPY ~cre/zameria.cre~ ~override~
+  SAY 0x8	@103859
+  SAY 0xC	@103859
+
+COPY ~cre/zamgrd1.cre~ ~override~
+  SAY 0x8	@103860
+  SAY 0xC	@103860
+
+COPY ~cre/zamgrd2.cre~ ~override~
+  SAY 0x8	@103860
+  SAY 0xC	@103860
+
+COPY ~cre/zamgrd3.cre~ ~override~
+  SAY 0x8	@103860
+  SAY 0xC	@103860
+
+COPY ~cre/zamitra1.cre~ ~override~
+  SAY 0x8	@103861
+  SAY 0xC	@103861
+
+COPY ~cre/zed.cre~ ~override~
+  SAY 0x8	@105109
+  SAY 0xC	@105109
+
+COPY ~cre/zokan.cre~ ~override~
+  SAY 0x8	@105666
+  SAY 0xC	@105666
+
+COPY ~cre/zom1223.cre~ ~override~
+  SAY 0xEC	@104446
+  SAY 0xF0	@104447
+
+COPY ~cre/zombnw01.cre~ ~override~
+  SAY 0xEC	@104446
+  SAY 0xF0	@104447
+
+COPY ~cre/zombnw1.cre~ ~override~
+  SAY 0xC8	@104449
+  SAY 0xCC	@104450
+  SAY 0xDC	@104451
+  SAY 0xEC	@104446
+  SAY 0xF0	@104447
+  SAY 0x10C	@104450
+
+COPY ~cre/zombnw2.cre~ ~override~
+  SAY 0x8	@103866
+  SAY 0xC	@103866
+  SAY 0xC8	@104449
+  SAY 0xCC	@104450
+  SAY 0xDC	@104450
+  SAY 0xEC	@104446
+  SAY 0xF0	@104447
+  SAY 0x10C	@104450
+
+COPY ~cre/zombnw3.cre~ ~override~
+  SAY 0xC8	@104449
+  SAY 0xCC	@104450
+  SAY 0xDC	@104450
+  SAY 0xEC	@104446
+  SAY 0xF0	@104447
+  SAY 0x10C	@104450
+
+COPY ~cre/zooguar1.cre~ ~override~
+  SAY 0x8	@103867
+  SAY 0xC	@103867
+
+COPY ~cre/zooguar2.cre~ ~override~
+  SAY 0x8	@103867
+  SAY 0xC	@103867
 
 //Sounds
 COPY ~NWNForBG/audio~ ~override~
@@ -157,8 +3421,1772 @@ COPY ~NWNForBG/anim~ ~override~
 //Items
 COPY ~NWNForBG/itm~ ~override~
 
+COPY ~itm/adamant.itm~ ~override~
+  SAY 0x8	@102297
+  SAY 0xC	@102297
+  SAY 0x50	@102298
+  SAY 0x54	@102298
+
+COPY ~itm/adisease.itm~ ~override~
+  SAY 0xC	@102336
+  SAY 0x54	@102337
+
+COPY ~itm/amu01.itm~ ~override~
+  SAY 0xC	@103862
+  SAY 0x54	@103863
+
+COPY ~itm/andrkey.itm~ ~override~
+  SAY 0x8	@102373
+  SAY 0xC	@102373
+  SAY 0x50	@102374
+  SAY 0x54	@102374
+
+COPY ~itm/antidote.itm~ ~override~
+  SAY 0xC	@102380
+  SAY 0x54	@102381
+
+COPY ~itm/arnesshd.itm~ ~override~
+  SAY 0x8	@105470
+  SAY 0xC	@105470
+  SAY 0x50	@105471
+  SAY 0x54	@105471
+
+COPY ~itm/ax1hnw4.itm~ ~override~
+  SAY 0xC	@102443
+  SAY 0x54	@102444
+  SAY 0x43E	@102445
+
+COPY ~itm/axeauc.itm~ ~override~
+  SAY 0xC	@102446
+  SAY 0x54	@102447
+
+COPY ~itm/beltauc.itm~ ~override~
+  SAY 0xC	@102533
+  SAY 0x54	@102534
+
+COPY ~itm/beltnw1.itm~ ~override~
+  SAY 0xC	@102535
+  SAY 0x54	@102536
+
+COPY ~itm/bgsw2h07.itm~ ~override~
+  SAY 0x54	@86242
+
+COPY ~itm/biron.itm~ ~override~
+  SAY 0xC	@102770
+  SAY 0x54	@102771
+
+COPY ~itm/blunauc.itm~ ~override~
+  SAY 0xC	@102560
+  SAY 0x54	@102561
+
+COPY ~itm/bofgae.itm~ ~override~
+  SAY 0xC	@102351
+  SAY 0x54	@102352
+
+COPY ~itm/bonemask.itm~ ~override~
+  SAY 0xC	@103155
+  SAY 0x54	@103156
+
+COPY ~itm/boulder.itm~ ~override~
+  SAY 0x8	@103811
+  SAY 0xC	@103811
+  SAY 0x50	@103812
+  SAY 0x54	@103812
+
+COPY ~itm/cbrngmtl.itm~ ~override~
+  SAY 0x8	@103151
+  SAY 0xC	@103151
+  SAY 0x50	@103153
+  SAY 0x54	@103153
+
+COPY ~itm/cbxtjeaa.itm~ ~override~
+  SAY 0xC	@103160
+  SAY 0x54	@103161
+
+COPY ~itm/chalcynw.itm~ ~override~
+  SAY 0xC	@102595
+  SAY 0x54	@102596
+
+COPY ~itm/charwj.itm~ ~override~
+  SAY 0x8	@102612
+  SAY 0xC	@102612
+  SAY 0x50	@102613
+
+COPY ~itm/clckauc.itm~ ~override~
+  SAY 0xC	@102621
+  SAY 0x54	@102622
+
+COPY ~itm/clcknw1.itm~ ~override~
+  SAY 0xC	@102623
+  SAY 0x54	@102624
+
+COPY ~itm/creatorr.itm~ ~override~
+  SAY 0x8	@102650
+  SAY 0xC	@102650
+  SAY 0x50	@102651
+  SAY 0x54	@102651
+
+COPY ~itm/creators.itm~ ~override~
+  SAY 0x8	@102652
+  SAY 0xC	@102652
+  SAY 0x50	@102653
+
+COPY ~itm/crewtd1.itm~ ~override~
+  SAY 0x8	@102654
+  SAY 0xC	@102654
+  SAY 0x50	@102655
+
+COPY ~itm/crewtd3.itm~ ~override~
+  SAY 0x8	@102660
+  SAY 0xC	@102660
+  SAY 0x50	@102661
+
+COPY ~itm/crewtd4.itm~ ~override~
+  SAY 0x8	@102662
+  SAY 0xC	@102662
+  SAY 0x50	@102663
+
+COPY ~itm/cryptkey.itm~ ~override~
+  SAY 0xC	@102668
+  SAY 0x50	@102669
+
+COPY ~itm/cryptxx.itm~ ~override~
+  SAY 0xC	@103157
+  SAY 0x54	@103159
+  SAY 0x10E	@103158
+
+COPY ~itm/daggasp.itm~ ~override~
+  SAY 0xC	@102300
+  SAY 0x54	@102301
+
+COPY ~itm/drablood.itm~ ~override~
+  SAY 0x8	@102689
+  SAY 0xC	@102689
+  SAY 0x50	@102386
+  SAY 0x54	@102690
+
+COPY ~itm/dracamu1.itm~ ~override~
+  SAY 0x8	@106023
+  SAY 0xC	@106023
+  SAY 0x50	@106024
+
+COPY ~itm/dragegg1.itm~ ~override~
+  SAY 0x8	@106033
+  SAY 0xC	@106033
+  SAY 0x50	@106034
+
+COPY ~itm/dragegg2.itm~ ~override~
+  SAY 0x8	@106291
+  SAY 0xC	@106291
+  SAY 0x50	@106034
+
+COPY ~itm/dupermit.itm~ ~override~
+  SAY 0x8	@102697
+  SAY 0xC	@102697
+  SAY 0x50	@102698
+  SAY 0x54	@102698
+
+COPY ~itm/earband.itm~ ~override~
+  SAY 0x8	@102702
+  SAY 0xC	@102702
+  SAY 0x50	@102703
+  SAY 0x54	@102703
+
+COPY ~itm/elturkey.itm~ ~override~
+  SAY 0x8	@102759
+  SAY 0xC	@102759
+  SAY 0x50	@102760
+  SAY 0x54	@102760
+
+COPY ~itm/ganonl.itm~ ~override~
+  SAY 0x8	@102791
+  SAY 0xC	@102791
+  SAY 0x50	@102792
+  SAY 0x54	@102792
+
+COPY ~itm/garskull.itm~ ~override~
+  SAY 0x8	@102385
+  SAY 0xC	@102385
+  SAY 0x50	@102386
+  SAY 0x54	@102387
+
+COPY ~itm/glaviusl.itm~ ~override~
+  SAY 0x50	@102801
+
+COPY ~itm/gulgash.itm~ ~override~
+  SAY 0x8	@102097
+  SAY 0xC	@102097
+  SAY 0x50	@102098
+
+COPY ~itm/guzuhead.itm~ ~override~
+  SAY 0x8	@104500
+  SAY 0xC	@104500
+  SAY 0x50	@104501
+
+COPY ~itm/headbugb.itm~ ~override~
+  SAY 0x8	@102588
+  SAY 0xC	@102588
+  SAY 0x50	@102589
+
+COPY ~itm/headderg.itm~ ~override~
+  SAY 0x8	@102841
+  SAY 0xC	@102841
+  SAY 0x50	@102842
+
+COPY ~itm/headdr1.itm~ ~override~
+  SAY 0x8	@106035
+  SAY 0xC	@106035
+  SAY 0x50	@106036
+
+COPY ~itm/headorc.itm~ ~override~
+  SAY 0x8	@102843
+  SAY 0xC	@102843
+  SAY 0x50	@102844
+
+COPY ~itm/headtrol.itm~ ~override~
+  SAY 0x8	@102845
+  SAY 0xC	@102845
+  SAY 0x50	@102846
+  SAY 0x54	@102846
+
+COPY ~itm/helmct.itm~ ~override~
+  SAY 0xC	@103984
+  SAY 0x54	@103986
+
+COPY ~itm/helmnw01.itm~ ~override~
+  SAY 0xC	@102852
+  SAY 0x54	@102853
+
+COPY ~itm/holywanw.itm~ ~override~
+  SAY 0x8	@102859
+  SAY 0xC	@102859
+  SAY 0x50	@102860
+
+COPY ~itm/impgore.itm~ ~override~
+  SAY 0x8	@102872
+  SAY 0xC	@102872
+  SAY 0x50	@102873
+  SAY 0x54	@102873
+
+COPY ~itm/ironwood.itm~ ~override~
+  SAY 0x8	@102881
+  SAY 0xC	@102881
+  SAY 0x50	@102882
+  SAY 0x54	@102882
+
+COPY ~itm/jy_03db.itm~ ~override~
+  SAY 0x8	@104244
+  SAY 0xC	@104244
+  SAY 0x50	@104245
+  SAY 0x54	@104245
+
+COPY ~itm/karlatj.itm~ ~override~
+  SAY 0x8	@102954
+  SAY 0xC	@102954
+  SAY 0x50	@102955
+  SAY 0x54	@102955
+
+COPY ~itm/karlatw1.itm~ ~override~
+  SAY 0xC	@102960
+  SAY 0x54	@102961
+
+COPY ~itm/karlatw2.itm~ ~override~
+  SAY 0xC	@102962
+  SAY 0x54	@102963
+
+COPY ~itm/key2210.itm~ ~override~
+  SAY 0xC	@102968
+  SAY 0x50	@102969
+  SAY 0x54	@102969
+
+COPY ~itm/key2601.itm~ ~override~
+  SAY 0x50	@102970
+  SAY 0x54	@102970
+
+COPY ~itm/leahring.itm~ ~override~
+  SAY 0x8	@102987
+  SAY 0xC	@102987
+  SAY 0x50	@102988
+  SAY 0x54	@102988
+
+COPY ~itm/leatauc.itm~ ~override~
+  SAY 0xC	@102989
+  SAY 0x54	@102990
+
+COPY ~itm/leatnw02.itm~ ~override~
+  SAY 0xC	@102991
+  SAY 0x54	@102992
+
+COPY ~itm/leatnw03.itm~ ~override~
+  SAY 0xC	@102993
+  SAY 0x54	@102994
+
+COPY ~itm/lokarrng.itm~ ~override~
+  SAY 0xC	@105486
+  SAY 0x54	@105487
+
+COPY ~itm/lordswnw.itm~ ~override~
+  SAY 0xC	@103008
+  SAY 0x54	@103009
+
+COPY ~itm/magdust.itm~ ~override~
+  SAY 0x8	@103017
+  SAY 0xC	@103017
+  SAY 0x50	@102386
+  SAY 0x54	@103018
+
+COPY ~itm/marcusj.itm~ ~override~
+  SAY 0x8	@103021
+  SAY 0xC	@103021
+  SAY 0x50	@103022
+
+COPY ~itm/marcuss.itm~ ~override~
+  SAY 0x8	@103024
+  SAY 0xC	@103024
+  SAY 0x54	@103025
+
+COPY ~itm/mastamul.itm~ ~override~
+  SAY 0xC	@102592
+  SAY 0x50	@102593
+
+COPY ~itm/montgom.itm~ ~override~
+  SAY 0xC	@103054
+  SAY 0x54	@103055
+
+COPY ~itm/mutkey.itm~ ~override~
+  SAY 0xC	@103073
+  SAY 0x50	@103074
+  SAY 0x54	@103074
+
+COPY ~itm/newamcu.itm~ ~override~
+  SAY 0xC	@103461
+  SAY 0x54	@103462
+
+COPY ~itm/newbt01.itm~ ~override~
+  SAY 0xC	@103371
+  SAY 0x54	@103372
+
+COPY ~itm/newle03.itm~ ~override~
+  SAY 0xC	@102896
+  SAY 0x54	@102897
+
+COPY ~itm/newrivi.itm~ ~override~
+  SAY 0xC	@103369
+  SAY 0x54	@103370
+
+COPY ~itm/nsshld02.itm~ ~override~
+  SAY 0xC	@103166
+  SAY 0x54	@103167
+
+COPY ~itm/nvamul01.itm~ ~override~
+  SAY 0xC	@103090
+  SAY 0x54	@102866
+
+COPY ~itm/nvbrac03.itm~ ~override~
+  SAY 0xC	@103111
+  SAY 0x54	@103112
+
+COPY ~itm/nwamul01.itm~ ~override~
+  SAY 0xC	@103224
+  SAY 0x54	@103225
+
+COPY ~itm/nwbook01.itm~ ~override~
+  SAY 0x8	@103235
+  SAY 0xC	@103235
+  SAY 0x50	@103236
+
+COPY ~itm/nwbook02.itm~ ~override~
+  SAY 0x8	@103237
+  SAY 0xC	@103237
+  SAY 0x50	@103238
+
+COPY ~itm/nwbook03.itm~ ~override~
+  SAY 0x8	@103239
+  SAY 0xC	@103239
+  SAY 0x50	@103240
+
+COPY ~itm/nwbook04.itm~ ~override~
+  SAY 0x8	@103241
+  SAY 0xC	@103241
+  SAY 0x50	@103242
+
+COPY ~itm/nwbook05.itm~ ~override~
+  SAY 0x8	@103243
+  SAY 0xC	@103243
+  SAY 0x50	@103244
+
+COPY ~itm/nwbook06.itm~ ~override~
+  SAY 0x8	@103245
+  SAY 0xC	@103245
+  SAY 0x50	@103246
+
+COPY ~itm/nwbook07.itm~ ~override~
+  SAY 0x8	@103247
+  SAY 0xC	@103247
+  SAY 0x50	@103248
+
+COPY ~itm/nwbook08.itm~ ~override~
+  SAY 0x8	@103249
+  SAY 0xC	@103249
+  SAY 0x50	@103250
+
+COPY ~itm/nwbook09.itm~ ~override~
+  SAY 0x8	@103251
+  SAY 0xC	@103251
+  SAY 0x50	@103252
+
+COPY ~itm/nwbook10.itm~ ~override~
+  SAY 0x8	@103253
+  SAY 0xC	@103253
+  SAY 0x50	@103254
+
+COPY ~itm/nwbook11.itm~ ~override~
+  SAY 0x8	@103255
+  SAY 0xC	@103255
+  SAY 0x50	@103256
+
+COPY ~itm/nwbook12.itm~ ~override~
+  SAY 0x8	@103257
+  SAY 0xC	@103257
+  SAY 0x50	@103258
+
+COPY ~itm/nwbook13.itm~ ~override~
+  SAY 0x8	@103259
+  SAY 0xC	@103259
+  SAY 0x50	@103260
+
+COPY ~itm/nwbook14.itm~ ~override~
+  SAY 0x8	@103261
+  SAY 0xC	@103261
+  SAY 0x50	@103262
+
+COPY ~itm/nwbook15.itm~ ~override~
+  SAY 0x8	@103263
+  SAY 0xC	@103263
+  SAY 0x50	@103264
+
+COPY ~itm/nwbook16.itm~ ~override~
+  SAY 0x8	@103265
+  SAY 0xC	@103265
+  SAY 0x50	@103266
+
+COPY ~itm/nwbook17.itm~ ~override~
+  SAY 0x8	@103267
+  SAY 0xC	@103267
+  SAY 0x50	@103268
+
+COPY ~itm/nwbook18.itm~ ~override~
+  SAY 0x8	@103269
+  SAY 0xC	@103269
+  SAY 0x50	@103270
+
+COPY ~itm/nwbook19.itm~ ~override~
+  SAY 0x8	@103271
+  SAY 0xC	@103271
+  SAY 0x50	@103272
+
+COPY ~itm/nwbook20.itm~ ~override~
+  SAY 0x8	@103273
+  SAY 0xC	@103273
+  SAY 0x50	@103274
+
+COPY ~itm/nwbook21.itm~ ~override~
+  SAY 0x8	@103275
+  SAY 0xC	@103275
+  SAY 0x50	@103276
+
+COPY ~itm/nwbook22.itm~ ~override~
+  SAY 0x8	@103277
+  SAY 0xC	@103277
+  SAY 0x50	@103278
+
+COPY ~itm/nwbook23.itm~ ~override~
+  SAY 0x8	@103279
+  SAY 0xC	@103279
+  SAY 0x50	@103280
+
+COPY ~itm/nwbook24.itm~ ~override~
+  SAY 0x8	@103281
+  SAY 0xC	@103281
+  SAY 0x50	@103282
+
+COPY ~itm/nwbook25.itm~ ~override~
+  SAY 0x8	@103283
+  SAY 0xC	@103283
+  SAY 0x50	@103284
+
+COPY ~itm/nwbook26.itm~ ~override~
+  SAY 0x8	@103285
+  SAY 0xC	@103285
+  SAY 0x50	@103286
+
+COPY ~itm/nwbook27.itm~ ~override~
+  SAY 0x8	@103287
+  SAY 0xC	@103287
+  SAY 0x50	@103288
+
+COPY ~itm/nwbook28.itm~ ~override~
+  SAY 0x8	@103289
+  SAY 0xC	@103289
+  SAY 0x50	@103290
+
+COPY ~itm/nwbook29.itm~ ~override~
+  SAY 0x8	@103291
+  SAY 0xC	@103291
+  SAY 0x50	@103292
+
+COPY ~itm/nwbook30.itm~ ~override~
+  SAY 0x8	@103293
+  SAY 0xC	@103293
+  SAY 0x50	@103294
+
+COPY ~itm/nwbook31.itm~ ~override~
+  SAY 0x8	@103295
+  SAY 0xC	@103295
+  SAY 0x50	@103296
+
+COPY ~itm/nwbook32.itm~ ~override~
+  SAY 0x8	@103297
+  SAY 0xC	@103297
+  SAY 0x50	@103298
+  SAY 0x54	@103298
+
+COPY ~itm/nwbook33.itm~ ~override~
+  SAY 0xC	@103299
+  SAY 0x54	@103300
+  SAY 0x10E	@104334
+
+COPY ~itm/nwbook34.itm~ ~override~
+  SAY 0x8	@103301
+  SAY 0xC	@103301
+  SAY 0x50	@103302
+  SAY 0x54	@103302
+
+COPY ~itm/nwbook35.itm~ ~override~
+  SAY 0x8	@103303
+  SAY 0xC	@103303
+  SAY 0x50	@103304
+
+COPY ~itm/nwbook36.itm~ ~override~
+  SAY 0x8	@103305
+  SAY 0xC	@103305
+  SAY 0x50	@103306
+  SAY 0x54	@103306
+
+COPY ~itm/nwbook37.itm~ ~override~
+  SAY 0x8	@103307
+  SAY 0xC	@103307
+  SAY 0x50	@103308
+  SAY 0x54	@103308
+
+COPY ~itm/nwbook38.itm~ ~override~
+  SAY 0x8	@103309
+  SAY 0xC	@103309
+  SAY 0x50	@103310
+  SAY 0x54	@103310
+
+COPY ~itm/nwbook39.itm~ ~override~
+  SAY 0x8	@103311
+  SAY 0xC	@103311
+  SAY 0x50	@103312
+
+COPY ~itm/nwbook41.itm~ ~override~
+  SAY 0x8	@103313
+  SAY 0xC	@103313
+  SAY 0x50	@103314
+
+COPY ~itm/nwbook43.itm~ ~override~
+  SAY 0x8	@103317
+  SAY 0xC	@103317
+  SAY 0x50	@103318
+
+COPY ~itm/nwbook44.itm~ ~override~
+  SAY 0x8	@103319
+  SAY 0xC	@103319
+  SAY 0x50	@103320
+
+COPY ~itm/nwbook45.itm~ ~override~
+  SAY 0x8	@103321
+  SAY 0xC	@103321
+  SAY 0x50	@103322
+
+COPY ~itm/nwbook47.itm~ ~override~
+  SAY 0x8	@103326
+  SAY 0xC	@103326
+  SAY 0x50	@103327
+  SAY 0x54	@103327
+
+COPY ~itm/nwbook48.itm~ ~override~
+  SAY 0x8	@102269
+  SAY 0xC	@102269
+  SAY 0x50	@102270
+
+COPY ~itm/nwbook49.itm~ ~override~
+  SAY 0x8	@103328
+  SAY 0xC	@103328
+  SAY 0x50	@103329
+
+COPY ~itm/nwbook50.itm~ ~override~
+  SAY 0x8	@103330
+  SAY 0xC	@103330
+  SAY 0x50	@103331
+
+COPY ~itm/nwbook51.itm~ ~override~
+  SAY 0x8	@103332
+  SAY 0xC	@103332
+  SAY 0x50	@103333
+  SAY 0x54	@103333
+
+COPY ~itm/nwbook52.itm~ ~override~
+  SAY 0x8	@103334
+  SAY 0xC	@103334
+  SAY 0x50	@103335
+
+COPY ~itm/nwbook56.itm~ ~override~
+  SAY 0x8	@106011
+  SAY 0xC	@106011
+  SAY 0x50	@106012
+
+COPY ~itm/nwbook59.itm~ ~override~
+  SAY 0x8	@106144
+  SAY 0xC	@106144
+  SAY 0x50	@106145
+  SAY 0x54	@106145
+
+COPY ~itm/nwbook60.itm~ ~override~
+  SAY 0x8	@106428
+  SAY 0xC	@106428
+  SAY 0x50	@106429
+
+COPY ~itm/nwbook61.itm~ ~override~
+  SAY 0x8	@105999
+  SAY 0xC	@105999
+  SAY 0x50	@106000
+
+COPY ~itm/nwbook62.itm~ ~override~
+  SAY 0x8	@106658
+  SAY 0xC	@106658
+  SAY 0x50	@106659
+  SAY 0x54	@106659
+
+COPY ~itm/nwbook63.itm~ ~override~
+  SAY 0x8	@107074
+  SAY 0xC	@107074
+  SAY 0x50	@107075
+
+COPY ~itm/nwbook64.itm~ ~override~
+  SAY 0x8	@107709
+  SAY 0xC	@107709
+  SAY 0x50	@107710
+
+COPY ~itm/nwbook65.itm~ ~override~
+  SAY 0x8	@107711
+  SAY 0xC	@107711
+  SAY 0x50	@107712
+
+COPY ~itm/nwbook66.itm~ ~override~
+  SAY 0x8	@107713
+  SAY 0xC	@107713
+  SAY 0x50	@107714
+
+COPY ~itm/nwdagg01.itm~ ~override~
+  SAY 0xC	@103357
+  SAY 0x54	@103358
+
+COPY ~itm/nwgem01.itm~ ~override~
+  SAY 0x8	@105760
+  SAY 0xC	@105760
+  SAY 0x54	@105761
+
+COPY ~itm/nwgem02.itm~ ~override~
+  SAY 0x8	@105764
+  SAY 0xC	@105764
+  SAY 0x54	@105765
+
+COPY ~itm/nwgem03.itm~ ~override~
+  SAY 0x8	@105762
+  SAY 0xC	@105762
+  SAY 0x54	@105763
+
+COPY ~itm/nwgem04.itm~ ~override~
+  SAY 0x8	@105766
+  SAY 0xC	@105766
+  SAY 0x54	@105767
+
+COPY ~itm/nwgem05.itm~ ~override~
+  SAY 0x8	@105768
+  SAY 0xC	@105768
+  SAY 0x54	@105769
+
+COPY ~itm/nwgem06.itm~ ~override~
+  SAY 0x8	@105770
+  SAY 0xC	@105770
+  SAY 0x54	@105771
+
+COPY ~itm/nwgem07.itm~ ~override~
+  SAY 0x8	@106019
+  SAY 0xC	@106019
+  SAY 0x54	@106020
+
+COPY ~itm/nwgem08.itm~ ~override~
+  SAY 0x8	@105997
+  SAY 0xC	@105997
+  SAY 0x50	@105998
+
+COPY ~itm/nwgem09.itm~ ~override~
+  SAY 0x8	@106001
+  SAY 0xC	@106001
+  SAY 0x54	@106002
+
+COPY ~itm/nwgem10.itm~ ~override~
+  SAY 0x8	@106007
+  SAY 0xC	@106007
+  SAY 0x54	@106008
+
+COPY ~itm/nwgem11.itm~ ~override~
+  SAY 0x8	@106003
+  SAY 0xC	@106003
+  SAY 0x54	@106004
+
+COPY ~itm/nwgem12.itm~ ~override~
+  SAY 0x8	@106005
+  SAY 0xC	@106005
+  SAY 0x54	@106006
+
+COPY ~itm/nwhead01.itm~ ~override~
+  SAY 0x8	@106400
+  SAY 0xC	@106400
+  SAY 0x50	@106401
+
+COPY ~itm/nwitm117.itm~ ~override~
+  SAY 0xC	@102302
+  SAY 0x50	@102304
+  SAY 0x54	@102303
+
+COPY ~itm/nwkey01.itm~ ~override~
+  SAY 0xC	@103374
+  SAY 0x50	@103375
+
+COPY ~itm/nwkey02.itm~ ~override~
+  SAY 0x8	@103376
+  SAY 0xC	@103376
+  SAY 0x50	@103377
+
+COPY ~itm/nwkey03.itm~ ~override~
+  SAY 0xC	@103378
+  SAY 0x50	@103379
+
+COPY ~itm/nwkey04.itm~ ~override~
+  SAY 0xC	@103380
+  SAY 0x50	@103381
+
+COPY ~itm/nwkey05.itm~ ~override~
+  SAY 0xC	@103382
+  SAY 0x50	@103383
+
+COPY ~itm/nwkey07.itm~ ~override~
+  SAY 0xC	@103384
+  SAY 0x50	@103385
+
+COPY ~itm/nwkey08.itm~ ~override~
+  SAY 0xC	@103386
+  SAY 0x50	@103387
+
+COPY ~itm/nwkey09.itm~ ~override~
+  SAY 0xC	@102668
+  SAY 0x50	@103388
+
+COPY ~itm/nwkey10.itm~ ~override~
+  SAY 0xC	@103389
+  SAY 0x50	@103390
+
+COPY ~itm/nwkey11.itm~ ~override~
+  SAY 0xC	@103391
+  SAY 0x50	@103392
+
+COPY ~itm/nwkey12.itm~ ~override~
+  SAY 0x8	@103393
+  SAY 0xC	@103393
+  SAY 0x50	@103395
+  SAY 0x54	@103395
+
+COPY ~itm/nwkey13.itm~ ~override~
+  SAY 0x8	@103396
+  SAY 0xC	@103396
+  SAY 0x50	@103397
+  SAY 0x54	@103397
+
+COPY ~itm/nwkey14.itm~ ~override~
+  SAY 0xC	@103398
+  SAY 0x50	@103399
+
+COPY ~itm/nwkey15.itm~ ~override~
+  SAY 0x50	@106161
+
+COPY ~itm/nwkey16.itm~ ~override~
+  SAY 0x8	@107076
+  SAY 0xC	@107076
+  SAY 0x54	@107077
+
+COPY ~itm/nwlett01.itm~ ~override~
+  SAY 0x8	@103400
+  SAY 0xC	@103400
+  SAY 0x50	@103401
+
+COPY ~itm/nwlett3.itm~ ~override~
+  SAY 0x8	@106017
+  SAY 0xC	@106017
+  SAY 0x50	@106018
+
+COPY ~itm/nwlett4.itm~ ~override~
+  SAY 0x8	@106015
+  SAY 0xC	@106015
+  SAY 0x50	@106016
+
+COPY ~itm/nwlore1.itm~ ~override~
+  SAY 0xC	@103407
+  SAY 0x54	@103408
+  SAY 0x10E	@104341
+
+COPY ~itm/nwlore2.itm~ ~override~
+  SAY 0xC	@102599
+  SAY 0x54	@102600
+  SAY 0x10E	@104342
+
+COPY ~itm/nwmalr2a.itm~ ~override~
+  SAY 0xC	@102558
+  SAY 0x54	@102559
+
+COPY ~itm/nwmalr3a.itm~ ~override~
+  SAY 0xC	@102555
+  SAY 0x54	@102556
+
+COPY ~itm/nwmalr3b.itm~ ~override~
+  SAY 0x8	@102557
+  SAY 0xC	@102557
+
+COPY ~itm/nwmisc01.itm~ ~override~
+  SAY 0x8	@103410
+  SAY 0xC	@103410
+  SAY 0x50	@103411
+  SAY 0x54	@103411
+
+COPY ~itm/nwmisc02.itm~ ~override~
+  SAY 0x8	@103412
+  SAY 0xC	@103412
+  SAY 0x50	@103413
+  SAY 0x54	@103413
+
+COPY ~itm/nwmisc03.itm~ ~override~
+  SAY 0x8	@103414
+  SAY 0xC	@103414
+  SAY 0x50	@103415
+  SAY 0x54	@103415
+
+COPY ~itm/nwmisc04.itm~ ~override~
+  SAY 0x8	@103414
+  SAY 0xC	@103414
+  SAY 0x50	@103416
+  SAY 0x54	@103416
+
+COPY ~itm/nwmisc05.itm~ ~override~
+  SAY 0x8	@103417
+  SAY 0xC	@103417
+  SAY 0x50	@103418
+  SAY 0x54	@103418
+
+COPY ~itm/nwmisc06.itm~ ~override~
+  SAY 0x8	@103419
+  SAY 0xC	@103419
+  SAY 0x50	@103420
+  SAY 0x54	@103420
+
+COPY ~itm/nwmisc07.itm~ ~override~
+  SAY 0x8	@103421
+  SAY 0xC	@103421
+  SAY 0x50	@103422
+
+COPY ~itm/nwmisc08.itm~ ~override~
+  SAY 0x8	@103423
+  SAY 0xC	@103423
+  SAY 0x50	@103424
+  SAY 0x54	@103424
+
+COPY ~itm/nwmisc09.itm~ ~override~
+  SAY 0x8	@103425
+  SAY 0xC	@103425
+  SAY 0x50	@103426
+  SAY 0x54	@103426
+
+COPY ~itm/nwmisc10.itm~ ~override~
+  SAY 0x8	@103427
+  SAY 0xC	@103427
+  SAY 0x50	@103428
+  SAY 0x54	@103428
+
+COPY ~itm/nwmisc11.itm~ ~override~
+  SAY 0x8	@103429
+  SAY 0xC	@103429
+  SAY 0x50	@103430
+  SAY 0x54	@103430
+
+COPY ~itm/nwmisc12.itm~ ~override~
+  SAY 0x8	@103431
+  SAY 0xC	@103431
+  SAY 0x50	@103432
+
+COPY ~itm/nwmisc13.itm~ ~override~
+  SAY 0x8	@103433
+  SAY 0xC	@103433
+  SAY 0x50	@103434
+
+COPY ~itm/nwmisc14.itm~ ~override~
+  SAY 0x8	@103435
+  SAY 0xC	@103435
+  SAY 0x50	@103436
+
+COPY ~itm/nwmisc15.itm~ ~override~
+  SAY 0x8	@103437
+  SAY 0xC	@103437
+  SAY 0x50	@103438
+
+COPY ~itm/nwmisc16.itm~ ~override~
+  SAY 0x8	@103439
+  SAY 0xC	@103439
+  SAY 0x50	@103440
+
+COPY ~itm/nwmisc17.itm~ ~override~
+  SAY 0x8	@103441
+  SAY 0xC	@103441
+  SAY 0x50	@103442
+
+COPY ~itm/nwmisc18.itm~ ~override~
+  SAY 0x8	@103443
+  SAY 0xC	@103443
+  SAY 0x50	@103444
+
+COPY ~itm/nwmisc19.itm~ ~override~
+  SAY 0x8	@103445
+  SAY 0xC	@103445
+  SAY 0x50	@103446
+
+COPY ~itm/nwmisc20.itm~ ~override~
+  SAY 0x8	@103447
+  SAY 0xC	@103447
+  SAY 0x50	@103448
+
+COPY ~itm/nwmisc21.itm~ ~override~
+  SAY 0x8	@103449
+  SAY 0xC	@103449
+  SAY 0x50	@103450
+
+COPY ~itm/nwmisc22.itm~ ~override~
+  SAY 0x8	@103451
+  SAY 0xC	@103451
+  SAY 0x50	@103452
+
+COPY ~itm/nwmisc23.itm~ ~override~
+  SAY 0x8	@103453
+  SAY 0xC	@103453
+  SAY 0x50	@103454
+
+COPY ~itm/nwmisc24.itm~ ~override~
+  SAY 0x8	@103455
+  SAY 0xC	@103455
+  SAY 0x50	@103456
+
+COPY ~itm/nwmisc25.itm~ ~override~
+  SAY 0x8	@103457
+  SAY 0xC	@103457
+  SAY 0x50	@103456
+
+COPY ~itm/nwmisc26.itm~ ~override~
+  SAY 0x8	@103458
+  SAY 0xC	@103458
+  SAY 0x50	@103456
+
+COPY ~itm/nwmisc27.itm~ ~override~
+  SAY 0xC	@103459
+  SAY 0x54	@103460
+
+COPY ~itm/nwmisc28.itm~ ~override~
+  SAY 0xC	@103463
+  SAY 0x50	@103464
+
+COPY ~itm/nwmisc29.itm~ ~override~
+  SAY 0x8	@102799
+  SAY 0xC	@102799
+  SAY 0x50	@102800
+
+COPY ~itm/nwmisc30.itm~ ~override~
+  SAY 0x8	@103465
+  SAY 0xC	@103465
+  SAY 0x50	@103466
+
+COPY ~itm/nwmisc32.itm~ ~override~
+  SAY 0x8	@103467
+  SAY 0xC	@103467
+  SAY 0x50	@103468
+
+COPY ~itm/nwmisc33.itm~ ~override~
+  SAY 0x8	@103469
+  SAY 0xC	@103469
+  SAY 0x50	@103470
+
+COPY ~itm/nwmisc34.itm~ ~override~
+  SAY 0x8	@103410
+  SAY 0xC	@103410
+  SAY 0x50	@103471
+  SAY 0x54	@103471
+
+COPY ~itm/nwmisc36.itm~ ~override~
+  SAY 0x50	@103472
+  SAY 0x54	@103472
+
+COPY ~itm/nwmisc38.itm~ ~override~
+  SAY 0x8	@103475
+  SAY 0xC	@103475
+  SAY 0x50	@103476
+
+COPY ~itm/nwmisc41.itm~ ~override~
+  SAY 0x50	@103481
+  SAY 0x54	@103481
+
+COPY ~itm/nwmisc42.itm~ ~override~
+  SAY 0x8	@103482
+  SAY 0xC	@103482
+  SAY 0x50	@103483
+
+COPY ~itm/nwmisc43.itm~ ~override~
+  SAY 0x54	@103484
+
+COPY ~itm/nwmisc44.itm~ ~override~
+  SAY 0x8	@103485
+  SAY 0xC	@103485
+  SAY 0x50	@103486
+  SAY 0x54	@103486
+
+COPY ~itm/nwmisc46.itm~ ~override~
+  SAY 0x8	@103487
+  SAY 0xC	@103487
+  SAY 0x50	@103488
+
+COPY ~itm/nwmisc47.itm~ ~override~
+  SAY 0x8	@103489
+  SAY 0xC	@103489
+  SAY 0x50	@103490
+
+COPY ~itm/nwmisc48.itm~ ~override~
+  SAY 0xC	@103491
+  SAY 0x50	@103492
+
+COPY ~itm/nwmisc49.itm~ ~override~
+  SAY 0x8	@103493
+  SAY 0xC	@103493
+  SAY 0x50	@103494
+
+COPY ~itm/nwmisc50.itm~ ~override~
+  SAY 0x8	@103495
+  SAY 0xC	@103495
+  SAY 0x50	@103496
+
+COPY ~itm/nwmisc51.itm~ ~override~
+  SAY 0x8	@103497
+  SAY 0xC	@103497
+  SAY 0x50	@103498
+  SAY 0x54	@103498
+
+COPY ~itm/nwmisc52.itm~ ~override~
+  SAY 0x50	@103499
+  SAY 0x54	@103499
+
+COPY ~itm/nwmisc53.itm~ ~override~
+  SAY 0x8	@103500
+  SAY 0xC	@103500
+  SAY 0x50	@103501
+  SAY 0x54	@103501
+
+COPY ~itm/nwmisc54.itm~ ~override~
+  SAY 0x50	@103502
+  SAY 0x54	@103502
+
+COPY ~itm/nwmisc55.itm~ ~override~
+  SAY 0xC	@103503
+  SAY 0x54	@103504
+
+COPY ~itm/nwmisc56.itm~ ~override~
+  SAY 0x50	@103505
+  SAY 0x54	@103505
+
+COPY ~itm/nwmisc57.itm~ ~override~
+  SAY 0xC	@102086
+  SAY 0x54	@102087
+
+COPY ~itm/nwmisc60.itm~ ~override~
+  SAY 0x8	@103510
+  SAY 0xC	@103510
+  SAY 0x50	@103511
+
+COPY ~itm/nwmisc61.itm~ ~override~
+  SAY 0xC	@102888
+  SAY 0x50	@102889
+  SAY 0x54	@102889
+
+COPY ~itm/nwmisc62.itm~ ~override~
+  SAY 0x8	@103512
+  SAY 0xC	@103512
+  SAY 0x50	@103513
+
+COPY ~itm/nwmisc63.itm~ ~override~
+  SAY 0x8	@102493
+  SAY 0xC	@102493
+  SAY 0x50	@102494
+
+COPY ~itm/nwmisc64.itm~ ~override~
+  SAY 0x8	@103514
+  SAY 0xC	@103514
+  SAY 0x50	@103515
+
+COPY ~itm/nwmisc65.itm~ ~override~
+  SAY 0x8	@103516
+  SAY 0xC	@103516
+  SAY 0x50	@103517
+  SAY 0x54	@103517
+
+COPY ~itm/nwmisc66.itm~ ~override~
+  SAY 0x8	@102271
+  SAY 0xC	@102271
+  SAY 0x50	@102272
+
+COPY ~itm/nwmisc67.itm~ ~override~
+  SAY 0x8	@102273
+  SAY 0xC	@102273
+  SAY 0x50	@102274
+
+COPY ~itm/nwmisc68.itm~ ~override~
+  SAY 0x8	@103518
+  SAY 0xC	@103518
+  SAY 0x50	@103519
+
+COPY ~itm/nwmisc70.itm~ ~override~
+  SAY 0x8	@103520
+  SAY 0xC	@103520
+  SAY 0x50	@103521
+  SAY 0x54	@103521
+
+COPY ~itm/nwmisc71.itm~ ~override~
+  SAY 0x8	@103522
+  SAY 0xC	@103522
+  SAY 0x50	@103523
+  SAY 0x54	@103523
+
+COPY ~itm/nwmisc73.itm~ ~override~
+  SAY 0x8	@105468
+  SAY 0xC	@105468
+  SAY 0x50	@105469
+  SAY 0x54	@105469
+
+COPY ~itm/nwmisc74.itm~ ~override~
+  SAY 0x8	@105480
+  SAY 0xC	@105480
+  SAY 0x54	@105481
+
+COPY ~itm/nwmisc76.itm~ ~override~
+  SAY 0x8	@105717
+  SAY 0xC	@105717
+  SAY 0x50	@105718
+
+COPY ~itm/nwmisc77.itm~ ~override~
+  SAY 0x8	@105719
+  SAY 0xC	@105719
+  SAY 0x54	@105720
+
+COPY ~itm/nwmisc78.itm~ ~override~
+  SAY 0x8	@105711
+  SAY 0xC	@105711
+  SAY 0x50	@105712
+
+COPY ~itm/nwmisc79.itm~ ~override~
+  SAY 0x8	@105709
+  SAY 0xC	@105709
+  SAY 0x50	@105710
+
+COPY ~itm/nwmisc80.itm~ ~override~
+  SAY 0x8	@105707
+  SAY 0xC	@105707
+  SAY 0x50	@105708
+
+COPY ~itm/nwmisc81.itm~ ~override~
+  SAY 0x8	@105954
+  SAY 0xC	@105954
+  SAY 0x50	@105955
+  SAY 0x54	@105955
+
+COPY ~itm/nwmisc82.itm~ ~override~
+  SAY 0x8	@105956
+  SAY 0xC	@105956
+  SAY 0x50	@105957
+  SAY 0x54	@105957
+
+COPY ~itm/nwmisc83.itm~ ~override~
+  SAY 0xC	@106345
+  SAY 0x50	@106346
+  SAY 0x54	@106346
+
+COPY ~itm/nwmisc84.itm~ ~override~
+  SAY 0x54	@106402
+
+COPY ~itm/nwmisc85.itm~ ~override~
+  SAY 0x54	@106403
+
+COPY ~itm/nwmisc86.itm~ ~override~
+  SAY 0x8	@107504
+  SAY 0xC	@107504
+  SAY 0x50	@107505
+
+COPY ~itm/nwmisc87.itm~ ~override~
+  SAY 0x8	@107504
+  SAY 0xC	@107504
+  SAY 0x50	@107505
+
+COPY ~itm/nwmisc89.itm~ ~override~
+  SAY 0x8	@107717
+  SAY 0xC	@107717
+  SAY 0x50	@107718
+
+COPY ~itm/nwmisc90.itm~ ~override~
+  SAY 0x8	@107824
+  SAY 0xC	@107824
+  SAY 0x50	@107825
+  SAY 0x54	@107825
+
+COPY ~itm/nwpotn01.itm~ ~override~
+  SAY 0xC	@103529
+  SAY 0x54	@103530
+  SAY 0x2BE	@103531
+
+COPY ~itm/nwpotn02.itm~ ~override~
+  SAY 0xC	@103532
+  SAY 0x54	@103533
+
+COPY ~itm/nwpotn03.itm~ ~override~
+  SAY 0xC	@103534
+  SAY 0x54	@103535
+
+COPY ~itm/nwpotn04.itm~ ~override~
+  SAY 0xC	@103536
+  SAY 0x54	@103537
+
+COPY ~itm/nwring1.itm~ ~override~
+  SAY 0xC	@103540
+  SAY 0x54	@103541
+
+COPY ~itm/nwring2.itm~ ~override~
+  SAY 0xC	@103542
+  SAY 0x54	@103543
+
+COPY ~itm/nwring5.itm~ ~override~
+  SAY 0xC	@103162
+  SAY 0x54	@103163
+
+COPY ~itm/nwring6.itm~ ~override~
+  SAY 0xC	@106009
+  SAY 0x54	@106010
+
+COPY ~itm/nwstaf02.itm~ ~override~
+  SAY 0xC	@102741
+  SAY 0x54	@102742
+
+COPY ~itm/nwstrarw.itm~ ~override~
+  SAY 0xC	@102342
+  SAY 0x54	@102343
+
+COPY ~itm/nwsw2h1.itm~ ~override~
+  SAY 0xC	@103168
+  SAY 0x54	@103169
+
+COPY ~itm/nwword1.itm~ ~override~
+  SAY 0x8	@105705
+  SAY 0xC	@105705
+  SAY 0x50	@105706
+
+COPY ~itm/nwword2.itm~ ~override~
+  SAY 0x8	@105705
+  SAY 0xC	@105705
+  SAY 0x50	@105706
+
+COPY ~itm/nwword3.itm~ ~override~
+  SAY 0x8	@105705
+  SAY 0xC	@105705
+  SAY 0x50	@105706
+
+COPY ~itm/nwword4.itm~ ~override~
+  SAY 0x8	@105705
+  SAY 0xC	@105705
+  SAY 0x50	@106751
+
+COPY ~itm/nyatkey.itm~ ~override~
+  SAY 0xC	@103605
+  SAY 0x50	@103606
+  SAY 0x54	@103606
+
+COPY ~itm/nyatpriz.itm~ ~override~
+  SAY 0xC	@103607
+  SAY 0x54	@103608
+
+COPY ~itm/obolhead.itm~ ~override~
+  SAY 0x8	@104502
+  SAY 0xC	@104502
+  SAY 0x50	@104503
+
+COPY ~itm/picknw.itm~ ~override~
+  SAY 0x8	@103641
+  SAY 0xC	@103641
+  SAY 0x50	@103642
+  SAY 0x54	@103643
+
+COPY ~itm/platauc.itm~ ~override~
+  SAY 0xC	@103644
+  SAY 0x54	@103645
+
+COPY ~itm/platnwn1.itm~ ~override~
+  SAY 0xC	@103646
+  SAY 0x54	@103647
+
+COPY ~itm/quasgore.itm~ ~override~
+  SAY 0x8	@103655
+  SAY 0xC	@103655
+  SAY 0x50	@103656
+  SAY 0x54	@103656
+
+COPY ~itm/quintj.itm~ ~override~
+  SAY 0x8	@103658
+  SAY 0xC	@103658
+  SAY 0x50	@103659
+
+COPY ~itm/relmarl.itm~ ~override~
+  SAY 0x8	@103665
+  SAY 0xC	@103665
+  SAY 0x50	@103666
+
+COPY ~itm/ritdagg2.itm~ ~override~
+  SAY 0x8	@102264
+  SAY 0xC	@102264
+  SAY 0x50	@102265
+
+COPY ~itm/rithtel2.itm~ ~override~
+  SAY 0x8	@103684
+  SAY 0xC	@103685
+  SAY 0x50	@103686
+  SAY 0x54	@103687
+
+COPY ~itm/scalebl.itm~ ~override~
+  SAY 0x50	@107523
+  SAY 0x54	@107523
+
+COPY ~itm/scrlnw02.itm~ ~override~
+  SAY 0x8	@103690
+  SAY 0xC	@103690
+  SAY 0x50	@103691
+
+COPY ~itm/scrlnw03.itm~ ~override~
+  SAY 0x8	@103690
+  SAY 0xC	@103690
+  SAY 0x50	@103692
+
+COPY ~itm/scrlnw04.itm~ ~override~
+  SAY 0xC	@103693
+  SAY 0x54	@103694
+  SAY 0x10E	@104363
+
+COPY ~itm/scrolln2.itm~ ~override~
+  SAY 0x8	@103695
+  SAY 0xC	@103695
+  SAY 0x50	@103696
+
+COPY ~itm/scrollnw.itm~ ~override~
+  SAY 0xC	@103697
+  SAY 0x50	@103698
+
+COPY ~itm/scrx13.itm~ ~override~
+  SAY 0xC	@103135
+  SAY 0x54	@103136
+
+COPY ~itm/scrx17.itm~ ~override~
+  SAY 0xC	@103882
+  SAY 0x54	@103883
+
+COPY ~itm/scrx24.itm~ ~override~
+  SAY 0xC	@103173
+  SAY 0x54	@103174
+
+COPY ~itm/scrx51.itm~ ~override~
+  SAY 0xC	@103888
+  SAY 0x54	@103889
+
+COPY ~itm/scrx9.itm~ ~override~
+  SAY 0xC	@103175
+  SAY 0x54	@103176
+
+COPY ~itm/scsnill.itm~ ~override~
+  SAY 0xC	@103221
+  SAY 0x54	@103222
+
+COPY ~itm/semirror.itm~ ~override~
+  SAY 0xC	@103700
+  SAY 0x50	@103701
+  SAY 0x54	@103702
+
+COPY ~itm/setjour.itm~ ~override~
+  SAY 0x8	@103705
+  SAY 0xC	@103705
+  SAY 0x50	@103706
+
+COPY ~itm/setkey.itm~ ~override~
+  SAY 0x8	@103707
+  SAY 0xC	@103707
+  SAY 0x50	@103708
+
+COPY ~itm/sgem.itm~ ~override~
+  SAY 0x8	@103709
+  SAY 0xC	@103709
+  SAY 0x50	@103710
+  SAY 0x54	@103710
+
+COPY ~itm/shldauc.itm~ ~override~
+  SAY 0xC	@103713
+  SAY 0x54	@103714
+
+COPY ~itm/skullnw1.itm~ ~override~
+  SAY 0x8	@103720
+  SAY 0xC	@103720
+  SAY 0x50	@104401
+
+COPY ~itm/slaaditm.itm~ ~override~
+  SAY 0x8	@102383
+  SAY 0xC	@102383
+  SAY 0x50	@102384
+  SAY 0x54	@102384
+
+COPY ~itm/snoworb.itm~ ~override~
+  SAY 0x8	@106013
+  SAY 0xC	@106013
+  SAY 0x50	@106014
+
+COPY ~itm/soloml.itm~ ~override~
+  SAY 0xC	@103730
+  SAY 0x50	@103731
+
+COPY ~itm/solring.itm~ ~override~
+  SAY 0x8	@103733
+  SAY 0xC	@103733
+  SAY 0x54	@103734
+
+COPY ~itm/spheree1.itm~ ~override~
+  SAY 0x8	@106037
+  SAY 0xC	@106037
+  SAY 0x50	@106038
+  SAY 0x54	@106038
+
+COPY ~itm/spwi431x.itm~ ~override~
+  SAY 0xC	@103886
+  SAY 0x54	@103887
+
+COPY ~itm/staffnw1.itm~ ~override~
+  SAY 0xC	@103745
+  SAY 0x54	@103746
+
+COPY ~itm/staffnw2.itm~ ~override~
+  SAY 0xC	@103747
+  SAY 0x54	@103748
+
+COPY ~itm/stafsum.itm~ ~override~
+  SAY 0xC	@103603
+  SAY 0x54	@103604
+
+COPY ~itm/stamp.itm~ ~override~
+  SAY 0x8	@103753
+  SAY 0xC	@103753
+  SAY 0x50	@103754
+
+COPY ~itm/storyrac.itm~ ~override~
+  SAY 0x8	@103757
+  SAY 0xC	@103757
+  SAY 0x50	@103758
+
+COPY ~itm/sucitm1.itm~ ~override~
+  SAY 0x8	@105991
+  SAY 0xC	@105991
+  SAY 0x50	@105992
+  SAY 0x54	@105992
+
+COPY ~itm/sucitm2.itm~ ~override~
+  SAY 0x8	@105993
+  SAY 0xC	@105993
+  SAY 0x50	@105994
+
+COPY ~itm/sucitm3.itm~ ~override~
+  SAY 0x8	@105989
+  SAY 0xC	@105989
+  SAY 0x54	@105990
+
+COPY ~itm/sw1h73nw.itm~ ~override~
+  SAY 0xC	@103772
+  SAY 0x54	@103773
+
+COPY ~itm/sw1hnw6.itm~ ~override~
+  SAY 0xC	@103784
+  SAY 0x54	@103785
+
+COPY ~itm/sw1hnw7.itm~ ~override~
+  SAY 0xC	@103786
+  SAY 0x54	@103787
+
+COPY ~itm/sw2hnw1.itm~ ~override~
+  SAY 0xC	@102619
+  SAY 0x54	@102620
+
+COPY ~itm/swordauc.itm~ ~override~
+  SAY 0xC	@103788
+  SAY 0x54	@103789
+
+COPY ~itm/swordnw1.itm~ ~override~
+  SAY 0xC	@103164
+  SAY 0x54	@103165
+
+COPY ~itm/translat.itm~ ~override~
+  SAY 0xC	@105478
+  SAY 0x50	@105479
+
+COPY ~itm/treatise.itm~ ~override~
+  SAY 0x8	@103807
+  SAY 0xC	@103807
+  SAY 0x50	@103808
+  SAY 0x54	@103808
+
+COPY ~itm/ucmgle01.itm~ ~override~
+  SAY 0xC	@103601
+  SAY 0x54	@103602
+
+COPY ~itm/uflal4a.itm~ ~override~
+  SAY 0xC	@102849
+  SAY 0x54	@102850
+
+COPY ~itm/uflal5a.itm~ ~override~
+  SAY 0xC	@104011
+  SAY 0x54	@104012
+
+COPY ~itm/uniform.itm~ ~override~
+  SAY 0x8	@103814
+  SAY 0xC	@103814
+  SAY 0x50	@104435
+  SAY 0x54	@104435
+
+COPY ~itm/uring5a.itm~ ~override~
+  SAY 0xC	@103987
+  SAY 0x54	@103988
+
+COPY ~itm/vaathead.itm~ ~override~
+  SAY 0x8	@104504
+  SAY 0xC	@104504
+  SAY 0x50	@104505
+  SAY 0x54	@104505
+
+COPY ~itm/vgem.itm~ ~override~
+  SAY 0x8	@103820
+  SAY 0xC	@103820
+  SAY 0x50	@103821
+  SAY 0x54	@103821
+
+COPY ~itm/vpbolt.itm~ ~override~
+  SAY 0xC	@103188
+  SAY 0x54	@103189
+
+COPY ~itm/vscroll.itm~ ~override~
+  SAY 0xC	@103824
+  SAY 0x54	@103825
+
+COPY ~itm/wandnw4.itm~ ~override~
+  SAY 0xC	@103829
+  SAY 0x54	@103830
+
+COPY ~itm/wanevj1.itm~ ~override~
+  SAY 0x8	@103832
+  SAY 0xC	@103832
+  SAY 0x50	@103833
+  SAY 0x54	@103833
+
+COPY ~itm/wanevsth.itm~ ~override~
+  SAY 0xC	@103834
+  SAY 0x54	@103835
+
+COPY ~itm/yesgark.itm~ ~override~
+  SAY 0xC	@103856
+  SAY 0x50	@103857
+
+COPY ~itm/zgem.itm~ ~override~
+  SAY 0x8	@103864
+  SAY 0xC	@103864
+  SAY 0x50	@103865
+  SAY 0x54	@103865
+
+COPY ~itm/zokanhd.itm~ ~override~
+  SAY 0x8	@105472
+  SAY 0xC	@105472
+  SAY 0x50	@105473
+  SAY 0x54	@105473
+
 //Spells
 COPY ~NWNForBG/spl~ ~override~
+
+COPY ~spl/fl#csdis.spl~ ~override~
+  SAY 0x8	@102490
+
+COPY ~spl/spin115w.spl~ ~override~
+  SAY 0x8	@103848
+
+COPY ~spl/spin116w.spl~ ~override~
+  SAY 0x8	@104039
+
+COPY ~spl/spin118w.spl~ ~override~
+  SAY 0x8	@103847
+
+COPY ~spl/spin141.spl~ ~override~
+  SAY 0x8	@103693
+
+COPY ~spl/spminti.spl~ ~override~
+  SAY 0x8	@103888
+  SAY 0x50	@103889
+
+COPY ~spl/spmintid.spl~ ~override~
+  SAY 0x8	@103888
+  SAY 0x50	@103889
+
+COPY ~spl/sppr118.spl~ ~override~
+  SAY 0x8	@103901
+  SAY 0x50	@103902
+
+COPY ~spl/sppr119.spl~ ~override~
+  SAY 0x8	@103903
+  SAY 0x50	@103904
+
+COPY ~spl/sppr120.spl~ ~override~
+  SAY 0x8	@103906
+  SAY 0x50	@103907
+  SAY 0x1C6	@103908
+  SAY 0x256	@103908
+  SAY 0x2E6	@103908
+  SAY 0x376	@103908
+  SAY 0x406	@103908
+  SAY 0x496	@103908
+
+COPY ~spl/sppr217.spl~ ~override~
+  SAY 0x8	@103913
+  SAY 0x50	@103914
+
+COPY ~spl/sppr218.spl~ ~override~
+  SAY 0x8	@103915
+  SAY 0x50	@103916
+
+COPY ~spl/sppr321.spl~ ~override~
+  SAY 0x50	@103919
+  SAY 0x2DE	@103920
+  SAY 0x30E	@103921
+  SAY 0x33E	@103922
+  SAY 0x36E	@103923
+  SAY 0x39E	@103924
+  SAY 0x3CE	@103925
+  SAY 0x3FE	@103926
+
+COPY ~spl/sppr322.spl~ ~override~
+  SAY 0x8	@103989
+  SAY 0x50	@103990
+
+COPY ~spl/sppr323.spl~ ~override~
+  SAY 0x8	@103929
+  SAY 0x50	@103930
+
+COPY ~spl/sppr324.spl~ ~override~
+  SAY 0x8	@103931
+  SAY 0x50	@103932
+
+COPY ~spl/sppr328.spl~ ~override~
+  SAY 0x8	@103933
+  SAY 0x50	@103934
+  SAY 0x12E	@103935
+
+COPY ~spl/sppr329.spl~ ~override~
+  SAY 0x8	@103936
+  SAY 0x50	@103937
+
+COPY ~spl/sppr332.spl~ ~override~
+  SAY 0x8	@103938
+  SAY 0x50	@103939
+
+COPY ~spl/sppr333.spl~ ~override~
+  SAY 0x8	@103940
+  SAY 0x50	@103941
+
+COPY ~spl/sppr714.spl~ ~override~
+  SAY 0x8	@103974
+  SAY 0x50	@103975
+  SAY 0x1EE	@103976
+
+COPY ~spl/sppr953.spl~ ~override~
+  SAY 0x8	@103890
+
+COPY ~spl/sppr954.spl~ ~override~
+  SAY 0x8	@103891
+
+COPY ~spl/sppr955.spl~ ~override~
+  SAY 0x8	@103892
+
+COPY ~spl/sppr956.spl~ ~override~
+  SAY 0x8	@103893
+
+COPY ~spl/sppr957.spl~ ~override~
+  SAY 0x8	@103894
+
+COPY ~spl/sppr958.spl~ ~override~
+  SAY 0x8	@103895
+
+COPY ~spl/sppr959.spl~ ~override~
+  SAY 0x8	@103896
+
+COPY ~spl/spwi204.spl~ ~override~
+  SAY 0x8	@103221
+  SAY 0x50	@103222
+
+COPY ~spl/spwi328.spl~ ~override~
+  SAY 0x8	@103175
+  SAY 0x50	@103176
+
+COPY ~spl/spwi428.spl~ ~override~
+  SAY 0x8	@103135
+  SAY 0x50	@103136
+
+COPY ~spl/spwi429.spl~ ~override~
+  SAY 0x8	@102862
+  SAY 0x50	@102863
+
+COPY ~spl/spwi431.spl~ ~override~
+  SAY 0x8	@103886
+  SAY 0x50	@103887
+
+COPY ~spl/spwi733.spl~ ~override~
+  SAY 0x8	@103882
+  SAY 0x50	@103883
+
+COPY ~spl/spwi828.spl~ ~override~
+  SAY 0x8	@103173
+  SAY 0x50	@103174
+
+COPY ~spl/sumshad.spl~ ~override~
+  SAY 0x8	@102485
+
+COPY ~spl/vscroll.spl~ ~override~
+  SAY 0x8	@103824
+  SAY 0x50	@103825
 
 //BMP
 COPY ~NWNForBG/bmp~ ~override~
