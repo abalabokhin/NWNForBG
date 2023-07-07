@@ -1,0 +1,64 @@
+ARE
+    1) triggers, info point text
+    2) rest encounters
+    3) automap notes
+    4) doors, unlock msg + speakername
+    5) containers, lockpick msg
+    6) CRE embedded - UNSUPPORTED!
+CRE
+    0x8
+    0xC
+    0xA4-0x230
+    +effect table
+ITM
+    0x8
+    0xC
+    0x50
+    0x54
+    +ability effect table (Disable display string, Display string)
+    +global effect table
+SPL
+    0x8
+    0xC
+    0x50
+    0x54
+    +ability effect table
+    +global effect table
+
+STO
+    0xC
+2DA
+BAM
+BMP
+EFF
+IDS
+MOS
+MVE
+PRO
+TIS
+VVC
+WAV
+WED
+
+BCS/BAF
+    DisplayString
+    AddJournalEntry
+    DisplayStringNoName
+    DisplayStringHead
+    DisplayStringWait
+    DisplayStringHeadDead
+    DisplayStringNoNameHead
+    SetQuestDone
+    SetToken
+    EraseJournalEntry
+    SetName
+    DisplayStringHeadOwner
+    SetPlayerSound
+    RemoveMapNote
+
+DLG
+    SAY
+    JOURNAL
+    SOLVED_JOURNAL 
+    UNSOLVED_JOURNAL
+    REPLY
