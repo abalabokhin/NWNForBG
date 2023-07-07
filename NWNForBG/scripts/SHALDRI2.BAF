@@ -4,7 +4,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("HelpMy","LOCALS",1)
-		DisplayStringHead(Myself,@71549)  // ????????!
+		DisplayStringHead(Myself,#71549)  // ????????!
 		Continue()
 END
 
