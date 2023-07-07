@@ -43,7 +43,7 @@ IF
 	!General(Myself,GIANTHUMANOID)
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,103048)  // *?????? ?????*
+		DisplayStringHead(Myself,@103048)  // *?????? ?????*
 		SetGlobal("BPCHASER","LOCALS",0)
 		AttackReevaluate(LastSeenBy(Myself),15)
 END
@@ -91,12 +91,12 @@ IF
 	!See([GOODCUTOFF])
 THEN
 	RESPONSE #75
-		DisplayStringHead(Myself,103049)  // *????? ?? ????*
+		DisplayStringHead(Myself,@103049)  // *????? ?? ????*
 		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
 		SetGlobal("BPCHASER","LOCALS",1)
 		MoveToObject(LastHitter(Myself))
 	RESPONSE #25
-		DisplayStringHead(Myself,103049)  // *????? ?? ????*
+		DisplayStringHead(Myself,@103049)  // *????? ?? ????*
 		RunAwayFrom(LastHitter(Myself),45)
 END
 
@@ -111,7 +111,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
-		DisplayStringHead(Myself,103050)  // *?????*
+		DisplayStringHead(Myself,@103050)  // *?????*
 		EquipMostDamagingMelee()
 		MoveToObject(LastSeenBy(Myself))
 		AttackOneRound(LastSeenBy(Myself))
@@ -128,7 +128,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
-		DisplayStringHead(Myself,103050)  // *?????*
+		DisplayStringHead(Myself,@103050)  // *?????*
 		EquipMostDamagingMelee()
 		MoveToObject(LastSeenBy(Myself))
 		AttackOneRound(LastSeenBy(Myself))
@@ -143,7 +143,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPCHASE","LOCALS",ONE_ROUND)
-		DisplayStringHead(Myself,103050)  // *?????*
+		DisplayStringHead(Myself,@103050)  // *?????*
 		MoveToObject(TenthNearest)
 END
 
@@ -156,7 +156,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPCHASE","LOCALS",ONE_ROUND)
-		DisplayStringHead(Myself,103050)  // *?????*
+		DisplayStringHead(Myself,@103050)  // *?????*
 		RunAwayFrom(Nearest,15)
 END
 
@@ -169,7 +169,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("BPCHASER","LOCALS",1)
 		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
-		DisplayStringHead(Myself,103050)  // *?????*
+		DisplayStringHead(Myself,@103050)  // *?????*
 		MoveToObject(Player1)
 END
 

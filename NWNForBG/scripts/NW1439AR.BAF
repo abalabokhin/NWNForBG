@@ -8,7 +8,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("Encounter","MYAREA",0)
 		SetGlobal("Pause1","MYAREA",1)
-		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		Continue()
 END
 
@@ -22,7 +22,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("Encounter","MYAREA",0)
 		SetGlobal("Pause2","MYAREA",1)
-		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		Continue()
 END
 
@@ -36,7 +36,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("Encounter","MYAREA",0)
 		SetGlobal("Pause3","MYAREA",1)
-		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		Continue()
 END
 
@@ -50,7 +50,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("Encounter","MYAREA",0)
 		SetGlobal("Pause4","MYAREA",1)
-		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		Continue()
 END
 

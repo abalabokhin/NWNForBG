@@ -54,7 +54,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("J#Shouted","LOCALS",THREE_ROUNDS)
-		DisplayStringHead(Myself,46151)  // ?? ??????!
+		DisplayStringHead(Myself,@46151)  // ?? ??????!
 		Shout(ASSIST)
 END
 

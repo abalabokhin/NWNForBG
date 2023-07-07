@@ -118,7 +118,7 @@ THEN
 		CreateVisualEffectObject("SPSUMGTE",Myself)
 		SmallWait(8)
 		CreateVisualEffectObject("SPFLESHS",Myself)
-		DisplayString(Myself,14260)  // ?????
+		DisplayString(Myself,@14260)  // ?????
 		DestroySelf()
 END
 

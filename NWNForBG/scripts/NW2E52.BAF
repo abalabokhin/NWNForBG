@@ -26,7 +26,7 @@ THEN
 		CloseDoor("Portal1")
 		SetGlobal("PortalDeactivate","MYAREA",1)
 		ContainerEnable("Portal",FALSE)
-		DisplayString("Portal1",103215)  // ?????? ??????
+		DisplayString("Portal1",@103215)  // ?????? ??????
 		AddexperienceParty(60000)
 END
 

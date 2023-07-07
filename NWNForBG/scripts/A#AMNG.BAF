@@ -24,7 +24,7 @@ IF
 	Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,88562)  // I need backup!
+		DisplayStringHead(Myself,@88562)  // I need backup!
 		SetGlobal("A#CalledForHelp","LOCALS",1)
 	RESPONSE #30
 		CreateCreatureObjectOffset("A#AMNGH",Myself,[10.10])  // ?????? ????
@@ -40,7 +40,7 @@ IF
 	!Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,88562)  // I need backup!
+		DisplayStringHead(Myself,@88562)  // I need backup!
 		SetGlobal("A#CalledForHelp","LOCALS",1)
 	RESPONSE #30
 		CreateCreatureObjectOffset("A#AMNG",Myself,[10.10])  // ?????? ????

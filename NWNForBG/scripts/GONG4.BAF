@@ -3,7 +3,7 @@ IF
 	Global("3406Gong","MYAREA",3)
 THEN
 	RESPONSE #100
-		DisplayStringNoName(Myself,106143)  // ?????? ?????.
+		DisplayStringNoName(Myself,@106143)  // ?????? ?????.
 		PlaySound("4GONG")
 		SetGlobal("3406Gong","MYAREA",4)
 END
@@ -14,7 +14,7 @@ IF
 	GlobalLT("3406Gong","MYAREA",4)
 THEN
 	RESPONSE #100
-		DisplayStringNoName(Myself,106143)  // ?????? ?????.
+		DisplayStringNoName(Myself,@106143)  // ?????? ?????.
 		PlaySound("4GONG")
 		SetGlobal("3406Gong","MYAREA",0)
 END
@@ -24,7 +24,7 @@ IF
 	GlobalGT("3406Gong","MYAREA",3)
 THEN
 	RESPONSE #100
-		DisplayStringNoName(Myself,106143)  // ?????? ?????.
+		DisplayStringNoName(Myself,@106143)  // ?????? ?????.
 		PlaySound("4GONG")
 END
 
