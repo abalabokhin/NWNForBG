@@ -1350,7 +1350,7 @@ THEN
 		SetGlobalTimer("GAVE","LOCALS",TWO_ROUNDS)
 		GiveItem("POTN20",LastHeardBy(Myself))  // ???????????
 		Wait(2)
-		ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,@73896))  // ????!
+		ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,#73896))  // ????!
 END
 
 IF
@@ -1371,7 +1371,7 @@ THEN
 		SetGlobalTimer("GAVE","LOCALS",TWO_ROUNDS)
 		GiveItem("POTN20",LastHeardBy(Myself))  // ???????????
 		Wait(2)
-		ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,@73896))  // ????!
+		ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,#73896))  // ????!
 END
 
 IF
