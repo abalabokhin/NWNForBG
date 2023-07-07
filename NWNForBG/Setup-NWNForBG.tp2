@@ -3413,7 +3413,8 @@ COPY ~cre/zooguar2.cre~ ~override~
   SAY 0xC	@103867
 
 //Sounds
-COPY ~NWNForBG/audio~ ~override~
+LAF HANDLE_AUDIO END
+//COPY ~NWNForBG/audio~ ~override~
 
 //Animations
 COPY ~NWNForBG/anim~ ~override~
