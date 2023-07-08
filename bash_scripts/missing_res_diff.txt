@@ -1,23 +1,8 @@
-Number of hits: 1783
-File: ARAMIS.ITM, Name: To view detailed information about a spell, press and hold or right-click on its icon., Attribute: Icon=ARAMIS2.BAM
-File: ARAMIS.ITM, Name: To view detailed information about a spell, press and hold or right-click on its icon., Attribute: Icon=ARAMIS2.BAM
-File: ARAVORNW.ITM, Name: Hexxat..., Attribute: Icon=ARAVORN.BAM
-File: ARIBETH1.STO, Name: Nevermind. Lesser beings can hardly be expected to understand the intricacies of planar biology., Attribute: Spell=RR#PR514.SPL
+Number of hits: 1683
 File: AUCTION.STO, Name: What do you... what do you want?, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: BALLARD.STO, Name: , Attribute: Rumors (drinks)=RFRIEN.DLG
-File: BELLADON.ITM, Name: Shar worshipper or no, <CHARNAME>, we cannot leave her like this., Attribute: Icon=BELLADON.BAM
-File: BELLADON.ITM, Name: Shar worshipper or no, <CHARNAME>, we cannot leave her like this., Attribute: Description image=BELLADC.BAM
-File: BELLADON.ITM, Name: Shar worshipper or no, <CHARNAME>, we cannot leave her like this., Attribute: Icon=BELLADON.BAM
-File: CBRJR008.ITM, Name: Damn it, Rasaad! Dying in the darkness? Do you think this would make Gamaz happy? Come with me from this place, now, before it's too late!, Attribute: Icon=SPRB005A.BAM
-File: CBRJR008.ITM, Name: Damn it, Rasaad! Dying in the darkness? Do you think this would make Gamaz happy? Come with me from this place, now, before it's too late!, Attribute: Icon=SPRB005A.BAM
-File: CBRJR008.ITM, Name: Damn it, Rasaad! Dying in the darkness? Do you think this would make Gamaz happy? Come with me from this place, now, before it's too late!, Attribute: Icon=SPRB005A.BAM
 File: CHALJAL.STO, Name: Augh! A miss? Not enough ale!, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: CLCKNW3.ITM, Name: Zeris, Attribute: Icon=CLCKNW3.BAM
 File: CRYPTXX.ITM, Name: Кость из склепа, Attribute: Resource=DSPELLXX.VEF
-File: DELVSCUE.ITM, Name: �����? � ���� ������� ������ ����, ��� �� �������������� ����� �� ����� ���������� ������� ���� ������� ������������. ������ ���� �� ������� ���������, ������� ���, ��� �� ����� ������, ���� ���� ����� ���������� ���., Attribute: Icon=DELVSCUE.BAM
-File: DELVSCUE.ITM, Name: �����? � ���� ������� ������ ����, ��� �� �������������� ����� �� ����� ���������� ������� ���� ������� ������������. ������ ���� �� ������� ���������, ������� ���, ��� �� ����� ������, ���� ���� ����� ���������� ���., Attribute: Icon=DELVSCUE.BAM
-File: DSZRNG03.ITM, Name: They can restore Hit Points with healing spells such as Cure Light Wounds., Attribute: Resource=DW#WEB.SPL
-File: DSZRNG03.ITM, Name: They can restore Hit Points with healing spells such as Cure Light Wounds., Attribute: Resource=SPWI545.SPL
 File: DURGA.STO, Name: Class Abilities, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA2.STO, Name: Information has statistics about your character, and you can add/remove people with Reform Party., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA3.STO, Name: These are the memorized spell slots. To prepare a spell, it must be selected from the spellbook, and then the character must rest to memorize it., Attribute: Rumors (drinks)=RFRIEN.DLG
@@ -26,107 +11,27 @@ File: FENCEBR.STO, Name: Moving Up, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: FENCEPL.STO, Name: Moving Up, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: HASHER.STO, Name: Class Abilities, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: HELMITE.STO, Name: Temple of Helm, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: HELMITE.STO, Name: Temple of Helm, Attribute: Spell=RR#PR514.SPL
 File: HELMITE1.STO, Name: Temple of Helm, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: HELMITE1.STO, Name: Temple of Helm, Attribute: Spell=RR#PR514.SPL
-File: INWISHAT.ITM, Name: You can also drop items on the ground or pick them up from the Inventory Screen., Attribute: Icon=INWISHAT.BAM
-File: INWISHAT.ITM, Name: You can also drop items on the ground or pick them up from the Inventory Screen., Attribute: Description image=INWIHATC.BAM
 File: JUSAM.STO, Name: ������? ��� ���. ������ �������, � ����, ���������, ������� ����, ��� ��� � �����. ������ ��� ����� ��������. � ����� ��� ��������., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
-File: MIRRBOW.ITM, Name: *sniff* Whoever lives here is dangerous. Be on your guard., Attribute: Icon=MIRRBOW.BAM
-File: MIRRBOW.ITM, Name: *sniff* Whoever lives here is dangerous. Be on your guard., Attribute: Icon=MIRRBOW.BAM
-File: MMCHAL.ITM, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Icon=CONVSEA.BAM
-File: MMCHAL.ITM, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Icon=CONVSEA.BAM
-File: MMCHAL.ITM, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Icon=CONVSEA.BAM
-File: MMCHAL.ITM, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Resource=MMWICONV.SPL
-File: MMCHAL.ITM, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Resource=MMWICONV.SPL
+File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Spell icon=CONVSEC.BAM
+File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Icon=CONVSEB.BAM
+File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Resource=MMCHAL.2DA
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
-File: NTSPEAR1.ITM, Name: As you may know, one of our—shall we say—challenges, is a vampire coven here in Athkatla. I'm sure you've seen them., Attribute: Icon=IBITEME.BAM
-File: NTSPEAR1.ITM, Name: As you may know, one of our—shall we say—challenges, is a vampire coven here in Athkatla. I'm sure you've seen them., Attribute: Icon=IBITEME.BAM
-File: NW#BUC02.ITM, Name: Buckler +1, Attribute: Icon=NW#BUC02.BAM
-File: NW#CHN01.ITM, Name: I have acquired some fine spirits to use in poisoning Joker., Attribute: Icon=NW#CHN01.BAM
-File: NW#GUARB.ITM, Name: Medium Shield, Attribute: Icon=RR#GUARA.BAM
-File: NW#GUARB.ITM, Name: Medium Shield, Attribute: Icon=RR#SHM.BAM
-File: NW#GUARB.ITM, Name: Medium Shield, Attribute: Resource=RR#SHM.SPL
-File: NWBAG1.ITM, Name: Mireille, Attribute: Icon=NWBAG1.BAM
-File: NWBAG2.ITM, Name: Mireille, Attribute: Icon=NWBAG2.BAM
-File: NWBAG3.ITM, Name: Potion Case, Attribute: Icon=NWBAG3.BAM
-File: NWBELT01.ITM, Name: I believe Bodhi bargains in good faith. For the moment, at least., Attribute: Icon=NWBELT01.BAM
-File: NWBOW03.ITM, Name: It seems love wins out after all., Attribute: Icon=ISBOWEBU.BAM
-File: NWBOW03.ITM, Name: It seems love wins out after all., Attribute: Icon=ISBOWEBU.BAM
-File: NWBRAC03.ITM, Name: You can press and drag your game view around on the map screen., Attribute: Icon=MAGBRAC1.BAM
-File: NWCLCK01.ITM, Name: Let us hope so., Attribute: Icon=ICLCKBS.BAM
-File: NWDAGG2.ITM, Name: ������ ���� - ��� ��, ��� �� ��� ��� ���. � ��� �� ����� ����������, ��� ���������� �������, ���� "�������� ������" �� ���� ������ �������� ������., Attribute: Icon=NWDAGG2.BAM
-File: NWDAGG2.ITM, Name: ������ ���� - ��� ��, ��� �� ��� ��� ���. � ��� �� ����� ����������, ��� ���������� �������, ���� "�������� ������" �� ���� ������ �������� ������., Attribute: Description image=CDEKDG2.BAM
-File: NWDAGG2.ITM, Name: ������ ���� - ��� ��, ��� �� ��� ��� ���. � ��� �� ����� ����������, ��� ���������� �������, ���� "�������� ������" �� ���� ������ �������� ������., Attribute: Icon=NWDAGG2.BAM
-File: NWDCCLCK.ITM, Name: Thieves can Pick Pockets, which lets them steal gold or useful items from their target., Attribute: Icon=NWDCCLCK.BAM
-File: NWGBAG1.ITM, Name: Gem Bag, Attribute: Icon=NWGBAG1.BAM
-File: NWGBBOW.ITM, Name: Selûne's light, what is that *stench*?, Attribute: Icon=GRNBOW.BAM
-File: NWGBBOW.ITM, Name: Selûne's light, what is that *stench*?, Attribute: Icon=GRNBOW.BAM
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
-File: NWGUARD1.ITM, Name: �������, ���-�� ��������� � ������� ����� ����, �� ������ ��� ��� �����������. ������ � ����� ������ ���������� �� ����������. ��, ����� ����, ����������., Attribute: Icon=NWGUARD1.BAM
-File: NWHAMM02.ITM, Name: And you thought YOU could defeat Jon Irenicus?, Attribute: Icon=NWIHAM02.BAM
-File: NWHAMM02.ITM, Name: And you thought YOU could defeat Jon Irenicus?, Attribute: Icon=NWIHAM02.BAM
-File: NWHAMM03.ITM, Name: What would you have me do?, Attribute: Icon=NWHAM03.BAM
-File: NWHAMM03.ITM, Name: What would you have me do?, Attribute: Ground icon=NWGHAM03.BAM
-File: NWHAMM03.ITM, Name: What would you have me do?, Attribute: Description image=NWDHAM03.BAM
-File: NWHAMM03.ITM, Name: What would you have me do?, Attribute: Icon=NWTHAM03.BAM
-File: NWHAMM03.ITM, Name: What would you have me do?, Attribute: Icon=NWHAM03.BAM
-File: NWHAMM04.ITM, Name: It's so... cloudy., Attribute: Icon=NWIHAM04.BAM
-File: NWHAMM04.ITM, Name: It's so... cloudy., Attribute: Ground icon=NWGHAM03.BAM
-File: NWHAMM04.ITM, Name: It's so... cloudy., Attribute: Description image=NWDHAM04.BAM
-File: NWHAMM04.ITM, Name: It's so... cloudy., Attribute: Icon=NWTHAM04.BAM
-File: NWHAMM04.ITM, Name: It's so... cloudy., Attribute: Icon=NWIHAM04.BAM
-File: NWITM128.ITM, Name: To remove a memorized spell, press it and it will be forgotten., Attribute: Icon=NWITM128.BAM
 File: NWITM128.ITM, Name: To remove a memorized spell, press it and it will be forgotten., Attribute: Resource=CDCMELE2.EFF
-File: NWLEAT2.ITM, Name: My companion, Hexxat., Attribute: Icon=NWLEAT2.BAM
 File: NWMERC01.STO, Name: You know, this could be going a lot worse., Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWMGCL02.ITM, Name: A pity. We could have done great things together, but that sort of attitude is of no use to me., Attribute: Icon=NWMGCL02.BAM
-File: NWMHELM.ITM, Name: I've endured worse, to be sure., Attribute: Icon=XHLM015.BAM
-File: NWPBAG1.ITM, Name: Potion Case, Attribute: Icon=NWPBAG1.BAM
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Spell=RR#PR514.SPL
-File: NWRJR005.ITM, Name: That was easy. Perhaps too easy., Attribute: Icon=NWRJR005.BAM
-File: NWRJR005.ITM, Name: That was easy. Perhaps too easy., Attribute: Icon=NWRJR005.BAM
-File: NWROBE02.ITM, Name: These are the cleric spells that this character knows. They learn more as they level up., Attribute: Icon=NWROBE02.BAM
-File: NWROBE03.ITM, Name: The same spell can be memorized multiple times., Attribute: Icon=NWITM122.BAM
-File: NWROBE1.ITM, Name: Red circles are hostile. To attack a hostile target, press it., Attribute: Icon=NWROBE1.BAM
-File: NWSBAG1.ITM, Name: Scroll Case, Attribute: Icon=NWSBAG1.BAM
-File: NWSPR1.ITM, Name: My companion, Anomen., Attribute: Icon=NWSPER01.BAM
-File: NWSPR1.ITM, Name: My companion, Anomen., Attribute: Icon=NWSPER01.BAM
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Icon=NWSPR2.BAM
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Icon=NWSPR2.BAM
 File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGGOODHT.EFF
 File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGGOODDM.EFF
 File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGEVILHT.EFF
 File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGEVILDM.EFF
-File: NWSTAF1.ITM, Name: Fangs sink deep into Hexxat's neck. Her eyes roll back into her head as her life force is drawn out by the vampiress., Attribute: Icon=NWSTAF1.BAM
-File: NWSTAF1.ITM, Name: Fangs sink deep into Hexxat's neck. Her eyes roll back into her head as her life force is drawn out by the vampiress., Attribute: Icon=NWSTAF1.BAM
-File: NWSW1H04.ITM, Name: Are you sure about this, <CHARNAME>?, Attribute: Icon=NWSW1H04.BAM
-File: NWSW1H04.ITM, Name: Are you sure about this, <CHARNAME>?, Attribute: Icon=NWSW1H04.BAM
-File: NWSW1H05.ITM, Name: Understood. What is your name?, Attribute: Icon=NWSW1H05.BAM
-File: NWSW1H05.ITM, Name: Understood. What is your name?, Attribute: Icon=NWSW1H05.BAM
-File: NWTHCL.ITM, Name: �� ���������� �������� ������ �����?, Attribute: Icon=NWITHCL.BAM
-File: NWTHCL.ITM, Name: �� ���������� �������� ������ �����?, Attribute: Icon=NWITHCL.BAM
-File: NWTHH1.ITM, Name: �� ������, ��� ������� �����?, Attribute: Icon=NWITHH1.BAM
-File: NWTHH1.ITM, Name: �� ������, ��� ������� �����?, Attribute: Description image=NWCTHH1.BAM
-File: NWTHPO.ITM, Name: ���� ������������� �������� �� �������� ����?, Attribute: Icon=NWITHPO.BAM
-File: NWTHPO.ITM, Name: ���� ������������� �������� �� �������� ����?, Attribute: Icon=NWITHPO.BAM
-File: NWTHTD.ITM, Name: ���� ���������� ������, ���� ��� ���������., Attribute: Icon=NWITHTD.BAM
-File: NWTHTD.ITM, Name: ���� ���������� ������, ���� ��� ���������., Attribute: Icon=NWITHTD.BAM
-File: NWWAMLI.ITM, Name: Clerics have the ability to Turn Undead, which will cause undead creatures to flee or be destroyed., Attribute: Icon=NWWAMLI.BAM
-File: NWWSTQU.ITM, Name: Pick Locks is the most useful ability—it allows you to open locked doors and containers., Attribute: Icon=NWWSTQU.BAM
-File: NWWSTQU.ITM, Name: Pick Locks is the most useful ability—it allows you to open locked doors and containers., Attribute: Icon=NWWSTQU.BAM
-File: OLEFF.STO, Name: Temple of Helm, Attribute: Spell=RR#PR514.SPL
-File: PHILTER.ITM, Name: I am ill-inclined to trust anybody with a vampire in their midst. At least, not without the right incentive., Attribute: Icon=PHILTER.BAM
-File: PHILTER.ITM, Name: I am ill-inclined to trust anybody with a vampire in their midst. At least, not without the right incentive., Attribute: Icon=PHILTER.BAM
-File: PLATNWN2.ITM, Name: ������� ��� �������., Attribute: Icon=PLATNWN2.BAM
 File: PLMISC.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PLSCROLL.STO, Name: �� ��������., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
@@ -134,30 +39,11 @@ File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
-File: ROBOFLO.ITM, Name: You can order each party member around separately., Attribute: Icon=ROBOFLO.BAM
 File: ROLKID.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ROLKID2.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: RR#BOW02.ITM, Name: Secrets lurk in the shadows of Athkatla's graveyard. Evade deadly traps and guardians as you descend into the depths of Dragomir's Tomb. Join forces with Hexxat, an explorer and thief in service to a mysterious master, to raid trap-laden dungeons in search of valuable relics.
-
-In Throne of Bhaal, Hexxat receives her final mission: venture into the laboratory crypt of the rogue lich Korkorran and eliminate him. Success brings a great, but unexpected, reward.
-
-Features:
-– A new companion, found in the Copper Coronet
-– A new quest in Shadows of Amn
-– A new quest in Throne of Bhaal
-– 4 large new locations to explore, Attribute: Icon=RR#BOW02.BAM
-File: RR#BOW02.ITM, Name: Secrets lurk in the shadows of Athkatla's graveyard. Evade deadly traps and guardians as you descend into the depths of Dragomir's Tomb. Join forces with Hexxat, an explorer and thief in service to a mysterious master, to raid trap-laden dungeons in search of valuable relics.
-
-In Throne of Bhaal, Hexxat receives her final mission: venture into the laboratory crypt of the rogue lich Korkorran and eliminate him. Success brings a great, but unexpected, reward.
-
-Features:
-– A new companion, found in the Copper Coronet
-– A new quest in Shadows of Amn
-– A new quest in Throne of Bhaal
-– 4 large new locations to explore, Attribute: Icon=RR#BOW02.BAM
-File: RR#BOW03.ITM, Name: Ah, some more coin for ale? I do not mind if I do!, Attribute: Icon=RR#BOW03.BAM
-File: RR#BUC03.ITM, Name: As you wish., Attribute: Icon=RR#BUC03.BAM
-File: RR#HEL02.ITM, Name: You are lucky I'm here., Attribute: Icon=RR#HEL02.BAM
+File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM01.EFF
+File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM02.EFF
+File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM03.EFF
 File: SMITHNW1.STO, Name: ������ �����: ��������� ������
 
 �� �������� ������� ��������� �� ����������� ������, ����-��, ������� ���� ������������ �� �������� ����� ������ � ������ �����. �� ������ - ������ ��������� ��� ����������, ������� ����� ���������� ������ ������., Attribute: Rumors (drinks)=RFRIEN.DLG
@@ -175,5 +61,3 @@ File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resour
 File: SPPR329.SPL, Name: Наслать Болезнь, Attribute: Resource=DSPELLX.VEF
 File: SPPR955.SPL, Name: Глаз Пепла, Attribute: Resource=REDBLAZE.VEF
 File: SPWI328.SPL, Name: Ледяное Копье, Attribute: Resource=ICELANH.VEF
-File: WANDNW1.ITM, Name: Wand, Attribute: Icon=WANDNW1.BAM
-File: WANDNW1.ITM, Name: Wand, Attribute: Icon=WANDNW1.BAM
