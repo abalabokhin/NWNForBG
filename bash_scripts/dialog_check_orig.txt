@@ -1,0 +1,248 @@
+Warnings in dialogues
+Number of hits: 246
+File: AERIEP.DLG, Line: 47, Owner: Response trigger 5, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: AMARAN.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
+File: ANOMENP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: APPAR.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - APPAR
+File: ARNWAR07.DLG, Line: 2, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine1
+File: ARNWAR07.DLG, Line: 3, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine2
+File: BANDIC.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Bandcap
+File: BELAND.DLG, Line: 1, Owner: Action 4, Warning: Script name not found: O:Object* - DR0600
+File: BELAND.DLG, Line: 1, Owner: Action 6, Warning: Script name not found: O:Object* - DR0600
+File: BENTHA.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - ZORDRAL
+File: BERRUN.DLG, Line: 2, Owner: State trigger 1, Warning: Script name not found: O:Object* - KHALID
+File: BERRUN.DLG, Line: 3, Owner: State trigger 1, Warning: Script name not found: S:Name* - Khalid
+File: BERRUN.DLG, Line: 2, Owner: State trigger 2, Warning: Script name not found: O:Object* - XZAR
+File: BERRUN.DLG, Line: 3, Owner: State trigger 2, Warning: Script name not found: S:Name* - Xzar
+File: BERRUN.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: O:Object* - MONTARON
+File: BERRUN.DLG, Line: 3, Owner: State trigger 3, Warning: Script name not found: S:Name* - Montaron
+File: BILL.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - DOOR0108
+File: CALDO.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Actor* - Krumm
+File: CALDO.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Krumm
+File: CALDO.DLG, Line: 1, Owner: Action 2, Warning: Script name not found: O:Actor* - KRUMM
+File: CERNDP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: CORSON.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - OSMADI
+File: DESSLO.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Xzar
+File: DESSLO.DLG, Line: 1, Owner: State trigger 1, Warning: Script name not found: O:Object* - Montaron
+File: DORNP.DLG, Line: 47, Owner: Response trigger 6, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: DRYAD.DLG, Line: 1, Owner: State trigger 1, Warning: Script name not found: S:Name* - Caldo
+File: DRYAD.DLG, Line: 2, Owner: State trigger 1, Warning: Script name not found: S:Name* - Krumm
+File: DRYAD.DLG, Line: 1, Owner: State trigger 2, Warning: Script name not found: S:Name* - Caldo
+File: DRYAD.DLG, Line: 2, Owner: State trigger 2, Warning: Script name not found: S:Name* - Krumm
+File: DRYAD.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - Caldo
+File: DRYAD.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: S:Name* - Krumm
+File: EDWINP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: ELDOTP.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - Skie
+File: ELDOTP.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: S:Name* - Skie
+File: ELDOTP.DLG, Line: 1, Owner: Action 8, Warning: Script name not found: O:Actor* - Skie
+File: ELDOTP.DLG, Line: 1, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
+File: ELDOTP.DLG, Line: 2, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
+File: ELDOTP.DLG, Line: 3, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
+File: FLAM7.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Target* - FlamingFist7
+File: FLAM7.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Target* - FlamingFist7
+File: FSSPIR2.DLG, Line: 4, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 5, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 6, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3026
+File: FSSPIR2.DLG, Line: 4, Owner: Action 2, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 5, Owner: Action 2, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 6, Owner: Action 2, Warning: Script name not found: O:Object* - Exit3026
+File: FSSPIR2.DLG, Line: 4, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 5, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 6, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3026
+File: FSSPIR2.DLG, Line: 4, Owner: Action 4, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 5, Owner: Action 4, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 6, Owner: Action 4, Warning: Script name not found: O:Object* - Exit3026
+File: FSSPIR2.DLG, Line: 5, Owner: Action 5, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 6, Owner: Action 5, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 7, Owner: Action 5, Warning: Script name not found: O:Object* - Exit3026
+File: FSSPIR2.DLG, Line: 5, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 6, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 7, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3026
+File: FSSPIR2.DLG, Line: 5, Owner: Action 7, Warning: Script name not found: O:Object* - Exit3024
+File: FSSPIR2.DLG, Line: 6, Owner: Action 7, Warning: Script name not found: O:Object* - Exit3025
+File: FSSPIR2.DLG, Line: 7, Owner: Action 7, Warning: Script name not found: O:Object* - Exit3026
+File: FTOWWI.DLG, Line: 1, Owner: State trigger 1, Warning: Script name not found: S:Name* - KAROUG
+File: FTOWWI.DLG, Line: 1, Owner: State trigger 2, Warning: Script name not found: S:Name* - KAROUG
+File: FTOWWI.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - KAROUG
+File: FTOWWI.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - KAROUG
+File: FTOWWI.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - KAROUG
+File: FTOWWI.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: S:Name* - KAROUG
+File: GALLOR.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - CharleDig
+File: GALLOR.DLG, Line: 2, Owner: State trigger 4, Warning: Script name not found: S:Name* - Charleston
+File: GALLOR.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - CharleDig
+File: GALLOR.DLG, Line: 2, Owner: State trigger 5, Warning: Script name not found: S:Name* - Charleston
+File: GALLOR.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: S:Name* - CharleDig
+File: GALLOR.DLG, Line: 2, Owner: State trigger 6, Warning: Script name not found: S:Name* - Charleston
+File: GLART.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - GARCLAX
+File: GNARL.DLG, Line: 2, Owner: State trigger 0, Warning: Script name not found: S:Name* - Hairtooth
+File: GNOLL5.DLG, Line: 2, Owner: Action 2, Warning: Script name not found: O:Target* - Gnoll5
+File: GRETEK.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Actor* - PARGUS
+File: GRETEK.DLG, Line: 2, Owner: Action 0, Warning: Script name not found: O:Actor* - WILF
+File: GRETEK.DLG, Line: 3, Owner: Action 0, Warning: Script name not found: O:Actor* - NADER
+File: GRETEK.DLG, Line: 4, Owner: Action 0, Warning: Script name not found: O:Actor* - ARLIN
+File: GRETEK.DLG, Line: 5, Owner: Action 0, Warning: Script name not found: O:Actor* - CATURAK
+File: GRETEK.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - PARGUS
+File: GRETEK.DLG, Line: 2, Owner: Action 1, Warning: Script name not found: O:Actor* - WILF
+File: GRETEK.DLG, Line: 3, Owner: Action 1, Warning: Script name not found: O:Actor* - NADER
+File: GRETEK.DLG, Line: 4, Owner: Action 1, Warning: Script name not found: O:Actor* - ARLIN
+File: GRETEK.DLG, Line: 5, Owner: Action 1, Warning: Script name not found: O:Actor* - CATURAK
+File: HAERDAP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: HAERDAP.DLG, Line: 48, Owner: Response trigger 1, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: HAIRTO.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Gnarl
+File: HAIRTO.DLG, Line: 1, Owner: Action 2, Warning: Script name not found: O:Actor* - Gnarl
+File: HAIRTO.DLG, Line: 1, Owner: Action 3, Warning: Script name not found: O:Actor* - Gnarl
+File: HEXXA25J.DLG, Line: 1, Owner: State trigger 12, Warning: Script name not found: S:Name* - OHHCABRINA
+File: IMOEN25J.DLG, Line: 4, Owner: Action 0, Warning: Script name not found: O:Object* - Exit3024
+File: IMOEN25J.DLG, Line: 5, Owner: Action 0, Warning: Script name not found: O:Object* - Exit3025
+File: IMOEN25J.DLG, Line: 6, Owner: Action 0, Warning: Script name not found: O:Object* - Exit3026
+File: IMOEN2J.DLG, Line: 4, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3024
+File: IMOEN2J.DLG, Line: 5, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3025
+File: IMOEN2J.DLG, Line: 6, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3026
+File: ISLANNE.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - DeathK
+File: IZEFIA.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
+File: JAHEI25J.DLG, Line: 4, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3024
+File: JAHEI25J.DLG, Line: 5, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3025
+File: JAHEI25J.DLG, Line: 6, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3026
+File: JAHEIRAJ.DLG, Line: 4, Owner: Action 98, Warning: Script name not found: O:Object* - Exit3024
+File: JAHEIRAJ.DLG, Line: 5, Owner: Action 98, Warning: Script name not found: O:Object* - Exit3025
+File: JAHEIRAJ.DLG, Line: 6, Owner: Action 98, Warning: Script name not found: O:Object* - Exit3026
+File: JANP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: KELDORP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: KORGANP.DLG, Line: 47, Owner: Response trigger 2, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: KRUMM.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Actor* - Caldo
+File: KRUMM.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Caldo
+File: KRYSTI.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Slythe
+File: LARRIA.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Object* - LARRIA
+File: LASKAL.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - FALDORN
+File: LUSSEL.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - Jellmul
+File: MINEC4.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - MINEC4
+File: MINSCP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: MONTAJ.DLG, Line: 2, Owner: State trigger 2, Warning: Script name not found: O:Object* - Xzar
+File: MONTAJ.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: O:Object* - Xzar
+File: MONTAJ.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: O:Object* - Xzar
+File: MONTAJ.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: O:Object* - Xzar
+File: MONTAJ.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 2, Owner: Action 1, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 3, Owner: Action 1, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 1, Owner: Action 3, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 2, Owner: Action 3, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 3, Owner: Action 3, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 1, Owner: Action 4, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 2, Owner: Action 4, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 1, Owner: Action 6, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAJ.DLG, Line: 2, Owner: Action 6, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAP.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - XZAR
+File: MONTAP.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - XZAR
+File: MONTAP.DLG, Line: 1, Owner: Action 9, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAP.DLG, Line: 2, Owner: Action 9, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAP.DLG, Line: 3, Owner: Action 9, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAP.DLG, Line: 1, Owner: Action 10, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAR.DLG, Line: 4, Owner: Action 0, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAR.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAR.DLG, Line: 2, Owner: Action 1, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAR.DLG, Line: 1, Owner: Action 2, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAR.DLG, Line: 2, Owner: Action 2, Warning: Script name not found: O:Actor* - Xzar
+File: MONTAR.DLG, Line: 4, Owner: Action 3, Warning: Script name not found: O:Actor* - Xzar
+File: MTOWWI.DLG, Line: 1, Owner: State trigger 1, Warning: Script name not found: S:Name* - KAROUG
+File: MTOWWI.DLG, Line: 1, Owner: State trigger 2, Warning: Script name not found: S:Name* - KAROUG
+File: MTOWWI.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - KAROUG
+File: MTOWWI.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - KAROUG
+File: MTOWWI.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - KAROUG
+File: MTOWWI.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: S:Name* - KAROUG
+File: NADARI.DLG, Line: 2, Owner: State trigger 2, Warning: Script name not found: S:Name* - BASILNAD
+File: NADARI.DLG, Line: 3, Owner: State trigger 3, Warning: Script name not found: S:Name* - BASILNAD
+File: NADARI.DLG, Line: 3, Owner: State trigger 4, Warning: Script name not found: S:Name* - BASILNAD
+File: NALIAP.DLG, Line: 47, Owner: Response trigger 2, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: NEERAP.DLG, Line: 49, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: NEERAP.DLG, Line: 49, Owner: Response trigger 1, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: NIKLOS.DLG, Line: 2, Owner: Action 7, Warning: Script name not found: O:Object* - DOOR0151
+File: OHBCOOK.DLG, Line: 2, Owner: Response trigger 3, Warning: Script name not found: O:Object* - ohbgua01
+File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 7, Warning: Script name not found: S:Name* - balth2
+File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 11, Warning: Script name not found: S:Name* - balth2
+File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 15, Warning: Script name not found: S:Name* - balth2
+File: OHDSCROL.DLG, Line: 3, Owner: Response trigger 22, Warning: Script name not found: S:Name* - balth2
+File: OHDSCROL.DLG, Line: 3, Owner: Response trigger 30, Warning: Script name not found: S:Name* - balth2
+File: OHDSCROL.DLG, Line: 3, Owner: Response trigger 38, Warning: Script name not found: S:Name* - balth2
+File: OHRTRUTH.DLG, Line: 1, Owner: Action 0, Warning: Resource not found: S:ResRef*[CRE] - ohrshado
+File: OHRTRUTH.DLG, Line: 1, Owner: Action 3, Warning: Resource not found: S:ResRef*[CRE] - OHRSHADO
+File: OHRTRUTH.DLG, Line: 1, Owner: Action 8, Warning: Resource not found: S:ResRef*[CRE] - OHRSHADO
+File: RASAADP.DLG, Line: 48, Owner: Response trigger 2, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: SKIEJ.DLG, Line: 2, Owner: State trigger 0, Warning: Script name not found: O:Object* - Eldoth
+File: SKIEJ.DLG, Line: 2, Owner: State trigger 1, Warning: Script name not found: O:Object* - Eldoth
+File: SKIEJ.DLG, Line: 1, Owner: State trigger 2, Warning: Script name not found: O:Object* - Eldoth
+File: SKIEJ.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: O:Object* - Eldoth
+File: SKIEJ.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEJ.DLG, Line: 2, Owner: Action 1, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEJ.DLG, Line: 3, Owner: Action 1, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEJ.DLG, Line: 1, Owner: Action 3, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEJ.DLG, Line: 2, Owner: Action 3, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEP.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - Eldoth
+File: SKIEP.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: S:Name* - Eldoth
+File: SKIEP.DLG, Line: 1, Owner: Action 8, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEP.DLG, Line: 2, Owner: Action 8, Warning: Script name not found: O:Actor* - Eldoth
+File: SKIEP.DLG, Line: 1, Owner: Action 9, Warning: Script name not found: O:Actor* - Eldoth
+File: SLYTHE.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Krystin
+File: TAKIYAH.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
+File: THEREL.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: S:Name* - Dalton
+File: THEREL.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - Daltan
+File: TOURIST.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Tourist1
+File: TOWNCR.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - Bassilus
+File: VAIL.DLG, Line: 1, Owner: Action 7, Warning: Script name not found: O:Actor* - RANCE
+File: VAIL.DLG, Line: 2, Owner: Action 7, Warning: Script name not found: O:Actor* - CAILAN
+File: VAIL.DLG, Line: 3, Owner: Action 7, Warning: Script name not found: O:Actor* - FAIZAH
+File: VAIL.DLG, Line: 4, Owner: Action 7, Warning: Script name not found: O:Actor* - ACHEN
+File: VAIL.DLG, Line: 1, Owner: Action 8, Warning: Script name not found: O:Actor* - RANCE
+File: VAIL.DLG, Line: 2, Owner: Action 8, Warning: Script name not found: O:Actor* - CAILAN
+File: VAIL.DLG, Line: 3, Owner: Action 8, Warning: Script name not found: O:Actor* - FAIZAH
+File: VAIL.DLG, Line: 4, Owner: Action 8, Warning: Script name not found: O:Actor* - ACHEN
+File: VAIL.DLG, Line: 2, Owner: Action 9, Warning: Script name not found: O:Actor* - RANCE
+File: VAIL.DLG, Line: 3, Owner: Action 9, Warning: Script name not found: O:Actor* - CAILAN
+File: VAIL.DLG, Line: 4, Owner: Action 9, Warning: Script name not found: O:Actor* - FAIZAH
+File: VAIL.DLG, Line: 5, Owner: Action 9, Warning: Script name not found: O:Actor* - ACHEN
+File: VAIL.DLG, Line: 1, Owner: Action 10, Warning: Script name not found: O:Actor* - RANCE
+File: VAIL.DLG, Line: 2, Owner: Action 10, Warning: Script name not found: O:Actor* - CAILAN
+File: VAIL.DLG, Line: 3, Owner: Action 10, Warning: Script name not found: O:Actor* - FAIZAH
+File: VAIL.DLG, Line: 4, Owner: Action 10, Warning: Script name not found: O:Actor* - ACHEN
+File: VAIL.DLG, Line: 1, Owner: Action 11, Warning: Script name not found: O:Actor* - RANCE
+File: VAIL.DLG, Line: 2, Owner: Action 11, Warning: Script name not found: O:Actor* - CAILAN
+File: VAIL.DLG, Line: 3, Owner: Action 11, Warning: Script name not found: O:Actor* - FAIZAH
+File: VAIL.DLG, Line: 4, Owner: Action 11, Warning: Script name not found: O:Actor* - ACHEN
+File: VALYGARP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: VALYGARP.DLG, Line: 48, Owner: Response trigger 2, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: VICON25J.DLG, Line: 4, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3024
+File: VICON25J.DLG, Line: 5, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3025
+File: VICON25J.DLG, Line: 6, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3026
+File: VICONIJ.DLG, Line: 4, Owner: Action 22, Warning: Script name not found: O:Object* - Exit3024
+File: VICONIJ.DLG, Line: 5, Owner: Action 22, Warning: Script name not found: O:Object* - Exit3025
+File: VICONIJ.DLG, Line: 6, Owner: Action 22, Warning: Script name not found: O:Object* - Exit3026
+File: VICONIP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: VOLO.DLG, Line: 1, Owner: State trigger 2, Warning: Script name not found: S:Name* - Mulahey
+File: WINTHR2.DLG, Line: 1, Owner: Action 5, Warning: Resource not found: S:Store*[STO] - Inn2616
+File: WINTHR2.DLG, Line: 1, Owner: Action 6, Warning: Resource not found: S:Store*[STO] - Inn2616
+File: WINTHR2.DLG, Line: 1, Owner: Action 9, Warning: Resource not found: S:Store*[STO] - Inn2616
+File: WINTHR2.DLG, Line: 1, Owner: Action 10, Warning: Resource not found: S:Store*[STO] - Inn2616
+File: WINTHR2.DLG, Line: 1, Owner: Action 11, Warning: Resource not found: S:Store*[STO] - Inn2616
+File: XZAR.DLG, Line: 3, Owner: State trigger 5, Warning: Script name not found: S:Name* - Montaron
+File: XZAR.DLG, Line: 4, Owner: State trigger 6, Warning: Script name not found: S:Name* - Montaron
+File: XZAR.DLG, Line: 3, Owner: State trigger 7, Warning: Script name not found: S:Name* - Montaron
+File: XZAR.DLG, Line: 4, Owner: State trigger 10, Warning: Script name not found: S:Name* - Montaron
+File: XZAR.DLG, Line: 1, Owner: Action 6, Warning: Script name not found: O:Actor* - Montaron
+File: XZARJ.DLG, Line: 4, Owner: State trigger 2, Warning: Script name not found: S:Name* - Montaron
+File: XZARJ.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: O:Object* - Montaron
+File: XZARJ.DLG, Line: 2, Owner: State trigger 4, Warning: Script name not found: O:Object* - Montaron
+File: XZARJ.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: O:Object* - Montaron
+File: XZARJ.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: O:Object* - Montaron
+File: XZARJ.DLG, Line: 1, Owner: Action 4, Warning: Script name not found: O:Actor* - Montaron
+File: XZARJ.DLG, Line: 2, Owner: Action 4, Warning: Script name not found: O:Actor* - Montaron
+File: XZARJ.DLG, Line: 3, Owner: Action 4, Warning: Script name not found: O:Actor* - Montaron
+File: XZARJ.DLG, Line: 1, Owner: Action 6, Warning: Script name not found: O:Actor* - Montaron
+File: XZARJ.DLG, Line: 2, Owner: Action 6, Warning: Script name not found: O:Actor* - Montaron
+File: XZARJ.DLG, Line: 3, Owner: Action 6, Warning: Script name not found: O:Actor* - Montaron
+File: XZARP.DLG, Line: 1, Owner: State trigger 5, Warning: Script name not found: S:Name* - Montaron
+File: XZARP.DLG, Line: 1, Owner: State trigger 6, Warning: Script name not found: S:Name* - Montaron
+File: XZARP.DLG, Line: 1, Owner: Action 8, Warning: Script name not found: O:Actor* - Montaron
+File: XZARP.DLG, Line: 2, Owner: Action 8, Warning: Script name not found: O:Actor* - Montaron
+File: XZARP.DLG, Line: 3, Owner: Action 8, Warning: Script name not found: O:Actor* - Montaron
+File: XZARP.DLG, Line: 1, Owner: Action 10, Warning: Script name not found: O:Actor* - Montaron
+File: YOSHP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
+File: ZORDRAL.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - BENTHA
