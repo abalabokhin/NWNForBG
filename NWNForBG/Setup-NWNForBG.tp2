@@ -43,6 +43,15 @@ LANGUAGE ~Russian~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
+//Videos
+COPY ~NWNForBG/movies~ ~movies~
+
+//Stores
+COPY ~NWNForBG/sto~ ~override~
+
+COPY ~NWNForBG/sto/aelaith.sto~ ~override~
+  SAY 0xC       @102320
+
 //Areas
 COPY ~NWNForBG/are~ ~override~
 
