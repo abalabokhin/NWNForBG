@@ -50,7 +50,97 @@ COPY ~NWNForBG/movies~ ~movies~
 COPY ~NWNForBG/sto~ ~override~
 
 COPY ~NWNForBG/sto/aelaith.sto~ ~override~
-  SAY 0xC       @102320
+  SAY 0xC	@102320
+
+COPY ~NWNForBG/sto/alhelor.sto~ ~override~
+  SAY 0xC	@102335
+
+COPY ~NWNForBG/sto/aribeth1.sto~ ~override~
+  SAY 0xC	@102400
+
+COPY ~NWNForBG/sto/arto.sto~ ~override~
+  SAY 0xC	@102409
+
+COPY ~NWNForBG/sto/aruph.sto~ ~override~
+  SAY 0xC	@102424
+
+COPY ~NWNForBG/sto/auction.sto~ ~override~
+  SAY 0xC	@102426
+
+COPY ~NWNForBG/sto/ballard.sto~ ~override~
+  SAY 0xC	@102448
+
+COPY ~NWNForBG/sto/bart2e03.sto~ ~override~
+  SAY 0xC	@102517
+
+COPY ~NWNForBG/sto/bartnw2.sto~ ~override~
+  SAY 0xC	@103119
+
+COPY ~NWNForBG/sto/callahan.sto~ ~override~
+  SAY 0xC	@103114
+
+COPY ~NWNForBG/sto/chaljal.sto~ ~override~
+  SAY 0xC	@102598
+
+COPY ~NWNForBG/sto/durga.sto~ ~override~
+  SAY 0xC	@102700
+
+COPY ~NWNForBG/sto/eltura2.sto~ ~override~
+  SAY 0xC	@102723
+
+COPY ~NWNForBG/sto/eltura3.sto~ ~override~
+  SAY 0xC	@102729
+
+COPY ~NWNForBG/sto/fencebr.sto~ ~override~
+  SAY 0xC	@102772
+
+COPY ~NWNForBG/sto/fencepl.sto~ ~override~
+  SAY 0xC	@102772
+
+COPY ~NWNForBG/sto/glove.sto~ ~override~
+  SAY 0xC	@102520
+
+COPY ~NWNForBG/sto/hasher.sto~ ~override~
+  SAY 0xC	@102700
+
+COPY ~NWNForBG/sto/inn1101.sto~ ~override~
+  SAY 0xC	@102877
+
+COPY ~NWNForBG/sto/innkeep1.sto~ ~override~
+  SAY 0xC	@102879
+
+COPY ~NWNForBG/sto/innmut.sto~ ~override~
+  SAY 0xC	@102880
+
+COPY ~NWNForBG/sto/jerol1.sto~ ~override~
+  SAY 0xC	@102901
+
+COPY ~NWNForBG/sto/jusam.sto~ ~override~
+  SAY 0xC	@105427
+
+COPY ~NWNForBG/sto/mutamin.sto~ ~override~
+  SAY 0xC	@102880
+
+COPY ~NWNForBG/sto/nwmerc01.sto~ ~override~
+  SAY 0xC	@103409
+
+COPY ~NWNForBG/sto/nyatar.sto~ ~override~
+  SAY 0xC	@103600
+
+COPY ~NWNForBG/sto/plscroll.sto~ ~override~
+  SAY 0xC	@103649
+
+COPY ~NWNForBG/sto/potselc2.sto~ ~override~
+  SAY 0xC	@103650
+
+COPY ~NWNForBG/sto/smithnw1.sto~ ~override~
+  SAY 0xC	@103726
+
+COPY ~NWNForBG/sto/susptype.sto~ ~override~
+  SAY 0xC	@102772
+
+COPY ~NWNForBG/sto/torgo.sto~ ~override~
+  SAY 0xC	@103091
 
 //Areas
 COPY ~NWNForBG/are~ ~override~
@@ -339,6 +429,7 @@ COPY ~NWNForBG/are/nw4011.are~ ~override~
 
 //Creatures
 COPY ~NWNForBG/cre~ ~override~
+
 COPY ~NWNForBG/cre/aarin1.cre~ ~override~
   SAY 0x8	@102275
   SAY 0xC	@102275
@@ -2972,6 +3063,46 @@ COPY ~NWNForBG/cre/rolkid.cre~ ~override~
   SAY 0x8	@105107
   SAY 0xC	@105107
 
+COPY ~NWNForBG/cre/rr#shm01.cre~ ~override~
+  SAY 0x8	@102454
+  SAY 0xC	@102454
+  SAY 0xA4	@104356
+  SAY 0xC8	@104356
+  SAY 0xCC	@104357
+  SAY 0xDC	@104358
+  SAY 0xE0	@104359
+  SAY 0xE4	@104360
+  SAY 0xEC	@104361
+  SAY 0xF0	@104362
+  SAY 0x10C	@104356
+  SAY 0x110	@104357
+
+COPY ~NWNForBG/cre/rr#shm02.cre~ ~override~
+  SAY 0xA4	@104356
+  SAY 0xC8	@104356
+  SAY 0xCC	@104357
+  SAY 0xDC	@104358
+  SAY 0xE0	@104359
+  SAY 0xE4	@104360
+  SAY 0xEC	@104361
+  SAY 0xF0	@104362
+  SAY 0x10C	@104356
+  SAY 0x110	@104357
+
+COPY ~NWNForBG/cre/rr#shm03.cre~ ~override~
+  SAY 0x8	@102455
+  SAY 0xC	@102455
+  SAY 0xA4	@104356
+  SAY 0xC8	@104356
+  SAY 0xCC	@104357
+  SAY 0xDC	@104358
+  SAY 0xE0	@104359
+  SAY 0xE4	@104360
+  SAY 0xEC	@104361
+  SAY 0xF0	@104362
+  SAY 0x10C	@104356
+  SAY 0x110	@104357
+
 COPY ~NWNForBG/cre/ruzon.cre~ ~override~
   SAY 0x8	@105602
   SAY 0xC	@105602
@@ -3455,6 +3586,14 @@ COPY ~NWNForBG/itm/antidote.itm~ ~override~
   SAY 0xC	@102380
   SAY 0x54	@102381
 
+COPY ~NWNForBG/itm/aramis.itm~ ~override~
+  SAY 0xC	@102732
+  SAY 0x54	@102733
+
+COPY ~NWNForBG/itm/aravornw.itm~ ~override~
+  SAY 0xC	@102449
+  SAY 0x54	@102450
+
 COPY ~NWNForBG/itm/arnesshd.itm~ ~override~
   SAY 0x8	@105470
   SAY 0xC	@105470
@@ -3469,6 +3608,12 @@ COPY ~NWNForBG/itm/ax1hnw4.itm~ ~override~
 COPY ~NWNForBG/itm/axeauc.itm~ ~override~
   SAY 0xC	@102446
   SAY 0x54	@102447
+
+COPY ~NWNForBG/itm/belladon.itm~ ~override~
+  SAY 0x8	@102338
+  SAY 0xC	@102338
+  SAY 0x50	@102339
+  SAY 0x54	@102339
 
 COPY ~NWNForBG/itm/beltauc.itm~ ~override~
   SAY 0xC	@102533
@@ -3503,6 +3648,14 @@ COPY ~NWNForBG/itm/boulder.itm~ ~override~
   SAY 0x50	@103812
   SAY 0x54	@103812
 
+COPY ~NWNForBG/itm/cbrjr004.itm~ ~override~
+  SAY 0xC	@102340
+  SAY 0x54	@102341
+
+COPY ~NWNForBG/itm/cbrjr008.itm~ ~override~
+  SAY 0xC	@102862
+  SAY 0x54	@102863
+
 COPY ~NWNForBG/itm/cbrngmtl.itm~ ~override~
   SAY 0x8	@103151
   SAY 0xC	@103151
@@ -3529,6 +3682,10 @@ COPY ~NWNForBG/itm/clckauc.itm~ ~override~
 COPY ~NWNForBG/itm/clcknw1.itm~ ~override~
   SAY 0xC	@102623
   SAY 0x54	@102624
+
+COPY ~NWNForBG/itm/clcknw3.itm~ ~override~
+  SAY 0xC	@102416
+  SAY 0x54	@102417
 
 COPY ~NWNForBG/itm/creatorr.itm~ ~override~
   SAY 0x8	@102650
@@ -3565,9 +3722,21 @@ COPY ~NWNForBG/itm/cryptxx.itm~ ~override~
   SAY 0x54	@103159
   SAY 0x10E	@103158
 
+COPY ~NWNForBG/itm/dagg25.itm~ ~override~
+  SAY 0xC	@102410
+  SAY 0x54	@102411
+
+COPY ~NWNForBG/itm/dagg26.itm~ ~override~
+  SAY 0xC	@102412
+  SAY 0x54	@102413
+
 COPY ~NWNForBG/itm/daggasp.itm~ ~override~
   SAY 0xC	@102300
   SAY 0x54	@102301
+
+COPY ~NWNForBG/itm/delvscue.itm~ ~override~
+  SAY 0xC	@103768
+  SAY 0x54	@103769
 
 COPY ~NWNForBG/itm/drablood.itm~ ~override~
   SAY 0x8	@102689
@@ -3589,6 +3758,16 @@ COPY ~NWNForBG/itm/dragegg2.itm~ ~override~
   SAY 0x8	@106291
   SAY 0xC	@106291
   SAY 0x50	@106034
+
+COPY ~NWNForBG/itm/dspotn01.itm~ ~override~
+  SAY 0x8	@103077
+  SAY 0xC	@103077
+  SAY 0x50	@103078
+  SAY 0x54	@103078
+
+COPY ~NWNForBG/itm/dszrng03.itm~ ~override~
+  SAY 0xC	@102743
+  SAY 0x54	@102744
 
 COPY ~NWNForBG/itm/dupermit.itm~ ~override~
   SAY 0x8	@102697
@@ -3678,6 +3857,12 @@ COPY ~NWNForBG/itm/impgore.itm~ ~override~
   SAY 0x50	@102873
   SAY 0x54	@102873
 
+COPY ~NWNForBG/itm/inwishat.itm~ ~override~
+  SAY 0x8	@102713
+  SAY 0xC	@102714
+  SAY 0x50	@102715
+  SAY 0x54	@102716
+
 COPY ~NWNForBG/itm/ironwood.itm~ ~override~
   SAY 0x8	@102881
   SAY 0xC	@102881
@@ -3759,6 +3944,15 @@ COPY ~NWNForBG/itm/mastamul.itm~ ~override~
   SAY 0xC	@102592
   SAY 0x50	@102593
 
+COPY ~NWNForBG/itm/mirrbow.itm~ ~override~
+  SAY 0xC	@102316
+  SAY 0x54	@102317
+
+COPY ~NWNForBG/itm/mmchal.itm~ ~override~
+  SAY 0xC	@102717
+  SAY 0x50	@102718
+  SAY 0x54	@102718
+
 COPY ~NWNForBG/itm/montgom.itm~ ~override~
   SAY 0xC	@103054
   SAY 0x54	@103055
@@ -3788,6 +3982,10 @@ COPY ~NWNForBG/itm/nsshld02.itm~ ~override~
   SAY 0xC	@103166
   SAY 0x54	@103167
 
+COPY ~NWNForBG/itm/ntspear1.itm~ ~override~
+  SAY 0xC	@102344
+  SAY 0x54	@102345
+
 COPY ~NWNForBG/itm/nvamul01.itm~ ~override~
   SAY 0xC	@103090
   SAY 0x54	@102866
@@ -3796,9 +3994,34 @@ COPY ~NWNForBG/itm/nvbrac03.itm~ ~override~
   SAY 0xC	@103111
   SAY 0x54	@103112
 
+COPY ~NWNForBG/itm/nw#chn01.itm~ ~override~
+  SAY 0xC	@102773
+  SAY 0x54	@102774
+
+COPY ~NWNForBG/itm/nw#guarb.itm~ ~override~
+  SAY 0xC	@102451
+  SAY 0x54	@102452
+
 COPY ~NWNForBG/itm/nwamul01.itm~ ~override~
   SAY 0xC	@103224
   SAY 0x54	@103225
+
+COPY ~NWNForBG/itm/nwbag1.itm~ ~override~
+  SAY 0x8	@102414
+  SAY 0xC	@102414
+  SAY 0x54	@102415
+
+COPY ~NWNForBG/itm/nwbag2.itm~ ~override~
+  SAY 0x8	@102414
+  SAY 0xC	@102414
+  SAY 0x54	@102415
+
+COPY ~NWNForBG/itm/nwbag3.itm~ ~override~
+  SAY 0x50	@104459
+
+COPY ~NWNForBG/itm/nwbelt01.itm~ ~override~
+  SAY 0xC	@102305
+  SAY 0x54	@102306
 
 COPY ~NWNForBG/itm/nwbook01.itm~ ~override~
   SAY 0x8	@103235
@@ -4099,9 +4322,40 @@ COPY ~NWNForBG/itm/nwbook66.itm~ ~override~
   SAY 0xC	@107713
   SAY 0x50	@107714
 
+COPY ~NWNForBG/itm/nwbow03.itm~ ~override~
+  SAY 0xC	@102318
+  SAY 0x54	@102319
+
+COPY ~NWNForBG/itm/nwbrac03.itm~ ~override~
+  SAY 0xC	@102739
+  SAY 0x54	@102740
+
+COPY ~NWNForBG/itm/nwclck01.itm~ ~override~
+  SAY 0xC	@102307
+  SAY 0x54	@102308
+
 COPY ~NWNForBG/itm/nwdagg01.itm~ ~override~
   SAY 0xC	@103357
   SAY 0x54	@103358
+
+COPY ~NWNForBG/itm/nwdagg1.itm~ ~override~
+  SAY 0xC	@102603
+  SAY 0x54	@102604
+
+COPY ~NWNForBG/itm/nwdagg2.itm~ ~override~
+  SAY 0xC	@105376
+  SAY 0x54	@105377
+
+COPY ~NWNForBG/itm/nwdcclck.itm~ ~override~
+  SAY 0xC	@102749
+  SAY 0x54	@102750
+
+COPY ~NWNForBG/itm/nwgbag1.itm~ ~override~
+  SAY 0x50	@102420
+
+COPY ~NWNForBG/itm/nwgbbow.itm~ ~override~
+  SAY 0xC	@102314
+  SAY 0x54	@102315
 
 COPY ~NWNForBG/itm/nwgem01.itm~ ~override~
   SAY 0x8	@105760
@@ -4163,6 +4417,25 @@ COPY ~NWNForBG/itm/nwgem12.itm~ ~override~
   SAY 0xC	@106005
   SAY 0x54	@106006
 
+COPY ~NWNForBG/itm/nwguard1.itm~ ~override~
+  SAY 0xC	@105378
+  SAY 0x54	@105379
+
+COPY ~NWNForBG/itm/nwhamm02.itm~ ~override~
+  SAY 0xC	@102902
+  SAY 0x54	@102903
+
+COPY ~NWNForBG/itm/nwhamm03.itm~ ~override~
+  SAY 0x8	@102431
+  SAY 0xC	@102431
+  SAY 0x50	@102432
+
+COPY ~NWNForBG/itm/nwhamm04.itm~ ~override~
+  SAY 0x8	@102431
+  SAY 0xC	@102433
+  SAY 0x50	@102434
+  SAY 0x54	@104337
+
 COPY ~NWNForBG/itm/nwhead01.itm~ ~override~
   SAY 0x8	@106400
   SAY 0xC	@106400
@@ -4172,6 +4445,10 @@ COPY ~NWNForBG/itm/nwitm117.itm~ ~override~
   SAY 0xC	@102302
   SAY 0x50	@102304
   SAY 0x54	@102303
+
+COPY ~NWNForBG/itm/nwitm128.itm~ ~override~
+  SAY 0xC	@102730
+  SAY 0x54	@102731
 
 COPY ~NWNForBG/itm/nwkey01.itm~ ~override~
   SAY 0xC	@103374
@@ -4238,6 +4515,10 @@ COPY ~NWNForBG/itm/nwkey16.itm~ ~override~
   SAY 0xC	@107076
   SAY 0x54	@107077
 
+COPY ~NWNForBG/itm/nwleat2.itm~ ~override~
+  SAY 0xC	@102462
+  SAY 0x54	@102463
+
 COPY ~NWNForBG/itm/nwlett01.itm~ ~override~
   SAY 0x8	@103400
   SAY 0xC	@103400
@@ -4274,6 +4555,18 @@ COPY ~NWNForBG/itm/nwmalr3a.itm~ ~override~
 COPY ~NWNForBG/itm/nwmalr3b.itm~ ~override~
   SAY 0x8	@102557
   SAY 0xC	@102557
+
+COPY ~NWNForBG/itm/nwmgcl02.itm~ ~override~
+  SAY 0xC	@102474
+  SAY 0x54	@102475
+
+COPY ~NWNForBG/itm/nwmgsw01.itm~ ~override~
+  SAY 0xC	@102476
+  SAY 0x54	@102477
+
+COPY ~NWNForBG/itm/nwmhelm.itm~ ~override~
+  SAY 0xC	@102309
+  SAY 0x54	@102310
 
 COPY ~NWNForBG/itm/nwmisc01.itm~ ~override~
   SAY 0x8	@103410
@@ -4670,6 +4963,9 @@ COPY ~NWNForBG/itm/nwmisc90.itm~ ~override~
   SAY 0x50	@107825
   SAY 0x54	@107825
 
+COPY ~NWNForBG/itm/nwpbag1.itm~ ~override~
+  SAY 0x50	@102418
+
 COPY ~NWNForBG/itm/nwpotn01.itm~ ~override~
   SAY 0xC	@103529
   SAY 0x54	@103530
@@ -4695,6 +4991,10 @@ COPY ~NWNForBG/itm/nwring2.itm~ ~override~
   SAY 0xC	@103542
   SAY 0x54	@103543
 
+COPY ~NWNForBG/itm/nwring4.itm~ ~override~
+  SAY 0xC	@102605
+  SAY 0x54	@102606
+
 COPY ~NWNForBG/itm/nwring5.itm~ ~override~
   SAY 0xC	@103162
   SAY 0x54	@103163
@@ -4703,17 +5003,105 @@ COPY ~NWNForBG/itm/nwring6.itm~ ~override~
   SAY 0xC	@106009
   SAY 0x54	@106010
 
+COPY ~NWNForBG/itm/nwrjr005.itm~ ~override~
+  SAY 0xC	@102311
+  SAY 0x50	@102312
+  SAY 0x54	@102313
+
+COPY ~NWNForBG/itm/nwrobe02.itm~ ~override~
+  SAY 0xC	@102734
+  SAY 0x54	@102735
+
+COPY ~NWNForBG/itm/nwrobe03.itm~ ~override~
+  SAY 0xC	@102736
+  SAY 0x54	@102737
+
+COPY ~NWNForBG/itm/nwrobe1.itm~ ~override~
+  SAY 0xC	@102755
+  SAY 0x54	@102756
+
+COPY ~NWNForBG/itm/nwsbag1.itm~ ~override~
+  SAY 0x50	@102419
+
+COPY ~NWNForBG/itm/nwsi590.itm~ ~override~
+  SAY 0x54	@102906
+
+COPY ~NWNForBG/itm/nwsi591.itm~ ~override~
+  SAY 0x54	@102907
+
+COPY ~NWNForBG/itm/nwsi592.itm~ ~override~
+  SAY 0x54	@102908
+
+COPY ~NWNForBG/itm/nwsi593.itm~ ~override~
+  SAY 0x54	@102909
+
+COPY ~NWNForBG/itm/nwsi594.itm~ ~override~
+  SAY 0x54	@102910
+
+COPY ~NWNForBG/itm/nwsi595.itm~ ~override~
+  SAY 0x54	@102911
+
+COPY ~NWNForBG/itm/nwsi596.itm~ ~override~
+  SAY 0x54	@102912
+
+COPY ~NWNForBG/itm/nwsi597.itm~ ~override~
+  SAY 0x54	@102913
+
+COPY ~NWNForBG/itm/nwsplt1.itm~ ~override~
+  SAY 0xC	@102904
+  SAY 0x54	@102905
+
+COPY ~NWNForBG/itm/nwspr1.itm~ ~override~
+  SAY 0xC	@102464
+  SAY 0x54	@102465
+
+COPY ~NWNForBG/itm/nwspr2.itm~ ~override~
+  SAY 0xC	@102466
+  SAY 0x54	@102467
+
 COPY ~NWNForBG/itm/nwstaf02.itm~ ~override~
   SAY 0xC	@102741
   SAY 0x54	@102742
+
+COPY ~NWNForBG/itm/nwstaf1.itm~ ~override~
+  SAY 0xC	@102468
+  SAY 0x54	@102469
 
 COPY ~NWNForBG/itm/nwstrarw.itm~ ~override~
   SAY 0xC	@102342
   SAY 0x54	@102343
 
+COPY ~NWNForBG/itm/nwsw1h04.itm~ ~override~
+  SAY 0xC	@102470
+  SAY 0x54	@102471
+
+COPY ~NWNForBG/itm/nwsw1h05.itm~ ~override~
+  SAY 0xC	@102472
+  SAY 0x54	@102473
+
 COPY ~NWNForBG/itm/nwsw2h1.itm~ ~override~
   SAY 0xC	@103168
   SAY 0x54	@103169
+
+COPY ~NWNForBG/itm/nwthcl.itm~ ~override~
+  SAY 0xC	@103760
+  SAY 0x54	@103761
+
+COPY ~NWNForBG/itm/nwthh1.itm~ ~override~
+  SAY 0xC	@103762
+  SAY 0x54	@103763
+
+COPY ~NWNForBG/itm/nwthpo.itm~ ~override~
+  SAY 0xC	@103764
+  SAY 0x54	@103765
+
+COPY ~NWNForBG/itm/nwthtd.itm~ ~override~
+  SAY 0xC	@103766
+  SAY 0x54	@103767
+
+COPY ~NWNForBG/itm/nwwamli.itm~ ~override~
+  SAY 0xC	@102745
+  SAY 0x54	@102746
 
 COPY ~NWNForBG/itm/nwword1.itm~ ~override~
   SAY 0x8	@105705
@@ -4735,6 +5123,10 @@ COPY ~NWNForBG/itm/nwword4.itm~ ~override~
   SAY 0xC	@105705
   SAY 0x50	@106751
 
+COPY ~NWNForBG/itm/nwwstqu.itm~ ~override~
+  SAY 0xC	@102747
+  SAY 0x54	@102748
+
 COPY ~NWNForBG/itm/nyatkey.itm~ ~override~
   SAY 0xC	@103605
   SAY 0x50	@103606
@@ -4749,6 +5141,11 @@ COPY ~NWNForBG/itm/obolhead.itm~ ~override~
   SAY 0xC	@104502
   SAY 0x50	@104503
 
+COPY ~NWNForBG/itm/philter.itm~ ~override~
+  SAY 0xC	@102346
+  SAY 0x50	@102347
+  SAY 0x54	@102347
+
 COPY ~NWNForBG/itm/picknw.itm~ ~override~
   SAY 0x8	@103641
   SAY 0xC	@103641
@@ -4762,6 +5159,10 @@ COPY ~NWNForBG/itm/platauc.itm~ ~override~
 COPY ~NWNForBG/itm/platnwn1.itm~ ~override~
   SAY 0xC	@103646
   SAY 0x54	@103647
+
+COPY ~NWNForBG/itm/platnwn2.itm~ ~override~
+  SAY 0xC	@105374
+  SAY 0x54	@105375
 
 COPY ~NWNForBG/itm/quasgore.itm~ ~override~
   SAY 0x8	@103655
@@ -4789,6 +5190,26 @@ COPY ~NWNForBG/itm/rithtel2.itm~ ~override~
   SAY 0xC	@103685
   SAY 0x50	@103686
   SAY 0x54	@103687
+
+COPY ~NWNForBG/itm/roboflo.itm~ ~override~
+  SAY 0xC	@102753
+  SAY 0x54	@102754
+
+COPY ~NWNForBG/itm/rr#bow02.itm~ ~override~
+  SAY 0xC	@102524
+  SAY 0x54	@102525
+
+COPY ~NWNForBG/itm/rr#bow03.itm~ ~override~
+  SAY 0xC	@102601
+  SAY 0x54	@102602
+
+COPY ~NWNForBG/itm/rr#buc03.itm~ ~override~
+  SAY 0xC	@102427
+  SAY 0x54	@102428
+
+COPY ~NWNForBG/itm/rr#hel02.itm~ ~override~
+  SAY 0xC	@102429
+  SAY 0x54	@102430
 
 COPY ~NWNForBG/itm/scalebl.itm~ ~override~
   SAY 0x50	@107523
@@ -5016,6 +5437,10 @@ COPY ~NWNForBG/itm/vscroll.itm~ ~override~
   SAY 0xC	@103824
   SAY 0x54	@103825
 
+COPY ~NWNForBG/itm/wandnw1.itm~ ~override~
+  SAY 0xC	@102421
+  SAY 0x54	@102422
+
 COPY ~NWNForBG/itm/wandnw4.itm~ ~override~
   SAY 0xC	@103829
   SAY 0x54	@103830
@@ -5051,6 +5476,13 @@ COPY ~NWNForBG/spl~ ~override~
 
 COPY ~NWNForBG/spl/fl#csdis.spl~ ~override~
   SAY 0x8	@102490
+
+COPY ~NWNForBG/spl/mmwiconv.spl~ ~override~
+  SAY 0x8	@102717
+  SAY 0x50	@102718
+
+COPY ~NWNForBG/spl/rr#shm.spl~ ~override~
+  SAY 0x8	@102453
 
 COPY ~NWNForBG/spl/spin115w.spl~ ~override~
   SAY 0x8	@103848
@@ -5182,6 +5614,9 @@ COPY ~NWNForBG/spl/spwi429.spl~ ~override~
 COPY ~NWNForBG/spl/spwi431.spl~ ~override~
   SAY 0x8	@103886
   SAY 0x50	@103887
+
+COPY ~NWNForBG/spl/spwi545.spl~ ~override~
+  SAY 0x8	@74538
 
 COPY ~NWNForBG/spl/spwi733.spl~ ~override~
   SAY 0x8	@103882
