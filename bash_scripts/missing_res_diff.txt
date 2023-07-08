@@ -1,4 +1,4 @@
-Number of hits: 1683
+Number of hits: 1676
 File: AUCTION.STO, Name: What do you... what do you want?, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: BALLARD.STO, Name: , Attribute: Rumors (drinks)=RFRIEN.DLG
 File: CHALJAL.STO, Name: Augh! A miss? Not enough ale!, Attribute: Rumors (drinks)=RFRIEN.DLG
@@ -15,8 +15,6 @@ File: HELMITE1.STO, Name: Temple of Helm, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: JUSAM.STO, Name: ������? ��� ���. ������ �������, � ����, ���������, ������� ����, ��� ��� � �����. ������ ��� ����� ��������. � ����� ��� ��������., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
-File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Spell icon=CONVSEC.BAM
-File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Icon=CONVSEB.BAM
 File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Resource=MMCHAL.2DA
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
@@ -25,13 +23,8 @@ File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
-File: NWITM128.ITM, Name: To remove a memorized spell, press it and it will be forgotten., Attribute: Resource=CDCMELE2.EFF
 File: NWMERC01.STO, Name: You know, this could be going a lot worse., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGGOODHT.EFF
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGGOODDM.EFF
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGEVILHT.EFF
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGEVILDM.EFF
 File: PLMISC.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PLSCROLL.STO, Name: �� ��������., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
@@ -41,9 +34,9 @@ File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
 File: ROLKID.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ROLKID2.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM01.EFF
-File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM02.EFF
-File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM03.EFF
+File: RR#SHM01.EFF, Attribute: Resource=RR#SHM01.CRE
+File: RR#SHM02.EFF, Attribute: Resource=RR#SHM02.CRE
+File: RR#SHM03.EFF, Attribute: Resource=RR#SHM03.CRE
 File: SMITHNW1.STO, Name: ������ �����: ��������� ������
 
 �� �������� ������� ��������� �� ����������� ������, ����-��, ������� ���� ������������ �� �������� ����� ������ � ������ �����. �� ������ - ������ ��������� ��� ����������, ������� ����� ���������� ������ ������., Attribute: Rumors (drinks)=RFRIEN.DLG

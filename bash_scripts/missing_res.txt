@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1683
+Number of hits: 1676
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -827,8 +827,6 @@ File: MISCAV.ITM, Name: Golden Skull, Attribute: Description image=CMISCAV.BAM
 File: MISTPO01.CRE, Name: Poison Mist, Attribute: Resource=CDSW1H58.SPL
 File: MISTPO01.CRE, Name: Poison Mist, Attribute: Resource=CDMOUND.SPL
 File: MISTPO01.CRE, Name: Poison Mist, Attribute: Resource=CDHGNYA1.SPL
-File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Spell icon=CONVSEC.BAM
-File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Icon=CONVSEB.BAM
 File: MMWICONV.SPL, Name: These are your abilities scores. Red scores have been altered with an item or status effect., Attribute: Resource=MMCHAL.2DA
 File: MONK.CRE, Name: Monk, Attribute: Dialogue=MONK.DLG
 File: MONKTU20.CRE, Name: Tutor, Attribute: Dialogue=MONKTU20.DLG
@@ -847,13 +845,8 @@ File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
-File: NWITM128.ITM, Name: To remove a memorized spell, press it and it will be forgotten., Attribute: Resource=CDCMELE2.EFF
 File: NWMERC01.STO, Name: You know, this could be going a lot worse., Attribute: Rumors (drinks)=RFRIEN.DLG
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGGOODHT.EFF
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGGOODDM.EFF
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGEVILHT.EFF
-File: NWSPR2.ITM, Name: If you think I've any interest in associating with a group of weak-willed, pandering fools, you are mistaken. Get out of my sight., Attribute: Resource=SGEVILDM.EFF
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -1143,9 +1136,9 @@ File: RORCS01.CRE, Name: Orog, Attribute: Dialogue=RORCS01.DLG
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
-File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM01.EFF
-File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM02.EFF
-File: RR#SHM.SPL, Name: I... I can't carry more., Attribute: Resource=RR#SHM03.EFF
+File: RR#SHM01.EFF, Attribute: Resource=RR#SHM01.CRE
+File: RR#SHM02.EFF, Attribute: Resource=RR#SHM02.CRE
+File: RR#SHM03.EFF, Attribute: Resource=RR#SHM03.CRE
 File: RSKEL02.CRE, Name: Skeleton Warrior, Attribute: Override script=RSKEL02.BCS
 File: RSKEL02.CRE, Name: Skeleton Warrior, Attribute: Dialogue=RSKEL02.DLG
 File: RSKEL03.CRE, Name: Skeleton, Attribute: Override script=RSKEL03.BCS
