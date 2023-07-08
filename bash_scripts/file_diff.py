@@ -17,4 +17,10 @@ def diff_and_save(orig_name):
 
 
 diff_and_save('missing_res_orig.txt')
+diff_and_save('dialog_check_orig.txt')
+diff_and_save('items_not_in_inventory_orig.txt')
+diff_and_save('missing_sound_refs_orig.txt')
+diff_and_save('script_check_orig.txt')
+diff_and_save('unknow_ids1_orig.txt')
+diff_and_save('unknow_ids2_orig.txt')
 

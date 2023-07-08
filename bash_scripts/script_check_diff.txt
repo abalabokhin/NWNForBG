@@ -1,0 +1,1208 @@
+Number of hits: 2060
+File: 1042TR1.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - SPNW01
+File: 1042TR1.bcs, Line: 8, Warning: Resource not found: S:RES*[SPL] - SPNW01
+File: 1042TR2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - SPNW01
+File: 1042TR2.bcs, Line: 8, Warning: Resource not found: S:RES*[SPL] - SPNW01
+File: 1042TR2.bcs, Line: 9, Warning: Resource not found: S:RES*[SPL] - SPNW01
+File: 1110CRE.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: 1220TR1.bcs, Line: 11, Warning: Resource not found: S:CutScene*[BCS] - Drawl1
+File: 2302WT.bcs, Line: 6, Warning: Resource not found: S:ResRef*[CRE] - 2302WT
+File: 2302WT.bcs, Line: 7, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: 2900TR.bcs, Line: 8, Warning: Resource not found: S:ResRef*[CRE] - 2902TR
+File: 2900TR.bcs, Line: 9, Warning: Script name not found: O:Actor* - 2902TR
+File: 2902TR.bcs, Line: 7, Warning: Resource not found: S:ResRef*[CRE] - 2902TR
+File: 2902TR.bcs, Line: 8, Warning: Script name not found: O:Actor* - 2902TR
+File: 3306INF.bcs, Line: 3, Warning: Resource not found: S:Item*[ITM] - NWMISC75
+File: 3306INF.bcs, Line: 13, Warning: Resource not found: S:Item*[ITM] - NWMISC75
+File: 3306INF.bcs, Line: 20, Warning: Resource not found: S:ResRef*[CRE] - GRUNT
+File: _DASIGHT.bcs, Line: 5, Warning: Resource not found: S:ScriptFile*[BCS] - DW#OLWTA
+File: _DASIGHT.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: _DASIGHT.bcs, Line: 45, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: _DASIGHT.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: _DASIGHT.bcs, Line: 609, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: _DASIGHT.bcs, Line: 618, Warning: Resource not found: S:Object*[ITM] - dwexhe
+File: _DASIGHT.bcs, Line: 2109, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: _WTARSGT.bcs, Line: 61, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: _WTARSGT.bcs, Line: 72, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: _WTARSGT.bcs, Line: 102, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: _WTARSGT.bcs, Line: 753, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: _WTARSGT.bcs, Line: 762, Warning: Resource not found: S:Object*[ITM] - dwexhe
+File: A#AMNG.bcs, Line: 4, Warning: Script name not found: O:Object* - A#AMNGH
+File: A#AMNG.bcs, Line: 5, Warning: Script name not found: O:Object* - A#AMNMH
+File: A#AMNG.bcs, Line: 6, Warning: Script name not found: O:Object* - A#AMNPH
+File: A#AMNG.bcs, Line: 7, Warning: Script name not found: O:Object* - A#AMNG
+File: A#AMNG.bcs, Line: 8, Warning: Script name not found: O:Object* - A#AMNM
+File: A#AMNG.bcs, Line: 9, Warning: Script name not found: O:Object* - A#AMNP
+File: A#AMNG.bcs, Line: 11, Warning: Script name not found: O:Object* - A#AMNGH
+File: A#AMNG.bcs, Line: 12, Warning: Script name not found: O:Object* - A#AMNMH
+File: A#AMNG.bcs, Line: 13, Warning: Script name not found: O:Object* - A#AMNPH
+File: A#AMNG.bcs, Line: 14, Warning: Script name not found: O:Object* - A#AMNG
+File: A#AMNG.bcs, Line: 15, Warning: Script name not found: O:Object* - A#AMNM
+File: A#AMNG.bcs, Line: 16, Warning: Script name not found: O:Object* - A#AMNP
+File: A#AMNG.bcs, Line: 30, Warning: Resource not found: S:ResRef*[CRE] - A#AMNGH
+File: A#AMNG.bcs, Line: 32, Warning: Resource not found: S:ResRef*[CRE] - A#AMNMH
+File: A#AMNG.bcs, Line: 34, Warning: Resource not found: S:ResRef*[CRE] - A#AMNPH
+File: A#AMNG.bcs, Line: 46, Warning: Resource not found: S:ResRef*[CRE] - A#AMNG
+File: A#AMNG.bcs, Line: 48, Warning: Resource not found: S:ResRef*[CRE] - A#AMNM
+File: A#AMNG.bcs, Line: 50, Warning: Resource not found: S:ResRef*[CRE] - A#AMNP
+File: AARIN.bcs, Line: 33, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ACT01.bcs, Line: 43, Warning: Resource not found: S:NewObject*[CRE] - FLAMEN
+File: ACT01.bcs, Line: 91, Warning: Resource not found: S:NewObject*[CRE] - FLAMEN
+File: ACT02.bcs, Line: 43, Warning: Resource not found: S:NewObject*[CRE] - FLAMEN
+File: ACT02.bcs, Line: 44, Warning: Resource not found: S:NewObject*[CRE] - FLAMEN2
+File: ACT02.bcs, Line: 92, Warning: Resource not found: S:NewObject*[CRE] - FLAMEN
+File: ACT02.bcs, Line: 93, Warning: Resource not found: S:NewObject*[CRE] - FLAMEN2
+File: ALHELOR.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ALHELOR.bcs, Line: 65, Warning: Resource not found: S:RES*[SPL] - ALHE881
+File: ALHELOR.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - ALHE881
+File: ANDGUARD.bcs, Line: 36, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ARIBETH.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ARIBETH.bcs, Line: 42, Warning: Resource not found: S:ResRef*[CRE] - KHELBEN
+File: ARIBETH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
+File: ARWYL.bcs, Line: 12, Warning: Resource not found: S:Sound*[WAV] - ARWYL051
+File: ARWYL.bcs, Line: 27, Warning: Resource not found: S:Sound*[WAV] - ARWYL052
+File: ARWYL.bcs, Line: 42, Warning: Resource not found: S:Sound*[WAV] - ARWYL053
+File: ARWYL.bcs, Line: 84, Warning: Resource not found: S:Sound*[WAV] - ARWYL050
+File: AUCTION.bcs, Line: 35, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BARAM.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BAWAIL0.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Wvdeath
+File: BELARIAN.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - BEDWIN43
+File: BGNEST.bcs, Line: 8, Warning: Resource not found: S:RES*[SPL] - BGNEST
+File: BGNEST3.bcs, Line: 13, Warning: Resource not found: S:RES*[SPL] - BGNEST2
+File: BOOK2609.bcs, Line: 17, Warning: Resource not found: S:NewObject*[CRE] - BOOK2609
+File: BPBOUNTY.bcs, Line: 123, Warning: Resource not found: S:ResRef*[CRE] - SNARE2
+File: BPBOUNTY.bcs, Line: 143, Warning: Resource not found: S:ResRef*[CRE] - SNARE2A
+File: BPBOUNTY.bcs, Line: 164, Warning: Resource not found: S:ResRef*[CRE] - SNARE2B
+File: BPBOUNTY.bcs, Line: 184, Warning: Resource not found: S:ResRef*[CRE] - SNARE2C
+File: BPBOUNTY.bcs, Line: 204, Warning: Resource not found: S:ResRef*[CRE] - SNARE1
+File: BPBOUNTY.bcs, Line: 225, Warning: Resource not found: S:ResRef*[CRE] - SNARE1A
+File: BPBOUNTY.bcs, Line: 246, Warning: Resource not found: S:ResRef*[CRE] - SNARE1B
+File: BPBOUNTY.bcs, Line: 266, Warning: Resource not found: S:ResRef*[CRE] - SNARE1C
+File: BPBOUNTY.bcs, Line: 307, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPBOUNTY.bcs, Line: 333, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPBOUNTY.bcs, Line: 358, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPCARC2B.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCARC2B.bcs, Line: 73, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCARC2B.bcs, Line: 103, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCARC2B.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPCBAR2B.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCBAR2B.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCBAR2B.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCBAR2B.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPCBAR2B.bcs, Line: 3665, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: BPCFIG2A.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCFIG2A.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCFIG2A.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCFIG2A.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPCFIG2A.bcs, Line: 4105, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: BPCFIG2B.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCFIG2B.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCFIG2B.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPCFIG2B.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPCFIG2B.bcs, Line: 4105, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: BPCMAG2A.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPCMAG2A.bcs, Line: 87, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPCMAG2A.bcs, Line: 95, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPCMAG2B.bcs, Line: 40, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPCMAG2B.bcs, Line: 48, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPCTHI2B.bcs, Line: 104, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
+File: BPCTHI2B.bcs, Line: 112, Warning: Resource not found: S:ResRef*[CRE] - SNARE4
+File: BPCTHI2B.bcs, Line: 113, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
+File: BPCTHI2B.bcs, Line: 116, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
+File: BPCTHI2B.bcs, Line: 124, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
+File: BPCTHI2B.bcs, Line: 132, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
+File: BPCTHI2B.bcs, Line: 134, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
+File: BPCTHI2B.bcs, Line: 137, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
+File: BPCTHI2B.bcs, Line: 145, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
+File: BPCTHI2B.bcs, Line: 153, Warning: Resource not found: S:ResRef*[CRE] - SNARE3
+File: BPCTHI2B.bcs, Line: 154, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
+File: BPCTHI2B.bcs, Line: 157, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
+File: BPCTHI2B.bcs, Line: 174, Warning: Resource not found: S:ResRef*[CRE] - SNARE2B
+File: BPCTHI2B.bcs, Line: 195, Warning: Resource not found: S:ResRef*[CRE] - SNARE2C
+File: BPCTHI2B.bcs, Line: 216, Warning: Resource not found: S:ResRef*[CRE] - SNARE1B
+File: BPCTHI2B.bcs, Line: 237, Warning: Resource not found: S:ResRef*[CRE] - SNARE1C
+File: BPCTHI2B.bcs, Line: 278, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPCTHI2B.bcs, Line: 304, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPCTHI2B.bcs, Line: 329, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPDRU14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
+File: BPDRU14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
+File: BPDRU14G.bcs, Line: 590, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
+File: BPDRU14G.bcs, Line: 918, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
+File: BPDRU14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
+File: BPGPARCH.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPGPARCH.bcs, Line: 73, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPGPARCH.bcs, Line: 103, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPGPARCH.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPLEADER.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG10A.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG10A.bcs, Line: 67, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG10A.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG12A.bcs, Line: 39, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG12A.bcs, Line: 47, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG12A.bcs, Line: 340, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG12A.bcs, Line: 341, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG14A.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG14A.bcs, Line: 67, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG14A.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG14D.bcs, Line: 39, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG14D.bcs, Line: 47, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG14D.bcs, Line: 145, Warning: Resource not found: S:RES*[SPL] - fl#canpc
+File: BPMAG14D.bcs, Line: 1479, Warning: Resource not found: S:RES*[SPL] - fl#canpc
+File: BPMAG14M.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG14M.bcs, Line: 67, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG14M.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG14M.bcs, Line: 113, Warning: Resource not found: S:RES*[SPL] - fl#finpc
+File: BPMAG14M.bcs, Line: 373, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG14M.bcs, Line: 374, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG14M.bcs, Line: 1483, Warning: Resource not found: S:RES*[SPL] - fl#finpc
+File: BPMAG14M.bcs, Line: 1527, Warning: Resource not found: S:RES*[SPL] - fl#canpc
+File: BPMAG16A.bcs, Line: 85, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG16A.bcs, Line: 93, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG16A.bcs, Line: 403, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG16A.bcs, Line: 416, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG16A.bcs, Line: 417, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG16C.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG16C.bcs, Line: 113, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG16C.bcs, Line: 121, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG16C.bcs, Line: 416, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG16C.bcs, Line: 417, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG16C.bcs, Line: 437, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG16M.bcs, Line: 39, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG16M.bcs, Line: 47, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG16M.bcs, Line: 352, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG16M.bcs, Line: 353, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG18A.bcs, Line: 39, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG18A.bcs, Line: 47, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG18C.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG18C.bcs, Line: 114, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG18C.bcs, Line: 122, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG18C.bcs, Line: 417, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG18C.bcs, Line: 418, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG18D.bcs, Line: 86, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG18D.bcs, Line: 94, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG18D.bcs, Line: 388, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAG18D.bcs, Line: 389, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAG18W.bcs, Line: 21, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG18W.bcs, Line: 29, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG18Z.bcs, Line: 87, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG18Z.bcs, Line: 95, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG20B.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAG20B.bcs, Line: 90, Warning: Resource not found: S:RES*[SPL] - fl#ganpc
+File: BPMAG20B.bcs, Line: 116, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAG20B.bcs, Line: 124, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAG20B.bcs, Line: 157, Warning: Resource not found: S:RES*[SPL] - fl#ganpc
+File: BPMAG20B.bcs, Line: 1149, Warning: Resource not found: S:RES*[SPL] - fl#ganpc
+File: BPMAG20B.bcs, Line: 1163, Warning: Resource not found: S:RES*[SPL] - fl#finpc
+File: BPMAGE8.bcs, Line: 39, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAGE8.bcs, Line: 47, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAGE8.bcs, Line: 344, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAGE8.bcs, Line: 345, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAGE8B.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPMAGE8B.bcs, Line: 67, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAGE8B.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAGE8B.bcs, Line: 371, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAGE8B.bcs, Line: 372, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPMAGE8D.bcs, Line: 39, Warning: Script name not found: O:Actor* - BPTARGET
+File: BPMAGE8D.bcs, Line: 47, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: BPMAGE8D.bcs, Line: 344, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPMAGE8D.bcs, Line: 345, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPPLOT.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPR1NW.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPRI12A.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPRI18A.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPRI18B.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPRI18C.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPRI18N.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPPRST12.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPSEENMY.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPSHADOW.bcs, Line: 192, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: BPSHADOW.bcs, Line: 193, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: BPTHFSHT.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: BPTHIEF.bcs, Line: 113, Warning: Resource not found: S:ResRef*[CRE] - SNARE1
+File: BPTHIEF.bcs, Line: 135, Warning: Resource not found: S:ResRef*[CRE] - SNARE1A
+File: BPTHIEF.bcs, Line: 157, Warning: Resource not found: S:ResRef*[CRE] - SNARE1B
+File: BPTHIEF.bcs, Line: 178, Warning: Resource not found: S:ResRef*[CRE] - SNARE1C
+File: BPTHIEF.bcs, Line: 220, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPTHIEF.bcs, Line: 247, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPTHIEF.bcs, Line: 273, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
+File: BPVAMP01.bcs, Line: 94, Warning: Resource not found: S:RES*[SPL] - BPVAMBAK
+File: BPVAMP01.bcs, Line: 112, Warning: Resource not found: S:RES*[SPL] - BPVAMGAS
+File: BPVAMP01.bcs, Line: 129, Warning: Resource not found: S:RES*[SPL] - BPVAMGAS
+File: BPVAMP01.bcs, Line: 144, Warning: Resource not found: S:RES*[SPL] - BPVAMGAS
+File: BPVAMP01.bcs, Line: 159, Warning: Resource not found: S:RES*[SPL] - BPVAMGAS
+File: BPVAMP01.bcs, Line: 174, Warning: Resource not found: S:RES*[SPL] - BPVAMGAS
+File: BPWDASGT.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWDASGT.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWDASGT.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWDASGT.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPWDASGT.bcs, Line: 4105, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: BPWDRSGT.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWDRSGT.bcs, Line: 73, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWDRSGT.bcs, Line: 103, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWDRSGT.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPWTASGT.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTASGT.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTASGT.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTASGT.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPWTASGT.bcs, Line: 4105, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: BPWTRSGT.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTRSGT.bcs, Line: 73, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTRSGT.bcs, Line: 103, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTRSGT.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPWTSIGT.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTSIGT.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTSIGT.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: BPWTSIGT.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: BPWTSIGT.bcs, Line: 4105, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: BRAZIER2.bcs, Line: 9, Warning: Resource not found: S:RES*[SPL] - BRAZ2
+File: BRAZIER2.bcs, Line: 12, Warning: Resource not found: S:RES*[SPL] - BRAZ2
+File: BRAZIER2.bcs, Line: 15, Warning: Resource not found: S:RES*[SPL] - BRAZ2
+File: BRAZIER3.bcs, Line: 9, Warning: Resource not found: S:RES*[SPL] - BRAZ3
+File: BRAZIER3.bcs, Line: 12, Warning: Resource not found: S:RES*[SPL] - BRAZ3
+File: BRAZIER3.bcs, Line: 15, Warning: Resource not found: S:RES*[SPL] - BRAZ3
+File: BRILEY.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: CALLIK.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: CHARON.bcs, Line: 35, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: CHFEM1.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - CHFEM1
+File: CHFEM2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - CHFEM2
+File: CHFEM3.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - CHFEM3
+File: CHMALE1.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - CHMALE1
+File: CHMALE2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - CHMALE2
+File: CLAUDUS.bcs, Line: 33, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: CLAUDUS.bcs, Line: 114, Warning: Resource not found: S:Sound*[WAV] - CLAUDUS1
+File: CREWTD2G.bcs, Line: 5, Warning: Resource not found: S:RES*[SPL] - Crewtd2a
+File: CREWTD2G.bcs, Line: 22, Warning: Resource not found: S:Sound*[WAV] - INTFOR52
+File: CREWTD2G.bcs, Line: 38, Warning: Resource not found: S:Sound*[WAV] - INTFOR50
+File: CREWTD2G.bcs, Line: 53, Warning: Resource not found: S:Sound*[WAV] - INTFOR51
+File: CREWTD2G.bcs, Line: 70, Warning: Resource not found: S:Sound*[WAV] - INTFOR52
+File: CREWTD3.bcs, Line: 8, Warning: Resource not found: S:Sound*[WAV] - NWDRYAD7
+File: CRYPT003.bcs, Line: 25, Warning: Resource not found: S:NewObject*[CRE] - MAEGAL
+File: CULTTRAP.bcs, Line: 8, Warning: Resource not found: S:ResRef*[CRE] - NWCULTL1
+File: CULTTRAP.bcs, Line: 9, Warning: Resource not found: S:ResRef*[CRE] - NWCULT2M
+File: CULTTRAP.bcs, Line: 10, Warning: Resource not found: S:ResRef*[CRE] - NWCULT5M
+File: CULTTRAP.bcs, Line: 21, Warning: Resource not found: S:ResRef*[CRE] - NWCULTL2
+File: CULTTRAP.bcs, Line: 22, Warning: Resource not found: S:ResRef*[CRE] - NWCULT1M
+File: CULTTRAP.bcs, Line: 23, Warning: Resource not found: S:ResRef*[CRE] - NWCULT2F
+File: CULTTRAP.bcs, Line: 24, Warning: Resource not found: S:ResRef*[CRE] - NWCULT4M
+File: CULTTRAP.bcs, Line: 35, Warning: Resource not found: S:ResRef*[CRE] - NWCULTL3
+File: CULTTRAP.bcs, Line: 36, Warning: Resource not found: S:ResRef*[CRE] - NWCULT1M
+File: CULTTRAP.bcs, Line: 37, Warning: Resource not found: S:ResRef*[CRE] - NWCULT2M
+File: CULTTRAP.bcs, Line: 38, Warning: Resource not found: S:ResRef*[CRE] - NWCULT5M
+File: DARKTONG.bcs, Line: 44, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: DEGRIAB.bcs, Line: 96, Warning: Script name not found: O:Actor* - BPTARGET
+File: DEGRIAB.bcs, Line: 104, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: DEGRIAB.bcs, Line: 398, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: DEGRIAB.bcs, Line: 399, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: DELILAH.bcs, Line: 22, Warning: Resource not found: S:RES*[SPL] - DELILAH
+File: DEMONDIE.bcs, Line: 5, Warning: Resource not found: S:RES*[SPL] - demondie
+File: DEMONDIE.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - melspl5a
+File: DESTH3A.bcs, Line: 8, Warning: Resource not found: S:Sound*[WAV] - DESTH145
+File: DIALTRAP.bcs, Line: 7, Warning: Resource not found: S:Item*[ITM] - UrtRing
+File: DIALTRAP.bcs, Line: 9, Warning: Script name not found: S:Name* - Urt
+File: DIALTRAP.bcs, Line: 21, Warning: Resource not found: S:Item*[ITM] - UrtRing
+File: DIALTRAP.bcs, Line: 23, Warning: Script name not found: S:Name* - Urt
+File: DRAWL.bcs, Line: 10, Warning: Resource not found: S:CutScene*[BCS] - Drawl1
+File: DRUI2800.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: DUMMTALK.bcs, Line: 5, Warning: Resource not found: S:RES*[SPL] - dw#silin
+File: DW#1GCL5.bcs, Line: 85, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 88, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 95, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 96, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 116, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 119, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 126, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 127, Warning: Resource not found: S:ResRef*[ITM] - dwexhe
+File: DW#1GCL5.bcs, Line: 499, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: DW#1GCL5.bcs, Line: 1183, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: DW#1GCL5.bcs, Line: 3922, Warning: Resource not found: S:RES*[SPL] - dw#mgsee
+File: DW#1GCL5.bcs, Line: 3942, Warning: Resource not found: S:RES*[SPL] - dw#mgsee
+File: DW#1GCL5.bcs, Line: 3961, Warning: Resource not found: S:RES*[SPL] - dw#mgsee
+File: DW#CARRF.bcs, Line: 138, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#CARRF.bcs, Line: 262, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#CARRF.bcs, Line: 386, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#CARRF.bcs, Line: 510, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#CARRF.bcs, Line: 634, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#CARRF.bcs, Line: 758, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#MELEE.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: DW#MELEE.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: DW#MELEE.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: DW#MELEE.bcs, Line: 360, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: DW#MELEE.bcs, Line: 4105, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: DW#RANGE.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: DW#RANGE.bcs, Line: 73, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: DW#RANGE.bcs, Line: 103, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: DW#RANGE.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: DW#SPIDF.bcs, Line: 140, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#SPIDF.bcs, Line: 266, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#SPIDF.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#SPIDF.bcs, Line: 518, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#SPIDF.bcs, Line: 644, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#SPIDF.bcs, Line: 770, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#UNDEF.bcs, Line: 138, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#UNDEF.bcs, Line: 262, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#UNDEF.bcs, Line: 386, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#UNDEF.bcs, Line: 510, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#UNDEF.bcs, Line: 634, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#UNDEF.bcs, Line: 758, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#WOLFF.bcs, Line: 140, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#WOLFF.bcs, Line: 266, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#WOLFF.bcs, Line: 392, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#WOLFF.bcs, Line: 518, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#WOLFF.bcs, Line: 644, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW#WOLFF.bcs, Line: 770, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: DW2MP0MW.bcs, Line: 625, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: DWARFNW1.bcs, Line: 38, Warning: Resource not found: S:Sound*[WAV] - HODD050
+File: EFHARPY.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - SPIN138
+File: EISNF.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: FINBALOR.bcs, Line: 5, Warning: Resource not found: S:RES*[SPL] - baldead
+File: FINBALOR.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - melspl5a
+File: FINBALOR.bcs, Line: 189, Warning: Resource not found: S:RES*[SPL] - BALORTK1
+File: FINBALOR.bcs, Line: 358, Warning: Resource not found: S:RES*[SPL] - BALORTK2
+File: FINMARIL.bcs, Line: 124, Warning: Resource not found: S:RES*[SPL] - BALORTK1
+File: FINMARIL.bcs, Line: 294, Warning: Resource not found: S:RES*[SPL] - BALORTK2
+File: FINNABAS.bcs, Line: 101, Warning: Resource not found: S:RES*[SPL] - nabpara
+File: FINNABAS.bcs, Line: 115, Warning: Resource not found: S:RES*[SPL] - nabpara
+File: FINNABAS.bcs, Line: 129, Warning: Resource not found: S:RES*[SPL] - nabpara
+File: FINSUCC.bcs, Line: 715, Warning: Resource not found: S:RES*[SPL] - dw#fitel
+File: FINSUCC2.bcs, Line: 687, Warning: Resource not found: S:RES*[SPL] - dw#fitel
+File: GANON.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - fl#canpc
+File: GANON.bcs, Line: 203, Warning: Resource not found: S:RES*[SPL] - dw#mgsee
+File: GERROL.bcs, Line: 33, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: GNT1404.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - SPNW615
+File: GNT2016.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
+File: GNT2016.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
+File: GNT2017.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
+File: GNT2017.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
+File: GNTNW11.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - dw#trpms
+File: GNTNW11.bcs, Line: 14, Warning: Resource not found: S:RES*[SPL] - dw#trpms
+File: GOBKING.bcs, Line: 179, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 182, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBKING.bcs, Line: 192, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 294, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 297, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBKING.bcs, Line: 307, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 409, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 412, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBKING.bcs, Line: 422, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 524, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 527, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBKING.bcs, Line: 537, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 639, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 642, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBKING.bcs, Line: 652, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 754, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBKING.bcs, Line: 757, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBKING.bcs, Line: 767, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 7, Warning: Resource not found: S:Sound*[WAV] - T-GBC01A
+File: GOBLINW1.bcs, Line: 340, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 343, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW1.bcs, Line: 353, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 455, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 458, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW1.bcs, Line: 468, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 570, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 573, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW1.bcs, Line: 583, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 685, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 688, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW1.bcs, Line: 698, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 800, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 803, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW1.bcs, Line: 813, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 915, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW1.bcs, Line: 918, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW1.bcs, Line: 928, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 289, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 292, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW2.bcs, Line: 302, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 404, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 407, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW2.bcs, Line: 417, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 519, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 522, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW2.bcs, Line: 532, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 634, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 637, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW2.bcs, Line: 647, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 749, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 752, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW2.bcs, Line: 762, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 864, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOBLINW2.bcs, Line: 867, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GOBLINW2.bcs, Line: 877, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: GOLEM1.bcs, Line: 17, Warning: Resource not found: S:RES*[SPL] - STONGNW
+File: GOLEM2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - STONGNW
+File: GONG1.bcs, Line: 7, Warning: Resource not found: S:Sound*[WAV] - 2GONG
+File: GONG1.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - 2GONG
+File: GONG1.bcs, Line: 28, Warning: Resource not found: S:Sound*[WAV] - 2GONG
+File: GONG2.bcs, Line: 7, Warning: Resource not found: S:Sound*[WAV] - 1GONG
+File: GONG2.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - 1GONG
+File: GONG2.bcs, Line: 28, Warning: Resource not found: S:Sound*[WAV] - 1GONG
+File: GONG3.bcs, Line: 7, Warning: Resource not found: S:Sound*[WAV] - 3GONG
+File: GONG3.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - 3GONG
+File: GONG3.bcs, Line: 28, Warning: Resource not found: S:Sound*[WAV] - 3GONG
+File: GONG4.bcs, Line: 7, Warning: Resource not found: S:Sound*[WAV] - 4GONG
+File: GONG4.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - 4GONG
+File: GONG4.bcs, Line: 28, Warning: Resource not found: S:Sound*[WAV] - 4GONG
+File: GORKAN.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: GRD1400.bcs, Line: 36, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: GREGORNW.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: GTWEBNW.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - SPWI215N
+File: GULNAN.bcs, Line: 19, Warning: Resource not found: S:Sound*[WAV] - GULNAN55
+File: GULNAN.bcs, Line: 32, Warning: Resource not found: S:Sound*[WAV] - GULNAN56
+File: GULNAN.bcs, Line: 45, Warning: Resource not found: S:Sound*[WAV] - GULNAN58
+File: GULNAN.bcs, Line: 58, Warning: Resource not found: S:Sound*[WAV] - GULNAN57
+File: GULNAN.bcs, Line: 76, Warning: Resource not found: S:CutScene*[BCS] - Gulnan1
+File: GULNAN.bcs, Line: 91, Warning: Resource not found: S:CutScene*[BCS] - Gulnan1
+File: GULNAN.bcs, Line: 179, Warning: Script name not found: O:Actor* - BPTARGET
+File: GULNAN.bcs, Line: 187, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: GUZUD.bcs, Line: 64, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GUZUD.bcs, Line: 75, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GUZUD.bcs, Line: 105, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: GUZUD.bcs, Line: 397, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: GUZUD.bcs, Line: 4142, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: HECTOR.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: HODD.bcs, Line: 12, Warning: Resource not found: S:Sound*[WAV] - HODD051
+File: HODD.bcs, Line: 27, Warning: Resource not found: S:Sound*[WAV] - HODD052
+File: HODD.bcs, Line: 42, Warning: Resource not found: S:Sound*[WAV] - HODD053
+File: HODD.bcs, Line: 62, Warning: Resource not found: S:Sound*[WAV] - HODD050
+File: HUMANSHB.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: HUMANSHT.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: IDOLNW1.bcs, Line: 57, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 59, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 60, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 61, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 77, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 78, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 79, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: IDOLNW1.bcs, Line: 80, Warning: Resource not found: S:NewObject*[CRE] - ZOMBNW4
+File: INITBET.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: INITRG14.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: INITRG8A.bcs, Line: 46, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ISLUND.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ISLUND.bcs, Line: 66, Warning: Resource not found: S:Sound*[WAV] - ISLUND50
+File: JANIS.bcs, Line: 8, Warning: Resource not found: S:Sound*[WAV] - DELOR04
+File: JEROL.bcs, Line: 64, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: JEROL.bcs, Line: 76, Warning: Resource not found: S:Sound*[WAV] - BEDWIN43
+File: JOHNS.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: KASMA.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: KELLISAI.bcs, Line: 34, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: KUCONLSE.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: KURDAN.bcs, Line: 51, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: KURDAN.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: KURDAN.bcs, Line: 92, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: KURDAN.bcs, Line: 382, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: KURDAN.bcs, Line: 4127, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: KURT.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: LERK.bcs, Line: 15, Warning: Resource not found: S:ResRef*[CRE] - Lerk2
+File: LICHNW1.bcs, Line: 79, Warning: Script name not found: O:Actor* - BPTARGET
+File: LICHNW1.bcs, Line: 87, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: LICHNW1.bcs, Line: 376, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: LICHNW1.bcs, Line: 377, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: LISTENER.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: LIZGOL1.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - LIZGOLG
+File: LIZGOL1.bcs, Line: 15, Warning: Resource not found: S:RES*[SPL] - LIZGOLF
+File: LIZGOL1.bcs, Line: 24, Warning: Resource not found: S:RES*[SPL] - LIZGOLC
+File: LIZGOL1.bcs, Line: 33, Warning: Resource not found: S:RES*[SPL] - LIZGOLS
+File: LIZGOL2.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - LIZGOLG
+File: LIZGOL2.bcs, Line: 15, Warning: Resource not found: S:RES*[SPL] - LIZGOLF
+File: LIZGOL2.bcs, Line: 24, Warning: Resource not found: S:RES*[SPL] - LIZGOLC
+File: LIZGOL2.bcs, Line: 33, Warning: Resource not found: S:RES*[SPL] - LIZGOLS
+File: LIZGOL3.bcs, Line: 6, Warning: Resource not found: S:RES*[SPL] - LIZGOLG
+File: LIZGOL3.bcs, Line: 15, Warning: Resource not found: S:RES*[SPL] - LIZGOLF
+File: LIZGOL3.bcs, Line: 24, Warning: Resource not found: S:RES*[SPL] - LIZGOLC
+File: LIZGOL3.bcs, Line: 33, Warning: Resource not found: S:RES*[SPL] - LIZGOLS
+File: MACGSKMG.bcs, Line: 48, Warning: Resource not found: S:NewObject*[CRE] - MACVWOLF
+File: MACGSKMG.bcs, Line: 49, Warning: Resource not found: S:NewObject*[CRE] - MACVWOLF
+File: MAGENW.bcs, Line: 32, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: MALECOM4.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - BEDWIN43
+File: MAUGRIM2.bcs, Line: 6, Warning: Resource not found: S:ScriptFile*[BCS] - NWEasy
+File: MAUGRIM2.bcs, Line: 15, Warning: Resource not found: S:ScriptFile*[BCS] - NWEasy
+File: MAUGRIM2.bcs, Line: 26, Warning: Resource not found: S:ScriptFile*[BCS] - nwNormal
+File: MAUGRIM2.bcs, Line: 33, Warning: Resource not found: S:ResRef*[ITM] - NWMelHrd
+File: MAUGRIM2.bcs, Line: 34, Warning: Resource not found: S:ResRef*[ITM] - NWBrac01
+File: MAUGRIM2.bcs, Line: 41, Warning: Resource not found: S:ScriptFile*[BCS] - NWCore
+File: MAUGRIM2.bcs, Line: 48, Warning: Resource not found: S:ResRef*[ITM] - NWMelIns
+File: MAUGRIM2.bcs, Line: 50, Warning: Resource not found: S:ResRef*[ITM] - NWStaf01
+File: MAUGRIM2.bcs, Line: 51, Warning: Resource not found: S:ResRef*[ITM] - NWBrac01
+File: MAUGRIM2.bcs, Line: 58, Warning: Resource not found: S:ScriptFile*[BCS] - NWCore
+File: MINNW1A.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: MINNW1A.bcs, Line: 49, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: MINNW1A.bcs, Line: 79, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: MINNW1A.bcs, Line: 369, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: MINNW1A.bcs, Line: 4114, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: MOBLEY.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - MOBLEY
+File: MORAG5.bcs, Line: 9, Warning: Resource not found: S:CutScene*[BCS] - Morag3
+File: NASCHER.bcs, Line: 26, Warning: Resource not found: S:ResRef*[CRE] - KHELBEN
+File: NASCHER.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
+File: NASCHER.bcs, Line: 40, Warning: Script name not found: S:Name* - Nwfhelm1
+File: NASCHER.bcs, Line: 41, Warning: Script name not found: S:Name* - Nwfhelm2
+File: NASCHER.bcs, Line: 42, Warning: Script name not found: S:Name* - Nwfhelm3
+File: NASCHER.bcs, Line: 43, Warning: Script name not found: S:Name* - Nwfhelm4
+File: NASCHER.bcs, Line: 59, Warning: Script name not found: S:Name* - Nwfhelm1
+File: NASCHER.bcs, Line: 60, Warning: Script name not found: S:Name* - Nwfhelm2
+File: NASCHER.bcs, Line: 61, Warning: Script name not found: S:Name* - Nwfhelm3
+File: NASCHER.bcs, Line: 62, Warning: Script name not found: S:Name* - Nwfhelm4
+File: NEYBOR.bcs, Line: 57, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: NW#PICKP.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: NW1000.bcs, Line: 92, Warning: Resource not found: S:NewObject*[CRE] - NWCATAP1
+File: NW1000.bcs, Line: 93, Warning: Resource not found: S:NewObject*[CRE] - NWCATAP2
+File: NW1000.bcs, Line: 94, Warning: Resource not found: S:NewObject*[CRE] - NWTARG1
+File: NW1000.bcs, Line: 95, Warning: Resource not found: S:NewObject*[CRE] - NWTARG2
+File: NW1001.bcs, Line: 17, Warning: Resource not found: S:CutScene*[BCS] - NWCUT01
+File: NW1001.bcs, Line: 27, Warning: Resource not found: S:CutScene*[BCS] - NWN_BG
+File: NW1002.bcs, Line: 36, Warning: Resource not found: S:NewObject*[CRE] - SICKMH2
+File: NW1002.bcs, Line: 39, Warning: Resource not found: S:NewObject*[CRE] - Nurse5
+File: NW1004.bcs, Line: 235, Warning: Resource not found: S:ResRef*[ITM] - CHANNW1
+File: NW1004.bcs, Line: 250, Warning: Resource not found: S:ResRef*[ITM] - LEATNW1
+File: NW1004.bcs, Line: 265, Warning: Resource not found: S:ResRef*[ITM] - AX1HNW1
+File: NW1004.bcs, Line: 280, Warning: Resource not found: S:ResRef*[ITM] - HALBNW1
+File: NW1004.bcs, Line: 295, Warning: Resource not found: S:ResRef*[ITM] - AX1HNW2
+File: NW1004.bcs, Line: 310, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW1
+File: NW1004.bcs, Line: 325, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW2
+File: NW1004.bcs, Line: 340, Warning: Resource not found: S:ResRef*[ITM] - HAMMNW1
+File: NW1004.bcs, Line: 355, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW3
+File: NW1004.bcs, Line: 370, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW4
+File: NW1004.bcs, Line: 385, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW5
+File: NW1004.bcs, Line: 400, Warning: Resource not found: S:ResRef*[ITM] - HAMMNW2
+File: NW1004.bcs, Line: 430, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW1
+File: NW1004.bcs, Line: 445, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW2
+File: NW1004.bcs, Line: 460, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW3
+File: NW1004.bcs, Line: 475, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW4
+File: NW1004.bcs, Line: 490, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW5
+File: NW1004.bcs, Line: 505, Warning: Resource not found: S:ResRef*[ITM] - HALBNW2
+File: NW1004.bcs, Line: 520, Warning: Resource not found: S:ResRef*[ITM] - SPERNW1
+File: NW1005.bcs, Line: 20, Warning: Resource not found: S:CutScene*[BCS] - NWN_BG
+File: NW1007.bcs, Line: 8, Warning: Resource not found: S:CutScene*[BCS] - Tamora
+File: NW1007.bcs, Line: 18, Warning: Resource not found: S:CutScene*[BCS] - Luce
+File: NW1007.bcs, Line: 28, Warning: Resource not found: S:CutScene*[BCS] - Tanit
+File: NW1007.bcs, Line: 38, Warning: Resource not found: S:CutScene*[BCS] - Tanit2
+File: NW1008.bcs, Line: 45, Warning: Resource not found: S:CutScene*[BCS] - EltTest2
+File: NW1008.bcs, Line: 54, Warning: Resource not found: S:NewObject*[CRE] - Eltura4
+File: NW1012.bcs, Line: 29, Warning: Resource not found: S:NewObject*[CRE] - TRANKAR
+File: NW1012.bcs, Line: 31, Warning: Resource not found: S:NewObject*[CRE] - Soldier7
+File: NW1012.bcs, Line: 40, Warning: Resource not found: S:NewObject*[CRE] - Lina12
+File: NW1012.bcs, Line: 41, Warning: Script name not found: O:Actor* - Lina
+File: NW1012.bcs, Line: 52, Warning: Resource not found: S:NewObject*[CRE] - Lina14
+File: NW1012.bcs, Line: 53, Warning: Script name not found: O:Actor* - Lina
+File: NW1012.bcs, Line: 64, Warning: Resource not found: S:NewObject*[CRE] - Lina16
+File: NW1012.bcs, Line: 65, Warning: Script name not found: O:Actor* - Lina
+File: NW1012.bcs, Line: 75, Warning: Resource not found: S:NewObject*[CRE] - Lina18
+File: NW1012.bcs, Line: 76, Warning: Script name not found: O:Actor* - Lina
+File: NW1012.bcs, Line: 86, Warning: Resource not found: S:NewObject*[CRE] - Daelan12
+File: NW1012.bcs, Line: 87, Warning: Script name not found: O:Actor* - Daelan
+File: NW1012.bcs, Line: 98, Warning: Resource not found: S:NewObject*[CRE] - Daelan14
+File: NW1012.bcs, Line: 99, Warning: Script name not found: O:Actor* - Daelan
+File: NW1012.bcs, Line: 110, Warning: Resource not found: S:NewObject*[CRE] - Daelan16
+File: NW1012.bcs, Line: 111, Warning: Script name not found: O:Actor* - Daelan
+File: NW1012.bcs, Line: 121, Warning: Resource not found: S:NewObject*[CRE] - Daelan18
+File: NW1012.bcs, Line: 122, Warning: Script name not found: O:Actor* - Daelan
+File: NW1012.bcs, Line: 132, Warning: Resource not found: S:NewObject*[CRE] - Boddin12
+File: NW1012.bcs, Line: 133, Warning: Script name not found: O:Actor* - Boddinok
+File: NW1012.bcs, Line: 144, Warning: Resource not found: S:NewObject*[CRE] - Boddin14
+File: NW1012.bcs, Line: 145, Warning: Script name not found: O:Actor* - Boddinok
+File: NW1012.bcs, Line: 156, Warning: Resource not found: S:NewObject*[CRE] - Boddin15
+File: NW1012.bcs, Line: 157, Warning: Script name not found: O:Actor* - Boddinok
+File: NW1012.bcs, Line: 167, Warning: Resource not found: S:NewObject*[CRE] - Boddin16
+File: NW1012.bcs, Line: 168, Warning: Script name not found: O:Actor* - Boddinok
+File: NW1012.bcs, Line: 178, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN12
+File: NW1012.bcs, Line: 179, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW1012.bcs, Line: 190, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN14
+File: NW1012.bcs, Line: 191, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW1012.bcs, Line: 202, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN16
+File: NW1012.bcs, Line: 203, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW1012.bcs, Line: 213, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN18
+File: NW1012.bcs, Line: 214, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW1012.bcs, Line: 224, Warning: Resource not found: S:NewObject*[CRE] - Sharwy12
+File: NW1012.bcs, Line: 225, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW1012.bcs, Line: 236, Warning: Resource not found: S:NewObject*[CRE] - Sharwy14
+File: NW1012.bcs, Line: 237, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW1012.bcs, Line: 248, Warning: Resource not found: S:NewObject*[CRE] - Sharwy16
+File: NW1012.bcs, Line: 249, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW1012.bcs, Line: 259, Warning: Resource not found: S:NewObject*[CRE] - Sharwy18
+File: NW1012.bcs, Line: 260, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW1012.bcs, Line: 270, Warning: Resource not found: S:NewObject*[CRE] - Tomi12
+File: NW1012.bcs, Line: 271, Warning: Script name not found: O:Actor* - Tomi
+File: NW1012.bcs, Line: 282, Warning: Resource not found: S:NewObject*[CRE] - Tomi14
+File: NW1012.bcs, Line: 283, Warning: Script name not found: O:Actor* - Tomi
+File: NW1012.bcs, Line: 294, Warning: Resource not found: S:NewObject*[CRE] - Tomi16
+File: NW1012.bcs, Line: 295, Warning: Script name not found: O:Actor* - Tomi
+File: NW1012.bcs, Line: 305, Warning: Resource not found: S:NewObject*[CRE] - Tomi18
+File: NW1012.bcs, Line: 306, Warning: Script name not found: O:Actor* - Tomi
+File: NW1030.bcs, Line: 35, Warning: Resource not found: S:CutScene*[BCS] - NWCUT02
+File: NW1030.bcs, Line: 55, Warning: Resource not found: S:CutScene*[BCS] - NWN_BG
+File: NW1040.bcs, Line: 10, Warning: Resource not found: S:NewObject*[CRE] - Guarden
+File: NW1040.bcs, Line: 16, Warning: Script name not found: O:Object* - Guarden
+File: NW1040.bcs, Line: 20, Warning: Script name not found: O:Actor* - Guarden
+File: NW1043.bcs, Line: 7, Warning: Resource not found: S:Sound*[WAV] - DESTH146
+File: NW1043.bcs, Line: 9, Warning: Resource not found: S:ScriptFile*[BCS] - DESTH3B
+File: NW1043.bcs, Line: 22, Warning: Resource not found: S:CutScene*[BCS] - Nwchapt2
+File: NW1043.bcs, Line: 32, Warning: Resource not found: S:Sound*[WAV] - DESTH160
+File: NW1300.bcs, Line: 74, Warning: Script name not found: S:Name* - Crewtd2
+File: NW1300.bcs, Line: 83, Warning: Script name not found: S:Name* - Crewtd2
+File: NW1302.bcs, Line: 4, Warning: Script name not found: S:Name* - Crewtd2
+File: NW1314.bcs, Line: 10, Warning: Resource not found: S:CutScene*[BCS] - ALAECUT1
+File: NW1314.bcs, Line: 18, Warning: Resource not found: S:NewObject*[CRE] - Nwhug5
+File: NW1314.bcs, Line: 29, Warning: Script name not found: S:Name* - Crewtd2
+File: NW1315.bcs, Line: 3, Warning: Script name not found: S:Name* - Crewtd2
+File: NW1400.bcs, Line: 62, Warning: Resource not found: S:Sound*[WAV] - IronG
+File: NW1400.bcs, Line: 102, Warning: Resource not found: S:Item*[ITM] - NyatScrl
+File: NW1400.bcs, Line: 103, Warning: Resource not found: S:ResRef*[ITM] - NyatScrl
+File: NW1405.bcs, Line: 6, Warning: Resource not found: S:NewObject*[CRE] - NWPHEAS2
+File: NW1405.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - NWPHEAS2
+File: NW1405.bcs, Line: 20, Warning: Resource not found: S:CutScene*[BCS] - NWZOOCUT
+File: NW1436.bcs, Line: 35, Warning: Resource not found: S:NewObject*[CRE] - Meldanen
+File: NW1439.bcs, Line: 44, Warning: Resource not found: S:CutScene*[BCS] - NWBat1A
+File: NW1439.bcs, Line: 55, Warning: Resource not found: S:CutScene*[BCS] - NWBat1B
+File: NW1439.bcs, Line: 66, Warning: Resource not found: S:CutScene*[BCS] - NWBat1A
+File: NW1439.bcs, Line: 77, Warning: Resource not found: S:CutScene*[BCS] - NWBat1B
+File: NW1439.bcs, Line: 88, Warning: Resource not found: S:CutScene*[BCS] - NWBat1A
+File: NW1439.bcs, Line: 99, Warning: Resource not found: S:CutScene*[BCS] - NWBat1B
+File: NW1439.bcs, Line: 110, Warning: Resource not found: S:CutScene*[BCS] - NWBat2A
+File: NW1439.bcs, Line: 121, Warning: Resource not found: S:CutScene*[BCS] - NWBat2B
+File: NW2000.bcs, Line: 12, Warning: Script name not found: S:Name* - Zor
+File: NW2000.bcs, Line: 13, Warning: Script name not found: S:Name* - Stirge
+File: NW2000.bcs, Line: 14, Warning: Script name not found: S:Name* - WyvernB
+File: NW2000.bcs, Line: 48, Warning: Resource not found: S:ResRef*[CRE] - SonfPL2
+File: NW2000.bcs, Line: 58, Warning: Resource not found: S:NewObject*[CRE] - Jahel
+File: NW2000.bcs, Line: 68, Warning: Resource not found: S:NewObject*[CRE] - Taran
+File: NW2000.bcs, Line: 74, Warning: Script name not found: S:Name* - Neva
+File: NW2000.bcs, Line: 75, Warning: Script name not found: O:Object* - Jahel
+File: NW2000.bcs, Line: 78, Warning: Script name not found: O:Actor* - Jahel
+File: NW2000.bcs, Line: 84, Warning: Script name not found: S:Name* - Neva
+File: NW2000.bcs, Line: 85, Warning: Script name not found: O:Object* - Taran
+File: NW2000.bcs, Line: 88, Warning: Script name not found: O:Actor* - Taran
+File: NW2003.bcs, Line: 11, Warning: Resource not found: S:NewObject*[CRE] - ALHELOR2
+File: NW2020.bcs, Line: 8, Warning: Resource not found: S:NewObject*[CRE] - Lina12
+File: NW2020.bcs, Line: 9, Warning: Script name not found: O:Actor* - Lina
+File: NW2020.bcs, Line: 21, Warning: Resource not found: S:NewObject*[CRE] - Lina14
+File: NW2020.bcs, Line: 22, Warning: Script name not found: O:Actor* - Lina
+File: NW2020.bcs, Line: 34, Warning: Resource not found: S:NewObject*[CRE] - Lina16
+File: NW2020.bcs, Line: 35, Warning: Script name not found: O:Actor* - Lina
+File: NW2020.bcs, Line: 46, Warning: Resource not found: S:NewObject*[CRE] - Lina18
+File: NW2020.bcs, Line: 47, Warning: Script name not found: O:Actor* - Lina
+File: NW2020.bcs, Line: 55, Warning: Script name not found: O:Object* - Lina
+File: NW2020.bcs, Line: 56, Warning: Script name not found: O:Object* - Lina
+File: NW2020.bcs, Line: 60, Warning: Script name not found: O:Object* - Lina
+File: NW2020.bcs, Line: 71, Warning: Resource not found: S:NewObject*[CRE] - Daelan12
+File: NW2020.bcs, Line: 72, Warning: Script name not found: O:Actor* - Daelan
+File: NW2020.bcs, Line: 84, Warning: Resource not found: S:NewObject*[CRE] - Daelan14
+File: NW2020.bcs, Line: 85, Warning: Script name not found: O:Actor* - Daelan
+File: NW2020.bcs, Line: 97, Warning: Resource not found: S:NewObject*[CRE] - Daelan16
+File: NW2020.bcs, Line: 98, Warning: Script name not found: O:Actor* - Daelan
+File: NW2020.bcs, Line: 109, Warning: Resource not found: S:NewObject*[CRE] - Daelan18
+File: NW2020.bcs, Line: 110, Warning: Script name not found: O:Actor* - Daelan
+File: NW2020.bcs, Line: 118, Warning: Script name not found: O:Object* - Daelan
+File: NW2020.bcs, Line: 119, Warning: Script name not found: O:Object* - Daelan
+File: NW2020.bcs, Line: 123, Warning: Script name not found: O:Object* - Daelan
+File: NW2020.bcs, Line: 134, Warning: Resource not found: S:NewObject*[CRE] - Boddin12
+File: NW2020.bcs, Line: 135, Warning: Script name not found: O:Actor* - Boddinok
+File: NW2020.bcs, Line: 147, Warning: Resource not found: S:NewObject*[CRE] - Boddin14
+File: NW2020.bcs, Line: 148, Warning: Script name not found: O:Actor* - Boddinok
+File: NW2020.bcs, Line: 160, Warning: Resource not found: S:NewObject*[CRE] - Boddin15
+File: NW2020.bcs, Line: 161, Warning: Script name not found: O:Actor* - Boddinok
+File: NW2020.bcs, Line: 172, Warning: Resource not found: S:NewObject*[CRE] - Boddin16
+File: NW2020.bcs, Line: 173, Warning: Script name not found: O:Actor* - Boddinok
+File: NW2020.bcs, Line: 181, Warning: Script name not found: O:Object* - Boddinok
+File: NW2020.bcs, Line: 182, Warning: Script name not found: O:Object* - Boddinok
+File: NW2020.bcs, Line: 186, Warning: Script name not found: O:Object* - Boddinok
+File: NW2020.bcs, Line: 197, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN12
+File: NW2020.bcs, Line: 198, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW2020.bcs, Line: 210, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN14
+File: NW2020.bcs, Line: 211, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW2020.bcs, Line: 223, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN16
+File: NW2020.bcs, Line: 224, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW2020.bcs, Line: 235, Warning: Resource not found: S:NewObject*[CRE] - GRIMGN16
+File: NW2020.bcs, Line: 236, Warning: Script name not found: O:Actor* - Grimgnaw
+File: NW2020.bcs, Line: 244, Warning: Script name not found: O:Object* - Grimgnaw
+File: NW2020.bcs, Line: 245, Warning: Script name not found: O:Object* - Grimgnaw
+File: NW2020.bcs, Line: 249, Warning: Script name not found: O:Object* - Grimgnaw
+File: NW2020.bcs, Line: 260, Warning: Resource not found: S:NewObject*[CRE] - Sharwy12
+File: NW2020.bcs, Line: 261, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW2020.bcs, Line: 273, Warning: Resource not found: S:NewObject*[CRE] - Sharwy14
+File: NW2020.bcs, Line: 274, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW2020.bcs, Line: 286, Warning: Resource not found: S:NewObject*[CRE] - Sharwy16
+File: NW2020.bcs, Line: 287, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW2020.bcs, Line: 298, Warning: Resource not found: S:NewObject*[CRE] - Sharwy18
+File: NW2020.bcs, Line: 299, Warning: Script name not found: O:Actor* - Sharwyn
+File: NW2020.bcs, Line: 307, Warning: Script name not found: O:Object* - Sharwyn
+File: NW2020.bcs, Line: 308, Warning: Script name not found: O:Object* - Sharwyn
+File: NW2020.bcs, Line: 312, Warning: Script name not found: O:Object* - Sharwyn
+File: NW2020.bcs, Line: 323, Warning: Resource not found: S:NewObject*[CRE] - Tomi12
+File: NW2020.bcs, Line: 324, Warning: Script name not found: O:Actor* - Tomi
+File: NW2020.bcs, Line: 336, Warning: Resource not found: S:NewObject*[CRE] - Tomi14
+File: NW2020.bcs, Line: 337, Warning: Script name not found: O:Actor* - Tomi
+File: NW2020.bcs, Line: 349, Warning: Resource not found: S:NewObject*[CRE] - Tomi16
+File: NW2020.bcs, Line: 350, Warning: Script name not found: O:Actor* - Tomi
+File: NW2020.bcs, Line: 361, Warning: Resource not found: S:NewObject*[CRE] - Tomi18
+File: NW2020.bcs, Line: 362, Warning: Script name not found: O:Actor* - Tomi
+File: NW2020.bcs, Line: 370, Warning: Script name not found: O:Object* - Tomi
+File: NW2020.bcs, Line: 371, Warning: Script name not found: O:Object* - Tomi
+File: NW2020.bcs, Line: 375, Warning: Script name not found: O:Object* - Tomi
+File: NW2028.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - UrthW
+File: NW2100.bcs, Line: 12, Warning: Script name not found: S:Name* - Neva
+File: NW2100.bcs, Line: 17, Warning: Resource not found: S:NewObject*[CRE] - Wardok
+File: NW2200.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - LUSKANST
+File: NW2200.bcs, Line: 24, Warning: Script name not found: S:Name* - Neva
+File: NW2200.bcs, Line: 25, Warning: Script name not found: O:Object* - Jahel
+File: NW2200.bcs, Line: 28, Warning: Script name not found: O:Actor* - Jahel
+File: NW2200.bcs, Line: 34, Warning: Script name not found: S:Name* - Neva
+File: NW2200.bcs, Line: 35, Warning: Script name not found: O:Object* - Taran
+File: NW2200.bcs, Line: 38, Warning: Script name not found: O:Actor* - Taran
+File: NW2200.bcs, Line: 48, Warning: Resource not found: S:NewObject*[CRE] - Jahel
+File: NW2200.bcs, Line: 58, Warning: Resource not found: S:NewObject*[CRE] - Taran
+File: NW2200.bcs, Line: 66, Warning: Resource not found: S:Sound*[WAV] - IronG
+File: NW2202.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - Zamitra2
+File: NW2202.bcs, Line: 24, Warning: Resource not found: S:NewObject*[CRE] - Zor
+File: NW2203.bcs, Line: 7, Warning: Resource not found: S:ResRef*[ITM] - NWLETT1
+File: NW2203.bcs, Line: 17, Warning: Resource not found: S:NewObject*[CRE] - KarathiW
+File: NW2203.bcs, Line: 31, Warning: Resource not found: S:Item*[ITM] - JKarathi
+File: NW2203.bcs, Line: 32, Warning: Script name not found: S:Name* - Karathis
+File: NW2301.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - BrunW
+File: NW2302.bcs, Line: 2, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: NW2302.bcs, Line: 4, Warning: Script name not found: O:Object* - 2302WT
+File: NW2302.bcs, Line: 8, Warning: Resource not found: S:Item*[ITM] - Marker
+File: NW2302.bcs, Line: 9, Warning: Script name not found: O:Actor* - 2302WT
+File: NW2302.bcs, Line: 13, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: NW2302.bcs, Line: 15, Warning: Script name not found: O:Object* - 2302WT
+File: NW2302.bcs, Line: 19, Warning: Resource not found: S:Item*[ITM] - Marker
+File: NW2302.bcs, Line: 20, Warning: Script name not found: O:Actor* - 2302WT
+File: NW2302.bcs, Line: 24, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: NW2302.bcs, Line: 26, Warning: Script name not found: O:Object* - 2302WT
+File: NW2302.bcs, Line: 30, Warning: Resource not found: S:Item*[ITM] - Marker
+File: NW2302.bcs, Line: 31, Warning: Script name not found: O:Actor* - 2302WT
+File: NW2302.bcs, Line: 35, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: NW2302.bcs, Line: 37, Warning: Script name not found: O:Object* - 2302WT
+File: NW2302.bcs, Line: 41, Warning: Resource not found: S:Item*[ITM] - Marker
+File: NW2302.bcs, Line: 42, Warning: Script name not found: O:Actor* - 2302WT
+File: NW2302.bcs, Line: 46, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: NW2302.bcs, Line: 48, Warning: Script name not found: O:Object* - 2302WT
+File: NW2302.bcs, Line: 52, Warning: Resource not found: S:Item*[ITM] - Marker
+File: NW2302.bcs, Line: 53, Warning: Script name not found: O:Actor* - 2302WT
+File: NW2302.bcs, Line: 57, Warning: Resource not found: S:ResRef*[ITM] - Marker
+File: NW2302.bcs, Line: 59, Warning: Script name not found: O:Object* - 2302WT
+File: NW2302.bcs, Line: 63, Warning: Resource not found: S:Item*[ITM] - Marker
+File: NW2302.bcs, Line: 64, Warning: Script name not found: O:Actor* - 2302WT
+File: NW2306.bcs, Line: 20, Warning: Resource not found: S:CutScene*[BCS] - ToNW2300
+File: NW2400.bcs, Line: 6, Warning: Script name not found: O:Actor* - Stirge
+File: NW2400.bcs, Line: 27, Warning: Resource not found: S:NewObject*[CRE] - Stirge
+File: NW2400.bcs, Line: 40, Warning: Resource not found: S:NewObject*[CRE] - NWCULT02
+File: NW2400.bcs, Line: 50, Warning: Resource not found: S:NewObject*[CRE] - NEVA
+File: NW2400.bcs, Line: 59, Warning: Script name not found: S:Name* - Neva
+File: NW2400.bcs, Line: 78, Warning: Script name not found: S:Name* - Stirge
+File: NW2500.bcs, Line: 44, Warning: Resource not found: S:NewObject*[CRE] - MISTNW3a
+File: NW2500.bcs, Line: 45, Warning: Resource not found: S:NewObject*[CRE] - MISTNW4a
+File: NW2500.bcs, Line: 50, Warning: Script name not found: O:Object* - 2510RUNE
+File: NW2500.bcs, Line: 54, Warning: Script name not found: O:Actor* - 2510RUNE
+File: NW2510.bcs, Line: 20, Warning: Resource not found: S:NewObject*[CRE] - MISTNW3a
+File: NW2510.bcs, Line: 21, Warning: Resource not found: S:NewObject*[CRE] - MISTNW4a
+File: NW2510.bcs, Line: 26, Warning: Script name not found: O:Object* - 2510RUNE
+File: NW2510.bcs, Line: 30, Warning: Script name not found: O:Actor* - 2510RUNE
+File: NW2600.bcs, Line: 88, Warning: Resource not found: S:Item*[ITM] - QUINTT
+File: NW2600.bcs, Line: 89, Warning: Resource not found: S:ResRef*[ITM] - QUINTT
+File: NW2600.bcs, Line: 90, Warning: Resource not found: S:Item*[ITM] - KARLATT
+File: NW2600.bcs, Line: 91, Warning: Resource not found: S:ResRef*[ITM] - KARLATT
+File: NW2600.bcs, Line: 92, Warning: Resource not found: S:Item*[ITM] - BELIALT
+File: NW2600.bcs, Line: 93, Warning: Resource not found: S:ResRef*[ITM] - BELIALT
+File: NW2601.bcs, Line: 125, Warning: Resource not found: S:Item*[ITM] - QUINTT
+File: NW2601.bcs, Line: 126, Warning: Resource not found: S:ResRef*[ITM] - QUINTT
+File: NW2601.bcs, Line: 127, Warning: Resource not found: S:Item*[ITM] - KARLATT
+File: NW2601.bcs, Line: 128, Warning: Resource not found: S:ResRef*[ITM] - KARLATT
+File: NW2601.bcs, Line: 129, Warning: Resource not found: S:Item*[ITM] - BELIALT
+File: NW2601.bcs, Line: 130, Warning: Resource not found: S:ResRef*[ITM] - BELIALT
+File: NW2607.bcs, Line: 48, Warning: Resource not found: S:Item*[ITM] - QUINTT
+File: NW2607.bcs, Line: 49, Warning: Resource not found: S:ResRef*[ITM] - QUINTT
+File: NW2607.bcs, Line: 50, Warning: Resource not found: S:Item*[ITM] - KARLATT
+File: NW2607.bcs, Line: 51, Warning: Resource not found: S:ResRef*[ITM] - KARLATT
+File: NW2607.bcs, Line: 52, Warning: Resource not found: S:Item*[ITM] - BELIALT
+File: NW2607.bcs, Line: 53, Warning: Resource not found: S:ResRef*[ITM] - BELIALT
+File: NW2609.bcs, Line: 29, Warning: Resource not found: S:NewObject*[CRE] - BELIAL
+File: NW2609.bcs, Line: 37, Warning: Script name not found: O:Object* - BOOK2609
+File: NW2609.bcs, Line: 41, Warning: Script name not found: O:Actor* - BOOK2609
+File: NW2700.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - GethW
+File: NW2703.bcs, Line: 16, Warning: Resource not found: S:NewObject*[CRE] - Janis2
+File: NW2707.bcs, Line: 4, Warning: Script name not found: O:Object* - Boddinok
+File: NW2707.bcs, Line: 9, Warning: Resource not found: S:ResRef*[ITM] - Nwmisc39
+File: NW2800.bcs, Line: 48, Warning: Resource not found: S:NewObject*[CRE] - Wyvernb
+File: NW2900.bcs, Line: 8, Warning: Resource not found: S:NewObject*[CRE] - SQUIREL2
+File: NW2900.bcs, Line: 9, Warning: Resource not found: S:NewObject*[CRE] - SQUIREL2
+File: NW2900.bcs, Line: 10, Warning: Resource not found: S:NewObject*[CRE] - SQUIREL2
+File: NW2900.bcs, Line: 11, Warning: Resource not found: S:NewObject*[CRE] - SQUIREL2
+File: NW2900.bcs, Line: 12, Warning: Resource not found: S:NewObject*[CRE] - SQUIREL2
+File: NW2901.bcs, Line: 4, Warning: Script name not found: O:Object* - Sharwyn
+File: NW2901.bcs, Line: 9, Warning: Resource not found: S:ResRef*[ITM] - Nwmisc45
+File: NW2E36.bcs, Line: 2, Warning: Script name not found: S:Name* - Voleron
+File: NW2E36TR.bcs, Line: 9, Warning: Resource not found: S:CutScene*[BCS] - Volsp
+File: NW2E55.bcs, Line: 36, Warning: Resource not found: S:NewObject*[CRE] - Islund4
+File: NW2E55.bcs, Line: 37, Warning: Resource not found: S:NewObject*[CRE] - Islund5
+File: NW2E55.bcs, Line: 38, Warning: Resource not found: S:NewObject*[CRE] - Islund4
+File: NW2E55.bcs, Line: 39, Warning: Resource not found: S:NewObject*[CRE] - Islund5
+File: NW2E57.bcs, Line: 7, Warning: Resource not found: S:NewObject*[CRE] - Nwnanny
+File: NW2E61.bcs, Line: 28, Warning: Resource not found: S:ResRef*[ITM] - Wandnw5
+File: NW2E61.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - DW#0W519
+File: NW2E61.bcs, Line: 48, Warning: Resource not found: S:RES*[SPL] - DW#0W519
+File: NW2E65.bcs, Line: 7, Warning: Resource not found: S:CutScene*[BCS] - Morag1
+File: NW3001.bcs, Line: 8, Warning: Resource not found: S:CutScene*[BCS] - ToNever2
+File: NW3002.bcs, Line: 23, Warning: Resource not found: S:NewObject*[CRE] - IGLAND
+File: NW3002.bcs, Line: 32, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 43, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 52, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 55, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 63, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 67, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 75, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 79, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 94, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3002.bcs, Line: 120, Warning: Script name not found: O:Actor* - IGLAND
+File: NW3005.bcs, Line: 215, Warning: Resource not found: S:ResRef*[ITM] - CHANNW1
+File: NW3005.bcs, Line: 230, Warning: Resource not found: S:ResRef*[ITM] - LEATNW1
+File: NW3005.bcs, Line: 245, Warning: Resource not found: S:ResRef*[ITM] - AX1HNW1
+File: NW3005.bcs, Line: 260, Warning: Resource not found: S:ResRef*[ITM] - HALBNW1
+File: NW3005.bcs, Line: 275, Warning: Resource not found: S:ResRef*[ITM] - AX1HNW2
+File: NW3005.bcs, Line: 290, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW1
+File: NW3005.bcs, Line: 305, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW2
+File: NW3005.bcs, Line: 320, Warning: Resource not found: S:ResRef*[ITM] - HAMMNW1
+File: NW3005.bcs, Line: 335, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW3
+File: NW3005.bcs, Line: 350, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW4
+File: NW3005.bcs, Line: 365, Warning: Resource not found: S:ResRef*[ITM] - BLUNNW5
+File: NW3005.bcs, Line: 380, Warning: Resource not found: S:ResRef*[ITM] - HAMMNW2
+File: NW3005.bcs, Line: 410, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW1
+File: NW3005.bcs, Line: 425, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW2
+File: NW3005.bcs, Line: 440, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW3
+File: NW3005.bcs, Line: 455, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW4
+File: NW3005.bcs, Line: 470, Warning: Resource not found: S:ResRef*[ITM] - SW1HNW5
+File: NW3005.bcs, Line: 485, Warning: Resource not found: S:ResRef*[ITM] - HALBNW2
+File: NW3005.bcs, Line: 500, Warning: Resource not found: S:ResRef*[ITM] - SPERNW1
+File: NW3007A.bcs, Line: 10, Warning: Resource not found: S:ResRef*[ITM] - Nwstaf03
+File: NW3007A.bcs, Line: 33, Warning: Resource not found: S:ResRef*[ITM] - Nwboot1
+File: NW3007A.bcs, Line: 44, Warning: Resource not found: S:ResRef*[ITM] - Nwstaf04
+File: NW3007A.bcs, Line: 56, Warning: Resource not found: S:ResRef*[ITM] - NWRING7
+File: NW3007A.bcs, Line: 68, Warning: Resource not found: S:ResRef*[ITM] - NWROBE04
+File: NW3007A.bcs, Line: 81, Warning: Resource not found: S:ResRef*[ITM] - NWAMUL03
+File: NW3007A.bcs, Line: 125, Warning: Resource not found: S:ResRef*[ITM] - NWAMUL4
+File: NW3007A.bcs, Line: 136, Warning: Resource not found: S:ResRef*[ITM] - NWRING8
+File: NW3100.bcs, Line: 63, Warning: Resource not found: S:NewObject*[CRE] - Moosewa4
+File: NW3100.bcs, Line: 64, Warning: Resource not found: S:NewObject*[CRE] - Moosewa4
+File: NW3100.bcs, Line: 65, Warning: Resource not found: S:NewObject*[CRE] - Moosewa4
+File: NW3100.bcs, Line: 66, Warning: Resource not found: S:NewObject*[CRE] - Moosewa4
+File: NW3100.bcs, Line: 70, Warning: Script name not found: S:Name* - Moosewa4
+File: NW3303.bcs, Line: 25, Warning: Resource not found: S:NewObject*[CRE] - NWMEPAR1
+File: NW3303.bcs, Line: 45, Warning: Resource not found: S:NewObject*[CRE] - HAEDRALI
+File: NW3303.bcs, Line: 306, Warning: Script name not found: O:Target* - NWMEPAR1
+File: NW3303.bcs, Line: 308, Warning: Script name not found: O:Actor* - NWMEPAR1
+File: NW3303.bcs, Line: 333, Warning: Resource not found: S:Object*[VEF:VVC:BAM] - ICFIRSDP
+File: NW3303.bcs, Line: 346, Warning: Resource not found: S:Object*[VEF:VVC:BAM] - ICFIRSDG
+File: NW3304.bcs, Line: 9, Warning: Resource not found: S:CutScene*[BCS] - To3306
+File: NW3306.bcs, Line: 21, Warning: Resource not found: S:CutScene*[BCS] - To3305
+File: NW3406.bcs, Line: 10, Warning: Resource not found: S:NewObject*[CRE] - NWWATER
+File: NW3406.bcs, Line: 12, Warning: Script name not found: O:Actor* - NWWATER
+File: NW3406.bcs, Line: 20, Warning: Script name not found: O:Actor* - Nwwater
+File: NW3406T2.bcs, Line: 10, Warning: Resource not found: S:ResRef*[ITM] - Nwstaf03
+File: NW3406T2.bcs, Line: 33, Warning: Resource not found: S:ResRef*[ITM] - Nwboot1
+File: NW3406T2.bcs, Line: 44, Warning: Resource not found: S:ResRef*[ITM] - Nwstaf04
+File: NW3406T2.bcs, Line: 56, Warning: Resource not found: S:ResRef*[ITM] - NWRING7
+File: NW3406T2.bcs, Line: 68, Warning: Resource not found: S:ResRef*[ITM] - NWROBE04
+File: NW3406T2.bcs, Line: 81, Warning: Resource not found: S:ResRef*[ITM] - NWAMUL03
+File: NW3406T2.bcs, Line: 135, Warning: Resource not found: S:ResRef*[ITM] - NWAMUL4
+File: NW3406T2.bcs, Line: 146, Warning: Resource not found: S:ResRef*[ITM] - NWRING8
+File: NW3408.bcs, Line: 26, Warning: Resource not found: S:NewObject*[CRE] - HAEDRALI
+File: NW3502.bcs, Line: 20, Warning: Resource not found: S:ResRef*[ITM] - SphereE2
+File: NW3502T.bcs, Line: 4, Warning: Resource not found: S:ResRef*[ITM] - SphereE2
+File: NW3502T.bcs, Line: 17, Warning: Resource not found: S:Give*[ITM] - SphereE2
+File: NW3502T.bcs, Line: 22, Warning: Resource not found: S:ResRef*[ITM] - SphereE2
+File: NW3504.bcs, Line: 6, Warning: Resource not found: S:ResRef*[ITM] - Nwmisc40
+File: NW3504.bcs, Line: 18, Warning: Resource not found: S:NewObject*[CRE] - HAEDRALI
+File: NW3509.bcs, Line: 6, Warning: Resource not found: S:ResRef*[ITM] - Nwmisc40
+File: NW4000.bcs, Line: 6, Warning: Resource not found: S:Sound*[WAV] - IronG
+File: NW4000.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - IronG
+File: NW4011.bcs, Line: 8, Warning: Resource not found: S:CutScene*[BCS] - NWN_BG
+File: NW4101.bcs, Line: 7, Warning: Resource not found: S:CutScene*[BCS] - Morag3
+File: NW4102.bcs, Line: 9, Warning: Resource not found: S:ResRef*[ITM] - NWMISC88
+File: NW4102T2.bcs, Line: 4, Warning: Resource not found: S:Item*[ITM] - NWMISC88
+File: NW4102T2.bcs, Line: 28, Warning: Resource not found: S:Item*[ITM] - NWMISC88
+File: NW4103.bcs, Line: 25, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 26, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 27, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 28, Warning: Resource not found: S:NewObject*[CRE] - NWLIZMA2
+File: NW4103.bcs, Line: 29, Warning: Resource not found: S:NewObject*[CRE] - LIZARNW6
+File: NW4103.bcs, Line: 30, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 31, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 32, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 44, Warning: Resource not found: S:RES*[SPL] - NWSIMB1
+File: NW4103.bcs, Line: 56, Warning: Resource not found: S:RES*[SPL] - NWSIMB2
+File: NW4103.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - NWSIMB3
+File: NW4103.bcs, Line: 80, Warning: Resource not found: S:RES*[SPL] - NWSIMB4
+File: NW4103.bcs, Line: 92, Warning: Resource not found: S:RES*[SPL] - NWSIMB5
+File: NW4103.bcs, Line: 104, Warning: Resource not found: S:RES*[SPL] - NWSIMB6
+File: NW4103.bcs, Line: 116, Warning: Resource not found: S:RES*[SPL] - NWSIMB7
+File: NW4103.bcs, Line: 167, Warning: Script name not found: S:Name* - GuardMor
+File: NW4103.bcs, Line: 175, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 176, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 177, Warning: Resource not found: S:NewObject*[CRE] - nwlizfi2
+File: NW4103.bcs, Line: 178, Warning: Resource not found: S:NewObject*[CRE] - LIZARNW6
+File: NWACTOR.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: NWAURIL1.bcs, Line: 6, Warning: Resource not found: S:ResRef*[ITM] - NWMISC69
+File: NWDOOMS1.bcs, Line: 16, Warning: Resource not found: S:Sound*[WAV] - BEDWIN43
+File: NWDRACO1.bcs, Line: 2, Warning: Resource not found: S:Item*[ITM] - DRACAMU3
+File: NWDRACO1.bcs, Line: 9, Warning: Resource not found: S:Sound*[WAV] - DRACO151
+File: NWDRACO1.bcs, Line: 13, Warning: Resource not found: S:Item*[ITM] - DRACAMU3
+File: NWDRACO1.bcs, Line: 21, Warning: Resource not found: S:Sound*[WAV] - DRACO150
+File: NWDRACO1.bcs, Line: 53, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 54, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 55, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 56, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 57, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 58, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 66, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 67, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 69, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 70, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWDRACO1.bcs, Line: 71, Warning: Resource not found: S:RES*[SPL] - DRGNW1
+File: NWGONG1.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - Gongnw01
+File: NWGONG1.bcs, Line: 25, Warning: Resource not found: S:Sound*[WAV] - Gongnw01
+File: NWGONG2.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - Gongnw03
+File: NWGONG2.bcs, Line: 25, Warning: Resource not found: S:Sound*[WAV] - Gongnw03
+File: NWGONG3.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - Gongnw02
+File: NWGONG3.bcs, Line: 25, Warning: Resource not found: S:Sound*[WAV] - Gongnw02
+File: NWGONG4.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - Gongnw04
+File: NWGONG4.bcs, Line: 25, Warning: Resource not found: S:Sound*[WAV] - Gongnw04
+File: NWMAG16A.bcs, Line: 106, Warning: Script name not found: O:Actor* - BPTARGET
+File: NWMAG16A.bcs, Line: 114, Warning: Resource not found: S:RES*[SPL] - BPTARGET
+File: NWMAG16A.bcs, Line: 424, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: NWMAG16A.bcs, Line: 437, Warning: Resource not found: S:ScriptFile*[BCS] - BPMISLED
+File: NWMAG16A.bcs, Line: 438, Warning: Resource not found: S:RES*[SPL] - SPMISLED
+File: NWMAGE1.bcs, Line: 65, Warning: Resource not found: S:RES*[SPL] - wwundead
+File: NWMG18A.bcs, Line: 65, Warning: Resource not found: S:RES*[SPL] - wwundead
+File: NWPLAT1.bcs, Line: 6, Warning: Resource not found: S:ScriptFile*[BCS] - NWPLAT2
+File: NWWTSIGT.bcs, Line: 27, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: NWWTSIGT.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: NWWTSIGT.bcs, Line: 68, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: NWWTSIGT.bcs, Line: 305, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: NWWTSIGT.bcs, Line: 4049, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: NYMPHNW1.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: NYMPHNW1.bcs, Line: 37, Warning: Resource not found: S:ResRef*[ITM] - RZDISPCH
+File: NYMPHNW1.bcs, Line: 40, Warning: Resource not found: S:RES*[SPL] - RZDISPCH
+File: NYMPHNW1.bcs, Line: 553, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 559, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 567, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2329, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2353, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2551, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2573, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2628, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2651, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2674, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2695, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2747, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2769, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2792, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2815, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2836, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW1.bcs, Line: 2857, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: NYMPHNW2.bcs, Line: 60, Warning: Resource not found: S:Sound*[WAV] - ARWYL050
+File: PATROL01.bcs, Line: 36, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PATROL02.bcs, Line: 36, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PATROL03.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PATROL04.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PENS.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PETE.bcs, Line: 72, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PLWMNRES.bcs, Line: 43, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PPSHOUT.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PPSHOUT2.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: PPSHOUT3.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: RIMARDO.bcs, Line: 101, Warning: Resource not found: S:RES*[SPL] - SPCL665T
+File: RR#GHAST.bcs, Line: 223, Warning: Resource not found: S:ResRef*[ITM] - RR#DNABA
+File: RR#GHAST.bcs, Line: 238, Warning: Resource not found: S:ResRef*[ITM] - RR#DNABA
+File: RR#GHAST.bcs, Line: 252, Warning: Resource not found: S:ResRef*[ITM] - RR#DNABA
+File: RR#PICKP.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: RUNETR.bcs, Line: 22, Warning: Resource not found: S:NewObject*[CRE] - 2510RUNE
+File: RUNETR2.bcs, Line: 22, Warning: Resource not found: S:NewObject*[CRE] - 2510RUNE
+File: SHALDRI1.bcs, Line: 2, Warning: Script name not found: S:Name* - Zor
+File: SHALDRI1.bcs, Line: 3, Warning: Script name not found: S:Name* - Stirge
+File: SHALDRI1.bcs, Line: 4, Warning: Script name not found: S:Name* - WyvernB
+File: SHOUTHLM.bcs, Line: 38, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: SHOUTNW1.bcs, Line: 8, Warning: Resource not found: S:RES*[SPL] - SPWI2E0
+File: SHOUTNW2.bcs, Line: 8, Warning: Resource not found: S:RES*[SPL] - SPWI2E0D
+File: SILVERBK.bcs, Line: 23, Warning: Resource not found: S:RES*[SPL] - SILVERBC
+File: SLAAD1.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Slaad1
+File: SLAAD1.bcs, Line: 18, Warning: Resource not found: S:RES*[SPL] - Slaad1
+File: SLAAD2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Slaad2
+File: SLAAD2.bcs, Line: 18, Warning: Resource not found: S:RES*[SPL] - Slaad2
+File: SLAAD3.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Slaad1
+File: SLAAD3.bcs, Line: 19, Warning: Resource not found: S:RES*[SPL] - Slaad1
+File: SLAAD3.bcs, Line: 29, Warning: Resource not found: S:RES*[SPL] - SPWI913A
+File: SOLOMON.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: SPIDNW0.bcs, Line: 8, Warning: Resource not found: S:NewObject*[CRE] - NWDEMSPI
+File: SPIDNW0.bcs, Line: 9, Warning: Resource not found: S:Sound*[WAV] - CENTL01
+File: SPIDNW0.bcs, Line: 27, Warning: Resource not found: S:NewObject*[CRE] - NWDEMSPI
+File: SPIDNW0.bcs, Line: 29, Warning: Resource not found: S:Sound*[WAV] - CENTL02
+File: SPIDNW3.bcs, Line: 8, Warning: Resource not found: S:ResRef*[CRE] - NWDEMSPI
+File: SPIDNW3.bcs, Line: 27, Warning: Resource not found: S:ResRef*[CRE] - NWDEMSPI
+File: STEALCAS.bcs, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - steal3
+File: THIEFRG2.bcs, Line: 340, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: TONW1110.bcs, Line: 19, Warning: Resource not found: S:NewObject*[CRE] - 1110DOOR
+File: TONW1110.bcs, Line: 20, Warning: Script name not found: O:Actor* - 1110DOOR
+File: TONW1110.bcs, Line: 31, Warning: Resource not found: S:NewObject*[CRE] - 1110DOOR
+File: TONW1110.bcs, Line: 32, Warning: Script name not found: O:Actor* - 1110DOOR
+File: TONW1110.bcs, Line: 43, Warning: Resource not found: S:NewObject*[CRE] - 1110DOOR
+File: TONW1110.bcs, Line: 44, Warning: Script name not found: O:Actor* - 1110DOOR
+File: TONW1110.bcs, Line: 55, Warning: Resource not found: S:NewObject*[CRE] - 1110DOOR
+File: TONW1110.bcs, Line: 56, Warning: Script name not found: O:Actor* - 1110DOOR
+File: TONW1110.bcs, Line: 67, Warning: Resource not found: S:NewObject*[CRE] - 1110DOOR
+File: TONW1110.bcs, Line: 68, Warning: Script name not found: O:Actor* - 1110DOOR
+File: TONW1110.bcs, Line: 79, Warning: Resource not found: S:NewObject*[CRE] - 1110DOOR
+File: TONW1110.bcs, Line: 80, Warning: Script name not found: O:Actor* - 1110DOOR
+File: TORAS.bcs, Line: 14, Warning: Resource not found: S:RES*[SPL] - SPCL665T
+File: TORAS.bcs, Line: 56, Warning: Resource not found: S:RES*[SPL] - fl#ganpc
+File: TORAS.bcs, Line: 94, Warning: Resource not found: S:RES*[SPL] - Toras1
+File: TORAS.bcs, Line: 124, Warning: Resource not found: S:RES*[SPL] - Toras2
+File: TROLCA01.bcs, Line: 13, Warning: Resource not found: S:ResRef*[CRE] - TROLCA02
+File: TROLLNW1.bcs, Line: 24, Warning: Resource not found: S:ResRef*[CRE] - trollnw2
+File: VA#LIZRD.bcs, Line: 15, Warning: Resource not found: S:RES*[SPL] - RZDISPCH
+File: VA#LIZRD.bcs, Line: 25, Warning: Resource not found: S:ResRef*[ITM] - RZDISPCH
+File: VA#LIZRD.bcs, Line: 28, Warning: Resource not found: S:RES*[SPL] - RZDISPCH
+File: VA#LIZRD.bcs, Line: 678, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 684, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 692, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 1169, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3431, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3507, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3648, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3732, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3753, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3799, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3820, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3841, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3862, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VA#LIZRD.bcs, Line: 3885, Warning: Resource not found: S:ResRef*[ITM] - RZSEEINV
+File: VAATH.bcs, Line: 62, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: VAATH.bcs, Line: 73, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: VAATH.bcs, Line: 103, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: VAATH.bcs, Line: 395, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: VAATH.bcs, Line: 4140, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: VENGAUL.bcs, Line: 35, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: WANEV.bcs, Line: 37, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: WANEV.bcs, Line: 141, Warning: Resource not found: S:RES*[SPL] - SPCL665T
+File: WARDNW1.bcs, Line: 148, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WARDNW1.bcs, Line: 274, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WARDNW1.bcs, Line: 400, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WARDNW1.bcs, Line: 526, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WARDNW1.bcs, Line: 652, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WARDNW1.bcs, Line: 778, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WARDNW1.bcs, Line: 789, Warning: Resource not found: S:ScriptFile*[BCS] - gMinionM
+File: WOLFNW2.bcs, Line: 147, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WOLFNW2.bcs, Line: 273, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WOLFNW2.bcs, Line: 399, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WOLFNW2.bcs, Line: 525, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WOLFNW2.bcs, Line: 651, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WOLFNW2.bcs, Line: 777, Warning: Resource not found: S:ResRef*[ITM] - dw#nohlp
+File: WSASIGHT.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: WTACULT.bcs, Line: 40, Warning: Resource not found: S:ResRef*[ITM] - CultMo4
+File: WTACULT.bcs, Line: 44, Warning: Resource not found: S:Object*[ITM] - CultMo4
+File: WTACULT.bcs, Line: 52, Warning: Resource not found: S:ResRef*[ITM] - CultMo5
+File: WTACULT.bcs, Line: 56, Warning: Resource not found: S:Object*[ITM] - CultMo5
+File: WTACULT.bcs, Line: 64, Warning: Resource not found: S:ResRef*[ITM] - CultMo6
+File: WTACULT.bcs, Line: 68, Warning: Resource not found: S:Object*[ITM] - CultMo6
+File: WTACULT.bcs, Line: 76, Warning: Resource not found: S:ResRef*[ITM] - CultMo7
+File: WTACULT.bcs, Line: 80, Warning: Resource not found: S:Object*[ITM] - CultMo7
+File: WTACULT.bcs, Line: 88, Warning: Resource not found: S:ResRef*[ITM] - CultMo8
+File: WTACULT.bcs, Line: 92, Warning: Resource not found: S:Object*[ITM] - CultMo8
+File: WTACULT.bcs, Line: 100, Warning: Resource not found: S:ResRef*[ITM] - CultMo9
+File: WTACULT.bcs, Line: 104, Warning: Resource not found: S:Object*[ITM] - CultMo9
+File: WTACULT.bcs, Line: 112, Warning: Resource not found: S:ResRef*[ITM] - CultMo10
+File: WTACULT.bcs, Line: 116, Warning: Resource not found: S:Object*[ITM] - CultMo10
+File: WTACULT.bcs, Line: 124, Warning: Resource not found: S:ResRef*[ITM] - CultMo11
+File: WTACULT.bcs, Line: 128, Warning: Resource not found: S:Object*[ITM] - CultMo11
+File: WTACULT.bcs, Line: 188, Warning: Resource not found: S:ResRef*[ITM] - CultMo4
+File: WTACULT.bcs, Line: 192, Warning: Resource not found: S:Object*[ITM] - CultMo4
+File: WTACULT.bcs, Line: 201, Warning: Resource not found: S:ResRef*[ITM] - CultMo5
+File: WTACULT.bcs, Line: 205, Warning: Resource not found: S:Object*[ITM] - CultMo5
+File: WTACULT.bcs, Line: 214, Warning: Resource not found: S:ResRef*[ITM] - CultMo6
+File: WTACULT.bcs, Line: 218, Warning: Resource not found: S:Object*[ITM] - CultMo6
+File: WTACULT.bcs, Line: 227, Warning: Resource not found: S:ResRef*[ITM] - CultMo7
+File: WTACULT.bcs, Line: 231, Warning: Resource not found: S:Object*[ITM] - CultMo7
+File: WTACULT.bcs, Line: 240, Warning: Resource not found: S:ResRef*[ITM] - CultMo8
+File: WTACULT.bcs, Line: 244, Warning: Resource not found: S:Object*[ITM] - CultMo8
+File: WTACULT.bcs, Line: 253, Warning: Resource not found: S:ResRef*[ITM] - CultMo9
+File: WTACULT.bcs, Line: 257, Warning: Resource not found: S:Object*[ITM] - CultMo9
+File: WTACULT.bcs, Line: 266, Warning: Resource not found: S:ResRef*[ITM] - CultMo10
+File: WTACULT.bcs, Line: 270, Warning: Resource not found: S:Object*[ITM] - CultMo10
+File: WTACULT.bcs, Line: 279, Warning: Resource not found: S:ResRef*[ITM] - CultMo11
+File: WTACULT.bcs, Line: 283, Warning: Resource not found: S:Object*[ITM] - CultMo11
+File: WTACULT.bcs, Line: 344, Warning: Resource not found: S:ResRef*[ITM] - CultMo4
+File: WTACULT.bcs, Line: 348, Warning: Resource not found: S:Object*[ITM] - CultMo4
+File: WTACULT.bcs, Line: 357, Warning: Resource not found: S:ResRef*[ITM] - CultMo5
+File: WTACULT.bcs, Line: 361, Warning: Resource not found: S:Object*[ITM] - CultMo5
+File: WTACULT.bcs, Line: 370, Warning: Resource not found: S:ResRef*[ITM] - CultMo6
+File: WTACULT.bcs, Line: 374, Warning: Resource not found: S:Object*[ITM] - CultMo6
+File: WTACULT.bcs, Line: 383, Warning: Resource not found: S:ResRef*[ITM] - CultMo7
+File: WTACULT.bcs, Line: 387, Warning: Resource not found: S:Object*[ITM] - CultMo7
+File: WTACULT.bcs, Line: 396, Warning: Resource not found: S:ResRef*[ITM] - CultMo8
+File: WTACULT.bcs, Line: 400, Warning: Resource not found: S:Object*[ITM] - CultMo8
+File: WTACULT.bcs, Line: 409, Warning: Resource not found: S:ResRef*[ITM] - CultMo9
+File: WTACULT.bcs, Line: 413, Warning: Resource not found: S:Object*[ITM] - CultMo9
+File: WTACULT.bcs, Line: 422, Warning: Resource not found: S:ResRef*[ITM] - CultMo10
+File: WTACULT.bcs, Line: 426, Warning: Resource not found: S:Object*[ITM] - CultMo10
+File: WTACULT.bcs, Line: 435, Warning: Resource not found: S:ResRef*[ITM] - CultMo11
+File: WTACULT.bcs, Line: 439, Warning: Resource not found: S:Object*[ITM] - CultMo11
+File: WTACULT2.bcs, Line: 40, Warning: Resource not found: S:ResRef*[ITM] - CultMo4
+File: WTACULT2.bcs, Line: 44, Warning: Resource not found: S:Object*[ITM] - CultMo4
+File: WTACULT2.bcs, Line: 52, Warning: Resource not found: S:ResRef*[ITM] - CultMo5
+File: WTACULT2.bcs, Line: 56, Warning: Resource not found: S:Object*[ITM] - CultMo5
+File: WTACULT2.bcs, Line: 64, Warning: Resource not found: S:ResRef*[ITM] - CultMo6
+File: WTACULT2.bcs, Line: 68, Warning: Resource not found: S:Object*[ITM] - CultMo6
+File: WTACULT2.bcs, Line: 76, Warning: Resource not found: S:ResRef*[ITM] - CultMo7
+File: WTACULT2.bcs, Line: 80, Warning: Resource not found: S:Object*[ITM] - CultMo7
+File: WTACULT2.bcs, Line: 88, Warning: Resource not found: S:ResRef*[ITM] - CultMo8
+File: WTACULT2.bcs, Line: 92, Warning: Resource not found: S:Object*[ITM] - CultMo8
+File: WTACULT2.bcs, Line: 100, Warning: Resource not found: S:ResRef*[ITM] - CultMo9
+File: WTACULT2.bcs, Line: 104, Warning: Resource not found: S:Object*[ITM] - CultMo9
+File: WTACULT2.bcs, Line: 112, Warning: Resource not found: S:ResRef*[ITM] - CultMo10
+File: WTACULT2.bcs, Line: 116, Warning: Resource not found: S:Object*[ITM] - CultMo10
+File: WTACULT2.bcs, Line: 124, Warning: Resource not found: S:ResRef*[ITM] - CultMo11
+File: WTACULT2.bcs, Line: 128, Warning: Resource not found: S:Object*[ITM] - CultMo11
+File: WTACULT2.bcs, Line: 188, Warning: Resource not found: S:ResRef*[ITM] - CultMo4
+File: WTACULT2.bcs, Line: 192, Warning: Resource not found: S:Object*[ITM] - CultMo4
+File: WTACULT2.bcs, Line: 201, Warning: Resource not found: S:ResRef*[ITM] - CultMo5
+File: WTACULT2.bcs, Line: 205, Warning: Resource not found: S:Object*[ITM] - CultMo5
+File: WTACULT2.bcs, Line: 214, Warning: Resource not found: S:ResRef*[ITM] - CultMo6
+File: WTACULT2.bcs, Line: 218, Warning: Resource not found: S:Object*[ITM] - CultMo6
+File: WTACULT2.bcs, Line: 227, Warning: Resource not found: S:ResRef*[ITM] - CultMo7
+File: WTACULT2.bcs, Line: 231, Warning: Resource not found: S:Object*[ITM] - CultMo7
+File: WTACULT2.bcs, Line: 240, Warning: Resource not found: S:ResRef*[ITM] - CultMo8
+File: WTACULT2.bcs, Line: 244, Warning: Resource not found: S:Object*[ITM] - CultMo8
+File: WTACULT2.bcs, Line: 253, Warning: Resource not found: S:ResRef*[ITM] - CultMo9
+File: WTACULT2.bcs, Line: 257, Warning: Resource not found: S:Object*[ITM] - CultMo9
+File: WTACULT2.bcs, Line: 266, Warning: Resource not found: S:ResRef*[ITM] - CultMo10
+File: WTACULT2.bcs, Line: 270, Warning: Resource not found: S:Object*[ITM] - CultMo10
+File: WTACULT2.bcs, Line: 279, Warning: Resource not found: S:ResRef*[ITM] - CultMo11
+File: WTACULT2.bcs, Line: 283, Warning: Resource not found: S:Object*[ITM] - CultMo11
+File: WTACULT2.bcs, Line: 344, Warning: Resource not found: S:ResRef*[ITM] - CultMo4
+File: WTACULT2.bcs, Line: 348, Warning: Resource not found: S:Object*[ITM] - CultMo4
+File: WTACULT2.bcs, Line: 357, Warning: Resource not found: S:ResRef*[ITM] - CultMo5
+File: WTACULT2.bcs, Line: 361, Warning: Resource not found: S:Object*[ITM] - CultMo5
+File: WTACULT2.bcs, Line: 370, Warning: Resource not found: S:ResRef*[ITM] - CultMo6
+File: WTACULT2.bcs, Line: 374, Warning: Resource not found: S:Object*[ITM] - CultMo6
+File: WTACULT2.bcs, Line: 383, Warning: Resource not found: S:ResRef*[ITM] - CultMo7
+File: WTACULT2.bcs, Line: 387, Warning: Resource not found: S:Object*[ITM] - CultMo7
+File: WTACULT2.bcs, Line: 396, Warning: Resource not found: S:ResRef*[ITM] - CultMo8
+File: WTACULT2.bcs, Line: 400, Warning: Resource not found: S:Object*[ITM] - CultMo8
+File: WTACULT2.bcs, Line: 409, Warning: Resource not found: S:ResRef*[ITM] - CultMo9
+File: WTACULT2.bcs, Line: 413, Warning: Resource not found: S:Object*[ITM] - CultMo9
+File: WTACULT2.bcs, Line: 422, Warning: Resource not found: S:ResRef*[ITM] - CultMo10
+File: WTACULT2.bcs, Line: 426, Warning: Resource not found: S:Object*[ITM] - CultMo10
+File: WTACULT2.bcs, Line: 435, Warning: Resource not found: S:ResRef*[ITM] - CultMo11
+File: WTACULT2.bcs, Line: 439, Warning: Resource not found: S:Object*[ITM] - CultMo11
+File: YESGAR.bcs, Line: 72, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: YESGAR.bcs, Line: 83, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: YESGAR.bcs, Line: 113, Warning: Resource not found: S:RES*[SPL] - dw#thinv
+File: YESGAR.bcs, Line: 405, Warning: Resource not found: S:ResRef*[ITM] - dw#nohla
+File: YESGAR.bcs, Line: 4150, Warning: Resource not found: S:ResRef*[ITM] - dw#move0
+File: YUANTINW.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ZAMITGRD.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ZOM1223.bcs, Line: 31, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ZOMBNW2.bcs, Line: 6, Warning: Spell resource for INNATE_ZOMBIE_LORD_AURA not found: SPIN190.SPL
+File: ZOOGUARD.bcs, Line: 25, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ZOOVIZIT.bcs, Line: 107, Warning: Resource not found: S:RES*[SPL] - RR#FEAR
+File: ZOOVIZIT.bcs, Line: 119, Warning: Resource not found: S:Sound*[WAV] - BEDWIN43
