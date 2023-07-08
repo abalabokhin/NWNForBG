@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1676
+Number of hits: 1673
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -1136,9 +1136,6 @@ File: RORCS01.CRE, Name: Orog, Attribute: Dialogue=RORCS01.DLG
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
-File: RR#SHM01.EFF, Attribute: Resource=RR#SHM01.CRE
-File: RR#SHM02.EFF, Attribute: Resource=RR#SHM02.CRE
-File: RR#SHM03.EFF, Attribute: Resource=RR#SHM03.CRE
 File: RSKEL02.CRE, Name: Skeleton Warrior, Attribute: Override script=RSKEL02.BCS
 File: RSKEL02.CRE, Name: Skeleton Warrior, Attribute: Dialogue=RSKEL02.DLG
 File: RSKEL03.CRE, Name: Skeleton, Attribute: Override script=RSKEL03.BCS
