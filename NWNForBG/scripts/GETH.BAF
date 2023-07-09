@@ -1,0 +1,22 @@
+IF
+	Global("Dialogue","LOCALS",0)
+	See([PC])
+	Delay(15)
+THEN
+	RESPONSE #100
+		SetGlobal("Dialogue","LOCALS",1)
+		Wait(2)
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	Global("NeurikQuest","GLOBAL",6)
+	Allegiance(Myself,NEUTRAL)
+	ActionListEmpty()
+	AreaCheck("NW2301")
+	Delay(10)
+THEN
+	RESPONSE #100
+		EscapeAreaObject("Tran2300")
+END
+

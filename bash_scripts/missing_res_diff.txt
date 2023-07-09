@@ -1,29 +1,29 @@
-Number of hits: 1682
+Number of hits: 1681
 File: AUCTION.STO, Name: Таверна Сиди, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: BALLARD.STO, Name: Баллард, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: BRUNCHAN.SPL, Name: No such index, Attribute: Resource=BRUN.CRE
+File: BRUN.CRE, Name: Ja, now that is not such a bad idea! Maybe afterward we can have an ale?, Attribute: Small portrait=BRUN.BMP
+File: BRUN.CRE, Name: Ja, now that is not such a bad idea! Maybe afterward we can have an ale?, Attribute: Override script=BRUN.BCS
 File: CHALJAL.STO, Name: Треснувшая Наковальня, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: CLCKNW4.ITM, Name: Show subtitles, Attribute: Icon=CLCKNW4.BAM
 File: DURGA.STO, Name: "Сияющий рыцарь", Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA2.STO, Name: Товары Эльтуры, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA3.STO, Name: Особые товары Эльтуры, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA4.STO, Name: Arcana Archives, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: FENCEBR.STO, Name: Скупщик, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: FENCEPL.STO, Name: Скупщик, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: GETHCHAN.SPL, Name: No such index, Attribute: Resource=GETH.CRE
-File: HAMMER.CRE, Name: Хольга, Attribute: Item=HAMMSWOR.ITM
+File: GETH.CRE, Name: Be sure to keep an eye on the Hit Points of your characters—they can drop quickly in the heat of battle., Attribute: Small portrait=GETH.BMP
+File: GETH.CRE, Name: Be sure to keep an eye on the Hit Points of your characters—they can drop quickly in the heat of battle., Attribute: Override script=GETH.BCS
 File: HASHER.STO, Name: "Сияющий рыцарь", Attribute: Rumors (drinks)=RFRIEN.DLG
 File: HELMITE.STO, Name: Temple of Helm, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: HELMITE1.STO, Name: Temple of Helm, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: JUSAM.STO, Name: Юсам, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: KARATH.SPL, Name: No such index, Attribute: Resource=KARATHIS.CRE
-File: LERK3.SPL, Name: No such index, Attribute: Resource=LERK3.CRE
+File: KARATHIS.CRE, Name: I am murder incarnate!, Attribute: Small portrait=KARATHIS.BMP
+File: KARATHIS.CRE, Name: I am murder incarnate!, Attribute: Override script=URTH.BCS
+File: LERK3.CRE, Name: Do you require my services once again?, Attribute: Race script=LERK3.BCS
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MMWICONV.SPL, Name: Обращение, Attribute: Resource=MMCHAL.2DA
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
-File: MUMX1.CRE, Name: Mummy, Attribute: Small portrait=MUMGRE01.BMP
 File: NWCULTL1.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Dialogue=GUZUD2.DLG
 File: NWCULTL3.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Dialogue=GUZUD1.DLG
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -35,8 +35,6 @@ File: NWMERC01.STO, Name: Магазин Лускана, Attribute: Rumors (drin
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PLMISC.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PLSCROLL.STO, Name: Торговец свитками, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: PORAISE1.CRE, Name: Галия - No such index, Attribute: Override script=PORAISE1.BCS
-File: PORAISE1.CRE, Name: Галия - No such index, Attribute: Item=POWEATH1.ITM
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: PSCRE08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
@@ -56,5 +54,6 @@ File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resour
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.SPL
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.ITM
 File: SPPR955.SPL, Name: Глаз Пепла, Attribute: Resource=REDBLAZE.VEF
-File: TROLLNW3.SPL, Name: No such index, Attribute: Resource=TROLLNW3.CRE
-File: URTHCHAN.SPL, Name: No such index, Attribute: Resource=URT.CRE
+File: TROLLNW3.CRE, Name: , Attribute: Override script=TROLLNW3.BCS
+File: URT.CRE, Name: Каллик, Attribute: Small portrait=URTH.BMP
+Fi
