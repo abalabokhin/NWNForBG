@@ -1,5 +1,5 @@
 Illegal sound resrefs in string table
-Number of hits: 1773
+Number of hits: 1775
 StringRef: 564, Sound: SAREV01, Text: You are indeed family. No other could have lived to oppose me in person. Of course, it will not matter in the end. Ultimately, I will prevail, and a new era will be born unto the realms.
 StringRef: 1182, Sound: DRIZT02, Text: 
 StringRef: 1183, Sound: DRIZT08, Text: 
@@ -1844,3 +1844,5 @@ StringRef: 121708, Sound: NASHE125, Text: Довольно, Аарин. <CHARNAM
 StringRef: 121925, Sound: ARCHEL05, Text:  Приветствую, я Мастер Форд, главный археолог Невервинтера. Лорд Нашер упоминал, что кое-кто может прийти, чтобы осмотреть Камень-Источник. <CHARNAME>, не так ли?
 StringRef: 121926, Sound: ARCHEL05, Text:  Снова здесь, <CHARNAME>? Могу ли я чем-нибудь помочь тебе?
 StringRef: 121931, Sound: ARCHEL05, Text:  Приветствую, я Мастер Форд, главный археолог Невервинтера. Лорд Нашер упоминал, что кое-кто может прийти, чтобы осмотреть Камень-Источник. <CHARNAME>, не так ли?
+StringRef: 121932, Sound: ARCHEL05, Text:  Снова здесь, <CHARNAME>? Могу ли я чем-нибудь помочь тебе?
+StringRef: 121937, Sound: ARCHEL05, Text:  Приветствую, я Мастер Форд, главный археолог Невервинтера. Лорд Нашер упоминал, что кое-кто может прийти, чтобы осмотреть Камень-Источник. <CHARNAME>, не так ли?

@@ -1,0 +1,41 @@
+IF
+	OR(3)
+		StateCheck(LastSummonerOf(Myself),STATE_DEAD)
+		!Exists(LastSummonerOf(Myself))
+		HPLT(LastSummonerOf(Myself),1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	Global("BP_BOMBSAWAY","MYAREA",0)
+	Range(LastHitter(LastSummonerOf(Myself)),12)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,GOODBUTRED)
+		SmallWait(1)
+		SetGlobal("BP_BOMBSAWAY","MYAREA",1)
+		SetGlobalTimer("BP_EXPLODE","LOCALS",11)
+		SmallWait(1)
+		ClearActions(Myself)
+END
+
+IF
+	Global("BP_BOMB","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BP_BOMB","LOCALS",1)
+		MoveToObject(LastHitter(LastSummonerOf(Myself)))
+END
+
+IF
+	Global("BP_BOMBSAWAY","MYAREA",1)
+	GlobalTimerExpired("BP_EXPLODE","LOCALS")
+THEN
+	RESPONSE #100
+		ActionOverride(LastSummonerOf(Myself),SetGlobal("BP_BOMB","LOCALS",0))
+		SmallWait(10)
+		DestroySelf()
+END
+

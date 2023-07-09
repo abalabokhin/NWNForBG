@@ -1,0 +1,57 @@
+IF
+	!Global("NWArenaBreak","GLOBAL",0)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Global("Encounter","MYAREA",1)
+	Allegiance(Myself,NEUTRAL)
+	Global("Pause1","MYAREA",0)
+	Global("NWArena","GLOBAL",0)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	HPPercentLT(Myself,10)
+	Global("Pause1","MYAREA",0)
+	Allegiance(Myself,ENEMY)
+	Global("Encounter","MYAREA",1)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		ClearActions(Player1)
+		StartCutSceneMode()
+		SetGlobal("Pause1","MYAREA",1)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		DisplayStringHead(Myself,55306)  // ? ??????. ??????? ???? ??????? ????????, ??? ?? ?????????? ????? ????. ?... ? ??????? ???? ??????.
+		SetGlobal("Encounter","MYAREA",0)
+		SetGlobal("NWArena","GLOBAL",1)
+		ClearAllActions()
+		ClearActions(Player1)
+		Wait(3)
+		EndCutSceneMode()
+		EscapeAreaObject("ExitKell")
+		Wait(1)
+END
+
+IF
+	HPPercentLT(Player1,15)
+	Global("Pause1","MYAREA",0)
+	Allegiance(Myself,ENEMY)
+	Global("Encounter","MYAREA",1)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,102615)  // ?? ?????????!
+		ClearAllActions()
+		ClearActions(Player1)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Encounter","MYAREA",0)
+		SetGlobal("Pause1","MYAREA",1)
+		EscapeAreaDestroy(60)
+END
+

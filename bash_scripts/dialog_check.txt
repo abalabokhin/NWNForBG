@@ -1,5 +1,5 @@
 Warnings in dialogues
-Number of hits: 267
+Number of hits: 259
 File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 4, Warning: Resource not found: S:Item*[ITM] - Wandnw6
 File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 5, Warning: Resource not found: S:Item*[ITM] - Wandnw6
 File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 7, Warning: Resource not found: S:Item*[ITM] - Wandnw6
@@ -12,9 +12,6 @@ File: 2Q6EPOD.dlg, Line: 2, Owner: Action 3, Warning: Resource not found: S:Item
 File: 2Q6EPOD.dlg, Line: 3, Owner: Action 3, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
 File: AERIEP.DLG, Line: 47, Owner: Response trigger 5, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: AMARAN.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
-File: ANDER.dlg, Line: 3, Owner: State trigger 2, Warning: Script name not found: S:Name* - Alhelor
-File: ANDER.dlg, Line: 3, Owner: State trigger 3, Warning: Script name not found: S:Name* - Alhelor
-File: ANDER.dlg, Line: 2, Owner: State trigger 4, Warning: Script name not found: S:Name* - Alhelor
 File: ANOMENP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: APPAR.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - APPAR
 File: ARNWAR07.DLG, Line: 2, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine1
@@ -114,11 +111,6 @@ File: IMOEN25J.DLG, Line: 6, Owner: Action 0, Warning: Script name not found: O:
 File: IMOEN2J.DLG, Line: 4, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3024
 File: IMOEN2J.DLG, Line: 5, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3025
 File: IMOEN2J.DLG, Line: 6, Owner: Action 6, Warning: Script name not found: O:Object* - Exit3026
-File: INTFORGU.dlg, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Crewtd2
-File: INTFORGU.dlg, Line: 1, Owner: State trigger 1, Warning: Script name not found: S:Name* - Crewtd2
-File: INTFORGU.dlg, Line: 1, Owner: State trigger 2, Warning: Script name not found: S:Name* - Crewtd2
-File: INTFORGU.dlg, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - Crewtd2
-File: INTFORGU.dlg, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - Crewtd2
 File: ISLANNE.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - DeathK
 File: IZEFIA.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
 File: JAHEI25J.DLG, Line: 4, Owner: Action 3, Warning: Script name not found: O:Object* - Exit3024

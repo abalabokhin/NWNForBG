@@ -113,10 +113,10 @@ copy_to = "/home/paladin/source/NWNForBG/NWNForBG/"
 for s in sources:
     if s in result:
         for res in result[s]:
-            cfrom = copy_from + sources[s][0] + "/" + res
-            if os.path.isfile(cfrom):
-            # print(copy_from + sources[s][0] + "/" + res, copy_to + sources[s][1])
-                shutil.copy(copy_from + sources[s][0] + "/" + res, copy_to + sources[s][1])
+            c_from = copy_from + sources[s][0] + "/" + res
+            c_to = copy_to + sources[s][1] + "/" + res
+            if os.path.isfile(c_from) and not os.path.isfile(c_to):
+                shutil.copyfile(c_from, c_to)
 
 
 
