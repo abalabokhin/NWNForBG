@@ -18,6 +18,11 @@ def diff_and_save(orig_name):
     print('\n'.join(uniq_lines), file=open(basename + "_diff.txt", 'w'))
 
 
+def parse1(filename):
+    f1 = open(filename).readlines()
+    print(f1)
+
+
 diff_and_save('missing_res_orig.txt')
 diff_and_save('dialog_check_orig.txt')
 diff_and_save('items_not_in_inventory_orig.txt')
@@ -26,3 +31,5 @@ diff_and_save('script_check_orig.txt')
 diff_and_save('unknown_ids1_orig.txt')
 diff_and_save('unknown_ids2_orig.txt')
 
+result = {}
+parse1("missing_res_diff.txt")
