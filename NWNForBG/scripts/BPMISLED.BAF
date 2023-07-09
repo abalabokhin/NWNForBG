@@ -1,0 +1,52 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		Shout(DEAD_MEAT)
+END
+
+IF
+	!Allegiance(Myself,GOODCUTOFF)
+	!Range([PC],20)
+	!AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		MoveToObject([PC])
+END
+
+IF
+	!Allegiance(Myself,GOODCUTOFF)
+	OR(2)
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastAttackerOf(Myself),15)
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	See([EVILCUTOFF.0.0.MAGE_ALL])
+	!Range(LastSeenBy(Myself),20)
+	!Range([GOODCUTOFF],3)
+THEN
+	RESPONSE #100
+		MoveToObject([EVILCUTOFF.0.0.MAGE_ALL])
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	!Detect([EVILCUTOFF.0.0.MAGE_ALL])
+	Detect([EVILCUTOFF])
+THEN
+	RESPONSE #100
+		MoveToObject([EVILCUTOFF])
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+

@@ -1,0 +1,31 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Marrok")  // ??????
+		ClearAllActions()
+		FadeToColor([30.0],0)
+		Wait(1)
+		JumpToPoint([459.369])
+		Face(6)
+		Wait(1)
+		FadeFromColor([30.0],0)
+		Wait(2)
+		CreateVisualEffect("spcrtwpn",[459.369])
+		Wait(2)
+		Swing()
+		Wait(2)
+		CreateVisualEffect("spcrtwpn",[459.369])
+		Wait(2)
+		Swing()
+		Wait(3)
+		FadeToColor([30.0],0)
+		Wait(1)
+		JumpToPoint([598.377])
+		Face(14)
+		Wait(1)
+		FadeFromColor([30.0],0)
+		SetGlobal("ForgeStuffNW","GLOBAL",1)
+		EndCutSceneMode()
+END
+

@@ -1,0 +1,18 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		HideGUI()
+		Wait(3)
+		CreateVisualEffect("SPFIREPI",[2349.342])
+		PlaySound("EFF_M13")
+		Wait(2)
+		CreateCreature("Belial",[2349.342],0)  // ??????
+		Wait(2)
+		ActionOverride("Belial",FaceObject("Guardian"))  // ?????????? ????
+		Wait(2)
+		UnhideGUI()
+		ActionOverride("Belial",StartDialogueNoSet("Guardian"))  // ?????????? ????
+END
+

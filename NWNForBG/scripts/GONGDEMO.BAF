@@ -1,0 +1,33 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("NWMEPAR1")  // ????????? ?????
+		MoveViewObject("NWMEPAR1",FAST)  // ????????? ?????
+		Wait(2)
+		MoveToPointNoInterrupt([1604.1803])
+		Face(8)
+		SetSequence(SEQ_ATTACK)
+		PlaySound("Gongnw01")
+		Wait(3)
+		MoveToPoint([1722.1733])
+		Face(8)
+		SetSequence(SEQ_ATTACK)
+		PlaySound("Gongnw02")
+		Wait(3)
+		MoveToPoint([1668.1768])
+		Face(8)
+		SetSequence(SEQ_ATTACK)
+		PlaySound("Gongnw03")
+		Wait(3)
+		MoveToPoint([1777.1698])
+		Face(8)
+		SetSequence(SEQ_ATTACK)
+		PlaySound("Gongnw04")
+		Wait(3)
+		MoveToPoint([1861.1752])
+		Face(2)
+		Wait(2)
+		EndCutSceneMode()
+END
+

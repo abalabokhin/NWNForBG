@@ -1,0 +1,27 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		OpenDoor("Door2")
+		Wait(1)
+		MoveToPoint([2528.2849])
+		PlayDead(2)
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("NW2905","",[524.611],0)
+		LeaveAreaLUA("NW2905","",[524.611],0)
+		ActionOverride(Player2,LeaveAreaLUA("NW2905","",[548.562],0))
+		ActionOverride(Player3,LeaveAreaLUA("NW2905","",[445.589],15))
+		ActionOverride(Player4,LeaveAreaLUA("NW2905","",[561.529],0))
+		ActionOverride(Player5,LeaveAreaLUA("NW2905","",[611.551],1))
+		ActionOverride(Player6,LeaveAreaLUA("NW2905","",[625.497],2))
+		MultiPlayerSync()
+		Wait(2)
+		FadeFromColor([30.0],0)
+		PlaySound("EFF_M27")
+		Wait(2)
+		EndCutSceneMode()
+END
+

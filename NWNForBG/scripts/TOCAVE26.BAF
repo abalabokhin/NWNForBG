@@ -1,0 +1,15 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player6)
+		FadeToColor([20.0],0)
+		ActionOverride("2302WT",DestroySelf())
+		SetGlobal("ToCave2","NW2302",0)
+		Wait(2)
+		LeaveAreaLUA("NW2303","",[531.1239],8)
+		MultiPlayerSync()
+		FadeFromColor([20.0],0)
+		EndCutSceneMode()
+END
+

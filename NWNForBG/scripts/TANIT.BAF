@@ -1,0 +1,24 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Tanit")  // ?????
+		Wait(1)
+		MoveToPoint([873.321])
+		Wait(1)
+		Face(0)
+		DisplayStringHead(Myself,103010)  // ??? ?? ???.
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(2)
+		RestParty()
+		Wait(3)
+		FadeFromColor([30.0],0)
+		Wait(1)
+		MoveToPoint([916.371])
+		Wait(1)
+		SetGlobalTimer("TanitTimer","MYAREA",EIGHT_HOURS)
+		Face(1)
+		EndCutSceneMode()
+END
+

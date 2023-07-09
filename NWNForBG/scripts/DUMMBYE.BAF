@@ -1,0 +1,9 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Myself)
+		SetGlobal("MAGICMOUTH_DONE","MYAREA",1)
+		EndCutSceneMode()
+END
+

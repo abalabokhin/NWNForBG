@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Urt")  // ???
+		DestroyItem("MINHP1")  // No such index
+		ActionOverride(Player1,RunAwayFrom("Urt",30))  // ???
+		Wait(1)
+		StartCutScene("WERPAUS2")
+END
+

@@ -1,0 +1,308 @@
+IF
+	OnCreation()
+	!Allegiance(Myself,EVILCUTOFF)
+	!Global("RR#SMHOST","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		LeaveParty()
+		ChangeEnemyAlly(Myself,ALLY)
+		DialogInterrupt(FALSE)
+		SetInterrupt(TRUE)
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	Global("RR#SMHOST","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Global("RR#SHMCHK","LOCALS",0)
+	InParty(LastSummonerOf(Myself))
+	Class(LastSummonerOf(Myself),DRUID_ALL)
+	!Allegiance(Myself,EVILCUTOFF)
+THEN
+	RESPONSE #100
+		SetGlobal("RR#SHMCHK","LOCALS",1)
+END
+
+IF
+	Global("RR#SHMCHK","LOCALS",0)
+	InParty(LastSummonerOf(Myself))
+	!Class(LastSummonerOf(Myself),DRUID_ALL)
+	!Allegiance(Myself,EVILCUTOFF)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("RR#SHMCHK","LOCALS",2)
+		SetGlobal("RR#SMHOST","GLOBAL",1)
+		PlaySound("EFF_M72D")
+		FaceObject(LastSummonerOf(Myself))
+		TakePartyItem("RR#GUARA")  // ????????
+		TakePartyItem("RR#GUARB")  // ???????? +2
+		TakePartyItem("RR#GUARC")  // ???????? +3
+		DestroyItem("RR#GUARA")  // ????????
+		DestroyItem("RR#GUARB")  // ???????? +2
+		DestroyItem("RR#GUARC")  // ???????? +3
+		DisplayStringNoNameHead(Myself,102456)  // ??? ??????????? ???? ?????? ?????????? ???? ????????????, ? ?????-?? ?????? ???????? ???????? ?? ??????? ???????????. ??? ??? ???????? ?????? - ??? ????? ????????? ????? ????.
+		Enemy()
+		SetInterrupt(TRUE)
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!HasItemEquiped("RR#GUARA",Player1)  // ????????
+	!HasItemEquiped("RR#GUARA",Player2)  // ????????
+	!HasItemEquiped("RR#GUARA",Player3)  // ????????
+	!HasItemEquiped("RR#GUARA",Player4)  // ????????
+	!HasItemEquiped("RR#GUARA",Player5)  // ????????
+	!HasItemEquiped("RR#GUARA",Player6)  // ????????
+	!HasItemEquiped("RR#GUARB",Player1)  // ???????? +2
+	!HasItemEquiped("RR#GUARB",Player2)  // ???????? +2
+	!HasItemEquiped("RR#GUARB",Player3)  // ???????? +2
+	!HasItemEquiped("RR#GUARB",Player4)  // ???????? +2
+	!HasItemEquiped("RR#GUARB",Player5)  // ???????? +2
+	!HasItemEquiped("RR#GUARB",Player6)  // ???????? +2
+	!HasItemEquiped("RR#GUARC",Player1)  // ???????? +3
+	!HasItemEquiped("RR#GUARC",Player2)  // ???????? +3
+	!HasItemEquiped("RR#GUARC",Player3)  // ???????? +3
+	!HasItemEquiped("RR#GUARC",Player4)  // ???????? +3
+	!HasItemEquiped("RR#GUARC",Player5)  // ???????? +3
+	!HasItemEquiped("RR#GUARC",Player6)  // ???????? +3
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		DisplayStringNoName(Player1,102457)  // ?? ?? ?????? ?????????? ?????????????? ????? ? ?????????, ?? ????? ???? ???.
+		DisplayString(Myself,14065)  // ????? ??????? ???????
+		CreateVisualEffectObject("SPGFLSH1",Myself)
+		SetInterrupt(TRUE)
+		DestroySelf()
+END
+
+IF
+	NumCreatureGT("RR#SHM",1)  // ????? ???????
+	!Allegiance(Myself,EVILCUTOFF)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		DisplayString(Myself,14065)  // ????? ??????? ???????
+		DisplayStringNoName(Player1,102458)  // ?? ?? ?????? ???????????? ???????? ?????? ???????? ????? ????.
+		CreateVisualEffectObject("SPGFLSH1",Myself)
+		SetInterrupt(TRUE)
+		DestroySelf()
+END
+
+IF
+	Global("RR#SHMUPG","GLOBAL",0)
+	LevelGT(Myself,15)
+	InParty(LastSummonerOf(Myself))
+	Class(LastSummonerOf(Myself),DRUID_ALL)
+	HasItemEquipedReal("RR#GUARA",LastSummonerOf(Myself))  // ????????
+	Detect(LastSummonerOf(Myself))
+	!Allegiance(Myself,EVILCUTOFF)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("RR#SHMUPG","GLOBAL",1)
+		TakeItemReplace("RR#GUARB","RR#GUARA",LastSummonerOf(Myself))  // ???????? +2
+		DisplayStringNoNameHead(Myself,102459)  // ???? ????? ? ???????? ??????? ? ???? ????????? ???????? ????.
+		PlaySound("EFF_M72C")
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("RR#SHMUPG","GLOBAL",1)
+	LevelGT(Myself,19)
+	InParty(LastSummonerOf(Myself))
+	Class(LastSummonerOf(Myself),DRUID_ALL)
+	HasItemEquipedReal("RR#GUARB",LastSummonerOf(Myself))  // ???????? +2
+	Detect(LastSummonerOf(Myself))
+	!Allegiance(Myself,EVILCUTOFF)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("RR#SHMUPG","GLOBAL",2)
+		TakeItemReplace("RR#GUARC","RR#GUARB",LastSummonerOf(Myself))  // ???????? +3
+		DisplayStringNoNameHead(Myself,102459)  // ???? ????? ? ???????? ??????? ? ???? ????????? ???????? ????.
+		PlaySound("EFF_M72C")
+		SetInterrupt(TRUE)
+END
+
+IF
+	!InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	OR(2)
+		See([GOODCUTOFF])
+		See(LastSummonerOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("dvgldust","LOCALS",1)
+	CombatCounter(0)
+	!See([EVILCUTOFF])
+	OR(5)
+		AreaType(FOREST)
+		AreaCheck("AR0043")
+		AreaCheck("AR1700")  // ??????? ?????? ????
+		AreaCheck("AR1900")  // ???? ???????
+		AreaCheck("AR6400")  // ?????? ?? ??????????? ????
+THEN
+	RESPONSE #100
+		DisplayString(Myself,102460)  // ????? ? ???????????? ?????
+		ApplySpellRES("RR#INVIS",Myself)  // ???????????
+		PlaySound("ACT_07")
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty([EVILCUTOFF])
+	See([EVILCUTOFF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty(SixthNearest([EVILCUTOFF]))
+	!CheckStatGT(SixthNearest([EVILCUTOFF]),2,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(SixthNearest([EVILCUTOFF]),1,STONESKINS)
+	CheckStatLT(SixthNearest([EVILCUTOFF]),100,RESISTCRUSHING)
+	!StateCheck(SixthNearest([EVILCUTOFF]),STATE_MIRRORIMAGE)
+	!StateCheck(SixthNearest([EVILCUTOFF]),STATE_PANIC)
+	See(SixthNearest([EVILCUTOFF]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty(FifthNearest([EVILCUTOFF]))
+	!CheckStatGT(FifthNearest([EVILCUTOFF]),2,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(FifthNearest([EVILCUTOFF]),1,STONESKINS)
+	CheckStatLT(FifthNearest([EVILCUTOFF]),100,RESISTCRUSHING)
+	!StateCheck(FifthNearest([EVILCUTOFF]),STATE_MIRRORIMAGE)
+	!StateCheck(FifthNearest([EVILCUTOFF]),STATE_PANIC)
+	See(FifthNearest([EVILCUTOFF]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty(FourthNearest([EVILCUTOFF]))
+	!CheckStatGT(FourthNearest([EVILCUTOFF]),2,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(FourthNearest([EVILCUTOFF]),1,STONESKINS)
+	CheckStatLT(FourthNearest([EVILCUTOFF]),100,RESISTCRUSHING)
+	!StateCheck(FourthNearest([EVILCUTOFF]),STATE_MIRRORIMAGE)
+	!StateCheck(FourthNearest([EVILCUTOFF]),STATE_PANIC)
+	See(FourthNearest([EVILCUTOFF]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty(ThirdNearest([EVILCUTOFF]))
+	!CheckStatGT(ThirdNearest([EVILCUTOFF]),2,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(ThirdNearest([EVILCUTOFF]),1,STONESKINS)
+	CheckStatLT(ThirdNearest([EVILCUTOFF]),100,RESISTCRUSHING)
+	!StateCheck(ThirdNearest([EVILCUTOFF]),STATE_MIRRORIMAGE)
+	!StateCheck(ThirdNearest([EVILCUTOFF]),STATE_PANIC)
+	See(ThirdNearest([EVILCUTOFF]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty(SecondNearest([EVILCUTOFF]))
+	!CheckStatGT(SecondNearest([EVILCUTOFF]),2,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(SecondNearest([EVILCUTOFF]),1,STONESKINS)
+	CheckStatLT(SecondNearest([EVILCUTOFF]),100,RESISTCRUSHING)
+	!StateCheck(SecondNearest([EVILCUTOFF]),STATE_MIRRORIMAGE)
+	!StateCheck(SecondNearest([EVILCUTOFF]),STATE_PANIC)
+	See(SecondNearest([EVILCUTOFF]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty([EVILCUTOFF])
+	!CheckStatGT([EVILCUTOFF],2,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT([EVILCUTOFF],1,STONESKINS)
+	CheckStatLT([EVILCUTOFF],100,RESISTCRUSHING)
+	!StateCheck([EVILCUTOFF],STATE_MIRRORIMAGE)
+	!StateCheck([EVILCUTOFF],STATE_PANIC)
+	See([EVILCUTOFF])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!InParty(LastSeenBy(Myself))
+	Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+	HPGT(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!See([EVILCUTOFF])
+	ActionListEmpty()
+	InParty(LastSummonerOf(Myself))
+	!Range(LastSummonerOf(Myself),15)
+	InMyArea(LastSummonerOf(Myself))
+	InActiveArea(Myself)
+	InActiveArea(LastSummonerOf(Myself))
+THEN
+	RESPONSE #100
+		DisplayString(Myself,102461)  // ? ???????????? ? ???????? ???????, ? ??????? ?? ??? ?????!
+		Formation(LastSummonerOf(Myself),[-4.-4])
+END
+
+IF
+	!Allegiance(Myself,EVILCUTOFF)
+	!See([EVILCUTOFF])
+	ActionListEmpty()
+	!InParty(LastSummonerOf(Myself))
+	!Range(Player1,15)
+	InMyArea(Player1)
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		Formation(Player1,[-4.-4])
+END
+

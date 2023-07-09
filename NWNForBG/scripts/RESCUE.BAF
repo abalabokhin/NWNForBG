@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Druidnw1")  // ??????
+		FadeToColor([20.0],0)
+		ActionOverride("2902TR",DestroySelf())
+		DestroyItem("Paralyze")  // ???????? ????????
+		Wait(1)
+		JumpToPoint([1718.332])
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		EndCutSceneMode()
+		StartDialogueNoSet([PC])
+END
+

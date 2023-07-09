@@ -3556,9 +3556,6 @@ COPY ~NWNForBG/cre/zooguar2.cre~ ~override~
 LAF HANDLE_AUDIO END
 //COPY ~NWNForBG/audio~ ~override~
 
-//Animations
-COPY ~NWNForBG/anim~ ~override~
-
 //Items
 COPY ~NWNForBG/itm~ ~override~
 

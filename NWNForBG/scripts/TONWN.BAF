@@ -1,0 +1,29 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ClearAllActions()
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("NW1001","",[1119.744],10)
+		LeaveAreaLUA("NW1001","",[1119.744],10)
+		ActionOverride(Player2,LeaveAreaLUA("NW1001","",[1054.758],10))
+		ActionOverride(Player3,LeaveAreaLUA("NW1001","",[1123.791],10))
+		ActionOverride(Player4,LeaveAreaLUA("NW1001","",[988.789],10))
+		ActionOverride(Player5,LeaveAreaLUA("NW1001","",[1043.813],10))
+		ActionOverride(Player6,LeaveAreaLUA("NW1001","",[1112.843],10))
+		MultiPlayerSync()
+		Wait(1)
+		MoveViewObject(Player1,INSTANT)
+		Wait(1)
+		StartMovie("NWNPRE")
+		Wait(2)
+		FadeFromColor([20.0],0)
+		RevealAreaOnMap("NW1000")  // ????? ????????????
+		SetMasterArea("NW1000")  // ????? ????????????
+		MultiPlayerSync()
+		UnhideGUI()
+		EndCutSceneMode()
+END
+

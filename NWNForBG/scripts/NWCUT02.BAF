@@ -1,0 +1,116 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveViewObject("Nascher",STANDARD)  // ???? ?????
+		DisplayStringHead("Nascher",103350)  // ????????? ??????!
+		Wait(3)
+		MoveToPoint([1551.656])
+		FaceObject("Container")
+		MoveViewPoint([1564.494],FAST)
+		Wait(2)
+		ActionOverride("NWPRST1",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		PlaySound("CAS_PP6M")
+		CreateVisualEffectObject("SPBASERD","NWPRST1")  // ???? ????
+		ActionOverride("NWPRST2",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		CreateVisualEffectObject("SPBASERD","NWPRST2")  // ???? ????
+		ActionOverride("NWPRST3",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		CreateVisualEffectObject("SPBASERD","NWPRST3")  // ???? ????
+		ActionOverride("NWPRST4",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		CreateVisualEffectObject("SPBASERD","NWPRST4")  // ???? ????
+		Wait(4)
+		ActionOverride("NWPRST1",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST2",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST3",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST4",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		Wait(4)
+		CreateVisualEffect("SPHEALIN",[1566.478])
+		Wait(1)
+		CreateVisualEffect("SPDISPMA",[1569.490])
+		Wait(4)
+		ActionOverride("NWPRST1",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		ActionOverride("NWPRST2",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		ActionOverride("NWPRST3",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		ActionOverride("NWPRST4",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		PlaySound("CAS_PP7M")
+		Wait(4)
+		ActionOverride("NWPRST1",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST2",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST3",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST4",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		Wait(4)
+		CreateVisualEffect("SPHOLY",[1567.490])
+		Wait(1)
+		CreateVisualEffect("ICRMPARI",[1566.485])
+		Wait(3)
+		ActionOverride("NWPRST1",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		PlaySound("CAS_PP8M")
+		CreateVisualEffectObject("SPBASERD","NWPRST1")  // ???? ????
+		ActionOverride("NWPRST2",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		CreateVisualEffectObject("SPBASERD","NWPRST2")  // ???? ????
+		ActionOverride("NWPRST3",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		CreateVisualEffectObject("SPBASERD","NWPRST3")  // ???? ????
+		ActionOverride("NWPRST4",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		CreateVisualEffectObject("SPBASERD","NWPRST4")  // ???? ????
+		Wait(4)
+		ActionOverride("NWPRST1",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST2",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST3",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST4",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		Wait(4)
+		CreateVisualEffect("SPHEALIN",[1567.480])
+		Wait(1)
+		CreateVisualEffect("SPFINODI",[1565.508])
+		Wait(4)
+		ActionOverride("Oleff",MoveToPoint([1466.483]))
+		Wait(1)
+		ActionOverride("Oleff",FaceObject("Container"))
+		DisplayStringHead("Oleff",103351)  // ??? ?????????? ?????????, ?????? ???????. ?????? ? ??? ???? ?????????!
+		Wait(4)
+		ActionOverride("Desther",MoveToPoint([1597.489]))
+		DisplayStringHead("Desther",103352)  // ???????, ????????? ?????????? ??? ???????? ??????? ?????????.
+		ActionOverride("Desther",FaceObject("Container"))
+		Wait(2)
+		ActionOverride("Desther",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		Wait(4)
+		ActionOverride("Desther",ReallyForceSpellPointRES("SPNW616A",[1856.301]))  // No such index
+		Wait(1)
+		AmbientActivate("Portal",TRUE)
+		TriggerActivation("To1033",TRUE)
+		SoundActivate("AMPortal",TRUE)
+		DisplayStringHead("Desther",103353)  // ??????, ? ??? ?? ????? ?????????!
+		Wait(3)
+		CreateCreature("Nwfhelm1",[1803.357],14)  // ??????????
+		ActionOverride("Nwfhelm1",AttackReevaluate("Nwprst1",30))  // ???? ????
+		Wait(1)
+		CreateCreature("Nwfhelm2",[1803.357],14)  // ??????????
+		ActionOverride("Nwfhelm2",AttackReevaluate("Nwprst2",30))  // ???? ????
+		Wait(1)
+		CreateCreature("Nwfhelm3",[1803.357],14)  // ??????????
+		ActionOverride("Nwfhelm3",AttackReevaluate("Nwprst3",30))  // ???? ????
+		Wait(1)
+		CreateCreature("Nwfhelm4",[1803.357],14)  // ??????????
+		ActionOverride("Nwfhelm4",MoveToPoint([1768.386]))
+		Wait(1)
+		ActionOverride("Nwfhelm4",AttackReevaluate("Nwprst4",30))  // ???? ????
+		Wait(1)
+		ActionOverride("Desther",MoveToPoint([1821.346]))
+		Wait(1)
+		DisplayStringHead("Desther",103354)  // ??????, ?????? ????? ????!
+		Wait(2)
+		ActionOverride("Desther",DestroySelf())
+		Wait(1)
+		MoveViewObject("Fenthick",INSTANT)  // ??????
+		DisplayStringHead("Fenthick",103355)  // ??????, ??????! ?? ?????
+		Wait(2)
+		DisplayStringHead("Fenthick",103356)  // ? ?????? ???, ??? ?????-?? ??????.
+		Wait(1)
+		ActionOverride("Fenthick",MoveToPoint([1803.357]))
+		Wait(1)
+		ActionOverride("Fenthick",DestroySelf())
+		SetGlobal("DestherIsTraitor","GLOBAL",1)
+		Wait(1)
+		EndCutSceneMode()
+END
+

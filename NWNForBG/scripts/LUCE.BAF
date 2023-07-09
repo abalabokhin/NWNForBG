@@ -1,0 +1,20 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Luce")  // ???
+		Wait(1)
+		MoveToPoint([179.503])
+		Face(12)
+		DisplayStringHead(Myself,103010)  // ??? ?? ???.
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(2)
+		RestParty()
+		Wait(3)
+		SetGlobalTimer("LuceTimer","MYAREA",EIGHT_HOURS)
+		FadeFromColor([30.0],0)
+		StartDialogueNoSet(LastTalkedToBy(Myself))
+		EndCutSceneMode()
+END
+
