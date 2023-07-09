@@ -1,0 +1,42 @@
+IF
+	StateCheck(Player1,STATE_DEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(Player1,CLERIC_RAISE_DEAD)  // SPPR504.SPL (?????????)
+END
+
+IF
+	StateCheck(Player2,STATE_DEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(Player2,CLERIC_RAISE_DEAD)  // SPPR504.SPL (?????????)
+END
+
+IF
+	StateCheck(Player3,STATE_DEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(Player3,CLERIC_RAISE_DEAD)  // SPPR504.SPL (?????????)
+END
+
+IF
+	StateCheck(Player4,STATE_DEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(Player4,CLERIC_RAISE_DEAD)  // SPPR504.SPL (?????????)
+END
+
+IF
+	StateCheck(Player5,STATE_DEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(Player5,CLERIC_RAISE_DEAD)  // SPPR504.SPL (?????????)
+END
+
+IF
+	StateCheck(Player6,STATE_DEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(Player6,CLERIC_RAISE_DEAD)  // SPPR504.SPL (?????????)
+END
+
