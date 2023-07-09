@@ -1,0 +1,15 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveToObject("Door6737")
+		ActionOverride(Player2,MoveToObject("Door6737"))
+		ActionOverride(Player3,MoveToObject("Door6737"))
+		ActionOverride(Player4,MoveToObject("Door6737"))
+		ActionOverride(Player5,MoveToObject("Door6737"))
+		ActionOverride(Player6,MoveToObject("Door6737"))
+		Wait(1)
+		StartCutScene("WERPAUS3")
+END
+

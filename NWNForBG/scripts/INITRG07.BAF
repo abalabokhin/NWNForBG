@@ -1,0 +1,23 @@
+IF
+	Allegiance(Myself,NEUTRAL)
+	!See([ENEMY])
+	CombatCounter(0)
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		MoveToObjectNoInterrupt(Player1)
+		Continue()
+END
+
+IF
+	Range([PC],6)
+	NumTimesTalkedTo(0)
+	See(Player1)
+	Allegiance(Myself,NEUTRAL)
+	!See([ENEMY])
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+

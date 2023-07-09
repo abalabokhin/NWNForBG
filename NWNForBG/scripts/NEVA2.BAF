@@ -1,0 +1,19 @@
+IF
+	Global("CultHostile","MYAREA",0)
+	Allegiance(Myself,NEUTRAL)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("CultHostile","MYAREA",1)
+		DisplayStringHead(Myself,103084)  // ???, ???????? ????? ? ????! ????? ??. <CHARNAME>! ?? - ????!
+		Enemy()
+END
+
+IF
+	Global("CultHostile","MYAREA",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

@@ -1,0 +1,7 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("MACPOOF1",Myself)  // No such index
+END
+

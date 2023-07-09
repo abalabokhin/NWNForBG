@@ -1,16 +1,20 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1679
+Number of hits: 2272
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
+File: A#AMNG.CRE, Name: Amnian Soldier, Attribute: Small portrait=A#AMNG.BMP
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: AEGNOLL.CRE, Name: Gnoll, Attribute: Dialogue=AEGNOLL.DLG
+File: AELITEM.ITM, Name: A worthy ally, if not a particularly trustworthy one., Attribute: Icon=AELITEM.BAM
 File: AEMERHOB.CRE, Name: Hobgoblin Archer, Attribute: Dialogue=AEMERHOB.DLG
 File: ALAR.CRE, Name: Alar, Attribute: Dialogue=ALAR.DLG
 File: ALDETH.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: ALDETH.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: ALDETH.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
+File: ALHE881.SPL, Name: No such index, Attribute: Resource=ALHELOR3.CRE
+File: AMAARIN.ITM, Name: If Hexxat wanted you dead, you'd be dead already., Attribute: Icon=AMAARIN.BAM
 File: AMBUSH01.CRE, Name: Gatekeeper, Attribute: Class script=AMBUSH.BCS
 File: AMMONK07.CRE, Name: Monk, Attribute: Dialogue=AMMONK07.DLG
 File: AMMONK08.CRE, Name: Monk, Attribute: Dialogue=AMMONK08.DLG
@@ -19,6 +23,17 @@ File: AMTARC01.CRE, Name: Tethyrian Archer, Attribute: Dialogue=AMTARC01.DLG
 File: AMTCAP01.CRE, Name: Tethyrian Captain, Attribute: Dialogue=AMTCAP01.DLG
 File: AMTMAG01.CRE, Name: Tethyrian Battlemage, Attribute: Dialogue=AMTMAG01.DLG
 File: AMTPIK01.CRE, Name: Tethyrian Pikeman, Attribute: Dialogue=AMTPIK01.DLG
+File: AMUDAE1.ITM, Name: I don't think so., Attribute: Icon=AMUDAE1.BAM
+File: AMUDAE2.ITM, Name: Hmm... very well. To business, then., Attribute: Icon=AMUDAE1.BAM
+File: AMUDAE3.ITM, Name: I will wait until you do. Do not make me wait too long., Attribute: Icon=AMUDAE1.BAM
+File: AMUGRIM1.ITM, Name: That's it, then? I had expected something more somehow. Very well. If you need my services, <CHARNAME>, you can find me at the Coronet. Perhaps I'll even deign to help you., Attribute: Icon=AMUGRIM1.BAM
+File: AMUGRIM2.ITM, Name: You still travel with the vampire, I see. Have you the assurance I requested?, Attribute: Icon=AMUGRIM1.BAM
+File: AMUGRIM2.ITM, Name: You still travel with the vampire, I see. Have you the assurance I requested?, Attribute: Resource=UNDDAM2.EFF
+File: AMUGRIM3.ITM, Name: Not yet., Attribute: Icon=AMUGRIM1.BAM
+File: AMULINA1.ITM, Name: If only it were so simple for everyone., Attribute: Icon=AMULINA1.BAM
+File: AMULINA2.ITM, Name: I suppose you'd know, miss mind controlling vampire., Attribute: Icon=AMULINA1.BAM
+File: AMULINA3.ITM, Name: My point is... uh. It's obvious, really. Isn't it?, Attribute: Icon=AMULINA1.BAM
+File: AMULNEU.ITM, Name: Silver Amulet, Attribute: Icon=AMULNEU.BAM
 File: AR0011.ARE, Name: Candlekeep Dream 1 (Do you remember Candlekeep?), Attribute: Area script=AR0011.BCS
 File: AR0012.ARE, Name: Candlekeep Library (Main Door Trigger), Attribute: Area script=AR0012.BCS
 File: AR0013.ARE, Name: Candlekeep Library (Stairway Triggers Up and Down), Attribute: Area script=AR0013.BCS
@@ -91,6 +106,14 @@ File: AR5509.ARE, Name: Amkethran Crypt, Attribute: Rest movie (day)=RESTDUNG.WB
 File: AR5509.ARE, Name: Amkethran Crypt, Attribute: Rest movie (night)=RESTDUNG.WBM
 File: AR6008.ARE, Name: Frost Salamander Cave, Attribute: Area script=AR6008.BCS
 File: AR6300.ARE, Name: Oasis in Tethyr, Attribute: Area script=AR6300.BCS
+File: ARENA1.ITM, Name: Oh gods. <CHARNAME>, this is a child. A CHILD. We've got to do something. Please., Attribute: Icon=ARENA1.BAM
+File: ARENA1.ITM, Name: Oh gods. <CHARNAME>, this is a child. A CHILD. We've got to do something. Please., Attribute: Description image=ARENA1C.BAM
+File: ARENA2.ITM, Name: I hope you know what you're doing, <CHARNAME>. It'd make for a pleasant change of pace..., Attribute: Icon=ARENA2.BAM
+File: ARENA2.ITM, Name: I hope you know what you're doing, <CHARNAME>. It'd make for a pleasant change of pace..., Attribute: Description image=ARENA2C.BAM
+File: ARENA3.ITM, Name: Is that what my nose really looks like? Jeez, why didn't anyone TELL me?, Attribute: Icon=ARENA3.BAM
+File: ARENA3.ITM, Name: Is that what my nose really looks like? Jeez, why didn't anyone TELL me?, Attribute: Description image=ARENA3C.BAM
+File: ARENA4.ITM, Name: It was that simple? Ugh. Mentors!, Attribute: Icon=ARENA4.BAM
+File: ARENA4.ITM, Name: It was that simple? Ugh. Mentors!, Attribute: Description image=ARENA4C.BAM
 File: ARKANISG.CRE, Name: Arkanis Gath, Attribute: Dialogue=ARKANISG.DLG
 File: ARNBOY01.CRE, Name: Apprentice Torturer Douglas, Attribute: Class script=ARNBOY01.BCS
 File: ARNFGT01.CRE, Name: Shadow Thief, Attribute: Dialogue=ARNFGT01.DLG
@@ -99,10 +122,17 @@ File: ARNTRA06.CRE, Name: Shadow Thief, Attribute: Dialogue=ARNTRA06.DLG
 File: ARNWAR03.CRE, Name: Shadow Thief, Attribute: Dialogue=ARNFGT01.DLG
 File: AROW07.ITM, Name: Arrow of Dispelling, Attribute: Resource=SPDISMA.VEF
 File: AROW1A.ITM, Name: Arrow +2, Attribute: Icon=IAROW1A.BAM
+File: ARRING.ITM, Name: This is no ordinary woman, <CHARNAME>. She reeks of evil., Attribute: Icon=ARRING.BAM
 File: ARROPHEO.ITM, Name: Short Sword +1, Attribute: Resource=PHEOGURD.CRE
 File: ARTEMIS.CRE, Name: Artemis Entreri, Attribute: Dialogue=ARTEMIS.DLG
 File: ARVAL.CRE, Name: High Mornmaster Arval, Attribute: Dialogue=ARVAL.DLG
 File: AUCTION.STO, Name: Таверна Сиди, Attribute: Rumors (drinks)=RFRIEN.DLG
+File: AX1HNW1.ITM, Name: My head hurts., Attribute: Icon=AX1HNW1.BAM
+File: AX1HNW1.ITM, Name: My head hurts., Attribute: Icon=AX1HNW1.BAM
+File: AX1HNW2.ITM, Name: Battle Axe, Attribute: Icon=AX1HNW2.BAM
+File: AX1HNW2.ITM, Name: Battle Axe, Attribute: Icon=AX1HNW2.BAM
+File: AX1HNW3.ITM, Name: Do not forget about... Dragomir..., Attribute: Icon=AX1HNW3.BAM
+File: AX1HNW3.ITM, Name: Do not forget about... Dragomir..., Attribute: Icon=AX1HNW3.BAM
 File: BALLARD.STO, Name: Баллард, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: BALTH01A.SPL, Name: No such index, Attribute: Resource=BALTH01B.EFF
 File: BALTH02.SPL, Name: Lunar Stance!, Attribute: Spell icon=SPCL917C.BAM
@@ -138,8 +168,13 @@ File: BEHHIV01.CRE, Name: Hive Mother, Attribute: Dialogue=BEHHIV01.DLG
 File: BEHOLDER.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: BEHOLDER.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: BEHOLDER.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
+File: BELIAL.CRE, Name: Aye, all right. I'm not paid enough to take on the likes of you., Attribute: Small portrait=BELIAL.BMP
+File: BELIAL.CRE, Name: Aye, all right. I'm not paid enough to take on the likes of you., Attribute: Override script=BELIAL.BCS
 File: BELT.CRE, Name: Belt, Attribute: Class script=BELT.BCS
 File: BELT.CRE, Name: Belt, Attribute: Dialogue=BELT.DLG
+File: BELTSHA1.ITM, Name: Fiend! I'll not tolerate such perfidy!, Attribute: Icon=BELTSHA.BAM
+File: BELTSHA2.ITM, Name: A tale of glory, written in the blood of the innocent. I would have some of that glory for my own., Attribute: Icon=BELTSHA.BAM
+File: BELTSHA3.ITM, Name: Decide. Quickly., Attribute: Icon=BELTSHA.BAM
 File: BENJY.CRE, Name: Benjy, Attribute: Dialogue=BENJY.DLG
 File: BERKREF.CRE, Name: Zorl, Attribute: Dialogue=BERKREF.DLG
 File: BGLRYH.VVC, Attribute: Starting sound=#FF_M103.WAV
@@ -156,14 +191,39 @@ File: BJORNI.CRE, Name: Bjornin, Attribute: Dialogue=BJORNI.DLG
 File: BLUN30.ITM, Name: Flail of Ages +5, Attribute: Resource=CDSW1H58.SPL
 File: BLUN30.ITM, Name: Flail of Ages +5, Attribute: Resource=CDMOUND.SPL
 File: BLUN30.ITM, Name: Flail of Ages +5, Attribute: Resource=CDHGNYA1.SPL
+File: BLUNIGHT.ITM, Name: Эльтура, Attribute: Icon=BLUNIGHT.BAM
+File: BLUNIGHT.ITM, Name: Эльтура, Attribute: Icon=BLUNIGHT.BAM
+File: BLUNNW1.ITM, Name: Kill them all! Except the pretty girls. Save them for Voghiln!, Attribute: Icon=BLUNNW1.BAM
+File: BLUNNW1.ITM, Name: Kill them all! Except the pretty girls. Save them for Voghiln!, Attribute: Icon=BLUNNW1.BAM
+File: BLUNNW2.ITM, Name: Onward to battle, beer, and barmaids!, Attribute: Icon=BLUNNW2.BAM
+File: BLUNNW2.ITM, Name: Onward to battle, beer, and barmaids!, Attribute: Icon=BLUNNW2.BAM
+File: BLUNNW3.ITM, Name: I need to be resting soon. I am hungry enough to eat a gnome., Attribute: Icon=BLUNNW3.BAM
+File: BLUNNW3.ITM, Name: I need to be resting soon. I am hungry enough to eat a gnome., Attribute: Icon=BLUNNW3.BAM
+File: BLUNNW4.ITM, Name: Augh, this is boring. I'll try my father's counting game. One... two... I have run out of numbers. Let us go., Attribute: Icon=BLUNNW4.BAM
+File: BLUNNW4.ITM, Name: Augh, this is boring. I'll try my father's counting game. One... two... I have run out of numbers. Let us go., Attribute: Icon=BLUNNW4.BAM
+File: BLUNNW4.ITM, Name: Augh, this is boring. I'll try my father's counting game. One... two... I have run out of numbers. Let us go., Attribute: Resource=DAM2D3.EFF
+File: BLUNNW5.ITM, Name: Ho ho! Ready for some fun, are we?, Attribute: Icon=BLUNNW5.BAM
+File: BLUNNW5.ITM, Name: Ho ho! Ready for some fun, are we?, Attribute: Icon=BLUNNW5.BAM
+File: BODDIN12.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Small portrait=BODDINS.BMP
+File: BODDIN12.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Large portrait=BODDINM.BMP
+File: BODDIN14.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Small portrait=BODDINS.BMP
+File: BODDIN14.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Large portrait=BODDINM.BMP
+File: BODDIN15.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Small portrait=BODDINS.BMP
+File: BODDIN15.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Large portrait=BODDINM.BMP
+File: BODDIN16.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Small portrait=BODDINS.BMP
+File: BODDIN16.CRE, Name: They don't call me Voghiln "The Vast" for nothing! Just look at these arms. Look at them!, Attribute: Large portrait=BODDINM.BMP
 File: BODTAN.CRE, Name: Tanova, Attribute: Dialogue=BODTAN.DLG
 File: BOLT03.ITM, Name: Bolt of Lightning, Attribute: Resource=EFF_M22C.WAV
 File: BOUNHA02.CRE, Name: Bounty Hunter, Attribute: Dialogue=BOUNHA02.DLG
 File: BOUNHA03.CRE, Name: Bounty Hunter, Attribute: Dialogue=BOUNHA03.DLG
 File: BOUNHA04.CRE, Name: Bounty Hunter, Attribute: Dialogue=BOUNHA04.DLG
+File: BPTARGET.SPL, Name: <NO TEXT>, Attribute: Resource=BPTARGET.CRE
 File: BRAGE2.CRE, Name: Brage, Attribute: Dialogue=BRAGE.DLG
 File: BRANWE.CRE, Name: Branwen, Attribute: Dialogue=BRANWE.DLG
 File: BREG03.CRE, Name: D'aerthe Guard, Attribute: Dialogue=BREG03.DLG
+File: BRUNRING.ITM, Name: I'll do it, but don't complain if someone gets bashed in the process., Attribute: Icon=BRUNRING.BAM
+File: BRUNW.CRE, Name: Lycanthrope, Attribute: Small portrait=BRUNW.BMP
+File: BRUNW.CRE, Name: Lycanthrope, Attribute: Override script=BRUNW.BCS
 File: C6ALYRA.CRE, Name: Alyra, Attribute: Dialogue=C6ALYRA.DLG
 File: C6DEL.CRE, Name: Del, Attribute: Dialogue=C6DEL.DLG
 File: C6DROW1.CRE, Name: Drow, Attribute: Dialogue=C6DROW1.DLG
@@ -226,6 +286,7 @@ File: CHALSLAY.CRE, Name: Slayer, Attribute: Resource=CDHGNYA1.SPL
 File: CHALTROL.CRE, Name: Giant Troll, Attribute: Dialogue=CHEVIL03.DLG
 File: CHANG01.CRE, Name: Angelo, Attribute: Dialogue=CHANG01.DLG
 File: CHANG02.CRE, Name: Angelo, Attribute: Dialogue=CHANG01.DLG
+File: CHANNW1.ITM, Name: Ah, er, uh... someone? Anyone? Help?, Attribute: Icon=CHANNW1.BAM
 File: CHEVIL01.CRE, Name: Kobold Commando, Attribute: Race script=KOBOLSU.BCS
 File: CHEVIL01.CRE, Name: Kobold Commando, Attribute: Dialogue=CHEVIL01.DLG
 File: CHEVIL02.CRE, Name: Doppelganger, Attribute: Dialogue=CHEVIL01.DLG
@@ -250,6 +311,9 @@ File: CHSAM01.CRE, Name: Semaj, Attribute: Dialogue=CHSAM01.DLG
 File: CHSAM02.CRE, Name: Semaj, Attribute: Dialogue=CHSAM01.DLG
 File: CHTAZ01.CRE, Name: Tazok, Attribute: Dialogue=CHTAZ01.DLG
 File: CHTAZ02.CRE, Name: Tamoko, Attribute: Dialogue=CHTAZ01.DLG
+File: CLCKNW2.ITM, Name: Language, Attribute: Icon=CLCKNW2.BAM
+File: CLCKNW2.ITM, Name: Language, Attribute: Resource=CLCKNW2.SPL
+File: CLCKNW5.ITM, Name: Что? Никого я не преследую... просто... э... прогуливаюсь. Да, точно., Attribute: Icon=ICLOAKMI.BAM
 File: CLGIJJ01.CRE, Name: Gijjal of the House Malario, Attribute: Dialogue=CLGIJJ01.DLG
 File: CLGOL01.CRE, Name: Clay Golem, Attribute: Dialogue=CLGOL01.DLG
 File: CLLATP01.CRE, Name: Dawnmistress, Attribute: Dialogue=CLLATP01.DLG
@@ -260,9 +324,11 @@ File: COPAMB02.CRE, Name: Copper Coronet Guard, Attribute: Dialogue=COPAMB02.DLG
 File: COPAMB03.CRE, Name: Gladiator, Attribute: Dialogue=COPAMB03.DLG
 File: COPAMB04.CRE, Name: Gladiator, Attribute: Dialogue=COPAMB04.DLG
 File: COPAMB05.CRE, Name: Copper Coronet Guard, Attribute: Dialogue=COPAMB05.DLG
+File: COVERLET.ITM, Name: Зачем вы здесь? Что вы делаете?, Attribute: Icon=COVERLET.BAM
 File: COWLD.CRE, Name: Cowled Wizard, Attribute: Dialogue=COWLD.DLG
 File: COWLED01.CRE, Name: Cowled Wizard, Attribute: Dialogue=COWLD.DLG
-File: CRYPTXX.ITM, Name: Кость из склепа, Attribute: Resource=DSPELLXX.VEF
+File: CREWTD2.ITM, Name: Formation Slot 1, Attribute: Icon=CREWTD2.BAM
+File: CREWTD2A.SPL, Name: No such index, Attribute: Resource=CREWTD2.CRE
 File: CUARDUL.CRE, Name: Matron Mother Ardulace, Attribute: Dialogue=CUARDUL.DLG
 File: CUBODHI.CRE, Name: Bodhi, Attribute: Dialogue=CUBODHI.DLG
 File: CUCOW1.CRE, Name: Cowled Enforcer, Attribute: Dialogue=CUCOW1.DLG
@@ -277,6 +343,16 @@ File: CULTBH1.CRE, Name: Gauth, Attribute: Dialogue=CULTBH2.DLG
 File: CULTBH2.CRE, Name: Gauth, Attribute: Dialogue=CULTBH2.DLG
 File: CULTBH3.CRE, Name: Beholder, Attribute: Dialogue=CULTBH3.DLG
 File: CULTBH4.CRE, Name: Spectator, Attribute: Dialogue=CULTBH4.DLG
+File: CULTMO10.ITM, Name: No such index, Attribute: Resource=CULTMO10.CRE
+File: CULTMO11.ITM, Name: No such index, Attribute: Resource=CULTMO11.CRE
+File: CULTMO4.ITM, Name: No such index, Attribute: Resource=CULTMO4.CRE
+File: CULTMO5.ITM, Name: No such index, Attribute: Resource=CULTMO5.CRE
+File: CULTMO6.ITM, Name: No such index, Attribute: Resource=CULTMO6.CRE
+File: CULTMO7.ITM, Name: No such index, Attribute: Resource=CULTMO7.CRE
+File: CULTMO7.ITM, Name: No such index, Attribute: Resource=CULTMO7.CRE
+File: CULTMO7.ITM, Name: No such index, Attribute: Resource=CULTMO7.CRE
+File: CULTMO8.ITM, Name: No such index, Attribute: Resource=CULTMO8.CRE
+File: CULTMO9.ITM, Name: No such index, Attribute: Resource=CULTMO9.CRE
 File: CUPHAER.CRE, Name: Phaere, Attribute: Dialogue=CUPHAER.DLG
 File: CUPRIS1.CRE, Name: Elven Warrior, Attribute: Dialogue=CUPRIS1.DLG
 File: CUPRIS2.CRE, Name: Elven Warrior, Attribute: Dialogue=CUPRIS2.DLG
@@ -299,6 +375,14 @@ File: DADUER2.CRE, Name: Duergar, Attribute: Dialogue=DADUER2.DLG
 File: DADUER3.CRE, Name: Duergar, Attribute: Dialogue=DADUER3.DLG
 File: DADUER4.CRE, Name: Duergar, Attribute: Dialogue=DADUER4.DLG
 File: DADWARF.CRE, Name: Dwarf, Attribute: Dialogue=DADWARF.DLG
+File: DAELAN12.CRE, Name: Characters 4, 5, 6, Attribute: Small portrait=DAELANS.BMP
+File: DAELAN12.CRE, Name: Characters 4, 5, 6, Attribute: Large portrait=DAELANM.BMP
+File: DAELAN14.CRE, Name: Characters 4, 5, 6, Attribute: Small portrait=DAELANS.BMP
+File: DAELAN14.CRE, Name: Characters 4, 5, 6, Attribute: Large portrait=DAELANM.BMP
+File: DAELAN16.CRE, Name: Characters 4, 5, 6, Attribute: Small portrait=DAELANS.BMP
+File: DAELAN16.CRE, Name: Characters 4, 5, 6, Attribute: Large portrait=DAELANM.BMP
+File: DAELAN18.CRE, Name: Characters 4, 5, 6, Attribute: Small portrait=DAELANS.BMP
+File: DAELAN18.CRE, Name: Characters 4, 5, 6, Attribute: Large portrait=DAELANM.BMP
 File: DAELF.CRE, Name: Elven Mage, Attribute: Dialogue=DAELF.DLG
 File: DAELF2.CRE, Name: Elven Mage, Attribute: Dialogue=DAELF.DLG
 File: DAGHAUN1.CRE, Name: Ghaunadaur Priest Leader, Attribute: Dialogue=DAGHAUN1.DLG
@@ -318,6 +402,7 @@ File: DEATHKNI.CRE, Name: Demon Knight, Attribute: Dialogue=DEATHKNI.DLG
 File: DECK622.CRE, Name: Death Shade, Attribute: Dialogue=DECK622.DLG
 File: DECKASS1.CRE, Name: Thief, Attribute: Default script=DECKASS1.BCS
 File: DECKWAR1.CRE, Name: Fighter, Attribute: Default script=DECKWAR1.BCS
+File: DELILAH2.SPL, Name: No such index, Attribute: Resource=DELILAH2.CRE
 File: DEMOGOR2.CRE, Name: Demogorgon, Attribute: Dialogue=ZGORDEMO.DLG
 File: DEMOGORG.ITM, Name: No such index, Attribute: Icon=0.BAM
 File: DEMOGORG.ITM, Name: No such index, Attribute: Ground icon=0.BAM
@@ -347,6 +432,8 @@ File: DPSTAT02.CRE, Name: Petrified Man, Attribute: Dialogue=DPSTAT02.DLG
 File: DPSTAT03.CRE, Name: Petrified Woman, Attribute: Dialogue=DPSTAT03.DLG
 File: DPSTAT04.CRE, Name: Petrified Man, Attribute: Dialogue=DPSTAT04.DLG
 File: DPSTAT05.CRE, Name: Petrified Woman, Attribute: Dialogue=DPSTAT05.DLG
+File: DRAC3ITM.ITM, Name: Что ж, займитесь. Но снаружи. Ее и ее наемников из стражи тут не так уж любят., Attribute: Icon=DRAC3ITM.BAM
+File: DRAC3ITM.ITM, Name: Что ж, займитесь. Но снаружи. Ее и ее наемников из стражи тут не так уж любят., Attribute: Description image=DRAC3ITC.BAM
 File: DRAGRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: DRAGRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: DRAGRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -362,13 +449,19 @@ File: DROW06.CRE, Name: Drow, Attribute: Dialogue=DROW06.DLG
 File: DROW07.CRE, Name: Drow Priestess, Attribute: Dialogue=DROW07.DLG
 File: DRSHNL02.CRE, Name: Nilthiri, Attribute: Dialogue=DRSHNL02.DLG
 File: DURGA.STO, Name: "Сияющий рыцарь", Attribute: Rumors (drinks)=RFRIEN.DLG
+File: ECKLETT.ITM, Name: Тупица, ничто не сможет причинить нам вред! Приготовься к смерти!, Attribute: Icon=SCROLLN3.BAM
 File: ECOLT.CRE, Name: Monk, Attribute: Dialogue=MONK.DLG
 File: ELEILL01.CRE, Name: Mind Flayer, Attribute: Dialogue=ELEILL01.DLG
 File: ELEKOB01.CRE, Name: Kobold Commando, Attribute: General script=KBWARR01.BCS
 File: ELMIND.CRE, Name: Elminster, Attribute: Dialogue=ELMIND.DLG
+File: ELTCLOAK.ITM, Name: Your Hit Points and THAC0 are shown below. A lower THAC0 makes it easier to hit enemies., Attribute: Icon=ELTCLOAK.BAM
+File: ELTOOTH.ITM, Name: These are your weapon and ammunition slots., Attribute: Icon=ELTOOTH.BAM
+File: ELTOOTH.ITM, Name: These are your weapon and ammunition slots., Attribute: Description image=CTOOTH.BAM
 File: ELTURA2.STO, Name: Товары Эльтуры, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA3.STO, Name: Особые товары Эльтуры, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: ELTURA4.STO, Name: Arcana Archives, Attribute: Rumors (drinks)=RFRIEN.DLG
+File: ELTURITM.ITM, Name: To travel between areas, press on doors or map edges. Be sure to gather your party before venturing forth., Attribute: Icon=ELTURITM.BAM
+File: ELTURITM.ITM, Name: To travel between areas, press on doors or map edges. Be sure to gather your party before venturing forth., Attribute: Description image=ELTURITC.BAM
 File: ENTTEST1.VVC, Attribute: Animation=SPENTAXL.BAM
 File: EYEBHL01.CRE, Name: Eye of the Beholder, Attribute: Dialogue=EYEBHL01.DLG
 File: EYEDED01.CRE, Name: Eye of the Dead, Attribute: Dialogue=EYEDED01.DLG
@@ -393,6 +486,10 @@ File: FIRMON04.CRE, Name: Revenant, Attribute: Override script=MONFIR04.BCS
 File: FIRMON04.CRE, Name: Revenant, Attribute: Dialogue=MONFIR04.DLG
 File: FIRRAK02.CRE, Name: Ruhk, Attribute: Dialogue=FIRRAK02.DLG
 File: FIRWRA01.CRE, Name: Greater Wraith, Attribute: Dialogue=FIRWRA01.DLG
+File: FL#FINPC.SPL, Name: Summon Fiend, Attribute: Resource=RR#SGELU.EFF
+File: FL#GANPC.SPL, Name: Gate, Attribute: Spell icon=FL#905C.BAM
+File: FL#GANPC.SPL, Name: Gate, Attribute: Icon=FL#905B.BAM
+File: FLAMEN2.CRE, Name: Flaming Fist Enforcer, Attribute: Small portrait=FLAMEN2.BMP
 File: FLYFGT02.CRE, Name: Shadow Thief, Attribute: Dialogue=FLYFGT02.DLG
 File: FLYFGT03.CRE, Name: Shadow Thief, Attribute: Dialogue=FLYFGT03.DLG
 File: FLYFGT04.CRE, Name: Shadow Thief, Attribute: Dialogue=FLYFGT04.DLG
@@ -409,6 +506,9 @@ File: GAAL02.CRE, Name: Gaal, Attribute: Dialogue=GAAL02.DLG
 File: GAIUS.CRE, Name: Gaius, Attribute: Dialogue=GAIUS.DLG
 File: GALL.CRE, Name: Gallchobhair, Attribute: Dialogue=GALL.DLG
 File: GENPEASM.CRE, Name: Peasant, Attribute: Dialogue=DPSTAT02.DLG
+File: GETHW.CRE, Name: Shapeshifter, Attribute: Small portrait=GETHW.BMP
+File: GETHW.CRE, Name: Shapeshifter, Attribute: Override script=GETHW.BCS
+File: GETRING.ITM, Name: A useful tactic is to pepper the enemy with ranged shots before switching to a melee weapon and moving into close combat., Attribute: Icon=GETRING.BAM
 File: GLADIA01.CRE, Name: Gatekeeper, Attribute: Dialogue=GATEWERE.DLG
 File: GMAYOR.CRE, Name: Theshal, Attribute: Dialogue=GMAYOR.DLG
 File: GNLCAP01.CRE, Name: Gnoll Captain, Attribute: General script=GNLEAD01.BCS
@@ -441,6 +541,107 @@ File: GORWOM05.CRE, Name: Hive Mother, Attribute: Dialogue=GORWOM05.DLG
 File: GORWOM06.CRE, Name: Xei Win Toh, Attribute: Dialogue=GORWOM06.DLG
 File: GPFIGHT1.CRE, Name: Boz, Attribute: Dialogue=GPFIGHT1.DLG
 File: GPSIMB.CRE, Name: Simbja, Attribute: Dialogue=GPSIMB.DLG
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Small portrait=GRIMGNAS.BMP
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Large portrait=GRIMGNAM.BMP
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: General script=GRIMGNAX.BCS
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR147.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR247.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR245.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR346.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR345.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR423.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR426.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR427.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR428.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR431.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR547.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR526.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR523.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR645.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR628.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR621.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR623.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR618.SPL
+File: GRIMGN12.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Small portrait=GRIMGNAS.BMP
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Large portrait=GRIMGNAM.BMP
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: General script=GRIMGNAX.BCS
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR147.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR247.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR245.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR346.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR345.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR423.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR426.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR427.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR428.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR431.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR547.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR526.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR523.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR645.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR628.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR621.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR623.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR618.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR740.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR748.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR734.SPL
+File: GRIMGN14.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Small portrait=GRIMGNAS.BMP
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Large portrait=GRIMGNAM.BMP
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: General script=GRIMGNAX.BCS
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR147.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR247.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR245.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR346.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR345.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR423.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR426.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR427.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR428.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR431.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR547.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR526.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR523.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR645.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR628.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR621.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR623.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR618.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR740.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR748.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR734.SPL
+File: GRIMGN16.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Small portrait=GRIMGNAS.BMP
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Large portrait=GRIMGNAM.BMP
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: General script=GRIMGNAX.BCS
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR147.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR247.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR245.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR346.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR345.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR423.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR426.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR427.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR428.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR431.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR547.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR526.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR523.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR645.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR628.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR621.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR623.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR618.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR740.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR748.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR734.SPL
+File: GRIMGN18.CRE, Name: Lost Class: Inquisitor, Attribute: Spell=SPPR145.SPL
 File: GROMG03.CRE, Name: Il-Khan Soldier, Attribute: Dialogue=GROMG03.DLG
 File: GROMG04.CRE, Name: Il-Khan Soldier, Attribute: Dialogue=GROMG04.DLG
 File: GROMG05.CRE, Name: Il-Khan Battle Mage, Attribute: Dialogue=GROMG05.DLG
@@ -461,6 +662,26 @@ File: GTCIT3.CRE, Name: Zombie, Attribute: Dialogue=GTCIT3.DLG
 File: GTCIT4.CRE, Name: Zombie, Attribute: Dialogue=GTCIT4.DLG
 File: GTCIT5.CRE, Name: Zombie, Attribute: Dialogue=GTCIT5.DLG
 File: GUAMUR.CRE, Name: Amnian Soldier, Attribute: Dialogue=GUAMUR.DLG
+File: GUARDEN.CRE, Name: Rats are difficult to kill with poisons because their feeding habits reflect their place as scavengers. An effective rat poison must be tasteless, odorless and have a delayed effect.
+
+STATISTICS:
+
+Weight: 0, Attribute: Small portrait=GUARDEN.BMP
+File: GUARDEN.CRE, Name: Rats are difficult to kill with poisons because their feeding habits reflect their place as scavengers. An effective rat poison must be tasteless, odorless and have a delayed effect.
+
+STATISTICS:
+
+Weight: 0, Attribute: Override script=INITRG20.BCS
+File: GUARDEN.CRE, Name: Rats are difficult to kill with poisons because their feeding habits reflect their place as scavengers. An effective rat poison must be tasteless, odorless and have a delayed effect.
+
+STATISTICS:
+
+Weight: 0, Attribute: Item=SW1H13N.ITM
+File: GUARDEN.CRE, Name: Rats are difficult to kill with poisons because their feeding habits reflect their place as scavengers. An effective rat poison must be tasteless, odorless and have a delayed effect.
+
+STATISTICS:
+
+Weight: 0, Attribute: Item=MINHP1X.ITM
 File: GUICG.CHU, Attribute: Background 1=XXXXGRBG.MOS
 File: GUICG.CHU, Attribute: Background 2=XXXXGRBG.MOS
 File: GUICG.CHU, Attribute: Background 3=XXXXGRBG.MOS
@@ -682,6 +903,231 @@ File: GUIW20.CHU, Attribute: Button=GUIWDB20.BAM
 File: HAERPROF.SPL, Name: No such index, Attribute: Spell icon=0.BAM
 File: HAGUAR01.CRE, Name: Arresting Officer, Attribute: Dialogue=HAGUARD0.DLG
 File: HAGUAR02.CRE, Name: Arresting Soldier, Attribute: Dialogue=HAGUARD0.DLG
+File: HALBNW1.ITM, Name: Cinematics Texturing
+Ryan Blanchard, Matthew M. Goldman, Marc Holmes, Michael Sass
+	
+Additional Texturing
+Yunkyung Kim, Rick Li, Enrique Deo Perez
+	
+Cimenatics Scripts
+Steven Gilmour, David Hibbeln, Lukas Kristjanson
+	
+Cinematics Concept Art
+John Samuel Gallagher, Marc Holmes, Michael Sass
+	
+Storyboards
+Steven Gilmour, Kelly Goodine, David Hibbeln
+	
+Video Art - Matthew Fischer
+	
+Cinematics Animation
+Steven Gilmour, Rick Li, Enrique Deo Perez, Larry Stevens, Henrik Vasquez,Tony de Waal
+	
+Effect Animation
+David Hibbeln, Russell Rice, Alex Scott, Tony de Waal
+	
+Scene Set up and Lighting
+Rick Li, Enrique Deo Perez, Russell Rice, Michael Sass
+	
+Additional Scene Set up and Lighting
+Ryan Blanchard, Steven Gilmour, David Hibbeln, Larry Stevens, Henrik Vasquez
+	
+Sound Editing by
+Stephen Miller, J. P. Walton, Frank Szick, Caron Weidner, Eight Ball Sound
+	
+Audio - David Chan
+	
+Communications Manager - Brad Grier, Attribute: Icon=HALBNW1.BAM
+File: HALBNW1.ITM, Name: Cinematics Texturing
+Ryan Blanchard, Matthew M. Goldman, Marc Holmes, Michael Sass
+	
+Additional Texturing
+Yunkyung Kim, Rick Li, Enrique Deo Perez
+	
+Cimenatics Scripts
+Steven Gilmour, David Hibbeln, Lukas Kristjanson
+	
+Cinematics Concept Art
+John Samuel Gallagher, Marc Holmes, Michael Sass
+	
+Storyboards
+Steven Gilmour, Kelly Goodine, David Hibbeln
+	
+Video Art - Matthew Fischer
+	
+Cinematics Animation
+Steven Gilmour, Rick Li, Enrique Deo Perez, Larry Stevens, Henrik Vasquez,Tony de Waal
+	
+Effect Animation
+David Hibbeln, Russell Rice, Alex Scott, Tony de Waal
+	
+Scene Set up and Lighting
+Rick Li, Enrique Deo Perez, Russell Rice, Michael Sass
+	
+Additional Scene Set up and Lighting
+Ryan Blanchard, Steven Gilmour, David Hibbeln, Larry Stevens, Henrik Vasquez
+	
+Sound Editing by
+Stephen Miller, J. P. Walton, Frank Szick, Caron Weidner, Eight Ball Sound
+	
+Audio - David Chan
+	
+Communications Manager - Brad Grier, Attribute: Icon=HALBNW1.BAM
+File: HALBNW2.ITM, Name: VO Casting / Direction Supervision
+Chris Borders
+
+VO Editing by Stephen Miller, Jeremy Simpson, Frank Szick, J. P. Walton
+	
+VO Talent
+Charles Adler, Dee Bradley Baker, Michael Bell, Jeff Glenn Bennett, Gregg Berger, Cam Clarke, Jonathan Cook, Jim Cummings, Grey DeLisle, Melissa Disney, Bill Farmer, Michael Gough, Wayne Grace, Jennifer Hale, Amber Hood, James Horan, Roger L. Jackson, Charity James, Nick Jameson, Maurice LaMarche, John Mariano, Jason Marsden, Bill E. Martin, Jim Meskimen, Tress MacNeille, Alan Oppenheimer, Jeff Osterhage, Valerie Pappas, Rob Paulsen, Diane Pershing, David Prince, Kevin Michael Richardson, Jack Roth, Dwight Schultz, Heidi Shannon, Jane Singer, Kath E. Soucie, John Vernon, B. J. Ward, David Warner, Frank Welker, Billy West, Donovan Workun
+	
+Walla Cast
+John Demita, Anneliese Goldman, Daamen Krall, Marsha Kramer, Richard Penn, David J. Randolph
+	
+VO Recorded at Screenmusic Studios
+	
+VO Engineer - Mike Draghi
+	
+VO Assistant - Eric Lewis
+
+Walla Casting - Barbara Harris Loop-Group Casting
+	
+Walla Recorded at WarnerBrothers Hollywood
+	
+Additional VO Casting - Lisa Wasserman (Virtual Casting)
+	
+Sound Designer - Tim Gedemer (Audio Group)
+	
+Foley Mixer - Eric Thompson (EFX)
+	
+Foley Artist - Laura Macias (EFX)
+	
+Thank you to Shannon Woods (for all your help at the Renaissance Pleasure Faire), Attribute: Icon=HALBNW2.BAM
+File: HALBNW2.ITM, Name: VO Casting / Direction Supervision
+Chris Borders
+
+VO Editing by Stephen Miller, Jeremy Simpson, Frank Szick, J. P. Walton
+	
+VO Talent
+Charles Adler, Dee Bradley Baker, Michael Bell, Jeff Glenn Bennett, Gregg Berger, Cam Clarke, Jonathan Cook, Jim Cummings, Grey DeLisle, Melissa Disney, Bill Farmer, Michael Gough, Wayne Grace, Jennifer Hale, Amber Hood, James Horan, Roger L. Jackson, Charity James, Nick Jameson, Maurice LaMarche, John Mariano, Jason Marsden, Bill E. Martin, Jim Meskimen, Tress MacNeille, Alan Oppenheimer, Jeff Osterhage, Valerie Pappas, Rob Paulsen, Diane Pershing, David Prince, Kevin Michael Richardson, Jack Roth, Dwight Schultz, Heidi Shannon, Jane Singer, Kath E. Soucie, John Vernon, B. J. Ward, David Warner, Frank Welker, Billy West, Donovan Workun
+	
+Walla Cast
+John Demita, Anneliese Goldman, Daamen Krall, Marsha Kramer, Richard Penn, David J. Randolph
+	
+VO Recorded at Screenmusic Studios
+	
+VO Engineer - Mike Draghi
+	
+VO Assistant - Eric Lewis
+
+Walla Casting - Barbara Harris Loop-Group Casting
+	
+Walla Recorded at WarnerBrothers Hollywood
+	
+Additional VO Casting - Lisa Wasserman (Virtual Casting)
+	
+Sound Designer - Tim Gedemer (Audio Group)
+	
+Foley Mixer - Eric Thompson (EFX)
+	
+Foley Artist - Laura Macias (EFX)
+	
+Thank you to Shannon Woods (for all your help at the Renaissance Pleasure Faire), Attribute: Icon=HALBNW2.BAM
+File: HALBNW2.ITM, Name: VO Casting / Direction Supervision
+Chris Borders
+
+VO Editing by Stephen Miller, Jeremy Simpson, Frank Szick, J. P. Walton
+	
+VO Talent
+Charles Adler, Dee Bradley Baker, Michael Bell, Jeff Glenn Bennett, Gregg Berger, Cam Clarke, Jonathan Cook, Jim Cummings, Grey DeLisle, Melissa Disney, Bill Farmer, Michael Gough, Wayne Grace, Jennifer Hale, Amber Hood, James Horan, Roger L. Jackson, Charity James, Nick Jameson, Maurice LaMarche, John Mariano, Jason Marsden, Bill E. Martin, Jim Meskimen, Tress MacNeille, Alan Oppenheimer, Jeff Osterhage, Valerie Pappas, Rob Paulsen, Diane Pershing, David Prince, Kevin Michael Richardson, Jack Roth, Dwight Schultz, Heidi Shannon, Jane Singer, Kath E. Soucie, John Vernon, B. J. Ward, David Warner, Frank Welker, Billy West, Donovan Workun
+	
+Walla Cast
+John Demita, Anneliese Goldman, Daamen Krall, Marsha Kramer, Richard Penn, David J. Randolph
+	
+VO Recorded at Screenmusic Studios
+	
+VO Engineer - Mike Draghi
+	
+VO Assistant - Eric Lewis
+
+Walla Casting - Barbara Harris Loop-Group Casting
+	
+Walla Recorded at WarnerBrothers Hollywood
+	
+Additional VO Casting - Lisa Wasserman (Virtual Casting)
+	
+Sound Designer - Tim Gedemer (Audio Group)
+	
+Foley Mixer - Eric Thompson (EFX)
+	
+Foley Artist - Laura Macias (EFX)
+	
+Thank you to Shannon Woods (for all your help at the Renaissance Pleasure Faire), Attribute: Resource=DAM1D10.EFF
+File: HAMMNW1.ITM, Name: Senior PR Manager - Lisa Bucek-Jensen
+	
+Web Team
+Sean Patton, Edward Arandia, Steve Jobes, Terry Spier, Sandi Spier
+	
+Creative Services Manager - Kathy Helgason
+	
+Traffic Manager - Kathryne Wahl
+	
+Manual Design and Layout (US) - Lee Fleshman
+	
+Mixer Pre-Recording
+Lance Brown, Marc Fishman
+	
+Music mixed in Dolby Surround at 4MC
+	
+Black Isle Studios Division Director - Feargus Urquhart
+	
+Senior Producer - Chris Parker
+	
+Associate Producer - Douglas W. Avery
+	
+Sound Localization Producers - Fred Hatch
+	
+Division Operations Manager - Benson
+	
+Division Operations Asst. - Primo Pulanco
+	
+Promotional Artwork - Jason Manley
+	
+Special Thanks To The Icewind Dale team, Elephant and Castle, Delta Centre Suites, Eaton Centre, Jim Gardner, Attribute: Icon=HAMMNW1.BAM
+File: HAMMNW1.ITM, Name: Senior PR Manager - Lisa Bucek-Jensen
+	
+Web Team
+Sean Patton, Edward Arandia, Steve Jobes, Terry Spier, Sandi Spier
+	
+Creative Services Manager - Kathy Helgason
+	
+Traffic Manager - Kathryne Wahl
+	
+Manual Design and Layout (US) - Lee Fleshman
+	
+Mixer Pre-Recording
+Lance Brown, Marc Fishman
+	
+Music mixed in Dolby Surround at 4MC
+	
+Black Isle Studios Division Director - Feargus Urquhart
+	
+Senior Producer - Chris Parker
+	
+Associate Producer - Douglas W. Avery
+	
+Sound Localization Producers - Fred Hatch
+	
+Division Operations Manager - Benson
+	
+Division Operations Asst. - Primo Pulanco
+	
+Promotional Artwork - Jason Manley
+	
+Special Thanks To The Icewind Dale team, Elephant and Castle, Delta Centre Suites, Eaton Centre, Jim Gardner, Attribute: Icon=HAMMNW1.BAM
+File: HAMMNW2.ITM, Name: Restoring purchases, Attribute: Icon=HAMMNW2.BAM
+File: HAMMNW2.ITM, Name: Restoring purchases, Attribute: Icon=HAMMNW2.BAM
+File: HARBITM.ITM, Name: Ah-hah! DEATH! CARNAGE! The blood of Bhaal BOILS within me!, Attribute: Icon=HARBITM.BAM
 File: HASHER.STO, Name: "Сияющий рыцарь", Attribute: Rumors (drinks)=RFRIEN.DLG
 File: HELLJON2.CRE, Name: Jon Irenicus, Attribute: Override script=HELLJON2.BCS
 File: HELLJON2.CRE, Name: Jon Irenicus, Attribute: Dialogue=HELLJON2.DLG
@@ -711,9 +1157,11 @@ File: HOBGOBSU.CRE, Name: Hobgoblin Elite, Attribute: Race script=KOBOLSU.BCS
 File: HOLDRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: HOLDRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: HOLDRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
+File: HOOK5.CRE, Name: Эдегар, Attribute: Item=HOOK4.ITM
 File: ICGOB01.CRE, Name: Goblin, Attribute: General script=KBARCH01.BCS
 File: ICGOB02.CRE, Name: Goblin, Attribute: General script=KBARCH01.BCS
 File: ICMARILI.CRE, Name: Marilith, Attribute: Dialogue=ICMARILI.DLG
+File: IGLAND.CRE, Name: Ты ослепил меня, но я все еще могу тебя чувствовать!, Attribute: Small portrait=IGLAND.BMP
 File: IMOEN.CRE, Name: Imoen, Attribute: Dialogue=IMOEN.DLG
 File: INNKE2.CRE, Name: Winthrop, Attribute: Dialogue=INNKE2.DLG
 File: INVULNER.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -724,6 +1172,10 @@ File: ISHADTH1.CRE, Name: Assassin, Attribute: Dialogue=ISHADTH1.DLG
 File: ISHCLO01.CRE, Name: Assassin, Attribute: Dialogue=ISHCLO01.DLG
 File: ISHTHF01.CRE, Name: Assassin, Attribute: Dialogue=ISHTHF01.DLG
 File: ISHTHF03.CRE, Name: Assassin, Attribute: Dialogue=ISHTHF03.DLG
+File: ISLUND4.CRE, Name: Mage, Attribute: Override script=ISLUND4.BCS
+File: ISLUND5.CRE, Name: Mage, Attribute: Override script=ISLUND4.BCS
+File: IWDMIST6.CRE, Name: Экель, Attribute: Item=IWDMIST6.ITM
+File: IWDMIST7.CRE, Name: Ice Mist, Attribute: Item=IWDMIST7.ITM
 File: JADE1.CRE, Name: Lennah, Attribute: Dialogue=JADE1.DLG
 File: JADE2.CRE, Name: Thenry, Attribute: Dialogue=JADE2.DLG
 File: JADE3.CRE, Name: Jeremon, Attribute: Dialogue=JADE3.DLG
@@ -740,8 +1192,11 @@ File: JAGA3.CRE, Name: Nadinal, Attribute: Dialogue=JAGA3.DLG
 File: JAGA4.CRE, Name: Iko, Attribute: Dialogue=JAGA4.DLG
 File: JAHEIRD.CRE, Name: Jaheira, Attribute: Override script=JAHEIRD.BCS
 File: JAHEIRD.CRE, Name: Jaheira, Attribute: Dialogue=JAHEIRD.DLG
+File: JAHEL.CRE, Name: Pull yourself together! We need you!, Attribute: Small portrait=JAHEL.BMP
+File: JAHEL.CRE, Name: Pull yourself together! We need you!, Attribute: Override script=JAHEL.BCS
 File: JAMAGE1.CRE, Name: Gracien, Attribute: Dialogue=JAMAGE1.DLG
 File: JAMAGE2.CRE, Name: Malacazar, Attribute: Dialogue=JAMAGE2.DLG
+File: JANIS2.CRE, Name: You DARE stand against ME! How perfectly MAD of you!, Attribute: Override script=JANIS2.BCS
 File: JANOS.CRE, Name: Janos, Attribute: Dialogue=JANOS.DLG
 File: JON1.CRE, Name: Jon Irenicus, Attribute: Dialogue=JON1.DLG
 File: JONDAL.CRE, Name: Jondalar, Attribute: Dialogue=JONDAL.DLG
@@ -757,8 +1212,20 @@ File: JWSP01.SPL, Name: No such index, Attribute: Spell icon=SPCL904C.BAM
 File: JWSUPER.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: JWSUPER.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: JWSUPER.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
+File: KARATHIW.CRE, Name: As you wish. Come see me on the morrow., Attribute: Small portrait=KARATHIW.BMP
+File: KARATHIW.CRE, Name: As you wish. Come see me on the morrow., Attribute: Override script=KARATHIW.BCS
+File: KARATHIW.CRE, Name: As you wish. Come see me on the morrow., Attribute: Item=DW#FREE.ITM
+File: KARLATT.ITM, Name: This scroll is specifically attuned to The Winged. It grants the user and <PRO_HISHER> allies a slight advantage against her in combat. This effect is temporary and will wear off quickly in the heat of battle.
+
+STATISTICS:
+Special:  grants a +5 bonus to hit and damage against The Winged
+Range:  Touch
+Area of effect:  10' radius
+Duration:  2 turns, Attribute: Icon=QUINTT.BAM
 File: KCHILD1.CRE, Name: Peasant, Attribute: Dialogue=KCHILD1.DLG
 File: KCHILD2.CRE, Name: Peasant, Attribute: Dialogue=KCHILD2.DLG
+File: KHELBEN.CRE, Name: The githyanki are not—, Attribute: Small portrait=WINSKIS.BMP
+File: KHELBEN.CRE, Name: The githyanki are not—, Attribute: Item=BGRING08.ITM
 File: KOBARC01.CRE, Name: Kobold, Attribute: General script=KBARCH01.BCS
 File: KOBCAP01.CRE, Name: Kobold Captain, Attribute: General script=KBLEAD01.BCS
 File: KOBCOM01.CRE, Name: Kobold Commando, Attribute: General script=KBWARR01.BCS
@@ -792,11 +1259,256 @@ File: KPTROL04.CRE, Name: Troll, Attribute: Class script=KPTROL04.BCS
 File: KPTROL04.CRE, Name: Troll, Attribute: Dialogue=KPTROL04.DLG
 File: kptrol13.CRE, Name: Troll, Attribute: Dialogue=KPTROL03.DLG
 File: KSHADOW.CRE, Name: Shadow, Attribute: Dialogue=KSHADOW.DLG
+File: LEATNW1.ITM, Name: Do you want me to leave the party?, Attribute: Icon=LEATNW1.BAM
 File: LEGDOR.CRE, Name: Legdoril, Attribute: Dialogue=LEGDOR.DLG
+File: LERK2.CRE, Name: Do you require my services once again?, Attribute: Override script=LERK2.BCS
 File: LIGHTSTO.PRO, Name: Call Lightning Storm, Attribute: Projectile animation=MAGMIS.BAM
 File: LIIA.CRE, Name: Liia Jannath, Attribute: Dialogue=LIIA.DLG
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Small portrait=LINAS.BMP
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Large portrait=LINAM.BMP
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR147.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR145.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR247.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR346.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR345.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR423.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR426.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR427.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR428.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR431.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR547.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR526.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR522.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR523.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR529.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR546.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR530.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR645.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR627.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR621.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR623.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA12.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL5.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Small portrait=LINAS.BMP
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Large portrait=LINAM.BMP
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR147.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR145.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR247.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR346.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR345.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR423.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR426.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR427.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR428.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR431.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR547.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR526.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR522.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR523.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR529.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR546.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR530.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR645.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR628.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR627.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR621.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR623.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR740.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR748.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR747.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR734.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR745.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA14.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL5.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Small portrait=LINAS.BMP
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Large portrait=LINAM.BMP
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR147.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR145.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR247.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR346.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR345.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR423.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR426.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR427.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR428.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR431.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR547.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR526.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR522.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR523.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR529.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR546.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR530.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR645.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR628.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR627.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR621.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR623.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR740.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR748.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR747.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR734.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR745.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL6.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL6.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL5.SPL
+File: LINA16.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL5.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Small portrait=LINAS.BMP
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Large portrait=LINAM.BMP
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR147.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR145.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR247.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR346.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR345.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR423.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR426.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR427.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR428.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR431.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR547.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR526.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR522.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR523.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR529.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR546.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR530.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR645.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR628.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR627.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR621.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR623.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR740.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR748.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR747.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR734.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR745.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL6.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR245.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPPR618.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL0.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL3.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL1.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL2.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL6.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Spell=SPHEAL6.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL4.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL5.SPL
+File: LINA18.CRE, Name: Yes, please rejoin the party., Attribute: Parent resource=SPHEAL5.SPL
 File: LLYLLA.CRE, Name: Llylla, Attribute: Override script=LLYLLA.BCS
 File: LLYLLA.CRE, Name: Llylla, Attribute: Dialogue=LLYLLA.DLG
+File: MACVWOLF.CRE, Name: Vampiric Wolf, Attribute: Override script=MACVWOLF.BCS
+File: MAEGAL.CRE, Name: Slayer Change
+
+When you use this ability, you take on the form of the brutal essence of Bhaal: a violent, powerful creature made of teeth and claws. Using this ability reduces your reputation by two points, as even those who do not witness the event can sense the corruption caused by giving yourself over to instinct.
+
+The Slayer form grants the following benefits:
+
+– Strength and Dexterity set to 25
+– Effective AC set to -9
+– Magic Resistance set to 40%
+– Saving Throws set to 2
+– Attacks per round set to 4 (1d8 crushing, 2 cold)
+– THAC0 set to 0
+– +100 Hit Points
+– Immunity to imprisonment, level drain, stun, and missile attacks, Attribute: Small portrait=MAEGAL.BMP
+File: MAEGAL.CRE, Name: Slayer Change
+
+When you use this ability, you take on the form of the brutal essence of Bhaal: a violent, powerful creature made of teeth and claws. Using this ability reduces your reputation by two points, as even those who do not witness the event can sense the corruption caused by giving yourself over to instinct.
+
+The Slayer form grants the following benefits:
+
+– Strength and Dexterity set to 25
+– Effective AC set to -9
+– Magic Resistance set to 40%
+– Saving Throws set to 2
+– Attacks per round set to 4 (1d8 crushing, 2 cold)
+– THAC0 set to 0
+– +100 Hit Points
+– Immunity to imprisonment, level drain, stun, and missile attacks, Attribute: Override script=MAEGAL.BCS
+File: MAEGAL.CRE, Name: Slayer Change
+
+When you use this ability, you take on the form of the brutal essence of Bhaal: a violent, powerful creature made of teeth and claws. Using this ability reduces your reputation by two points, as even those who do not witness the event can sense the corruption caused by giving yourself over to instinct.
+
+The Slayer form grants the following benefits:
+
+– Strength and Dexterity set to 25
+– Effective AC set to -9
+– Magic Resistance set to 40%
+– Saving Throws set to 2
+– Attacks per round set to 4 (1d8 crushing, 2 cold)
+– THAC0 set to 0
+– +100 Hit Points
+– Immunity to imprisonment, level drain, stun, and missile attacks, Attribute: Item=CHWRAIT2.ITM
 File: MAGE05.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: MAGE05.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: MAGE05.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
@@ -804,6 +1516,42 @@ File: MALLA01.CRE, Name: Malla, Attribute: Default script=MALLA01.BCS
 File: MDHSSS.CRE, Name: Greater Air Elemental, Attribute: Override script=MDHSSS.BCS
 File: MDHSSS.CRE, Name: Greater Air Elemental, Attribute: Dialogue=MDHSSS.DLG
 File: MEKEAR01.CRE, Name: Lesser Earth Elemental, Attribute: Dialogue=MEKEAR01.DLG
+File: MELDANEN.CRE, Name: ~ Notes ~
+
+The translators and editors give continuous support to this translation. Please inform of any bug or leave your comments in the forums at www.clandlan.net or www.baldursgate.com.
+
+Thanks:
+
+To the players, modders and translators of Baldur's Gate that have kept the game alive all these years.
+To the participants of the forums at www.clandlan.net and www.baldursgate.com for their support.
+And to YOU, for playing this game., Attribute: Small portrait=MELDANEN.BMP
+File: MELDANEN.CRE, Name: ~ Notes ~
+
+The translators and editors give continuous support to this translation. Please inform of any bug or leave your comments in the forums at www.clandlan.net or www.baldursgate.com.
+
+Thanks:
+
+To the players, modders and translators of Baldur's Gate that have kept the game alive all these years.
+To the participants of the forums at www.clandlan.net and www.baldursgate.com for their support.
+And to YOU, for playing this game., Attribute: Override script=MELDSHT.BCS
+File: MELDANEN.CRE, Name: ~ Notes ~
+
+The translators and editors give continuous support to this translation. Please inform of any bug or leave your comments in the forums at www.clandlan.net or www.baldursgate.com.
+
+Thanks:
+
+To the players, modders and translators of Baldur's Gate that have kept the game alive all these years.
+To the participants of the forums at www.clandlan.net and www.baldursgate.com for their support.
+And to YOU, for playing this game., Attribute: General script=MELD20B.BCS
+File: MELDANEN.CRE, Name: ~ Notes ~
+
+The translators and editors give continuous support to this translation. Please inform of any bug or leave your comments in the forums at www.clandlan.net or www.baldursgate.com.
+
+Thanks:
+
+To the players, modders and translators of Baldur's Gate that have kept the game alive all these years.
+To the participants of the forums at www.clandlan.net and www.baldursgate.com for their support.
+And to YOU, for playing this game., Attribute: Item=STAFFNW3.ITM
 File: MELSUM04.CRE, Name: Balor, Attribute: Dialogue=DEMOSUM2.DLG
 File: MELSUM05.CRE, Name: Marilith, Attribute: Dialogue=DEMOSUM1.DLG
 File: MGASS01.CRE, Name: Sergeant Natula, Attribute: Class script=MGASS01.BCS
@@ -813,6 +1561,14 @@ File: MGASS03.CRE, Name: Vilhelm, Attribute: Class script=MGASS03.BCS
 File: MGASS03.CRE, Name: Vilhelm, Attribute: Dialogue=MGASS03.DLG
 File: MINHP1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: MINHP1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Icon=MIRALIS.BAM
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Icon=MIRALIS.BAM
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Resource=LICHDAM3.EFF
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Resource=LICHHIT3.EFF
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Resource=MIRALIS1.EFF
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Resource=MIRALIS2.EFF
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Resource=MIRALIS3.EFF
+File: MIRALIS.ITM, Name: Cook's Special Dumplings, Attribute: Resource=MIRALIS4.EFF
 File: MISC02.ITM, Name: Mirror, Attribute: Icon=IMISC02.BAM
 File: MISC02.ITM, Name: Mirror, Attribute: Ground icon=GMISC02.BAM
 File: MISC03.ITM, Name: Small Box, Attribute: Icon=IMISC03.BAM
@@ -834,19 +1590,117 @@ File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: MORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NALIN.CRE, Name: Nalin, Attribute: Dialogue=NALIN.DLG
 File: NALLA.CRE, Name: Stormherald Nallabir, Attribute: Dialogue=NALLA.DLG
+File: NEURIKPL.ITM, Name: Ether Gate
+(Alteration)
+
+Level: 7
+Sphere: Travelers
+Range: Touch 
+Duration: 5 rounds
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell transports one creature, chosen by the caster, to the Ethereal Plane. The creature vanishes for the spell's duration, at which point it returns to the physical world in the exact same spot where it was before. While in the Ethereal Plane, the victim cannot interact with anyone or anything that resides on the Prime Material Plane. There is no saving throw against this spell, though it is subject to magic resistance. Friendly creatures can lower their magic resistance so that the shaman can target them with this spell. In addition, Ether Gate is blocked by spells and abilities that protect against maze effects., Attribute: Icon=NEURIKPL.BAM
+File: NEURIKPL.ITM, Name: Ether Gate
+(Alteration)
+
+Level: 7
+Sphere: Travelers
+Range: Touch 
+Duration: 5 rounds
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell transports one creature, chosen by the caster, to the Ethereal Plane. The creature vanishes for the spell's duration, at which point it returns to the physical world in the exact same spot where it was before. While in the Ethereal Plane, the victim cannot interact with anyone or anything that resides on the Prime Material Plane. There is no saving throw against this spell, though it is subject to magic resistance. Friendly creatures can lower their magic resistance so that the shaman can target them with this spell. In addition, Ether Gate is blocked by spells and abilities that protect against maze effects., Attribute: Icon=NEURIKPL.BAM
+File: NEVA.CRE, Name: Ethereal Retribution
+(Conjuration)
+
+Level: Quest
+Sphere: Summoning
+Range: 40 ft.
+Duration: 3 rounds
+Casting Time: 8
+Area of Effect: 15-ft. radius 
+Saving Throw: Special
+
+Ghostly figures called by the Shaman swirl around the battlefield, tormenting the Shaman's adversaries. All enemies within the area of effect take 3d8 points of magic damage per round for the next 3 rounds (no save). In addition, all living enemies (undead and constructs are unaffected) must save vs. Spell or lose 2 points of Strength every round for 5 rounds. The Strength loss is cumulative, but this spell cannot reduce the Strength of a creature below 1., Attribute: Override script=NEVA2.BCS
 File: NEVM2.CRE, Name: Skeleton Warrior, Attribute: Dialogue=GRSKEL2.DLG
 File: NOBL4.CRE, Name: Nobleman, Attribute: Dialogue=NOBL4.DLG
 File: NOBW4.CRE, Name: Noblewoman, Attribute: Dialogue=NOBW4.DLG
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDSW1H58.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDMOUND.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDHGNYA1.SPL
+File: NWAMUL02.ITM, Name: Я хочу узнать о "Кровавых моряках"., Attribute: Icon=NWAMUL02.BAM
+File: NWAMUL02.ITM, Name: Я хочу узнать о "Кровавых моряках"., Attribute: Resource=LIZARHIT.EFF
+File: NWAMUL02.ITM, Name: Я хочу узнать о "Кровавых моряках"., Attribute: Resource=LIZARDAM.EFF
+File: NWAMUL03.ITM, Name: Через рот и прямо в горло!, Attribute: Icon=NWAMUL03.BAM
+File: NWAMUL4.ITM, Name: Дела нынче и так-то застопорились, а тут еще этот аукцион в таверне Сиди., Attribute: Icon=NWAMUL4.BAM
+File: NWAMUL4.ITM, Name: Дела нынче и так-то застопорились, а тут еще этот аукцион в таверне Сиди., Attribute: Description image=NWAMUL4C.BAM
+File: NWBOOT1.ITM, Name: Выродок су..., Attribute: Icon=NWBOOT1.BAM
+File: NWBOW1.ITM, Name: Suffer!, Attribute: Icon=NWBOW1.BAM
+File: NWBOW1.ITM, Name: Suffer!, Attribute: Icon=NWBOW1.BAM
+File: NWBRAC01.ITM, Name: Вы дерзки - пришли в мой дом, а теперь строите мне глазки. Перестаньте. Я скажу, если вы потом уйдете. Мы нашли запись в старой книге, а когда мы произнесли слово, шкаф открылся. Мы хотели выкопать там тайник, чтобы стражники его не нашли, но там был... Там был туннель., Attribute: Icon=MELANGLV.BAM
+File: NWCATAP1.CRE, Name: Хммм... должно быть это с корабля-призрака, Attribute: Override script=NWCATAP1.BCS
+File: NWCATAP2.CRE, Name: Хммм... должно быть это с корабля-призрака, Attribute: Override script=NWCATAP2.BCS
+File: NWCULT1M.CRE, Name: What?, Attribute: Race script=NWCULTSU.BCS
+File: NWCULTL1.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Small portrait=NWCULTM1.BMP
+File: NWCULTL1.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Override script=NWCULTMX.BCS
+File: NWCULTL1.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Race script=NWCULTSU.BCS
+File: NWCULTL1.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Dialogue=GUZUD2.DLG
+File: NWCULTL3.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Small portrait=NWCULTM2.BMP
+File: NWCULTL3.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Override script=NWCULTMX.BCS
+File: NWCULTL3.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Dialogue=GUZUD1.DLG
+File: NWDEMSPI.CRE, Name: Disappointed!, Attribute: Item=F_DEMSPI.ITM
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
+File: NWHUSB.CRE, Name: A worthy sacrifice., Attribute: Small portrait=NWHUSB.BMP
+File: NWMEPAR1.CRE, Name: Air Mephit, Attribute: Class script=NWMEPAR1.BCS
 File: NWMERC01.STO, Name: Магазин Лускана, Attribute: Rumors (drinks)=RFRIEN.DLG
+File: NWMISC37.ITM, Name: Easily done., Attribute: Icon=NWMISC37.BAM
+File: NWMISC37.ITM, Name: Easily done., Attribute: Icon=NWMISC37.BAM
+File: NWMISC39.ITM, Name: [death grunt], Attribute: Icon=NWMISC39.BAM
+File: NWMISC40.ITM, Name: What a beautiful morning., Attribute: Icon=NWMISC40.BAM
+File: NWMISC45.ITM, Name: Lock of Nymph's Hair, Attribute: Icon=NWMISC45.BAM
+File: NWMISC58.ITM, Name: Your command?, Attribute: Icon=NWMISC58.BAM
+File: NWMISC59.ITM, Name: Quickly, now., Attribute: Icon=NWMISC59.BAM
+File: NWMISC72.ITM, Name: Лес Невервинтер: Дух Леса
+
+Дух Леса Невервинтер был отравлен, и Аавилл, архидруид местного конклава друидов, серьезно обеспокоен. Он дал нам доступ в лес, надеясь, что мы поможем ему выяснить, в чем дело. В глубине леса был обнаружен пруд, где Дух Леса проводил ритуал, чтобы попасть в мир духов. Для смертного единственный способ последовать за ним - войти в пруд и умереть в его водах. Для того чтобы лишить смертного жизни, потребуется магический кинжал. Отравленный и измученный Дух Леса отступил в свой мир, но мы нашли и убили страдальца. Нужно сообщить архидруиду Аавиллу о судьбе Духа., Attribute: Icon=NWMISC72.BAM
+File: NWMISC72.ITM, Name: Лес Невервинтер: Дух Леса
+
+Дух Леса Невервинтер был отравлен, и Аавилл, архидруид местного конклава друидов, серьезно обеспокоен. Он дал нам доступ в лес, надеясь, что мы поможем ему выяснить, в чем дело. В глубине леса был обнаружен пруд, где Дух Леса проводил ритуал, чтобы попасть в мир духов. Для смертного единственный способ последовать за ним - войти в пруд и умереть в его водах. Для того чтобы лишить смертного жизни, потребуется магический кинжал. Отравленный и измученный Дух Леса отступил в свой мир, но мы нашли и убили страдальца. Нужно сообщить архидруиду Аавиллу о судьбе Духа., Attribute: Description image=NWMIS72C.BAM
+File: NWMISC75.ITM, Name: Ты что, грога перепил? Я их не вижу., Attribute: Icon=NWMISC75.BAM
+File: NWMISC88.ITM, Name: Ну, не знаю. Хотелось бы мне, чтобы Венгаул никогда не находил этого существа. Это принесло нам только неприятности., Attribute: Icon=NWMISC88.BAM
+File: NWMISC88.ITM, Name: Ну, не знаю. Хотелось бы мне, чтобы Венгаул никогда не находил этого существа. Это принесло нам только неприятности., Attribute: Description image=NWMIS88C.BAM
+File: NWNANNY.CRE, Name: Useless!, Attribute: Small portrait=NWNANNY.BMP
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
+File: NWRING7.ITM, Name: О! Да они разбавляют! Еще одну!, Attribute: Icon=NWRING7.BAM
+File: NWRING8.ITM, Name: I intend to deal with Irenicus once and for all, Viconia, as you should well know., Attribute: Icon=NWRING8.BAM
+File: NWROBE04.ITM, Name: Что такого в "Скуррде"? Действительно, что. "Скуррд"... просто действует на то... чему может принести больший вред. Коварнейшая дрянь. Его нельзя давать нюхать старикам... нельзя давать в руки детям... Это "Скуррд", и горе тому, кто рискнет попробовать его на вкус., Attribute: Icon=NWROBE04.BAM
+File: NWSIMB4.SPL, Name: Protection From Acid, Attribute: Resource=ICFIRSDG.VEF
+File: NWSTAF01.ITM, Name: Что ж, вам решать. Вход скрыт за книжным шкафом. Пожалуйста, постарайтесь ничего не потревожить. Мне еще здесь жить., Attribute: Icon=MELSTAF.BAM
+File: NWSTAF01.ITM, Name: Что ж, вам решать. Вход скрыт за книжным шкафом. Пожалуйста, постарайтесь ничего не потревожить. Мне еще здесь жить., Attribute: Icon=MELSTAF.BAM
+File: NWSTAF03.ITM, Name: Дрейк и Харбен разрабатывают защиту для людей, на которых нападают зомби. Вы должны помочь им., Attribute: Icon=NWSTAF03.BAM
+File: NWSTAF03.ITM, Name: Дрейк и Харбен разрабатывают защиту для людей, на которых нападают зомби. Вы должны помочь им., Attribute: Icon=NWSTAF03.BAM
+File: NWSTAF04.ITM, Name: И, э, по правде говоря, мне уже не очень хочется пробовать следующий напиток. Э. Эту штуку и в руки-то взять страшно., Attribute: Icon=NWSTAF03.BAM
+File: NWSTAF04.ITM, Name: И, э, по правде говоря, мне уже не очень хочется пробовать следующий напиток. Э. Эту штуку и в руки-то взять страшно., Attribute: Icon=NWSTAF03.BAM
+File: NWTARG1.CRE, Name: Нет, да мне и все равно. Я об этом даже не думаю. Конечно, я пришел сюда... но мы все здесь по непонятным причинам., Attribute: Override script=NWTARG1.BCS
+File: NWTARG2.CRE, Name: Нет, да мне и все равно. Я об этом даже не думаю. Конечно, я пришел сюда... но мы все здесь по непонятным причинам., Attribute: Override script=NWTARG1.BCS
+File: NWTOOTH1.ITM, Name: What's that smell? Eugh, never mind. Don't want to know., Attribute: Icon=NWTOOTH1.BAM
+File: NWTOOTH1.ITM, Name: What's that smell? Eugh, never mind. Don't want to know., Attribute: Description image=CTOOTH1.BAM
+File: NWWATER.CRE, Name: На вас форма городского стража. Почему вас схватили?, Attribute: Small portrait=NWWATER.BMP
+File: NWWATER.CRE, Name: На вас форма городского стража. Почему вас схватили?, Attribute: Override script=NWWATER.BCS
+File: NYATAMUL.ITM, Name: Скупщик, Attribute: Icon=NYATAMUL.BAM
+File: NYATAMUL.ITM, Name: Скупщик, Attribute: Description image=NYATAMUC.BAM
+File: NYATSCRL.ITM, Name: Кузница Лускана, Attribute: Icon=NYATSCR.BAM
+File: NYATSCRL.ITM, Name: Кузница Лускана, Attribute: Icon=NYATSCR.BAM
+File: NYPHITM.ITM, Name: Башня Плаща, Attribute: Icon=NVAMUL04.BAM
+File: NYPHITM.ITM, Name: Башня Плаща, Attribute: Description image=NVAMU04C.BAM
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -989,6 +1843,12 @@ File: ohtyr1.SPL, Name: Exaltation, Attribute: Resource=SPPR422.ITM
 File: ohtyr1.SPL, Name: Exaltation, Attribute: Resource=CONFUSH.VEF
 File: ohtyr1.SPL, Name: Exaltation, Attribute: Resource=#FF_P106.WAV
 File: OISIG.CRE, Name: High Watcher Oisig, Attribute: Dialogue=OISIG.DLG
+File: OLEFFAMU.ITM, Name: Замок Невер, Attribute: Icon=OLEFFAMU.BAM
+File: OLEFFL1.ITM, Name: Академия, Attribute: Icon=SCROLLN5.BAM
+File: OLEFFLET.ITM, Name: В Чернозерье, Attribute: Icon=SCROLLN3.BAM
+File: OPHALLET.ITM, Name: В Гнездо Нищих, Attribute: Icon=SCROLLN4.BAM
+File: OPHALSPR.ITM, Name: По этой лестнице могут подняться только члены гильдии., Attribute: Icon=OPHALSPR.BAM
+File: OPPERMIT.ITM, Name: Крепость Хельма, Attribute: Icon=OPPERMIT.BAM
 File: PAIREL01.CRE, Name: Air Elemental, Attribute: Dialogue=PAIREL01.DLG
 File: PALRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: PALRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
@@ -1002,7 +1862,12 @@ File: PCAPT03.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT03.DLG
 File: PCAPT04.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT04.DLG
 File: PCAPT05.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT05.DLG
 File: PCAPT06.CRE, Name: Prison Captain, Attribute: Dialogue=PCAPT06.DLG
+File: PERMITTO.ITM, Name: Поместье Мелданена, Attribute: Icon=PERMITTO.BAM
+File: PERMITTO.ITM, Name: Поместье Мелданена, Attribute: Description image=PERMITC.BAM
 File: PHLYDI.CRE, Name: Phlydia, Attribute: Dialogue=PHLYDI.DLG
+File: PHYLACT3.ITM, Name: Склад Мелданена, Attribute: Icon=PHYLACT3.BAM
+File: PHYLACT3.ITM, Name: Склад Мелданена, Attribute: Description image=PHYLACTC.BAM
+File: PHYLACT3.ITM, Name: Склад Мелданена, Attribute: Icon=PHYLACT3.BAM
 File: PIRMUR11.CRE, Name: Guard, Attribute: Override script=PIRMUR11.BCS
 File: PIRMUR11.CRE, Name: Guard, Attribute: Dialogue=PIRMUR11.DLG
 File: PIRMUR12.CRE, Name: Guard, Attribute: Dialogue=PIRMUR12.DLG
@@ -1090,6 +1955,7 @@ File: PTION2N.ITM, Name: Potion of Power, Warrior, Attribute: Ground icon=PTION2
 File: PTION2N.ITM, Name: Potion of Power, Warrior, Attribute: Icon=PTION2NI.BAM
 File: PTION41.ITM, Name: Potion of Power, Attribute: Ground icon=GPOTN41.BAM
 File: QUATAR.CRE, Name: Quataris, Attribute: Dialogue=QUATAR.DLG
+File: QUINTT.ITM, Name: В нижние пещеры, Attribute: Icon=QUINTT.BAM
 File: RALEJ.CRE, Name: Rayic Gethras, Attribute: Dialogue=RALEJ.DLG
 File: RAVAG03.ITM, Name: No such index, Attribute: Icon=0.BAM
 File: RAVAG03.ITM, Name: No such index, Attribute: Ground icon=0.BAM
@@ -1119,12 +1985,20 @@ File: RIFTCR01.CRE, Name: Greater Ghoul, Attribute: Dialogue=RIFTCR01.DLG
 File: RIFTCR02.CRE, Name: Skeleton Warrior, Attribute: Dialogue=RIFTCR02.DLG
 File: RIFTCR03.CRE, Name: Greater Mummy, Attribute: Override script=MUMMY01`.BCS
 File: RIFTCR03.CRE, Name: Greater Mummy, Attribute: Dialogue=RIFTCR03.DLG
+File: RIMALDO.SPL, Name: No such index, Attribute: Resource=RIMARDO2.CRE
 File: RING09.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: RING09.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: RING09.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
 File: RING97.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: RING97.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: RING97.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
+File: RINGBOD1.ITM, Name: Заброшенная шахта, Attribute: Icon=RINGBOD1.BAM
+File: RINGBOD2.ITM, Name: Вы не сможете пройти по мосту пока жив его охранник или не получено разрешение., Attribute: Icon=RINGBOD1.BAM
+File: RINGBOD3.ITM, Name: Южная дорога 2, Attribute: Icon=RINGBOD1.BAM
+File: RINGREVA.ITM, Name: Ферма О'Дила, Attribute: Icon=RINGREVA.BAM
+File: RINGTOM1.ITM, Name: В Сумрачный лес, Attribute: Icon=RINGTOM1.BAM
+File: RINGTOM2.ITM, Name: В Чарвуд, Attribute: Icon=RINGTOM1.BAM
+File: RINGTOM3.ITM, Name: Замок Джарег, Attribute: Icon=RINGTOM3.BAM
 File: RNGBEH01.CRE, Name: Death Tyrant, Attribute: Dialogue=RNGBEH01.DLG
 File: RNGSHA03.CRE, Name: Shadow, Attribute: Dialogue=RNGSHA03.DLG
 File: RNGSHA2D.CRE, Name: Shadow Patrick, Attribute: Dialogue=RNGSHA2D.DLG
@@ -1136,12 +2010,9 @@ File: RORCS01.CRE, Name: Orog, Attribute: Dialogue=RORCS01.DLG
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDSW1H58.SPL
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDMOUND.SPL
 File: ROSSRING.ITM, Name: Edventar's Gift, Attribute: Resource=CDHGNYA1.SPL
-File: RR#SHM01.CRE, Name: Малый Шамблер, Attribute: Override script=RR#SHM.BCS
-File: RR#SHM01.CRE, Name: Малый Шамблер, Attribute: Item=RR#SHM01.ITM
-File: RR#SHM02.CRE, Name: Shambling Mound, Attribute: Override script=RR#SHM.BCS
-File: RR#SHM02.CRE, Name: Shambling Mound, Attribute: Item=RR#SHM02.ITM
-File: RR#SHM03.CRE, Name: Великий Шамблер, Attribute: Override script=RR#SHM.BCS
-File: RR#SHM03.CRE, Name: Великий Шамблер, Attribute: Item=RR#SHM03.ITM
+File: RR#SHM01.ITM, Name: No such index, Attribute: Resource=RR#SMENT.SPL
+File: RR#SHM02.ITM, Name: No such index, Attribute: Resource=RR#SMENT.SPL
+File: RR#SHM03.ITM, Name: No such index, Attribute: Resource=RR#SMENT.SPL
 File: RSKEL02.CRE, Name: Skeleton Warrior, Attribute: Override script=RSKEL02.BCS
 File: RSKEL02.CRE, Name: Skeleton Warrior, Attribute: Dialogue=RSKEL02.DLG
 File: RSKEL03.CRE, Name: Skeleton, Attribute: Override script=RSKEL03.BCS
@@ -1215,11 +2086,33 @@ File: SHALT01.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: SHAMMR.ITM, Name: Spiritual Hammer, Attribute: Ground icon=SHAM01.BAM
 File: SHAMMR2.ITM, Name: Spiritual Hammer, Attribute: Ground icon=SHAM01.BAM
 File: SHAMMR3.ITM, Name: Spiritual Hammer, Attribute: Ground icon=SHAM01.BAM
+File: SHARWY12.CRE, Name: Водоем первичных цветов, Attribute: Small portrait=SHARWYNS.BMP
+File: SHARWY12.CRE, Name: Водоем первичных цветов, Attribute: Large portrait=SHARWYNM.BMP
+File: SHARWY14.CRE, Name: Водоем первичных цветов, Attribute: Small portrait=SHARWYNS.BMP
+File: SHARWY14.CRE, Name: Водоем первичных цветов, Attribute: Large portrait=SHARWYNM.BMP
+File: SHARWY16.CRE, Name: Водоем первичных цветов, Attribute: Small portrait=SHARWYNS.BMP
+File: SHARWY16.CRE, Name: Водоем первичных цветов, Attribute: Large portrait=SHARWYNM.BMP
+File: SHARWY18.CRE, Name: Водоем первичных цветов, Attribute: Small portrait=SHARWYNS.BMP
+File: SHARWY18.CRE, Name: Водоем первичных цветов, Attribute: Large portrait=SHARWYNM.BMP
 File: SHTH011.CRE, Name: Hanz, Attribute: Dialogue=SHTH011.DLG
+File: SILVERBC.SPL, Name: No such index, Attribute: Resource=SILVERB2.CRE
 File: SKELWA01.CRE, Name: Skeleton Warrior, Attribute: Dialogue=SKELWA01.DLG
+File: SLAVENW4.SPL, Name: No such index, Attribute: Resource=SLAVENW4.CRE
 File: SMITHNW1.STO, Name: Кузница Лускана, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: SMOUND01.CRE, Name: Shambling Mound, Attribute: Override script=SMOUND.BCS
 File: SMOUNDSU.CRE, Name: Shambling Mound, Attribute: Override script=SMOUND.BCS
+File: SNARE1.CRE, Name: I had wondered what the bear was for., Attribute: Override script=SNARE1.BCS
+File: SNARE1A.CRE, Name: I had wondered what the bear was for., Attribute: Override script=SNARE1.BCS
+File: SNARE1B.CRE, Name: I had wondered what the bear was for., Attribute: Override script=SNARE1.BCS
+File: SNARE1C.CRE, Name: I had wondered what the bear was for., Attribute: Override script=SNARE1.BCS
+File: SNARE2.CRE, Name: Special Snare, Attribute: Override script=SNARE2.BCS
+File: SNARE2A.CRE, Name: Special Snare, Attribute: Override script=SNARE2.BCS
+File: SNARE2B.CRE, Name: Special Snare, Attribute: Override script=SNARE2.BCS
+File: SNARE2C.CRE, Name: Special Snare, Attribute: Override script=SNARE2.BCS
+File: SNARE3.CRE, Name: This way! Follow me., Attribute: Override script=SNARE3.BCS
+File: SNARE4.CRE, Name: All right. I'll be on my way then., Attribute: Override script=SNARE4.BCS
+File: SONFPL2.CRE, Name: Аарин Генд, Attribute: Small portrait=SONFPL2.BMP
+File: SONFPL2.CRE, Name: Аарин Генд, Attribute: Override script=INITRG07.BCS
 File: SPAURAFD.VVC, Attribute: Animation=SPAURAFD.BAM
 File: spbear1.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
 File: spbear2.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
@@ -1227,6 +2120,8 @@ File: spbear3.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
 File: spbear4.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
 File: spbear5.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
 File: SPBEHBLA.PRO, Name: Beholder Blast, Attribute: Fire sound=TRA_BEH.WAV
+File: SPCL665T.SPL, Name: Элайт, Attribute: Spell icon=SPPS14C.BAM
+File: SPCL665T.SPL, Name: Элайт, Attribute: Icon=SPPS14B.BAM
 File: SPCL900.SPL, Name: Whirlwind Attack, Attribute: Spell icon=SPCL900C.BAM
 File: SPCL901.SPL, Name: Greater Whirlwind Attack, Attribute: Spell icon=SPCL901C.BAM
 File: SPCL902.SPL, Name: Deathblow, Attribute: Spell icon=SPCL902C.BAM
@@ -1261,10 +2156,12 @@ File: SPECIAL.CHU, Attribute: Button=HIGHLIGH.BAM
 File: SPER12.ITM, Name: Ixil's Spike +6, Attribute: Resource=CDSW1H58.SPL
 File: SPER12.ITM, Name: Ixil's Spike +6, Attribute: Resource=CDMOUND.SPL
 File: SPER12.ITM, Name: Ixil's Spike +6, Attribute: Resource=CDHGNYA1.SPL
+File: SPERNW1.ITM, Name: Агар, Attribute: Icon=SPERNW1.BAM
+File: SPERNW1.ITM, Name: Агар, Attribute: Icon=SPERNW1.BAM
 File: SPIDHU1.ITM, Name: No such index, Attribute: Icon=PLYWYVRN.BAM
 File: SPIDSW1.ITM, Name: Attack, Attribute: Icon=PLYWYVRN.BAM
 File: SPIN112.SPL, Name: Dispel Magic, Attribute: Resource=SPDISMA.VEF
-File: SPIN116W.SPL, Name: Погребальный Звон, Attribute: Resource=#FF_P109.WAV
+File: SPIN138.SPL, Name: No such index, Attribute: Resource=SPIN139.SPL
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUAI.SPL
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUWA.SPL
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#DRUEA.SPL
@@ -1318,12 +2215,12 @@ File: SPIN992.SPL, Name: Anti-Magic Ray, Attribute: Resource=GBERRY5.ITM
 File: SPIN992.SPL, Name: Anti-Magic Ray, Attribute: Resource=GBERRY6.ITM
 File: SPIN992.SPL, Name: Anti-Magic Ray, Attribute: Resource=GBERRY7.ITM
 File: SPIN995.SPL, Name: No such index, Attribute: Resource=PHEOARCH.CRE
+File: SPIRITFO.SPL, Name: No such index, Attribute: Resource=SPIRITF2.CRE
 File: splion1.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion2.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion3.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion4.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
 File: splion5.CRE, Name: Spirit Lion, Attribute: Override script=SPIRDTH.BCS
-File: SPPR329.SPL, Name: Наслать Болезнь, Attribute: Resource=DSPELLX.VEF
 File: SPPR350.SPL, Name: Spiritual Clarity, Attribute: Resource=BDAURAFE.ITM
 File: SPPR350.SPL, Name: Spiritual Clarity, Attribute: Resource=BDMYCSP1.ITM
 File: SPPR350.SPL, Name: Spiritual Clarity, Attribute: Resource=BDMYCSP2.ITM
@@ -1405,7 +2302,7 @@ File: spsnak4.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: spsnak5.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: SPWI010.SPL, Name: No such index, Attribute: Resource=SPDISMA.VEF
 File: SPWI299.SPL, Name: Summon Cow, Attribute: Resource=WYVERN.WBM
-File: SPWI328.SPL, Name: Ледяное Копье, Attribute: Resource=ICELANH.VEF
+File: SPWI2E0D.SPL, Name: No such index, Attribute: Resource=WERERAT3.CRE
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDSW1H58.SPL
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDMOUND.SPL
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDHGNYA1.SPL
@@ -1465,8 +2362,11 @@ File: spwolf5.CRE, Name: Spirit Wolf, Attribute: Override script=SPIRDTH.BCS
 File: SPYANC01.SPL, Name: Whirlwind, Attribute: Spell icon=SPCL900C.BAM
 File: SQUIRP.ITM, Name: Attack, Attribute: Icon=ISQUIR.BAM
 File: STGOL01.CRE, Name: Stone Golem, Attribute: Dialogue=STGOL01.DLG
+File: STIRGE.CRE, Name: , Attribute: Small portrait=STIRGE.BMP
 File: STMAGE.CRE, Name: Shadow Thief, Attribute: Dialogue=STMAGE.DLG
+File: STONGNW.SPL, Name: No such index, Attribute: Resource=STONGNW4.CRE
 File: SUADSAAN.CRE, Name: Adsaan, Attribute: Dialogue=SUADSAAN.DLG
+File: SUCITM4.ITM, Name: Оскорбляйте кого-нибудь другого. Я видела, как нежить убила моего мужа - не думайте, что я испугаюсь вас. Не нужна мне ваша помощь., Attribute: Icon=SUCITM4.BAM
 File: SUDEAD01.CRE, Name: Elven Warrior, Attribute: Dialogue=SUDEAD01.DLG
 File: SUDEAD02.CRE, Name: Elven Warrior, Attribute: Dialogue=SUDEAD02.DLG
 File: SUDEAD03.CRE, Name: Elven Warrior, Attribute: Dialogue=SUDEAD03.DLG
@@ -1493,6 +2393,16 @@ File: SUREHP1.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: SUREHP1.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: SUREHP1.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: SUZIYAAD.CRE, Name: Ziyaad, Attribute: Dialogue=SUZIYAAD.DLG
+File: SW1HNW1.ITM, Name: Баракс, Attribute: Icon=SW1HNW1.BAM
+File: SW1HNW1.ITM, Name: Баракс, Attribute: Icon=SW1HNW1.BAM
+File: SW1HNW2.ITM, Name: Long Sword, Attribute: Icon=SW1HNW2.BAM
+File: SW1HNW2.ITM, Name: Long Sword, Attribute: Icon=SW1HNW2.BAM
+File: SW1HNW3.ITM, Name: Барун Сильверблэйд, Attribute: Icon=SW1HNW3.BAM
+File: SW1HNW3.ITM, Name: Барун Сильверблэйд, Attribute: Icon=SW1HNW3.BAM
+File: SW1HNW4.ITM, Name: Белариан, Attribute: Icon=SW1HNW4.BAM
+File: SW1HNW4.ITM, Name: Белариан, Attribute: Icon=SW1HNW4.BAM
+File: SW1HNW5.ITM, Name: Бэтани, Attribute: Icon=SW1HNW5.BAM
+File: SW1HNW5.ITM, Name: Бэтани, Attribute: Icon=SW1HNW5.BAM
 File: SW1HSEEK.ITM, Name: Seeking Sword, Attribute: Ground icon=SHAM01.BAM
 File: SW2H06.ITM, Name: Spider's Bane +2, Attribute: Resource=CDSW1H58.SPL
 File: SW2H06.ITM, Name: Spider's Bane +2, Attribute: Resource=CDMOUND.SPL
@@ -1520,6 +2430,8 @@ File: TANADV05.CRE, Name: Adventurer, Attribute: Dialogue=TANADV05.DLG
 File: TANADV06.CRE, Name: Dunbar the Fifth, Attribute: Dialogue=TANADV06.DLG
 File: TANSKW1.CRE, Name: Skeleton Warrior, Attribute: Dialogue=TANSKW1.DLG
 File: TANTHF01.CRE, Name: Rune Assassin, Attribute: Dialogue=TANTHF01.DLG
+File: TARAN.CRE, Name: , Attribute: Small portrait=TARAN.BMP
+File: TARAN.CRE, Name: , Attribute: Override script=JAHEL.BCS
 File: TASLOISU.CRE, Name: Tasloi Elite Trooper, Attribute: Class script=KOBOLSU.BCS
 File: TETHTO2.CRE, Name: Tethtoril, Attribute: Dialogue=TETHTO2.DLG
 File: TETHTO3.CRE, Name: Tethtoril, Attribute: Dialogue=TETHTO3.DLG
@@ -1539,10 +2451,21 @@ File: TOBPAR04.CRE, Name: Karun the Black, Attribute: Override script=TOBPAR04.B
 File: TOBPAR05.CRE, Name: Delga Deepdelver, Attribute: Override script=TOBPAR05.BCS
 File: TOBPAR06.CRE, Name: Helena Fairhand, Attribute: Override script=TOBPAR06.BCS
 File: TOBPAR06.CRE, Name: Helena Fairhand, Attribute: Default script=CFIGT20B.BCS
+File: TOMI12.CRE, Name: , Attribute: Small portrait=TOMIS.BMP
+File: TOMI12.CRE, Name: , Attribute: Large portrait=TOMIM.BMP
+File: TOMI14.CRE, Name: , Attribute: Small portrait=TOMIS.BMP
+File: TOMI14.CRE, Name: , Attribute: Large portrait=TOMIM.BMP
+File: TOMI16.CRE, Name: , Attribute: Small portrait=TOMIS.BMP
+File: TOMI16.CRE, Name: , Attribute: Large portrait=TOMIM.BMP
+File: TOMI18.CRE, Name: , Attribute: Small portrait=TOMIS.BMP
+File: TOMI18.CRE, Name: , Attribute: Large portrait=TOMIM.BMP
+File: TRANKAR.CRE, Name: Не могу вам сказать. Я только знаю, какие ходят слухи, а остальное меня не волнует, если честно., Attribute: Small portrait=TRANKAR.BMP
 File: TRFUED03.CRE, Name: Lurraxol Guard, Attribute: Dialogue=TRFUED03.DLG
 File: TRFUED04.CRE, Name: Lurraxol Guard, Attribute: Dialogue=TRFUED04.DLG
 File: TRFUED07.CRE, Name: Alibakkar Guard, Attribute: Dialogue=TRFUED07.DLG
 File: TRFUED08.CRE, Name: Alibakkar Guard, Attribute: Dialogue=TRFUED08.DLG
+File: TROLCA02.CRE, Name: Так тебе ничего не приобрести!, Attribute: General script=TROLCA02.BCS
+File: TROLLNW2.CRE, Name: , Attribute: Override script=TROLLNW2.BCS
 File: TRRAK04.CRE, Name: Ruhk, Attribute: Dialogue=FIRRAK02.DLG
 File: TTGIBB.CRE, Name: Gibberling, Attribute: Dialogue=TTGIBB.DLG
 File: TTKOB.CRE, Name: Kobold, Attribute: Override script=TTKOB.BCS
@@ -1571,6 +2494,9 @@ File: UDMIND04.CRE, Name: Mind Flayer, Attribute: Dialogue=UDMIND01.DLG
 File: UDSLV04.CRE, Name: Slave, Attribute: General script=KBARCH01.BCS
 File: UDVAMP.CRE, Name: Vampiric Illithid, Attribute: Dialogue=UDVAMP.DLG
 File: UNSEE.CRE, Name: The Unseeing Eye, Attribute: Dialogue=UNSEE.DLG
+File: URTHW.CRE, Name: Werewolf, Attribute: Small portrait=URTHW.BMP
+File: URTHW.CRE, Name: Werewolf, Attribute: Override script=URTHW.BCS
+File: URTRING.ITM, Name: Смотритель кладбища, Attribute: Icon=URTRING.BAM
 File: VAKG01.CRE, Name: Mage, Attribute: Dialogue=VAKG01.DLG
 File: VAKG02.CRE, Name: Archer, Attribute: Dialogue=VAKG02.DLG
 File: VAKG03.CRE, Name: Thief, Attribute: Dialogue=VAKG03.DLG
@@ -1609,6 +2535,10 @@ File: VVSHAD7.CRE, Name: Shadow Thief, Attribute: Dialogue=VVSHAD7.DLG
 File: VVSHAD8.CRE, Name: Shadow Thief, Attribute: Dialogue=VVSHAD7.DLG
 File: VVSHAD9.CRE, Name: Shadow Thief, Attribute: Dialogue=VVSHAD7.DLG
 File: WAND99.ITM, Name: Wand of Magic Missiles, Attribute: Resource=WYVERN.WBM
+File: WANDNW5.ITM, Name: I'm not sure I like the sound of that. Nope, I'm really very sure I do NOT like the sound of that., Attribute: Icon=WANDNW5.BAM
+File: WANDNW5.ITM, Name: I'm not sure I like the sound of that. Nope, I'm really very sure I do NOT like the sound of that., Attribute: Icon=WANDNW5.BAM
+File: WANPRIZE.ITM, Name: Ты от меня ничего не получишь!, Attribute: Icon=WANPRIZE.BAM
+File: WARDOK.CRE, Name: Дара'ней, Attribute: Default script=WARDOK.BCS
 File: WATCH.CRE, Name: Watcher, Attribute: Dialogue=WATCH.DLG
 File: WATCH2.CRE, Name: Watcher, Attribute: Dialogue=WATCH2.DLG
 File: WATCH3.CRE, Name: Watcher, Attribute: Dialogue=WATCH2.DLG
@@ -1636,6 +2566,9 @@ File: WORLD.CHU, Attribute: Button=ACTFIGHT.BAM
 File: WORLD.CHU, Attribute: Button=ACTFIGHT.BAM
 File: WORLD.CHU, Attribute: Button=ACTFIGHT.BAM
 File: WORLD.CHU, Attribute: Button=ACTFIGHT.BAM
+File: WVDEATH.SPL, Name: No such index, Attribute: Resource=WVDEATH.VEF
+File: WYVERNB.CRE, Name: Далила, Attribute: Small portrait=WYVEWNB.BMP
+File: WYVERNB.CRE, Name: Далила, Attribute: Override script=WYVWRNB.BCS
 File: YOCHLO01.CRE, Name: Yochlol, Attribute: Dialogue=YOCKLOL.DLG
 File: YSCARA03.CRE, Name: Fire Giant, Attribute: Override script=YSCARA03.BCS
 File: YSCARA03.CRE, Name: Fire Giant, Attribute: Dialogue=YSCARA03.DLG
@@ -1675,7 +2608,15 @@ File: YSSOLD04.CRE, Name: Yaga-Shura Elite, Attribute: Override script=YSSOLD04.
 File: YSSOLD04.CRE, Name: Yaga-Shura Elite, Attribute: Dialogue=YSSOLD04.DLG
 File: YSSOLD10.CRE, Name: Fire Giant, Attribute: Dialogue=YSGUAR01.DLG
 File: YSSOLD12.CRE, Name: Yaga-Shura Soldier, Attribute: Dialogue=YSGUAR02.DLG
+File: YUSPRIZE.ITM, Name: Порт-Лласт: Драгоценные камни Элайта
+
+Печально известный искатель приключений Элайт Кролнобер соскучился по Эвермиту, из которого он бежал много лет назад. В настоящее время он с дочерью живет в таверне в Порт-Лласте. Они ищут три драгоценных камня, которые помогут им вернуться домой. К сожалению, эти камни находятся в руках людей, которые не желают просто так с ними расставаться.
+Первый камень находится у местного волшебника по имени Вэйнив. Он живет в своей башне к югу от города. Второй камень принадлежит воину Замитре, которая недавно проходила через Порт-Лласт, направляясь в Лускан. Последний камень является личным сокровищем Сетары, ведьмы из Леса Невервинтера., Attribute: Icon=YUSPRIZE.BAM
+File: ZAMITRA.SPL, Name: No such index, Attribute: Resource=ZAMITRA3.CRE
 File: ZILARC01.CRE, Name: Black Reaver, Attribute: Dialogue=ZILARC01.DLG
 File: ZILFGT01.CRE, Name: Black Reaver, Attribute: Dialogue=ZILFGT01.DLG
 File: ZILFGT02.CRE, Name: Black Reaver, Attribute: Dialogue=ZILFGT02.DLG
 File: ZILMAG01.CRE, Name: Black Reaver, Attribute: Dialogue=ZILMAG01.DLG
+File: ZOMBNW4.CRE, Name: Дрол, Attribute: Override script=ZOMBNW4.BCS
+File: ZOR.CRE, Name: Мать Природа питает меня, чтобы сражаться за нее!, Attribute: Small portrait=UHOGRE03.BMP
+File: ZOR.CRE, Name: Мать Природа питает меня, чтобы сражаться за нее!, Attribute: Override script=ZOR.BCS

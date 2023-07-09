@@ -1,0 +1,31 @@
+IF
+	Global("Attack","LOCALS",0)
+	OR(12)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+		SpellCastOnMe([PC],0)
+		SpellCastOnMe([FAMILIAR],0)
+		SpellCastOnMe([ALLY],0)
+		SpellCastOnMe([CONTROLLED],0)
+		SpellCastOnMe([CHARMED],0)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("Attack","LOCALS",1)
+		StartDialogueNoSet(LastSeenBy)
+END
+
+IF
+	See([PC])
+	Delay(15)
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy)
+END
+

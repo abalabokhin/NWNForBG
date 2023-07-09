@@ -1,0 +1,49 @@
+IF
+	Global("Nwspmep","GLOBAL",2)
+	!Range("GongP",20)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Player1,105959)  // ?? ?? ?????? ???????????? ??? ??????? ? ???? ?????. ????????? ????? ? ??????.
+		SetGlobal("Nwspmep","GLOBAL",0)
+		GiveItemCreate("Nwmisc81",Player1,1,0,0)  // ????????? ? ???????
+		DestroySelf()
+END
+
+IF
+	Global("Nwspmep","GLOBAL",2)
+	Range("GongP",20)
+	See([PC])
+	NumTimesTalkedTo(0)
+	Delay(6)
+THEN
+	RESPONSE #100
+		Dialogue([PC])
+END
+
+IF
+	Global("airmephitcombat","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,MEPHIT_BLUR)  // SPIN943.SPL (????????)
+		SetGlobal("airmephitcombat","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("airmephitcombat","LOCALS",1)
+	Range(NearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),MEPHIT_GRIT)  // SPIN942.SPL (?????????? ?????)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

@@ -1,0 +1,158 @@
+IF
+	NumTimesTalkedTo(0)
+	Global("Player1IsSummoner","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	Global("Player2IsSummoner","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player2)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	Global("Player3IsSummoner","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player3)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	Global("Player4IsSummoner","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player4)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	Global("Player5IsSummoner","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player5)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	Global("Player6IsSummoner","MYAREA",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player6)
+END
+
+IF
+	Global("MyAttack","LOCALS",1)
+	GlobalTimerExpired("MyAttack2","LOCALS")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,2844)  // ?? ?????? ????????! ?? ??? ?????? ????????!
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		MoveToPoint([2136.1362])
+		SetGlobal("MyAttack","LOCALS",2)
+		CreateVisualEffectObject("SPCLOUD1",Myself)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Player1IsSummoner","MYAREA",1)
+	Global("MyAttack","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player1,TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		Kill(Player2)
+		SetGlobal("MyAttack","LOCALS",1)
+		SetGlobalTimer("MyAttack2","LOCALS",ONE_ROUND)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Player2IsSummoner","MYAREA",1)
+	Global("MyAttack","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		Kill(Player2)
+		SetGlobal("MyAttack","LOCALS",1)
+		SetGlobalTimer("MyAttack2","LOCALS",ONE_ROUND)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Player3IsSummoner","MYAREA",1)
+	Global("MyAttack","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		Kill(Player3)
+		SetGlobal("MyAttack","LOCALS",1)
+		SetGlobalTimer("MyAttack2","LOCALS",ONE_ROUND)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Player4IsSummoner","MYAREA",1)
+	Global("MyAttack","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		Kill(Player4)
+		SetGlobal("MyAttack","LOCALS",1)
+		SetGlobalTimer("MyAttack2","LOCALS",ONE_ROUND)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Player5IsSummoner","MYAREA",1)
+	Global("MyAttack","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		Kill(Player5)
+		SetGlobal("MyAttack","LOCALS",1)
+		SetGlobalTimer("MyAttack2","LOCALS",ONE_ROUND)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Player6IsSummoner","MYAREA",1)
+	Global("MyAttack","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (?????? ??????)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)  // SPIN996.SPL (??????????? ??????)
+		Kill(Player6)
+		SetGlobal("MyAttack","LOCALS",1)
+		SetGlobalTimer("MyAttack2","LOCALS",ONE_ROUND)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
