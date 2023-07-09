@@ -1,4 +1,4 @@
-Number of hits: 1671
+Number of hits: 1673
 File: AUCTION.STO, Name: Таверна Сиди, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: BALLARD.STO, Name: Баллард, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: CHALJAL.STO, Name: Треснувшая Наковальня, Attribute: Rumors (drinks)=RFRIEN.DLG
@@ -25,6 +25,8 @@ File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWMERC01.STO, Name: Магазин Лускана, Attribute: Rumors (drinks)=RFRIEN.DLG
+File: NWMESS.CRE, Name: Messenger, Attribute: Small portrait=NWMESS.BMP
+File: NWMESS.CRE, Name: Messenger, Attribute: Override script=NWMDLG.BCS
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PLMISC.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: PLSCROLL.STO, Name: Торговец свитками, Attribute: Rumors (drinks)=RFRIEN.DLG
