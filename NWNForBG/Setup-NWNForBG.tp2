@@ -5722,6 +5722,8 @@ CLEAR_IDS_MAP
 //Scripts
 COMPILE ~NWNForBG/scripts~
 
+EXTEND_TOP ~BALDUR.BCS~ ~NWNForBG/scripts/NWNMESS.BAF~
+
 //dlg
 COMPILE ~NWNForBG/dlg~
 

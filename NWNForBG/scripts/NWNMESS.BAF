@@ -1,0 +1,56 @@
+IF
+	Global("Messenger_of_Neverwinter","GLOBAL",0)
+	XPGT(Player1,1750000)
+	OR(6)
+		AreaCheck("AR1000")  // ����������������� �����
+		AreaCheck("AR0900")  // ����� ������
+		AreaCheck("AR0700")  // �������� �����
+		AreaCheck("AR0500")  // ����� �����
+		AreaCheck("AR0400")  // �������
+		AreaCheck("AR0300")  // ����
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffScreen("NWMess",Player1,0,0,0)  // ���������
+		SetGlobal("Messenger_of_Neverwinter","GLOBAL",1)
+END
+
+IF
+	GlobalTimerExpired("NWTaxTime","GLOBAL")
+	Global("LuscanVizited","GLOBAL",0)
+	Global("NWArena","GLOBAL",4)
+THEN
+	RESPONSE #100
+		DisplayString(Player1,103871)  // �� ������ �������� ������� � '����� �����'
+		SetGlobalTimer("NWTaxTime","GLOBAL",SEVEN_DAYS)
+		IncrementGlobal("NwTavTaxes","GLOBAL",500)
+		Continue()
+END
+
+IF
+	Global("Nwspmep","GLOBAL",1)
+	!AreaCheck("NW3303")
+THEN
+	RESPONSE #100
+		SetGlobal("Nwspmep","GLOBAL",0)
+		DisplayStringHead(Player1,107762)  // �� �� ������ ������������ ��� ������� � ���� �����.
+		GiveItemCreate("Nwmisc81",Player1,1,0,0)  // ��������� � �������
+END
+
+IF
+	Global("Nwnzoo","GLOBAL",1)
+	!AreaCheck("NW1400")  // ����������
+THEN
+	RESPONSE #100
+		SetGlobal("Nwnzoo","GLOBAL",0)
+		DisplayStringHead(Player1,103872)  // ���� ������ ����� ������������ ����� � ������� ������� � �������� � ����������. � ���� ����� �� �� �����������.
+END
+
+IF
+	!AreaCheck("NW2306")
+	Global("VanProt","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VanProt","GLOBAL",0)
+		DisplayStringHead(Player1,103873)  // ���� ������ ������� ���������� ������ � ����� �� ������ ����� �������. � ���� ����� �� �� �����������.
+END
+
