@@ -1,6 +1,16 @@
-5. Проверить что там с sto (магазины) - и тоже для них всякие заголовки скриптом исуминатора расставить...
+*. еще раз вытащить все ресурсы :)
+* добавить ids
+[NWNForBG/scripts/GMINIONM.BAF] PARSE ERROR at line 192 column 16-31
+Near Text: )
+        [Heard] argument [HELP] not found in [SHOUTIDS.IDS]
+
+[NWNForBG/scripts/GMINIONM.BAF] PARSE ERROR at line 193 column 16-31
+Near Text: )
+        [Heard] argument [HELP] not found in [SHOUTIDS.IDS]
 *. Добавить ролики
 *. Добавить начальный скрипт - который вызывает мужика и проверить какой скрипт стартует мужик
+
+
 
 
 Possible bugs:
