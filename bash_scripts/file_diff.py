@@ -20,15 +20,25 @@ def diff_and_save(orig_name):
     print('\n'.join(uniq_lines), file=open(basename + "_diff.txt", 'w'))
 
 
-extensions = {"itm": "itm",
-              "spl": "spl",
-              "vef": "vvc",
-              "wav": "wav",
-              "bcs": "baf",
-              "cre": "cre",
-              "eff": "eff",
-              "bmp": "bmp",
-              "bam": "bam"}
+extensions = {"itm": ["itm"],
+              "spl": ["spl"],
+              "vef": ["vvc", "bam"],
+              "wav": ["wav"],
+              "bcs": ["baf"],
+              "cre": ["cre"],
+              "eff": ["eff"],
+              "bmp": ["bmp"],
+              "bam": ["bam"]}
+
+
+def add_orig_res(result, orig_res_name):
+    split_tup = os.path.splitext(orig_res_name)
+    orig_ext = split_tup[1][1:].lower()
+    if orig_ext in extensions:
+        for ext in extensions[orig_ext]:
+            if ext not in result:
+                result[ext] = set()
+            result[ext].add(split_tup[0] + "." + ext.upper())
 
 
 def parse1(filename, result):
@@ -37,10 +47,7 @@ def parse1(filename, result):
         for ext in extensions:
             m = re.search("=([^=]*.{})".format(ext.upper()), l)
             if m:
-                res_name = m.group(1).replace(".{}".format(ext.upper()), ".{}".format(extensions[ext].upper()))
-                if ext not in result:
-                    result[ext] = set()
-                result[ext].add(res_name)
+                add_orig_res(result, m.group(1))
 
 
 def parse2(filename, result):
@@ -49,10 +56,8 @@ def parse2(filename, result):
         for ext in extensions:
             m = re.search("\\[{}\\] - (.*)".format(ext.upper()), l)
             if m:
-                res_name = m.group(1).upper() + "." + format(extensions[ext].upper())
-                if ext not in result:
-                    result[ext] = set()
-                result[ext].add(res_name)
+                res_name = m.group(1).upper() + "." + ext.upper()
+                add_orig_res(result, res_name)
 
 
 def parse3(filename, result):
@@ -95,9 +100,9 @@ parse2("script_check_diff.txt", result)
 print(result)
 sources = {"itm": ["itm", "itm"],
            "spl": ["spl", "spl"],
-           "vef": ["vvc", "vvc"],
+           "vvc": ["vvc", "vvc"],
            "wav": ["wav", "audio"],
-           "bcs": ["script", "scripts"],
+           "baf": ["script", "scripts"],
            "cre": ["cre", "cre"],
            "eff": ["eff", "eff"],
            "bmp": ["bmp", "bmp"],
