@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1673
+Number of hits: 1671
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -847,8 +847,6 @@ File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWGUAR11.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWGUAR12.CRE, Name: Охранник замка, Attribute: Override script=NWGUAR17.BCS
 File: NWMERC01.STO, Name: Магазин Лускана, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWMESS.CRE, Name: Messenger, Attribute: Small portrait=NWMESS.BMP
-File: NWMESS.CRE, Name: Messenger, Attribute: Override script=NWMDLG.BCS
 File: NWPRST5.STO, Name: Waukeen's Wares, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
