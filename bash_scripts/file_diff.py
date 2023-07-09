@@ -2,6 +2,7 @@
 
 import sys
 
+
 def diff_and_save(orig_name):
     orig_end = "_orig.txt"
     if not orig_name.endswith(orig_end):
@@ -11,9 +12,12 @@ def diff_and_save(orig_name):
     f1 = open(filename).readlines()
     f2 = open(orig_name).readlines()
     f1 = [i.replace('\n', '') for i in f1]
-    f2 = [i.replace('\n', '') for i in f2]
-    l = [a for a in f1 if all(b not in a for b in f2)]
-    print('\n'.join(l), file=open(basename + "_diff.txt", 'w'))
+    f2 = set([i.replace('\n', '') for i in f2])
+    uniq_lines = []
+    for l in f1:
+        if l not in f2:
+            uniq_lines.append(l)
+    print('\n'.join(uniq_lines), file=open(basename + "_diff.txt", 'w'))
 
 
 diff_and_save('missing_res_orig.txt')
