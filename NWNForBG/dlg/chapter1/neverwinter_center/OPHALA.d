@@ -230,23 +230,23 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 27.4
   SAY @61
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(20000)EraseJournalEntry(~Маска Лунного Камня: портрет для Офалы
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(20000)EraseJournalEntry(%Маска Лунного Камня: портрет для Офалы
 
-Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.~) EXIT
+Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.%)~ EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 27.5
   SAY @62
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(750)AddexperienceParty(15000)EraseJournalEntry(~Маска Лунного Камня: портрет для Офалы
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(750)AddexperienceParty(15000)EraseJournalEntry(%Маска Лунного Камня: портрет для Офалы
 
-Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.~) EXIT
+Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.%)~ EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 27.6
   SAY @63
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(~Маска Лунного Камня: портрет для Офалы
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(%Маска Лунного Камня: портрет для Офалы
 
-Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.~)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.%)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 27.7
@@ -261,16 +261,16 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 27.9
   SAY @66
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(4500)AddexperienceParty(80000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)EraseJournalEntry(~Маска Лунного Камня: портрет для Офалы
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(4500)AddexperienceParty(80000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)EraseJournalEntry(%Маска Лунного Камня: портрет для Офалы
 
-Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.~) SOLVED_JOURNAL @60 EXIT
+Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.%)~ SOLVED_JOURNAL @60 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 27.10
   SAY @67
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(2250)AddexperienceParty(60000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)EraseJournalEntry(~Маска Лунного Камня: портрет для Офалы
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(2250)AddexperienceParty(60000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)EraseJournalEntry(%Маска Лунного Камня: портрет для Офалы
 
-Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.~) SOLVED_JOURNAL @60 EXIT
+Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.%)~ SOLVED_JOURNAL @60 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 27.11

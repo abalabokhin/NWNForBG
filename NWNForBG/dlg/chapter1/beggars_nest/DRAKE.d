@@ -33,9 +33,9 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
   SAY @13
-  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)EraseJournalEntry(~Гнездо Нищих: Нападение нежити
+  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)EraseJournalEntry(%Гнездо Нищих: Нападение нежити
 
-Необходимо исследовать Гнездо Нищих и выяснить причины появления такого большого количества нежити. О результатах следует сообщить Харбену Ашенсмиту и Дрейку в таверне "Сияющий Змей". Харбен обещал вознаграждение за помощь.~) UNSOLVED_JOURNAL @14 EXIT
+Необходимо исследовать Гнездо Нищих и выяснить причины появления такого большого количества нежити. О результатах следует сообщить Харбену Ашенсмиту и Дрейку в таверне "Сияющий Змей". Харбен обещал вознаграждение за помощь.%)~ UNSOLVED_JOURNAL @14 EXIT
   IF ~  GlobalGT("DrakeQuest","GLOBAL",0)~ THEN EXIT
   IF ~  Global("DrakeQuest","GLOBAL",0)!Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)~ EXIT
 END
