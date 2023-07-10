@@ -84,9 +84,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 7.2
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("MyRing","LOCALS",1)AddexperienceParty(30000)TakePartyItem("Nwring1")EraseJournalEntry(@28)EraseJournalEntry(%Гнездо Нищих: Пропавший брат
-
-Тело брата Джемани, Торина, было обнаружено возле поместья культа в Гнезде Нищих. Вероятно, он исполнил свою задачу и стал больше не нужен культу и его новому предводителю. На теле было найдено кольцо, которое, наверное, захочет получить Джемани.%)~ SOLVED_JOURNAL @26 EXIT
+  IF ~~ THEN DO ~SetGlobal("MyRing","LOCALS",1)AddexperienceParty(30000)TakePartyItem("Nwring1")EraseJournalEntry(@28)EraseJournalEntry(@33)~ SOLVED_JOURNAL @26 EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.1

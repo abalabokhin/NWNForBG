@@ -99,61 +99,45 @@ END
 IF ~~ THEN BEGIN 14 // from: 12.1
   SAY @30
   IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("Crewtd1")DestroyItem("Crewtd1")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+TakePartyItem("Crewtd1")DestroyItem("Crewtd1")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 63 // from: 12.2
   SAY @30
   IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("Crewtd2")DestroyItem("Crewtd2")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+TakePartyItem("Crewtd2")DestroyItem("Crewtd2")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 64 // from: 12.3
   SAY @30
   IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("Crewtd3")DestroyItem("Crewtd3")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+TakePartyItem("Crewtd3")DestroyItem("Crewtd3")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 65 // from: 12.4
   SAY @30
   IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("Crewtd4")DestroyItem("Crewtd4")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+TakePartyItem("Crewtd4")DestroyItem("Crewtd4")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.5
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("Crewtd1")DestroyItem("Crewtd1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("Crewtd1")DestroyItem("Crewtd1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 66 // from: 12.6
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",2)TakePartyItem("Crewtd2")DestroyItem("Crewtd1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",2)TakePartyItem("Crewtd2")DestroyItem("Crewtd1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 67 // from: 12.7
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("Crewtd3")DestroyItem("Crewtd3")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("Crewtd3")DestroyItem("Crewtd3")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 68 // from: 12.8
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("Crewtd4")DestroyItem("Crewtd4")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(%Воющая смерть и существа из Уотердипа
-
-Важные шаги были сделаны в борьбе против Воющей Смерти и тех, кто стоит за ней. Трое из утраченных при нападении на Академию волшебных существ, которых прислал Кельбен Арунсун, были возвращены и переданы леди Арибет в Зале Справедливости. Она ожидает возвращения оставшегося существа вместе со своим возлюбленным, аббатом Фентиком Моссом, и своим соратником - Рыцарем-хранителем Хельма Дестером Инделейном. Ритуал приготовления лекарства от чумы может быть проведен только когда будут найдены все волшебные существа.%)~ UNSOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("Crewtd4")DestroyItem("Crewtd4")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@61)EraseJournalEntry(@114)~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 13.1
