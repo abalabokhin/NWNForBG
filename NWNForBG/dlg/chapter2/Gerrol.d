@@ -185,18 +185,18 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 15.4
   SAY @53
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(%Перекресток: Жена Геррола 
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(~Перекресток: Жена Геррола 
 
-Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.%)AddJournalEntry(%Перекресток: Голова Дергиаба
+Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.~)AddJournalEntry(~Перекресток: Голова Дергиаба
 
 Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.%,QUEST)~ UNSOLVED_JOURNAL @54 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 15.5
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(%Перекресток: Жена Геррола 
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(~Перекресток: Жена Геррола 
 
-Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.%)AddJournalEntry(%Перекресток: Голова Дергиаба
+Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.~)AddJournalEntry(~Перекресток: Голова Дергиаба
 
 Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.%,QUEST)~ UNSOLVED_JOURNAL @54 EXIT
 END
@@ -314,16 +314,16 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 33.2
   SAY @85
-  IF ~~ THEN DO ~GiveGoldForce(1200)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(%Перекресток: Голова Дергиаба
+  IF ~~ THEN DO ~GiveGoldForce(1200)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(~Перекресток: Голова Дергиаба
 
-Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.%)~ SOLVED_JOURNAL @86 EXIT
+Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.~) SOLVED_JOURNAL @86 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 33.3
   SAY @87
-  IF ~~ THEN DO ~GiveGoldForce(900)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(%Перекресток: Голова Дергиаба
+  IF ~~ THEN DO ~GiveGoldForce(900)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(~Перекресток: Голова Дергиаба
 
-Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.%)~ SOLVED_JOURNAL @86 EXIT
+Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.~) SOLVED_JOURNAL @86 EXIT
 END
 
 IF ~~ THEN BEGIN 43 // from: 34.1
@@ -541,10 +541,10 @@ END
 
 IF ~~ THEN BEGIN 69 // from: 34.3
   SAY @91
-  IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(%Перекресток: Голова Дергиаба
+  IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(~Перекресток: Голова Дергиаба
 
-Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.%)~ SOLVED_JOURNAL @86 EXIT
-  IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)ReputationInc(1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(%Перекресток: Голова Дергиаба
+Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.~) SOLVED_JOURNAL @86 EXIT
+  IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)ReputationInc(1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(~Перекресток: Голова Дергиаба
 
-Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.%)~ SOLVED_JOURNAL @86 EXIT
+Геррол, фермер, жалуется, что близлежащие племена человекоподобных существ отравили его жизнь и отняли средства к существованию. Ему нужна голова их предводителя, Дергиаба.~) SOLVED_JOURNAL @86 EXIT
 END

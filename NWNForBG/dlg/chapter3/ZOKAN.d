@@ -142,17 +142,17 @@ END
 IF ~~ THEN BEGIN 19 // from: 16.1
   SAY @38
   IF ~~ THEN DO ~TakePartyItem("Nwmisc73")DestroyItem("Nwmisc73")SetGlobal("NWCoverlet","GLOBAL",2)SetGlobal("NW_Medicine","GLOBAL",2)GiveItemCreate("Nwmisc72",LastTalkedToBy,1,1,1)
-GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@25)EraseJournalEntry(%Осада форта Илкард
+GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@25)EraseJournalEntry(~Осада форта Илкард
 
-Командир Дамас признал, что он заразил племя Лося Воющей Смертью. Однако его совсем не мучают угрызения совести. Предстоит принять очень сложное решение - доставить лекарство от чумы Зокану Громовержцу и спасти племя Лося, или принести отрубленную голову вождя командиру Дамасу и получить обещанную награду.%)~ SOLVED_JOURNAL @39 EXIT
+Командир Дамас признал, что он заразил племя Лося Воющей Смертью. Однако его совсем не мучают угрызения совести. Предстоит принять очень сложное решение - доставить лекарство от чумы Зокану Громовержцу и спасти племя Лося, или принести отрубленную голову вождя командиру Дамасу и получить обещанную награду.~) SOLVED_JOURNAL @39 EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 16.2
   SAY @40
   IF ~~ THEN DO ~TakePartyItem("Nwmisc73")DestroyItem("Nwmisc73")SetGlobal("NWCoverlet","GLOBAL",2)SetGlobal("NW_Medicine","GLOBAL",2)GiveItemCreate("Nwmisc72",LastTalkedToBy,0,0,0)
-GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@25)EraseJournalEntry(%Осада форта Илкард
+GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@25)EraseJournalEntry(~Осада форта Илкард
 
-Командир Дамас признал, что он заразил племя Лося Воющей Смертью. Однако его совсем не мучают угрызения совести. Предстоит принять очень сложное решение - доставить лекарство от чумы Зокану Громовержцу и спасти племя Лося, или принести отрубленную голову вождя командиру Дамасу и получить обещанную награду.%)~ SOLVED_JOURNAL @39 EXIT
+Командир Дамас признал, что он заразил племя Лося Воющей Смертью. Однако его совсем не мучают угрызения совести. Предстоит принять очень сложное решение - доставить лекарство от чумы Зокану Громовержцу и спасти племя Лося, или принести отрубленную голову вождя командиру Дамасу и получить обещанную награду.~) SOLVED_JOURNAL @39 EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 17.2

@@ -35,9 +35,9 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 5.1
   SAY @8
-  IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("KnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(%Северная дорога: Испытание Мутамина
+  IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("KnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(~Северная дорога: Испытание Мутамина
 
-Содержатель таверны Мутамин проводит незаконные состязания в подземелье под таверной "Зеленый Грифон", что стоит на дороге в Лускан. Те, у кого есть ключ от подвала, спускаются вниз, где они должны переговорить с его помощником Джару.%)~ UNSOLVED_JOURNAL @9 EXIT
+Содержатель таверны Мутамин проводит незаконные состязания в подземелье под таверной "Зеленый Грифон", что стоит на дороге в Лускан. Те, у кого есть ключ от подвала, спускаются вниз, где они должны переговорить с его помощником Джару.~) UNSOLVED_JOURNAL @9 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 5.2
