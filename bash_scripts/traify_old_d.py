@@ -4,11 +4,12 @@ import subprocess
 from pathlib import Path
 import os.path
 
-for file_path in Path('../NWNForBG/dlg').rglob('*.d'):
+for file_path in Path('/home/paladin/source/NWNForBG/NWNForBG/dlg').rglob('*.d'):
     basename = os.path.splitext(os.path.basename(file_path))[0]
-    file_path_tra = '../NWNForBG/tra/russian/' + basename + ".tra"
-    print(file_path, file_path_tra)
-    subprocess.run(["wine", "./weidu.exe", file_path, "--traify-old-tra", file_path_tra, "--out", file_path, "--traify-comment"])
+    file_path_tra = '/home/paladin/source/NWNForBG/NWNForBG/tra/russian/' + basename + ".tra"
+    args = ["wine", "./weidu.exe", "--traify", str(file_path), "--traify-old-tra", file_path_tra, "--out", str(file_path) + "1", "--traify-comment"]
+    print(" ".join(args))
+    subprocess.run(args)
 
 
 
