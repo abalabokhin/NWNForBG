@@ -113,9 +113,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 15.1
   SAY @30
-  IF ~~ THEN DO ~CreateVisualEffectObject("SPCLOUD1",Myself)GiveItemCreate("BelialT",Player1,1,0,0)EraseJournalEntry(%Чарвуд: Рассказ Белиала
-
-Большая книга была найдена в башне Карлата Джарега, одного из лордов Чарвуда, которому предъявил обвинение дух-страж с первого этажа замка. При свете ближайшего канделябра можно было прочитать инструкции по вызову демона Белиала, Повелителя Огня. Роль демона во всех этих событиях очень подозрительна и требует дальнейшего расследования, хотя, несомненно, повторное вызывание - дело очень рискованное.%)DestroySelf()~ UNSOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~CreateVisualEffectObject("SPCLOUD1",Myself)GiveItemCreate("BelialT",Player1,1,0,0)EraseJournalEntry(@39)DestroySelf()~ UNSOLVED_JOURNAL @31 EXIT
 END
 
 // ----------------------------------------------------
@@ -123,9 +121,7 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !CheckStatGT(Player1,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
-  IF ~~ THEN DO ~Enemy()EraseJournalEntry(%Чарвуд: Рассказ Белиала
-
-Большая книга была найдена в башне Карлата Джарега, одного из лордов Чарвуда, которому предъявил обвинение дух-страж с первого этажа замка. При свете ближайшего канделябра можно было прочитать инструкции по вызову демона Белиала, Повелителя Огня. Роль демона во всех этих событиях очень подозрительна и требует дальнейшего расследования, хотя, несомненно, повторное вызывание - дело очень рискованное.%)~ UNSOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~Enemy()EraseJournalEntry(@39)~ UNSOLVED_JOURNAL @33 EXIT
 END
 
 // ----------------------------------------------------

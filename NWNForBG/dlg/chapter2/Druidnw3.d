@@ -135,9 +135,7 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 14.5
   SAY @45
-  IF ~~ THEN DO ~EraseJournalEntry(%Лес Невервинтер: Дух Леса
-
-Дух Леса Невервинтер с недавних пор находится в плачевном состоянии, и архидруид Аавилл, который возглавляет конклав, очень обеспокоен этим. С большой неохотой он позволил нам войти в его лес, в надежде, что мы поможем ему выяснить, что же произошло.%)SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ UNSOLVED_JOURNAL @46 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@58)SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ UNSOLVED_JOURNAL @46 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 17.1
