@@ -185,12 +185,12 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 15.4
   SAY @53
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@103,QUEST)~ UNSOLVED_JOURNAL @54 EXIT
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@103)~ UNSOLVED_JOURNAL @54 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 15.5
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@103,QUEST)~ UNSOLVED_JOURNAL @54 EXIT
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@103)~ UNSOLVED_JOURNAL @54 EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 24.1

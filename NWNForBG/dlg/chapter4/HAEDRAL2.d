@@ -201,7 +201,7 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 30.2
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("HaedralinJob","GLOBAL",1)EraseJournalEntry()~ UNSOLVED_JOURNAL @58 EXIT
+  IF ~~ THEN DO ~SetGlobal("HaedralinJob","GLOBAL",1)EraseJournalEntry(@88)~ UNSOLVED_JOURNAL @58 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 30.3
