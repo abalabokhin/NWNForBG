@@ -1,9 +1,13 @@
-Number of hits: 1255
+Number of hits: 1282
+File: A#AMNM.CRE, Name: No. I'm afraid he'll be beaten to a bloody pulp or choke during a cloudkill spell., Attribute: Specifics=Unknown - 77
+File: A#AMNMH.CRE, Name: No. I'm afraid he'll be beaten to a bloody pulp or choke during a cloudkill spell., Attribute: Specifics=Unknown - 77
 File: AARIN1.CRE, Name: Аарин Генд, Attribute: Specifics=Unknown - 127
 File: AARIN2.CRE, Name: Аарин Генд, Attribute: Specifics=Unknown - 127
+File: AARIN3.CRE, Name: I hope you are joking., Attribute: Specifics=Unknown - 127
 File: AAVILL.CRE, Name: Аавил, Attribute: Animation=UNKNOWN - 0x527C
 File: AAVILL.CRE, Name: Аавил, Attribute: Specifics=Unknown - 117
 File: AGAR.CRE, Name: Агар, Attribute: Specifics=Unknown - 121
+File: AGAR2.CRE, Name: What next? Shall I invite Alorgoth to join me on my quest?, Attribute: Specifics=Unknown - 121
 File: AMELNW.CRE, Name: Death movie, Attribute: Animation=UNKNOWN - 0x526D
 File: ANDER.CRE, Name: Эндер, Attribute: Animation=UNKNOWN - 0x6440
 File: ANDROD.CRE, Name: Андрод, Attribute: Animation=UNKNOWN - 0x5D62
@@ -43,8 +47,10 @@ File: COMMONW1.CRE, Name: Простолюдин, Attribute: Animation=UNKNOWN -
 File: CORPSE1.CRE, Name: Corpse, Attribute: Allegiance=Unknown - 127
 File: CORPSE2.CRE, Name: Corpse, Attribute: Allegiance=Unknown - 127
 File: CORPSE5.CRE, Name: Corpse, Attribute: Allegiance=Unknown - 127
+File: CREWTD2.CRE, Name: Item Slot 3, Attribute: Animation=UNKNOWN - 0x5285
 File: CREWTD3.CRE, Name: Dryad, Attribute: Race=Unknown - 114
 File: CULTISTC.CRE, Name: Странный человек, Attribute: Specifics=Unknown - 77
+File: CULTMO8.CRE, Name: Wandering Horror, Attribute: Animation=UNKNOWN - 0x5B01
 File: CUSTOM10.CRE, Name: Tavern Patron, Attribute: Animation=UNKNOWN - 0x5D56
 File: CUSTOM15.CRE, Name: Клиент (Черные Кинжалы), Attribute: Animation=UNKNOWN - 0x683E
 File: CUSTOM28.CRE, Name: Soldier, Attribute: Specifics=Unknown - 4
@@ -66,6 +72,7 @@ File: ESCORT02.CRE, Name: Courtesan, Attribute: Animation=UNKNOWN - 0x5D59
 File: EVAINE.CRE, Name: Эвейн, Attribute: Animation=UNKNOWN - 0x6841
 File: F_HARPY.CRE, Name: Гарпия, Attribute: Animation=UNKNOWN - 0x5269
 File: FASHI.CRE, Name: Фаши, Attribute: Specifics=Unknown - 202
+File: FASHI2.CRE, Name: The Quick Loot bar is activated with this red gem. It displays all nearby items that are on the ground., Attribute: Specifics=Unknown - 202
 File: FGBOSS.CRE, Name: Король Скрогг, Attribute: Animation=UNKNOWN - 0x504A
 File: FGBOSS.CRE, Name: Король Скрогг, Attribute: Specifics=Unknown - 255
 File: FGMAG01.CRE, Name: Fire Giant Mage, Attribute: Animation=UNKNOWN - 0x5C03
@@ -101,6 +108,11 @@ File: GOBLINW5.CRE, Name: Goblin, Attribute: Race=Unknown - 216
 File: GOBLINW6.CRE, Name: Гоблин-снайпер, Attribute: Animation=UNKNOWN - 0x5254
 File: GOBLINW6.CRE, Name: Гоблин-снайпер, Attribute: Race=Unknown - 216
 File: GORKAN.CRE, Name: Горкан, Attribute: Specifics=Unknown - 121
+File: GUARDEN.CRE, Name: Rats are difficult to kill with poisons because their feeding habits reflect their place as scavengers. An effective rat poison must be tasteless, odorless and have a delayed effect.
+
+STATISTICS:
+
+Weight: 0, Attribute: Specifics=Unknown - 121
 File: GULGASH.CRE, Name: Гулгаш, Attribute: Specifics=Unknown - 121
 File: GUZUD.CRE, Name: Гузуд, Attribute: Specifics=Unknown - 208
 File: HALIA.CRE, Name: Галия, Attribute: Specifics=Unknown - 99
@@ -114,11 +126,13 @@ File: HOOK1.CRE, Name: Жуткий Ужас, Attribute: Animation=UNKNOWN - 0x5
 File: HRPMATN2.CRE, Name: Гарпия-колдунья, Attribute: Animation=UNKNOWN - 0x5269
 File: HRPMATNW.CRE, Name: Гарпия-колдунья, Attribute: Animation=UNKNOWN - 0x5269
 File: ILLUSKG3.CRE, Name: Дух-страж воды, Attribute: Animation=UNKNOWN - 0x5039
+File: JANIS2.CRE, Name: You DARE stand against ME! How perfectly MAD of you!, Attribute: Specifics=Unknown - 77
 File: JAREDNW.CRE, Name: Джаред, Attribute: Animation=UNKNOWN - 0x5D4F
 File: JAROO.CRE, Name: Джару, Attribute: Animation=UNKNOWN - 0x5D62
 File: JEROL.CRE, Name: Джерол, Attribute: Animation=UNKNOWN - 0x5D53
 File: JEVON.CRE, Name: Джевон, Attribute: Specifics=Unknown - 2
 File: KAOHINON.CRE, Name: Каохинон из Бездны, Attribute: Specifics=Unknown - 203
+File: KELLISA2.CRE, Name: Funny thing to leave laying around. What do you plan to do with it?, Attribute: Specifics=Unknown - 202
 File: KELLISAI.CRE, Name: Келлисай, Attribute: Specifics=Unknown - 202
 File: KURTGOB.CRE, Name: Гоблин-сжигатель книг, Attribute: Animation=UNKNOWN - 0x5257
 File: KURTGOB.CRE, Name: Гоблин-сжигатель книг, Attribute: Race=Unknown - 216
@@ -152,6 +166,18 @@ File: MOOSEDRU.CRE, Name: Шаман племени Лося, Attribute: Specifi
 File: MORAG1.CRE, Name: Странное видение, Attribute: Animation=UNKNOWN - 0x6847
 File: MULLAND.CRE, Name: Мулланд, Attribute: Animation=UNKNOWN - 0x5D62
 File: MUTAMIN2.CRE, Name: Mutamin, Attribute: Animation=UNKNOWN - 0x5D53
+File: NEVA.CRE, Name: Ethereal Retribution
+(Conjuration)
+
+Level: Quest
+Sphere: Summoning
+Range: 40 ft.
+Duration: 3 rounds
+Casting Time: 8
+Area of Effect: 15-ft. radius 
+Saving Throw: Special
+
+Ghostly figures called by the Shaman swirl around the battlefield, tormenting the Shaman's adversaries. All enemies within the area of effect take 3d8 points of magic damage per round for the next 3 rounds (no save). In addition, all living enemies (undead and constructs are unaffected) must save vs. Spell or lose 2 points of Strength every round for 5 rounds. The Strength loss is cumulative, but this spell cannot reduce the Strength of a creature below 1., Attribute: Specifics=Unknown - 2
 File: NOB1400D.CRE, Name: Аристократ Чернозерья, Attribute: Animation=UNKNOWN - 0x5D62
 File: NOB1400E.CRE, Name: Аристократ Чернозерья, Attribute: Animation=UNKNOWN - 0x5D62
 File: NSABISH.CRE, Name: Abishai, Attribute: Animation=UNKNOWN - 0x5B06
@@ -159,6 +185,7 @@ File: NURSE.CRE, Name: Санитар, Attribute: Animation=UNKNOWN - 0x5D4F
 File: NURSE2.CRE, Name: Сиделка, Attribute: Specifics=Unknown - 77
 File: NURSE3.CRE, Name: Сиделка, Attribute: Specifics=Unknown - 77
 File: NURSE4.CRE, Name: Сиделка, Attribute: Specifics=Unknown - 77
+File: NURSE5.CRE, Name: magic, Attribute: Specifics=Unknown - 77
 File: NWABISH1.CRE, Name: Abishai, Attribute: Animation=UNKNOWN - 0x5B06
 File: NWARENA1.CRE, Name: Девушка, Attribute: Animation=UNKNOWN - 0x5D59
 File: NWARENA4.CRE, Name: Девушка, Attribute: Animation=UNKNOWN - 0x5D61
@@ -168,6 +195,13 @@ File: NWCULT03.CRE, Name: Воин Культа, Attribute: Specifics=Unknown - 
 File: NWCULT04.CRE, Name: Ассасин Культа, Attribute: Specifics=Unknown - 55
 File: NWCULT07.CRE, Name: Лидер культа, Attribute: Animation=UNKNOWN - 0x5D4F
 File: NWCULT1.CRE, Name: Маг Культа, Attribute: Animation=UNKNOWN - 0x5D4F
+File: NWCULT1M.CRE, Name: What?, Attribute: Animation=UNKNOWN - 0x5D4F
+File: NWCULT2F.CRE, Name: What?, Attribute: Specifics=Unknown - 77
+File: NWCULT2M.CRE, Name: What?, Attribute: Specifics=Unknown - 77
+File: NWCULT4M.CRE, Name: I can't stand much more!, Attribute: Specifics=Unknown - 77
+File: NWCULTL1.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Animation=UNKNOWN - 0x5D4F
+File: NWCULTL2.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Specifics=Unknown - 77
+File: NWCULTL3.CRE, Name: You're boring me. You won't like what I do when I'm bored., Attribute: Specifics=Unknown - 77
 File: NWDUM.CRE, Name: Sparring Dummy, Attribute: Sex=Unknown - 158
 File: NWFLSKUL.CRE, Name: Flaming Skull, Attribute: Specifics=Unknown - 255
 File: NWGOLEM2.CRE, Name: Хранитель Щита, Attribute: Animation=UNKNOWN - 0x504B
@@ -179,6 +213,7 @@ File: NWHUG1.CRE, Name: Бывший заключенный, Attribute: Specific
 File: NWHUG12.CRE, Name: Бывший заключенный, Attribute: Animation=UNKNOWN - 0x5D4D
 File: NWHUG2.CRE, Name: Бывший заключенный, Attribute: Specifics=Unknown - 15
 File: NWHUG3.CRE, Name: Бывший заключенный, Attribute: Animation=UNKNOWN - 0x5D5D
+File: NWHUG5.CRE, Name: It is better to be feared than respected, but respect is also acceptable., Attribute: Animation=UNKNOWN - 0x5244
 File: NWHUG8.CRE, Name: Бывший заключенный, Attribute: Animation=UNKNOWN - 0x5D5D
 File: NWLEGS1.CRE, Name: Warder, Attribute: Specifics=Unknown - 77
 File: NWMERC01.CRE, Name: Merchant, Attribute: Animation=UNKNOWN - 0x5D57
@@ -193,6 +228,7 @@ File: NWPRST7.CRE, Name: Жрица Маска, Attribute: Specifics=Unknown - 2
 File: NWSHAD01.CRE, Name: Shadow Fiend, Attribute: Animation=UNKNOWN - 0x5B07
 File: NWTOWER2.CRE, Name: Mage, Attribute: Animation=UNKNOWN - 0x6847
 File: NWTOWER5.CRE, Name: Mage, Attribute: Animation=UNKNOWN - 0x6847
+File: NWWATER.CRE, Name: На вас форма городского стража. Почему вас схватили?, Attribute: Animation=UNKNOWN - 0x5039
 File: NYMPHNW5.CRE, Name: Нифитис, Attribute: Animation=UNKNOWN - 0x5290
 File: OBULD.CRE, Name: Обольд Многострельный, Attribute: Specifics=Unknown - 230
 File: ORCNW0.CRE, Name: Вождь орков, Attribute: Specifics=Unknown - 18
@@ -209,6 +245,7 @@ File: PATROL03.CRE, Name: Guard, Attribute: Specifics=Unknown - 255
 File: PATROL04.CRE, Name: Guard, Attribute: Specifics=Unknown - 255
 File: PATROL05.CRE, Name: Guard, Attribute: Specifics=Unknown - 255
 File: PATROL06.CRE, Name: Guard, Attribute: Specifics=Unknown - 255
+File: PATROL07.CRE, Name: Guard, Attribute: Specifics=Unknown - 255
 File: PATROL08.CRE, Name: Guard Captain, Attribute: Specifics=Unknown - 208
 File: PATROL09.CRE, Name: Следопыт-орк, Attribute: Specifics=Unknown - 221
 File: PETE.CRE, Name: Пит О'Дил, Attribute: Animation=UNKNOWN - 0x5D56
@@ -228,6 +265,7 @@ File: SETTLER3.CRE, Name: Поселенец, Attribute: Specifics=Unknown - 4
 File: SHALDRI1.CRE, Name: Шалдрисса, Attribute: Animation=UNKNOWN - 0x5D59
 File: SHALDRI2.CRE, Name: Шалдрисса, Attribute: Animation=UNKNOWN - 0x5D59
 File: SHAMANUT.CRE, Name: Shadow Druid, Attribute: Animation=UNKNOWN - 0x5244
+File: SILVERB2.CRE, Name: Древний, разваливающийся свиток гласит: 'Турт мог лама гат раг.', Attribute: Animation=UNKNOWN - 0x5262
 File: SILVERBK.CRE, Name: Серебряная спина, Attribute: Animation=UNKNOWN - 0x5262
 File: SKELNW04.CRE, Name: Skeleton Mage, Attribute: Animation=UNKNOWN - 0x5D5A
 File: SKELNW04.CRE, Name: Skeleton Mage, Attribute: Specifics=Unknown - 209
@@ -258,13 +296,17 @@ File: VICTIM1.CRE, Name: Горожанин, Attribute: Animation=UNKNOWN - 0x5D
 File: WELCAR.CRE, Name: Велкар, Attribute: Specifics=Unknown - 115
 File: WERERAT.CRE, Name: Крыса-оборотень, Attribute: Animation=UNKNOWN - 0x5247
 File: WERERAT2.CRE, Name: Крыса-оборотень, Attribute: Animation=UNKNOWN - 0x5247
+File: WERERAT3.CRE, Name: , Attribute: Animation=UNKNOWN - 0x5247
 File: WERERSL.CRE, Name: Крыса-оборотень, Attribute: Animation=UNKNOWN - 0x5247
 File: WINTORP.CRE, Name: Винторп, Attribute: Animation=UNKNOWN - 0x5D62
+File: WYVERNB.CRE, Name: Далила, Attribute: Specifics=Unknown - 80
 File: YEANASHA.CRE, Name: Йеанаша, Attribute: Specifics=Unknown - 231
 File: YETI1.CRE, Name: Йети, Attribute: Animation=UNKNOWN - 0x528B
 File: YUSAM.CRE, Name: Юсам, Attribute: Animation=UNKNOWN - 0x5244
 File: YUSAM.CRE, Name: Юсам, Attribute: Specifics=Unknown - 117
 File: ZAMITRA1.CRE, Name: Замитра, Attribute: Specifics=Unknown - 3
+File: ZAMITRA2.CRE, Name: Водяной змей, Attribute: Specifics=Unknown - 3
+File: ZAMITRA3.CRE, Name: Водяной змей, Attribute: Specifics=Unknown - 3
 File: ZED.CRE, Name: Зед, Attribute: Specifics=Unknown - 227
 File: ZOKAN.CRE, Name: Зокан, Attribute: Animation=UNKNOWN - 0x5280
 File: ZOKAN.CRE, Name: Зокан, Attribute: Specifics=Unknown - 228

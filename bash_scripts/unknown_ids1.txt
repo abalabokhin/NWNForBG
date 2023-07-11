@@ -1,5 +1,5 @@
 Unknown IDS references in BCS & BS files
-Number of hits: 387
+Number of hits: 411
 File: _DASIGHT.bcs, Line: 89, Error: 0 not found in SPELL.IDS
 File: _DASIGHT.bcs, Line: 149, Error: 0 not found in SPELL.IDS
 File: _DASIGHT.bcs, Line: 150, Error: 0 not found in SPELL.IDS
@@ -108,6 +108,7 @@ File: BPPRI18A.bcs, Line: 332, Error: 0 not found in SPELL.IDS
 File: BPPRI18B.bcs, Line: 347, Error: 0 not found in SPELL.IDS
 File: BPPRI18C.bcs, Line: 347, Error: 0 not found in SPELL.IDS
 File: BPPRI18N.bcs, Line: 342, Error: 0 not found in SPELL.IDS
+File: BPPRIE8B.bcs, Line: 290, Error: 0 not found in SPELL.IDS
 File: BPPRIST5.bcs, Line: 290, Error: 0 not found in SPELL.IDS
 File: BPPRIST6.bcs, Line: 285, Error: 0 not found in SPELL.IDS
 File: BPPRST12.bcs, Line: 337, Error: 0 not found in SPELL.IDS
@@ -165,6 +166,7 @@ File: DEATHKNI.BCS, Line: 69, Error: 0 not found in SPELL.IDS
 File: DEGRIAB.bcs, Line: 405, Error: 0 not found in SPELL.IDS
 File: DEMI25.BCS, Line: 9, Error: 0 not found in SPELL.IDS
 File: DEMNABSU.BCS, Line: 76, Error: 0 not found in SPELL.IDS
+File: DESTH3B.bcs, Line: 302, Error: 0 not found in SPELL.IDS
 File: DRSHNL02.BCS, Line: 7, Error: 0 not found in SPELL.IDS
 File: DW#1GCL5.bcs, Line: 66, Error: 0 not found in SPELL.IDS
 File: DW#1GCL5.bcs, Line: 176, Error: 0 not found in SPELL.IDS
@@ -254,6 +256,12 @@ File: KURDAN.bcs, Line: 186, Error: 0 not found in SPELL.IDS
 File: KURDAN.bcs, Line: 187, Error: 0 not found in SPELL.IDS
 File: KURT.bcs, Line: 39, Error: 0 not found in SPELL.IDS
 File: LICHNW1.bcs, Line: 383, Error: 0 not found in SPELL.IDS
+File: MAEGAL.bcs, Line: 10, Error: 0 not found in SPELL.IDS
+File: MAEGAL.bcs, Line: 11, Error: 0 not found in SPELL.IDS
+File: MAEGAL.bcs, Line: 12, Error: 0 not found in SPELL.IDS
+File: MAEGAL.bcs, Line: 13, Error: 0 not found in SPELL.IDS
+File: MAEGAL.bcs, Line: 14, Error: 0 not found in SPELL.IDS
+File: MAEGAL.bcs, Line: 15, Error: 0 not found in SPELL.IDS
 File: MINNW1A.bcs, Line: 92, Error: 0 not found in SPELL.IDS
 File: MINNW1A.bcs, Line: 112, Error: 0 not found in SPELL.IDS
 File: MINNW1A.bcs, Line: 169, Error: 0 not found in SPELL.IDS
@@ -300,6 +308,7 @@ File: NWMG18A.bcs, Line: 299, Error: 0 not found in SPELL.IDS
 File: NWMG18A.bcs, Line: 300, Error: 0 not found in SPELL.IDS
 File: NWMG18A.bcs, Line: 301, Error: 0 not found in SPELL.IDS
 File: NWMG18A.bcs, Line: 302, Error: 0 not found in SPELL.IDS
+File: NWPLAT2.bcs, Line: 46, Error: 0 not found in SPELL.IDS
 File: NWWTSIGT.bcs, Line: 82, Error: 0 not found in SPELL.IDS
 File: NWWTSIGT.bcs, Line: 103, Error: 0 not found in SPELL.IDS
 File: NWWTSIGT.bcs, Line: 151, Error: 0 not found in SPELL.IDS
@@ -379,6 +388,21 @@ File: VAATH.bcs, Line: 198, Error: 0 not found in SPELL.IDS
 File: VAATH.bcs, Line: 199, Error: 0 not found in SPELL.IDS
 File: VAATH.bcs, Line: 200, Error: 0 not found in SPELL.IDS
 File: VANEVGOL.bcs, Line: 48, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 17, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 18, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 19, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 20, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 21, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 22, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 55, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 56, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 57, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 316, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 317, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 318, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 319, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 320, Error: 0 not found in SPELL.IDS
+File: WARDOK.bcs, Line: 321, Error: 0 not found in SPELL.IDS
 File: YESGAR.bcs, Line: 127, Error: 0 not found in SPELL.IDS
 File: YESGAR.bcs, Line: 148, Error: 0 not found in SPELL.IDS
 File: YESGAR.bcs, Line: 205, Error: 0 not found in SPELL.IDS
