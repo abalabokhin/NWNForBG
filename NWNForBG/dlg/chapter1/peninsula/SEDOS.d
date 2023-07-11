@@ -107,9 +107,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 11.4
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",2)EraseJournalEntry(%Полуостров: Бунт в тюрьме
-
-В городской тюрьме на полуострове разгорелся бунт заключенных. Капитан-привратник Кипп советовал поговорить с Седос Себил, чтобы определить лучший способ проникнуть в здание тюрьмы и помочь подавить бунт. Ее штаб-квартира расположена в юго-восточной части квартала.%)~ UNSOLVED_JOURNAL @34 EXIT
+  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",2)EraseJournalEntry(@64)~ UNSOLVED_JOURNAL @34 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 11.5
@@ -201,23 +199,17 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 25.1
   SAY @59
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)EraseJournalEntry(%Полуостров: Бунт в тюрьме
-
-В городской тюрьме на полуострове разгорелся бунт заключенных. Капитан-привратник Кипп советовал поговорить с Седос Себил, чтобы определить лучший способ проникнуть в здание тюрьмы и помочь подавить бунт. Ее штаб-квартира расположена в юго-восточной части квартала.%)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)EraseJournalEntry(@64)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.2
   SAY @61
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)ReputationInc(-1)EraseJournalEntry(%Полуостров: Бунт в тюрьме
-
-В городской тюрьме на полуострове разгорелся бунт заключенных. Капитан-привратник Кипп советовал поговорить с Седос Себил, чтобы определить лучший способ проникнуть в здание тюрьмы и помочь подавить бунт. Ее штаб-квартира расположена в юго-восточной части квартала.%)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)ReputationInc(-1)EraseJournalEntry(@64)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 25.3
   SAY @62
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)AddexperienceParty(154000)ReputationInc(1)EraseJournalEntry(%Полуостров: Бунт в тюрьме
-
-В городской тюрьме на полуострове разгорелся бунт заключенных. Капитан-привратник Кипп советовал поговорить с Седос Себил, чтобы определить лучший способ проникнуть в здание тюрьмы и помочь подавить бунт. Ее штаб-квартира расположена в юго-восточной части квартала.%)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)AddexperienceParty(154000)ReputationInc(1)EraseJournalEntry(@64)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
 END
 
 // ---------------------------------------------------------------------------------------
