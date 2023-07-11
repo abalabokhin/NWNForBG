@@ -1,3 +1,8 @@
+*. Вроде по IDS MISSILE.IDS от него же
+*. От Исуминатора - вроде нет еще двух dlg файлов: 
+dlg(3 штуки, но это не точно)
+NW1100.ARE->CULTTRAP.BCS->NWCULTL3.CRE->GUZUD1.DLG
+...->GUZUD2.DLG
 *. разобраться с присоединяемыми персонажами и 2da таблицами
 ITEMEXCL.2DA
 MASTAREA.2DA
