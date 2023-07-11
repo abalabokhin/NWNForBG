@@ -201,9 +201,7 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 30.2
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("HaedralinJob","GLOBAL",1)EraseJournalEntry(%Слова Власти
-
-Третье Слово Власти нашлось, но праздновать это событие нет времени. Арибет и армия Лускана проломили стены Невервинтера. Аарин Генд уже сделал все необходимые приготовления для быстрого возвращения в Невервинтер. Если не остановить Арибет и армию Лускана, город непременно падет.%)~ UNSOLVED_JOURNAL @58 EXIT
+  IF ~~ THEN DO ~SetGlobal("HaedralinJob","GLOBAL",1)EraseJournalEntry()~ UNSOLVED_JOURNAL @58 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 30.3

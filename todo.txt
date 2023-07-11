@@ -1,20 +1,3 @@
-*. гдето встречаются нетрафицированные диалоги (журнальные записи).
-        modified:   chapter2/JAROO.d
-        modified:   chapter2/Nymph.d
-        modified:   chapter2/SpiritFo.d
-        modified:   chapter2/green_griffon/Karathis.d
-        modified:   chapter2/green_griffon/MUTAMIN2.d
-        modified:   chapter2/luskan/ELYNWYD.d
-        modified:   chapter2/luskan/LONDA.d
-        modified:   chapter2/port_llast/Aarin1.d
-        modified:   chapter2/port_llast/Ander.d
-        modified:   "chapter2/port_llast/ELTURA2_\320\224\320\275\320\265\320\262\320\275\320\270\320\272.txt"
-        modified:   chapter2/port_llast/Neurik.d
-        modified:   chapter3/DAMAS.d
-        modified:   chapter3/ZOKAN.d
-        modified:   chapter4/HAEDRAL2.d
-        modified:   chapter4/LUCE2.d
-
 *. разобраться с присоединяемыми персонажами и 2da таблицами
 ITEMEXCL.2DA
 MASTAREA.2DA
@@ -32,7 +15,7 @@ ITEMDIAL
 *. В скриптах есть еще нетрафицированные строчки и всякие Display String (в новых) - поправить это.
 *. имена для вещей и всего такого
 *. посмотреть в присланных файлах от исуминатора что там по ids (может какие-то новые добавлены).
-*. добавить ids на основе анализа из NI
+*. добавить ids на основе анализа из NI + чтото там с pro файлами - соообщение от кинчева
 
 
 Possible bugs:
