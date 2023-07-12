@@ -142,6 +142,57 @@ COPY ~NWNForBG/sto/susptype.sto~ ~override~
 COPY ~NWNForBG/sto/torgo.sto~ ~override~
   SAY 0xC	@103091
 
+//Music
+ADD_MUSIC ~NWNThm~ ~NWNThm.mus~    // was 114
+ADD_MUSIC ~NWNRurday~ ~Rurday.mus~    // was 115
+ADD_MUSIC ~NWNRurnit~ ~Rurnit.mus~    // was 116
+ADD_MUSIC ~NWNRurald2~ ~Rurald2.mus~  // was 117
+ADD_MUSIC ~NWNMines1~ ~Mines1.mus~    // was 118
+ADD_MUSIC ~NWNMines2~ ~Mines2.mus~    // was 119
+ADD_MUSIC ~NWNCastle~ ~Castle.mus~    // was 120
+ADD_MUSIC ~NWNDockday~ ~Dockday.mus~  // was 121
+ADD_MUSIC ~NWNDocknit~ ~Docknit.mus~  // was 122
+ADD_MUSIC ~NWNMarket~ ~Market.mus~    // was 123
+ADD_MUSIC ~NWNCitynit~ ~Citynit.mus~  // was 124
+ADD_MUSIC ~NWNSlumday~ ~Slumday.mus~  // was 125
+ADD_MUSIC ~NWNSlumnit~ ~Slumnit.mus~  // was 126
+ADD_MUSIC ~NWNCrypt1~ ~Crypt1.mus~    // was 127
+ADD_MUSIC ~NWNWealth~ ~Wealth.mus~    // was 128
+ADD_MUSIC ~NWNForstd1~ ~Forstd1.mus~  // was 129
+ADD_MUSIC ~NWNForstd2~ ~Forstd2.mus~  // was 130
+ADD_MUSIC ~NWNForestn~ ~Forestn.mus~  // was 131
+ADD_MUSIC ~NWNDung1~ ~NWDung1.mus~  // was 132
+ADD_MUSIC ~NWNRich~ ~Rich.mus~        // was 133
+ADD_MUSIC ~NWNSewer~ ~Sewer.mus~      // was 134
+ADD_MUSIC ~NWNStore~ ~Store.mus~      // was 135
+ADD_MUSIC ~NWNTavern1~ ~Tavern1.mus~  // was 136
+ADD_MUSIC ~NWNTavern2~ ~Tavern2.mus~  // was 137
+ADD_MUSIC ~NWNTavern3~ ~Tavern3.mus~  // was 138
+ADD_MUSIC ~NWNTavern4~ ~Tavern4.mus~  // was 139
+ADD_MUSIC ~NWNTemplg1~ ~Templg1.mus~  // was 140
+ADD_MUSIC ~NWNTemplg2~ ~Templg2.mus~  // was 141
+ADD_MUSIC ~NWNTemplev~ ~Templev.mus~  // was 142
+ADD_MUSIC ~NWNMain~ ~NWmain.mus~    // was 143
+ADD_MUSIC ~NWNAargend~ ~Aargend.mus~  // was 144
+ADD_MUSIC ~NWNAribev~ ~Aribev.mus~    // was 145
+ADD_MUSIC ~NWNAribgd~ ~Aribgd.mus~    // was 146
+ADD_MUSIC ~NWNMaugrim~ ~Maugrim.mus~  // was 147
+ADD_MUSIC ~NWNMorag~ ~Morag.mus~      // was 148
+ADD_MUSIC ~NWNChapt1~ ~Chapt1.mus~    // was 149
+ADD_MUSIC ~NWNChapt2~ ~Chapt2.mus~    // was 150
+ADD_MUSIC ~NWNChapt3~ ~Chapt3.mus~    // was 151
+ADD_MUSIC ~NWNChapt4~ ~Chapt4.mus~    // was 152
+ADD_MUSIC ~NWNThem~ ~Themnwn.mus~  // was 153
+ADD_MUSIC ~NWNB5~ ~b5.mus~            // was 154
+ADD_MUSIC ~NWNB6~ ~b6.mus~            // was 155
+ADD_MUSIC ~NWN84~ ~84.mus~            // was 156
+
+// TODO: patch areas, like here:
+//    READ_LONG 0xbc ofsSongs
+//    WRITE_LONG (ofsSongs + 0x00) a7mod
+//    WRITE_LONG (ofsSongs + 0x04) a7mod
+//    WRITE_LONG (ofsSongs + 0x0c) a7bt
+
 //Areas
 COPY ~NWNForBG/are~ ~override~
 
@@ -5728,6 +5779,13 @@ ADD_PROJECTILE ~NWNForBG/pro/IDPRO217.PRO~
 
 //Scripts
 COMPILE ~NWNForBG/scripts~
+COMPILE ~NWNForBG/scripts/NW2905.BAF~
+REPLACE TEXTUALLY ~NWNThm~ ~%NWNThm%~
+REPLACE TEXTUALLY ~NWNMain~ ~%NWNMain%~
+REPLACE
+
+COPY ~musictest/walkandsong.bcs~ ~override/walkandsong.bcs~
+REPLACE TEXTUALLY 777777 ~%MxTest%~
 
 EXTEND_TOP ~BALDUR.BCS~ ~NWNForBG/scripts/NWNMESS.BAF~
 
