@@ -187,12 +187,6 @@ ADD_MUSIC ~NWNB5~ ~NWNForBG/mus/b5.mus~            // was 154
 ADD_MUSIC ~NWNB6~ ~NWNForBG/mus/b6.mus~            // was 155
 ADD_MUSIC ~NWN84~ ~NWNForBG/mus/84.mus~            // was 156
 
-// TODO: patch areas, like here:
-//    READ_LONG 0xbc ofsSongs
-//    WRITE_LONG (ofsSongs + 0x00) a7mod
-//    WRITE_LONG (ofsSongs + 0x04) a7mod
-//    WRITE_LONG (ofsSongs + 0x0c) a7bt
-
 //Areas
 COPY ~NWNForBG/are~ ~override~
 
