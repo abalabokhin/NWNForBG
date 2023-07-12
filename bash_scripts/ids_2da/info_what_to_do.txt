@@ -1,22 +1,5 @@
 2DA и IDS уже анализ сделал, выжимки из моих записей:
 
-Все связанное с китом:
-ABCLASRQ.2DA - кит
-ABCLSMOD.2DA - кит
-ABDCDSRQ.2DA - кит
-ABDCSCRQ.2DA - кит
-CLASWEAP.2DA - кит
-K_C_E.2DA   - хз, но вроде и так  норм    
-K_C_HE.2DA  - хз, но вроде и так  норм
-KITLIST.2DA  - кит
-DUALCLAS.2DA - кит
-ALIGNMNT.2DA - кит
-LUABBR.2DA   - кит
-WEAPPROF.2DA - кит 
-KIT.IDS      - кит
-CLABPR19.2DA - новый
-+SEHHANEEN kit
-
 MSECTYPE.2DA:                         !!!!!!!!! сделать после Non-combat
 +spell type + strref
 2DA V1.0
@@ -47,9 +30,20 @@ fl#Disease 2449
 TB#Paladinhood 104456
 TB#SecondWind 104457
 
++patch spl:
+
+    File: RR#UNETH.SPL, Name: No such index, Attribute: Spell type=RR#ETHER - 20
+    File: SPHEAL6.SPL, Name: Исцеление, Attribute: Spell type=FL#DISEASE - 21
+    File: SPIN74B.SPL, Name: No such index, Attribute: Spell type=FL#DISEASE - 21
+    File: SPPR526.SPL, Name: Пир Героев, Attribute: Spell type=FL#DISEASE - 21
+
 SONGLIST.2DA !!!!!!!!!!!!!!!!!!!!!!!!!!!  сделать, чтобы брался следующий номер
 +new songs
 +cday1 -> 1cday1 ?
 
-MMCHAL.2DA - новый             - хз что это такое  - сделать!
-MUSICLIS.IDS - новый               +проверить как реально используется - сделать тоже
+MUSICLIS.IDS - новый               +проверить как реально используется - сделать тоже - с виду должен быть, но
+нет.
+
+MMCHAL.2DA - новый             - хз что это такое  - сделать!    пока забить. - хрень какаято ненужная
+
+
