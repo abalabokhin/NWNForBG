@@ -5932,7 +5932,7 @@ ADD_KIT ~SEHHANEEN~
  // HLA table to use; see LUABBR.2da
  ~Cl0~
  // list of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
- ~~
+ ~* * * * * * * * * * * * * * * * * * * *~
  // Lower, mixed, and help kit names and descriptions, added to KITLIST.2da
  SAY @88750
  SAY @88750
