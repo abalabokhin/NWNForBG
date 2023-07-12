@@ -5905,3 +5905,35 @@ REPLACE ~XXX103164~ @103164
 REPLACE ~XXX104464~ @104464
 REPLACE ~XXX107719~ @107719
 
+// Kit
+ADD_KIT ~SEHHANEEN~
+ // appended to CLASWEAP.2da
+ ~SEHHANEEN               0           0           1           1           0           1           0           0~
+ // appended column-wise to WEAPPROF.2da
+ ~SEHHANEEN 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+ // appended to ABCLASRQ.2da
+ ~SEHHANEEN               0       0       0       0       17       0~
+ // appended to ABCLSMOD.2da
+ ~SEHHANEEN               0       -2       0       0       0       0~
+ // appended to ABDCDSRQ.2da
+ ~SEHHANEEN               0       0       0       0       17      0~
+ // appended to ABDCSCRQ.2da
+ ~SEHHANEEN               0       0       0       0       15      0~
+ // appended to ALIGNMNT.2da
+ ~SEHHANEEN           1                   0                   0                   1                   0                   0                   1                   0                   0~
+ // appended to DUALCLAS.2da
+ ~SEHHANEEN               1       0       1       1       0       1~
+ // path to your CLAB-style 2da file
+ ~NWNForBG/2da/SEHHANEE.2DA~
+ // PC races and classes allowed to use this kit, from KITTABLE.2da
+ ~~
+ // usability flags, added to the end of the KITLIST.2da entry
+ ~0x02000000      3~
+ // HLA table to use; see LUABBR.2da
+ ~Cl0~
+ // list of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
+ ~~
+ // Lower, mixed, and help kit names and descriptions, added to KITLIST.2da
+ SAY @88750
+ SAY @88750
+ SAY @88751
