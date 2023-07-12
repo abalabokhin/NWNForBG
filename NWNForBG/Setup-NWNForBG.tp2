@@ -196,7 +196,7 @@ ADD_MUSIC ~NWN84~ ~84.mus~            // was 156
 //Areas
 COPY ~NWNForBG/are~ ~override~
 
-COPY ~are/nw1000.are~ ~override~
+COPY ~NWNForBG/are/nw1000.are~ ~override~
   SAY 0x34AC	@103091
   SAY 0x36F8	@103092
   SAY 0x37BC	@103093
@@ -218,45 +218,45 @@ COPY ~are/nw1000.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNThm
   WRITE_LONG (ofsSongs + 0x4) NWNMain
 
-COPY ~are/nw1001.are~ ~override~
+COPY ~NWNForBG/are/nw1001.are~ ~override~
   SAY 0xD5C	@103102
 
-COPY ~are/nw1004.are~ ~override~
+COPY ~NWNForBG/are/nw1004.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMarket
   WRITE_LONG (ofsSongs + 0x4) NWNMarket
 
-COPY ~are/nw1006.are~ ~override~
+COPY ~NWNForBG/are/nw1006.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern4
   WRITE_LONG (ofsSongs + 0x4) NWNTavern4
 
-COPY ~are/nw1007.are~ ~override~
+COPY ~NWNForBG/are/nw1007.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern3
   WRITE_LONG (ofsSongs + 0x4) NWNTavern3
 
-COPY ~are/nw1008.are~ ~override~
+COPY ~NWNForBG/are/nw1008.are~ ~override~
   SAY 0x528	@104315
 
-COPY ~are/nw1012.are~ ~override~
+COPY ~NWNForBG/are/nw1012.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
   WRITE_LONG (ofsSongs + 0xc) NWNSlumday
 
-COPY ~are/nw1013.are~ ~override~
+COPY ~NWNForBG/are/nw1013.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
   WRITE_LONG (ofsSongs + 0xc) NWNSlumday
 
-COPY ~are/nw1030.are~ ~override~
+COPY ~NWNForBG/are/nw1030.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNAribev
   WRITE_LONG (ofsSongs + 0x4) NWNAribev
 
-COPY ~are/nw1033.are~ ~override~
+COPY ~NWNForBG/are/nw1033.are~ ~override~
   SAY 0x3654	@104318
   SAY 0x36BC	@104319
   READ_LONG 0xbc ofsSongs
@@ -264,16 +264,16 @@ COPY ~are/nw1033.are~ ~override~
   WRITE_LONG (ofsSongs + 0x4) NWNMines1
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw1041.are~ ~override~
+COPY ~NWNForBG/are/nw1041.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTemplev
   WRITE_LONG (ofsSongs + 0x4) NWNTemplev
 
-COPY ~are/nw1042.are~ ~override~
+COPY ~NWNForBG/are/nw1042.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0xc) NWN84
 
-COPY ~are/nw1100.are~ ~override~
+COPY ~NWNForBG/are/nw1100.are~ ~override~
   SAY 0x2224	@103104
   SAY 0x22E8	@103108
   SAY 0x23AC	@103106
@@ -288,37 +288,37 @@ COPY ~are/nw1100.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNDockday
   WRITE_LONG (ofsSongs + 0x4) NWNDocknit
 
-COPY ~are/nw1101.are~ ~override~
+COPY ~NWNForBG/are/nw1101.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern1
   WRITE_LONG (ofsSongs + 0x4) NWNTavern2
 
-COPY ~are/nw1109.are~ ~override~
+COPY ~NWNForBG/are/nw1109.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
 
-COPY ~are/nw1110.are~ ~override~
+COPY ~NWNForBG/are/nw1110.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern4
   WRITE_LONG (ofsSongs + 0x4) NWNTavern4
 
-COPY ~are/nw1112.are~ ~override~
+COPY ~NWNForBG/are/nw1112.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
 
-COPY ~are/nw1119.are~ ~override~
+COPY ~NWNForBG/are/nw1119.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNSewer
   WRITE_LONG (ofsSongs + 0x4) NWNSewer
 
-COPY ~are/nw1120.are~ ~override~
+COPY ~NWNForBG/are/nw1120.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNSewer
   WRITE_LONG (ofsSongs + 0x4) NWNSewer
 
-COPY ~are/nw1200.are~ ~override~
+COPY ~NWNForBG/are/nw1200.are~ ~override~
   SAY 0x3764	@103114
   SAY 0x3BFC	@103113
   SAY 0x7A34	@103103
@@ -328,48 +328,48 @@ COPY ~are/nw1200.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNSlumday
   WRITE_LONG (ofsSongs + 0x4) NWNSlumnit
 
-COPY ~are/nw1218.are~ ~override~
+COPY ~NWNForBG/are/nw1218.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw1219.are~ ~override~
+COPY ~NWNForBG/are/nw1219.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw1221.are~ ~override~
+COPY ~NWNForBG/are/nw1221.are~ ~override~
   SAY 0x1BD0	@103115
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNDung1
   WRITE_LONG (ofsSongs + 0x4) NWNDung1
 
-COPY ~are/nw1223.are~ ~override~
+COPY ~NWNForBG/are/nw1223.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNAribgd
   WRITE_LONG (ofsSongs + 0x4) NWNAribgd
 
-COPY ~are/nw1300.are~ ~override~
+COPY ~NWNForBG/are/nw1300.are~ ~override~
   SAY 0x3E6C	@103103
   SAY 0x3EA0	@103116
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNChapt1
   WRITE_LONG (ofsSongs + 0x4) NWNCitynit
 
-COPY ~are/nw1302.are~ ~override~
+COPY ~NWNForBG/are/nw1302.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw1311.are~ ~override~
+COPY ~NWNForBG/are/nw1311.are~ ~override~
   SAY 0xB88	@103117
 
-COPY ~are/nw1316.are~ ~override~
+COPY ~NWNForBG/are/nw1316.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNSewer
   WRITE_LONG (ofsSongs + 0x4) NWNSewer
 
-COPY ~are/nw1400.are~ ~override~
+COPY ~NWNForBG/are/nw1400.are~ ~override~
   SAY 0x49F8	@103119
   SAY 0x51A0	@103118
   SAY 0x5264	@103118
@@ -389,28 +389,28 @@ COPY ~are/nw1400.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNWealth
   WRITE_LONG (ofsSongs + 0x4) NWNWealth
 
-COPY ~are/nw1407.are~ ~override~
+COPY ~NWNForBG/are/nw1407.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
 
-COPY ~are/nw1409.are~ ~override~
+COPY ~NWNForBG/are/nw1409.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern2
   WRITE_LONG (ofsSongs + 0x4) NWNTavern4
 
-COPY ~are/nw1419.are~ ~override~
+COPY ~NWNForBG/are/nw1419.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw1426.are~ ~override~
+COPY ~NWNForBG/are/nw1426.are~ ~override~
   SAY 0x308	@103125
 
-COPY ~are/nw1430.are~ ~override~
+COPY ~NWNForBG/are/nw1430.are~ ~override~
   SAY 0x3CC	@103125
 
-COPY ~are/nw2000.are~ ~override~
+COPY ~NWNForBG/are/nw2000.are~ ~override~
   SAY 0x3C74	@103127
   SAY 0x45A4	@103128
   SAY 0xA0C8	@103129
@@ -425,12 +425,12 @@ COPY ~are/nw2000.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNDockday
   WRITE_LONG (ofsSongs + 0x4) NWNDocknit
 
-COPY ~are/nw2009.are~ ~override~
+COPY ~NWNForBG/are/nw2009.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern1
   WRITE_LONG (ofsSongs + 0x4) NWNTavern1
 
-COPY ~are/nw2100.are~ ~override~
+COPY ~NWNForBG/are/nw2100.are~ ~override~
   SAY 0x3324	@103137
   SAY 0x33E8	@103138
   SAY 0x34AC	@103139
@@ -446,14 +446,14 @@ COPY ~are/nw2100.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNRurday
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
 
-COPY ~are/nw2102.are~ ~override~
+COPY ~NWNForBG/are/nw2102.are~ ~override~
   SAY 0x6D1C	@107657
   SAY 0x6D50	@107655
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw2103.are~ ~override~
+COPY ~NWNForBG/are/nw2103.are~ ~override~
   SAY 0x2CC4	@107658
   SAY 0x2D88	@107658
   SAY 0x2E4C	@107658
@@ -462,7 +462,7 @@ COPY ~are/nw2103.are~ ~override~
   SAY 0x6264	@107656
   SAY 0x62CC	@107657
 
-COPY ~are/nw2104.are~ ~override~
+COPY ~NWNForBG/are/nw2104.are~ ~override~
   SAY 0x32D8	@104327
   SAY 0x339C	@104328
   SAY 0x3460	@104328
@@ -470,7 +470,7 @@ COPY ~are/nw2104.are~ ~override~
   SAY 0x5B18	@107656
   SAY 0x5B4C	@107655
 
-COPY ~are/nw2200.are~ ~override~
+COPY ~NWNForBG/are/nw2200.are~ ~override~
   SAY 0x17D0	@103149
   SAY 0x3248	@103147
   SAY 0x327C	@103148
@@ -480,12 +480,12 @@ COPY ~are/nw2200.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNRurald2
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
 
-COPY ~are/nw2205.are~ ~override~
+COPY ~NWNForBG/are/nw2205.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMines1
   WRITE_LONG (ofsSongs + 0x4) NWNMines1
 
-COPY ~are/nw2300.are~ ~override~
+COPY ~NWNForBG/are/nw2300.are~ ~override~
   SAY 0x3790	@103170
   SAY 0x5164	@103150
   SAY 0x5200	@103171
@@ -494,25 +494,25 @@ COPY ~are/nw2300.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNForstd1
   WRITE_LONG (ofsSongs + 0x4) NWNForestn
 
-COPY ~are/nw2302.are~ ~override~
+COPY ~NWNForBG/are/nw2302.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw2304.are~ ~override~
+COPY ~NWNForBG/are/nw2304.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMines2
   WRITE_LONG (ofsSongs + 0x4) NWNMines2
 
-COPY ~are/nw2306.are~ ~override~
+COPY ~NWNForBG/are/nw2306.are~ ~override~
   SAY 0x418	@103177
 
-COPY ~are/nw2308.are~ ~override~
+COPY ~NWNForBG/are/nw2308.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
 
-COPY ~are/nw2400.are~ ~override~
+COPY ~NWNForBG/are/nw2400.are~ ~override~
   SAY 0x2D30	@103142
   SAY 0x2D64	@103178
   SAY 0x2D98	@103179
@@ -522,7 +522,7 @@ COPY ~are/nw2400.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNRurald2
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
 
-COPY ~are/nw2500.are~ ~override~
+COPY ~NWNForBG/are/nw2500.are~ ~override~
   SAY 0x1F0C	@103172
   SAY 0x1F40	@103182
   SAY 0x1F74	@103183
@@ -530,13 +530,13 @@ COPY ~are/nw2500.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNForstd1
   WRITE_LONG (ofsSongs + 0x4) NWNForestn
 
-COPY ~are/nw2501.are~ ~override~
+COPY ~NWNForBG/are/nw2501.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNDung1
   WRITE_LONG (ofsSongs + 0x4) NWNDung1
   WRITE_LONG (ofsSongs + 0xc) NWNWealth
 
-COPY ~are/nw2510.are~ ~override~
+COPY ~NWNForBG/are/nw2510.are~ ~override~
   SAY 0x32C8	@103172
   SAY 0x32FC	@103182
   SAY 0x3330	@103183
@@ -544,32 +544,32 @@ COPY ~are/nw2510.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw2600.are~ ~override~
+COPY ~NWNForBG/are/nw2600.are~ ~override~
   SAY 0x2930	@103180
   SAY 0x2964	@103184
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRurday
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
 
-COPY ~are/nw2601.are~ ~override~
+COPY ~NWNForBG/are/nw2601.are~ ~override~
   SAY 0xC00	@103129
   SAY 0x28B4	@103180
   SAY 0x28E8	@103184
 
-COPY ~are/nw2605.are~ ~override~
+COPY ~NWNForBG/are/nw2605.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw2607.are~ ~override~
+COPY ~NWNForBG/are/nw2607.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCastle
   WRITE_LONG (ofsSongs + 0x4) NWNCastle
 
-COPY ~are/nw2608.are~ ~override~
+COPY ~NWNForBG/are/nw2608.are~ ~override~
   SAY 0xBD4	@104330
   SAY 0xC98	@104331
 
-COPY ~are/nw2700.are~ ~override~
+COPY ~NWNForBG/are/nw2700.are~ ~override~
   SAY 0x3AD8	@103150
   SAY 0x3B0C	@103185
   SAY 0x3B40	@103186
@@ -578,15 +578,15 @@ COPY ~are/nw2700.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNForstd2
   WRITE_LONG (ofsSongs + 0x4) NWNForestn
 
-COPY ~are/nw2705.are~ ~override~
+COPY ~NWNForBG/are/nw2705.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw2706.are~ ~override~
+COPY ~NWNForBG/are/nw2706.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0xc) NWNB5
 
-COPY ~are/nw2800.are~ ~override~
+COPY ~NWNForBG/are/nw2800.are~ ~override~
   SAY 0xDF4	@103192
   SAY 0x19C0	@103141
   SAY 0x19F4	@103193
@@ -594,18 +594,18 @@ COPY ~are/nw2800.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNForstd1
   WRITE_LONG (ofsSongs + 0x4) NWNForestn
 
-COPY ~are/nw2900.are~ ~override~
+COPY ~NWNForBG/are/nw2900.are~ ~override~
   SAY 0x2644	@103194
   SAY 0x4040	@103187
   SAY 0x4074	@103195
   SAY 0x40A8	@103196
   SAY 0x40DC	@103197
 
-COPY ~are/nw2903.are~ ~override~
+COPY ~NWNForBG/are/nw2903.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0xc) NWNB5
 
-COPY ~are/nw2e00.are~ ~override~
+COPY ~NWNForBG/are/nw2e00.are~ ~override~
   SAY 0x4318	@103204
   SAY 0x43DC	@103202
   SAY 0x44A0	@103203
@@ -618,32 +618,32 @@ COPY ~are/nw2e00.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNThem
   WRITE_LONG (ofsSongs + 0x4) NWNCitynit
 
-COPY ~are/nw2e01.are~ ~override~
+COPY ~NWNForBG/are/nw2e01.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTemplg1
   WRITE_LONG (ofsSongs + 0x4) NWNTemplg2
 
-COPY ~are/nw2e02.are~ ~override~
+COPY ~NWNForBG/are/nw2e02.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMarket
   WRITE_LONG (ofsSongs + 0x4) NWNMarket
 
-COPY ~are/nw2e03.are~ ~override~
+COPY ~NWNForBG/are/nw2e03.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern4
   WRITE_LONG (ofsSongs + 0x4) NWNTavern4
 
-COPY ~are/nw2e04.are~ ~override~
+COPY ~NWNForBG/are/nw2e04.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern3
   WRITE_LONG (ofsSongs + 0x4) NWNTavern3
 
-COPY ~are/nw2e23.are~ ~override~
+COPY ~NWNForBG/are/nw2e23.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRich
   WRITE_LONG (ofsSongs + 0x4) NWNRich
 
-COPY ~are/nw2e31.are~ ~override~
+COPY ~NWNForBG/are/nw2e31.are~ ~override~
   SAY 0x3C80	@103205
   SAY 0x6864	@103199
   SAY 0x6898	@103206
@@ -651,43 +651,43 @@ COPY ~are/nw2e31.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNDockday
   WRITE_LONG (ofsSongs + 0x4) NWNDockday
 
-COPY ~are/nw2e34.are~ ~override~
+COPY ~NWNForBG/are/nw2e34.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw2e52.are~ ~override~
+COPY ~NWNForBG/are/nw2e52.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNDung1
   WRITE_LONG (ofsSongs + 0x4) NWNDung1
   WRITE_LONG (ofsSongs + 0xc) NWN84
 
-COPY ~are/nw2e55.are~ ~override~
+COPY ~NWNForBG/are/nw2e55.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCastle
 
-COPY ~are/nw2e56.are~ ~override~
+COPY ~NWNForBG/are/nw2e56.are~ ~override~
   SAY 0x32E0	@103216
   SAY 0x3314	@103217
 
-COPY ~are/nw2e57.are~ ~override~
+COPY ~NWNForBG/are/nw2e57.are~ ~override~
   SAY 0x26DC	@103218
   SAY 0x3078	@104332
 
-COPY ~are/nw2e58.are~ ~override~
+COPY ~NWNForBG/are/nw2e58.are~ ~override~
   SAY 0x80C	@103219
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMain
   WRITE_LONG (ofsSongs + 0x4) NWNMain
 
-COPY ~are/nw2e65.are~ ~override~
+COPY ~NWNForBG/are/nw2e65.are~ ~override~
   SAY 0x574	@103223
   SAY 0x638	@103223
   SAY 0x6FC	@103223
   SAY 0x7C0	@103223
   SAY 0x884	@103223
 
-COPY ~are/nw3000.are~ ~override~
+COPY ~NWNForBG/are/nw3000.are~ ~override~
   SAY 0x2A64	@103202
   SAY 0x2B28	@103202
   SAY 0x2BEC	@107739
@@ -702,49 +702,49 @@ COPY ~are/nw3000.are~ ~override~
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
   WRITE_LONG (ofsSongs + 0xc) NWNB5
 
-COPY ~are/nw3001.are~ ~override~
+COPY ~NWNForBG/are/nw3001.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMain
   WRITE_LONG (ofsSongs + 0x4) NWNMain
 
-COPY ~are/nw3002.are~ ~override~
+COPY ~NWNForBG/are/nw3002.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTemplg1
   WRITE_LONG (ofsSongs + 0x4) NWNTemplg1
 
-COPY ~are/nw3100.are~ ~override~
+COPY ~NWNForBG/are/nw3100.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCastle
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
 
-COPY ~are/nw3101.are~ ~override~
+COPY ~NWNForBG/are/nw3101.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCastle
   WRITE_LONG (ofsSongs + 0x4) NWNCastle
 
-COPY ~are/nw3200.are~ ~override~
+COPY ~NWNForBG/are/nw3200.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNRurday
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
 
-COPY ~are/nw3201.are~ ~override~
+COPY ~NWNForBG/are/nw3201.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNChapt3
   WRITE_LONG (ofsSongs + 0x4) NWNChapt3
   WRITE_LONG (ofsSongs + 0xc) NWN84
 
-COPY ~are/nw3300.are~ ~override~
+COPY ~NWNForBG/are/nw3300.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw3302.are~ ~override~
+COPY ~NWNForBG/are/nw3302.are~ ~override~
   SAY 0x1674	@105945
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNDung1
   WRITE_LONG (ofsSongs + 0x4) NWNDung1
 
-COPY ~are/nw3303.are~ ~override~
+COPY ~NWNForBG/are/nw3303.are~ ~override~
   SAY 0x1570	@107761
   SAY 0x1634	@107761
   SAY 0x16F8	@107760
@@ -754,7 +754,7 @@ COPY ~are/nw3303.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNDung1
   WRITE_LONG (ofsSongs + 0x4) NWNDung1
 
-COPY ~are/nw3400.are~ ~override~
+COPY ~NWNForBG/are/nw3400.are~ ~override~
   SAY 0x2750	@107753
   SAY 0x2784	@107754
   SAY 0x27B8	@107755
@@ -764,7 +764,7 @@ COPY ~are/nw3400.are~ ~override~
   WRITE_LONG (ofsSongs + 0x4) NWNRurnit
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw3404.are~ ~override~
+COPY ~NWNForBG/are/nw3404.are~ ~override~
   SAY 0xFC8	@106045
   SAY 0x108C	@106043
   SAY 0x1150	@106047
@@ -773,18 +773,18 @@ COPY ~are/nw3404.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNCrypt1
   WRITE_LONG (ofsSongs + 0x4) NWNCrypt1
 
-COPY ~are/nw3406.are~ ~override~
+COPY ~NWNForBG/are/nw3406.are~ ~override~
   SAY 0x1958	@106136
   SAY 0x1AE0	@106138
   SAY 0x1C68	@106140
   SAY 0x1DF0	@106142
 
-COPY ~are/nw3407.are~ ~override~
+COPY ~NWNForBG/are/nw3407.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNForestn
   WRITE_LONG (ofsSongs + 0x4) NWNForestn
 
-COPY ~are/nw3500.are~ ~override~
+COPY ~NWNForBG/are/nw3500.are~ ~override~
   SAY 0x1414	@107768
   SAY 0x1448	@107769
   SAY 0x147C	@107770
@@ -796,47 +796,47 @@ COPY ~are/nw3500.are~ ~override~
   WRITE_LONG (ofsSongs + 0x4) NWNChapt3
   WRITE_LONG (ofsSongs + 0xc) NWNB5
 
-COPY ~are/nw3501.are~ ~override~
+COPY ~NWNForBG/are/nw3501.are~ ~override~
   SAY 0x1370	@106347
   SAY 0x1434	@106347
   SAY 0x14F8	@106347
 
-COPY ~are/nw4002.are~ ~override~
+COPY ~NWNForBG/are/nw4002.are~ ~override~
   SAY 0x6FC	@107078
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNAribev
   WRITE_LONG (ofsSongs + 0x4) NWNAribev
 
-COPY ~are/nw4003.are~ ~override~
+COPY ~NWNForBG/are/nw4003.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMaugrim
   WRITE_LONG (ofsSongs + 0x4) NWNMaugrim
 
-COPY ~are/nw4011.are~ ~override~
+COPY ~NWNForBG/are/nw4011.are~ ~override~
   SAY 0xE6C	@103102
 
-COPY ~are/nw4012.are~ ~override~
+COPY ~NWNForBG/are/nw4012.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern4
   WRITE_LONG (ofsSongs + 0x4) NWNTavern4
 
-COPY ~are/nw4013.are~ ~override~
+COPY ~NWNForBG/are/nw4013.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNTavern3
   WRITE_LONG (ofsSongs + 0x4) NWNTavern3
 
-COPY ~are/nw4100.are~ ~override~
+COPY ~NWNForBG/are/nw4100.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNChapt4
   WRITE_LONG (ofsSongs + 0x4) NWNChapt4
 
-COPY ~are/nw4101.are~ ~override~
+COPY ~NWNForBG/are/nw4101.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNSewer
   WRITE_LONG (ofsSongs + 0x4) NWNSewer
   WRITE_LONG (ofsSongs + 0xc) NWNB6
 
-COPY ~are/nw4103.are~ ~override~
+COPY ~NWNForBG/are/nw4103.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMorag
   WRITE_LONG (ofsSongs + 0x4) NWNMorag
