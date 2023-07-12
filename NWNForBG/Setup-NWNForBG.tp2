@@ -6137,10 +6137,6 @@ COMPILE ~NWNForBG/scripts~
 COMPILE ~NWNForBG/scripts/NW2905.BAF~
 REPLACE TEXTUALLY ~NWNThm~ ~%NWNThm%~
 REPLACE TEXTUALLY ~NWNMain~ ~%NWNMain%~
-REPLACE
-
-COPY ~musictest/walkandsong.bcs~ ~override/walkandsong.bcs~
-REPLACE TEXTUALLY 777777 ~%MxTest%~
 
 EXTEND_TOP ~BALDUR.BCS~ ~NWNForBG/scripts/NWNMESS.BAF~
 
