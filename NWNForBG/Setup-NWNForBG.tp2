@@ -6374,3 +6374,28 @@ ADD_KIT ~SEHHANEEN~
  SAY @88750
  SAY @88750
  SAY @88751
+
+// worldmap
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+  COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+   APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
+
+  //preliminary step - making LANGUAGE temporary file until the new WeiDU
+  COPY ~NWNForBG/Worldmap/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+  COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+   APPEND_FILE ~tmp_worldmap.tra~
+
+  ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links_patch.tbl~ THEN BEGIN
+    COPY ~Worldmap/map_mods_links_patch.tbl~  ~Worldmap~
+     APPEND_FILE ~NWNForBG/Worldmap/links_patch.tbl~
+  END ELSE BEGIN
+    COPY ~NWNForBG/Worldmap/links_patch.tbl~ ~Worldmap/map_mods_links_patch.tbl~
+  END
+END
+ELSE BEGIN
+  MKDIR ~Worldmap~
+  COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
+  COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+  COPY ~NWNForBG/Worldmap/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+END
+
