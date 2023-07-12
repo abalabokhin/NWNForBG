@@ -12,7 +12,7 @@ IF
 	Global("AreaSong","MYAREA",0)
 THEN
 	RESPONSE #100
-		PlaySong(NWNThm)
+		PlaySong(777777)
 		SetGlobal("AreaSong","MYAREA",1)
 END
 
@@ -21,7 +21,7 @@ IF
 	Global("AreaSong","MYAREA",0)
 THEN
 	RESPONSE #100
-		PlaySong(NWNMain)
+		PlaySong(777778)
 		SetGlobal("AreaSong","MYAREA",1)
 END
 
