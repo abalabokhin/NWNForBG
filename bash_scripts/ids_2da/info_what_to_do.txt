@@ -1,34 +1,6 @@
 2DA и IDS уже анализ сделал, выжимки из моих записей:
 
 MSECTYPE.2DA:                         !!!!!!!!! сделать после Non-combat
-+spell type + strref
-2DA V1.0
-4294967296
-            RES_REF
-None		4294967296
-SpellProtections		27980
-SpecificProtections		27981
-IllusionaryProtections	27982
-MagicAttack				27983
-DivinationAttack		27984
-Conjuration				27986
-CombatProtections		34558
-Contingency				34559
-Battleground			34560
-OffensiveDamage			34561
-Disabling				34562
-Combination				34564
-Non-combat				34565
-SpellShield 104452
-RR#DEATA 104453
-RR#FSCNT 104454
-Insects 5019
-Efreet_FS 396
-ProUndead 5019
-RR#ETHER 104455
-fl#Disease 2449
-TB#Paladinhood 104456
-TB#SecondWind 104457
 
 +patch spl:
 
@@ -36,13 +8,6 @@ TB#SecondWind 104457
     File: SPHEAL6.SPL, Name: Исцеление, Attribute: Spell type=FL#DISEASE - 21
     File: SPIN74B.SPL, Name: No such index, Attribute: Spell type=FL#DISEASE - 21
     File: SPPR526.SPL, Name: Пир Героев, Attribute: Spell type=FL#DISEASE - 21
-
-SONGLIST.2DA !!!!!!!!!!!!!!!!!!!!!!!!!!!  сделать, чтобы брался следующий номер
-+new songs
-+cday1 -> 1cday1 ?
-
-MUSICLIS.IDS - новый               +проверить как реально используется - сделать тоже - с виду должен быть, но
-нет.
 
 MMCHAL.2DA - новый             - хз что это такое  - сделать!    пока забить. - хрень какаято ненужная
 
