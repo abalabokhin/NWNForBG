@@ -1,15 +1,5 @@
 Warnings in dialogues
-Number of hits: 259
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 4, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 5, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 7, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 9, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 14, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 15, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 3, Owner: Action 2, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 2, Owner: Action 3, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 3, Owner: Action 3, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
+Number of hits: 246
 File: AERIEP.DLG, Line: 47, Owner: Response trigger 5, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: AMARAN.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
 File: ANOMENP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
@@ -17,8 +7,6 @@ File: APPAR.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Obj
 File: ARNWAR07.DLG, Line: 2, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine1
 File: ARNWAR07.DLG, Line: 3, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine2
 File: BANDIC.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Bandcap
-File: BARUN.dlg, Line: 1, Owner: Response trigger 43, Warning: Resource not found: S:Item*[ITM] - Sw1h022
-File: BARUN.dlg, Line: 1, Owner: Response trigger 44, Warning: Resource not found: S:Item*[ITM] - Sw1h008
 File: BELAND.DLG, Line: 1, Owner: Action 4, Warning: Script name not found: O:Object* - DR0600
 File: BELAND.DLG, Line: 1, Owner: Action 6, Warning: Script name not found: O:Object* - DR0600
 File: BENTHA.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - ZORDRAL
@@ -50,7 +38,6 @@ File: ELDOTP.DLG, Line: 1, Owner: Action 8, Warning: Script name not found: O:Ac
 File: ELDOTP.DLG, Line: 1, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
 File: ELDOTP.DLG, Line: 2, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
 File: ELDOTP.DLG, Line: 3, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
-File: EMERNIK.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:ScriptFile*[BCS] - EmFollow
 File: FLAM7.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Target* - FlamingFist7
 File: FLAM7.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Target* - FlamingFist7
 File: FSSPIR2.DLG, Line: 4, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3024
