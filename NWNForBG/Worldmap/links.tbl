@@ -1,1 +1,36 @@
-TODO: create me
+SRC_AREA  SRC_NWSE  TARGET_ARE  ENTRY_NAME  TRV_TIME  DEF_ENTRY  ENC1     ENC2     ENC3     ENC4     ENC5     ENC_PROB
+
+NW3200    E         NW3300      Exit3200      0         1          N        N        N         N        N        0
+NW3300    W         NW3200      Exit3300      0         1          N        N        N         N        N        0
+NW2000    S         NW2100      Exit2000      0         1          N        N        N         N        N        0
+NW2100    N         NW0000      MAIN      0         1          N        N        N         N        N        0
+NW3100    S         NW3000      Exit3100      1         1          N        N        N         N        N        0
+NW3000    N         NW3100      Exit3000      1         1          N        N        N         N        N        0
+NW2400    E         NW2510      Exit2400      0         1          N        N        N         N        N        0
+NW2510    N         NW2400      Exit2500      0         1          N        N        N         N        N        0
+NW2100    W         NW2700      Exit2100      0         1          N        N        N         N        N        0
+NW2700    E         NW2100      Exit2700      0         1          N        N        N         N        N        0
+NW1000    S         AR0020      ExitNE      10         1          N        N        N         N        N        0
+AR0020    E         NW1000      Main      10         1          N        N        N         N        N        0
+NW3200    S         NW3100      Exit3200      1         1          N        N        N         N        N        0
+NW3100    N         NW3200      Exit3100      1         1          N        N        N         N        N        0
+NW2300    E         NW2100      Exit2300      0         1          N        N        N         N        N        0
+NW2100    W         NW2300      Exit2100      0         1          N        N        N         N        N        0
+NW2700    E         NW2800      Exit2700      0         1          N        N        N         N        N        0
+NW2800    W         NW2700      Exit2800      0         1          N        N        N         N        N        0
+NW1000    S         NW2400      Exit1000      0         1          N        N        N         N        N        0
+NW2400    N         NW1000      MAIN      0         1          N        N        N         N        N        0
+NW2100    S         NW2300      Exit2100      0         1          N        N        N         N        N        0
+NW2300    N         NW2100      Exit2300      0         1          N        N        N         N        N        0
+NW2100    N         NW2200      Exit2100      0         2          N        N        N         N        N        0
+NW2200    S         NW2100      Exit2200      0         2          N        N        N         N        N        0
+NW3200    E         NW3500      Exit3200A      0         1          N        N        N         N        N        0
+NW3500    W         NW3200      Exit3500      0         1          N        N        N         N        N        0
+NW3000    S         NW2200      Exit2100      1         1          N        N        N         N        N        0
+NW2200    N         NW3000      Exit2200      1         1          N        N        N         N        N        0
+NW1000    W         NW4000      Exit1000      0         0          N        N        N         N        N        0
+NW2700    E         NW2100      Exit2700      0         0          N        N        N         N        N        0
+NW3200    E         NW3400      Exit3200A      0         1          N        N        N         N        N        0
+NW3400    W         NW3200      Exit3400      0         1          N        N        N         N        N        0
+NW2400    E         NW2510      Exit2400      0         1          N        N        N         N        N        0
+NW2510    N         NW2400      Exit2500      0         1          N        N        N         N        N        0
