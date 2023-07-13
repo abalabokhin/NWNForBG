@@ -1,0 +1,338 @@
+@0    = ~Colours of Infinity: Innershade~
+@1    = ~Dog~
+@2    = ~Annoyed bard~
+@3    = ~Child~
+@4    = ~Commoner~
+@5    = ~Man~
+@6    = ~Shapeshifting Creature~
+@7    = ~The Dream~
+@8    = ~Piece of Nightmare~
+@9    = ~Elf~
+@10   = ~Eva~
+@11   = ~Food merchant~
+@12   = ~Boy~
+@13   = ~Genie~
+@14   = ~Witchdoctor~
+@15   = ~Kat~
+@16   = ~Miner~
+@17   = ~Barbara~
+@18   = ~Dawnmaster Patric~
+@19   = ~Dirty boy~
+@20   = ~Woodchopper~
+@21   = ~Witch~
+@22   = ~Eva's Wares~
+@23   = ~Food Merchant~
+@24   = ~Healer~
+@25   = ~You wander through the forest of Tethyr. The humid air embraces your body, you catch the smell of the wet ground. Only a few beams of sunlight cut through the canopy of trees. A question appears in your your mind: Who would settle down in such an isolated place? Even the road looks as though it had not seen a caravan's wheels or even the tread of many humanoids' feet. Suddenly, the path grows wider. You start to hear voices. The village of Innershade welcomes you with a calm but still gentle view of peace.~[ISHxTXT]
+@26   = ~Dreaming~
+@27   = ~End the Dream~
+@28   = ~Burning Sacrifice~
+@29   = ~State of the True Dreamer~
+@30   = ~Coin~
+@31   = ~This is a coin found in the depths of the Innershade mines. It is round, with some markings on it. It lay on the ground near the underground pond.~
+@32   = ~Map~
+@33   = ~This map shows the way to a village in the forest of Tethyr: Innershade.~
+@34   = ~Slices of Meat~
+@35   = ~These are two slices of meat; probably beef. It looks quite fine and fresh, if still a little bloody. This particular meat was bought from Innershade's food merchant.
+
+STATISTICS:
+
+When eaten, the meat heals 15 HP and grants +1 strength for two minutes.
+
+Weight: 0~
+@36   = ~Soup~
+@37   = ~This little bowl contains a soup made of beetroots, potatoes and some mushrooms. It has a pleasant smell and a kind of dark, dusky pinkish-red color. The smell is very appetizing.
+
+STATISTICS:
+
+When eaten, the soup heals 10 HP and grants +50% fire resistance for two minutes.
+
+Weight: 0~
+@38   = ~Black Currants~
+@39   = ~These small, round fruits are known as black currants. They are deep black, and have a sour, yet slightly sweet aroma. Use caution: crushed black currants have been known to leave near-indelible stains. 
+
+STATISTICS:
+
+When eaten, the fruit heals 5 HP and grants a +2 bonus to maximum HP for four minutes.
+
+Weight: 0~
+@40   = ~Strawberries~
+@41   = ~These red berries are known as strawberries. They have a sweet taste and a cheerful appearance. It is believed that strawberries are an aphrodisiac. 
+
+STATISTICS:
+
+When eaten, the fruit heals 5 HP and grants +1 charisma for two minutes
+
+Weight: 0~
+@42   = ~Wolf Berry~
+@43   = ~This very rare fruit is known by the name of wolf berry. It has a strange smell, and a crimson color. Legend says that anyone who eats this berry will be given an interesting power. 
+
+STATISTICS:
+
+When eaten, the fruit permanently gives an innate ability that allows whoever eats it to shapechange into a wolf.
+
+Weight: 0~
+@44   = ~Edible Bark~
+@45   = ~You don't know which tree bore this bark, but one thing is certain: it can't be tasty. However, the bark appears to possess regenerative powers. It is said that this bark may also cure poisons, as an antidote. It may be helpful when fighting creatures like spiders or wyverns. 
+
+STATISTICS:
+
+When eaten, the bark heals 20 HP and cures all poisons.
+
+Weight: 0~
+@46   = ~Roasted Locusts~
+@47   = ~This is a very eccentric dish with a funny smell. The bugs are quite big. They look crunchy. Not everyone can stand the taste. 
+
+STATISTICS:
+
+When eaten, the dish heals 40 HP. It may cause disease.
+
+Weight: 0~
+@48   = ~Stewed Fruits~
+@49   = ~This is a sweet drink made of fruit, with some pieces of fruit in it. You can see strawberries, cherries and blueberries inside the bottle. It is said that this drink tastes best when drunk warm. When the bottle is empty, the fruit can be used as a delicious dessert.  
+
+STATISTICS:
+
+When drunk, the stewed fruit heals 15 HP and grants +5 bonus to maximum HP for four minutes.
+
+Weight: 0~
+@50   = ~Homemade Wine~
+@51   = ~The food merchant himself made this wine. It has a strong aroma of blueberries and black currants. It's sweet and deep red in color. It's a strong alcohol.  
+
+STATISTICS:
+
+When drunk, the wine heals 2 HP. The drinker becomes inebriated. 
+
+Weight: 0~
+@52   = ~Magic Fruit Drop~
+@53   = ~This is a magical sweet that gives the eater some magical powers. It's quite expensive, with an uncommon and unusually sweet taste.  
+
+STATISTICS:
+
+The sweet grants +3 to strength, dexterity and constitution. The bonus is not cumulative with other items or potions that increase these abilities. The effect lasts three minutes.
+
+Weight: 0~
+@54   = ~Mantle~
+@55   = ~This is a gift from an elf you met in Innershade. Elhan's friend gave it to you because of what you did for Innershade. It may help you in upcoming battles.  
+
+STATISTICS:
+
+Equipped Abilities:
+ Electric Resistance: +50% bonus
+ Magic Resistance: +20% bonus
+ 
+Weight: 3
+
+Usable by:
+ Anyone~
+@56   = ~This is a gift from an elf you met in Innershade. Elhan's friend gave it to you because of what you did for Innershade. It may help you in upcoming battles.  
+
+STATISTICS:
+
+Equipped Abilities:
+ Saving Throws: +5 bonus vs. death
+ Resistance to Level Drain
+ 
+Weight: 3
+
+Usable by:
+ Anyone~
+@57   = ~Grandmother's Hope~
+@58   = ~This magical dagger was a gift from Barbara, an elderly woman from Innershade. She decided to give it to you because you visited her and made her feel as though she had a child to protect. The name of the weapon will remind you of a person who cared about you.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armor Class: +1 bonus
+ Attacks per Round: +1 bonus
+ Blessing: 10% chance to cast Bless
+ Immunity to Backstab
+
+THAC0: +2
+Damage: 1D4 + 2
+Proficiency Type: Dagger
+Speed Factor: 1
+Weight: 1
+
+Usable by:
+ Anyone~
+@59   = ~Longsword +3: 'Lacrimosa'~
+@60   = ~This is a magical sword, a gift you were given after solving the disappearances in the village of Innershade. Lacrimosa--the Flood of Tears--is a powerful weapon. It is said that there are only two items of this kind in existence. The second one is a staff. Legend says that these items were made of tears and the stuff of nightmares themselves.
+
+STATISTICS:
+
+Equipped Abilities:
+ Infravision: wielder gains infravision
+ +25% bonus resistance to Imprisonment
+ Magic Resistance: +10% bonus
+ Regeneration: 1 hp/10 seconds
+
+Damage: 1d8 + 3
+THAC0: +3
+Proficiency Type: Longsword
+Speed Factor: 2
+Weight: 4
+
+Usable by:
+ Anyone~
+@61   = ~Staff +3: 'Melancholia'~
+@62   = ~This is a magical staff, a gift you were given after solving the disappearances in the village of Innershade. Melancholia is a strong melee as well as a ranged weapon. It is said that there are only two items of its kind in existence. The second one is a sword called the Lacrimosa. Legend says that these items were made of tears and the stuff of nightmares themselves.
+
+STATISTICS:
+
+Equipped Abilities:
+ Infravision: wielder gains infravision
+ +25% bonus resistance to Imprisonment
+ Strength: +1 bonus
+ Maximum HP: +10 bonus
+
+Damage: 1d6 + 3
+THAC0: +3
+Proficiency Type: Quarterstaff
+Speed Factor: 1
+Weight: 4
+
+Usable by:
+ Anyone~
+@63   = ~Wand of Escape~
+@64   = ~This wand, made of an unknown metal, is the reward of a genie. After I succeeded in completing his task, he gave me this wand. He said that it could help me in my escape from Spellhold.
+
+STATISTICS:
+
+Special Abilities:
+ Can cast Haste and Invisibility for four minutes (consumes 10 charges)
+ 
+Not Usable By:
+ Wizardslayer~
+@65   = ~Golden Dragon Scale Armor~
+@66   = ~This armor was made from the scales of a golden dragon. The sacred creature must die to allow the forging of a creation of this kind. The armor shines with glorious light as great as the sun reflected by metal. It is said that only those of pure heart may wear this chainmail.
+
+STATISTICS:
+
+Equipped Abilities:
+ Slash Resistance: +5% bonus
+ Immunity to poison and disease
+ Thieving and spellcasting abilities disabled by this armor
+
+Armour Class: 2
+Weight: 5
+
+Usable By:
+ Good Bards
+ Good Paladins
+ Good Clerics (single, dual or multi-class)~
+@67   = ~Eva's Smile~
+@68   = ~This hammer was made by Eva's father before he passed away. It has a silver color. However, in sunlight, the head of weapon shines with a golden reflection. It is well made. The hammer is named after the blacksmith's daughter, Eva, an impulsive female with a pure heart.
+
+STATISTICS:
+
+Equipped Abilities:
+ Hasting: 15% chance to cast haste upon wielder with each successful attack. The effect lasts 10 seconds.
+ Armor Class: +1 bonus
+ Immunity to stun
+ Maximum HP: +6 bonus
+
+THAC0: +3
+Damage: 1d4 + 3
+Proficiency Type: Warhammer
+Speed Factor: 2
+Weight: 5
+
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+@69   = ~Third Eye~
+@70   = ~This magical belt makes the wearer aware of all attacks from the shadows. The symbol of an eye decorates the buckle. It has an interesting orange color.
+
+STATISTICS:
+
+Equipped Abilities:
+ Immunity to backstab
+
+Weight: 2
+Usable by:
+ Anyone~
+@71   = ~New animations. May not be compatibile with other mods that alter animations with the older method. (Overrides wigh1 and wigh2 slots)~
+@72   = ~Required component~
+@73   = ~Talks for original Bioware NPCs~
+@74   = ~Yes~
+@75   = ~Add Innershade to Worldmap (You *must* pick one of these components, otherwise the mod won't run as it should.)~
+@76   = ~ARISH1~
+@77   = ~Innershade~
+@78   = ~ARISH1 patched. New area number is: %areNum%~
+@79   = ~No~
+@80   = ~Yes + new map icon. WARNING: This component overrides mapicon.bam. It's incompatibile with mods which does any change to this .bam file.~
+@81   = ~Add Innershade to BP-BGT-Worldmap.~
+
+
+//texts from scripts
+@100  = ~Genie of Spellhold
+I met a strange genie. He told me to go west from the Book of Summoning in Spellhold and get rid of the creature I find there.~
+@101  = ~Genie of Spellhold
+I have finished the task that the Genie of Spellhold gave me.~
+@102  = ~Innershade: The End of the Dream
+The Dream has ended. I decided to kill the witch. She was guilty of many deaths, and of causing sorrow and misfortune. I could render no other judgment. The Dream has died with its creator, and this case has reached its end.~
+@103  = ~Innershade: The End of the Dream
+I made my judgment: I decided to keep the witch of Innershade in torment. I left the Dream with her, but they won't be able to speak with each other. They will just exist in silence, whether they try to speak or not.~
+@104  = ~Innershade: The End of the Dream
+I was able to give birth to a Dream that will last indefinitely. I gave the Dream the chance to join his creator. After that, the witch remembered her previous life, and has returned to it. Soon after, she dreamed for the last time. This should have happened long ago.~
+@105  = ~Innershade: The Enemy Below
+When I set a camp in the mines of Innershade, something called me to a strange world. Is it a dream?~
+@106  = ~Innershade: The Enemy Below
+Innershade's problem is now solved. The culprit was a strange creature. He took me into a world I had never seen. It looked like Innershade, but slightly different: more eerie, with shadows and glows that came from nowhere. The creature should never bother this calm village again.~
+@107  = ~Innershade: Help in the woodland
+I met a man called Strongheart, a woodchopper in Innershade. His axe was destroyed. Maybe I should bring him a new one.~
+@108  = ~Innershade: Help in the woodland
+I met a man called Strongheart, a woodchopper in Innershade. His axe was destroyed. I decided to bring him a new one. It's good to help someone from time to time.~
+@109  = ~Innershade: Woman's Temperament
+We met Eva, the blacksmith of Innershade. It appears she and Strongheart had a quarrel... or maybe they just can't stand each other.
+To make a little show, I told Eva that I've decided to kill Strongheart to make her feel better. What a funny expression that appeared on her face! She ran from her house. Maybe I should visit Strongheart now. That's probably a good idea.~
+@110  = ~Innershade: Woman's Temperament
+We met Eva, the blacksmith of Innershade. It appears she and Strongheart had some kind of quarrel... or maybe they just can't stand each other.
+To make a little show, I told Eva that I've decided to kill Strongheart to make her feel better. What a funny expression that appeared on her face! She ran from her house. My next step was a visit to Strongheart, but Eva had already been there. That must have been an interesting scene. A pity I didn't see the whole thing.~
+@111  = ~Innershade: Round, golden tragedy
+I heard a child shouting something about his father and a coin near the well in the middle of the village of Innershade.~
+@112  = ~Innershade: Round, golden tragedy
+I told the child about the tragedy that happened. After he heard the news that his father was dead, he took the coin and ran away.~
+@113  = ~Innershade: Healer's request
+The Healer of Innershade asked us to bring him a potion of extra healing and a restoration scroll. He has run out of those, but as a healer, he should have some on hand.~
+@114  = ~Innershade: Healer's request
+The Healer of Innershade asked us to bring him a potion of extra healing and a restoration scroll. I brought him those items. Now he will be able to provide good medical help to the Innershade villagers.~
+@115  = ~Innershade: The Enemy Below
+Dawnmaster Patric, the high priest in Innershade, told me about the strange things that happened in the village. People have disappeared in the mines under Innershade. I should take a look at this case. I'm curious. What I will find in the mines? No matter what it is, I should be prepared for everything.~
+@116  = ~Innershade: The Enemy Below
+Dawnmaster Patric, the high priest in Innershade, told me about the strange things that happened in the village. People have disappeared in the mines under Innershade. I should take a look at this case. 
+When I visited the place where everything happened, I found nothing but silence and a single golden coin. I should report this to Patric.~
+@117  = ~Innershade: The Enemy Below
+Dawnmaster Patric, the high priest in Innershade, told me about the strange things that happened in the village. People have disappeared in the mines under Innershade. I should take a look at this case. 
+When I visited the place where everything happened, I found nothing but silence and a single golden coin. When I told Patric about what I found, he suggested a way to find the culprit, though it might prove dangerous. He said that I should try to rest in the cave. Maybe the murderer will appear. It may be a fine trap.~
+@118  = ~Innershade: Round, golden tragedy
+I informed Patric about the child who lost his father. He told me that he would take care of the boy.~
+@119  = ~Innershade: Woman's Temperament
+We met Eva, the blacksmith of Innershade. It appears she and Strongheart had some kind of quarrel... or maybe they just can't stand eachother.~
+@120  = ~Innershade: Woman's Temperament
+We met Eva, the blacksmith of Innershade. It appears she and Strongheart had some kind of quarrel... or maybe they just can't stand eachother.
+To make a little show, I told Eva that I've decided to kill Strongheart to make her feel better. What a funny expression that appeared on her face! She ran from her house. Maybe I should visit Strongheart now. That's probably a good idea.~
+@121  = ~Innershade: Woman's Temperament
+We met Eva, the blacksmith of Innershade. It appears she and Strongheart had some kind of quarrel... or maybe they just can't stand eachother.
+To make a little show, I told Eva that I've decided to kill Strongheart to make her feel better. What a funny expression that appeared on her face! She ran from her house. My next step was a visit to Strongheart, but Eva had already been there. That must have been an interesting scene. A pity I didn't see the whole thing.~
+@122  = ~Innershade: Woman's Temperament
+In the end, I managed to put an end to this conflict between Eva and Strongheart. It was a hard task! Almost as hard as killing Sarevok!~
+@123  = ~Innershade: The Enemy Below
+Dawnmaster Patric, the high priest in Innershade, told me about the strange things that happened in the village. People have disappeared in the mines under Innershade. I should take a look at this case. 
+When I visited the place where everything happened, I found nothing but silence and a single golden coin. I should report this to Patric.~
+@124  = ~Innershade: The Enemy Below
+Dawnmaster Patric, the high priest in Innershade, told me about the strange things that happened in the village. People have disappeared in the mines under Innershade. I should take a look at this case. I am curious. What I will find in the mines? No matter what it is, I should be prepared for everything.~
+@125  = ~Innershade: Round, golden tragedy
+I found a golden coin. Maybe this is the coin the boy near the well mentioned?~
+@126  = ~Innershade: Round, golden tragedy
+I heard a child shouting something about his father and a coin near the well in the middle of the village of Innershade.~
+@127  = ~Innershade: Round, golden tragedy
+I found the coin mentioned by the child of Innershade. I think this is the one his father was looking for. It appears his father is dead. It falls to me to inform the child of the tragedy.~
+@128  = ~Innershade: The Enemy Below
+Dawnmaster Patric, the high priest in Innershade, told me about the strange things that happened in the village. People have disappeared in the mines under Innershade. I should take a look at this case. 
+When I visited the place where everything happened, I found nothing but silence and a single golden coin. When I told Patric about what I found, he suggested a way to find the culprit, though it might prove dangerous. He said I should try to rest in the cave. Maybe the murderer will appear. It may be a fine trap.~
+@129  = ~Innershade: The Enemy Below
+When I set a camp in the mines of Innershade, something called me to a strange world. Is it a dream?~
+@130  = ~(Suddenly you feel energy entering your eyes. It flows through your veins. Everything disappears.)~

@@ -1,0 +1,95 @@
+/////////Jaheira
+
+@0 = ~I must say that I am surprised. She met Gorion before I did. Who would guess that he was a prankster as a child? (Suddenly Jaheira looks at you and her expression changes.) I... I am sorry. I probably made you feel uncomfortable. You could not have known that she would tell you of Gorion.~
+@1 = ~It's fine. Gorion died, but I still remember him. It's not painful to hear such a thing about a person I miss. It appears that he was like me.~
+@2 = ~Thank you Jaheira. I... I was a bit surprised, but I think it's fine now.~
+@3 = ~Bah! You really think it matters? Just give it a break. People are born and die every day. Gorion belongs with the past...that's all. Can we move on now?~
+@4 = ~I understand, and I must say that your words are true. You are wiser than when we met at the Friendly Arm Inn.~
+@5 = ~(Jaheira smiles.) You know, you are the same person I met in the Friendly Arm Inn long ago. You still worry.~
+@6 = ~That woman made me think about the past again. I hope I'll be like her when I grow old. I hope I'll remember who I am. More importantly, I hope I'll remember Khalid.~
+@7 = ~You probably think that I have already forgotten him, but that is untrue. I remember our talks, when we we met for the first time, his stuttering. To be honest, I liked it. It made him funny...in a positive way. It was funny and cute. You should have seen how he said that I was important to him. He was so nervous that he was almost unable to say the sentence.~
+@8 = ~I have never thought that you would forget Khalid, Jaheira. It's the same with Gorion and me. After all, he was the one who took care of me.~
+@9 = ~Just give me a break, will you? Do you really think I am interested in stories of the poor druid who fell in love with a stuttering warrior?~
+@10 = ~It is good to know that you still treasure such memories, <CHARNAME>. That is how it should be.~
+@11 = ~But this is enough talk. We should move before we grow roots and become trees in this place, leader. Let us move.~
+@12 = ~I see that you have run out of patience. If that is how you prefer relations between us, then so be it. We should go now.~
+
+/////////Dalis
+
+@13 = ~Well, my raven, I see that following you means discovering the very depths of nightmare. I believed Sigil would remain at the top of most noteworthy places, but I see you plan to show me other peculiar lands.~
+@14 = ~It's not the time or *place* for that kind of talk, tiefling. We have to get out of here.~
+@15 = ~Well, without that, our adventures would be too dull. Isn't it more interesting when we have a chance to discover places like this, dear bard?~
+@16 = ~I really don't like this place, to be honest.~
+@17 = ~Ah, you should know that beautiful views aren't everything. Adventure without talk is like some wingless bird, but if you wish haste, I shall follow. It is you who leads.~
+@18 = ~Dear bard? You seem well-tempered at the moment. 'Tis clear that you enjoy this. Small villages with secrets and mysteries...for you, 'tis as ice in a desert, aye? I have to say that it's also most entertaining for me.~
+@19 = ~Truly? Ah, but 'tis the simplest feeling for a stranger to the lands outside his own. Though I confess this has its benefits. You catch none of the venereal maladies of Sigil's courtesans, and need have no dealings with those Dustmen and Mercykillers. Believe me when I say 'tis another marvelous benefit of your situation.~
+@20 = ~Now, how ought we to fight with yon dreamlike creatures? Should we trust in Fate or flip a coin, my raven?~
+@21 = ~I like the coin idea! Lend me one and let's flip!~
+@22 = ~We will see. It all depends on how they will strike at us.~
+@23 = ~Oh, be silent now. We have to move, Haer'dalis. We do not have time for that kind of talk!~
+@24 = ~You have a point! Let's check, then, what those sharp-taloned birds will offer us today!~
+@25 = ~Ah, fine...until you give me back my coin. That kind of game will make our fight even more interesting. So, heads will be magic and tails will be the power of our muscles. (Haer'dalis flips a coin into the air.)~
+@26 = ~We have heads! Let us prepare our spells, and provide our opponents a great show filled with sparkles and burning flames!~
+@27 = ~Hmm, I see the answer is tails. We should prepare our weapons and bodies; this will be a fair danse macabre. If only I had a fair battlecry to sing.~
+
+/////////Yoshimo
+
+@28 = ~No matter where we go, my friend, the poor folk accompany the landscape. Do you see that boy near the hut of wood and hay? It reminds me of one I met in my homeland of Kara-tur. Oshiyo was the boy's name.~
+@29 = ~Who was he?~
+@30 = ~We don't have time for your stories, Yoshimo. We have to move.~
+@31 = ~He was a young boy, abandoned by his family. He was older than this one here, perhaps fifteen years of age. He lived near the village, beside a waterfall. He decided to to train by himself.~
+@32 = ~He worked for a year with the fishmonger. An unpleasant job, but he knew that he could find no other. The fishmonger seemed to like him, so the boy was sometimes given fish. After a year, at last he bought a katana. He spent every coin he had, but he was able to train with a real sword of good quality. Since most of the villagers knew the boy, the blacksmith did his best in forging the blade.~
+@33 = ~I met him accidentally, when I had gone to the marketplace. His employer told me his story, and I found myself surprised by his strong will, dignity and discipline. Even the great Yoshimo's was surely lesser at Oshiyo's age. I observed him for some time, for I could not believe that he was so strong. Yet everything I had heard seemed to be true.~
+@34 = ~One day I decided to help him with his training. We sparred, we talked, and I showed him how to set snares. When we had finished for the day, I gave him a small cup of strong rice wine. He was sixteen then, and I am sure he was curious about its taste. Do not think that I made him drunk; it was just the one cup! But Oshiyo was like kin to me.~
+@35 = ~What happened to him?~
+@36 = ~I see. However, we have to go now.~
+@37 = ~I do not know. I had to leave then. I left some money with the fishmonger and told him to take care of Oshiyo. I hope he reached his goal and become an adventurer. I know I may not meet him again. He's probably wandering through the lands of our home.~
+@38 = ~We shall move now, my friend. Let's talk with this boy near the hut. Maybe he needs a coin or two.~
+@39 = ~You are not in the mood for talking, hai? I understand. Let us move then.~
+
+////////Cernd
+
+@40 = ~I do not like this place, to be honest. I sense something unnatural in the air. The Great Mother shares this place with something different, and I feel like a fish taken from its pond.~
+@41 = ~Yeah, right. Almost everything is so "unnatural" for druids like you. 'Oh, this darkness is so dark and unnatural.' Shut up, will you?~
+@42 = ~I agree. There's something different here. Something less pleasant than in the village above us. We should watch ourselves.~
+@43 = ~Thank you. We will be careful in these caves.~
+@44 = ~As we should do. This place is as different from the Druid's Grove as a hawk from a hare. This place is too silent. We should use caution, lest this mine become our tomb.~
+@45 = ~(Cernd says nothing more. He looks around as if searching for danger behind every rock or crystal.)~
+@46 = ~I wish only to warn you. All things come and go with Nature's turnings, but I doubt that it is our time.~
+
+////////Edwin
+
+@47 = ~Another mage's tower! Do those simians who play with magic think that having a tower is proof of being a mage?! Their stupidity gives me a headache...tower here, tower there, and those *idiotic* names! Tower of Darkness, The Lonely Tower, The Tower of the Abandoned Soul. Bah! (Just as most leaders, my 'great') mages have no sense of good taste!~
+@48 = ~Can't we move at last? This place irritates me nearly as much as you do.~
+
+////////Valygar
+
+@49 = ~I'm glad that you help with even the smallest problems, <CHARNAME>. Bringing some woodcutter a new tool will not provide you fame or gold, but still you help. I'm impressed, and I don't say this to many.~
+@50 = ~Money and fame aren't my goals. All I want is a quiet, peaceful life, Valygar.~
+@51 = ~Why in the Nine Hells are you wasting my time with this nonsense? We have to move, so be silent.~
+@52 = ~If your words are true, then our ways of thinking are similar. Escaping the Cowled Wizards' traps and fighting traitorous mages have dominated my life of late, but things were...simpler...once. Sometimes, I enjoyed living in my cabin in the Umar Hills. I liked the place.~
+@53 = ~Why do you believe this?~
+@54 = ~When I was living in Candlekeep I used to help some people with the simplest tasks, like killing rats and carrying messages. My foster father, Gorion, told me that that's how people live in harmony.~
+@55 = ~I just feel that it should be this way. I have always listened to a voice inside me. It tells me what I should do and what I shouldn't, and I believe it.~
+@56 = ~I don't know and, more importantly, I don't think it really matters.~
+@57 = ~I understand.~
+@58 = ~That's interesting, to be honest. Believing in yourself can be important.~
+@59 = ~(Valygar nods.) You are right. I shouldn't bother you.~
+@60 = ~I learned to listen to my inner voice some time ago. When I first trained with the bow, I needed concentration, and I had to learn to silence myself. It wasn't enough. I had to feel when the arrow should be released, to believe in predictions to understand what influence we have.~
+@61 = ~I can say that calamity and silence have since become my tutors.~
+@62 = ~Why are you telling me this, Valygar.~
+@63 = ~I see, but we have to move now.~
+@64 = ~All right, now stop bothering me. We have to move.~
+@65 = ~I wanted to explain this. Now we should move.~
+@66 = ~Lead then. I will follow you.~
+@67 = ~(Valygar does not respond.)~
+
+///////////Imoen
+
+@68 = ~Hey, maybe I shouldn't ask this, but I'm wondering who your sacrifice brought back to life. It's not like I disagree, but that's a big thing. Mind tellin' me?~
+@69 = ~Barbara, a woman I met in the village of Innershade. She was very kind to me. She died some time ago, but I thought she deserved to live.~
+@70 = ~It's none of your business, Imoen. I don't feel like talking with anyone now. We should find a way out of here.~
+@71 = ~If she's kind, and you wanted to bring her back, sounds good! I just hope the effect didn't hurt ya.~
+@72 = ~Glad ya met some kind people on the road. It's a pity I couldn't meet her, but if the wish was really granted, then I probably will! But hey, shouldn't we move? It's a bit cold, and standin' around doesn't help.~
+@73 = ~C'mon. The sooner we finish up here, the sooner we can check if Barbara's all right.~
+@74 = ~It's a pity, but you're right. Maybe we oughta think of gettin' out of here, and talk another time.~

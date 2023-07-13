@@ -1,0 +1,184 @@
+BACKUP ~Innershade\backup~
+AUTHOR ~Lava Del'Vortel~
+README ~Innershade/+Documents+/Innershade_readme.html~
+
+AUTO_TRA ~Innershade/TRANSLATIONS/%s~
+
+ALWAYS
+  // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
+  INCLUDE ~%MOD_FOLDER%/handle_charsets.tpa~
+
+  // No exception, everything needs to be converted
+  ACTION_DEFINE_ARRAY 9xnoconvert BEGIN END
+
+  // Only setup-Innershade.tra needs to be reloaded
+  ACTION_DEFINE_ARRAY 9xreload BEGIN Setup END
+
+  // There is no "language" folder so the root of all languages in %MOD_FOLDER%
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charset = 1
+    STR_VAR
+      tra_path = EVAL ~%MOD_FOLDER%/translations~
+      // charset_table = 9xcharsets // Included for illustrative purposes.
+      noconvert_array = 9xnoconvert
+      reload_array = 9xreload
+  END
+END
+
+
+LANGUAGE ~English~
+         ~English~
+         ~Innershade/TRANSLATIONS/English/Setup.TRA~
+         
+LANGUAGE ~Russian by Aldark, Andreas, Austin, bro and Silent~
+         ~Russian~
+         ~Innershade/TRANSLATIONS/Russian/Setup.TRA~
+
+BEGIN @0
+
+
+//////////////////////////////////////////////////
+//////////////////////////////////ADD AREA TO MAP
+//////////////////////////////////////////////////
+
+BEGIN @74
+SUBCOMPONENT @75
+REQUIRE_COMPONENT ~Innershade/Setup-Innershade.tp2~ ~0~ @72
+
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~neera10.cre~ THEN BEGIN
+MKDIR save
+END
+
+//**************************************************
+// Worldmap patching - do this last so we can patch the new areas too
+//**************************************************
+// Append mastarea.2da with the new areas
+APPEND ~MASTAREA.2da~ ~NW2100 value~ UNLESS ~NW2100~ //Innershade
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Innershade abandoned
+  OUTER_SPRINT areName "NW2100"   // area reference, like "AR3000"
+  OUTER_SPRINT strName "Северная дорога" // area name, like "Waukeen's Promenade"
+  OUTER_SPRINT strDesc "Северная дорога" // area description which will show up when hovering the area on the worldmap
+
+  OUTER_SET mapIcon = 65              // map icon
+  OUTER_SET xCoord  = 961            // x coordinate
+  OUTER_SET yCoord  = 887             // y coordinate
+  OUTER_SET tTime   = 1              // travel time, *2, so two means eight hours
+  OUTER_SET inclSv  = 1              // include save games bool, 1 means yes and 0 means no
+
+// set up link variables
+
+  // add links from these area(s) to the new area
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY toNewArea BEGIN
+    "NW2300" => "Exit2300"       // City Gates
+  END
+
+  // add links from the new area to these area(s)
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY fromNewArea BEGIN
+    "NW2300" => "Exit2100"      // City Gates
+  END
+
+// call the sc#addWmpAre function
+  // returns the worldmap entry number for the new area
+  LAUNCH_ACTION_FUNCTION sc#addWmpAre RET areNum = areNum END
+
+  // remove if not desired
+  PRINT @78
+
+BEGIN @80
+SUBCOMPONENT @75
+REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME ~NEERA10.cre~ ~~
+REQUIRE_COMPONENT ~Innershade/Setup-Innershade.tp2~ ~0~ @72
+
+MKDIR save
+
+COPY ~Innershade/WMPIcon/mapicons.bam~ ~Override/mapicons.bam~
+
+INCLUDE ~Innershade/WMPIcon/WMP2/worldmap.tph~
+
+
+//**************************************************
+// Worldmap patching - do this last so we can patch the new areas too
+//**************************************************
+// Append mastarea.2da with the new areas
+APPEND ~MASTAREA.2da~ ~NW2100 value~ UNLESS ~NW2100~ //Innershade
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Innershade abandoned
+  OUTER_SPRINT areName "NW2100"   // area reference, like "AR3000"
+  OUTER_SPRINT strName "Северная дорога" // area name, like "Waukeen's Promenade"
+  OUTER_SPRINT strDesc "Северная дорога" // area description which will show up when hovering the area on the worldmap
+
+  OUTER_SET mapIcon = 65              // map icon
+  OUTER_SET xCoord  = 961            // x coordinate
+  OUTER_SET yCoord  = 887             // y coordinate
+  OUTER_SET tTime   = 1              // travel time, *2, so two means eight hours
+  OUTER_SET inclSv  = 1              // include save games bool, 1 means yes and 0 means no
+
+// set up link variables
+
+  // add links from these area(s) to the new area
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY toNewArea BEGIN
+    "NW2300" => "Exit2300"       // City Gates
+  END
+
+  // add links from the new area to these area(s)
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY fromNewArea BEGIN
+    "NW2300" => "Exit2100"      // City Gates
+  END
+
+// call the sc#addWmpAre function
+  // returns the worldmap entry number for the new area
+  LAUNCH_ACTION_FUNCTION sc#addWmpAre RET areNum = areNum END
+
+  // remove if not desired
+  PRINT @78
+
+
+BEGIN @79
+SUBCOMPONENT @75
+REQUIRE_COMPONENT ~Innershade/Setup-Innershade.tp2~ ~0~ @72
+
+MKDIR save
+
+COPY ~Innershade/AREANE~ ~override/~ 
+
+COPY ~Innershade/CREATURES/9xTAKE.cre~ ~override/9xTAKE.cre~
+SAY NAME1 @5
+SAY NAME2 @5
+
+COMPILE ~Innershade/DIALOGUES/9xTAKE.d~
+EXTEND_TOP   ~AR0020.bcs~ ~Innershade/SCRIPTS/AR0020.baf~
+
+BEGIN @81
+SUBCOMPONENT @75
+REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME ~NEERA10.cre~ ~~
+REQUIRE_COMPONENT ~Innershade/Setup-Innershade.tp2~ ~0~ @72
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+  COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+   APPEND_FILE ~Innershade/Worldmap/areas.tbl~
+  COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+   APPEND_FILE ~Innershade/Worldmap/links.tbl~
+  COPY - ~Innershade/Worldmap/worldmap.tra~  ~tmp_worldmap.tra~
+  COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+   APPEND_FILE ~tmp_worldmap.tra~
+END
+ELSE BEGIN
+  MKDIR ~Worldmap~
+  COPY ~Innershade/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
+  COPY ~Innershade/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+  COPY ~Innershade/Worldmap/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+  END
+
+
+
+
+
+
+
+
+

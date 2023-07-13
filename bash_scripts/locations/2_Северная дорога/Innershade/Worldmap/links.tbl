@@ -1,0 +1,3 @@
+SRC_AREA  SRC_NWSE  TARGET_ARE  ENTRY_NAME  TRV_TIME  DEF_ENTRY  ENC1     ENC2     ENC3     ENC4     ENC5     ENC_PROB
+NW2300    E         NW2100      Exit2300      0         1          N        N        N         N        N        0
+NW2100    W         NW2300      Exit2100      0         1          N        N        N         N        N        0
