@@ -143,48 +143,176 @@ COPY ~NWNForBG/sto/torgo.sto~ ~override~
   SAY 0xC	@103091
 
 //Music
+MKDIR ~music/NWNThm~
+COPY ~NWNForBG/mus/NWNThm~ ~music/NWNThm~
 ADD_MUSIC ~NWNThm~ ~NWNForBG/mus/NWNThm.mus~       // was 114
+
+MKDIR ~music/Rurday~
+COPY ~NWNForBG/mus/Rurday~ ~music/Rurday~
 ADD_MUSIC ~NWNRurday~ ~NWNForBG/mus/Rurday.mus~    // was 115
+
+MKDIR ~music/Rurnit~
+COPY ~NWNForBG/mus/Rurnit~ ~music/Rurnit~
 ADD_MUSIC ~NWNRurnit~ ~NWNForBG/mus/Rurnit.mus~    // was 116
+
+MKDIR ~music/Rurald2~
+COPY ~NWNForBG/mus/Rurald2~ ~music/Rurald2~
 ADD_MUSIC ~NWNRurald2~ ~NWNForBG/mus/Rurald2.mus~  // was 117
+
+MKDIR ~music/Mines1~
+COPY ~NWNForBG/mus/Mines1~ ~music/Mines1~
 ADD_MUSIC ~NWNMines1~ ~NWNForBG/mus/Mines1.mus~    // was 118
+
+MKDIR ~music/Mines2~
+COPY ~NWNForBG/mus/Mines2~ ~music/Mines2~
 ADD_MUSIC ~NWNMines2~ ~NWNForBG/mus/Mines2.mus~    // was 119
+
+MKDIR ~music/Castle~
+COPY ~NWNForBG/mus/Castle~ ~music/Castle~
 ADD_MUSIC ~NWNCastle~ ~NWNForBG/mus/Castle.mus~    // was 120
+
+MKDIR ~music/Dockday~
+COPY ~NWNForBG/mus/Dockday~ ~music/Dockday~
 ADD_MUSIC ~NWNDockday~ ~NWNForBG/mus/Dockday.mus~  // was 121
+
+MKDIR ~music/Docknit~
+COPY ~NWNForBG/mus/Docknit~ ~music/Docknit~
 ADD_MUSIC ~NWNDocknit~ ~NWNForBG/mus/Docknit.mus~  // was 122
+
+MKDIR ~music/Market~
+COPY ~NWNForBG/mus/Market~ ~music/Market~
 ADD_MUSIC ~NWNMarket~ ~NWNForBG/mus/Market.mus~    // was 123
+
+MKDIR ~music/Citynit~
+COPY ~NWNForBG/mus/Citynit~ ~music/Citynit~
 ADD_MUSIC ~NWNCitynit~ ~NWNForBG/mus/Citynit.mus~  // was 124
+
+MKDIR ~music/Slumday~
+COPY ~NWNForBG/mus/Slumday~ ~music/Slumday~
 ADD_MUSIC ~NWNSlumday~ ~NWNForBG/mus/Slumday.mus~  // was 125
+
+MKDIR ~music/Slumnit~
+COPY ~NWNForBG/mus/Slumnit~ ~music/Slumnit~
 ADD_MUSIC ~NWNSlumnit~ ~NWNForBG/mus/Slumnit.mus~  // was 126
+
+MKDIR ~music/Crypt1~
+COPY ~NWNForBG/mus/Crypt1~ ~music/Crypt1~
 ADD_MUSIC ~NWNCrypt1~ ~NWNForBG/mus/Crypt1.mus~    // was 127
+
+MKDIR ~music/Wealth~
+COPY ~NWNForBG/mus/Wealth~ ~music/Wealth~
 ADD_MUSIC ~NWNWealth~ ~NWNForBG/mus/Wealth.mus~    // was 128
+
+MKDIR ~music/Forstd1~
+COPY ~NWNForBG/mus/Forstd1~ ~music/Forstd1~
 ADD_MUSIC ~NWNForstd1~ ~NWNForBG/mus/Forstd1.mus~  // was 129
+
+MKDIR ~music/Forstd2~
+COPY ~NWNForBG/mus/Forstd2~ ~music/Forstd2~
 ADD_MUSIC ~NWNForstd2~ ~NWNForBG/mus/Forstd2.mus~  // was 130
+
+MKDIR ~music/Forestn~
+COPY ~NWNForBG/mus/Forestn~ ~music/Forestn~
 ADD_MUSIC ~NWNForestn~ ~NWNForBG/mus/Forestn.mus~  // was 131
+
+MKDIR ~music/NWDung1~
+COPY ~NWNForBG/mus/NWDung1~ ~music/NWDung1~
 ADD_MUSIC ~NWNDung1~ ~NWNForBG/mus/NWDung1.mus~    // was 132
+
+MKDIR ~music/Rich~
+COPY ~NWNForBG/mus/Rich~ ~music/Rich~
 ADD_MUSIC ~NWNRich~ ~NWNForBG/mus/Rich.mus~        // was 133
+
+MKDIR ~music/Sewer~
+COPY ~NWNForBG/mus/Sewer~ ~music/Sewer~
 ADD_MUSIC ~NWNSewer~ ~NWNForBG/mus/Sewer.mus~      // was 134
+
+MKDIR ~music/Store~
+COPY ~NWNForBG/mus/Store~ ~music/Store~
 ADD_MUSIC ~NWNStore~ ~NWNForBG/mus/Store.mus~      // was 135
+
+MKDIR ~music/Tavern1~
+COPY ~NWNForBG/mus/Tavern1~ ~music/Tavern1~
 ADD_MUSIC ~NWNTavern1~ ~NWNForBG/mus/Tavern1.mus~  // was 136
+
+MKDIR ~music/Tavern2~
+COPY ~NWNForBG/mus/Tavern2~ ~music/Tavern2~
 ADD_MUSIC ~NWNTavern2~ ~NWNForBG/mus/Tavern2.mus~  // was 137
+
+MKDIR ~music/Tavern3~
+COPY ~NWNForBG/mus/Tavern3~ ~music/Tavern3~
 ADD_MUSIC ~NWNTavern3~ ~NWNForBG/mus/Tavern3.mus~  // was 138
+
+MKDIR ~music/Tavern4~
+COPY ~NWNForBG/mus/Tavern4~ ~music/Tavern4~
 ADD_MUSIC ~NWNTavern4~ ~NWNForBG/mus/Tavern4.mus~  // was 139
+
+MKDIR ~music/Templg1~
+COPY ~NWNForBG/mus/Templg1~ ~music/Templg1~
 ADD_MUSIC ~NWNTemplg1~ ~NWNForBG/mus/Templg1.mus~  // was 140
+
+MKDIR ~music/Templg2~
+COPY ~NWNForBG/mus/Templg2~ ~music/Templg2~
 ADD_MUSIC ~NWNTemplg2~ ~NWNForBG/mus/Templg2.mus~  // was 141
+
+MKDIR ~music/Templev~
+COPY ~NWNForBG/mus/Templev~ ~music/Templev~
 ADD_MUSIC ~NWNTemplev~ ~NWNForBG/mus/Templev.mus~  // was 142
+
+MKDIR ~music/NWmain~
+COPY ~NWNForBG/mus/NWmain~ ~music/NWmain~
 ADD_MUSIC ~NWNMain~ ~NWNForBG/mus/NWmain.mus~      // was 143
+
+MKDIR ~music/Aargend~
+COPY ~NWNForBG/mus/Aargend~ ~music/Aargend~
 ADD_MUSIC ~NWNAargend~ ~NWNForBG/mus/Aargend.mus~  // was 144
+
+MKDIR ~music/Aribev~
+COPY ~NWNForBG/mus/Aribev~ ~music/Aribev~
 ADD_MUSIC ~NWNAribev~ ~NWNForBG/mus/Aribev.mus~    // was 145
+
+MKDIR ~music/Aribgd~
+COPY ~NWNForBG/mus/Aribgd~ ~music/Aribgd~
 ADD_MUSIC ~NWNAribgd~ ~NWNForBG/mus/Aribgd.mus~    // was 146
+
+MKDIR ~music/Maugrim~
+COPY ~NWNForBG/mus/Maugrim~ ~music/Maugrim~
 ADD_MUSIC ~NWNMaugrim~ ~NWNForBG/mus/Maugrim.mus~  // was 147
+
+MKDIR ~music/Morag~
+COPY ~NWNForBG/mus/Morag~ ~music/Morag~
 ADD_MUSIC ~NWNMorag~ ~NWNForBG/mus/Morag.mus~      // was 148
+
+MKDIR ~music/Chapt1~
+COPY ~NWNForBG/mus/Chapt1~ ~music/Chapt1~
 ADD_MUSIC ~NWNChapt1~ ~NWNForBG/mus/Chapt1.mus~    // was 149
+
+MKDIR ~music/Chapt2~
+COPY ~NWNForBG/mus/Chapt2~ ~music/Chapt2~
 ADD_MUSIC ~NWNChapt2~ ~NWNForBG/mus/Chapt2.mus~    // was 150
+
+MKDIR ~music/Chapt3~
+COPY ~NWNForBG/mus/Chapt3~ ~music/Chapt3~
 ADD_MUSIC ~NWNChapt3~ ~NWNForBG/mus/Chapt3.mus~    // was 151
+
+MKDIR ~music/Chapt4~
+COPY ~NWNForBG/mus/Chapt4~ ~music/Chapt4~
 ADD_MUSIC ~NWNChapt4~ ~NWNForBG/mus/Chapt4.mus~    // was 152
+
+MKDIR ~music/Themnwn~
+COPY ~NWNForBG/mus/Themnwn~ ~music/Themnwn~
 ADD_MUSIC ~NWNThem~ ~NWNForBG/mus/Themnwn.mus~     // was 153
+
+MKDIR ~music/b5~
+COPY ~NWNForBG/mus/b5~ ~music/b5~
 ADD_MUSIC ~NWNB5~ ~NWNForBG/mus/b5.mus~            // was 154
+
+MKDIR ~music/b6~
+COPY ~NWNForBG/mus/b6~ ~music/b6~
 ADD_MUSIC ~NWNB6~ ~NWNForBG/mus/b6.mus~            // was 155
+
+MKDIR ~music/84~
+COPY ~NWNForBG/mus/84~ ~music/84~
 ADD_MUSIC ~NWN84~ ~NWNForBG/mus/84.mus~            // was 156
 
 //Areas
