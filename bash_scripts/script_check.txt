@@ -1,5 +1,5 @@
 Warnings in scripts
-Number of hits: 905
+Number of hits: 903
 File: 01POOL3.BCS, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 01POOL3.BCS, Line: 41, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 03POOL1.BCS, Line: 24, Warning: Resource not found: S:Area*[ARE] - AR6010
@@ -253,7 +253,6 @@ File: AR5400.BCS, Line: 5, Warning: Script name not found: O:Object* - Door5401
 File: AR5400.BCS, Line: 12, Warning: Script name not found: O:Object* - Door5401
 File: AR5405.BCS, Line: 4, Warning: Script name not found: S:Name* - Mulahey
 File: ARIBETH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
-File: BALDUR.BCS, Line: 126, Warning: Resource not found: S:CutScene*[BCS] - cut101a
 File: BALDUR25.BCS, Line: 236, Warning: Script name not found: O:Object* - fampsd25
 File: BALDUR25.BCS, Line: 244, Warning: Script name not found: O:Object* - famfer25
 File: BALDUR25.BCS, Line: 252, Warning: Script name not found: O:Object* - famimp25
@@ -345,7 +344,6 @@ File: CLR01FGT.BCS, Line: 62, Warning: Script name not found: O:Target* - GenFig
 File: CLR01FGT.BCS, Line: 66, Warning: Script name not found: O:Object* - GenFighter
 File: CLR01FGT.BCS, Line: 70, Warning: Script name not found: O:Target* - GenFighter
 File: CORAN.BCS, Line: 7, Warning: Script name not found: O:Actor* - Coran
-File: COURT4B.bcs, Line: 12, Warning: Resource not found: S:CutScene*[BCS] - Court4C
 File: CULTSHT.BCS, Line: 19, Warning: Script name not found: O:Object* - CultWizard
 File: CULTSHT.BCS, Line: 29, Warning: Script name not found: O:Object* - CultWizard
 File: CULTSHT.BCS, Line: 37, Warning: Script name not found: O:Object* - CultWizard
@@ -358,6 +356,13 @@ File: CULTSHT.BCS, Line: 93, Warning: Script name not found: O:Object* - CultAss
 File: CULTSHT.BCS, Line: 103, Warning: Script name not found: O:Object* - CultArcher
 File: CULTSHT.BCS, Line: 113, Warning: Script name not found: O:Object* - CultArcher
 File: CULTSHT.BCS, Line: 121, Warning: Script name not found: O:Object* - CultArcher
+File: CUT101A.bcs, Line: 7, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: CUT101A.bcs, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: CUT101A.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: CUT101A.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: CUT101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: CUT101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: CUT101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT233I.BCS, Line: 16, Warning: Resource not found: S:ResRef*[WBM:MVE] - ENDMVE1
 File: CUT233I2.BCS, Line: 16, Warning: Resource not found: S:ResRef*[WBM:MVE] - ENDMVE2
 File: CUT233I3.BCS, Line: 16, Warning: Resource not found: S:ResRef*[WBM:MVE] - ENDMVE3
@@ -415,13 +420,6 @@ File: DEATHM.BCS, Line: 135, Warning: Resource not found: S:Areaname*[ARE] - AR0
 File: DEGARD2.BCS, Line: 105, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: DELORNA.BCS, Line: 2, Warning: Script name not found: O:Object* - Delorna
 File: DELORNA.BCS, Line: 9, Warning: Script name not found: O:Object* - Helshara
-File: DEVOUR.bcs, Line: 42, Warning: Resource not found: S:RES*[SPL] - Crewtd2
-File: DEVOUR.bcs, Line: 65, Warning: Resource not found: S:RES*[SPL] - Crewtd2
-File: DEVOUR.bcs, Line: 92, Warning: Resource not found: S:RES*[SPL] - Crewtd2
-File: DEVOUR.bcs, Line: 123, Warning: Resource not found: S:RES*[SPL] - Crewtd2
-File: DEVOUR.bcs, Line: 169, Warning: Resource not found: S:RES*[SPL] - Crewtd2
-File: DEVOUR.bcs, Line: 193, Warning: Resource not found: S:RES*[SPL] - Crewtd2
-File: DEVOUR.bcs, Line: 221, Warning: Resource not found: S:RES*[SPL] - Crewtd2
 File: DGUARD.BCS, Line: 2, Warning: Script name not found: O:Object* - Dillar
 File: DIGCUT01.BCS, Line: 6, Warning: Resource not found: S:Area*[ARE] - AR4101
 File: DIGCUT01.BCS, Line: 7, Warning: Script name not found: O:Actor* - Charleston
