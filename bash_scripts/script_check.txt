@@ -1,5 +1,5 @@
 Warnings in scripts
-Number of hits: 909
+Number of hits: 905
 File: 01POOL3.BCS, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 01POOL3.BCS, Line: 41, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 03POOL1.BCS, Line: 24, Warning: Resource not found: S:Area*[ARE] - AR6010
@@ -253,7 +253,7 @@ File: AR5400.BCS, Line: 5, Warning: Script name not found: O:Object* - Door5401
 File: AR5400.BCS, Line: 12, Warning: Script name not found: O:Object* - Door5401
 File: AR5405.BCS, Line: 4, Warning: Script name not found: S:Name* - Mulahey
 File: ARIBETH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
-File: BALDUR.BCS, Line: 70, Warning: Resource not found: S:CutScene*[BCS] - cut101a
+File: BALDUR.BCS, Line: 126, Warning: Resource not found: S:CutScene*[BCS] - cut101a
 File: BALDUR25.BCS, Line: 236, Warning: Script name not found: O:Object* - fampsd25
 File: BALDUR25.BCS, Line: 244, Warning: Script name not found: O:Object* - famfer25
 File: BALDUR25.BCS, Line: 252, Warning: Script name not found: O:Object* - famimp25
@@ -308,7 +308,6 @@ File: BPDRU14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not
 File: BPTHIEF.bcs, Line: 220, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPTHIEF.bcs, Line: 247, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPTHIEF.bcs, Line: 273, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BRUNW.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - BRUNCHAN
 File: CANTO.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - canto
 File: CAPCUT02.BCS, Line: 6, Warning: Script name not found: O:Actor* - Angelo
 File: CARSA.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - carsa
@@ -346,9 +345,7 @@ File: CLR01FGT.BCS, Line: 62, Warning: Script name not found: O:Target* - GenFig
 File: CLR01FGT.BCS, Line: 66, Warning: Script name not found: O:Object* - GenFighter
 File: CLR01FGT.BCS, Line: 70, Warning: Script name not found: O:Target* - GenFighter
 File: CORAN.BCS, Line: 7, Warning: Script name not found: O:Actor* - Coran
-File: COURT3A.bcs, Line: 13, Warning: Resource not found: S:CutScene*[BCS] - Court3B
-File: COURT4A.bcs, Line: 13, Warning: Resource not found: S:CutScene*[BCS] - Court4B
-File: COURT6A.bcs, Line: 12, Warning: Resource not found: S:CutScene*[BCS] - Court6B
+File: COURT4B.bcs, Line: 12, Warning: Resource not found: S:CutScene*[BCS] - Court4C
 File: CULTSHT.BCS, Line: 19, Warning: Script name not found: O:Object* - CultWizard
 File: CULTSHT.BCS, Line: 29, Warning: Script name not found: O:Object* - CultWizard
 File: CULTSHT.BCS, Line: 37, Warning: Script name not found: O:Object* - CultWizard
@@ -418,6 +415,13 @@ File: DEATHM.BCS, Line: 135, Warning: Resource not found: S:Areaname*[ARE] - AR0
 File: DEGARD2.BCS, Line: 105, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: DELORNA.BCS, Line: 2, Warning: Script name not found: O:Object* - Delorna
 File: DELORNA.BCS, Line: 9, Warning: Script name not found: O:Object* - Helshara
+File: DEVOUR.bcs, Line: 42, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 65, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 92, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 123, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 169, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 193, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 221, Warning: Resource not found: S:RES*[SPL] - Crewtd2
 File: DGUARD.BCS, Line: 2, Warning: Script name not found: O:Object* - Dillar
 File: DIGCUT01.BCS, Line: 6, Warning: Resource not found: S:Area*[ARE] - AR4101
 File: DIGCUT01.BCS, Line: 7, Warning: Script name not found: O:Actor* - Charleston
@@ -450,11 +454,6 @@ File: DM04.BCS, Line: 10, Warning: Script name not found: O:Object* - DM04
 File: DM05.BCS, Line: 10, Warning: Script name not found: O:Object* - DM05
 File: DM06.BCS, Line: 10, Warning: Script name not found: O:Object* - DM06
 File: DRASUS.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - drasus
-File: DRAWL2.bcs, Line: 12, Warning: Resource not found: S:Sound*[WAV] - Drawl50
-File: DRAWL2.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - WALTER56
-File: DRAWL2.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - Drawl51
-File: DRAWL2.bcs, Line: 21, Warning: Resource not found: S:Sound*[WAV] - Drawl52
-File: DRAWL2.bcs, Line: 25, Warning: Resource not found: S:Sound*[WAV] - Drawl53
 File: DRUID3.BCS, Line: 9, Warning: Script name not found: O:Object* - Seniyad
 File: DRUID3.BCS, Line: 17, Warning: Script name not found: O:Object* - Seniyad
 File: DRUID3.BCS, Line: 24, Warning: Script name not found: O:Object* - Seniyad
@@ -494,7 +493,6 @@ File: FLAMPUN2.BCS, Line: 2, Warning: Script name not found: O:Object* - BountyH
 File: FORCEF.BCS, Line: 7, Warning: Script name not found: O:Target* - OilDoor
 File: FTOWBAZ.BCS, Line: 14, Warning: Resource not found: S:DialogFile*[DLG] - ftowbaz
 File: GANTOL.BCS, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - gantol
-File: GETHW.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - GETHCHAN
 File: GNARL.BCS, Line: 2, Warning: Script name not found: S:Name* - Hairtooth
 File: GNARL.BCS, Line: 11, Warning: Script name not found: S:Name* - Hairtooth
 File: GNOLL5A.BCS, Line: 10, Warning: Script name not found: O:Object* - Gnoll5a
@@ -578,7 +576,6 @@ File: KAGAIN.BCS, Line: 20, Warning: Script name not found: S:Name* - Yeslick
 File: KAGAIN.BCS, Line: 30, Warning: Script name not found: O:Object* - Yeslick
 File: KAGAIN.BCS, Line: 38, Warning: Script name not found: O:Object* - Yeslick
 File: KAGAIN.BCS, Line: 42, Warning: Script name not found: O:Target* - Yeslick
-File: KARATHIW.bcs, Line: 31, Warning: Resource not found: S:RES*[SPL] - KARATH
 File: KHALID.BCS, Line: 11, Warning: Script name not found: O:Object* - Xzar
 File: KHALID.BCS, Line: 20, Warning: Script name not found: O:Object* - Montaron
 File: KHALID.BCS, Line: 29, Warning: Script name not found: S:Name* - Xzar
@@ -598,7 +595,6 @@ File: KOLVAR.BCS, Line: 23, Warning: Script name not found: O:Object* - Montaron
 File: KPROEN02.BCS, Line: 146, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: KPROEN02.BCS, Line: 173, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: LAKADA.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - lakada
-File: LERK2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Lerk3
 File: LIIA.BCS, Line: 6, Warning: Resource not found: S:NewObject*[CRE] - WINSKI
 File: LIIA.BCS, Line: 7, Warning: Script name not found: O:Actor* - WINSKI
 File: LIIA.BCS, Line: 14, Warning: Script name not found: S:Name* - GDOPP7
@@ -607,7 +603,6 @@ File: LIIA.BCS, Line: 16, Warning: Script name not found: S:Name* - GDOPP72
 File: LIIA.BCS, Line: 17, Warning: Script name not found: S:Name* - GDOPP73
 File: LIIA.BCS, Line: 18, Warning: Script name not found: S:Name* - GDOPP74
 File: LIIA.BCS, Line: 19, Warning: Script name not found: S:Name* - GDOPP75
-File: MACVWOLF.bcs, Line: 5, Warning: Resource not found: S:RES*[SPL] - MACPOOF1
 File: MAGE14D.BCS, Line: 130, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: MAGE14D.BCS, Line: 157, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: MAGE18Y.BCS, Line: 11, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
@@ -633,6 +628,7 @@ File: MONTARON.BCS, Line: 49, Warning: Script name not found: O:Object* - Khalid
 File: MONTARON.BCS, Line: 52, Warning: Script name not found: O:Target* - Khalid
 File: NARCUT01.BCS, Line: 5, Warning: Script name not found: O:Object* - Narlen
 File: NASCHER.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
+File: NASCHER2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
 File: NEVILL.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - nevill
 File: NIEMAIN.BCS, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - niemai
 File: NPC.BCS, Line: 19, Warning: Resource not found: S:Sound*[WAV] - RAN
@@ -805,8 +801,6 @@ File: SKELETB.BCS, Line: 25, Warning: Script name not found: O:Object* - Skeleto
 File: SKELETB.BCS, Line: 33, Warning: Script name not found: O:Object* - ZombieB
 File: SKELETB.BCS, Line: 41, Warning: Script name not found: O:Object* - ZombieB
 File: SLUMVIC.BCS, Line: 12, Warning: Script name not found: S:Name* - SlumsMugger3
-File: SNARE3.bcs, Line: 108, Warning: Spell resource for NPC_SPIKE_BOOM not found: SPIN490.SPL
-File: SNARE4.bcs, Line: 108, Warning: Spell resource for NPC_BOOM_BOOM not found: SPIN492.SPL
 File: TESTGUY2.BCS, Line: 2, Warning: Script name not found: S:Name* - testguy1
 File: THALANTR.BCS, Line: 16, Warning: Script name not found: O:Target* - Melicamp
 File: THALANTR.BCS, Line: 18, Warning: Script name not found: O:Actor* - Melicamp
@@ -817,8 +811,6 @@ File: THIEF.BCS, Line: 20, Warning: Script name not found: O:Object* - Resar
 File: TMOORLCH.BCS, Line: 5, Warning: Resource not found: S:NewObject*[CRE] - MOORLOCK
 File: TMOORLCH.BCS, Line: 6, Warning: Script name not found: O:Object* - Moorlochtrap
 File: TRAPDIS.BCS, Line: 8, Warning: Script name not found: O:Object* - deathtrap3
-File: TROLCA02.bcs, Line: 7, Warning: Spell resource for TROLL_CAVE_CHANGE not found: SPIN470.SPL
-File: TROLLNW2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Trollnw3
 File: TRPBLACK.BCS, Line: 3, Warning: Script name not found: S:Name* - King
 File: TRPBLACK.BCS, Line: 11, Warning: Script name not found: S:Name* - King
 File: TRPBLACK.BCS, Line: 19, Warning: Script name not found: S:Name* - King
@@ -835,7 +827,6 @@ File: TRPWHITE.BCS, Line: 11, Warning: Script name not found: S:Name* - King
 File: TRPWHITE.BCS, Line: 19, Warning: Script name not found: S:Name* - King
 File: TRPWHITE.BCS, Line: 29, Warning: Script name not found: S:Name* - King
 File: TTARNOR.BCS, Line: 6, Warning: Script name not found: O:Object* - Tarnortrap
-File: URTHW.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - URTHCHAN
 File: VAX.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - vax
 File: VICONIA.BCS, Line: 281, Warning: Script name not found: S:Name* - victown1
 File: VICONIA.BCS, Line: 282, Warning: Script name not found: S:Name* - victown4
@@ -865,7 +856,13 @@ File: WERPAUS2.bcs, Line: 8, Warning: Script name not found: O:Target* - Door673
 File: WERPAUS2.bcs, Line: 9, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 10, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 11, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 13, Warning: Resource not found: S:CutScene*[BCS] - WERPAUS3
+File: WERPAUS3.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 14, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 15, Warning: Resource not found: S:Area*[ARE] - NW6737
 File: XZAR.BCS, Line: 11, Warning: Script name not found: O:Object* - Khalid
 File: XZAR.BCS, Line: 29, Warning: Script name not found: S:Name* - Khalid
 File: XZAR.BCS, Line: 40, Warning: Script name not found: O:Object* - Khalid
@@ -908,4 +905,3 @@ File: ZOMBIEB.BCS, Line: 24, Warning: Script name not found: O:Object* - Skeleto
 File: ZOMBIEB.BCS, Line: 32, Warning: Script name not found: O:Object* - SkeletonB
 File: ZOMBIEB.BCS, Line: 40, Warning: Script name not found: O:Object* - ZombieB
 File: ZOMBIEB.BCS, Line: 48, Warning: Script name not found: O:Object* - ZombieB
-File: ZOMBNW2.bcs, Line: 6, Warning: Spell resource for INNATE_ZOMBIE_LORD_AURA not found: SPIN190.SPL

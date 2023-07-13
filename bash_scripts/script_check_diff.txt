@@ -1,5 +1,6 @@
-Number of hits: 909
+Number of hits: 905
 File: ARIBETH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
+File: BALDUR.BCS, Line: 126, Warning: Resource not found: S:CutScene*[BCS] - cut101a
 File: BPBOUNTY.bcs, Line: 307, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPBOUNTY.bcs, Line: 333, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPBOUNTY.bcs, Line: 358, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
@@ -24,35 +25,31 @@ File: BPDRU14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not
 File: BPTHIEF.bcs, Line: 220, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPTHIEF.bcs, Line: 247, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPTHIEF.bcs, Line: 273, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BRUNW.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - BRUNCHAN
-File: COURT3A.bcs, Line: 13, Warning: Resource not found: S:CutScene*[BCS] - Court3B
-File: COURT4A.bcs, Line: 13, Warning: Resource not found: S:CutScene*[BCS] - Court4B
-File: COURT6A.bcs, Line: 12, Warning: Resource not found: S:CutScene*[BCS] - Court6B
-File: DRAWL2.bcs, Line: 12, Warning: Resource not found: S:Sound*[WAV] - Drawl50
-File: DRAWL2.bcs, Line: 15, Warning: Resource not found: S:Sound*[WAV] - WALTER56
-File: DRAWL2.bcs, Line: 18, Warning: Resource not found: S:Sound*[WAV] - Drawl51
-File: DRAWL2.bcs, Line: 21, Warning: Resource not found: S:Sound*[WAV] - Drawl52
-File: DRAWL2.bcs, Line: 25, Warning: Resource not found: S:Sound*[WAV] - Drawl53
-File: GETHW.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - GETHCHAN
+File: COURT4B.bcs, Line: 12, Warning: Resource not found: S:CutScene*[BCS] - Court4C
+File: DEVOUR.bcs, Line: 42, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 65, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 92, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 123, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 169, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 193, Warning: Resource not found: S:RES*[SPL] - Crewtd2
+File: DEVOUR.bcs, Line: 221, Warning: Resource not found: S:RES*[SPL] - Crewtd2
 File: GNT2016.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
 File: GNT2016.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
 File: GNT2017.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
 File: GNT2017.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
-File: KARATHIW.bcs, Line: 31, Warning: Resource not found: S:RES*[SPL] - KARATH
-File: LERK2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Lerk3
-File: MACVWOLF.bcs, Line: 5, Warning: Resource not found: S:RES*[SPL] - MACPOOF1
 File: NASCHER.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
+File: NASCHER2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
 File: NW3303.bcs, Line: 333, Warning: Resource not found: S:Object*[VEF:VVC:BAM] - ICFIRSDP
-File: SNARE3.bcs, Line: 108, Warning: Spell resource for NPC_SPIKE_BOOM not found: SPIN490.SPL
-File: SNARE4.bcs, Line: 108, Warning: Spell resource for NPC_BOOM_BOOM not found: SPIN492.SPL
-File: TROLCA02.bcs, Line: 7, Warning: Spell resource for TROLL_CAVE_CHANGE not found: SPIN470.SPL
-File: TROLLNW2.bcs, Line: 7, Warning: Resource not found: S:RES*[SPL] - Trollnw3
-File: URTHW.bcs, Line: 30, Warning: Resource not found: S:RES*[SPL] - URTHCHAN
 File: WERPAUS2.bcs, Line: 6, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 7, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 8, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 9, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 10, Warning: Script name not found: O:Target* - Door6737
 File: WERPAUS2.bcs, Line: 11, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 13, Warning: Resource not found: S:CutScene*[BCS] - WERPAUS3
-File: ZOMBNW2.bcs, Line: 6, Warning: Spell resource for INNATE_ZOMBIE_LORD_AURA not found: SPIN190.SPL
+File: WERPAUS3.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 14, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: WERPAUS3.bcs, Line: 15, Warning: Resource not found: S:Area*[ARE] - NW6737
