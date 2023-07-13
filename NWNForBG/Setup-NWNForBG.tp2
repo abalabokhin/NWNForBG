@@ -6508,11 +6508,11 @@ ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
   COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
    APPEND_FILE ~tmp_worldmap.tra~
 
-  ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links_patch.tbl~ THEN BEGIN
-    COPY ~Worldmap/map_mods_links_patch.tbl~  ~Worldmap~
-     APPEND_FILE ~NWNForBG/Worldmap/links_patch.tbl~
+  ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links.tbl~ THEN BEGIN
+    COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+     APPEND_FILE ~NWNForBG/Worldmap/links.tbl~
   END ELSE BEGIN
-    COPY ~NWNForBG/Worldmap/links_patch.tbl~ ~Worldmap/map_mods_links_patch.tbl~
+    COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
   END
 END
 ELSE BEGIN
