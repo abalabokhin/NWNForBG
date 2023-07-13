@@ -6504,7 +6504,7 @@ ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
    APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
 
   //preliminary step - making LANGUAGE temporary file until the new WeiDU
-  COPY ~NWNForBG/Worldmap/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+  COPY ~NWNForBG/tra/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
   COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
    APPEND_FILE ~tmp_worldmap.tra~
 
@@ -6519,6 +6519,6 @@ ELSE BEGIN
   MKDIR ~Worldmap~
   COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
   COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
-  COPY ~NWNForBG/Worldmap/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+  COPY ~NWNForBG/tra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
 END
 
