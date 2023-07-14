@@ -7,3 +7,18 @@ map files:
 *LM.BMP
 *SR.BMP
 
+BCS/BAF with strings
+    DisplayString
+    AddJournalEntry
+    DisplayStringNoName
+    DisplayStringHead
+    DisplayStringWait
+    DisplayStringHeadDead
+    DisplayStringNoNameHead
+    SetQuestDone
+    SetToken
+    EraseJournalEntry
+    SetName
+    DisplayStringHeadOwner
+    SetPlayerSound
+    RemoveMapNote

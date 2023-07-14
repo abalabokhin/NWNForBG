@@ -31,7 +31,7 @@ THEN
 		SetGlobal("Pause3","MYAREA",0)
 		SetGlobal("Pause4","MYAREA",0)
 		SetGlobal("KellisaiTalk","MYAREA",2)
-		DisplayStringHead(Player1,102615)  // ?? ?????????!
+		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		SetGlobalTimer("NextRaundNW","GLOBAL",EIGHT_HOURS)
 		Wait(5)
 		ActionOverride("Kellisai",StartDialogueNoSet(Player1))

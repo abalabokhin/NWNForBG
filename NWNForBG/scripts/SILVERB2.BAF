@@ -24,7 +24,7 @@ THEN
 	RESPONSE #100
 		SetGlobalTimer("castspell","LOCALS",9)
 		PlaySound("WWOLF03")
-		DisplayString(Myself,103715)  // ??? ?????
+		DisplayString(Myself,@103715)  // ??? ?????
 		ReallyForceSpell(Myself,WIZARD_HORROR)  // SPWI205.SPL (????)
 		SetGlobal("wolfhowls","LOCALS",1)
 END
@@ -37,7 +37,7 @@ THEN
 	RESPONSE #100
 		SetGlobalTimer("castspell","LOCALS",9)
 		PlaySound("WWOLF03")
-		DisplayString(Myself,103716)  // ??? ????? ????
+		DisplayString(Myself,@103716)  // ??? ????? ????
 		ReallyForceSpell(Myself,WIZARD_GREATER_MALISON)  // SPWI412.SPL (??????? ?????)
 		SetGlobal("wolfhowls","LOCALS",2)
 END
@@ -50,7 +50,7 @@ THEN
 	RESPONSE #100
 		SetGlobalTimer("castspell","LOCALS",9)
 		PlaySound("WWOLF03")
-		DisplayString(Myself,103717)  // ??? ????????
+		DisplayString(Myself,@103717)  // ??? ????????
 		ReallyForceSpell(Myself,WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
 		SetGlobal("wolfhowls","LOCALS",3)
 END
@@ -63,7 +63,7 @@ THEN
 	RESPONSE #100
 		SetGlobalTimer("castspell","LOCALS",9)
 		PlaySound("WWOLF03")
-		DisplayString(Myself,103715)  // ??? ?????
+		DisplayString(Myself,@103715)  // ??? ?????
 		ReallyForceSpell(Myself,WIZARD_HORROR)  // SPWI205.SPL (????)
 END
 

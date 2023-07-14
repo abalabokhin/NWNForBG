@@ -15,7 +15,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("gh_AIOffSwitch","LOCALS",0)
 		SmallWait(1)
-		DisplayStringHead(Myself,16469)  // ???
+		DisplayStringHead(Myself,#16469)  // ???
 END
 
 IF
@@ -25,7 +25,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("gh_AIOffSwitch","LOCALS",1)
 		SmallWait(1)
-		DisplayStringHead(Myself,16470)  // ????
+		DisplayStringHead(Myself,#16470)  // ????
 END
 
 IF

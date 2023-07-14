@@ -7,7 +7,7 @@ THEN
 		MoveToPoint([473.681])
 		MoveToPoint([504.630])
 		Face(14)
-		DisplayStringHead(Myself,103010)  // ??? ?? ???.
+		DisplayStringHead(Myself,@103010)  // ??? ?? ???.
 		Wait(2)
 		FadeToColor([30.0],0)
 		Wait(2)

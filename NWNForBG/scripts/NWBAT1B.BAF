@@ -23,7 +23,7 @@ THEN
 		Wait(1)
 		MultiPlayerSync()
 		FadeFromColor([20.0],0)
-		DisplayStringHead(Player1,103230)  // ?? ????????!
+		DisplayStringHead(Player1,@103230)  // ?? ????????!
 		SetGlobal("Pause1","MYAREA",0)
 		SetGlobal("Pause2","MYAREA",0)
 		SetGlobal("Pause3","MYAREA",0)
