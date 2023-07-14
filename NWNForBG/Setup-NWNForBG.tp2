@@ -963,58 +963,6 @@ COPY ~NWNForBG/are/nw4103.are~ ~override~
   WRITE_LONG (ofsSongs + 0x0) NWNMorag
   WRITE_LONG (ofsSongs + 0x4) NWNMorag
 
-// New animations from Infinity-Animations
-ACTION_FOR_EACH animation IN 
-  ~ccp_displacer_beast~
-  ~dustman_female~
-  ~dustman_male~
-  ~elff_mage1~
-  ~godsman~
-  ~harlot~
-  ~hf_mage~
-  ~hf_thief~
-  ~hm_ninja~
-  ~iwd2_goblin_elite_axe_green~
-  ~iwd2_goblin_elite_bow_green~
-  ~merchant~
-  ~nwn_amel~
-  ~nwn_bebilith~
-  ~nwn_giant_fire_female~
-  ~nwn_succubus~
-  ~skeleton_priest~
-  ~skeleton_worker~
-  ~thief_male_human~
-  ~thug~
-  ~townie_curst_male~
-  ~townie_lower_class_female~
-  ~townie_lower_class_male~
-  ~townie_upper_class_female~
-  ~townie_upper_class_male~
-  ~townie_wizard~
-BEGIN
-    ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~^.+\.bam$~ BEGIN
-        // We copy only the files we do need.
-        ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
-            ACTION_TO_LOWER %BASH_FOR_FILE%
-            COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
-        END
-    END
-END
-
-ACTION_BASH_FOR ~%MOD_FOLDER%/ia_ini~ ~^.+\.ini$~ BEGIN
-    OUTER_SPRINT inifile EVAL "%BASH_FOR_RES%"
-    ACTION_TO_UPPER inifile
-    // Gives each new .ini file its right name (its animation slot index)
-    ACTION_IF VARIABLE_IS_SET $GWNewIni(~%inifile%~) BEGIN
-        SILENT
-        OUTER_SPRINT GW_nv_ini $GWNewIni(~%inifile%~)
-        COPY ~%BASH_FOR_FILESPEC%~ ~override/%GW_nv_ini%.ini~
-        PRINT @1121  // ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
-    END ELSE BEGIN
-        PRINT @1122  // ~  ==> Animation %inifile%.ini file not installed.~
-    END
-END
-
 //Creatures
 COPY ~NWNForBG/cre~ ~override~
 
@@ -5282,6 +5230,65 @@ COPY ~NWNForBG/cre/zor.cre~ ~override~
   SAY 0x10C	@104299
   SAY 0x110	@104300
   SAY 0x114	@104301
+
+// Install new animations from Infinity-Animations - this doesn't work for now
+ACTION_FOR_EACH animation IN 
+  ~ccp_displacer_beast~
+  ~dustman_female~
+  ~dustman_male~
+  ~elff_mage1~
+  ~godsman~
+  ~harlot~
+  ~hf_mage~
+  ~hf_thief~
+  ~hm_ninja~
+  ~iwd2_goblin_elite_axe_green~
+  ~iwd2_goblin_elite_bow_green~
+  ~merchant~
+  ~nwn_amel~
+  ~nwn_bebilith~
+  ~nwn_giant_fire_female~
+  ~nwn_succubus~
+  ~skeleton_priest~
+  ~skeleton_worker~
+  ~thief_male_human~
+  ~thug~
+  ~townie_curst_male~
+  ~townie_lower_class_female~
+  ~townie_lower_class_male~
+  ~townie_upper_class_female~
+  ~townie_upper_class_male~
+  ~townie_wizard~
+BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~^.+\.bam$~ BEGIN
+        // We copy only the files we do need.
+        ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+            ACTION_TO_LOWER %BASH_FOR_FILE%
+            COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+        END
+    END
+END
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/ia_ini~ ~^.+\.ini$~ BEGIN
+    OUTER_SPRINT inifile EVAL "%BASH_FOR_RES%"
+    ACTION_TO_UPPER inifile
+    // Gives each new .ini file its right name (its animation slot index)
+    ACTION_IF VARIABLE_IS_SET $GWNewIni(~%inifile%~) BEGIN
+        SILENT
+        OUTER_SPRINT GW_nv_ini $GWNewIni(~%inifile%~)
+        COPY ~%BASH_FOR_FILESPEC%~ ~override/%GW_nv_ini%.ini~
+        PRINT @1121  // ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
+    END ELSE BEGIN
+        PRINT @1122  // ~  ==> Animation %inifile%.ini file not installed.~
+    END
+END
+
+//Set animation for creatures
+COPY_EXISTING ~AAVILL.CRE~ ~override~
+    WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~ARUNDEL~)
+BUT_ONLY
+// TODO: do it for all the cre files with missing animations.
+
 //Sounds
 LAF HANDLE_AUDIO END
 //COPY ~NWNForBG/audio~ ~override~
