@@ -1,138 +1,138 @@
 
-COPY ~spl/balortk1.spl~ ~override~
+COPY ~NWNForBG/spl/balortk1.spl~ ~override~
   SAY 0x8	@74524
 
-COPY ~spl/balortk2.spl~ ~override~
+COPY ~NWNForBG/spl/balortk2.spl~ ~override~
   SAY 0x8	@74524
 
-COPY ~spl/braz2.spl~ ~override~
+COPY ~NWNForBG/spl/braz2.spl~ ~override~
   SAY 0x8	@102578
 
-COPY ~spl/braz3.spl~ ~override~
+COPY ~NWNForBG/spl/braz3.spl~ ~override~
   SAY 0x8	@102576
 
-COPY ~spl/dw#thinv.spl~ ~override~
+COPY ~NWNForBG/spl/dw#thinv.spl~ ~override~
   SAY 0x8	@102236
 
-COPY ~spl/fl#csdis.spl~ ~override~
+COPY ~NWNForBG/spl/fl#csdis.spl~ ~override~
   SAY 0x8	@102490
 
-COPY ~spl/fl#finpc.spl~ ~override~
+COPY ~NWNForBG/spl/fl#finpc.spl~ ~override~
   SAY 0x50	@102482
   SAY 0x54	@102482
 
-COPY ~spl/melspl5a.spl~ ~override~
+COPY ~NWNForBG/spl/melspl5a.spl~ ~override~
   SAY 0x12E	@74540
 
-COPY ~spl/mmwiconv.spl~ ~override~
+COPY ~NWNForBG/spl/mmwiconv.spl~ ~override~
   SAY 0x8	@102717
   SAY 0x50	@102718
 
-COPY ~spl/moblfire.spl~ ~override~
+COPY ~NWNForBG/spl/moblfire.spl~ ~override~
   SAY 0x8	@102862
   SAY 0x50	@102863
 
-COPY ~spl/nabpara.spl~ ~override~
+COPY ~NWNForBG/spl/nabpara.spl~ ~override~
   SAY 0x8	@74536
 
-COPY ~spl/nwdimra.spl~ ~override~
+COPY ~NWNForBG/spl/nwdimra.spl~ ~override~
   SAY 0x8	@107065
   SAY 0xC	@107065
 
-COPY ~spl/nwmelr.spl~ ~override~
+COPY ~NWNForBG/spl/nwmelr.spl~ ~override~
   SAY 0x8	@107066
   SAY 0xC	@107066
 
-COPY ~spl/nwsimb1.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb1.spl~ ~override~
   SAY 0x15E	@107531
 
-COPY ~spl/nwsimb2.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb2.spl~ ~override~
   SAY 0x15E	@107532
 
-COPY ~spl/nwsimb3.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb3.spl~ ~override~
   SAY 0x12E	@107533
 
-COPY ~spl/nwsimb4.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb4.spl~ ~override~
   SAY 0x12E	@107534
 
-COPY ~spl/nwsimb5.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb5.spl~ ~override~
   SAY 0x8	@107526
   SAY 0x12E	@107535
 
-COPY ~spl/nwsimb6.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb6.spl~ ~override~
   SAY 0x8	@107527
   SAY 0x15E	@107536
 
-COPY ~spl/nwsimb7.spl~ ~override~
+COPY ~NWNForBG/spl/nwsimb7.spl~ ~override~
   SAY 0x8	@107528
   SAY 0x12E	@107537
 
-COPY ~spl/rr#shm.spl~ ~override~
+COPY ~NWNForBG/spl/rr#shm.spl~ ~override~
   SAY 0x8	@102453
 
-COPY ~spl/slaad1.spl~ ~override~
+COPY ~NWNForBG/spl/slaad1.spl~ ~override~
   SAY 0x8	@104402
 
-COPY ~spl/slaad2.spl~ ~override~
+COPY ~NWNForBG/spl/slaad2.spl~ ~override~
   SAY 0x8	@104403
 
-COPY ~spl/sp618nw.spl~ ~override~
+COPY ~NWNForBG/spl/sp618nw.spl~ ~override~
   SAY 0x8	@103231
   SAY 0x50	@103232
 
-COPY ~spl/spcl665t.spl~ ~override~
+COPY ~NWNForBG/spl/spcl665t.spl~ ~override~
   SAY 0x8	@103738
 
-COPY ~spl/spheal0.spl~ ~override~
+COPY ~NWNForBG/spl/spheal0.spl~ ~override~
   SAY 0x8	@88752
   SAY 0xC	@88752
 
-COPY ~spl/spheal1.spl~ ~override~
+COPY ~NWNForBG/spl/spheal1.spl~ ~override~
   SAY 0x8	@88753
   SAY 0xC	@88753
   SAY 0xFE	@88754
 
-COPY ~spl/spheal6.spl~ ~override~
+COPY ~NWNForBG/spl/spheal6.spl~ ~override~
   SAY 0xFE	@90798
 
-COPY ~spl/spin115w.spl~ ~override~
+COPY ~NWNForBG/spl/spin115w.spl~ ~override~
   SAY 0x8	@103848
 
-COPY ~spl/spin116w.spl~ ~override~
+COPY ~NWNForBG/spl/spin116w.spl~ ~override~
   SAY 0x8	@104039
 
-COPY ~spl/spin118w.spl~ ~override~
+COPY ~NWNForBG/spl/spin118w.spl~ ~override~
   SAY 0x8	@103847
 
-COPY ~spl/spin139.spl~ ~override~
+COPY ~NWNForBG/spl/spin139.spl~ ~override~
   SAY 0x8	@104027
 
-COPY ~spl/spin141.spl~ ~override~
+COPY ~NWNForBG/spl/spin141.spl~ ~override~
   SAY 0x8	@103693
 
-COPY ~spl/spkaoh.spl~ ~override~
+COPY ~NWNForBG/spl/spkaoh.spl~ ~override~
   SAY 0x8	@103743
 
-COPY ~spl/spkaoh2.spl~ ~override~
+COPY ~NWNForBG/spl/spkaoh2.spl~ ~override~
   SAY 0x8	@103744
 
-COPY ~spl/spminti.spl~ ~override~
+COPY ~NWNForBG/spl/spminti.spl~ ~override~
   SAY 0x8	@103888
   SAY 0x50	@103889
 
-COPY ~spl/spmintid.spl~ ~override~
+COPY ~NWNForBG/spl/spmintid.spl~ ~override~
   SAY 0x8	@103888
   SAY 0x50	@103889
 
-COPY ~spl/sppr118.spl~ ~override~
+COPY ~NWNForBG/spl/sppr118.spl~ ~override~
   SAY 0x8	@103901
   SAY 0x50	@103902
 
-COPY ~spl/sppr119.spl~ ~override~
+COPY ~NWNForBG/spl/sppr119.spl~ ~override~
   SAY 0x8	@103903
   SAY 0x50	@103904
 
-COPY ~spl/sppr120.spl~ ~override~
+COPY ~NWNForBG/spl/sppr120.spl~ ~override~
   SAY 0x8	@103906
   SAY 0x50	@103907
   SAY 0x1C6	@103908
@@ -142,32 +142,32 @@ COPY ~spl/sppr120.spl~ ~override~
   SAY 0x406	@103908
   SAY 0x496	@103908
 
-COPY ~spl/sppr145.spl~ ~override~
+COPY ~NWNForBG/spl/sppr145.spl~ ~override~
   SAY 0x8	@103909
   SAY 0xC	@103909
   SAY 0x50	@103910
 
-COPY ~spl/sppr147.spl~ ~override~
+COPY ~NWNForBG/spl/sppr147.spl~ ~override~
   SAY 0x8	@103911
   SAY 0x50	@103912
 
-COPY ~spl/sppr217.spl~ ~override~
+COPY ~NWNForBG/spl/sppr217.spl~ ~override~
   SAY 0x8	@103913
   SAY 0x50	@103914
 
-COPY ~spl/sppr218.spl~ ~override~
+COPY ~NWNForBG/spl/sppr218.spl~ ~override~
   SAY 0x8	@103915
   SAY 0x50	@103916
 
-COPY ~spl/sppr245.spl~ ~override~
+COPY ~NWNForBG/spl/sppr245.spl~ ~override~
   SAY 0x8	@103917
   SAY 0x50	@103918
 
-COPY ~spl/sppr247.spl~ ~override~
+COPY ~NWNForBG/spl/sppr247.spl~ ~override~
   SAY 0x8	@103927
   SAY 0x50	@103928
 
-COPY ~spl/sppr321.spl~ ~override~
+COPY ~NWNForBG/spl/sppr321.spl~ ~override~
   SAY 0x50	@103919
   SAY 0x2DE	@103920
   SAY 0x30E	@103921
@@ -177,131 +177,131 @@ COPY ~spl/sppr321.spl~ ~override~
   SAY 0x3CE	@103925
   SAY 0x3FE	@103926
 
-COPY ~spl/sppr322.spl~ ~override~
+COPY ~NWNForBG/spl/sppr322.spl~ ~override~
   SAY 0x8	@103989
   SAY 0x50	@103990
 
-COPY ~spl/sppr323.spl~ ~override~
+COPY ~NWNForBG/spl/sppr323.spl~ ~override~
   SAY 0x8	@103929
   SAY 0x50	@103930
 
-COPY ~spl/sppr324.spl~ ~override~
+COPY ~NWNForBG/spl/sppr324.spl~ ~override~
   SAY 0x8	@103931
   SAY 0x50	@103932
 
-COPY ~spl/sppr328.spl~ ~override~
+COPY ~NWNForBG/spl/sppr328.spl~ ~override~
   SAY 0x8	@103933
   SAY 0x50	@103934
   SAY 0x12E	@103935
 
-COPY ~spl/sppr329.spl~ ~override~
+COPY ~NWNForBG/spl/sppr329.spl~ ~override~
   SAY 0x8	@103936
   SAY 0x50	@103937
 
-COPY ~spl/sppr332.spl~ ~override~
+COPY ~NWNForBG/spl/sppr332.spl~ ~override~
   SAY 0x8	@103938
   SAY 0x50	@103939
 
-COPY ~spl/sppr333.spl~ ~override~
+COPY ~NWNForBG/spl/sppr333.spl~ ~override~
   SAY 0x8	@103940
   SAY 0x50	@103941
 
-COPY ~spl/sppr345.spl~ ~override~
+COPY ~NWNForBG/spl/sppr345.spl~ ~override~
   SAY 0x8	@103942
   SAY 0x50	@103943
 
-COPY ~spl/sppr346.spl~ ~override~
+COPY ~NWNForBG/spl/sppr346.spl~ ~override~
   SAY 0x8	@103944
   SAY 0x50	@103945
 
-COPY ~spl/sppr423.spl~ ~override~
+COPY ~NWNForBG/spl/sppr423.spl~ ~override~
   SAY 0x8	@103946
   SAY 0x50	@103947
 
-COPY ~spl/sppr426.spl~ ~override~
+COPY ~NWNForBG/spl/sppr426.spl~ ~override~
   SAY 0x8	@103948
   SAY 0x50	@103949
 
-COPY ~spl/sppr427.spl~ ~override~
+COPY ~NWNForBG/spl/sppr427.spl~ ~override~
   SAY 0x8	@103950
   SAY 0x50	@103951
 
-COPY ~spl/sppr428.spl~ ~override~
+COPY ~NWNForBG/spl/sppr428.spl~ ~override~
   SAY 0x8	@103952
   SAY 0x50	@103953
 
-COPY ~spl/sppr431.spl~ ~override~
+COPY ~NWNForBG/spl/sppr431.spl~ ~override~
   SAY 0x8	@103954
   SAY 0x50	@103955
 
-COPY ~spl/sppr522.spl~ ~override~
+COPY ~NWNForBG/spl/sppr522.spl~ ~override~
   SAY 0x8	@103991
   SAY 0x50	@103992
 
-COPY ~spl/sppr523.spl~ ~override~
+COPY ~NWNForBG/spl/sppr523.spl~ ~override~
   SAY 0x8	@103958
   SAY 0x50	@103959
 
-COPY ~spl/sppr526.spl~ ~override~
+COPY ~NWNForBG/spl/sppr526.spl~ ~override~
   SAY 0x8	@103961
   SAY 0x50	@103962
 
-COPY ~spl/sppr529.spl~ ~override~
+COPY ~NWNForBG/spl/sppr529.spl~ ~override~
   SAY 0x8	@103993
   SAY 0x50	@103994
 
-COPY ~spl/sppr530.spl~ ~override~
+COPY ~NWNForBG/spl/sppr530.spl~ ~override~
   SAY 0x8	@103998
   SAY 0x50	@103999
 
-COPY ~spl/sppr546.spl~ ~override~
+COPY ~NWNForBG/spl/sppr546.spl~ ~override~
   SAY 0x8	@103996
   SAY 0x50	@103997
 
-COPY ~spl/sppr547.spl~ ~override~
+COPY ~NWNForBG/spl/sppr547.spl~ ~override~
   SAY 0x8	@103956
   SAY 0x50	@103957
 
-COPY ~spl/sppr618.spl~ ~override~
+COPY ~NWNForBG/spl/sppr618.spl~ ~override~
   SAY 0x8	@103963
   SAY 0x50	@103964
 
-COPY ~spl/sppr621.spl~ ~override~
+COPY ~NWNForBG/spl/sppr621.spl~ ~override~
   SAY 0x8	@103966
   SAY 0xC	@103966
   SAY 0x50	@103965
   SAY 0x54	@103965
   SAY 0x24E	@90398
 
-COPY ~spl/sppr623.spl~ ~override~
+COPY ~NWNForBG/spl/sppr623.spl~ ~override~
   SAY 0x8	@103967
   SAY 0x50	@103968
 
-COPY ~spl/sppr627.spl~ ~override~
+COPY ~NWNForBG/spl/sppr627.spl~ ~override~
   SAY 0x8	@104000
   SAY 0x50	@104001
 
-COPY ~spl/sppr628.spl~ ~override~
+COPY ~NWNForBG/spl/sppr628.spl~ ~override~
   SAY 0x8	@103969
   SAY 0x50	@103970
 
-COPY ~spl/sppr645.spl~ ~override~
+COPY ~NWNForBG/spl/sppr645.spl~ ~override~
   SAY 0x50	@103971
 
-COPY ~spl/sppr714.spl~ ~override~
+COPY ~NWNForBG/spl/sppr714.spl~ ~override~
   SAY 0x8	@103974
   SAY 0x50	@103975
   SAY 0x1EE	@103976
 
-COPY ~spl/sppr734.spl~ ~override~
+COPY ~NWNForBG/spl/sppr734.spl~ ~override~
   SAY 0x8	@103977
   SAY 0x50	@103978
 
-COPY ~spl/sppr740.spl~ ~override~
+COPY ~NWNForBG/spl/sppr740.spl~ ~override~
   SAY 0x8	@103980
   SAY 0x50	@103981
 
-COPY ~spl/sppr745.spl~ ~override~
+COPY ~NWNForBG/spl/sppr745.spl~ ~override~
   SAY 0x8	@104005
   SAY 0x50	@104006
   SAY 0x27E	@104010
@@ -309,79 +309,79 @@ COPY ~spl/sppr745.spl~ ~override~
   SAY 0x57E	@104007
   SAY 0x5AE	@104008
 
-COPY ~spl/sppr747.spl~ ~override~
+COPY ~NWNForBG/spl/sppr747.spl~ ~override~
   SAY 0x8	@104002
   SAY 0x50	@104003
   SAY 0x12E	@104004
 
-COPY ~spl/sppr748.spl~ ~override~
+COPY ~NWNForBG/spl/sppr748.spl~ ~override~
   SAY 0x8	@103982
   SAY 0x50	@103983
 
-COPY ~spl/sppr953.spl~ ~override~
+COPY ~NWNForBG/spl/sppr953.spl~ ~override~
   SAY 0x8	@103890
 
-COPY ~spl/sppr954.spl~ ~override~
+COPY ~NWNForBG/spl/sppr954.spl~ ~override~
   SAY 0x8	@103891
 
-COPY ~spl/sppr955.spl~ ~override~
+COPY ~NWNForBG/spl/sppr955.spl~ ~override~
   SAY 0x8	@103892
 
-COPY ~spl/sppr956.spl~ ~override~
+COPY ~NWNForBG/spl/sppr956.spl~ ~override~
   SAY 0x8	@103893
 
-COPY ~spl/sppr957.spl~ ~override~
+COPY ~NWNForBG/spl/sppr957.spl~ ~override~
   SAY 0x8	@103894
 
-COPY ~spl/sppr958.spl~ ~override~
+COPY ~NWNForBG/spl/sppr958.spl~ ~override~
   SAY 0x8	@103895
 
-COPY ~spl/sppr959.spl~ ~override~
+COPY ~NWNForBG/spl/sppr959.spl~ ~override~
   SAY 0x8	@103896
 
-COPY ~spl/spwi204.spl~ ~override~
+COPY ~NWNForBG/spl/spwi204.spl~ ~override~
   SAY 0x8	@103221
   SAY 0x50	@103222
 
-COPY ~spl/spwi328.spl~ ~override~
+COPY ~NWNForBG/spl/spwi328.spl~ ~override~
   SAY 0x8	@103175
   SAY 0x50	@103176
 
-COPY ~spl/spwi428.spl~ ~override~
+COPY ~NWNForBG/spl/spwi428.spl~ ~override~
   SAY 0x8	@103135
   SAY 0x50	@103136
 
-COPY ~spl/spwi429.spl~ ~override~
+COPY ~NWNForBG/spl/spwi429.spl~ ~override~
   SAY 0x8	@102862
   SAY 0x50	@102863
 
-COPY ~spl/spwi431.spl~ ~override~
+COPY ~NWNForBG/spl/spwi431.spl~ ~override~
   SAY 0x8	@103886
   SAY 0x50	@103887
 
-COPY ~spl/spwi545.spl~ ~override~
+COPY ~NWNForBG/spl/spwi545.spl~ ~override~
   SAY 0x8	@74538
 
-COPY ~spl/spwi733.spl~ ~override~
+COPY ~NWNForBG/spl/spwi733.spl~ ~override~
   SAY 0x8	@103882
   SAY 0x50	@103883
 
-COPY ~spl/spwi828.spl~ ~override~
+COPY ~NWNForBG/spl/spwi828.spl~ ~override~
   SAY 0x8	@103173
   SAY 0x50	@103174
 
-COPY ~spl/spwi913a.spl~ ~override~
+COPY ~NWNForBG/spl/spwi913a.spl~ ~override~
   SAY 0x8	@106379
 
-COPY ~spl/sumshad.spl~ ~override~
+COPY ~NWNForBG/spl/sumshad.spl~ ~override~
   SAY 0x8	@102485
 
-COPY ~spl/toras1.spl~ ~override~
+COPY ~NWNForBG/spl/toras1.spl~ ~override~
   SAY 0x8	@103803
 
-COPY ~spl/toras2.spl~ ~override~
+COPY ~NWNForBG/spl/toras2.spl~ ~override~
   SAY 0x8	@103804
 
-COPY ~spl/vscroll.spl~ ~override~
+COPY ~NWNForBG/spl/vscroll.spl~ ~override~
   SAY 0x8	@103824
   SAY 0x50	@103825
