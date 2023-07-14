@@ -1,0 +1,41 @@
+3jz /giant_fire_female
+***
+                 SOUND
+ATTACK           t-fgf03 t-fgf04
+ATTACK           0 0
+AWAKE            ***
+AWAKE            0
+CAST             ***
+CAST             0
+CONJURE          ***
+CONJURE          0
+DAMAGE           t-fgf07 t-fgf08
+DAMAGE           0 0
+DIE              t-fgf09
+DIE              0
+HEAD_TURN        ***
+HEAD_TURN        0
+READY            ***
+READY            0
+SHOOT            t-fgf04
+SHOOT            0
+TWITCH           ***
+TWITCH           0
+WALK             ***
+WALK             0
+ATTACK_SLASH     t-fgf03
+ATTACK_SLASH     0
+ATTACK_BACKSLASH t-fgf03
+ATTACK_BACKSLASH 0
+ATTACK_JAB       t-fgf04
+ATTACK_JAB       0
+EMERGE           ***
+EMERGE           0
+HIDE             ***
+HIDE             0
+SLEEP            ***
+SLEEP            0
+Battle_Cry       t-fgf01 nosound
+Battle_Cry       0 0
+Selection        ***
+Selection        0
