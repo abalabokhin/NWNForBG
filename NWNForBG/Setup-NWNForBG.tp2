@@ -5231,6 +5231,7 @@ COPY ~NWNForBG/cre/zor.cre~ ~override~
   SAY 0x110	@104300
   SAY 0x114	@104301
 
+/*
 // Install new animations from Infinity-Animations - this doesn't work for now
 ACTION_FOR_EACH animation IN 
   ~ccp_displacer_beast~
@@ -5282,12 +5283,14 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/ia_ini~ ~^.+\.ini$~ BEGIN
         PRINT @1122  // ~  ==> Animation %inifile%.ini file not installed.~
     END
 END
+*/
 
 //Set animation for creatures
+// TODO: do it for all the cre files with missing animations.
 COPY_EXISTING ~AAVILL.CRE~ ~override~
     WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~ARUNDEL~)
-BUT_ONLY
-// TODO: do it for all the cre files with missing animations.
+BUT_ONLY_IF_CHANGES
+
 
 //Sounds
 LAF HANDLE_AUDIO END
