@@ -1,0 +1,41 @@
+µbw /amel_pc_nwn
+***
+                 SOUND
+ATTACK           t-aml03 t-aml04
+ATTACK           0 0
+AWAKE            ***
+AWAKE            0
+CAST             ***
+CAST             0
+CONJURE          ***
+CONJURE          0
+DAMAGE           t-aml07 t-aml08
+DAMAGE           0 0
+DIE              t-aml09
+DIE              0
+HEAD_TURN        ***
+HEAD_TURN        0
+READY            ***
+READY            0
+SHOOT            t-aml03 nosound
+SHOOT            0 0
+TWITCH           ***
+TWITCH           0
+WALK             ***
+WALK             0
+ATTACK_SLASH     t-aml03 nosound
+ATTACK_SLASH     0 0
+ATTACK_BACKSLASH t-aml04 nosound
+ATTACK_BACKSLASH 0 0
+ATTACK_JAB       t-aml04 nosound
+ATTACK_JAB       0 0
+EMERGE           ***
+EMERGE           0
+HIDE             ***
+HIDE             0
+SLEEP            ***
+SLEEP            0
+Battle_Cry       t-aml01a t-aml01b
+Battle_Cry       0 0
+Selection        t-aml02a t-aml02b
+Selection        0 0
