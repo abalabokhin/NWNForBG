@@ -1,0 +1,1724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style_ia-rp.css" type="text/css">
+
+	<title>
+		Spellhold Studios - Infinity Animations: Note for modders
+	</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link href="images/shsweb.ico" rel="icon" type="bmp" />
+  </head>
+
+  <body>
+
+	<script type="module">
+		document.getElementById("latestVersion").innerText = document.getElementById('versionHistory').getElementsByTagName("h6")[0].innerText
+	</script>
+
+	<div id="wrap">
+	<a name="top" id="top"></a>
+
+	  <div id="header">
+		<h1 style="color: #781808;text-shadow: 0.1rem 0.1rem 0.25rem #807559;">Infinity Animations - Note for modders</h1><br>
+
+		<span style="font-style: italic;"><strong>A Spellhold Studios mod for Baldur's Gate II:<acronym title="Throne of Bhaal">ToB</acronym>, Baldur's Gate Trilogy, <acronym title="Baldur's Gate 'To Two'">Tutu</acronym>, Baldur's Gate: Enhanced Edition, Siege of Dragonspear, Baldur's Gate II: Enhanced Edition, Icewind Dale: Enhanced Edition and <acronym title="Enhanced Edition Trilogy">EET</acronym>.</strong></span>
+		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
+
+		<p class="about">
+			Author: Erephine &#8226; <acronym title="Weimer Dialogue Utility">WeiDU</acronym> coding: Miloch, Sam and Gwendolyne
+		</p>
+		<p class="about">
+			<a href="http://www.spellholdstudios.net/ie/infinityanimations">Mod Website</a> &#8226; <a href="http://www.shsforums.net/forum/594-infinity-animations/">Mod Forum</a> &#8226; <a href="http://www.shsforums.net/files/category/98-infinity-animations/">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Infinity-Animations">GitHub</a> &#8226; <span id="latestVersion"></span>
+		</p>
+		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
+
+		<p class="menu">
+			<a href="#about">About</a> &#x2B25; <a href="#animate">ANIMATE.ids file</a> &#x2B25; <a href="#adding_classic">Claiming and Adding new Animation slots (classic game)</a> &#x2B25; <a href="#adding_ee">Adding new Animation slots in EE Games</a> &#x2B25; <a href="#ini_files">Ini files Description</a>
+		</p>
+		<p class="menu" style="margin-top:7px;">
+			<a href="#install">Installing new animations in games</a> &#x2B25; <a href="#ref">Using a new animation slot</a> &#x2B25; <a href="#ref">Updating old mods</a> &#x2B25; <a href="#version">Version History</a>
+		</p>
+	  </div>
+
+	<div id="maindiv">
+<!-- ========================== A b o u t ========================== -->
+	  <a name="about" id="about"></a>
+	  <div class="content">
+
+		<h2>About</h2><br>
+
+		<p>
+			The Infinity Animations mod patches Baldur's Gate II: Throne of Bhaal engine to support additional creature and character animations (referred to as 'animation slots'). Thus, it acts as a central hub, usable by anyone who would like to add animation entries to the game without being bogged down by issues of mod conflicts and incompatibilities
+		</p>
+
+		<p>
+			This guide is intended for modders who wish to make their mods compatible with Infinity Animations. Is is organized using a tutorial approach, in which you are guided through each step of accomplishing particular modding tasks without breaking compatibility.
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; About</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ======================== A n i m a t e ======================== -->
+	  <a name="animate" id="animate"></a>
+	  <div class="content">
+
+		<h2>ANIMATE.ids file</h2><br>
+
+		<p>
+			In a perfect world, Infinity Animations would be installed at the very top of an installation as a data base that would be usable by anyone who would like to add new animation entries to the game or use them in a mod. Unfortunately, since it was designed a long time after the first mega-mods generation that were overwriting game files, in particular to resolve animation conflicts and restore standard animations that mega-mods have overwritten; it needs to be installed after those mega-mods, at least until their authors will update them to benefit from Infinity Animations content...
+		</p>
+
+		<p>
+			While waiting for this marvelous day, here is the perfect way to make sure that the new animations you are going to use or install won't cause any incompatibility issues with other mods.
+		</p><br>
+
+		<p>
+			<span style="color: #781808;">&#10173;</span> The first thing to do is to check that you have the right ANIMATE.ids file. Unfortunately, this is not as easy as it sounds. &#128577;
+		</p><br>
+
+		<p>
+			Indeed, many mods modify, or even worse, overwrite the existing ANIMATE.ids file. As a result, a umber rock may end up with a cyclops or a goblin animation. It's rather messy, isn't it?
+		</p>
+		
+		<p>
+			Another perverse effect of successive modifications of the ANIMATE.ids file is the stacking of identical animations listed with a different name or/and index. These new entries are not only redundant and useless, but they can cause serious or critical glitches during installation of mods that use the <span class="tp2"><span style="color: purple;">IDS_OF_SYMBOL (</span>animate <span style="color: #C00040">~animation name~</span><span style="color: purple;">)</span></span> command to ensure their compatibility with both classic and EE games.
+		</p>
+
+		<p>
+			That is why you have to follow instructions below if you want to use animations not present in the basic games:
+		</p>
+		<div class="important" style="font-size: 100%;">
+			<p style ="width: 100%;"><span style="color: #781808;">&#9755;</span> 1. <span style="color: #781808;">Install Infinity Animations main component before your mod</span>. It harmonizes ANIMATE.ids file to make it usable by all mods and all games.</p>
+			<p style ="width: 100%;"><span style="color: #781808;">&#9755;</span> 2. <span style="color: #781808;">Never overwrite ANIMATE.ids file.</span></p>
+			<p style ="width: 100%;"><span style="color: #781808;">&#9755;</span> 3. <span style="color: #781808;">Rather use the procedure described in the following chapters to add your new animations.</span></p>
+		</div>
+
+		<p>
+			&#x26A0;&#xFE0F; Note that these instructions are also available for ANISND.ids file.
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; ANIMATE.ids file</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ======================== C l a s s i c ======================== -->
+	  <a name="adding_classic" id="adding_classic"></a>
+	  <div class="content">
+
+		<h2>Claiming and Adding new Animation slots (classic game)</h2><br>
+
+		<p>
+			If you'd like to add your own animation to the game, please take the time to read and follow the guidelines outlined in the <a href="ia_reference_picker_readme.html#adding">Adding an Animation Entry</a> section of the IA Reference Picker documentation. The process is very simple and should not take more than a few minutes. If everyone (that includes you) can stick to these guidelines, moderation or approval of claims will not be required.
+		</p>
+		<p>
+			If you've read and understood these guidelines and feel your claim qualifies, read on in the next section.
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; Claiming and Adding new Animation slots (classic game)</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ====================== A d d i n g _ E E ====================== -->
+	  <a name="adding_ee" id="adding_ee"></a>
+	  <div class="content">
+
+		<h2>Adding new Animation slots in EE Games</h2><br>
+
+		<p>
+			Adding new animations in EE games is a little bit easier than the process described above. And most importantly, it does not require Infinity Animations to be installed. &#128521;
+		</p><br>
+			
+		<p>
+			&#x26A0;&#xFE0F; <strong>If your mod is also designed to be installed in a classic game, start by registering your animation with the IA Reference Picker tool as described in the section above.</strong>
+		</p><br>
+
+		<hr style="width: 90%" /><br>
+
+		<p style="font-size: 130%;"><strong>1. Choose the appropriate animation slot type</strong></p>
+
+		<p style="margin-top:2%;">
+			At this point you should be <strong>absolutely certain</strong> of the type of slot you need for your animation. Consult the <a href="ia_reference_picker_readme.html#ref">Animations reference chart</a> if in doubt.
+		</p>
+
+		<p>
+			Once your bam files are built, go to next step.
+		</p><br>
+
+		<hr style="width: 90%;" /></br>
+
+		<p style="font-size: 130%;"><strong>2. Implement your slot in the game</strong></p>
+
+		<p style="margin-top:2%;">
+			The easiest way is to use the procedure developed to install Infinity Animations in a EE game. To do this, you will need the following functions libraries:
+		</p>
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">INCLUDE</span> <span style="color: #C00040">~%MOD_FOLDER%/lib/a7_functions.tpa~</span>
+<span style="color: green;">INCLUDE</span> <span style="color: #C00040">~%MOD_FOLDER%/lib/gw_functions_ee.tpa~</span></pre>
+			</p>
+		</div>
+
+		<p>with</p>
+		<ul>
+			<li><span class="tp2" style="color: #781808;">a7_functions.tpa</span>: Argent77's functions library to install new animations slots into ANIMATE.ids (big thanks to him!)</li>
+			<li><span class="tp2" style="color: #781808;">gw_functions_ee.tpa</span>: list of macros and functions dealing with installing animation slots in EE games.</li>
+			<li><span class="tp2" style="color: #781808;">gw_ee_compat_arrays.tph</span>: library of arrays used to add and install new creature animations (slots, bam, wav files...).</li>
+		</ul><br>
+
+		<p>
+			How does it work?
+		</p>
+		<p>
+			It is pretty simple. IA WeiDU function <span class="tp2" style="color: #C00040;">GW_FIND_FREE_ANIM_SLOT</span> looks for the first available animation slot matching a given animation type, defined in "<em>GW_anim_slots_ee</em>" array.
+		</p>
+
+		<div style="margin: 10px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; margin-top: 20px; padding: 6px;">
+			<div class="quotetitle">
+				<em>&nbsp;&nbsp;&#x25BA; Function <span class="tp2" style="color: #C00040;">GW_FIND_FREE_ANIM_SLOT</span> (defined in gw_functions_ee.tpa library) and <span class="tp2" style="color: #781808;">GW_anim_slots_ee</span> array (defined in gw_ee_compat_arrays.tph library)</em>:
+				<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+				onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+			</div>
+			<div class="quotecontent">
+				<div style="display: none;">
+					<div class="important" style="background-color: #F1F1F1;">
+						<p><pre style="padding-left: 2%;">
+/* ================================================================================================================================================ *
+ *  FUNCTION GW_FIND_FREE_ANIM_SLOT : LOOKS for the first available animation slot matching a given animation type.                                 *
+ *                                    RECHERCHE le premier slot d'animation disponible selon le format de l'animation.                              *
+ * ------------------------------------------------------------------------------------------------------------------------------------------------ *
+ *  Returns the first available creature animation slot in the range matching its type defined by %GWFormatAnim%.                                   *
+ *  Original function courtesy of Argent77 - Modified by Gwendolyne to make Infinity Animations installation compatible with EE games.              *
+ * ------------------------------------------------------------------------------------------------------------------------------------------------ *
+ *  INT_VAR GWSlotFound  = Used internally to stop the function when a slot is found (DON'T MODIFY IT!).                                            *
+ *  STR_VAR GWFormatAnim = A slots range defined in GW_anim_slots_ee array (built in gw_ee_compat_arrays.tph).                                      *
+ *                         Each slots range is defined with the lowest and highest available creature animation slots matching its animation type.  *
+ *                         The array also defines how many slots to skip after each iteration, starting from the lowest one.                        *
+ *  RET slot             = Free animation slot found. Returns -1 if none found.                                                                     *
+ * ================================================================================================================================================ */
+
+<span style="color: green;">DEFINE_ACTION_FUNCTION</span> <span style="color: #C00040">~GW_FIND_FREE_ANIM_SLOT~</span>
+    <span style="color: blue;">INT_VAR</span> GWSlotFound  <span style="color: purple;">= 0</span>
+    <span style="color: blue;">STR_VAR</span> GWFormatAnim <span style="color: purple;">=</span> <span style="color: #C00040">""</span>
+    <span style="color: blue;">RET</span>     slot
+<span style="color: blue;">BEGIN</span>
+
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span><span style="color: #C00040">"%GWFormatAnim%"</span> <span style="color: purple;">STR_CMP</span> <span style="color: #C00040">""</span><span style="color: purple;">)</span> <span style="color: blue;">BEGIN</span>
+
+        <span style="color: green;">ACTION_PHP_EACH</span> GW_anim_slots_ee <span style="color: blue;">AS</span> slots => GW_slot <span style="color: blue;">BEGIN</span>
+
+           <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>GWSlotFound <span style="color: purple;">= 0)</span> <span style="color: blue;">BEGIN</span>
+
+                <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span><span style="color: #C00040">"%slots_0%"</span> <span style="color: purple;">STR_EQ</span> <span style="color: #C00040">"%GWFormatAnim%"</span><span style="color: purple;">) OR (</span><span style="color: #C00040">"%GW_slot%"</span> <span style="color: purple;">STR_EQ</span> <span style="color: #C00040">"%GWFormatAnim%"</span><span style="color: purple;">)</span> <span style="color: blue;">BEGIN</span>
+
+                    <span style="color: green;">OUTER_SET</span> GW_slotMin <span style="color: purple;">= %</span>slots_1<span style="color: purple;">%</span>
+                    <span style="color: green;">OUTER_SET</span> GW_slotMax <span style="color: purple;">= %</span>slots_4<span style="color: purple;">%</span>
+                    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span><span style="color: purple;">%</span>slots_3<span style="color: purple;">% > 0)</span> <span style="color: blue;">BEGIN</span>
+                        <span style="color: green;">OUTER_SET</span> GW_iter <span style="color: purple;">= (</span>GW_slotMax - GW_slotMin<span style="color: purple;">) / %</span>slots_3<span style="color: purple;">%</span>
+                        // Looping through iterations between GW_slotMin and GW_slotMax
+                        <span style="color: green;">OUTER_FOR</span> <span style="color: purple;">(</span>i <span style="color: purple;">= 0</span> ; i <span style="color: purple;">&#x3c;=</span> GW_iter ; ++i<span style="color: purple;">)</span> <span style="color: blue;">BEGIN</span>
+                            <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>GWSlotFound <span style="color: purple;">= 0)</span> <span style="color: blue;">BEGIN</span>
+                                <span style="color: green;">OUTER_SET</span> slotMin <span style="color: purple;">=</span> GW_slotMin <span style="color: purple;">+ (</span>i <span style="color: purple;">* %</span>slots_3<span style="color: purple;">%</span>)
+                                <span style="color: green;">OUTER_SET</span> slotMax <span style="color: purple;">=</span> slotMin <span style="color: purple;">+ %</span>slots_2<span style="color: purple;">%</span>
+                                <span style="color: blue;">LAF</span> <span style="color: #C00040">~FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">INT_VAR</span> slotMin slotMax <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+                                <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span><span style="color: #C00040">"%slot%"</span> >= <span style="color: purple;">0)</span> <span style="color: blue;">BEGIN</span>
+                                    <span style="color: green;">OUTER_SET</span> GWSlotFound <span style="color: purple;">= 1</span>
+                                <span style="color: blue;">END</span>
+                            <span style="color: blue;">END</span>
+                        <span style="color: blue;">END</span> // of Looping through iterations between GW_slotMin and GW_slotMax
+                    <span style="color: blue;">END ELSE BEGIN</span>
+                        <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>GWSlotFound <span style="color: purple;">= 0)</span> <span style="color: blue;">BEGIN</span>
+                            <span style="color: blue;">LAF</span> <span style="color: #C00040">~FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">INT_VAR</span> slotMin = GW_slotMin slotMax = GW_slotMax <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+                            <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span><span style="color: #C00040">"%slot%"</span> >= <span style="color: purple;">0)</span> <span style="color: blue;">BEGIN</span>
+                                <span style="color: green;">OUTER_SET</span> GWSlotFound <span style="color: purple;">= 1</span>
+                            <span style="color: blue;">END</span>
+                        <span style="color: blue;">END</span>
+                    <span style="color: blue;">END</span>
+
+                <span style="color: blue;">END</span> // ACTION_IF ("%slots_0%" STR_EQ "%GWFormatAnim%") OR ("%GW_slot%" STR_EQ "%GWFormatAnim%")
+
+            <span style="color: blue;">END</span>     // of ACTION_IF (GWSlotFound = 0)
+
+        <span style="color: blue;">END</span>         // of ACTION_PHP_EACH
+
+    <span style="color: blue;">END</span>             // of ACTION_IF ("%GWFormatAnim%" STR_CMP "")
+
+<span style="color: blue;">END</span>                 // of DEFINE_ACTION_FUNCTION</pre>
+						</p>
+					</div>
+					<div class="important" style="background-color: #F1F1F1;">
+						<p><pre style="padding-left: 2%;">
+/* =========================================================================================== *
+ *  ARRAY GW_anim_slots_ee : DEFINES available slots ranges matching each animation type.      *
+ * ------------------------------------------------------------------------------------------- *
+ *  Used by function GW_FIND_FREE_ANIM_SLOT to install new animation slots in EE games.        *
+ * ------------------------------------------------------------------------------------------- *
+ *  1st value = animation type.                                                                *
+ *  2nd value = lowest available creature animation slot for this animation type.              *
+ *  3rd value = how many slots to search inside each step.                                     *
+ *  4th value = how many slots to skip after each iteration, starting from the lowest one.     *
+ *  5th value = highest available creature animation slot for this animation type.             *
+ *  6th value = specific range to customize where to install new slots.                        *
+ * ------------------------------------------------------------------------------------------- *
+ *  Use: to install a BG1 SIMPLE MONSTER animation, you can                                    *
+ *   - Either choose the general 1st value label: BG1SM.                                       *
+ *   - Or choose a specific range: 1SM7100 will look for the first free available slot from    *
+ *     0x7110 to 0x7200, reading 2 slots every 0x10 step (0x7110, 0x7111, 0x7120, 0x7121...).  *
+ * =========================================================================================== */</pre>
+						</p>
+					</div><br>
+				</div>
+			</div>
+		</div><br>
+
+		<p>
+			When a slot is found, it is converted into hex value (function <span class="tp2" style="color: #C00040;">TO_HEX_NUMBER</span>) to append ANIMATE.ids file. This value is stored into <span class="tp2"><span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%GWNewAnim%~</span><span style="color: purple;">)</span></span> array used to rename its relative .ini files.
+		</p><br>
+
+		<hr style="width: 90%; height: 1px; border: 0;" /></br>
+
+		<p>
+			What better than an example to transcribe this code in the tp2 installer? &#128521;
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+/* --------------------------------------------------------- *
+ *  BGII SPLIT (EE: monster, split_bams=1): 0x7300 - 0x7f00  *
+ * --------------------------------------------------------- */
+
+<span style="color: green;">ACTION_FOR_EACH</span> GWNewAnim <span style="color: blue;">IN</span> <span style="color: #C00040">~DAO~ ~DAO_LEGS~ ~EFREETI_LEGS~ ~JANNI~ ~JANNI_LEGS~ ~MARID~ ~MARID_LEGS~</span> <span style="color: blue;">BEGIN</span>
+    <span style="color: green;">SILENT</span>
+    <span style="color: blue;">LAF</span> <span style="color: #C00040">~GW_FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">STR_VAR</span> GWFormatAnim <span style="color: purple;">=</span> BG2SPLIT <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: green;">WARN</span> <span style="color: purple;">@1141</span>  <span class="comment">// ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~</span>
+    <span style="color: blue;">END ELSE BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~TO_HEX_NUMBER~</span> <span style="color: blue;">INT_VAR</span> value <span style="color: purple;">=</span> slot minDigits <span style="color: purple;">= 4</span> <span style="color: blue;">RET</span> hexNumber <span style="color: blue;">END</span>
+        <span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0x%hexNumber% %GWNewAnim%~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~%GWNewAnim%~</span>
+        <span style="color: green;">OUTER_SPRINT</span> <span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%GWNewAnim%~</span><span style="color: purple;">)</span> <span style="color: red;">EVAL</span> <span style="color: #C00040">"%hexNumber%"</span>
+        <span style="color: green;">CLEAR_IDS_MAP</span>
+    <span style="color: blue;">END</span>
+<span style="color: blue;">END</span>
+
+/* -------------------------------------------- *
+ *  IWD (EE monster_icewind): 0xe000 --> 0xefff *
+ * -------------------------------------------- */
+
+<span style="color: green;">ACTION_FOR_EACH</span> GWNewAnim <span style="color: blue;">IN</span> <span style="color: #C00040">~BOVINE_AXE_THING~</span> <span style="color: blue;">BEGIN</span>
+    <span style="color: green;">SILENT</span>
+    <span class="comment">// 1. First, we try to install it closer to 0xe070 MINOTAUR</span>
+    <span style="color: blue;">LAF</span> <span style="color: #C00040">~FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">INT_VAR</span> slotMin <span style="color: purple;">= 0xe070</span> slotMax <span style="color: purple;">= 0xe080</span> <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+    <span class="comment">// 2. If no free slot found, we install it in the first free available slot</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~GW_FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">STR_VAR</span> GWFormatAnim <span style="color: purple;">=</span> IWD <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+        <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: green;">WARN</span> <span style="color: purple;">@1141</span>  <span class="comment">// ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~</span>
+        <span style="color: blue;">END</span>
+    <span style="color: blue;">END</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&gt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~TO_HEX_NUMBER~</span> <span style="color: blue;">INT_VAR</span> value <span style="color: purple;">=</span> slot minDigits <span style="color: purple;">= 4</span> <span style="color: blue;">RET</span> hexNumber <span style="color: blue;">END</span>
+        <span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0x%hexNumber% %GWNewAnim%~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~%GWNewAnim%~</span>
+        <span style="color: green;">OUTER_SPRINT</span> <span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%GWNewAnim%~</span><span style="color: purple;">)</span> <span style="color: red;">EVAL</span> <span style="color: #C00040">"%hexNumber%"</span>
+        <span style="color: green;">CLEAR_IDS_MAP</span>
+    <span style="color: blue;">END</span>
+<span style="color: blue;">END</span>
+
+<span style="color: green;">ACTION_FOR_EACH</span> GWNewAnim <span style="color: blue;">IN</span> <span style="color: #C00040">~MARILITH_DARK~</span> <span style="color: blue;">BEGIN</span>
+    <span style="color: green;">SILENT</span>
+    <span class="comment">// 1. First, we try to install it closer to 0xe090 MARILITH</span>
+    <span style="color: blue;">LAF</span> <span style="color: #C00040">~FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">INT_VAR</span> slotMin <span style="color: purple;">= 0xe090</span> slotMax <span style="color: purple;">= 0xe0a0</span> <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+    <span class="comment">// 2. If no free slot found, we install it in the first free available slot</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~GW_FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">STR_VAR</span> GWFormatAnim <span style="color: purple;">=</span> IWD <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+        <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+            <span style="color: green;">WARN</span> <span style="color: purple;">@1141</span>
+        <span style="color: blue;">END</span>
+    <span style="color: blue;">END</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&gt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~TO_HEX_NUMBER~</span> <span style="color: blue;">INT_VAR</span> value <span style="color: purple;">=</span> slot minDigits <span style="color: purple;">= 4</span> <span style="color: blue;">RET</span> hexNumber <span style="color: blue;">END</span>
+        <span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0x%hexNumber% %GWNewAnim%~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~%GWNewAnim%~</span>
+        <span style="color: green;">OUTER_SPRINT</span> <span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%GWNewAnim%~</span><span style="color: purple;">)</span> <span style="color: red;">EVAL</span> <span style="color: #C00040">"%hexNumber%"</span>
+        <span style="color: green;">CLEAR_IDS_MAP</span>
+    <span style="color: blue;">END</span>
+<span style="color: blue;">END</span>
+
+<span style="color: green;">ACTION_FOR_EACH</span> GWNewAnim <span style="color: blue;">IN</span> <span style="color: #C00040">~BEETLE_BOMBARDIER_NWN~</span> <span style="color: blue;">BEGIN</span>
+    <span style="color: green;">SILENT</span>
+    <span class="comment">// 1. First, we try to install it closer to 0xe220 BEETLE_BOMBARDIER</span>
+    <span style="color: blue;">LAF</span> <span style="color: #C00040">~FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">INT_VAR</span> slotMin <span style="color: purple;">= 0xe220</span> slotMax <span style="color: purple;">= 0xe230</span> <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+    <span class="comment">// 2. If no free slot found, we install it in the first free available slot</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~GW_FIND_FREE_ANIM_SLOT~</span> <span style="color: blue;">STR_VAR</span> GWFormatAnim <span style="color: purple;">=</span> IWD <span style="color: blue;">RET</span> slot <span style="color: blue;">END</span>
+        <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&lt; 0)</span> <span style="color: blue;">BEGIN</span>
+            <span style="color: green;">WARN</span> <span style="color: purple;">@1141</span>
+        <span style="color: blue;">END</span>
+    <span style="color: blue;">END</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">(</span>slot <span style="color: purple;">&gt; 0)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: blue;">LAF</span> <span style="color: #C00040">~TO_HEX_NUMBER~</span> <span style="color: blue;">INT_VAR</span> value <span style="color: purple;">=</span> slot minDigits <span style="color: purple;">= 4</span> <span style="color: blue;">RET</span> hexNumber <span style="color: blue;">END</span>
+        <span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0x%hexNumber% %GWNewAnim%~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~%GWNewAnim%~</span>
+        <span style="color: green;">OUTER_SPRINT</span> <span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%GWNewAnim%~</span><span style="color: purple;">)</span> <span style="color: red;">EVAL</span> <span style="color: #C00040">"%hexNumber%"</span>
+        <span style="color: green;">CLEAR_IDS_MAP</span>
+    <span style="color: blue;">END</span>
+<span style="color: blue;">END</span> </pre>
+			</p>
+		</div><br>
+
+		<hr style="width: 90%;" /></br>
+
+		<p>
+			If you don't know how to set up the .INI file defining the parameters with which the engine will display your animation, please see the next chapter. Otherwise, next step is installing all files related to your animation(s), as explained in this <a href="#install">chapter</a>.
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; Adding new Animation slots in EE Games</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ==================== I n i   F i l e s ==================== -->
+	  <a name="ini_files" id="ini_files"></a>
+	  <div class="content">
+
+		<h2>Ini files Description</h2><br>
+
+		<p>
+			All settings relative to the way the engine displays creature animations in-game are stores in .INI files (one for each animation slot) whose names are the same as the animation slot ID (for example 1100.ini for the slot 0x1100).
+		</p>
+
+		<div style="margin: 10px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; margin-top: 20px; padding: 6px;">
+			<div class="quotetitle">
+				<em>&nbsp;&nbsp;&#x25BA; 1100.ini</em> :
+				<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+				onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+			</div>
+			<div class="quotecontent">
+				<div style="display: none; ">
+					<div class="important" style="background-color: #F1F1F1;">
+						<p><pre style="padding-left: 2%;">
+// MTAN tanarri
+
+[general]
+animation_type=1000
+move_scale=8
+ellipse=32
+color_blood=47
+color_chunks=255
+sound_freq=8
+personal_space=5
+cast_frame=4
+
+[monster_quadrant]
+caster=1
+extend_direction=1
+extend_direction_test=9
+false_color=0
+path_smooth=0
+quadrants=4
+resref=MTAN
+
+[sounds]
+attack=tanar04,blank,blank
+attack_frame=0,0,0
+awake=
+awake_frame=0
+cast=
+cast_frame=0
+conjure=
+conjure_frame=0
+damage=tanar06
+damage_frame=0
+die=tanar07a
+die_frame=0
+head_turn=
+head_turn_frame=0
+ready=
+ready_frame=0
+shoot=
+shoot_frame=0
+twitch=
+twitch_frame=0
+walk=
+walk_frame=0
+attack_slash=tanar03,blank,blank
+attack_slash_frame=0,0,0
+attack_backslash=tanar03,blank,blank
+attack_backslash_frame=0,0,0
+attack_jab=tanar04,blank,blank
+attack_jab_frame=0,0,0
+emerge=
+emerge_frame=0
+hide=
+hide_frame=0
+sleep=
+sleep_frame=0
+battle_cry=tanar01a,tanar02a
+battle_cry_frame=0,0
+selection=tanar01a
+selection_frame=0
+fall=fal_03b
+fall_frame=0 </pre>
+						</p>
+					</div><br>
+				</div>
+			</div>
+		</div><br>
+
+		<p>
+			Each .INI file contains three sections, described below: [general], [animation] and [sounds] sections.
+		</p><br>
+
+		<hr style="width: 90%; " /><br>
+
+		<h2><span class="com">[general]</span>General animation settings</h2><br>
+
+		<p>
+			This section lists all global settings needed to display the animation, regardless of its type.
+		</p><br>
+
+		<table style="margin-left: 80px; width: 90%; padding: 10px;" summary="ini files options list">
+			<tr style="font-size: 125%; line-height: 300%;">
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5;">Variable</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5;">Description</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5;">Available values</th>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center;"><a name="anim_type" id="anim_type"></a><strong><span style="color: #781808;">animation_type</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px">As its name suggests, this is the animation type that will be displayed by the engine.<br>
+				Below are their matching type names in IA for classic games:
+				  <ul style="margin-left: -1%; margin-right: 40px">
+					<li style="margin-right: -10%">1000 = BGI MONSTER LONG 4 PARTS without extend directions, BGII SPLIT 4 PARTS (0x13nn slots).</li>
+					<li style="margin-right: -10%">1100 = BGI MONSTER LONG 4 PARTS with extend directions.</li>
+					<li style="margin-right: -10%">1200 = DRAGON 9 PARTS.</li>
+					<li style="margin-right: -10%">2000 = BGI SIMPLE CASTER BOW, BGI SIMPLE CASTER SWORD and BGI SIMPLE CASTER.</li>
+					<li style="margin-right: -10%">3000 = ANKHEG.</li>
+					<li style="margin-right: -10%">5000 = CHARACTER BGII.</li>
+					<li style="margin-right: -10%">6000 = CHARACTER BGII and CHARACTER BGI.</li>
+					<li style="margin-right: -10%">7000 = BG1 SIMPLE MONSTER, BGII SPLIT and BGII UNSPLIT EXT.</li>
+					<li style="margin-right: -10%">8000 = BGI SIMP. MONST (paletted).</li>
+					<li style="margin-right: -10%">9000 = BGI MONSTER LONG (paletted).</li>
+					<li style="margin-right: -10%">a000 = BGI MONSTER LONG</li>
+					<li style="margin-right: -10%">e000 = IWD.</li>
+				  </ul></td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">
+				  0000 = effect<br>
+				  1000 = monster_quadrant, multi_new<br>
+				  1100 = monster_quadrant<br>
+				  1200 = multi_new<br>
+				  2000 = monster_layered<br>
+				  3000 = monster_ankheg<br>
+				  4000 = town_static<br>
+				  5000 = character<br>
+				  6000 = character, character_old<br>
+				  7000 = monster_old, monster<br>
+				  8000 = monster_layered<br>
+				  9000 = monster_large<br>
+				  a000 = monster_large16<br>
+				  b000 = ambient_static<br>
+				  c000 = ambient<br>
+				  d000 = flying<br>
+				  e000 = monster_icewind</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">move_scale</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Animation base movement speed. Default speed for characters is 9.<br>
+				Note: PST:EE uses floating point notation.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer or Float</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">ellipse</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Creature selection circle radius. Default size for humanoid creatures is 16.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">color_blood</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Just what it means. &#128521;<br>
+				However, blood always uses the left-most color of each Color palette lookup index, so most of them end up being indistinguishable in-game.<br>
+				Most of the good ones for blood are in the 45-60 and 115-150 ranges.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Any integer from 0 to 255</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">color_chunks</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether the animation can chunk or not (used for example in EFFECT_EXPLODINGDEATH).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = Yes [default]</span><br>
+				  255 = No (such as trolls)</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">sound_freq</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Sounds frequency. Most of animations are set in under 10.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Any integer from 0 to 255</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">personal_space</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Controls how creatures interact with the game world and can move through passages and doorways. Most are 3, dragons are 13.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Any integer from 0 to 255</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">cast_frame</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">todo.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">brightest</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Blending mode (passed directly to the renderer).
+				  <ul style="margin-left: -1%; margin-right: 40px">
+					<li style="margin-right: -10%">srcFactor = GL_ONE_MINUS_DST_COLOR</li>
+					<li style="margin-right: -10%">destFactor = GL_ONE</li>
+				  </ul>
+				  Note: if <span class="tp2">brightest=1</span> and <span class="tp2">multiply_blend=1</span>, then
+				  <ul style="margin-left: -1%; margin-right: 40px">
+					<li style="margin-right: -10%">srcFactor = GL_SRC_COLOR</li>
+					<li style="margin-right: -10%">destFactor = GL_ONE</li>
+				  </ul></td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">multiply_blend</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Blending mode (passed directly to the renderer).
+				  <ul style="margin-left: -1%; margin-right: 40px">
+					<li style="margin-right: -10%">srcFactor = GL_DST_COLOR</li>
+					<li style="margin-right: -10%">destFactor = GL_ONE</li>
+				  </ul>
+				Note: often used with a <a href="glow_layer"><span style="font-weight: normal;">glow_layer</span></a> bam files set.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">light_source</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether certain tinting effects (e.g. environmental lighting) are disabled or not.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><a name="new_palette" id="new_palette"></a><strong><span style="color: #781808;">new_palette</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Refers to a BMP file with an external palette that modifies the animation BAM files colors.<br>
+				For example, MWLF_WI.BMP palette overwrites the MWLF bam files palettes to display winter wolf animation.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">height_offset</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Used to calculate the top of the bounding box for certain effects, such as the health bar, blood splatter, etc.<br>
+				Note: seems to be only used in BG:EE and SoD games...</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">combat_round_n</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">A pseudo-image (BMP file) which defines attack pattern.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><a name="glow_layer" id="glow_layer"></a><strong><span style="color: #781808;">glow_layer</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Refers to a BAM prefix acting as background layer for glowing sprites (used by solars and planetars animations).<br>
+				Note: This options is currently defined in the wrong INI section. To be effective it should be defined in the [monster] section of type 7000 animations.<br>
+				In addition, it looks like it hasn't been fully implemented and doesn't seem to be applied to the weapon overlay. And it doesn't work correctly with unsplit animation schemes (<span class="tp2">split_bams=0</span>).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">walk_sound</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">The sound clip series used to play creature walking sound.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+		</table><br><br>
+
+		<hr style="width: 90%; " /><br>
+
+		<h2><span class="com">[Specific animation]</span>Specific animation type settings</h2><br>
+
+		<p>
+			This section lists all settings related to the animation type. Replace <em>Specific animation</em> in square brackets with the animation type name matching the <a href="#anim_type"><span style="font-weight: normal;">animation_type variable</span></a>.
+		</p><br>
+
+		<table style="margin-left: 80px; width: 90%; padding: 10px;" summary="ini files options list">
+			<tr style="font-size: 125%; line-height: 300%;">
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5;">Variable</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5;">Description</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5;" WIDTH=230>Available values</th>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><a name="armor_max_code" id="armor_max_code"></a><strong><span style="color: #781808;">armor_max_code</span></strong><br><br>
+				(character and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Maximum armor level a character can equip.<br>
+				It's basically set to 4 for all the characters except for the monk who has it set to 1.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">
+				  1 = No Armor<br>
+				  2 = Leather / Studded leather<br>
+				  3 = Chain Mail<br>
+				  4 = Plate</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">caster</span></strong><br><br>
+				(monster_layered animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether A2/A3 sequences are (also) used as CA/SP (overridden by weapon overlay definitions) or not.<br>
+				Note below to be confirmed<br>
+				- monster_quadrant: whether A3 sequence is used as CA.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">can_lie_down</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether the creature animation displays frames when it falls down when dead/unconscious (Used by Death and Sleep animations).<br>
+				Note: Doesn't appear to be related to animation display.<br>
+				Quote from Bubb: "<em>When a creature is being created and normally 'gets up', (like in summons), determines whether it immediately assigns to its self-reporting list, or LIST_BACK (when <span class="tp2">can_lie_down=1</span>). I didn't see a direct link to animation sequences, but maybe I missed some connection.</em>"</td> 
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">detected_by_infravision</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether the creature is detected by infravision or not: a red tint is applied when detected by infravision.<br>
+				For example, undead creatures are not detected by infravision.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">double_blit</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Unknown effect: Possibly a performance setting in the original games.<br>
+				Note: Apparently unused (only used by 0x6400 drizzt), but should probably always be set to 0.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">mirror</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether eastern directions are calculated or not.<br>
+				Note: Apparently unused (only used by 0x3001 neothelid), but should probably always be set to 0 (eastern directions are taken from xxxE BAMs).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">extend_direction</span></strong><br><br>
+				(monster_quadrant and monster_ankheg animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether the bam files need mirrored directions.<br>
+				By default ('No'), the engine automatically mirrors directions. Otherwise eastern directions are available as xxxE-BAMs.<br>
+				monster_ankheg type: Number of available directions per sequence (e.g. 5 for ankhegs).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">extend_direction_test</span></strong><br><br>
+				(monster_quadrant animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">The number of directions needed in each set of bam files.<br>
+				Quote from Bubb: "<em>When sprite mirroring is enabled / direction is being extended, determines how many valid directions the base vidcell holds.</em>"</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">9 (when set) or 8 (neothelid)</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">false_color</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether animation uses palette replacement of individual color ranges (see color fields in CRE resource or color-related opcodes) or not.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">invulnerable</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Indicates whether creature is invulnerable by default (e.g. child animations).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">list_type</span></strong><br><br>
+				(ambient animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Used internally by the engine.<br>
+				2 means "flying": not detected by infravision, WK transforms to SC, many hardcoded exceptions (including polymorph, pathfinding, etc.).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer [0,1,2]</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">path_smooth</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Pathfinding settings.<br>
+				Note that <span class="tp2">path_smooth=1</span> is not well documented (probably uses as many angles as directions available).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = uses only 45 degrees angles</span><br>
+				  1 = uses arbitrary angles</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">quadrants</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">The number of segments the animation has been split into.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">equip_helmet</span></strong><br><br>
+				(character and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether helmet overlays are drawn or not.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><a name="height_code" id="height_code"></a><strong><span style="color: #781808;">height_code</span></strong><br><br>
+				(character and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Weapons animations bam prefix ("WQL", "WQM", "WQN", "WQS", "WPL", "WPM" or "WPS").<br>
+				Fallback option if height_code_helmet or height_code_shield are not defined</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">height_code_helmet</span></strong><br><br>
+				(character and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Same as above, but for the helmets animations.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">height_code_shield</span></strong><br><br>
+				(character animation animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Same as above, but for the shields animations.<br>
+				Note: WQH does not seem to exist...</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><a name="resref" id="resref"></a><strong><span style="color: #781808;">resref</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Animation base name, i.e BAM files prefix (MDEM, MTRO...).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">shadow</span></strong><br><br>
+				(effect and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">
+				  <ul style="margin-left: -1%; margin-right: 40px">
+					<li style="margin-right: -10%">effect: a separate shadow BAM resref.</li>
+					<li style="margin-right: -10%">character_old: changes default shadow from "CSHD" to what is provided. The Sarevok animation uses hardcoded resref "SSHD".</li>
+				  </ul></td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">split_bams</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether the bam files are split or not.<br>
+				Note: if <span class="tp2">split_bams=0</span>, animations are packed in G1-G2 bam files.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes (animations are spread over various subfiles)</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">translucent</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Whether animation is semi-transparent or not.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">resref_weapon1</span></strong><br><br>
+				(monster_layered animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Which weapon animation bam suffix to use (main hand).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String (MS, S1, SS)</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">resref_weapon2</span></strong><br><br>
+				(monster_layered animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Which weapon animation bam suffix to use (offhand).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String (BW, HB)</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">dual_attack</span></strong><br><br>
+				(monster_layered animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">To be confirmed<br>
+				When set: SEQ_SHOOT transforms into SEQ_READY, A3 has a chance to use A1 instead (according to Bubb).</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">weapon_left_handk</span></strong><br><br>
+				(monster_icewind animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Propagated, but apparently unused in EE games.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">resref_paperdoll</span></strong></td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">BAM files prefix for inventory paperdoll graphics (CHMC, CHMF...).<br>
+				Scheme: [resref_paperdoll][armor_level]INV.BAM</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">resref_armor_base</span></strong><br><br>
+				(character and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">This is the 4th character in <a href="#resref"><span style="font-weight: normal;">resref animation filename prefix</span></a>.<br>
+				'B' for cleric and fighter, 'M' for monk, 'T' for thief, 'W' for wizard.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">single character</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">resref_armor_specific</span></strong><br><br>
+				(character and character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Used when the armor code is equal to <a href="#armor_max_code"><span style="font-weight: normal;">armor_max_code</span></a>.<br>
+				Usually it is the same character as resref_armor_base, except for clerics and fighters that share the same <a href="#resref"><span style="font-weight: normal;">resref</span></a> value.<br>
+				While equipped with armors lighter than plate, they use the same animation files; but when they equip a plate, their animation are different.<br>
+				In this case, a human cleric male and a human fighter male will use the same CHMB prefix bam files series when equipped with the three first armor levels (no armor, leather and chain), but when equipped with a plate, the cleric will use the CHMC bam series and the fighter the CHMF series.<br>
+				'C' for cleric, 'F' for fighter, 'M' for monk, 'T' for thief, 'W' for wizard.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">single character</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">hide_weapons</span></strong><br><br>
+				(character_old animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Used by animations without <a href="#height_code"><span style="font-weight: normal;">height_code</span></a> variable; i.e. their weapons animations are part of their main animation (resref BAM. files). [0x6400 UDRZ drizzt, 0x6401 UELM elminster and 0x6404 USAR sarevok]<br>
+				0: draw separate weapon overlay - 1: do not draw weapon overlays</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">palette1</span></strong><br><br>
+				(monster animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Refers to a BMP file, a palette replacement for xxxG1 (unsplit) or xxxG1x (split) BAMs.<br>
+				Note: usually the same as <a href="#new_palette"><span style="font-weight: normal;">new_palette</span></a> resref.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">palette2</span></strong><br><br>
+				(monster animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Refers to a BMP file, a replacement for xxxG2 (unsplit) or xxxG2x (split) BAMs.<br>
+				Note: usually named with same pattern as the same as <span style="font-weight: normal;">palette1</span>; i.e. if palette1 is MPAL_CL1, then palette2 is MPAL_CL2.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">String</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">random_render</span></strong><br><br>
+				(effect animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Indicates whether to select a random cycle at spawn or not.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Boolean:<br><br>
+				  <span style="color: #781808;">0 = No [default]</span><br>
+				  1 = Yes</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px;"><strong><span style="color: #781808;">delta_z</span></strong><br><br>
+				(effect animations only)</td>
+				<td style="border: 1px solid #781808; padding-left:5px; padding-right:5px; padding-top:20px; padding-bottom:20px;">Determines how fast certain hardcoded effects move on the (fake) z-axis.</td>
+				<td style="border: 1px solid #781808; padding-left:20px; padding-top:20px; padding-bottom:20px;">Integer</td>
+			</tr>
+		</table><br><br>
+
+		<hr style="width: 90%; " /><br>
+
+		<h2><span class="com">[sounds]</span>Sound clips settings</h2><br>
+
+		<p>
+			<strong><span style="color: #781808;">&#9755;</span></strong> Unlike classic games, EE games don't store sounds assigned to a given animation in a .2DA file, but in its .INI file.
+		</p>
+
+		<p>
+			<strong><span style="color: #781808;">&#9755;</span></strong> &#x26A0;&#xFE0F; Please note that all animations Mxxx.2DA files are not used by the EE engine.
+		</p><br>
+
+		<p>
+			You can use one of the existing ones (e.g. 1100.INI) as a template:
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+[sounds]
+attack=tanar04,blank,blank
+attack_frame=0,0,0
+awake=
+awake_frame=0
+cast=
+cast_frame=0
+conjure=
+conjure_frame=0
+damage=tanar06
+damage_frame=0
+die=tanar07a
+die_frame=0
+head_turn=
+head_turn_frame=0
+ready=
+ready_frame=0
+shoot=
+shoot_frame=0
+twitch=
+twitch_frame=0
+walk=
+walk_frame=0
+attack_slash=tanar03,blank,blank
+attack_slash_frame=0,0,0
+attack_backslash=tanar03,blank,blank
+attack_backslash_frame=0,0,0
+attack_jab=tanar04,blank,blank
+attack_jab_frame=0,0,0
+emerge=
+emerge_frame=0
+hide=
+hide_frame=0
+sleep=
+sleep_frame=0
+battle_cry=tanar01a,tanar02a
+battle_cry_frame=0,0
+selection=tanar01a
+selection_frame=0
+fall=fal_03b
+fall_frame=0 </pre>
+			</p>
+		</div><br>
+
+		<hr style="width: 90%; " /><br>
+
+		<p>
+			Next step is installing all files related to your animation(s).
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; ini files description</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ======================== I n s t a l l ======================== -->
+	  <a name="install" id="install"></a>
+	  <div class="content">
+
+		<h2>Installing new animations in games</h2><br>
+
+		<p style="font-size: 130%;"><strong>1. Copying new animations to the game</strong></p>
+
+		<p style="margin-top:2%;">
+			To do this, you are strongly recommended to store the animation .bam files in a separate directory, for example &#x1F4C1; bam/cre,  in which you create a subdirectory for each animation, which you copy to the &#x1F4C1; override folder:
+ 		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">ACTION_FOR_EACH</span> animation <span style="color: blue;">IN</span> <span style="color: #C00040">~animation1~ ~animation2~ ~animation3~</span> ... <span style="color: blue;">BEGIN</span>
+
+    <span style="color: green;">ACTION_BASH_FOR</span> <span style="color: #C00040">~%MOD_FOLDER%/bam/cre/%animation%~ ~^.+\.bam$~</span> <span style="color: blue;">BEGIN</span>
+
+        <span class="comment">// We copy only the files we do need.</span>
+        <span style="color: green;">ACTION_IF</span> <span style="color: purple;">NOT FILE_EXISTS_IN_GAME</span> <span style="color: #C00040">~%BASH_FOR_FILE%~</span> <span style="color: blue;">BEGIN</span>
+            <span style="color: green;">ACTION_TO_LOWER</span> <span style="color: purple;">%</span>BASH_FOR_FILE<span style="color: purple;">%</span>
+            <span style="color: green;">COPY_LARGE</span> <span style="color: #C00040">~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~</span>
+        <span style="color: blue;">END</span>
+
+    <span style="color: blue;">END</span>
+
+<span style="color: blue;">END</span> </pre>
+			</p>
+		</div><br>
+
+		<hr style="width: 90%;" /></br>
+
+		<p style="font-size: 130%;"><strong>2. Installing 2da files (classic games) or ini files defining general sprite values and soundsets (EE games)</strong></p>
+
+		<p style="margin-top:2%;">
+			If you want to provide a classic-EE games compatibility, it is better to store .2da and .ini files in two separate folders, for example &#x1F4C1; 2da/cre and &#x1F4C1; ini.
+		</p>
+
+		<p style="margin-top:2%;">
+			&#9888;&#65039; <strong><span style="color: #781808;">&#9755;</span> Note for EE games: </strong>Since the animation slot ID is unknown before its installation, and may depend on other animations installed by other mods before yours, here is a little trick that makes it easy to install .ini files. <strong>Assign to your animation.ini file the name of the animation registered in the ANIMATE.IDS file.</strong> For example dao.ini, dao_legs.ini, animation1.ini, animation2.ini... &#128521;
+		</p><br>
+
+		<hr style="width: 90%; height: 1px; border: 0;" /></br>
+
+		<p>
+			Then copy the .2da files into the override (classic game):
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">COPY</span> <span style="color: #C00040">~%MOD_FOLDER%/2da/cre~ ~override~</span> </pre>
+			</p>
+		</div><br>
+
+		<hr style="width: 90%; height: 1px; border: 0;" /></br>
+
+		<p>
+			As for .ini files (EE games), borrow the code written for Infinity Animations that uses the hex value defined with the ANIMATE.IDS appending process to automatically copy the corresponding .ini file with the right animation ID [<span class="tp2"><span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%GWNewAnim%~</span><span style="color: purple;">)</span></span>].
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">ACTION_BASH_FOR</span> <span style="color: #C00040">~%MOD_FOLDER%/ini~ ~^.+\.ini$~</span> <span style="color: blue;">BEGIN</span>
+
+    <span style="color: green;">OUTER_SPRINT</span> inifile <span style="color: red">EVAL</span> <span style="color: #C00040">"%BASH_FOR_RES%"</span>
+    <span style="color: green;">ACTION_TO_UPPER</span> inifile
+
+    <span class="comment">// Gives each new .ini file its right name (its animation slot index)</span>
+    <span style="color: green;">ACTION_IF</span> <span style="color: purple;">VARIABLE_IS_SET</span> <span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%inifile%~</span><span style="color: purple;">)</span> <span style="color: blue;">BEGIN</span>
+        <span style="color: green;">SILENT</span>
+        <span style="color: green;">OUTER_SPRINT</span> GW_nv_ini <span style="color: purple;">$</span>GWNewIni<span style="color: purple;">(</span><span style="color: #C00040">~%inifile%~</span><span style="color: purple;">)</span>
+        <span style="color: green;">COPY</span> <span style="color: #C00040">~%BASH_FOR_FILESPEC%~ ~override/%GW_nv_ini%.ini~</span>
+        <span style="color: green;">PRINT</span> <span style="color: purple;">@1121</span>  <span class="comment">// ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~</span>
+    <span style="color: blue;">END ELSE BEGIN</span>
+        <span style="color: green;">PRINT</span> <span style="color: purple;">@1122</span>  <span class="comment">// ~  ==> Animation %inifile%.ini file not installed.~</span>
+    <span style="color: blue;">END</span>
+
+<span style="color: blue;">END</span> </pre>
+			</p>
+		</div><br>
+
+		<hr style="width: 90%" /><br>
+
+		<p>
+			Congratulations, you have just claimed an animation entry, and installed a new creature animation! &#129346;
+		</p><br>
+
+		<p>
+			<span style="color: #781808;">&#10173;</span> On top of that, a mod template summarizing the whole procedure, which you can integrate into your code, is the "icing on the cake": You will find it in the &#x1F4C1; documentation/mymod folder. &#128541;
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; Installing new animations in games</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ================== U s e   n e w   s l o t s ================== -->
+	  <a name="use_slots" id="use_slots"></a>
+	  <div class="content">
+
+		<h2>Using new animation slots</h2><br>
+
+		<p style="font-size: 130%;"><strong>&#128078; Old school way: forget it!</strong></p>
+
+		<p style="margin-top:2%;">
+			Your new animation being installed, you just have to use it. To do this, you must assign it to a .CRE file, i.e. fill its animation field (0x28) with the value of the new animation slot.
+		</p>
+
+		<p>
+			To illustrate this, let's create a bald eagle as an animal companion for a ranger. Before the release of the Enhanced Edition games, it was very simple, by installing the creature like this:
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">COPY</span> <span style="color: #C00040">~%MOD_FOLDER%/cre/mycre.cre~ ~override~</span>
+    <span style="color: red;">WRITE_LONG</span> <span style="color: purple;">0x28 0x535D</span>  <span class="comment">// Animation ID (GW_BALD_EAGLE)</span>
+<span style="color: blue;">BUT_ONLY</span> </pre>
+			</p>
+		</div>
+
+		<p>
+			Et voilà !
+		</p>
+
+		<p>
+			<center><img src="images/bald_eagle.png" /></center>
+		</p><br>
+
+		<p>
+			Well, almost...
+		</p>
+		<p>
+			Why? Because, as explained in the above sections, new animations don't fill the same slots in original games as in EE games. This code would inevitably produce a CTD in a EE game. &#128534;
+		</p>
+		<p>
+			To install this creature in a EE game, you would have had to use the following code:
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">COPY</span> <span style="color: #C00040">~%MOD_FOLDER%/cre/mycre.cre~ ~override~</span>
+    <span style="color: red;">WRITE_LONG</span> <span style="color: purple;">0x28 0xE001</span>  <span class="comment">// Animation ID (GW_BALD_EAGLE)</span>
+<span style="color: blue;">BUT_ONLY</span> </pre>
+			</p>
+		</div>
+
+		<p>
+			<center><img src="images/bald_eagle_ee.png" /></center>
+		</p><br>
+
+		<p>
+			And again, this code would only work on your own installation: If another player had installed a mod adding a new IWD animation before yours, your eagle animation would have been installed in slot 0xE002 and your creature would be given the 0xE001 other mod's animation. &#128553;
+		</p><br>
+
+		<p>
+			So, how to provide perfect compatibility? It is very simple! &#128539;
+		</p><br>
+
+		<hr style="width: 90%;" /></br>
+
+		<p style="font-size: 130%;"><strong>&#128077; New way: 100% safe and compatible with both original and EE games</strong></p>
+
+		<p style="margin-top:2%;">
+			<span style="color: #781808;">&#10173;</span> Use the <acronym title="Weimer Dialogue Utility">WeiDU</acronym> <span class="tp2" style="color: purple;">IDS_OF_SYMBOL</span> command  which will automatically look up the index of an animation slot in the ANIMATE.IDS file.
+		</p>
+
+		<p>
+			Moreover, it has the advantage of not requiring the use of <span class="tp2" style="color: blue">IF <span style="color: purple;">GAME_IS</span> <span style="color: #C00040">~~</span> BEGIN</span> conditions.
+		</p><br>
+
+		<p>
+			Thus, the following code will fill mycre.cre with 0x535D animation slot in a classic game and the slot defined by <span class="tp2" style="color: #C00040">GW_FIND_FREE_ANIM_SLOT</span> function in a EE game:
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">COPY</span> <span style="color: #C00040">~%MOD_FOLDER%/cre/mycre.cre~ ~override~</span>
+    <span style="color: red;">WRITE_LONG</span> <span style="color: purple;">0x28 IDS_OF_SYMBOL (</span>animate <span style="color: #C00040">~GW_BALD_EAGLE~</span><span style="color: purple;">)</span>  <span class="comment">// Animation ID (GW_BALD_EAGLE) : original 0x535D - EE 0xE001</span>
+<span style="color: blue;">BUT_ONLY</span> </pre>
+			</p>
+		</div>
+
+		<p>
+			This is the simplest and most convenient method used by Infinity Animations mod to be easily installed on all BG based games.
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; Using new animation slots</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ==================== U p d a t e   M o d s ==================== -->
+	  <a name="adding" id="update_mods"></a>
+	  <div class="content">
+
+		<h2>Updating old mods</h2><br>
+
+		<p>
+			As explained in the mod's readme, in a perfect world, Infinity Animations would be installed as a central hub that would be usable by anyone who would like to add animation entries to the game without being bogged down by issues of mod conflicts and incompatibilities.
+		</p>
+		<p>
+			Unfortunately, since it was designed a long time after the first mega-mods generation that were overwriting game files, in particular to resolve animation conflicts and restore standard animations that mega-mods have overwritten; it needs to be installed after those mega-mods, at least until their authors will update them to benefit from Infinity Animations content...
+		</p>
+		<p>
+			While waiting for the wonderful day when Infinity Animations will be able to devote itself to its first vocation and not have to solve mods compatibility issues and conflicts, here are a few tips to adapt your mod to the new AI version. Don't worry, it is not very complicated if you are not the author of a mega-mod!
+		</p><br>
+
+		<hr style="width: 90%" /><br>
+
+		<p style="font-size: 130%;"><strong>Avoid bad practices</strong></p>
+
+		<p style="margin-top:2%;">
+			First of all, let's make a detailed assessment of the bad practices that Infinity Animations is striving to correct and that should be avoided at any cost.
+ 		</p>
+
+		<p>
+			The following points should be avoided if you do not want to suffer the wrath of other modders, and players who will not hesitate to point out that your mod ruins their installation: 
+		</p>
+		<ul style="margin-left: 5%; list-style-type:none;">
+			<li style="margin-right:-1%;"><strong><span style="color: #781808;">1. Do not install Infinity Animations if it is not detected.</span></strong><br>
+			Some mods automatically install the pre-requisite mods they need to work properly. While this isn't a problem with TobEx, it can be problematic with mods like Infinity Animations, which will be once again actively maintained. If you want to be definitively convinced, please read the literature about the difficulty of making 1PP v4.2.0 cohabit with Item and Spell Revisions which install by default a few components of 1PP v3.<br><br></li>
+			<li style="margin-right:-1%;"><strong><span style="color: #781808;">2. Don't use any "<em>biffing</em>" routines.</span></strong><br>
+			This practice was common in the early 2000s, as it allowed to bypass the small capacities of hard disks and avoided lags. However, it is no longer necessary today, because the Generalized Biffing mod allows the gamers to biff the content of their override folder for improved performance, which means the files are converted into the BIF file format and moved into the data folder. Moreover, biffing mod files may, in some cases, cause malfunctions. So avoid doing it!<br><br></li>
+			<li style="margin-right:-1%;"><strong><span style="color: #781808;">3. Never overwrite existing animation slots with your own ones.</span></strong><br>
+			As a result, a umber rock may end up with a cyclops or a goblin animation. It's rather messy, isn't it?<br><br></li>
+			<li style="margin-right:-1%;"><strong><span style="color: #781808;">4. Never overwrite ANIMATE.ids file.</span></strong><br>
+			And above all, DO NOT DUPLICATE identical animations listed with a different name and/or index.</li>
+		</ul><br>
+
+		<hr style="width: 90%" /><br>
+
+		<h2><span class="com">1.</span>Make sure Infinity Animations is installed.</h2><br>
+
+		<p>
+			This allows you to :
+		</p>
+		<ul style="margin-left: 6%;">
+			<li style="margin-right:-2%;">Ensure your mod will be compatible with all games by harmonizing their animation slots.</li>
+			<li style="margin-right:-2%;">Install creatures using missing animations in EE games without having to check that their .bam, .ini and .wav files are not missing.</li>
+			<li style="margin-right:-2%;">Avoid overloading your mod with dozens (or even hundreds) of useless .bam files.</li>
+			<li style="margin-right:-2%;">Enjoy all the animations, original, specific to Infinity Animations or shared by modders, without having to install them.</li>
+		</ul><br>
+
+		<p>
+			You just have to insert in your tp2 the following line as a prerequisite to install your mod:
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: purple;">REQUIRE_PREDICATE MOD_IS_INSTALLED <span style="color: #C00040">~infinityanimations.tp2~</span> (ID_OF_LABEL <span style="color: #C00040">~infinityanimations.tp2~ ~infinity_animations_main~</span>) @ nn</span>
+with
+<span style="color: mediumblue">@nn</span>   = <span style="color: #850606">This mod requires Infinity Animations main component.~</span> </pre>
+			</p>
+		</div>
+
+		<p>
+			Note : this code est much more 'robust' than the one usually used before, which was <span class="tp2"><span style="color: purple;">MOD_IS_INSTALLED</span> <span style="color: #C00040">~infinityanimations.tp2~ ~0~</span></span>.
+		</p><br>
+
+		<hr style="width: 90%" /><br>
+
+		<h2><span class="com">2.</span>Simplify the installation process of the mod.</h2><br>
+
+		<p>
+			Take advantage of the update of your mod to simplify its installation process.
+		</p><br>
+
+		<hr style="width: 90%; height: 1px; border: 0;" /></br>
+
+		<p style="font-size: 130%;"><strong>2.a. Remove all "biffing" routines.</strong></p>
+
+		<p style="margin-top:2%;">
+			This concerns almost exclusively mega-mods. The procedure is underway for most of the mods published at SHS to make them compatible with the new version of Infinity Animations.
+		</p><br>
+
+		<hr style="width: 90%; height: 1px; border: 0;" /></br>
+
+		<p style="font-size: 130%;"><strong>2.b.Remove any duplicated animation slot entry.</strong></p>
+
+		<p style="margin-top:2%;">
+			Stacking identical animation slots listed with a different name or/and index is not only useless, but can cause serious or critical glitches during installation of mods that use the <span class="tp2" style="color: purple;">IDS_OF_SYMBOL (</span>animate <span style="color: #C00040">~animation name~</span><span style="color: purple;">)</span> command to ensure their compatibility with both classic and EE games.
+		</p>
+		<p>
+			This is the reason why all unnecessary duplication of slots should be removed from tp2, such as the following mods, taken randomly:
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">BP mod
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE010 IC_ETTIN~</span>             <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE010~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE040 IC_HISTACHII~</span>         <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE040~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE060 IC_LICH~</span>              <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE060~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE090 IC_MERILITH~</span>          <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE090~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0A0 IC_ICE_TROLL~</span>         <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0A0~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0C0 IC_SNOW_TROLL~</span>        <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0C0~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0D0 IC_UMBERHULK~</span>         <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0D0~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0E0 IC_CORNUGONSKI~</span>       <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0E0~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0F0 IC_ICE_GOLEM~</span>         <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0F0~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0F1 IC_GLAB~</span>              <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0F1~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0F2 IC_WAILING_VIRGIN~</span>    <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE0F2~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE200 IC_BEETLE_COPPER~</span>     <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE200~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE210 IC_BEETLE_FIRE~</span>       <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE210~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE220 IC_BEETLE_BLACK~</span>      <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE220~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE230 IC_BEETLE_RHINOCEROS~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE230~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE300 IC_GHOST~</span>             <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE300~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE310 IC_GHOUL~</span>             <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE310~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE320 IC_GHAST~</span>             <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE320~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE510 IC_LIZARDMAN2~</span>        <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE510~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xEA10 IC_SHADE~</span>             <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xEA10~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xEA20 IC_SHADE2~</span>            <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xEA20~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xEE00 IC_ZOMBIE~</span>            <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xEE00~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xEE10 IC_ZOMBIE2~</span>           <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xEE10~</span>
+
+Drizzt Saga mod
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~ANIMATE.IDS~ ~0xE0E0 IC_CORNUGONSKI~</span>
+
+Hanna NPC mod
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~ANIMATE.IDS~ ~0xE060 IC_LICH~</span>
+
+Improved Anvil mod
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~animate.ids~ ~0xE0F0 IC_ICE_GOLEM~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~\bIC_ICE_GOLEM\b~</span>
+
+Knight Kits mod
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~ANIMATE.IDS~ ~0xE040 IC_HISTACHII~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE040 IC_HISTACHII~</span>
+
+TDD mod
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~ANIMATE.IDS~ ~0xE250 IC_GOLEM_IRON~</span>  <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE250~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~ANIMATE.IDS~ ~0xE24F IC_GIANT_FROST~</span> <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE24F~</span>
+<span style="color: green;">APPEND</span> <span style="color: #C00040">~ANIMATE.IDS~ ~0xE000 IC_CYCLOPS~</span>     <span style="color: blue;">UNLESS</span> <span style="color: #C00040">~0xE000~</span> </pre>
+			</p>
+		</div>
+
+		<p>
+			To illustrate this, here are the duplicated animation slots of the animate.ids file installed by the Big World Fixpack which gathers all the slots created by a mega-installation:
+		</p>
+
+		<div style="margin: 10px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; margin-top: 20px; padding: 6px;">
+			<div class="quotetitle">
+				<em>&nbsp;&nbsp;&#x25BA; Big World Fixpack animate.ids</em> :
+				<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+				onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+			</div>
+			<div class="quotecontent">
+				<div style="display: none; ">
+					<div class="important" style="background-color: #F1F1F1;">
+						<p><pre style="padding-left: 2%;">
+...
+<span style="color: blue;">0x1300 DEMIGORGON</span>
+0x1300 DEMOGORGON
+...
+<span style="color: blue;">0x7701 REVEANT</span>
+0x7701 REVENANT
+...
+<span style="color: blue;">0x7F09 SAHAUGIN</span>
+0x7F09 SAHUAGIN
+...
+<span style="color: blue;">0x7F23 SAHAUGIN_LARGE</span>
+0x7F23 SAHUAGIN_LARGE
+...
+<span style="color: blue;">0x7F2C AMISH_SOLDIER</span>
+0x7F2C AMNISH_SOLDIER
+...
+<span style="color: blue;">0x7F3A HULA_WIZARD</span>
+0x7F3A IRENICUS_ROBED
+...
+<span style="color: blue;">0x7F3F YAGA-SHURA</span>
+0x7F3F GIANT_YAGA-SHURA
+...
+<span style="color: blue;">0xE010 IC_ETTIN</span>
+0xE010 ETTIN
+...
+<span style="color: blue;">0xE050 IC_LICHBLACK</span>
+0xE050 LICH_BLACK
+0xE060 IC_LICH
+0xE060 LICH_WHITE
+<span style="color: blue;">0xE070 IC_MINOTAUR</span>
+0xE070 MINOTAUR
+<span style="color: blue;">0xE080 IC_MUMMY</span>
+0xE080 MUMMY
+<span style="color: blue;">0xE090 IC_MERILITH</span>
+0xE090 MARILITH
+<span style="color: blue;">0xE0A0 IC_ICE_TROLL</span>
+0xE0A0 ICE_TROLL
+0xE0A0 TROLL_ICE
+<span style="color: blue;">0xE0B0 IC_TROLL1</span>
+0xE0B0 TROLL_BLUE
+<span style="color: blue;">0xE0C0 IC_SNOW_TROLL</span>
+0xE0C0 SNOW_TROLL
+0xE0C0 TROLL_SNOW
+<span style="color: blue;">0xE0D0 IC_UMBERHULK</span>
+0xE0D0 UMBER_HULK_ELDER
+0xE0D0 UMBERHULK_IWD
+<span style="color: blue;">0xE0E0 CORNUGON</span>
+0xE0E0 IC_CORNUGONSKI
+<span style="color: blue;">0xE0F0 IC_ICE_GOLEM</span>
+0xE0F0 ICE_GOLEM
+0xE0F0 GOLEM_ICE
+<span style="color: blue;">0xE0F1 IC_GLAB</span>
+0xE0F1 GLABREZU
+<span style="color: blue;">0xE0F2 IC_WAILING_VIRGIN</span>
+0xE0F2 WAILING_VIRGIN
+<span style="color: blue;">0xE200 BEETLE</span>
+0xE200 BEETLE_BORING
+0xE200 BEETLE_COPPER
+0xE200 IC_BEETLE_COPPER
+<span style="color: blue;">0xE210 BEETLE_FIRE</span>
+0xE210 IC_BEETLE_FIRE
+<span style="color: blue;">0xE220 BEETLE_BLACK</span>
+0xE220 BEETLE_BOMBARDIER
+0xE220 IC_BEETLE_BLACK
+<span style="color: blue;">0xE230 BEETLE_RHINOCEROS</span>
+0xE230 IC_BEETLE_RHINOCEROS
+...
+<span style="color: blue;">0xE300 GHOST</span>
+0xE300 GHOST_IWD
+0xE300 IC_GHOST
+<span style="color: blue;">0xE310 GHOUL_GREATER</span>
+0xE310 GHOUL_IWD
+0xE310 IC_GHOUL
+<span style="color: blue;">0xE320 GHAST_GREATER</span>
+0xE320 GHAST_IWD
+0xE320 IC_GHAST
+<span style="color: blue;">0xE400 GOBLIN_AXE</span>
+0xE400 IC_GOBLIN_AXE
+<span style="color: blue;">0xE410 GOBLIN_BOW</span>
+0xE410 IC_GOBLIN_BOW
+<span style="color: blue;">0xE420 GOBLIN_ELITE_AXE</span>
+0xE420 GOBLINELITE_AXE 
+0xE420 IC_GOBLINELITE_AXE
+<span style="color: blue;">0xE430 GOBLIN_ELITE_BOW</span>
+0xE430 GOBLINELITE_BOW
+0xE430 IC_GOBLINELITE_BOW
+...
+<span style="color: blue;">0xE500 LIZARDMAN_BROWN</span>
+0xE500 IC_LIZARDCASTER1
+0xE500 LIZARD_MAN_ELITE
+<span style="color: blue;">0xE510 LIZARD_MAN</span>
+0xE510 IC_LIZARDMAN2
+0xE510 LIZARDMAN_GREEN
+<span style="color: blue;">0xE520 LIZARD_KING</span>
+0xE520 LIZARD_MAN_KING
+0xE520 IC_LIZARDCASTER3
+<span style="color: blue;">0xE600 MYCONID</span>
+0xE600 IC_MYCONID
+0xE600 MYCONID_RED
+<span style="color: blue;">0xE610 MYCONID2</span>
+0xE610 IC_MYCONID2
+0xE610 MYCONID_BLUE
+<span style="color: blue;">0xE700 OROG</span>
+0xE700 OROG1
+0xE700 IC_OROG1
+<span style="color: blue;">0xE710 OROG2</span>
+0xE710 IC_OROG2
+0xE710 OROG_ELITE
+<span style="color: blue;">0xE720 OROG3</span>
+0xE720 IC_OROG3
+0xE720 OROG_CHIEFTAIN
+<span style="color: blue;">0xE800 ORC_MELEE</span>
+0xE800 ORC_MELEE1
+0xE800 IC_ORC_MELEE1
+<span style="color: blue;">0xE810 ORC_RANGE</span>
+0xE810 ORC_RANGE2
+0xE810 IC_ORC_RANGE2
+<span style="color: blue;">0xE820 ORC_MELEE3</span>
+0xE820 IC_ORC_MELEE3
+0xE820 ORC_ELITE_MELEE
+<span style="color: blue;">0xE830 ORC_RANGE4</span>
+0xE830 IC_ORC_RANGE4
+0xE830 ORC_ELITE_RANGE
+<span style="color: blue;">0xE840 ORC_SHAMAN</span>
+0xE840 IC_ORC_SHAMAN
+<span style="color: blue;">0xE900 SALAMANDER</span>
+0xE900 IC_SALAMANDER
+0xE900 SALAMANDER_FIRE
+<span style="color: blue;">0xE910 SALAMANDER2</span>
+0xE910 IC_SALAMANDER2
+0xE910 SALAMANDER_FROST
+<span style="color: blue;">0xEA00 SHROOM</span>
+0xEA00 IC_SHROOM
+0xEA00 SHRIEKER
+<span style="color: blue;">0xEA10 IC_SHADE</span>
+0xEA10 GHOST_SHADOW
+0xEA10 SHADOW_SMALL
+0xEA10 SHADOW_SMALL_IWD
+<span style="color: blue;">0xEA20 GHOST_SHADE</span>
+0xEA20 IC_SHADE2
+0xEA20 SHADOW_LARGE
+0xEA20 SHADOW_LARGE_IWD
+<span style="color: blue;">0xEB00 SKELETON0</span>
+0xEB00 IC_SKELETON0
+0xEB00 SKELETON_MONSTER
+<span style="color: blue;">0xEB10 SKELETONA </span>
+0xEB10 IC_SKELETONA
+0xEB10 SKELETON_WARRIOR
+<span style="color: blue;">0xEB20 SKELETONB</span>
+0xEB20 IC_SKELETONB
+0xEB20 SKELETON_FIEND
+<span style="color: blue;">0xEC00 WIGHT</span>
+0xEC00 WIGHT_GRAY
+0xEC00 IC_WIGHT
+<span style="color: blue;">0xEC10 WIGHT_GREEN</span>
+0xEC10 WIGHT_LESSER
+0xEC10 IC_WIGHT2
+<span style="color: blue;">0xEC20 WIGHT_GREATER</span>
+0xEC20 WIGHT_YELLOW
+0xEC20 IC_WIGHT3
+<span style="color: blue;">0xED00 YUAN-TI</span>
+0xED00 YUANTI
+0xED00 IC_YUANTI
+<span style="color: blue;">0xED10 YUANTI2</span>
+0xED10 IC_YUANTI2
+0xED10 YUAN-TI_ELITE
+<span style="color: blue;">0xED20 YUANTI3</span>
+0xED20 IC_YUANTI3
+0xED20 YUAN-TI_PRIEST
+<span style="color: blue;">0xEE00 ZOMBIE_LESSER</span>
+0xEE00 ZOMBIE_YELLOW
+0xEE00 ZOMBIE_YELLOW_IWD
+0xEE00 IC_ZOMBIE
+<span style="color: blue;">0xEE10 ZOMBIE_BLUE</span>
+0xEE10 ZOMBIE_BLUE_IWD
+0xEE10 ZOMBIE_GREATER
+0xEE10 IC_ZOMBIE2
+<span style="color: blue;">0xEF10 ELEMENTAL_WATER</span>
+0xEF10 WATER_WEIRD
+0xEF10 IC_WATER_WIERD126 </pre>
+						</p>
+					</div><br>
+				</div>
+			</div>
+		</div>
+
+		<p style="margin-top:2%;">
+			Fortunately, from now on, Infinity Animations main component cleans up this file and allows to install mods on a sound basis. But damn i! Coding a patch to fix this regression was a real pain... &#x1F621;<br>
+			So, please be nice and don't corrupt this file with unnecessary slots additions and duplications.
+		</p><br>
+ 
+		<hr style="width: 90%; height: 1px; border: 0;" /></br>
+
+		<p style="font-size: 130%;"><strong>2.c. Install only necessary .bam and sound files.</strong></p>
+
+		<div class="important" style="font-size: 100%; margin-top:2%;">
+			<p style ="width: 100%;">
+				<span style="color: #781808;">&#9755;</span> As of version 6.0.0, Infinity automatically installs new animations as well as missing animations (especially in EE games), unless players have modified <strong><em><span style="font-variant:small-caps;font-size: 12px;">infinityanimations-config-default.ini</em></span></strong> file.
+			</p>
+			<p style ="width: 100%;">
+				<span style="color: #781808;">&#9755;</span> In addition, Infinity Animations now automatically installs creatures sound clips accordingly to the game language localization whenever relevant.<br><br>
+				<center><strong><span style="color: #781808;">&#10173;</span> Thus, in theory, it is no longer necessary to provide these files in your mod.</strong></center>
+			</p>
+		</div>
+
+		<p>
+			However, if, for safety, you decide to keep the installation procedure of these files in case they do not exist in a classic game, do not hesitate to use the function libraries described below.
+		</p><br>
+
+		<hr style="width: 90%" /><br>
+
+		<h2><span class="com">3.</span>Use Infinity Animations functions libraries.</h2><br>
+
+		<p>
+			To ensure the most perfect compatibility with classic and EE games, I have written many libraries of functions and macros that allow to install IA components according to the games specificities. For example, the beetle bombardier sound clips have different prefixes in classic games (t-bmb) and in EE games (mbbm); the harpy animation use different slots in IA (0x5269) and in EE games (0xe252). In addition, its bam files prefixes are also not the same: 3BS in IA and MHAR in EE.
+		</p>
+
+		<p>
+			Do not hesitate to use these libraries or to be inspired by them to install your new animations.
+		</p>
+
+		<div class="important" style="background-color: #F1F1F1;">
+			<p><pre style="padding-left: 2%;">
+<span style="color: green;">INCLUDE</span> <span style="color: #C00040">~%MOD_FOLDER%/lib/a7_functions.tpa~</span>
+<span style="color: green;">INCLUDE</span> <span style="color: #C00040">~%MOD_FOLDER%/lib/ps_recursive_copy.tpa~</span>
+<span style="color: green;">INCLUDE</span> <span style="color: #C00040">~%MOD_FOLDER%/lib/gw_functions_ee.tpa~</span></pre>
+			</p>
+		</div>
+
+		<p>with</p>
+		<ul>
+			<li><span class="tp2" style="color: #781808;">a7_functions.tpa</span>: Argent77's functions library to install new animation slots into ANIMATE.ids (big thanks to him!)</li>
+			<li><span class="tp2" style="color: #781808;">ps_recursive_copy.tpa</span>: Sam's functions library to recursively search files into a parent directory, then copy them to a destination directory. Adapted and modified by Gwendolyne to identify existing localized sound files and install all necessary files (animations and sounds) from &#x1F4C1; archives/subfolders to &#x1F4C1; override folder (<span class="tp2" style="color: #C00040">gw_find_sounds_folder</span>, <span class="tp2" style="color: #C00040">gw_update_sound_clips</span> and <span class="tp2" style="color: #C00040">gw_update_content</span> fonctions, <span class="tp2" style="color: #C00040">gw_install_archives</span> and <span class="tp2" style="color: #C00040">gw_install_modders_content</span> macros).</li>
+			<li><span class="tp2" style="color: #781808;">gw_functions_ee.tpa</span>: list of macros and functions dealing with installing animation slots in EE games.</li>
+			<li><span class="tp2" style="color: #781808;">gw_ee_compat_arrays.tph</span>: library of arrays used to add and install new creature animations (slots, bam, wav files...).</li>
+		</ul><br>
+
+		<hr style="width: 90%" /><br>
+
+		<p>
+			<span style="color: #781808;">&#10173;</span> For support or questions, please visit the <a href="http://www.shsforums.net/forum/594-infinity-animations">mod forum</a>.
+		</p><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; Updating old mods</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ============== V e r s i o n   H i s t o r y =============== -->
+	  <a name="version" id="version"></a>
+	  <div class="content" id="versionHistory">
+
+		<h2>Version Changelog (core component only)</h2><br>
+
+		<h6>Version 6.0.0 &nbsp;(March, 2021)</h6>
+
+		  <ul>
+			<li>Modified animations name-spaces, <strong>now compatible with non-Western code pages</strong> (got rid of the the .exe patch routine forcing a code page change and rebooting if a non-Western code page was detected), and fixed duplicate usage of dragon type slots (XDR3, XDR6). &#128521;</li>
+			<li>Added native EE compatibility: changed lines of code to provide EE compatibility whenever possible, in particular the animations names have been harmonized.</li>
+			<li>Updated IA Reference Picker tool (can now be translated) and updated its documentation.</li>
+			<li>Added French translation (Gwendolyne).</li>
+			<li>Uploaded mod to official Spellhold Studios GitHub mirror account.</li>
+		  </ul><br><br>
+
+		<h6>Version Beta 5 &nbsp;(May 12, 2010)</h6>
+
+		  <ul>
+			<li>Changed the .exe patch so that it forces a code page change and reboots if a non-Western code page is detected.</li>
+			<li>Updated the .exe patch so that it recognises <acronym title="Baldur's Gate">BG1</acronym> thief avatars.</li>
+			<li>Cloned missing animation tables from the unmodded game.</li>
+			<li>Added other missing animation tables to base &#x1F4C1; /content folder.</li>
+			<li>Adding missing minotaur and water weird sounds.</li>
+			<li>Disabled problematic stacked animations from chitin.key.</li>
+			<li>Added creature sounds where relevant (major update here).</li>
+			<li>Fixed a <a href="http://www.shsforums.net/topic/44716-error-installing/?p=483927">minor <span class="tp2" style="color: red">READ_BYTE</span> glitch</a> in creature patching.</li>
+			<li>Made it certain so that subcomponents can't be installed if the main component is not installed (to prevent crashes).</li>
+			<li>Added night hags to the "<em><span style="color: #781808;">Distinctive Fiends</span></em>" component.</li>
+			<li>Added ghoul queens to the "<em><span style="color: #781808;">Distinctive Undead</span></em>" component.</li>
+			<li>Added white-haired Ellesime to the "<em><span style="color: #781808;">More <acronym title="Icewind Dale II">IWD2</acronym> Animations</span></em>" component.</li>
+			<li>Added lagoon creature to the "<em><span style="color: #781808;">More <acronym title="Icewind Dale II">IWD2</acronym> Animations</span></em>" component.</li>
+			<li>Deprecated tieflings from the cambion/alu-fiend components in favor of the "<em><span style="color: #781808;">More <acronym title="Planescape: Torment">PS:T</acronym> Animations</span></em>" component.</li>
+			<li>Corrected skeleton warriors appearing as verbeegs glitch.</li>
+			<li>Added Amel animation to the "<em><span style="color: #781808;">More <acronym title="Neverwinter Nights">NWN</acronym> Animations</span></em>" component (if <acronym title="Northern Tales of the Sword Coast">NTotSC</acronym> is installed).</li>
+			<li>Added "<em><span style="color: #781808;">Humanoid Animation Fixes</span></em>" component.</li>
+			<li>Added "<em><span style="color: #781808;">Moinesse's Avatars for IA</span></em>" component.</li>
+			<li>Added "<em><span style="color: #781808;">More <acronym title="Planescape: Torment">PS:T</acronym> Animations</span></em>" component.</li>
+			<li>Added "<em><span style="color: #781808;"><acronym title="Baldur's Gate">BG1</acronym> Character Animations for Saved Games</span></em>" component.</li>
+			<li>Added "<em><span style="color: #781808;">Saved Games Animations Fixer component</span></em>".</li>
+			<li>Traified the entire freaking mod by hand for translators (thanks for nothing, <acronym title="Weimer Dialogue Utility">WeiDU</acronym>! &#128541;)</li>
+		  </ul><br><br>
+
+		<h6>Version Beta 4 &nbsp;(February 7, 2010)</h6>
+
+		  <ul>
+			<li>Added "<em><span style="color: #781808;"><acronym title="Baldur's Gate">BG1</acronym> Character Animations for <acronym title="Non-Player Characters">NPCs</acronym></span></em>" component.</li>
+			<li>Added "<em><span style="color: #781808;"><acronym title="Baldur's Gate">BG1</acronym> Character Animations for Exported <acronym title="Player Characters">PCs</acronym></span></em>" component.</li>
+			<li>Changed fiend patching to accommodate scripting.</li>
+		  </ul><br><br>
+
+		<h6>Version Beta 3 &nbsp;(February 1, 2010)</h6>
+
+		  <ul>
+			<li>Fixed _LOW animation corrections causing areas crashing on load.</li>
+			<li>Fixed scripts and dialogues that Polymorph to _LOW animations.</li>
+			<li>Fixed code glitch preventing installation of optional components.</li>
+			<li>Added option to install sounds in "<em><span style="color: #781808;">Svirfneblins Animations</span></em>" component.</li>
+			<li>Added "<em><span style="color: #781808;">Fix Area Creature References</span></em>".</li>
+			<li>Added revised salamander sound tables (MSAL and MSA2 slots).</li>
+			<li>Enhanced compatibility with <a href="http://www.shsforums.net/topic/38261-atweaks-v264-released/">aTweaks</a>.</li>
+			<li>Enhanced creature animation patches for fiends and orc shamans.</li>
+		  </ul><br><br>
+
+		<h6>Version Beta 2 &nbsp;(January 23, 2010)</h6>
+
+		  <ul>
+			<li>Added installer support for non-ANSI system locales.</li>
+		  </ul><br><br>
+
+		<h6>Version <acronym title="Weimer Dialogue Utility">WeiDU</acronym> Beta 1 &nbsp;(January 11, 2010)</h6>
+
+		  <ul>
+			<li>First <acronym title="Weimer Dialogue Utility">WeiDU</acronym> release.</li>
+			<li>All affected mod and vanilla creatures patched.</li>
+			<li>Optional components added.</li>
+		  </ul><br><br>
+
+		<h6>Version r.10010043</h6>
+
+		  <ul>
+			<li>Fixed a bug with Icewind Dale animation slots in Baldur's Gate II.</li>
+		  </ul><br><br>
+
+		<h6>Version r.09102252 (update)</h6>
+
+		  <ul>
+			<li>Updated documentation and Reference Picker.</li>
+			<li>Added alternate stylesheet. &#128521;</li>
+		  </ul><br><br>
+
+		<h6>Version r.09102252</h6>
+
+		  <ul>
+			<li>Initial release.</li>
+		  </ul><br><br>
+
+		<address>
+			<span class="footer">Infinity Animations: Note for modders &gt; Version Changelog (core component only)</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+	</div>
+	</div>
+  </body>
+</html>
+  
