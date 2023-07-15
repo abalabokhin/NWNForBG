@@ -18,7 +18,7 @@ THEN
 		Wait(1)
 		MoveViewObject(Player1,INSTANT)
 		Wait(1)
-		StartMovie("NWN1_2")
+//		StartMovie("NWN1_2")
 		Wait(1)
 		ActionOverride("Oleff",DestroySelf())
 		ActionOverride("Aribeth",DestroySelf())

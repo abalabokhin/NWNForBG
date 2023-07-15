@@ -25,7 +25,7 @@ THEN
 		Wait(1)
 		MoveViewObject(Player1,INSTANT)
 		Wait(1)
-		StartMovie("NWN2_3")
+//		StartMovie("NWN2_3")
 		Wait(2)
 		RevealAreaOnMap("NW3000")
 		SetMasterArea("NW3000")
