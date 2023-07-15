@@ -1,7 +1,7 @@
 + x1001 - 0x1103 FIEND_GREEN
 + x500E - 0xE267 BUGBEAR
 + x500F - 0xE266 BUGBEAR_CAPTAIN
-x5032 - BEBILITH_NWN - нет такого - брать из ia  +
++ x5032 - BEBILITH_NWN - нет такого - брать из ia  +
 + x5039 - 0xE24D ELEMENTAL_WATER
 + x504A - 0xE24E GIANT_FIRE_IWD
 + x504B - 0xE250 GOLEM_IRON_IWD
@@ -33,22 +33,22 @@ x5290 - SUCCUBUS_NWN из ia                       +
 x5B07 - DISPLACER_BEAST из ia                    +
 + x5C01 - 0x7F47 GIANT_FIRE_2
 x5C03 - GIANT_FIRE_FEMALE из ia                  +
-x5D4D - ~0x5DBB TOWNIE_CURST_MALE_PST~ из ia     +
-x5D4E - 0x5DBC DUSTMAN_FEMALE_PST~ из ia         +
-x5D4F - ~0x5DBE DUSTMAN_MALE_PST~ тоже самое     +
-x5D53 - ~0x5D53 GODSMAN_PST~ из иа               +               
+x5D4D - 0x5DBB TOWNIE_CURST_MALE_PST из ia     +
+x5D4E - 0x5DBC DUSTMAN_FEMALE_PST из ia         +
+x5D4F - 0x5DBE DUSTMAN_MALE_PST тоже самое     +
+x5D53 - 0x5D53 GODSMAN_PST из иа               +               
 x5D55 - 0x5D55 TOWNIE_LOWER_CLASS_FEMALE_PST - иа+
 x5D56 - 0x5D56 TOWNIE_LOWER_CLASS_MALE_PST - иа  +
-x5D57 - ~0x5DC1 MERCHANT_PST~ - иа               +
-x5D59 - ~0x5D59 HARLOT_PST~ - иа                 +
-x5D5A - ~0x5DC2 SKELETON_PRIEST_PST~ иа          +
-x5D5B - ~??? SKELETON_WORKER_PST~ иа             +
-x5D5D -  ~0x5D5D THUG_PST~ иа                    +
-x5D60 - ~0x5DAD TOWNIE_WIZARD_PST~ - иа          +
+x5D57 - 0x5DC1 MERCHANT_PST - иа               +
+x5D59 - 0x5D59 HARLOT_PST - иа                 +
+x5D5A - 0x5DC2 SKELETON_PRIEST_PST иа          +
+x5D5B - ??? SKELETON_WORKER_PST иа             +
+x5D5D -  0x5D5D THUG_PST иа                    +
+x5D60 - 0x5DAD TOWNIE_WIZARD_PST - иа          +
 x5D61 - 0x5D61 TOWNIE_UPPER_CLASS_FEMALE_PST - иа+
 x5D62 - 0x5D62 TOWNIE_UPPER_CLASS_MALE_PST - иа  +
-x6440 - ~0x6440 THIEF_MALE_HUMAN_BG1~ - иа       +
-x683E - ~0x683E MOINESSE_NINJA_MALE_HUMAN~ -иа   +
+x6440 - 0x6440 THIEF_MALE_HUMAN_BG1 - иа       +
+x683E - 0x683E MOINESSE_NINJA_MALE_HUMAN -иа   +
 x6841 - 0x6841 MOINESSE_MAGE_FEMALE_ELF - иа     +
 x6847 - 0x684F MOINESSE_MAGE_FEMALE_HUMAN - иа   +
 x6848 -0x6850 MOINESSE_THIEF_FEMALE_HUMAN - иа   +
