@@ -1,0 +1,8 @@
+@0 = ~MT: Привет! Нет времени болтать, мне нужно ухаживать за больными и ранеными.~ /*Them attack person who helps sick people?*/
+@1 = ~MT: Это похоже на лазарет. Ты можешь меня вылечить?~ /*What exactly can't you stand?*/
+@2 = ~MT: Откуда здесь столько больных? Надеюсь это не чума?~ /*How do you know so much about me?*/
+@3 = ~MT: Хорошо, я уже ухожу.~ /*Fine, I'll go.*/
+@4 = ~MT: Извините <SIRMAAM>. Моих знаний для этого недостаточно. Обратитесь к Ньюрику в храме, он вам обязательно поможет.~ /*Sorry, <PRO_SIRMAAM>. Nobody is allowed into the residence. Very strict orders, you understand.*/
+@5 = ~MT: Чума? Нет, что вы. Это обычные больные, а также воины, получившие ранения. Извините, я займусь своим делом.~ /*So you're just going to let this continue? I can't believe it. Go on, then. Leave me to my task.*/
+@6 = ~MT: Извините, нет времени болтать, мне нужно ухаживать за больными и ранеными.~ /*Them attack person who helps sick people?*/
+@7 = ~MT: Знаешь, я ведь начинающий писатель. Я только что закончил работу над романом, основанном на реальных событиях из жизни великого, но не понятого Дриззта До'Урдена. Если у тебя есть пара минут, я могу прочитать тебе отрывок.~ /*The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.*/

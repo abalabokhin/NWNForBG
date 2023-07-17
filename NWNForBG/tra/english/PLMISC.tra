@@ -1,0 +1,12 @@
+@0 = ~MT: Приятная встреча! Похоже, вы пришли издалека.~ /*A pleasure meeting you. Good luck in your travels.*/
+@1 = ~MT: Вы правы. Не подскажете, где здесь ближайшая гостиница?~ /*Can you point me in the direction of an inn?*/
+@2 = ~MT: Да, и мне хотелось бы взглянуть на ваши товары.~ /*Let me see your wares.*/
+@3 = ~MT: У меня нет ни малейшего желания болтать с вами.~ /*I've no time for this. Goodbye.*/
+@4 = ~MT: Конечно! Ищите самое старое здание в центре. Оно было возведено давным давно, и сколько я себя помню, всегда было тут.~ /*He's in the Town Hall in the heart of village... He's been in there for as long as anyone can remember, which isn't long at all...*/
+@5 = ~MT: Спасибо. Но прежде чем уйти, мне бы хотелось взглянуть на ваши товары.~ /*Thank you for your help... I didn't want to end up like them.*/
+@6 = ~MT: Спасибо. Мне пора.~ /*Thanks, byes.*/
+@7 = ~MT: Это мне нравится. Подходите, выбирайте.~ /*I don't like hearing you talk like this.*/
+@8 = ~MT: Оу, вы вернулись! Может хотите взглянуть на мои товары?~ /*Yes, let me see what you have in stock.*/
+@9 = ~MT: Да, давайте посмотрим, что у вас есть.~ /*Let me show you what we've got.*/
+@10 = ~No, not now.~
+@11 = ~MT: Только не забудьте вернуться, когда вам что-либо понадобится!~ /*Let me know if you need anything, then.*/

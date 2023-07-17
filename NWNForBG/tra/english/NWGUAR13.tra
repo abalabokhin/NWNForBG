@@ -1,0 +1,12 @@
+@0 = ~Ho there, <PRO_SIRMAAM>. You with High Captain Kurth or High Captain Baram?~
+@1 = ~MT: Я никого не поддерживаю.~ /*Me does nothing.*/
+@2 = ~MT: За Курта.~ /*Kurth's.*/
+@3 = ~MT: За Барама.~ /*Baram's.*/
+@4 = ~None of your business.~
+@5 = ~Who are they?~
+@6 = ~Good enough. If you have any problems, you talk to Miss Bela, got it?~
+@7 = ~MT: Прекрасно. Только не забывайте, что здесь полно людей Барама. Мне не нужны здесь неприятности, предупреждаю вас. Если у вас есть проблемы, то поговорите с мисс Белой. А если нет, делайте все, что захотите.~ /*Fine. Just keep in mind that there's plenty of Baram's men here, too. I'll have no trouble here, I'm warning you.*/
+@8 = ~MT: Прекрасно. Только не забывайте, что здесь полно людей Курта. Мне не нужны здесь неприятности, предупреждаю вас. Если у вас есть проблемы, то поговорите с мисс Белой. А если нет, делайте все, что захотите.~ /*Fine. Just keep in mind that there's plenty of Kurth's men here, too. I'll have no trouble here, I'm warning you.*/
+@9 = ~MT: Прекрасно. Здесь полно людей из обеих армий... Это нейтральное место по приказу самих Высших Капитанов, так что неприятности мне не нужны. Если у вас есть насчет этого вопросы, то поговорите с мисс Белой. А если нет, то никаких проблем не будет. Понятно?~ /*Fine. There's lots of both factions here, though... this is neutral ground, on the order of the High Captains themselves, so I'll have no trouble.*/
+@10 = ~MT: Вы что, за дурака меня держите? Смотрите... Здесь есть солдаты обеих армий, так что от вас мне проблемы не нужны. Это нейтральная территория. Если у вас есть насчет этого вопросы, то поговорите с мисс Белой. А если нет, то никаких проблем не будет. Понятно?~ /*Who do you take me for, a fool? Look... both factions are here, so I'll have no trouble from you. This is neutral ground.*/
+@11 = ~You, there... you better not be here to cause trouble. You with High Captain Kurth or High Captain Baram?~

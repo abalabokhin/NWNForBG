@@ -1,0 +1,11 @@
+@0 = ~Hmmm. So you're the one Aarin wants me to let in the gates. You look like trouble, if you ask me. You sure you know what you're doing?~
+@1 = ~Why? What's going on in Luskan?~
+@2 = ~I need to find the cult.~
+@3 = ~MT: Просто пропусти меня в город.~ /*Just leave me alone!*/
+@4 = ~MT: Я пока не готов.~ /*I'll go now.*/
+@5 = ~MT: Драка не на жизнь, а на смерть. Высшие Капитаны начали войну... это тянется уже несколько недель. Лускан просто разрывают на куски. Думаю, у тебя полно вопросов, но у меня нет времени на разговоры. Я дал Аарину обещание, и я его сдержу... так ты хочешь внутрь или нет?~ /*I'm sure you're full of questions, but I really can't chat. I promised Aarin a favor, and I'll do it... so do you want inside or not?*/
+@6 = ~Yes, let me inside.~
+@7 = ~MT: Да, Аарин что-то такое говорил. И задавал множество вопросов про магов в Башне. Правду сказать, чем меньше я знаю о твоей задаче, тем спокойнее мне живется. Так ты собираешься внутрь или нет?~ /*Truth be told, the less I know about what you're up to, the better I'll feel. Do you want inside or not?*/
+@8 = ~MT: Вот значит как? Тебе повезло, что Аарин мой старый друг... обещание есть обещание. Хорошо... теперь врата для тебя открыты. Но помни: я не смогу выпустить тебя наружу. Проверь, все ли у тебя при себе?~ /*All right... the gates are open for you, now. Just remember: I can't let you back out once you're in. Make sure you have everything you need, you hear?*/
+@9 = ~Oh? Well, if you change your mind, I'll still be here to let you in. A favor's a favor.~
+@10 = ~The gate's open for you. Just remember: once you go into Luskan, you can't come back out... period. So get everything you need before you go in.~

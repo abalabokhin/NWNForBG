@@ -1,0 +1,9 @@
+@0 = ~MT: Попрошу вас немедленно уйти! Это казармы, а не музей для туристов!~ /*I will begin my search for the Waterdhavian creatures at once!*/
+@1 = ~Who you follow?~
+@2 = ~MT: Если это казармы, то где же солдаты?~ /*If me find it me let you know.*/
+@3 = ~MT: Хорошо, я уже ухожу.~ /*Fine, I'll go.*/
+@4 = ~MT: Я наемник, меня нанял мэр этого города. Его зовут Кендрак и он находится в здании напротив. А теперь покиньте помещение.~ /*I've a little gold. I suppose you could take it. Just go now, all right?*/
+@5 = ~MT: Раз ты наемник, то я могу тебя нанять?~ /*You're a mercenary. That mean you're for hire?*/
+@6 = ~MT: Неужели не понятно? На своих постах, конечно. Впрочем, некоторые сейчас в мэрии - это здание напротив. А теперь покиньте помещение.~ /*I don't get good luck. I get stuck in a zombie-filled city with a broken wagon and the scorn of my wife.*/
+@7 = ~MT: Я уже нанят. Покиньте помещение, третий раз повторять не буду.~ /*Me sorry. Me got lost. You say that again?*/
+@8 = ~MT: Иди своей дорогой. Тут тебе не место.~ /*Just wait here a while longer.*/

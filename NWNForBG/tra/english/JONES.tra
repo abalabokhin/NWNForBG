@@ -1,0 +1,14 @@
+@0 = ~This area is in the care of the Temple of Tyr. May I inquire as to what you hope to find here?~
+@1 = ~I am in service to Aribeth as a guard, just like you.~
+@2 = ~I have been sent here by Oleff to see Briley.~
+@3 = ~My purpose here is not your business.~
+@4 = ~Goodbye.~
+@5 = ~MT: Понятно. Что ж, входите. Стражникам вход разрешен, как и людям с разрешением от Олеффа из Храма Тира. Я прослежу за тем, чтобы сюда входили только городские стражники. А вы следите за тем, чтобы не возникало каких-либо проблем, пока вы здесь, ладно?~ /*I'll make certain that only other city guards are allowed in as well. You make sure that nothing goes wrong while you're here, all right? Right.*/
+@6 = ~Can I ask you questions about this place?~
+@7 = ~Can I ask you about the district or the plague?~
+@8 = ~MT: А, понятно. Хмм, а вы не один из новобранцев городской стражи? Я прослежу за тем, чтобы сюда входили только городские стражники. А вы следите за тем, чтобы не возникало каких-либо проблем, пока вы здесь, ладно?~ /*I'll make certain that only other city guards are allowed in as well. You make sure that nothing goes wrong while you're here, all right? Right.*/
+@9 = ~I have been hired to make sure that nobody makes trouble here. If you won't tell me why you are here, then I won't let you pass.~
+@10 = ~Yes, yes. On your way, then.~
+@11 = ~Don't know nothing about it. I just guard what I'm told to guard. Looks like nothing but a hole in the ground to me.~
+@12 = ~MT: Я довольно плохо знаю этот район. Думаю, поэтому мне и дали это задание. Другие стражники не хотели сюда переводиться. Что касается чумы, я знаю, что мне она ни к чему, и этого достаточно. А теперь проходите, хорошо? Мне не разрешается разговаривать с людьми.~ /*As for the plague, I know I don't want it and that's enough. Now get going, all right? I'm not supposed to be talking to people.*/
+@13 = ~If you have any questions regarding this place, I suggest you take them up with Briley below, or Oleff in the Temple in the City Core.~

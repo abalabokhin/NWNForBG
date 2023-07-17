@@ -1,0 +1,96 @@
+@0 = ~How in the name of the gods did you get in here?! Prepare to be destroyed, utterly!~
+@1 = ~Please! Attack no more! I am defeated!~
+@2 = ~Perhaps I was too rash in attacking you. Please, accept my apology.~
+@3 = ~Perhaps you had better answer my questions before I finish what you started.~
+@4 = ~Apologies won't save you now, mage! Die!~
+@5 = ~I should like to counter that with a question of my own. Why are you in my home?~
+@6 = ~Who are you, exactly?~
+@7 = ~That isn't how it works. You answer my questions or I kill you.~
+@8 = ~Then I shall blast you into dust!~
+@9 = ~I am Wanev, a man well-versed in the magical arts and of no small renown. I am somewhat displeased at being defeated by you. My idiot friends will have many a jest at my expense.~
+@10 = ~I have been sent here to take a magical gem from you.~
+@11 = ~I want your valuables. Anything and everything of value.~
+@12 = ~MT: У меня нет вопросов.~ /*Me have other question.*/
+@13 = ~MT: Здесь есть лестница на верхние этажи, но почему-то я не могу по ней пройти.~ /*One side!  Can't you see I need to get through?*/
+@14 = ~You are of no use to me. Die!~
+@15 = ~What questions do you have?~
+@16 = ~(sigh) I've been defeated by a common houseburglar? Fine, take my gold you barbaric leech!~
+@17 = ~Come on, you must have more than that. Hand it over!~
+@18 = ~That is not enough! Give me more or I'll feed you a foot of sharpened steel!~
+@19 = ~I appreciate not being killed. Take this wardstone and my servants shall leave you be.~
+@20 = ~MT: Спасибо, что не убили меня.~ /*Thank you for healing me.*/
+@21 = ~Will you not even leave me enough to feed myself?! Take it and begone!~
+@22 = ~Stop, please! If you are so vey desperate take this and begone!~
+@23 = ~There is no more gold. I shall be henceforth known as 'Wanev the Idiot Pauper' by those bastards in the Gibbering Twelve! My reputation is ruined!~
+@24 = ~So the Serpent still seeks an easy way home. Well, he shall have to become used to disappointment. He cannot have the gem.~
+@25 = ~MT: Меня наняли, чтобы забрать у тебя драгоценный камень, и я это сделаю. Дай сюда камень немедленно!~ /*I have been hired to get the gem and I intend to get it. Hand it over now!*/
+@26 = ~You don't understand! I have lost the gem and am quite unable to retrieve it, despite my powers. You would be wise to forget about this job and leave now.~
+@27 = ~That is not acceptable. Tell me what happened to the gem.~
+@28 = ~I do not care to listen to your excuses. Tell me where the gem is or suffer the consequences.~
+@29 = ~Well, if you wish to get yourself killed, why should I care?~
+@30 = ~No need to get nasty. I'll tell you.~
+@31 = ~MT: Я слышал, что Элэйт собирается захватить драгоценный камень, и до получения этой информации меня эта побрякушка не особенно интересовала. Я заинтересовался, зачем он хотел ее украсть. Признаюсь честно, я не из терпеливых. У меня есть дела получше, чем копаться в библиотеке в поисках сведений о каком-то драгоценном камне. Так что я решил призвать беса или какого-нибудь младшего демона и поручить эту работу им. Однако произошла, э, небольшая неприятность.~ /*I had heard that Elaith intended to take this gem and prior to receiving that information I had taken little interest in the bauble. I wondered why he intended to steal it.*/
+@32 = ~MT: Я был немного небрежен во время подготовки, и маленькому демону удалось вырваться из круга вызывания. Это послужит мне уроком: никогда не читайте заклинания в пьяном виде. Этот негодяй растянул портал и начал вызывать себе на подмогу других демонов. Я как можно быстрее запечатал эту зону и сразу протрезвел.~ /*I was somewhat less than careful with the preparations and the little fiend escaped the summoning circle. Let this be a lesson about casting when drunk.*/
+@33 = ~And the gem?~
+@34 = ~MT: Мне все равно. До свидания.~ /*That is all. Goodbye.*/
+@35 = ~MT: В спешке я забыл камень в комнате для вызывания. Так что, как вы понимаете, там полно демонов, а драгоценный камень лежит внутри, и, скорее всего, его стянул этот проклятый бес!~ /*So you see, the area is quite full of demonic adversaries and the gem lies within, most likely stolen by that spiteful imp!*/
+@36 = ~Where is this area and how do I get there?~
+@37 = ~MT: Вы можете пройти туда вон по той лестнице, которая находится у вас за спиной, правда, из соображений безопасности, я запечатал ее своей магией.~ /*The door behind me shall teleport you there though I keep it well locked for safety's sake.*/
+@38 = ~MT: Снимите магические печати, и я добуду драгоценность.~ /*Give me the key to the door and I shall get the gem myself.*/
+@39 = ~Is there anything in the area that could help me get through without becoming demon fodder?~
+@40 = ~MT: Возьмите этот свиток. Записанное на нем заклинание снимет магическую печать с лестницы, и знайте: если вам удастся закрыть портал, я буду очень благодарен. Драгоценный камень в любом случае можете забрать. Что скажете?~ /*Take the key and know this: if you should be able to close the demon portal, I would be most grateful. The gem is yours regardless. What say you?*/
+@41 = ~I will attempt to close the portal as I search for the gem.~
+@42 = ~If the reward is good.~
+@43 = ~I'm not interested. I just want the gem.~
+@44 = ~MT: Если бы была какая-нибудь уловка, я бы и сам справился с этой задачей.~ /*Is there a reason for the undead infestation?*/
+@45 = ~MT: Это слишком опасно. До свидания.~ /*Neither, thanks. Goodbye.*/
+@46 = ~MT: Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце на жаровню. Тогда портал будет закрыт. Зовут его Гулгаш. Пожалуйста, возвращайтесь, как только закроете портал, а я тем временем поищу подходящее вознаграждение.~ /*You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.*/
+@47 = ~MT: Южная дорога: Закрытие портала Вэйнива
+
+Волшебник Вэйнив признал, что хранит у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ /*In his tower south of Port Llast, the wizard Wanev admits to having the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. Unfortunately, he left it in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, has opened up a portal to the Abyss and the chambers are now home to all manner of beasts and demons. If Gulgash can be killed, Wanev claims that the portal can be closed by placing the imp's heart upon the adjacent brazier.*/
+@48 = ~MT: Возьмите этот оберег, и мои слуги не тронут вас.~ /*I appreciate not being killed. Take this wardstone and my servants shall leave you be.*/
+@49 = ~I'm sure I can dig up some magical equipment of no small worth while you try to set things right.~
+@50 = ~MT: Что ж, ладно. Если передумаете, я буду очень благодарен. Возьмите этот оберег, и мои слуги не тронут вас.~ /*I appreciate not being killed. Take this wardstone and my servants shall leave you be.*/
+@51 = ~Very well. If you change your mind, I would be grateful.~
+@52 = ~MT: Я запечатал ее магией. Дело в том, что я призвал беса чтобы поручить ему кое-какую работу. Однако произошла, э, небольшая неприятность. Я был немного небрежен во время подготовки, и маленькому демону удалось вырваться из круга вызывания. Это послужит мне уроком: никогда не читайте заклинания в пьяном виде. Этот негодяй растянул портал и начал вызывать себе на подмогу других демонов. Я как можно быстрее запечатал эту зону и сразу протрезвел.~ /*I was somewhat less than careful with the preparations and the little fiend escaped the summoning circle. Let this be a lesson about casting when drunk.*/
+@53 = ~MT: Я помогу тебе решить эту проблему, разумеется за вознаграждение.~ /*I might help you... if the price is right.*/
+@54 = ~MT: Отлично! Возьмите этот свиток. Записанное на нем заклинание снимет магическую печать с лестницы, и знайте: если вам удастся закрыть портал, я буду очень благодарен. Вам всего-то и нужно убить проклятого беса, которого я призвал, и положить его гнусное маленькое сердце на жаровню. Тогда портал будет закрыт. Зовут его Гулгаш. Пожалуйста, возвращайтесь, как только закроете портал, а я тем временем поищу подходящее вознаграждение.~ /*You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.*/
+@55 = ~MT: Я сделаю это. Надеюсь награда будет достойная!~ /*I will do this for you, Gorgotha!*/
+@56 = ~MT: Южная дорога: Закрытие портала Вэйнива
+
+Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ /*In his tower south of Port Llast, the wizard Wanev admits to having the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. Unfortunately, he left it in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, has opened up a portal to the Abyss and the chambers are now home to all manner of beasts and demons. If Gulgash can be killed, Wanev claims that the portal can be closed by placing the imp's heart upon the adjacent brazier.*/
+@57 = ~What do you want now? Don't be rash and attack me again.~
+@58 = ~You mentioned that you had lost the gem?~
+@59 = ~MT: Я думаю, пора тебе попрощаться с жизнью. Умри!~ /*"Enough. Time for you to die."*/
+@60 = ~MT: Мне ничего не нужно. Прощай.~ /*That's all I need. Farewell.*/
+@61 = ~Indeed. I made a mistake when summoning that imp and he opened up a demonic portal in my summoning chambers.~
+@62 = ~MT: Прощайте. Постарайтесь тут ничего не сломать.~ /*Farewell. Wish me luck.*/
+@63 = ~Greetings. Have you changed your mind about attempting to close the portal?~
+@64 = ~Hello, again. Have you managed to kill the imp and close the portal?~
+@65 = ~I haven't closed the portal yet.~
+@66 = ~What was I supposed to do again?~
+@67 = ~The portal has been closed.~
+@68 = ~MT: Пожалуйста, возвращайтесь, когда закроете портал.~ /*Please return if you do.*/
+@69 = ~You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.~
+@70 = ~Ah, excellent. Here is a reward for your troubles. A bruised ego and the loss of a couple of magic items are a small price to pay for having my summoning chamber back.~
+@71 = ~We are both of the same race. Surely you could take that into consideration and offer a bit more.~
+@72 = ~I've just saved your home from a demon infestation. I want a bigger reward.~
+@73 = ~Why don't you throw a little extra in so I won't have to hurt you again?~
+@74 = ~MT: Этого достаточно. До встречи!~ /*That is sufficient. Thank you.*/
+@75 = ~Why not, my friend! Here is some extra coin!~
+@76 = ~Hmm. You have saved me a great deal of trouble! Here is some extra coin!~
+@77 = ~The reward I've given you is quite valuable and quite sufficient.~
+@78 = ~Calmly, friend. There is no reason for violence. Take my last coins, then!~
+@79 = ~MT: Что ж, у меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~ /*Well, I have some work to do so we shall most likely not meet again. I could set up a teleport portal to help you get out of here, if you'd like.*/
+@80 = ~MT: Конечно. Это было бы неплохо.~ /*That would be good.*/
+@81 = ~I'll find my own way out.~
+@82 = ~Very well. Goodbye.~
+@83 = ~MT: Южная дорога: Закрытие портала Вэйнива
+
+Волшебник Вэйнив хранил у себя в башне один из драгоценных камней, которые разыскивает Элэйт Кролнобер из таверны "Герб Союза". К сожалению, он оставил камень в зале вызываний, где недавно произошел несчастный случай. Его бес Гулгаш открыл портал в Бездну, и в зале кишели всякие чудовища и демоны. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ /*In his tower south of Port Llast, the wizard Wanev has surrendered ownership of the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. It was in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, had opened up a portal to the Abyss and the chambers had become home to all manner of beasts and demons. Gulgash now lies dead, the portal closed, and Wanev's reward claimed.*/
+@84 = ~MT: Портал закрыт.~ /*The portal has been closed.*/
+@85 = ~MT: Хмм. Вы избавили меня от множества неприятностей! Вот, возьмите еще немного денег! У меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~ /*Well, I have some work to do so we shall most likely not meet again. I could set up a teleport portal to help you get out of here, if you'd like.*/
+@86 = ~MT: Ваша награда весьма ценна. И этого более чем достаточно. У меня много дел, и, скорее всего, мы с вами больше не встретимся. Если хотите, я могу телепортировать вас наружу, чтобы вы могли сберечь время, выбираясь отсюда.~ /*Well, I have some work to do so we shall most likely not meet again. I could set up a teleport portal to help you get out of here, if you'd like.*/
+@87 = ~MT: Южная дорога: Закрытие портала Вэйнива
+
+Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и зал заполнился всякими чудовищами и демонами. Теперь Гулгаш мертв, портал закрыт, и награда с Вэйнива получена.~ /*As it passes through the energies of the portal, there appears to be some kind of violent reaction. The token bursts and the portal flares purple for just a moment. The magic of the structure is weakened, but not destroyed...*/

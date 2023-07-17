@@ -1,0 +1,14 @@
+@0 = ~I am Uncas, a shaman of the Uthgardt Elk tribe. Thank you for saving me. I have many curative powers that are at your disposal. Are you in need of healing?~
+@1 = ~What exactly is it you do here?~
+@2 = ~The Elk tribe has allied with Luskan and is now the enemy of Neverwinter!~
+@3 = ~I could use some healing.~
+@4 = ~I don't need anything. You are free to go, if you wish.~
+@5 = ~This isn't a rescue, Elk boy! Time for you to die!~
+@6 = ~MT: Мой народ, племя Лося, гибнет от ужасной эпидемии, охватившей в свое время Невервинтер. Мой вождь, Зокан Громовержец, послал меня попробовать найти лекарство. Но меня схватил Гузуд со своей бандой орков. Возможно, это случилось несколько недель назад, не знаю, я не видел солнечного света с того самого дня. Я могу хоть чем-то тебе отплатить за свое спасение?~ /*But I was captured by Guzud and his band of orc raiders. This was many weeks ago, I have not seen the light of day since. Is there some way I can repay you for rescuing me?*/
+@7 = ~Why would Guzud capture you when the Elk tribe and Luskan are allies?~
+@8 = ~Zokan Thunderer is dead, the Elk tribe is no more.~
+@9 = ~MT: Племя Лося не союзник Лускана! По крайней мере, не было, когда я уходил. Но меня не было слишком долго. Но Зокан никогда не пошел бы на союз с Лусканом. Если только... возможно, Лускан предложил лекарство, которое избавит мой народ от эпидемии. Возможно, в отчаянии Зокан объединился с ними, чтобы спасти племя.~ /*But Zokan would never join with the evil of Luskan. Unless... maybe Luskan offered a cure for the plague that ravishes my people. Perhaps in desperation Zokan joined them to save the tribe.*/
+@10 = ~I shall use all my medicinal knowledge to heal you as best I may.~
+@11 = ~I shall return to my tribe, the people of the Elk. Thank you once more for saving me.~
+@12 = ~May the strength of the Elk empower my spells!~
+@13 = ~MT: Нет, не может быть! Мое племя, мои люди, они все мертвы? Как такое могло случиться? Прошу, оставь меня. Их души бродят по пустыням другого мира, я должен молить богов, чтобы мое племя обрело, наконец, покой. Прости, но ради моего народа я должен уйти немедленно.~ /*Please, I must leave at once. Their spirits wander the wastelands of the other world, I must appease the gods so my tribe may find rest. Forgive me, but for the sake of my people I must leave immediately.*/

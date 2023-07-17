@@ -1,0 +1,30 @@
+@0 = ~You... you're an adventurer, aren't you? I mean... I mean greetings. Uh... that is, my pa and I could certainly use your help.~
+@1 = ~Haven't you heard of me?~
+@2 = ~Calm down. What seems to be the problem?~
+@3 = ~Is there a reward in it for me?~
+@4 = ~I have no time to listen to this.~
+@5 = ~MT: Э-э... Нет. А должен? Я живу на ферме за городом, так что боюсь, новости до нас просто не доходят. Но мы слышали, что в Порт-Лласт прибыло множество искателей приключений. И папа послал меня сюда, чтобы я нашел кого-нибудь и отправил к нему. Это и правда очень важно!~ /*We'd heard that a bunch of adventurers had come to Port Llast, however, so my pa sent me here to find some people to send to him. It's real important!*/
+@6 = ~Does this have anything to do with a cult?~
+@7 = ~Tell me what's wrong, then.~
+@8 = ~Uhh... maybe. I don't know anything about a cult. You'd have to talk to my pa about that.~
+@9 = ~MT: Ну, мы с папой... Его зовут Геррол, в Порт-Лласте его все знают... мы живем на ферме к северу от городских ворот. На холмах вокруг нашей фермы обитает множество монстров. Обычно они нас особо не беспокоили, но в последнее время они совсем обнаглели и начали нападать на путешественников, караваны и так далее.~ /*There's lots of monsters that live in the hills around our farm. Normally they don't bother us so much, but lately they've been ambushing travelers and caravans and such, being real bold.*/
+@10 = ~They even went and kidnapped my mother while me and pa were away from the farm last week! So my pa sent me to town to get help.~
+@11 = ~Surely someone in authority can help you.~
+@12 = ~MT: Ты хочешь чтобы я нашел твою мать?~ /*Do you want me to look for him?*/
+@13 = ~Why don't you and your father just leave?~
+@14 = ~It's not my concern.~
+@15 = ~I think so. I bet my pa could pay you, if you helped out. You could talk to him about it, at least.~
+@16 = ~But... but please! There's nobody else who can help us! Everyone is busy with their emergencies!~
+@17 = ~And I'm busy with mine. Excuse me.~
+@18 = ~Get lost, kid.~
+@19 = ~Fine, fine. Tell me what this is all about, then.~
+@20 = ~I... oh... okay. I guess there's nothing I can say to convince you.~
+@21 = ~MT: Папа говорит, он разослал множество писем о наших проблемах, но мэр весь поглощен помощью Невервинтеру, у него нет времени помогать нам. Несколько других искателей приключений взялись за это, но никто из них не вернулся назад. Я надеялся... Может, вам удастся то, что не удалось им...~ /*There were some other adventurers who went before, but none of them has come back. I was hoping... maybe you could do what they couldn't...*/
+@22 = ~All right, I'll help.~
+@23 = ~We just needs your help! All I ask is that you go and talk to my pa, Gerrol, nothing else.~
+@24 = ~Pa says he won't leave ma behind... and besides, it's our land. Pa doesn't want to go. Couldn't you... just talk to him?~
+@25 = ~MT: Это было бы прекрасно. Уверен, папа оценит вашу помощь. Чтобы попасть на нашу ферму, нужно выйти из восточных ворот и повернуть на север. Я пока постараюсь найти еще кого-нибудь, чтобы послать к папе, пока он не позовет меня обратно. Но я уверен, что у вас все получится. Просто отправляйтесь к нему и поговорите с ним.~ /*I'll stay here for now and find some more people to send to pa, until he calls me back. I'm sure you'll do the trick, though. Just go and talk to him.*/
+@26 = ~MT: Перекресток: Жена Геррола 
+
+Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.~ /*A desperate young man has told you a tale of how his family has been plagued by humanoid bandits in the northern hills. His mother was kidnapped by them recently and he was sent to Port Llast to find help. His father, Gerrol, can be found at their farm just outside town to the north.*/
+@27 = ~MT: Пажалуйста, найдите мою маму!~ /*Please enter the filename*/

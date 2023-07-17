@@ -1,0 +1,64 @@
+@0 = ~Oh dear, I see the nymph has bewitched another one. Wait, you don't have the look of one beguiled by her sorcery.~
+@1 = ~No, I'm not. I have control of my own mind. Who are you?~
+@2 = ~I am not so foolish as to be captured by a nymph. You may leave now, thanks to me.~
+@3 = ~You just wait here. I'll be back.~
+@4 = ~MT: Меня зовут Терари. Я друид из рощи Леса Невервинтер. А с кем имею честь?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <PRO_SIRMAAM>?*/
+@5 = ~My name is <CHARNAME>. Aawill sent me to find you.~
+@6 = ~MT: Я из команды <CHARNAME>. Аавилл послал нас на твои поиски.~ /*My name is <CHARNAME>. Aawill sent me to find you.*/
+@7 = ~Wait, before you go, did Aawill send you?~
+@8 = ~He sent me to rescue some druids. Are you one of them?~
+@9 = ~I have met someone named Aawill. How do you know him?~
+@10 = ~I will try to wait patiently, though I do not wish to be locked in here again, so please make haste.~
+@11 = ~Then I owe both Aawill and you a debt of honor. I only wish I had gotten further on my mission to save the Spirit of the Wood.~
+@12 = ~How far did you get?~
+@13 = ~"How did you end up here?"~
+@14 = ~MT: Мудрый Аавилл. Всегда-то он обо всем позаботится. Меня зовут Терари. Я друид из рощи Леса Невервинтер. А с кем имею честь?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <PRO_SIRMAAM>?*/
+@15 = ~MT: Он - глава нашего круга друидов. Меня зовут Терари. Я друид из рощи Леса Невервинтер. А с кем имею честь?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <PRO_SIRMAAM>?*/
+@16 = ~I didn't get very far. I thought that although the animals were not communicating, the nymphs might be a good source of information. They may be flighty, but I thought that they would have strong enough minds to resist the Spirit's madness.~
+@17 = ~It is rather embarrassing actually. I thought the nymphs might be a good source of information, since they have stronger minds than your average woodland animal.~
+@18 = ~I came to this house first, since I had... um... known this particular nymph in the past. She seemed very pleased to see me, eager even. I was hoping to get some information from her, without... well... going into her house.~
+@19 = ~Why didn't you want to enter her house?~
+@20 = ~You were suspicious already, weren't you?~
+@21 = ~MT: Где-то в глубине души часть меня все удивлялась, почему же она ни разу не назвала меня по имени, хотя мы знали друг друга довольно давно. Это казалось... странным. К сожалению, я не мог думать связно. Полагаю, я был просто уверен, что она не сможет сделать ничего такого, с чем я не справлюсь. Когда мы вошли в ее дом, она предложила мне раздеться, и пока я это делал, она наложила на меня заклинание.~ /*Unfortunately, I was not thinking clearly. I guess I was just certain that I could handle anything she tried. When we got into her house she suggested that I get undressed, and while I was doing that she cast a spell on me.*/
+@22 = ~I guess she knew how to manipulate you.~
+@23 = ~I guess I could see how that could happen.~
+@24 = ~Being locked up is the least of what you deserved for such disgusting behavior.~
+@25 = ~She did seem a bit more eager than normal to get me into her house.~
+@26 = ~Next thing I knew, I was locked in here, unable to escape. The nymph hasn't harmed me, she just won't let me go. Before she enters the room she casts some kind of spell and I wake up later with no memories of what happened.~
+@27 = ~You can judge my behavior when you have proven your own to be perfect.~
+@28 = ~Now that you have freed me, I must return to the grove to discuss the Spirit of the Wood with the other druids. Maybe the others have learned more than I have.~
+@29 = ~The Spirit is dead. I'm afraid I had to kill it.~
+@30 = ~I have cured the Spirit of the Wood. You no longer need to worry about that problem.~
+@31 = ~I'm trying to help with that. What have you learned about the Spirit of the Wood?~
+@32 = ~The other druids never returned either. I don't suppose you know where they might be?~
+@33 = ~Are you able to get out of here on your own now?~
+@34 = ~That is horrible news. The forest will suffer for generations. I desperately hope that you tried everything possible before going to such lengths.~
+@35 = ~I had no other choice. If I could have done it some other way, I would have.~
+@36 = ~Well, there might have been another way, but this was the quickest.~
+@37 = ~MT: Должно быть, ты из тех героев, о которых слагают легенды. Как тебе удалось совершить такой подвиг? Нет, не говори мне. Наверняка, в будущем тебе еще предстоит многое совершить. Когда ты станешь знаменитостью и все барды будут слагать песни о твоих подвигах, надеюсь, ты вернешься в этот лес и сможешь насладиться его тишиной.~ /*You must be the kind of hero that legends are born of. How is it that you accomplished such a deed? No, don't tell me now, you have much more to do I'm sure.*/
+@38 = ~MT: Наверняка было сделано все возможное. Надеюсь только, что лес сможет пережить эту потерю. А мне пора уходить. Я сам доберусь. Встретимся в роще друидов.~ /*I'm sure that you did your best. I just hope the woods survives this loss. I should get going now.*/
+@39 = ~MT: Такое жестокое отношение к природе - признак черной души. Поверь мне, когда-нибудь твои поступки тебе еще аукнутся. Зло порождает зло и свою собственную гибель. Я могу сказать и больше, но думаю, тебе не интересно слушать мою проповедь. Я оставлю тебя в руках природы. Я сам доберусь. Встретимся в роще друидов.~ /*Evil begets evil and is its own downfall. I would say more, but I suppose you are hardly interested in a sermon from me. I will leave you in the hands of nature now.*/
+@40 = ~MT: Может, мы сможем подружиться и рассказывать друг другу разные истории. А пока этого не произошло, мне нужно уходить. Я сам доберусь. Встретимся в роще друидов.~ /*Maybe then we can share stories and maybe become friends. Until then I must go.*/
+@41 = ~MT: Я не знаю почему, но Дух определенно безумен, и это безумие заражает Лес. Оно подействовало даже на нимф, так что у него неслабая хватка. Я знаю, для того, чтобы добраться до Духа, тебе придется каким-то образом войти в пруд, с помощью которого он входил и выходил из Леса. Перед тем, как наложить заклинание, нимфа упомянула, что Дух не показывался здесь уже довольно давно.~ /*I do know that in order to get to the Spirit you will have to find a way to enter the pool that it used to come through to get into and out of the Wood. Before she cast the spell, the nymph did mention that the Spirit hasn't been here in quite a while.*/
+@42 = ~Tell me more about this pool.~
+@43 = ~MT: Почему Дух не приходит?~ /*Why hasn't the Spirit come?*/
+@44 = ~MT: Я не очень-то в курсе, что собирались делать остальные, правда, Орлейн направлялся в юго-восточную сторону. Что же касается Бри, то она так тщеславна - трудно угадать, что придет ей в голову. Хотел бы я помочь тебе еще чем-нибудь. Надеюсь, они разузнали о Духе больше, чем я.~ /*I am unsure of what the others had planned, although Orlane was headed in a southeasterly direction. As for Bree, it's hard to divine her intentions, since her vanity masks them well.*/
+@45 = ~MT: Я и сам доберусь. Встретимся в роще друидов. Спасибо тебе еще раз, и большой удачи.~ /*I can make it on my own. I will meet up with you at the druid grove.*/
+@46 = ~MT: Лес Невервинтер: Дух Леса
+
+Дух Леса Невервинтер с недавних пор находится в плачевном состоянии, и архидруид Аавилл, который возглавляет конклав, очень обеспокоен этим. С большой неохотой он позволил нам войти в лес, в надежде, что мы поможем ему выяснить, что же произошло. Другие друиды в глубине леса говорят, что можно увидеть Духа сначала зайдя, а потом выйдя из лесного пруда, и совершив какой-то ритуал. Однако они не имеют ни малейшего представления о том, что это мог бы быть за ритуал.~ /*The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has reluctantly granted forest access to adventurers so that they might help him right whatever has gone wrong.
+Other druids deeper in the forest speak of having seen the Spirit entering and leaving a pool of water, as if part of some ritual. What that ritual may be remains unclear, however.*/
+@47 = ~The pool is some kind of entrance to another realm where the Spirit usually lives. I haven't the slightest idea what the other realm looks like though.~
+@48 = ~Why didn't you go into it?~
+@49 = ~What do you mean another realm?~
+@50 = ~She didn't say why, she just said that the Spirit hasn't come out of the pool in a while. Nymphs don't have a very good grasp of time.~
+@51 = ~MT: Ни одно живое существо не может пройти через портал в иное царство. Так говорится в самых старых преданиях моего народа. Предания говорят, что портал связывает реальности живых и мертвых. Дух - создание, некоторым образом, живое лишь наполовину, так что оно может ходить туда и сюда через портал, а мы нет.~ /*The stories say that the portal exists between the realms of life and death. The Spirit exists as some sort of half-life, so she can go back and forth through the portal, but we can't.*/
+@52 = ~Do you have any suggestions of what I should do?~
+@53 = ~It's another plane of existence. The pool acts as a portal to this other place.~
+@54 = ~MT: Тебе надо попытаться найти остальных и выяснить, не удалось ли им узнать больше. Кроме того, в Лесу есть еще ведьма по имени Сетара, она тоже может что-то знать. Я как раз собирался поговорить с ней после нимф. Кроме этой, у меня нет никаких мыслей о том, как помочь Духу, но это надо сделать поскорее, пока какой-нибудь сорвиголова из искателей приключений не решил перебить в этом лесу все живое.~ /*You should try to find the others and see if they know any more. There is also a witch named Setara in the Wood, who might know something. I was going to talk to her after the nymphs.*/
+@55 = ~As patient as the trees I wait upon your pleasure. Still, I should like to be going soon.~
+@56 = ~Why don't you tell me your story?~
+@57 = ~Thank you for your assistance. I would be grateful if you wouldn't spread the details of what happened to me around.~
+@58 = ~MT: Лес Невервинтер: Дух Леса
+
+Дух Леса Невервинтер с недавних пор находится в плачевном состоянии, и архидруид Аавилл, который возглавляет конклав, очень обеспокоен этим. С большой неохотой он позволил нам войти в его лес, в надежде, что мы поможем ему выяснить, что же произошло.~ /*The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has reluctantly granted forest access to adventurers so that they might help him right whatever has gone wrong.*/

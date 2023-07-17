@@ -1,0 +1,56 @@
+@0 = ~MT: Добро пожаловать, друг. Я Юсам, друид с севера, посредник между Союзом Лордов и Утгардтами. Если хочешь, ты можешь отдохнуть в этой роще, тут спокойно. Или я нужен тебе по какой-то другой причине?~ /*You are free to take solace in the tranquility of my grove, if you wish. Or is there some other reason you have sought me out?*/
+@1 = ~My name is <CHARNAME>. I work for Aarin Gend.~
+@2 = ~What is a druid doing up here on this plateau?~
+@3 = ~I want to ask you some questions.~
+@4 = ~I'd like to purchase some supplies.~
+@5 = ~I'll be going now.~
+@6 = ~MT: Когда Союз Лордов установил здесь лагерь, Аарин сказал мне, что он набирает агентов для поиска древних магических артефактов. Я желаю тебе удачи в твоих поисках, хотя я уже сказал Аарину, что меня больше волнует состояние Утгардтов.~ /*When the Lords' Alliance set up camp here Aarin told me he was recruiting agents to search for lost artifacts of ancient magic.*/
+@7 = ~Plight of the Uthgardt? What do you mean?~
+@8 = ~This land and its people are under my protection and care. That is why the plight of the Uthgardt troubles me so. Their suffering is like a thorn in my heart.~
+@9 = ~MT: Проблемы Утгардтов? Что ты имеешь в виду?~ /*Plight of the Uthgardt? What do you mean?*/
+@10 = ~MT: Я знаю все пути жизни леса и тайны смены времен года, но в том, что касается мирских дел, познания мои весьма ограничены. Я пытаюсь не позволять подобным делам нарушать спокойствие моей рощи. Я попрошу тебя оставлять все свои проблемы снаружи, когда ты входишь сюда, дитя мое. Это место - убежище для тех, кто хочет отдохнуть от внешнего мира. Утгардты приходят сюда, чтобы забыть на время о плачевном состоянии своего народа. Не стоит напоминать им об этом.~ /*This place is a refuge from the outside world. The Uthgardt come so they might escape the plight of their people. They do not need you to remind them of such things.*/
+@11 = ~You are welcome to see my stock, where you will find not only those treasures gathered from the glorious bounty of nature, but also those items oft-used by nature's servants.~
+@12 = ~Go, child, and may a gentle breeze carry you safely to your destination, like the summer winds that bring seeds to replenish the eternal forest.~
+@13 = ~My child, this war takes a terrible toll on the Uthgardt. The armies of Luskan lay waste to their lands and the Black Lion tribe has lost many warriors battling alongside the Lords' Alliance soldiers.~
+@14 = ~And as I have already told you, the Elk tribe has aligned itself with the Luskan forces for reasons I cannot fathom.~
+@15 = ~The Elk tribe are no more. I have slain their Chieftain.~
+@16 = ~Commander Damas has infected the Elk tribe with the plague.~
+@17 = ~Zokan, leader of the Elk tribe, asked me to show this dreamcatcher to you.~
+@18 = ~But it is for the Uthgardt Elk tribe that I worry most of all. They have aligned themselves with the Luskan destroyers to slaughter the defenseless settlers around Fort Ilkard in the south.~
+@19 = ~You're a druid. Can't you make them stop?~
+@20 = ~MT: Увы, все так, как я и думал. С Зоканом невозможно было договориться, его племя заразилось злом лусканских войск. Мне больно слышать это, но я благодарю тебя за эти новости. Дитя мое, тебе удалось расследовать для меня это дело. Ты заслуживаешь награды. У меня мало что есть, но, пожалуйста, прими это кольцо в награду за свои труды.~ /*Alas, it is as I feared. Zokan was not to be reasoned with, his tribe had fallen in with the evil of Luskan forces. I thank you for this news, though it brings me great pain to hear.*/
+@21 = ~MT: Исследовать состояние дел в племени Лосей
+
+Зокана Громовержца, вождя племени Лосей, больше нет. Юсам, друид Севера, был опечален, услышав эту новость, однако он понял, что уничтожить племя Лосей было действительно необходимо.~ /*Zokan Thunderer, leader of the Elk tribe, is no more. Upon hearing the news Yusam, Druid of the North, was saddened, though he understood the necessity of the Elk tribe's destruction.*/
+@22 = ~MT: Командир Дамас известен своей жестокостью, но даже от него я не ожидал подобного злодейства! Увы, я мало что смогу сделать, у меня нет с собой лекарства от чумы. Но Дамас не глуп. Если он заразил племя Лося, у него должно быть лекарство, на тот случай, если заразится кто-то из его людей. Может быть, ты поговоришь с Дамасом и попробуешь убедить его передать мне лекарство. Я боюсь, другого способа спасти племя Лося просто не существует.~ /*Commander Damas is well known for his cruelty, but I did not suspect even he of such a vile act! Alas, there is little I can do as I have none of the plague cure with me.*/
+@23 = ~I'll go speak to Damas at once!~
+@24 = ~I looked into this like you asked. This your problem now, Yusam.~
+@25 = ~MT: Я узнаю знак племени Лося. Это символ перемирия и раскаяния. Это должно означать, что Зокан извиняется за все, что сделало его племя. Я снова отправлю своих посланцев, чтобы наладить отношения с народом Лося. Дитя мое, тебе удалось расследовать для меня это дело. Ты заслуживаешь награды. У меня мало что есть, но, пожалуйста, прими это кольцо в награду за свои труды.~ /*I recognize this Elk tribe token. It is a symbol of truce and contrition. It must mean that Zokan is apologizing for what his tribe has done. I will send my emissaries at once to reestablish relations with the Elk people.*/
+@26 = ~MT: Исследовать состояние дел в племени Лосей
+
+Племя Лося излечилось от чумы, которую наслал на них командир Дамас из форта Илкард, и больше они не станут помогать армии Лускана в битве против Невервинтера. Друид Юсам был рад узнать, что дети Лося снова будут откликаться на его наставления.~ /*The Elk tribe have been cured of the plague given to them by Commander Damas of Fort Ilkard, and will no longer aid the Luskan army in its battle against Neverwinter.
+Yusam the Druid was pleased to learn the children of the Elk will once more welcome his counsel.*/
+@27 = ~Once, the Elk tribe welcomed my counsel, but they have since turned their back on the way of nature. The emissaries I have sent to investigate have all been ruthlessly slain.~
+@28 = ~May the blessings of my sacred grove be with you on this mission.~
+@29 = ~MT: Тобой была предложена помощь в этом деле, дитя моя, а работа сделана лишь наполовину. Можно посадить семя, но нужно больше, чем это, чтобы дерево пустило корни и выросло. Мне некому больше поручить это дело, дитя мое. Если тебе удастся помочь племени Лося, я обещаю, что награда тебя не разочарует.~ /*You offered your aid in this matter, my child, and the job is but half done. A seed can be planted, but that alone will not cause the tree to take root and grow.*/
+@30 = ~Forget it.~
+@31 = ~As a fellow servant of the forest and a true child of nature you can no doubt understand my distress.~
+@32 = ~As a servant of nature I am honored to investigate this matter for you, Yusam of the Grove!~
+@33 = ~I could help you with this... for a price.~
+@34 = ~You are not a child of nature, so perhaps you cannot understand the pain I feel over what has happened with the Elk tribe.~
+@35 = ~Perhaps I could investigate this for you, Yusam.~
+@36 = ~MT: Я не могу заставить тебя помочь мне, дитя мое, хотя надеюсь, со временем цветок милосердия расцветет в твоем сердце и заставить тебя передумать. Могу ли я сделать для тебя еще что-нибудь, дитя мое?~ /*I cannot force you to aid me in this matter, my child, though I hope in time the flower of charity will bloom in your heart and change your mind.*/
+@37 = ~MT: Это задание может оказаться опасным, дитя мое. Племя Лося убивало всех, кто пытался договориться с ними. Но если ты выяснишь, почему племя Лося отвернулось от нас, я буду тебе очень благодарен. Племя Лося сейчас находится в своей крепости, к западу от Форта Илкард, хотя они продолжают совершать набеги на форт. Может быть, ты отправишься туда, найдешь их и поговоришь с их вождем, Зоканом Громовержцем.~ /*The Elk tribe have fortified themselves inside their keep to the west of Fort Ilkard, although they continue to make raids on the fort. Perhaps if you go there you can find them and speak to Zokan Thunderer, their chief.*/
+@38 = ~I'll be back when I learn more of the Elk tribe.~
+@39 = ~In the natural cycle good deeds bring good deeds in return. Should you find a way to bring the Elk tribe back into the fold you will be showered with an abundant bounty of rewards.~
+@40 = ~Your offer is generous, child. I cannot leave this grove, and there is nowhere else I may turn for aid. I fear, however, that you do not truly understand what you are about to undertake.~
+@41 = ~MT: Исследовать состояние дел в племени Лосей
+
+Юсаму нужен кто-то, кто согласится исследовать состояние дел в племени Лосей. Друид убежден в том, что есть какая-то причина, по которой они отвернулись от Союза Лордов и присоединились к армии Лускана. Юсам думает, что племя Лосей и их вождь, Зокан Громовержец, базируются в крепости на запад от форта Илкард.~ /*Yusam is looking for someone to investigate the Uthgardt Elk tribe. The druid is convinced there must be some reason they have turned away from the Lords' Alliance and joined with the Luskan army.
+Yusam believes the Elk tribe and their leader, Zokan Thunderer, are in a keep to the west of Fort Ilkard.*/
+@42 = ~It always pleases me when a fellow child of nature chooses to partake of the beauty of my grove.~
+@43 = ~Welcome, my child. Do you bring me news of the Uthgardt Elk tribe? Or is there some other purpose to your visit?~
+@44 = ~MT: Добро пожаловать, мой друг. Я всегда буду благодарен тебе за твою помощь в деле Лосей. Ты здесь, чтобы спастись от суеты и отдохнуть от мира? Или есть и другая причина твоего визита?~ /*Have you come here seeking a tranquil refuge from the outside world? Or is there perhaps some other reason for your visit?*/
+@45 = ~MT: Рад видеть тебя снова, дитя мое. Ты здесь, чтобы насладиться покоем и уединенностью священной рощи? Или есть еще что-то, из-за чего ты снова обращаешься ко мне?~ /*Well met once again, my child. Have you come to enjoy the peace and solitude of my grove?*/
+@46 = ~Who are you again?~
+@47 = ~I am Yusam, Druid of the North. I am the liaison between the Lords' Alliance and the Uthgardt tribes.~

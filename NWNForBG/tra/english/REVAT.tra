@@ -1,0 +1,66 @@
+@0 = ~Momma? Oh, you not Momma. Oh me in big trouble.~
+@1 = ~Sounds bad. What's your name?~
+@2 = ~There, there, fellow. It'll be all right. May I ask you some questions?~
+@3 = ~Don't you think you're a little old to be crying like that? What's your name?~
+@4 = ~Uh, don't worry, maybe I can help. Why don't you answer some questions for me first?~
+@5 = ~MT: Моя звать Реват. Я рад твоя видеть, жалко, что день такой плохой.~ /*I glad meet you <CHARNAME>. Me wish could be on happy day.*/
+@6 = ~What's so terrible about today?~
+@7 = ~Goodbye.~
+@8 = ~Me try, but me not in good mood to talk. Me having very bad day.~
+@9 = ~Why don't you start by telling me who you are?~
+@10 = ~MT: Твоя бы тоже плакал, когда такой плохой день. Моя звать Реват. Я рад твоя видеть, жалко, что день такой плохой.~ /*You cry too if you have such bad day. Me name be Revat. Who you be?*/
+@11 = ~Me try, but me having bad day. Me not good mood for talk.~
+@12 = ~What is your name?~
+@13 = ~MT: Тролли украсть моя мамочка. Моя надо ее назад, или я в большой беда. Мамочка есть хороший акохеролог, знаешь, это такой копатель старых штук. Я есть ее помощник. Моя защищать ее. Только моя плохо делать эта работа.~ /*Momma be good arkeyolojist, you know digs-for-old-stuff person. Me be her helper. Me protects her. Only me not do so good job.*/
+@14 = ~Why? What went wrong?~
+@15 = ~Like that should surprise me?~
+@16 = ~Ya, bye bye. Everybody go bye bye.~
+@17 = ~MT: Я говорить с другой охранник, когда смотреть назад, мамочка уже пропадай. Моя тогда не волноваться. Она, бывает, уходить, потом приходить назад. Потом мы слышать звуки, как гавкать бешеный собаки. Мы повернуться, а там стояй тролли и огры.~ /*Me talking with other guard when look back, Momma gone. Me not worry much. She go sometimes, then she come back.*/
+@18 = ~MT: Тролли такие гадкие.~ /*Trolls be nasty.*/
+@19 = ~And so like a great warrior, you ran away.~
+@20 = ~MT: Я думать, моя это заслужить. Но все равно некрасиво. Я говорить с другой охранник, когда смотреть назад, мамочка уже пропадай. Моя тогда не волноваться. Она, бывает, уходить, потом приходить назад. Потом мы слышать звуки, как гавкать бешеный собаки. Мы повернуться, а там стояй тролли и огры.~ /*Me talking with other guard when look back, Momma gone. Me not worry much. She go sometimes, then she come back.*/
+@21 = ~MT: Да. Гадкие тролли. Мерзкие огры. Тогда мы встай и начать драться. Много охраны убили чудища, но мы драться храбро. Потом тролль стукнуть меня по голова и порезать. У моя кровь в глазах, больше ничего не видеть. Тогда Джакс хватать моя рука и тащить из пещеры. Моя повезло выжить. Больше никто тут помочь моя не может, а я страшно ходить назад в темный пещера. Моя надо ждать тут, может, она приходить.~ /*Yes. Nasty trolls. Ugly ogres. So we get ready and start to fight. Monsters kill most of guards, but me fight brave. Then troll hit me in head and cut me.*/
+@22 = ~Don't you think the trolls would have eaten your mom?~
+@23 = ~Where would they be keeping your mom?~
+@24 = ~What would you pay to get your mom back?~
+@25 = ~Don't worry, I'll save her for you.~
+@26 = ~I wish I could help, but I'm busy right now.~
+@27 = ~Not what happen! You wait for story. I tell you 'bout trolls.~
+@28 = ~No! You no say trolls eat Momma! Momma no be eaten or me lost! You find Momma.~
+@29 = ~MT: Она там в пещерах. То место, куда ты ходить помогай Джакс. Моя слышать, твой разговор.~ /*She be in cave in area. Same place you go for to help Jax. Me see you got key.*/
+@30 = ~Me pay you 300 gold. Me not have much else. That be all Momma give.~
+@31 = ~MT: О-о, твоя добрый <MALEFEMALE>. Твой найти моя мамочка. Моя сказать, что знать. Они держать мамочка в пещера, тут рядом. Она такая хорошая и милая, только если не хватать уши, если не орать, когда тарелка разбить, или молоко пролить, или горошек не есть, или скакать, или... но моя нельзя так про нее говорить.~ /*They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.*/
+@32 = ~MT: Вот... я давай тебе колечко, показать мамочка. Это колечко папочки, а папочка умирать. Я его не знать, но моя мамочка говорить, он быть милый, спокойный человек. Моя друг говорить, его запилить до смерти, но я это не понимать. Иди быстрей, помогать спастись мамочка.~ /*Here... I give you ring to show Momma. This me daddy's ring from when he die. Me not know him, but me Momma say he be nice quiet man. Me friend say he nagged to death, but me not understand what that mean.*/
+@33 = ~MT: Восточная дорога: Мать слабоумного
+
+Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Чтобы освободиться от магических пут, которые удерживают ее, ей потребуется кольцо, которое находится у ее слабоумного сына, Ревата.~ /*Trolls captured Janis, the mother of Revat, a simpleton along the east road from Port Llast. She has been freed from the magical bonds that held her and returned, at long last, to her son.*/
+@34 = ~MT: О нет! Моя никогда больше не видеть мамочка! Я жаль, что твоя не помогать. Моя совсем другой теперь без мамочка. Поки.~ /*Me wish you could help. Me will never be same without Momma. Bye.*/
+@35 = ~Oh, you be back. What you want?~
+@36 = ~Could you tell me what happened again?~
+@37 = ~I have decided I will save your mother.~
+@38 = ~MT: Мне ничего ненужно, прощай.~ /*Me does nothing.*/
+@39 = ~Hey, you find Momma yet? Me in so much trouble. Me must get Momma safe.~
+@40 = ~Tell me again where I can find her?~
+@41 = ~I will keep looking for her.~
+@42 = ~MT: Мне жаль, но твоя мамочка погибла, троллей было слишком много.~ /*Either my arms have suddenly lost strength, or I'm carrying too much.*/
+@43 = ~MT: Она в пещера с тролли и огры тут рядом. Моя больше не знать. Пожалуйста, быстрей найди мамочка. Моя много скучать по ней.~ /*Please find Momma quick. Me miss her lots.*/
+@44 = ~Please find Momma quick. Me miss her lots.~
+@45 = ~MT: Не-е-е-е-е-е-е-е-ет! Мамочка не умереть! Мамочка не умереть! Твоя лгай! Моя пойти найти мамочка. Она не умереть.~ /*Noooooooooooooooooooooooo! Momma no die! Momma no die!*/
+@46 = ~MT: Восточная дорога: Мать слабоумного
+
+Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Хоть ей и удалось освободиться от чар, которые удерживали ее, при попытке бежать женщина погибла. Ее сын был поставлен в известность.~ /*Trolls captured Janis, the mother of Revat, a simpleton along the east road from Port Llast. Though freed from the magical bonds that held her, she nevertheless perished in her attempted escape. Her son has been notified.*/
+@47 = ~MT: Ура! Моя так рад твой находить мамочка! Она выдрать моя ухо, когда приходить; моя так ее любить. Вот. Мамочка сказать отдать тебе 740 золотых, как моя обещай.~ /*Ho wow! Me so happy you find Momma! She pull me ear when she get back; me love her so.*/
+@48 = ~Do you think your Momma is only worth 300 gp?~
+@49 = ~MT: Не хотелось бы называть тебя тупым, но, мы договаривались на большую сумму.~ /*I hate to call you stupid, but I think we agreed on more than that.*/
+@50 = ~Thank you. That will be fine.~
+@51 = ~No, there's no need for the reward. I was happy to do it.~
+@52 = ~MT: Эээ... точно. Мамочка стоить 740 монет, ведь это все, что у меня есть.~ /*Oh, you right. Momma worth 375 gp, 'cause that all I have.*/
+@53 = ~Oh dear, me forget lots. Sorry. Here is 375 gp. That be everything I have in whole world. Now me no can buy pet.~
+@54 = ~Okay, Momma say me have to go now. Bye bye.~
+@55 = ~MT: Восточная дорога: Мать слабоумного
+
+Тролли похитили Дженис, мать Ревата, слабоумного, живущего у восточной дороги Порт-Лласта. Она освободилась от магических чар, которые удерживали ее, и наконец смогла вернуться к своему сыну.~ /*Trolls captured Janis, the mother of Revat, a simpleton along the east road from Port Llast. She has been freed from the magical bonds that held her and returned, at long last, to her son.*/
+@56 = ~MT: Спасибо твоя большое. Моя рад мамочка вернуться. Привет, мамочка, я иду!~ /*Me wish me could give more. Thank you much. Me glad have Momma back. Hello Momma, me coming!*/
+@57 = ~MT: О, твоя лучший друг в целом свете, <SIRMAAM>. Я приглашай заходить к нам, когда будешь в Уотердип. Мамочка говорить надо уходить. Поки-поки.~ /*Oh, you be best friend in whole world <PRO_LADYLORD>. I hope you come see me when you come to Waterdeep.*/
+@58 = ~Momma say we must go. Bye bye.~
+@59 = ~MT: Моя пойти найти мамочка. Она не умереть.~ /*You lie! Me go find Momma. She no be dead.*/

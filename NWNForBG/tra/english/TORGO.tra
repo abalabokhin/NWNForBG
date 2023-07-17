@@ -1,0 +1,10 @@
+@0 = ~What can I get you?~
+@1 = ~I need a Pass Coin.~
+@2 = ~MT: Я хочу взглянуть на ваш ассортимент.~ /*Let me see your wares.*/
+@3 = ~Goodbye.~
+@4 = ~MT: Пропуск стоит 200 золотых. Поскольку разрешение от Офалы вами получено, остается только заплатить.~ /*Here is my 200 gold. Let me take the test again.*/
+@5 = ~Here's 200 gold.~
+@6 = ~MT: Это слишком большая сумма, у меня нет столько денег,~ /*Me not got that much gold for spend on this.*/
+@7 = ~MT: Пропуск стоит 200 золотых. Но прежде вам нужно поговорить с Офалой и получить разрешение.~ /*Here's your 200 gold. Welcome aboard, Sharwyn.*/
+@8 = ~MT: Хорошо, вот ваш пропуск. Когда поднимитесь наверх, отдайте это кому-нибудь из собеседников, на свой выбор.~ /*When you get upstairs, just give this to the companion of your choice.*/
+@9 = ~MT: Что ж, мальчики и девочки будут ждать вашего возвращения, когда вы можете себе это позволить. Они стоят этих денег.~ /*Well, the boys and girls in the backroom will be waiting for you when you can afford it. They're well worth the price.*/

@@ -1,0 +1,7 @@
+@0 = ~MT: Я всего-лишь простой торговец продуктами. Не думаю, что вам это интересно.~ /*I'm just a merchant. What it is you want me to say?*/
+@1 = ~MT: А где я смогу купить нужные товары?~ /*Where can I go to buy supplies?*/
+@2 = ~MT: Я ищу мэрию, не подскажете где она находится?~ /*You tell me where stuff be?*/
+@3 = ~MT: Ладно, я тогда пойду дальше.~ /*Okays, we go now.*/
+@4 = ~MT: В Треснувшей Наковальне, конечно. У Хальяла есть все, что может понадобиться таким героям, как вы. Кроме того в Порт-Лласте есть много уличных торговцев, один из них даже свитками для магов торгует. Такой странный тип, я его боюсь.~ /*I have never been there myself, though I know it lies far, far to the South of Port Llast. However, I know there must be great danger there.*/
+@5 = ~MT: Мэрия находится на западе у городской стены. Говорят, к нашему мэру сама леди Арибет приехала, наверное она и сейчас там.~ /*My name is Caliandros, a cleric of Tyr. I serve Aribeth by aiding those who work for her.*/
+@6 = ~MT: Удачно вам провести время в Порт-Лласте. До свидания.~ /*I hope you enjoy your time in Port Llast. Goodbye.*/

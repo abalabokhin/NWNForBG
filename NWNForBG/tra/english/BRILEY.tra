@@ -1,0 +1,39 @@
+@0 = ~Y-you really shouldn't be here. I'm g-guarding this place, and I can't speak to you unless Oleff sent you to find the tombs of Never.~
+@1 = ~What is this place?~
+@2 = ~Who is Oleff?~
+@3 = ~Goodbye.~
+@4 = ~It is a holy place, but I cannot speak of it to you. Please, I guard this place for the church of Tyr. You should not be here.~
+@5 = ~Reverend Judge Oleff Uskar. He directs the actions of we who follow Tyr. I can't allow access to anyone except those he has sent.~
+@6 = ~T-thank you for leaving. This has been a difficult time for the Tyrran faith. I wish I was back in the Hall of Justice.~
+@7 = ~I-I'm sorry, but you really shouldn't be in here. I'm waiting for word from Reverend Judge Oleff Uskar.~
+@8 = ~I have a letter from Oleff. He sent me.~
+@9 = ~Thank goodness you are here. The plague has not been kind to our number... but the work of Tyr must still be done.~
+@10 = ~What can you tell me about these tombs?~
+@11 = ~What do you know of the plague?~
+@12 = ~Have you heard of anything odd? Any rumors?~
+@13 = ~MT: Простите, но я не вижу никакого письма. Может вы его потеряли? В любом случае без письменного разрешения Олеффа я не смогу ничего для вас сделать.~ /*There does not appear to be any way to open this gate...and the use of force seems to do nothing.*/
+@14 = ~MT: В этой могиле покоится Миаслазния Фэйрблэйд. Она лежит здесь очень давно, хотя точно я не могу сказать, сколько. Она была верным другом Хэлуэта Невера, так что это место может подсказать нам, где похоронен сам отец-основатель. Это очень близко к поверхности, то есть, за историю Невервинтера ее передвигали хотя бы один раз, но никаких записей об этом нет.~ /*This one is very close to the surface, suggesting it may have been moved at least once in Neverwinter history, but no records tell of it.*/
+@15 = ~What have you learned from this tomb?~
+@16 = ~Where are the other tombs located?~
+@17 = ~Did you find any artifacts in here?~
+@18 = ~I have other questions.~
+@19 = ~The Wailing has taken many, including my brethren that were digging here. Pity... they didn't have time to... well, I shouldn't speak of that.~
+@20 = ~What a good looker like yous got to hide, hmm?~
+@21 = ~MT: Я охраняю эту... дыру уже несколько дней. Я слышу только шарканье ног наверху и крики у себя в голове. Извините, но я не слышал ни о каких незнакомцах или странных компаниях. Лично мне это все объяснило бы. Сейчас я могу только сидеть и надеяться, что не заразился сам. Я должен верить в мудрость Тира.~ /*I'm sorry, I wish I knew of mysterious strangers or odd groups. It would put my mind at ease, and give reason to all of this.*/
+@22 = ~MT: До встречи. Поищите дневник Джейкоба в сундуке. Он мог оставить там важную информацию, до того как... ну, вы поняли. Его благословленное перо было использовано во благо - записывать все, что они нашли... Странно... Пера здесь нет...~ /*Another time. Remember to look at Jacob's journal in the chest. He may have included some valuable information before he... well.*/
+@23 = ~MT: Храм Тира: Могила Невера
+
+Судья Олефф из Зала Справедливости ищет усыпальницу основателя Невервинтера, Лорда Хэлуэта Невера. Его помощник Брайли ждет около недавно обнаруженной усыпальницы Миаслазнии Фэйрблэйд, одной из спутников Хэлуэта Невера. Он рассказал печальную историю - всю археологическую команду, которая обнаружила могилу Миаслазнии, унесла Воющая Смерть. Единственный документ, оставшийся от них, - дневник одного из археологов. Брайли хранит его в сундуке возле входа в усыпальницу Миаслазнии и советует ознакомиться с его содержимым, которое может помочь в обнаружении других древних могил. Усыпальницу Миаслазнии можно найти в подвале дома в восточной части полуострова.~ /*Judge Oleff of the Hall of Justice seeks the tomb of Neverwinter's founder, Lord Halueth Never, in the hopes that it might buoy the people's spirits and perhaps unearth some artifacts that might be of assistance against the Wailing.
+His assistant, Briley, waits by the recently discovered tomb of Miaslaznia Fairblade, one of Halueth's adventuring companions, and tells a sad tale indeed - like so many others in the city, the entire excavation team responsible for the discovery has passed away of the Wailing Death. The only known documentation of their discovery is a journal left by one of the team members. Briley has secured it in a chest outside of Miaslaznia's tomb and has encouraged interested parties to examine it in the hopes of deciphering the possible location of other tombs. Miaslaznia's tomb can be reached via the cellars of a house on the east side of the Peninsula District.*/
+@24 = ~MT: Чума убила всех, кто участвовал в раскопках. Они унесли в могилу все свои знания. Хотя, остался дневник. Писец Джейкоб должен был записывать, что они нашли, но я не читал его отчетов. Они в сундуке. Можете открыть.~ /*The scribe Jacob was supposed to detail what they found, but I have not read his account. It is in the chest. You may open it.*/
+@25 = ~MT: Я не знаю. Может, написано в дневнике Джейкоба, но мне не разрешали его читать. Прочтите сами, он в сундуке. Надеюсь, это поможет. Было бы очень плохо, если бы он умер, не успев поделиться своими знаниями.~ /*I don't know. Jacob's journal in the chest may say, but I was not instructed to read it, so you will have to examine it yourself.*/
+@26 = ~MT: Я так не думаю. Конечно, я прибыл только после того, как все умерли от чумы. Надеюсь, никто не оказался достаточно бесстыден, чтобы потревожить их тела. В дневнике может быть полезная информация, но мне не разрешали его читать. Он в сундуке.~ /*I don't think so. Of course, I only arrived after the team died of the plague. I hope no one had the gall to disturb their bodies.*/
+@27 = ~I will answer what I can.~
+@28 = ~MT: Я не хочу о них плохо говорить, но проступок был не таким уж серьезным. Они немного согрешили. Они... Ну, они стали сомневаться в силе Тира. Думаю, в такие времена и проверяется вера. Они как-то связались с хельмитами и получили благословление. Богов много, я знаю, и Тир всегда благоволил к Хельму, но все равно это нехорошо. Повторяю, это небольшой грех. Они не сделали ничего плохого, и до конца выполнили свой долг.~ /*They consorted somewhat with the Helmites and accepted blessings. There are many gods, I know, and Tyr favors Helm well enough, but it didn't seem appropriate.*/
+@29 = ~MT: Жаль, что им уже не отпустят этот грех... Но... Это вас не очень касается. Они покинули этот мир, а у вас и так есть, чем заняться.~ /*But... this does not really concern you. They have departed this mortal realm, and you have other duties to attend to.*/
+@30 = ~Please, do not touch that. I've been instructed to only allow access to someone sent by Oleff.~
+@31 = ~MT: Слава небесам, вы здесь. Теперь я могу покинуть свой пост, прощайте.~ /*Me got hair. You die now, bye-bye.*/
+@32 = ~MT: Храм Тира: Могила Невера
+
+Судья Олефф из Зала Справедливости ищет могилу основателя Невервинтера, Лорда Хэлуэта Невера, в надежде, что такая находка поможет поднять дух населения и, возможно, обнаружить в ней какие-либо древние артефакты, которые могли бы оказаться полезными в борьбе с Воющей Смертью. Он попросил обратиться к его помощнику Брайли, который сейчас охраняет недавно обнаруженную могилу Миаслазнии Фэйрблэйд, одной из спутников лорда Невера. Могилу Миаслазнии можно найти в подвале дома в восточной части полуострова.~ /*Judge Oleff of the Hall of Justice seeks the tomb of Neverwinter's founder, Lord Halueth Never, in the hopes that it might buoy the people's spirits and perhaps unearth some artifacts that might be of assistance against the Wailing.
+He has requested that those interested in the endeavor present themselves to his assistant, Briley, who currently stands guard over the recently discovered tomb of Miaslaznia Fairblade, one of Halueth's adventuring companions. Miaslaznia's tomb can be reached via the cellars of a house on the east side of the Peninsula District.*/

@@ -1,0 +1,40 @@
+@0 = ~What do you want? There's squat I can do to stop you looting, if that's what you're here for.~
+@1 = ~I've been fighting undead. You need some help?~
+@2 = ~Maybe I am, but I've undead to kill first.~
+@3 = ~Just thank your lucky stars I'm not a flesh-eating corpse.~
+@4 = ~I could use some. I'm probably going to be dead in an hour. I... might know something about these undead...~
+@5 = ~Why do you think that?~
+@6 = ~I don't have time right now.~
+@7 = ~Yeah? I could use your help if you are looking to kill things. I think I know something about these undead...~
+@8 = ~I suppose you could be worse. I'm going after worse right now. I think I know something about these undead...~
+@9 = ~MT: Мой брат в последнее время вел себя... забавно. Он посещает странный дом, это совсем рядом, к востоку отсюда. Нежить избегает этого дома! Он сам не свой... Мне кажется, они захватили его разум. Там есть группа... культ... и мой брат что-то говорил о каком-то... создании. Больше мне ничего об этом неизвестно. Все это произошло так быстро... почти тогда же, когда начали появляться зомби.~ /*He's not himself... I think they took his mind. There's a group in there... a cult... and my brother mentioned some kind of... creature.*/
+@10 = ~I have questions about this strange house.~
+@11 = ~I want to know some things about your brother.~
+@12 = ~MT: Я посмотрю, что там происходит. Что вы собираетесь делать?~ /*I might check it out. What are you going to do?*/
+@13 = ~All right... just leave me, then. I guess I'll stay here. Not much I can do on my own.~
+@14 = ~I'll tell you what I can.~
+@15 = ~Any idea who lives at this house you mention?~
+@16 = ~You say the undead leave the house alone?~
+@17 = ~I suppose. What do you want to know?~
+@18 = ~What's his name? What does he do?~
+@19 = ~I found this ring in the cult hideout. Was it his?~
+@20 = ~MT: Я... я не знаю. Мне бы хотелось помочь вам найти его, но я не знаю, в состоянии ли я это сделать. Я чувствую такую беспомощность. Ему нужна моя помощь. Я это знаю.~ /*I... I don't know. I'd like to help find him, but I don't know if I could make it.*/
+@21 = ~MT: Без понятия, но я знаю, что на них не нападают зомби, и я знаю, что поведение моего брата становится все страннее и страннее. И, кроме того, они не любят чужаков. Он использует какой-то ключ, чтобы войти туда, но это не обычный ключ. Какая-то волшебная вещь.~ /*They don't want any visitors, either. He uses some sort of key to get in, but it's not a normal one. Some kind of magic thing.*/
+@22 = ~Could I have it?~
+@23 = ~MT: Просто невероятно: Они ходят вокруг него и не нападают на людей, которые в него заходят. Мой брат сказал, что создание обеспечивает их безопасность? Честно, я не больше не понимаю, о чем он говорит, а теперь он уже несколько дней не появляется.~ /*It's the strangest thing: They walk right around it, and don't attack the people going in. My brother said the creature keeps them safe?*/
+@24 = ~MT: Его зовут Торин. Он какое-то время учился в башне магов рядом с Уотердипом, но так и не закончил свое обучение. Он в последнее время был несколько растерян. Думаю, ему нужно было что-то, что могло быстрее дать результат. У него всегда не хватало терпения на изучение книг.~ /*His name is Torin. He studied at a mage tower outside Waterdeep for a while, but never stuck with it. He's been a little lost.*/
+@25 = ~MT: Это... это принадлежало моему брату. Он всегда носил это с собой... он мертв. Я знаю. Спасибо. Я не могу ничем вас отблагодарить... Просто оставьте это кольцо себе. Оно напоминает мне о его смерти, а не о его жизни.~ /*I don't have much to give you... Just keep the ring. It reminds me of how he died, not his life.*/
+@26 = ~MT: Гнездо Нищих: Пропавший брат
+
+Узнав о смерти брата, Джемани очень расстроился, что вполне понятно. Утешить его не удалось.~ /*Jemanie has been told of his brother's death. He was understandably upset and would not be consoled.*/
+@27 = ~MT: У меня есть эта вещь, с помощью которой он заходил в убежище... ну, думаю, это не важно. Что я знаю? Логово культа находится к востоку отсюда. Если вы хотите его найти, советую начать поиски оттуда.~ /*I have this thing that he used to get in the hideout... well, I'm sure it's not important. What do I know?*/
+@28 = ~MT: Гнездо Нищих: Пропавший брат
+
+Джемани беспокоится за своего брата Торина. Он не появлялся уже несколько дней, и Джемани боится, что с ним что-то случилось. Торин был вовлечен в некий таинственный культ, который как-то связан с нашествием зомби. У культа есть усадьба в северо-восточной части Гнезда Нищих.~ /*Jemanie is worried about his brother, Torin. He has been missing for several days now, and Jemanie fears that something has happened to him. Apparently he was involved with a strange cult that may have something to do with the zombie infestation. The group has an estate in the northwest of the Beggar's Nest.*/
+@29 = ~MT: Логово культа находится к востоку отсюда, это соседний дом. Если вы хотите его найти, советую начать поиски оттуда.~ /*The cult hideout is north of here. If you are going to look for him, that's where I'd start.*/
+@30 = ~MT: Наверное. Надеюсь, это значит, что вы постараетесь его найти. Я волнуюсь. Логово культа находится к востоку отсюда, это соседний дом. Если вы хотите его найти, советую начать поиски оттуда.~ /*The cult hideout is north of here. If you are going to look for him, that's where I'd start.*/
+@31 = ~MT: Здравствуйте... Я ведь дал вам этот магический ключ, да? Ох, я просто так беспокоюсь за своего брата, что не знаю, как правильнее будет поступить. Пожалуйста, осмотрите помещение культа на севере отсюда. Прошу вас, найдите моего брата. Мне бы очень хотелось вам помочь... Только от меня мало пользы, когда рядом опасность. Но я знаю, что они там что-то затевают.~ /*Please, investigate that cult estate north of here. Please find my brother. I wish I could help... I'm not much use when things get dangerous. I know they are up to something in there, though.*/
+@32 = ~MT: Мой брат мертв... Я не знаю, что и делать...~ /*He's dead... I don't know what to do...*/
+@33 = ~MT: Гнездо Нищих: Пропавший брат
+
+Тело брата Джемани, Торина, было обнаружено возле поместья культа в Гнезде Нищих. Вероятно, он исполнил свою задачу и стал больше не нужен культу и его новому предводителю. На теле было найдено кольцо, которое, наверное, захочет получить Джемани.~ /*The body of Jemanie's brother Torin was found beneath the cultist estate in the Beggar's Nest. He apparently outlived whatever use the cult and its new master had for him. There was a ring on the corpse that Jemanie would probably like to have returned.*/

@@ -1,0 +1,5 @@
+@0 = ~MT: О, да вы маг. Как приятно встретить здесь в Порт-Лласте столь образованного покупателя. У меня для вас есть свитки на продажу, не желаете ли взглянуть?~ /*Good to see some holy folk around here. You gonna do something about them pagan Uthgardts on the plateau?*/
+@1 = ~MT: Да, покажите что у вас есть.~ /*Show what yous got.*/
+@2 = ~MT: Нет, не сейчас, возможно позже.~ /*No, not now.*/
+@3 = ~MT: Ах, как жаль. Ну заходите еще, я буду ждать вас.~ /*You are hurt. Here, let me heal you.*/
+@4 = ~MT: Добрый день. Есть ли среди вас маги? У меня есть кое-какие свитки на продажу, не желаете ли взглянуть?~ /*Well met. Have you had any progress? Have you found Neva yet?*/

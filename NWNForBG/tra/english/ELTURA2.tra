@@ -1,0 +1,77 @@
+@0 = ~MT: Добро пожаловать. Я Эльтура Сарптил, и вряд ли вы найдете у кого-то еще такой прекрасный выбор товаров.~ /*Welcome to the shop, as I like to say. I am Eltoora Sarptyl, and not a finer collection of wares are you apt to find.*/
+@1 = ~I have one of the tomes you seek.~
+@2 = ~MT: У меня есть все книги, которые вы ищете.~ /*I have one of the tomes you seek.*/
+@3 = ~MT: Какие товары вы продаете?~ /*What kind of wares do you sell here?*/
+@4 = ~Can I see your merchandise?~
+@5 = ~I'd like to ask you some questions.~
+@6 = ~Goodbye.~
+@7 = ~That is most excellent news. Please, let me see what you have. Oh, this is so very exciting!~
+@8 = ~Offer Tome of Fire.~
+@9 = ~Offer Tome of Ice.~
+@10 = ~Offer Tome of Life.~
+@11 = ~Offer Tome of Death.~
+@12 = ~Offer Tome of Resonance.~
+@13 = ~I'd rather not part with the tomes just yet.~
+@14 = ~Why, I sell only the finest assortment of magical goods. Truly, you will find no better collection than mine.~
+@15 = ~Yes, this will do quite well. Come, let us take a look at what we have to offer you then, shall we?~
+@16 = ~You may as well spill the question, and I'll see if I can figure out an answer for you.~
+@17 = ~Have you heard anything about werewolves near Port Llast?~
+@18 = ~I'm looking for work. Do you know of any?~
+@19 = ~I need some directions, actually.~
+@20 = ~MT: Можете мне напомнить об этой работе по поиску книг?~ /*Can you remind me about that tome-recovery job?*/
+@21 = ~MT: Я желаю вам приятно провести <DAYNIGHT>, <SIRMAAM>. Пожалуйста, заходите еще.~ /*I wish you a good <DAYNIGHTALL>, <PRO_SIRMAAM>. Please come back again.*/
+@22 = ~MT: Ах, Том Огня! Это будет прекрасное дополнение к моей коллекции. Спасибо вам большое, а теперь поговорим о награде. Вот ваши 2000 золотых, как и договаривались.~ /*Well, the Tome of Fire! That will be a nice addition to my collection. Thank you very much, and now for your reward.*/
+@23 = ~MT: Ага, Том Льда. Еще одна прекрасная работа пополнит мое собрание. Спасибо вам за это. А теперь поговорим о награде. Вот ваши 2000 золотых, как и договаривались.~ /*Ah, the Tome of Ice. Another fine work to add to my collection. I thank you for this.*/
+@24 = ~MT: О, вот эту восхитительную книгу я с удовольствием просмотрю, полагаю. Вот это меня по-настоящему радует. А для вас.... Вот ваши 2000 золотых, как и договаривались.~ /*Oh, this shall be an exciting tome to page through, I would say. This makes me happy indeed. And for you...*/
+@25 = ~MT: Ах, какая исключительная книга. Я всегда думала, что смерть - это такая чудная, недопонятая вещь. Эта книга будет служить украшением моей коллекции. Я полагаю, вы этим будете вполне довольны наградой, вот ваши 2000 золотых, как и договаривались.~ /*Well, what an exquisite book. I've always thought death was such a beautiful, misunderstood thing. This book shall serve as my center piece.*/
+@26 = ~MT: Так-так, Том Резонанса. Хоть я и надеялась на лучшее, но была уверена, что никогда ее не увижу в своей библиотеке. Выражаю вам свое восхищение - и признательность. Я полагаю, вы будете вполне довольны наградой. Вот ваши 2000 золотых, как и договаривались.~ /*Well, well, the Tome of Resonance. Though I hoped otherwise, I felt certain I would never see it amongst my collection. You have my admiration, and appreciation.*/
+@27 = ~Well, that's more than fair. If you want anything for that tome, however, just come back to me.~
+@28 = ~What kind of wares do you sell here?~
+@29 = ~MT: Да, я кое-что слышала. Рыцарь - по-моему, сэр Каратис?.. он искал себе помощников, чтобы убить какого-то оборотня, кажется. Честно говоря, это могло быть несколько дней назад или еще раньше; я мало обращаю внимания на подобные вещи. Вы хотели что-нибудь еще?~ /*To be honest, that may have happened a few days ago or more; I pay little attention to such things. Is there something else?*/
+@30 = ~Can you remind me about that tome-recovery job?~
+@31 = ~Well, well, well. I do indeed have a task for you. How do you feel about recovering some old tomes for me?~
+@32 = ~Good. Tell me more.~
+@33 = ~What are these tomes? What do they do?~
+@34 = ~Not interested, but I have another question.~
+@35 = ~Well, I'm sure you can find someone else to help you out there... Unless you're looking to know where I keep a chair or somesuch.~
+@36 = ~MT: Ах, неужели, как это замечательно! Ах, какие исключительные книги. Эти книги будет служить украшением моей коллекции. Я полагаю, вы будете вполне довольны наградой. Вот ваши 10000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*<CHARNAME>, you never fail to surprise me. There is a great market for such things in Thay. I could offer you 700 gold, or an interesting magic item I recently acquired.*/
+@37 = ~MT: Порт-Лласт: Пять томов Имаскара
+
+После того, как с Невервинтера был снят карантин, волшебница Эльтура направилась в Порт-Лласт, чтобы предложить свою помощь для поисков организаторов смуты из таинственной секты. Однако у нее были и личные мотивы, поскольку она разыскивала собрание древних книг погибшей цивилизации Имаскара. Утверждают, что в этих пяти томах содержатся рецепты, с помощью которых можно проводить некие магические эксперименты. Все пять книг были доставлены Эльтуре, награда получена. Она оказалась более чем достойной.~ /*A palpable aura around this item marks it as tainted, perhaps rightly so, for all that is known of the Imaskari civilization points to a depth of depravity unmatched in modern times. Of course, such condemnation has had many years to fester, and while a goodly number of Imaskari may have been involved in necromantic studies, it is likely that their vilification springs from later societies elevating themselves through the slandering of others.*/
+@38 = ~I could have sworn I told you about a job already, and that you agreed to do it. Do you want a refresher?~
+@39 = ~Yes, I think that would help.~
+@40 = ~MT: Пять Томов Древнего Имаскара находятся где-то в этом районе в разрозненном виде. Я хочу, чтобы вы нашли эти тома и вернули их мне. Если вы сможете это сделать, я дам вам гораздо больше, чем стоят книги. Уж в этом вы можете быть уверены. Пять книг, которые я прошу вас найти, это тома Резонанса, Жизни, Смерти, Льда и Огня. За каждую книгу я заплачу вам по 2000 золотых, а если принесете все пять книг, я добавлю к награде превосходный магический предмет.~ /*Scattered about the region are the Five Tomes of Ancient Imaskar. I want you to find these tomes, and return them here to me.*/
+@41 = ~Where could the Tome of Fire be?~
+@42 = ~Do you know where the Tome of Ice is?~
+@43 = ~I need more information about the Tome of Life.~
+@44 = ~MT: Где мне найти Том Смерти?~ /*Where me find Tome of Death?*/
+@45 = ~Do you know where the Tome of Resonance is?~
+@46 = ~MT: Я принесу вам эти книги.~ /*I will look into it.*/
+@47 = ~MT: Меня это не интересует. До свидания.~ /*I'm not interested. Goodbye.*/
+@48 = ~MT: Самое простое и краткое объяснение, которое я могу придумать - эти тома похожи на кулинарные книги. В них есть рецепты создания магических предметов. Я могу предложить достойную награду за эти книги.~ /*The best way that I can explain their purpose, with brevity, is to compare them to recipe books. These books explain the crafting of magical items.*/
+@49 = ~MT: Очень хорошо. Буду ждать с нетерпением.~ /*Very well. I shall return.*/
+@50 = ~MT: Порт-Лласт: Пять томов Имаскара
+
+После того, как с Невервинтера был снят карантин, волшебница Эльтура направилась в Порт-Лласт, чтобы предложить свою помощь для поисков организаторов смуты из таинственной секты. Однако у нее были и личные мотивы, поскольку она разыскивала собрание древних книг погибшей цивилизации Имаскара. Утверждают, что в этих пяти томах содержатся рецепты, с помощью которых можно проводить некие магические эксперименты. Если ей удастся найти хотя бы некоторые из этих книг, она щедро вознаградит того, кто принесет их ей.
+
+С помощью магии ясновидения ей удалось выяснить приблизительное местонахождение пяти томов Имаскара. По ее данным, Том Огня и Том Смерти затерялись где-то в Чарвуде, тогда как Том Жизни, очевидно, похоронен вместе с телом брата Тораса на кладбище за стенами Лускана. Том Льда находится в башне к югу от Порт-Лласта, а последняя книга, Том Резонанса, по всей видимости, где-то у опаснейшей дороги в глубине Леса Невервинтер.~ /*With the Wailing's cure and subsequent removal of Neverwinter's quarantine, the wizardess Eltoora has journeyed to Port Llast to provide her services to those searching for the cult responsible. She also comes with ulterior motives, however, as she seeks a collection of ancient tomes from the lost civilization of Imaskar. The five books are said to act as recipes, providing guidance to those undertaking magical experiments. Should any of the tomes be found, she will not only reward whoever returns them but also make the tomes publicly available to all arcanists who wish to experiment with them in her library.
+Through scrying attempts, she has managed to narrow down the locations of the five tomes of Imaskar. The Tome of Fire and the Tome of Death are both said to be lost in Charwood, while the Tome of Life apparently rests with the corpse of Brother Toras in the cemetery outside the walls of Luskan. The Tome of Ice is housed within a tower south of Port Llast and the last, the Tome of Resonance, lies somewhere along the treacherous road deep into the Neverwinter Woods.*/
+@51 = ~MT: Определить местонахождение Тома Огня для меня сложновато. Мой магический кристалл показывает, что он где-то далеко на юге, но где конкретно, я не вижу. Разумно было бы предположить, что этот том где-то в Чарвуде. Хоть я и не знаю, почему, но это место сопротивляется моему ясновидению. Будь книга где-нибудь еще, думаю, я смогла бы ее обнаружить.~ /*It would make sense that the tome was within the Charwood. Though I know not why, that realm resists my scrying. If it were anywhere else, I think I could locate it.*/
+@52 = ~MT: Неподалеку отсюда к югу вы найдете башню. В этой башне и лежит Том Льда. Конечно же, владелец башни - могущественный волшебник в своем праве, так что не стоит действовать опрометчиво.~ /*Of course, the owner of the tower is a powerful wizard in his own right, and you should be cautious in your approach.*/
+@53 = ~MT: Этот том находился во владении Брата Тораса, члена Братства Таинств. Я собиралась купить у него книгу, но не успела, поскольку он скончался. Когда я услышала о его смерти, я поискала вокруг, но среди его личных вещей тома не было. Единственное место, где я еще не смотрела, это его гробница; у меня просто не было времени.~ /*I checked around when I heard he was dead, but it wasn't amongst his personal possessions. The only place I haven't searched yet is his tomb; I simply haven't had the time.*/
+@54 = ~Who is the Arcane Brotherhood?~
+@55 = ~Where is his tomb?~
+@56 = ~MT: Как и с Томом Огня, мое ясновидение говорит мне, что Том Смерти ушел по долгой, темной дороге в Чарвуд. Если бы только я могла видеть больше, но этот район для меня непроницаем.~ /*Like the Tome of Fire, my scrying tells me that the Tome of Death has followed the long, dark road into the Charwood.*/
+@57 = ~MT: Мое ясновидение показывает, что вначале эта книга попала на восток, в лес Невервинтер. Возможно, если вы отправитесь в лес Невервинтер, пара-другая зацепок у вас появится.~ /*My scrying has shown that it was originally taken east into the Neverwinter Woods.*/
+@58 = ~MT: Это все, что мне нужно было знать. До свидания.~ /*That's all I need to know about the prison.*/
+@59 = ~MT: Ну будет вам, вы, конечно, шутите. Вы не знаете о Братстве Таинств? Оно расположено в Лускане и является истинным правительством этого города. Братья печально известны своей безжалостной тактикой, и единственное, что удерживает их от широкой экспансии, это постоянные драки и ссоры между собой.~ /*Their ruthless tactics are infamous, and the only thing that has stopped them from major expansion is the constant in-fighting and bickering they do.*/
+@60 = ~MT: Поскольку он был богат и могуществен, я полагаю, у него есть собственный мавзолей за городскими стенами Лускана. Только будьте осторожны. Брат Торас был сильным волшебником и мог установить смертельные ловушки или стражу для защиты своей гробницы от грабителей.~ /*Just be careful. Brother Toras was a powerful wizard and might have some deadly traps or guardians protecting his tomb from grave robbers.*/
+@61 = ~MT: Ах, Том Огня! Это будет прекрасное дополнение к моей коллекции. Спасибо вам большое, теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Well, the Tome of Fire! That will be a nice addition to my collection. Thank you very much, and now for your reward.*/
+@62 = ~MT: Ага, Том Льда. Еще одна прекрасная работа пополнит мое собрание. Спасибо вам за это, теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Ah, the Tome of Ice. Another fine work to add to my collection. I thank you for this.*/
+@63 = ~MT: О, вот эту восхитительную книгу я с удовольствием просмотрю, полагаю. Вот это меня по-настоящему радует. Теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Oh, this shall be an exciting tome to page through, I would say. This makes me happy indeed. And for you...*/
+@64 = ~MT: Ах, какая исключительная книга. Я всегда думала, что смерть - это такая чудная, недопонятая вещь. Эта книга будет служить украшением моей коллекции. Теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Well, what an exquisite book. I've always thought death was such a beautiful, misunderstood thing. This book shall serve as my center piece.*/
+@65 = ~MT: Так-так, Том Резонанса. Хоть я и надеялась на лучшее, но была уверена, что никогда ее не увижу в своей библиотеке. Выражаю вам свое восхищение - и признательность. Теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Well, well, the Tome of Resonance. Though I hoped otherwise, I felt certain I would never see it amongst my collection. You have my admiration, and appreciation.*/
+@66 = ~Well, hello. Have you exciting news for me, or is this just a routine visit? Either way, I'm pleased to see you again.~
+@67 = ~What would I have exciting news about?~
+@68 = ~Can you remind me about that job?~
+@69 = ~Why, the tomes of course! Have you found any? You do remember agreeing to look for me, don't you? I still remember offering a lot of gold for their return.~
