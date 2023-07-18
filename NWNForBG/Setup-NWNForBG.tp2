@@ -5309,7 +5309,10 @@ INCLUDE ~NWNForBG/lib/names_for_spells.tph~
 COPY ~NWNForBG/bmp~ ~override~
 
 //Portraits
-COPY ~NWNForBG/bmp/portraits~ ~override~
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY ~NWNForBG/portraits_ee~ ~override~
+END LESE BEGIN
+  COPY ~NWNForBG/portraits~ ~override~
 
 //other BAM, not related to maps
 COPY ~NWNForBG/bam~ ~override~
