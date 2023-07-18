@@ -19,6 +19,7 @@
 @88560 = ~NP: Sanctioned Wizard~ /*Red Wizard Enclave*/
 @88561 = ~Cleric~
 @88562 = ~NP: I need backup!~ /*< &Back*/
+@88631 = ~~ [TANAR07]
 @88714 = ~NP: Get away from me, you dirty animal!~ /*I will kill ye, horrid beast!*/
 @88736 = ~NP: A magical cloud enveloped me!~ /*Me want magic weapon!*/
 @88737 = ~NP: Help! I... was poisoned.~ /*Poisoned. I have been poisoned.*/
@@ -3249,6 +3250,8 @@ Yusam believes the Elk tribe and their leader, Zokan Thunderer, are in a keep to
 @105486 = ~Lokar's Ring~
 @105487 = ~This is the signet ring of Lokar, leader of the Creator Race's human slaves. It identifies the bearer as an ally of the underground slave resistance.~
 @105488 = ~Catapult~
+@105489 = ~~ [CatapDam]
+@105490 = ~~ [CatapDie]
 @105545 = ~NP: Damas~ /*Kama*/
 @105546 = ~Galia~
 @105547 = ~Eckel~
@@ -3615,6 +3618,8 @@ The girl was last seen in the Luskan controlled area of the city.~
 @107526 = ~NP: Defense against slashing weapons~ /*Protector Against the Storm*/
 @107527 = ~NP: Protection against piercing weapons~ /*Protection from Cold*/
 @107528 = ~NP: Blunt Defense~ /*Protection from Good*/
+@107529 = ~~ [NWSIMB1]
+@107530 = ~~ [NWSIMB2]
 @107531 = ~NP: Morag lost her protection from fire.~ /*Cloak of Protection vs Good*/
 @107532 = ~NP: Morag lost her protection from the cold.~ /*Cloak of Protection vs Chaos*/
 @107533 = ~NP: Morag lost her protection against electricity.~ /*Resist Electrical Energy*/
