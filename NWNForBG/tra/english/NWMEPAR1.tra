@@ -1,5 +1,5 @@
 @0 = ~The gongs! I know the secret... tell you I will and then free I'll be!~
-@1 = ~MT: Haven't I clearly demonstrated the sequence of hitting the gongs?~ /*Don't you want the other cure attempts to work?*/
-@2 = ~MT: No, I understand everything.~ /*This is not over!*/
-@3 = ~MT: Show it once again.~ /*Show me.*/
-@4 = ~MT: Watch, listen and remember~ /*Look but don't touch!*/
+@1 = ~NP: Haven't I clearly demonstrated the sequence of hitting the gongs?~ /*Don't you want the other cure attempts to work?*/
+@2 = ~NP: No, I understand everything.~ /*This is not over!*/
+@3 = ~NP: Show it once again.~ /*Show me.*/
+@4 = ~NP: Watch, listen and remember~ /*Look but don't touch!*/

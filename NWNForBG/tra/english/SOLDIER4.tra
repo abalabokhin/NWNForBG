@@ -1,9 +1,9 @@
-@0 = ~MT: I ask you to leave immediately! This is a barracks, not a museum for tourists!~ /*I will begin my search for the Waterdhavian creatures at once!*/
+@0 = ~NP: I ask you to leave immediately! This is a barracks, not a museum for tourists!~ /*I will begin my search for the Waterdhavian creatures at once!*/
 @1 = ~Who you follow?~
-@2 = ~MT: If these are barracks, then where are the soldiers?~ /*If me find it me let you know.*/
-@3 = ~MT: Okay, I'm leaving now.~ /*Fine, I'll go.*/
-@4 = ~MT: I'm a mercenary hired by the mayor of this city. His name is Kendrak and he's in the building opposite. Now leave the room.~ /*I've a little gold. I suppose you could take it. Just go now, all right?*/
-@5 = ~MT: Since you are a mercenary, can I hire you?~ /*You're a mercenary. That mean you're for hire?*/
-@6 = ~MT: Isn't it clear? At their posts, of course. However, some are now in the city hall - this is the building opposite. Now leave the room.~ /*I don't get good luck. I get stuck in a zombie-filled city with a broken wagon and the scorn of my wife.*/
-@7 = ~MT: I'm already hired. Leave the room, I won't repeat it a third time.~ /*Me sorry. Me got lost. You say that again?*/
-@8 = ~MT: Go your own way. You don't belong here.~ /*Just wait here a while longer.*/
+@2 = ~NP: If these are barracks, then where are the soldiers?~ /*If me find it me let you know.*/
+@3 = ~NP: Okay, I'm leaving now.~ /*Fine, I'll go.*/
+@4 = ~NP: I'm a mercenary hired by the mayor of this city. His name is Kendrak and he's in the building opposite. Now leave the room.~ /*I've a little gold. I suppose you could take it. Just go now, all right?*/
+@5 = ~NP: Since you are a mercenary, can I hire you?~ /*You're a mercenary. That mean you're for hire?*/
+@6 = ~NP: Isn't it clear? At their posts, of course. However, some are now in the city hall - this is the building opposite. Now leave the room.~ /*I don't get good luck. I get stuck in a zombie-filled city with a broken wagon and the scorn of my wife.*/
+@7 = ~NP: I'm already hired. Leave the room, I won't repeat it a third time.~ /*Me sorry. Me got lost. You say that again?*/
+@8 = ~NP: Go your own way. You don't belong here.~ /*Just wait here a while longer.*/

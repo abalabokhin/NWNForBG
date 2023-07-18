@@ -1,11 +1,11 @@
 @0 = ~Hmmm. So you're the one Aarin wants me to let in the gates. You look like trouble, if you ask me. You sure you know what you're doing?~
 @1 = ~Why? What's going on in Luskan?~
 @2 = ~I need to find the cult.~
-@3 = ~MT: Just let me into town.~ /*Just leave me alone!*/
-@4 = ~MT: I'm not ready yet.~ /*I'll go now.*/
-@5 = ~MT: A fight not for life, but for death. The High Captains have started a war... it's been going on for weeks now. Luskan is just being torn to pieces. I think you have a lot of questions, but I don't have time to talk. I made a promise to Aarin and I will keep it... so do you want to go in or not?~ /*I'm sure you're full of questions, but I really can't chat. I promised Aarin a favor, and I'll do it... so do you want inside or not?*/
+@3 = ~NP: Just let me into town.~ /*Just leave me alone!*/
+@4 = ~NP: I'm not ready yet.~ /*I'll go now.*/
+@5 = ~NP: A fight not for life, but for death. The High Captains have started a war... it's been going on for weeks now. Luskan is just being torn to pieces. I think you have a lot of questions, but I don't have time to talk. I made a promise to Aarin and I will keep it... so do you want to go in or not?~ /*I'm sure you're full of questions, but I really can't chat. I promised Aarin a favor, and I'll do it... so do you want inside or not?*/
 @6 = ~Yes, let me inside.~
-@7 = ~MT: Yes, Aarin said something like that. And he asked a lot of questions about the magicians in the Tower. To tell the truth, the less I know about your task, the calmer I live. So are you going inside or not?~ /*Truth be told, the less I know about what you're up to, the better I'll feel. Do you want inside or not?*/
-@8 = ~MT: So this is how it is? You're lucky that Aarin is my old friend... a promise is a promise. Okay... now the gates are open for you. But remember, I can't let you out. Check if you have everything with you.~ /*All right... the gates are open for you, now. Just remember: I can't let you back out once you're in. Make sure you have everything you need, you hear?*/
+@7 = ~NP: Yes, Aarin said something like that. And he asked a lot of questions about the magicians in the Tower. To tell the truth, the less I know about your task, the calmer I live. So are you going inside or not?~ /*Truth be told, the less I know about what you're up to, the better I'll feel. Do you want inside or not?*/
+@8 = ~NP: So this is how it is? You're lucky that Aarin is my old friend... a promise is a promise. Okay... now the gates are open for you. But remember, I can't let you out. Check if you have everything with you.~ /*All right... the gates are open for you, now. Just remember: I can't let you back out once you're in. Make sure you have everything you need, you hear?*/
 @9 = ~Oh? Well, if you change your mind, I'll still be here to let you in. A favor's a favor.~
 @10 = ~The gate's open for you. Just remember: once you go into Luskan, you can't come back out... period. So get everything you need before you go in.~

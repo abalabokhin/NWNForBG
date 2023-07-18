@@ -5,10 +5,10 @@
 @4 = ~You needn't worry about anything. Your efforts got us this far, and now the ritual will take care of the rest. Following that, I will see to your reward.~ [ARIBE172]
 @5 = ~Such impatience does not suit you. You will see the fruits of your labors when the ritual is complete.~ [ARIBE213]
 @6 = ~For now, you can leave what must be done to us. You've earned the right to bear witness, however, and I'm sure the others would say the same.~ [ARIBE173]
-@7 = ~MT: Fentik says that he revealed to Dester the secret of the castle's defensive spells.~ /*Fenthick says that he gave his ward key to Desther.*/
+@7 = ~NP: Fentik says that he revealed to Dester the secret of the castle's defensive spells.~ /*Fenthick says that he gave his ward key to Desther.*/
 @8 = ~I have questions about the ritual.~
 @9 = ~Will things be getting back to normal now?~
-@10 = ~MT: I have questions about those who are here.~ /*I have questions about the region.*/
+@10 = ~NP: I have questions about those who are here.~ /*I have questions about the region.*/
 @11 = ~Goodbye.~
 @12 = ~I am aware. Our guards here are very observant. There will be consequences, but not for now. There are more important things at hand.~ [ARIBE174]
 @13 = ~I will try to explain. Is there anything specific you wish to know?~ [ARIBE177]
@@ -27,7 +27,7 @@
 @26 = ~Well, we have prepared a small container. The mixture itself will be fairly unspectacular to look at, despite the importance of it.~ [ARIBE183]
 @27 = ~It will take time, so we'll treat the most severe cases of plague first, regardless of station. I just hope... well... we'll worry about other things later.~ [ARIBE187]
 @28 = ~What concerns you, Aribeth? Tell me.~
-@29 = ~MT: I am an elf, just like you. Tell me what's bothering you.~ /*I am a fellow elf. Tell me what your worry is.*/
+@29 = ~NP: I am an elf, just like you. Tell me what's bothering you.~ /*I am a fellow elf. Tell me what your worry is.*/
 @30 = ~You should really ask him that. He despises being thought of as weak, and would much prefer to be involved in any talk of his health.~ [ARIBE195]
 @31 = ~I would ask whether your opinion of him has suffered. It was your efforts that brought us this far. His claims of action seem based on your results.~ [ARIBE196]
 @32 = ~This time has been... difficult, and our difference of opinion made it more so. Fenthick and I have had little to speak of besides the plague.~ [ARIBE199]
@@ -71,5 +71,5 @@
 @70 = ~Desther claimed he came from Helm's Hold in the east, but I don't know how that could be true. They would have no part of a plot like this.~ [ARIBE228]
 @71 = ~This is a huge undertaking... it seems like Desther has done all this to promote the plague... but why?! So many dead... now the Hold?~ [ARIBE231]
 @72 = ~Wherever the portal leads, I am sure it will be dangerous. He must know we would send someone after him. Be careful.~ [ARIBE229]
-@73 = ~MT: Do not have the time! You must find Dester! I can keep the portal open for now, but you need to hurry! Maybe you can find them quickly...~ [ARIBE233] /*There is no time! You must find Desther! I can maintain the portal for now, but you must hurry! If you find them soon enough, maybe...*/
+@73 = ~NP: Do not have the time! You must find Dester! I can keep the portal open for now, but you need to hurry! Maybe you can find them quickly...~ [ARIBE233] /*There is no time! You must find Desther! I can maintain the portal for now, but you must hurry! If you find them soon enough, maybe...*/
 @74 = ~Maybe Fenthick's actions will be overlooked... maybe he will be forgiven before the city looks for... vengeance instead of justice...~ [ARIBE234]

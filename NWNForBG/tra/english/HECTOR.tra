@@ -8,12 +8,12 @@
 @7 = ~Aren't you worried about zombies or plague?~
 @8 = ~I tried, boss! Ain't no parts nowhere though. I swears it!~
 @9 = ~Okay. I'll keep looking here. No... no good... these all broken. Maybe somewhere...~
-@10 = ~MT: Oooh, he must be mad. I can't find the parts, which means he can't carry his stuff. And he loves his stuff! Would you... uh... come with me and tell him there are no parts? He gets very angry sometimes.~ /*Oooh, he probably mad. Me can't find any parts, which means he can't move his stuff. He sure likes his stuff!*/
+@10 = ~NP: Oooh, he must be mad. I can't find the parts, which means he can't carry his stuff. And he loves his stuff! Would you... uh... come with me and tell him there are no parts? He gets very angry sometimes.~ /*Oooh, he probably mad. Me can't find any parts, which means he can't move his stuff. He sure likes his stuff!*/
 @11 = ~I take you to him maybe? Where he be?~
 @12 = ~You can tag along, but don't get in the way!~
 @13 = ~Not my concern.~
-@14 = ~MT: Aldo will be beside himself. He doesn't want to leave his things. He loves his things very much. Would you... uh... come with me and tell him there are no parts? He gets very angry sometimes.~ /*Maybe you could... uh... come with me to tell him there's no parts? He gets real mad sometimes.*/
-@15 = ~MT: I? I'm not afraid! Hector hit the zombies hard, and hit the pestilence too if he fights me. May be. I've never seen pestilence before. I'm only afraid of Aldo. He needs wagon parts, and I'm looking for them. I haven't found anything yet. Only broken things.~ /*Me? Me not scared! Hector punch zombies good, and punch plague too if it try to fight me. Maybe. Me not see plague before.*/
+@14 = ~NP: Aldo will be beside himself. He doesn't want to leave his things. He loves his things very much. Would you... uh... come with me and tell him there are no parts? He gets very angry sometimes.~ /*Maybe you could... uh... come with me to tell him there's no parts? He gets real mad sometimes.*/
+@15 = ~NP: I? I'm not afraid! Hector hit the zombies hard, and hit the pestilence too if he fights me. May be. I've never seen pestilence before. I'm only afraid of Aldo. He needs wagon parts, and I'm looking for them. I haven't found anything yet. Only broken things.~ /*Me? Me not scared! Hector punch zombies good, and punch plague too if it try to fight me. Maybe. Me not see plague before.*/
 @16 = ~Perhaps you are too stupid to be scared.~
 @17 = ~Good good! Aldo is guarding his wagon in middle of Beggar's Nest. Uh... just don't let him bug you. He gets mad...~
 @18 = ~Don't matter to me why. Me not scared of zombies, and me not scared of you. Me just want parts, so gimme or beat it.~

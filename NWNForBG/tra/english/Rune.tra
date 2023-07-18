@@ -1,6 +1,6 @@
-@0 = ~MT: This ancient structure is covered with moss and climbing plants... it is impossible to say how long it has been standing here. Of particular interest are large runes in a language you do not understand.~ /*This pillar is weathered with age and covered with moss and small vines... there is no telling how long it has been standing here. Of particular interest are the large runes that seem to cover most of its surface, in no language you recognize.*/
-@1 = ~MT: However, without the translation of these runes, it is hardly possible to understand what they mean, and why this incomprehensible structure is needed. His mysteries will remain a mystery.~ /*Without some way of translating these runes, however, there is no way to determine what they say or what use the pillar might have. Its mysteries remain a secret.*/
-@2 = ~MT: With the help of the entries in the explorer's diary, you identify these runes as the ancient Nether language. You even manage to make a rough translation. The runes are written in depressions... in three rows of four runes. Pressing one rune in each row gives a phrase of three words ... what this means is unknown.~ /*The runes have been placed on depressions... three rows of four runes. Pressing one rune in each row results in a three-word Netherese phrase... the effect of which is unknown.*/
+@0 = ~NP: This ancient structure is covered with moss and climbing plants... it is impossible to say how long it has been standing here. Of particular interest are large runes in a language you do not understand.~ /*This pillar is weathered with age and covered with moss and small vines... there is no telling how long it has been standing here. Of particular interest are the large runes that seem to cover most of its surface, in no language you recognize.*/
+@1 = ~NP: However, without the translation of these runes, it is hardly possible to understand what they mean, and why this incomprehensible structure is needed. His mysteries will remain a mystery.~ /*Without some way of translating these runes, however, there is no way to determine what they say or what use the pillar might have. Its mysteries remain a secret.*/
+@2 = ~NP: With the help of the entries in the explorer's diary, you identify these runes as the ancient Nether language. You even manage to make a rough translation. The runes are written in depressions... in three rows of four runes. Pressing one rune in each row gives a phrase of three words ... what this means is unknown.~ /*The runes have been placed on depressions... three rows of four runes. Pressing one rune in each row results in a three-word Netherese phrase... the effect of which is unknown.*/
 @3 = ~Do you wish to press a rune in the first row?~
 @4 = ~Press the 'Gur-Atol' rune.~
 @5 = ~Press the 'Nether' rune.~
@@ -18,5 +18,5 @@
 @17 = ~Press the 'Rule' rune.~
 @18 = ~Press the 'Destroy' rune.~
 @19 = ~You step away from the pillar, suddenly aware of a faint yet palpable sense of evil around it.~
-@20 = ~MT: When you press the last rune, an ominous sound is heard. Watch out...~ /*As you press the last rune, the pillar begins to hum...*/
-@21 = ~MT: When you press the last rune, the ancient structure begins to hum...~ /*As you press the last rune, the pillar begins to hum...*/
+@20 = ~NP: When you press the last rune, an ominous sound is heard. Watch out...~ /*As you press the last rune, the pillar begins to hum...*/
+@21 = ~NP: When you press the last rune, the ancient structure begins to hum...~ /*As you press the last rune, the pillar begins to hum...*/

@@ -1,5 +1,5 @@
-@0 = ~MT: These are the books from the library of the wizard Bourque that are burning.~ /*So where did they bury this wizard?*/
-@1 = ~MT: Put out the fire.~ /*Me buy one.*/
-@2 = ~MT: Let them burn.~ /*Empty Fields*/
-@3 = ~MT: Before your eyes, the fire goes out. You can try to save the rest of the books.~ /*No lock can thwart me!*/
-@4 = ~MT: The goblin keeps the fire going and doesn't let the fire go out.~ /*My weapon will not serve here.*/
+@0 = ~NP: These are the books from the library of the wizard Bourque that are burning.~ /*So where did they bury this wizard?*/
+@1 = ~NP: Put out the fire.~ /*Me buy one.*/
+@2 = ~NP: Let them burn.~ /*Empty Fields*/
+@3 = ~NP: Before your eyes, the fire goes out. You can try to save the rest of the books.~ /*No lock can thwart me!*/
+@4 = ~NP: The goblin keeps the fire going and doesn't let the fire go out.~ /*My weapon will not serve here.*/

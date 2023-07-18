@@ -4,12 +4,12 @@
 @3 = ~Out of my way. I go where I want.~
 @4 = ~I will leave.~
 @5 = ~Mommy says guards are good, and I should do like they say.~
-@6 = ~MT: What do you know about Neverwinter?~ /*What do you know about Neverwinter?*/
-@7 = ~MT: What do you know about the plague?~ /*What do you know of the plague?*/
+@6 = ~NP: What do you know about Neverwinter?~ /*What do you know about Neverwinter?*/
+@7 = ~NP: What do you know about the plague?~ /*What do you know of the plague?*/
 @8 = ~Have you heard of anything odd? Any rumors?~
 @9 = ~Goodbye.~
 @10 = ~Hmm... I don't think I can talk to you. Mommy says strangers might be bad.~
-@11 = ~MT: I go where I want.~ /*I'm looking for work.*/
+@11 = ~NP: I go where I want.~ /*I'm looking for work.*/
 @12 = ~You're mean! Why are you mean? Oh! I bet you're not supposed to be here! I bet Mommy didn't let you in!~
 @13 = ~Byebye. You go now.~
 @14 = ~It's big. I have to stay close to Mommy lots or I get lost.~
@@ -21,6 +21,6 @@
 @20 = ~Bye. Don't get sick, okay?~
 @21 = ~There's my house... and school sometimes, but not for a while now. And the castle! It's big! I can't go by myself. That's all, I think.~
 @22 = ~That's Mommy and Daddy, silly. Sometimes they listen to Mister Nasher, but he lives in the castle. Maybe he's nice, but I don't know.~
-@23 = ~MT: Hello. What you need? Now few people come here. Mom says the Luskan soldiers will kill us all.~ /*Hello. Why are you here? Not many people come around now. Mommy says some people are sick.*/
-@24 = ~MT: Hello again,<LADYLORD> guard. Why are you still here?~ /*Hi again, <PRO_SIRMAAM> Guard. Why are you still here?*/
+@23 = ~NP: Hello. What you need? Now few people come here. Mom says the Luskan soldiers will kill us all.~ /*Hello. Why are you here? Not many people come around now. Mommy says some people are sick.*/
+@24 = ~NP: Hello again,<LADYLORD> guard. Why are you still here?~ /*Hi again, <PRO_SIRMAAM> Guard. Why are you still here?*/
 @25 = ~Go away! I want all scary people to go away!~

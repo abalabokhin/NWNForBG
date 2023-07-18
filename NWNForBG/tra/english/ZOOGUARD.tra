@@ -1,2 +1,2 @@
-@0 = ~MT: We can't stay here, it's office space. Return to the animal room.~ /*I require aid now! Fight at my side now!*/
-@1 = ~MT: “Go, this is the office space.” ¬otherwise you will not be well.~ /*Listen to me here. I must speak with you.*/
+@0 = ~NP: We can't stay here, it's office space. Return to the animal room.~ /*I require aid now! Fight at my side now!*/
+@1 = ~NP: “Go, this is the office space.” ¬otherwise you will not be well.~ /*Listen to me here. I must speak with you.*/
