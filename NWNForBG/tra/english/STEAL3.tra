@@ -1,3 +1,3 @@
-@1 = ~MT: Ïîìîãèòå! Âîðû! Óáåéòå èõ!~ /*This way then! Here! Come on!*/
-@2 = ~MT: Ìåíÿ ïûòàëèñü îáîêðàñòü! Óáèòü èõ!~ /*Oh it burns!  Poison!*/
-@3 = ~MT: Ýé! Ïîìîãèòå! Âîðû!~ /*HA! HA! HAAA!*/
+@1 = ~NP: Ïîìîãèòå! Âîðû! Óáåéòå èõ!~ /*This way then! Here! Come on!*/
+@2 = ~NP: Ìåíÿ ïûòàëèñü îáîêðàñòü! Óáèòü èõ!~ /*Oh it burns!  Poison!*/
+@3 = ~NP: Yes! Ïîìîãèòå! Âîðû!~ /*HA! HA! HAAA!*/

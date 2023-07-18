@@ -4,12 +4,12 @@
 @3 = ~No. I am in no mood. Take a walk.~
 @4 = ~Yes, yes, just go.~
 @5 = ~Most certainly not. I don't waste my time with guards or other rabble. Go protect some wench. I don't need you here.~
-@6 = ~MT: Да, я вижу. У тебя слишком много дел. Надо пугать животных и детей.~ /*Yes, I see. Too busy scaring the animals and your children.*/
+@6 = ~NP: Yes, I see. You have too much to do. It is necessary to scare animals and children.~ /*Yes, I see. Too busy scaring the animals and your children.*/
 @7 = ~What did you say to me? Listen, <PRO_GIRLBOY>, I am important. I don't need to take that kind of abuse from the likes of you.~
 @8 = ~I would guess you are afraid of the plague. At least here you still think you have control.~
 @9 = ~Don't worry. I won't waste my time on you.~
 @10 = ~No, You misunderstand. I approve. The children should know where they stand.~
-@11 = ~MT: Вот это заявление! Откуда же оно взялось в твоей голове, а? Только что придумано или, может быть, оно уже давно ждет подходящего случая? Да ты еще хуже, чем этот идиот друид Ниатар со своими возвышенными речами, ничего не смыслящий ни в коммерции, ни в традициях. Меня тошнит от этого... этого... "благорастворения".~ /*You sound worse than that fool of a druid, Nyatar, talking all high and mighty, not considering commerce or tradition. That kind of... of... "do-goodery" just makes me sick.*/
+@11 = ~NP: Here is the statement! Where did it come from in your head, huh? Has it just been invented, or maybe it has been waiting for a suitable occasion for a long time? Yes, you are even worse than that idiot druid Niathar with his lofty speeches, who knows nothing about commerce or traditions. Im sick of this... this... &quot;welfare&quot;.~ /*You sound worse than that fool of a druid, Nyatar, talking all high and mighty, not considering commerce or tradition. That kind of... of... "do-goodery" just makes me sick.*/
 @12 = ~Er... yes... yes, that is what I intended. Especially in these strained times. The beasts are below and we are above. Remembering that gives us strength.~
 @13 = ~Oh yeah, and yelling at animals in stinky cages is best way to show that.~
 @14 = ~Well said. Sorry to have bothered you.~

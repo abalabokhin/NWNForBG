@@ -21,7 +21,7 @@
 @20 = ~Very well. Thank you.~
 @21 = ~If you're so grateful, why don't you give me something more?~
 @22 = ~NP: No, I'm not taking your ring.~ /*No, me not wants key.*/
-@23 = ~NP: Я... I understand. Here, take all the gold I have. It's not much, but I'm happy to give it to you along with the ring. I don't know if it's magic, but it's always brought me luck. I hope it will bring you luck as well. Thank you again, <CHARNAME>... Goodbye!~ /*I don't know if it is magical, but it's always brought me luck. I hope it brings you luck, too. Thank you again, <CHARNAME>... and farewell!*/
+@23 = ~NP: Ð¯... I understand. Here, take all the gold I have. It's not much, but I'm happy to give it to you along with the ring. I don't know if it's magic, but it's always brought me luck. I hope it will bring you luck as well. Thank you again, <CHARNAME>... Goodbye!~ /*I don't know if it is magical, but it's always brought me luck. I hope it brings you luck, too. Thank you again, <CHARNAME>... and farewell!*/
 @24 = ~NP: How rude! Very good, it seems you're not as much of a hero as I thought you were!~ /*Very well, I guess you're not as much of a hero as I had thought. How rude!*/
 @25 = ~I'll be seeing you.~ [SOLOM050]
 @26 = ~Look, I think you'd better stop looking into this cult business...~ [SOLOM056]
