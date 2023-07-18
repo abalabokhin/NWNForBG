@@ -5308,6 +5308,9 @@ INCLUDE ~NWNForBG/lib/names_for_spells.tph~
 //BMP
 COPY ~NWNForBG/bmp~ ~override~
 
+//Portraits
+COPY ~NWNForBG/bmp/portraits~ ~override~
+
 //other BAM, not related to maps
 COPY ~NWNForBG/bam~ ~override~
 
