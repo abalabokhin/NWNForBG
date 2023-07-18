@@ -1,5 +1,5 @@
-@0 = ~MT: Что вы здесь делаете? Вы же не маг. Это гильдия магов.~ /*What are you doing here? State your intent to me.*/
-@1 = ~MT: Вам надо поговорить с Эльтурой, она глава нашей гильдии.~ /*You need got speak to Ketta. She be one in charge here.*/
-@2 = ~MT: Добро пожаловать в гильдию. Вы уже встречались с Эльтурой?~ /*"Welcome back, Pilgrim. The Sleeping Man has been dreaming of you."*/
-@3 = ~MT: Странно что наша магия не может остановить воющую смерть, мне не понятна природа этой болезни.~ /*I do not know how we might stop the Wailing Death, though I am eager to search the Beggar's Nest for answers.*/
-@4 = ~MT: Спасибо за то что помогли остановить воющую смерть, наша магия оказалась перед ней бессильна.~ /*Thank you for healing me! The demonic creatures swarmed out and slew everybody.*/
+@0 = ~NP: What are you doing here? You're not a mage. This is a mage guild.~ /*What are you doing here? State your intent to me.*/
+@1 = ~NP: You should talk to Eltura, she's the head of our guild.~ /*You need got speak to Ketta. She be one in charge here.*/
+@2 = ~NP: Welcome to the guild. Have you met Eltura yet?~ /*"Welcome back, Pilgrim. The Sleeping Man has been dreaming of you."*/
+@3 = ~NP: Strange that our magic can't stop the howling death, I don't understand the nature of this disease.~ /*I do not know how we might stop the Wailing Death, though I am eager to search the Beggar's Nest for answers.*/
+@4 = ~NP: Thank you for helping to stop the howling death, our magic was powerless against it.~ /*Thank you for healing me! The demonic creatures swarmed out and slew everybody.*/

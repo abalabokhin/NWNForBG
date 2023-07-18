@@ -1,4 +1,4 @@
-@0 = ~MT: Это поместье лорда Джедейла. Непрошенным гостям здесь делать нечего.  Уходите немедленно.~ /*Me guess me done here. Me go now.*/
-@1 = ~MT: Если вы пришли к лорду  Джедейлу, то он сейчас в отъезде, приходите в другой день.~ /*With the right reward, nothing bothers me.*/
-@2 = ~MT: Убирайтесь, таким как вы здесь делать нечего.~ /*No, I don't think so. It's nothing that concerns you.*/
-@3 = ~MT: Лорда Джедейла сейчас нет, а леди Джадейл никого не принимает.~ /*There is never a candle around when you need one.*/
+@0 = ~NP: This is Lord Jedale's estate. Uninvited guests have no business here.  Leave immediately.~ /*Me guess me done here. Me go now.*/
+@1 = ~NP: If you're here to see Lord Jedale, he's away at the moment, come back another day.~ /*With the right reward, nothing bothers me.*/
+@2 = ~NP: Get out, people like you have no business here.~ /*No, I don't think so. It's nothing that concerns you.*/
+@3 = ~NP: Lord Jadeil is away at the moment, and Lady Jadeil isn't seeing anyone.~ /*There is never a candle around when you need one.*/

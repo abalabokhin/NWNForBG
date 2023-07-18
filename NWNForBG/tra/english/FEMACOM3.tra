@@ -1,7 +1,7 @@
 @0 = ~Why are you here in my home? Please leave.~
 @1 = ~I am in service to Aribeth and the city guard.~
 @2 = ~I just need to ask a few questions.~
-@3 = ~MT: Я иду, куда хочу.~ /*I'm looking for work.*/
+@3 = ~NP: I'm going where I want to go.~ /*I'm looking for work.*/
 @4 = ~I will leave.~
 @5 = ~That doesn't mean you can invade my home... does it? I'll answer your questions, but I would like you to leave afterward.~
 @6 = ~I need infomation about Neverwinter.~
@@ -24,7 +24,7 @@
 @23 = ~This is about gold? The air is thick with plague, people are dying in the streets, and you want gold? Tell me you are not so repugnant as this!~
 @24 = ~Shut up! Hand over your gold or I'll kill you!~
 @25 = ~I am sorry. I am actually a guard in service to Aribeth.~
-@26 = ~MT: Ну, я живу в Сердце города и почти не выбираюсь оттуда. Есть четыре других района, но мне незачем ходить туда. Это Гнездо Нищих, район порта, полуостров и Черное озеро. О них я могу немного рассказать.~ /*Well, I live in the City Core, so I don't get around much. There's four other districts, but I don't have much cause to visit them.*/
+@26 = ~NP: Well, I live in the Heart of the City and I hardly ever get out of there. There are four other neighborhoods, but I have no reason to go there. They are the Beggars Nest, the harbor area, the Peninsula, and Black Lake. I can tell you a little about them.~ /*Well, I live in the City Core, so I don't get around much. There's four other districts, but I don't have much cause to visit them.*/
 @27 = ~Tell me about the City Core.~
 @28 = ~Tell me about the Beggar's Nest.~
 @29 = ~Tell me about the Docks district.~
@@ -32,11 +32,11 @@
 @31 = ~Tell me about the Peninsula district.~
 @32 = ~Oh, I don't know much about that sort of thing. Lord Nasher keeps the city peaceful and that's good enough for me. He's a good man.~
 @33 = ~How has Lord Nasher dealt with the plague?~
-@34 = ~MT: Хорошо, я поговорю с вами. Надеюсь, это не займет много времени?~ /*I'll answer one of your questions... if it doesn't take long.*/
+@34 = ~NP: All right, I'll talk to you. I hope this won't take too long.~ /*I'll answer one of your questions... if it doesn't take long.*/
 @35 = ~The Helmites claim their blessings are a cure. I don't know. Everyday I see a few less of my neighbors around.~
-@36 = ~MT: Ну, его сейчас почти не видно. Замок Невер заперт, чтобы туда не проникла чума. Уверен, он делает все, что в его силах. Наверное, за него теперь леди Арибет. Хорошая женщина. Держит народ под контролем.~ /*Well, we don't see much of him now. Castle Never is locked up so he doesn't get the plague. I'm sure he's doing all he can.*/
+@36 = ~NP: Well, you can hardly see him now. Castle Nevers is locked to keep the plague out. I'm sure he's doing his best. Lady Aribet must be his responsibility now. Good woman. Keeps the people under control.~ /*Well, we don't see much of him now. Castle Never is locked up so he doesn't get the plague. I'm sure he's doing all he can.*/
 @37 = ~How has Lady Aribeth dealt with the plague?~
-@38 = ~MT: О, она не знает усталости. Она все организует и... заботится об умерших. Должно быть, эта работа ужасно ее угнетает. Стражников не хватает, знаете ли. Хельмиты подменяют их, наверное, но я не знаю точно, чем они занимаются.~ /*Oh, she is tireless. She's been organizing and... taking care of the dead. It must be a terribly straining job for her.*/
+@38 = ~NP: Oh, she knows no fatigue. She organizes everything and, uh. taking care of the dead. It must depress her terribly. There's a shortage of guards, you know. Helmites are filling in for them, I guess, but I don't know exactly what they do.~ /*Oh, she is tireless. She's been organizing and... taking care of the dead. It must be a terribly straining job for her.*/
 @39 = ~Don't! Please! I just want to live through the plague... I just want to live... take my gold... take whatever... just get out.~
 @40 = ~Why? That's where you are now. Couldn't you just walk around? Did you have to break into my home to learn that?~
 @41 = ~Oh, the poorest of the districts. They got the worst of the plague, and I even heard there were undead rising up all over. Can you imagine?~
@@ -45,11 +45,11 @@
 @44 = ~I wouldn't know anything about the Peninsula district. Good people stay away from it. That's where the prison is.~
 @45 = ~It's the poorest district. I don't give it much thought, really. Makes me feel bad, especially with it hit so hard by the Wailing.~
 @46 = ~I guess one of the new militia recruits got rid of them all, but still... zombies! I can't imagine...~
-@47 = ~MT: Похоже, там теперь повсюду воры, и еще начался какой-то бунт среди Кровавых Моряков.~ /*I sense there is tension between your people and the Lords' Alliance.*/
+@47 = ~NP: It seems there are thieves everywhere now, and there's also some kind of riot among the Blood Sailors.~ /*I sense there is tension between your people and the Lords' Alliance.*/
 @48 = ~Normally I wouldn't know anything about the Docks, but everyone is talking about how one of the new militia recruits went toe to toe with old Vengaul Bloodsail!~
 @49 = ~I'm not even looking in the direction of the Blacklake anymore. I heard one of them stuffy nobles was hoarding food away from us that need it!~
-@50 = ~MT: Я даже и не смотрю в сторону Черного Озера. Говорят, кто-то из этих жадных богатеев копит запасы продовольствия и скрывает их от нас, от тех, кто в них нуждается! Думается мне, кто-то положил этому конец, но это их не извиняет. Ненавижу этих надутых сквалыг!~ /*I'm not even looking in the direction of the Blacklake anymore. I heard one of them stuffy nobles was hoarding food away from us that need it!*/
+@50 = ~NP: I'm not even looking toward Black Lake. They say some of those greedy rich people are hoarding food supplies and hiding them from us, from those who need them! I think someone put a stop to it, but that doesn't excuse them. I hate those pompous squalags!~ /*I'm not even looking in the direction of the Blacklake anymore. I heard one of them stuffy nobles was hoarding food away from us that need it!*/
 @51 = ~I heard some strange things about the Peninsula district and the prison there. I heard it had to be cleaned out by the militia because the Head Gaoler went insane!~
-@52 = ~MT: Поговаривают, странные вещи творились на полуострове и в тамошней тюрьме. Говорят даже, городская стража ее вычистила, потому что главный надзиратель с ума сошел! Думаю, там сейчас стало поспокойнее, но я даже и знать не хочу, в чем дело у них было. У меня своих забот полон рот.~ /*I heard some strange things about the Peninsula district and the prison there. I heard it had to be cleaned out by the militia because the Head Gaoler went insane!*/
+@52 = ~NP: They say that strange things were happening on the peninsula and in the prison there. They even say the city guard cleaned it out because the chief warden went mad! I think it's quieter now, but I don't even want to know what it was about. I've got a mouthful of my own to worry about.~ /*I heard some strange things about the Peninsula district and the prison there. I heard it had to be cleaned out by the militia because the Head Gaoler went insane!*/
 @53 = ~Yes? Is there something else you need? I had hoped my previous answers were enough and you'd leave.~
 @54 = ~What are we coming to? Threatened in my own home! Thief! Bandit! Get out of here!~

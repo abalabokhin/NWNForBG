@@ -1,4 +1,4 @@
-@0 = ~MT: Приветствую, <SIRMAAM>. Я как раз упаковываю вещи, надеюсь, скоро уйду отсюда. Чем могу помочь?~ [ARHEO050] /*Greetings my <PRO_LADYLORD>. I was just getting packed up in the hopes of leaving soon. How may I assist you?*/
+@0 = ~NP: Greetings, <SIRMAAM>. I'm just packing up my stuff, hopefully I'll be out of here soon. What can I do for you?~ [ARHEO050] /*Greetings my <PRO_LADYLORD>. I was just getting packed up in the hopes of leaving soon. How may I assist you?*/
 @1 = ~Could I ask you some questions?~
 @2 = ~Goodbye.~
 @3 = ~What would you like to ask?~
@@ -18,10 +18,10 @@
 @17 = ~Don't you want to get revenge?~
 @18 = ~We were searching for evidence of an ancient race. But you should really talk to Jax about that.~
 @19 = ~Where is this Jax?~
-@20 = ~MT: С кем я могу поговорить кроме Джакса?~ /*I can't talk right now.*/
+@20 = ~NP: Who can I talk to besides Jax?~ /*I can't talk right now.*/
 @21 = ~Sorry, I just mean that ever since we were attacked by the trolls, nobody really listens to anybody.~
 @22 = ~I can't afford the trip by myself and Jax won't leave. He's still hoping for reinforcements from Waterdeep to show up, or for an adventurer to hire.~
-@23 = ~MT: Хочу, конечно, но я реалистично смотрю на вещи. У меня не хватит денег заплатить какому-нибудь герою, чтобы он пошел и перебил этих тварей. Я просто хочу выбраться отсюда, пока тролли не вылезли опять из своих пещер. Нет, если уж хочешь услышать о мести, я предлагаю тебе поговорить с Лентоном. Он где-то здесь, неподалеку.~ /*Of course I do, but I'm realistic. I can't afford to pay some hero to go slaughter those beasts. I just want to get out of here before the trolls decide to come out of the caves.*/
+@23 = ~NP: I want to, of course, but I'm realistic about things. I don't have enough money to pay some hero to go and kill those things. I just want to get out of here before the trolls come out of their caves again. No, if you want to hear about revenge, I suggest you talk to Lenton. He's around here somewhere.~ /*Of course I do, but I'm realistic. I can't afford to pay some hero to go slaughter those beasts. I just want to get out of here before the trolls decide to come out of the caves.*/
 @24 = ~So why don't you go back to Waterdeep?~
 @25 = ~Who is this Lenton?~
 @26 = ~Is there anybody, besides Lenton and Jax, to talk to around here?~

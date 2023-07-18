@@ -1,3 +1,3 @@
-@0 = ~MT: Ётот кокон не пуст, в нем находитс€ какой-то человек. ’отите попытатьс€ его освободить?~ /*I'm sure there's some way to get inside the city.*/
-@1 = ~MT: ƒа~ /*Yes*/
-@2 = ~MT: Ќет, пусть остаетс€ в коконе.~ /*Leave the statue alone.*/
+@0 = ~NP: This cocoon is not empty, there's a man in it. Would you like to try to free him?~ /*I'm sure there's some way to get inside the city.*/
+@1 = ~NP: ƒа~ /*Yes*/
+@2 = ~NP: Ќet him stay in his cocoon.~ /*Leave the statue alone.*/

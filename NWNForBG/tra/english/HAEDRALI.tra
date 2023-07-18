@@ -1,6 +1,6 @@
 @0 = ~Why have you seized this Word of Power? **hiss** Who do you serve?~ [HAERD089]
 @1 = ~I am <CHARNAME>. I serve the Lords' Alliance and the city of Neverwinter!~
-@2 = ~MT: Я из команды <CHARNAME>. Я служу Союзу Лордов и городу Невервинтер!~ /*I am <CHARNAME>. I serve the Lords' Alliance and the city of Neverwinter!*/
+@2 = ~NP: I am of the <CHARNAME> team. I serve the Union of Lords and the city of Neverwinter!~ /*I am <CHARNAME>. I serve the Lords' Alliance and the city of Neverwinter!*/
 @3 = ~Who are you?~
 @4 = ~Die, lizardwoman scum!~
 @5 = ~I will not answer your questions!~
@@ -8,7 +8,7 @@
 @7 = ~First you must answer me!~ [HAERD097]
 @8 = ~**hiss** You cannot slay a projection, <PRO_RACE> fool!!~ [HAERD098]
 @9 = ~My magic has sealed the door, the Word of Power shall not leave until you have answered my questions. **hiss** Who do you serve!~ [HAERD099]
-@10 = ~MT: Среди всех вашшших имен есссть только одно, которое значит что-то для меня - Маугрим. **шшш** Ссскажи мне <RACE> - ты служишь Маугриму?~ [HAERD091] /*There is only one name that mattersss to me among your kind - Maugrim. **hiss** Tell me <PRO_RACE> one - do you serve Maugrim?*/
+@10 = ~NP: Of all your names, there is only one that means anything to me: Maugrim. **Tell me <RACE> do you serve Maugrim?~ [HAERD091] /*There is only one name that mattersss to me among your kind - Maugrim. **hiss** Tell me <PRO_RACE> one - do you serve Maugrim?*/
 @11 = ~Maugrim is the enemy of Neverwinter!~
 @12 = ~Uh... yes. I serve Maugrim. Do you have a message for him?~
 @13 = ~I shall not rest until Maugrim is dead!~
@@ -46,13 +46,13 @@
 @45 = ~Over the centuries the magic of the Words became dormant, their power faded. And as we who were left behind grew strong the bonds enslaving us were broken.~ [HAERD070]
 @46 = ~Maugrim seeks to unlock the dormant power of the Words so that he may enslave again. Word Slaves, humans, dwarves, elves - Maugrim would have all bow to him as Master.~ [HAERD063]
 @47 = ~Maugrim will never succeed! I will stop him!~
-@48 = ~MT: Спасибо, Хэдралин. Без твоей истории я бы не смог понять, что Маугрим хочет завоевать власть над миром.~ /*Wow, thanks Haedraline. I would have never figured Maugrim was seeking world domination without that little history of your people.*/
+@48 = ~NP: Thank you, Hadralyn. Without your story, I would not have been able to understand Maugrim's desire to gain power over the world.~ /*Wow, thanks Haedraline. I would have never figured Maugrim was seeking world domination without that little history of your people.*/
 @49 = ~**hiss** Many Word Slaves died when the endless winter came. But some learned to survive in the frozen waste; hiding from the lesser races who now hunted us. To survive what the Masters could not endure.~ [HAERD062]
 @50 = ~Tell me about the coming of this endless winter.~
 @51 = ~What does this have to do with Maugrim?~
 @52 = ~We who had once been Slaves scattered and hid the Words so that we would be forever free of their legacy. **hiss** Now thousands of years have passed and even we who hid the Words no longer know where to find them.~ [HAERD071]
 @53 = ~Maugrim is already doomed. **hiss** The Words were meant to release ancient evil upon the land to devastate those who survived the change the Old Ones could not.~ [HAERD064]
-@54 = ~MT: Избавь меня от своего сарказма <RACE>! **шшш** Ты ничем не лучшшшше Маугрима!~ [HAERD069] /*Spare me your sarcasm, <PRO_RACE> one! **hiss** You are as big a fool as Maugrim!*/
+@54 = ~NP: Spare me your sarcasm <RACE>! **You're no better than Maugrim!~ [HAERD069] /*Spare me your sarcasm, <PRO_RACE> one! **hiss** You are as big a fool as Maugrim!*/
 @55 = ~The plague was only the first of the evils the Words will unleash. **hiss** The world as you know it shall be no more if Maugrim succeeds! This is the legacy of the Creators.~ [HAERD065]
 @56 = ~The Words will... UNH!!! No - it cannot be! UNH - Morag!~ [HAERD066]
 @57 = ~What? What's wrong?~
@@ -60,7 +60,7 @@
 @59 = ~Morag - she strikes at me! This cannot be - UNH! She attacks me through the Words - UNH! She disrupts my spell of projection - UNH!~ [HAERD067]
 @60 = ~Wait, you were going to say something more about the Words!~
 @61 = ~Morag? Who's Morag? Tell me before it's too late!~
-@62 = ~MT: Хорошо. Теперь, когда действие заклинания кончилось, мне удастся выйти из этой дурацкой комнаты!~ /*Good. With your spell gone maybe I can leave this stupid room!*/
+@62 = ~NP: Good. Now that the spell is over, I'll be able to get out of this stupid room!~ /*Good. With your spell gone maybe I can leave this stupid room!*/
 @63 = ~Noooooo!!!!~ [HAERD068]
 @64 = ~The third Word is yours - but time is short and Morag stirs. **hiss** The city you call Neverwinter is under siege. Soon it will fall to Maugrim and he will possess the Source Stone.~ [HAERD074]
 @65 = ~Source Stone? What's the Source Stone?~
@@ -73,7 +73,7 @@
 @72 = ~Why would she imprison herself inside this Source Stone?~
 @73 = ~The Old Ones could not survive the coming of the winter storm. **hiss** Morag sought a shelter where she could escape the death of ice and cold.~ [HAERD077]
 @74 = ~Within the Source Stone Morag would gather her strength year after year, century after century. **hiss** When her power waxed full, we Word Slaves would awaken the Queen to banish the never ending winter.~ [HAERD078]
-@75 = ~MT: Если Мораг проснется, она превратит Север в тропические джунгли?~ /*So you think if Morag awakes she'll turn the North into a tropical jungle?*/
+@75 = ~NP: If Morag wakes up, will she turn the North into a tropical jungle?~ /*So you think if Morag awakes she'll turn the North into a tropical jungle?*/
 @76 = ~Morag was foolish to trust her fate to a group of slaves.~
 @77 = ~How did Maugrim become involved in all this?~
 @78 = ~The Source Stone is buried beneath the streets of Neverwinter, and even in its dormant state the magical heat radiating from within keeps the city habitable during the coldest blizzards.~ [HAERD079]

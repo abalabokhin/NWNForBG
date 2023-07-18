@@ -1,14 +1,14 @@
 @0 = ~Greetings, to you. I am Mobley, the mayor of Charwood. What can I do for you?~ [MOBLEY55]
 @1 = ~I want to ask you some questions.~
-@2 = ~MT: Чарвуд: Деревня Вечной Ночи
+@2 = ~NP: Charwood: Village of Eternal Night.
 
-Странная деревня Чарвуд запрятана в дебрях леса, носящего такое же название. Ее окружает стена густого синего тумана, поэтому кажется, что в деревне всегда царит ночь. У входа странников встречает сумасшедший по имени Квинт, загадывает им загадки. В самой же деревне кажется, что туман замутил рассудок жителей: они без конца повторяют одно и то же, дрожа от ледяного ночного воздуха. Мэр не отличается от остальных, однако его пугает сама возможность, что кто-то может войти в зловещий замок Джарег.~ /*The strange village of Charwood is buried deep within the forest that shares its name. It is shrouded by sheets of deep blue mist and seems to exist beneath a pall of endless night. At the entrance, a madman by the name of Quint greets newcomers with riddles before disappearing in a puff of blood-drenched smoke. Inside the village proper, the townsfolk seem to be lost in a haze of confusion and forgetfulness, repeating their words endlessly into the chill night air. The Mayor is no different, though he seems frightened by the prospect of anyone entering the forboding Castle Jhareg which looms over the settlement's north edge.*/
+The strange village of Charwood is tucked away in the wilds of the forest that bears the same name. It is surrounded by a wall of thick blue fog, so it seems like night always reigns in the village. At the entrance, wanderers are met by a madman named Quintus, who riddles them with riddles. In the village itself, it seems that the fog has clouded the minds of the villagers: they keep repeating the same things, shivering in the icy night air. The mayor is no different, but he is terrified by the very possibility that someone might enter the ominous castle of Jareg.~ /*The strange village of Charwood is buried deep within the forest that shares its name. It is shrouded by sheets of deep blue mist and seems to exist beneath a pall of endless night. At the entrance, a madman by the name of Quint greets newcomers with riddles before disappearing in a puff of blood-drenched smoke. Inside the village proper, the townsfolk seem to be lost in a haze of confusion and forgetfulness, repeating their words endlessly into the chill night air. The Mayor is no different, though he seems frightened by the prospect of anyone entering the forboding Castle Jhareg which looms over the settlement's north edge.*/
 @3 = ~Goodbye.~
 @4 = ~Always willing to answer questions about our fair town. It is a fine morn for a chat, too.~
 @5 = ~Mayor, it's not morning. The darkness clings to this place.~
 @6 = ~Tell me about your town.~
 @7 = ~I hunt a cult that prolonged the Neverwinter plague.~
-@8 = ~MT: Я не уверен, что правильно вас понял. До этой секунды мне не приходилось видеть ни одного нового лица. А разве мы встречались? Я имею в виду, я уверен, что мы... Я не слышал никаких историй уже... годы...~ /*I'm not sure I understand. I haven't laid eyes on anyone new until this very second. Have we met?*/
+@8 = ~NP: I'm not sure I understand you correctly. I've never seen a new face until this second. Have we met? I mean, I'm sure we-- I haven't heard any stories in, uh. years.~ /*I'm not sure I understand. I haven't laid eyes on anyone new until this very second. Have we met?*/
 @9 = ~I'm sorry... Very unlike a statesman to go on like that. What can I do for you?~
 @10 = ~Why don't you remember anything?~
 @11 = ~Goodbye. Please, visit anytime. Charwood is a friendly place.~
@@ -16,7 +16,7 @@
 @13 = ~That isn't right. Do you even know the season?~
 @14 = ~Well, on the whole it is a fine place. The Lords Jhareg keep us safe and we have very little to worry about. Very little...~
 @15 = ~You sound nervous. Are your lords fair?~
-@16 = ~MT: Мне хотелось бы задать другой вопрос.~ /*I want to ask you some questions.*/
+@16 = ~NP: I'd like to ask another question.~ /*I want to ask you some questions.*/
 @17 = ~Oh, perhaps I just have a carefree manner. The Lords Jhareg worry so we don't have to. Yes, that's it. That's what he said...~
 @18 = ~I... Look, there is nothing amiss here. Time just passes slowly in a small village. Just tell your tale and go.~
 @19 = ~Mayor, if there is a threat, perhaps I can help?~
@@ -26,14 +26,14 @@
 @23 = ~You can tell me. Can't you, handsome?~
 @24 = ~There is no threat! I don't want you making trouble out of nothing! If you disturb the Lords Jhareg, everything will end!~
 @25 = ~Jhareg? Who's that?~
-@26 = ~MT: Полагаю, да, хотя неприятности мне не нужны. Так давно нас оберегают от всяких историй... Лорд Карлат Джарег и его брат... как же его зовут... они построили здесь замок и основали рядом с ним нашу деревню. Мы защищены, это все, что имеет значение. Нам пришлось принести определенные жертвы и выслушивать их истории... но мы защищены...~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
+@26 = ~NP: I suppose so, although I don't want any trouble. We've been protected from stories for so long. Lord Carlat Jareg and his brother. what's his name. they built a castle here and founded our village beside it. We are protected, that's all that matters. We have had to make certain sacrifices and listen to their stories..... but we are protected.~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
 @27 = ~What stories?~
-@28 = ~MT: Какие жертвы?~ /*What kind of sounds?*/
-@29 = ~MT: Я н-не хочу неприятностей. Я просто... ладно, только я немногое могу сказать. Так давно нас оберегают от всяких историй... Лорд Карлат Джарег и его брат... как же его зовут... они построили здесь замок и основали рядом с ним нашу деревню. Мы защищены, это все, что имеет значение. Нам пришлось принести определенные жертвы и выслушивать их истории... но мы защищены...~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
+@28 = ~NP: What sacrifices?~ /*What kind of sounds?*/
+@29 = ~NP: I-I don't want any trouble. I just, uh. well, there's not much I can say. For so long we've been protected from stories. Lord Carlat Jareg and his brother. what's his name. they built a castle here and founded our village beside it. We are protected, that's all that matters. We have had to make certain sacrifices and listen to their stories..... but we are protected.~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
 @30 = ~I... don't think that I find your approach very... attractive, madam. Please, just ask your questions and leave.~
-@31 = ~MT: Лорд Карлат Джарег и его брат... как же его зовут... они построили здесь замок и основали рядом с ним нашу деревню. Мы защищены, это все, что имеет значение. Нам пришлось принести определенные жертвы и выслушивать их истории... но мы защищены...~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
+@31 = ~NP: Lord Carlat Jareg and his brother... what's his name. they built a castle here and founded our village beside it. We are protected, that's all that matters. We have had to make certain sacrifices and listen to their stories..... but we are protected.~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
 @32 = ~Oh, you won't find anything like that here. The Lords Jhareg keep us safe from changes like that. From everything.~
-@33 = ~MT: Квинт! Это Квинт забрал детей... Праздник в замке... Он собирался читать им сказки, но... это была ложь. Что-то случилось с ними, с детьми и с замком. Это Квинт... это он сделал. Из-за него все пошло не так. Это он во всем виноват. ~ /*Something happened to them, the children, the castle. That Quint... he did it. He made it all go wrong. He's the one that ruined it all.*/
+@33 = ~NP: Quintus! It was Quintus who took the children. The feast at the castle. He was going to read them stories, but, uh. it was a lie. Something happened to them, to the children and to the castle. It was Quintus. he did it. He's the reason everything went wrong. It's all his fault.~ /*Something happened to them, the children, the castle. That Quint... he did it. He made it all go wrong. He's the one that ruined it all.*/
 @34 = ~Look... I... I have nothing else to say. It's beyond me... If you don't mind... I really need to get back to... something...~
 @35 = ~I will discover what happened to your children.~
 @36 = ~Is the castle dangerous? I will likely check it out.~
@@ -43,7 +43,7 @@
 @40 = ~Yes? I am Mayor Mobley. What can I help you with?~ [MOBLEY56]
 @41 = ~I want to go over some things you said before.~
 @42 = ~Look how the light shines through the leaves again! See all you've done? I stayed behind to thank you.~
-@43 = ~MT: Я рад, что все закончилось, мэр.~ /*How does it end?*/
+@43 = ~NP: I'm glad it's over, Mayor.~ /*How does it end?*/
 @44 = ~I did it for my own reasons.~
 @45 = ~Is there anything else I can do for you?~
 @46 = ~Know that it's appreciated. The entire town, all of us ghosts and spirits, we're finally free now. We leave these woods to the animals... and to you.~

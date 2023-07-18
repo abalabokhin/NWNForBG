@@ -9,13 +9,13 @@
 @8 = ~Surely there must be some other way across?~
 @9 = ~You need written permission by the Arcane Brotherhood themselves, affixed with their seal.~
 @10 = ~How do you get such a thing?~
-@11 = ~MT: Не советую. Даже если вы пройдете мимо нас... в чем я сомневаюсь... на мосту стоят сильные охранные заклинания. Чтобы они пропустили вас, нужен пропуск. Вы можете, конечно, попытаться... если хотите.~ /*I wouldn't suggest it. Even if you got past us... which I doubt... there are powerful wards on the bridge. You need the pass to get past them.*/
+@11 = ~NP: I wouldn't advise it. Even if you do pass us by. which I doubt. there are strong security spells on the bridge. You'd need a pass to get past them. You can try, of course. if you'd like.~ /*I wouldn't suggest it. Even if you got past us... which I doubt... there are powerful wards on the bridge. You need the pass to get past them.*/
 @12 = ~What?! Let me see that...~
 @13 = ~On your way, then, citizen.~
 @14 = ~Aye, an organization of wizards. Some say they rule Luskan, but if they do, they do so secretly. We rarely see or hear of them.~
 @15 = ~Not hardly. The wizards protect their privacy with magic. You can't sail a boat to the island or tunnel there or even cast a spell to take you there... no passing, period. Not without their say so. That, at least, is what I'm told.~
 @16 = ~(sigh) You don't. It's only given by the wizards to the High Captains and dignitaries invited to see them.~
 @17 = ~What is Arcane Brotherhood?~
-@18 = ~MT: Ну что ж... здесь стоит печать. Она магическая, так что подделать ее нельзя. Очень хорошо, <SIRMAAM>, приношу извинения. За последнюю пару недель Братство Таинств посещали очень немногие сановники, и никого не было из такой дали. Но это неважно. Можете пройти.~ /*The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.*/
+@18 = ~NP: Well, uh. there's a seal here. It's magical, so it can't be tampered with. Very well, <SIRMAAM>, I apologize. Very few dignitaries have visited the Brotherhood of Mysteries in the last couple weeks, and no one from this far away. But that is not important. You may pass.~ /*The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.*/
 @19 = ~You are free to cross the bridge, ambassador.~
 @20 = ~You must be with the ambassador from Mulhorand, yes? You are free to cross the bridge.~

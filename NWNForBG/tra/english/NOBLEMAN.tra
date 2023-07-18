@@ -1,5 +1,5 @@
 @0 = ~The humans around these parts haven't a clue how to treat <PRO_RACE> kind, you know.~
-@1 = ~MT: Эй, ты, <RACE>, ты здесь, прислуживаешь, вроде. Принеси мне выпить.~ /*You there! <PRO_RACE> commoner, you must be one of the servers. Go fetch me a drink, <PRO_GIRLBOY>.*/
+@1 = ~NP: Hey, you, <RACE>, you're here, serving, like. Get me a drink.~ /*You there! <PRO_RACE> commoner, you must be one of the servers. Go fetch me a drink, <PRO_GIRLBOY>.*/
 @2 = ~I cannot wait until the Luskan gates are re-opened. I'm rather eager to be off.~
 @3 = ~Do be off, before I foist a manservant upon you. I am only here until the gates are re-opened, you see.~
 @4 = ~More lower-class travellers cluttering up this dingy inn, I see.~

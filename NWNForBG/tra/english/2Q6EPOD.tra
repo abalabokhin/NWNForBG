@@ -1,13 +1,13 @@
 @0 = ~This chamber has been formed of marble and complex crystals within its core, containing two depressions along its edge. It practically crackles with dormant magical energy.~
 @1 = ~Examine the depressions.~
-@2 = ~MT: Вставить жезл управления големами в углубление.~ /*Put the Golem Control Rod into a depression.*/
-@3 = ~MT: Вставить жезл производства големов в углубление.~ /*Put the Golem Replication Rod into a depression.*/
+@2 = ~NP: Insert the golem control rod into the recess.~ /*Put the Golem Control Rod into a depression.*/
+@3 = ~NP: Insert the golem production rod into the recess.~ /*Put the Golem Replication Rod into a depression.*/
 @4 = ~Destroy the chamber.~
 @5 = ~Leave the chamber alone.~
 @6 = ~The two depressions are long and slender, very likely receptacles awaiting something to be placed within them.~
-@7 = ~MT: В одно из углублений теперь вставлен небольшой жезл. Камера нетерпеливо гудит, словно она ожидает чего-то еще.~ /*One of the depressions has been filled with a small rod. The chamber hums with activity, appearing to await something else.*/
+@7 = ~NP: A small rod is now inserted into one of the recesses. The camera buzzed impatiently, as if it were waiting for something else.~ /*One of the depressions has been filled with a small rod. The chamber hums with activity, appearing to await something else.*/
 @8 = ~The rod slides easily into place, stopping with a faint click. It begins to glow slightly and the chamber hums... though it does nothing as of yet.~
-@9 = ~MT: Второй жезл входит на место рядом с первым и останавливается с легким щелчком. Оба жезла начинают вдруг ярко светиться, и камера оживает...~ /*The second rod slides into place beside the first, stopping with a faint click. Both rods begin to shine brilliantly, the chamber leaping to life...*/
+@9 = ~NP: The second wand comes into place next to the first and stops with a slight click. Both wands suddenly begin to glow brightly, and the camera comes to life....~ /*The second rod slides into place beside the first, stopping with a faint click. Both rods begin to shine brilliantly, the chamber leaping to life...*/
 @10 = ~You attempt to strike the chamber, but your blow slides harmlessly off an invisible barrier next to its surface.~
 @11 = ~You turn away from the strange structure.~
 @12 = ~This chamber is smoking every so slightly. Both rods in its depressions are blackened, burnt-out husks. Whatever magic fueled this chamber appears to have spent itself.~

@@ -1,8 +1,8 @@
-@0 = ~MT: Могу я вам помочь? Да нет, о чем это я... Я и себе-то помочь не могу. Я не могу даже спрятаться в своем собственном доме... Мне нельзя пойти домой в Гнездо нищих из-за зомби, нельзя выбраться из города из-за карантина... И что, по-вашему, я должен делать? Наверное, стоять и задыхаться от дыма горящих тел...~ /*Can't go home to the Beggar's Nest because of zombies, can't get out of the city because of the quarantine... what's a guy supposed to do? Just choke on stink of the corpse-fires, I guess.*/
+@0 = ~NP: Can I help you? No, what am I talking about? I can't even help myself. I can't even hide in my own house. I can't go home to the Beggars Nest because of the zombies, I can't get out of town because of the quarantine. What am I supposed to do? Probably stand there and choke on the smoke of burning bodies....~ /*Can't go home to the Beggar's Nest because of zombies, can't get out of the city because of the quarantine... what's a guy supposed to do? Just choke on stink of the corpse-fires, I guess.*/
 @1 = ~Could I ask you some questions?~
 @2 = ~Maybe I could help you out?~
 @3 = ~Goodbye.~
-@4 = ~MT: Простите, я не хочу грубить вам, но я сейчас не могу думать ни о чем кроме своей беды.~ /*Sorry, I don't think I have enough gold right now.*/
+@4 = ~NP: I'm sorry, I don't mean to be rude to you, but I can't think about anything but my distress right now.~ /*Sorry, I don't think I have enough gold right now.*/
 @5 = ~I don't know how you could. I don't know anyone that can take on an army of zombies by themselves. The Beggar's Nest is completely overrun... my home is overrun...~
 @6 = ~Farewell, then. I'll just stay here... nowhere else to go...~
 @7 = ~I never thought I'd be happy to be going back to the Beggar's Nest.~

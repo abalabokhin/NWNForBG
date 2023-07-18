@@ -1,4 +1,4 @@
-@0 = ~MT: Прошу меня извинить, но где же <CHARNAME>? Я буду разговаривать только с ним.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
+@0 = ~NP: Excuse me, but where is <CHARNAME>? I'll only talk to him.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
 @1 = ~This has become something of a habit, has it not, <CHARNAME>? Once more Neverwinter is threatened, and once more you are called upon to save us all.~ [AARIN310]
 @2 = ~I must admit, <CHARNAME>, I was glad when Lord Nasher informed me you would be coming on this mission as well. The thought of being apart from you was... unpleasant.~ [AARIN311]
 @3 = ~Yet this time you will be reporting directly to me. With Aribeth's defection, Lord Nasher has elevated me from the role of spymaster to that of his right hand.~ [AARIN313]
@@ -16,12 +16,12 @@
 @15 = ~Is there no one who comes to the defense of Neverwinter?~
 @16 = ~Have your spies learned anything of Maugrim?~
 @17 = ~So what do you need from me?~
-@18 = ~MT: Возможно, если бы мы были чуть более внимательными, предательство Арибет не стало бы для нас такой неожиданностью. После казни Фентика она так и не оправилась. Она покинула нас, но мне кажется, что этого бы не случилось, если бы мы сами не повернулись спиной к ее страданиям. Но сейчас уже поздно сожалеть об этом.~ [AARIN319] /*Perhaps had we been more observant Aribeth's betrayal would not have been such a surprise. She was never the same after Fenthick's execution.*/
+@18 = ~NP: Perhaps if we had been a little more careful, Aribeth's betrayal would not have come as such a surprise. She never recovered from Fentick's execution. She left us, but I think that would not have happened if we had not turned our backs on her suffering. But it's too late for regrets now.~ [AARIN319] /*Perhaps had we been more observant Aribeth's betrayal would not have been such a surprise. She was never the same after Fenthick's execution.*/
 @19 = ~Aribeth has vowed revenge against Neverwinter; the pain of her loss makes her blind to anything else. It is up to us to see she does not get the revenge she seeks.~ [AARIN321]
 @20 = ~How can we stop her?~
-@21 = ~MT: Союз Лордов пришел нам на помощь. Если бы не они, истерзанный чумой город был бы уже в осаде. Несколько утгардских племен тоже на нашей стороне. Племя Черного Льва разбило лагерь у Колодца Беорунна, это место священно для утгардтов.~ [AARIN322] /*Several of the Uthgardt also stand with us. The Black Lion tribe has made camp with us here at Beorunna's Well, an Uthgardt holy site.*/
+@21 = ~NP: The Lord's Alliance has come to our aid. If it weren't for them, the plague-ridden city would be under siege by now. Several of the Uthgard tribes are also on our side. The Black Lion Tribe is camped at Beorunn's Well, a place sacred to the Uthgardts.~ [AARIN322] /*Several of the Uthgardt also stand with us. The Black Lion tribe has made camp with us here at Beorunna's Well, an Uthgardt holy site.*/
 @22 = ~But Aribeth and the Luskan army are best left to the generals in the field, <CHARNAME>. You have a much more important mission.~ [AARIN324]
-@23 = ~MT: У меня очень мало сведений о Маугриме, я знаю лишь, что он не с армией Лускана. Похоже, он решил предоставить сражения Арибет. Я считаю, что Арибет и лусканцы - это только западня, попытка отвлечь нас от главной угрозы.~ [AARIN325] /*The few reports I have heard of Maugrim indicate he is not with the Luskan army. It seems he is content to leave the battles to Aribeth.*/
+@23 = ~NP: I have very little information about Maugrim, all I know is that he is not with Luskan's army. It seems he has decided to leave the fighting to Aribet. I believe that Aribeth and the Luskans are just a trap, an attempt to distract us from the main threat.~ [AARIN325] /*The few reports I have heard of Maugrim indicate he is not with the Luskan army. It seems he is content to leave the battles to Aribeth.*/
 @24 = ~A decoy?~
 @25 = ~It has not been easy to gather information on Maugrim's cult, <CHARNAME> - but we know they are frantically searching for the ancient artifacts known as the Words of Power.~ [AARIN327]
 @26 = ~I believe Aribeth and the Luskan invaders are but a decoy, a distraction to draw our troops and resources away from the true threat.~ [AARIN326]
@@ -67,10 +67,10 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @63 = ~Normally Neverwinter counts the lizardmen amongst her enemies, but your news is not completely unexpected. I have received reports of a lizard creature and her followers doing battle with Maugrim's cult.~ [AARIN351]
 @64 = ~This must be that Haedraline you mentioned. I will need to consider this new information carefully. But this is not your concern, <CHARNAME>. You must focus on finding the Words.~ [AARIN352]
 @65 = ~I wish you luck in your mission, <CHARNAME>. Return to me once you have another of the Words.~ [AARIN353]
-@66 = ~MT: Слова Власти
+@66 = ~NP: Words of Power
 
-Первое из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ /*Words of Power
+The first of the three Words of Power has been found and delivered safely to Aaryn Gendu, but the enemy is not yet defeated.
+Maugrim and his cult continue to search the lands near Beorunn's Well, proving that this is where the rest of the Words are to be found.~ /*Words of Power
 The first of the three Words of Power has been found and safely delivered to Aarin Gend, but the enemy is not beaten yet.
 
 Maugrim and his cult continue to search the lands around Beorunna's Well - a sure sign there are other Words yet to be found.
@@ -84,7 +84,7 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @72 = ~How goes the war effort?~
 @73 = ~Have you learned anything about the lizardwoman Haedraline?~
 @74 = ~My mother's amulet... the one I gave you. You still have it.~ [AARIN369]
-@75 = ~MT: Вы думаете, я от этого избавилась?~ /*Did you think I would get rid of it?*/
+@75 = ~NP: You think I got rid of it?~ /*Did you think I would get rid of it?*/
 @76 = ~Are you saying you want it back?~
 @77 = ~Since you gave me this amulet all you've spoken about is business.~
 @78 = ~Why didn't you say something earlier?~ [AARIN387]
@@ -145,10 +145,10 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @133 = ~She spoke of the ancient Creator Races. She claimed to be one of them. I think she's a friend.~
 @134 = ~I'm no history expert, but wouldn't that make her thousands of years old? I'm not sure whether I believe her, and I don't know what this has to do with Maugrim. But I intend to try and find out.~ [AARIN394]
 @135 = ~Leave Haedraline to me. Maugrim and his crew are still skulking around the countryside, which means they must believe there's at least one more Word still undiscovered. Find it before they do.~ [AARIN395]
-@136 = ~MT: Слова Власти
+@136 = ~NP: Words of Power
 
-Второе из трех Слов Власти было найдено, а затем в целости и сохранности доставлено Аарину Генду, но враг еще не повержен.
-Маугрим и его культ продолжают обыскивать земли рядом с Колодцем Беорунна - это доказывает, что именно там и следует искать остальные Слова.~ /*Words of Power
+The second of the three Words of Power has been found and delivered safely to Aaryn Gendu, but the enemy is not yet defeated.
+Maugrim and his cult continue to search the lands near Beorunn's Well, proving that this is where the rest of the Words are to be found.~ /*Words of Power
 The second of the three Words of Power has been found and safely delivered to Aarin Gend, but the enemy is not beaten yet.
 
 Maugrim and his cult continue to search the lands around Beorunna's Well - a sure sign there are other Words yet to be found.
@@ -167,7 +167,7 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @147 = ~Time grows short. We must return to Castle Never to defend its walls and the Words of Power within from Aribeth and Maugrim!~ [AARIN459]
 @148 = ~We will leave right now, if you are ready.~ [AARIN460]
 @149 = ~I'm ready.~
-@150 = ~MT: У меня еще остались дела здесь~ /*I have some other questions.*/
+@150 = ~NP: I still have some business to take care of here~ /*I have some other questions.*/
 @151 = ~I only hope we are not too late.~ [AARIN461]
 @152 = ~Words of Power
 The third Word of Power has been found but there is no time for celebration. 
@@ -176,4 +176,4 @@ Aribeth and the Luskan army have breached the walls of Neverwinter.
 
 Aarin Gend has made all the preparations for a quick return to Neverwinter. If Aribeth and the Luskan army are not stopped the city will surely fall.~
 @153 = ~I wish I had something to give you, but all such items have been sent to the battle fronts to aid in the war effort.~ [AARIN426]
-@154 = ~MT: Поторопитесь <CHARNAME>. Мы можем опоздать.~ /*Not right now, <CHARNAME>. Later, perhaps.*/
+@154 = ~NP: Hurry up <CHARNAME>. We might be late.~ /*Not right now, <CHARNAME>. Later, perhaps.*/

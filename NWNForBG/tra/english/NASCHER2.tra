@@ -75,7 +75,7 @@
 @74 = ~I fear it is too late for that, <CHARNAME>. Fenthick is dead and Aribeth... Perhaps if I were given the chance to pass judgment again I would act differently. More mercifully.~ [NASHE163]
 @75 = ~I only wanted to do what was best for Neverwinter, to heal the wounds left by the Wailing Death. Yet even as I passed sentence on Fenthick, I knew in my heart it was wrong. This was not justice.~ [NASHE154]
 @76 = ~And so she shall have it, <CHARNAME>, but now is not the time. We are fighting a war, and Aribeth can give us much information about our enemy.~ [NASHE157]
-@77 = ~MT: На преступления Арибет нельзя просто так махнуть рукой. И все же... в твоих словах есть доля правды.~ [NASHE160] /*Aribeth's crimes cannot simply be forgiven with a wave of the hand, <CHARNAME>. And yet... there is truth in your words.*/
+@77 = ~NP: Aribet's crimes can't be dismissed out of hand. And yet. there is some truth to what you say.~ [NASHE160] /*Aribeth's crimes cannot simply be forgiven with a wave of the hand, <CHARNAME>. And yet... there is truth in your words.*/
 @78 = ~But I fear that chance shall never come. I must live with the burden of what I have done, as must my city. Neverwinter will fall.~ [NASHE164]
 @79 = ~Fenthick died to feed the city's lust for revenge. Now Neverwinter shall fall to an army that was raised to feed Aribeth's own vengeance. Perhaps that is justice.~ [NASHE155]
 @80 = ~Maybe you got chance for make it all better.~
@@ -89,7 +89,7 @@
 @88 = ~Were things not so grim I might laugh at the absurdity of it all. (sigh) What is it you need of me, <CHARNAME>?~ [NASHE107]
 @89 = ~What are you planning to do with Aribeth?~
 @90 = ~Aribeth is in your dungeon? What are you talking about?~
-@91 = ~MT: Это огромная честь,разговаривать с Вами. Отныне Вы герой Невервинтера, Ваше имя навсегда бкдет записано в историю города!~ /*Mommy says you're the hero of Neverwinter. I want to be a hero!*/
+@91 = ~NP: It is an honor to speak with you. You are now a hero of Neverwinter, your name will forever be written in the history of the city!~ /*Mommy says you're the hero of Neverwinter. I want to be a hero!*/
 @92 = ~And what good will this Word do us? We already have three of the damn things!~ [NASHE179]
 @93 = ~And just how are we supposed to do that, Gend? Do you know how to use them?~ [NASHE180]
 @94 = ~You should quit wasting Gend's time, <CHARNAME>. Go speak with Haedraline if you think the Word is any use.~ [NASHE181]

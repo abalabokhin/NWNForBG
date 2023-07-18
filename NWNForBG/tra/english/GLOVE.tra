@@ -1,4 +1,4 @@
-@0 = ~MT: Привет, ребята. Добро пожаловать, чувствуйте себя как дома. Только постарайтесь не беспокоить местных, ладно? Времена сейчас нелегкие, так что им и так хватает неприятностей. Что ж, чем могу помочь?~ /*Greetings, . Welcome to the dead lands of Kel Garas, though, as I am sure you have noticed, I am not quite dead.*/
-@1 = ~MT: Покажите, что вы можете предложить.~ /*Have you any other services?*/
+@0 = ~NP: Hey, guys. Welcome, make yourselves at home. Just try not to bother the locals, okay? Times are tough, so they're in enough trouble as it is. Well, what can I do for you?~ /*Greetings, . Welcome to the dead lands of Kel Garas, though, as I am sure you have noticed, I am not quite dead.*/
+@1 = ~NP: Show us what you have to offer.~ /*Have you any other services?*/
 @2 = ~Nothing.~
-@3 = ~MT: Привет. От вас, бродяг, мне неприятностей не нужно. Похоже, из всех остальных баров в этом городе вас уже успели выкинуть. Будете бузить - не задержитесь и здесь. Не будете - добро пожаловать. Что ж, чем могу помочь?~ /*Do I know her name? Was I supposed to have gazed into a crystal ball or found her name etched in the starry sky? How would I know who she is?*/
+@3 = ~NP: Hi. I don't want no trouble from you hobos. Looks like every other bar in this town has already kicked you out. You're not gonna stay here for long if you're loud. If you don't, you're welcome. Well, what can I do for you?~ /*Do I know her name? Was I supposed to have gazed into a crystal ball or found her name etched in the starry sky? How would I know who she is?*/

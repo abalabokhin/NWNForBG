@@ -1,7 +1,7 @@
-@0 = ~MT: Вам лучше поговорить с моим мужем, если хотите разузнать, что здесь творится в округе.~ /*You should speak with Fenthick and Aribeth. You have helped them immensely.*/
-@1 = ~MT: Вы, наверное, путешественники, да? Послушайте, что я Вам расскажу! В молодости мне так хотелось стать путешественницей.  Эх...~ /*Please, hear the words that I speak. They will have meaning for you.*/
-@2 = ~MT: Моя сестра должна была прибыть из Лускана уже несколько дней назад. Надеюсь, она скоро будет здесь. ~ /*Me working for lady Aribeth. Can't tell you me mission. It secret.*/
-@3 = ~MT: Я бы дала тебе пару кулинарных уроков, но бродяги вроде тебя подолгу на одном месте не эадерживаются.~ /*"I've given you my signet ring, and now I expect you to fulfill your end of the bargain."*/
-@4 = ~MT: Ох! Вы напугали меня. Не привыкла встречать незнакомцев, ведь путешествовать нынче опасно.~ /*That makes me glad. You do me a great honor by carrying it.*/
-@5 = ~MT: Я надеюсь, погода вскорости переменится. Без хорошего урожая нам тяжело придется.~ /*I hope you enjoy your time in Port Llast. Goodbye.*/
-@6 = ~MT: Ты выглядишь вроде неплохо, но у меня муж скоро придет, так что извиняюсь.~ /*You look troubled. Not that the situation doesn't call for it.*/
+@0 = ~NP: You'd better talk to my husband if you want to find out what's going on around here.~ /*You should speak with Fenthick and Aribeth. You have helped them immensely.*/
+@1 = ~NP: You must be travelers, right? Listen to what I'm going to tell you! When I was young, I wanted to be a traveler so badly.  Oh.~ /*Please, hear the words that I speak. They will have meaning for you.*/
+@2 = ~NP: My sister should have arrived from Luskan a few days ago. I hope she'll be here soon.~ /*Me working for lady Aribeth. Can't tell you me mission. It secret.*/
+@3 = ~NP: I'd give you a couple cooking lessons, but tramps like you don't stay in one place long.~ /*"I've given you my signet ring, and now I expect you to fulfill your end of the bargain."*/
+@4 = ~NP: Oh! You frightened me. I'm not used to meeting strangers, because traveling is dangerous these days.~ /*That makes me glad. You do me a great honor by carrying it.*/
+@5 = ~NP: I hope the weather turns soon. Without a good harvest, we'll have a hard time.~ /*I hope you enjoy your time in Port Llast. Goodbye.*/
+@6 = ~NP: You look good, but my husband's coming over soon, so I apologize.~ /*You look troubled. Not that the situation doesn't call for it.*/

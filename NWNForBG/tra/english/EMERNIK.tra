@@ -3,7 +3,7 @@
 @2 = ~You're not with the prisoners, are you?~
 @3 = ~No, I had to fight my way through them to get here.~
 @4 = ~... Why do you ask?~
-@5 = ~MT: Да, я заключенный... Отправляйся в одну из камер, не то пожалеешь.~ /*Yeah, I am... Get back to your cell or face the consequences.*/
+@5 = ~NP: Yes, I'm a prisoner. Go to one of the cells, or you'll regret it.~ /*Yeah, I am... Get back to your cell or face the consequences.*/
 @6 = ~Thank goodness you've come, then. They've been going from cell to cell, killing us guards... I think I'm the last one left.~
 @7 = ~Who are you, anyways?~
 @8 = ~Think you could answer some questions for me?~

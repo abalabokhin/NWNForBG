@@ -1,4 +1,4 @@
-@0 = ~MT: Прошу меня извинить, но где же <CHARNAME>? Я буду разговаривать только с ним.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
+@0 = ~NP: Excuse me, but where is <CHARNAME>? I'll only talk to him.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
 @1 = ~Do not give up hope, my Lord. We still have the Words of Power, after all.~ [AARIN471]
 @2 = ~Perhaps Haedraline will reveal their secret to us - if you release her from the dungeons.~ [AARIN472]
 @3 = ~Haedraline told us about the secret door beneath Castle Never. Without her we would never have found the Source Stone.~ [AARIN473]
@@ -104,4 +104,4 @@ Only she can reveal the secrets of the Words of Power and the recently discovere
 @100 = ~Organizing our remaing troops to withstand the next Luskan assault requires all my attention, <CHARNAME>. If the enemy breaches the City Core we are lost.~ [AARIN488]
 @101 = ~I am afraid I can only spare a few moments for you, though I will try to help you however I can.~ [AARIN489]
 @102 = ~Ah, my love - it is good to see you again. I only wish it were under less trying circumstances.~ [AARIN487]
-@103 = ~MT: Это огромная честь,разговаривать с Вами. Отныне Вы герой Невервинтера, Ваше имя навсегда бкдет записано в историю города!~ /*Mommy says you're the hero of Neverwinter. I want to be a hero!*/
+@103 = ~NP: It is an honor to speak with you. You are now a hero of Neverwinter, your name will forever be written in the history of the city!~ /*Mommy says you're the hero of Neverwinter. I want to be a hero!*/

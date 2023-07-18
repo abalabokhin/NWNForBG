@@ -2,12 +2,12 @@
 @1 = ~What have you seen?~
 @2 = ~Are you ignoring your duty as a guard?~
 @3 = ~Are the undead related to the plague?~
-@4 = ~MT: Как вы думаете, что мы видели? Вокруг только смерть. Я захочу встретиться с нежитью не раньше, чем превращусь в тупоумного искателя приключений. Никогда мне не нравилось работать рядом с Великим Кладбищем. Кажется, чума наполнила его до самых краев.~ /*What do you think we've seen? Dead everywhere. If I wanted to face undead I'd have been an idiot adventurer.*/
+@4 = ~NP: What do you think we saw? Nothing but death. I don't want to meet the undead before I turn into a dumb adventurer. I never liked working near the Great Graveyard. The plague seems to have filled it to the brim.~ /*What do you think we've seen? Dead everywhere. If I wanted to face undead I'd have been an idiot adventurer.*/
 @5 = ~Where is that? Is that where the undead come from?~
 @6 = ~Goodbye.~
-@7 = ~MT: Что вы об этом знаете? Вы не ветеран. Вы только что сюда прибыли. Такой бой не входит в наши обязанности. Мои люди следят за порядком, они не сражаются со всякой мерзостью. Это злая магия, и у нас нет средств противодействия ей.~ /*My men keep order, they don't fight abominations. This is bad magic, and I don't have the means to fight it.*/
-@8 = ~MT: Откуда мне знать, бесы вас возьми? Что я могу знать о нежити? Или о чуме? Это не моя проблема. Я знаю, что нежить постоянно на нас нападает. Кто бы за этим не стоял, он хочет нашей смерти. Точка. Я не собираюсь туда идти, словно идиот.~ /*What I know is that undead attack relentlessly. Whoever is behind this wants us dead. Period. I won't walk into it like a fool.*/
+@7 = ~NP: What do you know about it? You're not a veteran. You just got here. This kind of fighting is not part of our job description. My men keep order, they don't fight abominations. This is evil magic, and we have no means of countering it.~ /*My men keep order, they don't fight abominations. This is bad magic, and I don't have the means to fight it.*/
+@8 = ~NP: How the hell should I know? What would I know about the undead? Or the plague? That's not my problem. I know that the undead are always attacking us. Whoever's behind this wants us dead. Period. I'm not going in there like an idiot.~ /*What I know is that undead attack relentlessly. Whoever is behind this wants us dead. Period. I won't walk into it like a fool.*/
 @9 = ~The Great Graveyard is north of the Beggar's Nest. Go if you want. I don't want to know anything about it.~
-@10 = ~MT: Идите, куда хотите. Мои люди будут удерживать эту позицию. По крайней мере, здесь безопасно.~ /*Go where you want. My men will hold the wall. At least it's safe up here.*/
+@10 = ~NP: Go wherever you want. My men will hold this position. At least it's safe here.~ /*Go where you want. My men will hold the wall. At least it's safe up here.*/
 @11 = ~What is it? I'm getting tired of explaining myself. My men are not risking themselves down there and that's final.~
 @12 = ~I see there are not as many undead around, but we ain't taking any chances. We're staying here.~

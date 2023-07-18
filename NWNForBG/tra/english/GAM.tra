@@ -13,7 +13,7 @@
 @12 = ~Ah. Well, I wouldn't be interested in such a thing, then.~
 @13 = ~That's your choice. Me, I intend to take that reward. Anyone with that much money to place as a wager deserves to lose it.~
 @14 = ~Is that so? I guess you and I will be running into each other below, then. Good luck to you.~
-@15 = ~MT: Хмм. Что ж, так или иначе, вы все равно узнаете. Думаю, в этом не будет никакого вреда. Мутамин, владелец этого заведения, сам в свое время был искателем приключений. И здорово разбогател, по крайней мере, так мне говорили. В любом случае, он достаточно богат, чтобы устроить состязание. Под этим местом есть подземелье, в котором полным-полно ловушек и монстров... первый, кто пройдет это подземелье, получит приз.~ /*Wealthy enough that he's set up a contest. There's a dungeon below this place full of traps and monsters... first one through wins the prize.*/
+@15 = ~NP: Hmm. Well, you'll find out one way or another. I guess there's no harm in that. Mutamin, the owner of this place, was an adventurer himself in his day. He got rich, at least that's what I'm told. Anyway, he's rich enough to organize a contest. Underneath this place, there's a dungeon full of traps and monsters... and the first one to pass this dungeon will win a prize.~ /*Wealthy enough that he's set up a contest. There's a dungeon below this place full of traps and monsters... first one through wins the prize.*/
 @16 = ~But don't ask me about it. Talk to Mutamin, if you're interested.~
 @17 = ~You won't hear about it from me, friend, as I said. Try someone else.~
 @18 = ~I'm not interested in your money. Try your coin elsewhere and you'll likely find freer lips than mine.~
@@ -36,7 +36,7 @@
 @35 = ~Please... do not leave me here to die, friend! I beg you!~
 @36 = ~Perhaps I should put you out of your misery.~
 @37 = ~Tough. I can handle myself.~
-@38 = ~MT: Какая жестокость, <MALEFEMALE>. Молись, чтобы тебя никогда не постигла такая же судьба.~ /*You are a cruel <PRO_MANWOMAN>. Pray you do not meet the same fate as I.*/
-@39 = ~MT: В соседнем зале на меня напали невидимые существа. Они обладают большой силой. Мне казалось, у меня достаточно навыков, чтобы справиться с ними, но это не так. Во время битвы одно из них слишком близко подошло к той световой колонне, и... взорвалось. Моя рана лишила меня возможности воспользоваться этим знанием... Но это можешь сделать ты.~ /*During the battle, one of them came too close to that pillar of light and it... it exploded. I was too injured to take advantage of that knowledge... but you are not.*/
-@40 = ~MT: Теперь я намереваюсь выбраться отсюда. Вот, возьми в благодарность книгу, которую я здесь нашел. Благодарю еще раз, друг мой. Желаю тебе удачи.~ /*Now I intend to find my way out of here. Thank you again, friend. I wish you luck.*/
-@41 = ~MT: Спасибо... огромное за твою помощь, друг мой. Мне казалось, что я умру в этом подземелье.~ /*I... am most grateful for your aid, my friend. I was almost certain that I was about to die here in this dungeon.*/
+@38 = ~NP: What cruelty, <MALEFEMALE>. Pray that you never suffer the same fate.~ /*You are a cruel <PRO_MANWOMAN>. Pray you do not meet the same fate as I.*/
+@39 = ~NP: In the next room, I was attacked by invisible creatures. They have great strength. I thought I had enough skill to deal with them, but I didn't. During the battle, one of them got too close to that light column, and it exploded. My wound robbed me of the ability to use that knowledge... But you can.~ /*During the battle, one of them came too close to that pillar of light and it... it exploded. I was too injured to take advantage of that knowledge... but you are not.*/
+@40 = ~NP: Now I intend to get out of here. Here, take this book I found here as a thank you. Thank you again, my friend. I wish you good luck.~ /*Now I intend to find my way out of here. Thank you again, friend. I wish you luck.*/
+@41 = ~NP: Thank you, uh. so much for your help, my friend. I thought I was going to die in that dungeon.~ /*I... am most grateful for your aid, my friend. I was almost certain that I was about to die here in this dungeon.*/

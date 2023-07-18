@@ -1,4 +1,4 @@
-@0 = ~MT: Вас ждет последнее испытание. Когда вы шли по подземелью, вы должны были собирать безделушки. Положите одну в сундук позади меня, но только одну.~ /*There are trinkets that you may collect throughout this dungeon. Place one in the chest before me, but only one.*/
+@0 = ~NP: The final challenge awaits you. As you walked through the dungeon, you were supposed to collect trinkets. Put one in the chest behind me, but only one.~ /*There are trinkets that you may collect throughout this dungeon. Place one in the chest before me, but only one.*/
 @1 = ~If you give me the one I want, you will find the way out of here. The others... well, the others shall present more obstacles.~
 @2 = ~Which one is the one that you want?~
 @3 = ~All right... I'll do that.~

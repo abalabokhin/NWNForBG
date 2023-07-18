@@ -3,11 +3,11 @@
 @2 = ~Did they hurt you?~
 @3 = ~How did the Uthgardt capture you?~
 @4 = ~Can you find your way safely out of here?~
-@5 = ~MT: Хватит болтать. Пришла пора тебе умереть.~ /*Enough yapping. It's time for you to die.*/
-@6 = ~MT: О, да. Давай теперь будем тратить время на представление. Не стоит волноваться о том, как ты вытащишь меня отсюда! Это была бы слишком наглая просьба, так ведь? Меня зовут Майлин, если тебе это нужно. Папа оставил мне неплохое наследство, и я собиралась купить себе небольшую ферму в пригороде. А потом пришли эти проклятые дикари и все испортили!~ /*My name is Mileene, if you must know. Daddy left me a nice inheritance, so I thought I'd buy a little farm in the countryside. Then those damn savages came and ruined everything!*/
+@5 = ~NP: Stop talking. It's time for you to die.~ /*Enough yapping. It's time for you to die.*/
+@6 = ~NP: Oh, yeah. Let's waste time with the show now. You don't have to worry about getting me out of here! That would be asking too much, wouldn't it? My name's Myleene, if you want it. Dad left me a nice inheritance, and I was going to buy myself a little farm in the suburbs. And then those damn savages came and ruined it!~ /*My name is Mileene, if you must know. Daddy left me a nice inheritance, so I thought I'd buy a little farm in the countryside. Then those damn savages came and ruined everything!*/
 @7 = ~So far all they've done is throw me in this cage. Probably saving me for some pagan ritual they hope will cure them of this plague that's infected their whole tribe.~
 @8 = ~Anything else you can tell me?~
 @9 = ~Are you saying this is my fault? It wasn't! I was just working in my garden out on my farm when those barbarians attacked! They destroyed my home and dragged me kicking and screaming to this prison.~
-@10 = ~MT: Я полагаю, что сама могу найти дорогу обратно, эти дикари слишком ослаблены заболеванием. Вот так помощь! Хмффф! Мама была права. За стенами фермы жить небезопасно. Я отправляюсь прямо в Невервинтер, и, можешь поверить, еще очень нескоро покину этот город!~ /*Mother was right. It isn't safe living out on a farm. I'm heading straight for Neverwinter, and you can bet I won't be leaving the city anytime soon again!*/
+@10 = ~NP: I suppose I can find my own way back, these savages are too weakened by the disease. What a help! Hmph! Mom was right. It's not safe to live outside the farm walls. I'm going straight to Neverwinter, and believe me, it won't be long before I'm out of this town!~ /*Mother was right. It isn't safe living out on a farm. I'm heading straight for Neverwinter, and you can bet I won't be leaving the city anytime soon again!*/
 @11 = ~How dare you speak to me like that! I'll scratch your eyes out!~
 @12 = ~What else do you expect me to tell you? They captured me. The fact they haven't killed me yet, or worse, probably just means they're planning some horrible, unimaginable torture! Filthy savages!~
