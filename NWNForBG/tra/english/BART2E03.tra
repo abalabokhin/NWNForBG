@@ -1,5 +1,5 @@
-@0 = ~MT: Будьте повежливее с гостями. Все приходят сюда, чтобы расслабиться. Ну так что, выпить хотите?~ /*I don't remember inviting you into my home. What do you want?*/
+@0 = ~MT: Be polite with guests. Everyone comes here to relax. So, do you want a drink?~ /*I don't remember inviting you into my home. What do you want?*/
 @1 = ~Yep.~
 @2 = ~No.~
-@3 = ~MT: Будьте осмотрительны, не пейте много. Вы же не хотите ковылять по Лускану, ничего не соображая. Ну так что, выпить хотите?~ /*My husband will nae tell me what is going on. He wishes not to worry me, but I am sick with worry, nonetheless.*/
-@4 = ~MT: Пока вы готовы покупать, вам здесь рады. Ну так что, выпить хотите?~ /*"I didn't expect it to be so warm in here."*/
+@3 = ~MT: Be careful not to drink too much. You don't want to hobble around Luskan without thinking. So, do you want a drink?~ /*My husband will nae tell me what is going on. He wishes not to worry me, but I am sick with worry, nonetheless.*/
+@4 = ~MT: As long as you're ready to buy, you're welcome here. So, do you want a drink?~ /*"I didn't expect it to be so warm in here."*/

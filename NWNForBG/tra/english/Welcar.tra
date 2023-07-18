@@ -1,6 +1,6 @@
 @0 = ~Hello there stranger. Welcome to the grove. My name is Welcar, and who might you be?~
 @1 = ~I am <CHARNAME>. You seem very friendly.~
-@2 = ~MT: Мы группа приключенцев под предводительством <CHARNAME>.~ /*Then I am very pleased to meet you, <CHARNAME>.*/
+@2 = ~MT: We are a group of adventurers led by<CHARNAME> .~ /*Then I am very pleased to meet you, <CHARNAME>.*/
 @3 = ~None of your business. How about you answer some questions?~
 @4 = ~I'm just very excited. You wouldn't know this, but recently I won a very important challenge.~
 @5 = ~What challenge was this?~
@@ -10,11 +10,11 @@
 @9 = ~What's going on here?~
 @10 = ~Who's in charge around here?~
 @11 = ~What exactly is it you do here?~
-@12 = ~MT: У меня нет вопросов. До свидания.~ /*Me no got time. Goodbye.*/
+@12 = ~MT: I do not have any questions. Goodbye.~ /*Me no got time. Goodbye.*/
 @13 = ~I just became the defender for the fourth circle of this grove.~
 @14 = ~What does that mean?~
 @15 = ~Okay. What questions do you have?~
-@16 = ~MT: Сейчас самые главные новости - это про то, что животные в Лесу начали нападать на всех подряд. Мне даже не позволяют больше выходить из рощи. Некоторые говорят, Дух Леса сошел с ума и всех зверей свел с ума тоже. Я на самом-то деле не очень себе представляю, что происходит, поскольку в последний месяц все время торчу здесь, в роще. Тебе надо поговорить об этом с Аавиллом, если нужна еще информация.~ /*The biggest news right now is the way the creatures in the Wood have started to attack everyone. I don't even leave the grove anymore. Some say that the Spirit of the Wood has gone mad and is driving the other creatures mad too.*/
+@16 = ~MT: Now the most important news is that the animals in the Forest have begun to attack everyone in a row. I'm not even allowed to leave the grove anymore. Some say the Spirit of the Forest went mad and drove all the animals mad too. I don't really have much idea what's going on, because I've been stuck here in the grove all the time for the last month. You should talk to Aaville about this if you need more information.~ /*The biggest news right now is the way the creatures in the Wood have started to attack everyone. I don't even leave the grove anymore. Some say that the Spirit of the Wood has gone mad and is driving the other creatures mad too.*/
 @17 = ~Who is Aawill?~
 @18 = ~Nevermind. Goodbye.~
 @19 = ~Aawill is the Archdruid. He is in charge of all the other druids and makes sure that everyone is working together for the benefit of the Wood. If you are interested in helping out with some of the problems around here, I would suggest you speak to him.~
@@ -24,8 +24,8 @@
 @23 = ~So how did you get this promotion?~
 @24 = ~I want to ask some other questions.~
 @25 = ~Okay. Goodbye.~
-@26 = ~MT: Это долгая история. Я не хотел бы утомлять тебя ей. У вас есть еще вопросы?~ /*It's a long story. I wouldn't want to bore you with it.*/
+@26 = ~MT: It's a long story. I wouldn't want to bore you with it. Do you have any more questions?~ /*It's a long story. I wouldn't want to bore you with it.*/
 @27 = ~I see you are back. Is there anything I can help you with?~
-@28 = ~MT: Вы согласились помочь нашему лесу? Это трудная задача, удачи вам. Да пребудет с вами Сильванус.~ /*Better safe than sorry. Have a potion, then, and Tyr be with you.*/
-@29 = ~MT: Благодаря тебе наш лес снова живет прежней жизнью. Благодарю тебя, пусть тебе всегда сопутствует удача!~ /*You haven't saved me yet. I'll thank you when you have.*/
-@30 = ~MT: Дух леса мертв! Наш лес никогда не станет прежним, это огромная потеря!~ /*I work on a farm and I never expected to see someone who is dirtier than me!*/
+@28 = ~MT: You agreed to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~ /*Better safe than sorry. Have a potion, then, and Tyr be with you.*/
+@29 = ~MT: Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~ /*You haven't saved me yet. I'll thank you when you have.*/
+@30 = ~MT: The spirit of the forest is dead! Our forest will never be the same, this is a huge loss!~ /*I work on a farm and I never expected to see someone who is dirtier than me!*/

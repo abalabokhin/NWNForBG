@@ -1,10 +1,10 @@
 @0 = ~I am Zokan Thunderer, leader of my tribe, the people born of the Elk. Who are you that comes before me?~ [ZOKAN57]
 @1 = ~Me <CHARNAME>.~
-@2 = ~MT: <CHARNAME> руководит нашим отрядом.~ /*<CHARNAME> is too far away.*/
+@2 = ~MT: <CHARNAME>leads our team.~ /*<CHARNAME> is too far away.*/
 @3 = ~My name is none of your business!~
 @4 = ~Time for you to die, old man!~
 @5 = ~I'll be going now.~
-@6 = ~MT: Зачем вы пришли? Мой народ страдает и умирает, умирают и молодые и старые. Воющая Смерть терзает наше племя, и даже самые сильные из моих воинов не могут устоять против нее. Это дом смерти. Скоро мы все заразимся, мы пришли сюда умирать. И я снова спрашиваю вас, зачем вы пришли в этот обреченный форт?~ /*Why have you come, <CHARNAME>? My people wither and die, young and old alike. The Wailing Death ravages my tribe and even our strongest warriors cannot stand against it.*/
+@6 = ~MT: Why did you come? My people are suffering and dying, both young and old are dying. Howling Death torments our tribe, and even the strongest of my warriors cannot stand against it. This is the house of death. Soon we will all be infected, we came here to die. And I ask you again, why did you come to this doomed fort?~ /*Why have you come, <CHARNAME>? My people wither and die, young and old alike. The Wailing Death ravages my tribe and even our strongest warriors cannot stand against it.*/
 @7 = ~I have come to help you find a cure for the plague.~
 @8 = ~Yusam, Druid of the Grove, has sent me to find why you have allied with Luskan.~
 @9 = ~Why has the Elk tribe allied with Luskan?~
@@ -12,7 +12,7 @@
 @11 = ~Then I guess we're enemies!~
 @12 = ~May the strength of the Elk guide my blows!~
 @13 = ~Then our parlay is over, though the Elk shall respect the banner of peace under which you have approached us.~
-@14 = ~MT: Воющая Смерть терзает мой народ. Люди из Лускана пришли ко мне. Они обещали исцелить мой народ. Вот почему мы заключили с ними союз. Но они солгали. У них нет лекарства. Мои люди обречены. Но сейчас мы сражаемся на стороне Лускана по другой причине. Месть! Мы хотим отомстить Союзу Лордов и человеку, которого они прислали управлять фортом Илкард. Человеку по имени Дамас.~ /*They have no cure. My people are doomed. But now we fight with Luskan for another reason. Revenge! Revenge against the Lord's Alliance and the man they sent to command Fort Ilkard. A man called Damas.*/
+@14 = ~MT: Howling Death torments my people. People from Luskan came to me. They promised to heal my people. That's why we made an alliance with them. But they lied. They don't have a cure. My people are doomed. But now we are fighting on the side of Luskan for a different reason. Revenge! We want revenge on the Lords' Alliance and the man they sent to run Fort Ilkard. A man named Damas.~ /*They have no cure. My people are doomed. But now we fight with Luskan for another reason. Revenge! Revenge against the Lord's Alliance and the man they sent to command Fort Ilkard. A man called Damas.*/
 @15 = ~If I bring you a cure, will you break your alliance with Luskan?~
 @16 = ~Damas? Why do you want revenge on him?~
 @17 = ~What kind of reward will I get for saving your people?~
@@ -22,7 +22,7 @@
 @21 = ~I shall return once I make Damas give me the cure.~
 @22 = ~Damas is the one who has infected us with the Wailing Death. We thought him a friend, but he only wants the Elk tribe gone so he can steal our land. He offered us a gift of blankets but he had secretly infected them with the plague!~
 @23 = ~We are children of the land, we value no gold or treasure. If you will not save us form the goodness of your heart, I have nothing I can offer to change your mind.~
-@24 = ~MT: Дамас будет все отрицать. Вы должны взять эти одеяла, как доказательство его преступления. Теперь они безвредны, зараза действует всего несколько дней, но именно эти одеяла убили моих людей. Если вы действительно хотите помочь племени Лося, вы пойдете в форт Илкард и возьмете у Дамаса лекарство от чумы. Я желаю вам удачи, <CHARNAME>, ради блага моего народа.~ /*Damas will deny everything. You must take these blankets as proof of his crime. They are harmless now, the plague cannot spread after a few days but these blankets are what killed my people.*/
+@24 = ~MT: Damas will deny everything. You must take these blankets as proof of his crime. Now they are harmless, the infection lasts only a few days, but it was these blankets that killed my people. If you really want to help the Elk tribe, you will go to Fort Ilkard and get the cure for the plague from Damas. I wish you good luck,<CHARNAME> for the good of my people.~ /*Damas will deny everything. You must take these blankets as proof of his crime. They are harmless now, the plague cannot spread after a few days but these blankets are what killed my people.*/
 @25 = ~Zokan has explained that the Elk tribe have allied against the Lords' Alliance because of Commander Damas' terrible betrayal; the Commander infected blankets with the Wailing Death and gave them to the Elk tribe as gifts. These blankets are proof of his crime.
 The Elk Tribe within the Fort will keep peace with you while you remain their emissary, but likely those further away will not have received word as yet.
 
@@ -33,17 +33,15 @@ If his people could be cured, Zokan would cease the alliance with the Luskan for
 @29 = ~My people wither and die from the plague. If they are not cured, the name of Zokan Thunderer will be remembered as the Uthgardt chieftain who could not save his tribe from extinction.~ [ZOKAN55]
 @30 = ~Don't worry, Zokan. I have a cure for the plague right here. Take it to heal your people.~
 @31 = ~I have a cure for the plague, Zokan. You can have it for a price.~
-@32 = ~MT: Я благодарю вас за это, <CHARNAME>. С этим средством мои шаманы вылечат наше племя. Вы спасли народ Лося. Мы дети земли, и у нас нет ни золота, ни сокровищ, которые мы могли бы дать вам. Но возьмите это копье. Это драгоценность племени Лося, и мы долго передавали его от отца к сыну. Вы заслужили это, ибо спасли наш народ от ужаса Воющей Смерти.~ /*We are children of the land, we have no gold or treasure to give you. But take this spear. It is a treasure of the Elk tribe, long handed down from father to son among us. You have earned it by saving us from the terrors of the Wailing Death.*/
+@32 = ~MT: I thank you for that,<CHARNAME> . With this remedy, my shamans will heal our tribe. You saved the Moose people. We are the children of the earth, and we have neither gold nor treasures to give you. But take this spear. This is the jewel of the Elk tribe, and we have been passing it on from father to son for a long time. You deserve it for saving our people from the terror of the Howling Death.~ /*We are children of the land, we have no gold or treasure to give you. But take this spear. It is a treasure of the Elk tribe, long handed down from father to son among us. You have earned it by saving us from the terrors of the Wailing Death.*/
 @33 = ~Thank you Zokan, you honor me.~
 @34 = ~That's it? I save your entire tribe and I get a lousy spear?~
 @35 = ~You have brought the salvation of my people to this place of suffering, and now you insult our Uthgardt honor by bargaining for it? You would do well to rethink your heartless actions.~
 @36 = ~Okay, you can have the cure for nothing. Here, take it.~
 @37 = ~Hey, no reward, no cure.~
 @38 = ~Please, take this token to Yusam the Druid in Beorunna's Well as a promise that we will no longer join the Luskan forces against them. Go with the blessing of the Elk, <CHARNAME>.~
-@39 = ~MT: Осада форта Илкард
-
-Племя Лося излечилось от чумы, которую они подхватили через зараженные одеяла - подарок от командира Дамаса из форта Илкард.~ /*The Elk tribe have been cured of the plague they contracted from the infected blankets - a gift from Commander Damas of Fort Ilkard.*/
-@40 = ~MT: Нам нечего больше дать вам, мы кочевой народ, и нам ни к чему то, что так ценит ваша цивилизация. Но благодарность племени Лося вечно будет с вами. Пожалуйста, отнесите это Юсаму, друиду в Колодце Беорунна в знак того, что мы не будем больше сражаться за армию Лускана. Ступайте, и да пребудет с вами благословение Лося.~ /*Please, take this token to Yusam the Druid in Beorunna's Well as a promise that we will no longer join the Luskan forces against them. Go with the blessing of the Elk, <CHARNAME>.*/
+@39 = ~MT: Siege of Fort Ilkard The Elk Tribe are cured of the plague they caught through contaminated blankets, a gift from Commander Damas at Fort Ilkard.~ /*The Elk tribe have been cured of the plague they contracted from the infected blankets - a gift from Commander Damas of Fort Ilkard.*/
+@40 = ~MT: We have nothing more to give you, we are a nomadic people, and we do not need what your civilization so appreciates. But the gratitude of the Elk tribe will always be with you. Please take this to Yusam, the druid at Beorunn's Well, as a token that we will no longer fight for Luskan's army. Go, and may the blessing of the Elk be with you.~ /*Please, take this token to Yusam the Druid in Beorunna's Well as a promise that we will no longer join the Luskan forces against them. Go with the blessing of the Elk, <CHARNAME>.*/
 @41 = ~You are a vile <PRO_MANWOMAN>! I will not bargain for the lives of my people with one such as you! You have revealed yourself to be an enemy of the Elk!~
 @42 = ~I, Zokan Thunderer, thank you for saving my people from the Wailing Death. You are a hero to us, <CHARNAME>.~ [ZOKAN52]
 @43 = ~As we promised when we recieved the cure, the Elk tribe is no longer allied with Luskan. We will trouble the Lord's Alliance no more.~

@@ -6,7 +6,7 @@
 @5 = ~What are all these people here for?~
 @6 = ~Anything interesting about the patrons?~
 @7 = ~Who owns this place?~
-@8 = ~MT: Не буду вас задерживать.~ /*Cannot do*/
+@8 = ~MT: I won't detain you.~ /*Cannot do*/
 @9 = ~Talk to Mutamin if you need anything right away, <PRO_SIRMAAM>. It might be a while before I can get to you.~
 @10 = ~Aside from the fact that its gates are closed due to the plague? No, not really. We're always busy, here, though, so that makes no difference.~
 @11 = ~I've no idea, <PRO_SIRMAAM>. I just serve them.~
@@ -15,11 +15,11 @@
 @14 = ~A minotaur? Tell me about him.~
 @15 = ~No, these are all regular folk in here. Nothing too unique about any of them except maybe for the minotaur. He's a scary one.~
 @16 = ~No, these are all regular folk in here. Nothing too unique about any of them except for that Zamithra woman, perhaps.~
-@17 = ~MT: Да нет, тут только обычные посетители. Ничего в них особенного нет.~ /*Me just toy with you. No harm meant.*/
+@17 = ~MT: No, there are only ordinary visitors. There is nothing special about them.~ /*Me just toy with you. No harm meant.*/
 @18 = ~Mutamin. You'll find him behind the counter near the back hall, more as like.~
 @19 = ~Not strange, <PRO_SIRMAAM>. She's got guts, and I admire her. Zamithra is a famous mercenary captain, renowned for her revilement of men.~
 @20 = ~Oh. Do you feel the same as she does?~
-@21 = ~MT: Расскажите мне о минотавре.~ /*Tell me about Fenthick.*/
-@22 = ~MT: Что ж, некоторое время назад этот минотавр явился среди ночи и потребовал комнату. Зовут его Гор, или Зар, или что-то в этом роде. Он живет в комнате, наверху. Отпирает дверь только чтобы взять еду и эль. УЙМУ еды и эля. Не знаю, от кого он прячется. Но, вроде бы, неплохо проводит время - в пьяном угаре. Есть еще вопросы?~ /*He's been holed up in a room upstairs. He only unlocks the door to take food and ale. A LOT of food and ale. I don't know what he's hiding from. He seems to be having a good time getting drunk, regardless.*/
-@23 = ~MT: Расскажите мне о Замитре.~ /*Tell me about the job.*/
-@24 = ~MT: Ой, конечно нет. Вам не о чем волноваться, дорогуша. Ха-ха! Просто я считаю, что она - хороший образец того, чего может добиться женщина, если будет добиваться цели на полную катушку, понимаете?~ /*But I do think of her as a good example for what women can accomplish if we set our minds to it, don't you think?*/
+@21 = ~MT: Tell me about the minotaur.~ /*Tell me about Fenthick.*/
+@22 = ~MT: Well, some time ago this minotaur showed up in the middle of the night and demanded a room. His name is Horus, or Zar, or something like that. He lives in a room upstairs. Unlocks the door only to take food and ale. LOTS of food and ale. I don't know who he is hiding from. But he seems to be having a good time - in a drunken stupor. Are there any other questions?~ /*He's been holed up in a room upstairs. He only unlocks the door to take food and ale. A LOT of food and ale. I don't know what he's hiding from. He seems to be having a good time getting drunk, regardless.*/
+@23 = ~MT: Tell me about Zamitra.~ /*Tell me about the job.*/
+@24 = ~MT: Oh, of course not. You have nothing to worry about, dear. Ha ha! I just think she's a good example of what a woman can achieve if she goes all out, you know?~ /*But I do think of her as a good example for what women can accomplish if we set our minds to it, don't you think?*/

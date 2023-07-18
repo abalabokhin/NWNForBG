@@ -1,5 +1,5 @@
-@0 = ~MT: Вы хотите посадить семена древа Ултарка?~ /*Plant the Ultarg Tree Seeds*/
+@0 = ~MT: Do you want to plant the seeds of the Ulthark tree?~ /*Plant the Ultarg Tree Seeds*/
 @1 = ~Yes~
 @2 = ~None~
-@3 = ~MT: Семена посажены.~ /*Bullets of Smiting*/
-@4 = ~MT: Вы не посадили семена древа Ултарка. ~ /*Plant the Ultarg Tree Seeds*/
+@3 = ~MT: The seeds have been planted.~ /*Bullets of Smiting*/
+@4 = ~MT: You have not planted the seeds of the Ulthark tree.~ /*Plant the Ultarg Tree Seeds*/

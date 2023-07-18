@@ -1,8 +1,8 @@
 @0 = ~I don't know how much longer we can hold out against this siege.~
 @1 = ~Now that the siege is over, I wonder if they'll be sending us out to join the battle against Luskan.~
-@2 = ~MT: Я простой солдат. Тебе на самом деле стоит поговорить с командиром Дамасом.~ /*I'm just a low-ranking soldier. You should really be speaking to Commander Damas in the southwest building.*/
+@2 = ~MT: I am a simple soldier. You really should talk to Commander Damas.~ /*I'm just a low-ranking soldier. You should really be speaking to Commander Damas in the southwest building.*/
 @3 = ~Identify yourself or we'll have to attack!~
-@4 = ~MT: Я работаю на Аарина Генда и Союз Лордов.~ /*I am <CHARNAME>. I work for Aarin Gend and the Lords' Alliance.*/
+@4 = ~MT: I work for Aarin Gend and the Lords' Alliance.~ /*I am <CHARNAME>. I work for Aarin Gend and the Lords' Alliance.*/
 @5 = ~I do not answer to you!~
-@6 = ~MT: Аккурат вовремя пришла подмога! Я не знаю как долго можно держать форт против осады Утгардтов! Вам надо поговорить с командиром Дамасом.~ /*'Bout time they sent us some help! I don't know how much longer we can hold the fort against this Uthgardt siege!*/
+@6 = ~MT: Help arrived just in time! I don't know how long the fort can be held against the siege of the Uthgardts! You need to talk to Commander Damas.~ /*'Bout time they sent us some help! I don't know how much longer we can hold the fort against this Uthgardt siege!*/
 @7 = ~Then you shall answer to our blades! Attack!~

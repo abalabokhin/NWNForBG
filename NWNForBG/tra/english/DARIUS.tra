@@ -1,17 +1,17 @@
 @0 = ~Ahh! Don't eat me please!~
 @1 = ~Calm down. I'm not going to eat you.~
-@2 = ~MT: Я не ем людей.~ /*Me not with , nope.*/
+@2 = ~MT: I don't eat people.~ /*Me not with , nope.*/
 @3 = ~You... you aren't a troll are you?~
 @4 = ~No. I am not a troll.~
 @5 = ~Do I look like a troll?~
-@6 = ~MT: Тогда, пожалуйста, помоги мне. Мне нужно выбраться отсюда. Они идут, они хотят убить меня, съесть меня. Я их слышу. Я слышу - они идут. Ты разве не слышишь? Разве не слышишь крики? Они поедают остальных.~ /*Then please help me. I need to get out of here. They're coming to kill me and eat me.*/
+@6 = ~MT: Then please help me. I need to get out of here. They're coming, they want to kill me, eat me. I hear them. I hear they are coming. Don't you hear? Can't you hear the screams? They eat the rest.~ /*Then please help me. I need to get out of here. They're coming to kill me and eat me.*/
 @7 = ~There aren't any screams. You don't have to worry, I'm killing the trolls.~
 @8 = ~Wonderful. What am I supposed to do with a madman?~
-@9 = ~MT: Я не знаю. Я... я думаю, нет. Но они близко. Я слышу - они идут. Ты разве не слышишь? Разве не слышишь крики? Они поедают остальных.~ /*I can hear them. I can hear them coming. Can't you hear them? Can't you hear the screams? They're eating the others.*/
+@9 = ~MT: I don't know. I... I think not. But they are close. I hear they are coming. Don't you hear? Can't you hear the screams? They eat the rest.~ /*I can hear them. I can hear them coming. Can't you hear them? Can't you hear the screams? They're eating the others.*/
 @10 = ~You? You can't kill the trolls. They killed all the guards, they'll kill you too.~
 @11 = ~I've already killed a number of trolls. Now, what's your name?~
 @12 = ~I can handle trolls. What is wrong with you? Have you lost your mind?~
-@13 = ~MT: Сумасшедший? Я? Да, может и так. Может, я это все сам придумал. Может, остальные четверо все еще живы. Может, я никогда не видел, как тролли вошли сюда. Наверное, я неправ. Тролли не приходили сюда и не рвали остальных на куски. Они не отрывали руки и ноги и не обгладывали плоть с костей.~ /*Crazy? Me? Yes, maybe I am. Maybe I have imagined all of this. Maybe the other four are still alive. Perhaps I never saw the trolls come here.*/
+@13 = ~MT: Crazy? I? Yes, maybe so. Maybe I made it all up myself. Maybe the other four are still alive. Maybe I never saw the trolls get in here. I'm probably wrong. The trolls didn't come here and tear the rest to pieces. They did not rip off arms and legs or gnaw at the flesh from the bones.~ /*Crazy? Me? Yes, maybe I am. Maybe I have imagined all of this. Maybe the other four are still alive. Perhaps I never saw the trolls come here.*/
 @14 = ~I guess you have an excuse. Don't worry, I have already killed a number of trolls.~
 @15 = ~That's horrible. They did it right in front of you?~
 @16 = ~Enough whining already! I'm getting out of here, with or without you.~
@@ -27,4 +27,4 @@
 @26 = ~Who's afraid? The trolls?~
 @27 = ~What is it? Do you know?~
 @28 = ~I will flee now. You will die so that I might live. Thank you.~
-@29 = ~MT: Можешь ты себе представить что-то, что напугало бы троллей? Они знают, как она сильна. Мы ничего не можем сделать. Она убьет их, а потом она убьет тебя. Я должен теперь бежать! Удачи тебе.~ /*Can you imagine something that could scare trolls? They know it is powerful. There is nothing we can do. It will kill them and then it will kill you.*/
+@29 = ~MT: Can you imagine something that would scare the trolls? They know how strong she is. We can't do anything. She will kill them and then she will kill you. I must run now! Good luck.~ /*Can you imagine something that could scare trolls? They know it is powerful. There is nothing we can do. It will kill them and then it will kill you.*/

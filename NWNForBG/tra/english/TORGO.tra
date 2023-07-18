@@ -1,10 +1,10 @@
 @0 = ~What can I get you?~
 @1 = ~I need a Pass Coin.~
-@2 = ~MT: Я хочу взглянуть на ваш ассортимент.~ /*Let me see your wares.*/
+@2 = ~MT: I want to take a look at your range.~ /*Let me see your wares.*/
 @3 = ~Goodbye.~
-@4 = ~MT: Пропуск стоит 200 золотых. Поскольку разрешение от Офалы вами получено, остается только заплатить.~ /*Here is my 200 gold. Let me take the test again.*/
+@4 = ~MT: The pass costs 200 gold. Since you have received permission from Ofala, all that remains is to pay.~ /*Here is my 200 gold. Let me take the test again.*/
 @5 = ~Here's 200 gold.~
-@6 = ~MT: Это слишком большая сумма, у меня нет столько денег,~ /*Me not got that much gold for spend on this.*/
-@7 = ~MT: Пропуск стоит 200 золотых. Но прежде вам нужно поговорить с Офалой и получить разрешение.~ /*Here's your 200 gold. Welcome aboard, Sharwyn.*/
-@8 = ~MT: Хорошо, вот ваш пропуск. Когда поднимитесь наверх, отдайте это кому-нибудь из собеседников, на свой выбор.~ /*When you get upstairs, just give this to the companion of your choice.*/
-@9 = ~MT: Что ж, мальчики и девочки будут ждать вашего возвращения, когда вы можете себе это позволить. Они стоят этих денег.~ /*Well, the boys and girls in the backroom will be waiting for you when you can afford it. They're well worth the price.*/
+@6 = ~MT: It's too much, I don't have that much money~ /*Me not got that much gold for spend on this.*/
+@7 = ~MT: The pass costs 200 gold. But first you need to talk to Ofala and get permission.~ /*Here's your 200 gold. Welcome aboard, Sharwyn.*/
+@8 = ~MT: Okay, here's your pass. When you go upstairs, give it to one of the interlocutors, of your choice.~ /*When you get upstairs, just give this to the companion of your choice.*/
+@9 = ~MT: Well, boys and girls will be waiting for your return when you can afford it. They are worth the money.~ /*Well, the boys and girls in the backroom will be waiting for you when you can afford it. They're well worth the price.*/

@@ -1,8 +1,8 @@
-@0 = ~MT: Ты великий герой! Из поколения в поколение будет передаваться история о том, как ты спас людей Лося от Воющей Смерти.~ /*You are a great hero, <CHARNAME>! Through every generation the legend of how you saved the Elk people from the Wailing Death shall be retold.*/
+@0 = ~MT: You are a great hero! The story of how you saved the Elk people from the Howling Death will be passed down from generation to generation.~ /*You are a great hero, <CHARNAME>! Through every generation the legend of how you saved the Elk people from the Wailing Death shall be retold.*/
 @1 = ~We Elk are dying from the plague. Please, you must go speak to Zokan.~
 @2 = ~Our leader is dead; haven't you hurt us enough?~
 @3 = ~Please, I am weak with plague. I beg you for mercy.~
-@4 = ~MT: Вы слишком слабы, чтобы представлять какую-нибудь угрозу. Я пощажу вашу жизнь.~ /*It is obvious you are too weak to pose any threat. I will spare your life.*/
+@4 = ~MT: You are too weak to pose any threat. I will spare your life.~ /*It is obvious you are too weak to pose any threat. I will spare your life.*/
 @5 = ~The Elk tribe is the enemy of the Lords' Alliance and must be slain!~
 @6 = ~Please, we Elk are dying from the plague. Our tribe is doomed. Take pity on us! Speak to our leader Zokan Thunderer.~
 @7 = ~Very well, I will speak to Zokan.~
