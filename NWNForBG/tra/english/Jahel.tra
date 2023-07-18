@@ -1,4 +1,4 @@
-@0 = ~Oh, I didn't see you there. You startled me.~
+@0 = ~Oh, I didn't see you there. You startled me.~ [JAHEL062]
 @1 = ~I'm very sorry. What is your name?~
 @2 = ~Can you maybe answer questions for me?~
 @3 = ~MT: Как твое имя?~ /*What's your name?*/
@@ -41,11 +41,11 @@
 @40 = ~I'll do what I can.~
 @41 = ~A young man by the name of Neva has apparently been kidnapped by bandits. According to his siblings, Tarran and Jaheel, he is being held near some standing stones by the entrance to the Charwood. Adventurers are to meet the siblings there to attempt a rescue.~
 @42 = ~MT: Считай, что Нева уже спасен. Не волнуйся.~ /*Neva is as good as rescued. Do not worry, my lady.*/
-@43 = ~You are back so soon? Have you found my little brother?~
+@43 = ~You are back so soon? Have you found my little brother?~ [JAHEL064]
 @44 = ~I can't remember where you said that stone formation was.~
 @45 = ~Not yet, but I'm working on it.~
 @46 = ~Don't rush me. I'll save him eventually.~
 @47 = ~It is in the hills just outside of Charwood. If you search carefully you should find it.~
 @48 = ~MT: Очень хорошо, я жду с нетерпением. Смелее, мой герой!~ /*I am glad you still have the ring I gave you. Be brave my hero!*/
 @49 = ~Neva might be dead soon! Please hurry, if only so that you can claim your reward.~
-@50 = ~MT: Вы вернулись? Мне так нужна ваша помощь.~ /*All hands to me! I need your aid!*/
+@50 = ~MT: Вы вернулись? Мне так нужна ваша помощь.~ [JAHEL064] /*All hands to me! I need your aid!*/

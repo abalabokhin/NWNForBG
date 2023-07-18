@@ -1,4 +1,4 @@
-@0 = ~Formosa sent you to kill me, didn't she?! Didn't she?! Why are you here?!~
+@0 = ~Formosa sent you to kill me, didn't she?! Didn't she?! Why are you here?!~ [MELDAN54]
 @1 = ~I'm here to free the dryad you stole, sorcerer.~
 @2 = ~So you have the dryad, then? Unbelievable!~
 @3 = ~Well... there is the matter of the dryad in the cage.~
@@ -51,9 +51,9 @@
 @50 = ~MT: Как хотите. Вы найдете эту эльфийскую шлюху причитающей на площади в юго-восточной части района. Как бы мне хотелось посмотреть на предсмертное выражение ее лица! Вот 1500 золотых монет и ключ от клетки дриады. Вы получите остаток денег, когда я буду уверен, что Формоса мертва. Тогда и поговорим.~ /*As you wish. You'll find the elven wench preaching in the square in the southeast part of the district. I truly wish I could see the look on her face!*/
 @51 = ~Desperation is the hallmark of a good bargain. It seems the sorcerer Meldanen wants to turn the tables on the rabble-rouser, Formosa. While she's been calling publicly for his death in the district square, Meldanen has put out a more private (and also more lucrative) offer on her own life.~
 @52 = ~MT: Как хотите. В конце концов, я могу купить себе жизнь и сбежать из дома. Вот 1800 золотых монет, это все, что у меня есть... и ключ от клетки дриады. Возьмите ее... возьмите ее и убирайтесь. Надеюсь, что никогда вас больше не увижу.~ /*Here is 500 gp, which is all I have... and the key to the dryad's cage. Take her... take her and get out. I hope not to see you again.*/
-@53 = ~I am leaving. Now begone.~
+@53 = ~I am leaving. Now begone.~ [MELDAN55]
 @54 = ~MT: Формоса все еще жива. Я жду, когда же вы убьете эту тварь.~ /*I can't wait until this whole plague business is done with.*/
-@55 = ~MT: До меня дошло, что Формоса действительно мертва, как мы и договаривались. Отличная работа. Вот обещанные 1500 золотых, хотя их трудно было получить. Надеюсь, этого достаточно.~ /*It has come to my attention that Formosa is, indeed, dead as we agreed. Well done.*/
+@55 = ~MT: До меня дошло, что Формоса действительно мертва, как мы и договаривались. Отличная работа. Вот обещанные 1500 золотых, хотя их трудно было получить. Надеюсь, этого достаточно.~ [MELDAN52] /*It has come to my attention that Formosa is, indeed, dead as we agreed. Well done.*/
 @56 = ~Don't you think saving your life is worth a little more gold than that?~
 @57 = ~MT: Подумай получше... твоя жизнь висит на волоске, тупица.~ /*You better dig a little deeper... your life is on the line, fool.*/
 @58 = ~MT: Достаточно, давай деньги.~ /*Okay. Me pay money.*/

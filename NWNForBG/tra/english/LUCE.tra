@@ -1,4 +1,4 @@
-@0 = ~Good day, sir. My name is Luce. I trust you wish your visit to the Moonstone Mask to be a pleasant one.~
+@0 = ~Good day, sir. My name is Luce. I trust you wish your visit to the Moonstone Mask to be a pleasant one.~ [LUCE054]
 @1 = ~MT: Я буду говорить с вами... И не только говорить.~ /*I would speak with you... and perhaps more.*/
 @2 = ~There's more than talking, right?~
 @3 = ~Whatever, harlot. I'm not here to talk.~
@@ -63,13 +63,13 @@
 @62 = ~This talk is over. Get out before I call the guards.~
 @63 = ~MT: Конечно, это большой стресс. Так много людей рассчитывают на вас, порой даже не осознавая этого. Это тяжкое бремя. Я не могу помочь вам в ваших делах, <CHARNAME>, но вы можете излить мне душу. Я ничего от вас не ожидаю.~ /*Well, that certainly is a lot of pressure. So many people relying on you, even if they don't know it. That must weigh on your mind.*/
 @64 = ~MT: Конечно, это большой стресс. Так много людей рассчитывают на вас, порой даже не осознавая этого. Это тяжкое бремя. Я не могу помочь вам в ваших делах, но вы можете излить мне душу. Я ничего от вас не ожидаю.~ /*Well, that certainly is a lot of pressure. So many people relying on you, even if they don't know it. That must weigh on your mind.*/
-@65 = ~I am sorry, m'lady, but my company is open to males alone. You might wish to see if Tanith is free.~
-@66 = ~No, I've been mistreated enough for today. I'm off. Go somewhere else.~
-@67 = ~Ah, <CHARNAME>. I trust you are well? I hope I had some impact on you. Some people have trouble recognizing when they really need someone to talk to.~
+@65 = ~I am sorry, m'lady, but my company is open to males alone. You might wish to see if Tanith is free.~ [LUCE050]
+@66 = ~No, I've been mistreated enough for today. I'm off. Go somewhere else.~ [LUCE051]
+@67 = ~Ah, <CHARNAME>. I trust you are well? I hope I had some impact on you. Some people have trouble recognizing when they really need someone to talk to.~ [LUCE052]
 @68 = ~I enjoyed our time together. I hope you did as well.~
 @69 = ~Me like you. Hope you like me a little.~
 @70 = ~You just one more for the road. Ha!~
 @71 = ~<CHARNAME>, you are ever the perfect gentleman. You needn't worry. No judgments, remember?~
 @72 = ~Yes, silly, I like you fine. Don't let people get you down saying you are... uh... slow. You're a charmer, you are.~
-@73 = ~MT: Ах, с вами все в порядке? Надеюсь, я помогла вам. Некоторые люди в жизни не признаются себе, что им нужно с кем-то поговорить.~ /*Ah, <CHARNAME>. I trust you are well? I hope I had some impact on you. Some people have trouble recognizing when they really need someone to talk to.*/
+@73 = ~MT: Ах, с вами все в порядке? Надеюсь, я помогла вам. Некоторые люди в жизни не признаются себе, что им нужно с кем-то поговорить.~ [LUCE052] /*Ah, <CHARNAME>. I trust you are well? I hope I had some impact on you. Some people have trouble recognizing when they really need someone to talk to.*/
 @74 = ~MT: Вы самый настоящий джентльмен. Не волнуйтесь. Я никого не осуждаю, помните?~ /*<CHARNAME>, you are ever the perfect gentleman. You needn't worry. No judgments, remember?*/

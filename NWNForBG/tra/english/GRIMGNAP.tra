@@ -1,5 +1,5 @@
 @0 = ~MT: Тьфу! Я сыт по горло твоей добродетелью! Ты, жалкая пародия на друга. Если мы снова встретимся - поверь мне, только в драке!~ /*The kobolds continued this way, according to the tracks, and turned right at the intersection.*/
-@1 = ~Together we can sow death and destruction throughout the North. Why would you break up our partnership and deny the Silent Lord his due?~
+@1 = ~Together we can sow death and destruction throughout the North. Why would you break up our partnership and deny the Silent Lord his due?~ [Grimbad]
 @2 = ~MT: Ты псих и к тому же злобный, Гримгнау. На мой вкус зла в тебе многовато.~ /*You're a sick and evil man, Grimgnaw. Too evil for my taste.*/
 @3 = ~I just think it's time we parted ways.~
 @4 = ~MT: Мое мнение изменилось. Давай пойдем вместе и проложим кровавый путь, полный трупов!~ /*I've changed my mind. Stick with me and we'll leave a trail of bodies across the land!*/
@@ -9,12 +9,12 @@
 @8 = ~MT: Жди меня здесь.~ /*Wait right here.*/
 @9 = ~MT: Сейчас мы разделимся, но твоя судьба - плыть в океанах крови. Наши судьбы сплетены, и я подожду здесь твоего неизбежного возвращения, чтобы мы снова смогли вместе выполнять волю Безмолвного Лорда. Где мы можем встретиться, если ты передумаешь?~ /*We part now, but you are destined to swim in an ocean of blood. Our fates are intertwined, and I shall wait here for your inevitable return so we may once more join together to perform the will of the Silent Lord.*/
 @10 = ~Well spoken, <CHARNAME>. I tremble in anticipation of the carnage we shall unleash upon the Realms!~
-@11 = ~I have been waiting for you - I suspected you would return. Do you need me to join with you once more?~
+@11 = ~I have been waiting for you - I suspected you would return. Do you need me to join with you once more?~ [GRIMGN60]
 @12 = ~Yep.~
 @13 = ~No.~
 @14 = ~Then together we shall rain blood and death down upon the world.~
 @15 = ~You are an agent of destruction and a messenger of death. Should you change your mind come back to me here and I will gladly join with you again.~
-@16 = ~We meet again, <CHARNAME>. I taste a storm of slaughter on the air; I'm not surprised to find you here at the center of the whirlwind.~
+@16 = ~We meet again, <CHARNAME>. I taste a storm of slaughter on the air; I'm not surprised to find you here at the center of the whirlwind.~ [GRIMGN53]
 @17 = ~MT: Что ты здесь делаешь, Гримгнау?~ /*What are you doing here, Boddyknock?*/
 @18 = ~You again? Are you following me like some kind of pathetic lost puppy?~
 @19 = ~Goodbye.~
@@ -34,7 +34,7 @@
 @33 = ~Then together we shall sow death and destruction throughout the land in our quest to destroy those behind the Wailing Death.~
 @34 = ~MT: Этот городок изолирован от остального мира, далеко к югу от Порт-Лласта. Немногие, не состоящие в моем ордене, вообще могут припомнить, что такое место вообще существует. Чарвуд - странное место; на нем есть пятно испорченности, которое мы, члены Ордена, чувствуем. Никто из посланных на юг для исследования Чарвуда эмиссаров Ордена не вернулся.~ /*The town is a strange place; there is a foul taint upon it that we of the Long Death can feel. None of the emissaries my Order has sent south to investigate Charwood has ever returned.*/
 @35 = ~It would not surprisie me to discover links to the cult behind the Wailing Death in that unnatural place. Is there more I can do for you, <CHARNAME>?~
-@36 = ~MT: О, и вновь мы встретились, <CHARNAME>. Это я, Гримгнау из Ордена Затяжной Смерти. Ты, конечно же, помнишь меня. Я с нетерпением буду ожидать своего шанса, чтобы совершить отмщение над теми сектантами, которые ответственны за распространение чумы в Невервинтере.~ /*I have been eagerly waiting for my chance to extract vengeance on the cult responsible for unleashing the plague on Neverwinter.*/
+@36 = ~MT: О, и вновь мы встретились, <CHARNAME>. Это я, Гримгнау из Ордена Затяжной Смерти. Ты, конечно же, помнишь меня. Я с нетерпением буду ожидать своего шанса, чтобы совершить отмщение над теми сектантами, которые ответственны за распространение чумы в Невервинтере.~ [GRIMGN55] /*I have been eagerly waiting for my chance to extract vengeance on the cult responsible for unleashing the plague on Neverwinter.*/
 @37 = ~So you're working for Aribeth?~
 @38 = ~Have you heard any rumors about the cult since you've come here?~
 @39 = ~If you're so interested in vengeance, why are you standing around here?~

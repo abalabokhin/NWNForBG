@@ -1,4 +1,4 @@
-@0 = ~Hello there. All of nature's creatures are welcome to this grove. How can I help you?~
+@0 = ~Hello there. All of nature's creatures are welcome to this grove. How can I help you?~ [AAVIL054]
 @1 = ~Can I ask who you are?~
 @2 = ~What is this place?~
 @3 = ~What exactly is it you do here?~
@@ -57,8 +57,8 @@
 @56 = ~MT: Лес Невервинтер: Дух Леса
 
 Дух Леса Невервинтер с недавних пор находится в плачевном состоянии, и архидруид Аавилл, который возглавляет конклав, очень обеспокоен этим. С большой неохотой он позволил нам войти в его лес, в надежде, что мы поможем ему выяснить, что же произошло.~ /*The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has reluctantly granted forest access to adventurers so that they might help him right whatever has gone wrong.*/
-@57 = ~Ah, a fellow child of nature. Be welcome here. How may I be of service?~
-@58 = ~You have returned. What can I help you with?~
+@57 = ~Ah, a fellow child of nature. Be welcome here. How may I be of service?~ [AAVIL053]
+@58 = ~You have returned. What can I help you with?~ [AAVIL052]
 @59 = ~Tell me what you need assistance with again.~
 @60 = ~I would like to help you.~
 @61 = ~MT: А это не один из ваших друидов? Он представился Орлейном.~ /*Is this one of your druids?*/
@@ -72,7 +72,7 @@
 @69 = ~MT: Мы счастливы поприветствовать вновь нашу дорогую Бри. Вот твои 1000 золотых.~ /*We were overjoyed to welcome back dear Bree. Here is your 300 gold, <CHARNAME>.*/
 @70 = ~MT: Роща приветствует возвращение моего дорогого друга Терари. Вот твои 1000 золотых.~ /*My dear friend Terari's return was welcomed by the grove. Here is your 300 gold, <CHARNAME>.*/
 @71 = ~MT: Как прекрасно! Роща приветствует возвращение своих собратьев, Орлейна, Терари и нашу дорогую Бри. Вот твои 3000 золотых.~ /*My dear friend Terari's return was welcomed by the grove. Here is your 300 gold, <CHARNAME>.*/
-@72 = ~I see you are back. Have you had any luck?~
+@72 = ~I see you are back. Have you had any luck?~ [AAVIL055]
 @73 = ~What are the names of the druids?~
 @74 = ~I have cured the Spirit of the Wood.~
 @75 = ~The Spirit of the Wood is dead.~
@@ -109,8 +109,8 @@ Evidence discovered deeper in the forest tells of a pool at the base of a waterf
 Poisoned and in great peril, the Spirit of the Woods has retreated to that world, but adventurers found and slew the wounded Spirit. Archdruid Aawill and his grove will work to save the woods, despite the damage that has been done.*/
 @99 = ~I thank you for your concern and generosity. Somehow nature will find a balance and continue on.~
 @100 = ~Or else what? Will you challenge the might of the entire circle of druids and all the forces of nature we can bring to bear? I think not. Now take your blood money and leave this place.~
-@101 = ~Nature thanks you for all you have done. Go with her blessing and mine.~
-@102 = ~The forest will never be the same.~
+@101 = ~Nature thanks you for all you have done. Go with her blessing and mine.~ [AAVIL051]
+@102 = ~The forest will never be the same.~ [AAVIL050]
 @103 = ~MT: Лес Невервинтера: Дух Леса 
 
 Ходят слухи, что Дух Леса Невервинтер по какой-то причине неважно себя чувствует. Архидруид Аавилл, который возглавляет конклав, сможет рассказать об этом поподробнее.~ /*There are rumors that the Spirit of the Neverwinter Wood has somehow come to harm. No doubt Aawill, an Archdruid who maintains a conclave there, will know more.*/

@@ -1,4 +1,4 @@
-@0 = ~Who are you? A better question, perhaps, is what are you doing in the Tower? You don't seem like one of Maugrim's toadies.~
+@0 = ~Who are you? A better question, perhaps, is what are you doing in the Tower? You don't seem like one of Maugrim's toadies.~ [NYPHIT58]
 @1 = ~Who are you?~
 @2 = ~Who is this Maugrim?~
 @3 = ~Stand back! I'll have no tricks out of you!~
@@ -87,13 +87,13 @@
 @86 = ~MT: Ты задаешь слишком много вопросов, <MALEFEMALE>. Я не буду заполнять все пробелы в твоих знаниях. Ты знаешь только то, что знаешь. Разницы никакой нет. Мне надоели твои вопросы... теперь скажи: ты уничтожишь жаровню, или нет?~ /*It makes no difference, however. I'll have no more questions from you... tell me now: will you destroy the brazier or not?*/
 @87 = ~Then why the questions? I am no psychotic killer. I said I would reward you for freeing me and I shall.~
 @88 = ~And if I am not? If I was the influence behind Arklem's rule, what difference would that make to you? I tire of your questions, <PRO_MALEFEMALE>.~
-@89 = ~Mmmm... a rather delicious looking <PRO_RACE> creature, is it? What a treat. Please don't tell me you're one of the fools toadying after Maugrim.~
-@90 = ~What is the delay? Surely you cannot tell me you are having difficulty destroying the brazier.~
+@89 = ~Mmmm... a rather delicious looking <PRO_RACE> creature, is it? What a treat. Please don't tell me you're one of the fools toadying after Maugrim.~ [NYPHIT56]
+@90 = ~What is the delay? Surely you cannot tell me you are having difficulty destroying the brazier.~ [NYPHIT55]
 @91 = ~I'm not sure I should, actually.~
 @92 = ~Forget it... I'm not going to help you.~
 @93 = ~I'll do it.~
 @94 = ~And why is that? I am asking you to do nothing strenuous. Will you do it or not?~
 @95 = ~MT: Тогда действуй. Мне надоело ждать.~ /*Then do so. I tire of waiting.*/
-@96 = ~I will not be questioned any further, <PRO_MALEFEMALE>. I am sure you know more than enough... now destroy the brazier before I grow impatient.~
-@97 = ~MT: Прекрасная работа. Маугрим будет в ярости, когда узнает, что какой-то искатель приключений освободил меня от его заклинания. Мне не терпится отправиться на поиски Арклема. Трудно даже предположить, где он мог спрятаться в его... состоянии. Ну все равно, со временем мы вернем себе Башню. ~ /*I am eager to be off in search of Arklem. It will be difficult to say where he might have hidden himself in his... condition. Regardless, the Tower will be ours again in time.*/
+@96 = ~I will not be questioned any further, <PRO_MALEFEMALE>. I am sure you know more than enough... now destroy the brazier before I grow impatient.~ [NYPHIT54]
+@97 = ~MT: Прекрасная работа. Маугрим будет в ярости, когда узнает, что какой-то искатель приключений освободил меня от его заклинания. Мне не терпится отправиться на поиски Арклема. Трудно даже предположить, где он мог спрятаться в его... состоянии. Ну все равно, со временем мы вернем себе Башню. ~ [NYPHIT50] /*I am eager to be off in search of Arklem. It will be difficult to say where he might have hidden himself in his... condition. Regardless, the Tower will be ours again in time.*/
 @98 = ~MT: Что же до тебя, <MALEFEMALE>... твоя работа сделана. Тебе выпал шанс освободить меня, и вознаграждение твое по праву. Бери это и ступай. Я надеюсь, что тебя уже не будет в Башне Хозяина, когда я вернусь.~ /*As for you, <PRO_MALEFEMALE>... you did your part. You freed me, and the reward is yours by right. Take this item and go.*/

@@ -1,4 +1,4 @@
-@0 = ~What in Sune's name are you doing in my house?~
+@0 = ~What in Sune's name are you doing in my house?~ [SETAR054]
 @1 = ~The forest is destroying itself all around you and I am trying to find a way to save it.~
 @2 = ~I was just looking around.~
 @3 = ~I was sent here to collect a gem you have.~
@@ -66,12 +66,12 @@
 Ведьма Сетара, живущая в дебрях леса Невервинтер, говорит, что когда-то она была прекрасной девушкой. Она предложила большую награду тому, кто сможет вернуть ей ее былую красоту. Мы преподнесли ей Зеркало Тщеславия, магический артефакт. Все, кто смотрится в это зеркало, выглядят прекрасными в отражении.~ /*Setara, a witch deep in the Neverwinter Wood, claims to have once been a beautiful maiden. She offered great rewards to whoever could return her to her former beauty. Adventurers presented her with a Mirror of Vanity, a magical artifact that shows whoever looks into it a reflection of great beauty.*/
 @62 = ~MT: А вот и нет! Ты не видишь, что ли? Нет, наверно просто завидуешь, ведь я настолько красивее тебя. Да, в этом все и дело. Убирайся отсюда, простачок, вот твоя награда. О, какая же я красавица.~ /*Yes I do! You must be blind! No, wait, you are just jealous of me because I am so much better looking than you now. Yes, that's it. Go away now, simpleton.*/
 @63 = ~That is something best left unspoken; besides, I am young and beautiful now, so I promise it will never happen again. Now, don't you think I am simply gorgeous now?~
-@64 = ~I tire of people returning to stare at the freak. You are hardly a pleasure to look at, so tell me what you want and be quick about it.~
+@64 = ~I tire of people returning to stare at the freak. You are hardly a pleasure to look at, so tell me what you want and be quick about it.~ [SETAR053]
 @65 = ~MT: Мне ничего не нужно. Я ухожу.~ /*You can't possibly win. I'm leaving.*/
-@66 = ~I see you are back. What do you want?~
-@67 = ~You have returned. Does that mean you have found the mirror?~
+@66 = ~I see you are back. What do you want?~ [SETAR052]
+@67 = ~You have returned. Does that mean you have found the mirror?~ [SETAR051]
 @68 = ~Where did you say the nymph lives again?~
 @69 = ~MT: Пока нет. До свидания~ /*Bye. Goodbye!*/
 @70 = ~MT: Она живет к северо-востоку отсюда. Увидишь наглую молодую красотку, на которой почти ничего не надето -- так это она и есть. Пожалуйста, поскорее принеси зеркало.~ /*She lives somewhere to the northwest of here. If you find an arrogant, young tart in skimpy clothing, that's her.*/
 @71 = ~Yes, get out of my home. I don't need you staring at me constantly!~
-@72 = ~I know my beauty keeps drawing you back, but please leave my house now.~
+@72 = ~I know my beauty keeps drawing you back, but please leave my house now.~ [SETAR050]

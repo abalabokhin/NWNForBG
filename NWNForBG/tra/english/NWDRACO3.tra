@@ -1,4 +1,4 @@
-@0 = ~Why have you entered my cave, tiny creature? Are you another adventurer seeking to get rich from Gorgotha's legendary hoard? You would be wise to answer.~
+@0 = ~Why have you entered my cave, tiny creature? Are you another adventurer seeking to get rich from Gorgotha's legendary hoard? You would be wise to answer.~ [DRACO354]
 @1 = ~I'm searching for the Words of Power.~
 @2 = ~I would like to ask you some questions.~
 @3 = ~Prepare to die, wyrm!~
@@ -34,12 +34,12 @@
 Слуги Клаута, древнего красного червя, несколько раз нападали на логово золотой драконицы Горготы. В обмен на голову Клаута Горгота предложила отдать часть своих припрятанных сокровищ.~ /*The servants of Klauth, an ancient red wyrm, have been attacking the lair of the gold dragon Gorgotha.
 In exchange for Klauth's head Gorgotha has offered a share of her treasure hoard.*/
 @32 = ~MT: Не глупите, <RACE>. Я обещала вам долю моего сокровища. Честь золотых драконов никто не смеет подвергнуть сомнению... если только все это не трюк с целью заставить меня покинуть свои сокровища. Если вы сочтете, что риск слишком велик, я пойму вас. Но я не отдам ни одной частицы своего сокровища, пока у моих ног не окажется голова Клаута.~ /*Do not be foolish, <PRO_RACE> <PRO_MALEFEMALE>. I have promised you a share of my hoard. The honor of a gold dragon is beyond question... unless this is all just a plan to trick me out of my treasure hoard.*/
-@33 = ~For what reason have you violated the sanctity of this cave? Have you come seeking Gorgotha's eggs? You would be wise to answer me, tiny one.~
+@33 = ~For what reason have you violated the sanctity of this cave? Have you come seeking Gorgotha's eggs? You would be wise to answer me, tiny one.~ [DRACO352]
 @34 = ~Eggs? Why would I want your eggs?~
 @35 = ~Klauth has offered a great reward for each dragon egg brought to the lair by his fire giant servants. It would not surprise me to find some greedy adventurers are eager to collect this reward as well.~
 @36 = ~MT: Ты знаешь что-нибудь о Словах Власти?~ /*Do you know anything about the Words of Power?*/
-@37 = ~Why have you returned to my cave, tiny creature? You would be wise to answer me, lest you incur the wrath of the mighty Gorgotha!~
-@38 = ~**sniff - sniff** I smell blood and... something else. Something foul. **SNIFF** You have the head of Klauth the ancient red wyrm! Give it to me that I might see the proof of his death with my own eyes!~
+@37 = ~Why have you returned to my cave, tiny creature? You would be wise to answer me, lest you incur the wrath of the mighty Gorgotha!~ [DRACO253]
+@38 = ~**sniff - sniff** I smell blood and... something else. Something foul. **SNIFF** You have the head of Klauth the ancient red wyrm! Give it to me that I might see the proof of his death with my own eyes!~ [DRACO251]
 @39 = ~I am honored to give you the wyrm's head, mighty Gorgotha.~
 @40 = ~MT: Наконец-то с Клаутом покончено! Не будут больше его приспешники нападать на мое логово! Злой силе древнего червя пришел конец! Мы, драконы, не любим делиться своим сокровищем, но вы заслужили вознаграждение. Возьмите это, лучшее из всех собранных мною сокровищ.~ /*We dragons are loathe to part with our treasure hoard, but you have earned your reward. Take this, the premier item of all the treasure I have collected.*/
 @41 = ~I thank you for this generous gift, mighty Gorgotha.~
@@ -55,4 +55,4 @@ In exchange for Klauth's head Gorgotha has offered a share of her treasure hoard
 @49 = ~MT: Горгота, золотой дракон
 
 Золотая драконица Горгота была убита.~ /*The gold dragon Gorgotha has been slain.*/
-@50 = ~I remember you. You are the one who brought me the head of Klauth. Because of you I no longer need fear for the lives of my children. How may I help you?~
+@50 = ~I remember you. You are the one who brought me the head of Klauth. Because of you I no longer need fear for the lives of my children. How may I help you?~ [DRACO250]

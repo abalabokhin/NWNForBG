@@ -1,5 +1,5 @@
-@0 = ~So at last you have come. I assume my fire giant servants are dead. No matter, they are of little consequence to me. I can find other servants. Perhaps even you will serve, <CHARNAME>.~
-@1 = ~Come closer, I will not harm you. These last days of the eons of my life pass slowly now and I would speak with you to break the monotony.~
+@0 = ~So at last you have come. I assume my fire giant servants are dead. No matter, they are of little consequence to me. I can find other servants. Perhaps even you will serve, <CHARNAME>.~ [DRACO453]
+@1 = ~Come closer, I will not harm you. These last days of the eons of my life pass slowly now and I would speak with you to break the monotony.~ [DRACO455]
 @2 = ~How do you know my name?~
 @3 = ~Who are you?~
 @4 = ~I want to ask you some questions.~
@@ -76,11 +76,11 @@ He has offered to exchange the Word of Power for the eggs of another dragon.*/
 @68 = ~Fine, take the eggs.~
 @69 = ~Then I think I'll just keep these eggs for myself, Klauth!~
 @70 = ~MT: Оставьте их у себя, для меня это ничего не значит. Другие смогут оказывать мне эти услуги; найдутся другие кладки яиц. Поскольку вы здесь не для того, чтобы отдать мне яйца, полагаю, у вас были другие причины прийти и поговорить со мной. О какой милости вы хотите просить меня, <CHARNAME>?~ /*Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?*/
-@71 = ~So you return, <CHARNAME>.~
+@71 = ~So you return, <CHARNAME>.~ [DRACO454]
 @72 = ~Have you considered my offer? Have you brought me the eggs of a dragon?~
 @73 = ~No, I do not have the eggs yet.~
 @74 = ~Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?~
-@75 = ~Once more you return to speak to me, <CHARNAME>. I have given you the Word of Power - what more do you desire of Klauth?~
+@75 = ~Once more you return to speak to me, <CHARNAME>. I have given you the Word of Power - what more do you desire of Klauth?~ [DRACO451]
 @76 = ~I have some more dragon's eggs for you.~
 @77 = ~Since the Word of Power is no longer mine I can only offer you gold in exchange for the eggs. I will give you 5000 gold if you wish.~
 @78 = ~Here, take the eggs.~

@@ -1,4 +1,4 @@
-@0 = ~MT: Добро пожаловать, друг. Я Юсам, друид с севера, посредник между Союзом Лордов и Утгардтами. Если хочешь, ты можешь отдохнуть в этой роще, тут спокойно. Или я нужен тебе по какой-то другой причине?~ /*You are free to take solace in the tranquility of my grove, if you wish. Or is there some other reason you have sought me out?*/
+@0 = ~MT: Добро пожаловать, друг. Я Юсам, друид с севера, посредник между Союзом Лордов и Утгардтами. Если хочешь, ты можешь отдохнуть в этой роще, тут спокойно. Или я нужен тебе по какой-то другой причине?~ [YUSAM63] /*You are free to take solace in the tranquility of my grove, if you wish. Or is there some other reason you have sought me out?*/
 @1 = ~My name is <CHARNAME>. I work for Aarin Gend.~
 @2 = ~What is a druid doing up here on this plateau?~
 @3 = ~I want to ask you some questions.~
@@ -48,9 +48,9 @@ Yusam the Druid was pleased to learn the children of the Elk will once more welc
 
 Юсаму нужен кто-то, кто согласится исследовать состояние дел в племени Лосей. Друид убежден в том, что есть какая-то причина, по которой они отвернулись от Союза Лордов и присоединились к армии Лускана. Юсам думает, что племя Лосей и их вождь, Зокан Громовержец, базируются в крепости на запад от форта Илкард.~ /*Yusam is looking for someone to investigate the Uthgardt Elk tribe. The druid is convinced there must be some reason they have turned away from the Lords' Alliance and joined with the Luskan army.
 Yusam believes the Elk tribe and their leader, Zokan Thunderer, are in a keep to the west of Fort Ilkard.*/
-@42 = ~It always pleases me when a fellow child of nature chooses to partake of the beauty of my grove.~
-@43 = ~Welcome, my child. Do you bring me news of the Uthgardt Elk tribe? Or is there some other purpose to your visit?~
-@44 = ~MT: Добро пожаловать, мой друг. Я всегда буду благодарен тебе за твою помощь в деле Лосей. Ты здесь, чтобы спастись от суеты и отдохнуть от мира? Или есть и другая причина твоего визита?~ /*Have you come here seeking a tranquil refuge from the outside world? Or is there perhaps some other reason for your visit?*/
-@45 = ~MT: Рад видеть тебя снова, дитя мое. Ты здесь, чтобы насладиться покоем и уединенностью священной рощи? Или есть еще что-то, из-за чего ты снова обращаешься ко мне?~ /*Well met once again, my child. Have you come to enjoy the peace and solitude of my grove?*/
+@42 = ~It always pleases me when a fellow child of nature chooses to partake of the beauty of my grove.~ [YUSAM62]
+@43 = ~Welcome, my child. Do you bring me news of the Uthgardt Elk tribe? Or is there some other purpose to your visit?~ [YUSAM60]
+@44 = ~MT: Добро пожаловать, мой друг. Я всегда буду благодарен тебе за твою помощь в деле Лосей. Ты здесь, чтобы спастись от суеты и отдохнуть от мира? Или есть и другая причина твоего визита?~ [YUSAM59] /*Have you come here seeking a tranquil refuge from the outside world? Or is there perhaps some other reason for your visit?*/
+@45 = ~MT: Рад видеть тебя снова, дитя мое. Ты здесь, чтобы насладиться покоем и уединенностью священной рощи? Или есть еще что-то, из-за чего ты снова обращаешься ко мне?~ [YUSAM61] /*Well met once again, my child. Have you come to enjoy the peace and solitude of my grove?*/
 @46 = ~Who are you again?~
 @47 = ~I am Yusam, Druid of the North. I am the liaison between the Lords' Alliance and the Uthgardt tribes.~

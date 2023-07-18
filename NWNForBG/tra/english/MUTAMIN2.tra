@@ -1,4 +1,4 @@
-@0 = ~Welcome to the Green Griffon Inn, friend. Something I can get you?~
+@0 = ~Welcome to the Green Griffon Inn, friend. Something I can get you?~ [MUTAM052]
 @1 = ~Any news that you can tell me of?~
 @2 = ~For a small inn, the place sure seems busy.~
 @3 = ~I'd like to ask you about this competition of yours.~
@@ -37,8 +37,8 @@
 @34 = ~Yeah, now that's what I like to see. Some adventurer spirit and an open mind! Gotta keep your smarts about you. What do you want to know?~
 @35 = ~MT: Я приму участие.~ /*Remove Buddy*/
 @36 = ~Hmph. Then tell the militia... if you can get inside Luskan, that is. Now, if you'll excuse me, I have patrons to attend to.~
-@37 = ~I assure you, Madam, we run a very safe establishment.~
-@38 = ~So! It seems you're the one who's won my little contest, eh? Congratulations are certainly in order!~
+@37 = ~I assure you, Madam, we run a very safe establishment.~ [MUTAM050]
+@38 = ~So! It seems you're the one who's won my little contest, eh? Congratulations are certainly in order!~ [MUTAM053]
 @39 = ~MT: Иногда я скучаю по тем дням, когда я был простым искателем приключений, вроде вас... но вы, наверняка, не ради моей болтовни пришли. Хе-хе. Вот, возьмите: половина моего состояния. Надеюсь, вы сочтете это достойным вознаграждением. Еще раз поздравляю!~ /*Why, sometimes I long for the days when I used to travel and adventure as you do... but I'm sure you didn't come here to hear me talk. Heh heh.*/
 @40 = ~Thank you. It was quite the experience.~
 @41 = ~MT: Что? Какие-то жалкие 5000 золотых? Добавьте еще 1000, и я спокойно уйду.~ /*Make it 100 more, and I'll leave satisfied.*/
@@ -51,7 +51,7 @@ Mutamin's assistant, Jaroo, has declared the winning party and Mutamin has prese
 @45 = ~Generally, the pay-outs are set and immutable. But what the heck, I like your style and I'm feeling generous. Here you go, pal.~
 @46 = ~MT: Размеры приза были установлены, и я не собираюсь их менять. Некоторые люди просто не умеют быть довольными, им всегда хочется чего-то еще. Что ж, мне вам дать нечего. Берите что дают и перестаньте докучать мне.~ /*Some people just can't be happy, they always want more. Well, I ain't giving you more. You take what you got and stop bothering me.*/
 @47 = ~Fine! Take your stinking gold. Here's 100 coins to add to what I gave you already. But you bother me again, and I'll have your throat slit.~
-@48 = ~MT: Прошу прощения, но поскольку у нас есть победитель, подземелье нужно теперь переоборудовать. Может быть я открою его снова следующей весной. А до тех пор, боюсь, Зеленый Грифон будет обычным трактиром. Хе-хе.~ /*Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open.*/
+@48 = ~MT: Прошу прощения, но поскольку у нас есть победитель, подземелье нужно теперь переоборудовать. Может быть я открою его снова следующей весной. А до тех пор, боюсь, Зеленый Грифон будет обычным трактиром. Хе-хе.~ [MUTAM054] /*Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open.*/
 @49 = ~MT: Конечно. Недавно освободилось несколько комнат.~ /*Of course. I am sorry, Fiona.*/
 @50 = ~MT: Прошу прощения, но вы проиграли состязание. Может быть я проведу его снова следующей весной. А до тех пор, боюсь, Зеленый Грифон будет обычным трактиром. Хе-хе.~ /*Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.*/
 @51 = ~MT: Северная дорога: Испытание Мутамина

@@ -1,4 +1,4 @@
-@0 = ~Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?~
+@0 = ~Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?~ [ARCHEL057]
 @1 = ~MT: Должен сказать, Камень-Источник - воистину удивительная находка. Поразительно. Я был археологом почти полвека и никогда не встречал ничего подобного. Я пытался выведать некоторые тайны у Хэдралин, ящероподобного существа, которое лорд Нашер держит в заточении в подземелье. Однако, она, видимо, мне не доверяет.~ /*I tried to pry some of its secrets from Haedraline - the lizard creature Lord Nasher has imprisoned in the dungeons. But she didn't seem to trust me.*/
 @2 = ~I need to see the Source Stone.~
 @3 = ~I would like to ask you some questions.~
@@ -23,4 +23,4 @@
 @22 = ~Ah, well. Perhaps some other time, then. Is there something else you need?~
 @23 = ~I suspect there is a fourth Word that is necessary to unlock the Source Stone. Four pedestals, four Words of Power. Just a theory, of course, but a fairly logical conclusion.~
 @24 = ~That lizard creature Haedraline could probably tell you more, if she wanted to. But when I tried to speak to her she refused to answer my questions. I don't think she trusts me.~
-@25 = ~Back again, <CHARNAME>? Is there something I can do for you?~
+@25 = ~Back again, <CHARNAME>? Is there something I can do for you?~ [ARCHEL056]

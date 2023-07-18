@@ -1,4 +1,4 @@
-@0 = ~Well, welcome to the Moonstone Mask, handsome stranger! I'm Tamora, and I'll be your dream for the evening. Won't you be mine?~
+@0 = ~Well, welcome to the Moonstone Mask, handsome stranger! I'm Tamora, and I'll be your dream for the evening. Won't you be mine?~ [TAMORA53]
 @1 = ~MT: Я буду говорить с вами... И не только говорить.~ /*I would speak with you... and perhaps more.*/
 @2 = ~There's more than talking, right?~
 @3 = ~Whatever, harlot. I'm not here to talk.~
@@ -68,7 +68,7 @@
 @67 = ~MT: О, спасибо вам за трогательное обещание. Вот, возьмите брошь, чтобы Хофф знал, что это я вас послала. Берегите ее! Вернете, когда закончите! Я бы не отдала это, если бы дело не было таким важным. Этот Хофф... Я о нем почти ничего не знаю. Помните, он где-то в доках.~ /*Gee, thanks for that stirring pledge. Here, take my brooch so Hoff will know I sent you. Be careful! I want it back when all this is done!*/
 @68 = ~MT: Не торопитесь. Вот, возьмите брошь, чтобы Хофф знал, что это я вас послала. Берегите ее! Вернете, когда закончите! Я бы не отдала это, если бы дело не было таким важным. Этот Хофф... Я о нем почти ничего не знаю. Помните, он где-то в доках.~ /*I wouldn't have given it up if this wasn't important. That Hoff... I don't know about him. Remember, he's in the Docks somewhere.*/
 @69 = ~What are you doing here, then? Yeesh. I mean, I'm sure it's a lot of pressure, but shouldn't you get to it?~
-@70 = ~Hello there. You here for business or pleasure? Before you say "pleasure is your business," let me remind you that I'll kick you square if you do.~
+@70 = ~Hello there. You here for business or pleasure? Before you say "pleasure is your business," let me remind you that I'll kick you square if you do.~ [TAMORA52]
 @71 = ~I'm here as a Moonstone Mask customer.~
 @72 = ~MT: У вас проблемы?~ /*What problems?*/
 @73 = ~I'm here about the business with Hoff.~
@@ -82,9 +82,9 @@
 @81 = ~MT: Ничего~ /*Nothing.*/
 @82 = ~MT: Это заставит его держаться подальше. Надеюсь, он не станет никого больше мучить. Его могли бы убить. Это было бы неприятно. Не ожидайте от меня какой-то большой награды. У меня ничего нет, кроме благодарности да доброго слова.~ /*That should keep him away then. Hopefully he doesn't start bugging anyone else. He might end up dead. That would be a shame.*/
 @83 = ~Don't tease me with this garbage.~
-@84 = ~Sorry little lady, I'm not your type. You'll have to go talk to Tanith. He's a big sweety.~
-@85 = ~MT: Здравствуйте. Если вы желаете поразвлечься, то я временно не работаю. У меня был трудный период, правда.~ /*If you're looking for some fun, I'm off the market for the moment. It's been a trying bunch of days, let me tell you.*/
-@86 = ~Son of a bitch! Hoff got my brooch! That's the last time I trust anyone!~
+@84 = ~Sorry little lady, I'm not your type. You'll have to go talk to Tanith. He's a big sweety.~ [TAMORA50]
+@85 = ~MT: Здравствуйте. Если вы желаете поразвлечься, то я временно не работаю. У меня был трудный период, правда.~ [TAMORA52] /*If you're looking for some fun, I'm off the market for the moment. It's been a trying bunch of days, let me tell you.*/
+@86 = ~Son of a bitch! Hoff got my brooch! That's the last time I trust anyone!~ [TAMORA51]
 @87 = ~Here's your brooch. Hoff doesn't have it.~
 @88 = ~Hoff is dead. Here is your brooch.~
 @89 = ~MT: Он, в отличие от тебя, предложил за нее деньги.~ /*Fine, you keep money.*/

@@ -1,4 +1,4 @@
-@0 = ~Who's this? Some poor soul straggling in off the diseased streets? Are you here to join our ranks and beg for an employer... or are you actually here to hire someone?~
+@0 = ~Who's this? Some poor soul straggling in off the diseased streets? Are you here to join our ranks and beg for an employer... or are you actually here to hire someone?~ [SHARWY51]
 @1 = ~Who are you?~
 @2 = ~And if I said I was looking for work?~
 @3 = ~I might be looking for a henchman.~
@@ -51,10 +51,10 @@
 @50 = ~Oh, fine, fine. I suppose a bit of gold now isn't the most important thing. I am at your disposal, my <PRO_LADYLORD>.~
 @51 = ~I am not a crate of salt to be haggled over. 150 gold or nothing.~
 @52 = ~You expect me to work for free, then? Don't be naive. Come back when you have something more to offer than promises, all right?~
-@53 = ~Come back, have you? What do you require now?~
+@53 = ~Come back, have you? What do you require now?~ [SHARWY52]
 @54 = ~I want to ask you some questions.~
 @55 = ~MT: Вопросы? Может я и из Невервинтера, но здесь я не для того, чтобы из меня выкачивал информацию кто-то из новоприбывших. Я здесь ищу работу. Конечно, я бы могла вам еще рассказать про район Чернозерья, ведь я родом отсюда... но довольно. Лучше просто скажите, собираетесь вы нанимать помощника или нет.~ /*I suppose I could tell you a little about the Blacklake district, perhaps, as I am from there... but that's it. Otherwise let me know if you need some actual hired help or not.*/
-@56 = ~So we meet again, <CHARNAME>. The others had told me Aribeth had recruited you to find the cultists... I can't say I'm surprised. You've acquired quite the reputation for yourself, haven't you?~
+@56 = ~So we meet again, <CHARNAME>. The others had told me Aribeth had recruited you to find the cultists... I can't say I'm surprised. You've acquired quite the reputation for yourself, haven't you?~ [SHARWY53]
 @57 = ~I'm surprised to see you here, Sharwyn.~
 @58 = ~You again? What, are you following me around?~
 @59 = ~Goodbye.~
@@ -72,7 +72,7 @@
 @71 = ~Monsters?~
 @72 = ~It's about time you asked. I'm at your disposal, <CHARNAME>.~
 @73 = ~MT: В основном багбиры и орки. Однако говорят, ими управляют люди, что очень странно. В любом случае, с тех пор как Лускан с головой ушел в свои дела, окружающие провинции стали объектом постоянных набегов... но эти монстры действуют более организованно, чем обычно.~ /*At any rate, since Luskan is wrapped up in its own concerns, the countryside has become open season for banditry... these monsters, however, are more organized than is normal.*/
-@74 = ~MT: Еще раз здравствуйте, <CHARNAME>. Полагаю, вы помните меня? бард, Шервин? Было довольно скучно стоять и ждать, пока Арибет не возьмется за дело... Лучше бы я сама пока искала этот культ, зарабатывая славу.~ /*It's been rather boring standing around waiting for Aribeth to get her act together... I'd rather be out looking for this cult, making a name for myself while I'm at it.*/
+@74 = ~MT: Еще раз здравствуйте, <CHARNAME>. Полагаю, вы помните меня? бард, Шервин? Было довольно скучно стоять и ждать, пока Арибет не возьмется за дело... Лучше бы я сама пока искала этот культ, зарабатывая славу.~ [SHARWY55] /*It's been rather boring standing around waiting for Aribeth to get her act together... I'd rather be out looking for this cult, making a name for myself while I'm at it.*/
 @75 = ~So you're working for Aribeth?~
 @76 = ~Have you heard any rumors about the cult since you've come here?~
 @77 = ~If you're so interested in fame, why are you standing around here?~
@@ -81,7 +81,7 @@
 @80 = ~I wouldn't mind an extra hand. You're in.~
 @81 = ~Sorry, but I'm not interested. Goodbye.~
 @82 = ~MT: Отлично. Тогда я в вашем распоряжении. Я последую за вами, пока вы будете нуждаться во мне, <CHARNAME>.~ /*"My magic is at your disposal. What spell would you like me to cast?"*/
-@83 = ~Well, well, well... you must be <CHARNAME>, correct? The legendary savior of Neverwinter? I've heard a couple of ballads written about you, already.~
+@83 = ~Well, well, well... you must be <CHARNAME>, correct? The legendary savior of Neverwinter? I've heard a couple of ballads written about you, already.~ [SHARWY54]
 @84 = ~Well, I wasn't acting alone.~
 @85 = ~Yes, that would be me.~
 @86 = ~Is that so? Modesty is the last thing I would expect to find in the great <CHARNAME>.~

@@ -6,12 +6,12 @@
 @5 = ~MT: Возвращайся на ярмарку мечей.~ /*Get to the point.*/
 @6 = ~MT: Я найду тебя в казармах Кендрака.~ /*Port Llast - Kendrack's Barracks*/
 @7 = ~MT: Жди меня здесь.~ /*Wait right here.*/
-@8 = ~I hoped that you would return, so I waited here. I've hardly damaged anything since you left; I thought you'd be proud. May I join with you once more, my friend?~
+@8 = ~I hoped that you would return, so I waited here. I've hardly damaged anything since you left; I thought you'd be proud. May I join with you once more, my friend?~ [LINA060]
 @9 = ~Yep.~
 @10 = ~No.~
 @11 = ~I shall try to breathe life back into you and your quest.~
 @12 = ~(Sigh) Then I shall wait here for you to return.~
-@13 = ~<CHARNAME>! I had hoped that you would show up here, my friend. I heard that Aribeth recruited you to stamp out the evil cult that was responsible for the plague.~
+@13 = ~<CHARNAME>! I had hoped that you would show up here, my friend. I heard that Aribeth recruited you to stamp out the evil cult that was responsible for the plague.~ [LINA053]
 @14 = ~Linu, what a pleasant surprise.~
 @15 = ~I thought we parted ways. Why have you followed me?~
 @16 = ~Goodbye.~
@@ -51,4 +51,4 @@
 @50 = ~Having failed to destroy us with their terrible disease, it would hardly shock me to find out that the cult had struck with a plague of vicious animals. Is there anything else I can help you with, <CHARNAME>?~
 @51 = ~Are you planning to travel there?~
 @52 = ~Why are you waiting around in here? Should you be investigating the problem?~
-@53 = ~MT: Привет еще раз, <CHARNAME>. Надеюсь, ты меня помнишь. Я Лину Ла'нерал, клерик Сеханин Мунбоу. Я просто жду, пока не появится кто-нибудь, кому я могла бы помочь привлечь к ответственности этих распространителей чумы.~ /*I'm just waiting here so I can help someone bring those evil plague spreaders to justice.*/
+@53 = ~MT: Привет еще раз, <CHARNAME>. Надеюсь, ты меня помнишь. Я Лину Ла'нерал, клерик Сеханин Мунбоу. Я просто жду, пока не появится кто-нибудь, кому я могла бы помочь привлечь к ответственности этих распространителей чумы.~ [LINA055] /*I'm just waiting here so I can help someone bring those evil plague spreaders to justice.*/

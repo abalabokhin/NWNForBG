@@ -1,9 +1,9 @@
-@0 = ~Hmm... I recognize you. You are one of the new recruits under Aribeth, are you not? I'm sorry, but this is the spellcasters' guild. It will not interest you.~
+@0 = ~Hmm... I recognize you. You are one of the new recruits under Aribeth, are you not? I'm sorry, but this is the spellcasters' guild. It will not interest you.~ [ELTUR050]
 @1 = ~I need some spellcasting equipment.~
 @2 = ~Farewell, then.~
 @3 = ~Yes, this will do quite well. Come, let us take a look at what we have to offer you then, shall we?~
 @4 = ~MT: Я желаю вам приятно провести <DAYNIGHT>, <SIRMAAM>. Пожалуйста, заходите еще.~ /*I wish you a good <DAYNIGHTALL>, <PRO_SIRMAAM>. Please come back again.*/
-@5 = ~Well, hello, <CHARNAME>. I had heard there was a new magic adept in service to the city. The guild of the Many-Starred Cloak welcomes you.~
+@5 = ~Well, hello, <CHARNAME>. I had heard there was a new magic adept in service to the city. The guild of the Many-Starred Cloak welcomes you.~ [ELTUR052]
 @6 = ~What kind of guild is this?~
 @7 = ~I would like to join the guild.~
 @8 = ~MT: Я не называл своего имени, откуда ты его знаешь?~ /*Me not tell name. How you know?*/
@@ -17,7 +17,7 @@
 
 Я пытаюсь вступить в ряды местной магической гильдии Звездного Плаща. В мерцающем главном зале Башни Плаща в Сердце города глава гильдии Эльтура Сарптил дала мне ключ от разбросанных по всему городу лабораторий гильдии, оттуда мне нужно принести четыре предмета: кусок глины, пузырек воды, клочок тумана и лучину. Она предупредила меня об опасностях, которые поджидают меня на моем пути, так как все эти предметы хорошо охраняются. Как только я добуду все четыре предмета, мне нужно будет явиться к Эльтуре, чтобы пройти то последнее испытание, которое она сочтет для меня необходимым.~ /*I have applied for membership into the local guild of magic, the Many-Starred Cloak. In the Cloaktower, their glistening guild hall in the City Core, the guild leader, Eltoora Sarptyl, bestowed upon me a key to the guild's various laboratories throughout the city. Each is marked with a sundial and from them I am to retrieve four items: a bit of clay, a flask of water, a puff of fog, and a bit of kindling wood. She said to mark well the order, whatever that may mean. She also warned to expect dangers along my path, as the four items do not go unguarded.
 Once I have obtained all four items, I am to present myself to Eltoora for whatever other tests she may deem necessary.*/
-@16 = ~Hello, <CHARNAME>. Are we back to continue on with our next round of challenges? Or did we have something else in mind?~
+@16 = ~Hello, <CHARNAME>. Are we back to continue on with our next round of challenges? Or did we have something else in mind?~ [ELTUR051]
 @17 = ~Evaluate me for guild membership.~
 @18 = ~You were sent for four reagents and you have them. Well done. Now you shall face a test of mind and body.~
 @19 = ~MT: Вас телепортируют в комнату, где будет нужно уничтожить один из моих механизмов. Инструменты найдете там же, это облегчит вам задачу. Используйте знания, полученные в первом испытании, и следующий этап окажется проще, если же вы уйдете, не уничтожив механизм, это засчитается как провал. Когда будете готовы, скажите мне об этом, я вас телепортирую в зал испытаний.~ /*Use the knowledge from my first task and this test will be simple, but if you leave before the automaton is destroyed, you have failed. Are you ready?*/
@@ -35,7 +35,7 @@ Once I have obtained all four items, I am to present myself to Eltoora for whate
 @29 = ~Having passed Eltoora's test, I have now received the mantle of the Many-Starred Cloak and have become a member of the guild. Aside from the prestige and other benefits, it will also grant me more complete access to their stores of magical supplies, that I might make a better practice of my craft.~
 @30 = ~Then return when you are.~
 @31 = ~MT: Вам предстоит испытание тела и разума. Вас телепортируют в комнату, где будет нужно уничтожить один из моих механизмов. Инструменты найдете там же, это облегчит вам задачу. Если же вы уйдете, не уничтожив механизм, это засчитается как провал.~ /*You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task.*/
-@32 = ~Welcome, member. What do you require?~
+@32 = ~Welcome, member. What do you require?~ [ELTUR053]
 @33 = ~Have you special equipment available for guild members?~
 @34 = ~MT: Да, для членов гильдии в продаже есть особое снаряжение. Вот, взгляните.~ /*You are unable to view this companion's inventory.*/
 @35 = ~MT: Поздравляю! Вы проявили огромную изобретательность! За уничтожение моего механизма вы получаете место в гильдии Звездного Плаща. Я дарю вам символ гильдии. Носите этот плащ с гордостью и знайте, что гильдия отныне будет готова помочь вам. Вы также можете пользоваться лобораторией на верхнем этаже башни.~ /*Congratulations. You have shown great ingenuity. By destroying my automaton you have earned a place in the Many-Starred Cloak.*/

@@ -1,6 +1,6 @@
-@0 = ~Please, you must help me!~
-@1 = ~MT: Я уже потерял в этом месте товарища-следопыта из-за животных. Он лежит недалеко отсюда, пойдемте со мной, я покажу.~ /*I have already lost a fellow ranger to the animals in this place. He lies just down the southern path.*/
-@2 = ~You have made short work of my creatures. 'Twould not be wise to let you do the same to me.~
+@0 = ~Please, you must help me!~ [WYVERN61]
+@1 = ~MT: Я уже потерял в этом месте товарища-следопыта из-за животных. Он лежит недалеко отсюда, пойдемте со мной, я покажу.~ [WYVERN65] /*I have already lost a fellow ranger to the animals in this place. He lies just down the southern path.*/
+@2 = ~You have made short work of my creatures. 'Twould not be wise to let you do the same to me.~ [WYVERN64]
 @3 = ~Who are you?~
 @4 = ~No deals. I'm here for your death.~
 @5 = ~Wyvern, formerly a 'guest' of the Bulwark Prison in Waterdeep, at your service.~
@@ -26,7 +26,7 @@
 @25 = ~No deal, you disgusting murderer! I'll kill you now!~
 @26 = ~MT: Когда мой отец не вернулся, мать отправилась искать его. Я нашел ее мертвой у подножия дерева, на котором висел мой отец. Ее... подвергли насилию, прежде чем убить. Мой отец был еще жив и мог лишь беспомощно смотреть, когда мою мать убивали. Он умер у меня на руках, и я поклялся отомстить.~ /*When my father did not return, my mother went to search for him. I found her dead at the foot of the tree where my father hung. She had been... brutalized before they killed her.*/
 @27 = ~Then what happened?~
-@28 = ~Here, this arrow tip be sharp enough... Szzhgah, that stings... There, a single ear. Don't spend it all in one place.~
+@28 = ~Here, this arrow tip be sharp enough... Szzhgah, that stings... There, a single ear. Don't spend it all in one place.~ [RAGEF03]
 @29 = ~Now, if you don't mind, I've got a poultice to prepare for where my ear used to be.~
 @30 = ~As for my partners, I barely spoke to most of them. However, I do know that Zor is an idiot and has likely drowned himself in an ale barrel at the Green Griffon Inn. It was to be his first stop.~
 @31 = ~MT: Я выследил их. Одного за другим я находил их и убивал. Я убил их семьи. Я убил их лошадей и собак, тупых тварей, что оставались верны этим людям несмотря на все, что они сделали. Когда человеческий лорд бросил против меня свои войска, я скрылся в лесах и отстреливал людей из лука, пока выжившие не начали называть этот лес проклятым - так они его боялись.~ /*I hunted them down. One by one I found them and killed them. I killed their families. I killed their dogs and their horses, stupid beasts that remained loyal to these men despite what they had done.*/
@@ -38,4 +38,4 @@
 @37 = ~You don't wish to die and you want to make a deal?~
 @38 = ~That's nice, but I'm here for the bounty.~
 @39 = ~Indeed! This need not end in battle. Perhaps you'll allow me to make a suggestion? The bounty is for my ear.~
-@40 = ~You have what you want, just leave me be.~
+@40 = ~You have what you want, just leave me be.~ [WYVERN60]

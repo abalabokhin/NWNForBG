@@ -1,4 +1,4 @@
-@0 = ~MT: Э? Полагаю, ты здесь, чтобы вступить в наши ряды, так ведь? Однако у меня сейчас нет времени на новых учеников, так что убирайся.~ /*Eh? I suppose you're here to sign up, <PRO_GIRLBOY>, are ye? I've no time for a new apprentice, however, so off ye go.*/
+@0 = ~MT: Э? Полагаю, ты здесь, чтобы вступить в наши ряды, так ведь? Однако у меня сейчас нет времени на новых учеников, так что убирайся.~ [KENDR056] /*Eh? I suppose you're here to sign up, <PRO_GIRLBOY>, are ye? I've no time for a new apprentice, however, so off ye go.*/
 @1 = ~Sign up for what?~
 @2 = ~I'm not here to apprentice for anything.~
 @3 = ~Bite your tongue, old man.~
@@ -83,9 +83,9 @@ Zor, a burly minotaur, is rumored to have been spotted on the north road, near t
 @81 = ~MT: У нас тут в городе только храм Тира, храмом заведует отец Ньюрик. Хочешь найти что-то еще?~ /*The only temple in town is Tyr's, <PRO_GIRLBOY>. Your Lady Aribeth be there, as is Father Neurik.*/
 @82 = ~MT: Есть тут одна роща в лесу Невервинтер, ага. Надо тебе поговорить об этом с Баллардом... найдешь его в маленькой роще на северо-востоке за стенами города. Хочешь найти что-то еще?~ /*There be one off in the Neverwinter Wood, aye. Ye may wish to speak to Ballard about it... ye'll find him at his little grove just outside o' town.*/
 @83 = ~MT: Удачи тебе в странствиях, герой.~ /*I wish ye the best o' luck on yer quest, <PRO_GIRLBOY>.*/
-@84 = ~MT: Эге, добрый день? Что-нибудь могу для тебя сделать? Есть у тебя дела в гильдии?~ /*Aye, <PRO_GIRLBOY>? Something I can do for ye? Has ye business with the guild?*/
-@85 = ~MT: Приятно тебя снова видеть, <LADYLORD>. Удалось тебе выследить беглецов?~ /*'Tis good to see ye again, <PRO_GIRLBOY>. Have ye had any luck tracking down the bounties?*/
-@86 = ~MT: Слава богам за твое возвращение! Пока тебя не было в Порт-Лласте, этот демон-полуорк, Езгар, похитил мою Шалдриссу! Он потребовал выкуп за ее возвращение, и ему заплатили! Но он все еще не вернул ее! Пожалуйста, молю тебя... верни мою Шалдриссу! Она мое единственное дитя!~ /*He demanded a ransom for her return, and it was paid! But still he did not return her! Please, I beg of ye... get my Shaldrissa back! She is my only child!*/
+@84 = ~MT: Эге, добрый день? Что-нибудь могу для тебя сделать? Есть у тебя дела в гильдии?~ [KENDR057] /*Aye, <PRO_GIRLBOY>? Something I can do for ye? Has ye business with the guild?*/
+@85 = ~MT: Приятно тебя снова видеть, <LADYLORD>. Удалось тебе выследить беглецов?~ [KENDR058] /*'Tis good to see ye again, <PRO_GIRLBOY>. Have ye had any luck tracking down the bounties?*/
+@86 = ~MT: Слава богам за твое возвращение! Пока тебя не было в Порт-Лласте, этот демон-полуорк, Езгар, похитил мою Шалдриссу! Он потребовал выкуп за ее возвращение, и ему заплатили! Но он все еще не вернул ее! Пожалуйста, молю тебя... верни мою Шалдриссу! Она мое единственное дитя!~ [KENDR055] /*He demanded a ransom for her return, and it was paid! But still he did not return her! Please, I beg of ye... get my Shaldrissa back! She is my only child!*/
 @87 = ~Why don't you and your men get her back?~
 @88 = ~Do you know where she's being held?~
 @89 = ~And what might my reward be for doing that?~
@@ -101,7 +101,7 @@ Zor, a burly minotaur, is rumored to have been spotted on the north road, near t
 @97 = ~MT: Я... я полагаю, тебя нельзя винить. Это очень опасно. Вот остаток награды за уши. Я умоляю тебя передумать и спасти ее. Шалдрисса безрассудна и нетерпелива, но ведь это по молодости... она не заслужила смерти от рук убийцы.~ /*I beg ye to change yer mind and find her. Shaldrissa is hot-headed and impetuous because she is young... she doesn't deserve this fate at the hands of a murderer.*/
 @98 = ~MT: Вы передумали? Пожалуйста, молю тебя... верни мою Шалдриссу! Она мое единственное дитя!~ /*You are dead. Please load a saved game or exit.*/
 @99 = ~MT: Тогда отправляйся в старые шахты у таверны 'Зеленый Грифон', на север от города. Поспеши, мой друг, поспеши!~ /*Go to the old mines by the Green Griffon Inn to the north of town, then. They are locked and you shall need this key. Hurry, <PRO_GIRLBOY>, hurry!*/
-@100 = ~What is the word? Have you found my daughter? Is she safe?!~
+@100 = ~What is the word? Have you found my daughter? Is she safe?!~ [KENDR054]
 @101 = ~Tell me what happened again.~
 @102 = ~Where do I find her?~
 @103 = ~I'm sorry, Kendrack... but Shaldrissa died. I tried my best.~
@@ -113,12 +113,12 @@ Zor, a burly minotaur, is rumored to have been spotted on the north road, near t
 @109 = ~Adventurers have been tightening the noose around the necks of the escaped convicts from Bulwark prison. Four of the five ears were returned to Mayor Kendrack when terrible news struck the town of Port Llast. Kendrack's daughter, Shaldrissa, had been kidnapped by the criminal Yesgar and taken to the abandoned mines near the Green Griffon Inn. Mayor Kendrack begged for her rescue and, while she was found, she was unfortunately killed in the attempted escape.~
 @110 = ~Please hurry!~
 @111 = ~Go on, then. Leave the poor lass to die, heartless wretch!~
-@112 = ~MT: Оставь меня, <MALEFEMALE>. Нам не о чем говорить.~ /*Leave me be, <PRO_GIRLBOY>. We have nothing to talk about.*/
-@113 = ~Get away from me! Some hero ye are... my Shaldrissa lies dead because of ye!~
-@114 = ~MT: Шалдрисса спасена и вернулась! Не могу выразить, как я благодарен! Ты воистину герой, как и говорила Госпожа! Девочка потрясена, но в остальном в порядке. Ну, может, хоть это поумерит ее страсть к приключениям, ага?~ /*Shaldrissa is safe and returned! I cannot thank ye enough! Ye truly are the hero the Lady told me of!*/
+@112 = ~MT: Оставь меня, <MALEFEMALE>. Нам не о чем говорить.~ [KENDR051] /*Leave me be, <PRO_GIRLBOY>. We have nothing to talk about.*/
+@113 = ~Get away from me! Some hero ye are... my Shaldrissa lies dead because of ye!~ [KENDR052]
+@114 = ~MT: Шалдрисса спасена и вернулась! Не могу выразить, как я благодарен! Ты воистину герой, как и говорила Госпожа! Девочка потрясена, но в остальном в порядке. Ну, может, хоть это поумерит ее страсть к приключениям, ага?~ [KENDR053] /*Shaldrissa is safe and returned! I cannot thank ye enough! Ye truly are the hero the Lady told me of!*/
 @115 = ~MT: Вот, возьми награду за Езгара. Хотел бы я иметь больше, чтоб тебя наградить. Если выкуп нашелся, оставь его себе... а что касается всяких заданий, что тебе дала Леди, то я желаю тебе огромной удачи.~ /*I wish I had more to reward ye with. If ye found the ransom, please do keep it... and as for whatever quest the Lady put ye on, I wish ye the best of luck.*/
 @116 = ~MT: Порт-Лласт: Охота за головами 
 
 Мы повсюду разыскивали заключенных, сбежавших из тюрьмы Бастион. Четыре из пяти ушей были доставлены мэру Кендраку, но почти одновременно Порт-Лласт потрясла ужасная новость. Преступник Езгар похитил дочь Кендрака, Шалдриссу, и отвел ее в заброшенные шахты близ таверны "Зеленый Грифон". К счастью, мы подоспели вовремя, спасли Шалдриссу от беглеца Езгара и благополучно доставили ее к отцу.~ /*Adventurers have been tightening the noose around the necks of the escaped convicts from Bulwark prison. Four of the five ears were returned to Mayor Kendrack when terrible news struck the town of Port Llast. Kendrack's daughter, Shaldrissa, had been kidnapped by the criminal Yesgar and taken to the abandoned mines near the Green Griffon Inn. Luckily, adventurers were able to intervene in time, saving Shaldrissa from the devious Yesgar and returning her safely to her father's side.*/
-@117 = ~MT: Я желаю тебе удачи, герой. Надеюсь, ты найдешь то, что ищешь.~ /*I wish ye good luck, <PRO_GIRLBOY>. Hopefully ye finds what ye're searching for.*/
+@117 = ~MT: Я желаю тебе удачи, герой. Надеюсь, ты найдешь то, что ищешь.~ [KENDR050] /*I wish ye good luck, <PRO_GIRLBOY>. Hopefully ye finds what ye're searching for.*/
 @118 = ~MT: Вы убили мою дочь, негодяи! Я отомщу!~ /*You killed my Mistress!*/

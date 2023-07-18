@@ -1,4 +1,4 @@
-@0 = ~We hears you is wise for <PRO_RACE> kind, so accept offers of surrender from goblin, yes? You comes to talk with us, works out deal, maybe?~
+@0 = ~We hears you is wise for <PRO_RACE> kind, so accept offers of surrender from goblin, yes? You comes to talk with us, works out deal, maybe?~ [GKING050]
 @1 = ~MT: О чем ты вообще говоришь?~ /*What are you talking about?*/
 @2 = ~Why? I love killing goblins!~
 @3 = ~Never! Evil creatures like yourself must die!~
@@ -8,7 +8,7 @@
 @7 = ~Is there anything more about the master that you know?~
 @8 = ~Sounds like the other chiefs would pay for *your* head.~
 @9 = ~MT: Нет, я лучше убью тебя.~ /*No, I'd rather kill you.*/
-@10 = ~MT: Убить подлый нарушитель <RACE>!~ /*Kill the <PRO_RACE> intruders!!*/
+@10 = ~MT: Убить подлый нарушитель <RACE>!~ [GKING053] /*Kill the <PRO_RACE> intruders!!*/
 @11 = ~Is good! Goblins eagerly wait for heads of other chieftains! Place on poles and dance around in glee, we will! Ha! Then we forgets whole Dergiab stuff.~
 @12 = ~MT: Перекресток: Сделка с королем гоблинов
 
@@ -16,10 +16,10 @@
 @13 = ~The master is great and powerful. Great magics, has he. Strong and powerful is he. Too tough for us, is he.~
 @14 = ~What about the army you mentioned?~
 @15 = ~But what *is* this Dergiab?~
-@16 = ~Ahhh! Is double-cross! Kill it! Kill all!!~
+@16 = ~Ahhh! Is double-cross! Kill it! Kill all!!~ [GKING053]
 @17 = ~MT: Наша уже говорит, мы не знает. Наша хочет пещера назад, живет и не сражается. Мы хочет, нас не трогает никто, да? Но ваша говорит, ты убивает вожаки! Гоблины хочет головы. Ха! Ты идет туда, да?~ /*Me saying we is not knowing, already. We wants caves back, live without fighting all of time. We just wants left alone, okay?*/
 @18 = ~MT: Огромный ужасный огр с огромный, ужасный магия. Победит даже тебя, хоть ты могучий. озяин не важный! Ты приносит голова вождей, или нет?~ /*Great, giant ogre with powerful magic. Would defeat even you, though you very powerful.*/
-@19 = ~Chief of goblin sees you, <PRO_RACE> friend. What you want now? You gots news for us?~
+@19 = ~Chief of goblin sees you, <PRO_RACE> friend. What you want now? You gots news for us?~ [GKING051]
 @20 = ~I have a question.~
 @21 = ~I have the head of the bugbear chieftain.~
 @22 = ~I have the head of the orc chieftain.~
@@ -40,7 +40,7 @@
 @33 = ~We waits eagerly for heads! You tough <PRO_RACE> friend, they stand no chance!~
 @34 = ~MT: Хозяин великий и могучий. Большая магия имеет, да. Сильный и могучий, да, он. (вздыхает) Мы не справится, нет. Огромный ужасный огр с сильный магия. Победит даже тебя, друг <race>, хоть ты могучий.~ /*The master is great and powerful. Great magics, has he. Strong and powerful is he. (sigh) Too tough for us, is he.*/
 @35 = ~MT: Наша уже говорит, мы не знает. Наша хочет пещера назад, живет и не сражается. Мы хочет, нас не трогает никто, да? Не хочет столько сражается с орки и багбиры, не хочет хозяин забирает наши лучший воин.~ /*Me saying we is not knowing, already. We wants caves back, live without fighting all of time. We just wants left alone, okay?*/
-@36 = ~Most pleased to see you, <PRO_RACE> friend. You make goblin king of caves, you have! We not fights no more with bugbears and orcs!~
+@36 = ~Most pleased to see you, <PRO_RACE> friend. You make goblin king of caves, you have! We not fights no more with bugbears and orcs!~ [GKING052]
 @37 = ~Well, now it's time to kill you, I'm afraid!~
 @38 = ~I'll leave you to your joy, then.~
 @39 = ~Goblins wish the <PRO_RACE> friend goodness and stuff!~

@@ -1,4 +1,4 @@
-@0 = ~Greetings. Blessings of the Earthmother Chauntea and the Treefather Silvanus upon you. I am Nyatar, in the service of Nature.~
+@0 = ~Greetings. Blessings of the Earthmother Chauntea and the Treefather Silvanus upon you. I am Nyatar, in the service of Nature.~ [NYATAR52]
 @1 = ~Hello, I am <CHARNAME>. Could I ask some questions?~
 @2 = ~I'm <CHARNAME>. I have some questions.~
 @3 = ~I'm <CHARNAME>. Just shut up and answer my questions.~
@@ -43,7 +43,7 @@
 @40 = ~MT: Я понимаю ваше нежелание, сейчас ведь такое сложное время, но маленькие вещи тоже имеют значение. Пожалуйста, возьмите это на случай, если передумаете. Этот ключ поможет пройти в зоопарк. Мой зверек-помощник "нашел" его, а я сделал копии. Вас может остановить стража, но не двери.Это свиток "перехода через растения". Используйте его на большом дереве у зоопарка, и все животные, которых вы приведете туда, окажутся здесь.~ /*I understand your reluctance in this troublesome time, but these little things make a diffence too. Please, take this in case you change your mind.*/
 @41 = ~MT: Рад это слышать. Помнится, я дал вам ключ от зоопарка и свиток перехода через растения. Используйте свиток на большом дереве у зоопарка, и все животные, которых вы приведете туда, окажутся здесь.~ /*This is a Transport Via Plants scroll. Use it on the large tree near the zoo and any of the animals you lead there will be teleported here.*/
 @42 = ~MT: Пожалуйста, подумайте над этим еще раз. Животные не должны погибнуть.~ /*Please step back; the patients need their sleep.*/
-@43 = ~Greetings again, . Nature welcomes you. I hope the day has held you in better health than those poor creatures in the Blacklake zoo.~
+@43 = ~Greetings again, . Nature welcomes you. I hope the day has held you in better health than those poor creatures in the Blacklake zoo.~ [NYATAR53]
 @44 = ~What animals? Is there something you need help with?~
 @45 = ~There has been progress in freeing the animals.~
 @46 = ~Go over what is needed again.~
@@ -65,7 +65,7 @@
 
 Ниатар благодарен за освобождение животных из зоопарка Чернозерья в Невервинтере, но он сильно опечален тем, что некоторые из них погибли. По крайней мере, им больше не придется сидеть в клетке.~ /*Nyatar was grateful for the release of the animals from the Neverwinter Blacklake zoo, but was also saddened by the loss of some of them. At least they are no longer caged.*/
 @58 = ~MT: Убито только одно животное. Ну что ж, почти победа. По сравнению со всем остальным - победа жизни, наконец. Вот, примите с моим благословлением. Уверен, вам понравится. Ваше служение было на уровне.~ /*At least only one of the animals was killed. That can be called a victory of sorts. Amidst everything else, there is a victory for life here.*/
-@59 = ~Greetings again, . Nature welcomes you. I hope the day has held you in better health than those poor creatures in the Blacklake zoo.~
-@60 = ~MT: Чума все свирепствует, но есть и хорошие новости. Животные больше не томятся в этом ужасном зоопарке. Спасибо за вашу помощь, она просто бесценна!~ /*The plague still rages, but some small comfort has been given. Animals are no longer caged in that horrible zoo.*/
+@59 = ~Greetings again, . Nature welcomes you. I hope the day has held you in better health than those poor creatures in the Blacklake zoo.~ [NYATAR53]
+@60 = ~MT: Чума все свирепствует, но есть и хорошие новости. Животные больше не томятся в этом ужасном зоопарке. Спасибо за вашу помощь, она просто бесценна!~ [NYATAR51] /*The plague still rages, but some small comfort has been given. Animals are no longer caged in that horrible zoo.*/
 @61 = ~MT: Чума больше не свирепствует, а животные больше не томятся в этом ужасном зоопарке. Спасибо за вашу помощь, она просто бесценна!~ /*The plague still rages, but some small comfort has been given. Animals are no longer caged in that horrible zoo.*/
-@62 = ~MT: Все умирает. Люди... Животные... Один человек ничего не может... Или может? Пожалуйста, оставьте меня в покое. Я не хочу ни с кем говорить.~ /*Everything is dying. people... the animals... There's not much a person can do... is there?*/
+@62 = ~MT: Все умирает. Люди... Животные... Один человек ничего не может... Или может? Пожалуйста, оставьте меня в покое. Я не хочу ни с кем говорить.~ [NYATAR50] /*Everything is dying. people... the animals... There's not much a person can do... is there?*/

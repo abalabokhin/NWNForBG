@@ -1,4 +1,4 @@
-@0 = ~I am Zokan Thunderer, leader of my tribe, the people born of the Elk. Who are you that comes before me?~
+@0 = ~I am Zokan Thunderer, leader of my tribe, the people born of the Elk. Who are you that comes before me?~ [ZOKAN57]
 @1 = ~Me <CHARNAME>.~
 @2 = ~MT: <CHARNAME> руководит нашим отрядом.~ /*<CHARNAME> is too far away.*/
 @3 = ~My name is none of your business!~
@@ -28,9 +28,9 @@ The Elk Tribe within the Fort will keep peace with you while you remain their em
 
 If his people could be cured, Zokan would cease the alliance with the Luskan forces, and all the Elk Tribe would keep the peace.~
 @26 = ~Damas knew how quickly the plague could spread. No doubt he has a cure in his possession in case his own people become infected. We attack Fort Ilkard to try and recover the cure Damas will not give us.~
-@27 = ~I still see you have the plague blankets I gave you before. Please, take them to Damas at Fort Ilkard. Show him the proof of his crime.~
+@27 = ~I still see you have the plague blankets I gave you before. Please, take them to Damas at Fort Ilkard. Show him the proof of his crime.~ [ZOKAN56]
 @28 = ~If you truly intend to help the Elk tribe, you will go to Fort Ilkard and get the plague cure from Damas. I wish you luck, <CHARNAME>, for the sake of my people.~
-@29 = ~My people wither and die from the plague. If they are not cured, the name of Zokan Thunderer will be remembered as the Uthgardt chieftain who could not save his tribe from extinction.~
+@29 = ~My people wither and die from the plague. If they are not cured, the name of Zokan Thunderer will be remembered as the Uthgardt chieftain who could not save his tribe from extinction.~ [ZOKAN55]
 @30 = ~Don't worry, Zokan. I have a cure for the plague right here. Take it to heal your people.~
 @31 = ~I have a cure for the plague, Zokan. You can have it for a price.~
 @32 = ~MT: Я благодарю вас за это, <CHARNAME>. С этим средством мои шаманы вылечат наше племя. Вы спасли народ Лося. Мы дети земли, и у нас нет ни золота, ни сокровищ, которые мы могли бы дать вам. Но возьмите это копье. Это драгоценность племени Лося, и мы долго передавали его от отца к сыну. Вы заслужили это, ибо спасли наш народ от ужаса Воющей Смерти.~ /*We are children of the land, we have no gold or treasure to give you. But take this spear. It is a treasure of the Elk tribe, long handed down from father to son among us. You have earned it by saving us from the terrors of the Wailing Death.*/
@@ -45,7 +45,7 @@ If his people could be cured, Zokan would cease the alliance with the Luskan for
 Племя Лося излечилось от чумы, которую они подхватили через зараженные одеяла - подарок от командира Дамаса из форта Илкард.~ /*The Elk tribe have been cured of the plague they contracted from the infected blankets - a gift from Commander Damas of Fort Ilkard.*/
 @40 = ~MT: Нам нечего больше дать вам, мы кочевой народ, и нам ни к чему то, что так ценит ваша цивилизация. Но благодарность племени Лося вечно будет с вами. Пожалуйста, отнесите это Юсаму, друиду в Колодце Беорунна в знак того, что мы не будем больше сражаться за армию Лускана. Ступайте, и да пребудет с вами благословение Лося.~ /*Please, take this token to Yusam the Druid in Beorunna's Well as a promise that we will no longer join the Luskan forces against them. Go with the blessing of the Elk, <CHARNAME>.*/
 @41 = ~You are a vile <PRO_MANWOMAN>! I will not bargain for the lives of my people with one such as you! You have revealed yourself to be an enemy of the Elk!~
-@42 = ~I, Zokan Thunderer, thank you for saving my people from the Wailing Death. You are a hero to us, <CHARNAME>.~
+@42 = ~I, Zokan Thunderer, thank you for saving my people from the Wailing Death. You are a hero to us, <CHARNAME>.~ [ZOKAN52]
 @43 = ~As we promised when we recieved the cure, the Elk tribe is no longer allied with Luskan. We will trouble the Lord's Alliance no more.~
 @44 = ~Commander Damas has admitted he infected the Elk tribe with the Wailing Death. However, he feels no remorse for his actions.
 A difficult moral decision lies ahead - deliver the plague cure to Zokan Thunderer and save the Elk tribe, or bring the chieftain's severed head to Commander Damas and collect the offered reward.~

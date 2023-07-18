@@ -1,4 +1,4 @@
-@0 = ~Hello, <PRO_GIRLBOY>. You best be careful treadin' the road 'round these parts. A dangerous place, these days. Listen to old Gerrol.~
+@0 = ~Hello, <PRO_GIRLBOY>. You best be careful treadin' the road 'round these parts. A dangerous place, these days. Listen to old Gerrol.~ [GERRO053]
 @1 = ~You're Gerrol? Your son mentioned you.~
 @2 = ~What do you do around here?~
 @3 = ~What's so dangerous about this area?~
@@ -61,7 +61,7 @@
 @58 = ~MT: Культ? То есть в связи с Дергиабом и его тварями? Хмм. Да пожалуй, не знаю... хотя это могло бы объяснить возросшие амбиции Дергиаба. Честно сказать, я всегда думал, что Дергиаб для всех этих чудовищ что-то вроде бога. Я бы удивился, если бы он заключил союз с кем-то еще. Хотя, кто знает.~ /*To be honest, I always thought Dergiab fashioned himself as a bit of a god amongst them other monsters. I'd be surprised if he allied with anyone else. You never know, however.*/
 @59 = ~I... I certainly hope so, <PRO_GIRLBOY>. It all depends on what Dergiab wants with his prisoners. I've braced myself for the worst, to be honest.~
 @60 = ~MT: Ну, что же... Как я и сказал, я отдам тебе посильную награду за помощь. Я это и всем другим искателям приключений предлагал.~ /*Fair enough. Like I said, I'll give you what reward I can, if you help me out. It's the same offer I've made to any other adventurer that's come by.*/
-@61 = ~Well, hello to you. Were you the one I told about them monsters bothering us around here - the ones who took my wife, Leah? Do you bring word?~
+@61 = ~Well, hello to you. Were you the one I told about them monsters bothering us around here - the ones who took my wife, Leah? Do you bring word?~ [GERRO055]
 @62 = ~The monster's leader, Dergiab, is dead. I have his head.~
 @63 = ~I have Leah's ring right here. She's dead.~
 @64 = ~I see Leah made it back safely.~
@@ -103,12 +103,12 @@
 @94 = ~MT: Я же тебе уже говорил об этом, а, <SIRMAAM>? Ладно, если я повторю, вреда не будет. Холмы в этом районе полны разных тварей... багбиров, гоблинов и прочих. Обычно они нас не очень беспокоят. Но с тех пор, как Лускан перестал патрулировать эту область, они очень осмелели. Они уже несколько недель нападают на каждого, кто пытается пройти по этой местности. Даже на фермы нападали... вот тогда-то они и забрали мою жену Лию.~ /*The hills in this area are home to creatures of all sorts... bugbears, goblins and the like. Normally they don't trouble us much. Since Luskan stopped patrolling the area, they've become plenty brave.*/
 @95 = ~All of this is likely the doing of the leader of them monsters, Dergiab. No one will be safe until he's dead. You bring me word of my wife or his head... I'll reward you for either.~
 @96 = ~MT: Я... я надеюсь, что да. Все зависит от того, чего Дергиаб хочет от своих пленников. Хотя, признаюсь честно, я готов и к самому худшему.~ /*I... I certainly hope so, <PRO_GIRLBOY>. It all depends on what Dergiab wants with his prisoners. I've braced myself for the worst, to be honest.*/
-@97 = ~Most pleased to see you again, friend. Things seem a lot safer around here, but I do miss Leah dearly.~
+@97 = ~Most pleased to see you again, friend. Things seem a lot safer around here, but I do miss Leah dearly.~ [GERRO050]
 @98 = ~MT: Но ведь Лия вернулась.~ /*I see Leah made it back safely.*/
-@99 = ~Most pleased to see you again, friend. Things are just about to right with Leah's return to the farm. To think, I thought her dead for sure.~
+@99 = ~Most pleased to see you again, friend. Things are just about to right with Leah's return to the farm. To think, I thought her dead for sure.~ [GERRO051]
 @100 = ~I'll be forever grateful for what you've done for the area, too. It's safe once more. You and yours are always welcome at our humble farm.~
 @101 = ~Things are just about right... but not quite. The area is still unsafe so long as Dergiab is still about.~
-@102 = ~Hello. It's been mighty sad around here since you've confirmed the worst. My wife is dead. How go things with the monsters that killed her?~
+@102 = ~Hello. It's been mighty sad around here since you've confirmed the worst. My wife is dead. How go things with the monsters that killed her?~ [GERRO054]
 @103 = ~MT: Перекресток: Жена Геррола 
 
 Отчаявшийся молодой человек рассказал нам, как на его семью стали нападать злобные человекоподобные существа с холмов. Они похитили его мать, и он отправился за помощью в Порт-Лласт. Его отца, Геррола, можно найти на ферме за городом на севере перекрестка.%)AddJournalEntry(%Перекресток: Голова Дергиаба

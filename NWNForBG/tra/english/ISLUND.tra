@@ -1,4 +1,4 @@
-@0 = ~Hail and well met, my <PRO_LADYLORD>. I understand from your pass that you are part of a delegation from Mulhorand, yes?~
+@0 = ~Hail and well met, my <PRO_LADYLORD>. I understand from your pass that you are part of a delegation from Mulhorand, yes?~ [ISLUND54]
 @1 = ~MT: (Дать ему пропуск) Вот, посмотрите сами..~ /*[Give him the pass] Here you go.*/
 @2 = ~That seems... an excessively far distance to travel. I have been informed of no invitation made to the Mulhorandi. We certainly were not expecting you.~
 @3 = ~You dare question me?!~
@@ -41,4 +41,4 @@
 @40 = ~A cult? No, I've heard nothing like that. These wizards have never been the religious sort, in my experience.~
 @41 = ~Hmmm. Someone named Maugrim arrived here a long time ago. Asked to speak to the wizards. Been here ever since, but I've never seen or heard of him in that time. Might be dead, I suppose.~
 @42 = ~MT: Понятия не имею. По правде я думаю, что и волшебники тоже. Они же не ходят по башне как нормальные люди - по всяким там лестницам и залам... Там есть такие особые камни, что переносят их в разные комнаты внутри. Темпус его знает, как им удается различить, кому куда позволено входить и кому куда нужно попасть. Если вы увидите такой телепортирующий камень, не советую вам шутковать с ним. Вы можете очутиться где-нибудь за пределами башни... А это уж совсем ни к чему.~ /*There are these lights that teleport them about to the rooms inside. Tempus knows how they figure out who's allowed where, or where they want to go.*/
-@43 = ~You are free to enter the tower, if you wish. Remember, do not venture beyond the ambassadorial quarters.~
+@43 = ~You are free to enter the tower, if you wish. Remember, do not venture beyond the ambassadorial quarters.~ [ISLUND53]

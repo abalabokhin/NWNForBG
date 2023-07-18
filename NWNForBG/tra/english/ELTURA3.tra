@@ -1,5 +1,5 @@
-@0 = ~Welcome, <CHARNAME>, to this rather temporary branch of the guild of the Many-Starred Cloak. Rest assured that even here your membership cloak will grant you all the privileges you have come to expect from our guild.~
-@1 = ~Is there some particular item of strange and wondrous magical properties that you seek? Or perhaps you have come to make use of the little laboratory I have set up in the back?~
+@0 = ~Welcome, <CHARNAME>, to this rather temporary branch of the guild of the Many-Starred Cloak. Rest assured that even here your membership cloak will grant you all the privileges you have come to expect from our guild.~ [ELTUR056]
+@1 = ~Is there some particular item of strange and wondrous magical properties that you seek? Or perhaps you have come to make use of the little laboratory I have set up in the back?~ [ELTUR058]
 @2 = ~Who are you?~
 @3 = ~How do you know my name?~
 @4 = ~Why is there a branch of the Many-Starred Cloak guild out here?~
@@ -15,6 +15,6 @@
 @14 = ~MT: Разумеется, <CHARNAME>, хотя мне кажется, эти свитки пригодится лишь тем, кто практикует магию.~ /*Of course, <CHARNAME>, though I am afraid you will find most of my inventory better suited to those who practice the arcane arts.*/
 @15 = ~MT: Вы имеете неограниченный доступ ко всему, что есть в распоряжении гильдии, <CHARNAME>, однако, если у тебя нет книги создания предметов, я сомневаюсь, что у тебя что-нибудь получится. Для смешивания ингридиентов используйте чашу в центре зала~ /*Your membership cloak gives you unlimited access, <CHARNAME>, though unless you have a tome of item creation I doubt there is much you can accomplish in my laboratory.*/
 @16 = ~As you wish. Fare thee well, <CHARNAME>. Perhaps our paths will cross again.~
-@17 = ~Welcome, <CHARNAME>, to this rather temporary branch of the guild of the Many-Starred Cloak. Normally the arcane knowledge of our guild is restricted to members, but Aarin Gend has asked me to forego that formality under these circumstances.~
-@18 = ~Greetings, <CHARNAME>. Normally I don't deal with those who have no experience in the arcane arts, but Aarin Gend has asked me to make my inventory available to everyone if it will help the war effort.~
+@17 = ~Welcome, <CHARNAME>, to this rather temporary branch of the guild of the Many-Starred Cloak. Normally the arcane knowledge of our guild is restricted to members, but Aarin Gend has asked me to forego that formality under these circumstances.~ [ELTUR057]
+@18 = ~Greetings, <CHARNAME>. Normally I don't deal with those who have no experience in the arcane arts, but Aarin Gend has asked me to make my inventory available to everyone if it will help the war effort.~ [ELTUR059]
 @19 = ~MT: Приветствую, рада вас видеть. Но где же <CHARNAME>. Я бы предпочла разговаривать с ним~ /*Hey, there. You're one of the students here at the Academy, aren't you? <CHARNAME>, unless I'm mistaken.*/

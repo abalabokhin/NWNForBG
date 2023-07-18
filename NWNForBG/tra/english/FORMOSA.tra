@@ -1,4 +1,4 @@
-@0 = ~MT: Кто вы? Из городской стражи, надо полагать. Что вы скажете, <SIRMAAM>? Вы не считаете, что Мелданена надо заставить прекратить скрывать запасы и раздать их? В конце концов, это обязанность самих людей - следить за собой. Что скажешь?~ /*Who are you? One of the city guard, I suppose. What do you say, <PRO_SIRMAAM>? Don't you think Meldanen should be forced to stop his hoarding and give up his stores?*/
+@0 = ~MT: Кто вы? Из городской стражи, надо полагать. Что вы скажете, <SIRMAAM>? Вы не считаете, что Мелданена надо заставить прекратить скрывать запасы и раздать их? В конце концов, это обязанность самих людей - следить за собой. Что скажешь?~ [FORMOSA1] /*Who are you? One of the city guard, I suppose. What do you say, <PRO_SIRMAAM>? Don't you think Meldanen should be forced to stop his hoarding and give up his stores?*/
 @1 = ~Who is this Meldanen?~
 @2 = ~Who are you?~
 @3 = ~MT: Вы ничего не знаете о Мелданене? Что ж, тогда, значит, вы здесь не живете, можно в этом не сомневаться. Мелданен - жестокий и злобный человечишка. У нас, в районе озера, он делает то, что хочет, потому что у него есть две вещи: магия и власть. Он похищает людей для своих экспериментов и всяких магических мерзостей в своем особняке, а другие аристократы делают вид, что ничего не замечают.~ /*He kidnaps people for his experiments and has all sorts of magical abominations in his estate, and all the other nobles pretend not to notice.*/
@@ -68,9 +68,9 @@ Not only has she demanded the key to the warehouse where he has secured his grai
 
 The key has been found and turned in. Formosa awaits the tooth as well.*/
 @62 = ~You change your mind now? Fine, then. Go and leave me to do what needs to be done.~
-@63 = ~So you're back, are you? Have you changed your mind, my <PRO_LADYLORD>? Will you help me get the key and end Meldanen's life?~
+@63 = ~So you're back, are you? Have you changed your mind, my <PRO_LADYLORD>? Will you help me get the key and end Meldanen's life?~ [FORMOSA3]
 @64 = ~No, I'm here to kill you, instead. Meldanen sends his regards.~
-@65 = ~So you have returned, my <PRO_LADYLORD>. Do you have news?~
+@65 = ~So you have returned, my <PRO_LADYLORD>. Do you have news?~ [FORMOSA4]
 @66 = ~I have the key for Meldanen's warehouse.~
 @67 = ~I have Meldanen's silver tooth, taken from his head.~
 @68 = ~MT: У меня есть зуб Мелданена и ключ от кладовой Мелданена.~ /*I have the key for Meldanen's warehouse.*/
@@ -126,4 +126,4 @@ The key has been found and turned in. Formosa awaits the tooth as well.*/
 @114 = ~Fine. Then I shall get it for you.~
 @115 = ~Then I'll take my reward from your dead body!~
 @116 = ~This is an outrage! I shall fight you, blackguard!~
-@117 = ~Thank you for your assistance.~
+@117 = ~Thank you for your assistance.~ [FORMOSA5]

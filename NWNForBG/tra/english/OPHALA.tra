@@ -1,4 +1,4 @@
-@0 = ~Well now, welcome to the Moonstone Mask. I am Ophala, your host and purveyor of fine spirits and entertainment.~
+@0 = ~Well now, welcome to the Moonstone Mask. I am Ophala, your host and purveyor of fine spirits and entertainment.~ [OPHALA51]
 @1 = ~I am especially happy to see that women are visiting. As you can see, it seems that men are more inclined to seek comfort here in times of crisis.~
 @2 = ~Well hello. I am <CHARNAME>. Will you answer some questions?~
 @3 = ~Just answer the question.~
@@ -42,7 +42,7 @@
 @41 = ~MT: Что ж, похоже все в порядке. Да, я думаю, вы подойдете. Я с радостью дам вам свое разрешение. Все дело в пропуске. Купите его, и можете проводить сколько угодно времени с нашими дружелюбными работниками. Пропуск можно купить у бармена за 200 золотых. Помните, вы должны вести себя хорошо. Пропуск дает вам лишь время, но не согласие. Согласие получают с помощью вежливого убеждения.~ /*You can get the coins from the bartender for 200 gold. Remember to be on your best behavior. The coins buy you time, not consent. Only gentle persuasion grants that.*/
 @42 = ~Here is the paper. Oleff will recognize it. I'll make sure there is room in the back for you. Hurry back.~
 @43 = ~Just take the paper you have. Oleff will recognize it. I'll make sure there is room in the back for you. Hurry back.~
-@44 = ~MT: Здравствуйте снова <CHARNAME>. Вы пришли насладиться приятной компанией в салоне или... По делу?~ /*Greetings to you again, . Have you come to sample the delights of our company in the backroom, or is this about... business?*/
+@44 = ~MT: Здравствуйте снова <CHARNAME>. Вы пришли насладиться приятной компанией в салоне или... По делу?~ [OPHALA52] /*Greetings to you again, . Have you come to sample the delights of our company in the backroom, or is this about... business?*/
 @45 = ~I have an art object you might be interested in.~
 @46 = ~I have a writ from Oleff declaring me plague free.~
 @47 = ~This is nothing but a house of ill-repute!~
@@ -69,7 +69,7 @@
 @66 = ~MT: О, это замечательно! Мне никогда не нравилась статуэтка Андрода, но нельзя было допустить, чтобы она осталось в чужих руках. Портрет дяди Томаса Рамботтома написан поверх особого, очень деликатного документа, нельзя было оставить его у Томаса. Ваза же не представляет собой особой ценности, но мне нравится вредить Ходжу. Эти предметы очень дороги для меня, и я хочу непременно дать вам чуть больше, чем обещала. Вот, возьмите 4500 золотых и еще кое-что. Вы заслужили.~ /*These sinister talismans border on the power of artifacts. Only an evil being may wear one, and even the most evil finds his dark soul being twisted and honed by the device as it turns him more and more fiendish with every passing day. Examples of these items appear in many different forms, suggesting multiple creators at different points in history. They are thankfully very rare.*/
 @67 = ~MT: О, это замечательно! Мне никогда не нравилась статуэтка Андрода, но нельзя было допустить, чтобы она осталось в чужих руках. Портрет дяди Томаса Рамботтома написан поверх особого, очень деликатного документа, нельзя было оставить его у Томаса. Ваза же не представляет собой особой ценности, но мне нравится вредить Ходжу. Эти предметы очень дороги для меня, однако совсем не обязательно было убивать кого-то из их владельцев За плохую работу я плачу меньше. Следовало сдерживать себя. Вот, возьмите 2250 золотых и еще кое-что.~ /*These sinister talismans border on the power of artifacts. Only an evil being may wear one, and even the most evil finds his dark soul being twisted and honed by the device as it turns him more and more fiendish with every passing day. Examples of these items appear in many different forms, suggesting multiple creators at different points in history. They are thankfully very rare.*/
 @68 = ~Please don't tease me so. I have ever so many empolyees that do it better than you.~
-@69 = ~Greetings. Are you with ? They were the only other new person I've spent much time with lately. Is this visit for pleasure or business?~
+@69 = ~Greetings. Are you with ? They were the only other new person I've spent much time with lately. Is this visit for pleasure or business?~ [OPHALA53]
 @70 = ~MT: Маска Лунного Камня: портрет для Офалы
 
 Был найден портрет сэра Реджинальда Рамботтома III, на обратной стороне которого написано имя "Офала Шелдарсторн". Это известная хозяйка "Маски лунного камня". Скорее всего ее заинтересует эта находка.~ /*A portrait of Sir Reginald Rumbottom III has been found that appears to have the name "Ophala Cheldarstorn" written on the back. She is the famous matron of the Moonstone Mask. It is likely she would be interested in it.*/

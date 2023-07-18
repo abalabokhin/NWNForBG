@@ -1,4 +1,4 @@
-@0 = ~Hey there dear, what can I do for you?~
+@0 = ~Hey there dear, what can I do for you?~ [LINA050]
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~I love chatting with you, but don't you think we should focus on your mission right now?~
@@ -284,7 +284,7 @@
 @283 = ~Your father was an abusive bastard wasn't he? I shall imagine that he was so that I can continue to serve someone whose heart is so cold.~
 @284 = ~I think you shall find that the pendant I gave you is now much stronger than before.~
 @285 = ~MT: Прими этот амулет эльфов. Он может усилить кое-какие твои способности, сделав их похожими на способности тех, в ком течет кровь эльфов.~ /*There is something I have that might be of some use to you. This is the Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.*/
-@286 = ~Dear <CHARNAME>, I would like to talk to you for a moment.~
+@286 = ~Dear <CHARNAME>, I would like to talk to you for a moment.~ [LINA050]
 @287 = ~Yes Linu, what did you want to talk about?~
 @288 = ~I'm too busy right now, Linu.~
 @289 = ~MT: Нас ждет жестокий бой, в котором мы можем лишиться жизни, <CHARNAME>. Я чувствую, что мне стоит кое-чем с тобой поделиться. Меня жутко пугает этот предстоящий бой с Мораг. Я и не думала, что когда-нибудь смогу в этом участвовать, хотя уже некоторое время ждала этого.~ /*This battle that we face with Morag frightens me desperately. I didn't think I would ever be able to face this day, though I have known it would come for some time now.*/

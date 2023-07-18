@@ -1,4 +1,4 @@
-@0 = ~MT: Ого! С моей точки зрения, вы совсем не похожи на сторонников Маугрима. Ведь вы не из этих, да?~ /*Oh, my! You don't strike me as the type of <PRO_MANWOMAN> who would be one of Maugrim's followers. You're not, are you?*/
+@0 = ~MT: Ого! С моей точки зрения, вы совсем не похожи на сторонников Маугрима. Ведь вы не из этих, да?~ [DELTAG50] /*Oh, my! You don't strike me as the type of <PRO_MANWOMAN> who would be one of Maugrim's followers. You're not, are you?*/
 @1 = ~Are you a prisoner here?~
 @2 = ~Stand back! I'll have no tricks out of you!~
 @3 = ~No, I'm certainly not one of the cultists.~
@@ -62,5 +62,5 @@
 @61 = ~I do not know, exactly. Some old god, perhaps? A demon? He did not reveal its nature to anyone but Arklem, and Arklem was very excited about the possibilities.~
 @62 = ~MT: Слова власти, произносимые только на каком-то древнем языке. Маугрим считает, что эти 'слова' скрыты в самых древних руинах Севера. Я никогда не слышал ни о чем подобном... и представления не имею, почему он считает, что одно из этих слов может находиться в Невервинтере. Если эти слова власти действительно существуют, остается только гадать, что они способны сотворить. Я тоже этого не знаю... но могу предположить, что существует некая сила, стремящаяся заполучить их, и это не сам Маугрим.~ /*If these words of power truly exist, one has to wonder what they might do. That, too, I don't know... but I believe it is the power he serves who wishes them and not Maugrim, himself.*/
 @63 = ~A young sorceress who was once one of Arklem's greatest supporters. She has much knowledge of the towers, which has no doubt been of benefit to Maugrim.~
-@64 = ~You haven't the look of one of Maugrim's fanatics, I'll give you that. Of course, one can never be too sure...~
-@65 = ~Ahh! Why have you come? Are you another one of Maugrim's fanatics, come to torment me again?!~
+@64 = ~You haven't the look of one of Maugrim's fanatics, I'll give you that. Of course, one can never be too sure...~ [DELTAG51]
+@65 = ~Ahh! Why have you come? Are you another one of Maugrim's fanatics, come to torment me again?!~ [DELTAG52]

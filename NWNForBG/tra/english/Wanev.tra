@@ -1,6 +1,6 @@
-@0 = ~How in the name of the gods did you get in here?! Prepare to be destroyed, utterly!~
-@1 = ~Please! Attack no more! I am defeated!~
-@2 = ~Perhaps I was too rash in attacking you. Please, accept my apology.~
+@0 = ~How in the name of the gods did you get in here?! Prepare to be destroyed, utterly!~ [WANEV050]
+@1 = ~Please! Attack no more! I am defeated!~ [WANEV051]
+@2 = ~Perhaps I was too rash in attacking you. Please, accept my apology.~ [WANEV052]
 @3 = ~Perhaps you had better answer my questions before I finish what you started.~
 @4 = ~Apologies won't save you now, mage! Die!~
 @5 = ~I should like to counter that with a question of my own. Why are you in my home?~
@@ -59,14 +59,14 @@
 @56 = ~MT: Южная дорога: Закрытие портала Вэйнива
 
 Волшебник Вэйнив при вызове беса совершил непростительную ошибку. Вызванный им бес Гулгаш открыл портал в Бездну, и теперь в зале кишат всякие чудовища и демоны. По словам Вэйнива, если удастся убить Гулгаша и положить его сердце на жаровню поблизости, портал закроется.~ /*In his tower south of Port Llast, the wizard Wanev admits to having the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. Unfortunately, he left it in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, has opened up a portal to the Abyss and the chambers are now home to all manner of beasts and demons. If Gulgash can be killed, Wanev claims that the portal can be closed by placing the imp's heart upon the adjacent brazier.*/
-@57 = ~What do you want now? Don't be rash and attack me again.~
+@57 = ~What do you want now? Don't be rash and attack me again.~ [WANEV053]
 @58 = ~You mentioned that you had lost the gem?~
 @59 = ~MT: Я думаю, пора тебе попрощаться с жизнью. Умри!~ /*"Enough. Time for you to die."*/
 @60 = ~MT: Мне ничего не нужно. Прощай.~ /*That's all I need. Farewell.*/
 @61 = ~Indeed. I made a mistake when summoning that imp and he opened up a demonic portal in my summoning chambers.~
 @62 = ~MT: Прощайте. Постарайтесь тут ничего не сломать.~ /*Farewell. Wish me luck.*/
-@63 = ~Greetings. Have you changed your mind about attempting to close the portal?~
-@64 = ~Hello, again. Have you managed to kill the imp and close the portal?~
+@63 = ~Greetings. Have you changed your mind about attempting to close the portal?~ [WANEV054]
+@64 = ~Hello, again. Have you managed to kill the imp and close the portal?~ [WANEV055]
 @65 = ~I haven't closed the portal yet.~
 @66 = ~What was I supposed to do again?~
 @67 = ~The portal has been closed.~

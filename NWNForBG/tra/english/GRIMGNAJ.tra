@@ -1,4 +1,4 @@
-@0 = ~Is there something you want?~
+@0 = ~Is there something you want?~ [GRIMGN50]
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~Conversation is one way to pass the time until the Silent Lord comes to claim us. What do you wish to speak about.~
@@ -256,7 +256,7 @@
 @255 = ~MT: Эти горы находятся далеко к западу от Колодца Беорунна, за холмами, которые населены великанами. В дни, когда там жил мой клан, великаны ничего не значили; мы часто высылали воинов, которые сокращали их численность и гнали их до самых пещер, в которых они жили. Но после того как мой клан ушел, я слышал, что великаны стали сильны и могущественны.~ /*In the days of my clan the giants were of little consequence; we often sent warriors to thin their numbers and chase them from their caves. Since my clan left, however, I have heard the giants have grown powerful and bold.*/
 @256 = ~MT: Я даже слышал, что у великанов холмов появился король, только не могу сказать, верны ли эти слухи. Нам следовало бы исследовать этот район, чтобы знать наверняка. Это все, что я знаю, больше мне нечего сказать.~ /*I have even heard talk of a hill giant king, though I cannot say if the rumors are true. We would have to investigate the region to be certain.*/
 @257 = ~MT: Ты пренебрежительно отнесся к важным для меня вещям, я не хочу больше об этом говорить.~ /*Let us return to the topic of your mission, and speak of this no more.*/
-@258 = ~<CHARNAME>, there is something I must tell you, something I would say now, before the Silent Lord claims me and forever stills my breath.~
+@258 = ~<CHARNAME>, there is something I must tell you, something I would say now, before the Silent Lord claims me and forever stills my breath.~ [Grimsay]
 @259 = ~MT: Слушаю, Гримгнау, в чем дело?~ /*Yes, Grimgnaw - what is it?*/
 @260 = ~MT: Не сейчас, Гримгнау! У меня, знаешь ли, нет времени!~ /*Not now, Grimgnaw! I'm kind of busy here!*/
 @261 = ~MT: Близится время великой бойни, пышный пир кровопролития и смерти ожидает Безмолвного Лорда. Но прежде чем мой господин начнет свою трапезу, мне нужно кое-что сообщить тебе. Вся моя жизнь была посвящена поклонению и службе Безмолвному Лорду, <CHARNAME>. Я существую лишь затем, чтобы отправлять других в руки моего господина. Я орудие Смерти.~ /*A great slaughter is coming, a magnificent feast of bloodshed and death has been laid before the Silent Lord. But before my master gorges himself, there is something you must hear.*/

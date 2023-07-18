@@ -1,4 +1,4 @@
-@0 = ~I bid you welcome, dwarf, for I see you are not of the clan that hunts us and destroys our trees. I am Arwyl, leader of the dryads.~
+@0 = ~I bid you welcome, dwarf, for I see you are not of the clan that hunts us and destroys our trees. I am Arwyl, leader of the dryads.~ [ARWYL055]
 @1 = ~MT: Зачем вы искали меня, <RACE>? Вы хотите о чем-то просить меня?~ /*For what reason have you sought me out, <PRO_RACE> one? Is there some boon you would ask of me?*/
 @2 = ~MT: Почему дварфы воюют с вами?~ /*Why are the dryads at war with you?*/
 @3 = ~What do you make of this amulet?~
@@ -34,5 +34,5 @@
 @33 = ~I'm sorry, the vision is gone. It... it as if some great spell has stripped the memories from my mind. I can tell you nothing more about the amulet or the Master we once served. I'm sorry.~
 @34 = ~Maybe I could free you from this Master.~
 @35 = ~MT: Мы мечтаем только о смерти, как о единственном освобождении. Возможно, если вы убьете Повелителя, мы сможем примириться... но возможно также, что Повелитель уже мертв. Даже сейчас я не могу вспомнить... Магия слишком сильна. Мне очень жаль, но воспоминания, вызванные амулетом, исчезли. Я даже не могу вспомнить лицо Повелителя. Больше я ничего не могу сказать вам.~ /*The only release we seek is death. Perhaps, if you could slay the Master we could find peace... but it may be the Master is already dead. Even now I cannot remember...*/
-@36 = ~MT: Я Арвил, правительница дриад. Добро пожаловать, <RACE>. Ваша любезность поражает нас. Мы привыкли к дварфам, а они атакуют нас, как только видят.~ /*I am Arwyl, leader of the dryads. I bid you welcome, <PRO_RACE> one. Your kind is strange to us - we are used to seeing only the dwarves who attack us on sight.*/
-@37 = ~I bid you welcome once again, <PRO_RACE> friend.~
+@36 = ~MT: Я Арвил, правительница дриад. Добро пожаловать, <RACE>. Ваша любезность поражает нас. Мы привыкли к дварфам, а они атакуют нас, как только видят.~ [ARWYL056] /*I am Arwyl, leader of the dryads. I bid you welcome, <PRO_RACE> one. Your kind is strange to us - we are used to seeing only the dwarves who attack us on sight.*/
+@37 = ~I bid you welcome once again, <PRO_RACE> friend.~ [ARWYL054]

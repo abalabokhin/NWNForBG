@@ -7,4 +7,4 @@
 @6 = ~MT: Прочитать заклинание "Стук".~ /*Cast Chain Lightning.*/
 @7 = ~MT: Шкаф отодвигается в сторону, перед вами окрывается проход с лестницей.~ /*Something about the waterfall in front of you seems quite unreal.*/
 @8 = ~Nothing happens.~
-@9 = ~Nothing happens.~
+@9 = ~Nothing happens.~ [EFF_M56]

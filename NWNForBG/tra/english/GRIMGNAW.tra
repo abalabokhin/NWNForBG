@@ -1,4 +1,4 @@
-@0 = ~MT: Я тебя знаю. Тебя наняла Арибет для поиска уотердипских созданий.~ /*We're under attack! We have to protect the Waterdhavian creatures!*/
+@0 = ~MT: Я тебя знаю. Тебя наняла Арибет для поиска уотердипских созданий.~ [GRIMGN51] /*We're under attack! We have to protect the Waterdhavian creatures!*/
 @1 = ~MT: Кто ты такой? Откуда ты знаешь о моем задании?~ /*Who are you? How do you know about the Academy?*/
 @2 = ~MT: Сейчас мне не до разговоров. До свидания.~ /*I don't feel like talking right now. Goodbye.*/
 @3 = ~MT: Я Гримгнау, священник из Ордена Затяжной Смерти. Этот жуткий случай в Академии не есть большой секрет, <CHARNAME>. Не для тех, кто целенаправленно ищет подобные вещи.~ /*I am Grimgnaw, a monk of the Order of the Long Death. The grisly account of the Academy is no great secret, <CHARNAME>. Not to those who seek such things out.*/
@@ -25,11 +25,11 @@
 @24 = ~MT: Я предвижу в твоем будущем жестокую и беспощадную бойню, <CHARNAME>. Хорошо, я присоединюсь к тебе за 650. Мои руки будут нести смерть твоим врагам, и все мои умения готовы к твоим приказаниям. ~ /*I foresee a future of brutal, savage slaughter at your side, <CHARNAME>. Very well, I will join you for 150.*/
 @25 = ~There are many who can offer me the chance to revel in the joys of killing and death - and they will pay far more for my services. My offer stands at 150.~
 @26 = ~Then I am afraid we cannot work together, though I have no doubt you will be an instrument of destruction and an agent of Death even without me at your side.~
-@27 = ~You are back, <CHARNAME>. The blood from those slaughtered at the Academy may be washed away, but I still recognize the mark of Death upon you.~
+@27 = ~You are back, <CHARNAME>. The blood from those slaughtered at the Academy may be washed away, but I still recognize the mark of Death upon you.~ [GRIMGN52]
 @28 = ~Who are you? How do you know about the Academy?~
 @29 = ~I want to ask you some questions about Neverwinter.~
 @30 = ~MT: Я немногое могу рассказать тебе про город. Я пришел сюда, ожидая увидеть чистоту страданий и прекрасную агонию смерти. Вместо этого я обнаружил чуму, которая является отвратительной неестественностью. Она отнимает у Смерти ее праведную долю и не дает своим жертвам познать объятия Безмолвного Лорда. Пока что мне не удалось обнаружить ответов, которые могли бы помочь прекратить эту эпидемию, но я собираюсь поискать в Гнезде Нищих.~ /*Instead I discovered the plague is a foul abomination. It robs Death of its rightful claim and denies its victims the cold embrace of the Silent Lord.*/
-@31 = ~We meet again, <CHARNAME>. I taste a storm of slaughter on the air; I'm not surprised to find you here at the center of the whirlwind.~
+@31 = ~We meet again, <CHARNAME>. I taste a storm of slaughter on the air; I'm not surprised to find you here at the center of the whirlwind.~ [GRIMGN53]
 @32 = ~MT: Что ты здесь делаешь, Гримгнау?~ /*What are you doing here, Boddyknock?*/
 @33 = ~You again? Are you following me like some kind of pathetic lost puppy?~
 @34 = ~Goodbye.~
@@ -49,7 +49,7 @@
 @48 = ~Then together we shall sow death and destruction throughout the land in our quest to destroy those behind the Wailing Death.~
 @49 = ~MT: Этот городок изолирован от остального мира, далеко к югу от Порт-Лласта. Немногие, не состоящие в моем ордене, вообще могут припомнить, что такое место вообще существует. Чарвуд - странное место; на нем есть пятно испорченности, которое мы, члены Ордена, чувствуем. Никто из посланных на юг для исследования Чарвуда эмиссаров Ордена не вернулся.~ /*The town is a strange place; there is a foul taint upon it that we of the Long Death can feel. None of the emissaries my Order has sent south to investigate Charwood has ever returned.*/
 @50 = ~It would not surprisie me to discover links to the cult behind the Wailing Death in that unnatural place. Is there more I can do for you, <CHARNAME>?~
-@51 = ~MT: О, и вновь мы встретились, <CHARNAME>. Это я, Гримгнау из Ордена Затяжной Смерти. Ты, конечно же, помнишь меня. Я с нетерпением буду ожидать своего шанса, чтобы совершить отмщение над теми сектантами, которые ответственны за распространение чумы в Невервинтере.~ /*I have been eagerly waiting for my chance to extract vengeance on the cult responsible for unleashing the plague on Neverwinter.*/
+@51 = ~MT: О, и вновь мы встретились, <CHARNAME>. Это я, Гримгнау из Ордена Затяжной Смерти. Ты, конечно же, помнишь меня. Я с нетерпением буду ожидать своего шанса, чтобы совершить отмщение над теми сектантами, которые ответственны за распространение чумы в Невервинтере.~ [GRIMGN55] /*I have been eagerly waiting for my chance to extract vengeance on the cult responsible for unleashing the plague on Neverwinter.*/
 @52 = ~So you're working for Aribeth?~
 @53 = ~Have you heard any rumors about the cult since you've come here?~
 @54 = ~If you're so interested in vengeance, why are you standing around here?~
@@ -58,7 +58,7 @@
 @57 = ~The mark of Death is upon you. If we join together we shall unleash a storm of devastation to ravage the North and feed the eternal hunger of the Silent Lord.~
 @58 = ~I guess I could use a homicidal monk at my side. You're in.~
 @59 = ~Sorry, but I'm not interested. Goodbye.~
-@60 = ~MT: Я тебя знаю. Ты <CHARNAME>, ты вышел с заваленных трупами улиц Невервинтера и спас город от ужасов Воющей Смерти.~ /*I know you. You are <CHARNAME>, the one who emerged from the corpse clogged streets of Neverwinter to save the city from the horrors of the Wailing Death.*/
+@60 = ~MT: Я тебя знаю. Ты <CHARNAME>, ты вышел с заваленных трупами улиц Невервинтера и спас город от ужасов Воющей Смерти.~ [GRIMGN54] /*I know you. You are <CHARNAME>, the one who emerged from the corpse clogged streets of Neverwinter to save the city from the horrors of the Wailing Death.*/
 @61 = ~MT: Ну, это не только моя заслуга. Арибет и другие городские стражи сделали не меньше.~ /*Well, I wasn't acting alone. Aribeth and the other city guard did as much as I.*/
 @62 = ~Yes, that would be me.~
 @63 = ~Others may have been involved, but I know the truth of things. I see the mark of the Silent Lord upon you.~

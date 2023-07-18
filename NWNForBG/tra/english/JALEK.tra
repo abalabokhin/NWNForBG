@@ -1,4 +1,4 @@
-@0 = ~Well, more nosey little people in my business. You want to try your luck? Drink for drink? Earn my respect?!~
+@0 = ~Well, more nosey little people in my business. You want to try your luck? Drink for drink? Earn my respect?!~ [JALEK51]
 @1 = ~I'll match you drink for drink, no problem!~
 @2 = ~I'm just looking for information. I'll gladly pay.~
 @3 = ~I'll pass. I'm not looking for trouble.~
@@ -33,16 +33,16 @@
 @32 = ~Son of a...~
 @33 = ~Heh... I knew you couldn't... uh...~
 @34 = ~MT: Что такого в "Скуррде"? Действительно, что. "Скуррд"... просто действует на то... чему может принести больший вред. Коварнейшая дрянь. Его нельзя давать нюхать старикам... нельзя давать в руки детям... Это "Скуррд", и горе тому, кто рискнет попробовать его на вкус.~ /*What is in Scurrd? What, indeed. Scurrd... just seems to find its way... to where it can do the most harm. It's truly vicious.*/
-@35 = ~Who are you, fool? Don't you know not to go bothering a Bloodsailor while he's drinking?~
-@36 = ~Hmm... do I know you? You wear the uniform, but I don't recognize your face. How long you been a Bloodsailor, <PRO_GIRLBOY>?~
-@37 = ~MT: [Ложь] Недавно. Мне удалось заменить жертву чумы.~ /*Not long. I replaced a plague victim.*/
+@35 = ~Who are you, fool? Don't you know not to go bothering a Bloodsailor while he's drinking?~ [JALEK53]
+@36 = ~Hmm... do I know you? You wear the uniform, but I don't recognize your face. How long you been a Bloodsailor, <PRO_GIRLBOY>?~ [JALEK52]
+@37 = ~MT: [Ложь] Недавно. Мне удалось заменить жертву чумы.~ [Ложь] /*Not long. I replaced a plague victim.*/
 @38 = ~I'm just looking for information. That's all.~
 @39 = ~I'm no Bloodsailor. I'm acting as a city guard.~
 @40 = ~MT: Что ж, хорошо, полагаю, ты неплохой человек... хватит ли у тебя силенок, вот что интересно. Хочешь сразиться в выпивке? Можешь заслужить мое уважение!~ /*All right then, I suppose you are okay... but do you have what it takes, I wonder?*/
 @41 = ~MT: Нет, не думаю. Мне кажется, передо мной стоит проходимец, который только хочет к нам присоединиться. Думаешь, ты соответствуешь нашим стандартам?! Хочешь сразиться в выпивке? Можешь заслужить мое уважение!~ /*No, I don't think so. I think you're just some thug who hopes to join up. Are you up to our standards?!*/
 @42 = ~So should you be in that uniform or not? I don't think you're up to our standards, not unless you match me drink for drink! Up for it?~
 @43 = ~You are in the wrong neighborhood. City officials ain't popular with us. Unless you prove your worth drink for drink! Up for it?~
-@44 = ~Damnedest thing I ever saw. You are okay with me and Christov. You bet.~
+@44 = ~Damnedest thing I ever saw. You are okay with me and Christov. You bet.~ [JALEK54]
 @45 = ~I had some questions.~
 @46 = ~MT: Спасибо за ваше такое важное одобрение.~ /*Thanks for your oh so important approval.*/
 @47 = ~Goodbye.~
@@ -60,4 +60,4 @@
 @59 = ~Don't know. He's late, I think. Callik went to talk to him, or something. He didn't look pleased.~
 @60 = ~Who is Callik?~
 @61 = ~Callik is the second in command of the Bloodsailors. He's not as friendly as Vengaul. Yeah, that's for certain.~
-@62 = ~Party is pretty much over in here. Not much point in sticking around.~
+@62 = ~Party is pretty much over in here. Not much point in sticking around.~ [JALEK50]

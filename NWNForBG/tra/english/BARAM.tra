@@ -1,4 +1,4 @@
-@0 = ~MT: Хорошо, что тебе в голову пришло поговорить со мной. Мое имя Барам, единственный настоящий Высший Капитан Лускана. Уж извини, что я говорю с тобой при помощи иллюзии...~ /*It's good that ye've decided t' speak with me. Me name be Baram, the one an' only true High Captain of Luskan. Ye'll have t' excuse me fer speaking to ye through an illusion... the way ye've cut through me men, one can't be too careful.*/
+@0 = ~MT: Хорошо, что тебе в голову пришло поговорить со мной. Мое имя Барам, единственный настоящий Высший Капитан Лускана. Уж извини, что я говорю с тобой при помощи иллюзии...~ [BARAM55] /*It's good that ye've decided t' speak with me. Me name be Baram, the one an' only true High Captain of Luskan. Ye'll have t' excuse me fer speaking to ye through an illusion... the way ye've cut through me men, one can't be too careful.*/
 @1 = ~Ye're good, I'll grant ye that. As a matter o' fact, ye're good enough that I'd be willing t' offer ye a sweet l'il reward should ye care to take care of Kurth for me... that *other* High Captain.~
 @2 = ~What kind of reward?~
 @3 = ~Kurth is already dead, actually.~
@@ -89,10 +89,10 @@
 @86 = ~Hmmm... aye, aye I can do that. If ye really care about them brats, I'll release 'em to ye once ye bring me Kurth's head, no sooner.~
 @87 = ~Heh heh... that be for me t' know, an' for everyone else t' find out. When it's time.~
 @88 = ~MT: Нет закончено. Только сунься на мою базу, и ты об этом пожалеешь, уверяю тебя. А теперь вали... У меня есть свои планы.~ /*It be over an' then some. Take one step into me base, an' ye'll be mighty sorry fer it, I assure ye. Now run along... I have plans t' make.*/
-@89 = ~So ye've come back, have ye? Changed yer mind about me offer?~
-@90 = ~I have a feelin' that it be my lucky day. How about it? Have ye good news?~
+@89 = ~So ye've come back, have ye? Changed yer mind about me offer?~ [BARAM54]
+@90 = ~I have a feelin' that it be my lucky day. How about it? Have ye good news?~ [BARAM53]
 @91 = ~I do. Kurth is dead.~
 @92 = ~MT: Да, я так и думал. Тебе постоянно хочется играть в хитреца, да? Не думай, что я не заметил. Тогда делай, что хочешь. Но помни: стоит тебе перешагнуть порог этой двери, ты подохнешь, и охнуть не успеешь!~ /*Do as ye like, then. Know this, however: ye take one step past this door an' ye'll be dead before ye know it.*/
 @93 = ~MT: Да! Ха-ха! Принеси мне голову этой свиньи! Жду не дождусь, когда смогу вдоволь над ней посмеяться, ха-ха! И я вот чего тебе скажу: решишь пробраться дальше на мою базу, я подумаю, что ты меня обманываешь и приму меры, ясно? Я за тобой наблюдаю...~ /*But let me tell ye this: if ye tries t' come into me base any further, I'll consider it a double-cross an' treat ye as such, aye? I'll be watching ye...*/
 @94 = ~MT: Курт мертв.~ /*I do. Kurth is dead.*/
-@95 = ~There be nothin' fer us t' discuss! Take one step into me base an' ye'll be more'n a little sorry, I assure ye.~
+@95 = ~There be nothin' fer us t' discuss! Take one step into me base an' ye'll be more'n a little sorry, I assure ye.~ [BARAM51]

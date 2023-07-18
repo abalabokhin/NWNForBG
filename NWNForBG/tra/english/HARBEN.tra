@@ -1,4 +1,4 @@
-@0 = ~Well then, what would a person of your manners be doing here? I've only a minute, so your introduction must be quick. Too much to do.~
+@0 = ~Well then, what would a person of your manners be doing here? I've only a minute, so your introduction must be quick. Too much to do.~ [HARBEN50]
 @1 = ~<CHARNAME> is my name. I'm helping Aribeth.~
 @2 = ~What is my name to you? Why should I tell you?~
 @3 = ~I've no time to speak right now. Farewell.~
@@ -43,15 +43,15 @@
 @38 = ~Seach that estate top to bottom. This Gulnan creature had to contact them somehow, and it wasn't by knocking on the door.~
 @39 = ~Is the creature justified? Neverwinter would've used it in a spell.~
 @40 = ~MT: Не стоит об этом сожалеть. Конечно, некоторые создания были несколько... чувствительнее остальных... но это далеко не все. Заклинание излечения от мора не должно быть смертельным, и говорят, некоторые из этих существ пришли по своей воле, из милосердия. Конечно, ходят слухи, что одно из них было заточено в Уотердипе, и возможно, путешествие для него стало шансом сбежать. Но больше мне ничего об этом не известно.~ /*Of course, rumors say one was imprisoned in Waterdeep, and probably saw the trip as a chance to escape. Don't know any more than that, though.*/
-@41 = ~Who might you be, then? Speak up, speak up, I can't spend much time on pleasantries right now. Too much to do.~
-@42 = ~What manner of malcontent are you? Say who you are and why I should bother with you. I've got a lot to worry about right now.~
-@43 = ~Back again, hmm? Need a recap?~
+@41 = ~Who might you be, then? Speak up, speak up, I can't spend much time on pleasantries right now. Too much to do.~ [HARBEN51]
+@42 = ~What manner of malcontent are you? Say who you are and why I should bother with you. I've got a lot to worry about right now.~ [HARBEN52]
+@43 = ~Back again, hmm? Need a recap?~ [HARBEN53]
 @44 = ~Have you had any updates? Any new information?~
 @45 = ~Not as such. We're still up to our armpits in dead things. You find anything out, let me know.~
 @46 = ~Tell me about this Snake Cult.~
 @47 = ~MT: Кажется, Дрол, лидер «Парней с побережья Мечей», превратился в какую-то могущественную нежить. Убил всех своих соперников... даже некоторых членов своей банды. Нечто по имени Гулнан стоит за всем этим... Гулнан... Откуда мне знакомо это имя... О боже. Оно было написано на одном из ящиков, которые пришли из Уотердипа. Должно быть, это одно из тамошних тварей. Во имя бездны, что мы такое могли принести, что вызывало бы такую суматоху? Я расспрошу об этом, когда откроют замок Невера, непременно!~ /*Seems Drawl, the leader of the Sword Coast Boys, has become a powerful undead. Killed his rivals... some of his own gang too. Something named Gulnan was behind it...*/
 @48 = ~You'd better check the Sword Coast Boys' warehouse in the Beggar's Nest north central. This Gulnan contacted Drawl somehow, and not by walking the streets openly.~
-@49 = ~Now, who might you be, then? I don't have a lot of time to talk. We're busy with clean up now that the zombie threat seems to be over.~
+@49 = ~Now, who might you be, then? I don't have a lot of time to talk. We're busy with clean up now that the zombie threat seems to be over.~ [HARBEN55]
 @50 = ~Who are you?~
 @51 = ~I found the Waterdhavian Yuan-Ti creature. It raised the zombies.~
 @52 = ~I killed the creature that caused the undead.~
@@ -76,4 +76,4 @@
 @69 = ~I don't think that would be very fair. I've paid what I can and there's not much more.~
 @70 = ~MT: Ну, знаете, я МОГУ это сделать, но у нас с Дрейком есть кое-что против забияк. Они нам не нравятся. Нам не хватало людей, и вы нам помогли. Вы получили свою долю, а теперь вам пора уходить.~ /*Well, you know, I WOULD do that, but there's this thing me and Drake have about bullies. We don't appreciate 'em.*/
 @71 = ~Thank you. Be safe out there.~
-@72 = ~MT: Мы знали, что вы поможете нам, клянусь бакенбардами Вилликера. До нас дошли слухи о ваших подвигах, и мы знали, что вы сможете решить нашу проблему. Если вы в этой суматохе нашли что-нибудь стоящее, сообщите об этом Арибет. Она ведет записи по этому поводу, или что-то в этом роде.~ /*I knew you'd help us, by Whilliker's whiskers. I heard about what you did before, and knew you'd take care of business.*/
+@72 = ~MT: Мы знали, что вы поможете нам, клянусь бакенбардами Вилликера. До нас дошли слухи о ваших подвигах, и мы знали, что вы сможете решить нашу проблему. Если вы в этой суматохе нашли что-нибудь стоящее, сообщите об этом Арибет. Она ведет записи по этому поводу, или что-то в этом роде.~ [HARBEN56] /*I knew you'd help us, by Whilliker's whiskers. I heard about what you did before, and knew you'd take care of business.*/

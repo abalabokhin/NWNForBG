@@ -1,4 +1,4 @@
-@0 = ~Why, hullo there! You have the smell of a prospective employer about you, m'<PRO_LADYLORD>. Not that it's easy to smell anything with all the burning corpses in this city, mind you. Never seen this many flies outside of a Calimshite alehouse.~
+@0 = ~Why, hullo there! You have the smell of a prospective employer about you, m'<PRO_LADYLORD>. Not that it's easy to smell anything with all the burning corpses in this city, mind you. Never seen this many flies outside of a Calimshite alehouse.~ [TOMI051]
 @1 = ~Who are you?~
 @2 = ~That's a horrible thing to say!~
 @3 = ~Aren't you frightened of the plague?~
@@ -53,12 +53,12 @@
 @52 = ~Do I look like I just got off the last boat from the Moonshaes? I know how dangerous you adventurous types are. 200 or no love from Tomi!~
 @53 = ~You were expecting me to work for free? What do I look like? An elf?! Pfffft! Come back when you find a few coins.~
 @54 = ~Well, fine. Tomi Undergallows has better things to do. I'm sure someone will hire me any day now.~
-@55 = ~So you've come back, m'<PRO_LADYLORD>! Looking for a short lad to tickle your feet? Or did ya change your mind about needing a rogue at your side?~
+@55 = ~So you've come back, m'<PRO_LADYLORD>! Looking for a short lad to tickle your feet? Or did ya change your mind about needing a rogue at your side?~ [TOMI052]
 @56 = ~MT: Ты все еще здесь?~ /*She still here?*/
 @57 = ~I want to ask you some questions.~
 @58 = ~MT: Ну, пока что меня не вытурили отсюда, так что я так думаю, мне тут рады. А что? У тебя есть другие предложения?~ /*Well, the priests haven't kicked me out, yet, so I figures I'm welcome. Why? You got someplace better for me to be?*/
 @59 = ~MT: Вопросы, э? Откровенно говоря, я не совсем чтобы такой уж старожил Невервинтера. Пытался тут установить кое-какие контакты с людьми, но они все *дохли* как мухи. Ну не обида, а? Однако я мало что знаю о районе Полуострова. Впечатление было мимолетное, учитывая, с каким свистом я летел мимо - но чего еще ожидать от беглого заключенного?~ /*Questions, eh? To be honest, I'm not that big on Neverwinter just yet. I was trying to make some contacts earlier, but they just kept *dying*. How annoying is that?*/
-@60 = ~Well, now, if it isn't <CHARNAME>! Glad I am to see you! Isn't the country wonderful this time of year? So much better than the city with all that... umm... burning and dying. You know.~
+@60 = ~Well, now, if it isn't <CHARNAME>! Glad I am to see you! Isn't the country wonderful this time of year? So much better than the city with all that... umm... burning and dying. You know.~ [TOMI053]
 @61 = ~I'm surprised to see you here, Tomi.~
 @62 = ~You again? Are you following me around?~
 @63 = ~MT: Ага, ну а чего ты хочешь от полурослика? Куда деньги, туда и я. После того, как наши пути разошлись, мамзель Арибет там подошла ко мне и отвалила кучу денег за то, чтобы я подписался на эту ее увеселительную прогулку. Мы все должны помогать с поисками. Похоже, лорд Нашер хочет извести всех этих сектантов, что завязали свару. Вот и молодец, по-моему! Просто-таки живое доказательство того, что не всех стариков надо убивать за бесполезность, правда?~ /*Seems like Lord Nasher wants to get rid of all the cultists who started this fight. I say good for him! Just goes to show that not all old people are useless and should be killed, you know?*/
@@ -76,7 +76,7 @@
 @75 = ~Well, isn't it a coincidence that I happen to be a good rogue? Fine... this one-rabbit town was beginning to bore me, anyway.~
 @76 = ~Besides a bath? Suit yourself, m'<PRO_LADYLORD>.~
 @77 = ~MT: Ага, ну... В этом городе завались ворья и пиратов... да там кому угодно рады, лишь бы не белому и пушистому, точно т'е говорю. Сам там был пару раз. Где ж лягушонку прятаться, как не среди жаб? Не то чтобы у меня были какие доказательства или что...~ /*Oh, aye. The city has pirates and thieves galore... anyone with any kind of bad reputation is more than welcome there, I assure you. Been there a few times, myself.*/
-@78 = ~MT: Здорово, <LADYLORD>! Что, никак жить не можешь без Томи Висельника, а? Эта работа на мамзель Арибет... все эти поиски культовых парней... пока что проходят очень весело. Ничего не надо делать, кроме как пялиться на всяких подозрительных личностей.~ /*This job of Miss Aribeth's... looking for them cult fellows... it's been pretty sweet so far. Haven't had to do much 'cept stare at people all suspicious-like.*/
+@78 = ~MT: Здорово, <LADYLORD>! Что, никак жить не можешь без Томи Висельника, а? Эта работа на мамзель Арибет... все эти поиски культовых парней... пока что проходят очень весело. Ничего не надо делать, кроме как пялиться на всяких подозрительных личностей.~ [TOMI055] /*This job of Miss Aribeth's... looking for them cult fellows... it's been pretty sweet so far. Haven't had to do much 'cept stare at people all suspicious-like.*/
 @79 = ~So you're working for Aribeth?~
 @80 = ~Have you heard any rumors about the cult since you've come here?~
 @81 = ~Do you intend to just sit around here, then?~
@@ -85,7 +85,7 @@
 @84 = ~I wouldn't mind an extra body. You're in.~
 @85 = ~Sorry, but I'm not interested. Goodbye.~
 @86 = ~All righty, then, m'<PRO_LADYLORD>... I'm all yours. If ya need me to do something other than what I'm doing, just give me a shout.~
-@87 = ~Hullo there! <CHARNAME>, isn't it? Wow... the savior of Neverwinter! Would you sign my napkin? It's a bit greasy... and mind the chicken...~
+@87 = ~Hullo there! <CHARNAME>, isn't it? Wow... the savior of Neverwinter! Would you sign my napkin? It's a bit greasy... and mind the chicken...~ [TOMI054]
 @88 = ~Well, I wasn't acting alone.~
 @89 = ~Yes, that would be me.~
 @90 = ~Modesty, eh? How's that working out for ya? If I were you, I'd take advantage of the notoriety while you have it. Three months from now they'll turn you away from the door at McBarnaby's, saying "<CHARNAME> who?"~

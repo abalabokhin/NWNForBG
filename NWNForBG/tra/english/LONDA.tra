@@ -1,4 +1,4 @@
-@0 = ~I beg you to leave me be, my <PRO_LADYLORD>. I have nothing to say and nothing left to steal, I assure you.~
+@0 = ~I beg you to leave me be, my <PRO_LADYLORD>. I have nothing to say and nothing left to steal, I assure you.~ [LONDA54]
 @1 = ~Who are you?~
 @2 = ~I have some questions.~
 @3 = ~MT: Что с тобой случилось?~ /*What happened here?*/
@@ -48,11 +48,11 @@
 @47 = ~Aye. The other High Captains who he has fought with these long weeks. Only Kurth remains... but no one is sure where he is. Kurth would want Baram dead, it is certain.~
 @48 = ~You have given me a glimmer of hope. I... I wish you the best of luck.~
 @49 = ~Londa, a world-weary woman staying at Luskan's Cutlass Inn, has lost all nine of her children to Baram, one of the city's vicious High Captains. She is hesitant to think of what cruelty they have suffered at his hands and longs only to hear news of them and have them returned safely to her side.~
-@50 = ~You have heard my sorry tale, <PRO_SIRMAAM>. Is that not enough?~
-@51 = ~You... return. Have you found my children? Are they safe?~
+@50 = ~You have heard my sorry tale, <PRO_SIRMAAM>. Is that not enough?~ [LONDA52]
+@51 = ~You... return. Have you found my children? Are they safe?~ [LONDA51]
 @52 = ~I have spoken to Baram... He says your children are safe.~
 @53 = ~Baram has reneged on his deal. He will not release your children.~
-@54 = ~Your children are fine, Londa... but I can't bring them to you.~
+@54 = ~Your children are fine, Londa... but I can't bring them to you.~ [Ложь]
 @55 = ~I am sorry, Londa. All your children are dead...~
 @56 = ~They're dead, actually. Baram and his rats ate them.~
 @57 = ~MT: Пока результатов нет.~ /*Not yet, no.*/

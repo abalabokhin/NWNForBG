@@ -1,4 +1,4 @@
-@0 = ~MT: Да, <SIRMAAM>. Тебе что-нибудь нужно?~ /*Yes, <PRO_SIRMAAM>. Is there something you need?*/
+@0 = ~MT: Да, <SIRMAAM>. Тебе что-нибудь нужно?~ [DAELAN50] /*Yes, <PRO_SIRMAAM>. Is there something you need?*/
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~My strength is in weapons not words, <CHARNAME>.~
@@ -196,7 +196,7 @@
 @195 = ~I don't have any more questions.~
 @196 = ~MT: Я лишь раз видел предводителя племени Лося, это великий вождь по имени Зокан Громовержец. Он произвел на меня впечатление благородного и честного человека - истинного утгардта. Мы, утгардты, воины, а не дикари. Не в наших правилах устраивать резню поселенцев и развязывать войну с Фортом Илкард без серьезной причины.~ /*I have only met the leader of the Elk Tribe once, a great chieftain named Zokan Thunderer. He struck me as a noble and honorable man - a true Uthgardt.*/
 @197 = ~There is something strange behind the Elk tribe's alliance with Luskan. The only way you will solve this mystery, <CHARNAME>, is by going to Fort Ilkard.~
-@198 = ~<CHARNAME>, I have something I wish to say, and I fear if I do not say it now I may never again have the chance.~
+@198 = ~<CHARNAME>, I have something I wish to say, and I fear if I do not say it now I may never again have the chance.~ [DAELAN70]
 @199 = ~Yes, Daelan - what is it?~
 @200 = ~Not now, Daelan! I'm kind of busy here!~
 @201 = ~MT: Все предельно ясно. Нас ожидает великая битва с врагом, которого, возможно, мы не сможем победить. И если я хочу принять свою смерть с честью, прежде мне нужно тебе кое-что сказать. Я родился среди Красных Тигров, но покинул свое племя, чтобы проявить себя, чтобы доказать, что внутри меня жил дух Утгардта. Я ушел заслужить честь и проявить себя героем.~ /*I am born of the Red Tiger but I left my tribe to prove myself worthy; to prove the spirit of the Uthgardt was within me. I left to earn my honor and prove myself a hero.*/

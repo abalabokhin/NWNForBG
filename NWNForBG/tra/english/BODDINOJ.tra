@@ -1,4 +1,4 @@
-@0 = ~Is there something you want?~
+@0 = ~Is there something you want?~ [BODDIN50]
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~I am a staunch proponent of the free exchange of ideas, <CHARNAME>. What is it you wish to know?~
@@ -257,7 +257,7 @@
 @256 = ~They had even constructed a great steading to house the king, and from there they raided the lands to the south. Until Herigo's research we assumed hill giants to be incapable of such high level organization.~
 @257 = ~Anything else?~
 @258 = ~MT: Большая часть исследований Эриго имела научную природу: диета, спаривание, циклы активности, размеры естественной среды обитания и территории. Исследование составлено тщательно, по академическим стандартам, но, боюсь, бесполезно для твоих задач. Боюсь, что  ничего больше не могу тебе сказать, <CHARNAME>. В любом случае, нам лучше продолжить поиск  Слов Власти.~ /*Most of Herigo's research was of a scientific nature - diet, mating habits, activity cycles, habitat and territory range. Academically compelling, but hardly useful in your mission, I'm afraid.*/
-@259 = ~<CHARNAME>, a moment if I may. I have something to say to you, and I'm afraid that if I don't say it now I may not get the chance.~
+@259 = ~<CHARNAME>, a moment if I may. I have something to say to you, and I'm afraid that if I don't say it now I may not get the chance.~ [Boddhi]
 @260 = ~Yes, Boddyknock - what is it?~
 @261 = ~Not now, Boddyknock! I'm kind of busy here!~
 @262 = ~MT: Все указывает на то, что не за горами последняя битва с Мораг, и есть кое-что, что вам необходимо знать. Я покинул свой родной Лантан, чтобы совершать открытия, чтобы испытать все, что мир мог предложить мне. За то время, что мы провели вместе, я повидал чудеса, которых не мог себе и представить, и пережил приключения, в которые до сих пор не могу поверить.~ /*I left my home of Lantan on a journey of discovery, eager to experience all the world had to offer. In our time together I have seen wonders I could not have imagined and experienced adventures I can barely believe myself.*/

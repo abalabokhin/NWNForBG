@@ -1,4 +1,4 @@
-@0 = ~MT: Да, <SIRMAAM>. Тебе что-нибудь нужно?~ /*Yes, <PRO_SIRMAAM>. Is there something you need?*/
+@0 = ~MT: Да, <SIRMAAM>. Тебе что-нибудь нужно?~ [SHARWY50] /*Yes, <PRO_SIRMAAM>. Is there something you need?*/
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~Talk? About what, <CHARNAME>?~
@@ -323,7 +323,7 @@
 @322 = ~Do you know any more about it?~
 @323 = ~I don't have any more questions.~
 @324 = ~MT: Что же, магическая сила в тех краях должна быть невероятной. Там есть монолиты из камня, к которым даже приближаться опасно. Но все это сомнительная информация, я знаю. Единственный способ узнать наверняка, это пойти и лично проверить.~ /*Well, the magic power in the area is supposed to be incredible. There are stone monoliths which are too dangerous even to approach.*/
-@325 = ~So the end draws near, does it? I suppose all tales must end sooner or later. Any regrets, <CHARNAME>?~
+@325 = ~So the end draws near, does it? I suppose all tales must end sooner or later. Any regrets, <CHARNAME>?~ [Sharsay]
 @326 = ~A few, perhaps.~
 @327 = ~No. No regrets.~
 @328 = ~I regret we've never kissed. Does that count?~

@@ -1,4 +1,4 @@
-@0 = ~Good day, ma'am. I am Tanith. I shall endeavor to make your visit to the Moonstone Mask a pleasant one.~
+@0 = ~Good day, ma'am. I am Tanith. I shall endeavor to make your visit to the Moonstone Mask a pleasant one.~ [TANIT54]
 @1 = ~MT: Я буду говорить с вами... И не только говорить.~ /*I would speak with you... and perhaps more.*/
 @2 = ~There's more than talking, right?~
 @3 = ~Whatever, plaything. I'm not here to talk.~
@@ -71,9 +71,9 @@
 @70 = ~MT: Вы выглядите так, словно вы умело обращаетесь с оружием. Такая тяга к сражениям может отпугнуть ваших друзей. Я могу заполнить эту пустоту, если хотите. Я здесь для этого, да и вы, наверное, тоже.~ /*For instance, you look like someone familiar in the use of weapons. That affinity for battle can keep companions at a distance sometimes.*/
 @71 = ~This talk is over. Get out before I call the guards.~
 @72 = ~MT: Конечно, это большой стресс. Так много людей рассчитывают на вас, порой даже не осознавая этого. Это тяжкое бремя. Я не могу помочь вам в ваших делах, <CHARNAME>, но вы можете излить мне душу. Я ничего от вас не ожидаю.~ /*Well, that certainly is a lot of pressure. So many people relying on you, even if they don't know it. That must weigh on your mind.*/
-@73 = ~I am sorry, m'lord, but my company is open to the ladies alone. You might wish to see if Tamora or Luce are available.~
-@74 = ~I really don't have the heart for this today. I don't need the criticism.~
-@75 = ~I apologize, but I am no longer working and my time is my own. I hope this doesn't inconvenience you.~
+@73 = ~I am sorry, m'lord, but my company is open to the ladies alone. You might wish to see if Tamora or Luce are available.~ [TANIT50]
+@74 = ~I really don't have the heart for this today. I don't need the criticism.~ [TANIT51]
+@75 = ~I apologize, but I am no longer working and my time is my own. I hope this doesn't inconvenience you.~ [TANIT52]
 @76 = ~MT: Ах, <CHARNAME>. Вы хорошо выглядите. Надеюсь, наша встреча оставила у вас приятные воспоминания?~ /*Ah, <CHARNAME>. You are looking well. I trust our encounter has left you with fond memories?*/
 @77 = ~I enjoyed our time together. I hope you did as well.~
 @78 = ~Me like you. Hope you like me a little.~

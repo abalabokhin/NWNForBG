@@ -1,4 +1,4 @@
-@0 = ~I'll be good! Please don't hurt me!~
+@0 = ~I'll be good! Please don't hurt me!~ [SHALD058]
 @1 = ~Shaldrissa, right? I'm <CHARNAME> and your father sent me to rescue you.~
 @2 = ~MT: Шалдрисса, верно? Твой отец прислал нас спасти тебя.~ /*Shaldrissa, right? I'm <CHARNAME> and your father sent me to rescue you.*/
 @3 = ~MT: Я спасу тебя.~ /*I hear you.*/
@@ -19,6 +19,6 @@
 @18 = ~Oh, yes. I want to be back in boring, old Port Llast. I like boring now. I'll never want mystery again.~
 @19 = ~What?! I would never do something like that to my father or to Port Llast! I know I had a bad attitude, <CHARNAME>, but they are still my family and friends. I would never wish them ill.~
 @20 = ~Hmm. Well, you seem sincere, but it's your father's problem now. You can go home to him.~
-@21 = ~I didn't mean for anyone to get hurt! I just want to go home! (sob)~
-@22 = ~I must be going. My father wishes me to stay in our house for awhile. I can't really say I blame him. Goodbye!~
-@23 = ~Home! This town means everything to me! Thank you for saving me, <CHARNAME>. I will never do anything so foolish again!~
+@21 = ~I didn't mean for anyone to get hurt! I just want to go home! (sob)~ [SHALD055]
+@22 = ~I must be going. My father wishes me to stay in our house for awhile. I can't really say I blame him. Goodbye!~ [SHALD060]
+@23 = ~Home! This town means everything to me! Thank you for saving me, <CHARNAME>. I will never do anything so foolish again!~ [SHALD056]

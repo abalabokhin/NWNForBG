@@ -1,4 +1,4 @@
-@0 = ~MT: У-у! Р-р, ты сильнее. Что тебе надо? Рррр! Вот тебе мое горло. Вонзай в него зубы, оно твое...~ /*Rowf! I show my throat to you. Sink your teeth into it, it is yours...*/
+@0 = ~MT: У-у! Р-р, ты сильнее. Что тебе надо? Рррр! Вот тебе мое горло. Вонзай в него зубы, оно твое...~ [WOLFF02] /*Rowf! I show my throat to you. Sink your teeth into it, it is yours...*/
 @1 = ~You talk do you? Then answer my questions!~
 @2 = ~Grovelling won't save your worthless hide! Die, dog!~
 @3 = ~As you wish, manling...~
@@ -26,5 +26,5 @@
 @25 = ~I need you to stop hunting the cattle... and no people, either!~
 @26 = ~Grrrrr! I am no tame and addled pet! I would rather die than follow another manling!~
 @27 = ~Rrrrr... Their flesh is the best I've tasted in many years but I will do as you ask. There are enough deer about for us to live on...~
-@28 = ~MT: Ррррррр... Уходи из моего логова.~ /*Rrrrrrrrr... Who enters my den?*/
+@28 = ~MT: Ррррррр... Уходи из моего логова.~ [WOLFF02] /*Rrrrrrrrr... Who enters my den?*/
 @29 = ~MT: Ну, ладно, уже ухожу.~ /*Nevermind, I'll go.*/

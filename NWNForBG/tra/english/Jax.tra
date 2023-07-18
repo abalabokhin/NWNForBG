@@ -1,4 +1,4 @@
-@0 = ~Help! Attack! What? Who? Er... oh... um... you don't look like... nevermind. Hello <PRO_SIRMAAM>.~
+@0 = ~Help! Attack! What? Who? Er... oh... um... you don't look like... nevermind. Hello <PRO_SIRMAAM>.~ [JAX050]
 @1 = ~You seem rather nervous. What's your name?~
 @2 = ~I don't look like who?~
 @3 = ~My name is Jax. Professor Jax, a famous archeologist don't you know. I am looking for knowledge about some ancient creatures. That's why I came here. Who are you?~
@@ -52,11 +52,11 @@
 Археолог Джакс интересуется древними расами Фейруна, и он считает, что вскоре сможет доказать свою теорию и получить грант, чтобы продолжить свои исследования. Он убежден в том, что под пещерами троллей близ дороги на восток от Порт-Лласта находятся древние руины, поэтому он попросил нас разыскать эти руины и принести ему доказательство того, что они были созданы так называемой "расой созидателей". Это книга "Полная История Руин Созидателей".~ /*Jax, an archeologist with an interest in the earliest races of Faerun, believes he is close to being able to prove his thesis and receive the necessary grant funding to continue his research. Convinced that ancient ruins lurk beneath the troll caves along the road east of Port Llast, he has enlisted the aid of adventurers to discover them and return to him with proof that the ruins were a product of the so-called "creator races." The book will be a Complete History of the Creator Ruins.*/
 @50 = ~MT: Я просто не могу себе этого позволить. Я заплачу вам, только когда вы принесете артефакт. Будьте осторожны, <SIRMAAM>. Это будет очень сложная операция. Удачи вам.~ /*I just can't afford to do that. I can only pay you when you bring the artfiact back.*/
 @51 = ~MT: Будьте осторожны, <SIRMAAM>. Это будет очень сложная операция. Удачи вам.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
-@52 = ~Oh, hello there again. Er... something you needed? I am quite busy with my research, you know.~
+@52 = ~Oh, hello there again. Er... something you needed? I am quite busy with my research, you know.~ [JAX051]
 @53 = ~What's your name again?~
 @54 = ~What kind of research do you do here?~
 @55 = ~Oh. I wouldn't expect someone of your limited... uh... that is, it's always pleasant to see someone interested in my research! Let me tell you about it.~
-@56 = ~You are back already? What can I help you with now?~
+@56 = ~You are back already? What can I help you with now?~ [JAX052]
 @57 = ~What were you looking for again?~
 @58 = ~I want to help you find that book. How much will you pay me?~
 @59 = ~This wouldn't happen to be the book you are looking for, would it?~
@@ -75,12 +75,12 @@
 @72 = ~Oh my, you must have had a rough time. No need to get jumpy. Here is 750 gp. It's all that I have left.~
 @73 = ~All right. 750 gold pieces it is.~
 @74 = ~Wonderful. I can hardly wait to get back to Waterdeep. Those snobs are going to choke when they see this! Good luck <PRO_GIRLBOY>.~
-@75 = ~I am off for Waterdeep. Excuse me.~
+@75 = ~I am off for Waterdeep. Excuse me.~ [JAX055]
 @76 = ~MT: Восточная дорога: Что скрывается внизу?
 
 Археолог Джакс интересуется древними расами Фейруна, и он считает, что вскоре сможет доказать свою теорию и получить грант, чтобы продолжить свои исследования.  Нам удалось пробраться в подземные руины, и найти то самое доказательство, которое требовалось Джаксу, "Полную Историю Руин Созидателей", книгу, которая доказывает, что в этих руинах когда-то обитала таинственная Раса Созидателей. Джакс был очень рад получить эту книгу и наградил нас за помощь.~ /*Jax, an archeologist with an interest in the earliest races of Faerun, believes he is close to being able to prove his thesis and receive the necessary grant funding to continue his research. Convinced that ancient ruins lurk beneath the troll caves along the road east of Port Llast, he has enlisted the aid of adventurers to discover them and return to him with proof that the ruins were a product of the so-called "creator races." The book will be a Complete History of the Creator Ruins.*/
 @77 = ~No! It is of no value to you, but I simply must have it. Please!~
-@78 = ~MT: Ээ... хорошо. Я должен вернуться в Уотердип немедленно. Доброго вам пути. Я уезжаю в Уотердип. Извините меня.~ /*Er... good. I must return to Waterdeep now. Good luck to you.*/
+@78 = ~MT: Ээ... хорошо. Я должен вернуться в Уотердип немедленно. Доброго вам пути. Я уезжаю в Уотердип. Извините меня.~ [JAX055] /*Er... good. I must return to Waterdeep now. Good luck to you.*/
 @79 = ~MT: Погодите! Пожалуйста, <SIRMAAM>! 2000 монет, больше не могу!~ /*Wait! Please, my <PRO_LADYLORD>! 1000 gp, no more!*/
 @80 = ~All right. 750 gold pieces it is.~
 @81 = ~Nope, I'm keeping it.~
@@ -89,7 +89,7 @@
 @84 = ~MT: Восточная дорога: Что скрывается внизу?
 
 Археолог Джакс интересуется древними расами Фейруна, и он считает, что вскоре сможет доказать свою теорию и получить грант, чтобы продолжить свои исследования.  Нам удалось пробраться в подземные руины, и найти то самое доказательство, которое требовалось Джаксу, "Полную Историю Руин Созидателей", книгу, которая доказывает, что в этих руинах когда-то обитала таинственная Раса Созидателей. Джакс был очень недоволен  тем, что мы решили не отдавать ему книгу и в расстроенных чувствах отбыл в Уотердип.~ /*Jax, an archeologist with an interest in the earliest races of Faerun, believes he is close to being able to prove his thesis and receive the necessary grant funding to continue his research. Convinced that ancient ruins lurk beneath the troll caves along the road east of Port Llast, he has enlisted the aid of adventurers to discover them and return to him with proof that the ruins were a product of the so-called "creator races." The book will be a Complete History of the Creator Ruins.*/
-@85 = ~Er... oh, you're already back. What can I do to help you? Any evidence of the tome yet?~
+@85 = ~Er... oh, you're already back. What can I do to help you? Any evidence of the tome yet?~ [JAX053]
 @86 = ~Where did you say you thought that book was?~
 @87 = ~I think I found your book, is this it?~
 @88 = ~No, nothing yet.~

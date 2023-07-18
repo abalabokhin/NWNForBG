@@ -1,4 +1,4 @@
-@0 = ~MT: Добро пожаловать. Я Эльтура Сарптил, и вряд ли вы найдете у кого-то еще такой прекрасный выбор товаров.~ /*Welcome to the shop, as I like to say. I am Eltoora Sarptyl, and not a finer collection of wares are you apt to find.*/
+@0 = ~MT: Добро пожаловать. Я Эльтура Сарптил, и вряд ли вы найдете у кого-то еще такой прекрасный выбор товаров.~ [ELTUR055] /*Welcome to the shop, as I like to say. I am Eltoora Sarptyl, and not a finer collection of wares are you apt to find.*/
 @1 = ~I have one of the tomes you seek.~
 @2 = ~MT: У меня есть все книги, которые вы ищете.~ /*I have one of the tomes you seek.*/
 @3 = ~MT: Какие товары вы продаете?~ /*What kind of wares do you sell here?*/
@@ -71,7 +71,7 @@ Through scrying attempts, she has managed to narrow down the locations of the fi
 @63 = ~MT: О, вот эту восхитительную книгу я с удовольствием просмотрю, полагаю. Вот это меня по-настоящему радует. Теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Oh, this shall be an exciting tome to page through, I would say. This makes me happy indeed. And for you...*/
 @64 = ~MT: Ах, какая исключительная книга. Я всегда думала, что смерть - это такая чудная, недопонятая вещь. Эта книга будет служить украшением моей коллекции. Теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Well, what an exquisite book. I've always thought death was such a beautiful, misunderstood thing. This book shall serve as my center piece.*/
 @65 = ~MT: Так-так, Том Резонанса. Хоть я и надеялась на лучшее, но была уверена, что никогда ее не увижу в своей библиотеке. Выражаю вам свое восхищение - и признательность. Теперь у меня есть все книги и можно поговорить о награде. Я полагаю, вы этим будете вполне довольны. Вот ваши 2000 золотых, и к ним я добавлю магический артефакт. Это очень редкая вещь.~ /*Well, well, the Tome of Resonance. Though I hoped otherwise, I felt certain I would never see it amongst my collection. You have my admiration, and appreciation.*/
-@66 = ~Well, hello. Have you exciting news for me, or is this just a routine visit? Either way, I'm pleased to see you again.~
+@66 = ~Well, hello. Have you exciting news for me, or is this just a routine visit? Either way, I'm pleased to see you again.~ [ELTUR054]
 @67 = ~What would I have exciting news about?~
 @68 = ~Can you remind me about that job?~
 @69 = ~Why, the tomes of course! Have you found any? You do remember agreeing to look for me, don't you? I still remember offering a lot of gold for their return.~

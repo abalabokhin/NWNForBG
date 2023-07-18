@@ -1,4 +1,4 @@
-@0 = ~MT: Душевно приветствую, <SIRMAAM>. В 'Гербе Союза' так редко встречаются новые лица, с которыми можно выпить.~ /*Greetings, my good <PRO_LADYLORD>. It is rare we see new faces come to drink with us at the Alliance Inn.*/
+@0 = ~MT: Душевно приветствую, <SIRMAAM>. В 'Гербе Союза' так редко встречаются новые лица, с которыми можно выпить.~ [AELAI052] /*Greetings, my good <PRO_LADYLORD>. It is rare we see new faces come to drink with us at the Alliance Inn.*/
 @1 = ~You look familiar, somehow...~
 @2 = ~Greetings, Sir. My name is <CHARNAME>.~
 @3 = ~Who are you?~
@@ -71,11 +71,11 @@
 Печально известный искатель приключений Элайт Кролнобер соскучился по Эвермиту, из которого он бежал много лет назад. В настоящее время он с дочерью живет в таверне в Порт-Лласте. Они ищут три драгоценных камня, которые помогут им вернуться домой. К сожалению, эти камни находятся в руках людей, которые не желают просто так с ними расставаться.
 Первый камень находится у местного волшебника по имени Вэйнив. Он живет в своей башне к югу от города. Второй камень принадлежит воину Замитре, которая недавно проходила через Порт-Лласт, направляясь в Лускан. Последний камень является личным сокровищем Сетары, ведьмы из Леса Невервинтера.~ /*The infamous adventurer, Elaith "The Serpent" Craulnober appears to have at last become homesick for the land of Evermeet he fled so long ago. He and his daughter are currently staying at an inn in Port Llast, searching for three gems that will help them make the journey home. Unfortunately, the gems are not in the hands of people interested in parting easily with them.
 The first is in the possession of a local wizard by the name of Wanev. He lives in his tower south of town. The second is held by the warrior Zamithra who recently passed through Port Llast on her way to Luskan. The final gem is the personal treasure of Setara, a witch of the Neverwinter Wood.*/
-@69 = ~I am in the middle of a drink, but please - stay. I will not have it said Elaith Craulnober has become rude in his later years. What can I do for you?~
+@69 = ~I am in the middle of a drink, but please - stay. I will not have it said Elaith Craulnober has become rude in his later years. What can I do for you?~ [AELAI053]
 @70 = ~I have been thinking about your offer...~
 @71 = ~Could I buy some equipment from you?~
 @72 = ~Oh? Have you changed your mind? Will you get the gems that I need?~
-@73 = ~MT: Как поживаете, <SIRMAAM>? Удалось ли вам достать драгоценные камни? Или вам нужно что-то еще?~ /*How do you do, my <PRO_LADYLORD>? Have you had any luck acquiring the gems? Or is there something else you need?*/
+@73 = ~MT: Как поживаете, <SIRMAAM>? Удалось ли вам достать драгоценные камни? Или вам нужно что-то еще?~ [AELAI051] /*How do you do, my <PRO_LADYLORD>? Have you had any luck acquiring the gems? Or is there something else you need?*/
 @74 = ~Tell me who currently has these gems again.~
 @75 = ~I do have one of the gems right here.~
 @76 = ~MT: У меня уже есть все камни.~ /*Me gots other questions.*/

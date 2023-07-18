@@ -1,4 +1,4 @@
-@0 = ~Who are you? You ain't one of them Luskan soldiers, are you? Luce said to stay away from them 'cause they'd hurt me.~
+@0 = ~Who are you? You ain't one of them Luskan soldiers, are you? Luce said to stay away from them 'cause they'd hurt me.~ [LEES053]
 @1 = ~Are you Leesa? Luce's little sister?~
 @2 = ~I won't hurt you, little girl.~
 @3 = ~What do you do around here?~
@@ -17,7 +17,7 @@
 @16 = ~MT: О. Ну ладно, <SIRMAAM>. Похоже, у вас много дел. Надо ведь бороться с этими солдатами и все такое. Если вы увидите Люс, скажите ей, чтобы забрала меня отсюда, ладно?~ /*Oh. That's okay, <PRO_SIRMAAM>. You look real busy. You got to fight them other soldiers and stuff.*/
 @17 = ~MT: Что ж, если вы знаете Люс, значит, все нормально. Ладно, я пойду с вами в "Маску Лунного Камня"! Вы очень добры, дождаться не могу, когда снова увижу Люс!~ /*I guess if you know Luce you're not so bad. Okay, I'll go back to the Moonstone Mask!*/
 @18 = ~MT: Лучше я останусь здесь. Мне слишком страшно из-за этих боев. Если вы увидите Люс, скажите ей, чтобы забрала меня отсюда, ладно?~ /*If you see Luce tell her to come get me, 'kay?*/
-@19 = ~When I get to the Moonstone Mask I'll see Luce again! I sure miss her.~
-@20 = ~I hope she ain't mad 'cause I ran off. I was just scared. I didn't mean to get lost.~
-@21 = ~It's warm in here. Out in the streets it was always cold.~
-@22 = ~We made it! We made it! I'm going to be with my sister Luce!~
+@19 = ~When I get to the Moonstone Mask I'll see Luce again! I sure miss her.~ [LEES051]
+@20 = ~I hope she ain't mad 'cause I ran off. I was just scared. I didn't mean to get lost.~ [LEES052]
+@21 = ~It's warm in here. Out in the streets it was always cold.~ [LEES050]
+@22 = ~We made it! We made it! I'm going to be with my sister Luce!~ [LEES054]

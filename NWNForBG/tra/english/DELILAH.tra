@@ -1,4 +1,4 @@
-@0 = ~You've beaten me. I cannot defeat you, try as I might - though fighting you was not my desire. And now I would only ask that you show mercy and let me leave, defeated.~
+@0 = ~You've beaten me. I cannot defeat you, try as I might - though fighting you was not my desire. And now I would only ask that you show mercy and let me leave, defeated.~ [DELILA60]
 @1 = ~Who are you?~
 @2 = ~No deals. I'm here for your death.~
 @3 = ~MT: Ха-ха! О боги, мы столько дрались, а у тебя даже нет причины убивать меня. А я-то думала, ты - охотник за головами. Ну, еще не факт, что я ошиблась. Как бы там ни было, меня зовут Далила. Сказала бы, что приятно с тобой познакомиться, но я думаю, ты понимаешь, что это не так.~ /*Then again, perhaps you are. Either way, my name is Delilah. I'd say it's a pleasure to make your acquaintance, but I'm sure you understand the truth.*/
@@ -18,7 +18,7 @@
 @17 = ~No. I want the truth, or I kill you.~
 @18 = ~Uh, yeah... okay. I'll leave you alone.~
 @19 = ~You won't find me so easy to kill!~
-@20 = ~All right. One swift cut of the blade and - Augh!...~
+@20 = ~All right. One swift cut of the blade and - Augh!...~ [STHFE07]
 @21 = ~MT: Что касается... Вайверна... Езгар сказал мне... что он вырос в лесу Невервинтер. Говорил, что местные животные... защитят его. А теперь, если не возражаешь... мне тут надо остановить кровь.~ /*As for... Wyvern... Yesgar told me... that he grew up in the Neverwinter Wood. Says the animals there... will protect him.*/
 @22 = ~Fine, I see I will never have any rest from the likes of you. Come at me, then, and end this!~
 @23 = ~You would... just leave? I don't even know what to say. Somehow, "thank you" doesn't seem fitting to me. Perhaps "farewell" will do the trick.~
@@ -37,5 +37,5 @@
 @36 = ~You're nothing but a common criminal. Time for you to die.~
 @37 = ~MT: Все прошло без сучка, без задоринки. Мы удрали из самой надежной тюрьмы во всем Уотердипе! Даже если ты решишь убить меня на месте, меня все равно будут помнить за это. Я уверена, что вопросы у тебя уже кончились. Так скажи, тебе уже удалось принять решение, что со мной делать?~ /*We all escaped without a hitch. We escaped the most secure prison in all of Waterdeep! Even if you decide to kill me where I stand, I will be remembered for that.*/
 @38 = ~What would you give me to spare your life?~
-@39 = ~An intruder! Die, fool!~
-@40 = ~Haven't you caused me enough trouble?~
+@39 = ~An intruder! Die, fool!~ [DELILA58]
+@40 = ~Haven't you caused me enough trouble?~ [DELILA57]

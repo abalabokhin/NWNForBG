@@ -1,4 +1,4 @@
-@0 = ~They said you was plain-looking all right, but you're the hero of Neverwinter, that much is sure.~
+@0 = ~They said you was plain-looking all right, but you're the hero of Neverwinter, that much is sure.~ [SOLOM052]
 @1 = ~Who are you calling plain-looking?~
 @2 = ~MT: Кто говорил вам обо мне?~ /*Who stole your sword?*/
 @3 = ~What do you wish, exactly?~
@@ -23,8 +23,8 @@
 @22 = ~MT: Нет, я не возьму твое кольцо.~ /*No, me not wants key.*/
 @23 = ~MT: Я... понимаю. Вот бери все золото, которое у меня есть. Это немного, но я рад отдать его тебе вместе с кольцом. Не знаю, магическое ли оно, но оно всегда приносило мне удачу. Надеюсь, что и вам принесет. Спасибо еще раз, <CHARNAME>... Прощайте!~ /*I don't know if it is magical, but it's always brought me luck. I hope it brings you luck, too. Thank you again, <CHARNAME>... and farewell!*/
 @24 = ~MT: Как грубо! Очень хорошо, похоже, вы не такой герой, как мне казалось!~ /*Very well, I guess you're not as much of a hero as I had thought. How rude!*/
-@25 = ~I'll be seeing you.~
-@26 = ~Look, I think you'd better stop looking into this cult business...~
+@25 = ~I'll be seeing you.~ [SOLOM050]
+@26 = ~Look, I think you'd better stop looking into this cult business...~ [SOLOM056]
 @27 = ~Are you part of the cult? What do you know about them?!~
 @28 = ~Give me one good reason not to look into the cult...~
 @29 = ~Who says I'm looking into cult business, anyway?~
@@ -36,4 +36,4 @@
 @35 = ~Don't be a fool! You've been nosing around, asking questions. The entire North knows what you're up to by now.~
 @36 = ~You do that. Ignore my advice and suffer the consequences. Consider this your fair warning, 'hero'!~
 @37 = ~Oh, it's very much my business, actually. We won't tolerate your interference any further. Consider this your fair warning, 'hero'!~
-@38 = ~I warned you but you just wouldn't listen.~
+@38 = ~I warned you but you just wouldn't listen.~ [SOLOM054]

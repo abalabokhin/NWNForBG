@@ -1,9 +1,9 @@
-@0 = ~Hmm? Leave me be, I got nothing to say. Can't be seen with the likes of you.~
+@0 = ~Hmm? Leave me be, I got nothing to say. Can't be seen with the likes of you.~ [CRISTO51]
 @1 = ~I just need some information about the auction.~
 @2 = ~Aribeth and Lord Nasher compel me to investigate here.~
 @3 = ~MT: Тогда я ужожу, простите за беспокойство.~ /*Fine, sorry to bother you.*/
 @4 = ~I said I can't be seen speaking with you. Get lost.~
-@5 = ~MT: Неплохое шоу устроил Джалек. Он немного сумасшедший, даже для "Кровавых моряков", но он хороший парень. Умнее, чем кажется на первый взгляд. Что ж, вы завоевали его доверие, и это значит, что я могу рискнуть и поговорить с вами, но постарайтесь не шуметь, хорошо? Отсутствие Венгаула всех заставляет нервничать.~ /*You've gained his confidence, though, and that means I can risk talking to you, but keep your questions quiet, all right? Vengaul's absence has everyone on edge.*/
+@5 = ~MT: Неплохое шоу устроил Джалек. Он немного сумасшедший, даже для "Кровавых моряков", но он хороший парень. Умнее, чем кажется на первый взгляд. Что ж, вы завоевали его доверие, и это значит, что я могу рискнуть и поговорить с вами, но постарайтесь не шуметь, хорошо? Отсутствие Венгаула всех заставляет нервничать.~ [CRISTO53] /*You've gained his confidence, though, and that means I can risk talking to you, but keep your questions quiet, all right? Vengaul's absence has everyone on edge.*/
 @6 = ~I have questions about you.~
 @7 = ~I have questions about this place.~
 @8 = ~I need to ask about the Bloodsailors and Vengaul.~
@@ -30,6 +30,6 @@
 @29 = ~You are talking about a revolt.~
 @30 = ~MT: Возможно. Если слухи окажутся правдой, и у него действительно есть лекарство, он хочет привлечь внимание, чтобы увеличить на него цену. Либо дело так обстоит, либо он захотел, чтобы об этом узнал кто-то определенный. Он уже очень давно пытался зацепить лорда Нашера, чтобы тот начал действовать. Несмотря на это, кажется, его планы изменились. Не думаю, что Венгаул теперь полностью контролирует ситуацию.~ /*That, or maybe he wanted someone very important to hear of it. He's had a long history of trying to bait Lord Nasher into action.*/
 @31 = ~MT: Не знаю... Его лейтенант Каллик - нетерпеливый и жадный человек... Больше я ничего не могу сказать по этому поводу. Возможно, были предприняты... некоторые меры с целью избавиться от старика. Вам стоит поискать ответы внизу. Мне очень жаль, но больше я ничего не могу вам сказать.~ /*There may have been some... steps taken to try and oust the old man. You should seek your answers downstairs. I'm sorry, I can't say anymore.*/
-@32 = ~Hello. I've said too much already, but I suppose I can risk answering a few questions if you really need the information.~
+@32 = ~Hello. I've said too much already, but I suppose I can risk answering a few questions if you really need the information.~ [CRISTO52]
 @33 = ~Very well. I've already given out the key I had for downstairs. If you don't have it, you'll have to find another way past the door, and deal with Chef.~
-@34 = ~Looks like things are settling down. There's no reason for you to talk to me. Good job, but please leave.~
+@34 = ~Looks like things are settling down. There's no reason for you to talk to me. Good job, but please leave.~ [CRISTO50]

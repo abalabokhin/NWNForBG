@@ -1,4 +1,4 @@
-@0 = ~Thank you for saving me... if that is indeed what you have done. I do not know you, or your motives.~
+@0 = ~Thank you for saving me... if that is indeed what you have done. I do not know you, or your motives.~ [DARANE51]
 @1 = ~Calm down. I'm not going to hurt you.~
 @2 = ~And I don't know you. Should I care?~
 @3 = ~You'll die if you need to.~
@@ -49,5 +49,5 @@
 @48 = ~He couldn't wait for his men to finish with me. He's probably made a guess as to where Vengaul is, and has gone to try and find him.~
 @49 = ~MT: Возьмите этот медальон. Это был его подарок. Он сказал, что это ключ, и что с этим ключом я смогу войти в "Серебряные паруса", если захочу найти его. "Серебряные паруса" находятся на востоке центральной части Портового района. Там есть проход вниз. Венгаул говорит, что это безопасное место... для него, во всяком случае.~ /*The Silver Sails is in the west central area of the Docks. There's a passage inside. Vengaul said it is safe... for him, at least.*/
 @50 = ~MT: Вы уже получили мой медальон. Венгаул сказал, что это ключ, который позволит мне войти в "Серебряные Паруса", если мне понадобится его найти. "Серебряные паруса" находятся на востоке центральной части Портового района. Там есть проход вниз. Венгаул говорит, что это безопасное место... для него, во всяком случае.~ /*The Silver Sails is in the west central area of the Docks. There's a passage inside. Vengaul said it is safe... for him, at least.*/
-@51 = ~You have returned. What more can I tell you? What more do you think I know?~
-@52 = ~Who is it now? More people to threaten me? I shouldn't have said anything. I just hoped someone would help... but I can't trust anyone with Vengaul gone!~
+@51 = ~You have returned. What more can I tell you? What more do you think I know?~ [NWDOOR52]
+@52 = ~Who is it now? More people to threaten me? I shouldn't have said anything. I just hoped someone would help... but I can't trust anyone with Vengaul gone!~ [NWDOOR50]

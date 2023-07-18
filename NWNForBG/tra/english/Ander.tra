@@ -1,4 +1,4 @@
-@0 = ~MT: Здравствуйте, сэр. Вам что-нибудь нужно? Хотите что-то спросить у меня?~ /*Hello, <PRO_SIRMAAM>. Is there something the matter? Did you have something to ask of me?*/
+@0 = ~MT: Здравствуйте, сэр. Вам что-нибудь нужно? Хотите что-то спросить у меня?~ [ENDER052] /*Hello, <PRO_SIRMAAM>. Is there something the matter? Did you have something to ask of me?*/
 @1 = ~Who are you?~
 @2 = ~I'd like to ask you some questions.~
 @3 = ~I spoke with Neurik. He said I should see you.~
@@ -55,7 +55,7 @@
 @52 = ~MT: Напомни, где находится пещера Черного Волка?~ /*Where was the Black Wolf's cave again?*/
 @53 = ~MT: А где сейчас Элхелор?~ /*"Where is the Hero now?"*/
 @54 = ~MT: А не мог бы ты продать мне кое-что из лавки Элхелора?~ /*Now can you show me what happened here?*/
-@55 = ~If you're looking for Alhelor, he went home to get some rest. Maybe I could answer a question for you?~
+@55 = ~If you're looking for Alhelor, he went home to get some rest. Maybe I could answer a question for you?~ [ENDER051]
 @56 = ~Who is Alhelor?~
 @57 = ~Ander... Alhelor is really the Black Wolf.~
 @58 = ~Tell me where this Alhelor lives.~
@@ -71,7 +71,7 @@
 @68 = ~MT: Элхелор ушел домой, это маленький домик на северо-востоке города.. Пожалуйста, покончите с этим зверем, я боюсь.~ /*Check the northeast of town, a fella named Ballard.*/
 @69 = ~MT: А не мог бы ты продать мне кое-что из его товаров?~ /*Why didn't you just poison his food?*/
 @70 = ~MT: Я сделаю это, прощай. ~ /*I will do this for you.*/
-@71 = ~MT: Наконец-то все закончилось. Элхелор мертв, но я знаю, что все равно буду с трудом засыпать по ночам. Вы что-нибудь от меня хотели?~ /*It's finally over. Neurik says that Alhelor is dead, but I know I'll still have trouble falling asleep at night. Did you want me for something?*/
+@71 = ~MT: Наконец-то все закончилось. Элхелор мертв, но я знаю, что все равно буду с трудом засыпать по ночам. Вы что-нибудь от меня хотели?~ [ENDER050] /*It's finally over. Neurik says that Alhelor is dead, but I know I'll still have trouble falling asleep at night. Did you want me for something?*/
 @72 = ~MT: Проблемы со сном? По-моему, это что-то новенькое.~ /*Neurik? Alhelor? Sleeping troubles? Did I miss something?*/
 @73 = ~What do you plan on doing now?~
 @74 = ~Oh, I'm sorry. I thought... oh, nevermind. It's a long story and it's all wrapped up now. Needless to say, we won't have to worry about werewolves any more around here now that Alhelor's gone.~

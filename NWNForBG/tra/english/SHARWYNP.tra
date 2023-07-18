@@ -1,5 +1,5 @@
-@0 = ~MT: Мне... мне кажется, ты вовсе не стремишься делать добрые дела, и я сомневаюсь, что снова пойду с тобой, если ты попросишь. Я... не думаю, что мы снова увидимся.~ /*It just seems to me that Elves shouldn't put these things back in the ground if they didn't take them out in the first place.*/
-@1 = ~You think so, do you? Hmph. I'll not help where I'm not wanted, if that's what you really want.~
+@0 = ~MT: Мне... мне кажется, ты вовсе не стремишься делать добрые дела, и я сомневаюсь, что снова пойду с тобой, если ты попросишь. Я... не думаю, что мы снова увидимся.~ [Sharbye] /*It just seems to me that Elves shouldn't put these things back in the ground if they didn't take them out in the first place.*/
+@1 = ~You think so, do you? Hmph. I'll not help where I'm not wanted, if that's what you really want.~ [Sharbye]
 @2 = ~Yes. Go.~
 @3 = ~No. Stay.~
 @4 = ~MT: Что же, тогда прощай. Где мы можем встретиться, если ты передумаешь?~ /*As you desire. I shall remain here, should you change your mind.*/
@@ -7,12 +7,12 @@
 @6 = ~MT: Я найду тебя в казармах Кендрака.~ /*Port Llast - Kendrack's Barracks*/
 @7 = ~MT: Жди меня здесь.~ /*Wait right here.*/
 @8 = ~Fair enough.~
-@9 = ~I suspected you'd show up here soon. I'm glad to see I was right. So, then... shall we join up once more?~
+@9 = ~I suspected you'd show up here soon. I'm glad to see I was right. So, then... shall we join up once more?~ [SHARWY60]
 @10 = ~Yep.~
 @11 = ~No.~
 @12 = ~Good. Let's go.~
 @13 = ~If you change your mind you can find me here.~
-@14 = ~So we meet again, <CHARNAME>. The others had told me Aribeth had recruited you to find the cultists... I can't say I'm surprised. You've acquired quite the reputation for yourself, haven't you?~
+@14 = ~So we meet again, <CHARNAME>. The others had told me Aribeth had recruited you to find the cultists... I can't say I'm surprised. You've acquired quite the reputation for yourself, haven't you?~ [SHARWY53]
 @15 = ~I'm surprised to see you here, Sharwyn.~
 @16 = ~You again? What, are you following me around?~
 @17 = ~Goodbye.~
@@ -30,7 +30,7 @@
 @29 = ~Monsters?~
 @30 = ~It's about time you asked. I'm at your disposal, <CHARNAME>.~
 @31 = ~MT: В основном багбиры и орки. Однако говорят, ими управляют люди, что очень странно. В любом случае, с тех пор как Лускан с головой ушел в свои дела, окружающие провинции стали объектом постоянных набегов... но эти монстры действуют более организованно, чем обычно.~ /*At any rate, since Luskan is wrapped up in its own concerns, the countryside has become open season for banditry... these monsters, however, are more organized than is normal.*/
-@32 = ~MT: Еще раз здравствуйте, <CHARNAME>. Полагаю, вы помните меня? бард, Шервин? Было довольно скучно стоять и ждать, пока Арибет не возьмется за дело... Лучше бы я сама пока искала этот культ, зарабатывая славу.~ /*It's been rather boring standing around waiting for Aribeth to get her act together... I'd rather be out looking for this cult, making a name for myself while I'm at it.*/
+@32 = ~MT: Еще раз здравствуйте, <CHARNAME>. Полагаю, вы помните меня? бард, Шервин? Было довольно скучно стоять и ждать, пока Арибет не возьмется за дело... Лучше бы я сама пока искала этот культ, зарабатывая славу.~ [SHARWY55] /*It's been rather boring standing around waiting for Aribeth to get her act together... I'd rather be out looking for this cult, making a name for myself while I'm at it.*/
 @33 = ~So you're working for Aribeth?~
 @34 = ~Have you heard any rumors about the cult since you've come here?~
 @35 = ~If you're so interested in fame, why are you standing around here?~

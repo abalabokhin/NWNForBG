@@ -1,4 +1,4 @@
-@0 = ~You are here because Neurik sent you? You are here because of the trial?~
+@0 = ~You are here because Neurik sent you? You are here because of the trial?~ [ROLGAN50]
 @1 = ~MT: Суд? Какой суд?~ /*Where is your husband?*/
 @2 = ~Yes, I am to defend you. Tell me what happened.~
 @3 = ~I'll be going now.~
@@ -13,8 +13,8 @@
 @12 = ~Can you tell me anything else?~
 @13 = ~MT: Мы, Утгардты, отличаемся от вас. Наши обычаи и традиции могут показаться вам странными. Нас называют дикарями, пьяницами и ворами. Такими мы кажемся Союзу Лордов, и меня называют убийцей только потому, что я защищал себя. Мы, племя Черного Льва - благородные люди. Я не языческий дикарь, не злобный убийца. Я молюсь Утгару, чтобы тебе удалось понять это и помочь мне.~ /*We Uthgardt are different than you. Our ways and customs may seem strange. They call us savages and pagans and drunks and thieves. This is how the Lords' Alliance sees us, and that is why I am called a murderer for defending myself.*/
 @14 = ~I'll do what I can.~
-@15 = ~It is good to taste the open air once more. Freedom is sweet upon my tongue. I thank Uthgar for the verdict that cleansed the word murderer from my name.~
-@16 = ~MT: Я благодарю тебя, <LADYLORD>. Ты настоящий друг народа Утгардта, и племя Черного Льва будет произносить твое имя с почтением.~ /*And I thank you, <PRO_LADYLORD> <CHARNAME>. You are a true friend of the Uthgardt people, and the Black Lion Tribe speaks your name with reverence.*/
+@15 = ~It is good to taste the open air once more. Freedom is sweet upon my tongue. I thank Uthgar for the verdict that cleansed the word murderer from my name.~ [ROLGAN51]
+@16 = ~MT: Я благодарю тебя, <LADYLORD>. Ты настоящий друг народа Утгардта, и племя Черного Льва будет произносить твое имя с почтением.~ [ROLGAN52] /*And I thank you, <PRO_LADYLORD> <CHARNAME>. You are a true friend of the Uthgardt people, and the Black Lion Tribe speaks your name with reverence.*/
 @17 = ~MT: Да, <LADYLORD>. Что вы хотели бы знать?~ /*Yes, my <PRO_LADYLORD>. What do you wish to know?*/
 @18 = ~Tell us what happened that night, Rolgan.~
 @19 = ~What was your state of mind that night, Rolgan? Were you thinking clearly?~

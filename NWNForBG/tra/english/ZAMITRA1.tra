@@ -1,8 +1,8 @@
-@0 = ~MT: Держи свои руки при себе, <MALEFEMALE>...~ /*Keep your hands where they belong, <PRO_GIRLBOY>...*/
-@1 = ~Thieves and robbers! How dare you rob me of my things!~
-@2 = ~Someone stole my Onyx gem last night.~
-@3 = ~I'm checking out and you won't have my business again.~
-@4 = ~Hi handsome... Hard day?~
+@0 = ~MT: Держи свои руки при себе, <MALEFEMALE>...~ [ZAMIT061] /*Keep your hands where they belong, <PRO_GIRLBOY>...*/
+@1 = ~Thieves and robbers! How dare you rob me of my things!~ [ZAMIT062]
+@2 = ~Someone stole my Onyx gem last night.~ [ZAMIT051]
+@3 = ~I'm checking out and you won't have my business again.~ [ZAMIT052]
+@4 = ~Hi handsome... Hard day?~ [ZAMIT059]
 @5 = ~Yeah, I've been killing orcs all day long.~
 @6 = ~Are you trying to pick me up? That's so pathetic!~
 @7 = ~Interested in a hard night?~
@@ -14,8 +14,8 @@
 @13 = ~If you'd like...~
 @14 = ~That might be nice... Your room or mine?~
 @15 = ~Come up to my room, then, and waste your wit on me there. I'll leave the door unlocked.~
-@16 = ~I'm not in the mood for talk right now. Perhaps later.~
+@16 = ~I'm not in the mood for talk right now. Perhaps later.~ [ZAMIT050]
 @17 = ~MT: Нет сейчас. Мне нужен твой драгоценный камень.~ /*Press the yellow gem.*/
 @18 = ~Very well. I'll go.~
 @19 = ~MT: Вы слышали это? Какая наглость! Ты поплатишься за это!~ /*It is the least I could do.*/
-@20 = ~Hard day?~
+@20 = ~Hard day?~ [ZAMIT052]

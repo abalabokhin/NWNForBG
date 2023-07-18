@@ -1,8 +1,8 @@
-@0 = ~So... *this* is the latest group of entrants, is it? Very well. My name is Jaroo - Master of the Games. Allow me to explain how this will work:~
+@0 = ~So... *this* is the latest group of entrants, is it? Very well. My name is Jaroo - Master of the Games. Allow me to explain how this will work:~ [JAROO050]
 @1 = ~MT: Вход в подземелье стоит 1000 золотых. Выйдя из этого подвала через северную дверь, вы попадете на 1 уровень лабиринта, всего уровней - три. Вы должны исследовать все подземелья и найти четыре хрустальных предмета. Если сможете это сделать и ответить на загадку, вернетесь сюда в качестве победителей.~ /*I'd join you if I could, but until this war with Luskan is over all the conscripts have to stay here to defend Fort Ilkard. If you need anything else, you know where to find me.*/
-@2 = ~Neither I nor Mutamin are responsible for your deaths or the deaths of your companions. If you enter, it is your risk to take.~
-@3 = ~MT: А теперь, если кто-нибудь хочет войти, давайте мне деньги, и я пропущу вас в лабиринт.~ /*Now, then, should anyone wish to enter, approach me with your gold and I'll teleport you within.*/
-@4 = ~Yes, my <PRO_LADYLORD>? Are you ready to enter the dungeon?~
+@2 = ~Neither I nor Mutamin are responsible for your deaths or the deaths of your companions. If you enter, it is your risk to take.~ [JAROO056]
+@3 = ~MT: А теперь, если кто-нибудь хочет войти, давайте мне деньги, и я пропущу вас в лабиринт.~ [JAROO057] /*Now, then, should anyone wish to enter, approach me with your gold and I'll teleport you within.*/
+@4 = ~Yes, my <PRO_LADYLORD>? Are you ready to enter the dungeon?~ [JAROO051]
 @5 = ~MT: Да, пропусти меня. Вот ваши 1000 золотых.~ /*Yes, I am. Here is your 500 gold.*/
 @6 = ~MT: Я пока не готов.~ /*I'll go now.*/
 @7 = ~Yes, but is 500 gold pieces really necessary?~
@@ -14,8 +14,8 @@ Jaroo has explained the rules and launched the race. Competing adventuring parti
 @10 = ~As you desire. I shall remain here, should you change your mind.~
 @11 = ~MT: Да. Каждый взнос добавляется к сумме, которую получит победитель, прошедший все подземелье. Поскольку у вас у всех равные шансы на успех, боюсь, что предлагать кому-то одному скидку не вполне честно. Так вы готовы к состязанию?~ /*Since you have an equal chance of succeeding, I'm afraid it wouldn't be fair to offer a discount. So are you ready for the competition?*/
 @12 = ~MT: Поторопитесь, <LADYLORD>. Состязание уже началось, другие участники могут вас опередить.~ /*I wish the damn thing would start. Have they got the goods or not?*/
-@13 = ~You've won the competition. Congratulations! Speak to Mutamin to collect your reward!~
-@14 = ~The competition has been won. Come back another time, when the dungeon has been re-worked for the sequel!~
+@13 = ~You've won the competition. Congratulations! Speak to Mutamin to collect your reward!~ [JAROO052]
+@14 = ~The competition has been won. Come back another time, when the dungeon has been re-worked for the sequel!~ [JAROO053]
 @15 = ~MT: Я сожалею, но вы проиграли состязание. Приходите в другой раз, когда мы подготовим новое состязание!~ /*The competition has been won. Come back another time, when the dungeon has been re-worked for the sequel!*/
 @16 = ~MT: Северная дорога: Испытание Мутамина
 

@@ -1,4 +1,4 @@
-@0 = ~MT: Здравствуйте, я Дюмаль, Рыцарь-хранитель Хельма. Приятно видеть здравомыслящее лицо среди сумасшедших. Думаю, сидеть взаперти лучше, чем когда тебя пытают, но, по крайней мере, во время этих собраний можно было уйти, если надоедала риторика.~ /*I suppose being caged is better than torture, but at least during those sessions I could pass out if I tired of their rhetoric.*/
+@0 = ~MT: Здравствуйте, я Дюмаль, Рыцарь-хранитель Хельма. Приятно видеть здравомыслящее лицо среди сумасшедших. Думаю, сидеть взаперти лучше, чем когда тебя пытают, но, по крайней мере, во время этих собраний можно было уйти, если надоедала риторика.~ [DUMAL50] /*I suppose being caged is better than torture, but at least during those sessions I could pass out if I tired of their rhetoric.*/
 @1 = ~Who are you? How did you get here?~
 @2 = ~What have you heard? What happened here?~
 @3 = ~What do you know of this cult?~
@@ -9,4 +9,4 @@
 @8 = ~MT: Безумие! Эти "Люди Ока" все поголовно фанатики, довольствуются выполнением роли винтиков в машине своих хозяев, даже если это ничего и не значит! Они напали на Невервинтер без всякой на то причины, по крайней мере, без всякой названной причины! Без них не было бы никакой эпидемии. Возможно, их база находится на севере, но я впервые слышу о "Людях Ока" и этих "Древних"~ /*Madness! These "People of the Eye" are all fanatics, content to be a cog in their master's machine, even if it makes no sense!*/
 @9 = ~I'd come with you but I wouldn't be any help. I'm too weak. If you have any other questions, I'll be here until the fighting stops.~
 @10 = ~Sorry, no, I have not been in a position to ask more pointed questions, and Desther has not been forthcoming with information.~
-@11 = ~I hope your battle goes well. Do you need me?~
+@11 = ~I hope your battle goes well. Do you need me?~ [DUMAL51]

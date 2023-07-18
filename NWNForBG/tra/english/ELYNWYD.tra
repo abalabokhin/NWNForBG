@@ -1,4 +1,4 @@
-@0 = ~MT: Аххх, зз-здравствуйте, <SIRMAAM>.~ /*Ahhh, h-hello, there, <PRO_SIRMAAM>.*/
+@0 = ~MT: Аххх, зз-здравствуйте, <SIRMAAM>.~ [ELYNW57] /*Ahhh, h-hello, there, <PRO_SIRMAAM>.*/
 @1 = ~Might I ask your name, friend?~
 @2 = ~May I ask you some questions?~
 @3 = ~Who are you?~
@@ -37,7 +37,7 @@
 @36 = ~I... I suppose I have little choice. The fact that you offer to save her at all is more than most would do. If there is even a chance for her rescue, I must take it...~
 @37 = ~Thank you for the offer, <PRO_SIRMAAM>, but I must find some other way.~
 @38 = ~My sister has some skill with magic... I would have hoped it would allow her to escape Kurth on her own, but that doesn't appear to be the case.~
-@39 = ~Have... have you found Evaine? Is there any word of her?~
+@39 = ~Have... have you found Evaine? Is there any word of her?~ [ELYNW58]
 @40 = ~Tell me again how to find her?~
 @41 = ~I've spoken to Kurth. He still has her and claims she is alive.~
 @42 = ~I did what Kurth demanded... but he reneged on our deal.~
@@ -76,8 +76,8 @@
 @73 = ~I... I suppose it is good that she did not suffer, then. Thank you for that much, at least. As for him... I shall see he pays. Somehow.~
 @74 = ~I see. No... perhaps I don't, at that. Excuse me, then, I... must go.~
 @75 = ~MT: Вы... Вы очень злы и жестоки, <MALEFEMALE>. Лучше бы мне никогда не встречать вас.~ /*You... are a very cruel and evil <PRO_MANWOMAN>. I am very sorry I ever met you.*/
-@76 = ~Ahhh... hello, again. Might you have heard anything of Evaine? I know it is much to hope for...~
-@77 = ~I... I can scarce believe it! You have returned Evaine to me! I had almost... almost lost hope.~
+@76 = ~Ahhh... hello, again. Might you have heard anything of Evaine? I know it is much to hope for...~ [ELYNW59]
+@77 = ~I... I can scarce believe it! You have returned Evaine to me! I had almost... almost lost hope.~ [ELYNW61]
 @78 = ~Evaine explained to me your rescue after she appeared. How can I ever thank you, my <PRO_LADYLORD>? Here is the 300 gold pieces... I only wish I could give you more.~
 @79 = ~Are you sure you can't? This is your sister, after all.~
 @80 = ~MT: Давай еще золота, или я убью твою сестру.~ /*Cough up some more gold, or I kill your sister now.*/
@@ -89,7 +89,7 @@
 @86 = ~MT: Я... Это неправда! Как вы могли?! Аххх, чего же еще можно было ожидать в этом городе? Вот... Берите. Берите все мое золото. 875 золотых... Больше мне нечего вам дать. Идем же, Эвейн. Думаю, я знаю, как можно выбраться из этого дьявольского города... Давай же не будем медлить.~ /*I... you wouldn't! How could you?! Ahhh, what else was I to expect in this city? Here... take it. Take all the gold I have. 375 gold pieces... I have nothing else to give you.*/
 @87 = ~MT: Тогда возьмите. Вы заслуживаете гораздо большего, <LADYLORD>. Идем же, Эвейн. Думаю, я знаю, как можно выбраться из этого дьявольского города... Давай же не будем медлить.~ /*Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.*/
 @88 = ~MT: Вы... вы слишком, слишком добры, <LADYLORD>. По крайней мере, слишком добры для этого города. Надеюсь, боги отблагодарят вас как должно за то, что вы сделали. Идем же, Эвейн. Думаю, я знаю, как можно выбраться из этого дьявольского города... Давай же не будем медлить.~ /*You... are far, far too kind, my <PRO_LADYLORD>. Far too good for this city, at the very least. I hope the gods smile kindly on you for all that you've done.*/
-@89 = ~I really must be going. I have arranged a way out of this city once and for all... I intend to leave as quickly as possible.~
+@89 = ~I really must be going. I have arranged a way out of this city once and for all... I intend to leave as quickly as possible.~ [ELYNW62]
 @90 = ~Elynwyd, a noble now staying at the Cutlass Inn in Luskan, has lost all hope that he will ever see his sister again. Evaine caught the eye of High Captain Kurth, arguably one of the most powerful figures in the city. Kurth has kidnapped Evaine and taken her back to his base within the city.
 Shrewd and manipulative, however, the High Captain offered her freedom in exchange for the assassination of his chief political rival, High Captain Baram. That task now accomplished, Kurth has reneged on his promise and intends to keep Evaine in captivity.~
 @91 = ~Elynwyd, a noble now staying at the Cutlass Inn in Luskan, has lost all hope that he will ever see his sister again. Evaine caught the eye of High Captain Kurth, arguably one of the most powerful figures in the city. Kurth has kidnapped Evaine and taken her back to his base within the city.

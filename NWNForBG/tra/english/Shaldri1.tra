@@ -1,4 +1,4 @@
-@0 = ~MT: Привет, парниша. Я тебя не узнаю. Должно быть, ты пришел сюда недавно. Что такой бравый искатель приключений, как ты, делает в таком дерьмовом городишке, как этот?~ /*What is an adventurous fellow like you doing in a crap-town like this?*/
+@0 = ~MT: Привет, парниша. Я тебя не узнаю. Должно быть, ты пришел сюда недавно. Что такой бравый искатель приключений, как ты, делает в таком дерьмовом городишке, как этот?~ [SHALD052] /*What is an adventurous fellow like you doing in a crap-town like this?*/
 @1 = ~I didn't think it was such a bad place. What's your name anyways?~
 @2 = ~Well you certainly have this place pegged. What's your name?~
 @3 = ~Goodbye.~
@@ -45,7 +45,7 @@
 @44 = ~Of course that won't cover all of my debts. 3000 ought to do the trick though.~
 @45 = ~I think I've had enough of this. Have a good life.~
 @46 = ~MT: Ну, уж нет. Это уже слишком.~ /*Okay, getting bored now...*/
-@47 = ~MT: О, приветствую, миледи! Ты, наверно, одна из этих новых искателей приключений в городе. Я так счастлива видеть, что целеустремленная женщина может чего-то добиться в этом мире.~ /*I am so excited to see that a woman of determined personality can get ahead in this world.*/
+@47 = ~MT: О, приветствую, миледи! Ты, наверно, одна из этих новых искателей приключений в городе. Я так счастлива видеть, что целеустремленная женщина может чего-то добиться в этом мире.~ [SHALD053] /*I am so excited to see that a woman of determined personality can get ahead in this world.*/
 @48 = ~Um, sure. What is your name?~
 @49 = ~The power of a woman is unlimited. Never settle for less than what you deserve.~
 @50 = ~My name is Shaldrissa. What do they call a bold adventuress like you?~
@@ -87,5 +87,5 @@
 @86 = ~2000? Okay.~
 @87 = ~Of course that won't cover my debts here, so we had better make it 3000.~
 @88 = ~All right you foolish, greedy child, you can just forget the whole thing.~
-@89 = ~I must go meet someone.~
-@90 = ~I told you I never want to see you again. Go away.~
+@89 = ~I must go meet someone.~ [SHALD050]
+@90 = ~I told you I never want to see you again. Go away.~ [SHALD051]

@@ -1,4 +1,4 @@
-@0 = ~Hmmm... I don't recognize you, and I thought I knew all the new recruits who've joined the Lords' Alliance.~
+@0 = ~Hmmm... I don't recognize you, and I thought I knew all the new recruits who've joined the Lords' Alliance.~ [ROLKID60]
 @1 = ~My name is <CHARNAME>. I work for Aarin Gend.~
 @2 = ~My name is none of your business!~
 @3 = ~MT: <CHARNAME>? <CHARNAME>, герой, спасший Невервинтер от чумы? Эй, <MALEFEMALE>, такая личность нам бы и на поле боя пригодилась. Плохо, что Генд припряг тебя где-то в другом месте. Ты, наверное, здесь, чтобы купить чего-нибудь, не так ли? Итак, чем я могу тебя заинтересовать? Нужен хороший меч? Или, может быть, прочный щит? Или еще что-то?~ /*<CHARNAME>? The same <CHARNAME> who saved Neverwinter from the plague? We could use a good <PRO_MANWOMAN> like you up on the battle front.*/
@@ -44,6 +44,6 @@ He has offered a substantial bounty to anyone who delivers him the heads of the 
 @36 = ~The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking the entrance to the soldiers barracks in Beournna's Well. The infamous raiders will trouble the supply lines of the Lords' Alliance no more.
 Rolkid now seeks the head of Obould Many-Arrows, a powerful orcish chieftain, to complete his collection. Needless to say, he has put up a substantial reward.~
 @37 = ~MT: У тебя есть для меня головы орков? Или тебе нужна моя помощь?~ /*Have you a question for me, then, my friend?*/
-@38 = ~Back again, <CHARNAME>? You need to buy some equipment, or is there something else I can do for you?~
-@39 = ~Welcome back. How's the life of the bounty hunter treating you? You bring any orc heads back for me? Or is there something else I can do for you?~
+@38 = ~Back again, <CHARNAME>? You need to buy some equipment, or is there something else I can do for you?~ [ROLKID58]
+@39 = ~Welcome back. How's the life of the bounty hunter treating you? You bring any orc heads back for me? Or is there something else I can do for you?~ [ROLKID59]
 @40 = ~Hello, again. If you've come to me looking for work, you're out of luck. With Guzud, Vaath and Obould all out of the picture I'm not handing out anymore bounties. Or was there something else you needed?~

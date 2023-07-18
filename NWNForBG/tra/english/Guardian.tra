@@ -1,4 +1,4 @@
-@0 = ~Greetings, Judge, and welcome to the Castle Jhareg... I hope you have learned your lessons well.~
+@0 = ~Greetings, Judge, and welcome to the Castle Jhareg... I hope you have learned your lessons well.~ [GUARD050]
 @1 = ~Why do you call me Judge?~
 @2 = ~Who are you?~
 @3 = ~What is this place? Who is Lord over this castle?~
@@ -36,7 +36,7 @@ Inside the castle, one is met with three doors and but a single key. A note tied
 @30 = ~How many Judgments can there be? There is guilt and there is innocence and consequences for them both.~
 @31 = ~MT: У вас нет власти в этом месте. Замок скользит сквозь волны времени. Как только они умрут, они возродятся. Только у меня есть власть вернуть это место назад, в поток времени, и я не могу воспользоваться этой властью, пока судия не произнесет приговор.~ /*Only I have the power to bring this place back into the weave and it is a power I cannot use until the Judge provides his Judgment.*/
 @32 = ~Then do you accept the role of Judge and the task of Judgment?~
-@33 = ~Greetings, Judge. Do you bring with you the oaths of the brothers Jhareg?~
+@33 = ~Greetings, Judge. Do you bring with you the oaths of the brothers Jhareg?~ [GUARD051]
 @34 = ~Yep.~
 @35 = ~No.~
 @36 = ~Oaths? What oaths?~
@@ -58,7 +58,7 @@ Inside the castle, one is met with three doors and but a single key. A note tied
 @52 = ~Then I shall hold it for you and keep it safe until you return with his brother's.~
 @53 = ~Wise is the Judge who gives thought to his Judgment. Speak with me again when you are ready.~
 @54 = ~Quint and Karlat Jhareg, I summon you unto the court of Judgment.~
-@55 = ~I hold the oaths of the brothers Jhareg and this court requires only the presence of a Judge. Are you ready to stand in Judgment?~
+@55 = ~I hold the oaths of the brothers Jhareg and this court requires only the presence of a Judge. Are you ready to stand in Judgment?~ [GUARD052]
 @56 = ~Judgment? I don't understand what's going on.~
 @57 = ~MT: Ах, тогда, возможно, вы еще незнакомы с печальной историей замка Джарегов. Этот замок некогда принадлежал братьям Джарег. Теперь же он превращен в ловушку для времени Латандером, богом зари, в ожидании вашего прибытия. Давным-давно здесь совершилось преступление, и последствия его были столь ужасны, что сам Латандер почувствовал себя не в силах совершить суд над этими обвиняемыми... Это было преступление смертных, и смертным должен был быть судия. И потому этот замок и деревня вокруг него были изъяты из потока времени в ожидании вашего прибытия.~ /*Long ago did the crime take place and so great were its consequences that Lathander himself felt unfit to stand in Judgment over those accused...*/
 @58 = ~MT: Обвиняемые заключены в своих башнях. Они известны, как братья Джарег, Карлат в западной башне и Квинт в восточной. Вы должны выяснить у обоих, в чем состояло их преступление и получить от них письменные клятвы. Когда клятвы будут в моих руках, я выслушаю ваш приговор. Проявите мудрость, судия, и сострадание ко всем нам...~ /*You must learn from them the nature of the crime and from them obtain their written oath. When both oaths are in my hands, I shall hear your Judgment.*/

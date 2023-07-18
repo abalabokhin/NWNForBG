@@ -1,4 +1,4 @@
-@0 = ~Well, hello <CHARNAME>. I imagine you are well pleased with yourself? This is your doing, after all.~
+@0 = ~Well, hello <CHARNAME>. I imagine you are well pleased with yourself? This is your doing, after all.~ [DESTH120]
 @1 = ~Just happy to help. We all sought a cure in our own way.~
 @2 = ~Me just a hero. Heroes do stuff like this.~
 @3 = ~I did more than you can claim. I got results.~
@@ -19,4 +19,4 @@
 @18 = ~Very well. I believe it is time for us to proceed. Let the ritual commence!~
 @19 = ~MT: Да, позвольте мне сконцентрироваться на предстоящем ритуале. До свидания. Вы должны гордиться тем, что сделали. Перед тем, как мы начнем ритуал, вы должны поговорить со всеми остальными. Наверное, они захотят вас поздравить. Это очень важно.~ /*You should speak with each of the others before we begin the ritual. They will likely want to congratulate you. Very important, I'm sure.*/
 @20 = ~MT: Конечно, это тоже имеет значение. Арибет не любит меня, поэтому с ней так трудно иметь дело. Не знаю уж, что Фентик в ней нашел, правда. Сомневаюсь, что она может как следует обосновать свое недоверие. Фентик гораздо лучше все понимает. Он знает, что вера - очень важное средство.~ /*I doubt she can provide a real proven reason for her distrust. Fenthick is more understanding. He knows that faith is a powerful tool.*/
-@21 = ~Greetings again. I can spare a moment, but we should begin the ritual as soon as you speak with everyone else. With my help, Desther will... well... it isn't important.~
+@21 = ~Greetings again. I can spare a moment, but we should begin the ritual as soon as you speak with everyone else. With my help, Desther will... well... it isn't important.~ [DESTH144]

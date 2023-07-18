@@ -1,4 +1,4 @@
-@0 = ~MT: Я молилась великому дубу о спасителе! Вы добрый <RACE>, да? Буду ли я освобождена, смогу ли слиться со своим деревом?~ /*I have prayed to the great oak for a savior! Are you <PRO_HESHE>, <PRO_RACE> one? Shall I be freed at last to rejoin my tree?*/
+@0 = ~MT: Я молилась великому дубу о спасителе! Вы добрый <RACE>, да? Буду ли я освобождена, смогу ли слиться со своим деревом?~ [NWDRYAD8] /*I have prayed to the great oak for a savior! Are you <PRO_HESHE>, <PRO_RACE> one? Shall I be freed at last to rejoin my tree?*/
 @1 = ~The sorcerer has kept you prisoner here?~
 @2 = ~Stand back! I'll have no tricks out of you, dryad!~
 @3 = ~Calm down. I am here to free you.~
@@ -29,4 +29,4 @@
 @28 = ~MT: Ваше предложение так любезно, существо <RACE>, но мне нужно только добраться до ближайшего дерева. Волшебник, который приходил в мою рощу, сказал, что любое дерево может вернуть меня домой. Я никогда не забуду вас! Молюсь о том, чтобы у меня была возможность вознаградить вас, если мы еще встретимся! Прощайте!~ /*You are most kind to offer, <PRO_RACE> one, but I need only reach the nearest tree. The wizard who came to my grove said a single tree would return me home.*/
 @29 = ~Thank you, kind <PRO_RACE> one. I shall not forget you. If we meet again, I hope I shall have the chance to reward you properly. Farewell!~
 @30 = ~I would surely only slow you down, <PRO_RACE> one, though you are most kind. I shall never forget you! If we meet again, I hope to reward you properly! Farewell!~
-@31 = ~MT: Умоляю, отпустите на свободу несчастную служанку дуба! Вы добрый <RACE>, или тоже пришли мучить меня?~ /*Oh, please let this servant of the oak be free at last! Are you kind, <PRO_RACE> one, or but another captor come to torment me?*/
+@31 = ~MT: Умоляю, отпустите на свободу несчастную служанку дуба! Вы добрый <RACE>, или тоже пришли мучить меня?~ [NWDRYAD9] /*Oh, please let this servant of the oak be free at last! Are you kind, <PRO_RACE> one, or but another captor come to torment me?*/

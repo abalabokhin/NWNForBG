@@ -1,4 +1,4 @@
-@0 = ~MT: Здравствуйте. Мое имя Баллард. Я следопыт, ищу кого-нибудь, кто заинтересован в опасном задании. Возможно, ты заинтересуешься?~ /*Hello there <PRO_GIRLBOY>. My name is Ballard. I am a ranger and I am looking for someone interested in a dangerous mission. Might you be interested?*/
+@0 = ~MT: Здравствуйте. Мое имя Баллард. Я следопыт, ищу кого-нибудь, кто заинтересован в опасном задании. Возможно, ты заинтересуешься?~ [BALLA052] /*Hello there <PRO_GIRLBOY>. My name is Ballard. I am a ranger and I am looking for someone interested in a dangerous mission. Might you be interested?*/
 @1 = ~Yes. My name is <CHARNAME>. What do you need?~
 @2 = ~I might be. Why do you ask?~
 @3 = ~Not right now thanks. Goodbye.~
@@ -22,7 +22,7 @@
 @19 = ~Then Mielikki speed your way <PRO_BROTHERSISTER>.~
 @20 = ~The Wood is to the east of here. Be sure you stop by the grove before you enter the forest proper. Aawill might have some more information for you.~
 @21 = ~Well, that's not really up to me to say, but I've never known Aawill to be stingy when it came to rewarding other people's assistance.~
-@22 = ~Welcome back. What can I do for you now?~
+@22 = ~Welcome back. What can I do for you now?~ [BALLA051]
 @23 = ~What were you needing help with again?~
 @24 = ~Where is the Neverwinter Wood?~
 @25 = ~MT: Я хочу посмотреть на твои товары.~ /*I need to see what you have in stock, druid.*/
@@ -30,6 +30,6 @@
 @27 = ~It is possible that the druids have returned in my absence, but Aawill could still use your assistance in preserving the Wood. If you are brave enough, seek Aawill in the grove near the forest's edge.~
 @28 = ~MT: Все понятно, я ухожу.~ /*Fine, I'll go.*/
 @29 = ~MT: Конечно, выбирай.~ /*Sure. Hit me.*/
-@30 = ~My friend! You have returned victorious. It gladdens my heart to know that there are heroes like you in the world.~
+@30 = ~My friend! You have returned victorious. It gladdens my heart to know that there are heroes like you in the world.~ [BALLA050]
 @31 = ~Thank you. Farewell.~
 @32 = ~The news I have heard is sad, yet I am sure you did your best. Is there anything I can do for you?~
