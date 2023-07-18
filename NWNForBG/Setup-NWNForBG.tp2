@@ -320,6 +320,12 @@ COPY ~NWNForBG/mus/84~ ~music/84~
 ADD_MUSIC ~NWN84~ ~NWNForBG/mus/84.mus~            // was 156
 
 //Areas
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY ~NWNForBG/tis_ee~ ~override~
+END ELSE BEGIN
+  COPY ~NWNForBG/tis~ ~override~
+END
+
 COPY ~NWNForBG/are~ ~override~
 
 COPY ~NWNForBG/are/nw1000.are~ ~override~
@@ -5311,8 +5317,9 @@ COPY ~NWNForBG/bmp~ ~override~
 //Portraits
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY ~NWNForBG/portraits_ee~ ~override~
-END LESE BEGIN
+END ELSE BEGIN
   COPY ~NWNForBG/portraits~ ~override~
+END
 
 //other BAM, not related to maps
 COPY ~NWNForBG/bam~ ~override~
