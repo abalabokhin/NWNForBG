@@ -1,6 +1,6 @@
-@0 = ~MT: WNW For BG~ /*Kobold B*/
-@1121 = ~MT:   ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~ /*!!Don't update instances - ON!!*/
-@1122 = ~MT:   ==> Animation %inifile%.ini file not installed.~ /*Lightening Invisible 1*/
+@0 = ~WNW For BG~
+@1121 = ~ ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
+@1122 = ~ ==> Animation %inifile%.ini file not installed.~
 @74135 = ~Peasant Woman~
 @74188 = ~MT: Бабау~ /*Toad*/
 @74524 = ~MT: Телекинез~ /*Giant*/
