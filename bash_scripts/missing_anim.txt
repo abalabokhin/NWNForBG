@@ -1,9 +1,10 @@
-+ x1001 - 0x1103 FIEND_GREEN
++ x1001 - 0x1103 FIEND_GREEN - нет такого брать из ia - вроде пишут что это TANARRI - 0x1100 - существует -
+ничего не надо делать - просто выставить правильному существу
 + x500E - 0xE267 BUGBEAR
 + x500F - 0xE266 BUGBEAR_CAPTAIN
 + x5032 - BEBILITH_NWN - нет такого - брать из ia  +
 + x5039 - 0xE24D ELEMENTAL_WATER
-+ x504A - 0xE24E GIANT_FIRE_IWD
++ x504A - 0xE24E FIRE_GIANT_IWD
 + x504B - 0xE250 GOLEM_IRON_IWD
 + x5242 - 0xE275 ISAIR
 + x5243 - 0xE277 MADAE
@@ -15,8 +16,8 @@ x5253 - 0x5253 GOBLINELITE_AXE_GREEN - из ia     +
 x5254 - GOBLINELITE_BOW_GREEN - из ia            +
 + x5257 - 0xE271 GOBLIN_SHAMAN
 + x525A - 0xE274 HOOK_HORROR
-+ x525F - 0xE279 OROG_SHAMAN
-+ x5262 - 0xE280 WORG
++ x525F - 0xE279 OROG_SHAMAN   - из ia
++ x5262 - 0xE280 WORG_IWD
 + x5269 - 0xE252 HARPY
 x526D - AMEL_PC_NWN - из ia                      +
 + x5279 - 0xE240 ANIMATED_PLATE_BRONZE
@@ -31,7 +32,7 @@ x5290 - SUCCUBUS_NWN из ia                       +
 + x5B01 - 0x7F45 LAGOON_CREATURE
 + x5B06 - 0x7F5A ABISHAI_RED
 x5B07 - DISPLACER_BEAST из ia                    +
-+ x5C01 - 0x7F47 GIANT_FIRE_2
++ x5C01 - 0x7F47 FIRE_GIANT_2
 x5C03 - GIANT_FIRE_FEMALE из ia                  +
 x5D4D - 0x5DBB TOWNIE_CURST_MALE_PST из ia     +
 x5D4E - 0x5DBC DUSTMAN_FEMALE_PST из ia         +
