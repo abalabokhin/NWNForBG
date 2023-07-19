@@ -47,6 +47,77 @@ LANGUAGE ~English~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
+/*ACTION_FOR_EACH animation IN
+  ~nwn_succubus~
+SILENT
+
+    LAF ~GW_FIND_FREE_ANIM_SLOT~ STR_VAR GWFormatAnim = BG2SPLIT RET slot END
+    ACTION_IF (slot < 0) BEGIN
+        WARN @1141  // ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
+    END ELSE BEGIN
+        LAF ~TO_HEX_NUMBER~ INT_VAR value = slot minDigits = 4 RET hexNumber END
+        APPEND ~animate.ids~ ~0x%hexNumber% %GWNewAnim%~ UNLESS ~%GWNewAnim%~
+        OUTER_SPRINT $GWNewIni(~%GWNewAnim%~) EVAL "%hexNumber%"
+        CLEAR_IDS_MAP
+    END
+END
+
+
+// Install new animations from Infinity-Animations - this doesn't work for now
+ACTION_FOR_EACH animation IN 
+  ~ccp_displacer_beast~
+  ~dustman_female~
+  ~dustman_male~
+  ~elff_mage1~
+  ~godsman~
+  ~harlot~
+  ~hf_mage~
+  ~hf_thief~
+  ~hm_ninja~
+  ~iwd2_goblin_elite_axe_green~
+  ~iwd2_goblin_elite_bow_green~
+  ~merchant~
+  ~nwn_amel~
+  ~nwn_bebilith~
+  ~nwn_giant_fire_female~
+  ~nwn_succubus~
+  ~skeleton_priest~
+  ~skeleton_worker~
+  ~thief_male_human~
+  ~thug~
+  ~townie_curst_male~
+  ~townie_lower_class_female~
+  ~townie_lower_class_male~
+  ~townie_upper_class_female~
+  ~townie_upper_class_male~
+  ~townie_wizard~
+BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~^.+\.bam$~ BEGIN
+        // We copy only the files we do need.
+        ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+            ACTION_TO_LOWER %BASH_FOR_FILE%
+            COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+        END
+    END
+END
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/ia_ini~ ~^.+\.ini$~ BEGIN
+    OUTER_SPRINT inifile EVAL "%BASH_FOR_RES%"
+    ACTION_TO_UPPER inifile
+    // Gives each new .ini file its right name (its animation slot index)
+    ACTION_IF VARIABLE_IS_SET $GWNewIni(~%inifile%~) BEGIN
+        SILENT
+        OUTER_SPRINT GW_nv_ini $GWNewIni(~%inifile%~)
+        COPY ~%BASH_FOR_FILESPEC%~ ~override/%GW_nv_ini%.ini~
+        PRINT @1121  // ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
+    END ELSE BEGIN
+        PRINT @1122  // ~  ==> Animation %inifile%.ini file not installed.~
+    END
+END
+
+*/
+
+
 //Videos
 COPY ~NWNForBG/movies~ ~movies~
 
@@ -5240,60 +5311,6 @@ COPY ~NWNForBG/cre/zor.cre~ ~override~
   SAY 0x10C	@104299
   SAY 0x110	@104300
   SAY 0x114	@104301
-
-/*
-// Install new animations from Infinity-Animations - this doesn't work for now
-ACTION_FOR_EACH animation IN 
-  ~ccp_displacer_beast~
-  ~dustman_female~
-  ~dustman_male~
-  ~elff_mage1~
-  ~godsman~
-  ~harlot~
-  ~hf_mage~
-  ~hf_thief~
-  ~hm_ninja~
-  ~iwd2_goblin_elite_axe_green~
-  ~iwd2_goblin_elite_bow_green~
-  ~merchant~
-  ~nwn_amel~
-  ~nwn_bebilith~
-  ~nwn_giant_fire_female~
-  ~nwn_succubus~
-  ~skeleton_priest~
-  ~skeleton_worker~
-  ~thief_male_human~
-  ~thug~
-  ~townie_curst_male~
-  ~townie_lower_class_female~
-  ~townie_lower_class_male~
-  ~townie_upper_class_female~
-  ~townie_upper_class_male~
-  ~townie_wizard~
-BEGIN
-    ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~^.+\.bam$~ BEGIN
-        // We copy only the files we do need.
-        ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
-            ACTION_TO_LOWER %BASH_FOR_FILE%
-            COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
-        END
-    END
-END
-
-ACTION_BASH_FOR ~%MOD_FOLDER%/ia_ini~ ~^.+\.ini$~ BEGIN
-    OUTER_SPRINT inifile EVAL "%BASH_FOR_RES%"
-    ACTION_TO_UPPER inifile
-    // Gives each new .ini file its right name (its animation slot index)
-    ACTION_IF VARIABLE_IS_SET $GWNewIni(~%inifile%~) BEGIN
-        SILENT
-        OUTER_SPRINT GW_nv_ini $GWNewIni(~%inifile%~)
-        COPY ~%BASH_FOR_FILESPEC%~ ~override/%GW_nv_ini%.ini~
-        PRINT @1121  // ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
-    END ELSE BEGIN
-        PRINT @1122  // ~  ==> Animation %inifile%.ini file not installed.~
-    END
-END
-*/
 
 //Set animation for creatures
 INCLUDE ~NWNForBG/lib/anim_for_cre_dummy.tph~

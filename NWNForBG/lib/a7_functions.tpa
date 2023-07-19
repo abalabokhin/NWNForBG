@@ -1,0 +1,223 @@
+/*============================================================================================================== *
+ *  v 6.0.0                                                                                                      *
+ *                                                                                                               *
+ *        F U N C T I O N S    U S E D    T O    A D D    N E W    C R E A T U R E    A N I M A T I O N S        *
+ *                                                                                                               *
+ *                   Courtesy of Argent77 - Modified by Gwendolyne for Infinity Animations                       *
+ *============================================================================================================== */
+
+/* ================================================================================================================================================================================ *
+ *  LIST of (LISTE des) FUNCTIONS                                                                                                                                                   *
+ * -------------------------------                                                                                                                                                  *
+ *  - FUNCTION HEX_TO_DEC_NUMBER    :   CONVERSION d'une valeur hexadécimale en valeur décimale - CONVERTS a hexadecimal value back into a decimal number.          => line #  19   *
+ *  - FUNCTION TO_HEX_NUMBER        :   CONVERSION d'un nombre décimal en valeur hexadécimale   - CONVERTS any positive decimal number into a hexadecimal number.   => line #  95   *
+ *  - FUNCTION FIND_FREE_ANIM_SLOT  :   Function for handling creature animation slots.                                                                             => line # 142   *
+ * ================================================================================================================================================================================ */
+
+
+/* ======================================================================================= *
+ *  FUNCTION HEX_TO_DEC_NUMBER : CONVERTS a hexadecimal value back into a decimal number.  *
+ * --------------------------------------------------------------------------------------- *
+ *  STR_VAR hexNumber  = A string containing a hexadecimal number without prefix.          *
+ *  RET     value      = The resulting decimal number as int value. Returns -1 on error.   *
+ * ======================================================================================= */
+
+DEFINE_ACTION_FUNCTION ~HEX_TO_DEC_NUMBER~
+    STR_VAR hexNumber = ~~
+    RET     dec_value
+BEGIN
+
+	OUTER_SET dec_value = "-1"
+
+	ACTION_IF (~%hexNumber%~ STRING_EQUAL "") BEGIN
+
+		OUTER_SET dec_value = 0
+
+	END ELSE BEGIN
+
+		// checking for sign
+		ACTION_IF (~%hexNumber%~ STRING_MATCHES_REGEXP ~-.+~ = 0) BEGIN
+			OUTER_SET signed = 1
+			OUTER_PATCH_SAVE hexNumber ~%hexNumber%~ BEGIN REPLACE_TEXTUALLY ~^-~ ~~ END
+		END ELSE BEGIN
+			OUTER_SET signed = 0
+		END
+
+		// checking for prefix
+		ACTION_IF (~%hexNumber%~ STRING_MATCHES_REGEXP ~^0[xX].+~ = 0) BEGIN
+			OUTER_PATCH_SAVE hexNumber ~%hexNumber%~ BEGIN REPLACE_TEXTUALLY ~^0[xX]~ ~~ END
+		END
+
+		// converting number
+		OUTER_SET curValue = 0
+		OUTER_SET scale = 1
+		OUTER_SET strlen = STRING_LENGTH ~%hexNumber%~
+		OUTER_FOR (idx = strlen - 1; idx >= 0; --idx) BEGIN
+			OUTER_PATCH ~%hexNumber%~ BEGIN READ_BYTE idx hexDigit END
+			OUTER_SET hexDigit = hexDigit BAND 0xff
+			ACTION_IF (hexDigit >= 48 AND hexDigit <= 57) BEGIN				// 0..9
+				OUTER_SET digit = hexDigit - 48
+			END ELSE ACTION_IF (hexDigit >= 65 AND hexDigit <= 70) BEGIN	// A..F
+				OUTER_SET digit = hexDigit - 55
+			END ELSE ACTION_IF (hexDigit >= 97 AND hexDigit <= 102) BEGIN	// a..f
+				OUTER_SET digit = hexDigit - 87
+			END ELSE BEGIN
+				OUTER_SET digit = 0
+			END
+			OUTER_SET curValue += digit * scale
+			OUTER_SET scale = scale BLSL 4
+		END
+
+		ACTION_IF (signed) BEGIN
+			OUTER_SET curValue = 0 - curValue
+		END
+
+		OUTER_SET dec_value = curValue
+
+	END	// of ACTION_IF (~%hexNumber%~ STRING_EQUAL "")
+
+END	// of DEFINE_ACTION_FUNCTION
+
+// As patch function
+DEFINE_PATCH_FUNCTION ~HEX_TO_DEC_NUMBER~
+    STR_VAR hexNumber = ~~
+    RET     dec_value
+BEGIN
+
+	INNER_ACTION BEGIN
+		LAF ~HEX_TO_DEC_NUMBER~ STR_VAR hexNumber = EVAL ~%hexNumber%~ RET dec_value END
+	END
+
+END
+
+
+/* =================================================================================================================== *
+ *  FUNCTION TO_HEX_NUMBER : CONVERTS any positive decimal number into a hexadecimal number.                           *
+ * ------------------------------------------------------------------------------------------------------------------- *
+ *  INT_VAR value      = A positive numeric value to convert.                                                          *
+ *          minDigits  = The minimum number of digits for the returned value. Smaller numbers are padded with zeroes.  *
+ *  RET     hexNumber  = The hexadecimal representation of the number as string. Returns empty string on error.        *
+ * =================================================================================================================== */
+
+DEFINE_ACTION_FUNCTION ~TO_HEX_NUMBER~
+    INT_VAR value     = 0       // any positive decimal number
+            minDigits = 1       // min. number of digits in return value
+    RET     hexNumber           // returned as string without prefix
+BEGIN
+
+	ACTION_IF (minDigits < 1) BEGIN OUTER_SET minDigits = 1 END
+	ACTION_IF (minDigits > 8) BEGIN OUTER_SET minDigits = 8 END
+	OUTER_TEXT_SPRINT hexNumber ~~
+	ACTION_DEFINE_ARRAY digit BEGIN ~0~ ~1~ ~2~ ~3~ ~4~ ~5~ ~6~ ~7~ ~8~ ~9~ ~a~ ~b~ ~c~ ~d~ ~e~ ~f~ END
+
+	OUTER_SET remainder = value BAND 0x7fffffff	// no negative numbers allowed
+	OUTER_WHILE (remainder != 0) BEGIN
+		OUTER_SET curDigit = remainder BAND 0xf
+		OUTER_SET remainder = remainder BLSR 4
+		OUTER_TEXT_SPRINT hexDigit $EVAL digit(~%curDigit%~)
+		OUTER_TEXT_SPRINT hexNumber ~%hexDigit%%hexNumber%~
+	END
+
+	OUTER_WHILE (STRING_LENGTH ~%hexNumber%~ < minDigits) BEGIN
+		OUTER_TEXT_SPRINT hexNumber ~0%hexNumber%~
+	END
+
+END
+
+// As patch function
+DEFINE_PATCH_FUNCTION ~TO_HEX_NUMBER~
+    INT_VAR value     = 0
+            minDigits = 1
+    RET     hexNumber
+BEGIN
+
+	INNER_ACTION BEGIN
+		LAF ~TO_HEX_NUMBER~ INT_VAR value = value minDigits = minDigits RET hexNumber END
+	END
+
+END
+
+
+/* ========================================================================================================================================================= *
+ *  FUNCTION FIND_FREE_ANIM_SLOT : Function for handling creature animation slots.                                                                           *
+ * --------------------------------------------------------------------------------------------------------------------------------------------------------- *
+ *  Returns the first free creature animation slot in the range defined by slotMin and slotMax.                                                              *
+ * --------------------------------------------------------------------------------------------------------------------------------------------------------- *
+ *  STR_VAR hexNumber  = A string containing a hexadecimal number without prefix.                                                                            *
+ *  INT_VAR slotMin    = Lowest available creature animation slot for the animation.                                                                         *
+ *          slotMax    = Highest available creature animation slot for the animation.                                                                        *
+ *          slotSteps  = How many slots to skip after each iteration, starting from slotMin.                                                                 *
+ *                       Setting this parameter is useful if compatible animation slots are always a fixed distance apart (e.g. at a distance of 0x10 each). *
+ *  RET slot           = A free animation slot. Returns -1 if none found.                                                                                    *
+ * ========================================================================================================================================================= */
+
+/* Animation slots reserved by vanilla or mod-added game creatures (in hexadecimal format)
+Supported mods:
+- Ulb's Bearwalker + extended Werebear animation (0x5294 and 0x5295 in IA): 0xe330 (Werebear) in EE.
+- Pack Mule (0x5293) : 0xe6fe in EE.
+- Reserved for EE games compatibility: 0xe268 (CHIMERA), 0xe269 (HALFDRAGON_BLACK), 0xe26c (ELEMENTAL_WATER_SMALL), 0xe275 (ISAIR), 0xe277 (MADAE), 0xe278 (MALARITE), 0xe27a (ORC_AXE_UNDEAD), 0xe27b (ORC_SHAMAN_UNDEAD), 0xe27c (SHENRICAL), 0xe284 (INVISIBLE_SMALL), 0xe285 (INVISIBLE_MEDIUM), 0xe286 (INVISIBLE_LARGE), 0xe287 (INVISIBLE_GIANT).
+*/
+<<<<<<<< .../inlined/creature/animation/slots.txt
+"0410" "1000" "1003" "1004" "1100" "1101" "1102" "1103" "1104" "1105" "1200" "1201" "1202" "1203" "1204" "1205" "1206" "1207" "1208" "1300" "2000" "2100" "2200" "2300" "3000" "3001" "4000" "4001" "4002" "4010" "4012" "4100" "4101" "4102" "4110" "4112" "4200" "4300" "4400" "4410" "4500" "4600" "4700" "4710" "4800" "5000" "5001" "5002" "5003" "5010" "5011" "5012" "5013" "5100" "5101" "5102" "5103" "5110" "5111" "5112" "5113" "5200" "5201" "5202" "5210" "5211" "5212" "5300" "5301" "5302" "5303" "5310" "5311" "5312" "5313" "6000" "6001" "6002" "6003" "6004" "6005" "6010" "6011" "6012" "6013" "6014" "6015" "6100" "6101" "6102" "6103" "6104" "6105" "6110" "6111" "6112" "6113" "6114" "6115" "6200" "6201" "6202" "6204" "6205" "6210" "6211" "6212" "6214" "6215" "6300" "6301" "6302" "6303" "6304" "6305" "6310" "6311" "6312" "6313" "6314" "6315" "6400" "6401" "6402" "6403" "6404" "6405" "6406" "6500" "6510" "6621" "7000" "7001" "7100" "7101" "7200" "7201" "7202" "7203" "7300" "7301" "7302" "7310" "7311" "7312" "7313" "7314" "7320" "7321" "7400" "7401" "7402" "7500" "7501" "7600" "7601" "7602" "7603" "7604" "7700" "7701" "7702" "7703" "7800" "7801" "7802" "7900" "7901" "7902" "7903" "7904" "7a00" "7a01" "7a02" "7a03" "7a04" "7b00" "7b01" "7b02" "7b03" "7b04" "7b05" "7b06" "7c00" "7c01" "7d00" "7d01" "7d02" "7d03" "7d04" "7d05" "7d06" "7d07" "7d08" "7e00" "7e01" "7f00" "7f01" "7f02" "7f03" "7f04" "7f05" "7f06" "7f07" "7f08" "7f09" "7f0a" "7f0b" "7f0c" "7f0d" "7f0e" "7f0f" "7f10" "7f11" "7f12" "7f13" "7f14" "7f15" "7f16" "7f17" "7f18" "7f19" "7f20" "7f21" "7f22" "7f23" "7f24" "7f27" "7f28" "7f29" "7f2a" "7f2b" "7f2c" "7f2d" "7f2e" "7f2f" "7f30" "7f31" "7f32" "7f33" "7f34" "7f35" "7f36" "7f37" "7f38" "7f39" "7f3a" "7f3b" "7f3c" "7f3d" "7f3e" "7f3f" "7f40" "7f41" "7f42" "7f43" "7f44" "7f45" "7f46" "7f47" "7f48" "7f49" "7f4a" "7f4b" "7f4c" "7f4d" "7f4e" "7f4f" "7f50" "7f51" "7f52" "7f53" "7f54" "7f55" "7f56" "7f57" "7f58" "7f59" "7f5a" "7f5b" "7f5c" "7f5d" "7f5e" "7f5f" "7f60" "7f61" "7f62" "8000" "8100" "8200" "9000" "a000" "a100" "a200" "a201" "a202" "b000" "b100" "b200" "b210" "b300" "b310" "b400" "b410" "b500" "b510" "b600" "b610" "b700" "c000" "c100" "c200" "c300" "c400" "c500" "c600" "c610" "c700" "c710" "c800" "c810" "c900" "c910" "ca00" "ca10" "cb00" "cc00" "cc01" "cc02" "cc04" "d000" "d100" "d200" "d300" "d400" "e000" "e010" "e020" "e040" "e050" "e060" "e070" "e080" "e090" "e0a0" "e0b0" "e0c0" "e0d0" "e0e0" "e0f0" "e0f1" "e0f2" "e200" "e210" "e220" "e230" "e240" "e241" "e242" "e243" "e244" "e245" "e246" "e247" "e248" "e249" "e24a" "e24b" "e24c" "e24d" "e24e" "e24f" "e250" "e251" "e252" "e253" "e254" "e255" "e256" "e257" "e258" "e259" "e25a" "e25b" "e25c" "e25d" "e25e" "e25f" "e260" "e261" "e262" "e263" "e264" "e265" "e266" "e267" 
+"e268" "e269" 
+"e26a" "e26b" 
+"e26c"
+"e26d" "e26e" "e26f" "e270" "e271" "e272" "e273" "e274" 
+"e275"
+"e276" 
+"e277" "e278"
+"e279" 
+"e27a" "e27b" "e27c" 
+"e27d" "e27e" "e27f" "e280" "e281" "e282" "e283" 
+"e284" "e285" "e286" "e287" 
+"e288" "e289" "e28a" "e28b" "e28c" "e28d" "e28e" "e28f" "e290" "e291" "e292" "e293" "e294" "e300" "e310" "e320" "e330" "e400" "e410" "e420" "e430" "e440" "e441" "e442" "e443" "e444" "e500" "e510" "e520" "e600" "e610" "e6fe" "e700" "e710" "e720" "e800" "e810" "e820" "e830" "e840" "e900" "e910" "ea00" "ea10" "ea20" "eb00" "eb10" "eb20" "ec00" "ec10" "ec20" "ed00" "ed10" "ed20" "ee00" "ee10" "ef10"
+>>>>>>>>
+OUTER_TEXT_SPRINT animationSlotsPath ".../inlined/creature/animation/slots.txt"
+
+DEFINE_ACTION_FUNCTION ~FIND_FREE_ANIM_SLOT~
+    INT_VAR slotMin   = 0
+            slotMax   = (slotMin BAND 0xf000) + 0x1000
+            slotSteps = 1
+    RET     slot
+BEGIN
+
+	OUTER_SET slot = "-1"
+	ACTION_IF (slotSteps < 1) BEGIN OUTER_SET slotSteps = 1 END
+	ACTION_IF (slotMin < 0) BEGIN OUTER_SET slotMin = 0 END
+	ACTION_IF (slotMax < 0) BEGIN OUTER_SET slotMax = 0 END
+	ACTION_IF (slotMax < slotMin) BEGIN
+		OUTER_SET tmp = slotMin
+		OUTER_SET slotMin = slotMax
+		OUTER_SET slotMax = tmp
+	END
+
+	// animslots.txt contains reserved creature animation slots
+	COPY - ~%animationSlotsPath%~ ~%animationSlotsPath%~
+		READ_ASCII 0 slotList (SOURCE_SIZE)
+		FOR (idx = slotMin; idx < slotMax; idx += slotSteps) BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT name ~animate~ idx
+			PATCH_IF (~%name%~ STRING_EQUAL ~%idx%~) BEGIN
+				LPF ~TO_HEX_NUMBER~ INT_VAR value = idx minDigits = 4 RET hexNumber END
+				PATCH_IF (NOT FILE_EXISTS_IN_GAME ~%hexNumber%.ini~ AND 
+						  ~%slotList%~ STRING_CONTAINS_REGEXP ~"%hexNumber%"~ != 0) BEGIN
+					SET slot = idx
+					SET idx = slotMax
+				END
+			END
+		END
+
+END
+
+// As patch function
+DEFINE_PATCH_FUNCTION ~FIND_FREE_ANIM_SLOT~
+    INT_VAR slotMin   = 0
+            slotMax   = (slotMin BAND 0xf000) + 0x1000
+            slotSteps = 1
+    RET     slot
+BEGIN
+
+	INNER_ACTION BEGIN
+		LAF ~FIND_FREE_ANIM_SLOT~ INT_VAR slotMin = slotMin slotMax = slotMax slotSteps = slotSteps RET slot END
+	END
+
+END
