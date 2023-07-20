@@ -47,6 +47,33 @@ LANGUAGE ~English~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
+// Install all animatins. It is only valid for ee.
+// For classic version: TODO: requier Infinite Animation mod installed.
+
+// First: install animation that exists in ee animate.ids, but ini file and animation files themselved might not
+// exist in the game.
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    ACTION_FOR_EACH animation IN
+      ~abishai~
+      ~bugbear~
+      ~bugbear_captain~
+      ~goblin_shaman~
+      ~hook_horor~
+      ~isair~
+      ~madae~
+      ~malarite~
+      ~wererat~
+      ~worg~
+    BEGIN
+        ACTION_BASH_FOR ~%MOD_FOLDER%/missing_anim_ee/%animation%~ ~.+$~ BEGIN
+            // We copy only the files we do need.
+            ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+                COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+            END
+        END
+    END
+END
+
 /*ACTION_FOR_EACH animation IN
   ~nwn_succubus~
 SILENT
