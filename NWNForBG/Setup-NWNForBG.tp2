@@ -5314,6 +5314,7 @@ COPY ~NWNForBG/cre/zor.cre~ ~override~
 
 //Set animation for creatures
 INCLUDE ~NWNForBG/lib/anim_for_cre_dummy.tph~
+INCLUDE ~NWNForBG/lib/anim_for_cre.tph~
 
 //Sounds
 LAF HANDLE_AUDIO END
