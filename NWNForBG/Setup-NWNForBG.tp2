@@ -50,6 +50,9 @@ DESIGNATED 0 LABEL ~NWN_MainComponent~
 // Install all animatins. It is only valid for ee.
 // For classic version: TODO: requier Infinite Animation mod installed.
 
+INCLUDE ~NWNForBG/lib/a7_functions.tpa~
+INCLUDE ~NWNForBG/lib/gw_functions.tpa~
+
 // First: install animation that exists in ee animate.ids, but ini file and animation files themselved might not
 // exist in the game.
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
@@ -120,14 +123,15 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
       ~townie_upper_class_male~
       ~townie_wizard~*/
     BEGIN
-        LAF ~GW_FIND_FREE_ANIM_SLOT~ STR_VAR GWFormatAnim = BG2SPLIT RET slot END
+        LAF ~FIND_FREE_ANIM_SLOT~ STR_VAR GWFormatAnim = BG2SPLIT RET slot END
         ACTION_IF (slot < 0) BEGIN
             WARN @1141  // ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
         END ELSE BEGIN
             LAF ~TO_HEX_NUMBER~ INT_VAR value = slot minDigits = 4 RET hexNumber END
             APPEND ~animate.ids~ ~0x%hexNumber% %GWNewAnim%~ UNLESS ~%GWNewAnim%~
             CLEAR_IDS_MAP
-            OUTER_PATCH_SAVE hexNumber $IDS_OF_SYMBOL (~animate~ ~%GWNewAnim%~) BEGIN
+            OUTER_SET idds = IDS_OF_SYMBOL (~animate~ ~%GWNewAnim%~)
+            OUTER_PATCH_SAVE hexNumber ~%idds%~ BEGIN
                 REPLACE_TEXTUALLY CASE_SENSITIVE ~0x~ ~~
             END
             OUTER_SPRINT $GWNewIni(~%GWNewAnim%~) EVAL "%hexNumber%"
