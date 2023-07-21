@@ -127,19 +127,21 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         ACTION_IF (slot < 0) BEGIN
             WARN @1141  // ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
         END ELSE BEGIN
+            OUTER_TEXT_SPRINT upp_anim ~%animation%~
+            ACTION_TO_UPPER upp_anim
             LAF ~TO_HEX_NUMBER~ INT_VAR value = slot minDigits = 4 RET hexNumber END
-            APPEND ~animate.ids~ ~0x%hexNumber% %GWNewAnim%~ UNLESS ~%GWNewAnim%~
+            APPEND ~animate.ids~ ~0x%hexNumber% %upp_anim%~ UNLESS ~%upp_anim%~
             CLEAR_IDS_MAP
-            OUTER_SET idds = IDS_OF_SYMBOL (~animate~ ~%GWNewAnim%~)
+            OUTER_SET idds = IDS_OF_SYMBOL (~animate~ ~%upp_anim%~)
             OUTER_PATCH_SAVE hexNumber ~%idds%~ BEGIN
                 REPLACE_TEXTUALLY CASE_SENSITIVE ~0x~ ~~
             END
-            OUTER_SPRINT $GWNewIni(~%GWNewAnim%~) EVAL "%hexNumber%"
+            OUTER_SPRINT $GWNewIni(~%upp_anim%~) EVAL "%hexNumber%"
             CLEAR_IDS_MAP
         END
 
         ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~^.+\.bam$~ BEGIN
-	// We copy only the files we do need.
+        // We copy only the files we do need.
             ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
                 ACTION_TO_LOWER %BASH_FOR_FILE%
                 COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
