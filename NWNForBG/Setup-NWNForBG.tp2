@@ -94,7 +94,6 @@ END
 /*ACTION_FOR_EACH animation IN
   ~nwn_succubus~
 SILENT
-
     LAF ~GW_FIND_FREE_ANIM_SLOT~ STR_VAR GWFormatAnim = BG2SPLIT RET slot END
     ACTION_IF (slot < 0) BEGIN
         WARN @1141  // ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
