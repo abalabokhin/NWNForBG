@@ -54,16 +54,33 @@ DESIGNATED 0 LABEL ~NWN_MainComponent~
 // exist in the game.
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ACTION_FOR_EACH animation IN
-      ~abishai~
-      ~bugbear~
-      ~bugbear_captain~
-      ~goblin_shaman~
-      ~hook_horor~
-      ~isair~
-      ~madae~
-      ~malarite~
-      ~wererat~
-      ~worg~
+        ~abishai_red~
+        ~animated_plate_bronze~
+        ~arundel~
+        ~barbarian_shaman_staff~
+        ~barbarian_warrior_brown~
+        ~barbarian_warrior_tan~
+        ~bugbear~
+        ~bugbear_captain~
+        ~creeping_doom~
+        ~elemental_water~
+        ~feyr~
+        ~giant_fire_2~
+        ~giant_fire_iwd~
+        ~goblin_captain~
+        ~goblin_shaman~
+        ~golem_iron_iwd~
+        ~harpy~
+        ~hook_horror~
+        ~isair~
+        ~lagoon_creature~
+        ~madae~
+        ~malarite~
+        ~orog_shaman~
+        ~tundra_yeti~
+        ~wererat~
+        ~wight_barrow~
+        ~worg~
     BEGIN
         ACTION_BASH_FOR ~%MOD_FOLDER%/missing_anim_ee/%animation%~ ~.+$~ BEGIN
             // We copy only the files we do need.
