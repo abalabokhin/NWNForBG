@@ -95,7 +95,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 
 // Install new animations from Infinity-Animations - this doesn't work for now
     ACTION_FOR_EACH animation IN 
-      ~nwn_succubus~
+      ~succubus_nwn~
 /*    ~ccp_displacer_beast~
       ~dustman_female~
       ~dustman_male~
@@ -123,7 +123,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
       ~townie_upper_class_male~
       ~townie_wizard~*/
     BEGIN
-        LAF ~FIND_FREE_ANIM_SLOT~ STR_VAR GWFormatAnim = BG2SPLIT RET slot END
+        LAF ~FIND_FREE_ANIM_SLOT~ INT_VAR slotMin = 0x1000 STR_VAR GWFormatAnim = BG2SPLIT RET slot END
         ACTION_IF (slot < 0) BEGIN
             WARN @1141  // ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
         END ELSE BEGIN
@@ -132,25 +132,24 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
             LAF ~TO_HEX_NUMBER~ INT_VAR value = slot minDigits = 4 RET hexNumber END
             APPEND ~animate.ids~ ~0x%hexNumber% %upp_anim%~ UNLESS ~%upp_anim%~
             CLEAR_IDS_MAP
-            OUTER_SET idds = IDS_OF_SYMBOL (~animate~ ~%upp_anim%~)
-            OUTER_PATCH_SAVE hexNumber ~%idds%~ BEGIN
-                REPLACE_TEXTUALLY CASE_SENSITIVE ~0x~ ~~
-            END
-            OUTER_SPRINT $GWNewIni(~%upp_anim%~) EVAL "%hexNumber%"
+            OUTER_SET slot = IDS_OF_SYMBOL (~animate~ ~%upp_anim%~)
+            LAF ~TO_HEX_NUMBER~ INT_VAR value = slot minDigits = 4 RET hexNumber END
+            //OUTER_PATCH_SAVE hexNumber ~%idds%~ BEGIN
+            //    REPLACE_TEXTUALLY CASE_SENSITIVE ~0x~ ~~
+            //END
             CLEAR_IDS_MAP
-        END
 
-        ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~^.+\.bam$~ BEGIN
-        // We copy only the files we do need.
-            ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
-                ACTION_TO_LOWER %BASH_FOR_FILE%
-                COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+            ACTION_BASH_FOR ~%MOD_FOLDER%/ia_cre/%animation%~ ~.+$~ BEGIN
+            // We copy only the files we do need.
+                ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+                    ACTION_TO_LOWER %BASH_FOR_FILE%
+                    COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+                END
             END
-        END
-    END
 
-    ACTION_BASH_FOR ~%MOD_FOLDER%/ia_ini~ ~^.+\.ini$~ BEGIN
-        OUTER_SPRINT inifile EVAL "%BASH_FOR_RES%"
+            COPY ~%MOD_FOLDER%/ia_ini/%animation%.ini~ ~override/%hexNumber%.ini~
+
+/*        OUTER_SPRINT inifile EVAL "%BASH_FOR_RES%"
         ACTION_TO_UPPER inifile
         // Gives each new .ini file its right name (its animation slot index)
         ACTION_IF VARIABLE_IS_SET $GWNewIni(~%inifile%~) BEGIN
@@ -160,7 +159,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
             PRINT @1121  // ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
         END ELSE BEGIN
             PRINT @1122  // ~  ==> Animation %inifile%.ini file not installed.~
-        END
+        END*/
+	END
     END
 END
 
