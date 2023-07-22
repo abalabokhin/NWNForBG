@@ -93,10 +93,13 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         END
     END
 
-// Install new animations from Infinity-Animations - this doesn't work for now
-    ACTION_FOR_EACH animation IN 
-      ~succubus_nwn~
-/*    ~ccp_displacer_beast~
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY anim_to_min_slot BEGIN
+        ~succubus_nwn~ => ~0xe000~
+    END
+
+    ACTION_PHP_EACH anim_to_min_slot AS animation => min_slot
+/*    ~succubus_nwn~
+      ~ccp_displacer_beast~
       ~dustman_female~
       ~dustman_male~
       ~elff_mage1~
@@ -123,7 +126,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
       ~townie_upper_class_male~
       ~townie_wizard~*/
     BEGIN
-        LAF ~FIND_FREE_ANIM_SLOT~ INT_VAR slotMin = 0x1000 STR_VAR GWFormatAnim = BG2SPLIT RET slot END
+        PRINT ~%animation% %min_slot%~
+        LAF ~FIND_FREE_ANIM_SLOT~ INT_VAR slotMin = min_slot STR_VAR GWFormatAnim = BG2SPLIT RET slot END
         ACTION_IF (slot < 0) BEGIN
             WARN @1141  // ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
         END ELSE BEGIN
