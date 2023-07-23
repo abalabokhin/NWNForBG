@@ -94,12 +94,19 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     END
 
     ACTION_DEFINE_ASSOCIATIVE_ARRAY anim_to_min_slot BEGIN
+        ~amel_pc_nwn~ => ~0xe000~
+        ~bebilith_nwn~ => ~0xe000~
+        ~displacer_beast~ => ~0x7000~
+        ~giant_fire_female~ => ~0x7000~
+        ~goblinelite_axe_green~ => ~0xe000~
+        ~goblinelite_bow_green~ => ~0xe000~
+        ~skeleton_priest_pst~ => ~0x7000~
+        ~skeleton_worker_pst~ => ~0x7000~
         ~succubus_nwn~ => ~0xe000~
     END
 
     ACTION_PHP_EACH anim_to_min_slot AS animation => min_slot
-/*    ~succubus_nwn~
-      ~ccp_displacer_beast~
+/*   
       ~dustman_female~
       ~dustman_male~
       ~elff_mage1~
@@ -108,15 +115,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
       ~hf_mage~
       ~hf_thief~
       ~hm_ninja~
-      ~iwd2_goblin_elite_axe_green~
-      ~iwd2_goblin_elite_bow_green~
       ~merchant~
-      ~nwn_amel~
-      ~nwn_bebilith~
-      ~nwn_giant_fire_female~
-      ~nwn_succubus~
-      ~skeleton_priest~
-      ~skeleton_worker~
       ~thief_male_human~
       ~thug~
       ~townie_curst_male~
