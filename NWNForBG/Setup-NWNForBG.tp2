@@ -96,34 +96,35 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY anim_to_min_slot BEGIN
         ~amel_pc_nwn~ => ~0xe000~
         ~bebilith_nwn~ => ~0xe000~
+        ~succubus_nwn~ => ~0xe000~
         ~displacer_beast~ => ~0x7000~
         ~giant_fire_female~ => ~0x7000~
         ~goblinelite_axe_green~ => ~0xe000~
         ~goblinelite_bow_green~ => ~0xe000~
+        ~dustman_female_pst~ => ~0x7000~
+        ~dustman_male_pst~ => ~0x7000~
+        ~godsman_pst~ => ~0x7000~
+        ~harlot_pst~ => ~0x7000~
+        ~merchant_pst~ => ~0x7000~
         ~skeleton_priest_pst~ => ~0x7000~
         ~skeleton_worker_pst~ => ~0x7000~
-        ~succubus_nwn~ => ~0xe000~
+        ~thug_pst~ => ~0x7000~
+        ~townie_curst_male_pst~ => ~0x7000~
+        ~townie_lower_class_female_pst~ => ~0x7000~
+        ~townie_lower_class_male_pst~ => ~0x7000~
+        ~townie_upper_class_female_pst~ => ~0x7000~
+        ~townie_upper_class_male_pst~ => ~0x7000~
+        ~townie_wizard_pst~ => ~0x7000~
     END
 
     ACTION_PHP_EACH anim_to_min_slot AS animation => min_slot
-/*   
-      ~dustman_female~
-      ~dustman_male~
+/*
       ~elff_mage1~
-      ~godsman~
-      ~harlot~
       ~hf_mage~
       ~hf_thief~
       ~hm_ninja~
-      ~merchant~
       ~thief_male_human~
-      ~thug~
-      ~townie_curst_male~
-      ~townie_lower_class_female~
-      ~townie_lower_class_male~
-      ~townie_upper_class_female~
-      ~townie_upper_class_male~
-      ~townie_wizard~*/
+*/
     BEGIN
         OUTER_TEXT_SPRINT upp_anim ~%animation%~
         ACTION_TO_UPPER upp_anim
