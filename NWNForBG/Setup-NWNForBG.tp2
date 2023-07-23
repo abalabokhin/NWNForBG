@@ -5348,7 +5348,6 @@ COPY ~NWNForBG/cre/zor.cre~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 //Set animation for creatures only for ee
-    INCLUDE ~NWNForBG/lib/anim_for_cre_dummy.tph~
     INCLUDE ~NWNForBG/lib/anim_for_cre.tph~
 END
 
