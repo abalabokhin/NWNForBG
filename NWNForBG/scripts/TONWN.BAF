@@ -17,7 +17,7 @@ THEN
 		Wait(1)
 		MoveViewObject(Player1,INSTANT)
 		Wait(1)
-//      	StartMovie("NWNPRE")
+		StartMovie("NWNPRE")
 		Wait(2)
 		FadeFromColor([20.0],0)
 		RevealAreaOnMap("NW1000")  // ????? ????????????
