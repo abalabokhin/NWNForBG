@@ -80,9 +80,14 @@ ADD_KIT ~SEHHANEEN~
  SAY @88750
  SAY @88751
 
+INCLUDE ~NWNForBG/lib/fl#add_kit_ee.tpa~
+LAF fl#add_kit_ee
+STR_VAR
+  kit_name = SEHHANEEN
+END
+
 // Install all animatins. It is only valid for ee.
 // For classic version: TODO: requier Infinite Animation mod installed.
-
 INCLUDE ~NWNForBG/lib/a7_functions.tpa~
 INCLUDE ~NWNForBG/lib/gw_functions.tpa~
 
