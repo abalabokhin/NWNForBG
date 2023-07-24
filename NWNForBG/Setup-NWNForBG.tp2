@@ -47,6 +47,39 @@ LANGUAGE ~English~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
+// Kit
+ADD_KIT ~SEHHANEEN~
+ // appended to CLASWEAP.2da
+ ~SEHHANEEN               0           0           1           1           0           1           0           0~
+ // appended column-wise to WEAPPROF.2da
+ ~SEHHANEEN 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+ // appended to ABCLASRQ.2da
+ ~SEHHANEEN               0       0       0       0       17       0~
+ // appended to ABCLSMOD.2da
+ ~SEHHANEEN               0       -2       0       0       0       0~
+ // appended to ABDCDSRQ.2da
+ ~SEHHANEEN               0       0       0       0       17      0~
+ // appended to ABDCSCRQ.2da
+ ~SEHHANEEN               0       0       0       0       15      0~
+ // appended to ALIGNMNT.2da
+ ~SEHHANEEN           1                   0                   0                   1                   0                   0                   1                   0                   0~
+ // appended to DUALCLAS.2da
+ ~SEHHANEEN               1       0       1       1       0       1~
+ // path to your CLAB-style 2da file
+ ~NWNForBG/2da/SEHHANEE.2DA~
+ // PC races and classes allowed to use this kit, from KITTABLE.2da
+ ~~
+ // usability flags, added to the end of the KITLIST.2da entry
+ ~0x02000000      3~
+ // HLA table to use; see LUABBR.2da
+ ~Cl0~
+ // list of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
+ ~* * * * * * * * * * * * * * * * * * * *~
+ // Lower, mixed, and help kit names and descriptions, added to KITLIST.2da
+ SAY @88750
+ SAY @88750
+ SAY @88751
+
 // Install all animatins. It is only valid for ee.
 // For classic version: TODO: requier Infinite Animation mod installed.
 
@@ -3246,6 +3279,7 @@ COPY ~NWNForBG/cre/lina12.cre~ ~override~
   SAY 0x1B0	@104286
   SAY 0x1B4	@104287
   SAY 0x1CC	@104288
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~SEHHANEEN~))
 
 COPY ~NWNForBG/cre/lina14.cre~ ~override~
   SAY 0x8	@102999
@@ -3270,6 +3304,7 @@ COPY ~NWNForBG/cre/lina14.cre~ ~override~
   SAY 0x1B0	@104286
   SAY 0x1B4	@104287
   SAY 0x1CC	@104288
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~SEHHANEEN~))
 
 COPY ~NWNForBG/cre/lina16.cre~ ~override~
   SAY 0x8	@102999
@@ -3294,6 +3329,7 @@ COPY ~NWNForBG/cre/lina16.cre~ ~override~
   SAY 0x1B0	@104286
   SAY 0x1B4	@104287
   SAY 0x1CC	@104288
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~SEHHANEEN~))
 
 COPY ~NWNForBG/cre/lina18.cre~ ~override~
   SAY 0x8	@102999
@@ -3318,6 +3354,7 @@ COPY ~NWNForBG/cre/lina18.cre~ ~override~
   SAY 0x1B0	@104286
   SAY 0x1B4	@104287
   SAY 0x1CC	@104288
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~SEHHANEEN~))
 
 COPY ~NWNForBG/cre/listen01.cre~ ~override~
   SAY 0x8	@103000
@@ -5673,39 +5710,6 @@ REPLACE ~XXX104454~ @104454
 REPLACE ~XXX104455~ @104455
 REPLACE ~XXX104456~ @104456
 REPLACE ~XXX104457~ @104456
-
-// Kit
-ADD_KIT ~SEHHANEEN~
- // appended to CLASWEAP.2da
- ~SEHHANEEN               0           0           1           1           0           1           0           0~
- // appended column-wise to WEAPPROF.2da
- ~SEHHANEEN 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
- // appended to ABCLASRQ.2da
- ~SEHHANEEN               0       0       0       0       17       0~
- // appended to ABCLSMOD.2da
- ~SEHHANEEN               0       -2       0       0       0       0~
- // appended to ABDCDSRQ.2da
- ~SEHHANEEN               0       0       0       0       17      0~
- // appended to ABDCSCRQ.2da
- ~SEHHANEEN               0       0       0       0       15      0~
- // appended to ALIGNMNT.2da
- ~SEHHANEEN           1                   0                   0                   1                   0                   0                   1                   0                   0~
- // appended to DUALCLAS.2da
- ~SEHHANEEN               1       0       1       1       0       1~
- // path to your CLAB-style 2da file
- ~NWNForBG/2da/SEHHANEE.2DA~
- // PC races and classes allowed to use this kit, from KITTABLE.2da
- ~~
- // usability flags, added to the end of the KITLIST.2da entry
- ~0x02000000      3~
- // HLA table to use; see LUABBR.2da
- ~Cl0~
- // list of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
- ~* * * * * * * * * * * * * * * * * * * *~
- // Lower, mixed, and help kit names and descriptions, added to KITLIST.2da
- SAY @88750
- SAY @88750
- SAY @88751
 
 // worldmap
 ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
