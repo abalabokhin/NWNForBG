@@ -4,7 +4,7 @@
 @3 = ~NP: Hmm, before I tell you anything else, I'd like to ask you a question too, if you don't mind. You're not one of those dirty, sneaky, conniving thieves, are you?~ /*Um, before I tell you anything about me, I would like to ask you a question, if you don't mind.*/
 @4 = ~I don't like the rest of the description, but I am a thief, yes.~
 @5 = ~That would pretty much sum me up, yes.~
-@6 = ~NP: [Lie] Uh, nope.~ [Ложь] /*Uh, no.*/
+@6 = ~NP: [Lie] Uh, nope.~ /*Uh, no.*/
 @7 = ~Sounds like you have something against thieves.~
 @8 = ~NP: No, I'm not a thief. Why would you ask that?~ /*No, I'm not. Why do you ask?*/
 @9 = ~If that is how you feel, <PRO_SIRMAAM>. Should you need someone who can heal your injuries and fight alongside you, please return.~
