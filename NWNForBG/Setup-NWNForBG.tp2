@@ -1,7 +1,7 @@
 // NWN For BG
 BACKUP ~NWNForBG\backup~
 AUTHOR ~AGKanevchev, weidu EE adapation: paladin84, support: https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773~
-VERSION ~0.4~
+VERSION ~0.6~
 
 ALWAYS
   ACTION_IF GAME_IS ~eet~ BEGIN
