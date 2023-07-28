@@ -20,12 +20,9 @@
 @19 = ~NP: I had to look for her all night, till dawn. But there were so many soldiers around! If they had caught me. I can't go back there. I just can't! Poor Liisa! I had to leave her there, somewhere in the south, where the fighting is. I, uh. I had no choice.~ /*I searched all night, until the dawn came. But there were so many soldiers! If they caught me... I can't go back. I just can't!*/
 @20 = ~Your sister is dead.~
 @21 = ~She's somewhere in the Luskan war zone. To the south. I know she's still alive... She has to be! Please, bring her back to me!~
-@22 = ~Luce, one of the working girls at the Moonstone Mask, is desperate for someone to find her little sister, Leesa.
-The girl was last seen in the Luskan controlled area of the city.~
-@23 = ~No! Why would you say that? NO! It isn't true! I know it isn't! You just don't want to help me!~
-@24 = ~NP: Saving Liisa
 
-Liisa, the younger sister of Luce from the Mask of the Moonstone, is dead - another victim of this terrible war.~ /*Leesa, the young sister of Luce at the Moonstone Mask, is dead - another casualty of this terrible war.*/
+@23 = ~No! Why would you say that? NO! It isn't true! I know it isn't! You just don't want to help me!~
+
 @25 = ~Have you... have you found my sister? Have you found Leesa yet?~ [LUCE057]
 @26 = ~No, but I am still looking.~
 @27 = ~Forget it. I've changed my mind.~
@@ -34,10 +31,8 @@ Liisa, the younger sister of Luce from the Mask of the Moonstone, is dead - anot
 @30 = ~Thank you.~
 @31 = ~Keep your cloak. You need it more than I do.~
 @32 = ~Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.~
-@33 = ~NP: Saving Liisa
 
-Liisa and Luce are reunited in relative safety, in the Mask of the Moonstone.~ /*Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.*/
 @34 = ~NP: It's... that's very noble, <LADYLORD>. Thank you very much. For everything. I'll keep a better eye on her from now on. After everything that's happened, we can survive anything.~ /*Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.*/
 @35 = ~I'm sorry, but I can't speak with you right now, <PRO_SIRMAAM>. I have to keep an eye on my little sister.~ [LUCE059]
 @36 = ~Leesa already vanished once. I don't want her to disappear on me again.~
-@37 = ~Leesa has agreed to return to the Moonstone Mask, where she can be reunited with her sister Luce.~
+

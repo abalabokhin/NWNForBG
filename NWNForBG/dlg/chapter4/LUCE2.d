@@ -66,12 +66,12 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 6.3
   SAY @21
-  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",1)~ UNSOLVED_JOURNAL @22 EXIT
+  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",1)~ UNSOLVED_JOURNAL @107444 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.3
   SAY @23
-  IF ~~ THEN DO ~EraseJournalEntry(@22)EraseJournalEntry(@37)~ SOLVED_JOURNAL @24 GOTO 2
+  IF ~~ THEN DO ~EraseJournalEntry(@107444)EraseJournalEntry(@1074441)~ SOLVED_JOURNAL @1074442 GOTO 2
 END
 
 // ---------------------------------------------------------------------------------------------------------
@@ -100,12 +100,12 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",3)GiveItemCreate("CLCKNW5",LastTalkedToBy,1,1,1)EraseJournalEntry(@22)EraseJournalEntry(@37)~ SOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",3)GiveItemCreate("CLCKNW5",LastTalkedToBy,1,1,1)EraseJournalEntry(@107444)EraseJournalEntry(@1074441)~ SOLVED_JOURNAL @1074443 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.2
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",3)AddexperienceParty(80000)EraseJournalEntry(@22)EraseJournalEntry(@37)~ SOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",3)AddexperienceParty(80000)EraseJournalEntry(@107444)EraseJournalEntry(@1074441)~ SOLVED_JOURNAL @1074443 EXIT
 END
 
 // ---------------------------------------------------------------------------------------------------------

@@ -3544,7 +3544,7 @@ Special:
  20: Cone of Fire 5x*/
 @107069 = ~NP: Staff of the Sorcerer~ /*Staff of Meldanen*/
 @107070 = ~NP: Most magical staves, oddly enough, have similar qualities. The most powerful staves like Khelben Arunsun's infamous &quot;Black Staff&quot; are rare, and can only be crafted by exceptionally powerful Archmages. This same staff surpasses them all. Its curved black surface does not seem to reflect light and at the same time shimmers with all the colors of the rainbow. The material from which it is made is similar to a black fog smoothly flowing into itself, dressed in a solid form. This staff was created by the Archsorcerer Melantium, the most powerful user of magical energy that ever existed, known as the enemy of the Lady of Pain. Melantium created him solely for the sake of maintaining the image as a sorcerer, since he was convinced that he looked good with him. The staff is endowed with great power and many useful properties. STATS: THAC0: +5 Damage: 1D6 +5 Defense Class: +4 bonus Saving Throws: +4 bonus Traits: Petrification Protection Instant Death Protection Imprisonment Protection Protection against 1st, 2nd, and 3rd-level spells. Fear Protection Immunity to normal and +1 weapons. Immunity to draw level Abilities: 5 times per day, the staff can create magical fireballs. Once per day, the power of the staff can protect its owner from any magic for half a minute. Combat Ability: Dispel Magic on each hit Instantly kills the weakest representatives of extraplanar creatures (Demon Knights, Tanarri, Beholders, Mindflies, Shadows, Mephits, Air, Fire, Earth Elementals) Damage Type: Crushing Weight: 4 Speed Factor: 4 Skill Type: Staff Type: Two-handed Requires: 5 Strength Only for: Mages~ /*The wearer can cause the Robe of Scintillating Colors to become a shifting pattern of incredible hues, color after color cascading from the upper part of the robe to the hem in sparkling rainbows of dazzling light.  The colors daze those near the wearer, conceal the wearer, and illuminate the surroundings.
-The first of such robes was said to have been made by a Halruaan Lliira-worshipper named Persephenon.  An unusual Halruaan, Persephenon showed talent for sorcery rather than wizardry.  This social stigma, combined with his pursuit of the Joybringer's path and his flamboyant personality, put Persephenon at odds with his contemporaries.  
+The first of such robes was said to have been made by a Halruaan Lliira-worshipper named Persephenon.  An unusual Halruaan, Persephenon showed talent for sorcery rather than wizardry.  This social stigma, combined with his pursuit of the Joybringer's path and his flamboyant personality, put Persephenon at odds with his contemporaries.
 
 Despite these obstacles, Persephenon was appointed captain of a skyship.  He made his robe as a tribute to Lliira, in order to paint rainbows across the sky as he flew.
 
@@ -3592,8 +3592,18 @@ With the catapults destroyed and the war golems vanquished the defenders of Neve
 @107368 = ~NP: Goran Yalana~ /*Grenade*/
 @107369 = ~NP: Teren Mirniman~ /*Mirniman*/
 @107370 = ~NP: Vale Rayer~ /*Reyer*/
-@107444 = ~Luce, one of the working girls at the Moonstone Mask, is desperate for someone to find her little sister, Leesa.
-The girl was last seen in the Luskan controlled area of the city.~
+@107444 = ~Rescue Leesa
+
+Luce, one of the working girls at the Moonstone Mask, is desperate for someone to find her little sister, Leesa. The girl was last seen in the Luskan controlled area of the city.~
+@1074441 = ~Rescue Leesa
+
+Leesa has agreed to return to the Moonstone Mask, where she can be reunited with her sister Luce.~
+@1074442 = ~Rescue Leesa
+
+Leesa, the young sister of Luce at the Moonstone Mask, is dead - another casualty of this terrible war.~
+@1074443 = ~Rescue Leesa
+
+Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107449 = ~NP: Neverwinter~ /*To Neverwinter*/
 @107450 = ~NP: This entrance is blocked by barrels, boxes and other rubbish.~ /*This door is inscribed with druidic runes.*/
 @107451 = ~Asheera's Amulet~
@@ -3771,4 +3781,3 @@ While many a tale has suggested that there are dark forces that call the wood th
 @107833 = ~NP: Here you can create magical things.~ /*I'm interested in magical swords.*/
 
 // new journal entries
-@200000 = ~Leesa has agreed to return to the Moonstone Mask, where she can be reunited with her sister Luce.~
