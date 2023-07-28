@@ -3183,10 +3183,9 @@ The Words of Power must be found before Maugrim and his cult locate them and tur
 @104662 = ~Words of Power
 
 The third Word of Power has been found but there is no time for celebration. Aribeth and the Luskan army have breached the walls of Neverwinter. Aarin Gend has made all the preparations for a quick return to Neverwinter. If Aribeth and the Luskan army are not stopped the city will surely fall.~
-@104724 = ~The snow globe has been returned to Lillian Cambridge. As promised she has revealed the location of one of the Words of Power: a miniature world inside the snow globe itself!
-The snow globe has been magically transported to its pedestal in Lillian's room, located upstairs in the drinking house of Beorunna's Well.
+@104724 = ~Snow Globe
 
-As long as the wine keeps flowing in the tavern she doesn't seem to care who goes into her room to access the miniature world inside the snow globe.~
+The snow globe has been returned to Lillian Cambridge. As promised she has revealed the location of one of the Words of Power: a miniature world inside the snow globe itself! The snow globe has been magically transported to its pedestal in Lillian's room, located upstairs in the drinking house of Beorunna's Well. As long as the wine keeps flowing in the tavern she doesn't seem to care who goes into her room to access the miniature world inside the snow globe.~
 @104760 = ~NP: Lillian Cambridge~ /*Cambridge*/
 @104761 = ~Lodar~
 @104762 = ~Averik~
@@ -3707,7 +3706,9 @@ The green dragon Akulatraxas has been under attack from hill giants seeking to s
 @107597 = ~Working for Akulatraxas
 
 The head of the hill giant chieftain has been given to the green dragon Akulatraxas, ending the threat to her eggs.~
-@107598 = ~The Word of Power has been recovered from inside the snow globe, destroying the miniature world within and freeing the dwarves and dryads from their their endless torment.~
+@107598 = ~Snow Globe
+
+The Word of Power has been recovered from inside the snow globe, destroying the miniature world within and freeing the dwarves and dryads from their their endless torment.~
 @107599 = ~Rolgan's trial is over. The young man undoubtably owes his life to the brilliant case presented by defense council. 
 Neurik is elated with the unanimous verdict, for such an overwhelming verdict forces even the soldiers of the Lords' Alliance to admit (grudgingly) that justice has been served.~
 @107600 = ~Rolgan's trial is over. The unfortunate young man's decapitated head staring from atop the pike outside the Temple door is stark evidence of the poor case presented by his defense council. 
@@ -3791,10 +3792,9 @@ Use: Selected.*/
 @107739 = ~Many-Starred Cloak Enclave~
 @107741 = ~Plague-Ridden Blankets~
 @107742 = ~Though no longer contagious, these blankets show obvious signs of having once been contaminated with the Wailing Death. Anyone who used them was certain to have contracted the disease.~
-@107747 = ~NP: Snow Globe Lilian Cambridge is looking for a brave adventurer to return to her a valuable snow globe that was stolen from her by a wizard named Nux. In exchange for this, she offered to tell about the location of one of the Words of Power. She thinks that Nux is investigating the laboratory of an ancient magician somewhere in the Forest of Chill.~ /*Lillian Cambridge is looking for a brave adventurer to recover a valuable snow globe stolen from her by a wizard named Nax.
-In exchange she has offered to reveal the location of one of the Words of Power.
+@107747 = ~Snow Globe
 
-She believes Nax is exploring an ancient mage's laboratory somewhere in the Coldwood - a lab accessible only by using a very special teleportation scroll.*/
+Lillian Cambridge is looking for a brave adventurer to recover a valuable snow globe stolen from her by a wizard named Nax. In exchange she has offered to reveal the location of one of the Words of Power. She believes Nax is exploring an ancient mage's laboratory somewhere in the Coldwood.~
 @107753 = ~NP: Lyenne's grave~ /*Layenestomb*/
 @107754 = ~Forest Exit~
 @107755 = ~NP: Orc camp~ /*Drow Camp*/

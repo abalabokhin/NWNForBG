@@ -222,7 +222,7 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 27.1
   SAY @65
-  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",2)TakePartyItem("Snoworb")DestroyItem("Snoworb")AddexperienceParty(102000)EraseJournalEntry(@95)~ SOLVED_JOURNAL @66 GOTO 41
+  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",2)TakePartyItem("Snoworb")DestroyItem("Snoworb")AddexperienceParty(102000)EraseJournalEntry(@107747)~ SOLVED_JOURNAL @104724 GOTO 41
 END
 
 IF ~~ THEN BEGIN 35 // from: 28.2
@@ -258,7 +258,7 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 32.1
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",2)TakePartyItem("Snoworb")DestroyItem("Snoworb")GiveGoldForce(300)AddexperienceParty(102000)EraseJournalEntry(@95)~ SOLVED_JOURNAL @66 GOTO 41
+  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",2)TakePartyItem("Snoworb")DestroyItem("Snoworb")GiveGoldForce(300)AddexperienceParty(102000)EraseJournalEntry(@107747)~ SOLVED_JOURNAL @104724 GOTO 41
 END
 
 IF ~~ THEN BEGIN 41 // from: 34.1 40.1
@@ -331,7 +331,7 @@ END
 
 IF ~~ THEN BEGIN 54 // from: 51.1
   SAY @94
-  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",1)~ UNSOLVED_JOURNAL @95 EXIT
+  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",1)~ UNSOLVED_JOURNAL @107747 EXIT
 END
 
 IF ~~ THEN BEGIN 55 // from: 53.2
