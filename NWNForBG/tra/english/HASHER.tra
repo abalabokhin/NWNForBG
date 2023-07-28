@@ -29,9 +29,7 @@
 @28 = ~Dig a little deeper, Clay, or I'll rip out your guts and strangle you with your own intestines!~
 @29 = ~NP: This Sapphire was part of the dowry of Lianne Sheru, the youngest daughter of an influential merchant, his family was very famous in Waterdeep some two centuries ago. But Lianne was not ready for marriage. She really wanted to become a mage and on the morning of her wedding she fled north in search of fame and fortune.~ /*The Star Sapphire was part of a dowry given to Layenne Cheroux, the youngest daughter of a powerful merchant family that flourished in Waterdeep nearly two centuries ago.*/
 @30 = ~NP: You're welcome, you're welcome, <SIRMAAM>.~ /*What was it you wanted, then, <PRO_SIRMAAM>?*/
-@31 = ~NP: Return the Star Sapphire
 
-The Star Sapphire was delivered to Hasher Glina.~ /*The Star Sapphire has been delivered to Husher Clay.*/
 @32 = ~NP: Okay, I guess it really wasn't that easy. I can only imagine how hard it was to avoid all the traps in Lianne's tomb. So here's another 400 gold pieces. I already paid you more than this stone is worth, but I guess that's the fate of all collectors.~ /*Well, I imagine this was quite difficult to acquire. I imagine surviving the tricks and traps of Layenne's tomb was no easy task.*/
 @33 = ~I'm sorry but I've already given you far more than the gem is worth, and we did have a deal. I'm not about to start renegotiating now.~
 @34 = ~Okay.~
@@ -41,8 +39,7 @@ The Star Sapphire was delivered to Hasher Glina.~ /*The Star Sapphire has been d
 @38 = ~NP: Apparently, the Star Sapphire was one of her most valuable treasures. It reminded her of the life she had given up in Waterdeep. The Star Sapphire would make a fine addition to my collection. Bring it to me and I will pay you 4,000 gold, which is exactly what I offered Lillian. That's a lot more than I could get for this stone from an ordinary merchant.~ /*The Star Sapphire would make a nice addition to my collection. Bring it to me and I'll give you 3000 gold pieces, the same price I offered Lillian. It's far more than the sapphire is worth to a more typical buyer.*/
 @39 = ~Okay, I'll do it.~
 @40 = ~NP: That's great. No one knows exactly where Lianne is buried, but rumor has it that it's somewhere in the Forest of Sturge. If someone has managed to discover where that tomb is, that someone hasn't come back and reported it. But that shouldn't scare you. I think you'll do just fine. Just bring me the Star Sapphire when you find it, and I'll give you your reward.~ /*If anyone's ever found the exact location of her tomb, they never came back alive to report it. But don't let that scare you off. I'm sure it's nothing you can't handle.*/
-@41 = ~Husher Clay of the adventuring gear shop is looking for someone to bring him the Star Sapphire.
-The gem was buried with the mage Layenne Cheroux, whose trap-infested tomb is believed to be hidden somewhere in the Coldwood.~
+
 @42 = ~Hello again. Any luck in locating the Star Sapphire? Or did you come just to check out my wares? Nobody has more in stock than Husher Clay, I'm fond of saying.~
 @43 = ~Tell me about the Star Sapphire again.~
 @44 = ~I'll be going now.~

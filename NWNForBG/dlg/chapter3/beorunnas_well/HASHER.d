@@ -105,12 +105,12 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 13.1
   SAY @30
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4000)AddexperienceParty(122000)EraseJournalEntry(@41)~ SOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4000)AddexperienceParty(122000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 13.2
   SAY @32
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(122000)EraseJournalEntry(@41)~ SOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(122000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 13.3
@@ -121,7 +121,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 13.4
   SAY @35
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(102000)EraseJournalEntry(@41)~ SOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(102000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 14.1
@@ -139,7 +139,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @40
-  IF ~~ THEN DO ~  SetGlobal("HasherJob","GLOBAL",1)~ UNSOLVED_JOURNAL @41 EXIT
+  IF ~~ THEN DO ~  SetGlobal("HasherJob","GLOBAL",1)~ UNSOLVED_JOURNAL @104941 EXIT
 END
 
 // ----------------------------------
