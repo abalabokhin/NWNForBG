@@ -93,7 +93,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
   SAY @25
-  IF ~~ THEN REPLY @26 DO ~SetGlobal("TrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @27 GOTO 15
+  IF ~~ THEN REPLY @26 DO ~SetGlobal("TrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107304 GOTO 15
   IF ~~ THEN REPLY @28 GOTO 16
   IF ~~ THEN REPLY @4 GOTO 3
 END
@@ -110,7 +110,7 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 14.2
   SAY @35
-  IF ~~ THEN REPLY @26 DO ~SetGlobal("TrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @27 GOTO 15
+  IF ~~ THEN REPLY @26 DO ~SetGlobal("TrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107304 GOTO 15
   IF ~~ THEN REPLY @4 GOTO 3
 END
 
@@ -262,7 +262,8 @@ END
 
 IF ~~ THEN BEGIN 35 // from: 31.4
   SAY @59
-  IF ~  GlobalLT("TrankarQuest","GLOBAL",2)~ THEN DO ~SetGlobal("TrankarQuest","GLOBAL",2)AddexperienceParty(240000)EraseJournalEntry(@27)~ SOLVED_JOURNAL @60 EXIT
+  IF ~  GlobalLT("TrankarQuest","GLOBAL",2)~ THEN DO
+  ~SetGlobal("TrankarQuest","GLOBAL",2)AddexperienceParty(240000)EraseJournalEntry(@107304)~ SOLVED_JOURNAL @1073041 EXIT
   IF ~  GlobalGT("TrankarQuest","GLOBAL",1)~ THEN EXIT
 END
 
