@@ -194,7 +194,7 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 26.1
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("Chapter3AarinJob","GLOBAL",1)~ UNSOLVED_JOURNAL @44 EXIT
+  IF ~~ THEN DO ~SetGlobal("Chapter3AarinJob","GLOBAL",1)~ UNSOLVED_JOURNAL @104555 EXIT
 END
 
 // ------------------------------------------------
@@ -319,16 +319,16 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 47.1  3000
   SAY @65
-   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
-   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
-   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
+   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 48.1  3000
   SAY @65
-   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
-   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
-   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @66 EXIT
+   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
 END
 
 // ------------------------------------------------
@@ -607,9 +607,9 @@ END
 
 IF ~~ THEN BEGIN 92 // from: 91.1
   SAY @43
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@66)~ UNSOLVED_JOURNAL @136 EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@66)~ UNSOLVED_JOURNAL @136 EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@66)~ UNSOLVED_JOURNAL @136 EXIT
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
 END
 
 
@@ -667,9 +667,9 @@ END
 
 IF ~~ THEN BEGIN 102 // from: 101.1
   SAY @151
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
 END
 
 IF ~~ THEN BEGIN 103 // from: 99.3
@@ -679,9 +679,9 @@ END
 
 IF ~~ THEN BEGIN 104 // from: 101.2
   SAY @154
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@136)~ UNSOLVED_JOURNAL @152 EXIT
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
 END
 
 // ------------------------------------------------
@@ -700,7 +700,7 @@ END
 
 IF ~~ THEN BEGIN 107 // from: 106.1
   SAY @151
-   IF ~~ THEN DO ~EraseJournalEntry(@44)ClearAllActions()StartCutSceneMode()StartCutScene("ToNever2")~ EXIT
+   IF ~~ THEN DO ~EraseJournalEntry(@104555)ClearAllActions()StartCutSceneMode()StartCutScene("ToNever2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 108 // from: 106.2

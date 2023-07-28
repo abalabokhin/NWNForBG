@@ -42,10 +42,7 @@
 @41 = ~Rest assured, my mercenary friend, you will be greatly rewarded if you manage to recover any of the Words of Power. Neverwinter and the Lords' Alliance will be most generous.~ [AARIN334]
 @42 = ~I regret there is nothing more I can tell you. Even the little information I have already given you came at great cost - many of my best men and women gave their lives for it.~ [AARIN335]
 @43 = ~I wish you luck in your mission, <CHARNAME>. The very survival of Neverwinter may depend on it.~ [AARIN339]
-@44 = ~Words of Power
-The Words of Power must be found before Maugrim and his cult locate them and turn the ancient artifacts against Neverwinter. Though lost for centuries, reports indicate that three of the Words can be found in the lands near Beorunna's Well.
 
-As the Words are located, they should be brought back to Aarin Gend at Beorunna's Well so they can be delivered to the safety of Castle Never.~
 @45 = ~It is a pleasure to see you again, <CHARNAME> - as always. It is unfortunate we cannot spend more time together.~ [AARIN341]
 @46 = ~Yet duty calls, and in this matter we must all serve our part. My role is here coordinating the Lords' Alliance, but your mission calls for you to recover the Words of Power.~ [AARIN342]
 @47 = ~Is there anything I can do for you, <CHARNAME>? Uh... to help you in your quest, I mean.~ [AARIN343]
@@ -67,15 +64,7 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @63 = ~Normally Neverwinter counts the lizardmen amongst her enemies, but your news is not completely unexpected. I have received reports of a lizard creature and her followers doing battle with Maugrim's cult.~ [AARIN351]
 @64 = ~This must be that Haedraline you mentioned. I will need to consider this new information carefully. But this is not your concern, <CHARNAME>. You must focus on finding the Words.~ [AARIN352]
 @65 = ~I wish you luck in your mission, <CHARNAME>. Return to me once you have another of the Words.~ [AARIN353]
-@66 = ~NP: Words of Power
 
-The first of the three Words of Power has been found and delivered safely to Aaryn Gendu, but the enemy is not yet defeated.
-Maugrim and his cult continue to search the lands near Beorunn's Well, proving that this is where the rest of the Words are to be found.~ /*Words of Power
-The first of the three Words of Power has been found and safely delivered to Aarin Gend, but the enemy is not beaten yet.
-
-Maugrim and his cult continue to search the lands around Beorunna's Well - a sure sign there are other Words yet to be found.
-
-As the Words are located, they should be brought back to Aarin Gend at Beorunna's Well so they can be delivered to the safety of Castle Never.*/
 @67 = ~You are back, <CHARNAME>. Have you something to report?~ [AARIN344]
 @68 = ~<CHARNAME>, the city of Neverwinter is forever in your debt for recovering the first Word of Power. We hope you will have continued success on your mission to thwart Maugrim and his followers.~ [AARIN367]
 @69 = ~But now is not the time to dwell on past successes - there are more Words yet to be found before Maugrim gets his claws on them.~ [AARIN368]
@@ -145,15 +134,7 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @133 = ~She spoke of the ancient Creator Races. She claimed to be one of them. I think she's a friend.~
 @134 = ~I'm no history expert, but wouldn't that make her thousands of years old? I'm not sure whether I believe her, and I don't know what this has to do with Maugrim. But I intend to try and find out.~ [AARIN394]
 @135 = ~Leave Haedraline to me. Maugrim and his crew are still skulking around the countryside, which means they must believe there's at least one more Word still undiscovered. Find it before they do.~ [AARIN395]
-@136 = ~NP: Words of Power
 
-The second of the three Words of Power has been found and delivered safely to Aaryn Gendu, but the enemy is not yet defeated.
-Maugrim and his cult continue to search the lands near Beorunn's Well, proving that this is where the rest of the Words are to be found.~ /*Words of Power
-The second of the three Words of Power has been found and safely delivered to Aarin Gend, but the enemy is not beaten yet.
-
-Maugrim and his cult continue to search the lands around Beorunna's Well - a sure sign there are other Words yet to be found.
-
-As the Words are located, they should be brought back to Aarin Gend at Beorunna's Well so they can be delivered to the safety of Castle Never.*/
 @137 = ~I wish I had something to spare, but the few magical items donated by the retired heroes of the Lords' Alliance are required in the defense of Neverwinter. I have nothing to spare, I'm sorry.~ [AARIN400]
 @138 = ~I have just received the latest reports from the battlefield and things are grim. The walls of Neverwinter have been breached, and the Lords' Alliance has retreated to Castle Never under the onslaught.~ [AARIN417]
 @139 = ~Aribeth, with her intimate knowledge of our strategies, crushes our forces in every encounter. Half the city is under the control of her Luskan forces. And what of your mission - have you found the success our troops have not?~ [AARIN418]
@@ -169,11 +150,6 @@ As the Words are located, they should be brought back to Aarin Gend at Beorunna'
 @149 = ~I'm ready.~
 @150 = ~NP: I still have some business to take care of here~ /*I have some other questions.*/
 @151 = ~I only hope we are not too late.~ [AARIN461]
-@152 = ~Words of Power
-The third Word of Power has been found but there is no time for celebration. 
 
-Aribeth and the Luskan army have breached the walls of Neverwinter.
-
-Aarin Gend has made all the preparations for a quick return to Neverwinter. If Aribeth and the Luskan army are not stopped the city will surely fall.~
 @153 = ~I wish I had something to give you, but all such items have been sent to the battle fronts to aid in the war effort.~ [AARIN426]
 @154 = ~NP: Hurry up <CHARNAME>. We might be late.~ /*Not right now, <CHARNAME>. Later, perhaps.*/
