@@ -200,7 +200,7 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 21.1
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("Aarin3Talk","MYAREA",1)~ UNSOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("Aarin3Talk","MYAREA",1)~ UNSOLVED_JOURNAL @107604 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 23.1

@@ -3655,18 +3655,19 @@ She has offered treasure from her hoard to anyone who brings her the hill giant 
 Neurik is elated with the unanimous verdict, for such an overwhelming verdict forces even the soldiers of the Lords' Alliance to admit (grudgingly) that justice has been served.~
 @107600 = ~Rolgan's trial is over. The unfortunate young man's decapitated head staring from atop the pike outside the Temple door is stark evidence of the poor case presented by his defense council. 
 No doubt this outcome will increase tensions between the Uthgardt and the Lords' Alliance.~
-@107601 = ~Morag has been destroyed. And with the Queen's death, the threat of the Old Ones return is no more. 
-Without Morag's power to sustain them spirit of the Luskan horde is broken and the invaders are quickly routed by the newly inspired Neverwinter forces.~
-@107602 = ~The fourth Word of Power has been recovered and brought to Haedraline... but perhaps it is already too late.
-Morag's strength has grown too powerful, her return is inevitable. The only way to stop her now is to use the Words of Power to enter the Source Stone beneath Castle Never's dungeons and destroy Morag once and for all.~
-@107603 = ~Haedraline has revealed that the fourth and final Word of Power is in the hands of Maugrim. The mad prophet plans to use its power to awaken Morag and the Old Ones from their hibernation within the Source Stone so they may once again enslave all of Faerun.
-The only way to stop the Old Ones' return is to find the fourth Word of Power and bring it to Haedraline before Queen Morag grows strong enough to awaken her people.
+@107601 = ~The Final Battle
 
-There is word that Maugrim is hiding out in the war zone south of the city, protected by the Luskan forces.~
-@107604 = ~Led by Aribeth and Maugrim the Luskan forces have all but overrun Neverwinter. Even slaying the leaders might not be enough to turn the tide of battle at this point.
-Aarin Gend feels Haedraline, the mysterious lizard creature now languishing in the dungeons of Castle Never, might know a way to save the city. 
+Morag has been destroyed. And with the Queen's death, the threat of the Old Ones return is no more. Without Morag's power to sustain them spirit of the Luskan horde is broken and the invaders are quickly routed by the newly inspired Neverwinter forces.~
+@107602 = ~The Final Battle
 
-Only she can reveal the secrets of the Words of Power and the recently discovered Source Stone, although there is hope that Master Ford - presently studying the Source Stone in the caverns beneath the dungeon of Castle Never - might have some information to share as well.~
+The fourth Word of Power has been recovered and brought to Haedraline... but perhaps it is already too late. Morag's strength has grown too powerful, her return is inevitable. The only way to stop her now is to use the Words of Power to enter the Source Stone beneath Castle Never's dungeons and destroy Morag once and for all.~
+@107603 = ~The Final Battle
+
+Haedraline has revealed that the fourth and final Word of Power is in the hands of Maugrim. The mad prophet plans to use its power to awaken Morag and the Old Ones from their hibernation within the Source Stone so they may once again enslave all of Faerun.
+The only way to stop the Old Ones' return is to find the fourth Word of Power and bring it to Haedraline before Queen Morag grows strong enough to awaken her people. There is word that Maugrim is hiding out in the war zone south of the city, protected by the Luskan forces.~
+@107604 = ~The Final Battle
+
+Led by Aribeth and Maugrim the Luskan forces have all but overrun Neverwinter. Even slaying the leaders might not be enough to turn the tide of battle at this point. Aarin Gend feels Haedraline, the mysterious lizard creature now languishing in the dungeons of Castle Never, might know a way to save the city. Only she can reveal the secrets of the Words of Power and the recently discovered Source Stone, although there is hope that Master Ford - presently studying the Source Stone in the caverns beneath the dungeon of Castle Never - might have some information to share as well.~
 @107605 = ~NP: Beggars' Nest: Aldo and Hector At the center of the Beggars' Nest is the Aldo family, who guard their broken wagon. They cannot leave until Hector returns. Hector searches the Nest for tools and parts to repair the wagon.~ /*A family is guarding a broken-down wagon in the center of the Beggar's Nest. They will not leave until Hector has returned. Hector is out searching the Beggar's Nest looking for parts for the wagon.*/
 @107607 = ~NP: Beggar's Nest: Aldo and Hector Encountered Hector, who was looking for parts to fix his master Aldo's wagon. Hector is dead.~ /*Encountered Hector, who was trying to find parts for his master Aldo's wagon. He's dead.*/
 @107608 = ~NP: Howling Death and the Creatures of Waterdeep Important steps have been taken in the fight against the Howling Death and those who created it. One of the magical creatures that were sent by Khelben Arunsun, lost during the attack on the Academy, was returned and given to Lady Aribeth in the Hall of Justice. She awaits the return of the remaining three creatures, along with her lover, Abbot Fentik Moss, and fellow Guardian Knight of Helm, Dester Indelain. The ritual of making the cure for the plague can only be performed when all magical creatures have been found.~ /*There has been great progress in the fight against the Wailing Death and those behind it. All of the Waterdhavian creatures - sent by Khelben Arunsun and lost in the attack on the Neverwinter Academy - have been recovered and delivered to Lady Aribeth in the Hall of Justice. 
