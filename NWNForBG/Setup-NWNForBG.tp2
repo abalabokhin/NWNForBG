@@ -47,6 +47,8 @@ LANGUAGE ~English~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
+ADD_JOURNAL @107304 @1073041
+
 // Kit
 ADD_KIT ~SEHHANEEN~
  // appended to CLASWEAP.2da
