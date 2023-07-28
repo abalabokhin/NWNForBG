@@ -92,7 +92,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 10.1
   SAY @25
-  IF ~~ THEN REPLY @26 DO ~SetGlobal("NWDraco2Job","GLOBAL",1)~ UNSOLVED_JOURNAL @27 GOTO 14
+  IF ~~ THEN REPLY @26 DO ~SetGlobal("NWDraco2Job","GLOBAL",1)~ UNSOLVED_JOURNAL @107596 GOTO 14
   IF ~~ THEN REPLY @3 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @6 GOTO 5
@@ -149,22 +149,22 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 17.1
   SAY @41
-  IF ~~ THEN DO ~TakePartyItem("NWHEAD01")GiveGoldForce(8000)SetGlobal("NWDraco2Job","GLOBAL",2)AddexperienceParty(110000)EraseJournalEntry(@27)~ SOLVED_JOURNAL @42 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWHEAD01")GiveGoldForce(8000)SetGlobal("NWDraco2Job","GLOBAL",2)AddexperienceParty(110000)EraseJournalEntry(@107596)~ SOLVED_JOURNAL @107597 EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 17.2
   SAY @43
-  IF ~~ THEN DO ~TakePartyItem("NWHEAD01")GiveGoldForce(8000)GiveItemCreate("NWAMUL02",LastTalkedToBy,0,0,0)SetGlobal("NWDraco2Job","GLOBAL",2)AddexperienceParty(110000)EraseJournalEntry(@27)~ SOLVED_JOURNAL @42 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWHEAD01")GiveGoldForce(8000)GiveItemCreate("NWAMUL02",LastTalkedToBy,0,0,0)SetGlobal("NWDraco2Job","GLOBAL",2)AddexperienceParty(110000)EraseJournalEntry(@107596)~ SOLVED_JOURNAL @107597 EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 17.3
   SAY @44
-  IF ~~ THEN DO ~TakePartyItem("NWHEAD01")GiveGoldForce(8000)GiveItemCreate("NWAMUL02",LastTalkedToBy,0,0,0)SetGlobal("NWDraco2Job","GLOBAL",2)AddexperienceParty(110000)EraseJournalEntry(@27)~ SOLVED_JOURNAL @42 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWHEAD01")GiveGoldForce(8000)GiveItemCreate("NWAMUL02",LastTalkedToBy,0,0,0)SetGlobal("NWDraco2Job","GLOBAL",2)AddexperienceParty(110000)EraseJournalEntry(@107596)~ SOLVED_JOURNAL @107597 EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 17.4
   SAY @45
-  IF ~~ THEN DO ~ForceSpell(LastTalkedToBy(Myself),DRAGON_WING_BUFFET)Enemy()EraseJournalEntry(@27)~ EXIT
+  IF ~~ THEN DO ~ForceSpell(LastTalkedToBy(Myself),DRAGON_WING_BUFFET)Enemy()EraseJournalEntry(@107596)~ EXIT
 END
 
 // -------------------------------------------------------------------------------------------------

@@ -25,8 +25,7 @@
 @24 = ~But now I have the head of the hill giant chieftain as a trophy, and without their chief the others will not dare come after my eggs again!~
 @25 = ~NP: I can't leave my lair. I must protect my eggs until they sprout. But I will not rest until the giants are destroyed and their leader's head is at my feet! I am even willing to share some of my treasure with you to save my children's lives. Is there anything else I can do for you if you agree to consider my offer, <RACE>?~ /*I cannot leave my lair. I must stay to protect my eggs until they hatch. But I will not rest until the giants are no more and the head of their chief lies at my feet!*/
 @26 = ~Where might I find the hill giant chief?~
-@27 = ~The green dragon Akulatraxas has been under attack from hill giants seeking to steal her eggs.
-She has offered treasure from her hoard to anyone who brings her the hill giant chieftain's head, telling them to seek out the hill giants' lair west of her cave.~
+
 @28 = ~Bargaining with a dragon in her own lair? You are as stupid as you are brave... Normally I would slay you for your insolence, but these are unusual circumstances.~
 @29 = ~The steading of the hill giant chief is on the plateau to the west. Bring me his head and you will get your reward. Now, my tiny instrument of vengeance, is there anything else?~
 @30 = ~**sniff - sniff** Akulatraxas recognizes your scent, tiny creature. Why have you returned, puny one, to disturb one far greater than yourself?~ [DRACO252]
@@ -41,9 +40,7 @@ She has offered treasure from her hoard to anyone who brings her the hill giant 
 @39 = ~Tread carefully, <PRO_RACE> creature. It is not wise to expose your greed when speaking to a dragon in her lair, lest I think you plan to steal my hoard. Your reward will come in due time, once you give me the chieftain's head!~
 @40 = ~I don't like your attitude, dragon. I think I'll keep this head for myself.~
 @41 = ~NP: You show the respect that should be shown to dragons. That's good, creature <RACE>.~ /*Are there any places I should look out for in the Blacklake district?*/
-@42 = ~NP: A job for Sharkatraxas
 
-The head of the leader of the hill giants has been delivered to the green dragon Akulatraxas, and now her eggs are in no danger.~ /*The head of the hill giant chieftain has been given to the green dragon Akulatraxas, ending the threat to her eggs.*/
 @43 = ~NP: You are impertinent, <MALEFEMALE>. A more intelligent being would have accepted the dragon's gold before he changed his mind. But I like you. You amuse me, and my last pets failed to do so. Why would I want a pet without a collar? Take this necklace, <RACE>. Its magic is not worth my attention, but you may find it amusing.~ /*You are bold, <PRO_MALEFEMALE>. A smarter creature would accept an offer of dragon's gold before the dragon changes her mind. But I like you, <PRO_MALEFEMALE>. You amuse me, as my last few pets failed to do.*/
 @44 = ~NP: Your manners are disgusting, creature. but I forgive you for the service you have rendered me. Take this necklace as a final gift and be done with it. In the future, I suggest you show more respect when speaking to a creature so much larger than you.~ /*Your manner is displeasing, creature... but I will forgive your coarse nature because of the task you have done for me. Take this necklace as a final boon, and let this matter be done.*/
 @45 = ~You dare threaten my children, foolish <PRO_RACE> creature? Such a crime is unforgivable! Now you shall feel the wrath of Akulatraxas!~
