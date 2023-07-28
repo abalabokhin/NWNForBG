@@ -31,7 +31,7 @@
 @30 = ~Dragon? That term hardly applies. That creature is simply a vessel for the essence of my existence, an ignorant beast created by the power of my sorcerer servants' magic from the eggs of another dragon.~
 @31 = ~Your threat is meaningless to me. I can create more essence spheres, and I will find more servants. There are many who will perform tasks for me to obtain treasure from my hoard.~
 @32 = ~Here is your reward, <CHARNAME>. 5000 gold pieces. Now I must savor this sweet essence of life!~
-@33 = ~NP: Klauth - the ancient red dragon Klauth, the ancient red worm of the North, is dead.~ /*Klauth, ancient red wyrm of the North, is dead.*/
+
 @34 = ~You have performed a simple task, <CHARNAME>. It required no great risk or capabilities on your part. If the gold I offer is not to your liking, keep the sphere for yourself. I can make other orbs and find other servants.~
 @35 = ~The wisdom of eternity speaks, but you refuse to listen. So be it. I shall bring you the death you so eagerly seek.~
 @36 = ~NP: The magic of the Words is not the sort I need to prolong my life, and therefore the Word of Power lies in my treasury, as meaningless as all other material treasures that I have collected over the long centuries of my life. I know that you desire to receive this Word,<CHARNAME> and its useless to me. So I can give it to you in exchange.~ /*The magic of the Words is not the sort I need to prolong my life, and so the Word of Power sits in my hoard, as meaningless as all the other material treasures I have collected over eons of time.*/
@@ -61,11 +61,10 @@
 @60 = ~In the lair of a female dragon, of course. I know there are a few who still dare make their nests in these mountains. Return to me with dragon eggs and I shall give you the Word of Power.~
 @61 = ~Beside me you are so insignificant that it would be beneath me to betray you. But if this is not assurance enough, you do not have to undertake the task. I can find others to bring me the dragon eggs.~
 @62 = ~Then go. When you return you will reap your just reward.~
-@63 = ~NP: Klauth - Ancient Red Dragon Klauth, the great red worm of the North, has admitted that he possesses one of the Words of Power. He offered to exchange the Word of Power for the eggs of another dragon.~ /*Klauth, the great red wyrm of the North, has admitted to having one of the Words of Power in his possession.
-He has offered to exchange the Word of Power for the eggs of another dragon.*/
+
 @64 = ~Ask your question, <CHARNAME>, and I shall answer if it pleases me.~
 @65 = ~NP: Then I will give you the legacy of the Creator Race. This key will open the chamber behind me where the Word is kept. Your word of power<CHARNAME> especially since its useless to me.~ /*Then I give you the legacy of the Creator Race. This key will open the chamber behind me, where the Word is stored. The Word of Power is yours, <CHARNAME>, as it is of no use to me, anyway. Now, is there something else you wish of me?*/
-@66 = ~NP: Klauth - The ancient red dragon Klauth has exchanged the Word of Power for the eggs of another dragon, which he needs to perform his dark rituals.~ /*Klauth has traded the Word of Power he possessed for the dragon's eggs he needs to perform his dark rituals.*/
+
 @67 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <PRO_RACE> mortal. My offer stands. You will get nothing more from me.~
 @68 = ~Fine, take the eggs.~
 @69 = ~Then I think I'll just keep these eggs for myself, Klauth!~

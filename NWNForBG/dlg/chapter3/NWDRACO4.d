@@ -123,7 +123,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 6.1
   SAY @32
-  IF ~~ THEN DO~TakePartyItem("SphereE2")GiveGoldForce(10000)DestroyItem("SphereE2")ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@63)EraseJournalEntry(@66)~ SOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO~TakePartyItem("SphereE2")GiveGoldForce(10000)DestroyItem("SphereE2")ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@200001)EraseJournalEntry(@200002)~ SOLVED_JOURNAL @200000 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 6.3
@@ -246,7 +246,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 25.4
   SAY @62
-  IF ~~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",1)~ UNSOLVED_JOURNAL @63 EXIT
+  IF ~~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",1)~ UNSOLVED_JOURNAL @200001 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from:
@@ -262,8 +262,8 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 27.1
   SAY @65
-  IF ~  PartyHasItem("Dragegg1")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg1")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@63)~ SOLVED_JOURNAL @66 EXIT
-  IF ~  PartyHasItem("Dragegg2")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg2")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@63)~ SOLVED_JOURNAL @66 EXIT
+  IF ~  PartyHasItem("Dragegg1")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg1")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@200001)~ SOLVED_JOURNAL @200002 EXIT
+  IF ~  PartyHasItem("Dragegg2")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg2")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@200001)~ SOLVED_JOURNAL @200002 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 27.2
@@ -406,7 +406,7 @@ END
 
 IF ~~ THEN BEGIN 50 // from: 42.1
   SAY @32
-  IF ~~ THEN DO~TakePartyItem("SphereE2")DestroyItem("SphereE2")GiveGoldForce(10000)ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@63)EraseJournalEntry(@66)~ SOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO~TakePartyItem("SphereE2")DestroyItem("SphereE2")GiveGoldForce(10000)ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@200001)EraseJournalEntry(@200002)~ SOLVED_JOURNAL @200000 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 42.2
