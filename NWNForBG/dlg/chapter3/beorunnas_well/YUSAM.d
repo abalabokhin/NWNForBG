@@ -71,7 +71,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
   SAY @20
-  IF ~~ THEN DO ~SetGlobal("JusamJob","GLOBAL",2)AddexperienceParty(52000)GiveItemCreate("Yusprize",LastTalkedToBy,0,0,0)EraseJournalEntry(@41)~ SOLVED_JOURNAL @21 EXIT
+  IF ~~ THEN DO ~SetGlobal("JusamJob","GLOBAL",2)AddexperienceParty(52000)GiveItemCreate("Yusprize",LastTalkedToBy,0,0,0)EraseJournalEntry(@105420)~ SOLVED_JOURNAL @105421 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
@@ -84,7 +84,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 7.3
   SAY @25
-  IF ~~ THEN DO ~TakePartyItem("NWMISC72")SetGlobal("JusamJob","GLOBAL",2)AddexperienceParty(104000)GiveItemCreate("Yusprize",LastTalkedToBy,0,0,0)EraseJournalEntry(@41)~ SOLVED_JOURNAL @26 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWMISC72")SetGlobal("JusamJob","GLOBAL",2)AddexperienceParty(104000)GiveItemCreate("Yusprize",LastTalkedToBy,0,0,0)EraseJournalEntry(@105420)~ SOLVED_JOURNAL @105422 EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.4
@@ -147,7 +147,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 18.4
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("JusamJob","GLOBAL",1)~ UNSOLVED_JOURNAL @41 EXIT
+  IF ~~ THEN DO ~SetGlobal("JusamJob","GLOBAL",1)~ UNSOLVED_JOURNAL @105420 EXIT
 END
 
 // ----------------------------------------

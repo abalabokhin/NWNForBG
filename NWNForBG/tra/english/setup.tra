@@ -3225,8 +3225,15 @@ NP: The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanki
 @105377 = ~NP: This is the personal weapon of the assassin Demarasse. Given his knowledge of item enchanting, it is likely that he designed it himself and made it to his specifications. Its chief characteristic is its extraordinary precision, and it can probably pass through bone as easily as through oil, if handled properly. But if you handle it clumsily, then you risk accidentally cutting off a few fingers. damage 1d4+4 THAC0 +4 50% chance to poison target for 30 seconds 10% chance to stun target for 6 seconds Do not use: Priests~ /*Dorna seldom speaks of her past, but you know she traveled for nearly a week through a treacherous part of the Silver Marches to apprentice herself to Drogan Droganson when he retired and decided to take on some apprentices.  She is somewhat dour and pragmatic.  Her role as professional ambush-spotter and trap-springer has left her with a rather grim outlook on life.*/
 @105378 = ~NP: Guardian of Souls~ /*Doom Guard*/
 @105379 = ~NP: This shield was a gift from the king to the greatest warrior. The shield was supposed to protect the guard from death in a fight with a magician. This shield has the property to protect its owner from instant death spells, and also provides good protection against other types of damage. PARAMETERS: Defense class bonus: +3 Prevents immediate death Weight: 24 Not used by: Bards Mages Thieves Druids Monks Kensai~ /*There are some who call us evil, for they fear the pain and death we spread. But we transcend morality. Death is not good or evil, it simply *is*. It is final, undeniable and perfect.*/
-@105420 = ~NP: Investigate the state of affairs in the Elk Tribe Yusam needs someone who agrees to investigate the state of affairs in the Elk Tribe. The druid is convinced that there is some reason why they turned their backs on the Lords' Alliance and joined Luskan's army. Yusam thinks that the Elk tribe and their leader, Zokan the Thunderer, are based in a fortress to the west of Fort Ilkard.~ /*Yusam is looking for someone to investigate the Uthgardt Elk tribe. The druid is convinced there must be some reason they have turned away from the Lords' Alliance and joined with the Luskan army.
-Yusam believes the Elk tribe and their leader, Zokan Thunderer, are in a keep to the west of Fort Ilkard.*/
+@105420 = ~Investigate the Elk Tribe
+
+Yusam is looking for someone to investigate the Uthgardt Elk tribe. The druid is convinced there must be some reason they have turned away from the Lords' Alliance and joined with the Luskan army. Yusam believes the Elk tribe and their leader, Zokan Thunderer, are in a keep to the west of Fort Ilkard.~
+@105421 = ~Investigate the Elk Tribe
+
+Zokan Thunderer, leader of the Elk tribe, is no more. Upon hearing the news Yusam, Druid of the North, was saddened, though he understood the necessity of the Elk tribe's destruction.~
+@105422 = ~Investigate the Elk Tribe
+
+The Elk tribe have been cured of the plague given to them by Commander Damas of Fort Ilkard, and will no longer aid the Luskan army in its battle against Neverwinter. Yusam the Druid was pleased to learn the children of the Elk will once more welcome his counsel.~
 @105423 = ~Dreamcatcher~
 @105424 = ~Among the Uthgardt, dreamcatchers are often exchanged to symbolize reconciliation and a willingness to repair damaged relations or resume broken alliances. This particular ornament bears the distinctive marks of the Elk tribe.~
 @105425 = ~Ring of Yusam~
