@@ -92,7 +92,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 14.1
   SAY @26
-  IF ~~ THEN DO ~SetGlobal("RolgansTrial","GLOBAL",1)GiveItemCreate("Nwbook53",LastTalkedToBy,0,0,0) ~ UNSOLVED_JOURNAL @27 EXIT
+  IF ~~ THEN DO ~SetGlobal("RolgansTrial","GLOBAL",1)GiveItemCreate("Nwbook53",LastTalkedToBy,0,0,0) ~ UNSOLVED_JOURNAL @105132 EXIT
 END
 
 // ---------------------------------------------
@@ -161,7 +161,7 @@ END
 
 IF ~~ THEN BEGIN 24 // from: 22.1
   SAY @40
-  IF ~~ THEN DO ~SetGlobal("RolgansTrial","GLOBAL",7)EraseJournalEntry(@27)~ SOLVED_JOURNAL @41 GOTO 29
+  IF ~~ THEN DO ~SetGlobal("RolgansTrial","GLOBAL",7)EraseJournalEntry(@105132)~ SOLVED_JOURNAL @105170 GOTO 29
 END
 
 IF ~~ THEN BEGIN 25 // from: 22.2

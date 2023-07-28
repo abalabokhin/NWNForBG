@@ -3198,10 +3198,12 @@ The gem was buried with the mage Layenne Cheroux, whose trap-infested tomb is be
 @105107 = ~Rolkid~
 @105108 = ~Jevon~
 @105109 = ~Zed~
-@105132 = ~Neurik, the cleric at Tyr's temple, needs someone to defend Rolgan, an Uthgardt tribesman accused of murder.
-The details of the case are included in a trial notebook, including the names of witnesses and jurors that must be spoken to in preparing an adequate case for the defense.
+@105132 = ~Rolgan's Trial
 
-When you are ready to start the trial, go speak to Neurik at the Temple of Tyr.~
+Neurik, the cleric at Tyr's temple, needs someone to defend Rolgan, an Uthgardt tribesman accused of murder. The details of the case are included in a trial notebook, including the names of witnesses and jurors that must be spoken to in preparing an adequate case for the defense. When you are ready to start the trial, go speak to Neurik at the Temple of Tyr.~
+@105170 = ~Rolgan's Trial
+
+The death of one of the participants has indefinitely postponed Rolgan's trial. It may be months before Neurik resumes the proceedings in this matter. Anyone investigating the trial would be better served searching for the Words of Power.~
 @105256 = ~Edegar~
 @105257 = ~Rolgan~
 @105258 = ~NP: Ygland Swift Sword~ /*of the Swift Sword*/

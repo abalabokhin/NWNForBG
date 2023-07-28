@@ -25,10 +25,7 @@
 @24 = ~And of course there's the Uthgardt himself, Rolgan. He doesn't have to testify, but if you call him up to defend his actions, then the prosecutor will also be able to question him. He is here in the back of the Temple here, if you wish to speak with him.~
 @25 = ~I'll begin my investigations right away.~
 @26 = ~Rolgan is counting on you to bring forth the truth at his trial. Once you have all the evidence, come speak to me and we can begin the proceedings.~
-@27 = ~Neurik, the cleric at Tyr's temple, needs someone to defend Rolgan, an Uthgardt tribesman accused of murder.
-The details of the case are included in a trial notebook, including the names of witnesses and jurors that must be spoken to in preparing an adequate case for the defense.
 
-When you are ready to start the trial, go speak to Neurik at the Temple of Tyr.~
 @28 = ~NP: Ah yes... hello again, <CHARNAME>. Welcome to the temple of the god of justice. Forgive me if I seem a bit... upset. Rolgan's future trial has thrown me off my game a bit.~ /*Forgive me if I seem somewhat... distracted. Rolgan's impending trial has me a little out of sorts.*/
 @29 = ~NP: Ah, <CHARNAME> - I see you're back already. But, uh. where is your court book? You agreed to defend Rolgan, and without that book, no one will recognize you as a judicial officer! Please, I know you have many other concerns. But if you want to take part in Rolgan's trial, you must keep this book with you at all times.~ /*Ah, <CHARNAME> - I see you are back. But... where is your trial notebook? You agreed to defend Rolgan; without that book no one will recognize you as an officer of the court!*/
 @30 = ~In the meantime, is there anything else I can do for you before Rolgan's trial, <CHARNAME>?~
@@ -42,7 +39,7 @@ When you are ready to start the trial, go speak to Neurik at the Temple of Tyr.~
 @38 = ~Trial?~
 @39 = ~I am grateful for your assistance during Rolgan's trial, <CHARNAME>. This is not a problem you can readily fix.~
 @40 = ~Rolgan's trial has been postponed because of the death of one of the participants. However, Tyr's justice must still be served in this matter so I have advised everyone that the case will proceed... though it may be months before I am ready to resume the trial.~
-@41 = ~The death of one of the participants has indefinitely postponed Rolgan's trial. It may be months before Neurik resumes the proceedings in this matter. Anyone investigating the trial would be better served searching for the Words of Power.~
+
 @42 = ~Are you quite certain, my <PRO_LADYLORD>? Once the trial begins it cannot be ended prematurely, or Rolgan's life will be forfeit.~
 @43 = ~I'm ready. Let's begin.~
 @44 = ~Actually, I need some more time to prepare.~
