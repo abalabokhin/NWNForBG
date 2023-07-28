@@ -3321,7 +3321,7 @@ You may keep this letter for a fortnight, and then you will be tested on what yo
 A wild mage named Sapphira needs someone to travel back in time 10,000 years to plant the seeds of the rare Ultarg Tree so that she can harvest the fruit here in the present. The seeds must be planted beneath the red warding rune in the garden of the ancient past.
 Sapphira explained that using the power of a time crystal on one of the sundials in the Creator Race ruins will draw a person back into the past, and using it in the same manner in the past will bring them back to the present.~
 
-@1057771 = ~Plant the Ultarg Tree Seeds
+@105850 = ~Plant the Ultarg Tree Seeds
 
 The seeds have been planted in the past and a magnificent Ultarg Tree has sprouted up in the present day. Now Sapphira will be able to harvest the fruit she has so eagerly been waiting for.~
 @105856 = ~Sapphira~
@@ -3453,6 +3453,15 @@ But a warning, lest you displease the master and suffer his terrible wrath: shou
 The sphere radiates a powerful heat, and on closer inspection there appears to be a draconic shape slowly moving below the smooth, dark surface - the captured essence of a living dragon.~
 @106161 = ~The handle of this heavy, ornate key is fashioned into the likeness of an ancient red wyrm - a replica of the mighty Klauth himself.~
 @106162 = ~Klauth~
+@106193 = ~Klauth the Ancient Red Wyrm
+
+Klauth, ancient red wyrm of the North, is dead.~
+@106163 = ~Klauth the Ancient Red Wyrm
+
+Klauth, the great red wyrm of the North, has admitted to having one of the Words of Power in his possession. He has offered to exchange the Word of Power for the eggs of another dragon.~
+@106164 = ~Klauth the Ancient Red Wyrm
+
+Klauth has traded the Word of Power he possessed for the dragon's eggs he needs to perform his dark rituals.~
 @106289 = ~Akulatraxas~
 @106290 = ~NP: Just dare to touch my balls! I will destroy you!~ /*I will not work with you. I will destroy you!*/
 @106291 = ~Gold Dragon Egg~
@@ -3460,10 +3469,10 @@ The sphere radiates a powerful heat, and on closer inspection there appears to b
 @106297 = ~Gorgotha the Gold Dragon
 
 The servants of Klauth, an ancient red wyrm, have been attacking the lair of the gold dragon Gorgotha. In exchange for Klauth's head Gorgotha has offered a share of her treasure hoard.~
-@1062971 = ~Gorgotha the Gold Dragon
+@106298 = ~Gorgotha the Gold Dragon
 
 The head of the wyrm Klauth has been delivered to the dragon Gorgotha, assuring her of the continued survival of her eggs.~
-@1062972 = ~Gorgotha the Gold Dragon
+@106342 = ~Gorgotha the Gold Dragon
 
 The gold dragon Gorgotha has been slain.~
 @106344 = ~King Skrogg~
@@ -3595,7 +3604,7 @@ This undignified behavior ultimately lost Persephenon his captaincy and later le
 
 Between the catapult fire and the unstoppable war golems of the enemy, the soldiers of Neverwinter can do little to stop the Luskan advance.
 If the catapults could be destroyed and the wizards controlling the war golems stopped then at least the brave defenders might have a faint hope of turning back the invaders.~
-@1073041 = ~Neverwinter Under Siege
+@107359 = ~Neverwinter Under Siege
 
 With the catapults destroyed and the war golems vanquished the defenders of Neverwinter have been given some small hope of resisting the Luskan invasion.~
 @107366 = ~Trancar~
@@ -3606,13 +3615,13 @@ With the catapults destroyed and the war golems vanquished the defenders of Neve
 @107444 = ~Rescue Leesa
 
 Luce, one of the working girls at the Moonstone Mask, is desperate for someone to find her little sister, Leesa. The girl was last seen in the Luskan controlled area of the city.~
-@1074441 = ~Rescue Leesa
+@107445 = ~Rescue Leesa
 
 Leesa has agreed to return to the Moonstone Mask, where she can be reunited with her sister Luce.~
-@1074442 = ~Rescue Leesa
+@107446 = ~Rescue Leesa
 
 Leesa, the young sister of Luce at the Moonstone Mask, is dead - another casualty of this terrible war.~
-@1074443 = ~Rescue Leesa
+@107447 = ~Rescue Leesa
 
 Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107449 = ~NP: Neverwinter~ /*To Neverwinter*/
@@ -3669,7 +3678,7 @@ Commander Damas has admitted he infected the Elk tribe with the Wailing Death. H
 @107587 = ~The Siege of Fort Ilkard
 
 With the siege on Fort Ilkard ended, Captain Damas seeks to destroy the Elk tribe once and for all. He has offered a reward to anyone who can get to their enclave in the west and bring back the head of their chieftain, Zokan Thunderer.~
-@1075871 = ~The Siege of Fort Ilkard
+@107588 = ~The Siege of Fort Ilkard
 
 With the head of Zokan Thunderer delivered into his lap, Commander Damas and Fort Ilkard have little to fear from the Elk tribe any longer.~
 @1075872 = ~The Siege of Fort Ilkard
@@ -3805,13 +3814,3 @@ While many a tale has suggested that there are dark forces that call the wood th
 @107827 = ~NP: This amulet protects its wearer from all forms of deadly magic. These spells include Disenchant, Power Word: Death, Death Spell, Finger of Death, Confinement, etc. Weight: 1 Can use: All~ /*This amulet conjures strange visions in my mind: half-remembered images of a time long ago, when dryad and dwarf alike served a terrible, cruel Master.*/
 @107833 = ~NP: Here you can create magical things.~ /*I'm interested in magical swords.*/
 
-// new journal entries
-@200000 = ~Klauth the Ancient Red Wyrm
-
-Klauth, ancient red wyrm of the North, is dead.~
-@200001 = ~Klauth the Ancient Red Wyrm
-
-Klauth, the great red wyrm of the North, has admitted to having one of the Words of Power in his possession. He has offered to exchange the Word of Power for the eggs of another dragon.~
-@200002 = ~Klauth the Ancient Red Wyrm
-
-Klauth has traded the Word of Power he possessed for the dragon's eggs he needs to perform his dark rituals.~

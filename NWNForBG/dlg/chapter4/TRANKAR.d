@@ -263,7 +263,7 @@ END
 IF ~~ THEN BEGIN 35 // from: 31.4
   SAY @59
   IF ~  GlobalLT("TrankarQuest","GLOBAL",2)~ THEN DO
-  ~SetGlobal("TrankarQuest","GLOBAL",2)AddexperienceParty(240000)EraseJournalEntry(@107304)~ SOLVED_JOURNAL @1073041 EXIT
+  ~SetGlobal("TrankarQuest","GLOBAL",2)AddexperienceParty(240000)EraseJournalEntry(@107304)~ SOLVED_JOURNAL @107359 EXIT
   IF ~  GlobalGT("TrankarQuest","GLOBAL",1)~ THEN EXIT
 END
 

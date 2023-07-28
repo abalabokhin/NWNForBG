@@ -105,7 +105,7 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 3.2
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",5)GiveGoldForce(2000)AddexperienceParty(120000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)EraseJournalEntry(@107587)EraseJournalEntry(@107584)~ SOLVED_JOURNAL @1075871 EXIT
+  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",5)GiveGoldForce(2000)AddexperienceParty(120000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)EraseJournalEntry(@107587)EraseJournalEntry(@107584)~ SOLVED_JOURNAL @107588 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 5.1

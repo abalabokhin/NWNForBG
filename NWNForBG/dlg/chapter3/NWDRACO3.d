@@ -222,22 +222,22 @@ END
 
 IF ~~ THEN BEGIN 24 // from: 23.1
   SAY @44
-  IF ~~ THEN DO~TakePartyItem("HEADDR1")GiveGoldForce(8000)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @1062971 EXIT
+  IF ~~ THEN DO~TakePartyItem("HEADDR1")GiveGoldForce(8000)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 23.2
   SAY @46
-  IF ~~ THEN DO~TakePartyItem("HEADDR1")GiveGoldForce(8000)GiveItemCreate("Drac3Itm",LastTalkedToBy,1,1,1)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @1062971 EXIT
+  IF ~~ THEN DO~TakePartyItem("HEADDR1")GiveGoldForce(8000)GiveItemCreate("Drac3Itm",LastTalkedToBy,1,1,1)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 23.3
   SAY @47
-  IF ~~ THEN DO~TakePartyItem("HEADDR1")GiveGoldForce(8000)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @1062971 EXIT
+  IF ~~ THEN DO~TakePartyItem("HEADDR1")GiveGoldForce(8000)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 23.4
   SAY @48
-  IF ~~ THEN DO ~ForceSpell(LastTalkedToBy(Myself),DRAGON_WING_BUFFET)Enemy()EraseJournalEntry(@106297)EraseJournalEntry(@1062971)~ SOLVED_JOURNAL @1062972 EXIT
+  IF ~~ THEN DO ~ForceSpell(LastTalkedToBy(Myself),DRAGON_WING_BUFFET)Enemy()EraseJournalEntry(@106297)EraseJournalEntry(@106298)~ SOLVED_JOURNAL @106342 EXIT
 END
 
 // -------------------------------------------------------------------------------------------------

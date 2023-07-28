@@ -294,12 +294,12 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 43.1
   SAY @81
-  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)AddexperienceParty(140000)EraseJournalEntry(@105777)~ SOLVED_JOURNAL @1057771 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)AddexperienceParty(140000)EraseJournalEntry(@105777)~ SOLVED_JOURNAL @105850 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 43.2
   SAY @83
-  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)GiveItemCreate("SCRL7U",LastTalkedToBy,1,1,0)AddexperienceParty(140000)EraseJournalEntry(@105777)~ SOLVED_JOURNAL @1057771 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)GiveItemCreate("SCRL7U",LastTalkedToBy,1,1,0)AddexperienceParty(140000)EraseJournalEntry(@105777)~ SOLVED_JOURNAL @105850 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 43.3

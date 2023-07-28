@@ -56,7 +56,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @1074441 EXIT
+  IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @107445 EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.2
