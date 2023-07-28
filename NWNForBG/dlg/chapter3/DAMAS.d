@@ -95,7 +95,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 2.2
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",1)~ UNSOLVED_JOURNAL @26 EXIT
+  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",1)~ UNSOLVED_JOURNAL @107582 EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 3.1
@@ -105,7 +105,7 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 3.2
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",5)GiveGoldForce(2000)AddexperienceParty(120000)EraseJournalEntry(@67)EraseJournalEntry(@48)EraseJournalEntry(@64)EraseJournalEntry(@62)~ SOLVED_JOURNAL @29 EXIT
+  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",5)GiveGoldForce(2000)AddexperienceParty(120000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)EraseJournalEntry(@107587)EraseJournalEntry(@107584)~ SOLVED_JOURNAL @1075871 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 5.1
@@ -181,7 +181,7 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 18.1
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("NW_Medicine","GLOBAL",1)TakePartyGold(3000)GiveItem("NWMISC73",LastTalkedToBy)SetGlobal("Siege_Is_Lifted","GLOBAL",4)~ UNSOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("NW_Medicine","GLOBAL",1)TakePartyGold(3000)GiveItem("NWMISC73",LastTalkedToBy)SetGlobal("Siege_Is_Lifted","GLOBAL",4)~ UNSOLVED_JOURNAL @107586 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 18.2
@@ -230,12 +230,12 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 32.1
   SAY @61 
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",3)GiveGoldForce(1500)AddexperienceParty(80000)EraseJournalEntry(@26)~ UNSOLVED_JOURNAL @62 EXIT
+  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",3)GiveGoldForce(1500)AddexperienceParty(80000)EraseJournalEntry(@107582)~ UNSOLVED_JOURNAL @107584 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 12.1
   SAY @63
-  IF ~~ THEN DO ~TakePartyItem("ARNESSHD")DestroyItem("ARNESSHD")SetGlobal("Siege_Is_Lifted","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(40000)EraseJournalEntry(@26)EraseJournalEntry(@62)~ UNSOLVED_JOURNAL @64 EXIT
+  IF ~~ THEN DO ~TakePartyItem("ARNESSHD")DestroyItem("ARNESSHD")SetGlobal("Siege_Is_Lifted","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(40000)EraseJournalEntry(@107582)EraseJournalEntry(@107584)~ UNSOLVED_JOURNAL @107587 EXIT
 END
 
 // ----------------------------------

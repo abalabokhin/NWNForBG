@@ -3654,17 +3654,24 @@ Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107545 = ~NP: The ground beneath your feet shakes and cracks. The world created by Morag is collapsing!~ /*The animal brushes against you cheerfully and returns its attention elsewhere.*/
 @107546 = ~Old One Warrior~
 @107547 = ~NP: Wizard of the Ancients~ /*Mercenary Wizard*/
-@107582 = ~NP: The siege of Fort Ilkard Commander Damas promised to reward anyone who could destroy the catapults bombarding Fort Ilkard.~ /*Commander Damas has promised to reward anyone who can destroy the catapults attacking Fort Ilkard.*/
-@107584 = ~With the Uthgardt catapults destroyed, Captain Damas is determined to end the siege of Fort Ilkard. 
-He has promised a reward to anyone who can bring him the head of Arness, the Elk tribe sub-chieftain in charge of the forces laying siege to Fort Ilkard.~
-@107585 = ~Zokan has explained that the Elk tribe have allied against the Lords' Alliance because of Commander Damas' terrible betrayal; the Commander infected blankets with the Wailing Death and gave them to the Elk tribe as gifts. These blankets are proof of his crime.
-The Elk Tribe within the Fort will keep peace with you while you remain their emissary, but likely those further away will not have received word as yet.
+@107582 = ~The Siege of Fort Ilkard
 
-If his people could be cured, Zokan would cease the alliance with the Luskan forces, and all the Elk Tribe would keep the peace.~
-@107586 = ~Commander Damas has admitted he infected the Elk tribe with the Wailing Death. However, he feels no remorse for his actions.
-A difficult moral decision lies ahead - deliver the plague cure to Zokan Thunderer and save the Elk tribe, or bring the chieftain's severed head to Commander Damas and collect the offered reward.~
-@107587 = ~With the siege on Fort Ilkard ended, Captain Damas seeks to destroy the Elk tribe once and for all.
-He has offered a reward to anyone who can get to their enclave in the west and bring back the head of their chieftain, Zokan Thunderer.~
+Commander Damas has promised to reward anyone who can destroy the catapults attacking Fort Ilkard.~
+@107584 = ~The Siege of Fort Ilkard
+
+With the Uthgardt catapults destroyed, Captain Damas is determined to end the siege of Fort Ilkard. He has promised a reward to anyone who can bring him the head of Arness, the Elk tribe sub-chieftain in charge of the forces laying siege to Fort Ilkard.~
+@107585 = ~The Siege of Fort Ilkard
+
+Zokan has explained that the Elk tribe have allied against the Lords' Alliance because of Commander Damas' terrible betrayal; the Commander infected blankets with the Wailing Death and gave them to the Elk tribe as gifts. These blankets are proof of his crime. The Elk Tribe within the Fort will keep peace with you while you remain their emissary, but likely those further away will not have received word as yet. If his people could be cured, Zokan would cease the alliance with the Luskan forces, and all the Elk Tribe would keep the peace.~
+@107586 = ~The Siege of Fort Ilkard
+
+Commander Damas has admitted he infected the Elk tribe with the Wailing Death. However, he feels no remorse for his actions. A difficult moral decision lies ahead - deliver the plague cure to Zokan Thunderer and save the Elk tribe, or bring the chieftain's severed head to Commander Damas and collect the offered reward.~
+@107587 = ~The Siege of Fort Ilkard
+
+With the siege on Fort Ilkard ended, Captain Damas seeks to destroy the Elk tribe once and for all. He has offered a reward to anyone who can get to their enclave in the west and bring back the head of their chieftain, Zokan Thunderer.~
+@1075871 = ~The Siege of Fort Ilkard
+
+With the head of Zokan Thunderer delivered into his lap, Commander Damas and Fort Ilkard have little to fear from the Elk tribe any longer.~
 @107596 = ~The green dragon Akulatraxas has been under attack from hill giants seeking to steal her eggs.
 She has offered treasure from her hoard to anyone who brings her the hill giant chieftain's head, telling them to seek out the hill giants' lair west of her cave.~
 @107598 = ~The Word of Power has been recovered from inside the snow globe, destroying the miniature world within and freeing the dwarves and dryads from their their endless torment.~

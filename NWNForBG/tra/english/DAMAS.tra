@@ -24,10 +24,10 @@
 @23 = ~NP: Ah, you must be one of Aarin Gends agents. He made you roam the wilderness looking for those mysterious lost artifacts, right? To me, this is a stupid assignment. The war can be won thanks to the soldiers, and not some kind of Words of Power.~ /*Ah, you must be one of Aarin Gend's agents. Got you traipsing all over the countryside searching out these mysterious lost artifacts, doesn't he?*/
 @24 = ~NP: This is great news! Of course, I should have guessed that it was your work. Therefore, you will be rewarded. Here, 1500 gold for your act of wanton destruction. Good income, right?~ /*This is excellent news! Of course I must assume that you are the one responsible for this. Therefore you shall be the one to receive your reward.*/
 @25 = ~Tell you what: you go out and disable all six catapults attacking the fort, and I'll make sure you get a healthy reward from the Fort Ilkard treasury. Now, if there is nothing else...~
-@26 = ~NP: The siege of Fort Ilkard Commander Damas promised to reward anyone who could destroy the catapults bombarding Fort Ilkard.~ /*Commander Damas has promised to reward anyone who can destroy the catapults attacking Fort Ilkard.*/
+
 @27 = ~NP: Fabulous! I order this to be put on a spear in front of the gates of Fort Ilkard immediately! For the successful removal of the siege of Fort Ilkard, I am pleased to present you with these 1000 gold pieces! The benefit that you can bring is obvious, so I want to ask you for one more favor.~ /*Since you have proven yourself so useful already, there is something else I would ask of you.*/
 @28 = ~NP: The Elk tribe has been destroyed! The world is spared from their evil presence. Finally, these lands are cleared of these wandering savages! Your reward. Certainly. 2000 gold is a fair price. By working for me, you may well become rich.~ /*And the Elk tribe is no more! The world is rid of their vile presence. At last, the lands have been cleansed of those wandering savages!*/
-@29 = ~NP: Siege of Fort Ilkard Now that the head of Zokan Thunderbolt has been delivered, Commander Damas and all of Fort Ilkard no longer have to fear the Elk tribe.~ /*With the head of Zokan Thunderer delivered into his lap, Commander Damas and Fort Ilkard have little to fear from the Elk tribe any longer.*/
+
 @30 = ~Glad we could see eye to eye on this. Now, if there's nothing else...~
 @31 = ~You don't really believe that, do you? You think if I hand over the cure the Elk tribe will suddenly abandon their Luskan allies? Uh... not that I have a cure on me...~
 @32 = ~I know you have the cure. Now hand it over.~
@@ -46,8 +46,7 @@
 @45 = ~NP: To the south of this fort are some abandoned ruins. A team of my scouts once went there, and there they discovered strange ruins. Nearby, they found the entrance to a cave, and inside were some ancient ruins. No one knows who built them, but according to my scouts, they dont look like dwarf, elf, or human ruins.~ /*Nearby they found a glowing cave entrance, and inside were some ancient ruins. Nobody seems to know who built them, but according to my scouts they didn't look like dwarven, elven or human architecture.*/
 @46 = ~NP: Is it true? Well, then I cant help you much. Those old ruins to the south are the only place I know of that might still hold some ancient magic. Well, I think its time for you to go, and I should get back to managing this fort.~ /*Really? Well, then I guess I can't be much help to you then. Those old ruins way to the south are the only place I know of that might have some kind of ancient magic.*/
 @47 = ~NP: I knew that we could come to an agreement. Heres the cure. If you still change your mind, and decide that the Utgardts do not belong on this earth, bring me the head of their leader Zokan. Now, if youll excuse me, Ill get back to my business.~ /*If you change your mind and decide you'd rather exterminate these Uthgardt after all, just bring me back the head of their leader Zokan.  Now, if you'll excuse me I have business to attend to.*/
-@48 = ~Commander Damas has admitted he infected the Elk tribe with the Wailing Death. However, he feels no remorse for his actions.
-A difficult moral decision lies ahead - deliver the plague cure to Zokan Thunderer and save the Elk tribe, or bring the chieftain's severed head to Commander Damas and collect the offered reward.~
+
 @49 = ~Guards, help! Enemy in the compound!~
 @50 = ~To the death, then!~
 @51 = ~NP: Cant blame you. I myself would not waste my own money on these savages. My previous offer still stands. You know, the one where you act like a soldier and kill your enemies instead of saving them. If you still change your mind, and decide that the Utgardts do not belong on this earth, bring me the head of their leader Zokan. Now, if youll excuse me, Ill get back to my business.~ /*Can't say I blame you. I wouldn't spend my own money to save those savages either. My earlier offer still stands. You know, the one where you act like a soldier and kill our enemies instead of saving them?*/
@@ -61,14 +60,8 @@ A difficult moral decision lies ahead - deliver the plague cure to Zokan Thunder
 @59 = ~If that's the way you want to be, fine. Keep the blankets.~
 @60 = ~If you desire even more gold, I have another job you might be interested in. The Uthgardt siege is still a problem, even without their catapults lobbing death from above.~
 @61 = ~NP: I want to have the head of Arness, the Uthgardts junior leader who leads the siege, brought to me! I will put his skull on a spear in front of the fort gates, and the Utgardts will think twice before they decide to storm Fort Ilkard again! Of course, I will see to it that you are given a rich reward for such a gift. Now, if nothing else... Ill mind my own business.~ /*You could bring me the head of Arness, the Uthgardt sub-chief in charge of this siege! I stick his melon on a pole outside the gates, and the Uthgardt will think twice before attacking Fort Ilkard again!*/
-@62 = ~With the Uthgardt catapults destroyed, Captain Damas is determined to end the siege of Fort Ilkard. 
-He has promised a reward to anyone who can bring him the head of Arness, the Elk tribe sub-chieftain in charge of the forces laying siege to Fort Ilkard.~
+
 @63 = ~NP: The best way to break the alliance between Luskan and the Elk tribe is to kill the leader of the Utgardts, Zokan the Thunderer. Without their commander, the Elk tribe will fall apart. And that will be the end of the union. The chieftain of the Uthgardts dug in at the old fort to the west of here. The damned coward hasnt come out of there for weeks! Bring me his head and you will be well rewarded.~ /*The best way to break the Luskan - Elk tribe alliance is to kill off the Uthgardt chief, Zokan Thunderer. Without Zokan to guide them, the Elk tribe will fall apart. And that will be the end of the alliance.*/
-@64 = ~With the siege on Fort Ilkard ended, Captain Damas seeks to destroy the Elk tribe once and for all.
-He has offered a reward to anyone who can get to their enclave in the west and bring back the head of their chieftain, Zokan Thunderer.~
+
 @65 = ~Why have you come back? I already gave you the cure for the Elk tribe - what more do you want from me?~
 @66 = ~I see you have returned, my <PRO_LADYLORD>. Is there something further I can do for you?~
-@67 = ~Zokan has explained that the Elk tribe have allied against the Lords' Alliance because of Commander Damas' terrible betrayal; the Commander infected blankets with the Wailing Death and gave them to the Elk tribe as gifts. These blankets are proof of his crime.
-The Elk Tribe within the Fort will keep peace with you while you remain their emissary, but likely those further away will not have received word as yet.
-
-If his people could be cured, Zokan would cease the alliance with the Luskan forces, and all the Elk Tribe would keep the peace.~
