@@ -56,12 +56,7 @@
 @55 = ~Tell me about these guardian golems.~
 @56 = ~So the Word of Power is inside the ruins?~
 @57 = ~Just remember the rules. They're all in that notebook in case you forget. One: the area of the time sink only extends the length of the ruins. You won't be able to leave the vault complex while you are back in the past.~
-@58 = ~NP: Plant the seeds of the Ultarga tree
 
-A wild sorceress named Saphira is looking for someone who will agree to go back in time 10,000 years and plant the seeds of the rare Ultarga tree so that she can harvest its fruit here in the present. The seeds must be planted under a red guard rune in an ancient garden from the past. Saphira explained that if one applied the power of the time crystal on the sundial in the ruins of the Creator Race, it would transport one back to the past. If one repeated the same actions in the past, one could return to the present.~ /*A wild mage named Sapphira needs someone to travel back in time 10,000 years to plant the seeds of the rare Ultarg Tree so that she can harvest the fruit here in the present. The seeds must be planted beneath the red warding rune in the garden of the ancient past.
-Sapphira explained that using the power of a time crystal on one of the sundials in the Creator Race ruins will draw a person back into the past, and using it in the same manner in the past will bring them back to the present.
-
-She also mentioned that one of the Words of Power might be found in the vault at the center of the Creator Race ruins.*/
 @59 = ~You could go back into the past and maybe find a way to weaken the golems so you could get to the Word of Power you mentioned at our last meeting... or maybe you mention it at our next meeting. It's hard to keep everything straight.~
 @60 = ~Golems?~
 @61 = ~How do I use the sun dial?~
@@ -85,10 +80,7 @@ She also mentioned that one of the Words of Power might be found in the vault at
 @79 = ~NP: I give you a tree that's been growing for ten thousand years, and you want to give me a handful of pebbles for it?~ /*I give you a tree that was ten thousand years in the making, and all you give me is a handful of gems?*/
 @80 = ~You better cough up something else or you'll end up dead at the foot of this tree!~
 @81 = ~NP: Goodbye, until the next first meeting. Ha! Another professional joke! Or haven't I told you one yet....~ /*Farewell, <CHARNAME>, until we meet again for the first time. Ha! Another time travel joke! Or maybe I haven't told any yet...*/
-@82 = ~NP: Plant the seeds of the Ultarga tree
 
-From the seeds planted in the past, a magnificent Ultarga tree has grown in the present. Now Saphira will be able to harvest the fruit she has been looking forward to.~ /*The seeds have been planted in the past and a magnificent Ultarg Tree has sprouted up in the present day.
-Now Sapphira will be able to harvest the fruit she has so eagerly been waiting for.*/
 @83 = ~NP: Well, I guess I can afford to add something else to your reward. After all, in the past you might have been captured by those scaly slave owners while you were planting my tree. I have nothing else but this scroll. I guess you can have it. But that's it, I can't give you anything else.~ /*Well, I suppose I could afford something else. After all, you did risk capture by those scaly slavers in the past to plant this tree for me.*/
 @84 = ~NP: Makes sense, but these gems have also been created over thousands of years, don't they? Fair enough.~ /*True enough but those gems were a thousand centuries in the making, weren't they? I think we are even, <CHARNAME>.*/
 @85 = ~Obviously you have no concept of existence across multiple temporal realities. As long as I remain in this place and this time period I am eternal and, in effect, immortal. You can't hurt me, so your threats have no meaning.~

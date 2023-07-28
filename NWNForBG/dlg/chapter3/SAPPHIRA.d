@@ -198,7 +198,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 27.3
   SAY @18
-  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",1)GiveItemCreate("Nwmisc74",LastTalkedToBy,0,0,0)GiveItemCreate("Nwmisc75",LastTalkedToBy,0,0,0)GiveItemCreate("Nwbook54",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @58 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",1)GiveItemCreate("Nwmisc74",LastTalkedToBy,0,0,0)GiveItemCreate("Nwmisc75",LastTalkedToBy,0,0,0)GiveItemCreate("Nwbook54",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @105777 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 24.1
@@ -294,12 +294,12 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 43.1
   SAY @81
-  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)AddexperienceParty(140000)EraseJournalEntry(@58)~ SOLVED_JOURNAL @82 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)AddexperienceParty(140000)EraseJournalEntry(@105777)~ SOLVED_JOURNAL @1057771 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 43.2
   SAY @83
-  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)GiveItemCreate("SCRL7U",LastTalkedToBy,1,1,0)AddexperienceParty(140000)EraseJournalEntry(@58)~ SOLVED_JOURNAL @82 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSapphiraJob","GLOBAL",2)GiveItemCreate("MISC41",LastTalkedToBy,2,0,0)GiveItemCreate("MISC42",LastTalkedToBy,1,0,0)GiveItemCreate("MISC43",LastTalkedToBy,1,0,0)GiveItemCreate("MISC44",LastTalkedToBy,1,0,0)GiveItemCreate("SCRL7U",LastTalkedToBy,1,1,0)AddexperienceParty(140000)EraseJournalEntry(@105777)~ SOLVED_JOURNAL @1057771 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 43.3

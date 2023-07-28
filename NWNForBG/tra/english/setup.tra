@@ -3316,10 +3316,14 @@ You may keep this letter for a fortnight, and then you will be tested on what yo
 @105771 = ~This is a yellow gem of little intrinsic value. All light passing through the translucent stone takes on a yellowish hue.~
 @105772 = ~NP: Fertile soil. You can plant any seeds here if you like.~ /*Me sent protecting forest. Me needs planting seeds!*/
 @105773 = ~NP: You have already planted the seeds.~ /*You wouldn't dare.*/
-@105777 = ~NP: Plant the Ultarga Tree Seeds A wild sorceress named Saphira is looking for someone who will agree to go back in time 10,000 times and plant the seeds of the rare Ultarga Tree so that she can harvest its fruits here in the present. The seeds must be planted under the red guardian rune in the ancient garden from the past. Saphira explained that if the power of the time crystal on the sundial in the Creator Race Ruins was applied, it would take a person back to the past. If you repeat the same actions in the past, you can return to the present.~ /*A wild mage named Sapphira needs someone to travel back in time 10,000 years to plant the seeds of the rare Ultarg Tree so that she can harvest the fruit here in the present. The seeds must be planted beneath the red warding rune in the garden of the ancient past.
-Sapphira explained that using the power of a time crystal on one of the sundials in the Creator Race ruins will draw a person back into the past, and using it in the same manner in the past will bring them back to the present.
+@105777 = ~Plant the Ultarg Tree Seeds
 
-She also mentioned that one of the Words of Power might be found in the vault at the center of the Creator Race ruins.*/
+A wild mage named Sapphira needs someone to travel back in time 10,000 years to plant the seeds of the rare Ultarg Tree so that she can harvest the fruit here in the present. The seeds must be planted beneath the red warding rune in the garden of the ancient past.
+Sapphira explained that using the power of a time crystal on one of the sundials in the Creator Race ruins will draw a person back into the past, and using it in the same manner in the past will bring them back to the present.~
+
+@1057771 = ~Plant the Ultarg Tree Seeds
+
+The seeds have been planted in the past and a magnificent Ultarg Tree has sprouted up in the present day. Now Sapphira will be able to harvest the fruit she has so eagerly been waiting for.~
 @105856 = ~Sapphira~
 @105877 = ~Lokar~
 @105878 = ~Slave Worker~
