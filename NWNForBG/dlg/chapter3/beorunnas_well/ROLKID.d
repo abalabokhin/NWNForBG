@@ -86,7 +86,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 8.2
   SAY @23
-  IF ~~ THEN DO ~TakePartyItem("ObolHead")TakePartyItem("ObolHea2")SetGlobal("RolkidQuest","GLOBAL",4)AddexperienceParty(90000)GiveGoldForce(1000)EraseJournalEntry(@36)~ SOLVED_JOURNAL @24 EXIT
+  IF ~~ THEN DO ~TakePartyItem("ObolHead")TakePartyItem("ObolHea2")SetGlobal("RolkidQuest","GLOBAL",4)AddexperienceParty(90000)GiveGoldForce(1000)EraseJournalEntry(@105371)~ SOLVED_JOURNAL @107581 EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 9.1
@@ -110,7 +110,7 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 14.1
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("RolkidQuest","GLOBAL",1)GiveItemCreate("NWLETT2",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @31 EXIT
+  IF ~~ THEN DO ~SetGlobal("RolkidQuest","GLOBAL",1)GiveItemCreate("NWLETT2",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @105372 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 14.2
@@ -123,12 +123,12 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 14.3
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("RolkidQuest","GLOBAL",2)TakePartyItem("GuzuHead")TakePartyItem("GuzudHd2")TakePartyItem("VaatHead")TakePartyItem("VaatHea2")AddexperienceParty(90000)GiveGoldForce(1000)EraseJournalEntry(@31)~ SOLVED_JOURNAL @34 EXIT
+  IF ~~ THEN DO ~SetGlobal("RolkidQuest","GLOBAL",2)TakePartyItem("GuzuHead")TakePartyItem("GuzudHd2")TakePartyItem("VaatHead")TakePartyItem("VaatHea2")AddexperienceParty(90000)GiveGoldForce(1000)EraseJournalEntry(@105372)~ SOLVED_JOURNAL @105373 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 15.1
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("RolkidQuest","GLOBAL",3)EraseJournalEntry(@34)~ UNSOLVED_JOURNAL @36 EXIT
+  IF ~~ THEN DO ~SetGlobal("RolkidQuest","GLOBAL",3)EraseJournalEntry(@105373)~ UNSOLVED_JOURNAL @105371 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 14.2

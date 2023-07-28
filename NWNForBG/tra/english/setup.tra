@@ -3210,10 +3210,15 @@ The death of one of the participants has indefinitely postponed Rolgan's trial. 
 @105367 = ~NP: Endar Big Heart~ /*Heartfood*/
 @105368 = ~Dalcia~
 @105369 = ~Vanda~
-@105371 = ~The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking the entrance to the soldiers barracks in Beournna's Well. The infamous raiders will trouble the supply lines of the Lords' Alliance no more.
-Rolkid now seeks the head of Obould Many-Arrows, a powerful orcish chieftain, to complete his collection. Needless to say, he has put up a substantial reward.~
-@105372 = ~NP: Save food supplies Rolkid Bigspear, in charge of food supply at Beorunn's Well, wants to send word to the raiders who are disrupting the Lords' Alliance food supply. He offered a substantial reward to anyone who would bring him the heads of two famous orc bandits: Vaat and Guzud.~ /*Rolkid of the Mighty Lance, supply master for Beorunna's Well, wants to send a message to the raiders attacking the Lords' Alliance supply lines. 
-He has offered a substantial bounty to anyone who delivers him the heads of the infamous orc bandits Vaath and Guzud.*/
+@105371 = ~Save the Supply Lines
+
+The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking the entrance to the soldiers barracks in Beournna's Well. The infamous raiders will trouble the supply lines of the Lords' Alliance no more. Rolkid now seeks the head of Obould Many-Arrows, a powerful orcish chieftain, to complete his collection. Needless to say, he has put up a substantial reward.~
+@105372 = ~Save the Supply Lines
+
+Rolkid of the Mighty Lance, supply master for Beorunna's Well, wants to send a message to the raiders attacking the Lords' Alliance supply lines. He has offered a substantial bounty to anyone who delivers him the heads of the infamous orc bandits Vaath and Guzud.~
+@105373 = ~Save Food Supplies
+
+NP: The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking the entrance to the soldiers barracks in Beournna's Well. No longer will these notorious raiders interfere with the food supply of the Lords' Alliance.~ /*This dwarf is one of the many commoners who has come to Beorunna's Well to join the Lords' Alliance Cause.*/
 @105374 = ~NP: Bruns' shell~ /*Morag's Shell*/
 @105375 = ~NP: Bruns Trubenk was a follower of Tyr, who bravely fought in the service of his god both in the ice of the North and in the sands of the South. During one of these campaigns, a group of magicians accused him of a terrible crime, and after a hasty trial, he was found guilty and sentenced to imprisonment in a timeless sphere in the bowels of the earth. A few months later, it turned out that Bruns was innocent, and a certain necromancer should bear responsibility for what he was charged with. In a fit of sincere repentance, Sarshid, the renunciate magician who carried out the sentence, not only freed him and created for him this shell, which was supposed to save its owner from a repetition of a similar terrible fate in the future. In addition to protection from his own school of magic, Sarshid gave the armor and protection from Death magic to ensure that when Bruns encounters the necromancer who caused his misfortunes, he does not fall victim to the deadly magic of the latter. What happened next to Bruns or the necromancer is unknown, and Sarshid was killed shortly thereafter by his own companions, who were afraid that he would again create something that would finally undermine their power. STATS: Immunity to Abjuration, Confinement, Death Spell, Defense Class: 0 Weight: 50 Requires: 18 Strength Unused by: Bards Druids Mages Thieves~ /*Having investigated the Sword Coast Boys, it has been revealed that the leader of the gang, Drawl, has bargained away the lives of the entire gang. He made a deal with a creature named Gulnan, and has become a powerful undead as a result. This bargain also gave him the strength to brutally murder his brother Zelieph, the man who kept Drawl in line and the only person he truly feared. Now Zelieph's spirit haunts the Beggar's Nest, and is currently being escorted to meet with his former brother, presumeably to exact revenge. Zelieph is following a former possession of his, a link to his life and a reminder of the treachery that befell him. It is not known what would happen if the spirit of Zelieph were led to his now undead brother Drawl, or what effect he would have on the link between Drawl and Gulnan.*/
 @105376 = ~NP: Dagger of Demarasse~ /*The Dagger of Chaos*/
@@ -3665,6 +3670,9 @@ Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107545 = ~NP: The ground beneath your feet shakes and cracks. The world created by Morag is collapsing!~ /*The animal brushes against you cheerfully and returns its attention elsewhere.*/
 @107546 = ~Old One Warrior~
 @107547 = ~NP: Wizard of the Ancients~ /*Mercenary Wizard*/
+@107581 = ~Save the Supply Lines
+
+The head of Obould Many-Arrows has been delivered to Rolkid of the Mighty lance, and the threat to the Lords' Alliance supply lines has been well and truly vanquished.~
 @107582 = ~The Siege of Fort Ilkard
 
 Commander Damas has promised to reward anyone who can destroy the catapults attacking Fort Ilkard.~
