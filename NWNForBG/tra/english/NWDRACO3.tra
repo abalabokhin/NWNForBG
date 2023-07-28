@@ -29,10 +29,7 @@
 @28 = ~I will do this for you, Gorgotha!~
 @29 = ~I'd need some kind of payment up front for an undertaking as dangerous as this.~
 @30 = ~NP: I admire your courage, little creature. Come back to me when you have Klout's head. Otherwise, I will assume this was all an attempt to somehow get me off my balls. I wish you luck, though frankly I'm sure you're doomed to a gruesome doom. But for the sake of my unborn offspring, I hope I'm wrong.~ /*I admire your courage, small one. Return to me when you have Klauth's head. Otherwise I may think this has all been a deception to somehow trick me out of my eggs.*/
-@31 = ~NP: Gorgotha, the golden dragon
 
-The servants of Clout, an ancient red worm, attacked the lair of the golden dragoness Gorgotha several times. In exchange for Clout's head, Gorgotha offered to give up some of her stashed treasure.~ /*The servants of Klauth, an ancient red wyrm, have been attacking the lair of the gold dragon Gorgotha.
-In exchange for Klauth's head Gorgotha has offered a share of her treasure hoard.*/
 @32 = ~NP: Don't be foolish, <RACE>. I promised you a share of my treasure. No one dares question the honor of the golden dragons..... unless this is all a trick to get me to leave my treasure. If you feel the risk is too great, I understand. But I will not give up a single piece of my treasure until I have Klout's head at my feet.~ /*Do not be foolish, <PRO_RACE> <PRO_MALEFEMALE>. I have promised you a share of my hoard. The honor of a gold dragon is beyond question... unless this is all just a plan to trick me out of my treasure hoard.*/
 @33 = ~For what reason have you violated the sanctity of this cave? Have you come seeking Gorgotha's eggs? You would be wise to answer me, tiny one.~ [DRACO352]
 @34 = ~Eggs? Why would I want your eggs?~
@@ -46,13 +43,9 @@ In exchange for Klauth's head Gorgotha has offered a share of her treasure hoard
 @42 = ~NP: But your offspring's lives are worth more than you offered me, aren't they?~ /*I think your wife's safety is worth more than that, no?*/
 @43 = ~NP: Give me more gold, or I'll break your balls!~ /*Give more gold or me smash you eggs!*/
 @44 = ~NP: So, my little hero, it's time to say goodbye. Go with my blessings.~ /*Now, my little hero. Is there anything else I can do for you?*/
-@45 = ~NP: Gorgotha, the golden dragon
 
-The head of the worm Clout has been delivered to the golden dragoness Gorgotha. She can now rest assured that her eggs will remain intact.~ /*The head of the wyrm Klauth has been delivered to the dragon Gorgotha, assuring her of the continued survival of her eggs.*/
 @46 = ~NP: You are impertinent, creature <RACE>, if you demand treasure from a dragoness in her own lair. But there is truth in what you say, so I suppose I can offer you something more. Take this ring. Its power may prove useful to you. But you would be wise not to press me further. My scales may be covered in gold, but my temper remains that of a dragon.~ /*Take this ring. Its power may be of some use to you. But you would be wise not to press me further. My scales may be hued with golden virtue, but my temper is still that of a dragon.*/
 @47 = ~You have already been well rewarded for your task, <PRO_RACE> one. Do not press me further. My scales may be hued with golden virtue, but my temper is still that of a dragon.~
 @48 = ~I have treated you with nothing but respect, <PRO_RACE> creature, and now you dare threaten my children? Such a crime is unforgivable! Feel the fury of Gorgotha unleashed!~
-@49 = ~NP: Gorgotha, the golden dragon
 
-Gorgoth's golden dragoness has been slain.~ /*The gold dragon Gorgotha has been slain.*/
 @50 = ~I remember you. You are the one who brought me the head of Klauth. Because of you I no longer need fear for the lives of my children. How may I help you?~ [DRACO250]
