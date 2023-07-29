@@ -68,7 +68,7 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 7.2 8.2
   SAY @24
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",1)EraseJournalEntry(@104)~ UNSOLVED_JOURNAL @25 EXIT
+  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",1)EraseJournalEntry(@98004)~ UNSOLVED_JOURNAL @102639 EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 7.3 8.3
