@@ -37,12 +37,12 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 4.1
   SAY @11
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @12 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @94788 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
   SAY @13
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @12 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @94788 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 4.1
@@ -79,7 +79,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 5.2
   SAY @19
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)EraseJournalEntry(@12)~ SOLVED_JOURNAL @20 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)EraseJournalEntry(@94788)~ SOLVED_JOURNAL @94808 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.1
@@ -109,22 +109,22 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 2.2
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)GiveItemCreate("CLCKNW2",LastTalkedToBy,1,1,1)AddexperienceParty(42000)EraseJournalEntry(@12)~ SOLVED_JOURNAL @20 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)GiveItemCreate("CLCKNW2",LastTalkedToBy,1,1,1)AddexperienceParty(42000)EraseJournalEntry(@94788)~ SOLVED_JOURNAL @94808 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 2.2
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)GiveItemCreate("AX1HNW3",LastTalkedToBy,1,1,1)AddexperienceParty(42000)EraseJournalEntry(@12)~ SOLVED_JOURNAL @20 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)GiveItemCreate("AX1HNW3",LastTalkedToBy,1,1,1)AddexperienceParty(42000)EraseJournalEntry(@94788)~ SOLVED_JOURNAL @94808 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 2.2
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)ForceSpellRes("SPKAOH",LastTalkedToBy(Myself))AddexperienceParty(42000)EraseJournalEntry(@12)~ SOLVED_JOURNAL @20 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)ForceSpellRes("SPKAOH",LastTalkedToBy(Myself))AddexperienceParty(42000)EraseJournalEntry(@94788)~ SOLVED_JOURNAL @94808 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 10.3
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)AddexperienceParty(84000)EraseJournalEntry(@12)~ SOLVED_JOURNAL @20 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)AddexperienceParty(84000)EraseJournalEntry(@94788)~ SOLVED_JOURNAL @94808 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 7.3
@@ -163,7 +163,7 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 10.3
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)GiveItemCreate("NWBOOK46",LastTalkedToBy,1,1,1)AddexperienceParty(42000)EraseJournalEntry(@12)~ SOLVED_JOURNAL @20 EXIT
+  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",4)GiveItemCreate("NWBOOK46",LastTalkedToBy,1,1,1)AddexperienceParty(42000)EraseJournalEntry(@94788)~ SOLVED_JOURNAL @94808 EXIT
 END
 
 
