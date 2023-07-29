@@ -76,7 +76,7 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 5.4
   SAY @22
-  IF ~~ THEN DO ~TakePartyItem("OleffL1")SetGlobal("ChestOpen","MYAREA",1)EraseJournalEntry(@32)EscapeArea()~ UNSOLVED_JOURNAL @23 EXIT
+  IF ~~ THEN DO ~TakePartyItem("OleffL1")SetGlobal("ChestOpen","MYAREA",1)EraseJournalEntry(@92702)EscapeArea()~ UNSOLVED_JOURNAL @92668 EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 7.1
