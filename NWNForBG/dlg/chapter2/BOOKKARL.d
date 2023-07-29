@@ -22,7 +22,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @5
-  IF ~~ THEN REPLY @3 DO ~SetGlobal("KarlatBook","MYAREA",0)~ UNSOLVED_JOURNAL @6 EXIT
+  IF ~~ THEN REPLY @3 DO ~SetGlobal("KarlatBook","MYAREA",0)~ UNSOLVED_JOURNAL @97801 EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
