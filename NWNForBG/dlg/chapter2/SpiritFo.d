@@ -21,9 +21,9 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
   SAY @5
-  IF ~~ THEN DO ~SetGlobal("Dialog","LOCALS",2)EraseJournalEntry(@39)
-EraseJournalEntry(@40)
-EraseJournalEntry(@41)ForceSpellRES("SPIRITFO",Myself)~ UNSOLVED_JOURNAL @6 EXIT
+  IF ~~ THEN DO ~SetGlobal("Dialog","LOCALS",2)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)ForceSpellRES("SPIRITFO",Myself)~ UNSOLVED_JOURNAL @98274 EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
@@ -59,10 +59,10 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 5.3
   SAY @21
-  IF ~~ THEN DO ~DestroyItem("Minhp1")Enemy()Attack(LastTalkedToBy(Myself))EraseJournalEntry(@39)
-EraseJournalEntry(@40)
-EraseJournalEntry(@41)
-EraseJournalEntry(@6)~ UNSOLVED_JOURNAL @22 EXIT
+  IF ~~ THEN DO ~DestroyItem("Minhp1")Enemy()Attack(LastTalkedToBy(Myself))EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)~ UNSOLVED_JOURNAL @98276 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
@@ -104,10 +104,10 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADSPIRITFO","GLOBAL",0)SetGlobal("SpiritSaved","GLOBAL",1)TakePartyItem("Antidote")EraseJournalEntry(@39)
-EraseJournalEntry(@40)
-EraseJournalEntry(@41)
-EraseJournalEntry(@6)~ UNSOLVED_JOURNAL @36 EXIT
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADSPIRITFO","GLOBAL",0)SetGlobal("SpiritSaved","GLOBAL",1)TakePartyItem("Antidote")EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)~ UNSOLVED_JOURNAL @98275 EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
