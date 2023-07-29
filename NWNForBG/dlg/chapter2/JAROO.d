@@ -35,7 +35,7 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 5.1
   SAY @8
-  IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("KnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(@16)~ UNSOLVED_JOURNAL @9 EXIT
+  IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("KnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(@97572)~ UNSOLVED_JOURNAL @97550 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 5.2
