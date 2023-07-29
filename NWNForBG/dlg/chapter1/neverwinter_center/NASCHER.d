@@ -346,7 +346,7 @@ END
 
 IF ~~ THEN BEGIN 48 // 45.3
   SAY @64
-  IF ~~ THEN DO ~SetGlobal("FindCult","GLOBAL",1)RevealAreaOnMap("NW2000")~ UNSOLVED_JOURNAL @65 EXIT
+  IF ~~ THEN DO ~SetGlobal("FindCult","GLOBAL",1)RevealAreaOnMap("NW2000")~ UNSOLVED_JOURNAL @92485 EXIT
 END
 
 IF ~~ THEN BEGIN 49 // 45.4
