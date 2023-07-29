@@ -33,7 +33,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
   SAY @13
-  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)EraseJournalEntry(@40)~ UNSOLVED_JOURNAL @14 EXIT
+  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)EraseJournalEntry(@95176)~ UNSOLVED_JOURNAL @95191 EXIT
   IF ~  GlobalGT("DrakeQuest","GLOBAL",0)~ THEN EXIT
   IF ~  Global("DrakeQuest","GLOBAL",0)!Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)~ EXIT
 END
