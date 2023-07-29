@@ -136,13 +136,13 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 16.1
   SAY @36
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @37 EXIT
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @92603 EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 16.2
   SAY @38
   IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)GiveItemCreate("NyatKey",LastTalkedToBy,1,0,0)GiveItemCreate("NyatScrl",LastTalkedToBy,1,0,0)
-GiveItemCreate("NyatAmul",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @39 EXIT
+GiveItemCreate("NyatAmul",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @92604 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 11.4
@@ -164,7 +164,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 15.4
   SAY @41
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @37 EXIT
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @92603 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 15.5
@@ -223,7 +223,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 25.2
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(120000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @52 EXIT
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(120000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(@92603)EraseJournalEntry(@92604)~ SOLVED_JOURNAL @92651 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 25.3
@@ -235,17 +235,17 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 29.1
   SAY @54
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",9)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @55 EXIT
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",9)EraseJournalEntry(@92603)EraseJournalEntry(@92604)~ SOLVED_JOURNAL @92654 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 29.2
   SAY @56
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(80000)GiveGoldForce(900)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @57 EXIT
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(80000)GiveGoldForce(900)EraseJournalEntry(@92603)EraseJournalEntry(@92604)~ SOLVED_JOURNAL @92656 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 29.2
   SAY @58
-  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(100000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(@37)EraseJournalEntry(@39)~ SOLVED_JOURNAL @57 EXIT
+  IF ~~ THEN DO ~SetGlobal("NyatarQuest","GLOBAL",3)AddexperienceParty(100000)GiveItem("NyatPriz",LastTalkedToBy)EraseJournalEntry(@92603)EraseJournalEntry(@92604)~ SOLVED_JOURNAL @92656 EXIT
 END
 
 // ---------------------------------------------------------------------------------------------
