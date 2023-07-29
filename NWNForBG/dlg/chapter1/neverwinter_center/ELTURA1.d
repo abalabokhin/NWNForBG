@@ -60,7 +60,7 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
   SAY @14
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",1)GiveItemCreate("Elturkey",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @15 EXIT
+  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",1)GiveItemCreate("Elturkey",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @90834 EXIT
 END
 
 // -------------------------------------------
@@ -84,9 +84,9 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 10.1
   SAY @19
- IF ~~ THEN REPLY @20 DO ~SetGlobal("CloakTower","GLOBAL",3)TakePartyItem("Nwmisc20")TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@15)StartCutSceneMode()StartCutScene("EltTest")~ UNSOLVED_JOURNAL @21 EXIT
+ IF ~~ THEN REPLY @20 DO ~SetGlobal("CloakTower","GLOBAL",3)TakePartyItem("Nwmisc20")TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@90834)StartCutSceneMode()StartCutScene("EltTest")~ UNSOLVED_JOURNAL @90835 EXIT
   IF ~~ THEN REPLY @22 DO ~SetGlobal("CloakTower","GLOBAL",2)TakePartyItem("Nwmisc20")
-TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@15)~ UNSOLVED_JOURNAL @21 GOTO 15
+TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@90834)~ UNSOLVED_JOURNAL @90835 GOTO 15
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.2
@@ -111,7 +111,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 9.5
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",4)GiveItemCreate("EltCloak",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@21)~ SOLVED_JOURNAL @29 EXIT
+  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",4)GiveItemCreate("EltCloak",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@90835)~ SOLVED_JOURNAL @90866 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 11.2
@@ -155,6 +155,6 @@ END
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Class(Player1,MAGE_ALL)Global("CloakTower","GLOBAL",3)IsGabber(Player1)Dead("EltGolem")~ THEN BEGIN 21 // from:
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",4)GiveItemCreate("EltCloak",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@21)~ SOLVED_JOURNAL @29 EXIT
+  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",4)GiveItemCreate("EltCloak",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@90835)~ SOLVED_JOURNAL @90866 EXIT
 END
 
