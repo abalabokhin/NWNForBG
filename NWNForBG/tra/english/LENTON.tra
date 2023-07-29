@@ -32,7 +32,7 @@
 @31 = ~NP: This is exactly what I need you to help me get my revenge. The one that... ate my brother was obviously the leader. He started pointing and roaring, and the whole gang, or whatever you want to call a bunch of trolls, burst into the cave and attacked us. Only a few of us slipped out of those caves. I want someone to go back there and kill every last one of those trolls. Especially this big guy.~ /*The one that... ate my brother was obviously the leader. He started pointing and snarling and a whole tribe, or whatever you're supposed to call a group of trolls, rushed out and started to attack us.*/
 @32 = ~All I can afford to pay you is 300 gold. That's all I have left after this fool's errand. So what do you think?~
 @33 = ~Excellent. Bring me the troll Chieftain's head and I will pay you 300 gold.~
-@34 = ~NP: East Road: Troll head trophy Lenton, one of the archaeologists, was lucky to get out of the troll caves near the road east of Port Llast, but his brother was killed in the fight. Burning with a thirst for revenge, he asked us to bring him the head of the troll leader who killed his brother.~ /*Lenton, one of the archeologists lucky enough to escape from the troll caves along the road east of Port Llast, lost a brother in the attack. Eager for vengeance, he has asked adventurers to return to him with the head of the troll chieftain responsible.*/
+
 @35 = ~Like I should be surprised. If you decide to develop a backbone, just come back here.~
 @36 = ~I see you are back again. Have you changed your mind about killing those trolls?~
 @37 = ~What do you want done again?~
@@ -51,7 +51,7 @@
 @50 = ~Sure.~
 @51 = ~No, I'm not interested.~
 @52 = ~NP: You -<MALEFEMALE> great nobility. I will tell everyone I know about your exploits.~ /*You are an honorable <PRO_MANWOMAN>. I shall tell everyone I know of your heroic deeds.*/
-@53 = ~NP: East Road: Troll head trophy Lenton, one of the archaeologists, was lucky to get out of the troll caves near the road east of Port Llast, but his brother was killed in the fight. Burning with a thirst for revenge, he asked us to bring him the head of the leader of the trolls who killed his brother. We complied with his request, and Lenton thanked us.~ /*Lenton, one of the archeologists lucky enough to escape from the troll caves along the road east of Port Llast, lost a brother in the attack. Eager for vengeance, he asked adventurers to return to him with the head of the troll chieftain responsible. They complied and Lenton has expressed his gratitude.*/
+
 @54 = ~NP: Very good. Well, all the best to you in the future.~ /*Very well. Good luck to you in the future. I am off.*/
 @55 = ~NP: Yes, such statements were to be expected from people like you. Threat all you want. Kill me, search your pockets - still no more coins. Heres 600 gold, just like I promised.~ /*I guess I should have expected such a comment from your type. You can threaten all you want. You won't find anymore money on my corpse.*/
 @56 = ~So you're back. Do you have the head of the troll chieftain yet?~

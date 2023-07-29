@@ -94,7 +94,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 12.2 13.2
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("LentonQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @34 EXIT
+  IF ~~ THEN DO ~SetGlobal("LentonQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99482 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 12.3 13.3
@@ -139,17 +139,17 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 19.1
   SAY @52
-  IF ~~ THEN DO ~TakePartyItem("HeadTrol")SetGlobal("LentonQuest","GLOBAL",2)AddexperienceParty(30000)ReputationInc(1)EraseJournalEntry(@34) ~ SOLVED_JOURNAL @53 EXIT
+  IF ~~ THEN DO ~TakePartyItem("HeadTrol")SetGlobal("LentonQuest","GLOBAL",2)AddexperienceParty(30000)ReputationInc(1)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 19.2
   SAY @54
-  IF ~~ THEN DO ~TakePartyItem("HeadTrol")SetGlobal("LentonQuest","GLOBAL",2)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@34) ~ SOLVED_JOURNAL @53 EXIT
+  IF ~~ THEN DO ~TakePartyItem("HeadTrol")SetGlobal("LentonQuest","GLOBAL",2)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 19.3
   SAY @55
-  IF ~~ THEN DO ~TakePartyItem("HeadTrol")SetGlobal("LentonQuest","GLOBAL",3)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@34) ~ SOLVED_JOURNAL @53 EXIT
+  IF ~~ THEN DO ~TakePartyItem("HeadTrol")SetGlobal("LentonQuest","GLOBAL",3)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
 END
 
 // --------------------------------------------------------------------------------------
