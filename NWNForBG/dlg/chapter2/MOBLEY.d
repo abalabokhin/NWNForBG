@@ -5,7 +5,7 @@ BEGIN ~MOBLEY~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)Global("Charwood_Is_Saved","GLOBAL",0)Global("Charwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~~ THEN REPLY @1 DO ~SetGlobal("KnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @2 GOTO 1
+  IF ~~ THEN REPLY @1 DO ~SetGlobal("KnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @98004 GOTO 1
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -136,7 +136,7 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 ~  !NumTimesTalkedTo(0)Global("Charwood_Is_Saved","GLOBAL",0)Global("Charwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 20 // from:
   SAY @40
   IF ~  GlobalGT("KnowMajor","GLOBAL",0)~ THEN REPLY @41 GOTO 2
-  IF ~  Global("KnowMajor","GLOBAL",0)~ THEN REPLY @41 DO ~SetGlobal("KnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @2 GOTO 2
+  IF ~  Global("KnowMajor","GLOBAL",0)~ THEN REPLY @41 DO ~SetGlobal("KnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @98004 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
