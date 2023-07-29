@@ -135,7 +135,7 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 14.5
   SAY @45
-  IF ~~ THEN DO ~EraseJournalEntry(@58)SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ UNSOLVED_JOURNAL @46 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@98271)SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ UNSOLVED_JOURNAL @98272 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 17.1

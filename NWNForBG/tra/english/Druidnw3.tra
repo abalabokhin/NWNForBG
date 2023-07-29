@@ -44,10 +44,7 @@
 @43 = ~NP: Why doesn't the Spirit come?~ /*Why hasn't the Spirit come?*/
 @44 = ~NP: I don't really know what the others were going to do, really, Orlane was heading southeast. As for Bree, she's so vain - it's hard to guess what will come into her head. I wish there was something else I could do to help you. I hope they found out more about the spirit than I did.~ /*I am unsure of what the others had planned, although Orlane was headed in a southeasterly direction. As for Bree, it's hard to divine her intentions, since her vanity masks them well.*/
 @45 = ~NP: I can make it on my own. I'll meet you at the druid grove. Thank you again, and good luck.~ /*I can make it on my own. I will meet up with you at the druid grove.*/
-@46 = ~NP: Neverwinter Forest: The Spirit of the Forest
 
-The Spirit of the Forest of Neverwinter has been in dire straits as of late, and Archdruid Aavil, who leads the Conclave, is very concerned about this. It was with great reluctance that he allowed us to enter the forest, in hopes that we would help him find out what had happened. Other druids deep in the forest say that it is possible to see the Spirit by first going in and then coming out of the forest pond, and performing some sort of ritual. However, they have no idea what that ritual might be.~ /*The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has reluctantly granted forest access to adventurers so that they might help him right whatever has gone wrong.
-Other druids deeper in the forest speak of having seen the Spirit entering and leaving a pool of water, as if part of some ritual. What that ritual may be remains unclear, however.*/
 @47 = ~The pool is some kind of entrance to another realm where the Spirit usually lives. I haven't the slightest idea what the other realm looks like though.~
 @48 = ~Why didn't you go into it?~
 @49 = ~What do you mean another realm?~
@@ -59,6 +56,3 @@ Other druids deeper in the forest speak of having seen the Spirit entering and l
 @55 = ~As patient as the trees I wait upon your pleasure. Still, I should like to be going soon.~
 @56 = ~Why don't you tell me your story?~
 @57 = ~Thank you for your assistance. I would be grateful if you wouldn't spread the details of what happened to me around.~
-@58 = ~NP: Neverwinter Forest: The Spirit of the Forest
-
-The Spirit of the Forest of Neverwinter has been in dire straits as of late, and Archdruid Aavil, who leads the Conclave, is very concerned about this. It was with great reluctance that he allowed us to enter his forest, in hopes that we would help him find out what happened.~ /*The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has reluctantly granted forest access to adventurers so that they might help him right whatever has gone wrong.*/
