@@ -112,22 +112,22 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 8.2
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",3)EraseJournalEntry(@37)EscapeArea()~ UNSOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",3)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.3
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",2)EraseJournalEntry(@37)EscapeArea()~ UNSOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",2)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.4
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",3)EraseJournalEntry(@37)EscapeArea()~ UNSOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",3)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 8.5
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",2)EraseJournalEntry(@37)EscapeArea()~ UNSOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",2)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 5.1
