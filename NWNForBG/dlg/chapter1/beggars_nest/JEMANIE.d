@@ -84,12 +84,12 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 7.2
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("MyRing","LOCALS",1)AddexperienceParty(30000)TakePartyItem("Nwring1")EraseJournalEntry(@28)EraseJournalEntry(@33)~ SOLVED_JOURNAL @26 EXIT
+  IF ~~ THEN DO ~SetGlobal("MyRing","LOCALS",1)AddexperienceParty(30000)TakePartyItem("Nwring1")EraseJournalEntry(@107623)EraseJournalEntry(@107624)~ SOLVED_JOURNAL @107625 EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.1
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("SectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @28 EXIT
+  IF ~~ THEN DO ~SetGlobal("SectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @107623 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.2
@@ -99,7 +99,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 9.1
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("SectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @28 EXIT
+  IF ~~ THEN DO ~SetGlobal("SectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @107623 EXIT
 END
 
 // -------------------------------

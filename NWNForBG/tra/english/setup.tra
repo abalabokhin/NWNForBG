@@ -3786,8 +3786,15 @@ Now that everything is in place, Lady Aribeth awaits her recruits at the Hall of
 @107611 = ~NP: Crossroads: Gerrol's Wife A desperate young man told us how his family was attacked by vicious humanoid creatures from the hills. They kidnapped his mother and he went to Port Llast for help. His father, Gerrol, can be found on a farm outside the city north of the crossroads.~ /*A desperate young man has told you a tale of how his family has been plagued by humanoid bandits in the northern hills. His mother was kidnapped by them recently and he was sent to Port Llast to find help. His father, Gerrol, can be found at their farm just outside town to the north.*/
 @107621 = ~NP: This entrance is blocked by magic~ /*What are these Old Ones?*/
 @107622 = ~NP: Following Kallik's instructions in the note you have, you make the necessary passes with your hands and the entrance opens.~ /*The gossip of the nobility need not concern you, and likely wouldn't be the type of information you want anyway.*/
-@107623 = ~NP: Beggar's Nest: Jemani's missing brother worries for his brother Thorin. He hasn't shown up in days, and Jemani fears something has happened to him. Thorin was involved in some mysterious cult that is somehow connected with the invasion of zombies. The cult has a homestead in the northeastern part of the Beggars' Nest.~ /*Jemanie is worried about his brother, Torin. He has been missing for several days now, and Jemanie fears that something has happened to him. Apparently he was involved with a strange cult that may have something to do with the zombie infestation. The group has an estate in the northwest of the Beggar's Nest.*/
-@107624 = ~NP: Beggars' Nest: The Missing Brother The body of Jemani's brother, Thorin, was discovered near the cult's estate in Beggars' Nest. He probably fulfilled his task and became no longer needed by the cult and its new leader. A ring was found on the body, which Jemani probably wants to get.~ /*The body of Jemanie's brother Torin was found beneath the cultist estate in the Beggar's Nest. He apparently outlived whatever use the cult and its new master had for him. There was a ring on the corpse that Jemanie would probably like to have returned.*/
+@107623 = ~Beggar's Nest: A Missing Brother
+
+Jemanie is worried about his brother, Torin. He has been missing for several days now, and Jemanie fears that something has happened to him. Apparently he was involved with a strange cult that may have something to do with the zombie infestation. The group has an estate in the northeast of the Beggar's Nest.~
+@107624 = ~Beggar's Nest: A Missing Brother
+
+The body of Jemanie's brother Torin was found beneath the cultist estate in the Beggar's Nest. He apparently outlived whatever use the cult and its new master had for him. There was a ring on the corpse that Jemanie would probably like to have returned.~
+@107625 = ~Beggar's Nest: A Missing Brother
+
+Jemanie has been told of his brother's death. He was understandably upset and would not be consoled.~
 @107627 = ~NP: The sound of a door opening can be heard from afar.~ /*You can hear the sound of a door opening.*/
 @107628 = ~NP: The sound of a door closing can be heard from afar.~ /*You can hear the sound of a door opening.*/
 @107655 = ~NP: To the caves of the bugbears~ /*Bugbear Cave*/
