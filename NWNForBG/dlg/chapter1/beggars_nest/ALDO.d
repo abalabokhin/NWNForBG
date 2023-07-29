@@ -81,7 +81,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 4.1
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("AldoQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @28 EXIT
+  IF ~~ THEN DO ~SetGlobal("AldoQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107605 EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 4.2
@@ -106,7 +106,7 @@ END
 IF ~~ THEN BEGIN 15 // from: 14.1
   SAY @32
   IF ~~ THEN DO ~SetGlobal("AldoQuest","GLOBAL",2)
-AddexperienceParty(30000)ActionOverride("Hector",EscapeAreaDestroy(60))ActionOverride("Mattily",EscapeAreaDestroy(60))EscapeAreaDestroy(60)EraseJournalEntry(@28)~ SOLVED_JOURNAL @33 EXIT
+AddexperienceParty(30000)ActionOverride("Hector",EscapeAreaDestroy(60))ActionOverride("Mattily",EscapeAreaDestroy(60))EscapeAreaDestroy(60)EraseJournalEntry(@107605)~ SOLVED_JOURNAL @107606 EXIT
 END
 
 // ---------------------------------------------

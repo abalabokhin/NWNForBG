@@ -3773,8 +3773,15 @@ The only way to stop the Old Ones' return is to find the fourth Word of Power an
 @107604 = ~The Final Battle
 
 Led by Aribeth and Maugrim the Luskan forces have all but overrun Neverwinter. Even slaying the leaders might not be enough to turn the tide of battle at this point. Aarin Gend feels Haedraline, the mysterious lizard creature now languishing in the dungeons of Castle Never, might know a way to save the city. Only she can reveal the secrets of the Words of Power and the recently discovered Source Stone, although there is hope that Master Ford - presently studying the Source Stone in the caverns beneath the dungeon of Castle Never - might have some information to share as well.~
-@107605 = ~NP: Beggars' Nest: Aldo and Hector At the center of the Beggars' Nest is the Aldo family, who guard their broken wagon. They cannot leave until Hector returns. Hector searches the Nest for tools and parts to repair the wagon.~ /*A family is guarding a broken-down wagon in the center of the Beggar's Nest. They will not leave until Hector has returned. Hector is out searching the Beggar's Nest looking for parts for the wagon.*/
-@107607 = ~NP: Beggar's Nest: Aldo and Hector Encountered Hector, who was looking for parts to fix his master Aldo's wagon. Hector is dead.~ /*Encountered Hector, who was trying to find parts for his master Aldo's wagon. He's dead.*/
+@107605 = ~Beggar's Nest: Aldo and Hector
+
+A family is guarding a broken-down wagon in the center of the Beggar's Nest. They will not leave until Hector has returned. Hector is out searching the Beggar's Nest looking for parts for the wagon.~
+@107607 = ~Beggar's Nest: Aldo and Hector
+
+Parts to fix the wagon could not be found, so there was no more reason for Aldo's halfling family to stay with it. They have abandoned it to try and escape the district.~
+@107607 = ~Beggar's Nest: Aldo and Hector
+
+Encountered Hector, who was trying to find parts for his master Aldo's wagon. He's dead.~
 @107608 = ~NP: Howling Death and the Creatures of Waterdeep Important steps have been taken in the fight against the Howling Death and those who created it. One of the magical creatures that were sent by Khelben Arunsun, lost during the attack on the Academy, was returned and given to Lady Aribeth in the Hall of Justice. She awaits the return of the remaining three creatures, along with her lover, Abbot Fentik Moss, and fellow Guardian Knight of Helm, Dester Indelain. The ritual of making the cure for the plague can only be performed when all magical creatures have been found.~ /*There has been great progress in the fight against the Wailing Death and those behind it. All of the Waterdhavian creatures - sent by Khelben Arunsun and lost in the attack on the Neverwinter Academy - have been recovered and delivered to Lady Aribeth in the Hall of Justice. 
 Now that everything is in place, Lady Aribeth awaits her recruits at the Hall of Justice. She will take them to the ritual as soon as they are ready, where they can witness the creation of the cure.
 

@@ -26,12 +26,12 @@
 @25 = ~That tavern doesn't have enough ale to make me forget abandoning what's mine. Thanks for all you've done, but I'm taking my chances on my own. Thanks anyway.~
 @26 = ~Helmites, eh? No thanks. I don't believe a word of what those pious pie-faces are selling. I'm off on my own. Thanks, though.~
 @27 = ~NP: I'm out of luck. My cart broke down in a city that is infested with zombies. In addition, you have to endure the ridicule of your wife. But anyway, thanks.~ /*I don't get good luck. I get stuck in a zombie-filled city with a broken wagon and the scorn of my wife.*/
-@28 = ~NP: Beggars' Nest: Aldo and Hector At the center of the Beggars' Nest is the Aldo family, who guard their broken wagon. They cannot leave until Hector returns. Hector searches the Nest for tools and parts to repair the wagon.~ /*A family is guarding a broken-down wagon in the center of the Beggar's Nest. They will not leave until Hector has returned. Hector is out searching the Beggar's Nest looking for parts for the wagon.*/
+ 
 @29 = ~I gotta wait for him to come back. I ain't leaving the wagon until there's no other hope. Plain and simple.~
 @30 = ~Don't know that. Maybe the parts are too big for him, but I ain't leaving my stuff until I have to, zombies or not!~
 @31 = ~All right all right, relax, you lummox. Let's just figure out what we do now. Time to abandon ship, I'll wager. No parts means no wagon. Ah well.~
 @32 = ~Thanks for bringing Hector here, friend. I think we'll find our own way out now. No sense staying... sure is a fine wagon, though. I'll miss you girl.~
-@33 = ~NP: Beggar's Nest: Aldo and Hector Since no parts needed to repair the wagon could be found in the quarter, Aldo's halfling family no longer needs to stay near it. They abandoned the wagon to leave the quarter.~ /*Parts to fix the wagon could not be found, so there was no more reason for Aldo's halfling family to stay with it. They have abandoned it to try and escape the district.*/
+
 @34 = ~More live ones! Imagine that! Now, if it was just that fool Hector and my PARTS!!~ [ALDO052]
 @35 = ~You ain't seen a tall-folk named Hector, have ya? Sent him out for wagon parts and damned if he ain't just disappeared.~
 @36 = ~We've got to get to safety!~ [ALDO053]
