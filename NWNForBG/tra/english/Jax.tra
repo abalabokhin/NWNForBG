@@ -47,7 +47,7 @@
 @46 = ~All right, I'm off.~
 @47 = ~Oh my. I was really hoping you could help. If you change your mind come talk to me again.~
 @48 = ~NP: This sounds reasonable. Here are 300 coins. This should seal the deal. Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
-@49 = ~NP: East Road: Whats Hiding Below? Archaeologist Jax is interested in the ancient races of Feirun, and he believes that he will soon be able to prove his theory and receive a grant to continue his research. He is convinced that there are ancient ruins under the troll caves near the road east of Port Llast, so he asked us to find these ruins and bring him proof that they were created by the so-called &quot;creator race&quot;. This book is The Complete History of the Maker Ruins.~ /*Jax, an archeologist with an interest in the earliest races of Faerun, believes he is close to being able to prove his thesis and receive the necessary grant funding to continue his research. Convinced that ancient ruins lurk beneath the troll caves along the road east of Port Llast, he has enlisted the aid of adventurers to discover them and return to him with proof that the ruins were a product of the so-called "creator races." The book will be a Complete History of the Creator Ruins.*/
+
 @50 = ~NP: I just cant afford it. I will pay you only when you bring the artifact. Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*I just can't afford to do that. I can only pay you when you bring the artfiact back.*/
 @51 = ~NP: Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
 @52 = ~Oh, hello there again. Er... something you needed? I am quite busy with my research, you know.~ [JAX051]
@@ -74,7 +74,7 @@
 @73 = ~All right. 750 gold pieces it is.~
 @74 = ~Wonderful. I can hardly wait to get back to Waterdeep. Those snobs are going to choke when they see this! Good luck <PRO_GIRLBOY>.~
 @75 = ~I am off for Waterdeep. Excuse me.~ [JAX055]
-@76 = ~NP: East Road: Whats Hiding Below? Archaeologist Jax is interested in the ancient races of Feirun, and he believes that he will soon be able to prove his theory and receive a grant to continue his research. We managed to get into the underground ruins, and find the very proof that Jax needed, &quot;The Complete History of the Shaper Ruins&quot;, a book that proves that the mysterious Shaper Race once lived in these ruins. Jax was very happy to receive this book and rewarded us for our help.~ /*Jax, an archeologist with an interest in the earliest races of Faerun, believes he is close to being able to prove his thesis and receive the necessary grant funding to continue his research. Convinced that ancient ruins lurk beneath the troll caves along the road east of Port Llast, he has enlisted the aid of adventurers to discover them and return to him with proof that the ruins were a product of the so-called "creator races." The book will be a Complete History of the Creator Ruins.*/
+
 @77 = ~No! It is of no value to you, but I simply must have it. Please!~
 @78 = ~NP: Er... well. I must return to Waterdeep immediately. Have a good journey. Im leaving for Waterdeep. Excuse me.~ [JAX055] /*Er... good. I must return to Waterdeep now. Good luck to you.*/
 @79 = ~NP: Wait! Please,<SIRMAAM> ! 2000 coins, I cant take it anymore!~ /*Wait! Please, my <PRO_LADYLORD>! 1000 gp, no more!*/
@@ -82,7 +82,7 @@
 @81 = ~Nope, I'm keeping it.~
 @82 = ~Part of me wishes the trolls got you. Oh my, I can't believe I said that. I've got to get back to civilization.~
 @83 = ~NP: Oh... uh... why did you even come back here if youre going to keep her? No one will pay more for it than I do, because no one needs it so desperately. What mistake! Great, goodbye.~ /*No one will pay you more than I would have, because no one wants it as badly. What a mistake! Fine, goodbye.*/
-@84 = ~NP: East Road: Whats Hiding Below? Archaeologist Jax is interested in the ancient races of Feirun, and he believes that he will soon be able to prove his theory and receive a grant to continue his research. We managed to get into the underground ruins, and find the very proof that Jax needed, &quot;The Complete History of the Shaper Ruins&quot;, a book that proves that the mysterious Shaper Race once lived in these ruins. Jax was very unhappy that we decided not to give him the book and left in frustration for Waterdeep.~ /*Jax, an archeologist with an interest in the earliest races of Faerun, believes he is close to being able to prove his thesis and receive the necessary grant funding to continue his research. Convinced that ancient ruins lurk beneath the troll caves along the road east of Port Llast, he has enlisted the aid of adventurers to discover them and return to him with proof that the ruins were a product of the so-called "creator races." The book will be a Complete History of the Creator Ruins.*/
+
 @85 = ~Er... oh, you're already back. What can I do to help you? Any evidence of the tome yet?~ [JAX053]
 @86 = ~Where did you say you thought that book was?~
 @87 = ~I think I found your book, is this it?~

@@ -134,17 +134,17 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 20.1
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)GiveGoldForce(300)SetGlobal("Prepayment","LOCALS",1)~ UNSOLVED_JOURNAL @49 EXIT
+  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)GiveGoldForce(300)SetGlobal("Prepayment","LOCALS",1)~ UNSOLVED_JOURNAL @99363 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.2
   SAY @50
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @49 EXIT
+  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99363 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 20.3
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @49 EXIT
+  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99363 EXIT
 END
 
 // --------------------------------------------------------------------------------------
@@ -218,8 +218,8 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 34
   SAY @75
-  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1500)TakePartyItem("StoryRac")EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @76 EXIT
-  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1200)TakePartyItem("StoryRac")EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @76 EXIT
+  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1500)TakePartyItem("StoryRac")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1200)TakePartyItem("StoryRac")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 29.5
@@ -233,8 +233,8 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 29.4
   SAY @78
-  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1750)TakePartyItem("StoryRac")EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @76 EXIT
-  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1450)TakePartyItem("StoryRac")EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @76 EXIT
+  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1750)TakePartyItem("StoryRac")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1450)TakePartyItem("StoryRac")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 31.2 32.3 33.2 35.5
@@ -250,8 +250,8 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 39
   SAY @75
-  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(2000)TakePartyItem("StoryRac")EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @76 EXIT
-  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1700)TakePartyItem("StoryRac")EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @76 EXIT
+  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(2000)TakePartyItem("StoryRac")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1700)TakePartyItem("StoryRac")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 38.2
@@ -261,7 +261,7 @@ END
 
 IF ~~ THEN BEGIN 42 // from: 40
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",6)EraseJournalEntry(@49)EscapeArea()~ SOLVED_JOURNAL @84 EXIT
+  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",6)EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99444 EXIT
 END
 
 // --------------------------------------------------------------------------------------
