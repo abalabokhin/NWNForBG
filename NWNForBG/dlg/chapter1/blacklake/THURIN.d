@@ -179,12 +179,12 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 17.1
   SAY @45
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @46 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @89667 EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 17.2
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @46 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @89667 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 19.1
@@ -242,17 +242,17 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 27.1 28.1
   SAY @59
-  IF ~~ THEN DO ~EraseJournalEntry(@46)EraseJournalEntry(@76)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@89667)EraseJournalEntry(@89700)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 27.2
   SAY @60
-  IF ~~ THEN DO ~EraseJournalEntry(@46)EraseJournalEntry(@76)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@89667)EraseJournalEntry(@89700)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 28.2
   SAY @61
-  IF ~~ THEN DO ~EraseJournalEntry(@46)EraseJournalEntry(@76)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@89667)EraseJournalEntry(@89700)EscapeArea()~ EXIT
 END
 
 // --------------------------------------------------------------
@@ -284,27 +284,27 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 34.1
   SAY @69
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(975)AddexperienceParty(90000)EraseJournalEntry(@46)EraseJournalEntry(@76)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(975)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 34.2
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@46)EraseJournalEntry(@76)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 34.3
   SAY @72
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(50000)EraseJournalEntry(@46)EraseJournalEntry(@76)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(50000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 34.4
   SAY @73
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@46)EraseJournalEntry(@76)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 34.5
   SAY @74
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)ReputationInc(1)AddexperienceParty(100000)EraseJournalEntry(@46)EraseJournalEntry(@76)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)ReputationInc(1)AddexperienceParty(100000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 // ----------------------------------------------------------------------------
