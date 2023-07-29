@@ -33,7 +33,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 2.2
   SAY @14
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",66)Enemy()EraseJournalEntry(@61)~ SOLVED_JOURNAL @15 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",66)Enemy()EraseJournalEntry(@88916)~ SOLVED_JOURNAL @88930 EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 3.2
@@ -185,7 +185,7 @@ END
 
 IF ~~ THEN BEGIN 26 // from: 23.2
   SAY @60
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @61 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @88916 EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 23.3
@@ -313,17 +313,17 @@ END
 IF ~~ THEN BEGIN 44 // from: 40.4
   SAY @104
   IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",3)AddexperienceParty(250000)GiveItem("NWAmul01",LastTalkedToBy)GivePartyGold(1000)
-TakePartyItem("Nwkey08")TakePartyItem("NWTooth1")EraseJournalEntry(@61)~ SOLVED_JOURNAL @105 EXIT
+TakePartyItem("Nwkey08")TakePartyItem("NWTooth1")EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89019 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 40.4
   SAY @106
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",3)AddexperienceParty(265000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")TakePartyItem("NWTooth1")EraseJournalEntry(@61)~ SOLVED_JOURNAL @105 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",3)AddexperienceParty(265000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")TakePartyItem("NWTooth1")EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89019 EXIT
 END
 
 IF ~~ THEN BEGIN 46// from: 40.5
   SAY @107
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",66)Enemy()EraseJournalEntry(@61)~ SOLVED_JOURNAL @15 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",66)Enemy()EraseJournalEntry(@88916)~ SOLVED_JOURNAL @88930 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 35.1
@@ -344,12 +344,12 @@ END
 IF ~~ THEN BEGIN 49 // from: 37.1
   SAY @109
   IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",2)AddexperienceParty(150000)GiveItem("NWAmul01",LastTalkedToBy)GivePartyGold(250)
-TakePartyItem("Nwkey08")EraseJournalEntry(@61)~ SOLVED_JOURNAL @110 EXIT
+TakePartyItem("Nwkey08")EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89024 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 37.2
   SAY @111
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",2)AddexperienceParty(150000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")EraseJournalEntry(@61)~ SOLVED_JOURNAL @110 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",2)AddexperienceParty(150000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89024 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 37.3
@@ -361,18 +361,18 @@ END
 IF ~~ THEN BEGIN 52 // from: 37.4
   SAY @104
   IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",2)AddexperienceParty(150000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")
-EraseJournalEntry(@61)~ SOLVED_JOURNAL @110 EXIT
+EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89024 EXIT
 END
 
 IF ~~ THEN BEGIN 53 // from: 37.5
   SAY @112
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",2)AddexperienceParty(150000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")EraseJournalEntry(@61)~ SOLVED_JOURNAL @110 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",2)AddexperienceParty(150000)GiveItem("NWAmul01",LastTalkedToBy)TakePartyItem("Nwkey08")EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89024 EXIT
 END
 
 IF ~~ THEN BEGIN 54 // from: 41.1
   SAY @104
   IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",3)AddexperienceParty(250000)GiveItem("NWAmul01",LastTalkedToBy)GivePartyGold(1350)
-TakePartyItem("Nwkey08")TakePartyItem("NWTooth1")EraseJournalEntry(@61)~ SOLVED_JOURNAL @105 EXIT
+TakePartyItem("Nwkey08")TakePartyItem("NWTooth1")EraseJournalEntry(@88916)~ SOLVED_JOURNAL @89019 EXIT
 END
 
 IF ~~ THEN BEGIN 56 // from: 38.2
@@ -383,7 +383,7 @@ END
 
 IF ~~ THEN BEGIN 57 // from: 56.2
   SAY @116
-  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",66)Enemy()EraseJournalEntry(@61)~ SOLVED_JOURNAL @15 EXIT
+  IF ~~ THEN DO ~SetGlobal("FormosaQuest","GLOBAL",66)Enemy()EraseJournalEntry(@88916)~ SOLVED_JOURNAL @88930 EXIT
 END
 
 // -----------------------------------------

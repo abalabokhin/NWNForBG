@@ -41,10 +41,18 @@ Through scrying attempts, she has managed to narrow down the locations of the fi
 @88753 = ~NP: heal wounds~ /*Lecturn*/
 @88754 = ~NP: cured~ /*Disabled*/
 @88832 = ~Nothing happens.~
-@88916 = ~NP: Blackshire: Unrest An aristocrat named Formosa claimed that the sorcerer Meldanen was hiding food from the plague-stricken behind his heavily guarded gates. She not only demanded the key to the warehouse where he stores the grain, but also called for the sorcerer to be killed. As proof of his death, she will gladly accept one of his teeth, made of pure silver.~ /*A noble by the name of Formosa harangues the crowd gathered in the Blacklake's central square. She claims that, from behind his well-guarded gates, the sorcerer, Meldanen, is hoarding food from the plaguestruck.
-Not only has she demanded the key to the warehouse where he has secured his grain, she has also called for his death. One of the sorcerer's teeth is of pure silver and she will gladly accept it as evidence of the deed.
+@88916 = ~Blacklake: Unrest
 
-The key has been found and turned in. Formosa awaits the tooth as well.*/
+A noble by the name of Formosa harangues the crowd gathered in the Blacklake's central square. She claims that, from behind his well-guarded gates, the sorcerer, Meldanen, is hoarding food from the plaguestruck. Not only has she demanded the key to the warehouse where he has secured his grain, she has also called for his death. One of the sorcerer's teeth is of pure silver and she will gladly accept it as evidence of the deed.~
+@88930 = ~Blacklake: Unrest
+
+Any task that Formosa might have wanted completed has been indefinitely postponed. She is now dead.
+@89019 = ~Blacklake: Unrest
+
+Formosa's thirst for Meldanen's blood and hunger for his grain have both been sated. His silver tooth and the key to his warehouse have been given to her.~
+@89024 = ~Blacklake: Unrest
+
+The key to Meldanen's warehouse has been delivered to Formosa, but she has been told in no uncertain terms that Meldanen will not be killed. She will have to be content that half her goal has been achieved.~
 @89667 = ~Blacklake: Samuel's Rescue
 
 Thurin, a militia officer in the Blacklake District, has offered a reward for the safe return of one of his men. The lost soldier, Samuel, was a close friend of Thurin's and his failure to report back following a recent inspection assignment has caused the officer no small amount of worry.~

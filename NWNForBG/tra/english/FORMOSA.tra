@@ -13,9 +13,7 @@
 @12 = ~Regardless, I think you're making trouble and you should stop.~
 @13 = ~Goodbye.~
 @14 = ~So Meldanen finally takes action against me, does he? Well, I won't fall that easily! You're a fool to do his bidding!!~
-@15 = ~NP: Chernozerye: unrest
 
-Any task that Formosa had asked for can now be indefinitely postponed. She is dead.~ /*Any task that Formosa might have wanted completed has been indefinitely postponed. She is now dead.*/
 @16 = ~NP: You make it sound like someone might question it. Meldanen has never denied the fact, and everyone in the Black Lake area knows it to be true. He has a warehouse nearby, but it's so tightly sealed with spells that there's no chance of getting in without the proper key. Otherwise, I have no doubt the townsfolk would have stormed it long ago.~ /*He keeps a warehouse near here, locked up so tight with spells and wards there's no hope of access without the proper key. Otherwise the city would have stormed it long ago, I'm sure.*/
 @17 = ~NP: Well, that's good to hear. There aren't many people in this place who think it's right and are able to say it out loud. The only question is what we can do about it. The city guards are having a hard enough time keeping order... and I have little chance of getting these frightened simpletons to act.~ /*The only question that remains is what's to be done about it. The city guard have their hands full just keeping order... and the chance of me stirring up these frightened pigeons to act is not good.*/
 @18 = ~NP: Of course not. It's Meldanen's property, and he can do with it as he likes. Isn't that right? Or is it that you can't accuse a man without a trial? Or maybe you're a coward like everyone else in this neighborhood, afraid to give Meldanen what he deserves when so many people need it? Or maybe you just don't care. You don't live here, do you? I do, and it's my people who are starving to death.~ /*Of course not. It's Meldanen's property, and he can do with it as he pleases, right? Or is it that we shouldn't convict a man without a trial?*/
@@ -61,12 +59,7 @@ Any task that Formosa had asked for can now be indefinitely postponed. She is de
 @58 = ~I am no killer, <PRO_SIRMAAM>. If I were, I would have challenged the sorcerer long ago, and all this would be unnecessary.~
 @59 = ~NP: Meldanen lives in a fenced mansion, its gates are well guarded. There are other defenses, but you have to get in somehow. Of course, it never occurred to me that you could do such a thing without any reward. Bring me the key and I'll give you the magic necklace. And for the sorcerer's silver tooth, I'll give you 1,000 gold coins.~ /*I do not expect you to do this without reward, of course. Bring me the key and I will give you a magic necklace. For the sorcerer's silver tooth, I offer you 500 gold pieces.*/
 @60 = ~Thank the gods that you came, then. Maybe some good can finally come out of all this. I look forward to your return.~
-@61 = ~NP: Chernozerye: unrest
 
-An aristocrat named Formosa claimed that the warlock Meldanen was hiding food from plague patients behind his heavily guarded gates. Not only did she demand the key to the warehouse where he keeps the grain, but she also called for the sorcerer to be killed. As proof of his death, she would gladly accept one of his teeth, made of pure silver.~ /*A noble by the name of Formosa harangues the crowd gathered in the Blacklake's central square. She claims that, from behind his well-guarded gates, the sorcerer, Meldanen, is hoarding food from the plaguestruck.
-Not only has she demanded the key to the warehouse where he has secured his grain, she has also called for his death. One of the sorcerer's teeth is of pure silver and she will gladly accept it as evidence of the deed.
-
-The key has been found and turned in. Formosa awaits the tooth as well.*/
 @62 = ~You change your mind now? Fine, then. Go and leave me to do what needs to be done.~
 @63 = ~So you're back, are you? Have you changed your mind, my <PRO_LADYLORD>? Will you help me get the key and end Meldanen's life?~ [FORMOSA3]
 @64 = ~No, I'm here to kill you, instead. Meldanen sends his regards.~
@@ -110,16 +103,12 @@ The key has been found and turned in. Formosa awaits the tooth as well.*/
 @102 = ~Hah! Time for you to die, I guess!~
 @103 = ~Fine. Hand it over, then.~
 @104 = ~NP: Well, here you go. Thank you again. You've been more help than I could have hoped for. Now I'll go gather the men and take them to the warehouse. Have a good trip, <SIRMAAM>.~ /*You have helped far more than I thought anyone would. Now I must go and collect others to enter the warehouse. Farewell, my <PRO_LADYLORD>.*/
-@105 = ~NP: Chernozerye: unrest
 
-Formosa wanted Meldanen's blood and was eager to get to his food supply. She had gotten both. His silver tooth and the key to the warehouse were given to her.~ /*Formosa's thirst for Meldanen's blood and hunger for his grain have both been sated. His silver tooth and the key to his warehouse have been given to her.*/
 @106 = ~NP: You're very generous. At least take the necklace. It would hurt me if you didn't get any reward, no matter what you say. You've helped more than I could have hoped for. Now I will go and gather the men and take them to the warehouse. Have a good journey, <SIRMAAM>.~ /*You are very generous. Take the necklace, regardless... I will not see you completely unrewarded, despite what you say.*/
 @107 = ~Treacherous fool! I'll fight you if I must!!~
 @108 = ~I am relieved to hear it. I shall await your return.~
 @109 = ~NP: I suppose you're right. Here you are-- 250 gold pieces. You've helped more than I could have hoped for. Now I'll go and gather the men and take them to the warehouse. Safe journey, <SIRMAAM>.~ /*You have helped far more than I thought anyone would. Now I must go and collect others to enter the warehouse. Farewell, my <PRO_LADYLORD>.*/
-@110 = ~NP: Chernozerye: unrest
 
-The key to Meldanen's warehouse has been delivered to Formosa, but it has been made clear to her unequivocally that Meldanen will live. She should be satisfied that at least half of her task is accomplished.~ /*The key to Meldanen's warehouse has been delivered to Formosa, but she has been told in no uncertain terms that Meldanen will not be killed. She will have to be content that half her goal has been achieved.*/
 @111 = ~NP: I have nothing more to offer you than my gratitude. You've helped far more than I could have hoped for. Now I will go and gather the men and take them to the warehouse. Have a good journey, <SIRMAAM>.~ /*You have helped far more than I thought anyone would. Now I must go and collect others to enter the warehouse. Farewell, my <PRO_LADYLORD>.*/
 @112 = ~NP: That's very generous of you. But still, the necklace. I'll be hurt if you don't get any reward, no matter what you say. You've helped more than I could have hoped for. Now I will go and gather the men and take them to the warehouse. Have a good journey, <SIRMAAM>.~ /*You are very generous. Take the necklace, regardless... I will not see you completely unrewarded, despite what you say.*/
 @113 = ~You shall get the reward when I have the key. No sooner. It is what is truly important, here.~
