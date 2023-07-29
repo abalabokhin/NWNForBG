@@ -49,7 +49,7 @@
 @48 = ~NP: Guess I'll have to take this as an act of generosity. Great... AHGHH!... w-here... here's my tooth... and the key to the warehouse. As for the dryad... the key to the warehouse also unlocks her cage. Take it... and take it and go. I hope I never see you again.~ /*As for the dryad... the warehouse key also opens her cage. Take it... and take her and get out. I hope I shall not see you again.*/
 @49 = ~NP: I guess I should thank you for your generosity... Here... take the key this girl needs. Take it. And here is my ransom: 1800 gold. The key to the warehouse also unlocks the dryad's cage. Take it... take it and leave. I hope I never see you again.~ /*And here is my ransom: 500 gold pieces. The warehouse key also opens the dryad's cage. Take her... take her and get out. I hope not to see you again.*/
 @50 = ~NP: As you wish. You will find this elven whore wailing in the square in the southeastern part of the district. How I would love to see her dying expression! Here are 1500 gold coins and the key to the dryad's cage. You'll get the rest of the money when I'm sure Formosa is dead. Then we'll talk.~ /*As you wish. You'll find the elven wench preaching in the square in the southeast part of the district. I truly wish I could see the look on her face!*/
-@51 = ~Desperation is the hallmark of a good bargain. It seems the sorcerer Meldanen wants to turn the tables on the rabble-rouser, Formosa. While she's been calling publicly for his death in the district square, Meldanen has put out a more private (and also more lucrative) offer on her own life.~
+
 @52 = ~NP: As you wish. After all, I can buy my own life and run away from home. Here's 1800 gold coins, that's all I have... and the key to the dryad's cage. Take her... take her and get out. I hope I never see you again.~ /*Here is 500 gp, which is all I have... and the key to the dryad's cage. Take her... take her and get out. I hope not to see you again.*/
 @53 = ~I am leaving. Now begone.~ [MELDAN55]
 @54 = ~NP: Formosa is still alive. I'm waiting for you to kill this creature.~ /*I can't wait until this whole plague business is done with.*/
@@ -62,7 +62,7 @@
 @61 = ~NP: That's enough, give me money.~ /*That is sufficient. Thank you.*/
 @62 = ~I... I... I have no more coin. Please... just take the gold and leave, I beg you!~
 @63 = ~Here it is. Now leave... I hope I will not see you again.~
-@64 = ~NP: Blackshire: Slaying Formosa Lady Formosa was assassinated at the behest of the sorcerer Meldanen. He paid the killers their money, including the fact that they did not talk about this case.~ /*Lady Formosa is dead at the request of Meldanen the sorcerer. He has given her assassins their wage and all that remains is to sweep all further talk of it under the carpet where it belongs.*/
+
 @65 = ~What? But... I have nothing else of value! Why would you do this?!~
 @66 = ~I was only kidding. Your gold will do.~
 @67 = ~I bet you have more than you're saying. I'll just search your corpse!~

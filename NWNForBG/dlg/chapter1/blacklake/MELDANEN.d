@@ -150,7 +150,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 14.1
   SAY @50
-  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("MeldanenQuest","GLOBAL",1)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1500)~ UNSOLVED_JOURNAL @51 EXIT
+  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("MeldanenQuest","GLOBAL",1)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1500)~ UNSOLVED_JOURNAL @89305 EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.2
@@ -200,7 +200,7 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 25.3
   SAY @63
-  IF ~~ THEN DO ~SetGlobal("MeldanenQuest","GLOBAL",2)AddexperienceParty(150000)GivePartyGold(1500)EraseJournalEntry(@51)~ SOLVED_JOURNAL @64 EXIT
+  IF ~~ THEN DO ~SetGlobal("MeldanenQuest","GLOBAL",2)AddexperienceParty(150000)GivePartyGold(1500)EraseJournalEntry(@89305)~ SOLVED_JOURNAL @89369 EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.4
