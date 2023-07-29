@@ -175,8 +175,8 @@ END
 
 IF ~~ THEN BEGIN 29 // from: 28
   SAY @67
-  IF ~~ THEN REPLY @68 DO ~EraseJournalEntry(@96)
-EraseJournalEntry(@97)~ UNSOLVED_JOURNAL @69 GOTO 30
+  IF ~~ THEN REPLY @68 DO ~EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)~ UNSOLVED_JOURNAL @98273 GOTO 30
   IF ~~ THEN REPLY @70 GOTO 31
 END
 
@@ -190,8 +190,8 @@ END
 
 IF ~~ THEN BEGIN 31 // from: 29.2
   SAY @76
-  IF ~~ THEN REPLY @68 DO ~EraseJournalEntry(@96)
-EraseJournalEntry(@97)~ UNSOLVED_JOURNAL @69 GOTO 30
+  IF ~~ THEN REPLY @68 DO ~EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)~ UNSOLVED_JOURNAL @98273 GOTO 30
 END
 
 IF ~~ THEN BEGIN 32 // from: 30.1
