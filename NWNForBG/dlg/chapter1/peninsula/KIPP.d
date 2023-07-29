@@ -46,7 +46,7 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
   SAY @10
-  IF ~  GlobalLT("SedosQuest","GLOBAL",2)~ THEN UNSOLVED_JOURNAL @11 EXIT
+  IF ~  GlobalLT("SedosQuest","GLOBAL",2)~ THEN UNSOLVED_JOURNAL @93969 EXIT
   IF ~  GlobalGT("SedosQuest","GLOBAL",1)~ THEN EXIT
 END
 
