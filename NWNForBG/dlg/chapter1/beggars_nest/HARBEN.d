@@ -127,15 +127,15 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 6.3
   SAY @32
-  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @33 EXIT
-  IF ~  Global("DrakeQuest","GLOBAL",1)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @34 EXIT
+  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95176 EXIT
+  IF ~  Global("DrakeQuest","GLOBAL",1)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95191 EXIT
   IF ~  GlobalGT("HarbenQuest","GLOBAL",0)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 9.5
   SAY @35
-  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @33 EXIT
-  IF ~  Global("DrakeQuest","GLOBAL",1)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @34 EXIT
+  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95176 EXIT
+  IF ~  Global("DrakeQuest","GLOBAL",1)Global("HarbenQuest","GLOBAL",0)~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95191 EXIT
   IF ~  GlobalGT("HarbenQuest","GLOBAL",0)~ THEN EXIT
 END
 
@@ -327,7 +327,7 @@ END
 
 IF ~~ THEN BEGIN 42// from: 39.1
   SAY @67
-  IF ~~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",2)AddexperienceParty(40000)GiveGoldForce(800)GiveGoldForce(200)GiveItemCreate("HarbItm",LastTalkedToBy,1,1,1)EraseJournalEntry(@33)EraseJournalEntry(@34)~ SOLVED_JOURNAL @68 EXIT
+  IF ~~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",2)AddexperienceParty(40000)GiveGoldForce(800)GiveGoldForce(200)GiveItemCreate("HarbItm",LastTalkedToBy,1,1,1)EraseJournalEntry(@95176)EraseJournalEntry(@95191)~ SOLVED_JOURNAL @95309 EXIT
 END
 
 IF ~~ THEN BEGIN 43// from: 39.2
@@ -338,12 +338,12 @@ END
 
 IF ~~ THEN BEGIN 44// from: 39.3
   SAY @70
-  IF ~~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",2)AddexperienceParty(40000)GiveGoldForce(800)GiveItemCreate("HarbItm",LastTalkedToBy,1,1,1)EraseJournalEntry(@33)EraseJournalEntry(@34)~ SOLVED_JOURNAL @68 EXIT
+  IF ~~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",2)AddexperienceParty(40000)GiveGoldForce(800)GiveItemCreate("HarbItm",LastTalkedToBy,1,1,1)EraseJournalEntry(@95176)EraseJournalEntry(@95191)~ SOLVED_JOURNAL @95309 EXIT
 END
 
 IF ~~ THEN BEGIN 45// from: 39.4
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",2)AddexperienceParty(40000)GiveGoldForce(800)GiveItemCreate("HarbItm",LastTalkedToBy,1,1,1)EraseJournalEntry(@33)EraseJournalEntry(@34)~ SOLVED_JOURNAL @68 EXIT
+  IF ~~ THEN DO ~SetGlobal("HarbenQuest","GLOBAL",2)AddexperienceParty(40000)GiveGoldForce(800)GiveItemCreate("HarbItm",LastTalkedToBy,1,1,1)EraseJournalEntry(@95176)EraseJournalEntry(@95191)~ SOLVED_JOURNAL @95309 EXIT
 END
 
 // ----------------------
