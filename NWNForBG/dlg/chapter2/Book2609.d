@@ -23,7 +23,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
   SAY @6
-  IF ~  Global("KarlatBook","MYAREA",0)~ THEN REPLY @2 DO ~SetGlobal("KarlatBook","MYAREA",1)DestroySelf()~ UNSOLVED_JOURNAL @7 EXIT
+  IF ~  Global("KarlatBook","MYAREA",0)~ THEN REPLY @2 DO ~SetGlobal("KarlatBook","MYAREA",1)DestroySelf()~ UNSOLVED_JOURNAL @97801 EXIT
   IF ~  Global("KarlatBook","MYAREA",1)~ THEN REPLY @2 DO ~DestroySelf()~ EXIT
 END
 
