@@ -123,7 +123,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @32
-  IF ~~ THEN REPLY @33 DO ~SetGlobal("OphalaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @34 GOTO 22
+  IF ~~ THEN REPLY @33 DO ~SetGlobal("OphalaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @92742 GOTO 22
   IF ~~ THEN REPLY @28 DO ~SetGlobal("OphalaQuest","GLOBAL",1)~ GOTO 16
 END
 
@@ -225,22 +225,22 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 27.3
   SAY @59
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 27.4
   SAY @61
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(20000)EraseJournalEntry(@70)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(20000)EraseJournalEntry(@103126)~ EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 27.5
   SAY @62
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(750)AddexperienceParty(15000)EraseJournalEntry(@70)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(750)AddexperienceParty(15000)EraseJournalEntry(@103126)~ EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 27.6
   SAY @63
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@70)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@103126)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 27.7
@@ -250,17 +250,17 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 27.8
   SAY @65
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 27.9
   SAY @66
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(4500)AddexperienceParty(80000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)EraseJournalEntry(@70)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(4500)AddexperienceParty(80000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)EraseJournalEntry(@103126)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 27.10
   SAY @67
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(2250)AddexperienceParty(60000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@34)EraseJournalEntry(@70)~ SOLVED_JOURNAL @60 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(2250)AddexperienceParty(60000)GiveItemCreate("Ophalspr",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)EraseJournalEntry(@103126)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 27.11

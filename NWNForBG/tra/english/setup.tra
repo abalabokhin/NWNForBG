@@ -138,7 +138,12 @@ All three artifacts from Lord Never's tomb have been returned to Judge Oleff at 
 @92734 = ~Temple of Tyr: Never's Tomb
 
 All of the artifacts to be found in the tombs of Halueth Never and his companions have been accounted for. Unfortunately, some of them are now in the hands of a rival church. Oleff was understandably disturbed by this, though there is little he, or anyone, can do. For whatever reason, an evil hand had a part in this quest.~
-@92742 = ~Ophala Cheldarstorn of the Moonstone Mask has requested the theft of a series of art objects from people who have been critical of her establishment. One of them, a valuable urn possessed by a man named Hodge, is somewhere in the Blacklake District. Another, a portrait of the late Sir Reginald Rumbottom III, is said to be hidden in the Rumbottom estate in the Blacklake as well. The third is a statuette of the female form, reputed to be in the Docks District estate of a certain Androd Golden. Should any of these be 'acquired,' Ophala will pay handsomely for them.~
+@92742 = ~Moonstone Mask: Art Theft
+
+Ophala Cheldarstorn of the Moonstone Mask has requested the theft of a series of art objects from people who have been critical of her establishment. One of them, a valuable urn possessed by a man named Hodge, is somewhere in the Blacklake District. Another, a portrait of the late Sir Reginald Rumbottom III, is said to be hidden in the Rumbottom estate in the Blacklake as well. The third is a statuette of the female form, reputed to be in the Docks District estate of a certain Androd Golden. Should any of these be 'acquired,' Ophala will pay handsomely for them.~
+@92799 = ~Moonstone Mask: Art Theft
+
+Ophala Cheldarstorn of the Moonstone Mask is very pleased. She had requested the theft of a series of art objects from people who have been critical of her establishment and all of those hits have been carried out with great success.~
 @93969 = ~There's been a prison break in the Peninsula District. Gate Captain Kipp recommends talking to Sedos Sebile to determine the best means of getting into the Prison and helping out. She's headquartered in the district's southeast corner.~
 @94004 = ~NP: Peninsula: Riot in the prison In the city prison on the peninsula, a riot of prisoners erupted. Fugitive criminals not only plunged the streets of the city into chaos, but also captured the prison building. Now they patrol it, and the former guards of the prison are thrown into the cells. Cedos Sebil, commander of the peninsula militia, requested assistance. We need to get into the prison and find out what the hell is going on there.~ /*There has been a prison break in the Peninsula District. Aside from the chaos in the district, itself, former prisoners now patrol the prison interior while the former guards beg for rescue from the prison cells. 
 On his release, a former cell block captain confirmed that the Head Gaoler, in an unexplained fit of madness, was somehow responsible for the prison break. The Head Gaoler apparently remains in the bowels of the Prison, controlling events with an unseen hand and toward an unknown purpose.*/
@@ -1344,7 +1349,9 @@ Maugrim Korothir~
 @103123 = ~Rumbottom Estate~
 @103124 = ~Hodge's Estate~
 @103125 = ~NP: Apparently this is some kind of portal, but now it does not work.~ /*You seem to got problem with thief.*/
-@103126 = ~NP: Moonstone Mask: A Portrait for Ofala A portrait of Sir Reginald Rambottom III was found with the name &quot;Ofala Sheldarstorn&quot; written on the back. This is the famous mistress of the Moonstone Mask. Most likely she will be interested in this find.~ /*A portrait of Sir Reginald Rumbottom III has been found that appears to have the name "Ophala Cheldarstorn" written on the back. She is the famous matron of the Moonstone Mask. It is likely she would be interested in it.*/
+@103126 = ~Moonstone Mask: Portrait for Ophala
+
+A portrait of Sir Reginald Rumbottom III has been found that appears to have the name "Ophala Cheldarstorn" written on the back. She is the famous matron of the Moonstone Mask. It is likely she would be interested in it.~
 @103127 = ~NP: The passage behind this door is littered with fragments of walls, it is impossible to pass.~ /*How Riisi clean all this up? This be so impossible!*/
 @103128 = ~Alliance Arms Inn~
 @103129 = ~NP: City Hall~ /*Race*/
