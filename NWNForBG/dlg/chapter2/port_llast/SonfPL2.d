@@ -83,7 +83,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 7.1
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @26 EXIT
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @97247 EXIT
 END
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
