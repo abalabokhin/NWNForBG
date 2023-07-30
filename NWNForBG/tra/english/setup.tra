@@ -3962,6 +3962,35 @@ Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107518 = ~Death to the traitors! **hiss** Death to the Word Slaves!~ [LIZARD52]
 @107519 = ~Hail, Morag! **hiss** Lead us to vengeance!~ [LIZARD53]
 @107520 = ~NP: You cannot use the portal during combat!~ /*You can not use this item!*/
+@107521 = ~NP: Blue dragon armor~
+@107522 = ~NP: The Year of Dragon Fury (1018 LD) brought great destruction to the Central Regions, but not only to the people there. Dragons fell, littering the battlefield with their corpses. The looters then stripped the weapons and armor from the slain, and skinned the dragons. Several sets of blue dragon armor were created, but the names of the creator and the dragons whose skins were used are unknown to anyone. In an unfathomable way, the blacksmith Cromwell has figured out the secret to making this armor and has recreated it for you. 
+
+PARAMETERS:
+
+Equipment Features:
+ - Cold resistance: +100%
+ - Immunity to wing strike
+ - Immunity to stun
+
+Base Defense Class: -2
+Defense Class Modifiers:
+ +3 improvement against stabbing
+ +3 improvement against throwing
+ +4 improvement against chopping
+
+Weight: 20
+Requirements: Strength 15
+Cannot use:
+ Bard
+ Barbarian
+ Thief
+ Kensai
+ Archer
+ Mage
+ Monk
+ Avenger
+ Werewolf
+ Stalker~
 @107523 = ~NP: This massive scale, torn from a blue dragon, is cold as ice on the outside, while its inside radiates a pleasant warmth. Legend has it that powerful armor can be forged from it magically.~ /*This massive statue looms above you, as if about to strike you at any moment. Two exceptionally large rubies seem to be the statue's eyes.*/
 @107526 = ~NP: Defense against slashing weapons~ /*Protector Against the Storm*/
 @107527 = ~NP: Protection against piercing weapons~ /*Protection from Cold*/

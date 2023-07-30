@@ -2092,6 +2092,10 @@ COPY ~NWNForBG/itm/platnwn2.itm~ ~override~
   SAY 0xC	@105374
   SAY 0x54	@105375
 
+COPY ~NWNForBG/itm/platnwn3.itm~ ~override~
+  SAY 0xC       @107521
+  SAY 0x54      @107522
+
 COPY ~NWNForBG/itm/quasgore.itm~ ~override~
   SAY 0x8	@103655
   SAY 0xC	@103655
