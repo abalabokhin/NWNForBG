@@ -70,7 +70,7 @@ IF ~~ THEN BEGIN 9 // from: 8.1
 GiveItemCreate("AmulNeu",LastTalkedToBy(Myself),1,0,0)
 GiveItemCreate("AmulNeu",LastTalkedToBy(Myself),1,0,0)
 GiveItemCreate("AmulNeu",LastTalkedToBy(Myself),1,0,0)
-GiveItemCreate("AmulNeu",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @18 GOTO 10
+GiveItemCreate("AmulNeu",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @96006 GOTO 10
   IF ~~ THEN REPLY @19 GOTO 7
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -203,7 +203,7 @@ END
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @49
   IF ~~ THEN REPLY @50 DO ~SetGlobal("NeurikQuest","GLOBAL",10)
-GiveItemCreate("NeurikPL",LastTalkedToBy(Myself),1,1,1)TakePartyItem("ElTooth")AddexperienceParty(90000)EraseJournalEntry(@62)~ SOLVED_JOURNAL @51 GOTO 27
+GiveItemCreate("NeurikPL",LastTalkedToBy(Myself),1,1,1)TakePartyItem("ElTooth")AddexperienceParty(90000)EraseJournalEntry(@96863)~ SOLVED_JOURNAL @96914 GOTO 27
   IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @52 GOTO 28
   IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @52 GOTO 29
 END
@@ -217,13 +217,13 @@ IF ~~ THEN BEGIN 28 // from: 21.2
   SAY @54
   IF ~~ THEN REPLY @50 DO ~SetGlobal("NeurikQuest","GLOBAL",10)
 GiveItemCreate("NeurikPL",LastTalkedToBy(Myself),1,1,1)
-GiveGoldForce(1000)TakePartyItem("ElTooth")AddexperienceParty(90000)EraseJournalEntry(@62)~ SOLVED_JOURNAL @51 GOTO 27
+GiveGoldForce(1000)TakePartyItem("ElTooth")AddexperienceParty(90000)EraseJournalEntry(@96863)~ SOLVED_JOURNAL @96914 GOTO 27
 END
 
 IF ~~ THEN BEGIN 29 // from: 21.3
   SAY @55
   IF ~~ THEN REPLY @50 DO ~SetGlobal("NeurikQuest","GLOBAL",10)
-GiveItemCreate("NeurikPL",LastTalkedToBy(Myself),1,1,1)TakePartyItem("ElTooth")AddexperienceParty(90000)EraseJournalEntry(@62)~ SOLVED_JOURNAL @51 GOTO 27
+GiveItemCreate("NeurikPL",LastTalkedToBy(Myself),1,1,1)TakePartyItem("ElTooth")AddexperienceParty(90000)EraseJournalEntry(@96863)~ SOLVED_JOURNAL @96914 GOTO 27
 END
 
 IF ~~ THEN BEGIN 22 // from: 20.2
@@ -244,7 +244,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 23.1
   SAY @61
-  IF ~~ THEN DO ~SetGlobal("NeurikQuest","GLOBAL",8)EraseJournalEntry(@94)~ UNSOLVED_JOURNAL @62 EXIT
+  IF ~~ THEN DO ~SetGlobal("NeurikQuest","GLOBAL",8)EraseJournalEntry(@96864)~ UNSOLVED_JOURNAL @96863 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 23.2
