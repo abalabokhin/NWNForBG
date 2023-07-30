@@ -126,7 +126,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 17.1
   SAY @42
-  IF ~~ THEN DO ~SetGlobal("SetaraQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @43 EXIT
+  IF ~~ THEN DO ~SetGlobal("SetaraQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99934 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 17.2
@@ -195,13 +195,13 @@ END
 IF ~~ THEN BEGIN 29 // from: 28.1
   SAY @60
   IF ~~ THEN DO ~SetGlobal("Gem","LOCALS",1)TakePartyItem("Semirror")
-SetGlobal("SetaraQuest","GLOBAL",2)GiveItem("Sgem",LastTalkedToBy)GiveItem("Setkey",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@43)~ SOLVED_JOURNAL @61 EXIT
+SetGlobal("SetaraQuest","GLOBAL",2)GiveItem("Sgem",LastTalkedToBy)GiveItem("Setkey",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@99934)~ SOLVED_JOURNAL @99994 EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 28.2
   SAY @62
   IF ~~ THEN DO ~SetGlobal("Gem","LOCALS",1)TakePartyItem("Semirror")
-SetGlobal("SetaraQuest","GLOBAL",2)GiveItem("Sgem",LastTalkedToBy)GiveItem("Setkey",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@43)~ SOLVED_JOURNAL @61 EXIT
+SetGlobal("SetaraQuest","GLOBAL",2)GiveItem("Sgem",LastTalkedToBy)GiveItem("Setkey",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@99934)~ SOLVED_JOURNAL @99994 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 28.3
