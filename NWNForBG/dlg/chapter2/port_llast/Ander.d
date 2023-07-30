@@ -68,7 +68,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 9.1
   SAY @21
-  IF ~~ THEN DO ~SetGlobal("TalkAboutWerewolw","LOCALS",1)EraseJournalEntry(@93)~ UNSOLVED_JOURNAL @22 GOTO 13
+  IF ~~ THEN DO ~SetGlobal("TalkAboutWerewolw","LOCALS",1)EraseJournalEntry(@96006)~ UNSOLVED_JOURNAL @96025 GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
