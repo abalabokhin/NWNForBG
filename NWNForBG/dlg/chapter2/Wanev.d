@@ -186,14 +186,14 @@ END
 IF ~~ THEN BEGIN 22 // from: 20.1
   SAY @46
   IF ~  PartyHasItem("WANEVSTH")~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @47 EXIT
+SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @100242 EXIT
   IF ~  !PartyHasItem("WANEVSTH")~ THEN GOTO 49
 END
 
 IF ~~ THEN BEGIN 49 // from: 22.2
   SAY @48
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @47 EXIT
+SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @100242 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.2
@@ -219,7 +219,7 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 20.2
   SAY @46
-  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @47 EXIT
+  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @100242 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 20.5
@@ -239,7 +239,7 @@ END
 IF ~~ THEN BEGIN 53 // from: 14.1 15.1
   SAY @54
   IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @55 DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @56 EXIT
+SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)~ UNSOLVED_JOURNAL @100243 EXIT
   IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @55 GOTO 54
   IF ~  !PartyHasItem("WANEVSTH")~ THEN REPLY @45 GOTO 8
   IF ~  PartyHasItem("WANEVSTH")~ THEN REPLY @45 GOTO 51
@@ -248,7 +248,7 @@ END
 IF ~~ THEN BEGIN 54 // from: 14.1 15.1
   SAY @48
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @56 EXIT
+SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("VScroll",LastTalkedToBy)GiveItemCreate("WANEVSTH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @100243 EXIT
 END
 
 // ---------------------------------
@@ -286,7 +286,7 @@ END
 
 IF ~~ THEN BEGIN 31 // from: 30.1
   SAY @46
-  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @47 EXIT
+  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @100242 EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 30.2
@@ -370,7 +370,7 @@ GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
+EraseJournalEntry(@100242)~ SOLVED_JOURNAL @100324 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 42.1
@@ -380,7 +380,7 @@ GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
+EraseJournalEntry(@100242)~ SOLVED_JOURNAL @100324 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 42.1
@@ -390,7 +390,7 @@ GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
-EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
+EraseJournalEntry(@100242)~ SOLVED_JOURNAL @100324 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 42.1
@@ -401,7 +401,7 @@ GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
 AddexperienceParty(80000)
-EraseJournalEntry(@47)~ SOLVED_JOURNAL @83 EXIT
+EraseJournalEntry(@100242)~ SOLVED_JOURNAL @100324 EXIT
 END
 
 // ---------------------------------
@@ -456,7 +456,7 @@ GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
 AddexperienceParty(80000)
-EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
+EraseJournalEntry(@100243)~ SOLVED_JOURNAL @100328 EXIT
 END
 
 IF ~~ THEN BEGIN 61 // from: 42.1
@@ -468,7 +468,7 @@ GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 GiveGoldForce(600)
 AddexperienceParty(80000)
-EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
+EraseJournalEntry(@100243)~ SOLVED_JOURNAL @100328 EXIT
 END
 
 IF ~~ THEN BEGIN 62 // from: 42.1
@@ -479,7 +479,7 @@ GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
+EraseJournalEntry(@100243)~ SOLVED_JOURNAL @100328 EXIT
 END
 
 IF ~~ THEN BEGIN 63 // from: 42.1
@@ -490,5 +490,5 @@ GiveItemCreate("Wanprize",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("Scrx17",LastTalkedToBy,1,1,0)
 AddexperienceParty(92000)
-EraseJournalEntry(@56)~ SOLVED_JOURNAL @87 EXIT
+EraseJournalEntry(@100243)~ SOLVED_JOURNAL @100328 EXIT
 END

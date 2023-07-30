@@ -45,9 +45,7 @@
 @44 = ~NP: If there was a trick to it, I'd be up to the task myself.~ /*Is there a reason for the undead infestation?*/
 @45 = ~NP: It's too dangerous. Goodbye.~ /*Neither, thanks. Goodbye.*/
 @46 = ~NP: All you have to do is kill the cursed demon I've summoned and put his vile little heart on the brazier. Then the portal will be closed. His name is Gulgash. Please come back as soon as you close the portal, and I'll look for a suitable reward in the meantime.~ /*You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.*/
-@47 = ~NP: South Road: Closing the Wayniva Portal
 
-The wizard Vainiv has admitted to keeping in his tower one of the gems sought by Elate Krolnober of the Herb of Union Tavern. Unfortunately, he left the gem in the summoning hall where an accident recently occurred. His demon Gulgash opened a portal to the Abyss, and now the hall is swarming with all sorts of monsters and demons. According to Vayniv, if you kill Gulgash and place his heart on a nearby brazier, the portal will close.~ /*In his tower south of Port Llast, the wizard Wanev admits to having the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. Unfortunately, he left it in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, has opened up a portal to the Abyss and the chambers are now home to all manner of beasts and demons. If Gulgash can be killed, Wanev claims that the portal can be closed by placing the imp's heart upon the adjacent brazier.*/
 @48 = ~NP: Take this amulet and my servants will not harm you.~ /*I appreciate not being killed. Take this wardstone and my servants shall leave you be.*/
 @49 = ~I'm sure I can dig up some magical equipment of no small worth while you try to set things right.~
 @50 = ~NP: Well, all right. If you change your mind, I'd be very grateful. Take this amulet, and my servants will not harm you.~ /*I appreciate not being killed. Take this wardstone and my servants shall leave you be.*/
@@ -56,9 +54,7 @@ The wizard Vainiv has admitted to keeping in his tower one of the gems sought by
 @53 = ~NP: I'll help you solve this problem, for a fee of course.~ /*I might help you... if the price is right.*/
 @54 = ~NP: All right! Take this scroll. The spell written on it will break the magical seal on the stairs, and know that if you can close the portal, I'll be very grateful. All you have to do is kill the cursed demon I've summoned and put his vile little heart on the brazier. Then the portal will be closed. His name is Gulgash. Please come back as soon as you close the portal, and I'll look for a suitable reward in the meantime.~ /*You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.*/
 @55 = ~NP: I'll do it. Hopefully the reward will be worth it!~ /*I will do this for you, Gorgotha!*/
-@56 = ~NP: South Road: Closing the Wayniva Portal
 
-The wizard Vainiv made an unforgivable mistake when summoning a demon. The demon he summoned, Gulgash, opened a portal to the Abyss, and now all sorts of monsters and demons swarm the hall. According to Vainiv, if you kill Gulgash and place his heart on a nearby brazier, the portal will close.~ /*In his tower south of Port Llast, the wizard Wanev admits to having the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. Unfortunately, he left it in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, has opened up a portal to the Abyss and the chambers are now home to all manner of beasts and demons. If Gulgash can be killed, Wanev claims that the portal can be closed by placing the imp's heart upon the adjacent brazier.*/
 @57 = ~What do you want now? Don't be rash and attack me again.~ [WANEV053]
 @58 = ~You mentioned that you had lost the gem?~
 @59 = ~NP: I think it's time for you to say goodbye to life. Die!~ /*"Enough. Time for you to die."*/
@@ -85,12 +81,7 @@ The wizard Vainiv made an unforgivable mistake when summoning a demon. The demon
 @80 = ~NP: Uh, sure. That would be nice.~ /*That would be good.*/
 @81 = ~I'll find my own way out.~
 @82 = ~Very well. Goodbye.~
-@83 = ~NP: South Road: Closing the Wayniva Portal
 
-The wizard Vainiv kept one of the gems sought by Elate Krolnober of the Union Herb Tavern in his tower. Unfortunately, he left the gem in the summoning hall where an accident had recently occurred. His demon Gulgash opened a portal to the Abyss, and the hall was swarming with all sorts of monsters and demons. Now Gulgash is dead, the portal is closed, and the reward from Vayniv has been received.~ /*In his tower south of Port Llast, the wizard Wanev has surrendered ownership of the gem currently being sought by Elaith Craulnober in the Alliance Arms Inn. It was in his summoning chamber, the site of a recent magical accident. His imp, Gulgash, had opened up a portal to the Abyss and the chambers had become home to all manner of beasts and demons. Gulgash now lies dead, the portal closed, and Wanev's reward claimed.*/
 @84 = ~NP: The portal is closed.~ /*The portal has been closed.*/
 @85 = ~NP: Hmm. You've saved me a lot of trouble! Here, take some more money! I have a lot to do, and I probably won't see you again. If you want, I can teleport you outside so you can save time getting out of here.~ /*Well, I have some work to do so we shall most likely not meet again. I could set up a teleport portal to help you get out of here, if you'd like.*/
 @86 = ~NP: Your reward is very valuable. And it's more than enough. I have a lot to do, and I probably won't see you again. If you like, I can teleport you outside to save you time getting out of here.~ /*Well, I have some work to do so we shall most likely not meet again. I could set up a teleport portal to help you get out of here, if you'd like.*/
-@87 = ~NP: South Road: Closing the Wayniva Portal
-
-The wizard Vainiv made an unforgivable mistake when summoning a demon. The demon he summoned, Gulgash, opened a portal to the Abyss, and the hall was filled with all sorts of monsters and demons. Now Gulgash is dead, the portal is closed, and Vainiv's reward has been received.~ /*As it passes through the energies of the portal, there appears to be some kind of violent reaction. The token bursts and the portal flares purple for just a moment. The magic of the structure is weakened, but not destroyed...*/
