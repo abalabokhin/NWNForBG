@@ -142,13 +142,13 @@ END
 IF ~~ THEN BEGIN 19 // from: 16.1
   SAY @38
   IF ~~ THEN DO ~TakePartyItem("Nwmisc73")DestroyItem("Nwmisc73")SetGlobal("NWCoverlet","GLOBAL",2)SetGlobal("NW_Medicine","GLOBAL",2)GiveItemCreate("Nwmisc72",LastTalkedToBy,1,1,1)
-GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)~ SOLVED_JOURNAL @1075872 EXIT
+GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)~ SOLVED_JOURNAL @107743 EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 16.2
   SAY @40
   IF ~~ THEN DO ~TakePartyItem("Nwmisc73")DestroyItem("Nwmisc73")SetGlobal("NWCoverlet","GLOBAL",2)SetGlobal("NW_Medicine","GLOBAL",2)GiveItemCreate("Nwmisc72",LastTalkedToBy,0,0,0)
-GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)~ SOLVED_JOURNAL @1075872 EXIT
+GiveItemCreate("NWMISC37",LastTalkedToBy,1,1,1)AddexperienceParty(84000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)~ SOLVED_JOURNAL @107743 EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 17.2
