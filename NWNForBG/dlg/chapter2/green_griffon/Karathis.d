@@ -110,7 +110,7 @@ IF ~~ THEN BEGIN 14 // from: 13
 SetGlobal("Dialogue","LOCALS",2)
 SetGlobal("SPRITE_IS_DEADKARATHIS","GLOBAL",0)
 GiveItem("JKarathi",LastTalkedToBy(Myself))
-EraseJournalEntry(@30)~ UNSOLVED_JOURNAL @27 EXIT
+EraseJournalEntry(@96025)~ UNSOLVED_JOURNAL @96864 EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
