@@ -132,7 +132,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 12.1
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",1)GiveItemCreate("NWMISC58",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @35 EXIT
+  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",1)GiveItemCreate("NWMISC58",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @100800 EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 13.1
@@ -230,32 +230,32 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 26.1
   SAY @69
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 26.2
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 26.3
   SAY @72
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 26.4
   SAY @73
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 26.5
   SAY @74
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 26.6
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)~ SOLVED_JOURNAL @70 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 // -----------------------------------------------------------------------------------
@@ -292,7 +292,7 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 40.1
   SAY @83
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)EraseJournalEntry(@92)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @84 EXIT
+  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 40.2
@@ -304,32 +304,32 @@ END
 
 IF ~~ THEN BEGIN 43 // from: 40.3
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)EraseJournalEntry(@92)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @84 EXIT
+  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 40.4
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(50000)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)EraseJournalEntry(@92)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @84 EXIT
+  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(50000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 40.5
   SAY @87
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(800)AddexperienceParty(70000)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)EraseJournalEntry(@92)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @84 EXIT
+  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(800)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 40.6
   SAY @88
   IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)AddexperienceParty(80000)
-EraseJournalEntry(@90)
-EraseJournalEntry(@91)
-EraseJournalEntry(@35)
-EraseJournalEntry(@91)
-ReputationInc(1)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @84 EXIT
+EraseJournalEntry(@100798)
+EraseJournalEntry(@100799)
+EraseJournalEntry(@100800)
+EraseJournalEntry(@100801)
+ReputationInc(1)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 40.7
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)AddexperienceParty(70000)ReputationInc(1)EraseJournalEntry(@90)EraseJournalEntry(@91)EraseJournalEntry(@35)EraseJournalEntry(@92)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @84 EXIT
+  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)AddexperienceParty(70000)ReputationInc(1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("Evaine",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 // -----------------------------------------------------------------------------------
