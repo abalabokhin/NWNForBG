@@ -105,7 +105,7 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 14.1
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",1)GiveItemCreate("RingReva",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @33 EXIT
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",1)GiveItemCreate("RingReva",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @99856 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 9.5
@@ -145,7 +145,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 18.3
   SAY @45
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",6)EraseJournalEntry(@33)EscapeArea() ~ SOLVED_JOURNAL @46 EXIT
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",6)EraseJournalEntry(@99856)EscapeArea() ~ SOLVED_JOURNAL @99901 EXIT
 END
 
 // -----------------------------------------------------------------------------------
@@ -173,17 +173,17 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 24.1
   SAY @54
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(990)EraseJournalEntry(@33)ReputationInc(-1)~ SOLVED_JOURNAL @55 EXIT
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(990)EraseJournalEntry(@99856)ReputationInc(-1)~ SOLVED_JOURNAL @99908 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 22.3
   SAY @56
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(740)EraseJournalEntry(@33)~ SOLVED_JOURNAL @55 EXIT
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(740)EraseJournalEntry(@99856)~ SOLVED_JOURNAL @99908 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 22.4
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)EraseJournalEntry(@33)ReputationInc(1)~ SOLVED_JOURNAL @55 EXIT
+  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)EraseJournalEntry(@99856)ReputationInc(1)~ SOLVED_JOURNAL @99908 EXIT
 END
 
 // --------------------------------------------------------------------------------------
