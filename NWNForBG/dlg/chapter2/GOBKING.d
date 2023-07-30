@@ -30,7 +30,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
   SAY @11
-  IF ~~ THEN DO ~SetGlobal("GoblinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @12 EXIT
+  IF ~~ THEN DO ~SetGlobal("GoblinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99074 EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.2
@@ -89,7 +89,7 @@ SetGlobal("GoblinQuest","GLOBAL",2)
 GiveGoldForce(1200)
 TakePartyItem("HeadBugb")
 AddexperienceParty(12000)
-EraseJournalEntry(@12)~ SOLVED_JOURNAL @29 EXIT
+EraseJournalEntry(@99074)~ SOLVED_JOURNAL @99106 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 11.2
@@ -110,7 +110,7 @@ SetGlobal("GoblinQuest","GLOBAL",2)
 GiveGoldForce(1200)
 TakePartyItem("HeadOrc")
 AddexperienceParty(12000)
-EraseJournalEntry(@12)~ SOLVED_JOURNAL @32 EXIT
+EraseJournalEntry(@99074)~ SOLVED_JOURNAL @99106 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 12.2
