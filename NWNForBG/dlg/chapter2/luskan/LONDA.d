@@ -165,7 +165,7 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 16.5
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("MyQuest","LOCALS",1)SetGlobal("LondaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @49 EXIT
+  IF ~~ THEN DO ~SetGlobal("MyQuest","LOCALS",1)SetGlobal("LondaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101378 EXIT
 END
 
 // ----------------------------------
@@ -252,7 +252,7 @@ END
 
 IF ~~ THEN BEGIN 35 // from: 28.1
   SAY @77
-  IF ~~ THEN DO ~EraseJournalEntry(@49)EraseJournalEntry(@89)EraseJournalEntry(@90)EraseJournalEntry(@91)AddexperienceParty(60000)SetGlobal("LondaQuest","GLOBAL",3)TakePartyItem("NWMISC59")GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @78 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)AddexperienceParty(60000)SetGlobal("LondaQuest","GLOBAL",3)TakePartyItem("NWMISC59")GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 28.2
@@ -269,7 +269,7 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 36.2
   SAY @84
-  IF ~~ THEN DO ~EraseJournalEntry(@49)EraseJournalEntry(@89)EraseJournalEntry(@90)EraseJournalEntry(@91)AddexperienceParty(30000)SetGlobal("LondaQuest","GLOBAL",3)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @78 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)AddexperienceParty(30000)SetGlobal("LondaQuest","GLOBAL",3)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 36.3
@@ -281,7 +281,7 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 39.3
   SAY @87
-  IF ~~ THEN DO ~EraseJournalEntry(@49)EraseJournalEntry(@89)EraseJournalEntry(@90)EraseJournalEntry(@91)SetGlobal("LondaQuest","GLOBAL",3)ReputationInc(-1)GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @78 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)SetGlobal("LondaQuest","GLOBAL",3)ReputationInc(-1)GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
 END
 
 // ----------------------------------
