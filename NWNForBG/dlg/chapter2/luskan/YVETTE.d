@@ -183,12 +183,12 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 0.2
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")GiveGoldForce(780)AddexperienceParty(20000)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@59)EscapeArea()~ SOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")GiveGoldForce(780)AddexperienceParty(20000)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@102028)EscapeArea()~ SOLVED_JOURNAL @102069 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 0.2
   SAY @49
-  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")GiveGoldForce(780)AddexperienceParty(20000)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@59)EscapeArea()~ SOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")GiveGoldForce(780)AddexperienceParty(20000)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@102028)EscapeArea()~ SOLVED_JOURNAL @102069 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 0.2
@@ -200,7 +200,7 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 0.2
   SAY @54
-  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")GiveGoldForce(500)AddexperienceParty(30000)EraseJournalEntry(@59)EscapeArea()~ SOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")GiveGoldForce(500)AddexperienceParty(30000)EraseJournalEntry(@102028)EscapeArea()~ SOLVED_JOURNAL @102069 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 1.3
@@ -215,12 +215,12 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 0.2
   SAY @56
-  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")AddexperienceParty(30000)ReputationInc(1)EraseJournalEntry(@59)EscapeArea()~ SOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")AddexperienceParty(30000)ReputationInc(1)EraseJournalEntry(@102028)EscapeArea()~ SOLVED_JOURNAL @102069 EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 0.2
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")TakePartyGold(250)AddexperienceParty(40000)ReputationInc(1)EraseJournalEntry(@59)EscapeArea()~ SOLVED_JOURNAL @48 EXIT
+  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",3)TakePartyItem("Nwmisc60")TakePartyGold(250)AddexperienceParty(40000)ReputationInc(1)EraseJournalEntry(@102028)EscapeArea()~ SOLVED_JOURNAL @102069 EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 0.2
@@ -232,7 +232,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 0.2
   SAY @42
-  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @59 EXIT
+  IF ~~ THEN DO ~SetGlobal("YvetteQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @102028 EXIT
 END
 
 // ---------------------------------------

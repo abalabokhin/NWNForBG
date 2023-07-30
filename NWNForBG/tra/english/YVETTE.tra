@@ -46,7 +46,7 @@
 @45 = ~What problem is that?~
 @46 = ~You... want a job? Maybe you could help me, <PRO_SIRMAAM>. I haven't anyone else to turn to... perhaps I could hire you?~
 @47 = ~NP: No! You... you wouldn't dare! Then here ... take it. Take everything. I... I'll have to find another way to get her home. You are very cruel. Miss Bela will help me get out of this city and not associate with people like you anymore ... I hope I never come back here!~ /*You are a cruel, cruel <PRO_MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!*/
-@48 = ~NP: Luskan: The prostitute's husband Yvette, a prostitute from a brothel in Luskan, dreams of a better life. With the help of Bela, the brothel owner, she hopes to move to Silverymoon and start a new life there. With the help of good adventurers, she managed to take her child away from his father Galron and now she left with a light heart for Silverymoon.~ /*Yvette, a harlot at the Luskan brothel, has dreams of a better life. With the support of Bela, the brothel's owner, she hopes to move to Silverymoon and start her life afresh. Thanks to the assistance of some kindly adventurers, she was able to retrieve her only child from her estranged husband, Galrone, and depart for Silverymoon with an easy heart.*/
+
 @49 = ~NP: No, don't do it! I... here, I'll give you more! I won't have anything left for the baby, but I can't lose her again. You are very cruel. Miss Bela will help me get out of this city and not associate with people like you anymore ... I hope I never come back here!~ /*You are a cruel, cruel <PRO_MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!*/
 @50 = ~Are... are you sure, <PRO_SIRMAAM>? You earned the gold, after all. The baby and I can... make do.~
 @51 = ~You're right. The original reward will do.~
@@ -57,7 +57,7 @@
 @56 = ~NP: You have done much more than you could hope for. Thank you,<LADYLORD> ... I will always remember your kindness. Now I have to go. Miss Bela arranged for us to be taken out of town to start life anew. Thanks again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
 @57 = ~NP: You are so generous, I... I don't know what to say. Gods bless you<LADYLORD> I will always remember your kindness! Now I have to go. Miss Bela arranged for us to be taken out of town to start life anew. Thanks again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
 @58 = ~Miss Bela warned me not to give my gold away. You... you will get a reward once I get my daughter, <PRO_SIRMAAM>. I won't give it out before then.~
-@59 = ~Yvette, a harlot at the Luskan brothel, has dreams of a better life. With the support of Bela, the brothel's owner, she hopes to move to Silverymoon and start her life afresh. Unable to leave without her baby, however, she has begged adventurers to help retrieve the child from her estranged husband, Galrone.~
+
 @60 = ~You return. Is there something else I can do for you, <PRO_SIRMAAM>?~
 @61 = ~You've come back? Er... what do you wish of me?~
 @62 = ~You mentioned something about a job before.~
