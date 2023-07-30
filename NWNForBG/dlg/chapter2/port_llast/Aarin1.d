@@ -52,7 +52,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
   SAY @12
-  IF ~~ THEN  DO ~SetGlobal("AarinTalk","GLOBAL",1)EraseJournalEntry(@278)~ UNSOLVED_JOURNAL @13 GOTO 7
+  IF ~~ THEN  DO ~SetGlobal("AarinTalk","GLOBAL",1)EraseJournalEntry(@92485)~ UNSOLVED_JOURNAL @95588 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.1
@@ -1044,7 +1044,7 @@ END
 IF WEIGHT #7 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("CultInLuskan","GLOBAL",1)Global("LuskanTalk","LOCALS",0)IsGabber(Player1)~ THEN BEGIN 113 // from:
   SAY @221
-  IF ~~ THEN DO ~SetGlobal("LuskanTalk","LOCALS",1)SetGlobal("GoToLuskan","GLOBAL",1)EraseJournalEntry(@13)~ UNSOLVED_JOURNAL @222 GOTO 114
+  IF ~~ THEN DO ~SetGlobal("LuskanTalk","LOCALS",1)SetGlobal("GoToLuskan","GLOBAL",1)EraseJournalEntry(@95588)~ UNSOLVED_JOURNAL @95592 GOTO 114
 END
 
 IF ~~ THEN BEGIN 114// from: 113.1
@@ -1210,13 +1210,13 @@ END
 
 IF ~~ THEN BEGIN 133// from: 132.1
   SAY @253
-  IF ~~ THEN REPLY @254 DO ~SetGlobal("CultInLuskan","GLOBAL",4)EraseJournalEntry(@279)EraseJournalEntry(@258)StartCutSceneMode()StartCutScene("ToNewer")~ UNSOLVED_JOURNAL @255 EXIT
-  IF ~~ THEN REPLY @256 DO ~SetGlobal("CultInLuskan","GLOBAL",3)EraseJournalEntry(@258)EraseJournalEntry(@279)~ UNSOLVED_JOURNAL @255 EXIT
+  IF ~~ THEN REPLY @254 DO ~SetGlobal("CultInLuskan","GLOBAL",4)EraseJournalEntry(@95589)EraseJournalEntry(@95590)StartCutSceneMode()StartCutScene("ToNewer")~ UNSOLVED_JOURNAL @95839 EXIT
+  IF ~~ THEN REPLY @256 DO ~SetGlobal("CultInLuskan","GLOBAL",3)EraseJournalEntry(@95590)EraseJournalEntry(@95589)~ UNSOLVED_JOURNAL @95839 EXIT
 END
 
 IF ~~ THEN BEGIN 127// from: 20.2
   SAY @257
-  IF ~~ THEN DO ~TakePartyItem("Stamp")GiveItemCreate("PermitTo",Player1,0,0,0)SetGlobal("PlayerHasPermit","GLOBAL",1)EraseJournalEntry(@262)~ UNSOLVED_JOURNAL @258 GOTO 135
+  IF ~~ THEN DO ~TakePartyItem("Stamp")GiveItemCreate("PermitTo",Player1,0,0,0)SetGlobal("PlayerHasPermit","GLOBAL",1)EraseJournalEntry(@95591)~ UNSOLVED_JOURNAL @95590 GOTO 135
 END
 
 IF ~~ THEN BEGIN 135// from: 127.1
@@ -1240,7 +1240,7 @@ END
 
 IF ~~ THEN BEGIN 129// from: 20.4
   SAY @261
-  IF ~~ THEN DO ~SetGlobal("AskAboutStamp","LOCALS",1)EraseJournalEntry(@222)~ UNSOLVED_JOURNAL @262 GOTO 137
+  IF ~~ THEN DO ~SetGlobal("AskAboutStamp","LOCALS",1)EraseJournalEntry(@95592)~ UNSOLVED_JOURNAL @95591 GOTO 137
 END
 
 IF ~~ THEN BEGIN 137// from: 129.1
