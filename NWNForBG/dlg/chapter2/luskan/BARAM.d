@@ -223,7 +223,7 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 0.2
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("KnowBaram","GLOBAL",1)SetGlobal("BaramQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @56 EXIT
+  IF ~~ THEN DO ~SetGlobal("KnowBaram","GLOBAL",1)SetGlobal("BaramQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @100569 EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 0.2
@@ -357,7 +357,7 @@ END
 
 IF ~~ THEN BEGIN 46 // 1500
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("KnowBaram","GLOBAL",2)SetGlobal("BaramQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @56 EXIT
+  IF ~~ THEN DO ~SetGlobal("KnowBaram","GLOBAL",2)SetGlobal("BaramQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @100569 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 0.2
