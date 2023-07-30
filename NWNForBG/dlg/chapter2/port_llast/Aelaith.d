@@ -231,7 +231,7 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 35
   SAY @67
-  IF ~  Global("AelaithQuest","GLOBAL",0)~ THEN DO ~SetGlobal("AelaithQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @68 EXIT
+  IF ~  Global("AelaithQuest","GLOBAL",0)~ THEN DO ~SetGlobal("AelaithQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95860 EXIT
   IF ~  GlobalGT("AelaithQuest","GLOBAL",0)~ THEN EXIT
 END
 
@@ -315,8 +315,8 @@ TakePartyItem("Sgem")
 AddexperienceParty(60000)
 GiveGoldForce(3000)
 GiveItemCreate("Aelitem",LastTalkedToBy,1,1,1)
-EraseJournalEntry(@68)
-EscapeArea()~ SOLVED_JOURNAL @92 EXIT
+EraseJournalEntry(@95860)
+EscapeArea()~ SOLVED_JOURNAL @95947 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 41.2
@@ -341,8 +341,8 @@ TakePartyItem("Sgem")
 AddexperienceParty(60000)
 GiveGoldForce(4000)
 GiveItemCreate("Aelitem",LastTalkedToBy,1,1,1)
-EraseJournalEntry(@68)
-EscapeArea()~ SOLVED_JOURNAL @92 EXIT
+EraseJournalEntry(@95860)
+EscapeArea()~ SOLVED_JOURNAL @95947 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 47.2
@@ -366,13 +366,13 @@ AddexperienceParty(30000)
 GiveGoldForce(5000)
 GiveItemCreate("Aelitem",LastTalkedToBy,1,1,1)
 ReputationInc(-1)
-EraseJournalEntry(@68)
-EscapeArea()~ SOLVED_JOURNAL @92 EXIT
+EraseJournalEntry(@95860)
+EscapeArea()~ SOLVED_JOURNAL @95947 EXIT
 END
 
 IF ~~ THEN BEGIN 52 // from: 48.3 50.2
   SAY @101
-  IF ~~ THEN DO ~Enemy()EraseJournalEntry(@68)Attack(Player1)~ SOLVED_JOURNAL @102 EXIT
+  IF ~~ THEN DO ~Enemy()EraseJournalEntry(@95860)Attack(Player1)~ SOLVED_JOURNAL @95957 EXIT
 END
 
 IF ~~ THEN BEGIN 54 // from: 39.3
@@ -391,8 +391,8 @@ TakePartyItem("Sgem")
 AddexperienceParty(60000)
 GiveGoldForce(6000)
 GiveItemCreate("Aelitem",LastTalkedToBy,1,1,1)
-EraseJournalEntry(@68)
-EscapeArea()~ SOLVED_JOURNAL @92 EXIT
+EraseJournalEntry(@95860)
+EscapeArea()~ SOLVED_JOURNAL @95947 EXIT
 END
 
 IF ~~ THEN BEGIN 55 // from: 53.2
@@ -410,8 +410,8 @@ TakePartyItem("Sgem")
 AddexperienceParty(60000)
 GiveGoldForce(7000)
 GiveItemCreate("Aelitem",LastTalkedToBy,1,1,1)
-EraseJournalEntry(@68)
-EscapeArea()~ SOLVED_JOURNAL @92 EXIT
+EraseJournalEntry(@95860)
+EscapeArea()~ SOLVED_JOURNAL @95947 EXIT
 END
 
 IF ~~ THEN BEGIN 58 // from: 55.2
@@ -442,8 +442,8 @@ GiveGoldForce(8000)
 AddexperienceParty(30000)
 GiveItemCreate("Aelitem",LastTalkedToBy,1,1,1)
 ReputationInc(-1)
-EraseJournalEntry(@68)
-EscapeArea()~ SOLVED_JOURNAL @92 EXIT
+EraseJournalEntry(@95860)
+EscapeArea()~ SOLVED_JOURNAL @95947 EXIT
 END
 
 IF ~~ THEN BEGIN 62 // from: 39.6
