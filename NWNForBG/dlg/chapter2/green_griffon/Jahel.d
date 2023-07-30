@@ -113,8 +113,8 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 14.1
   SAY @39
-  IF ~~ THEN REPLY @40 DO ~SetGlobal("SearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @41 EXIT
-  IF ~~ THEN REPLY @42 DO ~SetGlobal("SearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @41 EXIT
+  IF ~~ THEN REPLY @40 DO ~SetGlobal("SearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @107669 EXIT
+  IF ~~ THEN REPLY @42 DO ~SetGlobal("SearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @107669 EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
