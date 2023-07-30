@@ -73,7 +73,7 @@ IF ~~ THEN BEGIN 17 // from: 14.1
   IF ~~ THEN REPLY @28 GOTO 18
   IF ~~ THEN REPLY @29 GOTO 19
   IF ~~ THEN REPLY @30 GOTO 20
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @32 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -81,7 +81,7 @@ IF ~~ THEN BEGIN 18 // from: 17.1
   SAY @33
   IF ~~ THEN REPLY @29 GOTO 19
   IF ~~ THEN REPLY @30 GOTO 20
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @32 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -89,7 +89,7 @@ IF ~~ THEN BEGIN 19 // from: 17.2
   SAY @34
   IF ~~ THEN REPLY @28 GOTO 18
   IF ~~ THEN REPLY @30 GOTO 20
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @32 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -97,7 +97,7 @@ IF ~~ THEN BEGIN 20 // from: 17.3
   SAY @35
   IF ~~ THEN REPLY @28 GOTO 18
   IF ~~ THEN REPLY @29 GOTO 19
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @32 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -382,11 +382,11 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 45.4
   SAY @95
-  IF ~  NumItemsParty("EarBand",4)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",4)GiveGoldForce(4000)AddexperienceParty(120000)EraseJournalEntry(@32)~ UNSOLVED_JOURNAL @96 EXIT
-  IF ~  NumItemsParty("EarBand",3)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",3)GiveGoldForce(3000)AddexperienceParty(90000)EraseJournalEntry(@32)~ UNSOLVED_JOURNAL @96 EXIT
-  IF ~  NumItemsParty("EarBand",2)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",2)GiveGoldForce(2000)AddexperienceParty(60000)EraseJournalEntry(@32)~ UNSOLVED_JOURNAL @96 EXIT
-  IF ~  NumItemsParty("EarBand",1)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",1)GiveGoldForce(1000)AddexperienceParty(30000)EraseJournalEntry(@32)~ UNSOLVED_JOURNAL @96 EXIT
-  IF ~  !PartyHasItem("EarBand")~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)EraseJournalEntry(@32)~ UNSOLVED_JOURNAL @96 EXIT
+  IF ~  NumItemsParty("EarBand",4)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",4)GiveGoldForce(4000)AddexperienceParty(120000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("EarBand",3)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",3)GiveGoldForce(3000)AddexperienceParty(90000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("EarBand",2)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",2)GiveGoldForce(2000)AddexperienceParty(60000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("EarBand",1)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("EarBand",1)GiveGoldForce(1000)AddexperienceParty(30000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  !PartyHasItem("EarBand")~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 45.5
@@ -410,7 +410,7 @@ END
 
 IF ~~ THEN BEGIN 52 // from: 51.4
   SAY @99
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)EraseJournalEntry(@32)~ UNSOLVED_JOURNAL @96 EXIT
+  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
 END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
@@ -441,7 +441,7 @@ END
 
 IF ~~ THEN BEGIN 56 // from: 53.3
   SAY @108
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",66)EraseJournalEntry(@96)~ SOLVED_JOURNAL @109 EXIT
+  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",66)EraseJournalEntry(@96693)~ SOLVED_JOURNAL @96790 EXIT
 END
 
 IF ~~ THEN BEGIN 57 // from: 53.4
@@ -474,7 +474,7 @@ END
 
 IF ~~ THEN BEGIN 62 // from: 61.1
   SAY @115
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",5)TakePartyItem("EarBand")AddexperienceParty(100000)GiveGoldForce(1000)ReputationInc(1)EraseJournalEntry(@96)~ SOLVED_JOURNAL @116 EXIT
+  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",5)TakePartyItem("EarBand")AddexperienceParty(100000)GiveGoldForce(1000)ReputationInc(1)EraseJournalEntry(@96693)~ SOLVED_JOURNAL @96797 EXIT
 END
 
 IF WEIGHT #9 /* Triggers after states #: 9 even though they appear after this state */
