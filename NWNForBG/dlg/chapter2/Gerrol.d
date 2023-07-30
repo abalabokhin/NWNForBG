@@ -185,12 +185,12 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 15.4
   SAY @53
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@103)~ UNSOLVED_JOURNAL @54 EXIT
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@97247)~ UNSOLVED_JOURNAL @98954 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 15.5
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@103)~ UNSOLVED_JOURNAL @54 EXIT
+  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@97247)~ UNSOLVED_JOURNAL @98954 EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 24.1
@@ -306,12 +306,12 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 33.2
   SAY @85
-  IF ~~ THEN DO ~GiveGoldForce(1200)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@104)~ SOLVED_JOURNAL @86 EXIT
+  IF ~~ THEN DO ~GiveGoldForce(1200)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@98952)~ SOLVED_JOURNAL @99035 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 33.3
   SAY @87
-  IF ~~ THEN DO ~GiveGoldForce(900)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@104)~ SOLVED_JOURNAL @86 EXIT
+  IF ~~ THEN DO ~GiveGoldForce(900)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@98952)~ SOLVED_JOURNAL @99035 EXIT
 END
 
 IF ~~ THEN BEGIN 43 // from: 34.1
@@ -326,7 +326,7 @@ IF ~~ THEN BEGIN 44 // from: 34.2
 IncrementGlobal("Reputation","LOCALS",-1)
 SetGlobal("LeahDead","LOCALS",1)
 TakePartyItem("LeahRing")
-AddexperienceParty(30000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @90 EXIT
+AddexperienceParty(30000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99039 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 34.3
@@ -334,44 +334,44 @@ IF ~~ THEN BEGIN 45 // from: 34.3
   IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)
 SetGlobal("LeahDead","LOCALS",1)
 TakePartyItem("LeahRing")
-AddexperienceParty(30000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @90 EXIT
+AddexperienceParty(30000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99039 EXIT
   IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)
 ReputationInc(1)
 SetGlobal("LeahDead","LOCALS",1)
 TakePartyItem("LeahRing")
-AddexperienceParty(30000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @90 EXIT
+AddexperienceParty(30000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99039 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 34.4
   SAY @87
-  IF ~~ THEN DO ~GiveGoldForce(900)SetGlobal("LeahDead","LOCALS",1)TakePartyItem("LeahRing")AddexperienceParty(30000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @90 EXIT
+  IF ~~ THEN DO ~GiveGoldForce(900)SetGlobal("LeahDead","LOCALS",1)TakePartyItem("LeahRing")AddexperienceParty(30000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99039 EXIT
 END
 
 
 IF ~~ THEN BEGIN 47 // from: 35.1
   SAY @92
-  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @93 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 48 // from: 35.2
   SAY @89
-  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @93 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 49 // from: 35.3
   SAY @91
   IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)
 SetGlobal("LeahSaved","GLOBAL",2)
-AddexperienceParty(45000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @93 EXIT
+AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
   IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)
 ReputationInc(1)
 SetGlobal("LeahSaved","GLOBAL",2)
-AddexperienceParty(45000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @93 EXIT
+AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 35.4
   SAY @87
-  IF ~~ THEN DO ~GiveGoldForce(2000)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @93 EXIT
+  IF ~~ THEN DO ~GiveGoldForce(2000)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 36.1
@@ -529,6 +529,6 @@ END
 
 IF ~~ THEN BEGIN 69 // from: 34.3
   SAY @91
-  IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@104)~ SOLVED_JOURNAL @86 EXIT
-  IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)ReputationInc(1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@104)~ SOLVED_JOURNAL @86 EXIT
+  IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@98952)~ SOLVED_JOURNAL @99035 EXIT
+  IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)ReputationInc(1)SetGlobal("DergiabDone","LOCALS",1)TakePartyItem("HeadDerg")AddexperienceParty(30000)EraseJournalEntry(@98952)~ SOLVED_JOURNAL @99035 EXIT
 END
