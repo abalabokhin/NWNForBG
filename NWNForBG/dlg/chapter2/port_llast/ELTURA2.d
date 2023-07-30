@@ -164,7 +164,7 @@ IF ~~ THEN BEGIN 15 // from: 0.2
   SAY @36
   IF ~~ THEN DO ~SetGlobal("ElturaQuest","GLOBAL",6)TakePartyItem("NWBOOK37")
 TakePartyItem("NWBOOK34")TakePartyItem("NWBOOK32")TakePartyItem("NWBOOK36")TakePartyItem("NWBOOK38")
-GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)GiveGoldForce(10000)AddexperienceParty(200000)EraseJournalEntry(@50)~ SOLVED_JOURNAL @96476 EXIT
+GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)GiveGoldForce(10000)AddexperienceParty(200000)EraseJournalEntry(@96442)~ SOLVED_JOURNAL @96476 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 4.3
@@ -231,7 +231,7 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 17.6
   SAY @49
-  IF ~  Global("ElturaQuest","GLOBAL",0)~ THEN DO ~SetGlobal("ElturaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @50 EXIT
+  IF ~  Global("ElturaQuest","GLOBAL",0)~ THEN DO ~SetGlobal("ElturaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96442 EXIT
   IF ~  GlobalGT("ElturaQuest","GLOBAL",0)~ THEN EXIT
 END
 
@@ -395,27 +395,27 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 35.1
   SAY @61
-  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK37")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@50)~ SOLVED_JOURNAL @96476 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK37")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@96442)~ SOLVED_JOURNAL @96476 EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 35.2
   SAY @62
-  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK34")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@50)~ SOLVED_JOURNAL @96476 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK34")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@96442)~ SOLVED_JOURNAL @96476 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 35.3
   SAY @63
-  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK32")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@50)~ SOLVED_JOURNAL @96476 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK32")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@96442)~ SOLVED_JOURNAL @96476 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 35.4
   SAY @64
-  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK36")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@50)~ SOLVED_JOURNAL @96476 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK36")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@96442)~ SOLVED_JOURNAL @96476 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 35.5
   SAY @65
-  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK38")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@50)~ SOLVED_JOURNAL @96476 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("ElturaQuest","GLOBAL",1)TakePartyItem("NWBOOK38")GiveGoldForce(2000)GiveItemCreate("ELTURITM",LastTalkedToBy,1,0,0)AddexperienceParty(40000)EraseJournalEntry(@96442)~ SOLVED_JOURNAL @96476 EXIT
 END
 
 // --------------------------------------------
