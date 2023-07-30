@@ -1,4 +1,4 @@
-// јавилл - главный друид 
+// Љавилл - главный друид 
 
 BEGIN ~AAVILL~
 
@@ -157,7 +157,7 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 22.3
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",1)EraseJournalEntry(@103)~ UNSOLVED_JOURNAL @56 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",1)EraseJournalEntry(@96270)~ UNSOLVED_JOURNAL @98271 EXIT
 END
 
 // ---------------------------------
@@ -248,22 +248,22 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 35.1
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(5000)AddexperienceParty(180000)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @87 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(5000)AddexperienceParty(180000)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98359 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 35.2
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @87 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98359 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 35.3
@@ -274,22 +274,22 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 35.4
   SAY @90
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)ReputationInc(-1)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @87 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)ReputationInc(-1)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98359 EXIT
 END
 
 IF ~~ THEN BEGIN 41 // from: 35.5
   SAY @91
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)AddexperienceParty(180000)ReputationInc(1)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @87 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)AddexperienceParty(180000)ReputationInc(1)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98359 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 36.1
@@ -308,32 +308,32 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 36.1
   SAY @97
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @98 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98370 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 36.2
   SAY @99
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)AddexperienceParty(90000)ReputationInc(1)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @98 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)AddexperienceParty(90000)ReputationInc(1)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98370 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 36.3
   SAY @100
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)ReputationInc(-1)EraseJournalEntry(@56)
-EraseJournalEntry(@104)
-EraseJournalEntry(@105)
-EraseJournalEntry(@106)
-EraseJournalEntry(@107)
-EraseJournalEntry(@108) ~ SOLVED_JOURNAL @98 EXIT
+  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)ReputationInc(-1)EraseJournalEntry(@98271)
+EraseJournalEntry(@98272)
+EraseJournalEntry(@98273)
+EraseJournalEntry(@98274)
+EraseJournalEntry(@98275)
+EraseJournalEntry(@98276) ~ SOLVED_JOURNAL @98370 EXIT
 END
 
 // -----------------------------------
