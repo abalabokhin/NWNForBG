@@ -68,7 +68,7 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 3.1
   SAY @22
-  IF ~~ THEN DO ~GiveItemCreate("MutKey",LastTalkedToBy,1,0,0)SetGlobal("KnowsAboutMatch","GLOBAL",2)~ UNSOLVED_JOURNAL @23 EXIT
+  IF ~~ THEN DO ~GiveItemCreate("MutKey",LastTalkedToBy,1,0,0)SetGlobal("KnowsAboutMatch","GLOBAL",2)~ UNSOLVED_JOURNAL @97572 EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.2
@@ -159,22 +159,22 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 21.1
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(5000)AddexperienceParty(100000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @44 EXIT
+  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(5000)AddexperienceParty(100000)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97593 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 21.2
   SAY @45
-  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(6000)AddexperienceParty(100000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @44 EXIT
+  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(6000)AddexperienceParty(100000)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97593 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 21.3
   SAY @46
-  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(5000)AddexperienceParty(100000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @44 EXIT
+  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(5000)AddexperienceParty(100000)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97593 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 21.4
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(6000)AddexperienceParty(100000)EraseJournalEntry(@54)~ SOLVED_JOURNAL @44 EXIT
+  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",5)GiveGoldForce(6000)AddexperienceParty(100000)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97593 EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
@@ -198,9 +198,9 @@ END
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("KnowsAboutMatch","GLOBAL",7)~ THEN BEGIN 29 // from:
   SAY @50
-  IF ~~ THEN REPLY @18 DO ~SetGlobal("KnowsAboutMatch","GLOBAL",8)EraseJournalEntry(@54)~ SOLVED_JOURNAL @51 GOTO 13
-  IF ~~ THEN REPLY @4 DO ~SetGlobal("KnowsAboutMatch","GLOBAL",8)EraseJournalEntry(@54)~ SOLVED_JOURNAL @51 GOTO 30
-  IF ~~ THEN REPLY @5 DO ~SetGlobal("KnowsAboutMatch","GLOBAL",8)EraseJournalEntry(@54)~ SOLVED_JOURNAL @51 GOTO 5
+  IF ~~ THEN REPLY @18 DO ~SetGlobal("KnowsAboutMatch","GLOBAL",8)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97600 GOTO 13
+  IF ~~ THEN REPLY @4 DO ~SetGlobal("KnowsAboutMatch","GLOBAL",8)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97600 GOTO 30
+  IF ~~ THEN REPLY @5 DO ~SetGlobal("KnowsAboutMatch","GLOBAL",8)EraseJournalEntry(@97550)~ SOLVED_JOURNAL @97600 GOTO 5
 END
 
 IF ~~ THEN BEGIN 30 // from: 29.2
