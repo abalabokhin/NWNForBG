@@ -250,7 +250,7 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 0.3
   SAY @54
-  IF ~~ THEN DO ~SetGlobal("ErbQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @55 EXIT
+  IF ~~ THEN DO ~SetGlobal("ErbQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @100883 EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 0.3
@@ -297,12 +297,12 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 0.3
   SAY @65
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 0.3
   SAY @67
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 0.3
@@ -314,22 +314,22 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 0.3
   SAY @69
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(750)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 0.3
   SAY @70
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(650)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(650)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 0.3
   SAY @65
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 0.3
   SAY @67
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 0.3
@@ -341,22 +341,22 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 0.3
   SAY @69
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(600)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 0.3
   SAY @70
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(500)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(500)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 43 // from: 0.3
   SAY @65
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 0.3
   SAY @67
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 0.3
@@ -368,12 +368,12 @@ END
 
 IF ~~ THEN BEGIN 46 // from: 0.3
   SAY @69
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(450)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 0.3
   SAY @70
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(350)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@55)EscapeArea()~ SOLVED_JOURNAL @66 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc61")GiveGoldForce(350)AddexperienceParty(30000)SetGlobal("ErbQuest","GLOBAL",3)EraseJournalEntry(@100883)EscapeArea()~ SOLVED_JOURNAL @100942 EXIT
 END
 
 // -----------------------------------------
