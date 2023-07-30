@@ -39,12 +39,12 @@ IF ~~ THEN BEGIN 5 // from: 4.1
   SAY @15
   IF ~~ THEN REPLY @16 GOTO 8
   IF ~~ THEN REPLY @17 DO ~SetGlobal("BallardQuest","GLOBAL",1)
-StartStore("Ballard",LastTalkedToBy(Myself))~ UNSOLVED_JOURNAL @18 EXIT
+StartStore("Ballard",LastTalkedToBy(Myself))~ UNSOLVED_JOURNAL @96270 EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
   SAY @19
-  IF ~~ THEN DO ~SetGlobal("BallardQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @18 EXIT
+  IF ~~ THEN DO ~SetGlobal("BallardQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96270 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
