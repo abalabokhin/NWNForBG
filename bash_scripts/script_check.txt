@@ -1,5 +1,5 @@
 Warnings in scripts
-Number of hits: 903
+Number of hits: 880
 File: 01POOL3.BCS, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 01POOL3.BCS, Line: 41, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 03POOL1.BCS, Line: 24, Warning: Resource not found: S:Area*[ARE] - AR6010
@@ -283,30 +283,11 @@ File: BHEYE.BCS, Line: 124, Warning: Spell resource for WIZARD_MONSTER_SUMMONING
 File: BHEYE.BCS, Line: 127, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: BHOSTILE.BCS, Line: 20, Warning: Script name not found: O:Object* - Ardenor
 File: BHOSTILE.BCS, Line: 27, Warning: Script name not found: O:Object* - Taurgousz
-File: BPBOUNTY.bcs, Line: 307, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPBOUNTY.bcs, Line: 333, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPBOUNTY.bcs, Line: 358, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPCTHI2B.bcs, Line: 104, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
-File: BPCTHI2B.bcs, Line: 113, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
-File: BPCTHI2B.bcs, Line: 116, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
-File: BPCTHI2B.bcs, Line: 124, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 132, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 134, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 137, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 145, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
-File: BPCTHI2B.bcs, Line: 154, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
-File: BPCTHI2B.bcs, Line: 157, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
-File: BPCTHI2B.bcs, Line: 278, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPCTHI2B.bcs, Line: 304, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPCTHI2B.bcs, Line: 329, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPDRU14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: BPDRU14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: BPDRU14G.bcs, Line: 590, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: BPDRU14G.bcs, Line: 918, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
 File: BPDRU14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
-File: BPTHIEF.bcs, Line: 220, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPTHIEF.bcs, Line: 247, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPTHIEF.bcs, Line: 273, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: CANTO.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - canto
 File: CAPCUT02.BCS, Line: 6, Warning: Script name not found: O:Actor* - Angelo
 File: CARSA.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - carsa
@@ -494,10 +475,6 @@ File: GANTOL.BCS, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - gan
 File: GNARL.BCS, Line: 2, Warning: Script name not found: S:Name* - Hairtooth
 File: GNARL.BCS, Line: 11, Warning: Script name not found: S:Name* - Hairtooth
 File: GNOLL5A.BCS, Line: 10, Warning: Script name not found: O:Object* - Gnoll5a
-File: GNT2016.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
-File: GNT2016.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
-File: GNT2017.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
-File: GNT2017.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
 File: GOODDEAT.BCS, Line: 9, Warning: Script name not found: S:Name* - DEATHK
 File: GOODDEAT.BCS, Line: 16, Warning: Script name not found: O:Object* - DEATHK
 File: GOODDEAT.BCS, Line: 19, Warning: Script name not found: O:Target* - DEATHK
