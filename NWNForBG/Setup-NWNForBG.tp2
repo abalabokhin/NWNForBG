@@ -199,7 +199,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         ~godsman_pst~ => ~0x7000~
         ~harlot_pst~ => ~0x7000~
         ~merchant_pst~ => ~0x7000~
-        ~moinesse_ninja_male_human~ => ~0x5400~
+        ~moinesse_ninja_male_human~ => ~0x5000~
         ~skeleton_priest_pst~ => ~0x7000~
         ~skeleton_worker_pst~ => ~0x7000~
         ~thug_pst~ => ~0x7000~
