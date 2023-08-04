@@ -2972,6 +2972,8 @@ The target gains a +1 bonus to attack rolls, a +1 bonus on saving throws versus 
 @104012 = ~NP: A flail is a hard wooden stick attached to an iron rod, a spiked wooden rod, or a spiked iron ball. Between them is either a hinge or a chain. The weapon was originally used as a tool for threshing grain. PARAMETERS: When equipped: +1 to the class of protection Combat abilities: 50% chance to deal +2D3 points of electrical damage 20% chance to stun the enemy THAC0: +4 Damage: 1D6 +5 Damage type: bludgeoning Weight: 15 Speed factor: 7 Weapon skill: Flail/Morgenstern Type: 1-Hand Cannot Use: Druid Mage Thief~ /*The first example of this bejeweled item was created for ceremonial décor, and was never intended to see use. Experiments showed, however, that the weapon instilled great fear in its targets by releasing energy from the strange ruby used in its construction. The crossbow and the assistant who supplied the gem both disappeared soon after, and the weapon has been replicated many times since.*/
 @104027 = ~NP: Harpy moan~ /*Recommended*/
 @104039 = ~NP: death knell~ /*Dirge*/
+@104040 = ~NP: Time Trap~
+@104041 = ~NP: Time Trap detected and disarmed~
 @104042 = ~~ [BRAZIE]
 @104043 = ~Hail and well-met.~ [ARI_hi]
 @104045 = ~Fear the justice to come!~ [ARI_bat2]

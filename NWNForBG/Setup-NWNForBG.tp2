@@ -4891,6 +4891,10 @@ COPY ~NWNForBG/cre/snare4.cre~ ~override~
   SAY 0x8	@102514
   SAY 0xC	@102514
 
+COPY ~NWNForBG/cre/snare5.cre~ ~override~
+   SAY 0x8	@104040
+   SAY 0xC	@104040
+
 COPY ~NWNForBG/cre/solomon.cre~ ~override~
   SAY 0x8	@103732
   SAY 0xC	@103732
