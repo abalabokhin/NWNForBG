@@ -1,29 +1,10 @@
-Number of hits: 903
+Number of hits: 880
 File: ARIBETH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
-File: BPBOUNTY.bcs, Line: 307, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPBOUNTY.bcs, Line: 333, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPBOUNTY.bcs, Line: 358, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPCTHI2B.bcs, Line: 104, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
-File: BPCTHI2B.bcs, Line: 113, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
-File: BPCTHI2B.bcs, Line: 116, Warning: Spell resource for NPC_SET_BOMB_TRAP not found: SPIN491.SPL
-File: BPCTHI2B.bcs, Line: 124, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 132, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 134, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 137, Warning: Spell resource for NPC_SET_TIME_TRAP not found: SPIN493.SPL
-File: BPCTHI2B.bcs, Line: 145, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
-File: BPCTHI2B.bcs, Line: 154, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
-File: BPCTHI2B.bcs, Line: 157, Warning: Spell resource for NPC_SET_SPIKE_TRAP not found: SPIN489.SPL
-File: BPCTHI2B.bcs, Line: 278, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPCTHI2B.bcs, Line: 304, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPCTHI2B.bcs, Line: 329, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: BPDRU14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: BPDRU14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: BPDRU14G.bcs, Line: 590, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: BPDRU14G.bcs, Line: 918, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
 File: BPDRU14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
-File: BPTHIEF.bcs, Line: 220, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPTHIEF.bcs, Line: 247, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
-File: BPTHIEF.bcs, Line: 273, Warning: Spell resource for NPC_THIEF_ILLUSIONS not found: SPIN503.SPL
 File: CUT101A.bcs, Line: 7, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT101A.bcs, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT101A.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - AR2907
@@ -31,10 +12,6 @@ File: CUT101A.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: GNT2016.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
-File: GNT2016.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_PARALYZATION_DARTS not found: SPWI028.SPL
-File: GNT2017.bcs, Line: 6, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
-File: GNT2017.bcs, Line: 15, Warning: Spell resource for TRAP_POISON_CONFUSION_DARTS not found: SPWI029.SPL
 File: NASCHER.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
 File: NASCHER2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
 File: NW3303.bcs, Line: 333, Warning: Resource not found: S:Object*[VEF:VVC:BAM] - ICFIRSDP

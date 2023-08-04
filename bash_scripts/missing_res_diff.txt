@@ -1,4 +1,4 @@
-Number of hits: 1669
+Number of hits: 1673
 File: AUCTION.STO, Name: Таверна Сиди, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: BALLARD.STO, Name: Баллард, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: CHALJAL.STO, Name: Треснувшая Наковальня, Attribute: Rumors (drinks)=RFRIEN.DLG
@@ -44,4 +44,8 @@ File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resour
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#WOLFI.SPL
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.SPL
 File: SPIN141.SPL, Name: Превращение в крысу, Attribute: Resource=LI#BRBR.ITM
+File: SPIN489.SPL, Name: Set Spike Trap, Attribute: Spell icon=SPCL910C.BAM
+File: SPIN491.SPL, Name: Set Exploding Trap, Attribute: Spell icon=SPCL911C.BAM
+File: SPIN493.SPL, Name: Set Time Trap, Attribute: Spell icon=SPCL912C.BAM
+File: SPIN493.SPL, Name: Set Time Trap, Attribute: Resource=SNARE5.EFF
 File: SPPR955.SPL, Name: Глаз Пепла, Attribute: Resource=REDBLAZE.VEF

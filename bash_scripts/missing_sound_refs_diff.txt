@@ -1,192 +1,54 @@
-Number of hits: 1923
-StringRef: 103794, Sound: BODDTHNX, Text: I appreciate this.
-StringRef: 103795, Sound: BODDREST, Text: Logic dictates we stop to rest sometime.
-StringRef: 103796, Sound: BODDBORE, Text: We aren't going to discover anything new just sitting here.
-StringRef: 103797, Sound: BODDBAT1, Text: My magic will take care of you!
-StringRef: 103798, Sound: BODDBAT2, Text: All evidence points to victory!
-StringRef: 103799, Sound: BODDBAT3, Text: This is going to get messy!
-StringRef: 103800, Sound: BODDATK1, Text: 
-StringRef: 103801, Sound: BODDATK2, Text: 
-StringRef: 103802, Sound: BODDATK3, Text: 
-StringRef: 103806, Sound: BODDSLCT, Text: You require some assistance?
-StringRef: 103807, Sound: BODDSTOP, Text: Hold on a minute.
-StringRef: 103808, Sound: BODDYES, Text: That would be correct.
-StringRef: 103810, Sound: BODDGOOD, Text: A well thought out plan.
-StringRef: 103811, Sound: BODDCAN, Text: It is easily accomplished.
-StringRef: 103812, Sound: BODDINFF, Text: My attack has no noticeable effect.
-StringRef: 103813, Sound: BODDENCM, Text: Obviously you overestimate the weight I can manage.
-StringRef: 103814, Sound: BODDHIDE, Text: Silence seems to be the best option in this case.
-StringRef: 103815, Sound: BODDSPEL, Text: My spell - failed? But I did everything right!
-StringRef: 103879, Sound: DAELHI, Text: Greetings!
-StringRef: 103880, Sound: DAELTHNX, Text: I thank you for this.
-StringRef: 103881, Sound: DAELREST, Text: Perhaps we should rest now.
-StringRef: 103882, Sound: DAELBORE, Text: Do you want me to wait much longer here.
-StringRef: 103883, Sound: DAELBAT1, Text: You leave me no choice!
-StringRef: 103884, Sound: DAELBAT2, Text: Glory to the Emperor!
-StringRef: 103885, Sound: DAELBAT3, Text: For the Empire!
-StringRef: 103886, Sound: DAELATTK, Text: Let's get them!
-StringRef: 103887, Sound: DAELATK1, Text: 
-StringRef: 103888, Sound: DAELATK2, Text: 
-StringRef: 103889, Sound: DAELATK3, Text: 
-StringRef: 103890, Sound: DAELHIT2, Text: 
-StringRef: 103891, Sound: DAELDEAD, Text: 
-StringRef: 103892, Sound: DAELHEAL, Text: I'm afraid, I need some healing.
-StringRef: 103893, Sound: DAELSLCT, Text: Yes? What is it?
-StringRef: 103894, Sound: DAELYES, Text: Sure.
-StringRef: 103895, Sound: DAELCAN, Text: Yes, of course.
-StringRef: 103896, Sound: DAELGOOD, Text: An excellent idea.
-StringRef: 103897, Sound: DAELDONE, Text: I have done as you said.
-StringRef: 103898, Sound: DAELFOLL, Text: Follow me, now.
-StringRef: 103899, Sound: DAELINFF, Text: My attack is... useless?
-StringRef: 103900, Sound: DAELENCM, Text: Am I a pack mule?
-StringRef: 103901, Sound: DAELSPEL, Text: Fool! My spell is wasted!
-StringRef: 104035, Sound: GRIMHI, Text: Welcome, friend.
-StringRef: 104036, Sound: GRIMFOLL, Text: Follow me for a moment.
-StringRef: 104037, Sound: GRIMREST, Text: If we stop to rest I promise you won't die in your sleep... tonight.
-StringRef: 104038, Sound: GRIMBORE, Text: If you plan on doing nothing the Silent Lord might as well claim you now.
-StringRef: 104039, Sound: GRIMBAT1, Text: The Silent Lord take you!
-StringRef: 104040, Sound: GRIMBAT2, Text: Death comes for us all.
-StringRef: 104041, Sound: GRIMBAT3, Text: Feel the chill touch of the grave.
-StringRef: 104042, Sound: GRIMATK1, Text: 
-StringRef: 104043, Sound: GRIMATK2, Text: 
-StringRef: 104044, Sound: GRIMATK3, Text: 
-StringRef: 104045, Sound: GRIMHIT2, Text: 
-StringRef: 104046, Sound: GRIMDEAD, Text: 
-StringRef: 104047, Sound: GRIMDYIN, Text: Heal me soon or the Silent Lord will claim my soul.
-StringRef: 104048, Sound: GRIMSLCT, Text: What is it you want?
-StringRef: 104049, Sound: GRIMCUSS, Text: Death and damnation!
-StringRef: 104050, Sound: GRIMENMY, Text: I see our next victims.
-StringRef: 104051, Sound: GRIMYES, Text: There is no doubt.
-StringRef: 104052, Sound: GRIMCAN, Text: It is as certain as death itself.
-StringRef: 104053, Sound: GRIMGOOD, Text: Well said.
-StringRef: 104054, Sound: GRIMGRUP, Text: Quickly - we must prepare for battle.
-StringRef: 104055, Sound: GRIMINFF, Text: My attack does nothing!
-StringRef: 104056, Sound: GRIMENCM, Text: I am overburdened.
-StringRef: 104057, Sound: GRIMHIDE, Text: Be still as the Silent Lord himself.
-StringRef: 104058, Sound: GRIMSPEL, Text: My spell has failed!
-StringRef: 104123, Sound: MUSTARD , Text: NP: [MUSTARD JELLY 08] 
-StringRef: 104140, Sound: GWERE01, Text: NP: I will bury you all!
-StringRef: 104141, Sound: GWERE03, Text: 
-StringRef: 104142, Sound: GWERE04, Text: 
-StringRef: 104143, Sound: GWERE05, Text: 
-StringRef: 104144, Sound: GWERE06, Text: 
-StringRef: 104185, Sound: LINAHI, Text: Hey there dear, how's it going?
-StringRef: 104186, Sound: LINAYES, Text: By Sehanine, I should say so!
-StringRef: 104187, Sound: LINAREST, Text: On a journey there must always be time to rest.
-StringRef: 104188, Sound: LINACUSS, Text: Takasi! Oh, excuse my elven.
-StringRef: 104189, Sound: LINABAT1, Text: Goddess take you now!
-StringRef: 104190, Sound: LINABAT2, Text: In the name of Sehanine Moonbow!
-StringRef: 104191, Sound: LINABAT3, Text: Victory will be ours!
-StringRef: 104192, Sound: LINAHIT3, Text: 
-StringRef: 104193, Sound: LINADEAD, Text: 
-StringRef: 104194, Sound: LINAHEAL, Text: I can't seem to stop my bleeding.
-StringRef: 104195, Sound: LINALOOK, Text: Now, what would that be?
-StringRef: 104196, Sound: LINACAN, Text: All right dear, I'm getting to it.
-StringRef: 104197, Sound: LINAGOOD, Text: That makes sense to me, dear.
-StringRef: 104198, Sound: LINADONE, Text: I'm all done here.
-StringRef: 104199, Sound: LINAINFF, Text: My weapon just bounces right off.
-StringRef: 104200, Sound: LINAENCM, Text: Either my arms have suddenly lost strength, or I'm carrying too much.
-StringRef: 104277, Sound: T-ABI08, Text: 
-StringRef: 104293, Sound: _PSPID08, Text: 
-StringRef: 104294, Sound: _PSPID09, Text: 
-StringRef: 104391, Sound: SHARFOLL, Text: Follow me for a moment.
-StringRef: 104392, Sound: SHARREST, Text: I need to sit down, just for a bit.
-StringRef: 104393, Sound: SHARBORE, Text: Some excitement would be welcome.
-StringRef: 104394, Sound: SHARBAT1, Text: Well! Look what we have here!
-StringRef: 104395, Sound: SHARBAT2, Text: We shall not be defeated!
-StringRef: 104396, Sound: SHARBAT3, Text: Outta me way!
-StringRef: 104397, Sound: SHARATK1, Text: 
-StringRef: 104398, Sound: SHARATK2, Text: 
-StringRef: 104399, Sound: SHARATK3, Text: 
-StringRef: 104400, Sound: SHARHIT2, Text: 
-StringRef: 104401, Sound: SHARDEAD, Text: 
-StringRef: 104402, Sound: SHARHEAL, Text: I need healing! Quickly!
-StringRef: 104403, Sound: SHARSLCT, Text: Greetings.
-StringRef: 104404, Sound: SHARHI, Text: Hey there!
-StringRef: 104405, Sound: SHARYES, Text: Oh yes.
-StringRef: 104406, Sound: SHARCAN, Text: Fair enough.
-StringRef: 104407, Sound: SHARDONE, Text: Done and done!
-StringRef: 104408, Sound: SHARGOOD, Text: Sounds fine to me.
-StringRef: 104409, Sound: SHARINFF, Text: My attack does nothing!
-StringRef: 104410, Sound: SHARENCM, Text: This is all bloody heavy...
-StringRef: 104411, Sound: SHARLOOK, Text: What's that?
-StringRef: 104412, Sound: SHARHIDE, Text: In the shadows...
-StringRef: 104413, Sound: SHARSPEL, Text: I can't get my spell off!
-StringRef: 104414, Sound: SHARWARN, Text: NP: Look out! The trap is set.
-StringRef: 104428, Sound: GENERIC , Text: NP: [GENERIC MALE INJURY 2]
-StringRef: 104453, Sound: TOMISAY, Text: So-ooo...
-StringRef: 104454, Sound: TOMITHNX, Text: Thanks, mate!
-StringRef: 104455, Sound: TOMIREST, Text: I am so bushed, you have no idea.
-StringRef: 104456, Sound: TOMIBORE, Text: 
-StringRef: 104457, Sound: TOMIBAT1, Text: Woo-hoo!
-StringRef: 104458, Sound: TOMIBAT2, Text: Here comes halfling death!
-StringRef: 104459, Sound: TOMIBAT3, Text: I love this part!
-StringRef: 104460, Sound: TOMIATK1, Text: 
-StringRef: 104461, Sound: TOMIATK2, Text: 
-StringRef: 104462, Sound: TOMIATK3, Text: 
-StringRef: 104463, Sound: TOMIHIT1, Text: 
-StringRef: 104464, Sound: TOMIDEAD, Text: 
-StringRef: 104465, Sound: TOMIHEAL, Text: Hey! Bleeding over here...
-StringRef: 104466, Sound: TOMISLCT, Text: Hullo...
-StringRef: 104467, Sound: TOMIHI, Text: How are ya?
-StringRef: 104468, Sound: TOMIFOLL, Text: Come on! Come on!
-StringRef: 104469, Sound: TOMIYES, Text: Aye!
-StringRef: 104470, Sound: TOMIDONE, Text: I'm finished!
-StringRef: 104471, Sound: TOMICAN, Text: Hokey-dokey!
-StringRef: 104472, Sound: TOMIGOOD, Text: Wish I'd thought of that.
-StringRef: 104473, Sound: TOMIINFF, Text: I ain't doing much, here...
-StringRef: 104474, Sound: TOMIENCM, Text: What am I? A mule?
-StringRef: 104475, Sound: TOMILOOK, Text: Eh? What's this?
-StringRef: 104476, Sound: TOMILHID, Text: Time to slip into the shadows!
-StringRef: 104477, Sound: TOMISPEL, Text: I hate it when my spell fizzles!
-StringRef: 106045, Sound: MAUGR05, Text: Fools! I cannot be so easy slain!
-StringRef: 108149, Sound: NWDOOR52, Text: You have returned. What more can I tell you? What more do you think I know?
-StringRef: 108839, Sound: ARIBE142, Text: NP: Let's see... Hmm... You did the right thing bringing this paper here. Take this to Fentik - he's in charge of exposing the enemy. He will be very interested to look at this paper, no doubt. What else can I do for you?
-StringRef: 109716, Sound: DESTH080, Text: I and my Helmite brethren prefer to remain true in our faith, Fenthick - unlike some. We seek answers from the divine Helm, not a mortal like this <PRO_RACE>.
-StringRef: 111407, Sound: NASHE97, Text: Desther was a friend yesterday and an enemy today? A lifetime for such a change would be drastic to an elf. I suppose a day is unthinkable.
-StringRef: 116354, Sound: GURAK50, Text: Huh? Wizards bring you to bargain with them? Me tells them King Obould is all they needs! They not need you or nobody else!
-StringRef: 116418, Sound: GURAK51, Text: Why you come here? Me important orc, and not want be disturbed! All wizards need is King Obould, me says! They not need yous!
-StringRef: 116419, Sound: GURAK52, Text: You go away! Me not want be distrurbed! Wizards need me, they do, only me! They not need yous or nobody elses!
-StringRef: 117866, Sound: ZAMIT061, Text: NP: Keep your hands to yourself, <MALEFEMALE>...
-StringRef: 117867, Sound: ZAMIT062, Text: Thieves and robbers! How dare you rob me of my things!
-StringRef: 117908, Sound: ZOR050, Text: Why you break into my room! You be bounty hunter! Me end you life here!
-StringRef: 117909, Sound: ZOR051, Text: Wait! We stop fighting now! Me sees you brave warrior. Me wants talk moment before we fights more.
-StringRef: 117910, Sound: ZOR051, Text: You strong opponent! Me impressed! Me say name is Zor! Me tell you story, yeah? You spreads my word, maybe, before you kill me?
-StringRef: 117996, Sound: AARIN267, Text: NP: I did my best to survey Port Llast before we set up base here, my friend.... but what you say cannot be ruled out. There may well be things that have escaped my notice, so an investigation on your part would not be out of place.
-StringRef: 118556, Sound: ARIBE434, Text: You make him sound like a murderer! It was not Fenthick who created the plague, nor Fenthick that betrayed the city! He was merely too trusting and too devoted to duty!
-StringRef: 119126, Sound: KENDR052, Text: Get away from me! Some hero ye are... my Shaldrissa lies dead because of ye!
-StringRef: 120290, Sound: DRACO253, Text: Why have you returned to my cave, tiny creature? You would be wise to answer me, lest you incur the wrath of the mighty Gorgotha!
-StringRef: 120868, Sound: ANDAR50, Text: I, Endar Heartfood of the Black Lion tribe, greet you. As chieftain of this tribe I offer you our hospitality, despite the current tensions between the Uthgardt and the Lords' Alliance.
-StringRef: 120902, Sound: ANDAR51, Text: NP: I, Endar Big Heart of the Black Lion tribe, greet you. Your name is known to us, <CHARNAME>, as the name of the man who stood firm in Rolgan's defense at the trial. With you and your ancestors, may glory be with you henceforth. We are not ones to hoard treasure, all we can give is the appreciation of our tribe. But if there is anything I can do for you, just say the word and it will be done.
-StringRef: 120903, Sound: ANDAR52, Text: You, <CHARNAME>, are not welcome among this tribe. You promised to defend Rolgan, yet he is dead. You have broken your vow, you have dishonored yourself and your ancestors!
-StringRef: 120905, Sound: ANDAR53, Text: You are a good <PRO_MANWOMAN> to defend Rolgan, <CHARNAME>. I, Endar Heartfood of the Black Lion Tribe, greet you with honor.
-StringRef: 121718, Sound: AARIN571, Text: Once you have spoken with him you may return and speak to me.
-StringRef: 121809, Sound: ARCHEL05, Text: Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?
-StringRef: 121831, Sound: ARCHEL05, Text: Back again, <CHARNAME>? Is there something I can do for you?
-StringRef: 121998, Sound: ASHIR602, Text: I see by looking at you that you are not from my world of Azallah, but I thank you for your aid nonetheless.
-StringRef: 121999, Sound: ASHIR603, Text: Had you not intervened I fear I would have succumbed to the scaled raiders. My name is Asheera of the Shining Order, from the city of Sahaladar.
-StringRef: 122001, Sound: ASHIR604, Text: My garments are those of my people, though perhaps they look as strange to you as your own garb does to me.
-StringRef: 122002, Sound: ASHIR605, Text: As for the name Aribeth, I have no knowledge of her. Was she a companion of yours?
-StringRef: 122005, Sound: ASHIR606, Text: Morag? That name is known to me - the queen of the scaled raiders! Her face has haunted my dreams, her voice hissing whispered promises of power to tempt me to turn against my people.
-StringRef: 122006, Sound: ASHIR607, Text: But I am of the Shining Order, sworn in service to Sahaladar, greatest of the floating cities on Azallah. I have sworn to destroy Morag and save my people.
-StringRef: 122011, Sound: ASHIR623, Text: I am not Aribeth - I am Asheera. And yet, there are many worlds and planes of existence drawn together in this strange place.
-StringRef: 122012, Sound: ASHIR608, Text: All who dwell among the islands of Azallah know of Sahaladar, the foam kissed city above the sea. The spires of my home glimmer and sparkle like coral beneath the azure waters.
-StringRef: 122013, Sound: ASHIR615, Text: After much searching the magicians of Sahaladar discovered a portal in my world - a gate leading to this pseudo-plane where many universes converge.
-StringRef: 122014, Sound: ASHIR617, Text: The Old Ones seek to return to the world of their birth, but to do this they need slaves and resources gathered from other, weaker worlds.
-StringRef: 122015, Sound: ASHIR627, Text: Asheera, guardian of Sahaladar, is no traitor! Throughout the isles of Azallah my word is my bond, and none question my honor!
-StringRef: 122020, Sound: ASHIR624, Text: It may be that the one you call Aribeth is my parallel in your world - or I am her parallel, if you prefer. Perhaps that is why we have been brought together.
-StringRef: 122022, Sound: ASHIR609, Text: In the depths beneath our floating island is the wondrous capital of the Kilm, the water breathers with whom we peacefully share our world.
-StringRef: 122023, Sound: ASHIR616, Text: Six were chosen to come through the portal, though we knew we could not return. My companions have long since fallen.
-StringRef: 122024, Sound: ASHIR618, Text: Morag set the scaled raiders loose upon my homeworld. Azallah had never faced so terrible a foe; their savage cruelty was as alien as their appearance.
-StringRef: 122030, Sound: ASHIR625, Text: You say this Aribeth betrayed her faith, she was lost to Morag's evil. Perhaps we have met so that I may help you avenge her fall.
-StringRef: 122032, Sound: ASHIR616, Text: I alone am left of the champions of my people, but like my fallen companions I too have failed.
-StringRef: 122034, Sound: ASHIR619, Text: The scaled raiders stripped my defenseless world of its magical treasures and many of my people were sacrificed in bizarre rituals to feed the power of their queen.
-StringRef: 122037, Sound: ASHIR626, Text: I am a true knight of the Shining Order of Sahaladar. Perhaps I have been brought here from Azallah to redeem the memory of Aribeth, that her soul may be cleansed of its sins by my actions.
-StringRef: 122039, Sound: ASHIR620, Text: Vengeance is but one reason I am here. My world was peaceful - and vulnerable. That is why we were among the first to suffer.
-StringRef: 122041, Sound: ASHIR621, Text: But as Morag's strength grows, more of the Old Ones awaken. Soon a conquering army of her minions will pour forth to reclaim their homeworld.
-StringRef: 122042, Sound: ASHIR622, Text: Then Morag will enslave world after world and all will know the suffering of Azallah. I came here to prevent this, but I have failed.
-StringRef: 122043, Sound: ASHIR630, Text: May the ocean foam froth red with the blood of the scaled raiders!
-StringRef: 122181, Sound: HAERD112, Text: You must use the Words to enter the Source Stone itself and confront her before her magic becomes unstoppable!
-StringRef: 122276, Sound: MAUGR057, Text: You have come too late, the ritual is over, the awakening of the Old Ones has begun!
-StringRef: 122277, Sound: MAUGR058, Text: The Creator Race will be reborn - and you shall be the first to taste the power my Queen has given unto me!
-StringRef: 122291, Sound: NASHE125, Text: Enough, Aarin. <CHARNAME>, if you want to speak to Haedraline you are free to do so. But I will not release her from the dungeon while an enemy is within our city gates.
+Number of hits: 1773
+StringRef: 104511, Sound: T-ABI08, Text: 
+StringRef: 104529, Sound: _PSPID08, Text: 
+StringRef: 104530, Sound: _PSPID09, Text: 
+StringRef: 104694, Sound: TOMITHNX, Text: Спасибо, братушка!
+StringRef: 106203, Sound: MAUGR05, Text: Идиоты! Меня нельзя так просто убить!
+StringRef: 108299, Sound: NWDOOR52, Text: Вы вернулись. Что еще я могу сказать вам? Что еще, вы думаете, я знаю?
+StringRef: 108996, Sound: ARIBE142, Text: Посмотрим... Хмм... Вы правильно сделали, принеся сюда эту бумагу. Отнесите это Фентику - он ответственный за разоблачение врага. Ему будет очень интересно взглянуть на эту бумагу, не сомневайтесь. Что еще я могу для вас сделать?
+StringRef: 109869, Sound: DESTH080, Text: Я и мои хельмиты предпочитаем оставаться преданными нашей вере, Фентик - не то, что некоторые. Мы ищем ответа у божественного Хельма, а не у смертных, как этот <CLASS>.
+StringRef: 111566, Sound: NASHE97, Text: Вчера Дестер был нам другом, а сегодня стал врагом? Эльф и за всю жизнь не смог бы так перемениться. Думаю, один день - это полнейшая чушь.
+StringRef: 116520, Sound: GURAK50, Text: Че? Волшебники приводить тебя торговать с ними? Моя говорить им, король Обольд это - все что им нужен! Им не нужна твоя и никакая другая!
+StringRef: 116585, Sound: GURAK51, Text: Зачем твоя приходить? Моя важный орк, не хотеть, чтобы ты моя беспокоить! Моя говорить, волшебники нужно только король Обольд, моя говорить! Им не нужна твоя!
+StringRef: 116586, Sound: GURAK52, Text: Ты уходить! Не надо мешать моя! Волшебники нужна моя, только-только моя! Им не нужна твоя, и никакая другая тоже!
+StringRef: 118022, Sound: ZAMIT061, Text: Держи свои руки при себе, <MALEFEMALE>...
+StringRef: 118023, Sound: ZAMIT062, Text: Воры и грабители! Как вы смеете отнимать мои вещи!
+StringRef: 118064, Sound: ZOR050, Text: Почему ты вломить в моя комната?! Ты есть охотник за голова! Я  убить тебя на место!
+StringRef: 118065, Sound: ZOR051, Text: Стой! Давай больше не драться! Я видеть, ты храбрый воин. Моя хочет говорить немного, потом снова драться.
+StringRef: 118066, Sound: ZOR051, Text: Твоя сильный враг! Моя впечатлен! Я назвай имя Зор! Моя рассказать тебе история, ага? Твоя разделить мои слова перед тем как убить я, хорошо?
+StringRef: 118705, Sound: ARIBE434, Text: Вы делаете из него убийцу! Это не Фентик придумал эту чуму, и не Фентик предал наш город! Он просто был слишком доверчивым и слишком верным своему долгу!
+StringRef: 120414, Sound: DRACO253, Text: Зачем вы вернулись в мою пещеру, малютка? Вы поступите разумно, если ответите мне, не то вам придется узнать, какова ярость могучей Горготы!
+StringRef: 120995, Sound: ANDAR50, Text: Я, Эндар Большое Сердце из племени Черного Льва, приветствую тебя. Как вождь этого племени я предлагаю тебе наше гостеприимство, несмотря на некие трения в отношениях между Утгардтами и Союзом Лордов.
+StringRef: 121029, Sound: ANDAR51, Text: Я, Эндар Большое Сердце из племени Черного Льва, приветствую тебя. Твое имя известно нам, <CHARNAME>, как имя человека, который твердо стоял на защите Ролгана на суде. С тобой и с твоими предками да пребудет отныне слава. Мы не те, кто копит сокровища, все, что мы может дать - это признательность нашего племени. Но если я могу что-нибудь сделать для тебя, просто скажи, и это будет сделано.
+StringRef: 121030, Sound: ANDAR52, Text: Ты, <CHARNAME>, больше не желанный гость в нашем племени. Ты обещал защитить Ролгана, а он мертв. Данное тобой слово нарушено, отныне лишь позор пребудет с тобой и с твоими предками!
+StringRef: 121032, Sound: ANDAR53, Text: Ты хороший человек, ты будешь защищать Ролгана, <CHARNAME>. Я, Эндар Большое Сердце из племени Черного Льва приветствую тебя.
+StringRef: 121843, Sound: AARIN571, Text: Когда поговорите с ним, возвращайтесь и поговорите со мной.
+StringRef: 121934, Sound: ARCHEL05, Text:  Приветствую, я Мастер Форд, главный археолог Невервинтера. Лорд Нашер упоминал, что кое-кто может прийти, чтобы осмотреть Камень-Источник. <CHARNAME>, не так ли?
+StringRef: 121956, Sound: ARCHEL05, Text:  Снова здесь, <CHARNAME>? Могу ли я чем-нибудь помочь тебе?
+StringRef: 122123, Sound: ASHIR602, Text: По твоему виду я понимаю, что ты не из мира Азалла, но я все равно благодарю тебя за помощь.
+StringRef: 122124, Sound: ASHIR603, Text: Если бы не твое вмешательство, боюсь, эти чешуйчатые захватчики уже убили бы меня. Меня зовут Ашира из Сияющего ордена. Я из города Сахаладар.
+StringRef: 122126, Sound: ASHIR604, Text: Моя одежда обычна для моего народа, хотя, наверное, она кажется тебе такой же странной, как и мне твоя.
+StringRef: 122127, Sound: ASHIR605, Text: Что же касается имени Арибет, оно мне незнакомо. Она была твоей спутницей?
+StringRef: 122130, Sound: ASHIR606, Text: Мораг? Мне знакомо это имя. Это королева чешуйчатых захватчиков! Ее лицо преследует меня во сне, ее голос нашептывает обещание огромной силы, соблазняя меня отвернуться от своего народа.
+StringRef: 122131, Sound: ASHIR607, Text: Но я член Сияющего ордена и служу Сахаладару, величайшему из плавучих городов Азалла. Я поклялась уничтожить Мораг и спасти свой народ.
+StringRef: 122137, Sound: ASHIR623, Text: Я не Арибет, я Ашира. Но в этом необычном месте пересекается множество миров и планов бытия.
+StringRef: 122138, Sound: ASHIR608, Text: Все жители островов Азалла знают о Сахаладаре, городе над морем, обласканном волнами. Шпили моего родного города сверкают подобно кораллам в лазурных водах.
+StringRef: 122139, Sound: ASHIR615, Text: После долгих поисков волшебникам Сахаладара удалось обнаружить в моем мире портал - ворота, ведущие в этот псевдоплан, в котором пересекаются многие вселенные.
+StringRef: 122140, Sound: ASHIR617, Text: Древние ищут способ вернуться в их былой мир, но для этого им требуются рабы и ресурсы из других, более слабых миров.
+StringRef: 122141, Sound: ASHIR627, Text: Ашира, страж Сахаладара, - не предательница! На всех островах Азалла верят моему слову, и никто не сомневается в моей чести!
+StringRef: 122146, Sound: ASHIR624, Text: Возможно, та, которую ты называешь Арибет, является моей параллелью в твоем мире, или я являюсь ее параллелью, если тебе так проще. Может быть, поэтому нам с тобой и довелось встретиться.
+StringRef: 122148, Sound: ASHIR609, Text: В глубинах под нашим плавучим островом находится дивная столица Килмов, водных жителей, с которыми мы мирно соседствуем в нашем мире.
+StringRef: 122149, Sound: ASHIR616, Text: Были избраны шестеро для того, чтобы пройти через портал, хотя мы знали, что никогда не вернемся. Мои спутники давно уже пали.
+StringRef: 122150, Sound: ASHIR618, Text: Мораг наслала на мой мир чешуйчатых захватчиков. Азалле еще никогда не приходилось бороться с таким сильным врагом. Их первобытная жестокость поражала, как, впрочем, и их внешность.
+StringRef: 122156, Sound: ASHIR625, Text: Ты говоришь, что эта Арибет предала свою веру и сдалась злобной силе Мораг. Возможно, мы с тобой встретились именно затем, чтобы я помогла тебе отомстить за ее падение.
+StringRef: 122158, Sound: ASHIR616, Text: Кроме меня не осталось никого из защитников моего народа, но я, как и мои павшие товарищи, не исполнила назначенного.
+StringRef: 122160, Sound: ASHIR619, Text: Чешуйчатые захватчики ограбили мой беззащитный мир и лишили его многих магических сокровищ, принеся мой народ в жертву во время странных ритуалов, чтобы увеличить силу их королевы.
+StringRef: 122163, Sound: ASHIR626, Text: Я верный рыцарь Сияющего Ордена Сахаладара. Возможно, я перенеслась сюда из Азалла, чтобы очистить имя Арибет, искупить ее грехи своими поступками.
+StringRef: 122165, Sound: ASHIR620, Text: Месть - всего лишь одна из причин, почему я здесь. Мой мир был миролюбив и уязвим. Поэтому мы и пострадали одними из первых.
+StringRef: 122167, Sound: ASHIR621, Text: Но чем больше растет сила Мораг, тем больше Древних пробуждается. Скоро армия из ее приспешников ворвется в родной мир Древних, чтобы вновь поработить его.
+StringRef: 122168, Sound: ASHIR622, Text: Затем Мораг будет порабощать мир за миром, и все на собственном примере узнают, как страдала Азалла. Я прибыла сюда, чтобы помешать этому, но мне это не удалось.
+StringRef: 122169, Sound: ASHIR630, Text: Да закипит океан алой пеной от крови чешуйчатых захватчиков!
+StringRef: 122306, Sound: HAERD112, Text: Тебе нужно использовать Слова, чтобы попасть непосредственно в Камень-Источник и сразиться с Мораг, пока ее магия не стала слишком могущественной!
+StringRef: 122399, Sound: MAUGR057, Text: Слишком поздно. Ритуал закончен, пробуждение Древних началось!
+StringRef: 122400, Sound: MAUGR058, Text: Раса Созидателей возродится, и на тебе я впервые испробую силу, которой наделила меня моя королева!
+StringRef: 122414, Sound: NASHE125, Text: Довольно, Аарин. <CHARNAME>, если желаешь поговорить с Хэдралин, то пожалуйста. Но я не отпущу ее из подземелья, пока у ворот города стоит враг.
