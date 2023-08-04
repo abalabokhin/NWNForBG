@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1673
+Number of hits: 1672
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -1213,7 +1213,6 @@ File: SKELWA01.CRE, Name: Skeleton Warrior, Attribute: Dialogue=SKELWA01.DLG
 File: SMITHNW1.STO, Name: Кузница Лускана, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: SMOUND01.CRE, Name: Shambling Mound, Attribute: Override script=SMOUND.BCS
 File: SMOUNDSU.CRE, Name: Shambling Mound, Attribute: Override script=SMOUND.BCS
-File: SNARE5.CRE, Name: Моя атака не принесла видимого результата., Attribute: Override script=SNARE5.BCS
 File: SPAURAFD.VVC, Attribute: Animation=SPAURAFD.BAM
 File: spbear1.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
 File: spbear2.CRE, Name: Spirit Bear, Attribute: Override script=SPIRDTH.BCS
