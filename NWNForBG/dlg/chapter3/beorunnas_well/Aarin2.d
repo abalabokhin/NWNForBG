@@ -231,8 +231,8 @@ END
 IF ~~ THEN BEGIN 33 // from: 32.1
   SAY @52
   IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 38
-  IF ~  GlobalLT("AarinFriend","GLOBAL",5)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN GOTO 39
-  IF ~  GlobalLT("AarinFriend","GLOBAL",5)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN GOTO 40
+  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN GOTO 39
+  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN GOTO 40
 END
 
 IF ~~ THEN BEGIN 34 // from: 30.2
