@@ -177,6 +177,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         ~wererat~
         ~wight_barrow~
         ~worg~
+        ~zombie_blue~
         ~zombie_yellow~
     BEGIN
         ACTION_BASH_FOR ~%MOD_FOLDER%/missing_anim_ee/%animation%~ ~.+$~ BEGIN
