@@ -1,5 +1,4 @@
 @0 = ~NWN For BG~
-
 @1121 = ~  ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
 @1122 = ~  ==> Animation %inifile%.ini file not installed.~
 @1141 = ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
@@ -44,10 +43,10 @@ THAC0:  +3 бонус
 @86810 = ~Кайтлин~
 @86887 = ~[MUSTARD JELLY 08] ~ [MUSTR08]
 @86891 = ~[GENERIC MALE INJURY 2]~ [MANLC04]
-@88261 = ~Olive Slime~
+@88261 = ~Оливковая слизь~
 @88560 = ~Санкционированный волшебник~
 @88561 = ~Клерик~
-@88562 = ~I need backup!~
+@88562 = ~Мне нужно помощь!~
 @88631 = ~~ [TANAR07]
 @88714 = ~Прочь от меня, грязное животное!~
 @88736 = ~Меня окутало магическое облако!~

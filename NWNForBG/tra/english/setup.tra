@@ -4,40 +4,80 @@
 @1141 = ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
 
 @74135 = ~Peasant Woman~
-@74188 = ~NP: Babau~ /*Toad*/
-@74524 = ~NP: Telekinesis~ /*Giant*/
-@74536 = ~NP: Aura of paralysis~ /*Wand of Paralyzation*/
-@74538 = ~NP: Symbol Slow down~ /*Glyph of Warding*/
-@74540 = ~NP: Melissa: Dominion over Hell's minions~ /*Unpossess Familiar*/
-@86241 = ~NP: Ring of Sorcery: &quot;Excellent Memory&quot; Long ago, a great wizard from Amn was rumored to have overcome the limitations Mystra placed on the magical arts. The legends said that he could memorize an infinite number of spells. In the end, it turned out that he owed these abilities to several magic rings that he made for himself. His claimed &quot;superior memory&quot; turned out to be a hoax, though these rings are still among the most sought after artifacts in the realms. PARAMETERS: Features when equipped: - Allows you to memorize twice the number of spells of a first-level wizard Weight: 0 Can only be used by: Mage~ /*A legendary mercenary of Riativin, Hastsezini urged the city's five competing wizards to pool their valuables in a single storehouse where he could stand guard over them all. Such was the respect and fear he commanded that all agreed and not a single theft was ever attempted on his watch. Hastsezini showed no interest in the riches he guarded, perhaps because each of the five wizards was content to pay him a full wage.*/
-@86242 = ~NP: Great Sword +3: &quot;Edge of the World&quot; This is a legendary weapon of impressive size, especially among the far-northern barbarian tribes. The best warriors of the tribes fought with this blade against countless enemies, and the blood spilled by it would be enough to fill a small sea. History is silent on how the blade was created, and each new owner seems to associate the origin of the sword with the myth they believe in. The grandest of these tales is the story of a great leader who sailed to the cliffs supposedly the edge of the world. There he reached the void, and his will formed a blade from nothing. Whatever it was, in the right hands, this sword is a fearsome force. PARAMETERS: THAC0: +3 bonus Damage: 1D10 + 3 Damage type: slashing Weight: 9 Haste factor: 7 Weapon skill: Two-handed sword Type: 2-hand Cannot use: Druid Cleric Mage Thief~ /*The deaf master, Vondin Clatch, was a ruthless warrior who learned to use his infirmity to his advantage. The glowing, vibrating morningstar he used would create a magical warping of its immediate area to create a sonic burst that could stun enemies it hit. The piercing sound could also cause damage to those around him; a problem that was not fixed until the masters apprentice inherited the weapon. Being unable to use the weapon, he paid a wizard to focus the sonics to only damage those who were hit.*/
-@86252 = ~NP: Astral Phase Spider~ /*Astral Pocket*/
+@74188 = ~Babau~
+@74524 = ~Telekinesis~
+@74536 = ~Paralyzation Aura~
+@74538 = ~Symbol, Slow~
+@74540 = ~Melissan: Command the Minions of the Abyss~
+@86241 = ~Ring of Wizardry: Evermemory
+Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical rings that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
+
+STATISTICS:
+
+Equipped abilities:
+- Can memorize double the amount of 1st-level wizard spells
+
+Weight: 0
+Only Usable by:
+ Mage~
+@86242 = ~Two-handed Sword +3: "The World's Edge"
+This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
+
+THAC0: +3
+Damage: 1d10+3
+Damage type: slashing
+Weight: 9
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+@86252 = ~Astral Phase Spider~
 @86409 = ~Farmer~
-@86463 = ~NP: You won't get anything from me!~ /*Then you gets nothing.*/
-@86810 = ~NP: Caitlin~ /*Gnome*/
-@86887 = ~NP: [MUSTARD JELLY 08] ~ [MUSTARD JELLY 08] /*STORE001*/
-@86891 = ~NP: [GENERIC MALE INJURY 2]~ [GENERIC MALE INJURY 2] /*ENCOUNTER017*/
-@88261 = ~NP: Olive Slime~ /*OnOpenStore*/
-@88560 = ~NP: Sanctioned Wizard~ /*Red Wizard Enclave*/
+@86463 = ~You will receive nothing from me!~
+@86810 = ~Kaitlin~
+@86887 = ~[MUSTARD JELLY 08] ~ [MUSTR08]
+@86891 = ~[GENERIC MALE INJURY 2]~ [MANLC04]
+@88261 = ~Olive Slime~
+@88560 = ~Sanctioned Wizard~
 @88561 = ~Cleric~
-@88562 = ~NP: I need backup!~ /*< &Back*/
+@88562 = ~I need backup!~
 @88631 = ~~ [TANAR07]
-@88714 = ~NP: Get away from me, you dirty animal!~ /*I will kill ye, horrid beast!*/
-@88736 = ~NP: A magical cloud enveloped me!~ /*Me want magic weapon!*/
-@88737 = ~NP: Help! I... was poisoned.~ /*Poisoned. I have been poisoned.*/
-@88738 = ~NP: Hmmm....Something's not right...~ /*Hmm. Found something.*/
-@88739 = ~NP: Transformation into a bat~ /*Tenser's Transformation (11)*/
-@88740 = ~NP: Now stay calm...~ /*Now let's all look around us.*/
-@88741 = ~NP: For help! They are trying to kill me!~ /*Did he try to kill you?*/
-@88742 = ~NP: I won't last that long!~ /*I'm not agreeing to this!*/
+@88714 = ~Get away from me, foul beast!~
+@88736 = ~A magic cloud enveloped me!~
+@88737 = ~Help! I... have been poisoned.~
+@88738 = ~Hmmm... Something's not right...~
+@88739 = ~Turning into a bat~
+@88740 = ~Now stay calm...~
+@88741 = ~Help! They are trying to kill me!~
+@88742 = ~I won't last any longer!~
 @88743 = ~Someone! Heal me!~
-@88744 = ~NP: Save! I'm dying!~ /*Eeek! I'm dying!*/
-@88745 = ~NP: I will cover you~ /*Me coulds help you.*/
-@88746 = ~NP: Where are you!~ /*Am too!*/
-@88750 = ~NP: Healer Sehanin~ /*Healer, Bard*/
-@88751 = ~NP: HEALER SEKHANIN: The Sehanine Church is shrouded in mystery, and little is known of its mysterious hierarchy. Priests of Sehanine are the seers and healers of elven society. They serve as spiritual protectors to elves and half-elves who seek to undertake journeys in search of enlightenment in order to rise above their current existence. Sehanin priests pray when the moon is visible in the sky. Sehanine devotees celebrate numerous holy days, each tied to the position of a different celestial body, especially the phases of the moon and eclipses. Healer Sehanin specializes exclusively in healing others and is resistant to the negative effects of poisons and diseases. They usually spend little time fighting and training, so they cannot boast of their strength and agility. BENEFITS: - Innate &quot;Healing Touch&quot; ability at level 1 - Innate ability &quot;Slow Poison&quot; at levels 1,3 - Innate ability &quot;Cure Poison and Disease&quot; at levels 5,9,12 - Innate ability &quot;Cure Wounds&quot; at levels 5 ,9,12 - Innate ability &quot;Full Heal&quot; at levels 15,18,25 - Immunity to poisons and diseases - Gains +2 on saving throws against Death at levels 12, 15, and 19 WEAKNESSES: - Must be good - Gains -1 to Maximum Strength and Agility - Minimum Wisdom - 17 - Must be an elf or half-elf~ /*With the Wailing's cure and subsequent removal of Neverwinter's quarantine, the wizardess Eltoora has journeyed to Port Llast to provide her services to those searching for the cult responsible. She also comes with ulterior motives, however, as she seeks a collection of ancient tomes from the lost civilization of Imaskar. The five books are said to act as recipes, providing guidance to those undertaking magical experiments. Should any of the tomes be found, she will not only reward whoever returns them but also make the tomes publicly available to all arcanists who wish to experiment with them in her library.
-Through scrying attempts, she has managed to narrow down the locations of the five tomes of Imaskar. The Tome of Fire and the Tome of Death are both said to be lost in Charwood, while the Tome of Life apparently rests in the collection of Elminster in far-off Shadowdale. The Tome of Ice is housed within a tower south of Port Llast and the last, the Tome of Resonance, lies somewhere along the treacherous road to Luskan.*/
-@88752 = ~NP: Healing Touch~ /*Walking Bone Mass*/
+@88744 = ~Save me! I'm dying!~
+@88745 = ~I will cover you~
+@88746 = ~Here are you!~
+@88750 = ~Healer Sehanine~
+@88751 = ~HEALER SEHANINE:
+The Church of Sehanine is shrouded in mystery, and little is known of its mysterious hierarchy. Sehanine priests are the seers and healers of elven society. They serve as spiritual protectors to elves and half elves who seek to undertake journeys in search of enlightenment to rise above their current existence. Sehanine priests pray when the moon is visible in the sky. Sehanine devotees celebrate numerous church festivals, each tied to the position of different celestial bodies, especially moon phases and eclipses. A Sehanine healer specializes exclusively in healing fellow humans, and is resistant to the negative effects of poisons and diseases. They usually spend little time fighting and training, so they cannot boast of their strength and agility.
+
+Advantages:
+- The innate ability "Healing Touch" at level 1
+- Innate ability to "Slow Poison" at levels 1, 3
+NP: check what in game - Innate ability to ???Cure Poison and Disease??? at levels 5, 9, 12
+NP: check what in game - Innate ability ???"Heal Wounds"??? at levels 5, 9, 12
+- Innate ability "Heal" at levels 15, 18, 25
+- Immune to poisons and diseases
+- Bonus +2 to save vs. Death at levels 12, 15, and 19
+
+Disadvantages:
+- Alignment restricted to any good
+- Penalty -1 to maximum Strength and Dexterity
+- Minimum Wisdom is 17
+- Must be an elf or half elf~
+@88752 = ~Healing Touch~
 @88753 = ~NP: heal wounds~ /*Lecturn*/
 @88754 = ~NP: cured~ /*Disabled*/
 @88832 = ~Nothing happens.~
