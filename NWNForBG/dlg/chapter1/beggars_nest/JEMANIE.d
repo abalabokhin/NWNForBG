@@ -84,7 +84,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 7.2
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("MyRing","LOCALS",1)AddexperienceParty(30000)TakePartyItem("Nwring1")EraseJournalEntry(@107623)EraseJournalEntry(@107624)~ SOLVED_JOURNAL @107625 EXIT
+  IF ~~ THEN DO ~SetGlobal("MyRing","LOCALS",1)AddexperienceParty(30000)EraseJournalEntry(@107623)EraseJournalEntry(@107624)~ SOLVED_JOURNAL @107625 EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.1
