@@ -810,38 +810,179 @@ Abilities:
 Not Usable By:
 Half-orc
 Barbarian~
-@102351 = ~NP: Blades of Good and Evil~ /*Horn of Goodness/Evil*/
-@102352 = ~NP: The blade of this sword contains the essences of Good and Evil. These two forces in their eternal struggle cause the blade to glow with an unusual color of darkness and light. Neutral creatures cannot fight with it. Only Good or Evil can wield a blade in battle. PARAMETERS: Combat abilities: If the enemy does not make a successful saving throw against spells on a hit, all spells will be affected by Wild Magic for the next 30 seconds Damage: 1D12 + 4 THAC0: +4 Damage type: slashing Weight: 10 Haste factor: 7 Skill type : two-handed sword Type: 2-handed Requires: 14 strength Not used by: Druids Priests Mages Thieves Monks Beastmasters Neutral~ /*The badger is a small, fast and furry animal that makes a great companion. Although it is of small size, it can be very ferocious. When the master reaches level 5 it is capable of sending itself into a rage, giving it higher strength and constitution for a limited duration.
-Skills: Listen, Spot
-Feats: Toughness
-Special: 
- Master Level 
- 5: Rage 1x day
- 10: Rage 2x day
- 15: Rage 3x day
- 20: Rage 5x day*/
+@102351 = ~Blade of Good and Evil~
+@102352 = ~The blade of this sword contains the essences of Good and Evil. These two forces, in their eternal struggle, make the blade glow with the unusual colors of darkness and light. Neutral creatures cannot wield it, only the Good or Evil ones can.
+
+STATISTICS:
+
+Combat Abilities:
+- Unless an opponent makes a successful saving throw against spells when hit, all his spells are subject to Wild Magic for the next 30 seconds
+
+Damage: 1d12 + 4
+THAC0: +4
+Damage Type: Slashing
+Weight: 10
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires: 14 Strength
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief
+ Monk
+ Beast Lord
+ Neutral characters~
 @102353 = ~Amulet of the Red Tiger Tribe +1~
-@102354 = ~NP: This simple amulet features the red tiger symbol on the front and the Utgardt tribal rune on the back. STATS: Features: +10 to magic resistance +1 to strength Immunity to fear and confusion Weight: 1 Used by: Non-evil characters - Warriors (including multiclasses) Paladins Pathfinders (including multiclasses) Priests~ /*This simple amulet bears the symbol of a red tiger on its face and an Uthgardt tribal rune on the back.*/
-@102355 = ~Amulet of the Red Tiger Tribe +1~
-@102356 = ~NP: This simple amulet features the red tiger symbol on the front and the Utgardt tribal rune on the back. STATS: Features: +15 to magic resistance +2 to strength Immunity to fear and confusion Weight: 1 Used by: Non-evil characters - Warriors (including multiclasses) Paladins Pathfinders (including multiclasses) Priests~ /*This simple amulet bears the symbol of a red tiger on its face and an Uthgardt tribal rune on the back.*/
-@102357 = ~Amulet of the Uthgardt +4~
-@102358 = ~NP: Intertwined images of a lion, tiger, eagle and deer adorn the front of this amulet. On the reverse side are the unique tribal runes of the four largest tribes of Utgardt: the Black Lion, the Red Tiger, the Elk and the Golden Eagle. PARAMETERS: Features: +20 to magic resistance +3 to strength Immunity to fear and confusion Weight: 1~ /*The intertwined images of a lion, tiger, eagle and elk are emblazoned on the front of this amulet. On the reverse side are the unique tribal runes of the four largest Uthgardt tribes: the Black Lion, the Red Tiger, the Elk and the Golden Eagle.*/
+@102354 = ~This simple amulet bears the symbol of a red tiger on its face and an Uthgardt tribal rune on the back.
+
+STATISTICS:
+
+Abilities:
+- Magic Resistance: +10
+- Strength: +1
+- Immune to fear and confusion
+
+Weight: 1
+
+Usable By:
+ Non-evil character
+ Fighter (including multiclass)
+ Paladin
+ Ranger (including multiclass)
+ Cleric~
+@102355 = ~Amulet of the Red Tiger Tribe +2~
+@102356 = ~This simple amulet bears the symbol of a red tiger on its face and an Uthgardt tribal rune on the back.
+
+STATISTICS:
+
+Abilities:
+- Magic Resistance: +15
+- Strength: +2
+- Immune to fear and confusion
+
+Weight: 1
+
+Usable By:
+ Non-evil character
+ Fighter (including multiclass)
+ Paladin
+ Ranger (including multiclass)
+ Cleric~
+@102357 = ~Amulet of the Uthgardt +3~
+@102358 = ~The intertwined images of a lion, tiger, eagle and elk are emblazoned on the front of this amulet. On the reverse side are the unique tribal runes of the four largest Uthgardt tribes: the Black Lion, the Red Tiger, the Elk and the Golden Eagle.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +20
+- Strength: +3
+- Immune to fear and confusion
+
+Weight: 1
+
+Usable By:
+ Non-evil character
+ Fighter (including multiclass)
+ Paladin
+ Ranger (including multiclass)
+ Cleric~
 @102359 = ~Amulet of the Long Death +1~
-@102360 = ~NP: This amulet is made of black obsidian. An image of an elongated skull is engraved on both sides. PARAMETERS: Features: +10 to magic resistance +1 to constitution +1 to attack and damage against undead Immunity to poison and diseases Weight: 1~ /*This amulet is forged from black obsidian. The image of an elongated skull is etched onto either side.*/
-@102361 = ~Amulet of the Long Death +1~
-@102362 = ~NP: This amulet is made of black obsidian. An image of an elongated skull is engraved on both sides. PARAMETERS: Features: +15 to magic resistance +2 to constitution +2 to attack and damage against undead Immunity to poison and diseases Weight: 1 Not used by: Good characters~ /*This amulet is forged from black obsidian. The image of an elongated skull is etched onto either side.*/
+@102360 = ~This amulet is forged from black obsidian. The image of an elongated skull is etched onto either side.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +10
+- Constitution: +1
+- Attack and damage against undead: +1
+- Immune to poison and disease
+
+Weight: 1
+
+Not Usable By:
+ Good character~
+@102361 = ~Amulet of the Long Death +2~
+@102362 = ~This amulet is forged from black obsidian. The image of an elongated skull is etched onto either side.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +15
+- Constitution: +2
+- Attack and damage against undead: +2
+- Immune to poison and disease
+
+Weight: 1
+
+Not Usable By:
+ Good character~
 @102363 = ~Amulet of the Long Death +3~
-@102364 = ~NP: This amulet is made of black obsidian. An image of an elongated skull is engraved on both sides. PARAMETERS: Features: +20 to magic resistance +3 to constitution +3 to attack and damage against undead Immunity to poison and diseases Weight: 1 Not used by: Good characters~ /*This amulet is forged from black obsidian. The image of an elongated skull is etched onto either side.*/
+@102364 = ~This amulet is forged from black obsidian. The image of an elongated skull is etched onto either side.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +20
+- Constitution: +3
+- Attack and damage against undead: +3
+- Immune to poison and disease
+
+Weight: 1
+
+Not Usable By:
+ Good character~
 @102365 = ~Pendant of the Elf +1~
-@102366 = ~NP: Annoyed that his non-elven companions couldn't keep up with him in their underground journeys, the elven mage Liadon made this pendant to give the adventurer twilight vision and increase his/her dexterity. STATS: Traits: Immunities to charm, confusion, tame, hold, and sleep Infravision +1 to dexterity +1 to saving throws~ /*Frustrated with non-elven adventurers who couldn't keep up with him on his underground adventures, the elven mage Liadon created a pendant that imbued the adventurer with low-light vision and increased his/her dexterity. When he finally retired, Liadon asked that the amulet be kept by elves and only given to trusted adventures who proved themselves to be true friends of the elven people.*/
-@102367 = ~Pendant of the Elf +1~
-@102368 = ~NP: Annoyed that his non-elven companions couldn't keep up with him in their underground journeys, the elven mage Liadon made this pendant to give the adventurer twilight vision and increase his/her dexterity. STATS: Traits: Immunities to charm, confusion, submission, hold, and sleep Infravision +2 to agility +2 to saving throws Not used by: Wizard killers~ /*Frustrated with non-elven adventurers who couldn't keep up with him on his underground adventures, the elven mage Liadon created a pendant that imbued the adventurer with low-light vision and increased his/her dexterity. When he finally retired, Liadon asked that the amulet be kept by elves and only given to trusted adventures who proved themselves to be true friends of the elven people.*/
+@102366 = ~Frustrated with non-elven adventurers who couldn't keep up with him on his underground adventures, the elven mage Liadon created a pendant that imbued the adventurer with low-light vision and increased his/her dexterity. When he finally retired, Liadon asked that the amulet be kept by elves and only given to trusted adventures who proved themselves to be true friends of the elven people.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to charm, confusion, domination, hold and sleep
+- Infravision
+- Saving Throws: +1
+- Dexterity: +1
+
+Weight: 1
+
+Not Usable By:
+ Wizard Slayer~
+@102367 = ~Pendant of the Elf +2~
+@102368 = ~Frustrated with non-elven adventurers who couldn't keep up with him on his underground adventures, the elven mage Liadon created a pendant that imbued the adventurer with low-light vision and increased his/her dexterity. When he finally retired, Liadon asked that the amulet be kept by elves and only given to trusted adventures who proved themselves to be true friends of the elven people.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to charm, confusion, domination, hold and sleep
+- Infravision
+- Saving Throws: +2
+- Dexterity: +2
+
+Weight: 1
+
+Not Usable By:
+ Wizard Slayer~
 @102369 = ~Pendant of the Elf +3~
-@102370 = ~NP: Annoyed that his non-elven companions couldn't keep up with him in their underground journeys, the elven mage Liadon made this pendant to give the adventurer twilight vision and increase his/her dexterity. STATS: Traits: Immunities to charm, confusion, submission, hold, and sleep Infravision +3 to agility +3 to saving throws Not used by: Wizard killers~ /*Frustrated with non-elven adventurers who couldn't keep up with him on his underground adventures, the elven mage Liadon created a pendant that imbued the adventurer with low-light vision and increased his/her dexterity. When he finally retired, Liadon asked that the amulet be kept by elves and only given to trusted adventures who proved themselves to be true friends of the elven people.*/
-@102371 = ~NP: Crafted with the blessing of Neuryk, priest of Port Llast, this sleek silver amulet has the power to save the souls of those recently bitten by a lycanthrope. It has no other useful properties.~ /*Formed with the blessings of Neurik, priest of Port Llast, this smooth-surfaced charm has the power to save the souls of those recently afflicted with lycanthropy. Beyond that one purpose, it is a very weak charm indeed.*/
+@102370 = ~Frustrated with non-elven adventurers who couldn't keep up with him on his underground adventures, the elven mage Liadon created a pendant that imbued the adventurer with low-light vision and increased his/her dexterity. When he finally retired, Liadon asked that the amulet be kept by elves and only given to trusted adventures who proved themselves to be true friends of the elven people.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to charm, confusion, domination, hold and sleep
+- Infravision
+- Saving Throws: +3
+- Dexterity: +3
+
+Weight: 1
+
+Not Usable By:
+ Wizard Slayer~
+@102371 = ~Formed with the blessings of Neurik, priest of Port Llast, this smooth-surfaced charm has the power to save the souls of those recently afflicted with lycanthropy. It has no other useful properties.~
 @102372 = ~Ander~
 @102373 = ~Androd's Key~
-@102374 = ~NP: This key should unlock all chests in Androd's estate.~ /*This key should unlock all of Androd's chests.*/
+@102374 = ~This key should unlock all chests in Androd Estate.~
 @102375 = ~Androd~
 @102376 = ~Anonymous Letter~
 @102377 = ~This note bears no markings as to who may have written it.
@@ -850,33 +991,22 @@ Special:
 "But this will not happen if a cure for the Wailing Death is discovered. You must do everything in your power to prevent Aribeth and her agents from ending the plague."
 
 This note should be shown to someone in authority.~
-@102378 = ~NP: Instead of a signature on this letter, there is a symbol in the form of a stylized eye of a reptile. It seems familiar to you, like you've seen it before, perhaps in a different context. You study the text carefully... &quot;Read this letter carefully. Let its words into your heart, for I am your master, but there are those who want to interfere with my dominion, the people of the Eye. Lady Aribeth has accepted several adventurers into her militia, and sent them look for creatures for a healing potion.They have already succeeded once, but this should not be repeated.You must attack them from every shadow, chase from every turn.These creatures must be released, and then taken to where no one can reach them .&quot;~ /*In place of a signature, this letter bears the mark of a stylized, reptilian eye. It strikes you as somehow familiar, as if you've seen it before, perhaps in a different context. You examine the text closer...
-"Read this letter well. Commit its words to heart, for I am your Master and there are those who would seek to thwart us, the People of the Eye.
+@102378 = ~In place of a signature, this letter bears the mark of a stylized, reptilian eye. It strikes you as somehow familiar, as if you've seen it before, perhaps in a different context. You examine the text closer...
 
-"Lady Aribeth has promoted some adventurers into the militia and sent them out to seek the creatures of the cure. They have already been successful once and they must not be so again. You must stalk them from every shadow, pursue them at every turn. Those creatures are to be set loose and hidden wherever they are out of reach.
+"Read this letter well. Commit its words to heart, for I am your Master and there are those who would seek to thwart us, the People of the Eye.Lady Aribeth has promoted some adventurers into the militia and sent them out to seek the creatures of the cure. They have already been successful once and they must not be so again. You must stalk them from every shadow, pursue them at every turn. Those creatures are to be set loose and hidden wherever they are out of reach."~
+@102379 = ~In place of a signature, this letter bears the mark of a stylized, reptilian eye. Other than this marking, there is nothing to indicate who the author may be:
 
-"Do not fail me in this. Remember, I hold the power to grant you life in this place of death. Your lives are mine to deny.
-
-"Long live the People of the Eye..."
-
-This note should be shown to someone in authority.*/
-@102379 = ~In place of a signature, this letter bears the mark of a stylized, reptilian eye. Other than this marking, there is nothing to indicate who the author may be: 
-"Our agent within Neverwinter has informed us that several of the Waterdhavian Creatures have been delivered to Aribeth and are now stored in the safety of Castle Never. If all of the creatures are recovered a cure for the Wailing Death will be discovered, and our efforts will be for naught.
-
-"It will not be possible for our agent to orchestrate an attack upon
-Castle Never, as was done with the Academy. Those who serve Lady Aribeth must be stopped before they deliver the creatures to the safety of the castle, at any cost.
-
-"Should you succeed in this your rewards will surpass your grandest imaginings. Should you fail, you will feel pain and suffering such as no mortal was meant to bear. "Long live the People of the Eye." 
+"Our agent within Neverwinter has informed us that several of the Waterdhavian Creatures have been delivered to Aribeth and are now stored in the safety of Castle Never. If all of the creatures are recovered a cure for the Wailing Death will be discovered, and our efforts will be for naught. It will not be possible for our agent to orchestrate an attack upon Castle Never, as was done with the Academy. Those who serve Lady Aribeth must be stopped before they deliver the creatures to the safety of the castle, at any cost. Should you succeed in this your rewards will surpass your grandest imaginings. Should you fail, you will feel pain and suffering such as no mortal was meant to bear. «Long live the People of the Eye.»"
 
 This note should be shown to someone in authority.~
-@102380 = ~NP: Antidote for the Spirit of the Forest~ /*Spirit Poison Antidote*/
+@102380 = ~Antidote for the Spirit of the Wood~
 @102381 = ~The only antidote for the poison that has weakened and crazed the Spirit of the Wood. Found in a pile of rubble in the Spirit's realm.~
-@102382 = ~NP: Alchemist's Apparatus~ /*Alchemist's Fire*/
+@102382 = ~Alchemist's Apparatus~
 @102383 = ~Slaad's Tongue~
 @102384 = ~This is the tongue from a slaad.~
 @102385 = ~Gargoyle Skull~
 @102386 = ~There are many unusual items in the game. This is one of them.~
-@102387 = ~NP: This is the skull of a gargoyle and can be used as an ingredient to create magic items.~ /*A collection of iron rings a skilled crafter could combine with other basic crafting components to create different types of armor.*/
+@102387 = ~This gargoyle skull can be used as an ingredient to create magical items.~
 @102388 = ~NP: Wand of Anti-Magic~ /*No Animation*/
 @102389 = ~NP: The wand is endowed with the ability to dispel magical effects. It removes all magical effects from all creatures within its range, including the effects of spells, potions, and certain magical items such as wands. However, it does not affect enchanted items or anti-magic enchantments such as Conversion Spell and Absorption Spell. The wand can also dispel Blindness and Dementia spells. When the charges run out, the wand becomes useless. Abilities: Dispel Magic (15 charges) Range: Caster's line of sight Cannot Use: Wizard Killers~ /*The greater robe of eyes provides the wearer with improved vision and the ability to detect many things that are hidden. Invisibility and ethereal effects have no power to cloud the wearer's vision.
 When not fully armored, the more powerful clerics of Helm often wear such robes to allow them to maintain their vigilance, even when unable to maintain their armament.*/
