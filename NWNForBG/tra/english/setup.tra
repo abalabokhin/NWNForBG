@@ -709,22 +709,82 @@ Not Usable By:
 @102333 = ~You will regret that decision.~
 @102334 = ~Alhelor~
 @102335 = ~Alhelor's Store~
-@102336 = ~Mummy Dust~
-@102337 = ~NP: The priests of Horus-Re in distant Mulhorand were the first to create this life-saving elixir. A foul-smelling concoction made from mummy tissue wrappers and natural remains. The resulting mixture can neutralize the effects of the most severe diseases.~ /*No one knows when or where these arrows were made. It is rumored that each tip is crafted from a vampire's tooth, however. That seems unlikely due to the number of quivers in which these arrows can be found.*/
-@102338 = ~NP: belladonna flower~ /*Herb, Belladonna*/
-@102339 = ~NP: Belladonna is a poisonous plant: all parts of it are poisonous, including the fruits. Elchelor claims that lycanthropes are more susceptible than others to this poison. He recommends lubricating your weapons with the juice of this plant before fighting werewolves. STATS: +4 damage and THAC0 against werewolves, effect lasts 3 turns.~ /*Belladonna is a rare plant that seems to have an adverse effect on were-creatures. The plant is used like a potion and will temporarily protect the user from shapechanger attacks.*/
-@102340 = ~NP: Sword of Nazger~ /*Sword of Never*/
-@102341 = ~NP: This magical sword is forged from an alloy of silver and an unknown metal, which gives it a reddish tint. The blade is quite a normal length for this type of sword, though a little light, which makes the blade seem rather elegant. The hilt is wrapped with a blue and green cord, and two crescents are fixed instead of a pommel. The blade was forged about a hundred and fifty years ago by a ranger and mage named Frasfer Browne, who guarded the Rainbow Forest along with his comrades. After a pack of werewolves started up in the forest, he made this sword with the help of one druid, whose name history has not preserved. The sword's last known owner was a Sembian soldier named Nazger. With it, he tracked down and destroyed the wererats that were killing people in High Moon, a city located northwest of the Rainbow Forest. The wererats were gone, but Nazger hadn't returned from his last outing either. Some beggar in the sewer found his sword and sold it for a pittance to some visiting merchant. The sword did not show its magical properties in any way, so the merchant sold it as an ordinary weapon. Sword of Nazger - does not differ in special strength and in battle it strikes like a +1 weapon, but against any werewolf it hits like +3. It also alerts its wearer to the presence of lycanthropes within 60 feet of it, though it does not specifically point to them. If you look at the blade of the sword under the full moon, you can see bizarre intertwining lines on it, skillfully etched by a skilled craftsman. It seems that these are ancient runes, which give the sword additional strength against shapeshifters. STATS: Damage: 1D6 + 1, +2 against werewolves THAC0: +1 bonus, +2 against werewolves Traits: Forged from cold iron Damage type: slashing Weight: 6 Speed factor: 1 Skill type: longsword Type: 1-hand Required : 6 Strength Not used by: Druids Priests Mages Beastmasters~ /*Sorcerers are arcane spellcasters who manipulate magic energy with imagination and talent rather than studious discipline. They have no books, no mentors, no theories - just raw power that they direct at will. Sorcerers know fewer spells than wizards do and acquire them more slowly, but they can cast individual spells more often and have no need to prepare their incantations ahead of time. Also unlike wizards, sorcerers cannot specialize in a school of magic. Since sorcerers gain their powers without undergoing the years of rigorous study that wizards go through, they have more time to learn fighting skills and are proficient with simple weapons.
-WARNING: To cast a spell, a sorcerer must have a Charisma score of 10 + the spell's level. For example, to cast a 9th-level spell, a sorcerer must have a Charisma of 19.
+@102336 = ~Mummy's Tea~
+@102337 = ~Priests of Horus-Re in far off Mulhorand were the first to create this life-saving potion. A foul-smelling brew, it is made by boiling used mummy wrappings along with naturally desiccated animal remains. The resulting tea can then be consumed to neutralize the effects of disease and certain afflictions.~
+@102338 = ~Belladonna Flower~
+@102339 = ~Belladonna is a poisonous plant: all parts of it are poisonous, including the fruit. Elhelor claims that lycanthropes are more susceptible to this poison than others. He recommends smearing their weapons with the juice of this plant before fighting werewolves.
 
-- Hit Die: d4.
-- Proficiencies: All simple weapons. Sorcerers are not proficient with armor or shields.
-- Skill Points (*4 at 1st level): 2 + Intelligence Modifier.
-- Spellcasting: Arcane (Charisma-based, no spell preparation, spell failure from armor is a factor).*/
-@102342 = ~NP: silver arrows~ /*Arcane Archers*/
-@102343 = ~NP: The tips of these arrows are silver-plated, which makes them an excellent weapon in the fight against lycanthropes, the undead, and other monsters that conventional weapons do not work on. PARAMETERS: Damage: 1D6 Damage type: shooting (piercing) Features: act like a silver weapon: - additional damage to undead + 4D8 - additional damage to werewolves +3 Weight: 0 Weapon: Bow~ /*Hmm. Well I guess I do need the help. I could pay you 500 gold pieces if you bring it to me. Here is a key for the barracks. You can talk to my colleagues inside for more information.*/
-@102344 = ~NP: Werewolf Horror~ /*Battle Horror*/
-@102345 = ~NP: Reishidoch de Velle spent many Moons working with the artisans of the Wandering Village to create this enchanted hunter's spear. The elven ranger was in dire need of a weapon capable of wiping out the swarms of werewolves terrorizing the Tethyr Forest. The spear was devoid of external extravagant decorations, but it always flew straight and right on target. When all the werewolves were destroyed, the spear was sold to one collector. PARAMETERS: Damage: 1D6 +1, +1D6 +1 slashing damage THAC0: +2 Additional Thac0 and damage against werewolves +3 Features: Forged from cold iron Damage type: piercing and slashing Weight: 5 Speed: 2 Skill type: Spears Type: 2-manual Requires Strength 5 Not used by: Priests Mages Thieves Monk Beastmaster~ /*The portal within the Netherese ruin has been reached, but not before J'Nah's mistress was able to activate it and vanish. Drogan arrived shortly afterwards and brought with him news of the cowled woman's identity: she is a sorceress named Heurodis, her past shrouded in secrecy until only recently, and should she acquire the power she seeks in whatever place the portal led to she will become all but unstoppable. Heurodis must be followed and prevented from achieving her goal. Drogan will attempt to attune the portal to the same place that the sorceress went to, but some means of activating it must still be found here in the ruin.*/
+STATISTICS:
+
++4 to damage and THAC0 against werewolves for 3 turns.~
+@102340 = ~Sword of Nazger~
+@102341 = ~This magical item is a long sword made of what appears to be dull, unpolished (and unpolishable) reddish tinted silver.  The blade is regular length for such a weapon, though slightly slimmer than what is normal for a long sword.  The hilt is a seperate piece and of regular steel.  The cross piece looks like two crescent moons each overlapping the other, similar to () overcrossing each other at the ends and the blade coming through the middle gap.  The hilt is also wrapped in a cross-hatched pattern of blue and green wire threads.
+
+The blade was constructed some one-hundred-fifty years ago by a human ranger turned mage from the Archwood area, named Frasfer the Brown.  He and a few companions were keeping guard in the Archwood, when an influx of werewolves caused him to attempt the creation of a magical means to making their elimination easier.  One of his companions was a druid, and the mixing of druidic magic and wizard magic created a blade reknowned for a later owner.
+
+That later owner was Nazger, a soldier of Sembia who found the sword fifty years ago.  He used it to find wererats that were murdering people in Highmoon, a city just northwest of the Archwood.  So Nazger exposed the wererats and killed most of them off.  However, while fighting in the sewers of the city he disappeared.  Nothing was ever again found of Nazger, except his sword.  It was later recognized in the market, but reported too late.  It was sold to a caravan heading to Ordulin.
+
+As Nazgar had no immediate family the city guard did little investigation.  All that was turned up was that a street beggar found the blade in the sewers and thought to sell it for food in the market.  The begger claimed to know nothing else.
+
+The powers of the blade may have become revealed to the caravan and thus kept, or may have remained unknown and sold as merely a silver sword.
+
+The Sword of Nazger is an unintelligent magic blade that is normally +1 to hit/damage, but gives a +3 bonus to hit/damage versus werecreatures of all types.  It also gives the wielder a tingling sensation similar to when one's hand falls asleep when werecreatures are within 60' of the user, though it won't indicate who it is that is a werecreature, nor get more powerful if the werebeast gets closer.   The blade will also appear to have a set of glyphs along the blade if viewed under a full moon.
+
+STATISTICS:
+
+Damage:  1D6 + 1, +3 vs. lycanthropes
+THAC0:  +1 bonus, +3 vs. lycanthropes
+Damage type:  slashing
+Weight: 6
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 6 Strength
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+@102342 = ~Silver Arrows~
+@102343 = ~The tips of these arrows are silver plated, making them excellent weapons against lycanthropes, undead, and other monsters that normal weapons do not work on.
+
+STATISTICS:
+
+Damage: 1d6
+Damage Type: Piercing
+
+Abilities:
+- Act as a silver weapon:
+- +4D8 extra damage to undead
+- +3 extra damage to werewolves +3
+
+Weight: 0
+Weapon: Bow~
+@102344 = ~Werewolf Horror~
+@102345 = ~Reishidoh de Velle spent many Moons creating, along with the artisans of the Wandering Settlement, this enchanted hunter's spear. The Elven Ranger was in great need of a weapon capable of destroying the throngs of werewolves terrorizing the Tethyr Forest. The spear was devoid of external extravagant decorations, but it always flew straight and true to its target. When all the werewolves were destroyed, the spear was sold to a collector.
+
+STATISTICS:
+
+Abilities:
+- Forged from cold iron
+
+Damage: 1d6+1, +1d6+1 (Slashing)
+THAC0: +2
+Additional THAC0 and damage vs werewolves: +3
+Damage Type: Piercing and Slashing
+Weight: 5
+Speed: 2
+Proficiency Type: Spear
+Type: Two-handed
+Requires: Strength 5
+
+Not Usable By:
+ Cleric
+ Mage
+ Thief
+ Monk
+ Beastmaster~
 @102346 = ~NP: Cleansing Concentrate~ /*Concentration*/
 @102347 = ~NP: This elven concentrate cleanses the user of any diseases that have spread in their body. OPTIONS: Cures Diseases~ /*This elf is one of the many commoners fleeing the advancing Luskan horde.*/
 @102348 = ~NP: Black Wolf~ /*Black Crate*/
