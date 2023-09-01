@@ -252,7 +252,7 @@ The first is in the possession of a local wizard by the name of Wanev. He lives 
 The famed adventurer, Elaith Craulnober appeared to have at last become homesick for the land of Evermeet he fled so long ago. He and his daughter stayed at the inn in Port Llast while he searched for three gems that would help them make the journey home. You recovered the gems for him, and the thankful pair have now sailed away.~
 @95957 = ~Port Llast: The Elaith's Gems
 
-The famed adventurer, Elaith Craulnober appeared to have at last become homesick for the land of Evermeet he fled so long ago. He and his daughter stayed at the inn in Port Llast while he searched for three gems that would help them make the journey home. NP: We found the stones but refused to give them to Elaith and then he attacked us. A sad story, Elaith is dead, and we have become the owners of stones that are completely useless to us.~
+The famed adventurer, Elaith Craulnober appeared to have at last become homesick for the land of Evermeet he fled so long ago. He and his daughter stayed at the inn in Port Llast while he searched for three gems that would help them make the journey home. We found the gems but refused to give them to Elaith and then he attacked us. A sad story, Elaith is dead, and we have become the owners of gems that are completely useless to us.~
 @96006 = ~Port Llast: The Werewolf Hunter
 
 Neurik, a priest of Tyr who presides of Port Llast's temple, warns of a terrible tragedy that has befallen some of the town's young men. Sir Karathis Ironheart, a travelling werewolf hunter, enlisted the help of four boys to hunt a foul lycanthrope known only as the Black Wolf. It was a trap, however, and Sir Karathis was himself the Black Wolf. His claws raked the flesh of Bran, Urth, and Geth, infecting them with his dread disease, leaving only the youngest boy, Ander, to escape. Neurik believes that, if found soon enough, the three young men may still be curable by a charm he has concocted. Ander currently spends his days at the Alliance Arms Inn, trying to spread news amongst adventurers of the tragedy that befell his friends. Neurik recommends speaking with the boy to gain an understanding of where those friends may now be hiding.~
@@ -538,16 +538,50 @@ His only concern about doing such a thing is that the magic that controlled the 
 @102295 = ~The magic cloud has dissipated~
 @102296 = ~Aawill~
 @102297 = ~Adamantine~
-@102298 = ~NP: It is a piece of adamantium ore that can be used as an ingredient to create magic items. Weight: 12~ /*These woolen clothpads are components that can be used in the creation of various types of armor.*/
-@102299 = ~NP: Let's go~ /*Elaith*/
-@102300 = ~NP: Asp's Tooth~ /*Vampire Bite*/
-@102301 = ~NP: This blade is loaded with one of the most dangerous poisons. When hit, the poison slowly penetrates the wound, with the victim having a 15% chance of having a heart attack and dying. PARAMETERS: Damage: 1D4+3 THAC0: +5 Traits: 50% chance to poison the target 15% chance that the victim will die of a heart attack Strength Not used: Priest~ /*This fiendish goblin creature lives amongst the lava pits of Cania, preying on lost souls that pass by. For its relative size and strength, it is a cunning opponent that relies on traps and numbers to take down opponents much stronger than itself.*/
-@102302 = ~NP: Volume of Longevity~ /*Ring of Guidance*/
-@102303 = ~NP: Tome of Longevity Reading this tome permanently gains increased lifespan like dragons, as well as a nice bonus in the form of additional health points. PARAMETERS: Permanent +10 bonus to maximum health points. The volume disappears after being read.~ /*"Besides, if the spell is reversed I will once again be simple minded. I won't even remember what I have lost. At least, that is my hope. In any case, this is a sacrifice that has to be made."*/
-@102304 = ~NP: Secret symbols are printed on the cover of this book, there is no doubt that it has magical properties of one kind or another. Until you try to read or identify it, its exact origin will remain a mystery to you.~ /*This bracelet appears to have no magical properties, though its simple yet elegant design should bring a fair price at market.*/
-@102305 = ~NP: Demon Battle Belt~ /*Fiendish Azer*/
-@102306 = ~NP: Demon Battle Belt: Hipkhas was a young wizard who wanted to learn Demon sorcery. However, before he was allowed to begin his training, the School commissioned him to make this belt, which provides several simple but important protections against demonic damage. How this belt ended up in the Dwarves' treasury is unknown, and upon discovering it there, thoughts of evil demons inside the cave began to come to mind. STATS: Protection from evil +2 THAC0 against demons Weight: 1~ /*The priest has told you that Sabal - the leader of the drow who first attacked you upon entering the town - has already completed his challenge and claimed the reward of the broken mirror shard.
-However, you are still afflicted with the strange disease, and the priest is the only one who has the antidote. It seems as though you're still going to have to complete his challenge.*/
+@102298 = ~It is a piece of adamantite ore, that can be used as an ingredient to create magical items.
+
+Weight: 12~
+@102299 = ~Elaith~
+@102300 = ~Elapidae's Tooth~
+@102301 = ~This blade is filled with one of the most dangerous poisons. When hit, the poison slowly penetrates the wound, giving the victim a 15% chance of having a heart attack and dying.
+
+STATISTICS:
+
+Combat abilities:
+- 50% chance to poison the target
+- 15% chance that the victim will die of a heart attack.
+
+THAC0: +5
+Damage: 1D4+3
+Damage Type: Piercing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: dagger
+Type: One-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~
+@102302 = ~Tome of Longevity~
+@102303 = ~Tome of Longevity
+
+Those who read this tome permanently gain an increased lifespan similar to dragons, as well as a nice bonus of extra Hit Points.
+
+STATISTICS:
+Hit Points: Raised by 10 points permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot~
+@102304 = ~Mysterious symbols are inscribed on the cover of this book, there is no doubt that it has magical properties of one kind or another. Until you try to read or identify it, its exact origin will remain a mystery to you.~
+@102305 = ~Demon Battle Belt~
+@102306 = ~Demon Battle Belt
+
+Hiphas was a young wizard who wanted to study demon magic. However, before he was allowed to begin his studies, he was commissioned by the school to make this belt, which provides several simple but important defenses against demonic damage. How this belt got into the Dwarves' treasury is unknown to anyone, and upon discovering it there, thoughts of evil demons inside the cave began to cross their minds.
+
+STATISTICS:
+
+Protection From Evil
+THAC0: +2 vs demons
+
+Weight: 1~
 @102307 = ~NP: Cloak of the Assassin~ /*Nathyrra's Cloak*/
 @102308 = ~NP: The powers that this powerfully enchanted cloak possesses confirm the fact that defense can take many forms - including disappearing from view, and aiding in backstabs. STATS: Improved Haste, 1x/day Improved Invisibility, 3x/day Defense Class: +2 improvement Saving Throws: +2 improvement Weight: 3~ /*The longbow is a refinement of the shortbow, designed to increase the range and power of an arrow strike. The stave portion of a longbow is nearly as tall as the archer, and can reach over six feet.*/
 @102309 = ~NP: Mind Guard Helm~ /*Mind Fog*/
