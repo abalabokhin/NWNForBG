@@ -785,11 +785,31 @@ Not Usable By:
  Thief
  Monk
  Beastmaster~
-@102346 = ~NP: Cleansing Concentrate~ /*Concentration*/
-@102347 = ~NP: This elven concentrate cleanses the user of any diseases that have spread in their body. OPTIONS: Cures Diseases~ /*This elf is one of the many commoners fleeing the advancing Luskan horde.*/
-@102348 = ~NP: Black Wolf~ /*Black Crate*/
+@102346 = ~Cleansing Concentrate~
+@102347 = ~This elven concentrate cleanses the drinker of any diseases spread in his body.
+
+STATISTICS:
+
+Cures Diseases~.
+@102348 = ~Black Wolf~
 @102349 = ~Aarin's Amulet~
-@102350 = ~NP: Spymaster Aarin Gend gave this amulet to a friend while looking for cultists from Neverwinter. Hanging from a heavy chain of dull metal are three polished sapphires that seem to burn from within. Their base of gold is marked with the mark of distant Chult. PARAMETERS: Properties when worn: +1 to defense +1 to all saving throws +2 to dexterity +30 to Hide in the shadows and detect illusions Special abilities: &quot;Detect illusions&quot; 3 times per day &quot;Mass invisibility&quot; 1 time per day Do not use : Half-orc Barbarians~ /*The Spymaster Aarin Gend is said to have given this amulet to his lover during their search for the cultists of Neverwinter. Wrought from gold, its heavy base bears markings from far-off Chult. It is set with a single, polished moonstone that seems to glow as if from within.*/
+@102350 = ~The Spymaster Aarin Gend gave this amulet to his friend during their search for the cultists of Neverwinter. Suspended from a massive chain of dull metal are three polished sapphires that that seems to glow as if from within. Wrought from gold, its heavy base bears markings from far-off Chult.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Dexterity: +1
+- Hide in Shadows and Detect Illusions: +30
+
+Abilities:
+- Detect Invisibility 3 times per day
+- Mass Invisibility 1 time per day
+
+Not Usable By:
+Half-orc
+Barbarian~
 @102351 = ~NP: Blades of Good and Evil~ /*Horn of Goodness/Evil*/
 @102352 = ~NP: The blade of this sword contains the essences of Good and Evil. These two forces in their eternal struggle cause the blade to glow with an unusual color of darkness and light. Neutral creatures cannot fight with it. Only Good or Evil can wield a blade in battle. PARAMETERS: Combat abilities: If the enemy does not make a successful saving throw against spells on a hit, all spells will be affected by Wild Magic for the next 30 seconds Damage: 1D12 + 4 THAC0: +4 Damage type: slashing Weight: 10 Haste factor: 7 Skill type : two-handed sword Type: 2-handed Requires: 14 strength Not used by: Druids Priests Mages Thieves Monks Beastmasters Neutral~ /*The badger is a small, fast and furry animal that makes a great companion. Although it is of small size, it can be very ferocious. When the master reaches level 5 it is capable of sending itself into a rage, giving it higher strength and constitution for a limited duration.
 Skills: Listen, Spot
