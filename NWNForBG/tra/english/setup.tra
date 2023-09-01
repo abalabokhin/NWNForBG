@@ -556,7 +556,7 @@ Damage: 1D4+3
 Damage Type: Piercing
 Weight: 3
 Speed Factor: 2
-Proficiency Type: dagger
+Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
 Not Usable By:
@@ -605,37 +605,111 @@ Equipped abilities:
 - True Sight 3 times per day
 
 Weight: 4~
-@102311 = ~NP: Mist Mirror~ /*Black Kumade*/
-@102312 = ~NP: A graceful mirror set in gold exudes an aura of power.~ /*I sure could use some sleep. Really tired.*/
-@102313 = ~NP: This small mirror is capable of summoning Mist Horror three times per day and Mirror Image once per day. Not Used by: Wizard Assassins~ /*With the power to return people from the very brink of death, these priestly potions do not come cheaply.*/
-@102314 = ~NP: Elven Bow: Goblin's Curse~ /*"An elven war hero."*/
-@102315 = ~NP: This bow was made by elven craftsmen to protect their forests from attacks by goblins and hobgoblins, although it has no special abilities against these races. STATS: THAC0: +2 Damage: +2 Speed factor: 3 Skill type: shortbow Class: 2-handed Weight: 2 Unusable: None other than elves Evil or chaotic characters~ /*Torches are little more than wooden rods topped by flax or cloth and soaked in tallow or some other flammable liquid. Very useful except when one wishes to be stealthy.*/
-@102316 = ~NP: Mirror Bow +3~ /*Mirror Shield*/
-@102317 = ~NP: This magnificent bow was created for the commander of the archers, King Khadir. The bow, with the help of the magic contained in it, can create mirror copies of its owner, which greatly increases its chances of surviving in battle. STATS: Ability when equipped: Can create four mirror doppelgangers three times per day Damage: +3 THAC0: +3 Weight: 7 Haste factor: 4 Skill type: longbow Type: 2-handed Requires: 18 strength Do not use: Druids Priests Mages Thieves Bards Monks Kensai~ /*This dagger was a gift from Targus, God of War, to Serreg of Neverwinter. It originally allowed its wielder to polymorph into many forms, but the magic gradually decayed and now it is the blade itself that polymorphs, from time to time, over the eons. It currently takes the shape of a greatsword and will likely remain as such for many years to come.*/
-@102318 = ~NP: Short Bow &quot;Spoloch&quot;~ /*Tomi's Shortbow*/
-@102319 = ~NP: This bow radiates warmth despite the fact that your hands feel like they are squeezing a piece of ice. The bow has a lot of useful additional abilities. Bows like these are common in the frosty regions of the Ten Cities, but this one is exceptionally dangerous. STATS: Damage bonus: +3 THAC0 bonus: +3 Traits: 55% chance to deal an additional 2D3 fire damage 1 additional attack Constitution: +1 +30% to fire and cold resistance Weight: 3 Speed factor: 7 Skill type: Short Bow Type: 2-handed Requires: 3 Strength Cannot be used by: Priests Druids Mages Monks Kensai Cavaliers~ /*Earth DomainClerics of the Earth domain command power over creatures of the Elemental Planes and are granted spells that protect against melee and energy damage.
-Domain Special Ability and Bonus Spells
-Turn Elementals: Able to turn elementals as if they were undead. 
-The cleric gains access to the following spells at the specified spell level: Stoneskin (4), Energy Buffer (5).*/
-@102320 = ~NP: Elven Goods of Elaith~ /*Boots of Elvenkind*/
-@102321 = ~NP: Dawnguard Helm~ /*Dawn Start Hour*/
-@102322 = ~NP: This helmet was given to you by the famous elven smuggler Elaith Krolnober as a token of gratitude for helping him return to his homeland. The helmet appears to have been crafted by elven craftsmen and endows its wearer with elven resistances. STATS: - Charm Immunity - Sleep Immunity - Magic Resistance +10 - Max Health +10 Not used by: Mages Thieves Bards Monks~ /*Type of Feat: SpellPrerequisite: 21st level, Spell Penetration and Greater Spell Penetration.
-Specifics: The character gains a +6 bonus on caster level checks to beat a creature's spell resistance.
-Use: Automatic.*/
+@102311 = ~Mirror of Mist~
+@102312 = ~The elegant, gold-rimmed mirror exudes an aura of power.~
+@102313 = ~This small mirror is capable of summoning Mist Horror three times per day and Mirror Image once per day.
+
+Not Usable By:
+ Wizard Slayer~
+@102314 = ~Elven Bow: Goblin's Curse~
+@102315 = ~This bow was made by elven craftsmen to defend their forests from attacks by goblins and hobgoblins, though it has no special abilities against those races.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2
+Speed Factor: 3
+Proficiency Type: Short Bow
+Type: Two-handed
+Weight: 2
+
+Not Usable By:
+  Anyone but elves
+  Evil or chaotic characters~
+@102316 = ~Bow of Mirroring +3~
+@102317 = ~This mystical bow was created for the bowman captain of king Hadir. The bow can create mirror images of the wielder making it harder for the enemies to hit their target.
+
+STATISTICS:
+
+Equipping Abilities:
+- Can create four mirror images three times per day
+
+Damage: +3
+THAC0:  +3
+Weight: 7
+Speed Factor: 4
+Proficiency Type: Longbow
+Type: Two-handed
+Requires: 18 Strength
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief
+ Bard
+ Monk
+ Kensai
+ Cavalier~
+@102318 = ~Short Bow "Spoloch"~
+@102319 = ~This bow radiates heat even though your hands feel like they are clutching a piece of ice. The bow has a lot of useful additional abilities.
+Similar bows can often be found in the frosty regions of the Ten Cities, but this particular one is exceptionally dangerous.
+
+STATISTICS:
+
+Damage: +3
+THAC0: +3
+
+Abilities:
+  55% chance to deal an additional 2D3 fire damage
+  1 additional attack
+  Constitution: +1
+  +30% resistance to fire and cold.
+
+Weight: 3
+Speed Factor: 7
+Proficiency Type: Short Bow
+Type: Two-handed
+Requires: 3 Strength
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Kensai
+ Cavalier~
+@102320 = ~Elven Goods of Elaith~
+@102321 = ~Dawnguard Helmet~
+@102322 = ~This helmet was given to you by the famous elven smuggler Elaith Craulnober as a token of gratitude for helping him return to his homeland. Apparently made by elven craftsmen, the helmet grants its wearer the inherent resistances of elves.
+
+STATISTICS:
+
+Abilities:
+- Immunity to enchantment
+- Immunity to sleep
+- Magic Resistance: +10
+- Maximum Hit Points: +10
+
+Not Usable By:
+ Mage
+ Thief
+ Bard
+ Monk~
 @102323 = ~Agar~
-@102324 = ~NP: You lost!~ /*I will not be defeated!*/
-@102325 = ~NP: Agnes Masterson~ /*Masterson*/
+@102324 = ~You've lost!~
+@102325 = ~Agnes Masterson~
 @102326 = ~Deal with these nuisances, Kurdan, or your body will be the *next* I possess.~
 @102327 = ~Yes, master. We lay wait for dem here.~
-@102328 = ~NP: Captain Eleifin~ /*Captain Aedoric*/
+@102328 = ~Captain Alaefin~
 @102329 = ~Dessstroy thissss body and I will find another! I will not be caged!~
 @102330 = ~Here, fool! I'm inssside! HAHAHAHAHAA!!~
 @102331 = ~Attack this flesh if you wish! It will do you no good!!~
 @102332 = ~Aldo~
-@102333 = ~NP: You will still regret this decision.~ /*I will tell him of your decision.*/
+@102333 = ~You will regret that decision.~
 @102334 = ~Alhelor~
-@102335 = ~NP: Goods of Elchelor~ /*Alhelor's Store*/
-@102336 = ~NP: Mummy Ashes~ /*Mummy Slam*/
+@102335 = ~Alhelor's Store~
+@102336 = ~Mummy Dust~
 @102337 = ~NP: The priests of Horus-Re in distant Mulhorand were the first to create this life-saving elixir. A foul-smelling concoction made from mummy tissue wrappers and natural remains. The resulting mixture can neutralize the effects of the most severe diseases.~ /*No one knows when or where these arrows were made. It is rumored that each tip is crafted from a vampire's tooth, however. That seems unlikely due to the number of quivers in which these arrows can be found.*/
 @102338 = ~NP: belladonna flower~ /*Herb, Belladonna*/
 @102339 = ~NP: Belladonna is a poisonous plant: all parts of it are poisonous, including the fruits. Elchelor claims that lycanthropes are more susceptible than others to this poison. He recommends lubricating your weapons with the juice of this plant before fighting werewolves. STATS: +4 damage and THAC0 against werewolves, effect lasts 3 turns.~ /*Belladonna is a rare plant that seems to have an adverse effect on were-creatures. The plant is used like a potion and will temporarily protect the user from shapechanger attacks.*/
