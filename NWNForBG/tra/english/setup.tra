@@ -582,11 +582,29 @@ Protection From Evil
 THAC0: +2 vs demons
 
 Weight: 1~
-@102307 = ~NP: Cloak of the Assassin~ /*Nathyrra's Cloak*/
-@102308 = ~NP: The powers that this powerfully enchanted cloak possesses confirm the fact that defense can take many forms - including disappearing from view, and aiding in backstabs. STATS: Improved Haste, 1x/day Improved Invisibility, 3x/day Defense Class: +2 improvement Saving Throws: +2 improvement Weight: 3~ /*The longbow is a refinement of the shortbow, designed to increase the range and power of an arrow strike. The stave portion of a longbow is nearly as tall as the archer, and can reach over six feet.*/
-@102309 = ~NP: Mind Guard Helm~ /*Mind Fog*/
-@102310 = ~NP: As its name suggests, the Mind Guard Helmet protects the wearer from any magical attempts at emotional manipulation. Often, as a precaution, highly professional groups of mercenaries are equipped with such helmets in order to save themselves from extraneous magical interference and calmly carry out their duty. STATS: Features: Protects from critical hits Wearer is immune to mind-affecting spells True Vision spell 3 times per day Weight: 4 Used by: Good characters - Warriors (including multiclasses) Paladins Rangers (including multiclasses) Priests~ /*A magical inscription has been found on a statue in the Docks of Luskan. It tells of the Ruins of Illusk that lie beneath Luskan and how they have been sealed with three wards to hold a great evil within. Apparently, the one who breaks the seals is the one who will kill the great evil that haunts the Ruins.
-The three seals have been broken and Voleron the Damned has been slain. The curse of the Ruins of Illusk has been broken.*/
+@102307 = ~Cloak of the Assassin~
+@102308 = ~The abilities possessed by this powerfully enchanted cloak confirm the fact that defense can have many forms - including disappearing from view, and aiding in back stabs.
+
+STATISTICS:
+- Improved Haste, 1 time per day
+- Improved Invisibility, 3 times per day
+
+
+Armor Class: +2
+Saving Throws: +2
+
+Weight: 3~
+@102309 = ~Helm of Mind Protection~
+@102310 = ~As its name suggests, the Helm of Mind Protection protects its wearer from any magical attempts at emotional manipulation. As a precaution, some high-profile mercenary groups regularly equip their members with such helmets to ensure that they can perform their prescribed duties without external interference.
+
+STATISTICS:
+
+Equipped abilities:
+- Protects against critical hits
+- Wearer is immune to mind-affecting spells
+- True Sight 3 times per day
+
+Weight: 4~
 @102311 = ~NP: Mist Mirror~ /*Black Kumade*/
 @102312 = ~NP: A graceful mirror set in gold exudes an aura of power.~ /*I sure could use some sleep. Really tired.*/
 @102313 = ~NP: This small mirror is capable of summoning Mist Horror three times per day and Mirror Image once per day. Not Used by: Wizard Assassins~ /*With the power to return people from the very brink of death, these priestly potions do not come cheaply.*/
