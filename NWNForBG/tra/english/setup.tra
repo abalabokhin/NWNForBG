@@ -1007,9 +1007,17 @@ This note should be shown to someone in authority.~
 @102385 = ~Gargoyle Skull~
 @102386 = ~There are many unusual items in the game. This is one of them.~
 @102387 = ~This gargoyle skull can be used as an ingredient to create magical items.~
-@102388 = ~NP: Wand of Anti-Magic~ /*No Animation*/
-@102389 = ~NP: The wand is endowed with the ability to dispel magical effects. It removes all magical effects from all creatures within its range, including the effects of spells, potions, and certain magical items such as wands. However, it does not affect enchanted items or anti-magic enchantments such as Conversion Spell and Absorption Spell. The wand can also dispel Blindness and Dementia spells. When the charges run out, the wand becomes useless. Abilities: Dispel Magic (15 charges) Range: Caster's line of sight Cannot Use: Wizard Killers~ /*The greater robe of eyes provides the wearer with improved vision and the ability to detect many things that are hidden. Invisibility and ethereal effects have no power to cloud the wearer's vision.
-When not fully armored, the more powerful clerics of Helm often wear such robes to allow them to maintain their vigilance, even when unable to maintain their armament.*/
+@102388 = ~Wand of Antimagic~
+@102389 = ~The wand has the ability to dispel magical effects. It removes all magical effects from all creatures within its range, including the effects of spells, potions, and certain magical items such as wands. However, it does not affect enchanted items, nor does it affect antimagic spells such as Spell Turning or Spell Deflection. The wand can also dispel Blindness and Enfeeblement effects. When it runs out of charges, the wand becomes useless.
+
+STATISTICS:
+
+Abilities:
+  Dispel Magic (15 charges)
+  Range: Caster's field of vision.
+
+Not Usable By:
+ Wizard Slayer~
 @102390 = ~Archeologist~
 @102391 = ~Gauntlet Award: First Round~
 @102392 = ~Badges like this are given to would-be gladiators participating in the Gauntlet fighting club beneath Neverwinter's Board Laid Bare tavern. This particular award signifies that the bearer has defeated the lowest ranked fighter in the competition. Higher ranked battles can occur, but only if this badge is presented when the challenge is made.~
@@ -1018,8 +1026,21 @@ When not fully armored, the more powerful clerics of Helm often wear such robes 
 @102395 = ~Gauntlet Award: Third Round~
 @102396 = ~Badges like this are given to would-be gladiators participating in the Gauntlet fighting club beneath Neverwinter's Board Laid Bare tavern. This particular award signifies that the bearer has defeated all comers, and is now eligible to challenge for ownership of the club. The badge must be presented before a challenge can be recognized.~
 @102397 = ~Gauntlet Championship Award~
-@102398 = ~NP: There is only one such sign. It means that its owner is the champion of the Fight Club &quot;Gauntlet&quot; under the &quot;Bareboard&quot; tavern in Neverwinter. The owner of this sign defeated all opponents, including the founder of the club, and received the Naked Board Tavern as a prize. PARAMETERS: When worn: +2 to defense class +1 to all saving throws +2 to strength +2 to THAC0 Used by: Warriors Paladins Rangers~ /*There is only one badge of this type. It signifies that the bearer is the Grand Champion of the Gauntlet fighting club beneath Neverwinter's Board Laid Bare tavern. The owner of this item has defeated all comers, including the group's founder, and has taken the Board Laid Bare tavern as their prize.*/
-@102399 = ~NP: Welcome Arunsun~ /*AC Bonus*/
+@102398 = ~There is only one badge of this type. It signifies that the bearer is the Grand Champion of the Gauntlet fighting club beneath Neverwinter's Board Laid Bare tavern. The owner of this item has defeated all comers, including the founder of the Club, and has taken the Board Laid Bare tavern as their prize.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Saving Throws: +3
+- Strength: +2
+- THAC0: +2
+
+Usable By:
+ Fighter
+ Paladin
+ Ranger~
+@102399 = ~Khelben Arunsun~
 @102400 = ~Aribeth~
 @102401 = ~NP: Rogue! Fight like a real warrior...~ /*Me like way you talk.*/
 @102402 = ~NP: Come closer and fight fair!~ /*Come and share words with me*/
