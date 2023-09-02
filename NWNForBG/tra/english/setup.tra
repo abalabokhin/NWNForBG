@@ -4543,3 +4543,6 @@ While many a tale has suggested that there are dark forces that call the wood th
 @107827 = ~NP: This amulet protects its wearer from all forms of deadly magic. These spells include Disenchant, Power Word: Death, Death Spell, Finger of Death, Confinement, etc. Weight: 1 Can use: All~ /*This amulet conjures strange visions in my mind: half-remembered images of a time long ago, when dryad and dwarf alike served a terrible, cruel Master.*/
 @107833 = ~NP: Here you can create magical things.~ /*I'm interested in magical swords.*/
 
+@110000 = ~Ettercap's Silk Gland~
+@110000 = ~This is the gland that allows ettercaps to create web fibers.~
+

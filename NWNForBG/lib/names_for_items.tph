@@ -1802,6 +1802,12 @@ COPY ~NWNForBG/itm/nwmisc90.itm~ ~override~
   SAY 0x50	@107825
   SAY 0x54	@107825
 
+COPY ~NWNForBG/itm/nwmisc91.itm~ ~override~
+  SAY 0x8	@110000
+  SAY 0xC	@110000
+  SAY 0x50	@110001
+  SAY 0x54	@110001
+
 COPY ~NWNForBG/itm/nwpbag1.itm~ ~override~
   SAY 0x50	@102418
 
