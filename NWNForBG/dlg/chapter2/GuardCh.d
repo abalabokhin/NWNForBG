@@ -76,7 +76,7 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 1.5
   SAY @17
-  IF ~~ THEN DO ~SetGlobal("DoorOpened","LOCALS",1)Unlock("Door06")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("DoorOpened","LOCALS",1)Unlock("Door6")~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 1.6
