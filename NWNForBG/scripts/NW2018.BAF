@@ -2,8 +2,10 @@ IF
 	Global("Stairs","MYAREA",1)
 	Global("UrtIsSaved","GLOBAL",0)
 	Global("UrtGold","GLOBAL",0)
+	Global("NWUrtMomTalkAtStairs","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("EISNF",StartDialogueNoSet(Player1))
+		SetGlobal("NWUrtMomTalkAtStairs","GLOBAL",1)
 END
 
