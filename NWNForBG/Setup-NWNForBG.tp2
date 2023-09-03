@@ -171,6 +171,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         ~hook_horror~
         ~isair~
         ~lagoon_creature~
+        ~lich_white~
         ~madae~
         ~malarite~
         ~orog_shaman~
