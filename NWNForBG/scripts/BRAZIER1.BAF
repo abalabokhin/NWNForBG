@@ -7,8 +7,9 @@ THEN
 END
 
 IF
-	SpellCastOnMe(Player1,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	SpellCast(Player1,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
 	Global("Player1IsSummoner","MYAREA",0)
+	Global("NWBURNHA","LOCALS",1)
 THEN
 	RESPONSE #100
 		SetGlobal("BelialTalk","MYAREA",1)
@@ -16,8 +17,9 @@ THEN
 END
 
 IF
-	SpellCastOnMe(Player2,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	SpellCast(Player2,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
 	Global("Player2IsSummoner","MYAREA",0)
+	Global("NWBURNHA","LOCALS",1)
 THEN
 	RESPONSE #100
 		SetGlobal("BelialTalk","MYAREA",1)
@@ -25,8 +27,9 @@ THEN
 END
 
 IF
-	SpellCastOnMe(Player3,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	SpellCast(Player3,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
 	Global("Player3IsSummoner","MYAREA",0)
+	Global("NWBURNHA","LOCALS",1)
 THEN
 	RESPONSE #100
 		SetGlobal("BelialTalk","MYAREA",1)
@@ -34,8 +37,9 @@ THEN
 END
 
 IF
-	SpellCastOnMe(Player4,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	SpellCast(Player4,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
 	Global("Player4IsSummoner","MYAREA",0)
+	Global("NWBURNHA","LOCALS",1)
 THEN
 	RESPONSE #100
 		SetGlobal("BelialTalk","MYAREA",1)
@@ -43,8 +47,9 @@ THEN
 END
 
 IF
-	SpellCastOnMe(Player5,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	SpellCast(Player5,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
 	Global("Player5IsSummoner","MYAREA",0)
+	Global("NWBURNHA","LOCALS",1)
 THEN
 	RESPONSE #100
 		SetGlobal("BelialTalk","MYAREA",1)
@@ -52,8 +57,9 @@ THEN
 END
 
 IF
-	SpellCastOnMe(Player6,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	SpellCast(Player6,WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
 	Global("Player6IsSummoner","MYAREA",0)
+	Global("NWBURNHA","LOCALS",1)
 THEN
 	RESPONSE #100
 		SetGlobal("BelialTalk","MYAREA",1)

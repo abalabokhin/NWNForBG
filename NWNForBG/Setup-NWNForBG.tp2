@@ -217,17 +217,10 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     END
 
     ACTION_PHP_EACH anim_to_min_slot AS animation => min_slot
-/*
-      ~elff_mage1~
-      ~hf_mage~
-      ~hf_thief~
-      ~hm_ninja~
-      ~thief_male_human~
-*/
     BEGIN
         OUTER_TEXT_SPRINT upp_anim ~%animation%~
         ACTION_TO_UPPER upp_anim
-	OUTER_SET slot = IDS_OF_SYMBOL (~animate~ ~%upp_anim%~)
+        OUTER_SET slot = IDS_OF_SYMBOL (~animate~ ~%upp_anim%~)
         ACTION_IF slot<0 BEGIN
             LAF ~FIND_FREE_ANIM_SLOT~ INT_VAR slotMin = min_slot STR_VAR GWFormatAnim = BG2SPLIT RET slot END
             ACTION_IF (slot < 0) BEGIN
@@ -249,6 +242,53 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         END
     END
 END
+
+// Add Local Variable ("NWBURNHA" = 1) on every target of burning hands (for Belial Summoning quest).
+COPY_EXISTING ~SPWI103.SPL~ ~override/SPWI103.SPL~
+  READ_LONG 0x64 abil_off
+  READ_SHORT 0x68 abil_num
+  READ_LONG 0x6a fx_off
+
+  FOR (i = 0; i < "%abil_num%"; i += 1) BEGIN //parse each ability
+  //verify specific ability - check the ability is the correct one to change here, must be unique
+  READ_BYTE (%abil_off% + %i% * 0x28) abil_type
+  PATCH_IF (%abil_type% = 1) BEGIN
+    READ_SHORT (%abil_off% + %i% * 0x28 + 0x1e) abil_fx_num
+    READ_SHORT (%abil_off% + %i% * 0x28 + 0x20) abil_fx_idx
+
+    //add effect
+    INSERT_BYTES (%fx_off% + %abil_fx_idx% * 0x30) 0x30
+
+    //effect fields
+    WRITE_SHORT (%fx_off% + %abil_fx_idx% * 0x30) 309 //type
+    WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x2) 2 //target
+    WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x3) 1 //power
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x4) 1 //param1
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x8) 0 //param2
+    WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0xc) 10 //timing mode
+    WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0xd) 0 //dispel/resistance
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0xe) 5 //duration
+    WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x12) 100 //prob1
+    WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x13) 0 //prob2
+    WRITE_ASCII (%fx_off% + %abil_fx_idx% * 0x30 + 0x14) ~NWBURNHA~ #8 //resource
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x1c) 0 //#dice, maxlevel
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x20) 0 //dicesize, minlevel
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x24) 0 //save type
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x28) 0 //save bonus
+    WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x2c) 0 //unknown  END
+
+    //update #ability effects
+    SET %abil_fx_num% += 1
+    WRITE_SHORT (%abil_off% + %i% * 0x28 + 0x1e) %abil_fx_num%
+
+    //update ability effect indices for abilities after current one
+    FOR (j = %i% + 1; j < "%abil_num%"; j += 1) BEGIN
+      READ_SHORT (%abil_off% + %j% * 0x28 + 0x20) abil_fx_idx
+      WRITE_SHORT (%abil_off% + %j% * 0x28 + 0x20) (%abil_fx_idx% + 1)
+    END
+  END
+END
+
 
 //Videos
 COPY ~NWNForBG/movies~ ~movies~
@@ -2646,13 +2686,6 @@ COPY ~NWNForBG/cre/gorkan.cre~ ~override~
 COPY ~NWNForBG/cre/graxx.cre~ ~override~
   SAY 0x8	@102807
   SAY 0xC	@102807
-  SAY 0xC8	@95694
-  SAY 0xCC	@95695
-  SAY 0xD0	@95696
-  SAY 0xD4	@95697
-  SAY 0xF4	@95700
-  SAY 0x10C	@95707
-  SAY 0x110	@95703
 
 COPY ~NWNForBG/cre/gregornw.cre~ ~override~
   SAY 0x8	@102808
