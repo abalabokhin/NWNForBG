@@ -1220,7 +1220,7 @@ THAC0: +1
 Damage Type: Crushing
 Weight: 4
 Speed Factor: 3
-Proficiency Type: Hammers
+Proficiency Type: War Hammer
 Type: One-handed
 Requirements: Strength 9
 
@@ -1229,12 +1229,59 @@ Not used by:
  Mage
  Thief
 @102436 = ~Avista~
-@102437 = ~NP: Guard +4~ /*Sentinel +8*/
-@102438 = ~NP: This unique ax is crafted by the best blacksmiths in Neverwinter. They managed to reforge a simple enchanted axe, adding some adamatine ore to it. The result is an ax with amazing properties. It is so easy to handle that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The owner of this ax can handle it much better than with any other axes. PARAMETERS: Features: The owner gets +1 to the ax skill Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 3 points of electricity damage THAC0: improvement +6 Damage: 1D8 +4 Damage type: slashing Weight: 7 Factor speed: 4 Required skill: axes Type: one-handed Requirements: strength 10 Cannot use: Druid Priest Mage Thief~ /*Type of Feat: ClassPrerequisite: Assassin.
-Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
-Use: Automatic.*/
-@102439 = ~NP: Dragon Horror +4~ /*Dragon, Red*/
-@102440 = ~NP: This unique ax is crafted by the best blacksmiths in Neverwinter. They managed to reforge a simple enchanted axe, adding some dragon blood to it. The result is an ax with amazing properties. This ax is just a nightmare for dragons. The owner of this ax may not be afraid of either a wing strike or fear. In addition, he himself can once a day, like a dragon, spew dragon's breath on his enemies. PARAMETERS: Features: Immunity to wing strike Immunity to sleep Immunity to fear Ability to cast 1 time per day &quot;Dragon's Breath&quot; Combat properties: Double damage to dragons THAC0: improvement +4 Damage: 1D8 +4 + 2 points of fire damage Damage type: slashing Weight : 7 Speed Factor: 4 Required Skill: Axes Type: One-Handed Requirements: Strength 10 Cannot Use: Druid Priest Mage Thief~ /*Orcs tell of a great hero who wore no armor, and how the god Gruumsh gifted him with an axe to protect him in battle. He eventually became the avatar of that fearsome deity, and broke his weapon into many pieces to seed it among the orc hordes. Other cultures don't recognize the tale, but orcs don't care. After all, their legends also say that all the other races are born of swine, and what are the opinions of pigs worth?*/
+@102437 = ~Guard +4~
+@102438 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some adamatite ore to it. The result is an axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
+
+STATISTICS:
+
+Equipped abilities:
+- The wielder gains +1 to the axe skill
+
+Combat abilities:
+- 80% chance to reduce an enemy's Armor Class by 1 for 2 rounds
+
+THAC0: +6
+Damage: 1d8+4, +3(electricity)
+Damage Type: slashing
+Weight: 7
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requirements: Strength 10
+
+Not Used By:
+ Druid
+ Priest
+ Mage
+ Thief~
+@102439 = ~Dragon Horror +4~
+@102440 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some dragon blood to it. The result is an axe with amazing properties. This axe is just a dragon's bad dream. The wielder of this axe can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Wind Buffet
+- Immunity to Sleep
+- Immunity to Fear
+- Can cast Dragon Breath once per day
+
+Combat abilities:
+- Double damage to dragons
+
+THAC0: +4
+Damage: 1d8+4, +3 (fire)
+Damage Type: slashing
+Weight: 7
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requirements: Strength 10
+
+Not Used By:
+ Druid
+ Priest
+ Mage
+ Thief~
 @102441 = ~NP: Void Ax +3~ /*Axe for the Tall Kin +3*/
 @102442 = ~NP: This wonderful ax was forged in the Abyss itself, it is even hard to imagine what blacksmiths made it. The handle and blade of the ax are streaked with tiny runes that emit a faint red glow. PARAMETERS: Combat features: - 10% chance to stun the target for 1 round - Each hit inflicts a great curse on the target THAC0: +3 Damage: 1d8+3 (slashing) Additional damage: 1d3 (fire) Speed factor: 7 Weapon skill: Ax Type : One-handed Requires: Strength 10 Weight: 7~ /*This aged tome details the latter life of Halueth Never, and the trials that he overcame to found the city of Neverwinter. Much of it is written in an archaic script that will likely take Tyrran scholars years to decipher.*/
 @102443 = ~Ice Reaver +1~
