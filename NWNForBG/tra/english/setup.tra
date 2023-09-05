@@ -526,7 +526,7 @@ His only concern about doing such a thing is that the magic that controlled the 
 @102280 = ~Rascal! Fight face to face with me...~
 @102281 = ~Come closer and fight fair!~
 @102282 = ~Coward! I bet you can't hold a blade in your hands...~
-@102283 = ~Thorn thrower! Come, taste the steel...~
+@102283 = ~Thorn thrower! Come, taste my steel...~
 @102284 = ~Hey, somebody, finish this scum!~
 @102285 = ~It's time for you to die!~
 @102286 = ~It's too easy for me...~
@@ -1032,7 +1032,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +2
-- Saving Throws: +3
+- Saving Throws: +1
 - Strength: +2
 - THAC0: +2
 
@@ -1042,29 +1042,89 @@ Usable By:
  Ranger~
 @102399 = ~Khelben Arunsun~
 @102400 = ~Aribeth~
-@102401 = ~NP: Rogue! Fight like a real warrior...~ /*Me like way you talk.*/
-@102402 = ~NP: Come closer and fight fair!~ /*Come and share words with me*/
-@102403 = ~NP: Coward! Shooting at me from a distance!~ /*You can expect no mercy!*/
-@102404 = ~NP: Thorn thrower! I bet you're too weak for hand-to-hand combat...~ /*Ahhhh! Monster! Kill it. I'm too old for this sort of thing.*/
+@102401 = ~Rascal! Fight like a real warrior...~
+@102402 = ~Come closer and fight fair!~
+@102403 = ~Coward! Shooting at me from the distance!~
+@102404 = ~Thorn thrower! I bet you're too weak for hand-to-hand combat...~
 @102405 = ~Arklem~
 @102406 = ~Aribeth's Ring~
-@102407 = ~NP: Lady Aribeth, Paladin of Neverwinter, gave this ring to one of the city's heroes as a token of friendship. The thick silver hoop inlaid with a large blue stone looks amazing and cute. PARAMETERS: Properties when worn: +1 defense +1 to all saving throws +2 to luck Permanent blessing Special abilities: &quot;Protection from evil&quot; 2 times per day &quot;Sanctuary&quot; 1 time per day Do not use: Evil characters~ /*Lady Aribeth, Paladin of Neverwinter, gave this ring to one of her city's heroes as a token of their friendship. The thick band of gold inlaid with elven figures has a look that is both striking and graceful.*/
+@102407 = ~Lady Aribeth, Paladin of Neverwinter, gave this ring to one of her city's heroes as a token of their friendship. The thick band of gold inlaid with elven figures has a look that is both striking and graceful.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Luck: +2
+- Permanent Bless
+
+Special abilities:
+- Protection From Evil 2 times per day
+- Sanctuary once a day
+
+Not Usable By:
+ Evil Characters~
 @102408 = ~Arto~
-@102409 = ~NP: Magic Items Artaud~ /*Stolen Goods*/
-@102410 = ~NP: Throwing dagger +1~ /*Throwing Axe +1*/
-@102411 = ~NP: A typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife that is single-edged and somewhat shorter in length. Unlike a dagger, it has a shorter handle and is balanced differently. PARAMETERS: Damage: 1D3+1 Damage type: throwing (piercing) Weight: 1 Speed factor: 2 Weapon skill: Daggers Type: 1-hand Requirements: - Strength 7 - Dexterity 10 Do not use: Priest Beastmaster~ /*Type of Feat: ClassPrerequisite: Barbarian level 23+.
-Specifics: An epic barbarian's damage reduction allows him to ignore the first 5 points of damage from any physical attack. This ability increases by +1 point every 3rd level past 23rd.  
-Use: Automatic.*/
-@102412 = ~NP: Throwing dagger +2~ /*Throwing Axe +2*/
-@102413 = ~NP: A typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife that is single-edged and somewhat shorter in length. Unlike a dagger, it has a shorter handle and is balanced differently. PARAMETERS: Damage: 1D3+2 Damage type: throwing (piercing) Weight: 1 Speed factor: 2 Weapon skill: Daggers Type: 1-hand Requirements: - Strength 7 - Dexterity 10 Do not use: Priest Beastmaster~ /*Type of Feat: ClassPrerequisite: Barbarian level 23+.
-Specifics: An epic barbarian's damage reduction allows him to ignore the first 5 points of damage from any physical attack. This ability increases by +1 point every 3rd level past 23rd.  
-Use: Automatic.*/
-@102414 = ~NP: bottomless bag~ /*Ice Storm*/
-@102415 = ~NP: Like other magical bags, this one appears to be an ordinary bag of cloth about 2 feet by 4 feet that opens into a dimensionless space, and the inside is larger than the outside. Whatever is put in it, the bag always weighs the same. PARAMETERS: Capacity: 32767 any items Weight: 1~ /*Written on a piece of tape that is stretched across the flask: "For while the water should have generally been proud, having existed far longer than many of those within this world, it could not exist without a solid foundation to settle in upon - and for that, it remained humble."*/
-@102416 = ~NP: Red Wizard's Robe~ /*Wizard's Robe*/
-@102417 = ~NP: Such robes are fairly common among the red wizards of Thay. They give their owners good protection and are endowed with magical properties. STATS: Fire resistance: 40% Defense class: +2 bonus Saving Throws: +2 bonus Haste Casting (-1) Weight: 4 Use Only: Mages (single-, double-, and multi-classes)~ /*Type of Feat: GeneralPrerequisite: Spell focus in the chosen school.
-Specifics: Character gains a +2 bonus to saving throws versus the chosen school of magic.
-Use: Automatic.*/
+@102409 = ~Arto's Magic Items~
+@102410 = ~Throwing dagger +1~
+@102411 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d3 + 1
+THAC0: +1
+Damage Type: Missile (piercing)
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+- 7 Strength
+- 10 Dexterity
+Not Usable By:
+ Cleric
+ Beast Master~
+@102412 = ~Throwing dagger +2~
+@102413 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d3 + 2
+THAC0: +2
+Damage Type: Missile (piercing)
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+- 7 Strength
+- 10 Dexterity
+Not Usable By:
+ Cleric
+ Beast Master~
+@102414 = ~Bottomless Bag~
+@102415 = ~As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed a mount.
+
+STATISTICS:
+
+Capacity: 32767 any items
+
+Weight: 1~
+@102416 = ~Red Wizard Robe~
+@102417 = ~Such robes are fairly common among the red wizards of Thay. They give their owners good protection and are endowed with magical properties.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: 40%
+- Armor Class: +2
+- Saving Throws: +2
+– Decrease spellcasting time by 1
+
+Weight: 4
+
+Usable By:
+ Mages (single-, double-, and multi-classes)~
 @102418 = ~NP: Commonly worn by traveling healers, this leather pouch unfolds to allow the wearer to attach fragile potion vials to its padded base with multiple leather straps for secure storage while travelling. PARAMETERS: Capacity: 400 bottles Weight: 2~ /*I don't normally do this but I like you, recruit. Here, take this gift for passing the test. Now you're ready to leave the Academy and face the world.*/
 @102419 = ~NP: This sturdy box is designed to hold a large number of scrolls, keeping them safe from fire, rain, or lightning, common annoyances that any wandering wizard faces. PARAMETERS: Capacity: 1000 scrolls or books Weight: 2~ /*That's where I met my best friend Sammy, after all... he was another apprentice. I would have been a full wizard, myself, if things had worked out.*/
 @102420 = ~NP: This pouch is ideal for storing gems and other jewelry. PARAMETERS: Capacity: 1500 gems, amulets or rings Weight: 2~ /*But this stone isn't like normal gems. We have no idea what we're getting into here, and I don't like this one bit.*/
