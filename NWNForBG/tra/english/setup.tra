@@ -1124,28 +1124,110 @@ Equipped abilities:
 Weight: 4
 
 Usable By:
- Mages (single-, double-, and multi-classes)~
-@102418 = ~NP: Commonly worn by traveling healers, this leather pouch unfolds to allow the wearer to attach fragile potion vials to its padded base with multiple leather straps for secure storage while travelling. PARAMETERS: Capacity: 400 bottles Weight: 2~ /*I don't normally do this but I like you, recruit. Here, take this gift for passing the test. Now you're ready to leave the Academy and face the world.*/
-@102419 = ~NP: This sturdy box is designed to hold a large number of scrolls, keeping them safe from fire, rain, or lightning, common annoyances that any wandering wizard faces. PARAMETERS: Capacity: 1000 scrolls or books Weight: 2~ /*That's where I met my best friend Sammy, after all... he was another apprentice. I would have been a full wizard, myself, if things had worked out.*/
-@102420 = ~NP: This pouch is ideal for storing gems and other jewelry. PARAMETERS: Capacity: 1500 gems, amulets or rings Weight: 2~ /*But this stone isn't like normal gems. We have no idea what we're getting into here, and I don't like this one bit.*/
-@102421 = ~NP: Ice Storm Wand~ /*Meph Ice Sound*/
-@102422 = ~NP: Froststorm Wand fills the hearts of those caught in its area of effect with dread. It summons a hail of ice from the sky that deals 2d8 damage to all creatures in the area each round and blinds them. In addition, all members of your group receive full protection from the cold. The wand can only be used a limited number of times before being destroyed. STATS: Effects: Ice storm and blindness Range: caster's line of sight Duration: 4 rounds AoE: 30' radius Use: Barda's mages~ /*Legends associated with armor of this type hearken to a time when armies would supposedly ally themselves with dragons, the great beast taking the fore in more important battles. Dragon Armor was developed in answer, and a troop of elite warriors in such gear apparently stood a good chance of victory. It should be noted that while this tale sounds fine repeated in a tavern over ale, it does not fare so well under historical scrutiny.*/
+ Mage (single-, double-, and multi-class)~
+@102418 = ~Typically carried by traveling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.
+
+STATISTICS:
+
+Capacity: 400 potions
+
+Weight: 2~
+@102419 = ~This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning—common hazards faced by any adventuring wizard.
+
+STATISTICS:
+
+Capacity: 1000 scrolls or books
+
+Weight: 2~
+@102420 = ~This small bag is ideally suited for holding gems and other jewelry.
+
+STATISTICS:
+
+Capacity: 1500 gems amulets or rings
+
+Weight: 2~
+@102421 = ~Ice Storm Wand~
+@102422 = ~Ice Storm Wand fills the hearts of those caught in its range with terror. It unleashes a hail of ice from the heavens that deals 2d8 damage to all creatures in the target area each round and blinds them. In addition, all members of your group gain full defense against the cold. The wand can be used a limited number of times, and then it is destroyed.
+
+STATISTICS:
+
+Charge abilities:
+- Ice Storm and Blindness
+  Range: Visual range of the caster
+  Duration: 4 rounds
+  Area of Effect: 30-ft. radius
+
+Usable By:
+ Mage
+ Bard~
 @102423 = ~Aruph~
-@102424 = ~NP: Tesak Tavern~ /*Tavern WP*/
+@102424 = ~The Cutlass Inn~
 @102425 = ~Auctioneer~
 @102426 = ~The Seedy Tavern~
-@102427 = ~NP: Buckler +2~ /*Banded Mail +2*/
-@102428 = ~NP: Despite the effectiveness of the enchantments placed on this shield, their origin is unknown. It is possible that it was made for the militia of some forgotten barony, but it is difficult to say with certainty. PARAMETERS: Defense class upgrade: 3 Features: no protection against throwing/stab attacks Weight: 2 Requires: 4 Strength Not used by: Mages~ /*So far all they've done is throw me in this cage. Probably saving me for some pagan ritual they hope will cure them of this plague that's infected their whole tribe.*/
-@102429 = ~NP: Cunning Hood~ /*Cowl of Warding*/
-@102430 = ~NP: Once the property of Xanathar's Thieves Guild, this deceptively simple-looking hood is imbued with magic that enhances the wit and perception of anyone who wears it. The hood was temporarily lost during a raid on one of Xanathar's slave trading houses in Skullport, but the item has recently resurfaced in Calimport and found its way to Askatla on one of the many trading caravans owned by the commercial company Cybarr. STATS: Abilities when worn: Owner gains +15% to Trap Finding Skill Infrasight Immunity to all forms of Blinding Defense Class Upgrade: None Traits: Protects from Critical Strikes Weight: 0 Used by: Thieves Monks~ /*Type of Feat: ClassPrerequisite: Champion of Torm level 5.
-Specifics: The Champion is able to channel a portion of their deities's power once per day giving them a +3 bonus on attack rolls, damage, and saving throws for a number of rounds equal to their Charisma bonus. They also gain damage reduction of 5/+1. The attack and saving throw bonuses increase by +2 at level 10
-Use: Selected*/
-@102431 = ~NP: throwing hammer~ /*Throwing Axe*/
-@102432 = ~NP: This hammer, originally a blacksmith's tool, consists of a steel headband and a six-inch wooden handle. It is balanced to crush enemies' bones when thrown. And like any throwing weapon, it is not as effective in close combat. STATS: Damage: 1D4 + 1 (1D3 + 1 melee) Damage type: bludgeoning Weight: 4 Speed factor: 3 Skill type: hammers Type: 1-hand Requirements: strength 9 Unused: Druids Mages Thieves~ /*This is the minimum roll required on a D20 to get a critical threat. 
-This value may be modified by the Keen item property, or by the Improved Critical feat for this weapon type.*/
-@102433 = ~NP: Throwing Hammer +1~ /*Throwing Axe +1*/
-@102434 = ~NP: This hammer, originally a blacksmith's tool, consists of a steel headband and a six-inch wooden handle. It is balanced to crush enemies' bones when thrown. And like any throwing weapon, it is not as effective in close combat. STATS: Damage: 1D4 + 1 (1D3 + 1 melee) Damage type: bludgeoning Weight: 4 Speed factor: 3 Skill type: hammers Type: 1-hand Requirements: strength 9 Unused: Druids Mages Thieves~ /*This is the minimum roll required on a D20 to get a critical threat. 
-This value may be modified by the Keen item property, or by the Improved Critical feat for this weapon type.*/
+@102427 = ~Buckler +2~
+@102428 = ~Despite the effectiveness of the enchantments cast on this shield, their origin is unknown. It is possible that it was made for the militia of some forgotten barony, but it is hard to say with certainty.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile and piercing attacks
+Weight: 2
+Requires: 4 Strength
+
+Тще Usable By:
+ Mage~
+@102429 = ~Hood of Trickery~
+@102430 = ~Once the property of the Thieves Guild of Xanatar, this deceptively simple looking hood is endowed with magic that increases the wits and perception of anyone who wears it. The hood was temporarily lost during a raid on one of Xanatar's slave trading houses in Skullport, but the item has recently reappeared in Calimport and made its way to Athkatla on one of the many trade caravans belonging to the commercial company Sybarr.
+
+STATISTICS:
+
+Equipped abilities:
+- Detect Traps: +15
+- Infrasion
+- Immunity to all forms of Blinding
+- Protects against Critical Strikes
+
+Weight: 0
+
+Used By:
+ Thief
+ Monk~
+@102431 = ~Throwing Hammer~
+@102432 = ~A hammer, originally a blacksmith's tool, consists of a steel headband and a six-inch wooden handle. This one is balanced so that when thrown, it crushes enemies' bones. And like any throwing weapon, it is not as effective in close combat.
+
+STATISTICS:
+
+Damage: 1d4+1 (1d3 + 1 melee)
+Damage Type: Crushing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Hammers
+Type: One-handed
+Requirements: Strength 9
+
+Not used by:
+ Druid
+ Mage
+ Thief~
+@102433 = ~Throwing Hammer +1~
+@102434 = ~A hammer, originally a blacksmith's tool, consists of a steel headband and a six-inch wooden handle. This one is balanced so that when thrown, it crushes enemies' bones. And like any throwing weapon, it is not as effective in close combat.
+
+STATISTICS:
+
+Damage: 1d4+2 (1d3 + 2 melee)
+THAC0: +1
+Damage Type: Crushing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Hammers
+Type: One-handed
+Requirements: Strength 9
+
+Not used by:
+ Druid
+ Mage
+ Thief
 @102436 = ~Avista~
 @102437 = ~NP: Guard +4~ /*Sentinel +8*/
 @102438 = ~NP: This unique ax is crafted by the best blacksmiths in Neverwinter. They managed to reforge a simple enchanted axe, adding some adamatine ore to it. The result is an ax with amazing properties. It is so easy to handle that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The owner of this ax can handle it much better than with any other axes. PARAMETERS: Features: The owner gets +1 to the ax skill Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 3 points of electricity damage THAC0: improvement +6 Damage: 1D8 +4 Damage type: slashing Weight: 7 Factor speed: 4 Required skill: axes Type: one-handed Requirements: strength 10 Cannot use: Druid Priest Mage Thief~ /*Type of Feat: ClassPrerequisite: Assassin.
