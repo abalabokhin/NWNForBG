@@ -1172,6 +1172,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +3
 – No protection against missile and piercing attacks
+
 Weight: 2
 Requires: 4 Strength
 
@@ -1204,7 +1205,7 @@ Weight: 4
 Speed Factor: 3
 Proficiency Type: Hammers
 Type: One-handed
-Requirements: Strength 9
+Requirements: 9 Strength
 
 Not used by:
  Druid
@@ -1222,7 +1223,7 @@ Weight: 4
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
-Requirements: Strength 9
+Requirements: 9 Strength
 
 Not used by:
  Druid
@@ -1247,7 +1248,7 @@ Weight: 7
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requirements: Strength 10
+Requirements: 10 Strength
 
 Not Used By:
  Druid
@@ -1275,46 +1276,183 @@ Weight: 7
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requirements: Strength 10
+Requirements: 10 Strength
 
 Not Used By:
  Druid
  Priest
  Mage
  Thief~
-@102441 = ~NP: Void Ax +3~ /*Axe for the Tall Kin +3*/
-@102442 = ~NP: This wonderful ax was forged in the Abyss itself, it is even hard to imagine what blacksmiths made it. The handle and blade of the ax are streaked with tiny runes that emit a faint red glow. PARAMETERS: Combat features: - 10% chance to stun the target for 1 round - Each hit inflicts a great curse on the target THAC0: +3 Damage: 1d8+3 (slashing) Additional damage: 1d3 (fire) Speed factor: 7 Weapon skill: Ax Type : One-handed Requires: Strength 10 Weight: 7~ /*This aged tome details the latter life of Halueth Never, and the trials that he overcame to found the city of Neverwinter. Much of it is written in an archaic script that will likely take Tyrran scholars years to decipher.*/
+@102441 = ~Axe of Abyss +3~
+@102442 = ~This marvelous axe was forged in the Abyss itself, it's hard to imagine what kind of blacksmiths did it. The handle and blade of the axe are mottled with tiny runes that emit a faint red glow.
+
+STATISTICS:
+
+Combat abilities:
+- 10% chance per hit to stun target for 1 round
+- Each hit cast "Greater Malison" on target
+
+THAC0: +3
+Damage: 1d8+3, +1d3 (fire)
+Damage Type: slashing
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requirements: 10 Strength
+Weight: 7~
 @102443 = ~Ice Reaver +1~
-@102444 = ~NP: This weapon bears the mark of the dwarf Barun, a master smith who worked in a makeshift forge in the Utgardt village of Beorunn's Well. He forged it in late 1373 DR to attack Lady Aribeth the Betrayer, who was then at war with the northern city of Neverwinter and the Lords' Alliance. PARAMETERS: When equipped: Cold resistance: +50 bonus Attacks per round: +1 bonus Combat abilities: THAC0: +4 improvement Damage: 1D8 +4, +1d6 cold 5% chance on hit to freeze the target for 3 rounds Damage Type: Slashing Weight : 5 Speed Factor: 2 Skill Type: Ax Type: One-Handed Requirement: Strength 16 Cannot Use: Cleric~ /*This weapon bears the mark of the dwarf Barun, a Master Blacksmith who worked from a makeshift forge in the Uthgardt village of Beorunna's Well. He forged it late in 1373 DR, to aid the war effort against Lady Aribeth the Betrayer, who was then marching against the northern city of Neverwinter and the Lords' Alliance.*/
-@102445 = ~NP: The target is frozen~ /*Target: Gates*/
-@102446 = ~NP: Dragon Killer~ /*Dragon Sphere*/
-@102447 = ~NP: This ax was created so that its owner could pass through the deadly Sunset Mountains, where dragons live. However, this ax will help in difficult times and in the battle with the trolls. Its blades are capable of dealing not only slashing damage, but also acid. STATS: Damage: 1D8 + 3, +1D4 acid THAC0: +3 Additional +3 damage and THAC0 against dragons Immunity to fear and panic Damage type: slash Weight: 17 Speed factor: 6 Skill type: ax Type: one-handed Requires: 10 Strength Not used: Druid Priest Mage Thief~ /*These holy talismans border on the power of artifacts. Only a good creature may wear one, and even the most beatific finds his soul challenged and refined, as the device makes him more and more righteous with every passing day. Examples of these items appear in many different forms, suggesting multiple creators at different points in history. They are unfortunately very rare.*/
+@102444 = ~This weapon bears the mark of the dwarf Barun, a Master Blacksmith who worked from a makeshift forge in the Uthgardt village of Beorunna's Well. He forged it late in 1373 DR, to aid the war effort against Lady Aribeth the Betrayer, who was then marching against the northern city of Neverwinter and the Lords' Alliance.
+
+STATISTICS:
+
+Equipped abilities:
+- Cold resistance: +50%
+- Extra attack per round
+
+Combat abilities:
+- 5% chance per hit to freeze the target for 3 rounds
+
+THAC0: +4
+Damage: 1d8+4, +1d6 (fire)
+Damage Type: slashing
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requirements: 16 Strength
+Weight: 5
+
+Not Used By:
+ Priest~
+@102445 = ~The target is frozen~
+@102446 = ~Dragon Killer~
+@102447 = ~This axe was created so that its wielder could pass through the deadly Sunset Mountains, where dragons dwell. However, this axe will also help in a difficult moment in a battle with trolls. Its blades can deal not only chopping damage, but also acid damage.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity Fear and Panic
+
+THAC0: +3, +3 (additional) vs. dragons
+Damage: 1d8+3, +3 (additional) vs. dragons
+Damage Type: slashing
+Weight: 17
+Speed Factor: 6
+Proficiency Type: Axe
+Type: One-handed
+Requirements: 10 Strength
+
+Not Used By:
+ Druid
+ Priest
+ Mage
+ Thief~
 @102448 = ~Ballard~
-@102449 = ~NP: Ring of Aravorn~ /*Bran's Ring*/
-@102450 = ~NP: Very little is known about the power of this ancient artifact or where it acquired this power. The ring was one of the surviving artifacts left in the plundered tomb of the high priest. However, the ring was taken and worn by an adventurer named Aravorn. Some time later, he sensed the power contained in the ring, his mind filled with knowledge of things he previously knew nothing about, and soon became a highly venerated priest. STATS: The wearer gains +1 wisdom 10% magic resistance learns one additional spell and level 7 Can be worn by: Priests and Druids~ /*The dragon tooth amulet that Deekin wears looks very much like one of the artifacts that was stolen from your mentor's home in Hilltop during your adventure involving Undrentide. When asked about it, Deekin merely shuffles from foot to foot and mumbles that it was given to him but little more. Regardless of its significance, Deekin doesn't seem willing to give it up to anyone... even you.*/
-@102451 = ~NP: Defender +2~ /*Protector*/
-@102452 = ~NP: This odd-looking shield is woven from large intertwined branches with leaves. The unusual shape and size of these leaves suggest that they were taken from ancient oaks growing deep in the Forest of Peace. If you carefully examine it, you can find powerful druidic spells emanating from the surface of the shield and increasing the health of the owner and healing his wounds faster. Every morning, at sunrise, one of the branches flares faintly for a moment. Then it can be taken and planted in the ground, and another will immediately grow in its place. Once the proper sorcery is cast, the planted branch transforms into a fearsome Shambler whose strength and size depends on the Druid's skill. Due to its unique origin, the power of this shield can only be used by the most dedicated followers of Nature. STATS: Abilities: +10 to maximum hit points Life regeneration: 2HP every 6 seconds Special abilities: Call Crawling Hill 1 time per day Bonus to defense class: +3 Weight: 1 Requires: 12 Wisdom and 15 Charisma Used only by: Druids~ /*This journal tells of the changes that this cult went through once a creature named Gulnan was captured. It deals mostly with how the Cyric loyalists were ousted, allowing for the writer to move swiftly up the ranks.
-Excerpt:
-Things are very different now, though they might not appear as such from the outside. We still follow blindly, and a number of us are still slain for no reason, but I finally believe a potent entity is acting through our master. Gulnan seems surprised at her own power, but her desire for conquests has erased any questions from her mind. I welcome her intensity, and her strong use of the focus. Jared was more interested in lining his pockets than causing true havoc.*/
-@102453 = ~NP: Calling the shuffling heap~ /*Summon Baatezu*/
-@102454 = ~NP: Small Shambler~ /*Small Shield*/
-@102455 = ~NP: The Great Shambler~ /*Great Cleave*/
-@102456 = ~NP: Without the druid's guiding hand, the shield's charm wears off, and the once-loyal protector attacks the false caster. All that remains behind is a pile of broken oak branches.~ /*Tyr's justice is swift, as is his rewarding of those in his service. Please accept this token on behalf of our temple as a reward for your service.*/
-@102457 = ~NP: You cannot maintain a telepathic link with a Shambler without holding this shield.~ /*You can not use your craft skills in your current condition.*/
-@102458 = ~NP: You cannot summon another creature of that type at the same time.~ /*You are unable to view this companion's inventory.*/
-@102459 = ~NP: Your connection with Nature has grown stronger and the strength of the Protector has increased too.~ /*Some force has turned this table over, breaking it in the process.*/
-@102460 = ~NP: mixtures in the natural environment~ /*Custom Deity*/
-@102461 = ~NP: ACCORDING TO NATURE'S DESIRE, I ANSWER YOUR CHALLENGE!~ /*ERROR: RETURN STATEMENT HAS NO PARAMETERS*/
-@102462 = ~NP: Cerval~ /*Looking Glass*/
-@102463 = ~NP: This studded leather armor was crafted from the hide of a large green wyvern, resulting in increased armor and decent acid resistance. PARAMETERS: Defense class: 4 Adds +50% to acid resistance Adds +1 to saving throws against wands, breath, and death Weight: 18 Requirements: 6 strength Unused by: Mages~ /*Type of Feat: RacePrerequisite: Halfling.
-Specifics: This feat grants a +2 bonus on saving throws against fear spells and effects.
-Use: Automatic.*/
-@102464 = ~NP: Phoenix Spear~ /*Fey Spear +8*/
-@102465 = ~NP: The shaft of this spear is engraved with various runes that imbue the spear with the essence of the phoenix, giving the weapon special powers associated with fire. The tip of the spear is artfully fixed to the shaft and is made of dark volcanic glass. PARAMETERS: +1 to Dexterity +50 to fire resistance Allows you to cast the spell: Fireball 2 times per day THAC0: +4 Damage: 1d6+4, +2d4 with fire Damage type: piercing Weight: 3 Speed factor: 2 Skill: Spear Type : 2-Hand Requirements: 5 strength Not used by: Priests Mages Thieves Monks~ /*This thick shirt of coarse brown horsehair constrains its wearer but provides additional protection from damage. In addition, the wearer can invoke cure serious wounds once per day.  
-Generally made and worn by disciples of Ilmater, the wearers of these garments usually only use the shirt's curative powers to ease the suffering of others.*/
-@102466 = ~NP: Spear of balance~ /*Logout*/
-@102467 = ~NP: Blessed by Silvanus for the druids, this spear has been owned by various owners, but all of them were truly neutral. The powers of the spear help the hero fight in order to improve the Balance in the Realms, which gives advantages in battles against good and evil. PARAMETERS: Allows you to cast the spell: Ironskin 2 times per day THAC0: +3 (+5 against good and evil) Damage: 1d6+3 (+5 against good and evil) Damage type: piercing Weight: 3 Speed factor: 2 Skill: Spear Type: 2-handed Requirements: 5 strength Used by: True Neutrals Ranger Warriors Druids Bards~ /*This thick shirt of coarse brown horsehair constrains its wearer but provides additional protection from damage. In addition, the wearer can invoke cure serious wounds once per day.  
-Generally made and worn by disciples of Ilmater, the wearers of these garments usually only use the shirt's curative powers to ease the suffering of others.*/
+@102449 = ~Aravorn's Ring~
+@102450 = ~Very little is known about the power of this ancient artifact or where it acquired its power. The ring was one of the surviving artifacts left in the looted tomb of the High Priest. The ring was taken and worn by an adventurer named Aravorn. Some time later, he felt the power contained within the ring, his mind filled with knowledge of things he had previously understood nothing about, and soon became a highly honored priest.
+
+STATISTICS:
+
+Equipped abilities:
+- Wisdom: +1
+- Magic resistance: 10%
+- The wearer can memorize additional 4th, 5th, 6th and 7th level spells
+
+Used By:
+ Druid
+ Priest~
+@102451 = ~Protector +2~
+@102452 = ~This strange looking shield is woven from large intertwined branches with leaves. The unusual shape and size of these leaves suggest that they were taken from ancient oaks growing deep in the Forest of Mir. If you examine it closely, you will find powerful druidic charms emanating from the surface of the shield that increase the wearer's health and heal their wounds more quickly. Every morning, at sunrise, one of the branches will flare faintly for a moment. Then it can be taken and planted in the ground, and another will immediately grow in its place. After the proper sorcery is recited, the planted branch transforms into a fearsome Shambler, whose strength and size depends on the Druid's skill. Due to its unique origin, the power of this shield can only be utilized by the most dedicated followers of Nature.
+
+STATISTICS:
+
+Charged abilities:
+- Summon Shambling Mound onve per day
+
+Equipped abilities:
+- Max HP: +10
+- Regenerates 2 HP every 6 seconds
+– Armor Class: +3
+
+Weight: 1
+
+Requires: 12 Wisdom and 15 Charisma
+
+Used By:
+ Druid~
+@102453 = ~Summon Shambling Mound~
+@102454 = ~Small Shambler~
+@102455 = ~Great Shambler~
+@102456 = ~Without the druid's guiding hand, the shield's charm wears off, and the once-loyal protector attacks the false caster. All that remains behind is a pile of broken oak branches.~
+@102457 = ~You cannot maintain a telepathic link with a Shambler without holding this shield.~
+@102458 = ~You cannot summon another creature of that type at the same time.~
+@102459 = ~Your connection with Nature has grown stronger and the strength of the Protector has increased as well.~
+@102460 = ~mixtures in the natural environment~
+@102461 = ~ACCORDING TO NATURE'S DESIRE, I ANSWER YOUR CALL!~
+@102462 = ~Serqual~
+@102463 = ~This studded leather armor was crafted from the hide of a large green wyvern, resulting in increased armor and decent acid resistance.
+
+STATISTICS:
+
+Equipped abilities:
+- Acid resistance: +50%
+- Save vs. Wand: +1
+- Save vs. Breath: +1
+- Save vs. Death: +1
+Weight: 18
+
+Requirements: 6 Strength
+
+Not Used By:
+ Mage~
+@102464 = ~Phoenix Spear~
+@102465 = ~The shaft of this spear is engraved with various runes that imbue the spear with the essence of the phoenix, giving the weapon special powers associated with fire. The tip of the spear is skillfully attached to the shaft and is made of dark volcanic glass.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+- Fire Resistance: +50
+
+Charge abilities:
+- Can cast Fireball two times per day
+
+THAC0: +4
+Damage: 1d6+4, +2d4 (fire)
+Damage Type: piercing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Spear
+Type: Two-handed
+Requirements: 5 Strength
+
+Not Used By:
+ Priest
+ Mage
+ Thief
+ Monk~
+@102466 = ~Spear of Balance~
+@102467 = ~Blessed by Silvanus for druids, this spear has been owned by various owners, but all of them have been truly neutral. The spear's powers help the hero fight to perfect Balance in the Realms, which gives advantages in battles against good and evil.
+
+STATISTICS:
+
+Charge abilities:
+- Can cast Iron Skins two times per day
+
+THAC0: +3 (+5 vs. good and evil)
+Damage: 1d6+3 (+5 vs. good and evil)
+Damage Type: piercing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Spear
+Type: Two-handed
+Requirements: 5 Strength
+
+Used By:
+ True Neutral Character
+ Ranger
+ Fighter
+ Druid
+ Bard~
 @102468 = ~NP: Staff of Silvanus~ /*Staff of Meldanen*/
 @102469 = ~NP: This holy staff is blessed by Silvanus and is usually given to his most pious followers to help restore balance to the world. The staff grants many abilities and is especially useful for druids fighting off sorcerers. PARAMETERS: Adds +1 to defense class Adds +10% to magic defense Allows you to cast the spell: Insect Swarm 1 time per day Wrong Magic 1 time per day THAC0: +3 Damage: 1d6+3 Damage type: bludgeoning Weight: 4 Speed factor : 1 Skill: Staff Type: 2-handed Requirements: 5str Used by: Druids~ /*Type of Feat: ClassPrerequisite: Pale Master level 4.
 Specifics: The Pale Master can summon an undead creature twice per day as a spell-like ability. 
