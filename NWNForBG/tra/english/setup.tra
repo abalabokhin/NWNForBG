@@ -1752,13 +1752,79 @@ Not Used By:
  Ranger
  Beastmaster~
 @102562 = ~Gladiator's Club~
-@102563 = ~NP: This mace is crafted by the finest smiths in Neverwinter. How they managed to make this masterpiece from an ordinary club remains a mystery, it is only known that for this the blacksmith needed an iron tree. The gladiator's mace is so durable that it can smash any golem up to level 20 into dust. However, any other creature that received a blow with this club will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds. PARAMETERS: Features: Owner gains +1 defense (except for ranged weapons) Combat Abilities: Instantly destroys any golem up to level 20 (Saving throw against death is allowed with a -4 penalty) 30% chance to stun the enemy for 3 rounds THAC0: +4 Damage: 1D6 +4 Damage Type: Blunt Weight: 3 Haste Factor: 2 Skill Type: Cudgel Type: One-Handed Requirements: 5 Strength Unusable: Mages~ /*The ghost of Aribeth de Tylmarande reveled with you amidst the heady spoils of war. She never grew old. She never lost her beauty nor did her feigned passion for you fade. Commanded by her True Name to love you, she played the role faithfully until you were old and gray and triumphant. As you died, she leaned close, biting a chunk of flesh out of your ear. "I shall see you in the Hells, my love," she whispered. She disappeared soon after your death, and legend claims that you did meet once more in the Hells, exactly as she promised. The battle that came then was vicious, its outcome unknown...*/
-@102564 = ~NP: Ironwood mace~ /*Ironwood Club*/
-@102565 = ~NP: This mace is crafted by the best blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace remains a mystery, it is only known that for this the blacksmith needed an iron tree. The ironwood mace is strong enough to crush any golem up to level 20 into dust. However, any other creature that gets hit with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds. PARAMETERS: Features: Owner gains +1 defense (except for ranged weapons) Combat Abilities: Instantly destroys any golem up to level 20 (Saving throw against death is allowed with a -4 penalty) 30% chance to stun the enemy for 3 rounds THAC0: +4 Damage: 1D6 +4 Damage Type: Blunt Weight: 3 Haste Factor: 3 Skill Type: Cudgel Type: One-Handed Requirement: 5 Strength Not used by: Mages Druids Monks Beastmasters~ /*Type of Feat: ClassPrerequisite: Assassin.
-Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
-Use: Automatic.*/
-@102566 = ~NP: Founder's Flail~ /*Flail of Jergal*/
-@102567 = ~NP: This flail is crafted by the finest smiths in Neverwinter. How they managed to make this masterpiece from a simple flail remains a mystery, it is only known that for this the blacksmith needed an iron tree. The founder's flail is so durable that it can smash any golem up to level 20 into dust. However, any other creature that gets hit by this flail will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds. PARAMETERS: Features: Owner gains +1 defense (except for ranged weapons) Combat Abilities: Instantly destroys any golem up to level 20 (Saving throw against death is allowed with a -4 penalty) 25% chance to stun the enemy for 3 rounds THAC0: +4 Damage: 1D6 +4 +2 piercing damage Damage Type: Blunt Weight: 3 Haste Factor: 3 Skill Type: Cudgel Type: One-Handed Requirements: 5 Strength Unused: Mages Druids Monks Beastmasters~ /*This blade is almost as nasty as the personality that now permanently resides within it. With each hit, it draws a little bit of the life-force inside and uses some of it to heal the wielder. Whether it could potentially draw more of that life-force, or has other side effects, is unknown... even to Enserric himself. The long-dead mage has been within the weapon for quite a while but has not gotten much use, seeing as for decades the primary user was even deader than Enserric. ...hmmm. Deader? More dead? Can something be more dead? This is exactly the sort of question that makes Enserric clam up and begin muttering in pure agitation...*/
+@102563 = ~This club is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of an ordinary club is a mystery, all that is known is that the blacksmith needed Ironwood to make it. The Gladiator's Club is so strong that it can smash into dust any golem up to level 20 inclusive. However, any other creature struck with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
+
+STATISTICS:
+
+Equipped Abilities:
+- Armor Class: +1 (except missile attacks)
+
+Combat abilities:
+- Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
+- 30% chance per hit to stun the target
+
+THAC0: +4
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requirements: 5 Strength
+
+Not Used By:
+ Mage~
+@102564 = ~Ironwood Mace~
+@102565 = ~This mace was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Ironwood Mace is so strong that it can crush any golem up to and including level 20 into dust. However, any other creature struck by this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
+
+STATISTICS:
+
+Equipped Abilities:
+- Armor Class: +1 (except missile attacks)
+
+Combat abilities:
+- Destroy any golem less than 20 level per hit
+- Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
+- 30% chance per hit to stun the target
+
+THAC0: +4
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Mace
+Type: One-handed
+Requirements: 5 Strength
+
+Not Used By:
+ Mage
+ Druid
+ Monk
+ Beastmaster~
+@102566 = ~Founder's Flail~
+@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Founder's Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
+
+Equipped Abilities:
+- Armor Class: +1 (except missile attacks)
+
+Combat abilities:
+- Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
+- 25% chance per hit to stun the target
+
+THAC0: +4
+Damage: 1d6+4, +2 (piercing)
+Damage Type: crushing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requirements: 5 Strength
+
+Not Used By:
+ Mage
+ Druid
+ Monk
+ Beastmaster~
 @102568 = ~NP: Mace of repose +4~ /*Mace of Disruption +2*/
 @102569 = ~NP: This mace is crafted by the best blacksmiths in Neverwinter. Apparently the gods themselves helped the blacksmith in his work. From an unremarkable mace, he managed to forge a mace of repose, however, he used the special holy water we found. This mace is a nightmare for all evil spirits. It is capable of destroying the undead with one blow and causes considerable additional damage to all demonic creatures. To be fair, it should be said that it cannot destroy the undead of higher levels (over level 20). PARAMETERS: Combat properties: 1D6 +1 additional damage to undead 2D3 additional damage to demons Destroys undead no higher than level 20 Immunity to level draining THAC0: +4 Damage: 1D6 + 4 Damage type: bludgeoning Weight: 8 Speed factor: 6 Required skill: maces Type : one-handed Requirements: strength 10 Cannot use: Druid Mage Thief~ /*Type of Feat: ClassPrerequisite: Blackguard level 4.
 Specifics: Whenever the character makes a successful attack against an opponent who is flat-footed, cannot see them, or who is in combat with someone else, the character's blow delivers extra damage. This extra damage is +1d6 at 4th level and an additional +1d6 every three levels thereafter. This extra damage is not multiplied in the case of a critical hit.
