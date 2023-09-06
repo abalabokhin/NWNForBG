@@ -1531,52 +1531,85 @@ Used By:
  Druid
  Ranger
  Monk~
-@102476 = ~NP: Scimitar +3, &quot;Rage of Andros&quot;~ /*Scimitar of Speed*/
-@102477 = ~NP: Andros was a ranger. One day, orcs came to his forest and cut down everything, to the last tree, to build their new fortress. Milikki answered Andros's prayers and gave him this blade so that he could take revenge on the offenders of Nature. Andros single-handedly slaughtered all the orcs in their stronghold. PARAMETERS: Equipped: +2 to defense class Combat abilities: 50% chance to stun the enemy if saving throw against spells is failed THACO: +3 bonus Damage: 1D8 +3, +2D4 electricity Damage type: slashing Weight: 3 Speed factor: 2 Weapon Skill: Scimitar/Wakizashi/Ninja-To Type: 1-handed Useable: Druid Ranger~ /*A nobleman by the name of Hemmel Masterson is huddled near the docks with his family. He gave a valuable amulet to Callik, second-in-command of the Bloodsail pirate's guild, in an arrangement whereby the Masterson family hoped to escape quarantine by ship. Callik has left them high and dry, however, opting to keep the amulet for himself.*/
-@102478 = ~NP: Fools! You will pay for this!~ /*Oh, This'll cost you!*/
-@102479 = ~NP: Fools! No one dares to enter my house without permission! You will pay for this!~ /*How dare you invade our home, foul fiends!*/
+@102476 = ~Scimitar +3, Fury of Andros~
+@102477 = ~Andros was a ranger. One day orcs came into his forest and cut down every last tree to build their new fortress. Milikki answered Andros' prayers and gave him this blade so that he could take revenge on Nature's abusers. Andros single-handedly slaughtered all the orcs in their fortress.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+
+THAC0: +3
+Damage: 1d8+3, +2d4 (electricity)
+Damage Type: slashing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+
+Used By:
+ Druid
+ Ranger~
+@102478 = ~Fools! You will pay for this!~
+@102479 = ~Fools! No one dares to enter my house without permission! You will pay for this!~
 @102480 = ~High Captain Baram~
-@102481 = ~NP: Special trap detected and neutralized~ /*registry value not found*/
-@102482 = ~NP: Summon Demon (Summon/Summon) Level: 8 Range: caster's line of sight Duration: 20 rounds Cast Time: 8 Area of Effect: special Saving Throw: none This spell summons a stronger denizen of the Lower Planes, whose nature is directly related to the alignment of the summoner. A lawful spellcaster summons Gelugon, while a chaotic caster summons Glabreza. Nikalot comes to the call of a neutral caster. In any case, the caster cannot control the summoned creature, and it will attack anyone who is not protected from evil, such as a spell, including random bystanders and the summoner with his group. Remember that the caster is solely responsible, both in reputation and alignment, for the actions of the summoned being.~ /*Type of Feat: SpellPrerequisite: 21st level, Quicken Spell, Spellcraft 30, ability to cast 9th level spells.
-Specifics: This feat allows the character to cast spells with a moment of thought. 
-This feat may be taken multiple times:
-Automatic Quicken Spell I: Quicken any level 0 - 3 spells
-Automatic Quicken Spell II: Quicken any level 4 - 6 spells
-Automatic Quicken Spell III: Quicken any level 7 - 9 spells
-Use: Automatic.*/
-@102485 = ~NP: Summon Shadow Demon~ /*Summon Celestial*/
-@102490 = ~NP: Send sickness~ /*Bolt, Disease*/
-@102492 = ~NP: Androd Guard~ /*House Guards*/
+@102481 = ~Special trap detected and neutralized~
+@102482 = ~Summon Demon
+(Conjuration/Summoning)
+
+Level: 7
+Range: Caster's field of vision.
+Duration: 20 rounds
+Casting Time: 8
+Area of Effect: Special
+Saving Throw: None
+
+This spell summons a stronger inhabitant of the Lower Planes, whose nature is directly influenced by the alignment of the summoner. A lawful spellcaster summons Gelugon, while a chaotic spellcaster summons Glabrezu. A neutral caster's call is answered by Nycaloth. In either case, the caster cannot control the summoned creature, and it will attack anyone who is not protected from evil, including random bystanders and or the summoner's party memebers. Remember that the caster is fully responsible, both by his reputation and his alignment for the actions of the summoned creature.~
+@102485 = ~Summon Demon Shadows~
+@102490 = ~Cause Disease~
+@102492 = ~Androd Guard~
 @102493 = ~Baram's Head~
 @102494 = ~This is the head of the very dead High Captain Baram of Luskan...~
-@102495 = ~NP: Hey! These bastards want to skin me!~ /*Hey, wha... you distracted me!*/
-@102496 = ~NP: Ughh... Bring me their hearts on a sparkling tray!~ /*Lay death at their doorstep*/
-@102497 = ~NP: How dare you?! They decided that I was an ordinary commoner!~ /*Now will you do as I ask, hmmm?*/
-@102498 = ~NP: Find someone else to do your dirty work, coward.~ /*"Has anyone ever told you how passive aggressive you are?"*/
-@102499 = ~NP: Hmm ... Something my servants left too quickly~ /*Whoa... This pack is too heavy.*/
-@102500 = ~NP: Place on a tray!~ /*I need some help with this!*/
-@102501 = ~NP: back off! I'm done here man...~ /*I am finished here.*/
-@102502 = ~NP: Patch holes on me and I'll cut again!~ /*Get out, before I call the watch on you!*/
-@102503 = ~NP: Save my ass guys!~ /*Rescue My Family*/
-@102504 = ~NP: Trying to sneak in quietly, carcass?~ /*Why don't you let me squeeze through there.*/
-@102505 = ~NP: Well, then I'll be the monkey's uncle...~ /*Well, I'll be off now. Farewell.*/
-@102506 = ~NP: Oh! What are these outbreaks?~ /*What challenges are these?*/
-@102507 = ~NP: Throw zakly right under your feet!~ /*Time Crystal*/
-@102508 = ~NP: You blinded me, but I can still feel you!~ /*Heal me while there's enough left of me to heal!*/
-@102509 = ~NP: Let me look at them. That one, the crooked one - he's mine!~ /*Fine. I shall see these shadow wares.*/
-@102510 = ~NP: Which of them? They all look like a bunch of lepers, haha!~ /*This horn appears to be a normal trumpet.*/
-@102511 = ~NP: You can put down your helmet. We will rip the guts of these idiots anyway!~ /*Would you know where would I find Geth?*/
-@102512 = ~NP: I'll cover you, buddy.~ /*Me coulds help you.*/
-@102513 = ~NP: Do you want to rip open my guts, spinning like a copper?~ /*You want to find this cult badly, do you?*/
-@102514 = ~NP: explosive trap~ /*Sound Burst*/
-@102515 = ~NP: spike trap~ /*Alarm Trap*/
+@102495 = ~Hey! These bastards want to skin me!~
+@102496 = ~Ugghhhh.... Bring me their hearts on a shiny tray!~
+@102497 = ~How dare you?! You think I am just a commoner!~
+@102498 = ~Find someone else to do your dirty work, coward.~
+@102499 = ~Hmm... My servants left too quickly~
+@102500 = ~Meat on a tray!~
+@102501 = ~Fuck off! I'm done here, fellas...~
+@102502 = ~Patch the holes on me and I'll be cutting again!~
+@102503 = ~Save my ass, boys!~
+@102504 = ~Trying to sneak in quietly, carcass?~
+@102505 = ~Well, I'll a the monkey's uncle...~
+@102506 = ~Oh! What are these flashes?~
+@102507 = ~Throwing spells at my feet!~
+@102508 = ~You blinded me, but I can still feel you!~
+@102509 = ~Let me look at them. The crooked one over there, it's mine!~
+@102510 = ~Which one of them? They all look like a bunch of lepers, haha!~
+@102511 = ~You can put your helmet away. We're gonna bust these idiots' guts!~
+@102512 = ~I got your back, buddy.~
+@102513 = ~You want to rip my guts out by spinning like a copper?~
+@102514 = ~Explosive trap~
+@102515 = ~Spike trap~
 @102516 = ~Barax~
-@102517 = ~NP: &quot;Wink and Pinch&quot;~ /*Dwarven Defender*/
-@102520 = ~NP: Glove~ /*Mittens.*/
-@102524 = ~NP: Compound Shortbow~ /*Rotten Shortbow*/
-@102525 = ~NP: Compound bows are longbows or shortbows that are composed and made from more than one material. This gives the weapon more flexibility and allows arrows fired from this bow to deal more damage. This bow can only be used by characters with a Strength value of 16 or higher. STATS: Damage: +1 improvement Weight: 2 Haste Factor: 6 Skill Type: Short Bow Type: Two-Handed Requirement: 16 Strength Unusable: Druids Priests Mages~ /*Type of Feat: GeneralPrerequisite: Base attack bonus +3, Wis 13+.
-Specifics: Wisdom guides the character's ranged attacks, letting them use their Wisdom modifier, if it is higher, instead of their Dexterity when firing ranged weapons.
-Use: Automatic.*/
+@102517 = ~Wink and Tickle~
+@102520 = ~Gauntlet~
+@102524 = ~Composite Shortbow~
+@102525 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. This bow can only be used by characters with a Strength value of 16 or higher.
+
+STATISTICS:
+
+Damage: +1
+Weight: 2
+Speed Factor: 6
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires: 16 Strength
+
+Not Used By:
+ Druid
+ Priest
+ Mage~
 @102528 = ~Bela~
 @102529 = ~Belarian~
 @102530 = ~Belial~
