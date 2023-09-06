@@ -1453,22 +1453,84 @@ Used By:
  Fighter
  Druid
  Bard~
-@102468 = ~NP: Staff of Silvanus~ /*Staff of Meldanen*/
-@102469 = ~NP: This holy staff is blessed by Silvanus and is usually given to his most pious followers to help restore balance to the world. The staff grants many abilities and is especially useful for druids fighting off sorcerers. PARAMETERS: Adds +1 to defense class Adds +10% to magic defense Allows you to cast the spell: Insect Swarm 1 time per day Wrong Magic 1 time per day THAC0: +3 Damage: 1d6+3 Damage type: bludgeoning Weight: 4 Speed factor : 1 Skill: Staff Type: 2-handed Requirements: 5str Used by: Druids~ /*Type of Feat: ClassPrerequisite: Pale Master level 4.
-Specifics: The Pale Master can summon an undead creature twice per day as a spell-like ability. 
-The level of the Pale Master determines the type of undead that is summoned:
- 4th and 5th level: Ghoul
- 6th level: Shadow
- 7th level: Ghast
- 8th level: Wight
- 9th level: Wraith
-Use: Selected.*/
-@102470 = ~NP: Forest Scimitar~ /*Rusted Scimitar*/
-@102471 = ~NP: This blade was forged by druids for druids. Only a true servant of Nature can take it into his hands. This is a very powerful and accurate weapon, but its true power is that with its help the owner greatly expands his magical abilities. STATS: When equipped: Allows druids to memorize 1 additional spell of each level Combat Ability: THAC0: +3 bonus Damage: 1D8 +3 Damage Type: Slashing Weight: 5 Speed Factor: 2 Skill Type: Scimitar/Wakizashi/Ninja-To Type: 1-Hand Requires: 12 Wisdom Used by: Druids~ /*Thayvian Circlets were created by the Red Wizards to help them fend off the aggressive Luskan Brotherhood. Though designed only to augment spellcasting abilities, they have the additional benefit of improving the wearer's hardiness, reflexes, and willpower. Since their introduction, the conflict between the two groups has been markedly restrained.*/
-@102472 = ~NP: Natural Fury~ /*Greater Rage*/
-@102473 = ~NP: This special sword was made especially for the Rangers and contains the power of Nature itself. Only those who know the ways of Nature and have martial skills can take up this weapon. The blade is very accurate and poisons its victims with every hit. STATS: Poisons the victim on impact. Poison deals 5 damage. damage per second for 10 seconds. THAC0: +4 bonus Damage: 1D8 +2 Damage Type: Slashing Weight: 4 Haste Factor: 1 Skill Type: Long Sword Type: 1-handed Requires: 10 Strength Used by: Rangers~ /*Axes of this type were created as training tools for an organization of rangers and woodsmen, but their use has fallen out of favor. When combined with another weapon they grant agility and skill in the use of both at once, but it was found that some students relied too much upon them, and did not separately develop the skills that the items enhance.*/
-@102474 = ~NP: Forest Cape~ /*Woodsman Outfit*/
-@102475 = ~NP: These cloaks are the best type of clothing for true conservationists - druids and rangers. STATS: Equipped: +50 Shadow Hide +5 Defense Rating against Throwing Weapons Defense Rating: 2 (base) Weight: 4 Usable by: Druid Ranger Monk~ /*Your henchmen have a variety of abilities. Please consult their character sheets to view the list of their current skills and feats, so that you may equip them with the weapons that they will use most effectively.*/
+@102468 = ~Staff of Silvanus~
+@102469 = ~This holy staff is blessed by Silvanus and is usually given to his most devout followers to help restore balance to the world. The staff grants many abilities and is especially useful for druids fighting off sorcerers.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Magic Resistance: +10%
+
+Charge abilities:
+- Can cast Summon Insects once per day
+- Can cast Miscast Magic once per day
+
+THAC0: +3
+Damage: 1d6+3
+Damage Type: crushing
+Weight: 4
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Used By:
+ Druid~
+@102470 = ~Forest Scimitar~
+@102471 = ~This blade was forged by druids for druids. Only a true servant of Nature can wield it. It is a very powerful and accurate weapon, but its true power lies in the fact that by using it, the wielder greatly expands his magical abilities.
+
+STATISTICS:
+
+Equipped abilities:
+- The druid can memorize additional spell of every level
+
+THAC0: +3
+Damage: 1d8+3
+Damage Type: slashing
+Weight: 5
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+Requirements: 12 Wisdom
+
+Used By:
+ Druid~
+@102472 = ~Nature's Fury~
+@102473 = ~This special sword was made especially for rangers and contains the power of Nature herself. Only those who know the ways of Nature and have combat skills can wield this weapon. The blade is very accurate and poisons its victims with every hit.
+
+STATISTICS:
+
+Combat abilities:
+- Poisons the target on hit (5 damage per second for 10 seconds)
+
+THAC0: +4
+Damage: 1d8+2
+Damage Type: slashing
+Weight: 5
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requirements: 10 Strength
+
+Used By:
+ Ranger~
+@102474 = ~Forest Cloak~
+@102475 = ~Such cloaks are the best type of clothing for true protectors of nature - druids and rangers.
+
+STATISTICS:
+
+Equipped abilities:
+- Hide in Shadows: +50
+- Armor Class Class against missile weapons: +5
+
+Armor Class: 2
+Weight: 4
+
+Used By:
+ Druid
+ Ranger
+ Monk~
 @102476 = ~NP: Scimitar +3, &quot;Rage of Andros&quot;~ /*Scimitar of Speed*/
 @102477 = ~NP: Andros was a ranger. One day, orcs came to his forest and cut down everything, to the last tree, to build their new fortress. Milikki answered Andros's prayers and gave him this blade so that he could take revenge on the offenders of Nature. Andros single-handedly slaughtered all the orcs in their stronghold. PARAMETERS: Equipped: +2 to defense class Combat abilities: 50% chance to stun the enemy if saving throw against spells is failed THACO: +3 bonus Damage: 1D8 +3, +2D4 electricity Damage type: slashing Weight: 3 Speed factor: 2 Weapon Skill: Scimitar/Wakizashi/Ninja-To Type: 1-handed Useable: Druid Ranger~ /*A nobleman by the name of Hemmel Masterson is huddled near the docks with his family. He gave a valuable amulet to Callik, second-in-command of the Bloodsail pirate's guild, in an arrangement whereby the Masterson family hoped to escape quarantine by ship. Callik has left them high and dry, however, opting to keep the amulet for himself.*/
 @102478 = ~NP: Fools! You will pay for this!~ /*Oh, This'll cost you!*/
