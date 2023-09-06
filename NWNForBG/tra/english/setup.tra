@@ -1697,9 +1697,19 @@ Not Used By:
 @102543 = ~Bertrand~
 @102544 = ~Bethany~
 @102553 = ~Billiam~
-@102554 = ~NP: Blascar Lothlon~ /*Smooth Token*/
-@102555 = ~NP: Ulutiun's Ice Necklace~ /*Copper Necklace*/
-@102556 = ~NP: Several of these decorations were created using ice magic by a half-mad magician who wandered among the Ulutiun tribes of the Great Glacier. Two of the ice crystal necklaces are dark as night; the other four are transparent like glass. . The owner of the necklace can tear off such a crystal and hurl it at an enemy up to 25 meters away. This must be done within 1 turn, because then the crystal will melt in his hands. Upon hitting an enemy, the crystal explodes in an Ice Storm. To use crystals, you need to be able to handle a sling, have a sling, and have a free weapon slot for projectiles. STATS: Has 6 ice crystals Not used by: Wizard Assassins~ /*Briarspikes look like they could have been plucked from some giant quill-covered beast, but the methods involved are very sophisticated and bear the hallmarks of Menold of Waterdeep. This may shed some light on his fate, as he was reported lost to an orc raid on his tower years ago. He may have attempted to buy his freedom with his services, but it would have only made him more valuable as a prisoner.*/
+@102554 = ~Blaskar Lauthlon~
+@102555 = ~Ulutiun Ice Necklace~
+@102556 = ~Several of these jewelry pieces were created with ice magic by a half-mad mage who wandered among the Ulutiun tribes of the Great Glacier. Two of the necklace's ice crystals are as dark as night; the other four are as clear as glass.
+
+The owner of the necklace can break off one of these crystals and hurl it at an enemy up to 80 feet away. This must be done within 1 turn, because then the crystal will melt in his hands. Once it hits the enemy, the crystal explodes with an Ice Storm. To use crystals, one must be able to use a sling, have a sling, and have an available slot for ammunition.
+
+STATISTICS:
+
+Chard abilities:
+- Can throw one of 6 crystals
+
+Not Used By:
+ Wizard Slayers~
 @102557 = ~NP: Ice Shard~ /*Ice Chunk*/
 @102558 = ~NP: Sighted staff~ /*Quarterstaff*/
 @102559 = ~NP: This spiral staff with silver inlay and amber pommel allows you to cast the following spells once per day: Sorcerer's Eye True Vision STATS: Damage: 1D6 + 1 Damage Type: bludgeoning Weight: 4 Speed Factor: 4 Skill Type: Staff Type: 2-Hand Requirements: Str 5 Requires: Level 10 Str 5 Used by: Mages (dual or multi-class)~ /*To pass the Divine Spellcaster test, you must use your healing spells to heal the man along the south wall of the room, and also use your ability to turn undead on the skeleton along the north wall. Return to Elynwyd when you have completed both of these tasks.*/
