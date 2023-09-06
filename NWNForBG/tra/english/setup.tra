@@ -1615,16 +1615,85 @@ Not Used By:
 @102530 = ~Belial~
 @102531 = ~The Oath of Belial, Lord of Fire~
 @102532 = ~This is the written oath of the demon Belial, Lord of Fire.~
-@102533 = ~NP: Belt of Orc Endurance~ /*Potion of Endurance*/
-@102534 = ~NP: This belt significantly improves the constitution of the wearer. King Violos wore it when he led a campaign against the swamp trolls. The previous winter had weakened him greatly, and he was no longer the healthy man he had been known to be. The belt added several years to his life and made his subjects once again believe in their king. PARAMETERS: The constitution is set to 19~ /*If my own family had had its way, I would be by now comfortably married to a wealthy man I could never respect, bored to tears in my large Blacklake district mansion.*/
-@102535 = ~NP: Fencer's Belt~ /*Fighter, Finesse*/
-@102536 = ~NP: This beautiful belt magically combines the useful properties of several simpler items, so they provide offensive and defensive capabilities worthy of any great fighter. STATS: Equip Ability: THACO: +2 Upgrade Movement Speed: +2 Upgrade Agility set to 20 Special Abilities: Improved haste 2x/day for 5 rounds Weight: 2 Cannot use: Kensai Wizard Slayers~ /*There are scatterings of many small humanoid tracks in the area... kobold tracks, without a doubt. The older and more numerous tracks head towards Hilltop. A much smaller number head north, back towards the mountains, and those tracks seem to indicate the kobolds were running or fleeing at the time.*/
+@102533 = ~Belt of Orc Endurance~
+@102534 = ~This belt greatly improves the constitution of the wearer. King Violos wore it when he led a campaign against the swamp trolls. The previous winter had weakened him greatly, and he was no longer the healthy man he had been known to be. The belt added a few years to his life and made his subjects believe in their king again.
+
+STATISTICS:
+
+Equipped abilities:
+- Constitution: 19~
+@102535 = ~Fencer's Belt~
+@102536 = ~This beautiful belt magically combines the useful properties of several simpler items, so it provides offensive and defensive capabilities worthy of any great fighter.
+
+STATISTICS:
+
+Equipped abilities:
+- THAC0: +2
+- Movement Speed: +2
+- Dexterity: 20
+
+Charge abilities:
+- Improved Haste two times per day for 5 rounds~
+
+Weight: 2
+
+Not Used By:
+ Kensai
+ Wizard Slayer~
 @102537 = ~Belt of the Performer +1~
-@102538 = ~NP: This leather belt looks quite harmless, its true power is not visible until it is worn. Small inscriptions embossed into the leather stretch all over the belt. These inscriptions are made in an unknown language, and the true history of this subject is also unknown. PARAMETERS: Charisma is set to 16 +1 to dexterity +1 to saving throws +1 additional mage spell level 1-5 +1 to casting speed Immunities to dementia and silence Vocalization Weight: 2 Not used by: Evil characters~ /*This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.*/
-@102539 = ~Belt of the Performer +1~
-@102540 = ~NP: This leather belt looks quite harmless, its true power is not visible until it is worn. Small inscriptions embossed into the leather stretch all over the belt. These inscriptions are made in an unknown language, and the true history of this subject is also unknown. PARAMETERS: Charisma set to 17 +2 to dexterity +2 to saving throws +1 additional mage spell level 1-6 +2 to casting speed Immunities to dementia and silence Vocalization Weight: 2 Not used by: Evil characters~ /*This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.*/
+@102538 = ~This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: 16
+- Dexterity: +1
+- Saving Throw: +1
+- The wearer can memorize one additional wizard spell per levels 1-5
+- Improves casting speed by 1
+- Immunity to Silence and Feeblemind
+– Vocalize
+
+Weight: 2
+
+Not Used By:
+ Evil Characters~
+@102539 = ~Belt of the Performer +2~
+@102540 = ~This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: 17
+- Dexterity: +2
+- Saving Throw: +2
+- The wearer can memorize one additional wizard spell per levels 1-6
+- Improves casting speed by 2
+- Immunity to Silence and Feeblemind
+– Vocalize
+
+Weight: 2
+
+Not Used By:
+ Evil Characters~
 @102541 = ~Belt of the Performer +3~
-@102542 = ~NP: This leather belt looks quite harmless, its true power is not visible until it is worn. Small inscriptions embossed into the leather stretch all over the belt. These inscriptions are made in an unknown language, and the true history of this subject is also unknown. PARAMETERS: Charisma is set to 18 +3 to dexterity +3 to saving throws +1 additional mage spell level 1-7 +3 to casting speed Immunities to dementia and silence Vocalization Weight: 2 Not used by: Evil characters~ /*This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.*/
+@102542 = ~This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: 18
+- Dexterity: +3
+- Saving Throw: +3
+- The wearer can memorize one additional wizard spell per levels 1-7
+- Improves casting speed by 3
+- Immunity to Silence and Feeblemind
+– Vocalize
+
+Weight: 2
+
+Not Used By:
+ Evil Characters~
 @102543 = ~Bertrand~
 @102544 = ~Bethany~
 @102553 = ~Billiam~
