@@ -1705,14 +1705,31 @@ The owner of the necklace can break off one of these crystals and hurl it at an 
 
 STATISTICS:
 
-Chard abilities:
+Charge abilities:
 - Can throw one of 6 crystals
 
 Not Used By:
  Wizard Slayers~
-@102557 = ~NP: Ice Shard~ /*Ice Chunk*/
-@102558 = ~NP: Sighted staff~ /*Quarterstaff*/
-@102559 = ~NP: This spiral staff with silver inlay and amber pommel allows you to cast the following spells once per day: Sorcerer's Eye True Vision STATS: Damage: 1D6 + 1 Damage Type: bludgeoning Weight: 4 Speed Factor: 4 Skill Type: Staff Type: 2-Hand Requirements: Str 5 Requires: Level 10 Str 5 Used by: Mages (dual or multi-class)~ /*To pass the Divine Spellcaster test, you must use your healing spells to heal the man along the south wall of the room, and also use your ability to turn undead on the skeleton along the north wall. Return to Elynwyd when you have completed both of these tasks.*/
+@102557 = ~Ice Shard~
+@102558 = ~Staff of Sight~
+@102559 = ~This spiral-shaped staff with silver inlay and amber tip allows to use Wizard Eye and True Vision spells once per day.
+
+STATISTICS:
+
+Charge abilities:
+- Can cast Wizard Eye ones per day
+- Can cast True Vision ones per day
+
+Damage: 1d6+1
+Damage Type: crushing
+Weight: 4
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 10 Level, 5 Strength
+
+Used By:
+ Mage~
 @102560 = ~NP: Cyclops Arm +3, +3 against giants~ /*Mind-Affecting Spells*/
 @102561 = ~NP: This morningstar once belonged to a barbarian who lived in Icewind Dale. The weapon is very effective against giants, but not enough to take on a dozen Frost Giants. The barbarian died, and the morning star fell into the hands of the winners of that heated battle. STATS: Damage: 2D4 + 3, +3 against giants THAC0: +3, +3 against giants Damage type: crushing Weight: 9 Haste factor: 5 Skill type: flail/morningstar Type: 1-handed Requires: 11 strength Do not use: Druids Mages Thieves Monks Beastmasters~ /*Dorna seldom speaks of her past, but you know she travelled for nearly a week through a treacherous part of the Silver Marches to apprentice herself to Drogan Droganson when he retired and decided to take on some apprentices.  She is somewhat dour and pragmatic.  Her role as professional ambush-spotter and trap-springer has left her with a rather grim outlook on life.*/
 @102562 = ~NP: Gladiator's club~ /*Gladiator's Club +1*/
