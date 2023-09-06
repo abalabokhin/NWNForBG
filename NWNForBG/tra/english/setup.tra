@@ -1730,9 +1730,28 @@ Requirements: 10 Level, 5 Strength
 
 Used By:
  Mage~
-@102560 = ~NP: Cyclops Arm +3, +3 against giants~ /*Mind-Affecting Spells*/
-@102561 = ~NP: This morningstar once belonged to a barbarian who lived in Icewind Dale. The weapon is very effective against giants, but not enough to take on a dozen Frost Giants. The barbarian died, and the morning star fell into the hands of the winners of that heated battle. STATS: Damage: 2D4 + 3, +3 against giants THAC0: +3, +3 against giants Damage type: crushing Weight: 9 Haste factor: 5 Skill type: flail/morningstar Type: 1-handed Requires: 11 strength Do not use: Druids Mages Thieves Monks Beastmasters~ /*Dorna seldom speaks of her past, but you know she travelled for nearly a week through a treacherous part of the Silver Marches to apprentice herself to Drogan Droganson when he retired and decided to take on some apprentices.  She is somewhat dour and pragmatic.  Her role as professional ambush-spotter and trap-springer has left her with a rather grim outlook on life.*/
-@102562 = ~NP: Gladiator's club~ /*Gladiator's Club +1*/
+@102560 = ~Cyclops Arm +3, +3 vs. Giants~
+@102561 = ~This morning star once belonged to a barbarian who lived in the Icewind Dale. The weapon was very effective against giants, but not enough to handle a dozen Frost Giants. The barbarian died, and the morning star fell into the hands of the victors of that heated battle.
+
+STATISTICS:
+
+Damage: 2d4+3, +3 vs. giants
+THAC0: +3, +3 vs. giants
+Damage Type: crushing
+Weight: 9
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requirements: 11 Strength
+
+Not Used By:
+ Druid
+ Mage
+ Thief
+ Monk
+ Ranger
+ Beastmaster~
+@102562 = ~Gladiator's Club~
 @102563 = ~NP: This mace is crafted by the finest smiths in Neverwinter. How they managed to make this masterpiece from an ordinary club remains a mystery, it is only known that for this the blacksmith needed an iron tree. The gladiator's mace is so durable that it can smash any golem up to level 20 into dust. However, any other creature that received a blow with this club will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds. PARAMETERS: Features: Owner gains +1 defense (except for ranged weapons) Combat Abilities: Instantly destroys any golem up to level 20 (Saving throw against death is allowed with a -4 penalty) 30% chance to stun the enemy for 3 rounds THAC0: +4 Damage: 1D6 +4 Damage Type: Blunt Weight: 3 Haste Factor: 2 Skill Type: Cudgel Type: One-Handed Requirements: 5 Strength Unusable: Mages~ /*The ghost of Aribeth de Tylmarande reveled with you amidst the heady spoils of war. She never grew old. She never lost her beauty nor did her feigned passion for you fade. Commanded by her True Name to love you, she played the role faithfully until you were old and gray and triumphant. As you died, she leaned close, biting a chunk of flesh out of your ear. "I shall see you in the Hells, my love," she whispered. She disappeared soon after your death, and legend claims that you did meet once more in the Hells, exactly as she promised. The battle that came then was vicious, its outcome unknown...*/
 @102564 = ~NP: Ironwood mace~ /*Ironwood Club*/
 @102565 = ~NP: This mace is crafted by the best blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace remains a mystery, it is only known that for this the blacksmith needed an iron tree. The ironwood mace is strong enough to crush any golem up to level 20 into dust. However, any other creature that gets hit with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds. PARAMETERS: Features: Owner gains +1 defense (except for ranged weapons) Combat Abilities: Instantly destroys any golem up to level 20 (Saving throw against death is allowed with a -4 penalty) 30% chance to stun the enemy for 3 rounds THAC0: +4 Damage: 1D6 +4 Damage Type: Blunt Weight: 3 Haste Factor: 3 Skill Type: Cudgel Type: One-Handed Requirement: 5 Strength Not used by: Mages Druids Monks Beastmasters~ /*Type of Feat: ClassPrerequisite: Assassin.
