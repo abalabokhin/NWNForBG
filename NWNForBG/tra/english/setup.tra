@@ -537,7 +537,7 @@ His only concern about doing such a thing is that the magic that controlled the 
 @102291 = ~Trap~
 @102295 = ~The magic cloud has dissipated~
 @102296 = ~Aawill~
-@102297 = ~Adamantine~
+@102297 = ~Adamantite~
 @102298 = ~It is a piece of adamantite ore, that can be used as an ingredient to create magical items.
 
 Weight: 12~
@@ -2021,25 +2021,93 @@ Hush, here they come to be killed once more. The longer I stay here, the more I 
 @102617 = ~Docks Citizen~
 @102618 = ~Claudus~
 @102619 = ~Harbinger Kin Greatsword~
-@102620 = ~NP: This unique two-handed sword is crafted by the finest smiths in Neverwinter. They managed to reforge a simple enchanted sword by adding some adamatine ore to it. The result is a two-handed sword with amazing properties. It is so easy to handle that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The wielder of this sword can wield it much better and faster than any other two-handed sword. In addition, the sword inflicts additional damage to the enemy with fire and cold magic. PARAMETERS: Features: The owner gains +1 to two-handed sword skill +1 attack per round Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 2 points of magic fire damage + 2 points of magic cold damage THAC0: improvement +6 Damage: 1D12 +4 Damage Type: Slashing Weight: 10 Speed Factor: 8 Required Skill: Two-Handed Swords Type: Two-Handed Requirements: Strength 14 Cannot Use: Druid Priest Mage Thief~ /*Type of Feat: ClassPrerequisite: Rogue.
-Specifics: Whenever the character makes a successful attack against an opponent who is flat-footed, cannot see them, or who is in combat with someone else, the character's blow delivers extra damage. This extra damage is +1d6 at 1st level and an additional +1d6 every two levels thereafter. This extra damage is not multiplied in the case of a critical hit.
-Use: Automatic. Monsters of the construct and undead types are immune to sneak attacks, as are any creatures that are immune to critical hits.*/
-@102621 = ~NP: Improved Nymph Cloak~ /*Improved Ki Strike +4*/
-@102622 = ~NP: The famous Cloak of the Nymphs is famous for its ability to increase the charisma of even the most surly dwarf. It is said that a certain Cormyrian aristocrat, in the hope of making her political marriage more agreeable, went to great expense to obtain one for herself and another for her husband. In addition, the wearer of the cloak itself cannot be charmed and is immune to mind-affecting spells. PARAMETERS: Equipment options: +1 to defense class Charisma is set to 18. Protects from all types of influence on the mind - charm, confusion, fear, etc. Weight: 5 Unused by: Wizard Assassins~ /*Type of Feat: ClassPrerequisite: 21st level, Charisma 25+, Smite Good or Smite Evil.
-Specifics: Whenever the character makes a successful smite attack, it adds two times the characters level to damage. This feat may be taken multiple times, up to a maximum of 10 times - each time adding additional damage equal to the character's level to the smite attack.
-Use: Combat Mode.*/
-@102623 = ~NP: Cloak of Evil Protection +3~ /*Cloak of Protection vs Evil*/
-@102624 = ~NP: This wondrous cloak is enchanted to protect its wearer, affecting both saving throws and defense class. It is ideal for mages and other classes that cannot wear heavy and restrictive armor. It is also the perfect outfit for a demon summoner and anyone who fights against evil. PARAMETERS: Defense class: +3 bonus Saving Throws: +3 bonus Permanent protection from evil Weight: 3 Not used: by wizardslayers~ /*Type of Feat: GeneralPrerequisite: 21st level, Strength 21+, Constitution 21+ and Greater Rage.
-Specifics: When the character rages, they gain +8 to Strength and Constitution and a +4 morale bonus to Will saves. These bonuses replace the normal rage bonuses.
-Use: Combat Mode.*/
-@102625 = ~NP: Ice Cloak~ /*Ice Dagger*/
-@102626 = ~NP: This cloak was given to you as a reward from the demon Kaoquinon, whom<CHARNAME> released from the trap between the worlds. Now he does evil in Faerûn. It remains a mystery how a cloak could appear in the fiery Abyss, protecting from the cold. PARAMETERS: 100% Immunity to Cold The wearer of the cloak is protected by a blue fire shield. +2 Defense Rating (upgrade) +2 Saving Throws (upgrade) -2 Charisma (penalty)~ /*She left behind her magic and, instead, spent her life spending money. Far more money than my step-father could ever afford. She didn't care a whit for his complaints so long as he kept providing her coin.*/
-@102627 = ~NP: Robe of Voleron the Accursed~ /*Volkarion's Robe*/
-@102628 = ~NP: This very exotic robe once belonged to the lich Voleron, whom you met in the ruins of Illusk. As it turned out, it provides its owner with some protection from all forms of physical influence, and at the same time increases his resistance to magic. In addition, the wearer of this robe is immune to silence spells and can cast their spells much faster. This item is cursed and can only be removed by a spell. and multi-class~ /*Type of Feat: MetamagicPrerequisite: Ability to cast 1st-level spells.
-Specifics: Still spells are cast without a somatic component. Any penalties incurred from casting in armor do not apply to a spell prepared with this feat.
-Use: A stilled spell occupies a spell slot one level higher than normal.*/
+@102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamatite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
+
+STATISTICS:
+
+Equipped abilities:
+- The wielder has +1 to Two-handed Sword proficiency
+- Attacks per round: +1
+
+Combat abilities:
+- 80% chance to lower the traget's Armor Class by one
+
+THAC0: +6
+Damage: 1d12+4, +2(cold), +2(fire)
+Damage type: slashing
+Weight: 10
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+@102621 = ~Improved Nymph Cloak~
+@102622 = ~The fabled Nymph Cloak is renowned for its ability to increase the Charisma of even the most surly dwarf. A Cormyrean noble hoping to make her politically convenient marriage more palatable apparently went to great expense to obtain one for herself and another for her husband. In addition, the wearer of the cloak cannot be charmed and is immune to mind-affecting spells.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: 18
+- Armor Class: +1
+- Immune to all types of mind-affecting spells such as Charm, Confusion, Fear, etc.
+
+Weight: 5
+
+Not Usable By:
+ Wizard Slayer~
+@102623 = ~Cloak of Protection from Evil~
+@102624 = ~This wondrous cloak is endowed with enchantments that protect its wearer, affecting both saving throws and defense class. It is ideal for mages and other classes who cannot wear heavy and restrictive armor. It is also ideal for demon summoning mages and anyone who fights evil.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- Saving Throws: +3
+- Permanent Protection from Evil
+
+Weight: 3
+
+Not Usable By:
+ Wizard Slayer~
+@102625 = ~Ice Cloak~
+@102626 = ~This cloak was given to you as a reward from the demon Chaohinon whom <CHARNAME> released from the trap between worlds. He is now wreaking havoc on Faerûn. It remains a mystery how a cloak that protects against the cold could have appeared in the fiery Abyss.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to cold
+- Permanent Fireshield (Blue)
+- Armor Class: +2
+- Saving Throws: +2
+- Charisma: -2
+
+Weight: 3
+
+Not Usable By:
+ Wizard Slayer~
+@102627 = ~Robe of Voleron the Damned~
+@102628 = ~This rather exotic cloak once belonged to the lich Voleron, whom you met in the ruins of Illusk. As it turns out, it provides its wearer with some protection from all forms of physical attack, while at the same time increasing his resistance to magic. In addition, the wearer of this robe is immune to Silence and can read their spells much faster. This item is cursed and can only be removed with the appropriate spell.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +20%
+- Armor Class: +2
+- Saving Throws: +2
+- Improves casting speed by 2
+- Immunity to Silence
+– Vocalize
+
+Weight: 6
+
+Usable By:
+ Mage~
 @102629 = ~Male Commoner~
-@102630 = ~NP: Constance O'Deal~ /*Constance*/
+@102630 = ~Constance O'Deel~
 @102631 = ~NP: Finally it's all over! Here it is, the long-awaited death!~ /*Finally I think you're seeing the light!*/
 @102632 = ~NP: The job is done and I'm free! Farewell judge.~ /*No hurt me! Please!*/
 @102633 = ~NP: Charwood: Quint's Tale Quint Jareg, one of the two lords of Charwood, who is accused by the Guardian Spirit seems to be completely insane, and he is clearly tormented by guilt over the death of the village children in his castle so many years ago. Quintus readily admits that he gathered the children at the castle on the eve of the winter solstice several years ago, as well as the fact that he stole his brother's phylactery. He begs to be punished for his crimes. Quint gave written evidence that all of the above is true. This confession must be presented to the guardian spirit as evidence.~ /*Quint Jhareg, one of the two lords of Charwood who currently stand accused by the Guardian Spirit on the castle's main floor, has been discovered in a cell within his eastern tower. The former cleric of Lathander now seems quite mad and very much plagued by guilt over the death of the village children within this castle so long ago. Quint readily admits to gathering the children into the castle on midwinter's eve so long ago and also to stealing his brother's phylactery. He has begged that he be punished for his crimes.
