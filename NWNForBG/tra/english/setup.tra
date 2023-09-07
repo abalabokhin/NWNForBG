@@ -1931,31 +1931,96 @@ STATISTICS:
 Knowledge: Raised by 10 points permanently
 Special: The book is consumed upon use
 Usage: Place into quick item slot~
-@102601 = ~NP: Compound Shortbow +1~ /*Shortbow +1*/
-@102602 = ~NP: Compound bows are longbows or shortbows that are composed and made from more than one material. This gives the weapon more flexibility and allows arrows fired from this bow to do more damage. This bow can only be used by characters with a Strength value of 16 or higher. STATS: THAC0: +1 upgrade Damage: +2 upgrade Weight: 2 Haste Factor: 5 Skill Type: Short Bow Type: Two-Handed Requirement: 16 Strength Unusable: Druids Priests Mages~ /*Type of Feat: GeneralPrerequisite: Base attack bonus +3, Wis 13+.
-Specifics: Wisdom guides the character's ranged attacks, letting them use their Wisdom modifier, if it is higher, instead of their Dexterity when firing ranged weapons.
-Use: Automatic.*/
-@102603 = ~NP: heart seeker~ /*Text to find:*/
-@102604 = ~NP: This knife is long enough to be used in close combat, yet perfectly balanced, making it a formidable throwing weapon. The knife is enhanced with fantastic enchantments and, while innocuous in appearance, is a fearsome weapon. PARAMETERS: Features: 3% chance to immediately kill the enemy 20% chance to deal an additional 1d6 piercing damage Weapon returns to hand after throwing THAC0: +3 Damage: 1d4+2 Damage type: piercing Weight: 1 Speed factor: 0 Skill: Dagger Type: 1 -manual Requirement: 3 strength Used by: Halfling Thieves~ /*This suit of mithril armor was made specifically for Valen, crafted by the rebel drow of Lith My'athar and enchanted to allow him brief periods of enhanced speed. It is a symbol of Valen's ability to keep the rebels alive even as the Valsharess hounded them to the ends of the Underdark, and even should he receive better armor he will not part with it.*/
-@102605 = ~NP: Mage Guard~ /*Globe Gate*/
-@102606 = ~NP: A magician named Corian Grantstone was a professional duelist and after years of non-stop magic fighting, he decided to make his life much easier by creating this ring, designed specifically to deflect blows. STATS: Allows you to cast spells: 2 times per day Spell Immunity Used by: Bards Mages~ /*Type of Feat: ClassPrerequisite: Blackguard level 8.
-Specifics: Starting at 8th level, a Blackguard may cast Inflict Critical Wounds.
-Use: Selected.*/
-@102607 = ~NP: Scales of Truth~ /*Scales of Truth +1*/
-@102608 = ~NP: This fine mail is crafted by the finest smiths in Neverwinter. In an incomprehensible way, they managed to combine the incompatible - enchanted chain mail and special holy water. The result is a unique chain mail for fighting the undead. It perfectly protects the wearer from vampires, preventing them from draining your life energy. Five times per day, you can activate the special properties of chain mail to reflect the undead around you. In addition, chainmail will protect you from certain Necromancer spells, such as Banshee's Wail, Finger of Death, Death Spell, and Abi-Dalzim's Dread Wither. PARAMETERS: Defense class: 2 Immunity to level draining Immunity to deadly spells of the school of necromancy Special abilities: 3 times a day &quot;Reflect the undead&quot; Weight: 10 Requirements: strength 7 Cannot use: Druid Mage Thief Monk Stalker Beastmaster Kensai Shapeshifter~ /*One at a time, they came at you, casting their spells. All you had to do was identify each spell before it was completed and the spell would dissipate, as would the caster. But it was hard, so very hard. Each spell was different, some simple, some complex, but you had to wrack your mind to remember what you had been taught about each. What words, what gestures and what components were used in each spell? In the end, you passed with flying colors, and Drogan presented you with a small gift, the Rod of the Magi. The rod can be used once per day to increase your spellcraft ability.*/
-@102609 = ~NP: The boat is ready, as always. The new one is shiny. (sighs) Ehhh, I blew my life down the drain.~ /*Boat's all ready, by and by. Shining and new. Ready for anything... (sigh) Ohhh, I've wasted my life.*/
+@102601 = ~Composite Shortbow +1~
+@102602 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. This bow can only be used by characters with a Strength value of 16 or higher.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +2
+Weight: 2
+Speed Factor: 5
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires: 16 Strength
+
+Not Used By:
+ Druid
+ Priest
+ Mage~
+@102603 = ~Heart Seeker~
+@102604 = ~This knife is long enough to be used in close combat, while being superbly balanced, making it a formidable throwing weapon. The knife is enhanced with fantastic enchantments and, while it looks harmless, is a fearsome weapon.
+
+STATISTICS:
+
+Equipped abilities:
+- Returns to the wielder's hand after a throw
+
+Combat Abilities:
+- 3% chance to kill the target instantly
+- 20% chance to deal an additional 1d6 piercing damage
+
+THAC0: +3
+Damage: 1d4+2
+Damage Type: piercing
+Weight: 1
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requirements: 3 Strength
+
+Used By:
+ Halfling
+ Thief~
+@102605 = ~Mage Ward~
+@102606 = ~A mage named Corian Grantstone was a professional duelist, and after years of uninterrupted magical combat, he decided to make his life a lot easier by creating this ring designed specifically to deflect blows.
+
+STATISTICS:
+
+Charge abilities:
+- Spell Immunity two times per day
+
+Used By:
+ Mage
+ Bard~
+@102607 = ~Scales of Truth~
+@102608 = ~This remarkable chain mail is made by the finest blacksmiths in Neverwinter. In some unfathomable way, they managed to combine the incompatible - enchanted armor and special holy water. The result is a unique undead armor that protects the wearer from vampires, preventing them from sucking your life energy. Three times a day you can activate its special properties to repel the undead that surround you. It will also protect you from certain necromancer spells such as Wail of the Banshee, Finger of Death, Death Spell, or Abi-Dalzim's Horrid Wilting.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Level Drain
+- Immunity to death spells of Necromancy
+
+Charge abilities:
+- Repulse Undead three times per day
+
+Armor Class: 2
+Weight: 10
+Requirements: 7 Strength
+
+Not Used By:
+ Druid
+ Mage
+ Thief
+ Monk
+ Stalker
+ Beast Master
+ Kensai
+ Shapeshifter~
+@102609 = ~Boat's all ready, by and by. Shining and new. Ready for anything... (sigh) Ohhh, I've wasted my life.~
 @102610 = ~Charon~
-@102611 = ~NP: AAAAAAAAAAAAA!!!!!!!!!!!!!~ /*AIIIEE!!!*/
-@102612 = ~NP: Journal of a Charwood Cultist~ /*The Journal of Quint Jhareg*/
+@102611 = ~AAAAAAAAAHHHHHHHHH!!!!!!!!!!!~
+@102612 = ~Charwood Cultist's Journal~
 @102613 = ~I have killed them. Killed them all yet still they come, again and again! All of this and I have yet to find the Old One's precious artifact. I am at the edge of my sanity but I must press on. To return to Luskan's iron tower empty-handed is to tempt the wrath of our great leader, Maugrim.
 True, it has been an honor to serve the Cult of the Eye. If only I could have seen Neverwinter as it suffered. Instead I am stuck here in the Charwood, too tired to carry on yet too driven to turn away...
 
 Hush, here they come to be killed once more. The longer I stay here, the more I become like them, it seems. I doubt I'll ever see my home again.~
-@102615 = ~NP: You lose!~ /*I will not be defeated!*/
+@102615 = ~You lost!~
 @102616 = ~Hrusk~
 @102617 = ~Docks Citizen~
 @102618 = ~Claudus~
-@102619 = ~NP: Two-Handed Sword of the Harbingers~ /*Enserric the Greatsword*/
+@102619 = ~Harbinger Kin Greatsword~
 @102620 = ~NP: This unique two-handed sword is crafted by the finest smiths in Neverwinter. They managed to reforge a simple enchanted sword by adding some adamatine ore to it. The result is a two-handed sword with amazing properties. It is so easy to handle that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The wielder of this sword can wield it much better and faster than any other two-handed sword. In addition, the sword inflicts additional damage to the enemy with fire and cold magic. PARAMETERS: Features: The owner gains +1 to two-handed sword skill +1 attack per round Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 2 points of magic fire damage + 2 points of magic cold damage THAC0: improvement +6 Damage: 1D12 +4 Damage Type: Slashing Weight: 10 Speed Factor: 8 Required Skill: Two-Handed Swords Type: Two-Handed Requirements: Strength 14 Cannot Use: Druid Priest Mage Thief~ /*Type of Feat: ClassPrerequisite: Rogue.
 Specifics: Whenever the character makes a successful attack against an opponent who is flat-footed, cannot see them, or who is in combat with someone else, the character's blow delivers extra damage. This extra damage is +1d6 at 1st level and an additional +1d6 every two levels thereafter. This extra damage is not multiplied in the case of a critical hit.
 Use: Automatic. Monsters of the construct and undead types are immune to sneak attacks, as are any creatures that are immune to critical hits.*/
