@@ -567,6 +567,7 @@ Not Usable By:
 Those who read this tome permanently gain an increased lifespan similar to dragons, as well as a nice bonus of extra Hit Points.
 
 STATISTICS:
+
 Hit Points: Raised by 10 points permanently
 Special: The book is consumed upon use
 Usage: Place into quick item slot~
@@ -1058,7 +1059,7 @@ Equipped abilities:
 - Luck: +2
 - Permanent Bless
 
-Special abilities:
+Charge abilities:
 - Protection From Evil 2 times per day
 - Sanctuary once a day
 
@@ -1757,7 +1758,7 @@ Not Used By:
 STATISTICS:
 
 Equipped Abilities:
-- Armor Class: +1 (except missile attacks)
+- Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
@@ -1780,10 +1781,9 @@ Not Used By:
 STATISTICS:
 
 Equipped Abilities:
-- Armor Class: +1 (except missile attacks)
+- Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
-- Destroy any golem less than 20 level per hit
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
 - 30% chance per hit to stun the target
 
@@ -1805,7 +1805,7 @@ Not Used By:
 @102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Founder's Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
-- Armor Class: +1 (except missile attacks)
+- Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
@@ -1825,48 +1825,112 @@ Not Used By:
  Druid
  Monk
  Beastmaster~
-@102568 = ~NP: Mace of repose +4~ /*Mace of Disruption +2*/
-@102569 = ~NP: This mace is crafted by the best blacksmiths in Neverwinter. Apparently the gods themselves helped the blacksmith in his work. From an unremarkable mace, he managed to forge a mace of repose, however, he used the special holy water we found. This mace is a nightmare for all evil spirits. It is capable of destroying the undead with one blow and causes considerable additional damage to all demonic creatures. To be fair, it should be said that it cannot destroy the undead of higher levels (over level 20). PARAMETERS: Combat properties: 1D6 +1 additional damage to undead 2D3 additional damage to demons Destroys undead no higher than level 20 Immunity to level draining THAC0: +4 Damage: 1D6 + 4 Damage type: bludgeoning Weight: 8 Speed factor: 6 Required skill: maces Type : one-handed Requirements: strength 10 Cannot use: Druid Mage Thief~ /*Type of Feat: ClassPrerequisite: Blackguard level 4.
-Specifics: Whenever the character makes a successful attack against an opponent who is flat-footed, cannot see them, or who is in combat with someone else, the character's blow delivers extra damage. This extra damage is +1d6 at 4th level and an additional +1d6 every three levels thereafter. This extra damage is not multiplied in the case of a critical hit.
-Use: Automatic. Monsters of the construct and undead types are immune to sneak attacks, as are any creatures that are immune to critical hits.*/
-@102570 = ~NP: Buzzing Morning Star~ /*Rusted Morningstar*/
-@102571 = ~NP: This unusual Morning Star is made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple morning star remains a mystery, it is only known that for this the blacksmith needed magic dust. The buzzing morningstar is simply filled with faerie magic, capable of blinding enemies, making its wearer invisible, and shocking enemies with electricity. In addition, picking up this weapon, its owner becomes more dexterous. STATS: Equipped: Agility: +1 Ability to cast spells: 2 times per day &quot;Glittering Dust&quot; (Blinds enemies) 1 time per day &quot;Fairy Dust&quot; (Invisible to allies) Combat abilities: 70% chance to inflict one of the following effects : Blindness on enemy (30%) Invisibility on self (30%) Insect swarm on enemy (10%) THAC0: +4 Damage: 2d4 +4 +2 electricity Speed factor: 6 Skill type: Flail/Morgenstern Damage type: bludgeoning Type : 1-hand Requirements: Strength 11 Weight: 10 Cannot use: Druid Mage Thief Monk~ /*Type of Feat: Item CreationPrerequisite: Spellcaster Level 3+.
-Specifics: The character can create a potion of any spell of 3rd level or lower that the character knows and that targets a single creature. Brewing a potion will cost a small amount of XP as well as some gold to cover the material cost. The costs for brewing a potion depends on the level of the spell as well as the level of the resulting potion:
-Some examples:
-A potion of bless (1)   will costs 50 gp and 2 XP
-A potion of prayer (5)  will cost 750 gp and 30 XP
+@102568 = ~Mace of Repose +4~
+@102569 = ~This mace is made by the finest blacksmiths in Neverwinter. The gods themselves must have helped the blacksmith in his work. He was able to forge a mace of repose from an unremarkable mace, but he used the special holy water we found. This mace is a terrible dream for all evil forces, it can destroy the undead with a single blow and causes a lot of additional damage to all demonic creatures. To be fair, it cannot destroy higher level undead (above level 20).
 
-Use: Selected (In order to brew a potion, the character has to cast the spell in question on an empty magical potion bottle).*/
+STATISTICS:
+
+Combat abilities:
+- Destroy any undead less than 20 level per hit
+- Immune to level drain
+
+THAC0: +4
+Damage: 1d6+4, +1d6+1 vs. undead, +2d3 vs. demons
+Damage Type: crushing
+Weight: 8
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requirements: 10 Strength
+
+Not Used By:
+ Mage
+ Druid
+ Monk~
+@102570 = ~Drone Morning Star~
+@102571 = ~This unusual morning star is made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple morning star is a mystery, all we know is that the blacksmith needed magic dust to make it. Drone Morning Star is simply filled with the magic of fairies, it is able to blind enemies, make invisible its owner and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
+
+STATISTICS:
+
+Charge abilities:
+- Glitterdust two times per day
+- Pixie Dust once per day
+
+Combat Abilities:
+- 70% per hit to cast one of the following effects:
+  30% to cast Blindness on the target
+  30% Invisibility on the wielder
+  10% Summon Insects on the target
+
+THAC0: +4
+Damage: 2d4+4, +2 (electricity)
+Damage Type: crushing
+Weight: 10
+Speed Factor: 6
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requirements: 11 Strength
+
+Not Used By:
+ Mage
+ Druid
+ Monk
+ Thief~
 @102572 = ~Boddyknock~
 @102573 = ~Borlan~
-@102574 = ~NP: I'm in a poison cloud! I need to get out of here!~ /*You should get out of here now.*/
-@102576 = ~NP: Portal to Chaos~ /*Portal to City*/
+@102574 = ~I'm in a poison cloud! I need to get out of here!~
+@102576 = ~Portal to Chaos~
 @102577 = ~Brazier~
-@102578 = ~NP: Portal in Baathor~ /*Portal to Gates*/
+@102578 = ~Portal in Baator~
 @102579 = ~Bregan~
 @102580 = ~Briley~
 @102581 = ~Bran~
 @102582 = ~Bran's Ring~
-@102583 = ~NP: This is the ring of Bran, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~ /*If you'd spare my life and listen to what I have to say, I'd be willing to cut my ear from my head and give it to you as proof.*/
+@102583 = ~This is Bran's Ring, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~
 @102584 = ~Bugbear~
 @102585 = ~Bugbear Chief~
 @102586 = ~Bugbear Hero~
 @102587 = ~Bugbear Scout~
 @102588 = ~Head of the Bugbear Chieftain~
-@102589 = ~NP: The head of a bugbear chief from a network of caves located east of Port Llast.~ /*This key opens a door in the troll caves north of Port Llast.*/
+@102589 = ~The head of a bugbear chieftain from a network of caves located east of Port Llast.~
 @102590 = ~Callahan~
 @102591 = ~Callik~
 @102592 = ~Masterson Family Amulet~
-@102593 = ~NP: This amulet depicts a small coat of arms belonging to an aristocratic family originating from the merchant class. The name 'Masterson' is written on the back. The Masterson family achieved aristocratic status through numerous trade deals, and not through royal blood or great achievements. However, William Masterson descended into the dungeons several times, and some of his most interesting finds became relics that were passed down through three generations of his descendants. This amulet is one of them, it has his coat of arms on it. Although he never told anyone where he got these things from, and hardly used them when he returned to Neverwinter.~ /*The Masterson family rose to moderate nobility through persistent mercantile efforts, rather than royal bloodlines or great achievements. Nevertheless, William Masterson did dabble in the occasional dungeon excursion, and a number of his more interesting finds became heirlooms passed to his three generations of offspring. This amulet is one of several marked with his crest, though he never revealed where he acquired them, and made little use of them once retired in Neverwinter.*/
-@102594 = ~NP: Cemetery caretaker~ /*Caretaker*/
-@102595 = ~NP: Blade of Shadows +5~ /*Blade of Shadows*/
-@102596 = ~NP: The Blade of Shadows was designed to be the ultimate assassin's weapon. It is highly valued among those accustomed to settling scores with the sword; its owners, as a rule, do not live long. PARAMETERS: THAC0: buff +5 Damage: 1D6 +5 Poisons the victim for 10 seconds Damage type: piercing Weight: 3 Haste factor: 0 Required skill: short swords Type: one-handed Requirements: strength 5 Cannot use: Druid Priest Mage~ /*This armor was created to allow for quiet work while still affording protection against a dagger in the back. Movement in this armor is utterly silent due to the ingenious construction of the joints and links holding the pieces together.*/
-@102597 = ~NP: Haljal Trondor~ /*Throndor*/
+@102593 = ~This amulet shows a small coat of arms belonging to an aristocratic family descended from the merchant class. The name 'Masterson' is inscribed on the back.
+
+The Masterson family rose to moderate nobility through persistent mercantile efforts, rather than royal bloodlines or great achievements. Nevertheless, William Masterson did dabble in the occasional dungeon excursion, and a number of his more interesting finds became heirlooms passed to his three generations of offspring. This amulet is one of several marked with his crest, though he never revealed where he acquired them, and made little use of them once retired in Neverwinter.~
+@102594 = ~Cemetary Caretaker~
+@102595 = ~Blade of Shadows +5~
+@102596 = ~Shadow Blade was created to be the perfect assassin's weapon. It is highly prized among those who are accustomed to settling scores with a sword; its wielders tend not to live long.
+
+STATISTICS:
+
+Combat Abilities:
+- Poison the target for ten seconds
+
+THAC0: +5
+Damage: 1d6+5
+Damage Type: piercing
+Weight: 3
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requirements: 5 Strength
+
+Not Used By:
+ Druid
+ Cleric
+ Mage~
+@102597 = ~Haljal Throndor~
 @102598 = ~The Cracked Anvil~
-@102599 = ~NP: book of knowledge~ /*Tome of Robes*/
-@102600 = ~NP: This book contains information about a variety of objects and phenomena. The reader of this book will certainly increase his knowledge considerably. PARAMETERS: Features: Knowledge increases by 10 points forever The book crumbles after reading To use, place it in place of potions and wands~ /*Type of Feat: GeneralPrerequisite: Can only take this feat at 1st-level.
-Specifics: Character gains a +1 bonus on all saving throws.
-Use: Automatic.*/
+@102599 = ~Book of Knowledge~
+@102600 = ~This book contains information about a variety of objects and phenomena. The reader of this book will undoubtedly enrich his knowledge considerably.
+
+STATISTICS:
+
+Knowledge: Raised by 10 points permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot~
 @102601 = ~NP: Compound Shortbow +1~ /*Shortbow +1*/
 @102602 = ~NP: Compound bows are longbows or shortbows that are composed and made from more than one material. This gives the weapon more flexibility and allows arrows fired from this bow to do more damage. This bow can only be used by characters with a Strength value of 16 or higher. STATS: THAC0: +1 upgrade Damage: +2 upgrade Weight: 2 Haste Factor: 5 Skill Type: Short Bow Type: Two-Handed Requirement: 16 Strength Unusable: Druids Priests Mages~ /*Type of Feat: GeneralPrerequisite: Base attack bonus +3, Wis 13+.
 Specifics: Wisdom guides the character's ranged attacks, letting them use their Wisdom modifier, if it is higher, instead of their Dexterity when firing ranged weapons.
