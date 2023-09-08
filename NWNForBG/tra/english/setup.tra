@@ -2206,7 +2206,7 @@ The strange village of Charwood is buried deep within the forest that shares its
 STATISTICS:
 
 Equipped abilities:
-- Non-detectability
+- Non-detection
 - Armor Class: +1
 - Resistance to all elements: +25%
 - Saving Throws: +2
@@ -2216,21 +2216,81 @@ Weight: 4
 Usable By:
  Mage~
 @102710 = ~Alhelor's Tooth~
-@102711 = ~NP: This tooth was pulled out of the mouth of Alchelor, the Black Wolf. Neurik, a priest from Port Llast, would be pleased to see such evidence of the lycanthrope's death.~ /*This tooth was pulled from the jaw of Alhelor, the Black Wolf. Neurik, a priest in Port Llast, will be glad to see such evidence of the lycanthrope's demise.*/
+@102711 = ~This tooth was pulled from the jaw of Alhelor, the Black Wolf. Neurik, a priest in Port Llast, will be glad to see such evidence of the lycanthrope's demise.~
 @102712 = ~Eltoora~
-@102713 = ~NP: Headdress~ /*Secret Pattern*/
-@102714 = ~NP: Invisible hat~ /*Druid, Interloper*/
-@102715 = ~NP: Magical hats can actually be of various kinds. They can expand or narrow depending on the size of the head. Modern fashion dictates its own styles and styles to create types of magical headdresses.~ /*The best way that I can explain their purpose, with brevity, is to compare them to recipe books. These books explain the crafting of magical items.*/
-@102716 = ~NP: This ordinary-looking hat has the magical ability to make the wearer invisible. Such things, as a rule, are stored in an inaccessible place and guarded by dark forces, adventurers have to go through many trials or trick such an artifact from sinister evil spirits. The very fact that you were lucky enough to find this magical item in a regular magic shop is a definite stroke of luck. The owner of the hat cannot be detected by magical means, such as the See Invisible spell and searching with magical crystals. In addition, this invisibility hat protects the wearer from the cold. STATS: Undetected Cold Resistance +30 Special: Allows you to read Improved Invisibility 2 times per day. Weight: 1 Unused by: Kensai Wizard Slayers~ /*Most who encounter a stalker notice only a shadow in the woods, or a movement out of the corner of their eye, since stalkers are not noticed unless they wish to be. Their hatred of goblins is legendary, but any who invade their woods is added to the stalker's list of enemies.
-These packages do not give any special abilities to your character, they simply configure your skills and feats so you don't have to.*/
-@102717 = ~NP: Appeal~ /*Abjuration*/
-@102718 = ~NP: This scroll allows you to learn the Turn spell. Conversion (Change) Level: 6 for Priest Level: 7 for Mage Range: Contact Cast Time: 2 rounds Duration: Constant Coverage: 1 creature Saving Throw: None With this spell, a priest or mage can change the alignment of any creature. This spell will come in very handy in the party, there is nothing worse than a difference of opinion.~ /*To load a spell onto your quickbar, simply open your spellbook, then click and drag the spell to the desired slot on one of your quickbars. The spell can now be cast with a single keystroke.*/
-@102723 = ~NP: Goods of Eltura~ /*Eltoora's Key*/
-@102729 = ~NP: Eltura's Special Goods~ /*Special Properties:*/
-@102730 = ~NP: Ring of Elemental Mastery~ /*Quick To Master*/
-@102731 = ~NP: This ring combines the power of the elements of Earth, Air, and Fire and gives the user a certain amount of power over the beings that inhabit these Planes. OPTIONS: Charm Elemental three times per day for 60 seconds (no saving throw). Summon Earth, Air and Fire Elemental (once per day for 300 seconds, always friendly). Improved Invisibility once per day for 60 seconds. Fire Resistance: 50% bonus Electricity Resistance: 50% bonus Defense Class: +1 bonus Saving Throws: +1 bonus Used by: Barda Mages~ /*This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though the creator is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.*/
-@102732 = ~NP: Staff of Aramis~ /*Staff of Armand*/
-@102733 = ~NP: On top of this long ebony staff is a large blue crystal that radiates electricity. The staff was created by the powerful mage Aramis, who lived somewhere on an island in the Sea of Rains. However, this staff has not been seen for several generations due to a natural disaster that shook the island. PARAMETERS: Special abilities: 50% chance of dealing 1D8 electrical damage The wielder of the staff gains 50% resistance to electrical attacks. Staff fires lightning once per day Damage: 1D6+2 THAC0: +2 Weight: 7 Strength Needed: 5 Does not use: Monk~ /*In ancient times, the proud and quarrelsome wizard Valmaxian was a man of great power and prominence. He crafted this staff with the aid of a demon, all to win the heart of Chasianna, the daughter of his long-dead master. When the debt came due, the demon demanded Chasianna as his price. In a rage, Valmaxian descended into the Abyss and used the staff to battle the demon and rescue the woman he loved.*/
+@102713 = ~Headgear~
+@102714 = ~Invisibility Hat~
+@102715 = ~Magic hats can actually come in many different types. They can expand or narrow depending on the size of the head. Modern fashion dictates its own styles and styles for creating types of magical hats.~
+@102716 = ~This ordinary-looking hat has the magical property of making the wearer invisible. Such things, as a rule, are stored in an inaccessible place and are guarded by dark forces, adventurers have to pass many tests or trick to get such an artifact from the sinister evil. The very fact that you were lucky enough to find this magical item in an ordinary magic store is an unquestionable luck. The owner of the hat cannot be detected by magical means such as Detect Invisibility and scrying. In addition this hat protects the wearer from the cold.
+
+STATISTICS:
+
+Equipped abilities:
+- Non-detection
+- Cold Resistance: +30
+
+Weight: 1
+
+Not Usable By:
+ Kensai
+ Wizard Slayers~
+@102717 = ~Reversal~
+@102718 = ~Reversal
+(Abjuration)
+
+Level: 6 for Clerics, 7 for Mages
+Range: Touch
+Casting Time: 2
+Duration: Permanent
+Area of Effect: 1 creature
+Saving Throw: None
+
+With this spell, a priest or mage can change the worldview of any creature. This spell comes in handy in a party, there is nothing worse than a divergence of beliefs.~
+@102723 = ~Eltura's Goods~
+@102729 = ~Eltura's Special Goods~
+@102730 = ~Ring of Elemental Mastery~
+@102731 = ~This ring combines the power of the elements of Earth, Air, and Fire and gives the user a certain amount of power over the beings that inhabit these Planes.
+
+STATISTICS:
+
+Charge abilities:
+- Charm an Elemental three times per day for 60 seconds (no Saving Throw)
+- Conjure an Earth, Air and Fire Elemantal once per day for 300 seconds, they are always friendly
+- Improved Invisibility once per day for 60 seconds
+
+Equipped abilities:
+- Fire Resistance: +50%
+- Cold Resistance: +50%
+- Armor Class: +1
+- Saving Throws: +1
+
+Usable By:
+ Mage
+ Bard~
+@102732 = ~Aramis' Staff~
+@102733 = ~At the top of this long ebony staff is a large blue crystal that emits electricity. The staff was created by the powerful magician Aramis, who lived somewhere on an island in the Sea of Rains. However, this staff has not been seen for generations due to a natural disaster that shook the island.
+
+STATISTICS:
+
+Charge abilities:
+- Lightning Bolt once per day.
+
+Combat abilities:
+- 50% chance for an 1d8 of additional electric damage
+
+Equipped abilities:
+- Electricity Resistance: +50%
+
+Damage: 1d6+2
+THAC0: +2
+Damage Type: crushing
+Weight: 7
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Monk~
 @102734 = ~NP: Robe of Fortitude~ /*Fortitude*/
 @102735 = ~NP: At the beginning of this century, Akarima Tzu, the famous Monk of the Destroyer, entered into a colossal battle with the vicious ice dragon Ingarjak. Despite the physical and spiritual training that allowed him to survive longer than any other mortal, only this clothing gave him the last bit of strength needed to kill the infernal animal. PARAMETERS: Equipment capabilities: Defense class: +2 bonus Restores 1 health point every 6 seconds +15% Resistance to all Blunt, Stab and Slash attacks Weight: 3 Used by: Monks~ /*The Shukenja are a monastic order known for their subtlety and magic power. Though rank-and-file brothers fight with a staff and wear no armor, elite members of the order are known to wear Shukenja Helms into battle to augment their sorcerous abilities. Over the years these monks have spread through the Realms, and today many of their helms can be found in the hands of the order's allies and enemies.*/
 @102736 = ~NP: Battle Robe of the Archmage~ /*Mage's Battle Robe*/
