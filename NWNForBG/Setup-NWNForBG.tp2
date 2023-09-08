@@ -163,6 +163,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         ~creeping_doom~
         ~elemental_water~
         ~feyr~
+        ~ghost~
         ~giant_fire_2~
         ~giant_fire_iwd~
         ~goblin_captain~
