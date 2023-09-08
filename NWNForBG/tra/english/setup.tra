@@ -2194,14 +2194,27 @@ The strange village of Charwood is buried deep within the forest that shares its
 @102699 = ~Durga~
 @102700 = ~Shining Knight~
 @102701 = ~Dydd~
-@102702 = ~NP: bandit's ear~ /*Delilah's Ear*/
-@102703 = ~NP: This severed ear has a tattoo of Bastion, Waterdeep's famous prison. The number corresponds to the number of one of the escaped prisoners. Kendrak, Major of Porta Llast, will be pleased when he learns that the former owner of the ear was unlucky and died.~ /*This ragged ear bears a tattoo of the Bastion, a well-known prison of Waterdeep. The number corresponds to that of an escaped convict named Zor. Kendrack, the Mayor of Port Llast, will be pleased to learn that its former owner has fallen upon misfortune.*/
-@102704 = ~NP: Mrs. Eisenfeldt~ /*Eisenfeldt*/
-@102705 = ~NP: Mr. Eisenfeldt~ /*Eisenfeldt*/
+@102702 = ~Bandit's Ear~
+@102703 = ~This ragged ear bears a tattoo of the Bastion, a well-known prison of Waterdeep. The number corresponds to that of one of escaped convicts. Kendrack, the Mayor of Port Llast, will be pleased to learn that its former owner has fallen upon misfortune.~
+@102704 = ~Mrs. Eisenfeldt~
+@102705 = ~Mr. Eisenfeldt~
 @102706 = ~Lord Eldan~
 @102707 = ~Elgar~
-@102708 = ~NP: Cloak in the stars~ /*Many-Starred Cloak*/
-@102709 = ~NP: Embroidered on both sides with glittering stars, these expertly crafted cloaks are the emblem of the guild of sorcerers and wizards from the legendary Mantle Tower of Neverwinter. Loyal to Lord Nasher, the Starcloaked Wizards are key figures in the city's defenses and create the appropriate mysterious atmosphere around them that such responsibility implies. PARAMETERS: Features: Non-detection +1 to defense class +25 to resistance to all elements +2 to saving throws Weight: 4 Use only by magicians~ /*These masterfully crafted cloaks, stitched on both sides with glittering stars, are the guild emblem of the sorcerers and wizards of Neverwinter's fabled Cloaktower. Loyal to Lord Nasher, the Cloakwizards are vital to the city's defense and carry themselves with the appropriately cautious air that such a duty entails.*/
+@102708 = ~Many-Starred Cloak~
+@102709 = ~These masterfully crafted cloaks, stitched on both sides with glittering stars, are the guild emblem of the sorcerers and wizards of Neverwinter's fabled Cloaktower. Loyal to Lord Nasher, the Cloakwizards are vital to the city's defense and carry themselves with the appropriately cautious air that such a duty entails.
+
+STATISTICS:
+
+Equipped abilities:
+- Non-detectability
+- Armor Class: +1
+- Resistance to all elements: +25%
+- Saving Throws: +2
+
+Weight: 4
+
+Usable By:
+ Mage~
 @102710 = ~Alhelor's Tooth~
 @102711 = ~NP: This tooth was pulled out of the mouth of Alchelor, the Black Wolf. Neurik, a priest from Port Llast, would be pleased to see such evidence of the lycanthrope's death.~ /*This tooth was pulled from the jaw of Alhelor, the Black Wolf. Neurik, a priest in Port Llast, will be glad to see such evidence of the lycanthrope's demise.*/
 @102712 = ~Eltoora~
