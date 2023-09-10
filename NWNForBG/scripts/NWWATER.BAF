@@ -2,7 +2,6 @@ IF
 	Global("ToNax","MYAREA",1)
 THEN
 	RESPONSE #100
-		SetGlobal("ToNax","MYAREA",2)
 		SetInterrupt(FALSE)
 		MoveToPointNoInterrupt([512.752])
 		Unlock("Door01")
@@ -12,5 +11,6 @@ THEN
 		PlayDead(45)
 		CreateVisualEffectObject("SPDISPMA",Myself)
 		DestroySelf()
+		SetGlobal("ToNax","MYAREA",2)
 END
 
