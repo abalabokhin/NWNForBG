@@ -2406,15 +2406,52 @@ Weight: 3
 
 Usable By:
  Mage~
-@102753 = ~NP: Mantle of the Sovereigns~ /*Conjurer's Robe*/
-@102754 = ~NP: The Mantle of Sovereigns has many protective spells cast on it and has been kidnapped many times. It is useless to thieves, so often magicians hired thieves for this black deed. PARAMETERS: Special abilities: +25% to resistance to Fire, Cold, Electricity, Poison and Acid +1 to defense class +1 to all saving throws Weight: 4 Use by: Mages (Single-, double-, multi-classes)~ /*Cloaks of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread.*/
-@102755 = ~NP: Robe of High Sorcery~ /*Robes of the Old Order*/
-@102756 = ~NP: This powerful item once belonged to Raizen, a powerful archmage who participated in one great magical war, where sorcerers fought against large armies to reserve the right to use magic. This war resulted in terrible devastation, and finally a kind of truce was reached, and there were people with the ability to both fight and conjure. However, Raizen felt that they weren't true magicians, they lacked devotion to the Art, so the items he created could only be worn by truly dedicated sorcerers. PARAMETERS: Defense class: 6 +1 to all saving throws Increases spell casting speed +2 Weight: 3 Used by: Mages of the same class~ /*Type of Feat: ClassPrerequisite: Champion of Torm level 5.
-Specifics: The Champion is able to channel a portion of their deities's power once per day giving them a +3 bonus on attack rolls, damage, and saving throws for a number of rounds equal to their Charisma bonus. They also gain damage reduction of 5/+1. The attack and saving throw bonuses increase by +2 at level 10
-Use: Selected*/
-@102757 = ~NP: wizard hat~ /*Wizard's Grove*/
-@102758 = ~NP: Many wizards wear hats, but they can only dream of one like this. This is an artifact of the greatest power. The hat protects its wearer well, both from heat and cold. In addition, he will never be attacked by a summoned demon. The owner of the hat gains some protection from physical attacks and casts his spells much faster. PARAMETERS: Bonus to defense class: 2 Speeds up reading time by 4 Permanent protection from evil Fire and cold resistance +40 Special: The wearer can summon a demon 1 time per day. Weight: 1 Use: Mages (Single, Dual-, and Multi-class)~ /*This thick shirt of coarse brown horsehair constrains its wearer but provides additional protection from damage. In addition, the wearer can invoke cure serious wounds once per day.  
-Generally made and worn by disciples of Ilmater, the wearers of these garments usually only use the shirt's curative powers to ease the suffering of others.*/
+@102753 = ~Mantle of Sovereigns~
+@102754 = ~Mantle of Sovereigns has many protective spells on it, and it has been stolen many times. It is useless to thieves, so often mages hired thieves for this black deed.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Resistance to Fire, Cold, Electricity Poison and Acid: +25%
+
+Weight: 3
+
+Usable By:
+ Mage~
+@102755 = ~Mantle of High Sorcery~
+@102756 = ~This powerful thing once belonged to Raizen, a powerful archmage who was involved in one great magical war when sorcerers fought against large armies to reserve the right to use magic. This war had led to terrible devastation and finally a truce of sorts had been reached and people with the ability to both fight and sorcery had emerged. However, Raizen felt that these were not true mages, they lacked devotion to the Art, so the items he created could only be worn by truly dedicated sorcerers.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 6
+- Saving Throws: +1
+- Improves casting speed by 2
+
+Weight: 3
+
+Usable By:
+ Mage (only single-class)~
+@102757 = ~Wizard Hat~
+@102758 = ~Many wizards wear hats, but they can only dream of one like this. It is an artifact of the greatest power. The hat protects its wearer well from both heat and cold. In addition, it will never be attacked by a summoned demon. The wearer of the hat gains some protection from physical attacks and reads his spells much faster.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Improves casting speed by 4
+- Protection From Evil
+- Resistance to Fire and Cold: +40%
+
+Charge abilities:
+- Summon Demon once per day.
+
+Weight: 1
+
+Usable By:
+ Mage~
 @102759 = ~Eltoora's Key~
 @102760 = ~This key belongs to Eltoora of the Many-Starred Cloak. It allows entry to the various workshops the mage guild has established around the city.~
 @102761 = ~Elynwyd~
