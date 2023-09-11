@@ -2100,7 +2100,7 @@ Equipped abilities:
 - Saving Throws: +2
 - Improves casting speed by 2
 - Immunity to Silence
-– Vocalize
+- Vocalize
 
 Weight: 6
 
@@ -2291,30 +2291,121 @@ Requirements: 5 Strength
 
 Not Usable By:
  Monk~
-@102734 = ~NP: Robe of Fortitude~ /*Fortitude*/
-@102735 = ~NP: At the beginning of this century, Akarima Tzu, the famous Monk of the Destroyer, entered into a colossal battle with the vicious ice dragon Ingarjak. Despite the physical and spiritual training that allowed him to survive longer than any other mortal, only this clothing gave him the last bit of strength needed to kill the infernal animal. PARAMETERS: Equipment capabilities: Defense class: +2 bonus Restores 1 health point every 6 seconds +15% Resistance to all Blunt, Stab and Slash attacks Weight: 3 Used by: Monks~ /*The Shukenja are a monastic order known for their subtlety and magic power. Though rank-and-file brothers fight with a staff and wear no armor, elite members of the order are known to wear Shukenja Helms into battle to augment their sorcerous abilities. Over the years these monks have spread through the Realms, and today many of their helms can be found in the hands of the order's allies and enemies.*/
-@102736 = ~NP: Battle Robe of the Archmage~ /*Mage's Battle Robe*/
-@102737 = ~NP: Nowhere on earth do wizards who engage in mortal combat have adequate protection. At least that was the case before the creation of the Archmage Battle Robe. Soaked in the blood of many monsters, this garment has never seen the light of the surface. Created by an unknown Archmage, she has been on some strange plane for so long that you can't imagine. This is probably a worthy competitor to Robe Vecna. Better protection for a wizard is hard to come by. PARAMETERS: Equipment Capabilities: Defense Class: +3 bonus THAC0: +3 bonus Health Points: +10 bonus Spell Casting Speed +2 Bonus 5% Physical Damage Resistance Weight: 3 Used by: Mages (single, dual, and multiclass)~ /*Type of Feat: SpellPrerequisite: 21st level, Quicken Spell, Spellcraft 30, ability to cast 9th level spells.
-Specifics: This feat allows the character to cast spells with a moment of thought. 
-This feat may be taken multiple times:
-Automatic Quicken Spell I: Quicken any level 0 - 3 spells
-Automatic Quicken Spell II: Quicken any level 4 - 6 spells
-Automatic Quicken Spell III: Quicken any level 7 - 9 spells
-Use: Automatic.*/
-@102739 = ~NP: Order a mage~ /*Mage Robes*/
-@102740 = ~NP: The origin of these bracers is not exactly known. There were many rumors about their true whereabouts and origins. However, it is known for certain that these bracers are very old, but the magic cast on them is very strong and is not going to dissipate, unlike many equally ancient artifacts. PARAMETERS: Bonus to the class of defense: +2 Features: Increase the speed of casting spells Weight: 2 Used only by: Mages Bards~ /*Although it appears to be little more than a simple pearl strung upon light chain, this Periapt of Wisdom is a very powerful object. Occasionally crafted by the highest ranking clergy of a church, such objects serve to improve perception and insight, and are often used as meditative tools.*/
-@102741 = ~NP: Staff of the Ancients~ /*Old One Warrior*/
-@102742 = ~NP: This staff was created by a race known as the Ancients, who existed many hundreds of years ago. Some relics have remained since then, and even the descendants of the Ancients know a little about their properties and capabilities. PARAMETERS: THACO: +3 Damage: 2d4 + 3 Features: +1 to defense class Damage type: crushing Speed factor: 1 Skill type: staff Class: 2-handed Weight: 3 Used by: Mage priests~ /*With the blood of a red dragon coursing through their veins, this sorcerer package will lead to the power of a dragon disciple.
-These packages do not give any special abilities to your character, they simply configure your skills and feats so you don't have to and so you may pick the dragon disciple prestige class.*/
-@102743 = ~NP: Ring of Unstoppable~ /*Ring of Invisibility*/
-@102744 = ~NP: At first glance, this ring is indistinguishable from the usual &quot;Ring of Free Action&quot;, and only the glowing runes engraved on its surface suggest that some unknown master of arcane magic once thoroughly tried to improve its properties. Who he is - hardly anyone will know, as well as who it was intended for. PARAMETERS: Features: The ring's wearer is immune to any effects, magical or otherwise, that affect movement, while still being affected by Haste. This ring has been enchanted so that the beneficial effects gained from the Boots of Speed will be active while the ring is worn.~ /*The half-elf Jasswin is probably the best-known owner of one of these cloaks, since it played a significant part in his ascension to the post of Great Druid. He acquired the cloak after spending a season with no shelter, wanting to "feel the land unhindered." He found the garment before the cold season set in, a gift from the wilds that carried a message both humbling and clear: he could appreciate the rain while still seeking shelter from it.*/
-@102745 = ~NP: Lightning Amulet~ /*Amulet of Power*/
-@102746 = ~NP: This amulet not only provides full protection against lightning, but also with its help allows you to attack enemies. STATS: Combat Abilities: Lightning 3 times per day Wear Abilities: 100% Electricity Resistance Do not use: Mage Killers~ /*This helm mounts a circlet of blue-green metal around the wearer's forehead.  The circlet is stamped with the blank-scroll symbol of Oghma and grants the wearer insight into the origins of magical creations and spells.*/
-@102747 = ~NP: Hurricane +3~ /*Sling +3*/
-@102748 = ~NP: The Hurricane is the most user-friendly of all staffs. Not only does it practically not slow down, it also speeds up its owner. The hurricane is made of a steel rod, a staff and two diamonds. The rod is inserted into the staff, and diamonds are fixed at the ends to pierce the strongest armor. Due to the cast of enchantments, the Hurricane is very light in weight. PARAMETERS: Special abilities: Haste +1 attack per round Agility set to 18 Damage: 1D6 + 3 THAC0: +3 Damage type: crushing Weight: 1 Haste factor: 0 Skill type: staves Type: 2-handed Requires: 3 Strength Not used : Monks~ /*This thick shirt of coarse brown horsehair constrains its wearer but provides additional protection from damage. In addition, the wearer can invoke cure serious wounds once per day.  
-Generally made and worn by disciples of Ilmater, the wearers of these garments usually only use the shirt's curative powers to ease the suffering of others.*/
-@102749 = ~NP: Robe of Magical Might~ /*SmallMagic Cauldron*/
-@102750 = ~NP: Created by the mages of ancient Netheril, such robes are very rare. This robe gives the wearer full protection against silence spells, and improves spell casting speed. STATS: Permanent: Vocalize Increases your spell casting speed by 3 Weight: 3 Used only by: Mages (multiclass, dual class, or normal mages)~ /*All you have to do is find the proper reagent and place it into the summoning pool, then cast the appropriate spell on the pool. The only problem is, I don't know what reagents or which spell Cyril might have used.*/
+@102734 = ~Robe of Fortitude~
+@102735 = ~At the beginning of this century, Akarima Tzu, the renowned Crusher Monk engaged in a colossal battle with the vicious ice dragon Ingardjak. Despite the physical and spiritual training that allowed him to survive longer than any other mortal, only robe gave him the last bit of strength needed to slay the infernal beast.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Restore 1 HP every 6 seconds
+- Resistance to crushing, slashing, and piercing damage: +15%
+
+Weight: 3
+
+Usable By:
+ Monk~
+@102736 = ~Arcmage's Battle Robe~
+@102737 = ~Nowhere do wizards who engage in mortal combat have a decent defense. At least, that was the case before Arcmage's Battle Robe was created. Soaked in the blood of many monsters, this robe never saw the light of the surface. Created by an unknown Archimage, it has been on some strange plane for so long that you can't imagine. It's probably a worthy competitor Robe of Vecna. A better defense for a wizard is hard to find.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- THAC0: +3
+- Maximum HP: +10
+- Improves casting speed by 2
+- Resistance to all physical damage: +5%
+
+Weight: 3
+
+Usable By:
+ Mage~
+@102739 = ~Mage Bracers~
+@102740 = ~The origin of these bracers is not exactly known. There have been many rumors about their true location and origin. What is known for certain, however, is that these bracers are very old, but the magic placed upon them is very strong and is not about to dissipate, unlike many equally ancient artifacts.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Improves casting speed
+
+Weight: 2
+
+Usable By:
+ Mage
+ Bard~
+@102741 = ~Old Ones' Staff~
+@102742 = ~This staff was created by a race known as the Old Ones that existed many hundreds of years ago. Some relics remain from that time, and even the descendants of the Old Ones know a little about its properties and capabilities.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+
+Damage: 2d4+3
+THAC0: +3
+Damage Type: crushing
+Speed Factor: 1
+Weight: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Usable By:
+ Mage
+ Priest~
+@102743 = ~Ring of Unstoppability~
+@102744 = ~This ring at first glance is indistinguishable from an ordinary Ring of Free Actions, and only the glowing runes engraved on its surface suggest that some unknown master of arcane magic once worked hard to improve its properties. Who he was is unlikely to be known, nor who it was intended for.
+
+Equipped abilities:
+- The wearer is immune to everything, magical and otherwise, that affects mobility in any way while still can be affected by Haste. This ring has been enchanted so that beneficial effects gained from the Boots of Speed will take effect while the ring is worn.~
+@102745 = ~Amulet of Lightning~
+@102746 = ~This amulet not only provides full protection from lightning, but also allows you to attack enemies with it.
+
+STATISTICS:
+
+Charge abilities:
+- Lightning Bolt three times per day.
+
+Equipped abilities:
+- Electricity Resistance: +100%
+
+Not Usable By:
+ Wizard Slayer~
+@102747 = ~Hurricane +3~
+@102748 = ~Hurricane is the easiest to use of all the staffs. Not only does it slow one down to practically nothing, but it speeds up its wielder. The Hurricane is made of a steel rod, a staff, and two diamonds. The rod is inserted inside the staff, and the diamonds are attached to the ends to pierce the toughest armor. Thanks to the enchantments cast, the Hurricane is very light in weight.
+
+STATISTICS:
+
+Equipped abilities:
+- Haste
+- Attacks per round: +1
+- Dexterity is set to 18
+
+Damage: 1d6+3
+THAC0: +3
+Damage Type: crushing
+Speed Factor: 0
+Weight: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 3 Strength
+
+Not Usable By:
+ Monk~
+@102749 = ~Robe of Magic Power~
+@102750 = ~Created by the mages of ancient Netheril, such robes are very rare. This one gives the wearer full protection against silence spells, and improves casting speed.
+
+STATISTICS:
+
+Equipped abilities:
+- Improves casting speed by 3
+- Vocalize
+
+Weight: 3
+
+Usable By:
+ Mage~
 @102753 = ~NP: Mantle of the Sovereigns~ /*Conjurer's Robe*/
 @102754 = ~NP: The Mantle of Sovereigns has many protective spells cast on it and has been kidnapped many times. It is useless to thieves, so often magicians hired thieves for this black deed. PARAMETERS: Special abilities: +25% to resistance to Fire, Cold, Electricity, Poison and Acid +1 to defense class +1 to all saving throws Weight: 4 Use by: Mages (Single-, double-, multi-classes)~ /*Cloaks of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread.*/
 @102755 = ~NP: Robe of High Sorcery~ /*Robes of the Old Order*/
