@@ -171,8 +171,8 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 19.4
   SAY @42
-  IF ~  Dead("Maugrim")~ THEN GOTO 40
-  IF ~  !Dead("Maugrim")~ THEN GOTO 41
+  IF ~  !Dead("Maugrim")~ THEN GOTO 40
+  IF ~  Dead("Maugrim")~ THEN GOTO 41
 END
 
 IF ~~ THEN BEGIN 29 // from: 19.5
@@ -298,7 +298,7 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 38.1
   SAY @68
-  IF ~~ THEN GOTO 58
+  IF ~~ THEN GOTO 50
 END
 
 IF ~~ THEN BEGIN 50 // from: 39.1
