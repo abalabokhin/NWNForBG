@@ -2463,11 +2463,45 @@ Usable By:
 @102767 = ~False Helmite Elite~
 @102768 = ~False Helmite~
 @102769 = ~Fashi~
-@102770 = ~NP: Blood Iron +4~ /*Blood Frenzy*/
-@102771 = ~NP: Bloody Iron, infamous in the frosty North, was made by the evil barbarian shaman Hekedder and presented to his cousin. Over the years, this weapon has been in the hands of many barbarians. Each owner eventually found that because of this sword, everyone began to hate him. Necromancy is so disgusting to the northern tribes that almost everyone knew about the Blood Iron and cursed it. Today, no barbarian wants to touch a terrible weapon and will not even mention its name. The sword is made of rough, poorly finished iron, and small dents and traces of inaccurate hammer blows are visible over the entire surface of the blade. The handle is wrapped in bright red leather. PARAMETERS: Combat Traits: - Each successful strike restores 3 points of health to the wearer THACO: +4 Damage: 1d6+4 (piercing) Speed Factor: 1 Weapon Skill: Shortsword Type: One-Handed Requires: Strength 5 Weight: 3 Cannot Use: Good~ /*Dumal was found in the cells beneath Helm's Hold, where he's been a prisoner since shortly after Desther and his False Helmites arrived. He says that Desther only took the Hold as a staging area, using it to launch an attack on somewhere else, presumably Neverwinter. This was after the plague began, reinforcing the idea that Desther did not start the Wailing, but he did have a vested interest in spreading and prolonging it. Whoever his cult masters are, they wanted as much death to the disease as possible.*/
-@102772 = ~NP: Scavenger~ /*Feet*/
-@102773 = ~NP: Drow Assassin Mail~ /*Chainmail of Speed*/
-@102774 = ~NP: Drow mail is finely crafted, satin black metal mesh that does not burden its wearer in any way. It is similar, but not identical, to magical elven mail. Typically this armor is made for the torso only, as drow elves share a preference for their forest-bound cousins for armor that is adequately protective without being overly heavy or restrictive. The exceptional lightness of this armor allows it to be carried by thieves and warriors/wizards with few restrictions. In addition, drow mail provides a slight increase in resistance to magic and slightly reduces the casting time of all spells while it is worn. Unlike most Dark Elf items, this particular chain mail was not crafted with Adamantine, as it was designed for spies and assassins who regularly travel to the surface. Therefore, it will not disintegrate into dust when exposed to sunlight, but it does not provide as much protection as regular drow armor. STATS: Abilities when worn: The wearer gains +5% Magic Resistance Increases spell casting speed by 1 Thief Ability Penalty Defense Class: 4 Weight: 7 Requirements: 5 Strength Unused by: Druids Mages~ /*Alignment reflects how your character relates to the concepts of good and evil, law and chaos. It can affect how certain NPCs react within the game, and will occasionally determine whether an item can be used or not (some items have alignments of their own, and will not allow a conflict with their user). The main purpose of alignment, however, is to act as a guideline for consistent roleplaying, though it is not set in stone. The alignment of a character can change to match the style in which they are played, if deviation is consistent and serious. All of the nine alignments listed are viable choices for adventurers, though the "evil" variants are more often the domain of villains and monsters.*/
+@102770 = ~Blood Iron +4~
+@102771 = ~The Blood Iron, infamous in the frosty North, was made by the evil barbarian shaman Hekedder and given to his cousin. Over the years, the weapon has been in the hands of many barbarians. Each wielder eventually found that the sword made everyone hate him. Necromancy is so abhorrent to the northern tribes that just about everyone knew about the Blood Iron and cursed it. Today, no barbarian would want to touch the terrible weapon or even mention its name. The sword is made of coarse, poorly wrought iron, and all over the surface of the blade you can see small dents and traces of inaccurate hammer blows. The hilt is wrapped in bright red leather.
+
+Combat Abilities:
+- Every successful hit restore 3 HP to the wielder
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d6+4
+Damage Type: piercing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requirements: 5 Strength
+
+Not Used By:
+ Good character~
+@102772 = ~Fence~
+@102773 = ~Drow Assassin Mail~
+@102774 = ~Drow chainmail is a finely crafted, satin-black metallic mesh that does not burden its wearer in any way. It is similar, but not identical, to magical elven chainmail. Typically, this armor is created for the torso only, as drow elves share their forest-bound cousins' preference for armor that protects accordingly without being overly heavy or restrictive. The exceptional lightness of this armor allows this item to be worn by thieves and warriors/wizards with few restrictions. In addition, the drow's chainmail provides a slight improvement in resistance to magic and slightly reduces the casting time of all spells while wearing it.
+
+Unlike most dark elf items, this particular chain mail was not crafted with adamantine, as it was designed for spies and assassins who regularly travel to the surface. As such, it will not disintegrate into ashes when exposed to sunlight, but it does not offer as much protection as regular drow armor.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +5%
+- Improves casting speed by 1
+- Penalty to the thief's abilities
+
+Armor Class: 4
+Weight: 7
+Requirement: 5 Strength
+
+Not used by:
+ Druid
+ Mage~
 @102775 = ~Fenthick~
 @102776 = ~Back! The Hold is ours, in service to your masters to come!~
 @102777 = ~You cannot enter! I will stop you, and earn a reprieve!~
@@ -2475,10 +2509,10 @@ Usable By:
 @102779 = ~Flarg~
 @102780 = ~Former Guard~
 @102781 = ~Formosa~
-@102782 = ~NP: Strange... I feel something...~ /*A foul poison... I feel it.*/
-@102783 = ~NP: I serve the gods. You can't hide.~ /*Me serve no one but me!*/
-@102784 = ~NP: By the power bestowed upon me by the gods, I command you to show yourself!~ /*Attack at my order! I so command!*/
-@102785 = ~NP: Strange... let's see what a little divination reveals...~ /*Let's see what you have for sale.*/
+@102782 = ~It's weird... I sense something.~
+@102783 = ~I serve the gods. You cannot hide.~
+@102784 = ~By the power vested in me by the gods, I command you to show yourself!~
+@102785 = ~Strange... let's see what a little divination will reveal...~
 @102786 = ~Halion~
 @102787 = ~Galrone~
 @102788 = ~Gam~
@@ -2491,25 +2525,25 @@ And to think he sent me here to search for some ancient artifact as he sent my b
 @102794 = ~Gerrol~
 @102795 = ~Geth~
 @102796 = ~Geth's Ring~
-@102797 = ~NP: This is the ring of Geth, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~ /*If you'd spare my life and listen to what I have to say, I'd be willing to cut my ear from my head and give it to you as proof.*/
+@102797 = ~It is the ring of Geth, one of one of the young men of Port Llast who became werewolves. It must be presented to the priest of Tyr, Neuric, in Port Llast as proof.~
 @102798 = ~Gilda~
 @102799 = ~Smugglers' Coin~
-@102800 = ~NP: This is a special Neverwinter smuggling coin.~ /*What do you know about the leaders of Neverwinter?*/
-@102801 = ~NP: My name is Glavius, I had to fulfill the last will of Maegel. He tripped and broke his ankle. Lost the keys. The food is over. Prepared for the riddle, but I won't get there. Beware of flat stones that are tucked under your feet, otherwise you will soon lie next to me.~ /*I was Glavius, that quested to fulfill the great destiny of Maegel. Tripped and broke my ankle. Lost my picks. Food running out. Was prepared for the riddle, but I will not make it. Watch ye well the treacherous low rocks that twist the foot, or ye may as well lay beside me now.*/
+@102800 = ~It's a special coin of the Neverwinter smugglers.~
+@102801 = ~I was Glavius, that quested to fulfill the great destiny of Maegel. Tripped and broke my ankle. Lost my picks. Food running out. Was prepared for the riddle, but I will not make it. Watch ye well the treacherous low rocks that twist the foot, or ye may as well lay beside me now.~
 @102802 = ~Goblin Chief~
 @102803 = ~Gilles~
-@102804 = ~NP: Goblin Sniper~ /*Kobold Sniper*/
-@102805 = ~NP: Get out wherever you are!~ /*Come out, stupid kobold!*/
+@102804 = ~Goblin Sniper~
+@102805 = ~Get out wherever you are!~
 @102806 = ~Gorkan~
 @102807 = ~Graxx~
 @102808 = ~Gregor Armiste~
-@102809 = ~NP: Grimmnau~ /*Grig*/
+@102809 = ~Grimgnaw~
 @102810 = ~Gauntlet Pass~
 @102811 = ~This chit will allow the bearer passage into the secretive Gauntlet combatant's club beneath Neverwinter's Board Laid Bare tavern. It must be presented to the bartender and will be exchanged for a key.~
 @102812 = ~Grommin~
-@102813 = ~NP: castle guard~ /*Castle Guard*/
-@102814 = ~NP: Helm's guardian spirit~ /*Shield Guardian*/
-@102815 = ~NP: Astral Maiden~ /*Astral Door*/
+@102813 = ~Castle Guard~
+@102814 = ~Guardian Spirit of Helm~
+@102815 = ~Astral Maiden~
 @102816 = ~Heeheehee! Free to annoy! Free to destroy!~
 @102817 = ~Gulgash~
 @102818 = ~Here is where you become my MEAT!~
@@ -2518,7 +2552,7 @@ And to think he sent me here to search for some ancient artifact as he sent my b
 @102821 = ~I have seen the visions! You cannot deny the power!~
 @102822 = ~Gulnan~
 @102823 = ~The plague is a gift! It grants an army for the taking!~
-@102824 = ~NP: Come out spy... I can feel your presence~ /*There, up ahead... I smell an ambush.*/
+@102824 = ~Come out spy... I can feel your presence~
 @102825 = ~Gurak Entrailspiller~
 @102826 = ~Greataxe~
 @102827 = ~NP: Two-Handed Stonefire Ax~ /*Stonefire Axe +1*/
