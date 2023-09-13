@@ -111,3 +111,7 @@ NW3500    W         NW3200      EXIT3500      2         1          N        N   
 NW3500    S         NW3200      EXIT3500      2         1          N        N        N         N        N        0
 NW3500    E         NW3200      EXIT3500      2         1          N        N        N         N        N        0
 
+NW4000    N         NW1000      Main          0         1          N        N        N         N        N        0
+NW4000    W         NW1000      Main          0         1          N        N        N         N        N        0
+NW4000    S         NW1000      Main          0         1          N        N        N         N        N        0
+NW4000    E         NW1000      Main          0         1          N        N        N         N        N        0
