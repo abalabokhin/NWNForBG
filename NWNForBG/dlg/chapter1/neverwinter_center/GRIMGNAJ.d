@@ -836,7 +836,7 @@ END
 // --------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  InParty(Myself)Global("NWNChapter","GLOBAL",4)Global("Chapter4Talk","LOCALS",0)~ THEN BEGIN 138 // from:
+~  InParty(Myself)Global("NWNChapter","GLOBAL",4)Global("Chapter4Talk","LOCALS",0)!Dead("MORAG4")~ THEN BEGIN 138 // from:
   SAY @258
   IF ~~ THEN REPLY @259 GOTO 139
   IF ~~ THEN REPLY @260 GOTO 140
