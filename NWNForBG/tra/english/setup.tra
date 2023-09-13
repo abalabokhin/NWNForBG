@@ -1257,7 +1257,7 @@ Not Used By:
  Mage
  Thief~
 @102439 = ~Dragon Horror +4~
-@102440 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some dragon blood to it. The result is an axe with amazing properties. This axe is just a dragon's bad dream. The wielder of this axe can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
+@102440 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some dragon blood to it. The result is an axe with amazing properties. This axe is just a dragons' nightmare. The wielder of this axe can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
 
 STATISTICS:
 
@@ -1301,7 +1301,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requirements: 10 Strength
 Weight: 7~
-@102443 = ~Ice Reaver +1~
+@102443 = ~Ice Reaver +4~
 @102444 = ~This weapon bears the mark of the dwarf Barun, a Master Blacksmith who worked from a makeshift forge in the Uthgardt village of Beorunna's Well. He forged it late in 1373 DR, to aid the war effort against Lady Aribeth the Betrayer, who was then marching against the northern city of Neverwinter and the Lords' Alliance.
 
 STATISTICS:
@@ -2555,19 +2555,87 @@ And to think he sent me here to search for some ancient artifact as he sent my b
 @102824 = ~Come out spy... I can feel your presence~
 @102825 = ~Gurak Entrailspiller~
 @102826 = ~Greataxe~
-@102827 = ~NP: Two-Handed Stonefire Ax~ /*Stonefire Axe +1*/
-@102828 = ~NP: This unique two-handed ax is crafted by the finest blacksmiths in Neverwinter. They managed to reforge the enchanted halberd by adding some adamatine ore to it. The result is a two-handed ax with amazing properties. It is so easy to handle that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The owner of this ax can handle it much better than with any other axes. PARAMETERS: Features: The owner gets +1 to the ax skill Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 3 points of fire damage THAC0: improvement +6 Damage: 1D10 +4 Damage type: slashing Weight: 7 Factor speed: 7 Required skill: axes Type: two-handed Requirements: strength 10 Cannot use: Druid Priest Mage Thief~ /*Type of Feat: ClassPrerequisite: Assassin.
-Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
-Use: Automatic.*/
-@102829 = ~NP: Halberd the Loser~ /*Halberd +1*/
-@102830 = ~NP: This unique halberd is crafted by the finest smiths in Neverwinter. They managed to reforge a lightly enchanted halberd, adding some dragon blood to it. The result is a halberd with amazing properties. This weapon is just a nightmare for dragons. The owner of this halberd may not be afraid of either a wing strike or fear. In addition, he himself can once a day, like a dragon, spew dragon's breath on his enemies. PARAMETERS: Features: Immunity to wing strike Immunity to sleep Immunity to fear Ability to cast 1 time per day &quot;Dragon's Breath&quot; Combat properties: Double damage to dragons + 2 points of fire damage THAC0: improvement +4 Damage: 1D10 +4 Damage type: piercing Weight : 12 Speed Factor: 7 Required Skill: Halberds Type: Two-Handed Requirements: Strength 13 Cannot Use: Druid Priest Mage Thief~ /*Type of Feat: ClassPrerequisite: Assassin.
-Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
-Use: Automatic.*/
-@102831 = ~NP: Hammer drill~ /*Hammer of the Gods*/
-@102832 = ~NP: This magical hammer is crafted by the best blacksmiths in Neverwinter. They managed to combine a war hammer and a magical alloy called ritellium into a single whole, only the gods know how the blacksmiths managed to do this. The hammer of the storm is simply filled with magic and can sometimes cause the spell &quot;Ray of the Sun&quot; on a creature hit by this hammer, each hit of it dispels magic. In addition, this is an excellent weapon to fight trolls - any troll is waiting for instant death. The hammer also protects its wearer from hostile magic by absorbing some of it into itself. PARAMETERS: Features: +25 to resist magic damage Combat Abilities: Each hit dispels magic Instantly destroys trolls and illusory creatures 5% chance to cast a &quot;Ray of the Sun&quot; spell on the enemy THAC0: +4 Damage: 2D4 +4 Damage Type: Crushing Weight: 3 Haste Factor: 1 Skill Type: Hammer Type: One-Handed Requirements: Strength 14 Unusable: Druids Mages Thieves Monks~ /*Type of Feat: MetamagicPrerequisite: Ability to cast 4th-level spells.
-Specifics: Quickened spells can be cast instantaneously, making them invulnerable to counterspells or interruption. A quickened spell is cast as a free action, and another action can be attempted within the same round, including the casting of another spell. Only one quickened spell can be cast per round.
-Use: Quickened spells occupy spell slots four levels higher than normal.*/
-@102833 = ~Rune Hammer +8~
+@102827 = ~Stonefire Great Axe~
+@102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamatite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
+
+STATISTICS:
+
+Equipped abilities:
+- The wielder gains +1 to the halberd skill
+
+Combat abilities:
+- 80% chance to reduce an enemy's Armor Class by 1 for 2 rounds
+
+THAC0: +6
+Damage: 1d10+4, +3(fire)
+Damage Type: slashing
+Weight: 7
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requirements: 10 Strength
+
+Not Used By:
+ Druid
+ Priest
+ Mage
+ Thief~
+@102829 = ~Ravager Halberd~
+@102830 = ~This unique halberd is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some dragon blood to it. The result is a halberd with amazing properties. This weapon is just a dragons' nightmare. The wielder of this halberd can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Wind Buffet
+- Immunity to Sleep
+- Immunity to Fear
+- Can cast Dragon Breath once per day
+
+Combat abilities:
+- Double damage to dragons
+
+THAC0: +4
+Damage: 1d10+4, +2 (fire)
+Damage Type: piercing
+Weight: 12
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requirements: 13 Strength
+
+Not Used By:
+ Druid
+ Priest
+ Mage
+ Thief~
+@102831 = ~Storm Hammer~
+@102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Рammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Damage Resistance: +25%
+
+Combat abilities:
+- Dispel Magic per hit
+- Instantly destroy trolls and illusory creatures
+- 5% chance to cast Sunray on target per hit
+
+THAC0: +4
+Damage: 2d4+4
+Damage Type: crushing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requirements: 14 Strength
+
+Not Used By:
+ Druid
+ Mage
+ Thief
+ Monk~
+@102833 = ~Rune Hammer +4~
 @102834 = ~NP: This hammer is crafted by the best blacksmiths in Neverwinter. They managed to reforge a simple enchanted hammer with some adamatine ore added to it. The result is a hammer with amazing properties. It is so easy to use that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The owner of this hammer can handle it much better than any other hammer. PARAMETERS: Features: The owner gets +1 to the hammer skill Combat properties: 80% chance for 2 rounds to reduce the enemy’s defense class by 1 + 3 points of magic damage THAC0: improvement +6 Damage: 2D4 +4 Damage type: crushing Weight: 4 Factor speed: 3 Required skill: hammers Type: one-handed Requirements: strength 10 Cannot use: Druid Mage Thief~ /*The shadows of the forest lay heavy on the ground, as you made your way towards the cries of a wounded animal. Then, suddenly you knew that someone was following you. With all of your senses focused outward, you crept forward quietly. The most minute movement from behind a bush drew your attention and you sprang lightly overtop, to land on a beautiful forest dryad. She giggled, kissed your forehead and slipped out from underneath you. In your hands she left a simple wooden cup.Drogan congratulated you on your abilities and told you to keep the cup as a trophy to remember that day. Placing the cup to your lips creates a small amount of dryad wine, which heightens the senses, increasing your spot skill. This ability is only usable once per day.*/
 @102835 = ~NP: Harben Ashensmith~ /*Ashensmith*/
 @102836 = ~NP: Harbena Amulet~ /*Aarin's Amulet*/
