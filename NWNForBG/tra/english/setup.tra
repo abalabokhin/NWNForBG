@@ -2636,53 +2636,121 @@ Not Used By:
  Thief
  Monk~
 @102833 = ~Rune Hammer +4~
-@102834 = ~NP: This hammer is crafted by the best blacksmiths in Neverwinter. They managed to reforge a simple enchanted hammer with some adamatine ore added to it. The result is a hammer with amazing properties. It is so easy to use that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The owner of this hammer can handle it much better than any other hammer. PARAMETERS: Features: The owner gets +1 to the hammer skill Combat properties: 80% chance for 2 rounds to reduce the enemy’s defense class by 1 + 3 points of magic damage THAC0: improvement +6 Damage: 2D4 +4 Damage type: crushing Weight: 4 Factor speed: 3 Required skill: hammers Type: one-handed Requirements: strength 10 Cannot use: Druid Mage Thief~ /*The shadows of the forest lay heavy on the ground, as you made your way towards the cries of a wounded animal. Then, suddenly you knew that someone was following you. With all of your senses focused outward, you crept forward quietly. The most minute movement from behind a bush drew your attention and you sprang lightly overtop, to land on a beautiful forest dryad. She giggled, kissed your forehead and slipped out from underneath you. In your hands she left a simple wooden cup.Drogan congratulated you on your abilities and told you to keep the cup as a trophy to remember that day. Placing the cup to your lips creates a small amount of dryad wine, which heightens the senses, increasing your spot skill. This ability is only usable once per day.*/
-@102835 = ~NP: Harben Ashensmith~ /*Ashensmith*/
-@102836 = ~NP: Harbena Amulet~ /*Aarin's Amulet*/
-@102837 = ~NP: Such amulets are worn only by distinguished halflings. You received this one from the militia commander of one of the districts of Neverwinter, Harben Aschensmith. The amulet increases halflings' inherent agility, as well as saving throws. In addition, apparently it is quite valuable and any merchant will give a decent price for it. STATS: Bonus to Agility +2 Bonus to Saving Throws: +1~ /*It will not save you from the Silent Lord when He finally chooses you, but it will grant you some protection from succumbing to those who would deliver you into his grasp before your appointed time.*/
-@102838 = ~NP: Harn~ /*Zarn*/
+@102834 = ~This unique war hammer is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted war hammer by adding some adamatite ore to it. The result is an war hummer with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this hammer can handle it much better than any other hammer.
+
+STATISTICS:
+
+Equipped abilities:
+- The wielder gains +1 to the war hammer skill
+
+Combat abilities:
+- 80% chance to reduce an enemy's Armor Class by 1 for 2 rounds
+
+THAC0: +6
+Damage: 2d4+4, +3(magic)
+Damage Type: crushing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requirements: 10 Strength
+
+Not Used By:
+ Druid
+ Mage
+ Thief~
+@102835 = ~Harben Ashensmith~
+@102836 = ~Harben's Amulet~
+@102837 = ~Such amulets are worn only by prominent halflings. You received this one from the militia commander of one of Neverwinter's districts, Harben Aschensmith. The amulet increases a halfling's inherent dexterity as well as his saving throws. It is also apparently quite valuable and any merchant will give you a decent price for it.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +2
+- Saving Throws: +1~
+@102838 = ~Harn~
 @102839 = ~Harpy~
 @102840 = ~Harris~
 @102841 = ~Dergiab's Head~
-@102842 = ~NP: This is the head of the leader of humanoid monsters, the ogre mage Dergiab.~ /*This is the head of the powerful skull warrior that was destroyed in the Ruins of Illusk.*/
+@102842 = ~This is the head of the leader of the humanoid monsters, the ogre mage Dergiab.~
 @102843 = ~Head of the Orc Chieftain~
-@102844 = ~NP: The head of an orc chieftain from a network of caves located east of Port Llast.~ /*The head of the Orc Chieftain from the network of caves beneath the North Road.*/
+@102844 = ~This is the head of an orc chieftain from a network of caves east of Port Llast.~
 @102845 = ~Head of the Troll Chieftain~
 @102846 = ~The eyes of the decapitated troll chieftain seem to follow you from within their sunken sockets. Even though you were sure to sear the neck stump over the campfire, the thought of it somehow regenerating within your pack still haunts you. You can't wait to find Lenton and leave the accursed thing on his doorstop in exchange for his promised reward.~
 @102847 = ~Hector~
 @102848 = ~Dire Hell Hound~
-@102849 = ~NP: Flail Flail +3~ /*Fire Mephit*/
-@102850 = ~NP: A flail is an iron rod, spiked wooden beam, or spiked metal ball attached to a massive wooden handle with a chain or loop. The flail was originally a tool for threshing grain. This flail is enchanted. Runes gleam all over its surface. PARAMETERS: Combat Features: - 50% chance to deal an additional 2d6 fire damage THAC0: +3 Damage: 1d6+4 (bludgeoning) Speed Factor: 7 Weapon Skill: Flail/Morgenstern Type: One-Handed Requires: Strength 11 Weight: 15~ /*Caster Level(s): Bard 2, Ranger 2, Wizard / Sorcerer 2Innate Level: 2
-School: Transmutation
-Descriptor(s): 
-Component(s): Verbal, Somatic
-Range: Touch
-Area of Effect / Target: Single
-Duration: 1 Hour / Level
-Additional Counter Spells: 
-Save: Harmless
-Spell Resistance: No
+@102849 = ~Fire Flail +3~
+@102850 = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon has been enhanced magically, runes gleam all over its surface.
 
-The target creature's Dexterity is increased by 1d4+1.*/
+STATISTICS:
+
+Combat abilities:
+- 50% chance to deal additional 2d6 fire damage
+
+THAC0: +3
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 15
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requirements: 11 Strength~
 @102851 = ~Helmite~
-@102852 = ~NP: Mask of Powers Netera~ /*The Nether Scrolls*/
-@102853 = ~NP: This ancient artifact protects the wearer from any magical attempts at mind manipulation. In addition, anyone who puts on this mask will themselves gain the ability to control the living and the dead. STATS: Features: Protects from critical hits Wearer is immune to mind-affecting spells Dominate spell 2 times per day Control Undead spell 2 times per day Weight: 3 Unused by: Mages Bards Thieves Druids Monks Wizard slayers Kensai~ /*This black garment, embroidered with a web-like pattern in silk, gives the wearer many of the abilities of a spider.  The cloak also grants immunity to entrapment by web spells or webs of any sort.
-Cloaks of this type are common in the Underdark, and are almost standard raiment for drow priestesses.*/
-@102854 = ~NP: Hemmel Masterson~ /*Masterson*/
+@102852 = ~Nether Mask of Power~
+@102853 = ~This ancient artifact protects the wearer from any magical attempts at mind manipulation. In addition, anyone who wears this mask will themselves gain the ability to control the living and the dead.
+
+STATISTICS:
+
+Equipped abilities:
+- Protects against critical hits
+- The wearer is immune to mind-affecting spells
+
+Charge abilities:
+- Domination two times per day
+- Control Undead two times per day
+
+Not Used By:
+ Mage
+ Bard
+ Thief
+ Druid
+ Monk
+ Wizard Slayer
+ Kensai~
+@102854 = ~Hemmel Masterson~
 @102855 = ~Henna~
-@102856 = ~NP: Huge Zombie~ /*Summoned Zombie*/
+@102856 = ~Huge Zombie~
 @102857 = ~Hoff~
 @102858 = ~Holga~
 @102859 = ~Special Holy Water~
-@102860 = ~NP: This vessel contains some holy water. Can be used as an ingredient to create magical items and also to fight the undead.~ /*A fine steel weapon hilt of the type usually used in the crafting of martial weapons such as swords.*/
-@102861 = ~NP: Harpy Sorceress~ /*Harpy*/
-@102862 = ~NP: Burning Blood Beltin~ /*Hound Archon, Female*/
-@102863 = ~NP: Beltane's Burning Blood (Necromancy) Level: 4 Range: Caster's line of sight Duration: 2 rounds Cast Time: 4 Area of Effect: 1 target Saving Throw: Special This spell turns the target's blood into flames, dealing 3-12 points of damage each round. The target may attempt to defend against the spell each round with a -3 modifier; if successful, the spell ends. If the attacked creature has protection from fire, then it can reduce or nullify the effect of this spell.~ /*Damage Reduction - Condition: This property reduces damage suffered from weapons. Once applied, the damage reduced ranges from 5 to 30. A weapon which has a high-enough Enhancement Bonus, or is made from a specific material such as silver or iron, can overcome this property*/
+@102860 = ~This vessel contains some holy water. It can be used as an ingredient to create magic items and also to fight the undead.~
+@102861 = ~Harpy Witch~
+@102862 = ~Beltyn's Burning Blood~
+@102863 = ~Beltyn's Burning Blood
+(Necromancy)
+
+Level: 4
+Range: Visual range of the caster
+Duration: 2 rounds
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: Special
+
+This spell turns a target's blood to flame, doing 3d4 Hit Points of damage every round. The target gets to save vs. Spell with penalty -3; if successful, the damage is negated. If the creature is resistant to fire, this resistance will lower or nullify the damage from this spell.~
 @102864 = ~Hubert~
-@102866 = ~NP: The Amulet of Protection from Spells turned out to be one of the few items that can absorb the Time Stop spell into itself, and thanks to this, become immune to it. Even this feature alone would make it a rather valuable item, but it also protects its owner quite well. PARAMETERS: Equipment options: Immunity to Stop Time +10% to magic resistance +2 to defense class +2 to all saving throws Unused by: Mages (single, dual and multiclass) Sorcerers~ /*Type of Feat: GeneralPrerequisite: Ability to cast 1st-level spells.
-Required for: Greater Spell Penetration.
-Specifics: A spellcaster with this feat gains a +2 bonus to caster level checks to beat a creature's spell resistance.
-Use: Automatic.*/
+@102866 = ~Amulet of Spell Protection was one of the few items that could absorb the Time Stop spell and thus become immune to it. Even that alone would make it a valuable item, but it also protects its owner quite well.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Time Stop
+- Magic Resistance: +10%
+- Armor Class: +2
+- Saving Throws: +2
+
+Not Used By:
+ Mage
+ Sorcerer~
 @102867 = ~Skull Warrior~
 @102868 = ~Fallen Hero~
 @102869 = ~Ever will the innocent guard this seal.~
@@ -2695,11 +2763,13 @@ Use: Automatic.*/
 @102876 = ~Ingo~
 @102877 = ~The Golden Apple~
 @102878 = ~Cutlass Guard~
-@102879 = ~NP: Emblem of the Union~ /*Gorgon*/
+@102879 = ~Alliance Arms Inn~
 @102880 = ~The Green Griffon~
 @102881 = ~Ironwood~
-@102882 = ~NP: It is a piece of ironwood that can be used as an ingredient to create magic items. Weight: 5~ /*These woolen clothpads are components that can be used in the creation of various types of armor.*/
-@102883 = ~NP: Outsiders have infiltrated! Attack!~ /*sssStrike at my enemy! Attack!*/
+@102882 = ~It is a piece of ironwood that can be used as an ingredient to create magic items.
+
+Weight: 5~
+@102883 = ~Intruders have broken in! Attack!~
 @102884 = ~Captain Islund~
 @102885 = ~Issabon~
 @102886 = ~Jace~
@@ -2712,36 +2782,156 @@ Use: Automatic.*/
 @102893 = ~Janis~
 @102894 = ~Janken~
 @102895 = ~Jared~
-@102896 = ~NP: Freedom +5~ /*Freedom*/
-@102897 = ~NP: This leather armor was created for the sole purpose of protecting its wearer from Faerûn's most feared spell, Confinement. Many demi-liches fell at the hands of their owners. STATS: Abilities: Immunity to Imprisonment Defense Class: 2 Weight: 8 Requires: 6 Strength Doesn't Use: Mages Monks Werewolves Avengers Kensai~ /*Any special effects on your character, such as spells or items that affect your stats or give you special immunities or abilities, can be seen by scrolling down to the bottom of your character sheet.*/
+@102896 = ~Freedom +5~
+@102897 = ~This leather armor was created for the sole purpose of protecting its wearer from Faerûn's most feared spell, Imprisonment. Many a demilich has fallen at the hands of its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Imprisonment
+
+Armor Class: 2
+Weight: 8
+Requirement: 6 Strength
+
+Not used by:
+ Mage
+ Monk
+ Shapeshifter
+ Avenger
+ Kensai~
 @102898 = ~Jaroo~
 @102899 = ~Jax~
 @102900 = ~Jemanie~
 @102901 = ~Jerol~
-@102902 = ~NP: Hammer of Essembra +2~ /*Golden Sickle +2*/
-@102903 = ~NP: Essembra's hammer got its name from the city in which it was invented. The weapon is a hammer with a spike on one side, impaled on a long, up to 10 feet, shaft. The long spear-shaped tip allows you to keep the enemy at a distance and, if desired, inflict deadly stabbing blows. This is one of the heaviest pole weapons, and quite slow. The weapon is completely made of steel, including the shaft, and is decorated with carvings and exquisite gilding. This particular hammer is enhanced with powerful enchantments that can knock an opponent down or make them flee the battlefield in fear. PARAMETERS: THAC0: +2 Damage: 1D8 + 2 Features: 5% chance that the victim will faint 10% chance that the victim will flee in horror Damage type: crushing / piercing Weight: 8 Speed factor: 7 Skill type: hammers Type: 2-Hand Requirements: Strength 9 Unused by: Druids Mages Thieves Monks~ /*Type of Feat: SpellPrerequisite: 21st level, Quicken Spell, Spellcraft 30, ability to cast 9th level spells.
-Specifics: This feat allows the character to cast spells with a moment of thought. 
-This feat may be taken multiple times:
-Automatic Quicken Spell I: Quicken any level 0 - 3 spells
-Automatic Quicken Spell II: Quicken any level 4 - 6 spells
-Automatic Quicken Spell III: Quicken any level 7 - 9 spells
-Use: Automatic.*/
-@102904 = ~NP: Titanium Plate Armor +5~ /*Mithral Splint Mail*/
-@102905 = ~NP: This plate armor is made of steel-reinforced titanium, an extremely rare and powerful alloy that can be easily enchanted. This armor has definitely been enchanted with very powerful magic, and it offers even more protection than full plate armor while still being fairly light. PARAMETERS: Defense class: -1 Weight: 18 Requirements: 13 strength Not used by: Bards Druids Mages Thieves~ /*This armor not only provides the wearer with excellent protection in combat, it also draws upon the life-force of the wearer to regenerate wounds and injuries. Of course, such magic comes with a heavy price, and those who wear the armor find themselves feeling tired and drained.*/
-@102906 = ~NP: Immunities: Renounce (Repudiate) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: Special Saving Throw: None This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school will be able to harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Renounce version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102907 = ~NP: Immunities: Evocation (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school can harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Evocation version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102908 = ~NP: Immunities: Auspex (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school will be able to harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Divination version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102909 = ~NP: Immunities: Charm (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school can harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Enchant version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102910 = ~NP: Immunity: Illusions (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school will be able to harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Illusion version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102911 = ~NP: Immunities: Evocation (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school will be able to harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Evocation version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102912 = ~NP: Immunities: Necromancy (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school will be able to harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is the Immunity: Necromancy version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102913 = ~NP: Immunity: Alteration (Repudiation) Level: 5 Range: 0 Duration: 1 round/level Cast Time: 5 Area of Effect: special Saving Throw: none This enchantment grants immunity to one of the schools of magic of his choice. After casting the spell, the magician must indicate which particular school of magic he wants to receive protection from. No spell of this school will be able to harm or benefit him while this spell is in effect. This includes priestly prayers aimed at helping the caster. This is Immunity: Change the version of the spell.~ /*The fabric of this robe is woven from thin strips of a mysterious material that is capable of storing magical spells. A caster need only cast a defensive spell upon the robe. The robe will then store the spell so that it may be cast at a later time, instantly. This robe is capable of storing three spells.*/
-@102914 = ~Jerome~
-@102915 = ~NP: Journal of Sir Caratis &quot;Ironheart&quot;~ /*The Journal of Sir Karathis Ironheart*/
-@102916 = ~NP: May the holy armies rain fire upon my enemies, Elchelor! Elchelor the Werewolf, Elchelor Alpha Mail... I've hunted him for years, and with a simple bite, he turned me into what I hated the most! I have no doubt that even now he is hiding under the guise of a merchant... As soon as the blood of the lycanthrope coursed through my veins, I pounced on the poor guys, thus spreading fear even more. One finally dodged my crazy jump. Ander, the smallest. I can only hope that he gets to the city and tells this story to Neurik. Of course, the priest will send a group of hunters after me. I can only hope that they can kill me before I spread this curse on anyone else. May the gods have mercy on my soul...~ /*May the celestial armies rain fire upon mine enemy, Alhelor! Alhelor the Werewolf, Alhelor the Alpha Male... I have hunted him for years and with a simple bite, he has turned me into the very thing I hate! No doubt he hides beneath his merchant guise even now...
-As the lycanthropic blood coursed through me, I lashed out at the poor boys and thereby spread this horror all the more. One, at least, escaped my maddened lunge. Ander, the smallest. I can only hope that he makes it back to town and tells his tale to Neurik. Surely the priest will send a hunting party after me. I can only hope they are capable of killing me before I spread this dreaded curse any further.
+@102902 = ~Essembra's Hammer +2~
+@102903 = ~The Essembra's Hammer was named after the city in which it was invented. The weapon is a hammer with a spike on one side, mounted on a long, up to 10-foot-long shaft. The long spear-shaped tip allows it to keep the enemy at a distance and deliver deadly stabbing blows if desired. It is one of the heaviest of the arboreal weapons, and quite slow. The weapon is made entirely of steel, including the shaft, and is decorated with carvings and exquisite gilding. This particular hammer is reinforced with powerful enchantments that can knock an opponent off his feet or make him flee the battlefield in fear.
 
-May the gods have mercy on my soul...*/
+STATISTICS:
+
+Combat abilities:
+- 5% chance per hit the target will fall unconscious
+- 10% chance per hit the target will run away in fear.
+
+THAC0: +2
+Damage: 1d8+2
+Damage Type: crushing/piercing
+Weight: 8
+Speed Factor: 7
+Proficiency Type: War Hammer
+Type: Two-handed
+Requirements: 9 Strength
+
+Not Used By:
+ Druid
+ Mage
+ Thief
+ Monk~
+@102904 = ~Titanium Plate Armor +5~
+@102905 = ~This plate armor is made of titanium reinforced with steel, an extremely rare and powerful alloy that can be easily enchanted. This armor has definitely been enchanted with very powerful magic, and it gives even more protection than full plate armor while remaining fairly lightweight.
+
+STATISTICS:
+
+Armor Class: -1
+Weight: 18
+Requirement: 13 Strength
+
+Not used by:
+ Bard
+ Druid
+ Mage
+ Thief~
+@102906 = ~Immunity: Abjuration
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102907 = ~Immunity: Conjuration
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102908 = ~Immunity: Divination
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102909 = ~Immunity: Enchantment
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102910 = ~Immunity: Illusion
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102911 = ~Immunity: Evocation
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102912 = ~Immunity: Necromancy
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102913 = ~Immunity: Alteration
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wizard must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+@102914 = ~Jerome~
+@102915 = ~The Journal of Sir Karathis Ironheart~
+@102916 = ~May the celestial armies rain fire upon mine enemy, Alhelor! Alhelor the Werewolf, Alhelor the Alpha Male... I have hunted him for years and with a simple bite, he has turned me into the very thing I hate! No doubt he hides beneath his merchant guise even now... As the lycanthropic blood coursed through me, I lashed out at the poor boys and thereby spread this horror all the more. One, at least, escaped my maddened lunge. Ander, the smallest. I can only hope that he makes it back to town and tells his tale to Neurik. Surely the priest will send a hunting party after me. I can only hope they are capable of killing me before I spread this dreaded curse any further. May the gods have mercy on my soul...~
 @102917 = ~Master Johns~
 @102918 = ~Escaped Prisoner~
 @102919 = ~Jones~
