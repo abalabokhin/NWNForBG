@@ -1231,7 +1231,7 @@ Not Usable By:
  Mage
  Thief
 @102436 = ~Avista~
-@102437 = ~Guard +4~
+@102437 = ~Sentinel +4~
 @102438 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some adamatite ore to it. The result is an axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
@@ -3104,15 +3104,15 @@ Not Usable By:
  Cleric
  Mage
  Thief~
-@103010 = ~NP: Come to me.~ /*To my side.*/
+@103010 = ~Come to me.~
 @103011 = ~Luce~
-@103012 = ~NP: Sergeant~ /*Cult Member*/
+@103012 = ~Sergeant~
 @103013 = ~Lydia~
-@103014 = ~NP: Huge Skeleton Mage~ /*Skeletal Remains*/
-@103015 = ~NP: Random Activated - Summon Vampire~ /*Polymorph Zombie Properties*/
-@103016 = ~NP: Maegel~ /*Maegel*/
+@103014 = ~Huge Skeleton Mage~
+@103015 = ~Contingency Triggered: Summon Vampire~
+@103016 = ~Maegel~
 @103017 = ~Fairy Dust~
-@103018 = ~NP: This is the dust that falls from the wings of little fairies, such as pixies and grigs. Can be used as an ingredient to create magical items.~ /*This is the dust that comes from small fey creatures such as pixies or grigs.*/
+@103018 = ~This is the dust that comes from small fey creatures such as pixies or grigs. It can be used as an ingredient to create magical items.~
 @103019 = ~Citizen~
 @103020 = ~Mano~
 @103021 = ~Journal of Marcus Penhold~
@@ -3121,89 +3121,127 @@ Excerpt:
 I have hidden with the rest in fear of the plague, but I have no such anxiety about some pitiful shambling zombies. My brother awaits at the shrine the Helmites maintain in the Beggar's Nest, but I will not be joining him. Finally there is something real to fight.~
 @103023 = ~Dead Body~
 @103024 = ~Penhold Staff~
-@103025 = ~NP: This weapon was created to please Melphius Penhold, a scientist who traveled the south in the last century. He was very modest, lived a long happy life and died just as quietly and calmly, leaving a rather mysterious legacy. His staff, of modest ability and modest quality, reflects his family's honest history. The last members of the Penhold family are his two great-great-grandchildren: Marcus (apparently deceased) and Bertrand, both from Neverwinter. PARAMETERS: Damage: 1D6+2 THAC0: +2 Damage Type: Crushing Allows you to cast spells: 1. Dispel Magic - 3 charges 2. Reduce Resistance - 3 charges (Does not recharge after sleeping) Weight: 3 Speed: 3 Skill Type: Staff Type : two-handed Use: Mages (Single, Dual and Multiclass)~ /*This weapon was fashioned to the tastes of Melthius Penhold, a scholar who traveled the south in the last century. His unassuming manner led to a long and peaceful life, a similarly uneventful death, and a lineage of anonymity. His staff is of modest ability, and that quality mirrors his honest family history. The last descendants of the Penhold line are two great great grandchildren: Marcus, now evidently deceased, and Bertrand, both of Neverwinter.*/
+@103025 = ~This weapon was fashioned to the tastes of Melthius Penhold, a scholar who traveled the south in the last century. His unassuming manner led to a long and peaceful life, a similarly uneventful death, and a lineage of anonymity. His staff is of modest ability, and that quality mirrors his honest family history. The last descendants of the Penhold line are two great great grandchildren: Marcus, now evidently deceased, and Bertrand, both of Neverwinter.
+
+STATISTICS:
+
+Charge abilities:
+- Dispel Magic, 3 charges (not rechargable)
+- Lower Resistance, 3 charges (not rechargable)
+
+Damage: 1d6+2
+THAC0: +2
+Damage Type: crushing
+Speed Factor: 3
+Weight: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Usable By:
+ Mage~
 @103026 = ~Recipes of the Forge~
-@103027 = ~NP: A catalog of weapon and armor modifications from Marrok the blacksmith. Here is a list of what I need and what you, the buyer, will receive. I also need a fair handful of gold, depending on how much I want to charge you. You carry the items to the forge and speak to me, Marrok, but only if you have gold jingling in your pocket. Armor and axes: Colored armor: Requires ritellium and full armor with AC 1. Scales of truth: Requires special holy water and chain mail +1 with AC 4. White bone leather armor: Requires gargoyle skull and studded leather armor +2 with AC 5. Guardian : Requires adamant and battle ax +1. Two-Handed Stonefire Axe: Requires adamant and halberd +1. Frostthief Hand Axe: Requires dragon blood and battleaxe +1. Maces and the like: Gladiator's Mace: Needs Ironwood and a regular Mace. Ironwood Mace: Requires ironwood and +1 mace. Stormhammer: Requires ritellium and hammer +1. Foundation Flail: Requires ironwood and flail +1. Rest Mace: Requires special holy water and a +1 mace. Buzzing Morning Star: Needs Fairy Dust and +1 Morning Star. Rune Hammer: Requires adamant and war hammer +2. Swords Sharp and Loyal: Two-Handed Sword of Harbingers: Requires Adamant and Two-Handed Sword +1. Holy Katana: Requires adamant and katana +1. Astral Longsword: Requires ritellium and +1 longsword. Astral bastard sword: Requires ritellium and bastard sword +1. Desert Wind Scimitar: Requires adamant and +1 scimitar. Fairy Dust Short Sword: Needs fairy dust and short sword +1. Rarer Goods: Halberd of the Destroyer: Requires dragon's blood and halberd +2. Fairy Spear: Fairy Dust and Spear +1 required.~ /*Marrok of the Hammer's catalog of weapon and armor modifications.
+@103027 = ~Marrok of the Hammer's catalog of weapon and armor modifications.
+
 Here be the list of whats I need and whats you, the customer, get. I'll be wanting a goodly number of coins as well, depending on what I wants to charge you. Puts the items in the forge and talks to me, Marrok, with your gold in your pocket.
 
 Armor and Axes:
-Chromatic Breastplate: Requires a diamond and a suit of magical armor of total AC:6.
+Chromatic Armor: Requires a diamond and full plate with Armor Class: 1.
 
-Scales of Truth: Requires special holy water and a suit of magical armor of total AC:5.
+Scales of Truth: Requires special holy water and a chain mail +1 with Armor Class: 4.
 
-Whitebone Armor: Requires gargoyle skull and a suit of magic armor of total AC:3.
+Whitebone Armor: Requires gargoyle skull and studded leather armor +2 with Armor Class: 5.
 
-Sentinel: Requires adamantite and a magic battleaxe.
+Sentinel: Requires adamantite and a battle axe +1.
 
-Double Axe of the Tall Kin: Requires adamantite and a magic double axe.
+Stonefire Great Axe: Requires adamantite and a halberd +1.
 
-Stonefire Great Axe: Requires adamantite and a magic great axe.
-
-Ice Reaver Hand Axe: Requires dragon blood and a magic hand axe.
+Ice Reaver Hand Axe: Requires dragon blood and a battle axe +1.
 
 Maces and the like:
-Gladiator Club: Requires ironwood and a magic club.
+Gladiator Club: Requires ironwood and a club.
 
-Ironwood Mace: Requires ironwood and a magic dire mace.
+Ironwood Mace: Requires ironwood and a mace +1.
 
-Reaver Heavy Flail: Requires dragon blood and a magic heavy flail.
+Storm Hammer: Requires a diamond and a war hammer +1.
 
-Storm Light Hammer: Requires a diamond and a magic light hammer.
+Foundation Flail: Requires ironwood and a magic flail +1.
 
-Foundation Light Flail: Requires ironwood and a magic light flail.
+Mace of Disruption: Requires special holy water and a mace +1.
 
-Mace of Disruption: Requires special holy water and a magic mace.
+Drone Morning Star: Requires fairy dust and a morning star +1.
 
-Drone Morning Star: Requires fairy dust and a magic morning star.
-
-Rune Hammer: Requires adamantite and a magic war hammer.
+Rune Hammer: Requires adamantite and a war hammer +2.
 
 Blades both Sharp and True:
-Harbinger Kin Greatsword: Requires adamantite and a magic greatsword.
+Harbinger Kin Greatsword: Requires adamantite and a two-handed sword +1.
 
-Sword Saint Katana: Requires adamantite and a magic katana.
+Sword Saint Katana: Requires adamantite and a katana +1.
 
-Astral Blade Longsword: Requires a diamond and a magic longsword.
+Astral Blade Long Sword: Requires a diamond and a long sword +1.
 
-Namarra Rapier: Requires dragon blood and a magic rapier.
+Astral Blade Bastard Sword: Requires a diamond and a bastard sword +1.
 
-Desert Wind Scimitar: Requires adamantite and a magic scimitar.
+Desert Wind Scimitar: Requires adamantite and a scimitar +1.
 
-Feyduster Short Sword: Requires Fairy Dust and a magic short sword.
-
-Uthgardt Ceremonial Two-Bladed Sword: Requires ironwood and a magic two-bladed sword.
+Feyduster Short Sword: Requires Fairy Dust and a short sword +1.
 
 Rarer Fare:
-Ravager Halberd: Requires dragon blood and a magic halberd.
+Ravager Halberd: Requires dragon blood and a halberd +2.
 
-Sea Reaver Scythe: Requires adamantite and a magic scythe.
-
-Fey Spear: Requires fairy dust and a magic spear.
-
-Golden Sickle: Requires special holy water and a magic sickle.*/
+Fey Spear: Requires fairy dust and a spear +1.~
 @103028 = ~Marrok~
-@103029 = ~NP: Mary O'Deal~ /*O'Deel*/
+@103029 = ~Mary O'Deel~
 @103030 = ~Mattily~
 @103031 = ~Maugrim~
 @103032 = ~Maureen~
 @103033 = ~Patron~
 @103034 = ~Milly~
-@103035 = ~NP: You think you can just break into my house like that, is that it?~ /*You believe you can just invade my home, do you?! I am not so easily assassinated!*/
-@103036 = ~NP: Damn! Has anyone been here, where are they?~ /*Blast! Not now!*/
+@103035 = ~You think you can just break into my house like that, is that it?~
+@103036 = ~Damn it! Someone was here, where are they?~
 @103037 = ~No! Don't kill me, please! I'll give you anything!!~
 @103038 = ~Meldanen~
 @103039 = ~Nobleman~
 @103040 = ~Orrean~
-@103041 = ~NP: Let's protect our master!~ /*Where me find Host Tower?*/
+@103041 = ~Let's protect our master!~
 @103042 = ~Nasty Imp~
 @103043 = ~Meldanen Apprentice~
-@103044 = ~NP: Elder Minotaur~ /*Old One Chieftain*/
-@103045 = ~NP: For help! Protect me!~ /*To my aid, damn you!*/
-@103046 = ~NP: Lich's Bane~ /*Bane (5)*/
-@103047 = ~NP: You received this great sword from the spirit of Maegel, who in the distant past defeated the terrible Black Lich with this sword, but fell in battle with his minions. No lich can withstand the blows of this sword, in addition, the sword fits so comfortably in the hand that even those who do not have skills in using long swords can use it. Parameters: Damage: 2D4 +4 (+3 with fire) THACO: +4 +5 damage and THACO against Liches Features: Forged from cold iron The owner of the sword gains 2 stars in the use of bastard swords Each hit causes one of the spells on the liches: 1 Ruby Beam of Cancellation 2. Spell Strike 3. Pierce Shield 4. Piercing Magic Allows casting once per day Immunity: Renunciation Damage type: slashing Weight: 12 Speed factor: 7 Weapon type: Bastard Type: one-handed Not usable: Druids Mages Priests Thieves~ /*Ardulia the Agile was a man whose speed and skill at knife play made him exceptionally lethal in battle, and he repeatedly proved it by leading raids on settlements along the Sword Coast. He would often challenge the village leader for possession of the town, and with his speed, the duels were always quickly decided in his favor. Ardulia met his match one spring morn however, when he battled the priest Itgan, who wielded this mace. Ardulia seemed to stagger under each blow, slowing his pace to recoup and regain his breath. Without his speed, Ardulia was lost, and fell to the measured attacks of Itgan.*/
-@103048 = ~NP: *screams viciously*~ /*Armor of Thorns*/
-@103049 = ~NP: *hisses in pain*~ /*Protection from Lightning*/
-@103050 = ~NP: *hisses*~ /*Drown*/
+@103044 = ~Elder Minotaur~
+@103045 = ~Help! Protect me!~
+@103046 = ~Lich's Bane~
+@103047 = ~This great sword was given to you by the spirit of Maegel, who in the distant past defeated the terrible Black Lich with this sword, but fell in battle with his minions. No lich can resist the blows of this sword, and it is so comfortable in the hand that even those who are not skilled in the use of bastard swords can use it.
+
+STATISTICS:
+
+Equipped abilities:
+- Froged from cold iron
+- The wielder has +2 to Bastard Sword proficiency
+
+Combat abilities:
+- Every hit on a lich casts one of the following spells:
+  1. Ruby Ray of Reversal
+  2. Spellstrike
+  3. Pierce Shield
+  4. Pierce Magic
+
+Charge abilities:
+- Immunity: Abjuration once per day
+
+THAC0: +4, +5 against liches
+Damage: 2d4+4, +3 fire damage, +5 against liches
+Damage Type: slashing
+Weight: 12
+Speed Factor: 7
+Proficiency Type: Bastard Sword
+Type: One-handed
+
+Not Usable By:
+ Druid
+ Mage
+ Priest
+ Thief~
+@103048 = ~*screams viciously*~
+@103049 = ~*hisses in pain*~
+@103050 = ~*hisses*~
 @103051 = ~Mobley~
 @103052 = ~NP: Montgomery True Shot won't let some bastards covet his trophies! Nasher couldn't close me and Niatar too!~ /*Montgomery Sureshot will not let some damned treehuggers take his hard won trophies!*/
 @103053 = ~NP: Montgomery 'Precise Shot'~ /*Single Shot*/
