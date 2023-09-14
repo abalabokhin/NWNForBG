@@ -1192,7 +1192,7 @@ Equipped abilities:
 
 Weight: 0
 
-Used By:
+Usable By:
  Thief
  Monk~
 @102431 = ~Throwing Hammer~
@@ -1208,7 +1208,7 @@ Proficiency Type: Hammers
 Type: One-handed
 Requirements: 9 Strength
 
-Not used by:
+Not Usable By:
  Druid
  Mage
  Thief~
@@ -1226,7 +1226,7 @@ Proficiency Type: War Hammer
 Type: One-handed
 Requirements: 9 Strength
 
-Not used by:
+Not Usable By:
  Druid
  Mage
  Thief
@@ -1251,7 +1251,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requirements: 10 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage
@@ -1279,7 +1279,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requirements: 10 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage
@@ -1322,7 +1322,7 @@ Type: One-handed
 Requirements: 16 Strength
 Weight: 5
 
-Not Used By:
+Not Usable By:
  Priest~
 @102445 = ~The target is frozen~
 @102446 = ~Dragon Killer~
@@ -1342,7 +1342,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requirements: 10 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage
@@ -1358,7 +1358,7 @@ Equipped abilities:
 - Magic resistance: 10%
 - The wearer can memorize additional 4th, 5th, 6th and 7th level spells
 
-Used By:
+Usable By:
  Druid
  Priest~
 @102451 = ~Protector +2~
@@ -1378,7 +1378,7 @@ Weight: 1
 
 Requires: 12 Wisdom and 15 Charisma
 
-Used By:
+Usable By:
  Druid~
 @102453 = ~Summon Shambling Mound~
 @102454 = ~Small Shambler~
@@ -1403,7 +1403,7 @@ Weight: 18
 
 Requirements: 6 Strength
 
-Not Used By:
+Not Usable By:
  Mage~
 @102464 = ~Phoenix Spear~
 @102465 = ~The shaft of this spear is engraved with various runes that imbue the spear with the essence of the phoenix, giving the weapon special powers associated with fire. The tip of the spear is skillfully attached to the shaft and is made of dark volcanic glass.
@@ -1426,7 +1426,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requirements: 5 Strength
 
-Not Used By:
+Not Usable By:
  Priest
  Mage
  Thief
@@ -1448,7 +1448,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requirements: 5 Strength
 
-Used By:
+Usable By:
  True Neutral Character
  Ranger
  Fighter
@@ -1476,7 +1476,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requirements: 5 Strength
 
-Used By:
+Usable By:
  Druid~
 @102470 = ~Forest Scimitar~
 @102471 = ~This blade was forged by druids for druids. Only a true servant of Nature can wield it. It is a very powerful and accurate weapon, but its true power lies in the fact that by using it, the wielder greatly expands his magical abilities.
@@ -1495,7 +1495,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninjato
 Type: One-handed
 Requirements: 12 Wisdom
 
-Used By:
+Usable By:
  Druid~
 @102472 = ~Nature's Fury~
 @102473 = ~This special sword was made especially for rangers and contains the power of Nature herself. Only those who know the ways of Nature and have combat skills can wield this weapon. The blade is very accurate and poisons its victims with every hit.
@@ -1514,7 +1514,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requirements: 10 Strength
 
-Used By:
+Usable By:
  Ranger~
 @102474 = ~Forest Cloak~
 @102475 = ~Such cloaks are the best type of clothing for true protectors of nature - druids and rangers.
@@ -1528,7 +1528,7 @@ Equipped abilities:
 Armor Class: 2
 Weight: 4
 
-Used By:
+Usable By:
  Druid
  Ranger
  Monk~
@@ -1548,7 +1548,7 @@ Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninjato
 Type: One-handed
 
-Used By:
+Usable By:
  Druid
  Ranger~
 @102478 = ~Fools! You will pay for this!~
@@ -1607,7 +1607,7 @@ Proficiency Type: Shortbow
 Type: Two-handed
 Requires: 16 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage~
@@ -1638,7 +1638,7 @@ Charge abilities:
 
 Weight: 2
 
-Not Used By:
+Not Usable By:
  Kensai
  Wizard Slayer~
 @102537 = ~Belt of the Performer +1~
@@ -1657,7 +1657,7 @@ Equipped abilities:
 
 Weight: 2
 
-Not Used By:
+Not Usable By:
  Evil Characters~
 @102539 = ~Belt of the Performer +2~
 @102540 = ~This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.
@@ -1675,7 +1675,7 @@ Equipped abilities:
 
 Weight: 2
 
-Not Used By:
+Not Usable By:
  Evil Characters~
 @102541 = ~Belt of the Performer +3~
 @102542 = ~This leather belt appears innocuous enough, its true power not evident until it is actually worn. There are small inscriptions embedded in the leather throughout the item, its language unknown and the true history of the item unknowable.
@@ -1693,7 +1693,7 @@ Equipped abilities:
 
 Weight: 2
 
-Not Used By:
+Not Usable By:
  Evil Characters~
 @102543 = ~Bertrand~
 @102544 = ~Bethany~
@@ -1709,7 +1709,7 @@ STATISTICS:
 Charge abilities:
 - Can throw one of 6 crystals
 
-Not Used By:
+Not Usable By:
  Wizard Slayers~
 @102557 = ~Ice Shard~
 @102558 = ~Staff of Sight~
@@ -1729,7 +1729,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requirements: 10 Level, 5 Strength
 
-Used By:
+Usable By:
  Mage~
 @102560 = ~Cyclops Arm +3, +3 vs. Giants~
 @102561 = ~This morning star once belonged to a barbarian who lived in the Icewind Dale. The weapon was very effective against giants, but not enough to handle a dozen Frost Giants. The barbarian died, and the morning star fell into the hands of the victors of that heated battle.
@@ -1745,7 +1745,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requirements: 11 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Mage
  Thief
@@ -1773,7 +1773,7 @@ Proficiency Type: Club
 Type: One-handed
 Requirements: 5 Strength
 
-Not Used By:
+Not Usable By:
  Mage~
 @102564 = ~Ironwood Mace~
 @102565 = ~This mace was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Ironwood Mace is so strong that it can crush any golem up to and including level 20 into dust. However, any other creature struck by this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
@@ -1796,7 +1796,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requirements: 5 Strength
 
-Not Used By:
+Not Usable By:
  Mage
  Druid
  Monk
@@ -1820,7 +1820,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requirements: 5 Strength
 
-Not Used By:
+Not Usable By:
  Mage
  Druid
  Monk
@@ -1843,7 +1843,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requirements: 10 Strength
 
-Not Used By:
+Not Usable By:
  Mage
  Druid
  Monk~
@@ -1871,7 +1871,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requirements: 11 Strength
 
-Not Used By:
+Not Usable By:
  Mage
  Druid
  Monk
@@ -1917,7 +1917,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requirements: 5 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Cleric
  Mage~
@@ -1944,7 +1944,7 @@ Proficiency Type: Shortbow
 Type: Two-handed
 Requires: 16 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage~
@@ -1969,7 +1969,7 @@ Proficiency Type: Dagger
 Type: One-handed
 Requirements: 3 Strength
 
-Used By:
+Usable By:
  Halfling
  Thief~
 @102605 = ~Mage Ward~
@@ -1980,7 +1980,7 @@ STATISTICS:
 Charge abilities:
 - Spell Immunity two times per day
 
-Used By:
+Usable By:
  Mage
  Bard~
 @102607 = ~Scales of Truth~
@@ -1999,7 +1999,7 @@ Armor Class: 2
 Weight: 10
 Requirements: 7 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Mage
  Thief
@@ -2480,7 +2480,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requirements: 5 Strength
 
-Not Used By:
+Not Usable By:
  Good character~
 @102772 = ~Fence~
 @102773 = ~Drow Assassin Mail~
@@ -2499,7 +2499,7 @@ Armor Class: 4
 Weight: 7
 Requirement: 5 Strength
 
-Not used by:
+Not Usable By:
  Druid
  Mage~
 @102775 = ~Fenthick~
@@ -2575,7 +2575,7 @@ Proficiency Type: Halberd
 Type: Two-handed
 Requirements: 10 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage
@@ -2603,7 +2603,7 @@ Proficiency Type: Halberd
 Type: Two-handed
 Requirements: 13 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Priest
  Mage
@@ -2630,7 +2630,7 @@ Proficiency Type: War Hammer
 Type: One-handed
 Requirements: 14 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Mage
  Thief
@@ -2655,7 +2655,7 @@ Proficiency Type: War Hammer
 Type: One-handed
 Requirements: 10 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Mage
  Thief~
@@ -2709,7 +2709,7 @@ Charge abilities:
 - Domination two times per day
 - Control Undead two times per day
 
-Not Used By:
+Not Usable By:
  Mage
  Bard
  Thief
@@ -2748,7 +2748,7 @@ Equipped abilities:
 - Armor Class: +2
 - Saving Throws: +2
 
-Not Used By:
+Not Usable By:
  Mage
  Sorcerer~
 @102867 = ~Skull Warrior~
@@ -2794,7 +2794,7 @@ Armor Class: 2
 Weight: 8
 Requirement: 6 Strength
 
-Not used by:
+Not Usable By:
  Mage
  Monk
  Shapeshifter
@@ -2822,7 +2822,7 @@ Proficiency Type: War Hammer
 Type: Two-handed
 Requirements: 9 Strength
 
-Not Used By:
+Not Usable By:
  Druid
  Mage
  Thief
@@ -2836,7 +2836,7 @@ Armor Class: -1
 Weight: 18
 Requirement: 13 Strength
 
-Not used by:
+Not Usable By:
  Bard
  Druid
  Mage
@@ -2935,81 +2935,175 @@ Casting this spell grants the wizard protection from one spell school of <PRO_HI
 @102917 = ~Master Johns~
 @102918 = ~Escaped Prisoner~
 @102919 = ~Jones~
-@102920 = ~NP: FOOLS! I CANNOT BE KILLED, I AM NOT HERE... I AM BETWEEN THE WORLDS.~ /*ERROR: TYPE DOES NOT HAVE AN OPTIONAL PARAMETER*/
-@102921 = ~NP: FUCK!!! YOU WILL PAY FOR EVERYTHING!!! YOUR FUTURE IS DETERMINED!!! YOU WILL SUFFER!!! STRRRDAAAAT!!!~ /*Wretch!! SPECK!! YOU WILL PAY IN THE END!! YOUR FUTURE IS MARKED!! YOU WILL SUFFER!!! SUFFERRRRR!!!*/
-@102922 = ~NP: Kaoquinone from the Abyss~ /*Spiderweb Cocoon*/
-@102923 = ~NP: Sir Caratis~ /*Karathis*/
-@102953 = ~NP: Werewolf Caratis~ /*Werewolf*/
+@102920 = ~FOOLS! I CANNOT BE KILLED, I AM NOT HERE... I AM BETWEEN THE WORLDS.~
+@102921 = ~SPECK!! YOU WILL PAY IN THE END!! YOUR FUTURE IS MARKED!! YOU WILL SUFFER!!! SUFFERRRRR!!!~
+@102922 = ~Chaohinon from the Abyss~
+@102923 = ~Sir Karathis~
+@102953 = ~Werewolf Karathis~
 @102954 = ~The Journal of Karlat Jhareg~
 @102955 = ~Midwinter Night, 1183 D.R.
 A part of me feels guilty for having tricked my brother into such a crime... but it was necessary: I am growing old and my research is not done. These northern wastes are a brutal land but so full of magic! If only I could be undying, then my studies could go on unhindered by this call of mortal flesh.
 
 I can hear Quint's voice cutting through the walls as he reads to the children in the Library. I can hear their laughter. Belial says they must die tonight. All of them, all the children of Charwood... It is a grim task but for a greater good, I swear to it. There must be blood tonight if I am to bind my soul to that phylactery.~
-@102956 = ~NP: Burn and die, you little fools!~ /*Tell me what you need?*/
+@102956 = ~Burn and die, you worthless fools!~
 @102957 = ~Karlat Jhareg~
-@102958 = ~NP: Oath of Karlat Jareg~ /*To Karlat Jhareg's Tower*/
-@102959 = ~NP: This is the oath of the sorcerer and half-lich, Karlat Jareg.~ /*This is the key to the room where Karlat Jhareg has been confined.*/
+@102958 = ~The Oath of Karlat Jhareg~
+@102959 = ~This is the written oath of the sorcerer and half-lich, Karlat Jhareg.~
 @102960 = ~Karlat's Protection Wand~
-@102961 = ~NP: This wand was used to protect Karlat when he summoned demons. Anyone who dares to summon a demon without such protection will be devoured by the monster immediately. The wand can only be used a limited number of times before being destroyed. STATS: Effect: Protection from evil Range: 40 feet Area of effect: 1 creature Duration: 3 turns Cannot use: Barbarians Wizard slayers~ /*This wand was used to cast protections on Karlat while he was summoning fiends. Anyone attempting to summon a fiend without protection will quickly have the beast at their throat.*/
+@102961 = ~This wand was used to cast protections on Karlat while he was summoning fiends. Anyone attempting to summon a fiend without protection will quickly have the beast at their throat.
+
+STATISTICS:
+
+Charge abilities:
+- Protection From Evil
+  Range: 40 ft
+  Area of Effect: 1 creature
+  Duration: 3 turnes
+
+Not Usable By:
+ Barbarian
+ Wizard Slayer~
 @102962 = ~Karlat's Burning Wand~
-@102963 = ~NP: This wand is incredibly easy to use. It invokes the Burning Hands spell. They just need to be swung and no magical knowledge is required. Most likely, this was the first wand that was entrusted to the young student of the magician. STATS: Effect: Burning hands Range: 2 Area of effect: 1 creature Damage: 10 +1d4 Cannot use: Wizard slayers~ /*This wand is an extremely simple to use wand that casts the spell Burning Hands. The wand need only be waved and no arcane knowledge is required to use it. It was likely the very first wand given to a young apprentice mage.*/
+@102963 = ~This wand is an extremely simple to use wand that casts the spell Burning Hands. The wand need only be waved and no arcane knowledge is required to use it. It was likely the very first wand given to a young apprentice mage.
+
+Charge abilities:
+- Burning Hands
+  Range: 2
+  Area of Effect: 1 creature
+  Damage: 10+1d4
+
+Not Usable By:
+ Wizard Slayer~
 @102964 = ~Kasma~
 @102965 = ~Keener~
 @102966 = ~Kellisai~
 @102967 = ~Kendrack~
-@102968 = ~NP: Mutamin's Labyrinth Key~ /*Key from light/darkmaze*/
-@102969 = ~NP: This key opens one of the doors in the basement of the Green Griffin Inn.~ /*Green Griffon Basement Key*/
-@102970 = ~NP: This key most likely opens the door to Jareg's castle.~ /*This key will unlock the illithid slave pens.*/
+@102968 = ~Mutamin's Challenge Key~
+@102969 = ~This key opens one of the doors Green Griffon Inn basement.~
+@102970 = ~This key most likely opens the door to Castle Jhareg.~
 @102971 = ~Kipp~
 @102972 = ~Krestal~
 @102973 = ~Hrrr... You show prowess in battle. I surrender to you.~
 @102974 = ~Kurdan~
-@102975 = ~NP: Fools! You will pay for this!~ /*Oh, This'll cost you!*/
-@102976 = ~NP: Fools! No one dares to enter my house without permission! You will pay for this!~ /*How dare you invade our home, foul fiends!*/
+@102975 = ~Fools! You will pay for this!~
+@102976 = ~Fools! No one dares to enter my house without permission! You will pay for this!~
 @102977 = ~High Captain Kurth~
 @102978 = ~Goblin Book Burner~
 @102979 = ~Ogre Body Guard~
 @102980 = ~Ogre Warden~
-@102981 = ~NP: Client (Bloody Hands)~ /*Bloody Hand Customer*/
+@102981 = ~Bloody Hand Customer~
 @102982 = ~Bloody Hand Mercenary~
-@102983 = ~NP: Bloody Hands Shooter~ /*Bloody Hand Customer*/
+@102983 = ~Bloody Hands Shooter~
 @102984 = ~Bloody Hand Assassin~
 @102985 = ~Lady Tanglebrook~
 @102986 = ~Leah~
 @102987 = ~Wedding Ring~
 @102988 = ~An inscription around the outside of this simple wedding band reads "To Leah, my love for all of my life. Your husband, Gerrol."~
-@102989 = ~NP: Dream Thief~ /*Balor Sword*/
-@102990 = ~NP: This studded leather armor bears little resemblance to regular leather armor. It is made of harpy skin, additionally reinforced with ankheg chitin inserts, which provide excellent protection against dastardly backstabs. Numerous staves, crafted from pure Adamantine, known to be unaffected by light, create a flexible metallic coating to help evade slashing and slashing attacks. Although this armor can be worn by many, it will be most useful to those who are used to hiding in the shadows, providing them with excellent protection against fellow craftsmen. STATS: Special Abilities: Improved invisibility 1 time per day Equip Abilities: Backstab Immunity Poison Immunity Undetect Defense Class: 3 Weight: 14 Requires: 9 Str Unusable: Mages Monks~ /*The Faerie Dragon is a small dragon that enjoys pranks and practical jokes. However, they should not be underestimated because of their playful nature. Every 5 levels of the master, the faerie dragon gains a use of either Improved Invisibility or its Confusion breath weapon.
-Skills: Hide, Move Silently
-Feats: Alertness, and Improved Evasion.
-Special: 
- Master Level 
- 5: Improved Invisibility 1x
- 10: Bolt, Confuse 2x
- 15: Improved Invisibility 2x
- 20: Bolt, Confuse 3x and Improved Invisibility 3x*/
-@102991 = ~NP: Aristocrat's leather~ /*Noble Outfit*/
-@102992 = ~NP: At first glance, this elaborate leather clothing can hardly protect its owner from a sword strike or a well-aimed arrow. However, despite its lightness, it provides reliable protection thanks to the protective spells cast on it. Especially well this leather armor protects against arrows. STATS: Defense class: 4 +4 against ranged attacks Weight: 8 Prerequisites: strength 6 Cannot use: Mages~ /*This item is a three-inch-diameter gold disk with the holy symbol of Arvoreen inlaid in platinum. It grants the wearer the ability to cast aid six times.  It cannot be used by an evil creature.*/
-@102993 = ~NP: Necromancer Leather~ /*Necromancer's Robe*/
-@102994 = ~NP: This studded leather armor bears little resemblance to regular leather armor. It is made by necromancers specifically to protect against the magic of the Forsaken. In addition, necromancers added protection from their own magic to this armor so as not to accidentally suffer from their own spells. How this armor ended up with the highest captain Kurt you do not know, perhaps he got it as a trophy. OPTIONS: Immune to renunciation and necromancy magic. Defense Rating: 4 Weight: 7 Requires: Strength 6 Cannot Use: Mage Monk Kensai Shapeshifting Avenger~ /*A recent decision by Archmage Szass Tam has led to the creation of these masks, which all necromancers in the borders of Thay are required to wear. Those wearing the mask have access to powerful magics, but are also subject to Tams control. Any wizard caught practicing necromancy while not wearing such a mask is killed and turned into a ghoul to serve Tam in death better than they did in life.*/
-@102995 = ~NP: Whitebone Leather Armor~ /*Drow Leather Armor +1*/
-@102996 = ~NP: This fine leather armor is crafted by the best blacksmiths in Neverwinter. In an incomprehensible way, they managed to combine the enchanted leather armor and the mysterious magical properties of the gargoyle skull. The result is a unique armor that allows you to face the most powerful sorcerers in battle. Once per day, you can activate the special properties of the armor and gain immunity to renunciation magic for three turns. PARAMETERS: Defense class: 3 Traits: +15% to stealth +10 to magic resistance Immunity to fear, charm, hold, petrification, slowdown Special properties: 1 time per day for 3 turns &quot;Immunity: Renunciation&quot; Weight: 8 Requirements: strength 15 Cannot use: Mage Monk Kensai Shapeshifter~ /*Destruction DomainClerics who take the Destruction domain are able to damage constructs through force of will and are granted spells that allow them to weaken and destroy their enemies.
-Domain Special Ability and Bonus Spells
-Weaken Constructs: Able to damage constructs while using the turn ability.
-The cleric gains access to the following spells at the specified spell level: Stinking Cloud (3), Acid Fog (6).*/
+@102989 = ~Thief's Dream~
+@102990 = ~Studded leather armor has little in common with normal leather armor. This one is made of harpy leather, further reinforced with chitinous ankeg inserts that provide excellent protection against sneaky back blows. Numerous rivets made of pure adamantine, create a flexible metallic coating to help dodge chopping and slashing attacks. While this armor can be worn by many, it will be most useful to those who are used to hiding in the shadows, providing them with excellent protection from fellow craftsmen.
+
+STATISTICS:
+
+Charge Abilities:
+- Improved Invisibility once per day
+
+Equipped Abilities:
+- Immune to backstabs
+- Immune to poison
+- Non-detection
+
+Armor Class: 3
+Weight: 14
+Requirement: 9 Strength
+
+Not Usable By:
+ Mage
+ Monk~
+@102991 = ~Aristocrat's Leather Jacket~
+@102992 = ~This ornate leather garment, at first glance, can hardly protect its wearer from a sword strike or an arrow. However, despite its lightness, it provides reliable protection thanks to the protection spells cast on it. This leather armor is especially good against arrows.
+
+STATISTICS:
+
+Armor Class: 4, +4 vs. missile attacks
+Weight: 8
+Requirement: 6 Strength
+
+Not Usable By:
+ Mage~
+@102993 = ~Necromancer's Leather Jacket~
+@102994 = ~Studded leather armor has little in common with normal leather armor. This one is made by the necromancers specifically to protect them from the Abjuration magic. In addition, the necromancers have added protection from their own magic to this armor, so that they don't accidentally get hurt by their own spells. How this armor came to be in the possession of High Captain Kurth you do not know, perhaps he got it as a trophy.
+
+STATISTICS:
+
+Equipped Abilities:
+- Immune to Abjuration and Necromancy magic schools
+
+Armor Class: 4
+Weight: 7
+Requirement: 6 Strength
+
+Not Usable By:
+ Mage
+ Monk
+ Kensai
+ Shapeshifter
+ Avenger~
+@102995 = ~Whitebone Armor~
+@102996 = ~This beautiful leather armor is crafted by the finest blacksmiths in Neverwinter. In an unfathomable way, they managed to combine the enchanted leather armor with the mysterious magical properties of the gargoyle skull. The result is a unique armor that allows you to face the most powerful sorcerers in battle. Once a day you can activate the special properties of the armor and gain immunity to Abjuration magic for three turns.
+
+STATISTICS:
+
+Equipped Abilities:
+- Hide in Shadows: +15%
+- Magic Resistance: +10%
+- Immune to Fear, Charm, Hold, Slow and Petrification
+
+Charge Abilities:
+- Immunity: Abjuration once per day for three turns
+
+Armor Class: 3
+Weight: 8
+Requirement: 15 Strength
+
+Not Usable By:
+ Mage
+ Monk
+ Kensai
+ Shapeshifter~
 @102997 = ~Lenton~
-@102998 = ~NP: Lerk~ /*Orc*/
+@102998 = ~Lerk~
 @102999 = ~Linu~
 @103000 = ~Blacklake Citizen~
 @103001 = ~Creator Sorceror~
-@103002 = ~NP: Scoundrels, they poisoned me!~ /*Impurities... I have been poisoned.*/
+@103002 = ~Bastards, I've been poisoned!~
 @103003 = ~Impertinent slave!~
-@103004 = ~NP: I can't take it~ /*That I cannot do.*/
+@103004 = ~I can't take it!~
 @103005 = ~You will die now!~
-@103006 = ~NP: Warrior Builder~ /*Creator Sorceror*/
+@103006 = ~Creator Warrior~
 @103007 = ~Londa~
-@103008 = ~NP: Royal blood~ /*King's Scythe*/
-@103009 = ~NP: This large blade is a sword that has passed through the hands of many generations of great knights. When handing over the blade, the old owner drips blood from his wound, which he inflicted on himself according to the ritual, onto the blade. The blood has given this blade magical properties that are transferred to the blade's wielder. STATS: Damage: 1D12 +4 THAC0: +4 +2 on all saving throws 15% chance to heal the wearer for 1D8 HP on a successful hit Haste Factor: 10 Required Skill: Two-Handed Swords Type: Two-Handed Prerequisites: Strength 16 Cannot Use: Druid Cleric Mage Thief~ /*This armor once belonged to Lord Halueth Never, but it has barely survived the ages. It was exposed to a damaging amount of moisture over time, although you can still see the quality it must have once had. There is light etching throughout, including a faint image of the symbol of Tyr. It remains an important artifact for Neverwinter, even if it should never see combat again.*/
+@103008 = ~Royal Blood~
+@103009 = ~This large blade is a sword that has passed through the hands of many generations of great knights. When the blade is passed on, the old owner drips blood from his wound, which he inflicted on himself according to ritual, onto the blade. The blood has given this blade magical properties that are passed on to the owner of the blade.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +2
+
+Combat abilities:
+- 15% chance to heal 1d8 HP to the wielder per hit
+
+THAC0: +4
+Damage: 1d12+4
+Damage type: slashing
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
 @103010 = ~NP: Come to me.~ /*To my side.*/
 @103011 = ~Luce~
 @103012 = ~NP: Sergeant~ /*Cult Member*/
