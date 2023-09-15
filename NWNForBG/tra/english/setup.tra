@@ -3243,19 +3243,33 @@ Not Usable By:
 @103049 = ~*hisses in pain*~
 @103050 = ~*hisses*~
 @103051 = ~Mobley~
-@103052 = ~NP: Montgomery True Shot won't let some bastards covet his trophies! Nasher couldn't close me and Niatar too!~ /*Montgomery Sureshot will not let some damned treehuggers take his hard won trophies!*/
-@103053 = ~NP: Montgomery 'Precise Shot'~ /*Single Shot*/
-@103054 = ~NP: Dancing Longsword +3~ /*Dancing Blade +3*/
-@103055 = ~NP: This sword is not only capable of hitting enemies with the steel of its blade, but also has the ability to dispel magic and detect traps. Once a day, the sword's spiritual essence can be released from the sword, which will take on a material form and will hit the opponents of its owner. This deadly dance will only last half an hour. The owner of the blade retains its physical shell in his hands, which can also be used to kill enemies. PARAMETERS: Damage: 1D8 + 3 THAC0: +3 Features: Allows you to cast the Find Trap spell 1 time per day Allows you to cast the Dispel Magic spell, 1 time per day Allows you to activate the dancing sword, 1 time per day Damage type: slashing Weight: 3 Speed factor : 3 Skill type: longsword Type: 1-handed Requirements: Strength 17 Cannot use: Priests Mages Druids Monks~ /*The Faerie Dragon is a small dragon that enjoys pranks and practical jokes. However, they should not be underestimated because of their playful nature. Every 5 levels of the master, the faerie dragon gains a use of either Improved Invisibility or its Confusion breath weapon.
-Skills: Hide, Move Silently
-Feats: Alertness, and Improved Evasion.
-Special: 
- Master Level 
- 5: Improved Invisibility 1x
- 10: Bolt, Confuse 2x
- 15: Improved Invisibility 2x
- 20: Bolt, Confuse 3x and Improved Invisibility 3x*/
-@103056 = ~NP: Dancing broadsword~ /*Phase Spider*/
+@103052 = ~Montgomery Sureshot will not let some damned treehuggers take his hard won trophies! Nasher couldn't shut me down, Nyatar couldn't shut me down!~
+@103053 = ~Montgomery Sureshot~
+@103054 = ~Dancing Long Sword +3~
+@103055 = ~This sword is not only capable of striking enemies with the steel of its blade, but also has the ability to dispel magic and detect traps. Once a day, the sword can release its spiritual essence, which will take on a material form and strike its master's enemies. This deadly dance will only last for half an hour. The owner of the blade still has its physical shell in his hands, which can also be used to kill enemies.
+
+STATISTICS:
+
+Charge abilities:
+- Find Traps once per day
+- Dispel Magic once per day
+- Dancing Sword ability once per day
+
+THAC0: +3
+Damage: 1d8+3
+Damage Type: slashing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requirements: 17 Strength
+
+Not Usable By:
+ Priest
+ Mage
+ Druid
+ Monk~
+@103056 = ~Dancing broadsword~
 @103057 = ~Dread Queen Morag~
 @103058 = ~You are welcome in my service, paladin. I have awaited your arrival with great anticipation.~
 @103059 = ~Do you renounce your false god of justice, Aribeth de Tylmarande? Do you renounce your god, your lord and your people who have betrayed you?~
@@ -3271,15 +3285,37 @@ Special:
 @103069 = ~Morden~
 @103070 = ~Mulland~
 @103071 = ~Captain Mung~
-@103072 = ~NP: Security guard~ /*Guard*/
-@103073 = ~NP: Mutamin's Key~ /*Meldanen's Key*/
-@103074 = ~NP: This key opens the door to the basement of the Green Griffin tavern.~ /*Green Griffon Basement Key*/
+@103072 = ~Guard~
+@103073 = ~Mutamin's Key~
+@103074 = ~This key opens the door to the Green Griffin Basement.~
 @103075 = ~Lord Nasher~
 @103076 = ~Neurik~
 @103077 = ~Holy Water~
-@103078 = ~NP: The water in this bottle has been consecrated and if thrown at any undead it will take the equivalent of 1d8 acid damage.~ /*You make a good point. I just fear that one day they might begin to corrupt our people with their influence.*/
-@103079 = ~NP: Blessed Flail +4~ /*Blessed day!*/
-@103080 = ~NP: This flail was crafted by Neverwinter's most skilled smiths at the request of the priests of Tyr, and the priests later enchanted this already powerful flail. The result exceeded the expectations of the priests, apparently Tyr himself turned his eyes to this weapon. It turned out that with the help of this flail, diseases can be cured, in addition, the constant blessing of Tyr descends on the owner of this flail. PARAMETERS: Special properties: &quot;Cure disease&quot; 3 times a day The owner of the flail is under the effect of the spell &quot;Help&quot; THAC0: improvement +4 Damage: 1D6 + 4, +1 damage with magic, magical cold and fire Double damage against undead and lycanthropes Damage type : blunt Weight: 10 Haste factor: 4 Required skill: flails/morningstars Type: one-handed Requirements: strength 13 Cannot use: Druid Mage Thief~ /*This Cockatrice feather is a spell component for the magical attempt to stop the Wailing Death plague. The bird-like beast it came from was one of four magical creatures sent from Waterdeep to be part of the cure. They were all lost in an attack as they entered the city. This feather should be delivered to Lady Aribeth with all haste.*/
+@103078 = ~The water in this bottle has been consecrated and if thrown at any undead it will take the equivalent of 1d8 acid damage.~
+@103079 = ~Blessed Flail +4~
+@103080 = ~This flail was made by the most skilled blacksmiths in Neverwinter at the request of the priests of Tyr, and later the priests enchanted this already powerful flail. The result exceeded the priests' expectations, and apparently Tyr himself had turned his eyes to this weapon. It turned out to be able to cure illnesses, and the wielder of this flail is constantly blessed by Tyr.
+
+STATISTICS:
+
+Charge abilities:
+- Cure Disease three times per day
+
+Equipped abilities:
+- The wielder is under constant effects of Aid
+
+THAC0: +4
+Damage: 1d6+4, +1 (fire), +1(cold), +1(magic)
+Damage Type: crushing
+Weight: 10
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requirements: 13 Strength
+
+Not Usable By:
+ Druid
+ Mage
+ Thief~
 @103081 = ~Neva~
 @103082 = ~Letter to Neva~
 @103083 = ~Neva,
@@ -3289,87 +3325,144 @@ I have already sent Solomon against these interlopers but he has failed. If you 
 
 In other words, do not fail...
 Maugrim Korothir~
-@103084 = ~NP: Yep, caught a fish in the net! Kill them.<CHARNAME> ! You are dead!~ /*Really! You are actually <CHARNAME>, then, yes?*/
+@103084 = ~Yep, caught a fish in the net! Kill them. <CHARNAME>! You are dead!~
 @103085 = ~Neibor~
 @103086 = ~Blacklake Nobleman~
 @103087 = ~Nuglat~
-@103088 = ~NP: Sanitary~ /*Vanathar*/
+@103088 = ~Medical Orderly~
 @103089 = ~Nurse~
-@103090 = ~NP: Amulet of Time Stability~ /*Periapt of Wisdom +1*/
+@103090 = ~Amulet of Time Stability~
 @103091 = ~Moonstone Mask~
 @103092 = ~Cloaktower~
 @103093 = ~Shining Knights Arms and Armor~
-@103094 = ~NP: Fair of Swords~ /*Bard, Gallant*/
+@103094 = ~The Trade of Blades~
 @103095 = ~Castle Never~
 @103096 = ~Academy~
-@103097 = ~NP: Leaving the city~ /*Garden Exit*/
-@103098 = ~NP: In Chernozerye~ /*Blacklake*/
-@103099 = ~NP: to the peninsula~ /*Peninsula.*/
-@103100 = ~NP: In Docks~ /*Dockhouse*/
-@103101 = ~To the Beggar's Nest~
-@103102 = ~NP: The door is closed. Before leaving, talk to Lady Aribeth.~ /*I'd like to meet the Lady Aribeth.*/
-@103103 = ~NP: To the city center~ /*City Centre*/
+@103097 = ~City Exit~
+@103098 = ~To Blacklake~
+@103099 = ~To Peninsula District~
+@103100 = ~To Docks District~
+@103101 = ~To Beggar's Nest~
+@103102 = ~The door is closed. Before you can leave, you must talk to Lady Aribeth.~
+@103103 = ~To City Core~
 @103104 = ~The Golden Apple~
-@103105 = ~NP: Silver sails~ /*To the Silver Sails*/
+@103105 = ~Silver Sails~
 @103106 = ~Androd Estate~
 @103107 = ~The Seedy Tavern~
 @103108 = ~Twenty in a Quiver~
-@103109 = ~NP: Well, now they will definitely fire me, I have to look for another job.~ /*So is you gonna leave now and go look for dragon cave?*/
-@103110 = ~NP: Well, I lost my job again, I have to look for a new one.~ /*Why you be in here? You supposed to be finding cult.*/
-@103111 = ~NP: Quicksilver Bracers~ /*Available Feats*/
-@103112 = ~NP: These rare bracers are an intricately crafted construction of soft leather and quicksilver, and have been enchanted to magically speed up the hero. With this power, the hero can move and attack faster. STATS: Adds +1 attack per round Adds +1 to movement speed Weight: 2 Used by: Warriors~ /*Just place one component item and one magical weapon or one suit of magic armor on the forge and I'll help you out. But if the forge isn't full - like now - I can't really do my thing, can I?*/
+@103109 = ~Well, now I'm gonna get fired for sure, I gotta find another job.~
+@103110 = ~Well, I've lost my job again, I have to look for a new one.~
+@103111 = ~Mercury Bracers~
+@103112 = ~These rare bracers are a skillfully crafted construction of soft leather and mercury, they have been enchanted to magically speed up the hero. Endowed with this power, the hero can move and attack faster.
+
+STATISTICS:
+
+Equipped abilities:
+- Attacks per round: +1
+- Movement Speed: +1
+
+Weight: 2
+
+Usable By:
+ Fighter~
 @103113 = ~Thomas Wheelwright Wagon Repair.~
 @103114 = ~The Shining Serpent~
-@103115 = ~NP: This staircase is blocked by magic.~ /*It appears you may not activate the Pool at this time.*/
-@103116 = ~NP: Militia Headquarters~ /*Militia HQ*/
+@103115 = ~This staircase is blocked by magic.~
+@103116 = ~Militia HQ~
 @103117 = ~There is a large hole in the side of Lady Tanglebrook's skull, revealing a dark and cavernous space within. Whatever she died of, it wasn't the Wailing Death.~
 @103118 = ~Meldanen Estate~
-@103119 = ~NP: 'Naked board'~ /*Board Laid Bare*/
-@103120 = ~NP: Zoo~ /*Leopard*/
+@103119 = ~Board Laid Bare~
+@103120 = ~Zoo~
 @103121 = ~Milly's House~
-@103122 = ~NP: Warehouse Meldanena~ /*Meldanen Guards*/
+@103122 = ~Meldanen's Warehouse~
 @103123 = ~Rumbottom Estate~
 @103124 = ~Hodge's Estate~
-@103125 = ~NP: Apparently this is some kind of portal, but now it does not work.~ /*You seem to got problem with thief.*/
+@103125 = ~Apparently this is some kind of portal, but now it does not work.~
 @103126 = ~Moonstone Mask: Portrait for Ophala
 
 A portrait of Sir Reginald Rumbottom III has been found that appears to have the name "Ophala Cheldarstorn" written on the back. She is the famous matron of the Moonstone Mask. It is likely she would be interested in it.~
-@103127 = ~NP: The passage behind this door is littered with fragments of walls, it is impossible to pass.~ /*How Riisi clean all this up? This be so impossible!*/
+@103127 = ~The passage behind this door is littered with rubble walls, impossible to pass through.~
 @103128 = ~Alliance Arms Inn~
-@103129 = ~NP: City Hall~ /*Race*/
-@103130 = ~NP: House of Eisenfeld~ /*Eisenfeldt*/
+@103129 = ~City Hall~
+@103130 = ~Eisenfeldt's House~
 @103131 = ~Wanev's Cottage~
 @103132 = ~The Cracked Anvil.~
-@103133 = ~NP: Entrance to the grove~ /*House Entrance*/
-@103134 = ~NP: Port warehouse~ /*Docks district*/
-@103135 = ~NP: Weakening~ /*Blindness*/
-@103136 = ~NP: Weaken (Divination) Level: 4 Range: Sight Duration: 1 turn Cast Time: 5 Saving Throw: -2 vs. Spells The caster drains 5 points of Strength from the target, which can prevent this with a -2 spell saving throw. This spell can be devastating, weakening the strongest enemies.~ /*Click and drag the spells you want to prepare from your spell list over to your prepared spells page. Don't forget that you'll have to rest before the spells are prepared.*/
-@103137 = ~NP: South Road - to Charwood and Neverwinter~ /*East Road NW Wood*/
-@103138 = ~NP: Northern road - to Luskan~ /*North Road - Barn*/
+@103133 = ~Grove Entrance~
+@103134 = ~Docks Warehouse~
+@103135 = ~Enfeeblement~
+@103136 = ~Enfeeblement
+(Divination)
+
+Level: 4
+Range: Visual range of the caster
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Neg.
+
+By means of Enfeeblement, a wizard weakens an opponent, reducing its Strength and thereby the attacks that rely upon it. The victim is reduced to a Strength of 5 for the duration of the spell unless a Save vs. Spell with penalty -2 is made. This spell can be devastating, weakening the strongest enemies.~
+@103137 = ~South Road - to Charwood and Neverwinter~
+@103138 = ~North Road - to Luskan~
 @103139 = ~To Port Llast.~
 @103140 = ~North Road~
 @103141 = ~East Road~
 @103142 = ~South Road~
-@103143 = ~NP: Goblin and Orc caves~ /*Stinger Caves*/
-@103144 = ~NP: wolf cave~ /*Wolf Pelt*/
+@103143 = ~Goblin and Orc caves~
+@103144 = ~Wolf Cave~
 @103145 = ~Bugbear Cave~
-@103146 = ~NP: Gerrol's farm~ /*The Hurst Farmhold*/
+@103146 = ~Gerrol's Farm~
 @103147 = ~To Luskan~
-@103148 = ~NP: abandoned mine~ /*Abandoned Entryway*/
-@103149 = ~NP: 'Green Griffin'~ /*The Green Griffon*/
-@103150 = ~NP: To the crossroads~ /*Oh, joy.*/
-@103151 = ~NP: Smelted ore~ /*Longarm*/
+@103148 = ~Abandoned Mine~
+@103149 = ~Green Griffon Inn~
+@103150 = ~To The Crossroads~
+@103151 = ~Smelted Ore~
 @103152 = ~This area smells strongly of wolf but has signs of human activity. Whatever lives here is not currently at home.~
-@103153 = ~NP: From this piece of smelted ore it is impossible to make a plow, or an axle for a wagon, or a sword blade - it is too small for this. The only thing that can happen is a simple hoe or dagger.~ /*Jagged splinters protrude from this shattered piece of wood. It's well-weighted, however, and you suspect you could use it as a crude weapon if you had to.*/
-@103154 = ~NP: Histashi~ /*Flails*/
-@103155 = ~NP: Bone Mask~ /*Bone Skin*/
-@103156 = ~NP: This skull-shaped mask is usually made from the skulls of powerful human priests. Used only by earthly evil, as a mask worn on the head brings a lot of bonuses. The mask is well known for its constant appearance on Fzul Chembril's head. PARAMETERS: -3 to Charisma while worn The wearer is immune to level drain The wearer is immune to instant death Once per day the wearer can resurrect the dead Once per day the wearer can summon an invisible hunter Weight: 2 Usable by: Evil characters only~ /*Armor of this type is not for those who wish to remain anonymous. More often it is associated with tales of the vain, and bards have even crafted songs about the appearance of 'rainbow warriors' on a battlefield. The protective quality of the multihued surface is undeniable, but it is unfortunate that the mage who crafted these items was colorblind.*/
-@103157 = ~NP: Bone from the crypt~ /*Skeleton's Knuckle*/
-@103158 = ~NP: You've been blessed from the tomb~ /*Tomb Exit*/
-@103159 = ~NP: This exotic item is a priest's finger bone. Taken from the grave, this bone contains an aura that grants a powerful cleric the ability to cheat death by snapping that finger against another. STATS: Trait: Anyone who snaps the finger gains a permanent +2 bonus to their saving throw against death. Do not apply: Warrior Thief~ /*This item is a three-inch-diameter gold disk with the holy symbol of Arvoreen inlaid in platinum. It grants the wearer the ability to cast aid six times.  It cannot be used by an evil creature.*/
-@103160 = ~NP: Clothes of Wizards in Cassocks~ /*Clothing: Wizard*/
-@103161 = ~NP: This robe is usually worn by Wizards in Cassocks. In addition to excellent protective properties, it gives the owner the ability to resist fire, cold, acid, electricity and magic. Young magicians who have studied magical science for many years and successfully pass the exam receive such a robe as a gift. Only magicians can wear it. PARAMETERS: Defense class: 3 Acid resistance: +25% Cold resistance: +25% Fire resistance: +25% Electricity resistance: +25% Magic resistance: +25% Weight: 3 Used only by: Mages (single, double, and multi -classes)~ /*This parchment contains powerful magic and a single command word of the type used to activate a magic portal. Mages and sorcerers often employ such scrolls as 'keys' to protect the entrances to their lairs or laboratories.
-When read while standing within the area of an appropriate portal, the scroll will instantly draw the reader through to the destination on the other side, wherever that may be.*/
+@103153 = ~You can't make a plow, a wagon axle, or a sword blade out of this piece of smelted ore - it's too small for that. The only thing that can be made is a simple hoe or dagger.~
+@103154 = ~Histachii~
+@103155 = ~Bone Mask~
+@103156 = ~This skull-shaped mask is usually made from the skulls of powerful human priests. It is only used by earthly evil, as the mask worn on the head brings many bonuses. The mask is well known for the constant appearance of Fzul Cembril on his head.
+
+STATISTICS:
+
+Charge abilities:
+- Raise Dead once per day
+- Invisible Stalker once per day
+
+Equipped abilities:
+- Charisma: -3
+- Immune to Level Drain
+- Immune to Instant Drain
+
+Weight: 2
+
+Usable By:
+ Evil Characters~
+@103157 = ~Bone from the Crypt~
+@103158 = ~You've been blessed from the tomb~
+@103159 = ~This exotic item is the bone of a priest's finger. Taken from a grave, this bone contains an aura that gave a powerful priest the ability to cheat death by flicking this finger against another.
+
+Special: Whoever snaps these fingers gains a permanent +2 bonus to their Saving Throws vs. Death.
+
+Not Usable By:
+ Warrior
+ Thief~
+@103160 = ~The Cowled Wizards Clothes~
+@103161 = ~This garment is usually worn by Cowled Wizards. In addition to its excellent protective properties, it gives the wearer the ability to resist fire, cold, acid, electricity, and magic. Young mages who have studied the science of magic for many years and successfully passed the exam receive this garment as a gift. Only mages may wear it.
+
+STATISTICS:
+
+Equipped abilities:
+- Acid Resistance: +25%
+- Cold Resistance: +25%
+- Fire Resistance: +25%
+- Electricity Resistance: +25%
+- Magic Resistance: +25%
+
+Armor Class: 3
+Weight: 3
+
+Usable By:
+ Mage~
 @103162 = ~NP: Ring of Miolin~ /*Torin's Ring*/
 @103163 = ~NP: Miolin monks are known for their incredible martial arts. Some of the things they used appeared in Faerûn through planar travel. Such things are extremely rare and truly priceless for monks. STATS: Adds +2 damage to unarmed attacks Adds 1/2 attack per round Used by: Monks~ /*The Moonstone Mask was known for the... comforts... we gave our customers. But there are many wounded, the temple is full and we have more beds than anywhere else in town.*/
 @103164 = ~NP: Death of Yuan-ti~ /*Ardulia's Fall*/
