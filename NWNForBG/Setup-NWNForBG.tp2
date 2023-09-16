@@ -44,8 +44,13 @@ LANGUAGE ~English~
 /////////////////////
 //Main Component
 /////////////////////
+
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
+
+ACTION_IF (GAME_IS ~tob~) AND NOT(FILE_CONTAINS ~WeiDU.log~ ~INFINITYANIMATIONS\.TP2. #[0-9]+ #0~)  BEGIN
+    FAIL @20
+END
 
 // grouping journal entries
 ADD_JOURNAL @107304 @107359
@@ -143,14 +148,13 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     END
 END
 
-// Install all animatins. It is only valid for ee.
-// For classic version: TODO: requier Infinite Animation mod installed.
 INCLUDE ~NWNForBG/lib/a7_functions.tpa~
 INCLUDE ~NWNForBG/lib/gw_functions.tpa~
 
-// First: install animation that exists in ee animate.ids, but ini file and animation files themselved might not
-// exist in the game.
+// Install all animations. It is only valid for ee.
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    // First: install animation that exists in ee animate.ids, but ini file and animation files themselved might not
+    // exist in the game.
     ACTION_FOR_EACH animation IN
         ~abishai_red~
         ~animated_plate_bronze~
