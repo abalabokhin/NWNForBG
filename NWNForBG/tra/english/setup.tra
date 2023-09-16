@@ -791,7 +791,7 @@ Not Usable By:
 
 STATISTICS:
 
-Cures Diseases~.
+Cures Diseases~
 @102348 = ~Black Wolf~
 @102349 = ~Aarin's Amulet~
 @102350 = ~The Spymaster Aarin Gend gave this amulet to his friend during their search for the cultists of Neverwinter. Suspended from a massive chain of dull metal are three polished sapphires that that seems to glow as if from within. Wrought from gold, its heavy base bears markings from far-off Chult.
@@ -1229,7 +1229,7 @@ Requirements: 9 Strength
 Not Usable By:
  Druid
  Mage
- Thief
+ Thief~
 @102436 = ~Avista~
 @102437 = ~Sentinel +4~
 @102438 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some adamatite ore to it. The result is an axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
@@ -1634,7 +1634,7 @@ Equipped abilities:
 - Dexterity: 20
 
 Charge abilities:
-- Improved Haste two times per day for 5 rounds~
+- Improved Haste two times per day for 5 rounds
 
 Weight: 2
 
@@ -2163,7 +2163,7 @@ The strange village of Charwood is buried deep within the forest that shares its
 @102668 = ~Vault Key~
 @102669 = ~You received this key from the cemetary caretaker on the North Road. It opens the door of the crypt where a wizard from the Arcane Brotherhood, the greatest order of Luskan, is buried.~
 @102670 = ~Strange Man~
-@102671 = ~Black Knives Customer
+@102671 = ~Black Knives Customer~
 @102672 = ~Daelan~
 @102673 = ~Dara'nei~
 @102674 = ~Darius~
