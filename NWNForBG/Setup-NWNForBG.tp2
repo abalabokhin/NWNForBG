@@ -300,7 +300,12 @@ END
 
 
 //Videos
-COPY ~NWNForBG/movies~ ~movies~
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY ~NWNForBG/movies_ee~ ~movies~
+END ELSE BEGIN
+  COPY ~NWNForBG/movies~ ~movies~
+END
+
 
 //Stores
 COPY ~NWNForBG/sto~ ~override~
