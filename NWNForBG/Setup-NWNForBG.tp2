@@ -574,9 +574,9 @@ MKDIR ~music/b6~
 COPY ~NWNForBG/mus/b6~ ~music/b6~
 ADD_MUSIC ~NWNB6~ ~NWNForBG/mus/b6.mus~            // was 155
 
-MKDIR ~music/84~
-COPY ~NWNForBG/mus/84~ ~music/84~
-ADD_MUSIC ~NWN84~ ~NWNForBG/mus/84.mus~            // was 156
+MKDIR ~music/NW84~
+COPY ~NWNForBG/mus/NW84~ ~music/NW84~
+ADD_MUSIC ~NWN84~ ~NWNForBG/mus/NW84.mus~            // was 156
 
 //Areas
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
