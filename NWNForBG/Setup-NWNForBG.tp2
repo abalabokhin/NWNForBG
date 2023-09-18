@@ -458,9 +458,9 @@ MKDIR ~music/Slumnit~
 COPY ~NWNForBG/mus/Slumnit~ ~music/Slumnit~
 ADD_MUSIC ~NWNSlumnit~ ~NWNForBG/mus/Slumnit.mus~  // was 126
 
-MKDIR ~music/Crypt1~
-COPY ~NWNForBG/mus/Crypt1~ ~music/Crypt1~
-ADD_MUSIC ~NWNCrypt1~ ~NWNForBG/mus/Crypt1.mus~    // was 127
+MKDIR ~music/NWCry1~
+COPY ~NWNForBG/mus/NWCry1~ ~music/NWCry1~
+ADD_MUSIC ~NWNCrypt1~ ~NWNForBG/mus/NWCry1.mus~    // was 127
 
 MKDIR ~music/Wealth~
 COPY ~NWNForBG/mus/Wealth~ ~music/Wealth~
