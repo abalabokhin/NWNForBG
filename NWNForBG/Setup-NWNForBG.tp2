@@ -518,9 +518,9 @@ MKDIR ~music/Templg2~
 COPY ~NWNForBG/mus/Templg2~ ~music/Templg2~
 ADD_MUSIC ~NWNTemplg2~ ~NWNForBG/mus/Templg2.mus~  // was 141
 
-MKDIR ~music/Templev~
-COPY ~NWNForBG/mus/Templev~ ~music/Templev~
-ADD_MUSIC ~NWNTemplev~ ~NWNForBG/mus/Templev.mus~  // was 142
+MKDIR ~music/NWTempv~
+COPY ~NWNForBG/mus/NWTempv~ ~music/NWTempv~
+ADD_MUSIC ~NWNTemplev~ ~NWNForBG/mus/NWTempv.mus~  // was 142
 
 MKDIR ~music/NWmain~
 COPY ~NWNForBG/mus/NWmain~ ~music/NWmain~
