@@ -530,13 +530,13 @@ MKDIR ~music/NWAarge~
 COPY ~NWNForBG/mus/NWAarge~ ~music/NWAarge~
 ADD_MUSIC ~NWNAargend~ ~NWNForBG/mus/NWAarge.mus~  // was 144
 
-MKDIR ~music/Aribev~
-COPY ~NWNForBG/mus/Aribev~ ~music/Aribev~
-ADD_MUSIC ~NWNAribev~ ~NWNForBG/mus/Aribev.mus~    // was 145
+MKDIR ~music/NWAriv~
+COPY ~NWNForBG/mus/NWAriv~ ~music/NWAriv~
+ADD_MUSIC ~NWNAribev~ ~NWNForBG/mus/NWAriv.mus~    // was 145
 
-MKDIR ~music/Aribgd~
-COPY ~NWNForBG/mus/Aribgd~ ~music/Aribgd~
-ADD_MUSIC ~NWNAribgd~ ~NWNForBG/mus/Aribgd.mus~    // was 146
+MKDIR ~music/NWArid~
+COPY ~NWNForBG/mus/NWArid~ ~music/NWArid~
+ADD_MUSIC ~NWNAribgd~ ~NWNForBG/mus/NWArid.mus~    // was 146
 
 MKDIR ~music/Maugrim~
 COPY ~NWNForBG/mus/Maugrim~ ~music/Maugrim~
