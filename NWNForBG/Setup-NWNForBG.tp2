@@ -546,21 +546,21 @@ MKDIR ~music/Morag~
 COPY ~NWNForBG/mus/Morag~ ~music/Morag~
 ADD_MUSIC ~NWNMorag~ ~NWNForBG/mus/Morag.mus~      // was 148
 
-MKDIR ~music/Chapt1~
-COPY ~NWNForBG/mus/Chapt1~ ~music/Chapt1~
-ADD_MUSIC ~NWNChapt1~ ~NWNForBG/mus/Chapt1.mus~    // was 149
+MKDIR ~music/NWCha1~
+COPY ~NWNForBG/mus/NWCha1~ ~music/NWCha1~
+ADD_MUSIC ~NWNChapt1~ ~NWNForBG/mus/NWCha1.mus~    // was 149
 
-MKDIR ~music/Chapt2~
-COPY ~NWNForBG/mus/Chapt2~ ~music/Chapt2~
-ADD_MUSIC ~NWNChapt2~ ~NWNForBG/mus/Chapt2.mus~    // was 150
+MKDIR ~music/NWCha2~
+COPY ~NWNForBG/mus/NWCha2~ ~music/NWCha2~
+ADD_MUSIC ~NWNChapt2~ ~NWNForBG/mus/NWCha2.mus~    // was 150
 
-MKDIR ~music/Chapt3~
-COPY ~NWNForBG/mus/Chapt3~ ~music/Chapt3~
-ADD_MUSIC ~NWNChapt3~ ~NWNForBG/mus/Chapt3.mus~    // was 151
+MKDIR ~music/NWCha3~
+COPY ~NWNForBG/mus/NWCha3~ ~music/NWCha3~
+ADD_MUSIC ~NWNChapt3~ ~NWNForBG/mus/NWCha3.mus~    // was 151
 
-MKDIR ~music/Chapt4~
-COPY ~NWNForBG/mus/Chapt4~ ~music/Chapt4~
-ADD_MUSIC ~NWNChapt4~ ~NWNForBG/mus/Chapt4.mus~    // was 152
+MKDIR ~music/NWCha4~
+COPY ~NWNForBG/mus/NWCha4~ ~music/NWCha4~
+ADD_MUSIC ~NWNChapt4~ ~NWNForBG/mus/NWCha4.mus~    // was 152
 
 MKDIR ~music/Themnwn~
 COPY ~NWNForBG/mus/Themnwn~ ~music/Themnwn~
