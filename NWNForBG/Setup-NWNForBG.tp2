@@ -410,17 +410,17 @@ MKDIR ~music/NWNThm~
 COPY ~NWNForBG/mus/NWNThm~ ~music/NWNThm~
 ADD_MUSIC ~NWNThm~ ~NWNForBG/mus/NWNThm.mus~       // was 114
 
-MKDIR ~music/Rurday~
-COPY ~NWNForBG/mus/Rurday~ ~music/Rurday~
-ADD_MUSIC ~NWNRurday~ ~NWNForBG/mus/Rurday.mus~    // was 115
+MKDIR ~music/NWRurd1~
+COPY ~NWNForBG/mus/NWRurd1~ ~music/NWRurd1~
+ADD_MUSIC ~NWNRurday~ ~NWNForBG/mus/NWRurd1.mus~    // was 115
 
 MKDIR ~music/Rurnit~
 COPY ~NWNForBG/mus/Rurnit~ ~music/Rurnit~
 ADD_MUSIC ~NWNRurnit~ ~NWNForBG/mus/Rurnit.mus~    // was 116
 
-MKDIR ~music/Rurald2~
-COPY ~NWNForBG/mus/Rurald2~ ~music/Rurald2~
-ADD_MUSIC ~NWNRurald2~ ~NWNForBG/mus/Rurald2.mus~  // was 117
+MKDIR ~music/NWRurd2~
+COPY ~NWNForBG/mus/NWRurd2~ ~music/NWRurd2~
+ADD_MUSIC ~NWNRurald2~ ~NWNForBG/mus/NWRurd2.mus~  // was 117
 
 MKDIR ~music/NWMin1~
 COPY ~NWNForBG/mus/NWMin1~ ~music/NWMin1~
