@@ -430,9 +430,9 @@ MKDIR ~music/Mines2~
 COPY ~NWNForBG/mus/Mines2~ ~music/Mines2~
 ADD_MUSIC ~NWNMines2~ ~NWNForBG/mus/Mines2.mus~    // was 119
 
-MKDIR ~music/Castle~
-COPY ~NWNForBG/mus/Castle~ ~music/Castle~
-ADD_MUSIC ~NWNCastle~ ~NWNForBG/mus/Castle.mus~    // was 120
+MKDIR ~music/NWCast~
+COPY ~NWNForBG/mus/NWCast~ ~music/NWCast~
+ADD_MUSIC ~NWNCastle~ ~NWNForBG/mus/NWCast.mus~    // was 120
 
 MKDIR ~music/Dockday~
 COPY ~NWNForBG/mus/Dockday~ ~music/Dockday~
