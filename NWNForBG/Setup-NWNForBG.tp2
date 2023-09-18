@@ -526,9 +526,9 @@ MKDIR ~music/NWmain~
 COPY ~NWNForBG/mus/NWmain~ ~music/NWmain~
 ADD_MUSIC ~NWNMain~ ~NWNForBG/mus/NWmain.mus~      // was 143
 
-MKDIR ~music/Aargend~
-COPY ~NWNForBG/mus/Aargend~ ~music/Aargend~
-ADD_MUSIC ~NWNAargend~ ~NWNForBG/mus/Aargend.mus~  // was 144
+MKDIR ~music/NWAarge~
+COPY ~NWNForBG/mus/NWAarge~ ~music/NWAarge~
+ADD_MUSIC ~NWNAargend~ ~NWNForBG/mus/NWAarge.mus~  // was 144
 
 MKDIR ~music/Aribev~
 COPY ~NWNForBG/mus/Aribev~ ~music/Aribev~
