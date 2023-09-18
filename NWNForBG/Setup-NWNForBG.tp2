@@ -482,9 +482,9 @@ MKDIR ~music/NWDung1~
 COPY ~NWNForBG/mus/NWDung1~ ~music/NWDung1~
 ADD_MUSIC ~NWNDung1~ ~NWNForBG/mus/NWDung1.mus~    // was 132
 
-MKDIR ~music/Rich~
-COPY ~NWNForBG/mus/Rich~ ~music/Rich~
-ADD_MUSIC ~NWNRich~ ~NWNForBG/mus/Rich.mus~        // was 133
+MKDIR ~music/NWRich~
+COPY ~NWNForBG/mus/NWRich~ ~music/NWRich~
+ADD_MUSIC ~NWNRich~ ~NWNForBG/mus/NWRich.mus~        // was 133
 
 MKDIR ~music/Sewer~
 COPY ~NWNForBG/mus/Sewer~ ~music/Sewer~
