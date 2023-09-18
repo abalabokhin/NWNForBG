@@ -434,13 +434,13 @@ MKDIR ~music/NWCast~
 COPY ~NWNForBG/mus/NWCast~ ~music/NWCast~
 ADD_MUSIC ~NWNCastle~ ~NWNForBG/mus/NWCast.mus~    // was 120
 
-MKDIR ~music/Dockday~
-COPY ~NWNForBG/mus/Dockday~ ~music/Dockday~
-ADD_MUSIC ~NWNDockday~ ~NWNForBG/mus/Dockday.mus~  // was 121
+MKDIR ~music/NWDockd~
+COPY ~NWNForBG/mus/NWDockd~ ~music/NWDockd~
+ADD_MUSIC ~NWNDockday~ ~NWNForBG/mus/NWDockd.mus~  // was 121
 
-MKDIR ~music/Docknit~
-COPY ~NWNForBG/mus/Docknit~ ~music/Docknit~
-ADD_MUSIC ~NWNDocknit~ ~NWNForBG/mus/Docknit.mus~  // was 122
+MKDIR ~music/NWDockn~
+COPY ~NWNForBG/mus/NWDockn~ ~music/NWDockn~
+ADD_MUSIC ~NWNDocknit~ ~NWNForBG/mus/NWDockn.mus~  // was 122
 
 MKDIR ~music/Market~
 COPY ~NWNForBG/mus/Market~ ~music/Market~
