@@ -446,9 +446,9 @@ MKDIR ~music/Market~
 COPY ~NWNForBG/mus/Market~ ~music/Market~
 ADD_MUSIC ~NWNMarket~ ~NWNForBG/mus/Market.mus~    // was 123
 
-MKDIR ~music/Citynit~
-COPY ~NWNForBG/mus/Citynit~ ~music/Citynit~
-ADD_MUSIC ~NWNCitynit~ ~NWNForBG/mus/Citynit.mus~  // was 124
+MKDIR ~music/NWCityn~
+COPY ~NWNForBG/mus/NWCityn~ ~music/NWCityn~
+ADD_MUSIC ~NWNCitynit~ ~NWNForBG/mus/NWCityn.mus~  // was 124
 
 MKDIR ~music/Slumday~
 COPY ~NWNForBG/mus/Slumday~ ~music/Slumday~
