@@ -562,9 +562,9 @@ MKDIR ~music/NWCha4~
 COPY ~NWNForBG/mus/NWCha4~ ~music/NWCha4~
 ADD_MUSIC ~NWNChapt4~ ~NWNForBG/mus/NWCha4.mus~    // was 152
 
-MKDIR ~music/Themnwn~
-COPY ~NWNForBG/mus/Themnwn~ ~music/Themnwn~
-ADD_MUSIC ~NWNThem~ ~NWNForBG/mus/Themnwn.mus~     // was 153
+MKDIR ~music/NWNThem~
+COPY ~NWNForBG/mus/NWNThem~ ~music/NWNThem~
+ADD_MUSIC ~NWNThem~ ~NWNForBG/mus/NWNThem.mus~     // was 153
 
 MKDIR ~music/b5~
 COPY ~NWNForBG/mus/b5~ ~music/b5~
