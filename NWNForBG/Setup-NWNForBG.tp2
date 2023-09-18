@@ -450,13 +450,13 @@ MKDIR ~music/NWCityn~
 COPY ~NWNForBG/mus/NWCityn~ ~music/NWCityn~
 ADD_MUSIC ~NWNCitynit~ ~NWNForBG/mus/NWCityn.mus~  // was 124
 
-MKDIR ~music/Slumday~
-COPY ~NWNForBG/mus/Slumday~ ~music/Slumday~
-ADD_MUSIC ~NWNSlumday~ ~NWNForBG/mus/Slumday.mus~  // was 125
+MKDIR ~music/NWSlumd~
+COPY ~NWNForBG/mus/NWSlumd~ ~music/NWSlumd~
+ADD_MUSIC ~NWNSlumday~ ~NWNForBG/mus/NWSlumd.mus~  // was 125
 
-MKDIR ~music/Slumnit~
-COPY ~NWNForBG/mus/Slumnit~ ~music/Slumnit~
-ADD_MUSIC ~NWNSlumnit~ ~NWNForBG/mus/Slumnit.mus~  // was 126
+MKDIR ~music/NWSlumn~
+COPY ~NWNForBG/mus/NWSlumn~ ~music/NWSlumn~
+ADD_MUSIC ~NWNSlumnit~ ~NWNForBG/mus/NWSlumn.mus~  // was 126
 
 MKDIR ~music/NWCry1~
 COPY ~NWNForBG/mus/NWCry1~ ~music/NWCry1~
