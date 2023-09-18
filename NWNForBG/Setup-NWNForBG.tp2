@@ -494,21 +494,21 @@ MKDIR ~music/NWStore~
 COPY ~NWNForBG/mus/NWStore~ ~music/NWStore~
 ADD_MUSIC ~NWNStore~ ~NWNForBG/mus/NWStore.mus~      // was 135
 
-MKDIR ~music/Tavern1~
-COPY ~NWNForBG/mus/Tavern1~ ~music/Tavern1~
-ADD_MUSIC ~NWNTavern1~ ~NWNForBG/mus/Tavern1.mus~  // was 136
+MKDIR ~music/NWTave1~
+COPY ~NWNForBG/mus/NWTave1~ ~music/NWTave1~
+ADD_MUSIC ~NWNTavern1~ ~NWNForBG/mus/NWTave1.mus~  // was 136
 
-MKDIR ~music/Tavern2~
-COPY ~NWNForBG/mus/Tavern2~ ~music/Tavern2~
-ADD_MUSIC ~NWNTavern2~ ~NWNForBG/mus/Tavern2.mus~  // was 137
+MKDIR ~music/NWTave2~
+COPY ~NWNForBG/mus/NWTave2~ ~music/NWTave2~
+ADD_MUSIC ~NWNTavern2~ ~NWNForBG/mus/NWTave2.mus~  // was 137
 
-MKDIR ~music/Tavern3~
-COPY ~NWNForBG/mus/Tavern3~ ~music/Tavern3~
-ADD_MUSIC ~NWNTavern3~ ~NWNForBG/mus/Tavern3.mus~  // was 138
+MKDIR ~music/NWTave3~
+COPY ~NWNForBG/mus/NWTave3~ ~music/NWTave3~
+ADD_MUSIC ~NWNTavern3~ ~NWNForBG/mus/NWTave3.mus~  // was 138
 
-MKDIR ~music/Tavern4~
-COPY ~NWNForBG/mus/Tavern4~ ~music/Tavern4~
-ADD_MUSIC ~NWNTavern4~ ~NWNForBG/mus/Tavern4.mus~  // was 139
+MKDIR ~music/NWTave4~
+COPY ~NWNForBG/mus/NWTave4~ ~music/NWTave4~
+ADD_MUSIC ~NWNTavern4~ ~NWNForBG/mus/NWTave4.mus~  // was 139
 
 MKDIR ~music/Templg1~
 COPY ~NWNForBG/mus/Templg1~ ~music/Templg1~
