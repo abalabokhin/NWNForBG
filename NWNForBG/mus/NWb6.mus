@@ -1,4 +1,4 @@
-B6
+NWB6
 26
 A1             @TAG Z17
 A2             @TAG Z
@@ -25,6 +25,6 @@ F3             @TAG ZH25
 F4             @TAG ZH1
 G1             @TAG ZH1
 G2A            @TAG Z
-A1C    B6 A2   @TAG Z17
+A1C  NWB6 A2   @TAG Z17
 # A2 is loop
 	

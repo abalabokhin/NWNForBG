@@ -566,13 +566,13 @@ MKDIR ~music/NWNThem~
 COPY ~NWNForBG/mus/NWNThem~ ~music/NWNThem~
 ADD_MUSIC ~NWNThem~ ~NWNForBG/mus/NWNThem.mus~     // was 153
 
-MKDIR ~music/b5~
-COPY ~NWNForBG/mus/b5~ ~music/b5~
-ADD_MUSIC ~NWNB5~ ~NWNForBG/mus/b5.mus~            // was 154
+MKDIR ~music/NWb5~
+COPY ~NWNForBG/mus/NWb5~ ~music/NWb5~
+ADD_MUSIC ~NWNB5~ ~NWNForBG/mus/NWb5.mus~            // was 154
 
-MKDIR ~music/b6~
-COPY ~NWNForBG/mus/b6~ ~music/b6~
-ADD_MUSIC ~NWNB6~ ~NWNForBG/mus/b6.mus~            // was 155
+MKDIR ~music/NWb6~
+COPY ~NWNForBG/mus/NWb6~ ~music/NWb6~
+ADD_MUSIC ~NWNB6~ ~NWNForBG/mus/NWb6.mus~            // was 155
 
 MKDIR ~music/NW84~
 COPY ~NWNForBG/mus/NW84~ ~music/NW84~
