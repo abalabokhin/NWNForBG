@@ -414,9 +414,9 @@ MKDIR ~music/NWRurd1~
 COPY ~NWNForBG/mus/NWRurd1~ ~music/NWRurd1~
 ADD_MUSIC ~NWNRurday~ ~NWNForBG/mus/NWRurd1.mus~    // was 115
 
-MKDIR ~music/Rurnit~
-COPY ~NWNForBG/mus/Rurnit~ ~music/Rurnit~
-ADD_MUSIC ~NWNRurnit~ ~NWNForBG/mus/Rurnit.mus~    // was 116
+MKDIR ~music/NWRurni~
+COPY ~NWNForBG/mus/NWRurni~ ~music/NWRurni~
+ADD_MUSIC ~NWNRurnit~ ~NWNForBG/mus/NWRurni.mus~    // was 116
 
 MKDIR ~music/NWRurd2~
 COPY ~NWNForBG/mus/NWRurd2~ ~music/NWRurd2~
