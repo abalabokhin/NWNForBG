@@ -542,9 +542,9 @@ MKDIR ~music/NWMaugr~
 COPY ~NWNForBG/mus/NWMaugr~ ~music/NWMaugr~
 ADD_MUSIC ~NWNMaugrim~ ~NWNForBG/mus/NWMaugr.mus~  // was 147
 
-MKDIR ~music/Morag~
-COPY ~NWNForBG/mus/Morag~ ~music/Morag~
-ADD_MUSIC ~NWNMorag~ ~NWNForBG/mus/Morag.mus~      // was 148
+MKDIR ~music/NWMorag~
+COPY ~NWNForBG/mus/NWMorag~ ~music/NWMorag~
+ADD_MUSIC ~NWNMorag~ ~NWNForBG/mus/NWMorag.mus~      // was 148
 
 MKDIR ~music/NWCha1~
 COPY ~NWNForBG/mus/NWCha1~ ~music/NWCha1~
