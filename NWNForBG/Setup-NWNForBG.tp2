@@ -422,13 +422,13 @@ MKDIR ~music/Rurald2~
 COPY ~NWNForBG/mus/Rurald2~ ~music/Rurald2~
 ADD_MUSIC ~NWNRurald2~ ~NWNForBG/mus/Rurald2.mus~  // was 117
 
-MKDIR ~music/Mines1~
-COPY ~NWNForBG/mus/Mines1~ ~music/Mines1~
-ADD_MUSIC ~NWNMines1~ ~NWNForBG/mus/Mines1.mus~    // was 118
+MKDIR ~music/NWMin1~
+COPY ~NWNForBG/mus/NWMin1~ ~music/NWMin1~
+ADD_MUSIC ~NWNMines1~ ~NWNForBG/mus/NWMin1.mus~    // was 118
 
-MKDIR ~music/Mines2~
-COPY ~NWNForBG/mus/Mines2~ ~music/Mines2~
-ADD_MUSIC ~NWNMines2~ ~NWNForBG/mus/Mines2.mus~    // was 119
+MKDIR ~music/NWMin2~
+COPY ~NWNForBG/mus/NWMin2~ ~music/NWMin2~
+ADD_MUSIC ~NWNMines2~ ~NWNForBG/mus/NWMin2.mus~    // was 119
 
 MKDIR ~music/NWCast~
 COPY ~NWNForBG/mus/NWCast~ ~music/NWCast~
