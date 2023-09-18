@@ -486,9 +486,9 @@ MKDIR ~music/NWRich~
 COPY ~NWNForBG/mus/NWRich~ ~music/NWRich~
 ADD_MUSIC ~NWNRich~ ~NWNForBG/mus/NWRich.mus~        // was 133
 
-MKDIR ~music/Sewer~
-COPY ~NWNForBG/mus/Sewer~ ~music/Sewer~
-ADD_MUSIC ~NWNSewer~ ~NWNForBG/mus/Sewer.mus~      // was 134
+MKDIR ~music/NWSewer~
+COPY ~NWNForBG/mus/NWSewer~ ~music/NWSewer~
+ADD_MUSIC ~NWNSewer~ ~NWNForBG/mus/NWSewer.mus~      // was 134
 
 MKDIR ~music/Store~
 COPY ~NWNForBG/mus/Store~ ~music/Store~
