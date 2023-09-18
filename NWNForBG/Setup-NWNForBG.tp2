@@ -466,17 +466,17 @@ MKDIR ~music/Wealth~
 COPY ~NWNForBG/mus/Wealth~ ~music/Wealth~
 ADD_MUSIC ~NWNWealth~ ~NWNForBG/mus/Wealth.mus~    // was 128
 
-MKDIR ~music/Forstd1~
-COPY ~NWNForBG/mus/Forstd1~ ~music/Forstd1~
-ADD_MUSIC ~NWNForstd1~ ~NWNForBG/mus/Forstd1.mus~  // was 129
+MKDIR ~music/NWFord1~
+COPY ~NWNForBG/mus/NWFord1~ ~music/NWFord1~
+ADD_MUSIC ~NWNForstd1~ ~NWNForBG/mus/NWFord1.mus~  // was 129
 
-MKDIR ~music/Forstd2~
-COPY ~NWNForBG/mus/Forstd2~ ~music/Forstd2~
-ADD_MUSIC ~NWNForstd2~ ~NWNForBG/mus/Forstd2.mus~  // was 130
+MKDIR ~music/NWFord2~
+COPY ~NWNForBG/mus/NWFord2~ ~music/NWFord2~
+ADD_MUSIC ~NWNForstd2~ ~NWNForBG/mus/NWFord2.mus~  // was 130
 
-MKDIR ~music/Forestn~
-COPY ~NWNForBG/mus/Forestn~ ~music/Forestn~
-ADD_MUSIC ~NWNForestn~ ~NWNForBG/mus/Forestn.mus~  // was 131
+MKDIR ~music/NWForen~
+COPY ~NWNForBG/mus/NWForen~ ~music/NWForen~
+ADD_MUSIC ~NWNForestn~ ~NWNForBG/mus/NWForen.mus~  // was 131
 
 MKDIR ~music/NWDung1~
 COPY ~NWNForBG/mus/NWDung1~ ~music/NWDung1~
