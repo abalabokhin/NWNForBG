@@ -510,13 +510,13 @@ MKDIR ~music/NWTave4~
 COPY ~NWNForBG/mus/NWTave4~ ~music/NWTave4~
 ADD_MUSIC ~NWNTavern4~ ~NWNForBG/mus/NWTave4.mus~  // was 139
 
-MKDIR ~music/Templg1~
-COPY ~NWNForBG/mus/Templg1~ ~music/Templg1~
-ADD_MUSIC ~NWNTemplg1~ ~NWNForBG/mus/Templg1.mus~  // was 140
+MKDIR ~music/NWTemg1~
+COPY ~NWNForBG/mus/NWTemg1~ ~music/NWTemg1~
+ADD_MUSIC ~NWNTemplg1~ ~NWNForBG/mus/NWTemg1.mus~  // was 140
 
-MKDIR ~music/Templg2~
-COPY ~NWNForBG/mus/Templg2~ ~music/Templg2~
-ADD_MUSIC ~NWNTemplg2~ ~NWNForBG/mus/Templg2.mus~  // was 141
+MKDIR ~music/NWTemg2~
+COPY ~NWNForBG/mus/NWTemg2~ ~music/NWTemg2~
+ADD_MUSIC ~NWNTemplg2~ ~NWNForBG/mus/NWTemg2.mus~  // was 141
 
 MKDIR ~music/NWTempv~
 COPY ~NWNForBG/mus/NWTempv~ ~music/NWTempv~
