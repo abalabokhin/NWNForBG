@@ -490,9 +490,9 @@ MKDIR ~music/NWSewer~
 COPY ~NWNForBG/mus/NWSewer~ ~music/NWSewer~
 ADD_MUSIC ~NWNSewer~ ~NWNForBG/mus/NWSewer.mus~      // was 134
 
-MKDIR ~music/Store~
-COPY ~NWNForBG/mus/Store~ ~music/Store~
-ADD_MUSIC ~NWNStore~ ~NWNForBG/mus/Store.mus~      // was 135
+MKDIR ~music/NWStore~
+COPY ~NWNForBG/mus/NWStore~ ~music/NWStore~
+ADD_MUSIC ~NWNStore~ ~NWNForBG/mus/NWStore.mus~      // was 135
 
 MKDIR ~music/Tavern1~
 COPY ~NWNForBG/mus/Tavern1~ ~music/Tavern1~
