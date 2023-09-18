@@ -462,9 +462,9 @@ MKDIR ~music/NWCry1~
 COPY ~NWNForBG/mus/NWCry1~ ~music/NWCry1~
 ADD_MUSIC ~NWNCrypt1~ ~NWNForBG/mus/NWCry1.mus~    // was 127
 
-MKDIR ~music/Wealth~
-COPY ~NWNForBG/mus/Wealth~ ~music/Wealth~
-ADD_MUSIC ~NWNWealth~ ~NWNForBG/mus/Wealth.mus~    // was 128
+MKDIR ~music/NWWealt~
+COPY ~NWNForBG/mus/NWWealt~ ~music/NWWealt~
+ADD_MUSIC ~NWNWealth~ ~NWNForBG/mus/NWWealt.mus~    // was 128
 
 MKDIR ~music/NWFord1~
 COPY ~NWNForBG/mus/NWFord1~ ~music/NWFord1~
