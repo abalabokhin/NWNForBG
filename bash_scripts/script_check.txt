@@ -467,6 +467,7 @@ File: FGUARD.BCS, Line: 73, Warning: Script name not found: O:Actor* - Angelo
 File: FLAM10.BCS, Line: 2, Warning: Script name not found: O:Object* - FlamingFist10
 File: FLAM10A.BCS, Line: 10, Warning: Script name not found: O:Object* - FlamingFist10
 File: FLAM2.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - flam2
+File: FLAMEN2.BCS, Line: 2, Warning: Script name not found: O:Object* - FlamingEnforcer
 File: FLAMPUN.BCS, Line: 2, Warning: Script name not found: O:Object* - BountyHunter
 File: FLAMPUN2.BCS, Line: 2, Warning: Script name not found: O:Object* - BountyHunter
 File: FORCEF.BCS, Line: 7, Warning: Script name not found: O:Target* - OilDoor
@@ -609,7 +610,6 @@ File: NIEMAIN.BCS, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - ni
 File: NPC.BCS, Line: 19, Warning: Resource not found: S:Sound*[WAV] - RAN
 File: NPCMAGE1.BCS, Line: 44, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
 File: NPCMAGE1.BCS, Line: 49, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
-File: NW3303.bcs, Line: 333, Warning: Resource not found: S:Object*[VEF:VVC:BAM] - ICFIRSDP
 File: OBESTATE.BCS, Line: 2, Warning: Script name not found: O:Object* - Delorna
 File: OBESTATE.BCS, Line: 9, Warning: Script name not found: O:Object* - Ithmeera
 File: OBESTATE.BCS, Line: 16, Warning: Script name not found: O:Object* - Helshara
