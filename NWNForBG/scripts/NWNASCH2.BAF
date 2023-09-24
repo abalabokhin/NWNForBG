@@ -1,0 +1,72 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("NWPICKP",LastTrigger)
+END
+
+IF
+	AttackedBy([PC],DEFAULT)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		CreateCreatureObjectDoor("NWKHELBN",Myself,0,0,0)  // ?????? ???????
+		ActionOverride("WINSKI",ForceSpell(Player1,SAREVOK_STRIKE))  // SPWI979.SPL (????????? ????)
+		Wait(2)
+		Kill(Player1)
+		SetInterrupt(TRUE)
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	!See([ENEMY])
+	CombatCounter(0)
+	!Range(Player1,7)
+	Global("DestherIsTraitor","GLOBAL",1)
+	Global("MyCommand","LOCALS",0)
+	Dead("Nwfhelm1")  // ??????????
+	Dead("Nwfhelm2")  // ??????????
+	Dead("Nwfhelm3")  // ??????????
+	Dead("Nwfhelm4")  // ??????????
+	Delay(2)
+THEN
+	RESPONSE #100
+		SetGlobal("MyCommand","LOCALS",1)
+		MoveToObjectNoInterrupt(Player1)
+		Continue()
+END
+
+IF
+	Range(Player1,7)
+	GlobalLT("MyCommand","LOCALS",2)
+	See([PC])
+	Allegiance(Myself,NEUTRAL)
+	!See([ENEMY])
+	CombatCounter(0)
+	Dead("Nwfhelm1")  // ??????????
+	Dead("Nwfhelm2")  // ??????????
+	Dead("Nwfhelm3")  // ??????????
+	Dead("Nwfhelm4")  // ??????????
+	Delay(2)
+THEN
+	RESPONSE #100
+		SetGlobal("MyCommand","LOCALS",2)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	Global("NWNChapter","GLOBAL",2)
+	Global("MyDialog2","LOCALS",0)
+	Range(Player1,14)
+	Delay(2)
+THEN
+	RESPONSE #100
+		SetGlobal("MyDialog2","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+

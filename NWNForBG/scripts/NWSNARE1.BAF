@@ -1,0 +1,112 @@
+IF
+	Global("BOOM","LOCALS",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		UseItem("NWMAGE01",Myself)  // ?????? ???????????
+END
+
+IF
+	!Detect([PC])
+THEN
+	RESPONSE #100
+END
+
+IF
+	Detect([PC])
+	Range([PC],10)
+	Global("DETECT","LOCALS",0)
+	CheckStatGT([PC],19,TRAPS)
+	CheckStatLT([PC],41,TRAPS)
+THEN
+	RESPONSE #30
+		SetGlobal("DETECT","LOCALS",1)
+		DisplayStringHead(Myself,@103727)  // ??????? ?????????? ? ???????????
+		SmallWait(2)
+		DestroySelf()
+	RESPONSE #70
+		SetGlobal("DETECT","LOCALS",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],10)
+	Global("DETECT","LOCALS",0)
+	CheckStatGT([PC],40,TRAPS)
+	CheckStatLT([PC],61,TRAPS)
+THEN
+	RESPONSE #50
+		SetGlobal("DETECT","LOCALS",1)
+		DisplayStringHead(Myself,@103727)  // ??????? ?????????? ? ???????????
+		SmallWait(2)
+		DestroySelf()
+	RESPONSE #50
+		SetGlobal("DETECT","LOCALS",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],10)
+	Global("DETECT","LOCALS",0)
+	CheckStatGT([PC],60,TRAPS)
+	CheckStatLT([PC],81,TRAPS)
+THEN
+	RESPONSE #70
+		SetGlobal("DETECT","LOCALS",1)
+		DisplayStringHead(Myself,@103727)  // ??????? ?????????? ? ???????????
+		SmallWait(2)
+		DestroySelf()
+	RESPONSE #30
+		SetGlobal("DETECT","LOCALS",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],10)
+	Global("DETECT","LOCALS",0)
+	CheckStatGT([PC],80,TRAPS)
+	CheckStatLT([PC],101,TRAPS)
+THEN
+	RESPONSE #90
+		SetGlobal("DETECT","LOCALS",1)
+		DisplayStringHead(Myself,@103727)  // ??????? ?????????? ? ???????????
+		SmallWait(2)
+		DestroySelf()
+	RESPONSE #10
+		SetGlobal("DETECT","LOCALS",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],10)
+	Global("DETECT","LOCALS",0)
+	CheckStatGT([PC],100,TRAPS)
+THEN
+	RESPONSE #95
+		SetGlobal("DETECT","LOCALS",1)
+		DisplayStringHead(Myself,@103727)  // ??????? ?????????? ? ???????????
+		SmallWait(2)
+		DestroySelf()
+	RESPONSE #5
+		SetGlobal("DETECT","LOCALS",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],4)
+	Global("BOOM","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BOOM","LOCALS",1)
+		DisplayStringHead(Myself,#14381)  // ??????? ?????????
+		ReallyForceSpell([PC],NPC_SNARE_BOOM)  // SPIN485.SPL (No such index)
+		SmallWait(2)
+		DestroySelf()
+END
+

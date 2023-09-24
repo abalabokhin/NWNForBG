@@ -1,120 +1,120 @@
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo1",Myself)  // No such index
+	HasItem("NWCULTM0",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo1",Myself)  // No such index
+		UseItem("NWCULTM0",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo2",Myself)  // No such index
+	HasItem("NWCULT13",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo2",Myself)  // No such index
+		UseItem("NWCULT13",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo3",Myself)  // No such index
+	HasItem("NWCULTM3",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo3",Myself)  // No such index
+		UseItem("NWCULTM3",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo4",Myself)  // No such index
+	HasItem("NWCULTM4",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo4",Myself)  // No such index
+		UseItem("NWCULTM4",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo5",Myself)  // No such index
+	HasItem("NWCULTM5",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo5",Myself)  // No such index
+		UseItem("NWCULTM5",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo6",Myself)  // No such index
+	HasItem("NWCULTM6",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo6",Myself)  // No such index
+		UseItem("NWCULTM6",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo7",Myself)  // No such index
+	HasItem("NWCULTM7",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo7",Myself)  // No such index
+		UseItem("NWCULTM7",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo8",Myself)  // No such index
+	HasItem("NWCULTM8",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo8",Myself)  // No such index
+		UseItem("NWCULTM8",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo9",Myself)  // No such index
+	HasItem("NWCULTM9",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo9",Myself)  // No such index
+		UseItem("NWCULTM9",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo10",Myself)  // No such index
+	HasItem("NWCULT10",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo10",Myself)  // No such index
+		UseItem("NWCULT10",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo11",Myself)  // No such index
+	HasItem("NWCULT11",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo11",Myself)  // No such index
+		UseItem("NWCULT11",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 
 IF
 	Global("TheSummons","LOCALS",0)
-	HasItem("CultMo12",Myself)  // No such index
+	HasItem("NWCULT12",Myself)  // No such index
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #100
-		UseItem("CultMo12",Myself)  // No such index
+		UseItem("NWCULT12",Myself)  // No such index
 		SetGlobal("TheSummons","LOCALS",1)
 END
 

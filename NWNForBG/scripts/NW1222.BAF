@@ -1,6 +1,6 @@
 IF
 	Global("Door1221Opened","GLOBAL",1)
-	OpenState("Door1221",TRUE)
+	OpenState("NWDO1221",TRUE)
 THEN
 	RESPONSE #100
 		SetGlobal("Door1221Opened","GLOBAL",0)
@@ -9,12 +9,12 @@ END
 
 IF
 	Global("Door1221Opened","GLOBAL",1)
-	OpenState("Door1221",FALSE)
+	OpenState("NWDO1221",FALSE)
 THEN
 	RESPONSE #100
 		SetGlobal("Door1221Opened","GLOBAL",0)
-		Unlock("Door1221")
-		OpenDoor("Door1221")
+		Unlock("NWDO1221")
+		OpenDoor("NWDO1221")
 		Continue()
 END
 

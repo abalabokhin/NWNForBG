@@ -1,0 +1,36 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("NWDEMONE",Myself)  // No such index
+END
+
+IF
+	Global("CONTROL","LOCALS",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("CONTROL","LOCALS",0)
+		Enemy()
+END
+
+IF
+	Global("CONTROL","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("CONTROL","LOCALS",0)
+		Continue()
+END
+
+IF
+	!DifficultyLT(NORMAL)
+	!Allegiance(Myself,ENEMY)
+	GlobalTimerNotExpired("CommandMinions","AR6200")
+	Global("CommandCheck","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CommandCheck","LOCALS",1)
+		ReallyForceSpellRES("NWMELS5A",Myself)  // No such index
+END
+

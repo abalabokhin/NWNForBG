@@ -3,7 +3,7 @@ IF
 	GlobalGT("NWNChapter","GLOBAL",3)
 THEN
 	RESPONSE #100
-		ActionOverride("Malecom5",SetDialog("NWMAN1"))
+		ActionOverride("NWMALEC5",SetDialog("NWMAN1"))
 		SetGlobal("DialogChange","MYAREA",1)
 END
 

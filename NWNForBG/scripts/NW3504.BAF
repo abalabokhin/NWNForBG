@@ -15,8 +15,8 @@ THEN
 	RESPONSE #100
 		SetGlobal("PartyHasNWWord3","GLOBAL",1)
 		CreateVisualEffect("SPDIMNDR",[623.620])
-		CreateCreature("HAEDRALI",[623.620],4)  // ????????
+		CreateCreature("NWHAEDRI",[623.620],4)  // ????????
 		Wait(4)
-		ActionOverride("HAEDRALI",StartDialogueNoSet(Player1))
+		ActionOverride("NWHAEDRI",StartDialogueNoSet(Player1))
 END
 

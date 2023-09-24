@@ -1,0 +1,915 @@
+IF
+	OnCreation()
+	!GlobalTimerNotExpired("StartingDefense","LOCALS")
+	!DifficultyLT(EASY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("StartingDefense","LOCALS",1000)
+		ApplySpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+END
+
+IF
+	HPPercentLT(Myself,15)
+	HPGT(Myself,1)
+	!StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	Range(NearestEnemyOf(Myself),10)
+	HPPercentGT(NearestEnemyOf(Myself),25)
+	Global("GateAway","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("GateAway","LOCALS",1)
+		CreateVisualEffectObject("SPGFLSH1",Myself)
+		DisplayString(Myself,#14260)  // ?????
+		DestroySelf()
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	AttackedBy([ANYONE],DEFAULT)
+	Allegiance(LastAttackerOf(Myself),GOODCUTOFF)
+	Global("LetItGoOnce","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LetItGoOnce","LOCALS",1)
+		SetGlobalTimer("GetMadNow","LOCALS",ONE_ROUND)
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	AttackedBy([ANYONE],DEFAULT)
+	Allegiance(LastAttackerOf(Myself),GOODCUTOFF)
+	Global("LetItGoOnce","LOCALS",1)
+	GlobalTimerExpired("GetMadNow","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("LetItGoOnce","LOCALS",0)
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	!See([ENEMY])
+	CombatCounter(0)
+	!Range(Player1,20)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	!See([ENEMY])
+	CombatCounter(0)
+	Range(Player1,20)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Delay(6)
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	OR(2)
+		NumCreatureLT([ENEMY.0.DEMONIC],3)
+		NumCreatureVsPartyLT([ENEMY.0.DEMONIC],0)
+	HaveSpellRES("NWGATE4")  // ?????
+	!Range(NearestEnemyOf(Myself),10)
+	OR(2)
+		NumInPartyAliveGT(2)
+		DifficultyGT(EASY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		SpellRES("NWGATE4",Myself)  // ?????
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),10)
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	!StateCheck(Myself,STATE_MIRRORIMAGE)
+THEN
+	RESPONSE #50
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		ForceSpell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (?????????? ?????)
+	RESPONSE #50
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		SpellNoDec(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (?????????? ?????)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	Global("FoundStunTarget","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",0)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(NearestEnemyOf(Myself),90)
+	!Gender(NearestEnemyOf(Myself),SUMMONED)
+	!Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(NearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(NearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(NearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(SecondNearestEnemyOf(Myself),90)
+	!Gender(SecondNearestEnemyOf(Myself),SUMMONED)
+	!Gender(SecondNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(ThirdNearestEnemyOf(Myself),90)
+	!Gender(ThirdNearestEnemyOf(Myself),SUMMONED)
+	!Gender(ThirdNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(FourthNearestEnemyOf(Myself),90)
+	!Gender(FourthNearestEnemyOf(Myself),SUMMONED)
+	!Gender(FourthNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(FourthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #40
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(FifthNearestEnemyOf(Myself),90)
+	!Gender(FifthNearestEnemyOf(Myself),SUMMONED)
+	!Gender(FifthNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(FifthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #50
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(SixthNearestEnemyOf(Myself),90)
+	!Gender(SixthNearestEnemyOf(Myself),SUMMONED)
+	!Gender(SixthNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(SixthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #60
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(NearestEnemyOf(Myself),60)
+	!Gender(NearestEnemyOf(Myself),SUMMONED)
+	!Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(NearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(NearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(NearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(SecondNearestEnemyOf(Myself),60)
+	!Gender(SecondNearestEnemyOf(Myself),SUMMONED)
+	!Gender(SecondNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #40
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(ThirdNearestEnemyOf(Myself),60)
+	!Gender(ThirdNearestEnemyOf(Myself),SUMMONED)
+	!Gender(ThirdNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #60
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(FourthNearestEnemyOf(Myself),60)
+	!Gender(FourthNearestEnemyOf(Myself),SUMMONED)
+	!Gender(FourthNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(FourthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #80
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(FifthNearestEnemyOf(Myself),60)
+	!Gender(FifthNearestEnemyOf(Myself),SUMMONED)
+	!Gender(FifthNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(FifthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(SixthNearestEnemyOf(Myself),60)
+	!Gender(SixthNearestEnemyOf(Myself),SUMMONED)
+	!Gender(SixthNearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(SixthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #120
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(NearestEnemyOf(Myself),30)
+	!Gender(NearestEnemyOf(Myself),SUMMONED)
+	!Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	!StateCheck(NearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(NearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(NearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #30
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(SecondNearestEnemyOf(Myself),30)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #60
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(ThirdNearestEnemyOf(Myself),30)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #90
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(FourthNearestEnemyOf(Myself),30)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(FourthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #120
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(FifthNearestEnemyOf(Myself),30)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(FifthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #150
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	HPLT(SixthNearestEnemyOf(Myself),30)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_STUNNED)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),50,RESISTMAGIC)
+	See(SixthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("FoundStunTarget","LOCALS",1)
+		Continue()
+	RESPONSE #180
+		Continue()
+END
+
+IF
+	Global("FoundStunTarget","LOCALS",1)
+	HaveSpell(WIZARD_POWER_WORD_STUN)  // SPWI715.SPL (????? ????: ???????????)
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	!GlobalTimerNotExpired("PowerWordStun","LOCALS")
+THEN
+	RESPONSE #50
+		SetGlobal("FoundStunTarget","LOCALS",0)
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		SetGlobalTimer("PowerWordStun","LOCALS",THREE_ROUNDS)
+		RemoveSpell(WIZARD_POWER_WORD_STUN)  // SPWI715.SPL (????? ????: ???????????)
+		ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)  // SPWI715.SPL (????? ????: ???????????)
+	RESPONSE #50
+		SetGlobal("FoundStunTarget","LOCALS",0)
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		SetGlobalTimer("PowerWordStun","LOCALS",THREE_ROUNDS)
+		Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)  // SPWI715.SPL (????? ????: ???????????)
+	RESPONSE #50
+		Continue()
+END
+
+IF
+	OR(6)
+		See(SixthNearestEnemyOf(Myself))
+		See(StrongestOf(Myself))
+		See(NearestEnemyOfType([0.0.0.FIGHTER_ALL]))
+		See(NearestEnemyOfType([0.0.0.RANGER_ALL]))
+		See(NearestEnemyOfType([0.0.0.PALADIN_ALL]))
+		See(BestAC(Myself))
+	RandomNumGT(5,3)
+	See(NearestEnemyOfType([0.0.0.PALADIN_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	!Allegiance(Myself,GOODCUTOFF)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	!StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	OR(2)
+		StateCheck(Myself,STATE_MIRRORIMAGE)
+		!Range(NearestEnemyOf(Myself),10)
+THEN
+	RESPONSE #70
+		SetGlobalTimer("spell","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+	RESPONSE #30
+		SetGlobalTimer("spell","LOCALS",ONE_ROUND)
+		SpellNoDec(LastSeenBy(Myself),CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	OR(6)
+		See(SixthNearestEnemyOf(Myself))
+		See(FifthNearestEnemyOf(Myself))
+		See(FourthNearestEnemyOf(Myself))
+		See(ThirdNearestEnemyOf(Myself))
+		See(SecondNearestEnemyOf(Myself))
+		See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_SILENCED)
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_PANIC)
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_SLEEPING)
+	CheckStatLT(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]),100,SPELLFAILUREPRIEST)
+	See(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_SILENCED)
+	!StateCheck(NearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_PANIC)
+	!StateCheck(NearestEnemyOfType([0.0.0.CLERIC_ALL]),STATE_SLEEPING)
+	CheckStatLT(NearestEnemyOfType([0.0.0.CLERIC_ALL]),100,SPELLFAILUREPRIEST)
+	See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_SILENCED)
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_STUNNED)
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_PANIC)
+	!StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_SLEEPING)
+	CheckStatLT(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),100,SPELLFAILUREMAGE)
+	See(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_SILENCED)
+	!StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_STUNNED)
+	!StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_PANIC)
+	!StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_SLEEPING)
+	CheckStatLT(NearestEnemyOfType([0.0.0.MAGE_ALL]),100,SPELLFAILUREMAGE)
+	See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,HASTE)
+	!Gender(SixthNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(SixthNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(SixthNearestEnemyOf(Myself),10)
+	!CheckStatLT(SixthNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(SixthNearestEnemyOf(Myself),15)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,HASTE)
+	!Gender(FifthNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(FifthNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(FifthNearestEnemyOf(Myself),10)
+	!CheckStatLT(FifthNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(FifthNearestEnemyOf(Myself),15)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,HASTE)
+	!Gender(FourthNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(FourthNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(FourthNearestEnemyOf(Myself),10)
+	!CheckStatLT(FourthNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(FourthNearestEnemyOf(Myself),15)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HASTE)
+	!Gender(ThirdNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(ThirdNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(ThirdNearestEnemyOf(Myself),10)
+	!CheckStatLT(ThirdNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(ThirdNearestEnemyOf(Myself),15)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HASTE)
+	!Gender(SecondNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(SecondNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(SecondNearestEnemyOf(Myself),10)
+	!CheckStatLT(SecondNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(SecondNearestEnemyOf(Myself),15)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(NearestEnemyOf(Myself),0,HASTE)
+	!Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(NearestEnemyOf(Myself),SUMMONED)
+		LevelGT(NearestEnemyOf(Myself),10)
+	!CheckStatLT(NearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(NearestEnemyOf(Myself),15)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,HASTE)
+	!Gender(SixthNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(SixthNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(SixthNearestEnemyOf(Myself),10)
+	OR(2)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,ARMORCLASS)
+		HPPercentLT(SixthNearestEnemyOf(Myself),30)
+	!CheckStatLT(SixthNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(SixthNearestEnemyOf(Myself),15)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,HASTE)
+	!Gender(FifthNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(FifthNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(FifthNearestEnemyOf(Myself),10)
+	OR(2)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,ARMORCLASS)
+		HPPercentLT(FifthNearestEnemyOf(Myself),30)
+	!CheckStatLT(FifthNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(FifthNearestEnemyOf(Myself),15)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,HASTE)
+	!Gender(FourthNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(FourthNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(FourthNearestEnemyOf(Myself),10)
+	OR(2)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,ARMORCLASS)
+		HPPercentLT(FourthNearestEnemyOf(Myself),30)
+	!CheckStatLT(FourthNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(FourthNearestEnemyOf(Myself),15)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HASTE)
+	!Gender(ThirdNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(ThirdNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(ThirdNearestEnemyOf(Myself),10)
+	OR(2)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,ARMORCLASS)
+		HPPercentLT(ThirdNearestEnemyOf(Myself),30)
+	!CheckStatLT(ThirdNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(ThirdNearestEnemyOf(Myself),15)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HASTE)
+	!Gender(SecondNearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(SecondNearestEnemyOf(Myself),SUMMONED)
+		LevelGT(SecondNearestEnemyOf(Myself),10)
+	OR(2)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,ARMORCLASS)
+		HPPercentLT(SecondNearestEnemyOf(Myself),30)
+	!CheckStatLT(SecondNearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(SecondNearestEnemyOf(Myself),15)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	!CheckStatGT(NearestEnemyOf(Myself),0,HASTE)
+	!Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+	OR(2)
+		!Gender(NearestEnemyOf(Myself),SUMMONED)
+		LevelGT(NearestEnemyOf(Myself),10)
+	OR(2)
+		CheckStatGT(NearestEnemyOf(Myself),0,ARMORCLASS)
+		HPPercentLT(NearestEnemyOf(Myself),30)
+	!CheckStatLT(NearestEnemyOf(Myself),-9,ARMORCLASS)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	Range(NearestEnemyOf(Myself),15)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	HPPercentGT(Myself,50)
+	!CheckStatGT(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),0,HASTE)
+	!Gender(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),ILLUSIONARY)
+	OR(2)
+		CheckStatGT(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),0,ARMORCLASS)
+		HPPercentLT(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),30)
+	!CheckStatLT(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),-9,ARMORCLASS)
+	!StateCheck(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),STATE_HELPLESS)
+	Range(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]),15)
+	See(Nearest([GOODCUTOFF.0.0.CLERIC_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	Allegiance(Myself,EVILCUTOFF)
+	HPPercentGT(Myself,50)
+	!CheckStatGT(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),0,HASTE)
+	!Gender(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),ILLUSIONARY)
+	OR(2)
+		CheckStatGT(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),0,ARMORCLASS)
+		HPPercentLT(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),30)
+	!CheckStatLT(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),-9,ARMORCLASS)
+	!StateCheck(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),STATE_HELPLESS)
+	Range(Nearest([GOODCUTOFF.0.0.MAGE_ALL]),15)
+	See(Nearest([GOODCUTOFF.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+	See([GOODCUTOFF])
+THEN
+	RESPONSE #100
+		MoveToObject([GOODCUTOFF])
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		!Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+		!See([GOODCUTOFF])
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	!Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+	See([EVILCUTOFF])
+THEN
+	RESPONSE #100
+		MoveToObject([EVILCUTOFF])
+END
+
+IF
+	Allegiance(Myself,GOODCUTOFF)
+	OR(2)
+		!Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+		!See([EVILCUTOFF])
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	StateCheck(LastSeenBy(Myself),STATE_DEAD)
+THEN
+	RESPONSE #100
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	!Class(LastSeenBy(Myself),MONK)
+	!General(LastSeenBy(Myself),UNDEAD)
+	!Race(LastSeenBy(Myself),DEMONIC)
+	!HasItemEquiped("HELM06",LastSeenBy(Myself))  // ???? ?????? ?? ??????????
+	!HasItemEquiped("MISCBC",LastSeenBy(Myself))  // ?????? ?????? +3
+	!HasItemEquiped("NPCHAN",LastSeenBy(Myself))  // ????????? ?????? ???????
+	!HasItemEquiped("REAVER",LastSeenBy(Myself))  // ??'???????? ?????????? ????????? +5
+	!HasItemEquiped("SHLD25",LastSeenBy(Myself))  // ??? ???????? +2
+	!HasItemEquipedReal("SPER07",LastSeenBy(Myself))  // ????? ????????? +2
+	!HasItemEquipedReal("STAF11",LastSeenBy(Myself))  // ????? ?????
+	!HasItemEquipedReal("SW1H35",LastSeenBy(Myself))  // ?????? ?????????? +2
+	!HasItemEquipedReal("SW1H54",LastSeenBy(Myself))  // ??????????
+	!HasItemEquipedReal("SW2H14",LastSeenBy(Myself))  // ???????? +3
+	CheckStatGT(LastSeenBy(Myself),3,SAVEVSSPELL)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+THEN
+	RESPONSE #50
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (?????????? ?????????)
+	RESPONSE #50
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		SpellNoDec(LastSeenBy(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (?????????? ?????????)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Spell","LOCALS")
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #50
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	RESPONSE #50
+		SetGlobalTimer("Spell","LOCALS",ONE_ROUND)
+		SpellNoDec(LastSeenBy(Myself),WIZARD_BURNING_HANDS)  // SPWI103.SPL (???????? ????)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	Global("xyxManeuvered","LOCALS",0)
+	GlobalTimerExpired("xyxAttack","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("xyxManeuvered","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	OR(2)
+		CheckStatLT(LastSeenBy(Myself),100,RESISTSLASHING)
+		CheckStatLT(LastSeenBy(Myself),100,RESISTCRUSHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxAttack","LOCALS",ONE_MINUTE)
+		SetGlobal("xyxManeuvered","LOCALS",0)
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+

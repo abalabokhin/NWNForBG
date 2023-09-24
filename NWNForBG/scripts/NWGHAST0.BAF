@@ -1,0 +1,268 @@
+IF
+	OR(2)
+		StateCheck(Myself,STATE_REALLY_DEAD)
+		StateCheck(Myself,STATE_DISABLED)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Global("RR#EACheck","LOCALS",2)
+	Allegiance(Myself,GOODCUTOFF)
+	!GlobalTimerNotExpired("RR#Ghlv","LOCALS")
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		LeaveParty()
+		DialogInterrupt(FALSE)
+		EscapeArea()
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("RR#EACheck","LOCALS",0)
+	Allegiance(Myself,EVILCUTOFF)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("RR#EACheck","LOCALS",1)
+		Enemy()
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("RR#EACheck","LOCALS",0)
+	Allegiance(Myself,GOODCUTOFF)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("RR#EACheck","LOCALS",2)
+		SetGlobalTimer("RR#Ghlv","LOCALS",TWO_TURNS)
+		LeaveParty()
+		ChangeEnemyAlly(Myself,ALLY)
+		DialogInterrupt(FALSE)
+		SetInterrupt(TRUE)
+END
+
+IF
+	OnCreation()
+	Global("RR#EACheck","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		LeaveParty()
+		ChangeEnemyAlly(Myself,ALLY)
+		DialogInterrupt(FALSE)
+		SetInterrupt(TRUE)
+END
+
+IF
+	!CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(NearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_PANIC)
+	CheckStatLT(SixthNearestEnemyOf(Myself),100,RESISTPIERCING)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	CheckStatLT(SixthNearestEnemyOf(Myself),1,STONESKINS)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_PANIC)
+	CheckStatLT(FifthNearestEnemyOf(Myself),100,RESISTPIERCING)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	CheckStatLT(FifthNearestEnemyOf(Myself),1,STONESKINS)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_PANIC)
+	CheckStatLT(FourthNearestEnemyOf(Myself),100,RESISTPIERCING)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	CheckStatLT(FourthNearestEnemyOf(Myself),1,STONESKINS)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_PANIC)
+	CheckStatLT(ThirdNearestEnemyOf(Myself),100,RESISTPIERCING)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	CheckStatLT(ThirdNearestEnemyOf(Myself),1,STONESKINS)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_PANIC)
+	CheckStatLT(SecondNearestEnemyOf(Myself),100,RESISTPIERCING)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	CheckStatLT(SecondNearestEnemyOf(Myself),1,STONESKINS)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	CheckStatLT(NearestEnemyOf(Myself),100,RESISTPIERCING)
+	!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	CheckStatLT(NearestEnemyOf(Myself),1,STONESKINS)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	StateCheck(SixthNearestEnemyOf(Myself),STATE_IMMOBILE)
+	CheckStatLT(SixthNearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	StateCheck(FifthNearestEnemyOf(Myself),STATE_IMMOBILE)
+	CheckStatLT(FifthNearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	StateCheck(FourthNearestEnemyOf(Myself),STATE_IMMOBILE)
+	CheckStatLT(FourthNearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMMOBILE)
+	CheckStatLT(ThirdNearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	StateCheck(SecondNearestEnemyOf(Myself),STATE_IMMOBILE)
+	CheckStatLT(SecondNearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	StateCheck(NearestEnemyOf(Myself),STATE_IMMOBILE)
+	CheckStatLT(NearestEnemyOf(Myself),100,RESISTPIERCING)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!HasItem("NWDNABA",LastSeenBy(Myself))  // ?????
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(LastSeenBy(Myself),100,RESISTPIERCING)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	ActionListEmpty()
+	Allegiance(Myself,EVILCUTOFF)
+	Exists([EVILCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC])
+	!Range([EVILCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC],10)
+	HasItem("NWDNABA",[EVILCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC])  // ?????
+	InMyArea([EVILCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC])
+	InActiveArea(Myself)
+	!See([GOODCUTOFF])
+THEN
+	RESPONSE #100
+		Formation([EVILCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC],[-4.-4])
+END
+
+IF
+	ActionListEmpty()
+	Allegiance(Myself,GOODCUTOFF)
+	Exists([GOODCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC])
+	!Range([GOODCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC],10)
+	HasItem("NWDNABA",[GOODCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC])  // ?????
+	InMyArea([GOODCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC])
+	InActiveArea(Myself)
+	!See([EVILCUTOFF])
+THEN
+	RESPONSE #100
+		Formation([GOODCUTOFF.0.DEMONIC.0.0.0.MASK_CHAOTIC],[-4.-4])
+END
+
+IF
+	ActionListEmpty()
+	!Range([0.0.DEMONIC.0.0.0.MASK_CHAOTIC],10)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+

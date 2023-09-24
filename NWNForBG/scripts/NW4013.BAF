@@ -4,6 +4,6 @@ THEN
 	RESPONSE #100
 		SetGlobal("LeesQuest","GLOBAL",2)
 		SetGlobal("LuceJob","GLOBAL",2)
-		CreateCreature("Lees",[157.534],12)  // ?????
+		CreateCreature("NWLEES",[157.534],12)  // ?????
 END
 

@@ -1,0 +1,131 @@
+IF
+	Global("MeldanenSpawn","MYAREA",3)
+	See([PC])
+THEN
+	RESPONSE #100
+		FaceObject(Player1)
+		DisplayStringHead("NWMELDAN",@103035)  // ?? ???????, ??? ?????? ?????? ??? ?????????? ? ??? ???, ??? ????
+		SetGlobal("MeldanenSpawn","MYAREA",4)
+		SetGlobal("AreaHostile","MYAREA",1)
+		Wait(3)
+		Enemy()
+END
+
+IF
+	Global("MeldanenSpawn","MYAREA",3)
+	Global("MyTrueSight","LOCALS",0)
+	!See([PC])
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@103036)  // ?????????! ????? ??? ?? ???, ??? ????
+		ForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (???????? ???????)
+		SetGlobal("MyTrueSight","LOCALS",1)
+END
+
+IF
+	HPPercentLT(Myself,20)
+	Global("Pause","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	See(Player1)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@103037)  // ???! ?? ???????? ????, ??????????! ? ??? ????? ???!!
+		SetGlobal("MeldanenSpawn","MYAREA",5)
+		ClearAllActions()
+		DestroyItem("NWMIN1HP")  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Pause","LOCALS",1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	HPPercentLT(Myself,20)
+	Global("Pause","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	!See(Player1)
+	See([PC])
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@103037)  // ???! ?? ???????? ????, ??????????! ? ??? ????? ???!!
+		ClearAllActions()
+		SetGlobal("MeldanenSpawn","MYAREA",5)
+		DestroyItem("NWMIN1HP")  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Pause","LOCALS",1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Shout(HELP_ME_GROUP151)
+		Enemy()
+END
+
+IF
+	HitBy([GOODCUTOFF],CRUSHING)
+THEN
+	RESPONSE #100
+		Shout(HELP_ME_GROUP151)
+		Continue()
+END
+
+IF
+	Heard([ANYONE],HELP_ME_GROUP151)
+	InMyGroup(LastHeardBy(Myself))
+	!Class(Myself,INNOCENT)
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Heard([ANYONE],HELP_ME_GROUP151)
+	InMyGroup(LastHeardBy(Myself))
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],HELP_ME_GROUP151)
+	InMyGroup(LastHeardBy(Myself))
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+IF
+	Heard([ANYONE],HP_LT_20_ASSIST)
+	InMyGroup(LastHeardBy(Myself))
+	!HaveAnySpells()
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),30)
+END
+

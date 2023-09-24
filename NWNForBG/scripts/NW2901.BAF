@@ -1,7 +1,7 @@
 IF
 	Global("SharwynItem","MYAREA",0)
 	OR(2)
-		InParty("Sharwyn")  // ??????
+		InParty("NWSHARWN")  // ??????
 		Global("SharwynReleased","GLOBAL",2)
 THEN
 	RESPONSE #100

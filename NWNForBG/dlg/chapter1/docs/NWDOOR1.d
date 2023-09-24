@@ -5,8 +5,8 @@ BEGIN ~NWDOOR1~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("TalkedTo","NW1100",0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  !HasItemEquiped("Uniform",LastTalkedToBy(Myself))~ THEN GOTO 1
-  IF ~  HasItemEquiped("Uniform",LastTalkedToBy(Myself))~ THEN GOTO 2
+  IF ~  !HasItemEquiped("NWUNIFOM",LastTalkedToBy(Myself))~ THEN GOTO 1
+  IF ~  HasItemEquiped("NWUNIFOM",LastTalkedToBy(Myself))~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
@@ -80,7 +80,7 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("TalkedTo","NW1100",0)~ THEN BEGIN 12 // from:
   SAY @22
-  IF ~  !HasItemEquiped("Uniform",LastTalkedToBy(Myself))~ THEN GOTO 1
-  IF ~  HasItemEquiped("Uniform",LastTalkedToBy(Myself))~ THEN GOTO 2
+  IF ~  !HasItemEquiped("NWUNIFOM",LastTalkedToBy(Myself))~ THEN GOTO 1
+  IF ~  HasItemEquiped("NWUNIFOM",LastTalkedToBy(Myself))~ THEN GOTO 2
 END
 

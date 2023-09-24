@@ -1,6 +1,6 @@
 IF
 	!Global("RestSet","MYAREA",1)
-	Dead("Crewtd2")  // ???????
+	Dead("NWCREWT2")  // ???????
 THEN
 	RESPONSE #100
 		SetGlobal("RestSet","MYAREA",1)

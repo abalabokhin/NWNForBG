@@ -4,7 +4,7 @@ IF
 	PartyHasItem("Nwmisc71")  // ?????? ???????
 THEN
 	RESPONSE #100
-		ActionOverride(Player1,StartDialog("Portnw02",Player1))
+		ActionOverride(Player1,StartDialog("NWPORT00",Player1))
 END
 
 IF

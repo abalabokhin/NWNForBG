@@ -1,0 +1,52 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("NWPICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,@88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("NWFEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+	Range(LastSeenBy(Myself),12)
+	CombatCounter(0)
+	!StateCheck(LastSeenBy(Myself),CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(3)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		HitBy([GOODCUTOFF],CRUSHING)
+		Global("YuantiEnemy","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("GroupShout","LOCALS",1)
+		Shout(RALLY_TO_ME_82)
+		Enemy()
+END
+

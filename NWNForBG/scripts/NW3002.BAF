@@ -1,5 +1,5 @@
 IF
-	Dead("Edegar")  // ??????
+	Dead("NWEDEGAR")  // ??????
 	Global("EdegarDead","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -19,17 +19,17 @@ THEN
 		FadeToColor([30.0],0)
 		MoveViewPoint([439.540],INSTANT)
 		Wait(2)
-		CreateCreature("LODAR",[441.654],6)  // ?????
-		CreateCreature("IGLAND",[287.552],12)  // ?????? ??????? ???
-		CreateCreature("JEVON",[557.459],2)  // ??????
-		CreateCreature("ZED",[459.630],6)  // ???
-		CreateCreature("AVERIC",[516.440],1)  // ??????
-		CreateCreature("VAND",[524.6066],6)  // ?????
-		CreateCreature("DALCIA",[467.429],0)  // ???????
+		CreateCreature("NWLODAR",[441.654],6)  // ?????
+		CreateCreature("NWIGLAND",[287.552],12)  // ?????? ??????? ???
+		CreateCreature("NWJEVON",[557.459],2)  // ??????
+		CreateCreature("NWZED",[459.630],6)  // ???
+		CreateCreature("NWAVERIC",[516.440],1)  // ??????
+		CreateCreature("NWVAND",[524.6066],6)  // ?????
+		CreateCreature("NWDALCIA",[467.429],0)  // ???????
 		Wait(2)
 		FadeFromColor([30.0],0)
 		Wait(1)
-		ActionOverride("IGLAND",StartDialogueNoSet(Player1))
+		ActionOverride("NWIGLAND",StartDialogueNoSet(Player1))
 END
 
 IF
@@ -40,7 +40,7 @@ THEN
 		SmallWait(5)
 		StartCutSceneMode()
 		Wait(1)
-		ActionOverride("IGLAND",StartDialogueNoSet(Player1))
+		ActionOverride("NWIGLAND",StartDialogueNoSet(Player1))
 END
 
 IF
@@ -49,10 +49,10 @@ THEN
 	RESPONSE #100
 		ClearAllActions()
 		SmallWait(5)
-		ActionOverride("IGLAND",SetDialog("IGLAND2"))
+		ActionOverride("NWIGLAND",SetDialog("NWIGLAN2"))
 		StartCutSceneMode()
 		Wait(1)
-		ActionOverride("IGLAND",StartDialog("IGLAND2","Vand"))  // ?????
+		ActionOverride("NWIGLAND",StartDialog("NWIGLAN2","NWVAND"))  // ?????
 END
 
 IF
@@ -60,11 +60,11 @@ IF
 THEN
 	RESPONSE #100
 		ClearAllActions()
-		ActionOverride("IGLAND",SetDialog("IGLAND3"))
+		ActionOverride("NWIGLAND",SetDialog("NWIGLAN3"))
 		SmallWait(5)
 		StartCutSceneMode()
 		Wait(1)
-		ActionOverride("IGLAND",StartDialog("IGLAND3","Rolgan"))  // ??????
+		ActionOverride("NWIGLAND",StartDialog("NWIGLAN3","NWROLGAN"))  // ??????
 END
 
 IF
@@ -72,11 +72,11 @@ IF
 THEN
 	RESPONSE #100
 		ClearAllActions()
-		ActionOverride("IGLAND",SetDialog("IGLAND3"))
+		ActionOverride("NWIGLAND",SetDialog("NWIGLAN3"))
 		SmallWait(5)
 		StartCutSceneMode()
 		Wait(1)
-		ActionOverride("IGLAND",StartDialog("IGLAND3",Player1))
+		ActionOverride("NWIGLAND",StartDialog("NWIGLAN3",Player1))
 END
 
 IF
@@ -90,13 +90,13 @@ THEN
 		SmallWait(5)
 		StartCutSceneMode()
 		Wait(2)
-		ActionOverride("LODAR",EscapeAreaObject("To3000"))
-		ActionOverride("IGLAND",EscapeAreaObject("To3000"))
-		ActionOverride("JEVON",EscapeAreaObject("To3000"))
-		ActionOverride("ZED",EscapeAreaObject("To3000"))
-		ActionOverride("AVERIC",EscapeAreaObject("To3000"))
-		ActionOverride("VAND",EscapeAreaObject("To3000"))
-		ActionOverride("DALCIA",EscapeAreaObject("To3000"))
+		ActionOverride("NWLODAR",EscapeAreaObject("To3000"))
+		ActionOverride("NWIGLAND",EscapeAreaObject("To3000"))
+		ActionOverride("NWJEVON",EscapeAreaObject("To3000"))
+		ActionOverride("NWZED",EscapeAreaObject("To3000"))
+		ActionOverride("NWAVERIC",EscapeAreaObject("To3000"))
+		ActionOverride("NWVAND",EscapeAreaObject("To3000"))
+		ActionOverride("NWDALCIA",EscapeAreaObject("To3000"))
 		Wait(3)
 		FadeToColor([30.0],0)
 		Wait(1)
@@ -116,17 +116,17 @@ THEN
 		SmallWait(5)
 		StartCutSceneMode()
 		Wait(2)
-		ActionOverride("LODAR",EscapeAreaObject("To3000"))
-		ActionOverride("IGLAND",EscapeAreaObject("To3000"))
-		ActionOverride("JEVON",EscapeAreaObject("To3000"))
-		ActionOverride("ZED",EscapeAreaObject("To3000"))
-		ActionOverride("AVERIC",EscapeAreaObject("To3000"))
-		ActionOverride("VAND",EscapeAreaObject("To3000"))
-		ActionOverride("DALCIA",EscapeAreaObject("To3000"))
+		ActionOverride("NWLODAR",EscapeAreaObject("To3000"))
+		ActionOverride("NWIGLAND",EscapeAreaObject("To3000"))
+		ActionOverride("NWJEVON",EscapeAreaObject("To3000"))
+		ActionOverride("NWZED",EscapeAreaObject("To3000"))
+		ActionOverride("NWAVERIC",EscapeAreaObject("To3000"))
+		ActionOverride("NWVAND",EscapeAreaObject("To3000"))
+		ActionOverride("NWDALCIA",EscapeAreaObject("To3000"))
 		Wait(3)
 		FadeToColor([30.0],0)
 		Wait(1)
-		ActionOverride("ROLGAN",DestroySelf())
+		ActionOverride("NWROLGAN",DestroySelf())
 		Wait(1)
 		FadeFromColor([30.0],0)
 		Wait(1)

@@ -13,7 +13,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("ChangeTravelTrigger","MYAREA",1)
 		TriggerActivation("To3304",FALSE)
-		TriggerActivation("To3305",TRUE)
+		TriggerActivation("NWTO3305",TRUE)
 END
 
 IF
@@ -42,9 +42,9 @@ THEN
 	RESPONSE #100
 		SetGlobal("PartyHasNWWord2","GLOBAL",1)
 		CreateVisualEffect("SPDIMNDR",[1139.3028])
-		CreateCreature("HAEDRALI",[1139.3028],12)  // ????????
+		CreateCreature("NWHAEDRI",[1139.3028],12)  // ????????
 		Wait(4)
-		ActionOverride("HAEDRALI",StartDialogueNoSet(Player1))
+		ActionOverride("NWHAEDRI",StartDialogueNoSet(Player1))
 END
 
 IF
@@ -266,7 +266,7 @@ THEN
 END
 
 IF
-	Dead("LIZGOL1")  // ?????
+	Dead("NWLIZGO1")  // ?????
 	Global("Door3_Opened","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -277,7 +277,7 @@ THEN
 END
 
 IF
-	Dead("LIZGOL2")  // ?????
+	Dead("NWLIZGO2")  // ?????
 	Global("Door4_Opened","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -288,7 +288,7 @@ THEN
 END
 
 IF
-	Dead("LIZGOL3")  // ?????
+	Dead("NWLIZGO3")  // ?????
 	Global("Door2_Opened","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -317,7 +317,7 @@ IF
 	Global("Brazier_Used","MYAREA",0)
 THEN
 	RESPONSE #100
-		CreateVisualEffect("ICFIRSDI",[1415.1957])
+		CreateVisualEffect("NWICFIRI",[1415.1957])
 		ActionOverride("Brazier",DestroyItem("NWMISC78"))  // ?????? ???????
 		ActionOverride("Brazier",DestroyItem("NWMISC79"))  // ??????? ???????
 		SetGlobal("Brazier_Used","MYAREA",1)
@@ -330,7 +330,7 @@ IF
 	Global("Brazier_Used","MYAREA",1)
 THEN
 	RESPONSE #100
-		CreateVisualEffect("ICFIRSDP",[1415.1957])
+		CreateVisualEffect("NWICFIRP",[1415.1957])
 		ActionOverride("Brazier",DestroyItem("NWMISC80"))  // ????? ???????
 		ActionOverride("Brazier",DestroyItem("NWMISC79"))  // ??????? ???????
 		SetGlobal("Brazier_Used","MYAREA",2)
@@ -343,7 +343,7 @@ IF
 	Global("Brazier_Used","MYAREA",2)
 THEN
 	RESPONSE #100
-		CreateVisualEffect("ICFIRSDG",[1415.1955])
+		CreateVisualEffect("NWICFIRG",[1415.1955])
 		ActionOverride("Brazier",DestroyItem("NWMISC78"))  // ?????? ???????
 		ActionOverride("Brazier",DestroyItem("NWMISC80"))  // ????? ???????
 		SetGlobal("Brazier_Used","MYAREA",3)

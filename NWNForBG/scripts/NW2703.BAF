@@ -1,6 +1,6 @@
 IF
 	Global("DeadJanis","GLOBAL",1)
-	GlobalTimerExpired("Janis","GLOBAL")
+	GlobalTimerExpired("NWJANIS","GLOBAL")
 THEN
 	RESPONSE #100
 		SetGlobal("DeadJanis","GLOBAL",2)
@@ -13,6 +13,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("JanisSpawn","MYAREA",1)
-		CreateCreature("Janis2",[328.335],14)  // ??????
+		CreateCreature("NWJANIS2",[328.335],14)  // ??????
 END
 

@@ -6,13 +6,13 @@ THEN
 		OpenDoor("Idol")
 		SetGlobal("1223_IDOL","MYAREA",1)
 		Wait(1)
-		ActionOverride("Gulnan",DestroyItem("NWIMMUNE"))  // ??????
+		ActionOverride("NWGULNAN",DestroyItem("NWIMMUNE"))  // ??????
 		Continue()
 END
 
 IF
 	Global("Door1224","MYAREA",0)
-	Dead("Gulnan")  // ??????
+	Dead("NWGULNAN")  // ??????
 THEN
 	RESPONSE #100
 		SetGlobal("Door1224","MYAREA",1)

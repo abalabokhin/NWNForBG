@@ -26,7 +26,7 @@ THEN
 END
 
 IF
-	Dead("Dalcia")  // ???????
+	Dead("NWDALCIA")  // ???????
 	Global("DalciaDead","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -35,7 +35,7 @@ THEN
 END
 
 IF
-	Dead("Vand")  // ?????
+	Dead("NWVAND")  // ?????
 	Global("VandDead","MYAREA",0)
 THEN
 	RESPONSE #100

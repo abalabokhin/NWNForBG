@@ -1,0 +1,29 @@
+IF
+	OR(2)
+		IsOverMe([PC])
+		Entered([PC])
+	OR(5)
+		Global("NeurikQuest","GLOBAL",0)
+		PartyHasItem("NWURTRIG")  // ?????? ????
+		GlobalGT("UrtIsSaved","GLOBAL",0)
+		Dead("NWURT")  // ???
+		GlobalGT("Stairs","MYAREA",0)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	OR(2)
+		IsOverMe([PC])
+		Entered([PC])
+	GlobalGT("NeurikQuest","GLOBAL",0)
+	!PartyHasItem("NWURTRIG")  // ?????? ????
+	Global("UrtIsSaved","GLOBAL",0)
+	!Dead("NWURT")  // ???
+	Global("Stairs","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Stairs","MYAREA",1)
+END
+

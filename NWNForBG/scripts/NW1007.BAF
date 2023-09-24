@@ -5,7 +5,7 @@ THEN
 		SetGlobal("TamoraTired","MYAREA",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("Tamora")
+		StartCutScene("NWTAMORA")
 END
 
 IF
@@ -15,7 +15,7 @@ THEN
 		SetGlobal("LuceTired","MYAREA",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("Luce")
+		StartCutScene("NWLUCE")
 END
 
 IF
@@ -25,7 +25,7 @@ THEN
 		SetGlobal("TanitTired","MYAREA",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("Tanit")
+		StartCutScene("NWTANIT")
 END
 
 IF
@@ -35,6 +35,6 @@ THEN
 		SetGlobal("TanitTired","MYAREA",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("Tanit2")
+		StartCutScene("NWTANIT2")
 END
 

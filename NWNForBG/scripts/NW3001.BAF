@@ -5,6 +5,6 @@ THEN
 		SetGlobal("TeleportToNewervinter","GLOBAL",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("ToNever2")
+		StartCutScene("NWTONEV2")
 END
 

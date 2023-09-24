@@ -1,9 +1,0 @@
-IF
-	OnCreation()
-THEN
-	RESPONSE #100
-		ApplySpell(Myself,TROLL_SETHP1)  // SPIN700.SPL (?????? ??????)
-		PlayDead(300)
-		ReallyForceSpellRES("Lerk3",Myself)  // No such index
-END
-

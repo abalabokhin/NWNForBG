@@ -1,0 +1,17 @@
+IF
+	NumCreatureLT("NWIMPTO1",3)  // ???-????????????
+	!GlobalTimerNotExpired("Imptower","MYAREA")
+	Global("HellPortalClosed","MYAREA",0)
+	See([PC])
+THEN
+	RESPONSE #20
+		SetGlobalTimer("Imptower","MYAREA",TWO_ROUNDS)
+		ReallyForceSpellPointRES("NWBRAZ3",[448.571])  // ?????? ? ????
+	RESPONSE #30
+		SetGlobalTimer("Imptower","MYAREA",TWO_ROUNDS)
+		ReallyForceSpellPointRES("NWBRAZ3",[354.617])  // ?????? ? ????
+	RESPONSE #50
+		SetGlobalTimer("Imptower","MYAREA",TWO_ROUNDS)
+		ReallyForceSpellPointRES("NWBRAZ3",[432.633])  // ?????? ? ????
+END
+

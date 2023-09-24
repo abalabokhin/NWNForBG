@@ -1,6 +1,6 @@
 IF
 	Global("MyContainer","NW2905",0)
-	Dead("Relmar")  // ??????
+	Dead("NWRELMAR")  // ??????
 THEN
 	RESPONSE #100
 		ContainerEnable("Stones",TRUE)
@@ -17,7 +17,7 @@ THEN
 END
 
 IF
-	Dead("Spiritfo")  // ??? ????
+	Dead("NWSPIRIO")  // ??? ????
 	Global("AreaSong","MYAREA",0)
 THEN
 	RESPONSE #100

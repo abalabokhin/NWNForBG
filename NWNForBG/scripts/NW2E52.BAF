@@ -1,6 +1,6 @@
 IF
-	Dead("Kurt")  // ?????? ??????? ????
-	Dead("Baram")  // ?????? ??????? ?????
+	Dead("NWKURT")  // ?????? ??????? ????
+	Dead("NWBARAM")  // ?????? ??????? ?????
 	Global("CaptainJournal","GLOBAL",0)
 THEN
 	RESPONSE #100
@@ -22,7 +22,7 @@ THEN
 		CreateVisualEffect("SPDISPMA",[1547.847])
 		PlaySound("EFF_M02")
 		AmbientActivate("Portal3",FALSE)
-		SoundActivate("Portal2",FALSE)
+		SoundActivate("NWPORTA0",FALSE)
 		CloseDoor("Portal1")
 		SetGlobal("PortalDeactivate","MYAREA",1)
 		ContainerEnable("Portal",FALSE)
@@ -46,7 +46,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("BonfireDisable","MYAREA",2)
 		AmbientActivate("Fpit1S",FALSE)
-		OpenDoor("Bonfire")
+		OpenDoor("NWBONFIE")
 		SoundActivate("Fire1",FALSE)
 END
 
@@ -57,22 +57,22 @@ IF
 THEN
 	RESPONSE #10
 		SetGlobalTimer("PortalSpawn","MYAREA",FOUR_ROUNDS)
-		PlaySound("PORTAL2")
+		PlaySound("NWPORTA0")
 		CreateVisualEffect("ICMAGICH",[1578.911])
-		CreateCreature("ELFIRNW3",[1578.911],14)  // ?????????? ????
+		CreateCreature("NWELFIR3",[1578.911],14)  // ?????????? ????
 	RESPONSE #20
 		SetGlobalTimer("PortalSpawn","MYAREA",FOUR_ROUNDS)
-		PlaySound("PORTAL2")
+		PlaySound("NWPORTA0")
 		CreateVisualEffect("ICMAGICH",[1578.911])
 		CreateCreature("NWSALAM2",[1578.911],14)  // ??????? ??????????
 	RESPONSE #30
 		SetGlobalTimer("PortalSpawn","MYAREA",FOUR_ROUNDS)
-		PlaySound("PORTAL2")
+		PlaySound("NWPORTA0")
 		CreateVisualEffect("ICMAGICH",[1578.911])
 		CreateCreature("NWSALAM1",[1578.911],14)  // ??????????
 	RESPONSE #40
 		SetGlobalTimer("PortalSpawn","MYAREA",FOUR_ROUNDS)
-		PlaySound("PORTAL2")
+		PlaySound("NWPORTA0")
 		CreateVisualEffect("ICMAGICH",[1578.911])
 		CreateCreature("SHADFI01",[1578.911],14)  // ??????? ?????
 END

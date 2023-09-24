@@ -1,0 +1,54 @@
+IF
+	Die()
+	Global("ReallyDead","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ReallyDead","LOCALS",1)
+		ReallyForceSpellDeadRES("NWWVDEAH",Myself)  // No such index
+END
+
+IF
+	!GlobalTimerNotExpired("OH_Cast","LOCALS")
+	GlobalLT("CAST_WAR_CRY","LOCALS",3)
+	See(NearestEnemyOf(Myself))
+	See([ENEMY])
+	StateCheck(LastSeenBy(Myself),STATE_NORMAL)
+THEN
+	RESPONSE #30
+		IncrementGlobal("CAST_WAR_CRY","LOCALS",1)
+		ForceSpellRES("SPIN118W",NearestEnemyOf(Myself))  // ?????? ??????
+		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
+	RESPONSE #70
+		IncrementGlobal("CAST_WAR_CRY","LOCALS",1)
+		ForceSpellRES("SPIN115W",NearestEnemyOf(Myself))  // ???????? ????
+		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	!GlobalTimerNotExpired("OH_Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #75
+		ForceSpellRES("SPIN115W",NearestEnemyOf(Myself))  // ???????? ????
+		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
+	RESPONSE #25
+		ForceSpellRES("SPIN118W",NearestEnemyOf(Myself))  // ?????? ??????
+		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastAttackerOf(Myself),45)
+END
+
+IF
+	See([PC])
+THEN
+	RESPONSE #100
+		FaceObject(LastSeenBy(Myself))
+		Continue()
+END
+

@@ -1,11 +1,11 @@
 IF
 	Global("GamSpawned","MYAREA",0)
-	!Dead("Gam")  // ???
+	!Dead("NWGAM")  // ???
 THEN
 	RESPONSE #100
-		CreateCreature("Gam",[1009.1219],8)  // ???
+		CreateCreature("NWGAM",[1009.1219],8)  // ???
 		SetGlobal("GamSpawned","MYAREA",1)
-		ActionOverride("Gam",Polymorph(SLEEPING_MAN_HUMAN))
+		ActionOverride("NWGAM",Polymorph(SLEEPING_MAN_HUMAN))
 END
 
 IF

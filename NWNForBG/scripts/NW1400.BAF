@@ -58,13 +58,13 @@ IF
 	Global("GateOpened","MYAREA",1)
 THEN
 	RESPONSE #100
-		ActionOverride("Harn",MoveToPoint([1231.3261]))
-		PlaySound("IronG")
+		ActionOverride("NWHARN",MoveToPoint([1231.3261]))
+		PlaySound("NWIRONG")
 		OpenDoor("Door02")
 		Wait(2)
-		ActionOverride("Harn",MoveToPoint([1030.3244]))
+		ActionOverride("NWHARN",MoveToPoint([1030.3244]))
 		SetGlobal("GateOpened","MYAREA",2)
-		ActionOverride("Harn",Face(0))
+		ActionOverride("NWHARN",Face(0))
 END
 
 IF
@@ -99,8 +99,8 @@ THEN
 	RESPONSE #100
 		SetGlobal("TreeActive","MYAREA",1)
 		SetGlobal("Nwnzoo","GLOBAL",2)
-		TakePartyItem("NyatScrl")  // ?????? ???????? ????? ????????
-		DestroyItem("NyatScrl")  // ?????? ???????? ????? ????????
+		TakePartyItem("NWNYATSL")  // ?????? ???????? ????? ????????
+		DestroyItem("NWNYATSL")  // ?????? ???????? ????? ????????
 		PlaySound("EFF_M27")
 		AmbientActivate("Tree1",TRUE)
 		AmbientActivate("Tree2",TRUE)
@@ -134,13 +134,13 @@ END
 
 IF
 	GlobalGT("FormosaQuest","GLOBAL",1)
-	!Dead("Formosa")  // ???????
+	!Dead("NWFORMOA")  // ???????
 	Global("OpenWarehouse","GLOBAL",0)
 	Delay(3)
 THEN
 	RESPONSE #100
 		SetGlobal("OpenWarehouse","GLOBAL",1)
-		ActionOverride("Formosa",EscapeAreaObject("To1402"))
+		ActionOverride("NWFORMOA",EscapeAreaObject("To1402"))
 		Unlock("Door20")
 		OpenDoor("Door20")
 END

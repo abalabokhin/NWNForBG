@@ -1,0 +1,13 @@
+IF
+	OR(2)
+		IsOverMe([PC])
+		Entered([PC])
+	Global("DrawlScene","NW1220",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DrawlScene","NW1220",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWDRAWL1")
+END
+

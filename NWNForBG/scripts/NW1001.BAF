@@ -29,28 +29,28 @@ END
 
 IF
 	GlobalGT("MakingMedicine","GLOBAL",1)
-	InMyArea("Aribeth")  // ??????
+	InMyArea("NWARIBEH")  // ??????
 THEN
 	RESPONSE #100
-		ActionOverride("Aribeth",DestroySelf())
+		ActionOverride("NWARIBEH",DestroySelf())
 		Continue()
 END
 
 IF
 	GlobalGT("MakingMedicine","GLOBAL",1)
-	InMyArea("Fenthick")  // ??????
+	InMyArea("NWFENTHK")  // ??????
 THEN
 	RESPONSE #100
-		ActionOverride("Fenthick",DestroySelf())
+		ActionOverride("NWFENTHK",DestroySelf())
 		Continue()
 END
 
 IF
 	GlobalGT("MakingMedicine","GLOBAL",1)
-	InMyArea("Desther")  // ??????
+	InMyArea("NWDESTHR")  // ??????
 THEN
 	RESPONSE #100
-		ActionOverride("Desther",DestroySelf())
+		ActionOverride("NWDESTHR",DestroySelf())
 END
 
 IF

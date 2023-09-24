@@ -33,10 +33,10 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("MageGuard","MYAREA",1)
-		CreateCreatureDoor("Islund4",[2212.1347],4)  // ???
-		CreateCreatureDoor("Islund5",[1931.1417],6)  // ???
-		CreateCreatureDoor("Islund4",[1583.1344],10)  // ???
-		CreateCreatureDoor("Islund5",[1628.1137],12)  // ???
+		CreateCreatureDoor("NWISLUN4",[2212.1347],4)  // ???
+		CreateCreatureDoor("NWISLUN5",[1931.1417],6)  // ???
+		CreateCreatureDoor("NWISLUN4",[1583.1344],10)  // ???
+		CreateCreatureDoor("NWISLUN5",[1628.1137],12)  // ???
 		Continue()
 END
 

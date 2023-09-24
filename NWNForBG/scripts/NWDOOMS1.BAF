@@ -13,7 +13,7 @@ IF
 	!Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #10
-		PlaySound("BEDWIN43")
+		PlaySound("NWBEDW43")
 		RunAwayFrom(LastSeenBy(Myself),30)
 	RESPONSE #90
 		RunAwayFrom(LastSeenBy(Myself),30)

@@ -1,0 +1,39 @@
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_SLOWED)
+	Global("firstUse","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpellRES("NWSLAAD1",LastSeenBy(Myself))  // ????? ???????? ??????
+		SetGlobalTimer("Mortal_view","LOCALS",TWO_ROUNDS)
+		SetGlobalTimer("Atteck","LOCALS",TWO_ROUNDS)
+		SetGlobal("firstUse","LOCALS",1)
+END
+
+IF
+	GlobalTimerExpired("Atteck","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_SLOWED)
+THEN
+	RESPONSE #100
+		ForceSpellRES("NWSLAAD1",LastSeenBy(Myself))  // ????? ???????? ??????
+		SetGlobalTimer("Atteck","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	GlobalTimerExpired("Mortal_view","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_SLOWED)
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPWI913A",LastSeenBy(Myself))  // ??????????? ?????? ??????
+		SetGlobalTimer("Mortal_view","LOCALS",THREE_ROUNDS)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

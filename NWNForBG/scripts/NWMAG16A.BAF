@@ -10,11 +10,11 @@ IF
 THEN
 	RESPONSE #10
 		SetGlobal("Scrollprep","LOCALS",1)
-		GiveItemCreate("SCRX9",Myself,1,1,0)  // ??????? ?????
+		GiveItemCreate("NWSCRX9",Myself,1,1,0)  // ??????? ?????
 		Continue()
 	RESPONSE #20
 		SetGlobal("Scrollprep","LOCALS",1)
-		GiveItemCreate("SCSNILL",Myself,1,1,0)  // ????????? ????????
+		GiveItemCreate("NWSCSNIL",Myself,1,1,0)  // ????????? ????????
 		Continue()
 	RESPONSE #30
 		SetGlobal("Scrollprep","LOCALS",1)
@@ -103,7 +103,7 @@ THEN
 		SetGlobal("BP_CHASER","LOCALS",0)
 		SetGlobal("BP_CHASE","LOCALS",0)
 		SmallWait(10)
-		ActionOverride("BPTARGET",DestroySelf())
+		ActionOverride("NWBPTART",DestroySelf())
 END
 
 IF
@@ -111,7 +111,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BP_BOMB","LOCALS",2)
-		ReallyForceSpellRES("BPTARGET",Myself)  // <NO TEXT>
+		ReallyForceSpellRES("NWBPTART",Myself)  // <NO TEXT>
 END
 
 IF
@@ -421,7 +421,7 @@ THEN
 		ChangeGender(LastSeenBy(Myself),EXTRA3)
 		ActionOverride(LastSeenBy(Myself),ChangeAIScript("MAGE16A",CLASS))
 		ActionOverride(LastSeenBy(Myself),ChangeAIScript("WDASIGHT",DEFAULT))
-		SpellNoDecRES("SPMISLED",Myself)  // <NO TEXT>
+		SpellNoDecRES("NWSPMISD",Myself)  // <NO TEXT>
 		RunAwayFrom(LastSeenBy(Myself),20)
 END
 
@@ -434,8 +434,8 @@ THEN
 	RESPONSE #100
 		ChangeSpecifics(LastSeenBy(Myself),NEEDS_BREACH)
 		ChangeGender(LastSeenBy(Myself),EXTRA2)
-		ActionOverride(LastSeenBy(Myself),ChangeAIScript("BPMISLED",OVERRIDE))
-		SpellNoDecRES("SPMISLED",Myself)  // <NO TEXT>
+		ActionOverride(LastSeenBy(Myself),ChangeAIScript("NWBPMISD",OVERRIDE))
+		SpellNoDecRES("NWSPMISD",Myself)  // <NO TEXT>
 		RunAwayFrom(LastSeenBy(Myself),20)
 END
 

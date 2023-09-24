@@ -57,10 +57,10 @@ END
 
 IF
 	Global("NWNChapter","GLOBAL",4)
-	Exists("Nascher")  // ???? ?????
+	Exists("NWNASCHR")  // ???? ?????
 THEN
 	RESPONSE #100
-		ActionOverride("Nascher",DestroySelf())
+		ActionOverride("NWNASCHR",DestroySelf())
 		Continue()
 END
 

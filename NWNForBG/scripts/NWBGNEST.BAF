@@ -1,0 +1,10 @@
+IF
+	Die()
+	Global("ReallyDead","LOCALS",0)
+	!Dead("NWGULNAN")  // ??????
+THEN
+	RESPONSE #100
+		SetGlobal("ReallyDead","LOCALS",1)
+		ReallyForceSpellDeadRES("NWBGNEST",Myself)  // No such index
+END
+

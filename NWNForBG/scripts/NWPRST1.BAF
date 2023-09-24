@@ -23,6 +23,6 @@ IF
 	!Allegiance(LastTrigger,FAMILIAR)
 THEN
 	RESPONSE #100
-		StartDialogOverride("RR#PICKP",LastTrigger)
+		StartDialogOverride("NWPICKP",LastTrigger)
 END
 

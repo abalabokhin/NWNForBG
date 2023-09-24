@@ -1,11 +1,11 @@
 // \Пещера Снежного Шара  Белый дракон-страж   Ма'фел'но'сей'кедех'наар  Клык Зимы    Хотя белые драконы и являются слабейшей породой червей Фейруна, огромный размер этой особи указывает на его большой возраст и чудовищную силу.     Строки:
-// У вас Амулет Веков! Вы должны умереть! [DRACO150]  
-// Подойдите, малютка. Говорите со мной, если у вас хватит храбрости. [DRACO151]     
+// У вас Амулет Веков! Вы должны умереть! [NWDRA150]  
+// Подойдите, малютка. Говорите со мной, если у вас хватит храбрости. [NWDRA151]     
 
 BEGIN ~NWDRACO1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)!PartyHasItem("DRACAMU3")~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)!PartyHasItem("NWDRACA3")~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -30,7 +30,7 @@ IF ~~ THEN BEGIN 3 // from: 1.3
   IF ~~ THEN REPLY @10 GOTO 8
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @12 GOTO 10
-  IF ~  OR(2)PartyHasItem("DRACAMU1")PartyHasItem("DRACAMU2")~ THEN REPLY @13 GOTO 4
+  IF ~  OR(2)PartyHasItem("NWDRACA1")PartyHasItem("NWDRACA2")~ THEN REPLY @13 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
 END
 
@@ -105,7 +105,7 @@ IF ~~ THEN BEGIN 13 // from: 6.2
   IF ~~ THEN REPLY @10 GOTO 8
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @12 GOTO 10
-  IF ~  OR(3)PartyHasItem("DRACAMU1")PartyHasItem("DRACAMU2")~ THEN REPLY @13 GOTO 4
+  IF ~  OR(3)PartyHasItem("NWDRACA1")PartyHasItem("NWDRACA2")~ THEN REPLY @13 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
 END
 
@@ -166,7 +166,7 @@ END
 // ------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)!PartyHasItem("DRACAMU3")~ THEN BEGIN 22 // from:
+~  !NumTimesTalkedTo(0)!PartyHasItem("NWDRACA3")~ THEN BEGIN 22 // from:
   SAY @43
   IF ~  IsGabber(Player1)~ THEN REPLY @2 GOTO 2
   IF ~  !IsGabber(Player1)~ THEN REPLY @3 GOTO 2

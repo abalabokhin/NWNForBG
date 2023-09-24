@@ -1,0 +1,22 @@
+IF
+	Global("Attacked","LOCALS",0)
+	OR(2)
+		Dead("NWCOW1")  // ??????
+		AttackedBy([PC],DEFAULT)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("Attacked","LOCALS",1)
+		AttackReevaluate(NearestEnemyOf(Myself),8)
+END
+
+IF
+	See("NWCOW1")  // ??????
+	See([PC])
+	!Dead("NWCOW1")  // ??????
+	!Global("Attacked","LOCALS",1)
+THEN
+	RESPONSE #100
+		AttackReevaluate("NWCOW1",8)  // ??????
+END
+

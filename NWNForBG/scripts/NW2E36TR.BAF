@@ -6,6 +6,6 @@ THEN
 		SetGlobal("VoleronSpawn","MYAREA",1)
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("Volsp")
+		StartCutScene("NWVOLSP")
 END
 

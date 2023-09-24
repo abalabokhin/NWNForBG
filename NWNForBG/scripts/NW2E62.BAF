@@ -6,23 +6,23 @@ THEN
 END
 
 IF
-	Dead("Brazier3")  // ???????
+	Dead("NWBRAZI3")  // ???????
 	Global("BrazierDestroyed","MYAREA",0)
 THEN
 	RESPONSE #100
 		SetGlobal("BrazierDestroyed","MYAREA",1)
 		OpenDoor("Brazier")
-		AmbientActivate("Fire_gr",FALSE)
+		AmbientActivate("NWFIREGR",FALSE)
 		SoundActivate("Fire1",FALSE)
 END
 
 IF
-	InMyArea("Nyphith")  // ???????
+	InMyArea("NWNYPHIH")  // ???????
 	Global("NyphithusQuest","GLOBAL",2)
 	Global("NyphithusQuest","MYAREA",0)
 THEN
 	RESPONSE #100
 		SetGlobal("NyphithusQuest","MYAREA",1)
-		ActionOverride("Nyphith",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
+		ActionOverride("NWNYPHIH",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
 END
 

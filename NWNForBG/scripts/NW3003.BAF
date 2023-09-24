@@ -1,5 +1,5 @@
 IF
-	Dead("Averic")  // ??????
+	Dead("NWAVERIC")  // ??????
 	Global("AvericDead","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -8,7 +8,7 @@ THEN
 END
 
 IF
-	Dead("Lodar")  // ?????
+	Dead("NWLODAR")  // ?????
 	Global("LodarDead","MYAREA",0)
 THEN
 	RESPONSE #100

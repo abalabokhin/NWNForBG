@@ -12,7 +12,7 @@ IF
 	Global("NWGongUzed","MYAREA",2)
 THEN
 	RESPONSE #100
-		PlaySound("Gongnw03")
+		PlaySound("NWGONG03")
 		SetGlobal("NWGongUzed","MYAREA",3)
 END
 
@@ -22,7 +22,7 @@ IF
 	!Global("NWGongUzed","MYAREA",2)
 THEN
 	RESPONSE #100
-		PlaySound("Gongnw03")
+		PlaySound("NWGONG03")
 		SetGlobal("NWGongUzed","MYAREA",0)
 END
 

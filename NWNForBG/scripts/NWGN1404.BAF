@@ -1,0 +1,9 @@
+IF
+	Entered([ANYONE])
+	IsOverMe([ANYONE])
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("NWSP615",LastTrigger)  // ???? ??????
+		Wait(2)
+END
+

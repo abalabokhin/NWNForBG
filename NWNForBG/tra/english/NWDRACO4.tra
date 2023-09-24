@@ -1,5 +1,5 @@
-@0 = ~So at last you have come. I assume my fire giant servants are dead. No matter, they are of little consequence to me. I can find other servants. Perhaps even you will serve, <CHARNAME>.~ [DRACO453]
-@1 = ~Come closer, I will not harm you. These last days of the eons of my life pass slowly now and I would speak with you to break the monotony.~ [DRACO455]
+@0 = ~So at last you have come. I assume my fire giant servants are dead. No matter, they are of little consequence to me. I can find other servants. Perhaps even you will serve, <CHARNAME>.~ [NWDRA453]
+@1 = ~Come closer, I will not harm you. These last days of the eons of my life pass slowly now and I would speak with you to break the monotony.~ [NWDRA455]
 @2 = ~How do you know my name?~
 @3 = ~Who are you?~
 @4 = ~I want to ask you some questions.~
@@ -69,11 +69,11 @@
 @68 = ~Fine, take the eggs.~
 @69 = ~Then I think I'll just keep these eggs for myself, Klauth!~
 @70 = ~NP: Leave them to yourself, it means nothing to me. Others will be able to render these services to me; there are other clutches of eggs. Since youre not here to give me eggs, I assume you had other reasons to come and talk to me. What kind of favor do you want to ask me,<CHARNAME> ?~ /*Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?*/
-@71 = ~So you return, <CHARNAME>.~ [DRACO454]
+@71 = ~So you return, <CHARNAME>.~ [NWDRA454]
 @72 = ~Have you considered my offer? Have you brought me the eggs of a dragon?~
 @73 = ~No, I do not have the eggs yet.~
 @74 = ~Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?~
-@75 = ~Once more you return to speak to me, <CHARNAME>. I have given you the Word of Power - what more do you desire of Klauth?~ [DRACO451]
+@75 = ~Once more you return to speak to me, <CHARNAME>. I have given you the Word of Power - what more do you desire of Klauth?~ [NWDRA451]
 @76 = ~I have some more dragon's eggs for you.~
 @77 = ~Since the Word of Power is no longer mine I can only offer you gold in exchange for the eggs. I will give you 5000 gold if you wish.~
 @78 = ~Here, take the eggs.~

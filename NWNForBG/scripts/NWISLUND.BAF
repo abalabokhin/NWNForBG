@@ -1,0 +1,69 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("NWPICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,@88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("NWFEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	See([PC])
+	Range(LastSeenBy(Myself),15)
+	Delay(3)
+	NumTimesTalkedTo(0)
+	Allegiance(Myself,NEUTRAL)
+	Name("NWISLUND",Myself)  // ??????? ??????
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	OR(6)
+		HitBy([PC],CRUSHING)
+		AttackedBy([PC],DEFAULT)
+		Heard([NEUTRAL],HELP79)
+		Heard([EVILCUTOFF],HELP79)
+		Global("Hostile","MYAREA",1)
+		GlobalGT("NW2E59_Vizited","GLOBAL",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+		SetGlobal("Hostile","MYAREA",1)
+		SetGlobal("March","LOCALS",1)
+END
+
+IF
+	OR(2)
+		Global("Hostile","MYAREA",1)
+		Allegiance(Myself,ENEMY)
+	Global("MyString","LOCALS",0)
+	Name("NWISLUND",Myself)  // ??????? ??????
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@102883)  // ???? ???????? ???????????! ? ?????!
+		PlaySound("NWISLU50")
+		SetGlobal("MyString","LOCALS",1)
+END
+

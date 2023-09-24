@@ -1,9 +1,0 @@
-IF
-	OR(2)
-		GlobalGT("SpiritSaved","GLOBAL",0)
-		Dead("SpiritFo")  // ??? ????
-THEN
-	RESPONSE #100
-		DestroySelf()
-END
-

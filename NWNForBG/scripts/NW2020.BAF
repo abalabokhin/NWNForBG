@@ -5,8 +5,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina12",[668.390],2)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA12",[668.390],2)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -18,8 +18,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina14",[668.390],2)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA14",[668.390],2)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -31,8 +31,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina16",[668.390],2)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA16",[668.390],2)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -43,8 +43,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina18",[668.390],2)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA18",[668.390],2)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -52,12 +52,12 @@ IF
 	Global("LinaExist","GLOBAL",1)
 	Global("LinaMove","MYAREA",0)
 	Global("LinaOut","GLOBAL",0)
-	!InMyArea("Lina")  // ????
-	!InParty("Lina")  // ????
+	!InMyArea("NWLINA")  // ????
+	!InParty("NWLINA")  // ????
 THEN
 	RESPONSE #100
 		SetGlobal("LinaMove","MYAREA",1)
-		MoveGlobal("NW2020","Lina",[668.390])  // ????
+		MoveGlobal("NW2020","NWLINA",[668.390])  // ????
 		Continue()
 END
 
@@ -68,8 +68,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan12",[439.313],0)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL12",[439.313],0)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -81,8 +81,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan14",[439.313],0)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL14",[439.313],0)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -94,8 +94,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan16",[439.313],0)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL16",[439.313],0)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -106,8 +106,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan18",[439.313],0)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL18",[439.313],0)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -115,12 +115,12 @@ IF
 	Global("DaelanExist","GLOBAL",1)
 	Global("DaelanMove","MYAREA",0)
 	Global("DaelanOut","GLOBAL",0)
-	!InMyArea("Daelan")  // ??????
-	!InParty("Daelan")  // ??????
+	!InMyArea("NWDAELAN")  // ??????
+	!InParty("NWDAELAN")  // ??????
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanMove","MYAREA",1)
-		MoveGlobal("NW2020","Daelan",[439.313])  // ??????
+		MoveGlobal("NW2020","NWDAELAN",[439.313])  // ??????
 		Continue()
 END
 
@@ -131,8 +131,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin12",[252.504],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD12",[252.504],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -144,8 +144,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin14",[252.504],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD14",[252.504],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -157,8 +157,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin15",[252.504],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD15",[252.504],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -169,8 +169,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin16",[252.504],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD16",[252.504],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -178,12 +178,12 @@ IF
 	Global("BoddinokExist","GLOBAL",1)
 	Global("BoddinokMove","MYAREA",0)
 	Global("BoddinokOut","GLOBAL",0)
-	!InMyArea("Boddinok")  // ????????
-	!InParty("Boddinok")  // ????????
+	!InMyArea("NWBODDIK")  // ????????
+	!InParty("NWBODDIK")  // ????????
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokMove","MYAREA",1)
-		MoveGlobal("NW2020","Boddinok",[252.504])  // ????????
+		MoveGlobal("NW2020","NWBODDIK",[252.504])  // ????????
 		Continue()
 END
 
@@ -194,8 +194,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN12",[492.290],2)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM12",[492.290],2)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -207,8 +207,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN14",[492.290],2)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM14",[492.290],2)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -220,8 +220,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN16",[492.290],2)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM16",[492.290],2)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -232,8 +232,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN16",[492.290],2)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM16",[492.290],2)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -241,12 +241,12 @@ IF
 	Global("GrimgnawExist","GLOBAL",1)
 	Global("GrimgnawMove","MYAREA",0)
 	Global("GrimgnawOut","GLOBAL",0)
-	!InMyArea("Grimgnaw")  // ????????
-	!InParty("Grimgnaw")  // ????????
+	!InMyArea("NWGRIMGW")  // ????????
+	!InParty("NWGRIMGW")  // ????????
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawMove","MYAREA",1)
-		MoveGlobal("NW2020","Grimgnaw",[492.290])  // ????????
+		MoveGlobal("NW2020","NWGRIMGW",[492.290])  // ????????
 		Continue()
 END
 
@@ -257,8 +257,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy12",[668.390],2)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR12",[668.390],2)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -270,8 +270,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy14",[668.390],2)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR14",[668.390],2)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -283,8 +283,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy16",[668.390],2)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR16",[668.390],2)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -295,8 +295,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy18",[668.390],2)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR18",[668.390],2)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -304,12 +304,12 @@ IF
 	Global("SharwynExist","GLOBAL",1)
 	Global("SharwynMove","MYAREA",0)
 	Global("SharwynOut","GLOBAL",0)
-	!InMyArea("Sharwyn")  // ??????
-	!InParty("Sharwyn")  // ??????
+	!InMyArea("NWSHARWN")  // ??????
+	!InParty("NWSHARWN")  // ??????
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynMove","MYAREA",1)
-		MoveGlobal("NW2020","Sharwyn",[668.390])  // ??????
+		MoveGlobal("NW2020","NWSHARWN",[668.390])  // ??????
 		Continue()
 END
 
@@ -320,8 +320,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi12",[275.477],12)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI12",[275.477],12)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -333,8 +333,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi14",[275.477],12)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI14",[275.477],12)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -346,8 +346,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi16",[275.477],12)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI16",[275.477],12)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -358,8 +358,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi18",[275.477],12)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI18",[275.477],12)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -367,12 +367,12 @@ IF
 	Global("TomiExist","GLOBAL",1)
 	Global("TomiMove","MYAREA",0)
 	Global("TomiOut","GLOBAL",0)
-	!InMyArea("Tomi")  // ???? ?????????
-	!InParty("Tomi")  // ???? ?????????
+	!InMyArea("NWTOMI")  // ???? ?????????
+	!InParty("NWTOMI")  // ???? ?????????
 THEN
 	RESPONSE #100
 		SetGlobal("TomiMove","MYAREA",1)
-		MoveGlobal("NW2020","Tomi",[275.477])  // ???? ?????????
+		MoveGlobal("NW2020","NWTOMI",[275.477])  // ???? ?????????
 		Continue()
 END
 

@@ -1,66 +1,66 @@
 IF
-	HasItem("Marker",Player1)  // ??????
+	HasItem("NWMARKER",Player1)  // ??????
 	Global("ToCave2","NW2302",0)
-	InMyArea("2302WT")  // ??????
+	InMyArea("NW2302WT")  // ??????
 	InMyArea(Player1)
 THEN
 	RESPONSE #100
-		TakePartyItem("Marker")  // ??????
-		ActionOverride("2302WT",StartDialog("PASSAGE",Player1))
+		TakePartyItem("NWMARKER")  // ??????
+		ActionOverride("NW2302WT",StartDialog("NWPASSAE",Player1))
 END
 
 IF
-	HasItem("Marker",Player2)  // ??????
+	HasItem("NWMARKER",Player2)  // ??????
 	Global("ToCave2","NW2302",0)
-	InMyArea("2302WT")  // ??????
+	InMyArea("NW2302WT")  // ??????
 	InMyArea(Player2)
 THEN
 	RESPONSE #100
-		TakePartyItem("Marker")  // ??????
-		ActionOverride("2302WT",StartDialog("PASSAGE",Player2))
+		TakePartyItem("NWMARKER")  // ??????
+		ActionOverride("NW2302WT",StartDialog("NWPASSAE",Player2))
 END
 
 IF
-	HasItem("Marker",Player3)  // ??????
+	HasItem("NWMARKER",Player3)  // ??????
 	Global("ToCave2","NW2302",0)
-	InMyArea("2302WT")  // ??????
+	InMyArea("NW2302WT")  // ??????
 	InMyArea(Player3)
 THEN
 	RESPONSE #100
-		TakePartyItem("Marker")  // ??????
-		ActionOverride("2302WT",StartDialog("PASSAGE",Player3))
+		TakePartyItem("NWMARKER")  // ??????
+		ActionOverride("NW2302WT",StartDialog("NWPASSAE",Player3))
 END
 
 IF
-	HasItem("Marker",Player4)  // ??????
+	HasItem("NWMARKER",Player4)  // ??????
 	Global("ToCave2","NW2302",0)
-	InMyArea("2302WT")  // ??????
+	InMyArea("NW2302WT")  // ??????
 	InMyArea(Player4)
 THEN
 	RESPONSE #100
-		TakePartyItem("Marker")  // ??????
-		ActionOverride("2302WT",StartDialog("PASSAGE",Player4))
+		TakePartyItem("NWMARKER")  // ??????
+		ActionOverride("NW2302WT",StartDialog("NWPASSAE",Player4))
 END
 
 IF
-	HasItem("Marker",Player5)  // ??????
+	HasItem("NWMARKER",Player5)  // ??????
 	Global("ToCave2","NW2302",0)
-	InMyArea("2302WT")  // ??????
+	InMyArea("NW2302WT")  // ??????
 	InMyArea(Player5)
 THEN
 	RESPONSE #100
-		TakePartyItem("Marker")  // ??????
-		ActionOverride("2302WT",StartDialog("PASSAGE",Player5))
+		TakePartyItem("NWMARKER")  // ??????
+		ActionOverride("NW2302WT",StartDialog("NWPASSAE",Player5))
 END
 
 IF
-	HasItem("Marker",Player6)  // ??????
+	HasItem("NWMARKER",Player6)  // ??????
 	Global("ToCave2","NW2302",0)
-	InMyArea("2302WT")  // ??????
+	InMyArea("NW2302WT")  // ??????
 	InMyArea(Player6)
 THEN
 	RESPONSE #100
-		TakePartyItem("Marker")  // ??????
-		ActionOverride("2302WT",StartDialog("PASSAGE",Player6))
+		TakePartyItem("NWMARKER")  // ??????
+		ActionOverride("NW2302WT",StartDialog("NWPASSAE",Player6))
 END
 

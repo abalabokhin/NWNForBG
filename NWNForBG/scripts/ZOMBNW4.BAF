@@ -1,7 +1,0 @@
-IF
-	Dead("Gulnan")  // ??????
-THEN
-	RESPONSE #100
-		Kill(Myself)
-END
-

@@ -1,6 +1,6 @@
 // Лунный лес логово Клаута  Клаут Красный дракон  Этот древний колоссальный красный дракон по кличке "Старый Снарл" покрыт ужасными шрамами. Это, возможно, самое страшное и могущественное смертное существо во всем Фейруне. 
 
-// Предательство! Испорченная сущность мертвого дракона! Теперь ты умрешь! [DRACO450]
+// Предательство! Испорченная сущность мертвого дракона! Теперь ты умрешь! [NWDRA450]
 
 BEGIN ~NWDRACO4~
 
@@ -15,8 +15,8 @@ IF ~~ THEN BEGIN 1 // from: 0.1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
   IF ~~ THEN REPLY @7 GOTO 8
 END
@@ -25,8 +25,8 @@ IF ~~ THEN BEGIN 2 // from: 1.1
   SAY @8
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
   IF ~~ THEN REPLY @7 GOTO 8
 END
@@ -35,8 +35,8 @@ IF ~~ THEN BEGIN 3 // from: 1.2
   SAY @9
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 31
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
   IF ~~ THEN REPLY @7 GOTO 8
 END
@@ -47,8 +47,8 @@ IF ~~ THEN BEGIN 4 // from: 1.3
   IF ~~ THEN REPLY @12 GOTO 10
   IF ~~ THEN REPLY @13 GOTO 11
   IF ~~ THEN REPLY @14 GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -90,8 +90,8 @@ IF ~~ THEN BEGIN 10 // from: 4.2
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @13 GOTO 11
   IF ~~ THEN REPLY @14 GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -101,8 +101,8 @@ IF ~~ THEN BEGIN 11 // from: 4.3
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @12 GOTO 10
   IF ~~ THEN REPLY @14 GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -123,7 +123,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 6.1
   SAY @32
-  IF ~~ THEN DO~TakePartyItem("SphereE2")GiveGoldForce(10000)DestroyItem("SphereE2")ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@106163)EraseJournalEntry(@106164)~ SOLVED_JOURNAL @106193 EXIT
+  IF ~~ THEN DO~TakePartyItem("NWSPHER2")GiveGoldForce(10000)DestroyItem("NWSPHER2")ClearAllActions()StartCutSceneMode()StartCutScene("NWDRACO0")EraseJournalEntry(@106163)EraseJournalEntry(@106164)~ SOLVED_JOURNAL @106193 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 6.3
@@ -151,8 +151,8 @@ IF ~~ THEN BEGIN 18 // from: 11.1
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @12 GOTO 10
   IF ~~ THEN REPLY @14 GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -162,8 +162,8 @@ IF ~~ THEN BEGIN 19 // from: 12.1
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @12 GOTO 10
   IF ~~ THEN REPLY @13 GOTO 11
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -210,7 +210,7 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 17.2
   SAY @51
-  IF ~  OR(2)PartyHasItem("Dragegg1")PartyHasItem("Dragegg2")~ THEN REPLY @52 GOTO 27
+  IF ~  OR(2)PartyHasItem("NWDRAGE1")PartyHasItem("NWDRAGE2")~ THEN REPLY @52 GOTO 27
   IF ~~ THEN REPLY @53 GOTO 28
   IF ~~ THEN REPLY @54 GOTO 29
   IF ~~ THEN REPLY @55 GOTO 30
@@ -255,15 +255,15 @@ IF ~~ THEN BEGIN 31 // from:
   IF ~~ THEN REPLY @12 GOTO 10
   IF ~~ THEN REPLY @13 GOTO 11
   IF ~~ THEN REPLY @14 GOTO 12
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
 IF ~~ THEN BEGIN 32 // from: 27.1
   SAY @65
-  IF ~  PartyHasItem("Dragegg1")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg1")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@106163)~ SOLVED_JOURNAL @106164 EXIT
-  IF ~  PartyHasItem("Dragegg2")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("Dragegg2")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@106163)~ SOLVED_JOURNAL @106164 EXIT
+  IF ~  PartyHasItem("NWDRAGE1")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("NWDRAGE1")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@106163)~ SOLVED_JOURNAL @106164 EXIT
+  IF ~  PartyHasItem("NWDRAGE2")~ THEN DO ~SetGlobal("Draco4Job","GLOBAL",2)TakePartyItem("NWDRAGE2")GiveItem("NWKEY15",LastTalkedToBy)EraseJournalEntry(@106163)~ SOLVED_JOURNAL @106164 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 27.2
@@ -291,9 +291,9 @@ END
 IF ~~ THEN BEGIN 36 // from: 35.1
   SAY @72
   IF ~~ THEN REPLY @73 GOTO 38
-  IF ~  OR(2)PartyHasItem("Dragegg1")PartyHasItem("Dragegg2")~ THEN REPLY @52 GOTO 27
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  OR(2)PartyHasItem("NWDRAGE1")PartyHasItem("NWDRAGE2")~ THEN REPLY @52 GOTO 27
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @4 GOTO 31
   IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
   IF ~~ THEN REPLY @7 GOTO 8
@@ -304,8 +304,8 @@ IF ~~ THEN BEGIN 37 // from: 35.2
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 5
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 6
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 5
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 6
   IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 7
   IF ~~ THEN REPLY @7 GOTO 8
 END
@@ -322,9 +322,9 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~ Global("Draco4Job","GLOBAL",2)~ THEN BEGIN 39 // from:
   SAY @75
-  IF ~  OR(2)PartyHasItem("Dragegg2")PartyHasItem("Dragegg1")~ THEN REPLY @76 GOTO 40
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~  OR(2)PartyHasItem("NWDRAGE2")PartyHasItem("NWDRAGE1")~ THEN REPLY @76 GOTO 40
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 42
   IF ~~ THEN REPLY @4 GOTO 43
   IF ~  Global("Draco3Job","GLOBAL",1)~ THEN REPLY @6 GOTO 44
   IF ~~ THEN REPLY @7 GOTO 8
@@ -356,8 +356,8 @@ IF ~~ THEN BEGIN 43 // from: 39.4
   IF ~~ THEN REPLY @12 GOTO 53
   IF ~~ THEN REPLY @13 GOTO 54
   IF ~~ THEN REPLY @80 GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -371,8 +371,8 @@ END
 
 IF ~~ THEN BEGIN 45 // from: 40.1
   SAY @81
-  IF ~  PartyHasItem("Dragegg2")~ THEN DO ~TakePartyItem("Dragegg2")GiveGoldForce(8000)~ EXIT
-  IF ~  PartyHasItem("Dragegg1")~ THEN DO ~TakePartyItem("Dragegg1")GiveGoldForce(8000)~ EXIT
+  IF ~  PartyHasItem("NWDRAGE2")~ THEN DO ~TakePartyItem("NWDRAGE2")GiveGoldForce(8000)~ EXIT
+  IF ~  PartyHasItem("NWDRAGE1")~ THEN DO ~TakePartyItem("NWDRAGE1")GiveGoldForce(8000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 40.2
@@ -406,7 +406,7 @@ END
 
 IF ~~ THEN BEGIN 50 // from: 42.1
   SAY @32
-  IF ~~ THEN DO~TakePartyItem("SphereE2")DestroyItem("SphereE2")GiveGoldForce(10000)ClearAllActions()StartCutSceneMode()StartCutScene("Draco4")EraseJournalEntry(@106163)EraseJournalEntry(@106164)~ SOLVED_JOURNAL @106193 EXIT
+  IF ~~ THEN DO~TakePartyItem("NWSPHER2")DestroyItem("NWSPHER2")GiveGoldForce(10000)ClearAllActions()StartCutSceneMode()StartCutScene("NWDRACO0")EraseJournalEntry(@106163)EraseJournalEntry(@106164)~ SOLVED_JOURNAL @106193 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 42.2
@@ -431,8 +431,8 @@ IF ~~ THEN BEGIN 53 // from: 43.1
   SAY @27
   IF ~~ THEN REPLY @13 GOTO 54
   IF ~~ THEN REPLY @80 GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -441,8 +441,8 @@ IF ~~ THEN BEGIN 54 // from: 43.2
   IF ~~ THEN REPLY @29 GOTO 59
   IF ~~ THEN REPLY @12 GOTO 53
   IF ~~ THEN REPLY @80 GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -473,8 +473,8 @@ IF ~~ THEN BEGIN 59 // from: 54.1
   SAY @39
   IF ~~ THEN REPLY @12 GOTO 53
   IF ~~ THEN REPLY @80 GOTO 55
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 8
 END
 
@@ -483,8 +483,8 @@ IF ~~ THEN BEGIN 60 // from: 55.1
   IF ~~ THEN REPLY @41 GOTO 61
   IF ~~ THEN REPLY @12 GOTO 53
   IF ~~ THEN REPLY @13 GOTO 54
-  IF ~  PartyHasItem("SphereE1")~ THEN REPLY @5 GOTO 41
-  IF ~  PartyHasItem("SphereE2")~ THEN REPLY @5 GOTO 42
+  IF ~  PartyHasItem("NWSPHER1")~ THEN REPLY @5 GOTO 41
+  IF ~  PartyHasItem("NWSPHER2")~ THEN REPLY @5 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 8
 END
 

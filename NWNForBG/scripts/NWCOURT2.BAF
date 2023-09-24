@@ -1,0 +1,18 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		HideGUI()
+		Wait(3)
+		CreateVisualEffect("SPFIREPI",[2349.342])
+		PlaySound("EFF_M13")
+		Wait(2)
+		CreateCreature("NWBELIAL",[2349.342],0)  // ??????
+		Wait(2)
+		ActionOverride("NWBELIAL",FaceObject("NWGUARDN"))  // ?????????? ????
+		Wait(2)
+		UnhideGUI()
+		ActionOverride("NWBELIAL",StartDialogueNoSet("NWGUARDN"))  // ?????????? ????
+END
+

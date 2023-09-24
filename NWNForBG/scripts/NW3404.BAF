@@ -31,6 +31,6 @@ THEN
 	RESPONSE #100
 		OpenDoor("Door01")
 		Wait(1)
-		ActionOverride("Sucubus",MoveToPoint([3197.936]))
+		ActionOverride("NWSUCUB0",MoveToPoint([3197.936]))
 END
 

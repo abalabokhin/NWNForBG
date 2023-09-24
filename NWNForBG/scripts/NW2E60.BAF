@@ -10,7 +10,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("AbyssPortalClosed","MYAREA",2)
-		CreateVisualEffect("ICFIRSDI",[434.493])
+		CreateVisualEffect("NWICFIRI",[434.493])
 		AmbientActivate("Abyssf",FALSE)
 		Continue()
 END
@@ -20,7 +20,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("HellPortalClosed","MYAREA",2)
-		CreateVisualEffect("ICFIRSDI",[385.567])
+		CreateVisualEffect("NWICFIRI",[385.567])
 		AmbientActivate("Hellf",FALSE)
 		Continue()
 END

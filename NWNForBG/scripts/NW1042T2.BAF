@@ -1,0 +1,11 @@
+IF
+	Entered([PC])
+	Global("UNDEADTRAP2","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UNDEADTRAP2","MYAREA",1)
+		ForceSpellRES("NWSP01","Body3")  // No such index
+		ForceSpellRES("NWSP01","Body4")  // No such index
+		ForceSpellRES("NWSP01","Body5")  // No such index
+END
+

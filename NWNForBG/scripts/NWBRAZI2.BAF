@@ -1,0 +1,17 @@
+IF
+	NumCreatureLT("NWQUAST1",3)  // ??????
+	!GlobalTimerNotExpired("Quasittower","MYAREA")
+	Global("AbyssPortalClosed","MYAREA",0)
+	See([PC])
+THEN
+	RESPONSE #20
+		SetGlobalTimer("Quasittower","MYAREA",TWO_ROUNDS)
+		ReallyForceSpellPointRES("NWBRAZ2",[508.481])  // ?????? ? ??????
+	RESPONSE #30
+		SetGlobalTimer("Quasittower","MYAREA",TWO_ROUNDS)
+		ReallyForceSpellPointRES("NWBRAZ2",[463.437])  // ?????? ? ??????
+	RESPONSE #50
+		SetGlobalTimer("Quasittower","MYAREA",TWO_ROUNDS)
+		ReallyForceSpellPointRES("NWBRAZ2",[526.417])  // ?????? ? ??????
+END
+

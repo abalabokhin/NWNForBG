@@ -1,0 +1,11 @@
+IF
+	Range([PC],15)
+	Global("SceneMorag","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SceneMorag","MYAREA",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWMORAG3")
+END
+

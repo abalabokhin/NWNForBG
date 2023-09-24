@@ -1,0 +1,14 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("NWSHARWN")  // ??????
+		MoveToObject(Player1)
+		Wait(2)
+		FadeToColor([20.0],0)
+		Wait(2)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		StartDialogueNoSet(Player1)
+END
+

@@ -16,9 +16,9 @@ END
 
 IF
 	OR(3)
-		Dead("Agar")  // ????
-		Dead("Fashi")  // ????
-		Dead("Chrusk")  // ?????
+		Dead("NWAGAR")  // ????
+		Dead("NWFASHI")  // ????
+		Dead("NWCHRUSK")  // ?????
 	Global("NWArenaBreak","GLOBAL",0)
 THEN
 	RESPONSE #100
@@ -26,7 +26,7 @@ THEN
 END
 
 IF
-	Dead("Claudus")  // ??????
+	Dead("NWCLAUDS")  // ??????
 	!Global("NWArenaBreak","GLOBAL",2)
 THEN
 	RESPONSE #100

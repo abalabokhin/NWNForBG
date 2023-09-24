@@ -8,8 +8,8 @@ END
 IF ~  GlobalGT("KaohionQuest","GLOBAL",0)
 GlobalLT("KaohionQuest","GLOBAL",3)
 AreaCheck("NW1040")
-!See("KAOHINON")
-!Range("KAOHINON",20)
+!See("NWKAOHIN")
+!Range("NWKAOHIN",20)
 ~ THEN BEGIN 1 // from:
   SAY @1
   IF ~~ THEN EXIT
@@ -26,8 +26,8 @@ END
 IF ~  GlobalGT("KaohionQuest","GLOBAL",0)
 GlobalLT("KaohionQuest","GLOBAL",3)
 AreaCheck("NW1040")
-See("KAOHINON")
-Range("KAOHINON",20)
+See("NWKAOHIN")
+Range("NWKAOHIN",20)
 ~ THEN BEGIN 3 // from:
   SAY @3
   IF ~~ THEN REPLY @4 DO ~SetGlobal("KaohionQuest","GLOBAL",3)~ EXIT

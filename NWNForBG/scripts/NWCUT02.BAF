@@ -3,8 +3,8 @@ IF
 THEN
 	RESPONSE #100
 		CutSceneId(Player1)
-		MoveViewObject("Nascher",STANDARD)  // ???? ?????
-		DisplayStringHead("Nascher",@103350)  // ????????? ??????!
+		MoveViewObject("NWNASCHR",STANDARD)  // ???? ?????
+		DisplayStringHead("NWNASCHR",@103350)  // ????????? ??????!
 		Wait(3)
 		MoveToPoint([1551.656])
 		FaceObject("Container")
@@ -20,10 +20,10 @@ THEN
 		ActionOverride("NWPRST4",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
 		CreateVisualEffectObject("SPBASERD","NWPRST4")  // ???? ????
 		Wait(4)
-		ActionOverride("NWPRST1",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST2",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST3",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST4",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST1",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST2",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST3",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST4",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
 		Wait(4)
 		CreateVisualEffect("SPHEALIN",[1566.478])
 		Wait(1)
@@ -35,10 +35,10 @@ THEN
 		ActionOverride("NWPRST4",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
 		PlaySound("CAS_PP7M")
 		Wait(4)
-		ActionOverride("NWPRST1",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST2",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST3",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST4",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST1",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST2",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST3",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST4",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
 		Wait(4)
 		CreateVisualEffect("SPHOLY",[1567.490])
 		Wait(1)
@@ -54,32 +54,32 @@ THEN
 		ActionOverride("NWPRST4",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
 		CreateVisualEffectObject("SPBASERD","NWPRST4")  // ???? ????
 		Wait(4)
-		ActionOverride("NWPRST1",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST2",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST3",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
-		ActionOverride("NWPRST4",ForceSpellPointRES("SPNW616",[1564.494]))  // No such index
+		ActionOverride("NWPRST1",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST2",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST3",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
+		ActionOverride("NWPRST4",ForceSpellPointRES("NWSP616",[1564.494]))  // No such index
 		Wait(4)
 		CreateVisualEffect("SPHEALIN",[1567.480])
 		Wait(1)
 		CreateVisualEffect("SPFINODI",[1565.508])
 		Wait(4)
-		ActionOverride("Oleff",MoveToPoint([1466.483]))
+		ActionOverride("NWOLEFF",MoveToPoint([1466.483]))
 		Wait(1)
-		ActionOverride("Oleff",FaceObject("Container"))
-		DisplayStringHead("Oleff",@103351)  // ??? ?????????? ?????????, ?????? ???????. ?????? ? ??? ???? ?????????!
+		ActionOverride("NWOLEFF",FaceObject("Container"))
+		DisplayStringHead("NWOLEFF",@103351)  // ??? ?????????? ?????????, ?????? ???????. ?????? ? ??? ???? ?????????!
 		Wait(4)
-		ActionOverride("Desther",MoveToPoint([1597.489]))
-		DisplayStringHead("Desther",@103352)  // ???????, ????????? ?????????? ??? ???????? ??????? ?????????.
-		ActionOverride("Desther",FaceObject("Container"))
+		ActionOverride("NWDESTHR",MoveToPoint([1597.489]))
+		DisplayStringHead("NWDESTHR",@103352)  // ???????, ????????? ?????????? ??? ???????? ??????? ?????????.
+		ActionOverride("NWDESTHR",FaceObject("Container"))
 		Wait(2)
-		ActionOverride("Desther",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
+		ActionOverride("NWDESTHR",ForceSpell(Myself,DO_NOTHING))  // SPIN905.SPL (No such index)
 		Wait(4)
-		ActionOverride("Desther",ReallyForceSpellPointRES("SPNW616A",[1856.301]))  // No such index
+		ActionOverride("NWDESTHR",ReallyForceSpellPointRES("NWSP616A",[1856.301]))  // No such index
 		Wait(1)
 		AmbientActivate("Portal",TRUE)
 		TriggerActivation("To1033",TRUE)
 		SoundActivate("AMPortal",TRUE)
-		DisplayStringHead("Desther",@103353)  // ??????, ? ??? ?? ????? ?????????!
+		DisplayStringHead("NWDESTHR",@103353)  // ??????, ? ??? ?? ????? ?????????!
 		Wait(3)
 		CreateCreature("Nwfhelm1",[1803.357],14)  // ??????????
 		ActionOverride("Nwfhelm1",AttackReevaluate("Nwprst1",30))  // ???? ????
@@ -95,20 +95,20 @@ THEN
 		Wait(1)
 		ActionOverride("Nwfhelm4",AttackReevaluate("Nwprst4",30))  // ???? ????
 		Wait(1)
-		ActionOverride("Desther",MoveToPoint([1821.346]))
+		ActionOverride("NWDESTHR",MoveToPoint([1821.346]))
 		Wait(1)
-		DisplayStringHead("Desther",@103354)  // ??????, ?????? ????? ????!
+		DisplayStringHead("NWDESTHR",@103354)  // ??????, ?????? ????? ????!
 		Wait(2)
-		ActionOverride("Desther",DestroySelf())
+		ActionOverride("NWDESTHR",DestroySelf())
 		Wait(1)
-		MoveViewObject("Fenthick",INSTANT)  // ??????
-		DisplayStringHead("Fenthick",@103355)  // ??????, ??????! ?? ?????
+		MoveViewObject("NWFENTHK",INSTANT)  // ??????
+		DisplayStringHead("NWFENTHK",@103355)  // ??????, ??????! ?? ?????
 		Wait(2)
-		DisplayStringHead("Fenthick",@103356)  // ? ?????? ???, ??? ?????-?? ??????.
+		DisplayStringHead("NWFENTHK",@103356)  // ? ?????? ???, ??? ?????-?? ??????.
 		Wait(1)
-		ActionOverride("Fenthick",MoveToPoint([1803.357]))
+		ActionOverride("NWFENTHK",MoveToPoint([1803.357]))
 		Wait(1)
-		ActionOverride("Fenthick",DestroySelf())
+		ActionOverride("NWFENTHK",DestroySelf())
 		SetGlobal("DestherIsTraitor","GLOBAL",1)
 		Wait(1)
 		EndCutSceneMode()

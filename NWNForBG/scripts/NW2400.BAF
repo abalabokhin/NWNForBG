@@ -3,13 +3,13 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("StirgeDestroy","MYAREA",2)
-		ActionOverride("Stirge",EscapeAreaObject("Reveal"))
+		ActionOverride("NWSTIRGE",EscapeAreaObject("Reveal"))
 END
 
 IF
 	Global("CultHostile","MYAREA",1)
 	Global("CultHostileReset","MYAREA",0)
-	Dead("Solomon")  // ???????
+	Dead("NWSOLOMN")  // ???????
 THEN
 	RESPONSE #100
 		SetGlobal("CultHostile","MYAREA",0)
@@ -24,22 +24,22 @@ THEN
 		SetGlobal("StirgeSpawn","NW2400",1)  // ?????
 		SoundActivate("FirePit",TRUE)
 		AmbientActivate("FPIT1M",TRUE)
-		CreateCreature("Stirge",[3682.3679],3)  // ?????
+		CreateCreature("NWSTIRGE",[3682.3679],3)  // ?????
 END
 
 IF
 	Global("Cult1Spawn","NW2400",0)  // ?????
 	Global("SolomonRing","GLOBAL",3)
-	!Dead("Solomon")  // ???????
+	!Dead("NWSOLOMN")  // ???????
 THEN
 	RESPONSE #100
 		SetGlobal("Cult1Spawn","NW2400",1)  // ?????
-		CreateCreature("Solomon",[4500.2287],3)  // ???????
+		CreateCreature("NWSOLOMN",[4500.2287],3)  // ???????
 		CreateCreature("NWCULT03",[4494.2206],2)  // ???? ??????
 		CreateCreature("NWCULT04",[4675.2271],3)  // ??????? ??????
 		CreateCreature("NWCULT02",[4652.2189],4)  // ??? ??????
 		CreateCreature("NWCULT01",[4622.2126],2)  // ????????? ??????
-		ActionOverride("Solomon",DestroyItem("Solring"))  // ?????? ????????
+		ActionOverride("NWSOLOMN",DestroyItem("NWSOLRIG"))  // ?????? ????????
 END
 
 IF
@@ -47,7 +47,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SearchNeva","GLOBAL",2)
-		CreateCreature("NEVA",[4646.2931],6)  // ????
+		CreateCreature("NWNEVA",[4646.2931],6)  // ????
 		CreateCreature("NWCULT03",[4691.2740],4)  // ???? ??????
 		CreateCreature("NWCULT04",[4500.2912],3)  // ??????? ??????
 		CreateCreature("NWCULT06",[4669.2961],7)  // ??? ??????
@@ -56,7 +56,7 @@ END
 
 IF
 	Global("NevaJournal","MYAREA",0)
-	Dead("Neva")  // ????
+	Dead("NWNEVA")  // ????
 THEN
 	RESPONSE #100
 		SetGlobal("NevaJournal","MYAREA",1)
@@ -75,7 +75,7 @@ END
 IF
 	OnCreation()
 	Global("StirgeSpawn","NW2400",1)  // ?????
-	Dead("Stirge")  // ?????
+	Dead("NWSTIRGE")  // ?????
 THEN
 	RESPONSE #100
 		SetGlobal("StirgeSpawn","NW2400",2)  // ?????

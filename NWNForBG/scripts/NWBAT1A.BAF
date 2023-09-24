@@ -9,7 +9,7 @@ THEN
 		Face(0)
 		Wait(2)
 		MoveViewPoint([1831.771],INSTANT)
-		PlaySound("Disappro")
+		PlaySound("NWDISAPO")
 		ActionOverride(Player2,MakeUnselectable(1))
 		ActionOverride(Player3,MakeUnselectable(1))
 		ActionOverride(Player4,MakeUnselectable(1))
@@ -20,9 +20,9 @@ THEN
 		ActionOverride(Player4,ReallyForceSpell(Myself,NOHOLD_PARTY))  // SPIN862.SPL (No such index)
 		ActionOverride(Player5,ReallyForceSpell(Myself,NOHOLD_PARTY))  // SPIN862.SPL (No such index)
 		ActionOverride(Player6,ReallyForceSpell(Myself,NOHOLD_PARTY))  // SPIN862.SPL (No such index)
-		ActionOverride("Chrusk2",DestroySelf())
-		ActionOverride("Agar2",DestroySelf())
-		ActionOverride("Fashi2",DestroySelf())
+		ActionOverride("NWCHRUS2",DestroySelf())
+		ActionOverride("NWAGAR2",DestroySelf())
+		ActionOverride("NWFASHI2",DestroySelf())
 		Wait(1)
 		MultiPlayerSync()
 		FadeFromColor([20.0],0)
@@ -34,7 +34,7 @@ THEN
 		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		SetGlobalTimer("NextRaundNW","GLOBAL",EIGHT_HOURS)
 		Wait(5)
-		ActionOverride("Kellisai",StartDialogueNoSet(Player1))
+		ActionOverride("NWKELLII",StartDialogueNoSet(Player1))
 		EndCutSceneMode()
 END
 

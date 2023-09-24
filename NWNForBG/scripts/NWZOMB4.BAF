@@ -1,0 +1,7 @@
+IF
+	Dead("NWGULNAN")  // ??????
+THEN
+	RESPONSE #100
+		Kill(Myself)
+END
+

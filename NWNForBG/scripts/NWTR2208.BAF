@@ -1,0 +1,11 @@
+IF
+	Entered([ANYONE])
+	Global("YuantiEnemy","MYAREA",0)
+	Global("YuantiRiddle","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("YuantiEnemy","MYAREA",1)
+		ActionOverride("NWYUANTI",Enemy())
+		ForceSpell(LastTrigger,WIZARD_POWER_WORD_STUN)  // SPWI715.SPL (????? ????: ???????????)
+END
+

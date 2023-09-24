@@ -9,7 +9,7 @@ THEN
 		Face(0)
 		Wait(1)
 		MoveViewPoint([1831.771],INSTANT)
-		PlaySound("Disappro")
+		PlaySound("NWDISAPO")
 		ActionOverride(Player2,MakeUnselectable(1))
 		ActionOverride(Player3,MakeUnselectable(1))
 		ActionOverride(Player4,MakeUnselectable(1))
@@ -21,13 +21,13 @@ THEN
 		ActionOverride(Player5,ReallyForceSpell(Myself,NOHOLD_PARTY))  // SPIN862.SPL (No such index)
 		ActionOverride(Player6,ReallyForceSpell(Myself,NOHOLD_PARTY))  // SPIN862.SPL (No such index)
 		Wait(1)
-		ChangeEnemyAlly("Claudus",NEUTRAL)  // ??????
-		ActionOverride("Claudus",JumpToPoint([1579.960]))
+		ChangeEnemyAlly("NWCLAUDS",NEUTRAL)  // ??????
+		ActionOverride("NWCLAUDS",JumpToPoint([1579.960]))
 		Wait(1)
-		ApplySpell("Claudus",CLERIC_HEAL)  // ??????
-		ActionOverride("Claudus",Face(4))
+		ApplySpell("NWCLAUDS",CLERIC_HEAL)  // ??????
+		ActionOverride("NWCLAUDS",Face(4))
 		Wait(1)
-		ActionOverride("Claudus",DestroyItem("Imoenhp1"))  // ???? ?????
+		ActionOverride("NWCLAUDS",DestroyItem("Imoenhp1"))  // ???? ?????
 		MultiPlayerSync()
 		FadeFromColor([20.0],0)
 		SetGlobal("Pause1","MYAREA",0)
@@ -38,7 +38,7 @@ THEN
 		DisplayStringHead(Player1,@102615)  // ?? ?????????!
 		SetGlobalTimer("NextRaundNW","GLOBAL",EIGHT_HOURS)
 		Wait(4)
-		ActionOverride("Kellisai",StartDialogueNoSet(Player1))
+		ActionOverride("NWKELLII",StartDialogueNoSet(Player1))
 		EndCutSceneMode()
 END
 

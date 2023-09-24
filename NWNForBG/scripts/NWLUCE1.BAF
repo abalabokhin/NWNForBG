@@ -1,0 +1,35 @@
+IF
+	Name("NWLUCE",Myself)  // ???
+	Global("LuceTired","MYAREA",2)
+	GlobalTimerExpired("LuceTimer","MYAREA")
+THEN
+	RESPONSE #100
+		SetGlobal("LuceTired","MYAREA",0)
+END
+
+IF
+	Name("NWTAMORA",Myself)  // ??????
+	Global("TamoraTired","MYAREA",2)
+	GlobalTimerExpired("TamoraTimer","MYAREA")
+THEN
+	RESPONSE #100
+		SetGlobal("TamoraTired","MYAREA",0)
+END
+
+IF
+	Name("NWTANIT",Myself)  // ?????
+	Global("TanitTired","MYAREA",2)
+	GlobalTimerExpired("TanitTimer","MYAREA")
+THEN
+	RESPONSE #100
+		SetGlobal("TanitTired","MYAREA",0)
+END
+
+IF
+	Global("GotAngry","LOCALS",1)
+	GlobalTimerExpired("Angry","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("GotAngry","LOCALS",0)
+END
+

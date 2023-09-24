@@ -1,0 +1,288 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,RED_HOLY_MIGHT)  // SPWI985.SPL (No such index)
+		ReallyForceSpellDead(Myself,WIZARD_STINKING_CLOUD)  // SPWI213.SPL (????????? ??????)
+END
+
+IF
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	OR(2)
+		Global("MACRested","LOCALS",0)
+		GlobalTimerExpired("MACTimeUntilRest","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("MACRested","LOCALS",1)
+		SetGlobal("MACPrep","LOCALS",0)
+		SetGlobal("MACDisable","LOCALS",0)
+		SetGlobal("MACDispelMagic","LOCALS",0)
+		SetGlobal("MACContingency","LOCALS",0)
+		SetGlobalTimer("MACTimeUntilRest","LOCALS",EIGHT_HOURS)
+		Rest()
+		ApplySpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("MACPrep","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MACPrep","LOCALS",1)
+		DisplayString(Myself,#39968)  // ?????????? ??????????: ????????? ? ????????
+		ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI602.SPL (????? ????????????)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (?????? ?? ??????????? ??????)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (?????? ?? ??????? ????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HPLT(Myself,35)
+	Global("MACContingency","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MACContingency","LOCALS",1)
+		DisplayString(Myself,@103015)  // ??????????? ???????????? - ?????? ???????
+		CreateCreature("NWMACVWF",[-1.-1],2)  // ????????????? ????
+		CreateCreature("NWMACVWF",[-1.-1],2)  // ????????????? ????
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	StateCheck(Myself,STATE_SILENCED)
+	HaveSpell(WIZARD_VOCALIZE)  // SPWI219.SPL (???????????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_VOCALIZE)  // SPWI219.SPL (???????????)
+END
+
+IF
+	Detect([PC])
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!See(LastSeenBy(Myself))
+	HaveSpell(WIZARD_TRUE_SIGHT)  // SPWI609.SPL (???????? ???????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (???????? ???????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	CheckStatLT(Myself,1,STONESKINS)
+	HaveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (???????? ????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("MACDisable","LOCALS",0)
+	Global("MACDispelMagic","LOCALS",0)
+	HaveSpell(WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+THEN
+	RESPONSE #100
+		SetGlobal("MACDispelMagic","LOCALS",1)
+		Spell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!HasImmunityEffects(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+	HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+THEN
+	RESPONSE #50
+		SetGlobal("MACDisable","LOCALS",1)
+		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+	RESPONSE #50
+		SetGlobal("MACDisable","LOCALS",1)
+		Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	!HasImmunityEffects(SecondNearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+	HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+THEN
+	RESPONSE #50
+		SetGlobal("MACDisable","LOCALS",1)
+		Spell(SecondNearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+	RESPONSE #50
+		SetGlobal("MACDisable","LOCALS",1)
+		Spell(SecondNearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	!HasImmunityEffects(ThirdNearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+	HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+THEN
+	RESPONSE #50
+		SetGlobal("MACDisable","LOCALS",1)
+		Spell(ThirdNearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+	RESPONSE #50
+		SetGlobal("MACDisable","LOCALS",1)
+		Spell(ThirdNearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Range(NearestEnemyOf(Myself),12)
+	HaveSpell(WIZARD_SUN_FIRE)  // SPWI523.SPL (????? ??????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SUN_FIRE)  // SPWI523.SPL (????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	HaveSpell(WIZARD_SHADOW_DOOR)  // SPWI505.SPL (??????? ?????)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SHADOW_DOOR)  // SPWI505.SPL (??????? ?????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_FIRE_SHIELD_BLUE)  // SPWI403.SPL (????? ???????? ???)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_FIRE_SHIELD_BLUE)  // SPWI403.SPL (????? ???????? ???)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (?????? ??????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (?????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_FIREBALL)  // SPWI304.SPL (???????? ???)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (???????? ???)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("MACDisable","LOCALS",0)
+	Global("MACDispelMagic","LOCALS",1)
+	HaveSpell(WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+THEN
+	RESPONSE #100
+		SetGlobal("MACDispelMagic","LOCALS",2)
+		Spell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (??????????? ?????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	!HasImmunityEffects(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	!HasImmunityEffects(SecondNearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+THEN
+	RESPONSE #100
+		Spell(SecondNearestEnemyOf(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_PANIC)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	!HasImmunityEffects(ThirdNearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+THEN
+	RESPONSE #100
+		Spell(ThirdNearestEnemyOf(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (??????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_INVISIBLE_STALKER)  // SPWI601.SPL (????????? ???????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_INVISIBLE_STALKER)  // SPWI601.SPL (????????? ???????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)  // SPWI303.SPL (????????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (????????? ?????? ??????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (????????? ?????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (?????????? ??????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (????????? ?????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (??????: ?????)
+END
+

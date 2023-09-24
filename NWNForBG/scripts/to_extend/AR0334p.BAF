@@ -5,7 +5,7 @@ THEN
     RESPONSE #100
         SetGlobal("NW#Items","ar0334",0)
         SetGlobal("ForgeStuff","GLOBAL",0)
-        TakePartyItem("scalebl")  // Чешуя синего дракона
-        GiveItemCreate("platnwn3",Player1,0,0,0)  // Доспехи синего дракона
+        TakePartyItem("NWSCALEL")  // Чешуя синего дракона
+        GiveItemCreate("NWPLATN3",Player1,0,0,0)  // Доспехи синего дракона
         ActionOverride("wsmith01",StartDialogueNoSet([PC]))
 END

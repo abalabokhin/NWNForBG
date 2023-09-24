@@ -1,0 +1,40 @@
+IF
+	OR(2)
+		GlobalGT("SpiritSaved","GLOBAL",0)
+		Dead("NWSPIRIO")  // ??? ????
+	Global("MyChange","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MyChange","LOCALS",1)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		ChangeAIScript("PREY",OVERRIDE)
+		ChangeAIScript("WDRUNSGT",DEFAULT)
+END
+
+IF
+	HitBy([ANYONE],FIRE)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		RunAwayFrom(LastAttackerOf(Myself),60)
+		SetInterrupt(TRUE)
+END
+
+IF
+	See([ANYONE])
+	Range(LastSeenBy(Myself),15)
+THEN
+	RESPONSE #67
+		AttackReevaluate(LastSeenBy(Myself),40)
+	RESPONSE #33
+		RandomWalk()
+		Continue()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		RandomWalk()
+END
+

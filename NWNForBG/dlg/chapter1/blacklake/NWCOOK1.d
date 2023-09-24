@@ -30,7 +30,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 2.1 2.2 2.3
   SAY @6
-  IF ~~ THEN DO ~SetGlobal("Hostile","MYAREA",1)CreateCreatureObject("Patrol07",Myself,0,0,0)CreateCreatureObject("Patrol07",Myself,0,0,0)CreateCreatureObject("Patrol06",Myself,0,0,0)CreateCreatureObject("Patrol06",Myself,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Hostile","MYAREA",1)CreateCreatureObject("NWPATR07",Myself,0,0,0)CreateCreatureObject("NWPATR07",Myself,0,0,0)CreateCreatureObject("NWPATR06",Myself,0,0,0)CreateCreatureObject("NWPATR06",Myself,0,0,0)~ EXIT
 END
 
 // ---------------------------------------------------

@@ -1,8 +1,8 @@
 IF
 	Global("LuscanVizited","GLOBAL",1)
-	InMyArea("Aribeth")  // ??????
+	InMyArea("NWARIBEH")  // ??????
 THEN
 	RESPONSE #100
-		ActionOverride("Aribeth",DestroySelf())
+		ActionOverride("NWARIBEH",DestroySelf())
 END
 

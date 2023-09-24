@@ -1,9 +1,0 @@
-IF
-	Global("Door2Opened","MYAREA",1)
-	AttackedBy([GOODCUTOFF],DEFAULT)
-	!Allegiance(Myself,ENEMY)
-THEN
-	RESPONSE #100
-		ApplySpellRES("STONGNW",Myself)  // No such index
-END
-

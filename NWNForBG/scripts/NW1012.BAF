@@ -22,13 +22,13 @@ IF
 	Global("TrankarExist","MYAREA",0)
 THEN
 	RESPONSE #100
-		ActionOverride("Graxx",DestroySelf())
+		ActionOverride("NWGRAXX",DestroySelf())
 		SetGlobal("TrankarExist","MYAREA",1)
-		ActionOverride("Mercenar",DestroySelf())
+		ActionOverride("NWMERCER",DestroySelf())
 		Wait(1)
-		CreateCreature("TRANKAR",[694.286],1)  // ???????
+		CreateCreature("NWTRANKR",[694.286],1)  // ???????
 		Wait(1)
-		CreateCreature("Soldier7",[311.485],12)  // ???????
+		CreateCreature("NWSOLDI7",[311.485],12)  // ???????
 END
 
 IF
@@ -37,8 +37,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina12",[603.220],0)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA12",[603.220],0)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -49,8 +49,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina14",[603.220],0)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA14",[603.220],0)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -61,8 +61,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina16",[603.220],0)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA16",[603.220],0)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -72,8 +72,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
-		CreateCreature("Lina18",[603.220],0)  // ????
-		ActionOverride("Lina",MakeGlobal())
+		CreateCreature("NWLINA18",[603.220],0)  // ????
+		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
@@ -83,8 +83,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan12",[806.360],4)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL12",[806.360],4)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -95,8 +95,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan14",[806.360],4)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL14",[806.360],4)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -107,8 +107,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan16",[806.360],4)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL16",[806.360],4)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -118,8 +118,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
-		CreateCreature("Daelan18",[806.360],4)  // ??????
-		ActionOverride("Daelan",MakeGlobal())
+		CreateCreature("NWDAEL18",[806.360],4)  // ??????
+		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
@@ -129,8 +129,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin12",[483.332],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD12",[483.332],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -141,8 +141,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin14",[483.332],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD14",[483.332],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -153,8 +153,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin15",[483.332],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD15",[483.332],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -164,8 +164,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
-		CreateCreature("Boddin16",[483.332],12)  // ????????
-		ActionOverride("Boddinok",MakeGlobal())
+		CreateCreature("NWBODD16",[483.332],12)  // ????????
+		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
@@ -175,8 +175,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN12",[1019.532],0)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM12",[1019.532],0)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -187,8 +187,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN14",[1019.532],0)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM14",[1019.532],0)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -199,8 +199,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN16",[1019.532],0)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM16",[1019.532],0)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -210,8 +210,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
-		CreateCreature("GRIMGN18",[1019.532],0)  // ????????
-		ActionOverride("Grimgnaw",MakeGlobal())
+		CreateCreature("NWGRIM18",[1019.532],0)  // ????????
+		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
@@ -221,8 +221,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy12",[1141.652],4)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR12",[1141.652],4)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -233,8 +233,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy14",[1141.652],4)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR14",[1141.652],4)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -245,8 +245,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy16",[1141.652],4)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR16",[1141.652],4)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -256,8 +256,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
-		CreateCreature("Sharwy18",[1141.652],4)  // ??????
-		ActionOverride("Sharwyn",MakeGlobal())
+		CreateCreature("NWSHAR18",[1141.652],4)  // ??????
+		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
@@ -267,8 +267,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi12",[1086.582],2)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI12",[1086.582],2)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -279,8 +279,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi14",[1086.582],2)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI14",[1086.582],2)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -291,8 +291,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi16",[1086.582],2)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI16",[1086.582],2)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
@@ -302,8 +302,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
-		CreateCreature("Tomi18",[1086.582],2)  // ???? ?????????
-		ActionOverride("Tomi",MakeGlobal())
+		CreateCreature("NWTOMI18",[1086.582],2)  // ???? ?????????
+		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 

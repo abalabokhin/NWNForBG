@@ -9,11 +9,11 @@ THEN
 		MoveViewPoint([2317.663],INSTANT)
 		Face(4)
 		Wait(1)
-		ActionOverride("Claudus",JumpToPoint([2240.667]))
-		ActionOverride("Claudus",Face(12))
-		CreateCreature("Kellisa2",[2360.586],1)  // ????????
+		ActionOverride("NWCLAUDS",JumpToPoint([2240.667]))
+		ActionOverride("NWCLAUDS",Face(12))
+		CreateCreature("NWKELLI2",[2360.586],1)  // ????????
 		Wait(1)
-		ActionOverride("Claudus",ReallyForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY))  // SPWI907.SPL (?????????? ?????????)
+		ActionOverride("NWCLAUDS",ReallyForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY))  // SPWI907.SPL (?????????? ?????????)
 		ActionOverride(Player2,MakeUnselectable(150000))
 		ActionOverride(Player3,MakeUnselectable(150000))
 		ActionOverride(Player4,MakeUnselectable(150000))
@@ -25,15 +25,15 @@ THEN
 		ActionOverride(Player5,ReallyForceSpell(Myself,HOLD_PARTY))  // SPIN863.SPL (No such index)
 		ActionOverride(Player6,ReallyForceSpell(Myself,HOLD_PARTY))  // SPIN863.SPL (No such index)
 		Wait(1)
-		GiveItemCreate("IMOENHP1","Claudus",1,0,0)  // ???? ?????
-		ActionOverride("Claudus",FillSlot(SLOT_BELT))
+		GiveItemCreate("IMOENHP1","NWCLAUDS",1,0,0)  // ???? ?????
+		ActionOverride("NWCLAUDS",FillSlot(SLOT_BELT))
 		FadeFromColor([20.0],0)
-		ActionOverride("Claudus",Enemy())
+		ActionOverride("NWCLAUDS",Enemy())
 		Wait(2)
-		ActionOverride("Kellisa2",ForceSpellRES("SP618NW",Player1))  // ??????? ???????????
+		ActionOverride("NWKELLI2",ForceSpellRES("NWSP618",Player1))  // ??????? ???????????
 		DisplayString(Player1,@103233)  // ??? ??????????
 		Wait(2)
-		ActionOverride("Kellisa2",EscapeAreaObject("ExitKell"))
+		ActionOverride("NWKELLI2",EscapeAreaObject("ExitKell"))
 		Wait(3)
 		EndCutSceneMode()
 END

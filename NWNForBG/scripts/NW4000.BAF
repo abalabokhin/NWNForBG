@@ -3,7 +3,7 @@ IF
 	OpenState("Door01",TRUE)
 THEN
 	RESPONSE #100
-		PlaySound("IronG")
+		PlaySound("NWIRONG")
 		CloseDoor("Door01")
 END
 
@@ -12,7 +12,7 @@ IF
 	OpenState("Door01",FALSE)
 THEN
 	RESPONSE #100
-		PlaySound("IronG")
+		PlaySound("NWIRONG")
 		OpenDoor("Door01")
 END
 
@@ -29,10 +29,10 @@ END
 
 IF
 	Dead("Catap2")  // ??????????
-	OpenState("Catapul2",TRUE)
+	OpenState("NWCATAP0",TRUE)
 THEN
 	RESPONSE #100
-		CloseDoor("Catapul2")
+		CloseDoor("NWCATAP0")
 END
 
 IF

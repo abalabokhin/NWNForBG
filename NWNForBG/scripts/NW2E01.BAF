@@ -3,6 +3,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("Spawn","MYAREA",1)
-		MoveGlobal("NW2E01","Aarin",[492.540])  // ????? ????
+		MoveGlobal("NW2E01","NWAARIN",[492.540])  // ????? ????
 END
 

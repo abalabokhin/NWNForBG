@@ -2,11 +2,11 @@ IF
 	OR(2)
 		GlobalGT("DestherIsTraitor","GLOBAL",0)
 		GlobalGT("NWNChapter","GLOBAL",1)
-	Exists("Oleff")  // ?????
+	Exists("NWOLEFF")  // ?????
 	Global("DestroyOleff","MYAREA",0)
 THEN
 	RESPONSE #100
-		ActionOverride("Oleff",DestroySelf())
+		ActionOverride("NWOLEFF",DestroySelf())
 		SetGlobal("DestroyOleff","MYAREA",1)
 END
 
@@ -22,11 +22,11 @@ END
 
 IF
 	GlobalGT("NWNChapter","GLOBAL",1)
-	Exists("Oleff")  // ?????
+	Exists("NWOLEFF")  // ?????
 	Global("DestroyOleff","MYAREA",0)
 THEN
 	RESPONSE #100
-		ActionOverride("Oleff",DestroySelf())
+		ActionOverride("NWOLEFF",DestroySelf())
 		SetGlobal("DestroyOleff","MYAREA",1)
 END
 

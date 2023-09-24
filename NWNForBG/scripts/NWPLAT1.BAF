@@ -1,9 +1,9 @@
 IF
 	Global("ArmorQuest","GLOBAL",2)
-	Global("Paralyze","LOCALS",0)
+	Global("NWPARALE","LOCALS",0)
 THEN
 	RESPONSE #100
 		ChangeAIScript("NWPLAT2",OVERRIDE)
-		SetGlobal("Paralyze","LOCALS",1)
+		SetGlobal("NWPARALE","LOCALS",1)
 END
 

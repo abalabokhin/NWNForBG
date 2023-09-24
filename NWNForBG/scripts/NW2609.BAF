@@ -1,23 +1,23 @@
 IF
-	IsActive("Brazier1")  // ???????
+	IsActive("NWBRAZI1")  // ???????
 	!HasItem("NWMISC06","Brazier0")  // ????? ????????? ????
 	Global("ActivateBrazier1","MYAREA",0)
 THEN
 	RESPONSE #100
 		SetGlobal("ActivateBrazier1","MYAREA",1)
-		Deactivate("Brazier1")  // ???????
+		Deactivate("NWBRAZI1")  // ???????
 END
 
 IF
 	HasItem("NWMISC06","Brazier0")  // ????? ????????? ????
-	Exists("Brazier1")  // ???????
+	Exists("NWBRAZI1")  // ???????
 	Global("ActivateBrazier1","MYAREA",1)
 	Global("KarlatBook","MYAREA",1)
 THEN
 	RESPONSE #100
 		SetGlobal("ActivateBrazier1","MYAREA",2)
 		ContainerEnable("Brazier0",FALSE)
-		Activate("Brazier1")  // ???????
+		Activate("NWBRAZI1")  // ???????
 END
 
 IF
@@ -26,7 +26,7 @@ THEN
 	RESPONSE #100
 		CreateVisualEffect("SPROTECT",[2136.1362])
 		Wait(1)
-		CreateCreature("BELIAL",[2136.1362],11)  // ??????
+		CreateCreature("NWBELIAL",[2136.1362],11)  // ??????
 		ActionOverride("Brazier0",DestroyItem("NWMISC06"))  // ????? ????????? ????
 		SetGlobal("BelialTalk","MYAREA",2)
 		ContainerEnable("Brazier0",TRUE)
@@ -34,11 +34,11 @@ END
 
 IF
 	Global("UsedBook","NW2609",1)
-	Exists("BOOK2609")  // No such index
+	Exists("NWBO2609")  // No such index
 THEN
 	RESPONSE #100
 		SetGlobal("UsedBook","NW2609",0)
-		ActionOverride("BOOK2609",StartDialogueNoSet(Nearest([PC])))
+		ActionOverride("NWBO2609",StartDialogueNoSet(Nearest([PC])))
 END
 
 IF

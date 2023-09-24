@@ -1,6 +1,6 @@
 // Лускан Магазин Торговец не сводит глаз со своих товаров, эту паранойю здесь, в Лускане, порождают инстинкты самосохранения.  9432
 
-//   IF ~~ THEN REPLY ~Пойдет.~ DO ~StartStore("Innkeep1",LastTalkedToBy(Myself))~ EXIT
+//   IF ~~ THEN REPLY ~Пойдет.~ DO ~StartStore("NWINNKE1",LastTalkedToBy(Myself))~ EXIT
 
 BEGIN ~NWMERC01~
 

@@ -3,6 +3,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("ShaldrissMove","GLOBAL",2)
-		CreateCreature("Shaldri2",[335.419],10)  // ?????????
+		CreateCreature("NWSHALD2",[335.419],10)  // ?????????
 END
 

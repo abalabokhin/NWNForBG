@@ -1,0 +1,1138 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("NWPICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,@88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("NWFEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		Shout(DEAD_MEAT)
+END
+
+IF
+	Global("BPCHARM","LOCALS",1)
+	!StateCheck(Myself,STATE_CHARMED)
+THEN
+	RESPONSE #100
+		SetGlobal("BPCHARM","LOCALS",0)
+		ClearActions(Myself)
+		Continue()
+END
+
+IF
+	OR(2)
+		Heard([NEUTRAL],HELP79)
+		Heard([EVILCUTOFF],HELP79)
+	Allegiance(Myself,NEUTRAL)
+	!Global("BP_PlotMan","LOCALS",1)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	GlobalTimerNotExpired("BPCHASE","LOCALS")
+	Global("BPCHASER","LOCALS",1)
+	OR(2)
+		See([GOODCUTOFF])
+		See(LastHitter(Myself))
+THEN
+	RESPONSE #30
+		SetGlobal("BPCHASER","LOCALS",0)
+		AttackReevaluate(LastSeenBy(Myself),15)
+	RESPONSE #15
+		SetGlobal("BPCHASER","LOCALS",0)
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),WIZARD_SYMBOL_FEAR)  // SPWI811.SPL (??????: ?????)
+		RemoveSpell(WIZARD_SYMBOL_FEAR)  // SPWI811.SPL (??????: ?????)
+	RESPONSE #15
+		SetGlobal("BPCHASER","LOCALS",0)
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+		RemoveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+	RESPONSE #15
+		SetGlobal("BPCHASER","LOCALS",0)
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+		RemoveSpell(CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+	RESPONSE #10
+		SetGlobal("BPCHASER","LOCALS",0)
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (???????? ????????)
+		RemoveSpell(CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (???????? ????????)
+		ForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+		RemoveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+END
+
+IF
+	GlobalTimerExpired("BPCHASE","LOCALS")
+	Global("BPCHASER","LOCALS",1)
+	!See([GOODCUTOFF])
+	!See(LastHitter(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("BPCHASER","LOCALS",0)
+		ClearActions(Myself)
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	!Allegiance(Myself,PC)
+	OR(2)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		Allegiance(LastAttackerOf(Myself),GOODCUTOFF)
+THEN
+	RESPONSE #100
+		Enemy()
+		Shout(HELP_ME_GROUP151)
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	!Allegiance(Myself,GOODCUTOFF)
+	OR(2)
+		HitBy([GOODCUTOFF],CRUSHING)
+		Allegiance(LastHitter(Myself),GOODCUTOFF)
+THEN
+	RESPONSE #100
+		Shout(HELP_ME_GROUP151)
+		Enemy()
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	Global("BP_SweetZone","LOCALS",0)
+	OR(4)
+		CheckStat(Myself,11,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,16,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,17,WIZARD_GREATER_MALISON)
+		CheckStat(Myself,20,WIZARD_GREATER_MALISON)
+THEN
+	RESPONSE #80
+		SetGlobal("BP_SweetZone","LOCALS",1)
+		DisplayStringHead(Myself,@102295)  // ????????? ?????? ??????????
+		ForceSpell(Myself,CLERIC_ZONE_OF_SWEET_AIR)  // SPPR318.SPL (???? ??????? ???????)
+	RESPONSE #20
+		SetGlobal("BP_SweetZone","LOCALS",1)
+END
+
+IF
+	TookDamage()
+	Global("BPCHASER","LOCALS",0)
+	!See(LastHitter(Myself))
+	!See([GOODCUTOFF])
+	OR(2)
+		General(Myself,HUMANOID)
+		General(Myself,GIANTHUMANOID)
+	CheckStatGT(Myself,5,INT)
+THEN
+	RESPONSE #10
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #10
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)  // SPPR701.SPL (??? ???????)
+		ReallyForceSpell(Myself,CLERIC_IRONSKIN)  // SPPR506.SPL (???????? ????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #10
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ReallyForceSpell(Myself,CLERIC_BARKSKIN)  // SPPR202.SPL (????-????)
+		ReallyForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR214.SPL (?????? ?????? ????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #5
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ReallyForceSpell(Myself,CLERIC_MAGIC_RESISTANCE)  // SPPR509.SPL (????????????? ?????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #10
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+		ReallyForceSpell(Myself,CLERIC_BARKSKIN)  // SPPR202.SPL (????-????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #10
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+		ReallyForceSpell(Myself,CLERIC_IRONSKIN)  // SPPR506.SPL (???????? ????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #5
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_BARKSKIN)  // SPPR202.SPL (????-????)
+		ReallyForceSpell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+		ReallyForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR214.SPL (?????? ?????? ????)
+		ReallyForceSpell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #5
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ReallyForceSpell(Myself,CLERIC_IRONSKIN)  // SPPR506.SPL (???????? ????)
+		ReallyForceSpell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("BPC","LOCALS",1)
+		MoveToObject(LastHitter(Myself))
+	RESPONSE #15
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		SetGlobal("BPCHASER","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)  // SPPR508.SPL (????????? ???????)
+		ReallyForceSpell(Myself,CLERIC_SANCTUARY)  // SPPR109.SPL (?????????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		SetGlobalTimer("BPIP","LOCALS",THREE_MINUTES)
+		IncrementGlobal("BPC","LOCALS",1)
+		RunAwayFrom(LastHitter(Myself),45)
+	RESPONSE #15
+		RunAwayFrom(LastHitter(Myself),45)
+END
+
+IF
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
+	CheckStatGT(Myself,5,INT)
+	OR(2)
+		See(LastAttackerOf(Myself))
+		See(LastHitter(Myself))
+	CheckStatLT(LastSeenBy(Myself),11,WIZARD_GREATER_MALISON)
+	!GlobalTimerNotExpired("BPCHASE","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		DisplayStringHead(Myself,@88736)  // ???? ??????? ?????????? ??????!
+		EquipMostDamagingMelee()
+		MoveToObject(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
+	CheckStatGT(Myself,5,INT)
+	OR(2)
+		See(TenthNearest([GOODCUTOFF]))
+		See(TenthNearest([PC]))
+	CheckStatLT(LastSeenBy(Myself),11,WIZARD_GREATER_MALISON)
+	!GlobalTimerNotExpired("BPCHASE","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		DisplayStringHead(Myself,@88736)  // ???? ??????? ?????????? ??????!
+		EquipMostDamagingMelee()
+		MoveToObject(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
+	CheckStatGT(Myself,5,INT)
+	See(TenthNearest)
+	CheckStatLT(TenthNearest,11,WIZARD_GREATER_MALISON)
+	!GlobalTimerNotExpired("BPCHASE","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPCHASE","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@88736)  // ???? ??????? ?????????? ??????!
+		MoveToObject(TenthNearest)
+END
+
+IF
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
+	CheckStatGT(Myself,5,INT)
+	!GlobalTimerNotExpired("BPCHASE","LOCALS")
+	See([ANYONE])
+	CheckStatGT(LastSeenBy(Myself),10,WIZARD_GREATER_MALISON)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPCHASE","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@88736)  // ???? ??????? ?????????? ??????!
+		RunAwayFrom(LastSeenBy(Myself),15)
+END
+
+IF
+	CheckStatGT(Myself,10,WIZARD_GREATER_MALISON)
+	CheckStatGT(Myself,5,INT)
+	!GlobalTimerNotExpired("BPCHASE","LOCALS")
+	!See([GOODCUTOFF])
+THEN
+	RESPONSE #100
+		SetGlobal("BPCHASER","LOCALS",1)
+		SetGlobalTimer("BPCHASE","LOCALS",TWO_ROUNDS)
+		DisplayStringHead(Myself,@88736)  // ???? ??????? ?????????? ??????!
+		MoveToObject(Player1)
+END
+
+IF
+	OR(2)
+		!Allegiance(Myself,EVILCUTOFF)
+		!Detect([GOODCUTOFF])
+THEN
+	RESPONSE #100
+END
+
+IF
+	Global("TURN","LOCALS",1)
+	OR(3)
+		GlobalTimerExpired("BPTurn","LOCALS")
+		HPPercentLT(Myself,51)
+		!See([GOODCUTOFF.UNDEAD])
+THEN
+	RESPONSE #100
+		SetGlobal("TURN","LOCALS",0)
+		SetGlobalTimer("BPTurn","LOCALS",0)
+		ClearActions(Myself)
+		SmallWait(5)
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	SpellCast(Myself,0)
+	HaveAnySpells()
+	HitBy([ANYONE],CRUSHING)
+	NumCreatureGT([EVILCUTOFF],3)
+	!GlobalTimerNotExpired("SBN","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("SBN","LOCALS",THREE_MINUTES)
+		DisplayStringHead(Myself,@102287)  // ?? ??????! ?????, ???????? ????!
+		Shout(ALERT_69)
+END
+
+IF
+	Global("TURN","LOCALS",1)
+	OR(3)
+		GlobalTimerExpired("BPTurn","LOCALS")
+		HPPercentLT(Myself,51)
+		!See([GOODCUTOFF.UNDEAD])
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPTurn","LOCALS",0)
+		ClearActions(Myself)
+		SmallWait(5)
+		Continue()
+END
+
+IF
+	Range(NearestEnemyOf(Myself),2)
+	OR(2)
+		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
+THEN
+	RESPONSE #80
+		RunAwayFrom(NearestEnemyOf(Myself),4)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	Global("SNAFU","LOCALS",0)
+	OR(4)
+		CheckStatGT(Myself,1,FISTTHAC0)
+		CheckStatGT(Myself,60,SPELLFAILUREPRIEST)
+		CheckStatGT(Myself,0,SCRIPTINGSTATE4)
+		StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		SetGlobal("SNAFU","LOCALS",1)
+END
+
+IF
+	Global("SNAFU","LOCALS",1)
+	CheckStatLT(Myself,2,FISTTHAC0)
+	CheckStatLT(Myself,61,SPELLFAILUREPRIEST)
+	CheckStat(Myself,0,SCRIPTINGSTATE4)
+	!StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		SetGlobal("SNAFU","LOCALS",0)
+END
+
+IF
+	Global("TURN","LOCALS",1)
+	GlobalTimerNotExpired("BPTurn","LOCALS")
+	HPPercentGT(Myself,50)
+	See([GOODCUTOFF.UNDEAD])
+THEN
+	RESPONSE #100
+END
+
+IF
+	HPPercentLT(Myself,35)
+	HaveSpell(CLERIC_HEAL)  // SPPR607.SPL (?????????)
+	Global("SNAFU","LOCALS",0)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_HEAL)  // SPPR607.SPL (?????????)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	!GlobalTimerNotExpired("POT","LOCALS")
+	HasItem("POTN55",Myself)  // ????? ????????????? ???????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("POT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,#46150)  // *??????? ?????*
+		UseItem("POTN55",Myself)  // ????? ????????????? ???????
+END
+
+IF
+	HPPercentLT(Myself,55)
+	!GlobalTimerNotExpired("POT","LOCALS")
+	HasItem("POTN52",Myself)  // ????? ??????????? ???????
+THEN
+	RESPONSE #100
+		SetGlobalTimer("POT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,#46150)  // *??????? ?????*
+		UseItem("POTN52",Myself)  // ????? ??????????? ???????
+END
+
+IF
+	HPPercentLT(Myself,60)
+	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (??????? ????????? ???)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Global("SNAFU","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (??????? ????????? ???)
+END
+
+IF
+	HPPercentLT(Myself,65)
+	HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (??????? ??????? ???)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Global("SNAFU","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (??????? ??????? ???)
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(Myself,35)
+	!GlobalTimerNotExpired("BPW","LOCALS")
+	See([EVILCUTOFF])
+	!HasItem("POTN55",Myself)  // ????? ????????????? ???????
+	!HasItem("POTN52",Myself)  // ????? ??????????? ???????
+	!HaveSpell(CLERIC_HEAL)  // SPPR607.SPL (?????????)
+	!HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (??????? ????????? ???)
+	!HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (??????? ??????? ???)
+THEN
+	RESPONSE #80
+		SetGlobalTimer("BPW","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,#72808)  // ??? ????????? ?????????!
+		Shout(HEALME)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	StateCheck(Myself,STATE_POISONED)
+	!GlobalTimerNotExpired("POIS","LOCALS")
+	See([EVILCUTOFF])
+	!HasItem("POTN17",Myself)  // ??????? ????????
+	!HasItem("POTN20",Myself)  // ???????????
+	!HaveSpell(CLERIC_NEUTRALIZE_POISON)  // SPPR404.SPL (????????????? ???)
+	!HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (?????????? ???)
+THEN
+	RESPONSE #100
+		Shout(HELP83)
+		DisplayStringHead(Myself,@88737)  // ????????! ????... ????????.
+		SetGlobalTimer("POIS","LOCALS",ONE_ROUND)
+END
+
+IF
+	ActionListEmpty()
+	!GlobalTimerNotExpired("CHE","LOCALS")
+	GlobalLT("SCH","LOCALS",3)
+	Global("SNAFU","LOCALS",0)
+THEN
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)  // SPPR701.SPL (??? ???????)
+		ReallyForceSpell(Myself,CLERIC_IRONSKIN)  // SPPR506.SPL (???????? ????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ReallyForceSpell(Myself,CLERIC_BARKSKIN)  // SPPR202.SPL (????-????)
+		ReallyForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR214.SPL (?????? ?????? ????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)  // SPPR701.SPL (??? ???????)
+		ReallyForceSpell(Myself,CLERIC_ARMOR_OF_FAITH)  // SPPR111.SPL (?????? ????)
+		ReallyForceSpell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ReallyForceSpell(Myself,CLERIC_MAGIC_RESISTANCE)  // SPPR509.SPL (????????????? ?????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+		ReallyForceSpell(Myself,CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+		ReallyForceSpell(Myself,CLERIC_FIRE_SEEDS)  // SPPR606.SPL (???????? ??????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_BARKSKIN)  // SPPR202.SPL (????-????)
+		ReallyForceSpell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+		ReallyForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR214.SPL (?????? ?????? ????)
+		ReallyForceSpell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)  // SPPR508.SPL (????????? ???????)
+		ReallyForceSpell(Myself,CLERIC_SANCTUARY)  // SPPR109.SPL (?????????)
+		SetGlobalTimer("BPIP","LOCALS",THREE_MINUTES)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)  // SPPR711.SPL (???????????)
+		ReallyForceSpell(Myself,CLERIC_IRONSKIN)  // SPPR506.SPL (???????? ????)
+		ReallyForceSpell(Myself,CLERIC_CHANT)  // SPPR203.SPL (?????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+	RESPONSE #50
+		ReallyForceSpell(Myself,CLERIC_PROTECTION_FROM_EVIL_10_FOOT)  // SPPR408.SPL (???????? ?????? ?? ???)
+		ReallyForceSpell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (???????? ????????)
+		ReallyForceSpell(Myself,CLERIC_STRENGTH_OF_ONE)  // SPPR312.SPL (???? ???????)
+		ReallyForceSpell(Myself,CLERIC_BLESS)  // SPPR101.SPL (?????????????)
+		SetGlobalTimer("CHE","LOCALS",ONE_TURN)
+		IncrementGlobal("SCH","LOCALS",1)
+END
+
+IF
+	TargetUnreachable(LastSeenBy(Myself))
+	Delay(3)
+THEN
+	RESPONSE #100
+		ClearActions(Myself)
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+	CheckStat(Myself,0,MELEEDAMAGE)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Exists(LastAttackerOf(Myself))
+	OR(8)
+		!See([GOODCUTOFF])
+		!See(LastAttackerOf(Myself))
+		StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+		StateCheck(NearestEnemyOf(Myself),STATE_ILLUSIONS)
+		StateCheck(NearestEnemyOf(Myself),STATE_BLUR)
+		Gender(NearestEnemyOf(Myself),ILLUSIONARY)
+		Specifics(NearestEnemyOf(Myself),SIMULACRUM)
+		Specifics(NearestEnemyOf(Myself),NEEDS_BREACH)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@88738)  // ????....???-?? ??? ?? ???...
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (???????? ???????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Global("SNAFU","LOCALS",0)
+	CheckStat(Myself,0,FISTDAMAGE)
+	RandomNumLT(6,3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (?????? ???????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Global("SNAFU","LOCALS",0)
+	CheckStat(Myself,0,TITLE1)
+	OR(2)
+		AttackedBy([ANYONE],RANGED)
+		HitBy([ANYONE],MISSILE)
+	RandomNumLT(9,4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_PHYSICAL_MIRROR)  // SPPR613.SPL (???????????? ???????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_RIGHTEOUS_MAGIC)  // SPPR513.SPL (????????? ?????)
+	CheckStatLT(Myself,6,SCRIPTINGSTATE6)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Global("SNAFU","LOCALS",0)
+	RandomNumLT(8,3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_RIGHTEOUS_MAGIC)  // SPPR513.SPL (????????? ?????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_FREE_ACTION)  // SPPR403.SPL (??????? ????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	Global("SNAFU","LOCALS",0)
+	CheckStat(Myself,0,CLERIC_FREE_ACTION)
+	OR(4)
+		RandomNumLT(7,3)
+		StateCheck(Myself,STATE_HELPLESS)
+		!CheckStat(Myself,0,WEB)
+		!CheckStat(Myself,0,ENTANGLE)
+	!StateCheck([EVILCUTOFF],STATE_INVISIBLE)
+	!StateCheck([EVILCUTOFF],STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell([EVILCUTOFF],CLERIC_FREE_ACTION)  // SPPR403.SPL (??????? ????????)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	RandomNumLT(32,21)
+	OR(3)
+		Heard(ThirdNearest([EVILCUTOFF]),ASSIST)
+		Heard(SecondNearest([EVILCUTOFF]),ASSIST)
+		Heard([EVILCUTOFF],ASSIST)
+	HPGT(LastHeardBy(Myself),1)
+	Range(LastHeardBy(Myself),20)
+	HPGT(LastHitter(LastHeardBy(Myself)),1)
+	!See(LastHitter(LastHeardBy(Myself)))
+	HPGT(LastAttackerOf(LastHeardBy(Myself)),1)
+	!See(LastAttackerOf(LastHeardBy(Myself)))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	RandomNumLT(31,21)
+	OR(6)
+		See(NearestEnemyOf(Myself))
+		See(WeakestOf)
+		See(WorstAC)
+		See(MostDamagedOf)
+		See(LastAttackerOf(Myself))
+		See(LastHitter(Myself))
+	RandomNumLT(28,22)
+	OR(4)
+		See([GOODCUTOFF.0.0.0.0.SUMMONED_DEMON])
+		See([GOODCUTOFF.0.0.0.0.SUMMONED])
+		See([GOODCUTOFF.0.0.0.SIMULACRUM])
+		See([GOODCUTOFF.0.0.0.0.ILLUSIONARY])
+	RandomNumLT(29,23)
+	OR(7)
+		See([PC.0.0.RANGER_ALL])
+		See([PC.0.0.PALADIN_ALL])
+		See([PC.0.0.BARD_ALL])
+		See([PC.0.0.DRUID_ALL])
+		See([PC.0.0.CLERIC_ALL])
+		See([PC.0.0.MAGE_ALL])
+		See([PC.0.0.SORCERER])
+	RandomNumLT(30,16)
+	See(Protagonist)
+	RandomNumLT(26,10)
+	OR(4)
+		See([GOODCUTOFF.0.0.RANGER_ALL])
+		See([GOODCUTOFF.0.0.DRUID_ALL])
+		See([GOODCUTOFF.0.0.PALADIN_ALL])
+		See([GOODCUTOFF.0.0.CLERIC_ALL])
+	RandomNumLT(27,10)
+	OR(3)
+		See([GOODCUTOFF.0.0.MONK])
+		See([GOODCUTOFF.0.0.BARD_ALL])
+		See([GOODCUTOFF.0.0.THIEF_ALL])
+	RandomNumLT(24,9)
+	OR(3)
+		See(StrongestOf)
+		See(BestAC)
+		See(LeastDamagedOf)
+	RandomNumLT(25,9)
+	See(WeakestOf)
+	RandomNumLT(23,8)
+	See(WorstAC)
+	RandomNumLT(21,8)
+	See(MostDamagedOf)
+	RandomNumLT(32,11)
+	OR(2)
+		See(TenthNearest([GOODCUTOFF.0.0.MAGE_ALL]))
+		See(TenthNearest([GOODCUTOFF.0.0.SORCERER]))
+	RandomNumLT(20,8)
+	See(TenthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(3)
+		Allegiance(LastSeenBy(Myself),ENEMY)
+		Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+		Allegiance(LastSeenBy(Myself),GOODBUTRED)
+THEN
+	RESPONSE #100
+END
+
+IF
+	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+THEN
+	RESPONSE #80
+		Continue()
+	RESPONSE #20
+END
+
+IF
+	ActionListEmpty()
+	Global("SNAFU","LOCALS",1)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	ActionListEmpty()
+	OR(2)
+		HasItem("ENEBLADE",Myself)  // ?????????????? ??????
+		HasItem("FIRESEED",Myself)  // ???????? ????
+	!Range(LastSeenBy(Myself),8)
+THEN
+	RESPONSE #75
+		EquipRanged()
+		AttackOneRound(LastSeenBy(Myself))
+	RESPONSE #25
+		Continue()
+END
+
+IF
+	OR(3)
+		CheckStatGT(Myself,0,SANCTUARY)
+		StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+		StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #15
+		Continue()
+	RESPONSE #60
+		IncrementGlobal("BPIP","LOCALS",-1)
+	RESPONSE #90
+		RunAwayFrom(NearestEnemyOf(Myself),10)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+THEN
+	RESPONSE #80
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
+	StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	OR(2)
+		General(LastSeenBy(Myself),HUMANOID)
+		General(LastSeenBy(Myself),ANIMAL)
+THEN
+	RESPONSE #80
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (???????? ????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	OR(5)
+		Class(LastSeenBy(Myself),DRUID_ALL)
+		Class(LastSeenBy(Myself),BARD_ALL)
+		Class(LastSeenBy(Myself),CLERIC_ALL)
+		Class(LastSeenBy(Myself),MAGE_ALL)
+		Class(LastSeenBy(Myself),SORCERER)
+	!Range(LastSeenBy(Myself),15)
+	!StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+	RandomNumLT(34,25)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (???????? ????????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	OR(7)
+		HasImmunityEffects(LastSeenBy(Myself))
+		HasBounceEffects(LastSeenBy(Myself))
+		InPartySlot(LastSeenBy(Myself),0)
+		StateCheck(LastSeenBy(Myself),STATE_BLESS)
+		StateCheck(LastSeenBy(Myself),STATE_HASTED)
+		StateCheck(LastSeenBy(Myself),STATE_LUCK)
+		StateCheck(LastSeenBy(Myself),STATE_CHANT)
+	RandomNumLT(37,25)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (?????? ?????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(WIZARD_SYMBOL_FEAR)  // SPWI811.SPL (??????: ?????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	RandomNumLT(13,9)
+	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),WIZARD_SYMBOL_FEAR)  // SPWI811.SPL (??????: ?????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(ENEMY_CLERIC_HARM)  // SPPR699.SPL (?????????? ?????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	RandomNumLT(43,27)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),ENEMY_CLERIC_HARM)  // SPPR699.SPL (?????????? ?????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+	RandomNumLT(51,31)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_CONFUSION)  // SPPR709.SPL (??????????????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	CheckStatLT(LastSeenBy(Myself),50,RESISTMAGICFIRE)
+	RandomNumLT(47,29)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)  // SPPR503.SPL (????????? ????)
+END
+
+IF
+	ActionListEmpty()
+	General(LastSeenBy(Myself),UNDEAD)
+	Range(LastSeenBy(Myself),15)
+	!GlobalTimerNotExpired("BPTurn","LOCALS")
+	Global("TURN","LOCALS",0)
+	HPPercentGT(Myself,50)
+	!Range([EVILCUTOFF.UNDEAD],15)
+	RandomNumLT(44,12)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPTurn","LOCALS",TWO_ROUNDS)
+		SetGlobal("TURN","LOCALS",1)
+		Turn()
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	General(LastSeenBy(Myself),HUMANOID)
+	RandomNumLT(46,27)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (????????? ?????????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_ENTANGLE)  // SPPR105.SPL (???????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,ENTANGLE)
+	!Range(LastSeenBy(Myself),15)
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	RandomNumLT(38,20)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_ENTANGLE)  // SPPR105.SPL (???????????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_ENERGY_BLADES)  // SPPR721.SPL (?????????????? ??????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	!Range(LastSeenBy(Myself),6)
+	!GlobalTimerNotExpired("POW","LOCALS")
+	!HasItem("FIRESEED",Myself)  // ???????? ????
+	!HasItem("ENEBLADE",Myself)  // ?????????????? ??????
+	RandomNumLT(52,32)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_ENERGY_BLADES)  // SPPR721.SPL (?????????????? ??????)
+		EquipRanged()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_POISON)  // SPPR411.SPL (??)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	!StateCheck(LastSeenBy(Myself),STATE_POISONED)
+	RandomNumLT(54,32)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_POISON)  // SPPR411.SPL (??)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	RandomNumLT(55,30)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_MENTAL_DOMINATION)  // SPPR405.SPL (?????????? ??????????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(RANGER_CHARM_ANIMAL)  // SPCL311.SPL (?????????? ?????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	General(LastSeenBy(Myself),ANIMAL)
+	HPGT(LastSeenBy(Myself),40)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),RANGER_CHARM_ANIMAL)  // SPCL311.SPL (?????????? ?????????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (?????? ??????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	RandomNumLT(57,27)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (?????? ??????)
+END
+
+IF
+	ActionListEmpty()
+	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
+	!GlobalTimerNotExpired("BPT","LOCALS")
+	CheckStat(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	OR(2)
+		General(LastSeenBy(Myself),HUMANOID)
+		General(LastSeenBy(Myself),ANIMAL)
+	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+	RandomNumLT(58,23)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
+		Spell(LastSeenBy(Myself),CLERIC_CHARM_PERSON)  // SPPR204.SPL (?????????? ????????? ??? ?????????)
+END
+
+IF
+	Global("BPRC","LOCALS",0)
+	OR(2)
+		Class(Myself,CLERIC_ALL)
+		Class(Myself,PALADIN)
+THEN
+	RESPONSE #100
+		SetGlobal("BPRC","LOCALS",1)
+END
+
+IF
+	Global("BPRC","LOCALS",0)
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,CLERIC)
+		SetGlobal("BPRC","LOCALS",1)
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(Myself,25)
+	Range(LastHitter(Myself),10)
+	!GlobalTimerNotExpired("BPW","LOCALS")
+THEN
+	RESPONSE #30
+		DisplayStringHead(Myself,#49767)  // ??????!
+		Shout(ASSIST)
+		SetGlobalTimer("BPW","LOCALS",TWO_MINUTES)
+		RunAwayFrom(LastHitter(Myself),40)
+	RESPONSE #15
+		DisplayStringHead(Myself,@102290)  // ?????? ???? ???? ???????!
+		Shout(ASSIST)
+		SetGlobalTimer("BPW","LOCALS",TWO_MINUTES)
+		Attack(LastHitter(Myself))
+	RESPONSE #40
+		DisplayStringHead(Myself,#49766)  // ? ?????? ?? ????!
+		Shout(HEALME)
+		SetGlobalTimer("BPW","LOCALS",TWO_MINUTES)
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	ActionListEmpty()
+	CheckStatGT(LastSeenBy(Myself),10,WIZARD_GREATER_MALISON)
+	CheckStatLT(Myself,11,WIZARD_GREATER_MALISON)
+	!HasItemSlot(Myself,SLOT_MISC0)
+	!HasItemSlot(Myself,SLOT_MISC1)
+	!HasItemSlot(Myself,SLOT_MISC2)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	ActionListEmpty()
+	OR(3)
+		!Range(NearestEnemyOf(Myself),5)
+		CheckStatGT(LastSeenBy(Myself),0,FISTDAMAGE)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+	!HasItemSlot(Myself,SLOT_MISC0)
+	!HasItemSlot(Myself,SLOT_MISC1)
+	!HasItemSlot(Myself,SLOT_MISC2)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	OR(2)
+		CheckStatGT(NearestEnemyOf(Myself),0,FISTDAMAGE)
+		CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+THEN
+	RESPONSE #25
+		Continue()
+	RESPONSE #75
+END
+
+IF
+	ActionListEmpty()
+	!Range(LastSeenBy(Myself),8)
+	!HasItemSlot(Myself,SLOT_MISC0)
+	!HasItemSlot(Myself,SLOT_MISC1)
+	!HasItemSlot(Myself,SLOT_MISC2)
+THEN
+	RESPONSE #90
+		AttackOneRound(NearestEnemyOf(Myself))
+	RESPONSE #90
+		EquipMostDamagingMelee()
+		MoveToObjectNoInterrupt(LastSeenBy(Myself))
+		AttackReevaluate(LastSeenBy(Myself),135)
+END
+
+IF
+	ActionListEmpty()
+	!HasItemSlot(Myself,SLOT_MISC0)
+	!HasItemSlot(Myself,SLOT_MISC1)
+	!HasItemSlot(Myself,SLOT_MISC2)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(LastSeenBy(Myself))
+END
+

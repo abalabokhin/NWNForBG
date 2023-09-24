@@ -6,6 +6,6 @@ THEN
 		ClearAllActions()
 		SaveGame(12)
 		StartCutSceneMode()
-		StartCutScene("To3306")
+		StartCutScene("NWTO3306")
 END
 

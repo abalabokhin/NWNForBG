@@ -1,0 +1,763 @@
+IF
+	GlobalGT("helptarget","LOCALS",0)
+	GlobalTimerExpired("helpduration","LOCALS")
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("helptarget","LOCALS",0)
+END
+
+IF
+	GlobalGT("helptarget","LOCALS",0)
+	!See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	See(Player1)
+	Allegiance(Myself,ENEMY)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(771)
+		SetGlobal("helptarget","LOCALS",1)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],771)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(871)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",1)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],771)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(871)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",1)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],871)
+	Range(LastHeardBy(Myself),12)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(871)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",1)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],871)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(871)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("helptarget","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!Class(Myself,INNOCENT)
+	!Detect(Player1)
+	!HasItem("NWNOHLP",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	See(Player2)
+	Allegiance(Myself,ENEMY)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(772)
+		SetGlobal("helptarget","LOCALS",2)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],772)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(872)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",2)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],772)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(872)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",2)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],872)
+	Range(LastHeardBy(Myself),12)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(872)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",2)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],872)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(872)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",2)
+		Continue()
+END
+
+IF
+	Global("helptarget","LOCALS",2)
+	!See(NearestEnemyOf(Myself))
+	!Class(Myself,INNOCENT)
+	!Detect(Player2)
+	!HasItem("NWNOHLP",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	See(Player3)
+	Allegiance(Myself,ENEMY)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(773)
+		SetGlobal("helptarget","LOCALS",3)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],773)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(873)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",3)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],773)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(873)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",3)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],873)
+	Range(LastHeardBy(Myself),12)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(873)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",3)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],873)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(873)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",3)
+		Continue()
+END
+
+IF
+	Global("helptarget","LOCALS",3)
+	!See(NearestEnemyOf(Myself))
+	!Class(Myself,INNOCENT)
+	!Detect(Player3)
+	!HasItem("NWNOHLP",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	See(Player4)
+	Allegiance(Myself,ENEMY)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(774)
+		SetGlobal("helptarget","LOCALS",4)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],774)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(874)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",4)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],774)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(874)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",4)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],874)
+	Range(LastHeardBy(Myself),12)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(874)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",4)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],874)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(874)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",4)
+		Continue()
+END
+
+IF
+	Global("helptarget","LOCALS",4)
+	!See(NearestEnemyOf(Myself))
+	!Class(Myself,INNOCENT)
+	!Detect(Player4)
+	!HasItem("NWNOHLP",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	See(Player5)
+	Allegiance(Myself,ENEMY)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(775)
+		SetGlobal("helptarget","LOCALS",5)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],775)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(875)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",5)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],775)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(875)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",5)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],875)
+	Range(LastHeardBy(Myself),12)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(875)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",5)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],875)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(875)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",5)
+		Continue()
+END
+
+IF
+	Global("helptarget","LOCALS",5)
+	!See(NearestEnemyOf(Myself))
+	!Class(Myself,INNOCENT)
+	!Detect(Player5)
+	!HasItem("NWNOHLP",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	See(Player6)
+	Allegiance(Myself,ENEMY)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(776)
+		SetGlobal("helptarget","LOCALS",6)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],776)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(876)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",6)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],776)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(876)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",6)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],876)
+	Range(LastHeardBy(Myself),12)
+	!StateCheck(Myself,STATE_CHARMED)
+	GlobalTimerExpired("helpduration","LOCALS")
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(876)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",6)
+		SetGlobalTimer("helpduration","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!GlobalGT("helptarget","LOCALS",0)
+	Heard([ANYONE],876)
+	!StateCheck(Myself,STATE_CHARMED)
+	OR(3)
+		!Class(Myself,MAGE_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,CLERIC_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+	OR(3)
+		!Class(Myself,DRUID_ALL)
+		Global("instantprep","LOCALS",1)
+		!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Shout(876)
+		Enemy()
+		SetGlobal("helptarget","LOCALS",6)
+		Continue()
+END
+
+IF
+	Global("helptarget","LOCALS",6)
+	!See(NearestEnemyOf(Myself))
+	!Class(Myself,INNOCENT)
+	!Detect(Player6)
+	!HasItem("NWNOHLP",Myself)  // ???????? ????
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+

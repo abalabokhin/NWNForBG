@@ -1,0 +1,40 @@
+@0 = ~We hears you is wise for <PRO_RACE> kind, so accept offers of surrender from goblin, yes? You comes to talk with us, works out deal, maybe?~ [NWGKI050]
+@1 = ~NP: What are you even talking about?~ /*What are you talking about?*/
+@2 = ~Why? I love killing goblins!~
+@3 = ~Never! Evil creatures like yourself must die!~
+@4 = ~NP: One time, we live in a cave alone. The owner, Dergiab, comes and takes the cave, and gives it to live with an orc and a bugbear, too. He makes us fight one another, and takes the best warrior into his army. We do not know why this army is fighting, and ours does not need to fight.~ /*He make us fight each other, take best warrior to use for own personal army. We not even know what army fights for, and we not want fighting.*/
+@5 = ~We asks you for killing orc and bugbear chieftain, help us end stupid war. We then tell master go away, make other fight. We give gold for heads, too. You like?~
+@6 = ~Sounds like you have yourself a deal, goblin.~
+@7 = ~Is there anything more about the master that you know?~
+@8 = ~Sounds like the other chiefs would pay for *your* head.~
+@9 = ~NP: No, Id rather kill you.~ /*No, I'd rather kill you.*/
+@10 = ~NP: Kill the dastardly intruder<RACE> !~ [NWGKI053] /*Kill the <PRO_RACE> intruders!!*/
+@11 = ~Is good! Goblins eagerly wait for heads of other chieftains! Place on poles and dance around in glee, we will! Ha! Then we forgets whole Dergiab stuff.~
+
+@13 = ~The master is great and powerful. Great magics, has he. Strong and powerful is he. Too tough for us, is he.~
+@14 = ~What about the army you mentioned?~
+@15 = ~But what *is* this Dergiab?~
+@16 = ~Ahhh! Is double-cross! Kill it! Kill all!!~ [NWGKI053]
+@17 = ~NP: Our already says, we do not know. Our cave wants back, lives and does not fight. We want, no one touches us, right? But yours says you kill the leaders! Goblins wants heads. Ha! You are going there, right?~ /*Me saying we is not knowing, already. We wants caves back, live without fighting all of time. We just wants left alone, okay?*/
+@18 = ~NP: Huge terrible ogre with huge, terrible magic. It will even defeat you, even though you are mighty. The host is not important! Are you bringing the head of the chiefs, or not?~ /*Great, giant ogre with powerful magic. Would defeat even you, though you very powerful.*/
+@19 = ~Chief of goblin sees you, <PRO_RACE> friend. What you want now? You gots news for us?~ [NWGKI051]
+@20 = ~I have a question.~
+@21 = ~I have the head of the bugbear chieftain.~
+@22 = ~I have the head of the orc chieftain.~
+@23 = ~Time for you to die, goblin!~
+@24 = ~Nothing. I'll be on my way.~
+@25 = ~What you is wanting knowing? You ask me, and maybe me knows answer.~
+@26 = ~What can you tell me about the master?~
+@27 = ~Bugbears dead? Is very good! Here is reward!!~
+@28 = ~Now goblins have the only chieftain! Goblins are supreme! Is very good, we dance tonight!~
+
+@30 = ~Now you bring us one more head and we happy goblins!~
+@31 = ~Aha! Orcs are dead! This pleases the goblins. Here is reward!~
+
+@33 = ~We waits eagerly for heads! You tough <PRO_RACE> friend, they stand no chance!~
+@34 = ~NP: The owner is great and powerful. Big magic has, yes. Strong and powerful, yes he is. (sighs) We cant handle it, no. Huge terrible ogre with strong magic. Even you will win, friend<race> though you are mighty.~ /*The master is great and powerful. Great magics, has he. Strong and powerful is he. (sigh) Too tough for us, is he.*/
+@35 = ~NP: Our already says, we do not know. Our cave wants back, lives and does not fight. We want, no one touches us, right? He doesnt want to fight so much with orcs and bugbears, the owner doesnt want to take our best warrior.~ /*Me saying we is not knowing, already. We wants caves back, live without fighting all of time. We just wants left alone, okay?*/
+@36 = ~Most pleased to see you, <PRO_RACE> friend. You make goblin king of caves, you have! We not fights no more with bugbears and orcs!~ [NWGKI052]
+@37 = ~Well, now it's time to kill you, I'm afraid!~
+@38 = ~I'll leave you to your joy, then.~
+@39 = ~Goblins wish the <PRO_RACE> friend goodness and stuff!~

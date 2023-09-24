@@ -1,0 +1,154 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("NWCREW2A",Myself)  // No such index
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	Global("MindFlayerInMe","LOCALS",0)
+	Name("NWALAEFN",Myself)  // ??????? ???????
+	OR(6)
+		Range(Player1,15)
+		Range(Player2,15)
+		Range(Player3,15)
+		Range(Player4,15)
+		Range(Player5,15)
+		Range(Player6,15)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@102329)  // ??????????? ??? ????, ? ? ????? ????????! ? ?? ?????????? ???????????!
+		PlaySound("NWINTF52")
+		Wait(2)
+		SetGlobal("MindFlayerInMe","LOCALS",1)
+		ReallyForceSpell(Myself,WIZARD_IMPROVED_HASTE)  // SPWI613.SPL (?????????? ?????????)
+		Enemy()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	Global("MindFlayerInMe","LOCALS",0)
+	OR(2)
+		Global("M1Q2_DEVOUR","MYAREA",1)
+		Global("M1Q2_DEVOUR","MYAREA",4)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@102330)  // ??, ?????????! ? ?????????! ??-??-??-??-??!!!
+		PlaySound("NWINTF50")
+		Wait(2)
+		SetGlobal("MindFlayerInMe","LOCALS",1)
+		Enemy()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	Global("MindFlayerInMe","LOCALS",0)
+	OR(2)
+		Global("M1Q2_DEVOUR","MYAREA",2)
+		Global("M1Q2_DEVOUR","MYAREA",5)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@102331)  // ??????? ? ???? ??????, ???? ??????! ???? ??? ?? ???????!
+		PlaySound("NWINTF51")
+		Wait(2)
+		SetGlobal("MindFlayerInMe","LOCALS",1)
+		Enemy()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	Global("MindFlayerInMe","LOCALS",0)
+	!Allegiance(Myself,ENEMY)
+	Global("MindFlayerInMe","LOCALS",0)
+	OR(2)
+		Global("M1Q2_DEVOUR","MYAREA",3)
+		Global("M1Q2_DEVOUR","MYAREA",6)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@102329)  // ??????????? ??? ????, ? ? ????? ????????! ? ?? ?????????? ???????????!
+		PlaySound("NWINTF52")
+		Wait(2)
+		SetGlobal("MindFlayerInMe","LOCALS",1)
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!StateCheck(Player1,STATE_INVISIBLE)
+	!StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+	!See([PC])
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		StateCheck(Player1,STATE_INVISIBLE)
+		StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Player2,STATE_INVISIBLE)
+	!StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+	!See([PC])
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		StateCheck(Player1,STATE_INVISIBLE)
+		StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+	OR(2)
+		StateCheck(Player2,STATE_INVISIBLE)
+		StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Player3,STATE_INVISIBLE)
+	!StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+	!See([PC])
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		StateCheck(Player1,STATE_INVISIBLE)
+		StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+	OR(2)
+		StateCheck(Player2,STATE_INVISIBLE)
+		StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+	OR(2)
+		StateCheck(Player3,STATE_INVISIBLE)
+		StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Player4,STATE_INVISIBLE)
+	!StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+	!See([PC])
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		StateCheck(Player1,STATE_INVISIBLE)
+		StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+	OR(2)
+		StateCheck(Player2,STATE_INVISIBLE)
+		StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+	OR(2)
+		StateCheck(Player3,STATE_INVISIBLE)
+		StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+	OR(2)
+		StateCheck(Player4,STATE_INVISIBLE)
+		StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+	!See([PC])
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (???????? ???????)
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

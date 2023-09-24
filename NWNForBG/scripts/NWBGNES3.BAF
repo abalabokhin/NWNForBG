@@ -1,0 +1,15 @@
+IF
+	Dead("NWGULNAN")  // ??????
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	Range(Player1,20)
+	!Dead("NWGULNAN")  // ??????
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("NWBGNES0",Myself)  // No such index
+END
+

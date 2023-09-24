@@ -1,0 +1,13 @@
+IF
+	See([PC])
+	Dead("NWBRAZI3")  // ???????
+	Range([PC],15)
+	Allegiance(Myself,NEUTRAL)
+	Global("InitialDialog","LOCALS",0)
+	Delay(5)
+THEN
+	RESPONSE #100
+		SetGlobal("InitialDialog","LOCALS",1)
+		StartDialogueNoSet([PC])
+END
+

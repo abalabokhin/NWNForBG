@@ -1,16 +1,16 @@
 IF
 	GlobalGT("SolomonRing","GLOBAL",1)
-	InMyArea("Solomon")  // ???????
+	InMyArea("NWSOLOMN")  // ???????
 THEN
 	RESPONSE #100
-		ActionOverride("Solomon",DestroySelf())
+		ActionOverride("NWSOLOMN",DestroySelf())
 END
 
 IF
 	GlobalGT("GoToLuskan","GLOBAL",0)
-	InMyArea("Darktong")  // ????????? ????????
+	InMyArea("NWDARKTG")  // ????????? ????????
 THEN
 	RESPONSE #100
-		ActionOverride("Darktong",DestroySelf())
+		ActionOverride("NWDARKTG",DestroySelf())
 END
 

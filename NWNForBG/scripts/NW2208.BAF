@@ -1,6 +1,6 @@
 IF
 	Global("PlayerHasSword","MYAREA",0)
-	!Contains("Swordnw1","Sword")  // ???????? ????-??
+	!Contains("NWSWORD1","Sword")  // ???????? ????-??
 THEN
 	RESPONSE #100
 		SetGlobal("PlayerHasSword","MYAREA",1)
@@ -11,7 +11,7 @@ END
 IF
 	OR(2)
 		GlobalGT("YuantiRiddle","MYAREA",0)
-		Dead("YUANTINW")  // ????-??
+		Dead("NWYUANTI")  // ????-??
 	Global("ExitTo2210","MYAREA",0)
 THEN
 	RESPONSE #100

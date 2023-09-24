@@ -1,0 +1,30 @@
+IF
+	Clicked([ANYONE])
+	Global("3406Gong","MYAREA",2)
+THEN
+	RESPONSE #100
+		DisplayStringNoName(Myself,@106141)  // ??????? ?????.
+		PlaySound("NW3GONG")
+		SetGlobal("3406Gong","MYAREA",3)
+END
+
+IF
+	Clicked([ANYONE])
+	!Global("3406Gong","MYAREA",2)
+	GlobalLT("3406Gong","MYAREA",4)
+THEN
+	RESPONSE #100
+		DisplayStringNoName(Myself,@106141)  // ??????? ?????.
+		PlaySound("NW3GONG")
+		SetGlobal("3406Gong","MYAREA",0)
+END
+
+IF
+	Clicked([ANYONE])
+	GlobalGT("3406Gong","MYAREA",3)
+THEN
+	RESPONSE #100
+		DisplayStringNoName(Myself,@106141)  // ??????? ?????.
+		PlaySound("NW3GONG")
+END
+

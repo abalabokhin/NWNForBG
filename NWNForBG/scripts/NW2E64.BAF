@@ -13,38 +13,38 @@ THEN
 		Unlock("Door1")
 		OpenDoor("Door1")
 		SetGlobal("ActivateWay","MYAREA",1)
-		ActionOverride("Arklem",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
+		ActionOverride("NWARKLEM",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
 END
 
 IF
 	Dead("Braz02")
-	OpenState("Brazier1",FALSE)  // ???????
+	OpenState("NWBRAZI1",FALSE)  // ???????
 THEN
 	RESPONSE #100
 		IncrementGlobal("BrazierDestroyed","MYAREA",1)
-		OpenDoor("Brazier1")  // ???????
+		OpenDoor("NWBRAZI1")  // ???????
 		AmbientActivate("Fire1",FALSE)
 		Continue()
 END
 
 IF
 	Dead("Braz03")
-	OpenState("Brazier2",FALSE)  // ???????
+	OpenState("NWBRAZI2",FALSE)  // ???????
 THEN
 	RESPONSE #100
 		IncrementGlobal("BrazierDestroyed","MYAREA",1)
-		OpenDoor("Brazier2")  // ???????
+		OpenDoor("NWBRAZI2")  // ???????
 		AmbientActivate("Fire2",FALSE)
 		Continue()
 END
 
 IF
 	Dead("Braz04")
-	OpenState("Brazier3",FALSE)  // ???????
+	OpenState("NWBRAZI3",FALSE)  // ???????
 THEN
 	RESPONSE #100
 		IncrementGlobal("BrazierDestroyed","MYAREA",1)
-		OpenDoor("Brazier3")  // ???????
+		OpenDoor("NWBRAZI3")  // ???????
 		AmbientActivate("Fire3",FALSE)
 END
 

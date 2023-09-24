@@ -36,7 +36,7 @@ END
 IF
 	Heard([ANYONE],5)
 	Allegiance(Myself,NEUTRAL)
-	!Name("Nyphith",Myself)  // ???????
+	!Name("NWNYPHIH",Myself)  // ???????
 THEN
 	RESPONSE #100
 		Enemy()

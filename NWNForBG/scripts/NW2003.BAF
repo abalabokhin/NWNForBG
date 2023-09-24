@@ -8,6 +8,6 @@ THEN
 		SetGlobal("ALHELOR_SPAWN","MYAREA",1)
 		Unlock("Chest1")
 		Unlock("Chest2")
-		CreateCreature("ALHELOR2",[230.268],11)  // ???????
+		CreateCreature("NWALHEL2",[230.268],11)  // ???????
 END
 

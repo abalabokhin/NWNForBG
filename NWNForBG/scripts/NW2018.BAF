@@ -5,7 +5,7 @@ IF
 	Global("NWUrtMomTalkAtStairs","GLOBAL",0)
 THEN
 	RESPONSE #100
-		ActionOverride("EISNF",StartDialogueNoSet(Player1))
+		ActionOverride("NWEISNF",StartDialogueNoSet(Player1))
 		SetGlobal("NWUrtMomTalkAtStairs","GLOBAL",1)
 END
 

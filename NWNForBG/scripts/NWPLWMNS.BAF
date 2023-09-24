@@ -1,0 +1,46 @@
+IF
+	Range(Player1,20)
+	Global("MainString","LOCALS",1)
+	GlobalTimerExpired("Fish","LOCALS")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,#25882)  // ????! ?????????? ?????? ????!
+		SetGlobal("MainString","LOCALS",0)
+END
+
+IF
+	Global("MainString","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Fish","LOCALS",FOUR_MINUTES)
+		SetGlobal("MainString","LOCALS",1)
+END
+
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("NWPICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,@88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("NWFEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+

@@ -4,7 +4,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("GethSpawn","MYAREA",1)
-		CreateCreature("GethW",[4391.2181],4)  // ?????????
+		CreateCreature("NWGETHW",[4391.2181],4)  // ?????????
 		Continue()
 END
 

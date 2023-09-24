@@ -1,38 +1,38 @@
 
-COPY ~NWNForBG/spl/balortk1.spl~ ~override~
+COPY ~NWNForBG/spl/NWBALOR1.spl~ ~override~
   SAY 0x8	@74524
 
-COPY ~NWNForBG/spl/balortk2.spl~ ~override~
+COPY ~NWNForBG/spl/NWBALOR2.spl~ ~override~
   SAY 0x8	@74524
 
-COPY ~NWNForBG/spl/braz2.spl~ ~override~
+COPY ~NWNForBG/spl/NWBRAZ2.spl~ ~override~
   SAY 0x8	@102578
 
-COPY ~NWNForBG/spl/braz3.spl~ ~override~
+COPY ~NWNForBG/spl/NWBRAZ3.spl~ ~override~
   SAY 0x8	@102576
 
-COPY ~NWNForBG/spl/dw#thinv.spl~ ~override~
+COPY ~NWNForBG/spl/NWTHINV.spl~ ~override~
   SAY 0x8	@102236
 
-COPY ~NWNForBG/spl/fl#csdis.spl~ ~override~
+COPY ~NWNForBG/spl/NWCSDIS.spl~ ~override~
   SAY 0x8	@102490
 
-COPY ~NWNForBG/spl/fl#finpc.spl~ ~override~
+COPY ~NWNForBG/spl/NWFINPC.spl~ ~override~
   SAY 0x50	@102482
   SAY 0x54	@102482
 
-COPY ~NWNForBG/spl/melspl5a.spl~ ~override~
+COPY ~NWNForBG/spl/NWMELS5A.spl~ ~override~
   SAY 0x12E	@74540
 
-COPY ~NWNForBG/spl/mmwiconv.spl~ ~override~
+COPY ~NWNForBG/spl/NWMMWICV.spl~ ~override~
   SAY 0x8	@102717
   SAY 0x50	@102718
 
-COPY ~NWNForBG/spl/moblfire.spl~ ~override~
+COPY ~NWNForBG/spl/NWMOBLFE.spl~ ~override~
   SAY 0x8	@102862
   SAY 0x50	@102863
 
-COPY ~NWNForBG/spl/nabpara.spl~ ~override~
+COPY ~NWNForBG/spl/NWNABPAA.spl~ ~override~
   SAY 0x8	@74536
 
 COPY ~NWNForBG/spl/nwdimra.spl~ ~override~
@@ -67,32 +67,32 @@ COPY ~NWNForBG/spl/nwsimb7.spl~ ~override~
   SAY 0x8	@107528
   SAY 0x12E	@107537
 
-COPY ~NWNForBG/spl/rr#shm.spl~ ~override~
+COPY ~NWNForBG/spl/NWRR#SHM.spl~ ~override~
   SAY 0x8	@102453
 
-COPY ~NWNForBG/spl/slaad1.spl~ ~override~
+COPY ~NWNForBG/spl/NWSLAAD1.spl~ ~override~
   SAY 0x8	@104402
 
-COPY ~NWNForBG/spl/slaad2.spl~ ~override~
+COPY ~NWNForBG/spl/NWSLAAD2.spl~ ~override~
   SAY 0x8	@104403
 
-COPY ~NWNForBG/spl/sp618nw.spl~ ~override~
+COPY ~NWNForBG/spl/NWSP618.spl~ ~override~
   SAY 0x8	@103231
   SAY 0x50	@103232
 
 COPY ~NWNForBG/spl/spcl665t.spl~ ~override~
   SAY 0x8	@103738
 
-COPY ~NWNForBG/spl/spheal0.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPHEA0.spl~ ~override~
   SAY 0x8	@88752
   SAY 0xC	@88752
 
-COPY ~NWNForBG/spl/spheal1.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPHEA1.spl~ ~override~
   SAY 0x8	@88753
   SAY 0xC	@88753
   SAY 0xFE	@88754
 
-COPY ~NWNForBG/spl/spheal6.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPHEA6.spl~ ~override~
   SAY 0xFE	@90798
 
 COPY ~NWNForBG/spl/spin115w.spl~ ~override~
@@ -110,17 +110,17 @@ COPY ~NWNForBG/spl/spin139.spl~ ~override~
 COPY ~NWNForBG/spl/spin141.spl~ ~override~
   SAY 0x8	@103693
 
-COPY ~NWNForBG/spl/spkaoh.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPKAOH.spl~ ~override~
   SAY 0x8	@103743
 
-COPY ~NWNForBG/spl/spkaoh2.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPKAO2.spl~ ~override~
   SAY 0x8	@103744
 
-COPY ~NWNForBG/spl/spminti.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPMINI.spl~ ~override~
   SAY 0x8	@103888
   SAY 0x50	@103889
 
-COPY ~NWNForBG/spl/spmintid.spl~ ~override~
+COPY ~NWNForBG/spl/NWSPMIND.spl~ ~override~
   SAY 0x8	@103888
   SAY 0x50	@103889
 
@@ -373,15 +373,15 @@ COPY ~NWNForBG/spl/spwi828.spl~ ~override~
 COPY ~NWNForBG/spl/spwi913a.spl~ ~override~
   SAY 0x8	@106379
 
-COPY ~NWNForBG/spl/sumshad.spl~ ~override~
+COPY ~NWNForBG/spl/NWSUMSHD.spl~ ~override~
   SAY 0x8	@102485
 
-COPY ~NWNForBG/spl/toras1.spl~ ~override~
+COPY ~NWNForBG/spl/NWTORAS1.spl~ ~override~
   SAY 0x8	@103803
 
-COPY ~NWNForBG/spl/toras2.spl~ ~override~
+COPY ~NWNForBG/spl/NWTORAS2.spl~ ~override~
   SAY 0x8	@103804
 
-COPY ~NWNForBG/spl/vscroll.spl~ ~override~
+COPY ~NWNForBG/spl/NWVSCROL.spl~ ~override~
   SAY 0x8	@103824
   SAY 0x50	@103825

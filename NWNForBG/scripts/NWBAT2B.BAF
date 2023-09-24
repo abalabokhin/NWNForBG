@@ -9,7 +9,7 @@ THEN
 		Face(0)
 		Wait(2)
 		MoveViewPoint([1831.771],INSTANT)
-		PlaySound("Clapping")
+		PlaySound("NWCLAPPG")
 		ActionOverride(Player2,MakeUnselectable(1))
 		ActionOverride(Player3,MakeUnselectable(1))
 		ActionOverride(Player4,MakeUnselectable(1))
@@ -32,6 +32,6 @@ THEN
 		SetGlobalTimer("NWTaxTime","GLOBAL",SEVEN_DAYS)
 		Wait(5)
 		EndCutSceneMode()
-		ActionOverride("Kellisai",StartDialogueNoSet(Player1))
+		ActionOverride("NWKELLII",StartDialogueNoSet(Player1))
 END
 

@@ -1,6 +1,6 @@
 IF
 	Global("PlayerHasZgem","MYAREA",0)
-	PartyHasItem("Zgem")  // ??????????? ?????? ???????
+	PartyHasItem("NWZGEM")  // ??????????? ?????? ???????
 THEN
 	RESPONSE #100
 		SetGlobal("PlayerHasZgem","MYAREA",1)
@@ -8,40 +8,40 @@ END
 
 IF
 	Global("NW2207Vizited","GLOBAL",1)
-	InMyArea("Dydd")  // ????
+	InMyArea("NWDYDD")  // ????
 THEN
 	RESPONSE #100
-		ActionOverride("Dydd",DestroySelf())
+		ActionOverride("NWDYDD",DestroySelf())
 		Continue()
 END
 
 IF
 	Global("NW2207Vizited","GLOBAL",1)
 	Global("GamDestroyed","MYAREA",0)
-	InMyArea("Gam")  // ???
+	InMyArea("NWGAM")  // ???
 	!Global("GamCure","GLOBAL",1)
 THEN
 	RESPONSE #100
 		SetGlobal("GamDestroyed","MYAREA",1)
-		ActionOverride("Gam",DestroySelf())
+		ActionOverride("NWGAM",DestroySelf())
 		Continue()
 END
 
 IF
 	Global("NW2207Vizited","GLOBAL",1)
-	InMyArea("Gorkan")  // ??????
+	InMyArea("NWGORKAN")  // ??????
 THEN
 	RESPONSE #100
-		ActionOverride("Gorkan",DestroySelf())
+		ActionOverride("NWGORKAN",DestroySelf())
 		Continue()
 END
 
 IF
 	Global("NW2207Vizited","GLOBAL",1)
-	InMyArea("Kasma")  // ?????
+	InMyArea("NWKASMA")  // ?????
 THEN
 	RESPONSE #100
-		ActionOverride("Kasma",DestroySelf())
+		ActionOverride("NWKASMA",DestroySelf())
 		Continue()
 END
 

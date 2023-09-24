@@ -1,0 +1,104 @@
+IF
+	See(Player1)
+	NumTimesTalkedTo(0)
+	Range(Player1,15)
+	Delay(2)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	!See(Player1)
+	See([PC])
+	NumTimesTalkedTo(0)
+	Range([PC],15)
+	Delay(2)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	NumDeadGT("Animalnw",4)  // ???????? ???????
+	Global("Attack","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	See(Player1)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		DestroyItem("NWMIN1HP")  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Attack","LOCALS",1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	NumDeadGT("Animalnw",4)  // ???????? ???????
+	Global("Attack","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	!See(Player1)
+	See([PC])
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		DestroyItem("NWMIN1HP")  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		SetGlobal("Attack","LOCALS",1)
+		ClearActions(Player1)
+		ClearActions(Player2)
+		ClearActions(Player3)
+		ClearActions(Player4)
+		ClearActions(Player5)
+		ClearActions(Player6)
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	Heard([ANYONE],INCOMING_111)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+		Continue()
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	Global("Attack","LOCALS",2)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END
+

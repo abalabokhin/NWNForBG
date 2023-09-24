@@ -4,8 +4,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("AribethCreated","MYAREA",1)
-		CreateCreature("ARIBETH5",[2062.1932],6)  // ??????
-		ActionOverride("ARIBETH",SetNumTimesTalkedTo(1))
+		CreateCreature("NWARIBE5",[2062.1932],6)  // ??????
+		ActionOverride("NWARIBEH",SetNumTimesTalkedTo(1))
 		CloseDoor("Door02")
 END
 
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-	Dead("Jailguar")  // ????????
+	Dead("NWJAILGR")  // ????????
 	Global("UnlockDoor","MYAREA",0)
 THEN
 	RESPONSE #100

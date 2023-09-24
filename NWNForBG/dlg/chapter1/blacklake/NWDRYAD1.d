@@ -2,7 +2,7 @@
 
 // DisplayStringHead(Myself,000000) О, будьте осторожны, незнакомец! Мелданен где-то неподалеку! [NWDRYAD7]
 
-// Положить в инвентарь "Crewtd3"// Прядь волос дриады
+// Положить в инвентарь "NWCREWT3"// Прядь волос дриады
 
 BEGIN ~NWDRYAD1~
 
@@ -80,17 +80,17 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 7.2
   SAY @28
-  IF ~~ THEN DO ~AddexperienceParty(50000)GiveItem("Crewtd3",LastTalkedToBy)EscapeAreaDestroy(60)~ EXIT
+  IF ~~ THEN DO ~AddexperienceParty(50000)GiveItem("NWCREWT3",LastTalkedToBy)EscapeAreaDestroy(60)~ EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 10.1
   SAY @29
-  IF ~~ THEN DO ~AddexperienceParty(50000)GiveItem("Crewtd3",LastTalkedToBy)EscapeAreaDestroy(60)~ EXIT
+  IF ~~ THEN DO ~AddexperienceParty(50000)GiveItem("NWCREWT3",LastTalkedToBy)EscapeAreaDestroy(60)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.2
   SAY @30
-  IF ~~ THEN DO ~AddexperienceParty(50000)GiveItem("Crewtd3",LastTalkedToBy)EscapeAreaDestroy(60)~ EXIT
+  IF ~~ THEN DO ~AddexperienceParty(50000)GiveItem("NWCREWT3",LastTalkedToBy)EscapeAreaDestroy(60)~ EXIT
 END
 
 // ------------------------------------------

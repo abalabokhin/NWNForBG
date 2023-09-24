@@ -42,7 +42,7 @@ END
 IF ~~ THEN BEGIN 6 // from: 5.0
   SAY @13
   IF ~~ THEN DO ~StartCutSceneMode()
-StartCutScene("ToTaver2")
+StartCutScene("NWTOTAV2")
 ~ EXIT
 END
 
@@ -63,6 +63,6 @@ PartyHasItem("Nwmisc11")
   SAY @14
   IF ~~ THEN DO ~AddexperienceParty(20000)
 StartCutSceneMode()
-StartCutScene("duMMBye")
+StartCutScene("NWDUMMBE")
 ~ EXIT
 END

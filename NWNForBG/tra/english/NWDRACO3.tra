@@ -1,4 +1,4 @@
-@0 = ~Why have you entered my cave, tiny creature? Are you another adventurer seeking to get rich from Gorgotha's legendary hoard? You would be wise to answer.~ [DRACO354]
+@0 = ~Why have you entered my cave, tiny creature? Are you another adventurer seeking to get rich from Gorgotha's legendary hoard? You would be wise to answer.~ [NWDRA354]
 @1 = ~I'm searching for the Words of Power.~
 @2 = ~I would like to ask you some questions.~
 @3 = ~Prepare to die, wyrm!~
@@ -31,12 +31,12 @@
 @30 = ~NP: I admire your courage, little creature. Come back to me when you have Klout's head. Otherwise, I will assume this was all an attempt to somehow get me off my balls. I wish you luck, though frankly I'm sure you're doomed to a gruesome doom. But for the sake of my unborn offspring, I hope I'm wrong.~ /*I admire your courage, small one. Return to me when you have Klauth's head. Otherwise I may think this has all been a deception to somehow trick me out of my eggs.*/
 
 @32 = ~NP: Don't be foolish, <RACE>. I promised you a share of my treasure. No one dares question the honor of the golden dragons..... unless this is all a trick to get me to leave my treasure. If you feel the risk is too great, I understand. But I will not give up a single piece of my treasure until I have Klout's head at my feet.~ /*Do not be foolish, <PRO_RACE> <PRO_MALEFEMALE>. I have promised you a share of my hoard. The honor of a gold dragon is beyond question... unless this is all just a plan to trick me out of my treasure hoard.*/
-@33 = ~For what reason have you violated the sanctity of this cave? Have you come seeking Gorgotha's eggs? You would be wise to answer me, tiny one.~ [DRACO352]
+@33 = ~For what reason have you violated the sanctity of this cave? Have you come seeking Gorgotha's eggs? You would be wise to answer me, tiny one.~ [NWDRA352]
 @34 = ~Eggs? Why would I want your eggs?~
 @35 = ~Klauth has offered a great reward for each dragon egg brought to the lair by his fire giant servants. It would not surprise me to find some greedy adventurers are eager to collect this reward as well.~
 @36 = ~NP: Do you know anything about Words of Power?~ /*Do you know anything about the Words of Power?*/
 @37 = ~Why have you returned to my cave, tiny creature? You would be wise to answer me, lest you incur the wrath of the mighty Gorgotha!~ [DRACO253]
-@38 = ~**sniff - sniff** I smell blood and... something else. Something foul. **SNIFF** You have the head of Klauth the ancient red wyrm! Give it to me that I might see the proof of his death with my own eyes!~ [DRACO251]
+@38 = ~**sniff - sniff** I smell blood and... something else. Something foul. **SNIFF** You have the head of Klauth the ancient red wyrm! Give it to me that I might see the proof of his death with my own eyes!~ [NWDRA251]
 @39 = ~I am honored to give you the wyrm's head, mighty Gorgotha.~
 @40 = ~NP: Klout is finally finished! No more of his minions will attack my lair! The ancient worm's evil power is over! We dragons don't like to share our treasure, but you deserve a reward. Take this, the best treasure I've ever collected.~ /*We dragons are loathe to part with our treasure hoard, but you have earned your reward. Take this, the premier item of all the treasure I have collected.*/
 @41 = ~I thank you for this generous gift, mighty Gorgotha.~
@@ -48,4 +48,4 @@
 @47 = ~You have already been well rewarded for your task, <PRO_RACE> one. Do not press me further. My scales may be hued with golden virtue, but my temper is still that of a dragon.~
 @48 = ~I have treated you with nothing but respect, <PRO_RACE> creature, and now you dare threaten my children? Such a crime is unforgivable! Feel the fury of Gorgotha unleashed!~
 
-@50 = ~I remember you. You are the one who brought me the head of Klauth. Because of you I no longer need fear for the lives of my children. How may I help you?~ [DRACO250]
+@50 = ~I remember you. You are the one who brought me the head of Klauth. Because of you I no longer need fear for the lives of my children. How may I help you?~ [NWDRA250]

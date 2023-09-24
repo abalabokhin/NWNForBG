@@ -6,7 +6,7 @@ THEN
 		TriggerActivation("To1419",TRUE)
 		TriggerActivation("Bookcas2",TRUE)
 		TriggerActivation("Bookcas1",FALSE)
-		OpenDoor("Bookcase")
+		OpenDoor("NWBOOKCE")
 END
 
 IF

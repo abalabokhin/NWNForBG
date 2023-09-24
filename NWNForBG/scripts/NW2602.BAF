@@ -4,7 +4,7 @@ IF
 	Global("ChangeDoor","MYAREA",0)
 THEN
 	RESPONSE #100
-		ActionOverride("Mobley",DestroySelf())
+		ActionOverride("NWMOBLEY",DestroySelf())
 		TriggerActivation("Door2601",FALSE)
 		TriggerActivation("Door2600",TRUE)
 		SetGlobal("ChangeDoor","MYAREA",1)
@@ -15,15 +15,15 @@ IF
 	Global("Charwood_Is_Cursed","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride("Mobley",DestroySelf())
+		ActionOverride("NWMOBLEY",DestroySelf())
 END
 
 IF
 	GlobalGT("JaregQuest","GLOBAL",4)
 	Global("Charwood_Is_Saved","GLOBAL",1)
-	Exists("Mobley")  // ?????
+	Exists("NWMOBLEY")  // ?????
 THEN
 	RESPONSE #100
-		ActionOverride("Mobley",DestroySelf())
+		ActionOverride("NWMOBLEY",DestroySelf())
 END
 

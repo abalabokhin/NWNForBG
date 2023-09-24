@@ -1,0 +1,44 @@
+IF
+	OR(4)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("ICRMPARI",Myself)
+		Wait(1)
+		CreateVisualEffectObject("SPDISPMA",Myself)
+		Wait(2)
+		DestroySelf()
+END
+
+IF
+	See([0.0.0.0.LIZARD])
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),50)
+END
+
+IF
+	Range([PC],25)
+	NumTimesTalkedTo(0)
+	See([PC])
+	Allegiance(Myself,NEUTRAL)
+	OR(2)
+		CombatCounter(0)
+		NumDead("NWLIZASH",3)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+IF
+	See([0.0.0.0.LIZARD])
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),50)
+END
+

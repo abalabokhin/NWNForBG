@@ -4,7 +4,7 @@ IF
 	Global("PartyHasNWWord1","GLOBAL",0)
 THEN
 	RESPONSE #100
-		ActionOverride(Player1,StartDialog("SNOWORB",Player1))
+		ActionOverride(Player1,StartDialog("NWSNOWOB",Player1))
 END
 
 IF

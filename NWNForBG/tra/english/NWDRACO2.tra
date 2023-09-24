@@ -1,4 +1,4 @@
-@0 = ~Why have you come, puny one? For what reason have you sought out the cave of one greater than yourself? Why do you disturb the magnificent Akulatraxas?~ [DRACO251]
+@0 = ~Why have you come, puny one? For what reason have you sought out the cave of one greater than yourself? Why do you disturb the magnificent Akulatraxas?~ [NWDRA251]
 @1 = ~My name is <CHARNAME>. I am searching for the Words of Power.~
 @2 = ~NP: I'm from the <CHARNAME> team. I'm looking for Words of Power.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
 @3 = ~Please, mighty Akulatraxas, I seek your wisdom in answering these questions I have.~
@@ -28,9 +28,9 @@
 
 @28 = ~Bargaining with a dragon in her own lair? You are as stupid as you are brave... Normally I would slay you for your insolence, but these are unusual circumstances.~
 @29 = ~The steading of the hill giant chief is on the plateau to the west. Bring me his head and you will get your reward. Now, my tiny instrument of vengeance, is there anything else?~
-@30 = ~**sniff - sniff** Akulatraxas recognizes your scent, tiny creature. Why have you returned, puny one, to disturb one far greater than yourself?~ [DRACO252]
+@30 = ~**sniff - sniff** Akulatraxas recognizes your scent, tiny creature. Why have you returned, puny one, to disturb one far greater than yourself?~ [NWDRA252]
 @31 = ~I'm searching for the Words of Power.~
-@32 = ~**sniff - sniff** Akulatraxas smells blood and... something else. Something foul. **SNIFF** You have the head of the hill giant chief! Give it to me that I might see the proof of his death with my own eyes!~ [DRACO250]
+@32 = ~**sniff - sniff** Akulatraxas smells blood and... something else. Something foul. **SNIFF** You have the head of the hill giant chief! Give it to me that I might see the proof of his death with my own eyes!~ [NWDRA250]
 @33 = ~I am honored to give you the hill giant's head, mighty Akulatraxas.~
 @34 = ~What kind of reward will I get for bringing you this head?~
 @35 = ~NP: The hill giants will no longer attack my kin! By killing their leader, you have earned my gratitude. It is not easy for a man to gain the favor of a dragon. We dragons are reluctant to share our treasures, but you have saved my eggs and the lives of my unborn children from more raids by these hideous giants. Take this gold, <RACE>. For most wingless, it's a fortune.~ /*We dragons are loathe to part with our treasure hoard, but you have saved my eggs and the lives of my unhatched children from the threat of further giant raids. Take this gold, <PRO_RACE> <PRO_MALEFEMALE>. It is a fortune by most standards.*/

@@ -6,6 +6,6 @@ THEN
 	RESPONSE #100
 		SetGlobal("ActivateOrb","MYAREA",1)
 		OpenDoor("Sphere")
-		TriggerActivation("SnowOrb",TRUE)
+		TriggerActivation("NWSNOWOB",TRUE)
 END
 

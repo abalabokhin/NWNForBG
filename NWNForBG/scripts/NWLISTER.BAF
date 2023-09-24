@@ -1,0 +1,67 @@
+IF
+	PickPocketFailed([PC])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+	!Allegiance(LastTrigger,FAMILIAR)
+THEN
+	RESPONSE #100
+		StartDialogOverride("NWPICKP",LastTrigger)
+END
+
+IF
+	PickPocketFailed([FAMILIAR])
+	Allegiance(Myself,NEUTRAL)
+	General(Myself,HUMANOID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(LastTrigger)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(LastTrigger)
+		DisplayStringHead(Myself,@88714)  // ????? ?? ????, ??????? ????????!
+		SetSequence(SEQ_ATTACK)
+		ApplySpellRES("NWFEAR",LastTrigger)  // No such index
+		SetInterrupt(TRUE)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Shout(ALERT_100)
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],ALERT_100)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Shout(ALERT_100)
+		Enemy()
+END
+
+IF
+	Dead("NWFORMOA")  // ???????
+	Allegiance(Myself,NEUTRAL)
+	Global("ScriptChange","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ScriptChange","LOCALS",1)
+		ChangeAIScript("WDRUNSGT",DEFAULT)
+		RandomWalk()
+END
+
+IF
+	GlobalGT("FormosaQuest","GLOBAL",1)
+	Global("ScriptChange","LOCALS",0)
+THEN
+	RESPONSE #30
+		SetGlobal("ScriptChange","LOCALS",1)
+		ChangeAIScript("WDRUNSGT",DEFAULT)
+		RandomWalk()
+END
+

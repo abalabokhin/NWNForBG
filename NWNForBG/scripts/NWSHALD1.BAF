@@ -1,0 +1,44 @@
+IF
+	Dead("NWZOR")  // ???
+	Dead("NWSTIRGE")  // ?????
+	Dead("NWWYVERB")  // ???????
+	Dead("NWDELILH")  // ??????
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	OR(2)
+		HitBy([PC],CRUSHING)
+		AttackedBy([PC],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@88741)  // ?? ??????! ??? ???????? ????? ????!
+		EscapeArea()
+END
+
+IF
+	Global("RunRun","LOCALS",1)
+	!See([ENEMY])
+	Delay(4)
+THEN
+	RESPONSE #100
+		SetGlobal("RunRun","LOCALS",0)
+		Wait(3)
+		MoveToPointNoInterrupt([3101.2342])
+		Face(1)
+END
+
+IF
+	ActionListEmpty()
+	Delay(18)
+	Global("RunRun","LOCALS",0)
+	!NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		SetGlobal("RunRun","LOCALS",1)
+		RandomWalk()
+END
+

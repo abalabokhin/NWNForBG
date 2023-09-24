@@ -4,6 +4,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("MercenarExist","MYAREA",0)
-		ActionOverride("Mercenar",DestroySelf())
+		ActionOverride("NWMERCER",DestroySelf())
 END
 

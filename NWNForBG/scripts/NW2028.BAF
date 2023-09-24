@@ -4,6 +4,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("UrtSpawn","MYAREA",1)
-		CreateCreature("UrthW",[496.418],6)  // ????????
+		CreateCreature("NWURTHW",[496.418],6)  // ????????
 END
 

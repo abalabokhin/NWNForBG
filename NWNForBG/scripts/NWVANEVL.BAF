@@ -1,0 +1,55 @@
+IF
+	!PartyHasItem("NWWANEVH")  // ???????? ?????? ???????
+	Allegiance(Myself,NEUTRAL)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("Alarm","MYAREA",1)
+		DisplayString(Myself,@103818)  // ???????!  ??????????!
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	Global("Alarm2","MYAREA",1)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	PartyHasItem("NWWANEVH")  // ???????? ?????? ???????
+	Allegiance(Myself,ENEMY)
+	!Global("Alarm2","MYAREA",1)
+THEN
+	RESPONSE #100
+		ClearActions(Myself)
+		SetGlobal("Alarm","MYAREA",0)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
+	Global("Alarm","MYAREA",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(7)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+THEN
+	RESPONSE #100
+		SetGlobal("Alarm2","MYAREA",1)
+		Enemy()
+		Continue()
+END
+

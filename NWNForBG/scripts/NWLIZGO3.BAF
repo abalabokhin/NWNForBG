@@ -1,0 +1,44 @@
+IF
+	Global("Golem3_Afraid_of_Cold","GLOBAL",1)
+	Global("MySpell","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("NWLIZGOG",Myself)  // No such index
+		SetGlobal("MySpell","LOCALS",1)
+END
+
+IF
+	Global("Golem3_Afraid_of_Fire","GLOBAL",1)
+	Global("MySpell","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("NWLIZGOF",Myself)  // No such index
+		SetGlobal("MySpell","LOCALS",1)
+END
+
+IF
+	Global("Golem3_Afraid_of_Crushing","GLOBAL",1)
+	Global("MySpell","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("NWLIZGOC",Myself)  // No such index
+		SetGlobal("MySpell","LOCALS",1)
+END
+
+IF
+	Global("Golem3_Afraid_of_Slashing","GLOBAL",1)
+	Global("MySpell","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("NWLIZGOS",Myself)  // No such index
+		SetGlobal("MySpell","LOCALS",1)
+END
+
+IF
+	!Range("Door2",25)
+THEN
+	RESPONSE #100
+		MoveToPoint([2212.2463])
+		Face(6)
+END
+

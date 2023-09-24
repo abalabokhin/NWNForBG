@@ -1,0 +1,27 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,6)
+	Global("UsedBook","NW2609",1)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,6)
+	Global("UsedBook","NW2609",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UsedBook","NW2609",1)
+		CreateCreature("NWBO2609",[1337.1271],0)  // No such index
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,6)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,#14702)  // ??????? ??????, ????? ???????????? ???.
+END
+
