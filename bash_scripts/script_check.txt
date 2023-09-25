@@ -1,5 +1,5 @@
 Warnings in scripts
-Number of hits: 956
+Number of hits: 926
 File: 01POOL3.BCS, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 01POOL3.BCS, Line: 41, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 03POOL1.BCS, Line: 24, Warning: Resource not found: S:Area*[ARE] - AR6010
@@ -596,36 +596,7 @@ File: NIEMAIN.BCS, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - ni
 File: NPC.BCS, Line: 19, Warning: Resource not found: S:Sound*[WAV] - RAN
 File: NPCMAGE1.BCS, Line: 44, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
 File: NPCMAGE1.BCS, Line: 49, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
-File: NW1004.bcs, Line: 222, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 237, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 252, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 267, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 282, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 297, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 312, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 327, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 342, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 357, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 372, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 387, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 402, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 417, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 432, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 447, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 462, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 477, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 492, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 507, Warning: Script name not found: O:Actor* - NWMARROK
-File: NW1004.bcs, Line: 522, Warning: Script name not found: O:Actor* - NWMARROK
 File: NW1200.bcs, Line: 52, Warning: Script name not found: O:Object* - Zombie
-File: NW1400.bcs, Line: 61, Warning: Script name not found: O:Actor* - NWHARN
-File: NW1400.bcs, Line: 65, Warning: Script name not found: O:Actor* - NWHARN
-File: NW1400.bcs, Line: 67, Warning: Script name not found: O:Actor* - NWHARN
-File: NW2201.bcs, Line: 21, Warning: Script name not found: O:Object* - NWGAM
-File: NW2201.bcs, Line: 26, Warning: Script name not found: O:Actor* - NWGAM
-File: NW2210.bcs, Line: 3, Warning: Script name not found: S:Name* - NWGAM
-File: NW2210.bcs, Line: 8, Warning: Script name not found: O:Actor* - NWGAM
-File: NW2300.bcs, Line: 29, Warning: Script name not found: S:Name* - NWLERK
 File: NW3005.bcs, Line: 202, Warning: Script name not found: O:Actor* - NWBARUN
 File: NW3005.bcs, Line: 217, Warning: Script name not found: O:Actor* - NWBARUN
 File: NW3005.bcs, Line: 232, Warning: Script name not found: O:Actor* - NWBARUN
@@ -661,7 +632,6 @@ File: NWCU101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: NWCU101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: NWCU101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: NWCUTBAN.bcs, Line: 5, Warning: Script name not found: O:Object* - NWBARUN
-File: NWCUTMAR.bcs, Line: 5, Warning: Script name not found: O:Object* - NWMARROK
 File: NWNASCH2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
 File: NWNASCHR.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
 File: NWWERPA2.bcs, Line: 6, Warning: Script name not found: O:Target* - Door6737

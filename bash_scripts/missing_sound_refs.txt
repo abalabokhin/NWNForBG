@@ -1,5 +1,5 @@
 Illegal sound resrefs in string table
-Number of hits: 1806
+Number of hits: 1800
 StringRef: 564, Sound: SAREV01, Text: You are indeed family. No other could have lived to oppose me in person. Of course, it will not matter in the end. Ultimately, I will prevail, and a new era will be born unto the realms.
 StringRef: 1182, Sound: DRIZT02, Text: 
 StringRef: 1183, Sound: DRIZT08, Text: 
@@ -1837,10 +1837,10 @@ StringRef: 120906, Sound: ANDAR50, Text: I, Endar Heartfood of the Black Lion tr
 StringRef: 120940, Sound: ANDAR51, Text: NP: I, Endar Big Heart of the Black Lion tribe, greet you. Your name is known to us, <CHARNAME>, as the name of the man who stood firm in Rolgan's defense at the trial. With you and your ancestors, may glory be with you henceforth. We are not ones to hoard treasure, all we can give is the appreciation of our tribe. But if there is anything I can do for you, just say the word and it will be done.
 StringRef: 120941, Sound: ANDAR52, Text: You, <CHARNAME>, are not welcome among this tribe. You promised to defend Rolgan, yet he is dead. You have broken your vow, you have dishonored yourself and your ancestors!
 StringRef: 120943, Sound: ANDAR53, Text: You are a good <PRO_MANWOMAN> to defend Rolgan, <CHARNAME>. I, Endar Heartfood of the Black Lion Tribe, greet you with honor.
-StringRef: 121306, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You must help me. This waitress wants to kick me out! She says I'll drink! Shaw me so impossible! I'm Lillian Cambridgedj! Aarin Gend needs help to find the shlov of power!
-StringRef: 121313, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You really should t-try the wine here. The first couple of bottles go so-so, but then ... uhhhhh!
-StringRef: 121322, Sound: LILLIAN5, Text: About time you showed up. I've been waiting at least ten minutes for someone to come by and refill my drink!
-StringRef: 121392, Sound: LILLIAN5, Text: NP: ** Greetings - again,<CHARNAME> . I hope your search for my missing snow sphere is going better than my search for a good glass of wine in this place. It's not that I haven't tried. *hic* Oh, sorry. Looks like I should slow down... I shouldn't have gotten drunk all at once, I guess...
+StringRef: 121306, Sound: NWLILL54, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You must help me. This waitress wants to kick me out! She says I'll drink! Shaw me so impossible! I'm Lillian Cambridgedj! Aarin Gend needs help to find the shlov of power!
+StringRef: 121313, Sound: NWLILL54, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You really should t-try the wine here. The first couple of bottles go so-so, but then ... uhhhhh!
+StringRef: 121322, Sound: NWLILL57, Text: About time you showed up. I've been waiting at least ten minutes for someone to come by and refill my drink!
+StringRef: 121392, Sound: NWLILL56, Text: NP: ** Greetings - again,<CHARNAME> . I hope your search for my missing snow sphere is going better than my search for a good glass of wine in this place. It's not that I haven't tried. *hic* Oh, sorry. Looks like I should slow down... I shouldn't have gotten drunk all at once, I guess...
 StringRef: 121749, Sound: AARIN571, Text: Once you have spoken with him you may return and speak to me.
 StringRef: 121840, Sound: ARCHEL05, Text: Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?
 StringRef: 121862, Sound: ARCHEL05, Text: Back again, <CHARNAME>? Is there something I can do for you?
@@ -1871,9 +1871,3 @@ StringRef: 122216, Sound: HAERD112, Text: You must use the Words to enter the So
 StringRef: 122308, Sound: MAUGR057, Text: You have come too late, the ritual is over, the awakening of the Old Ones has begun!
 StringRef: 122309, Sound: MAUGR058, Text: The Creator Race will be reborn - and you shall be the first to taste the power my Queen has given unto me!
 StringRef: 122323, Sound: NASHE125, Text: Enough, Aarin. <CHARNAME>, if you want to speak to Haedraline you are free to do so. But I will not release her from the dungeon while an enemy is within our city gates.
-StringRef: 122539, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You must help me. This waitress wants to kick me out! She says I'll drink! Shaw me so impossible! I'm Lillian Cambridgedj! Aarin Gend needs help to find the shlov of power!
-StringRef: 122540, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You really should t-try the wine here. The first couple of bottles go so-so, but then ... uhhhhh!
-StringRef: 122541, Sound: LILLIAN5, Text: About time you showed up. I've been waiting at least ten minutes for someone to come by and refill my drink!
-StringRef: 122542, Sound: LILLIAN5, Text: NP: ** Greetings - again,<CHARNAME> . I hope your search for my missing snow sphere is going better than my search for a good glass of wine in this place. It's not that I haven't tried. *hic* Oh, sorry. Looks like I should slow down... I shouldn't have gotten drunk all at once, I guess...
-StringRef: 122543, Sound: ARCHEL05, Text: Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?
-StringRef: 122544, Sound: ARCHEL05, Text: Back again, <CHARNAME>? Is there something I can do for you?
