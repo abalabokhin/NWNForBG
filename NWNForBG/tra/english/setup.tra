@@ -3464,65 +3464,138 @@ Weight: 3
 
 Usable By:
  Mage~
-@103162 = ~NP: Ring of Miolin~ /*Torin's Ring*/
-@103163 = ~NP: Miolin monks are known for their incredible martial arts. Some of the things they used appeared in Faerûn through planar travel. Such things are extremely rare and truly priceless for monks. STATS: Adds +2 damage to unarmed attacks Adds 1/2 attack per round Used by: Monks~ /*The Moonstone Mask was known for the... comforts... we gave our customers. But there are many wounded, the temple is full and we have more beds than anywhere else in town.*/
-@103164 = ~NP: Death of Yuan-ti~ /*Ardulia's Fall*/
-@103165 = ~NP: This bastard sword is an excellent weapon. It is enchanted as a +3 weapon, perfectly balanced and sharply honed. In addition, it endows its owner with some features: deals additional damage to yuan-ti, deals 3 additional fire damage, 1 time per day allows you to use a large whirlwind attack. An excellent weapon, especially for yuan-ti hunters. STATS: Damage: 1D8 +3 + 3 fire THACO: +3 +4 damage and Thac0 against yuan-ti Features: Allows you to cast the spell &quot;Big whirlwind attack&quot; 1 time per day Damage type: slashing Weight: 6 Haste factor: 7 Type skills: bastard sword Type: 1-handed Requirements: Strength 14 Not used by: Druids Priests Mages Thieves Monks Masters of Beasts~ /*Type of Feat: SpellPrerequisite: 21st level, Quicken Spell, Spellcraft 30, ability to cast 9th level spells.
-Specifics: This feat allows the character to cast spells with a moment of thought. 
-This feat may be taken multiple times:
-Automatic Quicken Spell I: Quicken any level 0 - 3 spells
-Automatic Quicken Spell II: Quicken any level 4 - 6 spells
-Automatic Quicken Spell III: Quicken any level 7 - 9 spells
-Use: Automatic.*/
-@103166 = ~NP: Elemental Shield +3~ /*Elemental Shield.*/
-@103167 = ~NP: This valuable magical shield was crafted in the circulating chaos of Limbo, divided into individual elements. It provides some protection against these elements due to the nature of this separation. STATS: +10% Fire, Cold, Acid, and Shock Resistance Bonus Defense Class: 4 Weight: 5 Requires: 12 Str Unused by: Bards Druids Mages Thieves~ /*This well-crafted suit of full plate armor is made of a strange, nonmetallic material that does not conduct electricity. Lore has it that the substance is native to some other plane.*/
-@103168 = ~NP: Dark curser~ /*Invisible Caster*/
-@103169 = ~NP: The two-handed sword is an outstanding weapon that has the ability to inflict terrible wounds. This blade is larger than most swords and was forged from the finest elven steel. The finely crafted weapon was further enhanced with various rituals and enchantments to live up to its name. The sword directs its magical power at its owner's opponent, cursing them with bad luck and a weakening of the mind. PARAMETERS: Features: 40% chance to inflict a Great Curse or Dementia THAC0: +3 Damage: 1d12+3 Damage type: slashing Weight: 10 Speed factor: 7 Skill: Two-handed sword Type: 2-handed Requirements: 14 strength Used by: Evil characters~ /*The dire rat is a small, fast and furry animal that makes a good companion. Although it is of small size, it is very cunning. Every 5 levels of the master, the dire rats diseased bite becomes harder to resist.
-Skills: Hide, Move Silently
-Feats: Weapon Finesse and Sneak Attack.
-Special: 
- Master Level 
- 5: Diseased bite DC 16
- 10: Diseased bite DC 18
- 15: Diseased bite DC 20
- 20: Diseased bite DC 22*/
-@103170 = ~NP: You will not be able to cross the bridge while its guard is alive or permission has not been obtained.~ /*You can't go in until you finish your training.*/
+@103162 = ~Ring of Myolin~
+@103163 = ~The Myolin monks are known for their incredible martial arts. Some of the items they used originated on Faerun through planar travel. Such items are extremely rare and truly priceless to the monks.
+
+STATISTICS:
+
+Equipped abilities:
+- Damage: +2 (unarmed attacks only)
+- Attacks per round: +1/2
+
+Usable By:
+ Monk~
+@103164 = ~Death of Yuan-ti~
+@103165 = ~This bastard sword is an excellent weapon. It is enchanted as a +3 weapon, perfectly balanced and sharply honed. In addition, it grants its wielder some special features: it deals extra yuan-ti damage, deals 3 units of extra fire damage, and once per day allows you to use Greater Whirlwind Attack. It is a great weapon, especially for yuan-ti hunters.
+
+STATISTICS:
+
+Charge abilities:
+- Greater Whirlwind Attack once per day
+
+THAC0: +3, +4 against Yuan-ti
+Damage: 1d8+3, +3 fire damage, +4 against Yuan-ti
+Damage Type: slashing
+Weight: 6
+Speed Factor: 7
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requirements: 14 Strength
+
+Not Usable By:
+ Druid
+ Mage
+ Priest
+ Thief
+ Monk
+ Beast Master~
+@103166 = ~Elemental Shield +3~
+@103167 = ~This valuable magical shield was made in the circulating chaos of Limbo, divided into separate elements. It provides some protection from these elements due to the nature of this separation.
+
+STATISTICS:
+
+Equipped abilities:
+- Acid Resistance: +25%
+- Cold Resistance: +25%
+- Fire Resistance: +25%
+- Electricity Resistance: +25%
+
+Armor Class: +4
+Weight: 5
+Requirements: 12 Strength
+
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+@103168 = ~Dark Curser~
+@103169 = ~The two-handed sword is an outstanding weapon that has the ability to inflict terrible wounds. This blade is larger than most swords and was forged from the finest elven steel. The beautifully crafted weapon has been further enhanced by various rituals and enchantments to live up to its name. The sword directs its magical power at its wielder's opponent, cursing them with bad luck and a weakened mind.
+
+STATISTICS:
+
+Combat abilities:
+- 40% chance to cast Greater Malison or Feeblemind on target per hit
+
+THAC0: +3
+Damage: 1d12+3
+Damage type: slashing
+Weight: 10
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requirements: 14 Strength
+
+Usable By:
+ Evil Character~
+@103170 = ~You cannot cross the bridge while its guard is alive or permission has not been obtained.~
 @103171 = ~Wanev's Tower~
-@103172 = ~NP: South road 2~ /*South Road*/
-@103173 = ~NP: Summon Monsters V~ /*Hold Monster*/
-@103174 = ~NP: Summon Monsters V School: (Summon/Summon) Level: 9 Range to Target: 40 yards Duration: 13 rounds Cast Time: 5 Area of Effect: Specials Saving Throw: none This spell summons 9-10 HD monsters. There is a 60% chance to get one monster and a 40% chance to get two. The monster(s) will appear in the spell's area of effect and attack the reader's enemies until the spell ends or until they are destroyed. The monster can be a troll, a werewolf, or a great spirit.~ /*Type of Feat: DomainPrerequisite: Access to the Plant domain.
-Specifics: 
-Turn Vermin: Able to turn vermin as if they were undead.
-Bonus Spells: The cleric gains access to the following spells at the specified spell level: Barkskin (2), Creeping Doom (7).
-Use: Automatic.*/
-@103175 = ~NP: Ice Spear~ /*Ice Bullet*/
-@103176 = ~NP: Ice Spear School: (Manifest) Level: 3 Range: Caster's line of sight Duration: Instant Cast Time: 3 The spell creates a magical spear of ice that the mage uses to attack the chosen target. The spear deals 5-30 HP damage and the target must make a -1 spell save or be stunned for 4 rounds.~ /*"When they captured me, they sealed me in with fell magic, somehow. They had a rod that they inserted into the machine and now I can't do anything! Not even cast a little fire spell to keep me warm."*/
-@103177 = ~NP: The passage through this staircase is blocked by the magic of the owner of the tower. You will have to find a way to remove the magical protection.~ /*Bad news. You wages got cut. You gotta give back 50 gold.*/
-@103178 = ~NP: O'Dell Farm~ /*O'Deel Ranch*/
-@103179 = ~NP: Farm Ingo~ /*Normal*/
-@103180 = ~NP: To the dark forest~ /*To the Moonwood*/
+@103172 = ~South Road 2~
+@103173 = ~Monster Summoning V~
+@103174 = ~Monster Summoning V
+(Conjuration/Summoning)
+
+Level: 9
+Range: 120 ft.
+Duration: 13 rounds
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell summons 9-10 HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. These monster(s) appear within spell range and attack the caster's opponents until the spell duration expires or until they are slain. The monster could be a troll, a werewolf, or a great spirit.~
+@103175 = ~Icelance~
+@103176 = ~Icelance
+(Evocation)
+
+Level: 3
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: Special
+
+This spell fires a magical lance of ice at a target of the caster's choosing. It automatically hits, inflicting 5d6 points of cold damage and forcing the target to make a Save vs. Spell with -1 penalty or be stunned for 4 rounds.~
+@103177 = ~This staircase is blocked by the tower master's magic. You will have to find a way to remove the magical protection.~
+@103178 = ~O'Deel Ranch~
+@103179 = ~Ingo Ranch~ /*Normal*/
+@103180 = ~To Darkwood~
 @103181 = ~Standing Stones~
 @103182 = ~To Charwood~
-@103183 = ~NP: ancient building~ /*Polearms*/
-@103184 = ~NP: Jareg Castle~ /*Castle Jhareg*/
-@103185 = ~NP: archaeologist camp~ /*Demon Encampment*/
-@103186 = ~NP: Troll caves~ /*Cavern of the Chieftains*/
-@103187 = ~NP: To the druid camp~ /*Druid Camp*/
-@103188 = ~NP: acid bolts~ /*Acid Splash*/
-@103189 = ~NP: These bolts are coated in acid, and when they hit an enemy, they not only pierce his flesh, but begin to corrode the wound, widening and deepening the severity of the lesion. The putty-like balls at the ends of these crossbow arrows are actually dried sponges found in many of the great lakes in Bitopia. Unnoticed by most experts, these little sponges are able to absorb acid and deposit it in their body without harming themselves. As a result, they were harvested in large numbers and grown as weapons against demons in the Blood War. After several days of a heavy acid diet, the sponges are collected, dried, and covered with a resin that forms a protective layer around the sponge. The sponge is then placed on the arrow head and is ready for use. By hitting the opponent with the right amount of force, the coating is torn, the sponge is released, and the client is merchandised with acid. PARAMETERS: Damage: 1D8 Damage type: ranged (piercing) Special: 1D3 Acid damage on hit Weight: 0 Ranged weapons: Crossbows~ /*The portal was reactivated, but too late Drogan discovered that Heurodis had left within it an inisidious trap that would cause the collapse of the ruin and the death of everyone within it. Holding the portal open with his power, Drogan sacrificed his life and declared that Heurodis must be stopped from achieving mastery over the ancient Netherese magics at all costs... even if it is necessary to destroy the mythallar and release all its energies in a powerful explosion that would kill both her and its wielder. Whatever comes next, the ruin is collapsed and the portal gone with it. There is no turning back now...*/
-@103192 = ~NP: The passage across the bridge is blocked by the protective runes of the druids. You need to get their permission to move on.~ /*When me born, me mom dropped me on head. I got some bad luck too.*/
-@103193 = ~NP: In the heart of Neverwinter Forest~ /*Neverwinter Wood Exit*/
-@103194 = ~NP: Extinct fire. Judging by the things left behind, there was someone's parking lot here.~ /*I think I'll just leave you in there. Bye.*/
-@103195 = ~NP: House of Setara~ /*Setara's Key*/
-@103196 = ~NP: Waterfall~ /*Vorpal*/
-@103197 = ~NP: House of the Nymph~ /*Nymph Slave*/
-@103198 = ~NP: The portal ejects you into the Neverwinter forest. It takes you a few moments to catch your breath.~ /*A swirl of a vortex adorns the floor. Its meaning is not known to you.*/
-@103199 = ~NP: passage in the wall~ /*Wall Breach*/
-@103200 = ~NP: To the master's tower~ /*For the master*/
-@103201 = ~NP: Jadale Manor~ /*Jadale Estate*/
+@103183 = ~Ancient Structure~
+@103184 = ~Castle Jhareg~
+@103185 = ~Archeologists' Camp~
+@103186 = ~Troll Caves~
+@103187 = ~To Druid Camp~
+@103188 = ~Acid Bolts~
+@103189 = ~These bolts are coated with acid, and when they hit an enemy, they not only pierce their flesh, but begin to eat away at the wound, widening and deepening the severity of the injury. The putty-like balls at the ends of these crossbow arrows are actually dried sponges that are found in many of the great lakes in Bitopia. Unnoticed by most experts, these little sponges are able to absorb acid and deposit it in their bodies without harming themselves. As a result, they were collected and cultivated in great numbers as a weapon against demons in the Blood War. After several days of a heavy acid diet, the sponges are harvested, dried, and coated with resin that forms a protective layer around the sponge. The sponge is then slipped onto the arrow head and is ready for use. By striking the opponent with the right amount of force, the coating is torn, the sponge is released, and the client is fobbed off with acid.
+
+Damage: 1d8, +1d3 acid damage
+Damage Type: missile
+Weight: 0
+Launcher: Crossbow~
+@103192 = ~The bridge is blocked by the protective druids' runes. You need to get their permission to pass through.~
+@103193 = ~In the heart of Neverwinter Wood~
+@103194 = ~Extinct fire. Judging by the things left behind, there was someone's parking lot here.~
+@103195 = ~Setara's Home~
+@103196 = ~Waterfall~
+@103197 = ~Nymph's Home~
+@103198 = ~The portal ejects you into the Neverwinter Wood. It takes you a few moments to catch your breath.~
+@103199 = ~Wall Breach~
+@103200 = ~To the Host Tower~
+@103201 = ~Jadale Estate~
 @103202 = ~Temple of Tyr~
-@103203 = ~NP: &quot;Wink and Pinch&quot;~ /*Dwarven Defender*/
-@103204 = ~NP: &quot;Tesak&quot;~ /*The Cutlass*/
+@103203 = ~"Wink and Tickle"
+@103204 = ~Cutlass Inn~
 @103205 = ~The inscription on the shield reads: Beware! The gods as our witnesses, from this day forth the entrance to ancient Illusk shall be sealed. Beneath this house, three wards guard the gates forever confining the unholy evil of Voleron the Damned within. The ancient texts speak of a hero from the south that will break the seals and forever rid the world of the horror within. We pray that the seals will hold until that day comes.~
 @103206 = ~Kurth's Lair~
 @103207 = ~Luskan: The High Captains
