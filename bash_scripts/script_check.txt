@@ -1,5 +1,5 @@
 Warnings in scripts
-Number of hits: 926
+Number of hits: 904
 File: 01POOL3.BCS, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 01POOL3.BCS, Line: 41, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 03POOL1.BCS, Line: 24, Warning: Resource not found: S:Area*[ARE] - AR6010
@@ -597,27 +597,6 @@ File: NPC.BCS, Line: 19, Warning: Resource not found: S:Sound*[WAV] - RAN
 File: NPCMAGE1.BCS, Line: 44, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
 File: NPCMAGE1.BCS, Line: 49, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
 File: NW1200.bcs, Line: 52, Warning: Script name not found: O:Object* - Zombie
-File: NW3005.bcs, Line: 202, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 217, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 232, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 247, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 262, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 277, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 292, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 307, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 322, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 337, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 352, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 367, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 382, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 397, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 412, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 427, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 442, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 457, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 472, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 487, Warning: Script name not found: O:Actor* - NWBARUN
-File: NW3005.bcs, Line: 502, Warning: Script name not found: O:Actor* - NWBARUN
 File: NWARIBEH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
 File: NWBPD14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: NWBPD14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
@@ -631,7 +610,6 @@ File: NWCU101A.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: NWCU101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: NWCU101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: NWCU101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCUTBAN.bcs, Line: 5, Warning: Script name not found: O:Object* - NWBARUN
 File: NWNASCH2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
 File: NWNASCHR.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
 File: NWWERPA2.bcs, Line: 6, Warning: Script name not found: O:Target* - Door6737
