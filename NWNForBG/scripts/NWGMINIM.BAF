@@ -214,7 +214,7 @@ THEN
 END
 
 IF
-	HasItem("NWETTER1",Myself)  // ?????
+	HasItem("ETTERC1",Myself)  // ?????
 	HPPercentGT(Myself,40)
 THEN
 	RESPONSE #60

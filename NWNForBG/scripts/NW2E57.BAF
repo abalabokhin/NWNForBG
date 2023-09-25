@@ -37,19 +37,19 @@ THEN
 	RESPONSE #20
 		SetGlobal("BaramAlly","MYAREA",0)
 		SetGlobalTimer("PortalSpawn","MYAREA",THREE_ROUNDS)
-		PlaySound("NWPORTA0")
+		PlaySound("PORTAL2")
 		CreateVisualEffect("ICMAGICH",[2056.986])
 		CreateCreature("NWSHAD02",[2056.986],0)  // ??????????
 	RESPONSE #30
 		SetGlobal("BaramAlly","MYAREA",0)
 		SetGlobalTimer("PortalSpawn","MYAREA",THREE_ROUNDS)
-		PlaySound("NWPORTA0")
+		PlaySound("PORTAL2")
 		CreateVisualEffect("ICMAGICH",[2056.986])
 		CreateCreature("NWZOMB2",[2056.986],0)  // ??????? ?????
 	RESPONSE #50
 		SetGlobal("BaramAlly","MYAREA",0)
 		SetGlobalTimer("PortalSpawn","MYAREA",THREE_ROUNDS)
-		PlaySound("NWPORTA0")
+		PlaySound("PORTAL2")
 		CreateVisualEffect("ICMAGICH",[2056.986])
 		CreateCreature("NWMUMMY",[2056.986],0)  // ??????? ?????
 END
