@@ -1,5 +1,5 @@
 Warnings in scripts
-Number of hits: 880
+Number of hits: 956
 File: 01POOL3.BCS, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 01POOL3.BCS, Line: 41, Warning: Resource not found: S:Area*[ARE] - AR6010
 File: 03POOL1.BCS, Line: 24, Warning: Resource not found: S:Area*[ARE] - AR6010
@@ -252,7 +252,7 @@ File: AR3352.BCS, Line: 16, Warning: Resource not found: S:NewObject*[CRE] - TRA
 File: AR5400.BCS, Line: 5, Warning: Script name not found: O:Object* - Door5401
 File: AR5400.BCS, Line: 12, Warning: Script name not found: O:Object* - Door5401
 File: AR5405.BCS, Line: 4, Warning: Script name not found: S:Name* - Mulahey
-File: ARIBETH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
+File: BALDUR.BCS, Line: 126, Warning: Resource not found: S:CutScene*[BCS] - cut101a
 File: BALDUR25.BCS, Line: 236, Warning: Script name not found: O:Object* - fampsd25
 File: BALDUR25.BCS, Line: 244, Warning: Script name not found: O:Object* - famfer25
 File: BALDUR25.BCS, Line: 252, Warning: Script name not found: O:Object* - famimp25
@@ -283,11 +283,6 @@ File: BHEYE.BCS, Line: 124, Warning: Spell resource for WIZARD_MONSTER_SUMMONING
 File: BHEYE.BCS, Line: 127, Warning: Spell resource for WIZARD_MONSTER_SUMMONING_4 not found: SPWI610.SPL
 File: BHOSTILE.BCS, Line: 20, Warning: Script name not found: O:Object* - Ardenor
 File: BHOSTILE.BCS, Line: 27, Warning: Script name not found: O:Object* - Taurgousz
-File: BPDRU14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
-File: BPDRU14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
-File: BPDRU14G.bcs, Line: 590, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
-File: BPDRU14G.bcs, Line: 918, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
-File: BPDRU14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
 File: CANTO.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - canto
 File: CAPCUT02.BCS, Line: 6, Warning: Script name not found: O:Actor* - Angelo
 File: CARSA.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - carsa
@@ -337,13 +332,6 @@ File: CULTSHT.BCS, Line: 93, Warning: Script name not found: O:Object* - CultAss
 File: CULTSHT.BCS, Line: 103, Warning: Script name not found: O:Object* - CultArcher
 File: CULTSHT.BCS, Line: 113, Warning: Script name not found: O:Object* - CultArcher
 File: CULTSHT.BCS, Line: 121, Warning: Script name not found: O:Object* - CultArcher
-File: CUT101A.bcs, Line: 7, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: CUT101A.bcs, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: CUT101A.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: CUT101A.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: CUT101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: CUT101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: CUT101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
 File: CUT233I.BCS, Line: 16, Warning: Resource not found: S:ResRef*[WBM:MVE] - ENDMVE1
 File: CUT233I2.BCS, Line: 16, Warning: Resource not found: S:ResRef*[WBM:MVE] - ENDMVE2
 File: CUT233I3.BCS, Line: 16, Warning: Resource not found: S:ResRef*[WBM:MVE] - ENDMVE3
@@ -603,13 +591,92 @@ File: MONTARON.BCS, Line: 40, Warning: Script name not found: O:Object* - Khalid
 File: MONTARON.BCS, Line: 49, Warning: Script name not found: O:Object* - Khalid
 File: MONTARON.BCS, Line: 52, Warning: Script name not found: O:Target* - Khalid
 File: NARCUT01.BCS, Line: 5, Warning: Script name not found: O:Object* - Narlen
-File: NASCHER.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
-File: NASCHER2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
 File: NEVILL.BCS, Line: 7, Warning: Resource not found: S:DialogFile*[DLG] - nevill
 File: NIEMAIN.BCS, Line: 6, Warning: Resource not found: S:DialogFile*[DLG] - niemai
 File: NPC.BCS, Line: 19, Warning: Resource not found: S:Sound*[WAV] - RAN
 File: NPCMAGE1.BCS, Line: 44, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
 File: NPCMAGE1.BCS, Line: 49, Warning: Spell resource for WIZARD_DELETED not found: SPWI801.SPL
+File: NW1004.bcs, Line: 222, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 237, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 252, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 267, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 282, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 297, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 312, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 327, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 342, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 357, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 372, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 387, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 402, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 417, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 432, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 447, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 462, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 477, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 492, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 507, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1004.bcs, Line: 522, Warning: Script name not found: O:Actor* - NWMARROK
+File: NW1200.bcs, Line: 52, Warning: Script name not found: O:Object* - Zombie
+File: NW1400.bcs, Line: 61, Warning: Script name not found: O:Actor* - NWHARN
+File: NW1400.bcs, Line: 65, Warning: Script name not found: O:Actor* - NWHARN
+File: NW1400.bcs, Line: 67, Warning: Script name not found: O:Actor* - NWHARN
+File: NW2201.bcs, Line: 21, Warning: Script name not found: O:Object* - NWGAM
+File: NW2201.bcs, Line: 26, Warning: Script name not found: O:Actor* - NWGAM
+File: NW2210.bcs, Line: 3, Warning: Script name not found: S:Name* - NWGAM
+File: NW2210.bcs, Line: 8, Warning: Script name not found: O:Actor* - NWGAM
+File: NW2300.bcs, Line: 29, Warning: Script name not found: S:Name* - NWLERK
+File: NW3005.bcs, Line: 202, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 217, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 232, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 247, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 262, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 277, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 292, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 307, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 322, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 337, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 352, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 367, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 382, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 397, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 412, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 427, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 442, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 457, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 472, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 487, Warning: Script name not found: O:Actor* - NWBARUN
+File: NW3005.bcs, Line: 502, Warning: Script name not found: O:Actor* - NWBARUN
+File: NWARIBEH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
+File: NWBPD14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
+File: NWBPD14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
+File: NWBPD14G.bcs, Line: 590, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
+File: NWBPD14G.bcs, Line: 918, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
+File: NWBPD14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
+File: NWCU101A.bcs, Line: 7, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCU101A.bcs, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCU101A.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCU101A.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCU101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCU101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCU101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
+File: NWCUTBAN.bcs, Line: 5, Warning: Script name not found: O:Object* - NWBARUN
+File: NWCUTMAR.bcs, Line: 5, Warning: Script name not found: O:Object* - NWMARROK
+File: NWNASCH2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
+File: NWNASCHR.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
+File: NWWERPA2.bcs, Line: 6, Warning: Script name not found: O:Target* - Door6737
+File: NWWERPA2.bcs, Line: 7, Warning: Script name not found: O:Target* - Door6737
+File: NWWERPA2.bcs, Line: 8, Warning: Script name not found: O:Target* - Door6737
+File: NWWERPA2.bcs, Line: 9, Warning: Script name not found: O:Target* - Door6737
+File: NWWERPA2.bcs, Line: 10, Warning: Script name not found: O:Target* - Door6737
+File: NWWERPA2.bcs, Line: 11, Warning: Script name not found: O:Target* - Door6737
+File: NWWERPA3.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: NWWERPA3.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: NWWERPA3.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: NWWERPA3.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: NWWERPA3.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: NWWERPA3.bcs, Line: 14, Warning: Resource not found: S:Area*[ARE] - NW6737
+File: NWWERPA3.bcs, Line: 15, Warning: Resource not found: S:Area*[ARE] - NW6737
 File: OBESTATE.BCS, Line: 2, Warning: Script name not found: O:Object* - Delorna
 File: OBESTATE.BCS, Line: 9, Warning: Script name not found: O:Object* - Ithmeera
 File: OBESTATE.BCS, Line: 16, Warning: Script name not found: O:Object* - Helshara
@@ -628,6 +695,28 @@ File: ohbare2.BCS, Line: 43, Warning: Resource not found: S:RES*[SPL] - OH_EXPLR
 File: ohbcut04.BCS, Line: 69, Warning: Resource not found: S:Effect*[VEF:VVC:BAM] - CALLIGH
 File: ohbcut07.BCS, Line: 101, Warning: Resource not found: S:Effect*[VEF:VVC:BAM] - CALLIGH
 File: ohbcut10.BCS, Line: 8, Warning: Script name not found: O:Target* - ohblamp
+File: OHBDRAG1.BCS, Line: 1393, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1417, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1441, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1468, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1491, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1514, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1537, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1560, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1583, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1606, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1629, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1652, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1675, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1698, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1723, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1748, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1771, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1794, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1817, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1840, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1863, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
+File: OHBDRAG1.BCS, Line: 1886, Warning: Resource not found: S:ResRef*[ITM] - RR#HEL02
 File: ohbglab.BCS, Line: 384, Warning: Resource not found: S:ResRef*[ITM] - HAKSU
 File: ohbglab.BCS, Line: 2034, Warning: Resource not found: S:RES*[SPL] - OH_WI103
 File: ohbhub.BCS, Line: 247, Warning: Script name not found: O:Object* - ohb_messhall2
@@ -825,19 +914,6 @@ File: WATCH3.BCS, Line: 69, Warning: Script name not found: O:Object* - DOOR2618
 File: WATCHEN2.BCS, Line: 2, Warning: Script name not found: O:Object* - WatcherEnforcer
 File: WATCHEN2.BCS, Line: 10, Warning: Script name not found: O:Object* - WatcherEnforcer
 File: WATCHER.BCS, Line: 2, Warning: Script name not found: O:Object* - Hull
-File: WERPAUS2.bcs, Line: 6, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 7, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 8, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 9, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 10, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS2.bcs, Line: 11, Warning: Script name not found: O:Target* - Door6737
-File: WERPAUS3.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: WERPAUS3.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: WERPAUS3.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: WERPAUS3.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: WERPAUS3.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: WERPAUS3.bcs, Line: 14, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: WERPAUS3.bcs, Line: 15, Warning: Resource not found: S:Area*[ARE] - NW6737
 File: XZAR.BCS, Line: 11, Warning: Script name not found: O:Object* - Khalid
 File: XZAR.BCS, Line: 29, Warning: Script name not found: S:Name* - Khalid
 File: XZAR.BCS, Line: 40, Warning: Script name not found: O:Object* - Khalid

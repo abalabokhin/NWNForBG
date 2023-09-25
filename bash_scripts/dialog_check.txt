@@ -1,15 +1,5 @@
 Warnings in dialogues
 Number of hits: 265
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 4, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 5, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 7, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 9, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 14, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 1, Owner: Response trigger 15, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 3, Owner: Action 2, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 2, Owner: Action 3, Warning: Resource not found: S:Item*[ITM] - Wandnw6
-File: 2Q6EPOD.dlg, Line: 3, Owner: Action 3, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
 File: AERIEP.DLG, Line: 47, Owner: Response trigger 5, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: AMARAN.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
 File: ANOMENP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
@@ -17,8 +7,6 @@ File: APPAR.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Obj
 File: ARNWAR07.DLG, Line: 2, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine1
 File: ARNWAR07.DLG, Line: 3, Owner: Action 0, Warning: Script name not found: O:Object* - Guillotine2
 File: BANDIC.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Bandcap
-File: BARUN.dlg, Line: 1, Owner: Response trigger 43, Warning: Resource not found: S:Item*[ITM] - Sw1h022
-File: BARUN.dlg, Line: 1, Owner: Response trigger 44, Warning: Resource not found: S:Item*[ITM] - Sw1h008
 File: BELAND.DLG, Line: 1, Owner: Action 4, Warning: Script name not found: O:Object* - DR0600
 File: BELAND.DLG, Line: 1, Owner: Action 6, Warning: Script name not found: O:Object* - DR0600
 File: BENTHA.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - ZORDRAL
@@ -29,13 +17,11 @@ File: BERRUN.DLG, Line: 3, Owner: State trigger 2, Warning: Script name not foun
 File: BERRUN.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: O:Object* - MONTARON
 File: BERRUN.DLG, Line: 3, Owner: State trigger 3, Warning: Script name not found: S:Name* - Montaron
 File: BILL.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - DOOR0108
-File: BODDINOJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - MORAG4
 File: CALDO.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Actor* - Krumm
 File: CALDO.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Krumm
 File: CALDO.DLG, Line: 1, Owner: Action 2, Warning: Script name not found: O:Actor* - KRUMM
 File: CERNDP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: CORSON.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - OSMADI
-File: DAELANJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - MORAG4
 File: DESSLO.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Xzar
 File: DESSLO.DLG, Line: 1, Owner: State trigger 1, Warning: Script name not found: O:Object* - Montaron
 File: DORNP.DLG, Line: 47, Owner: Response trigger 6, Warning: Resource not found: S:ResRef*[ARE] - AR2906
@@ -52,7 +38,6 @@ File: ELDOTP.DLG, Line: 1, Owner: Action 8, Warning: Script name not found: O:Ac
 File: ELDOTP.DLG, Line: 1, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
 File: ELDOTP.DLG, Line: 2, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
 File: ELDOTP.DLG, Line: 3, Owner: Action 10, Warning: Script name not found: O:Actor* - Skie
-File: EMERNIK.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:ScriptFile*[BCS] - EmFollow
 File: FLAM7.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Target* - FlamingFist7
 File: FLAM7.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Target* - FlamingFist7
 File: FSSPIR2.DLG, Line: 4, Owner: Action 1, Warning: Script name not found: O:Object* - Exit3024
@@ -101,7 +86,6 @@ File: GRETEK.DLG, Line: 2, Owner: Action 1, Warning: Script name not found: O:Ac
 File: GRETEK.DLG, Line: 3, Owner: Action 1, Warning: Script name not found: O:Actor* - NADER
 File: GRETEK.DLG, Line: 4, Owner: Action 1, Warning: Script name not found: O:Actor* - ARLIN
 File: GRETEK.DLG, Line: 5, Owner: Action 1, Warning: Script name not found: O:Actor* - CATURAK
-File: GRIMGNAJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - MORAG4
 File: HAERDAP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: HAERDAP.DLG, Line: 48, Owner: Response trigger 1, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: HAIRTO.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Gnarl
@@ -130,7 +114,6 @@ File: KRUMM.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Act
 File: KRYSTI.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Actor* - Slythe
 File: LARRIA.DLG, Line: 1, Owner: Action 1, Warning: Script name not found: O:Object* - LARRIA
 File: LASKAL.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - FALDORN
-File: LINAJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - MORAG4
 File: LUSSEL.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - Jellmul
 File: MINEC4.DLG, Line: 1, Owner: Action 0, Warning: Script name not found: O:Object* - MINEC4
 File: MINSCP.DLG, Line: 48, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
@@ -173,6 +156,25 @@ File: NALIAP.DLG, Line: 47, Owner: Response trigger 2, Warning: Resource not fou
 File: NEERAP.DLG, Line: 49, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: NEERAP.DLG, Line: 49, Owner: Response trigger 1, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: NIKLOS.DLG, Line: 2, Owner: Action 7, Warning: Script name not found: O:Object* - DOOR0151
+File: NW2Q6EPD.dlg, Line: 1, Owner: Response trigger 4, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 1, Owner: Response trigger 5, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 1, Owner: Response trigger 7, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 1, Owner: Response trigger 9, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 1, Owner: Response trigger 14, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 1, Owner: Response trigger 15, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 3, Owner: Action 2, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 2, Owner: Action 3, Warning: Resource not found: S:Item*[ITM] - Wandnw6
+File: NW2Q6EPD.dlg, Line: 3, Owner: Action 3, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
+File: NWBARUN.dlg, Line: 1, Owner: Response trigger 43, Warning: Resource not found: S:Item*[ITM] - Sw1h022
+File: NWBARUN.dlg, Line: 1, Owner: Response trigger 44, Warning: Resource not found: S:Item*[ITM] - Sw1h008
+File: NWBODDIJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
+File: NWDAELAJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
+File: NWEMERNK.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:ScriptFile*[BCS] - EmFollow
+File: NWGRIMGJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
+File: NWLINAJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
+File: NWSHARWJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
+File: NWTOMIJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
 File: OHBCOOK.DLG, Line: 2, Owner: Response trigger 3, Warning: Script name not found: O:Object* - ohbgua01
 File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 7, Warning: Script name not found: S:Name* - balth2
 File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 11, Warning: Script name not found: S:Name* - balth2
@@ -184,7 +186,6 @@ File: OHRTRUTH.DLG, Line: 1, Owner: Action 0, Warning: Resource not found: S:Res
 File: OHRTRUTH.DLG, Line: 1, Owner: Action 3, Warning: Resource not found: S:ResRef*[CRE] - OHRSHADO
 File: OHRTRUTH.DLG, Line: 1, Owner: Action 8, Warning: Resource not found: S:ResRef*[CRE] - OHRSHADO
 File: RASAADP.DLG, Line: 48, Owner: Response trigger 2, Warning: Resource not found: S:ResRef*[ARE] - AR2906
-File: SHARWYNJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - MORAG4
 File: SKIEJ.DLG, Line: 2, Owner: State trigger 0, Warning: Script name not found: O:Object* - Eldoth
 File: SKIEJ.DLG, Line: 2, Owner: State trigger 1, Warning: Script name not found: O:Object* - Eldoth
 File: SKIEJ.DLG, Line: 1, Owner: State trigger 2, Warning: Script name not found: O:Object* - Eldoth
@@ -203,7 +204,6 @@ File: SLYTHE.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not foun
 File: TAKIYAH.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
 File: THEREL.DLG, Line: 2, Owner: State trigger 3, Warning: Script name not found: S:Name* - Dalton
 File: THEREL.DLG, Line: 1, Owner: State trigger 4, Warning: Script name not found: S:Name* - Daltan
-File: TOMIJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - MORAG4
 File: TOURIST.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: S:Name* - Tourist1
 File: TOWNCR.DLG, Line: 1, Owner: State trigger 3, Warning: Script name not found: S:Name* - Bassilus
 File: VAIL.DLG, Line: 1, Owner: Action 7, Warning: Script name not found: O:Actor* - RANCE

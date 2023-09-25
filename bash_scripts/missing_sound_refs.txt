@@ -1,5 +1,5 @@
 Illegal sound resrefs in string table
-Number of hits: 1773
+Number of hits: 1806
 StringRef: 564, Sound: SAREV01, Text: You are indeed family. No other could have lived to oppose me in person. Of course, it will not matter in the end. Ultimately, I will prevail, and a new era will be born unto the realms.
 StringRef: 1182, Sound: DRIZT02, Text: 
 StringRef: 1183, Sound: DRIZT08, Text: 
@@ -646,6 +646,7 @@ StringRef: 4290, Sound: YESLK11, Text: Ill I am, and when a dwarf says he's sick
 StringRef: 4291, Sound: YESLK14, Text:  'Tis just like the tunnels of my old clan. 
 StringRef: 4293, Sound: YESLK15, Text: I prefer the stone of my cell o'er this wide open empty.
 StringRef: 4295, Sound: YESLK17, Text: You need something?
+StringRef: 4296, Sound: YESLK18, Text: What e're ye need.
 StringRef: 4298, Sound: YESLK19, Text: Ye need only ask.
 StringRef: 4302, Sound: YESLK20, Text: As you will.
 StringRef: 4303, Sound: YESLK21, Text: Clangeddin's will be done.
@@ -663,6 +664,7 @@ StringRef: 4317, Sound: YESLK32, Text: Watch what you say. Good-natured I am, bu
 StringRef: 4318, Sound: YESLK33, Text: We fight for what's right, but you needn't take such pleasure in it.
 StringRef: 4319, Sound: YESLK34, Text: Kind words are always appreciated.
 StringRef: 4320, Sound: YESLK35, Text: Violence solves only the simplest problems. You must think your way through the tough ones. 
+StringRef: 4321, Sound: YESLK36, Text: A friendly face is a blessed sight in these times.
 StringRef: 4325, Sound: YESLK37, Text: Your ego is positively elven. Drop it a notch lest I do it for you.
 StringRef: 4326, Sound: YESLK40, Text: I've lost too many clan-mates already! Must I lose these as well?
 StringRef: 4327, Sound: YESLK41, Text: I wish no dwarf dead, but I'll not miss his company!
@@ -827,6 +829,7 @@ StringRef: 4698, Sound: THALT01, Text: I be Thalantyr, mighty mage of Beregost.
 StringRef: 4699, Sound: THALT02, Text: Why do I live in such a pissant town?
 StringRef: 4700, Sound: TAERM01, Text: Kiss me blarmy! What ya wish done?
 StringRef: 4701, Sound: TAERM02, Text: I can make whatever you wish for a wee little bit more than me competition.
+StringRef: 4702, Sound: CENTL01, Text: My spiderssss! Kill them. Kill them all!
 StringRef: 4703, Sound: SENIY01, Text: I have no quarrel with those who respect my forest.
 StringRef: 4704, Sound: SENIY02, Text: Never underestimate the power of nature's wrath!
 StringRef: 4705, Sound: ENTAR01, Text: What are intruders doing in my home?
@@ -960,6 +963,7 @@ StringRef: 4980, Sound: GONDP02, Text: My friend Oppenheimer's got some cool inv
 StringRef: 4983, Sound: READR01, Text: Our library is a man's harem of knowledge.
 StringRef: 4984, Sound: READR02, Text: Excuse me, but I am late for my classes.
 StringRef: 4985, Sound: FLAMN01, Text: I serve the Flaming Fist!
+StringRef: 4986, Sound: AMB_E14A, Text: I AM the law!
 StringRef: 4987, Sound: FLAMN03, Text: Every crime must be punished!
 StringRef: 4988, Sound: FLAMN04, Text: You there! Give me fifty pushups!
 StringRef: 5141, Sound: BBEAR02, Text: Hey, BooBoo. That's a nice pickinick basket. 
@@ -1127,6 +1131,7 @@ StringRef: 5459, Sound: PNOBL02, Text:
 StringRef: 5460, Sound: PNOBL03, Text: 
 StringRef: 5461, Sound: PNOBL13, Text: 
 StringRef: 5462, Sound: PNOBL14, Text: 
+StringRef: 5463, Sound: CENTL02, Text: 
 StringRef: 5464, Sound: BRAGE02, Text: 
 StringRef: 5465, Sound: GANTL01, Text: 
 StringRef: 5471, Sound: GONDP03, Text: 
@@ -1229,6 +1234,11 @@ Disadvantages:
 
 Requires at least 16 Constitution.
 StringRef: 9595, Sound: AJAN03, Text: AXE: This weapon class allows the character to use Battle axes and Throwing axes.
+StringRef: 9903, Sound: AMB_E40A, Text: 
+StringRef: 9904, Sound: AMB_E40B, Text: 
+StringRef: 9905, Sound: AMB_E40C, Text: 
+StringRef: 9906, Sound: AMB_E24, Text: 
+StringRef: 9907, Sound: AMB_E25, Text: 
 StringRef: 10134, Sound: ERROR09, Text: You are awakened from your rest.
 StringRef: 10135, Sound: ERROR09, Text: You are awakened from your rest.
 StringRef: 10143, Sound: ERROR09, Text: You are awakened as gibberlings come screaming out of the darkness.
@@ -1284,11 +1294,16 @@ StringRef: 11343, Sound: GORIN18, Text: Forgive me, but I have meditations to at
 StringRef: 11351, Sound: TRANZ01, Text: 
 StringRef: 11387, Sound: TAZOK13, Text: 
 StringRef: 11388, Sound: GORIN13, Text: Awake, my adopted child. Awake and face the terrible tests ahead of thee.
+StringRef: 11391, Sound: AMB_E04A, Text: 
+StringRef: 11392, Sound: AMB_E04B, Text: 
 StringRef: 11404, Sound: AMB_M03A, Text: 
+StringRef: 11406, Sound: AMB_M03B, Text: 
 StringRef: 11407, Sound: AMB_M05B, Text: 
 StringRef: 11409, Sound: AMB_M05C, Text: 
 StringRef: 11410, Sound: AMB_M05D, Text: 
 StringRef: 11411, Sound: AMB_M30, Text: 
+StringRef: 11416, Sound: AMB_M35B, Text: 
+StringRef: 11417, Sound: AMB_M35D, Text: 
 StringRef: 11545, Sound: HUSAM04, Text: 
 StringRef: 11620, Sound: GORIN14, Text: 
 StringRef: 11634, Sound: AMB_E43A, Text: 
@@ -1413,10 +1428,12 @@ StringRef: 12472, Sound: NIKLS04, Text:
 StringRef: 12473, Sound: RESAR03, Text: 
 StringRef: 12474, Sound: RESAR04, Text: 
 StringRef: 12475, Sound: DELOR03, Text: 
+StringRef: 12476, Sound: DELOR04, Text: 
 StringRef: 12477, Sound: HELSH03, Text: 
 StringRef: 12478, Sound: HELSH04, Text: 
 StringRef: 12479, Sound: ITHMR03, Text: 
 StringRef: 12480, Sound: ITHMR04, Text: 
+StringRef: 12483, Sound: RAGEF03, Text: 
 StringRef: 12484, Sound: RAGEF04, Text: 
 StringRef: 12485, Sound: RAMAZ03, Text: 
 StringRef: 12486, Sound: RAMAZ04, Text: 
@@ -1720,6 +1737,12 @@ StringRef: 19910, Sound: VOIC4W, Text:
 StringRef: 19911, Sound: VOIC5W, Text: 
 StringRef: 19912, Sound: VOIC6W, Text: 
 StringRef: 20288, Sound: AMB_E21, Text: 
+StringRef: 20291, Sound: AMB_E06B, Text: 
+StringRef: 20292, Sound: AMB_E05D, Text: 
+StringRef: 20294, Sound: AMB_E05E, Text: 
+StringRef: 20295, Sound: AMB_E05F, Text: 
+StringRef: 20312, Sound: AMB_E05G, Text: 
+StringRef: 20313, Sound: AMB_E05H, Text: 
 StringRef: 20622, Sound: AMB_M34A, Text: 
 StringRef: 23877, Sound: IKEEE_04, Text: There's a sucker born every minute, and you are right on time.
 StringRef: 53670, Sound: ELSOL107, Text: 
@@ -1794,53 +1817,63 @@ StringRef: 84793, Sound: BPI101, Text: Sssss!
 StringRef: 104502, Sound: T-ABI08, Text: 
 StringRef: 104518, Sound: _PSPID08, Text: 
 StringRef: 104519, Sound: _PSPID09, Text: 
-StringRef: 104681, Sound: TOMITHNX, Text: Thanks, mate!
-StringRef: 106167, Sound: MAUGR05, Text: Fools! I cannot be so easy slain!
-StringRef: 108257, Sound: NWDOOR52, Text: You have returned. What more can I tell you? What more do you think I know?
-StringRef: 108945, Sound: ARIBE142, Text: NP: Let's see... Hmm... You did the right thing bringing this paper here. Take this to Fentik - he's in charge of exposing the enemy. He will be very interested to look at this paper, no doubt. What else can I do for you?
-StringRef: 109823, Sound: DESTH080, Text: I and my Helmite brethren prefer to remain true in our faith, Fenthick - unlike some. We seek answers from the divine Helm, not a mortal like this <PRO_RACE>.
-StringRef: 111525, Sound: NASHE97, Text: Desther was a friend yesterday and an enemy today? A lifetime for such a change would be drastic to an elf. I suppose a day is unthinkable.
-StringRef: 116425, Sound: GURAK50, Text: Huh? Wizards bring you to bargain with them? Me tells them King Obould is all they needs! They not need you or nobody else!
-StringRef: 116489, Sound: GURAK51, Text: Why you come here? Me important orc, and not want be disturbed! All wizards need is King Obould, me says! They not need yous!
-StringRef: 116490, Sound: GURAK52, Text: You go away! Me not want be distrurbed! Wizards need me, they do, only me! They not need yous or nobody elses!
-StringRef: 117928, Sound: ZAMIT061, Text: NP: Keep your hands to yourself, <MALEFEMALE>...
-StringRef: 117929, Sound: ZAMIT062, Text: Thieves and robbers! How dare you rob me of my things!
-StringRef: 117970, Sound: ZOR050, Text: Why you break into my room! You be bounty hunter! Me end you life here!
-StringRef: 117971, Sound: ZOR051, Text: Wait! We stop fighting now! Me sees you brave warrior. Me wants talk moment before we fights more.
-StringRef: 117972, Sound: ZOR051, Text: You strong opponent! Me impressed! Me say name is Zor! Me tell you story, yeah? You spreads my word, maybe, before you kill me?
-StringRef: 118613, Sound: ARIBE434, Text: You make him sound like a murderer! It was not Fenthick who created the plague, nor Fenthick that betrayed the city! He was merely too trusting and too devoted to duty!
-StringRef: 120336, Sound: DRACO253, Text: Why have you returned to my cave, tiny creature? You would be wise to answer me, lest you incur the wrath of the mighty Gorgotha!
-StringRef: 120905, Sound: ANDAR50, Text: I, Endar Heartfood of the Black Lion tribe, greet you. As chieftain of this tribe I offer you our hospitality, despite the current tensions between the Uthgardt and the Lords' Alliance.
-StringRef: 120939, Sound: ANDAR51, Text: NP: I, Endar Big Heart of the Black Lion tribe, greet you. Your name is known to us, <CHARNAME>, as the name of the man who stood firm in Rolgan's defense at the trial. With you and your ancestors, may glory be with you henceforth. We are not ones to hoard treasure, all we can give is the appreciation of our tribe. But if there is anything I can do for you, just say the word and it will be done.
-StringRef: 120940, Sound: ANDAR52, Text: You, <CHARNAME>, are not welcome among this tribe. You promised to defend Rolgan, yet he is dead. You have broken your vow, you have dishonored yourself and your ancestors!
-StringRef: 120942, Sound: ANDAR53, Text: You are a good <PRO_MANWOMAN> to defend Rolgan, <CHARNAME>. I, Endar Heartfood of the Black Lion Tribe, greet you with honor.
-StringRef: 121748, Sound: AARIN571, Text: Once you have spoken with him you may return and speak to me.
-StringRef: 121839, Sound: ARCHEL05, Text: Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?
-StringRef: 121861, Sound: ARCHEL05, Text: Back again, <CHARNAME>? Is there something I can do for you?
-StringRef: 122028, Sound: ASHIR602, Text: I see by looking at you that you are not from my world of Azallah, but I thank you for your aid nonetheless.
-StringRef: 122029, Sound: ASHIR603, Text: Had you not intervened I fear I would have succumbed to the scaled raiders. My name is Asheera of the Shining Order, from the city of Sahaladar.
-StringRef: 122031, Sound: ASHIR604, Text: My garments are those of my people, though perhaps they look as strange to you as your own garb does to me.
-StringRef: 122032, Sound: ASHIR605, Text: As for the name Aribeth, I have no knowledge of her. Was she a companion of yours?
-StringRef: 122035, Sound: ASHIR606, Text: Morag? That name is known to me - the queen of the scaled raiders! Her face has haunted my dreams, her voice hissing whispered promises of power to tempt me to turn against my people.
-StringRef: 122036, Sound: ASHIR607, Text: But I am of the Shining Order, sworn in service to Sahaladar, greatest of the floating cities on Azallah. I have sworn to destroy Morag and save my people.
-StringRef: 122041, Sound: ASHIR623, Text: I am not Aribeth - I am Asheera. And yet, there are many worlds and planes of existence drawn together in this strange place.
-StringRef: 122042, Sound: ASHIR608, Text: All who dwell among the islands of Azallah know of Sahaladar, the foam kissed city above the sea. The spires of my home glimmer and sparkle like coral beneath the azure waters.
-StringRef: 122043, Sound: ASHIR615, Text: After much searching the magicians of Sahaladar discovered a portal in my world - a gate leading to this pseudo-plane where many universes converge.
-StringRef: 122044, Sound: ASHIR617, Text: The Old Ones seek to return to the world of their birth, but to do this they need slaves and resources gathered from other, weaker worlds.
-StringRef: 122045, Sound: ASHIR627, Text: Asheera, guardian of Sahaladar, is no traitor! Throughout the isles of Azallah my word is my bond, and none question my honor!
-StringRef: 122050, Sound: ASHIR624, Text: It may be that the one you call Aribeth is my parallel in your world - or I am her parallel, if you prefer. Perhaps that is why we have been brought together.
-StringRef: 122052, Sound: ASHIR609, Text: In the depths beneath our floating island is the wondrous capital of the Kilm, the water breathers with whom we peacefully share our world.
-StringRef: 122053, Sound: ASHIR616, Text: Six were chosen to come through the portal, though we knew we could not return. My companions have long since fallen.
-StringRef: 122054, Sound: ASHIR618, Text: Morag set the scaled raiders loose upon my homeworld. Azallah had never faced so terrible a foe; their savage cruelty was as alien as their appearance.
-StringRef: 122060, Sound: ASHIR625, Text: You say this Aribeth betrayed her faith, she was lost to Morag's evil. Perhaps we have met so that I may help you avenge her fall.
-StringRef: 122062, Sound: ASHIR616, Text: I alone am left of the champions of my people, but like my fallen companions I too have failed.
-StringRef: 122064, Sound: ASHIR619, Text: The scaled raiders stripped my defenseless world of its magical treasures and many of my people were sacrificed in bizarre rituals to feed the power of their queen.
-StringRef: 122067, Sound: ASHIR626, Text: I am a true knight of the Shining Order of Sahaladar. Perhaps I have been brought here from Azallah to redeem the memory of Aribeth, that her soul may be cleansed of its sins by my actions.
-StringRef: 122069, Sound: ASHIR620, Text: Vengeance is but one reason I am here. My world was peaceful - and vulnerable. That is why we were among the first to suffer.
-StringRef: 122071, Sound: ASHIR621, Text: But as Morag's strength grows, more of the Old Ones awaken. Soon a conquering army of her minions will pour forth to reclaim their homeworld.
-StringRef: 122072, Sound: ASHIR622, Text: Then Morag will enslave world after world and all will know the suffering of Azallah. I came here to prevent this, but I have failed.
-StringRef: 122073, Sound: ASHIR630, Text: May the ocean foam froth red with the blood of the scaled raiders!
-StringRef: 122211, Sound: HAERD112, Text: You must use the Words to enter the Source Stone itself and confront her before her magic becomes unstoppable!
-StringRef: 122303, Sound: MAUGR057, Text: You have come too late, the ritual is over, the awakening of the Old Ones has begun!
-StringRef: 122304, Sound: MAUGR058, Text: The Creator Race will be reborn - and you shall be the first to taste the power my Queen has given unto me!
-StringRef: 122318, Sound: NASHE125, Text: Enough, Aarin. <CHARNAME>, if you want to speak to Haedraline you are free to do so. But I will not release her from the dungeon while an enemy is within our city gates.
+StringRef: 104682, Sound: TOMITHNX, Text: Thanks, mate!
+StringRef: 106081, Sound: MAUGR05, Text: Fools! I cannot be so easy slain!
+StringRef: 108258, Sound: NWDOOR52, Text: You have returned. What more can I tell you? What more do you think I know?
+StringRef: 108946, Sound: ARIBE142, Text: NP: Let's see... Hmm... You did the right thing bringing this paper here. Take this to Fentik - he's in charge of exposing the enemy. He will be very interested to look at this paper, no doubt. What else can I do for you?
+StringRef: 109844, Sound: DESTH080, Text: I and my Helmite brethren prefer to remain true in our faith, Fenthick - unlike some. We seek answers from the divine Helm, not a mortal like this <PRO_RACE>.
+StringRef: 111617, Sound: NASHE97, Text: Desther was a friend yesterday and an enemy today? A lifetime for such a change would be drastic to an elf. I suppose a day is unthinkable.
+StringRef: 116475, Sound: GURAK50, Text: Huh? Wizards bring you to bargain with them? Me tells them King Obould is all they needs! They not need you or nobody else!
+StringRef: 116538, Sound: GURAK51, Text: Why you come here? Me important orc, and not want be disturbed! All wizards need is King Obould, me says! They not need yous!
+StringRef: 116539, Sound: GURAK52, Text: You go away! Me not want be distrurbed! Wizards need me, they do, only me! They not need yous or nobody elses!
+StringRef: 117924, Sound: ZAMIT061, Text: NP: Keep your hands to yourself, <MALEFEMALE>...
+StringRef: 117925, Sound: ZAMIT062, Text: Thieves and robbers! How dare you rob me of my things!
+StringRef: 117971, Sound: ZOR050, Text: Why you break into my room! You be bounty hunter! Me end you life here!
+StringRef: 117972, Sound: ZOR051, Text: Wait! We stop fighting now! Me sees you brave warrior. Me wants talk moment before we fights more.
+StringRef: 117973, Sound: ZOR051, Text: You strong opponent! Me impressed! Me say name is Zor! Me tell you story, yeah? You spreads my word, maybe, before you kill me?
+StringRef: 118614, Sound: ARIBE434, Text: You make him sound like a murderer! It was not Fenthick who created the plague, nor Fenthick that betrayed the city! He was merely too trusting and too devoted to duty!
+StringRef: 119918, Sound: DRACO253, Text: Why have you returned to my cave, tiny creature? You would be wise to answer me, lest you incur the wrath of the mighty Gorgotha!
+StringRef: 120906, Sound: ANDAR50, Text: I, Endar Heartfood of the Black Lion tribe, greet you. As chieftain of this tribe I offer you our hospitality, despite the current tensions between the Uthgardt and the Lords' Alliance.
+StringRef: 120940, Sound: ANDAR51, Text: NP: I, Endar Big Heart of the Black Lion tribe, greet you. Your name is known to us, <CHARNAME>, as the name of the man who stood firm in Rolgan's defense at the trial. With you and your ancestors, may glory be with you henceforth. We are not ones to hoard treasure, all we can give is the appreciation of our tribe. But if there is anything I can do for you, just say the word and it will be done.
+StringRef: 120941, Sound: ANDAR52, Text: You, <CHARNAME>, are not welcome among this tribe. You promised to defend Rolgan, yet he is dead. You have broken your vow, you have dishonored yourself and your ancestors!
+StringRef: 120943, Sound: ANDAR53, Text: You are a good <PRO_MANWOMAN> to defend Rolgan, <CHARNAME>. I, Endar Heartfood of the Black Lion Tribe, greet you with honor.
+StringRef: 121306, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You must help me. This waitress wants to kick me out! She says I'll drink! Shaw me so impossible! I'm Lillian Cambridgedj! Aarin Gend needs help to find the shlov of power!
+StringRef: 121313, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You really should t-try the wine here. The first couple of bottles go so-so, but then ... uhhhhh!
+StringRef: 121322, Sound: LILLIAN5, Text: About time you showed up. I've been waiting at least ten minutes for someone to come by and refill my drink!
+StringRef: 121392, Sound: LILLIAN5, Text: NP: ** Greetings - again,<CHARNAME> . I hope your search for my missing snow sphere is going better than my search for a good glass of wine in this place. It's not that I haven't tried. *hic* Oh, sorry. Looks like I should slow down... I shouldn't have gotten drunk all at once, I guess...
+StringRef: 121749, Sound: AARIN571, Text: Once you have spoken with him you may return and speak to me.
+StringRef: 121840, Sound: ARCHEL05, Text: Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?
+StringRef: 121862, Sound: ARCHEL05, Text: Back again, <CHARNAME>? Is there something I can do for you?
+StringRef: 122029, Sound: ASHIR602, Text: I see by looking at you that you are not from my world of Azallah, but I thank you for your aid nonetheless.
+StringRef: 122030, Sound: ASHIR603, Text: Had you not intervened I fear I would have succumbed to the scaled raiders. My name is Asheera of the Shining Order, from the city of Sahaladar.
+StringRef: 122032, Sound: ASHIR604, Text: My garments are those of my people, though perhaps they look as strange to you as your own garb does to me.
+StringRef: 122033, Sound: ASHIR605, Text: As for the name Aribeth, I have no knowledge of her. Was she a companion of yours?
+StringRef: 122036, Sound: ASHIR606, Text: Morag? That name is known to me - the queen of the scaled raiders! Her face has haunted my dreams, her voice hissing whispered promises of power to tempt me to turn against my people.
+StringRef: 122037, Sound: ASHIR607, Text: But I am of the Shining Order, sworn in service to Sahaladar, greatest of the floating cities on Azallah. I have sworn to destroy Morag and save my people.
+StringRef: 122042, Sound: ASHIR623, Text: I am not Aribeth - I am Asheera. And yet, there are many worlds and planes of existence drawn together in this strange place.
+StringRef: 122043, Sound: ASHIR608, Text: All who dwell among the islands of Azallah know of Sahaladar, the foam kissed city above the sea. The spires of my home glimmer and sparkle like coral beneath the azure waters.
+StringRef: 122044, Sound: ASHIR615, Text: After much searching the magicians of Sahaladar discovered a portal in my world - a gate leading to this pseudo-plane where many universes converge.
+StringRef: 122045, Sound: ASHIR617, Text: The Old Ones seek to return to the world of their birth, but to do this they need slaves and resources gathered from other, weaker worlds.
+StringRef: 122046, Sound: ASHIR627, Text: Asheera, guardian of Sahaladar, is no traitor! Throughout the isles of Azallah my word is my bond, and none question my honor!
+StringRef: 122051, Sound: ASHIR624, Text: It may be that the one you call Aribeth is my parallel in your world - or I am her parallel, if you prefer. Perhaps that is why we have been brought together.
+StringRef: 122053, Sound: ASHIR609, Text: In the depths beneath our floating island is the wondrous capital of the Kilm, the water breathers with whom we peacefully share our world.
+StringRef: 122054, Sound: ASHIR616, Text: Six were chosen to come through the portal, though we knew we could not return. My companions have long since fallen.
+StringRef: 122055, Sound: ASHIR618, Text: Morag set the scaled raiders loose upon my homeworld. Azallah had never faced so terrible a foe; their savage cruelty was as alien as their appearance.
+StringRef: 122061, Sound: ASHIR625, Text: You say this Aribeth betrayed her faith, she was lost to Morag's evil. Perhaps we have met so that I may help you avenge her fall.
+StringRef: 122063, Sound: ASHIR616, Text: I alone am left of the champions of my people, but like my fallen companions I too have failed.
+StringRef: 122065, Sound: ASHIR619, Text: The scaled raiders stripped my defenseless world of its magical treasures and many of my people were sacrificed in bizarre rituals to feed the power of their queen.
+StringRef: 122068, Sound: ASHIR626, Text: I am a true knight of the Shining Order of Sahaladar. Perhaps I have been brought here from Azallah to redeem the memory of Aribeth, that her soul may be cleansed of its sins by my actions.
+StringRef: 122070, Sound: ASHIR620, Text: Vengeance is but one reason I am here. My world was peaceful - and vulnerable. That is why we were among the first to suffer.
+StringRef: 122072, Sound: ASHIR621, Text: But as Morag's strength grows, more of the Old Ones awaken. Soon a conquering army of her minions will pour forth to reclaim their homeworld.
+StringRef: 122073, Sound: ASHIR622, Text: Then Morag will enslave world after world and all will know the suffering of Azallah. I came here to prevent this, but I have failed.
+StringRef: 122074, Sound: ASHIR630, Text: May the ocean foam froth red with the blood of the scaled raiders!
+StringRef: 122216, Sound: HAERD112, Text: You must use the Words to enter the Source Stone itself and confront her before her magic becomes unstoppable!
+StringRef: 122308, Sound: MAUGR057, Text: You have come too late, the ritual is over, the awakening of the Old Ones has begun!
+StringRef: 122309, Sound: MAUGR058, Text: The Creator Race will be reborn - and you shall be the first to taste the power my Queen has given unto me!
+StringRef: 122323, Sound: NASHE125, Text: Enough, Aarin. <CHARNAME>, if you want to speak to Haedraline you are free to do so. But I will not release her from the dungeon while an enemy is within our city gates.
+StringRef: 122539, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You must help me. This waitress wants to kick me out! She says I'll drink! Shaw me so impossible! I'm Lillian Cambridgedj! Aarin Gend needs help to find the shlov of power!
+StringRef: 122540, Sound: LILLIAN5, Text: NP: **hiccup** Hey, I d-know you! You are one of those who are hired by the x-heroic Gends to find the Words of Power, yes! **hiccup** H-k-no, it is. You really should t-try the wine here. The first couple of bottles go so-so, but then ... uhhhhh!
+StringRef: 122541, Sound: LILLIAN5, Text: About time you showed up. I've been waiting at least ten minutes for someone to come by and refill my drink!
+StringRef: 122542, Sound: LILLIAN5, Text: NP: ** Greetings - again,<CHARNAME> . I hope your search for my missing snow sphere is going better than my search for a good glass of wine in this place. It's not that I haven't tried. *hic* Oh, sorry. Looks like I should slow down... I shouldn't have gotten drunk all at once, I guess...
+StringRef: 122543, Sound: ARCHEL05, Text: Greetings, I am Master Ford, head archeologist of Neverwinter. Lord Nasher mentioned someone might be coming to investigate the Source Stone. <CHARNAME>, isn't it?
+StringRef: 122544, Sound: ARCHEL05, Text: Back again, <CHARNAME>? Is there something I can do for you?
