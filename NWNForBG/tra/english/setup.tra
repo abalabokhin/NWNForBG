@@ -658,15 +658,17 @@ Similar bows can often be found in the frosty regions of the Ten Cities, but thi
 
 STATISTICS:
 
+Combat Abilities:
+- 55% chance to deal an additional 2D3 fire damage per hit
+
+Equipped Abilities:
+- 1 additional attack per round
+- Constitution: +1
+- Fire resistance: +30%
+- Cold resistance: +30%
+
 Damage: +3
 THAC0: +3
-
-Abilities:
-  55% chance to deal an additional 2D3 fire damage
-  1 additional attack
-  Constitution: +1
-  +30% resistance to fire and cold.
-
 Weight: 3
 Speed Factor: 7
 Proficiency Type: Short Bow
@@ -686,7 +688,7 @@ Not Usable By:
 
 STATISTICS:
 
-Abilities:
+Equipped Abilities:
 - Immunity to enchantment
 - Immunity to sleep
 - Magic Resistance: +10
@@ -755,10 +757,10 @@ STATISTICS:
 Damage: 1d6
 Damage Type: Piercing
 
-Abilities:
+Combat Abilities:
 - Act as a silver weapon:
-- +4D8 extra damage to undead
-- +3 extra damage to werewolves +3
+- Extra damage to undead: +4D8
+- Extra damage to werewolves: +3
 
 Weight: 0
 Weapon: Bow~
@@ -767,8 +769,8 @@ Weapon: Bow~
 
 STATISTICS:
 
-Abilities:
-- Forged from cold iron
+Equipped Abilities:
+- The weapon is forged from cold iron
 
 Damage: 1d6+1, +1d6+1 (Slashing)
 THAC0: +2
@@ -804,7 +806,7 @@ Equipped abilities:
 - Dexterity: +1
 - Hide in Shadows and Detect Illusions: +30
 
-Abilities:
+Charge Abilities:
 - Detect Invisibility 3 times per day
 - Mass Invisibility 1 time per day
 
@@ -841,7 +843,7 @@ Not Usable By:
 
 STATISTICS:
 
-Abilities:
+Equipped Abilities:
 - Magic Resistance: +10
 - Strength: +1
 - Immune to fear and confusion
@@ -1013,8 +1015,8 @@ This note should be shown to someone in authority.~
 
 STATISTICS:
 
-Abilities:
-  Dispel Magic (15 charges)
+Charge Abilities:
+- Dispel Magic (15 charges)
   Range: Caster's field of vision.
 
 Not Usable By:
@@ -3946,15 +3948,12 @@ The last page is of particular interest and reads:
 
 "Kerik took ten years to complete the project, but when it was finished the citizens of the kingdom gaped in amazement at the wonder that had been wrought. Lagosra was pleased and bestowed upon Kerik the honor of being first sacrifice at the tomb's blessing."~
 @103317 = ~Halueth Dig Logbook~
-@103318 = ~NP: This book tells about the first search for the tomb of Halwet Nevers. She's not finished. Apparently, the author died of pestilence before he had time to finish it, but here are the coordinates of three possible burial sites, in addition to the one in the peninsula area. Beggar's Nest: Great Cemetery Waterfront: aqueducts in the northwestern quarter Blackzero: southwestern quarter Location descriptions are inaccurate, but the book mentions that each tomb is most likely sealed by magic. A certain riddle is the 'key' to every door. The solution to the door to the tomb on the Peninsula is 'Emerald.' The answer was found when an emerald was placed next to the door in a container. It should be noted that this action destroyed the stone, which made this discovery quite expensive.~ /*This book details the initial search for the tomb of Halueth Never. It is unfinished, the writer obviously falling to the plague before he could include many details, but it does point to the possible locations for three tombs in addition to the one in the Peninsula District.
+@103318 = ~This book details the initial search for the tomb of Halueth Never. It is unfinished, the writer obviously falling to the plague before he could include many details, but it does point to the possible locations for three tombs in addition to the one in the Peninsula District.
 Beggar's Nest: Great Graveyard
 Docks District: Northwestern quarter aqueducts
 Blacklake District: Southwestern quarter
 
-The directions are vague, but the book does mention that each tomb is likely sealed with a magically protected door. A riddle of some sort is the "key" to each. The solution to the Peninsula tomb door was "Emerald," which was answered by actually placing an emerald in the container immediately next to the door. It is worth noting that this action seemed to destroy the item, making it an expensive discovery.
-
-Text of the "Emerald riddle" on the Peninsula tomb:
-Diamond of the forest, if the seasons never changed.*/
+The directions are vague, but the book does mention that each tomb is likely sealed with a magically protected door. A riddle of some sort is the "key" to each. The solution to the Peninsula tomb door was "Emerald," which was answered by actually placing an emerald in the container immediately next to the door. It is worth noting that this action seemed to destroy the item, making it an expensive discovery.~
 @103319 = ~Lady Tanglebrook's Journal~
 @103320 = ~...Everyone, everyone is dead. All I have left is my cousin Alaefin, the Head Gaoler. He has been so good to me in the past, even building a tunnel between his office and the estate so I could visit him without running the risk of actually walking the dangerous peninsula streets. How fortuitous that these same tunnels now protect me from exposure to the plague. I am going to meet with him later today, for I know a good game of chess shall cheer me up from this spiteful malaise into which I have fallen.
 Hmm -- that was odd. I thought I heard something crashing around downstairs but when I went down there, there was nothing. Must have been the rats! Oh, how I hate living alone. I shall visit my cousin at once!~
@@ -3970,9 +3969,17 @@ I have decided to experiment upon this dryad and find a cure for this plague on 
 
 Excerpt (Several Days Later):
 I cannot get the dryad out of my mind. Thoughts of her are with me always. Today I attempted to draw blood from her to fuel my experiment and found I could not hurt her even that much. Has she enchanted me? Or am I simply lonely for such beauty? I cannot think clearly. Still she recoils from my touch... I must win her love, I must! I will not release her from the cage until she feels as I do!~
-@103323 = ~NP: True Strike Volume~ /*The Nightthief's Claw*/
-@103324 = ~NP: Secret symbols are printed on the cover of this book, there is no doubt that it has magical properties of one kind or another. Until you try to read or identify it, its exact origin will remain a mystery to you.~ /*This bracelet appears to have no magical properties, though its simple yet elegant design should bring a fair price at market.*/
-@103325 = ~NP: Tome of Precise Strike Reading this tome permanently gains a +1 bonus to THAC0. STATS: Permanent +1 bonus to THAC0. The volume disappears after being read.~ /*It's one thing to say the law is always right, but there are exceptions to every rule.*/
+@103323 = ~Tome of Precision Strike~
+@103324 = ~Arcane symbols are inscribed on the cover of this book, there is no doubt that it has magical properties of one kind or another. Until you try to read or identify it, its exact origin will remain a mystery to you.~
+@103325 = ~Tome of Precision Strike
+
+One who read this volume permanently gain a +1 bonus to THAC0.
+
+STATISTICS:
+
+Improves THAC0 by 1
+Special: The book is consumed upon use
+Usage: Place into quick item slot~
 @103326 = ~Black Grimoire~
 @103327 = ~This aged text feels cold to the touch, and your fingers are numb after handling it. Within its tainted pages are revealed the methods by which a person can summon forth the most heinous of creatures. Interestingly, there are also instructions on how to banish evil once summoned, should it prove too troublesome for the caster to deal with. This book would have to be used in very controlled circumstances, lest it have no effect, or worse, an uncontrolled one. Merely having it in one's possession will allow the use of a properly prepared altar.~
 @103328 = ~Small Diary~
@@ -4002,23 +4009,45 @@ No conclusion seems to have been drawn, but it is pointed out in several places 
 "The High Captains decimate each other daily, just as I suspected. I care not whether any of the fools actually succeed... better is they all die, for none of them will lead the army as I promised them. Morag's nightly visits to Aribeth have had the desired effect: the former paladin has come and lain herself willingly at our feet. She shall lead the great host herself as Morag's champion! The Words will be ours and Morag shall triumph! Glorious shall be the day!"~
 @103334 = ~Host Tower Lab Notes~
 @103335 = ~This book explains that the focus of a lab found on this level is to summon a powerful weapon. The arcane ritual appears to mention two ingredients to be placed within the Alchemist's Apparatus - a gargoyle's skull and a slaad's tongue. It is not clear which spell is to be the catalyst that summons the item but the final line reads: 'Dispel the magical essence from the components that you may reap your reward.'~
-@103336 = ~NP: Helm's Holy Bow~ /*Holy Avenger*/
-@103337 = ~NP: Such weapons can only be found in the temples of Helm, these are the weapons of the Holy Guardians. The runic inscription indicates a secret word that can be used to create 5 piercing arrows per day. STATS: THACO: +3 Damage: +3 2.5 attacks per round Features: 1 time per day creates 5 piercing arrows Speed factor: 5 Skill type: longbow Class: 2-handed Weight: 2 Cannot use: Druid Priest Mage Thief Bard~ /*Weapons such as these not only protect against magical attack, they also improve the wielder's ability to research new spells and make him more aware of threats. Long research has traced their origin to the extinct Netherese civilization, but of their creator nothing is known.*/
-@103338 = ~NP: Cult Priest~ /*Holy Urn*/
-@103339 = ~NP: Cult Mage~ /*Catapult*/
-@103340 = ~NP: Cult Warrior~ /*Cultist*/
-@103341 = ~NP: Cult Assassin~ /*Assassin*/
+@103336 = ~Helm's Holy Bow~
+@103337 = ~Such a weapon can only be found in the temples of Helm, it is the weapon of the Holy Guardians. The runic inscription indicates a secret word that can be used to create 5 Arrows of Piercing.
+
+STATISTICS:
+
+Equipped Abilities:
+- 2.5 attacke per round
+
+Charge Abilities:
+- Create 5 Arrows of Piercing once per day
+
+Damage: +3
+THAC0: +3
+Speed Factor: 5
+Proficiency Type: Short Bow
+Type: Two-handed
+Weight: 2
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Thief
+ Bard~
+@103338 = ~Cult Priest~
+@103339 = ~Cult Mage~
+@103340 = ~Cult Warrior~
+@103341 = ~Cult Assassin~
 @103342 = ~Cultist~
-@103343 = ~NP: Obedient~ /*Listen up.*/
-@103344 = ~NP: Raging black bear~ /*Cave Bear*/
+@103343 = ~Acolyte~
+@103344 = ~Rabid Black Bear~
 @103345 = ~Stay your wrath... this battle is lost to me... I yield.~
-@103346 = ~NP: Mad Bear~ /*Black Bear*/
-@103347 = ~NP: Dread Warrior~ /*Hook Horror*/
-@103348 = ~NP: Strong Skeleton~ /*Tough Goblin*/
-@103349 = ~NP: Follow me, Lord Nasher is waiting for us.~ /*Follow me, then. I shall lead the way.*/
-@103350 = ~NP: Start the ritual!~ /*Complete the Ritual.*/
-@103351 = ~NP: All spells are cast, the ritual is over. Now we have a cure!~ /*It's done... it worked! We have the cure!*/
-@103352 = ~NP: Just a minute, the last spell to enhance the properties of the medicine.~ /*I have recovered one of the reagents for the cure.*/
+@103346 = ~Rabid Bear~
+@103347 = ~Dread Warrior~
+@103348 = ~Strong Skeleton~
+@103349 = ~Follow me, Lord Nasher is waiting for us.~
+@103350 = ~Start the ritual!~
+@103351 = ~All spells are read, the ritual is over. We have the cure!~
+@103352 = ~Just a moment, one last spell to enhance the properties of the cure.~
 @103353 = ~NP: Fools, you won't have a cure!~ /*Hey, no reward, no cure.*/
 @103354 = ~NP: Brothers, kill everyone here!~ /*Kill them, kill them all!*/
 @103355 = ~NP: Dester, stop! Where are you going?~ /*Wait, now... who be you?*/
