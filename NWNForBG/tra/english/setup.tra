@@ -591,7 +591,6 @@ STATISTICS:
 - Improved Haste, 1 time per day
 - Improved Invisibility, 3 times per day
 
-
 Armor Class: +2
 Saving Throws: +2
 
@@ -1373,7 +1372,7 @@ Charged abilities:
 Equipped abilities:
 - Max HP: +10
 - Regenerates 2 HP every 6 seconds
-– Armor Class: +3
+- Armor Class: +3
 
 Weight: 1
 
@@ -3605,48 +3604,61 @@ The city of Luskan rises and falls on the quarrels of its High Captains. Lately,
 @103209 = ~This seal has been broken.~
 @103210 = ~Head of Evil to prove the hero's courage.~
 @103211 = ~A measure of blessed water to cleanse the hero's soul.~
-@103212 = ~NP: The final seal has been broken, and the entrance to the lair of Voleron the Accursed opens before you.~ /*The final seal has been broken and the ruins of Illusk are open to you.*/
+@103212 = ~The final seal has been broken and the entrance to the lair of Voleron the Damned opens to you.~
 @103213 = ~Luskan: The High Captains
 
 The city of Luskan rises and falls on the quarrels of its High Captains. Lately, those quarrels have become an all-out war for supremacy and the two remaining contenders, Kurth and Baram, have pulled out all the stops. Very recently, adventurers assassinated Kurth in an attempt to bring this bloody feud to its bitter end and have returned to Baram for their promised reward.~
 @103214 = ~Luskan: The High Captains
 
 The city of Luskan rises and falls on the quarrels of its High Captains. When those quarrels recently escalated into an all-out war for supremacy, the two remaining contenders, Kurth and Baram, pulled out all the stops. Adventurers from Neverwinter took advantage of the situation and assassinated both men, finally bringing the longstanding reign of the High Captains to its bitter end.~
-@103215 = ~NP: Portal closed~ /*The portal has been closed.*/
-@103216 = ~NP: To Baram's Lair~ /*Baram's Head*/
-@103217 = ~NP: In the docks of Luskan~ /*To Luskan.*/
+@103215 = ~The portal has been closed.~
+@103216 = ~To Baram's Lair~
+@103217 = ~To the Docks of Luskan~
 @103218 = ~The portal in the center of the room is obviously a construction of magic, its energies being sustained in an artificial manner. Its purpose is unknown... but the aura it gives off fills the room with a dire chill and a sense of evil.~
-@103219 = ~NP: This statue oozes coldness. There is no inscription saying who it could be.~ /*The unblinking eyes of this stature blankly return your gaze. There is no marker identifying who this figure might have been.*/
-@103220 = ~NP: You cannot use the portal without a magic stone.~ /*You may not use the relic at this time.*/
-@103221 = ~NP: Freezing Snilloc~ /*Castle, alcove*/
-@103222 = ~NP: Freeze Snillok (Evocation) Level:2 Range: Caster's view Duration: Instantaneous Cast Time: 2 Area of Interest: 30' Radius Saving Throw: 1/2 damage A flurry of icy plasma erupts from the caster's chosen location. The plasma blast hits everyone in the area of effect, dealing 1d3 points of damage per caster level, up to a maximum of 8d3 points of damage at 8th level. To firespawns such as Ifrits and Fire Elementals, the spell deals 1d6 points of damage per level.~ /*Type of Feat: MetamagicPrerequisite: Ability to cast 1st-level spells.
-Specifics: Still spells are cast without a somatic component. Any penalties incurred from casting in armor do not apply to a spell prepared with this feat.
-Use: A stilled spell occupies a spell slot one level higher than normal.*/
-@103223 = ~NP: Halruaa Academy~ /*Academy*/
-@103224 = ~Amulet of Health~
-@103225 = ~NP: This amulet was created to increase the wearer's stamina and ability to regenerate. His immense strength raises the fighter's ability to withstand damage to incredible heights, and also raises the stamina of weaker heroes. PARAMETERS: Constitution is set to 19 Regenerate 2 health points per round Disease Immunity Weight: 1 Used by: Everyone~ /*Type of Feat: ClassPrerequisite: Arcane Archer level 8.
-Specifics: In lieu of a regular attack, once per day an 8th level Arcane Archer can fire an arrow at each and every target within range, to a maximum of one target for every Arcane Archer level they have.
-Use: Selected.*/
-@103226 = ~Lass~
-@103227 = ~NP: Priestess Auril~ /*Priestess of Auril*/
-@103228 = ~NP: Mighty Slime~ /*Mighty*/
-@103230 = ~NP: You won!~ /*We shall triumph!*/
-@103231 = ~Greater Dispelling~
-@103232 = ~NP: Greater Dispel (Repudiation) Level: 6 Range to Target: In caster's line of sight Duration: Special Cast Time: 5 Area of Coverage: 30-foot cube Saving Throw: Special Greater Dispel removes magical effects from everyone in the area. This includes the effects of spells, potions, and magical items such as wands. Unlike normal dispel magic, this spell removes all protective magical effects, such as stone skin or magical armor or weapons. The chance of a successful dispel is determined by the level of the caster and the level of magic being dispelled. The initial chance of a successful dispel is 50%. For each level of the caster that is greater than the initial dispel level, the chance of a successful dispel is increased by 5%. For each caster level less than the initial dispel level, the chance of success is reduced by 10%. However, despite the difference in levels, there is always a 1% chance of success or failure. Thus, if the caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Likewise, if the caster is 4 levels below the magic they are trying to dispel, there is only a 10% chance of success. Accordingly, if the target is 5 or more levels higher than the caster, the spell will be useless.~ /*Caster Level(s): Wizard / Sorcerer 9Innate Level: 9
-School: Abjuration
-Descriptor(s): 
-Component(s): Verbal
-Range: Medium
-Area of Effect / Target: Single or Colossal
+@103219 = ~This statue is cold. There is no marker identifying who this figure might have been.~
+@103220 = ~You cannot use the portal without a magical stone.~
+@103221 = ~Snilloc's Snowball Swarm~
+@103222 = ~Snilloc's Snowball Swarm
+(Evocation)
+
+Level: 2
+Range: Visual range of the caster
 Duration: Instant
-Additional Counter Spells: 
-Save: None
-Spell Resistance: No
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
 
-Mordenkainen's Disjunction attempts to strip all magical effects from a single target. It can also target a group of creatures, attempting to remove the two most powerful spell effects from each creature. To remove an effect, the caster makes a dispel check of 1d20, +1 per caster level (to a maximum of +40) against a DC of 11 + the spell effect's caster level. In addition to its ability to dispel effects, this spell also strips a single enemy of up to 6 magical defenses or a group of enemies of two spell protections each. Finally, the spell will lower the SR of all creatures within the area of effect by 10.
+This spell causes a flurry of snowballs to erupt from a point within range. These snowballs will hit everything within the area of effect, doing 1d3 points of cold damage per level, up to a maximum of 8d3 points at level 8. Against fire-using or fire-dwelling creatures, it inflicts 1d6 points of cold damage per level, up to a maximum of 8d6 points at level 8.~
+@103223 = ~Halruaa Academy~
+@103224 = ~Amulet of Health~
+@103225 = ~This amulet was created to increase the stamina and regenerative ability of its wearer. Its immense power raises a fighter's ability to withstand damage to incredible heights, as well as raising the stamina of weaker heroes.
 
-Affected spells include: Spell Mantles, Globes of Invulnerability, Stoneskins, Premonition, Protection from Elements, Ghostly and Ethereal Visage, Mage Armor, Shadow Shield and Elemental Shield.*/
-@103233 = ~NP: The fight begins~ /*But of course.*/
+STATISTICS:
+
+Equipped abilities:
+- Constitution: 19
+- Regenerates 2 HP per round
+- Immunity to Disease
+
+Weight: 1
+@103226 = ~Lass~
+@103227 = ~Priestess of Auril~
+@103228 = ~Mighty Slime~
+@103230 = ~You won!~
+@103231 = ~Greater Dispelling~
+@103232 = ~Greater Dispelling
+(Abjuration)
+
+Level: 3
+Sphere: Protection-
+Range: 40 ft.   
+Duration: Instant
+Casting Time: 6-
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+A Dispel Magic spell removes magical effects upon anyone within the area. This includes effects given from spells, potions and certain magical items such as wands. Unlike Dispel Magic, this spell removes all protective magical effects, such as Spell Turning or magical armor or weapons. The chance of the dispel succeeding is determined by the level of the caster and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of the Dispel Magic is above the original caster, <PRO_HISHER> chance of success increases by 5%. For every level that the caster of Dispel Magic is below the original caster, <PRO_HISHER> chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 5% chance of success or failure. Thus, if a caster is 10 levels higher than the magic <PRO_HESHE> is trying to dispel, there is only a 5% chance of failure. Similarly if the caster is 4 levels lower than the magic <PRO_HESHE> is trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the caster.~
+@103233 = ~The fight begins~
 @103234 = ~Former Guard~
 @103235 = ~History of the Creator Races~
 @103236 = ~In a time when the North was always warm and the seas of the world were deeper, empires of inhuman peoples dominated the lands of Toril. In the elven tradition, these were the days when the Iquar'Tel'Quessir, or creator races, tamed the wilds, built towering cities of stone and glass on the shores of the warm seas, spanned the wilderness with winding roads, and fought wars of extermination - such was their hatred toward each other. These were the Days of Thunder.
@@ -3884,10 +3896,20 @@ Lord Nasher is always accompanied by his bodyguard, the Neverwinter Nine. These 
 @103297 = ~Imaskarran Tome of Life~
 @103298 = ~This heavy and tattered tome is labeled with a large and ancient rune that translates simply to 'Life'. Among its more interesting passages is the following:
 "By using an Endure Elements spell to protect their essences, a Fen Berry and a Quartz crystal can be combined. The powerful magical energy that results from their union can then be used to craft a magical ring."~
-@103299 = ~NP: Tome to me~ /*Tome*/
-@103300 = ~NP: This book details how to cast various spells. After reading this book, the wizard will be able to cast spells much faster. Unfortunately, after one reading, the tome disappears. PARAMETERS: Increases spell casting speed by 1 Traits: after reading the book disappears Use: put the book in a quick item slot Weight: 10 Use: Mage Sorcerer Bard~ /*Type of Feat: Epic SpellPrerequisite: 21st level, the ability to cast 9th level spells and 15 ranks in spellcraft.
-Specifics: The caster summons a powerful mummy warrior to do their bidding.
-Use: Cast.*/
+@103299 = ~Tome of Mage~
+@103300 = ~This book describes in detail how to read various spells. After reading this book, a wizard will be able to read spells much faster. Unfortunately, after one reading, the tome disappears.
+
+STATISTICS:
+
+Improves casting speed by 1
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10
+Usable By:
+ Mage
+ Sorcerer
+ Bard~
 @103301 = ~Imaskarran Tome of Ice~
 @103302 = ~This heavy and tattered tome is labeled with a large and ancient rune that translates simply to 'Ice'. Among its more interesting passages is the following:
 "Calling forth the icy grip of death within the constraints of a spell too often results in the death of the caster and target alike. Yet if the reagent of death, in this case the Skeleton Knuckle, is gripped within the strength of the Quartz Crystal and then the spell Mage Armor is cast, the tendrils of death are redirected. This potent magic effect has been placed on more than one amulet hung close to the wearer's heart, a ward to keep death at arm's length a while longer."~
