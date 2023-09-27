@@ -587,7 +587,23 @@ ADD_MUSIC ~NWN84~ ~NWNForBG/mus/NW84.mus~            // was 156
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY ~NWNForBG/map_ee~ ~override~
 END ELSE BEGIN
+  // installing MOS
   COPY ~NWNForBG/map~ ~override~
+  INCLUDE ~NWNForBG/lib/a7_tools.tpa~
+  // installing TIS for vanila
+  ACTION_BASH_FOR  ~NWNForBG/map_ee~ ~.*\.TIS$~ BEGIN
+    LAF HANDLE_TILE2EE
+      INT_VAR
+        silent = 0  // show feedback
+      STR_VAR
+        input_path = EVAL ~%BASH_FOR_FILESPEC%~
+      RET
+        num_converted
+    END
+    ACTION_IF (num_converted != 1) BEGIN
+      FAIL ~Error converting %file%~
+    END
+  END
 END
 
 COPY ~NWNForBG/are~ ~override~
