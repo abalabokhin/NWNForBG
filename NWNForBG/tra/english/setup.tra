@@ -4144,20 +4144,28 @@ Brother Brightmane
 --------------------
 
 What follows is a detailed description of the Crafting of Divine Potions.~
-@103402 = ~NP: An excerpt from a diary~ /*Journal Name*/
-@103403 = ~NP: It looks like an excerpt from someone's diary. The only legible words are: &quot;I hunted him for years, and with a simple bite, he turned me into what I hate more than anything in the world! I won't survive if those guys become werewolves! I'll go and try to find out what happened to them. Until I find them, I will not return to this cave - this prison in which I must pay for my mistake.&quot; The cave where this note was found shows evidence of recent human habitation, although the person who wrote the note appears to have left long ago.~ /*This seems to be a fragment of someone's journal. The only words that can be made out are: "I have hunted him for years and with a simple bite, he has turned me into the very thing I hate! I could not bear it if those boys remain werewolves! I shall go and try to discover what has happened to them. Until I find them, I will not return to this cave - this prison where I must pay for my mistake." The cave where this was found show signs of recent human activity though the writer seems to vacated it for the time being.*/
-@103404 = ~NP: Great Lich~ /*The Great Oak*/
+@103402 = ~Journal Fragment~
+@103403 = ~This seems to be a fragment of someone's journal. The only words that can be made out are: "I have hunted him for years and with a simple bite, he has turned me into the very thing I hate! I could not bear it if those boys remain werewolves! I shall go and try to discover what has happened to them. Until I find them, I will not return to this cave - this prison where I must pay for my mistake." The cave where this was found show signs of recent human activity though the writer seems to vacated it for the time being.~
+@103404 = ~Great Lich~
 @103405 = ~Bloodsailor Lieutenant~
-@103407 = ~NP: Small book of knowledge~ /*Lesser Spell Mantle*/
-@103408 = ~NP: This book contains information about a variety of objects and phenomena. The reader of this book will certainly increase his knowledge considerably. PARAMETERS: Features: Knowledge increases by 5 points forever The book crumbles after reading To use, place it in place of potions and wands~ /*Type of Feat: GeneralPrerequisite: Can only take this feat at 1st-level.
-Specifics: Character gains a +1 bonus on all saving throws.
-Use: Automatic.*/
-@103409 = ~NP: Shop Luscana~ /*Luskan Captain*/
+@103407 = ~Small Book of Knowledge~
+@103408 = ~This book contains information about a variety of objects and phenomena. The reader of this book will undoubtedly enrich his knowledge considerably.
+
+STATISTICS:
+
+Knowledge: Raised by 5 points permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot~
+@103409 = ~Luskan Store~
 @103410 = ~Brooch~
 @103411 = ~This simple brooch has a short engraving: "To my dear son Erik. You will always be in my heart. Love, Ma."~
-@103412 = ~NP: wolf skin~ /*Scrivener Hide*/
-@103413 = ~NP: The skin of a wolf is a soft and luxurious thing. It is often made into a variety of clothing, ranging from the rough robes of the northern Utgart barbarians to the fashionable and refined winter robes of the aristocrats of the Sword Coast. PARAMETERS: Weight: 3~ /*Fact is, Meldanen's been hoarding food. Or so claims Formosa, one of the louder noblewomen in Blacklake.*/
-@103414 = ~NP: strange letter~ /*Strange Visage*/
+@103412 = ~Wolf Pelt~
+@103413 = ~The wolf pelt of the winter wolf is soft and luxurious. It is often sewn into garments as diverse as the rugged vests of the northern Uthgardt Barbarians and the delicate and fashionable winter stoles worn by noblewomen throughout the Sword Coast region.
+
+STATISTICS:
+
+Weight: 10~
+@103414 = ~Strange Letter~
 @103415 = ~This note was found in the eastern passage of Castle Jhareg's main floor. It chastises you in its graceful scrawl:
 "To be Judge is to be a ship upon a sea of great Regret. If you shift the ballast of your Compassion wholly to starboard or to port, you will capsize and be Lost beneath the waves. For even Compassion cannot bring the dead to life nor change the horror of the past. Remember this lesson when it comes time to Judge."~
 @103416 = ~This note was found in the west passage of Castle Jhareg's main floor. It chastises you in its graceful scrawl:
@@ -4169,8 +4177,8 @@ Use: Automatic.*/
 "Wary must be the Judge and straight His course, for His one hand is burnt by the fire of treachery and His other chilled by the ghosts of vengeance. The True Path of Justice lies with the Heart and Head for only with Reason can He determine the Truth and only with Compassion can He know its Consequences."~
 @103419 = ~Fire Beetle's Belly~
 @103420 = ~This is the ventral shell or belly of a fire beetle.~
-@103421 = ~NP: Lizardman Skull~ /*Dragon Skull*/
-@103422 = ~NP: This is the skull of a lizardman, which, apparently, was the so-called creator race.~ /*This aging scroll tells some of the history of the so-called Creator Race.*/
+@103421 = ~Lizard Man Skull~
+@103422 = ~This is the skull of a Lizard Man, who apparently were the so-called Creator Race.~
 @103423 = ~Crystal Frog~
 @103424 = ~Fashioned from cut crystal, this frog seems so lifelike that you fear it might jump from your hand to shatter on the ground below. It may be the prize required to complete Mutamin's Challenge in the basement of the Green Griffon Inn.~
 @103425 = ~Crystal Skull~
@@ -4211,14 +4219,27 @@ The message is dated 1360DR, so it is more than a decade old.~
 @103457 = ~Ceremonial Shield~
 @103458 = ~Ceremonial Sword~
 @103459 = ~Estate Ward Stone~
-@103460 = ~This wardstone allows the bearer to bypass whatever magic protections have been placed on the entrance of an estate in the northwest of the Beggar's Nest.~
-@103461 = ~NP: Cursed Amulet~ /*Curst Monk*/
-@103462 = ~NP: Once, a man who looked like a real goner came to a famous magician. He ordered him to make a magical amulet that would increase his strength, agility and endurance. The magician agreed to make such an amulet for 3000 gold. But the cunning man did not want to pay such a large amount of money, and when he pried for the amulet, he snatched it from the hands of the magician and ran away. The magician by no means considered himself a fool. While working, he put a curse into the amulet that made its owner an ugly fool. He expected to remove the curse after the gold settled in his pocket, but if it turned out differently, then the curse is still valid. STATS: Ability when worn: +3 to constitution, dexterity and strength wisdom, intelligence and charisma are set to 3 Traits: can only be removed with the spell &quot;Remove Curse&quot; Do not use: Mage Assassins~ /*Master Drogan and Ayala realized that the strange crystal hidden within the broken tower statue was a powerful artifact sought after by J'Nah's mysterious mistress. What it is, however, and why it's being sought is still a mystery that needs solving. Master Drogan believes that a comrade of his, Garrick Halassar, might have the knowledge needed to identify the crystal. The halfling caravan is traveling through the desert and will be making a stop at the same Ao encampment where they dropped off Garrick before... once there, he will have to be found and the crystal hopefully identified.*/
+@103460 = ~This wardstone allows the bearer to bypass whatever magic protections have been placed on the entrance of an estate in the northeast of the Beggar's Nest.~
+@103461 = ~Cursed Amulet~
+@103462 = ~One day, a man who looked like a wretch came to a famous magician. He ordered him to make a magic amulet that would increase his strength, agility and endurance. The magician agreed to make such an amulet for 3000 gold pieces. But the cunning man did not want to pay so much money, and when he came to get the amulet, he snatched it out of the magician's hands and ran away. The magician did not count himself among the fools. While he was working, he had put a curse into the amulet that made the wearer an ugly fool. He had hoped to lift the curse after the gold had settled in his pocket, but since it was not, the curse is still in effect today.
+
+STATISTICS:
+
+Equipped abilities:
+- Strenght: +3
+- Dexterity: +3
+- Constitution: +3
+- Intelligence: 3
+- Wisdom: 3
+- Charisma: 3
+
+Not Usable By:
+ Wizard Slayer~
 @103463 = ~Auction Announcement~
 @103464 = ~This document details an auction to be held at the Seedy Tavern in the Docks district. It does not reveal exactly what will be for sale, but it does seem to suggest that anyone interested in surviving the plague should attend. It also mentions that anyone bringing this to the attention of the city guard will be dealt with in "a manner that suggests finality." The seal at the bottom is apparently that of the Bloodsailors, a group of pirates.
 There is a map on the back that shows the whole of the Docks District. The Seedy Tavern is one of the larger buildings along the northern edge.
 (your automap has been updated...)~
-@103465 = ~NP: Sacred Moonbow Bowl~ /*Holy Urn*/
+@103465 = ~Silver Chalice of Moonbow~
 @103466 = ~This is a simple, yet elegant chalice. Supposedly the elven goddess Sehanine Moonbow gave this chalice to an elven cleric who had uncovered a drow conspiracy against the moon elves many years ago.~
 @103467 = ~Journal of Synth La'neral~
 @103468 = ~This journal holds the personal thoughts of an elven archeologist named Synth La'neral.~
@@ -4227,21 +4248,57 @@ There is a map on the back that shows the whole of the Docks District. The Seedy
 @103471 = ~This is a simple brooch of iron. The designs hint that it may have been fashioned among the Uthgardt barbarian tribes of the North.~
 @103472 = ~This fearsome weapon is remarkable only because of the distinctive notch missing from its blade.~
 @103473 = ~Uthgardt Ceremonial Spear~
-@103474 = ~NP: This ceremonial spear spreads a powerful aura of wild magic around it. It is decorated with beads and feathers in the style of the peoples of Utgardt, and its shaft is decorated with bizarre multi-colored runes. STATS: Equip Properties: Immunity to charm and hold THAC0: +2 (+5 against giants) Damage: 1D6 +2 +5 against giants Damage type: piercing Weight: 3 Speed factor: 4 Required skill: spears Type: two-handed Requirements: power 5 Cannot use: Priest Mage Thief~ /*This ceremonial spear radiates a powerful dweomer of magic. It is adorned with beads and feathers in the style of the Uthgardt people, and the shaft is covered with colorfully ornate and decorative runes.*/
+@103474 = ~This ceremonial spear radiates a powerful dweomer of magic. It is adorned with beads and feathers in the style of the Uthgardt people, and the shaft is covered with colorfully ornate and decorative runes.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Charm and Hold
+
+THAC0: +2 (+5 vs. Giants)
+Damage: 1d6+2 (+5 vs. Giants)
+Damage Type: piercing
+Weight: 3
+Speed Factor: 4
+Proficiency Type: Spear
+Type: Two-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Priest
+ Mage
+ Thief~
 @103475 = ~Leaven Bread Recipe~
 @103476 = ~This parchment details the ingredients and cooking instructions for leaven bread, a delicacy particular to the city of Neverwinter.~
 @103477 = ~Prism Blossom Seed~
 @103478 = ~At first glance this appears to be a tiny gem. However, the stone is warm to the touch and on closer inspection it appears to be a small seed.~
 @103479 = ~Dragon Scale~
-@103480 = ~NP: This small, rough piece of skin must have been torn from the dragon skin during a fierce fight. While this piece of skin is remarkably durable and retains the durability of dragon armor, it is too small to use.~ /*This small, ragged piece of hide must have been torn from a dragon during a fierce battle. Though this bit of scale contains the remarkable strength and toughness of all dragon hide it is too small to be of any use in forging armor or the like.*/
+@103480 = ~This small, ragged piece of hide must have been torn from a dragon during a fierce battle. Though this bit of scale contains the remarkable strength and toughness of all dragon hide it is too small to be of any use in forging armor or the like.~
 @103481 = ~This silver band is etched with the image of a bird soaring against a moonlit sky - likely a family crest from an obscure house. The ring is of little value.~
 @103482 = ~Corpse Hand~
 @103483 = ~This dried and withered hand is remarkably well preserved - a testament to the embalming techniques used on the owner, rather than an indication of any special magic.~
-@103484 = ~NP: This ornate dagger is cold to the touch and radiates a powerful aura of malevolent magic. The handle bears an engraving in the form of an elongated skull. STATS: Damage: 1D4 + 2 THAC0: +2 Traits: 5% chance to point the target with the Finger of Death, if it makes a saving throw against spells, it will take 2d8 + 1 magic damage Damage type: piercing Weight: 1 Speed factor: 1 Skill type: dagger Type: 1-handed Requires: 4 Strength Used by: Evil characters only~ /*This ornate dagger is chill to the touch and radiates a powerful aura of malignant magic. The hilt bears an engraving of an elongated skull.*/
+@103484 = ~This ornate dagger is chill to the touch and radiates a powerful aura of malignant magic. The hilt bears an engraving of an elongated skull.
+
+STATISTICS:
+
+Combat Abilities:
+- 5% chance to cast Finger of Death on a target per hit
+
+THAC0: +2
+Damage: 1d4+2
+Damage Type: piercing
+Weight: 1
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requirements: 4 Strength
+
+Usable By:
+ Evil Characters~
 @103485 = ~Celestial Elixir~
 @103486 = ~This elixir smells sweet, similar to honeysuckle, and contains a small amount of liquid that bubbles faintly. Its use is unknown, though it is likely a curative of some form.~
 @103487 = ~Tamorlyn's Song~
-@103488 = ~NP: This is a sheet with notes and words of one of the elven songs.~ /*This place is keeping you from thinking straight...*/
+@103488 = ~It's a sheet of sheet music and lyrics to one of the elven songs.~
 @103489 = ~Official Document~
 @103490 = ~This document seems to be official; the wax stamped with what appears to be the official seal of Lord Nasher and the delicately-written script spelling out a friendly endorsement for one 'Hayden, Lord Freidling'. It appears to prove that Mr. Freidling worked as a coachman in Murann for the entire duration of the previous year... and so couldn't possibly have been present in the city of Calimport for an unmentioned crime. Several words are poorly spelled and the ink smudged badly in numerous spots... making the quality of this obvious forgery rather questionable.~
 @103491 = ~The Star of Calimshan~
@@ -4266,8 +4323,8 @@ Callik
 
 (A complex series of hand motions is detailed below. You will definitely need this note present to reproduce them accurately enough to pass the gate.)~
 @103502 = ~"A wall at arms length"~
-@103503 = ~NP: Wizard records~ /*What wizards?*/
-@103504 = ~NP: This sheet contains formulas and calculations that you do not understand. However, from the contents it can be understood that in this laboratory, magicians charged lightning wands.~ /*I'm advising that everyone stay clear of the Docks district. Not that other areas of the city are any friendlier.*/
+@103503 = ~Wizards' Records~
+@103504 = ~This sheet contains formulas and calculations that you do not understand. However, from the contents you can understand that this is the laboratory where magicians charged Wands of Lightning.~
 @103505 = ~"A splinter delivered in flight"~
 @103506 = ~Elynwyd's Signet Ring~
 @103507 = ~This finely crafted ring bears the family crest of a proud and noble elven family.~
