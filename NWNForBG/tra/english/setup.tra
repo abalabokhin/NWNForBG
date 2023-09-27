@@ -4048,39 +4048,79 @@ Not Usable By:
 @103350 = ~Start the ritual!~
 @103351 = ~All spells are read, the ritual is over. We have the cure!~
 @103352 = ~Just a moment, one last spell to enhance the properties of the cure.~
-@103353 = ~NP: Fools, you won't have a cure!~ /*Hey, no reward, no cure.*/
-@103354 = ~NP: Brothers, kill everyone here!~ /*Kill them, kill them all!*/
-@103355 = ~NP: Dester, stop! Where are you going?~ /*Wait, now... who be you?*/
-@103356 = ~NP: I'll catch up with him, this is some kind of mistake.~ /*"Do you think it's some kind of trap?"*/
-@103357 = ~NP: Unholy Blade~ /*Keen Edge*/
-@103358 = ~NP: This magical dagger was crafted by necromancers for High Captain Baram. PARAMETERS: When equipped: Agility: +2 bonus Backstab Immunity Attacks per round: +1 bonus Combat abilities: THAC0: improvement +4 Damage: 1D4 +2 50% chance to infect the enemy with a disease 5% chance to dispel magic Damage type: piercing Weight: 1 Speed Factor: 0 Required Skill: Daggers Type: One-Handed Requirements: Strength 3 Cannot Use: Priest~ /*This black garment, embroidered with a weblike pattern in silk, gives the wearer many of the abilities of a spider.  The cloak also grants immunity to entrapment by web spells or webs of any sort.
-Cloaks of this type are common in the Underdark, and are almost standard raiment for drow priestesses.*/
-@103359 = ~NP: Demonic Astral Spider~ /*Fiendish Ice Mephit*/
-@103360 = ~NP: Gul's hand~ /*Aura of Fire*/
+@103353 = ~Fools, you won't have the cure!~
+@103354 = ~Now, my brethren! Kill everyone here!~
+@103355 = ~Desther, waut! Where are you going?~
+@103356 = ~I'll get him, there's been a mistake.~
+@103357 = ~Unholy Blade~
+@103358 = ~This magical dagger was crafted by necromancers for High Captain Baram.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +2
+- Immunity to backstab
+- Attacks per round: +1
+
+Combat Abilities:
+- 50% to infect a target with a disease per hit
+- 5% chance to Dispel Magic on a target per hit
+
+THAC0: +4
+Damage: 1d4+2
+Damage Type: piercing
+Weight: 1
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requirements: 3 Strength
+
+Not Usable By:
+ Priest~
+@103359 = ~Demonic Astral Spider~
+@103360 = ~Gul's hand~
 @103361 = ~False Helmite~
-@103362 = ~NP: Sapphire Golem~ /*Mithral Golem*/
+@103362 = ~Sapphire Golem~
 @103363 = ~Shield Guardian~
-@103364 = ~NP: Security guard~ /*Guard*/
+@103364 = ~Guard~
 @103366 = ~Former Prisoner~
 @103367 = ~Escaped Sorcerer~
 @103368 = ~Gang Leader~
-@103369 = ~NP: Onslaught Ring~ /*Ring of Cyan*/
-@103370 = ~NP: The Ring of Onslaught is the opposite of the Ring of Mentality. It improves stats that are important to those who prefer the power of magic. In this case, the ring reduces other characteristics. PARAMETERS: Special abilities: +1 to Strength, Dexterity and Constitution -1 to Intelligence, Wisdom and Charisma~ /*You will also see that there are small pins tacked onto the map. These are your map notes; they mark important locations in an area. Simply move your mouse over one of the pins to read the notes.*/
-@103371 = ~NP: Boots of Ability~ /*Boots of Speed*/
-@103372 = ~NP: It is unknown why such abilities were invested in them, but these boots increase the dexterity of their wearer. Usually such magic is placed in gloves or bracers. STATS: Equip Ability: Agility is set to 19 Weight: 3 Not Used by: Mage Assassins~ /*The wheel is made of alternating white and black squares. If the pointer stops on a white square we move on to the final initiation. If it stops on a black square we are slain on the spot.*/
+@103369 = ~Ring of Onslaught~
+@103370 = ~The Ring of Onslaught is the opposite to the Ring of Mentality. It improves the characteristics that are important to those who prefer the power to magic. At the same time, the ring decreases other characteristics.
+
+STATISTICS:
+
+Equipped abilities:
+- Strenght: +1
+- Dexterity: +1
+- Constitution: +1
+- Intelligence: -1
+- Wisdom: -1
+- Charisma: -1~
+@103371 = ~Boots of Ability~
+@103372 = ~It is unknown for what reasons such abilities were put into them, but these boots increase the dexterity of their owner. Usually such magic is placed in gloves or wristbands.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: 19
+
+Not Usable By:
+ Wizard Slayer~
 @103373 = ~Blacklake Patrol~
-@103374 = ~NP: Cellar key~ /*Room Key*/
-@103375 = ~NP: This is the key to the basement of Sidi's tavern.~ /*This for the auction at Seedy Tavern?*/
+@103374 = ~Cellar key~
+@103375 = ~A key to the basement of the Seedy Tavern.~
 @103376 = ~Tavern Key~
-@103377 = ~NP: The key to the back door of Sidi's tavern.~ /*A key to the backdoor and storerooms of the Seedy Tavern.*/
+@103377 = ~A key to the backdoor of the Seedy Tavern.~
 @103378 = ~Tanglebrook Estate Key~
-@103379 = ~NP: This is the key to the front door of Lady Tanglebrook's estate.~ /*Tanglebrook Estate Key*/
+@103379 = ~A key to the front door of Lady Tanglebrook Estate.~
 @103380 = ~Prison Key~
 @103381 = ~Judging by the insignia etched into the cold metal, this is a key to the main doors of the Peninsula district prison.~
 @103382 = ~Gauntlet Key~
 @103383 = ~This key opens the door to the back room of Neverwinter's Board Laid Bare tavern, thereby granting access to the Gauntlet combatant's club below.~
 @103384 = ~Milly's Key~
-@103385 = ~NP: A simple key, most likely from the front door of Millie's house, the maid. The house is located in the central part of the Chernozerye region, near the 'Naked Board' tavern.~ /*A simple key, apparently for the front door of Milly the cleaning lady's home in the north central area of the Blacklake, near the Meldanen estate.*/
+@103385 = ~A simple key, apparently for the front door of Milly the cleaning lady's home in the central area of the Blacklake, near the Board Laid Bare tavern.~
 @103386 = ~Meldanen's Key~
 @103387 = ~This is Meldanen's personal key, and it probably fits every lock in his estate. It also has a small magical rune on it, matching a similar one just visible on the lock of the cage that houses the Dryad.~
 @103388 = ~This is a large, solid key. It was given to you by Londa, who told you it was for her husband's vault.~
@@ -4088,14 +4128,22 @@ Cloaks of this type are common in the Underdark, and are almost standard raiment
 @103390 = ~This is a simple steel key, without any special markings.~
 @103391 = ~Baram's Base Key~
 @103392 = ~This is a simple brass key that smells faintly of sulphur.~
-@103393 = ~NP: Kurt's Key~ /*Sword Key*/
-@103395 = ~NP: This key opens all the locks in High Captain Kurt's hideout.~ /*This key opens the altar of the Word of Power in the Creator Race Ruins.*/
-@103396 = ~NP: rune stone~ /*Runestone 1*/
-@103397 = ~NP: This stone removes the magical protection from the doors to High Captain Baram's hideout.~ /*Don't hurt us, I serve only High Captain Baram.*/
-@103398 = ~NP: Lychee key~ /*Sword Key*/
-@103399 = ~NP: This key probably opens the locks on the bars on this floor of the tower.~ /*Perhaps it's your imagination which makes you different.*/
+@103393 = ~Kurth's Key~
+@103395 = ~This key opens all the locks in High Captain Kurth's Inner Compound.~
+@103396 = ~Runestone~
+@103397 = ~This stone removes the magical protection from the doors to High Captain Baram's Inner Compound.~
+@103398 = ~Lich Key~
+@103399 = ~This key probably opens the locks on the bars on this floor of the tower.~
 @103400 = ~Letter to Quint Jhareg~
-@103401 = ~NP: Dear Brother Quintus, Here are the alchemical instructions you requested on your last pilgrimage to the temple. I hope they will be useful to you for further familiarizing the inhabitants of Charwood with the teachings of the Morning Lord. May the dawn always greet you, Brother Brightman -------------------- The following is a detailed description of the preparation of divine potions.~ /*"I'd buy the grandest instrument that coin could buy, built by the finest craftsman in Faerun! And then I would travel the land, playing only in the most quality houses!" She laughs heartily.*/
+@103401 = ~Dear Brother Quint,
+Here are the alchemical instructions you requested on your last pilgrimage to the temple. Hopefully they will be of use to you as you continue to bring the people of Charwood to the Morninglord's grace.
+
+May the dawn ever greet you,
+Brother Brightmane
+
+--------------------
+
+What follows is a detailed description of the Crafting of Divine Potions.~
 @103402 = ~NP: An excerpt from a diary~ /*Journal Name*/
 @103403 = ~NP: It looks like an excerpt from someone's diary. The only legible words are: &quot;I hunted him for years, and with a simple bite, he turned me into what I hate more than anything in the world! I won't survive if those guys become werewolves! I'll go and try to find out what happened to them. Until I find them, I will not return to this cave - this prison in which I must pay for my mistake.&quot; The cave where this note was found shows evidence of recent human habitation, although the person who wrote the note appears to have left long ago.~ /*This seems to be a fragment of someone's journal. The only words that can be made out are: "I have hunted him for years and with a simple bite, he has turned me into the very thing I hate! I could not bear it if those boys remain werewolves! I shall go and try to discover what has happened to them. Until I find them, I will not return to this cave - this prison where I must pay for my mistake." The cave where this was found show signs of recent human activity though the writer seems to vacated it for the time being.*/
 @103404 = ~NP: Great Lich~ /*The Great Oak*/
