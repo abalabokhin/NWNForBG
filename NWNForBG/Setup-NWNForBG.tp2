@@ -48,7 +48,12 @@ LANGUAGE ~English~
 BEGIN @0
 DESIGNATED 0 LABEL ~NWN_MainComponent~
 
-ACTION_IF (GAME_IS ~tob~) AND NOT(FILE_CONTAINS ~WeiDU.log~ ~INFINITYANIMATIONS\.TP2. #[0-9]+ #0~)  BEGIN
+ACTION_IF NOT(GAME_IS ~bg2ee eet tob bgt~) BEGIN
+    FAIL @10
+END
+
+
+ACTION_IF (GAME_IS ~tob bgt~) AND NOT(FILE_CONTAINS ~WeiDU.log~ ~INFINITYANIMATIONS\.TP2. #[0-9]+ #0~)  BEGIN
     FAIL @20
 END
 
@@ -580,9 +585,9 @@ ADD_MUSIC ~NWN84~ ~NWNForBG/mus/NW84.mus~            // was 156
 
 //Areas
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY ~NWNForBG/tis_ee~ ~override~
+  COPY ~NWNForBG/map_ee~ ~override~
 END ELSE BEGIN
-  COPY ~NWNForBG/tis~ ~override~
+  COPY ~NWNForBG/map~ ~override~
 END
 
 COPY ~NWNForBG/are~ ~override~
