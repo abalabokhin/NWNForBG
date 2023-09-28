@@ -1,6 +1,6 @@
 IF
 	Global("Messenger_of_Neverwinter","GLOBAL",0)
-	XPGT(Player1,1750000)
+	XPGT(Player1,1350000)
 	OR(6)
 		AreaCheck("AR1000")  // ����������������� �����
 		AreaCheck("AR0900")  // ����� ������
