@@ -585,7 +585,31 @@ ADD_MUSIC ~NWN84~ ~NWNForBG/mus/NW84.mus~            // was 156
 
 //Areas
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY ~NWNForBG/map_ee~ ~override~
+  INCLUDE ~NWNForBG/lib/a7_pvrz_copying.tpa~
+  // Installing all TIS files from the specified folder
+  ACTION_BASH_FOR ~%MOD_FOLDER%/map_ee~ ~^.+\.tis$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+
+    // Installing associated PVRZ files for each tileset individually
+    ACTION_IF (new_base_index >= 0) BEGIN
+      LAF TIS_RES_TO_PVRZ STR_VAR tis_res = EVAL ~%BASH_FOR_FILESPEC%~ RET prefix END
+
+      ACTION_BASH_FOR ~%MOD_FOLDER%/map_ee~ ~^%prefix%.+\.pvrz$~ BEGIN
+        LAF INSTALL_PVRZ
+          INT_VAR original_base_index new_base_index
+          STR_VAR source_file = EVAL ~%BASH_FOR_FILESPEC%~
+          RET success DEST_FILESPEC
+        END
+
+        ACTION_IF (NOT success) BEGIN
+          FAIL ~Could not install "%BASH_FOR_FILESPEC%"!~
+        END
+      END
+    END ELSE BEGIN
+      FAIL ~Could not install "%BASH_FOR_FILESPEC%"!~
+    END
+  END
 END ELSE BEGIN
   // installing MOS
   COPY ~NWNForBG/map~ ~override~

@@ -1,0 +1,398 @@
+
+/**
+ * This function returns the PVRZ resource prefix based on the given TIS filename.
+ * Available as ACTION and PATCH function.
+ *
+ * STR_VAR tis_res  The TIS filename with or without .tis extension.
+ * RET prefix       The PVRZ resource prefix associated with the specified TIS filename.
+ *                  Returns empty string on error.
+ */
+DEFINE_PATCH_FUNCTION TIS_RES_TO_PVRZ
+  STR_VAR
+    tis_res = ~~
+  RET
+    prefix
+BEGIN
+  // Make sure only filename without extension is specified
+  PATCH_IF (~%tis_res%~ STRING_CONTAINS_REGEXP ~\.TIS$~ = 0) BEGIN
+    LPF RES_OF_FILESPEC STR_VAR filespec = EVAL ~%tis_res%~ RET tis_res = res END
+  END
+
+  PATCH_IF (STRING_LENGTH ~%tis_res%~ > 1) BEGIN
+    INNER_PATCH_SAVE prefix ~%tis_res%~ BEGIN DELETE_BYTES 1 1 END
+  END ELSE BEGIN
+    TEXT_SPRINT prefix ~~
+  END
+END
+
+DEFINE_ACTION_FUNCTION TIS_RES_TO_PVRZ
+  STR_VAR
+    tis_res = ~~
+  RET
+    prefix
+BEGIN
+  OUTER_PATCH ~foo~ BEGIN
+    LPF TIS_RES_TO_PVRZ STR_VAR tis_res RET prefix END
+  END
+END
+
+
+/**
+ * This PATCH function updates all PVRZ references in the BAM V2, MOS V2, or TIS V1 file to the next unoccupied block
+ * of PVRZ indices. It's intended to be used in combination with the action function "INSTALL_PVRZ".
+ *
+ * INT_VAR target_base_index  Optional parameter. When specified, the function attempts to use a block of free PVRZ
+ *                            indices starting at the specified value.
+ *                            (default: 0 for TIS-related PVRZ files, 1000 otherwise)
+ * RET original_base_index    Returns the lowest PVRZ index used by the source BAM, MOS, or TIS. Returns -1 on error.
+ * RET new_base_index         Returns the lowest PVRZ index used by the target BAM, MOS, or TIS. Returns -1 on error.
+ * RET index_range            Returns the range of reserved PVRZ indices, i.e. the difference between the smallest
+ *                            and biggest PVRZ index inclusive. Returns 0 on error.
+ */
+DEFINE_PATCH_FUNCTION UPDATE_PVRZ_INDICES
+  INT_VAR
+    target_base_index = "-1"
+  RET
+    original_base_index
+    new_base_index
+    index_range
+BEGIN
+  SET original_base_index = "-1"
+  SET new_base_index = "-1"
+  SET index_range = 0
+  SET max_base_index = 99999
+  SET def_base_index = 1000
+  TEXT_SPRINT prefix ~MOS~
+  PATCH_IF (ENGINE_IS ~bgee bg2ee iwdee pstee~) BEGIN
+    // initializations
+    SET is_valid = 0
+    READ_ASCII 0 sig (8)
+    PATCH_MATCH ~%sig%~ WITH
+      ~BAM V2  ~ BEGIN
+        READ_LONG 0x10 num_blocks
+        READ_LONG 0x1c ofs_blocks
+        SET block_size = 28
+        SET is_valid = 1
+      END
+      ~MOS V2  ~ BEGIN
+        READ_LONG 0x10 num_blocks
+        READ_LONG 0x14 ofs_blocks
+        SET block_size = 28
+        SET is_valid = 1
+      END
+      ~TIS V1  ~ BEGIN
+        READ_LONG 0xc block_size
+        PATCH_IF (block_size = 12) BEGIN
+          READ_LONG 0x08 num_blocks
+          READ_LONG 0x10 ofs_blocks
+          // getting tis resref...
+          PATCH_IF (DIRECTORY_EXISTS ~%DEST_FILESPEC%~) BEGIN
+            TEXT_SPRINT tis_res ~%SOURCE_RES%~
+          END ELSE BEGIN
+            LPF RES_OF_FILESPEC STR_VAR filespec = EVAL ~%DEST_FILESPEC%~ RET tis_res = res END
+          END
+          // ...to derive pvrz prefix
+          LPF TIS_RES_TO_PVRZ STR_VAR tis_res RET prefix END
+          PATCH_IF (NOT ~%prefix%~ STR_EQ ~~) BEGIN
+            SET max_base_index = 99
+            SET def_base_index = 0
+            SET is_valid = 1
+          END
+        END
+      END
+      DEFAULT
+    END
+
+    PATCH_IF (is_valid) BEGIN
+      PATCH_IF (target_base_index < 0) BEGIN SET target_base_index = def_base_index END
+      PATCH_IF (target_base_index > max_base_index) BEGIN
+        PATCH_LOG ~Target base index (%target_base_index%) is out of range. Using default value (%def_base_index%).~
+        SET target_base_index = def_base_index
+      END
+
+      // finding minimum and maximum pvrz index
+      SET min = max_base_index + 1
+      SET max = "-1"
+      FOR (i = 0; i < num_blocks; ++i) BEGIN
+        SET ofs = ofs_blocks + i * block_size
+        READ_LONG ofs page
+        PATCH_IF (page >= 0) BEGIN
+          PATCH_IF (page < min) BEGIN SET min = page END
+          PATCH_IF (page > max) BEGIN SET max = page END
+        END
+      END
+
+      PATCH_IF (min >= 0 && max >= min) BEGIN
+        SET index_range = max - min + 1
+        LPF FIND_FREE_PVRZ_INDEX INT_VAR num_to_reserve = index_range start_index = target_base_index STR_VAR prefix RET free_index END
+        PATCH_IF (free_index >= 0) BEGIN
+          SET original_base_index = min
+          SET new_base_index = free_index
+          SET offset = new_base_index - original_base_index
+          // updating pvrz references
+          FOR (i = 0; i < num_blocks; ++i) BEGIN
+            SET ofs = ofs_blocks + i * block_size
+            WRITE_LONG ofs (THIS >= 0) ? (THIS + offset) : THIS
+          END
+          SET success = 1
+        END ELSE BEGIN
+          PATCH_WARN ~Unable to find free block of PVRZ indices. No changes have been made.~
+        END
+      END ELSE BEGIN
+        PATCH_WARN ~File contains no pvrz references. No changes have been made.~
+      END
+    END ELSE BEGIN
+      PATCH_WARN ~Unsupported resource type or corrupted BAM V2, MOS V2, or pvrz-based TIS detected. No changes have been made.~
+    END
+  END ELSE BEGIN
+    PATCH_WARN ~Game is not supported.~
+  END
+END
+
+
+/**
+ * This ACTION function copies the specified PVRZ file into the target folder and updates the PVRZ index.
+ * It should be used in conjunction with "UPDATE_PVRZ_INDICES".
+ *
+ * INT_VAR original_base_index  The current base index (returned by the function "UPDATE_PVRZ_INDICES" as
+ *                              "original_base_index").
+ * INT_VAR new_base_index       The new base index (returned by the function "UPDATE_PVRZ_INDICES" as
+ *                              "new_base_index").
+ * INT_VAR backup               Set to non-zero to have WeiDU create a backup that is restored when the mod is
+ *                              uninstalled. Set to zero to forbid restoring the file when the mod is uninstalled.
+ *                              (Default: 1 - create backup)
+ * STR_VAR source_file          The source file to copy. For BAM and MOS files, the filename must match the regular
+ *                              expression "MOS[0-9]{4,5}\.PVRZ" (e.g. MOS0000.PVRZ, mos1592.pvrz or Mos12345.PVRZ).
+ *                              For TIS files, the filename must match the regular expression "%prefix%[0-9][0-9]\.PVRZ"
+ *                              Case is ignored.
+ * STR_VAR target_folder        The target folder to copy the source file into. (Default: override)
+ * RET success                  Set to non-zero if the function returned successfully and set to zero on error.
+ * RET SOURCE_*, DEST_*         Returns all variables that are automatically set by a WeiDU COPY operation on success.
+ */
+DEFINE_ACTION_FUNCTION INSTALL_PVRZ
+  INT_VAR
+    original_base_index = "-1"
+    new_base_index = "-1"
+    backup = 1
+  STR_VAR
+    source_file = ~~
+    target_folder = ~override~
+  RET
+    success
+    SOURCE_DIRECTORY SOURCE_FILESPEC SOURCE_FILE SOURCE_RES SOURCE_EXT SOURCE_SIZE
+    DEST_DIRECTORY DEST_FILESPEC DEST_FILE DEST_RES DEST_EXT
+BEGIN
+  OUTER_SET success = 0
+  ACTION_IF (ENGINE_IS ~bgee bg2ee iwdee pstee~) BEGIN
+    ACTION_IF (original_base_index >= 0 && new_base_index >= 0 && FILE_EXISTS ~%source_file%~) BEGIN
+      // Making sure that target points to a directory
+      ACTION_IF (~%target_folder%~ STR_EQ ~~) BEGIN OUTER_TEXT_SPRINT target_folder ~.~ END
+      ACTION_IF (DIRECTORY_EXISTS ~%target_folder%~) BEGIN
+        LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%source_file%~ RET ext END
+        LAF RES_OF_FILESPEC STR_VAR filespec = EVAL ~%source_file%~ RET res END
+      END ELSE BEGIN
+        LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%target_folder%~ RET ext END
+        LAF RES_OF_FILESPEC STR_VAR filespec = EVAL ~%target_folder%~ RET res END
+        LAF DIRECTORY_OF_FILESPEC STR_VAR filespec = EVAL ~%target_folder%~ RET target_folder = directory END
+      END
+
+      // initializations
+      OUTER_SET failed = 0
+      ACTION_IF (~%res%~ STRING_MATCHES_REGEXP ~MOS[0-9][0-9][0-9][0-9][0-9]?$~ = 0) BEGIN
+        OUTER_SET max_index = 99999
+        OUTER_TEXT_SPRINT fmt_index ~-4~
+        // separate pvrz prefix and index
+        OUTER_PATCH_SAVE res_index ~%res%~ BEGIN
+          READ_ASCII 0 res_prefix (3)
+          DELETE_BYTES 0 3
+        END
+      END ELSE ACTION_IF (~%res%~ STRING_MATCHES_REGEXP ~.+[0-9][0-9]$~ = 0) BEGIN
+        OUTER_SET max_index = 99
+        OUTER_TEXT_SPRINT fmt_index ~-2~
+        // separate pvrz prefix and index
+        OUTER_SET len = STRING_LENGTH ~%res%~
+        OUTER_PATCH_SAVE res_index ~%res%~ BEGIN
+          READ_ASCII 0 res_prefix (len - 2)
+          DELETE_BYTES 0 (len - 2)
+        END
+      END ELSE BEGIN
+        OUTER_SET failed = 1
+        WARN ~Invalid source file specified: %source_file%. Skipping operation.~
+      END
+
+      // update filename and install pvrz file
+      ACTION_IF (NOT failed) BEGIN
+        OUTER_SET offset = new_base_index - original_base_index
+        OUTER_SET old_index = res_index
+        OUTER_SET new_index = old_index + offset
+        ACTION_IF (new_index >= 0 && new_index <= max_index) BEGIN
+          // ensure required number of digits
+          OUTER_SNPRINT ~%fmt_index%~ new_index ~0000%new_index%~
+          OUTER_TEXT_SPRINT new_res ~%res_prefix%%new_index%~
+          OUTER_TEXT_SPRINT target_filespec ~%target_folder%/%new_res%.%ext%~
+          ACTION_IF (backup) BEGIN
+            COPY ~%source_file%~ ~%target_filespec%~
+          END ELSE BEGIN
+            COPY + ~%source_file%~ ~%target_filespec%~
+          END
+          OUTER_SET success = 1
+        END ELSE BEGIN
+          WARN ~New PVRZ index is out of range: %new_index%. Skipping file.~
+        END
+      END
+    END ELSE BEGIN
+      FAIL ~One or more required parameters are undefined.~
+    END
+  END ELSE BEGIN
+    WARN ~Game is not supported.~
+  END
+END
+
+
+/**
+ * This PATCH function attempts to find the first available free PVRZ index of a contiguous block
+ * which guarantees to fit at least "num_to_reserve" indices.
+ *
+ * INT_VAR num_to_reserve   Find a contiguous block of at least this number of free indices
+ *                          (range: [1..100] for TIS-related PVRZ files, [1..999] otherwise, default: 1)
+ * INT_VAR start_index      Index to start looking for (default: 0 for TIS-related PVRZ files, 1000 otherwise)
+ * STR_VAR prefix           Prefix of the PVRZ files associated with the BAM, MOS, or TIS file.  For BAM and MOS files,
+ *                          the prefix will be "MOS".  For TIS files it will be the TIS filename minus the second
+ *                          character. Use function TIS_RES_TO_PVRZ to derive the PVRZ prefix from a TIS filename.
+ *                          (default: MOS)
+ * RET free_index           Returns the first available index matching the specified parameters if successful.
+ *                          Returns -1 if no sufficiently large block of free slots could be found.
+ */
+DEFINE_PATCH_FUNCTION FIND_FREE_PVRZ_INDEX
+  INT_VAR
+    num_to_reserve = 1
+    start_index = "-1"
+  STR_VAR
+    prefix = ~MOS~
+  RET
+    free_index
+BEGIN
+  SET free_index = "-1"
+
+  SET failed = 0
+  PATCH_IF (~%prefix%~ STR_EQ ~MOS~) BEGIN
+    SET max_to_reserve = 999
+    SET max_start_index = 100000
+    PATCH_IF (start_index < 0) BEGIN SET start_index = 1000 END
+  END ELSE PATCH_IF (STRING_LENGTH ~%prefix%~ > 0 && STRING_LENGTH ~%prefix%~ <= 6) BEGIN
+    SET max_to_reserve = 100
+    SET max_start_index = 100
+    PATCH_IF (start_index < 0) BEGIN SET start_index = 0 END
+  END ELSE BEGIN
+    PATCH_WARN ~Invalid prefix specified: "%prefix%"~
+    SET failed = 1
+  END
+
+  PATCH_IF (NOT failed && ENGINE_IS ~bgee bg2ee iwdee pstee~) BEGIN
+    PATCH_IF (num_to_reserve < 1) BEGIN
+      SET num_to_reserve = 1
+      PATCH_LOG ~Block size too small. Using default of 1.~
+    END ELSE PATCH_IF (num_to_reserve > max_to_reserve) BEGIN
+      SET num_to_reserve = max_to_reserve
+      PATCH_LOG ~Block size too big. Truncating to %max_to_reserve%.~
+    END
+    PATCH_IF (start_index + num_to_reserve > max_start_index) BEGIN
+      SET start_index = max_start_index - num_to_reserve
+      PATCH_LOG ~Start index too big. Setting start index to %start_index%.~
+    END
+
+    SET count = 0
+    FOR (index = start_index; index < max_start_index; ++index) BEGIN
+      LPF a7#__is_free_pvrz INT_VAR index STR_VAR prefix RET is_free_index END
+      PATCH_IF (is_free_index) BEGIN
+        PATCH_IF (count = 0) BEGIN
+          SET free_index = index
+        END
+        SET count += 1
+
+        // block found?
+        PATCH_IF (count >= num_to_reserve) BEGIN
+          SET index = max_start_index
+        END
+      END ELSE BEGIN
+        // start counting anew
+        SET count = 0
+      END
+    END
+
+    PATCH_IF (count < num_to_reserve) BEGIN
+      SET free_index = "-1"
+    END
+  END ELSE BEGIN
+    PATCH_WARN ~Game is not supported.~
+  END
+END
+
+
+/**
+ * This ACTION function attempts to find the first available free PVRZ index of a contiguous block
+ * which guarantees to fit at least "num_to_reserve" indices.
+ *
+ * INT_VAR num_to_reserve   Find a contiguous block of at least this number of free indices
+ *                          (range: [1..100] for TIS-related PVRZ files, [1..999] otherwise, default: 1)
+ * INT_VAR start_index      Index to start looking for (default: 0 for TIS-related PVRZ files, 1000 otherwise)
+ * STR_VAR prefix           Prefix of the PVRZ files associated with the BAM, MOS, or TIS file.  For BAM and MOS files,
+ *                          the prefix will be "MOS".  For TIS files it will be the TIS filename minus the second
+ *                          character. Use function TIS_RES_TO_PVRZ to derive the PVRZ prefix from a TIS filename.
+ *                          (default: MOS)
+ * RET free_index           Returns the first available index matching the specified parameters if successful.
+ *                          Returns -1 if no sufficiently large block of free slots could be found.
+ */
+DEFINE_ACTION_FUNCTION FIND_FREE_PVRZ_INDEX
+  INT_VAR
+    num_to_reserve = 1
+    start_index = "-1"
+  STR_VAR
+    prefix = ~MOS~
+  RET
+    free_index
+BEGIN
+  OUTER_PATCH ~foo~ BEGIN
+    LPF FIND_FREE_PVRZ_INDEX
+      INT_VAR
+        num_to_reserve
+        start_index
+      STR_VAR
+        prefix
+      RET
+        free_index
+    END
+  END
+END
+
+
+// Used internally. Determines whether the file MOSxxxx.PVRZ or %prefix%xx.PVRZ is still unoccupied,
+// where xxxx and xx are numeric indices.
+DEFINE_PATCH_FUNCTION a7#__is_free_pvrz
+  INT_VAR
+    index = 0
+  STR_VAR
+    prefix = ~MOS~
+  RET
+    is_free_index
+BEGIN
+  SET max = (~%prefix%~ STR_EQ ~MOS~) ? 99999 : 99
+  PATCH_IF (index < 0) BEGIN
+    SET index = 0
+  END ELSE PATCH_IF (index > max) BEGIN
+    SET index = max
+  END
+
+  PATCH_IF (~%prefix%~ STR_EQ ~MOS~) BEGIN
+    PATCH_IF (index <= 9999) BEGIN
+      SNPRINT "-4" index ~0000%index%~
+    END
+  END ELSE BEGIN
+    SNPRINT "-2" index ~00%index%~
+  END
+  TEXT_SPRINT cur_file ~%prefix%%index%.PVRZ~
+
+  SET is_free_index = (FILE_EXISTS_IN_GAME ~%cur_file%~ ||
+                       FILE_EXISTS ~%USER_DIRECTORY%/override/%cur_file%~ ||
+                       FILE_EXISTS ~lang/%EE_LANGUAGE%/override/%cur_file%~) ? 0 : 1
+END
