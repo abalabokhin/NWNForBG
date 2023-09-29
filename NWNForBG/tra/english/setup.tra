@@ -4427,19 +4427,43 @@ Usable By:
 @103598 = ~Amulet of Animal Communication~
 @103599 = ~Nyatar gave you this item to aid in rescuing the animals in the Blacklake zoo. It grants the bearer very specific use of certain ranger and druid abilities, allowing communication with the captive animals.~
 @103600 = ~Nyatar~
-@103601 = ~NP: Forest Defense +6~ /*Protection from Evil*/
-@103602 = ~NP: Unlike normal armor, this one has many spells. The owner, in addition to a very decent defense, also receives a bonus to Dexterity, which is never superfluous. In addition, if you prefer to fight in the forests or dungeons, then the armor will help you stay unnoticed by your enemies longer. PARAMETERS: Equipped: +1 Agility +20 Shadowhide Ability Anyone who hits the wearer of the armor takes 1D4 fire damage Defense Class: 1 Weight: 25 Useable by: Ranger Druid~ /*Damage Resistance: This property is similar to damage immunity, in that the owner is protected from certain forms of damage. However, instead of a base chance to avoid all damage, the player instead resists a certain amount of damage per attack. For example, the character may be able to resist the first 5 points of fire damage he receives from every attack.*/
-@103603 = ~NP: Staff of the Summoner~ /*Spellstaff*/
-@103604 = ~NP: A powerful weapon and tool, this staff was crafted by the mighty archmage Ubat of the Celestial Sign. Born in Algarond, Ubot took a great interest in summoning various beasts and elementals. Unfortunately, the desire to master Ubat of ever greater power increased throughout his life. He began to try to call and conjure more and more powerful entities from the lower planes, which led him to a terrible end. This staff is his most significant legacy. It is twisted and blackened slightly during its stay in Acheron. PARAMETERS: Damage: 1D6 +3 THAC0: +3 Damage type: Blunt Allows the owner to summon allies: 1. Summon forest creatures (1 time per day) 2. Summon air servant (1 time per day) Weight: 3 Speed factor: 1 Specialization weapons: Quadrilateral staves Type: 2-handed Used by: Mages Druids~ /*Pseudodragons resemble miniature red dragons, but in looks alone. They do not commit evil acts, in fact they dislike evil acts very much. They do gain the power of fire like their large cousins starting at the masters 5th level.
-Skills: Hide, Move Silently
-Feats: Alertness, Weapon Finesse and Improved Evasion.
-Special: 
- Master Level 
- 5: Cone of Fire 1x
- 10: Cone of Fire 2x
- 15: Cone of Fire 3x
- 20: Cone of Fire 5x*/
-@103605 = ~NP: Copies of the zoo key~ /*Zoo Key Copy*/
+@103601 = ~Forest Defense +6~
+@103602 = ~Unlike regular armor, this one has a lot of spells cast on it. The wearer gets a bonus to Dexterity in addition to a very good defense, which is never a bad thing. Plus, if you prefer to fight in forests or dungeons, this armor will help you stay undetected by your enemies for longer.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+- Hide in Shadows: +25%
+- Anyone who hits the wearer will take 1d4 fire damage
+
+Armor Class: 1
+Weight: 25
+
+Usable By:
+ Ranger
+ Druid~
+@103603 = ~Summoner's Staff~
+@103604 = ~A powerful weapon and a tool, this staff was crafted by the mighty archmage Uboth of the Celestial Sign. Born in Aglaron, Uboth became fascinated with summoning various beasts and elementals. Unfortunately, Ubat's desire for more and more power grew throughout his life. He began attempting to summon and conjure ever more powerful entities from the lower planes, which brought him to a horrible end. This staff is his most significant legacy. It is warped and slightly blackened during his time in Acheron.
+
+STATISTICS:
+
+Charge abilities:
+- Aerial Servant once per day
+- Call Woodland Beings once per day
+
+Damage: 1d6+3
+THAC0: +3
+Damage Type: crushing
+Speed Factor: 1
+Weight: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Usable By:
+ Mage
+ Druid~
+@103605 = ~Zoo Key Copy~
 @103606 = ~This key apparently opens a number of locks within the zoo operated by Montgomery "Sureshot" Weatherson. Nyatar's animal companion stole the original, and Nyatar made copies.~
 @103607 = ~NP: Ring of Niatar~ /*Ring of Cyan*/
 @103608 = ~NP: Little is known about the history of this ancient artifact. The ring was among other artifacts obtained by a grave robber who later died in a fight with the wild animals of the Neverwinter Forest. How it ended up in the hands of the druid Niathar is unknown, it is now yours. STATS: Increases constitution by 1 +15% to magic resistance Poison Immunity Adds one additional spell slot for druid levels 4, 5, 6, and 7 Used by: Rangers Druids~ /*This map of the Docks district is well annotated and easy to memorize. The mapmakers' art has gone largely unrecognized in Neverwinter. Lord Nasher has forbidden the mass production of such documents, for fear they might aid enemy spies.*/
