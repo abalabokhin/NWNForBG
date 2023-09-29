@@ -4465,45 +4465,110 @@ Usable By:
  Druid~
 @103605 = ~Zoo Key Copy~
 @103606 = ~This key apparently opens a number of locks within the zoo operated by Montgomery "Sureshot" Weatherson. Nyatar's animal companion stole the original, and Nyatar made copies.~
-@103607 = ~NP: Ring of Niatar~ /*Ring of Cyan*/
-@103608 = ~NP: Little is known about the history of this ancient artifact. The ring was among other artifacts obtained by a grave robber who later died in a fight with the wild animals of the Neverwinter Forest. How it ended up in the hands of the druid Niathar is unknown, it is now yours. STATS: Increases constitution by 1 +15% to magic resistance Poison Immunity Adds one additional spell slot for druid levels 4, 5, 6, and 7 Used by: Rangers Druids~ /*This map of the Docks district is well annotated and easy to memorize. The mapmakers' art has gone largely unrecognized in Neverwinter. Lord Nasher has forbidden the mass production of such documents, for fear they might aid enemy spies.*/
+@103607 = ~Nyatar's Ring~
+@103608 = ~Little is known about the history of this ancient artifact. The ring was among other artifacts obtained by a grave robber who later died in a fight with the wild beasts of the Neverwinter Forest. How it ended up in the hands of the druid Niatar is unknown. It is yours now.
+
+STATISTICS:
+
+Equipped abilities:
+- Constitution: +1
+- Magic Resistance: +15%
+- Immunity to poison
+- The wearer can memorize extra 4th-level, 5th-level, 6th-level and 7th-level druid spells
+
+Usable By:
+ Ranger
+ Druid~
 @103609 = ~Transport Via Plants Scroll~
 @103610 = ~This magic scroll is to be used near the large tree outside the zoo in the Blacklake district. It will transform that single large tree into a portal through which the animals of the zoo can escape. After they are through, the druid Nyatar will see to their well-being.~
-@103611 = ~NP: Amulet of Vecna~ /*Amulet of the Ages*/
-@103612 = ~NP: This amulet was lost by Vecna when the famous lich lost an arm and an eye. The amulet glows with overflowing magic, because Vecna's blood has fallen on it. PARAMETERS: Increases the speed of casting spells by 2 Can memorize 3 additional spells of level 9 +15 to magic resistance -3 (penalty) to charisma Allows you to cast spells: Chain of chance 1 time per day Used by: Mages Sorcerers~ /*Type of Feat: ClassPrerequisite: Pale Master level 6.
-Specifics: Two times per day a Pale Master may use their undead arm to paralyze foes. At level 8 this may be used three times per day.
-Use: Selected.*/
+@103611 = ~Amulet of Vecna~
+@103612 = ~Vecna lost this amulet when the famous lich lost his arm and eye. The amulet glows with overflowing magic because Vecna's blood got on it.
+
+STATISTICS:
+
+Equipped abilities:
+- Improves casting speed by 2
+- The wearer can memorize 3 extra 9th-level spells
+- Magic Resistance: +15%
+- Charisma: -3
+
+Usable By:
+ Mage
+ Scorcerer~
 @103613 = ~Oleff~
-@103614 = ~NP: Blessed Symbol of Tyr~ /*Bless Weapon*/
-@103615 = ~NP: This amulet is a reward from Oleff, priest of Tyr of Neverwinter, for your invaluable work in returning Lord Never's artifacts to the temple. The blessed symbol of Tyr grants the priest who wears it additional divine powers. OPTIONS: Grants 1 additional level 6 and 7 spell Permanent Blessing +1 to Wisdom +1 to Defense Class +10% to Magic Resistance Used Only by: Priests (except Talos Priests) Paladins Monks~ /*This artifact is warm beneath your touch and bears a weight far greater than its size might suggest. The symbols of an ancient tongue are inscribed on one side, the strange words shimmering and glowing with an inner light. The other side flickers between the alternating images of a dryad's tree, a dwarven hammer, and a dragon's head.*/
+@103614 = ~Blessed Symbol of Tyr~
+@103615 = ~This amulet is a reward from Oleff, priest of Tyr of Neverwinter, for your invaluable work in returning Lord Never's artifacts to the temple. The blessed symbol of Tyr grants additional divine powers to the priest who wears it.
+
+STATISTICS:
+
+Equipped abilities:
+- The wearer can memorize 1 extra 6th-level and 1 extra 7th-level spells
+- Permanent Bless
+- Wisdom: +1
+- Armor Class: +1
+- Magic Resistance: +10%
+
+Usable By:
+ Priest (except Priest of Talos)
+ Paladin
+ Monk~
 @103616 = ~Letter from Oleff~
 @103617 = ~This letter bears the seal of Reverend Judge Oleff Uskar, and indicates that the bearer is in his service. This letter is to be presented to Briley, a young cleric guarding a tomb in the Peninsula District.~
 @103618 = ~Writ from Oleff~
 @103619 = ~This writ certifies that the bearer is plague-free. It is signed by Reverend Judge Oleff Uskar, and directed to the attention of Ophala Cheldarstorn of the Moonstone Mask.~
-@103620 = ~NP: Offala Sheldarsthorne~ /*Cheldarstorn*/
+@103620 = ~Ophala Cheldarstorn~
 @103621 = ~Letter from Ophala~
 @103622 = ~This letter is from Ophala Cheldarstorn of the Moonstone Mask. It directs Oleff of the Temple of Tyr to examine the bearer and certify that they are plague-free.~
-@103623 = ~NP: Moonstone Amulet~ /*Moonstone Mask*/
-@103624 = ~NP: This amulet was received from the owner of the &quot;Moonstone Mask&quot; Ofala in gratitude for the service rendered. The magical properties of this amulet would certainly arouse the admiration of any adventurer, but, unfortunately, only thieves can use it. PARAMETERS: +1 Defense Class +2 Agility Sets the ability to hide in the shadows to 100 Allows you to cast Lockpicking once per day Use by: Thieves~ /*This hammer was forged for the express purpose of destroying golems and other constructs.
-It was given to Merkil Thunderfist, a famous gnomish adventurer. Armed with this fantastical hammer, Merkil descended into the depths of the Maker's dungeon, but was never seen again.*/
+@103623 = ~Moonstone Amulet~
+@103624 = ~This amulet was received from Ofala of the Moonstone Mask, in gratitude for a favor. The magical properties of this amulet would certainly be admired by any adventurer, but unfortunately only thieves can use it.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Dexterity: +2
+- Hiding in Shadows set to 100
+
+Charge abilities:
+- Cast "Lockpicking" once per day
+
+Usable By:
+ Thief~
 @103625 = ~Pass Coin~
 @103626 = ~This coin is the recognized currency of the Moonstone Mask, and entitles the bearer to approach one of the men or women working in the back room.~
 @103627 = ~Orc Chief~
 @103628 = ~Orc Champion~
-@103629 = ~NP: Orc sniper~ /*Shadow Sharpshooter*/
+@103629 = ~Orc Sniper~
 @103630 = ~Oreth~
-@103632 = ~NP: You have been warned, now blame yourself.~ /*I warned you but you just wouldn't listen.*/
+@103632 = ~You've been warned, now blame yourself.~
 @103633 = ~Master of the Pens~
 @103634 = ~Diplomatic Pass~
-@103635 = ~NP: Bastards! But I thought they were my friends!~ /*I never knew I had it in me!*/
-@103636 = ~NP: You bastards! I kill you all!!~ /*Attack! Kill them all!*/
-@103637 = ~NP: Pete O'Deal~ /*O'Deel*/
+@103635 = ~Bastards! I thought they were my friends!~
+@103636 = ~You bastards! I'll kill you all!!!~
+@103637 = ~Pete O'Deel~
 @103638 = ~Phoebe~
-@103639 = ~NP: Phylactery Karlata~ /*Phylactery of Ice*/
-@103640 = ~NP: You obtained this phylactery by judging the Jareg brothers at their castle in Charwood. The phylactery is the vessel-soul of the lich. Essentially, the lich places his soul into it through several dangerous rituals. It serves to make the lich virtually immortal. This phylactery can grant its wearer immunity to true death. That is, a person who used this phylactery, of course, can die, but his body will not be destroyed and he can always be resurrected in the temple or with the help of a spell. In addition, he will gain immunity to disintegration. STATS: On use: Immunity to true death (permanently) Immunity to disintegration (permanently) Use by all~ /*Items from the Old Empires are difficult to catalog, because they deal with events unknown to much of Faerun. For example, these flails may date from the Orcgate Wars and the killing of the deity Osiris. At the moment of the god's death his avatar fell also, shattering his weapon. When Osiris was resurrected, each piece of that broken flail supposedly became a diluted duplicate of the original, though none of this can be proven.*/
-@103641 = ~NP: Pickaxe~ /*Cat*/
-@103642 = ~NP: One of the forms of mining tool.~ /*Thieves' Tools*/
-@103643 = ~NP: A pick or pick is a tool designed to work on stone, rocky ground, very dense ground, to destroy old masonry, and so on. The pick allows you to strike the material being processed with great force. STATS: Damage: 1D4 + 1 Damage Type: Crushing Weight: 6 Speed Factor: 4 Required Skill: War Hammers Type: One Handed Requirements: Strength 9 Use: All~ /*This deck of cards appears to be designed for some kind of game of chance. The cards are ornately decorated and made of unusually thick paper that seems highly resistant to damage. A palpable aura of magic and danger surrounds them.*/
+@103639 = ~Karlat's Phylactery~
+@103640 = ~This phylactery was given to you when you judjed the Jhareg brothers at their castle in Charwood. The phylactery is the soul vessel of a lich. Essentially, the lich places his soul into it through several dangerous rituals. It serves to make the lich virtually immortal. This phylactery can grant its owner immunity to true death. That is, a person who has used this phylactery can die, but his body will not be destroyed and he can always be resurrected in a temple or with a spell. He will also be immune to Disintegrate.
+
+STATISTICS:
+
+Immune to True Death
+Immune to Disintegrate
+Special: The item is consumed upon use
+Usage: Place into quick item slot~
+@103641 = ~Pickaxe~
+@103642 = ~One of the types of mining tool.~
+@103643 = ~A pick or pickaxe is a tool designed for working on stone, stony ground, very dense ground, for breaking up old masonry, and so on. The pick allows you to strike the material you are working on with great force.
+
+STATISTICS:
+
+Damage: 1d4+1
+Damage Type: crushing/piercing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requirements: 9 Strength~
 @103644 = ~NP: Bereglaz's Plate~ /*Delphus Plate*/
 @103645 = ~NP: This armor is different from most others used in Amn. They are much lighter, and although they are made of metal, the armor does not impede the wearer's movement. Because of its unique features, this plate armor is perfect for fighting vampires. It protects its owner from pulling levels. In addition, the armor provides a small amount of protection against magic. PARAMETERS: Defense class: -1 Weight: 20 Required strength: 11 Special: Protects from level drain + 8 to magic resistance Cannot be used by: Bard Druid Mage Thief~ /*A formian resembles a strange, centaur-like creature with the body and head of a giant ant, but with humanoid forelimbs. Their bodies are encased in a brownish-red, black or white carapace. They are not cruel, but live in a strict, regimented society.  Formian warriors protect the hive from incursions ferociously, and their deadly claws are designed specifically for combat.*/
 @103646 = ~NP: colored armor~ /*Armor Stand*/
