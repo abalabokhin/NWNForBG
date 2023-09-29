@@ -4342,59 +4342,74 @@ Callik
 @103518 = ~Rakshasa's Eye~
 @103519 = ~This is the eye from a rakshasa.~
 @103520 = ~Parchment~
-@103521 = ~NP: This long scroll of old, yellowed parchment contains several intricate drawings, marked in an incomprehensible language. It seems that this is a description of some kind of necromantic ritual. Among the phrases you do not understand, you distinguish the phrase &quot;Tombstone&quot;.~ /*Azath ponders this, hovering, and then sends images to you of magical potions. You get the impression it can take the magic from these, as well, but it would have to choose the potion.*/
+@103521 = ~This lengthy sheet of aged and yellowed parchment contains several complex drawings annotated in a strange language. The impression one gets at a glance is that the contents involve some form of necromantic ritual. Among the phrases you do not understand, you distinguish the word "Tombstone".~
 @103522 = ~Portal Stone~
-@103523 = ~NP: A strange glow pulsates within this small magical stone. On its surface is a secret sign.~ /*This small magical stone pulses with a faint glow. Etched into its surface in arcane writing is the number 1.*/
-@103524 = ~NP: Magic Mouth~ /*Arcane Archers*/
-@103525 = ~NP: One of the key characters of Neverwinter has died! You are no longer needed here.~ /*Daddy said you're the hero of Neverwinter. You don't look like no hero!*/
-@103526 = ~NP: Miriam~ /*Madam*/
-@103527 = ~NP: Aristocrat~ /*Prostitute*/
+@103523 = ~This small magical stone pulses with a faint glow. Etched into its surface in arcane.~
+@103524 = ~Magic Mouth~
+@103525 = ~One of the key characters of Neverwinter has died! You are no longer needed here.~
+@103526 = ~Miriam~
+@103527 = ~Noblewoman~
 @103528 = ~Guardian Armor~
-@103529 = ~NP: Bottle Nation~ /*Milly's Key*/
-@103530 = ~NP: This bottle contains some kind of liquid, similar to wine, and the bottle is not full. Apparently the owner of this house is not averse to taking a sip or two from her. You can try if you want.~ /*Testifying at the trial of that Uthgardt took a lot out of me. I don't want to talk to anyone right now, especially you!*/
-@103531 = ~NP: Now fear is unknown to you, the potion will last 12 hours.~ /*This weapon won't work.*/
-@103532 = ~NP: Potion of Knowledge~ /*Chain Lightning*/
-@103533 = ~NP: This potion is sought after by adventurers and explorers of the dark places of Faerûn. Whoever drinks this potion gains the ability to identify any object for two rounds.~ /*These potions are in equal demand by adventurers and scholars, and see much use in the dungeons of Faerun.*/
+@103529 = ~Milly's Bottle~
+@103530 = ~This bottle contains some kind of wine-like liquid, and the bottle is not full.  Apparently the owners of this house would like a sip or two. You're welcome to try it if you like.~
+@103531 = ~Now you have no fear, the potion will last for 12 hours.~
+@103532 = ~Potion of Knowledge~
+@103533 = ~This potion is favored by adventurers and explorers of the dark places of Faerun. Anyone who drinks this potion gains the ability to identify any object for two rounds.~
 @103534 = ~Potion of Barkskin~
-@103535 = ~NP: This thick brew has a heavy and musty smell, like a forest after heavy rains. When someone drinks this potion, a stone cover grows out of the ground, which completely envelops their body. The effect of this potion is that 7 layers of stone skin protect the drinker from physical attacks. Each layer of skin protects against one physical attack. Layers of stone skin will remain until the duration of the effect ends, all layers of the skin are broken by attacks, or until it is magically dispelled. PARAMETERS: 7 layers of stone skin Duration: 12 hours~ /*The lesser robe of eyes, like its more powerful counterpart, provides the wearer with improved vision and the ability to detect many things that are hidden. Once per day, the wearer can invoke the power of the robe to pierce the veil of invisibility or etherealness.
-When not fully armored, the more powerful clerics of Helm often wear such robes to allow them to maintain their vigilance, even when unable to maintain their armament.*/
-@103536 = ~NP: Potion of Evil Protection~ /*Cloak of Protection vs Evil*/
-@103537 = ~NP: The potion creates a protective barrier that has two main properties: first, evil creatures (or creatures that have been enchanted with evil) take a -2 on all attack rolls; second, all saving throws against attacks from such creatures get a +2 bonus. STATS: Protection from evil Duration: 3 turns~ /*Type of Feat: ClassPrerequisite: Monk level 3.
-Specifics: The monk gains a +2 competence bonus on saving throws against mind-affecting spells.
-Use: Automatic.*/
+@103535 = ~This thick concoction smells dark and musty, like a forest after heavy rains. When someone drinks this potion, an outer skin of stone will move up from the ground, completely covering them. The effect of this potion is that the 7 stone skins protect the person who drinks it from physical attacks. Each layer of skin will stop one physical attack. The skins will remain one the person until it is affected by a Dispel Magic, all of the skins are removed due to physical attacks, or the potion duration expires.
+
+STATISTICS:
+
+Seven layers of Stone Skin
+Duration: 12 hours~
+@103536 = ~Potion of Protection from Evil~
+@103537 = ~The potion creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack        roll. Second, summoned demons cannot target the protected creature.
+
+STATISTICS:
+
+Protection from evil
+Duration: 3 turns~
 @103538 = ~Priest of Tyr~
 @103539 = ~Priestess of Mask~
 @103540 = ~Torin's Ring~
 @103541 = ~This ring is little more than a simple metal band, with a short inscription on the surface identifing the owner as "Torin." There is also a message around the interior, naming the person that apparently gave the ring as a gift. "Your brother, Jemanie."~
-@103542 = ~NP: Ring of the Messiah~ /*Ring of Melf*/
-@103543 = ~NP: This ring has the ability to expand the memory of mages and thus provide additional high-level spells. Like many magical decorations in the Realms, this is the work of powerful wizards from the Main Tower of Luskan, where magic rules. OPTIONS: Grants one additional fifth-level, sixth-level, seventh-level, and eighth-level spell. Only for: Mages~ /*This is a list of Creatures that this Encounter can spawn, along with their challenge ratings (CR values).A properly designed Encounter has at least one Creature for every challenge rating from 1 to 20.*/
+@103542 = ~Messiah's Ring~
+@103543 = ~This ring has the ability to expand a mages memory and through this provide additional high level spells. Like many magical jewelry in the Kingdoms, it is the work of powerful wizards from Host Tower of Luskan, where magic rules.
+
+STATISTICS:
+
+Equipped abilities:
+- The wearer can memorize 1 extra 5th-level spells, 1 extra 6th-level spell, 1 extra 7th-level spell and 1 extra 8th-level spell
+
+Usable By:
+ Mage~
 @103547 = ~Bloodsailor~
-@103548 = ~NP: Blood Sailor Mage~ /*Bloodsailor*/
-@103549 = ~NP: Vengaul Guard~ /*Vengaul's Guard*/
-@103551 = ~NP: Aaargh, buddy! I've been attacked!~ /*Agh, I think I'm poisoned!*/
-@103552 = ~NP: Bloodthirsty land rats! They are trying to kill me!~ /*Well, now it's time to kill you, I'm afraid!*/
-@103553 = ~NP: Dirty bastards right on the course!~ /*Me need Pass Coin.*/
-@103554 = ~NP: Have you drunk the grog? I do not see them.~ /*That my business, lady, not yours.*/
-@103556 = ~NP: Someone is fooling me!~ /*Who disturbs me!*/
-@103557 = ~NP: I'm dangerous as a shark, kids!~ /*Spike Trap, Minor*/
-@103558 = ~NP: There you are, land rats!~ /*You're in for it now!*/
-@103559 = ~NP: Hmmm... it must be from a ghost ship~ /*The power shall be mine alone!*/
-@103560 = ~NP: Argh! Where did my seeing eye go?~ /*I could use a good fighter by my side.*/
-@103561 = ~NP: This demonic mist enveloped me!~ /*This is a magical portal.*/
-@103562 = ~NP: You blinded my portholes, but I can still smell your stench!~ /*No bother me or me might kill you anyway!*/
-@103563 = ~NP: Find someone else to do your dirty work, coward.~ /*"Has anyone ever told you how passive aggressive you are?"*/
+@103548 = ~Bloodsailor Mage~
+@103549 = ~Vengaul's Guard~
+@103551 = ~Aaargh, buddy! I am under attack!~
+@103552 = ~Bloodthirsty land rats! They are trying to kill me!~
+@103553 = ~Dirty bastards are right on my course!~
+@103554 = ~Have you had too much grog? I can't see them.~
+@103556 = ~Someone's messing with me!~
+@103557 = ~I'm dangerous like a shark, babies!~
+@103558 = ~There you are, land rats!~
+@103559 = ~Hmmm... must be from a ghost ship~
+@103560 = ~Argh! Where's my seeing eye?~
+@103561 = ~It's a demonic mist that's enveloped me!~
+@103562 = ~You blinded my portholes, but I can still smell your stench!~
+@103563 = ~Find someone else to do your dirty work, coward.~
 @103564 = ~Sally~
 @103565 = ~Meldanen's Silver Tooth~
-@103566 = ~NP: Help! I've been attacked!~ /*Help! Help me here!*/
-@103567 = ~NP: Fresh loot...~ /*Holy Water*/
-@103568 = ~NP: I feel they are very close...~ /*I feel a poison's taint...*/
-@103569 = ~NP: Hssss - slippery as a snake...~ /*Me not have that much.*/
-@103570 = ~NP: I'm turning into gas...~ /*So I gather.*/
-@103571 = ~NP: Come closer if you're not afraid!~ /*Try to come near, this you'll want to hear.*/
-@103572 = ~NP: Hmm... but this attack from a distance could well have ended successfully...~ /*Or maybe you're an idiot that will never get out of this school.*/
-@103573 = ~NP: Thorn thrower! You must be afraid of me...~ /*"I'm sorry. This must be painful for you."*/
-@103574 = ~NP: Thorn thrower! I will suck all your blood for this~ /*Me gots to talk at you abouts gold.*/
-@103575 = ~NP: Damn! I've been fooled again...~ /*Shar's spellblight on you!*/
+@103566 = ~Help! I'm under attack!~
+@103567 = ~Fresh prey...~
+@103568 = ~I feel they're very close...~
+@103569 = ~Hssss - slippery as a snake...~
+@103570 = ~I'm turning into gas...~
+@103571 = ~Come closer if you're not afraid!~
+@103572 = ~Hmm... this ranged attack could have been successful...~
+@103573 = ~Thorn thrower! You must be afraid of me...~
+@103574 = ~Thorn thrower! I'll suck all your blood for this~
+@103575 = ~Damn! I've been fooled again...~
 @103576 = ~Not without a fight!~
 @103578 = ~This is Meldanen's silver tooth, unceremoniously ripped from his jaw. It is a gruesome trophy.~
 @103586 = ~Nothing can touch us, fool! Prepare for death!~
@@ -4402,15 +4417,15 @@ Use: Automatic.*/
 @103588 = ~Yuan-Ti Necromancer~
 @103589 = ~Now that's a fine animal! You'd have a fight running that one down. Get a good look, son!~
 @103590 = ~I'll take you hunting one day, son. You'll love it! Face to face with the worst of nature's snarling beasts!~
-@103591 = ~NP: Dad, how cruel you are. I don't want. They feel bad.~ /*I don't wanna. It looks sick.*/
+@103591 = ~Daddy, you're so cruel. I don't wanna. It looks sick.~
 @103592 = ~Dear, you're scaring the children.~
 @103593 = ~Can I kill it, dad?~
 @103594 = ~That's the spirit, but save it for the hike next week. We'll find some real trophies.~
 @103595 = ~See that! It thinks you're food! Go on! Give it your arm!~
 @103596 = ~Shut up! Stop it! It's sad... I can tell... I think...~
 @103597 = ~Time to go. That Montgomery isn't shy about setting his guards on people. That's a man that knows how to protect his home!~
-@103598 = ~NP: Animal Communication Amulet~ /*Amulet of Undead Turning*/
-@103599 = ~NP: Niatar gave you this item to help save animals from the Black Lake Zoo. This amulet grants its wearer certain abilities as a ranger or druid, allowing them to speak to captive animals.~ /*Nyatar created this item to aid in rescuing the animals in the Blacklake zoo. It grants the bearer very specific use of certain ranger and druid abilities, allowing communication with the captive animals.*/
+@103598 = ~Amulet of Animal Communication~
+@103599 = ~Nyatar gave you this item to aid in rescuing the animals in the Blacklake zoo. It grants the bearer very specific use of certain ranger and druid abilities, allowing communication with the captive animals.~
 @103600 = ~Nyatar~
 @103601 = ~NP: Forest Defense +6~ /*Protection from Evil*/
 @103602 = ~NP: Unlike normal armor, this one has many spells. The owner, in addition to a very decent defense, also receives a bonus to Dexterity, which is never superfluous. In addition, if you prefer to fight in the forests or dungeons, then the armor will help you stay unnoticed by your enemies longer. PARAMETERS: Equipped: +1 Agility +20 Shadowhide Ability Anyone who hits the wearer of the armor takes 1D4 fire damage Defense Class: 1 Weight: 25 Useable by: Ranger Druid~ /*Damage Resistance: This property is similar to damage immunity, in that the owner is protected from certain forms of damage. However, instead of a base chance to avoid all damage, the player instead resists a certain amount of damage per attack. For example, the character may be able to resist the first 5 points of fire damage he receives from every attack.*/
