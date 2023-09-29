@@ -1,7 +1,7 @@
 IF
 	Global("LinaExist","GLOBAL",0)
 	Global("LinaReleased","GLOBAL",0)
-	LevelLT(Player1,15)
+	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
@@ -13,8 +13,8 @@ END
 IF
 	Global("LinaExist","GLOBAL",0)
 	Global("LinaReleased","GLOBAL",0)
-	LevelGT(Player1,14)
-	LevelLT(Player1,17)
+	XPGT(Player1,1750000)
+	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
@@ -26,8 +26,8 @@ END
 IF
 	Global("LinaExist","GLOBAL",0)
 	Global("LinaReleased","GLOBAL",0)
-	LevelGT(Player1,16)
-	LevelLT(Player1,19)
+	XPGT(Player1,2250000)
+	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
@@ -39,7 +39,7 @@ END
 IF
 	Global("LinaExist","GLOBAL",0)
 	Global("LinaReleased","GLOBAL",0)
-	LevelGT(Player1,18)
+	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
 		SetGlobal("LinaExist","GLOBAL",1)
@@ -64,7 +64,7 @@ END
 IF
 	Global("DaelanExist","GLOBAL",0)
 	Global("DaelanReleased","GLOBAL",0)
-	LevelLT(Player1,15)
+	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
@@ -76,8 +76,8 @@ END
 IF
 	Global("DaelanExist","GLOBAL",0)
 	Global("DaelanReleased","GLOBAL",0)
-	LevelGT(Player1,14)
-	LevelLT(Player1,17)
+	XPGT(Player1,1750000)
+	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
@@ -89,8 +89,8 @@ END
 IF
 	Global("DaelanExist","GLOBAL",0)
 	Global("DaelanReleased","GLOBAL",0)
-	LevelGT(Player1,16)
-	LevelLT(Player1,19)
+	XPGT(Player1,2250000)
+	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
@@ -102,7 +102,7 @@ END
 IF
 	Global("DaelanExist","GLOBAL",0)
 	Global("DaelanReleased","GLOBAL",0)
-	LevelGT(Player1,18)
+	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
 		SetGlobal("DaelanExist","GLOBAL",1)
@@ -127,7 +127,7 @@ END
 IF
 	Global("BoddinokExist","GLOBAL",0)
 	Global("BoddinokReleased","GLOBAL",0)
-	LevelLT(Player1,15)
+	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
@@ -139,8 +139,8 @@ END
 IF
 	Global("BoddinokExist","GLOBAL",0)
 	Global("BoddinokReleased","GLOBAL",0)
-	LevelGT(Player1,14)
-	LevelLT(Player1,17)
+	XPGT(Player1,1750000)
+	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
@@ -152,8 +152,8 @@ END
 IF
 	Global("BoddinokExist","GLOBAL",0)
 	Global("BoddinokReleased","GLOBAL",0)
-	LevelGT(Player1,16)
-	LevelLT(Player1,19)
+	XPGT(Player1,2250000)
+	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
@@ -165,7 +165,7 @@ END
 IF
 	Global("BoddinokExist","GLOBAL",0)
 	Global("BoddinokReleased","GLOBAL",0)
-	LevelGT(Player1,18)
+	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
 		SetGlobal("BoddinokExist","GLOBAL",1)
@@ -190,7 +190,7 @@ END
 IF
 	Global("GrimgnawExist","GLOBAL",0)
 	Global("GrimgnawReleased","GLOBAL",0)
-	LevelLT(Player1,15)
+	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
@@ -202,8 +202,8 @@ END
 IF
 	Global("GrimgnawExist","GLOBAL",0)
 	Global("GrimgnawReleased","GLOBAL",0)
-	LevelGT(Player1,14)
-	LevelLT(Player1,17)
+	XPGT(Player1,1750000)
+	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
@@ -215,8 +215,8 @@ END
 IF
 	Global("GrimgnawExist","GLOBAL",0)
 	Global("GrimgnawReleased","GLOBAL",0)
-	LevelGT(Player1,16)
-	LevelLT(Player1,19)
+	XPGT(Player1,2250000)
+	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
@@ -228,7 +228,7 @@ END
 IF
 	Global("GrimgnawExist","GLOBAL",0)
 	Global("GrimgnawReleased","GLOBAL",0)
-	LevelGT(Player1,18)
+	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
 		SetGlobal("GrimgnawExist","GLOBAL",1)
@@ -253,7 +253,7 @@ END
 IF
 	Global("SharwynExist","GLOBAL",0)
 	Global("SharwynReleased","GLOBAL",0)
-	LevelLT(Player1,15)
+	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
@@ -265,8 +265,8 @@ END
 IF
 	Global("SharwynExist","GLOBAL",0)
 	Global("SharwynReleased","GLOBAL",0)
-	LevelGT(Player1,14)
-	LevelLT(Player1,17)
+	XPGT(Player1,1750000)
+	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
@@ -278,8 +278,8 @@ END
 IF
 	Global("SharwynExist","GLOBAL",0)
 	Global("SharwynReleased","GLOBAL",0)
-	LevelGT(Player1,16)
-	LevelLT(Player1,19)
+	XPGT(Player1,2250000)
+	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
@@ -291,7 +291,7 @@ END
 IF
 	Global("SharwynExist","GLOBAL",0)
 	Global("SharwynReleased","GLOBAL",0)
-	LevelGT(Player1,18)
+	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynExist","GLOBAL",1)
@@ -316,7 +316,7 @@ END
 IF
 	Global("TomiExist","GLOBAL",0)
 	Global("LinaReleased","GLOBAL",0)
-	LevelLT(Player1,15)
+	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
@@ -328,8 +328,8 @@ END
 IF
 	Global("TomiExist","GLOBAL",0)
 	Global("TomiReleased","GLOBAL",0)
-	LevelGT(Player1,14)
-	LevelLT(Player1,17)
+	XPGT(Player1,1750000)
+	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
@@ -341,8 +341,8 @@ END
 IF
 	Global("TomiExist","GLOBAL",0)
 	Global("TomiReleased","GLOBAL",0)
-	LevelGT(Player1,16)
-	LevelLT(Player1,19)
+	XPGT(Player1,2250000)
+	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
@@ -354,7 +354,7 @@ END
 IF
 	Global("TomiExist","GLOBAL",0)
 	Global("TomiReleased","GLOBAL",0)
-	LevelGT(Player1,18)
+	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
 		SetGlobal("TomiExist","GLOBAL",1)
