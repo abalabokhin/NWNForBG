@@ -1853,6 +1853,12 @@ COPY ~NWNForBG/itm/nwring7.itm~ ~override~
   SAY 0xC	@107721
   SAY 0x54	@107722
 
+COPY ~NWNForBG/itm/nwring8.itm~ ~override~
+  SAY 0x8	@110002
+  SAY 0xC	@110002
+  SAY 0x50	@110003
+  SAY 0x54	@110003
+
 COPY ~NWNForBG/itm/nwrjr005.itm~ ~override~
   SAY 0xC	@102311
   SAY 0x50	@102312

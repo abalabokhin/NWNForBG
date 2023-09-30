@@ -6399,4 +6399,15 @@ While many a tale has suggested that there are dark forces that call the wood th
 
 @110000 = ~Ettercap's Silk Gland~
 @110001 = ~This is the gland that allows ettercaps to create web fibers.~
+@110002 = ~Ring of Protection from Elements~
+@110003 = ~The masterful enchantment of this ring allows the wearer to almost ignore the effects of cold, fire, electricity and acid. In addition, the ring protects the wearer from any poisons.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire resistance: +75%
+- Cold resistance: +75%
+- Electricity resistance: +75%
+- Acid resistance: +75%
+- Immunity to Poisons~
 
