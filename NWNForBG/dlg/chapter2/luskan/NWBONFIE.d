@@ -11,7 +11,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~~ THEN DO ~SetGlobal("BonfireDisable","MYAREA",2)AmbientActivate("Fpit1S",FALSE)OpenDoor("NWBONFIE")SoundActivate("Fire1",FALSE)ContainerEnable("Pile",TRUE)TriggerActivation("Book",FALSE)~ EXIT
+  IF ~~ THEN DO ~AmbientActivate("Fpit1S",FALSE)OpenDoor("NWBONFIE")SoundActivate("Fire1",FALSE)ActionOverride("Pile",CreateItem("BOOK06",1,0,0))TriggerActivation("Book",FALSE)SetGlobal("BonfireDisable","MYAREA",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
