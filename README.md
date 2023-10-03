@@ -150,4 +150,9 @@ In development:
 
 0.2 (07/15/2023):
 
-- Initial resources extraction from the NWN assembly as a mod with lots of know issues.
+- Initial resources extraction from the NWN assembly as a mod with lots of know issues. It is the first public
+  release of the mod in github.
+
+prior:
+
+- Assembly for BGT including whole NWN plot was prepared, testes and published by AGKanevchev.
