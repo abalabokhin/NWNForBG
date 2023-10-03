@@ -4610,11 +4610,11 @@ Not Usable By:
  Druid
  Mage
  Thief~
-@103648 = ~NP: Merchant~ /*Merchants*/
-@103649 = ~NP: Scroll Merchant~ /*Trade of Blades*/
-@103650 = ~NP: Potion Seller~ /*Confirmation*/
-@103651 = ~NP: Just don't think of missing it. We'll gut those stinking land rats!~ /*Just don't get preoccupied with it.*/
-@103652 = ~NP: Arrgh... I'm covering your ass homie~ /*I'm sorry. I didn't know.*/
+@103648 = ~Merchant~
+@103649 = ~Scroll Merchant~
+@103650 = ~Potion Seller~
+@103651 = ~Don't you dare miss. We'll gut those stinking land rats!~
+@103652 = ~Arrgh... I'm covering your ass homie.~
 @103653 = ~Prichev~
 @103654 = ~Punkin~
 @103655 = ~Quasit's Eye~
@@ -4628,8 +4628,8 @@ It seems so odd of Karlat to suggest we have a party for the village children. N
 
 Off to the village then, to spread the good news.~
 @103660 = ~Quint Jhareg~
-@103661 = ~NP: Oath of Quint Jareg~ /*To Quint Jhareg's Tower*/
-@103662 = ~NP: This is the vow of the demented ex-priest of Lathander, Quint Jareg.~ /*This is the key to the room where Quint Jhareg has been confined.*/
+@103661 = ~The Oath of Quint Jhareg~
+@103662 = ~This is the written oath of the madman and former cleric of Lathander, Quint Jhareg.~
 @103663 = ~Refugee~
 @103664 = ~Relmar~
 @103665 = ~Relmar's Journal~
@@ -4650,27 +4650,125 @@ Entry # 57.
 What be wrong with this place? Every landmark disappears without a trace. It seems like there be no way out. It makes me want to shout... What the blazes am I rhyming for? I don't know what's happening, but I decided I had better hide the antidote to the poison, before I get jumped by the Spirit. All blasted night the thing wails. Last night I just about got up and took the antidote over to pour on its tree. Can't imagine what I was thinking...
 
 The last entry is almost incomprehensible, as the ability to think or write coherently seems to have been stripped from the dwarf's mind. It does mention something about a pile of rocks to the northwest of the Spirit.~
-@103667 = ~NP: Roaring~ /*Rovat*/
+@103667 = ~Revat~
 @103668 = ~Rhaine~
 @103669 = ~Rimardo~
 @103670 = ~Lantanese Ring +1~
-@103671 = ~NP: The rim of this ring is covered with manuscripts in an unknown foreign language and engraved. STATS: +1 Intelligence +1 Saving Throws +5 Magic Resistance Regenerate 1 health per round Immune to Dementia and Silence Vocalization Weight: 0 Used by: Mages Bards~ /*The band of this ring is covered with scripts and etchings in a strange foreign language.*/
-@103672 = ~Lantanese Ring +1~
-@103673 = ~NP: The rim of this ring is covered with manuscripts in an unknown foreign language and engraved. STATS: +2 Intelligence +2 Saving Throws +10 Magic Resistance Regenerate 1 health per round Immune to Dementia and Silence Vocalization Weight: 0 Used by: Mages Bards~ /*The band of this ring is covered with scripts and etchings in a strange foreign language.*/
+@103671 = ~The band of this ring is covered with scripts and etchings in a strange foreign language.
+
+STATISTICS:
+
+Equipped abilities:
+- Intellect: +1
+- Saving Throws: +1
+- Magic Resistance: +5%
+- Regenerates 1 HP per round
+- Immune to Feeblemind and Silence
+- Vocalize
+
+Weight: 0
+
+Usable By:
+ Bard
+ Mage~
+@103672 = ~Lantanese Ring +2~
+@103673 = ~The band of this ring is covered with scripts and etchings in a strange foreign language.
+
+STATISTICS:
+
+Equipped abilities:
+- Intellect: +2
+- Saving Throws: +2
+- Magic Resistance: +10%
+- Regenerates 1 HP per round
+- Immune to Feeblemind and Silence
+- Vocalize
+
+Weight: 0
+
+Usable By:
+ Bard
+ Mage~
 @103674 = ~Lantanese Ring +3~
-@103675 = ~NP: The rim of this ring is covered with manuscripts in an unknown foreign language and engraved. STATS: +3 Intelligence +3 Saving Throws +15 Magic Resistance Regenerate 2 health per round Immune to Dementia and Silence Vocalization Weight: 0 Used by: Mages Bards~ /*The band of this ring is covered with scripts and etchings in a strange foreign language.*/
+@103675 = ~The band of this ring is covered with scripts and etchings in a strange foreign language.
+
+STATISTICS:
+
+Equipped abilities:
+- Intellect: +3
+- Saving Throws: +3
+- Magic Resistance: +15%
+- Regenerates 2 HP per round
+- Immune to Feeblemind and Silence
+- Vocalize
+
+Weight: 0
+
+Usable By:
+ Bard
+ Mage~
 @103676 = ~Revat's Ring~
-@103677 = ~NP: This is a gold ring with a border, large and heavy, designed for the human hand. Those who knew its owner, Revat's father, will recognize it and will probably become more trusting of the wearer. Revat's mother enchanted this ring for Revat, but the nature of the enchantment is unknown to you.~ /*This broad-banded iron ring is large and heavy, intended for a man's hand. Those who knew its owner, Revat's father, will recognize it as his and may be more prone to trust the one who bears it.*/
+@103677 = ~This broad-banded iron ring is large and heavy, intended for a man's hand. Those who knew its owner, Revat's father, will recognize it as his and may be more prone to trust the one who bears it. Revat's mother enchanted this ring for Revat, but the nature of the enchantment is unknown to you.~
 @103678 = ~Ring of the Rogue +1~
-@103679 = ~NP: This ordinary ring pulsates with a faint light, and it is warm to the touch. It does not feel any life, but it seems that it adapts to its owner, and over time its abilities grow. Tommy Undergallows, the former owner of the ring, said he couldn't get it to work... He no doubt took it off immediately after putting it on, without even realizing the ring's unique properties. STATS: +1 to dexterity +10 to all thieving abilities Undetected Improved invisibility 1 time per day Weight: 0 Used by: Thieves Bards~ /*This plain-looking ring pulsates with a faint glow and is warm to the touch. While not alive in any sense of the word, it does seem likely that this ring takes time to adjust to its wearer, and over time its abilities may grow. Tomi Undergallows, its previous owner, stated that he 'couldn't get it to work'... no doubt he discarded it after first placing it on his finger and was unaware of its unique properties.*/
-@103680 = ~Ring of the Rogue +1~
-@103681 = ~NP: This ordinary ring pulsates with a faint light, and it is warm to the touch. It does not feel any life, but it seems that it adapts to its owner, and over time its abilities grow. Tommy Undergallows, the former owner of the ring, said he couldn't get it to work... He no doubt took it off immediately after putting it on, without even realizing the ring's unique properties. STATS: +2 Agility +20 to all thieving abilities Undetected Improved invisibility 2 times per day Weight: 0 Used by: Thieves Bards~ /*This plain-looking ring pulsates with a faint glow and is warm to the touch. While not alive in any sense of the word, it does seem likely that this ring takes time to adjust to its wearer, and over time its abilities may grow. Tomi Undergallows, its previous owner, stated that he 'couldn't get it to work'... no doubt he discarded it after first placing it on his finger and was unaware of its unique properties.*/
-@103682 = ~Prophyro's Ring +4~
-@103683 = ~NP: This ordinary ring pulsates with a faint light, and it is warm to the touch. It does not feel any life, but it seems that it adapts to its owner. Tommy Undergallows, the former owner of the ring, said he couldn't get it to work... He no doubt took it off immediately after putting it on, without even realizing the ring's unique properties. STATS: +3 Agility +30 to all thieving abilities Undetected Improved invisibility 3 times per day Weight: 0 Used by: Thieves Bards~ /*This plain-looking ring pulsates with a faint glow and is warm to the touch. While not alive in any sense of the word, it does seem likely that this ring takes time to adjust to its wearer, and over time its abilities may grow. Tomi Undergallows, its previous owner, stated that he 'couldn't get it to work'... no doubt he discarded it after first placing it on his finger and was unaware of its unique properties.*/
-@103684 = ~NP: piece of metal~ /*Shank of Meat*/
-@103685 = ~NP: Ritellium~ /*Billiam*/
-@103686 = ~NP: A piece of incomprehensible extremely light metallic substance that emits a white shimmer.~ /*What you knows about magic book me finds in tomb?*/
-@103687 = ~NP: A mystical alloy called *ritellium*, the manufacture and formula of which is a secret behind seven locks, and is known only to a few in the world. Weight: 8~ /*Don't know nothing about it. I just guard what I'm told to guard. Looks like nothing but a hole in the ground to me.*/
+@103679 = ~This plain-looking ring pulsates with a faint glow and is warm to the touch. While not alive in any sense of the word, it does seem likely that this ring takes time to adjust to its wearer, and over time its abilities may grow. Tomi Undergallows, its previous owner, stated that he 'couldn't get it to work'... no doubt he discarded it after first placing it on his finger and was unaware of its unique properties.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+- All Thieving Skills: +10
+- Non-Detection
+
+Charge abilities:
+- Improved Invisibility once per day
+
+Weight: 0
+
+Usable By:
+ Bard
+ Thief~
+@103680 = ~Ring of the Rogue +2~
+@103681 = ~This plain-looking ring pulsates with a faint glow and is warm to the touch. While not alive in any sense of the word, it does seem likely that this ring takes time to adjust to its wearer, and over time its abilities may grow. Tomi Undergallows, its previous owner, stated that he 'couldn't get it to work'... no doubt he discarded it after first placing it on his finger and was unaware of its unique properties.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +2
+- All Thieving Skills: +20
+- Non-Detection
+
+Charge abilities:
+- Improved Invisibility 2 times per day
+
+Weight: 0
+
+Usable By:
+ Bard
+ Thief~
+@103682 = ~Prophyro's Ring +3~
+@103683 = ~This plain-looking ring pulsates with a faint glow and is warm to the touch. While not alive in any sense of the word, it does seem likely that this ring takes time to adjust to its wearer. Tomi Undergallows, its previous owner, stated that he 'couldn't get it to work'... no doubt he discarded it after first placing it on his finger and was unaware of its unique properties.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +3
+- All Thieving Skills: +30
+- Non-Detection
+
+Charge abilities:
+- Improved Invisibility 3 times per day
+
+Weight: 0
+
+Usable By:
+ Bard
+ Thief~
+@103684 = ~Piece of Metal~
+@103685 = ~Ritellium~
+@103686 = ~A piece of incomprehensible extremely light metallic substance that emits a white shimmer.~
+@103687 = ~A mystical alloy called *ritellium*, the manufacture and formula of which is a secret behind seven locks, and is known only to a few in the world.
+
+Weight: 8~
 @103688 = ~Saulter~
 @103689 = ~Intruders! Intruders!~
 @103690 = ~History Scroll~
@@ -4678,26 +4776,28 @@ The last entry is almost incomprehensible, as the ability to think or write cohe
 "Faerun was once ruled by a cruel and ancient race, known as the Creators, who were left in stasis during the great ice age."~
 @103692 = ~The alien text on this ancient scroll swims before your eyes before forming into a language you can understand.
 "The Creator race forced a group of slaves to protect them through the ice age."~
-@103693 = ~NP: Turn into a rat~ /*Tenser's Transformation*/
-@103694 = ~NP: This scroll, after reading, will enable the reader to turn into a wererat once a day. Cannot use: Paladin Cleric of Lathander Cleric of Helm~ /*The appearance will be used for the creature's 3D model ingame. The portrait will be used in Chat balloons and Conversations.*/
+@103693 = ~Transformation into Rat~
+@103694 = ~This scroll, once read, will grant the reader the ability to transform into a wererat once per day.
+
+Not Usable By:
+ Paladin
+ Priest of Lathander
+ Priest of Helm~
 @103695 = ~Old Scroll~
 @103696 = ~This weathered scroll is severely time-worn and covered with almost-indecipherable runes. There is a hand-written translation across the bottom, showing this to be some manner of religious text written by a Netherese priest. Part of the translation is of particular note:
 "The lands of NETHER will one day return to the destiny to which they were born. Its people SHALL rise up from their ancient graves and RULE all those which have come after them."~
 @103697 = ~Letter to Aribeth~
-@103698 = ~NP: This letter is written in a refined manner: My dear Lady Aribeth, Master Mowgrim has told me that it is my duty to brief you on how to navigate Master's Tower when you arrive. I don't know if you know this, but some rooms in the Tower of the Ruler are not connected by stairs. We use magical portals to travel from one place to another. You just need to touch the portal and say where you want to go, and it will open the way for you. Anyone can enter the second level, but in order to get beyond it, you need a runestone that gives access there (this is, of course, for security reasons). Enclosed with this letter is a runestone that will allow you to enter Master Maugrim's private office. He looks forward to your arrival. &quot;Your servant, Apprentice Pim.&quot;~ /*This letter is written in a delicate hand:
-"My dear Lady Aribeth,
+@103698 = ~This letter is written in a delicate hand:
 
-"Master Maugrim has told me that I must inform you on how to move about the Host Tower for when you come.
+My dear Lady Aribeth,
 
-"I do not know if you are aware, but much of the Host Tower is not connected in the normal fashion. We use a teleporter to move about from area to area... when you are in the ambassador's area, you can find the first teleporter in the far chamber.
+Master Maugrim has told me that I must inform you on how to move about the Host Tower for when you come. I do not know if you are aware, but much of the Host Tower is not connected in the normal fashion. We use a teleporter to move about from area to area. You only need touch the portal and express your desired location, and it shall open the way for you. The second level anyone may reach, but beyond that you must have a runestone which allows your access (for security, of course).
 
-"You only need touch the portal and express your desired location, and it shall open the way for you. The second level anyone may reach, but beyond that you must have a runestone which allows your access (for security, of course).
+Enclosed with this letter is a runestone that will allow you to reach master Maugrim's private sanctum. He awaits your arrival eagerly.
 
-"The portals, once open, remain so for a mere half-minute, my Lady. Hurry on through once has been opened. Enclosed with this letter is a runestone that will allow you to reach master Maugrim's private sanctum. He awaits your arrival eagerly.
-
-"Your servant,
-  Apprentice Pim."*/
-@103699 = ~NP: Sedos Sebil~ /*Sedos*/
+Your servant,
+  Apprentice Pim.~
+@103699 = ~Sedos Sebile~
 @103700 = ~Mirror of Vanity~
 @103701 = ~This mirror seems to offer you an unusually flattering image of yourself. Something seems strange.~
 @103702 = ~The magic Mirror of Vanity offers the viewer an image of themselves that is incredibly attractive. In fact, the image is so perfect that many viewers become lost in the illusion, believing themselves to hold greater physical charms than they truly do.~
