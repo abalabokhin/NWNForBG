@@ -3148,7 +3148,7 @@ Usable By:
 Here be the list of whats I need and whats you, the customer, get. I'll be wanting a goodly number of coins as well, depending on what I wants to charge you. Puts the items in the forge and talks to me, Marrok, with your gold in your pocket.
 
 Armor and Axes:
-Chromatic Armor: Requires a diamond and full plate with Armor Class: 1.
+Chromatic Armor: Requires ritellium and full plate with Armor Class: 1.
 
 Scales of Truth: Requires special holy water and a chain mail +1 with Armor Class: 4.
 
@@ -3165,7 +3165,7 @@ Gladiator Club: Requires ironwood and a club.
 
 Ironwood Mace: Requires ironwood and a mace +1.
 
-Storm Hammer: Requires a diamond and a war hammer +1.
+Storm Hammer: Requires ritellium and a war hammer +1.
 
 Foundation Flail: Requires ironwood and a magic flail +1.
 
@@ -3180,9 +3180,9 @@ Harbinger Kin Greatsword: Requires adamantite and a two-handed sword +1.
 
 Sword Saint Katana: Requires adamantite and a katana +1.
 
-Astral Blade Long Sword: Requires a diamond and a long sword +1.
+Astral Blade Long Sword: Requires ritellium and a long sword +1.
 
-Astral Blade Bastard Sword: Requires a diamond and a bastard sword +1.
+Astral Blade Bastard Sword: Requires ritellium and a bastard sword +1.
 
 Desert Wind Scimitar: Requires adamantite and a scimitar +1.
 
@@ -4569,13 +4569,47 @@ Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
 Requirements: 9 Strength~
-@103644 = ~NP: Bereglaz's Plate~ /*Delphus Plate*/
-@103645 = ~NP: This armor is different from most others used in Amn. They are much lighter, and although they are made of metal, the armor does not impede the wearer's movement. Because of its unique features, this plate armor is perfect for fighting vampires. It protects its owner from pulling levels. In addition, the armor provides a small amount of protection against magic. PARAMETERS: Defense class: -1 Weight: 20 Required strength: 11 Special: Protects from level drain + 8 to magic resistance Cannot be used by: Bard Druid Mage Thief~ /*A formian resembles a strange, centaur-like creature with the body and head of a giant ant, but with humanoid forelimbs. Their bodies are encased in a brownish-red, black or white carapace. They are not cruel, but live in a strict, regimented society.  Formian warriors protect the hive from incursions ferociously, and their deadly claws are designed specifically for combat.*/
-@103646 = ~NP: colored armor~ /*Armor Stand*/
-@103647 = ~NP: This fine armor is crafted by the finest smiths in Neverwinter. In an unfathomable way, they managed to combine full armor and a mystical alloy called *ritellium*. As a result, you received a unique armor that allows you to withstand the most powerful sorcerers and liches in battle. Once per day, you can activate the special properties of the armor and become immune to the most powerful death spells and imprisonment for one hour. PARAMETERS: Protection class: -1 +15 to magic resistance +25 to resistance to magic fire and cold Special properties: 1 time per day for 1 hour &quot;Death Ward&quot; (Immunity to instant death and imprisonment) Weight: 40 Requirements: strength 15 Cannot use: Bard Druid Mage Thief~ /*Destruction DomainClerics who take the Destruction domain are able to damage constructs through force of will and are granted spells that allow them to weaken and destroy their enemies.
-Domain Special Ability and Bonus Spells
-Weaken Constructs: Able to damage constructs while using the turn ability.
-The cleric gains access to the following spells at the specified spell level: Stinking Cloud (3), Acid Fog (6).*/
+@103644 = ~Bereglaz's Plate~
+@103645 = ~This armor is different from most other armor used in Amn. They are much lighter, and although they are made of metal, the armor does not impede the wearer's movements. Because of its unique features, this plate armor is ideal for fighting vampires. It protects its wearer from Level Drain. In addition, the armor provides a small amount of protection against magic.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +8%
+- Immune to Level Drain
+- Immune to Instant Drain
+
+Armor Class: -1
+Weight: 20
+Requirements: 10 Strength
+
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+@103646 = ~Chromatic Armor~
+@103647 = ~This beautiful armor is crafted by the finest blacksmiths in Neverwinter. In some unfathomable way, they have managed to combine full armor and a mystical alloy called 'ritellium'. The result is a unique armor that allows you to stand up to the most powerful sorcerers and lichs in battle. Once per day, you can activate the armor's special properties and gain immunity to the most powerful death magic and Imprisonment for one hour.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +15%
+- Fire Resistance: +25%
+- Cold Resistance: +25%
+
+Charge abilities:
+- Death Ward once per day for one hour (Immune to Death Magic and Imprisonment)
+
+Armor Class: -1
+Weight: 40
+Requirements: 15 Strength
+
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
 @103648 = ~NP: Merchant~ /*Merchants*/
 @103649 = ~NP: Scroll Merchant~ /*Trade of Blades*/
 @103650 = ~NP: Potion Seller~ /*Confirmation*/
