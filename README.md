@@ -20,12 +20,13 @@ Wiedu Adaptation: paladin84
 Thanks and Acknowledgements
 -----------------------
 
-* Insomniator2 - for a great help with weidu adaptation and especially for scripts that can generate weidu code to set string refs for binary files (cre, are, etc.)
+* Lord\_Draconis - for the provided location images
+* Gorion - for the provided night Beggar's Nest location image
+* Insomniator2 - for a great help with weidu adaptation and especially for the script that can generate weidu code to set string refs for binary files (cre, are, etc.)
 * p\_zombie - for testing and help with bp-bgt-worldmap adaptation
-* scheele - for testing and some ideas for the mod
 * argent77 - for help with TIS files and useful weidu libraries
-* arcanecoast.ru - thanks to the whole community for the help with weidu modding
-
+* scheele - for testing and some ideas for the mod
+* arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing
 
 Languages
 ---------
@@ -36,8 +37,7 @@ Languages
 Description:
 ------------
 
-The mod repeats, with some minor modifications, the plot of Neverwinter Nights game. Once Gorion's Ward reaches the experience of 1350000 XP, he/she can start Neverwinter Nights. At this moment, a messenger from Neverwinter will approach you in any of Athkatla's Districts and ask for help.
-
+The mod repeats, with some minor modifications, the plot of Neverwinter Nights game. Once Gorion's Ward reaches the experience of 1350000 XP, he/she can start Neverwinter Nights. At this moment, a messenger from Neverwinter will approach him/her in any of the Athkatla's Districts and ask for help.
 
 Compatibility
 -------------
@@ -53,7 +53,7 @@ Dependencies
 -------------
 
 For BG2:TOB and BGT:
-Make sure ToBex (or other mods, increasing maximum number of music) and Infinity-Animations are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
+Make sure ToBex (or other mods, increasing maximum number of music) and Infinity-Animations are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized\_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
 
 For BG2EE and EET:
 BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate.
@@ -63,14 +63,15 @@ Version History
 In development:
 
 - Fixed more craft recepies.
-- Fixed some traps for recepies containers, so they are undetectable.
+- Fixed some traps for craft containers, so they are undetectable.
 - Fixed crafting script in NW2E61 to work better.
 
 0.89 (09/28/2023)
 
 - Changed XP needed to start the mod to 1350000.
-- Fixed how level for Joinable NPCs is defined, now it depends on Main Hero XP not level.
-- Fixed more maps for EE version (there are still glitches but it is nothing I can do), thanks to argent77.
+- Fixed how level for Joinable NPCs is defined, now it depends on Main Hero XP not his/her level.
+- Fixed more maps for EE version (there are still glitches but it is nothing I can do), thanks to argent77, 
+  details are [here](https://www.gibberlings3.net/forums/topic/29944-mod-added-area-compatability-for-bg2-and-bg2ee-in-2019/page/2/).
 - TIS files for classic BG2 and BGT are now generated during installation from EE version, it reduced the mod size to be less than 1GB (thanks to argent77).
 - Used weidu function from argent77 to proper copy PVRZ files (should be no prefix conflicts).
 
