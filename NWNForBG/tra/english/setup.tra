@@ -5354,30 +5354,45 @@ Not Usable By:
 @103809 = ~Pitiful creature! Die!~
 @103810 = ~Troll Chieftain~
 @103811 = ~Boulder~
-@103812 = ~NP: Giants throw such boulders at their enemies. Such a pebble inflicts great damage and can stun its prey. It takes a truly gigantic force to hurl it... STATS: Range: 80 yards Damage: 3-18 Traits: Saving vs. Breath -4 whether the victim will be unconscious one round, and stunned the next round. Requires: 19 Strength~ /*Type of Feat: GeneralPrerequisite: Can only take this feat at 1st-level.
-Specifics: Character gains a +2 bonus on Lore checks and Spellcraft checks.
-Use: Automatic.*/
+@103812 = ~The giants hurl such boulders at their enemies. Such a pebble causes great damage and can stun its victim. It takes a really giant force to throw it...
+
+STATISTICS:
+
+Distance: 80 yards
+Damage: 3d6
+Special: Target must save vs. Death or be unconscious for one round, and stunned for another round
+Requirements: 19 Strength~
 @103813 = ~Ulfnog~
 @103814 = ~Bloodsailor Uniform~
 @103815 = ~Urth~
 @103816 = ~Urth's Ring~
-@103817 = ~NP: This is the ring of Urth, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~ /*If you'd spare my life and listen to what I have to say, I'd be willing to cut my ear from my head and give it to you as proof.*/
-@103818 = ~NP: Alarm! Trespassers!~ /*Valindra Alarm*/
+@103817 = ~This is Urth's Ring, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~
+@103818 = ~Intruders! Intruders!~
 @103819 = ~Vengaul~
 @103820 = ~Wanev's Gem~
 @103821 = ~This is a magical gem that appears to have once been part of some greater item. It was owned by Wanev the mage.~
 @103822 = ~At last! The 'hero' of my enemies comes to die! Once you are dead, Voleron shall be free!~
 @103823 = ~Voleron~
-@103824 = ~NP: Scroll of removal of magical seals~ /*Magical Beast Group*/
-@103825 = ~NP: This scroll of the mage Vainiv, when read, removes the protection from magically sealed doors and passages. Unfortunately, this scroll has no effect outside the mage's tower.~ /*On Lord Nasher's behalf I welcome you to the gates of Castle Never. Unfortunately, however, I cannot allow you entry.*/
+@103824 = ~Magic Protection Removal Scroll~
+@103825 = ~This is a mage Vainiv's scroll when read, removes protection from magically sealed doors and passageways. Unfortunately, this scroll has no effect outside of the mage's tower~
 @103826 = ~Walters~
-@103829 = ~NP: Wand of Undead Creation~ /*Animate Dead*/
-@103830 = ~NP: This wand raises 1 to 3 undead creatures from the ground that serve the one who summoned them. One undead servant spawns automatically, another with a 70% chance, and a third with a 30% chance. The undead can follow the caster, stay somewhere and attack any creature. Monsters last 8 hours unless they are destroyed in combat or banished. This spell cannot be broken. The number of charges is limited. STATS: Effect: Summons 1 to 3 skeletons Sphere: Necromancy Range: 10 yards Duration: 8 hours Cannot be used by: Priest of Lathander Undead Slayer Wizard Slayer~ /*You've come up with a plan to gain the freedom of the female thrall you purchased from the illithid. Because of the mind flayers' telepathic abilities, you can't reveal your plan to her.
-You've sent her to deliver a fake message to the Seer. Since she believes she is magically bound to you, the illithid will consider her a thrall in your service and allow her to leave their city. Once back at the rebel camp, you can explain the truth to her.*/
+@103829 = ~Wand of Undead Creation~
+@103830 = ~This wand raises 1 to 3 undead creatures from the ground that serve the one who summoned them. One undead servant appears automatically, the second with a 70% chance, the third with a 30% chance. The undead can follow the caster, stay in a location, and attack any creature. Monsters exist for 8 hours unless destroyed in combat or banished. These enchantments cannot be dispelled. The number of charges is limited.
+
+STATISTICS:
+
+Sphere: Necromantic
+Distance: 10 yards
+Duration: 8 hours
+
+Not Usable By:
+ Priest of Lathander
+ Wizard Slayer
+ Undead Hunter~
 @103831 = ~Wanev~
-@103832 = ~NP: Vainiv's diary~ /*Wanev's Guard*/
-@103833 = ~NP: This appears to be the diary of the mage Vainiv. It reads: &quot;Damn that demon ale! Damn it! Damn it! Damn it! I have no idea where I put the ingredients in this recipe. How did I get so drunk? What was that blonde's name? Damn! I think I lost my ward stone here. If I won't be able to find the ingredients, I won't hit my tower! What else can I say to these scarecrows?!&quot; There are continuous repetitions here. Then: &quot;I'm going to go back to the tower and never go back to that stupid cottage again! Stupid wardstone...&quot;~ /*This appears the be a journal of one Wanev, a mage. It reads: "Curse the demon ale! Dammit! Dammit! Dammit! I have no idea where I've put the ingredients for the recipe. How drunk was I? What was the blonde's name? Curses! If I can't find the ingredients, I can't get into my den! I think I left my wardstone and journal in there. What was I supposed to tell the bugbears again?!" There are numerous expletives here. Then: "I intend to return to my tower and never return to this stupid overpriced cottage! Thank the gods that I've nothing worse than trolls guarding the back way. Stupid wardstone..."*/
-@103834 = ~NP: Vainiv's Guardian Stone~ /*Wanev's Gem*/
+@103832 = ~Wanev's Journal~
+@103833 = ~This appears the be a journal of one Wanev, a mage. It reads: "Curse the demon ale! Dammit! Dammit! Dammit! I have no idea where I've put the ingredients for the recipe. How drunk was I? What was the blonde's name? Curses! If I can't find the ingredients, I can't get into my tower! I think I left my wardstone in there. What was I supposed to tell the bugbears again?!" There are numerous expletives here. Then: "I intend to return to my tower and never return to this stupid overpriced cottage! Stupid wardstone..."~
+@103834 = ~Wanev's Guardian Stone~
 @103835 = ~A tower, framed by forked lightning, has been engraved into this rough stone, as have a number of arcane symbols. On the back is the sigil of Wanev, a wizard of Port Llast. It appears to be a wardstone granting access to his tower south of town.~
 @103836 = ~NP: Boots of Swiftness~ /*Arden Swift*/
 @103837 = ~NP: These enchanted boots were given to you by the wizard Vaneve as a reward for a service rendered. The wearer of these boots will no doubt be the envy of any adventurer. Still, because the boots are unique, they provide their owner with freedom of movement and at the same time speed it up. PARAMETERS: Increases movement speed The wearer is immune to any effects that interfere with movement, Weight: 3 Unused by: Wizard Killers~ /*With a feat selection centered on melee combat with a greataxe, this is the perfect package for a combat-oriented adventurer.
