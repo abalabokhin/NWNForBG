@@ -52,10 +52,12 @@ Copy mod into BG2:TOB, BGT, BG2EE or EET folder and run setup-NWNForBG.exe.
 Dependencies
 -------------
 
-For BG2:TOB and BGT:
+<h3>For BG2:TOB and BGT:</h3>
+
 Make sure ToBex (or other mods, increasing maximum number of music) and Infinity-Animations are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized\_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
 
-For BG2EE and EET:
+<h3>For BG2EE and EET:</h3>
+
 BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate.
 
 Version History
