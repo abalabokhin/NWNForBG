@@ -1235,7 +1235,7 @@ Not Usable By:
  Thief~
 @102436 = ~Avista~
 @102437 = ~Sentinel +4~
-@102438 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some adamatite ore to it. The result is an axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
+@102438 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some adamantite ore to it. The result is an axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
 
@@ -2027,7 +2027,7 @@ Hush, here they come to be killed once more. The longer I stay here, the more I 
 @102617 = ~Docks Citizen~
 @102618 = ~Claudus~
 @102619 = ~Harbinger Kin Greatsword~
-@102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamatite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
+@102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamantite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
 
 STATISTICS:
 
@@ -2562,7 +2562,7 @@ And to think he sent me here to search for some ancient artifact as he sent my b
 @102825 = ~Gurak Entrailspiller~
 @102826 = ~Greataxe~
 @102827 = ~Stonefire Great Axe~
-@102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamatite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
+@102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamantite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
 
@@ -2642,7 +2642,7 @@ Not Usable By:
  Thief
  Monk~
 @102833 = ~Rune Hammer +4~
-@102834 = ~This unique war hammer is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted war hammer by adding some adamatite ore to it. The result is an war hummer with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this hammer can handle it much better than any other hammer.
+@102834 = ~This unique war hammer is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted war hammer by adding some adamantite ore to it. The result is an war hummer with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this hammer can handle it much better than any other hammer.
 
 STATISTICS:
 
@@ -5123,10 +5123,31 @@ Not Usable By:
  Druid
  Cleric
  Mage~
-@103774 = ~NP: Blessed katana~ /*Bless Weapon*/
-@103775 = ~NP: This unique katana is crafted by the finest smiths in Neverwinter. They managed to reforge a simple enchanted katana by adding some adamatine ore to it. The result is a katana with amazing properties. It is so easy to use that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The wielder of this katana can handle it much better and faster than any other katana. PARAMETERS: Features: The owner gets +1 to the katana skill +1 attack per round Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 3 magic damage THAC0: improvement +6 Damage: 1D10 +4 Damage type: slashing Weight: 4 Speed factor: 2 Required skill: hammers Type: one-handed Requirements: strength 4 Cannot use: Druid Cleric Mage~ /*Type of Feat: ClassPrerequisite: Assassin.
-Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
-Use: Automatic.*/
+@103774 = ~Sword Saint Katana~
+@103775 = ~This unique katana is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted katana by adding some adamantite ore to it. The result is a katana with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this katana can wield it much better and faster than any other katana.
+
+STATISTICS:
+
+Equipped abilities:
+- The wielder has +1 to Katana proficiency
+- Attacks per round: +1
+
+Combat abilities:
+- 80% chance to lower the traget's Armor Class by one
+
+THAC0: +6
+Damage: 1d10+4, +3(magic)
+Damage type: slashing
+Weight: 4
+Speed Factor: 2
+Proficiency Type: Katana
+Requires: 4 Strength
+Type: One-handed
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage~
 @103776 = ~NP: Astral long sword~ /*Black Longsword*/
 @103777 = ~NP: This magical sword is crafted by the finest smiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium into a single whole, only the gods know how the blacksmiths managed this. The astral sword is simply filled with magic and can sometimes cause a &quot;Ray of the Sun&quot; spell on a creature that has received a blow with this sword, each blow of it dispels magic. In addition, this is an excellent weapon to fight trolls - any troll is waiting for instant death. The sword also protects its owner from hostile magic by absorbing some of it into itself. PARAMETERS: Features: +25 to resistance to magic damage Combat Abilities: Each hit dispels magic Instantly destroys trolls and illusory creatures 5% chance to cast a &quot;Ray of the Sun&quot; spell on the enemy THAC0: +4 Damage: 1D8 +4 Damage Type: Slashing Weight: 3 Haste Factor: 3 Skill Type: Longsword Type: One-Handed Requirements: Strength 6 Cannot Use: Druid Cleric Mage~ /*Type of Feat: MetamagicPrerequisite: Ability to cast 4th-level spells.
 Specifics: Quickened spells can be cast instantaneously, making them invulnerable to counterspells or interruption. A quickened spell is cast as a free action, and another action can be attempted within the same round, including the casting of another spell. Only one quickened spell can be cast per round.
