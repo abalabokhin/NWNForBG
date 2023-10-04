@@ -736,13 +736,13 @@ The Sword of Nazger is an unintelligent magic blade that is normally +1 to hit/d
 
 STATISTICS:
 
-Damage:  1D6 + 1, +3 vs. lycanthropes
-THAC0:  +1 bonus, +3 vs. lycanthropes
+Damage: 1D6 + 1, +3 vs. lycanthropes
+THAC0: +1 bonus, +3 vs. lycanthropes
 Damage type:  slashing
 Weight: 6
 Speed Factor: 1
 Proficiency Type: Long Sword
-Type:  1-handed
+Type: One-handed
 Requires: 6 Strength
 
 Not Usable By:
@@ -5009,26 +5009,120 @@ Usable By:
 
 "As is customary, the elderly were eliminated, the young males crippled and sent to work in the iron mines, and the virile females were returned to the pens for the purposes of breeding."~
 @103759 = ~Suspicious Type~
-@103760 = ~NP: Light wind~ /*Light Flail*/
-@103761 = ~NP: At first glance, this club seems ordinary, but upon closer inspection, a well-trained eye reveals rows of individual runes that encircle its hilt. The thief may also note the superior balance of this weapon. The club was enchanted long ago at the behest of the master of the Shadow Thieves Guild for one of his loyal - and wealthy - protégés. Being, on the one hand, a powerful enough weapon, at the same time, it drowns out the sounds around the thief when he sneaks towards the target in order to send it into a deep knockout. The last thing that many opponents feel before losing consciousness is a small puff of air from the club raised above their heads, for which it was quickly dubbed &quot;Light Breeze&quot;. Unfortunately, as is often the case in such cases, the protégé once fell short of the Guild Master's hopes, and on a dark night this weapon led him to his death in his own bed. His wife, who was sleeping next to him, did not hear anything. How far this weapon went before it fell into your hands is a story you don't want to know. STATS: THAC0: +2 bonus Damage: 1D6 +2 Traits: Grants a 10% bonus to Move Silently when equipped Damage Type: Blunt Weight: 3 Haste Factor: 4 Skill Type: Clubs Type: 1-Hand Requires: 5 Strength Not used by: Mage~ /*By Stuufshirt the Scribe
-As the title suggests, this rather hefty tome deals with the lives of heroes and villains. It does not condone or condemn, but instead looks at how history defines the roles they played. A leather bookmark identifies the last passage read.
+@103760 = ~Light Breeze~
+@103761 = ~At first glance, this club appears ordinary, but closer inspection reveals to the keen eye the rows of individual runes that girdle its hilt. The thief can also note the excellent balance of this weapon.
 
-"The ages have long since turned his enemies to dust, but it has done as much to his own people as well. There is no one left to curse or praise his name. What, therefore, is Maegel now? History cannot judge him hero or villain: he is simply dead. He suffers the same as many others; disinterest has allowed the location of his resting-place to fall into obscurity. The family Ortov has no living extensions, and even the long buried Mirialis Clan founded by his siblings has had its major works removed from the libraries of Candlekeep in favor of books more likely to be of interest to anyone."*/
-@103762 = ~NP: Guard Alatissa~ /*Bridge Guard*/
-@103763 = ~NP: Alatis Harbleton was one of the many halflings who chose a profession that is not customary to mention in pleasant conversation. He had a good career in Luskan, until a series of unpleasant events forced him to consider moving to a new place. Settling in the walls of the capital of Waterdeep, he continued his activities. His desire to go it alone in earning dishonest money infuriated local guilds such as the infamous Night Masks, so he had to enlist a wizard to enchant his hood to protect himself from frequent attempts on his life. Arrogant and confident in his invulnerability, he nevertheless got caught in a daring robbery and was caught by the guards. Unfortunately, the hood did not save him from the executioner's noose. STATS: Traits: Immune to backstab and poison when equipped Weight: 2 Used by: Thieves~ /*This hefty tome attempts a complete history of the Neverwinter Wood, but the crux of what is known is summed up in the following passage:
-While many a tale has suggested that there are dark forces that call the wood their home, there is yet no definite answer as to what truly hides within. Many a glade has a guardian force watching over it, but never one so malevolent as is supposedly in residence there. These woods have never been logged by men, for they are feared and shunned by locals, and even orc hordes alter their course around and never through, though usually only after suffering a goodly number of stubborn casualties.*/
-@103764 = ~NP: vial of poison~ /*Acid Flask*/
-@103765 = ~NP: In the absence of other arguments, poison becomes the best choice for most dark personalities. With a skillful approach, one can quickly and effectively turn one's weapon into a poisoned one, even a small scratch from which becomes a festering wound, more dangerous than an ax blow. This vial contains enough poison to cover a weapon once. PARAMETERS: Features: - Can be used for one-time poison coverage, like the ability of a character with a killer whale. A poisoned weapon follow-up hits the target with poison, dealing 1 damage per second for 24 seconds (3 damage for the first 6 seconds). The saving throw against poison limits the total damage to 12 points. Weight: 1 Used by: Thieves~ /*Type of Feat: ClassPrerequisite: Shifter, Epic Druid.
-Specifics: The character with this ability can take the shape of a red, green, black, white or blue wyrmling three times per day. He gains the wyrmling's signature ability, its breath weapon. As the shifter rises in levels, the damage potential of the breath weapon increases. 
-Use: Selected. After choosing the ability, the character must select which kind of wyrmling he wants to transform into.*/
-@103766 = ~NP: Return Throwing Dagger +1~ /*You strike  with the ritual dagger.*/
-@103767 = ~NP: Being the weapon of most fast and agile warriors, throwing daggers are easy on everything and very easy to hide. While these weapons cannot deal serious damage, the speed with which they can be thrown gives them a big advantage over heavier weapons. This particular dagger's stats have been magically enhanced, apparently by order of the shadow thieves. However, it does not have any identifying marks. The magical properties have increased the potential of his attacks, and - even more valuable about him - he can return to the owner's hand after being thrown, ensuring that he is always equipped for battle. PARAMETERS: THAC0: +1 bonus Damage: 1D4 +1 Damage type: throwing (piercing) Weight: 1 Speed factor: 1 Skill type: Daggers Type: 1-manual Requirements: 3 strength Unused: Cleric/Priest~ /*Type of Feat: ClassPrerequisite: Assassin.
-Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
-Use: Automatic.*/
-@103768 = ~NP: Oppressive Flesh~ /*Sash of Shimmering*/
-@103769 = ~NP: This dagger is designed to inflict as much damage as possible, on impact it simply tears through the flesh, causing terrible, non-closing wounds. PARAMETERS: Damage: 1D4+2 THAC0: +4 Features: 20% chance to lose 3 HP from bleeding in the next 4 rounds Weight: 1 Skill type: Dagger Do not use: Priests~ /*There's some angry grumbling from the other soldiers, but she cuts them off with a sharp gesture. "I'm not going to let this come to bloodshed only to find out we were fighting over nothing."*/
-@103772 = ~NP: Poison Sword~ /*Noxious Ogre*/
-@103773 = ~NP: These swords are usually referred to as double-edged, fighting or military swords. The blade vibrates slightly in your hand, clearly indicating that it is filled with magic, in addition, the blade of this sword is poisoned. These swords are commonly used by select half-orcs, although other races are capable of wielding such a sword. PARAMETERS: THAC0: +3 Damage: 1D8 +3 On a failed save, the target is poisoned for 2 rounds and takes 2 damage per second. Damage Type: Slashing Speed Factor: 2 Skill Type: Longsword Type: One-Handed Weight: 2 Requirement: Strength 6 Unused: Druids Priests Mages~ /*Like so many gnome inventions, this marvel of ingenuity had its origin in a profoundly stupid idea. Engineers needed a way to clean up the tacks that were cluttering the floor of their workshop. In their effort to create a field that repelled metal (thus sweeping the tacks into the corners), they instead discovered a field that repelled magic. Once they got over their disappointment, they began mass-producing the suits and selling them to their neighbors.*/
+The club was enchanted in ancient times at the behest of a Shadow Thieves guild master for one of his loyal - and wealthy - protégés. While being a rather powerful weapon on one hand, it also muffles the sounds around the thief when he sneaks up on his target to send him into a deep knockout. The last thing many opponents feel before they lose consciousness is a slight puff of air from the club being brought over their heads, for which it was quickly dubbed "Light Breeze".
+
+Unfortunately, as is often the case in such matters, a protégé once failed to live up to the guild master's expectations, and on a dark night that weapon led to his death in his own bed. His wife, sleeping beside him, heard nothing.
+
+What path this weapon traveled until it fell into your hands is a story you do not wish to know.
+
+STATISTICS:
+
+Equipped Abilities:
+- Move Silently: +10
+
+THAC0: +2
+Damage: 1d6+2
+Damage Type: crushing
+Weight: 3
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Mage~
+@103762 = ~Alatis' Guard~
+@103763 = ~Alatis Harbleton was one of the many halflings who had chosen a profession that was not to be mentioned in pleasant conversation. He had made a good career in Luskan, until a series of unpleasant events forced him to consider relocating to a new place.
+
+Settling within the walls of the capital city of Waterdeep, he continued his activities. His willingness to act alone in making ill-gotten gains infuriated local guilds such as the infamous Night Masks, so he had to enlist a wizard to enchant his hood to protect himself from frequent attempts on his life.
+
+Arrogant and confident in his invulnerability, he nevertheless got caught in a daring robbery and was caught by the guards. Unfortunately, his hood did not save him from the hangman's noose.
+
+STATISTICS:
+
+Equipped Abilities:
+- Immunity to backstab
+- Immunity to poison
+
+Weight: 2
+
+Usable By:
+ Mage~
+@103764 = ~Vial of Poison~
+@103765 = ~In the absence of other arguments, poison becomes the best choice for most dark personalities. With skill, you can quickly and effectively turn your weapon into a poisoned weapon, even a small scratch from which becomes a festering wound, more dangerous than an axe blow.
+
+This vial contains enough poison to coat a weapon once.
+
+STATISTICS:
+
+Special:
+- Can be used to coat a weapon once with poison. A subsequent strike with a poisoned weapon hits the target with poison, dealing 1 point of damage per second for 24 seconds. A sucessful saving throw vs. Poison limits the total damage to 12 points.
+
+Weight: 1
+
+Usable By:
+ Thief~
+@103766 = ~Returning throwing dagger +1~
+@103767 = ~Being the weapon of choice for most fast and agile warriors, throwing daggers are light on everything and very easy to conceal.
+
+While these weapons cannot do serious damage, the speed at which they can be thrown gives them a great advantage over heavier weapons.
+
+The characteristics of this particular dagger have been magically improved - apparently at the behest of shadow thieves. However, it does not bear any identifying marks. The magical properties have increased its attack potential, and - even more valuable about it - it can return to the wielder's hand after being thrown, ensuring that he is always equipped for battle.
+
+STATISTICS:
+
+Combat abilities:
+- Returns to the wielder's hand when thrown
+
+THAC0: +1
+Damage: 1d4+1
+Damage type: Missile
+Weight: 1
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires: 3 Strength
+Not Usable By:
+ Priest~
+@103768 = ~Oppressing Flesh~
+@103769 = ~This dagger is designed to inflict as much damage as possible, when struck it simply tears through flesh, causing terrible, unclosable wounds.
+
+STATISTICS:
+
+Combat abilities:
+- 20% chance per hit that target lose 3HP from bleeding for the next 4 rounds
+
+THAC0: +4
+Damage: 1d4+2
+Weight: 1
+Proficiency Type: Dagger
+Type: One-handed
+Not Usable By:
+ Priest~
+@103772 = ~Poison Sword~
+@103773 = ~These swords are usually categorized as double-edged, battle or war swords. The blade vibrates slightly in your hand, clearly indicating that it is filled with magic, and the blade of this sword is poisoned. These swords are usually used by a select few half-orcs, though other races are capable of wielding such a sword.
+
+STATISTICS:
+
+Combat abilities:
+- If target fail saving throw vs. Poison it will be poisoned for 2 rounds and will take 2 damage per second
+
+THAC0: +3
+Damage: 1d8 +3
+Damage type: slashing
+Weight: 2
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires: 6 Strength
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage~
 @103774 = ~NP: Blessed katana~ /*Bless Weapon*/
 @103775 = ~NP: This unique katana is crafted by the finest smiths in Neverwinter. They managed to reforge a simple enchanted katana by adding some adamatine ore to it. The result is a katana with amazing properties. It is so easy to use that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The wielder of this katana can handle it much better and faster than any other katana. PARAMETERS: Features: The owner gets +1 to the katana skill +1 attack per round Combat properties: 80% chance for 2 rounds to reduce the enemy's defense class by 1 + 3 magic damage THAC0: improvement +6 Damage: 1D10 +4 Damage type: slashing Weight: 4 Speed factor: 2 Required skill: hammers Type: one-handed Requirements: strength 4 Cannot use: Druid Cleric Mage~ /*Type of Feat: ClassPrerequisite: Assassin.
 Specifics: At 1st level, an Assassin may use a death attack, which functions similarly to a sneak attack in that if the target is not in combat they become victim to the death attack. The successful attack forces the target to make a Fortitude save or become paralyzed. Even if they succeed with the saving throw they still suffer +1d6 points of damage in addition to the normal damage the attack caused. This damage increases to 2d6 at level 3,  3d6 at level 5, 4d6 at level 7, and 5d6 at level 9.
