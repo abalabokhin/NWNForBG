@@ -1,5 +1,5 @@
 Warnings in dialogues
-Number of hits: 265
+Number of hits: 259
 File: AERIEP.DLG, Line: 47, Owner: Response trigger 5, Warning: Resource not found: S:ResRef*[ARE] - AR2906
 File: AMARAN.DLG, Line: 1, Owner: State trigger 0, Warning: Script name not found: O:Object* - Faldorn
 File: ANOMENP.DLG, Line: 47, Owner: Response trigger 0, Warning: Resource not found: S:ResRef*[ARE] - AR2906
@@ -168,13 +168,7 @@ File: NW2Q6EPD.dlg, Line: 2, Owner: Action 3, Warning: Resource not found: S:Ite
 File: NW2Q6EPD.dlg, Line: 3, Owner: Action 3, Warning: Resource not found: S:ResRef*[ITM] - Wandnw6
 File: NWBARUN.dlg, Line: 1, Owner: Response trigger 43, Warning: Resource not found: S:Item*[ITM] - Sw1h022
 File: NWBARUN.dlg, Line: 1, Owner: Response trigger 44, Warning: Resource not found: S:Item*[ITM] - Sw1h008
-File: NWBODDIJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
-File: NWDAELAJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
 File: NWEMERNK.dlg, Line: 2, Owner: Action 2, Warning: Resource not found: S:ScriptFile*[BCS] - EmFollow
-File: NWGRIMGJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
-File: NWLINAJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
-File: NWSHARWJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
-File: NWTOMIJ.dlg, Line: 4, Owner: State trigger 1, Warning: Script name not found: S:Name* - NWMORAG4
 File: OHBCOOK.DLG, Line: 2, Owner: Response trigger 3, Warning: Script name not found: O:Object* - ohbgua01
 File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 7, Warning: Script name not found: S:Name* - balth2
 File: OHDSCROL.DLG, Line: 2, Owner: Response trigger 11, Warning: Script name not found: S:Name* - balth2
