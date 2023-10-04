@@ -2615,7 +2615,7 @@ Not Usable By:
  Mage
  Thief~
 @102831 = ~Storm Hammer~
-@102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Рammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
+@102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Hammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
 
@@ -4880,7 +4880,7 @@ Not Usable By:
 @103737 = ~Soren~
 @103738 = ~Shield of Oblivion~
 @103739 = ~Fey Spear~
-@103740 = ~This unusual trident-shaped spear is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted spear remains a mystery, it is only known that it required Fairy Dust. Trident is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
+@103740 = ~This unusual trident-shaped spear is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted spear remains a mystery, it is only known that it required Fairy Dust. The trident is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
 
@@ -5148,50 +5148,210 @@ Not Usable By:
  Druid
  Cleric
  Mage~
-@103776 = ~NP: Astral long sword~ /*Black Longsword*/
-@103777 = ~NP: This magical sword is crafted by the finest smiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium into a single whole, only the gods know how the blacksmiths managed this. The astral sword is simply filled with magic and can sometimes cause a &quot;Ray of the Sun&quot; spell on a creature that has received a blow with this sword, each blow of it dispels magic. In addition, this is an excellent weapon to fight trolls - any troll is waiting for instant death. The sword also protects its owner from hostile magic by absorbing some of it into itself. PARAMETERS: Features: +25 to resistance to magic damage Combat Abilities: Each hit dispels magic Instantly destroys trolls and illusory creatures 5% chance to cast a &quot;Ray of the Sun&quot; spell on the enemy THAC0: +4 Damage: 1D8 +4 Damage Type: Slashing Weight: 3 Haste Factor: 3 Skill Type: Longsword Type: One-Handed Requirements: Strength 6 Cannot Use: Druid Cleric Mage~ /*Type of Feat: MetamagicPrerequisite: Ability to cast 4th-level spells.
-Specifics: Quickened spells can be cast instantaneously, making them invulnerable to counterspells or interruption. A quickened spell is cast as a free action, and another action can be attempted within the same round, including the casting of another spell. Only one quickened spell can be cast per round.
-Use: Quickened spells occupy spell slots four levels higher than normal.*/
-@103778 = ~NP: Astral bastard sword~ /*Astral Blade +1*/
-@103779 = ~NP: This magical sword is crafted by the finest smiths in Neverwinter. They managed to combine a bastard sword and a magical alloy called ritellium into a single whole, only the gods know how the blacksmiths succeeded. The astral sword is simply filled with magic and can sometimes cause a &quot;Ray of the Sun&quot; spell on a creature that has received a blow with this sword, each blow of it dispels magic. In addition, this is an excellent weapon to fight trolls - any troll is waiting for instant death. The sword also protects its owner from hostile magic by absorbing some of it into itself. PARAMETERS: Features: +25 to resistance to magic damage Combat Abilities: Each hit dispels magic Instantly destroys trolls and illusory creatures 5% chance to cast a &quot;Ray of the Sun&quot; spell on the enemy THAC0: +4 Damage: 2D4 +4 Damage Type: Slashing Weight: 8 Haste Factor: 6 Skill Type: Bastard Swords Type: One-Handed Requirements: Strength 11 Cannot Use: Druid Priest Mage Thief~ /*Type of Feat: MetamagicPrerequisite: Ability to cast 4th-level spells.
-Specifics: Quickened spells can be cast instantaneously, making them invulnerable to counterspells or interruption. A quickened spell is cast as a free action, and another action can be attempted within the same round, including the casting of another spell. Only one quickened spell can be cast per round.
-Use: Quickened spells occupy spell slots four levels higher than normal.*/
-@103780 = ~NP: Desert Wind Scimitar~ /*Scimitar of Speed*/
-@103781 = ~NP: This unique scimitar is crafted by the best blacksmiths in Neverwinter. They managed to reforge a simple enchanted scimitar by adding some adamatine ore to it. The result is a scimitar with amazing properties. It is so easy to use that even a not very successful hit on the enemy causes significant damage to the enemy and damages the armor. The wielder of this scimitar can handle it much better than any other scimitar. In addition, the owner of this scimitar can twice a day, without harm to himself, burn enemies who surround him with solar fire. PARAMETERS: Features: The owner gets +1 to the &quot;Sunfire&quot; scimitar skill - 2 times per day 4 Damage Type: Slashing Weight: 3 Speed Factor: 4 Required Skill: Scimitar/Wakizashi/Ninjato Type: One-Handed Requirements: Strength 10 Cannot Use: Priest Mage~ /*Master Drogan and Ayala realized that the strange crystal hidden within the broken tower statue was a powerful artifact sought after by J'Nah's mysterious mistress. What it is, however, and why it's being sought is still a mystery that needs solving. Master Drogan believes that a comrade of his, Garrick Halassar, might have the knowledge needed to identify the crystal. The halfling caravan is traveling through the desert and will be making a stop at the same Ao encampment where they dropped off Garrick before... once there, he will have to be found and the crystal hopefully identified.*/
-@103782 = ~NP: Fairy Dust Short Sword~ /*Drow Shortsword +1*/
-@103783 = ~NP: This unusual sword is crafted by the finest smiths in Neverwinter. How they managed to make this masterpiece from a simple short sword remains a mystery, it is only known that for this the blacksmiths needed magic dust. The Fairy Dust Sword is simply filled with fairy magic, it is able to blind enemies, make its owner invisible, and shock enemies with electricity. In addition, picking up this weapon, its owner becomes more dexterous. STATS: Equipped: Agility: +1 Ability to cast spells: 2 times per day &quot;Glittering Dust&quot; (Blinds enemies) 1 time per day &quot;Fairy Dust&quot; (Invisible to allies) Combat abilities: 70% chance to inflict one of the following effects : Blindness on enemy (30%) Invisibility on self (30%) Insect swarm on enemy (10%) THAC0: +4 Damage: 1d6 +4 +2 electricity Speed factor: 1 Skill type: Short sword Damage type: Piercing Type: 1-manual Requirements: Strength 5 Weight: 2 Cannot use: Druid Priest Mage~ /*This blade is almost as nasty as the personality that now permanently resides within it. With each hit, it draws a little bit of the life-force inside and uses some of it to heal the wielder. Whether it could potentially draw more of that life-force, or has other side effects, is unknown... even to Enserric himself. The long-dead mage has been within the weapon for quite a while but has not gotten much use, seeing as for decades the primary user was even deader than Enserric. ...hmmm. Deader? More dead? Can something be more dead? This is exactly the sort of question that makes Enserric clam up and begin muttering in pure agitation...*/
-@103784 = ~NP: golden saber~ /*Golden Armor Suit*/
-@103785 = ~NP: This magical saber appears to be made of gold, and its hilt is richly adorned with precious stones. The saber deals very little basic damage, but nevertheless it is a formidable weapon, there is no defense against it. It is enchanted as a +6 weapon and deals an additional 1 point of damage with all types of damage. In addition, any merchant will undoubtedly give a high price for it. STATS: Damage: 1D6 THAC0: Upgrade +1 Traits: Inflicts 1 additional damage with all types of damage (+8 damage in total) Damage Type: Slashing Weight: 4 Required Skill: Scimitars Speed Factor: 2 Type: One-Handed Requirements: power 8 Cannot use: Mages Priests~ /*Type of Feat: ClassPrerequisite: Shifter
-Specifics: A shifter's ability to shapeshift into different forms grows while he is gaining levels. At some point the shifter is able to change into certain forms an infinite number of times per day:
-Level 4 : Infinite Greater Wildshape I
-Level 7: Infinite Greater Wildshape II
-Level 10: Infinite Greater Wildshape III
-Level 13: Infinite Humanoid Shape
-Level 16: Infinite Greater Wildshape IV
-Use: Automatic.*/
-@103786 = ~NP: Hell Vampire Sword~ /*Epic Vampire Bite*/
-@103787 = ~NP: This sword at first glance looks quite ordinary, however, it is not. Although it strikes enemies with fire, its color, unlike similar swords, is more towards dark gray. But not all enemies of the owner of the sword suffer from hellfire, these are only good characters and trolls. Apparently, this sword is from the underworld itself, it also protects the owner from fire and sucks the life out of the victim, passing it on to its owner. PARAMETERS: Features: Additional damage with good +5 fire Additional damage to trolls +5 fire Each hit heals the owner +2HP Fire protection 50% THAC0: +4 Damage: 1D10 +2 Damage type: Slashing Speed factor: 2 Skill type: Long sword Type : One-handed Weight: 5 Prerequisites: Strength 4 Unused by: Good characters Druids Priests Mages~ /*Legend holds that this powerful item was created by the god Cyric during the Time of Troubles, giving him one more powerful weapon to use against his foes in battle. For, unlike most shields, the Shield of Chaos truly is a weapon. Whenever its wearer is hit during combat, the shield can retaliate with any number of powerful and disabling effects, ranging from blindness to paralysis to blasts of fire and lightning that will engulf the unfortunate opponent.*/
-@103788 = ~NP: Amaros~ /*Question*/
-@103789 = ~NP: This long sword was named after its former owner. Amaros was a renowned swordsman and self-defense teacher. This blade has absorbed all his art. Amaros could handle this weapon so quickly that he could easily take on two professional opponents. The sharp blade of this sword can cut off any organ of a careless opponent. PARAMETERS: Damage: 1D8 + 4 THAC0: +3 Features: 40% chance to inflict additional. 1D4 slashing damage The wielder receives an additional attack per round Damage type: slashing Weight: 4 Speed factor: 4 Skill type: longsword Type: one-handed Requires: 6 Strength Do not use: Druid Priest Mage Monk Beastmaster~ /*Champions are often found leading great armies on holy wars. The champion's sheer force of will can persuade almost anyone to take up arms in the name of the divine. This paladin focuses more on strength and combat ability as opposed to spell-casting.
-These packages do not give any special abilities to your character, they simply configure your skills and feats so you don't have to.*/
+@103776 = ~Astral Blade Long Sword~
+@103777 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Long Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Damage Resistance: +25%
+
+Combat abilities:
+- Dispel Magic per hit
+- Instantly destroy trolls and illusory creatures
+- 5% chance to cast Sunray on target per hit
+
+THAC0: +4
+Damage: 1d8+4
+Damage Type: slashing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requirements: 6 Strength
+
+Not Usable By:
+ Druid
+ Priest
+ Mage
+ Monk~
+@103778 = ~Astral Blade Bastard Sword~
+@103779 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a bastard sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Bastard Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Damage Resistance: +25%
+
+Combat abilities:
+- Dispel Magic per hit
+- Instantly destroy trolls and illusory creatures
+- 5% chance to cast Sunray on target per hit
+
+THAC0: +4
+Damage: 2d4+4
+Damage Type: slashing
+Weight: 8
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requirements: 11 Strength
+
+Not Usable By:
+ Druid
+ Priest
+ Mage
+ Thief
+ Monk~
+@103780 = ~Desert Wind Scimitar~
+@103781 = ~This unique scimitar is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted scimitar by adding some adamantite ore to it. The result is a scimitar with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this scimitar can wield it much better and faster than any other katana. In addition, the owner of this scimitar can burn his enemies with solar fire twice a day without harm to himself.
+
+STATISTICS:
+
+Equipped abilities:
+- The wielder has +1 to Scimitar/Wakizashi/Ninjato proficiency
+
+Charge abilities:
+- Sunfire once per day: +1
+
+Combat abilities:
+- 80% chance to lower the traget's Armor Class by one
+
+THAC0: +6
+Damage: 1d8+4, +3(fire)
+Damage type: slashing
+Weight: 3
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Requires: 10 Strength
+Type: One-handed
+
+Not Usable By:
+ Cleric
+ Mage~
+@103782 = ~Feyduster Short Sword~
+@103783 = ~This unusual short sword is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted short sword remains a mystery, it is only known that it required Fairy Dust. Feyduster Short Sword is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+
+Charge abilities:
+- Glitterdust two times per day
+- Pixie Dust once per day
+
+Combat Abilities:
+- 70% per hit to cast one of the following effects:
+  30% to cast Blindness on the target
+  30% Invisibility on the wielder
+  10% Summon Insects on the target
+
+THAC0: +4
+Damage: 1d6+4, +2 (electricity)
+Damage Type: piercing
+Weight: 2
+Speed Factor: 1
+Proficiency Type: Short sword
+Type: One-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Druid
+ Priest
+ Mage~
+@103784 = ~Golden Saber~
+@103785 = ~This magical saber is apparently made of gold, and its hilt is richly decorated with gems. The saber does very little basic damage, but it is a formidable weapon nonetheless, and there is no defense against it. It is enchanted as a +6 weapon and deals an additional 1 damage each with all types of damage. In addition, any merchant will undoubtedly give a high price for it.
+
+STATISTICS:
+
+Combat abilities:
+- Add one damage of every damage type (+8 overall)
+
+THAC0: +1
+Damage: 1d6
+Damage type: slashing
+Weight: 4
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Requires: 8 Strength
+Type: One-handed
+
+Not Usable By:
+ Cleric
+ Mage~
+@103786 = ~Infernal Vampire Sword~
+@103787 = ~This sword looks quite ordinary at first glance, however, it is not. Although it strikes enemies with fire, its color, unlike similar swords, is rather closer to dark gray. But not all enemies of the sword's master suffer from hellfire, only good characters and trolls. This sword is apparently from the underworld itself, it protects the wielder from fire and sucks the life out of the victim, transferring it to its owner.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +50%
+
+Combat abilities:
+- Additional damage againts Good creatures: +5
+- Additional damage againts trolls: +5
+- Recover 2HP per hit
+
+THAC0: +4
+Damage: 1d10+2
+Damage Type: slashing
+Weight: 5
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requirements: 4 Strength
+
+Not Usable By:
+ Good character
+ Druid
+ Priest
+ Mage
+ Monk~
+@103788 = ~Amaros~
+@103789 = ~This long sword was named after its former owner. Amaros was a renowned teacher of swordsmanship and self-defense. This blade absorbed all of his art. Amaros could wield this weapon so quickly that he could safely fight two professional opponents. The sharp blade of this sword could sever some organ of a careless opponent.
+
+STATISTICS:
+
+Equipped abilities:
+- Extra attack per round
+
+Combat abilities:
+- 40% chance to deal an additional 1d4 slashing damage
+
+THAC0: +3
+Damage: 1d8+4
+Damage Type: slashing
+Weight: 4
+Speed Factor: 4
+Proficiency Type: Long Sword
+Type: One-handed
+Requirements: 6 Strength
+
+Not Usable By:
+ Druid
+ Priest
+ Mage
+ Monk
+ Beast Master~
 @103790 = ~Tamora~
 @103791 = ~Tanith~
-@103792 = ~NP: Let's lay down.~ /*Yes, hello.*/
+@103792 = ~Let's lay down.~
 @103793 = ~Tarran~
 @103794 = ~Telma~
-@103795 = ~NP: Toms Rambottom~ /*Rumbottom*/
+@103795 = ~Thoms Rumbottom~
 @103796 = ~Thurin~
 @103797 = ~Tolan Losen~
-@103798 = ~NP: Tomy Vyselnyk~ /*Healing Circle*/
-@103799 = ~NP: HA! More fools... I will feast on your bones, mortals!~ /*Your soul will suffer at the hands of the master, fleshling.*/
+@103798 = ~Tomi Undergallows~
+@103799 = ~HA! More fools... I will feast on your bones, mortals!~
 @103802 = ~Brother Toras~
-@103803 = ~NP: Wrath of the Brotherhood~ /*Desert's Fury*/
-@103804 = ~NP: Rain of Terror~ /*Hook Horror*/
+@103803 = ~Wrath of the Brotherhood~
+@103804 = ~Rain of Terror~
 @103805 = ~Torgo~
 @103806 = ~Bridge Guard~
 @103807 = ~Treatise on Forgotten Heroes~
 @103808 = ~This book is full of stories about the deeds of ancient heroes. A particular passage has been marked: The Mirialis Clan, led by the great warrior Maegal, braved near certain death to rid their lands of the Black Lich and his minions.~
-@103809 = ~NP: Pitiful creature! Die!~ /*Puny fool!*/
+@103809 = ~Pitiful creature! Die!~
 @103810 = ~Troll Chieftain~
 @103811 = ~Boulder~
 @103812 = ~NP: Giants throw such boulders at their enemies. Such a pebble inflicts great damage and can stun its prey. It takes a truly gigantic force to hurl it... STATS: Range: 80 yards Damage: 3-18 Traits: Saving vs. Breath -4 whether the victim will be unconscious one round, and stunned the next round. Requires: 19 Strength~ /*Type of Feat: GeneralPrerequisite: Can only take this feat at 1st-level.
