@@ -4801,35 +4801,51 @@ Your servant,
 @103700 = ~Mirror of Vanity~
 @103701 = ~This mirror seems to offer you an unusually flattering image of yourself. Something seems strange.~
 @103702 = ~The magic Mirror of Vanity offers the viewer an image of themselves that is incredibly attractive. In fact, the image is so perfect that many viewers become lost in the illusion, believing themselves to hold greater physical charms than they truly do.~
-@103703 = ~NP: servant~ /*Acid*/
+@103703 = ~Servant~
 @103704 = ~Setara~
 @103705 = ~Treatise on the Spirit of the Wood~
-@103706 = ~NP: It looks like this musty old volume is a book that was written and never read. It is a long, boring text by the hand of a druid named Jordius Caini Getafix III, a book over several centuries old. It uses complex and often nonsensical language to discuss his observations on the Spirit of the Forest. One page in the text has been marked, and there is a small comment next to the underlined passage. “This could mean that if you stand in a pool under a waterfall and then die for some reason, you can appear alive (presumably) in the Spirit Realm. It seems to me that it would take a combination of two magical powers - one to kill the body, but capture his essence and transform them into the realm of the Spirit, and the other to save the corpse and bring it back to life upon entering the realm.Death should come from a light weapon, perhaps a dagger, since this is one of the most convenient tools for killing.It would be enough it's hard to fill Venus with this energy and then try to pierce the head with it, ha ha.&quot;~ /*This musty old tome appears to be the type of book that was written and never read. It is a long, boring text written by a druid, Jordius Caini Getafix the Third, several hundred years ago. It uses large, complicated and often seemingly meaningless words to discuss his observations on the Spirit of the Wood. One page in the text has been earmarked and there is a small comment beside an underlined passage in the margin.
-"This could mean that if one stood in the pool, below the waterfall, and somehow died, one could reappear, alive (presumably) in the realm of the Spirit. I think it would take a combination of two magical forces, one to kill the body, yet capture its essence and transport both to the Spirit's realm, the other to preserve the corpse and bring it back to life once it enters the realm. The death-giver should be easy, some kind of weapon, perhaps a dagger, since that should be easiest to manipulate in taking one's life. It would hardly to to imbue a morningstar with this power and then try to bash one's head in with it, ha ha."*/
+@103706 = ~This musty old tome appears to be the type of book that was written and never read. It is a long, boring text written by a druid, Jordius Caini Getafix the Third, several hundred years ago. It uses large, complicated and often seemingly meaningless words to discuss his observations on the Spirit of the Wood. One page in the text has been earmarked and there is a small comment beside an underlined passage in the margin.
+"This could mean that if one stood in the pool, below the waterfall, and somehow died, one could reappear, alive (presumably) in the realm of the Spirit. I think it would take a combination of two magical forces, one to kill the body, yet capture its essence and transport both to the Spirit's realm, the other to preserve the corpse and bring it back to life once it enters the realm. The death-giver should be easy, some kind of weapon, perhaps a dagger, since that should be easiest to manipulate in taking one's life. It would hardly to to imbue a morningstar with this power and then try to bash one's head in with it, ha ha."~
 @103707 = ~Setara's Key~
-@103708 = ~NP: There are many secrets in the home of the witch, Setara, in the Forest of Neverwinter. Perhaps this elegant iron key will unlock some of them...~ /*The home of the witchwoman, Setara, in the Neverwinter Wood holds many secrets. Perhaps this wrought-iron key will bring some of them to light...*/
+@103708 = ~The home of the witchwoman, Setara, in the Neverwinter Wood holds many secrets. Perhaps this wrought-iron key will bring some of them to light...
 @103709 = ~Setara's Gem~
-@103710 = ~NP: This magical stone seems to have once been a part of some larger thing. It was owned by Setara, the forest witch.~ /*This is a magical gem that appears to have once been part of some greater item. It was owned by Setara, the forest witch.*/
+@103710 = ~This is a magical gem that appears to have once been part of some greater item. It was owned by Setara, the forest witch.~
 @103711 = ~Shaldrissa~
 @103712 = ~Sharwyn~
-@103713 = ~NP: Medium Shield +2: Dragon's Heart~ /*Ancient Black Dragon*/
-@103714 = ~NP: A comparatively unknown knight, Neschamps, was never known for his intelligence. When he traveled through the northern regions, he came across a battle of several warriors with a dragon. Nesham decided that this was not entirely fair, and began to fight on the side of the dragon. Nesham's intervention was a turning point in the battle, and the warriors were defeated. The dragon Benderesk thanked Nesham for his help by giving him a shield imbued with the power of a dragon's heart. Benderesk returned this gift years later when Neshama was hired by the same village as the previous warriors to get rid of this troublesome dragon. PARAMETERS: Bonus to defense class: +3 Features: Increases health by 10 +5% magic resistance Weight: 6 Not used by: Bards Druids Mages Thieves Monks Kensai~ /*Lady Aribeth has told you much of herself, including how she first entered into the service of Tyr as his holy champion long ago. Her faith has been profoundly challenged, her disturbing dreams growing far worse... though through all of this, Aribeth is glad to have found a faithful friend in you. She made a gift of her father's ring to you and bids you to keep it close to remind you of her always.
-[NOTE: if you wish Aribeth's tale to continue into the next chapters, make sure you keep her ring in your inventory.)*/
-@103715 = ~NP: Howl of Terror~ /*Hook Horror*/
-@103716 = ~NP: Howl of Evil Doom~ /*Howl, Doom*/
-@103717 = ~NP: Howl of Despair~ /*Silence*/
+@103713 = ~Medium Shield +2: Dragon's Heart~
+@103714 = ~A relatively unknown knight, Nesham has never been known for his mental abilities. When he was traveling through the northern lands, he came across a battle between several warriors and a dragon. Nesham decided that this was not quite fair, and began fighting on the dragon's side. Nesham's intervention was the turning point in the battle, and the warriors were defeated. The dragon Benderesque thanked Nesham for his help by giving him a shield with the power of a dragon's heart. Benderesque brought this gift back a few years later, when Nesham was hired by the same village as the previous warriors to get rid of this troublesome dragon.
+
+STATISTICS:
+
+Equipped abilities:
+- Maximum HP: +10
+- Magic Resistance: +5%
+
+Armor Class: +3
+Weight: 6
+
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief
+ Monk
+ Kensai~
+@103715 = ~Howl of Terror~
+@103716 = ~Howl of Doom~
+@103717 = ~Howl of Despair~
 @103718 = ~Skeleton Acolyte~
-@103719 = ~NP: Dread Warrior~ /*Hook Horror*/
+@103719 = ~Dread Warrior~
 @103720 = ~Skull Warrior's Head~
 @103721 = ~Green Slaad~
 @103722 = ~Red Slaad~
 @103723 = ~The mistress must be protected. Slay the intruder!~
 @103724 = ~Nymph Slave~
 @103725 = ~Kill for the mistress!~
-@103726 = ~NP: Forge of Luskan~ /*Luskan Archer*/
-@103727 = ~NP: Trap found and defused~ /*Trap Triggered!*/
-@103728 = ~NP: Spike trap found and disabled~ /*Spike Trap, Deadly*/
-@103729 = ~NP: Explosive trap found and defused~ /*Strong Negative Trap*/
+@103726 = ~Luskan's Forge~
+@103727 = ~The trap has been detected and disarmed~
+@103728 = ~The Spike Trap has been detected and disarmed~
+@103729 = ~The Explosive Trap has been detected and disarmed~
 @103730 = ~Letter to Solomon~
 @103731 = ~Solomon,
 The Old Ones, may they live forever, seek an ancient artifact said to be in the vicinity of Port Llast. I have sent agents to retrieve it but, for you, I have a greater task: There are meddlers about, the very same who thwarted Desther's good work in Neverwinter. If you succeed, you shall have a place in the heavenly kingdom of our beloved Old Ones... If you fail, your soul be damned and I shall send others to do what you cannot.
@@ -4840,11 +4856,26 @@ Do not fail me,
 Maugrim Korothir~
 @103732 = ~Solomon~
 @103733 = ~Solomon's Ring~
-@103734 = ~NP: This ring was given to you by the halfling Solomon as a token of gratitude for saving his family from the plague in Neverwinter. The ring looks a little strange, it itself is made of yellow metal similar to gold, but here is an unusual stone inserted into it. This stone looks like an eye, moreover, this eye seems to you alive. PARAMETERS: - Immunity to blindness - Immunity to backstab - 2 times a day allows you to cast the spell &quot;True Sight&quot; Do not use: Assassins of wizards~ /*This finely cut and polished stone is indistinguishable from an ordinary jewel in appearance.  When gazed through, the gem of seeing enables the user to see as though she were affected by a true seeing spell.*/
+@103734 = ~This ring was given to you by the halfling Solomon in gratitude for saving his family from the Wailing Death in Neverwinter. The ring is made of a yellow metal that looks like gold, but the stone in it is unusual. This stone looks like an eye, moreover this eye seems to be alive.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Blindness
+- Immune to Backstub
+
+Charge abilities:
+- True Sight 2 times per day
+
+Armor Class: +3
+Weight: 6
+
+Not Usable By:
+ Wizard Slayer~
 @103735 = ~Farmer's Son~
 @103736 = ~Lad~
-@103737 = ~NP: Soren~ /*Raven*/
-@103738 = ~NP: Oblivion Shield~ /*Shadow Shield*/
+@103737 = ~Soren~
+@103738 = ~Shield of Oblivion~
 @103739 = ~NP: Fairy Trident~ /*Trident*/
 @103740 = ~NP: This unusual trident-shaped spear is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple, weakly enchanted spear remains a mystery, it is only known that he needed fairy dust for this. The trident is simply filled with fairy magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, picking up this weapon, its owner becomes more dexterous. STATS: Equipped: Agility: +1 Ability to cast spells: 2 times per day &quot;Glittering Dust&quot; (Blinds enemies) 1 time per day &quot;Fairy Dust&quot; (Invisible to allies) Combat abilities: 70% chance to inflict one of the following effects : Blindness on enemy (30%) Invisibility on self (30%) Insect swarm on enemy (10%) THAC0: +4 Damage: 1d6 +4 +2 electricity Speed factor: 3 Skill type: spears Damage type: Piercing Type: two-handed Prerequisites: Strength 5 Weight: 2 Cannot use: Priest Mage Thief~ /*The shadows of the forest lay heavy on the ground, as you made your way towards the cries of a wounded animal. Then, suddenly you knew that someone was following you. With all of your senses focused outward, you crept forward quietly. The most minute movement from behind a bush drew your attention and you sprang lightly overtop, to land on a beautiful forest dryad. She giggled, kissed your forehead and slipped out from underneath you. In your hands she left a simple wooden cup.Drogan congratulated you on your abilities and told you to keep the cup as a trophy to remember that day. Placing the cup to your lips creates a small amount of dryad wine, which heightens the senses, increasing your spot skill. This ability is only usable once per day.*/
 @103741 = ~Queen Spider~
