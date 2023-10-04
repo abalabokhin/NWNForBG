@@ -1855,6 +1855,9 @@ Not Usable By:
 
 STATISTICS:
 
+Equipped abilities:
+- Dexterity: +1
+
 Charge abilities:
 - Glitterdust two times per day
 - Pixie Dust once per day
@@ -3186,7 +3189,7 @@ Astral Blade Bastard Sword: Requires ritellium and a bastard sword +1.
 
 Desert Wind Scimitar: Requires adamantite and a scimitar +1.
 
-Feyduster Short Sword: Requires Fairy Dust and a short sword +1.
+Feyduster Short Sword: Requires fairy dust and a short sword +1.
 
 Rarer Fare:
 Ravager Halberd: Requires dragon blood and a halberd +2.
@@ -4876,41 +4879,127 @@ Not Usable By:
 @103736 = ~Lad~
 @103737 = ~Soren~
 @103738 = ~Shield of Oblivion~
-@103739 = ~NP: Fairy Trident~ /*Trident*/
-@103740 = ~NP: This unusual trident-shaped spear is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple, weakly enchanted spear remains a mystery, it is only known that he needed fairy dust for this. The trident is simply filled with fairy magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, picking up this weapon, its owner becomes more dexterous. STATS: Equipped: Agility: +1 Ability to cast spells: 2 times per day &quot;Glittering Dust&quot; (Blinds enemies) 1 time per day &quot;Fairy Dust&quot; (Invisible to allies) Combat abilities: 70% chance to inflict one of the following effects : Blindness on enemy (30%) Invisibility on self (30%) Insect swarm on enemy (10%) THAC0: +4 Damage: 1d6 +4 +2 electricity Speed factor: 3 Skill type: spears Damage type: Piercing Type: two-handed Prerequisites: Strength 5 Weight: 2 Cannot use: Priest Mage Thief~ /*The shadows of the forest lay heavy on the ground, as you made your way towards the cries of a wounded animal. Then, suddenly you knew that someone was following you. With all of your senses focused outward, you crept forward quietly. The most minute movement from behind a bush drew your attention and you sprang lightly overtop, to land on a beautiful forest dryad. She giggled, kissed your forehead and slipped out from underneath you. In your hands she left a simple wooden cup.Drogan congratulated you on your abilities and told you to keep the cup as a trophy to remember that day. Placing the cup to your lips creates a small amount of dryad wine, which heightens the senses, increasing your spot skill. This ability is only usable once per day.*/
-@103741 = ~Queen Spider~
-@103742 = ~NP: Spirit of the forest~ /*Spirit of the Wood*/
-@103743 = ~NP: Demon's Grace~ /*Summon Fiend*/
-@103744 = ~NP: Blessing of Helm~ /*Bless (2)*/
-@103745 = ~NP: Staff of the Ancients +4~ /*Old One Warrior*/
-@103746 = ~NP: This magic staff is more than just a polished stick with a knob, it is enchanted with powerful magic, it was used by wizards of the creator race. It allows the mage to avoid hostile magic and physical attacks. The staff is great for hand-to-hand combat and allows you to inflict huge damage on the enemy with the magic of the ancients. Equipped Ability: +2 to Defense Class +3 to All Saving Throws +15 to Magic Resistance Allows you to cast spells: 1. Sphere of Invulnerability (1 time per day) Duration: 10 turns Grants immunity to spells from 1st to 6th level 2. Lightning Bolt (2x/day) Damage: 10d6 Range: 140 yards Saving Throw: Half damage Also stuns (no saving throw) target for 5 rounds STATS: THAC0: +4 Damage: 1D8 +4 (+2d5 magic) Damage Type : Mace Weight: 3 Haste Factor: 1 Weapon Specialization: Staff Type: 2-handed Requires: 5 Strength Usable by Mages (Single, Dual-, and Multi-class)~ /*Caster Level(s): Bard 3, Cleric 3, Paladin 3, Wizard / Sorcerer 3Innate Level: 3
-School: Abjuration
-Descriptor(s):
-Component(s): Verbal, Somatic
-Range: Touch
-Area of Effect / Target: Single, Medium
-Duration: 1 Hour / Level
-Additional Counter Spells: 
-Save: Harmless
-Spell Resistance: No
+@103739 = ~Fey Spear~
+@103740 = ~This unusual trident-shaped spear is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted spear remains a mystery, it is only known that it required Fairy Dust. Trident is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
-When this spell is cast, the caster chooses to be protected from either good or evil. The spell target and all allies within 10 feet receive a +2 deflection bonus to Armor Class, +2 to all saving throws, and immunity to any mind-affecting spells and spell-like abilities used by creatures of the chosen alignment.*/
-@103747 = ~NP: Staff of the Necromancer~ /*Staff of Armand*/
-@103748 = ~NP: The Necromancer's Staff is a powerful weapon in the hands of any mage, as it is enchanted by the great necromancer Cassius. In addition to all the abilities of the staff, it protects its owner from all spells of the school of necromancy. This staff works well in close combat, every third hit sends a great curse on the enemy. Also, with the help of it, you can summon the undead and take control of any of the undead. An extremely useful item for a mage! PARAMETERS: Equipped: Spell Immunity to Necromancers Special Abilities: Summon Skeletons 1 time per day Undead Control 1 time per day Combat Abilities: 30% chance on hit to cast a great curse on the enemy THAC0: +4 bonus Damage: 1D8 +4 Damage type: bludgeoning Weight: 4 Haste Factor: 4 Skill Type: Staff Type: 2-Hand Requires: 5 Strength Used by: Mages~ /*Type of Feat: ClassPrerequisite: Dwarven Defender Level 1.
-When he needs to, the defender can become a stalwart bastion of defense. In this defensive stance, a defender gains phenomenal strength and durability but he cannot move from the spot he is defending. He gains the following benefits:
- +2 Strength
- +4 Constitution
- +2 resistance bonus on all saves
- +4 dodge bonus to AC
-At first level, this ability can be used 1/day. Every 2 levels beyond 1, the dwaven defender gains an additional use per day.
-Use: Selected*/
-@103749 = ~NP: Staff of Meldanen +4~ /*Staff of Meldanen*/
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+
+Charge abilities:
+- Glitterdust two times per day
+- Pixie Dust once per day
+
+Combat Abilities:
+- 70% per hit to cast one of the following effects:
+  30% to cast Blindness on the target
+  30% Invisibility on the wielder
+  10% Summon Insects on the target
+
+THAC0: +4
+Damage: 1d6+4, +2 (electricity)
+Damage Type: piercing
+Weight: 2
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Priest
+ Mage
+ Thief~
+@103741 = ~Queen Spider~
+@103742 = ~Spirit of the Wood~
+@103743 = ~Demon's Grace~
+@103744 = ~Helm's Blessing~
+@103745 = ~Old Ones' Staff~
+@103746 = ~This magical staff is more than just a polished stick with a pommel, it is enchanted with powerful magic, used by the wizards of the Creator race. It allows the mage to avoid hostile magic and physical blows. The staff is perfect for hand-to-hand combat and allows the mage to deal massive damage to the enemy with the magic of the Old Ones.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Saving Throws: +3
+- Magic Resistance: +15%
+
+Charge abilities:
+- Globe of Invulnerability once per day
+  Durations: 10 turns
+  Immune to spells from 1st to 6th level
+- Lightning Bolt two times per day
+  Damage: 10d6
+  Range: 140 yards
+  Saving Throw: 1/2
+  Special: Stuns targets (without saving throw) for 5 rounds
+
+THAC0: +4
+Damage: 1d8+4, +2d5 (magic)
+Damage Type: crushing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Usable By:
+ Mage~
+@103747 = ~Staff of the Necromancer~
+@103748 = ~The Necromancer's Staff is a powerful weapon in the hands of any wizard, as it is enchanted by the great necromancer Cassius. In addition to all of the staff's abilities, it protects its wielder from all spells of the Necromancy School. This staff works well in melee combat, every third strike casting a great curse on the enemy. It can also be used to summon the undead and take control of any of the undead. An extremely useful item for a mage!
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Necromancy spells
+
+Charge abilities:
+- Animate Dead once per day
+- Control Undead once per day
+
+Combat abilities:
+- 30% per hit to cast Greater Malison of the target
+
+THAC0: +4
+Damage: 1d8+4
+Damage Type: crushing
+Weight: 4
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Usable By:
+ Mage~
+@103749 = ~Staff of Meldanen +4~
 @103750 = ~This staff was the weapon of the sorceror Meldanen, and is likely imbued with magic.~
-@103751 = ~NP: One of the many staves crafted by the mage Meldanen. In the course of his research, he paid gold to a small group of adventurers who collected exotic materials for his workshop. But lately, he has stopped being so generous, and sometimes has competitions between two or more groups to get himself a better price. Then he stopped doing it altogether so that as few people as possible would know about his experiments. PARAMETERS: Features: Free Action Immunity to spell failure +1 bonus to defense class Combat ability: 15% chance on hit to paralyze the enemy Damage: 1D6 + 4 THAC0: +4 bonus Damage type: bludgeoning Weight: 4 Speed factor: 2 Skill type: staff Type: 2-handed Requires: 5 Strength Used by: Mages (Single, Dual, Multiclass)~ /*One of many staffs created by the mage Meldanen. Over his career he supplied gold to a small industry of adventurers that would bring him exotic materials for his workshop. In his later years he was not so charitable, and occasionally set two or more groups against each other to secure the most reasonable prices for himself. Recently he stopped the practice altogether, preferring that as few people knew of his experiments as possible.*/
+@103751 = ~One of many staffs created by the mage Meldanen. Over his career he supplied gold to a small industry of adventurers that would bring him exotic materials for his workshop. In his later years he was not so charitable, and occasionally set two or more groups against each other to secure the most reasonable prices for himself. Recently he stopped the practice altogether, preferring that as few people knew of his experiments as possible.
+
+STATISTICS:
+
+Equipped abilities:
+- Free Action
+- Immune to spell failure
+- Armor class: +1
+
+Combat abilities:
+- 15% per hit to paralyze the target
+
+THAC0: +4
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 4
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Usable By:
+ Mage~
 @103752 = ~Invisible Stalker~
 @103753 = ~High Captains' Seal~
 @103754 = ~This seal, imbued with the magic of the Host Tower of the Arcane, is used by the High Captains to mark important documents relevant to city business.~
-@103755 = ~NP: Stand~ /*Wall*/
+@103755 = ~Stand~
 @103756 = ~Stirge~
 @103757 = ~Complete History of the Creator Ruins~
 @103758 = ~The letters in this book swim before your eyes, finally shaping themselves into text you are capable of understanding. The book speaks of many things and appears to prove, beyond the shadow of a doubt, that a creator race lived in these ruins. A certain passage catches your eye...
@@ -4919,7 +5008,7 @@ Use: Selected*/
 "Further complications came in the form of the draconic presence in the Sentienge, as they refused to bow to our will. The dragons were defeated in the Second Great War of Hiromire, however, and our hunters were finally able to recover the missing slaves.
 
 "As is customary, the elderly were eliminated, the young males crippled and sent to work in the iron mines, and the virile females were returned to the pens for the purposes of breeding."~
-@103759 = ~NP: Suspicious type~ /*Extra Smiting*/
+@103759 = ~Suspicious Type~
 @103760 = ~NP: Light wind~ /*Light Flail*/
 @103761 = ~NP: At first glance, this club seems ordinary, but upon closer inspection, a well-trained eye reveals rows of individual runes that encircle its hilt. The thief may also note the superior balance of this weapon. The club was enchanted long ago at the behest of the master of the Shadow Thieves Guild for one of his loyal - and wealthy - protégés. Being, on the one hand, a powerful enough weapon, at the same time, it drowns out the sounds around the thief when he sneaks towards the target in order to send it into a deep knockout. The last thing that many opponents feel before losing consciousness is a small puff of air from the club raised above their heads, for which it was quickly dubbed &quot;Light Breeze&quot;. Unfortunately, as is often the case in such cases, the protégé once fell short of the Guild Master's hopes, and on a dark night this weapon led him to his death in his own bed. His wife, who was sleeping next to him, did not hear anything. How far this weapon went before it fell into your hands is a story you don't want to know. STATS: THAC0: +2 bonus Damage: 1D6 +2 Traits: Grants a 10% bonus to Move Silently when equipped Damage Type: Blunt Weight: 3 Haste Factor: 4 Skill Type: Clubs Type: 1-Hand Requires: 5 Strength Not used by: Mage~ /*By Stuufshirt the Scribe
 As the title suggests, this rather hefty tome deals with the lives of heroes and villains. It does not condone or condemn, but instead looks at how history defines the roles they played. A leather bookmark identifies the last passage read.
