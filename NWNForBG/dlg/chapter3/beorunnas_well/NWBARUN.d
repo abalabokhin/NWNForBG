@@ -97,8 +97,8 @@ IF ~~ THEN BEGIN 9 // from: 1.3
   IF ~  PartyHasItem("Sw1h44")PartyHasItem("NWADAMAT")~ THEN REPLY @34 GOTO 35
   IF ~  PartyHasItem("Sw1h05")PartyHasItem("NWRITHT2")~ THEN REPLY @35 GOTO 35
   IF ~  PartyHasItem("Sw1h02")PartyHasItem("NWRITHT2")~ THEN REPLY @36 GOTO 35
-  IF ~  PartyHasItem("Sw1h022")PartyHasItem("NWADAMAT")~ THEN REPLY @37 GOTO 35
-  IF ~   PartyHasItem("Sw1h008")PartyHasItem("NWMAGDUT")~ THEN REPLY @38 GOTO 35
+  IF ~  PartyHasItem("Sw1h22")PartyHasItem("NWADAMAT")~ THEN REPLY @37 GOTO 35
+  IF ~  PartyHasItem("Sw1h08")PartyHasItem("NWMAGDUT")~ THEN REPLY @38 GOTO 35
   IF ~~ THEN REPLY @23 EXIT
 END
 

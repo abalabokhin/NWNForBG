@@ -65,6 +65,8 @@ In development:
 - Fixed more craft recepies.
 - Fixed some traps for craft containers, so they are undetectable.
 - Fixed crafting script in NW2E61 to work better.
+- Fixed NW3201.WED file so Zokan is not semi-transparent in EE.
+- Some cosmetic resources fixes, removing unused resources, etc.
 
 0.89 (09/28/2023)
 
