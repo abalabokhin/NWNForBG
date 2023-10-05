@@ -5374,7 +5374,7 @@ Requirements: 19 Strength~
 @103822 = ~At last! The 'hero' of my enemies comes to die! Once you are dead, Voleron shall be free!~
 @103823 = ~Voleron~
 @103824 = ~Magic Protection Removal Scroll~
-@103825 = ~This is a mage Vainiv's scroll when read, removes protection from magically sealed doors and passageways. Unfortunately, this scroll has no effect outside of the mage's tower~
+@103825 = ~This is a mage Wanev's scroll when read, removes protection from magically sealed doors and passageways. Unfortunately, this scroll has no effect outside of the mage's tower.~
 @103826 = ~Walters~
 @103829 = ~Wand of Undead Creation~
 @103830 = ~This wand raises 1 to 3 undead creatures from the ground that serve the one who summoned them. One undead servant appears automatically, the second with a 70% chance, the third with a 30% chance. The undead can follow the caster, stay in a location, and attack any creature. Monsters exist for 8 hours unless destroyed in combat or banished. These enchantments cannot be dispelled. The number of charges is limited.
@@ -5394,9 +5394,19 @@ Not Usable By:
 @103833 = ~This appears the be a journal of one Wanev, a mage. It reads: "Curse the demon ale! Dammit! Dammit! Dammit! I have no idea where I've put the ingredients for the recipe. How drunk was I? What was the blonde's name? Curses! If I can't find the ingredients, I can't get into my tower! I think I left my wardstone in there. What was I supposed to tell the bugbears again?!" There are numerous expletives here. Then: "I intend to return to my tower and never return to this stupid overpriced cottage! Stupid wardstone..."~
 @103834 = ~Wanev's Guardian Stone~
 @103835 = ~A tower, framed by forked lightning, has been engraved into this rough stone, as have a number of arcane symbols. On the back is the sigil of Wanev, a wizard of Port Llast. It appears to be a wardstone granting access to his tower south of town.~
-@103836 = ~NP: Boots of Swiftness~ /*Arden Swift*/
-@103837 = ~NP: These enchanted boots were given to you by the wizard Vaneve as a reward for a service rendered. The wearer of these boots will no doubt be the envy of any adventurer. Still, because the boots are unique, they provide their owner with freedom of movement and at the same time speed it up. PARAMETERS: Increases movement speed The wearer is immune to any effects that interfere with movement, Weight: 3 Unused by: Wizard Killers~ /*With a feat selection centered on melee combat with a greataxe, this is the perfect package for a combat-oriented adventurer.
-These packages do not give any special abilities to your character, they simply configure your skills and feats so you don't have to.*/
+@103836 = ~Boots of Swiftness~
+@103837 = ~These enchanted boots were given to you by the wizard Wanev's as a reward for a favor you have done. The owner of these boots will surely be the envy of any adventurer. You bet, because the boots are unique, they give their owner freedom of movement and at the same time speeds him up.
+
+STATISTICS:
+
+Equipped abilities:
+- Increase movement rate
+- Free Action
+
+Weight: 3
+
+Not Usable By:
+ Wizard Slayers~
 @103838 = ~Master Maugrim don't like meddlers... But Vardoc take care of dat.~
 @103839 = ~Vardoc~
 @103840 = ~Letter to Vardoc~
@@ -5412,80 +5422,159 @@ Maugrim Korothir~
 @103843 = ~Wererat~
 @103844 = ~Winthorp~
 @103845 = ~Wittian~
-@103846 = ~NP: Weeping Virgin~ /*Scavenger Rat*/
-@103847 = ~NP: Eternal Sorrow~ /*River Boat*/
-@103848 = ~NP: Mournful Lament~ /*Blackcloak*/
+@103846 = ~Maiden Mourner~
+@103847 = ~Eternal Sorrow~
+@103848 = ~Mournful Lament~
 @103849 = ~Wyvern~
 @103850 = ~Ha! It seems another fool has taken my bait! Kill them all, my creatures!~
-@103851 = ~NP: Yari Nozh~ /*Cristov*/
+@103851 = ~Yari, the Knife~
 @103852 = ~Yeanasha~
 @103853 = ~Foolish hero! Yesgar will smash you!~
 @103854 = ~Wait! Spare Yesgar's life!~
 @103855 = ~Yesgar~
 @103856 = ~Yesgar's Key~
-@103857 = ~NP: This key opens all the locks in the abandoned mine.~ /*This key will unlock the illithid slave pens.*/
+@103857 = ~This key opens all the locks in the abandoned mines.~
 @103858 = ~Yvette~
 @103859 = ~Lady Zemeria~
-@103860 = ~NP: Zamitra's Guard~ /*Zamithra's Guard*/
+@103860 = ~Zamithra's Guard~
 @103861 = ~Zamithra~
-@103862 = ~NP: Amulet of Confidence~ /*Translation Amulet*/
-@103863 = ~NP: Several of these items were created at the behest of Daern'on, founder of the organization known to the dark elf world as the Azure Blades. They were intended to protect himself and his inner circle from treacherous attacks from unreliable allies. PARAMETERS: Defense class: +2 Equip: Immune to backstab~ /*A dwarf came here a few weeks ago. He was fierce and mean and seemed immune to my charms. He asked me about the dagger that the druid had used to kill himself.*/
+@103862 = ~Amulet of Confidence~
+@103863 = ~Several of these items were created at the request of Daern'on, the founder of the organization known in the dark elf world as the Azure Blades. They were intended to protect himself and his inner circle from treacherous attacks from unreliable allies.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Immunity to backstab~
 @103864 = ~Zamithra's Gem~
-@103865 = ~NP: This magical stone seems to have once been a part of some larger thing. It belonged to Zamitra, a warrior woman.~ /*This is a magical gem that appears to have once been part of some greater item. It was owned by Setara, the forest witch.*/
-@103866 = ~NP: Great zombie~ /*The Great Oak*/
+@103865 = ~This is a magical gem that appears to have once been part of some greater item. It was owned by Zamithra, a mercenary woman.~
+@103866 = ~Great Zombie~
 @103867 = ~House Guard~
-@103868 = ~NP: Aah! Save yourself! Cells are open!~ /*O-ho! Let me see!*/
-@103869 = ~NP: Let's run! The animals are going to eat us!~ /*Run! Call for help!*/
+@103868 = ~Aaa! Save yourselves! The cages are open!~
+@103869 = ~Run! The beasts are going to eat us now!~
 @103870 = ~Zor~
-@103871 = ~NP: You can earn money in 'The Naked Board'~ /*Can't you give a straight answer?*/
-@103872 = ~NP: This scroll should be used next to the big tree by the zoo in Blackshire. It won't work in this place.~ /*I created it specifically for the large tree near the zoo. Please, free the animals.*/
-@103873 = ~NP: This scroll removes the magical protection in one of the rooms of the Vainiv Tower. It won't work in this place.~ /*Bridge lead to Mister Wanev's property. Nice place. Good view.*/
+@103871 = ~You can earn money in Board Laid Bare Inn~
+@103872 = ~This scroll should be used near the big tree at the Zoo in Blacklake. It won't work in this place.~
+@103873 = ~This scroll when read, removes protection from one of the room in Wanev's Tower. It won't work in this place.~
 @103874 = ~Protector~
-@103875 = ~NP: This strange-looking shield is woven from large intertwined branches with leaves. The unusual shape and size of these leaves suggest that they were taken from ancient oaks growing deep in the Forest of Peace. If you carefully examine it, you can find powerful druidic spells emanating from the surface of the shield and increasing the health of the owner and healing his wounds faster. Every morning, at sunrise, one of the branches flares faintly for a moment. Then it can be taken and planted in the ground, and another will immediately grow in its place. Once the proper sorcery is cast, the planted branch transforms into a fearsome Shambler whose strength and size depends on the Druid's skill. Due to its unique origin, the power of this shield can only be used by the most dedicated followers of Nature. STATS: Abilities: +5 to maximum hit points Life regeneration: 1HP every 6 seconds Special abilities: Call Crawling Hill 1 time per day Bonus to defense class: +2 Weight: 1 Requires: 12 Wisdom and 15 Charisma Used only by: Druids~ /*This journal tells of the changes that this cult went through once a creature named Gulnan was captured. It deals mostly with how the Cyric loyalists were ousted, allowing for the writer to move swiftly up the ranks.
-Excerpt:
-Things are very different now, though they might not appear as such from the outside. We still follow blindly, and a number of us are still slain for no reason, but I finally believe a potent entity is acting through our master. Gulnan seems surprised at her own power, but her desire for conquests has erased any questions from her mind. I welcome her intensity, and her strong use of the focus. Jared was more interested in lining his pockets than causing true havoc.*/
-@103876 = ~NP: Defender +3~ /*Protector*/
-@103877 = ~NP: This odd-looking shield is woven from large intertwined branches with leaves. The unusual shape and size of these leaves suggest that they were taken from ancient oaks growing deep in the Forest of Peace. If you carefully examine it, you can find powerful druidic spells emanating from the surface of the shield and increasing the health of the owner and healing his wounds faster. Every morning, at sunrise, one of the branches flares faintly for a moment. Then it can be taken and planted in the ground, and another will immediately grow in its place. Once the proper sorcery is cast, the planted branch transforms into a fearsome Shambler whose strength and size depends on the Druid's skill. Due to its unique origin, the power of this shield can only be used by the most dedicated followers of Nature. STATS: Abilities: +15 to maximum hit points Life Regeneration: 3HP every 6 seconds Special Abilities: Call Crawling Hill 1x per day Defense Class Bonus: +4 Weight: 1 Requires: 12 Wisdom and 15 Charisma Used Only by: Druids~ /*This journal tells of the changes that this cult went through once a creature named Gulnan was captured. It deals mostly with how the Cyric loyalists were ousted, allowing for the writer to move swiftly up the ranks.
-Excerpt:
-Things are very different now, though they might not appear as such from the outside. We still follow blindly, and a number of us are still slain for no reason, but I finally believe a potent entity is acting through our master. Gulnan seems surprised at her own power, but her desire for conquests has erased any questions from her mind. I welcome her intensity, and her strong use of the focus. Jared was more interested in lining his pockets than causing true havoc.*/
-@103878 = ~NP: Fire Mist~ /*Flame Strike*/
-@103879 = ~NP: Death Claw~ /*Deathblade*/
-@103880 = ~NP: Illithid vampire~ /*Illithid*/
-@103881 = ~NP: Creepy Horror~ /*Hook Horror*/
-@103882 = ~NP: Summon Monster IV~ /*Charm Monster (5)*/
-@103883 = ~NP: Summon Monster IV (Summon/Summon) Level: 8 Distance to Target: 40 yards Duration: 13 rounds Cast Time: 5 Area of Effect: Specials Saving Throw: none This spell summons 7 HD monsters. There is a 60% chance to get one monster and a 40% chance to get two. Monsters will appear in the spell's area of effect and attack the reader's enemies until the spell ends or until they are destroyed. The monster can be a vampire wolf, a brown bump, or a githyanki.~ /*Type of Feat: DomainPrerequisite: Access to the Plant domain.
-Specifics: 
-Turn Vermin: Able to turn vermin as if they were undead.
-Bonus Spells: The cleric gains access to the following spells at the specified spell level: Barkskin (2), Creeping Doom (7).
-Use: Automatic.*/
-@103884 = ~NP: Bringer of darkness +3~ /*Bat*/
-@103885 = ~NP: Once owned by the Dragonlord Verminard, the bringer of darkness was a fearsome weapon of evil. Created by the priests of the Queen of Darkness, it blinds all it strikes. Paladins hit with this weapon die immediately, rangers must make a death saving throw or die as well. STATS: Features: 50% chance to kill a paladin or ranger on hit. 50% chance to level up Target must make a saving throw against spells with a -2 penalty or be blinded THAC0: +3 Damage: 1D6 + 4 Damage type: bludgeoning Weight: 4 Speed factor: 4 Skill type: mace Type: 1-handed Requires: 7 Power Not used by: Druids Mages Thieves Good characters~ /*Type of Feat: GeneralPrerequisite: Epic Barbarian, Intimidate 25 ranks.
-Specifics:  While the barbarian is raging, any enemy that comes close to him must make a Will save opposed by the barbarian's Intimidate check or becomes panicked for 1d6 rounds. Opponents with up to twice the barbarian's Hit Dice will not flee but will receive a -2 penalty to attack and saving throw rolls. Creatures with more then 2x the barbarian's Hit Dice are not affected by the rage.
-Use: Automatic while in rage*/
-@103886 = ~NP: scream~ /*Erik*/
-@103887 = ~NP: Shout (Summon) Level: 4 Range: 30 Duration: Instant Cast Time: 1 Area of Effect: Selected creature Saving Throw: The caster's Special Voice becomes incredibly powerful, and<PRO_HESHE> can emit a deafening roar that spreads in the direction of the enemy. The target of the spell is stunned for 9 rounds and takes 4d6 points of damage. If the victim makes a successful saving throw against spells, they are not deafened and only take half damage.~ /*Type of Feat: SpellPrerequisite: 21st level, Spell Focus and Greater Spell Focus in the chosen school, ability to cast 9th level spells.
-Specifics: The character gains a +6 to the Difficulty Class for all saving throws against spells from the chosen school of magic.
-Use: Automatic.*/
-@103888 = ~NP: Eyes of Anger~ /*Eyes of Doom*/
-@103889 = ~NP: Eyes of Wrath(Repudiation) Level: 8 Range: The mage himself Duration: 6 Rounds Cast Time: 3 Range: Within 3 Feet Saving Throw: vs. Spell to cancel it This spell summons seven eyes that are called from the elemental and demi planes. These eyes have many destructive properties, and these properties are manifested after contact with the enemy. Any creature that comes within range of the eyes will be hit, if the target fails the saving throw, they will act depending on which eye struck, Eyes are as follows: Crystal Eye: If this eye hits a creature, then the creature must check the saving throw spells or 3D6 cold damage will be dealt. Eye of the Abyss: This eye inflicts 3D6 fire damage on the target. Eye of Defeat: This eye distributes 3D6 lightning damage. Hunter's Eye: This eye will incapacitate the target, stunning them for 4 rounds. Eye of the Parasite: This eye draws blood and therefore 3 points of Strength from the target over 8 rounds. Eye of Woe: This eye Simply Causes instant death through visions of pain. Eye of Torment: This eye encases the target in stone to inflict eternal torment.~ /*Difficulty Class: None.Damage: None.
-Duration: Number of rounds equal to the creature's Constitution modifier.
+@103875 = ~This strange looking shield is woven from large intertwined branches with leaves. The unusual shape and size of these leaves suggest that they were taken from ancient oaks growing deep in the Forest of Mir. If you examine it closely, you will find powerful druidic charms emanating from the surface of the shield that increase the wearer's health and heal their wounds more quickly. Every morning, at sunrise, one of the branches will flare faintly for a moment. Then it can be taken and planted in the ground, and another will immediately grow in its place. After the proper sorcery is recited, the planted branch transforms into a fearsome Shambler, whose strength and size depends on the Druid's skill. Because of its unique origin, the power of this shield can only be utilized by the most dedicated followers of Nature.
 
-Some creatures have the ability to enter a frenzied state that grants temporary ability score bonuses. This works in a similar fashion to Barbarian Rage. A creature can enter three different types of Frenzy available in the game, each of which has three versions that apply a +2, +4, or +6 bonus to ability scores. The duration of all forms of Frenzy is equal to the creature's Constitution modifier, in rounds. The three types are as follows:
+STATISTICS:
 
-Ferocity: boosts Strength and Dexterity.
-Intensity: boosts Dexterity and Constitution.
-Rage: boosts Strength and Constitution.*/
-@103890 = ~NP: Eye of Ice Death~ /*No Permanent Death*/
-@103891 = ~NP: Eye Phase~ /*Imp's Eye*/
-@103892 = ~NP: Ash Eye~ /*Imp's Eye*/
-@103893 = ~NP: Eye of Stun~ /*Aura of Stunning*/
-@103894 = ~NP: Eye of Depletion~ /*Cloak of Displacement*/
-@103895 = ~NP: Eye of Death~ /*Circle of Death*/
-@103896 = ~NP: Eye of Stone Death~ /*No Permanent Death*/
-@103897 = ~NP: Acolyte~ /*Amulet*/
-@103898 = ~NP: Demon Knight~ /*Fiendish Azer*/
-@103899 = ~NP: Hefty Troll~ /*Diseased Troll*/
-@103900 = ~NP: cave troll~ /*Password incorrect.*/
+Equipped abilities:
+- Maximum HP: +5
+- Regenerates 1 HP every 6 seconds
+
+Charge abilities:
+- Summon Shambling Mound once per day
+
+Armor Class: +2
+Weight: 1
+Requirements: 12 Wisdom and 15 Charisma
+
+Usable By:
+ Druid~
+@103876 = ~Protector +3~
+@103877 = ~This strange looking shield is woven from large intertwined branches with leaves. The unusual shape and size of these leaves suggest that they were taken from ancient oaks growing deep in the Forest of Mir. If you examine it closely, you will find powerful druidic charms emanating from the surface of the shield that increase the wearer's health and heal their wounds more quickly. Every morning, at sunrise, one of the branches will flare faintly for a moment. Then it can be taken and planted in the ground, and another will immediately grow in its place. After the proper sorcery is recited, the planted branch transforms into a fearsome Shambler, whose strength and size depends on the Druid's skill. Because of its unique origin, the power of this shield can only be utilized by the most dedicated followers of Nature.
+
+STATISTICS:
+
+Equipped abilities:
+- Maximum HP: +15
+- Regenerates 1 HP every 6 seconds
+
+Charge abilities:
+- Summon Shambling Mound once per day
+
+Armor Class: +4
+Weight: 1
+Requirements: 12 Wisdom and 15 Charisma
+
+Usable By:
+ Druid~
+@103878 = ~Fire Mist~
+@103879 = ~Death Claw~
+@103880 = ~Illithid Vampire~
+@103881 = ~Creepy Horror~
+@103882 = ~Monster Summoning IV~
+@103883 = ~Monster Summoning IV
+(Conjuration/Summoning)
+
+Level: 9
+Range: 120 ft.
+Duration: 13 rounds
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell summons 7 HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. These monster(s) appear within spell range and attack the caster's opponents until the spell duration expires or until they are slain. The monster could be a Vampiric Wolf, an Umber Hulk or a Githyanki?~
+@103884 = ~Darkness Bringer +3~
+@103885 = ~Once owned by the Dragonlord Verminard, Darkness Bringer was a terrible weapon of evil. Created by the priests of the Queen of Darkness, it blinds everyone it strikes. Paladins struck by this weapon die immediately, rangers must make a saving throw against death or they will die too.
+
+STATISTICS:
+
+Combat abilities:
+- 50% chance to kill a paladin or a ranger on a hit
+- 50% chance per hit to drain one level
+- Hit target must save vs. Spell with penalty -2 or be blinded
+
+THAC0: +3
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 4
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requirements: 7 Strength
+
+Not Usable By:
+ Mage
+ Druid
+ Thief
+ Monk
+ Good character~
+@103886 = ~Shout~
+@103887 = ~Shout
+(Invocation)
+
+Level: 4
+Range: 30
+Duration: Instant
+Casting Time: 1
+Saving Throw: Special
+
+Shout grants the wizard tremendous vocal powers, allowing <PRO_HIMHER> to emit an earsplitting roar from <PRO_HISHER> mouth in a cone-shaped area of effect. Any creature within this area is deafened for 9 rounds and suffers 4d6 points of magic damage. A successful Save vs. Spell negates the deafness and reduces the damage by half.~
+@103888 = ~Eyes of Wrath~
+@103889 = ~Eyes of Wrath
+(Abjuration)
+
+Level: 8
+Range: 0
+Duration: 6 Rounds
+Casting Time: 3
+Area of Effect: 3 feet radius
+Saving Throw: Neg.
+
+This spell summons seven eyes from elemental and demi-planes. These eyes have many destructive properties, and these properties manifest after contact with an opponent. Any creature that has entered the range of the eyes will be struck, if the target fails a saving throw vs. Spell they will act depending on which eye struck. The eyes come in the following varieties:
+
+Eye of Crystal: This eye make 3d6 cold damage.
+Eye of the Abyss: This eye make 3d6 fire damage to the target.
+Eye of Defeat: This eye make 3d6 lightning damage.
+Eye of the Hunter: This eye incapacitates the target by stunning it for 4 rounds.
+Eye of the Parasite: This eye draws blood and therefore 3 points of Strength from the target for 8 rounds.
+Eye of Grief: This eye simply Causes instant death through visions of pain.
+Eye of Torment: This eye imprisons the target in stone to inflict eternal torment.~
+@103890 = ~Eye of Ice Death~
+@103891 = ~Eye of Phase~
+@103892 = ~Eye of Ash~
+@103893 = ~Eye of Stunning~
+@103894 = ~Eye of Depletion~
+@103895 = ~Eye of Death~
+@103896 = ~Eye of Stone Death~
+@103897 = ~Acolyte~
+@103898 = ~Demon Knight~
+@103899 = ~Big Troll~
+@103900 = ~Cave troll~
 @103901 = ~NP: Misfortune~ /*In Area*/
 @103902 = ~NP: (Summoning/Summoning) Level: 1 Casting Time: 10 Duration: 1 round Range: 40 yards Coverage: 40 ft. radius Saving Throw: This spell allows the caster to remove 1 point from the fear saving throw, as well as reduce the creature's chance to hit by 1. This spell has no saving throw, all creatures, good, evil, party members, are affected by it. If used wisely, it can be very useful.~ /*Type of Feat: GeneralPrerequisite: 21st level, Wisdom 25+, Charisma 25+ and Turn Undead.
 Specifics: This feat allows outsiders to be turned like undead.
