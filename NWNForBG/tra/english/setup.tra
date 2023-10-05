@@ -5575,10 +5575,18 @@ Eye of Torment: This eye imprisons the target in stone to inflict eternal tormen
 @103898 = ~Demon Knight~
 @103899 = ~Big Troll~
 @103900 = ~Cave troll~
-@103901 = ~NP: Misfortune~ /*In Area*/
-@103902 = ~NP: (Summoning/Summoning) Level: 1 Casting Time: 10 Duration: 1 round Range: 40 yards Coverage: 40 ft. radius Saving Throw: This spell allows the caster to remove 1 point from the fear saving throw, as well as reduce the creature's chance to hit by 1. This spell has no saving throw, all creatures, good, evil, party members, are affected by it. If used wisely, it can be very useful.~ /*Type of Feat: GeneralPrerequisite: 21st level, Wisdom 25+, Charisma 25+ and Turn Undead.
-Specifics: This feat allows outsiders to be turned like undead.
-Use: Selected. If the character has twice as many levels as the outsiders have Hit Die, the outsiders are instantly destroyed.*/
+@103901 = ~Misfortune~
+@103902 = ~Misfortune
+(Conjuration/Summoning)
+
+Level: 1
+Range: 120 ft.
+Duration: 1 rounds
+Casting Time: 10
+Area of Effect: 120 ft. radius
+Saving Throw: None
+
+This spell allows the reader to remove 1 point from the saving throw vs. Fear, as well as decrease the creature's THAC0 by 1. This spell has no saving throw, all creatures, good, evil, party members, are affected by it. If used wisely, it can come in handy.~
 @103903 = ~NP: Divine Grace~ /*Divine Grace*/
 @103904 = ~NP: Divine Grace (Manifestation) Level: 1 Duration: 1 turn Area of Effect: Casting Time: 1 Round When this spell is cast, the priest invokes the wisdom and power of his deity. In return, he will receive an improvement to his attack and damage: +1 for every three levels of the reader. This spell can improve the effect up to a maximum of +6.~ /*Drinking this potion will cause a  magical aura to surround the caster.
 Any creature striking the caster takes 1d4 points of damage +1 point per 2 caster levels (maximum +5).*/
