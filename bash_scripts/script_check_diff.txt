@@ -1,31 +1,7 @@
-Number of hits: 904
+Number of hits: 880
 File: BALDUR.BCS, Line: 126, Warning: Resource not found: S:CutScene*[BCS] - cut101a
-File: NW1200.bcs, Line: 52, Warning: Script name not found: O:Object* - Zombie
-File: NWARIBEH.bcs, Line: 43, Warning: Script name not found: O:Actor* - WINSKI
 File: NWBPD14G.bcs, Line: 326, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: NWBPD14G.bcs, Line: 580, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: NWBPD14G.bcs, Line: 590, Warning: Spell resource for CLERIC_RESIST_COLD not found: SPPR215.SPL
 File: NWBPD14G.bcs, Line: 918, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
 File: NWBPD14G.bcs, Line: 928, Warning: Spell resource for CLERIC_SPACE_WARP not found: SPPR716.SPL
-File: NWCU101A.bcs, Line: 7, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCU101A.bcs, Line: 8, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCU101A.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCU101A.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCU101A.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCU101A.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWCU101A.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - AR2907
-File: NWNASCH2.bcs, Line: 19, Warning: Script name not found: O:Actor* - WINSKI
-File: NWNASCHR.bcs, Line: 27, Warning: Script name not found: O:Actor* - WINSKI
-File: NWWERPA2.bcs, Line: 6, Warning: Script name not found: O:Target* - Door6737
-File: NWWERPA2.bcs, Line: 7, Warning: Script name not found: O:Target* - Door6737
-File: NWWERPA2.bcs, Line: 8, Warning: Script name not found: O:Target* - Door6737
-File: NWWERPA2.bcs, Line: 9, Warning: Script name not found: O:Target* - Door6737
-File: NWWERPA2.bcs, Line: 10, Warning: Script name not found: O:Target* - Door6737
-File: NWWERPA2.bcs, Line: 11, Warning: Script name not found: O:Target* - Door6737
-File: NWWERPA3.bcs, Line: 9, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: NWWERPA3.bcs, Line: 10, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: NWWERPA3.bcs, Line: 11, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: NWWERPA3.bcs, Line: 12, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: NWWERPA3.bcs, Line: 13, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: NWWERPA3.bcs, Line: 14, Warning: Resource not found: S:Area*[ARE] - NW6737
-File: NWWERPA3.bcs, Line: 15, Warning: Resource not found: S:Area*[ARE] - NW6737
