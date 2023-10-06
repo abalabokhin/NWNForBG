@@ -306,10 +306,10 @@ END
 
 //Videos
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY ~NWNForBG/%LANGUAGE%/movies_ee~ ~movies~
+  COPY ~NWNForBG/movies_ee/%LANGUAGE%~ ~movies~
 END ELSE BEGIN
   MAKE_BIFF ~NWNMOVIE~ BEGIN
-    ~NWNForBG/%LANGUAGE%/movies~ ~.*\.MVE~
+    ~NWNForBG/movies/%LANGUAGE%~ ~.*\.MVE~
   END
 END
 
