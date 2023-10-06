@@ -1,0 +1,335 @@
+@102717 = ~Обращение~
+@102718
+NWMMWICV.spl - обращение - меняет характер - бред
+NWMMCHAL.itm
+Вроде только в NWELTUR2.STO - можно грохать
+
+@102862 = ~Горящая Кровь Белтина~
+@102863
+~NWNForBG/spl/NWMOBLFE.spl~        - используется в d файле - нужно оставлять
+~NWNForBG/itm/NWCBR008.itm~        - только в NWELTUR4.STO
+~NWNForBG/spl/spwi429.spl~         - используется в скриптах и у двух крич - нужно очень внимательно посмотреть что да как, еще и в таблицу наверное добавляется...
+
+@102906 = ~Иммунитет: Отречение (Отречение) - @102913
+COPY ~NWNForBG/itm/nwsi590.itm~ ~override~
+SAY 0x54>     @102906
+
+COPY ~NWNForBG/itm/nwsi591.itm~ ~override~
+SAY 0x54>     @102907
+
+COPY ~NWNForBG/itm/nwsi592.itm~ ~override~
+SAY 0x54>     @102908
+
+COPY ~NWNForBG/itm/nwsi593.itm~ ~override~
+SAY 0x54>     @102909
+
+COPY ~NWNForBG/itm/nwsi594.itm~ ~override~
+SAY 0x54>     @102910
+
+COPY ~NWNForBG/itm/nwsi595.itm~ ~override~
+SAY 0x54>     @102911
+
+COPY ~NWNForBG/itm/nwsi596.itm~ ~override~
+SAY 0x54>     @102912
+
+COPY ~NWNForBG/itm/nwsi597.itm~ ~override~
+SAY 0x54>     @102913
+вроде только в магазинах - NWJEROL0.STO и NWELTUR4 можно грохать
+
+@103173 = ~Призывание монстров V~
+@103174
+~NWNForBG/spl/spwi828.spl~
+~NWNForBG/itm/NWSCRX24.itm~
+только в магазинах - NWELTUR4 + в трёх областях - NW2E64, 1043, 2306 - если только раскидано по контейнерам - то заменить на что-то
+
+@103175 = ~Ледяное Копье~
+@103176
+~NWNForBG/spl/spwi328.spl~
+~NWNForBG/itm/NWSCRX9.itm~
+у крич и в скриптах - как и кровь белтина
+
+@103221 = ~Заморозка Сниллока~
+@103222
+~NWNForBG/spl/spwi204.spl~
+~NWNForBG/itm/NWSCSNIL.itm~
+тоже много где - как и кровь белтина
+
+@103231 = ~Великое Рассеивание~
+@103232
+~NWNForBG/spl/NWSP618.spl~
+в скриптах
+
+@103882 = ~Призывание Монстра IV~
+@103883
+~NWNForBG/spl/spwi733.spl~
+~NWNForBG/itm/NWSCRX17.itm~
+в магазине, в области 1043 и NWWANEV даёт это свиток - заменить на что-то
+
+@103886 = ~Крик~
+@103887
+~NWNForBG/spl/spwi431.spl~
+~NWNForBG/itm/spwi431x.itm~
+только в магазине NWELTUR4 и NW1008.ARE
+
+@103888 = ~Глаза Гнева~
+@103889
+~NWNForBG/spl/NWSPMINI.spl~
+~NWNForBG/spl/NWSPMIND.spl~
+~NWNForBG/itm/NWSCRX51.itm~
+@103890 = ~Глаз Ледяной Смерти~
+@103891 = ~Глаз Фазы~
+@103892 = ~Глаз Пепла~
+@103893 = ~Глаз Оглушения~
+@103894 = ~Глаз Истощения~
+@103895 = ~Глаз Смерти~
+@103896 = ~Глаз Каменной смерти~
+
+COPY ~NWNForBG/spl/sppr953.spl~ ~override~
+  SAY 0x8>      @103890
+
+COPY ~NWNForBG/spl/sppr954.spl~ ~override~
+  SAY 0x8>      @103891
+
+COPY ~NWNForBG/spl/sppr955.spl~ ~override~
+  SAY 0x8>      @103892
+
+COPY ~NWNForBG/spl/sppr956.spl~ ~override~
+  SAY 0x8>      @103893
+
+COPY ~NWNForBG/spl/sppr957.spl~ ~override~
+  SAY 0x8>      @103894
+
+COPY ~NWNForBG/spl/sppr958.spl~ ~override~
+  SAY 0x8>      @103895
+
+COPY ~NWNForBG/spl/sppr959.spl~ ~override~
+  SAY 0x8>      @103896
+только в NWELTUR4 и NW1030!!!!
+
+@103901 = ~Несчастье~
+@103902
+sppr118.spl
+NWLINA NWGRIM NWOLEFF3 NWOLEFF2 NWOLEFF - в целом можно вычищать
+======================================================= в уже вычитанных английский строчках
+@103903 = ~Божественная Благодать~
+@103904
+sppr119.spl
+NWLINA NWGRIM NWOLEFF3 NWOLEFF NWOLEFF2
+
+@103906 = ~Щит Энтропии~
+@103907
+@103908 = ~Вы призвали Щит Энтропии~
+sppr120.spl
+все тоже что и выше
+
+@103909 = ~Нанесение легких ран~
+@103910 = ~Нанесение легких ран
+~NWNForBG/spl/sppr145.spl~
+NWLINA NWGRIM
+
+@103911 = ~Расплавить броню~
+@103912 = ~Расплавить броню
+~NWNForBG/spl/sppr147.spl~
+NWLINA NWGRIM
+
+@103913 = ~Сила Быка~
+@103914
+~NWNForBG/spl/sppr217.spl~
+NWLINA NWGRIM NWOLEFF3 NWOLEFF2 NWOLEFF
+
+@103915 = ~Нанесение серьезных ран~
+@103916
+~NWNForBG/spl/sppr218.spl~
+также
+
+@103917 = ~Лечение средних ран~
+@103918
+~NWNForBG/spl/sppr245.spl~
+!!!!! еще и в других местах !!!! - SPL - проверить
+
+@103919 = ~Проклятие
+@103920 = ~Цель потеряла 6 Харизмы~
+@103921 = ~Цель потеряла 6 Ловкости~
+@103922 = ~Цель потеряла 6 Силы~
+@103923 = ~Цель потеряла 6 Сложения~
+@103924 = ~Цель потеряла 6 Интеллекта~
+@103925 = ~Цель потеряла 6 Мудрости~
+@103926 = ~Цель потеряла 4 от бросков атаки и 4 от всех спасбросков~
+~NWNForBG/spl/sppr321.spl~
+также
+
+@103927 = ~Опека защиты~
+@103928
+~NWNForBG/spl/sppr247.spl~
+the same
+
+@103929 = ~Молитва~
+@103930
+~NWNForBG/spl/sppr323.spl~
+the same
+
+@103931 = ~Жгущий Свет~
+@103932
+~NWNForBG/spl/sppr324.spl~
+the same
+
+@103933 = ~Плащ Храбрости~
+@103934
+@103935 = ~Ваша группа получила Плащ Храбрости.~
+~NWNForBG/spl/sppr328.spl~
+the same
+
+@103936 = ~Наслать Болезнь~
+@103937
+~NWNForBG/spl/sppr329.spl~
+the same
+
+@103938 = ~Проклятье Бешабы~
+@103939
+~NWNForBG/spl/sppr332.spl~
+the same
+
+@103940 = ~Покровительство Тиморы~
+@103941
+~NWNForBG/spl/sppr333.spl~
+the same
+
+@103942 = ~Боль~
+@103943
+~NWNForBG/spl/sppr345.spl~
+the same
+
+@103944 = ~Доспехи тьмы~
+@103945
+~NWNForBG/spl/sppr346.spl~
+the same
+
+@103946 = ~Языки~
+@103947
+~NWNForBG/spl/sppr423.spl~
+the same
+
+@103948 = ~Статический Заряд~
+@103949
+~NWNForBG/spl/sppr426.spl~
+the same
+
+@103950 = ~Облако Чумы~
+@103951
+~NWNForBG/spl/sppr427.spl~
+the same
+
+@103952 = ~Неисчерпаемая Прочность~
+@103953
+~NWNForBG/spl/sppr428.spl~
+the same
+
+@103954 = ~Молнии Мартаммора~
+@103955
+~NWNForBG/spl/sppr431.spl~
+the same
+
+@103956 = ~Призвать нежить~
+@103957
+~NWNForBG/spl/sppr547.spl~
+the same
+
+@103958 = ~Обнаружение~
+@103959
+~NWNForBG/spl/sppr523.spl~
+the same
+
+@103961 = ~Пир Героев~
+@103962 = ~Пир Героев
+~NWNForBG/spl/sppr526.spl~
+the same
+
+@103963 = ~Великое Рассеивание~
+@103964
+~NWNForBG/spl/sppr618.spl~
+the same
+
+@103965 = ~Луч Луны (Проявление)
+@103966 = ~Луч Луны~
+~NWNForBG/spl/sppr621.spl~
+the same
+
+@103967 = ~Видения Боли~
+@103968 = ~Видения Боли
+~NWNForBG/spl/sppr623.spl~
+the same
+
+@103969 = ~Обращение к тьме~
+@103970 = ~Обращение (к тьме)
+~NWNForBG/spl/sppr628.spl~
+the same
+
+@103971 = ~Удержать монстра
+~NWNForBG/spl/sppr645.spl~
+the same
+
+@103974 = ~Символ, Боль~
+@103975 = ~Символ, Боль
+@103976 = ~Ловкость и класс защиты снижены~
+~NWNForBG/spl/sppr714.spl~
+the same в NWMUMMY + в скриптах!!!!!! - не убирать
+
+@103977 = ~Отзыв Смерти~
+@103978 = ~Отзыв Смерти
+~NWNForBG/spl/sppr734.spl~
+the same
+
+@103980 = ~Темный ритуал~
+@103981 = ~Темный ритуал
+~NWNForBG/spl/sppr740.spl~
+the same
+
+@103982 = ~Создать Высшую Нежить~
+@103983 = ~Создать Высшую Нежить
+~NWNForBG/spl/sppr748.spl~
+the same
+
+@103989 = ~Магическое Облачение~
+@103990 = ~Магическое Облачение
+~NWNForBG/spl/sppr322.spl~
+the same
+
+@103991 = ~Освящение~
+@103992 = ~Освящение
+~NWNForBG/spl/sppr522.spl~
+the same
+
+@103993 = ~Молот Тира~
+@103994 = ~Молот Тира
+~NWNForBG/spl/sppr529.spl~
+вроде норм, но много BAM - перепроверить...
+
+@103996 = ~Благословление Селуны~
+@103997 = ~Благославение Селуны
+~NWNForBG/spl/sppr546.spl~
+the same
+
+@103998 = ~Астрономическая Защита~
+@103999 = ~Астрономическая Защита
+~NWNForBG/spl/sppr530.spl~
+вроде норм, но много BAM - перепроверить...
+
+@104000 = ~Обращение к свету~
+@104001 = ~Обращение (к свету)
+~NWNForBG/spl/sppr627.spl~
+the same
+
+@104002 = ~Раскрытие Мистры~
+@104003 = ~Раскрытие Мистры
+@104004 = ~Защиты от заклинаний сняты~
+~NWNForBG/spl/sppr747.spl~
+the same
+
+@104005 = ~Божественная Связь~
+@104006 = ~Божественная Связь (Вызывание/Призыв)
+@104007 = ~Отозвался один из Старших Богов~
+@104008 = ~Боги тебя не услышали~
+@104009 = ~Отозвался Младший Бог~
+@104010 = ~На твой призыв откликнулся Полубог~
+~NWNForBG/spl/sppr745.spl~
+the same
