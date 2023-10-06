@@ -1,10 +1,9 @@
-Number of hits: 1659
+Number of hits: 1656
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWMINH1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: NWMINH1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
-File: NWMMWICV.SPL, Name: Reversal, Attribute: Resource=MMCHAL.2DA
 File: NWMORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWMORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
@@ -12,8 +11,6 @@ File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
-File: NWROLKI2.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWROLKID.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: SPIN141.SPL, Name: Transformation into Rat, Attribute: Resource=LI#DRUAI.SPL
 File: SPIN141.SPL, Name: Transformation into Rat, Attribute: Resource=LI#DRUWA.SPL
 File: SPIN141.SPL, Name: Transformation into Rat, Attribute: Resource=LI#DRUEA.SPL
@@ -27,4 +24,4 @@ File: SPIN141.SPL, Name: Transformation into Rat, Attribute: Resource=LI#BRBR.IT
 File: SPIN489.SPL, Name: Set Spike Trap, Attribute: Spell icon=SPCL910C.BAM
 File: SPIN491.SPL, Name: Set Exploding Trap, Attribute: Spell icon=SPCL911C.BAM
 File: SPIN493.SPL, Name: Set Time Trap, Attribute: Spell icon=SPCL912C.BAM
-File: SPPR955.SPL, Name: NP: Ash Eye, Attribute: Resource=REDBLAZE.VEF
+File: SPPR955.SPL, Name: Eye of Ash, Attribute: Resource=REDBLAZE.VEF

@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1659
+Number of hits: 1656
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -828,7 +828,6 @@ File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
 File: NWMINH1Y.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
 File: NWMINH1Z.ITM, Name: No such index, Attribute: Resource=RR#DPDIS.SPL
-File: NWMMWICV.SPL, Name: Reversal, Attribute: Resource=MMCHAL.2DA
 File: NWMORAG4.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWMORAG4.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=RR#DPDIS.SPL
@@ -836,8 +835,6 @@ File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL661.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL657.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPCL653.SPL
 File: NWPSC08M.ITM, Name: <NO TEXT>, Attribute: Resource=SPPSQ5.SPL
-File: NWROLKI2.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
-File: NWROLKID.STO, Name: Merchant, Attribute: Rumors (drinks)=RFRIEN.DLG
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: OBJRING.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -1347,7 +1344,7 @@ File: SPPR403.SPL, Name: Free Action, Attribute: Resource=CDSW1H58.SPL
 File: SPPR403.SPL, Name: Free Action, Attribute: Resource=CDMOUND.SPL
 File: SPPR403.SPL, Name: Free Action, Attribute: Resource=CDHGNYA1.SPL
 File: SPPR707.EFF, Attribute: Resource=SPPR707D.SPL
-File: SPPR955.SPL, Name: NP: Ash Eye, Attribute: Resource=REDBLAZE.VEF
+File: SPPR955.SPL, Name: Eye of Ash, Attribute: Resource=REDBLAZE.VEF
 File: sprngb03.ITM, Name: Perhaps you should have been more careful about wearing such a thing to this part of the city. Have you tried retracing your steps?, Attribute: Resource=CDSW1H58.SPL
 File: sprngb03.ITM, Name: Perhaps you should have been more careful about wearing such a thing to this part of the city. Have you tried retracing your steps?, Attribute: Resource=CDMOUND.SPL
 File: sprngb03.ITM, Name: Perhaps you should have been more careful about wearing such a thing to this part of the city. Have you tried retracing your steps?, Attribute: Resource=CDHGNYA1.SPL
