@@ -1879,30 +1879,6 @@ COPY ~NWNForBG/itm/nwrobe1.itm~ ~override~
 COPY ~NWNForBG/itm/nwsbag1.itm~ ~override~
   SAY 0x50	@102419
 
-COPY ~NWNForBG/itm/nwsi590.itm~ ~override~
-  SAY 0x54	@102906
-
-COPY ~NWNForBG/itm/nwsi591.itm~ ~override~
-  SAY 0x54	@102907
-
-COPY ~NWNForBG/itm/nwsi592.itm~ ~override~
-  SAY 0x54	@102908
-
-COPY ~NWNForBG/itm/nwsi593.itm~ ~override~
-  SAY 0x54	@102909
-
-COPY ~NWNForBG/itm/nwsi594.itm~ ~override~
-  SAY 0x54	@102910
-
-COPY ~NWNForBG/itm/nwsi595.itm~ ~override~
-  SAY 0x54	@102911
-
-COPY ~NWNForBG/itm/nwsi596.itm~ ~override~
-  SAY 0x54	@102912
-
-COPY ~NWNForBG/itm/nwsi597.itm~ ~override~
-  SAY 0x54	@102913
-
 COPY ~NWNForBG/itm/nwsplt1.itm~ ~override~
   SAY 0xC	@102904
   SAY 0x54	@102905
