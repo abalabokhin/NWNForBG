@@ -4,34 +4,6 @@
 ~NWNForBG/itm/NWCBR008.itm~        - только в NWELTUR4.STO
 ~NWNForBG/spl/spwi429.spl~         - используется в скриптах и у двух крич - нужно очень внимательно посмотреть что да как, еще и в таблицу наверное добавляется...
 
-
-
-@102906 = ~Иммунитет: Отречение (Отречение) - @102913
-COPY ~NWNForBG/itm/nwsi590.itm~ ~override~
-SAY 0x54>     @102906
-
-COPY ~NWNForBG/itm/nwsi591.itm~ ~override~
-SAY 0x54>     @102907
-
-COPY ~NWNForBG/itm/nwsi592.itm~ ~override~
-SAY 0x54>     @102908
-
-COPY ~NWNForBG/itm/nwsi593.itm~ ~override~
-SAY 0x54>     @102909
-
-COPY ~NWNForBG/itm/nwsi594.itm~ ~override~
-SAY 0x54>     @102910
-
-COPY ~NWNForBG/itm/nwsi595.itm~ ~override~
-SAY 0x54>     @102911
-
-COPY ~NWNForBG/itm/nwsi596.itm~ ~override~
-SAY 0x54>     @102912
-
-COPY ~NWNForBG/itm/nwsi597.itm~ ~override~
-SAY 0x54>     @102913
-вроде только в магазинах - NWJEROL0.STO и NWELTUR4 можно грохать
-
 @103173 = ~Призывание монстров V~
 @103174
 ~NWNForBG/spl/spwi828.spl~
@@ -60,12 +32,6 @@ SAY 0x54>     @102913
 ~NWNForBG/spl/spwi733.spl~
 ~NWNForBG/itm/NWSCRX17.itm~
 в магазине, в области 1043 и NWWANEV даёт это свиток - заменить на что-то
-
-@103886 = ~Крик~
-@103887
-~NWNForBG/spl/spwi431.spl~
-~NWNForBG/itm/spwi431x.itm~
-только в магазине NWELTUR4 и NW1008.ARE
 
 @103888 = ~Глаза Гнева~
 @103889

@@ -2290,10 +2290,6 @@ COPY ~NWNForBG/itm/NWSPHER2.itm~ ~override~
   SAY 0x50	@106147
   SAY 0x54	@106147
 
-COPY ~NWNForBG/itm/spwi431x.itm~ ~override~
-  SAY 0xC	@103886
-  SAY 0x54	@103887
-
 COPY ~NWNForBG/itm/NWSTAFF1.itm~ ~override~
   SAY 0xC	@103745
   SAY 0x54	@103746

@@ -5433,17 +5433,6 @@ Not Usable By:
  Thief
  Monk
  Good character~
-@103886 = ~Shout~
-@103887 = ~Shout
-(Invocation)
-
-Level: 4
-Range: 30
-Duration: Instant
-Casting Time: 1
-Saving Throw: Special
-
-Shout grants the wizard tremendous vocal powers, allowing <PRO_HIMHER> to emit an earsplitting roar from <PRO_HISHER> mouth in a cone-shaped area of effect. Any creature within this area is deafened for 9 rounds and suffers 4d6 points of magic damage. A successful Save vs. Spell negates the deafness and reduces the damage by half.~
 @103888 = ~Eyes of Wrath~
 @103889 = ~Eyes of Wrath
 (Abjuration)
