@@ -112,14 +112,6 @@ COPY ~NWNForBG/spl/NWSPKAOH.spl~ ~override~
 COPY ~NWNForBG/spl/NWSPKAO2.spl~ ~override~
   SAY 0x8	@103744
 
-COPY ~NWNForBG/spl/NWSPMINI.spl~ ~override~
-  SAY 0x8	@103888
-  SAY 0x50	@103889
-
-COPY ~NWNForBG/spl/NWSPMIND.spl~ ~override~
-  SAY 0x8	@103888
-  SAY 0x50	@103889
-
 COPY ~NWNForBG/spl/sppr118.spl~ ~override~
   SAY 0x8	@103901
   SAY 0x50	@103902
@@ -313,27 +305,6 @@ COPY ~NWNForBG/spl/sppr747.spl~ ~override~
 COPY ~NWNForBG/spl/sppr748.spl~ ~override~
   SAY 0x8	@103982
   SAY 0x50	@103983
-
-COPY ~NWNForBG/spl/sppr953.spl~ ~override~
-  SAY 0x8	@103890
-
-COPY ~NWNForBG/spl/sppr954.spl~ ~override~
-  SAY 0x8	@103891
-
-COPY ~NWNForBG/spl/sppr955.spl~ ~override~
-  SAY 0x8	@103892
-
-COPY ~NWNForBG/spl/sppr956.spl~ ~override~
-  SAY 0x8	@103893
-
-COPY ~NWNForBG/spl/sppr957.spl~ ~override~
-  SAY 0x8	@103894
-
-COPY ~NWNForBG/spl/sppr958.spl~ ~override~
-  SAY 0x8	@103895
-
-COPY ~NWNForBG/spl/sppr959.spl~ ~override~
-  SAY 0x8	@103896
 
 COPY ~NWNForBG/spl/spwi204.spl~ ~override~
   SAY 0x8	@103221

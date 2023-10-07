@@ -33,46 +33,13 @@
 ~NWNForBG/itm/NWSCRX17.itm~
 в магазине, в области 1043 и NWWANEV даёт это свиток - заменить на что-то
 
-@103888 = ~Глаза Гнева~
-@103889
-~NWNForBG/spl/NWSPMINI.spl~
-~NWNForBG/spl/NWSPMIND.spl~
-~NWNForBG/itm/NWSCRX51.itm~
-@103890 = ~Глаз Ледяной Смерти~
-@103891 = ~Глаз Фазы~
-@103892 = ~Глаз Пепла~
-@103893 = ~Глаз Оглушения~
-@103894 = ~Глаз Истощения~
-@103895 = ~Глаз Смерти~
-@103896 = ~Глаз Каменной смерти~
-
-COPY ~NWNForBG/spl/sppr953.spl~ ~override~
-  SAY 0x8>      @103890
-
-COPY ~NWNForBG/spl/sppr954.spl~ ~override~
-  SAY 0x8>      @103891
-
-COPY ~NWNForBG/spl/sppr955.spl~ ~override~
-  SAY 0x8>      @103892
-
-COPY ~NWNForBG/spl/sppr956.spl~ ~override~
-  SAY 0x8>      @103893
-
-COPY ~NWNForBG/spl/sppr957.spl~ ~override~
-  SAY 0x8>      @103894
-
-COPY ~NWNForBG/spl/sppr958.spl~ ~override~
-  SAY 0x8>      @103895
-
-COPY ~NWNForBG/spl/sppr959.spl~ ~override~
-  SAY 0x8>      @103896
-только в NWELTUR4 и NW1030!!!!
+===================
 
 @103901 = ~Несчастье~
 @103902
 sppr118.spl
 NWLINA NWGRIM NWOLEFF3 NWOLEFF2 NWOLEFF - в целом можно вычищать
-======================================================= в уже вычитанных английский строчках
+
 @103903 = ~Божественная Благодать~
 @103904
 sppr119.spl

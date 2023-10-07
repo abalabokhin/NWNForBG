@@ -2212,10 +2212,6 @@ COPY ~NWNForBG/itm/NWSCRX24.itm~ ~override~
   SAY 0xC	@103173
   SAY 0x54	@103174
 
-COPY ~NWNForBG/itm/NWSCRX51.itm~ ~override~
-  SAY 0xC	@103888
-  SAY 0x54	@103889
-
 COPY ~NWNForBG/itm/NWSCRX9.itm~ ~override~
   SAY 0xC	@103175
   SAY 0x54	@103176
