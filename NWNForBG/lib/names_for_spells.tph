@@ -24,10 +24,6 @@ COPY ~NWNForBG/spl/NWFINPC.spl~ ~override~
 COPY ~NWNForBG/spl/NWMELS5A.spl~ ~override~
   SAY 0x12E	@74540
 
-COPY ~NWNForBG/spl/NWMMWICV.spl~ ~override~
-  SAY 0x8	@102717
-  SAY 0x50	@102718
-
 COPY ~NWNForBG/spl/NWMOBLFE.spl~ ~override~
   SAY 0x8	@102862
   SAY 0x50	@102863

@@ -672,11 +672,6 @@ COPY ~NWNForBG/itm/NWMIRRBW.itm~ ~override~
   SAY 0xC	@102316
   SAY 0x54	@102317
 
-COPY ~NWNForBG/itm/NWMMCHAL.itm~ ~override~
-  SAY 0xC	@102717
-  SAY 0x50	@102718
-  SAY 0x54	@102718
-
 COPY ~NWNForBG/itm/NWMONTGM.itm~ ~override~
   SAY 0xC	@103054
   SAY 0x54	@103055
