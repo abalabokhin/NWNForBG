@@ -70,6 +70,7 @@ In development:
 - Fixed NW3201.WED file so Zokan is not semi-transparent in EE.
 - Fixed Rumors in all stores.
 - Some cosmetic resources fixes, removing unused resources, etc.
+- Remove many spells (manly cleric's from the mod). Some mage spells are still here.
 
 0.89 (09/28/2023)
 
