@@ -70,7 +70,9 @@ In development:
 - Fixed NW3201.WED file so Zokan is not semi-transparent in EE.
 - Fixed Rumors in all stores.
 - Some cosmetic resources fixes, removing unused resources, etc.
-- Remove many spells (manly cleric's from the mod). Some mage spells are still here.
+- Remove many spells (manly cleric's ones from the mod). Some spells are still there.
+- Renamed back random items (eg RNDTRE08.ITM), they should not have prefix.
+- Fixed scrit for NWSPID0, now it explodes with Fireball when die as intended.
 
 0.89 (09/28/2023)
 
