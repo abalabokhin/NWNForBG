@@ -1,4 +1,11 @@
 IF
+    Die()
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
 	HPPercentLT(Myself,30)
 	Global("Attack","LOCALS",0)
 	See(NearestEnemyOf(Myself))
