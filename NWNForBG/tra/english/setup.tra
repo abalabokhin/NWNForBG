@@ -5400,14 +5400,14 @@ Usable By:
 @103883 = ~Monster Summoning IV
 (Conjuration/Summoning)
 
-Level: 9
+Level: 8
 Range: 120 ft.
 Duration: 13 rounds
 Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell summons 7 HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. These monster(s) appear within spell range and attack the caster's opponents until the spell duration expires or until they are slain. The monster could be a Vampiric Wolf, an Umber Hulk or a Githyanki?~
+This spell summons 7 HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. These monster(s) appear within spell range and attack the caster's opponents until the spell duration expires or until they are slain. The monster could be a Vampiric Wolf, an Umber Hulk or a Githyanki.~
 @103884 = ~Darkness Bringer +3~
 @103885 = ~Once owned by the Dragonlord Verminard, Darkness Bringer was a terrible weapon of evil. Created by the priests of the Queen of Darkness, it blinds everyone it strikes. Paladins struck by this weapon die immediately, rangers must make a saving throw against death or they will die too.
 
@@ -5438,31 +5438,81 @@ Not Usable By:
 @103899 = ~Big Troll~
 @103900 = ~Cave troll~
 @103960 = ~Fog~
-@103974 = ~NP: Symbol, Pain~ /*Player Tokens*/
-@103975 = ~NP: Glyph, Pain (Summon/Summon) Level: 7 Sphere: Guard Range: Caster's vision Duration: 11 turns Cast Time: 3 Area of Effect: 30 ft. Radius Saving Throw: Negates All creatures within 30 feet of Glyph of Pain must make a saving throw vs. spell. If they fail their saving throw, they suffer severe pain and suffer a -4 penalty to attack rolls, and their Dexterity and Defense Rating are reduced by 2.~ /*Type of Feat: GeneralPrerequisite: Int 13+, Expertise.
-Specifics: A character with this feat can make defensive attacks, gaining a +10 bonus to AC but receiving a -10 penalty to attack rolls.
-Use: Combat Mode.*/
-@103976 = ~NP: Agility and defense class reduced~ /*Spell Resistance Decreased*/
-@103979 = ~NP: Staff of Venonokan~ /*Staff of Valmaxian*/
-@103984 = ~NP: Thinker Chotoga~ /*Give Gold*/
-@103986 = ~NP: This rare helmet owes its existence to a single orc, warrior and mage. The amazing story of Chotoga began when his village was accidentally destroyed in a battle between two factions of wizards. One of the winners, the sorcerer Shandellon, felt pangs of conscience when he saw the affected village, and in order to atone for his guilt, he took the only survivor with him and raised the young orc as his own son. Under the guidance of Chandellon, Chothog began to master magic, despite his origins. However, Chotog had to put in a lot more effort than the people who studied under Chandellon, and he achieved less. The orc became jealous and locked himself in his room for several days, working without rest on a subject that would allow him to surpass other students. The fruit of his labors was a helmet, rather ugly, but with a striking property to significantly increase the wearer's intelligence. Chothog immediately put on his treasure. However, he soon discovered that ignorance is the best gift for a jealous orc whose existence is so miserable. Chandellon found the charred remains of his adopted son, all wearing a now blackened helmet, next to a short note: &quot;Some ideas are best left unexecuted.&quot; Thinker Chotoga increases the wearer's Intellect by 2 and grants a +1 bonus to defense class. However, this Ork-style helmet is therefore heavy and ugly. Thus, it reduces Charisma by 2, and to wear it requires a Strength of at least 17. PARAMETERS: Equipment features: - Protection class: +1 - Intelligence: +2 - Charisma: -2 - Protects from critical hits Required: Strength 17~ /*The book is a small journal of sorts that does not appear to have been in use for long. The entries appear to have been made by Lady Aribeth. Of particular note is the last:
-"Maugrim has assigned me quarters with the other ambassadors, though I don't know for how long. He tells me only that he serves a greater power, and hints that I will come to revere this being far more than I ever did Tyr.
+@103974 = ~Symbol, Pain~
+@103975 = ~Symbol, Pain
 
-"I do not know if that is true. I am not sure of anything anymore except that I have Fallen. Fallen out of love with my lord, my people and my God. I am alone in a world where there is no justice and no hope and I cannot... I cannot get these thoughts out of my mind.
+(Conjuration/Summoning)
 
-"They burn my every waking moment and whisper to me in my dreams. I shall go mad, I think, if I am not mad already. To do the wrong thing seems far better, however, than to do nothing at all. I am on this path now, and it goes only forward... perhaps at its end I shall find my own justice and the dreams will stop.
+Level: 7
+Sphere: Protection
+Range: Visual range of the caster
+Duration: 11 turns
+Casting Time: 3
+Area of Effect: 30-ft. radius
+Saving Throw: Negates
 
-"I can only hope."*/
-@103987 = ~NP: Ring of Great Resilience~ /*Ring of Invisibility*/
-@103988 = ~NP: The first mention of this ring can be found in the vaults of ancient manuscripts. According to fragmentary data, which often contradict each other, this ring was created by the mysterious Order of Forest Shamans - Shimizu. The ring belonged to the Supreme Shaman and passed from hand to hand to male heirs until it mysteriously disappeared several hundred years ago. STATS: Equipped: +2 Defense Class +25 Crush Resistance +3 Spell Saving Throws Everyone Uses~ /*Once a personal "interrogation tool" of Rimardo Domine, an Overwizard of Luskan's Host Tower of the Arcane, these flexible leather gloves have since been circulated among powerful members of the pirate community.  
-The gloves are covered with small copper rivets.  The wearer may use the gloves to throw a sharp electric jolt at a nearby target.*/
-@103995 = ~NP: Hammer~ /*Hammers*/
-@104011 = ~NP: Shocking Flail +4~ /*Short Sword +4*/
-@104012 = ~NP: A flail is a hard wooden stick attached to an iron rod, a spiked wooden rod, or a spiked iron ball. Between them is either a hinge or a chain. The weapon was originally used as a tool for threshing grain. PARAMETERS: When equipped: +1 to the class of protection Combat abilities: 50% chance to deal +2D3 points of electrical damage 20% chance to stun the enemy THAC0: +4 Damage: 1D6 +5 Damage type: bludgeoning Weight: 15 Speed factor: 7 Weapon skill: Flail/Morgenstern Type: 1-Hand Cannot Use: Druid Mage Thief~ /*The first example of this bejeweled item was created for ceremonial décor, and was never intended to see use. Experiments showed, however, that the weapon instilled great fear in its targets by releasing energy from the strange ruby used in its construction. The crossbow and the assistant who supplied the gem both disappeared soon after, and the weapon has been replicated many times since.*/
-@104027 = ~NP: Harpy moan~ /*Recommended*/
-@104039 = ~NP: death knell~ /*Dirge*/
-@104040 = ~NP: Time Trap~
-@104041 = ~NP: Time Trap detected and disarmed~
+All creatures within 30 feet of the Symbol, Pain must save vs. spell. If they fail the saving throw, they suffer terrible pain and take a -4 penalty to attack rolls, and their Dexterity and Armor Class are reduced by 2.~.
+@103976 = ~Dexterity and Armor Class are reduced~
+@103979 = ~Venonokan's Staff~
+@103984 = ~Chotog's Thinker~
+@103986 = ~This rare helmet owes its existence to a single orc, warrior and mage.
+
+Chotog's amazing story began when his village was accidentally destroyed in a battle between two factions of wizards. One of the victors, the sorcerer-mage Shandellon, felt a twinge of conscience when he saw the damaged village, and to redeem himself, he took the sole survivor with him and raised the young orc as his own son.
+
+Under Shandellon's guidance, Chotog began to master magic despite his origins. However, Chotog had to put in much more effort than the people who learned from Shandellon, and he achieved less. The orc became jealous, and locked himself in his room for days, working without rest on a subject that would allow him to surpass the other students.
+
+The fruit of his labors was a helmet, rather ugly, but with the remarkable property of greatly increasing the intelligence of the wearer. Chotog immediately put on his treasure. He soon discovered, however, that ignorance is the best gift for an envious orc whose existence is so pathetic. Shandellon found the charred remains of his adopted son, all in his helmet, now blackened, next to a short note: "Some ideas are best left unrealized."
+
+Chotog's Thinker increases the wearer's Intelligence by 2 and grants a +1 bonus to Armor Class. However, this helmet is orc-modeled and therefore heavy and ugly. Thus, it reduces Charisma by 2 and requires a Strength of at least 17 to wear.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Intelligence: +2
+- Charisma: -2
+- Protects against critical hits
+
+Requirements: 17 Strength~
+@103987 = ~Ring of Great Resilience~
+@103988 = ~The first mention of this ring can be found in the vaults of ancient manuscripts. According to fragmentary data, which often contradict each other this ring was created by the mysterious Order of Forest Shamans - Shimizu. The ring belonged to the Supreme Shaman and was passed from hand to hand to male heirs until it mysteriously disappeared several hundred years ago.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Resistance to crushing damage: +25%
+- Saving Throws vs. Spell: +3~
+@103995 = ~Hammer~
+@104011 = ~Shocking Flail +4~
+@104012 = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+
+Combat abilities:
+- 50% chance to deal 2d3 additional eletric damage
+- 20% chance per hit to stun a target
+
+THAC0: +4
+Damage: 1d6+5
+Damage Type: crushing
+Weight: 15
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requirements: 13 Strength
+
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+@104027 = ~Harpy's moan~
+@104039 = ~Funeral bell~
+@104040 = ~Time Trap~
+@104041 = ~Time Trap detected and disarmed~
 @104042 = ~~ [NWBRAZIE]
 @104043 = ~Hail and well-met.~ [NWARI_HI]
 @104045 = ~Fear the justice to come!~ [NWARIBA2]
@@ -5472,7 +5522,7 @@ The gloves are covered with small copper rivets.  The wearer may use the gloves 
 @104049 = ~~ [NWARIAT2]
 @104050 = ~~ [NWARIHI1]
 @104051 = ~~ [NWARIDED]
-@104052 = ~NP: Soldier of the Black Daggers~ /*Black Knives Customer*/
+@104052 = ~Black Knives Soldier~
 @104053 = ~Black Knives Archer~
 @104054 = ~~ [NWMRC01A]
 @104055 = ~~ [NWMRC01B]
@@ -5487,9 +5537,9 @@ The gloves are covered with small copper rivets.  The wearer may use the gloves 
 @104064 = ~~ [NWBODDA1]
 @104065 = ~~ [NWBODDA2]
 @104066 = ~~ [NWBODDA3]
-@104067 = ~NP: Boddhit3~ /*&Edit*/
-@104068 = ~NP: Bodddead~ /*Bracie*/
-@104069 = ~NP: Bodddyin~ /*Bracie*/
+@104067 = ~Boddhit3~
+@104068 = ~Bodddead~
+@104069 = ~Bodddyin~
 @104070 = ~You require some assistance?~ [NWBODDST]
 @104071 = ~Hold on a minute.~ [NWBODDSP]
 @104072 = ~That would be correct.~ [NWBODDYS]
@@ -5500,7 +5550,7 @@ The gloves are covered with small copper rivets.  The wearer may use the gloves 
 @104077 = ~Obviously you overestimate the weight I can manage.~ [NWBODDEM]
 @104078 = ~Silence seems to be the best option in this case.~ [NWBODDHE]
 @104079 = ~My spell - failed? But I did everything right!~ [NWBODDSL]
-@104080 = ~NP: Boddinock Glinkle is a dwarf sorcerer from the island of Lantan. The Lantanans are a people guided by the analytical principles of science: observation, common sense, and logic. Boddinoq left his home some time ago to explore the outside world. It is common for the inhabitants of Lantan to undertake such journeys. He was exploring the northern part of the Sword Coast when he heard the echoes of rumors of a previously unknown plague spreading across Neverwinter. In the name of scientific research, Boddinock came to investigate and describe this new disease.~ /*I was exploring the northern Sword Coast when I heard rumblings of a previously unknown plague breaking out in Neverwinter. In the name of scientific discovery I came to investigate and catalog the new illness.*/
+@104080 = ~Boddyknock Glinckle is a gnomish sorcerer from the island of Lantan. Lantanese are a people guided by the analytical principles of science: observation, reason and logic. It is common for the people of Lanthan to undertake such journeys. He was exploring the northern part of the Sword Coast when he heard echoes of rumors of a previously unknown epidemic spreading in Neverwinter. In the name of scientific research, Boddinok came to investigate and describe this new disease.~
 @104081 = ~~
 @104082 = ~~ [NWTCM02A]
 @104083 = ~~ [NWTCM03]
@@ -5529,7 +5579,7 @@ The gloves are covered with small copper rivets.  The wearer may use the gloves 
 @104106 = ~~ [MINDF03]
 @104107 = ~~ [MINDF06]
 @104108 = ~~ [MINDF07]
-@104109 = ~NP: Oooh, we got somebody new in town, huh?~ [NWTSCF01] /*Me want to know about city areas.*/
+@104109 = ~Oooh, we got someone new in town, huh?~ [NWTSCF01]
 @104110 = ~~ [NWMRC01A]
 @104111 = ~~ [NWMRC01B]
 @104112 = ~~ [NWMRC03]
@@ -5570,7 +5620,7 @@ NOTE: If your henchman ever dies, a special Recall spell will transport them bac
 @104150 = ~~ [NWDESAT3]
 @104151 = ~~ [NWDESHI2]
 @104152 = ~~ [NWDESDED]
-@104153 = ~NP: Dog~ /*Dog*/
+@104153 = ~Dog~
 @104154 = ~~ [NWMAL03B]
 @104155 = ~NP: Mother Nature feeds me to fight for her!~ [CEFALD01] /*What? Me here to rescue you!*/
 @104156 = ~NP: Come and die!~ [CEFALD03] /*To the death, then!*/
