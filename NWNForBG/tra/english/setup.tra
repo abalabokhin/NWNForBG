@@ -5606,8 +5606,7 @@ Not Usable By:
 @104133 = ~My attack is... useless?~ [NWDAELIF]
 @104134 = ~Am I a pack mule?~ [NWDAELEM]
 @104135 = ~Fool! My spell is wasted!~ [NWDAELSL]
-@104136 = ~NP: Daelan the Red Tiger, a noble warrior from the tribes of Uthgardt. His father was an Orc and his mother was an Utgard from the Red Tiger tribe. He doesn't know anything about his father; Daelan's mother never told her son about him, however, Daelan heard rumors that his father was a wild beast and raped Daelan's mother during a raid. Daelan was raised by the Red Tiger tribe in the spirit of the customs and traditions of the people of Utgardt. Utgardts are great warriors and hunters, they roam after the herds and feed on what the land gives. Orcs are the most hated enemies of the Utgardt tribe, so the tribe could accept Daelan, he was a living reminder of their worst enemy. After the death of his mother, the tribe expelled Daelan, but they did not just throw him into the snow. They gave Daelan food and weapons before sending him to the outside world to prove his prowess. Since then, Daelan has been striving to prove in any way that he is a great warrior and worthy of being a full member of the tribe.~ /*Daelan Red Tiger, a noble barbarian of the Uthgardt tribes, has joined his mighty axe to your cause. His ferocity and prowess in melee combat will be helpful in the many battles you are sure to face. Daelen can also use his great strength to try and bash open any chests or locked doors you might come across.
-NOTE: If your henchman ever dies, a special Recall spell will transport them back to the Temple of Tyr. You can use your Stone of Recall to return to the temple and retrieve your fully healed henchman. Also, your henchman will always be one level lower than you and will level up when you do.*/
+@104136 = ~Daelan Red Tiger is a noble warrior from the Uthgardt tribes of the north. His father was an orc and his mother was an Uthgardt of the Red Tiger tribe. He never knew his father - his mother never spoke of him. However, Daelan heard rumors that his father was a vile beast who forced himself on his mother during a raid. Daelan was raised by his mother among the Red Tiger tribe in the customs and traditions of the Uthgardt people. Uthgardts are tribal hunters and warriors who live off the land. The orcs are his tribe's most hated enemies, so they accepted him but he was a living reminder of their worst foe. After the death of his mother, his tribe cast him out, but it is not as if they abandoned him in the cold. They gave him food and weapons before they sent him out into the world to prove himself. Once he can show the spirit of the Uthgardt is pure within him the Red Tiger tribe will welcome him back.~
 @104137 = ~~ [NWDMM01A]
 @104138 = ~~ [NWDMM01B]
 @104139 = ~~ [NWDMM03]
@@ -5622,11 +5621,11 @@ NOTE: If your henchman ever dies, a special Recall spell will transport them bac
 @104152 = ~~ [NWDESDED]
 @104153 = ~Dog~
 @104154 = ~~ [NWMAL03B]
-@104155 = ~NP: Mother Nature feeds me to fight for her!~ [CEFALD01] /*What? Me here to rescue you!*/
-@104156 = ~NP: Come and die!~ [CEFALD03] /*To the death, then!*/
-@104157 = ~NP: Your miserable existence will end here!~ [CEFALD04] /*Your pathetic life ends here!*/
-@104158 = ~NP: Mother! I am begging you! Help! No-no!~ [CEFALD06] /*Ahh! Help me! Help me!*/
-@104159 = ~NP: You will fall here!~ [NWSHAE03] /*She still here?*/
+@104155 = ~Mother Nature nourishes me to fight for her!~ [CEFALD01]
+@104156 = ~Come and die!~ [CEFALD03]
+@104157 = ~Your miserable existence will end here!~ [CEFALD04]
+@104158 = ~Mother! I beg you! Help! Noooooo!~ [CEFALD06]
+@104159 = ~You will fall here!~ [NWSHAE03]
 @104160 = ~~ [NWSHAE05]
 @104161 = ~~ [NWSHAE06]
 @104162 = ~~ [NWSHAE04]
