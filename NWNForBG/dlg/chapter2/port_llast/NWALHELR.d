@@ -170,7 +170,7 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 18.1
   SAY @43
-  IF ~~ THEN DO ~GiveItemCreate("NWELTOOH",LastTalkedToBy(Myself),1,0,0)SetGlobal("SPRITE_IS_DEADALHELOR","GLOBAL",1)ReputationInc(-2)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("NWELTOOH",LastTalkedToBy(Myself),1,0,0)SetGlobal("SPRITE_IS_DEADALHELOR1","GLOBAL",1)ReputationInc(-2)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 18.2

@@ -116,7 +116,7 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 15.1
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADBRUN","GLOBAL",0)
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWBRUN","GLOBAL",0)
 SetGlobal("Dialogue","LOCALS",2)GiveItem("NWBRUNRG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)EscapeAreaObject("Tran2300")~ EXIT
 END
 
@@ -130,7 +130,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 17.1
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADBRUN","GLOBAL",0)
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWBRUN","GLOBAL",0)
 SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWBRUNRG")IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)EscapeAreaObject("Tran2300")~ EXIT
 END
 

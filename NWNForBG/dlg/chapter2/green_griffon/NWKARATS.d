@@ -108,7 +108,7 @@ IF ~~ THEN BEGIN 14 // from: 13
   SAY @26
   IF ~~ THEN DO ~SetGlobal("NeurikQuest","GLOBAL",6)
 SetGlobal("Dialogue","LOCALS",2)
-SetGlobal("SPRITE_IS_DEADKARATHIS","GLOBAL",0)
+SetGlobal("SPRITE_IS_DEADNWKARATS","GLOBAL",0)
 GiveItem("NWJKARAI",LastTalkedToBy(Myself))
 EraseJournalEntry(@96025)~ UNSOLVED_JOURNAL @96864 EXIT
 END

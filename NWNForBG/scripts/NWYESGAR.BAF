@@ -2,7 +2,7 @@ IF
 	Global("Escape","LOCALS",1)
 THEN
 	RESPONSE #100
-		SetGlobal("SPRITE_IS_DEADYESGAR","GLOBAL",1)
+		SetGlobal("SPRITE_IS_DEADNWYESGAR","GLOBAL",1)
 		EscapeAreaObject("Door2200")
 END
 

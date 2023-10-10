@@ -538,7 +538,7 @@ END
 
 IF ~~ THEN BEGIN 88// from: 75.1
   SAY @148
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADSTIRGE","GLOBAL",1)GiveItem("NWEARBAD",LastTalkedToBy)SetGlobal("StirgeDestroy","MYAREA",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWSTIRGE","GLOBAL",1)GiveItem("NWEARBAD",LastTalkedToBy)SetGlobal("StirgeDestroy","MYAREA",1)~ EXIT
 END
 
 

@@ -95,7 +95,7 @@ END
 IF ~~ THEN BEGIN 13 // from: 11.1
   SAY @27
   IF ~~ THEN DO ~ClearAllActions()
-SetGlobal("SPRITE_IS_DEADSILVERBK","GLOBAL",0)
+SetGlobal("SPRITE_IS_DEADNWSILVEK","GLOBAL",0)
 SetGlobal("SilverbackTalk","GLOBAL",1)
 AddexperienceParty(18000)
 ApplySpell(Myself,RESTORE_FULL_HEALTH)~ EXIT

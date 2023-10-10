@@ -86,7 +86,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 12.1
   SAY @29
-  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("SPRITE_IS_DEADWYVERNB","GLOBAL",1)SetGlobal("Attack","LOCALS",2)GiveItem("NWEARBAD",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("SPRITE_IS_DEADNWWYVERB","GLOBAL",1)SetGlobal("Attack","LOCALS",2)GiveItem("NWEARBAD",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.2

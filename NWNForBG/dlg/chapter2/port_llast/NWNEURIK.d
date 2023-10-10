@@ -352,13 +352,13 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 25.2
   SAY @72
-  IF ~  !Dead("NWURT")!Dead("NWBRUN")!Dead("Get")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NeurikQuest","GLOBAL",4)
+  IF ~  !Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NeurikQuest","GLOBAL",4)
 TakePartyItem("NWURTRIG")
 TakePartyItem("NWBRUNRG")
 TakePartyItem("NWGETRIG")
 SetGlobal("UrtIsSaved","GLOBAL",1)
 AddexperienceParty(90000)~ GOTO 45
-  IF ~  OR(3)Dead("NWURT")Dead("NWBRUN")Dead("Get")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NeurikQuest","GLOBAL",4)
+  IF ~  OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NeurikQuest","GLOBAL",4)
 TakePartyItem("NWURTRIG")
 TakePartyItem("NWBRUNRG")
 TakePartyItem("NWGETRIG")
@@ -366,18 +366,18 @@ SetGlobal("UrtIsSaved","GLOBAL",1)
 AddexperienceParty(30000)~ GOTO 46
   IF ~  PartyHasItem("NWURTRIG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("NWURT")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 47
   IF ~  PartyHasItem("NWURTRIG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("NWURT")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 48
-  IF ~  PartyHasItem("NWURTRIG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("Get")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(90000)SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 49
-  IF ~  PartyHasItem("NWURTRIG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("Get")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(30000)SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 46
+  IF ~  PartyHasItem("NWURTRIG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(90000)SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 49
+  IF ~  PartyHasItem("NWURTRIG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(30000)SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 46
 //-------------------------------------
   IF ~  PartyHasItem("NWBRUNRG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("NWBRUN")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")~ GOTO 50
   IF ~  PartyHasItem("NWBRUNRG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("NWBRUN")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")~ GOTO 51
-  IF ~  PartyHasItem("NWBRUNRG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("Get")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(90000)~ GOTO 52
-  IF ~  PartyHasItem("NWBRUNRG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("Get")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(30000)~ GOTO 46
+  IF ~  PartyHasItem("NWBRUNRG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(90000)~ GOTO 52
+  IF ~  PartyHasItem("NWBRUNRG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(30000)~ GOTO 46
 //----------------------------------------
-  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("Get")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 53
-  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("Get")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 54
-  IF ~  PartyHasItem("NWGETRIG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("Get")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(90000)~ GOTO 55
-  IF ~  PartyHasItem("NWGETRIG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("Get")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(30000)~ GOTO 46
+  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 53
+  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 54
+  IF ~  PartyHasItem("NWGETRIG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(90000)~ GOTO 55
+  IF ~  PartyHasItem("NWGETRIG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(30000)~ GOTO 46
 END
 
 IF ~~ THEN BEGIN 45 // from: 34.1

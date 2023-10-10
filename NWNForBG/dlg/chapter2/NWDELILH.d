@@ -55,7 +55,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 7.1
   SAY @21
-  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("SPRITE_IS_DEADDELILAH","GLOBAL",1)SetGlobal("Attack","LOCALS",2)GiveItem("NWEARBAD",LastTalkedToBy)SetGlobal("DalilahTalk","LOCALS",2)ForceSpellRES("NWDELIL2",Myself)~ EXIT
+  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("SPRITE_IS_DEADNWDELILH","GLOBAL",1)SetGlobal("Attack","LOCALS",2)GiveItem("NWEARBAD",LastTalkedToBy)SetGlobal("DalilahTalk","LOCALS",2)ForceSpellRES("NWDELIL2",Myself)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.2

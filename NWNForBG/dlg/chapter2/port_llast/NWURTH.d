@@ -113,7 +113,7 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Dialogue","LOCALS",1)Global("UrthFraud","GLOBAL",0)~ THEN BEGIN 15 // from:
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADURT","GLOBAL",0)SetGlobal("Dialogue","LOCALS",2)GiveItem("NWURTRIG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWURT","GLOBAL",0)SetGlobal("Dialogue","LOCALS",2)GiveItem("NWURTRIG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)~ EXIT
 END
 
 // ---------------------------------
@@ -121,7 +121,7 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Dialogue","LOCALS",1)Global("UrthFraud","GLOBAL",1)~ THEN BEGIN 19 // from:
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADURT","GLOBAL",0)SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWURTRIG")IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWURT","GLOBAL",0)SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWURTRIG")IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)~ EXIT
 END
 
 // ---------------------------------

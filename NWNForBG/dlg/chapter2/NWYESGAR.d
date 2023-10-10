@@ -44,7 +44,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 5
   SAY @18
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADYESGAR","GLOBAL",1)GiveItem("NWEARBAD",LastTalkedToBy(Myself))GiveItem("NWYESGAK",LastTalkedToBy)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWYESGAR","GLOBAL",1)GiveItem("NWEARBAD",LastTalkedToBy(Myself))GiveItem("NWYESGAK",LastTalkedToBy)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.1 3.2
@@ -94,7 +94,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 10
   SAY @18
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADYESGAR","GLOBAL",1)GiveItem("NWYESGAK",LastTalkedToBy)GiveItem("NWEARBAD",LastTalkedToBy)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWYESGAR","GLOBAL",1)GiveItem("NWYESGAK",LastTalkedToBy)GiveItem("NWEARBAD",LastTalkedToBy)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 9.2

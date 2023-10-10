@@ -104,7 +104,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADSPIRITFO","GLOBAL",0)SetGlobal("SpiritSaved","GLOBAL",1)TakePartyItem("NWANTIDE")EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWSPIRIO","GLOBAL",0)SetGlobal("SpiritSaved","GLOBAL",1)TakePartyItem("NWANTIDE")EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)~ UNSOLVED_JOURNAL @98275 EXIT
