@@ -5667,9 +5667,9 @@ Not Usable By:
 @104199 = ~~ [MINDF03]
 @104200 = ~~ [MINDF06]
 @104201 = ~~ [MINDF07]
-@104202 = ~NP: I hope you don't have any hostile intentions.~ [SOLM04] /*I hope this story has a point to it.*/
-@104203 = ~NP: Take it easy, citizen.~ [SOLM03] /*Quiet, Deekin.*/
-@104204 = ~NP: Name yourself!~ [SOLM01] /*On your way.*/
+@104202 = ~I hope you don't have any animosity.~ [SOLM04]
+@104203 = ~Take it easy, citizen.~ [SOLM03]
+@104204 = ~Name yourself!~ [SOLM01]
 @104205 = ~Don't bother me.~ [SOLM02]
 @104206 = ~~ [NWGBB03A]
 @104207 = ~Welcome, friend.~ [NWGRIMHI]
@@ -5696,7 +5696,7 @@ Not Usable By:
 @104228 = ~I am overburdened.~ [NWGRIMEM]
 @104229 = ~Be still as the Silent Lord himself.~ [NWGRIMHE]
 @104230 = ~My spell has failed!~ [NWGRIMSL]
-@104231 = ~NP: Grimgnau, a dwarven priest of the Order of the Dying Death spent several years in the Hall of Mithril in the service of Bruenor the Hammer, but was cast out by his kind because of his strange tendencies. After the battles, he went to wander among the scattered bodies, enchanted... by the truth... of their deaths. In the end, he left the Hall of Mithril in search of... something, and found the Order of Dying Death. Many find members of the Order unpleasant, as they welcome Death in all its manifestations. Grimgnau is a follower of torment and a messenger of Death, the Silent Lord, who appreciates the beauty and perfection of death with a passion that others often lack. Members of the Order of Protracted Death bring pain, torture and anguish to the inhabitants of this world in order to prepare them for release by death. They sow destruction, they seek destruction, devastation and annihilation. The monks and priests of the order worship Death.~ /*The portal within the Netherese ruin has been reached, but not before J'Nah's mistress was able to activate it and vanish. Drogan arrived shortly afterwards and brought with him news of the cowled woman's identity: she is a sorceress named Heurodis, her past shrouded in secrecy until only recently, and should she acquire the power she seeks in whatever place the portal led to she will become all but unstoppable. Heurodis must be followed and prevented from achieving her goal. Drogan will attempt to attune the portal to the same place that the sorceress went to, but some means of activating it must still be found here in the ruin.*/
+@104231 = ~Grimgnaw, a dwarven priest of the Order of Long Death spent several years at Mithral Hall in the service of Bruenor Battlehammer, but was banished by his kin because of his strange tendencies. After the battles he would walk among the scattered corpses, fascinated by the... truth... of their deaths. In the end, he left Mithral Hall in search of... something and found the Order of the Long Death. Many find the members of his Order unsettling, for them embrace Death in all its incarnations. Grimgnau is a disciple of torment and a messenger of Death, the Silent Lord, he embraces the beauty and perfection of his enemy's death with a zeal others often lack. Members of the Order of Long Death bring pain, torment and anguish to the denizens of this world to prepare them for the release of death. The monks and priests of the order worship Death.~
 @104232 = ~~ [IMPPP06]
 @104233 = ~~ [IMPPP07]
 @104234 = ~~ [NWHOO09A]
@@ -5705,12 +5705,12 @@ Not Usable By:
 @104237 = ~~ [NWHOO04B]
 @104238 = ~~ [NWHOO08A]
 @104239 = ~~ [NWHOO10A]
-@104240 = ~NP: And you seem to need it.~ [PEASF01] /*It seems that way.*/
+@104240 = ~You seem like the right person.~ [PEASF01]
 @104241 = ~Someone help me here!~ [PEASF09]
 @104242 = ~~ [NWTUM07]
 @104243 = ~~ [NWTUM09]
-@104244 = ~NP: Great unpredictable monster~ /*Greater Magic Weapon*/
-@104245 = ~NP: Powerful Unpredictable Monstrous Attack~ /*Strong Frost Trap*/
+@104244 = ~Great Unpredictable Monster~
+@104245 = ~Great Unpredictable Monstrous Attack~
 @104246 = ~~ [TANAR03]
 @104247 = ~~ [TANAR02]
 @104248 = ~~ [TANAR01]
@@ -5718,7 +5718,7 @@ Not Usable By:
 @104250 = ~~ [TANAR07]
 @104251 = ~~ [TANAR04]
 @104252 = ~~ [TANAR05]
-@104253 = ~NP: I will bury you all!~ [NWGWER01] /*I will bury you!*/
+@104253 = ~I will bury you all!~ [NWGWER01]
 @104254 = ~~ [NWGWER03]
 @104255 = ~~ [NWGWER04]
 @104256 = ~~ [NWGWER05]
@@ -5753,12 +5753,11 @@ Not Usable By:
 @104285 = ~I'm all done here.~ [NWLINADE]
 @104286 = ~My weapon just bounces right off.~ [NWLINAIF]
 @104287 = ~Either my arms have suddenly lost strength, or I'm carrying too much.~ [NWLINAEM]
-@104288 = ~NP: Linu La'neral, a priest serving the Sehanine Moonbow, came to Neverwinter from her native Everesca, believing that she could resist the onslaught of the plague with the powers of the Sehanine. Her parents were both mages and worshipers of the god Corellon. When Lina grew up a little, she was sent to the magical &quot;School of Gifts&quot; Gaedolin Sentristi, suggesting that she would follow in the footsteps of her parents in the study of magic. But by chance, her fate was sealed with Sekhanin's faith. The fact is that Lina was constantly haunted by misfortunes, and when she once again got into trouble, she was saved by Sehanin Moonbow herself. She smiled and kissed Lina on the forehead. &quot;My child,&quot; she said, &quot;you have gone beyond the bounds of luck.&quot; Green light enveloped her body, she stepped back and disappeared. Subsequently, Lina learned about the true reason for such attention of the goddess to her person, it turns out that Sehanin had high hopes for Lina in fulfilling a very important mission. Sehanin thinks that perhaps one day an elven priestess will bring a volcanic oak seed to Evereska as a symbol of the rebirth of the elven people, and that priestess will be Lina La'neral.~ /*It was a fairly straight-forward test. All you had to do was run to the top of the hill and grab an item on a pedestal, then return it to Drogan. It was the twenty heavily-muscled orcs waiting to knock you back down the hill, and the strap that held your hands behind your back that gave the task its difficulty.The first few were easy enough to dodge around, but they got closer and closer together until it was only your bullheaded determination that kept you on your feet.
-When the assignment was completed, your body was sore, but the red scale was dropped from your mouth into Drogan's waiting hands. After cutting the strap around your arms, Drogan explained that the scale had the magical ability to increase your discipline for a short time during battle, but only one time each day. It was a suitable reward for a grueling task.*/
+@104288 = ~Linu La'neral is an elven cleric (of Sehanine Moonbow) from Evereska who is constantly finding herself in awkward situations. She is kind, but her self-consciousness causes her to lose the grace of her race and descend into clumsiness at times, which only serves to make her more self-conscious. This, combined with her awful luck and uncanny timing leads many people to ask her to please help somewhere else. She came to Neverwinter from her native Evereska, believing she could resist the onslaught of the plague with the help of Sehanin's powers.~
 @104289 = ~~ [NWTUM01]
 @104290 = ~~ [NWTUM02]
 @104291 = ~~ [NWTUM03]
-@104292 = ~NP: I think I could give you a hand, but then you have to wash it.~ [NOBMA01] /*I suppose I could help you if the price were right.*/
+@104292 = ~I suppose I could give you my hand, but I'd have to wash it later.~ [NOBMA01]
 @104293 = ~~ [NWMIN01]
 @104294 = ~~ [NWMIN02]
 @104295 = ~~ [NWMIN09]
