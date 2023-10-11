@@ -321,12 +321,12 @@ END
 
 IF ~~ THEN BEGIN 115 // from: 114.1
   SAY @111
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)TakePartyItem("Nwmisc30")DestroyItem("Nwmisc30")GiveItemCreate("NWAMULI1",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)DestroyItem("Nwmisc30")TakePartyItem("Nwmisc30")DestroyItem("Nwmisc30")GiveItemCreate("NWAMULI1",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 116 // from: 114.2
   SAY @112
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)TakePartyItem("Nwmisc30")DestroyItem("Nwmisc30")GiveItemCreate("NWAMULI1",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)DestroyItem("Nwmisc30")TakePartyItem("Nwmisc30")DestroyItem("Nwmisc30")GiveItemCreate("NWAMULI1",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 117 // from: 84.1
@@ -533,22 +533,22 @@ END
 
 IF ~~ THEN BEGIN 152 // from: 149.1
   SAY @175
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")GiveItemCreate("NWAMULI2",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)DestroyItem("Nwmisc32")TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")GiveItemCreate("NWAMULI2",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 153 // from: 149.2
   SAY @176
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")TakePartyItem("NWAMULI1")DestroyItem("NWAMULI1")GiveItemCreate("NWAMULI2",Player1,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)DestroyItem("Nwmisc32")TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")DestroyItem("NWAMULI1")TakePartyItem("NWAMULI1")DestroyItem("NWAMULI1")GiveItemCreate("NWAMULI2",Player1,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 154 // from: 149.3
   SAY @177
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")TakePartyItem("NWAMULI1")DestroyItem("NWAMULI1")GiveItemCreate("NWAMULI2",Player1,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)DestroyItem("Nwmisc32")TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")DestroyItem("NWAMULI1")TakePartyItem("NWAMULI1")DestroyItem("NWAMULI1")GiveItemCreate("NWAMULI2",Player1,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 155 // from: 149.4
   SAY @178
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")GiveItemCreate("NWAMULI2",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWLINA",100000)DestroyItem("Nwmisc32")TakePartyItem("Nwmisc32")DestroyItem("Nwmisc32")GiveItemCreate("NWAMULI2",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 156 // from: 148.1
@@ -871,13 +871,13 @@ END
 IF ~~ THEN BEGIN 214 // from: 211.1
   SAY @284
   IF ~~ THEN DO ~SetGlobal("LinaQuest3","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWLINA",150000)TakePartyItem("Nwmisc33")DestroyItem("Nwmisc33")TakePartyItem("NWAMULI2")DestroyItem("NWAMULI2")GiveItemCreate("NWAMULI3",Player1,0,0,0)~ EXIT
+AddexperienceParty(60000)AddXPObject("NWLINA",150000)DestroyItem("Nwmisc33")TakePartyItem("Nwmisc33")DestroyItem("Nwmisc33")DestroyItem("NWAMULI2")TakePartyItem("NWAMULI2")DestroyItem("NWAMULI2")GiveItemCreate("NWAMULI3",Player1,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 215 // from: 211.2
   SAY @285
   IF ~~ THEN DO ~SetGlobal("LinaQuest3","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWLINA",150000)TakePartyItem("Nwmisc33")DestroyItem("Nwmisc33")GiveItemCreate("NWAMULI3",Player1,1,1,1)~ EXIT
+AddexperienceParty(60000)AddXPObject("NWLINA",150000)DestroyItem("Nwmisc33")TakePartyItem("Nwmisc33")DestroyItem("Nwmisc33")GiveItemCreate("NWAMULI3",Player1,1,1,1)~ EXIT
 END
 
 // --------------------------------

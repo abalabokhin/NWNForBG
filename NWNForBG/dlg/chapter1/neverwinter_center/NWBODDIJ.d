@@ -235,7 +235,7 @@ END
 IF ~~ THEN BEGIN 40 // from: 39.1
   SAY @78
   IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWBODDIK",100000)TakePartyItem("Nwmisc38")DestroyItem("Nwmisc38")GiveItemCreate("NWRINGB1",Player1,1,1,1)~ EXIT
+AddexperienceParty(60000)AddXPObject("NWBODDIK",100000)DestroyItem("Nwmisc38")TakePartyItem("Nwmisc38")DestroyItem("Nwmisc38")GiveItemCreate("NWRINGB1",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 41 // from: 39.2
@@ -508,13 +508,13 @@ END
 
 IF ~~ THEN BEGIN 89 // from: 88.1
   SAY @161
-  IF ~~THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWBODDIK",100000)TakePartyItem("Nwmisc39")DestroyItem("Nwmisc39")TakePartyItem("NWRINGB1")DestroyItem("NWRINGB1")GiveItemCreate("NWRINGB2",Player1,0,0,0)~ EXIT
+  IF ~~THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWBODDIK",100000)DestroyItem("Nwmisc39")TakePartyItem("Nwmisc39")DestroyItem("Nwmisc39")DestroyItem("NWRINGB1")TakePartyItem("NWRINGB1")DestroyItem("NWRINGB1")GiveItemCreate("NWRINGB2",Player1,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 90 // from: 88.2
   SAY @162
   IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWBODDIK",100000)TakePartyItem("Nwmisc39")DestroyItem("Nwmisc39")GiveItemCreate("NWRINGB2",Player1,1,1,1)~ EXIT
+AddexperienceParty(60000)AddXPObject("NWBODDIK",100000)DestroyItem("Nwmisc39")TakePartyItem("Nwmisc39")DestroyItem("Nwmisc39")GiveItemCreate("NWRINGB2",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 91 // from: 52.4
@@ -782,7 +782,7 @@ END
 IF ~~ THEN BEGIN 138 // from: 137
   SAY @246
   IF ~~ THEN DO ~SetGlobal("BoddinokQuest3","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWBODDIK",150000)TakePartyItem("Nwmisc40")DestroyItem("Nwmisc40")TakePartyItem("NWRINGB2")DestroyItem("NWRINGB2")GiveItemCreate("NWRINGB3",Player1,0,0,0)~ EXIT
+AddexperienceParty(60000)AddXPObject("NWBODDIK",150000)DestroyItem("Nwmisc40")TakePartyItem("Nwmisc40")DestroyItem("Nwmisc40")DestroyItem("NWRINGB2")TakePartyItem("NWRINGB2")DestroyItem("NWRINGB2")GiveItemCreate("NWRINGB3",Player1,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 139 // from: 99.4
