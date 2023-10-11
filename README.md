@@ -73,6 +73,8 @@ In development:
 - Remove many spells (manly cleric's ones from the mod). Some spells are still there.
 - Renamed back random items (eg RNDTRE08.ITM), they should not have prefix.
 - Fixed scrit for NWSPID0, now it explodes with Fireball when die as intended.
+- Fixed setting SPRITE\_IS\_DEAD... variable to use proper names (bug that appeared after adding prefixes).
+- Fixed Joinable NPCs really destroy their items after upgrade even if they have these items.
 
 0.89 (09/28/2023)
 
