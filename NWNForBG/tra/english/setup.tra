@@ -1932,7 +1932,7 @@ Not Usable By:
 
 STATISTICS:
 
-Knowledge: Raised by 10 points permanently
+Lore: Raised by 10 points permanently
 Special: The book is consumed upon use
 Usage: Place into quick item slot~
 @102601 = ~Composite Shortbow +1~
@@ -2628,7 +2628,7 @@ Not Usable By:
  Thief
  Monk~
 @102833 = ~Rune Hammer +4~
-@102834 = ~This unique war hammer is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted war hammer by adding some adamantite ore to it. The result is an war hummer with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this hammer can handle it much better than any other hammer.
+@102834 = ~This unique war hammer is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted war hammer by adding some adamantite ore to it. The result is an war hammer with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this hammer can handle it much better than any other hammer.
 
 STATISTICS:
 
@@ -4055,7 +4055,7 @@ What follows is a detailed description of the Crafting of Divine Potions.~
 
 STATISTICS:
 
-Knowledge: Raised by 5 points permanently
+Lore: Raised by 5 points permanently
 Special: The book is consumed upon use
 Usage: Place into quick item slot~
 @103409 = ~Luskan Store~
@@ -5757,40 +5757,51 @@ Not Usable By:
 @104312 = ~~ [NWABI01]
 @104313 = ~~ [NWABI02]
 @104314 = ~~ [NWABI03]
-@104315 = ~NP: Only guild members can climb this ladder.~ /*Only the party leader may perform this action.*/
+@104315 = ~Only guild members can climb this ladder.~
 @104316 = ~Wailing Death and the Waterdhavian creatures
 
 Disaster! The ritual to complete the cure for the Wailing Death has worked as planned, but Desther has proven to be a traitor and has stolen the result. He has fled through a magical portal while his False Helmites attacked, and Fenthick has followed. The reasons for this great deception are unknown, as are Fenthick's motivations in following Desther. Aribeth now strains to maintain the magical portal in the hopes that someone can follow the two, though there is little hope that this can come to a peaceful end.~
 @104317 = ~Wailing Death and the Waterdhavian creatures
 
 Victory, but at what cost! The city of Neverwinter has been saved and what citizens it still has have been spared the suffering of the Wailing Death. The traitor Desther has been burned him at the stake, Fenthick was hanged to appease the unruly mob. Lady Aribeth is in despair, to lose a loved one like this!~
-@104318 = ~NP: Brigan's house~ /*Drogan's House*/
-@104319 = ~NP: Helm's fortress~ /*Baram's Fortress*/
+@104318 = ~Bregan's house~
+@104319 = ~Helm's guardian~
 @104320 = ~I... I am beaten. There is no point in continuing this fight. You... you will want me alive, anyway.~
 @104321 = ~My fate is my own! Not Maugrim's! Not yours! Not the Old Ones!~
-@104322 = ~NP: This door is boarded up, the owners of the house use the next door.~ /*This door is barred from the other side.*/
-@104323 = ~NP: The zoo is closed at night. You need to wait until morning.~ /*Yes, it is. You should pull yourself together.*/
-@104324 = ~NP: You use the Plant Transition Scroll and the tree is transformed. It begins to glow from the inside, it is obvious that the animals from the zoo can now leave the city using the tree as a portal.~ /*Use the Transport via Plants scroll to transform the tree into a portal through which the animals in the zoo can escape when released.*/
-@104327 = ~NP: This web-covered bronze statue seems out of place. It was made by a master, but, apparently, was never finished.~ /*This handaxe has an enhancement bonus to attack and damage, but does not bear the mark of a specific craftsman.*/
-@104328 = ~NP: This strange substance looks exactly like molten metal, but on the surface it is completely immobile and not hot.~ /*This katana has an enhancement bonus to attack and damage, but does not bear the mark of a specific craftsman.*/
-@104329 = ~NP: Apparently, this room is a small but well-equipped alchemist's laboratory.~ /*That sound like nice knife. You makes one for Deekin, maybe?*/
+@104322 = ~This door is boarded up, the homeowners use the neighboring door.~
+@104323 = ~The zoo is closed at night. You need to wait until morning.~
+@104324 = ~You use the Transport via Plants scroll to transform the tree. It begins to glow from withing, aparrently the animals in the zoo can escape when released using the three as a portal.~
+@104327 = ~This cobweb-covered bronze statue seems completely out of place. It was made by a master craftsman, but apparently was never finished.~
+@104328 = ~This strange substance looks exactly like molten metal, but on the surface it is perfectly still and not red-hot.~
+@104329 = ~Apparently, this room is a small but well-equipped alchemist's laboratory.~
 @104330 = ~The candelabra's dim light does not make the bloodstained pages any more legible. Judging by the pictures and size of the font, it was a children's book...~
 @104331 = ~Bloodstained and desecrated, this statue of Lathander, god of the dawn, feels cold to the touch. It seems void of any divine presence.~
-@104332 = ~NP: The yuan-ti necromancer's magic keeps this door safe from breaking. To enter, you must find the key.~ /*Continuing on the road would lead you back into the desert, and you've nowhere to go.*/
-@104333 = ~NP: And why is it that you men are all so HEALTHY...~ [SWENC02] /*Like that should surprise me?*/
-@104334 = ~NP: Spell casting speed increased by 1~ /*spell resisted*/
+@104332 = ~Yuan-ti necromancer magic keeps this door safe from tampering. To enter, you must find the key.~
+@104334 = ~Casting speed improved by 1~
 @104335 = ~~ [_PSPID08]
 @104336 = ~~ [_PSPID09]
-@104337 = ~NP: This hammer, originally a blacksmith's tool, consists of a steel headband and a six-inch wooden handle. It is balanced to crush enemies' bones when thrown. And like any throwing weapon, it is not as effective in close combat. Additional enchantments placed on the hammer make it faster and more deadly. PARAMETERS: THAC0: +1 Damage: 1D4 + 2 (1D3 + 2 melee) Damage type: throwing (blunting) Weight: 2 Speed factor: 1 Skill type: hammers Type: 1-hand Requirements: strength 9 Unused: Druids Mages Thieves~ /*Type of Feat: DomainPrerequisite: Access to the Good domain.
-Specifics: 
-Turn Outsider: Able to turn outsiders as if they were undead.
-Bonus Spells: The cleric gains access to the following spells at the specified spell level: Stoneskin (4), Lesser Planar Binding (5).
-Use: Automatic.*/
+@104337 = ~A hammer, originally a blacksmith's tool, consists of a steel headband and a six-inch wooden handle. This one is balanced so that when thrown, it crushes enemies' bones. And like any throwing weapon, it is not as effective in close combat. Additional enchantments placed on the hammer make it faster and more deadly.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d4+2 (1d3 + 2 melee)
+Damage Type: Crushing
+Weight: 2
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requirements: 9 Strength
+
+Not Usable By:
+ Druid
+ Mage
+ Thief~
 @104338 = ~~ [NWMAL01A]
 @104339 = ~~ [NWMAL02A]
 @104340 = ~~ [NWTHS03]
-@104341 = ~NP: Your knowledge has increased by 5 points~ /*Increased Charisma By*/
-@104342 = ~NP: Your knowledge has increased by 10 points~ /*Increased Charisma By*/
+@104341 = ~Your Lore has increased by 5 points~
+@104342 = ~Your Lore has increased by 10 points~
 @104344 = ~This letter was found hidden away on the body of the cultist, carefully sealed. It is written in a fluid script and reads:
 "Support the High Captain as you see fit. Ensure that he believes he will be the one whom the cult supports to lead the coming war effort. Neverwinter is ripe for the plucking now that our plague has left them reeling... the High Captains should be delirious with greed just at the thought of it. With luck, we will soon have a host worthy enough to make the entire North tremble in fear.
 
@@ -5805,7 +5816,7 @@ Use: Automatic.*/
 @104352 = ~~ [NWDIS09]
 @104353 = ~Nyphithys~
 @104354 = ~This is an official-looking document describing the bearer as an ambassador from the far-off state of Mulhorand, allowing admittance into the Host Tower of Luskan. The document is affixed with the seal of the Arcane Brotherhood.~
-@104355 = ~NP: tombstone~ /*Coldstone*/
+@104355 = ~Headstone~
 @104356 = ~~ [SHAMB01]
 @104357 = ~~ [SHAMB02]
 @104358 = ~~ [SHAMB03]
@@ -5813,7 +5824,7 @@ Use: Automatic.*/
 @104360 = ~~ [SHAMB05]
 @104361 = ~~ [SHAMB06]
 @104362 = ~~ [SHAMB07]
-@104363 = ~NP: Acquired Special Ability: Transform into Wererat~ /*Polymorph Troll Properties*/
+@104363 = ~Transform into Wererat ability have been added to your Special Abilities menu~
 @104364 = ~~ [NWTCF01A]
 @104365 = ~~ [NWTCF01B]
 @104366 = ~~ [NWTUF03]
@@ -5843,8 +5854,8 @@ Use: Automatic.*/
 @104390 = ~What's that?~ [NWSHARLK]
 @104391 = ~In the shadows...~ [NWSHARHE]
 @104392 = ~I can't get my spell off!~ [NWSHARSL]
-@104393 = ~NP: Look out! The trap is set.~ [NWSHARW0] /*Connected to server.*/
-@104394 = ~NP: Sherwin is a bard from Neverwinter, an adventurer and fun seeker. Sherwin's mother was an adventurer, after the birth of her daughter she married a wealthy aristocrat, but because of her addiction to luxury, he lost all his fortune and after his death left his wife and daughter only debts. In order not to give up the rich life to which she was already accustomed, the mother decided to arrange an advantageous marriage for her daughter. But her plans were not destined to come true, because Sherwin fell in love with the poor bard and ran away with him. For several years they traveled together, and Sherwin studied spells and bardic art. Sherwin returned to Neverwinter only many years later to save her hometown from a plague. She found her mother working as a seamstress, living in poverty and dying of bone disease. She blamed her daughter for all her misfortunes. However, Sherwin found a way to heal her mother and get on the path to reconciliation.~ /*The portal within the Netherese ruin has been reached, but not before J'Nah's mistress was able to activate it and vanish. Drogan arrived shortly afterwards and brought with him news of the cowled woman's identity: she is a sorceress named Heurodis, her past shrouded in secrecy until only recently, and should she acquire the power she seeks in whatever place the portal led to she will become all but unstoppable. Heurodis must be followed and prevented from achieving her goal. Drogan will attempt to attune the portal to the same place that the sorceress went to, but some means of activating it must still be found here in the ruin.*/
+@104393 = ~You better watch it!~ [NWSHARW0]
+@104394 = ~Sherwyn is a bard from Neverwinter, an adventurer and merrymaker. Sherwyn's mother was an adventurer, who married a man of wealth after her daughter was born. Because of her spending too much money, the man lost his fortune and left his wife and daughter with only debts. NP: In order not to give up the rich life to which she was already accustomed, the mother decided to arrange an advantageous marriage for her daughter. But her plans were not destined to come true, because Sherwin fell in love with the poor bard and ran away with him. For several years they traveled together, and Sherwin studied spells and bardic art. Sherwin returned to Neverwinter only many years later to save her hometown from a plague. She found her mother working as a seamstress, living in poverty and dying of bone disease. She blamed her daughter for all her misfortunes. However, Sherwin found a way to heal her mother and get on the path to reconciliation.~ /*The portal within the Netherese ruin has been reached, but not before J'Nah's mistress was able to activate it and vanish. Drogan arrived shortly afterwards and brought with him news of the cowled woman's identity: she is a sorceress named Heurodis, her past shrouded in secrecy until only recently, and should she acquire the power she seeks in whatever place the portal led to she will become all but unstoppable. Heurodis must be followed and prevented from achieving her goal. Drogan will attempt to attune the portal to the same place that the sorceress went to, but some means of activating it must still be found here in the ruin.*/
 @104395 = ~Silverback~
 @104396 = ~~ [NWSKP01]
 @104397 = ~~ [NWSKP02]

@@ -4052,8 +4052,8 @@ COPY ~NWNForBG/cre/nwarena1.cre~ ~override~
 COPY ~NWNForBG/cre/nwarena3.cre~ ~override~
   SAY 0x8	@103226
   SAY 0xC	@103226
-  SAY 0xA4	@104333
-  SAY 0x10C	@104333
+  SAY 0xA4	#4866
+  SAY 0x10C	#4866
 
 COPY ~NWNForBG/cre/nwarena4.cre~ ~override~
   SAY 0x8	@103226
