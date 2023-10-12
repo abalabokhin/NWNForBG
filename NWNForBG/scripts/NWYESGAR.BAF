@@ -1,4 +1,11 @@
 IF
+    Die()
+THEN
+    RESPONSE #100
+    NoAction()
+END
+
+IF
 	Global("Escape","LOCALS",1)
 THEN
 	RESPONSE #100
