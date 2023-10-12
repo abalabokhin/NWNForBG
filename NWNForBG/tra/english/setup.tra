@@ -5738,7 +5738,6 @@ Not Usable By:
 @104289 = ~~ [NWTUM01]
 @104290 = ~~ [NWTUM02]
 @104291 = ~~ [NWTUM03]
-@104292 = ~I suppose I could give you my hand, but I'd have to wash it later.~ [NOBMA01]
 @104293 = ~~ [NWMIN01]
 @104294 = ~~ [NWMIN02]
 @104295 = ~~ [NWMIN09]
@@ -5748,11 +5747,8 @@ Not Usable By:
 @104299 = ~~ [NWMIN04]
 @104300 = ~~ [NWMIN08]
 @104301 = ~~ [NWMIN11]
-@104302 = ~NP: It's nice to see well-wishers in our difficult times.~ [NWYESL36] /*Fare you well in this difficult time.*/
-@104303 = ~If you must.~ [NWYESL18]
-@104304 = ~NP: Stay where you are, redneck.~ [NOBFE203] /*Aye, begone, churl.*/
-@104305 = ~NP: Monster! Terrible monster!~ [NOBFE209] /*Hold Monster*/
-@104306 = ~NP: Actually, it's below my dignity to communicate with you.~ [NOBFE204] /*This apparition does not appear to be able to interact with you.*/
+@104302 = ~A friendly face is a blessed sight in these times.~ [NWYESL36]
+@104303 = ~What e're ye need.~ [NWYESL18]
 @104307 = ~~ [NWABI01]
 @104308 = ~~ [NWABI02]
 @104309 = ~~ [NWABI04]
@@ -5801,8 +5797,6 @@ Use: Automatic.*/
 "Do this well and your place in the coming order will be assured.
 
 "-- Maugrim"~
-@104345 = ~NP: I don't have much time, so keep it short.~ [NOBMA03] /*I don't have time for your nonsense.*/
-@104346 = ~NP: I... I have to run.~ [NOBMA09] /*Me got to go now.*/
 @104347 = ~~ [NWDIS01A]
 @104348 = ~~ [NWDIS01B]
 @104349 = ~~ [NWDIS01C]

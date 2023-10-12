@@ -3710,8 +3710,8 @@ COPY ~NWNForBG/cre/NWMCUST1.cre~ ~override~
 COPY ~NWNForBG/cre/NWMCUST2.cre~ ~override~
   SAY 0x8	@103033
   SAY 0xC	@103033
-  SAY 0xA4	@104292
-  SAY 0x10C	@104292
+  SAY 0xA4	#61833
+  SAY 0x10C	#61833
 
 COPY ~NWNForBG/cre/NWMCUST3.cre~ ~override~
   SAY 0x8	@103033
@@ -3963,10 +3963,10 @@ COPY ~NWNForBG/cre/NWN1400A.cre~ ~override~
 COPY ~NWNForBG/cre/NWN1400B.cre~ ~override~
   SAY 0x8	@103086
   SAY 0xC	@103086
-  SAY 0xA4	@104304
-  SAY 0xB8	@104305
-  SAY 0x10C	@104304
-  SAY 0x110	@104306
+  SAY 0xA4	#61652
+  SAY 0xB8	#61658
+  SAY 0x10C	#61652
+  SAY 0x110	#61653
 
 COPY ~NWNForBG/cre/NWN1400C.cre~ ~override~
   SAY 0x8	@103086
@@ -4370,9 +4370,9 @@ COPY ~NWNForBG/cre/nwnanny.cre~ ~override~
 COPY ~NWNForBG/cre/nwnobm1.cre~ ~override~
   SAY 0x8	@103086
   SAY 0xC	@103086
-  SAY 0xA4	@104345
-  SAY 0xB8	@104346
-  SAY 0x10C	@104345
+  SAY 0xA4	#61835
+  SAY 0xB8	#61841
+  SAY 0x10C	#61835
 
 COPY ~NWNForBG/cre/nwnobw1.cre~ ~override~
   SAY 0x8	@103527
