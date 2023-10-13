@@ -5908,26 +5908,31 @@ Requirements: 3 Strength~
 @104441 = ~~ [NWWRA07A]
 @104442 = ~~ [NWWRA09A]
 @104443 = ~~ [NWWRA04B]
-@104444 = ~NP: Raaaaaaaaaaaaaaaaaaaaa!!! You're driving me crazy! Must die!~ /*You face your death in me!*/
-@104445 = ~NP: Hmm... Come on, let's see what you can do in hand-to-hand combat!~ /*Come now. Let's see what you've got!*/
+@104444 = ~RRAAAAGGHHHHHH!!! You're driving me crazy! Must die!~
+@104445 = ~Hmm... Come on, let's see what you can do in hand-to-hand combat!~
 @104446 = ~~ [NWZMM07]
 @104447 = ~~ [NWZMM10]
 @104448 = ~Uhhnnn! Gulnan make us strong! Strong to kill!~
 @104449 = ~~ [NWZMM01]
 @104450 = ~~ [NWZMM02]
 @104451 = ~~ [NWZMM03]
-@104452 = ~NP: Shield spell dispelled~ /*Spell Countered*/
-@104453 = ~NP: Death Attack Attempt~ /*Death Attack*/
-@104454 = ~NP: Disability effect canceled~ /*Water Path Effect*/
-@104455 = ~NP: Leave the Ethereal Plane~ /*Leave Party*/
-@104456 = ~NP: Lost special abilities~ /*Assign Special Abilities*/
-@104458 = ~NP: Fairy dust~ /*Club +1*/
-@104459 = ~NP: Commonly worn by traveling healers, this leather pouch unfolds to allow the wearer to attach fragile potion vials to its padded base with multiple leather straps for secure storage while travelling. PARAMETERS: Capacity: 3000 bottles Weight: 2~ /*I don't normally do this but I like you, recruit. Here, take this gift for passing the test. Now you're ready to leave the Academy and face the world.*/
-@104460 = ~NP: Create Arrows~ /*Create Encounter*/
-@104461 = ~NP: Summon Elemental~ /*Summon Fiend*/
-@104462 = ~NP: Elemental Charm~ /*Charm Person*/
-@104463 = ~NP: Summon misty horror~ /*Summoned Ghoul*/
-@104464 = ~NP: Ice storm and blindness~ /*Ice palace, alcove*/
+@104452 = ~Spell Shield dispelled~
+@104453 = ~Death Attack Attempt~
+@104454 = ~Disability effect canceled~
+@104455 = ~Leave the Ethereal Plane~
+@104456 = ~Lost Special Abilities~
+@104458 = ~Fairy Dust~
+@104459 = ~Typically carried by traveling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.
+
+STATISTICS:
+
+Capacity: 3000 bottles
+Weight: 2~
+@104460 = ~Create Arrows~
+@104461 = ~Summon Elemental~
+@104462 = ~Charm Elemental~
+@104463 = ~Summon Mist~
+@104464 = ~Ice Storm and Blindness~
 @104496 = ~Defense Council Journal~
 @104497 = ~This notebook identifies the bearer as an official representative of Tyr's justice in Rolgan's murder trial and explains the rules of court, including the right for defense council to question any of the participants involved before the trial begins.
 To aid you in your task Neurik has included notes on the witnesses and jurors and where you might be able to locate them for questioning.
@@ -5960,45 +5965,44 @@ Rolkid of the Mighty Lance~
 @104503 = ~This grisly trophy appears to be the decapitated head of the powerful orc king Obould Many-Arrows.~
 @104504 = ~Vaath's Head~
 @104505 = ~This severed head once sat upon the shoulders of the infamous orc bandit Vaath.~
-@104508 = ~NP: Blacksmith Barun's Recipes~ /*Teneraard's Sickle*/
-@104509 = ~NP: A catalog of weapon and armor modifications from Marrok the blacksmith. Bring the magic weapon and the necessary component to my forge, and I will improve it with the blows of my hammer. Of course, I have to pay first. Armor and axes: Colored armor: Requires ritellium and full armor with AC 1. Scales of truth: Requires special holy water and chain mail +1 with AC 4. White bone leather armor: Requires gargoyle skull and studded leather armor +2 with AC 5. Guardian : Requires adamant and battle ax +1. Two-Handed Stonefire Axe: Requires adamant and halberd +1. Ice Thief Hand Axe: Requires dragon blood and excellent ax +1. Maces and the like: Gladiator's Mace: Needs Ironwood and a regular Mace. Ironwood Mace: Requires ironwood and +1 mace. Stormhammer: Requires ritellium and hammer +1. Foundation Flail: Requires ironwood and flail +1. Rest Mace: Requires special holy water and a +1 mace. Buzzing Morning Star: Needs Fairy Dust and +1 Morning Star. Rune Hammer: Requires adamant and war hammer +2. Swords Sharp and Loyal : Two-Handed Sword of Harbingers: Requires adamant and two-handed sword +1. Holy Katana: Requires adamant and katana +1. Astral Longsword: Requires ritellium and +1 longsword. Astral bastard sword: Requires ritellium and bastard sword +1. Desert Wind Scimitar: Requires adamant and +1 scimitar. Fairy Dust Short Sword: Needs fairy dust and short sword +1. Rarer Goods: Halberd of the Destroyer: Requires dragon's blood and halberd +2. Fairy Spear: Fairy Dust and Spear +1 required.~ /*Barun's catalog of weapon and armor modifications.
+@104508 = ~Blacksmith Barun's Recipes~
+@104509 = ~Barun's catalog of weapon and armor modifications.
+
 Toss the magical weapon and the component I require to improve it onto my forge and I'll give it a whack with my hammer.
 You'll need to pay me first, of course.
 
 Armor and Axes:
-Chromatic Breastplate: Requires a diamond and a suit of magical armor of total AC:6.
-Scales of Truth: Requires special holy water and a suit of magical armor of total AC:5.
-Whitebone Armor: Requires gargoyle skull and a suit of magic armor of total AC:3.
-Sentinel: Requires adamantite and a magic battleaxe.
-Double Axe of the Tall Kin: Requires adamantite and a magic double axe.
-Stonefire Great Axe: Requires adamantite and a magic great axe.
-Ice Reaver Hand Axe: Requires dragon blood and a magic hand axe.
+
+Chromatic Armor: Requires ritellium and full plate with Armor Class: 1.
+Scales of Truth: Requires special holy water and a chain mail +1 with Armor Class: 4.
+Whitebone Armor: Requires gargoyle skull and studded leather armor +2 with Armor Class: 5.
+Sentinel: Requires adamantite and a battle axe +1.
+Stonefire Great Axe: Requires adamantite and a halberd +1.
+Ice Reaver Hand Axe: Requires dragon blood and a battle axe +1.
 
 Maces and the like:
-Gladiator Club: Requires ironwood and a magic club.
-Ironwood Mace: Requires ironwood and a magic dire mace.
-Reaver Heavy Flail: Requires dragon blood and a magic heavy flail.
-Storm Light Hammer: Requires a diamond and a magic light hammer.
-Foundation Light Flail: Requires ironwood and a magic light flail.
-Mace of Disruption: Requires special holy water and a magic mace.
-Drone Morning Star: Requires fairy dust and a magic morning star.
-Rune Hammer: Requires adamantite and a magic war hammer.
+
+Gladiator Club: Requires ironwood and a club.
+Ironwood Mace: Requires ironwood and a mace +1.
+Storm Hammer: Requires ritellium and a war hammer +1.
+Foundation Flail: Requires ironwood and a magic flail +1.
+Mace of Disruption: Requires special holy water and a mace +1.
+Drone Morning Star: Requires fairy dust and a morning star +1.
+Rune Hammer: Requires adamantite and a war hammer +2.
 
 Blades both Sharp and True:
-Harbinger Kin Greatsword: Requires adamantite and a magic greatsword.
-Sword Saint Katana: Requires adamantite and a magic katana.
-Astral Blade Longsword: Requires a diamond and a magic longsword.
-Namarra Rapier: Requires dragon blood and a magic rapier.
-Desert Wind Scimitar: Requires adamantite and a magic scimitar.
-Feyduster Short Sword: Requires Fairy Dust and a magic short sword.
-Uthgardt Ceremonial Two-Bladed Sword: Requires ironwood and a magic two-bladed sword.
+
+Harbinger Kin Greatsword: Requires adamantite and a two-handed sword +1.
+Sword Saint Katana: Requires adamantite and a katana +1.
+Astral Blade Long Sword: Requires ritellium and a long sword +1.
+Astral Blade Bastard Sword: Requires ritellium and a bastard sword +1.
+Desert Wind Scimitar: Requires adamantite and a scimitar +1.
+Feyduster Short Sword: Requires fairy dust and a short sword +1.
 
 Rarer Fare:
-Ravager Halberd: Requires dragon blood and a magic halberd.
-Sea Reaver Scythe: Requires adamantite and a magic scythe.
-Fey Spear: Requires fairy dust and a magic spear.
-Golden Sickle: Requires special holy water and a magic sickle.*/
-@104510 = ~NP: The rest was interrupted by the cries of guards.~ /*Your rest has been disturbed by a wandering monster.*/
+Ravager Halberd: Requires dragon blood and a halberd +2.
+Fey Spear: Requires fairy dust and a spear +1.~
+@104510 = ~Your rest has been disturbed by by the shouts of the sentries.~
 @104511 = ~Words of Power
 
 The first of the three Words of Power has been found and safely delivered to Aarin Gend, but the enemy is not beaten yet.
@@ -6016,7 +6020,7 @@ The third Word of Power has been found but there is no time for celebration. Ari
 @104724 = ~Snow Globe
 
 The snow globe has been returned to Lillian Cambridge. As promised she has revealed the location of one of the Words of Power: a miniature world inside the snow globe itself! The snow globe has been magically transported to its pedestal in Lillian's room, located upstairs in the drinking house of Beorunna's Well. As long as the wine keeps flowing in the tavern she doesn't seem to care who goes into her room to access the miniature world inside the snow globe.~
-@104760 = ~NP: Lillian Cambridge~ /*Cambridge*/
+@104760 = ~Lillian Cambridge~
 @104761 = ~Lodar~
 @104762 = ~Averik~
 @104763 = ~Shady Character~
@@ -6026,8 +6030,8 @@ Husher Clay of the adventuring gear shop is looking for someone to bring him the
 @104969 = ~Recover the Star Sapphire
 
 The Star Sapphire has been delivered to Husher Clay.~
-@104980 = ~NP: Barun Silverblade~ /*Silverblade*/
-@104981 = ~NP: Hasher Clay~ /*Weapon Master*/
+@104980 = ~Barun Silverblade~
+@104981 = ~Husher Clay~
 @105107 = ~Rolkid~
 @105108 = ~Jevon~
 @105109 = ~Zed~
@@ -6039,8 +6043,8 @@ Neurik, the cleric at Tyr's temple, needs someone to defend Rolgan, an Uthgardt 
 The death of one of the participants has indefinitely postponed Rolgan's trial. It may be months before Neurik resumes the proceedings in this matter. Anyone investigating the trial would be better served searching for the Words of Power.~
 @105256 = ~Edegar~
 @105257 = ~Rolgan~
-@105258 = ~NP: Ygland Swift Sword~ /*of the Swift Sword*/
-@105367 = ~NP: Endar Big Heart~ /*Heartfood*/
+@105258 = ~Igland of the Swift Sword~
+@105367 = ~Endar Heartfood~
 @105368 = ~Dalcia~
 @105369 = ~Vanda~
 @105371 = ~Save the Supply Lines
@@ -6051,13 +6055,57 @@ The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking t
 Rolkid of the Mighty Lance, supply master for Beorunna's Well, wants to send a message to the raiders attacking the Lords' Alliance supply lines. He has offered a substantial bounty to anyone who delivers him the heads of the infamous orc bandits Vaath and Guzud.~
 @105373 = ~Save Food Supplies
 
-NP: The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking the entrance to the soldiers barracks in Beournna's Well. No longer will these notorious raiders interfere with the food supply of the Lords' Alliance.~ /*This dwarf is one of the many commoners who has come to Beorunna's Well to join the Lords' Alliance Cause.*/
-@105374 = ~NP: Bruns' shell~ /*Morag's Shell*/
-@105375 = ~NP: Bruns Trubenk was a follower of Tyr, who bravely fought in the service of his god both in the ice of the North and in the sands of the South. During one of these campaigns, a group of magicians accused him of a terrible crime, and after a hasty trial, he was found guilty and sentenced to imprisonment in a timeless sphere in the bowels of the earth. A few months later, it turned out that Bruns was innocent, and a certain necromancer should bear responsibility for what he was charged with. In a fit of sincere repentance, Sarshid, the renunciate magician who carried out the sentence, not only freed him and created for him this shell, which was supposed to save its owner from a repetition of a similar terrible fate in the future. In addition to protection from his own school of magic, Sarshid gave the armor and protection from Death magic to ensure that when Bruns encounters the necromancer who caused his misfortunes, he does not fall victim to the deadly magic of the latter. What happened next to Bruns or the necromancer is unknown, and Sarshid was killed shortly thereafter by his own companions, who were afraid that he would again create something that would finally undermine their power. STATS: Immunity to Abjuration, Confinement, Death Spell, Defense Class: 0 Weight: 50 Requires: 18 Strength Unused by: Bards Druids Mages Thieves~ /*Having investigated the Sword Coast Boys, it has been revealed that the leader of the gang, Drawl, has bargained away the lives of the entire gang. He made a deal with a creature named Gulnan, and has become a powerful undead as a result. This bargain also gave him the strength to brutally murder his brother Zelieph, the man who kept Drawl in line and the only person he truly feared. Now Zelieph's spirit haunts the Beggar's Nest, and is currently being escorted to meet with his former brother, presumeably to exact revenge. Zelieph is following a former possession of his, a link to his life and a reminder of the treachery that befell him. It is not known what would happen if the spirit of Zelieph were led to his now undead brother Drawl, or what effect he would have on the link between Drawl and Gulnan.*/
-@105376 = ~NP: Dagger of Demarasse~ /*The Dagger of Chaos*/
-@105377 = ~NP: This is the personal weapon of the assassin Demarasse. Given his knowledge of item enchanting, it is likely that he designed it himself and made it to his specifications. Its chief characteristic is its extraordinary precision, and it can probably pass through bone as easily as through oil, if handled properly. But if you handle it clumsily, then you risk accidentally cutting off a few fingers. damage 1d4+4 THAC0 +4 50% chance to poison target for 30 seconds 10% chance to stun target for 6 seconds Do not use: Priests~ /*Dorna seldom speaks of her past, but you know she traveled for nearly a week through a treacherous part of the Silver Marches to apprentice herself to Drogan Droganson when he retired and decided to take on some apprentices.  She is somewhat dour and pragmatic.  Her role as professional ambush-spotter and trap-springer has left her with a rather grim outlook on life.*/
-@105378 = ~NP: Guardian of Souls~ /*Doom Guard*/
-@105379 = ~NP: This shield was a gift from the king to the greatest warrior. The shield was supposed to protect the guard from death in a fight with a magician. This shield has the property to protect its owner from instant death spells, and also provides good protection against other types of damage. PARAMETERS: Defense class bonus: +3 Prevents immediate death Weight: 24 Not used by: Bards Mages Thieves Druids Monks Kensai~ /*There are some who call us evil, for they fear the pain and death we spread. But we transcend morality. Death is not good or evil, it simply *is*. It is final, undeniable and perfect.*/
+The heads of the orcish bandits Vaath and Guzud adorn the twin stakes flanking the entrance to the soldiers barracks in Beournna's Well. The infamous raiders will trouble the supply lines of the Lords' Alliance no more.~
+@105374 = ~Bruns' Shell~
+@105375 = ~Bruns Trubenk was a follower of Tyr, who fought bravely in the service of his god in both the ice of the North and the sands of the South. During one of these campaigns, a group of mages accused him of a terrible crime, and after a hasty trial, he was found guilty and sentenced to imprisonment in a timeless realm in the bowels of the earth. A few months later it was discovered that Bruns was innocent, and that a necromancer was to be held responsible for his guilt. In an act of sincere remorse, Sarshid, the abjurer who carried out the sentence, not only freed Bruns but created for him this shell that would save its owner from a similar fate in the future. In addition to protection from his own school of magic, Sarshid also gave the armor protection from the magic of Death to ensure that when Bruns met the necromancer who was the cause of his misfortune, he would not fall victim to the latter's deadly magic. What happened next to Bruns or the necromancer is unknown, and Sarshid was killed shortly afterward by his own companions, who feared that he would once again create something that would finally undermine their power.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Abjuration spells, Death Magic and Imprisonment
+
+Armor Class: 0
+Weight: 50
+Requirements: 18 Strength
+
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+@105376 = ~Demarasse's Dagger~
+@105377 = ~This is the personal weapon of the assassin Demarasse. Given his knowledge of enchanting items, it is likely that he designed it himself and crafted it to his specifications. Its main feature is its extraordinary accuracy, and it can probably pass through bone as easily as through butter if handled properly. But if handled improperly, you run the risk of accidentally cutting off a few fingers.
+
+STATISTICS:
+
+Combat abilities:
+- 50% chance per hit to poison the target for 30 seconds
+- 50% chance per hit to stun the target for 6 seconds
+
+THAC0: +4
+Damage: 1d4+4
+Proficiency Type: Dagger
+Type: One-handed
+Not Usable By:
+ Priest~
+@105378 = ~Guardian of the Soul~
+@105379 = ~This shield was a gift to the greatest warrior from the king. The shield was to protect the guardian from death in a fight with a mage. This shield has the ability to protect the wearer from instant death spells, and also gives a good defense against other types of damage.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Death Magic
+
+Armor Class: +3
+Weight: 24
+
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief
+ Monk
+ Kensai~
 @105420 = ~Investigate the Elk Tribe
 
 Yusam is looking for someone to investigate the Uthgardt Elk tribe. The druid is convinced there must be some reason they have turned away from the Lords' Alliance and joined with the Luskan army. Yusam believes the Elk tribe and their leader, Zokan Thunderer, are in a keep to the west of Fort Ilkard.~
@@ -6070,7 +6118,21 @@ The Elk tribe have been cured of the plague given to them by Commander Damas of 
 @105423 = ~Dreamcatcher~
 @105424 = ~Among the Uthgardt, dreamcatchers are often exchanged to symbolize reconciliation and a willingness to repair damaged relations or resume broken alliances. This particular ornament bears the distinctive marks of the Elk tribe.~
 @105425 = ~Ring of Yusam~
-@105426 = ~NP: This ring is one of the druid's protective rings. But besides the protective properties, it allows you to call two or three animals twice a day, which will serve the owner of the ring. Possible animals summoned by this spell: Cave Bear, Mountain Bear, Lion, Winter Wolf. Features when equipped: - Defense class: +2 improvement - Immunity to entanglement - Allows you to summon animals twice a day Weight: 0 Cannot use: Wizard Killers~ /*This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though the creator is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.*/
+@105426 = ~This ring is one of the protective rings of the druids. But in addition to its protective properties, it allows you to summon two to three animals twice a day, which will serve the owner of the ring. Possible animals summoned by this spell are: Cave Bear, Mountain Bear, Lion, Winter Wolf.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Immune to Entangle
+
+Charge ablilities:
+- Can summon animals twice per day
+
+Weight: 0
+
+Not Usable By:
+ Wizard Slayer~
 @105427 = ~Yusam~
 @105442 = ~Palla~
 @105453 = ~Uthgardt Tribe Member~
@@ -6082,7 +6144,7 @@ The Elk tribe have been cured of the plague given to them by Commander Damas of 
 @105473 = ~The is the head of Zokan Thunderer, legendary chieftain of the Uthgardt Elk tribe.~
 @105474 = ~Eckel's Note~
 @105475 = ~This is a note from Eckel to his wife giving detailed instructions regarding the sale of the crops produced by their farm.~
-@105476 = ~NP: This is a severed orc head, very similar to that of the infamous orc bandit Guzud.~ /*This is the decapitated head of the infamous orc bandit Guzud.*/
+@105476 = ~This is the decapitated head of an orc similar to the head of the infamous orc bandit Guzud.~
 @105477 = ~Orc Head~
 @105478 = ~Translation Amulet~
 @105479 = ~NP: The magic of this amulet translates any message, verbal or non-verbal, into a language that both speaker and listener can understand. For the magic of this device to work, it must be equipped.~ /*I was young and blind and hopeless. I fell for the first man who showed interest in me... not that my mother intended for that to stop us.*/
