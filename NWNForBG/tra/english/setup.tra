@@ -1400,6 +1400,8 @@ Equipped abilities:
 - Save vs. Wand: +1
 - Save vs. Breath: +1
 - Save vs. Death: +1
+
+Armor Class: 4
 Weight: 18
 
 Requirements: 6 Strength
@@ -5890,8 +5892,14 @@ Not Usable By:
 @104431 = ~Eh? What's this?~ [NWTOMILK]
 @104432 = ~Time to slip into the shadows!~ [NWTOMILD]
 @104433 = ~I hate it when my spell fizzles!~ [NWTOMISL]
-@104434 = ~NP: Tomy is a rogue and thief from Calimport, also known as the Hanged Man. Tomy is originally from Calimshan and, like most of the locals, went down the path of crime. Tomy is a master of lockpicking and deactivating traps. He had an eventful youth, however, all his adventures are connected with theft and girls. His mistress was a powerful jellyfish, and one day she ordered Tomy to kill a rather strong wizard. However, Tommy showed more zeal in seducing the magician's daughter, and pulled with the execution of the order. Medusa was tired of this, and she decided to deal with both the wizard and the negligent mercenary herself. In the ensuing turmoil, the jellyfish and the wizard killed each other, and Tomy was found guilty of killing them. On the one hand, this glorified him among the criminals, and on the other hand, the official authorities began to hunt for him. Tommy went to Neverwinter, where his friend, a master forger, lived to get false evidence of his own innocence. In Neverwinter, the swindler was imprisoned, but quickly freed himself and joined the hero.~ /*Musharak, the hobgoblin merchant who uses the Ao encampment as the base for his enterprise, has asked for some help. The Aoists of the encampment make a quality wine that would make him rich if he were able to sell it... unfortunately, the Aoists consider their wine sacred and so far have refused to allow him to do so. Musharak has offered a reward should the Aoist minister be persuaded to change his mind on the matter... or some other arrangement found.The Aoist minister, for his part, has stated that the temple would only agree to allow Musharak to sell their wine if he either converted to their faith or perhaps cut the temple in on his profits... neither of which the minister believes Musharak will seriously consider.*/
-@104435 = ~NP: This somewhat flashy uniform belongs to the Blood Sailors pirate guild. Wearing it, a person will be able to outwit an outside observer, make him believe that he himself is the &quot;Bloody Sailor&quot;. Real members of the guild are unlikely to be fooled by such a masquerade, since in such organizations all members know each other very well. PARAMETERS: Protection class: 4 Weight: 5 Requirements: strength 3~ /*This is the somewhat garish uniform of the Bloodsailors pirate guild. By wearing this, a person might be able to fool a casual observer into thinking they are a Bloodsailor. Other actual members would probably see through the deception, however, as such groups are usually very adept at recognizing their own people.*/
+@104434 = ~Tomi "Grin" Undergallows is a halfling rogue and thief from Calimport. Tomi hails from Kalimshan and, like most locals, has followed the path of crime. Tomi is a master of lockpicking and detecting and disarming traps. He had an eventful youth, though all of his adventures involve stealing and girls. He spent the larger part of his years in Calimport in the employ of a powerful medusa, and one day she ordered Tomi to kill a mage of no little power. However, Tomi showed more zeal in seducing the mage's daughter, and kept delaying in fulfilling the order. The medusa fed up with this, and she decided to take matters into her own hands. During the ensuing turmoil, Medusa and the wizard killed each other, and Tomi was found guilty of killing them. I was good for his reputationa, but he become a wanted man for murdering the wizard. Finally, Tome decided to come to Neverwinter where one of his oldest friends, a forgery master, lives to make some documents and clear his name in Calimport. In Neverwinter, the rogue went to prison, but was quickly released.~
+@104435 = ~This is the somewhat garish uniform of the Bloodsailors pirate guild. By wearing this, a person might be able to fool a casual observer into thinking they are a Bloodsailor. Other actual members would probably see through the deception, however, as such groups are usually very adept at recognizing their own people.
+
+STATISTICS:
+
+Armor Class: 4
+Weight: 5
+Requirements: 3 Strength~
 @104436 = ~~ [NWWRA04A]
 @104437 = ~~ [NWWRA08A]
 @104438 = ~~ [NWWRA01A]
