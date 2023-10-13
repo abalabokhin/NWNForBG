@@ -6147,11 +6147,11 @@ Not Usable By:
 @105476 = ~This is the decapitated head of an orc similar to the head of the infamous orc bandit Guzud.~
 @105477 = ~Orc Head~
 @105478 = ~Translation Amulet~
-@105479 = ~NP: The magic of this amulet translates any message, verbal or non-verbal, into a language that both speaker and listener can understand. For the magic of this device to work, it must be equipped.~ /*I was young and blind and hopeless. I fell for the first man who showed interest in me... not that my mother intended for that to stop us.*/
+@105479 = ~The magic of this amulet translates any messages, verbal and non-verbal, into a language that both the speaker and the listener can understand. For the magic of this device to work, it must be worn.~
 @105480 = ~Time Crystal~
 @105481 = ~This remarkable stone is obviously a time crystal. According to legend, the power of these stones can be used as a catalyst to facilitate the process of time travel. However, most accounts indicate that the magic of the time crystals can only be unlocked when used in conjuction with a temporal conduit such as a time portal or time sink.~
 @105482 = ~Principles of Time Travel~
-@105483 = ~NP: This book is written in an ancient language that you do not understand. However, in the margins someone had scrawled notes in common language about how to use the time crystals to travel back to the old days.~ /*The Lantanese people do not disparage magic, though many do not understand it. However, in my land we rely on the arcane far less than the other peoples of Faerun.*/
+@105483 = ~This book is written in an ancient language you cannot understand. In the margins, however, someone has scribbled notes in the common tongue detailing how the time crystals can be used to travel back to ancient days.~
 @105484 = ~Ultarg Seeds~
 @105485 = ~At first glance these appear to be tiny rocks or pebbles. However, in truth these are the seeds of the legendary Ultarg Tree. Though an exceptionally hardy species the Ultarg takes 10,000 years to reach maturity and bear fruit, making it one of the rarest plants in Faerun.~
 @105486 = ~Lokar's Ring~
@@ -6159,18 +6159,18 @@ Not Usable By:
 @105488 = ~Catapult~
 @105489 = ~~ [NWCATAPM]
 @105490 = ~~ [NWCATAPE]
-@105545 = ~NP: Damas~ /*Kama*/
+@105545 = ~Damas~
 @105546 = ~Galia~
 @105547 = ~Eckel~
 @105587 = ~Settler~
-@105588 = ~NP: Fort soldier~ /*Kurth Soldier*/
+@105588 = ~Fort Soldier~
 @105598 = ~Fort Ilkard Crossbowman~
 @105599 = ~Lords' Alliance Wizard~
 @105600 = ~Chaplain~
 @105602 = ~Ruzon~
 @105603 = ~Elk Tribe Shaman~
-@105604 = ~NP: Arness~ /*Agnes*/
-@105605 = ~NP: catapult gunner~ /*Catapult Commander*/
+@105604 = ~Arness~
+@105605 = ~Catapult Gunner~
 @105606 = ~Elk Tribe Warrior~
 @105666 = ~Zokan~
 @105667 = ~Elk Tribe Worshipper~
@@ -6178,7 +6178,7 @@ Not Usable By:
 @105669 = ~Elk Patroller~
 @105701 = ~Elk Tribeswoman~
 @105702 = ~Cult Leader~
-@105703 = ~NP: Kreshnar~ /*Krenshar*/
+@105703 = ~Krenshar~
 @105705 = ~Word of Power~
 @105706 = ~Even in its dormant state, the magic contained within this artifact is undeniable. The surface of this heavy stone tablet tingles with raw energy and untapped potential, and the face and back are inscribed with the strange runes of a long forgotten alien tongue. The arcane symbols and unfamiliar glyphs pulsate and glow with a sinister inner light, bathing the entire stone in a warm reddish glow.
 One can only imagine the unfathomable power that will be unleashed when the magic of the Word is fully awakened.~
@@ -6192,9 +6192,9 @@ One can only imagine the unfathomable power that will be unleashed when the magi
 @105718 = ~This note appears to be instructions from a high priest to one of his underlings describing how to enter the central vault of the complex:
 As a keeper of the sacred artifacts you must understand the secrets of our inner sanctum. Only the rituals of smoke, light and sound will unbind the door - there is no other way to enter its hallowed walls. Once the slaves have finished building our golems, our defenses will be fully intact.
 
-The enslaved fairy will guide you through the ritual of sound, for she is bound to the magic of the gongs. 
+The enslaved mephit will guide you through the ritual of sound, for she is bound to the magic of the gongs.
 
-To complete the ritual of smoke you must cast the blessed powders on the sacred brazier so that their combinations match the descending order of the stones set into the brazier's base.
+To complete the ritual of smoke you must cast the blessed powders on the sacred brazier so that their combinations match the descending order of mixed colors: : orange, purple, green.
 
 The ritual of light can only be completed using the stones drawn from the holy pool in the center of the pillars. Begin by choosing any two of the single stones set in the primary color pools. The secondary pools must then be filled with the twin gems that match the corresponding color that would be created by combining the hues of the stones in the primary pool.
 
@@ -6209,7 +6209,7 @@ You may keep this letter for a fortnight, and then you will be tested on what yo
 @105721 = ~Uncas~
 @105722 = ~Orc Scout~
 @105723 = ~Guzud~
-@105758 = ~NP: Ah, stupid creature! I am Guzud, mighty orc warrior! You will die now!~ /*Stupid <PRO_RACE> scum! Me be Guzud, mighty Orc warrior! You die now!*/
+@105758 = ~Stupid <PRO_RACE> scum! Me be Guzud, mighty Orc warrior! You die now!~
 @105759 = ~Stop! Guzud surrender! You too strong!~
 @105760 = ~Green Gem~
 @105761 = ~This is a green gem of little intrinsic value. All light passing through the translucent stone takes on a greenish hue.~
@@ -6223,8 +6223,8 @@ You may keep this letter for a fortnight, and then you will be tested on what yo
 @105769 = ~This is a red gem of little intrinsic value. All light passing through the translucent stone takes on a reddish hue.~
 @105770 = ~Yellow Gem~
 @105771 = ~This is a yellow gem of little intrinsic value. All light passing through the translucent stone takes on a yellowish hue.~
-@105772 = ~NP: Fertile soil. You can plant any seeds here if you like.~ /*Me sent protecting forest. Me needs planting seeds!*/
-@105773 = ~NP: You have already planted the seeds.~ /*You wouldn't dare.*/
+@105772 = ~Fertile soil. You can plant any seeds here if you like.~
+@105773 = ~You have already planted the seeds.~
 @105777 = ~Plant the Ultarg Tree Seeds
 
 A wild mage named Sapphira needs someone to travel back in time 10,000 years to plant the seeds of the rare Ultarg Tree so that she can harvest the fruit here in the present. The seeds must be planted beneath the red warding rune in the garden of the ancient past.
@@ -6236,25 +6236,37 @@ The seeds have been planted in the past and a magnificent Ultarg Tree has sprout
 @105856 = ~Sapphira~
 @105877 = ~Lokar~
 @105878 = ~Slave Worker~
-@105945 = ~NP: The exit to the surface is blocked by the magic of the ancients.~ /*Exit to the troll caves above.*/
-@105954 = ~NP: bottle of mephit~ /*Fairy Bottle*/
+@105945 = ~The exit to the surface is blocked by the magic of Old Ones.~
+@105954 = ~Mephit Bottle~
 @105955 = ~Through the dark glass of this bottle you see a small creature. It ignores you, concentrating instead on playing a variety of musical instruments that are scattered about the inside of the bottle.~
 @105956 = ~Bodak's Tooth~
 @105957 = ~This is the tooth from a bodak.~
 @105958 = ~Old One Bodak Champion~
-@105959 = ~NP: You cannot use this bottle in this location. Get closer to the gongs.~ /*You can not use this item right now.*/
+@105959 = ~You cannot use this bottle in this location. Get closer to the gongs.~
 @105965 = ~Temporal Golem Slave~
 @105966 = ~Temporal Slave~
 @105967 = ~Temporal Lizard~
-@105988 = ~NP: Fake Vaat head~ /*Word of Power Pedestal*/
+@105988 = ~Fake Vaath's Head~
 @105989 = ~Succubus Stone~
 @105990 = ~A small stone glitters lightly in your hand; it has a strange beauty.~
 @105991 = ~Succubus Ring~
 @105992 = ~This ring glitters darkly in your hand.~
 @105993 = ~Succubus Necklace~
 @105994 = ~This necklace glitter darkly in your hands.~
-@105995 = ~NP: Ring of Elemental Resistance~ /*Ring of Universal Elemental Immunity*/
-@105996 = ~NP: Draxus Rhyme, an important figure among the Scarlet Wizards of Ty, made very few of these remarkable rings. His tharchion and zulkir allies have earned such rings by helping Draxus gain even more power than before. Several others were used to bribe the lords who were trying to prevent the growth of Thai enclaves. Some mages suspect that Draxus may have had darker purposes in spreading these rings, but so far there is no evidence for this. STATS: Features when equipped: - Fire resistance: +35% - Cold resistance: +35% - Electricity resistance: +35% - Acid resistance: +35% Weight: 0 Cannot use: Wizard Killer~ /*Druxus Rhym, an important Red Wizard of Thay created only a few of these spectacular rings. His allies among the tharchions and zulkiers have earned theirs by helping Druxus amass even greater power than before.  A few others have been used to bribe ruling lords, who were attempting to stop the growth of the Thayvian enclaves. Some mages have speculated whether Druxus might have some darker purpose in distributing these rings, but so far, no proof has been offered.*/
+@105995 = ~Ring of Elemental Resistance~
+@105996 = ~Draxus Rim, an important figure among the Red Wizards of Thay, made very few of these notable rings. His allies in the Tarchion and Zulkir earned such rings by helping Draxus gain even more power than before. Several others were used to bribe lords who tried to prevent the growth of the Thay enclaves. Some mages suspect that Draxus may have pursued darker goals with the distribution of these rings, but so far there is no evidence of this.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +35%
+- Cold Resistance: +35%
+- Electricity Resistance: +35%
+- Acid Resistance: +35%
+
+Weight: 0
+Not Usable By:
+ Wizard Slayer~
 @105997 = ~Star Sapphire~
 @105998 = ~Its size is impressive, with a unique quality and cut. This semi-precious stone has great value, particularly for those interested in the history of the Cheroux family.~
 @105999 = ~Tome of Power~
@@ -6277,7 +6289,22 @@ The bottom of the stone contains a small groove, as if the gem had been intended
 @106008 = ~The face of this diamond has been inscribed with a symbol from a long forgotten alphabet. The enchantment on the stone allows even those unfamiliar with the archaic language to recognize the that the rune signifies 'Honor'.
 The bottom of the stone contains a small grove, as if the gem had been intended for mounting on a stand or pedestal.~
 @106009 = ~Ring of Melf~
-@106010 = ~NP: This ring is expertly crafted from pure gold, although there are a few discolored spots on its smooth surface. PARAMETERS: Special ability: Melf's acid arrow 3 times per day Range: caster's line of sight Duration: special Casting time: 2 Area of effect: one creature Saving throw: none Effect: deals 2d4 points of acid damage over 4 rounds Weight: 0 Cannot be used : Wizard Slayer~ /*This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though the creator is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.*/
+@106010 = ~This ring is a finely fashioned band of purest gold, though sporadic splashes of discoloration mar its otherwise smooth surface.
+
+STATISTICS:
+
+Charge abilities:
+- Melf's Acid Arrow three times per day
+  Range: Visual range of the caster
+  Duration: Special
+  Casting Time: 2
+  Area of Effect: 1 creature
+  Saving Throw: None
+  The arrow inflicts 2d4 points of acid damage for 4 rounds
+
+Weight: 0
+Not Usable By:
+ Wizard Slayer~
 @106011 = ~Laboratory Notes~
 @106012 = ~These appear to be the lab notes of Cyril, the mage who created this laboratory:
 I believe I have at last unlocked the keys to creating the Staff of Command! As I suspected all along, the key ingredients were a rakshasa eye and a quartz crystal. However, determining the proper spell to cast on the components once they were combined in my laboratory was not as simple as I had at first assumed.
@@ -6303,20 +6330,65 @@ I then escalated the proceedings by summoning a great bear to devour her canine 
 As I suspected, there are a number of natural pools in these underground chambers that can be easily converted into summoning cisterns. Once I have completed construction of my laboratory summoning a powerful elemental to do my bidding should simply require the addition of a Slaadi tongue to the pool, along with the casting of Melf's Acid Arrow.~
 @106019 = ~Quartz Crystal~
 @106020 = ~A hexagonal crystal, quartz is quite common and comes in a variety of colors.~
-@106021 = ~NP: Staff of Dominance~ /*Staff of Sodalis*/
-@106022 = ~NP: Witchcraft is common in the kingdoms of magic, but some have problems with spells. This staff allows the wearer to charm or overwhelm another, eliminating the need to learn spells. PARAMETERS: Features when equipped: - Immunity to mind-affecting spells Allows you to cast spells: Strong charm 2 times per day Dominate 2 times per day Control undead 1 time per day Enchantment: +4 THAC0: +4 improvement Damage: 1d6 +4 damage type : blunt Speed Factor: 2 Weapon Skill: Warstaff Type: Two-Handed Weight: 3 Requirements: Strength 5 Cannot Use: Monks~ /*Enchantments abound in the realms of magic, but some have trouble with the incantations. This staff allows the user to charm or even dominate another, eliminating the need to study the spells.*/
+@106021 = ~Staff of Command~
+@106022 = ~Sorcery is common in kingdoms of magic, but some have problems with spells. This staff allows the bearer to enchant or suppress another, eliminating the need to learn spells.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to mind-affecting spells
+
+Charge abilities:
+- Dire Charm 2 times per day
+- Domination 2 times per day
+- Control Undead once per day
+
+THAC0: +4
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Monk~
 @106023 = ~Broken Amulet of the Ages~
-@106024 = ~A hairline crack runs through the center of this amulet, the only flaw in its otherwise perfect construction. On one side are inscribed strange symbols from a long-forgotten language, and on the other is an engraving of a dryad's tree and a dwarven hammer.~
+@106024 = ~A hairline crack runs through the center of this amulet, the only flaw in its otherwise perfect construction. On one side are inscribed strange symbols from a long-forgotten language, and on the other is an engraving of a dryad's tree and a dwarven hammer.
+
+STATISTICS:
+
+Weight: 1~
 @106025 = ~Drained Amulet of the Ages~
-@106026 = ~NP: Strange symbols in a long-forgotten language are inscribed on one side of this striking amulet, while a dryad tree and a gnome's hammer are engraved on the other. PARAMETERS: Weight: 1 Can use: All~ /*One side of this perfectly constructed amulet is inscribed with strange symbols from a long-forgotten language. The other bears the images of a dryad's tree and a dwarven hammer.*/
+@106026 = ~One side of this perfectly constructed amulet is inscribed with strange symbols from a long-forgotten language. The other bears the images of a dryad's tree and a dwarven hammer.
+
+STATISTICS:
+
+Weight: 1~
 @106027 = ~Amulet of the Ages~
-@106028 = ~NP: This artifact is warm to the touch, and much heavier than its size would suggest. Symbols are written on one side in an ancient language, strange words flicker and shimmer with inner light. On the other side, images of a dryad's tree, a hammer of dwarves and a dragon's head replace each other. PARAMETERS: Protection against cold 100 Weight: 8~ /*This artifact is warm beneath your touch and bears a weight far greater than its size might suggest. The symbols of an ancient tongue are inscribed on one side, the strange words shimmering and glowing with an inner light. The other side flickers between the alternating images of a dryad's tree, a dwarven hammer, and a dragon's head.*/
+@106028 = ~This artifact is warm beneath your touch and bears a weight far greater than its size might suggest. The symbols of an ancient tongue are inscribed on one side, the strange words shimmering and glowing with an inner light. The other side flickers between the alternating images of a dryad's tree, a dwarven hammer, and a dragon's head.
+
+STATISTICS:
+
+Equipped abilities:
+- Cold Resistance: 100
+
+Weight: 8~
 @106033 = ~Green Dragon Egg~
 @106034 = ~The tough but pliable leather shell of this dragon's egg is warm to the touch, a sure sign there is still life within.~
 @106035 = ~Klauth's Head~
-@106036 = ~This is the head of the ancient red dragon Klauth. Though dulled somewhat by his recent demise, his ruby red scales still possess a luster far deeper than any gem. Klauth's features are forever frozen in an expression of malevolent evil, his enormous jaws curled into a sinister snarl exposing the beast's razor sharp fangs. Even in death the great wyrm's grandeur remains terrible to behold.~
+@106036 = ~This is the head of the ancient red dragon Klauth. Though dulled somewhat by his recent demise, his ruby red scales still possess a luster far deeper than any gem. Klauth's features are forever frozen in an expression of malevolent evil, his enormous jaws curled into a sinister snarl exposing the beast's razor sharp fangs. Even in death the great wyrm's grandeur remains terrible to behold.
+
+STATISTICS:
+
+Weight: 7~
 @106037 = ~Dragon Sphere~
-@106038 = ~This sphere is roughly the size of an ogre's head and appears to be made of polished black stone, though it is far lighter than one would first expect. The flawless surface is cool to the touch and seems to draw all light into it.~
+@106038 = ~This sphere is roughly the size of an ogre's head and appears to be made of polished black stone, though it is far lighter than one would first expect. The flawless surface is cool to the touch and seems to draw all light into it.
+
+STATISTICS:
+
+Weight: 3~
 @106043 = ~An impression has been carved from the stone of this pedestal, as if it was meant to hold a small stone or gem. There is also an inscription:
 The king sits ever on his throne;
 Regal wisdom in his gaze.
@@ -6337,13 +6409,13 @@ The princess hides within her chambers;
 Never does she leave the room.
 Betrothed to one she does not love;
 She weeps for a forbidden groom.~
-@106070 = ~NP: water spirit~ /*Water Elemental*/
+@106070 = ~Water spirit~
 @106071 = ~Who calls to me, and for what purpose am I summoned to this plane?~
 @106133 = ~Nax~
 @106134 = ~This room looks like a functional wizard's lab.~
-@106135 = ~NP: water snake~ /*Water Beast*/
+@106135 = ~Water snake~
 @106136 = ~This gong has a picture of a winter wolf snarling engraved on it.~
-@106137 = ~NP: The wolf howls.~ /*Yes, I do.*/
+@106137 = ~A wolf howls.~
 @106138 = ~This gong has a picture of a puma growling engraved on it.~
 @106139 = ~A puma snarls.~
 @106140 = ~This gong has a picture of a dire bear posed in full attack engraved on it.~
