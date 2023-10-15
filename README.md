@@ -75,6 +75,7 @@ In development:
 - Fixed scrit for NWSPID0, now it explodes with Fireball when die as intended.
 - Fixed setting SPRITE\_IS\_DEAD... variable to use proper names (bug that appeared after adding prefixes).
 - Fixed Joinable NPCs really destroy their items after upgrade even if they have these items.
+- Adjusted some cuscenes delays to better fit sound durations.
 
 0.89 (09/28/2023)
 
