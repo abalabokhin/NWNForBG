@@ -1,4 +1,11 @@
 IF
+    Die()
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
 	See([PC])
 	NumTimesTalkedTo(0)
 THEN
@@ -30,7 +37,7 @@ THEN
 		MoveViewObject(Myself,FAST)
 		FaceObject(LastTrigger)
 		Wait(1)
-		StartDialogueNoSet(LastTrigger)
+		StartDialogueNoSet([PC])
 END
 
 IF
