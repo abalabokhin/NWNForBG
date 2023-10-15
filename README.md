@@ -64,6 +64,8 @@ Version History
 ---------------
 In development:
 
+0.91 (10/15/23)
+
 - Fixed more craft recepies.
 - Fixed some traps for craft containers, so they are undetectable.
 - Fixed crafting script in NW2E61 to work better.
