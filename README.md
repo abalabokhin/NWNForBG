@@ -60,6 +60,12 @@ Make sure ToBex (or other mods, increasing maximum number of music) and Infinity
 
 BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate.
 
+Known Bugs:
+-----------
+
+- Transform into Wererat ability doesn't work well on EE: after turning into wererat, turning back to human form plays the anmation, but a character still cannot talk or cast spells.
+- If attack catapults in third chapter, their creatures "jump out" of the catapults and become located next to the catapults on the map after they are hostile. It looks bad, but doens't affect the gameplay.
+
 Version History
 ---------------
 In development:
