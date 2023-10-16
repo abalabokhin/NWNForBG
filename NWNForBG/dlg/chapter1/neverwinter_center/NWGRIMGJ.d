@@ -291,8 +291,16 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 47.1 48.1
   SAY @94
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWGRIMGW",100000)DestroyItem("Nwmisc41")TakePartyItem("Nwmisc41")DestroyItem("Nwmisc41")GiveItemCreate("NWAMUGR1",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~
+    SetGlobal("GrimgnawQuest","GLOBAL",4)
+    AddexperienceParty(60000)
+    AddXPObject("NWGRIMGW",100000)
+    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
+    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc41"))
+    ActionOverride("NWKHELBN",DestroyItem("Nwmisc41"))
+    ActionOverride("NWKHELBN",DestroySelf())
+    GiveItemCreate("NWAMUGR1",Player1,1,1,1)~
+  EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 1.4
@@ -516,14 +524,32 @@ END
 
 IF ~~ THEN BEGIN 88 // from: 87.1 87.3
   SAY @164
-  IF ~~THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",4)AddexperienceParty(60000)AddXPObject("NWGRIMGW",100000)DestroyItem("Nwmisc42")TakePartyItem("Nwmisc42")DestroyItem("Nwmisc42")
-DestroyItem("NWAMUGR1")TakePartyItem("NWAMUGR1")DestroyItem("NWAMUGR1")GiveItemCreate("NWAMUGR2",Player1,0,0,0)~ EXIT
+  IF ~~THEN DO ~
+    SetGlobal("GrimgnawQuest2","GLOBAL",4)
+    AddexperienceParty(60000)
+    AddXPObject("NWGRIMGW",100000)
+    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
+    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc42"))
+    ActionOverride("NWKHELBN",DestroyItem("Nwmisc42"))
+    ActionOverride("NWKHELBN",TakePartyItem("NWAMUGR1"))
+    ActionOverride("NWKHELBN",DestroyItem("NWAMUGR1"))
+    ActionOverride("NWKHELBN",DestroySelf())
+    GiveItemCreate("NWAMUGR2",Player1,0,0,0)~
+  EXIT
 END
 
 IF ~~ THEN BEGIN 89 // from: 87.2 87.4
   SAY @165
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWGRIMGW",100000)DestroyItem("Nwmisc42")TakePartyItem("Nwmisc42")DestroyItem("Nwmisc42")GiveItemCreate("NWAMUGR2",Player1,1,1,1)~ EXIT
+  IF ~~THEN DO ~
+    SetGlobal("GrimgnawQuest2","GLOBAL",4)
+    AddexperienceParty(60000)
+    AddXPObject("NWGRIMGW",100000)
+    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
+    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc42"))
+    ActionOverride("NWKHELBN",DestroyItem("Nwmisc42"))
+    ActionOverride("NWKHELBN",DestroySelf())
+    GiveItemCreate("NWAMUGR2",Player1,0,0,0)~
+  EXIT
 END
 
 IF ~~ THEN BEGIN 90 // from: 86.2
@@ -790,8 +816,18 @@ END
 
 IF ~~ THEN BEGIN 137 // from: 136
   SAY @248
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest3","GLOBAL",4)
-AddexperienceParty(60000)AddXPObject("NWGRIMGW",150000)DestroyItem("Nwmisc43")TakePartyItem("Nwmisc43")DestroyItem("Nwmisc43")DestroyItem("NWAMUGR2")TakePartyItem("NWAMUGR2")DestroyItem("NWAMUGR2")GiveItemCreate("NWAMUGR3",Player1,0,0,0)~ EXIT
+  IF ~~ THEN DO ~
+    SetGlobal("GrimgnawQuest3","GLOBAL",4)
+    AddexperienceParty(60000)
+    AddXPObject("NWGRIMGW",150000)
+    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
+    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc43"))
+    ActionOverride("NWKHELBN",DestroyItem("Nwmisc43"))
+    ActionOverride("NWKHELBN",TakePartyItem("NWAMUGR2"))
+    ActionOverride("NWKHELBN",DestroyItem("NWAMUGR2"))
+    ActionOverride("NWKHELBN",DestroySelf())
+    GiveItemCreate("NWAMUGR3",Player1,0,0,0)~
+  EXIT
 END
 
 IF ~~ THEN BEGIN 148 // from: 98.4
