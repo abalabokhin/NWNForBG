@@ -5,12 +5,14 @@ TODO:
 *. Сделать правильно уничтожение предметов через невидимое существо, как описано тут:
 https://www.gibberlings3.net/forums/topic/37247-how-to-properly-destroy-a-party-item-in-a-dialog-with-a-party-member/
 код вот такой - существо только заменить на любое другое... (келбен)
+
 CreateCreatureObject("NWKHELBN",Player1,0,0,0)
 ActionOverride("NWKHELBN",TakePartyItem("Nwmisc33"))
 ActionOverride("NWKHELBN",DestroyItem("Nwmisc33")) 
 ActionOverride("NWKHELBN",TakePartyItem("NWAMULI2"))
 ActionOverride("NWKHELBN",DestroyItem("NWAMULI2")) 
 ActionOverride("NWKHELBN",DestroySelf())
+
 *. Глючит свиток превращения в крысу - превращает - но обратно нельзя говорить и колдовать
 *. На карте NW3100 - если начать атаковать катапульты - то их центр смещается из места где они стоят - только
 на ее версии
