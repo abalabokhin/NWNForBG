@@ -910,8 +910,8 @@ END
 
 IF ~~ THEN BEGIN 211 // from: 172.1
   SAY @281
-  IF ~  PartyHasItem("NWAMULI2")~ THEN GOTO 214
-  IF ~  !PartyHasItem("NWAMULI2")~ THEN GOTO 215
+  IF ~OR(2)PartyHasItem("NWAMULI2")PartyHasItem("NWAMULI1")~ THEN GOTO 214
+  IF ~!PartyHasItem("NWAMULI2")!PartyHasItem("NWAMULI1")~ THEN GOTO 215
 END
 
 IF ~~ THEN BEGIN 212 // from: 172.2
@@ -935,6 +935,8 @@ IF ~~ THEN BEGIN 214 // from: 211.1
     ActionOverride("NWKHELBN",DestroyItem("Nwmisc33"))
     ActionOverride("NWKHELBN",TakePartyItem("NWAMULI2"))
     ActionOverride("NWKHELBN",DestroyItem("NWAMULI2"))
+    ActionOverride("NWKHELBN",TakePartyItem("NWAMULI1"))
+    ActionOverride("NWKHELBN",DestroyItem("NWAMULI1"))
     ActionOverride("NWKHELBN",DestroySelf())
     GiveItemCreate("NWAMULI3",Player1,0,0,0)~
   EXIT

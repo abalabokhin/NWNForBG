@@ -678,6 +678,8 @@ IF ~~ THEN BEGIN 113 // from: 112.1
     CreateCreatureObject("NWKHELBN",Player1,0,0,0)
     ActionOverride("NWKHELBN",TakePartyItem("Nwmisc37"))
     ActionOverride("NWKHELBN",DestroyItem("Nwmisc37")) 
+    ActionOverride("NWKHELBN",TakePartyItem("NWAMUDA1"))
+    ActionOverride("NWKHELBN",DestroyItem("NWAMUDA1")) 
     ActionOverride("NWKHELBN",TakePartyItem("NWAMUDA2"))
     ActionOverride("NWKHELBN",DestroyItem("NWAMUDA2")) 
     ActionOverride("NWKHELBN",DestroySelf())
