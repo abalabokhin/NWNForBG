@@ -70,6 +70,8 @@ Version History
 ---------------
 In development:
 
+- Implement proper removing items from the party in a dialog with party members.
+
 0.91 (10/15/23)
 
 - Fixed more craft recepies.
