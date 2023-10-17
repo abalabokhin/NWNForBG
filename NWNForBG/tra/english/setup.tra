@@ -6444,8 +6444,8 @@ Klauth, the great red wyrm of the North, has admitted to having one of the Words
 
 Klauth has traded the Word of Power he possessed for the dragon's eggs he needs to perform his dark rituals.~
 @106289 = ~Akulatraxas~
-@106290 = ~NP: Just dare to touch my balls! I will destroy you!~ /*I will not work with you. I will destroy you!*/
-@106291 = ~Gold Dragon Egg~
+@106290 = ~Don't you dare touch my eggs! I will destroy you!~
+@106291 = ~Gold Dragon Eggs~
 @106292 = ~Gorgotha~
 @106297 = ~Gorgotha the Gold Dragon
 
@@ -6459,13 +6459,13 @@ The gold dragon Gorgotha has been slain.~
 @106344 = ~King Skrogg~
 @106345 = ~Pass Amulet~
 @106346 = ~There is a picture of a golem on one side of this amulet and a rune of warding on the other.~
-@106347 = ~NP: To pass you need a special amulet.~ /*This lock requires a delicate touch.*/
+@106347 = ~You need a special amulet to pass.~
 @106377 = ~Wogar~
 @106378 = ~Death Slaad Lord~
-@106379 = ~NP: Slaad's Death Gaze~ /*Death Slaad Lord*/
+@106379 = ~Slaad's Death Gaze~
 @106380 = ~Hill Giant Chief~
 @106381 = ~Hill Giant Prisoner~
-@106382 = ~NP: Giant of the hills~ /*Giant, Hill*/
+@106382 = ~Hill Giant~
 @106400 = ~Hill Giant Head~
 @106401 = ~This is the severed head of the Hill Giant Chieftain.~
 @106402 = ~This note is written in the flawless script of a professional scribe. The bottom is marked with an official seal in the shape of a dragon's head:
@@ -6481,7 +6481,7 @@ You big tuff master. Me no want be squiched. Me tribe give tribeaut and eggs and
 @106404 = ~You die now dog!~
 @106405 = ~Mercy! Me surrender!~
 @106406 = ~Obould Many-Arrows~
-@106426 = ~NP: Fake Obold Head~ /*Obould's Head*/
+@106426 = ~Fake Obould's Head~
 @106427 = ~This grisly trophy appears to be the decapitated head of the powerful orc king Obould Many-Arrows.~
 @106428 = ~Tome of the Ring~
 @106429 = ~The florid, swooping, elongated hand in which this manuscript is written leaves little doubt as to its author. The wizard's mark on the inside cover further confirms that this is indeed one of the many tomes of magical item construction written by Hasuraman the Muddled.
@@ -6490,13 +6490,13 @@ You big tuff master. Me no want be squiched. Me tribe give tribeaut and eggs and
 Yet the creation of such an item is deceptively simple, if one merely possesses some fenberry and the eye of a rakshasa. (Of course acquiring said eye is another matter entirely - I have yet to meet the rakshasa that would part with one willingly.)
 
 Once these ingredients are assembled the procedure can be completed using the equipment found in any standard mage's laboratory, supplemented with the casting of Melf's Acid Arrow on the combined ingredients."~
-@106435 = ~NP: The magic of the snow globe has disappeared, it is impossible to enter it.~ /*Me need help bad. Me take any me can get.*/
-@106475 = ~NP: Ma'fel'no'sey'kedeh'naar~ /*Student Corpse*/
+@106435 = ~The Snow Globe magic has disappeared, it is impossible to enter it.~
+@106475 = ~Ma'fel'no'sey'kedeh'naar~
 @106476 = ~You have the Amulet of Ages! You must die!~
 @106477 = ~Come, tiny creature. Speak with me if you have the courage.~
 @106540 = ~Hodd~
 @106541 = ~Arwyl~
-@106542 = ~NP: Dwarves for dwarves!~ /*The dwarves is fer the dwarves!*/
+@106542 = ~The dwarves is fer the dwarves!~
 @106543 = ~Death to the leaf lovers!~
 @106544 = ~Them tree huggers is mad! They won't listen to reason!~
 @106545 = ~Only the dryads shall survive!~
@@ -6505,9 +6505,9 @@ Once these ingredients are assembled the procedure can be completed using the eq
 @106548 = ~You shall wither and die!~
 @106549 = ~I'll crush yer skull!~
 @106615 = ~Vaath~
-@106616 = ~NP: Delvar Vanatar~ /*Vaath's Head*/
+@106616 = ~Delvar Vanathar~
 @106617 = ~Me surrender! Me surrender!~
-@106618 = ~NP: This is the severed head of an orc, very similar to Vaat.~ /*This is the decapitated head of an orc.*/
+@106618 = ~This is the decapitated head of an orc similar to the head of the Vaath.~
 @106655 = ~More of Gend's puppies! 100 gold for each head ye bring me!~
 @106656 = ~Over there! Kill them and search their packs for the Words of Power!~
 @106657 = ~Kill every single one of Aarin's lackeys. Kill them all!~
@@ -6517,7 +6517,7 @@ Excerpt:
 "I hate these stinking woods. We were supposed to be doing guard duty in Luskan, but orders came down and next thing you know, we're racing north and hunting for some kind of magical words. 
 
 "Boyd 'The Cockroach' figures we're going to have to try to sneak into the lair of those giants we saw the other day and try to search there. I think his time as patrol leader must be nearly up. I still have that elven arrow I found. It would be a real pity if the elves managed to assassinate our brave leader..."~
-@106660 = ~NP: Yeti~ /*None*/
+@106660 = ~Yeti~
 @106748 = ~Haedraline~
 @106751 = ~This is the final word of power, obtained from a chest in Maugrim's sanctuary.~
 @106877 = ~Master Ford~
@@ -6527,29 +6527,59 @@ Excerpt:
 @106903 = ~Siege Golem~
 @106904 = ~Leesa~
 @106905 = ~Catapult Commander~
-@106906 = ~NP: Golem Master~ /*Golem Walk*/
-@106914 = ~NP: Luskan Soldier~ /*Luskan Sergeant*/
+@106906 = ~Golem Master~
+@106914 = ~Luskan Soldier~
 @106915 = ~Luskan Archer~
-@106916 = ~NP: Priest of Luskan~ /*Luskan Guard*/
-@107065 = ~NP: Wrath of Morag~ /*NWN, Morag*/
-@107066 = ~NP: Rain of Dread Morag~ /*Morag Jump Point*/
-@107067 = ~NP: Spellweaving Gloves~ /*Toggle Spell-Casting*/
-@107068 = ~NP: These gloves crackle with the magical energy that fills them. They are made from an unknown black material. The gloves created by the arch-sorcerer Melantium seem to simply attract magic. When used, they greatly increase the magical abilities of their owner. They seem brand new; it is unlikely that the Sorcerer ever wore them. Most likely, he created them at the beginning of his magical career as an experiment. PARAMETERS: Special abilities: Increased spell casting speed (+3) +1 additional spell per level. Increases Wisdom and Intelligence by 1. Allows you to cast: Spell Strike 1 time per day Energy Drain 1 time per day.~ /*Pseudodragons resemble miniature red dragons, but in looks alone. They do not commit evil acts, in fact they dislike evil acts very much. They do gain the power of fire like their large cousins starting at the masters 5th level.
-Skills: Hide, Move Silently
-Feats: Alertness, Weapon Finesse and Improved Evasion.
-Special: 
- Master Level 
- 5: Cone of Fire 1x
- 10: Cone of Fire 2x
- 15: Cone of Fire 3x
- 20: Cone of Fire 5x*/
-@107069 = ~NP: Staff of the Sorcerer~ /*Staff of Meldanen*/
-@107070 = ~NP: Most magical staves, oddly enough, have similar qualities. The most powerful staves like Khelben Arunsun's infamous &quot;Black Staff&quot; are rare, and can only be crafted by exceptionally powerful Archmages. This same staff surpasses them all. Its curved black surface does not seem to reflect light and at the same time shimmers with all the colors of the rainbow. The material from which it is made is similar to a black fog smoothly flowing into itself, dressed in a solid form. This staff was created by the Archsorcerer Melantium, the most powerful user of magical energy that ever existed, known as the enemy of the Lady of Pain. Melantium created him solely for the sake of maintaining the image as a sorcerer, since he was convinced that he looked good with him. The staff is endowed with great power and many useful properties. STATS: THAC0: +5 Damage: 1D6 +5 Defense Class: +4 bonus Saving Throws: +4 bonus Traits: Petrification Protection Instant Death Protection Imprisonment Protection Protection against 1st, 2nd, and 3rd-level spells. Fear Protection Immunity to normal and +1 weapons. Immunity to draw level Abilities: 5 times per day, the staff can create magical fireballs. Once per day, the power of the staff can protect its owner from any magic for half a minute. Combat Ability: Dispel Magic on each hit Instantly kills the weakest representatives of extraplanar creatures (Demon Knights, Tanarri, Beholders, Mindflies, Shadows, Mephits, Air, Fire, Earth Elementals) Damage Type: Crushing Weight: 4 Speed Factor: 4 Skill Type: Staff Type: Two-handed Requires: 5 Strength Only for: Mages~ /*The wearer can cause the Robe of Scintillating Colors to become a shifting pattern of incredible hues, color after color cascading from the upper part of the robe to the hem in sparkling rainbows of dazzling light.  The colors daze those near the wearer, conceal the wearer, and illuminate the surroundings.
-The first of such robes was said to have been made by a Halruaan Lliira-worshipper named Persephenon.  An unusual Halruaan, Persephenon showed talent for sorcery rather than wizardry.  This social stigma, combined with his pursuit of the Joybringer's path and his flamboyant personality, put Persephenon at odds with his contemporaries.
+@106916 = ~Luskan Priest~
+@107065 = ~Morag's Wrath~
+@107066 = ~Morag's Rain of Dread~
+@107067 = ~Spellbinding Gloves~
+@107068 = ~These gloves crackle with the magical energy that fills them. They are made of an unknown black material. The gloves, created by the archsorcerer Melantium, seem to simply attract magic. When used, they increase their owner's magical abilities very significantly. They appear to be brand new; it is unlikely that the sorcerer has ever worn them. Most likely he created them early in his magical career as an experiment.
 
-Despite these obstacles, Persephenon was appointed captain of a skyship.  He made his robe as a tribute to Lliira, in order to paint rainbows across the sky as he flew.
+Equipped abilities:
+- Improves casting speed by 3
+- The wearer can memorize one additional wizard spell per each level
+- Wisdom: +1
+- Intelligence: +1
 
-This undignified behavior ultimately lost Persephenon his captaincy and later led to his exile from Halruaa.  Welcomed in Luiren by the less-rigid halfling culture, Persephenon enjoyed a happy life and copies of his robes have similarly enjoyed a favored place among the hin bards.*/
+Charge abilities:
+- Can cast Spellstrike once per day
+- Can cast Enegry Drain once per day~
+@107069 = ~Sorcerer's Staff~
+@107070 = ~Most magical staffs, oddly enough, have similar qualities. The most powerful staffs, such as Khelben Arunsun's famous Black Staff, are rare and can only be created by extremely powerful archmages. This staff, however, surpasses them all. Its curved black surface seems to reflect no light and yet it shimmers with all the colors of the rainbow. The material from which it is made is like a black mist flowing into itself in a solid form. This staff was created by archsorcerer Melantium, the most powerful user of magical energy that ever existed, known as the enemy of Lady Pain. Melantium created it solely for the sake of maintaining his image as a sorcerer, as he was convinced he looked good with it. The staff is endowed with immense power and many useful properties.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +4
+- Saving Throws: +4
+- Immune to Petrification
+- Immune to Death spells
+- Immune to Imprisonment
+- Immune to all spells level 1-3
+- Immune to Fear
+- Immune to normal and weapon +1
+- Immune to Level Drain +1
+
+Charge abilities:
+- Fireball 5 times per day
+- Immune to any magic once per day for half of the minute
+
+Combat abilities:
+- Dispel Magic per hit
+- Instantly kill weak extraplanar creatures (Demon Knight, Tanar'ri, Beholder, Illithid, Shadow, Mephit, all Elementals)
+
+THAC0: +5
+Damage: 1d6+5
+Damage Type: crushing
+Weight: 4
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Usable By:
+ Mage~
 @107071 = ~Fools! I cannot be so easy slain!~ [MAUGR05]
 @107072 = ~I am reborn! The Queen of the Old Ones has made me immortal!~ [NWMAU054]
 @107074 = ~Maugrim's Journal~
@@ -6575,7 +6605,7 @@ This undignified behavior ultimately lost Persephenon his captaincy and later le
 ----------
 
 "The ritual is done. The Old Ones will be reborn. The Creators will rule once more. The Awakening has begun. It is now only a matter of time."~
-@107076 = ~NP: Stone is the key~ /*Stone Key*/
+@107076 = ~Stone Key~
 @107077 = ~NP: This stone with intricate runes opens a passage to Maugrim's room.~ /*This massive door covers the entrance to Undermountain.*/
 @107078 = ~NP: To climb this ladder you need a magic stone.~ /*No. I don't want a magical item.*/
 @107296 = ~NP: Dizil Guin~ /*Deelin*/
