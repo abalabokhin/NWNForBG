@@ -236,10 +236,10 @@ IF ~~ THEN BEGIN 39 // from: 36.1
     SetGlobal("DaelanQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc34"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc34"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc34"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc34"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUDA1",Player1,1,1,1)~
   EXIT
 END
@@ -453,12 +453,12 @@ IF ~~ THEN BEGIN 77 // from: 76.1
     SetGlobal("DaelanQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc36"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc36"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMUDA1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMUDA1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc36"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc36"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMUDA1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMUDA1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUDA2",Player1,0,0,0)~ 
   EXIT
 END
@@ -469,10 +469,10 @@ IF ~~ THEN BEGIN 78 // from: 76.2
     SetGlobal("DaelanQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc36"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc36"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc36"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc36"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUDA2",Player1,0,0,0)~
   EXIT
 END
@@ -675,14 +675,14 @@ IF ~~ THEN BEGIN 113 // from: 112.1
     SetGlobal("DaelanQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc37"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc37")) 
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMUDA1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMUDA1")) 
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMUDA2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMUDA2")) 
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc37"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc37")) 
+    ActionOverride("NWITMDES",TakePartyItem("NWAMUDA1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMUDA1")) 
+    ActionOverride("NWITMDES",TakePartyItem("NWAMUDA2"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMUDA2")) 
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUDA3",Player1,0,0,0)~ EXIT
 END
 

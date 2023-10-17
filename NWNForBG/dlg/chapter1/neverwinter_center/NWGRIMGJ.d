@@ -295,10 +295,10 @@ IF ~~ THEN BEGIN 49 // from: 47.1 48.1
     SetGlobal("GrimgnawQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc41"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc41"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc41"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc41"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUGR1",Player1,1,1,1)~
   EXIT
 END
@@ -528,12 +528,12 @@ IF ~~ THEN BEGIN 88 // from: 87.1 87.3
     SetGlobal("GrimgnawQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc42"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc42"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMUGR1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMUGR1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc42"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc42"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMUGR1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMUGR1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUGR2",Player1,0,0,0)~
   EXIT
 END
@@ -544,10 +544,10 @@ IF ~~ THEN BEGIN 89 // from: 87.2 87.4
     SetGlobal("GrimgnawQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc42"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc42"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc42"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc42"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUGR2",Player1,0,0,0)~
   EXIT
 END
@@ -820,14 +820,14 @@ IF ~~ THEN BEGIN 137 // from: 136
     SetGlobal("GrimgnawQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc43"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc43"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMUGR1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMUGR1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMUGR2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMUGR2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc43"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc43"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMUGR1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMUGR1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMUGR2"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMUGR2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMUGR3",Player1,0,0,0)~
   EXIT
 END

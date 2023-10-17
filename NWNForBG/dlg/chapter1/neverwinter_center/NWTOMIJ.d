@@ -334,10 +334,10 @@ IF ~~ THEN BEGIN 55 // from: 54
     SetGlobal("TomiQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc47"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc47"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc47"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc47"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT1",Player1,1,0,0)~
   EXIT
 END
@@ -658,12 +658,12 @@ IF ~~ THEN BEGIN 110 // from: 109.1
     SetGlobal("TomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT2",Player1,2,0,0)~
   EXIT
 END
@@ -674,10 +674,10 @@ IF ~~ THEN BEGIN 111 // from: 109.2
     SetGlobal("TomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT2",Player1,2,0,0)~
   EXIT
 END
@@ -688,12 +688,12 @@ IF ~~ THEN BEGIN 112 // from: 109.3
     SetGlobal("TomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT2",Player1,2,0,0)~
   EXIT
 END
@@ -704,10 +704,10 @@ IF ~~ THEN BEGIN 113 // from: 109.4
     SetGlobal("TomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc48"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc48"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT2",Player1,2,0,0)~
   EXIT
 END
@@ -1004,14 +1004,14 @@ IF ~~ THEN BEGIN 161 // from: 160.1
     SetGlobal("TomiQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc49"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc49"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc49"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc49"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT2"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT3",Player1,3,0,0)~
   EXIT
 END
@@ -1022,14 +1022,14 @@ IF ~~ THEN BEGIN 162 // from: 160.2
     SetGlobal("TomiQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc49"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc49"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc49"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc49"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT2"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT3",Player1,3,0,0)~
   EXIT
 END
@@ -1040,14 +1040,14 @@ IF ~~ THEN BEGIN 163 // from: 160.3
     SetGlobal("TomiQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc49"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc49"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGT2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGT2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc49"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc49"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGT2"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGT2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGT3",Player1,3,0,0)~
   EXIT
 END

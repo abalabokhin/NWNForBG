@@ -325,10 +325,10 @@ IF ~~ THEN BEGIN 115 // from: 114.1
     SetGlobal("LinaQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc30"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc30"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc30"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc30"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI1",Player1,1,1,1)~ EXIT
 END
 
@@ -338,10 +338,10 @@ IF ~~ THEN BEGIN 116 // from: 114.2
     SetGlobal("LinaQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc30"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc30"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc30"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc30"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI1",Player1,1,1,1)~ EXIT
 END
 
@@ -553,10 +553,10 @@ IF ~~ THEN BEGIN 152 // from: 149.1
     SetGlobal("LinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI2",Player1,1,1,1)~
   EXIT
 END
@@ -567,12 +567,12 @@ IF ~~ THEN BEGIN 153 // from: 149.2
     SetGlobal("LinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMULI1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMULI1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMULI1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMULI1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI2",Player1,0,0,0)~
   EXIT
 END
@@ -583,12 +583,12 @@ IF ~~ THEN BEGIN 154 // from: 149.3
     SetGlobal("LinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMULI1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMULI1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMULI1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMULI1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI2",Player1,0,0,0)~
   EXIT
 END
@@ -599,10 +599,10 @@ IF ~~ THEN BEGIN 155 // from: 149.4
     SetGlobal("LinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc32"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc32"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI2",Player1,1,1,1)~
   EXIT
 END
@@ -930,14 +930,14 @@ IF ~~ THEN BEGIN 214 // from: 211.1
     SetGlobal("LinaQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc33"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc33"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMULI2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMULI2"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWAMULI1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWAMULI1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc33"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc33"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMULI2"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMULI2"))
+    ActionOverride("NWITMDES",TakePartyItem("NWAMULI1"))
+    ActionOverride("NWITMDES",DestroyItem("NWAMULI1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI3",Player1,0,0,0)~
   EXIT
 END
@@ -948,10 +948,10 @@ IF ~~ THEN BEGIN 215 // from: 211.2
     SetGlobal("LinaQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc33"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc33"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc33"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc33"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWAMULI3",Player1,0,0,0)~
   EXIT
 END

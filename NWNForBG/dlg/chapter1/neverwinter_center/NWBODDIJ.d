@@ -238,10 +238,10 @@ IF ~~ THEN BEGIN 40 // from: 39.1
     SetGlobal("BoddinokQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc38"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc38"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc38"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc38"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGB1",Player1,1,1,1)~ 
   EXIT
 END
@@ -520,12 +520,12 @@ IF ~~ THEN BEGIN 89 // from: 88.1
     SetGlobal("BoddinokQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc39"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc39"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGB1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGB1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc39"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc39"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGB1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGB1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGB2",Player1,0,0,0)~ 
   EXIT
 END
@@ -536,10 +536,10 @@ IF ~~ THEN BEGIN 90 // from: 88.2
     SetGlobal("BoddinokQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc39"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc39"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc39"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc39"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGB2",Player1,0,0,0)~ 
   EXIT
 END
@@ -812,14 +812,14 @@ IF ~~ THEN BEGIN 138 // from: 137
     SetGlobal("BoddinokQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc40"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc40"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGB1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGB1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWRINGB2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWRINGB2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc40"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc40"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGB1"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGB1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWRINGB2"))
+    ActionOverride("NWITMDES",DestroyItem("NWRINGB2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWRINGB3",Player1,0,0,0)~ EXIT
 END
 

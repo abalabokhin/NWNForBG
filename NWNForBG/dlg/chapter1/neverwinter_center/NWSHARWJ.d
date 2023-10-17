@@ -353,10 +353,10 @@ IF ~~ THEN BEGIN 59 // from: 56.1
     SetGlobal("SharwynQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc44"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc44"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc44"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc44"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS1",Player1,1,1,1)~ 
   EXIT
 END
@@ -367,10 +367,10 @@ IF ~~ THEN BEGIN 60 // from: 56.2
     SetGlobal("SharwynQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc44"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc44"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc44"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc44"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS1",Player1,1,1,1)~
   EXIT
 END
@@ -731,12 +731,12 @@ IF ~~ THEN BEGIN 121 // from: 117.1
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -747,12 +747,12 @@ IF ~~ THEN BEGIN 122 // from: 117.3
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -763,12 +763,12 @@ IF ~~ THEN BEGIN 123 // from: 117.5
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -779,12 +779,12 @@ IF ~~ THEN BEGIN 124 // from: 117.7
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -795,10 +795,10 @@ IF ~~ THEN BEGIN 125 // from: 117.2
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -809,10 +809,10 @@ IF ~~ THEN BEGIN 126 // from: 117.4
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -823,10 +823,10 @@ IF ~~ THEN BEGIN 127 // from: 117.6
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -837,10 +837,10 @@ IF ~~ THEN BEGIN 128 // from: 117.8
     SetGlobal("SharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc45"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc45"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS2",Player1,0,0,0)~
   EXIT
 END
@@ -1134,14 +1134,14 @@ IF ~~ THEN BEGIN 175 // from: 174.1
     SetGlobal("SharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS3",Player1,0,0,0)~
   EXIT
 END
@@ -1152,14 +1152,14 @@ IF ~~ THEN BEGIN 176 // from: 174.2
     SetGlobal("SharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS3",Player1,0,0,0)~
   EXIT
 END
@@ -1170,14 +1170,14 @@ IF ~~ THEN BEGIN 177 // from: 174.3
     SetGlobal("SharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS3",Player1,0,0,0)~
   EXIT
 END
@@ -1188,14 +1188,14 @@ IF ~~ THEN BEGIN 178 // from: 174.4
     SetGlobal("SharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
-    CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-    ActionOverride("NWKHELBN",TakePartyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",DestroyItem("Nwmisc46"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS1"))
-    ActionOverride("NWKHELBN",TakePartyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroyItem("NWBELTS2"))
-    ActionOverride("NWKHELBN",DestroySelf())
+    CreateCreatureObject("NWITMDES",Player1,0,0,0)
+    ActionOverride("NWITMDES",TakePartyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",DestroyItem("Nwmisc46"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS1"))
+    ActionOverride("NWITMDES",TakePartyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroyItem("NWBELTS2"))
+    ActionOverride("NWITMDES",DestroySelf())
     GiveItemCreate("NWBELTS3",Player1,0,0,0)~
   EXIT
 END
