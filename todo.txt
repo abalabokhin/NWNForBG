@@ -1,18 +1,6 @@
 TODO:
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
-*. Сделать, чтобы в третьей главе убиралась (и проверялась в диалоге) версии предметов спутников и из первой главы.
 *. Шили переводит начиная со @106146
-*. Сделать правильно уничтожение предметов через невидимое существо, как описано тут:
-https://www.gibberlings3.net/forums/topic/37247-how-to-properly-destroy-a-party-item-in-a-dialog-with-a-party-member/
-код вот такой - существо только заменить на любое другое... (келбен)
-
-CreateCreatureObject("NWKHELBN",Player1,0,0,0)
-ActionOverride("NWKHELBN",TakePartyItem("Nwmisc33"))
-ActionOverride("NWKHELBN",DestroyItem("Nwmisc33")) 
-ActionOverride("NWKHELBN",TakePartyItem("NWAMULI2"))
-ActionOverride("NWKHELBN",DestroyItem("NWAMULI2")) 
-ActionOverride("NWKHELBN",DestroySelf())
-
 *. Глючит свиток превращения в крысу - превращает - но обратно нельзя говорить и колдовать
 *. На карте NW3100 - если начать атаковать катапульты - то их центр смещается из места где они стоят - только
 на ее версии
@@ -45,6 +33,42 @@ Swashbuckler.
 5. воровство на Ярмарке Мечей
 6. все говорят "лорд", вместо мой лорд - режет слух
 4. Спутники никак не комментируют твои действия
+
+G3 Post:
+
+I would like to present a new quest mode "Neverwinter Night for Baldur's Gate":
+https://github.com/abalabokhin/NWNForBG. The mod adds the whole NWN plot with some minor modifications to
+oBG2/BGT/BG2EE/EET. It is a huge mod with hundreds of new areas, 6 NPCs, lots of dialogs... and Lady Aribeth.
+
+All the useful information should be in the mod's README file, but here I would like to say "Thank you"
+to the author of it: AGKanevchev. He spent more than 5 years creating this content. He created the assembly
+with NWN plot based on some Russian BGT assembly, and I felt, that I should do my best to create the mod from
+his assembly. I have never made BG mods before, so it took me another 4 month to create this mod based on
+his assembly. Now it is ready. There are still some troubles with it, though.
+
+Current problems:
+
+1. There are some known bugs in the mod, that I don't know how to fix at this moment, but they are not critical
+and the mod is fully playable (this minor bugs are desribed in README).
+2. Original assembly was in Russian, and some Russian NWN localization was used for the assembly. I wrote a
+script to automatically find close English lines (in English NWN texts), but there are still some lines that
+are machine translated in the mod. Such line are marked with "NP:" prefix, and it is about 5K of them. I also
+cannot guarantee that other lines don't have mistakes (original NWN texts were changed for the mod). I fix English 
+setup file, but I don't have resources right now to fix all the dialogs. I am also not a native speaker, so, if some
+of you can help with checking English tra files, it would be awesome. Overall, all the English dialogs should be
+"understandable" but might not be "pretty".
+
+Copyright Concerns:
+
+1. Dialogs, Characters and the whole plot were taken from NWN game.
+2. Some area maps were taken from other games eg Pillars of Eternity.
+3. The original assembly was based on BGT, with many mods installed, so portraits for some NPCs might not be
+original, some items (to fill the stores) might also not be original. I don't know at this moment, which mods' 
+content were used in the original assembly, so if there are any copyright concerns, please, let me know, and we 
+will find the appropriate solution (I can exclude your work from the mod or add you to "Thanks and Acknowledgements" 
+or something else).
+
+I hope you will enjoy the mod. All the bug reports are welcomed here (or on the github).
 
 Ценная информация - почему-то если в заклинании стоит эффект "Replace self" и там Timing mode -
 Delay/Permanent, его надо заменить на Instant/Limited, чтобы появлялось существо.

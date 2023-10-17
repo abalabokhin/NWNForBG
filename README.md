@@ -27,6 +27,7 @@ Thanks and Acknowledgements
 * argent77 - for help with TIS files and useful weidu libraries
 * scheele - for testing and some ideas for the mod
 * arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing
+* gibberlings3.net - thanks to the whole community for the help with weidu modding
 
 Languages
 ---------
@@ -71,6 +72,7 @@ Version History
 In development:
 
 - Implement proper removing items from the party in a dialog with party members.
+- Implement removing item versions from chapter 1 in chapter 3 while talking to NPC.
 
 0.91 (10/15/23)
 
