@@ -65,7 +65,6 @@ Known Bugs:
 -----------
 
 - Transform into Wererat ability doesn't work well on EE: after turning into wererat, turning back to human form plays the anmation, but a character still cannot talk or cast spells.
-- If attack catapults in third chapter, their creatures "jump out" of the catapults and become located next to the catapults on the map after they are hostile. It looks bad, but doens't affect the gameplay.
 
 Version History
 ---------------
@@ -73,6 +72,7 @@ In development:
 
 - Implement proper removing items from the party in a dialog with party members.
 - Implement removing item versions from chapter 1 in chapter 3 while talking to NPC.
+- Fixed bug (thanks to AGKanevchev) if attack catapults in third chapter, their creatures "jumped out" of the catapults and become located next to the catapults on the map after they are hostile.
 
 0.91 (10/15/23)
 
