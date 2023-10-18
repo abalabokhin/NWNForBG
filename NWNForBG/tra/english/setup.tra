@@ -6698,9 +6698,9 @@ Not Usable By:
  Shapeshifter
  Stalker~
 @107523 = ~This massive scale, stripped from a blue dragon, is as cold as ice on the outside, while its inside radiates a pleasant warmth. Legend has it that it can be magically forged into a powerful armor.~
-@107526 = ~NP: Defense against slashing weapons~ /*Protector Against the Storm*/
-@107527 = ~NP: Protection against piercing weapons~ /*Protection from Cold*/
-@107528 = ~NP: Blunt Defense~ /*Protection from Good*/
+@107526 = ~Shield against slashing weapon~
+@107527 = ~Shield against piercing weapon~
+@107528 = ~Shield against crushing weapon~
 @107529 = ~~ [NWSIMB1]
 @107530 = ~~ [NWSIMB2]
 @107531 = ~NP: Morag lost her protection from fire.~ /*Cloak of Protection vs Good*/
