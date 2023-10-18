@@ -6606,10 +6606,10 @@ Usable By:
 
 "The ritual is done. The Old Ones will be reborn. The Creators will rule once more. The Awakening has begun. It is now only a matter of time."~
 @107076 = ~Stone Key~
-@107077 = ~NP: This stone with intricate runes opens a passage to Maugrim's room.~ /*This massive door covers the entrance to Undermountain.*/
-@107078 = ~NP: To climb this ladder you need a magic stone.~ /*No. I don't want a magical item.*/
-@107296 = ~NP: Dizil Guin~ /*Deelin*/
-@107297 = ~NP: Perihor Shva~ /*Perigor*/
+@107077 = ~This stone with intricate runes opens a passageway to Maugrim's room.~
+@107078 = ~To climb this ladder you need a magic stone.~
+@107296 = ~Disil Guin~
+@107297 = ~Perigor Schwa~
 @107298 = ~Wounded Soldier~
 @107304 = ~Neverwinter Under Siege
 
@@ -6619,10 +6619,10 @@ If the catapults could be destroyed and the wizards controlling the war golems s
 
 With the catapults destroyed and the war golems vanquished the defenders of Neverwinter have been given some small hope of resisting the Luskan invasion.~
 @107366 = ~Trancar~
-@107367 = ~NP: Chani Weinolt~ /*Waynolt*/
-@107368 = ~NP: Goran Yalana~ /*Grenade*/
-@107369 = ~NP: Teren Mirniman~ /*Mirniman*/
-@107370 = ~NP: Vale Rayer~ /*Reyer*/
+@107367 = ~Chani Waynolt~
+@107368 = ~Goran Jalana~
+@107369 = ~Theren Mirniman~
+@107370 = ~Vale Reyer~
 @107444 = ~Rescue Leesa
 
 Luce, one of the working girls at the Moonstone Mask, is desperate for someone to find her little sister, Leesa. The girl was last seen in the Luskan controlled area of the city.~
@@ -6635,8 +6635,8 @@ Leesa, the young sister of Luce at the Moonstone Mask, is dead - another casualt
 @107447 = ~Rescue Leesa
 
 Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
-@107449 = ~NP: Neverwinter~ /*To Neverwinter*/
-@107450 = ~NP: This entrance is blocked by barrels, boxes and other rubbish.~ /*This door is inscribed with druidic runes.*/
+@107449 = ~Neverwinter~
+@107450 = ~This entrance is blocked by barrels, boxes and other junk.~
 @107451 = ~Asheera's Amulet~
 @107452 = ~NP: This amulet belonged to Ashira, a mysterious warrior from another world. Its magical properties provide additional protection against Morag and her lizard-like minions. STATS: Equip Traits: +3 THAC0 and Damage against Lizardmen +15 Magic Resistance +1 Defense Weight: 3 Cannot be used by: Wizard Killers~ /*This amulet was given away by Asheera, a mysterious warrior from another world. Its magical properties will provide some additional protection against Morag and her own lizard minions.*/
 @107500 = ~Asheera~
