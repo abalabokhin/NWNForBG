@@ -70,6 +70,8 @@ Version History
 ---------------
 In development:
 
+0.92 (10/18/23)
+
 - Implemented proper removing items from the party in a dialog with party members.
 - Implemented removing item versions from chapter 1 in chapter 3 while talking to party members.
 - Fixed bug (thanks to AGKanevchev) if attack catapults in third chapter, their creatures "jumped out" of the catapults and become located next to the catapults on the map after they are hostile.
