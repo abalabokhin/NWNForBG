@@ -3,7 +3,7 @@ NWNForBG
 
 Neverwinter Nights for Baldur's Gate
 ------------------------------------
-Version: 0.89
+Version: 0.92
 
 Author: AGKanevchev
 ---------------
