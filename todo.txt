@@ -1,9 +1,6 @@
 TODO:
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
-*. Шили переводит начиная со @106146
 *. Глючит свиток превращения в крысу - превращает - но обратно нельзя говорить и колдовать
-*. На карте NW3100 - если начать атаковать катапульты - то их центр смещается из места где они стоят - только
-на ее версии
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 
@@ -36,25 +33,27 @@ Swashbuckler.
 
 G3 Post:
 
-I would like to present a new quest mode "Neverwinter Night for Baldur's Gate":
-https://github.com/abalabokhin/NWNForBG. The mod adds the whole NWN plot with some minor modifications to
-oBG2/BGT/BG2EE/EET. It is a huge mod with hundreds of new areas, 6 NPCs, lots of dialogs... and Lady Aribeth.
+I would like to present a new quest mode "Neverwinter Night for Baldur's Gate" (with the permission of its
+author of cause): https://github.com/abalabokhin/NWNForBG/exact_link lalala. The mod adds the whole NWN plot 
+with some minor modifications to oBG2/BGT/BG2EE/EET. It is a huge mod with hundreds of new areas, 6 NPCs, 
+lots of dialogs and... Lady Aribeth.
 
 All the useful information should be in the mod's README file, but here I would like to say "Thank you"
 to the author of it: AGKanevchev. He spent more than 5 years creating this content. He created the assembly
-with NWN plot based on some Russian BGT assembly, and I felt, that I should do my best to create the mod from
+with NWN plot based on some Russian BGT assembly, and I felt that I should do my best to create the mod from
 his assembly. I have never made BG mods before, so it took me another 4 month to create this mod based on
-his assembly. Now it is ready. There are still some troubles with it, though.
+his assembly (and I am still not sure, that I am doing everything 100% properly in weidu).
+However, now I consider the mod to be ready with some minor issues, though.
 
 Current issues:
 
 1. There are some known bugs in the mod, that I don't know how to fix at this moment, but they are not critical
 and the mod is fully playable (these minor bugs are desribed in README).
 2. Original assembly was in Russian, and some Russian NWN localization was used for the assembly. I wrote a
-script to automatically find close English lines (in English NWN texts), but there are still some lines that
-are machine translated in the mod. Such line are marked with "NP:" prefix, and it is about 5K of them. I also
-cannot guarantee that other lines don't have mistakes (original NWN texts were changed for the mod). I fix English 
-setup file, but I don't have resources right now to fix all the dialogs. I am also not a native speaker, so, if some
+script to automatically find close English lines (in English NWN texts), but the lines the script was not
+able to find a match, are machine translated from Russian. Such line are marked with "NP:" prefix, and it is about 5K of them. I also
+cannot guarantee that other lines don't have mistakes (original NWN texts were changed for the mod). I fixed English
+setup.tra file, but I don't have resources right now to fix all the dialogs. I am also not a native speaker, so, if some
 of you can help with checking English tra files, it would be awesome. Overall, all the English dialogs should be
 "understandable" but might not be "pretty".
 
@@ -63,12 +62,12 @@ Copyright Concerns:
 1. Dialogs, Characters and the whole plot were taken from NWN game.
 2. Some area maps were taken from other games eg Pillars of Eternity.
 3. The original assembly was based on BGT, with many mods installed, so portraits for some NPCs might not be
-original, some items (to fill the stores) might also not be original. I don't know at this moment, which mods' 
-content were used in the original assembly, so if there are any copyright concerns, please, let me know, and we 
-will find the appropriate solution (I can exclude your work from the mod or add you to "Thanks and Acknowledgements" 
+original, some items (to fill the stores) might also not be original. I don't know at this moment, which mods'
+content were used in the original assembly, so if there are any copyright concerns, please, let me know, and we
+will find the appropriate solution (I can exclude your work from the mod or add you to "Thanks and Acknowledgements"
 or something else).
 
-I hope you will enjoy the mod. All the bug reports are welcomed here (or on the github).
+I hope you will enjoy the mod. All the bug reports and ideas how to improve the mod are welcomed here (or on the github).
 
 Ценная информация - почему-то если в заклинании стоит эффект "Replace self" и там Timing mode -
 Delay/Permanent, его надо заменить на Instant/Limited, чтобы появлялось существо.
