@@ -6638,13 +6638,26 @@ Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107449 = ~Neverwinter~
 @107450 = ~This entrance is blocked by barrels, boxes and other junk.~
 @107451 = ~Asheera's Amulet~
-@107452 = ~NP: This amulet belonged to Ashira, a mysterious warrior from another world. Its magical properties provide additional protection against Morag and her lizard-like minions. STATS: Equip Traits: +3 THAC0 and Damage against Lizardmen +15 Magic Resistance +1 Defense Weight: 3 Cannot be used by: Wizard Killers~ /*This amulet was given away by Asheera, a mysterious warrior from another world. Its magical properties will provide some additional protection against Morag and her own lizard minions.*/
+@107452 = ~This amulet was given away by Asheera, a mysterious warrior from another world. Its magical properties will provide some additional protection against Morag and her own lizard minions.
+
+STATISTICS:
+
+Equipped abilities:
+- THAC0 against Lizard Man: +3
+- Damage against Lizard Man: +3
+- Magic Resistance: +15
+- Armor Class: +3
+
+Weight: 3
+
+Not Usable By:
+ Wizard Slayer~
 @107500 = ~Asheera~
-@107502 = ~NP: Guardian Glyph of the Portal~ /*Ancient Symbol of Tyr*/
-@107503 = ~NP: This ward symbol, made up of two halves obtained by you in a fight with dragons, activates a portal leading to the Morag abode.~ /*This key, fashioned from ironwood, bears the markings of Archdruid Aawill's druid grove.*/
-@107504 = ~NP: Part of the security symbol~ /*Stone Golem Parts*/
-@107505 = ~NP: It appears to be part of some sort of magical item.~ /*I require the assistance of a magic item!*/
-@107506 = ~NP: When you combine the two parts of the symbol together, they merge together into a protective symbol. This must be the key that activates the portal to Morag's retreat.~ /*I'm not about to risk it myself but if some brave adventurer wanted to go back there for me...*/
+@107502 = ~Portal Ward Glyph~
+@107503 = ~This ward glyph, made up of two halves you obtained in the bittle with dragons, activates the portal leading to the Morag abode.~
+@107504 = ~Part of Ward Glyph~
+@107505 = ~It appears to be part of some sort of a magical item.~
+@107506 = ~When you combine the two parts of the glyph together, they merge into the ward glyph. It must be the key that activates the portal to Morag's abode.
 @107507 = ~Old One Cleric~
 @107508 = ~We are the masters, the Creators, the Old Ones. Long have we slept, and in our absence the lesser races have grown bold!~ [NWMORA71]
 @107509 = ~The slaves act as kings, building cities and nations and laying claim to that which is ours!~ [NWMORA72]
@@ -6657,26 +6670,23 @@ Leesa and Luce have been reunited in the relative safety of the Moonstone Mask.~
 @107517 = ~Tear down the cities! **hiss** Death to the warm bloods!~ [NWLIZA51]
 @107518 = ~Death to the traitors! **hiss** Death to the Word Slaves!~ [NWLIZA52]
 @107519 = ~Hail, Morag! **hiss** Lead us to vengeance!~ [NWLIZA53]
-@107520 = ~NP: You cannot use the portal during combat!~ /*You can not use this item!*/
-@107521 = ~NP: Blue dragon armor~
-@107522 = ~NP: The Year of Dragon Fury (1018 LD) brought great destruction to the Central Regions, but not only to the people there. Dragons fell, littering the battlefield with their corpses. The looters then stripped the weapons and armor from the slain, and skinned the dragons. Several sets of blue dragon armor were created, but the names of the creator and the dragons whose skins were used are unknown to anyone. In an unfathomable way, the blacksmith Cromwell has figured out the secret to making this armor and has recreated it for you. 
+@107520 = ~You cannot use the portal during combat!~
+@107521 = ~Blue Dragon Armor~
+@107522 = ~Year of the Dracorage (1018 DR) brought great destruction to the Central Regions, but not only to the people there. Dragons fell, littering the battlefield with their corpses. The looters then stripped the weapons and armor from the slain, and skinned the dragons. Several sets of blue dragon armor were created, but the names of the creator and the dragons whose skins were used are unknown to anyone. In an unfathomable way, the blacksmith Cromwell has figured out the secret to making this armor and has recreated it for you.
 
-PARAMETERS:
+STATISTICS:
 
-Equipment Features:
- - Cold resistance: +100%
- - Immunity to wing strike
- - Immunity to stun
+Equipped abilities:
+- Cold Resistance: +100%
+- Immunity to Wing Buffet
+- Immunity to Stun
 
-Base Defense Class: -2
-Defense Class Modifiers:
- +3 improvement against stabbing
- +3 improvement against throwing
- +4 improvement against chopping
+Armor Class: -2 (-6 vs. slashing, -5 vs. piercing and missile)
 
 Weight: 20
-Requirements: Strength 15
-Cannot use:
+Requirements: 15 Strength
+
+Not Usable By:
  Bard
  Barbarian
  Thief
@@ -6685,9 +6695,9 @@ Cannot use:
  Mage
  Monk
  Avenger
- Werewolf
+ Shapeshifter
  Stalker~
-@107523 = ~NP: This massive scale, torn from a blue dragon, is cold as ice on the outside, while its inside radiates a pleasant warmth. Legend has it that powerful armor can be forged from it magically.~ /*This massive statue looms above you, as if about to strike you at any moment. Two exceptionally large rubies seem to be the statue's eyes.*/
+@107523 = ~This massive scale, stripped from a blue dragon, is as cold as ice on the outside, while its inside radiates a pleasant warmth. Legend has it that it can be magically forged into a powerful armor.~
 @107526 = ~NP: Defense against slashing weapons~ /*Protector Against the Storm*/
 @107527 = ~NP: Protection against piercing weapons~ /*Protection from Cold*/
 @107528 = ~NP: Blunt Defense~ /*Protection from Good*/
