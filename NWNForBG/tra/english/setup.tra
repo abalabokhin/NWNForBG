@@ -5191,7 +5191,7 @@ Equipped abilities:
 Combat abilities:
 - Additional damage againts Good creatures: +5
 - Additional damage againts trolls: +5
-- Recover 2HP per hit
+- Recover 2 HP per hit
 
 THAC0: +4
 Damage: 1d10+2
@@ -6559,7 +6559,7 @@ Equipped abilities:
 - Immune to all spells level 1-3
 - Immune to Fear
 - Immune to normal and weapon +1
-- Immune to Level Drain +1
+- Immune to Level Drain
 
 Charge abilities:
 - Fireball 5 times per day
@@ -6703,16 +6703,16 @@ Not Usable By:
 @107528 = ~Shield against crushing weapon~
 @107529 = ~~ [NWSIMB1]
 @107530 = ~~ [NWSIMB2]
-@107531 = ~NP: Morag lost her protection from fire.~ /*Cloak of Protection vs Good*/
-@107532 = ~NP: Morag lost her protection from the cold.~ /*Cloak of Protection vs Chaos*/
-@107533 = ~NP: Morag lost her protection against electricity.~ /*Resist Electrical Energy*/
-@107534 = ~NP: Morag lost her protection from the acid.~ /*Protection from Acid*/
-@107535 = ~NP: Morag lost her defense against slashing weapons.~ /*"I killed her myself."*/
-@107536 = ~NP: Morag lost protection from penetrating and piercing weapons.~ /*So much for that weapon.*/
-@107537 = ~NP: Morag lost her defense against blunt weapons.~ /*"I killed her myself."*/
-@107545 = ~NP: The ground beneath your feet shakes and cracks. The world created by Morag is collapsing!~ /*The animal brushes against you cheerfully and returns its attention elsewhere.*/
+@107531 = ~Morag lost her shield againts fire.~
+@107532 = ~Morag lost her shield againts cold.~
+@107533 = ~Morag lost her shield againts electricity.~
+@107534 = ~Morag lost her shield againts acid.~
+@107535 = ~Morag lost her shield againts slashing weapon.~
+@107536 = ~Morag lost her shield againts piercing weapon.~
+@107537 = ~Morag lost her shield againts crushing weapon.~
+@107545 = ~The ground beneath your feet is shaking and cracking. The world Morag created is collapsing!~
 @107546 = ~Old One Warrior~
-@107547 = ~NP: Wizard of the Ancients~ /*Mercenary Wizard*/
+@107547 = ~Old One Wizard~
 @107581 = ~Save the Supply Lines
 
 The head of Obould Many-Arrows has been delivered to Rolkid of the Mighty lance, and the threat to the Lords' Alliance supply lines has been well and truly vanquished.~
@@ -6778,8 +6778,8 @@ Significant strides have been made in the fight against the Wailing Death and th
 @107609 = ~Wailing Death and the Waterdhavian creatures
 
 Significant strides have been made in the fight against the Wailing Death and those behind it. Two of the Waterdhavian creatures - sent by Khelben Arunsun and lost in the attack on the Neverwinter Academy - have been recovered, and have been delivered to Lady Aribeth in the Hall of Justice. She awaits the return of the remaining two beasts in the company of her lover, Abbot Fenthick Moss, and her peer, Watchknight of Helm, Desther Indelayne. Once all have been found, the ritual to create the cure can commence.~
-@107621 = ~NP: This entrance is blocked by magic~ /*What are these Old Ones?*/
-@107622 = ~NP: Following Kallik's instructions in the note you have, you make the necessary passes with your hands and the entrance opens.~ /*The gossip of the nobility need not concern you, and likely wouldn't be the type of information you want anyway.*/
+@107621 = ~This entrance is blocked by magic~
+@107622 = ~Following Kallik's instructions in the note you have, you make the necessary passes with your hands and the entrance opens.~
 @107623 = ~Beggar's Nest: A Missing Brother
 
 Jemanie is worried about his brother, Torin. He has been missing for several days now, and Jemanie fears that something has happened to him. Apparently he was involved with a strange cult that may have something to do with the zombie infestation. The group has an estate in the northeast of the Beggar's Nest.~
@@ -6789,12 +6789,12 @@ The body of Jemanie's brother Torin was found beneath the cultist estate in the 
 @107625 = ~Beggar's Nest: A Missing Brother
 
 Jemanie has been told of his brother's death. He was understandably upset and would not be consoled.~
-@107627 = ~NP: The sound of a door opening can be heard from afar.~ /*You can hear the sound of a door opening.*/
-@107628 = ~NP: The sound of a door closing can be heard from afar.~ /*You can hear the sound of a door opening.*/
-@107655 = ~NP: To the caves of the bugbears~ /*Bugbear Cave*/
-@107656 = ~NP: To the caves of goblins and orcs~ /*Goblinoid Group*/
-@107657 = ~NP: To the lower caves~ /*To Lower Caves*/
-@107658 = ~NP: Totem of skulls and small bones.~ /*Door out of crypts, into troll caves.*/
+@107627 = ~You can hear the sound of a door opening from afar.~
+@107628 = ~You can hear the sound of a door closing from afar.~
+@107655 = ~To the Bugbear Caves~
+@107656 = ~To Goblin and Orc Caves~
+@107657 = ~To Lower Caves~
+@107658 = ~A totem of skulls and small bones.~
 @107669 = ~South Road: Poor Neva
 
 A young man by the name of Neva has apparently been kidnapped by bandits. According to his siblings, Tarran and Jaheel, he is being held near some standing stones by the entrance to the Charwood. Adventurers are to meet the siblings there to attempt a rescue.~
@@ -6826,65 +6826,164 @@ However, the primary ingredient - the tongue of a slaad - poses challenges far b
 
 Needless to say, anyone attempting the process beyond the confines of a carefully controlled environment such as a mage's laboratory would be doomed to encounter failure and disappointment."~
 @107717 = ~Fenberry~
-@107718 = ~NP: These are berries from a bush of a marsh plant.~ /*These are the berries made by the fenberry bush.*/
-@107719 = ~NP: Staff of Might +4~ /*Belt of Agility +4*/
-@107720 = ~NP: Staves of might are familiar to most spellcasters, icons of arcane learning, so to speak. These staves are extremely useful, so many are made or bought, and it is impossible to trace the history of each of them. PARAMETERS: Features when equipped: - Immunity to spells affecting freedom of movement Allows you to cast spells: Ray of weakness 3 times per day Dementia 2 times per day Drain energy 1 time per day Enchantment: +4 THAC0: +4 improvement Damage: 1d6 +4 Type damage: bludgeoning Speed factor: 2 Weapon skill: combat staff Type: two-handed Weight: 3 Requirements: strength 5 Cannot use: Monks~ /*Staffs of Power are immediately familiar to most spellcasters, and are almost icons of arcane study. The inherent utility of such staffs has resulted in many being crafted or commissioned, and specific histories are usually lost in the crowd.*/
-@107721 = ~NP: Ring of Regeneration +2~ /*Ring of Regeneration*/
-@107722 = ~NP: The humble wizard Huhhus discovered a sure way to make a rejuvenating potion from troll flesh, but few were willing to drink the vile liquid, so the experiment was deemed a failure. Later, one of his students decided to create a regeneration ring filled with ichor and troll brains. External application did not cause such disgust and gained much more success. PARAMETERS: Features when equipped: - Regeneration: 2 health points per round Weight: 0 Cannot use: Wizard Killer~ /*The lowly wizard Huhhus discovered an efficient way to distill troll flesh into a regenerative potion, but few people were willing to drink the vile liquid and it was considered a failure. Decades later, one of his students built upon these foundations to create a regenerative ring fueled by bits of troll ichor and brains. This external use caused far less nausea, and the invention met with success.*/
+@107718 = ~These are the berries made by the fenberry bush.~
+@107719 = ~Staff of Might +4~
+@107720 = ~Staffs of might are familiar to most spellcasters, they are icons of arcane learning, so to speak. These staffs are extremely useful, many are either made or purchased, and it is impossible to trace the history of each one.
+
+STATISTICS:
+
+Equipped abilities:
+- Constant effect of Free Action
+
+Charge abilities:
+- Ray of Enfeeblement 3 times per day
+- Feeblemind 2 times per day
+- Energy Drain once per day
+
+THAC0: +4
+Damage: 1d6+4
+Damage Type: crushing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requirements: 5 Strength
+
+Not Usable By:
+ Monk~
+@107721 = ~Ring of Regeneration +2~
+@107722 = ~The lowly wizard Huhhus discovered an efficient way to distill troll flesh into a regenerative potion, but few people were willing to drink the vile liquid and it was considered a failure. Decades later, one of his students built upon these foundations to create a regenerative ring fueled by bits of troll ichor and brains. This external use caused far less nausea, and the invention met with success.
+
+STATISTICS:
+
+Equipped abilities:
+- Regenerates 2 HP per round
+
+Weight: 0
+Not Usable By:
+ Wizard Slayers~
 @107723 = ~Amulet of Natural Armor +4~
-@107724 = ~NP: When the warrior Thelenn grew old and could no longer participate in battles, he became a trainer teaching local youths martial arts. His long-time interest in magic flared up again, his skill grew, and he soon began to make such amulets so that his students would not hurt themselves. The amulets came out surprisingly good and, taking a few pieces, he again went in search of adventure. PARAMETERS: Features when equipped: - Defense class: +4 improvement - Saving Throws: +2 improvement Weight: 1 Prerequisites: Cannot be worn with any enchanted armor or other defense equipment Cannot use: Wizard slayer~ /*When old age forced his retirement from combat, the warrior Telenn became a tutor instead, instructing local youths in the fighting arts. His longtime interest in magic was rekindled and, as his skills improved, he began creating these amulets to prevent his students from injuring themselves. Eventually his work became so good that he gave up the quiet life and resumed adventuring, amulets in tow.*/
+@107724 = ~When old age forced his retirement from combat, the warrior Telenn became a tutor instead, instructing local youths in the fighting arts. His longtime interest in magic was rekindled and, as his skills improved, he began creating these amulets to prevent his students from injuring themselves. Eventually his work became so good that he gave up the quiet life and resumed adventuring, amulets in tow.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +4
+- Saving Throws: +2
+
+Weight: 1
+Not Usable By:
+ Wizard Slayers~
 @107725 = ~Gargoyle Boots~
-@107726 = ~NP: Legend has it that the magician who created the Gargoyle Boots imbued them with the spirit of a real gargoyle. Unfortunately, these boots did not protect their hapless creator from the revenge of the gargoyle fiancé. And the fact that there are several pairs of such boots only proves that all this is fiction, an attempt to explain the durability that Gargoyle Boots give to the owner. PARAMETERS: Features when equipped: - Defense class: +2 upgrade Special ability: Stoneskin Number of charges: 3 times per day Weight: 1 Useable: All~ /*Legend holds that the mage who created the Gargoyle Boots trapped the spirit of an actual gargoyle within them. Unfortunately, the boots couldn't protect the nameless wizard from the vengeance of the gargoyle's mate. As there are multiple variations on the Gargoyle Boots, it is assumed that the tale is, though entertaining, a mere fabrication - an interesting way to explain the magical toughness that the boots provide.*/
+@107726 = ~Legend holds that the mage who created the Gargoyle Boots trapped the spirit of an actual gargoyle within them. Unfortunately, the boots couldn't protect the nameless wizard from the vengeance of the gargoyle's mate. As there are multiple variations on the Gargoyle Boots, it is assumed that the tale is, though entertaining, a mere fabrication - an interesting way to explain the magical toughness that the boots provide.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+
+Charge abilities:
+- Stoneskin 3 times per day
+
+Weight: 1~
 @107727 = ~Crystal Robes~
-@107728 = ~NP: The delicate material of these robes glows slightly, indicating that they contain powerful magic. PARAMETERS: Features when equipped: - Protection class: -1 deterioration - Electricity resistance: +25% - Acid resistance: +25% - Magic resistance: +25% Special ability: Blur Area of effect: on self Number of charges: 3 times per day Weight: 3 Can only be used by: Mages and Wizards~ /*Type of Feat: GeneralPrerequisite: Turn Undead, Cha 13+, Str 13+, Power Attack.
-Specifics: The character may spend one of his turn undead attempts to add his Charisma bonus to his armor class for a number of rounds equal to the Charisma bonus.
-Use: Selected.*/
-@107737 = ~NP: trading post~ /*Pinging:*/
-@107738 = ~NP: Aarin's house~ /*Old Man's Home*/
+@107728 = ~The delicate material of these robes emits an eerie glow that hints at the powerful magic contained within.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: -1
+- Electricity Resistance: +25%
+- Acid Resistance: +25%
+- Magic Resistance: +25%
+
+Charge abilities:
+- Blur 3 times per day
+
+Weight: 3
+
+Usable By:
+ Mage
+ Sorcerer~
+@107737 = ~Trading Post~
+@107738 = ~Aarin's House~
 @107739 = ~Many-Starred Cloak Enclave~
 @107741 = ~Plague-Ridden Blankets~
 @107742 = ~Though no longer contagious, these blankets show obvious signs of having once been contaminated with the Wailing Death. Anyone who used them was certain to have contracted the disease.~
 @107747 = ~Snow Globe
 
 Lillian Cambridge is looking for a brave adventurer to recover a valuable snow globe stolen from her by a wizard named Nax. In exchange she has offered to reveal the location of one of the Words of Power. She believes Nax is exploring an ancient mage's laboratory somewhere in the Coldwood.~
-@107753 = ~NP: Lyenne's grave~ /*Layenestomb*/
+@107753 = ~Layenes Tomb~
 @107754 = ~Forest Exit~
-@107755 = ~NP: Orc camp~ /*Drow Camp*/
-@107756 = ~Wizardsdungeon~
-@107757 = ~NP: To the garden of the Shaper ruins~ /*Creator Race Ruins Exit*/
+@107755 = ~Orc Camp~
+@107756 = ~Wizard's Dungeon~
+@107757 = ~To the Creator Race Ruins Garden~
 @107758 = ~Sundial~
-@107759 = ~NP: You forgot to plant seeds!~ /*You have found a secret door!*/
-@107760 = ~NP: Pond of mixed colors~ /*Pool of Secondary Colors*/
-@107761 = ~NP: Pond of primary flowers~ /*Pool of Primary Colors*/
-@107762 = ~NP: You cannot use this bottle in this location.~ /*You cannot use that item.*/
+@107759 = ~You forgot to plant seeds!~
+@107760 = ~Pool of Secondary Colors~
+@107761 = ~Pool of Primary Colors~
+@107762 = ~You cannot use this bottle in this location.~
 @107767 = ~Betrayal! The tainted essence of a dead dragon! Now you will die!~ [NWDRA450]
-@107768 = ~NP: Gorgota's lair~ /*Orc Lair*/
-@107769 = ~NP: Leaving the area~ /*Castle Exit*/
-@107770 = ~NP: Hill Giant's Cave~ /*Hill Giants Group*/
-@107771 = ~NP: Lair of the fire giants~ /*Firegiantking*/
+@107768 = ~Gorgotha's Lair~
+@107769 = ~Area Exit~
+@107770 = ~Hill Giants' Cave~
+@107771 = ~Hill Giants' Lair~
 @107772 = ~Dragon Lair~
 @107773 = ~Orc Lair~
-@107781 = ~NP: Cape of Mithran~ /*Cape of Winter*/
-@107782 = ~NP: This elven cloak of wool and silk was worn by a mighty mage from Myth Nantara named Mithran Lightpetal. Mithran was known for his love of wandering and his favorable attitude towards &quot;N'TelQuessir&quot; or &quot;not-of-the-folk&quot; - not the elves of this world. The cape was his undoing, having been woven and enchanted by his dark elf mistress, Rauva Wrynn. The very appearance of this dark blue cloak is so non-elven that it arouses suspicion. A drow hunter named Gaedel, an acquaintance of Mithran, accidentally discovered Rauva's dwelling in the forests surrounding Myth Nantar. With a small group of warriors, Gaedel quickly burned the hut and killed her herself. When Mitran found out what had happened, he went mad with rage. The mad magician razed Gaedel's hunting lodge to the ground and killed all his brothers. The Gaedel family sought revenge by killing Mithran, even at the cost of their lives. The cape was discovered by his close friend, the dwarf warrior Hael Bronzeskin. It is not known for certain, but it is said that she died in the waves that engulfed Myth Nantar when the proud city sank to the bottom of the Sea of Fallen Stars several years later. PARAMETERS: Bonus to Defense Class: 3 Bonus to Saving Throws: +2~ /*This hefty tome attempts a complete history of the Neverwinter Wood, but the crux of what is known is summed up in the following passage:
-While many a tale has suggested that there are dark forces that call the wood their home, there is yet no definite answer as to what truly hides within. Many a glade has a guardian force watching over it, but never one so malevolent as is supposedly in residence there. These woods have never been logged by men, for they are feared and shunned by locals, and even orc hordes alter their course around and never through, though usually only after suffering a goodly number of stubborn casualties.*/
-@107810 = ~NP: A guard symbol is required to enter the portal.~ /*Strange symbols decorate the gong.*/
-@107811 = ~NP: Caster Crown~ /*Spellstaff*/
-@107812 = ~NP: This crown is made of solid gold and adorned with precious stones. The stones shine with an inner light that can only be of magical origin. The crown makes the wearer unusually attractive, resistant to magic, and gives him certain magical abilities. PARAMETERS: Features when equipped: - Magic resistance: +20% - Increases charisma to 18 - Doubles the number of level 1 and 2 spells Special ability: Mental subjugation Number of charges: 3 times per day Effect: the caster gains control over the creature's mind. Weight: 2 Use: Bard Mage~ /*This pure gold chalice is finely worked and bears the symbol of a sun rising upon a blooming rose. On command, it sheds a bright light equal to a light spell. The chalice can be commanded to create a healing circle, which uses one charge. When all three of its charges have been used, the chalice retains its light ability.*/
-@107813 = ~NP: Crown~ /*Cow*/
-@107814 = ~NP: The crown is a headdress that is a symbol of power. Crowns could have a different shape: hats, crowns, hoops crowned with leaves, teeth or plates. PARAMETERS: Weight: 2~ /*This simple amulet bears the symbol of a red tiger on its face and an Uthgardt tribal rune on the back.*/
-@107819 = ~NP: Neverwinter chapter 1~ /*Neverwinter Under Siege*/
-@107820 = ~NP: Neverwinter chapter 2~ /*Neverwinter Under Siege*/
-@107821 = ~NP: Neverwinter chapter 3~ /*Neverwinter Under Siege*/
-@107822 = ~NP: Neverwinter chapter 4~ /*Neverwinter Under Siege*/
-@107823 = ~NP: Neverwinter epilogue~ /*Neverwinter Under Siege*/
+@107781 = ~Mithran's Cloak~
+@107782 = ~This elven cloak, woven from silk and wool, was worn by a powerful wizard from Myth Nantar named Mithran Lightpetal. Mithran was well known for his love of travel and his acceptance of the "N'Tel'Quessir," or "not people," the non-elven people of the world. The cloak was actually the cause of his doom, for it was woven and enchanted by his dark elf lover, Rauva Vrinn. The style of the black and midnight-blue cloak was so obviously non-elven that his associates became suspicious. Eventually, an acquaintance of Mithran, an elven drow-hunter named Gaedel, discovered Rauva's secluded hiding spot in the forests surrounding Myth Nantar. With a small band of warriors, Gaedel stormed her hut and quickly killed her. When Mithran discovered what had happened, he went berserk with fury. The mad mage assaulted the hunting lodge of Gaedel and his brothers, killing them all and leveling the lodge. Gaedel's family eventually attempted to take vengeance for the act, killing Mithran at loss of most of their house. Mithran's cloak was recovered by his close friend, the dwarven warrior Hael Bronzelake. Had it not been, it would have been swallowed up under the waves with Myth Nantar when that proud city was drowned in the Sea of Fallen Stars several years later.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- Saving Throws: +2~
+@107810 = ~A Ward Glyph is required to enter the portal.~
+@107811 = ~Caster's Crown~
+@107812 = ~This crown is made of solid gold and adorned with precious stones. The stones shine with an inner light that can only be of magical origin. The crown makes the wearer unusually attractive, resistant to magic, and gives him certain magical abilities.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +20%
+- Charisma: 18
+- The wearer can memorize double amount of spells per levels 1-2
+
+Charge abilities:
+- Mental Control 3 times per day
+  The caster gains control of the creature's mind.
+
+Weight: 3
+
+Usable By:
+ Mage
+ Bard~
+@107813 = ~Crown~
+@107814 = ~A crown is a headdress that is a symbol of power. Crowns could have different shapes: caps, crowns, hoops crowned with leaves, teeth or plates.
+
+STATISTICS:
+
+Weight: 2~
+@107819 = ~Neverwinter Chapter 1~
+@107820 = ~Neverwinter Chapter 2~
+@107821 = ~Neverwinter Chapter 3~
+@107822 = ~Neverwinter Chapter 4~
+@107823 = ~Neverwinter Epilogue~
 @107824 = ~Skeleton's Knuckle~
 @107825 = ~This is the knuckle bone from a skeleton's hand.~
-@107826 = ~NP: Amulet of Protection from Death~ /*Amulet of Undead Turning*/
-@107827 = ~NP: This amulet protects its wearer from all forms of deadly magic. These spells include Disenchant, Power Word: Death, Death Spell, Finger of Death, Confinement, etc. Weight: 1 Can use: All~ /*This amulet conjures strange visions in my mind: half-remembered images of a time long ago, when dryad and dwarf alike served a terrible, cruel Master.*/
-@107833 = ~NP: Here you can create magical things.~ /*I'm interested in magical swords.*/
+@107826 = ~Amulet of Protection from Death~
+@107827 = ~This amulet protects its wearer from all forms of death magic. Such spells include Dissipate, Word of Power: Death, Death Spell, Death Thumb, Conclusion, etc.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to Death magic
+
+Weight: 1~
+@107833 = ~This is where you can create magic items.~
 
 @110000 = ~Ettercap's Silk Gland~
-@110001 = ~This is the gland that allows ettercaps to create web fibers.~
+@110001 = ~This is the gland that allows an ettercap to create webs.~
 @110002 = ~Ring of Protection from Elements~
 @110003 = ~The masterful enchantment of this ring allows the wearer to almost ignore the effects of cold, fire, electricity and acid. In addition, the ring protects the wearer from any poisons.
 
