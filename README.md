@@ -24,6 +24,7 @@ Thanks and Acknowledgements
 * Gorion - for the provided night Beggar's Nest location image
 * Insomniator2 - for a great help with weidu adaptation and especially for the script that can generate weidu code to set string refs for binary files (cre, are, etc.)
 * p\_zombie - for testing and help with bp-bgt-worldmap adaptation
+* Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod
 * argent77 - for help with TIS files and useful weidu libraries
 * scheele - for testing, some ideas for the mod and help with proof-reading Russian texts
 * arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing
