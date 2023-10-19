@@ -11,7 +11,7 @@ Author: AGKanevchev
 Wiedu Adaptation: paladin84
 ---------------
 
-[Discussion Forum](https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773)
+[Russian Discussion Forum](https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773), [English Discussion Forum](https://www.gibberlings3.net/forums/topic/37267-neverwinter-night-for-baldurs-gate-mod)
 ---------------
 
 [Github sources](https://github.com/abalabokhin/NWNForBG)
