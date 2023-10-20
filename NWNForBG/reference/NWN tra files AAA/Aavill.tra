@@ -1,0 +1,135 @@
+@0 = ~Hello there. All of nature's creatures are welcome to this grove. How can I help you?~ [AAVIL054]
+@1 = ~Can I ask who you are?~
+@2 = ~What is this place?~
+@3 = ~What exactly is it you do here?~
+@4 = ~I am the Archdruid Aawill and you are <CHARNAME>.~
+@5 = ~How do you know that?~
+@6 = ~Nope. That's not my name.~
+@7 = ~I am Archdruid Aawill, and you are an associate of <CHARNAME>.~ 
+@8 = ~Nope. I'm not familiar with that name.~ 
+@9 = ~This is a druid grove. Here, those who truly revere nature gather to discuss, to contemplate, to learn, and even to challenge nature. Usually there are more of us here, but several of our members have gone missing.~
+@10 = ~What kinds of things do you discuss and learn about?~
+@11 = ~What do you mean 'challenge' nature?~
+@12 = ~What you mean some missing?~
+@13 = ~Yes, well... nature bores me. Goodbye.~
+@14 = ~The wind stole your name from your lips and carried it to the trees, who whispered it to me. Now, what can I do for you?~ 
+@15 = ~Nature doesn't lie to her allies. So, what can I do for you?~ 
+@16 = ~The wind stole your name from your lips and carried it to the trees, who whispered it to me. Now, what can I do for you?~ 
+@17 = ~There are many different philosophies about nature, which we spend time arguing, but right now the topic has mainly centered on the missing druids. It's a long story, but I sense that you <MALEFEMALE> are of the fidgety breed, so I'll try to keep it brief.~ 
+@18 = ~Thank you.~
+@19 = ~I don't care.~ 
+@20 = ~Nature is always competitive. We try ourselves in contests against one another, but only druids are allowed to participate in these rites.~
+@21 = ~What did you mean when you said some of you went missing?~
+@22 = ~I am sad to hear that. If you would like to know how you could help restore the natural order, please return and speak to me again.~
+@23 = ~It is a long story, but I sense that you are a <PRO_MANWOMAN> of action, so I shall try to be brief.~
+@24 = ~Until recently, this forest had been a relatively peaceful place. The forest nymphs protected the animals, and everything followed the natural order. But now something has gone terribly wrong. The creatures have become overly aggressive, attacking anyone they lay eyes on, including those who are considered friends of nature.~ 
+@25 = ~You mean rangers and druids are being attacked?~
+@26 = ~I guess they finally get to see what everyone experiences in the wild.~
+@27 = ~We can't even seem to communicate with the animals. It is like their minds have been driven mad. They simply want to destroy. I think there's something wrong with the Spirit of the Forest.~ 
+@28 = ~What is wrong with the Spirit?~
+@29 = ~What is the Spirit of the Wood?~
+@30 = ~Yes, nature has her ferocious side, but she has a tender side too. It is that side which seems to have disappeared.~
+@31 = ~The Spirit of the Forest can call those who live in the forest to its defense. Now it attacks even those who would defend it themselves. I do not know what is wrong with the Spirit, but it is obvious that it is using the creatures to strike out at anything foreign. I need someone to find out what is wrong, even though the Spirit will surely try to kill that person.~ 
+@32 = ~I think I can handle that.~
+@33 = ~What's in it for me if I decide to do this?~
+@34 = ~Maybe later. I think I'm a little busy right now.~ 
+@35 = ~The spirit of the Forest is a difficult concept to explain. Forest is not just a group of trees, it is a living being. The Spirit is the center of the Forest's protective power.It has a mind... of sorts... though it really doesn't think like either of us. It cares for the creatures that live here, maintaining the circle of existence that includes life and death.~
+@36 = ~So what is wrong with it then?~
+@37 = ~I don't understand that at all.~
+@38 = ~Alright, let me try to explain it to you like this. Your body is alive and your brain controls it. The forest is like the body, and the spirit is like the brain. So, if you want to swat a mosquito, your mind tells your hand what to do. If the Spirit wants to stop a greedy woodcutter, it might tell a bear to go attack him. Do you understand?~ 
+@39 = ~No. I still don't understand.~
+@40 = ~The wood is alive and it's acting in a way it never has before!~
+@41 = ~Oh, okay.~
+@42 = ~This is not a responsibility to be taken on lightly. I dare not send someone who is only partially committed to the task.~
+@43 = ~I swear I shall do my best to save the Wood.~
+@44 = ~Yeah, yeah, enough with the speeches. I said I would take the job.~
+@45 = ~Maybe you should find someone else. I'm rather busy.~
+@46 = ~That is unfortunate, but nature always finds a way to balance herself. I am sure someone of tougher mettle will come along soon.~
+@47 = ~I find your attitude lacking and unappreciative of the importance of this mission. Perhaps if you can gain an appropriate perspective, I could charge you with this trust. Please come back when you understand.~ 
+@48 = ~NP: In that case, I thank you for your help. There are two tasks that need to be accomplished. The first is to find out what's going on with the Spirit of the Forest. The second is to find the missing druids. As the druids were on the same mission as you, it is possible that they might be able to provide you with information you need to complete your primary task.~ 
+@49 = ~If you can help me save the Spirit, I can pay you 500 gp. For each of the druids you rescue, I will give you 300 gp. Is there anything else I can help you with?~
+@50 = ~What are the names of the missing druids?~
+@51 = ~Where were the druids last seen?~
+@52 = ~I understand. Farewell.~ 
+@53 = ~I see that you do indeed have proper instincts for this job. The missing druids include Orlane, Bree and Terari.~
+@54 = ~They entered the deep woods and that is the last anyone has seen of them. Nothing more is known about their location.~
+@55 = ~Silvanus goes with you, my child. You may enter the forest, I will remove the protective runes on the bridge.~ 
+@56 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has reluctantly granted forest access to adventurers so that they might help him right whatever has gone wrong.~ 
+@57 = ~Ah, a fellow child of nature. Be welcome here. How may I be of service?~ [AAVIL053]
+@58 = ~You have returned. What can I help you with?~ [AAVIL052]
+@59 = ~Tell me what you need assistance with again.~
+@60 = ~I would like to help you.~
+@61 = ~Is this one of your druids? He introduced himself as Orlaine.~ 
+@62 = ~I found a woman named Bree who claims to be a druid.~ 
+@63 = ~Is Terari not who you're looking for?~ 
+@64 = ~I found all the druids. They're back?~ 
+@65 = ~Nothing. Goodbye.~
+@66 = ~Something is wrong with the Spirit of the Wood. Also, some druids are missing. I need help with both problems.~
+@67 = ~Goodbye.~
+@68 = ~Steadfast Orlane has returned. It is good to have him back in the circle. Here's your 1,000 gold pieces.~ 
+@69 = ~We were overjoyed to welcome back dear Bree.  Here's your 1,000 gold pieces.~ 
+@70 = ~My dear friend Terari's return was welcomed by the grove. Here is your 1,000 gold pieces.~ 
+@71 = ~How wonderful! The Grove welcomes back its brethren, Orlaine, Terari, and our dear Bree. Here's your 3,000 gold pieces.~ 
+@72 = ~I see you are back. Have you had any luck?~ [AAVIL055]
+@73 = ~What are the names of the druids?~
+@74 = ~I have cured the Spirit of the Wood.~
+@75 = ~The Spirit of the Wood is dead.~
+@76 = ~No. Goodbye.~
+@77 = ~The druids are Orlane, a halfling; Bree, a human; and Terari, an elf. I hope you find them soon. Silvanus be with you.~ 
+@78 = ~You have done very well, <CHARNAME>. With the Spirit of the Wood cured, we can return to our union with nature and her creatures without fear of destruction. Here is the 5,000 gold I promised earlier.~
+@79 = ~I am happy to have been of service. Thank you for your generosity.~
+@80 = ~I almost died to save your precious Spirit! I think such a sacrifice should be worth a little more than 5,000 gold!~ 
+@81 = ~You will give me more gold or I'll set fire to your precious forest!~ 
+@82 = ~Restoring the balance of nature is reward enough for me. Better to give that money to the poor instead.~
+@83 = ~Alas, that is a great loss to all of nature. The forest will never be the same again. Was it truly necessary for all to come to this?~
+@84 = ~I am sorry for nature's loss, but there were no other choices open to me.~
+@85 = ~Hey, you win some, you lose some. Either way I still expect to get paid.~
+@86 = ~Good luck to you my child. May the blessings of Silvanus go with you.~
+@87 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Woods has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has given us access to the forest, hoping we can help him right whatever has gone wrong. The poisoned and exhausted Forest Spirit has retreated to his world, but a cure that can save the Forest Spirit has been found and delivered to him. By fully regaining his lost powers, the Spirit would be able to restore the forest to its former balance. Aavil was happy to reward the adventurers for a job brilliantly done.~ 
+@88 = ~I suppose you did give your all to the task. I guess I could give you an extra 100 gold.~
+@89 = ~There are more rewards in serving nature than just gold. I have paid you what we agreed upon. Be content with what you are given and nature will reward you with a happier Spirit.~
+@90 = ~I suppose that nature has both its gentle creatures and its savage beasts. Although I hardly fear your threats, I will give you an extra 100 gold, since this quest has obviously unbalanced you.~
+@91 = ~May the glory of Silvanus shine on your blessed heart. Nature will surely remember your generous spirit.~ 
+@92 = ~Even that is hard to accept. There will be great suffering in the forest without the protection of the Spirit. I can only give you 250 gold, as the rest shall have to go toward helping the forest survive.~
+@93 = ~I understand. Please accept my apology and my gratitude for what you could give.~
+@94 = ~Saving the forest is more important than a reward. Take all the gold and do what you can.~ 
+@95 = ~No! We had a deal and you had better stick with it or else!~
+@96 = ~With such a callous attitude, I can see I should never have allowed you to enter the forest. I will still pay you, but only 300 gold, as the rest shall go toward helping the forest survive.~
+@97 = ~You obviously did what you thought you had to. I hope you do better in future endeavors.~
+@98 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Woods has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has given us access to the forest, hoping we can help him right whatever has gone wrong. Deep in the forest, a pond was discovered where the Spirit of the Forest was performing a ritual to enter the spirit world. The only way for a mortal to follow him was to enter the pond and die in its waters. The poisoned and tormented Spirit of the Forest retreated to his world, but we found and killed the sufferer. Archidruid Aawill and his grove will work to save the woods, despite the damage that has been done.~ 
+@99 = ~I thank you for your concern and generosity. Somehow nature will find a balance and continue on.~
+@100 = ~Or else what? Will you challenge the might of the entire circle of druids and all the forces of nature we can bring to bear? I think not. Now take your blood money and leave this place.~
+@101 = ~Nature thanks you for all you have done. Go with her blessing and mine.~ [AAVIL051]
+@102 = ~The forest will never be the same.~ [AAVIL050]
+@103 = ~Neverwinter Forest: Spirit of the Forest
+
+There are rumors that the Spirit of the Neverwinter Wood has somehow come to harm. No doubt Aawill, an Archdruid who maintains a conclave there, will know more.~ 
+@104 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Wood has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. It was with great reluctance that he allowed us to enter the forest, in hopes that we would help him find out what had happened. Other druids deeper in the forest speak of having seen the Spirit entering and leaving a pool of water, as if part of some ritual. What that ritual may be remains unclear, however.~ 
+@105 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Woods has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has given us access to the forest, hoping we can help him right whatever has gone wrong. Evidence discovered deeper in the forest tells of a pool at the base of a waterfall where the Spirit of the Woods would perform a ritual to enter the spirit world. The only way for mortals to follow is to enter that pool and die while in its waters. A magical dagger is obviously involved in the taking of one's life.~ 
+@106 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Woods has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worrie. He has given us access to the forest, hoping we will help him right whatever has gone wrong. Evidence discovered deeper in the forest tells of a pool at the base of a waterfall where the Spirit of the Woods would perform a ritual to enter the spirit world. The only way for mortals to follow is to enter that pool and die while in its waters. A magical dagger is obviously involved in the taking of one's life.
+
+Poisoned and in great peril, the Spirit of the Woods has retreated to that world. To those who have come to help her, she has offered up images of her poisoner, a nameless dwarf who apparently hides within the spirit world, even now.~
+@107 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Woods has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has given us access to the forest, hoping we can help him right whatever has gone wrong. Evidence discovered deeper in the forest tells of a pool at the base of a waterfall where the Spirit of the Woods would perform a ritual to enter the spirit world. The only way for mortals to follow is to enter that pool and die while in its waters. A magical dagger is obviously involved in the taking of one's life.
+
+Poisoned and in great peril, the Spirit of the Woods has retreated to that world, but a cure for the troubled Spirit was finally recovered.
+
+Renewed to her former vigor, the Spirit will once again be able to restore the forest to its proper balance. Aawill will be eager to hear the good news.~ 
+@108 = ~Neverwinter Forest: The Spirit of the Forest
+
+The Spirit of the Neverwinter Woods has somehow come to harm and Aawill, an Archdruid who maintains a conclave there, is gravely worried. He has given us access to the forest, hoping we can help him right whatever has gone wrong. Evidence discovered deeper in the forest tells of a pool at the base of a waterfall where the Spirit of the Woods would perform a ritual to enter the spirit world. The only way for mortals to follow is to enter that pool and die while in its waters. A magical dagger is obviously involved in the taking of one's life.
+
+Poisoned and in great peril, the Spirit of the Woods has retreated to that world, but adventurers found and slew the wounded Spirit. Archdruid Aawill needs to know of the Spirit's fate.~
