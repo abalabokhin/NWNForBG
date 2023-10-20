@@ -1,6 +1,6 @@
 //NWN Areas
 @NW1100 = "Docs"
-@NW1000 = "Neverwinter###Core"
+@NW1000 = "Core"
 @NW1200 = "Beggar's###Nest"
 @NW1400 = "Blacklake"
 @NW1300 = "Peninsula"
@@ -26,4 +26,4 @@
 @NW3200 = "Elk###Tribe###Keep"
 @NW3300 = "Ruins"
 
-@NW4000 = "Suburbs###of###Neverwinter"
+@NW4000 = "Suburbs"
