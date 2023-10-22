@@ -1,5 +1,7 @@
-@1 = ~NP: Who are you? No, you don't have to answer, I don't really care. Nobody called you to my kitchen, and even the door was closed! Leave, or I will call the guards, and if they do not arrive in time, I will deal with you! Out!~
-@2 = ~NP: Shoo!~
-@3 = ~NP: Would you like a kick? Get out!~
-@4 = ~NP: I'd give you a couple of cooking lessons, but vagrants like you don't stay in one place for long.~
-@5 = ~NP: You're not welcome here!~
+// FTOBE7 translation file from BG1
+
+@1 = ~Who might you be? No, don't answer because I really don't care. You have gone and tracked up my kitchen with nary an invitation, nor even an unlocked door! You better get going, or the only thing worse than the guard coming to take you off, will be if they don't get there in time to save you from me! Out!~
+@2 = ~Shoo!~
+@3 = ~Don't make me break mine foot off in your nethers! Get going!~
+@4 = ~If you want, I could give you an entire course on cooking. But knowing you adventurer types, you won't be around long enough.~
+@5 = ~You're not welcome here!~
