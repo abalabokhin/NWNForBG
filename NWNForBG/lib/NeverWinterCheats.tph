@@ -1,0 +1,15 @@
+ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
+	PRINT ~Aeras cheat for Neverwinter Night~
+	COPY_EXISTING ~bgee.lua~ ~override/bgee.lua~
+	
+	// CheatsAreas for Neverwinter Night
+	PATCH_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
+	~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},~                             => 5100000
+
+END
+
+    PATCH_PHP_EACH strings AS find => replace_ref BEGIN
+        SPRINT replace (AT replace_ref)
+        REPLACE_TEXTUALLY ~%find%~ ~%replace%~
+    END
+END

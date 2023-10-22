@@ -1280,6 +1280,15 @@ COPY ~NWNForBG/are/nw4103.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMorag
   WRITE_LONG (ofsSongs + 0x4) NWNMorag
+  
+  
+// Aeras cheat for Neverwinter Night
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+
+INCLUDE ~PoFQuestPack/Lib/PaladinOfFaerunCheats.tph~
+
+END
 
 //Creatures
 COPY ~NWNForBG/cre~ ~override~

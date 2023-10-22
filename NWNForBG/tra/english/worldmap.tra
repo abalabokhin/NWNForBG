@@ -1,5 +1,5 @@
 //NWN Areas
-@NW1100 = "Docs"
+@NW1100 = "Docks"
 @NW1000 = "Core"
 @NW1200 = "Beggar's###Nest"
 @NW1400 = "Blacklake"
@@ -20,7 +20,7 @@
 @NW2200 = "Green###Grifon"
 
 @NW2E55 = "Host###Tower"
-@NW2E31 = "Docs"
+@NW2E31 = "Docks"
 
 @NW3100 = "Ford###Ilkard"
 @NW3200 = "Elk###Tribe###Keep"
