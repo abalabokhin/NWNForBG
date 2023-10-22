@@ -11,15 +11,15 @@
 @10 = ~I hope you enjoy your time in Port Llast. Goodbye.~
 @11 = ~May the gods bless you, <PRO_SIRMAAM>!~
 @12 = ~My name is Ander, <PRO_SIRMAAM>. I help Alhelor here when he has need of it.~
-@13 = ~NP: He sells merchandise for werewolf hunters. Ever since my encounter with the werewolf, I've decided to dedicate my life to fighting these horrible creatures. But I can't fight them, so I'm helping Elhelor, so it's a good thing.~ /*I know it sounds silly. I... met a werewolf myself, though, and if Alhelor's goods can help fight them, then I'm proud to help him.*/
+@13 = ~He sells merchandise for werewolf hunters. Ever since my encounter with the werewolf, I've decided to dedicate my life to fighting these horrible creatures. But I can't fight them, so I'm helping Alhelor, so it's a good thing.~
 @14 = ~What's this about a werewolf?~
 @15 = ~You don't remember me? Oh, maybe not... my name is Ander and I help Alhelor sell his werewolf remedies.~
 @16 = ~Werewolf remedies?~
 @17 = ~I... I know Alhelor likes to, but I really shouldn't talk about it, <PRO_SIRMAAM>, I'm sorry. You could ask Neurik about the beast, though, if you wanted.~ 
 @18 = ~Why can't you talk about it?~
 @19 = ~Who is this Neurik?~
-@20 = ~NP: Я... I guess it's okay if we talk about it, since Newrick said it was okay. He said I should try to forget. stop thinking about it all the time. I don't know. I try. Sometimes I feel kind of normal, and then... All I could see were these eyes looking out of the cave, and it was like I knew something was wrong - total panic. Anyway...~ /*I... I suppose there's no harm in talking about it, if Neurik says it's okay. He said that I should try to forget about it... stop thinking about it so much. I don't know. I try. Sometimes I feel kind of normal, and then -*/
-@21 = ~NP: Karatis was a werewolf hunter, and he came to hunt the Black Wolf! The one we called the werewolf of Port Llast. Karathis needed some help, so I and a few of my friends volunteered: Bran, Geth, and Urth. We didn't think the wolf was real at all, and Karathis was paying well. Together we, uh. we went hunting for the Black Wolf. We found the wolf's tracks and followed them to the cave. While we were setting up camp, Karatis went there. It's right next to Luskan, this cave. in the mountains east of the Green Gryphon.~ /*Karathis wanted some help, so me and some friends volunteered: Bran, Geth, and Urth. We didn't think there was any real wolf, anyway, and Karathis' coin was good. Together, we... began the hunt for the Black Wolf.*/
+@20 = ~I... I suppose there's no harm in talking about it, if Neurik says it's okay. He said that I should try to forget about it... stop thinking about it so much. I don't know. I try. Sometimes I feel kind of normal, and then... All I can see are those eyes looking out from the cave, and there's that feeling of knowing something is wrong - total fear. Anyway...~
+@21 = ~Karathis was a werewolf hunter, and he came here to hunt the Black Wolf! That's what we call Port Llast's werewolf. Karathis wanted some help, so me and some friends volunteered: Bran, Geth, and Urth. We didn't think there was any real wolf, anyway, and Karathis' coin was good. Together, we... began the hunt for the Black Wolf. We found wolf tracks and followed them to a cave. Karathis went in while we set up camp. It's just outside of Luskan, that cave... in the hills west of the Green Griffon.~
 
 @23 = ~Not long after we set up camp, Karathis came out but as a werewolf. I was so scared! I can still see his face so clearly... I couldn't help but run. We all ran. I'm the only one that... got away. The rest are probably beasts now, too. Or dead.~
 @24 = ~Why did Karathis enter the cave alone?~
@@ -37,8 +37,8 @@
 @36 = ~The only thing I can think is something he said right after I got back from the cave. It wasn't bad, just seemed out of place.~
 @37 = ~What did he say?~
 @38 = ~He said he would keep me safe from werewolves so long as I helped him to sell his stuff. I don't think it means anything, though.~
-@39 = ~NP: He was afraid Black Wolf would try to escape. He wanted us to stop him from escaping. and we didn't know what to do when he went in there and came out a beast. I'm sorry if, uh. you don't need anything else, do you?~ /*He was afraid that the Black Wolf would try to escape. He wanted us to keep it from running away... we didn't know what to do when he went in and came out a beast...*/
-@40 = ~NP: I - I think so. He was dressed like Karatis, and even had a similar appearance to him. He looked like he was in pain, and also confusion.... I don't know if I'll ever be able to forget that vision as long as I live...~ /*I - I think it was. It was dressed up like Karathis, and even looked like him in the face. He looks like he was in pain, and confused...*/
+@39 = ~He was afraid that the Black Wolf would try to escape. He wanted us to keep it from running away... we didn't know what to do when he went in and came out a beast... I'm sorry if - did you need something else?~
+@40 = ~I - I think it was. It was dressed up like Karathis, and even looked like him in the face. He looks like he was in pain, and confused... I'm not sure that I'll ever forget that image for so long as I live...~
 @41 = ~It was a cave just outside of Luskan, in the hills east of the Green Griffon.~
 @42 = ~You mean Urth, Bran and Geth? I know places that they liked to go before - I haven't been able to look yet... I want to, but I... can't.~
 @43 = ~You know where Urth could be?~
