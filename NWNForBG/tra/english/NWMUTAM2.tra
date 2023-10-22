@@ -8,7 +8,7 @@
 @7 = ~Yes, well, there's a lot of people traveling through the area, people who can't get into Luskan. And I've a fine inn here, after all.~
 @8 = ~There wouldn't be some *other* reason, would there?~
 @9 = ~The patrons seem to say that something else is going on.~
-@10 = ~NP: So, someone has already disheveled you, right? Damned idiots. If this contest becomes known, the local guards will quickly arrest me. *sigh* Well... you already know anyway. Want to get involved, buddy?~ /*So someone told you about it, did they? Blasted fools. If word keeps spreading about this contest, I'll have the militia on my head in no time.*/
+@10 = ~So someone told you about it, did they? Blasted fools. If word keeps spreading about this contest, I'll have the militia on my head in no time. *sigh* But nevertheless... you know and that's that. Are you interested in taking part, friend?~ /*So someone told you about it, did they? Blasted fools. If word keeps spreading about this contest, I'll have the militia on my head in no time.*/
 @11 = ~Yes, I'd like to take part.~
 @12 = ~I'd like to know some more about it, first.~
 @13 = ~What's the reward?~
@@ -22,22 +22,22 @@
 @21 = ~Listen, if you have a point, make it. Otherwise, I'd prefer to keep out of trouble. I'm not one for all of this game playing.~
 @22 = ~Right, then. Here's a key for the back door. Remember that you'll have to pay Jaroo 500 gold to be allowed into the dungeon. Good luck!~
 
-@24 = ~NP: Well, there's a door to my left at the end of the corridor. It is firmly locked and leads to the basement, where I made a dungeon. Entrance costs 1000 gold. It's not for me to pay. I'll just give you the key. Jaru will explain everything to you downstairs. You will pay him. The first one to get out of there alive, go through all the traps and cope with all the monsters that I managed to drag there, wins. It's very simple.~ /*First one to get through alive, past all the traps and critters I've managed to get down there wins. It's that simple.*/
+@24 = ~Well, there are two doors in the back hall, just behind me. The right one's locked up tight and leads down into the basement, where I've rigged up a dungeon. It costs you 500 gold pieces to enter. You don't pay me, though. I just give you a key. Jaroo will explain things more down there. You can pay him. First one to get through alive, past all the traps and critters I've managed to get down there wins. It's that simple.~ /*First one to get through alive, past all the traps and critters I've managed to get down there wins. It's that simple.*/
 @25 = ~Half my wealth, which is considerable, as I've come off of a long and prosperous adventuring career. Interested?~
 @26 = ~Then why bring it up? If you're not interested in the contest, there's little reason to be here, is there?~
 @27 = ~You're right. Tell me about your contest, then.~
 @28 = ~I think your contest is barbaric!~
-@29 = ~NP: Well, the plague may be over in Neverwinter, but you never know for sure, you know? I don't want to risk my life. But still, I think it's something else. I think they just took advantage of this excuse to close the gate. Somehow this is suspicious.~ /*But still, this seems a little different. I think they're taking advantage of the plague to keep them gates up. It just seems fishy is all.*/
+@29 = ~Well, the Neverwintan plague might be over, but you can never be for certain, you know? I don't want to risk my life like that. But still, this seems a little different. I think they're taking advantage of the plague to keep them gates up. It just seems fishy is all.~ /*But still, this seems a little different. I think they're taking advantage of the plague to keep them gates up. It just seems fishy is all.*/
 @30 = ~Certainly. Until Luskan opens its gates, I'm afraid this is the only store in this region.~
-@31 = ~NP: They say that there are some serious problems in Luskan, something is wrong there, only the city authorities do not want to know about it. But these are just rumors. In any case, they don't let anyone in or out.~ /*I've heard rumors that there's some worse problem in Luskan, something terrorizing the streets that the city doesn't want anyone to know about.*/
-@32 = ~NP: Just don't be fooled: it's bloody dangerous. If you go down, there are chances that you will never get out of there. That's why this is a strictly secret event. You can leave at any time and try again, but of course, someone can get around you if you take too long. Well, are you still interested in this?~ /*Don't kid yourself, though: it's bloody dangerous. If you go down, chances are you don't come out. And that's the reason for all the secrecy.*/
+@31 = ~I've heard rumors that there's some worse problem in Luskan, something terrorizing the streets that the city doesn't want anyone to know about. But that's just rumor. Either way, they're not letting anyone in or out.~ /*I've heard rumors that there's some worse problem in Luskan, something terrorizing the streets that the city doesn't want anyone to know about.*/
+@32 = ~Don't kid yourself, though: it's bloody dangerous. If you go down, chances are you don't come out. And that's the reason for all the secrecy. You're free to come back out any time an' try again, but of course someone might make it through first if you take too long. So, still interested?~ /*Don't kid yourself, though: it's bloody dangerous. If you go down, chances are you don't come out. And that's the reason for all the secrecy.*/
 @33 = ~Could you explain all that again?~
 @34 = ~Yeah, now that's what I like to see. Some adventurer spirit and an open mind! Gotta keep your smarts about you. What do you want to know?~
 @35 = ~NP: I will take part.~ /*Remove Buddy*/
 @36 = ~Hmph. Then tell the militia... if you can get inside Luskan, that is. Now, if you'll excuse me, I have patrons to attend to.~
 @37 = ~I assure you, Madam, we run a very safe establishment.~ [NWMUT050]
 @38 = ~So! It seems you're the one who's won my little contest, eh? Congratulations are certainly in order!~ [NWMUT053]
-@39 = ~NP: Sometimes I miss the days when I was just an adventurer like you...but you probably didn't come for me to talk. Hehe. Here, take this: half of my fortune. I hope you consider this a worthy reward. Congratulations again!~ /*Why, sometimes I long for the days when I used to travel and adventure as you do... but I'm sure you didn't come here to hear me talk. Heh heh.*/
+@39 = ~Why, sometimes I long for the days when I used to travel and adventure as you do... but I'm sure you didn't come here to hear me talk. Heh heh. Here you go: half my fortune for your troubles. I hope it was worth it for you. Once again, congratulations!~ /*Why, sometimes I long for the days when I used to travel and adventure as you do... but I'm sure you didn't come here to hear me talk. Heh heh.*/
 @40 = ~Thank you. It was quite the experience.~
 @41 = ~NP: What? Some pathetic 5000 gold? Throw in another 1000 and I'll be fine.~ /*Make it 100 more, and I'll leave satisfied.*/
 @42 = ~I want more gold, and I'm taking it.~
@@ -46,7 +46,7 @@
 @45 = ~Generally, the pay-outs are set and immutable. But what the heck, I like your style and I'm feeling generous. Here you go, pal.~
 @46 = ~NP: The prize amounts have been set and I have no intention of changing them. Some people just do not know how to be satisfied, they always want something else. Well, I have nothing to give you. Take what they give you and stop pestering me.~ /*Some people just can't be happy, they always want more. Well, I ain't giving you more. You take what you got and stop bothering me.*/
 @47 = ~Fine! Take your stinking gold. Here's 100 coins to add to what I gave you already. But you bother me again, and I'll have your throat slit.~
-@48 = ~NP: I'm sorry, but since we have a winner, the dungeon needs to be refurbished now. Maybe I'll open it again next spring. Until then, I'm afraid the Green Gryphon will be an ordinary inn. Hehe.~ [NWMUT054] /*Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open.*/
+@48 = ~Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open. Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.~ [NWMUT054] /*Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open.*/
 @49 = ~NP: Certainly. Several rooms have recently been vacated.~ /*Of course. I am sorry, Fiona.*/
 @50 = ~NP: I'm sorry, but you lost the match. Maybe I'll do it again next spring. Until then, I'm afraid the Green Gryphon will be an ordinary inn. Hehe.~ /*Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.*/
 

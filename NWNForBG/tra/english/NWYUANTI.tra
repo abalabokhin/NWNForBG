@@ -4,7 +4,7 @@
 @3 = ~Nevermind, then. I'll go elsewhere.~
 @4 = ~An exsssscellent choice! I'm sssso glad we see eye to eye!~
 @5 = ~Very well. Sssssince I am forcsssed to do ssso, I shall. Ansssswer thissss:~
-@6 = ~NP: At the feast where the knights-errant gathered, each knight clinked glasses with the knight on his right and with the knight on his left. There were fifteen knights at the feast, how many times did the glasses clink?~ /*At a banquet where human knightsssss gather, each knight sssssat and clinked hissss glassss with the knight to hisssss left and the knight to hissss right.*/
+@6 = ~At a banquet where human knightsssss gather, each knight sssssat and clinked hissss glassss with the knight to hisssss left and the knight to hissss right. If there are fifteen knightssss at thissss banquet, how many timessss did glasssssess clink, hmmm?~ /*At a banquet where human knightsssss gather, each knight sssssat and clinked hissss glassss with the knight to hisssss left and the knight to hissss right.*/
 @7 = ~Could you repeat that?~
 @8 = ~15.~
 @9 = ~20.~
@@ -21,8 +21,8 @@
 @20 = ~Nevermind.~
 @21 = ~Asssss you wish! Lissssten clossssely, foolissssh one:~
 @22 = ~Then passsss and begone, fool.~
-@23 = ~NP: After slaying the dragon, a group of knights decided to distribute some trinkets from the seized treasure to a group of less than a dozen human girls. Since the trinkets had to be divided equally among the girls, a dispute began. One girl suggested that the trinkets should be divided among families rather than among individual girls. Among the girls, there were two families with two sisters each, the rest were not related.~ /*One sssuggesssted that they divide it by family inssstead of by individual. In the group, there were two groupsss of two sssisssterss, the ressst unrelated.*/
-@24 = ~NP: Such a division would mean that the families received five more trinkets than the individual girls. The decision had not yet been made when one of the girls decided that she did not want anything. Her share was divided among the others. And the trinkets were divided equally.~ /*Before a decision was made, one girl sssaid she desired nothing. Ssso her share wasss divided amongssst the othersss. The sharesss were equal once again.*/
+@23 = ~After ssslaying a dragon, a group of knightsss gave sssome of the trinketsss from a treasure horde to a group of fewer than ten human girlsss to divide. While the trinketsss could have been divided equally amongssst the girlsss, they argued over how to divide it. One sssuggesssted that they divide it by family inssstead of by individual. In the group, there were two groupsss of two sssisssterss, the ressst unrelated.~ /*One sssuggesssted that they divide it by family inssstead of by individual. In the group, there were two groupsss of two sssisssterss, the ressst unrelated.*/
+@24 = ~This division would mean that the trinketsss per family were five more than the trinketsss per girl. Before a decision was made, one girl sssaid she desired nothing. Ssso her share wasss divided amongssst the othersss. The sharesss were equal once again.~ /*Before a decision was made, one girl sssaid she desired nothing. Ssso her share wasss divided amongssst the othersss. The sharesss were equal once again.*/
 @25 = ~The sssuggestion of dividing the trinketsss by family wasss then withdrawn, asss all were sssatisfied. How many girlsss shared in the division and how many did each get?~
 @26 = ~NP: Wow! Repeat your riddle.~ /*Ask me your riddle, then.*/
 @27 = ~Would you perhaps give me a hint?~
@@ -32,7 +32,7 @@
 @31 = ~12 trinkets, 5 girls.~
 @32 = ~14 trinkets, 5 girls.~
 @33 = ~NP: I have a headache. Enough riddles!~ /*Me head hurts! Me change mind! No riddles!*/
-@34 = ~NP: Ugh, you idiot <RACE>! I'll give you a clue, because you can't guess it anyway! The number of trinkets must be divided without a balance by the number of families and *also* by the number of participants if one of them leaves!~ /*The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!*/
+@34 = ~Pfeh, <PRO_RACE> fool! I shall give you a hint though I doubt you will be able to anssswer my riddle, regardlesss! The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!~ /*The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!*/
 @35 = ~Never! Ansssswer or do not, fool!~
 @36 = ~Sssss! You are correct! Here isss your gift! Now begone!!~
 @37 = ~Passss and begone!~

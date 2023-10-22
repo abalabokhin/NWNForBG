@@ -11,7 +11,7 @@
 @10 = ~NP: It's a healing object. It will help you.~ /*These are cures. They'll restore you.*/
 @11 = ~I'm here to kill you or cure you. You pick which I do.~
 @12 = ~Prepare yourself for death then.~
-@13 = ~NP: Sir Karathis took me, Geth, Bran, and Ender with him to help him hunt a werewolf. I was excited for the adventure and joined in with great joy. Sir Karatis had lost a battle with a werewolf wolf and, after becoming a werewolf, was hunting us himself. There was nothing he could do about it. I don't blame him.~ /*Sir Karathis rounded up myself, Geth, Bran and Ander to help him hunt a werewolf. I was very excited for the adventure, and eager to join.*/
+@13 = ~Sir Karathis rounded up myself, Geth, Bran and Ander to help him hunt a werewolf. I was very excited for the adventure, and eager to join. Sir Karathis lost in battle to the werewolf, and, as a werewolf he hunted us down. He couldn't help it. I don't blame him.~ /*Sir Karathis rounded up myself, Geth, Bran and Ander to help him hunt a werewolf. I was very excited for the adventure, and eager to join.*/
 @14 = ~What happened to Bran?~
 @15 = ~Did Ander survive? Where is he now?~
 @16 = ~Is Geth all right? Do you know where I could find him?~
@@ -28,7 +28,7 @@
 @27 = ~I don't even care about Karathis. I don't blame him, either. But I have no interest in that matter. I just feel - numb, about it.~
 @28 = ~NP: What else do you want to talk about?~ /*What did you want to talk about?*/
 @29 = ~Fine, here it is. You should probably give it to Neurik. Tell him that I'm dead. Maybe this can all go away.~
-@30 = ~NP: He - it worked, I can feel it. Thank you so much. Here, take my ring and take it to Newrick so he knows I'm okay! Now that this ordeal is over, I think I need to rest. A good night's rest. Goodbye and thank you!~ /*It - It worked, I can feel it. Thank you so much. Here, take my ring and bring it to Neurik so he knows I'm all right!*/
+@30 = ~It - It worked, I can feel it. Thank you so much. Here, take my ring and bring it to Neurik so he knows I'm all right! Now that this ordeal is over, I think I need a vacation. A long one. Farewell and thank you!~ /*It - It worked, I can feel it. Thank you so much. Here, take my ring and bring it to Neurik so he knows I'm all right!*/
 @31 = ~NP: He - it worked, I can feel it. Thank you so much. Now that this ordeal is over, I think I need to rest. A good rest. Goodbye and thank you!~ /*Now that this ordeal is over, I think I need a vacation. A long one. Farewell and thank you!*/
 @32 = ~Grrr - Please! - Grrrrr - Can't control... Myself!~
 @33 = ~Don't hurt me anymore! The wolf spirit is gone!~
