@@ -2150,7 +2150,7 @@ COPY ~NWNForBG/itm/NWBOW02.itm~ ~override~
 
 COPY ~NWNForBG/itm/NWBOW030.itm~ ~override~
   SAY 0xC	@102601
-  SAY 0x54	@102602
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@102602" END
 
 COPY ~NWNForBG/itm/NWBUC03.itm~ ~override~
   SAY 0xC	@102427
@@ -2162,7 +2162,7 @@ COPY ~NWNForBG/itm/NWGUARA.itm~ ~override~
 
 COPY ~NWNForBG/itm/NWGUARB.itm~ ~override~
   SAY 0xC	@102451
-  SAY 0x54	@102452
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@102452" END
 
 COPY ~NWNForBG/itm/NWGUARC.itm~ ~override~
   SAY 0xC	@103876
@@ -2288,7 +2288,6 @@ COPY ~NWNForBG/itm/NWSPHER2.itm~ ~override~
 
 COPY ~NWNForBG/itm/NWSTAFF1.itm~ ~override~
   SAY 0xC	@103745
-  SAY 0x54	@103746
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@103746" END
 
 COPY ~NWNForBG/itm/NWSTAFF2.itm~ ~override~

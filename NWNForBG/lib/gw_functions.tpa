@@ -1,345 +1,547 @@
+/* ======================================================================================================================================================= *
+ *   v 1.1.1  (08/08/2021)                                                                    Source : https://github.com/GwendolyneFreddy/GW_IE-Modding   *
+ *                                                                                                                                                         *
+ *                    G W _ F U N C T I O N S    L I B R A R Y    b y    G w e n d o l y n e    ( a k a    F r e d d y _ G w e n d o )                     *
+ *                                                                                                                                                         *
+ *       M I S C E L L A N E O U S    F U N C T I O N S    &    M A C R O S    T O    M A K E    I E    &    E E    M O D D I N G    E A S I E R           *
+ *                                                                                                                                                         *
+ * ======================================================================================================================================================= */
+
+/* ================================================================================================================================================== *
+ * LIST of FUNCTIONS:                                                                                                                                 *
+ * ------------------                                                                                                                                 *
+ *  - FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE      : MODIFIES item description to fit EE description format.                          => line #  25  *
+ *  - FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS         : WRITES item descriptions in ITM files according to the game (classical or EE).   => line #  66  *
+ *  - MACRO GW_ADJUST_TOOLTIP                       : ADDS new columns in tooltip.2da file if needed.                                  => line # 117  *
+ *  - MACRO GW_READ_COL_TOOLTIP                     : READS tooltip.2da file number of columns.                                        => line # 152  *
+ *  - FUNCTION GW_ADD_ITEM_TOOLTIPS                 : ADDS a new entry in tooltip.2da file.                                            => line # 168  *
+ *  - FUNCTION GW_ALTER_ITEM_ALTER_HEADER_FLAGS     : ALTERS ITM extended headers new EE (or ToBEx) flags.                             => line # 215  *
+ *  - FUNCTION GW_ITEM_RESTRICT_USABILITY_EE        : DEFINES special item usability restrictions (EE games).                          => line # 342  *
+ *  - FUNCTION GW_FIND_DLG_RESPONSE_STRING          : LOOKS for state and transition numbers matching a strref in a dialog.            => line # 446  *
+ *  - FUNCTION GW_FIND_FATESP_IMOEN_TRANSITION      : LOOKS for specific state and transition numbers in fatesp.dlg.                   => line # 521  *
+ * ================================================================================================================================================== */
+
+/* =========================================================================================================== *
+ *  FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE: AJUSTE la DESCRIPTION des OBJETS au format Enhanced Edition.     *
+ *                                            MODIFIES ITEM DESCRIPTION to fit EE description format.          *
+ * ----------------------------------------------------------------------------------------------------------- *
+ *  Reads variable GW_desc_to_update (@nn or #nnn) in .tra file, alters it to fit EE description format,       *
+ *  then saves it as variable GW_desc_updated.                                                                 *
+ * =========================================================================================================== *
+ *  FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS: ÉCRIT les DESCRIPTIONS des OBJETS au format Enhanced Edition.       *
+ *                                         WRITES ITEM DESCRIPTIONS according to the game (classical or EE).   *
+ * ----------------------------------------------------------------------------------------------------------- *
+ *  Reads variables GW_desc_to_update and GW_undesc_to_update (@nnn or #nnn) in .tra file, alters them to fit  *
+ *  EE description format if needed, then updates .ITM file.                                                   *
+ * =========================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_UPDATE_ITM_DESCRIPTION_TO_EE~ 
+    STR_VAR GW_desc_to_update = ~~  // strref in format @123 or #123
+    RET     GW_desc_updated         // returns modified text
+BEGIN
+
+	INNER_ACTION BEGIN
+		ACTION_IF (~%GW_desc_to_update%~ STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ == 0) BEGIN
+			<<<<<<<< .../inlined/GW_%GW_desc_to_update%.tpp
+OUTER_SPRINT GW_desc_updated 
+>>>>>>>>
+			SILENT
+			COPY - ~.../inlined/GW_%GW_desc_to_update%.tpp~ ~.../inlined/GW_%GW_desc_to_update%.tpp~
+				INSERT_BYTES SOURCE_SIZE (STRING_LENGTH ~%GW_desc_to_update%~)
+				WRITE_ASCIIE SOURCE_SIZE ~%GW_desc_to_update%~
+			INCLUDE ~.../inlined/GW_%GW_desc_to_update%.tpp~
+			OUTER_SPRINT usab @1		// ~[Uu]niquement[ %tab%]+[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+			OUTER_SPRINT unus @2		// ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les références aux classes et aux kits pouvant ou pas utiliser l'objet. - Removes all classes and kits (un-)usability flags.
+				REPLACE_TEXTUALLY ~\(\([%LNL%%MNL%%WNL%][ %TAB%]*\(%usab%\|%unus%\)[ %TAB%]*\)\(\([%LNL%%MNL%%WNL%].*\)*\)?\)~  ~~
+			END
+		END ELSE BEGIN
+			OUTER_SPRINT GW_desc_updated ~none~
+		END
+	END	// of INNER_ACTION
+
+END		// of DEFINE_PATCH_FUNCTION
+
+
+DEFINE_PATCH_FUNCTION ~GW_WRITE_EE_ITM_DESCRIPTIONS~ 
+    STR_VAR GW_desc_to_update   = ~~    // strref in format @123 or #123
+            GW_undesc_to_update = ~~    // id.
+BEGIN
+
+	// EE games needs special traitment
+	PATCH_IF (GAME_IS ~bgee bg2ee eet iwdee~) OR GAME_INCLUDES ~sod~ BEGIN
+		SPRINT GWdesc "none"
+		SPRINT GWundesc "none"
+		PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_desc_to_update%" STR_CMP ~~) BEGIN
+			LPF ~GW_UPDATE_ITM_DESCRIPTION_TO_EE~ STR_VAR GW_desc_to_update = EVAL "%GW_desc_to_update%" RET GWdesc = GW_desc_updated END
+		END ELSE BEGIN
+			SPRINT GWdesc ~none~
+		END
+		PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_undesc_to_update%" STR_CMP ~~) BEGIN
+			LPF ~GW_UPDATE_ITM_DESCRIPTION_TO_EE~ STR_VAR GW_desc_to_update = EVAL "%GW_undesc_to_update%" RET GWundesc = GW_desc_updated END
+		END ELSE BEGIN
+			SPRINT GWundesc ~none~
+		END
+		PATCH_IF ("%GWdesc%" STR_CMP "none")	BEGIN SAY_EVALUATED DESC ~%GWdesc%~ END
+		PATCH_IF ("%GWundesc%" STR_CMP "none")	BEGIN SAY_EVALUATED UNIDENTIFIED_DESC ~%GWundesc%~ END 
+
+	// BG2 ou BGT
+	END ELSE BEGIN
+		PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_desc_to_update%" STR_CMP ~~) BEGIN
+			INNER_PATCH_SAVE GWdesc ~%GW_desc_to_update%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+				REPLACE_TEXTUALLY ~^[@#]~  ~~
+			END
+			PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+				WRITE_LONG 0x54 RESOLVE_STR_REF ((AT %GWdesc%))
+			END ELSE BEGIN											// inutile d'employer PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[#]-?[0-9]+$~ = 0) BEGIN
+				WRITE_LONG 0x54 %GWdesc%
+			END
+		END
+		PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_undesc_to_update%" STR_CMP ~~) BEGIN
+			INNER_PATCH_SAVE GWundesc ~%GW_undesc_to_update%~ BEGIN	// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+				REPLACE_TEXTUALLY ~^[@#]~  ~~
+			END
+			PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+				WRITE_LONG 0x50 RESOLVE_STR_REF ((AT %GWundesc%))
+			END ELSE BEGIN
+				WRITE_LONG 0x50 %GWundesc%
+			END
+		END
+
+	END	// of PATCH_IF (GAME_IS ~bgee bg2ee eet iwdee~) OR GAME_INCLUDES ~sod~
+
+END		// of DEFINE_PATCH_FUNCTION
+
+
 /* ============================================================================== *
- *  v 6.0.0                                                                       *
- *                                                                                *
- *       M I S C E L L A N E O U S    F U N C T I O N S    &    M A C R O S       *
- *                                                                                *
+ *  MACRO GW_ADJUST_COL_TOOLTIP: ADDS new columns in tooltip.2da file if needed.  *
+ *                               AJOUT de nouvelles colonnes dans tooltip.2da.    *
+ * ------------------------------------------------------------------------------ *
+ *  CODE borrowed and adapted from Miloch's one.                                  *
  * ============================================================================== */
 
-/* ======================================================================================== *
- *  FUNCTION gw_format_string : RE-FORMAT .log files entries to be more friendly readable.  *
- * ---------------------------------------------------------------------------------------- *
- *   INT_VAR                                                                                *
- *      - length is the length of the new string (%string_new%) that will be returned.      *
- *   STR_VAR                                                                                *
- *      - string is the string to be re-formated.                                           *
- *      - hex converts string (any positive decimal number) into a hexadecimal number.      *
- *        If set to "y", string 20738 will return string-new "20738  (0x5102)".             *
- *        If set to "m", string 20738 will return string-new "20738 (0x5102)".              *
- *   RET                                                                                    *
- *      - string_new : This function returns new string to be appended.                     *
- * ======================================================================================== */
+DEFINE_ACTION_MACRO ~GW_ADJUST_COL_TOOLTIP~ BEGIN
 
-DEFINE_PATCH_FUNCTION ~gw_format_string~
-    INT_VAR length = 32
-    STR_VAR string = ""
-            hex    = "n"
-    RET     string_new
-BEGIN
-
-	SPRINT string_new EVAL "%string%"
-
-	PATCH_IF ("%string%" STR_CMP "") BEGIN
-
-		PATCH_IF ("%hex%" STR_EQ "y") OR ("%hex%" STR_EQ "m") BEGIN
-
-			t-len_string = STRING_LENGTH ~%string%~
-			t_string_diff = 5 - t-len_string
-
-			FOR (i = 0 ; i < t_string_diff ; ++i) BEGIN
-				SPRINT string_new EVAL "%string_new% "
+	COPY_EXISTING ~tooltip.2da~ ~override~
+		COUNT_2DA_COLS cl
+		COUNT_2DA_ROWS 1 rw
+		SPRINT cz ~~
+		SPRINT rx ~       ~ // 7
+		SPRINT ry ~-1~
+		SPRINT rz ~~
+		PATCH_IF cl < 5 BEGIN
+			SPRINT rz ~$ $ 4~
+			FOR (i = 0 ; i < (rw - 3) ; ++i) BEGIN	// Cycle through rows
+				SPRINT rz ~%rz%~ ^ ~%rx%~ ^ ~%ry%~
 			END
-			
-			LPF ~TO_HEX_NUMBER~ INT_VAR value = string minDigits = 4 RET hexNumber END
-
-			PATCH_IF ("%hex%" STR_EQ "y")BEGIN
-				SPRINT string_new EVAL "%string_new%  (0x%hexNumber%)"
-			END ELSE BEGIN
-				SPRINT string_new EVAL "%string_new% (0x%hexNumber%)"
-			END
-
 		END ELSE BEGIN
-
-			t-len_string = STRING_LENGTH ~%string%~
-			t_string_diff = length - t-len_string
-
-			FOR (i = 0 ; i < t_string_diff ; ++i) BEGIN
-				SPRINT string_new EVAL "%string_new% "
+			FOR (j = 4 ; j < (cl - 1) ; ++j) BEGIN	// Cycle through columns
+				SPRINT cz ~%cz%~ ^ ~%rx%~ ^ ~%ry%~
 			END
-
 		END
-//		PATCH_PRINT "DEBUGGING CONTROL string_new = %string_new%-"
+	BUT_ONLY
+
+	ACTION_IF cl < 5 BEGIN
+		APPEND_COL ~tooltip.2da~ ~%rz%~
 	END
+
+END	// of DEFINE_ACTION_MACRO
+
+
+/* ======================================================================== *
+ *  MACRO GW_READ_COL_TOOLTIP: READS tooltip.2da file number of columns.    *
+ *                             LIT le nombre de colonnes dans tooltip.2da.  *
+ * ------------------------------------------------------------------------ *
+ *  RETURNS cols_tooltip value (used by GW_ADD_ITEM_TOOLTIPS function).     *
+ * ======================================================================== */
+
+DEFINE_ACTION_MACRO ~GW_READ_COL_TOOLTIP~ BEGIN
+
+	COPY_EXISTING - ~tooltip.2da~ ~override~
+		COUNT_2DA_COLS cols_tooltip
+		COUNT_2DA_ROWS 1 rows_tooltip
 
 END
 
 
-/* ================================================================================================ *
- *  FUNCTION gw_set_random_value : SETS a random value to decide whether files are patched or not.  *
- * ------------------------------------------------------------------------------------------------ *
- *   STR_VAR                                                                                        *
- *      - gw_percentage : which sub-component is running                                            *
- *            25 = 25% of relevant creatures    -    50  = 50% of relevant creatures                *
- *            75 = 75% of relevant creatures    -    100 = most relevant creatures                  *
- *      - gw_random_value : This function returns the percentage chance to patch files.             *
- * ================================================================================================ */
+/* ======================================================================= *
+ *  FUNCTION GW_ADD_ITEM_TOOLTIPS: ADDS a new entry in tooltip.2da file.   *
+ *                                 AJOUTE une ligne dans tooltip.2da.      *
+ * ----------------------------------------------------------------------- *
+ *  PARSES %GW_tooltips% string chain and adds a new line in tooltip.2da.  *
+ * ======================================================================= */
 
-DEFINE_ACTION_FUNCTION ~gw_set_random_value~
-    INT_VAR gw_percentage = 100
-    RET     gw_random_value
+DEFINE_ACTION_FUNCTION ~GW_ADD_ITEM_TOOLTIPS~
+    STR_VAR GW_objet    = ~N~   // item code: ~sw1h01~
+            GW_tooltips = ~~    // tooltips strref list: ~@123 @124 6620~. Accepts combination of tra refs and strrefs for as many abilities as you need to specify
 BEGIN
 
-	// 100% chance
-	// -----------
-	OUTER_SET gw_random_value = 7
+	ACTION_IF ("%GW_objet%" STRING_COMPARE_CASE "N") BEGIN
+		ACTION_TO_UPPER GW_objet
 
-	// 25% chance
-	// ----------
-	ACTION_IF gw_percentage = 25 BEGIN
+	// Generates a row to be added to tooltip.2da
+		OUTER_TEXT_SPRINT new_row ~%GW_objet%~
+		OUTER_PATCH ~ %GW_tooltips%~ BEGIN	// Extracts each tooltip from GW_tooltips string
+			COUNT_REGEXP_INSTANCES ~[ %TAB%]+\(@?-?[0-9]+\)~ num_tooltips
+			REPLACE_EVALUATE ~[ %TAB%]+\(@?-?[0-9]+\)~ BEGIN
+				PATCH_IF ((~%MATCH1%~ STRING_MATCHES_REGEXP ~@-?[0-9]+~) = 0) BEGIN // tra ref
+					INNER_PATCH_SAVE GW_tooltip ~%MATCH1%~ BEGIN
+						REPLACE_TEXTUALLY ~[@]~  ~~
+					END
+					SET GW_tool = RESOLVE_STR_REF ( (AT GW_tooltip) )
+					TEXT_SPRINT new_row ~%new_row% %GW_tool%~ 	// Adds to the new row
+				END ELSE BEGIN // strref
+					TEXT_SPRINT new_row ~%new_row% %MATCH1%~ 	// Adds to the new row
+				END
+				TEXT_SPRINT empty_cols ~~
+			END ~~
+		END
 
-		OUTER_SET gw_random_value = RANDOM(1 8)
+		ACTION_IF num_tooltips < (cols_tooltip -1) BEGIN
+			OUTER_FOR (i = (cols_tooltip - 1) ; i > num_tooltips ; --i) BEGIN	// Generates -1 entries for the number of missing columns
+				OUTER_TEXT_SPRINT empty_cols ~%empty_cols% -1~
+			END
+		END
+
+		OUTER_TEXT_SPRINT new_row ~%new_row%%empty_cols%~
+		APPEND ~tooltip.2da~ ~%new_row%~ UNLESS ~^%GW_objet%~
+
+	END
+
+END	// of DEFINE_ACTION_FUNCTION
+
+
+/* ====================================================================================================================================== *
+ *  FUNCTION GW_ALTER_ITEM_ALTER_HEADER_FLAGS: ALTERS ITM extended headers new EE (or Tobex) flags.                                       *
+ *                                             MODIFIE les flags des extended headers des OBJETS (notamment pour EE et Tobex).            *
+ * -------------------------------------------------------------------------------------------------------------------------------------- *
+ *  INTEGER VARIABLES :                                                                                                                   *
+ *    - type                : header type (1 = Melee - 2 = Range - 3 = Magical - 4) Launcher - default = "-1", all).                      *
+ *    - header              : modifies specified header (default = 0, matches all headers, used with type = -1).                          *
+ *    - flag_strength       : adds strength bonus, set in bit0  (1 = adds - 0 = remove - default = "-1", no change).                      *
+ *    - flag_break          : breakable, set in bit1 (1 = adds - 0 = remove - default = "-1", no change).                                 *
+ *    - flag_breaksanctuary : breaks sanctuary (EE), set in bit9 (1 = adds - 0 = remove - default = "-1", no change).                     *
+ *    - flag_hostile        : hostile, set in bit10 (1 = adds - 0 = remove - default = "-1", no change).                                  *
+ *    - flag_recharge       : recharge after resting, set in bit11   (1 = adds - 0 = remove - default = "-1", no change).                 *
+ *    - flag_bypass         : bypass armor, set in bit16 (1 = adds - 0 = remove - default = "-1", no change).                             *
+ *    - flag_keenedge       : keen edge, set in bit17 (1 = adds - 0 = remove - default = "-1", no change).                                *
+ *    - flag_backstab       : can backstab (EE and ToBEx), set in bit25  (1 = adds - 0 = remove - default = "-1", no change).             *
+ *    - flag_noinvisible    : cannot target invisible (EE and ToBEx), set in bit26  (1 = adds - 0 = remove - default = "-1", no change).  *
+ * ====================================================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_ALTER_ITEM_ALTER_HEADER_FLAGS~
+    INT_VAR type                = "-1" // -1 is all headers, otherwise use value here
+            header              = 0    // 0 matches all headers, otherwise just modify specified header - use with type = -1
+            // flag_vars affect flags starting at 0x26; 0 means removes flag, 1 means adds flag, -1 no change
+            flag_strength       = "-1" // adds strength bonus, bit0
+            flag_break          = "-1" // breakable, bit1
+//          flag_str_damage     = "-1" // damage damage bonus, ee, bit2
+//          flag_str_to_hit     = "-1" // thac0 strength bonus, ee, bit3
+            flag_breaksanctuary = "-1" // breaks sanctuary, ee, bit9
+            flag_hostile        = "-1" // hostile, bit10
+            flag_recharge       = "-1" // recharge after resting, bit11
+            flag_bypass         = "-1" // bypass armor, bit16
+            flag_keenedge       = "-1" // keen edge, bit17
+            flag_backstab       = "-1" // tobex and ee only, can backstab, bit25
+            flag_noinvisible    = "-1" // tobex and ee only, cannot target invisible, bit26
+BEGIN
+
+	READ_LONG  0x64 "abil_off"
+	READ_SHORT 0x68 "abil_num"
+//PATCH_PRINT "DEBUGGING CONTROL abil_off = %abil_off% - abil_num = %abil_num%"
+	PATCH_IF (header = 0) BEGIN
+		SET loop_start = 0
+		SET loop_end = abil_num
+	END ELSE BEGIN
+		SET loop_start = (header - 1)
+		SET loop_end = header
+	END
+//PATCH_PRINT "DEBUGGING CONTROL loop_start = %loop_start% - loop_end = %loop_end%"
+
+	FOR (i = loop_start ; i < loop_end ; ++i) BEGIN
+		SET offset = abil_off + (i * 0x38)
+		READ_BYTE offset abil_type
+		PATCH_IF ((type < 0) OR (abil_type = type)) BEGIN
+			READ_LONG (offset + 0x26) flags
+			SET flags_off = (offset + 0x26)
+//PATCH_PRINT "DEBUGGING CONTROL i = %i% ==> offset = %offset% - abil_type = %abil_type% - flags_off = %flags_off% - flags = %flags%"
+			PATCH_IF (flag_strength = 0) AND ((flags & BIT0) = BIT0) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT0)
+			END
+			PATCH_IF (flag_strength = 1) AND ((flags & BIT0) = 0) BEGIN	// (THIS BOR BIT0)
+				WRITE_LONG flags_off (THIS | BIT0)
+			END
+			PATCH_IF (flag_break = 0) AND ((flags & BIT1) = BIT1) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT1)
+			END
+			PATCH_IF (flag_break = 1) AND ((flags & BIT1) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT1)
+			END
+/*			PATCH_IF (flag_str_damage  = 0) AND ((flags & BIT2) = BIT2) BEGIN
+				WRITE_LONG (flags_off) THIS & `BIT2)
+			END
+			PATCH_IF (flag_str_damage  = 1) AND ((flags & BIT2) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT2)
+			END
+			PATCH_IF (flag_str_to_hit = 0) AND ((flags & BIT3) = BIT3) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT3)
+			END
+			PATCH_IF (flag_str_to_hit = 1) AND ((flags & BIT3) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT3)
+			END
+*/			PATCH_IF (flag_breaksanctuary = 0) AND ((flags & BIT9) = BIT9) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT9)
+			END
+			PATCH_IF (flag_breaksanctuary = 1) AND ((flags & BIT9) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT9)
+			END
+			PATCH_IF (flag_hostile = 0) AND ((flags & BIT10) = BIT10) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT10)
+			END
+			PATCH_IF (flag_hostile = 1) AND ((flags & BIT10) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT10)
+			END
+			PATCH_IF (flag_recharge = 0) AND ((flags & BIT11) = BIT11) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT11)
+			END
+			PATCH_IF (flag_recharge = 1) AND ((flags & BIT11) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT11)
+			END
+			PATCH_IF (flag_bypass = 0) AND ((flags & BIT16) = BIT16) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT16)
+			END
+			PATCH_IF (flag_bypass = 1) AND ((flags & BIT16) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT16)
+			END
+			PATCH_IF (flag_keenedge = 0) AND ((flags & BIT17) = BIT17) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT17)
+			END
+			PATCH_IF (flag_keenedge = 1) AND ((flags & BIT17) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT17)
+			END
+			PATCH_IF (flag_backstab = 0) AND ((flags & BIT25) = BIT25) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT25)
+			END
+			PATCH_IF (flag_backstab = 1) AND ((flags & BIT25) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT25)
+			END
+			PATCH_IF (flag_noinvisible = 0) AND ((flags & BIT26) = BIT26) BEGIN
+				WRITE_LONG flags_off (THIS & `BIT26)
+			END
+			PATCH_IF (flag_noinvisible = 1) AND ((flags & BIT26) = 0) BEGIN
+				WRITE_LONG flags_off (THIS | BIT26)
+			END
+		END
+
+	END
+
+END	// of DEFINE_PATCH_FUNCTION
+
+
+/* =================================================================================================================== *
+ *  FUNCTION GW_ITEM_RESTRICT_USABILITY_EE: DEFINES special item usability restrictions (EE games)                     *
+ *                                          INTERDIT L'UTILISATION D'UN OBJET à un type de créature dans les jeux EE.  *
+ * ------------------------------------------------------------------------------------------------------------------- *
+ *  #319 Usability: Item Usability : This effect restricts the item to creature(s) matching the object identifiers.    *
+ *  The string to display in the description note is set in 0x2c.                                                      *
+ * =================================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_ITEM_RESTRICT_USABILITY_EE~ 
+    INT_VAR GW_shaman   = 0     // Automatic Druid restriction removal, now handled with op#319
+    STR_VAR GW_restrict = ""    // HUMAN, MALE, CAVALIER... Or string defining Actor's name, or scripting name (8 maximum length).
+            GW_power    = 0     // When GW_power is set to 1, this effect restricts the item to creature(s) matching the object identifiers. When GW_power is set to 0, creature(s) matching the object identifiers cannot use the item. The string to display when an invalid creature attempts to use the item is held in GW_mess319 (0x2c).
+            GW_kind     = ""    // IDS file : EA, General, Race, class, Specific, Gender, Align, Kit. OR Name (Actor's name), script_name (Actor's scripting name).
+            GW_mess319  = 0     // Description note (special field)
+BEGIN
+
+	PATCH_IF (GW_shaman) BEGIN
+
+		WRITE_LONG 0x1e (THIS BAND BNOT BIT30)	// removes Druid exclusion flag
+		LPF ADD_ITEM_EQEFFECT INT_VAR insert_point = "-1" opcode = 319 target = 1 timing = 2 parameter1 = 11 parameter2 = 5 power = 0 special = 1080 END	// Restrict Item (Usability: Item Usability) : 11 Druid - 5 Class.ids
 
 	END ELSE BEGIN
-		
-		// 50% chance
-		// ----------
-		ACTION_IF gw_percentage = 50 BEGIN
 
-			OUTER_SET gw_random_value = RANDOM(5 8)
+		SET GW_param2 = 0
+		SET GW_special319 = 0
+		SPRINT GW_resource319 ""
 
-		END ELSE BEGIN
+		PATCH_IF ("%GW_restrict%" STR_CMP ~~) AND ("%GW_kind%" STR_CMP ~~) BEGIN 
+		// IDS files case : EA, General, Race, class, Specific, Gender, Align, Kit.
+		// --------------
+			PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~NAME~) AND ("%GW_kind%" STRING_COMPARE_CASE ~SCRIPT_NAME~) BEGIN 
+				PATCH_IF FILE_EXISTS_IN_GAME ~%GW_kind%.ids~ BEGIN
+					SET GW_param1 = IDS_OF_SYMBOL (~%GW_kind%~ ~%GW_restrict%~)
+					PATCH_IF (GW_param1 != "-1") BEGIN				// IDS_OF_SYMBOL returns -1 if GW_restrict is not associated in GW_kind.ids.
+						PATCH_MATCH ~%GW_kind%~ WITH
+							EA		 BEGIN	SET GW_param2 = 2 END
+							GENERAL	 BEGIN	SET GW_param2 = 3 END
+							RACE	 BEGIN	SET GW_param2 = 4 END
+							CLASS	 BEGIN	SET GW_param2 = 5 END
+							SPECIFIC BEGIN	SET GW_param2 = 6 END
+							GENDER	 BEGIN	SET GW_param2 = 7 END
+							ALIGN	 BEGIN	SET GW_param2 = 8 END
+							KIT		 BEGIN	SET GW_param2 = 9 END
+							DEFAULT
+						END	// of PATCH_MATCH ~%GW_kind%~ WITH
+					END		// of PATCH_IF (GW_param1 != "-1")
+				END			// of PATCH_IF FILE_EXISTS_IN_GAME ~%GW_kind%.ids~
+			END				// of PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~NAME~) AND ("%GW_kind%" STRING_COMPARE_CASE ~SCRIPT_NAME~)
 
-			// 75% chance
-			// ----------
-			ACTION_IF gw_percentage = 75 BEGIN
+		// Actor's name case : If 'IDS File' is set to 10, the item is restricted to characters with the name specified by the strref held in parameter1. TODO If the strref is set to -1 (None), then you are targeting player-created characters (e.g., CHARNAME).
+		// -----------------
+			PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~NAME~ = 0) BEGIN
+				SET GW_param2 = 10
+				PATCH_IF ("%GW_restrict%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("GW_restrict%" STR_CMP ~~) BEGIN
+					INNER_PATCH_SAVE GWrestrict ~%GW_restrict%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+						REPLACE_TEXTUALLY ~^[@#]~  ~~
+					END
+					PATCH_IF ("%GW_restrict%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+						SET GW_param1 = RESOLVE_STR_REF ((AT %GWrestrict%))
+					END ELSE BEGIN
+						SET GW_param1 = EVAL "%GWrestrict%"
+					END
+				END ELSE BEGIN										// Sinon, on va chercher la référence dans le fichier dialog.tlk
+					SET GW_param1 = EVAL "%GW_restrict%"
+				END
+			END		// of PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~NAME~ = 0)
 
-				OUTER_SET gw_random_value = RANDOM(6 9)
+		// Actor's scripting name case : If 'IDS File' is set to 11, the item is restricted to characters with the death variable specified by the resource field. TODO If ˜no death variable is specified in the resource field, then you are targeting player-created characters (e.g., CHARNAME).
+		// ---------------------------
+			PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~SCRIPT_NAME~ = 0) BEGIN
+				SET GW_param1 = 0
+				PATCH_IF (STRING_LENGTH "%GW_restrict%" < 9) BEGIN	// 8 characters maximum in resource field
+					SPRINT GW_resource319 EVAL "%GW_restrict%"
+					SET GW_param2 = 11
+				END
+			END		// of PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~SCRIPT_NAME~ = 0)
 
+			// Description note.
+			// -----------------
+			PATCH_IF ("%GW_mess319%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_mess319%" STR_CMP ~~) BEGIN
+				INNER_PATCH_SAVE GWspecial ~%GW_mess319%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+					REPLACE_TEXTUALLY ~^[@#]~  ~~
+				END
+				PATCH_IF ("%GW_mess319%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+					SET GW_special319 = RESOLVE_STR_REF ((AT %GWspecial%))
+				END ELSE BEGIN
+					SET GW_special319 = EVAL "%GWspecial%"
+				END
+			END ELSE BEGIN										// Sinon, on va chercher la référence dans le fichier dialog.tlk
+				SET GW_special319 = EVAL "%GW_mess319%"
 			END
 
+			// Adds Effect #319 Usability: Item Usability if needed.
+			// -----------------------------------------------------
+			PATCH_IF (GW_param2 > 0) BEGIN
+				LPF ~ADD_ITEM_EQEFFECT~ INT_VAR opcode = 319 target = 1 timing = 2 parameter1 = EVAL "%GW_param1%" parameter2 = EVAL "%GW_param2%" power = EVAL "%GW_power%" special = EVAL "%GW_special319%" STR_VAR resource = EVAL "%GW_resource319%" END
+			END	// of PATCH_IF (GW_param2 > 0)
+
+		END		// of PATCH_IF ("%GW_restrict%" STR_CMP ~~) AND ("%GW_kind%" STR_CMP ~~)
+	END	 		// of PATCH_IF (GW_shaman) BEGIN
+
+END 			// of DEFINE_PATCH_FUNCTION
+
+
+/* =========================================================================================================================================== *
+ *  FUNCTION GW_FIND_DLG_RESPONSE_STRING: LOOKS for state and transition numbers matching a strref in a dialog.                                *
+ *                                        RECHERCHE de numéros d'état et de transition correspondant à un strref dans un fichier de dialogue.  *
+ * ------------------------------------------------------------------------------------------------------------------------------------------- *
+ *  STR_VAR                                                                                                                                    *
+ *      - GW_string_dlg        = strref to be found (may be @nn, #nnn or nnn).                                                                 *
+ *	RETURNS                                                                                                                                    *
+ *      - GW_transition_found  = Check if strref exists in dialog file (Y = Yes - N = No)                                                      *
+ *      - GW_state_number      = Dialogue state number matching strref.                                                                        *
+ *      - GW_transition_number = Transition number matching strref.                                                                            *
+ * =========================================================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_FIND_DLG_RESPONSE_STRING~
+    STR_VAR GW_string_dlg = 0      // string que l'on cherche
+    RET     GW_transition_found	   // Variable indiquant que l'on a trouvé une correspondance ==> Y = strref found
+            GW_state_number        // Numéro du dialogue
+            GW_transition_number   // Numéro de la transition (réponse)
+BEGIN
+
+	PATCH_IF ("%GW_string_dlg%" STR_CMP ~~) OR (GW_string_dlg >= 0) BEGIN
+
+		PATCH_IF ("%GW_string_dlg%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) BEGIN
+			INNER_PATCH_SAVE GW_strref ~%GW_string_dlg%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+				REPLACE_TEXTUALLY ~^[@#]~  ~~
+			END
+			PATCH_IF ("%GW_string_dlg%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+				SET GW_string_dlg = RESOLVE_STR_REF ((AT %GW_strref%))
+			END
 		END
 
-	END
+		SET GW_transition_number = "-99"
+		SET GW_state_number = "-99"
+		SPRINT GW_transition_found "N"
+		READ_LONG 0x08 GW_numstates             // Number of states
+		READ_LONG 0x0c GW_offstates             // Offset of state table from start of file
+		READ_LONG 0x10 GW_numresponse           // Number of transitions
+		READ_LONG 0x14 GW_offresponse           // Offset of transition table from start of file
+/*	LISTED but NOT USED
+		READ_LONG 0x18 GW_offstatetrigger       // Offset of state trigger table from start of file
+		READ_LONG 0x1c GW_numstatetrigger       // Number of state triggers
+		READ_LONG 0x20 GW_offresponsetrigger    // Offset of transition trigger table from start of file
+		READ_LONG 0x24 GW_numresponsetrigger    // Number of transition triggers
+		READ_LONG 0x28 GW_offaction             // Offset of action table from start of file
+		READ_LONG 0x2c GW_numaction             // Number of actions*/
+//		PATCH_PRINT ~CONTROL GW_FIND_DLG_RESPONSE_STRING : %SOURCE_RES%  -  %GW_numstates% States at offset %GW_offstates%  -  %GW_numresponse% Responses  at offset %GW_offresponse%.~
 
-END
+		FOR (state = 0 ; state < GW_numstates ; ++state) BEGIN
+
+			PATCH_IF ("%GW_transition_found%" STR_CMP "Y") BEGIN
+				READ_LONG ("%GW_offstates%" +       (state * 0x10)) GW_state_string         // Actor response text (i.e. what the non-player character says to the party)
+				READ_LONG ("%GW_offstates%" + 0x4 + (state * 0x10)) GW_index_first_response // Index of the first transition corresponding to this state (i.e. the index in the transition table of the first potential response the party can make in this state)
+				READ_LONG ("%GW_offstates%" + 0x8 + (state * 0x10)) GW_state_num_response   // Number of transitions corresponding to this state (i.e. how many possible responses are there to this state). A consecutive range of transitions in the transition table are assigned to this state, starting from 'first', as given by the previous field, ranging up to (but not including) 'first'+'count'.
+//				PATCH_PRINT ~	CONTROL FUNCTION GW_FIND_DLG_RESPONSE_STRING : %SOURCE_RES%  -  State #%state% = %GW_state_string%	-  Nb responses = %GW_state_num_response%  -  Index 1° réponse = %GW_index_first_response%.~
+
+				FOR (response = 0 ; response < GW_state_num_response ; ++response) BEGIN
+					READ_LONG ("%GW_offresponse%" + 0x4 + ("%GW_index_first_response%" * 0x20) + (response * 0x20)) GW_response_string
+
+					PATCH_IF (GW_response_string = GW_string_dlg) BEGIN
+						SET GW_transition_number = response
+						SET GW_state_number = state
+						SPRINT GW_transition_found "Y"
+//						PATCH_PRINT ~	CONTROL FUNCTION GW_FIND_DLG_RESPONSE_STRING : %SOURCE_RES%  - State #%state% = %GW_state_string%  -  Response #%response% = %GW_response_string%.~
+					END
+
+				END // of Looping through responses
+
+			END // PATCH_IF ("%GW_transition_found%" STRING_COMPARE_CASE "Y")
+
+		END // of Looping through states
+
+	END	// of PATCH_IF ("%GW_string_dlg%" STR_CMP ~~) OR (GW_string_dlg >= 0) BEGIN
+	
+END // of DEFINE_PATCH_FUNCTION
 
 
-/* =================================================================================== *
- *  MACRO gw_set_low_anim_names : Defines former _LOW animations slots removed by IA.  *
- * =================================================================================== */
+/* ========================================================================================================= *
+ *  FUNCTION GW_FIND_FATESP_IMOEN_TRANSITION : LOOKS for state and transition numbers in fatesp.dlg.         *
+ *                                             RECHERCHE de numéros de state et transition dans fatesp.dlg.  *
+ * --------------------------------------------------------------------------------------------------------- *
+ *  This function will insert Hubelpot before Imoen using fatesp_string variable defined in ALWAYS block):   *
+ *  #65017 = ~Bring me Imoen, the thief/mage.~ (classical and EE games).                                     *
+ * ========================================================================================================= */
 
-DEFINE_ACTION_MACRO ~gw_set_low_anim_names~
+DEFINE_ACTION_FUNCTION ~GW_FIND_FATESP_IMOEN_TRANSITION~
+    RET     GW_transition_found	   // Variable indiquant que l'on a trouvé une correspondance ==> Y = strref found
+            GW_state_number        // Numéro du dialogue - STATE number
+            GW_transition_number   // Numéro de la transition (réponse) - TRANSITION number
 BEGIN
 
-	OUTER_SPRINT low_0x5000 "CLERIC_MALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5001 "CLERIC_MALE_ELF_LOW"
-	OUTER_SPRINT low_0x5002 "CLERIC_MALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5003 "CLERIC_MALE_HALFLING_LOW"
-	OUTER_SPRINT low_0x5010 "CLERIC_FEMALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5011 "CLERIC_FEMALE_ELF_LOW"
-	OUTER_SPRINT low_0x5012 "CLERIC_FEMALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5013 "CLERIC_FEMALE_HALFLING_LOW"
+	COPY_EXISTING - ~fatesp.dlg~ ~override~
 
-	OUTER_SPRINT low_0x5100 "FIGHTER_MALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5101 "FIGHTER_MALE_ELF_LOW"
-	OUTER_SPRINT low_0x5102 "FIGHTER_MALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5103 "FIGHTER_MALE_HALFLING_LOW"
-	OUTER_SPRINT low_0x5110 "FIGHTER_FEMALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5111 "FIGHTER_FEMALE_ELF_LOW"
-	OUTER_SPRINT low_0x5112 "FIGHTER_FEMALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5113 "FIGHTER_FEMALE_HALFLING_LOW"
+		PATCH_IF (SOURCE_SIZE > 0x2f) THEN BEGIN  // protects against invalid files
+			LPF ~GW_FIND_DLG_RESPONSE_STRING~ STR_VAR GW_string_dlg = EVAL "%fatesp_string%" RET GW_transition_found GW_state_number GW_transition_number END
+			PATCH_IF ("%GW_transition_found%" STRING_EQUAL "Y") AND (GW_transition_number != "-99") BEGIN
+//				SET fatesp_transition_imoen = GW_transition_number
+//				SET fatesp_state_imoen = GW_state_number
+//				PATCH_PRINT "CONTROL %SOURCE_RES%.dlg  -  Transition found = %GW_transition_found%  at  state = #%GW_state_number%  and  transition = #%GW_transition_number%."
+			END
+		END	// of PATCH_IF (SOURCE_SIZE > 0x2f)
 
-	OUTER_SPRINT low_0x5200 "MAGE_MALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5201 "MAGE_MALE_ELF_LOW"
-	OUTER_SPRINT low_0x5202 "MAGE_MALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5210 "MAGE_FEMALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5211 "MAGE_FEMALE_ELF_LOW"
-	OUTER_SPRINT low_0x5212 "MAGE_FEMALE_DWARF_LOW"
-
-	OUTER_SPRINT low_0x5300 "THIEF_MALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5301 "THIEF_MALE_ELF_LOW"
-	OUTER_SPRINT low_0x5302 "THIEF_MALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5303 "THIEF_MALE_HALFLING_LOW"
-	OUTER_SPRINT low_0x5310 "THIEF_FEMALE_HUMAN_LOW"
-	OUTER_SPRINT low_0x5311 "THIEF_FEMALE_ELF_LOW"
-	OUTER_SPRINT low_0x5312 "THIEF_FEMALE_DWARF_LOW"
-	OUTER_SPRINT low_0x5313 "THIEF_FEMALE_HALFLING_LOW"
+	BUT_ONLY
 
 END
-
-
-/* ================================================================================ *
- *  MACRO gw_set_bg1_characters_anim_id : Defines BG1 Characters animations slots.  *
- * ================================================================================ */
-
-DEFINE_ACTION_MACRO ~gw_set_bg1_characters_anim_id~
-BEGIN
-
-/* TODO
-0x6212 MAGE_FEMALE_DWARF
-0x6214 MAGE_FEMALE_GNOME
---------------------------------------------------------------------
-IA vb5:
-
-OUTER_SET ia-cleric_female_dwarf_bg1      = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_DWARF_BG1~)
-APPEND ~animate.ids~ ~0x6415 CLERIC_FEMALE_DWARF_BG1~       UNLESS ~^0x6415~            // former L_CLERIC_FEMALE_DWARF
-OUTER_SET ia-fighter_female_dwarf_bg1     = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_DWARF_BG1~)
-APPEND ~animate.ids~ ~0x6425 FIGHTER_FEMALE_DWARF_BG1~      UNLESS ~^0x6425~            // former L_FIGHTER_FEMALE_DWARF
-OUTER_SET ia-mage_female_dwarf_bg1        = IDS_OF_SYMBOL (animate ~MAGE_FEMALE_DWARF_BG1~)
-APPEND ~animate.ids~ ~0x6435 MAGE_FEMALE_DWARF_BG1~         UNLESS ~^0x6435~            // former L_MAGE_FEMALE_DWARF
-OUTER_SET ia-thief_female_dwarf_bg1       = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_DWARF_BG1~)
-APPEND ~animate.ids~ ~0x6445 THIEF_FEMALE_DWARF_BG1~        UNLESS ~^0x6445~            // former L_THIEF_FEMALE_DWARF
-
-APPEND ~animate.ids~ ~0x6415 L_CLERIC_FEMALE_DWARF~ UNLESS ~^0x6415~
-APPEND ~animate.ids~ ~0x6425 L_FIGHTER_FEMALE_DWARF~ UNLESS ~^0x6425~
-APPEND ~animate.ids~ ~0x6435 L_MAGE_FEMALE_DWARF~ UNLESS ~^0x6435~
-APPEND ~animate.ids~ ~0x6445 L_THIEF_FEMALE_DWARF~ UNLESS ~^0x6445~
---------------------------------------------------------------------
-*/
-
-	OUTER_SET ia-cleric_male_human_bg1        = IDS_OF_SYMBOL (animate ~CLERIC_MALE_HUMAN_BG1~)
-	OUTER_SET ia-cleric_male_elf_bg1          = IDS_OF_SYMBOL (animate ~CLERIC_MALE_ELF_BG1~)
-	OUTER_SET ia-cleric_male_dwarf_bg1        = IDS_OF_SYMBOL (animate ~CLERIC_MALE_DWARF_BG1~)
-	OUTER_SET ia-cleric_male_halfling_bg1     = IDS_OF_SYMBOL (animate ~CLERIC_MALE_HALFLING_BG1~)
-
-	OUTER_SET ia-cleric_female_human_bg1      = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_HUMAN_BG1~)
-	OUTER_SET ia-cleric_female_elf_bg1        = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_ELF_BG1~)
-	OUTER_SET ia-cleric_female_halfling_bg1   = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_HALFLING_BG1~)
-
-	OUTER_SET ia-fighter_male_human_bg1       = IDS_OF_SYMBOL (animate ~FIGHTER_MALE_HUMAN_BG1~)
-	OUTER_SET ia-fighter_male_elf_bg1         = IDS_OF_SYMBOL (animate ~FIGHTER_MALE_ELF_BG1~)
-	OUTER_SET ia-fighter_male_dwarf_bg1       = IDS_OF_SYMBOL (animate ~FIGHTER_MALE_DWARF_BG1~)
-	OUTER_SET ia-fighter_male_halfling_bg1    = IDS_OF_SYMBOL (animate ~FIGHTER_MALE_HALFLING_BG1~)
-
-	OUTER_SET ia-fighter_female_human_bg1     = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_HUMAN_BG1~)
-	OUTER_SET ia-fighter_female_elf_bg1       = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_ELF_BG1~)
-	OUTER_SET ia-fighter_female_halfling_bg1  = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_HALFLING_BG1~)
-
-	OUTER_SET ia-mage_male_human_bg1          = IDS_OF_SYMBOL (animate ~MAGE_MALE_HUMAN_BG1~)
-	OUTER_SET ia-mage_male_elf_bg1            = IDS_OF_SYMBOL (animate ~MAGE_MALE_ELF_BG1~)
-	OUTER_SET ia-mage_male_dwarf_bg1          = IDS_OF_SYMBOL (animate ~MAGE_MALE_DWARF_BG1~)
-
-	OUTER_SET ia-mage_female_human_bg1        = IDS_OF_SYMBOL (animate ~MAGE_FEMALE_HUMAN_BG1~)
-	OUTER_SET ia-mage_female_elf_bg1          = IDS_OF_SYMBOL (animate ~MAGE_FEMALE_ELF_BG1~)
-
-	OUTER_SET ia-thief_male_human_bg1         = IDS_OF_SYMBOL (animate ~THIEF_MALE_HUMAN_BG1~)
-	OUTER_SET ia-thief_male_elf_bg1           = IDS_OF_SYMBOL (animate ~THIEF_MALE_ELF_BG1~)
-	OUTER_SET ia-thief_male_dwarf_bg1         = IDS_OF_SYMBOL (animate ~THIEF_MALE_DWARF_BG1~)
-	OUTER_SET ia-thief_male_halfling_bg1      = IDS_OF_SYMBOL (animate ~THIEF_MALE_HALFLING_BG1~)
-
-	OUTER_SET ia-thief_female_human_bg1       = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_HUMAN_BG1~)
-	OUTER_SET ia-thief_female_elf_bg1         = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_ELF_BG1~)
-	OUTER_SET ia-thief_female_halfling_bg1    = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_HALFLING_BG1~)
-
-	ACTION_IF is_ee BEGIN
-
-		OUTER_SET ia-cleric_male_gnome_bg1     = IDS_OF_SYMBOL (animate ~CLERIC_MALE_GNOME_BG1~)
-		OUTER_SET ia-cleric_male_halforc_bg1   = IDS_OF_SYMBOL (animate ~CLERIC_MALE_HALFORC_BG1~)
-
-		OUTER_SET ia-cleric_female_dwarf_bg1   = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_DWARF_BG1~)
-		OUTER_SET ia-cleric_female_gnome_bg1   = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_GNOME_BG1~)
-		OUTER_SET ia-cleric_female_halforc_bg1 = IDS_OF_SYMBOL (animate ~CLERIC_FEMALE_HALFORC_BG1~)
-
-		OUTER_SET ia-fighter_male_gnome_bg1     = IDS_OF_SYMBOL (animate ~FIGHTER_MALE_GNOME_BG1~)
-		OUTER_SET ia-fighter_male_halforc_bg1   = IDS_OF_SYMBOL (animate ~FIGHTER_MALE_HALFORC_BG1~)
-
-		OUTER_SET ia-fighter_female_dwarf_bg1   = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_DWARF_BG1~)
-		OUTER_SET ia-fighter_female_gnome_bg1   = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_GNOME_BG1~)
-		OUTER_SET ia-fighter_female_halforc_bg1 = IDS_OF_SYMBOL (animate ~FIGHTER_FEMALE_HALFORC_BG1~)
-
-
-		OUTER_SET ia-mage_male_gnome_bg1         = IDS_OF_SYMBOL (animate ~MAGE_MALE_GNOME_BG1~)
-		OUTER_SET ia-mage_male_halforc_bg1       = IDS_OF_SYMBOL (animate ~MAGE_MALE_HALFORC_BG1~)
-
-		OUTER_SET ia-mage_female_dwarf_bg1       = IDS_OF_SYMBOL (animate ~MAGE_FEMALE_DWARF_BG1~)
-		OUTER_SET ia-mage_female_gnome_bg1       = IDS_OF_SYMBOL (animate ~MAGE_FEMALE_GNOME_BG1~)
-		OUTER_SET ia-mage_female_halforc_bg1     = IDS_OF_SYMBOL (animate ~MAGE_FEMALE_HALFORC_BG1~)
-
-		OUTER_SET ia-thief_male_gnome_bg1        = IDS_OF_SYMBOL (animate ~THIEF_MALE_GNOME_BG1~)
-		OUTER_SET ia-thief_male_halforc_bg1      = IDS_OF_SYMBOL (animate ~THIEF_MALE_HALFORC_BG1~)
-
-		OUTER_SET ia-thief_female_dwarf_bg1      = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_DWARF_BG1~)
-		OUTER_SET ia-thief_female_gnome_bg1      = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_GNOME_BG1~)
-		OUTER_SET ia-thief_female_halforc_bg1    = IDS_OF_SYMBOL (animate ~THIEF_FEMALE_HALFORC_BG1~)
-
-	END
-
-END
-/*
-ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_animation_map BEGIN
-
-0x6000 => 0x5622  // 0x6000 CLERIC_MALE_HUMAN     ==>  0x5622 BG1_CLERIC_HUMAN_MALE
-0x6001 => 0x5623  // 0x6001 CLERIC_MALE_ELF       ==>  0x5623 BG1_CLERIC_ELF_MALE
-0x6002 => 0x5624  // 0x6002 CLERIC_MALE_DWARF     ==>  0x5624 BG1_CLERIC_DWARF_MALE
-0x6003 => 0x5625  // 0x6003 CLERIC_MALE_HALFLING  ==>  0x5625 BG1_CLERIC_HALFLING_MALE
-0x6004 => 0x5642  // 
-0x6005 => 0x5643  // 
-
-0x6004 CLERIC_MALE_GNOME     ==>  0x5642 BG1_CLERIC_GNOME_MALE = dwarf??? should be halfling
-0x6005 CLERIC_MALE_HALFORC   ==>  0x5643 BG1_CLERIC_HALFORC_MALE = human
-
-0x6010 => 0x5626  // 0x6010 CLERIC_FEMALE_HUMAN     ==>  0x5626 BG1_CLERIC_HUMAN_FEMALE
-0x6011 => 0x5627  // 0x6011 CLERIC_FEMALE_ELF       ==>  0x5627 BG1_CLERIC_ELF_FEMALE
-0x6012 => 0x5628  // 
-0x6013 => 0x5629  // 0x6013 CLERIC_FEMALE_HALFLING  ==>  0x5629 BG1_CLERIC_HALFLING_FEMALE
-0x6014 => 0x5644  // 
-0x6015 => 0x5645  // 
-
-0x6012 CLERIC_FEMALE_DWARF     ==>  0x5628 BG1_CLERIC_DWARF_FEMALE xdfc = male
-0x6014 CLERIC_FEMALE_GNOME     ==>  0x5644 BG1_CLERIC_GNOME_FEMALE = dwarf??? should be halfling
-0x6015 CLERIC_FEMALE_HALFORC   ==>  0x5645 BG1_CLERIC_HALFORC_FEMALE = human
-
-0x6100 => 0x5600  // 0x6100 FIGHTER_MALE_HUMAN     ==>  0x5600 BG1_FIGHTER_HUMAN_MALE
-0x6101 => 0x5601  // 0x6101 FIGHTER_MALE_ELF       ==>  0x5601 BG1_FIGHTER_ELF_MALE
-0x6102 => 0x5602  // 0x6102 FIGHTER_MALE_DWARF     ==>  0x5602 BG1_FIGHTER_DWARF_MALE
-0x6103 => 0x5603  // 0x6103 FIGHTER_MALE_HALFLING  ==>  0x5603 BG1_FIGHTER_HALFLING_MALE
-0x6104 => 0x5630  // 
-0x6105 => 0x5631  // 
-
-0x6104 FIGHTER_MALE_GNOME     ==>  0x5630 BG1_FIGHTER_GNOME_MALE = dwarf??? should be halfling
-0x6105 FIGHTER_MALE_HALFORC   ==>  0x5631 BG1_FIGHTER_HALFORC_MALE = human
-
-0x6110 => 0x5604  // 0x6110 FIGHTER_FEMALE_HUMAN      ==>  0x5604 BG1_FIGHTER_HUMAN_FEMALE
-0x6111 => 0x5605  // 0x6111 FIGHTER_FEMALE_ELF        ==>  0x5605 BG1_FIGHTER_ELF_FEMALE
-0x6112 => 0x5606  // 
-0x6113 => 0x5607  // 0x6113 FIGHTER_FEMALE_HALFLING   ==>  0x5607 BG1_FIGHTER_HALFLING_FEMALE
-0x6114 => 0x5632  // 
-0x6115 => 0x5633  // 
-
-0x6112 FIGHTER_FEMALE_DWARF      ==>  0x5606 BG1_FIGHTER_DWARF_FEMALE = male
-0x6114 FIGHTER_FEMALE_GNOME      ==>  0x5632 BG1_FIGHTER_GNOME_FEMALE = dwarf??? should be halfling
-0x6115 FIGHTER_FEMALE_HALFORC    ==>  0x5633 BG1_FIGHTER_HALFORC_FEMALE = human
-
-0x6200 => 0x5608  // 0x6200 MAGE_MALE_HUMAN     ==>  0x5608 BG1_MAGE_HUMAN_MALE
-0x6201 => 0x5609  // 0x6201 MAGE_MALE_ELF       ==>  0x5609 BG1_MAGE_ELF_MALE
-0x6202 => 0x5610  // 0x6202 MAGE_MALE_DWARF     ==>  0x5610 BG1_MAGE_DWARF_MALE
-0x6204 => 0x5634  // 
-0x6205 => 0x5635  // 
-
-0x6204 MAGE_MALE_GNOME     ==>  0x5634 BG1_MAGE_GNOME_MALE = dwarf??? should be halfling
-0x6205 MAGE_MALE_HALFORC   ==>  0x5635 BG1_MAGE_HALFORC_MALE = human
-
-0x6210 => 0x5611  // 0x6210 MAGE_FEMALE_HUMAN     ==>  0x5611 BG1_MAGE_HUMAN_FEMALE
-0x6211 => 0x5612  // 0x6211 MAGE_FEMALE_ELF       ==>  0x5612 BG1_MAGE_ELF_FEMALE
-0x6212 => 0x5613  // 
-0x6214 => 0x5636  // 
-0x6215 => 0x5637  // 
-
-0x6212 MAGE_FEMALE_DWARF     ==>  0x5613 BG1_MAGE_DWARF_FEMALE = male
-0x6214 MAGE_FEMALE_GNOME     ==>  0x5636 BG1_MAGE_GNOME_FEMALE = dwarf??? should be halfling
-0x6215 MAGE_FEMALE_HALFORC   ==>  0x5637 BG1_MAGE_HALFORC_FEMALE = human
-
-0x6300 => 0x5614  // 0x6300 THIEF_MALE_HUMAN      ==>  0x5614 BG1_THIEF_HUMAN_MALE
-0x6301 => 0x5615  // 0x6301 THIEF_MALE_ELF        ==>  0x5615 BG1_THIEF_ELF_MALE
-0x6302 => 0x5616  // 0x6302 THIEF_MALE_DWARF      ==>  0x5616 BG1_THIEF_DWARF_MALE
-0x6303 => 0x5617  // 0x6303 THIEF_MALE_HALFLING   ==>  0x5617 BG1_THIEF_HALFLING_MALE
-0x6304 => 0x5638  // 
-0x6305 => 0x5639  // 
-
-0x6304 THIEF_MALE_GNOME      ==>  0x5638 BG1_THIEF_GNOME_MALE = dwarf??? should be halfling
-0x6305 THIEF_MALE_HALFORC    ==>  0x5639 BG1_THIEF_HALFORC_MALE = human
-
-0x6310 => 0x5618  // 0x6310 THIEF_FEMALE_HUMAN      ==>  0x5618 BG1_THIEF_HUMAN_FEMALE
-0x6311 => 0x5619  // 0x6311 THIEF_FEMALE_ELF        ==>  0x5619 BG1_THIEF_ELF_FEMALE
-0x6312 => 0x5620  // 
-0x6313 => 0x5621  // 0x6313 THIEF_FEMALE_HALFLING   ==>  0x5621 BG1_THIEF_HALFLING_FEMALE
-0x6314 => 0x5640  // 
-0x6315 => 0x5641  // 
-
-0x6312 THIEF_FEMALE_DWARF      ==>  0x5620 BG1_THIEF_DWARF_FEMALE = male
-0x6314 THIEF_FEMALE_GNOME      ==>  0x5640 BG1_THIEF_GNOME_FEMALE = dwarf??? should be halfling
-0x6315 THIEF_FEMALE_HALFORC    ==>  0x5641 BG1_THIEF_HALFORC_FEMALE = human
-
-END
-
-0x6621 FIGHTER_FEMALE_HUMAN_BG1
-*/
