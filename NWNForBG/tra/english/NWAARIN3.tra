@@ -1,4 +1,4 @@
-@0 = ~NP: Excuse me, but where is <CHARNAME>? I'll only talk to him.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
+@0 = ~Excuse me, but where is <CHARNAME>? I'll only talk to him.~ 
 @1 = ~Do not give up hope, my Lord. We still have the Words of Power, after all.~ [NWAAR471]
 @2 = ~Perhaps Haedraline will reveal their secret to us - if you release her from the dungeons.~ [NWAAR472]
 @3 = ~Haedraline told us about the secret door beneath Castle Never. Without her we would never have found the Source Stone.~ [NWAAR473]
@@ -101,4 +101,4 @@
 @100 = ~Organizing our remaing troops to withstand the next Luskan assault requires all my attention, <CHARNAME>. If the enemy breaches the City Core we are lost.~ [NWAAR488]
 @101 = ~I am afraid I can only spare a few moments for you, though I will try to help you however I can.~ [NWAAR489]
 @102 = ~Ah, my love - it is good to see you again. I only wish it were under less trying circumstances.~ [NWAAR487]
-@103 = ~NP: It is an honor to speak with you. You are now a hero of Neverwinter, your name will forever be written in the history of the city!~ /*Mommy says you're the hero of Neverwinter. I want to be a hero!*/
+@103 = ~It is an honor to speak with you. You are now a hero of Neverwinter, your name will forever be written in the history of the city!~ 

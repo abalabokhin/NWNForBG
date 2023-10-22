@@ -1,4 +1,4 @@
-@0 = ~NP: Excuse me, but where is <CHARNAME>? I'll only talk to him.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
+@0 = ~Excuse me, but where is <CHARNAME>? I'll only talk to him.~
 @1 = ~This has become something of a habit, has it not, <CHARNAME>? Once more Neverwinter is threatened, and once more you are called upon to save us all.~ [NWAAR310]
 @2 = ~I must admit, <CHARNAME>, I was glad when Lord Nasher informed me you would be coming on this mission as well. The thought of being apart from you was... unpleasant.~ [NWAAR311]
 @3 = ~Yet this time you will be reporting directly to me. With Aribeth's defection, Lord Nasher has elevated me from the role of spymaster to that of his right hand.~ [NWAAR313]
@@ -73,7 +73,7 @@
 @72 = ~How goes the war effort?~
 @73 = ~Have you learned anything about the lizardwoman Haedraline?~
 @74 = ~My mother's amulet... the one I gave you. You still have it.~ [NWAAR369]
-@75 = ~NP: You think I got rid of it?~ /*Did you think I would get rid of it?*/
+@75 = ~Did you think I would get rid of it?~ 
 @76 = ~Are you saying you want it back?~
 @77 = ~Since you gave me this amulet all you've spoken about is business.~
 @78 = ~Why didn't you say something earlier?~ [NWAAR387]
@@ -148,8 +148,8 @@
 @147 = ~Time grows short. We must return to Castle Never to defend its walls and the Words of Power within from Aribeth and Maugrim!~ [NWAAR459]
 @148 = ~We will leave right now, if you are ready.~ [NWAAR460]
 @149 = ~I'm ready.~
-@150 = ~NP: I still have some business to take care of here~ /*I have some other questions.*/
+@150 = ~I still have some business to take care of here.~ 
 @151 = ~I only hope we are not too late.~ [NWAAR461]
 
 @153 = ~I wish I had something to give you, but all such items have been sent to the battle fronts to aid in the war effort.~ [NWAAR426]
-@154 = ~NP: Hurry up <CHARNAME>. We might be late.~ /*Not right now, <CHARNAME>. Later, perhaps.*/
+@154 = ~Hurry up <CHARNAME>. We might be late.~

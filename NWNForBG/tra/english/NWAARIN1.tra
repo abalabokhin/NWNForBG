@@ -1,5 +1,5 @@
-@0 = ~NP: Excuse me, but where is <CHARNAME>? I'll only talk to him.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
-@1 = ~NP: Excuse me, but where is <CHARNAME>? I'll only talk to her.~ /*My name is <CHARNAME>. I work for Aarin Gend.*/
+@0 = ~Excuse me, but where is <CHARNAME>? I'll only talk to him.~
+@1 = ~Excuse me, but where is <CHARNAME>? I'll only talk to her.~
 @2 = ~Hail, friend. You were instrumental in ridding Neverwinter of the Wailing Death, I understand. Allow me to congratulate you on a job well done. You have shown yourself to be possessed of remarkable courage and resourcefulness. That is fortuitous, for both these qualities will be needed if you are to complete your mission.~ [NWAAR227] /*Hail, friend. You were instrumental in ridding Neverwinter of the Wailing Death, I understand. Allow me to congratulate you on a job well done.*/
 @3 = ~But that is not how we should begin. I am known as Aarin Gend, and I have served our Lord Nasher for some time. Hopefully I may be of similar use to you now.~ [NWAAR229]
 @4 = ~How, exactly, can you help me?~
@@ -86,7 +86,7 @@
 @85 = ~I mean that it is more than one tale. How I became a spymaster is quite different from how I met and came to serve our Lord Nasher. I am no drunken bard to spill the story of my life at a moment's notice, however, so either story is usually one I keep to myself.~ [NWAAR120] /*I mean that it is more than one tale. How I became a spymaster is quite different from how I met and came to serve our Lord Nasher.*/
 @86 = ~As you wish. Is there something else I could answer?~ [NWAAR122]
 @87 = ~Then why did you ask? Surely you must have better things to do. What else?~ [NWAAR124] /*Then why did you ask? Surely you must have better things to do.*/
-@88 = ~NP: No, I don't think so, my friend. You have more important things to focus on than me. However, I am still willing to answer your relevant questions.~ /*No, I do not think so, my friend. You have far more important things to focus on other than I. Ask me another time, perhaps.*/
+@88 = ~No, I do not think so, my friend. You have far more important things to focus on other than I. Ask me another time, perhaps. However, I am still willing to answer your relevant questions.~
 @89 = ~NP: * Sigh* Suit yourself, my friend. but it's not my fault if you fall asleep while I'm talking. I began my life as a slave in the desert south of Kalimshan. And it never even occurred to me that I would become what I am today. The lush and wild jungles of my homeland, Hulta, were only familiar to me from my mother's evening stories. I had never seen those shores. My mother's master was a terrible and cruel caliph. As the child of a slave, I learned to keep out of sight and be quiet, otherwise I could earn my punishment.~ [NWAAR076] /*While garments like this have been found in almost every culture with a strong contingent of spellcasters, this example and most others in the Neverwinter area are believed to have originated within Ulcaster's School of Wizardry. The school presented no bias in its teachings, and hosted casters from all across the Sword Coast until its destruction some 200 years ago.*/
 @90 = ~Moreover, I learned to listen. I listened to the chatter of the servants, the bored talk of the guards. For many, many years I was the shadow in the caliph's halls. For all my hiding, however, I proved of no use to anyone but myself. I could not save my mother when the caliph beat her to death for spilling a tankard of his mead, for instance.~ [NWAAR083] /*For all my hiding, however, I proved of no use to anyone but myself. I could not save my mother when the caliph beat her to death for spilling a tankard of his mead, for instance.*/
 @91 = ~I trust you taught him a lesson.~
@@ -145,7 +145,7 @@
 @144 = ~How did he respond to that?~
 @145 = ~What he say to that?~
 @146 = ~He smiled at me... and said that he only hoped that if he did something wrong that I would tell him first. I asked him if this meant I was to serve him now. To that he said no... I was to serve Neverwinter. That was to be my sentence. I am twenty years into my sentence now, my friend, and I have been thankful for each year of it.~ [NWAAR152] /*I asked him if this meant I was to serve him now. To that he said no... I was to serve Neverwinter. That was to be my sentence.*/
-@147 = ~NP: And you, uh. you're a prisoner?~ /*New wizard?*/
+@147 = ~And you're a prisoner?~ 
 @148 = ~Lord Nasher sounds like a fine man.~
 @149 = ~But you could have just left, if you wanted to.~
 @150 = ~Not truly, my friend. I have come to admire Lord Nasher and love Neverwinter with all my heart. It is a prison that suits me well. And had I left, I never would have met my Calli... I...~ [NWAAR155] /*Not truly, my friend. I have come to admire Lord Nasher and love Neverwinter with all my heart. It is a prison that suits me well.*/
@@ -158,7 +158,7 @@
 @157 = ~It is not your concern, and I should not have mentioned her. Regardless, my tale is done. Let us return to your questions and speak no more of me.~ [NWAAR160] /*It is not your concern, and I should not have mentioned her. Regardless, my tale is done.*/
 @158 = ~I... did. That I mentioned her at all was by accident, my friend. I have been determined to avoid those memories for many years, now.~ [NWAAR169]
 @159 = ~Why? What's wrong?~
-@160 = ~NP: In that case, I won't insist.~ /*And with that, I will take my leave.*/
+@160 = ~In that case, I won't insist.~ 
 @161 = ~No, I... have no desire to speak of her, <CHARNAME>. It is no fault of yours. Perhaps another time. I'd like to ask something else.~ /*No, I... have no desire to speak of her, <CHARNAME>. It is no fault of yours. Perhaps another time.*/
 @162 = ~Since I do not wish to speak of it, I have no trouble with that. I'd like to ask something else.~ [NWAAR206] /*Since I do not wish to speak of it, I have no trouble with that.*/
 @163 = ~*Sigh* I suppose one cannot leave the story unfinished. As you wish, then, my friend.~ [NWAAR170]
@@ -179,7 +179,7 @@
 @178 = ~You killed her?~
 @179 = ~Aye. I should have done it sooner, when I was first trusted enough to be alone in her presence... but I was too intrigued and foolish. She enthralled me. I found her soul so similar to my own, and we drew together immediately. Despite my misgivings, I gave in and allowed myself to love her.~ [NWAAR179] /*Aye. I should have done it sooner, when I was first trusted enough to be alone in her presence... but I was too intrigued and foolish.*/
 @180 = ~I knew it would not last. I discovered her plan to kill Lord Nasher, and knew that the time had come to tell her who I was. It was my hope to dissuade her from her life.~ [NWAAR181]
-@181 = ~NP: Well, of course you didn't.~ /*But of course you not do it.*/
+@181 = ~But of course you not do it.~
 @182 = ~How did she react?~
 @183 = ~And you killed her? How could you?!~
 @184 = ~She was not angry, as I thought she would be. Merely disappointed, perhaps, as she drew her sword. To strike her down was almost unthinkable. As we parried, I begged her to reconsider, to leave her life... to stay with me, and I would protect her from Lord Nasher's wrath. "I will not change for you, Aarin... even as you would not change for me. Let it end here."~ [NWAAR197] /*To strike her down was almost unthinkable. As we parried, I begged her to reconsider, to leave her life... to stay with me, and I would protect her from Lord Nasher's wrath.*/
@@ -218,7 +218,7 @@
 @217 = ~Aye, I know that you will. Let us speak of other things, then... for you have much to do.~ [NWAAR215] /*Let us speak of other things, then... for you have much to do.*/
 @218 = ~Then say nothing, <CHARNAME>. Take it in the spirit with which it is meant. Let us speak of other things, then... for you have much to do.~ [NWAAR217] /*Then say nothing, <CHARNAME>. Take it in the spirit with which it is meant.*/
 @219 = ~I... I see. Please forgive me, my friend. Clearly I have overstepped my bounds. Let us... speak of something else.~ [NWAAR218]
-@220 = ~NP: Hey, buddy, how are we doing? Is there something you wanted to ask me?~ [NWAAR300] /*Well met, . Have you had any progress? Have you found Neva yet?*/
+@220 = ~NP: Hey, friend, how are we doing? Is there something you wanted to ask me?~ [NWAAR300] /*Well met, . Have you had any progress? Have you found Neva yet?*/
 @221 = ~I understand that you have found information pinpointing the cult within Luskan. That is good... I believe I have found a way inside the city.~ [NWAAR302]
 
 @223 = ~An old friend of mine is a sergeant who works the city gates. I have convinced him that the plague is no longer a threat, and as a favor he has agreed to allow my agents and I into the city. I will give your description to him so he will allow you entry. Aribeth and I shall be moving our base of operations to Luskan, so we will meet you there.~ [NWAAR303] /*An old friend of mine is a sergeant who works the city gates. I have convinced him that the plague is no longer a threat, and as a favor he has agreed to allow my agents and I into the city.*/
@@ -241,7 +241,7 @@
 @240 = ~Greetings, my dear friend. The presence of such a charming woman as yourself is always welcome. How may I serve?~ [NWAAR298]
 @241 = ~We are fortunate that you have found the location of this cult, hiding amongst the wizards of Luskan's Host Tower. It is now clear how they possess so much power and stealth.~ [NWAAR060]
 @242 = ~I have discovered all I can about the cult in the Host Tower.~
-@243 = ~NP: I have the stamp you need.~ /*I have the seal that you need.*/
+@243 = ~I have the seal that you need.~
 @244 = ~Where do I find this Host Tower?~
 @245 = ~How do I get inside the tower?~
 @246 = ~What do you know about the Arcane Brotherhood?~
@@ -252,9 +252,9 @@
 @251 = ~But... what of this Maugrim's purpose, my friend? Were you able to discover anything of the reasoning behind all this madness?~ [NWAAR589]
 @252 = ~Tell Aarin about the Words of Power.~
 @253 = ~This is perhaps the first good news I have heard so far. It shows us that we are ignorant of much and must catch up quickly if we are to survive... but at least you have brought us hope. Come then... let us return to Lord Nasher quickly and relate what you have discovered. Then perhaps we will see what must be done next. Who you?~ [NWAAR590] /*This is perhaps the first good news I have heard so far. It shows us that we are ignorant of much and must catch up quickly if we are to survive... but at least you have brought us hope.*/
-@254 = ~NP: Yeah, we're leaving right now.~ /*Yes - me ready right now!*/
+@254 = ~Yes, we're leaving right now.~
 
-@256 = ~NP: Wait, I still have some business to take care of in Luskana.~ /*Why you not leaves him in prison?*/
+@256 = ~Wait, I still have some business to take care of in Luskan.~ 
 @257 = ~Excellent work, my friend. I have already managed to put together a forgery that will claim the bearer as an ambassador of Mulhorand. It is then a simple matter of moving the seal from one document to the other... as so... and it is done.~ [NWAAR071] /*Excellent work, my friend. I have already managed to put together a forgery that will claim the bearer as an ambassador of Mulhorand.*/
 
 @259 = ~This forgery, then, should allow you to by-pass any guards at the bridge, as well as the magical wards. Once inside, however, I would not rely on it.~ [NWAAR073]
@@ -274,5 +274,6 @@
 @273 = ~She has not returned to Neverwinter. Part of me wonders if... if perhaps she seeks to exact her own brand of vengeance upon the cultists. I cannot be certain. Aribeth was acting so strangely before her disappearance. She had an icy calm, as if the lady paladin had accepted an unpleasant fate. I worry for her safety. She is not in her right mind, I fear.~ [NWAAR054] /*I cannot be certain. Aribeth was acting so strangely before her disappearance. She had an icy calm, as if the lady paladin had accepted an unpleasant fate.*/
 @274 = ~As you wish. I am concerned for the lady paladin, even if you are not. I thought at the least you should know.~ [NWAAR057]
 @275 = ~Your most important task is to find your way into the Host Tower, my friend. The cult must be dealt with. If you find Aribeth there, all the better. If she is not within the Host Tower, a true search will have to wait until after your own mission is complete, no matter how much we might wish otherwise. So, then... let us discuss your mission.~ [NWAAR058] /*If she is not within the Host Tower, a true search will have to wait until after your own mission is complete, no matter how much we might wish otherwise. So, then... let us discuss your mission.*/
-@276 = ~NP: So, are you ready to go to Lord Nasher in Neverwinter?~ /*100 gold... will that get you to Neverwinter?*/
-@277 = ~NP: No, I'm not ready yet.~ /*No, I don't want it.*/
+@276 = ~So, are you ready to go to Lord Nasher in Neverwinter?~ 
+@277 = ~No, I'm not ready yet.~
+
