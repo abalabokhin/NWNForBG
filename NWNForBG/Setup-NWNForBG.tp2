@@ -154,7 +154,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 INCLUDE ~NWNForBG/lib/a7_functions.tpa~
-INCLUDE ~NWNForBG/lib/gw_functions.tpa~
 
 // Install all animations. It is only valid for ee.
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
