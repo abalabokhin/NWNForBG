@@ -18,20 +18,32 @@ ALWAYS
 
     OUTER_SET cd_always = 1 // just do this once per install
 
-    ACTION_DEFINE_ARRAY cdnoconvert BEGIN ~setup-ee~ END // since this file is only used for EE games, it's already converted to utf8
-    ACTION_DEFINE_ARRAY cdreload BEGIN setup END
+    
+
+    // Copies tra files into the autotra-folder (to leave the originals untouched)
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~NWNForBG/tra/english~  ~NWNForBG/tra/autotra/%LANGUAGE%~
+      COPY ~NWNForBG/tra/%LANGUAGE%~  ~NWNForBG/tra/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+// ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+
+ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
+
     LAF HANDLE_CHARSETS
       INT_VAR
-        infer_charset = 1
+        infer_charsets = 1
       STR_VAR
-        tra_path = EVAL ~%MOD_FOLDER%/tra~
-        noconvert_array = cdnoconvert
-        reload_array = cdreload
+        tra_path = EVAL ~NWNForBG/tra/autotra~
+        // noconvert_array = fl#noconvert
+        reload_array = fl#reload
     END
   END
 END
 
-AUTO_TRA ~NWNForBG/tra/%s~
+AUTO_TRA ~NWNForBG/tra/autotra/%s~
 
 LANGUAGE ~Russian~
 ~russian~
@@ -1279,6 +1291,17 @@ COPY ~NWNForBG/are/nw4103.are~ ~override~
   READ_LONG 0xbc ofsSongs
   WRITE_LONG (ofsSongs + 0x0) NWNMorag
   WRITE_LONG (ofsSongs + 0x4) NWNMorag
+  
+  
+// Aeras cheat for Neverwinter Night
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+
+LOAD_TRA ~NWNForBG/tra/autotra/%LANGUAGE%/CheatsAreas.tra~
+
+INCLUDE ~NWNForBG/Lib/NeverWinterCheats.tph~
+
+END
 
 //Creatures
 COPY ~NWNForBG/cre~ ~override~
@@ -5953,7 +5976,7 @@ ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
    APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
 
   //preliminary step - making LANGUAGE temporary file until the new WeiDU
-  COPY ~NWNForBG/tra/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+  COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
   COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
    APPEND_FILE ~tmp_worldmap.tra~
 
@@ -5968,6 +5991,6 @@ ELSE BEGIN
   MKDIR ~Worldmap~
   COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
   COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
-  COPY ~NWNForBG/tra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+  COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
 END
 

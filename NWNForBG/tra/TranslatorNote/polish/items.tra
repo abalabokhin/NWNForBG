@@ -1,0 +1,7 @@
+@101 = ~Ostrze chaosu~
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@1 =~[Mm]oze[ %tab%]+[Uu]zywac[ %tab%]*:~
+@2 =~[Nn]ie[ %tab%]+[Mm]oze[ %tab%]+[Uu]zywac[ %tab%]*:~
