@@ -23,6 +23,7 @@ Thanks and Acknowledgements
 * Lord\_Draconis - for the provided location images
 * Gorion - for the provided night Beggar's Nest location image
 * Insomniator2 - for a great help with weidu adaptation and especially for the script that can generate weidu code to set string refs for binary files (cre, are, etc.)
+* megrimlock - for helping with proof-reading english tra files
 * p\_zombie - for testing and help with bp-bgt-worldmap adaptation
 * Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod
 * argent77 - for help with TIS files and useful weidu libraries
@@ -70,6 +71,8 @@ Known Bugs:
 Version History
 ---------------
 In development:
+
+- Many lines in english tra files are automatically (using python script) found in the original NWN texts and/or proof read by paladin84 and megrimlock
 
 0.92 (10/18/23)
 
