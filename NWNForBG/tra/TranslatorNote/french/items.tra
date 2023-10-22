@@ -1,0 +1,7 @@
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@1 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
+@2 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+

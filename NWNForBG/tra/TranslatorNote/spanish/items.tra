@@ -1,0 +1,6 @@
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@1 = ~\([Ss]ólo[ %tab%]+\)?[Pp]ermitido[ %tab%]+[Aa][ %tab%]*:~
+@2 = ~[Nn]o[ %tab%]+[Pp]ermitido[ %tab%]+[Aa][ %tab%]*:~

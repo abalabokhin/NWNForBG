@@ -1,4 +1,8 @@
 @0 = ~NWN For BG~
+
+@1 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@2 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+
 @10 = ~Incorrect game type. NWN For BG mod is only for BG2+ToB, BGT, BG2EE or EET games~
 @20 = ~INFINITYANIMATIONS is not installed, install it before NWN For BG.~
 @1121 = ~ ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~

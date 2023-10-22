@@ -4,7 +4,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
 	
 	// CheatsAreas for Neverwinter Night
 	PATCH_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
-	~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},~                             => 5100000
+	~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},~                             => 999999
 
 END
 

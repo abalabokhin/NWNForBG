@@ -1,0 +1,6 @@
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@1 =~[Kk]ann[ %tab%]+[Nn]ur[ %tab%]+[Vv]erwendet[ %tab%]+[Ww]erden[ %tab%]+[Vv]on[ %tab%]*:~
+@2 =~[Kk]ann[ %tab%]+[Nn]icht[ %tab%]+[Vv]erwendet[ %tab%]+[Ww]erden[ %tab%]+[Vv]on[ %tab%]*:~
