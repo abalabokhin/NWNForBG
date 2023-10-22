@@ -29,10 +29,10 @@
 @28 = ~I do not care to listen to your excuses. Tell me where the gem is or suffer the consequences.~
 @29 = ~Well, if you wish to get yourself killed, why should I care?~
 @30 = ~No need to get nasty. I'll tell you.~
-@31 = ~NP: I'd heard that Elate was going to grab the gem, and until I got that information, I wasn't particularly interested in the bling. I was interested in why he wanted to steal it. I'll be honest, I'm not a patient man. I have better things to do than rummage through a library looking for information about a gemstone. So I decided to summon a demon or some junior demon and let them do the job. But there was, uh, a little mishap.~ /*I had heard that Elaith intended to take this gem and prior to receiving that information I had taken little interest in the bauble. I wondered why he intended to steal it.*/
-@32 = ~NP: I was a little careless during the preparation, and the little demon managed to escape the summoning circle. That'll teach me a lesson: never cast spells while drunk. The little rascal stretched the portal and started summoning other demons to help him. I sealed the area as quickly as possible and sobered up immediately.~ /*I was somewhat less than careful with the preparations and the little fiend escaped the summoning circle. Let this be a lesson about casting when drunk.*/
+@31 = ~I had heard that Elaith intended to take this gem and prior to receiving that information I had taken little interest in the bauble. I wondered why he intended to steal it. To be honest, I am not a patient man. I had better things to do than search through my library trying to match the description of the gem to one of the artifacts in the books. So, I thought it wise to summon an imp or some sort of lesser demon and make him do the legwork. There was, uh, a bit of a setback.~ /*I had heard that Elaith intended to take this gem and prior to receiving that information I had taken little interest in the bauble. I wondered why he intended to steal it.*/
+@32 = ~I was somewhat less than careful with the preparations and the little fiend escaped the summoning circle. Let this be a lesson about casting when drunk. The wretch expanded the portal and began to bring forth his demonic minions. I sealed off the area as fast as I could and sobered up.~ /*I was somewhat less than careful with the preparations and the little fiend escaped the summoning circle. Let this be a lesson about casting when drunk.*/
 @33 = ~And the gem?~
-@34 = ~NP: I don't care. Goodbye.~ /*That is all. Goodbye.*/
+@34 = ~I don't care. Goodbye.~ /*That is all. Goodbye.*/
 @35 = ~NP: In my haste, I left the gem in the summoning room. So, as you can imagine, it's full of demons, and the gem is inside, and it was probably snatched by that damned demon!~ /*So you see, the area is quite full of demonic adversaries and the gem lies within, most likely stolen by that spiteful imp!*/
 @36 = ~Where is this area and how do I get there?~
 @37 = ~NP: You can go there by that ladder behind your back, though for safety reasons, I've sealed it with my magic.~ /*The door behind me shall teleport you there though I keep it well locked for safety's sake.*/
@@ -44,7 +44,7 @@
 @43 = ~I'm not interested. I just want the gem.~
 @44 = ~NP: If there was a trick to it, I'd be up to the task myself.~ /*Is there a reason for the undead infestation?*/
 @45 = ~NP: It's too dangerous. Goodbye.~ /*Neither, thanks. Goodbye.*/
-@46 = ~NP: All you have to do is kill the cursed demon I've summoned and put his vile little heart on the brazier. Then the portal will be closed. His name is Gulgash. Please come back as soon as you close the portal, and I'll look for a suitable reward in the meantime.~ /*You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.*/
+@46 = ~You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash. Please return to me when you have closed the portal for I shall try to find a suitable reward in the meantime.~ /*You need only kill the imp that I originally summoned and place his cursed little heart in the summoning brazier. That should take care of the portal. His name is Gulgash.*/
 
 @48 = ~NP: Take this amulet and my servants will not harm you.~ /*I appreciate not being killed. Take this wardstone and my servants shall leave you be.*/
 @49 = ~I'm sure I can dig up some magical equipment of no small worth while you try to set things right.~
@@ -78,7 +78,7 @@
 @77 = ~The reward I've given you is quite valuable and quite sufficient.~
 @78 = ~Calmly, friend. There is no reason for violence. Take my last coins, then!~
 @79 = ~NP: Well, I have a lot to do, and I probably won't see you again. If you want, I can teleport you outside so you can save time getting out of here.~ /*Well, I have some work to do so we shall most likely not meet again. I could set up a teleport portal to help you get out of here, if you'd like.*/
-@80 = ~NP: Uh, sure. That would be nice.~ /*That would be good.*/
+@80 = ~Sure. That would be good.~ /*That would be good.*/
 @81 = ~I'll find my own way out.~
 @82 = ~Very well. Goodbye.~
 

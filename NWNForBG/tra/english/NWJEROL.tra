@@ -1,4 +1,4 @@
-@0 = ~NP: Welcome to my humble store. Before we continue, I want to draw your attention to my security. I have nothing against those who steal for a living, but I don't want to be their victim. I also need something to live on.~ /*I hold nothing against those that make their living as thieves, but I will not be a target. I need to make a living too.*/
+@0 = ~Welcome to my humble store. Before we continue, I draw your attention to my guards, and my many warning devices. I hold nothing against those that make their living as thieves, but I will not be a target. I need to make a living too.~ /*I hold nothing against those that make their living as thieves, but I will not be a target. I need to make a living too.*/
 @1 = ~Of course. Have you got anything interesting?~
 @2 = ~Goodbye.~
 @3 = ~I have the standard selection of gear. I have other things as well, but they are probably not of interest to you. You are a guard, aren't you?~
@@ -18,5 +18,5 @@
 @17 = ~Very well, I will purchase one.~
 @18 = ~Where can I get more if I need them?~
 @19 = ~That is an insane price! There must be a cheaper way!~
-@20 = ~NP: I'm almost out of them, but... maybe you'll do me a favor someday, huh? I'll tell you where you can get them. Gilda from the Golden Apple. Sometimes she brings me these coins. She has no idea what it is, gods bless her. Maybe you'll find one there... or a couple... My price won't change, but I just want to help you. Good luck.~ /*They are in short supply, but... perhaps you will do me a favor some day, hmm? I shall tell you a possibility.*/
+@20 = ~They are in short supply, but... perhaps you will do me a favor some day, hmm? I shall tell you a possibility. Gilda at the Golden Apple. I get the occasional coin from her. She does not know what they are, bless her. There you might get one... or two... My price will not lower, but I will help you this way. Good luck.~ /*They are in short supply, but... perhaps you will do me a favor some day, hmm? I shall tell you a possibility.*/
 @21 = ~NP: Clients again! Yes, today is a busy day, despite all the danger on the streets. I have a standard selection of equipment. There are other things, but they probably won't interest you.~ /*More business! I am certainly busy this day, even with the streets so dangerous.*/

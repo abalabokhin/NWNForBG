@@ -12,10 +12,10 @@
 @11 = ~So you are looking for dead things?~
 @12 = ~Oh... oh my, that hardly seems to be a polite way to start a conversation. Are you sure you're not a troll? I suppose not.~
 @13 = ~Trolls attacked a group of us in a cave to the north. We were there searching for an entrance to... ah but maybe I should start with an introduction.~
-@14 = ~NP: No, no, no, Im looking for evidence of the existence of this race. You see, I went hunting with some fellow archaeologists in these cave systems to find an entrance to some of the ruins that lie beneath. It was a delightful expedition - at least at first. I believed that I would find many treasures and books created by this race there. But then we were attacked by trolls and ogres.~ /*You see, some fellow archeologists and I were hunting through the cave systems in the area to find an entrance to some ruins that lie beneath them. It was a marvelous expedition, or so it seemed.*/
+@14 = ~No, no, no, I am looking for proof of the existence of this race. You see, some fellow archeologists and I were hunting through the cave systems in the area to find an entrance to some ruins that lie beneath them. It was a marvelous expedition, or so it seemed. I figured there should be lots of treasure and tomes created by this race. But then we were attacked by the trolls and ogres.~ /*You see, some fellow archeologists and I were hunting through the cave systems in the area to find an entrance to some ruins that lie beneath them. It was a marvelous expedition, or so it seemed.*/
 @15 = ~Trolls? Ogres? Tell me more about them.~
 @16 = ~NP: I think thats enough talk. Goodbye.~ /*I think I've heard enough. Goodbye.*/
-@17 = ~NP: You know what Im looking for! We already talked about this. Okay, Ill cover the important points again. If I had a book in my hands that proves that these ruins are the remains of a creator race, I could get the rest of the money from my grant. I need to find the Full History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
+@17 = ~You know what I'm looking for! We already talked about this. All right, I'll go over the important parts again. If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
 @18 = ~Grant money? Is that what you are worried about?~
 @19 = ~What is the grant money for?~
 @20 = ~I was studying a rock formation in one of the caves when they attacked us. We had some guards with us and they were holding the ogres off, but the trolls killed them as easily as children.~
@@ -31,24 +31,24 @@
 @30 = ~Not too much is known about them. They were very powerful and it is speculated that they fought for control of Toril against the dragons.~
 @31 = ~When did they fight dragons?~
 @32 = ~NP: How long ago was it supposed to be?~ /*How long ago did this supposedly take place?*/
-@33 = ~NP: This happened over 10,000 years ago. Even before the first human civilization of Netheril had ascended. They used powerful spells, creating magical items and artifacts, which now, when the gods have limited the effects of magic, one can only dream of.~ /*They used powerful spells, creating magical effects and items that can only be dreamed of now that the gods have limited its use.*/
+@33 = ~This happened over 10,000 years ago. Even before the first human civilization of the Netheril came into power. They used powerful spells, creating magical effects and items that can only be dreamed of now that the gods have limited its use.~ /*They used powerful spells, creating magical effects and items that can only be dreamed of now that the gods have limited its use.*/
 @34 = ~NP: Are there any treasures there?~ /*Gots new news at all?*/
 @35 = ~You sound like the supposed 'scholars' in Waterdeep. Always sneering in disbelief.~
 @36 = ~Er... well, if they were powerful enough to contend with dragons, as I think they were, then they must have had some powerful magic items. Not to mention wealth. The trolls might have some treasure too.~
 @37 = ~And you think you can prove this race existed?~
 @38 = ~What you need for to prove?~
-@39 = ~NP: If my assumptions about their high development are correct, they must have left behind some texts. If I had a book in my hands that proves that these ruins are the remains of a creator race, I could get the rest of the money from my grant. I need to find the Full History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
-@40 = ~NP: No no no! Money is needed so that I can continue my research. The money will go towards security, supplies, and equipment, not to mention paying for the consultations of other scientists. Without that money, I wont know anything else. That is why it is so important for me to find this evidence.~ /*The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more.*/
+@39 = ~If they were as advanced as I think they were then they should have left behind some writings. If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
+@40 = ~No, no, no! The money is necessary to keep funding my research. The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more. That is why it is so important that I find this proof.~ /*The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more.*/
 @41 = ~I could help you look for this ancient tome.~
 @42 = ~I'm not really interested.~
-@43 = ~NP: The money will go towards security, supplies, and equipment, not to mention paying for the consultations of other scientists. Without that money, I wont know anything else. That is why it is so important for me to find this evidence.~ /*The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more.*/
-@44 = ~NP: ABOUT<SIRMAAM> ., that would be great. And since I need it for my own financial gain, I will pay you 1500 gold, and you can keep all the treasures you find. Here is the key to our back rooms. There you will find my colleagues who can share more information with you. Please find me a book that proves that the creator race existed and left behind these ruins. And bring it to me as soon as you can.~ /*Oh my <PRO_LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information.*/
+@43 = ~The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more. That is why it is so important that I find this proof.~ /*The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more.*/
+@44 = ~Oh my <PRO_LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information. Just find me a tome that proves the creator race existed and that they built these ruins. Bring it back to me as quickly as you can.~ /*Oh my <PRO_LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information.*/
 @45 = ~This sounds very dangerous. I think some money up front would be justified.~
 @46 = ~All right, I'm off.~
 @47 = ~Oh my. I was really hoping you could help. If you change your mind come talk to me again.~
-@48 = ~NP: This sounds reasonable. Here are 300 coins. This should seal the deal. Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
+@48 = ~That seems reasonable. Here is 100 gp. That should seal the deal. Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
 
-@50 = ~NP: I just cant afford it. I will pay you only when you bring the artifact. Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*I just can't afford to do that. I can only pay you when you bring the artfiact back.*/
+@50 = ~I just can't afford to do that. I can only pay you when you bring the artfiact back. Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.~ /*I just can't afford to do that. I can only pay you when you bring the artfiact back.*/
 @51 = ~NP: Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
 @52 = ~Oh, hello there again. Er... something you needed? I am quite busy with my research, you know.~ [NWJAX051]
 @53 = ~What's your name again?~
@@ -59,8 +59,8 @@
 @58 = ~I want to help you find that book. How much will you pay me?~
 @59 = ~This wouldn't happen to be the book you are looking for, would it?~
 @60 = ~Goodbye.~
-@61 = ~NP: My gods, but I thought it was my sclerosis! As I said, I am looking for one ancient tome that I need. So far without much success. If I had a book in my hands that proves that these ruins are the remains of a creator race, I could get the rest of the money from my grant. I need to find the Full History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
-@62 = ~NP: Uh... mm... oh yes! Amazing! How did you manage to deal with the trolls? No, it doesnt matter. It is important that you have the book now. Well, great job<SIRMAAM> . So... I guess 1500 gold is a generous reward for finding this book?~ /*Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now.*/
+@61 = ~Oh dear, your memory is shorter than mine! As I said before, I am looking for an ancient tome I need. So far I have had little luck. If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
+@62 = ~Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now. Well, excellent job young <PRO_GIRLBOY>. So... I trust 500 gold pieces is ample reward for recovering this book?~ /*Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now.*/
 @63 = ~NP: 1500 gold? You wont believe the hell I went through to get this.~ /*1000 gold? Are you out of your mind? I'm not giving you that much!*/
 @64 = ~NP: Youd better shell out a lot, or Ill put you through what I went through.~ /*You better fork over more than that or you'll get to experience all the pain I suffered recovering the darn thing.*/
 @65 = ~Certainly, that sounds fine by me.~
@@ -76,12 +76,12 @@
 @75 = ~I am off for Waterdeep. Excuse me.~ [NWJAX055]
 
 @77 = ~No! It is of no value to you, but I simply must have it. Please!~
-@78 = ~NP: Er... well. I must return to Waterdeep immediately. Have a good journey. Im leaving for Waterdeep. Excuse me.~ [NWJAX055] /*Er... good. I must return to Waterdeep now. Good luck to you.*/
+@78 = ~Er... good. I must return to Waterdeep now. Good luck to you. I am off for Waterdeep. Excuse me.~ [NWJAX055] /*Er... good. I must return to Waterdeep now. Good luck to you.*/
 @79 = ~NP: Wait! Please,<SIRMAAM> ! 2000 coins, I cant take it anymore!~ /*Wait! Please, my <PRO_LADYLORD>! 1000 gp, no more!*/
 @80 = ~All right. 750 gold pieces it is.~
 @81 = ~Nope, I'm keeping it.~
 @82 = ~Part of me wishes the trolls got you. Oh my, I can't believe I said that. I've got to get back to civilization.~
-@83 = ~NP: Oh... uh... why did you even come back here if youre going to keep her? No one will pay more for it than I do, because no one needs it so desperately. What mistake! Great, goodbye.~ /*No one will pay you more than I would have, because no one wants it as badly. What a mistake! Fine, goodbye.*/
+@83 = ~Oh... er... why did you even come back here then, if you were going to keep it? No one will pay you more than I would have, because no one wants it as badly. What a mistake! Fine, goodbye.~ /*No one will pay you more than I would have, because no one wants it as badly. What a mistake! Fine, goodbye.*/
 
 @85 = ~Er... oh, you're already back. What can I do to help you? Any evidence of the tome yet?~ [NWJAX053]
 @86 = ~Where did you say you thought that book was?~

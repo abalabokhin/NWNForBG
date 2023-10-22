@@ -11,14 +11,14 @@
 @10 = ~You are free to go. I'll find what I'm looking for in your room.~
 @11 = ~Then why are you so carefully guarded and what is in that iron-bound chest?~
 @12 = ~NP: Enough! Die!~ /*Enough of this! Die!*/
-@13 = ~NP: Are you taking the jewel!? A shame! I've been defeated and deceived by some pathetic adventurer! How can I look my women in the eye now? The shame is too great! Take the stone! He's in that chest!~ /*You're taking the gem!? The shame! I have been outwitted and defeated by some petty adventurer! How can I face my women, now? The shame is too much!*/
+@13 = ~You're taking the gem!? The shame! I have been outwitted and defeated by some petty adventurer! How can I face my women, now? The shame is too much! Fine! Take the gem! It is in this chest!~ /*You're taking the gem!? The shame! I have been outwitted and defeated by some petty adventurer! How can I face my women, now? The shame is too much!*/
 @14 = ~I die with a blade in my hand!~
 @15 = ~Your source was lying! I am just a simple woman and have no wealth, let alone magic gems.~
 @16 = ~Enough lies. Just tell me where the gem is.~
 @17 = ~Without the gem, you are useless. I'll have to kill you now!~
 @18 = ~You're taking the gem!? The shame! I have been outwitted and defeated by some petty adventurer! How can I face my women, now? The shame is too much!~
 @19 = ~NP: Great! Take the stone! He's in that chest! A shame! I've been defeated and deceived by some pathetic adventurer! How can I look my women in the eye now? The shame is too great!~ /*You're taking the gem!? The shame! I have been outwitted and defeated by some petty adventurer! How can I face my women, now? The shame is too much!*/
-@20 = ~NP: Do not kill me!! Just take the gem! It's in that chest! Please release me! Anyway, the shame of defeat will ruin my reputation in the eyes of my girls! I'm finished!~ /*Please, just let me go now! The shame of defeat will ruin me in the eyes of my women, regardless! I am finished!*/
+@20 = ~Don't kill me!! Just take the gem! It is in this chest! Please, just let me go now! The shame of defeat will ruin me in the eyes of my women, regardless! I am finished!~ /*Please, just let me go now! The shame of defeat will ruin me in the eyes of my women, regardless! I am finished!*/
 @21 = ~NP: You can go.~ /*Yes, I'm ready to go.*/
 @22 = ~I'm checking out and you won't have my business again.~ [NWZAM052]
 @23 = ~I'm not in the mood for talk right now. Perhaps later.~ [NWZAM050]

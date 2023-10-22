@@ -1,4 +1,4 @@
-@0 = ~NP: To her! Yo, you! “You need to... this... e-din-ti-fe-damp-wat. ƒa, dent-and-fi-digit! “Who is there?! Oz€in to say, he mustnt be disturbed!~ /*You! You, there! You'se must be... uhh... eye-dent-ih-fide. Yuh, identified!*/
+@0 = ~You! You, there! You'se must be... uhh... eye-dent-ih-fide. Yuh, identified! Who you?! Master say he no want be disturbed!~ /*You! You, there! You'se must be... uhh... eye-dent-ih-fide. Yuh, identified!*/
 @1 = ~Who, exactly, is your master?~
 @2 = ~You're not exactly bright for a guard, are you?~
 @3 = ~NP: Who are you?~ /*And who are you?*/
@@ -24,7 +24,7 @@
 @23 = ~Master is downstairs, maybe. Grommin never be there, so Grommin not know. Master not like Grommin, much.~
 @24 = ~Uhhh... Grommin not know. Grommin not allowed to go there. Grommin know master has prisoners, though... they go there, not come out.~
 @25 = ~Why would your master keep prisoners?~
-@26 = ~NP: “The host is a lot of monsters. “When he releases them, they eat the thieves. oz€in knows how to talk to them, √rommin thinks so. Romming even saw some of them. They are like little people, only they have wings and they are evil. √rommin doesnt like them.~ /*Master have lots monsters. Sometimes he lets them run around, eat robbers. Master can talks to them, Grommin thinks.*/
+@26 = ~Master have lots monsters. Sometimes he lets them run around, eat robbers. Master can talks to them, Grommin thinks. Some Grommin sees, even. They looks like little peoples, but they has wings and are mean. Grommin no like them.~ /*Master have lots monsters. Sometimes he lets them run around, eat robbers. Master can talks to them, Grommin thinks.*/
 @27 = ~Sometimes master get mad at someone, they go in there. Sometimes master catch thief, they go in there. Grommin hope master not get mad at Grommin.~
 @28 = ~You come back? What you want from Grommin now?~
 @29 = ~I have some questions for you.~

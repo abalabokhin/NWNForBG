@@ -8,11 +8,11 @@
 @7 = ~Is that supposed to be some kind of threat? Even if you cut us down, they still won't open the gates for you, fool.~
 @8 = ~I'm going through those gates - and you!~
 @9 = ~You seem a little dirty... Perhaps a stay at the Green Griffon would liven your spirit. At the worst, you'd have a place to stay for now. Farewell.~
-@10 = ~NP: Ha! I don't know if you're telling the truth or not, we won't open the gate anyway. We can be called differently, but certainly not gullible. Besides, there are too many internal problems in Luskan right now. So you better turn around and go where you came from.~ /*Ha! Whether you speak the truth or not, we would not so easily open up our doors. We are many things but gullible isn't one of them.*/
+@10 = ~Ha! Whether you speak the truth or not, we would not so easily open up our doors. We are many things but gullible isn't one of them. Aside from that, there are simply too many internal problems facing Luskan at the moment. You would be better off turning around and going back whence you came.~ /*Ha! Whether you speak the truth or not, we would not so easily open up our doors. We are many things but gullible isn't one of them.*/
 @11 = ~What sorts of "internal problems?"~
 @12 = ~You're welcome to look, though I'm sure you'll find our city to be quite heavily fortified. I doubt a rat could get through this quarantine.~
 @13 = ~NP: Are you crazy? I told you, THE GATE IS CLOSED!~ /*Are you trying to pick me up? That's so pathetic!*/
-@14 = ~NP: Listen, why are you interrogating me? Luskan is not safe, and besides, the plague is raging around. Do you need any more information? But don't worry, normal order will soon be restored. We will open the gate and you will be able to enter Luskan.~ /*Listen, why are you continuing down this line of questioning? Luskan isn't a safe city, there's plague looming all around us. Need you more information than that?*/
+@14 = ~Listen, why are you continuing down this line of questioning? Luskan isn't a safe city, there's plague looming all around us. Need you more information than that? But rest assured, things will return to normal sooner or later. The gates will be open, and you may enter into Luskan then.~ /*Listen, why are you continuing down this line of questioning? Luskan isn't a safe city, there's plague looming all around us. Need you more information than that?*/
 @15 = ~Perhaps I can help the city.~
 @16 = ~NP: How about a small donation to the &quot;city&quot;, let's say 300 gold?~ /*How about an offer, for the "city," of 100 gold?*/
 @17 = ~I doubt that, <PRO_SIRMAAM>. Come back later when the problem has cleared.~

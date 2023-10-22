@@ -4,11 +4,11 @@
 @3 = ~Tell me of this dungeon.~
 @4 = ~I want you to give me a magical item.~
 @5 = ~You are dismissed to your home plane.~
-@6 = ~NP: I am definitely a water spirit. You performed the ritual and summoned me. Now I have to follow your order. You can order me to complete some task, or ask me to give you something. Just order.~ /*You might wish me to perform some random task, or perhaps you wish me to gift you with a boon. Simply command me.*/
+@6 = ~I am, obviously, a water elemental. You performed the ritual and summoned me. Now, I am bound to obey one command. You might wish me to perform some random task, or perhaps you wish me to gift you with a boon. Simply command me.~ /*You might wish me to perform some random task, or perhaps you wish me to gift you with a boon. Simply command me.*/
 @7 = ~Very well. If you wish it, this deed will be performed and then I will absolve myself of your control.~
 @8 = ~Yes. Go free Nax.~
-@9 = ~NP: The mage Cyril Lyricus, the greatest of all summoners, once lived in this place. Here he practiced magic and created many servants for himself. I am the greatest of his servants... although I feel that my master is no more. But still, even after Cyrils death, my power is connected to this pool of summoning.~ /*I am the greatest of his servants... though I sense my creator is no more. Yet even with Cyril's death, my power is bound to this summoning pool.*/
-@10 = ~NP: If you like, I can give you something that came with me from my plan. Do you want it? I cant tell you what the item will be, but it will be powerful enough.~ /*If it pleases you, I can give you something that I brought with me from my home plane. Do you wish this?*/
+@9 = ~This was once the lair of the mage Cyril Lyricus, greatest of all the summoners. Here he practiced great magic and created many servants. I am the greatest of his servants... though I sense my creator is no more. Yet even with Cyril's death, my power is bound to this summoning pool.~ /*I am the greatest of his servants... though I sense my creator is no more. Yet even with Cyril's death, my power is bound to this summoning pool.*/
+@10 = ~If it pleases you, I can give you something that I brought with me from my home plane. Do you wish this? I cannot tell you what the item will be, but it will be powerful enough to suit you.~ /*If it pleases you, I can give you something that I brought with me from my home plane. Do you wish this?*/
 @11 = ~Yes, give me something magical.~
 @12 = ~No. I don't want a magical item.~
 @13 = ~I am in your control still, and so I must warn you that if you relinquish control of me, I am under no obligation to return.~

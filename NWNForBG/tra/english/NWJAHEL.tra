@@ -26,7 +26,7 @@
 @25 = ~NP: What happened to you?~ /*What happened here?*/
 @26 = ~NP: I'm not interested in your problems, I have to go.~ /*You beg, but me still kill you!*/
 @27 = ~Oh my, but you are a brave, powerful adventurer aren't you! If you want a job, maybe you could help me?~
-@28 = ~NP: It's so awful. I had to bring my little brother Neva into town to buy him a present for his tenth birthday. He was so excited that he ran ahead of me the whole time. He ran up a hill and then suddenly screamed. I ran with all my legs to the top of the hill, but when I ran closer, I heard men's voices. I fell to the ground and looked out from behind the hilltop.~ /*It is so horrible. I was supposed to bring my little brother Neva into town to buy him a birthday present for his tenth birthday. He was so excited he kept running ahead of me.*/
+@28 = ~It is so horrible. I was supposed to bring my little brother Neva into town to buy him a birthday present for his tenth birthday. He was so excited he kept running ahead of me. He ran over a hill, when all of a sudden I heard him scream. I ran as fast as I could to the top of the hill, but as I got close, I could hear men's voices. Let me see your wares.~ /*It is so horrible. I was supposed to bring my little brother Neva into town to buy him a birthday present for his tenth birthday. He was so excited he kept running ahead of me.*/
 @29 = ~NP: Neva was surrounded by a gang of robbers. They grabbed him and dragged him off laughing. I just don't know who to turn to. The guards are busy with their own problems, and I need someone to rescue him quickly.~ /*I simply don't know who to turn to. The guards are busy with their own troubles and I need someone who can rescue him quickly.*/
 @30 = ~Why do you think the bandits took him captive?~
 @31 = ~Do you know where the bandits took him?~
@@ -37,7 +37,7 @@
 @36 = ~Yes. I quietly followed them to some standing stones in the hills just outside of Charwood. I thought for sure they would catch me, but I was lucky.~
 @37 = ~I have 300 gold, which I would reward anyone who could save my baby brother.~
 @38 = ~My hero! Thank you so much for being brave. I must admit, that if you are able to rescue my baby brother, there are rewards besides gold that I would be willing to discuss.~
-@39 = ~NP: I know Neva is being held in a bandit camp near the vertical rocks near Charwood, but I don't know exactly how many people are guarding it or what we can expect from them. Please hurry! Bring him to me safely!~ /*I know Neva is being held at a bandit camp near some standing stones just outside of Charwood, but I have no idea how many people are holding him or what exactly to expect.*/
+@39 = ~I know Neva is being held at a bandit camp near some standing stones just outside of Charwood, but I have no idea how many people are holding him or what exactly to expect. Please hurry. Bring him back to me safely.~ /*I know Neva is being held at a bandit camp near some standing stones just outside of Charwood, but I have no idea how many people are holding him or what exactly to expect.*/
 @40 = ~I'll do what I can.~
 
 @42 = ~NP: Consider Neva already saved. Don't worry.~ /*Neva is as good as rescued. Do not worry, my lady.*/

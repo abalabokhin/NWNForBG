@@ -16,13 +16,13 @@
 @15 = ~I have some other questions.~
 @16 = ~NP: I don't need anything. I'll go.~ /*Me not need nothing.*/
 @17 = ~Go with comfort. I wish you well in the dark times ahead.~
-@18 = ~NP: Guardian Knight Dester is a holy man, that's for sure. He has been called to watch over Neverwinter from Shieldsmith. It is a great honor. We all came with him from Castle Helm and arrived here a few days after Lady Aribeth declared the quarantine.~ /*Watchknight Desther is a holy man, to be sure. He was appointed to watch over Neverwinter at Shieldmeet. A grand honor.*/
+@18 = ~Watchknight Desther is a holy man, to be sure. He was appointed to watch over Neverwinter at Shieldmeet. A grand honor. We all journeyed with him from Helm's Hold and arrived here scant days after Lady Aribeth declared the quarantine.~ /*Watchknight Desther is a holy man, to be sure. He was appointed to watch over Neverwinter at Shieldmeet. A grand honor.*/
 @19 = ~What services do you offer?~
 @20 = ~The militia have kept me safe enough. I must say, though, that it's served as quite the distraction from any quest for a cure, don't you think?~
 @21 = ~I need temple services.~
 @22 = ~In the end, it seems one of the Waterdhavian creatures was behind it all. The guards are cleaning up the last pockets of resistance now...~
-@23 = ~NP: Yes... The holy symbol of Helm. Well, as you can see, it's an open gauntlet symbolizing, uh. the peace brought by the presence of an armed protector. We are the protector. And in the center of the palm is an eye. The eyes are very important. They see everything, they know everything, they speak to us. They look and they know. Yes.~ /*Yes... the holy symbol of Helm. Well, obviously it is an open gauntlet, which symbolizes the... the peace brought by having an armored protector. We are guardians.*/
-@24 = ~NP: It is a terrible plague with a fatal outcome, for which there is no cure. Yes, the faithful remain unharmed - no Helmite has boils.... We are stripped of our fetters to bring the comforting blessing.~ /*Yet the faithful pass unscathed - no Helmite suffers from its boils... we pass unfettered to administer our blessings of comfort.*/
+@23 = ~Yes... the holy symbol of Helm. Well, obviously it is an open gauntlet, which symbolizes the... the peace brought by having an armored protector. We are guardians. And in the center of the palm is the eye. Eyes are very important. They see all, know all, speak to us. They watch and learn. Yes.~ /*Yes... the holy symbol of Helm. Well, obviously it is an open gauntlet, which symbolizes the... the peace brought by having an armored protector. We are guardians.*/
+@24 = ~It is a horrible plague, grave in its implications and beyond the reach of any normal cure. Yet the faithful pass unscathed - no Helmite suffers from its boils... we pass unfettered to administer our blessings of comfort.~ /*Yet the faithful pass unscathed - no Helmite suffers from its boils... we pass unfettered to administer our blessings of comfort.*/
 @25 = ~I have some. Why do you ask?~
 @26 = ~Hand it over! I'll kill you for it!~
 @27 = ~No reason. Let's go back to some other questions.~
@@ -31,7 +31,7 @@
 @30 = ~Fool! I am in service to Desther! This would not go unpunished!~
 @31 = ~I serve Aribeth. Nobody will blame me if you are found dead!~
 @32 = ~Forgive me, I did not mean to actually harm you.~
-@33 = ~NP: Ha! I don't have time for this nonsense. You want to get the crumbs of gold I have? All right! Here, this is all I have with me. I don't have time for arguments or fights. I'm doing a responsible job that can't be interrupted because of your petty desire to steal whatever's in the way. Just so you know, I've got my eye on you just like the rest of them. Go on, but you'll get what you deserve in due time.~ /*I do not have time to argue or fight. I am doing important work that cannot be interrupted by your petty evil thieving.*/
+@33 = ~Hmph! I don't have time for this, fool. You wish to take what little gold I have? Fine! Here, all that I carry on my person. I do not have time to argue or fight. I am doing important work that cannot be interrupted by your petty evil thieving. Know this, however, that you are marked, as are all that... Well, just you rest assured that you will recieve your due in time.~ /*I do not have time to argue or fight. I am doing important work that cannot be interrupted by your petty evil thieving.*/
 @34 = ~NP: I don't know what you're gonna do, but I'm not a part of this. Go away.~ /*"What are you going to be doing while I'm down there?"*/
 @35 = ~You, with the... rough exterior, shall I cleanse you with this living water, once cupped within the Guardian's palm? It keeps the plague at bay, at least for a while.~
 @36 = ~You are not welcome in my sight! Go, and leave me to my work!~
