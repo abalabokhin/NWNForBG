@@ -1,7 +1,9 @@
-@0 = ~NP: Uh, hi. I'm afraid you're, uh. uh. "mistaken." Mistook an unlocked door as an invitation to enter. I'm sorry if that misled you; it was not my intention to allow any stranger from the street into the house. Please accept my apologies, but I would be most grateful if you would leave. My husband is one of the guards, and I think he would be concerned if he returned to find people walking around his house.~ /*But Rolgan cannot stay in the Temple forever. I am trying to arrange a fair trial for the young man, but his Uthgardt friends are unfamiliar with our justice system... and none of the Lords' Alliance mercenaries wants to defend him during the trial.*/
-@1 = ~NP: I don't mean to be rude, but you entered my house without permission. I don't think an unlocked door is an invitation. Go away, or my husband will escort you out when he returns from guard duty.~ /*Of course.  I had hoped for better from you in these troubled times, but I see that you will stick to your mercenary ways, even when we need you most.*/
-@2 = ~NP: You seem very foolish to enter this house uninvited. You had better go, for if I call the guards, my husband will probably be one of them. And he will be sure to remove you from his house with the utmost-- vigor.~ /*Besides, I guarantee that their lives would be far better out here than if they remained in Thay proper. I do not mistreat my slaves; it is not economical.*/
-@3 = ~NP: My husband should be here soon; I think you'd better go.~ /*Why does it have to be those specific three victims?*/
-@4 = ~NP: I wish I could run away with you, darling, but my husband can be so jealous. We shouldn't make him angry. Take this ring, it'll keep you from forgetting me.~ /*Why can't you? Why can't someone else come up with the answers for once? Why is it up to me to keep swinging at the wall?*/
-@5 = ~NP: Get away from me!~ /*Get away from me!*/
-@6 = ~NP: And I told you my husband would be here soon!~ /*You mean we is going to lose?*/
+// Texts from BG1
+
+@0 = ~Well, hello there. I fear you have "mistaken" my unlocked door as an invitation to enter. Forgive me if this was misleading, as it was not my intent to allow entry to just any stranger off the street. Please accept my apologies, but I should appreciate it if you would leave. Mine husband       is one of the guards and I should think he would be perturbed if there were people milling about his house when he got home.~
+@1 = ~I should not like to appear rude, but you have entered mine house without permission. I hardly think merely having an unlocked door is an invitation. Leave lest my husband extricate you himself when he returns from guard duty.~
+@2 = ~You must be a considerable fool to enter this house uninvited. Best that you should leave, because if I call the guard there is a good chance my husband will be with them. No doubt he would expel you from his own house with... extra vigor.~
+@3 = ~My husband should be here soon; I would suggest that you leave.~
+@4 = ~I wish I could run away with you darling, but my husband can be such a jealous man. I wouldn't want to arouse his wrath. Take this ring, with which you may always remember me.~
+@5 = ~Get away from me!~
+@6 = ~I told you my husband would be here!~
