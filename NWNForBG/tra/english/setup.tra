@@ -24,6 +24,7 @@ Equipped abilities:
 - Can memorize double the amount of 1st-level wizard spells
 
 Weight: 0
+
 Only Usable by:
  Mage~
 @86242 = ~Two-handed Sword +3: "The World's Edge"
@@ -563,6 +564,7 @@ Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
+
 Not Usable By:
  Cleric~
 @102302 = ~Tome of Longevity~
@@ -1087,6 +1089,7 @@ Type: One-handed
 Requires:
 - 7 Strength
 - 10 Dexterity
+
 Not Usable By:
  Cleric
  Beast Master~
@@ -1105,6 +1108,7 @@ Type: One-handed
 Requires:
 - 7 Strength
 - 10 Dexterity
+
 Not Usable By:
  Cleric
  Beast Master~
@@ -4989,6 +4993,7 @@ Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
+
 Not Usable By:
  Priest~
 @103768 = ~Oppressing Flesh~
@@ -5004,6 +5009,7 @@ Damage: 1d4+2
 Weight: 1
 Proficiency Type: Dagger
 Type: One-handed
+
 Not Usable By:
  Priest~
 @103772 = ~Poison Sword~
@@ -6269,6 +6275,7 @@ Equipped abilities:
 - Acid Resistance: +35%
 
 Weight: 0
+
 Not Usable By:
  Wizard Slayer~
 @105997 = ~Star Sapphire~
@@ -6307,6 +6314,7 @@ Charge abilities:
   The arrow inflicts 2d4 points of acid damage for 4 rounds
 
 Weight: 0
+
 Not Usable By:
  Wizard Slayer~
 @106011 = ~Laboratory Notes~
@@ -6864,6 +6872,7 @@ Equipped abilities:
 - Regenerates 2 HP per round
 
 Weight: 0
+
 Not Usable By:
  Wizard Slayers~
 @107723 = ~Amulet of Natural Armor +4~
@@ -6876,6 +6885,7 @@ Equipped abilities:
 - Saving Throws: +2
 
 Weight: 1
+
 Not Usable By:
  Wizard Slayers~
 @107725 = ~Gargoyle Boots~
