@@ -25,6 +25,7 @@ Thanks and Acknowledgements
 * Insomniator2 - for a great help with weidu adaptation and especially for the script that can generate weidu code to set string refs for binary files (cre, are, etc.)
 * megrimlock - for helping with proof-reading english tra files
 * p\_zombie - for testing and help with bp-bgt-worldmap adaptation
+* JohnBob - for helping with icons positins and some weidu coding
 * Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod
 * argent77 - for help with TIS files and useful weidu libraries
 * scheele - for testing, some ideas for the mod and help with proof-reading Russian texts
@@ -73,6 +74,10 @@ Version History
 In development:
 
 - Many lines in english tra files are automatically (using python script) found in the original NWN texts and/or proof read by paladin84 and megrimlock
+- Implemented autotra, so the original tra files are not modified during installation process, thanks to JohnBob
+- "Usable By", etc are now removing for EE automatically during installation process, thanks to JohnBob
+- Some areas are added to "Cheat Areas" for EE, thanks to JohnBob
+- Some map icons are repositions on the global map, thanks to JohnBob
 
 0.92 (10/18/23)
 
