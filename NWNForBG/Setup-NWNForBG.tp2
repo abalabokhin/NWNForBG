@@ -5580,8 +5580,8 @@ END
 
 //Sounds
 LAF HANDLE_AUDIO END
-//COPY ~NWNForBG/audio~ ~override~
 
+INCLUDE ~NWNForBG/lib/gw_functions.tpa~
 
 //Items
 COPY ~NWNForBG/itm~ ~override~
