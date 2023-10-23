@@ -42,11 +42,11 @@
 @41 = ~Travel well.~
 @42 = ~That's all I know. If it's enough to get your client off, so be it. At least now I can walk without clenching my teeth in agony. It seems like a fair trade to me...~
 @43 = ~Tough break on that trial, <CHARNAME>. I know it's a little late now, but I can't help wondering if Griff didn't have it coming to him. Guess we'll never know, since Rolgan's collecting flies on a post out by the church.~
-@44 = ~NP: Heard this Utgardt was acquitted, impressive. In the name of the abyss, even I practically believed that Utgardt was innocent.~ /*Wow, <CHARNAME>, a unanimous verdict. Hell, you even had me half-convinced that Uthgardt was innocent.*/
-@45 = ~You again? I already gave you 50 gold - that's all I got! So shove off and leave me alone.~ /*You again? I already gave you 50 gold - that's all I got!*/
-@46 = ~NP: Are you again? Get out and leave me alone.~ /*So shove off and leave me alone.*/
+@44 = ~Heard that Uthgardt was acquitted, impressive. Hell, you even had me half-convinced that he was innocent.~
+@45 = ~You again? I already gave you 100 gold - that's all I got! So shove off and leave me alone.~
+@46 = ~You again? Shove off and leave me alone.~
 @47 = ~Right, sir. Well, it's like Lodar said. Griff was outside, we heard him shout, we run out and the Uthgardt sticks a blade in Griff's belly. Then that savage runs off to the Temple for sanctuary like some kind of coward!~
-@48 = ~NP: Im ready for questions.~ /*That be enough questions.*/
+@48 = ~I'm ready for questions.~
 @49 = ~You never actually witnessed the start of the fight, did you?~
 @50 = ~Don't you think Rolgan's judgment was impaired by all the alcohol he had consumed?~
 @51 = ~Griff had spiked Rolgan's drink that night, right Zed?~
