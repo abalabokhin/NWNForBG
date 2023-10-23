@@ -438,7 +438,7 @@ IF ~~ THEN BEGIN 60 // from: 59.1
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
-GiveGoldForce(8000)
+GiveGoldForce(7000)
 AddexperienceParty(30000)
 GiveItemCreate("NWAELITM",LastTalkedToBy,1,1,1)
 ReputationInc(-1)
