@@ -19,7 +19,7 @@
 @18 = ~Have you heard of anyone named Maugrim?~
 @19 = ~Have you heard anything of a cult here?~
 @20 = ~Why is there a golem in your room?~
-@21 = ~NP: Maybe not, but I don't talk to perfumed fools. Go ask the orc and leave me alone.~ /*Perhaps not, but I've no desire to speak to some perfumed fool. Go question the orc in the next room and leave me be.*/
+@21 = ~Perhaps not, but I've no desire to speak to some perfumed fool. Go question the orc and leave me be.~
 @22 = ~Is that so? Is this simply some frilly mincing of you civilized men, or do you actually find Yeanasha pleasing to your gaze?~
 @23 = ~I think you're gorgeous.~
 @24 = ~I'm just being friendly...~
@@ -28,7 +28,7 @@
 @27 = ~I need no fawning man such as you drooling over me. Begone, if you've nothing better to offer.~
 @28 = ~Oh? A man of action, is it? I doubted I would find such amongst the mincing perfumed folk of this settlement. Go ahead and ask me your questions, then, if you must.~ /*Oh? A man of action, is it? I doubted I would find such amongst the mincing perfumed folk of this settlement.*/
 @29 = ~I prefer directness, though were you a woman of my own tribe I would strike you down for speaking to me such. Go ahead and ask me your questions, then, if you must.~ /*I prefer directness, though were you a woman of my own tribe I would strike you down for speaking to me such.*/
-@30 = ~NP: Yes. You wanted something else<MALEFEMALE> ?~ /*I shall. Was there something else you wanted, <PRO_MANWOMAN>?*/
+@30 = ~Yes. Was there something else you wanted, <PRO_MANWOMAN>?~
 @31 = ~What did you mean about the wizards?~
 @32 = ~I know a little, though I have not traveled beyond these quarters. Why? What is it you wish to know?~
 @33 = ~Tell me about the Arcane Brotherhood.~
@@ -49,7 +49,7 @@
 @48 = ~Do you not know of them? They be a group of wizards who wish to rule as much of the north as they can grasp, as I understand it. They have never ruled much more than Luskan, itself, but that be the way of things. Their plans be kept private, more than most. They involve themselves with few outsiders. Or did, once, until this new leader of theirs came to the fore.~ /*They have never ruled much more than Luskan, itself, but that be the way of things. Their plans be kept private, more than most.*/
 @49 = ~New leader?~
 @50 = ~The wizards be no different then the rest of this perfumed, rotten city. They have been battling each other to see who shall rule the tower, of course. As I hear it, the tower is littered with the bodies of the dead. This Maugrim fellow seems to have won, however, and declared himself the new Archmage Arcane. It is he that invited all the ambassadors here... though he has done a poor job of speaking to us as he should.~ /*The wizards be no different then the rest of this perfumed, rotten city. They have been battling each other to see who shall rule the tower, of course.*/
-@51 = ~NP: It's a big building... it's much bigger than the ones in my homeland. But wizards connect their rooms with things like magical stairs, as far as I can tell. Wizards move around the tower using runestones. How they do it, I don't want to know. One of those stairs is not far from here... just don't go there. One dark-skinned ambassador showed excessive curiosity and was quickly killed. Wizards don't tolerate intruders.~ /*There be one of them columns just beyond the end of the hall... but do not go there. One dark-skinned ambassador became curious and was killed swiftly. The wizards do not tolerate intrusion.*/
+@51 = ~It is a large building... far larger than we care to build in the lands I come from. The wizards connect their rooms with magic stairs from what I can see. The wizards travel from area to area in the tower using runestones.  How they do this I do not even wish to know. One of those stairs is not far from here... but do not go there. One dark-skinned ambassador became curious and was killed swiftly. The wizards do not tolerate intrusion.~
 @52 = ~What now?~
 @53 = ~Ehhh... he does not seem a normal wizard, to me. Though that is saying little. He seems more a madman, a servant to some strange power. What that power might be, I do not know. Nor does it matter, truly, if the wizard lives up to his word.~ /*Ehhh... he does not seem a normal wizard, to me. Though that is saying little. He seems more a madman, a servant to some strange power.*/
 @54 = ~What promise has he made you?~

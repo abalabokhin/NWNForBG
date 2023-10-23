@@ -16,7 +16,7 @@
 @15 = ~I could help you.~
 @16 = ~No, I don't want to get involved.~
 @17 = ~Aye, but... I have not been for long. Miss Bela has given me leave, as well, until I... until things are sorted out. I cannot bring myself to be with anyone at the moment.~
-@18 = ~NP: You don't look like a prostitute at all.~ /*You don't seem like the type.*/
+@18 = ~You don't seem like the type.~
 @19 = ~So? I want to hire you anyway.~
 @20 = ~All... all right. Ask me what you wish.~
 @21 = ~I want to ask you again about getting your baby for you.~
@@ -25,7 +25,7 @@
 @24 = ~You said you would find my baby. I... don't know of anything else beyond that.~
 @25 = ~I don't know my way around Luskan, myself. You might be better off asking Miss Bela... or maybe Erb. Erb could help you. You'll probably find him out in the lounge.~
 @26 = ~You found her! Oh, thank you, thank you! How did you ever manage to convince Galrone to give her up? Oh, I don't care! All that matters is I have her back once more. My gold doesn't seem enough of a reward... but it's all I have to give you. I... can spare 500 gold pieces. I... hope that is enough?~ /*You found her! Oh, thank you, thank you! How did you ever manage to convince Galrone to give her up? Oh, I don't care! All that matters is I have her back once more.*/
-@27 = ~NP: No, not enough. Come on, or the baby dies!~ /*No it not enough. Give all or baby dies!*/
+@27 = ~No it not enough. Give all or baby dies!~
 @28 = ~Is that all? I guess I'll take the baby back to Galrone.~
 @29 = ~Keep your gold for the baby. It was my pleasure.~
 @30 = ~That would be fine.~
@@ -51,7 +51,7 @@
 @50 = ~Are... are you sure, <PRO_SIRMAAM>? You earned the gold, after all. The baby and I can... make do.~
 @51 = ~You're right. The original reward will do.~
 @52 = ~No, no, keep the gold.~
-@53 = ~NP: Of course. Here's another 250 gold for you. Take it to your health.~ /*I am sure. In fact, I have 250 gp. Take it and be safe.*/
+@53 = ~I am sure. In fact, I have another 250 gp. Take it and be safe.~
 @54 = ~Take it, then. I don't know what I would have done without your help. I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
 @55 = ~I... I suppose you should know that Galrone is a very wealthy man. He has many guards, and had influence in Luskan before all this fighting started. I don't know his situation now, though.~
 @56 = ~You... you have done far more than I could ever have hoped. Thank you, my <PRO_LADYLORD>... I shall remember your kindness always. I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
