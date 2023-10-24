@@ -1,6 +1,6 @@
 @0 = ~Hello there stranger. Welcome to the grove. My name is Welcar, and who might you be?~
 @1 = ~I am <CHARNAME>. You seem very friendly.~
-@2 = ~NP: We are a group of adventurers led by<CHARNAME> .~ /*Then I am very pleased to meet you, <CHARNAME>.*/
+@2 = ~We are a group of adventurers led by <CHARNAME>.~
 @3 = ~None of your business. How about you answer some questions?~
 @4 = ~I'm just very excited. You wouldn't know this, but recently I won a very important challenge.~
 @5 = ~What challenge was this?~
@@ -10,7 +10,7 @@
 @9 = ~What's going on here?~
 @10 = ~Who's in charge around here?~
 @11 = ~What exactly is it you do here?~
-@12 = ~NP: I do not have any questions. Goodbye.~ /*Me no got time. Goodbye.*/
+@12 = ~I do not have any questions. Goodbye.~
 @13 = ~I just became the defender for the fourth circle of this grove.~
 @14 = ~What does that mean?~
 @15 = ~Okay. What questions do you have?~
@@ -26,6 +26,6 @@
 @25 = ~Okay. Goodbye.~
 @26 = ~It's a long story. I wouldn't want to bore you with it. Do you have more questions?~ /*It's a long story. I wouldn't want to bore you with it.*/
 @27 = ~I see you are back. Is there anything I can help you with?~
-@28 = ~NP: You agreed to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~ /*Better safe than sorry. Have a potion, then, and Tyr be with you.*/
-@29 = ~NP: Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~ /*You haven't saved me yet. I'll thank you when you have.*/
-@30 = ~NP: The spirit of the forest is dead! Our forest will never be the same, this is a huge loss!~ /*I work on a farm and I never expected to see someone who is dirtier than me!*/
+@28 = ~You agreed to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~
+@29 = ~Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~
+@30 = ~The Spirit of the Wood is dead! Our forest will never be the same, it's a great loss!~
