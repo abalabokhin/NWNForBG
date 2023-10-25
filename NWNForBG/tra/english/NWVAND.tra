@@ -1,5 +1,5 @@
 @0 = ~I am sorry, were you speaking to me? Forgive my distraction, I am worried about my husband's upcoming trial.~
-@1 = ~NP: Court? What court?~ /*Where is your husband?*/
+@1 = ~Trial? What trial?~
 @2 = ~I am representing your husband in his trial.~
 @3 = ~My husband Rolgan is accused of murdering one of the Lords' Alliance soldiers. He faces execution if not saved. Forgive me, but this is difficult to talk about. Neurik at the Temple of Tyr can explain it better than I - I do not understand the ways of your justice system.~ /*My husband Rolgan is accused of murdering one of the Lords' Alliance soldiers. He faces execution if not saved. Forgive me, but this is difficult to talk about.*/
 @4 = ~Representing my husband? I am sorry, but the ways of your justice system are unfamiliar to we people of the Black Lion Tribe. Are you a friend or foe? The priest Neurik said I would have to answer the questions put to me with complete honesty... it was as if he *expected* me to lie! He knows nothing about the honor of our tribe. Ask away, I have nothing to hide.~ /*The priest Neurik said I would have to answer the questions put to me with complete honesty... it was as if he *expected* me to lie! He knows nothing about the honor of our tribe. Ask away, I have nothing to hide.*/
