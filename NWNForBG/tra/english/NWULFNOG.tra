@@ -1,4 +1,4 @@
-@0 = ~NP: Nice to meet you. Sit quietly with me, will you? Its so noisy down there.~ /*Greetings and well met. Come to sit a bit in the heat, have you? Good for the skin.*/
+@0 = ~Nice to meet you. Why don't you sit quietly with me, huh? It's so noisy down there.~
 @1 = ~Can I ask questions about who you are?~
 @2 = ~Could I ask you something about this tavern?~
 @3 = ~I'm going now.~
@@ -26,5 +26,5 @@
 @25 = ~The password is "Cornerstone." At least it ain't some maryweather pompous nickname or somebody's dog. I hate it when thugs get cute like that.~
 @26 = ~Thanks. Er, how did you know all of this?~
 @27 = ~You can learn a lot in a small dark room. Don't let anyone tell you different.~
-@28 = ~NP: Hello again. Was it the unimaginable uproar downstairs that made you come back?~ /*Hello, again. Have you managed to kill the imp and close the portal?*/
-@29 = ~NP: Not much is going on in the tavern now, after all the intrigue among the Bloody Sailors is over. Good and quiet.~ /*Not a lot happening in the tavern now, what with the shakeup in the Bloodsailors over. Nice and quiet in the dark.*/
+@28 = ~Hello again. Was it the unimaginable ruckus downstairs that made you go back?~
+@29 = ~Not a lot happening in the tavern now, what with the shakeup in the Bloodsailors over. Nice and quiet.~
