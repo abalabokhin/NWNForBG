@@ -6,7 +6,7 @@
 @5 = ~I am Thurin, captain of the guard in the Blacklake district, <PRO_SIRMAAM>. Might I know who is asking?~
 @6 = ~I'm called <CHARNAME>.~
 @7 = ~My name is <CHARNAME>. Pleased to meet you, Captain Thurin.~
-@8 = ~NP: I just <CLASS> from the <CHARNAME> command.~ /*Here is a Pass Coin. My name is <CHARNAME>.*/
+@8 = ~I just <RACE> from the <CHARNAME> command.~
 @9 = ~You don't need to know who I am.~
 @10 = ~Certainly, though I have plenty of problems to deal with today and very little time to chat. What do you wish to know?~
 @11 = ~Perhaps you could tell me who you are?~
@@ -17,13 +17,13 @@
 @16 = ~As you wish.~
 @17 = ~Then introductions are over with. I have my own problems, <CHARNAME>... is there something that you wanted?~
 @18 = ~You as well, <CHARNAME>. (sigh) If only I were not beset by problems, that is. What can I do for you?~
-@19 = ~NP: I don't know such a team, I have a lot of my own problems..... did you want something?~ /*Then introductions are over with. I have my own problems, <CHARNAME>... is there something that you wanted?*/
+@19 = ~I don't know such a team, I have my own problems... is there something that you wanted?~
 @20 = ~I am beset by enough problems, so I suppose it really doesn't matter. What would you have of me, stranger?~
 @21 = ~There's not much I can tell you about the plague, <PRO_SIRMAAM>. It's all we can do, currently, to keep Blacklake cordoned off from the rest of the city. I can't say that I feel good about it... all those poor souls desperate to get into this area, not even caring that they would spread the disease here.~ /*There's not much I can tell you about the plague, <PRO_SIRMAAM>. It's all we can do, currently, to keep Blacklake cordoned off from the rest of the city.*/
 @22 = ~Work? If you're looking for work, perhaps you could be of assistance. Well, beyond trying to keep the plague out of the district, one of my men seems to have disappeared without a trace. I suppose that in itself wouldn't be so odd, considering the times, but I know this man too well. He's an old friend of mine named Samuel... and he wouldn't just leave.~ /*I suppose that in itself wouldn't be so odd, considering the times, but I know this man too well. He's an old friend of mine named Samuel... and he wouldn't just leave.*/
 @23 = ~Do you have any idea where he could be?~
 @24 = ~Have you had your men search for him?~
-@25 = ~NP: Where was he last seen?~ /*Where did you see him last?*/
+@25 = ~Where did you see him last?~
 @26 = ~What would the reward be if he was found?~
 @27 = ~I could look for him.~
 @28 = ~Sorry, but I'm not interested in this.~
@@ -35,14 +35,14 @@
 @34 = ~I know where he's not. He hasn't reported back to his barracks, and his family hasn't seen him. He also hasn't left Blacklake... not by the gates, anyway. Some of my men seem to think Samuel is drunk in some gutter, somewhere. The old man drank, certainly... but he's never disappeared. It would take something more to do that.~ /*Some of my men seem to think Samuel is drunk in some gutter, somewhere. The old man drank, certainly... but he's never disappeared. It would take something more to do that.*/
 @35 = ~I don't have the manpower. Right now, it's all I can do to hold down the gates and keep Blacklake calm. I've told my men to keep on the lookout... but nothing so far.~
 @36 = ~Samuel was one of my inspectors... my best one, in fact. He may have been looking into something, but if he was he never told anyone what he was doing.~
-@37 = ~I would gladly pay 300 gold pieces if someone found Samuel and he was returned, unharmed. That is all I can afford, however.~
-@38 = ~NP: Really? I'd be just happy if someone trustworthy could help us find Samuel. If you find him, tell him to come back if he can. At least I'll know exactly what's wrong with him.~ /*Would you? I would be more than happy to have the aid of someone trustworthy in finding Samuel. Thank you, my <PRO_LADYLORD>.*/
+@37 = ~I would gladly pay 800 gold pieces if someone found Samuel and he was returned, unharmed. That is all I can afford, however.~
+@38 = ~Would you? I would be more than happy to have the aid of someone trustworthy in finding Samuel. If you do find him, tell him to return if he can. At the very least, I would like to be certain of his fate.~
 @39 = ~All right... but don't you think I should get some coin up front for my trouble?~
 @40 = ~I'll find him if I can.~
 @41 = ~I see. (sigh) I truly didn't expect any help, at any rate. I suppose Samuel will turn up at some point, eventually. Now, then... leave me be, if you cannot be of any service.~ /*I see. (sigh) I truly didn't expect any help, at any rate. I suppose Samuel will turn up at some point, eventually.*/
 @42 = ~Besides the local nobles getting paranoid enough to turn on each other, nothing truly odd, no. Well, now, I suppose that's not exactly true. There is something odd that happened, if you want to hear about it.~ /*Besides the local nobles getting paranoid enough to turn on each other, nothing truly odd, no.*/
 @43 = ~Go ahead.~
-@44 = ~NP: Let me ask you something else.~ /*No, let me ask you something else.*/
+@44 = ~Let me ask you something else.~
 @45 = ~I have no guarantee that you will even look for Samuel at all once we part ways. You will see the reward when I see him, and that's all.~
 
 @47 = ~Thank you, <PRO_SIRMAAM>. I can only hope that you find him safe.~
@@ -61,16 +61,16 @@
 @60 = ~I hear that the sorcerer is dead. I shall have to take some men and make certain for myself. Farewell, <PRO_SIRMAAM>.~
 @61 = ~I hear that the sorcerer is dead. I shall have to take some men and make certain for myself. You, <PRO_SIRMAAM>, I hope not to see again.~
 @62 = ~Samuel has already made it back to the barracks. I was quite surprised to hear what had happened to him... I didn't think the sorcerer had the gall in him.~
-@63 = ~Samuel said he was rescued by one of the new recruits. I'll wager it was you, hmm? Good work. I set aside 300 gold for his rescue. It's yours.~
+@63 = ~Samuel said he was rescued by one of the new recruits. I'll wager it was you, hmm? Good work. I set aside 800 gold for his rescue. It's yours.~
 @64 = ~Are you sure you can't afford more? This is your friend I found, after all.~
 @65 = ~This is hardly a reward. You had better dig deeper, or else...~
 @66 = ~Thank you. That will be fine.~
 @67 = ~No, there's no need for the reward. I was happy to do it.~
-@68 = ~Here is the 300 gold pieces reward. It's a bit more than the guard can afford right now, obviously, but you've certainly earned it. Samuel is a close friend, after all.~
-@69 = ~True. I can add a bit of my own gold... 375 gp, then. But that is all I can afford. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
+@68 = ~Here is the 800 gold pieces reward. It's a bit more than the guard can afford right now, obviously, but you've certainly earned it. Samuel is a close friend, after all.~
+@69 = ~True. I can add a bit of my own gold... 935 gp, then. But that is all I can afford. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
 
 @71 = ~I am far from wealthy, <PRO_SIRMAAM>, and as I said that is all the guard can spare. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
-@72 = ~Is that supposed to be intimidating? Considering that you've helped me greatly, I'll just forget that threat. Here is your 300 gp... take it and go. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Is that supposed to be intimidating? Considering that you've helped me greatly, I'll just forget that threat. Here is your 300 gp... take it and go.*/
-@73 = ~NP: Then take the money. I wish I could pay you more, but I'm far from rich, <SIRMAAM>. Thank you again. you've helped more than I could have hoped for. Now, if you'll excuse me, I really have a lot to do today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
+@72 = ~Is that supposed to be intimidating? Considering that you've helped me greatly, I'll just forget that threat. Here is your 800 gp... take it and go. Now, if you'll excuse me, there's still much for me to deal with today.~
+@73 = ~Then take the coins. I wish I could pay you more, I am far from wealthy, <SIRMAAM>. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~
 @74 = ~You are far too kind, my <PRO_LADYLORD>. I shall make sure the guard knows of your service. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
-@75 = ~NP: I'm sorry, but I'm really busy. Please excuse me.~ /*I'm sorry, but I really must be leaving. Excuse me.*/
+@75 = ~I'm sorry, but I'm really busy. Please excuse me.~

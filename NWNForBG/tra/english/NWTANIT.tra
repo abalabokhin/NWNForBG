@@ -1,11 +1,11 @@
 @0 = ~Good day, ma'am. I am Tanith. I shall endeavor to make your visit to the Moonstone Mask a pleasant one.~ [NWTANI54]
-@1 = ~NP: I will talk to you. And not just talk.~ /*I would speak with you... and perhaps more.*/
+@1 = ~I would speak with you... and perhaps more.~
 @2 = ~There's more than talking, right?~
 @3 = ~Whatever, plaything. I'm not here to talk.~
 @4 = ~Goodbye.~
 @5 = ~I am certain, my lady, that we shall have a fine time. Have you a Pass Coin? A formality, as I am sure our talk will be... enjoyable.~
 @6 = ~Here is a Pass Coin. My name is <CHARNAME>.~
-@7 = ~NP: Here's the pass.~ /*Question*/
+@7 = ~Here is a Pass Coin.~
 @8 = ~I don't have a Pass Coin.~
 @9 = ~There's no need to be quite so.. gruff. Merely supply your Pass Coin and we will continue. I assume you will adopt a more pleasant voice?~
 @10 = ~That tone will not do you much good here. A Pass Coin may purchase my time, but a line such as that is more at home on the tavern floor.~
@@ -17,7 +17,7 @@
 @16 = ~Perhaps we could... retire to your bedchambers?~
 @17 = ~Forget the talk. Let's wrassle!~
 @18 = ~I must be on my way.~
-@19 = ~NP: Great, now tell me about yourself. What's on your mind? Here at The Mask, we're all very good listeners.~ /*Very well, <CHARNAME>. Now, tell me a little something about yourself. What's on your mind? We are very good listeners here at the Mask.*/
+@19 = ~Very well. Now, tell me a little something about yourself. What's on your mind? We are very good listeners here at the Mask.~
 @20 = ~Well, I regret to inform you that I cannnot speak with you unless you have one. I'm sorry. See the bartender if you wish to purchase one.~
 @21 = ~Important people are not often able to confide with people that care. I am a surrogate and a friend, if need be. Tell me, what bothers you?~
 @22 = ~Lament the inherent loneliness of the adventurer lifestyle.~
@@ -37,7 +37,7 @@
 @36 = ~Just lay with me. That is enough.~
 @37 = ~Gentle comforts are welcome. I'm not that tired.~
 @38 = ~Make me tired. Real tired. Animal man.~
-@39 = ~NP: What a lady! Gladly, but let me ask you, what do you expect me to do? How far can I go?~ /*Such a lady. I would be open to that, <CHARNAME>, but let me first ask you what it is you expect. What my boundaries are.*/
+@39 = ~Such a lady. I would be open to that, but let me first ask you what it is you expect. What my boundaries are.*/
 @40 = ~I understand. Rest ye well, my lady. I will watch over you.~
 @41 = ~I'm certain that I can accomodate you, my lady. Follow me, and I shall douse these harsh lights.~
 @42 = ~Well... I am quite sure that can be arranged. Follow me. Hold tight. Hang on.~
@@ -55,12 +55,14 @@
 @54 = ~Many people come here not knowing what it is they want. I try to make them comfortable. I try to ease what bothers them. Some people just need a sympathetic ear. I try to show the kind or restraint and understanding they may not have had from the men in their lives.~ /*Some people just need a sympathetic ear. I try to show the kind or restraint and understanding they may not have had from the men in their lives.*/
 @55 = ~I was raised in a home with five sisters. When I left, I didn't really fit in with the dock workers or loggers. I don't count that as a loss.~
 @56 = ~Look, if you want someone to fight with, you can look for an adversary outside. I will not be baited into a war of words. My job is to listen. If you can't believe that I might be honest when I do so, the door is behind you. Now... You were saying?~ /*Look, if you want someone to fight with, you can look for an adversary outside. I will not be baited into a war of words.*/
-@57 = ~NP: I will not tolerate rudeness.~ /*Me don't want troubles.*/
-@58 = ~NP: You look like you are skilled with weapons, but you also have other talents. Such versatility and a taste for battle might scare off your friends. I can fill that void, if you wish. That's what I'm here for, and you probably are too.~ /*For instance, you look like someone familiar in the use of weapons. That affinity for battle can keep companions at a distance sometimes.*/
+@57 = ~I will not tolerate rudeness.~
+@58 = ~You look like someone familiar in the use of weapons, but you also have other talents. That versatility and affinity for battle can keep companions at a distance sometimes.
+
+NP: You look like you are skilled with weapons, but you also have other talents. Such versatility and a taste for battle might scare off your friends. I can close that distance, if you like. That's why I'm here, and likely that's why you are here too.~
 @59 = ~Sorry, but Ophala want's no talk of that. Call a devil's name and you invite him in. We want the Moonstone Mask to be an escape.~
 @60 = ~Confide that you might have a big role in curing the plague.~
 @61 = ~People think the women of this profession are immoral, but that I am some kind of licentious devil. That's their burden, not mine. If you see me as dishonest, I won't be able to change your mind. The door is behind you. Feel free to use it. Or stay.~ /*If you see me as dishonest, I won't be able to change your mind. The door is behind you. Feel free to use it. Or stay.*/
-@62 = ~NP: I'm glad. Maybe we can talk some more.~ /*Goodbye. Perhaps we'll talk another time.*/
+@62 = ~Good. Perhaps we'll talk another time.~
 @63 = ~Perhaps we could... retire to your bedchambers, my lady?~
 @64 = ~Let's knock boots, honey!~
 @65 = ~Another time, then. See the bartender for additional Pass Coins.~
@@ -74,12 +76,12 @@
 @73 = ~I am sorry, m'lord, but my company is open to the ladies alone. You might wish to see if Tamora or Luce are available.~ [NWTANI50]
 @74 = ~I really don't have the heart for this today. I don't need the criticism.~ [NWTANI51]
 @75 = ~I apologize, but I am no longer working and my time is my own. I hope this doesn't inconvenience you.~ [NWTANI52]
-@76 = ~NP: Ah, <CHARNAME>. You look well. I hope our meeting left you with fond memories?~ /*Ah, <CHARNAME>. You are looking well. I trust our encounter has left you with fond memories?*/
+@76 = ~Ah, <CHARNAME>. You are looking well. I trust our encounter has left you with fond memories?~
 @77 = ~I enjoyed our time together. I hope you did as well.~
 @78 = ~Me like you. Hope you like me a little.~
 @79 = ~You just one more for the road. Ha!~
 @80 = ~<CHARNAME>, you are ever the perfect lady.~
 @81 = ~Your manner will never be a question with me, dear woman. Don't let your lovely simple heart be polluted. Ever.~
 @82 = ~An unnecessary comment. I am sorry I could not draw a more genuine response from you.~
-@83 = ~NP: Oh, it's you. You look good. I hope our meeting left you with fond memories?~ /*Ah, <CHARNAME>. You are looking well. I trust our encounter has left you with fond memories?*/
-@84 = ~NP: Oh, you're quite the lady.~ /*<CHARNAME>, you are ever the perfect lady.*/
+@83 = ~Аh, it's you. You are looking well. I trust our encounter has left you with fond memories?~
+@84 = ~Ah, you are ever the perfect lady.~
