@@ -1,10 +1,10 @@
 @0 = ~What can I get you?~
 @1 = ~I need a Pass Coin.~
-@2 = ~NP: I want to take a look at your range.~ /*Let me see your wares.*/
+@2 = ~Let me see your wares.~
 @3 = ~Goodbye.~
-@4 = ~NP: The pass costs 200 gold. Since you have received permission from Ofala, all that remains is to pay.~ /*Here is my 200 gold. Let me take the test again.*/
+@4 = ~The Pass costs 200 gold pieces. Since you have received permission from Ophala, all that remains is to pay.~
 @5 = ~Here's 200 gold.~
-@6 = ~NP: It's too much, I don't have that much money~ /*Me not got that much gold for spend on this.*/
-@7 = ~NP: The pass costs 200 gold. But first you need to talk to Ofala and get permission.~ /*Here's your 200 gold. Welcome aboard, Sharwyn.*/
-@8 = ~All right, here's the ring. When you get upstairs, just give this to the companion of your choice.~ /*When you get upstairs, just give this to the companion of your choice.*/
-@9 = ~NP: Well, boys and girls will be waiting for your return when you can afford it. They are worth the money.~ /*Well, the boys and girls in the backroom will be waiting for you when you can afford it. They're well worth the price.*/
+@6 = ~It's too much, I don't have that much gold~
+@7 = ~The Pass costs 200 gold. But first you need to talk to Ophala and get the permission.~
+@8 = ~All right, here's the Pass. When you get upstairs, just give this to the companion of your choice.~
+@9 = ~Well, the boys and girls will be waiting for you when you can afford it. They're well worth the price.~

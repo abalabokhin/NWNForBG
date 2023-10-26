@@ -1,11 +1,11 @@
-@0 = ~NP: Your company was disgusting! When we meet again, I'm not going to play friendship anymore!~ [NWTOMITT] /*You no be safe with me. Me got lots big danger.*/
+@0 = ~Yer ugly and you smell like a rotting skunk! Hee hee! When we meet again, I'm not going to play friendship anymore!~ [NWTOMITT]
 @1 = ~Wha-aat? Are you kidding me? You want to break up a great team?~ [NWTOMIDN]
 @2 = ~Yes. Go.~
 @3 = ~No. Stay.~
-@4 = ~NP: Oh, okay, okay. I'm just gonna hang around a little longer in case you change your mind.~ /*Oh, fine, fine. I'll hang about here for a little while, then, just in case you change your mind.*/
-@5 = ~NP: Go back to the sword fair.~ /*Get to the point.*/
-@6 = ~NP: I'll find you at Kendrak Barracks.~ /*Port Llast - Kendrack's Barracks*/
-@7 = ~NP: Wait for me here.~ /*Wait right here.*/
+@4 = ~Oh, fine, fine. I'll hang about here for a little while, then, just in case you change your mind.~
+@5 = ~Go back to the the Trade of Blades.~
+@6 = ~I'll find you at Kendrack's Barracks.~
+@7 = ~Wait right here.~
 @8 = ~Fair enough. Back to the adventure!~
 @9 = ~I figured they'd drag your carcass back here eventually, m'<PRO_LADYLORD>. You need me to come with ya again?~ [NWTOM060]
 @10 = ~Yep.~
@@ -18,7 +18,7 @@
 @17 = ~Goodbye.~
 @18 = ~Okay. What questions do you have? After you and I went our separate ways, Miss Aribeth there approached me and gave me plenty of money to hop along on this pony ride of hers. We're all supposed to help with the search. Seems like Lord Nasher wants to get rid of all the cultists who started this fight. I say good for him! Just goes to show that not all old people are useless and should be killed, you know?~ /*Seems like Lord Nasher wants to get rid of all the cultists who started this fight. I say good for him! Just goes to show that not all old people are useless and should be killed, you know?*/
 @19 = ~So you were conscripted into service by Aribeth?~
-@20 = ~NP: How much would it cost to hire you?~ /*How much would it cost to hire your services?*/
+@20 = ~How much would it cost to hire your services?~
 @21 = ~Well... maybe just a little. After all, it's not like there's enough employers alive right now that I have them beating down my door, aye? And anyway... I didn't have to chase you, much. Seems like Lord Nasher wants to get rid of all the cultists who started this fight. I say good for him! Just goes to show that not all old people are useless and should be killed, you know?~ /*Seems like Lord Nasher wants to get rid of all the cultists who started this fight. I say good for him! Just goes to show that not all old people are useless and should be killed, you know?*/
 @22 = ~Uh-huh. Toodle-loo!~
 @23 = ~I've already been paid by Miss Aribeth... and good coin, too, I might add. You'd think this Nasher fellow belched gold at will. I was just told that I'm supposed to help out wherever I can. How sweet and unspecific is that? I, uh, don't suppose you actually want something, do you?~ /*I was just told that I'm supposed to help out wherever I can. How sweet and unspecific is that? I, uh, don't suppose you actually want something, do you?*/
