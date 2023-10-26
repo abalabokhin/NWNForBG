@@ -78,6 +78,7 @@ In development:
 - "Usable By", etc are now removing for EE automatically during installation process, thanks to JohnBob
 - Some areas are added to "Cheat Areas" for EE, thanks to JohnBob
 - Some map icons are repositions on the global map, thanks to JohnBob
+- Transform into Wererat ability now works as intended, after turning into Wererat you can speak and after turning back to human all your abilities are recovered.
 
 0.92 (10/18/23)
 
