@@ -1,8 +1,8 @@
 @0 = ~You look like the kind o' person who knows how to live in the shadows.~
-@1 = ~NP: And what of it?~ /*What did that do?*/
+@1 = ~What if me do?~
 @2 = ~I take offense to that.~
-@3 = ~NP: Why did you talk to me?~ /*Why are you telling me this?*/
-@4 = ~NP: I'm just the kind of guy you need! I got a product that's gonna make your life a lot easier.~ /*In that case, I'm yer go-to guy! I've got the goods to make yer life easier.*/
+@3 = ~Why are you telling me this?~
+@4 = ~In that case, I'm yer go-to guy! I've got the goods to make yer life easier.~
 @5 = ~I would like to see what you have to offer.~
 @6 = ~I'd like to ask you some questions.~
 @7 = ~No, thanks.~
@@ -19,4 +19,4 @@
 @18 = ~With the fighting between the High Captains, my business has been busier than ever. I sell to both sides and nobody'll touch me, 'cause they need my goods.~
 @19 = ~How long has this been going on?~
 @20 = ~Several weeks ago things got much more interesting 'round here. I've been raking in the gold since then. But look, I have other customers, so are ya plannin' to buy or not?~ /*Several weeks ago things got much more interesting 'round here. I've been raking in the gold since then.*/
-@21 = ~NP: Don't turn your back on people again. There'll be people here who'll want to stab you in the back.~ /*Watch yer back 'round here <PRO_GIRLBOY>. There's lots o' folks liable to stick a knife in it.*/
+@21 = ~Watch yer back 'round here. There's lots o' folks liable to stick a knife in it.*/
