@@ -58,7 +58,7 @@ Dependencies
 
 <h3>For BG2:TOB and BGT:</h3>
 
-Make sure ToBex (or other mods, increasing maximum number of music) and Infinity-Animations are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized\_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
+Make sure ToBex (or other mods, increasing maximum number of music) and Infinity-Animations (there can be a problem with code page for non-English window systems, be careful, read README and [here](https://www.gibberlings3.net/forums/topic/37297-bg2-crashes-due-to-some-mod/).) are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized\_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
 
 <h3>For BG2EE and EET:</h3>
 
