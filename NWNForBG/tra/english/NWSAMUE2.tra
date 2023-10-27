@@ -13,7 +13,7 @@
 @12 = ~That's a relief. My name is Samuel... an inspector for the city guard. I was beginning to think no one would ever free me.~
 @13 = ~He did? It's good to know he didn't abandon me... I was almost afraid that, well... nevermind. Thank you for coming to release me.~
 @14 = ~I've no reason to lie to you. I've no weapons... I'm completely at your mercy, in fact. If you would release me, I'm sure my captain would even reward you.~
-@15 = ~NP: I do not trust you. Die!~ /*I don't trust you. Time to die!*/
+@15 = ~I don't trust you. Time to die!~
 @16 = ~Of course. I'll tell you whatever I know, though it probably isn't much.~
 @17 = ~Just how did you end up prisoner here?~
 @18 = ~What do you know about this place?~
@@ -29,10 +29,10 @@
 @28 = ~I never said that. Killing you would be more fun! Ha ha ha!!~
 @29 = ~*Sigh* I was just poking around the estate, actually, looking into some rumors I'd heard of Meldanen acting even more strangely than usual. I didn't find anything, but it appears I was correct. Meldanen captured me and ranted on about how I was trying to steal something from him. I've no idea what he was talking about... but he seemed convinced that I was up to no good and wouldn't let me go.~ /**Sigh* I was just poking around the estate, actually, looking into some rumors I'd heard of Meldanen acting even more strangely than usual.*/
 @30 = ~But why would he keep you prisoner? A member of city guard?~
-@31 = ~NP: Very little. I was kept in captivity, and Meldanen refused to explain anything. I think he lives downstairs, in the underground floor.~ /*You can learn a lot in a small dark room. Don't let anyone tell you different.*/
-@32 = ~Thank you, <PRO_SIRMAAM>. I'm sure I can find my way out of here. I only wish I could take revenge on that damnable wizard! Once you leave this place, seek out Captain Thurin. I'm sure he will want to thank you for finding me. Fare you well!~ /*Once you leave this place, seek out Captain Thurin. I'm sure he will want to thank you for finding me. Fare you well!*/
+@31 = ~Very little. I was kept in captivity, and Meldanen refused to explain anything. I think he lives below, in the underground floor.~
+@32 = ~Thank you, <SIRMAAM>. I'm sure I can find my way out of here. I only wish I could take revenge on that damnable wizard! Once you leave this place, seek out Captain Thurin. I'm sure he will want to thank you for finding me. Fare you well!~ /*Once you leave this place, seek out Captain Thurin. I'm sure he will want to thank you for finding me. Fare you well!*/
 
-@34 = ~NP: It is not necessary,<SIRMAAM> although I appreciate your suggestion. You would only be delayed because of me, there is no doubt. When you leave this place, look for Captain Turin. I'm sure he'll want to thank you for finding me. See you!~ /*Once you leave this place, seek out Captain Thurin. I'm sure he will want to thank you for finding me. Fare you well!*/
+@34 = ~That's not necessary, <SIRMAAM>, though I appreciate the offer. I would only slow you down, I'm sure. Once you leave this place, seek out Captain Thurin. I'm sure he will want to thank you for finding me. Fare you well!~
 @35 = ~Ahhhh!! Help me, someone!~
 @36 = ~I don't know. Meldanen wouldn't ordinarily do this... lots of other things, perhaps, but not take a guard hostage. I don't know what he's up to.~
 

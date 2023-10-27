@@ -39,7 +39,7 @@
 @38 = ~I need the fruit of the rare Ultarg tree. I have the seeds, but the tree only bears fruit every ten thousand years or so. What I need you to do is use the time sink to go back in time and plant the tree for me.~
 @39 = ~Just remember the rules of time travel. One: you can't leave the area of the time sink. Physically impossible, which means you won't be able to leave the vault complex once you are in the past. Two: you can't bring any items of power back from the past into the present. When you return only the stuff you brought with you in the first place and mundane items can make the trip home with you.~ /*Just remember the rules of time travel. One: you can't leave the area of the time sink. Physically impossible, which means you won't be able to leave the vault complex once you are in the past.*/
 @40 = ~Sounds simple.~
-@41 = ~NP: I heard it from you at our next meeting! Anyway, I have nothing more to tell you about time travel.~ /*That's what you said at our next meeting! Anyway, that's about all I can tell you about time travel. Anything else you want to know?*/
+@41 = ~That's what you said at our next meeting! Anyway, that's about all I can tell you about time travel.~
 @42 = ~According to my research, the only place you can safely plant the seeds and have the tree bear fruit is beneath the red warding rune painted on the soil of this garden. Plant the tree in the past, and I'll be waiting here in the present to harvest the fruit.~
 @43 = ~Okay, I'll do it.~
 @44 = ~What's in this for me?~
@@ -73,13 +73,13 @@
 @72 = ~Ah, you are back - or is this our first meeting? Temporal instability in the time stream makes introductions difficult, doesn't it? Is there a problem? Do you need me to refresh your memory of our last meeting - or is that our next meeting?~ [NWSAPP55]
 @73 = ~Let's recap what you told me last time.~
 @74 = ~I need you to travel into the ancient past to plant the seeds of the Ultarg tree. Plant them in this location in the past so that when the tree bears fruit at the end of its ten thousand year lifespan I can harvest them. Don't worry, I'll see you are well paid for your troubles. I've made a fortune in gambling over the years. Plus, using the sun dial to go back to the age of the Creator Race will send you to a time before the guardian golems were created.~ /*Don't worry, I'll see you are well paid for your troubles. I've made a fortune in gambling over the years. Plus, using the sun dial to go back to the age of the Creator Race will send you to a time before the guardian golems were created.*/
-@75 = ~NP: Greetings. I want to thank you again for the Ulltark tree. Or am I thanking you for the first time? It doesn't matter - I'm grateful either way.~ [NWSAPP58] /*Greetings, <CHARNAME> - once more I must thank you for planting the Ultarg seed trees for me. Or is this the first time I am thanking you? No matter - I am grateful in any case.*/
+@75 = ~Greetings - once more I must thank you for planting the Ultarg seed trees for me. Or is this the first time I am thanking you? No matter - I am grateful in any case.~ [NWSAPP58]
 @76 = ~What about my reward?~
 @77 = ~Have I not given it to you yet? No... I suppose I haven't, or you wouldn't be asking now, would you? What to give, what to give? Ah, I know! I think these gems will make a suitable reward. They say they can add sparkle to your personality.~ /*Have I not given it to you yet? No... I suppose I haven't, or you wouldn't be asking now, would you? What to give, what to give? Ah, I know!*/
 @78 = ~Thank you, Sapphira. You are most generous.~
 @79 = ~NP: I give you a tree that's been growing for ten thousand years, and you want to give me a handful of pebbles for it?~ /*I give you a tree that was ten thousand years in the making, and all you give me is a handful of gems?*/
 @80 = ~You better cough up something else or you'll end up dead at the foot of this tree!~
-@81 = ~NP: Goodbye, until the next first meeting. Ha! Another professional joke! Or haven't I told you one yet....~ /*Farewell, <CHARNAME>, until we meet again for the first time. Ha! Another time travel joke! Or maybe I haven't told any yet...*/
+@81 = ~Farewell, until we meet again for the first time. Ha! Another time travel joke! Or maybe I haven't told any yet...~
 
 @83 = ~Well, I suppose I could afford something else. After all, you did risk capture by those scaly slavers in the past to plant this tree for me. I don't have much else on me, except for this scroll. You can have it, I suppose. There's nothing else I can give you.~ /*Well, I suppose I could afford something else. After all, you did risk capture by those scaly slavers in the past to plant this tree for me.*/
 @84 = ~NP: Makes sense, but these gems have also been created over thousands of years, don't they? Fair enough.~ /*True enough but those gems were a thousand centuries in the making, weren't they? I think we are even, <CHARNAME>.*/
