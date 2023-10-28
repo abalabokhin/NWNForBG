@@ -1,4 +1,4 @@
-@0 = ~NP: Yes,<SIRMAAM> . Do you need something?~ [NWSHAR50] /*Yes, <SIRMAAM>. Is there something you need?*/
+@0 = ~Yes, <SIRMAAM>. Is there something you need?~ [NWSHAR50]
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~Talk? About what, <CHARNAME>?~
@@ -74,7 +74,7 @@
 @73 = ~People act like idiots when they're in love.~
 @74 = ~No, that's true. These things are bound to come to a bad end, of course, and I wish I had known that. As the date of my marriage to Lord Farthingdon grew closer, he began to suspect that something was amiss. I spent far too much time away from him and in Dannen's arms. It was all my mother could do to convince him that I was true to his love... and it was she who finally discovered me in the arms of my bard.~ /*As the date of my marriage to Lord Farthingdon grew closer, he began to suspect that something was amiss. I spent far too much time away from him and in Dannen's arms.*/
 @75 = ~So did she have Dannen killed?~
-@76 = ~NP: Well, did you kill your mother?~ /*So you killed her?*/
+@76 = ~So you killed her?~
 @77 = ~An unpleasant scene, I would bet.~
 @78 = ~It was easier by far to give everyone what they wished. Lord Farthingdon wished a wife, my mother wished me to get married, and Dannen loved me. As the date of my marriage to Lord Farthingdon grew closer, he began to suspect that something was amiss. I spent far too much time away from him and in Dannen's arms. It was all my mother could do to convince him that I was true to his love... and it was she who finally discovered me in the arms of my bard.~ /*As the date of my marriage to Lord Farthingdon grew closer, he began to suspect that something was amiss. I spent far too much time away from him and in Dannen's arms.*/
 @79 = ~They do. In fact, I would be willing to wager that the most heinous crimes have been committed in the name of love. As the date of my marriage to Lord Farthingdon grew closer, he began to suspect that something was amiss. I spent far too much time away from him and in Dannen's arms. It was all my mother could do to convince him that I was true to his love... and it was she who finally discovered me in the arms of my bard.~ /*As the date of my marriage to Lord Farthingdon grew closer, he began to suspect that something was amiss. I spent far too much time away from him and in Dannen's arms.*/

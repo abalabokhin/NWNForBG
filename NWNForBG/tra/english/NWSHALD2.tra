@@ -1,8 +1,8 @@
 @0 = ~I'll be good! Please don't hurt me!~ [NWSHA058]
 @1 = ~Shaldrissa, right? I'm <CHARNAME> and your father sent me to rescue you.~
-@2 = ~NP: Shaldriss, right? Your father sent us to rescue you.~ /*Shaldrissa, right? I'm <CHARNAME> and your father sent me to rescue you.*/
-@3 = ~NP: I will save you.~ /*I hear you.*/
-@4 = ~NP: Wait here.~ /*Wait right here.*/
+@2 = ~Shaldrissa, right? Your father sent me to rescue you.~
+@3 = ~I will rescue you.~
+@4 = ~Wait right here.~
 @5 = ~Rescue? (sob) Wait, you... you're the one who saved Neverwinter. Does this mean the gods have forgiven me? Is it possible, despite my stupidity? I shouldn't have believed him! It was going to be a grand adventure and I would be a true hero... like you. Oh, gods! I'll never be able to return home.~ /*I shouldn't have believed him! It was going to be a grand adventure and I would be a true hero... like you. Oh, gods! I'll never be able to return home.*/
 @6 = ~Settle down and tell me what's going on here.~
 @7 = ~Save the story for your father. You must go now.~
