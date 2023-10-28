@@ -5,7 +5,7 @@
 @4 = ~I've got what I need. See you around, Haljal.~
 @5 = ~NP: Well, we have a wide range of products, considering we're a general store in a nice town like Port Llast. Why don't you see with your own eyes?~ /*Well, our selection of goods run the gamut, being as that we're the general store for the good town of Port Llast. As well, my smith over there can show you a wider selection of weapons if you wish. Why don't you take a look yourself?*/
 @6 = ~NP: Not a problem, old man. Not a problem at all. Here, choose.~ /*No. That trouble be too much... trouble.*/
-@7 = ~NP: Well, come on in<SIRMAAM> . It's always a pleasure to do business with you.~ /*Be stopping back again, good <PRO_LADYLORD>. Your business is always welcome.*/
+@7 = ~NP: Well, come on in<SIRMAAM> . It's always a pleasure to do business with you.~ /*Be stopping back again, good <LADYLORD>. Your business is always welcome.*/
 @8 = ~Sometimes I hear stories about an area, sometimes I don't. Though when I do, it's usually about a place like the Neverwinter Wood, Charwood, or even Luskan sometimes.~
 @9 = ~Have you heard any news from Charwood?~
 @10 = ~Have you heard any news from the Neverwinter Wood?~

@@ -1,7 +1,7 @@
-@0 = ~NP: Stand back, <SIRMAAM>. All these poor people are victims of the plague. You could be infected, as far as I'm concerned.~ /*I urge you to keep away from these bodies, my <PRO_LADYLORD>. There is a risk of contagion, I understand.*/
+@0 = ~NP: Stand back, <SIRMAAM>. All these poor people are victims of the plague. You could be infected, as far as I'm concerned.~ /*I urge you to keep away from these bodies, my <LADYLORD>. There is a risk of contagion, I understand.*/
 @1 = ~Could I ask you some questions?~
 @2 = ~Goodbye.~
-@3 = ~I'll answer what I can. Just keep back from the pile, <PRO_SIRMAAM>. Try not to breath the fumes directly... ugh... it's disgusting...~
+@3 = ~I'll answer what I can. Just keep back from the pile, <SIRMAAM>. Try not to breath the fumes directly... ugh... it's disgusting...~
 @4 = ~Aren't you in danger of becoming infected yourself?~
 @5 = ~Where are all these dead people coming from?~
 @6 = ~This can't be a pleasant task for you.~
@@ -17,11 +17,11 @@
 @16 = ~What can you tell me about the plague?~
 @17 = ~Have you heard anything about strange animals in the area?~
 @18 = ~NP: I'd like to ask another question.~ /*I want to ask you something else.*/
-@19 = ~The Wailing Death is going on, fool. Ahhh, don't mind me, <PRO_SIRMAAM>. The core is no place for any sane man to be these days.~
-@20 = ~I am not from this district. Nor would I be inclined to point your way, <PRO_SIRMAAM>, even if I were. Ask someone else for aid.~
+@19 = ~The Wailing Death is going on, fool. Ahhh, don't mind me, <SIRMAAM>. The core is no place for any sane man to be these days.~
+@20 = ~I am not from this district. Nor would I be inclined to point your way, <SIRMAAM>, even if I were. Ask someone else for aid.~
 @21 = ~Besides the obvious? The Wailing Death can't be cured by the gods, it seems. None of them clerics' blessings do a thing. Makes you think maybe the gods have abandoned us, doesn't it? Makes you think worse is coming. Makes you think winter is coming, even. Is there something else you need, then?~ /*Besides the obvious? The Wailing Death can't be cured by the gods, it seems. None of them clerics' blessings do a thing.*/
 @22 = ~Animals? That sounds familiar. I heard something about some animals arriving from Waterdeep, but nothing more beyond that. No doubt it's something for the others in the city guard to worry about. In this post, they don't tell me much.~ /*No doubt it's something for the others in the city guard to worry about. In this post, they don't tell me much.*/
 @23 = ~So you haven't heard about any animals in this area?~
 @24 = ~What do you want to know?~
-@25 = ~*Sigh* Look at what I do, <PRO_SIRMAAM>. Very few people care to talk to me at length, if at all. Maybe you'd have more luck asking these things at a local tavern. Is there something else you wanted, then?~ /**Sigh* Look at what I do, <PRO_SIRMAAM>. Very few people care to talk to me at length, if at all. Maybe you'd have more luck asking these things at a local tavern.*/
+@25 = ~*Sigh* Look at what I do, <SIRMAAM>. Very few people care to talk to me at length, if at all. Maybe you'd have more luck asking these things at a local tavern. Is there something else you wanted, then?~ /**Sigh* Look at what I do, <SIRMAAM>. Very few people care to talk to me at length, if at all. Maybe you'd have more luck asking these things at a local tavern.*/
 @26 = ~Stand back. These bodies carry the plague.~

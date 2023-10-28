@@ -23,7 +23,7 @@
 @22 = ~Is there anything else about her you're not telling me?~
 @23 = ~I'd like to ask something else.~
 @24 = ~We don't hear much out here. I saw a suspicious-looking fellow take the road to Charwood a week back or so, though. Maybe he was one. Is there something else you need, then?~ /*We don't hear much out here. I saw a suspicious-looking fellow take the road to Charwood a week back or so, though. Maybe he was one.*/
-@25 = ~Hmph. I could sure use a favor right now and maybe you're a <PRO_MANWOMAN> who can help. Interested in the details?~
+@25 = ~Hmph. I could sure use a favor right now and maybe you're a <MANWOMAN> who can help. Interested in the details?~
 @26 = ~I don't do favors; I do jobs. You want to pay me for this, then you should tell me about it.~
 @27 = ~Tell me about this favor.~
 @28 = ~I know much of the area around here, so I suppose I could help out. Where exactly do you need directions to?~
@@ -31,7 +31,7 @@
 @30 = ~Where does the east road lead?~
 @31 = ~Where can I go to buy supplies?~
 @32 = ~NP: Where can I stay overnight?~ /*Where can I find Shade?*/
-@33 = ~It's been good talking to you, <PRO_SIRMAAM>.~
+@33 = ~It's been good talking to you, <SIRMAAM>.~
 @34 = ~It's all me pa has left to remind him of my ma... Of all the things to show Constance! *Sigh* I ought to have stuck with wildflowers... Anything else before you get that brooch?~ /*It's all me pa has left to remind him of my ma... Of all the things to show Constance! *Sigh* I ought to have stuck with wildflowers...*/
 @35 = ~NP: She's with O'Deal's daughter, who keeps cows on a nearby farm... Remember, don't hurt her. I just want my brooch back.~ /*She's farmer O'Deel's daughter, the one who keeps cattle up by the waterfalls... Remember, don't hurt her. I just need that brooch back.*/
 @36 = ~Her hair's the color of cornsilk, her laugh like the waterfall... And her eyes, they're as blue as the sky! Anything else before you get that brooch?~ /*Her hair's the color of cornsilk, her laugh's like the waterfall, her eyes are as blue as the sky... Her heart, though, it's sprung like a bear trap!*/

@@ -1,4 +1,4 @@
-@0 = ~Hey! This is the Commander's quarters! I don't want you enlisted men traipsing through... oh, sorry, my <PRO_LADYLORD>. I thought you were one of my soldiers. Please forgive my outburst - I would not have it said that Commander Damas is a man without class. How may I be of service to you?~ [NWDAMA56] /*Hey! This is the Commander's quarters! I don't want you enlisted men traipsing through... oh, sorry, my <PRO_LADYLORD>. I thought you were one of my soldiers.*/
+@0 = ~Hey! This is the Commander's quarters! I don't want you enlisted men traipsing through... oh, sorry, my <LADYLORD>. I thought you were one of my soldiers. Please forgive my outburst - I would not have it said that Commander Damas is a man without class. How may I be of service to you?~ [NWDAMA56] /*Hey! This is the Commander's quarters! I don't want you enlisted men traipsing through... oh, sorry, my <LADYLORD>. I thought you were one of my soldiers.*/
 @1 = ~I have some questions.~
 @2 = ~You contaminated the Elk tribe with these plague infected blankets!~
 @3 = ~I'll be going now.~
@@ -17,7 +17,7 @@
 @16 = ~Fine, you've made your point. The Uthgardt Elk tribe deserves death.~
 @17 = ~NP: The only reason the Elk tribe joined Luskan was that they promised them a cure for their disease!~ /*The only reason the Elk tribe joined Luskan is because they were promised a cure for the plague you gave them!*/
 @18 = ~I don't care about the Elk tribe, but I want to profit from this somehow!~
-@19 = ~As you wish, my <PRO_LADYLORD>. If you need anything else, I am at your disposal.~
+@19 = ~As you wish, my <LADYLORD>. If you need anything else, I am at your disposal.~
 @20 = ~They are soft and weak! They whine about missing their families and cry about going back to their farms and homesteads! Don't they realize this is war! Fort Ilkard has to be defended if we are to win this war! And it would help if my soldiers wouldn't question my every command. Now, if there is nothing else...~ /*Fort Ilkard has to be defended if we are to win this war! And it would help if my soldiers wouldn't question my every command. Now, if there is nothing else...*/
 @21 = ~Who knows how the minds of those animals works? They probably just saw a chance to kill and pillage and jumped at it!~
 @22 = ~Maybe you could negotiate a truce with the Uthgardt Elk tribe.~
@@ -26,13 +26,13 @@
 @25 = ~Tell you what: you go out and disable all six catapults attacking the fort, and I'll make sure you get a healthy reward from the Fort Ilkard treasury. Now, if there is nothing else...~
 
 @27 = ~Excellent! I will have this placed on a pole outside Fort Ilkard's gates at once! For ending the siege of Fort Ilkard, I am pleased to give you this gift of 750 gold pieces! Since you have proven yourself so useful already, there is something else I would ask of you.~ /*Since you have proven yourself so useful already, there is something else I would ask of you.*/
-@28 = ~And the Elk tribe is no more! The world is rid of their vile presence. At last, the lands have been cleansed of those wandering savages! Your reward. Of course. 1200 gold pieces seems fair. You're becoming quite the wealthy <PRO_MANWOMAN> working for me.~ /*And the Elk tribe is no more! The world is rid of their vile presence. At last, the lands have been cleansed of those wandering savages!*/
+@28 = ~And the Elk tribe is no more! The world is rid of their vile presence. At last, the lands have been cleansed of those wandering savages! Your reward. Of course. 1200 gold pieces seems fair. You're becoming quite the wealthy <MANWOMAN> working for me.~ /*And the Elk tribe is no more! The world is rid of their vile presence. At last, the lands have been cleansed of those wandering savages!*/
 
 @30 = ~Glad we could see eye to eye on this. Now, if there's nothing else...~
 @31 = ~You don't really believe that, do you? You think if I hand over the cure the Elk tribe will suddenly abandon their Luskan allies? Uh... not that I have a cure on me...~
 @32 = ~I know you have the cure. Now hand it over.~
 @33 = ~Hand over the cure or I'll make you suffer until you wish you had the plague yourself!~
-@34 = ~I admire a <PRO_MANWOMAN> who would be willing to let the entire Elk tribe die from the plague in exchange for a simple payoff. But just because you and I think alike doesn't mean I'm going to hand over my gold to you. Why would I want to do that?~ /*I admire a <PRO_MANWOMAN> who would be willing to let the entire Elk tribe die from the plague in exchange for a simple payoff.*/
+@34 = ~I admire a <MANWOMAN> who would be willing to let the entire Elk tribe die from the plague in exchange for a simple payoff. But just because you and I think alike doesn't mean I'm going to hand over my gold to you. Why would I want to do that?~ /*I admire a <MANWOMAN> who would be willing to let the entire Elk tribe die from the plague in exchange for a simple payoff.*/
 @35 = ~NP: Pay me to keep quiet and I wont tell anyone that you have infected the Elk tribe with the plague.~ /*You buy my silence and I won't tell anyone about your plan to infect the Elk tribe with the plague.*/
 @36 = ~I've changed my mind. The Elk tribe doesn't deseve this. Hand over that plague cure.~
 @37 = ~How can you even ask that? The Uthgardt are ruthless killers who prey on the weak and defenseless! They must be exterminated like the disease they are! Now, if there is nothing else...~
@@ -50,7 +50,7 @@
 @49 = ~Guards, help! Enemy in the compound!~
 @50 = ~To the death, then!~
 @51 = ~Can't say I blame you. I wouldn't spend my own money to save those savages either. My earlier offer still stands. You know, the one where you act like a soldier and kill our enemies instead of saving them? If you change your mind and decide you'd rather exterminate these Uthgardt after all, just bring me back the head of their leader Zokan.  Now, if you'll excuse me I have business to attend to.~ /*Can't say I blame you. I wouldn't spend my own money to save those savages either. My earlier offer still stands. You know, the one where you act like a soldier and kill our enemies instead of saving them?*/
-@52 = ~A pleasure doing business with you, <PRO_SIRMAAM>. I'll make sure these blankets are burnt and nobody will ever have to worry about them again.~
+@52 = ~A pleasure doing business with you, <SIRMAAM>. I'll make sure these blankets are burnt and nobody will ever have to worry about them again.~
 @53 = ~I think you underestimate how little I really care about this. I want to avoid some inconvenient questions about my activities, but I'm not going to give away a fortune to do it. If you don't want my gold you can keep those blankets. I really don't care. So I'll give you one last chance to accept my offer. Do you want the 100 gold pieces?~ /*I think you underestimate how little I really care about this. I want to avoid some inconvenient questions about my activities, but I'm not going to give away a fortune to do it.*/
 @54 = ~Forget it.~
 @55 = ~NP: As I said, in my opinion, these Words of Power are a waste of time. But if you are determined to find them, I advise you to head south until you see these ruins. Well, I think its time for you to go, and I should get back to managing this fort.~ /*Like I said, I think these Words of Power are a waste of time. But if you're determined to search them out I'd suggest you head south until you see those pillars of light. The glowing cave entrance should be just east of there.*/
@@ -64,4 +64,4 @@
 @63 = ~The best way to break the Luskan - Elk tribe alliance is to kill off the Uthgardt chief, Zokan Thunderer. Without Zokan to guide them, the Elk tribe will fall apart. And that will be the end of the alliance. The Uthgardt chief is holed up in an old fort just west of here. Damn coward hasn't come out in weeks! Bring me his head and I'll give you a fine reward. Now, if there's nothing else...~ /*The best way to break the Luskan - Elk tribe alliance is to kill off the Uthgardt chief, Zokan Thunderer. Without Zokan to guide them, the Elk tribe will fall apart. And that will be the end of the alliance.*/
 
 @65 = ~Why have you come back? I already gave you the cure for the Elk tribe - what more do you want from me?~
-@66 = ~I see you have returned, my <PRO_LADYLORD>. Is there something further I can do for you?~
+@66 = ~I see you have returned, my <LADYLORD>. Is there something further I can do for you?~

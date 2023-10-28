@@ -1,5 +1,5 @@
 @0 = ~NP: No, I won't let you kill me! Creatures of nature must be protected, obey my will!~ /*No, I will not allow you to kill me! Nature's creatures must be protected.*/
-@1 = ~Foolish <PRO_MANWOMAN>! I don't know why you thought you could just steal into my house, kill my slaves and destroy another of nature's protectors, but now you have fallen to my charms. Now, bow to your mistress!~
+@1 = ~Foolish <MANWOMAN>! I don't know why you thought you could just steal into my house, kill my slaves and destroy another of nature's protectors, but now you have fallen to my charms. Now, bow to your mistress!~
 @2 = ~What are you talking about? I'm not a slave.~
 @3 = ~Yes mistress. What is your command?~
 @4 = ~NP: If you tried to subdue me with your charms, you lost. Try again if you want to die..~ /*If you were trying to dominate me with your powers, you have failed. If you want to die, just try to pull that again.*/
@@ -13,7 +13,7 @@
 @12 = ~I'm not wearing that! It's pink!!!~
 @13 = ~No! How is this possible? What has happened to my powers?~
 @14 = ~NP: You and your slaves attacked me. Give me one reason why I shouldn't kill you?~ /*Me attacked by you and your slaves. Why me not kill you now, huh?*/
-@15 = ~NP: Yes, I do not care about your strength. They are not, and now answer, what is going on here?~ /*Come on, we're both <PRO_RACE> kind. What's going on?*/
+@15 = ~NP: Yes, I do not care about your strength. They are not, and now answer, what is going on here?~ /*Come on, we're both <RACE> kind. What's going on?*/
 @16 = ~No, please! Please don't hurt me. What have I done to provoke this attack on my home?~
 @17 = ~You attacked me! I didn't start this.~
 @18 = ~NP: Your slaves attacked me, then you did the same. This is not enough?~ /*Your slaves attacked me and then you did the same thing. How is this my fault?*/
@@ -28,7 +28,7 @@
 @27 = ~I guess I can forgive you, but I expect you to help me in any way you can now.~
 @28 = ~NP: I can't forgive you, but I won't touch you unless you throw something else away.~ /*That's a pretty horrible mistake. I can't forgive you, but I won't hurt you unless you try something again.*/
 @29 = ~There can be no forgiveness for what you have done, there can be only death.~
-@30 = ~Oh thank you <PRO_LADYLORD>! You are very kind. I will do whatever I can to help you. I just wish I still had my powers, I don't know why they have become so weakened.~
+@30 = ~Oh thank you <LADYLORD>! You are very kind. I will do whatever I can to help you. I just wish I still had my powers, I don't know why they have become so weakened.~
 @31 = ~How long have you been having trouble?~
 @32 = ~You still had enough power to control your slaves.~
 @33 = ~I will do as you command. I only wish I had some way to make it up to you. Without my powers, there is very little I can do.~

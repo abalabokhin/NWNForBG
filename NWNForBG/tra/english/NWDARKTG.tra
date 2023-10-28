@@ -26,7 +26,7 @@
 @25 = ~Two reasons. First, the beasts started to gather just when the plague hit Neverwinter. Second, there was a man leading the goblins who attacked me. That ain't a typical thing. Maybe the man was a cultist. Maybe not. Either way, my gut is tellin' me that the picture ain't right.~ /*Two reasons. First, the beasts started to gather just when the plague hit Neverwinter. Second, there was a man leading the goblins who attacked me. That ain't a typical thing.*/
 @26 = ~I'll be sure to check it out.~
 @27 = ~I have another question.~
-@28 = ~NP: Well, I'd love to, buddy, but I gotta make a living on my own. I can't make much money with an injured leg.~ /*Well, I should like to <PRO_GIRLBOY>, but I need all me gold to feed meself and keep a roof over me head. No income comin' in with a bum leg and all.*/
+@28 = ~NP: Well, I'd love to, buddy, but I gotta make a living on my own. I can't make much money with an injured leg.~ /*Well, I should like to <GIRLBOY>, but I need all me gold to feed meself and keep a roof over me head. No income comin' in with a bum leg and all.*/
 @29 = ~All right, I would like to ask you more questions though.~
 @30 = ~Lady Aribeth has commanded me to raise funds to assist the search.~
 @31 = ~NP: You better give me some money before I amputate your puny leg.~ /*You had better hand over some gold, before I have to perform surgery to remove that diseased leg.*/
@@ -40,7 +40,7 @@
 @39 = ~I have nothing to tell you.~
 @40 = ~I suspect that the cult may be based in Luskan.~
 @41 = ~NP: In the caves you mentioned there was a sectarian who was causing all this commotion.~ /*I have explored the caves that you mentioned. There was a cult member there who was stirring up trouble.*/
-@42 = ~NP: Come on, man, don't be so rude. I'm not gonna beat around the bush since you're such a, uh. touchy-feely little thing, huh?~ /*Now then <PRO_GIRLBOY>, no need to get sassy. I'm just stirring up leads, as you should be... touchy, ain't you?*/
+@42 = ~NP: Come on, man, don't be so rude. I'm not gonna beat around the bush since you're such a, uh. touchy-feely little thing, huh?~ /*Now then <GIRLBOY>, no need to get sassy. I'm just stirring up leads, as you should be... touchy, ain't you?*/
 @43 = ~Well, keep at it. We need to punish the ones who unleashed the plague on poor Neverwinter.~
 @44 = ~Luskan, eh? Hmm, I'll have to think about that. You get back to your searchin' friend. Luskan...~
 @45 = ~NP: That's what I thought! You see now, old Chernoslov won't just say so. And I'll never give you bad advice.~ /*Just as I thought! See, you gotta trust ol' Darktongue. I'll send you down the right path every time. Did you find where the cult was based?*/

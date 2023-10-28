@@ -1,4 +1,4 @@
-@0 = ~NP: Greetings, <SIRMAAM>. I'm just packing up my stuff, hopefully I'll be out of here soon. What can I do for you?~ [NWARH050] /*Greetings my <PRO_LADYLORD>. I was just getting packed up in the hopes of leaving soon. How may I assist you?*/
+@0 = ~NP: Greetings, <SIRMAAM>. I'm just packing up my stuff, hopefully I'll be out of here soon. What can I do for you?~ [NWARH050] /*Greetings my <LADYLORD>. I was just getting packed up in the hopes of leaving soon. How may I assist you?*/
 @1 = ~Could I ask you some questions?~
 @2 = ~Goodbye.~
 @3 = ~What would you like to ask?~
@@ -36,4 +36,4 @@
 @35 = ~Is there anyone else?~
 @36 = ~Not really. Everybody else was either killed by the trolls, or ran away.~
 @37 = ~What do you want? I was just packing up in the hopes of leaving soon, so don't waste my time.~ [NWARH050]
-@38 = ~Thank you so much for helping us out. I was afraid we'd never get to leave. Good luck, my <PRO_LADYLORD>.~
+@38 = ~Thank you so much for helping us out. I was afraid we'd never get to leave. Good luck, my <LADYLORD>.~

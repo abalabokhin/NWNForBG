@@ -1,4 +1,4 @@
-@0 = ~Welcome to the Alliance Arms Inn. It is a pleasure to serve a hero at my humble establishment. Is there anything I can get for you, <PRO_SIRMAAM>?~
+@0 = ~Welcome to the Alliance Arms Inn. It is a pleasure to serve a hero at my humble establishment. Is there anything I can get for you, <SIRMAAM>?~
 @1 = ~What do you charge for a room?~
 @2 = ~I'm here to collect the new tavern tax.~
 @3 = ~May I ask you some questions?~
@@ -9,7 +9,7 @@
 @8 = ~A tax on taverns? That's outrageous! Lord Nasher must be out of his mind. Forget it, I'll never pay.~
 @9 = ~Calm down man, it was only a joke.~
 @10 = ~[Lie] You'll pay, or this tavern will be shut down on the orders of Lady Aribeth and Lord Nasher.~
-@11 = ~(sigh) Just don't waste too much of my time. I am very busy, <PRO_SIRMAAM>.~
+@11 = ~(sigh) Just don't waste too much of my time. I am very busy, <SIRMAAM>.~
 @12 = ~Has there been anything odd going on around here?~
 @13 = ~Do you know where I might find some work in town?~
 @14 = ~Can you give me directions?~
@@ -41,7 +41,7 @@
 @40 = ~NP: For the usual supplies, I would suggest going to the Cracked Anvil in the city center. And that guy over there to my left, his name is Elchelor, sells various goods to fight werewolves.~ /*For normal supplies I would suggest the Cracked Anvil to the southeast.*/
 @41 = ~Could you answer another question?~
 @42 = ~That's all I need thank you.~
-@43 = ~Yes <PRO_SIRMAAM>. The docks are located just west of here. They are fairly safe, at least as safe as things can be in these times.~
+@43 = ~Yes <SIRMAAM>. The docks are located just west of here. They are fairly safe, at least as safe as things can be in these times.~
 @44 = ~What do you mean?~
 @45 = ~All right. I have a few more questions for you.~
 @46 = ~I've been hearing about strange things from Neverwinter Wood. Of course that might just be completely unrelated. It's just that there is this ranger, Ballard, who was talking about it here the other day. He seemed to be quite disturbed. If you want to know more I would ask Ballard. He's camped in a grove of trees to the north east of the inn.~ /*I've been hearing about strange things from Neverwinter Wood. Of course that might just be completely unrelated.*/

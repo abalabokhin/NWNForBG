@@ -7,7 +7,7 @@
 @6 = ~Tell me more about your story.~
 @7 = ~Do you have any advice or suggestions you can give me about my mission?~
 @8 = ~As you wish.~
-@9 = ~I would ask, <CHARNAME>, that you tell me about yourself first. I am eager to know what type of <PRO_MANWOMAN> I have allied myself with. Why do you serve this plague ravaged city? What possesses you to venture out into the streets amidst the bloated, swollen corpses and the burning funeral pyres?~ /*Why do you serve this plague ravaged city? What possesses you to venture out into the streets amidst the bloated, swollen corpses and the burning funeral pyres?*/
+@9 = ~I would ask, <CHARNAME>, that you tell me about yourself first. I am eager to know what type of <MANWOMAN> I have allied myself with. Why do you serve this plague ravaged city? What possesses you to venture out into the streets amidst the bloated, swollen corpses and the burning funeral pyres?~ /*Why do you serve this plague ravaged city? What possesses you to venture out into the streets amidst the bloated, swollen corpses and the burning funeral pyres?*/
 @10 = ~I have seen too much death and suffering from the plague to stand idly by.~
 @11 = ~I seek to forge a legend that will last for ever.~
 @12 = ~Aribeth has promised me gold and riches if I can help her in this.~
@@ -64,7 +64,7 @@
 @63 = ~You don't have to worry about that, <CHARNAME>. I'm eager to end this foul plague that is taking what rightfully belongs to the Silent Lord.~
 @64 = ~I told you earlier this was a matter for those of my Order, <CHARNAME>. But you have proven yourself to be an agent of the Silent Lord - death follows you wherever you go.~
 @65 = ~And even though the dwarves of Mithral Hall turned me away, I sense you will not do so.~
-@66 = ~You are not one of the <PRO_BROTHERSISTER>s of the Long Death, <CHARNAME> - but you are a monk, as I am. You understand the duties and responsibilites owed to one's Order.~
+@66 = ~You are not one of the <BROTHERSISTER>s of the Long Death, <CHARNAME> - but you are a monk, as I am. You understand the duties and responsibilites owed to one's Order.~
 @67 = ~I have not been completely honest with you about my reasons for coming to Neverwinter, <CHARNAME>. I came here in search of someone. Her name is Alaganda; like me, she was a disciple studying to enter the Order of the Long Death. We often trained together in anticipation of our initiation.~ /*Her name is Alaganda; like me, she was a disciple studying to enter the Order of the Long Death. We often trained together in anticipation of our initiation.*/
 @68 = ~I will not describe our initiation rituals to you, <CHARNAME>, but the Silent Lord claims many who undertake them. Only the few who survive, as I did, are welcomed into the Order of the Long Death. But Alaganda could not bear to face her own mortality, and on the morning of her initiation she fled, breaking the vows she swore when she first joined the Order.~ /*I will not describe our initiation rituals to you, <CHARNAME>, but the Silent Lord claims many who undertake them. Only the few who survive, as I did, are welcomed into the Order of the Long Death.*/
 @69 = ~And you followed her here?~

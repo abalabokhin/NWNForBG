@@ -1,4 +1,4 @@
-@0 = ~NP: What the<MALEFEMALE> What kind of goose is sharing a frying pan with me?~ /*Ooddle-olly, what's this <PRO_MANWOMAN>, who shares me frying pan?*/
+@0 = ~NP: What the<MALEFEMALE> What kind of goose is sharing a frying pan with me?~ /*Ooddle-olly, what's this <MANWOMAN>, who shares me frying pan?*/
 @1 = ~Uh, I'm <CHARNAME>. Who are you?~
 @2 = ~NP: My name doesn't matter, but who are you?~ /*My name isn't important.*/
 @3 = ~I can't understand you. What are you talking about?~

@@ -1,10 +1,10 @@
-@0 = ~Please, <PRO_SIRMAAM>! I beg of you, help my sister. Leesa's just a little girl.~ [NWLUC058]
+@0 = ~Please, <SIRMAAM>! I beg of you, help my sister. Leesa's just a little girl.~ [NWLUC058]
 @1 = ~I will help you, if I can.~
 @2 = ~I have no time for this.~
 @3 = ~I want to ask you some questions.~
 @4 = ~I might help you... if the price is right.~
 @5 = ~Goodbye.~
-@6 = ~Thank you, kind <PRO_SIRMAAM>. I'm so worried about Leesa. Before our mother died from the plague I promised her I'd watch out for my sister. When Luskan attacked we tried to sneak out of the city one night, but we couldn't get through. There were Luskan soldiers everywhere. We had to hide while they passed by. We hid for hours, it seemed.~ /*When Luskan attacked we tried to sneak out of the city one night, but we couldn't get through. There were Luskan soldiers everywhere. We had to hide while they passed by. We hid for hours, it seemed.*/
+@6 = ~Thank you, kind <SIRMAAM>. I'm so worried about Leesa. Before our mother died from the plague I promised her I'd watch out for my sister. When Luskan attacked we tried to sneak out of the city one night, but we couldn't get through. There were Luskan soldiers everywhere. We had to hide while they passed by. We hid for hours, it seemed.~ /*When Luskan attacked we tried to sneak out of the city one night, but we couldn't get through. There were Luskan soldiers everywhere. We had to hide while they passed by. We hid for hours, it seemed.*/
 @7 = ~Why won't anybody help me? She's just a little girl! Please, somebody find her. Please.~
 @8 = ~Please, I have no time for questions. Don't you understand? Leesa is missing! Please, help her. I beg you.~
 @9 = ~I... I have no gold to pay you. But there is something. A family heirloom. It's all I have left. You can have it if you bring back Leesa.~
@@ -27,12 +27,12 @@
 @26 = ~No, but I am still looking.~
 @27 = ~Forget it. I've changed my mind.~
 @28 = ~But... but you promised! Please, bring her back! Please, I beg you! Bring Leesa back to me!~
-@29 = ~Thank you, my <PRO_LADYLORD>. Thank you for bringing me back my little Leesa. I... I have no gold to give you, but I do have this cloak. It was a family heirloom. My mother said it was magic.~ [NWLUC056] /*I... I have no gold to give you, but I do have this cloak. It was a family heirloom. My mother said it was magic.*/
+@29 = ~Thank you, my <LADYLORD>. Thank you for bringing me back my little Leesa. I... I have no gold to give you, but I do have this cloak. It was a family heirloom. My mother said it was magic.~ [NWLUC056] /*I... I have no gold to give you, but I do have this cloak. It was a family heirloom. My mother said it was magic.*/
 @30 = ~Thank you.~
 @31 = ~Keep your cloak. You need it more than I do.~
 @32 = ~Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.~
 
-@34 = ~You... you are too kind, my <PRO_LADYLORD>. Thank you. For everything. Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.~ /*Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.*/
-@35 = ~I'm sorry, but I can't speak with you right now, <PRO_SIRMAAM>. I have to keep an eye on my little sister.~ [NWLUC059]
+@34 = ~You... you are too kind, my <LADYLORD>. Thank you. For everything. Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.~ /*Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.*/
+@35 = ~I'm sorry, but I can't speak with you right now, <SIRMAAM>. I have to keep an eye on my little sister.~ [NWLUC059]
 @36 = ~Leesa already vanished once. I don't want her to disappear on me again.~
 

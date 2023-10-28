@@ -9,7 +9,7 @@
 @8 = ~I thought so. All bluff and no stuff. Come back when you've got a spine.~
 @9 = ~Ah, that's pretty good. You're not so flimsy after all. How about some Dockside Dunn's, a rank bit of swill if I ever had some!~
 @10 = ~Bring it on!~
-@11 = ~Ha! Down after one! What kind of <PRO_MANWOMAN> are you? Pathetic. You just aren't worthy of my time. I thought as much. Take a walk, fool. I'm sure there's some porcelain for you to kiss around here somewhere.~ /*I thought as much. Take a walk, fool. I'm sure there's some porcelain for you to kiss around here somewhere.*/
+@11 = ~Ha! Down after one! What kind of <MANWOMAN> are you? Pathetic. You just aren't worthy of my time. I thought as much. Take a walk, fool. I'm sure there's some porcelain for you to kiss around here somewhere.~ /*I thought as much. Take a walk, fool. I'm sure there's some porcelain for you to kiss around here somewhere.*/
 @12 = ~Whoa! All right! That's not too bad. Round three then! Orc Blood Brew, and no plugging your nose!~
 @13 = ~This easy. Let's go!~
 @14 = ~Eh, should'a sat down when you had the chance. You just aren't up to snuff, as far as I'm concerned. I thought as much. Take a walk, fool. I'm sure there's some porcelain for you to kiss around here somewhere.~ /*Eh, should'a sat down when you had the chance. You just aren't up to snuff, as far as I'm concerned.*/
@@ -34,7 +34,7 @@
 @33 = ~Heh... I knew you couldn't... uh...~
 @34 = ~What is in Scurrd? What, indeed. Scurrd... just seems to find its way... to where it can do the most harm. It's truly vicious. It cannot be smelled by the elderly... it cannot be held by small children... It is Scurrd, and woe be to ye that take it to your tongue.~ /*What is in Scurrd? What, indeed. Scurrd... just seems to find its way... to where it can do the most harm. It's truly vicious.*/
 @35 = ~Who are you, fool? Don't you know not to go bothering a Bloodsailor while he's drinking?~ [NWJALE53]
-@36 = ~Hmm... do I know you? You wear the uniform, but I don't recognize your face. How long you been a Bloodsailor, <PRO_GIRLBOY>?~ [NWJALE52]
+@36 = ~Hmm... do I know you? You wear the uniform, but I don't recognize your face. How long you been a Bloodsailor, <GIRLBOY>?~ [NWJALE52]
 @37 = ~NP: [False] Recently. I was able to replace the plague victim.~ /*Not long. I replaced a plague victim.*/
 @38 = ~I'm just looking for information. That's all.~
 @39 = ~I'm no Bloodsailor. I'm acting as a city guard.~

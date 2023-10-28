@@ -3,7 +3,7 @@
 @2 = ~Who are you?~
 @3 = ~May I ask you some questions?~
 @4 = ~Goodbye.~
-@5 = ~I am Thurin, captain of the guard in the Blacklake district, <PRO_SIRMAAM>. Might I know who is asking?~
+@5 = ~I am Thurin, captain of the guard in the Blacklake district, <SIRMAAM>. Might I know who is asking?~
 @6 = ~I'm called <CHARNAME>.~
 @7 = ~My name is <CHARNAME>. Pleased to meet you, Captain Thurin.~
 @8 = ~I just <RACE> from the <CHARNAME> command.~
@@ -19,7 +19,7 @@
 @18 = ~You as well, <CHARNAME>. (sigh) If only I were not beset by problems, that is. What can I do for you?~
 @19 = ~I don't know such a team, I have my own problems... is there something that you wanted?~
 @20 = ~I am beset by enough problems, so I suppose it really doesn't matter. What would you have of me, stranger?~
-@21 = ~There's not much I can tell you about the plague, <PRO_SIRMAAM>. It's all we can do, currently, to keep Blacklake cordoned off from the rest of the city. I can't say that I feel good about it... all those poor souls desperate to get into this area, not even caring that they would spread the disease here.~ /*There's not much I can tell you about the plague, <PRO_SIRMAAM>. It's all we can do, currently, to keep Blacklake cordoned off from the rest of the city.*/
+@21 = ~There's not much I can tell you about the plague, <SIRMAAM>. It's all we can do, currently, to keep Blacklake cordoned off from the rest of the city. I can't say that I feel good about it... all those poor souls desperate to get into this area, not even caring that they would spread the disease here.~ /*There's not much I can tell you about the plague, <SIRMAAM>. It's all we can do, currently, to keep Blacklake cordoned off from the rest of the city.*/
 @22 = ~Work? If you're looking for work, perhaps you could be of assistance. Well, beyond trying to keep the plague out of the district, one of my men seems to have disappeared without a trace. I suppose that in itself wouldn't be so odd, considering the times, but I know this man too well. He's an old friend of mine named Samuel... and he wouldn't just leave.~ /*I suppose that in itself wouldn't be so odd, considering the times, but I know this man too well. He's an old friend of mine named Samuel... and he wouldn't just leave.*/
 @23 = ~Do you have any idea where he could be?~
 @24 = ~Have you had your men search for him?~
@@ -45,7 +45,7 @@
 @44 = ~Let me ask you something else.~
 @45 = ~I have no guarantee that you will even look for Samuel at all once we part ways. You will see the reward when I see him, and that's all.~
 
-@47 = ~Thank you, <PRO_SIRMAAM>. I can only hope that you find him safe.~
+@47 = ~Thank you, <SIRMAAM>. I can only hope that you find him safe.~
 @48 = ~Well, beyond trying to keep the plague out of the district, one of my men seems to have disappeared without a trace. I suppose that in itself wouldn't be so odd, considering the times, but I know this man too well. He's an old friend of mine named Samuel... and he wouldn't just leave.~ /*I suppose that in itself wouldn't be so odd, considering the times, but I know this man too well. He's an old friend of mine named Samuel... and he wouldn't just leave.*/
 @49 = ~What do you wish to know?~
 @50 = ~Greetings again, . Have you had any progress? Have you found Samuel?~
@@ -58,8 +58,8 @@
 @57 = ~Dead?! Ah, I see how you work. Everything neatly points to Meldanen. How convenient. I'll follow the evidence, but if it turns out you were involved, I'll see you hang.~
 @58 = ~I certainly hope that you find Samuel soon.~
 @59 = ~I shall have to see about dealing with the sorcerer, himself, then. Meldanen will not get away with this!~
-@60 = ~I hear that the sorcerer is dead. I shall have to take some men and make certain for myself. Farewell, <PRO_SIRMAAM>.~
-@61 = ~I hear that the sorcerer is dead. I shall have to take some men and make certain for myself. You, <PRO_SIRMAAM>, I hope not to see again.~
+@60 = ~I hear that the sorcerer is dead. I shall have to take some men and make certain for myself. Farewell, <SIRMAAM>.~
+@61 = ~I hear that the sorcerer is dead. I shall have to take some men and make certain for myself. You, <SIRMAAM>, I hope not to see again.~
 @62 = ~Samuel has already made it back to the barracks. I was quite surprised to hear what had happened to him... I didn't think the sorcerer had the gall in him.~
 @63 = ~Samuel said he was rescued by one of the new recruits. I'll wager it was you, hmm? Good work. I set aside 800 gold for his rescue. It's yours.~
 @64 = ~Are you sure you can't afford more? This is your friend I found, after all.~
@@ -69,8 +69,8 @@
 @68 = ~Here is the 800 gold pieces reward. It's a bit more than the guard can afford right now, obviously, but you've certainly earned it. Samuel is a close friend, after all.~
 @69 = ~True. I can add a bit of my own gold... 935 gp, then. But that is all I can afford. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
 
-@71 = ~I am far from wealthy, <PRO_SIRMAAM>, and as I said that is all the guard can spare. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
+@71 = ~I am far from wealthy, <SIRMAAM>, and as I said that is all the guard can spare. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
 @72 = ~Is that supposed to be intimidating? Considering that you've helped me greatly, I'll just forget that threat. Here is your 800 gp... take it and go. Now, if you'll excuse me, there's still much for me to deal with today.~
 @73 = ~Then take the coins. I wish I could pay you more, I am far from wealthy, <SIRMAAM>. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~
-@74 = ~You are far too kind, my <PRO_LADYLORD>. I shall make sure the guard knows of your service. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
+@74 = ~You are far too kind, my <LADYLORD>. I shall make sure the guard knows of your service. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~ /*Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.*/
 @75 = ~I'm sorry, but I'm really busy. Please excuse me.~

@@ -1,4 +1,4 @@
-@0 = ~Greetings, my <PRO_LADYLORD>. It is rare we see new faces come to drink with us at the Alliance Inn.~ [NWAEL052]
+@0 = ~Greetings, my <LADYLORD>. It is rare we see new faces come to drink with us at the Alliance Inn.~ [NWAEL052]
 @1 = ~You look familiar, somehow...~
 @2 = ~Greetings, Sir. My name is <CHARNAME>.~
 @3 = ~Who are you?~
@@ -49,7 +49,7 @@
 @48 = ~I trust that is all?~
 @49 = ~Excellent - I'm sure you'll find my goods of top quality and bottom price.~
 @50 = ~Not that it's truly any of your business, but I am seeking passage to Evermeet. The way is closed to me, however, and seeking an alternative route is proving difficult.~
-@51 = ~Hmmm. To get the task done would require someone with skill at stealth and guile. I am not positive you are the <PRO_MANWOMAN> for the job.~
+@51 = ~Hmmm. To get the task done would require someone with skill at stealth and guile. I am not positive you are the <MANWOMAN> for the job.~
 @52 = ~I could get the job done, I assure you.~
 @53 = ~Fine. Do it yourself, then.~ 
 @54 = ~Perhaps I shall, at that. Good day to you. If you do know of someone who has the skills I seek, however, do send them my way.~ /*If you do know of someone who has the skills I seek, however, do send them my way.*/
@@ -71,7 +71,7 @@
 @70 = ~I have been thinking about your offer...~
 @71 = ~Could I buy some equipment from you?~
 @72 = ~Oh? Have you changed your mind? Will you get the gems that I need?~
-@73 = ~How do you do, my <PRO_LADYLORD>? Have you had any luck acquiring the gems? Or is there something else you need?~ [NWAEL051]
+@73 = ~How do you do, my <LADYLORD>? Have you had any luck acquiring the gems? Or is there something else you need?~ [NWAEL051]
 @74 = ~Tell me who currently has these gems again.~
 @75 = ~I do have one of the gems right here.~
 @76 = ~I already have all the gems.~

@@ -3,6 +3,6 @@
 @2 = ~NP: I see you as a sign of peace for the Uthgardts. You want to make a deal with Moose's men?~ /*You come bearing an Uthgardt token of peace. Do you wish to negotiate with the people of the Elk?*/
 @3 = ~I wish to speak to your chieftain, Zokan Thunderer.~
 @4 = ~The only thing I want to negotiate is your death!~
-@5 = ~NP: You have the banner of peace above you, you seem to be a person of honor and nobility. Follow me. I'll take you to Zokan.~ /*You have come under a banner of peace and you look like a noble and trustworthy <PRO_MANWOMAN>.*/
-@6 = ~NP: You have a banner of peace over you, you seem to be an honest and honorable person. Go talk to Zokan. His rooms are in the center of the fortress.~ /*You have come under a banner of peace and you look like a noble and trustworthy <PRO_MANWOMAN>.*/
+@5 = ~NP: You have the banner of peace above you, you seem to be a person of honor and nobility. Follow me. I'll take you to Zokan.~ /*You have come under a banner of peace and you look like a noble and trustworthy <MANWOMAN>.*/
+@6 = ~NP: You have a banner of peace over you, you seem to be an honest and honorable person. Go talk to Zokan. His rooms are in the center of the fortress.~ /*You have come under a banner of peace and you look like a noble and trustworthy <MANWOMAN>.*/
 @7 = ~Taste the fury of the Uthgardt Elk tribe!~

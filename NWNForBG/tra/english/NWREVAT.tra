@@ -29,7 +29,7 @@
 @28 = ~No! You no say trolls eat Momma! Momma no be eaten or me lost! You find Momma.~
 @29 = ~NP: She's over there in the caves. The place where you go to help Jax. My hear, your talk.~ /*She be in cave in area. Same place you go for to help Jax. Me see you got key.*/
 @30 = ~Me pay you 300 gold. Me not have much else. That be all Momma give.~
-@31 = ~Oh, you good <PRO_MANWOMAN>. You find me Momma. Me tell you what me know. They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.~ /*They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.*/
+@31 = ~Oh, you good <MANWOMAN>. You find me Momma. Me tell you what me know. They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.~ /*They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.*/
 @32 = ~Here... I give you ring to show Momma. This me daddy's ring from when he die. Me not know him, but me Momma say he be nice quiet man. Me friend say he nagged to death, but me not understand what that mean. Go quick and help Momma be safe.~ /*Here... I give you ring to show Momma. This me daddy's ring from when he die. Me not know him, but me Momma say he be nice quiet man. Me friend say he nagged to death, but me not understand what that mean.*/
 
 @34 = ~Oh no! Now me never see Momma again! Me wish you could help. Me will never be same without Momma. Bye.~ /*Me wish you could help. Me will never be same without Momma. Bye.*/
@@ -55,6 +55,6 @@
 @54 = ~Okay, Momma say me have to go now. Bye bye.~
 
 @56 = ~NP: Thank you so much. It's good to have Mommy back. Hi, Mommy, I'm coming!~ /*Me wish me could give more. Thank you much. Me glad have Momma back. Hello Momma, me coming!*/
-@57 = ~Oh, you be best friend in whole world <PRO_LADYLORD>. I hope you come see me when you come to Waterdeep. Momma say me must go now. Bye bye.~ /*Oh, you be best friend in whole world <PRO_LADYLORD>. I hope you come see me when you come to Waterdeep.*/
+@57 = ~Oh, you be best friend in whole world <LADYLORD>. I hope you come see me when you come to Waterdeep. Momma say me must go now. Bye bye.~ /*Oh, you be best friend in whole world <LADYLORD>. I hope you come see me when you come to Waterdeep.*/
 @58 = ~Momma say we must go. Bye bye.~
 @59 = ~NP: My go find mommy. She's not gonna die.~ /*You lie! Me go find Momma. She no be dead.*/

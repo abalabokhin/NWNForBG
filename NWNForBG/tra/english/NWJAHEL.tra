@@ -4,7 +4,7 @@
 @3 = ~NP: What's your name?~ /*What's your name?*/
 @4 = ~No be scared. Me have questions.~
 @5 = ~NP: I'm sorry. I'm gonna go.~ /*Okay. Me go now.*/
-@6 = ~NP: Oh, you are so kind. My name is Jahil. And what is the name of such a lovely creature as you?~ /*Oh, you are so sweet. My name is Jaheel. And what do they call a handsome <PRO_GIRLBOY> such as yourself?*/
+@6 = ~NP: Oh, you are so kind. My name is Jahil. And what is the name of such a lovely creature as you?~ /*Oh, you are so sweet. My name is Jaheel. And what do they call a handsome <GIRLBOY> such as yourself?*/
 @7 = ~NP: My name is <CHARNAME>. It's very nice to meet you, Jahil.~ /*My name is <CHARNAME>. Pleased to meet you, Revat.*/
 @8 = ~You no ask name. You not need know.~
 @9 = ~NP: I'm sorry, I have to go.~ /*Excuse me, I must be going.*/
@@ -22,7 +22,7 @@
 @21 = ~NP: I need a good job.~ /*Me need good job.*/
 @22 = ~A fitting name for one as fascinating as you, <CHARNAME>. (sigh) I only wish my mind could dwell on more pleasant conversation. Is there something I can help you with?~
 @23 = ~A man of mystery. While I love an intrigue, today is just too bleak a moment in my life to give you proper attention. Can I help you?~
-@24 = ~NP: I wish I could help you, but my mind is too tired and it's very hard for me to concentrate on anything but my own problems.~ /*I wish I could help you, kind <PRO_MANWOMAN>, but my mind is overwrought and it is very difficult for me to focus on anything other than my own troubles.*/
+@24 = ~NP: I wish I could help you, but my mind is too tired and it's very hard for me to concentrate on anything but my own problems.~ /*I wish I could help you, kind <MANWOMAN>, but my mind is overwrought and it is very difficult for me to focus on anything other than my own troubles.*/
 @25 = ~NP: What happened to you?~ /*What happened here?*/
 @26 = ~NP: I'm not interested in your problems, I have to go.~ /*You beg, but me still kill you!*/
 @27 = ~Oh my, but you are a brave, powerful adventurer aren't you! If you want a job, maybe you could help me?~

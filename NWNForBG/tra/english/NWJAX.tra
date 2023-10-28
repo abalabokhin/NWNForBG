@@ -1,4 +1,4 @@
-@0 = ~Help! Attack! What? Who? Er... oh... um... you don't look like... nevermind. Hello <PRO_SIRMAAM>.~ [NWJAX050]
+@0 = ~Help! Attack! What? Who? Er... oh... um... you don't look like... nevermind. Hello <SIRMAAM>.~ [NWJAX050]
 @1 = ~You seem rather nervous. What's your name?~
 @2 = ~I don't look like who?~
 @3 = ~My name is Jax. Professor Jax, a famous archeologist don't you know. I am looking for knowledge about some ancient creatures. That's why I came here. Who are you?~
@@ -42,14 +42,14 @@
 @41 = ~I could help you look for this ancient tome.~
 @42 = ~I'm not really interested.~
 @43 = ~The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more. That is why it is so important that I find this proof.~ /*The money goes to pay for guards, supplies and equipment, as well as the expertise of other researchers. Without that money, I cannot learn more.*/
-@44 = ~Oh my <PRO_LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information. Just find me a tome that proves the creator race existed and that they built these ruins. Bring it back to me as quickly as you can.~ /*Oh my <PRO_LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information.*/
+@44 = ~Oh my <LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information. Just find me a tome that proves the creator race existed and that they built these ruins. Bring it back to me as quickly as you can.~ /*Oh my <LADYLORD>, that would be wonderful. And since I need this for my own financial gain, I would pay you 500 gold pieces and you can keep any treasure you find. Here is a key for the barracks. You can talk to my colleagues inside for more information.*/
 @45 = ~This sounds very dangerous. I think some money up front would be justified.~
 @46 = ~All right, I'm off.~
 @47 = ~Oh my. I was really hoping you could help. If you change your mind come talk to me again.~
-@48 = ~That seems reasonable. Here is 100 gp. That should seal the deal. Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
+@48 = ~That seems reasonable. Here is 100 gp. That should seal the deal. Be careful <GIRLBOY>. This has turned out to be a very difficult operation. Good luck.~ /*Be careful <GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
 
-@50 = ~I just can't afford to do that. I can only pay you when you bring the artfiact back. Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.~ /*I just can't afford to do that. I can only pay you when you bring the artfiact back.*/
-@51 = ~NP: Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*Be careful <PRO_GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
+@50 = ~I just can't afford to do that. I can only pay you when you bring the artfiact back. Be careful <GIRLBOY>. This has turned out to be a very difficult operation. Good luck.~ /*I just can't afford to do that. I can only pay you when you bring the artfiact back.*/
+@51 = ~NP: Be careful,<SIRMAAM> . It will be a very difficult operation. Good luck to you.~ /*Be careful <GIRLBOY>. This has turned out to be a very difficult operation. Good luck.*/
 @52 = ~Oh, hello there again. Er... something you needed? I am quite busy with my research, you know.~ [NWJAX051]
 @53 = ~What's your name again?~
 @54 = ~What kind of research do you do here?~
@@ -60,7 +60,7 @@
 @59 = ~This wouldn't happen to be the book you are looking for, would it?~
 @60 = ~Goodbye.~
 @61 = ~Oh dear, your memory is shorter than mine! As I said before, I am looking for an ancient tome I need. So far I have had little luck. If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.~ /*If I could get my hands on a book that proves these ruins were built by the creator race, then I could get the rest of my grant money. I need to find a Complete History of the Ruins.*/
-@62 = ~Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now. Well, excellent job young <PRO_GIRLBOY>. So... I trust 500 gold pieces is ample reward for recovering this book?~ /*Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now.*/
+@62 = ~Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now. Well, excellent job young <GIRLBOY>. So... I trust 500 gold pieces is ample reward for recovering this book?~ /*Er... um... oh, yes! Astounding! How did you get past the trolls? No, it is of no import. What matters is you have it now.*/
 @63 = ~NP: 1500 gold? You wont believe the hell I went through to get this.~ /*1000 gold? Are you out of your mind? I'm not giving you that much!*/
 @64 = ~NP: Youd better shell out a lot, or Ill put you through what I went through.~ /*You better fork over more than that or you'll get to experience all the pain I suffered recovering the darn thing.*/
 @65 = ~Certainly, that sounds fine by me.~
@@ -72,12 +72,12 @@
 @71 = ~NP: I agree, give me money.~ /*Me not pay you moneys.*/
 @72 = ~Oh my, you must have had a rough time. No need to get jumpy. Here is 750 gp. It's all that I have left.~
 @73 = ~All right. 750 gold pieces it is.~
-@74 = ~Wonderful. I can hardly wait to get back to Waterdeep. Those snobs are going to choke when they see this! Good luck <PRO_GIRLBOY>.~
+@74 = ~Wonderful. I can hardly wait to get back to Waterdeep. Those snobs are going to choke when they see this! Good luck <GIRLBOY>.~
 @75 = ~I am off for Waterdeep. Excuse me.~ [NWJAX055]
 
 @77 = ~No! It is of no value to you, but I simply must have it. Please!~
 @78 = ~Er... good. I must return to Waterdeep now. Good luck to you. I am off for Waterdeep. Excuse me.~ [NWJAX055] /*Er... good. I must return to Waterdeep now. Good luck to you.*/
-@79 = ~NP: Wait! Please,<SIRMAAM> ! 2000 coins, I cant take it anymore!~ /*Wait! Please, my <PRO_LADYLORD>! 1000 gp, no more!*/
+@79 = ~NP: Wait! Please,<SIRMAAM> ! 2000 coins, I cant take it anymore!~ /*Wait! Please, my <LADYLORD>! 1000 gp, no more!*/
 @80 = ~All right. 750 gold pieces it is.~
 @81 = ~Nope, I'm keeping it.~
 @82 = ~Part of me wishes the trolls got you. Oh my, I can't believe I said that. I've got to get back to civilization.~
@@ -91,6 +91,6 @@
 @90 = ~NP: I believe the ruins are under the local cave system. The book must be in there somewhere.~ /*I think there are ruins underneath the cave systems in this area. The book should be in there somewhere.*/
 @91 = ~Okay, goodbye.~
 @92 = ~Er... um... well I guess there's not much else to say. Keep hunting.~
-@93 = ~I paid an advance already, dear <PRO_MANWOMAN>. I expect a get-to-it attitude for that kind of money. Is there anything else?~
+@93 = ~I paid an advance already, dear <MANWOMAN>. I expect a get-to-it attitude for that kind of money. Is there anything else?~
 @94 = ~Oh, I don't think you understand how important this is. This could really help our understanding of the historical roots of society.~
-@95 = ~NP: Good luck in your search<SIRMAAM> .~ /*Good luck in the search young <PRO_GIRLBOY>.*/
+@95 = ~NP: Good luck in your search<SIRMAAM> .~ /*Good luck in the search young <GIRLBOY>.*/

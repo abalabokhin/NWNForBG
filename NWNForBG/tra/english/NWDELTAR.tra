@@ -1,4 +1,4 @@
-@0 = ~NP: Wow! You don't look like a Maugrim supporter to me. You're not one of those, are you?~ [NWDELT50] /*Oh, my! You don't strike me as the type of <PRO_MANWOMAN> who would be one of Maugrim's followers. You're not, are you?*/
+@0 = ~NP: Wow! You don't look like a Maugrim supporter to me. You're not one of those, are you?~ [NWDELT50] /*Oh, my! You don't strike me as the type of <MANWOMAN> who would be one of Maugrim's followers. You're not, are you?*/
 @1 = ~Are you a prisoner here?~
 @2 = ~Stand back! I'll have no tricks out of you!~
 @3 = ~No, I'm certainly not one of the cultists.~
@@ -9,8 +9,8 @@
 @8 = ~Would you be able to find your way out on your own?~
 @9 = ~I'm not here to rescue you.~
 @10 = ~Oh, I'm quite harmless in this cell. We designed it especially to hold casters... though I never thought I would be held in one. My name is Deltagar Zhelhund, and Maugrim has imprisoned me for refusing to join him. Am I free, now?~
-@11 = ~That is quite a relief, then. My name is Deltagar Zhelhund, and Maugrim has kept me prisoner here for refusing to join his cause. Might I be free to go, now, <PRO_SIRMAAM>?~
-@12 = ~A ruse? Do you believe Maugrim stocks his cells with his cultists on the off chance that someone might invade the Host Tower and free them? Please, <PRO_SIRMAAM>... all I want to do is get out of here.~
+@11 = ~That is quite a relief, then. My name is Deltagar Zhelhund, and Maugrim has kept me prisoner here for refusing to join his cause. Might I be free to go, now, <SIRMAAM>?~
+@12 = ~A ruse? Do you believe Maugrim stocks his cells with his cultists on the off chance that someone might invade the Host Tower and free them? Please, <SIRMAAM>... all I want to do is get out of here.~
 @13 = ~NP: I don't trust you. Die!~ /*I don't trust you. Time to die!*/
 @14 = ~I shall tell you whatever I can. I admit, however, that I know little of what has occurred since Maugrim put me in the cell.~
 @15 = ~What happened here in the tower?~
@@ -43,7 +43,7 @@
 @42 = ~So you won't help me, then?~
 @43 = ~Then forget it. Leave, while you can.~
 @44 = ~Then I am forced to kill you, I guess.~
-@45 = ~Thank you. Thankfully I can still teleport away from here... and return to fight Maugrim later. I wish you well, <PRO_SIRMAAM>.~
+@45 = ~Thank you. Thankfully I can still teleport away from here... and return to fight Maugrim later. I wish you well, <SIRMAAM>.~
 @46 = ~Maugrim came to us many months ago, though I do not know from where. He claimed to have uncovered some mysterious power... power that he would share with us. He was very secretive about the nature of this power, of course, but Arklem was too eager to care. Maugrim joined the Brotherhood and began training students. We did not know it, but each of the students he taught surely fell under his sway. They joined him in worshipping this power of his, and his cult spread.~ /*He was very secretive about the nature of this power, of course, but Arklem was too eager to care. Maugrim joined the Brotherhood and began training students.*/
 @47 = ~Well, on the surface it would look like he wants to use the resources of the wizards in some great war he is concocting. He intends to invade Neverwinter, of that I have little doubt even if I don't know what he's done in recent weeks. It's not power that he seeks specifically, however... something is in Neverwinter that he seeks.~ /*He intends to invade Neverwinter, of that I have little doubt even if I don't know what he's done in recent weeks. It's not power that he seeks specifically, however... something is in Neverwinter that he seeks.*/
 @48 = ~What is this power that he worships?~
@@ -56,7 +56,7 @@
 @55 = ~From what I gathered, Maugrim has the support of over half of the wizards in the Host Tower. Mostly the young ones... but they have considerable numbers. I suspect he has sent most of them out throughout the North to search for his precious words... but no doubt there are many left here. I heard that Valinda Shadowmantle joined his side before I fell. If that's true, she will be of great use to him, she being an Overwizard herself.~ /*I heard that Valinda Shadowmantle joined his side before I fell. If that's true, she will be of great use to him, she being an Overwizard herself.*/
 @56 = ~Who is Valinda Shadowmantle?~
 @57 = ~In Arkleth's sanctum, no doubt, atop the North Tower. Getting there will be somewhat problematic, however. If you can find Valinda Shadowmantle, I suspect that she would have a rune with access to the sanctum. It may be your only way there.~ /*If you can find Valinda Shadowmantle, I suspect that she would have a rune with access to the sanctum. It may be your only way there.*/
-@58 = ~I do not know what sort of <PRO_MANWOMAN> you are. I, myself, have done much in the name of the Brotherhood that many would consider evil. Whether you agree or not is not my concern. I will not betray my oaths... not for Maugrim, and not for you. I am grateful for your help and will certainly not betray you... but I must go my own way and help my Brethren as I can.~ /*Whether you agree or not is not my concern. I will not betray my oaths... not for Maugrim, and not for you. I am grateful for your help and will certainly not betray you... but I must go my own way and help my Brethren as I can.*/
+@58 = ~I do not know what sort of <MANWOMAN> you are. I, myself, have done much in the name of the Brotherhood that many would consider evil. Whether you agree or not is not my concern. I will not betray my oaths... not for Maugrim, and not for you. I am grateful for your help and will certainly not betray you... but I must go my own way and help my Brethren as I can.~ /*Whether you agree or not is not my concern. I will not betray my oaths... not for Maugrim, and not for you. I am grateful for your help and will certainly not betray you... but I must go my own way and help my Brethren as I can.*/
 @59 = ~I cannot. You obviously have considerable ability or you wouldn't have gotten this far... I wish you well and pray that Maugrim suffers at your hands.~
 @60 = ~When Maugrim finally tipped his hand, it was too late for us to do anything but try to fight back. The Tower was his... and, along with it, Luskan.~
 @61 = ~I do not know, exactly. Some old god, perhaps? A demon? He did not reveal its nature to anyone but Arklem, and Arklem was very excited about the possibilities.~

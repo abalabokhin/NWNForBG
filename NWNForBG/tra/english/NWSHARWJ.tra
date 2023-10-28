@@ -1,4 +1,4 @@
-@0 = ~NP: Yes,<SIRMAAM> . Do you need something?~ [NWSHAR50] /*Yes, <PRO_SIRMAAM>. Is there something you need?*/
+@0 = ~NP: Yes,<SIRMAAM> . Do you need something?~ [NWSHAR50] /*Yes, <SIRMAAM>. Is there something you need?*/
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~Talk? About what, <CHARNAME>?~
@@ -116,7 +116,7 @@
 @115 = ~I wouldn't know where to begin. I suppose I could tell you something about Blacklake, if you like... I know that best.~
 @116 = ~Tell me about the Blacklake district.~
 @117 = ~NP: Then I have no questions.~ /*That's all the questions I have.*/
-@118 = ~Not really. You're a grown <PRO_MANWOMAN>. I'm sure you can handle yourself and even lead little old me, no?~
+@118 = ~Not really. You're a grown <MANWOMAN>. I'm sure you can handle yourself and even lead little old me, no?~
 @119 = ~Plenty. It is full near to bursting with rich, frightened nobles who would rather wall off the district from everyone else and pretend the rest of the city doesn't exist than actually try to help. There are those within the district who are trying to rally the rich to aid the rest of the city, but their cries mostly fall on deaf ears. One day the plague will come to them in force, and they shall regret their selfishness.~ /*Plenty. It is full near to bursting with rich, frightened nobles who would rather wall off the district from everyone else and pretend the rest of the city doesn't exist than actually try to help.*/
 @120 = ~There is one powerful nobleman by the name of Meldanen... he's a sorcerer with a fearsome reputation who lives in Blacklake. If anyone might, he might know something about what's going on.~
 @121 = ~Anything else?~
@@ -245,16 +245,16 @@
 @244 = ~Because I told you to and you work for me, that's why.~
 @245 = ~I suppose I could pay you, if you like.~
 @246 = ~Because I love listening to your lovely voice?~
-@247 = ~Oh-ho? So <CHARNAME> puts on a pleasant tone, and I am supposed to jump to please <PRO_HIMHER>, is that it? Ha ha! I'll tell you what, <CHARNAME>. I'll tell you your tale... if you promise to listen attentively and be a proper audience.~ /*I'll tell you what, <CHARNAME>. I'll tell you your tale... if you promise to listen attentively and be a proper audience.*/
+@247 = ~Oh-ho? So <CHARNAME> puts on a pleasant tone, and I am supposed to jump to please <HIMHER>, is that it? Ha ha! I'll tell you what, <CHARNAME>. I'll tell you your tale... if you promise to listen attentively and be a proper audience.~ /*I'll tell you what, <CHARNAME>. I'll tell you your tale... if you promise to listen attentively and be a proper audience.*/
 @248 = ~I can do that.~
 @249 = ~Oh, get on with it already.~
 @250 = ~Bah! Forget it, then.~
-@251 = ~NP: OK OK. Means<MALEFEMALE> with his heroic reputation is snapping his fingers, and I have to be ready, so what? Ha ha! That's what I'll tell you<CHARNAME> . I'll tell you your story if you promise to listen carefully.~ /*I see, I see. So the tough <PRO_MANWOMAN> snaps <PRO_HISHER> fingers, and I better shape up, is that it? Ha ha!*/
+@251 = ~NP: OK OK. Means<MALEFEMALE> with his heroic reputation is snapping his fingers, and I have to be ready, so what? Ha ha! That's what I'll tell you<CHARNAME> . I'll tell you your story if you promise to listen carefully.~ /*I see, I see. So the tough <MANWOMAN> snaps <HISHER> fingers, and I better shape up, is that it? Ha ha!*/
 @252 = ~Pay me? You think I do it for the coin I receive in a tavern, such as it is? Certainly not. I do it for the audience! I'll tell you what, <CHARNAME>. I'll tell you your tale... if you promise to listen attentively and be a proper audience.~ /*Pay me? You think I do it for the coin I receive in a tavern, such as it is? Certainly not. I do it for the audience!*/
 @253 = ~Mmmm... tempting, I must admit. Perhaps I should ask you to remove your tunic while I talk, so we could be equal? Ha ha! I'll tell you what, <CHARNAME>. I'll tell you your tale... if you promise to listen attentively and be a proper audience.~ /*Mmmm... tempting, I must admit. Perhaps I should ask you to remove your tunic while I talk, so we could be equal? Ha ha!*/
-@254 = ~Well, that's good! I'll hold you to it, then. But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <PRO_HISHER> search for the Words of Power?~ /*But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <PRO_HISHER> search for the Words of Power?*/
+@254 = ~Well, that's good! I'll hold you to it, then. But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <HISHER> search for the Words of Power?~ /*But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <HISHER> search for the Words of Power?*/
 @255 = ~I think I know that one.~
-@256 = ~Impatient, are we? I'll take that as an agreement, then, and I'll hold you to it. But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <PRO_HISHER> search for the Words of Power?~ /*But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <PRO_HISHER> search for the Words of Power?*/
+@256 = ~Impatient, are we? I'll take that as an agreement, then, and I'll hold you to it. But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <HISHER> search for the Words of Power?~ /*But what story should I tell, then? Shall I tell a tale of the great <CHARNAME>, savior of Neverwinter, and <HISHER> search for the Words of Power?*/
 @257 = ~Ha ha! I'm surprised you even asked in the first place, then. Why you think I would waste breath on someone who can't listen is beyond me. So fair enough, then... let's continue the creation of your own tale, yes?~ /*Ha ha! I'm surprised you even asked in the first place, then. Why you think I would waste breath on someone who can't listen is beyond me.*/
 @258 = ~Not like I tell it, believe me. You're probably right, however... the subject matter would be a bit familiar, and I'm a bit fuzzy on the ending. Hmm. How about the sad tale of the great Lady Aribeth? Torn between love and honor, fallen from the grace of Tyr?~ /*Hmm. How about the sad tale of the great Lady Aribeth? Torn between love and honor, fallen from the grace of Tyr?*/
 @259 = ~That's not very funny.~

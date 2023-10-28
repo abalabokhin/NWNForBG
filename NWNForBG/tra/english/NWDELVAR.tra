@@ -1,4 +1,4 @@
-@0 = ~I know you! You're <CHARNAME>, right? You're that <PRO_RACE> who's working for Aarin Gend, aren't you?~
+@0 = ~I know you! You're <CHARNAME>, right? You're that <RACE> who's working for Aarin Gend, aren't you?~
 @1 = ~How do you know my name?~
 @2 = ~That's right. I'm <CHARNAME>. Who are you?~
 @3 = ~My name is none of your business.~
@@ -40,7 +40,7 @@
 @39 = ~NP: Where can I find this descent?~ /*Where can I find this castle?*/
 @40 = ~NP: It's pretty funny<CHARNAME> . I pride myself on being a good tracker. I've *never* lost my way in the woods, but I can't explain to you where I stumbled upon this descent... There must have been some kind of spell working that confused me. Maybe there is some kind of magical guard that prevents me from remembering where I saw this staircase.~ /*That's the funny thing, <CHARNAME>. I pride myself on being a great tracker. I *never* get lost but I couldn't even begin to tell you where I stumbled across that portal...*/
 @41 = ~But the good news is that most of these protection wards are one-shot deals. If you manage to find the clearing with the glittering columns you probably won't have to worry about the same thing happening to you.~
-@42 = ~NP: I don't know you, but I heard that you work with<CHARNAME> , right? You<CLASS> and you work for Aarin Gend, right?~ /*I know you! You're <CHARNAME>, right? You're that <PRO_RACE> who's working for Aarin Gend, aren't you?*/
+@42 = ~NP: I don't know you, but I heard that you work with<CHARNAME> , right? You<CLASS> and you work for Aarin Gend, right?~ /*I know you! You're <CHARNAME>, right? You're that <RACE> who's working for Aarin Gend, aren't you?*/
 @43 = ~NP: How do you know this name?~ /*How do you know my name?*/
 @44 = ~NP: It's right. I work with<CHARNAME> . And who are you?~ /*That's right. I'm <CHARNAME>. Who are you?*/
 @45 = ~Hello again, <CHARNAME>. I hope your mission is going well, not that's it any of my business. Anything you find out should be reported directly to Aarin Gend himself.~

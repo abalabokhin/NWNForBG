@@ -14,14 +14,14 @@
 @13 = ~What kind of lawyer are you! I don't want no trouble! I told you everythin' I know! Geez, you're as bad as Griff. He was always picking fights!~
 @14 = ~Maybe it was Griff who started the fight in the first place.~
 @15 = ~That's all I know. I don't even understand why they need me at the trial. I wish I didn't have to go.~
-@16 = ~Hey, you're all right <PRO_BROTHERSISTER>. Good luck in that trial... and thanks for the drink.~
+@16 = ~Hey, you're all right <BROTHERSISTER>. Good luck in that trial... and thanks for the drink.~
 @17 = ~No, they was already fighting when I got there. I never thought it would end up with Griff dead and me having to go to that Uthgardt's trial!~
 @18 = ~Maybe. He was a real son of a bitch sometimes. And he hated the Uthgardt. Figured they were nothing but drunken savages. He was always looking for an excuse to make trouble for them. But it ain't my job to find out who's to blame, is it? That's your job. So instead of threatening me, why don't you leave me alone and go do your job?~ /*Maybe. He was a real son of a bitch sometimes. And he hated the Uthgardt. Figured they were nothing but drunken savages. He was always looking for an excuse to make trouble for them.*/
 @19 = ~Hey, no hard feelings. Bartender - a drink for my friend Lodar, please. I'm buying.~
 @20 = ~Hey, I remember you! You're that lawyer. Mighty kind of you to buy me that drink.~
 @21 = ~How about a refill? Bartender, bring me another drink for Lodar.~
 @22 = ~Anything else you can tell me about the trial?~
-@23 = ~Thanks, I needed that. Too bad you're trying to get Griff's killer off... I kind of like you. You're a nice <PRO_MANWOMAN>. Not like Griff. He was always getting into trouble. Picking fights, that kind of thing. Kind of a racist, too. Always going on about the Uthgardt being drunks and thieves and such.~ /*He was always getting into trouble. Picking fights, that kind of thing. Kind of a racist, too. Always going on about the Uthgardt being drunks and thieves and such.*/
+@23 = ~Thanks, I needed that. Too bad you're trying to get Griff's killer off... I kind of like you. You're a nice <MANWOMAN>. Not like Griff. He was always getting into trouble. Picking fights, that kind of thing. Kind of a racist, too. Always going on about the Uthgardt being drunks and thieves and such.~ /*He was always getting into trouble. Picking fights, that kind of thing. Kind of a racist, too. Always going on about the Uthgardt being drunks and thieves and such.*/
 @24 = ~Maybe Griff's to blame for the fight with that Uthgardt.~
 @25 = ~Nah, I told you pretty much everything I know already. If you need anything else I'll be right here. Until the trial is over they've got me off active duty, so I plan on spending my time here in the drinking house.~ /*If you need anything else I'll be right here. Until the trial is over they've got me off active duty, so I plan on spending my time here in the drinking house.*/
 @26 = ~Maybe, but I shouldn't be speaking ill of the dead. Griff had some ugly secrets, but now's not the time to drag it all out.~
@@ -37,7 +37,7 @@
 @36 = ~I heard the Uthgardt aren't real happy about Neurik executing Rolgan. I even heard they got the body out there on a stake over near Tyr's Temple. That's a pretty harsh sentence. But like Neurik said, the trial is done and justice was served.~ /*I heard the Uthgardt aren't real happy about Neurik executing Rolgan. I even heard they got the body out there on a stake over near Tyr's Temple. That's a pretty harsh sentence.*/
 @37 = ~I'm here, yer honor.~
 @38 = ~Well, sir, it was night and Griff was outside the barracks. All of a sudden we heard this shout, and we run out and Griff and that Uthgardt there are going at each other with weapons drawn. Before we could step in, that savage stabs Griff right in the gut and runs off. We ran to get the cleric, but by then it were too late. Griff was gone. That savage killed him!~ /*Before we could step in, that savage stabs Griff right in the gut and runs off. We ran to get the cleric, but by then it were too late. Griff was gone. That savage killed him!*/
-@39 = ~I'm ready for your questions, <PRO_LADYLORD> <CHARNAME>.~
+@39 = ~I'm ready for your questions, <LADYLORD> <CHARNAME>.~
 @40 = ~Did you see who actually started the fight?~
 @41 = ~Was the Uthgardt in his right mind, or did he seem intoxicated to you?~
 @42 = ~Isn't it true that Griff spiked Rolgan's drink earlier that evening?~

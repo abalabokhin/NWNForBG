@@ -1,4 +1,4 @@
-@0 = ~NP: What the <DAYNIGHT>, eh, sir? Greetings. You seem to have seen a lot.~ /*Good <DAYNIGHT> to you, <PRO_SIRMAAM>. You look like the kind of person who has seen many interesting things.*/
+@0 = ~NP: What the <DAYNIGHT>, eh, sir? Greetings. You seem to have seen a lot.~ /*Good <DAYNIGHT> to you, <SIRMAAM>. You look like the kind of person who has seen many interesting things.*/
 @1 = ~I have seen a lot in my adventures.~
 @2 = ~As a tax collector I get to visit with a variety of people.~
 @3 = ~Why do you say that?~

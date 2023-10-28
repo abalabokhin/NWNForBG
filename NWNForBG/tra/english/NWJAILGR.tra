@@ -1,7 +1,7 @@
-@0 = ~Just hold on there, <PRO_SIRMAAM>. This here's the prison, and it's for the prisoners, see? You better be speaking to me if you want to be speaking to them.~
+@0 = ~Just hold on there, <SIRMAAM>. This here's the prison, and it's for the prisoners, see? You better be speaking to me if you want to be speaking to them.~
 @1 = ~Lord Nasher sent me to interrogate the prisoner.~
 @2 = ~Out of my way or you'll be the one rotting in a cell!~
-@3 = ~NP: Oh, Nasher said hed come here<MALEFEMALE> . Its you, right? come through,<SIRMAAM> .~ /*Oh, you must be that <PRO_MANWOMAN> Nasher sent down, right? Go on in, <PRO_SIRMAAM>.*/
+@3 = ~NP: Oh, Nasher said hed come here<MALEFEMALE> . Its you, right? come through,<SIRMAAM> .~ /*Oh, you must be that <MANWOMAN> Nasher sent down, right? Go on in, <SIRMAAM>.*/
 @4 = ~Now don't be gettin' all upset now! I'm just doin' me job! You can't just waltz in here and... oh, wait a minute!~
-@5 = ~NP: You<MALEFEMALE> from Nasher, come to visit the prisoner? Come on in.~ /*You're that <PRO_MANWOMAN> Nasher sent to check on the prisoner, ain't you? Go on in.*/
+@5 = ~NP: You<MALEFEMALE> from Nasher, come to visit the prisoner? Come on in.~ /*You're that <MANWOMAN> Nasher sent to check on the prisoner, ain't you? Go on in.*/
 @6 = ~You're the one Nasher sent to check on the prisoner, ain't you? Go on in.~

@@ -1,4 +1,4 @@
-@0 = ~I am geasssed, <PRO_RACE> crreaturre, to asssk of you a riddle. Anssswer it correctly and you may passsss me unharmed.~
+@0 = ~I am geasssed, <RACE> crreaturre, to asssk of you a riddle. Anssswer it correctly and you may passsss me unharmed.~
 @1 = ~I'd rather kill you now!~
 @2 = ~Ask me your riddle, then.~
 @3 = ~Nevermind, then. I'll go elsewhere.~
@@ -11,9 +11,9 @@
 @10 = ~30.~
 @11 = ~40.~
 @12 = ~45.~
-@13 = ~I ssseee. Do, please, attempt to passss me, <PRO_RACE> fool. I do ssssso wish to tasssste your heart!~
+@13 = ~I ssseee. Do, please, attempt to passss me, <RACE> fool. I do ssssso wish to tasssste your heart!~
 @14 = ~That issss correct. A childissshly ssssimple riddle. You may passsss. But... sssshould you wish a prizsse, ssssspeak to me again!~
-@15 = ~You are wrong, sssstupid <PRO_RACE> creature! Ssssso wrong! And now we dancsssse!!~
+@15 = ~You are wrong, sssstupid <RACE> creature! Ssssso wrong! And now we dancsssse!!~
 @16 = ~Wrong you are, fool! You counted each knight twicsssse!! On one sssside, the knight hassss already clinked his glassss!! Now we dancssse!!~
 @17 = ~Ssssso... you wish my prize, do you? Do you wish to ansssswer my ssssecond riddle for it? Or shall we dancsssse?~
 @18 = ~Let's fight! I'm tired of riddles!~
@@ -32,7 +32,7 @@
 @31 = ~12 trinkets, 5 girls.~
 @32 = ~14 trinkets, 5 girls.~
 @33 = ~Me head hurts! Me change mind! No riddles!~
-@34 = ~Pfeh, <PRO_RACE> fool! I shall give you a hint though I doubt you will be able to anssswer my riddle, regardlesss! The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!~ /*The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!*/
+@34 = ~Pfeh, <RACE> fool! I shall give you a hint though I doubt you will be able to anssswer my riddle, regardlesss! The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!~ /*The number of trinketsss mussst be evenly divisible by the number of girlsss as *well* asss by the number of familiesss and the number of sharersss once one is eliminated!*/
 @35 = ~Never! Ansssswer or do not, fool!~
 @36 = ~Sssss! You are correct! Here isss your gift! Now begone!!~
 @37 = ~Passss and begone!~

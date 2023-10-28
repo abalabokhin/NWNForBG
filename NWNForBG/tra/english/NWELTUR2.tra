@@ -19,7 +19,7 @@
 @18 = ~I'm looking for work. Do you know of any?~
 @19 = ~I need some directions, actually.~
 @20 = ~NP: Can you remind me of this work of finding books?~ /*Can you remind me about that tome-recovery job?*/
-@21 = ~NP: I wish you an enjoyable <DAYNIGHT>, <SIRMAAM>. Please come back again.~ /*I wish you a good <DAYNIGHTALL>, <PRO_SIRMAAM>. Please come back again.*/
+@21 = ~NP: I wish you an enjoyable <DAYNIGHT>, <SIRMAAM>. Please come back again.~ /*I wish you a good <DAYNIGHTALL>, <SIRMAAM>. Please come back again.*/
 @22 = ~NP: Ah, Tom of Fire! This will be a wonderful addition to my collection. Thank you very much, and now let's talk about the reward. Here's your 2,000 gold pieces, as agreed.~ /*Well, the Tome of Fire! That will be a nice addition to my collection. Thank you very much, and now for your reward.*/
 @23 = ~NP: Yeah, Tom Ice. Another fine piece of work to add to my collection. Thank you for that. Now let's talk about the reward. Here's your 2,000 gold pieces, as agreed.~ /*Ah, the Tome of Ice. Another fine work to add to my collection. I thank you for this.*/
 @24 = ~NP: Oh, this is one delightful book I'd love to review, I suppose. That's the one that really gets me excited. And for you.... Here's your 2,000 gold pieces, as agreed.~ /*Oh, this shall be an exciting tome to page through, I would say. This makes me happy indeed. And for you...*/

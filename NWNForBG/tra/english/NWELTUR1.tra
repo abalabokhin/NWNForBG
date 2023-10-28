@@ -2,7 +2,7 @@
 @1 = ~I need some spellcasting equipment.~
 @2 = ~Farewell, then.~
 @3 = ~Yes, this will do quite well. Come, let us take a look at what we have to offer you then, shall we?~
-@4 = ~NP: I wish you have a good time<DAYNIGHT> ,<SIRMAAM> . Please come again.~ /*I wish you a good <DAYNIGHTALL>, <PRO_SIRMAAM>. Please come back again.*/
+@4 = ~NP: I wish you have a good time<DAYNIGHT> ,<SIRMAAM> . Please come again.~ /*I wish you a good <DAYNIGHTALL>, <SIRMAAM>. Please come back again.*/
 @5 = ~Well, hello, <CHARNAME>. I had heard there was a new magic adept in service to the city. The guild of the Many-Starred Cloak welcomes you.~ [NWELT052]
 @6 = ~What kind of guild is this?~
 @7 = ~I would like to join the guild.~

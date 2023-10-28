@@ -3571,7 +3571,7 @@ Casting Time: 6-
 Area of Effect: 15-ft. radius
 Saving Throw: None
 
-A Dispel Magic spell removes magical effects upon anyone within the area. This includes effects given from spells, potions and certain magical items such as wands. Unlike Dispel Magic, this spell removes all protective magical effects, such as Spell Turning or magical armor or weapons. The chance of the dispel succeeding is determined by the level of the caster and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of the Dispel Magic is above the original caster, <PRO_HISHER> chance of success increases by 5%. For every level that the caster of Dispel Magic is below the original caster, <PRO_HISHER> chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 5% chance of success or failure. Thus, if a caster is 10 levels higher than the magic <PRO_HESHE> is trying to dispel, there is only a 5% chance of failure. Similarly if the caster is 4 levels lower than the magic <PRO_HESHE> is trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the caster.~
+A Greater Displelling spell removes magical effects upon anyone within the area. This includes effects given from spells, potions and certain magical items such as wands. Unlike Dispel Magic, this spell removes all protective magical effects, such as Spell Turning or magical armor or weapons. The chance of the dispel succeeding is determined by the level of the caster and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of the Dispel Magic is above the original caster, the chance of success increases by 5%. For every level that the caster of Dispel Magic is below the original caster, the chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 5% chance of success or failure. Thus, if a caster is 10 levels higher than the magic he/she is trying to dispel, there is only a 5% chance of failure. Similarly if the caster is 4 levels lower than the magic he/she is trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the caster.~
 @103233 = ~The fight begins~
 @103234 = ~Former Guard~
 @103235 = ~History of the Creator Races~
@@ -6219,7 +6219,7 @@ You may keep this letter for a fortnight, and then you will be tested on what yo
 @105721 = ~Uncas~
 @105722 = ~Orc Scout~
 @105723 = ~Guzud~
-@105758 = ~Stupid <PRO_RACE> scum! Me be Guzud, mighty Orc warrior! You die now!~
+@105758 = ~Stupid <RACE> scum! Me be Guzud, mighty Orc warrior! You die now!~
 @105759 = ~Stop! Guzud surrender! You too strong!~
 @105760 = ~Green Gem~
 @105761 = ~This is a green gem of little intrinsic value. All light passing through the translucent stone takes on a greenish hue.~

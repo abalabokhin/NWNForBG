@@ -1,4 +1,4 @@
-@0 = ~Welcome, noble <PRO_SIRMAAM>, to Barun's Smithy. I, of course, am Barun, master dwarven smith and creator of fine magical items. How may I be of service to you today?~
+@0 = ~Welcome, noble <SIRMAAM>, to Barun's Smithy. I, of course, am Barun, master dwarven smith and creator of fine magical items. How may I be of service to you today?~
 @1 = ~What exactly is it you do here?~
 @2 = ~I want you to make an item for me.~
 @3 = ~I'll be going now.~
@@ -11,7 +11,7 @@
 @10 = ~I'm not interested right now.~
 @11 = ~Okay, I see there's some stuff on my anvil. Let me take a look and see what I can construct for you.~
 @12 = ~Just place one component item and one magical weapon or one suit of magic armor on the forge and I'll help you out. But if the forge isn't full - like now - I can't really do my thing, can I?~
-@13 = ~NP: Have a good day,<SIRMAAM> .~ /*Good day to you then, <PRO_SIRMAAM>.*/
+@13 = ~NP: Have a good day,<SIRMAAM> .~ /*Good day to you then, <SIRMAAM>.*/
 @14 = ~Here you go, just take this book I have here. It will explain everything you can make and the components required to do so.~
 @15 = ~Look, you've already got a copy of my recipe book, so what more do you want? Just read the damn thing.~
 @16 = ~So, axes and armor is it? Let me just take a look at what you've got in that pack of yours and I'll give you a list of what I can make from your inventory. If an item isn't on the list, you don't have the stuff I need to make it. Just pick something you're interested in having me make.~ /*If an item isn't on the list, you don't have the stuff I need to make it. Just pick something you're interested in having me make.*/
@@ -70,8 +70,8 @@
 @69 = ~You know, I could use that fairy dust and your magic short sword to make you a Feyduster short sword. But this job isn't cheap. It will cost  gold pieces for me to make this for you. Payment in advance, of course.~ /*You know, I could use that fairy dust and your magic short sword to make you a Feyduster short sword.*/
 @70 = ~Huh. Dragon blood. Not going to ask where you got that, but I can use it to turn that magic halberd into a Ravager Halberd. But this job isn't cheap. It will cost  gold pieces for me to make this for you. Payment in advance, of course.~ /*Huh. Dragon blood. Not going to ask where you got that, but I can use it to turn that magic halberd into a Ravager Halberd.*/
 @71 = ~Hmmm... that fairy dust will work into your magic spear. I could make a Fey Spear, if you want. But this job isn't cheap. It will cost  gold pieces for me to make this for you. Payment in advance, of course.~ /*Hmmm... that fairy dust will work into your magic spear. I could make a Fey Spear, if you want.*/
-@72 = ~Always a pleasure doing business with a fine <PRO_MANWOMAN> such as yourself. Stand back - you don't want to catch a hammer in the head.~
+@72 = ~Always a pleasure doing business with a fine <MANWOMAN> such as yourself. Stand back - you don't want to catch a hammer in the head.~
 @73 = ~NP: Fair enough - but I don't do charity work. No money - no item.~ /*Fair enough - but this isn't a charity I'm running. If you don't have the gold, you don't get the item. Anything else I can do for you?*/
-@74 = ~NP: Fair enough - the client can always change his mind.~ /*Fair enough - a customer always has the right to change <PRO_HISHER> mind. Anythinge else I can do for you?*/
+@74 = ~NP: Fair enough - the client can always change his mind.~ /*Fair enough - a customer always has the right to change <HISHER> mind. Anythinge else I can do for you?*/
 @75 = ~Excellent choice. When you're ready, just place the component and appropriate magic item on the forge then come speak to me again.~
-@76 = ~There you go, <PRO_SIRMAAM>. Quick as you please and the job is done. You can pick the item up from my forge.~
+@76 = ~There you go, <SIRMAAM>. Quick as you please and the job is done. You can pick the item up from my forge.~

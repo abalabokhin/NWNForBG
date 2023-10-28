@@ -2,7 +2,7 @@
 @1 = ~I'm with the city guard, I don't mean any harm.~
 @2 = ~Get out of my way! I'll go where I please!~
 @3 = ~I was just leaving.~
-@4 = ~I... suppose you can be trusted. A woman on her own in these dangerous times has to be cautious, you understand. What was it you wanted, then, <PRO_SIRMAAM>?~ /*I... suppose you can be trusted. A woman on her own in these dangerous times has to be cautious, you understand.*/
+@4 = ~I... suppose you can be trusted. A woman on her own in these dangerous times has to be cautious, you understand. What was it you wanted, then, <SIRMAAM>?~ /*I... suppose you can be trusted. A woman on her own in these dangerous times has to be cautious, you understand.*/
 @5 = ~I'm investigating the plague. Perhaps you can help me?~
 @6 = ~Do you know of anything interesting going on in Blacklake?~
 @7 = ~Can I ask you some directions?~
@@ -13,7 +13,7 @@
 @12 = ~I suppose that makes you a burglar of some sort? Come to rob me, have you?~
 @13 = ~Perhaps I will! Give me all your gold or die!~
 @14 = ~Get out, before I call the watch on you!~
-@15 = ~NP: I'm not an expert on plague, after all, it doesn't exist in the Black Lake area. But I'll try to answer if I can.~ /*I am no expert on the plague, <PRO_SIRMAAM>. There is no plague in Blacklake, after all. But I will answer what I can.*/
+@15 = ~NP: I'm not an expert on plague, after all, it doesn't exist in the Black Lake area. But I'll try to answer if I can.~ /*I am no expert on the plague, <SIRMAAM>. There is no plague in Blacklake, after all. But I will answer what I can.*/
 @16 = ~Are you aware of any strange creatures in the area?~
 @17 = ~Have you heard any rumors concerning the plague?~
 @18 = ~NP: I would like to ask another question.~ /*I want to ask you something else.*/
@@ -35,7 +35,7 @@
 @34 = ~Merciful heavens, no. Well... there are the creatures at the zoo, of course. They have all been there since before the plague, however.~
 @35 = ~Is it possible that some creatures might have gained access to the zoo, somehow?~
 @36 = ~So there's been nothing odd about the zoo, then?~
-@37 = ~Nothing that you wouldn't have heard elsewhere, <PRO_SIRMAAM>. To be honest, what little chat I've had with the neighbours has been about anything *but* the plague.~
+@37 = ~Nothing that you wouldn't have heard elsewhere, <SIRMAAM>. To be honest, what little chat I've had with the neighbours has been about anything *but* the plague.~
 @38 = ~What do you want to know?~
 @39 = ~No, not really. There was some trouble with a mage named Meldanen, but that is long over with. This district is pretty quiet now. Is there something else you wanted to know?~ /*No, not really. There was some trouble with a mage named Meldanen, but that is long over with. This district is pretty quiet now.*/
 @40 = ~There was something about a woman named Formosa, but whatever business she had seems to be concluded. This district is quite quiet now.~

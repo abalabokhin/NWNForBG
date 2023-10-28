@@ -15,8 +15,8 @@
 @14 = ~Upset about what?~
 @15 = ~I suppose there's some time before my wine is refreshed. Go ahead and ask.~
 @16 = ~I want to ask you again about getting the ring for you.~
-@17 = ~Farewell, good <PRO_SIRMAAM>. May fortune smile upon you always.~
-@18 = ~Ah, yes, those were the days, weren't they? The making of proper chests was once a noble profession. They were pieces of art, I tell you, and not these flimsy things they make today that any two-bit <PRO_RACE> thief with half a mind could pick. Not that I'm insinuating anything. As a young little gnome in Culver, all I thought about were fine chests and the living I would make off of them. Alas, it was not to be. Pleasuring women is all I'm about, now.~ /*Ah, yes, those were the days, weren't they? The making of proper chests was once a noble profession. They were pieces of art, I tell you, and not these flimsy things they make today that any two-bit <PRO_RACE> thief with half a mind could pick. Not that I'm insinuating anything.*/
+@17 = ~Farewell, good <SIRMAAM>. May fortune smile upon you always.~
+@18 = ~Ah, yes, those were the days, weren't they? The making of proper chests was once a noble profession. They were pieces of art, I tell you, and not these flimsy things they make today that any two-bit <RACE> thief with half a mind could pick. Not that I'm insinuating anything. As a young little gnome in Culver, all I thought about were fine chests and the living I would make off of them. Alas, it was not to be. Pleasuring women is all I'm about, now.~ /*Ah, yes, those were the days, weren't they? The making of proper chests was once a noble profession. They were pieces of art, I tell you, and not these flimsy things they make today that any two-bit <RACE> thief with half a mind could pick. Not that I'm insinuating anything.*/
 @19 = ~NP: Of course, after the great Turnip Harvest debacle of '45, there's no Culver's.~ /*Well, of course not. Since the great Turnip Famine of '45, there hasn't been a Culver.*/
 @20 = ~I see. Everyone died, then?~
 @21 = ~I know that the military leaders of the city, those High Captains, are all trying to kill each other and take over. Beyond that I haven't a clue... I'm not the most political gnome this side of the Anauroch, you know.~
@@ -30,7 +30,7 @@
 @29 = ~Maybe I could ask you something else.~
 @30 = ~Okay, I'll do it.~
 @31 = ~No, I'm not interested.~
-@32 = ~Do come back to me once you've found that ring, <PRO_SIRMAAM>. I'll be looking forward to it.~
+@32 = ~Do come back to me once you've found that ring, <SIRMAAM>. I'll be looking forward to it.~
 @33 = ~Of course not! What a grisly story that would make. Everybody was quite hungry, though, and certainly *thought* they would die. Going too long without a proper turnip is agony enough. No, no, it was the much-maligned Uncle Pinto who sold the rights to some human for a sack of turnips in one of his craving fits. They went and re-named it to 'Waterdeep' or some nonsense, last I heard.~ /*No, no, it was the much-maligned Uncle Pinto who sold the rights to some human for a sack of turnips in one of his craving fits. They went and re-named it to 'Waterdeep' or some nonsense, last I heard.*/
 @34 = ~That's quite a story.~
 @35 = ~I doubt that's true.~
@@ -56,7 +56,7 @@
 
 @56 = ~All right, all right... have it your way. Jenny Janson was picky, too, and she ended up a poor spinster in a small hovel with all of three teeth to her name. The choice is yours.~
 @57 = ~The Lady Jadale is, shall we say, rather oblivious to the fact that her husband might not be too fond of me when he discovers the ring. She has less sense than an elf in a shoe store, I tell you. Now, I suppose you might have some questions before you set out after my ring?~ /*The Lady Jadale is, shall we say, rather oblivious to the fact that her husband might not be too fond of me when he discovers the ring. She has less sense than an elf in a shoe store, I tell you.*/
-@58 = ~I knew you were the successful type, right from the moment I laid eyes on you. "Erb," I thought, "this <PRO_MANWOMAN> could be bigger than Uncle Bigbottom!" And that's big. So here you go... 650 gold pieces for the ring.~
+@58 = ~I knew you were the successful type, right from the moment I laid eyes on you. "Erb," I thought, "this <MANWOMAN> could be bigger than Uncle Bigbottom!" And that's big. So here you go... 650 gold pieces for the ring.~
 @59 = ~NP: You could have given more to a fellow dwarf!~ /*Surely you could spare more for a fellow gnome?*/
 @60 = ~It wasn't easy to get this, you know. I think you could spare a little more.~
 @61 = ~You better cough up some more coin or you won't even live long enough to regret it!~

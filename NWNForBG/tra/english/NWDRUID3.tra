@@ -2,7 +2,7 @@
 @1 = ~No, I'm not. I have control of my own mind. Who are you?~
 @2 = ~I am not so foolish as to be captured by a nymph. You may leave now, thanks to me.~
 @3 = ~You just wait here. I'll be back.~
-@4 = ~NP: My name is Terari. I am a druid from the grove of Neverwinter Forest. And to whom do I have the honor?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <PRO_SIRMAAM>?*/
+@4 = ~NP: My name is Terari. I am a druid from the grove of Neverwinter Forest. And to whom do I have the honor?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <SIRMAAM>?*/
 @5 = ~My name is <CHARNAME>. Aawill sent me to find you.~
 @6 = ~NP: I'm with the <CHARNAME> team. Aavil sent us to find you.~ /*My name is <CHARNAME>. Aawill sent me to find you.*/
 @7 = ~Wait, before you go, did Aawill send you?~
@@ -12,8 +12,8 @@
 @11 = ~Then I owe both Aawill and you a debt of honor. I only wish I had gotten further on my mission to save the Spirit of the Wood.~
 @12 = ~How far did you get?~
 @13 = ~"How did you end up here?"~
-@14 = ~NP: Wise Aavil. He always takes care of everything. My name is Terari. I am a druid from the grove of Neverwinter Forest. And to whom do I have the honor?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <PRO_SIRMAAM>?*/
-@15 = ~NP: He is the head of our circle of druids. My name is Terari. I am a druid from the grove of Neverwinter Forest. And with whom do I have the honor?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <PRO_SIRMAAM>?*/
+@14 = ~NP: Wise Aavil. He always takes care of everything. My name is Terari. I am a druid from the grove of Neverwinter Forest. And to whom do I have the honor?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <SIRMAAM>?*/
+@15 = ~NP: He is the head of our circle of druids. My name is Terari. I am a druid from the grove of Neverwinter Forest. And with whom do I have the honor?~ /*My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <SIRMAAM>?*/
 @16 = ~I didn't get very far. I thought that although the animals were not communicating, the nymphs might be a good source of information. They may be flighty, but I thought that they would have strong enough minds to resist the Spirit's madness.~
 @17 = ~It is rather embarrassing actually. I thought the nymphs might be a good source of information, since they have stronger minds than your average woodland animal.~
 @18 = ~I came to this house first, since I had... um... known this particular nymph in the past. She seemed very pleased to see me, eager even. I was hoping to get some information from her, without... well... going into her house.~

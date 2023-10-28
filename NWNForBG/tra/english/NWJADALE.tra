@@ -1,4 +1,4 @@
-@0 = ~Welcome to my home. Is there something I can do for you, <PRO_SIRMAAM>?~ [NWJADA51]
+@0 = ~Welcome to my home. Is there something I can do for you, <SIRMAAM>?~ [NWJADA51]
 @1 = ~I want to speak to you about Erb's ring.~
 @2 = ~Who are you?~
 @3 = ~Could I ask you some questions?~
@@ -52,7 +52,7 @@
 @51 = ~I'm done haggling. Give me the ring... now.~
 @52 = ~Fare you well. Perhaps we'll speak again.~
 @53 = ~That's better.~
-@54 = ~NP: Я... Я... All right! If Erby's goons come by and want to steal my ring, choke on it! Uh, wait a minute.~ /*I... I... fine! If Erbie wants to send some brutish <PRO_MANWOMAN> to steal my ring, then you can have it!*/
+@54 = ~NP: Я... Я... All right! If Erby's goons come by and want to steal my ring, choke on it! Uh, wait a minute.~ /*I... I... fine! If Erbie wants to send some brutish <MANWOMAN> to steal my ring, then you can have it!*/
 @55 = ~Hmph. Are you going to apologize or not?~
 @56 = ~Aieee! Thug! Ruffian!! Guards, help me!!~
 @57 = ~You... you must be joking! I've never heard of such a thing!~
@@ -83,7 +83,7 @@
 @82 = ~Oh, nothing. Forget I said anything.~
 @83 = ~Don't be absurd! Even if such a law existed, it wouldn't matter *now,* with all this fighting.~
 @84 = ~Well, I don't think that's very funny.~
-@85 = ~You! You were involved in this, weren't you?! Erbie sent you to distract me so someone else could steal it! For all I know, Erbie may not even have sent you! You could be some... some thief <PRO_MANWOMAN>! Well, I'm going to teach you a lesson! Guards!!~ /*You! You were involved in this, weren't you?! Erbie sent you to distract me so someone else could steal it!*/
+@85 = ~You! You were involved in this, weren't you?! Erbie sent you to distract me so someone else could steal it! For all I know, Erbie may not even have sent you! You could be some... some thief <MANWOMAN>! Well, I'm going to teach you a lesson! Guards!!~ /*You! You were involved in this, weren't you?! Erbie sent you to distract me so someone else could steal it!*/
 @86 = ~You're right. It's a gaudy thing, anyway. I'll give you the ring, then, if you'll throw it in his face. Just give me a moment...~ /*You're right. It's a gaudy thing, anyway. I'll give you the ring, then, if you'll throw it in his face.*/
 @87 = ~Hah! I get expensive gifts all the time from my husband, don't I? The ring is mine, now.~
 @88 = ~What -? Where is it? My ring is gone! I've been robbed!!! You! You were involved in this, weren't you?! Erbie sent you to distract me so someone else could steal it! You go away!~ /*You! You were involved in this, weren't you?! Erbie sent you to distract me so someone else could steal it!*/

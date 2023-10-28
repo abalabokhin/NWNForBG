@@ -1,5 +1,5 @@
 @0 = ~I bid you welcome, dwarf, for I see you are not of the clan that hunts us and destroys our trees. I am Arwyl, leader of the dryads.~ [NWARW055]
-@1 = ~NP: Why did you seek me out, <RACE>? Is there something you want to ask me?~ /*For what reason have you sought me out, <PRO_RACE> one? Is there some boon you would ask of me?*/
+@1 = ~NP: Why did you seek me out, <RACE>? Is there something you want to ask me?~ /*For what reason have you sought me out, <RACE> one? Is there some boon you would ask of me?*/
 @2 = ~NP: Why are the Dwarves at war with you?~ /*Why are the dryads at war with you?*/
 @3 = ~What do you make of this amulet?~
 @4 = ~I want to ask you some questions.~
@@ -7,11 +7,11 @@
 @6 = ~I think I will go now. Farewell.~
 @7 = ~The dwarves cannot be reasoned with. They slaughter my sisters and chop down our trees. It is as if they are possessed by a kind of madness. And yet sometimes I feel the dwarves are not solely to blame. I do not speak of this with my sisters, but there are times when... things are not clear, as if I am in a dream or nightmare.~ /*And yet sometimes I feel the dwarves are not solely to blame. I do not speak of this with my sisters, but there are times when... things are not clear, as if I am in a dream or nightmare.*/
 @8 = ~This amulet looks... familiar. As if I knew it once long, long ago. See the inscription on the back? It is written in an old and ancient tongue... yet I know what the words say: "Tree and forge united, to overthrow the Master."~ /*See the inscription on the back? It is written in an old and ancient tongue... yet I know what the words say: "Tree and forge united, to overthrow the Master."*/
-@9 = ~As you wish, <PRO_RACE> <PRO_MALEFEMALE>. What wisdom I have I shall gladly share with you, though I know little beyond our endless war with the immortal dwarves.~
+@9 = ~As you wish, <RACE> <MALEFEMALE>. What wisdom I have I shall gladly share with you, though I know little beyond our endless war with the immortal dwarves.~
 @10 = ~Immortal? What are you talking about?~
 @11 = ~What is this place? How can this world exist inside a snow globe?~
 @12 = ~We battle the dwarves each and every day, and it has made us strong with courage. We shall not fly from another fight!~
-@13 = ~May the earth be ever soft beneath your feet. But travel with care, good <PRO_MANWOMAN>. Danger is ever present.~
+@13 = ~May the earth be ever soft beneath your feet. But travel with care, good <MANWOMAN>. Danger is ever present.~
 @14 = ~I have dark visions of me and my sisters unleashing our magic on the dwarves and revelling in the slaughter. I cannot help but wonder if we dryads do not sometimes succumb to the same bloodlust as our foe.~
 @15 = ~NP: Have you always been at war with dwarves?~ /*Have you always been at war with the dryads?*/
 @16 = ~I can sense that once this amulet held great magic. The power of nature itself was contained within. But it is cracked, and the magic within it is gone.~
@@ -34,5 +34,5 @@
 @33 = ~I'm sorry, the vision is gone. It... it as if some great spell has stripped the memories from my mind. I can tell you nothing more about the amulet or the Master we once served. I'm sorry.~
 @34 = ~Maybe I could free you from this Master.~
 @35 = ~The only release we seek is death. Perhaps, if you could slay the Master we could find peace... but it may be the Master is already dead. Even now I cannot remember... The magic is too strong. I am sorry, but the memories jarred by the amulet are gone. I cannot even recall the face of the Master. I can tell you no more.~ /*The only release we seek is death. Perhaps, if you could slay the Master we could find peace... but it may be the Master is already dead. Even now I cannot remember...*/
-@36 = ~NP: I am Arvil, ruler of the dryads. Welcome, <RACE>. Your courtesy amazes us. We are used to dwarves, and they attack us as soon as they see us.~ [NWARW056] /*I am Arwyl, leader of the dryads. I bid you welcome, <PRO_RACE> one. Your kind is strange to us - we are used to seeing only the dwarves who attack us on sight.*/
-@37 = ~I bid you welcome once again, <PRO_RACE> friend.~ [NWARW054]
+@36 = ~NP: I am Arvil, ruler of the dryads. Welcome, <RACE>. Your courtesy amazes us. We are used to dwarves, and they attack us as soon as they see us.~ [NWARW056] /*I am Arwyl, leader of the dryads. I bid you welcome, <RACE> one. Your kind is strange to us - we are used to seeing only the dwarves who attack us on sight.*/
+@37 = ~I bid you welcome once again, <RACE> friend.~ [NWARW054]

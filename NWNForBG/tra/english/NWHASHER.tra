@@ -14,7 +14,7 @@
 @13 = ~When I heard there was an archeologist nearby I went to speak with her about a certain item I've been trying to track down. But she wasn't really interested. Said she only wanted items of historical significance and that she didn't have time to chase after trinkets. I even offered her a generous reward, but she seemed more interested in the wine bottle on the table than my story.~ /*But she wasn't really interested. Said she only wanted items of historical significance and that she didn't have time to chase after trinkets.*/
 @14 = ~Maybe I could help you.~
 @15 = ~Don't know if there's much I can tell you as I'm kind of new here myself. Just came up from the southern Sword Coast to oversee the opening of the newest branch of my operations.~
-@16 = ~Maybe you could at that. You seem like a capable <PRO_MANWOMAN>. Tell you what, you help me out and I'll give you the payment I was offering Lillian.~
+@16 = ~Maybe you could at that. You seem like a capable <MANWOMAN>. Tell you what, you help me out and I'll give you the payment I was offering Lillian.~
 @17 = ~What kind of job?~
 @18 = ~What's it pay?~
 @19 = ~This does not interest me.~
@@ -23,12 +23,12 @@
 @22 = ~Why do you want it?~
 @23 = ~I'll give you 3000 gold pieces, the same as I offered Lillian.~
 @24 = ~Fair enough. If you change your mind let me know. Is there anything else I can do for you?~
-@25 = ~Well done, my good <PRO_MANWOMAN>. And, as promised, here is your reward. 3000 gold pieces was the price agreed upon, I believe.~
+@25 = ~Well done, my good <MANWOMAN>. And, as promised, here is your reward. 3000 gold pieces was the price agreed upon, I believe.~
 @26 = ~Thank you, Husher.~
 @27 = ~NP: I had to go through a lot of trouble to get you this gem, Hasher.~ /*I went through a lot of trouble to get this gem for you, Husher. A *lot* of trouble.*/
 @28 = ~Dig a little deeper, Clay, or I'll rip out your guts and strangle you with your own intestines!~
 @29 = ~The Star Sapphire was part of a dowry given to Layenne Cheroux, the youngest daughter of a powerful merchant family that flourished in Waterdeep nearly two centuries ago. But Layenne wasn't ready to resign herself to a life of wedlock. She was an aspiring mage, and the morning of her wedding she fled to the north to seek her fame and fortune.~ /*The Star Sapphire was part of a dowry given to Layenne Cheroux, the youngest daughter of a powerful merchant family that flourished in Waterdeep nearly two centuries ago.*/
-@30 = ~NP: You're welcome, you're welcome, <SIRMAAM>.~ /*What was it you wanted, then, <PRO_SIRMAAM>?*/
+@30 = ~NP: You're welcome, you're welcome, <SIRMAAM>.~ /*What was it you wanted, then, <SIRMAAM>?*/
 
 @32 = ~Well, I imagine this was quite difficult to acquire. I imagine surviving the tricks and traps of Layenne's tomb was no easy task. Very well, here is another 200 gold pieces. I've given you far more than the gem itself is worth, but I suppose that's the price I pay for being a collector.~ /*Well, I imagine this was quite difficult to acquire. I imagine surviving the tricks and traps of Layenne's tomb was no easy task.*/
 @33 = ~I'm sorry but I've already given you far more than the gem is worth, and we did have a deal. I'm not about to start renegotiating now.~

@@ -1,4 +1,4 @@
-@0 = ~NP: Yes,<SIRMAAM> . Do you need something?~ [NWDAEL50] /*Yes, <PRO_SIRMAAM>. Is there something you need?*/
+@0 = ~NP: Yes,<SIRMAAM> . Do you need something?~ [NWDAEL50] /*Yes, <SIRMAAM>. Is there something you need?*/
 @1 = ~I just want to talk for a while.~
 @2 = ~Nothing, I'm all right.~
 @3 = ~My strength is in weapons not words, <CHARNAME>.~
@@ -11,7 +11,7 @@
 @10 = ~I have seen too much death and suffering from the plague to stand idly by.~
 @11 = ~In times of darkness great heroes must do great deeds. It is how legends are forged.~
 @12 = ~Aribeth has promised me gold and riches if I can help her in this.~
-@13 = ~You are an honorable <PRO_MANWOMAN>, <CHARNAME>. I too seek honor here in Neverwinter, though of a different sort.~
+@13 = ~You are an honorable <MANWOMAN>, <CHARNAME>. I too seek honor here in Neverwinter, though of a different sort.~
 @14 = ~So you seek to make a name for yourself here, <CHARNAME>? A noble cause, and one I am familiar with.~
 @15 = ~It would seem we are both nothing but ruthless mercenaries. Yet even in serving for gold we may perform great deeds of honor.~
 @16 = ~I came to this city to make a name for myself, <CHARNAME> - to forge a legend that even the tribe of my mother would hear. Instead I found myself guarding crates and barrels against common thugs. Yet even in the sordid world of the docks my reputation spread. Several captains asked me to join their crews. Perhaps if the plague had not come the name Daelan Red Tiger would have become a legend on the high seas.~ /*Yet even in the sordid world of the docks my reputation spread. Several captains asked me to join their crews. Perhaps if the plague had not come the name Daelan Red Tiger would have become a legend on the high seas.*/
@@ -24,9 +24,9 @@
 @23 = ~Please forgive me, <CHARNAME>. I became... lost in the moment. The drums of glory momentarily distracted me from the task at hand. It will not happen again.~
 @24 = ~No, Daelan. Tell me what you were talking about. I want to hear it.~
 @25 = ~It better not. I need you to stay focused and follow my orders!~
-@26 = ~NP: I'm starting to wonder if you're worth my service. I'm a little... forgotten. This will not happen again.~ /*I am beginning to wonder if I chose a poor <PRO_LADYLORD> to serve. I became... lost in the moment. It will not happen again.*/
+@26 = ~NP: I'm starting to wonder if you're worth my service. I'm a little... forgotten. This will not happen again.~ /*I am beginning to wonder if I chose a poor <LADYLORD> to serve. I became... lost in the moment. It will not happen again.*/
 @27 = ~Please, <CHARNAME>, the things I said before... the words were... this is not the time to speak of such things. Perhaps later I will speak more of this. But not now.~
-@28 = ~NP: As you say<SIRMAAM> .~ /*As you command, <PRO_SIRMAAM>.*/
+@28 = ~NP: As you say<SIRMAAM> .~ /*As you command, <SIRMAAM>.*/
 @29 = ~In the time we have been together you have respected my request for privacy, <CHARNAME>. Now I feel I am ready to tell you the rest of my tale. I... I mentioned my exile to you before, <CHARNAME>. The truth is, I did not willingly leave the Uthgardt to come to Neverwinter. The tribe cast me out.~ /*I... I mentioned my exile to you before, <CHARNAME>. The truth is, I did not willingly leave the Uthgardt to come to Neverwinter. The tribe cast me out.*/
 @30 = ~NP: You half-orc, you know how people like us hate it. You know how the world sees us.~ /*You are a half-orc, <CHARNAME>. You know the hatred that follows our kind. You know how the world sees us.*/
 @31 = ~I am a monstrous half-breed. As a child it was obvious my blood was tainted: I was violent and savage. It was only because of the pleas of my mother that the tribe did not slay me as an abomination while still an infant.~
@@ -50,7 +50,7 @@
 @49 = ~NP: Thank you for your kindness, but there's not much you can do for me right now. Perhaps I'll tell you more later. But not now.~ /*I thank you for your kind offer, but there is little you can do for me right now.*/
 @50 = ~*Sigh* I suppose you deserve to know the rest of the story, <CHARNAME>. I have kept this weight upon my heart, but we are in this together.~
 @51 = ~If I cannot turn to a fellow half-orc for help, then who in this world can I turn to? There is something troubling me, <CHARNAME>.~
-@52 = ~NP: After all, we are both warriors. If my brother-in-arms cannot help me, who else can I hope for in this world? There's something that worries me<CHARNAME> .~ /*We are both warriors, after all. If I cannot turn to my <PRO_BROTHERSISTER>-in-arms for aid, who in this world can I count on? There is something troubling me, <CHARNAME>.*/
+@52 = ~NP: After all, we are both warriors. If my brother-in-arms cannot help me, who else can I hope for in this world? There's something that worries me<CHARNAME> .~ /*We are both warriors, after all. If I cannot turn to my <BROTHERSISTER>-in-arms for aid, who in this world can I count on? There is something troubling me, <CHARNAME>.*/
 @53 = ~If I cannot turn to a fellow adventurer, who in this world can I turn to? There is something troubling me, <CHARNAME>.~
 @54 = ~My quest to prove my worth as an Uthgardt warrior has not yet begun, and already I fear I have failed.~
 @55 = ~Failed? How?~
@@ -70,7 +70,7 @@
 @69 = ~Thank you, Daelan.~
 @70 = ~That's it? A cheap amulet?~
 @71 = ~Thank you, <CHARNAME>. But for now we should return to the task at hand. Aribeth is counting on you.~
-@72 = ~Of course not, <PRO_SIRMAAM>. My blade is yours to command, as always.~
+@72 = ~Of course not, <SIRMAAM>. My blade is yours to command, as always.~
 @73 = ~Because of you, <CHARNAME>, my vision quest can continue. I will keep my mother's brooch by my side so it may guide me on my quest. But until I receive a vision to guide me on my quest I will remain by your side. Once more I thank you for finding my mother's brooch, <CHARNAME>.~ /*But until I receive a vision to guide me on my quest I will remain by your side. Once more I thank you for finding my mother's brooch, <CHARNAME>.*/
 @74 = ~I wish I had more to give you, <CHARNAME>. I know it might not look like much, but among the Uthgardt such an offering is considered a great gift.~
 @75 = ~NP: What I said... these words were... You neglected things that were important to me, I don't want to talk about it anymore.~ /*Please... do excuse me. I worry so much for her safety, this is... difficult to talk about.*/
@@ -178,7 +178,7 @@
 @177 = ~Yes - this is the spear from my dreams! Uthgar's Spear! Because of you I can return to my people with proof my spirit is worthy of the Red Tiger tribe! I can never properly repay you for this gift, <CHARNAME>, but please take this small token of my gratitude. It was a gift from my mother before she died.~ /*I can never properly repay you for this gift, <CHARNAME>, but please take this small token of my gratitude. It was a gift from my mother before she died.*/
 @178 = ~I thank you for this reward, Daelan.~
 @179 = ~I feel like I'm getting screwed in this deal.~
-@180 = ~Thank you, <CHARNAME>. Your promise means much to me, for you are a <PRO_MANWOMAN> of true honor. I know my quest will end in success. But for now we must focus on finding the Words of Power. Aarin Gend is counting on us.~ /*Thank you, <CHARNAME>. Your promise means much to me, for you are a <PRO_MANWOMAN> of true honor. I know my quest will end in success.*/
+@180 = ~Thank you, <CHARNAME>. Your promise means much to me, for you are a <MANWOMAN> of true honor. I know my quest will end in success. But for now we must focus on finding the Words of Power. Aarin Gend is counting on us.~ /*Thank you, <CHARNAME>. Your promise means much to me, for you are a <MANWOMAN> of true honor. I know my quest will end in success.*/
 @181 = ~I have vowed to serve you as long as you have need of my blade, <CHARNAME>. I will not forsake that vow.~
 @182 = ~The talisman has powerful magical properties, though I know it is hardly a suitable reward for all you have done for me. Alas, the only other thing I can offer you is my continued service.~
 @183 = ~What are you going to do with the spear now, Daelan?~
@@ -203,7 +203,7 @@
 @202 = ~I understand, of course. We march toward a great battle; if you do not wish to hear my words I shall keep them to myself.~
 @203 = ~I'm sorry. Please go on.~
 @204 = ~Good, keep quiet. We've got business to take care of!~
-@205 = ~NP: We fought a lot side by side<CHARNAME> and now I see who the real hero is. You<MALEFEMALE> great honor, and in your presence I am a little lost.~ /*I have fought many battles by your side, <CHARNAME> and now I see what a true hero is. You are a <PRO_MANWOMAN> of great honor, <CHARNAME> and I am humbled in your presence.*/
+@205 = ~NP: We fought a lot side by side<CHARNAME> and now I see who the real hero is. You<MALEFEMALE> great honor, and in your presence I am a little lost.~ /*I have fought many battles by your side, <CHARNAME> and now I see what a true hero is. You are a <MANWOMAN> of great honor, <CHARNAME> and I am humbled in your presence.*/
 @206 = ~I didn't do it alone. You have been a valuable ally throughout my adventures.~
 @207 = ~*Sigh* I guess people holding me in awe is the burden of being a hero.~
 @208 = ~Don't paint me as something I'm not - I'm only in this for the money!~

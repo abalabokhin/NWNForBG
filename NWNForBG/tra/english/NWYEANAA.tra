@@ -7,7 +7,7 @@
 @6 = ~I have never heard of this place you speak of. It cannot be important. If the wizards see you before me, I shall be furious indeed. I have waited almost long enough!~
 @7 = ~I am Yeanasha, of the Uthgardt Elk tribe. I have come to speak to these wizards at their own invitation, though they seem intent on keeping me waiting.~
 @8 = ~I mean that these fools wish to curry favor with the Elk tribe, and are doing a foul job of it. I despise waiting, yet it seems all I do here.~
-@9 = ~Questions, is it? Why should Yeanasha answer any of your questions, <PRO_MANWOMAN>? The business of the Elk tribe is not your own.~
+@9 = ~Questions, is it? Why should Yeanasha answer any of your questions, <MANWOMAN>? The business of the Elk tribe is not your own.~
 @10 = ~There is no harm in talking, is there?~
 @11 = ~I'm only interested because you're a beautiful woman...~
 @12 = ~You'll answer my questions or you'll get hurt.~
@@ -28,7 +28,7 @@
 @27 = ~I need no fawning man such as you drooling over me. Begone, if you've nothing better to offer.~
 @28 = ~Oh? A man of action, is it? I doubted I would find such amongst the mincing perfumed folk of this settlement. Go ahead and ask me your questions, then, if you must.~ /*Oh? A man of action, is it? I doubted I would find such amongst the mincing perfumed folk of this settlement.*/
 @29 = ~I prefer directness, though were you a woman of my own tribe I would strike you down for speaking to me such. Go ahead and ask me your questions, then, if you must.~ /*I prefer directness, though were you a woman of my own tribe I would strike you down for speaking to me such.*/
-@30 = ~Yes. Was there something else you wanted, <PRO_MANWOMAN>?~
+@30 = ~Yes. Was there something else you wanted, <MANWOMAN>?~
 @31 = ~What did you mean about the wizards?~
 @32 = ~I know a little, though I have not traveled beyond these quarters. Why? What is it you wish to know?~
 @33 = ~Tell me about the Arcane Brotherhood.~
@@ -42,7 +42,7 @@
 @41 = ~Of course I have. Have you not? It was he who invited me to this tower. The man is the new Archmage Arcane, after all.~
 @42 = ~A cult? If these wizards worship anything beyond their own power, I have never heard of it. Perhaps the cult caused the fighting, here, I do not know.~
 @43 = ~What fighting is that?~
-@44 = ~There is one in every room, placed here by the wizards to guard us. The last mage I saw referred to it as a 'shield guardian'. Do not trouble yourself, <PRO_MANWOMAN>. They do little unless they are provoked.~ /*There is one in every room, placed here by the wizards to guard us. The last mage I saw referred to it as a 'shield guardian'.*/
+@44 = ~There is one in every room, placed here by the wizards to guard us. The last mage I saw referred to it as a 'shield guardian'. Do not trouble yourself, <MANWOMAN>. They do little unless they are provoked.~ /*There is one in every room, placed here by the wizards to guard us. The last mage I saw referred to it as a 'shield guardian'.*/
 @45 = ~Hmph. Well, you've a smooth tongue on you, that's for certain. Fair enough... you may stay. Go ahead and ask me your questions, then, if you must.~ /*Hmph. Well, you've a smooth tongue on you, that's for certain. Fair enough... you may stay.*/
 @46 = ~Oh, is that so? And you think a compliment or two will make the barbarian woman swoon, is that it? Pfeh. Go ahead and ask me your questions, then, if you must.~ /*Oh, is that so? And you think a compliment or two will make the barbarian woman swoon, is that it? Pfeh.*/
 @47 = ~Ha ha! Now you sound like the real men I am used to. Go ahead and ask me your questions, then, if you must.~ /*Ha ha! Now you sound like the real men I am used to.*/

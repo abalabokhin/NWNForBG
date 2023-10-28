@@ -15,11 +15,11 @@
 @14 = ~NP: Okay, enough questions. Can you get out of here alone?~ /*Think you can make your way out of here alone?*/
 @15 = ~I don't know but I'm going to try. I figure if I make a run for it, I can make it out the main door. I figure the militia must have this place surrounded by now.~ /*I don't know but I'm going to try. I figure if I make a run for it, I can make it out the main door.*/
 @16 = ~I could use some information before you go.~
-@17 = ~NP: Yes,<SIRMAAM> ! Wish me luck.~ /*Yes <PRO_SIRMAAM>! Wish me luck.*/
+@17 = ~NP: Yes,<SIRMAAM> ! Wish me luck.~ /*Yes <SIRMAAM>! Wish me luck.*/
 @18 = ~Hard to say. One afternoon, the Head Gaoler just went down and unlocked the door to the Pits. He walked right in there and all the prisoners walked right out. The fighting lasted a couple of days but all us guards have been captured now... or worse.~ /*He walked right in there and all the prisoners walked right out. The fighting lasted a couple of days but all us guards have been captured now... or worse.*/
 @19 = ~The Pits? What are those?~
 @20 = ~And the Head Gaoler?~
-@21 = ~The former prisoners, you mean? They're cruel, vengeful. When they came, we weren't ready for them. I saw a dozen friends cut down around me. It was horrible, <PRO_SIRMAAM>! They threw a bunch of us guards into the Pits, too. For the Head Gaoler, they said... like he's going to eat them or something!~ /*It was horrible, <PRO_SIRMAAM>! They threw a bunch of us guards into the Pits, too. For the Head Gaoler, they said... like he's going to eat them or something!*/
+@21 = ~The former prisoners, you mean? They're cruel, vengeful. When they came, we weren't ready for them. I saw a dozen friends cut down around me. It was horrible, <SIRMAAM>! They threw a bunch of us guards into the Pits, too. For the Head Gaoler, they said... like he's going to eat them or something!~ /*It was horrible, <SIRMAAM>! They threw a bunch of us guards into the Pits, too. For the Head Gaoler, they said... like he's going to eat them or something!*/
 @22 = ~I don't know about you but I'm heading home to my wife and kids. Set the whole place on fire as far as I'm concerned.~
 @23 = ~NP: How did you end up in this cell?~ /*How did you end up in that cell in the first place?*/
 @24 = ~That's where we throw the prisoners we can't handle. It's every man for himself down there.~

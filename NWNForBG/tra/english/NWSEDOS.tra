@@ -33,7 +33,7 @@
 @32 = ~Alaefin? What can you tell me about him?~
 @33 = ~Good luck then, and don't forget to report back to me if you manage to resolve whatever the trouble is down there.~
 
-@35 = ~Well, I can lead the horse to water but I can't make <PRO_HIMHER> drink. If you'll excuse me, then, there's lots to do in these troubled times.~
+@35 = ~Well, I can lead the horse to water but I can't make <HIMHER> drink. If you'll excuse me, then, there's lots to do in these troubled times.~
 @36 = ~He used to be one of the militia's best and, until now, I'd never heard a bad word said of him. Lord Nasher himself appointed him to the prison's command. Something just doesn't seem right with this picture. I guess the Wailing can change one's perspective on things...~ /*He used to be one of the militia's best and, until now, I'd never heard a bad word said of him. Lord Nasher himself appointed him to the prison's command.*/
 @37 = ~You again, is it? Have you changed your mind about entering the prison for me?~ [NWSED053]
 @38 = ~What was it you needed doing again?~
@@ -44,7 +44,7 @@
 @43 = ~How do I get into the prison, again?~
 @44 = ~Tell me again what the reward will be.~
 @45 = ~I'll get back to it. Farewell.~
-@46 = ~As you wish, <PRO_SIRMAAM>, but I have my orders and shall remain here until the job is done.~
+@46 = ~As you wish, <SIRMAAM>, but I have my orders and shall remain here until the job is done.~
 @47 = ~The escaped prisoners keep sending raiding parties out of the prison. One of them must have a key to get back in. You'll have to find who has that key. I don't know any more than that.~ /*The escaped prisoners keep sending raiding parties out of the prison. One of them must have a key to get back in.*/
 @48 = ~Aribeth has authorized a 300 gold piece reward. If you wish more, we will discuss it when you produce results.~
 @49 = ~Excellent. I shall await your return, then.~
@@ -60,5 +60,5 @@
 @59 = ~I thank you for all the trouble you have taken in completing this task, then. I will speak well of you when I make my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
 
 @61 = ~You had a job to do and you did it. Here's your pay, 300 gold. I'll make note of your attempt to threaten me in my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
-@62 = ~Indeed, good <PRO_SIRMAAM>. You have performed admirable service and declined all reward. I will speak most highly of you when I make my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
-@63 = ~I really must file my report with Lord Nasher. Excuse me, <PRO_SIRMAAM>.~ [NWSED055]
+@62 = ~Indeed, good <SIRMAAM>. You have performed admirable service and declined all reward. I will speak most highly of you when I make my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
+@63 = ~I really must file my report with Lord Nasher. Excuse me, <SIRMAAM>.~ [NWSED055]

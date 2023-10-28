@@ -3,8 +3,8 @@
 @2 = ~Hey, the camp is safe. No need to wave your weapons about here. Save that for the battle front.~
 @3 = ~Looks like you're ready to head out in search of the traitor Aribeth - you're armed and everything!~
 @4 = ~You may be a famous hero and all, <CHARNAME>, but you don't need to walk around camp with your weapon drawn all the time!~
-@5 = ~NP: Now that's a surprise - another <RACE> in these parts - and also one as famous as you.~ /*I didn't expect to see another <PRO_RACE> face in these parts - especially not one as famous as yours, <CHARNAME>.*/
-@6 = ~NP: Gend must be paying you a fortune. I'm told no hero would work for a pittance.~ /*Gend must be paying you guys a fortune, <CHARNAME>. I heard you <PRO_RACE> heroes don't work cheap.*/
+@5 = ~NP: Now that's a surprise - another <RACE> in these parts - and also one as famous as you.~ /*I didn't expect to see another <RACE> face in these parts - especially not one as famous as yours, <CHARNAME>.*/
+@6 = ~NP: Gend must be paying you a fortune. I'm told no hero would work for a pittance.~ /*Gend must be paying you guys a fortune, <CHARNAME>. I heard you <RACE> heroes don't work cheap.*/
 @7 = ~I know we need all the help we can get, but I don't trust them Uthgardt up on the plateau.~
 @8 = ~Nothing like a pretty lady to remind us soldiers what we're fighting for before we ship off to the front.~
 @9 = ~NP: You're here to save us all from that nasty Luskan army, aren't you?~ /*My, my. Hello there, handsome. You come to save us from the big, bad Luskan army?*/

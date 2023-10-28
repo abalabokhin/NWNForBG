@@ -1,4 +1,4 @@
-@0 = ~You are welcome in this house of Tyr, <PRO_BROTHERSISTER>... or what remains of it. I am afraid many of my brethren have either been killed or have abandoned us.~
+@0 = ~You are welcome in this house of Tyr, <BROTHERSISTER>... or what remains of it. I am afraid many of my brethren have either been killed or have abandoned us.~
 @1 = ~I am in need of healing.~
 @2 = ~NP: Do you have any healing supplies for sale?~ /*Do you have any healing or clerical supplies that you could sell?*/
 @3 = ~Could I ask you some questions?~
@@ -21,6 +21,6 @@
 @20 = ~Nobody except for an invasion by the Lords' Alliance... or the Arcane Brotherhood's intervention, perhaps. For whatever reason, they remain unmoved by all the violence.~
 @21 = ~Why do you think that is?~
 @22 = ~Who can say? The Brotherhood have always kept to themelves in the Host Tower. No-one but the High Captains themselves ever sees them.~
-@23 = ~Welcome, <PRO_BROTHERSISTER>. You are welcome in the house of the Maimed God. Few of us remain here due to recent hardships... I only ask that you do not add to them.~
-@24 = ~The Maimed God bids welcome to a proud defender of good, my <PRO_LADYLORD>. Would that our temple were in a condition to give you proper hospitality... few of my brethren remain here, now.~
+@23 = ~Welcome, <BROTHERSISTER>. You are welcome in the house of the Maimed God. Few of us remain here due to recent hardships... I only ask that you do not add to them.~
+@24 = ~The Maimed God bids welcome to a proud defender of good, my <LADYLORD>. Would that our temple were in a condition to give you proper hospitality... few of my brethren remain here, now.~
 @25 = ~Greetings. This is the house of Tyr, the Blind Overlord... or perhaps I should say it was. We have been robbed of much and most of my own brethren no longer remain here.~

@@ -1,4 +1,4 @@
-@0 = ~Ah, so another water elemental is summoned forth to this plane. Tell me, <PRO_RACE> creature, what would you have me do?~
+@0 = ~Ah, so another water elemental is summoned forth to this plane. Tell me, <RACE> creature, what would you have me do?~
 @1 = ~Who are you? What are you?~
 @2 = ~I'm looking to free the enchanter, Nax.~
 @3 = ~Tell me of this dungeon.~
@@ -13,7 +13,7 @@
 @12 = ~No. I don't want a magical item.~
 @13 = ~I am in your control still, and so I must warn you that if you relinquish control of me, I am under no obligation to return.~
 @14 = ~Yes. I wish you to leave.~
-@15 = ~You have summoned me, <PRO_RACE> <PRO_MALEFEMALE> and so by the magic of Cyril Lyricus I must perform a task for you. What is it you wish of me?~
+@15 = ~You have summoned me, <RACE> <MALEFEMALE> and so by the magic of Cyril Lyricus I must perform a task for you. What is it you wish of me?~
 @16 = ~Fine, then take this item. And now, I will take my leave of you.~
 @17 = ~Fine. Then simply tell me what you do wish, and I will fulfill your request.~
 @18 = ~Very well. I return from whence I have come.~

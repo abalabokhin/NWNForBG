@@ -1,4 +1,4 @@
-@0 = ~I beg you to leave me be, my <PRO_LADYLORD>. I have nothing to say and nothing left to steal, I assure you.~ [NWLOND54]
+@0 = ~I beg you to leave me be, my <LADYLORD>. I have nothing to say and nothing left to steal, I assure you.~ [NWLOND54]
 @1 = ~Who are you?~
 @2 = ~I have some questions.~
 @3 = ~NP: What happened to you?~ /*What happened here?*/
@@ -7,7 +7,7 @@
 @6 = ~Then what happened?~
 @7 = ~Aww... poor rich noble lost all her gold?~
 @8 = ~You lost your title? That isn't everything.~
-@9 = ~Did you not hear me? I wish to be left alone, <PRO_SIRMAAM>. Please respect that.~
+@9 = ~Did you not hear me? I wish to be left alone, <SIRMAAM>. Please respect that.~
 @10 = ~At least tell me who you are, then.~
 @11 = ~Why? What's wrong?~
 @12 = ~I see. You're too good to talk to me, is that it?~
@@ -17,7 +17,7 @@
 @16 = ~The title is nothing. I would have gladly given it up, and all the wealth that went with it, to still have my family. They are all that gave the others meaning.~
 @17 = ~Uh-huh. It be bad story, me thinking.~
 @18 = ~That... that is not what I meant at all. In fact, it is quite the opposite. I was once Countess Londa Whitesnow... but now I am... merely Londa.~
-@19 = ~My husband objected, naturally. Without even a thought, Baram... he... cut my husband down. Murdered him. I still remember his laughter as he took my children... all nine of them... and turned me out of my home. Once he was done with it, he burned it to the ground. Now my husband is dead, and that fiend holds my children. I know nothing of their fate and have nothing left and nowhere to turn. That is my tale, <PRO_SIRMAAM>.~ /*Now my husband is dead, and that fiend holds my children. I know nothing of their fate and have nothing left and nowhere to turn. That is my tale, <PRO_SIRMAAM>.*/
+@19 = ~My husband objected, naturally. Without even a thought, Baram... he... cut my husband down. Murdered him. I still remember his laughter as he took my children... all nine of them... and turned me out of my home. Once he was done with it, he burned it to the ground. Now my husband is dead, and that fiend holds my children. I know nothing of their fate and have nothing left and nowhere to turn. That is my tale, <SIRMAAM>.~ /*Now my husband is dead, and that fiend holds my children. I know nothing of their fate and have nothing left and nowhere to turn. That is my tale, <SIRMAAM>.*/
 @20 = ~That is very sad.~
 @21 = ~Sounds like a tough break.~
 @22 = ~Hah! At least you're still alive.~
@@ -33,7 +33,7 @@
 @32 = ~Very well... I'll help you.~
 @33 = ~I'll do what I can.~
 @34 = ~I changed my mind. Not interested.~
-@35 = ~Aye... life is 'tough' for everyone in Luskan, and we should all just bear through it, is that what you mean? Just... leave me be, <PRO_SIRMAAM>.~
+@35 = ~Aye... life is 'tough' for everyone in Luskan, and we should all just bear through it, is that what you mean? Just... leave me be, <SIRMAAM>.~
 @36 = ~I am no fool. If that is all there is that will get someone to find my children, then I will never give it up beforehand.~
 @37 = ~I am glad to hear it. Have you any questions for me, then?~
 @38 = ~Where can I find Baram?~
@@ -48,7 +48,7 @@
 @47 = ~Aye. The other High Captains who he has fought with these long weeks. Only Kurth remains... but no one is sure where he is. Kurth would want Baram dead, it is certain.~
 @48 = ~You have given me a glimmer of hope. I... I wish you the best of luck.~
 
-@50 = ~You have heard my sorry tale, <PRO_SIRMAAM>. Is that not enough?~ [NWLOND52]
+@50 = ~You have heard my sorry tale, <SIRMAAM>. Is that not enough?~ [NWLOND52]
 @51 = ~You... return. Have you found my children? Are they safe?~ [NWLOND51]
 @52 = ~I have spoken to Baram... He says your children are safe.~
 @53 = ~Baram has reneged on his deal. He will not release your children.~
@@ -60,7 +60,7 @@
 @59 = ~I have agreed to perform a service for Baram in return for their release.~
 @60 = ~Baram wanted me to kill Kurth for their release, but I refused.~
 @61 = ~I'll see what I can do.~
-@62 = ~NP: No! Noooo! Please... do something! A little more, and we would meet again! Please find my children!~ /*No! No-ooo! Please, my <PRO_LADYLORD>... do something! I cannot come this close and not find them! Please find my babies!*/
+@62 = ~NP: No! Noooo! Please... do something! A little more, and we would meet again! Please find my children!~ /*No! No-ooo! Please, my <LADYLORD>... do something! I cannot come this close and not find them! Please find my babies!*/
 @63 = ~Fine? I... but why not? Bring me to them, then! I must see them!~
 @64 = ~Baram... sent them away. To orphanages, elsewhere. I don't know where they are.~
 @65 = ~I can't lie to you, Londa. Your children are dead...~
@@ -77,7 +77,7 @@
 @76 = ~He... sent them to orphanages? Outside the city?~
 @77 = ~But you have... little Tomlen's bear. That's his, without a doubt. Th-thank you for... telling me... the truth. Here is the key to my husband's vault. It is in the sewers... in a long passage north of the water. Now I must... I must go. I... please, excuse me...~ /*Th-thank you for... telling me... the truth. Here is the key to my husband's vault. It is in the sewers... in a long passage north of the water.*/
 
-@79 = ~No. I refuse to believe it. I won't! You have no proof, none, that what you're saying is true! Bring me something... anything... that proves what you say and I'll... I'll believe it. Please, my <PRO_LADYLORD>... I'm begging you!~ /*No. I refuse to believe it. I won't! You have no proof, none, that what you're saying is true!*/
+@79 = ~No. I refuse to believe it. I won't! You have no proof, none, that what you're saying is true! Bring me something... anything... that proves what you say and I'll... I'll believe it. Please, my <LADYLORD>... I'm begging you!~ /*No. I refuse to believe it. I won't! You have no proof, none, that what you're saying is true!*/
 @80 = ~Very well. I shall return.~
 @81 = ~Forget it. I don't care if you don't believe me.~
 @82 = ~Look... I just want the coin. That's all.~
@@ -85,5 +85,5 @@
 @84 = ~NP: Oh. I... forgive me for... not believing you... Forgive me,<SIRMAAM> . I need... I need to go.~ /*Ah. I... forgive me for... doubting you...*/
 @85 = ~No. You won't get it. I want the proof!~
 @86 = ~You gives me coin or you meets husband!~
-@87 = ~You wretch! You evil, pathetic <PRO_MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault! Now I... I must... go. I... excuse me...~ /*You wretch! You evil, pathetic <PRO_MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault!*/
+@87 = ~You wretch! You evil, pathetic <MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault! Now I... I must... go. I... excuse me...~ /*You wretch! You evil, pathetic <MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault!*/
 @88 = ~NP: For the sake of your gods, help. My children disappeared, Baram took them. Do you know anything about them?~ /*I gave it to someone else already. I'm sorry. Is there something else you wanted?*/

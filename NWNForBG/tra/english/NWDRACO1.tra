@@ -1,18 +1,18 @@
-@0 = ~You are not one of my slaves. It is strange for me to see one who does not cower and flee in terror at my presence, tiny <PRO_RACE> being. I find your courage... intriguing.~ [NWDRA152]
+@0 = ~You are not one of my slaves. It is strange for me to see one who does not cower and flee in terror at my presence, tiny <RACE> being. I find your courage... intriguing.~ [NWDRA152]
 @1 = ~I am The Master. Visitors are a great curiosity in my world, so I will forgive your intrusion. Tell me, puny one, why have you come to my realm?~ [NWDRA153]
 @2 = ~I am <CHARNAME>. I am searching for the Words of Power.~
 @3 = ~NP: I'm from the <CHARNAME> team. I'm looking for Words of Power.~ /*My name is <CHARNAME>. I am searching for the Words of Power.*/
 @4 = ~I want to ask you some questions.~
 @5 = ~I'm here to kill you, wyrm!~
 @6 = ~I must be on my way.~
-@7 = ~Your name means nothing to me, <PRO_MALEFEMALE>... I have been too long absent from your world. But the Word of Power, that is something with which I am very familiar. There was a time when I would have snuffed out your existence for daring to even mention the Word in my presence. But centuries of solitude have cooled the passions of my icy blood.~ /*There was a time when I would have snuffed out your existence for daring to even mention the Word in my presence. But centuries of solitude have cooled the passions of my icy blood.*/
+@7 = ~Your name means nothing to me, <MALEFEMALE>... I have been too long absent from your world. But the Word of Power, that is something with which I am very familiar. There was a time when I would have snuffed out your existence for daring to even mention the Word in my presence. But centuries of solitude have cooled the passions of my icy blood.~ /*There was a time when I would have snuffed out your existence for daring to even mention the Word in my presence. But centuries of solitude have cooled the passions of my icy blood.*/
 @8 = ~When a dragon asks you a question it is not wise to respond with a question of your own. But my centuries of solitude have brought me a serenity uncommon to my kind. I will grant you your request, puny one. Ask your questions and I shall share my infinite wisdom with you as I see fit.~ /*When a dragon asks you a question it is not wise to respond with a question of your own. But my centuries of solitude have brought me a serenity uncommon to my kind.*/
 @9 = ~Who are you?~
 @10 = ~What is this place? How does this world exist inside a snow globe?~
 @11 = ~Can you tell me anything about the dwarves and dryads?~
 @12 = ~Do you know anything about a Word of Power?~
 @13 = ~Can you tell me anything about this amulet?~
-@14 = ~You are either very brave or very foolish, <PRO_RACE> <PRO_MALEFEMALE>. There was a time when I would have slain you for your insolence, but I have grown more placid in my centuries of solitude. I will forgive your disrespect... this time. If you push me, however, I will give you a slow and painful death. Know that you are no threat to me, tiny creature.~ /*I will forgive your disrespect... this time. If you push me, however, I will give you a slow and painful death. Know that you are no threat to me, tiny creature.*/
+@14 = ~You are either very brave or very foolish, <RACE> <MALEFEMALE>. There was a time when I would have slain you for your insolence, but I have grown more placid in my centuries of solitude. I will forgive your disrespect... this time. If you push me, however, I will give you a slow and painful death. Know that you are no threat to me, tiny creature.~ /*I will forgive your disrespect... this time. If you push me, however, I will give you a slow and painful death. Know that you are no threat to me, tiny creature.*/
 @15 = ~Enough talking, coward! Time to die!~
 @16 = ~Then I give you permission to take leave of my presence, small one.~
 @17 = ~I can tell you of this Word of Power if you wish, though its magic is far greater than anything your trivial intellect will be able to comprehend.~
@@ -25,7 +25,7 @@
 @24 = ~They are my creations, my servants, my slaves. I gave them eternal life when I built this realm, that they might serve my every need. But my needs are few, and it is rare that I am forced to call upon the creatures for their service. It has been many centuries since I last spoke with them, and now they only cower in fear or flee in terror at my approach.~ /*But my needs are few, and it is rare that I am forced to call upon the creatures for their service. It has been many centuries since I last spoke with them, and now they only cower in fear or flee in terror at my approach.*/
 @25 = ~Why are they always fighting each other?~
 @26 = ~There was a time when I would have snuffed out your existence for daring to even mention the Word in my presence. But centuries of solitude have cooled the passions of my icy blood. I can tell you of this Word of Power if you wish, though its magic is far greater than anything your trivial intellect will be able to comprehend.~ /*There was a time when I would have snuffed out your existence for daring to even mention the Word in my presence. But centuries of solitude have cooled the passions of my icy blood.*/
-@27 = ~So be it, <PRO_RACE> fool! You have brought the wrath of Ma'fel'no'sei'kedeh'naar upon yourself!~
+@27 = ~So be it, <RACE> fool! You have brought the wrath of Ma'fel'no'sei'kedeh'naar upon yourself!~
 @28 = ~The Word is an ancient magic, fashioned by the Creator Race that ruled the North before the time of manlings. Even I was not yet hatched when they vanished from the world. I was able to harness the magic of the Word, using it to shape this realm, to give eternal life to my slaves, and to make my own body immortal.~ /*The Word is an ancient magic, fashioned by the Creator Race that ruled the North before the time of manlings. Even I was not yet hatched when they vanished from the world.*/
 @29 = ~Where is the Word now?~
 @30 = ~I will grant you your request, puny one. Ask your questions and I shall share my infinite wisdom with you as I see fit.~
@@ -40,5 +40,5 @@
 @39 = ~Then you would die in the attempt. Do not trifle with me on this, small one. The blood in my veins is thick with age and slow to boil, yet my anger is terrible once unleashed.~
 @40 = ~NP: Give me that word, or you die!~ /*Give me the Word or die!*/
 @41 = ~Can you offer immortality? The Word sustains me, it is life itself. There is nothing you can offer in trade, mortal.~
-@42 = ~I have suffered you to live far too long, <PRO_RACE> fool!~
+@42 = ~I have suffered you to live far too long, <RACE> fool!~
 @43 = ~Once more you intrude upon my solitude, tiny creature being - and yet again I forgive your trespass, because I am a merciful Master. Tell me, for what reason have you returned?~ [NWDRA154]

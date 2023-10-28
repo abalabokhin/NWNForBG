@@ -1,4 +1,4 @@
-@0 = ~NP: Stranger in Luskan... And besides<RACE> . The Cleaver hasnt had many visitors since the High Captains locked up the gates and docks... Let me greet you,<SIRMAAM> .~ /*A stranger to Luskan... and a <PRO_RACE> <PRO_MANWOMAN>, besides. The Cutlass Inn certainly hasn't gotten many visitors since the High Captains sealed the gates and the docks... allow me to welcome you, <PRO_SIRMAAM>.*/
+@0 = ~NP: Stranger in Luskan... And besides<RACE> . The Cleaver hasnt had many visitors since the High Captains locked up the gates and docks... Let me greet you,<SIRMAAM> .~ /*A stranger to Luskan... and a <RACE> <MANWOMAN>, besides. The Cutlass Inn certainly hasn't gotten many visitors since the High Captains sealed the gates and the docks... allow me to welcome you, <SIRMAAM>.*/
 @1 = ~The fighting mostly bypasses my inn, so it's fairly safe if you wish to stay here. Supplies have been scarce... but I'll serve you as best I can.~
 @2 = ~Who are you?~
 @3 = ~How much are your rooms?~
@@ -44,7 +44,7 @@
 @43 = ~Why they're letting all this fighting go on is anyone's guess. It's not like we can ask them to put a stop to it.~
 @44 = ~How do you get into the Host Tower, then?~
 @45 = ~You don't get into the Host Tower, that's just it. There's a bridge to their island up in the northwest part of the district, but you won't get across it unless the Brotherhood wants you to. I suppose the High Captains would know more about it. They're the only ones who might even want to go out there, believe me.~ /*You don't get into the Host Tower, that's just it. There's a bridge to their island up in the northwest part of the district, but you won't get across it unless the Brotherhood wants you to.*/
-@46 = ~Greetings, <PRO_SIRMAAM>. You are... from the northern forests, then? Normally I don't allow barbarians to stay at the Cutlass Inn, but since the High Captains sealed the gates and docks, I've had little enough business.~
-@47 = ~I won't ask how you got into Luskan, <PRO_BROTHERSISTER>, but a holy <PRO_MANWOMAN> is always welcome in the Cutlass Inn. The gods know I've seen little enough business since the High Captains sealed the gates and docks... I can use all the divine favor I can get.~
-@48 = ~Greetings, my <PRO_LADYLORD>. Have you come to find refuge at the Cutlass Inn, like most of these other folk? Business has been poor since the High Captains sealed the gates and docks, so I'm more than pleased to welcome you.~
-@49 = ~Back already? What can I do for you, <PRO_SIRMAAM>?~
+@46 = ~Greetings, <SIRMAAM>. You are... from the northern forests, then? Normally I don't allow barbarians to stay at the Cutlass Inn, but since the High Captains sealed the gates and docks, I've had little enough business.~
+@47 = ~I won't ask how you got into Luskan, <BROTHERSISTER>, but a holy <MANWOMAN> is always welcome in the Cutlass Inn. The gods know I've seen little enough business since the High Captains sealed the gates and docks... I can use all the divine favor I can get.~
+@48 = ~Greetings, my <LADYLORD>. Have you come to find refuge at the Cutlass Inn, like most of these other folk? Business has been poor since the High Captains sealed the gates and docks, so I'm more than pleased to welcome you.~
+@49 = ~Back already? What can I do for you, <SIRMAAM>?~

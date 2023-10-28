@@ -6,14 +6,14 @@
 @5 = ~I will not answer your questions!~
 @6 = ~These names mean nothing to me. **hiss** Your cities are young, your history but a single page in the accounts of the world.~ [NWHAE090]
 @7 = ~First you must answer me!~ [NWHAE097]
-@8 = ~**hiss** You cannot slay a projection, <PRO_RACE> fool!!~ [NWHAE098]
+@8 = ~**hiss** You cannot slay a projection, <RACE> fool!!~ [NWHAE098]
 @9 = ~My magic has sealed the door, the Word of Power shall not leave until you have answered my questions. **hiss** Who do you serve!~ [NWHAE099]
-@10 = ~NP: Of all your names, there is only one that means anything to me: Maugrim. **Tell me <RACE> do you serve Maugrim?~ [NWHAE091] /*There is only one name that mattersss to me among your kind - Maugrim. **hiss** Tell me <PRO_RACE> one - do you serve Maugrim?*/
+@10 = ~NP: Of all your names, there is only one that means anything to me: Maugrim. **Tell me <RACE> do you serve Maugrim?~ [NWHAE091] /*There is only one name that mattersss to me among your kind - Maugrim. **hiss** Tell me <RACE> one - do you serve Maugrim?*/
 @11 = ~Maugrim is the enemy of Neverwinter!~
 @12 = ~Uh... yes. I serve Maugrim. Do you have a message for him?~
 @13 = ~I shall not rest until Maugrim is dead!~
-@14 = ~I see you speak the truth, <PRO_RACE> one. This is good.~ [NWHAE092]
-@15 = ~Your lies are known to me, <PRO_RACE> one! **hiss** I sense that you seek Maugrim's defeat! This is good.~ [NWHAE093]
+@14 = ~I see you speak the truth, <RACE> one. This is good.~ [NWHAE092]
+@15 = ~Your lies are known to me, <RACE> one! **hiss** I sense that you seek Maugrim's defeat! This is good.~ [NWHAE093]
 @16 = ~Your enemies are mine as well. Maugrim must be stopped. He must not get the Words of Power!~ [NWHAE094]
 @17 = ~I have answered your questions. Now tell me who you are!~
 @18 = ~Tell me something I don't know.~
@@ -52,7 +52,7 @@
 @51 = ~What does this have to do with Maugrim?~
 @52 = ~We who had once been Slaves scattered and hid the Words so that we would be forever free of their legacy. **hiss** Now thousands of years have passed and even we who hid the Words no longer know where to find them.~ [NWHAE071]
 @53 = ~Maugrim is already doomed. **hiss** The Words were meant to release ancient evil upon the land to devastate those who survived the change the Old Ones could not.~ [NWHAE064]
-@54 = ~NP: Spare me your sarcasm <RACE>! **You're no better than Maugrim!~ [NWHAE069] /*Spare me your sarcasm, <PRO_RACE> one! **hiss** You are as big a fool as Maugrim!*/
+@54 = ~NP: Spare me your sarcasm <RACE>! **You're no better than Maugrim!~ [NWHAE069] /*Spare me your sarcasm, <RACE> one! **hiss** You are as big a fool as Maugrim!*/
 @55 = ~The plague was only the first of the evils the Words will unleash. **hiss** The world as you know it shall be no more if Maugrim succeeds! This is the legacy of the Creators.~ [NWHAE065]
 @56 = ~The Words will... UNH!!! No - it cannot be! UNH - Morag!~ [NWHAE066]
 @57 = ~What? What's wrong?~

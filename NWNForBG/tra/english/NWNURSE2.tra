@@ -1,4 +1,4 @@
-@0 = ~Is there something I can do for you, <PRO_SIRMAAM>?~
+@0 = ~Is there something I can do for you, <SIRMAAM>?~
 @1 = ~Could I ask you some questions?~
 @2 = ~Goodbye.~
 @3 = ~Make it quick - my time is better spent easing the suffering of my patients.~
@@ -23,7 +23,7 @@
 @22 = ~You don't like Desther much, do you?~
 @23 = ~I was a midwife, before the plague. But there ain't many babies being born now - not live ones, anyhow. I heard Castle Never needed nurses to tend their sick and dying, so I came.~
 @24 = ~Aren't you afraid of contracting the plague yourself?~
-@25 = ~NP: I have to tend to the sick, but I can spare a few minutes for you.~ /*I really should be tending the sick, but for you my <PRO_LADYLORD> I can spare a few moments.*/
+@25 = ~NP: I have to tend to the sick, but I can spare a few minutes for you.~ /*I really should be tending the sick, but for you my <LADYLORD> I can spare a few moments.*/
 @26 = ~Aribeth doesn't like him, I know that much. He's got a sharp tongue and a sour face, but I think it's more than that. But it's not really my place to speak of such things.~
 @27 = ~NP: Tell me. There's no harm done.~ /*Come now, telling me won't do any harm.*/
 @28 = ~Lady Aribeth's always telling Fenthick not to put so much faith in Desther and his Helmites. You know they're lovers? Fenthick and Aribeth, I mean. Of course you know. Everybody knows.~

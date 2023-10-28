@@ -65,7 +65,7 @@
 @64 = ~Ask your question, <CHARNAME>, and I shall answer if it pleases me.~
 @65 = ~NP: Then I will give you the legacy of the Creator Race. This key will open the chamber behind me where the Word is kept. Your word of power<CHARNAME> especially since its useless to me.~ /*Then I give you the legacy of the Creator Race. This key will open the chamber behind me, where the Word is stored. The Word of Power is yours, <CHARNAME>, as it is of no use to me, anyway. Now, is there something else you wish of me?*/
 
-@67 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <PRO_RACE> mortal. My offer stands. You will get nothing more from me.~
+@67 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <RACE> mortal. My offer stands. You will get nothing more from me.~
 @68 = ~Fine, take the eggs.~
 @69 = ~Then I think I'll just keep these eggs for myself, Klauth!~
 @70 = ~Keep them, it matters not to me. There are others who will serve me in this; there are other caches of eggs to be found. Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?~ /*Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?*/
@@ -80,7 +80,7 @@
 @79 = ~I think I deserve a little more than 5000 gold.~
 @80 = ~What's wrong with the dragon in the other lair within this complex?~
 @81 = ~NP: Then the gold is yours<CHARNAME> because its useless to me anyway.~ /*Then the gold is yours, <CHARNAME>, as it is of little use to me. Now, is there more you wish of me?*/
-@82 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <PRO_RACE> mortal. My offer stands. You will get nothing more from me.~
+@82 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <RACE> mortal. My offer stands. You will get nothing more from me.~
 @83 = ~Then I think I'll just keep these eggs for myself!~
 @84 = ~NP: Gold? I would like to receive another reward. Maybe a powerful magic item?~ /*Gold? I was hoping for some other reward. A powerful magic item, perhaps?*/
 @85 = ~Then you shall get no reward. I can make other orbs, I can find other servants. Keep the orb if you wish, <CHARNAME>, it makes no difference to me.~

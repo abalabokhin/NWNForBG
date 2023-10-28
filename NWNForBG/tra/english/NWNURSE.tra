@@ -2,7 +2,7 @@
 @1 = ~NP: It looks like an infirmary. Can you heal me?~ /*What exactly can't you stand?*/
 @2 = ~NP: Why are there so many sick people here? I hope it's not the plague.~ /*How do you know so much about me?*/
 @3 = ~NP: Okay, I'm leaving now.~ /*Fine, I'll go.*/
-@4 = ~NP: Sorry<SIRMAAM> . My knowledge is not enough for this. Contact Newrick in the temple, he will definitely help you.~ /*Sorry, <PRO_SIRMAAM>. Nobody is allowed into the residence. Very strict orders, you understand.*/
+@4 = ~NP: Sorry<SIRMAAM> . My knowledge is not enough for this. Contact Newrick in the temple, he will definitely help you.~ /*Sorry, <SIRMAAM>. Nobody is allowed into the residence. Very strict orders, you understand.*/
 @5 = ~NP: Plague? No you. These are ordinary patients, as well as soldiers who were injured. Sorry, I'll mind my own business.~ /*So you're just going to let this continue? I can't believe it. Go on, then. Leave me to my task.*/
 @6 = ~NP: Sorry, no time to chat, I have to tend to the sick and wounded.~ /*Them attack person who helps sick people?*/
 @7 = ~NP: You know, I'm an aspiring writer. I have just finished work on a novel based on the true life of the great but misunderstood Drizzt Do'Urden. If you have a couple of minutes, I can read you a passage.~ /*The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.*/

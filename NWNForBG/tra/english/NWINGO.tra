@@ -1,7 +1,7 @@
-@0 = ~NP: The temperature today is just right for working in the field, isn't it,<LADYLORD> ?~ /*A good <DAYNIGHTALL> for field work, wouldn't you say, m'<PRO_LADYLORD>?*/
+@0 = ~NP: The temperature today is just right for working in the field, isn't it,<LADYLORD> ?~ /*A good <DAYNIGHTALL> for field work, wouldn't you say, m'<LADYLORD>?*/
 @1 = ~Could I ask you some questions?~
 @2 = ~Goodbye.~
-@3 = ~I suppose you could. What is it you want to know, m'<PRO_LADYLORD>?~
+@3 = ~I suppose you could. What is it you want to know, m'<LADYLORD>?~
 @4 = ~I'm curious about some recent events...~
 @5 = ~Anything interesting about these parts?~
 @6 = ~Can I ask you some directions?~
@@ -44,5 +44,5 @@
 @43 = ~NP: Pete O'Deal has a farm east of here, he has a herd there. Wolves slaughter livestock almost every day.~ /*Just down the road, Pete O'Deel has a farm with a few head of cattle. A pack of wolves has been killing his cattle almost daily.*/
 @44 = ~NP: Well, as they say, said A, say B too ... There are those trees, this is Charwood, people don’t live there ... You can cut down a hundred of these trees, and the next morning you wake up - and they are right there, standing intact, as if no one touched them. All is not well with these forests. They say that somewhere there is a village of lost souls, and the people who went there never returned...~ /*You can cut down a hundred of those trees but, when you wake up the next morning, they'll all be standing again like they'd never known the blade.*/
 @45 = ~My father-in-law warned me never to go in there and I've told my boy the same. You'd be wise to do likewise... Now is there anything else?~
-@46 = ~NP: What, lost your way, right, my friend?~ /*Out for a jaunt, are you, <PRO_SIRMAAM>?*/
+@46 = ~NP: What, lost your way, right, my friend?~ /*Out for a jaunt, are you, <SIRMAAM>?*/
 @47 = ~NP: Just try not to trample the crops. Is there anything I can do to help you?~ /*Mind you don't trample the corn, now.*/

@@ -15,13 +15,13 @@
 @14 = ~The wind stole your name from your lips and carried it to the trees, who whispered it to me. Now, how may I help you?~ /*The wind stole your name from your lips and carried it to the trees, who whispered it to me.*/
 @15 = ~Nature doesn't lie to her allies. Now, how may I help you?~ /*Nature doesn't lie to her allies.*/
 @16 = ~The wind stole your name from your lips and carried it to the trees, who whispered it to me. Now, how may I help you?~ /*The wind stole your name from your lips and carried it to the trees, who whispered it to me.*/
-@17 = ~There are many different philosophies about nature, which we spend time arguing, but right now the topic has mainly centered on the missing druids. It is a long story, but I sense that you are a <PRO_MANWOMAN> of action, so I shall try to be brief.~ /*There are many different philosophies about nature, which we spend time arguing, but right now the topic has mainly centered on the missing druids.*/
+@17 = ~There are many different philosophies about nature, which we spend time arguing, but right now the topic has mainly centered on the missing druids. It is a long story, but I sense that you are a <MANWOMAN> of action, so I shall try to be brief.~ /*There are many different philosophies about nature, which we spend time arguing, but right now the topic has mainly centered on the missing druids.*/
 @18 = ~Thank you.~
 @19 = ~I don't care.~ 
 @20 = ~Nature is always competitive. We try ourselves in contests against one another, but only druids are allowed to participate in these rites.~
 @21 = ~What did you mean when you said some of you went missing?~
 @22 = ~I am sad to hear that. If you would like to know how you could help restore the natural order, please return and speak to me again.~
-@23 = ~It is a long story, but I sense that you are a <PRO_MANWOMAN> of action, so I shall try to be brief.~
+@23 = ~It is a long story, but I sense that you are a <MANWOMAN> of action, so I shall try to be brief.~
 @24 = ~Until recently, this wood was a relatively peaceful place. The nymphs of the wood protected the creatures and the natural order reigned. But now something has gone terribly wrong. The creatures have become overly aggressive, attacking anyone they lay eyes on, including those who are considered friends of nature.~ /*But now something has gone terribly wrong. The creatures have become overly aggressive, attacking anyone they lay eyes on, including those who are considered friends of nature.*/
 @25 = ~You mean rangers and druids are being attacked?~
 @26 = ~I guess they finally get to see what everyone experiences in the wild.~
@@ -76,7 +76,7 @@
 @75 = ~The Spirit of the Wood is dead.~
 @76 = ~No. Goodbye.~
 @77 = ~The druids are Orlane, a halfling; Bree, a human; and Terari, an elf. I hope you find them soon. Silvanus be with you.~ /*The druids are Orlane, a halfling; Bree, a human; and Terari, an elf. I hope you find them soon.*/
-@78 = ~You have done very well, <PRO_GIRLBOY>. With the Spirit of the Wood cured, we can return to our union with nature and her creatures without fear of destruction. Here is the 500 gold, as I promised earlier.~ /*You have done very well, <PRO_GIRLBOY>. With the Spirit of the Wood cured, we can return to our union with nature and her creatures without fear of destruction.*/
+@78 = ~You have done very well, <GIRLBOY>. With the Spirit of the Wood cured, we can return to our union with nature and her creatures without fear of destruction. Here is the 500 gold, as I promised earlier.~ /*You have done very well, <GIRLBOY>. With the Spirit of the Wood cured, we can return to our union with nature and her creatures without fear of destruction.*/
 @79 = ~I am happy to have been of service. Thank you for your generosity.~
 @80 = ~I almost died to save your precious Spirit! I think such a sacrifice should be worth a little more than 5,000 gold!~ 
 @81 = ~You will give me more gold or I'll set fire to your precious forest!~ 

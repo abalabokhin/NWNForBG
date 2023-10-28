@@ -2,7 +2,7 @@
 @1 = ~Are you certain? There will be no refunds on the fee you paid me earlier. Do you really want me to leave?~
 @2 = ~Yes. Go.~
 @3 = ~No. Stay.~
-@4 = ~NP: Well, our paths have parted, though I'll wait for you in case you change your mind and want me on your team again. Good-bye. Where can we meet if you change your mind?~ /*Then we shall part ways, though I will wait here in case you reconsider and wish to join me again. Farewell, my <PRO_LADYLORD>.*/
+@4 = ~NP: Well, our paths have parted, though I'll wait for you in case you change your mind and want me on your team again. Good-bye. Where can we meet if you change your mind?~ /*Then we shall part ways, though I will wait here in case you reconsider and wish to join me again. Farewell, my <LADYLORD>.*/
 @5 = ~NP: Go back to the sword fair.~ /*Get to the point.*/
 @6 = ~NP: I'll find you at Kendrak Barracks.~ /*Port Llast - Kendrack's Barracks*/
 @7 = ~NP: Wait for me here.~ /*Wait right here.*/
@@ -17,7 +17,7 @@
 @16 = ~Goodbye.~
 @17 = ~I know we went our separate ways, <CHARNAME>, but it seems the gods have seen fit to bring us together once more. After we parted ways in Neverwinter, I returned to the Trade of Blades to offer my skills for hire. It was there I was approached by Lady Aribeth on behalf of Lord Nasher himself.~ /*After we parted ways in Neverwinter, I returned to the Trade of Blades to offer my skills for hire. It was there I was approached by Lady Aribeth on behalf of Lord Nasher himself.*/
 @18 = ~I am grateful for all you have done for me, <CHARNAME>, but I did not follow you here. Make no mistake, Daelan Red Tiger is his own man.~
-@19 = ~Farewell, <PRO_SIRMAAM>. My blade is at your service if you require the aid of a skilled and honorable warrior.~
+@19 = ~Farewell, <SIRMAAM>. My blade is at your service if you require the aid of a skilled and honorable warrior.~
 @20 = ~It seems Lord Nasher is determined to root out the cult that brought so much suffering to his city. He has ordered all the mercenaries in Neverwinter to come to Port Llast to join in the search.~
 @21 = ~So you were conscripted into service by Aribeth?~
 @22 = ~NP: How much would it cost to hire you?~ /*How much would it cost to hire your services?*/
@@ -31,7 +31,7 @@
 @30 = ~I would be honored to join my blade to your cause.~
 @31 = ~Then I shall bid you farewell. If you ever find yourself in need of a skilled and honorable warrior come speak to me again.~
 @32 = ~That city has long been an enemy of Neverwinter. An evil blight upon the North, it is widely acknowledged as the home of murders and thieves - a place with no honor! It would not surprise me to discover links to the cult in that den of evil. Is there anything else I can help you with, <CHARNAME>?~ /*That city has long been an enemy of Neverwinter. An evil blight upon the North, it is widely acknowledged as the home of murders and thieves - a place with no honor!*/
-@33 = ~Greetings once more, <PRO_SIRMAAM>. It is I, Daelan Red Tiger, warrior of the Uthgardt Red Tiger tribe. Remember? I am eager to have my revenge on the cult that loosed its plague on Neverwinter.~ [NWDAEL55] /*Greetings once more, <PRO_SIRMAAM>. It is I, Daelan Red Tiger, warrior of the Uthgardt Red Tiger tribe. Remember?*/
+@33 = ~Greetings once more, <SIRMAAM>. It is I, Daelan Red Tiger, warrior of the Uthgardt Red Tiger tribe. Remember? I am eager to have my revenge on the cult that loosed its plague on Neverwinter.~ [NWDAEL55] /*Greetings once more, <SIRMAAM>. It is I, Daelan Red Tiger, warrior of the Uthgardt Red Tiger tribe. Remember?*/
 @34 = ~So you're working for Aribeth?~
 @35 = ~Have you heard any rumors about the cult since you've come here?~
 @36 = ~If you're so interested in vengeance, why are you standing around here?~

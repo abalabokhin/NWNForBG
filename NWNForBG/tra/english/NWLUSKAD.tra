@@ -2,7 +2,7 @@
 @1 = ~Why are the gates closed?~
 @2 = ~Let me through the gates... now.~
 @3 = ~All right, I'll be going.~
-@4 = ~The gates are closed to make certain that the plague in Neverwinter doesn't spread to Luskan, <PRO_SIRMAAM>. Can't be too careful.~
+@4 = ~The gates are closed to make certain that the plague in Neverwinter doesn't spread to Luskan, <SIRMAAM>. Can't be too careful.~
 @5 = ~NP: But there is no more plague in Neverwinter.~ /*But the plague in Neverwinter has been cured.*/
 @6 = ~I'm sure there's some way to get inside the city.~
 @7 = ~Is that supposed to be some kind of threat? Even if you cut us down, they still won't open the gates for you, fool.~
@@ -15,8 +15,8 @@
 @14 = ~Listen, why are you continuing down this line of questioning? Luskan isn't a safe city, there's plague looming all around us. Need you more information than that? But rest assured, things will return to normal sooner or later. The gates will be open, and you may enter into Luskan then.~ /*Listen, why are you continuing down this line of questioning? Luskan isn't a safe city, there's plague looming all around us. Need you more information than that?*/
 @15 = ~Perhaps I can help the city.~
 @16 = ~NP: How about a small donation to the &quot;city&quot;, let's say 300 gold?~ /*How about an offer, for the "city," of 100 gold?*/
-@17 = ~I doubt that, <PRO_SIRMAAM>. Come back later when the problem has cleared.~
-@18 = ~And get into all sorts of trouble with the sergeant? No thanks, <PRO_SIRMAAM>... the gate's being too closely watched. Best you just come back when this is all sorted out.~
-@19 = ~Hmmm... by your description, I think you're the one the sergeant wants to speak to, <PRO_SIRMAAM>.~
+@17 = ~I doubt that, <SIRMAAM>. Come back later when the problem has cleared.~
+@18 = ~And get into all sorts of trouble with the sergeant? No thanks, <SIRMAAM>... the gate's being too closely watched. Best you just come back when this is all sorted out.~
+@19 = ~Hmmm... by your description, I think you're the one the sergeant wants to speak to, <SIRMAAM>.~
 @20 = ~I don't know how you convinced the sergeant, but if he says it's okay, go on through. Luskan's a dangerous place right now, but it's your neck to risk.~
 @21 = ~NP: I must warn you... if you enter the city, we won't be able to let you out. Decide whether to go in or out.~ /*I'll tell you right now, though... you go inside the city, we ain't letting you back out. In or out, one or the other.*/

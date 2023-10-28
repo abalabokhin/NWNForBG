@@ -4,7 +4,7 @@
 @3 = ~I'll cross the bridge if I like.~
 @4 = ~I have a pass right here. I am an ambassador from Mulhorand.~
 @5 = ~Fine, I'll go.~
-@6 = ~This bridge is the only egress onto the island where the Host Tower of the Arcane Brotherhood sits, <PRO_SIRMAAM>.~
+@6 = ~This bridge is the only egress onto the island where the Host Tower of the Arcane Brotherhood sits, <SIRMAAM>.~
 @7 = ~The Arcane Brotherhood?~
 @8 = ~Surely there must be some other way across?~
 @9 = ~You need written permission by the Arcane Brotherhood themselves, affixed with their seal.~
@@ -16,6 +16,6 @@
 @15 = ~Not hardly. The wizards protect their privacy with magic. You can't sail a boat to the island or tunnel there or even cast a spell to take you there... no passing, period. Not without their say so. That, at least, is what I'm told.~
 @16 = ~(sigh) You don't. It's only given by the wizards to the High Captains and dignitaries invited to see them.~
 @17 = ~What is Arcane Brotherhood?~
-@18 = ~Well... it's affixed with the seal. That's magical, so it can't be forged. Very well, then, <PRO_SIRMAAM>, my apologies. The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.~ /*The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.*/
+@18 = ~Well... it's affixed with the seal. That's magical, so it can't be forged. Very well, then, <SIRMAAM>, my apologies. The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.~ /*The Brotherhood have had quite a few dignitaries arriving within the last couple of weeks, but none from so far away. No matter. You may cross.*/
 @19 = ~You are free to cross the bridge, ambassador.~
 @20 = ~You must be with the ambassador from Mulhorand, yes? You are free to cross the bridge.~

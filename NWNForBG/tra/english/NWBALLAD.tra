@@ -1,4 +1,4 @@
-@0 = ~NP: Hello. My name is Ballard. I'm a tracker, looking for someone interested in a dangerous mission. Perhaps you are interested?~ [NWBAL052] /*Hello there <PRO_GIRLBOY>. My name is Ballard. I am a ranger and I am looking for someone interested in a dangerous mission. Might you be interested?*/
+@0 = ~NP: Hello. My name is Ballard. I'm a tracker, looking for someone interested in a dangerous mission. Perhaps you are interested?~ [NWBAL052] /*Hello there <GIRLBOY>. My name is Ballard. I am a ranger and I am looking for someone interested in a dangerous mission. Might you be interested?*/
 @1 = ~Yes. My name is <CHARNAME>. What do you need?~
 @2 = ~I might be. Why do you ask?~
 @3 = ~Not right now thanks. Goodbye.~
@@ -17,7 +17,7 @@
 @16 = ~I don't need any supplies, thanks.~
 @17 = ~I would like to see your wares.~
 
-@19 = ~Then Mielikki speed your way <PRO_BROTHERSISTER>.~
+@19 = ~Then Mielikki speed your way <BROTHERSISTER>.~
 @20 = ~The Wood is to the east of here. Be sure you stop by the grove before you enter the forest proper. Aawill might have some more information for you.~
 @21 = ~Well, that's not really up to me to say, but I've never known Aawill to be stingy when it came to rewarding other people's assistance.~
 @22 = ~Welcome back. What can I do for you now?~ [NWBAL051]
