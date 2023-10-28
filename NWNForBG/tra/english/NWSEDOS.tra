@@ -7,7 +7,7 @@
 @6 = ~Sedos Sebile, of the Neverwinter Militia. I'm in charge of the operation here... And you?~
 @7 = ~I'm called <CHARNAME>.~
 @8 = ~My name is <CHARNAME>. I'm an adventurer.~
-@9 = ~NP: My name doesn't matter, I'm the <CLASS> of the <CHARNAME> command.~ /*My name isn't important.*/
+@9 = ~My name doesn't matter, I'm the <RACE> of the <CHARNAME> team.~
 @10 = ~I don't generally give out my name.~
 @11 = ~Look, there's a crisis out there and I have little time for friendly banter. What I need are warm bodies to throw at a problem outside of regular militia duties.~
 @12 = ~What kind of job?~
@@ -16,7 +16,7 @@
 @15 = ~Very well. <CHARNAME> it is. Truth be told, we've got our hands full here in the Peninsula and could use your help... it's a bit outside standard militia duties though.~
 @16 = ~An adventurer, hmm? Very well, <CHARNAME>, I could use your help here in the Peninsula... it's a bit outside standard militia duties though.~
 @17 = ~As you wish. All the same, we've got our hands full here in the Peninsula and could use your help... it's a bit outside standard militia duties though.~
-@18 = ~NP: All the prisoners have taken to the streets, and we are exhausted to the point of trying to protect civilians... As if Howling Death wasn't enough. I need someone to get into the prison and find out what the devil is going on. Lady Aribeth has instructed me to give 1000 gold to any militiaman who brings me proof that the problem is solved. Consider it risk pay.~ /*Lady Aribeth's authorized a 300 gold piece bonus to any militia member who can bring me proof that the situation's been resolved. Consider it danger pay.*/
+@18 = ~With all the prisoners in the streets, we're stretched to the limit just trying to keep the civilians safe... As if the Wailing wasn't enough... What I need is someone to get inside that prison and figure out what the hell is going on down there. Lady Aribeth's authorized a 1000 gold piece bonus to any militia member who can bring me proof that the situation's been resolved. Consider it danger pay.~
 @19 = ~How do you intend to get me into the prison?~
 @20 = ~If you can't do it, how would I?~
 @21 = ~They're running the prison like a fortress, sending out raiding parties and then retreating back inside. It's been hard to get a hold of them. I think they probably carry keys to get back into the fortress once they've finished looting or whatever. Nobody we've caught has had one, though.~ /*I think they probably carry keys to get back into the fortress once they've finished looting or whatever. Nobody we've caught has had one, though.*/
@@ -24,7 +24,7 @@
 @23 = ~Since you can't bust down the front door, you'll have to find the person with that key. I'd start near the sewers in the southwest of the district. We've seen a number of groups around there.~
 @24 = ~That doesn't seem like much pay for a lot of work.~
 @25 = ~Perhaps you'd be willing to give an advance... ?~
-@26 = ~NP: What dangers await me?~ /*How did they escape?*/
+@26 = ~What dangers await me?~
 @27 = ~Okay, me do it.~
 @28 = ~No, I'm not interested in this.~
 @29 = ~Perhaps, but the prisoners will likely have stripped the place of any valuables, and you're welcome to keep anything you confiscate from them.~
@@ -46,19 +46,19 @@
 @45 = ~I'll get back to it. Farewell.~
 @46 = ~As you wish, <SIRMAAM>, but I have my orders and shall remain here until the job is done.~
 @47 = ~The escaped prisoners keep sending raiding parties out of the prison. One of them must have a key to get back in. You'll have to find who has that key. I don't know any more than that.~ /*The escaped prisoners keep sending raiding parties out of the prison. One of them must have a key to get back in.*/
-@48 = ~Aribeth has authorized a 300 gold piece reward. If you wish more, we will discuss it when you produce results.~
+@48 = ~Aribeth has authorized a 1000 gold piece reward. If you wish more, we will discuss it when you produce results.~
 @49 = ~Excellent. I shall await your return, then.~
 @50 = ~Hello there. I'm glad to see people alive. I'm not sure what happened in the prison, but whatever it was, it's had a big effect on everyone out here. The escaped prisoners seem to be a little less vicious. Certainly they are still dangerous, but whatever was driving the riot seems to be gone. I have no explanation.~ [NWSED056] /*The escaped prisoners seem to be a little less vicious. Certainly they are still dangerous, but whatever was driving the riot seems to be gone. I have no explanation.*/
 @51 = ~Head Gaoler Alaefin was controlled by something.~
 @52 = ~Something was controlling Head Gaoler Alaefin. I've got a piece of it.~
-@53 = ~Yes, I heard that it was the Waterdhavian intellect devourer. I also heard that you turned the remains of it in to Aribeth. Good work. Her word is good enough proof that you did the job. I assume that 300 gold danger pay is sufficient?~ /*Her word is good enough proof that you did the job. I assume that 300 gold danger pay is sufficient?*/
+@53 = ~Yes, I heard that it was the Waterdhavian intellect devourer. I also heard that you turned the remains of it in to Aribeth. Good work. Her word is good enough proof that you did the job. I assume that 1000 gold danger pay is sufficient?~ /*Her word is good enough proof that you did the job. I assume that 1000 gold danger pay is sufficient?*/
 @54 = ~Yes, that will do nicely.~
 @55 = ~Better offer some more money, woman. I'd hate for you to... come to harm.~
 @56 = ~I need no reward. The Prison's troubles have been resolved and that is all that matters.~
 @57 = ~Do you have evidence to support that you have ended the threat? I cannot report this until we know for sure. Bring me proof that you have dealt with whatever you claim was controlling him. Then we shall see about your reward.~ /*Do you have evidence to support that you have ended the threat? I cannot report this until we know for sure.*/
-@58 = ~Let's have a look at that... It's the brain of an intellect devourer, isn't it? So that's why Captain Alaefin was acting so strangely! Of course! The intellect devourer was one of the Waterdhavian creatures that Lady Aribeth has been searching for to help cure the plague! You'd better return this to her. That said, this is proof enough that you've done the job I required of you. I imagine 300 gold in danger pay will be sufficient.~ /*That said, this is proof enough that you've done the job I required of you. I imagine 300 gold in danger pay will be sufficient.*/
+@58 = ~Let's have a look at that... It's the brain of an intellect devourer, isn't it? So that's why Captain Alaefin was acting so strangely! Of course! The intellect devourer was one of the Waterdhavian creatures that Lady Aribeth has been searching for to help cure the plague! You'd better return this to her. That said, this is proof enough that you've done the job I required of you. I imagine 1000 gold in danger pay will be sufficient.~ /*That said, this is proof enough that you've done the job I required of you. I imagine 1000 gold in danger pay will be sufficient.*/
 @59 = ~I thank you for all the trouble you have taken in completing this task, then. I will speak well of you when I make my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
 
-@61 = ~You had a job to do and you did it. Here's your pay, 300 gold. I'll make note of your attempt to threaten me in my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
+@61 = ~You had a job to do and you did it. Here's your pay, 1000 gold. I'll make note of your attempt to threaten me in my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
 @62 = ~Indeed, good <SIRMAAM>. You have performed admirable service and declined all reward. I will speak most highly of you when I make my report. Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.~ /*Now, if you'll excuse me, I must prepare that report to present to Lord Nasher. He is not well, but news of your success should lift his spirits some.*/
 @63 = ~I really must file my report with Lord Nasher. Excuse me, <SIRMAAM>.~ [NWSED055]
