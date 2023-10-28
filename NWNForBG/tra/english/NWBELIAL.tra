@@ -2,23 +2,23 @@
 @1 = ~Speak quickly <RACE> fool. Your magic protections will not last long in this place. What do you require of the Fire Lord?~
 @2 = ~I command you to give me an item of the greatest power!~
 @3 = ~I come as the Judge and demand only answers.~
-@4 = ~I was commanded so once before, by the mortal Karlat Jhareg... To him I gave a phylactery where his soul could rest, safe from mortal threat. I had my reasons for giving it to him then. For you, I see no such advantage. Choose again, and more wisely.~ /*I was commanded so once before, by the mortal Karlat Jhareg... To him I gave a phylactery where his soul could rest, safe from mortal threat.*/
+@4 = ~I was commanded so once before, by the mortal Karlat Jhareg... To him I gave a phylactery where his soul could rest, safe from mortal threat. I had my reasons for giving it to him then. For you, I see no such advantage. Choose again, and more wisely.~ 
 @5 = ~I require the assistance of a magic item!~
-@6 = ~NP: Take this and go away.~ /*I'll take that, thank you.*/
+@6 = ~Take this and leave.~
 @7 = ~You, fleshling? You are the Judge? Then my charade is over for you command me as none other has before...~
 @8 = ~You're trapped here too, aren't you...~
 @9 = ~Then tell me the tale of the brothers Jhareg...~
 @10 = ~Argue your guilt or innocence while you still can...~
 @11 = ~What charade do you speak of?~
 @12 = ~Were you a witness or a participant in this crime?~
-@13 = ~NP: Yes, Judge. I didn't expect Lathander to interfere with my deal with this wizard. Like ghosts and mortals, I am bound to this place... You see, it was I who planted the seeds of murder in Karlat's mind. He was just a tool in my hands, I controlled him.~ /*Yes, my Judge. I had not bargained on Lathander's intervention in my dealings with the wizard. Like the ghosts and mortals, I am bound unto this place...*/
+@13 = ~Yes, my Judge. I had not bargained on Lathander's intervention in my dealings with the wizard. Like the ghosts and mortals, I am bound unto this place... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~
 @14 = ~Tell me more...~
 @15 = ~Get to the story.~
-@16 = ~Let the brothers tell their own tales, Judge. I am here to tell my own... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ /*You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.*/
-@17 = ~NP: We are all guilty, my judge, and all are innocent, except for one being... It is I. You see, it was I who planted the seeds of murder in Karlat's mind. He was just a tool in my hands, I controlled him.~ /*You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.*/
-@18 = ~NP: I am Belial, prince of demons! How could one believe that such a simple spell could summon me? No, I had my own reasons for responding to Karlat Jareg's call, Judge... You see, it was I who planted the seeds of murder in Karlat's mind. He was just a tool in my hands, I controlled him.~ /*I am Belial, prince of demons! Did you believe that such a simple spell would summon me? No, I answered Karlat Jhareg's call for my own reasons, Judge...*/
-@19 = ~Where does the crime begin? Where does it end? A crime is not an event! It is a thread that must be followed through the weave... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ /*Where does the crime begin? Where does it end? A crime is not an event! It is a thread that must be followed through the weave...*/
-@20 = ~NP: Quintus was the tool of the tool, the slave of the servant. It was he who brought the children to the castle, and Karlat cast a spell that killed them ... It was me, it was I who kept silent about the fact that this murder does not make sense. It was not needed for the Carlat ritual... but I told him otherwise...~ /*It was I, alone, who stayed silent in the knowledge that the slaughter held no meaning. Karlat's ritual did not require it... but I chose to tell him otherwise...*/
+@16 = ~Let the brothers tell their own tales, Judge. I am here to tell my own... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ 
+@17 = ~All of us are guilty, my Judge, and all are innocent save one... That one is I. You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~
+@18 = ~I am Belial, prince of demons! Did you believe that such a simple spell would summon me? No, I answered Karlat Jhareg's call for my own reasons, Judge... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ 
+@19 = ~Where does the crime begin? Where does it end? A crime is not an event! It is a thread that must be followed through the weave... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ 
+@20 = ~Quint was a weapon of a weapon, a servant's slave. It was he who brought the children in and Karlat who cast the spell that killed them... It was I, alone, who stayed silent in the knowledge that the slaughter held no meaning. Karlat's ritual did not require it... but I chose to tell him otherwise...~ 
 @21 = ~Then it was you behind the slaughter!?~
 @22 = ~But why did you do this?~
 @23 = ~Why are you telling me this so openly?~
@@ -26,9 +26,9 @@
 @25 = ~Very well. Quint gathered the children and Karlat killed them... But it was I who told Karlat the deed was required, though I knew it was not.~
 @26 = ~I am Belial, Prince of Demons, Lord of Fire, Scourge of the Abyssal Depths... Were you ever fool enough to expect another?~
 @27 = ~Thus is the nature of demons, Judge. Why is there needless suffering in the world? Why is there injustice and strife and tyranny? It is because of us...~
-@28 = ~For one, Lathander has bound all within this castle to heed the Judge's will. For another, how do you intend to punish a demon? The Abyss is home to me and I long to walk once more upon its sea of flames.~ /*For another, how do you intend to punish a demon? The Abyss is home to me and I long to walk once more upon its sea of flames.*/
+@28 = ~For one, Lathander has bound all within this castle to heed the Judge's will. For another, how do you intend to punish a demon? The Abyss is home to me and I long to walk once more upon its sea of flames.~ 
 @29 = ~If it means an end to my accursed bondage in this place, then I will gladly give it... There, take it and make of it what you will.~
-@30 = ~NP: The agreement has been fulfilled. I'm out.~ /*This talk is over. Get out.*/
+@30 = ~The agreement has been fulfilled.~ 
 
 @32 = ~Foolish mortal, you have forgotten to cast your protection charm! Belial shall rule!~
 

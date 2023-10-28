@@ -1,4 +1,4 @@
-@0 = ~NP: Greetings, <SIRMAAM>. I'm just packing up my stuff, hopefully I'll be out of here soon. What can I do for you?~ [NWARH050] /*Greetings my <LADYLORD>. I was just getting packed up in the hopes of leaving soon. How may I assist you?*/
+@0 = ~Greetings my <LADYLORD>. I was just getting packed up in the hopes of leaving soon. How may I assist you?~ [NWARH050]
 @1 = ~Could I ask you some questions?~
 @2 = ~Goodbye.~
 @3 = ~What would you like to ask?~
@@ -18,10 +18,10 @@
 @17 = ~Don't you want to get revenge?~
 @18 = ~We were searching for evidence of an ancient race. But you should really talk to Jax about that.~
 @19 = ~Where is this Jax?~
-@20 = ~NP: Who can I talk to besides Jax?~ /*I can't talk right now.*/
+@20 = ~Who can I talk to besides Jax?~ 
 @21 = ~Sorry, I just mean that ever since we were attacked by the trolls, nobody really listens to anybody.~
 @22 = ~I can't afford the trip by myself and Jax won't leave. He's still hoping for reinforcements from Waterdeep to show up, or for an adventurer to hire.~
-@23 = ~Of course I do, but I'm realistic. I can't afford to pay some hero to go slaughter those beasts. I just want to get out of here before the trolls decide to come out of the caves. No, if you want to hear about revenge, I suggest you go talk to Lenton. He's around here somewhere.~ /*Of course I do, but I'm realistic. I can't afford to pay some hero to go slaughter those beasts. I just want to get out of here before the trolls decide to come out of the caves.*/
+@23 = ~Of course I do, but I'm realistic. I can't afford to pay some hero to go slaughter those beasts. I just want to get out of here before the trolls decide to come out of the caves. No, if you want to hear about revenge, I suggest you go talk to Lenton. He's around here somewhere.~ 
 @24 = ~So why don't you go back to Waterdeep?~
 @25 = ~Who is this Lenton?~
 @26 = ~Is there anybody, besides Lenton and Jax, to talk to around here?~

@@ -31,8 +31,8 @@
 @30 = ~I am the one who will ask the questions, Aribeth.~
 @31 = ~Die, traitor! Die!~
 @32 = ~Honor? I learned long ago there is no such thing. Honor is but a myth. Death, vengeance and despair - these are real.~ [NWARI591]
-@33 = ~Let me live? You can do no such thing, <CHARNAME>. You serve Neverwinter, you have no choice but to end my existence. Death might actually be a blessing for me, in any case. I grow so very weary with this life.~ [NWARI593] /*Let me live? You can do no such thing, <CHARNAME>. You serve Neverwinter, you have no choice but to end my existence.*/
-@34 = ~NP: I've seen the future in my dreams. Neverwinter will disappear in an all-consuming blaze when the Ancients are reborn. It's inevitable.~ [NWARI550] /*I have seen the future in my dreams, <CHARNAME>. Neverwinter will vanish in a blaze of flame when the Old Ones are reborn - it is inevitable.*/
+@33 = ~Let me live? You can do no such thing, <CHARNAME>. You serve Neverwinter, you have no choice but to end my existence. Death might actually be a blessing for me, in any case. I grow so very weary with this life.~ [NWARI593]
+@34 = ~I have seen the future in my dreams, <CHARNAME>. Neverwinter will vanish in a blaze of flame when the Old Ones are reborn - it is inevitable.~ [NWARI550] 
 @35 = ~There is still hope.~
 @36 = ~I want to ask you some questions.~
 @37 = ~The only thing inevitable is your death!~
@@ -44,7 +44,7 @@
 @43 = ~Come then, <CHARNAME> - deliver me to the fate I have brought upon myself.~ [NWARI545]
 @44 = ~Hope? All hope within my heart perished with Fenthick. He was taken from me, the light of my life, and I was left alone in the empty darkness.~ [NWARI551]
 @45 = ~You're just stalling! Time to die, Aribeth!~
-@46 = ~NP: Maugrim has the Word of Power in his room. The door can be opened with only a key. We knew you would come, <CHARNAME>. That's why I'm here instead of leading the Luscan army. I was supposed to protect Maugrim from you. But that, like everything else, I failed.~ [NWARI553] /*Maugrim has the Word of Power in his room - through the door to the east. We knew you were coming, <CHARNAME>. That is why I am here rather than leading Luskan's army.*/
+@46 = ~Maugrim has the Word of Power in his room - through the door to the east. We knew you were coming, <CHARNAME>. That is why I am here rather than leading Luskan's army. I was supposed to protect Maugrim from you. But that, like everything else, I failed.~ [NWARI553]
 @47 = ~What can I tell you of the Queen of the Old Ones that you do not already know? She is ancient and cruel, powerful and cunning.~ [NWARI555]
 @48 = ~Is the execution of my lover not justification enough for what I have become? They say I betrayed Neverwinter, but Neverwinter betrayed Fenthick first!~ [NWARI558]
 @49 = ~I know this, <CHARNAME>. And yet, I would speak with you before you end my life. So you might understand why I did what I did.~ [NWARI590]
@@ -97,9 +97,9 @@
 @96 = ~What was I thinking? I can't trust you - you're a traitor!~
 @97 = ~Lady Aribeth? It has been a long time since anyone called me that. Thank you, <CHARNAME>.~ [NWARI580]
 @98 = ~Your words are kind, <CHARNAME>, but I am ready for whatever awaits.~ [NWARI581]
-@99 = ~NP: If I run away, it means I haven't learned my lesson. I'm willing to accept the consequences of my actions, whatever they may be.~ [NWARI582] /*No, <CHARNAME>. If I run away it will mean I have learned nothing. I am ready to accept the consequences of what I have done - whatever those consequences may be.*/
+@99 = ~If I run away it will mean I have learned nothing. I am ready to accept the consequences of what I have done - whatever those consequences may be.~ [NWARI582] 
 @100 = ~No! I... I dare not. I have served Morag for too long. She had a... a hold over me. I am afraid if I must face her or Maugrim I might once again fall under her sway.~ [NWARI583]
-@101 = ~NP: I, uh. I should go to Lord Nasher while I'm still determined. You'll have to fight Maugrim without me. Farewell, <CHARNAME>, and good luck to you. Take this amulet, it will remove the magical protection from the stairs and door to get to where Maugrim is hiding.~ [NWARI584] /*I... I must go to Lord Nasher now, while my resolve is still strong. You must face Maugrim without me. Goodbye, <CHARNAME> - and good luck.*/
+@101 = ~I... I must go to Lord Nasher now, while my resolve is still strong. You must face Maugrim without me. Goodbye, <CHARNAME> - and good luck. Take this amulet, it will remove the magical protection from the stairs and door to get to where Maugrim is hiding.~ [NWARI584] /**/
 @102 = ~It is good to see you again, <CHARNAME>. When I surrendered to Lord Nasher I was certain my execution would be swift.~ [NWARI493]
 @103 = ~But it seems Lord Nasher has chosen to let me live... for now, at least. I am glad, if for no other reason than it gives me a chance to see you again.~ [NWARI494]
 @104 = ~How are feeling, Aribeth?~
@@ -114,8 +114,8 @@
 @113 = ~Tell me about the Source Stone.~
 @114 = ~What do you know about the Words of Power?~
 @115 = ~I... I suppose I should not be surprised by your anger. I make no effort to defend my actions, though I thought you, of all people, might not judge me so harshly.~ [NWARI517]
-@116 = ~NP: I understand. You still have a lot of work to do. I wish you luck, <CHARNAME>.~ [NWARI519] /*I understand. There is still much that must be done if Morag is to be defeated. I wish you luck, <CHARNAME>.*/
-@117 = ~NP: If fate favors us, we can continue this conversation after Morag is killed.~ [NWARI505] /*You just says if you seen him since he go.*/
+@116 = ~I understand. There is still much that must be done. I wish you luck, <CHARNAME>.~ [NWARI519]
+@117 = ~If fate favors us, we can continue this conversation after Morag is killed.~ [NWARI505] 
 @118 = ~The Old Ones are an ancient and evil race distantly related to the lizardmen of our own time. Morag was their queen during the height of their empire.~ [NWARI521]
 @119 = ~The Source Stone is a great gem located in long forgotten chambers beneath Castle Never. Within this gem is an entire other world, a realm where Morag and her people await the time of the awakening.~ [NWARI524]
 @120 = ~As you know, there were four Words of Power. At first, Maugrim seemed to believe we would need to possess all four Words to awaken Morag.~ [NWARI526]
@@ -134,7 +134,7 @@
 @133 = ~They say it is better to have loved and lost than not to have loved at all. I never used to believe that, <CHARNAME>.. until now.~ [NWARI500]
 @134 = ~I understand, <CHARNAME> - you have every right to feel that way. I only wanted to tell you the truth that is within my own heart.~ [NWARI507]
 @135 = ~I loved Fenthick with all my heart, and his memory will always be dear to me. But that does not mean I can never love another. Perhaps in time we might... if things had been different...~ [NWARI501]
-@136 = ~NP: No, Aribeth, don't do this to me. Not when I know I'm about to lose you.~ /*No, Aribeth - don't do this to me. It isn't fair to tell me this. Not now, when I know I will soon lose you.*/
+@136 = ~No, Aribeth - don't do this to me. Not now, when I know I will soon lose you.~ 
 @137 = ~But things aren't different. You are a prisoner sentenced to execution.~
 @138 = ~You have done more for me than you can ever know, and for this I will always have special feelings for you.~ [NWARI508]
 @139 = ~But I see this makes you uncomfortable, so we shall speak of this no more. Is there something else I might do for you?~ [NWARI509]
