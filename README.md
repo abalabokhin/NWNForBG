@@ -41,7 +41,7 @@ Languages
 Description:
 ------------
 
-The mod repeats, with some minor modifications, the plot of Neverwinter Nights game. Once Gorion's Ward reaches the experience of 1350000 XP, he/she can start Neverwinter Nights. At this moment, a messenger from Neverwinter will approach him/her in any of the Athkatla's Districts and ask for help.
+The mod repeats, with some minor modifications, the plot of Neverwinter Nights game. Once Gorion's Ward reaches the experience of 1350000 XP, he/she can start Neverwinter Nights. At this moment, a messenger from Neverwinter will approach him/her in any of the Athkatla's Districts and ask for help. However, recommended amount of XP is 1750000.
 
 Compatibility
 -------------
