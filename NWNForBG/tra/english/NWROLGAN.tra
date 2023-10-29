@@ -1,5 +1,5 @@
 @0 = ~You are here because Neurik sent you? You are here because of the trial?~ [NWROLG50]
-@1 = ~NP: Court? What court?~ /*Where is your husband?*/
+@1 = ~Trial? What trial?
 @2 = ~Yes, I am to defend you. Tell me what happened.~
 @3 = ~I'll be going now.~
 @4 = ~I am called a murderer and now I await judgment. Neurik can explain it better. I am unfamiliar with the ways of justice among your kind.~
@@ -7,15 +7,15 @@
 @6 = ~Go on.~
 @7 = ~You should never wager something you cannot afford to lose.~
 @8 = ~Go if you wish. I must stay here, though my heart aches to return to my tribe. When the trial is over, Uthgar willing, I will be allowed to return to my home.~
-@9 = ~NP: I returned to my tribe in disgrace. Wanda, my wife, said that I should go back and talk to Griff, reconcile and beg him to return our artifacts of our tribe in exchange for a promise to pay him even more gold later. But Griff attacked me before I could offer him anything. I killed him to save my life. I had no other choice!~ /*I returned to my tribe in shame. Vanda, my wife, told me to go back and speak to Griff, to humble myself and beg him to return our religious heirlooms in exchange for the promise of much gold later on.*/
+@9 = ~I returned to my tribe in shame. Vanda, my wife, told me to go back and speak to Griff, to humble myself and beg him to return our religious heirlooms in exchange for the promise of much gold later on. But Griff attacked me before I could speak my offer. I killed him to save my own life. There was no other choice!~
 @10 = ~I know this, my <LADYLORD>. I was not in my right mind. Something strange had taken hold of my thoughts.~
-@11 = ~NP: I fled to this temple, barely avoiding a mob of soldiers who wanted to kill me to avenge Griff. Newrick gave me refuge, but only on the condition that I consent to a trial that would decide my fate.~ /*Neurik gave me sanctuary but only if I vowed to submit to a trial to determine my fate.*/
+@11 = ~I fled to this temple, barely escaping a mob of soldiers seeking my blood to avenge Griff. Neurik gave me sanctuary but only if I vowed to submit to a trial to determine my fate.~
 @12 = ~Can you tell me anything else?~
 @13 = ~We Uthgardt are different than you. Our ways and customs may seem strange. They call us savages and pagans and drunks and thieves. This is how the Lords' Alliance sees us, and that is why I am called a murderer for defending myself. We of the Black Lion Tribe are a noble people. I am no heathen savage, no vile killer. I pray to Uthgar that you can see this and help me.~ /*We Uthgardt are different than you. Our ways and customs may seem strange. They call us savages and pagans and drunks and thieves. This is how the Lords' Alliance sees us, and that is why I am called a murderer for defending myself.*/
 @14 = ~I'll do what I can.~
 @15 = ~It is good to taste the open air once more. Freedom is sweet upon my tongue. I thank Uthgar for the verdict that cleansed the word murderer from my name.~ [NWROLG51]
-@16 = ~NP: I thank you,<LADYLORD> . You are a true friend of the people of Utgardt, and the Black Lion tribe will pronounce your name with reverence.~ [NWROLG52] /*And I thank you, <LADYLORD> <CHARNAME>. You are a true friend of the Uthgardt people, and the Black Lion Tribe speaks your name with reverence.*/
-@17 = ~NP: Yes,<LADYLORD> . What would you like to know?~ /*Yes, my <LADYLORD>. What do you wish to know?*/
+@16 = ~And I thank you, <LADYLORD>. You are a true friend of the Uthgardt people, and the Black Lion Tribe speaks your name with reverence.~ [NWROLG52] /*And I thank you, <LADYLORD> <CHARNAME>. You are a true friend of the Uthgardt people, and the Black Lion Tribe speaks your name with reverence.*/
+@17 = ~Yes, my <LADYLORD>. What do you wish to know?~
 @18 = ~Tell us what happened that night, Rolgan.~
 @19 = ~What was your state of mind that night, Rolgan? Were you thinking clearly?~
 @20 = ~Do you think the only reason you are here is because you are an Uthgardt?~

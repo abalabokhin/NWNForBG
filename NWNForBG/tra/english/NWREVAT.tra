@@ -3,12 +3,12 @@
 @2 = ~There, there, fellow. It'll be all right. May I ask you some questions?~
 @3 = ~Don't you think you're a little old to be crying like that? What's your name?~
 @4 = ~Uh, don't worry, maybe I can help. Why don't you answer some questions for me first?~
-@5 = ~NP: My name is Revat. I'm glad to see you, it's a shame it's such a bad day.~ /*I glad meet you <CHARNAME>. Me wish could be on happy day.*/
+@5 = ~Me name be Revat. I glad meet you. Me wish could be on happy day.~
 @6 = ~What's so terrible about today?~
 @7 = ~Goodbye.~
 @8 = ~Me try, but me not in good mood to talk. Me having very bad day.~
 @9 = ~Why don't you start by telling me who you are?~
-@10 = ~NP: Yours would cry too when it's such a bad day. My name is Revat. I'm glad to see you, it's a pity it's such a bad day.~ /*You cry too if you have such bad day. Me name be Revat. Who you be?*/
+@10 = ~You cry too if you have such bad day. Me name be Revat. I'm glad to see you, it's a pity it's such a bad day.~ /*You cry too if you have such bad day. Me name be Revat. Who you be?*/
 @11 = ~Me try, but me having bad day. Me not good mood for talk.~
 @12 = ~What is your name?~
 @13 = ~Me Momma be stole by trolls. Me need get her back or me be in big trouble. Momma be good arkeyolojist, you know digs-for-old-stuff person. Me be her helper. Me protects her. Only me not do so good job.~ /*Momma be good arkeyolojist, you know digs-for-old-stuff person. Me be her helper. Me protects her. Only me not do so good job.*/
@@ -16,7 +16,7 @@
 @15 = ~Like that should surprise me?~
 @16 = ~Ya, bye bye. Everybody go bye bye.~
 @17 = ~Me talking with other guard when look back, Momma gone. Me not worry much. She go sometimes, then she come back. Then we hear sounds, like mad dogs. We turn round and there be trolls 'n ogres.~ /*Me talking with other guard when look back, Momma gone. Me not worry much. She go sometimes, then she come back.*/
-@18 = ~NP: Trolls are so nasty.~ /*Trolls be nasty.*/
+@18 = ~Trolls be nasty.~
 @19 = ~And so like a great warrior, you ran away.~
 @20 = ~Me suppose me deserve that. Still not nice. Me talking with other guard when look back, Momma gone. Me not worry much. She go sometimes, then she come back. Then we hear sounds, like mad dogs. We turn round and there be trolls 'n ogres.~ /*Me talking with other guard when look back, Momma gone. Me not worry much. She go sometimes, then she come back.*/
 @21 = ~Yes. Nasty trolls. Ugly ogres. So we get ready and start to fight. Monsters kill most of guards, but me fight brave. Then troll hit me in head and cut me. I no longer can see with blood in eyes. Then Jax grab me hand and lead me out of caves. Me lucky to survive. No one else here help me and me 'fraid go back in dark cave. Me must wait here, hope she come back.~ /*Yes. Nasty trolls. Ugly ogres. So we get ready and start to fight. Monsters kill most of guards, but me fight brave. Then troll hit me in head and cut me.*/
@@ -27,8 +27,8 @@
 @26 = ~I wish I could help, but I'm busy right now.~
 @27 = ~Not what happen! You wait for story. I tell you 'bout trolls.~
 @28 = ~No! You no say trolls eat Momma! Momma no be eaten or me lost! You find Momma.~
-@29 = ~NP: She's over there in the caves. The place where you go to help Jax. My hear, your talk.~ /*She be in cave in area. Same place you go for to help Jax. Me see you got key.*/
-@30 = ~Me pay you 300 gold. Me not have much else. That be all Momma give.~
+@29 = ~She be in cave in area. Same place you go for to help Jax. My hear, your talk.~
+@30 = ~Me pay you 740 gold. Me not have much else. That be all Momma give.~
 @31 = ~Oh, you good <MANWOMAN>. You find me Momma. Me tell you what me know. They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.~ /*They have me Momma in cave near here. She be nice and sweet, 'cept when she grab ears and yell at you for plate breaking, or milk spilling, or peas not eating, or fidgeting, or... but me not s'posed to talk 'bout her like that.*/
 @32 = ~Here... I give you ring to show Momma. This me daddy's ring from when he die. Me not know him, but me Momma say he be nice quiet man. Me friend say he nagged to death, but me not understand what that mean. Go quick and help Momma be safe.~ /*Here... I give you ring to show Momma. This me daddy's ring from when he die. Me not know him, but me Momma say he be nice quiet man. Me friend say he nagged to death, but me not understand what that mean.*/
 
@@ -36,25 +36,25 @@
 @35 = ~Oh, you be back. What you want?~
 @36 = ~Could you tell me what happened again?~
 @37 = ~I have decided I will save your mother.~
-@38 = ~NP: I don't need anything, goodbye.~ /*Me does nothing.*/
+@38 = ~I don't need anything, bye.~
 @39 = ~Hey, you find Momma yet? Me in so much trouble. Me must get Momma safe.~
 @40 = ~Tell me again where I can find her?~
 @41 = ~I will keep looking for her.~
-@42 = ~NP: I'm sorry, but your mommy died, there were too many trolls.~ /*Either my arms have suddenly lost strength, or I'm carrying too much.*/
+@42 = ~I'm sorry, but your momma died, there were too many trolls.~
 @43 = ~She be in cave with trolls 'n ogres near here. Me not know more. Please find Momma quick. Me miss her lots.~ /*Please find Momma quick. Me miss her lots.*/
 @44 = ~Please find Momma quick. Me miss her lots.~
 @45 = ~Noooooooooooooooooooooooo! Momma no die! Momma no die! You lie! Me go find Momma. She no be dead.~ /*Noooooooooooooooooooooooo! Momma no die! Momma no die!*/
 
-@47 = ~Ho wow! Me so happy you find Momma! She pull me ear when she get back; me love her so. Here. Momma say me give you 300 gold like me promised.~ /*Ho wow! Me so happy you find Momma! She pull me ear when she get back; me love her so.*/
-@48 = ~Do you think your Momma is only worth 300 gp?~
-@49 = ~NP: I hate to call you dumb, but, uh, we agreed to a bigger deal.~ /*I hate to call you stupid, but I think we agreed on more than that.*/
+@47 = ~Ho wow! Me so happy you find Momma! She pull me ear when she get back; me love her so. Here. Momma say me give you 740 gold like me promised.~ /*Ho wow! Me so happy you find Momma! She pull me ear when she get back; me love her so.*/
+@48 = ~Do you think your Momma is only worth 740 gp?~
+@49 = ~I hate to call you stupid, but I think we agreed on more than that.~
 @50 = ~Thank you. That will be fine.~
 @51 = ~No, there's no need for the reward. I was happy to do it.~
-@52 = ~NP: Uh... right. Mommy's worth 740 coins, because that's all I have.~ /*Oh, you right. Momma worth 375 gp, 'cause that all I have.*/
-@53 = ~Oh dear, me forget lots. Sorry. Here is 375 gp. That be everything I have in whole world. Now me no can buy pet.~
+@52 = ~Oh, you right. Momma worth 740 gp, 'cause that all I have.~
+@53 = ~Oh dear, me forget lots. Sorry. Here is 900 gp. That be everything I have in whole world. Now me no can buy pet.~
 @54 = ~Okay, Momma say me have to go now. Bye bye.~
 
-@56 = ~NP: Thank you so much. It's good to have Mommy back. Hi, Mommy, I'm coming!~ /*Me wish me could give more. Thank you much. Me glad have Momma back. Hello Momma, me coming!*/
-@57 = ~Oh, you be best friend in whole world <LADYLORD>. I hope you come see me when you come to Waterdeep. Momma say me must go now. Bye bye.~ /*Oh, you be best friend in whole world <LADYLORD>. I hope you come see me when you come to Waterdeep.*/
+@56 = ~Thank you much. Me glad have Momma back. Hello Momma, me coming!~ /*Me wish me could give more. */
+@57 = ~Oh, you be best friend in whole world <LADYLORD>. I hope you come see me when you come to Waterdeep. Momma say me must go now. Bye bye.~
 @58 = ~Momma say we must go. Bye bye.~
-@59 = ~NP: My go find mommy. She's not gonna die.~ /*You lie! Me go find Momma. She no be dead.*/
+@59 = ~Me go find Momma. She no be dead.~
