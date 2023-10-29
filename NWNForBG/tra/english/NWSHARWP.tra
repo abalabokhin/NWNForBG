@@ -1,11 +1,11 @@
-@0 = ~NP: I... I don't think you're interested in doing good deeds at all, and I doubt I'd go with you again if you asked me to. Ð¯... I don't think we'll see each other again.~ [NWSHARB0] /*It just seems to me that Elves shouldn't put these things back in the ground if they didn't take them out in the first place.*/
+@0 = ~I... I don't think you're interested in doing good deeds at all, and I doubt I'd go with you again if you asked me to. I... I don't think we'll see each other again.~ [NWSHARB0]
 @1 = ~You think so, do you? Hmph. I'll not help where I'm not wanted, if that's what you really want.~ [NWSHARB0]
 @2 = ~Yes. Go.~
 @3 = ~No. Stay.~
-@4 = ~NP: Well, goodbye, then. Where can we meet if you change your mind?~ /*As you desire. I shall remain here, should you change your mind.*/
-@5 = ~NP: Go back to the sword fair.~ /*Get to the point.*/
-@6 = ~NP: I'll find you at Kendrak Barracks.~ /*Port Llast - Kendrack's Barracks*/
-@7 = ~NP: Wait for me here.~ /*Wait right here.*/
+@4 = ~Well, goodbye, then. Where can we meet if you change your mind?~
+@5 = ~Go back to the Trade of Blades.~
+@6 = ~I'll find you at Kendrack's Barracks.~
+@7 = ~Wait right here.~
 @8 = ~Fair enough.~
 @9 = ~I suspected you'd show up here soon. I'm glad to see I was right. So, then... shall we join up once more?~ [NWSHAR60]
 @10 = ~Yep.~
@@ -21,12 +21,12 @@
 @20 = ~If you need me, you know where I am.~
 @21 = ~It looks to me like Lord Nasher is pulling out all the stops to find this cult. The search in Neverwinter is immense, and we mercenaries have been sent to Port Llast to join the effort with you and Aribeth. Lucky us.~
 @22 = ~So you were conscripted into service by Aribeth?~
-@23 = ~NP: How much would it cost to hire you?~ /*How much would it cost to hire your services?*/
+@23 = ~How much would it cost to hire your services?~
 @24 = ~I've been paid good coin for my services by Lord Nasher, actually. It's another chance at acquiring some fame, in my eyes... even though I've been told to merely offer assistance to you and Aribeth, for now. So... do you need my help?~ /*It's another chance at acquiring some fame, in my eyes... even though I've been told to merely offer assistance to you and Aribeth, for now. So... do you need my help?*/
 @25 = ~Do you have any information on the cult behind the Wailing Death?~
 @26 = ~I could use someone by my side.~
 @27 = ~I don't need anything right now.~
-@28 = ~NP: A cult could be almost anywhere. Maybe you should look among the hills at the crossroads just as you exit town. I've heard more than once of monsters raiding the roads around here.~ /*The cult could be practically anywhere. You may want to look in the hills by the Green Griffon Inn... I've heard many tales of monsters raiding the roads nearby in force.*/
+@28 = ~The cult could be practically anywhere. You may want to look in the hills near the crossroads, right at the exit of the town... I've heard many tales of monsters raiding the roads nearby in force.~
 @29 = ~Monsters?~
 @30 = ~It's about time you asked. I'm at your disposal, <CHARNAME>.~
 @31 = ~Bugbears and orcs, mostly. Apparently they were being directed by some humans, however, which would make it quite odd. At any rate, since Luskan is wrapped up in its own concerns, the countryside has become open season for banditry... these monsters, however, are more organized than is normal.~ /*At any rate, since Luskan is wrapped up in its own concerns, the countryside has become open season for banditry... these monsters, however, are more organized than is normal.*/
@@ -38,4 +38,4 @@
 @37 = ~Well, it could be that I enjoy being bored... or it could be that my instructions are to aid you and Aribeth, and I haven't been told to do anything, yet. So how about it? You got the gumption to take me with you, <CHARNAME>? It would be far more interesting than standing around, here.~ /*Well, it could be that I enjoy being bored... or it could be that my instructions are to aid you and Aribeth, and I haven't been told to do anything, yet.*/
 @38 = ~I wouldn't mind an extra hand. You're in.~
 @39 = ~Sorry, but I'm not interested. Goodbye.~
-@40 = ~NP: That's fine. Then I am at your disposal. I will follow you as long as you need me, <CHARNAME>.~ /*"My magic is at your disposal. What spell would you like me to cast?"*/
+@40 = ~That's fine. I am at your disposal, then. I'll tag along as you need me, <CHARNAME>.~

@@ -10,7 +10,7 @@
 @9 = ~Well, me and my pa... his name's Gerrol, everyone in Port Llast knows him... we live on a farm just north of the town gates. There's lots of monsters that live in the hills around our farm. Normally they don't bother us so much, but lately they've been ambushing travelers and caravans and such, being real bold.~ /*There's lots of monsters that live in the hills around our farm. Normally they don't bother us so much, but lately they've been ambushing travelers and caravans and such, being real bold.*/
 @10 = ~They even went and kidnapped my mother while me and pa were away from the farm last week! So my pa sent me to town to get help.~
 @11 = ~Surely someone in authority can help you.~
-@12 = ~NP: You want me to find your mother?~ /*Do you want me to look for him?*/
+@12 = ~You want me to find your mother?~
 @13 = ~Why don't you and your father just leave?~
 @14 = ~It's not my concern.~
 @15 = ~I think so. I bet my pa could pay you, if you helped out. You could talk to him about it, at least.~
@@ -23,6 +23,6 @@
 @22 = ~All right, I'll help.~
 @23 = ~We just needs your help! All I ask is that you go and talk to my pa, Gerrol, nothing else.~
 @24 = ~Pa says he won't leave ma behind... and besides, it's our land. Pa doesn't want to go. Couldn't you... just talk to him?~
-@25 = ~NP: That would be wonderful. I'm sure Dad will appreciate your help. To get to our farm, you have to come out of the east gate and turn north. In the meantime, I'll try to find someone else to send to Daddy until he calls me back. But I'm sure you'll be able to make it work. Just go to him and talk to him.~ /*I'll stay here for now and find some more people to send to pa, until he calls me back. I'm sure you'll do the trick, though. Just go and talk to him.*/
+@25 = ~That would be great, my <LADYLORD>. I'm sure my pa would appreciate it. To get to our farm, you just need to go through the east gate and turn north. I'll stay here for now and find some more people to send to pa, until he calls me back. I'm sure you'll do the trick, though. Just go and talk to him.~
 
-@27 = ~NP: Please find my mom!~ /*Please enter the filename*/
+@27 = ~Please find my mother!~

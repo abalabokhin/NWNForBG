@@ -7,7 +7,7 @@
 @6 = ~All right, how did you get out?~
 @7 = ~I'm done talking to a baby killer. Defend yourself!~
 @8 = ~You are correct my friend. I am one of the only living beings to have escaped Waterdeep's most secure prison. But before you do anything rash, please hear me out.~
-@9 = ~NP: Why should I listen to this, dwarf?~ /*Why should I listen, gnome?*/
+@9 = ~Why should I listen, dwarf?~
 @10 = ~Why shouldn't I tell you? It's important that you realize I'm not some simple farmer bumbling about a rotted out tree stump! I am Stirge the baby killer!~
 @11 = ~I was just about to tell you. Glad to see that flicker of impatience in the air between your ears. I found myself in prison, rather unfortunately. I wanted to get out so I can go back to doing what I do best. I realized that escaping this Waterdhavian prison was said to be impossible, so I knew I would need help achieving the impossible.~ /*I realized that escaping this Waterdhavian prison was said to be impossible, so I knew I would need help achieving the impossible.*/
 @12 = ~So you went to the other inmates?~
@@ -16,16 +16,16 @@
 @15 = ~Yes, indeed. Aren't we a quick study? Someone woke up refreshed this day! So yes, I worked out a relationship with Zor, Delilah, Wyvern, and Yesgar. I knew they would all be interested in escaping, and unlike the others, had the talent to do so.~ /*Yes, indeed. Aren't we a quick study? Someone woke up refreshed this day! So yes, I worked out a relationship with Zor, Delilah, Wyvern, and Yesgar.*/
 @16 = ~What kind of talent?~
 @17 = ~The only kind of talent! The kind that works together. Zor was a big brute! He could pull down gates or smash through doors! Delilah's poisons helped us to "incapacitate" many of the guards within the prison. And Wyvern was able to call to the animals to further our escape. He used them to deliver messages, create distractions, and even to help us shake off the guards from our trail. It was very exciting!~ /*The only kind of talent! The kind that works together. Zor was a big brute! He could pull down gates or smash through doors!*/
-@18 = ~NP: What was your role in the escape?~ /*What your role in escape?*/
+@18 = ~What your role in escape?~
 @19 = ~Me? I helped to put it all together. Mine were the brains that put the plan together, and got us all working in unison... Well, me and Yesgar but he's just the figurehead, there to inspire loyalty.~
 @20 = ~You still trying to escape. No success yet?~
 @21 = ~Oh, but it has! No one ever escaped from that prison! We were the first. We made it out the door. We can get caught now, after the fact, but it doesn't change anything. We escaped.~
-@22 = ~NP: So what's next?~ /*"To what end?"*/
+@22 = ~So what's next?~
 @23 = ~Now, we play a game. You beat me at it, and I cut off my ear and give it to you, because that's all you really want, isn't it? The bounty you'll get from my ear. The game we'll play is the oldest game of all. I will give you a word and you must respond to it with another word that can defeat the original without being its opposite.~ /*The game we'll play is the oldest game of all. I will give you a word and you must respond to it with another word that can defeat the original without being its opposite.*/
 @24 = ~If you win I'll tell you where Delilah is and give you my valuable ear. If not we will settle this with blades.~
 @25 = ~All right, let's play.~
 @26 = ~Can you give me an example of how to play?~
-@27 = ~NP: I hope you are a worthy adversary. Let's see... Let's start small. My word is Dark.~ /*Let's see... Let's start easy. My word is Darkness.*/
+@27 = ~I hope you are worthy of the challenge. Let us begin. Let's see... Let's start easy. My word is Darkness.~
 @28 = ~Light.~
 @29 = ~Wind.~
 @30 = ~Candle.~
@@ -85,7 +85,7 @@
 @84 = ~Indeed, Friendship is a tie that binds but that has little bearing on the Wind. You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!~ /*You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!*/
 @85 = ~Ah, Summer is a time of few Clouds but it does not defeat them. You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!~ /*You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!*/
 @86 = ~Aye, the Wind can tear apart the Clouds. But what can beat the Wind? I think I stand defeated, my friend. There is no other choice but for me to concede. Come, let me tell you of Delilah, then, and tear off this offending ear that I might buy my life.~ /*Come, let me tell you of Delilah, then, and tear off this offending ear that I might buy my life.*/
-@87 = ~NP: Quick, get your ear over here, dwarf!~ /*Hurry up and give your ear gnome!*/
+@87 = ~Hurry up and give your ear dwarf!~
 @88 = ~Lightning is the angry daughter of her mother Cloud. While tempestuous, she does not destroy the one who birthed her. You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!~ /*You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!*/
 @89 = ~We just established that the Cloud defeats the Sun. If so, what you suggest cannot be true. You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!~ /*You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!*/
 @90 = ~Rain is born of Cloud but, in its falling, it does not negate its mother. You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!~ /*You lose. That means I shall neither bargain for my ear nor offer clues about the cold Delilah. On your guard!*/
