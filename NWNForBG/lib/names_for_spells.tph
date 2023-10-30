@@ -103,7 +103,7 @@ COPY ~NWNForBG/spl/NWIN118W.spl~ ~override~
 COPY ~NWNForBG/spl/NWIN139.spl~ ~override~
   SAY 0x8	@104027
 
-COPY ~NWNForBG/spl/spin141.spl~ ~override~
+COPY ~NWNForBG/spl/NWIN141.spl~ ~override~
   SAY 0x8	@103693
 
 COPY ~NWNForBG/spl/NWSPKAOH.spl~ ~override~
