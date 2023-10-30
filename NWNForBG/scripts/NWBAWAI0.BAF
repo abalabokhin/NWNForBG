@@ -16,11 +16,11 @@ IF
 THEN
 	RESPONSE #30
 		IncrementGlobal("CAST_WAR_CRY","LOCALS",1)
-		ForceSpellRES("SPIN118W",NearestEnemyOf(Myself))  // ?????? ??????
+		ForceSpellRES("NWIN118W",NearestEnemyOf(Myself))  // ?????? ??????
 		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
 	RESPONSE #70
 		IncrementGlobal("CAST_WAR_CRY","LOCALS",1)
-		ForceSpellRES("SPIN115W",NearestEnemyOf(Myself))  // ???????? ????
+		ForceSpellRES("NWIN115W",NearestEnemyOf(Myself))  // ???????? ????
 		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
 END
 
@@ -29,10 +29,10 @@ IF
 	See(NearestEnemyOf(Myself))
 THEN
 	RESPONSE #75
-		ForceSpellRES("SPIN115W",NearestEnemyOf(Myself))  // ???????? ????
+		ForceSpellRES("NWIN115W",NearestEnemyOf(Myself))  // ???????? ????
 		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
 	RESPONSE #25
-		ForceSpellRES("SPIN118W",NearestEnemyOf(Myself))  // ?????? ??????
+		ForceSpellRES("NWIN118W",NearestEnemyOf(Myself))  // ?????? ??????
 		SetGlobalTimer("OH_Cast","LOCALS",TWO_ROUNDS)
 END
 

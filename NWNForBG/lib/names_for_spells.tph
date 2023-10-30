@@ -91,16 +91,16 @@ COPY ~NWNForBG/spl/NWSPHEA1.spl~ ~override~
 COPY ~NWNForBG/spl/NWSPHEA6.spl~ ~override~
   SAY 0xFE	@90798
 
-COPY ~NWNForBG/spl/spin115w.spl~ ~override~
+COPY ~NWNForBG/spl/NWIN115W.spl~ ~override~
   SAY 0x8	@103848
 
-COPY ~NWNForBG/spl/spin116w.spl~ ~override~
+COPY ~NWNForBG/spl/NWIN116W.spl~ ~override~
   SAY 0x8	@104039
 
-COPY ~NWNForBG/spl/spin118w.spl~ ~override~
+COPY ~NWNForBG/spl/NWIN118W.spl~ ~override~
   SAY 0x8	@103847
 
-COPY ~NWNForBG/spl/spin139.spl~ ~override~
+COPY ~NWNForBG/spl/NWIN139.spl~ ~override~
   SAY 0x8	@104027
 
 COPY ~NWNForBG/spl/spin141.spl~ ~override~

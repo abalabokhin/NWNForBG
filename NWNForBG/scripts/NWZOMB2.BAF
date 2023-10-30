@@ -3,7 +3,7 @@ IF
 	Range([PC],25)
 THEN
 	RESPONSE #100
-		ReallyForceSpell(Myself,INNATE_ZOMBIE_LORD_AURA)  // SPIN190.SPL (No such index)
+		ReallyForceSpellRES("NWIN190", Myself)  // NWIN190.SPL (No such index)
 		Wait(2)
 		SetGlobal("ZLAURA_inactive","LOCALS",1)
 END
