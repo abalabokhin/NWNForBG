@@ -107,7 +107,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("BOOM","LOCALS",1)
 		DisplayStringHead(Myself,#14381)  // ??????? ?????????
-		ReallyForceSpell(LastSummonerOf(Myself),NPC_TIME_BOOM)  // SPIN494.SPL (No such index)
+		ReallyForceSpellRES("NWIN494",LastSummonerOf(Myself))  // NWIN494.SPL (No such index)
 		DestroySelf()
 END
 
