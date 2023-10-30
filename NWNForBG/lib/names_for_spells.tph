@@ -112,7 +112,7 @@ COPY ~NWNForBG/spl/NWSPKAOH.spl~ ~override~
 COPY ~NWNForBG/spl/NWSPKAO2.spl~ ~override~
   SAY 0x8	@103744
 
-COPY ~NWNForBG/spl/sppr714.spl~ ~override~
+COPY ~NWNForBG/spl/NWPR714.spl~ ~override~
   SAY 0x8	@103974
   SAY 0x50	@103975
   SAY 0x1EE	@103976
