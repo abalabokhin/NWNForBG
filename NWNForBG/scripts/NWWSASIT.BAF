@@ -168,13 +168,13 @@ THEN
 END
 
 IF
-	HaveSpell(INNATE_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
+	HaveSpell(PALADIN_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	HPPercentLT(Myself,70)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		Spell(Myself,INNATE_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
+		Spell(Myself,PALADIN_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
 END
 
 IF
@@ -494,7 +494,7 @@ END
 
 IF
 	ActionListEmpty()
-	HaveSpell(INNATE_PROTECTION_FROM_EVIL)  // SPIN121.SPL (?????? ?? ???)
+	HaveSpell(PALADIN_PROTECTION_FROM_EVIL)  // SPIN121.SPL (?????? ?? ???)
 	Alignment(LastSeenBy(Myself),MASK_EVIL)
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	CheckStat(Myself,0,MELEETHAC0MOD)
@@ -502,7 +502,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		Spell(Myself,INNATE_PROTECTION_FROM_EVIL)  // SPIN121.SPL (?????? ?? ???)
+		Spell(Myself,PALADIN_PROTECTION_FROM_EVIL)  // SPIN121.SPL (?????? ?? ???)
 END
 
 IF
@@ -583,7 +583,7 @@ END
 
 IF
 	ActionListEmpty()
-	HaveSpell(INNATE_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
+	HaveSpell(PALADIN_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
 	OR(3)
 		Heard(ThirdNearest([EVILCUTOFF]),HEALME)
 		Heard(SecondNearest([EVILCUTOFF]),HEALME)
@@ -600,7 +600,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		Spell(LastHeardBy(Myself),INNATE_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
+		Spell(LastHeardBy(Myself),PALADIN_LAY_ON_HANDS)  // SPIN109.SPL (?????????? ???)
 END
 
 IF
