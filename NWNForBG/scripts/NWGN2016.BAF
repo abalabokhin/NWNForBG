@@ -3,7 +3,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayString(Myself,#14381)  // ??????? ?????????
-		ReallyForceSpell(LastTrigger,TRAP_POISON_PARALYZATION_DARTS)  // SPWI028.SPL (No such index)
+		ReallyForceSpellRES("NWWI028", LastTrigger)  // NWWI028.SPL (No such index)
 		Wait(2)
 END
 
@@ -12,7 +12,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayString(Myself,#14381)  // ??????? ?????????
-		ReallyForceSpell(LastTrigger,TRAP_POISON_PARALYZATION_DARTS)  // SPWI028.SPL (No such index)
+		ReallyForceSpellRES("NWWI028", LastTrigger)  // NWWI028.SPL (No such index)
 		Wait(2)
 END
 

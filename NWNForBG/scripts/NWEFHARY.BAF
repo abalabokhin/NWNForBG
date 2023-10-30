@@ -3,7 +3,7 @@ IF
 	LOS([PC],25)
 THEN
 	RESPONSE #100
-		ReallyForceSpellRES("SPIN138",Myself)  // No such index
+		ReallyForceSpellRES("NWIN138",Myself)  // No such index
 		SetGlobal("EFHARPY_inactive","LOCALS",1)
 	RESPONSE #50
 		Continue()

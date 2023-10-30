@@ -4,6 +4,6 @@ THEN
 	RESPONSE #100
 		ApplySpell(Myself,TROLL_SETHP1)  // SPIN700.SPL (?????? ??????)
 		PlayDead(180)
-		ReallyForceSpell(Myself,TROLL_CAVE_CHANGE)  // SPIN470.SPL (No such index)
+		ReallyForceSpellRES("NWIN470",Myself)  // NWIN470.SPL (No such index)
 END
 

@@ -5,7 +5,7 @@ IF
 	See([PC])
 THEN
 	RESPONSE #100
-		ForceSpellRES("SPWI2E0D",Myself)  // No such index
+		ForceSpellRES("NWWI2E0D",Myself)  // No such index
 END
 
 IF
