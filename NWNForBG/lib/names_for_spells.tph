@@ -76,7 +76,7 @@ COPY ~NWNForBG/spl/NWSP618.spl~ ~override~
   SAY 0x8	@103231
   SAY 0x50	@103232
 
-COPY ~NWNForBG/spl/spcl665t.spl~ ~override~
+COPY ~NWNForBG/spl/NWCL665T.spl~ ~override~
   SAY 0x8	@103738
 
 COPY ~NWNForBG/spl/NWSPHEA0.spl~ ~override~
@@ -144,7 +144,7 @@ COPY ~NWNForBG/spl/spwi828.spl~ ~override~
   SAY 0x8	@103173
   SAY 0x50	@103174
 
-COPY ~NWNForBG/spl/spwi913a.spl~ ~override~
+COPY ~NWNForBG/spl/NWWI913A.spl~ ~override~
   SAY 0x8	@106379
 
 COPY ~NWNForBG/spl/NWSUMSHD.spl~ ~override~
