@@ -78,10 +78,11 @@ In development:
 - Implemented autotra, so the original tra files are not modified during installation process, thanks to JohnBob
 - "Usable By", etc are now removing for EE automatically during installation process, thanks to JohnBob
 - Some areas are added to "Cheat Areas" for EE, thanks to JohnBob
-- Some map icons are repositions on the global map, thanks to JohnBob
+- Some map icons are repositioned on the global map, thanks to JohnBob
 - Transform into Wererat ability now works as intended, after turning into Wererat you can speak and after turning back to human all your abilities are recovered.
-- Add prefix to more files (manually)
-- Remove IMPRISONMENT spell casting from some mages to make the mod more ballanced.
+- Added prefix to more files (manually)
+- Removed IMPRISONMENT spell casting from some mages to make the mod more ballanced.
+- All new wizard spells are added properly (using ADD\_SPELL, not just copied as before).
 
 0.92 (10/18/23)
 
