@@ -5591,6 +5591,69 @@ INCLUDE ~NWNForBG/lib/names_for_items.tph~
 COPY ~NWNForBG/spl~ ~override~
 INCLUDE ~NWNForBG/lib/names_for_spells.tph~
 
+ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI204.SPL~ 2 2 ~WIZARD_SNILLOCS_SNOWBALL_SWARM~
+  SAY 0x8      @103221
+  SAY 0x50     @103222
+  SPRINT current_spell_res "%DEST_RES%
+
+COPY_EXISTING ~NWSCSNIL.ITM~ ~override~
+  WRITE_ASCII 0xf6  "%current_spell_res%"
+  WRITE_ASCII 0x126 "%current_spell_res%"
+
+ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI328.SPL~ 2 3 ~WIZARD_ICELANCE~
+  SAY 0x8      @103175
+  SAY 0x50     @103176
+  SPRINT current_spell_res "%DEST_RES%
+
+COPY_EXISTING ~NWSCRX9.ITM~ ~override~
+  WRITE_ASCII 0xf6  "%current_spell_res%"
+  WRITE_ASCII 0x126 "%current_spell_res%"
+
+COPY_EXISTING ~NWAURIL1.CRE~ ~override~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI328~ "%current_spell_res%"
+
+ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI428.SPL~ 2 4 ~WIZARD_ENFEEBLEMENT~
+  SAY 0x8      @103135
+  SAY 0x50     @103136
+  SPRINT current_spell_res "%DEST_RES%
+
+COPY_EXISTING ~NWSCRX13.ITM~ ~override~
+  WRITE_ASCII 0xf6  "%current_spell_res%"
+  WRITE_ASCII 0x126 "%current_spell_res%"
+
+ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI429.SPL~ 2 4 ~WIZARD_BELTYNS_BURNING_BLOOD~
+  SAY 0x8      @102862
+  SAY 0x50     @102863
+  SPRINT current_spell_res "%DEST_RES%
+
+COPY_EXISTING ~NWCBR008.ITM~ ~override~
+  WRITE_ASCII 0xf6  "%current_spell_res%"
+  WRITE_ASCII 0x126 "%current_spell_res%"
+
+COPY_EXISTING ~NWHRPMAT.CRE~ ~override~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI429~ "%current_spell_res%"
+
+COPY_EXISTING ~NWHRPMA2.CRE~ ~override~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI429~ "%current_spell_res%"
+
+ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI733.SPL~ 2 7 ~WIZARD_MONSTER_SUMMONING_4~
+  SAY 0x8      @103882
+  SAY 0x50     @103883
+  SPRINT current_spell_res "%DEST_RES%
+
+COPY_EXISTING ~NWSCRX17.ITM~ ~override~
+  WRITE_ASCII 0xf6  "%current_spell_res%"
+  WRITE_ASCII 0x126 "%current_spell_res%"
+
+ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI828.SPL~ 2 8 ~WIZARD_MONSTER_SUMMONING_5~
+  SAY 0x8      @103173
+  SAY 0x50     @103174
+  SPRINT current_spell_res "%DEST_RES%
+
+COPY_EXISTING ~NWSCRX24.ITM~ ~override~
+  WRITE_ASCII 0xf6  "%current_spell_res%"
+  WRITE_ASCII 0x126 "%current_spell_res%"
+
 //BMP
 COPY ~NWNForBG/bmp~ ~override~
 
