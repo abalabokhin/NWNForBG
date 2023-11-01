@@ -25,7 +25,7 @@
 //THEN
 //	RESPONSE #100
 //		SetGlobal("DeadJanis","GLOBAL",2)
-//		SetGlobal("SPRITE_IS_DEADJANIS","GLOBAL",1)
+//		SetGlobal("SPRITE_IS_DEADNWJANIS","GLOBAL",1)
 //END
 
 // В скрипт Дженис
@@ -219,7 +219,7 @@ END
 //THEN
 //	RESPONSE #100
 //		SetGlobal("DeadJanis","GLOBAL",2)
-//		SetGlobal("SPRITE_IS_DEADJANIS","GLOBAL",1)
+//		SetGlobal("SPRITE_IS_DEADNWJANIS","GLOBAL",1)
 //END
 
 IF ~~ THEN BEGIN 26 // from: 22.1

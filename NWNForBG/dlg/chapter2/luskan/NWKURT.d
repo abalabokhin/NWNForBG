@@ -580,7 +580,7 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 ~  !NumTimesTalkedTo(0)Global("KurtQuest","GLOBAL",0)~ THEN BEGIN 75 // from:
   SAY @94
   IF ~~ THEN REPLY @71 GOTO 2
-  IF ~  Dead("NWBARAM")GlobalLT("","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
   IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @4 GOTO 5
   IF ~~ THEN REPLY @95 GOTO 6
