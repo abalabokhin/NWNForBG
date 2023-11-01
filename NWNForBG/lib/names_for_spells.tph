@@ -133,7 +133,7 @@ COPY ~NWNForBG/spl/spwi429.spl~ ~override~
   SAY 0x8	@102862
   SAY 0x50	@102863
 
-COPY ~NWNForBG/spl/spwi545.spl~ ~override~
+COPY ~NWNForBG/spl/NWWI545.spl~ ~override~
   SAY 0x8	@74538
 
 COPY ~NWNForBG/spl/spwi733.spl~ ~override~
