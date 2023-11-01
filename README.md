@@ -81,6 +81,7 @@ In development:
 - Some map icons are repositions on the global map, thanks to JohnBob
 - Transform into Wererat ability now works as intended, after turning into Wererat you can speak and after turning back to human all your abilities are recovered.
 - Add prefix to more files (manually)
+- Remove IMPRISONMENT spell casting from some mages to make the mod more ballanced.
 
 0.92 (10/18/23)
 
