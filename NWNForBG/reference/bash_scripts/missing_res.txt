@@ -1,5 +1,5 @@
 Searched for: Illegal ResourceRefs
-Number of hits: 1665
+Number of hits: 1655
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPCL110.SPL
 File: #rdremov.SPL, Name: No such index, Attribute: Resource=SPWI492.SPL
 File: ABAZRING.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
@@ -823,10 +823,6 @@ File: NOBW4.CRE, Name: Noblewoman, Attribute: Dialogue=NOBW4.DLG
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDSW1H58.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDMOUND.SPL
 File: NPPLAT.ITM, Name: Firecam Full-Plate Armor, Attribute: Resource=CDHGNYA1.SPL
-File: NWAURIL1.CRE, Name: Priestess of Auril, Attribute: Spell=SPWI204.SPL
-File: NWAURIL1.CRE, Name: Priestess of Auril, Attribute: Spell=SPWI204.SPL
-File: NWAURIL1.CRE, Name: Priestess of Auril, Attribute: Spell=SPWI204.SPL
-File: NWAURIL1.CRE, Name: Priestess of Auril, Attribute: Spell=SPWI204.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDSW1H58.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDMOUND.SPL
 File: NWGOLEM3.ITM, Name: Ring, Attribute: Resource=CDHGNYA1.SPL
@@ -1381,12 +1377,6 @@ File: spsnak3.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: spsnak4.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: spsnak5.CRE, Name: Spirit Snake, Attribute: Override script=SPIRDTH.BCS
 File: SPWI010.SPL, Name: No such index, Attribute: Resource=SPDISMA.VEF
-File: spwi225.spl, Name: Snilloc's Snowball Swarm, Attribute: Resource=SPWI204.SPL
-File: spwi225.spl, Name: Snilloc's Snowball Swarm, Attribute: Resource=SPWI204.SPL
-File: spwi225.spl, Name: Snilloc's Snowball Swarm, Attribute: Resource=SPWI204.SPL
-File: spwi225.spl, Name: Snilloc's Snowball Swarm, Attribute: Resource=SPWI204.SPL
-File: spwi225.spl, Name: Snilloc's Snowball Swarm, Attribute: Resource=SPWI204.SPL
-File: spwi225.spl, Name: Snilloc's Snowball Swarm, Attribute: Resource=SPWI204.SPL
 File: SPWI299.SPL, Name: Summon Cow, Attribute: Resource=WYVERN.WBM
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDSW1H58.SPL
 File: SPWI853.SPL, Name: Otiluke's Resilient Sphere, Attribute: Resource=CDMOUND.SPL
