@@ -27,30 +27,30 @@ THEN
 END
 
 IF
-	Global("NWNwspmep","GLOBAL",1)
+	Global("Nwspmep","GLOBAL",1)
 	!AreaCheck("NW3303")
 THEN
 	RESPONSE #100
-		SetGlobal("NWNwspmep","GLOBAL",0)
+		SetGlobal("Nwspmep","GLOBAL",0)
 		DisplayStringHead(Player1,@107762)  // �� �� ������ ������������ ��� ������� � ���� �����.
 		GiveItemCreate("Nwmisc81",Player1,1,0,0)  // ��������� � �������
 END
 
 IF
-	Global("NWNwnzoo","GLOBAL",1)
+	Global("Nwnzoo","GLOBAL",1)
 	!AreaCheck("NW1400")  // ����������
 THEN
 	RESPONSE #100
-		SetGlobal("NWNwnzoo","GLOBAL",0)
+		SetGlobal("Nwnzoo","GLOBAL",0)
 		DisplayStringHead(Player1,@103872)  // ���� ������ ����� ������������ ����� � ������� ������� � �������� � ����������. � ���� ����� �� �� �����������.
 END
 
 IF
 	!AreaCheck("NW2306")
-	Global("NWVanProt","GLOBAL",1)
+	Global("NWVanPrt","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("NWVanProt","GLOBAL",0)
+		SetGlobal("NWVanPrt","GLOBAL",0)
 		DisplayStringHead(Player1,@103873)  // ���� ������ ������� ���������� ������ � ����� �� ������ ����� �������. � ���� ����� �� �� �����������.
 END
 

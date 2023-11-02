@@ -1,5 +1,5 @@
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalGT("M1Q2_DEVOUR","MYAREA",4)
 THEN
 	RESPONSE #100
@@ -9,7 +9,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	Global("Nobody","LOCALS",2)
 THEN
 	RESPONSE #100
@@ -19,14 +19,14 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",2)
+	Global("NWInbody","GLOBAL",2)
 THEN
 	RESPONSE #100
 		DestroySelf()
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	InMyArea("Nwbody1")  // ?????? ????????
 	!Dead("Nwbody1")  // ?????? ????????
@@ -37,7 +37,7 @@ THEN
 		OpenDoor("Door01")
 		MoveToObjectNoInterrupt("Nwbody1")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody1")  // No such index
 		SmallWait(3)
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	OR(3)
 		!InMyArea("Nwbody1")  // ?????? ????????
@@ -60,7 +60,7 @@ THEN
 		OpenDoor("Door02")
 		MoveToObjectNoInterrupt("Nwbody2")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody2")  // No such index
 		SmallWait(3)
@@ -68,7 +68,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	OR(3)
 		!InMyArea("Nwbody1")  // ?????? ????????
@@ -87,7 +87,7 @@ THEN
 		OpenDoor("Door03")
 		MoveToObjectNoInterrupt("Nwbody3")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody3")  // No such index
 		SmallWait(3)
@@ -95,7 +95,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	OR(3)
 		!InMyArea("Nwbody1")  // ?????? ????????
@@ -118,7 +118,7 @@ THEN
 		OpenDoor("Door04")
 		MoveToObjectNoInterrupt("Nwbody4")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody4")  // No such index
 		SmallWait(3)
@@ -126,7 +126,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	OR(3)
 		!InMyArea("Nwbody1")  // ?????? ????????
@@ -152,7 +152,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	Global("Nobody","LOCALS",1)
 	InMyArea("Nwbody5")  // ?????? ????????
@@ -164,7 +164,7 @@ THEN
 		OpenDoor("Door05")
 		MoveToObjectNoInterrupt("Nwbody5")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody5")  // No such index
 		SmallWait(3)
@@ -172,7 +172,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	Global("Nobody","LOCALS",1)
 	OR(3)
@@ -188,7 +188,7 @@ THEN
 		OpenDoor("Door06")
 		MoveToObjectNoInterrupt("Nwbody6")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody6")  // No such index
 		SmallWait(3)
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	Global("Nobody","LOCALS",1)
 	OR(3)
@@ -216,7 +216,7 @@ THEN
 		OpenDoor("Door07")
 		MoveToObjectNoInterrupt("Nwbody7")  // ?????? ????????
 		SmallWait(3)
-		SetGlobal("NWInbodynw","GLOBAL",2)
+		SetGlobal("NWInbody","GLOBAL",2)
 		IncrementGlobal("M1Q2_DEVOUR","MYAREA",1)
 		ReallyForceSpellRES("NWCREWT2","Nwbody7")  // No such index
 		SmallWait(3)
@@ -224,7 +224,7 @@ THEN
 END
 
 IF
-	Global("NWInbodynw","GLOBAL",1)
+	Global("NWInbody","GLOBAL",1)
 	GlobalLT("M1Q2_DEVOUR","MYAREA",5)
 	Global("Nobody","LOCALS",1)
 	OR(3)
