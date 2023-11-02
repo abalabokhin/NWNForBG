@@ -76,6 +76,6 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
   SAY @21
-  IF ~~ THEN DO ~SetGlobal("Portal2510","GLOBAL",1)PlaySound("EFF_M02")DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPortal2510","GLOBAL",1)PlaySound("EFF_M02")DestroySelf()~ EXIT
 END
 

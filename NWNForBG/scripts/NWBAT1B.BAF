@@ -29,7 +29,7 @@ THEN
 		SetGlobal("Pause3","MYAREA",0)
 		SetGlobal("Pause4","MYAREA",0)
 		SetGlobal("KellisaiTalk","MYAREA",1)
-		SetGlobalTimer("NextRaundNW","GLOBAL",EIGHT_HOURS)
+		SetGlobalTimer("NWNextRaundNW","GLOBAL",EIGHT_HOURS)
 		Wait(5)
 		EndCutSceneMode()
 		ActionOverride("NWKELLII",StartDialogueNoSet(Player1))

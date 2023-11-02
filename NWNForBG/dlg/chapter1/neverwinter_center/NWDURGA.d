@@ -26,10 +26,10 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
   SAY @9
-  IF ~  Global("ToMarrok","GLOBAL",1)~ THEN GOTO 6
-  IF ~  Global("ToMarrok","GLOBAL",0)OR(3)Class(LastTalkedToBy,FIGHTER_ALL)Class(LastTalkedToBy,RANGER_ALL)Class(LastTalkedToBy,PALADIN)~ THEN GOTO 7
-  IF ~  Global("ToMarrok","GLOBAL",0)!Class(LastTalkedToBy,FIGHTER_ALL)!Class(LastTalkedToBy,RANGER_ALL)!Class(LastTalkedToBy,PALADIN)PartyHasItem("NWARENA9")~ THEN GOTO 8
-  IF ~  Global("ToMarrok","GLOBAL",0)!Class(LastTalkedToBy,FIGHTER_ALL)!Class(LastTalkedToBy,RANGER_ALL)!Class(LastTalkedToBy,PALADIN)!PartyHasItem("NWARENA9")~ THEN GOTO 9
+  IF ~  Global("NWToMarrok","GLOBAL",1)~ THEN GOTO 6
+  IF ~  Global("NWToMarrok","GLOBAL",0)OR(3)Class(LastTalkedToBy,FIGHTER_ALL)Class(LastTalkedToBy,RANGER_ALL)Class(LastTalkedToBy,PALADIN)~ THEN GOTO 7
+  IF ~  Global("NWToMarrok","GLOBAL",0)!Class(LastTalkedToBy,FIGHTER_ALL)!Class(LastTalkedToBy,RANGER_ALL)!Class(LastTalkedToBy,PALADIN)PartyHasItem("NWARENA9")~ THEN GOTO 8
+  IF ~  Global("NWToMarrok","GLOBAL",0)!Class(LastTalkedToBy,FIGHTER_ALL)!Class(LastTalkedToBy,RANGER_ALL)!Class(LastTalkedToBy,PALADIN)!PartyHasItem("NWARENA9")~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
@@ -57,12 +57,12 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 3.2
   SAY @13
-  IF ~~ THEN DO ~SetGlobal("ToMarrok","GLOBAL",1)GiveItemCreate("NWDUPERT",LastTalkedToBy,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWToMarrok","GLOBAL",1)GiveItemCreate("NWDUPERT",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 3.3
   SAY @14
-  IF ~~ THEN DO ~SetGlobal("ToMarrok","GLOBAL",1)GiveItemCreate("NWDUPERT",LastTalkedToBy,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWToMarrok","GLOBAL",1)GiveItemCreate("NWDUPERT",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 3.4
@@ -75,7 +75,7 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
   SAY @17
-  IF ~~ THEN DO ~SetGlobal("ToMarrok","GLOBAL",1)GiveItemCreate("NWDUPERT",LastTalkedToBy,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWToMarrok","GLOBAL",1)GiveItemCreate("NWDUPERT",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.2

@@ -1,7 +1,7 @@
 IF
 	Clicked([ANYONE])
 	!PartyHasItem("NWMISC75")  // ?????? ????? ???????
-	Global("SeedsArePlanted","GLOBAL",0)
+	Global("NWSeedsArePlanted","GLOBAL",0)
 	Range(LastTrigger,15)
 THEN
 	RESPONSE #100
@@ -11,7 +11,7 @@ END
 IF
 	Clicked([ANYONE])
 	PartyHasItem("NWMISC75")  // ?????? ????? ???????
-	Global("SeedsArePlanted","GLOBAL",0)
+	Global("NWSeedsArePlanted","GLOBAL",0)
 	Range(LastTrigger,15)
 THEN
 	RESPONSE #100
@@ -23,7 +23,7 @@ END
 
 IF
 	Clicked([ANYONE])
-	Global("SeedsArePlanted","GLOBAL",1)
+	Global("NWSeedsArePlanted","GLOBAL",1)
 	Range(LastTrigger,15)
 THEN
 	RESPONSE #100

@@ -1,5 +1,5 @@
 IF
-	Global("ArmorQuest","GLOBAL",2)
+	Global("NWArmorQuest","GLOBAL",2)
 	Global("NWPARALE","LOCALS",0)
 THEN
 	RESPONSE #100

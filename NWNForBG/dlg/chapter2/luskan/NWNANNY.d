@@ -13,19 +13,19 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @4
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  GlobalGT("LondaQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 5
+  IF ~  GlobalGT("NWLondaQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @7
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  GlobalGT("LondaQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 5
+  IF ~  GlobalGT("NWLondaQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @8
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  GlobalGT("LondaQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 5
+  IF ~  GlobalGT("NWLondaQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
@@ -47,7 +47,7 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 1.3
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("LondaQuest","GLOBAL",2)GiveItem("Nwmisc59",LastTalkedToBy)EscapeAreaObject("Trap2")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLondaQuest","GLOBAL",2)GiveItem("Nwmisc59",LastTalkedToBy)EscapeAreaObject("Trap2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 2.1

@@ -120,13 +120,13 @@ IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Impossible","GLOBAL",1)~ THEN BEGIN 16 // from:
+~  Global("NWImpossible","GLOBAL",1)~ THEN BEGIN 16 // from:
   SAY @32
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Impossible","GLOBAL",1)~ THEN BEGIN 17 // from:
+~  Global("NWImpossible","GLOBAL",1)~ THEN BEGIN 17 // from:
   SAY @33
   IF ~~ THEN EXIT
 END

@@ -22,7 +22,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.4 0.5
   SAY @11
-  IF ~~ THEN DO ~SetGlobal("Talked_with_Quint","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTalked_with_Quint","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
@@ -43,7 +43,7 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("Talked_with_Quint","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTalked_with_Quint","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.1

@@ -3,23 +3,23 @@
 BEGIN ~NWDALCIA~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  OR(2)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN REPLY @1 GOTO 1
   IF ~  !Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 3
   IF ~~ THEN REPLY @3 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @4
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 3
   IF ~~ THEN REPLY @3 GOTO 4
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @5
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 3
   IF ~~ THEN REPLY @3 GOTO 4
 END
 
@@ -48,7 +48,7 @@ END
 // -------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 7 // from:
+~  GlobalGT("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 7 // from:
   SAY @12
   IF ~  OR(2)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN REPLY @1 GOTO 8
   IF ~  !Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)~ THEN REPLY @1 GOTO 9
@@ -73,7 +73,7 @@ END
 // -------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 11 // from:
+~  GlobalGT("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 11 // from:
   SAY @15
   IF ~~ THEN EXIT
 END

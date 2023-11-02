@@ -13,7 +13,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @5
-  IF ~  Global("EckelJob","GLOBAL",0)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWEckelJob","GLOBAL",0)~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
@@ -56,7 +56,7 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("EckelJob","GLOBAL",1)GiveItemCreate("NWECKLET",LastTalkedToBy,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWEckelJob","GLOBAL",1)GiveItemCreate("NWECKLET",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 1.2

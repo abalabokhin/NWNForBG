@@ -3,7 +3,7 @@
 BEGIN ~NWLENTON~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowLenton","LOCALS",0)Global("LentonQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("KnowLenton","LOCALS",0)Global("NWLentonQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -94,7 +94,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 12.2 13.2
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("LentonQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99482 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLentonQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99482 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 12.3 13.3
@@ -105,7 +105,7 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowLenton","LOCALS",1)Global("LentonQuest","GLOBAL",0)~ THEN BEGIN 17 // from:
+~  Global("KnowLenton","LOCALS",1)Global("NWLentonQuest","GLOBAL",0)~ THEN BEGIN 17 // from:
   SAY @36
   IF ~~ THEN REPLY @37 GOTO 18
   IF ~  PartyHasItem("NWHEADTL")~ THEN REPLY @38 GOTO 19
@@ -139,23 +139,23 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 19.1
   SAY @52
-  IF ~~ THEN DO ~TakePartyItem("NWHEADTL")SetGlobal("LentonQuest","GLOBAL",2)AddexperienceParty(30000)ReputationInc(1)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWHEADTL")SetGlobal("NWLentonQuest","GLOBAL",2)AddexperienceParty(30000)ReputationInc(1)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 19.2
   SAY @54
-  IF ~~ THEN DO ~TakePartyItem("NWHEADTL")SetGlobal("LentonQuest","GLOBAL",2)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWHEADTL")SetGlobal("NWLentonQuest","GLOBAL",2)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 19.3
   SAY @55
-  IF ~~ THEN DO ~TakePartyItem("NWHEADTL")SetGlobal("LentonQuest","GLOBAL",3)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWHEADTL")SetGlobal("NWLentonQuest","GLOBAL",3)AddexperienceParty(30000)GiveGoldForce(600)EraseJournalEntry(@99482) ~ SOLVED_JOURNAL @99528 EXIT
 END
 
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LentonQuest","GLOBAL",1)~ THEN BEGIN 25 // from:
+~  Global("NWLentonQuest","GLOBAL",1)~ THEN BEGIN 25 // from:
   SAY @56
   IF ~~ THEN REPLY @57 GOTO 26
   IF ~  PartyHasItem("NWHEADTL")~ THEN REPLY @58 GOTO 19
@@ -175,7 +175,7 @@ END
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LentonQuest","GLOBAL",2)~ THEN BEGIN 28 // from:
+~  Global("NWLentonQuest","GLOBAL",2)~ THEN BEGIN 28 // from:
   SAY @62
   IF ~~ THEN EXIT
 END
@@ -183,7 +183,7 @@ END
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LentonQuest","GLOBAL",3)~ THEN BEGIN 29 // from:
+~  Global("NWLentonQuest","GLOBAL",3)~ THEN BEGIN 29 // from:
   SAY @63
   IF ~~ THEN EXIT
 END

@@ -3,7 +3,7 @@
 BEGIN ~NWCHARWN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("Charwood_Is_Saved","GLOBAL",0)Global("Charwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWCharwood_Is_Saved","GLOBAL",0)Global("NWCharwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2

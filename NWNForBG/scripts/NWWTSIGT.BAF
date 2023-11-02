@@ -304,7 +304,7 @@ IF
 	CheckStatGT(Myself,19,LEVEL)
 	!HasItem("NWNOHLA",Myself)  // ????? ??????? ?????
 	OR(2)
-		GlobalGT("Chapter","GLOBAL",7)
+		GlobalGT("NWChapter","GLOBAL",7)
 		AmIInWatchersKeepPleaseIgnoreTheLackOfApostophe()
 	!GlobalTimerNotExpired("HLAInitialize","LOCALS")
 	OR(3)
@@ -839,7 +839,7 @@ IF
 	!GlobalTimerNotExpired("castspell","LOCALS")
 	!General(Myself,ANIMAL)
 	!General(Myself,MONSTER)
-	!GlobalGT("Chapter","GLOBAL",7)
+	!GlobalGT("NWChapter","GLOBAL",7)
 	HPPercentLT(Myself,50)
 	!General(Myself,UNDEAD)
 THEN
@@ -854,7 +854,7 @@ IF
 	!GlobalTimerNotExpired("castspell","LOCALS")
 	!General(Myself,ANIMAL)
 	!General(Myself,MONSTER)
-	!GlobalGT("Chapter","GLOBAL",7)
+	!GlobalGT("NWChapter","GLOBAL",7)
 	HPPercentLT(Myself,50)
 	!General(Myself,UNDEAD)
 THEN

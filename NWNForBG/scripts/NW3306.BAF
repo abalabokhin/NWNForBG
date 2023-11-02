@@ -12,7 +12,7 @@ END
 
 IF
 	Global("SundialNW","MYAREA",1)
-	GlobalGT("SeedsArePlanted","GLOBAL",0)
+	GlobalGT("NWSeedsArePlanted","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("SundialNW","MYAREA",0)
@@ -23,7 +23,7 @@ END
 
 IF
 	Global("SundialNW","MYAREA",1)
-	Global("SeedsArePlanted","GLOBAL",0)
+	Global("NWSeedsArePlanted","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("SundialNW","MYAREA",0)

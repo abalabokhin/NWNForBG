@@ -21,8 +21,8 @@ END
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @7
   IF ~~ THEN REPLY @8 GOTO 5
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
   IF ~~ THEN REPLY @10 GOTO 8
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @6 GOTO 4
@@ -45,8 +45,8 @@ END
 IF ~~ THEN BEGIN 5 // from: 2.1
   SAY @18
   IF ~~ THEN REPLY @19 GOTO 3
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
   IF ~~ THEN REPLY @10 GOTO 8
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @6 GOTO 4
@@ -74,8 +74,8 @@ IF ~~ THEN BEGIN 8 // from: 2.4
   SAY @23
   IF ~~ THEN REPLY @19 GOTO 3
   IF ~~ THEN REPLY @8 GOTO 5
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
   IF ~~ THEN REPLY @11 GOTO 9
   IF ~~ THEN REPLY @6 GOTO 4
 END
@@ -84,8 +84,8 @@ IF ~~ THEN BEGIN 9 // from: 2.5
   SAY @24
   IF ~~ THEN REPLY @19 GOTO 3
   IF ~~ THEN REPLY @8 GOTO 5
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 6
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @9 GOTO 7
   IF ~~ THEN REPLY @10 GOTO 8
   IF ~~ THEN REPLY @6 GOTO 4
 END
@@ -112,7 +112,7 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("Robbed","LOCALS",1)IncrementGlobal("EvilNW1","GLOBAL",1)GiveGoldForce(166)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Robbed","LOCALS",1)IncrementGlobal("NWEvilNW1","GLOBAL",1)GiveGoldForce(166)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.2

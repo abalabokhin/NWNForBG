@@ -3,13 +3,13 @@
 BEGIN ~NWSOLDI6~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,1)GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  RandomNum(5,1)GlobalGT("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,1)Global("RolganConvicted","GLOBAL",0)~ THEN BEGIN 1 // from:
+~  RandomNum(5,1)Global("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 1 // from:
   SAY @1
   IF ~~ THEN EXIT
 END

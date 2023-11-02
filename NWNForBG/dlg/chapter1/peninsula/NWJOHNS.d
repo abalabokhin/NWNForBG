@@ -3,7 +3,7 @@
 BEGIN ~NWJOHNS~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("JohnsthDead","MYAREA",1)Global("Follow","LOCALS",0)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("JohnsthDead","MYAREA",1)Global("Follow","LOCALS",0)GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -22,7 +22,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @9
-  IF ~~ THEN DO ~GiveGoldForce(92)IncrementGlobal("EvilNW1","GLOBAL",1)EscapeAreaDestroy(50)~ EXIT
+  IF ~~ THEN DO ~GiveGoldForce(92)IncrementGlobal("NWEvilNW1","GLOBAL",1)EscapeAreaDestroy(50)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
@@ -112,7 +112,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Follow","LOCALS",3)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 14 // from:
+~  Global("Follow","LOCALS",3)GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 14 // from:
   SAY @26
   IF ~~ THEN EXIT
 END
@@ -120,7 +120,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)GlobalGT("SedosQuest","GLOBAL",2)GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 15 // from:
+~  OR(2)GlobalGT("NWSedosQuest","GLOBAL",2)GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 15 // from:
   SAY @27
   IF ~~ THEN EXIT
 END
@@ -128,7 +128,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("JohnsthDead","MYAREA",0)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 16 // from:
+~  Global("JohnsthDead","MYAREA",0)GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 16 // from:
   SAY @28
   IF ~~ THEN EXIT
 END

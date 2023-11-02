@@ -34,8 +34,8 @@ END
 IF ~~ THEN BEGIN 4 // from: 1.2
   SAY @13
   IF ~~ THEN REPLY @14 GOTO 10
-  IF ~  GlobalGT("ErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
-  IF ~  GlobalLT("ErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("KnowAboutErik","GLOBAL",1)~ GOTO 12
+  IF ~  GlobalGT("NWErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
+  IF ~  GlobalLT("NWErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("NWKnowAboutErik","GLOBAL",1)~ GOTO 12
   IF ~~ THEN REPLY @16 GOTO 13
   IF ~~ THEN REPLY @17 GOTO 9
   IF ~~ THEN REPLY @2 GOTO 2
@@ -63,8 +63,8 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 3.2
   SAY @25
-  IF ~  Global("PeteQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 19
-  IF ~  Global("PeteQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 20
+  IF ~  Global("NWPeteQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 19
+  IF ~  Global("NWPeteQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @9 GOTO 6
   IF ~~ THEN REPLY @11 GOTO 8
   IF ~~ THEN REPLY @12 GOTO 9
@@ -91,8 +91,8 @@ END
 IF ~~ THEN BEGIN 10 // from: 4.1
   SAY @31
   IF ~~ THEN REPLY @32 GOTO 22
-  IF ~  GlobalGT("ErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
-  IF ~  GlobalLT("ErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("KnowAboutErik","GLOBAL",1)~ GOTO 12
+  IF ~  GlobalGT("NWErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
+  IF ~  GlobalLT("NWErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("NWKnowAboutErik","GLOBAL",1)~ GOTO 12
   IF ~~ THEN REPLY @16 GOTO 13
   IF ~~ THEN REPLY @17 GOTO 9
   IF ~~ THEN REPLY @2 GOTO 2
@@ -117,8 +117,8 @@ END
 IF ~~ THEN BEGIN 13 // from: 4.4
   SAY @35
   IF ~~ THEN REPLY @14 GOTO 10
-  IF ~  GlobalGT("ErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
-  IF ~  GlobalLT("ErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("KnowAboutErik","GLOBAL",1)~ GOTO 12
+  IF ~  GlobalGT("NWErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
+  IF ~  GlobalLT("NWErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("NWKnowAboutErik","GLOBAL",1)~ GOTO 12
   IF ~~ THEN REPLY @17 GOTO 9
   IF ~~ THEN REPLY @2 GOTO 2
 END
@@ -166,7 +166,7 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 7.1
   SAY @42
-  IF ~  Global("PeteQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 20
+  IF ~  Global("NWPeteQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @9 GOTO 6
   IF ~~ THEN REPLY @11 GOTO 8
   IF ~~ THEN REPLY @12 GOTO 9
@@ -175,7 +175,7 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 7.2
   SAY @43
-  IF ~  Global("PeteQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 19
+  IF ~  Global("NWPeteQuest","GLOBAL",0)~ THEN REPLY @26 GOTO 19
   IF ~~ THEN REPLY @9 GOTO 6
   IF ~~ THEN REPLY @11 GOTO 8
   IF ~~ THEN REPLY @12 GOTO 9
@@ -198,8 +198,8 @@ END
 
 IF ~~ THEN BEGIN 23 // from: 22.1
   SAY @45
-  IF ~  GlobalGT("ErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
-  IF ~  GlobalLT("ErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("KnowAboutErik","GLOBAL",1)~ GOTO 12
+  IF ~  GlobalGT("NWErikQuest","GLOBAL",1)~ THEN REPLY @15 GOTO 11
+  IF ~  GlobalLT("NWErikQuest","GLOBAL",2)~ THEN REPLY @15 DO ~SetGlobal("NWKnowAboutErik","GLOBAL",1)~ GOTO 12
   IF ~~ THEN REPLY @16 GOTO 13
   IF ~~ THEN REPLY @17 GOTO 9
   IF ~~ THEN REPLY @2 GOTO 2

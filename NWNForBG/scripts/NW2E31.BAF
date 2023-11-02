@@ -9,7 +9,7 @@ THEN
 END
 
 IF
-	Global("KurtQuest","GLOBAL",2)
+	Global("NWKurtQuest","GLOBAL",2)
 	Global("Journal","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -20,52 +20,52 @@ END
 
 IF
 	OpenState("Luke16",FALSE)
-	Global("2E56to2E31","GLOBAL",1)
+	Global("NW2E56to2E31","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E31","GLOBAL",0)
+		SetGlobal("NW2E56to2E31","GLOBAL",0)
 END
 
 IF
 	OpenState("Luke16",TRUE)
-	Global("2E56to2E31","GLOBAL",1)
+	Global("NW2E56to2E31","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E31","GLOBAL",0)
+		SetGlobal("NW2E56to2E31","GLOBAL",0)
 		CloseDoor("Luke16")
 END
 
 IF
 	OpenState("DOOR06",TRUE)
-	Global("DoorNW2E48","GLOBAL",1)
+	Global("NWDoorNW2E48","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("DoorNW2E48","GLOBAL",0)
+		SetGlobal("NWDoorNW2E48","GLOBAL",0)
 END
 
 IF
 	OpenState("DOOR06",FALSE)
-	Global("DoorNW2E48","GLOBAL",1)
+	Global("NWDoorNW2E48","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("DoorNW2E48","GLOBAL",0)
+		SetGlobal("NWDoorNW2E48","GLOBAL",0)
 		OpenDoor("DOOR06")
 END
 
 IF
 	OpenState("DOOR07",TRUE)
-	Global("DoorNW2E47","GLOBAL",1)
+	Global("NWDoorNW2E47","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("DoorNW2E47","GLOBAL",0)
+		SetGlobal("NWDoorNW2E47","GLOBAL",0)
 END
 
 IF
 	OpenState("DOOR07",FALSE)
-	Global("DoorNW2E47","GLOBAL",1)
+	Global("NWDoorNW2E47","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("DoorNW2E47","GLOBAL",0)
+		SetGlobal("NWDoorNW2E47","GLOBAL",0)
 		OpenDoor("DOOR07")
 END
 

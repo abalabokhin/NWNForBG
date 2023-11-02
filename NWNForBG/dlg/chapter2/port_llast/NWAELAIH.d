@@ -231,14 +231,14 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 35
   SAY @67
-  IF ~  Global("AelaithQuest","GLOBAL",0)~ THEN DO ~SetGlobal("AelaithQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95860 EXIT
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)~ THEN EXIT
+  IF ~  Global("NWAelaithQuest","GLOBAL",0)~ THEN DO ~SetGlobal("NWAelaithQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @95860 EXIT
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)~ THEN EXIT
 END
 
 // ----------------------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("AelaithQuest","GLOBAL",0)~ THEN BEGIN 37 // from:
+~  !NumTimesTalkedTo(0)Global("NWAelaithQuest","GLOBAL",0)~ THEN BEGIN 37 // from:
   SAY @69
   IF ~  Global("KnowAboutQuest","LOCALS",1)~ THEN REPLY @70 GOTO 38
   IF ~  Global("AelaithStore","LOCALS",1)~ THEN REPLY @71 GOTO 26
@@ -257,15 +257,15 @@ END
 // --------------------------------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalGT("AelaithQuest","GLOBAL",0)~ THEN BEGIN 39 // from:
+~  !NumTimesTalkedTo(0)GlobalGT("NWAelaithQuest","GLOBAL",0)~ THEN BEGIN 39 // from:
   SAY @73
   IF ~~ THEN REPLY @74 GOTO 34
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",3)
+  IF ~  GlobalLT("NWAelaithQuest","GLOBAL",3)
 OR(3)PartyHasItem("NWVGEM")PartyHasItem("NWZGEM")PartyHasItem("NWSGEM")
 OR(3)!PartyHasItem("NWVGEM")!PartyHasItem("NWZGEM")!PartyHasItem("NWSGEM")~ THEN REPLY @75 GOTO 40
-  IF ~  Global("AelaithQuest","GLOBAL",1)
+  IF ~  Global("NWAelaithQuest","GLOBAL",1)
 PartyHasItem("NWVGEM")PartyHasItem("NWZGEM")PartyHasItem("NWSGEM")~ THEN REPLY @76 GOTO 54
-  IF ~  Global("AelaithQuest","GLOBAL",3)
+  IF ~  Global("NWAelaithQuest","GLOBAL",3)
 OR(3)PartyHasItem("NWVGEM")PartyHasItem("NWZGEM")PartyHasItem("NWSGEM")~ THEN REPLY @77 GOTO 41
   IF ~  Global("AelaithStore","LOCALS",1)~ THEN REPLY @71 GOTO 26
   IF ~  Global("AelaithStore","LOCALS",0)~ THEN REPLY @23 GOTO 62
@@ -293,22 +293,22 @@ END
 
 IF ~~ THEN BEGIN 43 // from: 40.1
   SAY @88
-  IF ~~ THEN DO ~IncrementGlobal("AelaithQuest","GLOBAL",1)TakePartyItem("NWVGEM")GiveGoldForce(1500)~ EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWAelaithQuest","GLOBAL",1)TakePartyItem("NWVGEM")GiveGoldForce(1500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 40.2
   SAY @89
-  IF ~~ THEN DO ~IncrementGlobal("AelaithQuest","GLOBAL",1)TakePartyItem("NWZGEM")GiveGoldForce(1500)~ EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWAelaithQuest","GLOBAL",1)TakePartyItem("NWZGEM")GiveGoldForce(1500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 40.3
   SAY @90
-  IF ~~ THEN DO ~IncrementGlobal("AelaithQuest","GLOBAL",1)TakePartyItem("NWSGEM")GiveGoldForce(1500)~ EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWAelaithQuest","GLOBAL",1)TakePartyItem("NWSGEM")GiveGoldForce(1500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 41.1
   SAY @91
-  IF ~~ THEN DO ~IncrementGlobal("AelaithQuest","GLOBAL",1)
+  IF ~~ THEN DO ~IncrementGlobal("NWAelaithQuest","GLOBAL",1)
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
@@ -334,7 +334,7 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 47.1
   SAY @98
-  IF ~~ THEN DO ~IncrementGlobal("AelaithQuest","GLOBAL",1)
+  IF ~~ THEN DO ~IncrementGlobal("NWAelaithQuest","GLOBAL",1)
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
@@ -358,7 +358,7 @@ END
 
 IF ~~ THEN BEGIN 53 // from: 51.1
   SAY @100
-  IF ~~ THEN DO ~IncrementGlobal("AelaithQuest","GLOBAL",1)
+  IF ~~ THEN DO ~IncrementGlobal("NWAelaithQuest","GLOBAL",1)
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
@@ -384,7 +384,7 @@ END
 
 IF ~~ THEN BEGIN 61 // from: 54.1
   SAY @91
-  IF ~~ THEN DO ~SetGlobal("AelaithQuest","GLOBAL",4)
+  IF ~~ THEN DO ~SetGlobal("NWAelaithQuest","GLOBAL",4)
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
@@ -403,7 +403,7 @@ END
 
 IF ~~ THEN BEGIN 57 // from: 55.1
   SAY @98
-  IF ~~ THEN DO ~SetGlobal("AelaithQuest","GLOBAL",4)
+  IF ~~ THEN DO ~SetGlobal("NWAelaithQuest","GLOBAL",4)
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
@@ -434,7 +434,7 @@ END
 
 IF ~~ THEN BEGIN 60 // from: 59.1
   SAY @100
-  IF ~~ THEN DO ~SetGlobal("AelaithQuest","GLOBAL",4)
+  IF ~~ THEN DO ~SetGlobal("NWAelaithQuest","GLOBAL",4)
 TakePartyItem("NWZGEM")
 TakePartyItem("NWVGEM")
 TakePartyItem("NWSGEM")
@@ -467,12 +467,12 @@ END
 IF ~~ THEN BEGIN 65 // from: 62.3 63.2
   SAY @106
   IF ~~ THEN REPLY @74 GOTO 34
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",3)
+  IF ~  GlobalLT("NWAelaithQuest","GLOBAL",3)
 OR(3)PartyHasItem("NWVGEM")PartyHasItem("NWZGEM")PartyHasItem("NWSGEM")
 OR(3)!PartyHasItem("NWVGEM")!PartyHasItem("NWZGEM")!PartyHasItem("NWSGEM")~ THEN REPLY @75 GOTO 40
-  IF ~  Global("AelaithQuest","GLOBAL",1)
+  IF ~  Global("NWAelaithQuest","GLOBAL",1)
 PartyHasItem("NWVGEM")PartyHasItem("NWZGEM")PartyHasItem("NWSGEM")~ THEN REPLY @76 GOTO 54
-  IF ~  Global("AelaithQuest","GLOBAL",3)
+  IF ~  Global("NWAelaithQuest","GLOBAL",3)
 OR(3)PartyHasItem("NWVGEM")PartyHasItem("NWZGEM")PartyHasItem("NWSGEM")~ THEN REPLY @77 GOTO 41
   IF ~~ THEN REPLY @78 GOTO 42
 END

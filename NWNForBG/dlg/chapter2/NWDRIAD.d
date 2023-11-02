@@ -136,7 +136,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SetaraSurrenders","LOCALS",2)Global("SpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 20 // from:
+~  Global("SetaraSurrenders","LOCALS",2)Global("NWSpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 20 // from:
   SAY @2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 3
@@ -145,7 +145,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)GlobalGT("SpiritSaved","GLOBAL",0)Dead("NWSPIRIO")~ THEN BEGIN 21 // from:
+~  OR(2)GlobalGT("NWSpiritSaved","GLOBAL",0)Dead("NWSPIRIO")~ THEN BEGIN 21 // from:
   SAY @37
   IF ~~ THEN EXIT
 END

@@ -37,22 +37,22 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
   SAY @9
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",8)GiveItemCreate("NWRING2",LastTalkedToBy,1,1,1)AddexperienceParty(42000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKaohionQuest","GLOBAL",8)GiveItemCreate("NWRING2",LastTalkedToBy,1,1,1)AddexperienceParty(42000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
   SAY @9
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",8)GiveItemCreate("NWBOW1",LastTalkedToBy,1,1,1)AddexperienceParty(42000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKaohionQuest","GLOBAL",8)GiveItemCreate("NWBOW1",LastTalkedToBy,1,1,1)AddexperienceParty(42000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.3
   SAY @9
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",8)ForceSpellRes("NWSPKAO2",LastTalkedToBy(Myself))AddexperienceParty(42000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKaohionQuest","GLOBAL",8)ForceSpellRes("NWSPKAO2",LastTalkedToBy(Myself))AddexperienceParty(42000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // 1.4
   SAY @10
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",8)AddexperienceParty(42000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKaohionQuest","GLOBAL",8)AddexperienceParty(42000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 2.1
@@ -91,7 +91,7 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 10.3
   SAY @21
-  IF ~~ THEN DO ~SetGlobal("KaohionQuest","GLOBAL",8)GiveItemCreate("NWBOOK46",LastTalkedToBy,1,1,1)AddexperienceParty(84000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKaohionQuest","GLOBAL",8)GiveItemCreate("NWBOOK46",LastTalkedToBy,1,1,1)AddexperienceParty(84000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 11.1

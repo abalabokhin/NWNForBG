@@ -93,8 +93,8 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 6.5
   SAY @23
-  IF ~  GlobalLT("MoonstoneMask","GLOBAL",2)~ THEN REPLY @24 GOTO 17
-  IF ~  GlobalGT("MoonstoneMask","GLOBAL",1)~ THEN REPLY @24 GOTO 18
+  IF ~  GlobalLT("NWMoonstoneMask","GLOBAL",2)~ THEN REPLY @24 GOTO 17
+  IF ~  GlobalGT("NWMoonstoneMask","GLOBAL",1)~ THEN REPLY @24 GOTO 18
   IF ~~ THEN REPLY @25 GOTO 19
   IF ~~ THEN REPLY @4 GOTO 5
 END
@@ -102,7 +102,7 @@ END
 IF ~~ THEN BEGIN 14 // from: 9.1
   SAY @26
   IF ~~ THEN REPLY @27 GOTO 15
-  IF ~~ THEN REPLY @28 DO ~SetGlobal("OphalaQuest","GLOBAL",1)~ GOTO 16
+  IF ~~ THEN REPLY @28 DO ~SetGlobal("NWOphalaQuest","GLOBAL",1)~ GOTO 16
 END
 
 IF ~~ THEN BEGIN 15 // from: 14.1
@@ -123,15 +123,15 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @32
-  IF ~~ THEN REPLY @33 DO ~SetGlobal("OphalaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @92742 GOTO 22
-  IF ~~ THEN REPLY @28 DO ~SetGlobal("OphalaQuest","GLOBAL",1)~ GOTO 16
+  IF ~~ THEN REPLY @33 DO ~SetGlobal("NWOphalaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @92742 GOTO 22
+  IF ~~ THEN REPLY @28 DO ~SetGlobal("NWOphalaQuest","GLOBAL",1)~ GOTO 16
 END
 
 IF ~~ THEN BEGIN 17 // from: 13.1
   SAY @35
   IF ~  PartyHasItem("NWOLEFFT")~ THEN REPLY @36 GOTO 23
-  IF ~  Global("MoonstoneMask","GLOBAL",0)~ THEN REPLY @37 GOTO 24
-  IF ~  Global("MoonstoneMask","GLOBAL",1)~ THEN REPLY @37 GOTO 25
+  IF ~  Global("NWMoonstoneMask","GLOBAL",0)~ THEN REPLY @37 GOTO 24
+  IF ~  Global("NWMoonstoneMask","GLOBAL",1)~ THEN REPLY @37 GOTO 25
   IF ~~ THEN REPLY @25 GOTO 19
   IF ~~ THEN REPLY @4 GOTO 5
 END
@@ -144,8 +144,8 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 13.3
   SAY @39
-  IF ~  GlobalLT("MoonstoneMask","GLOBAL",2)~ THEN REPLY @24 GOTO 17
-  IF ~  GlobalGT("MoonstoneMask","GLOBAL",1)~ THEN REPLY @24 GOTO 18
+  IF ~  GlobalLT("NWMoonstoneMask","GLOBAL",2)~ THEN REPLY @24 GOTO 17
+  IF ~  GlobalGT("NWMoonstoneMask","GLOBAL",1)~ THEN REPLY @24 GOTO 18
   IF ~~ THEN REPLY @4 GOTO 5
 END
 
@@ -157,12 +157,12 @@ END
 
 IF ~~ THEN BEGIN 23// from: 17.1
   SAY @41
-  IF ~~ THEN DO ~SetGlobal("MoonstoneMask","GLOBAL",2)TakePartyItem("NWOLEFFT")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWMoonstoneMask","GLOBAL",2)TakePartyItem("NWOLEFFT")~ EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 17.2
   SAY @42
-  IF ~~ THEN DO ~SetGlobal("MoonstoneMask","GLOBAL",1)GiveItemCreate("NWOPHALT",LastTalkedToBy,0,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWMoonstoneMask","GLOBAL",1)GiveItemCreate("NWOPHALT",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 17.3
@@ -175,10 +175,10 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)IsGabber(Player1)~ THEN BEGIN 26 // from:
   SAY @44
-  IF ~  Global("OphalaQuest","GLOBAL",1)OR(3)PartyHasItem("Nwmisc12")PartyHasItem("Nwmisc13")PartyHasItem("Nwmisc14")~ THEN REPLY @45 GOTO 27
+  IF ~  Global("NWOphalaQuest","GLOBAL",1)OR(3)PartyHasItem("Nwmisc12")PartyHasItem("Nwmisc13")PartyHasItem("Nwmisc14")~ THEN REPLY @45 GOTO 27
   IF ~  PartyHasItem("NWOLEFFT")~ THEN REPLY @46 GOTO 23
   IF ~~ THEN REPLY @47 GOTO 28
-  IF ~  Global("OphalaQuest","GLOBAL",0)~ THEN REPLY @48 GOTO 29
+  IF ~  Global("NWOphalaQuest","GLOBAL",0)~ THEN REPLY @48 GOTO 29
   IF ~~ THEN REPLY @16 GOTO 13
   IF ~~ THEN REPLY @4 GOTO 5
 END
@@ -225,7 +225,7 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 27.3
   SAY @59
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")SetGlobal("NWOphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 27.4
@@ -240,7 +240,7 @@ END
 
 IF ~~ THEN BEGIN 35 // from: 27.6
   SAY @63
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@103126)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc13")SetGlobal("NWOphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@103126)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 27.7
@@ -250,17 +250,17 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 27.8
   SAY @65
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc14")SetGlobal("NWOphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(1500)AddexperienceParty(40000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 27.9
   SAY @66
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(4500)AddexperienceParty(80000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)EraseJournalEntry(@103126)~ SOLVED_JOURNAL @92799 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("NWOphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(4500)AddexperienceParty(80000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)EraseJournalEntry(@103126)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 27.10
   SAY @67
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("OphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(2250)AddexperienceParty(60000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)EraseJournalEntry(@103126)~ SOLVED_JOURNAL @92799 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc12")TakePartyItem("Nwmisc13")TakePartyItem("Nwmisc14")SetGlobal("NWOphalaQuest","GLOBAL",2)IncrementGlobal("OphalaMisc","LOCALS",1)GiveGoldForce(2250)AddexperienceParty(60000)GiveItemCreate("NWOPHALR",LastTalkedToBy,1,1,1)EraseJournalEntry(@92742)EraseJournalEntry(@103126)~ SOLVED_JOURNAL @92799 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 27.11
@@ -273,10 +273,10 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)!IsGabber(Player1)~ THEN BEGIN 41 // from:
   SAY @69
-  IF ~  Global("OphalaQuest","GLOBAL",1)OR(3)PartyHasItem("Nwmisc12")PartyHasItem("Nwmisc13")PartyHasItem("Nwmisc14")~ THEN REPLY @45 GOTO 27
+  IF ~  Global("NWOphalaQuest","GLOBAL",1)OR(3)PartyHasItem("Nwmisc12")PartyHasItem("Nwmisc13")PartyHasItem("Nwmisc14")~ THEN REPLY @45 GOTO 27
   IF ~  PartyHasItem("NWOLEFFT")~ THEN REPLY @46 GOTO 23
   IF ~~ THEN REPLY @47 GOTO 28
-  IF ~  GlobalLT("OphalaQuest","GLOBAL",2)~ THEN REPLY @48 GOTO 29
+  IF ~  GlobalLT("NWOphalaQuest","GLOBAL",2)~ THEN REPLY @48 GOTO 29
   IF ~~ THEN REPLY @16 GOTO 13
   IF ~~ THEN REPLY @4 GOTO 5
 END

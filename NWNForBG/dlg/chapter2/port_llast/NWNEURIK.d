@@ -3,7 +3,7 @@
 BEGIN ~NWNEURIK~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWNeurikQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~ Global("KnowNeurik","LOCALS",0)IsGabber(Player1)~ THEN REPLY @1 DO ~SetGlobal("KnowNeurik","LOCALS",1)~ GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -66,7 +66,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 8.1
   SAY @16
-  IF ~~ THEN REPLY @17 DO ~SetGlobal("NeurikQuest","GLOBAL",1)
+  IF ~~ THEN REPLY @17 DO ~SetGlobal("NWNeurikQuest","GLOBAL",1)
 GiveItemCreate("NWAMULNU",LastTalkedToBy(Myself),1,0,0)
 GiveItemCreate("NWAMULNU",LastTalkedToBy(Myself),1,0,0)
 GiveItemCreate("NWAMULNU",LastTalkedToBy(Myself),1,0,0)
@@ -167,14 +167,14 @@ IF ~~ THEN BEGIN 18 // from: 12.4
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",0)GlobalLT("NeurikQuest","GLOBAL",4)~ THEN BEGIN 20 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",0)GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN BEGIN 20 // from:
   SAY @41
-  IF ~  Global("NeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
-  IF ~  OR(2)Global("NeurikQuest","GLOBAL",7)Global("NeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
-  IF ~  Global("NeurikQuest","GLOBAL",6)~ THEN REPLY @44 GOTO 23
-  IF ~  Global("NeurikQuest","GLOBAL",4)~ THEN REPLY @45 GOTO 24
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)GlobalLT("NeurikQuest","GLOBAL",4)~ THEN REPLY @46 GOTO 25
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)GlobalLT("NeurikQuest","GLOBAL",4)~ THEN REPLY @47 GOTO 26
+  IF ~  Global("NWNeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
+  IF ~  OR(2)Global("NWNeurikQuest","GLOBAL",7)Global("NWNeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
+  IF ~  Global("NWNeurikQuest","GLOBAL",6)~ THEN REPLY @44 GOTO 23
+  IF ~  Global("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @45 GOTO 24
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @46 GOTO 25
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @47 GOTO 26
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -191,18 +191,18 @@ END
 
 IF ~~ THEN BEGIN 62 // from: 61.1
   SAY @48
-  IF ~  Global("NeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
-  IF ~  OR(2)Global("NeurikQuest","GLOBAL",7)Global("NeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
-  IF ~  Global("NeurikQuest","GLOBAL",6)~ THEN REPLY @44 GOTO 23
-  IF ~  Global("NeurikQuest","GLOBAL",4)~ THEN REPLY @45 GOTO 24
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)GlobalLT("NeurikQuest","GLOBAL",4)~ THEN REPLY @46 GOTO 25
+  IF ~  Global("NWNeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
+  IF ~  OR(2)Global("NWNeurikQuest","GLOBAL",7)Global("NWNeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
+  IF ~  Global("NWNeurikQuest","GLOBAL",6)~ THEN REPLY @44 GOTO 23
+  IF ~  Global("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @45 GOTO 24
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @46 GOTO 25
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @49
-  IF ~~ THEN REPLY @50 DO ~SetGlobal("NeurikQuest","GLOBAL",10)
+  IF ~~ THEN REPLY @50 DO ~SetGlobal("NWNeurikQuest","GLOBAL",10)
 GiveItemCreate("NWNEURIL",LastTalkedToBy(Myself),1,1,1)TakePartyItem("NWELTOOH")AddexperienceParty(90000)EraseJournalEntry(@96863)~ SOLVED_JOURNAL @96914 GOTO 27
   IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @52 GOTO 28
   IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @52 GOTO 29
@@ -215,22 +215,22 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 21.2
   SAY @54
-  IF ~~ THEN REPLY @50 DO ~SetGlobal("NeurikQuest","GLOBAL",10)
+  IF ~~ THEN REPLY @50 DO ~SetGlobal("NWNeurikQuest","GLOBAL",10)
 GiveItemCreate("NWNEURIL",LastTalkedToBy(Myself),1,1,1)
 GiveGoldForce(1000)TakePartyItem("NWELTOOH")AddexperienceParty(90000)EraseJournalEntry(@96863)~ SOLVED_JOURNAL @96914 GOTO 27
 END
 
 IF ~~ THEN BEGIN 29 // from: 21.3
   SAY @55
-  IF ~~ THEN REPLY @50 DO ~SetGlobal("NeurikQuest","GLOBAL",10)
+  IF ~~ THEN REPLY @50 DO ~SetGlobal("NWNeurikQuest","GLOBAL",10)
 GiveItemCreate("NWNEURIL",LastTalkedToBy(Myself),1,1,1)TakePartyItem("NWELTOOH")AddexperienceParty(90000)EraseJournalEntry(@96863)~ SOLVED_JOURNAL @96914 GOTO 27
 END
 
 IF ~~ THEN BEGIN 22 // from: 20.2
   SAY @56
-  IF ~  Global("NeurikQuest","GLOBAL",7)~ THEN REPLY @57 GOTO 30
-  IF ~  Global("NeurikQuest","GLOBAL",7)~ THEN REPLY @58 GOTO 31
-  IF ~  Global("NeurikQuest","GLOBAL",7)~ THEN REPLY @59 GOTO 32
+  IF ~  Global("NWNeurikQuest","GLOBAL",7)~ THEN REPLY @57 GOTO 30
+  IF ~  Global("NWNeurikQuest","GLOBAL",7)~ THEN REPLY @58 GOTO 31
+  IF ~  Global("NWNeurikQuest","GLOBAL",7)~ THEN REPLY @59 GOTO 32
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -244,7 +244,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 23.1
   SAY @61
-  IF ~~ THEN DO ~SetGlobal("NeurikQuest","GLOBAL",8)EraseJournalEntry(@96864)~ UNSOLVED_JOURNAL @96863 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNeurikQuest","GLOBAL",8)EraseJournalEntry(@96864)~ UNSOLVED_JOURNAL @96863 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 23.2
@@ -255,7 +255,7 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 23.3
   SAY @64
-  IF ~~ THEN DO ~SetGlobal("NeurikQuest","GLOBAL",7) ~EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNeurikQuest","GLOBAL",7) ~EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 20.4
@@ -352,32 +352,32 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 25.2
   SAY @72
-  IF ~  !Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NeurikQuest","GLOBAL",4)
+  IF ~  !Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NWNeurikQuest","GLOBAL",4)
 TakePartyItem("NWURTRIG")
 TakePartyItem("NWBRUNRG")
 TakePartyItem("NWGETRIG")
-SetGlobal("UrtIsSaved","GLOBAL",1)
+SetGlobal("NWUrtIsSaved","GLOBAL",1)
 AddexperienceParty(90000)~ GOTO 45
-  IF ~  OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NeurikQuest","GLOBAL",4)
+  IF ~  OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")PartyHasItem("NWURTRIG")PartyHasItem("NWBRUNRG")PartyHasItem("NWGETRIG")~ THEN REPLY @73 DO ~SetGlobal("NWNeurikQuest","GLOBAL",4)
 TakePartyItem("NWURTRIG")
 TakePartyItem("NWBRUNRG")
 TakePartyItem("NWGETRIG")
-SetGlobal("UrtIsSaved","GLOBAL",1)
+SetGlobal("NWUrtIsSaved","GLOBAL",1)
 AddexperienceParty(30000)~ GOTO 46
-  IF ~  PartyHasItem("NWURTRIG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("NWURT")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 47
-  IF ~  PartyHasItem("NWURTRIG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("NWURT")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 48
-  IF ~  PartyHasItem("NWURTRIG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(90000)SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 49
-  IF ~  PartyHasItem("NWURTRIG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @74 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(30000)SetGlobal("UrtIsSaved","GLOBAL",1)~ GOTO 46
+  IF ~  PartyHasItem("NWURTRIG")GlobalLT("NWNeurikQuest","GLOBAL",3)!Dead("NWURT")~ THEN REPLY @74 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")SetGlobal("NWUrtIsSaved","GLOBAL",1)~ GOTO 47
+  IF ~  PartyHasItem("NWURTRIG")GlobalLT("NWNeurikQuest","GLOBAL",3)Dead("NWURT")~ THEN REPLY @74 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")SetGlobal("NWUrtIsSaved","GLOBAL",1)~ GOTO 48
+  IF ~  PartyHasItem("NWURTRIG")Global("NWNeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @74 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(90000)SetGlobal("NWUrtIsSaved","GLOBAL",1)~ GOTO 49
+  IF ~  PartyHasItem("NWURTRIG")Global("NWNeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @74 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWURTRIG")AddexperienceParty(30000)SetGlobal("NWUrtIsSaved","GLOBAL",1)~ GOTO 46
 //-------------------------------------
-  IF ~  PartyHasItem("NWBRUNRG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("NWBRUN")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")~ GOTO 50
-  IF ~  PartyHasItem("NWBRUNRG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("NWBRUN")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")~ GOTO 51
-  IF ~  PartyHasItem("NWBRUNRG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(90000)~ GOTO 52
-  IF ~  PartyHasItem("NWBRUNRG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @75 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(30000)~ GOTO 46
+  IF ~  PartyHasItem("NWBRUNRG")GlobalLT("NWNeurikQuest","GLOBAL",3)!Dead("NWBRUN")~ THEN REPLY @75 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")~ GOTO 50
+  IF ~  PartyHasItem("NWBRUNRG")GlobalLT("NWNeurikQuest","GLOBAL",3)Dead("NWBRUN")~ THEN REPLY @75 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")~ GOTO 51
+  IF ~  PartyHasItem("NWBRUNRG")Global("NWNeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @75 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(90000)~ GOTO 52
+  IF ~  PartyHasItem("NWBRUNRG")Global("NWNeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @75 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWBRUNRG")AddexperienceParty(30000)~ GOTO 46
 //----------------------------------------
-  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NeurikQuest","GLOBAL",3)!Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 53
-  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NeurikQuest","GLOBAL",3)Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 54
-  IF ~  PartyHasItem("NWGETRIG")Global("NeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(90000)~ GOTO 55
-  IF ~  PartyHasItem("NWGETRIG")Global("NeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(30000)~ GOTO 46
+  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NWNeurikQuest","GLOBAL",3)!Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 53
+  IF ~  PartyHasItem("NWGETRIG")GlobalLT("NWNeurikQuest","GLOBAL",3)Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")~ GOTO 54
+  IF ~  PartyHasItem("NWGETRIG")Global("NWNeurikQuest","GLOBAL",3)!Dead("NWURT")!Dead("NWBRUN")!Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(90000)~ GOTO 55
+  IF ~  PartyHasItem("NWGETRIG")Global("NWNeurikQuest","GLOBAL",3)OR(3)Dead("NWURT")Dead("NWBRUN")Dead("NWGET")~ THEN REPLY @76 DO ~IncrementGlobal("NWNeurikQuest","GLOBAL",1)TakePartyItem("NWGETRIG")AddexperienceParty(30000)~ GOTO 46
 END
 
 IF ~~ THEN BEGIN 45 // from: 34.1
@@ -441,30 +441,30 @@ IF ~~ THEN BEGIN 55 // from: 34.13
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",4)GlobalLT("NeurikQuest","GLOBAL",7)~ THEN BEGIN 57 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",4)GlobalLT("NWNeurikQuest","GLOBAL",7)~ THEN BEGIN 57 // from:
   SAY @89
-  IF ~  Global("NeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
-  IF ~  OR(2)Global("NeurikQuest","GLOBAL",7)Global("NeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
-  IF ~  Global("NeurikQuest","GLOBAL",6)~ THEN REPLY @44 GOTO 23
-  IF ~  Global("NeurikQuest","GLOBAL",4)~ THEN REPLY @45 GOTO 24
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)GlobalLT("NeurikQuest","GLOBAL",4)~ THEN REPLY @46 GOTO 25
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)GlobalLT("NeurikQuest","GLOBAL",4)~ THEN REPLY @47 GOTO 26
+  IF ~  Global("NWNeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
+  IF ~  OR(2)Global("NWNeurikQuest","GLOBAL",7)Global("NWNeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
+  IF ~  Global("NWNeurikQuest","GLOBAL",6)~ THEN REPLY @44 GOTO 23
+  IF ~  Global("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @45 GOTO 24
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @46 GOTO 25
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN REPLY @47 GOTO 26
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",7)~ THEN BEGIN 58 // from:
+~  Global("NWNeurikQuest","GLOBAL",7)~ THEN BEGIN 58 // from:
   SAY @90
-  IF ~  OR(2)Global("NeurikQuest","GLOBAL",7)Global("NeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
-  IF ~  OR(2)Global("NeurikQuest","GLOBAL",7)Global("NeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
+  IF ~  OR(2)Global("NWNeurikQuest","GLOBAL",7)Global("NWNeurikQuest","GLOBAL",8)PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
+  IF ~  OR(2)Global("NWNeurikQuest","GLOBAL",7)Global("NWNeurikQuest","GLOBAL",8)!PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
   IF ~~ THEN REPLY @57 GOTO 30
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",8)~ THEN BEGIN 59 // from:
+~  Global("NWNeurikQuest","GLOBAL",8)~ THEN BEGIN 59 // from:
   SAY @91
   IF ~  PartyHasItem("NWELTOOH")~ THEN REPLY @42 GOTO 21
   IF ~  !PartyHasItem("NWELTOOH")~ THEN REPLY @43 GOTO 22
@@ -473,7 +473,7 @@ IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",4)~ THEN BEGIN 60 // from:
+~  Global("NWNeurikQuest","GLOBAL",4)~ THEN BEGIN 60 // from:
   SAY @92
   IF ~~ THEN REPLY @45 GOTO 24
   IF ~~ THEN REPLY @4 GOTO 4
@@ -481,7 +481,7 @@ IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",10)~ THEN BEGIN 63 // from:
+~  Global("NWNeurikQuest","GLOBAL",10)~ THEN BEGIN 63 // from:
   SAY @93
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5

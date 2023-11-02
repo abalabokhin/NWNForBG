@@ -1,20 +1,20 @@
 IF
 	Dead("Catap2")  // ??????????
 	Dead("Catap3")
-	Global("TrankarCatapult","GLOBAL",0)
+	Global("NWTrankarCatapult","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("TrankarCatapult","GLOBAL",1)
+		SetGlobal("NWTrankarCatapult","GLOBAL",1)
 		Continue()
 END
 
 IF
 	Dead("Nwgolem3")  // ??????? ?????
 	Dead("Nwgolem4")  // ??????? ?????
-	Global("TrankarGolem","GLOBAL",0)
+	Global("NWTrankarGolem","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("TrankarGolem","GLOBAL",1)
+		SetGlobal("NWTrankarGolem","GLOBAL",1)
 END
 
 IF
@@ -32,276 +32,276 @@ THEN
 END
 
 IF
-	Global("LinaExist","GLOBAL",0)
+	Global("NWLinaExist","GLOBAL",0)
 	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
-		SetGlobal("LinaExist","GLOBAL",1)
+		SetGlobal("NWLinaExist","GLOBAL",1)
 		CreateCreature("NWLINA12",[603.220],0)  // ????
 		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("LinaExist","GLOBAL",0)
+	Global("NWLinaExist","GLOBAL",0)
 	XPGT(Player1,1750000)
 	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
-		SetGlobal("LinaExist","GLOBAL",1)
+		SetGlobal("NWLinaExist","GLOBAL",1)
 		CreateCreature("NWLINA14",[603.220],0)  // ????
 		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("LinaExist","GLOBAL",0)
+	Global("NWLinaExist","GLOBAL",0)
 	XPGT(Player1,2250000)
 	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
-		SetGlobal("LinaExist","GLOBAL",1)
+		SetGlobal("NWLinaExist","GLOBAL",1)
 		CreateCreature("NWLINA16",[603.220],0)  // ????
 		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("LinaExist","GLOBAL",0)
+	Global("NWLinaExist","GLOBAL",0)
 	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
-		SetGlobal("LinaExist","GLOBAL",1)
+		SetGlobal("NWLinaExist","GLOBAL",1)
 		CreateCreature("NWLINA18",[603.220],0)  // ????
 		ActionOverride("NWLINA",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("DaelanExist","GLOBAL",0)
+	Global("NWDaelanExist","GLOBAL",0)
 	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
-		SetGlobal("DaelanExist","GLOBAL",1)
+		SetGlobal("NWDaelanExist","GLOBAL",1)
 		CreateCreature("NWDAEL12",[806.360],4)  // ??????
 		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("DaelanExist","GLOBAL",0)
+	Global("NWDaelanExist","GLOBAL",0)
 	XPGT(Player1,1750000)
 	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
-		SetGlobal("DaelanExist","GLOBAL",1)
+		SetGlobal("NWDaelanExist","GLOBAL",1)
 		CreateCreature("NWDAEL14",[806.360],4)  // ??????
 		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("DaelanExist","GLOBAL",0)
+	Global("NWDaelanExist","GLOBAL",0)
 	XPGT(Player1,2250000)
 	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
-		SetGlobal("DaelanExist","GLOBAL",1)
+		SetGlobal("NWDaelanExist","GLOBAL",1)
 		CreateCreature("NWDAEL16",[806.360],4)  // ??????
 		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("DaelanExist","GLOBAL",0)
+	Global("NWDaelanExist","GLOBAL",0)
 	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
-		SetGlobal("DaelanExist","GLOBAL",1)
+		SetGlobal("NWDaelanExist","GLOBAL",1)
 		CreateCreature("NWDAEL18",[806.360],4)  // ??????
 		ActionOverride("NWDAELAN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("BoddinokExist","GLOBAL",0)
+	Global("NWBoddinokExist","GLOBAL",0)
 	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
-		SetGlobal("BoddinokExist","GLOBAL",1)
+		SetGlobal("NWBoddinokExist","GLOBAL",1)
 		CreateCreature("NWBODD12",[483.332],12)  // ????????
 		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("BoddinokExist","GLOBAL",0)
+	Global("NWBoddinokExist","GLOBAL",0)
 	XPGT(Player1,1750000)
 	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
-		SetGlobal("BoddinokExist","GLOBAL",1)
+		SetGlobal("NWBoddinokExist","GLOBAL",1)
 		CreateCreature("NWBODD14",[483.332],12)  // ????????
 		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("BoddinokExist","GLOBAL",0)
+	Global("NWBoddinokExist","GLOBAL",0)
 	XPGT(Player1,2250000)
 	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
-		SetGlobal("BoddinokExist","GLOBAL",1)
+		SetGlobal("NWBoddinokExist","GLOBAL",1)
 		CreateCreature("NWBODD15",[483.332],12)  // ????????
 		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("BoddinokExist","GLOBAL",0)
+	Global("NWBoddinokExist","GLOBAL",0)
 	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
-		SetGlobal("BoddinokExist","GLOBAL",1)
+		SetGlobal("NWBoddinokExist","GLOBAL",1)
 		CreateCreature("NWBODD16",[483.332],12)  // ????????
 		ActionOverride("NWBODDIK",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("GrimgnawExist","GLOBAL",0)
+	Global("NWGrimgnawExist","GLOBAL",0)
 	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
-		SetGlobal("GrimgnawExist","GLOBAL",1)
+		SetGlobal("NWGrimgnawExist","GLOBAL",1)
 		CreateCreature("NWGRIM12",[1019.532],0)  // ????????
 		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("GrimgnawExist","GLOBAL",0)
+	Global("NWGrimgnawExist","GLOBAL",0)
 	XPGT(Player1,1750000)
 	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
-		SetGlobal("GrimgnawExist","GLOBAL",1)
+		SetGlobal("NWGrimgnawExist","GLOBAL",1)
 		CreateCreature("NWGRIM14",[1019.532],0)  // ????????
 		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("GrimgnawExist","GLOBAL",0)
+	Global("NWGrimgnawExist","GLOBAL",0)
 	XPGT(Player1,2250000)
 	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
-		SetGlobal("GrimgnawExist","GLOBAL",1)
+		SetGlobal("NWGrimgnawExist","GLOBAL",1)
 		CreateCreature("NWGRIM16",[1019.532],0)  // ????????
 		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("GrimgnawExist","GLOBAL",0)
+	Global("NWGrimgnawExist","GLOBAL",0)
 	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
-		SetGlobal("GrimgnawExist","GLOBAL",1)
+		SetGlobal("NWGrimgnawExist","GLOBAL",1)
 		CreateCreature("NWGRIM18",[1019.532],0)  // ????????
 		ActionOverride("NWGRIMGW",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("SharwynExist","GLOBAL",0)
+	Global("NWSharwynExist","GLOBAL",0)
 	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
-		SetGlobal("SharwynExist","GLOBAL",1)
+		SetGlobal("NWSharwynExist","GLOBAL",1)
 		CreateCreature("NWSHAR12",[1141.652],4)  // ??????
 		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("SharwynExist","GLOBAL",0)
+	Global("NWSharwynExist","GLOBAL",0)
 	XPGT(Player1,1750000)
 	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
-		SetGlobal("SharwynExist","GLOBAL",1)
+		SetGlobal("NWSharwynExist","GLOBAL",1)
 		CreateCreature("NWSHAR14",[1141.652],4)  // ??????
 		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("SharwynExist","GLOBAL",0)
+	Global("NWSharwynExist","GLOBAL",0)
 	XPGT(Player1,2250000)
 	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
-		SetGlobal("SharwynExist","GLOBAL",1)
+		SetGlobal("NWSharwynExist","GLOBAL",1)
 		CreateCreature("NWSHAR16",[1141.652],4)  // ??????
 		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("SharwynExist","GLOBAL",0)
+	Global("NWSharwynExist","GLOBAL",0)
 	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
-		SetGlobal("SharwynExist","GLOBAL",1)
+		SetGlobal("NWSharwynExist","GLOBAL",1)
 		CreateCreature("NWSHAR18",[1141.652],4)  // ??????
 		ActionOverride("NWSHARWN",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("TomiExist","GLOBAL",0)
+	Global("NWTomiExist","GLOBAL",0)
 	XPLT(Player1,1750001)
 THEN
 	RESPONSE #100
-		SetGlobal("TomiExist","GLOBAL",1)
+		SetGlobal("NWTomiExist","GLOBAL",1)
 		CreateCreature("NWTOMI12",[1086.582],2)  // ???? ?????????
 		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("TomiExist","GLOBAL",0)
+	Global("NWTomiExist","GLOBAL",0)
 	XPGT(Player1,1750000)
 	XPLT(Player1,2250001)
 THEN
 	RESPONSE #100
-		SetGlobal("TomiExist","GLOBAL",1)
+		SetGlobal("NWTomiExist","GLOBAL",1)
 		CreateCreature("NWTOMI14",[1086.582],2)  // ???? ?????????
 		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("TomiExist","GLOBAL",0)
+	Global("NWTomiExist","GLOBAL",0)
 	XPGT(Player1,2250000)
 	XPLT(Player1,2750001)
 THEN
 	RESPONSE #100
-		SetGlobal("TomiExist","GLOBAL",1)
+		SetGlobal("NWTomiExist","GLOBAL",1)
 		CreateCreature("NWTOMI16",[1086.582],2)  // ???? ?????????
 		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()
 END
 
 IF
-	Global("TomiExist","GLOBAL",0)
+	Global("NWTomiExist","GLOBAL",0)
 	XPGT(Player1,2750000)
 THEN
 	RESPONSE #100
-		SetGlobal("TomiExist","GLOBAL",1)
+		SetGlobal("NWTomiExist","GLOBAL",1)
 		CreateCreature("NWTOMI18",[1086.582],2)  // ???? ?????????
 		ActionOverride("NWTOMI",MakeGlobal())
 		Continue()

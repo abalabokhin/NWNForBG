@@ -3,7 +3,7 @@
 BEGIN ~NWKIPP~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -46,14 +46,14 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
   SAY @10
-  IF ~  GlobalLT("SedosQuest","GLOBAL",2)~ THEN UNSOLVED_JOURNAL @93969 EXIT
-  IF ~  GlobalGT("SedosQuest","GLOBAL",1)~ THEN EXIT
+  IF ~  GlobalLT("NWSedosQuest","GLOBAL",2)~ THEN UNSOLVED_JOURNAL @93969 EXIT
+  IF ~  GlobalGT("NWSedosQuest","GLOBAL",1)~ THEN EXIT
 END
 
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)GlobalGT("SedosQuest","GLOBAL",2)GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 6 // from:
+~  OR(2)GlobalGT("NWSedosQuest","GLOBAL",2)GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 6 // from:
   SAY @12
   IF ~~ THEN REPLY @13 GOTO 7
   IF ~~ THEN REPLY @14 GOTO 8

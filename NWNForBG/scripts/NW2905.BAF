@@ -8,7 +8,7 @@ THEN
 END
 
 IF
-	Global("SpiritSaved","GLOBAL",1)
+	Global("NWSpiritSaved","GLOBAL",1)
 	Global("AreaSong","MYAREA",0)
 THEN
 	RESPONSE #100

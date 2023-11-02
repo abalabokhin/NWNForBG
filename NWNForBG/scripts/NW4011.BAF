@@ -9,7 +9,7 @@ THEN
 END
 
 IF
-	GlobalGT("MakingMedicine","GLOBAL",1)
+	GlobalGT("NWMakingMedicine","GLOBAL",1)
 	InMyArea("NWARIBEH")  // ??????
 THEN
 	RESPONSE #100
@@ -18,7 +18,7 @@ THEN
 END
 
 IF
-	GlobalGT("MakingMedicine","GLOBAL",1)
+	GlobalGT("NWMakingMedicine","GLOBAL",1)
 	InMyArea("NWFENTHK")  // ??????
 THEN
 	RESPONSE #100
@@ -27,7 +27,7 @@ THEN
 END
 
 IF
-	GlobalGT("MakingMedicine","GLOBAL",1)
+	GlobalGT("NWMakingMedicine","GLOBAL",1)
 	InMyArea("NWDESTHR")  // ??????
 THEN
 	RESPONSE #100

@@ -115,12 +115,12 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 14.1
   SAY @37
-  IF ~~ THEN REPLY @38 DO ~SetGlobal("SearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @107669 EXIT
-  IF ~~ THEN REPLY @40 DO ~SetGlobal("SearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @107669 EXIT
+  IF ~~ THEN REPLY @38 DO ~SetGlobal("NWSearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @107669 EXIT
+  IF ~~ THEN REPLY @40 DO ~SetGlobal("NWSearchNeva","GLOBAL",1)~ UNSOLVED_JOURNAL @107669 EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SearchNeva","GLOBAL",1)~ THEN BEGIN 16 // from:
+~  Global("NWSearchNeva","GLOBAL",1)~ THEN BEGIN 16 // from:
   SAY @41
   IF ~~ THEN REPLY @42 GOTO 17
   IF ~~ THEN REPLY @43 GOTO 18
@@ -144,7 +144,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedToGT(0)
-Global("SearchNeva","GLOBAL",0)~ THEN BEGIN 20 // from:
+Global("NWSearchNeva","GLOBAL",0)~ THEN BEGIN 20 // from:
   SAY @48
   IF ~~ THEN REPLY @20 GOTO 9
   IF ~~ THEN REPLY @24 EXIT

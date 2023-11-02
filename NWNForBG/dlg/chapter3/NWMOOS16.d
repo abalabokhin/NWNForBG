@@ -38,6 +38,6 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 3.3
   SAY @7
-  IF ~~ THEN DO ~SetGlobal("ZokanHostile","GLOBAL",1)Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWZokanHostile","GLOBAL",1)Enemy()~ EXIT
 END
 

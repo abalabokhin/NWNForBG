@@ -5,10 +5,10 @@ BEGIN ~NWDAMAS~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6 
 END
@@ -23,8 +23,8 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @8
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",0)~ THEN REPLY @10 GOTO 11
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",0)~ THEN REPLY @10 GOTO 11
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @5 GOTO 7
   IF ~  GlobalLT("NWCoverlet","GLOBAL",2)~ THEN REPLY @6 GOTO 8
@@ -33,8 +33,8 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @11
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~  GlobalLT("NWCoverlet","GLOBAL",2)~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @3 GOTO 6
@@ -42,8 +42,8 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
   SAY @14
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~  GlobalLT("NWCoverlet","GLOBAL",2)~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @3 GOTO 6
@@ -71,14 +71,14 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 1.2
   SAY @21
-  IF ~  GlobalLT("KillElks","GLOBAL",6)GlobalLT("NWCoverlet","GLOBAL",3)~ THEN REPLY @22 GOTO 17
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  GlobalLT("NWKillElks","GLOBAL",6)GlobalLT("NWCoverlet","GLOBAL",3)~ THEN REPLY @22 GOTO 17
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6 
 END
@@ -95,7 +95,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 2.2
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",1)~ UNSOLVED_JOURNAL @107582 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSiege_Is_Lifted","GLOBAL",1)~ UNSOLVED_JOURNAL @107582 EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 3.1
@@ -105,18 +105,18 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 3.2
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",5)GiveGoldForce(2000)AddexperienceParty(120000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)EraseJournalEntry(@107587)EraseJournalEntry(@107584)~ SOLVED_JOURNAL @107588 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSiege_Is_Lifted","GLOBAL",5)GiveGoldForce(2000)AddexperienceParty(120000)EraseJournalEntry(@107585)EraseJournalEntry(@107586)EraseJournalEntry(@107587)EraseJournalEntry(@107584)~ SOLVED_JOURNAL @107588 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 5.1
   SAY @30
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6 
 END
@@ -136,13 +136,13 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 8.1
   SAY @37
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6 
 END
@@ -168,20 +168,20 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 28.2
   SAY @46
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6
 END
 
 IF ~~ THEN BEGIN 22 // from: 18.1
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("NW_Medicine","GLOBAL",1)TakePartyGold(3000)GiveItem("NWMISC73",LastTalkedToBy)SetGlobal("Siege_Is_Lifted","GLOBAL",4)~ UNSOLVED_JOURNAL @107586 EXIT
+  IF ~~ THEN DO ~SetGlobal("NW_Medicine","GLOBAL",1)TakePartyGold(3000)GiveItem("NWMISC73",LastTalkedToBy)SetGlobal("NWSiege_Is_Lifted","GLOBAL",4)~ UNSOLVED_JOURNAL @107586 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 18.2
@@ -192,7 +192,7 @@ END
 
 IF ~~ THEN BEGIN 24 // from: 18.3
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",4)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSiege_Is_Lifted","GLOBAL",4)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 19.1
@@ -230,12 +230,12 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 32.1
   SAY @61 
-  IF ~~ THEN DO ~SetGlobal("Siege_Is_Lifted","GLOBAL",3)GiveGoldForce(1500)AddexperienceParty(80000)EraseJournalEntry(@107582)~ UNSOLVED_JOURNAL @107584 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSiege_Is_Lifted","GLOBAL",3)GiveGoldForce(1500)AddexperienceParty(80000)EraseJournalEntry(@107582)~ UNSOLVED_JOURNAL @107584 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 12.1
   SAY @63
-  IF ~~ THEN DO ~TakePartyItem("NWARNESD")DestroyItem("NWARNESD")SetGlobal("Siege_Is_Lifted","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(40000)EraseJournalEntry(@107582)EraseJournalEntry(@107584)~ UNSOLVED_JOURNAL @107587 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWARNESD")DestroyItem("NWARNESD")SetGlobal("NWSiege_Is_Lifted","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(40000)EraseJournalEntry(@107582)EraseJournalEntry(@107584)~ UNSOLVED_JOURNAL @107587 EXIT
 END
 
 // ----------------------------------
@@ -243,13 +243,13 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  GlobalGT("NW_Medicine","GLOBAL",0)~ THEN BEGIN 30 // from:
   SAY @65
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
   IF ~~ THEN REPLY @3 GOTO 6
 END
 
@@ -258,14 +258,14 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)Global("NW_Medicine","GLOBAL",0)~ THEN BEGIN 31 // from:
   SAY @66
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",3)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @1 GOTO 4
   IF ~  Global("NWCoverlet","GLOBAL",1)Global("NW_Medicine","GLOBAL",0)~ THEN REPLY @2 GOTO 5
-  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("Siege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
-  IF ~  PartyHasItem("NWZOKAND")Global("Siege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
-  IF ~  Global("Siege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
+  IF ~  PartyHasItem("NWARNESD")!PartyHasItem("NWZOKAND")GlobalLT("NWSiege_Is_Lifted","GLOBAL",5)~ THEN REPLY @12 GOTO 12
+  IF ~  PartyHasItem("NWZOKAND")Global("NWSiege_Is_Lifted","GLOBAL",4)~ THEN REPLY @13 GOTO 13
+  IF ~  Global("NWSiege_Is_Lifted","GLOBAL",2)~ THEN REPLY @9 GOTO 10
   IF ~~ THEN REPLY @3 GOTO 6 
 END
 

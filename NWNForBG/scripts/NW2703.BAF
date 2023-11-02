@@ -1,14 +1,14 @@
 IF
-	Global("DeadJanis","GLOBAL",1)
+	Global("NWDeadJanis","GLOBAL",1)
 	GlobalTimerExpired("NWJANIS","GLOBAL")
 THEN
 	RESPONSE #100
-		SetGlobal("DeadJanis","GLOBAL",2)
+		SetGlobal("NWDeadJanis","GLOBAL",2)
 		SetGlobal("SPRITE_IS_DEADNWJANIS","GLOBAL",1)
 END
 
 IF
-	Global("RevatQuest","GLOBAL",2)
+	Global("NWRevatQuest","GLOBAL",2)
 	Global("JanisSpawn","MYAREA",0)
 THEN
 	RESPONSE #100

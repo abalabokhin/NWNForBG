@@ -3,7 +3,7 @@
 BEGIN ~NWTHURIN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("ThurinQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWThurinQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  Global("KnowThurin","LOCALS",0)~ THEN REPLY @1 DO ~SetGlobal("KnowThurin","LOCALS",1)~ GOTO 1
   IF ~  Global("KnowThurin","LOCALS",0)~ THEN REPLY @2 DO ~SetGlobal("KnowThurin","LOCALS",1)~ GOTO 1
@@ -158,7 +158,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 11.6
   SAY @41
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",9)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",9)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 12.1
@@ -179,12 +179,12 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 17.1
   SAY @45
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @89667 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @89667 EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 17.2
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @89667 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @89667 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 19.1
@@ -208,7 +208,7 @@ END
 // ----------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("ThurinQuest","GLOBAL",1)~ THEN BEGIN 25 // from:
+~  Global("NWThurinQuest","GLOBAL",1)~ THEN BEGIN 25 // from:
   SAY @50
   IF ~~ THEN REPLY @51 GOTO 26
   IF ~  Dead("NWSAMUE2")CheckStatGT(LastTalkedToBy(Myself),13,CHR)!Alignment(Player1,MASK_EVIL)~ THEN REPLY @52 GOTO 27
@@ -258,10 +258,10 @@ END
 // --------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)Global("ThurinQuest","GLOBAL",2)Global("ThurinQuest","GLOBAL",3)~ THEN BEGIN 33 // from:
+~  OR(2)Global("NWThurinQuest","GLOBAL",2)Global("NWThurinQuest","GLOBAL",3)~ THEN BEGIN 33 // from:
   SAY @62
-  IF ~  Global("ThurinQuest","GLOBAL",2)~ THEN GOTO 34
-  IF ~  Global("ThurinQuest","GLOBAL",3)~ THEN GOTO 35
+  IF ~  Global("NWThurinQuest","GLOBAL",2)~ THEN GOTO 34
+  IF ~  Global("NWThurinQuest","GLOBAL",3)~ THEN GOTO 35
 END
 
 IF ~~ THEN BEGIN 34 // from: 33.1
@@ -284,33 +284,33 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 34.1
   SAY @69
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(975)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",4)GiveGoldForce(975)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 37 // from: 34.2
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 34.3
   SAY @72
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(50000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(50000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 34.4
   SAY @73
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",4)GiveGoldForce(800)AddexperienceParty(90000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 34.5
   SAY @74
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",4)ReputationInc(1)AddexperienceParty(100000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",4)ReputationInc(1)AddexperienceParty(100000)EraseJournalEntry(@89667)EraseJournalEntry(@89700)~ SOLVED_JOURNAL @89812 EXIT
 END
 
 // ----------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("ThurinQuest","GLOBAL",3)~ THEN BEGIN 41 // from:
+~  GlobalGT("NWThurinQuest","GLOBAL",3)~ THEN BEGIN 41 // from:
   SAY @75
   IF ~~ THEN EXIT
 END

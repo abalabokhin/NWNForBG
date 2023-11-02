@@ -12,10 +12,10 @@ IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
-  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
-  IF ~  OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
+  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~  OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~~ THEN REPLY @8 GOTO 2
 END
@@ -28,10 +28,10 @@ END
 IF ~~ THEN BEGIN 3 // from: 1.1
   SAY @10
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
-  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
-  IF ~  OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
+  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~  OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~~ THEN REPLY @8 GOTO 2
 END
@@ -39,10 +39,10 @@ END
 IF ~~ THEN BEGIN 4 // from: 1.2
   SAY @11
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
-  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
-  IF ~  OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
+  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~  OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~~ THEN REPLY @8 GOTO 2
 END
@@ -87,10 +87,10 @@ IF ~~ THEN BEGIN 9 // from: 1.7
   SAY @18
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
-  IF ~  !Dead("NWZOR")Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
-  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
-  IF ~  OR(2)Dead("NWZOR")!Global("KendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)!Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)~ THEN REPLY @6 GOTO 5
+  IF ~  !Dead("NWZOR")Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 6
+  IF ~  !Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",0)OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @6 GOTO 7
+  IF ~  OR(2)Dead("NWZOR")!Global("NWKendrackQuest","GLOBAL",1)OR(2)Dead("NWZAMITA")Global("PlayerHasZgem","MYAREA",1)~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @8 GOTO 2
 END
 

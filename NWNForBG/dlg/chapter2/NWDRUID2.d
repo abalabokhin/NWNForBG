@@ -3,7 +3,7 @@
 BEGIN ~NWDRUID2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)AreaCheck("NW2904")Global("Druid2Saved","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)AreaCheck("NW2904")Global("NWDruid2Saved","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  IsGabber(Player1)~ THEN REPLY @1 GOTO 1
   IF ~  !IsGabber(Player1)~ THEN REPLY @2 GOTO 1
@@ -90,7 +90,7 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 6 3
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("Druid2Saved","GLOBAL",1)EscapeAreaObject("Door1")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid2Saved","GLOBAL",1)EscapeAreaObject("Door1")~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 14.1
@@ -106,11 +106,11 @@ END
 IF ~~ THEN BEGIN 19 // from: 15.1
   SAY @37
   IF ~  Dead("NWSPIRIO")~ THEN REPLY @38 GOTO 20
-  IF ~  Global("SpiritSaved","GLOBAL",1)~ THEN REPLY @39 GOTO 21
-  IF ~  !Dead("NWSPIRIO")Global("SpiritSaved","GLOBAL",0)~ THEN REPLY @40 GOTO 5
+  IF ~  Global("NWSpiritSaved","GLOBAL",1)~ THEN REPLY @39 GOTO 21
+  IF ~  !Dead("NWSPIRIO")Global("NWSpiritSaved","GLOBAL",0)~ THEN REPLY @40 GOTO 5
   IF ~  OR(2)
-Global("Druid1Saved","GLOBAL",0)
-Global("Druid3Saved","GLOBAL",0)~ THEN REPLY @41 GOTO 6
+Global("NWDruid1Saved","GLOBAL",0)
+Global("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @41 GOTO 6
   IF ~~ THEN REPLY @22 GOTO 13
   IF ~~ THEN REPLY @4 GOTO 3
 END
@@ -141,28 +141,28 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 21.1
   SAY @49
-  IF ~~ THEN DO ~SetGlobal("Druid2Saved","GLOBAL",1)EscapeAreaObject("Door1")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid2Saved","GLOBAL",1)EscapeAreaObject("Door1")~ EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 17.1
   SAY @50
   IF ~~ THEN REPLY @21 GOTO 4
   IF ~  OR(2)
-Global("Druid1Saved","GLOBAL",0)
-Global("Druid3Saved","GLOBAL",0)~ THEN REPLY @41 GOTO 6
+Global("NWDruid1Saved","GLOBAL",0)
+Global("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @41 GOTO 6
   IF ~~ THEN REPLY @22 GOTO 13
   IF ~~ THEN REPLY @4 GOTO 3
 END
 
 IF ~~ THEN BEGIN 24 // from: 17.2
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("Druid2Saved","GLOBAL",1)EscapeAreaObject("Door1")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid2Saved","GLOBAL",1)EscapeAreaObject("Door1")~ EXIT
 END
 
 // -----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)AreaCheck("NW2904")Global("Druid2Saved","GLOBAL",0)~ THEN BEGIN 25 // from:
+~  !NumTimesTalkedTo(0)AreaCheck("NW2904")Global("NWDruid2Saved","GLOBAL",0)~ THEN BEGIN 25 // from:
   SAY @52
   IF ~~ THEN REPLY @53 GOTO 4
   IF ~~ THEN REPLY @22 GOTO 13
@@ -172,7 +172,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("Druid2Saved","GLOBAL",0)~ THEN BEGIN 26 // from:
+~  GlobalGT("NWDruid2Saved","GLOBAL",0)~ THEN BEGIN 26 // from:
   SAY @55
   IF ~~ THEN EXIT
 END

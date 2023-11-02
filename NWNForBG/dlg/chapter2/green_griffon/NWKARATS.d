@@ -106,7 +106,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 13
   SAY @26
-  IF ~~ THEN DO ~SetGlobal("NeurikQuest","GLOBAL",6)
+  IF ~~ THEN DO ~SetGlobal("NWNeurikQuest","GLOBAL",6)
 SetGlobal("Dialogue","LOCALS",2)
 SetGlobal("SPRITE_IS_DEADNWKARATS","GLOBAL",0)
 GiveItem("NWJKARAI",LastTalkedToBy(Myself))
@@ -114,7 +114,7 @@ EraseJournalEntry(@96025)~ UNSOLVED_JOURNAL @96864 EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",4)Global("Pause","LOCALS",1)~ THEN BEGIN 15 // from:
+~  Global("NWNeurikQuest","GLOBAL",4)Global("Pause","LOCALS",1)~ THEN BEGIN 15 // from:
   SAY @28
   IF ~~ THEN REPLY @29 DO ~SetGlobal("Pause","LOCALS",0)~  GOTO 2
   IF ~  PartyHasItem("NWAMULNU")~ THEN REPLY @3 DO ~SetGlobal("Pause","LOCALS",0)~  GOTO 3
@@ -122,7 +122,7 @@ IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",4)~ THEN BEGIN 16 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",4)~ THEN BEGIN 16 // from:
   SAY @25
   IF ~~ THEN EXIT
 END

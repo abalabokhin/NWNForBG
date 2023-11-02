@@ -25,7 +25,7 @@ THEN
 		Face(12)
 		Wait(1)
 		FadeFromColor([30.0],0)
-		SetGlobal("ForgeStuffNW","GLOBAL",1)
+		SetGlobal("NWForgeStuffNW","GLOBAL",1)
 		EndCutSceneMode()
 END
 

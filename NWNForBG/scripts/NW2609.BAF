@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-	Global("KnowKarlat","GLOBAL",1)
+	Global("NWKnowKarlat","GLOBAL",1)
 	Global("KarlatJournal","MYAREA",1)
 THEN
 	RESPONSE #100
@@ -53,7 +53,7 @@ THEN
 END
 
 IF
-	Global("KnowKarlat","GLOBAL",1)
+	Global("NWKnowKarlat","GLOBAL",1)
 	Global("KarlatJournal","MYAREA",0)
 THEN
 	RESPONSE #100

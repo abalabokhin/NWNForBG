@@ -64,7 +64,7 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 4.4
   SAY @18
-  IF ~~ THEN DO ~SetGlobal("KnowBandit","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowBandit","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.1

@@ -15,24 +15,24 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)Global("AarinTalk","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 0 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)Global("NWAarinTalk","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 0 // from:
   SAY @2
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  Global("AribethTalk","GLOBAL",1)~ THEN REPLY @4 GOTO 2
-  IF ~  Global("AribethTalk","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWAribethTalk","GLOBAL",1)~ THEN REPLY @4 GOTO 2
+  IF ~  Global("NWAribethTalk","GLOBAL",0)~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  Global("AribethTalk","GLOBAL",0)~ THEN REPLY @6 GOTO 5
-  IF ~  Global("AribethTalk","GLOBAL",1)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("NWAribethTalk","GLOBAL",0)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWAribethTalk","GLOBAL",1)~ THEN REPLY @7 GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
   SAY @8
-  IF ~  Global("AribethTalk","GLOBAL",1)~ THEN GOTO 2
-  IF ~  Global("AribethTalk","GLOBAL",0)~ THEN GOTO 3
+  IF ~  Global("NWAribethTalk","GLOBAL",1)~ THEN GOTO 2
+  IF ~  Global("NWAribethTalk","GLOBAL",0)~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.4
@@ -52,7 +52,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
   SAY @12
-  IF ~~ THEN  DO ~SetGlobal("AarinTalk","GLOBAL",1)EraseJournalEntry(@92485)~ UNSOLVED_JOURNAL @95588 GOTO 7
+  IF ~~ THEN  DO ~SetGlobal("NWAarinTalk","GLOBAL",1)EraseJournalEntry(@92485)~ UNSOLVED_JOURNAL @95588 GOTO 7
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.1
@@ -235,8 +235,8 @@ END
 IF ~~ THEN BEGIN 15// from: 13.3.14.6
   SAY @62
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -246,10 +246,10 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
@@ -265,8 +265,8 @@ END
 
 IF ~~ THEN BEGIN 32// from: 15.1
   SAY @75
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -276,10 +276,10 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
@@ -295,10 +295,10 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
@@ -314,32 +314,32 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
 IF ~~ THEN BEGIN 35// from: 15.4
   SAY @78
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
 IF ~~ THEN BEGIN 36// from: 15.5
   SAY @79
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -348,10 +348,10 @@ PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
@@ -369,14 +369,14 @@ IF ~~ THEN BEGIN 44// from: 38.3
   IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @81 GOTO 42
   IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @81 GOTO 43
   IF ~~ THEN REPLY @83 GOTO 45
-  IF ~~ THEN REPLY @84 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 46
+  IF ~~ THEN REPLY @84 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 46
 END
 
 IF ~~ THEN BEGIN 45// from: 38.4
   SAY @86
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -392,8 +392,8 @@ END
 IF ~~ THEN BEGIN 46// from: 38.5
   SAY @87
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -409,8 +409,8 @@ END
 IF ~~ THEN BEGIN 42// from: 38.1
   SAY @88
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -507,16 +507,16 @@ END
 
 IF ~~ THEN BEGIN 60// from: 59.1
   SAY @115
-  IF ~~ THEN REPLY @116 DO ~SetGlobal("AarinFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 61
-  IF ~~ THEN REPLY @117 DO ~SetGlobal("AarinFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 62
-  IF ~~ THEN REPLY @118 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 63
+  IF ~~ THEN REPLY @116 DO ~SetGlobal("NWAarinFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 61
+  IF ~~ THEN REPLY @117 DO ~SetGlobal("NWAarinFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 62
+  IF ~~ THEN REPLY @118 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 63
 END
 
 IF ~~ THEN BEGIN 61// from: 60.1
   SAY @119
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -531,8 +531,8 @@ END
 IF ~~ THEN BEGIN 62// from: 60.2
   SAY @120
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -547,8 +547,8 @@ END
 IF ~~ THEN BEGIN 63// from: 60.3
   SAY @121
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -569,8 +569,8 @@ END
 IF ~~ THEN BEGIN 65// from: 39.2
   SAY @125
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -648,30 +648,30 @@ END
 
 IF ~~ THEN BEGIN 75// from: 74.1
   SAY @150
-  IF ~~ THEN REPLY @151 DO ~SetGlobal("AarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
-  IF ~~ THEN REPLY @152 DO ~SetGlobal("AarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
-  IF ~~ THEN REPLY @153 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 79
+  IF ~~ THEN REPLY @151 DO ~SetGlobal("NWAarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
+  IF ~~ THEN REPLY @152 DO ~SetGlobal("NWAarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
+  IF ~~ THEN REPLY @153 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 79
 END
 
 IF ~~ THEN BEGIN 76// from: 74.2
   SAY @154
-  IF ~~ THEN REPLY @151 DO ~SetGlobal("AarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
-  IF ~~ THEN REPLY @152 DO ~SetGlobal("AarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
-  IF ~~ THEN REPLY @153 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 79
+  IF ~~ THEN REPLY @151 DO ~SetGlobal("NWAarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
+  IF ~~ THEN REPLY @152 DO ~SetGlobal("NWAarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
+  IF ~~ THEN REPLY @153 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 79
 END
 
 IF ~~ THEN BEGIN 77// from: 74.3
   SAY @155
-  IF ~~ THEN REPLY @151 DO ~SetGlobal("AarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
-  IF ~~ THEN REPLY @152 DO ~SetGlobal("AarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
-  IF ~~ THEN REPLY @153 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 79
+  IF ~~ THEN REPLY @151 DO ~SetGlobal("NWAarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
+  IF ~~ THEN REPLY @152 DO ~SetGlobal("NWAarinFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAarin","LOCALS",ONE_DAY)~ GOTO 78
+  IF ~~ THEN REPLY @153 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 79
 END
 
 IF ~~ THEN BEGIN 78// from: 75.1.2.76.1.2.77.1.2
   SAY @156
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -686,8 +686,8 @@ END
 IF ~~ THEN BEGIN 79// from: 75.1.76.1.77.1
   SAY @157
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -701,7 +701,7 @@ END
 
 IF ~~ THEN BEGIN 40// from: 15.9
   SAY @158
-  IF ~CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @159 DO ~SetGlobal("AarinFriend","GLOBAL",5)~ GOTO 80
+  IF ~CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @159 DO ~SetGlobal("NWAarinFriend","GLOBAL",5)~ GOTO 80
   IF ~CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @159 GOTO 81
   IF ~~ THEN REPLY @160 GOTO 82
 END
@@ -709,8 +709,8 @@ END
 IF ~~ THEN BEGIN 80// from: 40.1
   SAY @161
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -725,8 +725,8 @@ END
 IF ~~ THEN BEGIN 82// from: 40.3
   SAY @162
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -779,14 +779,14 @@ END
 IF ~~ THEN BEGIN 89// from: 86.1.87.1.88.1
   SAY @173
   IF ~~ THEN REPLY @174 GOTO 90
-  IF ~~ THEN REPLY @175 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 91
+  IF ~~ THEN REPLY @175 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 91
 END
 
 IF ~~ THEN BEGIN 91// from: 89.2
   SAY @176
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -829,23 +829,23 @@ END
 IF ~~ THEN BEGIN 96// from: 94.1.95.1
   SAY @186
   IF ~  Gender(Player1,FEMALE)~ THEN REPLY @187 GOTO 97
-  IF ~  Gender(Player1,MALE)~ THEN REPLY @187 DO ~SetGlobal("AarinFriend","GLOBAL",3)~ GOTO 98
-  IF ~~ THEN REPLY @188 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 99
-  IF ~~ THEN REPLY @189 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 99
+  IF ~  Gender(Player1,MALE)~ THEN REPLY @187 DO ~SetGlobal("NWAarinFriend","GLOBAL",3)~ GOTO 98
+  IF ~~ THEN REPLY @188 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 99
+  IF ~~ THEN REPLY @189 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 99
   IF ~~ THEN REPLY @190 GOTO 100
 END
 
 IF ~~ THEN BEGIN 97// from: 96.1
   SAY @191
-  IF ~~ THEN REPLY @192 DO ~SetGlobal("AarinFriend","GLOBAL",4)~ GOTO 101
-  IF ~~ THEN REPLY @193 DO ~SetGlobal("AarinFriend","GLOBAL",3)~ GOTO 102
+  IF ~~ THEN REPLY @192 DO ~SetGlobal("NWAarinFriend","GLOBAL",4)~ GOTO 101
+  IF ~~ THEN REPLY @193 DO ~SetGlobal("NWAarinFriend","GLOBAL",3)~ GOTO 102
 END
 
 IF ~~ THEN BEGIN 98// from: 96.2
   SAY @194
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -861,8 +861,8 @@ END
 IF ~~ THEN BEGIN 99// from: 96.3.4
   SAY @195
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -878,15 +878,15 @@ END
 IF ~~ THEN BEGIN 100// from: 96.5
   SAY @196
   IF ~  Gender(Player1,FEMALE)~ THEN REPLY @197 GOTO 97
-  IF ~  Gender(Player1,MALE)~ THEN REPLY @197 DO ~SetGlobal("AarinFriend","GLOBAL",3)~ GOTO 98
-  IF ~~ THEN REPLY @198 DO ~SetGlobal("AarinFriend","GLOBAL",9)~ GOTO 99
+  IF ~  Gender(Player1,MALE)~ THEN REPLY @197 DO ~SetGlobal("NWAarinFriend","GLOBAL",3)~ GOTO 98
+  IF ~~ THEN REPLY @198 DO ~SetGlobal("NWAarinFriend","GLOBAL",9)~ GOTO 99
 END
 
 IF ~~ THEN BEGIN 101// from: 97.1
   SAY @199
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -902,8 +902,8 @@ END
 IF ~~ THEN BEGIN 102// from: 97.2
   SAY @200
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -928,7 +928,7 @@ IF ~~ THEN BEGIN 103// from: 41.1.2
   IF ~~ THEN REPLY @206 GOTO 105
   IF ~~ THEN REPLY @207 GOTO 105
   IF ~~ THEN REPLY @208 GOTO 105
-  IF ~~ THEN REPLY @209 DO ~SetGlobal("AarinFriend","GLOBAL",3)~ GOTO 106
+  IF ~~ THEN REPLY @209 DO ~SetGlobal("NWAarinFriend","GLOBAL",3)~ GOTO 106
 END
 
 IF ~~ THEN BEGIN 104// from: 41.3
@@ -936,14 +936,14 @@ IF ~~ THEN BEGIN 104// from: 41.3
   IF ~~ THEN REPLY @206 GOTO 105
   IF ~~ THEN REPLY @207 GOTO 105
   IF ~~ THEN REPLY @208 GOTO 105
-  IF ~~ THEN REPLY @209 DO ~SetGlobal("AarinFriend","GLOBAL",3)~ GOTO 106
+  IF ~~ THEN REPLY @209 DO ~SetGlobal("NWAarinFriend","GLOBAL",3)~ GOTO 106
 END
 
 IF ~~ THEN BEGIN 106// from: 104.4
   SAY @211
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -963,16 +963,16 @@ END
 
 IF ~~ THEN BEGIN 107// from: 105.1
   SAY @213
-  IF ~~ THEN REPLY @214 DO ~SetGlobal("AarinFriend","GLOBAL",5)GiveItemCreate("NWAMAARN",Player1,1,1,1)~ GOTO 108
-  IF ~~ THEN REPLY @215 DO ~SetGlobal("AarinFriend","GLOBAL",5)GiveItemCreate("NWAMAARN",Player1,1,1,1)~ GOTO 109
-  IF ~~ THEN REPLY @216 DO ~SetGlobal("AarinFriend","GLOBAL",3)~ GOTO 110
+  IF ~~ THEN REPLY @214 DO ~SetGlobal("NWAarinFriend","GLOBAL",5)GiveItemCreate("NWAMAARN",Player1,1,1,1)~ GOTO 108
+  IF ~~ THEN REPLY @215 DO ~SetGlobal("NWAarinFriend","GLOBAL",5)GiveItemCreate("NWAMAARN",Player1,1,1,1)~ GOTO 109
+  IF ~~ THEN REPLY @216 DO ~SetGlobal("NWAarinFriend","GLOBAL",3)~ GOTO 110
 END
 
 IF ~~ THEN BEGIN 108// from: 107.1
   SAY @217
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -988,8 +988,8 @@ END
 IF ~~ THEN BEGIN 109// from: 107.2
   SAY @218
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -1005,8 +1005,8 @@ END
 IF ~~ THEN BEGIN 110// from: 107.3
   SAY @219
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -1020,11 +1020,11 @@ PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
 END
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)Global("AarinTalk","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 111 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)Global("NWAarinTalk","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 111 // from:
   SAY @220
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -1034,17 +1034,17 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
 IF WEIGHT #7 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",1)Global("LuskanTalk","LOCALS",0)IsGabber(Player1)~ THEN BEGIN 113 // from:
+~  Global("NWCultInLuskan","GLOBAL",1)Global("LuskanTalk","LOCALS",0)IsGabber(Player1)~ THEN BEGIN 113 // from:
   SAY @221
-  IF ~~ THEN DO ~SetGlobal("LuskanTalk","LOCALS",1)SetGlobal("GoToLuskan","GLOBAL",1)EraseJournalEntry(@95588)~ UNSOLVED_JOURNAL @95592 GOTO 114
+  IF ~~ THEN DO ~SetGlobal("LuskanTalk","LOCALS",1)SetGlobal("NWGoToLuskan","GLOBAL",1)EraseJournalEntry(@95588)~ UNSOLVED_JOURNAL @95592 GOTO 114
 END
 
 IF ~~ THEN BEGIN 114// from: 113.1
@@ -1105,7 +1105,7 @@ IF ~~ THEN BEGIN 121// from: 119.1
 END
 
 IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",1)Global("LuskanTalk","LOCALS",1)IsGabber(Player1)~ THEN BEGIN 122 // from:
+~  Global("NWCultInLuskan","GLOBAL",1)Global("LuskanTalk","LOCALS",1)IsGabber(Player1)~ THEN BEGIN 122 // from:
   SAY @237
   IF ~~ THEN REPLY @224 GOTO 115
   IF ~~ THEN REPLY @225 GOTO 116
@@ -1115,10 +1115,10 @@ IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)Global("AarinTalk","GLOBAL",1)IsGabber(Player1)Global("HelpDruid","GLOBAL",1)Global("TalkAboutDruid","LOCALS",0)~ THEN BEGIN 123 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)Global("NWAarinTalk","GLOBAL",1)IsGabber(Player1)Global("NWHelpDruid","GLOBAL",1)Global("TalkAboutDruid","LOCALS",0)~ THEN BEGIN 123 // from:
   SAY @238
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -1128,18 +1128,18 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 35
   IF ~~ THEN REPLY @67 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 36
   IF ~~ THEN REPLY @68 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ GOTO 41
   IF ~~ THEN REPLY @73 DO ~SetGlobal("TalkAboutDruid","LOCALS",1)~ EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)Global("AarinTalk","GLOBAL",1)IsGabber(Player1)Global("NWMUTAMN","GLOBAL",1)Global("TalkAboutMutamin","LOCALS",0)~ THEN BEGIN 124 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)Global("NWAarinTalk","GLOBAL",1)IsGabber(Player1)Global("NWMUTAMN","GLOBAL",1)Global("TalkAboutMutamin","LOCALS",0)~ THEN BEGIN 124 // from:
   SAY @239
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -1149,19 +1149,19 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 35
   IF ~~ THEN REPLY @67 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 36
   IF ~~ THEN REPLY @68 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ GOTO 41
   IF ~~ THEN REPLY @73 DO ~SetGlobal("TalkAboutMutamin","LOCALS",1)~ EXIT
 END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)Global("AarinTalk","GLOBAL",1)IsGabber(Player1)GlobalGT("AarinFriend","GLOBAL",1)Gender(Player1,FEMALE)~ THEN BEGIN 125 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)Global("NWAarinTalk","GLOBAL",1)IsGabber(Player1)GlobalGT("NWAarinFriend","GLOBAL",1)Gender(Player1,FEMALE)~ THEN BEGIN 125 // from:
   SAY @240
   IF ~~ THEN REPLY @63 GOTO 32
-  IF ~ Global("DreamsOfAribeth","GLOBAL",0)Global("TalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("TalkDreams","GLOBAL",1)~ GOTO 33
-  IF ~  Global("AribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("AribethFriend","GLOBAL",3)~ GOTO 34
+  IF ~ Global("NWDreamsOfAribeth","GLOBAL",0)Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @64 DO ~SetGlobal("NWTalkDreams","GLOBAL",1)~ GOTO 33
+  IF ~  Global("NWAribethFriend","GLOBAL",2)~ THEN REPLY @65 DO ~SetGlobal("NWAribethFriend","GLOBAL",3)~ GOTO 34
   IF ~  OR(6)
 PartyHasItem("NWGANONL")
 PartyHasItem("NWSOLOML")
@@ -1171,26 +1171,26 @@ PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @66 GOTO 35
   IF ~~ THEN REPLY @67 GOTO 36
   IF ~~ THEN REPLY @68 GOTO 37
-  IF ~  Global("AarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
-  IF ~  Global("AarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
-  IF ~  Global("AarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
-  IF ~  Global("AarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
+  IF ~  Global("NWAarinFriend","GLOBAL",0)~ THEN REPLY @69 GOTO 38
+  IF ~  Global("NWAarinFriend","GLOBAL",1)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @70 GOTO 39
+  IF ~  Global("NWAarinFriend","GLOBAL",2)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @71 GOTO 40
+  IF ~  Global("NWAarinFriend","GLOBAL",4)GlobalTimerExpired("TalkAboutAarin","LOCALS")~ THEN REPLY @72 GOTO 41
   IF ~~ THEN REPLY @73 EXIT
 END
 
 IF WEIGHT #9 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",2)Global("AribethWasGone","LOCALS",1)IsGabber(Player1)~ THEN BEGIN 20 // from:
+~  Global("NWCultInLuskan","GLOBAL",2)Global("AribethWasGone","LOCALS",1)IsGabber(Player1)~ THEN BEGIN 20 // from:
   SAY @241
   IF ~ PartyHasItem("Nwbook51")
-GlobalLT("CultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
+GlobalLT("NWCultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
   IF ~  PartyHasItem("NWSTAMP")
-Global("PlayerHasPermit","GLOBAL",0)
+Global("NWPlayerHasPermit","GLOBAL",0)
 Global("AskAboutStamp","LOCALS",1)~ THEN REPLY @243 GOTO 127
   IF ~~ THEN REPLY @244 GOTO 128
-  IF ~  Global("PlayerHasPermit","GLOBAL",0)~ THEN REPLY @245 GOTO 129
+  IF ~  Global("NWPlayerHasPermit","GLOBAL",0)~ THEN REPLY @245 GOTO 129
   IF ~~ THEN REPLY @246 GOTO 136
-  IF ~  OR(3)GlobalLT("AarinFriend","GLOBAL",3)!Global("AarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
-  IF ~  GlobalGT("AarinFriend","GLOBAL",2)!Global("AarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
+  IF ~  OR(3)GlobalLT("NWAarinFriend","GLOBAL",3)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",2)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
 END
 
 IF ~~ THEN BEGIN 126// from: 20.1
@@ -1210,32 +1210,32 @@ END
 
 IF ~~ THEN BEGIN 133// from: 132.1
   SAY @253
-  IF ~~ THEN REPLY @254 DO ~SetGlobal("CultInLuskan","GLOBAL",4)EraseJournalEntry(@95589)EraseJournalEntry(@95590)StartCutSceneMode()StartCutScene("NWTONEWR")~ UNSOLVED_JOURNAL @95839 EXIT
-  IF ~~ THEN REPLY @256 DO ~SetGlobal("CultInLuskan","GLOBAL",3)EraseJournalEntry(@95590)EraseJournalEntry(@95589)~ UNSOLVED_JOURNAL @95839 EXIT
+  IF ~~ THEN REPLY @254 DO ~SetGlobal("NWCultInLuskan","GLOBAL",4)EraseJournalEntry(@95589)EraseJournalEntry(@95590)StartCutSceneMode()StartCutScene("NWTONEWR")~ UNSOLVED_JOURNAL @95839 EXIT
+  IF ~~ THEN REPLY @256 DO ~SetGlobal("NWCultInLuskan","GLOBAL",3)EraseJournalEntry(@95590)EraseJournalEntry(@95589)~ UNSOLVED_JOURNAL @95839 EXIT
 END
 
 IF ~~ THEN BEGIN 127// from: 20.2
   SAY @257
-  IF ~~ THEN DO ~TakePartyItem("NWSTAMP")GiveItemCreate("NWPERMIO",Player1,0,0,0)SetGlobal("PlayerHasPermit","GLOBAL",1)EraseJournalEntry(@95591)~ UNSOLVED_JOURNAL @95590 GOTO 135
+  IF ~~ THEN DO ~TakePartyItem("NWSTAMP")GiveItemCreate("NWPERMIO",Player1,0,0,0)SetGlobal("NWPlayerHasPermit","GLOBAL",1)EraseJournalEntry(@95591)~ UNSOLVED_JOURNAL @95590 GOTO 135
 END
 
 IF ~~ THEN BEGIN 135// from: 127.1
   SAY @259
-  IF ~  OR(3)GlobalLT("AarinFriend","GLOBAL",3)!Global("AarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
-  IF ~  GlobalGT("AarinFriend","GLOBAL",2)!Global("AarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
+  IF ~  OR(3)GlobalLT("NWAarinFriend","GLOBAL",3)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",2)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
 END
 
 IF ~~ THEN BEGIN 128// from: 20.3
   SAY @260
   IF ~ PartyHasItem("Nwbook51")
-GlobalLT("CultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
+GlobalLT("NWCultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
   IF ~  PartyHasItem("NWSTAMP")
-Global("PlayerHasPermit","GLOBAL",0)
+Global("NWPlayerHasPermit","GLOBAL",0)
 Global("AskAboutStamp","LOCALS",1)~ THEN REPLY @243 GOTO 127
-  IF ~ Global("PlayerHasPermit","GLOBAL",0)~ THEN REPLY @245 GOTO 129
+  IF ~ Global("NWPlayerHasPermit","GLOBAL",0)~ THEN REPLY @245 GOTO 129
   IF ~~ THEN REPLY @246 GOTO 136
-  IF ~  OR(3)GlobalLT("AarinFriend","GLOBAL",3)!Global("AarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
-  IF ~  GlobalGT("AarinFriend","GLOBAL",2)!Global("AarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
+  IF ~  OR(3)GlobalLT("NWAarinFriend","GLOBAL",3)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",2)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
 END
 
 IF ~~ THEN BEGIN 129// from: 20.4
@@ -1246,14 +1246,14 @@ END
 IF ~~ THEN BEGIN 137// from: 129.1
   SAY @263
   IF ~ PartyHasItem("Nwbook51")
-GlobalLT("CultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
+GlobalLT("NWCultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
   IF ~  PartyHasItem("NWSTAMP")
-Global("PlayerHasPermit","GLOBAL",0)
+Global("NWPlayerHasPermit","GLOBAL",0)
 Global("AskAboutStamp","LOCALS",1)~ THEN REPLY @243 GOTO 127
   IF ~~ THEN REPLY @244 GOTO 128
   IF ~~ THEN REPLY @246 GOTO 136
-  IF ~  OR(3)GlobalLT("AarinFriend","GLOBAL",3)!Global("AarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
-  IF ~  GlobalGT("AarinFriend","GLOBAL",2)!Global("AarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
+  IF ~  OR(3)GlobalLT("NWAarinFriend","GLOBAL",3)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",2)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
 END
 
 IF ~~ THEN BEGIN 136// from: 20.5
@@ -1264,14 +1264,14 @@ END
 IF ~~ THEN BEGIN 138// from: 136.1
   SAY @265
   IF ~ PartyHasItem("Nwbook51")
-GlobalLT("CultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
+GlobalLT("NWCultInLuskan","GLOBAL",3)~ THEN REPLY @242 GOTO 126
   IF ~  PartyHasItem("NWSTAMP")
-Global("PlayerHasPermit","GLOBAL",0)
+Global("NWPlayerHasPermit","GLOBAL",0)
 Global("AskAboutStamp","LOCALS",1)~ THEN REPLY @243 GOTO 127
   IF ~~ THEN REPLY @244 GOTO 128
-  IF ~  Global("PlayerHasPermit","GLOBAL",0)~ THEN REPLY @245 GOTO 129
-  IF ~  OR(3)GlobalLT("AarinFriend","GLOBAL",3)!Global("AarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
-  IF ~  GlobalGT("AarinFriend","GLOBAL",2)!Global("AarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
+  IF ~  Global("NWPlayerHasPermit","GLOBAL",0)~ THEN REPLY @245 GOTO 129
+  IF ~  OR(3)GlobalLT("NWAarinFriend","GLOBAL",3)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,MALE)~ THEN REPLY @247 GOTO 130
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",2)!Global("NWAarinFriend","GLOBAL",9)Gender(Player1,FEMALE)~ THEN REPLY @247 GOTO 139
 END
 
 IF ~~ THEN BEGIN 130// from: 20.6
@@ -1285,7 +1285,7 @@ IF ~~ THEN BEGIN 139// from: 20.7
 END
 
 IF WEIGHT #10 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",2)Global("AribethWasGone","LOCALS",0)IsGabber(Player1)~ THEN BEGIN 140 // from:
+~  Global("NWCultInLuskan","GLOBAL",2)Global("AribethWasGone","LOCALS",0)IsGabber(Player1)~ THEN BEGIN 140 // from:
   SAY @267
   IF ~~ THEN REPLY @268 GOTO 141
   IF ~~ THEN REPLY @269 GOTO 142
@@ -1317,8 +1317,8 @@ IF ~~ THEN BEGIN 144// from: 140.4.141.3.142.2
 END
 
 IF WEIGHT #11 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 134 // from:
+~  Global("NWCultInLuskan","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 134 // from:
   SAY @276
-  IF ~~ THEN REPLY @254 DO ~SetGlobal("CultInLuskan","GLOBAL",4)StartCutSceneMode()StartCutScene("NWTONEWR")~ EXIT
+  IF ~~ THEN REPLY @254 DO ~SetGlobal("NWCultInLuskan","GLOBAL",4)StartCutSceneMode()StartCutScene("NWTONEWR")~ EXIT
   IF ~~ THEN REPLY @277 EXIT
 END

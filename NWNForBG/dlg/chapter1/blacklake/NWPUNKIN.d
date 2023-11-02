@@ -3,7 +3,7 @@
 BEGIN ~NWPUNKIN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Buka","LOCALS",0)Global("PankinSecret","GLOBAL",0)CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN BEGIN 0 // from:
+~  Global("Buka","LOCALS",0)Global("NWPankinSecret","GLOBAL",0)CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -49,7 +49,7 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
   SAY @13
-  IF ~~ THEN DO ~SetGlobal("PankinSecret","GLOBAL",1)SetGlobal("Buka","LOCALS",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPankinSecret","GLOBAL",1)SetGlobal("Buka","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.1
@@ -59,13 +59,13 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 6.2
   SAY @7
-  IF ~~ THEN DO ~SetGlobal("PankinSecret","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPankinSecret","GLOBAL",1)~ EXIT
 END
 
 // -------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Buka","LOCALS",0)Global("PankinSecret","GLOBAL",0)CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN BEGIN 11 // from:
+~  Global("Buka","LOCALS",0)Global("NWPankinSecret","GLOBAL",0)CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN BEGIN 11 // from:
   SAY @15
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -83,7 +83,7 @@ END
 // -------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Buka","LOCALS",0)Global("PankinSecret","GLOBAL",1)~ THEN BEGIN 13 // from:
+~  Global("Buka","LOCALS",0)Global("NWPankinSecret","GLOBAL",1)~ THEN BEGIN 13 // from:
   SAY @17
   IF ~~ THEN EXIT
 END

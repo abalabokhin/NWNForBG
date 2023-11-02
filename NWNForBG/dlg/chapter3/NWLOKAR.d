@@ -18,7 +18,7 @@ END
 // -------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("LokarTalk","GLOBAL",0)~ THEN BEGIN 2 // from:
+~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("NWLokarTalk","GLOBAL",0)~ THEN BEGIN 2 // from:
   SAY @5
   IF ~~ THEN REPLY @6 GOTO 3
   IF ~~ THEN REPLY @7 GOTO 4
@@ -65,8 +65,8 @@ IF ~~ THEN BEGIN 8 // from: 4.2
   IF ~~ THEN REPLY @20 GOTO 11
   IF ~~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @22 GOTO 13
-  IF ~  Global("LokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
-  IF ~  Global("LokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 15
+  IF ~  Global("NWLokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
+  IF ~  Global("NWLokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 15
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.3
@@ -84,27 +84,27 @@ IF ~~ THEN BEGIN 11 // from: 8.1
   SAY @26
   IF ~~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @22 GOTO 13
-  IF ~  Global("LokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
-  IF ~  Global("LokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 15
+  IF ~  Global("NWLokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
+  IF ~  Global("NWLokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 15
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.2
   SAY @27
   IF ~~ THEN REPLY @20 GOTO 11
-  IF ~  Global("LokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
-  IF ~  Global("LokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 5
+  IF ~  Global("NWLokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
+  IF ~  Global("NWLokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 5
 END
 
 IF ~~ THEN BEGIN 13 // from: 8.3
   SAY @27
   IF ~~ THEN REPLY @20 GOTO 11
-  IF ~  Global("LokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
-  IF ~  Global("LokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 15
+  IF ~  Global("NWLokarTalk","GLOBAL",0)~ THEN REPLY @23 GOTO 14
+  IF ~  Global("NWLokarTalk","GLOBAL",1)~ THEN REPLY @23 GOTO 15
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.4
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("LokarTalk","GLOBAL",1)GiveItem("NWLOKARG",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLokarTalk","GLOBAL",1)GiveItem("NWLOKARG",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.4
@@ -115,7 +115,7 @@ END
 // -----------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))GlobalGT("LokarTalk","GLOBAL",0)~ THEN BEGIN 16 // from:
+~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))GlobalGT("NWLokarTalk","GLOBAL",0)~ THEN BEGIN 16 // from:
   SAY @29
   IF ~~ THEN REPLY @7 GOTO 4
   IF ~~ THEN REPLY @20 GOTO 11

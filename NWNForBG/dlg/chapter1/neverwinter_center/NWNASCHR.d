@@ -166,7 +166,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("DestherIsTraitor","GLOBAL",0)~ THEN BEGIN 21 // from:
+~  !NumTimesTalkedTo(0)Global("NWDestherIsTraitor","GLOBAL",0)~ THEN BEGIN 21 // from:
   SAY @26
   IF ~  GlobalGT("KnowAboutDester","MYAREA",0)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
@@ -181,7 +181,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("DestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",0)GlobalLT("NWNChapter","GLOBAL",2)~ THEN BEGIN 22 // from:
+~  GlobalGT("NWDestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",0)GlobalLT("NWNChapter","GLOBAL",2)~ THEN BEGIN 22 // from:
   SAY @27
   IF ~~ THEN GOTO 23
 END
@@ -312,7 +312,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("DestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",1)GlobalLT("NWNChapter","GLOBAL",2)~ THEN BEGIN 44 // from:
+~  GlobalGT("NWDestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",1)GlobalLT("NWNChapter","GLOBAL",2)~ THEN BEGIN 44 // from:
   SAY @55
   IF ~~ THEN REPLY @29 GOTO 24
   IF ~~ THEN REPLY @30 GOTO 25
@@ -322,7 +322,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",2)Global("FindCult","GLOBAL",0)Global("FindCultTalk","LOCALS",0)~ THEN BEGIN 45 // from:
+~  Global("NWNChapter","GLOBAL",2)Global("NWFindCult","GLOBAL",0)Global("FindCultTalk","LOCALS",0)~ THEN BEGIN 45 // from:
   SAY @56
   IF ~~ THEN REPLY @57 GOTO 46
   IF ~~ THEN REPLY @58 GOTO 47
@@ -346,7 +346,7 @@ END
 
 IF ~~ THEN BEGIN 48 // 45.3
   SAY @64
-  IF ~~ THEN DO ~SetGlobal("FindCult","GLOBAL",1)RevealAreaOnMap("NW2000")~ UNSOLVED_JOURNAL @92485 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWFindCult","GLOBAL",1)RevealAreaOnMap("NW2000")~ UNSOLVED_JOURNAL @92485 EXIT
 END
 
 IF ~~ THEN BEGIN 49 // 45.4
@@ -357,7 +357,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",2)Global("FindCult","GLOBAL",0)Global("FindCultTalk","LOCALS",1)~ THEN BEGIN 50 // from:
+~  Global("NWNChapter","GLOBAL",2)Global("NWFindCult","GLOBAL",0)Global("FindCultTalk","LOCALS",1)~ THEN BEGIN 50 // from:
   SAY @67
   IF ~~ THEN REPLY @57 GOTO 46
   IF ~~ THEN REPLY @58 GOTO 47
@@ -368,7 +368,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",2)GlobalGT("FindCult","GLOBAL",0)~ THEN BEGIN 51 // from:
+~  Global("NWNChapter","GLOBAL",2)GlobalGT("NWFindCult","GLOBAL",0)~ THEN BEGIN 51 // from:
   SAY @68
   IF ~~ THEN EXIT
 END

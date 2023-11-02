@@ -36,7 +36,7 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
   SAY @13
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",4)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",4)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.1
@@ -63,7 +63,7 @@ END
 // ----------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalLT("KendrackQuest","GLOBAL",4)~ THEN BEGIN 10 // from:
+~  !NumTimesTalkedTo(0)GlobalLT("NWKendrackQuest","GLOBAL",4)~ THEN BEGIN 10 // from:
   SAY @21
   IF ~~ THEN REPLY @6 GOTO 3
   IF ~~ THEN REPLY @7 GOTO 5
@@ -73,15 +73,15 @@ END
 // ----------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("KendrackQuest","GLOBAL",3)AreaCheck("NW2020")~ THEN BEGIN 11 // from:
+~  GlobalGT("NWKendrackQuest","GLOBAL",3)AreaCheck("NW2020")~ THEN BEGIN 11 // from:
   SAY @22
-  IF ~~ THEN DO ~EscapeArea()SetGlobal("ShaldrissMove","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~EscapeArea()SetGlobal("NWShaldrissMove","GLOBAL",1)~ EXIT
 END
 
 // ----------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("KendrackQuest","GLOBAL",3)AreaCheck("NW2002")~ THEN BEGIN 12 // from:
+~  GlobalGT("NWKendrackQuest","GLOBAL",3)AreaCheck("NW2002")~ THEN BEGIN 12 // from:
   SAY @23
   IF ~~ THEN EXIT
 END

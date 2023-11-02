@@ -22,13 +22,13 @@ IF
 	Global("FitePit","MYAREA",0)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("FitePitTimer","GLOBAL",ONE_HOUR)
+		SetGlobalTimer("NWFitePitTimer","GLOBAL",ONE_HOUR)
 		SetGlobal("FitePit","MYAREA",1)
 END
 
 IF
 	Global("FitePit","MYAREA",1)
-	GlobalTimerExpired("FitePitTimer","GLOBAL")
+	GlobalTimerExpired("NWFitePitTimer","GLOBAL")
 THEN
 	RESPONSE #100
 		AmbientActivate("Pit",FALSE)

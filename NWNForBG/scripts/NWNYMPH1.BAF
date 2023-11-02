@@ -325,7 +325,7 @@ IF
 	OR(2)
 		GlobalTimerNotExpired("Spell_Immunity_Abjuration","LOCALS")
 		GlobalTimerNotExpired("Spell_Immunity_Divination","LOCALS")
-	!GlobalGT("Iavecnaplace","GLOBAL",0)
+	!GlobalGT("NWIavecnaplace","GLOBAL",0)
 	OR(6)
 		SpellCastOnMe([GOODCUTOFF],WIZARD_SPELL_THRUST)  // SPWI321.SPL (?????? ??????????)
 		SpellCastOnMe([GOODCUTOFF],WIZARD_SECRET_WORD)  // SPWI419.SPL (?????? ?????)
@@ -342,7 +342,7 @@ END
 
 IF
 	!GlobalTimerNotExpired("Spell_Shield_Timer","LOCALS")
-	GlobalGT("Iavecnaplace","GLOBAL",0)
+	GlobalGT("NWIavecnaplace","GLOBAL",0)
 	OR(2)
 		GlobalTimerNotExpired("Spell_Immunity_Abjuration","LOCALS")
 		GlobalTimerNotExpired("Spell_Immunity_Divination","LOCALS")
@@ -437,7 +437,7 @@ IF
 	OR(2)
 		GlobalTimerNotExpired("Spell_Immunity_Abjuration","LOCALS")
 		GlobalTimerNotExpired("Spell_Immunity_Divination","LOCALS")
-	!GlobalGT("Iavecnaplace","GLOBAL",0)
+	!GlobalGT("NWIavecnaplace","GLOBAL",0)
 	OR(6)
 		SpellCastOnMe([GOODCUTOFF],WIZARD_SPELL_THRUST)  // SPWI321.SPL (?????? ??????????)
 		SpellCastOnMe([GOODCUTOFF],WIZARD_SECRET_WORD)  // SPWI419.SPL (?????? ?????)
@@ -452,7 +452,7 @@ END
 
 IF
 	!GlobalTimerNotExpired("Spell_Shield_Timer","LOCALS")
-	GlobalGT("Iavecnaplace","GLOBAL",0)
+	GlobalGT("NWIavecnaplace","GLOBAL",0)
 	OR(2)
 		GlobalTimerNotExpired("Spell_Immunity_Abjuration","LOCALS")
 		GlobalTimerNotExpired("Spell_Immunity_Divination","LOCALS")

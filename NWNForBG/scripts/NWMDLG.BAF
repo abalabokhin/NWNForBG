@@ -15,7 +15,7 @@ THEN
 END
 
 IF
-	Global("Messenger_of_Neverwinter","GLOBAL",2)
+	Global("NWMessenger_of_Neverwinter","GLOBAL",2)
 THEN
 	RESPONSE #100
 		DestroySelf()

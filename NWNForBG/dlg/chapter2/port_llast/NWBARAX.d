@@ -46,31 +46,31 @@ IF ~~ THEN BEGIN 6 // from: 5.1
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("PlayerBad","LOCALS",1)Global("CultInLuskan","GLOBAL",0)~ THEN BEGIN 7 // from:
+~  Global("PlayerBad","LOCALS",1)Global("NWCultInLuskan","GLOBAL",0)~ THEN BEGIN 7 // from:
   SAY @15
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 8 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 8 // from:
   SAY @16
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 9 // from:
+~  Global("NWCultInLuskan","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 9 // from:
   SAY @17
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",0)!IsGabber(Player1)~ THEN BEGIN 10 // from:
+~  Global("NWCultInLuskan","GLOBAL",0)!IsGabber(Player1)~ THEN BEGIN 10 // from:
   SAY @18
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("CultInLuskan","GLOBAL",1)!IsGabber(Player1)~ THEN BEGIN 11 // from:
+~  Global("NWCultInLuskan","GLOBAL",1)!IsGabber(Player1)~ THEN BEGIN 11 // from:
   SAY @19
   IF ~~ THEN EXIT
 END

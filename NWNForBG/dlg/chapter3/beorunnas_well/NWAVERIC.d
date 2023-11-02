@@ -3,10 +3,10 @@
 BEGIN ~NWAVERIC~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AvericTalk","GLOBAL",0)Gender(LastTalkedToBy,MALE)Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWAvericTalk","GLOBAL",0)Gender(LastTalkedToBy,MALE)Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -61,28 +61,28 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 7.2
   SAY @20
-  IF ~~ THEN DO ~SetGlobal("AvericTalk","GLOBAL",1)IncrementGlobal("ToAcquitted","GLOBAL",1)TakePartyGold(100)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAvericTalk","GLOBAL",1)IncrementGlobal("NWToAcquitted","GLOBAL",1)TakePartyGold(100)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.3
   SAY @20
-  IF ~~ THEN DO ~SetGlobal("AvericTalk","GLOBAL",1)IncrementGlobal("ToAcquitted","GLOBAL",1)TakePartyGold(300)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAvericTalk","GLOBAL",1)IncrementGlobal("NWToAcquitted","GLOBAL",1)TakePartyGold(300)~ EXIT
 END
 
 // -------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AvericTalk","GLOBAL",0)Gender(LastTalkedToBy,FEMALE)Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 11 // from:
+~  Global("NWAvericTalk","GLOBAL",0)Gender(LastTalkedToBy,FEMALE)Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 11 // from:
   SAY @21
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // -------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AvericTalk","GLOBAL",1)Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 12 // from:
+~  Global("NWAvericTalk","GLOBAL",1)Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 12 // from:
   SAY @22
   IF ~~ THEN GOTO 13
 END
@@ -95,7 +95,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~ GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 14 // from:
+~ GlobalGT("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 14 // from:
   SAY @24
   IF ~~ THEN REPLY @25 GOTO 16
   IF ~~ THEN REPLY @26 GOTO 17
@@ -106,7 +106,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~ GlobalGT("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 15 // from:
+~ GlobalGT("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 15 // from:
   SAY @27
   IF ~~ THEN REPLY @25 GOTO 16
   IF ~~ THEN REPLY @26 GOTO 17

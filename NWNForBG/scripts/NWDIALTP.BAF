@@ -3,9 +3,9 @@ IF
 		IsOverMe([PC])
 		Entered([PC])
 	OR(5)
-		Global("NeurikQuest","GLOBAL",0)
+		Global("NWNeurikQuest","GLOBAL",0)
 		PartyHasItem("NWURTRIG")  // ?????? ????
-		GlobalGT("UrtIsSaved","GLOBAL",0)
+		GlobalGT("NWUrtIsSaved","GLOBAL",0)
 		Dead("NWURT")  // ???
 		GlobalGT("Stairs","MYAREA",0)
 THEN
@@ -17,9 +17,9 @@ IF
 	OR(2)
 		IsOverMe([PC])
 		Entered([PC])
-	GlobalGT("NeurikQuest","GLOBAL",0)
+	GlobalGT("NWNeurikQuest","GLOBAL",0)
 	!PartyHasItem("NWURTRIG")  // ?????? ????
-	Global("UrtIsSaved","GLOBAL",0)
+	Global("NWUrtIsSaved","GLOBAL",0)
 	!Dead("NWURT")  // ???
 	Global("Stairs","MYAREA",0)
 THEN

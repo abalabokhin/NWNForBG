@@ -5,8 +5,8 @@ BEGIN ~NWTORGO~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  True()~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("MoonstoneMask","GLOBAL",2)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("MoonstoneMask","GLOBAL",2)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWMoonstoneMask","GLOBAL",2)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWMoonstoneMask","GLOBAL",2)~ THEN REPLY @1 GOTO 2
   IF ~~ THEN REPLY @2 DO ~StartStore("NWTORGO",LastTalkedToBy(Myself))~ EXIT
   IF ~~ THEN REPLY @3 EXIT
 END

@@ -6,7 +6,7 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
 ~  Global("Trigger1308","MYAREA",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  GlobalGT("NWNChapter","GLOBAL",0)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalGT("OleffQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 2
+  IF ~  GlobalGT("NWOleffQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
 END

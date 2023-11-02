@@ -13,14 +13,14 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  Global("SharwynQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("SharwynQuest","GLOBAL",1)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @5 GOTO 20
-  IF ~  Global("SharwynQuest","GLOBAL",2)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @5 GOTO 38
-  IF ~  Global("SharwynQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 61
-  IF ~  OR(2)GlobalGT("SharwynQuest","GLOBAL",3)GlobalTimerNotExpired("SharwynTimer","LOCALS")!Global("SharwynQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 62
-  IF ~  Global("SharwynQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 63
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @7 GOTO 64
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @7 GOTO 65
+  IF ~  Global("NWSharwynQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWSharwynQuest","GLOBAL",1)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @5 GOTO 20
+  IF ~  Global("NWSharwynQuest","GLOBAL",2)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @5 GOTO 38
+  IF ~  Global("NWSharwynQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 61
+  IF ~  OR(2)GlobalGT("NWSharwynQuest","GLOBAL",3)GlobalTimerNotExpired("SharwynTimer","LOCALS")!Global("NWSharwynQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 62
+  IF ~  Global("NWSharwynQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 63
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @7 GOTO 64
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @7 GOTO 65
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.5
@@ -111,17 +111,17 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @36
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.2
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 16.3
   SAY @38
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 1.2
@@ -219,7 +219,7 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 34.3
   SAY @68
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 1.3
@@ -339,18 +339,18 @@ END
 
 IF ~~ THEN BEGIN 57 // from: 55.2
   SAY @108
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 58 // from: 55.3
   SAY @109
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 59 // from: 56.1
   SAY @110
   IF ~~ THEN DO ~
-    SetGlobal("SharwynQuest","GLOBAL",4)
+    SetGlobal("NWSharwynQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -364,7 +364,7 @@ END
 IF ~~ THEN BEGIN 60 // from: 56.2
   SAY @111
   IF ~~ THEN DO ~
-    SetGlobal("SharwynQuest","GLOBAL",4)
+    SetGlobal("NWSharwynQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -427,12 +427,12 @@ END
 
 IF ~~ THEN BEGIN 70 // from: 0.2
   SAY @125
-  IF ~  Global("SharwynQuest2","GLOBAL",0)~ THEN REPLY @126 GOTO 71
-  IF ~  Global("SharwynQuest2","GLOBAL",1)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @127 GOTO 85
-  IF ~  Global("SharwynQuest2","GLOBAL",2)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @127 GOTO 98
-  IF ~  Global("SharwynQuest2","GLOBAL",3)~ THEN REPLY @127 GOTO 129
-  IF ~  OR(2)GlobalGT("SharwynQuest2","GLOBAL",3)GlobalTimerNotExpired("SharwynTimer","LOCALS")!Global("SharwynQuest2","GLOBAL",66)~ THEN REPLY @127 GOTO 130
-  IF ~Global("SharwynQuest2","GLOBAL",66)~ THEN REPLY @127 GOTO 63
+  IF ~  Global("NWSharwynQuest2","GLOBAL",0)~ THEN REPLY @126 GOTO 71
+  IF ~  Global("NWSharwynQuest2","GLOBAL",1)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @127 GOTO 85
+  IF ~  Global("NWSharwynQuest2","GLOBAL",2)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @127 GOTO 98
+  IF ~  Global("NWSharwynQuest2","GLOBAL",3)~ THEN REPLY @127 GOTO 129
+  IF ~  OR(2)GlobalGT("NWSharwynQuest2","GLOBAL",3)GlobalTimerNotExpired("SharwynTimer","LOCALS")!Global("NWSharwynQuest2","GLOBAL",66)~ THEN REPLY @127 GOTO 130
+  IF ~Global("NWSharwynQuest2","GLOBAL",66)~ THEN REPLY @127 GOTO 63
   IF ~~ THEN REPLY @7 GOTO 131
 END
 
@@ -506,17 +506,17 @@ END
 
 IF ~~ THEN BEGIN 82 // from: 81.1
   SAY @155
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 83 // from: 81.2
   SAY @156
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 84 // from: 81.3
   SAY @157
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 85 // from: 70.2
@@ -578,17 +578,17 @@ END
 
 IF ~~ THEN BEGIN 95 // from: 94.1
   SAY @177
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 96 // from: 94.2
   SAY @178
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 97 // from: 94.3
   SAY @179
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 98 // from: 70.3
@@ -712,23 +712,23 @@ END
 
 IF ~~ THEN BEGIN 118 // from: 116.2
   SAY @220
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 119 // from: 116.3
   SAY @221
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 120 // from: 116.4
   SAY @222
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 121 // from: 117.1
   SAY @223
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -744,7 +744,7 @@ END
 IF ~~ THEN BEGIN 122 // from: 117.3
   SAY @224
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -760,7 +760,7 @@ END
 IF ~~ THEN BEGIN 123 // from: 117.5
   SAY @225
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -776,7 +776,7 @@ END
 IF ~~ THEN BEGIN 124 // from: 117.7
   SAY @226
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -792,7 +792,7 @@ END
 IF ~~ THEN BEGIN 125 // from: 117.2
   SAY @227
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -806,7 +806,7 @@ END
 IF ~~ THEN BEGIN 126 // from: 117.4
   SAY @228
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -820,7 +820,7 @@ END
 IF ~~ THEN BEGIN 127 // from: 117.6
   SAY @229
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -834,7 +834,7 @@ END
 IF ~~ THEN BEGIN 128 // from: 117.8
   SAY @230
   IF ~~THEN DO ~
-    SetGlobal("SharwynQuest2","GLOBAL",4)
+    SetGlobal("NWSharwynQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -883,12 +883,12 @@ END
 
 IF ~~ THEN BEGIN 135 // from: 0.3
   SAY @3
-  IF ~  Global("SharwynQuest3","GLOBAL",0)~ THEN REPLY @240 GOTO 136
-  IF ~  Global("SharwynQuest3","GLOBAL",1)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @241 GOTO 149
-  IF ~  Global("SharwynQuest3","GLOBAL",2)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @5 GOTO 158
-  IF ~  Global("SharwynQuest3","GLOBAL",3)~ THEN REPLY @5 GOTO 179
-  IF ~  OR(2)GlobalGT("SharwynQuest3","GLOBAL",3)GlobalTimerNotExpired("SharwynTimer","LOCALS")!Global("SharwynQuest3","GLOBAL",66)~ THEN REPLY @5 GOTO 180
-  IF ~  Global("SharwynQuest3","GLOBAL",66)~ THEN REPLY @5 GOTO 63
+  IF ~  Global("NWSharwynQuest3","GLOBAL",0)~ THEN REPLY @240 GOTO 136
+  IF ~  Global("NWSharwynQuest3","GLOBAL",1)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @241 GOTO 149
+  IF ~  Global("NWSharwynQuest3","GLOBAL",2)GlobalTimerExpired("SharwynTimer","LOCALS")~ THEN REPLY @5 GOTO 158
+  IF ~  Global("NWSharwynQuest3","GLOBAL",3)~ THEN REPLY @5 GOTO 179
+  IF ~  OR(2)GlobalGT("NWSharwynQuest3","GLOBAL",3)GlobalTimerNotExpired("SharwynTimer","LOCALS")!Global("NWSharwynQuest3","GLOBAL",66)~ THEN REPLY @5 GOTO 180
+  IF ~  Global("NWSharwynQuest3","GLOBAL",66)~ THEN REPLY @5 GOTO 63
   IF ~~ THEN REPLY @7 GOTO 181
 END
 
@@ -942,7 +942,7 @@ END
 
 IF ~~ THEN BEGIN 143 // from: 137.3 138.3 139.3 140.3
   SAY @257
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest3","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest3","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 144 // from: 141.1
@@ -972,7 +972,7 @@ END
 
 IF ~~ THEN BEGIN 148 // from: 145.1 146.1 147.1
   SAY @266
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest3","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest3","GLOBAL",1)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 149 // from: 135.2
@@ -1015,12 +1015,12 @@ END
 
 IF ~~ THEN BEGIN 156 // from: 155.1
   SAY @280
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest3","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest3","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 157 // from: 155.2
   SAY @281
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest3","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest3","GLOBAL",2)SetGlobalTimer("SharwynTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 158 // from: 135.3
@@ -1096,12 +1096,12 @@ END
 
 IF ~~ THEN BEGIN 170 // from: 168.2
   SAY @306
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 171 // from: 168.3
   SAY @307
-  IF ~~ THEN DO ~SetGlobal("SharwynQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSharwynQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 172 // from: 169.1
@@ -1131,7 +1131,7 @@ END
 IF ~~ THEN BEGIN 175 // from: 174.1
   SAY @315
   IF ~~ THEN DO ~
-    SetGlobal("SharwynQuest3","GLOBAL",4)
+    SetGlobal("NWSharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -1149,7 +1149,7 @@ END
 IF ~~ THEN BEGIN 176 // from: 174.2
   SAY @316
   IF ~~ THEN DO ~
-    SetGlobal("SharwynQuest3","GLOBAL",4)
+    SetGlobal("NWSharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -1167,7 +1167,7 @@ END
 IF ~~ THEN BEGIN 177 // from: 174.3
   SAY @317
   IF ~~ THEN DO ~
-    SetGlobal("SharwynQuest3","GLOBAL",4)
+    SetGlobal("NWSharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -1185,7 +1185,7 @@ END
 IF ~~ THEN BEGIN 178 // from: 174.4
   SAY @318
   IF ~~ THEN DO ~
-    SetGlobal("SharwynQuest3","GLOBAL",4)
+    SetGlobal("NWSharwynQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWSHARWN",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)

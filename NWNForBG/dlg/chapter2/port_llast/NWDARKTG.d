@@ -3,7 +3,7 @@
 BEGIN ~NWDARKTG~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowDarktong","LOCALS",0)Global("GoToLuskan","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("KnowDarktong","LOCALS",0)Global("NWGoToLuskan","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -121,12 +121,12 @@ IF ~~ THEN BEGIN 17 // from: 12.4
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("KnowDarktong","LOCALS",0)!Global("KnowDarktong","LOCALS",66)Global("GoToLuskan","GLOBAL",0)~ THEN BEGIN 18 // from:
+~  GlobalGT("KnowDarktong","LOCALS",0)!Global("KnowDarktong","LOCALS",66)Global("NWGoToLuskan","GLOBAL",0)~ THEN BEGIN 18 // from:
   SAY @37
   IF ~  GlobalGT("KnowDarktong","LOCALS",1)~ THEN REPLY @38 GOTO 19
   IF ~~ THEN REPLY @39 GOTO 20
-  IF ~  GlobalGT("Evidence","GLOBAL",0)Global("Luscan","LOCALS",0)~ THEN REPLY @40 GOTO 21
-  IF ~  Global("Caves","LOCALS",0)Global("GanonJournal","GLOBAL",1)~ THEN REPLY @41 GOTO 22
+  IF ~  GlobalGT("NWEvidence","GLOBAL",0)Global("Luscan","LOCALS",0)~ THEN REPLY @40 GOTO 21
+  IF ~  Global("Caves","LOCALS",0)Global("NWGanonJournal","GLOBAL",1)~ THEN REPLY @41 GOTO 22
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
@@ -150,7 +150,7 @@ IF ~~ THEN BEGIN 22 // from: 18.4
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("GoToLuskan","GLOBAL",0)~ THEN BEGIN 23 // from:
+~  GlobalGT("NWGoToLuskan","GLOBAL",0)~ THEN BEGIN 23 // from:
   SAY @46
   IF ~~ THEN DO ~Enemy()Attack(LastTalkedToBy)~ EXIT
 END

@@ -1,10 +1,10 @@
 // Колодец Беорунна   Домик Аарина       Аарин Генд
 // В скрипт локации
 // IF
-// Global("TeleportToNewervinter","GLOBAL",1)
+// Global("NWTeleportToNewervinter","GLOBAL",1)
 // THEN
 // RESPONSE #100
-// SetGlobal("TeleportToNewervinter","GLOBAL",1)
+// SetGlobal("NWTeleportToNewervinter","GLOBAL",1)
 // ClearAllActions()
 // StartCutSceneMode()
 // StartCutScene("NWTONEV2")
@@ -21,10 +21,10 @@ END
 // ------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Chapter3AarinJob","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 1 // from:
+~  Global("NWChapter3AarinJob","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 1 // from:
   SAY @1
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 2
-  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)~ THEN GOTO 3
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 2
+  IF ~  OR(2)GlobalLT("NWAarinFriend","GLOBAL",5)Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.1
@@ -194,13 +194,13 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 26.1
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("Chapter3AarinJob","GLOBAL",1)~ UNSOLVED_JOURNAL @104555 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWChapter3AarinJob","GLOBAL",1)~ UNSOLVED_JOURNAL @104555 EXIT
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Chapter3AarinJob","GLOBAL",1)IsGabber(Player1)GlobalGT("AarinFriend","GLOBAL",0)!Global("AarinFriend","GLOBAL",9)~ THEN BEGIN 28 // from:
+~  Global("NWChapter3AarinJob","GLOBAL",1)IsGabber(Player1)GlobalGT("NWAarinFriend","GLOBAL",0)!Global("NWAarinFriend","GLOBAL",9)~ THEN BEGIN 28 // from:
   SAY @45
   IF ~~ THEN GOTO 29
 END
@@ -230,9 +230,9 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 32.1
   SAY @52
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 38
-  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN GOTO 39
-  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN GOTO 40
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 38
+  IF ~  OR(2)GlobalLT("NWAarinFriend","GLOBAL",5)Global("NWAarinFriend","GLOBAL",9)CheckStatLT(LastTalkedToBy(Myself),12,CHR)~ THEN GOTO 39
+  IF ~  OR(2)GlobalLT("NWAarinFriend","GLOBAL",5)Global("NWAarinFriend","GLOBAL",9)CheckStatGT(LastTalkedToBy(Myself),11,CHR)~ THEN GOTO 40
 END
 
 IF ~~ THEN BEGIN 34 // from: 30.2
@@ -319,22 +319,22 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 47.1  3000
   SAY @65
-   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
-   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
-   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(3000)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 48.1  3000
   SAY @65
-   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
-   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
-   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
+   IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(2500)AddexperienceParty(184000)~ UNSOLVED_JOURNAL @104511 EXIT
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Chapter3AarinJob","GLOBAL",1)IsGabber(Player1)OR(2)Global("AarinFriend","GLOBAL",0)Global("AarinFriend","GLOBAL",9)~ THEN BEGIN 51 // from:
+~  Global("NWChapter3AarinJob","GLOBAL",1)IsGabber(Player1)OR(2)Global("NWAarinFriend","GLOBAL",0)Global("NWAarinFriend","GLOBAL",9)~ THEN BEGIN 51 // from:
   SAY @67
   IF ~~ THEN GOTO 29
 END
@@ -342,14 +342,14 @@ END
 // ------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Chapter3AarinJob","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 52 // from:
+~  Global("NWChapter3AarinJob","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 52 // from:
   SAY @68
   IF ~~ THEN GOTO 53
 END
 
 IF ~~ THEN BEGIN 53 // from: 52.1
   SAY @69
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
   IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
   IF ~~ THEN REPLY @71 GOTO 57
   IF ~~ THEN REPLY @72 GOTO 59
@@ -371,8 +371,8 @@ END
 
 IF ~~ THEN BEGIN 56 // from: 55.1
   SAY @79
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 72
-  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)~ THEN GOTO 73
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 72
+  IF ~  OR(2)GlobalLT("NWAarinFriend","GLOBAL",5)Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 73
 END
 
 IF ~~ THEN BEGIN 57 // from: 53.2
@@ -382,7 +382,7 @@ END
 
 IF ~~ THEN BEGIN 58 // from: 57.1
   SAY @81
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
   IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
   IF ~~ THEN REPLY @72 GOTO 59
   IF ~~ THEN REPLY @73 GOTO 61
@@ -397,7 +397,7 @@ END
 IF ~~ THEN BEGIN 60 // from: 59.4
   SAY @83
   IF ~~ THEN REPLY @84 GOTO 74
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
   IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
   IF ~~ THEN REPLY @71 GOTO 57
   IF ~~ THEN REPLY @73 GOTO 61
@@ -411,7 +411,7 @@ END
 
 IF ~~ THEN BEGIN 62 // from: 61.1
   SAY @86
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN REPLY @70 GOTO 54
   IF ~ OR(3)PartyHasItem("NWWord1")PartyHasItem("NWWord2")PartyHasItem("NWWord3")~ THEN REPLY @48 GOTO 55
   IF ~~ THEN REPLY @71 GOTO 57
   IF ~~ THEN REPLY @72 GOTO 59
@@ -476,7 +476,7 @@ END
 
 IF ~~ THEN BEGIN 111 // from: 110.1
   SAY @106
-  IF ~~ THEN DO ~SetGlobal("AarinFriend","GLOBAL",0)~ GOTO 112
+  IF ~~ THEN DO ~SetGlobal("NWAarinFriend","GLOBAL",0)~ GOTO 112
 END
 
 IF ~~ THEN BEGIN 112 // from: 111.1
@@ -507,8 +507,8 @@ END
 
 IF ~~ THEN BEGIN 75 // from: 74.1
   SAY @113
-  IF ~  GlobalGT("AarinFriend","GLOBAL",4)!Global("AarinFriend","GLOBAL",9)~ THEN GOTO 76
-  IF ~  OR(2)GlobalLT("AarinFriend","GLOBAL",5)Global("AarinFriend","GLOBAL",9)~ THEN GOTO 77
+  IF ~  GlobalGT("NWAarinFriend","GLOBAL",4)!Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 76
+  IF ~  OR(2)GlobalLT("NWAarinFriend","GLOBAL",5)Global("NWAarinFriend","GLOBAL",9)~ THEN GOTO 77
 END
 
 IF ~~ THEN BEGIN 76 // from: 75.1
@@ -578,7 +578,7 @@ END
 
 IF ~~ THEN BEGIN 87 // from: 86.1
   SAY @130
-  IF ~~ THEN DO ~SetGlobal("AarinFriend","GLOBAL",0)~ GOTO 88
+  IF ~~ THEN DO ~SetGlobal("NWAarinFriend","GLOBAL",0)~ GOTO 88
 END
 
 IF ~~ THEN BEGIN 88 // from: 87.1
@@ -607,9 +607,9 @@ END
 
 IF ~~ THEN BEGIN 92 // from: 91.1
   SAY @43
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(3500)AddexperienceParty(228000)EraseJournalEntry(@104511)~ UNSOLVED_JOURNAL @104512 EXIT
 END
 
 
@@ -621,7 +621,7 @@ END
 // ------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Chapter3AarinJob","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 94 // from:
+~  Global("NWChapter3AarinJob","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 94 // from:
   SAY @138
   IF ~~ THEN GOTO 95
 END
@@ -667,9 +667,9 @@ END
 
 IF ~~ THEN BEGIN 102 // from: 101.1
   SAY @151
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("TeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("NWTeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("NWTeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(228000)SetGlobal("NWTeleportToNewervinter","GLOBAL",1)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
 END
 
 IF ~~ THEN BEGIN 103 // from: 99.3
@@ -679,15 +679,15 @@ END
 
 IF ~~ THEN BEGIN 104 // from: 101.2
   SAY @154
-IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
-IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
-IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("Chapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord1")~ THEN DO ~TakePartyItem("NWWord1")DestroyItem("NWWord1")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord2")~ THEN DO ~TakePartyItem("NWWord2")DestroyItem("NWWord2")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
+IF ~  PartyHasItem("NWWord3")~ THEN DO ~TakePartyItem("NWWord3")DestroyItem("NWWord3")IncrementGlobal("NWChapter3AarinJob","GLOBAL",1)GiveGoldForce(5000)AddexperienceParty(288000)EraseJournalEntry(@104512)~ UNSOLVED_JOURNAL @104662 EXIT
 END
 
 // ------------------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Chapter3AarinJob","GLOBAL",4)IsGabber(Player1)!AreaCheck("NW1030")~ THEN BEGIN 105 // from:
+~  Global("NWChapter3AarinJob","GLOBAL",4)IsGabber(Player1)!AreaCheck("NW1030")~ THEN BEGIN 105 // from:
   SAY @147
   IF ~~ THEN GOTO 106
 END

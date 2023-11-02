@@ -1,6 +1,6 @@
 IF
 	OR(2)
-		Global("DestherIsTraitor","GLOBAL",1)
+		Global("NWDestherIsTraitor","GLOBAL",1)
 		GlobalGT("NWNChapter","GLOBAL",1)
 	InMyArea("NWELTURA")  // ???????
 	Global("EscapeEltura","MYAREA",0)
@@ -13,7 +13,7 @@ END
 
 IF
 	OR(2)
-		Global("DestherIsTraitor","GLOBAL",1)
+		Global("NWDestherIsTraitor","GLOBAL",1)
 		GlobalGT("NWNChapter","GLOBAL",1)
 	!InMyArea("NWELTURA")  // ???????
 	Global("EscapeEltura","MYAREA",0)
@@ -26,7 +26,7 @@ END
 IF
 	Global("StairsEnabled","MYAREA",0)
 	OR(2)
-		Global("CloakTower","GLOBAL",4)
+		Global("NWCloakTower","GLOBAL",4)
 		Global("NWNChapter","GLOBAL",4)
 THEN
 	RESPONSE #100

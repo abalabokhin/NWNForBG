@@ -54,7 +54,7 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
   SAY @16
-  IF ~~ THEN DO ~TakePartyItem("NWCREATR")SetGlobal("DoorOpened","MYAREA",1)Unlock("DoorX1")OpenDoor("DoorX1")~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWCREATR")SetGlobal("Door1Opened","MYAREA",1)Unlock("DoorX1")OpenDoor("DoorX1")~ EXIT
 END
 
 IF ~  Global("Door1Opened","MYAREA",1)~ THEN BEGIN 9 // from:

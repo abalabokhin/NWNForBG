@@ -1,6 +1,6 @@
 IF
-	GlobalGT("JaregQuest","GLOBAL",4)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	GlobalGT("NWJaregQuest","GLOBAL",4)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 THEN
 	RESPONSE #100
 		DestroySelf()
@@ -8,17 +8,17 @@ END
 
 IF
 	Die()
-	!Global("JaregQuest","GLOBAL",5)
+	!Global("NWJaregQuest","GLOBAL",5)
 THEN
 	RESPONSE #100
-		SetGlobal("CharwoodCreatute","GLOBAL",1)
+		SetGlobal("NWCharwoodCreatute","GLOBAL",1)
 		DestroySelf()
 END
 
 IF
 	Global("MyEnd","LOCALS",0)
-	Global("JaregQuest","GLOBAL",5)
-	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",5)
+	Global("NWCharwood_Is_Cursed","GLOBAL",1)
 THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@102611)  // ???????????????!!!!!!!!!!!!!

@@ -21,8 +21,8 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @7
-  IF ~  GlobalGT("LuceJob","GLOBAL",1)~ THEN GOTO 6
-  IF ~  GlobalLT("LuceJob","GLOBAL",2)~ THEN GOTO 7
+  IF ~  GlobalGT("NWLuceJob","GLOBAL",1)~ THEN GOTO 6
+  IF ~  GlobalLT("NWLuceJob","GLOBAL",2)~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3

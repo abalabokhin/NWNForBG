@@ -11,8 +11,8 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY @5 GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @6 GOTO 7
@@ -44,8 +44,8 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
   SAY @12
-  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 7
   IF ~~ THEN REPLY @2 GOTO 2
 END
@@ -67,8 +67,8 @@ END
 IF ~~ THEN BEGIN 9 // from: 7.1
   SAY @16
   IF ~~ THEN REPLY @17 GOTO 10
-  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY @5 GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @2 GOTO 2
@@ -78,8 +78,8 @@ IF ~~ THEN BEGIN 10 // from: 9.1
   SAY @18
   IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @19 GOTO 11
   IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @19 GOTO 12
-  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY @5 GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @2 GOTO 2
@@ -92,8 +92,8 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 10.2
   SAY @21
-  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY @5 GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @2 GOTO 2
@@ -101,8 +101,8 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 11.1
   SAY @22
-  IF ~  !Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("CatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
+  IF ~  !Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWCatepultDestroy","GLOBAL",3)~ THEN REPLY @4 GOTO 4
   IF ~  NumDeadLT("NWGOLEM3",2)~ THEN REPLY @5 GOTO 5
   IF ~  NumDeadGT("NWGOLEM3",1)~ THEN REPLY @5 GOTO 6
   IF ~~ THEN REPLY @2 GOTO 2

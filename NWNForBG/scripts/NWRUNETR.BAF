@@ -3,7 +3,7 @@ IF
 	Range(LastTrigger,3)
 	OR(3)
 		!Global("UsedRune","NW2510",0)  // ????????? ???
-		!Global("Portal2110","GLOBAL",0)
+		!Global("NWPortal2110","GLOBAL",0)
 		!Global("UndeadSpawn","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -14,7 +14,7 @@ IF
 	Clicked([ANYONE])
 	Range(LastTrigger,3)
 	Global("UsedRune","NW2510",0)  // ????????? ???
-	Global("Portal2110","GLOBAL",0)
+	Global("NWPortal2110","GLOBAL",0)
 	Global("UndeadSpawn","MYAREA",0)
 THEN
 	RESPONSE #100

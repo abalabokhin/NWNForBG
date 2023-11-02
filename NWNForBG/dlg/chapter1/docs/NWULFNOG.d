@@ -79,7 +79,7 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 7.1
   SAY @21
-  IF ~~ THEN REPLY @22 DO ~SetGlobal("KnowPasswordNW","GLOBAL",1)~ GOTO 12
+  IF ~~ THEN REPLY @22 DO ~SetGlobal("NWKnowPasswordNW","GLOBAL",1)~ GOTO 12
   IF ~~ THEN REPLY @8 GOTO 6
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @3 GOTO 3
@@ -94,7 +94,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 10.1
   SAY @24
-  IF ~~ THEN DO ~SetGlobal("KnowPasswordNW","GLOBAL",1)~ GOTO 13
+  IF ~~ THEN DO ~SetGlobal("NWKnowPasswordNW","GLOBAL",1)~ GOTO 13
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1

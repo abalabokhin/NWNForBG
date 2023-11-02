@@ -7,11 +7,11 @@
 
 // В скрипт пещеры
 //IF
-//	Global("DeadJanis","GLOBAL",1)
+//	Global("NWDeadJanis","GLOBAL",1)
 //	GlobalTimerExpired("NWJANIS","GLOBAL")
 //THEN
 //	RESPONSE #100
-//		SetGlobal("DeadJanis","GLOBAL",2)
+//		SetGlobal("NWDeadJanis","GLOBAL",2)
 //		CreateVisualEffectObject("SPDEATH3","NWJANIS")
 //             PlaySound("NWDELO04")
 //		Wait(1)
@@ -20,11 +20,11 @@
 
 // В скрипт бараков
 //IF
-//	Global("DeadJanis","GLOBAL",1)
+//	Global("NWDeadJanis","GLOBAL",1)
 //	GlobalTimerExpired("NWJANIS","GLOBAL")
 //THEN
 //	RESPONSE #100
-//		SetGlobal("DeadJanis","GLOBAL",2)
+//		SetGlobal("NWDeadJanis","GLOBAL",2)
 //		SetGlobal("SPRITE_IS_DEADNWJANIS","GLOBAL",1)
 //END
 
@@ -47,7 +47,7 @@
 //END
 
 //IF
-//	Global("RevatQuest","GLOBAL",3)
+//	Global("NWRevatQuest","GLOBAL",3)
 //THEN
 //	RESPONSE #100
 //		EscapeArea()
@@ -56,11 +56,11 @@
 BEGIN ~NWJANIS~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)GlobalLT("RevatQuest","GLOBAL",2)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)GlobalLT("NWRevatQuest","GLOBAL",2)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RevatQuest","GLOBAL",1)~ THEN REPLY @2 GOTO 2
-  IF ~  Global("RevatQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("NWRevatQuest","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRevatQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
 END
@@ -183,7 +183,7 @@ IF ~~ THEN BEGIN 22 // from: 18
   SAY @44
   IF ~~ THEN REPLY @45 GOTO 26
   IF ~~ THEN REPLY @46 GOTO 27
-  IF ~  Global("RevatQuest","GLOBAL",1)~ THEN REPLY @47 GOTO 4
+  IF ~  Global("NWRevatQuest","GLOBAL",1)~ THEN REPLY @47 GOTO 4
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.1
@@ -198,15 +198,15 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 21.2
   SAY @50
-  IF ~~ THEN DO ~SetGlobal("DeadJanis","GLOBAL",1)SetGlobalTimer("NWJANIS","GLOBAL",6)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDeadJanis","GLOBAL",1)SetGlobalTimer("NWJANIS","GLOBAL",6)~ EXIT
 END
 
 //IF
-//	Global("DeadJanis","GLOBAL",1)
+//	Global("NWDeadJanis","GLOBAL",1)
 //	GlobalTimerExpired("NWJANIS","GLOBAL")
 //THEN
 //	RESPONSE #100
-//		SetGlobal("DeadJanis","GLOBAL",2)
+//		SetGlobal("NWDeadJanis","GLOBAL",2)
 //		CreateVisualEffectObject("SPDEATH3","NWJANIS")
 //             PlaySound("NWDELO04")
 //		Wait(1)
@@ -214,17 +214,17 @@ END
 //END
 
 //IF
-//	Global("DeadJanis","GLOBAL",1)
+//	Global("NWDeadJanis","GLOBAL",1)
 //	GlobalTimerExpired("NWJANIS","GLOBAL")
 //THEN
 //	RESPONSE #100
-//		SetGlobal("DeadJanis","GLOBAL",2)
+//		SetGlobal("NWDeadJanis","GLOBAL",2)
 //		SetGlobal("SPRITE_IS_DEADNWJANIS","GLOBAL",1)
 //END
 
 IF ~~ THEN BEGIN 26 // from: 22.1
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("JanisQuest","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJanisQuest","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 22.2
@@ -235,7 +235,7 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 23.1 24.1
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRevatQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 // -----------------------------------------------------------------------------------
@@ -250,7 +250,7 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)Global("JanisQuest","GLOBAL",1)Global("Pause","LOCALS",1)Global("DeadJanis","GLOBAL",0)~ THEN BEGIN 29 // from:
+~  OR(2)Global("NWJanisQuest","GLOBAL",1)Global("Pause","LOCALS",1)Global("NWDeadJanis","GLOBAL",0)~ THEN BEGIN 29 // from:
   SAY @59
   IF ~~ THEN REPLY @60 GOTO 6
   IF ~  !PartyHasItem("NWRINGRA")~ THEN REPLY @61 GOTO 30
@@ -267,7 +267,7 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RevatQuest","GLOBAL",2)~ THEN BEGIN 31 // from:
+~  Global("NWRevatQuest","GLOBAL",2)~ THEN BEGIN 31 // from:
   SAY @64
   IF ~~ THEN EXIT
 END
@@ -275,7 +275,7 @@ END
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RevatQuest","GLOBAL",3)~ THEN BEGIN 32 // from:
+~  Global("NWRevatQuest","GLOBAL",3)~ THEN BEGIN 32 // from:
   SAY @65
   IF ~~ THEN DO ~ActionOverride("NWREVAT",EscapeArea())EscapeArea()~ EXIT
 END
@@ -283,8 +283,8 @@ END
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("DeadJanis","GLOBAL",1)PartyHasItem("NWRINGRA")~ THEN BEGIN 33 // from:
+~  Global("NWDeadJanis","GLOBAL",1)PartyHasItem("NWRINGRA")~ THEN BEGIN 33 // from:
   SAY @66
-  IF ~~ THEN REPLY @36 DO ~SetGlobal("DeadJanis","GLOBAL",0)SetGlobal("JanisHasRing","LOCALS",1)TakePartyItem("NWRINGRA")~ EXIT
+  IF ~~ THEN REPLY @36 DO ~SetGlobal("NWDeadJanis","GLOBAL",0)SetGlobal("JanisHasRing","LOCALS",1)TakePartyItem("NWRINGRA")~ EXIT
   IF ~~ THEN REPLY @67 EXIT
 END

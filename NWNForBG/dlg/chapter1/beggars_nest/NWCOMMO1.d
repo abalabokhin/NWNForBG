@@ -11,8 +11,8 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @2 GOTO 2
@@ -50,15 +50,15 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
   SAY @17
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 8
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 9
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 8
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
   SAY @18
   IF ~~ THEN REPLY @14 GOTO 3
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @19 GOTO 4
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @19 GOTO 5
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @19 GOTO 4
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @19 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
   IF ~~ THEN REPLY @2 GOTO 2
 END
@@ -71,8 +71,8 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 6.2
   SAY @21
-  IF ~  GlobalGT("KnowBandit","GLOBAL",0)~ THEN REPLY @22 GOTO 10
-  IF ~  Global("KnowBandit","GLOBAL",0)~ THEN REPLY @22 GOTO 11
+  IF ~  GlobalGT("NWKnowBandit","GLOBAL",0)~ THEN REPLY @22 GOTO 10
+  IF ~  Global("NWKnowBandit","GLOBAL",0)~ THEN REPLY @22 GOTO 11
   IF ~~ THEN REPLY @14 GOTO 3
   IF ~~ THEN REPLY @12 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -87,7 +87,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 9.2
   SAY @24
-  IF ~~ THEN REPLY @25 DO ~SetGlobal("KnowBandit","GLOBAL",1)~ GOTO 12
+  IF ~~ THEN REPLY @25 DO ~SetGlobal("NWKnowBandit","GLOBAL",1)~ GOTO 12
   IF ~~ THEN REPLY @26 GOTO 13
   IF ~~ THEN REPLY @12 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2

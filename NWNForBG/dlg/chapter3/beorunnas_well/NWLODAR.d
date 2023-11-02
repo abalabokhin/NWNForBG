@@ -3,10 +3,10 @@
 BEGIN ~NWLODAR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LodarTalk","GLOBAL",0)Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWLodarTalk","GLOBAL",0)Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -49,7 +49,7 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 4.2
   SAY @16
-  IF ~~ THEN DO ~SetGlobal("LodarTalk","GLOBAL",1)TakePartyGold(10)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLodarTalk","GLOBAL",1)TakePartyGold(10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
@@ -68,7 +68,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("LodarTalk","GLOBAL",0)Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 10 // from:
+~  GlobalGT("NWLodarTalk","GLOBAL",0)Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 10 // from:
   SAY @20
   IF ~~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @22 GOTO 12
@@ -122,20 +122,20 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
   SAY @25
-  IF ~  Global("LodarTalk","GLOBAL",1)~ THEN DO ~SetGlobal("LodarTalk","GLOBAL",2)TakePartyGold(10)~ EXIT
-  IF ~  Global("LodarTalk","GLOBAL",2)~ THEN DO ~TakePartyGold(10)~ EXIT
+  IF ~  Global("NWLodarTalk","GLOBAL",1)~ THEN DO ~SetGlobal("NWLodarTalk","GLOBAL",2)TakePartyGold(10)~ EXIT
+  IF ~  Global("NWLodarTalk","GLOBAL",2)~ THEN DO ~TakePartyGold(10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.2
   SAY @8
-  IF ~  Global("LodarTalk","GLOBAL",1)~ THEN DO ~SetGlobal("LodarTalk","GLOBAL",2)TakePartyGold(10)~ EXIT
-  IF ~  Global("LodarTalk","GLOBAL",2)~ THEN DO ~TakePartyGold(10)~ EXIT
+  IF ~  Global("NWLodarTalk","GLOBAL",1)~ THEN DO ~SetGlobal("NWLodarTalk","GLOBAL",2)TakePartyGold(10)~ EXIT
+  IF ~  Global("NWLodarTalk","GLOBAL",2)~ THEN DO ~TakePartyGold(10)~ EXIT
 END
 
 // -------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 21 // from:
+~  GlobalGT("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 21 // from:
   SAY @35
   IF ~~ THEN EXIT
 END
@@ -143,7 +143,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 22 // from:
+~  GlobalGT("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 22 // from:
   SAY @36
   IF ~~ THEN EXIT
 END
@@ -162,9 +162,9 @@ IF ~~ THEN BEGIN 25 // from: NWIGLAND 3
   SAY @39
   IF ~~ THEN REPLY @40 GOTO 26
   IF ~~ THEN REPLY @41 GOTO 27
-  IF ~  Global("LodarTalk","GLOBAL",2)~ THEN REPLY @42 GOTO 28
+  IF ~  Global("NWLodarTalk","GLOBAL",2)~ THEN REPLY @42 GOTO 28
   IF ~~ THEN REPLY @43 GOTO 29
-  IF ~~ THEN REPLY @44 DO ~SetGlobal("IslandDialogue","GLOBAL",1) ~EXIT
+  IF ~~ THEN REPLY @44 DO ~SetGlobal("NWIslandDialogue","GLOBAL",1) ~EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 25.1
@@ -179,7 +179,7 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 25.3
   SAY @49
-  IF ~~ THEN REPLY @50 DO ~IncrementGlobal("Justification","GLOBAL",1)~ GOTO 32
+  IF ~~ THEN REPLY @50 DO ~IncrementGlobal("NWJustification","GLOBAL",1)~ GOTO 32
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.4
@@ -190,24 +190,24 @@ END
 IF ~~ THEN BEGIN 30 // from: 26.1
   SAY @53
   IF ~~ THEN REPLY @41 GOTO 27
-  IF ~  Global("LodarTalk","GLOBAL",2)~ THEN REPLY @42 GOTO 28
+  IF ~  Global("NWLodarTalk","GLOBAL",2)~ THEN REPLY @42 GOTO 28
   IF ~~ THEN REPLY @43 GOTO 29
-  IF ~~ THEN REPLY @44 DO ~SetGlobal("IslandDialogue","GLOBAL",1) ~EXIT
+  IF ~~ THEN REPLY @44 DO ~SetGlobal("NWIslandDialogue","GLOBAL",1) ~EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 27.1
   SAY @54
   IF ~~ THEN REPLY @40 GOTO 26
-  IF ~  Global("LodarTalk","GLOBAL",2)~ THEN REPLY @42 GOTO 28
+  IF ~  Global("NWLodarTalk","GLOBAL",2)~ THEN REPLY @42 GOTO 28
   IF ~~ THEN REPLY @43 GOTO 29
-  IF ~~ THEN REPLY @44 DO ~SetGlobal("IslandDialogue","GLOBAL",1) ~EXIT
+  IF ~~ THEN REPLY @44 DO ~SetGlobal("NWIslandDialogue","GLOBAL",1) ~EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 28.1
   SAY @55
   IF ~~ THEN REPLY @40 GOTO 26
-  IF ~  GlobalGT("LodarTalk","GLOBAL",0)~ THEN REPLY @41 GOTO 27
+  IF ~  GlobalGT("NWLodarTalk","GLOBAL",0)~ THEN REPLY @41 GOTO 27
   IF ~~ THEN REPLY @43 GOTO 29
-  IF ~~ THEN REPLY @44 DO ~SetGlobal("IslandDialogue","GLOBAL",1) ~EXIT
+  IF ~~ THEN REPLY @44 DO ~SetGlobal("NWIslandDialogue","GLOBAL",1) ~EXIT
 END
 

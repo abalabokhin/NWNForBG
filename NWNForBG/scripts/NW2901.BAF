@@ -2,7 +2,7 @@ IF
 	Global("SharwynItem","MYAREA",0)
 	OR(2)
 		InParty("NWSHARWN")  // ??????
-		Global("SharwynReleased","GLOBAL",2)
+		Global("NWSharwynReleased","GLOBAL",2)
 THEN
 	RESPONSE #100
 		SetGlobal("SharwynItem","MYAREA",1)

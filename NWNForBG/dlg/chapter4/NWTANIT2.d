@@ -5,8 +5,8 @@ BEGIN ~NWTANIT2~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,1)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  GlobalGT("LuceJob","GLOBAL",1)~ THEN GOTO 1
-  IF ~  GlobalLT("LuceJob","GLOBAL",2)~ THEN GOTO 2
+  IF ~  GlobalGT("NWLuceJob","GLOBAL",1)~ THEN GOTO 1
+  IF ~  GlobalLT("NWLuceJob","GLOBAL",2)~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
@@ -22,8 +22,8 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(3,2)~ THEN BEGIN 3 // from:
   SAY @3
-  IF ~  GlobalGT("LuceJob","GLOBAL",1)~ THEN GOTO 4
-  IF ~  GlobalLT("LuceJob","GLOBAL",2)~ THEN GOTO 5
+  IF ~  GlobalGT("NWLuceJob","GLOBAL",1)~ THEN GOTO 4
+  IF ~  GlobalLT("NWLuceJob","GLOBAL",2)~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 4 // from: 3.1

@@ -3,7 +3,7 @@
 BEGIN ~NWIGLAN3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("IslandDialogue","GLOBAL",3)~ THEN BEGIN 0 // from:
+~  Global("NWIslandDialogue","GLOBAL",3)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN EXTERN ~NWROLGAN~ 13
 END
@@ -31,7 +31,7 @@ END
 // -----------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("IslandDialogue","GLOBAL",4)~ THEN BEGIN 5 // from:
+~  Global("NWIslandDialogue","GLOBAL",4)~ THEN BEGIN 5 // from:
   SAY @4
   IF ~~ THEN GOTO 6
 END
@@ -45,8 +45,8 @@ IF ~~ THEN BEGIN 7 // from: NWNEURI2 40.1
   SAY @6
   IF ~~ THEN REPLY @7 GOTO 8
   IF ~~ THEN REPLY @8 GOTO 9
-  IF ~  OR(2)Global("LodarTalk","GLOBAL",2)GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @9 GOTO 10
-  IF ~GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @10 GOTO 11
+  IF ~  OR(2)Global("NWLodarTalk","GLOBAL",2)GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @10 GOTO 11
   IF ~~ THEN REPLY @11 GOTO 12
   IF ~~ THEN REPLY @12 GOTO 13
   IF ~~ THEN REPLY @13 EXTERN ~NWNEURI2~ 47

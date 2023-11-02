@@ -12,8 +12,8 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
   IF ~~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @2 GOTO 2
@@ -51,15 +51,15 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
   SAY @16
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 8
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 9
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 8
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.5
   SAY @17
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
   IF ~~ THEN REPLY @2 GOTO 2
 END
@@ -67,8 +67,8 @@ END
 IF ~~ THEN BEGIN 8 // from: 6.1
   SAY @18
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @2 GOTO 2
 END
@@ -77,8 +77,8 @@ IF ~~ THEN BEGIN 9 // from: 6.2
   SAY @19
   IF ~~ THEN REPLY @20 GOTO 10
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @2 GOTO 2
 END

@@ -1,5 +1,5 @@
 IF
-	Global("KnowQuint","GLOBAL",1)
+	Global("NWKnowQuint","GLOBAL",1)
 	Global("QuintJournal","MYAREA",1)
 THEN
 	RESPONSE #100
@@ -10,7 +10,7 @@ THEN
 END
 
 IF
-	Global("KnowQuint","GLOBAL",1)
+	Global("NWKnowQuint","GLOBAL",1)
 	Global("QuintJournal","MYAREA",0)
 THEN
 	RESPONSE #100

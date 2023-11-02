@@ -50,8 +50,8 @@ IF ~~ THEN BEGIN 6 // from: 3.1
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15
   IF ~~ THEN REPLY @20 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.2
@@ -85,15 +85,15 @@ IF ~~ THEN BEGIN 13 // from: 8.1
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15
   IF ~~ THEN REPLY @20 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.2
   SAY @26
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 26
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 27
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 26
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 26 // from: 14.1
@@ -101,8 +101,8 @@ IF ~~ THEN BEGIN 26 // from: 14.1
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @19 GOTO 15
   IF ~~ THEN REPLY @20 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
@@ -111,8 +111,8 @@ IF ~~ THEN BEGIN 27 // from: 14.2
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @19 GOTO 15
   IF ~~ THEN REPLY @20 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
@@ -127,8 +127,8 @@ IF ~~ THEN BEGIN 28 // from: 15.1
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @20 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
@@ -137,15 +137,15 @@ IF ~~ THEN BEGIN 29 // from: 15.2
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @20 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
 IF ~~ THEN BEGIN 16 // from: 8.4
   SAY @32
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN GOTO 30
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN GOTO 31
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN GOTO 30
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 30 // from: 16.1
@@ -154,8 +154,8 @@ IF ~~ THEN BEGIN 30 // from: 16.1
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
@@ -164,8 +164,8 @@ IF ~~ THEN BEGIN 31 // from: 16.2
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
@@ -175,8 +175,8 @@ IF ~~ THEN BEGIN 10 // from: 30.1
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 
@@ -185,8 +185,8 @@ IF ~~ THEN BEGIN 11 // from: 10.1
   IF ~~ THEN REPLY @17 GOTO 13
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
-  IF ~  GlobalGT("PeninsulaDone","Global",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @14 GOTO 1
 END
 

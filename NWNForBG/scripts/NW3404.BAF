@@ -25,7 +25,7 @@ THEN
 END
 
 IF
-	Global("SucubusJob","GLOBAL",4)
+	Global("NWSucubusJob","GLOBAL",4)
 	OpenState("Door01",FALSE)
 THEN
 	RESPONSE #100

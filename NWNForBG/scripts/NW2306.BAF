@@ -1,20 +1,20 @@
 IF
-	Global("VanProt","GLOBAL",1)
+	Global("NWVanProt","GLOBAL",1)
 THEN
 	RESPONSE #100
 		TriggerActivation("TrapInfo",FALSE)
 		TriggerActivation("To2307",TRUE)
-		SetGlobal("VanProt","GLOBAL",2)
+		SetGlobal("NWVanProt","GLOBAL",2)
 		CreateVisualEffect("ICMAGICH",[644.750])
 		TakePartyItem("NWVSCROL")  // ?????? ?????? ?????????? ???????
 		DestroyItem("NWVSCROL")  // ?????? ?????? ?????????? ???????
 END
 
 IF
-	Global("WanevQuest","GLOBAL",5)
+	Global("NWWanevQuest","GLOBAL",5)
 THEN
 	RESPONSE #100
-		SetGlobal("WanevQuest","GLOBAL",6)
+		SetGlobal("NWWanevQuest","GLOBAL",6)
 		ClearAllActions()
 		StartCutSceneMode()
 		StartCutScene("NWTO2300")

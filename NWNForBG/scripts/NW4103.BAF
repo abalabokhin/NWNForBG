@@ -122,15 +122,15 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("ScreenSnake4103","MYAREA",1)
-		SetGlobalTimer("MoragTimer","GLOBAL",ONE_ROUND)
+		SetGlobalTimer("NWMoragTimer","GLOBAL",ONE_ROUND)
 END
 
 IF
-	GlobalTimerExpired("MoragTimer","GLOBAL")
+	GlobalTimerExpired("NWMoragTimer","GLOBAL")
 	Global("GoToNW4104","MYAREA",0)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("MoragTimer","GLOBAL",FIVE_ROUNDS)
+		SetGlobalTimer("NWMoragTimer","GLOBAL",FIVE_ROUNDS)
 		SetGlobal("GoToNW4104","MYAREA",1)
 		DisplayStringHead(Player1,@107545)  // ????? ??? ?????? ?????? ??????????? ? ??????. ???, ????????? ?????, ???????! 
 		ScreenShake([10.10],4)
@@ -148,11 +148,11 @@ THEN
 END
 
 IF
-	GlobalTimerExpired("MoragTimer","GLOBAL")
+	GlobalTimerExpired("NWMoragTimer","GLOBAL")
 	Global("GoToNW4104","MYAREA",2)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("MoragTimer","GLOBAL",FIVE_ROUNDS)
+		SetGlobalTimer("NWMoragTimer","GLOBAL",FIVE_ROUNDS)
 		ScreenShake([10.10],4)
 END
 

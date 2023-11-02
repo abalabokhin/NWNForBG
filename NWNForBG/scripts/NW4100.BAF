@@ -1,5 +1,5 @@
 IF
-	Global("AribetSurrendered","GLOBAL",1)
+	Global("NWAribetSurrendered","GLOBAL",1)
 	Global("AribethCreated","MYAREA",0)
 THEN
 	RESPONSE #100

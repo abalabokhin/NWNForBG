@@ -22,10 +22,10 @@ END
 
 IF
 	OpenState("Door01",TRUE)
-	!Global("NaxJob","GLOBAL",2)
+	!Global("NWNaxJob","GLOBAL",2)
 THEN
 	RESPONSE #100
-		SetGlobal("NaxJob","GLOBAL",2)
+		SetGlobal("NWNaxJob","GLOBAL",2)
 END
 
 IF

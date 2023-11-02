@@ -3,7 +3,7 @@
 BEGIN ~NWCONSTC~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~   GlobalGT("ErikQuest","GLOBAL",1)~ THEN BEGIN 0 // from:
+~   GlobalGT("NWErikQuest","GLOBAL",1)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN EXIT
 END
@@ -14,9 +14,9 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 ~   NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)~ THEN BEGIN 1 // from:
   SAY @1
   IF ~~ THEN REPLY @2 GOTO 50
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @4 GOTO 6
   IF ~~ THEN REPLY @5 GOTO 7
   IF ~~ THEN REPLY @6 GOTO 11
@@ -58,9 +58,9 @@ END
 IF ~~ THEN BEGIN 7 // from: 1.5
   SAY @17
   IF ~~ THEN REPLY @18 GOTO 13
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @7 GOTO 8
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @7 GOTO 14
@@ -81,8 +81,8 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 3.2
   SAY @24
-  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("PriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
-  IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("PriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
+  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("NWPriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
+  IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
   IF ~  PartyGoldGT(249)CheckStatLT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @26 GOTO 32
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @28 GOTO 21
@@ -91,7 +91,7 @@ END
 IF ~~ THEN BEGIN 11 // from: 4.1
   SAY @29
   IF ~~ THEN REPLY @30 GOTO 22
-  IF ~  Global("PeteQuest","GLOBAL",0)~ THEN REPLY @31 GOTO 23
+  IF ~  Global("NWPeteQuest","GLOBAL",0)~ THEN REPLY @31 GOTO 23
   IF ~~ THEN REPLY @32 GOTO 24
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @7 GOTO 8
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @7 GOTO 14
@@ -99,9 +99,9 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 6.1
   SAY @33
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @7 GOTO 8
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @7 GOTO 14
@@ -109,9 +109,9 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 6.2
   SAY @34
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @7 GOTO 8
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @7 GOTO 14
@@ -164,7 +164,7 @@ END
 
 IF ~~ THEN BEGIN 21
   SAY @45
-  IF ~  PartyGoldGT(249)~ THEN REPLY @46 DO ~TakePartyGold(250)SetGlobal("PriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 30
+  IF ~  PartyGoldGT(249)~ THEN REPLY @46 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 30
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @47 GOTO 31
 END
@@ -200,8 +200,8 @@ END
 IF ~~ THEN BEGIN 25 // from: 15.1
   SAY @62
   IF ~~ THEN REPLY @63 GOTO 44
-  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("PriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
-  IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("PriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
+  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("NWPriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
+  IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
   IF ~  PartyGoldGT(249)CheckStatLT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @26 GOTO 32
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @28 GOTO 21
@@ -220,14 +220,14 @@ END
 IF ~~ THEN BEGIN 28 // from: 17.1
   SAY @65
   IF ~~ THEN REPLY @66 GOTO 29
-  IF ~  PartyGoldGT(249)~ THEN REPLY @46 DO ~TakePartyGold(250)SetGlobal("PriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 30
+  IF ~  PartyGoldGT(249)~ THEN REPLY @46 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 30
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @47 GOTO 31
 END
 
 IF ~~ THEN BEGIN 29 // from: 16.2
   SAY @67
-  IF ~  PartyGoldGT(249)~ THEN REPLY @46 DO ~TakePartyGold(250)SetGlobal("PriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 30
+  IF ~  PartyGoldGT(249)~ THEN REPLY @46 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 30
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @47 GOTO 31
 END
@@ -246,7 +246,7 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 10.3
   SAY @70
-  IF ~  PartyGoldGT(399)~ THEN REPLY @71 DO ~TakePartyGold(250)SetGlobal("PriceM","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 33
+  IF ~  PartyGoldGT(399)~ THEN REPLY @71 DO ~TakePartyGold(250)SetGlobal("NWPriceM","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 33
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @28 GOTO 21
 END
@@ -370,8 +370,8 @@ END
 
 IF ~~ THEN BEGIN 45 // from: 44.1
   SAY @86
-  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("PriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
-  IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("PriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
+  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("NWPriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
+  IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
   IF ~  PartyGoldGT(249)CheckStatLT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @26 GOTO 32
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @28 GOTO 21
@@ -380,7 +380,7 @@ END
 IF ~~ THEN BEGIN 46 // from: 27.1
   SAY @87
   IF ~~ THEN REPLY @66 GOTO 47
-  IF ~  PartyGoldGT(399)~ THEN REPLY @71 DO ~TakePartyGold(250)SetGlobal("PriceM","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 33
+  IF ~  PartyGoldGT(399)~ THEN REPLY @71 DO ~TakePartyGold(250)SetGlobal("NWPriceM","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 33
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @28 GOTO 21
 END
@@ -388,7 +388,7 @@ END
 IF ~~ THEN BEGIN 47 // from: 46.1
   SAY @67
   IF ~~ THEN REPLY @88 GOTO 19
-  IF ~  PartyGoldGT(399)~ THEN REPLY @71 DO ~TakePartyGold(250)SetGlobal("PriceM","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 33
+  IF ~  PartyGoldGT(399)~ THEN REPLY @71 DO ~TakePartyGold(250)SetGlobal("NWPriceM","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 33
   IF ~~ THEN REPLY @27 GOTO 20
   IF ~~ THEN REPLY @28 GOTO 21
 END
@@ -415,9 +415,9 @@ IF ~~ THEN BEGIN 50 // from: 1.1
   SAY @91
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @4 GOTO 6
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @5 GOTO 7
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @7 GOTO 8
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @7 GOTO 14
@@ -429,18 +429,18 @@ IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this st
 ~   NumTimesTalkedTo(0)Gender(LastTalkedToBy,FEMALE)~ THEN BEGIN 51 // from:
   SAY @92
   IF ~~ THEN REPLY @2 GOTO 52
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~~ THEN REPLY @7 GOTO 14
 END
 
 IF ~~ THEN BEGIN 52 // from: 1.1
   SAY @91
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~~ THEN REPLY @7 GOTO 14
 END
@@ -448,11 +448,11 @@ END
 // ---------------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~   !NumTimesTalkedTo(0)GlobalLT("ErikQuest","GLOBAL",2)~ THEN BEGIN 53 // from:
+~   !NumTimesTalkedTo(0)GlobalLT("NWErikQuest","GLOBAL",2)~ THEN BEGIN 53 // from:
   SAY @93
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
-  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
-  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("ErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 2
+  IF ~  Global("Failure","LOCALS",0)Global("Success","LOCALS",1)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("Failure","LOCALS",1)Global("Success","LOCALS",0)Global("NWErikQuest","GLOBAL",1)~ THEN REPLY @3 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 11
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @7 GOTO 8
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @7 GOTO 14

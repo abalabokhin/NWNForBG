@@ -29,7 +29,7 @@ END
 IF
 	InMyArea("NWANDER")  // ?????
 	AreaCheck("NW2009")
-	Global("NeurikQuest","GLOBAL",4)
+	Global("NWNeurikQuest","GLOBAL",4)
 	See([PC])
 	Range([PC],20)
 THEN
@@ -39,7 +39,7 @@ END
 
 IF
 	AreaCheck("NW2009")
-	GlobalGT("NeurikQuest","GLOBAL",4)
+	GlobalGT("NWNeurikQuest","GLOBAL",4)
 THEN
 	RESPONSE #100
 		DestroySelf()

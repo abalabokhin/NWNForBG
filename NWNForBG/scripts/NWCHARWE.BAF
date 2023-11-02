@@ -1,5 +1,5 @@
 IF
-	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("NWCharwood_Is_Cursed","GLOBAL",1)
 THEN
 	RESPONSE #100
 		DestroySelf()

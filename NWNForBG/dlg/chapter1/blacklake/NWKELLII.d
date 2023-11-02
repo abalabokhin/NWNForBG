@@ -7,14 +7,14 @@ BEGIN ~NWKELLII~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("NWArenaBreak","GLOBAL",0)GlobalLT("NWArena","GLOBAL",4)Global("KellisaiTalk","MYAREA",0)IsGabber(Player1)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("NWArena","GLOBAL",0)!GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @1 GOTO 1
-  IF ~  Global("NWArena","GLOBAL",0)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @1 GOTO 22
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
+  IF ~  Global("NWArena","GLOBAL",0)!GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWArena","GLOBAL",0)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @1 GOTO 22
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
   IF ~~ THEN REPLY @3 GOTO 8
   IF ~~ THEN REPLY @4 GOTO 9
   IF ~~ THEN REPLY @5 GOTO 10
@@ -60,12 +60,12 @@ END
 IF ~~ THEN BEGIN 8 // from: 0.8
   SAY @16
   IF ~  Global("NWArena","GLOBAL",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
   IF ~~ THEN REPLY @4 GOTO 9
   IF ~~ THEN REPLY @5 GOTO 10
   IF ~~ THEN REPLY @6 GOTO 11
@@ -75,12 +75,12 @@ IF ~~ THEN BEGIN 9 // from: 0.9
   SAY @17
   IF ~~ THEN REPLY @18 GOTO 16
   IF ~  Global("NWArena","GLOBAL",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
   IF ~~ THEN REPLY @3 GOTO 8
   IF ~~ THEN REPLY @5 GOTO 10
   IF ~~ THEN REPLY @6 GOTO 11
@@ -123,12 +123,12 @@ END
 IF ~~ THEN BEGIN 16 // from: 9.1
   SAY @27
   IF ~  Global("NWArena","GLOBAL",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
-  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
-  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
-  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWArena","GLOBAL",1)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 3
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 4
+  IF ~  Global("NWArena","GLOBAL",2)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 5
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerNotExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 6
+  IF ~  Global("NWArena","GLOBAL",3)GlobalTimerExpired("NWNextRaundNW","GLOBAL")~ THEN REPLY @2 GOTO 7
   IF ~~ THEN REPLY @3 GOTO 8
   IF ~~ THEN REPLY @5 GOTO 10
   IF ~~ THEN REPLY @6 GOTO 11

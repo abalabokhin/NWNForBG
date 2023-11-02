@@ -3,7 +3,7 @@
 BEGIN ~NWJEMANE~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SectSign","GLOBAL",0)Global("MyRing","LOCALS",0)~ THEN BEGIN 0 // from:
+~  Global("NWSectSign","GLOBAL",0)Global("MyRing","LOCALS",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -56,13 +56,13 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 4.3
   SAY @20
-  IF ~  Global("SectSign","GLOBAL",0)~ THEN GOTO 13
-  IF ~  Global("SectSign","GLOBAL",1)~ THEN GOTO 14
+  IF ~  Global("NWSectSign","GLOBAL",0)~ THEN GOTO 13
+  IF ~  Global("NWSectSign","GLOBAL",1)~ THEN GOTO 14
 END
 
 IF ~~ THEN BEGIN 9 // from: 6.1
   SAY @21
-  IF ~    Global("SectSign","GLOBAL",0)~ THEN REPLY @22 GOTO 15
+  IF ~    Global("NWSectSign","GLOBAL",0)~ THEN REPLY @22 GOTO 15
   IF ~~ THEN REPLY @16 GOTO 10
   IF ~~ THEN REPLY @11 GOTO 7
   IF ~~ THEN REPLY @12 GOTO 8
@@ -89,7 +89,7 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 8.1
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("SectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @107623 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @107623 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.2
@@ -99,13 +99,13 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 9.1
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("SectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @107623 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSectSign","GLOBAL",1)GiveItem("NWMISC27",LastTalkedToBy)~ UNSOLVED_JOURNAL @107623 EXIT
 END
 
 // -------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SectSign","GLOBAL",1)Global("MyRing","LOCALS",0)~ THEN BEGIN 16 // from:
+~  Global("NWSectSign","GLOBAL",1)Global("MyRing","LOCALS",0)~ THEN BEGIN 16 // from:
   SAY @31
   IF ~  PartyHasItem("Nwring1")Global("MyRing","LOCALS",0)~ THEN REPLY @19 GOTO 12
   IF ~~ THEN REPLY @5 GOTO 4
@@ -115,7 +115,7 @@ END
 // -------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SectSign","GLOBAL",1)Global("MyRing","LOCALS",1)~ THEN BEGIN 17 // from:
+~  Global("NWSectSign","GLOBAL",1)Global("MyRing","LOCALS",1)~ THEN BEGIN 17 // from:
   SAY @32
   IF ~~ THEN EXIT
 END

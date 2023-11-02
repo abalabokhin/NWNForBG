@@ -1,9 +1,9 @@
 IF
-	GlobalLT("SedosQuest","GLOBAL",3)
-	GlobalGT("SedosQuest","GLOBAL",0)
+	GlobalLT("NWSedosQuest","GLOBAL",3)
+	GlobalGT("NWSedosQuest","GLOBAL",0)
 	Dead("NWCREWT2")  // ???????
 THEN
 	RESPONSE #100
-		SetGlobal("SedosQuest","GLOBAL",3)
+		SetGlobal("NWSedosQuest","GLOBAL",3)
 END
 

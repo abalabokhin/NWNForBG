@@ -1,5 +1,5 @@
 IF
-	GlobalGT("SolomonRing","GLOBAL",1)
+	GlobalGT("NWSolomonRing","GLOBAL",1)
 	InMyArea("NWSOLOMN")  // ???????
 THEN
 	RESPONSE #100
@@ -7,7 +7,7 @@ THEN
 END
 
 IF
-	GlobalGT("GoToLuskan","GLOBAL",0)
+	GlobalGT("NWGoToLuskan","GLOBAL",0)
 	InMyArea("NWDARKTG")  // ????????? ????????
 THEN
 	RESPONSE #100

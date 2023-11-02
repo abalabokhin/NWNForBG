@@ -1,8 +1,8 @@
 IF
 	Global("ALHELOR_SPAWN","MYAREA",0)
 	OR(2)
-		Global("NeurikQuest","GLOBAL",7)
-		Global("NeurikQuest","GLOBAL",8)
+		Global("NWNeurikQuest","GLOBAL",7)
+		Global("NWNeurikQuest","GLOBAL",8)
 THEN
 	RESPONSE #100
 		SetGlobal("ALHELOR_SPAWN","MYAREA",1)

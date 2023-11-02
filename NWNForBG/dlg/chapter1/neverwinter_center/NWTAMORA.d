@@ -6,7 +6,7 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
 ~  Gender(LastTalkedToBy(Myself),MALE)NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("TamoraQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWTamoraQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
 END
@@ -16,7 +16,7 @@ IF ~~ THEN BEGIN 1 // from: 0.1
   IF ~  PartyHasItem("NWOPPERT")IsGabber(Player1)~ THEN REPLY @6 GOTO 5
   IF ~  PartyHasItem("NWOPPERT")!IsGabber(Player1)~ THEN REPLY @7 GOTO 49
   IF ~~ THEN REPLY @8 GOTO 6
-  IF ~  Global("TamoraQuest","GLOBAL",0)~ THEN REPLY @9 GOTO 18
+  IF ~  Global("NWTamoraQuest","GLOBAL",0)~ THEN REPLY @9 GOTO 18
   IF ~~ THEN REPLY @4 GOTO 4
 END
 
@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN 2 // from: 0.2
   IF ~  PartyHasItem("NWOPPERT")IsGabber(Player1)~ THEN REPLY @6 GOTO 5
   IF ~  PartyHasItem("NWOPPERT")!IsGabber(Player1)~ THEN REPLY @7 GOTO 49
   IF ~~ THEN REPLY @8 GOTO 6
-  IF ~  Global("TamoraQuest","GLOBAL",0)~ THEN REPLY @9 GOTO 18
+  IF ~  Global("NWTamoraQuest","GLOBAL",0)~ THEN REPLY @9 GOTO 18
   IF ~~ THEN REPLY @4 GOTO 4
 END
 
@@ -35,7 +35,7 @@ IF ~~ THEN BEGIN 3 // from: 0.3
   IF ~  PartyHasItem("NWOPPERT")IsGabber(Player1)~ THEN REPLY @6 GOTO 5
   IF ~  PartyHasItem("NWOPPERT")!IsGabber(Player1)~ THEN REPLY @7 GOTO 49
   IF ~~ THEN REPLY @8 GOTO 6
-  IF ~  Global("TamoraQuest","GLOBAL",0)~ THEN REPLY @9 GOTO 18
+  IF ~  Global("NWTamoraQuest","GLOBAL",0)~ THEN REPLY @9 GOTO 18
   IF ~~ THEN REPLY @4 GOTO 4
 END
 
@@ -255,7 +255,7 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 22.1
   SAY @65
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(40000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(40000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 22.2
@@ -267,12 +267,12 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 22.3
   SAY @67
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",1)GiveItem("Nwmisc19",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",1)GiveItem("Nwmisc19",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 15.4
   SAY @68
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",1)GiveItem("Nwmisc19",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",1)GiveItem("Nwmisc19",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 23.1
@@ -285,12 +285,12 @@ END
 // -------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Gender(LastTalkedToBy(Myself),MALE)Global("HoffHasMisc19","GLOBAL",0)~ THEN BEGIN 33 // from:
+~  Gender(LastTalkedToBy(Myself),MALE)Global("NWHoffHasMisc19","GLOBAL",0)~ THEN BEGIN 33 // from:
   SAY @70
   IF ~  Global("TamoraTired","MYAREA",0)~ THEN REPLY @71 GOTO 1
   IF ~  GlobalGT("TamoraTired","MYAREA",0)~ THEN REPLY @71 GOTO 34
-  IF ~  Global("TamoraQuest","GLOBAL",0)~ THEN REPLY @72 GOTO 35
-  IF ~  Global("TamoraQuest","GLOBAL",1)~ THEN REPLY @73 GOTO 36
+  IF ~  Global("NWTamoraQuest","GLOBAL",0)~ THEN REPLY @72 GOTO 35
+  IF ~  Global("NWTamoraQuest","GLOBAL",1)~ THEN REPLY @73 GOTO 36
   IF ~~ THEN REPLY @4 GOTO 4
 END
 
@@ -311,29 +311,29 @@ IF ~~ THEN BEGIN 36 // from: 33.4
   SAY @76
   IF ~  Dead("NWHOFF")PartyHasItem("Nwmisc19")~ THEN REPLY @77 GOTO 37
   IF ~  Dead("NWHOFF")!PartyHasItem("Nwmisc19")~ THEN REPLY @78 GOTO 38
-  IF ~  Global("HoffScared","GLOBAL",1)!Dead("NWHOFF")PartyHasItem("Nwmisc19")~ THEN REPLY @79 GOTO 39
-  IF ~  Global("HoffScared","GLOBAL",1)!Dead("NWHOFF")!PartyHasItem("Nwmisc19")~ THEN REPLY @80 GOTO 40
+  IF ~  Global("NWHoffScared","GLOBAL",1)!Dead("NWHOFF")PartyHasItem("Nwmisc19")~ THEN REPLY @79 GOTO 39
+  IF ~  Global("NWHoffScared","GLOBAL",1)!Dead("NWHOFF")!PartyHasItem("Nwmisc19")~ THEN REPLY @80 GOTO 40
   IF ~~ THEN REPLY @81 GOTO 41
 END
 
 IF ~~ THEN BEGIN 37 // from: 36.1
   SAY @65
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(60000)TakePartyItem("Nwmisc19")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(60000)TakePartyItem("Nwmisc19")~ EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 36.2
   SAY @65
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(50000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(50000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 36.3
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(40000)TakePartyItem("Nwmisc19")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(40000)TakePartyItem("Nwmisc19")~ EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 36.4
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(30000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(30000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 41 // from: 36.1
@@ -352,7 +352,7 @@ END
 // ----------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Gender(LastTalkedToBy(Myself),MALE)GlobalGT("TamoraTired","MYAREA",0)!Global("TamoraQuest","GLOBAL",1)!Global("TamoraQuest","GLOBAL",9)~ THEN BEGIN 43 // from:
+~  Gender(LastTalkedToBy(Myself),MALE)GlobalGT("TamoraTired","MYAREA",0)!Global("NWTamoraQuest","GLOBAL",1)!Global("NWTamoraQuest","GLOBAL",9)~ THEN BEGIN 43 // from:
   SAY @85
   IF ~~ THEN EXIT
 END
@@ -360,7 +360,7 @@ END
 // ----------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Gender(LastTalkedToBy(Myself),MALE)Global("TamoraQuest","GLOBAL",1)Global("HoffHasMisc19","GLOBAL",1)~ THEN BEGIN 44 // from:
+~  Gender(LastTalkedToBy(Myself),MALE)Global("NWTamoraQuest","GLOBAL",1)Global("NWHoffHasMisc19","GLOBAL",1)~ THEN BEGIN 44 // from:
   SAY @86
   IF ~  PartyHasItem("Nwmisc19")!Dead("NWHOFF")~ THEN REPLY @87 GOTO 45
   IF ~  PartyHasItem("Nwmisc19")Dead("NWHOFF")~ THEN REPLY @88 GOTO 46
@@ -369,23 +369,23 @@ END
 
 IF ~~ THEN BEGIN 45 // from: 44.1
   SAY @90
-  IF ~~ THEN DO ~SetGlobal("HoffHasMisc19","GLOBAL",0)SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(30000)TakePartyItem("Nwmisc19")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHoffHasMisc19","GLOBAL",0)SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(30000)TakePartyItem("Nwmisc19")~ EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 44.2
   SAY @91
-  IF ~~ THEN DO ~SetGlobal("HoffHasMisc19","GLOBAL",0)SetGlobal("TamoraQuest","GLOBAL",2)AddexperienceParty(50000)TakePartyItem("Nwmisc19")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHoffHasMisc19","GLOBAL",0)SetGlobal("NWTamoraQuest","GLOBAL",2)AddexperienceParty(50000)TakePartyItem("Nwmisc19")~ EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 44.3
   SAY @92
-  IF ~~ THEN DO ~SetGlobal("TamoraQuest","GLOBAL",9)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTamoraQuest","GLOBAL",9)~ EXIT
 END
 
 // ----------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Gender(LastTalkedToBy(Myself),MALE)Global("TamoraQuest","GLOBAL",9)~ THEN BEGIN 48 // from:
+~  Gender(LastTalkedToBy(Myself),MALE)Global("NWTamoraQuest","GLOBAL",9)~ THEN BEGIN 48 // from:
   SAY @86
   IF ~~ THEN EXIT
 END

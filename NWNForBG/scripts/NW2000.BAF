@@ -21,10 +21,10 @@ THEN
 END
 
 IF
-	Global("SolomonRing","GLOBAL",1)
+	Global("NWSolomonRing","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("SolomonRing","GLOBAL",2)
+		SetGlobal("NWSolomonRing","GLOBAL",2)
 END
 
 IF
@@ -38,7 +38,7 @@ THEN
 END
 
 IF
-	Global("AarinTalk","GLOBAL",1)
+	Global("NWAarinTalk","GLOBAL",1)
 	Global("SONFPL2Exists","NW2000",0)
 	AreaCheck("NW2000")
 	InMyArea(Player1)
@@ -51,26 +51,26 @@ END
 IF
 	Gender(Player1,MALE)
 	Dead("NWSOLOMN")  // ???????
-	Global("JahelSpawn","GLOBAL",0)
+	Global("NWJahelSpawn","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("JahelSpawn","GLOBAL",1)
+		SetGlobal("NWJahelSpawn","GLOBAL",1)
 		CreateCreature("NWJAHEL",[4538.1899],0)  // ???????
 END
 
 IF
 	Gender(Player1,FEMALE)
 	Dead("NWSOLOMN")  // ???????
-	Global("TaranSpawn","GLOBAL",0)
+	Global("NWTaranSpawn","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("TaranSpawn","GLOBAL",1)
+		SetGlobal("NWTaranSpawn","GLOBAL",1)
 		CreateCreature("NWTARAN",[4538.1899],0)  // ??????
 END
 
 IF
 	OR(2)
-		Global("SearchNeva","GLOBAL",3)
+		Global("NWSearchNeva","GLOBAL",3)
 		Dead("NWNEVA")  // ????
 	InMyArea("NWJAHEL")  // ???????
 THEN
@@ -80,7 +80,7 @@ END
 
 IF
 	OR(2)
-		Global("SearchNeva","GLOBAL",3)
+		Global("NWSearchNeva","GLOBAL",3)
 		Dead("NWNEVA")  // ????
 	InMyArea("NWTARAN")  // ??????
 THEN

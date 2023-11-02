@@ -27,7 +27,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 4.1 1.1
   SAY @7
-  IF ~~ THEN DO ~SetGlobal("Messenger_of_Neverwinter","GLOBAL",2)
+  IF ~~ THEN DO ~SetGlobal("NWMessenger_of_Neverwinter","GLOBAL",2)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWTON")

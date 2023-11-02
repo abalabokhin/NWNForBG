@@ -9,7 +9,7 @@ END
 // -----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 35 even though they appear after this state */
-~Global("KickedOut","LOCALS",0)Global("LinaEscape","GLOBAL",0)~ THEN BEGIN 0 // from:
+~Global("KickedOut","LOCALS",0)Global("NWLinaEscape","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @1
   IF ~~ THEN REPLY @2 GOTO 1
   IF ~~ THEN REPLY @3 DO ~JoinParty()~ EXIT
@@ -22,13 +22,13 @@ MoveGlobal("NW1012","NWLINA",[603.220])~ EXIT
   IF ~  Global("NWNChapter","GLOBAL",2)~ THEN REPLY @6 DO ~SetGlobal("KickedOut","LOCALS",1)
 MoveGlobal("NW2020","NWLINA",[668.390])~ EXIT
   IF ~  !Global("NWNChapter","GLOBAL",2)~ THEN REPLY @7 DO ~SetGlobal("KickedOut","LOCALS",1)~ EXIT
-  IF ~  Global("NWNChapter","GLOBAL",2)~ THEN REPLY @7 DO ~SetGlobal("KickedOut","LOCALS",1)SetGlobal("LinaOut","GLOBAL",1)~ EXIT
+  IF ~  Global("NWNChapter","GLOBAL",2)~ THEN REPLY @7 DO ~SetGlobal("KickedOut","LOCALS",1)SetGlobal("NWLinaOut","GLOBAL",1)~ EXIT
 END
 
 // -----------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 35 even though they appear after this state */
-~Global("KickedOut","LOCALS",1)Global("LinaEscape","GLOBAL",0)~ THEN BEGIN 2 // from:
+~Global("KickedOut","LOCALS",1)Global("NWLinaEscape","GLOBAL",0)~ THEN BEGIN 2 // from:
   SAY @8
   IF ~~ THEN REPLY @9 GOTO 3
   IF ~~ THEN REPLY @10 GOTO 4
@@ -36,7 +36,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
   SAY @11
-  IF ~~ THEN DO ~SetGlobal("LinaOut","GLOBAL",0)SetGlobal("KickedOut","LOCALS",0)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaOut","GLOBAL",0)SetGlobal("KickedOut","LOCALS",0)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.2
@@ -47,7 +47,7 @@ END
 // --------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("LinaReleased","GLOBAL",1)~ THEN BEGIN 38 // from:
+~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("NWLinaReleased","GLOBAL",1)~ THEN BEGIN 38 // from:
   SAY @13
   IF ~~ THEN REPLY @14 GOTO 39
   IF ~~ THEN REPLY @15 GOTO 40
@@ -84,7 +84,7 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 42.2
   SAY @26
-  IF ~~ THEN DO ~SetGlobal("LinaEscape","GLOBAL",0)SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("LinaReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaEscape","GLOBAL",0)SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("NWLinaReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 43.1
@@ -133,7 +133,7 @@ END
 
 IF ~~ THEN BEGIN 52 // from: 49.2
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("LinaEscape","GLOBAL",0)SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("LinaReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaEscape","GLOBAL",0)SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("NWLinaReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 53 // from: 51.1
@@ -157,7 +157,7 @@ END
 // --------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("LinaReleased","GLOBAL",1)~ THEN BEGIN 59 // from:
+~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("NWLinaReleased","GLOBAL",1)~ THEN BEGIN 59 // from:
   SAY @53
   IF ~~ THEN REPLY @45 GOTO 53
   IF ~~ THEN REPLY @46 GOTO 54

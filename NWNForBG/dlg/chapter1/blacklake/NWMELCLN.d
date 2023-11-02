@@ -41,8 +41,8 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
   SAY @16
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)!Dead("NWFORMOA")~ THEN REPLY @17 GOTO 12
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("NWFORMOA")~ THEN REPLY @17 GOTO 20
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",1)!Dead("NWFORMOA")~ THEN REPLY @17 GOTO 12
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)!Dead("NWFORMOA")~ THEN REPLY @17 GOTO 20
   IF ~  Dead("NWFORMOA")~ THEN REPLY @17 GOTO 21
   IF ~~ THEN REPLY @18 GOTO 13
   IF ~~ THEN REPLY @19 GOTO 14

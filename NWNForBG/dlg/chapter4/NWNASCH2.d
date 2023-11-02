@@ -41,8 +41,8 @@ END
 IF ~~ THEN BEGIN 7 // from: 6.1
   SAY @7
   IF ~~ THEN REPLY @8 GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
@@ -51,10 +51,10 @@ IF ~~ THEN BEGIN 8 // from: 7.1
   IF ~~ THEN REPLY @12 GOTO 12
   IF ~~ THEN REPLY @13 GOTO 13
   IF ~~ THEN REPLY @14 GOTO 14
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 15
-  IF ~  Global("AribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 24
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  GlobalGT("NWAribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 15
+  IF ~  Global("NWAribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 24
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 9 // from: 7.2
@@ -84,9 +84,9 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 8.4
   SAY @21
-  IF ~  !Dead("NWMAUGRM")Global("AribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN GOTO 21
-  IF ~  Dead("NWMAUGRM")OR(2)GlobalGT("AribetSurrendered","GLOBAL",0)Dead("NWARIBEH")~ THEN GOTO 22
-  IF ~  !Dead("NWMAUGRM")OR(2)GlobalGT("AribetSurrendered","GLOBAL",0)Dead("NWARIBEH")~ THEN GOTO 23
+  IF ~  !Dead("NWMAUGRM")Global("NWAribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN GOTO 21
+  IF ~  Dead("NWMAUGRM")OR(2)GlobalGT("NWAribetSurrendered","GLOBAL",0)Dead("NWARIBEH")~ THEN GOTO 22
+  IF ~  !Dead("NWMAUGRM")OR(2)GlobalGT("NWAribetSurrendered","GLOBAL",0)Dead("NWARIBEH")~ THEN GOTO 23
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.5
@@ -113,8 +113,8 @@ IF ~~ THEN BEGIN 19 // from: 12.1
   SAY @26
   IF ~~ THEN REPLY @27 GOTO 28
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 20 // from: 13.1
@@ -159,8 +159,8 @@ IF ~~ THEN BEGIN 27 // from: 18.1
   IF ~~ THEN REPLY @38 GOTO 36
   IF ~~ THEN REPLY @39 GOTO 37
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 28 // from: 19.1
@@ -174,19 +174,19 @@ IF ~~ THEN BEGIN 29 // from: 19.2
   IF ~~ THEN REPLY @12 GOTO 12
   IF ~~ THEN REPLY @13 GOTO 13
   IF ~~ THEN REPLY @14 GOTO 14
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 15
-  IF ~  Global("AribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 24
+  IF ~  GlobalGT("NWAribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 15
+  IF ~  Global("NWAribetSurrendered","GLOBAL",0)!Dead("NWARIBEH")~ THEN REPLY @15 GOTO 24
   IF ~~ THEN REPLY @42 GOTO 39
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 30 // from: 20.1
   SAY @43
   IF ~~ THEN REPLY @27 GOTO 28
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 31 // from: 21.1
@@ -198,16 +198,16 @@ IF ~~ THEN BEGIN 32 // from: 21.2
   SAY @45
   IF ~~ THEN REPLY @31 GOTO 31
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 33 // from: 22.1
   SAY @46
   IF ~~ THEN REPLY @47 GOTO 41
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 34 // from: NWAARIN3.5
@@ -226,8 +226,8 @@ IF ~~ THEN BEGIN 36 // from: 27.1
   SAY @53
   IF ~~ THEN REPLY @39 GOTO 37
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 37 // from: 27.2
@@ -239,8 +239,8 @@ IF ~~ THEN BEGIN 38 // from: 28.1
   SAY @55
   IF ~~ THEN REPLY @11 GOTO 11
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 39 // from: 29.7
@@ -267,8 +267,8 @@ IF ~~ THEN BEGIN 43 // from: 37.1
   SAY @60
   IF ~~ THEN REPLY @38 GOTO 36
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 44 // from: 39.1
@@ -279,8 +279,8 @@ END
 IF ~~ THEN BEGIN 45 // from: 44.1
   SAY @62
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 46 // from: 40.1
@@ -293,23 +293,23 @@ IF ~~ THEN BEGIN 47 // from: 41.1
   IF ~~ THEN REPLY @65 GOTO 50
   IF ~~ THEN REPLY @66 GOTO 50
   IF ~~ THEN REPLY @67 GOTO 50
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 51
-  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 52
+  IF ~  GlobalGT("NWAribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 51
+  IF ~  Global("NWAribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 52
 END
 
 IF ~~ THEN BEGIN 48 // from: NWAARIN3.7
   SAY @69
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 49 // from: 46.1
   SAY @70
   IF ~~ THEN REPLY @47 GOTO 41
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 50 // from: 47.1
@@ -346,19 +346,19 @@ END
 IF ~~ THEN BEGIN 56 // from: 52.1
   SAY @78
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 57 // from: 53.1
   SAY @79
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 51
-  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 52
-  IF ~  GlobalGT("AribetSurrendered","GLOBAL",0)~ THEN REPLY @80 GOTO 51
-  IF ~  Global("AribetSurrendered","GLOBAL",0)~ THEN REPLY @80 GOTO 52
+  IF ~  GlobalGT("NWAribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 51
+  IF ~  Global("NWAribetSurrendered","GLOBAL",0)~ THEN REPLY @68 GOTO 52
+  IF ~  GlobalGT("NWAribetSurrendered","GLOBAL",0)~ THEN REPLY @80 GOTO 51
+  IF ~  Global("NWAribetSurrendered","GLOBAL",0)~ THEN REPLY @80 GOTO 52
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 58 // from: 54.1
@@ -374,21 +374,21 @@ END
 IF ~~ THEN BEGIN 60 // from: 58.1
   SAY @83
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 61 // from: 59.1
   SAY @84
   IF ~~ THEN REPLY @28 GOTO 29
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("AribetSurrendered","GLOBAL",0)!Dead("NWMORAG")~ THEN BEGIN 62 // from:
+~  !NumTimesTalkedTo(0)Global("NWAribetSurrendered","GLOBAL",0)!Dead("NWMORAG")~ THEN BEGIN 62 // from:
   SAY @85
   IF ~~ THEN GOTO 63
 END
@@ -396,14 +396,14 @@ END
 IF ~~ THEN BEGIN 63 // from: 62.1
   SAY @86
   IF ~~ THEN REPLY @8 GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalGT("AribetSurrendered","GLOBAL",0)!Dead("NWMORAG")~ THEN BEGIN 64 // from:
+~  !NumTimesTalkedTo(0)GlobalGT("NWAribetSurrendered","GLOBAL",0)!Dead("NWMORAG")~ THEN BEGIN 64 // from:
   SAY @87
   IF ~~ THEN GOTO 65
 END
@@ -413,8 +413,8 @@ IF ~~ THEN BEGIN 65 // from: 64.1
   IF ~~ THEN REPLY @89 GOTO 71
   IF ~~ THEN REPLY @90 GOTO 73
   IF ~~ THEN REPLY @8 GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 // ------------------------------------------------------------
@@ -427,8 +427,8 @@ END
 
 IF ~~ THEN BEGIN 67 // from: 66.1
   SAY @91
-  IF ~  Global("Chapter4End","GLOBAL",0)~ THEN DO ~SetGlobal("Chapter4End","GLOBAL",1)AddexperienceParty(500000)~ EXIT
-  IF ~  !Global("Chapter4End","GLOBAL",0)~ THEN EXIT
+  IF ~  Global("NWChapter4End","GLOBAL",0)~ THEN DO ~SetGlobal("NWChapter4End","GLOBAL",1)AddexperienceParty(500000)~ EXIT
+  IF ~  !Global("NWChapter4End","GLOBAL",0)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 68 // NWAARIN3.13
@@ -454,8 +454,8 @@ END
 IF ~~ THEN BEGIN 72 // from: 71.1
   SAY @96
   IF ~~ THEN REPLY @8 GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END
 
 IF ~~ THEN BEGIN 73 // from: 65.2
@@ -472,6 +472,6 @@ IF ~~ THEN BEGIN 75 // from: 74.1
   SAY @99
   IF ~~ THEN REPLY @89 GOTO 71
   IF ~~ THEN REPLY @8 GOTO 8
-  IF ~  Global("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
-  IF ~  GlobalGT("HaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
+  IF ~  Global("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 9
+  IF ~  GlobalGT("NWHaedralinJob","GLOBAL",0)~ THEN REPLY @9 GOTO 10
 END

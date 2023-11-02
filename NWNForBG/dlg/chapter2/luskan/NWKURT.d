@@ -1,6 +1,6 @@
 // Лускан Доки Высший капитан Курт Этот грубый воин держится уверенно, как человек, одержавший в своей жизни много побед и потерпевший очень мало поражений.
 
-// Global("KnowKurt","GLOBAL",2) - За 1500    Global("KnowKurt","GLOBAL",1) - без торга
+// Global("NWKnowKurt","GLOBAL",2) - За 1500    Global("NWKnowKurt","GLOBAL",1) - без торга
 
 BEGIN ~NWKURT~
 
@@ -13,8 +13,8 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @1
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @4 GOTO 5
   IF ~~ THEN REPLY @5 GOTO 6
 END
@@ -22,10 +22,10 @@ END
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @6
   IF ~~ THEN REPLY @7 GOTO 7
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
-  IF ~  GlobalGT("KnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
+  IF ~  GlobalGT("NWKnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~  LevelGT(Player1,16)~ THEN REPLY @10 GOTO 9
   IF ~  LevelLT(Player1,17)~ THEN REPLY @10 GOTO 17
   IF ~~ THEN REPLY @11 GOTO 10
@@ -36,15 +36,15 @@ IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @12
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @13 GOTO 11
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @13 GOTO 12
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @4 GOTO 5
   IF ~~ THEN REPLY @14 GOTO 89
 END
 
 IF ~~ THEN BEGIN 89 // from: 0.3
   SAY @15
-IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",1)~ EXIT
+IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
@@ -56,23 +56,23 @@ END
 IF ~~ THEN BEGIN 5 // from: 3.1
   SAY @19
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
-  IF ~  GlobalGT("KnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  GlobalGT("NWKnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 6
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.2
   SAY @20
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
   SAY @21
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
-  IF ~  GlobalGT("KnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
+  IF ~  GlobalGT("NWKnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~  LevelGT(Player1,16)~ THEN REPLY @10 GOTO 9
   IF ~  LevelLT(Player1,17)~ THEN REPLY @10 GOTO 17
   IF ~~ THEN REPLY @11 GOTO 10
@@ -88,8 +88,8 @@ END
 IF ~~ THEN BEGIN 9 // from: 1500
   SAY @25
   IF ~~ THEN REPLY @26 GOTO 18
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @11 GOTO 21
   IF ~~ THEN REPLY @27 GOTO 22
 END
@@ -98,7 +98,7 @@ IF ~~ THEN BEGIN 10 // from: 0.2
   SAY @28
   IF ~~ THEN REPLY @26 GOTO 23
   IF ~~ THEN REPLY @29 GOTO 24
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
   IF ~~ THEN REPLY @30 GOTO 26
   IF ~~ THEN REPLY @31 GOTO 27
 END
@@ -113,29 +113,29 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 0.3
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 0.4
   SAY @38
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",1)~ THEN REPLY @39 DO ~SetGlobal("NWELYYD","GLOBAL",2)~ GOTO 32
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @40 DO ~SetGlobal("NWELYYD","GLOBAL",2)~ GOTO 33
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",1)~ THEN REPLY @39 DO ~SetGlobal("NWELYYD","GLOBAL",2)~ GOTO 32
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @40 DO ~SetGlobal("NWELYYD","GLOBAL",2)~ GOTO 33
   IF ~~ THEN REPLY @41 GOTO 34
   IF ~~ THEN REPLY @42 GOTO 35
 END
 
 IF ~~ THEN BEGIN 14 // from: 0.4
   SAY @43
-  IF ~  Global("KurtOuest","GLOBAL",1)~ THEN GOTO 36
-  IF ~  Global("KurtOuest","GLOBAL",0)~ THEN GOTO 37
+  IF ~  Global("NWKurtOuest","GLOBAL",1)~ THEN GOTO 36
+  IF ~  Global("NWKurtOuest","GLOBAL",0)~ THEN GOTO 37
 END
 
 IF ~~ THEN BEGIN 15 // from: 6.1
   SAY @44
   IF ~~ THEN REPLY @26 GOTO 23
-  IF ~  GlobalGT("KnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  GlobalGT("NWKnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~  LevelGT(Player1,16)~ THEN REPLY @10 GOTO 9
   IF ~  LevelLT(Player1,17)~ THEN REPLY @10 GOTO 17
   IF ~~ THEN REPLY @11 GOTO 10
@@ -145,9 +145,9 @@ END
 IF ~~ THEN BEGIN 16 // from: 6.1
   SAY @45
   IF ~~ THEN REPLY @26 GOTO 23
-  IF ~  GlobalGT("KnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  GlobalGT("NWKnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~  LevelGT(Player1,16)~ THEN REPLY @10 GOTO 9
   IF ~  LevelLT(Player1,17)~ THEN REPLY @10 GOTO 17
   IF ~~ THEN REPLY @11 GOTO 10
@@ -156,17 +156,17 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 0.2
   SAY @46
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
-  IF ~  GlobalGT("KnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 4
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 8
+  IF ~  GlobalGT("NWKnowKurt","GLOBAL",0)~ THEN REPLY @9 GOTO 3
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 4
   IF ~~ THEN REPLY @11 GOTO 10
   IF ~~ THEN REPLY @5 GOTO 6
 END
 
 IF ~~ THEN BEGIN 18 // 1500
   SAY @21
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @11 GOTO 21
   IF ~~ THEN REPLY @27 GOTO 22
 END
@@ -187,20 +187,20 @@ IF ~~ THEN BEGIN 21 // from: 0.2
   SAY @28
   IF ~~ THEN REPLY @26 GOTO 42
   IF ~~ THEN REPLY @29 GOTO 43
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 44
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 44
   IF ~~ THEN REPLY @30 GOTO 45
   IF ~~ THEN REPLY @31 GOTO 46
 END
 
 IF ~~ THEN BEGIN 22 // 1500
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 0.2
   SAY @21
   IF ~~ THEN REPLY @29 GOTO 24
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 25
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 25
   IF ~~ THEN REPLY @30 GOTO 26
   IF ~~ THEN REPLY @31 GOTO 27
 END
@@ -223,19 +223,19 @@ END
 
 IF ~~ THEN BEGIN 26 // from: 0.2
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 0.2
   SAY @56
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",1)SetGlobal("KurtQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101329 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",1)SetGlobal("NWKurtQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101329 EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 0.2
   SAY @58
   IF ~~ THEN REPLY @26 GOTO 18
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @11 GOTO 21
   IF ~~ THEN REPLY @27 GOTO 22
 END
@@ -243,8 +243,8 @@ END
 IF ~~ THEN BEGIN 29 // from: 0.2
   SAY @59
   IF ~~ THEN REPLY @26 GOTO 18
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @11 GOTO 21
   IF ~~ THEN REPLY @27 GOTO 22
 END
@@ -252,15 +252,15 @@ END
 IF ~~ THEN BEGIN 30 // from: 0.2
   SAY @60
   IF ~~ THEN REPLY @26 GOTO 18
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 19
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @11 GOTO 21
   IF ~~ THEN REPLY @27 GOTO 22
 END
 
 IF ~~ THEN BEGIN 31 // from: 0.3
   SAY @61
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 0.4
@@ -279,12 +279,12 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 0.4
   SAY @67
-  IF ~~ THEN DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 0.4
   SAY @68
-  IF ~~ THEN DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 0.4
@@ -319,22 +319,22 @@ END
 
 IF ~~ THEN BEGIN 40 // 1500
   SAY @38
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",1)~ THEN REPLY @75 DO ~SetGlobal("NWELYYD","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")SetGlobal("KurtQuest","GLOBAL",2)AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 57
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @40 DO ~SetGlobal("NWELYYD","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")SetGlobal("KurtQuest","GLOBAL",2)AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 58
-  IF ~~ THEN REPLY @41 DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 59
-  IF ~~ THEN REPLY @42 DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 60
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",1)~ THEN REPLY @75 DO ~SetGlobal("NWELYYD","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")SetGlobal("NWKurtQuest","GLOBAL",2)AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 57
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @40 DO ~SetGlobal("NWELYYD","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")SetGlobal("NWKurtQuest","GLOBAL",2)AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 58
+  IF ~~ THEN REPLY @41 DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 59
+  IF ~~ THEN REPLY @42 DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1500)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ GOTO 60
 END
 
 IF ~~ THEN BEGIN 41 // 1500
   SAY @43
-  IF ~  Global("KurtOuest","GLOBAL",1)~ THEN GOTO 61
-  IF ~  Global("KurtOuest","GLOBAL",0)~ THEN GOTO 62
+  IF ~  Global("NWKurtOuest","GLOBAL",1)~ THEN GOTO 61
+  IF ~  Global("NWKurtOuest","GLOBAL",0)~ THEN GOTO 62
 END
 
 IF ~~ THEN BEGIN 42 // from: 1500
   SAY @21
   IF ~~ THEN REPLY @29 GOTO 43
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 44
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 44
   IF ~~ THEN REPLY @30 GOTO 45
   IF ~~ THEN REPLY @31 GOTO 46
 END
@@ -357,12 +357,12 @@ END
 
 IF ~~ THEN BEGIN 45 // 1500
   SAY @77
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 46 // 1500
   SAY @78
-  IF ~~ THEN DO ~SetGlobal("KnowKurt","GLOBAL",2)SetGlobal("KurtQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101329 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKurt","GLOBAL",2)SetGlobal("NWKurtQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101329 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 0.2
@@ -405,7 +405,7 @@ END
 IF ~~ THEN BEGIN 51 // from: 0.2
   SAY @84
   IF ~~ THEN REPLY @26 GOTO 23
-  IF ~  Global("ElynwydQuest","GLOBAL",1)~ THEN REPLY @85 DO ~SetGlobal("NWELYYD","GLOBAL",1)~ GOTO 52
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)~ THEN REPLY @85 DO ~SetGlobal("NWELYYD","GLOBAL",1)~ GOTO 52
   IF ~~ THEN REPLY @30 GOTO 26
   IF ~~ THEN REPLY @31 GOTO 27
 END
@@ -428,17 +428,17 @@ END
 
 IF ~~ THEN BEGIN 54 // from: 0.4
   SAY @87
-  IF ~~ THEN DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 55 // from: 0.4
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 56 // from: 0.4
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("KurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKurtQuest","GLOBAL",2)TakePartyItem("Nwmisc63")DestroyItem("Nwmisc63")AddexperienceParty(80000)GivePartyGold(1000)GiveItem("NWLEAT03",LastTalkedToBy)GiveItem("Wand06",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 57 // 1500
@@ -475,7 +475,7 @@ END
 IF ~~ THEN BEGIN 62 // 1500
   SAY @70
   IF ~~ THEN REPLY @26 GOTO 18
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @8 GOTO 19
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @8 GOTO 19
   IF ~~ THEN REPLY @73 GOTO 21
   IF ~~ THEN REPLY @27 GOTO 22
 END
@@ -520,7 +520,7 @@ IF ~~ THEN BEGIN 67 // 1500
   SAY @84
   IF ~~ THEN REPLY @26 GOTO 42
   IF ~~ THEN REPLY @29 GOTO 43
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @8 GOTO 44
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @8 GOTO 44
   IF ~~ THEN REPLY @30 GOTO 45
   IF ~~ THEN REPLY @31 GOTO 46
 END
@@ -577,11 +577,11 @@ END
 // -----------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("KurtQuest","GLOBAL",0)~ THEN BEGIN 75 // from:
+~  !NumTimesTalkedTo(0)Global("NWKurtQuest","GLOBAL",0)~ THEN BEGIN 75 // from:
   SAY @94
   IF ~~ THEN REPLY @71 GOTO 2
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @3 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @3 GOTO 20
   IF ~~ THEN REPLY @4 GOTO 5
   IF ~~ THEN REPLY @95 GOTO 6
 END
@@ -589,12 +589,12 @@ END
 // -----------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("KurtQuest","GLOBAL",1)~ THEN BEGIN 76 // from:
+~  !NumTimesTalkedTo(0)Global("NWKurtQuest","GLOBAL",1)~ THEN BEGIN 76 // from:
   SAY @96
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @97 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @97 GOTO 20
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @97 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @97 GOTO 20
   IF ~~ THEN REPLY @29 GOTO 77
-  IF ~  Global("ElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @8 GOTO 78
+  IF ~  Global("NWElynwydQuest","GLOBAL",1)Global("NWELYYD","GLOBAL",0)~ THEN REPLY @8 GOTO 78
   IF ~~ THEN REPLY @30 GOTO 79
   IF ~~ THEN REPLY @31 GOTO 80
 END
@@ -659,8 +659,8 @@ END
 
 IF ~~ THEN BEGIN 85 //
   SAY @91
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @99 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @99 GOTO 20
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @99 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @99 GOTO 20
   IF ~~ THEN REPLY @29 GOTO 77
   IF ~~ THEN REPLY @30 GOTO 79
   IF ~~ THEN REPLY @31 GOTO 80
@@ -668,8 +668,8 @@ END
 
 IF ~~ THEN BEGIN 86 //
   SAY @92
-  IF ~  Dead("NWBARAM")GlobalLT("KnowKurt","GLOBAL",2)~ THEN REPLY @99 GOTO 4
-  IF ~  Dead("NWBARAM")GlobalGT("KnowKurt","GLOBAL",1)~ THEN REPLY @99 GOTO 20
+  IF ~  Dead("NWBARAM")GlobalLT("NWKnowKurt","GLOBAL",2)~ THEN REPLY @99 GOTO 4
+  IF ~  Dead("NWBARAM")GlobalGT("NWKnowKurt","GLOBAL",1)~ THEN REPLY @99 GOTO 20
   IF ~~ THEN REPLY @29 GOTO 77
   IF ~~ THEN REPLY @30 GOTO 79
   IF ~~ THEN REPLY @31 GOTO 80
@@ -686,7 +686,7 @@ END
 // -----------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalGT("KurtQuest","GLOBAL",1)~ THEN BEGIN 88 // from:
+~  !NumTimesTalkedTo(0)GlobalGT("NWKurtQuest","GLOBAL",1)~ THEN BEGIN 88 // from:
   SAY @100
   IF ~~ THEN EXIT
 END

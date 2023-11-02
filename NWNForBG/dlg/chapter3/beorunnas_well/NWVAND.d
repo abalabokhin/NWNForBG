@@ -3,10 +3,10 @@
 BEGIN ~NWVAND~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("VandJob","GLOBAL",0)!Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 0 // from:
+~  Global("NWVandJob","GLOBAL",0)!Global("NWIslandDialogue","GLOBAL",2)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
@@ -38,7 +38,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 3.1
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("VandJob","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWVandJob","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 6.1
@@ -49,21 +49,21 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("VandJob","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWVandJob","GLOBAL",2)~ EXIT
 END
 
 // ----------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("VandJob","GLOBAL",5)!Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 9 // from:
+~  Global("NWVandJob","GLOBAL",5)!Global("NWIslandDialogue","GLOBAL",2)~ THEN BEGIN 9 // from:
   SAY @16
-  IF ~~ THEN DO ~SetGlobal("VandJob","GLOBAL",6)AddexperienceParty(52000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWVandJob","GLOBAL",6)AddexperienceParty(52000)~ EXIT
 END
 
 // ----------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("VandJob","GLOBAL",7)!Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 10 // from:
+~  Global("NWVandJob","GLOBAL",7)!Global("NWIslandDialogue","GLOBAL",2)~ THEN BEGIN 10 // from:
   SAY @17
   IF ~~ THEN EXIT
 END
@@ -71,7 +71,7 @@ END
 // ----------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("VandJob","GLOBAL",6)!Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 11 // from:
+~  Global("NWVandJob","GLOBAL",6)!Global("NWIslandDialogue","GLOBAL",2)~ THEN BEGIN 11 // from:
   SAY @16
   IF ~~ THEN EXIT
 END
@@ -79,7 +79,7 @@ END
 // ----------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 12 // from:
+~  Global("NWIslandDialogue","GLOBAL",2)~ THEN BEGIN 12 // from:
   SAY @18
   IF ~~ THEN EXTERN ~NWIGLAN2~ 1
 END
@@ -96,15 +96,15 @@ END
 
 IF ~~ THEN BEGIN 15 // from: NWIGLAN2 6.1
   SAY @21
-  IF ~  Global("VandJob","GLOBAL",2)Global("WandaAnswers","LOCALS",0)~ THEN REPLY @22 DO ~SetGlobal("WandaAnswers","LOCALS",1)~ GOTO 16
-  IF ~  GlobalGT("VandJob","GLOBAL",0)~ THEN REPLY @23 GOTO 17
+  IF ~  Global("NWVandJob","GLOBAL",2)Global("WandaAnswers","LOCALS",0)~ THEN REPLY @22 DO ~SetGlobal("WandaAnswers","LOCALS",1)~ GOTO 16
+  IF ~  GlobalGT("NWVandJob","GLOBAL",0)~ THEN REPLY @23 GOTO 17
   IF ~~ THEN REPLY @24 GOTO 18
   IF ~~ THEN REPLY @25 EXTERN ~NWIGLAN2~ 8
 END
 
 IF ~~ THEN BEGIN 16 // from: 15.1
   SAY @26
-  IF ~  GlobalGT("VandJob","GLOBAL",0)~ THEN REPLY @23 GOTO 17
+  IF ~  GlobalGT("NWVandJob","GLOBAL",0)~ THEN REPLY @23 GOTO 17
   IF ~~ THEN REPLY @24 GOTO 18
   IF ~~ THEN REPLY @25 EXTERN ~NWIGLAN2~ 8
 END

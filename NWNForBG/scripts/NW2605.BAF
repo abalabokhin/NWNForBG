@@ -1,8 +1,8 @@
 IF
 	OnCreation()
 	!Exists("NWCHARW2")  // ??????????
-	!Global("JaregQuest","GLOBAL",5)
-	Global("CharwoodCreatute","GLOBAL",0)
+	!Global("NWJaregQuest","GLOBAL",5)
+	Global("NWCharwoodCreatute","GLOBAL",0)
 THEN
 	RESPONSE #100
 		CreateCreature("NWCHARW2",[311.328],14)  // ??????????

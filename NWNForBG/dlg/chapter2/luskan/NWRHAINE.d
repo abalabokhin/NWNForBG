@@ -1,8 +1,8 @@
 // Лускан Подмигни и ущипни, 2-й уровень Рэйн Эта прекрасная молодая куртизанка выглядит так, словно ее что-то беспокоит.
 
 
-//  Global("Bela_Rhaine","GLOBAL",1)
-//  Global("Bela_Oreth","GLOBAL",1)
+//  Global("NWBela_Rhaine","GLOBAL",1)
+//  Global("NWBela_Oreth","GLOBAL",1)
 
 BEGIN ~NWRHAINE~
 
@@ -13,7 +13,7 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
-  IF ~  Global("Bela_Rhaine","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("NWBela_Rhaine","GLOBAL",1)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END
 
@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @7
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @8 GOTO 3
-  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("NWBela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END
 
@@ -37,7 +37,7 @@ END
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @14
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("NWBela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END
 
@@ -46,7 +46,7 @@ IF ~~ THEN BEGIN 4 // from: 0.4
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @8 GOTO 3
-  IF ~  Global("Bela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
+  IF ~  Global("NWBela_Oreth","GLOBAL",1)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END
 
@@ -158,14 +158,14 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 0.2
   SAY @56
-  IF ~  Global("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 27
-  IF ~  GlobalGT("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 28
+  IF ~  Global("NWPlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 27
+  IF ~  GlobalGT("NWPlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 28
 END
 
 IF ~~ THEN BEGIN 21 // from: 0.2
   SAY @57
-  IF ~  Global("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 29
-  IF ~  GlobalGT("PlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 30
+  IF ~  Global("NWPlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 29
+  IF ~  GlobalGT("NWPlayerHasLuscanKey","GLOBAL",0)~ THEN GOTO 30
 END
 
 IF ~~ THEN BEGIN 22 // from: 0.2
@@ -249,7 +249,7 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 0.2
   SAY @70
-  IF ~~ THEN DO ~SetGlobal("PlayerHasLuscanKey","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWPlayerHasLuscanKey","GLOBAL",1)
 GiveItemCreate("Nwkey10",LastTalkedToBy,0,0,0)
 GiveItemCreate("Nwkey11",LastTalkedToBy,0,0,0)~ EXIT
 END
@@ -262,7 +262,7 @@ END
 // -----------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)Global("PlayerHasLuscanKey","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 35 // from:
+~  !NumTimesTalkedTo(0)Gender(LastTalkedToBy,MALE)Global("NWPlayerHasLuscanKey","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 35 // from:
   SAY @72
   IF ~~ THEN REPLY @73 GOTO 18
   IF ~~ THEN REPLY @74 GOTO 36
@@ -302,7 +302,7 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)
 Gender(LastTalkedToBy,MALE)
-Global("PlayerHasLuscanKey","GLOBAL",1)
+Global("NWPlayerHasLuscanKey","GLOBAL",1)
 IsGabber(Player1)
 Global("QuestDone","MYAREA",0)~ THEN BEGIN 41 // from:
   SAY @84

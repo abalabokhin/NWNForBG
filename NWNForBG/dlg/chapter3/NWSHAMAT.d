@@ -22,7 +22,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.4
   SAY @6
-  IF ~~ THEN DO ~SetGlobal("ZokanHostile","GLOBAL",1)Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWZokanHostile","GLOBAL",1)Enemy()~ EXIT
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */

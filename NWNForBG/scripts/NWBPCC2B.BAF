@@ -894,7 +894,7 @@ END
 IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_SUMMON_DEVA)  // SPPR726.SPL (?????? ????)
-	!GlobalTimerNotExpired("DEVA","GLOBAL")
+	!GlobalTimerNotExpired("NWDEVA","GLOBAL")
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
 	RandomNumLT(12,7)
@@ -902,13 +902,13 @@ THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
 		Spell(Myself,CLERIC_SUMMON_DEVA)  // SPPR726.SPL (?????? ????)
-		SetGlobalTimer("DEVA","GLOBAL",96)
+		SetGlobalTimer("NWDEVA","GLOBAL",96)
 END
 
 IF
 	ActionListEmpty()
 	HaveSpell(CLERIC_SUMMON_FALLEN_DEVA)  // SPPR727.SPL (?????? ??????? ????)
-	!GlobalTimerNotExpired("DEVA","GLOBAL")
+	!GlobalTimerNotExpired("NWDEVA","GLOBAL")
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
 	RandomNumLT(14,8)
@@ -916,7 +916,7 @@ THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
 		Spell(Myself,CLERIC_SUMMON_FALLEN_DEVA)  // SPPR727.SPL (?????? ??????? ????)
-		SetGlobalTimer("DEVA","GLOBAL",96)
+		SetGlobalTimer("NWDEVA","GLOBAL",96)
 END
 
 IF

@@ -11,10 +11,10 @@ IF
 	AttackedBy([GOODCUTOFF],DEFAULT)
 	Allegiance(Myself,NEUTRAL)
 	AreaCheck("NW3201")
-	Global("ZokanHostile","GLOBAL",0)
+	Global("NWZokanHostile","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("ZokanHostile","GLOBAL",1)
+		SetGlobal("NWZokanHostile","GLOBAL",1)
 		Enemy()
 END
 
@@ -27,7 +27,7 @@ THEN
 END
 
 IF
-	Global("ZokanHostile","GLOBAL",1)
+	Global("NWZokanHostile","GLOBAL",1)
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100

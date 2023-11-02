@@ -1,7 +1,7 @@
 IF
 	OR(2)
-		Global("Portal2500","GLOBAL",2)
-		Global("Portal2510","GLOBAL",3)
+		Global("NWPortal2500","GLOBAL",2)
+		Global("NWPortal2510","GLOBAL",3)
 	Global("SwitchExit","MYAREA",0)
 THEN
 	RESPONSE #100

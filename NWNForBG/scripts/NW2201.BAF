@@ -19,7 +19,7 @@ IF
 	Global("NW2207Vizited","GLOBAL",1)
 	Global("GamDestroyed","MYAREA",0)
 	InMyArea("NWGAM")  // ???
-	!Global("GamCure","GLOBAL",1)
+	!Global("NWGamCure","GLOBAL",1)
 THEN
 	RESPONSE #100
 		SetGlobal("GamDestroyed","MYAREA",1)

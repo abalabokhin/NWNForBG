@@ -27,7 +27,7 @@ THEN
 END
 
 IF
-	Global("HectorFollow","GLOBAL",1)
+	Global("NWHectorFollow","GLOBAL",1)
 	!Allegiance(Myself,ENEMY)
 	Global("Pause","LOCALS",1)
 THEN
@@ -36,7 +36,7 @@ THEN
 END
 
 IF
-	Global("HectorFollow","GLOBAL",1)
+	Global("NWHectorFollow","GLOBAL",1)
 	!Allegiance(Myself,ENEMY)
 	Global("Pause","LOCALS",0)
 THEN

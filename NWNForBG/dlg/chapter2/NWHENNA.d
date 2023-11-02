@@ -3,7 +3,7 @@
 BEGIN ~NWHENNA~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("SpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWSpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -138,7 +138,7 @@ END
 // ------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("AavillQuest","GLOBAL",0)~ THEN BEGIN 20 // from:
+~  !NumTimesTalkedTo(0)Global("NWAavillQuest","GLOBAL",0)~ THEN BEGIN 20 // from:
   SAY @45
   IF ~~ THEN REPLY @9 GOTO 6
   IF ~~ THEN REPLY @10 GOTO 7
@@ -147,19 +147,19 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("AavillQuest","GLOBAL",0)Global("SpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 21 // from:
+~  GlobalGT("NWAavillQuest","GLOBAL",0)Global("NWSpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 21 // from:
   SAY @46
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SpiritSaved","GLOBAL",1)Global("HennaQuest","LOCALS",0)~ THEN BEGIN 22 // from:
+~  Global("NWSpiritSaved","GLOBAL",1)Global("HennaQuest","LOCALS",0)~ THEN BEGIN 22 // from:
   SAY @47
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SpiritSaved","GLOBAL",1)Global("HennaQuest","LOCALS",1)~ THEN BEGIN 23 // from:
+~  Global("NWSpiritSaved","GLOBAL",1)Global("HennaQuest","LOCALS",1)~ THEN BEGIN 23 // from:
   SAY @48
   IF ~~ THEN DO ~SetGlobal("HennaQuest","LOCALS",0)AddXPObject(Player1,7777)~ EXIT
 END

@@ -31,12 +31,12 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AMARCHENEMY","GLOBAL",1)
+		SetGlobal("NWAMARCHENEMY","GLOBAL",1)
 		Enemy()
 END
 
 IF
-	Global("AMARCHENEMY","GLOBAL",1)
+	Global("NWAMARCHENEMY","GLOBAL",1)
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100

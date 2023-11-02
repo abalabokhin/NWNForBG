@@ -15,13 +15,13 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(4,3)GlobalGT("ILCARD_Free","GLOBAL",0)~ THEN BEGIN 2 // from:
+~  RandomNum(4,3)GlobalGT("NWILCARD_Free","GLOBAL",0)~ THEN BEGIN 2 // from:
   SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(4,3)Global("ILCARD_Free","GLOBAL",0)~ THEN BEGIN 3 // from:
+~  RandomNum(4,3)Global("NWILCARD_Free","GLOBAL",0)~ THEN BEGIN 3 // from:
   SAY @3
   IF ~~ THEN EXIT
 END

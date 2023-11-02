@@ -3,7 +3,7 @@
 BEGIN ~NWSOLDG3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(1,2)Global("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  RandomNum(1,2)Global("NWBeggarsNestDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -45,7 +45,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(2,2)Global("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 6 // from:
+~  RandomNum(2,2)Global("NWBeggarsNestDone","GLOBAL",0)~ THEN BEGIN 6 // from:
   SAY @11
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -55,7 +55,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 7 // from:
+~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN BEGIN 7 // from:
   SAY @12
   IF ~~ THEN EXIT
 END

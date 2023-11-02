@@ -189,13 +189,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",1)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWRITHT2"))  // ?????????
 		ActionOverride("Anvil",DestroyItem("PLAT04"))  // ?????? ?????? ??????
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWPLATN1",1,1,0))  // ??????? ??????
 		SmallWait(3)
@@ -204,13 +204,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",2)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWHOLYWA"))  // ?????? ?????? ????
 		ActionOverride("Anvil",DestroyItem("CHAN02"))  // ???????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWCHAN1",5,0,0))  // ????? ??????
 		SmallWait(3)
@@ -219,13 +219,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",3)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWGARSKL"))  // ????? ????????
 		ActionOverride("Anvil",DestroyItem("LEAT07"))  // ???????? ??????? ?????? +2
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWLEAT1",1,1,0))  // ??????? ?????? ????? ?????
 		SmallWait(3)
@@ -234,13 +234,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",4)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWADAMAT"))  // ???????
 		ActionOverride("Anvil",DestroyItem("AX1H02"))  // ?????? ????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWAX1H1",1,0,0))  // ????? +4
 		SmallWait(3)
@@ -249,13 +249,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",5)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWADAMAT"))  // ???????
 		ActionOverride("Anvil",DestroyItem("HALB02"))  // ???????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWHALB1",1,0,0))  // ????????? ????? ????????? ???????
 		SmallWait(3)
@@ -264,13 +264,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",6)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWDRABLD"))  // ????? ???????
 		ActionOverride("Anvil",DestroyItem("AX1H02"))  // ?????? ????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWAX1H2",1,1,0))  // ???????? ???? +4
 		SmallWait(3)
@@ -279,13 +279,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",7)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWIROOOD"))  // ???????? ??????
 		ActionOverride("Anvil",DestroyItem("BLUN01"))  // ??????
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWBLUN1",1,0,0))  // ?????? ??????????
 		SmallWait(3)
@@ -294,13 +294,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",8)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWIROOOD"))  // ???????? ??????
 		ActionOverride("Anvil",DestroyItem("BLUN05"))  // ?????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWBLUN2",1,0,0))  // ?????? ?? ????????? ??????
 		SmallWait(3)
@@ -309,13 +309,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",9)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWRITHT2"))  // ?????????
 		ActionOverride("Anvil",DestroyItem("HAMM02"))  // ?????? ????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWHAMM1",1,0,0))  // ????? ????
 		SmallWait(3)
@@ -324,13 +324,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",10)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWIROOOD"))  // ???????? ??????
 		ActionOverride("Anvil",DestroyItem("BLUN03"))  // ??? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWBLUN3",1,0,0))  // ??????? ??????????
 		SmallWait(5)
@@ -339,13 +339,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",11)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWHOLYWA"))  // ?????? ?????? ????
 		ActionOverride("Anvil",DestroyItem("BLUN05"))  // ?????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWBLUN4",1,0,0))  // ?????? ????????? +4
 		SmallWait(3)
@@ -354,13 +354,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",12)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWMAGDUT"))  // ????????? ????
 		ActionOverride("Anvil",DestroyItem("BLUN07"))  // ??????????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWBLUN5",1,1,2))  // ???????? ???????????
 		SmallWait(3)
@@ -369,13 +369,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",13)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWADAMAT"))  // ???????
 		ActionOverride("Anvil",DestroyItem("HAMM03"))  // ?????? ????? +2
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWHAMM2",1,0,0))  // ?????? ????? +4
 		SmallWait(3)
@@ -384,13 +384,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",14)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWADAMAT"))  // ???????
 		ActionOverride("Anvil",DestroyItem("SW2H02"))  // ????????? ??? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSW2H10",1,0,0))  // ????????? ??? ?????????????
 		SmallWait(3)
@@ -399,13 +399,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",15)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWADAMAT"))  // ???????
 		ActionOverride("Anvil",DestroyItem("SW1H44"))  // ?????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSW1H1",1,0,0))  // ?????????????? ??????
 		SmallWait(3)
@@ -414,13 +414,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",16)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWRITHT2"))  // ?????????
 		ActionOverride("Anvil",DestroyItem("SW1H05"))  // ??????? ??? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSW1H2",1,0,0))  // ?????????? ??????? ???
 		SmallWait(3)
@@ -429,13 +429,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",17)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWRITHT2"))  // ?????????
 		ActionOverride("Anvil",DestroyItem("SW1H02"))  // ?????????? ??? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSW1H3",1,0,0))  // ?????????? ?????????? ???
 		SmallWait(3)
@@ -444,13 +444,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",18)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWADAMAT"))  // ???????
 		ActionOverride("Anvil",DestroyItem("SW1H22"))  // ???????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSW1H4",1,0,0))  // ???????? ?????????? ?????
 		SmallWait(3)
@@ -459,13 +459,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",19)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWMAGDUT"))  // ????????? ????
 		ActionOverride("Anvil",DestroyItem("NWSW1H08"))  // ???????? ??? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSW1H5",1,1,2))  // ???????? ??? ?????? ????
 		SmallWait(3)
@@ -474,13 +474,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",20)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWDRABLD"))  // ????? ???????
 		ActionOverride("Anvil",DestroyItem("HALB03"))  // ???????? +2
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWHALB2",1,1,0))  // ???????? ????????
 		SmallWait(3)
@@ -489,13 +489,13 @@ END
 
 IF
 	Global("PlantedItems","MYAREA",21)
-	Global("ForgeStuffNW","GLOBAL",1)
+	Global("NWForgeStuffNW","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("Anvil",DestroyItem("NWMAGDUT"))  // ????????? ????
 		ActionOverride("Anvil",DestroyItem("SPER02"))  // ????? +1
 		SetGlobal("BarunSay","MYAREA",1)
-		SetGlobal("ForgeStuffNW","GLOBAL",0)
+		SetGlobal("NWForgeStuffNW","GLOBAL",0)
 		SetGlobal("PlantedItems","MYAREA",0)
 		ActionOverride("Anvil",CreateItem("NWSPER1",1,1,2))  // ???????? ???
 		SmallWait(3)

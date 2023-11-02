@@ -918,28 +918,28 @@ IF
 	ActionListEmpty()
 	HaveSpell(WIZARD_SUMMON_PLANATAR_GOOD)  // SPWI923.SPL (?????? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	!GlobalTimerNotExpired("DEVA","GLOBAL")
+	!GlobalTimerNotExpired("NWDEVA","GLOBAL")
 	NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
 	RandomNumLT(16,10)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
 		Spell(Myself,WIZARD_SUMMON_PLANATAR_GOOD)  // SPWI923.SPL (?????? ?????????)
-		SetGlobalTimer("DEVA","GLOBAL",96)
+		SetGlobalTimer("NWDEVA","GLOBAL",96)
 END
 
 IF
 	ActionListEmpty()
 	HaveSpell(WIZARD_SUMMON_PLANATAR_EVIL)  // SPWI924.SPL (?????? ??????? ?????????)
 	!GlobalTimerNotExpired("BPT","LOCALS")
-	!GlobalTimerNotExpired("DEVA","GLOBAL")
+	!GlobalTimerNotExpired("NWDEVA","GLOBAL")
 	NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
 	RandomNumLT(17,10)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
 		Spell(Myself,WIZARD_SUMMON_PLANATAR_EVIL)  // SPWI924.SPL (?????? ??????? ?????????)
-		SetGlobalTimer("DEVA","GLOBAL",96)
+		SetGlobalTimer("NWDEVA","GLOBAL",96)
 END
 
 IF

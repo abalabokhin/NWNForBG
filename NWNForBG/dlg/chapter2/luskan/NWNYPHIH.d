@@ -131,7 +131,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 8.4
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("NyphithusQuest","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNyphithusQuest","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 8.5
@@ -368,6 +368,6 @@ END
 
 IF ~~ THEN BEGIN 47 // from: 46.1
   SAY @98
-  IF ~~ THEN DO ~SetGlobal("NyphithusQuest","GLOBAL",2)GiveItemCreate("NWNYPHIM",LastTalkedToBy,1,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNyphithusQuest","GLOBAL",2)GiveItemCreate("NWNYPHIM",LastTalkedToBy,1,0,0)~ EXIT
 END
 

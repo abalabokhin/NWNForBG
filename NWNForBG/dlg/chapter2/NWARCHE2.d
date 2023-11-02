@@ -3,7 +3,7 @@
 BEGIN ~NWARCHE2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)GlobalLT("JaxQuest","GLOBAL",2)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)GlobalLT("NWJaxQuest","GLOBAL",2)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -107,13 +107,13 @@ IF ~~ THEN BEGIN 16 // from: 15.1
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalLT("JaxQuest","GLOBAL",2)~ THEN BEGIN 17 // from:
+~  !NumTimesTalkedTo(0)GlobalLT("NWJaxQuest","GLOBAL",2)~ THEN BEGIN 17 // from:
   SAY @37
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("JaxQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
+~  GlobalGT("NWJaxQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
   SAY @38
   IF ~~ THEN EXIT
 END

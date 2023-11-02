@@ -15,7 +15,7 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !InMyArea("NWZAMITA")Global("SexWithZamitra","GLOBAL",1)Global("PlayerHasZgem","MYAREA",0)~ THEN BEGIN 12 // from:
+~  !InMyArea("NWZAMITA")Global("NWSexWithZamitra","GLOBAL",1)Global("PlayerHasZgem","MYAREA",0)~ THEN BEGIN 12 // from:
   SAY @2
   IF ~~ THEN EXIT
 END

@@ -52,7 +52,7 @@ IF ~~ THEN BEGIN 7 // from: 6.1 5.1
   SAY @13
   IF ~~ THEN REPLY @14 GOTO 9
   IF ~~ THEN REPLY @15 GOTO 10
-  IF ~  Global("JaregQuest","GLOBAL",0)
+  IF ~  Global("NWJaregQuest","GLOBAL",0)
 ~ THEN REPLY @16 GOTO 11
 END
 
@@ -60,13 +60,13 @@ IF ~~ THEN BEGIN 8 // from: 24.0 6.0
   SAY @17
   IF ~~ THEN REPLY @14GOTO 9
   IF ~~ THEN REPLY @15 GOTO 10
-  IF ~  Global("JaregQuest","GLOBAL",0)
+  IF ~  Global("NWJaregQuest","GLOBAL",0)
 ~ THEN REPLY @16 GOTO 11
 END
 
 IF ~~ THEN BEGIN 9 // from: 8.0 7.0
   SAY @18
-  IF ~  Global("Talked_with_Quint","GLOBAL",1)
+  IF ~  Global("NWTalked_with_Quint","GLOBAL",1)
 ~ THEN REPLY @19 GOTO 12
   IF ~~ THEN REPLY @20GOTO 14
   IF ~~ THEN REPLY @21 GOTO 15
@@ -76,7 +76,7 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 17.0 8.1 7.1
   SAY @24
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",1)EraseJournalEntry(@98004)~ UNSOLVED_JOURNAL @102639 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",1)EraseJournalEntry(@98004)~ UNSOLVED_JOURNAL @102639 EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 17.1 8.2 7.2
@@ -99,7 +99,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 16.1 15.1 13.0 9.1
   SAY @29
-  IF ~  Global("Talked_with_Quint","GLOBAL",1)
+  IF ~  Global("NWTalked_with_Quint","GLOBAL",1)
 ~ THEN REPLY @19 GOTO 12
   IF ~~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @22 GOTO 16
@@ -108,7 +108,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 16.2 14.1 13.1 9.2
   SAY @30
-  IF ~  Global("Talked_with_Quint","GLOBAL",1)
+  IF ~  Global("NWTalked_with_Quint","GLOBAL",1)
 ~ THEN REPLY @19 GOTO 12
   IF ~~ THEN REPLY @20 GOTO 14
   IF ~~ THEN REPLY @22 GOTO 16
@@ -117,7 +117,7 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 15.2 14.2 13.2 9.3
   SAY @31
-  IF ~  Global("Talked_with_Quint","GLOBAL",1)
+  IF ~  Global("NWTalked_with_Quint","GLOBAL",1)
 ~ THEN REPLY @19 GOTO 12
   IF ~~ THEN REPLY @20 GOTO 14
   IF ~~ THEN REPLY @21 GOTO 15
@@ -127,17 +127,17 @@ END
 IF ~~ THEN BEGIN 17 // from: 16.3 15.3 14.3 13.3 9.4
   SAY @32
   IF ~~ THEN REPLY @15 GOTO 10
-  IF ~  Global("JaregQuest","GLOBAL",0)
+  IF ~  Global("NWJaregQuest","GLOBAL",0)
 ~ THEN REPLY @16 GOTO 11
 END
 
 IF ~  !NumberOfTimesTalkedTo(0)
-GlobalLT("JaregQuest","GLOBAL",2)
+GlobalLT("NWJaregQuest","GLOBAL",2)
 ~ THEN BEGIN 18 // from:
   SAY @33
-  IF ~  Global("JaregQuest","GLOBAL",1)
+  IF ~  Global("NWJaregQuest","GLOBAL",1)
 ~ THEN REPLY @34 GOTO 19
-  IF ~  Global("JaregQuest","GLOBAL",1)
+  IF ~  Global("NWJaregQuest","GLOBAL",1)
 ~ THEN REPLY @35 GOTO 20
   IF ~~ THEN REPLY @36 GOTO 21
   IF ~~ THEN REPLY @37 GOTO 22
@@ -220,7 +220,7 @@ END
 
 IF ~~ THEN BEGIN 29 // from: 26.1 25.1
   SAY @53
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",2)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",2)
 TakePartyItem("NWQUINTT")
 TakePartyItem("NWKARLA0")
 ~ EXIT
@@ -228,7 +228,7 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 34.0 31.0 26.0 25.0
   SAY @54
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",3)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",3)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT")
@@ -236,7 +236,7 @@ StartCutScene("NWCOURT")
 END
 
 IF ~  !NumberOfTimesTalkedTo(0)
-Global("JaregQuest","GLOBAL",2)
+Global("NWJaregQuest","GLOBAL",2)
 ~ THEN BEGIN 31 // from:
   SAY @55
   IF ~~ THEN REPLY @49 GOTO 30
@@ -281,7 +281,7 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 37.0
   SAY @69
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",4)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",4)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT2")
@@ -346,8 +346,8 @@ END
 
 IF ~~ THEN BEGIN 48 // from: 52.0 47.1 46.1 45.1 44.1
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",5)
-SetGlobal("Charwood_Is_Saved","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",5)
+SetGlobal("NWCharwood_Is_Saved","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT3")
@@ -377,7 +377,7 @@ IF ~~ THEN BEGIN 52 // from: 51.1
   IF ~~ THEN GOTO 48
 END
 
-IF ~  Global("JaregQuest","GLOBAL",4)
+IF ~  Global("NWJaregQuest","GLOBAL",4)
 ~ THEN BEGIN 53 // from:
   SAY @91
   IF ~~ THEN EXTERN ~NWBELIAL~ 20
@@ -432,9 +432,9 @@ END
 
 IF ~~ THEN BEGIN 62 // from: 59.1 58.1
   SAY @103
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",5)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",5)
 GiveItemCreate("NWPHYLA3",Player1,1,0,0)
-SetGlobal("Charwood_Is_Saved","GLOBAL",1)
+SetGlobal("NWCharwood_Is_Saved","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT4")
@@ -443,8 +443,8 @@ END
 
 IF ~~ THEN BEGIN 63 // from: 61.1 60.1
   SAY @103
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",6)
-SetGlobal("Charwood_Is_Cursed","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",6)
+SetGlobal("NWCharwood_Is_Cursed","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT5")
@@ -476,9 +476,9 @@ END
 
 IF ~~ THEN BEGIN 68 // from: 67.0
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",5)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",5)
 GiveItemCreate("NWPHYLA3",Player1,1,0,0)
-SetGlobal("Charwood_Is_Saved","GLOBAL",1)
+SetGlobal("NWCharwood_Is_Saved","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT4")
@@ -510,8 +510,8 @@ END
 
 IF ~~ THEN BEGIN 73 // from: 72.0
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",6)
-SetGlobal("Charwood_Is_Cursed","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",6)
+SetGlobal("NWCharwood_Is_Cursed","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT5")
@@ -544,8 +544,8 @@ END
 
 IF ~~ THEN BEGIN 78 // from: 82.0 77.1 76.1 75.1 74.1
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("JaregQuest","GLOBAL",5)
-SetGlobal("Charwood_Is_Cursed","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWJaregQuest","GLOBAL",5)
+SetGlobal("NWCharwood_Is_Cursed","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("NWCOURT6")

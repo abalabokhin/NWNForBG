@@ -1,5 +1,5 @@
 IF
-	Global("ArmorQuest","GLOBAL",0)
+	Global("NWArmorQuest","GLOBAL",0)
 	Entered([PC])
 THEN
 	RESPONSE #100

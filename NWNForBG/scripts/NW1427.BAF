@@ -10,7 +10,7 @@ THEN
 END
 
 IF
-	!GlobalGT("OphalaQuest","GLOBAL",1)
+	!GlobalGT("NWOphalaQuest","GLOBAL",1)
 	Global("MyJournal","MYAREA",0)
 	PartyHasItem("Nwmisc13")  // ??????? ???? ??????????? ?????????? III
 THEN
@@ -20,7 +20,7 @@ THEN
 END
 
 IF
-	Global("ThomsAttack","GLOBAL",1)
+	Global("NWThomsAttack","GLOBAL",1)
 	Global("GuardExist","MYAREA",0)
 THEN
 	RESPONSE #100

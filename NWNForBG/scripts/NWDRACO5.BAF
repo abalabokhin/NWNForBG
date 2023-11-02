@@ -44,15 +44,15 @@ THEN
 	RESPONSE #100
 		ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_FEAR)  // SPIN895.SPL (????? ???????)
 		SetGlobal("DRAGONFEAR","LOCALS",1)
-		SetGlobalTimer("SILVERDRAGONBREATH","GLOBAL",1)
-		SetGlobalTimer("SILVERDRAGONBREATH2","GLOBAL",1)
+		SetGlobalTimer("NWSILVERDRAGONBREATH","GLOBAL",1)
+		SetGlobalTimer("NWSILVERDRAGONBREATH2","GLOBAL",1)
 		ForceSpell(LastSeenBy(Myself),DRAGON_WING_BUFFET)  // SPIN695.SPL (???? ??????)
 END
 
 IF
 	OR(2)
-		GlobalTimerExpired("SILVERDRAGONBREATH2","GLOBAL")
-		GlobalTimerExpired("SILVERDRAGONBREATH","GLOBAL")
+		GlobalTimerExpired("NWSILVERDRAGONBREATH2","GLOBAL")
+		GlobalTimerExpired("NWSILVERDRAGONBREATH","GLOBAL")
 	See(NearestEnemyOf(Myself))
 	Range(LastSeenBy(Myself),11)
 THEN
@@ -65,34 +65,34 @@ END
 IF
 	See(NearestEnemyOf(Myself))
 	!Range(LastSeenBy(Myself),10)
-	GlobalTimerExpired("SILVERDRAGONBREATH2","GLOBAL")
+	GlobalTimerExpired("NWSILVERDRAGONBREATH2","GLOBAL")
 THEN
 	RESPONSE #100
 		SetGlobal("WingBuffet","LOCALS",0)
 		ForceSpell(LastSeenBy(Myself),SILVER_DRAGON_BREATH_PARALIZATION)  // SPIN832.SPL (??????????? ??????????? ???????)
-		SetGlobalTimer("SILVERDRAGONBREATH2","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWSILVERDRAGONBREATH2","GLOBAL",THREE_ROUNDS)
 END
 
 IF
 	See(SixthNearestEnemyOf(Myself))
 	!Range(LastSeenBy(Myself),10)
-	GlobalTimerExpired("SILVERDRAGONBREATH","GLOBAL")
+	GlobalTimerExpired("NWSILVERDRAGONBREATH","GLOBAL")
 THEN
 	RESPONSE #100
 		SetGlobal("WingBuffet","LOCALS",0)
 		ForceSpell(LastSeenBy(Myself),SILVER_DRAGON_BREATH_COLD)  // SPIN833.SPL (????? ?????? ??????????? ???????)
-		SetGlobalTimer("SILVERDRAGONBREATH","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWSILVERDRAGONBREATH","GLOBAL",THREE_ROUNDS)
 END
 
 IF
 	See(NearestEnemyOf(Myself))
 	!Range(LastSeenBy(Myself),10)
-	GlobalTimerExpired("SILVERDRAGONBREATH","GLOBAL")
+	GlobalTimerExpired("NWSILVERDRAGONBREATH","GLOBAL")
 THEN
 	RESPONSE #100
 		SetGlobal("WingBuffet","LOCALS",0)
 		ForceSpell(LastSeenBy(Myself),SILVER_DRAGON_BREATH_COLD)  // SPIN833.SPL (????? ?????? ??????????? ???????)
-		SetGlobalTimer("SILVERDRAGONBREATH","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWSILVERDRAGONBREATH","GLOBAL",THREE_ROUNDS)
 END
 
 IF
@@ -102,8 +102,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("WingBuffet","LOCALS",0)
-		SetGlobalTimer("SILVERDRAGONBREATH2","GLOBAL",THREE_ROUNDS)
-		SetGlobalTimer("SILVERDRAGONBREATH","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWSILVERDRAGONBREATH2","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWSILVERDRAGONBREATH","GLOBAL",THREE_ROUNDS)
 END
 
 IF

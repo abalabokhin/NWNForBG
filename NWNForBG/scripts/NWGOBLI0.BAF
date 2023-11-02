@@ -30,7 +30,7 @@ IF
 	Allegiance(Myself,ENEMY)
 	!Global("GoblinHostile","MYAREA",1)
 	OR(2)
-		Global("GoblinQuest","GLOBAL",1)
+		Global("NWGoblinQuest","GLOBAL",1)
 		Global("NeutralGoblins","MYAREA",1)
 	Global("MyAllegiance","LOCALS",0)
 THEN

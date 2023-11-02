@@ -3,7 +3,7 @@
 BEGIN ~NWSEDOS~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SedosQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWSedosQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -107,12 +107,12 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 11.4
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",2)EraseJournalEntry(@93969)~ UNSOLVED_JOURNAL @94004 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSedosQuest","GLOBAL",2)EraseJournalEntry(@93969)~ UNSOLVED_JOURNAL @94004 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 11.5
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSedosQuest","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 14.1
@@ -126,7 +126,7 @@ END
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SedosQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
+~  Global("NWSedosQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
   SAY @37
   IF ~~ THEN REPLY @38 GOTO 8
   IF ~~ THEN REPLY @39 GOTO 15
@@ -136,7 +136,7 @@ END
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SedosQuest","GLOBAL",2)~ THEN BEGIN 19 // from:
+~  Global("NWSedosQuest","GLOBAL",2)~ THEN BEGIN 19 // from:
   SAY @41
   IF ~~ THEN REPLY @42 GOTO 20
   IF ~~ THEN REPLY @43 GOTO 21
@@ -171,10 +171,10 @@ END
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SedosQuest","GLOBAL",3)~ THEN BEGIN 24 // from:
+~  Global("NWSedosQuest","GLOBAL",3)~ THEN BEGIN 24 // from:
   SAY @50
-  IF ~  !PartyHasItem("NWCREWT2")Global("Brainworm","GLOBAL",1)~ THEN REPLY @51 GOTO 25
-  IF ~  !PartyHasItem("NWCREWT2")Global("Brainworm","GLOBAL",0)~ THEN REPLY @51 GOTO 26
+  IF ~  !PartyHasItem("NWCREWT2")Global("NWBrainworm","GLOBAL",1)~ THEN REPLY @51 GOTO 25
+  IF ~  !PartyHasItem("NWCREWT2")Global("NWBrainworm","GLOBAL",0)~ THEN REPLY @51 GOTO 26
   IF ~  PartyHasItem("NWCREWT2")~ THEN REPLY @52 GOTO 27
 END
 
@@ -199,23 +199,23 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 25.1
   SAY @59
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)EraseJournalEntry(@93969)EraseJournalEntry(@94004)~ SOLVED_JOURNAL @94059 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)EraseJournalEntry(@93969)EraseJournalEntry(@94004)~ SOLVED_JOURNAL @94059 EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.2
   SAY @61
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)ReputationInc(-1)EraseJournalEntry(@93969)EraseJournalEntry(@94004)~ SOLVED_JOURNAL @94059 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSedosQuest","GLOBAL",4)GiveGoldForce(1000)AddexperienceParty(154000)ReputationInc(-1)EraseJournalEntry(@93969)EraseJournalEntry(@94004)~ SOLVED_JOURNAL @94059 EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 25.3
   SAY @62
-  IF ~~ THEN DO ~SetGlobal("SedosQuest","GLOBAL",4)AddexperienceParty(154000)ReputationInc(1)EraseJournalEntry(@93969)EraseJournalEntry(@94004)~ SOLVED_JOURNAL @94059 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSedosQuest","GLOBAL",4)AddexperienceParty(154000)ReputationInc(1)EraseJournalEntry(@93969)EraseJournalEntry(@94004)~ SOLVED_JOURNAL @94059 EXIT
 END
 
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SedosQuest","GLOBAL",4)~ THEN BEGIN 31 // from:
+~  Global("NWSedosQuest","GLOBAL",4)~ THEN BEGIN 31 // from:
   SAY @63
   IF ~~ THEN EXIT
 END

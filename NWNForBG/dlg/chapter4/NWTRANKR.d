@@ -93,7 +93,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
   SAY @25
-  IF ~~ THEN REPLY @26 DO ~SetGlobal("TrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107304 GOTO 15
+  IF ~~ THEN REPLY @26 DO ~SetGlobal("NWTrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107304 GOTO 15
   IF ~~ THEN REPLY @28 GOTO 16
   IF ~~ THEN REPLY @4 GOTO 3
 END
@@ -110,7 +110,7 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 14.2
   SAY @35
-  IF ~~ THEN REPLY @26 DO ~SetGlobal("TrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107304 GOTO 15
+  IF ~~ THEN REPLY @26 DO ~SetGlobal("NWTrankarQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @107304 GOTO 15
   IF ~~ THEN REPLY @4 GOTO 3
 END
 
@@ -188,7 +188,7 @@ END
 // --------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("TrankarQuest","GLOBAL",0)~ THEN BEGIN 26 // from:
+~  !NumTimesTalkedTo(0)Global("NWTrankarQuest","GLOBAL",0)~ THEN BEGIN 26 // from:
   SAY @46
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 2
@@ -198,7 +198,7 @@ END
 // --------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("TrankarQuest","GLOBAL",1)Global("TrankarCatapult","GLOBAL",0)Global("TrankarGolem","GLOBAL",0)~ THEN BEGIN 27 // from:
+~  !NumTimesTalkedTo(0)Global("NWTrankarQuest","GLOBAL",1)Global("NWTrankarCatapult","GLOBAL",0)Global("NWTrankarGolem","GLOBAL",0)~ THEN BEGIN 27 // from:
   SAY @47
   IF ~~ THEN REPLY @30 GOTO 17
   IF ~~ THEN REPLY @31 GOTO 18
@@ -211,7 +211,7 @@ END
 // --------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("TrankarQuest","GLOBAL",1)Global("TrankarCatapult","GLOBAL",1)Global("TrankarGolem","GLOBAL",0)~ THEN BEGIN 28 // from:
+~  !NumTimesTalkedTo(0)Global("NWTrankarQuest","GLOBAL",1)Global("NWTrankarCatapult","GLOBAL",1)Global("NWTrankarGolem","GLOBAL",0)~ THEN BEGIN 28 // from:
   SAY @48
   IF ~~ THEN EXIT
 END
@@ -219,7 +219,7 @@ END
 // --------------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("TrankarQuest","GLOBAL",1)Global("TrankarCatapult","GLOBAL",0)Global("TrankarGolem","GLOBAL",1)~ THEN BEGIN 29 // from:
+~  !NumTimesTalkedTo(0)Global("NWTrankarQuest","GLOBAL",1)Global("NWTrankarCatapult","GLOBAL",0)Global("NWTrankarGolem","GLOBAL",1)~ THEN BEGIN 29 // from:
   SAY @49
   IF ~~ THEN EXIT
 END
@@ -227,7 +227,7 @@ END
 // --------------------------------------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalGT("TrankarQuest","GLOBAL",0)Global("TrankarCatapult","GLOBAL",1)Global("TrankarGolem","GLOBAL",1)~ THEN BEGIN 30 // from:
+~  !NumTimesTalkedTo(0)GlobalGT("NWTrankarQuest","GLOBAL",0)Global("NWTrankarCatapult","GLOBAL",1)Global("NWTrankarGolem","GLOBAL",1)~ THEN BEGIN 30 // from:
   SAY @50
   IF ~~ THEN GOTO 31
 END
@@ -262,9 +262,9 @@ END
 
 IF ~~ THEN BEGIN 35 // from: 31.4
   SAY @59
-  IF ~  GlobalLT("TrankarQuest","GLOBAL",2)~ THEN DO
-  ~SetGlobal("TrankarQuest","GLOBAL",2)AddexperienceParty(240000)EraseJournalEntry(@107304)~ SOLVED_JOURNAL @107359 EXIT
-  IF ~  GlobalGT("TrankarQuest","GLOBAL",1)~ THEN EXIT
+  IF ~  GlobalLT("NWTrankarQuest","GLOBAL",2)~ THEN DO
+  ~SetGlobal("NWTrankarQuest","GLOBAL",2)AddexperienceParty(240000)EraseJournalEntry(@107304)~ SOLVED_JOURNAL @107359 EXIT
+  IF ~  GlobalGT("NWTrankarQuest","GLOBAL",1)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 34.1

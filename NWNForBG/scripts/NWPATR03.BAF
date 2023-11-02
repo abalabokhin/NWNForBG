@@ -27,7 +27,7 @@ THEN
 END
 
 IF
-	Global("ThomsAttack","GLOBAL",1)
+	Global("NWThomsAttack","GLOBAL",1)
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100

@@ -1,5 +1,5 @@
 IF
-	Global("JaregQuest","GLOBAL",5)
+	Global("NWJaregQuest","GLOBAL",5)
 THEN
 	RESPONSE #100
 		DestroySelf()
@@ -27,7 +27,7 @@ IF
 	Global("Run","LOCALS",0)
 	ActionListEmpty()
 	Delay(12)
-	!Global("JaregQuest","GLOBAL",5)
+	!Global("NWJaregQuest","GLOBAL",5)
 THEN
 	RESPONSE #100
 		SetGlobal("Run","LOCALS",1)

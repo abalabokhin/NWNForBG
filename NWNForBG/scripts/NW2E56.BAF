@@ -16,7 +16,7 @@ THEN
 END
 
 IF
-	Global("BaramQuest","GLOBAL",2)
+	Global("NWBaramQuest","GLOBAL",2)
 	Global("Journal","MYAREA",0)
 THEN
 	RESPONSE #100

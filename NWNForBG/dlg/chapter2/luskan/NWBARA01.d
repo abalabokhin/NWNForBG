@@ -9,19 +9,19 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,1)!Dead("NWBARAM")GlobalGT("BaramQuest","GLOBAL",0)~ THEN BEGIN 1 // from:
+~  RandomNum(5,1)!Dead("NWBARAM")GlobalGT("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 1 // from:
   SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,1)!Dead("NWBARAM")GlobalGT("KurtQuest","GLOBAL",0)~ THEN BEGIN 2 // from:
+~  RandomNum(5,1)!Dead("NWBARAM")GlobalGT("NWKurtQuest","GLOBAL",0)~ THEN BEGIN 2 // from:
   SAY @2
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,1)!Dead("NWBARAM")Global("KurtQuest","GLOBAL",0)Global("BaramQuest","GLOBAL",0)~ THEN BEGIN 3 // from:
+~  RandomNum(5,1)!Dead("NWBARAM")Global("NWKurtQuest","GLOBAL",0)Global("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 3 // from:
   SAY @3
   IF ~~ THEN EXIT
 END
@@ -33,19 +33,19 @@ IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,2)!Dead("NWBARAM")GlobalGT("BaramQuest","GLOBAL",0)~ THEN BEGIN 5 // from:
+~  RandomNum(5,2)!Dead("NWBARAM")GlobalGT("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 5 // from:
   SAY @5
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,2)!Dead("NWBARAM")GlobalGT("KurtQuest","GLOBAL",0)~ THEN BEGIN 6 // from:
+~  RandomNum(5,2)!Dead("NWBARAM")GlobalGT("NWKurtQuest","GLOBAL",0)~ THEN BEGIN 6 // from:
   SAY @6
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #7 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,2)!Dead("NWBARAM")Global("KurtQuest","GLOBAL",0)Global("BaramQuest","GLOBAL",0)~ THEN BEGIN 7 // from:
+~  RandomNum(5,2)!Dead("NWBARAM")Global("NWKurtQuest","GLOBAL",0)Global("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 7 // from:
   SAY @7
   IF ~~ THEN EXIT
 END
@@ -57,19 +57,19 @@ IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #9 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,3)!Dead("NWBARAM")GlobalGT("BaramQuest","GLOBAL",0)~ THEN BEGIN 9 // from:
+~  RandomNum(5,3)!Dead("NWBARAM")GlobalGT("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 9 // from:
   SAY @9
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #10 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,3)!Dead("NWBARAM")GlobalGT("KurtQuest","GLOBAL",0)~ THEN BEGIN 10 // from:
+~  RandomNum(5,3)!Dead("NWBARAM")GlobalGT("NWKurtQuest","GLOBAL",0)~ THEN BEGIN 10 // from:
   SAY @10
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #11 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,3)!Dead("NWBARAM")Global("KurtQuest","GLOBAL",0)Global("BaramQuest","GLOBAL",0)~ THEN BEGIN 11 // from:
+~  RandomNum(5,3)!Dead("NWBARAM")Global("NWKurtQuest","GLOBAL",0)Global("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 11 // from:
   SAY @11
   IF ~~ THEN EXIT
 END
@@ -81,19 +81,19 @@ IF WEIGHT #12 /* Triggers after states #: 9 even though they appear after this s
 END
 
 IF WEIGHT #13 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,4)!Dead("NWBARAM")GlobalGT("BaramQuest","GLOBAL",0)~ THEN BEGIN 13 // from:
+~  RandomNum(5,4)!Dead("NWBARAM")GlobalGT("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 13 // from:
   SAY @13
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #14 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,4)!Dead("NWBARAM")GlobalGT("KurtQuest","GLOBAL",0)~ THEN BEGIN 14 // from:
+~  RandomNum(5,4)!Dead("NWBARAM")GlobalGT("NWKurtQuest","GLOBAL",0)~ THEN BEGIN 14 // from:
   SAY @14
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #15 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(5,4)!Dead("NWBARAM")Global("KurtQuest","GLOBAL",0)Global("BaramQuest","GLOBAL",0)~ THEN BEGIN 15 // from:
+~  RandomNum(5,4)!Dead("NWBARAM")Global("NWKurtQuest","GLOBAL",0)Global("NWBaramQuest","GLOBAL",0)~ THEN BEGIN 15 // from:
   SAY @15
   IF ~~ THEN EXIT
 END

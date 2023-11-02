@@ -13,7 +13,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @5
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @7 GOTO 6
   IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @7 GOTO 7
   IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @8 GOTO 8
@@ -24,7 +24,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @12
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @7 GOTO 6
   IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @7 GOTO 7
   IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @8 GOTO 8
@@ -35,7 +35,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @13
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @7 GOTO 6
   IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @7 GOTO 7
   IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @8 GOTO 8
@@ -62,7 +62,7 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 1.3
   SAY @17
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @8 GOTO 8
   IF ~~ THEN REPLY @9 GOTO 9
   IF ~~ THEN REPLY @10 GOTO 10
@@ -113,7 +113,7 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 9.2
   SAY @17
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~  CheckStatGT(LastTalkedToBy(Myself),10,CHR)~ THEN REPLY @21 GOTO 16
   IF ~  CheckStatLT(LastTalkedToBy(Myself),11,CHR)~ THEN REPLY @21 GOTO 17
   IF ~~ THEN REPLY @22 GOTO 18
@@ -128,7 +128,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 9.4
   SAY @30
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @22 GOTO 18
   IF ~~ THEN REPLY @23 GOTO 19
 END
@@ -141,7 +141,7 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 9.6
   SAY @32
-  IF ~  Global("KnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWKnowPasswordNW","GLOBAL",1)~ THEN REPLY @6 GOTO 5
   IF ~  CheckStatGT(LastTalkedToBy(Myself),13,CHR)~ THEN REPLY @7 GOTO 6
   IF ~  CheckStatLT(LastTalkedToBy(Myself),14,CHR)~ THEN REPLY @7 GOTO 7
   IF ~  Gender(LastTalkedToBy(Myself),FEMALE)~ THEN REPLY @8 GOTO 8

@@ -1,5 +1,5 @@
 IF
-	Global("LuscanVizited","GLOBAL",1)
+	Global("NWLuscanVizited","GLOBAL",1)
 	InMyArea("NWARIBEH")  // ??????
 THEN
 	RESPONSE #100

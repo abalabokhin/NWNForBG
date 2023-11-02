@@ -268,7 +268,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("DestherIsTraitor","GLOBAL",0)~ THEN BEGIN 36 // from:
+~  !NumTimesTalkedTo(0)Global("NWDestherIsTraitor","GLOBAL",0)~ THEN BEGIN 36 // from:
   SAY @49
   IF ~  GlobalGT("KnowAboutDester","MYAREA",0)~ THEN REPLY @7 GOTO 5
   IF ~~ THEN REPLY @8 GOTO 6
@@ -283,7 +283,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("DestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",0)~ THEN BEGIN 37 // from:
+~  GlobalGT("NWDestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",0)~ THEN BEGIN 37 // from:
   SAY @50
   IF ~~ THEN GOTO 38
 END
@@ -347,7 +347,7 @@ END
 
 IF ~~ THEN BEGIN 48 // from: 47.4
   SAY @68
-  IF ~~ THEN DO ~SetGlobal("ToHelmTempleNWN","GLOBAL",1)SetGlobal("Blanc2","LOCALS",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWToHelmTempleNWN","GLOBAL",1)SetGlobal("Blanc2","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 49 // from: 44.1
@@ -382,7 +382,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("DestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",1)~ THEN BEGIN 53 // from:
+~  GlobalGT("NWDestherIsTraitor","GLOBAL",0)Global("Blanc2","LOCALS",1)~ THEN BEGIN 53 // from:
   SAY @73
   IF ~~ THEN GOTO 54
 END

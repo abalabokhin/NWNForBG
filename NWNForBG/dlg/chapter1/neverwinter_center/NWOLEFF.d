@@ -3,7 +3,7 @@
 BEGIN ~NWOLEFF~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWOleffQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  IsGabber(Player1)~ THEN REPLY @1 GOTO 1
   IF ~  !IsGabber(Player1)~ THEN REPLY @2 GOTO 1
@@ -148,7 +148,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("OleffQuest","GLOBAL",1)TakePartyItem("Nwmisc18")DestroyItem("Nwmisc18")GiveItemCreate("NWOLEFF1",LastTalkedToBy,1,0,0)GiveGoldForce(1000)
+  IF ~~ THEN DO ~SetGlobal("NWOleffQuest","GLOBAL",1)TakePartyItem("Nwmisc18")DestroyItem("Nwmisc18")GiveItemCreate("NWOLEFF1",LastTalkedToBy,1,0,0)GiveGoldForce(1000)
 AddexperienceParty(30000)~ UNSOLVED_JOURNAL @92702 EXIT
 END
 
@@ -218,7 +218,7 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 31.2
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("OleffQuest","GLOBAL",1)GiveItemCreate("NWOLEFF1",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @92702 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWOleffQuest","GLOBAL",1)GiveItemCreate("NWOLEFF1",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @92702 EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 31.3
@@ -229,10 +229,10 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 35 // from:
+~  Global("NWOleffQuest","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 35 // from:
   SAY @53
-  IF ~  GlobalLT("OleffQuestBreak","GLOBAL",3)~ THEN GOTO 36
-  IF ~  Global("OleffQuestBreak","GLOBAL",3)~ THEN DO ~SetGlobal("OleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92718 GOTO 37
+  IF ~  GlobalLT("NWOleffQuestBreak","GLOBAL",3)~ THEN GOTO 36
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",3)~ THEN DO ~SetGlobal("NWOleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92718 GOTO 37
 END
 
 IF ~~ THEN BEGIN 36 // from: 35.1
@@ -265,23 +265,23 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 38.1
   SAY @66
-  IF ~  GlobalGT("OleffQuestBreak","GLOBAL",0)~ THEN GOTO 45
-  IF ~  Global("OleffQuestBreak","GLOBAL",0)Global("MyArtefact","GLOBAL",2)~ THEN GOTO 46
-  IF ~  Global("OleffQuestBreak","GLOBAL",0)GlobalLT("MyArtefact","GLOBAL",2)~ THEN GOTO 47
+  IF ~  GlobalGT("NWOleffQuestBreak","GLOBAL",0)~ THEN GOTO 45
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",0)Global("NWMyArtefact","GLOBAL",2)~ THEN GOTO 46
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",0)GlobalLT("NWMyArtefact","GLOBAL",2)~ THEN GOTO 47
 END
 
 IF ~~ THEN BEGIN 41 // from: 38.2
   SAY @67
-  IF ~  GlobalGT("OleffQuestBreak","GLOBAL",0)~ THEN GOTO 49
-  IF ~  Global("OleffQuestBreak","GLOBAL",0)Global("MyArtefact","GLOBAL",2)~ THEN GOTO 50
-  IF ~  Global("OleffQuestBreak","GLOBAL",0)GlobalLT("MyArtefact","GLOBAL",2)~ THEN GOTO 51
+  IF ~  GlobalGT("NWOleffQuestBreak","GLOBAL",0)~ THEN GOTO 49
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",0)Global("NWMyArtefact","GLOBAL",2)~ THEN GOTO 50
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",0)GlobalLT("NWMyArtefact","GLOBAL",2)~ THEN GOTO 51
 END
 
 IF ~~ THEN BEGIN 42 // from: 38.3
   SAY @68
-  IF ~  GlobalGT("OleffQuestBreak","GLOBAL",0)~ THEN GOTO 52
-  IF ~  Global("OleffQuestBreak","GLOBAL",0)Global("MyArtefact","GLOBAL",2)~ THEN GOTO 53
-  IF ~  Global("OleffQuestBreak","GLOBAL",0)GlobalLT("MyArtefact","GLOBAL",2)~ THEN GOTO 54
+  IF ~  GlobalGT("NWOleffQuestBreak","GLOBAL",0)~ THEN GOTO 52
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",0)Global("NWMyArtefact","GLOBAL",2)~ THEN GOTO 53
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",0)GlobalLT("NWMyArtefact","GLOBAL",2)~ THEN GOTO 54
 END
 
 IF ~~ THEN BEGIN 43 // from: 38.4
@@ -304,18 +304,18 @@ END
 
 IF ~~ THEN BEGIN 46 // from: 40.2
   SAY @71
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc15")DestroyItem("Nwmisc15")IncrementGlobal("MyArtefact","GLOBAL",1)
-GiveGoldForce(1000)AddexperienceParty(60000)SetGlobal("OleffQuest","GLOBAL",2)GiveItemCreate("NWOLEFFU",LastTalkedToBy,1,1,1)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92731 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc15")DestroyItem("Nwmisc15")IncrementGlobal("NWMyArtefact","GLOBAL",1)
+GiveGoldForce(1000)AddexperienceParty(60000)SetGlobal("NWOleffQuest","GLOBAL",2)GiveItemCreate("NWOLEFFU",LastTalkedToBy,1,1,1)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92731 EXIT
 END
 
 IF ~~ THEN BEGIN 47 // from: 40.3
   SAY @73
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc15")DestroyItem("Nwmisc15")GiveGoldForce(1000)AddexperienceParty(30000)IncrementGlobal("MyArtefact","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc15")DestroyItem("Nwmisc15")GiveGoldForce(1000)AddexperienceParty(30000)IncrementGlobal("NWMyArtefact","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 48 // from: 45.1
   SAY @74
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc15")DestroyItem("Nwmisc15")GiveGoldForce(1000)AddexperienceParty(30000)SetGlobal("OleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92734 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc15")DestroyItem("Nwmisc15")GiveGoldForce(1000)AddexperienceParty(30000)SetGlobal("NWOleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92734 EXIT
 END
 
 IF ~~ THEN BEGIN 49 // from: 41.1
@@ -325,13 +325,13 @@ END
 
 IF ~~ THEN BEGIN 50 // from: 41.2
   SAY @71
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc16")DestroyItem("Nwmisc16")IncrementGlobal("MyArtefact","GLOBAL",1)
-GiveGoldForce(1000)AddexperienceParty(60000)SetGlobal("OleffQuest","GLOBAL",2)GiveItemCreate("NWOLEFFU",LastTalkedToBy,1,1,1)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92731 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc16")DestroyItem("Nwmisc16")IncrementGlobal("NWMyArtefact","GLOBAL",1)
+GiveGoldForce(1000)AddexperienceParty(60000)SetGlobal("NWOleffQuest","GLOBAL",2)GiveItemCreate("NWOLEFFU",LastTalkedToBy,1,1,1)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92731 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 41.3
   SAY @76
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc16")DestroyItem("Nwmisc16")GiveGoldForce(1000)AddexperienceParty(30000)IncrementGlobal("MyArtefact","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc16")DestroyItem("Nwmisc16")GiveGoldForce(1000)AddexperienceParty(30000)IncrementGlobal("NWMyArtefact","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 52 // from: 42.1
@@ -341,38 +341,38 @@ END
 
 IF ~~ THEN BEGIN 53 // from: 42.2
   SAY @71
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc17")DestroyItem("Nwmisc17")IncrementGlobal("MyArtefact","GLOBAL",1)
-GiveGoldForce(1000)AddexperienceParty(60000)SetGlobal("OleffQuest","GLOBAL",2)GiveItemCreate("NWOLEFFU",LastTalkedToBy,1,1,1)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92731 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc17")DestroyItem("Nwmisc17")IncrementGlobal("NWMyArtefact","GLOBAL",1)
+GiveGoldForce(1000)AddexperienceParty(60000)SetGlobal("NWOleffQuest","GLOBAL",2)GiveItemCreate("NWOLEFFU",LastTalkedToBy,1,1,1)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92731 EXIT
 END
 
 IF ~~ THEN BEGIN 54 // from: 42.3
   SAY @73
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc17")DestroyItem("Nwmisc17")GiveGoldForce(1000)AddexperienceParty(30000)IncrementGlobal("MyArtefact","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc17")DestroyItem("Nwmisc17")GiveGoldForce(1000)AddexperienceParty(30000)IncrementGlobal("NWMyArtefact","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 55 // from: 49.1
   SAY @74
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc16")DestroyItem("Nwmisc16")GiveGoldForce(1000)AddexperienceParty(30000)SetGlobal("OleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92734 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc16")DestroyItem("Nwmisc16")GiveGoldForce(1000)AddexperienceParty(30000)SetGlobal("NWOleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92734 EXIT
 END
 
 IF ~~ THEN BEGIN 56 // from: 52.1
   SAY @74
-  IF ~~ THEN DO ~TakePartyItem("Nwmisc17")DestroyItem("Nwmisc17")GiveGoldForce(1000)AddexperienceParty(30000)SetGlobal("OleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92734 EXIT
+  IF ~~ THEN DO ~TakePartyItem("Nwmisc17")DestroyItem("Nwmisc17")GiveGoldForce(1000)AddexperienceParty(30000)SetGlobal("NWOleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92734 EXIT
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",1)!IsGabber(Player1)~ THEN BEGIN 57 // from:
+~  Global("NWOleffQuest","GLOBAL",1)!IsGabber(Player1)~ THEN BEGIN 57 // from:
   SAY @77
-  IF ~  GlobalLT("OleffQuestBreak","GLOBAL",3)~ THEN GOTO 36
-  IF ~  Global("OleffQuestBreak","GLOBAL",3)~ THEN DO ~SetGlobal("OleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92718 GOTO 37
+  IF ~  GlobalLT("NWOleffQuestBreak","GLOBAL",3)~ THEN GOTO 36
+  IF ~  Global("NWOleffQuestBreak","GLOBAL",3)~ THEN DO ~SetGlobal("NWOleffQuest","GLOBAL",9)EraseJournalEntry(@92668)~ SOLVED_JOURNAL @92718 GOTO 37
 END
 
 // ------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",9)~ THEN BEGIN 58 // from:
+~  Global("NWOleffQuest","GLOBAL",9)~ THEN BEGIN 58 // from:
   SAY @78
   IF ~~ THEN GOTO 59
 END
@@ -393,7 +393,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",2)~ THEN BEGIN 61 // from:
+~  Global("NWOleffQuest","GLOBAL",2)~ THEN BEGIN 61 // from:
   SAY @81
   IF ~  PartyHasItem("NWOPHALT")~ THEN REPLY @7 GOTO 6
   IF ~  PartyHasItem("Nwmisc18")~ THEN REPLY @15 GOTO 62

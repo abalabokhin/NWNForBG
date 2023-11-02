@@ -12,7 +12,7 @@ IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @2
   IF ~  PartyHasItem("NWAMULNU")~ THEN REPLY @3 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @5 GOTO 4
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @5 GOTO 4
   IF ~  !PartyHasItem("NWAMULNU")~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 6
 END
@@ -47,8 +47,8 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 4.1
   SAY @21
-  IF ~~ THEN DO ~SetGlobal("BranFraud","GLOBAL",1)
-SetGlobal("Pause","LOCALS",1)GiveItem("NWBRUNRG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBranFraud","GLOBAL",1)
+SetGlobal("Pause","LOCALS",1)GiveItem("NWBRUNRG",LastTalkedToBy(Myself))IncrementGlobal("NWDeceiveNeurrik","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.5
@@ -109,7 +109,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Dialogue","LOCALS",1)Global("BranFraud","GLOBAL",0)~ THEN BEGIN 16 // from:
+~  Global("Dialogue","LOCALS",1)Global("NWBranFraud","GLOBAL",0)~ THEN BEGIN 16 // from:
   SAY @32
   IF ~~ THEN GOTO 22
 END
@@ -117,13 +117,13 @@ END
 IF ~~ THEN BEGIN 22 // from: 15.1
   SAY @33
   IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWBRUN","GLOBAL",0)
-SetGlobal("Dialogue","LOCALS",2)GiveItem("NWBRUNRG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)EscapeAreaObject("Tran2300")~ EXIT
+SetGlobal("Dialogue","LOCALS",2)GiveItem("NWBRUNRG",LastTalkedToBy(Myself))IncrementGlobal("NWDeceiveNeurrik","GLOBAL",-1)EscapeAreaObject("Tran2300")~ EXIT
 END
 
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Dialogue","LOCALS",1)Global("BranFraud","GLOBAL",1)~ THEN BEGIN 17 // from:
+~  Global("Dialogue","LOCALS",1)Global("NWBranFraud","GLOBAL",1)~ THEN BEGIN 17 // from:
   SAY @34
   IF ~~ THEN GOTO 18
 END
@@ -131,7 +131,7 @@ END
 IF ~~ THEN BEGIN 18 // from: 17.1
   SAY @33
   IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWBRUN","GLOBAL",0)
-SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWBRUNRG")IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)EscapeAreaObject("Tran2300")~ EXIT
+SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWBRUNRG")IncrementGlobal("NWDeceiveNeurrik","GLOBAL",-1)EscapeAreaObject("Tran2300")~ EXIT
 END
 
 // ---------------------------------

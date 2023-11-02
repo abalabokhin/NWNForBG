@@ -3,7 +3,7 @@
 BEGIN ~NWDOG1~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NyatarQuest","GLOBAL",0)OR(3)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)HasItemEquiped("NWNYATAL",LastTalkedToBy(Myself))~ THEN BEGIN 0 // from:
+~  GlobalGT("NWNyatarQuest","GLOBAL",0)OR(3)Class(LastTalkedToBy(Myself),DRUID_ALL)Class(LastTalkedToBy(Myself),RANGER_ALL)HasItemEquiped("NWNYATAL",LastTalkedToBy(Myself))~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -81,7 +81,7 @@ END
 // -------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NyatarQuest","GLOBAL",0)!Alignment(LastTalkedToBy(Myself),MASK_EVIL)~ THEN BEGIN 10 // from:
+~  Global("NWNyatarQuest","GLOBAL",0)!Alignment(LastTalkedToBy(Myself),MASK_EVIL)~ THEN BEGIN 10 // from:
   SAY @19
   IF ~~ THEN EXIT
 END
@@ -89,7 +89,7 @@ END
 // -------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NyatarQuest","GLOBAL",0)Alignment(LastTalkedToBy(Myself),MASK_EVIL)~ THEN BEGIN 11 // from:
+~  Global("NWNyatarQuest","GLOBAL",0)Alignment(LastTalkedToBy(Myself),MASK_EVIL)~ THEN BEGIN 11 // from:
   SAY @20
   IF ~~ THEN EXIT
 END
@@ -97,7 +97,7 @@ END
 // -------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NyatarQuest","GLOBAL",0)!Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)!HasItemEquiped("NWNYATAL",LastTalkedToBy(Myself))~ THEN BEGIN 12 // from:
+~  GlobalGT("NWNyatarQuest","GLOBAL",0)!Class(LastTalkedToBy(Myself),DRUID_ALL)!Class(LastTalkedToBy(Myself),RANGER_ALL)!HasItemEquiped("NWNYATAL",LastTalkedToBy(Myself))~ THEN BEGIN 12 // from:
   SAY @19
   IF ~~ THEN EXIT
 END

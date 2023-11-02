@@ -1,5 +1,5 @@
 IF
-	Global("Siege_Is_Lifted","GLOBAL",1)
+	Global("NWSiege_Is_Lifted","GLOBAL",1)
 	Global("IlcardDoor","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -48,10 +48,10 @@ IF
 	Global("Catapult3Dead","MYAREA",1)
 	Global("Catapult4Dead","MYAREA",1)
 	Global("Catapult5Dead","MYAREA",1)
-	GlobalLT("Siege_Is_Lifted","GLOBAL",2)
+	GlobalLT("NWSiege_Is_Lifted","GLOBAL",2)
 THEN
 	RESPONSE #100
-		SetGlobal("Siege_Is_Lifted","GLOBAL",2)
+		SetGlobal("NWSiege_Is_Lifted","GLOBAL",2)
 END
 
 IF

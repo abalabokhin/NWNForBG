@@ -3,7 +3,7 @@
 BEGIN ~NWBELIAL~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player1IsSummoner","MYAREA",1)CheckStatGT(Player1,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~Global("Player1IsSummoner","MYAREA",1)CheckStatGT(Player1,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -119,7 +119,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player1IsSummoner","MYAREA",1)!CheckStatGT(Player1,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
+~Global("Player1IsSummoner","MYAREA",1)!CheckStatGT(Player1,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
   IF ~~ THEN DO ~Enemy()EraseJournalEntry(@97801)~ UNSOLVED_JOURNAL @97835 EXIT
 END
@@ -127,7 +127,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("JaregQuest","GLOBAL",4)~ THEN BEGIN 19 // from:
+~  Global("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 19 // from:
   SAY @34
   IF ~~ THEN EXTERN ~NWGUARDN~ 53
 END
@@ -170,7 +170,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player2IsSummoner","MYAREA",1)CheckStatGT(Player2,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~Global("Player2IsSummoner","MYAREA",1)CheckStatGT(Player2,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -178,7 +178,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player2IsSummoner","MYAREA",1)!CheckStatGT(Player2,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
+~Global("Player2IsSummoner","MYAREA",1)!CheckStatGT(Player2,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
   IF ~~ THEN DO ~Enemy()EraseJournalEntry(@97801)~ UNSOLVED_JOURNAL @97835 EXIT
 END
@@ -186,7 +186,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player3IsSummoner","MYAREA",1)CheckStatGT(Player3,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~Global("Player3IsSummoner","MYAREA",1)CheckStatGT(Player3,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -194,7 +194,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player3IsSummoner","MYAREA",1)!CheckStatGT(Player3,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
+~Global("Player3IsSummoner","MYAREA",1)!CheckStatGT(Player3,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
   IF ~~ THEN DO ~Enemy()EraseJournalEntry(@97801)~ UNSOLVED_JOURNAL @97835 EXIT
 END
@@ -202,7 +202,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #7 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player4IsSummoner","MYAREA",1)CheckStatGT(Player4,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~Global("Player4IsSummoner","MYAREA",1)CheckStatGT(Player4,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -210,7 +210,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player4IsSummoner","MYAREA",1)!CheckStatGT(Player4,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
+~Global("Player4IsSummoner","MYAREA",1)!CheckStatGT(Player4,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
   IF ~~ THEN DO ~Enemy()EraseJournalEntry(@97801)~ UNSOLVED_JOURNAL @97835 EXIT
 END
@@ -218,7 +218,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #9 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player5IsSummoner","MYAREA",1)CheckStatGT(Player5,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~Global("Player5IsSummoner","MYAREA",1)CheckStatGT(Player5,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -226,7 +226,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #10 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player5IsSummoner","MYAREA",1)!CheckStatGT(Player5,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
+~Global("Player5IsSummoner","MYAREA",1)!CheckStatGT(Player5,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
   IF ~~ THEN DO ~Enemy()EraseJournalEntry(@97801)~ UNSOLVED_JOURNAL @97835 EXIT
 END
@@ -234,7 +234,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #11 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player6IsSummoner","MYAREA",1)CheckStatGT(Player6,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~Global("Player6IsSummoner","MYAREA",1)CheckStatGT(Player6,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -242,7 +242,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #12 /* Triggers after states #: 9 even though they appear after this state */
-~Global("Player6IsSummoner","MYAREA",1)!CheckStatGT(Player6,0,PROTECTION_FROM_EVIL)GlobalLT("JaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
+~Global("Player6IsSummoner","MYAREA",1)!CheckStatGT(Player6,0,PROTECTION_FROM_EVIL)GlobalLT("NWJaregQuest","GLOBAL",4)~ THEN BEGIN 18 // from:
   SAY @32
   IF ~~ THEN DO ~Enemy()EraseJournalEntry(@97801)~ UNSOLVED_JOURNAL @97835 EXIT
 END

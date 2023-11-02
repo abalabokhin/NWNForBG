@@ -10,18 +10,18 @@ END
 
 IF
 	OpenState("Door01",TRUE)
-	Global("3001to3000","GLOBAL",1)
+	Global("NW3001to3000","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("3001to3000","GLOBAL",0)
+		SetGlobal("NW3001to3000","GLOBAL",0)
 END
 
 IF
 	OpenState("Door01",FALSE)
-	Global("3001to3000","GLOBAL",1)
+	Global("NW3001to3000","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("3001to3000","GLOBAL",0)
+		SetGlobal("NW3001to3000","GLOBAL",0)
 		OpenDoor("Door01")
 END
 
@@ -31,7 +31,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DalciaDead","MYAREA",1)
-		IncrementGlobal("MemberDied","GLOBAL",1)
+		IncrementGlobal("NWMemberDied","GLOBAL",1)
 END
 
 IF
@@ -40,7 +40,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VandDead","MYAREA",1)
-		IncrementGlobal("MemberDied","GLOBAL",1)
+		IncrementGlobal("NWMemberDied","GLOBAL",1)
 END
 
 IF

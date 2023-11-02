@@ -43,11 +43,11 @@ THEN
 END
 
 IF
-	Global("attackSpellcaster","GLOBAL",1)
+	Global("NWattackSpellcaster","GLOBAL",1)
 	!Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #100
-		SetGlobal("attackSpellcaster","GLOBAL",0)
+		SetGlobal("NWattackSpellcaster","GLOBAL",0)
 		Enemy()
 END
 

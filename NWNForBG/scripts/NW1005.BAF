@@ -1,6 +1,6 @@
 IF
 	OR(2)
-		GlobalGT("DestherIsTraitor","GLOBAL",0)
+		GlobalGT("NWDestherIsTraitor","GLOBAL",0)
 		GlobalGT("NWNChapter","GLOBAL",1)
 	Exists("NWOLEFF")  // ?????
 	Global("DestroyOleff","MYAREA",0)

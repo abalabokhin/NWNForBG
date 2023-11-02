@@ -8,7 +8,7 @@ THEN
 END
 
 IF
-	GlobalLT("ENDOFBG1","GLOBAL",2)
+	GlobalLT("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,MALE)
 	General(Myself,HUMANOID)
@@ -22,7 +22,7 @@ THEN
 END
 
 IF
-	GlobalLT("ENDOFBG1","GLOBAL",2)
+	GlobalLT("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,FEMALE)
 	General(Myself,HUMANOID)
@@ -37,7 +37,7 @@ END
 
 IF
 	Detect([PC])
-	Global("ENDOFBG1","GLOBAL",2)
+	Global("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,MALE)
 	General(Myself,HUMANOID)
@@ -52,7 +52,7 @@ END
 
 IF
 	Detect([PC])
-	Global("ENDOFBG1","GLOBAL",2)
+	Global("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,FEMALE)
 	General(Myself,HUMANOID)
@@ -67,7 +67,7 @@ END
 
 IF
 	!Detect([PC])
-	Global("ENDOFBG1","GLOBAL",2)
+	Global("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,MALE)
 	General(Myself,HUMANOID)
@@ -79,7 +79,7 @@ END
 
 IF
 	!Detect([PC])
-	Global("ENDOFBG1","GLOBAL",2)
+	Global("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,FEMALE)
 	General(Myself,HUMANOID)

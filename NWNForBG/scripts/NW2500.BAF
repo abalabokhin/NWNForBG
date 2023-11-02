@@ -1,5 +1,5 @@
 IF
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("MapChange","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -9,10 +9,10 @@ THEN
 END
 
 IF
-	Global("Portal2510","GLOBAL",2)
+	Global("NWPortal2510","GLOBAL",2)
 THEN
 	RESPONSE #100
-		SetGlobal("Portal2510","GLOBAL",3)
+		SetGlobal("NWPortal2510","GLOBAL",3)
 		TriggerActivation("NWRUNETR",FALSE)
 		AmbientActivate("Runes",FALSE)
 		AmbientActivate("Portal",TRUE)
@@ -22,10 +22,10 @@ THEN
 END
 
 IF
-	Global("Portal2500","GLOBAL",1)
+	Global("NWPortal2500","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("Portal2500","GLOBAL",2)
+		SetGlobal("NWPortal2500","GLOBAL",2)
 		TriggerActivation("NWRUNETR",FALSE)
 		AmbientActivate("Runes",FALSE)
 		AmbientActivate("Portal",TRUE)
@@ -55,20 +55,20 @@ THEN
 END
 
 IF
-	Global("CorpseHasNwbook35","GLOBAL",0)
+	Global("NWCorpseHasNwbook35","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Corpse",CreateItem("Nwbook35",0,0,0))  // ??????? ?????????????
-		SetGlobal("CorpseHasNwbook35","GLOBAL",1)
+		SetGlobal("NWCorpseHasNwbook35","GLOBAL",1)
 		CreateCreature("NWCORPS1",[795.2007],0)  // ????
 		Continue()
 END
 
 IF
-	Global("BoneHasScrolln2","GLOBAL",0)
+	Global("NWBoneHasScrolln2","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ContainerEnable("Bone",TRUE)
-		SetGlobal("BoneHasScrolln2","GLOBAL",1)
+		SetGlobal("NWBoneHasScrolln2","GLOBAL",1)
 END
 

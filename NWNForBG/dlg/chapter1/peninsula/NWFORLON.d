@@ -3,7 +3,7 @@
 BEGIN ~NWFORLON~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -73,7 +73,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 9 // from:
+~  !NumTimesTalkedTo(0)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 9 // from:
   SAY @16
   IF ~~ THEN EXIT
 END
@@ -81,7 +81,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 10 // from:
+~  !Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 10 // from:
   SAY @17
   IF ~~ THEN EXIT
 END

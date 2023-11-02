@@ -3,7 +3,7 @@
 BEGIN ~NWWALTES~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  !Dead("NWDRAWL")Global("WaltersIsFree","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  !Dead("NWDRAWL")Global("NWWaltersIsFree","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN EXIT
 END
@@ -11,7 +11,7 @@ END
 // ------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Dead("NWDRAWL")Global("WaltersIsFree","GLOBAL",0)Global("Pause","LOCALS",0)~ THEN BEGIN 1 // from:
+~  Dead("NWDRAWL")Global("NWWaltersIsFree","GLOBAL",0)Global("Pause","LOCALS",0)~ THEN BEGIN 1 // from:
   SAY @1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
@@ -62,8 +62,8 @@ END
 IF ~~ THEN BEGIN 7 // from: 2.2
   SAY @19
   IF ~~ THEN REPLY @20 GOTO 13
-  IF ~ Global("WaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 14
-  IF ~ GlobalGT("WaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 15
+  IF ~ Global("NWWaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~ GlobalGT("NWWaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @22 GOTO 12
   IF ~~ THEN REPLY @10 GOTO 9
 END
@@ -106,8 +106,8 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 7.1
   SAY @35
-  IF ~ Global("WaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 14
-  IF ~ GlobalGT("WaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 15
+  IF ~ Global("NWWaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~ GlobalGT("NWWaltersIsFree","GLOBAL",0)~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @22 GOTO 12
   IF ~~ THEN REPLY @10 GOTO 9
 END
@@ -134,7 +134,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 9.1
   SAY @26
-  IF ~~ THEN DO ~SetGlobal("WaltersIsFree","GLOBAL",1)EscapeAreaDestroy(90)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWWaltersIsFree","GLOBAL",1)EscapeAreaDestroy(90)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 9.2
@@ -165,7 +165,7 @@ END
 // --------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Dead("NWDRAWL")Global("WaltersIsFree","GLOBAL",0)Global("Pause","LOCALS",1)~ THEN BEGIN 22 // from:
+~  Dead("NWDRAWL")Global("NWWaltersIsFree","GLOBAL",0)Global("Pause","LOCALS",1)~ THEN BEGIN 22 // from:
   SAY @43
   IF ~~ THEN REPLY @27 GOTO 17
   IF ~~ THEN REPLY @28 GOTO 18
@@ -175,20 +175,20 @@ END
 // --------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("WaltersIsFree","GLOBAL",2)~ THEN BEGIN 23 // from:
+~  Global("NWWaltersIsFree","GLOBAL",2)~ THEN BEGIN 23 // from:
   SAY @44
   IF ~~ THEN GOTO 24
 END
 
 IF ~~ THEN BEGIN 24 // from: 23.1
   SAY @45
-  IF ~~ THEN DO ~SetGlobal("WaltersIsFree","GLOBAL",3)AddexperienceParty(20000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWWaltersIsFree","GLOBAL",3)AddexperienceParty(20000)~ EXIT
 END
 
 // --------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("WaltersIsFree","GLOBAL",3)~ THEN BEGIN 25 // from:
+~  Global("NWWaltersIsFree","GLOBAL",3)~ THEN BEGIN 25 // from:
   SAY @44
   IF ~~ THEN GOTO 26
 END

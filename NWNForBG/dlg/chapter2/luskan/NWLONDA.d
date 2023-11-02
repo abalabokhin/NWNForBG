@@ -1,15 +1,15 @@
 // Лускан  Тесак Лонда   Эта благородная женщина явно видела и лучшие времена. Ее одежда износилась, а сама она выглядит донельзя угнетенной.
 
-// Global("LondaQuest","GLOBAL,2) - гг знает что дети мертвы
+// Global("NWLondaQuest","GLOBAL,2) - гг знает что дети мертвы
 
-// Global("BaramQuest","GLOBAL,1) - состоялся разговор с Барамом
+// Global("NWBaramQuest","GLOBAL,1) - состоялся разговор с Барамом
 
-// GlobalGT("BaramQuest","GLOBAL,1) - выполнено задание Барама
+// GlobalGT("NWBaramQuest","GLOBAL,1) - выполнено задание Барама
 
 BEGIN ~NWLONDA~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("MyQuest","LOCALS",0)Global("LondaQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("MyQuest","LOCALS",0)Global("NWLondaQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -165,13 +165,13 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 16.5
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("MyQuest","LOCALS",1)SetGlobal("LondaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101378 EXIT
+  IF ~~ THEN DO ~SetGlobal("MyQuest","LOCALS",1)SetGlobal("NWLondaQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @101378 EXIT
 END
 
 // ----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("MyQuest","LOCALS",1)Global("LondaQuest","GLOBAL",0)~ THEN BEGIN 23 // from:
+~  Global("MyQuest","LOCALS",1)Global("NWLondaQuest","GLOBAL",0)~ THEN BEGIN 23 // from:
   SAY @50
   IF ~~ THEN REPLY @24 GOTO 13
   IF ~~ THEN REPLY @25 GOTO 13
@@ -182,20 +182,20 @@ END
 // ----------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)Global("LondaQuest","GLOBAL",1)Global("LondaQuest","GLOBAL",2)Global("MyQuest","LOCALS",1)~ THEN BEGIN 24 // from:
+~  OR(2)Global("NWLondaQuest","GLOBAL",1)Global("NWLondaQuest","GLOBAL",2)Global("MyQuest","LOCALS",1)~ THEN BEGIN 24 // from:
   SAY @51
-  IF ~  Global("NWLONDA","GLOBAL",1)GlobalLT("BaramQuest","GLOBAL",2)~ THEN REPLY @52 GOTO 25
-  IF ~  GlobalGT("BaramQuest","GLOBAL",1)Global("LondaQuest","GLOBAL",1)~ THEN REPLY @53 GOTO 26
-  IF ~  Global("LondaQuest","GLOBAL",2)~ THEN REPLY @54 GOTO 27
-  IF ~  Global("LondaQuest","GLOBAL",2)~ THEN REPLY @55 GOTO 28
-  IF ~  Global("LondaQuest","GLOBAL",2)~ THEN REPLY @56 GOTO 29
+  IF ~  Global("NWLONDA","GLOBAL",1)GlobalLT("NWBaramQuest","GLOBAL",2)~ THEN REPLY @52 GOTO 25
+  IF ~  GlobalGT("NWBaramQuest","GLOBAL",1)Global("NWLondaQuest","GLOBAL",1)~ THEN REPLY @53 GOTO 26
+  IF ~  Global("NWLondaQuest","GLOBAL",2)~ THEN REPLY @54 GOTO 27
+  IF ~  Global("NWLondaQuest","GLOBAL",2)~ THEN REPLY @55 GOTO 28
+  IF ~  Global("NWLondaQuest","GLOBAL",2)~ THEN REPLY @56 GOTO 29
   IF ~~ THEN REPLY @57 GOTO 30
 END
 
 IF ~~ THEN BEGIN 25 // from: 24.1
   SAY @58
-  IF ~  GlobalGT("KnowBaram","GLOBAL",0)~ THEN REPLY @59 GOTO 31
-  IF ~  GlobalGT("KnowBaram","GLOBAL",0)~ THEN REPLY @60 GOTO 32
+  IF ~  GlobalGT("NWKnowBaram","GLOBAL",0)~ THEN REPLY @59 GOTO 31
+  IF ~  GlobalGT("NWKnowBaram","GLOBAL",0)~ THEN REPLY @60 GOTO 32
   IF ~~ THEN REPLY @61 GOTO 33
 END
 
@@ -252,7 +252,7 @@ END
 
 IF ~~ THEN BEGIN 35 // from: 28.1
   SAY @77
-  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)AddexperienceParty(60000)SetGlobal("LondaQuest","GLOBAL",3)TakePartyItem("NWMISC59")GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)AddexperienceParty(60000)SetGlobal("NWLondaQuest","GLOBAL",3)TakePartyItem("NWMISC59")GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 28.2
@@ -269,7 +269,7 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 36.2
   SAY @84
-  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)AddexperienceParty(30000)SetGlobal("LondaQuest","GLOBAL",3)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)AddexperienceParty(30000)SetGlobal("NWLondaQuest","GLOBAL",3)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 36.3
@@ -281,13 +281,13 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 39.3
   SAY @87
-  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)SetGlobal("LondaQuest","GLOBAL",3)ReputationInc(-1)GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@101378)EraseJournalEntry(@101379)EraseJournalEntry(@101380)EraseJournalEntry(@101381)SetGlobal("NWLondaQuest","GLOBAL",3)ReputationInc(-1)GiveItemCreate("Nwkey09",LastTalkedToBy,0,0,0)EscapeAreaObject("To2E05")~ SOLVED_JOURNAL @101448 EXIT
 END
 
 // ----------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LondaQuest","GLOBAL",2)Global("MyQuest","LOCALS",0)~ THEN BEGIN 41 // from:
+~  Global("NWLondaQuest","GLOBAL",2)Global("MyQuest","LOCALS",0)~ THEN BEGIN 41 // from:
   SAY @88
   IF ~~ THEN REPLY @54 GOTO 27
   IF ~~ THEN REPLY @55 GOTO 28

@@ -22,7 +22,7 @@ END
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)Global("CloakTower","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 3 // from:
+~  Class(Player1,MAGE_ALL)Global("NWCloakTower","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 3 // from:
   SAY @5
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @6 GOTO 4
@@ -60,19 +60,19 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
   SAY @14
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",1)GiveItemCreate("NWELTURY",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @90834 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWCloakTower","GLOBAL",1)GiveItemCreate("NWELTURY",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @90834 EXIT
 END
 
 // -------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)GlobalGT("CloakTower","GLOBAL",0)GlobalLT("CloakTower","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 9 // from:
+~  Class(Player1,MAGE_ALL)GlobalGT("NWCloakTower","GLOBAL",0)GlobalLT("NWCloakTower","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 9 // from:
   SAY @16
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("CloakTower","GLOBAL",1)PartyHasItem("Nwmisc20")PartyHasItem("Nwmisc21")PartyHasItem("Nwmisc22")
+  IF ~  Global("NWCloakTower","GLOBAL",1)PartyHasItem("Nwmisc20")PartyHasItem("Nwmisc21")PartyHasItem("Nwmisc22")
 PartyHasItem("Nwmisc23")~ THEN REPLY @17 GOTO 10
-  IF ~  Global("CloakTower","GLOBAL",2)~ THEN REPLY @17 GOTO 11
-  IF ~  Global("CloakTower","GLOBAL",1)OR(4)!PartyHasItem("Nwmisc20")!PartyHasItem("Nwmisc21")!PartyHasItem("Nwmisc22")
+  IF ~  Global("NWCloakTower","GLOBAL",2)~ THEN REPLY @17 GOTO 11
+  IF ~  Global("NWCloakTower","GLOBAL",1)OR(4)!PartyHasItem("Nwmisc20")!PartyHasItem("Nwmisc21")!PartyHasItem("Nwmisc22")
 !PartyHasItem("Nwmisc23")~ THEN REPLY @17 GOTO 12
   IF ~~ THEN REPLY @9 GOTO 7
 END
@@ -84,14 +84,14 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 10.1
   SAY @19
- IF ~~ THEN REPLY @20 DO ~SetGlobal("CloakTower","GLOBAL",3)TakePartyItem("Nwmisc20")TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@90834)StartCutSceneMode()StartCutScene("NWELTTET")~ UNSOLVED_JOURNAL @90835 EXIT
-  IF ~~ THEN REPLY @22 DO ~SetGlobal("CloakTower","GLOBAL",2)TakePartyItem("Nwmisc20")
+ IF ~~ THEN REPLY @20 DO ~SetGlobal("NWCloakTower","GLOBAL",3)TakePartyItem("Nwmisc20")TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@90834)StartCutSceneMode()StartCutScene("NWELTTET")~ UNSOLVED_JOURNAL @90835 EXIT
+  IF ~~ THEN REPLY @22 DO ~SetGlobal("NWCloakTower","GLOBAL",2)TakePartyItem("Nwmisc20")
 TakePartyItem("Nwmisc21")TakePartyItem("Nwmisc22")TakePartyItem("Nwmisc23")AddexperienceParty(80000)EraseJournalEntry(@90834)~ UNSOLVED_JOURNAL @90835 GOTO 15
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.2
   SAY @23
-  IF ~~ THEN REPLY @20 DO ~SetGlobal("CloakTower","GLOBAL",3)StartCutSceneMode()StartCutScene("NWELTTET")~ EXIT
+  IF ~~ THEN REPLY @20 DO ~SetGlobal("NWCloakTower","GLOBAL",3)StartCutSceneMode()StartCutScene("NWELTTET")~ EXIT
   IF ~~ THEN REPLY @22 GOTO 15
 END
 
@@ -111,7 +111,7 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 9.5
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",4)GiveItemCreate("NWELTCLK",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@90835)~ SOLVED_JOURNAL @90866 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWCloakTower","GLOBAL",4)GiveItemCreate("NWELTCLK",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@90835)~ SOLVED_JOURNAL @90866 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 11.2
@@ -121,13 +121,13 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 9.2
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",3)TakePartyGold(500)StartCutSceneMode()StartCutScene("NWELTTET")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWCloakTower","GLOBAL",3)TakePartyGold(500)StartCutSceneMode()StartCutScene("NWELTTET")~ EXIT
 END
 
 // ---------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)Global("CloakTower","GLOBAL",4)IsGabber(Player1)~ THEN BEGIN 17 // from:
+~  Class(Player1,MAGE_ALL)Global("NWCloakTower","GLOBAL",4)IsGabber(Player1)~ THEN BEGIN 17 // from:
   SAY @32
   IF ~~ THEN REPLY @33 GOTO 18
   IF ~~ THEN REPLY @1 GOTO 1
@@ -142,7 +142,7 @@ END
 // ---------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)Global("CloakTower","GLOBAL",3)IsGabber(Player1)!Dead("NWELTGOM")~ THEN BEGIN 20 // from:
+~  Class(Player1,MAGE_ALL)Global("NWCloakTower","GLOBAL",3)IsGabber(Player1)!Dead("NWELTGOM")~ THEN BEGIN 20 // from:
   SAY @25
   IF ~  PartyGoldGT(499)~ THEN REPLY @26 GOTO 16
   IF ~~ THEN REPLY @27 GOTO 15
@@ -153,8 +153,8 @@ END
 // ---------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)Global("CloakTower","GLOBAL",3)IsGabber(Player1)Dead("NWELTGOM")~ THEN BEGIN 21 // from:
+~  Class(Player1,MAGE_ALL)Global("NWCloakTower","GLOBAL",3)IsGabber(Player1)Dead("NWELTGOM")~ THEN BEGIN 21 // from:
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("CloakTower","GLOBAL",4)GiveItemCreate("NWELTCLK",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@90835)~ SOLVED_JOURNAL @90866 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWCloakTower","GLOBAL",4)GiveItemCreate("NWELTCLK",LastTalkedToBy,1,1,1)AddexperienceParty(40000)EraseJournalEntry(@90835)~ SOLVED_JOURNAL @90866 EXIT
 END
 

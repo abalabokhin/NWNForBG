@@ -9,7 +9,7 @@ END
 // -----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 35 even though they appear after this state */
-~Global("KickedOut","LOCALS",0)Global("BoddinokEscape","GLOBAL",0)~ THEN BEGIN 0 // from:
+~Global("KickedOut","LOCALS",0)Global("NWBoddinokEscape","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @1
   IF ~~ THEN REPLY @2 GOTO 1
   IF ~~ THEN REPLY @3 GOTO 200
@@ -22,7 +22,7 @@ MoveGlobal("NW1012","NWBODDIK",[806.360])~ EXIT
   IF ~  Global("NWNChapter","GLOBAL",2)~ THEN REPLY @6 DO ~SetGlobal("KickedOut","LOCALS",1)
 MoveGlobal("NW2020","NWBODDIK",[484.525])~ EXIT
   IF ~  !Global("NWNChapter","GLOBAL",2)~ THEN REPLY @7 DO ~SetGlobal("KickedOut","LOCALS",1)~ EXIT
-  IF ~  Global("NWNChapter","GLOBAL",2)~ THEN REPLY @7 DO ~SetGlobal("KickedOut","LOCALS",1)SetGlobal("BoddinokOut","GLOBAL",1)~ EXIT
+  IF ~  Global("NWNChapter","GLOBAL",2)~ THEN REPLY @7 DO ~SetGlobal("KickedOut","LOCALS",1)SetGlobal("NWBoddinokOut","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 200 // from: 0.2
@@ -33,7 +33,7 @@ END
 // -----------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 35 even though they appear after this state */
-~Global("KickedOut","LOCALS",1)Global("BoddinokEscape","GLOBAL",0)~ THEN BEGIN 2 // from:
+~Global("KickedOut","LOCALS",1)Global("NWBoddinokEscape","GLOBAL",0)~ THEN BEGIN 2 // from:
   SAY @9
   IF ~~ THEN REPLY @10 GOTO 3
   IF ~~ THEN REPLY @11 GOTO 4
@@ -41,7 +41,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 2.1
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("BoddinokOut","GLOBAL",0)SetGlobal("KickedOut","LOCALS",0)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokOut","GLOBAL",0)SetGlobal("KickedOut","LOCALS",0)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.2
@@ -52,7 +52,7 @@ END
 // --------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("BoddinokReleased","GLOBAL",1)~ THEN BEGIN 23 // from:
+~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("NWBoddinokReleased","GLOBAL",1)~ THEN BEGIN 23 // from:
   SAY @14
   IF ~~ THEN REPLY @15 GOTO 24
   IF ~~ THEN REPLY @16 GOTO 25
@@ -132,13 +132,13 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 32.3
   SAY @39
-  IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("BoddinokEscape","GLOBAL",0)SetGlobal("BoddinokReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("NWBoddinokEscape","GLOBAL",0)SetGlobal("NWBoddinokReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 // --------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("BoddinokReleased","GLOBAL",1)~ THEN BEGIN 37 // from:
+~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("NWBoddinokReleased","GLOBAL",1)~ THEN BEGIN 37 // from:
   SAY @40
   IF ~~ THEN REPLY @41 GOTO 38
   IF ~~ THEN REPLY @25 GOTO 29

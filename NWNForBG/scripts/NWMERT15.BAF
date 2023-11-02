@@ -1,5 +1,5 @@
 IF
-	Global("J#CearaFight","GLOBAL",9)
+	Global("NWJ#CearaFight","GLOBAL",9)
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
@@ -7,7 +7,7 @@ THEN
 END
 
 IF
-	!Global("J#CearaFight","GLOBAL",9)
+	!Global("NWJ#CearaFight","GLOBAL",9)
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
@@ -60,7 +60,7 @@ END
 
 IF
 	Allegiance(Myself,NEUTRAL)
-	Global("J#CearaFight","GLOBAL",8)
+	Global("NWJ#CearaFight","GLOBAL",8)
 THEN
 	RESPONSE #100
 		Enemy()

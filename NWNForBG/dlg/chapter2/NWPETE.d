@@ -52,7 +52,7 @@ IF ~~ THEN BEGIN 7 // from: 4.1 5.1 6.1
   IF ~~ THEN REPLY @18 GOTO 8
   IF ~~ THEN REPLY @19 GOTO 9
   IF ~  Dead("NWSILVEK")~ THEN REPLY @20 GOTO 10
-  IF ~  !Dead("NWSILVEK")Global("SilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  !Dead("NWSILVEK")Global("NWSilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @22 GOTO 12
 END
 
@@ -61,7 +61,7 @@ IF ~~ THEN BEGIN 8 // from: 7.1
   IF ~  Global("KnowsAboutCave","LOCALS",1)~ THEN REPLY @24 GOTO 13
   IF ~~ THEN REPLY @25 GOTO 14
   IF ~  Dead("NWSILVEK")~ THEN REPLY @20 GOTO 10
-  IF ~  !Dead("NWSILVEK")Global("SilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  !Dead("NWSILVEK")Global("NWSilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 16
 END
@@ -98,7 +98,7 @@ END
 IF ~~ THEN BEGIN 13 // from: 7.5
   SAY @42
   IF ~  Dead("NWSILVEK")~ THEN REPLY @20 GOTO 10
-  IF ~  !Dead("NWSILVEK")Global("SilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  !Dead("NWSILVEK")Global("NWSilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 16
 END
@@ -107,15 +107,15 @@ IF ~~ THEN BEGIN 14 // from: 7.5
   SAY @43
   IF ~  Global("KnowsAboutCave","LOCALS",1)~ THEN REPLY @24 GOTO 13
   IF ~  Dead("NWSILVEK")~ THEN REPLY @20 GOTO 10
-  IF ~  !Dead("NWSILVEK")Global("SilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  !Dead("NWSILVEK")Global("NWSilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 16
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.5
   SAY @44
-  IF ~  Global("PeteQuest","GLOBAL",0)~ THEN DO ~SetGlobal("PeteQuest","GLOBAL",1)~ EXIT
-  IF ~  !Global("PeteQuest","GLOBAL",0)~ THEN EXIT
+  IF ~  Global("NWPeteQuest","GLOBAL",0)~ THEN DO ~SetGlobal("NWPeteQuest","GLOBAL",1)~ EXIT
+  IF ~  !Global("NWPeteQuest","GLOBAL",0)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 8.6
@@ -125,27 +125,27 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 10.1
   SAY @46
-  IF ~~ THEN DO ~SetGlobal("PeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 10.2
   SAY @47
-  IF ~~ THEN DO ~SetGlobal("PeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)GivePartyGold(175)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)GivePartyGold(175)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 10.3
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("PeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 10.4
   SAY @49
-  IF ~~ THEN DO ~SetGlobal("PeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPeteQuest","GLOBAL",2)AddexperienceParty(52000)GiveGoldForce(500)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 10.5
   SAY @50
-  IF ~~ THEN DO ~SetGlobal("PeteQuest","GLOBAL",2)AddexperienceParty(52000)ReputationInc(1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWPeteQuest","GLOBAL",2)AddexperienceParty(52000)ReputationInc(1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 11.1
@@ -186,13 +186,13 @@ END
 IF ~~ THEN BEGIN 27 // from: 12.4
   SAY @57
   IF ~  Dead("NWSILVEK")~ THEN REPLY @20 GOTO 10
-  IF ~  !Dead("NWSILVEK")Global("SilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  !Dead("NWSILVEK")Global("NWSilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 16
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~   !NumTimesTalkedTo(0)Global("PeteQuest","GLOBAL",0)~ THEN BEGIN 28 // from:
+~   !NumTimesTalkedTo(0)Global("NWPeteQuest","GLOBAL",0)~ THEN BEGIN 28 // from:
   SAY @58
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 2
@@ -200,18 +200,18 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~   !NumTimesTalkedTo(0)Global("PeteQuest","GLOBAL",1)~ THEN BEGIN 29 // from:
+~   !NumTimesTalkedTo(0)Global("NWPeteQuest","GLOBAL",1)~ THEN BEGIN 29 // from:
   SAY @59
   IF ~~ THEN REPLY @24 GOTO 13
   IF ~~ THEN REPLY @25 GOTO 14
   IF ~  Dead("NWSILVEK")~ THEN REPLY @20 GOTO 10
-  IF ~  !Dead("NWSILVEK")Global("SilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  !Dead("NWSILVEK")Global("NWSilverbackTalk","GLOBAL",1)~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 16
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~   Global("PeteQuest","GLOBAL",2)~ THEN BEGIN 30 // from:
+~   Global("NWPeteQuest","GLOBAL",2)~ THEN BEGIN 30 // from:
   SAY @60
   IF ~~ THEN EXIT
 END

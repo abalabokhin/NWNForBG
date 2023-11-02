@@ -3,10 +3,10 @@
 BEGIN ~NWROLGAN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RolganAcquitted","GLOBAL",0)!Global("IslandDialogue","GLOBAL",3)~ THEN BEGIN 0 // from:
+~  Global("NWRolganAcquitted","GLOBAL",0)!Global("NWIslandDialogue","GLOBAL",3)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -50,26 +50,26 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 7.1
   SAY @8
-  IF ~~ THEN DO ~SetGlobal("RolgansTalk","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRolgansTalk","GLOBAL",1)~ EXIT
 END
 
 // --------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RolganAcquitted","GLOBAL",1)!Global("IslandDialogue","GLOBAL",3)~ THEN BEGIN 9 // from:
+~  Global("NWRolganAcquitted","GLOBAL",1)!Global("NWIslandDialogue","GLOBAL",3)~ THEN BEGIN 9 // from:
   SAY @15
   IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
   SAY @16
-  IF ~~ THEN DO ~SetGlobal("RolganAcquitted","GLOBAL",2)AddexperienceParty(60000)EscapeAreaObject("To3000")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRolganAcquitted","GLOBAL",2)AddexperienceParty(60000)EscapeAreaObject("To3000")~ EXIT
 END
 
 // --------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganAcquitted","GLOBAL",1)!Global("IslandDialogue","GLOBAL",3)~ THEN BEGIN 11 // from:
+~  GlobalGT("NWRolganAcquitted","GLOBAL",1)!Global("NWIslandDialogue","GLOBAL",3)~ THEN BEGIN 11 // from:
   SAY @15
   IF ~~ THEN GOTO 12
 END
@@ -82,7 +82,7 @@ END
 // --------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("IslandDialogue","GLOBAL",3)~ THEN BEGIN 13 // from:
+~  Global("NWIslandDialogue","GLOBAL",3)~ THEN BEGIN 13 // from:
 SAY @17
   IF ~~ THEN REPLY @18 GOTO 14
   IF ~~ THEN REPLY @19 GOTO 15

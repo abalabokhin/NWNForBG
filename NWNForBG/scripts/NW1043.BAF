@@ -46,11 +46,11 @@ THEN
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat1",GOODCUTOFF)
 	!Dead("Nwplat1")
 	!InMyArea("Nwplat1")
-	Global("In1042Plat1","GLOBAL",1)
+	Global("NWIn1042Plat1","GLOBAL",1)
 	Global("In1043Plat1","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -59,11 +59,11 @@ THEN
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat2",GOODCUTOFF)
 	!Dead("Nwplat2")
 	!InMyArea("Nwplat2")
-	Global("In1042Plat2","GLOBAL",1)
+	Global("NWIn1042Plat2","GLOBAL",1)
 	Global("In1043Plat2","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -72,11 +72,11 @@ THEN
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat3",GOODCUTOFF)
 	!Dead("Nwplat3")
 	!InMyArea("Nwplat3")
-	Global("In1042Plat3","GLOBAL",1)
+	Global("NWIn1042Plat3","GLOBAL",1)
 	Global("In1043Plat3","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -85,11 +85,11 @@ THEN
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat4",GOODCUTOFF)
 	!Dead("Nwplat4")
 	!InMyArea("Nwplat4")
-	Global("In1042Plat4","GLOBAL",1)
+	Global("NWIn1042Plat4","GLOBAL",1)
 	Global("In1043Plat4","MYAREA",0)
 THEN
 	RESPONSE #100

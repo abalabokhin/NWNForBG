@@ -3,7 +3,7 @@
 BEGIN ~NWGOBLIN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("NeutralGoblins","MYAREA",0)Global("GoblinQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NeutralGoblins","MYAREA",0)Global("NWGoblinQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2

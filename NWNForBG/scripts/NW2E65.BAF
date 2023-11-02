@@ -22,9 +22,9 @@ THEN
 END
 
 IF
-	GlobalLT("LuscanTower","GLOBAL",8)
+	GlobalLT("NWLuscanTower","GLOBAL",8)
 THEN
 	RESPONSE #100
-		SetGlobal("LuscanTower","GLOBAL",8)
+		SetGlobal("NWLuscanTower","GLOBAL",8)
 END
 

@@ -10,10 +10,10 @@ END
 
 IF
 	PartyHasItem("NWMISC16")  // ?????? ?????? ???????
-	GlobalLT("TelmaSecret","GLOBAL",2)
+	GlobalLT("NWTelmaSecret","GLOBAL",2)
 THEN
 	RESPONSE #100
 		SoundActivate("Undead",FALSE)
-		SetGlobal("TelmaSecret","GLOBAL",2)
+		SetGlobal("NWTelmaSecret","GLOBAL",2)
 END
 

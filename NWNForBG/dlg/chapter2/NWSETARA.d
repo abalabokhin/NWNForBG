@@ -7,7 +7,7 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("Gem","LOCALS",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("Gem","LOCALS",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
 END
 
@@ -95,7 +95,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 13.1
   SAY @33
-  IF ~ Global("SetaraQuest","GLOBAL",1)PartyHasItem("NWSEMIRR")~ THEN REPLY @34 GOTO 23
+  IF ~ Global("NWSetaraQuest","GLOBAL",1)PartyHasItem("NWSEMIRR")~ THEN REPLY @34 GOTO 23
   IF ~~ THEN REPLY @35 GOTO 18
   IF ~~ THEN REPLY @36 GOTO 19
   IF ~~ THEN REPLY @10 GOTO 8
@@ -126,7 +126,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 17.1
   SAY @42
-  IF ~~ THEN DO ~SetGlobal("SetaraQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99934 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSetaraQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99934 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 17.2
@@ -195,13 +195,13 @@ END
 IF ~~ THEN BEGIN 29 // from: 28.1
   SAY @60
   IF ~~ THEN DO ~SetGlobal("Gem","LOCALS",1)TakePartyItem("NWSEMIRR")
-SetGlobal("SetaraQuest","GLOBAL",2)GiveItem("NWSGEM",LastTalkedToBy)GiveItem("NWSETKEY",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@99934)~ SOLVED_JOURNAL @99994 EXIT
+SetGlobal("NWSetaraQuest","GLOBAL",2)GiveItem("NWSGEM",LastTalkedToBy)GiveItem("NWSETKEY",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@99934)~ SOLVED_JOURNAL @99994 EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 28.2
   SAY @62
   IF ~~ THEN DO ~SetGlobal("Gem","LOCALS",1)TakePartyItem("NWSEMIRR")
-SetGlobal("SetaraQuest","GLOBAL",2)GiveItem("NWSGEM",LastTalkedToBy)GiveItem("NWSETKEY",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@99934)~ SOLVED_JOURNAL @99994 EXIT
+SetGlobal("NWSetaraQuest","GLOBAL",2)GiveItem("NWSGEM",LastTalkedToBy)GiveItem("NWSETKEY",LastTalkedToBy)AddexperienceParty(20000)EraseJournalEntry(@99934)~ SOLVED_JOURNAL @99994 EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 28.3
@@ -213,10 +213,10 @@ END
 // -----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("SetaraQuest","GLOBAL",0)RandomNum(2,1)~ THEN BEGIN 32 // from:
+~  !NumTimesTalkedTo(0)Global("NWSetaraQuest","GLOBAL",0)RandomNum(2,1)~ THEN BEGIN 32 // from:
   SAY @64
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("Gem","LOCALS",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("Gem","LOCALS",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @9 GOTO 7
   IF ~~ THEN REPLY @65 GOTO 8
 END
@@ -224,10 +224,10 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("SetaraQuest","GLOBAL",0)RandomNum(2,2)~ THEN BEGIN 37 // from:
+~  !NumTimesTalkedTo(0)Global("NWSetaraQuest","GLOBAL",0)RandomNum(2,2)~ THEN BEGIN 37 // from:
   SAY @66
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("Gem","LOCALS",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("Gem","LOCALS",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @9 GOTO 7
   IF ~~ THEN REPLY @65 GOTO 8
 END
@@ -235,7 +235,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("SetaraQuest","GLOBAL",1)~ THEN BEGIN 33 // from:
+~  !NumTimesTalkedTo(0)Global("NWSetaraQuest","GLOBAL",1)~ THEN BEGIN 33 // from:
   SAY @67
   IF ~~ THEN REPLY @68 GOTO 34
   IF ~ PartyHasItem("NWSEMIRR")~ THEN REPLY @34 GOTO 23
@@ -255,7 +255,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalGT("SetaraQuest","GLOBAL",1)~ THEN BEGIN 36 // from:
+~  !NumTimesTalkedTo(0)GlobalGT("NWSetaraQuest","GLOBAL",1)~ THEN BEGIN 36 // from:
   SAY @72
   IF ~~ THEN EXIT
 END

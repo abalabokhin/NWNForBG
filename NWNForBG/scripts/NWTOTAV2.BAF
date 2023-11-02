@@ -15,7 +15,7 @@ THEN
 		MultiPlayerSync()
 		FadeFromColor([20.0],0)
 		Wait(2)
-		SetGlobal("KnowsAboutMatch","GLOBAL",7)
+		SetGlobal("NWKnowsAboutMatch","GLOBAL",7)
 		CloseDoor("Door1")
 		Lock("Door1")
 		Wait(1)

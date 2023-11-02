@@ -3,7 +3,7 @@
 BEGIN ~NWTOMI~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("TomiReleased","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("NWTomiReleased","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -169,12 +169,12 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 24.1
   SAY @50
-  IF ~~ THEN DO ~TakePartyGold(800)DestroyGold(800)SetGlobal("TomiReleased","GLOBAL",1)JoinParty()~ EXIT
+  IF ~~ THEN DO ~TakePartyGold(800)DestroyGold(800)SetGlobal("NWTomiReleased","GLOBAL",1)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 24.2
   SAY @51
-  IF ~~ THEN DO ~TakePartyGold(600)DestroyGold(600)SetGlobal("TomiReleased","GLOBAL",1)JoinParty()~ EXIT
+  IF ~~ THEN DO ~TakePartyGold(600)DestroyGold(600)SetGlobal("NWTomiReleased","GLOBAL",1)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 24.3
@@ -197,7 +197,7 @@ END
 // -----------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("TomiReleased","GLOBAL",0)~ THEN BEGIN 30 // from:
+~  !NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("NWTomiReleased","GLOBAL",0)~ THEN BEGIN 30 // from:
   SAY @55
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @56 GOTO 31
@@ -225,7 +225,7 @@ END
 // --------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("TomiReleased","GLOBAL",1)~ THEN BEGIN 33 // from:
+~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("NWTomiReleased","GLOBAL",1)~ THEN BEGIN 33 // from:
   SAY @60
   IF ~~ THEN REPLY @61 GOTO 34
   IF ~~ THEN REPLY @62 GOTO 35
@@ -272,7 +272,7 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 37.2
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("TomiReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("NWTomiReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 41 // from: 37.3
@@ -289,7 +289,7 @@ END
 // --------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("TomiReleased","GLOBAL",1)~ THEN BEGIN 43 // from:
+~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("NWTomiReleased","GLOBAL",1)~ THEN BEGIN 43 // from:
   SAY @78
   IF ~~ THEN REPLY @79 GOTO 44
   IF ~~ THEN REPLY @80 GOTO 39
@@ -312,13 +312,13 @@ END
 
 IF ~~ THEN BEGIN 46 // from: 45.1
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("TomiReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Nw2020Talked","LOCALS",1)SetGlobal("NWTomiReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 // -----------------------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("TomiReleased","GLOBAL",0)~ THEN BEGIN 47 // from:
+~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("NWTomiReleased","GLOBAL",0)~ THEN BEGIN 47 // from:
   SAY @87
   IF ~~ THEN REPLY @88 GOTO 48
   IF ~~ THEN REPLY @89 GOTO 49
@@ -338,7 +338,7 @@ END
 // --------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("TomiReleased","GLOBAL",0)~ THEN BEGIN 50 // from:
+~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("NWTomiReleased","GLOBAL",0)~ THEN BEGIN 50 // from:
   SAY @78
   IF ~~ THEN REPLY @79 GOTO 44
   IF ~~ THEN REPLY @80 GOTO 39

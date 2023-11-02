@@ -12,7 +12,7 @@ IF
 		SpellCastOnMe([CONTROLLED],0)
 		SpellCastOnMe([CHARMED],0)
 	!GlobalTimerNotExpired("MyString","LOCALS")
-	GlobalLT("KaohionQuest","GLOBAL",3)
+	GlobalLT("NWKaohionQuest","GLOBAL",3)
 THEN
 	RESPONSE #100
 		PlaySound("Tanar04")
@@ -23,7 +23,7 @@ END
 IF
 	Range([PC],20)
 	Delay(2)
-	Global("KaohionQuest","GLOBAL",5)
+	Global("NWKaohionQuest","GLOBAL",5)
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
@@ -41,13 +41,13 @@ THEN
 		Wait(1)
 		CreateVisualEffectObject("spplanar",Myself)
 		Wait(2)
-		SetGlobal("KaohionQuest","GLOBAL",6)
+		SetGlobal("NWKaohionQuest","GLOBAL",6)
 		EndCutSceneMode()
 		DestroySelf()
 END
 
 IF
-	Global("KaohionQuest","GLOBAL",3)
+	Global("NWKaohionQuest","GLOBAL",3)
 	Global("Visual","LOCALS",0)
 	Range([PC],20)
 THEN
@@ -62,7 +62,7 @@ IF
 	Range([PC],20)
 	See([PC])
 	Delay(2)
-	Global("KaohionQuest","GLOBAL",3)
+	Global("NWKaohionQuest","GLOBAL",3)
 	Global("Visual","LOCALS",1)
 THEN
 	RESPONSE #100
@@ -71,7 +71,7 @@ THEN
 END
 
 IF
-	Global("KaohionQuest","GLOBAL",4)
+	Global("NWKaohionQuest","GLOBAL",4)
 THEN
 	RESPONSE #100
 		ForceSpell(Myself,DRYAD_TELEPORT)  // SPWI995.SPL (????? ?????????)

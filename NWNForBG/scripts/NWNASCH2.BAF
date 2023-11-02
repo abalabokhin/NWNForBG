@@ -27,7 +27,7 @@ IF
 	!See([ENEMY])
 	CombatCounter(0)
 	!Range(Player1,7)
-	Global("DestherIsTraitor","GLOBAL",1)
+	Global("NWDestherIsTraitor","GLOBAL",1)
 	Global("MyCommand","LOCALS",0)
 	Dead("Nwfhelm1")  // ??????????
 	Dead("Nwfhelm2")  // ??????????

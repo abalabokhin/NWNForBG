@@ -23,7 +23,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 1.1
   SAY @6
-   IF ~~ THEN  DO ~SetGlobal("AribethTalk","GLOBAL",1)~ GOTO 4
+   IF ~~ THEN  DO ~SetGlobal("NWAribethTalk","GLOBAL",1)~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 4 // from: 3.1
@@ -36,14 +36,14 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -68,37 +68,37 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
   SAY @24
   IF ~  PartyHasItem("NWGANONL")~ THEN REPLY @25 DO ~TakePartyItem("NWGANONL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
   IF ~  PartyHasItem("NWSOLOML")~ THEN REPLY @26 DO ~TakePartyItem("NWSOLOML")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
   IF ~  PartyHasItem("NWNEVAL")~ THEN REPLY @27 DO ~TakePartyItem("NWNEVAL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
   IF ~  PartyHasItem("NWRELMAL")
-Global("WardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
+Global("NWWardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
   IF ~  PartyHasItem("NWRELMAL")
-Global("WardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)~ GOTO 23
+Global("NWWardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)~ GOTO 23
   IF ~  PartyHasItem("NWCHARWJ")~ THEN REPLY @29 DO ~TakePartyItem("NWCHARWJ")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)~ GOTO 23
   IF ~  !PartyHasItem("NWGANONL")
 !PartyHasItem("NWSOLOML")
 !PartyHasItem("NWNEVAL")
@@ -115,19 +115,19 @@ END
 IF ~~ THEN BEGIN 84 // from: 17.1
   SAY @33
   IF ~  PartyHasItem("NWSOLOML")~ THEN REPLY @26 DO ~TakePartyItem("NWSOLOML")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
   IF ~  PartyHasItem("NWNEVAL")~ THEN REPLY @27 DO ~TakePartyItem("NWNEVAL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)~ GOTO 23
   IF ~  PartyHasItem("NWCHARWJ")~ THEN REPLY @29 DO ~TakePartyItem("NWCHARWJ")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)~ GOTO 23
   IF ~  !PartyHasItem("NWSOLOML")
 !PartyHasItem("NWNEVAL")
 !PartyHasItem("NWRELMAL")
@@ -138,19 +138,19 @@ END
 IF ~~ THEN BEGIN 18 // from: 6.2
   SAY @34
   IF ~  PartyHasItem("NWGANONL")~ THEN REPLY @25 DO ~TakePartyItem("NWGANONL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
   IF ~  PartyHasItem("NWNEVAL")~ THEN REPLY @27 DO ~TakePartyItem("NWNEVAL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)~ GOTO 23
   IF ~  PartyHasItem("NWCHARWJ")~ THEN REPLY @29 DO ~TakePartyItem("NWCHARWJ")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)~ GOTO 23
   IF ~  !PartyHasItem("NWGANONL")
 !PartyHasItem("NWNEVAL")
 !PartyHasItem("NWRELMAL")
@@ -161,19 +161,19 @@ END
 IF ~~ THEN BEGIN 19 // from: 6.3
   SAY @35
   IF ~  PartyHasItem("NWGANONL")~ THEN REPLY @25 DO ~TakePartyItem("NWGANONL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
   IF ~  PartyHasItem("NWSOLOML")~ THEN REPLY @26 DO ~TakePartyItem("NWSOLOML")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)~ GOTO 23
   IF ~  PartyHasItem("NWCHARWJ")~ THEN REPLY @29 DO ~TakePartyItem("NWCHARWJ")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 21
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)~ GOTO 23
   IF ~  !PartyHasItem("NWGANONL")
 !PartyHasItem("NWSOLOML")
 !PartyHasItem("NWRELMAL")
@@ -189,19 +189,19 @@ END
 IF ~~ THEN BEGIN 21 // from: 6.6
   SAY @38 
   IF ~  PartyHasItem("NWGANONL")~ THEN REPLY @25 DO ~TakePartyItem("NWGANONL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 17
   IF ~  PartyHasItem("NWSOLOML")~ THEN REPLY @26 DO ~TakePartyItem("NWSOLOML")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 18
   IF ~  PartyHasItem("NWNEVAL")~ THEN REPLY @27 DO ~TakePartyItem("NWNEVAL")
-IncrementGlobal("Evidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
-  IF ~  PartyHasItem("NWRELMAL")Global("WardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("RelmarJournal","GLOBAL",1)~ GOTO 23
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
-  IF ~  PartyHasItem("NWWARDOL")Global("RelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
-IncrementGlobal("Evidence","GLOBAL",1)SetGlobal("WardokLetter","GLOBAL",1)~ GOTO 23
+IncrementGlobal("NWEvidence","GLOBAL",1)AddexperienceParty(20000)~ GOTO 19
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",0)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)AddexperienceParty(20000)~ GOTO 20
+  IF ~  PartyHasItem("NWRELMAL")Global("NWWardokLetter","GLOBAL",1)~ THEN REPLY @28 DO ~TakePartyItem("NWRELMAL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWRelmarJournal","GLOBAL",1)~ GOTO 23
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",0)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)AddexperienceParty(20000)~ GOTO 22
+  IF ~  PartyHasItem("NWWARDOL")Global("NWRelmarJournal","GLOBAL",1)~ THEN REPLY @30 DO ~TakePartyItem("NWWARDOL")
+IncrementGlobal("NWEvidence","GLOBAL",1)SetGlobal("NWWardokLetter","GLOBAL",1)~ GOTO 23
   IF ~  !PartyHasItem("NWGANONL")
 !PartyHasItem("NWSOLOML")
 !PartyHasItem("NWNEVAL")
@@ -219,28 +219,28 @@ IF ~~ THEN BEGIN 23 // from: 6.5
   IF ~~ THEN REPLY @42 GOTO 24
   IF ~~ THEN REPLY @43 GOTO 25
   IF ~~ THEN REPLY @44 GOTO 26
-  IF ~~ THEN REPLY @45 DO ~SetGlobal("CultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
+  IF ~~ THEN REPLY @45 DO ~SetGlobal("NWCultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 23.1
   SAY @46
   IF ~~ THEN REPLY @43 GOTO 25
   IF ~~ THEN REPLY @44 GOTO 26
-  IF ~~ THEN REPLY @45 DO ~SetGlobal("CultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
+  IF ~~ THEN REPLY @45 DO ~SetGlobal("NWCultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 23.2
   SAY @47
   IF ~~ THEN REPLY @42 GOTO 24
   IF ~~ THEN REPLY @44 GOTO 26
-  IF ~~ THEN REPLY @45 DO ~SetGlobal("CultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
+  IF ~~ THEN REPLY @45 DO ~SetGlobal("NWCultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 23.3
   SAY @48
   IF ~~ THEN REPLY @42 GOTO 24
   IF ~~ THEN REPLY @43 GOTO 25
-  IF ~~ THEN REPLY @45 DO ~SetGlobal("CultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
+  IF ~~ THEN REPLY @45 DO ~SetGlobal("NWCultInLuskan","GLOBAL",1)AddexperienceParty(100000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 5.1
@@ -295,10 +295,10 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 4.3
   SAY @54
-  IF ~  Global("TalkDreams","GLOBAL",0)~ THEN REPLY @55 GOTO 27
-  IF ~  Global("TalkDreams","GLOBAL",0)~ THEN REPLY @56 GOTO 27
-  IF ~  GlobalGT("TalkDreams","GLOBAL",0)~ THEN REPLY @57 GOTO 27
-  IF ~  GlobalGT("TalkDreams","GLOBAL",0)~ THEN REPLY @58 GOTO 27
+  IF ~  Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @55 GOTO 27
+  IF ~  Global("NWTalkDreams","GLOBAL",0)~ THEN REPLY @56 GOTO 27
+  IF ~  GlobalGT("NWTalkDreams","GLOBAL",0)~ THEN REPLY @57 GOTO 27
+  IF ~  GlobalGT("NWTalkDreams","GLOBAL",0)~ THEN REPLY @58 GOTO 27
 END
 
 IF ~~ THEN BEGIN 27 // from: 7.1.2
@@ -318,10 +318,10 @@ END
 
 IF ~~ THEN BEGIN 29 // from: 28.1
   SAY @65
-  IF ~~ THEN REPLY @66 DO ~SetGlobal("DreamsOfAribeth","GLOBAL",1)
-SetGlobal("AribethFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 32
-  IF ~~ THEN REPLY @67 DO ~SetGlobal("DreamsOfAribeth","GLOBAL",1)
-SetGlobal("AribethFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 32
+  IF ~~ THEN REPLY @66 DO ~SetGlobal("NWDreamsOfAribeth","GLOBAL",1)
+SetGlobal("NWAribethFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 32
+  IF ~~ THEN REPLY @67 DO ~SetGlobal("NWDreamsOfAribeth","GLOBAL",1)
+SetGlobal("NWAribethFriend","GLOBAL",1)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 32
   IF ~~ THEN REPLY @21 GOTO 16
   IF ~~ THEN REPLY @14 EXIT
 END
@@ -336,13 +336,13 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -373,13 +373,13 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -393,9 +393,9 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -420,12 +420,12 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -500,12 +500,12 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -513,14 +513,14 @@ IF ~~ THEN BEGIN 47 // from: 44.1
   SAY @103
   IF ~~ THEN REPLY @104 GOTO 52
   IF ~~ THEN REPLY @105 GOTO 53
-  IF ~~ THEN REPLY @106 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 54
+  IF ~~ THEN REPLY @106 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 54
 END
 
 IF ~~ THEN BEGIN 52 // from: 47.1
   SAY @107
-  IF ~~ THEN REPLY @108 DO ~SetGlobal("AribethFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 55
-  IF ~~ THEN REPLY @109 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 56
-  IF ~  Gender(Player1,MALE)~ THEN REPLY @110 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 57
+  IF ~~ THEN REPLY @108 DO ~SetGlobal("NWAribethFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 55
+  IF ~~ THEN REPLY @109 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 56
+  IF ~  Gender(Player1,MALE)~ THEN REPLY @110 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 57
 END
 
 IF ~~ THEN BEGIN 55 // from: 52.1
@@ -533,9 +533,9 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -549,9 +549,9 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -565,9 +565,9 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -575,21 +575,21 @@ IF ~~ THEN BEGIN 48 // from: 44.2
   SAY @114
   IF ~~ THEN REPLY @104 GOTO 52
   IF ~~ THEN REPLY @105 GOTO 53
-  IF ~~ THEN REPLY @106 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 54
+  IF ~~ THEN REPLY @106 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 54
 END
 
 IF ~~ THEN BEGIN 49 // from: 44.3
   SAY @115
   IF ~~ THEN REPLY @104 GOTO 52
   IF ~~ THEN REPLY @105 GOTO 53
-  IF ~~ THEN REPLY @106 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 54
+  IF ~~ THEN REPLY @106 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 54
 END
 
 IF ~~ THEN BEGIN 53 // from: 47.2
   SAY @116
-  IF ~~ THEN REPLY @108 DO ~SetGlobal("AribethFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 55
-  IF ~~ THEN REPLY @109 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 56
-  IF ~  Gender(Player1,MALE)~ THEN REPLY @110 DO ~SetGlobal("AribethFriend","GLOBAL",66)~ GOTO 57
+  IF ~~ THEN REPLY @108 DO ~SetGlobal("NWAribethFriend","GLOBAL",2)SetGlobalTimer("TalkAboutAribeth","LOCALS",ONE_DAY)~ GOTO 55
+  IF ~~ THEN REPLY @109 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 56
+  IF ~  Gender(Player1,MALE)~ THEN REPLY @110 DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ GOTO 57
 END
 
 IF ~~ THEN BEGIN 54 // from: 47.3
@@ -602,9 +602,9 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @14 EXIT
 END
 
@@ -700,7 +700,7 @@ END
 
 IF ~~ THEN BEGIN 73 // from: 70.3
   SAY @148
-  IF ~~ THEN DO ~SetGlobal("AribethFriend","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAribethFriend","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 74 // from: 71.1.72.1
@@ -718,12 +718,12 @@ END
 
 IF ~~ THEN BEGIN 76 // from: 74.2
   SAY @154
-  IF ~~ THEN DO ~SetGlobal("AribethFriend","GLOBAL",4)GiveItemCreate("NWARRING",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAribethFriend","GLOBAL",4)GiveItemCreate("NWARRING",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 77 // from: 74.3
   SAY @155
-  IF ~~ THEN DO ~SetGlobal("AribethFriend","GLOBAL",4)GiveItemCreate("NWARRING",Player1,1,1,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAribethFriend","GLOBAL",4)GiveItemCreate("NWARRING",Player1,1,1,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 4.6
@@ -743,8 +743,8 @@ END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  OR(2)
-Global("Evidence","GLOBAL",0)
-Global("AribethFriend","GLOBAL",66)
+Global("NWEvidence","GLOBAL",0)
+Global("NWAribethFriend","GLOBAL",66)
 IsGabber(Player1)~ THEN BEGIN 80 // from:
   SAY @159
   IF ~~ THEN REPLY @8 GOTO 5
@@ -755,25 +755,25 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @160 EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  OR(2)
-GlobalGT("Evidence","GLOBAL",0)
-GlobalGT("AribethFriend","GLOBAL",1)
-!Global("AribethFriend","GLOBAL",66)
-!Global("AribethFriend","GLOBAL",4)
-!Global("RelmarJournal","GLOBAL",1)
-!Global("WardokLetter","GLOBAL",1)
+GlobalGT("NWEvidence","GLOBAL",0)
+GlobalGT("NWAribethFriend","GLOBAL",1)
+!Global("NWAribethFriend","GLOBAL",66)
+!Global("NWAribethFriend","GLOBAL",4)
+!Global("NWRelmarJournal","GLOBAL",1)
+!Global("NWWardokLetter","GLOBAL",1)
 IsGabber(Player1)~ THEN BEGIN 81 // from:
   SAY @161
   IF ~~ THEN REPLY @8 GOTO 5
@@ -784,23 +784,23 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @160 EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  OR(3)
-Global("AribethFriend","GLOBAL",4)
-Global("RelmarJournal","GLOBAL",1)
-Global("WardokLetter","GLOBAL",1)
-!Global("AribethFriend","GLOBAL",66)
+Global("NWAribethFriend","GLOBAL",4)
+Global("NWRelmarJournal","GLOBAL",1)
+Global("NWWardokLetter","GLOBAL",1)
+!Global("NWAribethFriend","GLOBAL",66)
 IsGabber(Player1)~ THEN BEGIN 82 // from:
   SAY @162
   IF ~~ THEN REPLY @8 GOTO 5
@@ -811,14 +811,14 @@ PartyHasItem("NWNEVAL")
 PartyHasItem("NWRELMAL")
 PartyHasItem("NWCHARWJ")
 PartyHasItem("NWWARDOL")~ THEN REPLY @9 GOTO 6
-  IF ~  Global("DreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
-  IF ~  Global("AribethFriend","GLOBAL",1)
+  IF ~  Global("NWDreamsOfAribeth","GLOBAL",0)~ THEN REPLY @10 GOTO 7
+  IF ~  Global("NWAribethFriend","GLOBAL",1)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @11 GOTO 8
-  IF ~  Global("AribethFriend","GLOBAL",3)
+  IF ~  Global("NWAribethFriend","GLOBAL",3)
 GlobalTimerExpired("TalkAboutAribeth","LOCALS")~ THEN REPLY @12 GOTO 9
-  IF ~  Global("CultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
-  IF ~  !Global("CultInLuskan","GLOBAL",1)Global("AaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
+  IF ~  Global("NWCultInLuskan","GLOBAL",1)~ THEN REPLY @13 GOTO 10
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",1)~ THEN REPLY @13 GOTO 78
+  IF ~  !Global("NWCultInLuskan","GLOBAL",1)Global("NWAaranTalk","GLOBAL",0)~ THEN REPLY @13 GOTO 79
   IF ~~ THEN REPLY @160 EXIT
 END
 

@@ -3,9 +3,9 @@
 BEGIN ~NWGERROL~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN BEGIN 0 // from:
+~  GlobalLT("NWFarmerQuest","GLOBAL",2)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("FarmerQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWFarmerQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
@@ -21,7 +21,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @10
-  IF ~  Global("FarmerQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWFarmerQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
@@ -29,7 +29,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @11
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)~ GOTO 9
+  IF ~~ THEN DO ~SetGlobal("NWFarmerQuest","GLOBAL",2)~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
@@ -153,7 +153,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 4.4
   SAY @44
-  IF ~  Global("FarmerQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWFarmerQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 5
@@ -185,12 +185,12 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 15.4
   SAY @53
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@97247)~ UNSOLVED_JOURNAL @98954 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWFarmerQuest","GLOBAL",2)EraseJournalEntry(@97247)~ UNSOLVED_JOURNAL @98954 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 15.5
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",2)EraseJournalEntry(@97247)~ UNSOLVED_JOURNAL @98954 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWFarmerQuest","GLOBAL",2)EraseJournalEntry(@97247)~ UNSOLVED_JOURNAL @98954 EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 24.1
@@ -235,11 +235,11 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN BEGIN 32 // from:
+~  Global("NWFarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN BEGIN 32 // from:
   SAY @61
   IF ~  PartyHasItem("NWHEADDG")Global("DergiabDone","LOCALS",0)~ THEN REPLY @62 GOTO 33
   IF ~  Dead("NWLEAH")PartyHasItem("NWLEAHRG")Global("LeahDead","LOCALS",0)~ THEN REPLY @63 GOTO 34
-  IF ~  OR(2)Global("LeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @64 GOTO 35
+  IF ~  OR(2)Global("NWLeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @64 GOTO 35
   IF ~~ THEN REPLY @36 GOTO 36
   IF ~~ THEN REPLY @65 GOTO 37
   IF ~~ THEN REPLY @66 GOTO 38
@@ -272,11 +272,11 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 32.4
   SAY @47
-  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("LeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
+  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("NWLeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
   IF ~  Global("DergiabDone","LOCALS",0)~ THEN REPLY @48 GOTO 52
   IF ~~ THEN REPLY @49 GOTO 53
   IF ~~ THEN REPLY @50 GOTO 54
-  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
+  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
   IF ~~ THEN REPLY @52 GOTO 56
 END
 
@@ -350,28 +350,28 @@ END
 
 IF ~~ THEN BEGIN 47 // from: 35.1
   SAY @92
-  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("NWLeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 48 // from: 35.2
   SAY @89
-  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("Reputation","LOCALS",-1)GiveGoldForce(2500)SetGlobal("NWLeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 49 // from: 35.3
   SAY @91
   IF ~  !Global("Reputation","LOCALS",1)~ THEN DO ~IncrementGlobal("Reputation","LOCALS",1)
-SetGlobal("LeahSaved","GLOBAL",2)
+SetGlobal("NWLeahSaved","GLOBAL",2)
 AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
   IF ~  Global("Reputation","LOCALS",1)~ THEN DO ~SetGlobal("Reputation","LOCALS",0)
 ReputationInc(1)
-SetGlobal("LeahSaved","GLOBAL",2)
+SetGlobal("NWLeahSaved","GLOBAL",2)
 AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 35.4
   SAY @87
-  IF ~~ THEN DO ~GiveGoldForce(2000)SetGlobal("LeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
+  IF ~~ THEN DO ~GiveGoldForce(2000)SetGlobal("NWLeahSaved","GLOBAL",2)AddexperienceParty(45000)EraseJournalEntry(@98954)~ SOLVED_JOURNAL @99042 EXIT
 END
 
 IF ~~ THEN BEGIN 51 // from: 36.1
@@ -384,40 +384,40 @@ IF ~~ THEN BEGIN 61 // from: 51.1
   IF ~  Global("DergiabDone","LOCALS",0)~ THEN REPLY @48 GOTO 52
   IF ~~ THEN REPLY @49 GOTO 53
   IF ~~ THEN REPLY @50 GOTO 54
-  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
+  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
   IF ~~ THEN REPLY @52 GOTO 56
 END
 
 IF ~~ THEN BEGIN 52 // from: 36.2
   SAY @56
-  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("LeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
+  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("NWLeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
   IF ~~ THEN REPLY @49 GOTO 53
   IF ~~ THEN REPLY @50 GOTO 54
-  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
+  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
   IF ~~ THEN REPLY @52 GOTO 56
 END
 
 IF ~~ THEN BEGIN 53 // from: 36.3
   SAY @57
-  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("LeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
+  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("NWLeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
   IF ~  Global("DergiabDone","LOCALS",0)~ THEN REPLY @48 GOTO 52
   IF ~~ THEN REPLY @50 GOTO 54
-  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
+  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
   IF ~~ THEN REPLY @52 GOTO 56
 END
 
 IF ~~ THEN BEGIN 54 // from: 36.4
   SAY @58
-  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("LeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
+  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("NWLeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
   IF ~  Global("DergiabDone","LOCALS",0)~ THEN REPLY @48 GOTO 52
   IF ~~ THEN REPLY @49 GOTO 53
-  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
+  IF ~  Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @51 GOTO 55
   IF ~~ THEN REPLY @52 GOTO 56
 END
 
 IF ~~ THEN BEGIN 55 // from: 36.5
   SAY @96
-  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("LeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
+  IF ~  Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",0)Global("NWLeahSaved","GLOBAL",0)~ THEN REPLY @79 GOTO 51
   IF ~  Global("DergiabDone","LOCALS",0)~ THEN REPLY @48 GOTO 52
   IF ~~ THEN REPLY @49 GOTO 53
   IF ~~ THEN REPLY @50 GOTO 54
@@ -428,7 +428,7 @@ IF ~~ THEN BEGIN 56 // from: 36.6
   SAY @60
   IF ~  PartyHasItem("NWHEADDG")Global("DergiabDone","LOCALS",0)~ THEN REPLY @62 GOTO 33
   IF ~  Dead("NWLEAH")PartyHasItem("NWLEAHRG")Global("LeahDead","LOCALS",0)~ THEN REPLY @63 GOTO 34
-  IF ~  OR(2)Global("LeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @64 GOTO 35
+  IF ~  OR(2)Global("NWLeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @64 GOTO 35
   IF ~~ THEN REPLY @65 GOTO 37
   IF ~~ THEN REPLY @5 GOTO 38
 END
@@ -458,7 +458,7 @@ IF ~~ THEN BEGIN 60 // from: 37.4
   SAY @44
   IF ~  PartyHasItem("NWHEADDG")Global("DergiabDone","LOCALS",0)~ THEN REPLY @62 GOTO 33
   IF ~  Dead("NWLEAH")PartyHasItem("NWLEAHRG")Global("LeahDead","LOCALS",0)~ THEN REPLY @63 GOTO 34
-  IF ~  OR(2)Global("LeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @64 GOTO 35
+  IF ~  OR(2)Global("NWLeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @64 GOTO 35
   IF ~~ THEN REPLY @36 GOTO 36
   IF ~~ THEN REPLY @5 GOTO 38
 END
@@ -466,10 +466,10 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",1)Global("LeahDead","LOCALS",0)GlobalLT("LeahSaved","GLOBAL",2)~ THEN BEGIN 62 // from:
+~  Global("NWFarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",1)Global("LeahDead","LOCALS",0)GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN BEGIN 62 // from:
   SAY @97
   IF ~  Dead("NWLEAH")PartyHasItem("NWLEAHRG")Global("LeahDead","LOCALS",0)~ THEN REPLY @63 GOTO 34
-  IF ~  OR(2)Global("LeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("LeahSaved","GLOBAL",2)~ THEN REPLY @98 GOTO 35
+  IF ~  OR(2)Global("NWLeahSaved","GLOBAL",1)InMyArea("NWLEAH")GlobalLT("NWLeahSaved","GLOBAL",2)~ THEN REPLY @98 GOTO 35
   IF ~~ THEN REPLY @36 GOTO 36
   IF ~~ THEN REPLY @65 GOTO 37
   IF ~~ THEN REPLY @5 GOTO 38
@@ -478,7 +478,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",1)Global("LeahSaved","GLOBAL",2)~ THEN BEGIN 63 // from:
+~  Global("NWFarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",1)Global("NWLeahSaved","GLOBAL",2)~ THEN BEGIN 63 // from:
   SAY @99
   IF ~~ THEN GOTO 64
 END
@@ -493,7 +493,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",0)Global("LeahSaved","GLOBAL",2)~ THEN BEGIN 65 // from:
+~  Global("NWFarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",0)Global("NWLeahSaved","GLOBAL",2)~ THEN BEGIN 65 // from:
   SAY @99
   IF ~~ THEN GOTO 66
 END
@@ -509,7 +509,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",1)~ THEN BEGIN 67 // from:
+~  Global("NWFarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",0)Global("LeahDead","LOCALS",1)~ THEN BEGIN 67 // from:
   SAY @102
   IF ~  PartyHasItem("NWHEADDG")Global("DergiabDone","LOCALS",0)~ THEN REPLY @62 GOTO 33
   IF ~~ THEN REPLY @36 GOTO 36
@@ -520,7 +520,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",1)Global("LeahDead","LOCALS",1)~ THEN BEGIN 68 // from:
+~  Global("NWFarmerQuest","GLOBAL",2)Global("DergiabDone","LOCALS",1)Global("LeahDead","LOCALS",1)~ THEN BEGIN 68 // from:
   SAY @97
   IF ~~ THEN REPLY @36 GOTO 36
   IF ~~ THEN REPLY @65 GOTO 37

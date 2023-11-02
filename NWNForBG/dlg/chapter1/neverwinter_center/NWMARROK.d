@@ -3,7 +3,7 @@
 BEGIN ~NWMARROK~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(3)Class(LastTalkedToBy,FIGHTER_ALL)Class(LastTalkedToBy,RANGER_ALL)Class(LastTalkedToBy,PALADIN)Global("MarrokSay","MYAREA",0)Global("ToMarrok","GLOBAL",1)~ THEN BEGIN 0 // from:
+~  OR(3)Class(LastTalkedToBy,FIGHTER_ALL)Class(LastTalkedToBy,RANGER_ALL)Class(LastTalkedToBy,PALADIN)Global("MarrokSay","MYAREA",0)Global("NWToMarrok","GLOBAL",1)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~  GlobalGT("PlantedItems","MYAREA",0)~ THEN REPLY @2 GOTO 2
@@ -273,7 +273,7 @@ END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !Class(LastTalkedToBy,FIGHTER_ALL)!Class(LastTalkedToBy,RANGER_ALL)!Class(LastTalkedToBy,PALADIN)Global("MarrokSay","MYAREA",0)
-Global("ToMarrok","GLOBAL",1)~ THEN BEGIN 36 // from:
+Global("NWToMarrok","GLOBAL",1)~ THEN BEGIN 36 // from:
   SAY @53
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~  GlobalGT("PlantedItems","MYAREA",0)~ THEN REPLY @2 GOTO 2
@@ -284,7 +284,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("MarrokSay","MYAREA",0)Global("ToMarrok","GLOBAL",0)~ THEN BEGIN 37 // from:
+~  Global("MarrokSay","MYAREA",0)Global("NWToMarrok","GLOBAL",0)~ THEN BEGIN 37 // from:
   SAY @54
   IF ~~ THEN EXIT
 END

@@ -13,14 +13,14 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  Global("TomiQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("TomiQuest","GLOBAL",1)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @5 GOTO 16
-  IF ~  Global("TomiQuest","GLOBAL",2)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @5 GOTO 34
-  IF ~  Global("TomiQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 56
-  IF ~  OR(2)GlobalGT("TomiQuest","GLOBAL",3)GlobalTimerNotExpired("TomiTimer","LOCALS")!Global("TomiQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 57
-  IF ~  Global("TomiQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 58
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @7 GOTO 59
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @7 GOTO 184
+  IF ~  Global("NWTomiQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWTomiQuest","GLOBAL",1)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @5 GOTO 16
+  IF ~  Global("NWTomiQuest","GLOBAL",2)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @5 GOTO 34
+  IF ~  Global("NWTomiQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 56
+  IF ~  OR(2)GlobalGT("NWTomiQuest","GLOBAL",3)GlobalTimerNotExpired("TomiTimer","LOCALS")!Global("NWTomiQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 57
+  IF ~  Global("NWTomiQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 58
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @7 GOTO 59
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @7 GOTO 184
   IF ~~ THEN REPLY @2 GOTO 2
 END
 
@@ -90,17 +90,17 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.2
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.3
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 1.2
@@ -200,12 +200,12 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 29.1 30.1 31.1
   SAY @63
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 29.2 30.2 31.2
   SAY @64
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 34 // from: 1.3
@@ -314,12 +314,12 @@ END
 
 IF ~~ THEN BEGIN 52 // from: 49.2 50.2
   SAY @99
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 53 // from: 49.3 50.3
   SAY @100
-  IF ~~ THEN DO ~SetGlobal("TomiQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 54 // from: 51.1
@@ -331,7 +331,7 @@ END
 IF ~~ THEN BEGIN 55 // from: 54
   SAY @104
   IF ~~ THEN DO ~
-    SetGlobal("TomiQuest","GLOBAL",4)
+    SetGlobal("NWTomiQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -388,12 +388,12 @@ END
 
 IF ~~ THEN BEGIN 64 // from: 0.2
   SAY @3
-  IF ~  Global("TomiQuest2","GLOBAL",0)~ THEN REPLY @117 GOTO 65
-  IF ~  Global("TomiQuest2","GLOBAL",1)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @118 GOTO 79
-  IF ~  Global("TomiQuest2","GLOBAL",2)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @118 GOTO 92
-  IF ~  Global("TomiQuest2","GLOBAL",3)~ THEN REPLY @118 GOTO 114
-  IF ~  OR(2)GlobalGT("TomiQuest2","GLOBAL",3)GlobalTimerNotExpired("TomiTimer","LOCALS")!Global("TomiQuest2","GLOBAL",66)~ THEN REPLY @118 GOTO 116
-  IF ~Global("TomiQuest2","GLOBAL",66)~ THEN REPLY @118 GOTO 58
+  IF ~  Global("NWTomiQuest2","GLOBAL",0)~ THEN REPLY @117 GOTO 65
+  IF ~  Global("NWTomiQuest2","GLOBAL",1)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @118 GOTO 79
+  IF ~  Global("NWTomiQuest2","GLOBAL",2)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @118 GOTO 92
+  IF ~  Global("NWTomiQuest2","GLOBAL",3)~ THEN REPLY @118 GOTO 114
+  IF ~  OR(2)GlobalGT("NWTomiQuest2","GLOBAL",3)GlobalTimerNotExpired("TomiTimer","LOCALS")!Global("NWTomiQuest2","GLOBAL",66)~ THEN REPLY @118 GOTO 116
+  IF ~Global("NWTomiQuest2","GLOBAL",66)~ THEN REPLY @118 GOTO 58
   IF ~~ THEN REPLY @7 GOTO 117
   IF ~~ THEN REPLY @2 GOTO 61
 END
@@ -417,7 +417,7 @@ END
 
 IF ~~ THEN BEGIN 68 // from: 65.3
   SAY @125
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 69 // from: 66.1
@@ -462,7 +462,7 @@ END
 
 IF ~~ THEN BEGIN 76 // from: 75.1
   SAY @141
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 77 // from: 75.2
@@ -538,17 +538,17 @@ END
 
 IF ~~ THEN BEGIN 89 // from: 86.1 87.1 88.1
   SAY @165
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 90 // from: 86.2 87.2 88.2
   SAY @166
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 91 // from: 86.3 87.3 88.3
   SAY @167
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 92 // from: 64.3
@@ -636,12 +636,12 @@ END
 
 IF ~~ THEN BEGIN 107 // from: 105.2
   SAY @196
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 108 // from: 105.3
   SAY @197
-  IF ~~ THEN DO ~SetGlobal("TomiQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 109 // from: 106.1
@@ -655,7 +655,7 @@ END
 IF ~~ THEN BEGIN 110 // from: 109.1
   SAY @201
   IF ~~THEN DO ~
-    SetGlobal("TomiQuest2","GLOBAL",4)
+    SetGlobal("NWTomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -671,7 +671,7 @@ END
 IF ~~ THEN BEGIN 111 // from: 109.2
   SAY @202
   IF ~~ THEN DO ~
-    SetGlobal("TomiQuest2","GLOBAL",4)
+    SetGlobal("NWTomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -685,7 +685,7 @@ END
 IF ~~ THEN BEGIN 112 // from: 109.3
   SAY @203
   IF ~~THEN DO ~
-    SetGlobal("TomiQuest2","GLOBAL",4)
+    SetGlobal("NWTomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -701,7 +701,7 @@ END
 IF ~~ THEN BEGIN 113 // from: 109.4
   SAY @204
   IF ~~ THEN DO ~
-    SetGlobal("TomiQuest2","GLOBAL",4)
+    SetGlobal("NWTomiQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -776,12 +776,12 @@ END
 
 IF ~~ THEN BEGIN 122 // from: 0.3
   SAY @3
-  IF ~  Global("TomiQuest3","GLOBAL",0)~ THEN REPLY @217 GOTO 123
-  IF ~  Global("TomiQuest3","GLOBAL",1)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @218 GOTO 133
-  IF ~  Global("TomiQuest3","GLOBAL",2)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @218 GOTO 145
-  IF ~  Global("TomiQuest3","GLOBAL",3)~ THEN REPLY @218 GOTO 164
-  IF ~  OR(2)GlobalGT("TomiQuest3","GLOBAL",3)GlobalTimerNotExpired("TomiTimer","LOCALS")!Global("TomiQuest3","GLOBAL",66)~ THEN REPLY @218 GOTO 165
-  IF ~  Global("TomiQuest3","GLOBAL",66)~ THEN REPLY @218 GOTO 58
+  IF ~  Global("NWTomiQuest3","GLOBAL",0)~ THEN REPLY @217 GOTO 123
+  IF ~  Global("NWTomiQuest3","GLOBAL",1)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @218 GOTO 133
+  IF ~  Global("NWTomiQuest3","GLOBAL",2)GlobalTimerExpired("TomiTimer","LOCALS")~ THEN REPLY @218 GOTO 145
+  IF ~  Global("NWTomiQuest3","GLOBAL",3)~ THEN REPLY @218 GOTO 164
+  IF ~  OR(2)GlobalGT("NWTomiQuest3","GLOBAL",3)GlobalTimerNotExpired("TomiTimer","LOCALS")!Global("NWTomiQuest3","GLOBAL",66)~ THEN REPLY @218 GOTO 165
+  IF ~  Global("NWTomiQuest3","GLOBAL",66)~ THEN REPLY @218 GOTO 58
   IF ~~ THEN REPLY @7 GOTO 166
 END
 
@@ -836,7 +836,7 @@ END
 
 IF ~~ THEN BEGIN 132 // from: 131
   SAY @234
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",1)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 133 // from: 122.2
@@ -892,17 +892,17 @@ END
 
 IF ~~ THEN BEGIN 142 // from: 141.1
   SAY @253
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 143 // from: 141.2
   SAY @254
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 144 // from: 141.3
   SAY @255
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",2)SetGlobalTimer("TomiTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 145 // from: 122.3
@@ -971,17 +971,17 @@ END
 
 IF ~~ THEN BEGIN 156 // from: 154.2
   SAY @280
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 157 // from: 154.4
   SAY @281
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 158 // from: 154.3
   SAY @282
-  IF ~~ THEN DO ~SetGlobal("TomiQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTomiQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 159 // from: 155.1
@@ -1001,7 +1001,7 @@ END
 IF ~~ THEN BEGIN 161 // from: 160.1
   SAY @288
   IF ~~ THEN DO ~
-    SetGlobal("TomiQuest3","GLOBAL",4)
+    SetGlobal("NWTomiQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -1019,7 +1019,7 @@ END
 IF ~~ THEN BEGIN 162 // from: 160.2
   SAY @289
   IF ~~ THEN DO ~
-    SetGlobal("TomiQuest3","GLOBAL",4)
+    SetGlobal("NWTomiQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -1037,7 +1037,7 @@ END
 IF ~~ THEN BEGIN 163 // from: 160.3
   SAY @290
   IF ~~ THEN DO ~
-    SetGlobal("TomiQuest3","GLOBAL",4)
+    SetGlobal("NWTomiQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWTOMI",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)

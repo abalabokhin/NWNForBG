@@ -1,12 +1,12 @@
 IF
-	GlobalLT("LuscanTower","GLOBAL",7)
+	GlobalLT("NWLuscanTower","GLOBAL",7)
 THEN
 	RESPONSE #100
-		SetGlobal("LuscanTower","GLOBAL",7)
+		SetGlobal("NWLuscanTower","GLOBAL",7)
 END
 
 IF
-	Global("ArklemQuest","GLOBAL",2)
+	Global("NWArklemQuest","GLOBAL",2)
 	Global("ActivateWay","MYAREA",0)
 THEN
 	RESPONSE #100

@@ -9,14 +9,14 @@ END
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,10)
-	Global("Nw4002Entered","GLOBAL",0)
+	Global("NWNw4002Entered","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SaveGame(0)
 		StartCutSceneMode()
 		FadeToColor([10.0],0)
 		Wait(1)
-		SetGlobal("Nw4002Entered","GLOBAL",1)
+		SetGlobal("NWNw4002Entered","GLOBAL",1)
 		Wait(1)
 		ActionOverride(Player1,LeaveAreaLUA("NW4002","",[1090.741],10))
 		ActionOverride(Player2,LeaveAreaLUA("NW4002","",[1046.737],10))
@@ -33,7 +33,7 @@ END
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,10)
-	Global("Nw4002Entered","GLOBAL",2)
+	Global("NWNw4002Entered","GLOBAL",2)
 THEN
 	RESPONSE #100
 		SaveGame(0)

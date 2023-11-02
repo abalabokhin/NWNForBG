@@ -1,6 +1,6 @@
 // Северная дорога, пещеры багбиров, Лия жена Геррола - человек
 
-// IF ~~ THEN DO ~SetGlobal("LeahSaved","GLOBAL",1)EscapeArea()~ EXIT -  возможно сделать скрипт и довести ее до выхода
+// IF ~~ THEN DO ~SetGlobal("NWLeahSaved","GLOBAL",1)EscapeArea()~ EXIT -  возможно сделать скрипт и довести ее до выхода
 
 BEGIN ~NWLEAH~
 
@@ -14,9 +14,9 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  Global("FarmerQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWFarmerQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
-  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
+  IF ~  GlobalLT("NWFarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
   IF ~~ THEN REPLY @8 GOTO 7
 END
 
@@ -40,7 +40,7 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("LeahSaved","GLOBAL",1)SetGlobal("Pause","LOCALS",0)EscapeArea()~ EXIT // возможно сделать скрипт и довести ее до выхода
+  IF ~~ THEN DO ~SetGlobal("NWLeahSaved","GLOBAL",1)SetGlobal("Pause","LOCALS",0)EscapeArea()~ EXIT // возможно сделать скрипт и довести ее до выхода
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
@@ -82,9 +82,9 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 ~  Global("Pause","LOCALS",2)~ THEN BEGIN 11 // from:
   SAY @24
   IF ~~ THEN REPLY @4 GOTO 3
-  IF ~  Global("FarmerQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWFarmerQuest","GLOBAL",2)~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
-  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
+  IF ~  GlobalLT("NWFarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
   IF ~~ THEN REPLY @8 GOTO 7
 END
 
@@ -95,14 +95,14 @@ IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this st
   SAY @25
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @6 GOTO 5
-  IF ~  GlobalLT("FarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
+  IF ~  GlobalLT("NWFarmerQuest","GLOBAL",2)~ THEN REPLY @7 GOTO 6
   IF ~~ THEN REPLY @26 GOTO 7
 END
 
 // --------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("LeahSaved","GLOBAL",0)AreaCheck("NW2100")~ THEN BEGIN 13 // from:
+~  GlobalGT("NWLeahSaved","GLOBAL",0)AreaCheck("NW2100")~ THEN BEGIN 13 // from:
   SAY @27
   IF ~~ THEN EXIT
 END

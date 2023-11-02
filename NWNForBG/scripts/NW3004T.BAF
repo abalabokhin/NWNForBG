@@ -1,7 +1,7 @@
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,15)
-	Global("PartyHasNWWord1","GLOBAL",0)
+	Global("NWPartyHasNWWord1","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride(Player1,StartDialog("NWSNOWOB",Player1))
@@ -10,7 +10,7 @@ END
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,15)
-	GlobalGT("PartyHasNWWord1","GLOBAL",0)
+	GlobalGT("NWPartyHasNWWord1","GLOBAL",0)
 THEN
 	RESPONSE #100
 		DisplayString(Myself,@106435)  // ????? ???????? ???? ???????, ????? ? ???? ??????????.

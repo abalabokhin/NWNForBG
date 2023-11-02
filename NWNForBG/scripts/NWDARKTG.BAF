@@ -1,6 +1,6 @@
 IF
 	See(Player1)
-	GlobalGT("GoToLuskan","GLOBAL",0)
+	GlobalGT("NWGoToLuskan","GLOBAL",0)
 	NumTimesTalkedTo(0)
 THEN
 	RESPONSE #100
@@ -9,7 +9,7 @@ END
 
 IF
 	!See(Player1)
-	GlobalGT("GoToLuskan","GLOBAL",0)
+	GlobalGT("NWGoToLuskan","GLOBAL",0)
 	CombatCounter(0)
 	NumTimesTalkedTo(0)
 THEN

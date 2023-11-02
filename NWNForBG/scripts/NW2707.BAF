@@ -2,7 +2,7 @@ IF
 	Global("MansHand","MYAREA",0)
 	OR(2)
 		InParty("NWBODDIK")  // ????????
-		Global("BoddinokReleased","GLOBAL",2)
+		Global("NWBoddinokReleased","GLOBAL",2)
 THEN
 	RESPONSE #100
 		SetGlobal("MansHand","MYAREA",1)

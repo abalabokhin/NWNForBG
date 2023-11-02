@@ -1,6 +1,6 @@
 IF
 	OR(2)
-		GlobalGT("SpiritSaved","GLOBAL",0)
+		GlobalGT("NWSpiritSaved","GLOBAL",0)
 		Dead("NWSPIRIO")  // ??? ????
 	Global("MyChange","LOCALS",0)
 THEN

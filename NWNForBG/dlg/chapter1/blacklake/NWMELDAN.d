@@ -66,9 +66,9 @@ END
 IF ~~ THEN BEGIN 9 // from: 4.6
   SAY @21
   IF ~~ THEN REPLY @22 GOTO 12
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 13
-  IF ~  Global("FormosaQuest","GLOBAL",0)~ THEN REPLY @24 GOTO 14
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 14
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 13
+  IF ~  Global("NWFormosaQuest","GLOBAL",0)~ THEN REPLY @24 GOTO 14
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 14
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 6
 END
@@ -87,9 +87,9 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 9.1
   SAY @33
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 13
-  IF ~  Global("FormosaQuest","GLOBAL",0)~ THEN REPLY @24 GOTO 14
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 14
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 13
+  IF ~  Global("NWFormosaQuest","GLOBAL",0)~ THEN REPLY @24 GOTO 14
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",0)~ THEN REPLY @25 GOTO 14
   IF ~~ THEN REPLY @26 GOTO 15
   IF ~~ THEN REPLY @27 GOTO 6
 END
@@ -150,7 +150,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 14.1
   SAY @50
-  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("MeldanenQuest","GLOBAL",1)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1500)~ UNSOLVED_JOURNAL @89305 EXIT
+  IF ~~ THEN DO ~ApplySpell(Myself,RESTORE_FULL_HEALTH)SetGlobal("NWMeldanenQuest","GLOBAL",1)GiveItem("Nwkey08",LastTalkedToBy)GivePartyGold(1500)~ UNSOLVED_JOURNAL @89305 EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.2
@@ -161,7 +161,7 @@ END
 // --------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)OR(2)Global("MeldanenQuest","GLOBAL",0)GlobalGT("MeldanenQuest","GLOBAL",1)~ THEN BEGIN 23 // from:
+~  !NumTimesTalkedTo(0)OR(2)Global("NWMeldanenQuest","GLOBAL",0)GlobalGT("NWMeldanenQuest","GLOBAL",1)~ THEN BEGIN 23 // from:
   SAY @53
   IF ~~ THEN EXIT
 END
@@ -169,7 +169,7 @@ END
 // --------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("MeldanenQuest","GLOBAL",1)!Dead("NWFORMOA")~ THEN BEGIN 24 // from:
+~  !NumTimesTalkedTo(0)Global("NWMeldanenQuest","GLOBAL",1)!Dead("NWFORMOA")~ THEN BEGIN 24 // from:
   SAY @54
   IF ~~ THEN EXIT
 END
@@ -177,7 +177,7 @@ END
 // --------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("MeldanenQuest","GLOBAL",1)Dead("NWFORMOA")~ THEN BEGIN 25 // from:
+~  !NumTimesTalkedTo(0)Global("NWMeldanenQuest","GLOBAL",1)Dead("NWFORMOA")~ THEN BEGIN 25 // from:
   SAY @55
   IF ~~ THEN REPLY @56 GOTO 26
   IF ~~ THEN REPLY @57 GOTO 27
@@ -200,7 +200,7 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 25.3
   SAY @63
-  IF ~~ THEN DO ~SetGlobal("MeldanenQuest","GLOBAL",2)AddexperienceParty(150000)GivePartyGold(1500)EraseJournalEntry(@89305)~ SOLVED_JOURNAL @89369 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWMeldanenQuest","GLOBAL",2)AddexperienceParty(150000)GivePartyGold(1500)EraseJournalEntry(@89305)~ SOLVED_JOURNAL @89369 EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 25.4

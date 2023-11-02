@@ -1,5 +1,5 @@
 IF
-	Global("In1043PlatAll","GLOBAL",1)
+	Global("NWIn1043PlatAll","GLOBAL",1)
 	Global("PlatNoActions","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -11,54 +11,54 @@ THEN
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat1",GOODCUTOFF)
 	!Dead("Nwplat1")
 	!InMyArea("Nwplat1")
-	Global("In1042Plat1","GLOBAL",0)
+	Global("NWIn1042Plat1","GLOBAL",0)
 	Global("MovePlat","MYAREA",1)
 THEN
 	RESPONSE #100
-		SetGlobal("In1042Plat1","GLOBAL",1)
+		SetGlobal("NWIn1042Plat1","GLOBAL",1)
 		MoveGlobal("NW1042","Nwplat1",[2086.411])
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat2",GOODCUTOFF)
 	!Dead("Nwplat2")
 	!InMyArea("Nwplat2")
-	Global("In1042Plat2","GLOBAL",0)
+	Global("NWIn1042Plat2","GLOBAL",0)
 	Global("MovePlat","MYAREA",1)
 THEN
 	RESPONSE #100
-		SetGlobal("In1042Plat2","GLOBAL",1)
+		SetGlobal("NWIn1042Plat2","GLOBAL",1)
 		MoveGlobal("NW1042","Nwplat2",[2025.374])
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat3",GOODCUTOFF)
 	!Dead("Nwplat3")
 	!InMyArea("Nwplat3")
-	Global("In1042Plat3","GLOBAL",0)
+	Global("NWIn1042Plat3","GLOBAL",0)
 	Global("MovePlat","MYAREA",1)
 THEN
 	RESPONSE #100
-		SetGlobal("In1042Plat3","GLOBAL",1)
+		SetGlobal("NWIn1042Plat3","GLOBAL",1)
 		MoveGlobal("NW1042","Nwplat3",[1960.336])
 END
 
 IF
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	Allegiance("Nwplat4",GOODCUTOFF)
 	!Dead("Nwplat4")
 	!InMyArea("Nwplat4")
-	Global("In1042Plat4","GLOBAL",0)
+	Global("NWIn1042Plat4","GLOBAL",0)
 	Global("MovePlat","MYAREA",1)
 THEN
 	RESPONSE #100
-		SetGlobal("In1042Plat4","GLOBAL",1)
+		SetGlobal("NWIn1042Plat4","GLOBAL",1)
 		MoveGlobal("NW1042","Nwplat4",[1981.298])
 END
 

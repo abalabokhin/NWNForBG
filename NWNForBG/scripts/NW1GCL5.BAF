@@ -72,7 +72,7 @@ END
 
 IF
 	!Allegiance(Myself,ENEMY)
-	Global("DMWWNoNeutralPrebuff","GLOBAL",1)
+	Global("NWDMWWNoNeutralPrebuff","GLOBAL",1)
 THEN
 	RESPONSE #100
 		NoAction()

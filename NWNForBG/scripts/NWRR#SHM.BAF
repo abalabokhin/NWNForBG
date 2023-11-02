@@ -1,7 +1,7 @@
 IF
 	OnCreation()
 	!Allegiance(Myself,EVILCUTOFF)
-	!Global("RR#SMHOST","GLOBAL",1)
+	!Global("NWRR#SMHOST","GLOBAL",1)
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
@@ -13,7 +13,7 @@ END
 
 IF
 	!Allegiance(Myself,EVILCUTOFF)
-	Global("RR#SMHOST","GLOBAL",1)
+	Global("NWRR#SMHOST","GLOBAL",1)
 THEN
 	RESPONSE #100
 		Enemy()
@@ -38,7 +38,7 @@ THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
 		SetGlobal("RR#SHMCHK","LOCALS",2)
-		SetGlobal("RR#SMHOST","GLOBAL",1)
+		SetGlobal("NWRR#SMHOST","GLOBAL",1)
 		PlaySound("EFF_M72D")
 		FaceObject(LastSummonerOf(Myself))
 		TakePartyItem("NWGUARA")  // ????????
@@ -96,7 +96,7 @@ THEN
 END
 
 IF
-	Global("RR#SHMUPG","GLOBAL",0)
+	Global("NWRR#SHMUPG","GLOBAL",0)
 	LevelGT(Myself,15)
 	InParty(LastSummonerOf(Myself))
 	Class(LastSummonerOf(Myself),DRUID_ALL)
@@ -106,7 +106,7 @@ IF
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
-		SetGlobal("RR#SHMUPG","GLOBAL",1)
+		SetGlobal("NWRR#SHMUPG","GLOBAL",1)
 		TakeItemReplace("NWGUARB","NWGUARA",LastSummonerOf(Myself))  // ???????? +2
 		DisplayStringNoNameHead(Myself,@102459)  // ???? ????? ? ???????? ??????? ? ???? ????????? ???????? ????.
 		PlaySound("EFF_M72C")
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-	Global("RR#SHMUPG","GLOBAL",1)
+	Global("NWRR#SHMUPG","GLOBAL",1)
 	LevelGT(Myself,19)
 	InParty(LastSummonerOf(Myself))
 	Class(LastSummonerOf(Myself),DRUID_ALL)
@@ -124,7 +124,7 @@ IF
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
-		SetGlobal("RR#SHMUPG","GLOBAL",2)
+		SetGlobal("NWRR#SHMUPG","GLOBAL",2)
 		TakeItemReplace("NWGUARC","NWGUARB",LastSummonerOf(Myself))  // ???????? +3
 		DisplayStringNoNameHead(Myself,@102459)  // ???? ????? ? ???????? ??????? ? ???? ????????? ???????? ????.
 		PlaySound("EFF_M72C")

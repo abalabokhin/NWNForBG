@@ -1,10 +1,10 @@
 IF
-	Global("KaohionQuest","GLOBAL",6)
+	Global("NWKaohionQuest","GLOBAL",6)
 	!Exists("NWKAOHIN")  // ???????? ?? ??????
 	Delay(5)
 THEN
 	RESPONSE #100
-		SetGlobal("KaohionQuest","GLOBAL",7)
+		SetGlobal("NWKaohionQuest","GLOBAL",7)
 		CreateVisualEffect("SPBASERD",[3629.930])
 		Wait(2)
 		CreateCreature("NWGUAR15",[3629.930],4)  // ??? ????????? ??????
@@ -12,17 +12,17 @@ THEN
 END
 
 IF
-	Global("KaohionQuest","GLOBAL",8)
+	Global("NWKaohionQuest","GLOBAL",8)
 	Exists("NWGUAR15")  // ??? ????????? ??????
 	Delay(5)
 THEN
 	RESPONSE #100
 		ActionOverride("NWGUAR15",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
-		SetGlobal("KaohionQuest","GLOBAL",9)
+		SetGlobal("NWKaohionQuest","GLOBAL",9)
 END
 
 IF
-	GlobalGT("KaohionQuest","GLOBAL",2)
+	GlobalGT("NWKaohionQuest","GLOBAL",2)
 	PartyHasItem("NWBOOK47")  // ?????? ???????
 THEN
 	RESPONSE #100

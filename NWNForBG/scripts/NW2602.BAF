@@ -1,6 +1,6 @@
 IF
-	GlobalGT("JaregQuest","GLOBAL",4)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	GlobalGT("NWJaregQuest","GLOBAL",4)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("ChangeDoor","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -11,16 +11,16 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",5)
-	Global("Charwood_Is_Cursed","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",5)
+	Global("NWCharwood_Is_Cursed","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ActionOverride("NWMOBLEY",DestroySelf())
 END
 
 IF
-	GlobalGT("JaregQuest","GLOBAL",4)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	GlobalGT("NWJaregQuest","GLOBAL",4)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Exists("NWMOBLEY")  // ?????
 THEN
 	RESPONSE #100

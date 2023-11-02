@@ -7,12 +7,12 @@ BEGIN ~NWARKLEM~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)GlobalLT("BrazierDestroyed","MYAREA",3)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 1
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @2 GOTO 3
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @2 GOTO 4
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @3 GOTO 5
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @3 GOTO 6
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 1
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @2 GOTO 3
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @2 GOTO 4
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @3 GOTO 5
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @3 GOTO 6
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
@@ -162,8 +162,8 @@ IF ~~ THEN BEGIN 21 // from: 13.5
   IF ~~ THEN REPLY @21 GOTO 25
   IF ~~ THEN REPLY @22 GOTO 26
   IF ~~ THEN REPLY @23 GOTO 27
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 28
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 29
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 28
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 29
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.1
@@ -200,8 +200,8 @@ IF ~~ THEN BEGIN 27 // from: 16.1
   IF ~~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @21 GOTO 25
   IF ~~ THEN REPLY @22 GOTO 26
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 28
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 29
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 28
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 29
 END
 
 IF ~~ THEN BEGIN 28 // from: 21.5
@@ -218,8 +218,8 @@ IF ~~ THEN BEGIN 30 // from: 25.1
   SAY @42
   IF ~~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @23 GOTO 27
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 28
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 29
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 28
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 GOTO 29
 END
 
 IF ~~ THEN BEGIN 31 // from: 28.1
@@ -230,21 +230,21 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 31.1
   SAY @50
-  IF ~~ THEN DO ~SetGlobal("ArklemQuest","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWArklemQuest","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 31.2
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("ArklemQuest","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWArklemQuest","GLOBAL",1)~ EXIT
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("ArklemQuest","GLOBAL",0)GlobalLT("BrazierDestroyed","MYAREA",3)Global("AttackMyself","LOCALS",0)~ THEN BEGIN 34 // from:
+~  !NumTimesTalkedTo(0)Global("NWArklemQuest","GLOBAL",0)GlobalLT("BrazierDestroyed","MYAREA",3)Global("AttackMyself","LOCALS",0)~ THEN BEGIN 34 // from:
   SAY @52
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @53 GOTO 1
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @53 GOTO 2
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @53 GOTO 1
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @53 GOTO 2
   IF ~~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @22 GOTO 15
@@ -254,7 +254,7 @@ END
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("ArklemQuest","GLOBAL",1)GlobalLT("BrazierDestroyed","MYAREA",3)Global("AttackMyself","LOCALS",0)~ THEN BEGIN 35 // from:
+~  Global("NWArklemQuest","GLOBAL",1)GlobalLT("BrazierDestroyed","MYAREA",3)Global("AttackMyself","LOCALS",0)~ THEN BEGIN 35 // from:
   SAY @54
   IF ~~ THEN EXIT
 END
@@ -264,8 +264,8 @@ END
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("BrazierDestroyed","MYAREA",3)~ THEN BEGIN 36 // from:
   SAY @55
-  IF ~  Global("ArklemQuest","GLOBAL",0)~ THEN GOTO 37
-  IF ~  Global("ArklemQuest","GLOBAL",1)~ THEN GOTO 38
+  IF ~  Global("NWArklemQuest","GLOBAL",0)~ THEN GOTO 37
+  IF ~  Global("NWArklemQuest","GLOBAL",1)~ THEN GOTO 38
 END
 
 IF ~~ THEN BEGIN 37 // from: 36.1
@@ -275,7 +275,7 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 36.2
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("ArklemQuest","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWArklemQuest","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 37.1
@@ -291,7 +291,7 @@ IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this st
   IF ~~ THEN REPLY @20 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 13
   IF ~~ THEN REPLY @21 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 25
   IF ~~ THEN REPLY @22 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 26
-  IF ~  Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 28
-  IF ~  !Global("NyphithusQuest","GLOBAL",2)~ THEN REPLY @41 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 29
+  IF ~  Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 28
+  IF ~  !Global("NWNyphithusQuest","GLOBAL",2)~ THEN REPLY @41 DO~SetGlobal("AttackMyself","LOCALS",0)~ GOTO 29
 END
 

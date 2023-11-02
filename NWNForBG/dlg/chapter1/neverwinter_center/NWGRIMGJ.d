@@ -13,13 +13,13 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  Global("GrimgnawQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("GrimgnawQuest","GLOBAL",1)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @5 GOTO 20
-  IF ~  Global("GrimgnawQuest","GLOBAL",2)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @5 GOTO 32
-  IF ~  Global("GrimgnawQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 50
-  IF ~  OR(2)GlobalGT("GrimgnawQuest","GLOBAL",3)GlobalTimerNotExpired("GrimgnawTimer","LOCALS")!Global("GrimgnawQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 51
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 52
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 53
+  IF ~  Global("NWGrimgnawQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWGrimgnawQuest","GLOBAL",1)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @5 GOTO 20
+  IF ~  Global("NWGrimgnawQuest","GLOBAL",2)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @5 GOTO 32
+  IF ~  Global("NWGrimgnawQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 50
+  IF ~  OR(2)GlobalGT("NWGrimgnawQuest","GLOBAL",3)GlobalTimerNotExpired("GrimgnawTimer","LOCALS")!Global("NWGrimgnawQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 51
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 52
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 53
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.5
@@ -114,12 +114,12 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 14.1
   SAY @39
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 16.3
   SAY @40
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 1.2
@@ -185,12 +185,12 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 29.1
   SAY @39
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 29.2
   SAY @63
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 1.3
@@ -265,12 +265,12 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 1.8
   SAY @87
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 43.1
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 43.1
@@ -292,7 +292,7 @@ END
 IF ~~ THEN BEGIN 49 // from: 47.1 48.1
   SAY @94
   IF ~~ THEN DO ~
-    SetGlobal("GrimgnawQuest","GLOBAL",4)
+    SetGlobal("NWGrimgnawQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -349,12 +349,12 @@ END
 
 IF ~~ THEN BEGIN 58 // from: 0.2
   SAY @3
-  IF ~  Global("GrimgnawQuest2","GLOBAL",0)~ THEN REPLY @105 GOTO 59
-  IF ~  Global("GrimgnawQuest2","GLOBAL",1)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @106 GOTO 68
-  IF ~  Global("GrimgnawQuest2","GLOBAL",2)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @106 GOTO 81
-  IF ~  Global("GrimgnawQuest2","GLOBAL",3)~ THEN REPLY @107 GOTO 92
-  IF ~  OR(2)GlobalGT("GrimgnawQuest2","GLOBAL",3)GlobalTimerNotExpired("GrimgnawTimer","LOCALS")!Global("GrimgnawQuest2","GLOBAL",66)~ THEN REPLY @107 GOTO 93
-  IF ~  Global("GrimgnawQuest2","GLOBAL",66)~ THEN REPLY @107 GOTO 154
+  IF ~  Global("NWGrimgnawQuest2","GLOBAL",0)~ THEN REPLY @105 GOTO 59
+  IF ~  Global("NWGrimgnawQuest2","GLOBAL",1)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @106 GOTO 68
+  IF ~  Global("NWGrimgnawQuest2","GLOBAL",2)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @106 GOTO 81
+  IF ~  Global("NWGrimgnawQuest2","GLOBAL",3)~ THEN REPLY @107 GOTO 92
+  IF ~  OR(2)GlobalGT("NWGrimgnawQuest2","GLOBAL",3)GlobalTimerNotExpired("GrimgnawTimer","LOCALS")!Global("NWGrimgnawQuest2","GLOBAL",66)~ THEN REPLY @107 GOTO 93
+  IF ~  Global("NWGrimgnawQuest2","GLOBAL",66)~ THEN REPLY @107 GOTO 154
   IF ~~ THEN REPLY @7 GOTO 94
 END
 
@@ -406,7 +406,7 @@ END
 
 IF ~~ THEN BEGIN 67 // from: 66.1
   SAY @123
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest2","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 68 // from: 58.2
@@ -478,7 +478,7 @@ END
 
 IF ~~ THEN BEGIN 80 // from: 79
   SAY @148
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest2","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 81 // from: 58.3
@@ -494,7 +494,7 @@ END
 
 IF ~~ THEN BEGIN 83 // from: 81.2
   SAY @153
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 84 // from: 82.1
@@ -525,7 +525,7 @@ END
 IF ~~ THEN BEGIN 88 // from: 87.1 87.3
   SAY @164
   IF ~~THEN DO ~
-    SetGlobal("GrimgnawQuest2","GLOBAL",4)
+    SetGlobal("NWGrimgnawQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -541,7 +541,7 @@ END
 IF ~~ THEN BEGIN 89 // from: 87.2 87.4
   SAY @165
   IF ~~THEN DO ~
-    SetGlobal("GrimgnawQuest2","GLOBAL",4)
+    SetGlobal("NWGrimgnawQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -554,12 +554,12 @@ END
 
 IF ~~ THEN BEGIN 90 // from: 86.2
   SAY @166
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 91 // from: 86.3
   SAY @167
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 92 // from: 58.4
@@ -598,11 +598,11 @@ END
 
 IF ~~ THEN BEGIN 98 // from: 0.3
   SAY @3
-  IF ~  Global("GrimgnawQuest3","GLOBAL",0)~ THEN REPLY @174 GOTO 99
-  IF ~  Global("GrimgnawQuest3","GLOBAL",1)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @175 GOTO 108
-  IF ~  Global("GrimgnawQuest3","GLOBAL",2)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @175 GOTO 122
-  IF ~  Global("GrimgnawQuest3","GLOBAL",3)~ THEN REPLY @175 GOTO 148
-  IF ~  OR(2)GlobalGT("GrimgnawQuest3","GLOBAL",3)GlobalTimerNotExpired("GrimgnawTimer","LOCALS")!Global("GrimgnawQuest3","GLOBAL",66)~ THEN REPLY @175 GOTO 149
+  IF ~  Global("NWGrimgnawQuest3","GLOBAL",0)~ THEN REPLY @174 GOTO 99
+  IF ~  Global("NWGrimgnawQuest3","GLOBAL",1)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @175 GOTO 108
+  IF ~  Global("NWGrimgnawQuest3","GLOBAL",2)GlobalTimerExpired("GrimgnawTimer","LOCALS")~ THEN REPLY @175 GOTO 122
+  IF ~  Global("NWGrimgnawQuest3","GLOBAL",3)~ THEN REPLY @175 GOTO 148
+  IF ~  OR(2)GlobalGT("NWGrimgnawQuest3","GLOBAL",3)GlobalTimerNotExpired("GrimgnawTimer","LOCALS")!Global("NWGrimgnawQuest3","GLOBAL",66)~ THEN REPLY @175 GOTO 149
   IF ~~ THEN REPLY @7 GOTO 150
 END
 
@@ -654,7 +654,7 @@ END
 
 IF ~~ THEN BEGIN 107 // from: 105 106
   SAY @193
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest3","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest3","GLOBAL",1)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 108 // from: 98.2
@@ -731,7 +731,7 @@ END
 
 IF ~~ THEN BEGIN 121 // from: 120.1
   SAY @218
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest3","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest3","GLOBAL",2)SetGlobalTimer("GrimgnawTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 122 // from: 98.3
@@ -791,12 +791,12 @@ END
 
 IF ~~ THEN BEGIN 132 // from: 130.2
   SAY @241
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 133 // from: 130.3
   SAY @242
-  IF ~~ THEN DO ~SetGlobal("GrimgnawQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGrimgnawQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 134 // from: 131
@@ -817,7 +817,7 @@ END
 IF ~~ THEN BEGIN 137 // from: 136
   SAY @248
   IF ~~ THEN DO ~
-    SetGlobal("GrimgnawQuest3","GLOBAL",4)
+    SetGlobal("NWGrimgnawQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWGRIMGW",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)

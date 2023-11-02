@@ -3,7 +3,7 @@
 BEGIN ~NWLUSKAD~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("GoToLuskan","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWGoToLuskan","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -72,13 +72,13 @@ IF ~~ THEN BEGIN 9 // from: 7.2
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("GoToLuskan","GLOBAL",1)~ THEN BEGIN 10 // from:
+~  Global("NWGoToLuskan","GLOBAL",1)~ THEN BEGIN 10 // from:
   SAY @19
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("GoToLuskan","GLOBAL",2)~ THEN BEGIN 11 // from:
+~  Global("NWGoToLuskan","GLOBAL",2)~ THEN BEGIN 11 // from:
   SAY @20
   IF ~~ THEN GOTO 12
 END

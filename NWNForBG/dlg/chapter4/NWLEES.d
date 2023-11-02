@@ -9,9 +9,9 @@
 BEGIN ~NWLEES~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("LeesQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWLeesQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("LuceJob","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWLuceJob","GLOBAL",1)~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
@@ -20,24 +20,24 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @6
-  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
-  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
+  IF ~  GlobalGT("NWLuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("NWLuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @8 GOTO 8
   IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @9
-  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
-  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
+  IF ~  GlobalGT("NWLuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("NWLuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @8 GOTO 8
   IF ~~ THEN REPLY @5 GOTO 5
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @9
-  IF ~  GlobalGT("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
-  IF ~  Global("LuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
+  IF ~  GlobalGT("NWLuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 6
+  IF ~  Global("NWLuceJob","GLOBAL",0)~ THEN REPLY @7 GOTO 7
   IF ~~ THEN REPLY @8 GOTO 8
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -51,12 +51,12 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
   SAY @11
-  IF ~~ THEN DO ~RunAwayFrom(LastTalkedToBy(Myself),15)SetGlobal("LeesQuest","GLOBAL",9)~ EXIT
+  IF ~~ THEN DO ~RunAwayFrom(LastTalkedToBy(Myself),15)SetGlobal("NWLeesQuest","GLOBAL",9)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @107445 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLeesQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @107445 EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.2
@@ -73,7 +73,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
   SAY @17
-  IF ~~ THEN DO ~SetGlobal("LeesQuest","GLOBAL",1)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLeesQuest","GLOBAL",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
@@ -84,7 +84,7 @@ END
 // ---------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~ Global("LeesQuest","GLOBAL",9)~ THEN BEGIN 11 // from:
+~ Global("NWLeesQuest","GLOBAL",9)~ THEN BEGIN 11 // from:
   SAY @19
   IF ~~ THEN GOTO 12
 END
@@ -97,7 +97,7 @@ END
 // ---------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~ RandomNum(2,1)GlobalGT("LeesQuest","GLOBAL",0)!Global("LeesQuest","GLOBAL",9)~ THEN BEGIN 13 // from:
+~ RandomNum(2,1)GlobalGT("NWLeesQuest","GLOBAL",0)!Global("NWLeesQuest","GLOBAL",9)~ THEN BEGIN 13 // from:
   SAY @21
   IF ~~ THEN EXIT
 END
@@ -105,7 +105,7 @@ END
 // ---------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~ RandomNum(2,2)GlobalGT("LeesQuest","GLOBAL",0)!Global("LeesQuest","GLOBAL",9)~ THEN BEGIN 11 // from:
+~ RandomNum(2,2)GlobalGT("NWLeesQuest","GLOBAL",0)!Global("NWLeesQuest","GLOBAL",9)~ THEN BEGIN 11 // from:
   SAY @22
   IF ~~ THEN EXIT
 END

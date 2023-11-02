@@ -3,7 +3,7 @@
 BEGIN ~NWSONFP2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWFarmerQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -83,11 +83,11 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 7.1
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("FarmerQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @97247 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWFarmerQuest","GLOBAL",1)EscapeArea()~ UNSOLVED_JOURNAL @97247 EXIT
 END
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("FarmerQuest","GLOBAL",1)~ THEN BEGIN 12 // from:
+~  Global("NWFarmerQuest","GLOBAL",1)~ THEN BEGIN 12 // from:
   SAY @27
   IF ~~ THEN EXIT
 END

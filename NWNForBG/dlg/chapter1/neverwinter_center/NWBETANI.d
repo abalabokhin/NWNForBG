@@ -3,7 +3,7 @@
 BEGIN ~NWBETANI~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -106,9 +106,9 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)!Global("MyQuest","LOCALS",9)~ THEN BEGIN 15 // from:
   SAY @29
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @30 GOTO 16
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @31 GOTO 3
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN REPLY @32 GOTO 17
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @30 GOTO 16
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @31 GOTO 3
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @32 GOTO 17
   IF ~~ THEN REPLY @33 GOTO 18
 END
 
@@ -144,8 +144,8 @@ END
 // -------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 21 // from:
+~  !NumTimesTalkedTo(0)GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 21 // from:
   SAY @42
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN REPLY @30 GOTO 16
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN REPLY @30 GOTO 16
   IF ~~ THEN REPLY @33 GOTO 18
 END

@@ -3,10 +3,10 @@
 BEGIN ~NWZED~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Cheating","LOCALS",0)Global("ZedTalk","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("Cheating","LOCALS",0)Global("NWZedTalk","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~  Global("Cheating","LOCALS",0)CheckStatGT(LastTalkedToBy,10,CHR)~ THEN REPLY @4 GOTO 4
   IF ~  Global("Cheating","LOCALS",0)CheckStatLT(LastTalkedToBy,11,CHR)~ THEN REPLY @4 GOTO 5
@@ -38,7 +38,7 @@ IF ~~ THEN BEGIN 5 // from: 0.5
   SAY @13
   IF ~~ THEN REPLY @14 GOTO 10
   IF ~~ THEN REPLY @15 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 6
 END
@@ -63,7 +63,7 @@ END
 IF ~~ THEN BEGIN 9 // from: 4.2
   SAY @21
   IF ~~ THEN REPLY @22 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 6
 END
@@ -116,13 +116,13 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 16.1
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("ZedTalk","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWZedTalk","GLOBAL",1)~ EXIT
 END
 
 // -------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Cheating","LOCALS",0)Global("ZedTalk","GLOBAL",1)Global("RolgansTrial","GLOBAL",1)~ THEN BEGIN 19 // from:
+~  Global("Cheating","LOCALS",0)Global("NWZedTalk","GLOBAL",1)Global("NWRolgansTrial","GLOBAL",1)~ THEN BEGIN 19 // from:
   SAY @38
   IF ~~ THEN REPLY @39 GOTO 20
   IF ~~ THEN REPLY @5 GOTO 21
@@ -146,7 +146,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Cheating","LOCALS",0)GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 23 // from:
+~  Global("Cheating","LOCALS",0)GlobalGT("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 23 // from:
   SAY @43
   IF ~~ THEN EXIT
 END
@@ -154,7 +154,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Cheating","LOCALS",0)GlobalGT("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 24 // from:
+~  Global("Cheating","LOCALS",0)GlobalGT("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 24 // from:
   SAY @44
   IF ~~ THEN EXIT
 END
@@ -184,7 +184,7 @@ IF ~~ THEN BEGIN 28 // from: NWIGLAND 5.1
   SAY @48
   IF ~~ THEN REPLY @49 GOTO 29
   IF ~~ THEN REPLY @50 GOTO 30
-  IF ~  GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
+  IF ~  GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
   IF ~~ THEN REPLY @52 GOTO 32
   IF ~~ THEN REPLY @53 EXTERN ~NWIGLAND~ 6
 END
@@ -192,7 +192,7 @@ END
 IF ~~ THEN BEGIN 29 // from: 28.1
   SAY @54
   IF ~~ THEN REPLY @50 GOTO 30
-  IF ~  GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
+  IF ~  GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
   IF ~~ THEN REPLY @52 GOTO 32
   IF ~~ THEN REPLY @53 EXTERN ~NWIGLAND~ 6
 END
@@ -200,14 +200,14 @@ END
 IF ~~ THEN BEGIN 30 // from: 28.2
   SAY @55
   IF ~~ THEN REPLY @49 GOTO 29
-  IF ~  GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
+  IF ~  GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
   IF ~~ THEN REPLY @52 GOTO 32
   IF ~~ THEN REPLY @53 EXTERN ~NWIGLAND~ 6
 END
 
 IF ~~ THEN BEGIN 31 // from: 28.3
   SAY @56
-  IF ~~ THEN REPLY @57 DO ~IncrementGlobal("Justification","GLOBAL",1)~ GOTO 33
+  IF ~~ THEN REPLY @57 DO ~IncrementGlobal("NWJustification","GLOBAL",1)~ GOTO 33
 END
 
 IF ~~ THEN BEGIN 32 // from: 28.4
@@ -225,10 +225,10 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 32.1
   SAY @61
-  IF ~  CheckStatGT(Player1,10,INT)~ THEN REPLY @62 DO ~IncrementGlobal("Justification","GLOBAL",1)~ GOTO 35
+  IF ~  CheckStatGT(Player1,10,INT)~ THEN REPLY @62 DO ~IncrementGlobal("NWJustification","GLOBAL",1)~ GOTO 35
   IF ~~ THEN REPLY @49 GOTO 29
   IF ~~ THEN REPLY @50 GOTO 30
-  IF ~  GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
+  IF ~  GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
   IF ~~ THEN REPLY @53 EXTERN ~NWIGLAND~ 6
 END
 
@@ -236,7 +236,7 @@ IF ~~ THEN BEGIN 35 // from: 34.1
   SAY @63
   IF ~~ THEN REPLY @49 GOTO 29
   IF ~~ THEN REPLY @50 GOTO 30
-  IF ~  GlobalGT("ZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
+  IF ~  GlobalGT("NWZedTalk","GLOBAL",0)~ THEN REPLY @51 GOTO 31
   IF ~~ THEN REPLY @53 EXTERN ~NWIGLAND~ 6
 END
 

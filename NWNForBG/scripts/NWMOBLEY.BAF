@@ -1,6 +1,6 @@
 IF
 	Die()
-	!Global("JaregQuest","GLOBAL",5)
+	!Global("NWJaregQuest","GLOBAL",5)
 THEN
 	RESPONSE #100
 		Wait(5)

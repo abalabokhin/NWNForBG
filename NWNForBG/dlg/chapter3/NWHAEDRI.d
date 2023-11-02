@@ -4,7 +4,7 @@ BEGIN ~NWHAEDRI~
 // Поговори со мной **шшш*. Нам есть чему поучиться друг у друга. [HAERD050]
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(3)PartyHasItem("NWWORD1")PartyHasItem("NWWORD2")PartyHasItem("NWWORD3")Global("HaerdalinTalk","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  OR(3)PartyHasItem("NWWORD1")PartyHasItem("NWWORD2")PartyHasItem("NWWORD3")Global("NWHaerdalinTalk","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  IsGabber(Player1)~ THEN REPLY @1 GOTO 1
   IF ~  !IsGabber(Player1)~ THEN REPLY @2 GOTO 1
@@ -66,13 +66,13 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
   SAY @20
-  IF ~~ THEN DO ~SetGlobal("HaerdalinTalk","GLOBAL",1)CreateVisualEffectObject("ICRMPARI",Myself)Wait(3)DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHaerdalinTalk","GLOBAL",1)CreateVisualEffectObject("ICRMPARI",Myself)Wait(3)DestroySelf()~ EXIT
 END
 
 // ------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(3)PartyHasItem("NWWORD1")PartyHasItem("NWWORD2")PartyHasItem("NWWORD3")Global("HaerdalinTalk","GLOBAL",1)~ THEN BEGIN 11 // from:
+~  OR(3)PartyHasItem("NWWORD1")PartyHasItem("NWWORD2")PartyHasItem("NWWORD3")Global("NWHaerdalinTalk","GLOBAL",1)~ THEN BEGIN 11 // from:
   SAY @21
   IF ~~ THEN REPLY @22 GOTO 12
   IF ~~ THEN REPLY @3 GOTO 13
@@ -212,13 +212,13 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 32.1
   SAY @63
-  IF ~~ THEN DO ~SetGlobal("HaerdalinTalk","GLOBAL",2)CreateVisualEffectObject("ICRMPARI",Myself)Wait(3)DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHaerdalinTalk","GLOBAL",2)CreateVisualEffectObject("ICRMPARI",Myself)Wait(3)DestroySelf()~ EXIT
 END
 
 // ----------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(3)PartyHasItem("NWWORD1")PartyHasItem("NWWORD2")PartyHasItem("NWWORD3")Global("HaerdalinTalk","GLOBAL",2)~ THEN BEGIN 34 // from:
+~  OR(3)PartyHasItem("NWWORD1")PartyHasItem("NWWORD2")PartyHasItem("NWWORD3")Global("NWHaerdalinTalk","GLOBAL",2)~ THEN BEGIN 34 // from:
   SAY @64
   IF ~~ THEN REPLY @65 GOTO 35
   IF ~~ THEN REPLY @66 GOTO 35
@@ -299,6 +299,6 @@ END
 
 IF ~~ THEN BEGIN 48 // from: 47.1
   SAY @87
-  IF ~~ THEN DO ~SetGlobal("HaerdalinTalk","GLOBAL",3)CreateVisualEffectObject("ICRMPARI",Myself)Wait(3)DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHaerdalinTalk","GLOBAL",3)CreateVisualEffectObject("ICRMPARI",Myself)Wait(3)DestroySelf()~ EXIT
 END
 

@@ -98,21 +98,21 @@ THEN
 	RESPONSE #100
 		ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_FEAR)  // SPIN895.SPL (????? ???????)
 		SetGlobal("DRAGONFEAR","LOCALS",1)
-		SetGlobalTimer("BLACKDRAGONBREATH","GLOBAL",1)
-		SetGlobalTimer("bdFlapping","GLOBAL",1)
+		SetGlobalTimer("NWBLACKDRAGONBREATH","GLOBAL",1)
+		SetGlobalTimer("NWbdFlapping","GLOBAL",1)
 		ForceSpell(LastSeenBy(Myself),DRAGON_WING_BUFFET)  // SPIN695.SPL (???? ??????)
 END
 
 IF
-	GlobalTimerExpired("BLACKDRAGONBREATH","GLOBAL")
-	GlobalTimerExpired("bdFlapping","GLOBAL")
+	GlobalTimerExpired("NWBLACKDRAGONBREATH","GLOBAL")
+	GlobalTimerExpired("NWbdFlapping","GLOBAL")
 	See(NearestEnemyOf(Myself))
 	Range(LastSeenBy(Myself),11)
 	Global("WingBuffet","LOCALS",0)
 THEN
 	RESPONSE #100
 		ForceSpell(LastSeenBy(Myself),DRAGON_WING_BUFFET)  // SPIN695.SPL (???? ??????)
-		SetGlobalTimer("BLACKDRAGONBREATH","GLOBAL",2)
+		SetGlobalTimer("NWBLACKDRAGONBREATH","GLOBAL",2)
 		Wait(1)
 		SetGlobal("WingBuffet","LOCALS",1)
 	RESPONSE #30
@@ -123,12 +123,12 @@ IF
 	See(NearestEnemyOf(Myself))
 	!Range(LastSeenBy(Myself),10)
 	Range(LastSeenBy(Myself),17)
-	GlobalTimerExpired("BLACKDRAGONBREATH","GLOBAL")
+	GlobalTimerExpired("NWBLACKDRAGONBREATH","GLOBAL")
 THEN
 	RESPONSE #100
 		ForceSpell(LastSeenBy(Myself),BLACK_DRAGON_BREATH)  // SPIN691.SPL (??????? ??????? ???????)
 		SetGlobal("WingBuffet","LOCALS",0)
-		SetGlobalTimer("BLACKDRAGONBREATH","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWBLACKDRAGONBREATH","GLOBAL",THREE_ROUNDS)
 END
 
 IF
@@ -139,7 +139,7 @@ THEN
 	RESPONSE #100
 		RunAwayFrom(LastSeenBy(Myself),60)
 		SetGlobal("WingBuffet","LOCALS",0)
-		SetGlobalTimer("BLACKDRAGONBREATH","GLOBAL",THREE_ROUNDS)
+		SetGlobalTimer("NWBLACKDRAGONBREATH","GLOBAL",THREE_ROUNDS)
 END
 
 IF
@@ -148,7 +148,7 @@ IF
 	Global("dbPlant","LOCALS",0)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("bdFlapping","GLOBAL",SIXTEEN_MINUTES)
+		SetGlobalTimer("NWbdFlapping","GLOBAL",SIXTEEN_MINUTES)
 		ForceSpell(Myself,BLACK_DRAGON_PLANT)  // SPIN688.SPL (???? ????????)
 		SetGlobal("dbPlant","LOCALS",1)
 END

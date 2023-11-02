@@ -1,6 +1,6 @@
 IF
 	OR(2)
-		GlobalGT("SpiritSaved","GLOBAL",0)
+		GlobalGT("NWSpiritSaved","GLOBAL",0)
 		Dead("NWSPIRIO")  // ??? ????
 	Global("MyChange","LOCALS",0)
 	Allegiance(Myself,NEUTRAL)
@@ -12,7 +12,7 @@ END
 
 IF
 	OR(2)
-		GlobalGT("SpiritSaved","GLOBAL",0)
+		GlobalGT("NWSpiritSaved","GLOBAL",0)
 		Dead("NWSPIRIO")  // ??? ????
 	Global("MyChange","LOCALS",0)
 	Allegiance(Myself,ENEMY)
@@ -30,7 +30,7 @@ IF
 	!See([PC.0.0.RANGER])
 	!See([PC.0.0.FIGHTER_DRUID])
 	!See([PC.0.0.CLERIC_RANGER])
-	Global("ENDOFBG1","GLOBAL",0)
+	Global("NWENDOFBG1","GLOBAL",0)
 THEN
 	RESPONSE #100
 		Enemy()
@@ -43,7 +43,7 @@ IF
 	!See([PC.0.0.RANGER])
 	!See([PC.0.0.FIGHTER_DRUID])
 	!See([PC.0.0.CLERIC_RANGER])
-	Global("ENDOFBG1","GLOBAL",0)
+	Global("NWENDOFBG1","GLOBAL",0)
 THEN
 	RESPONSE #100
 		Enemy()
@@ -60,7 +60,7 @@ IF
 	!See([PC.0.0.RANGER])
 	!See([PC.0.0.FIGHTER_DRUID])
 	!See([PC.0.0.CLERIC_RANGER])
-	Global("ENDOFBG1","GLOBAL",2)
+	Global("NWENDOFBG1","GLOBAL",2)
 THEN
 	RESPONSE #100
 		Enemy()
@@ -77,7 +77,7 @@ IF
 	!See([PC.0.0.RANGER])
 	!See([PC.0.0.FIGHTER_DRUID])
 	!See([PC.0.0.CLERIC_RANGER])
-	Global("ENDOFBG1","GLOBAL",2)
+	Global("NWENDOFBG1","GLOBAL",2)
 THEN
 	RESPONSE #100
 		Enemy()

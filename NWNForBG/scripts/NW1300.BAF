@@ -9,53 +9,53 @@ THEN
 END
 
 IF
-	Global("1300DOORA","GLOBAL",1)
+	Global("NW1300DOORA","GLOBAL",1)
 	OpenState("Door05",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("1300DOORA","GLOBAL",0)
+		SetGlobal("NW1300DOORA","GLOBAL",0)
 END
 
 IF
-	Global("1300DOORA","GLOBAL",1)
+	Global("NW1300DOORA","GLOBAL",1)
 	OpenState("Door05",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("1300DOORA","GLOBAL",0)
+		SetGlobal("NW1300DOORA","GLOBAL",0)
 		OpenDoor("Door05")
 END
 
 IF
-	Global("1300DOORB","GLOBAL",1)
+	Global("NW1300DOORB","GLOBAL",1)
 	OpenState("Door06",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("1300DOORB","GLOBAL",0)
+		SetGlobal("NW1300DOORB","GLOBAL",0)
 END
 
 IF
-	Global("1300DOORB","GLOBAL",1)
+	Global("NW1300DOORB","GLOBAL",1)
 	OpenState("Door06",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("1300DOORB","GLOBAL",0)
+		SetGlobal("NW1300DOORB","GLOBAL",0)
 		OpenDoor("Door06")
 END
 
 IF
-	Global("1300DOORC","GLOBAL",1)
+	Global("NW1300DOORC","GLOBAL",1)
 	OpenState("Door03",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("1300DOORC","GLOBAL",0)
+		SetGlobal("NW1300DOORC","GLOBAL",0)
 END
 
 IF
-	Global("1300DOORC","GLOBAL",1)
+	Global("NW1300DOORC","GLOBAL",1)
 	OpenState("Door03",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("1300DOORC","GLOBAL",0)
+		SetGlobal("NW1300DOORC","GLOBAL",0)
 		Unlock("Door03")
 		OpenDoor("Door03")
 END
@@ -69,28 +69,28 @@ THEN
 END
 
 IF
-	GlobalLT("SedosQuest","GLOBAL",3)
-	GlobalGT("SedosQuest","GLOBAL",0)
+	GlobalLT("NWSedosQuest","GLOBAL",3)
+	GlobalGT("NWSedosQuest","GLOBAL",0)
 	Dead("NWCREWT2")  // ???????
 THEN
 	RESPONSE #100
-		SetGlobal("SedosQuest","GLOBAL",3)
+		SetGlobal("NWSedosQuest","GLOBAL",3)
 		Continue()
 END
 
 IF
-	Global("PeninsulaDone","GLOBAL",0)
+	Global("NWPeninsulaDone","GLOBAL",0)
 	Dead("NWCREWT2")  // ???????
 THEN
 	RESPONSE #100
-		SetGlobal("PeninsulaDone","GLOBAL",1)
+		SetGlobal("NWPeninsulaDone","GLOBAL",1)
 		IncrementGlobal("NW_Cultist_Attack","GLOBAL",1)
 		Continue()
 END
 
 IF
 	OR(2)
-		GlobalLT("SedosQuest","GLOBAL",3)
+		GlobalLT("NWSedosQuest","GLOBAL",3)
 		!Dead("NWALAEFN")  // ??????? ???????
 	Global("SpawnPointActive","MYAREA",0)
 	NumDeadGT("Thug1300",10)
@@ -109,7 +109,7 @@ END
 
 IF
 	OR(2)
-		GlobalGT("SedosQuest","GLOBAL",2)
+		GlobalGT("NWSedosQuest","GLOBAL",2)
 		Dead("NWALAEFN")  // ??????? ???????
 	Global("SpawnPointActive","MYAREA",1)
 THEN

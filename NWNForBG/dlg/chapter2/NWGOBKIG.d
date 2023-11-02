@@ -30,7 +30,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
   SAY @11
-  IF ~~ THEN DO ~SetGlobal("GoblinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99074 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGoblinQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99074 EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.2
@@ -61,7 +61,7 @@ END
 // ---------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("GoblinQuest","GLOBAL",1)~ THEN BEGIN 9 // from:
+~  Global("NWGoblinQuest","GLOBAL",1)~ THEN BEGIN 9 // from:
   SAY @19
   IF ~~ THEN REPLY @20 GOTO 10
   IF ~  PartyHasItem("NWHEADBB")~ THEN REPLY @21 GOTO 11
@@ -85,7 +85,7 @@ END
 IF ~~ THEN BEGIN 16 // from: 11.1
   SAY @28
   IF ~~ THEN DO ~SetGlobal("BugbeerDead","LOCALS",1)
-SetGlobal("GoblinQuest","GLOBAL",2)
+SetGlobal("NWGoblinQuest","GLOBAL",2)
 GiveGoldForce(1200)
 TakePartyItem("NWHEADBB")
 AddexperienceParty(12000)
@@ -106,7 +106,7 @@ END
 IF ~~ THEN BEGIN 18 // from: 12.1
   SAY @28
   IF ~~ THEN DO ~SetGlobal("OrcDead","LOCALS",1)
-SetGlobal("GoblinQuest","GLOBAL",2)
+SetGlobal("NWGoblinQuest","GLOBAL",2)
 GiveGoldForce(1200)
 TakePartyItem("NWHEADOC")
 AddexperienceParty(12000)
@@ -144,7 +144,7 @@ END
 // ---------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("GoblinQuest","GLOBAL",2)~ THEN BEGIN 20 // from:
+~  Global("NWGoblinQuest","GLOBAL",2)~ THEN BEGIN 20 // from:
   SAY @36
   IF ~~ THEN REPLY @37 GOTO 6
   IF ~~ THEN REPLY @38 GOTO 21

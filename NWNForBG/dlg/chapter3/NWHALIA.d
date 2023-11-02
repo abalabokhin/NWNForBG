@@ -49,22 +49,22 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("EckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveGoldForce(400)AddexperienceParty(30000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWEckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveGoldForce(400)AddexperienceParty(30000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 1.3
   SAY @16
-  IF ~~ THEN DO ~SetGlobal("EckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveItemCreate("scrl07",LastTalkedToBy,1,1,0)GiveGoldForce(400)AddexperienceParty(10000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWEckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveItemCreate("scrl07",LastTalkedToBy,1,1,0)GiveGoldForce(400)AddexperienceParty(10000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 1.4
   SAY @17
-  IF ~~ THEN DO ~SetGlobal("EckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveGoldForce(400)AddexperienceParty(30000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWEckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveGoldForce(400)AddexperienceParty(30000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9 // from: 1.5
   SAY @18
-  IF ~~ THEN DO ~SetGlobal("EckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveGoldForce(400)AddexperienceParty(10000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWEckelJob","GLOBAL",2)TakePartyItem("NWECKLET")DestroyItem("NWECKLET")GiveGoldForce(400)AddexperienceParty(10000)~ EXIT
 END
 
 // ----------------------------------------------------------------------

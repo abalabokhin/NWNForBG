@@ -1,5 +1,5 @@
 IF
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("MapChange","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -13,8 +13,8 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",5)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",5)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("CharwoodExpierrince","MYAREA",0)
 	Alignment(Player1,MASK_EVIL)
 THEN
@@ -24,8 +24,8 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",5)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",5)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("CharwoodExpierrince","MYAREA",0)
 	Alignment(Player1,MASK_GENEUTRAL)
 THEN
@@ -35,8 +35,8 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",5)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",5)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("CharwoodExpierrince","MYAREA",0)
 	Alignment(Player1,MASK_GOOD)
 THEN
@@ -46,8 +46,8 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",6)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",6)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("CharwoodExpierrince","MYAREA",0)
 	Alignment(Player1,MASK_EVIL)
 THEN
@@ -57,8 +57,8 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",6)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",6)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("CharwoodExpierrince","MYAREA",0)
 	Alignment(Player1,MASK_GENEUTRAL)
 THEN
@@ -68,8 +68,8 @@ THEN
 END
 
 IF
-	Global("JaregQuest","GLOBAL",6)
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",6)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("CharwoodExpierrince","MYAREA",0)
 	Alignment(Player1,MASK_GOOD)
 THEN
@@ -80,9 +80,9 @@ END
 
 IF
 	OR(2)
-		Global("Charwood_Is_Cursed","GLOBAL",1)
-		Global("Charwood_Is_Saved","GLOBAL",1)
-	Global("Charwood_Letter","GLOBAL",0)
+		Global("NWCharwood_Is_Cursed","GLOBAL",1)
+		Global("NWCharwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Letter","GLOBAL",0)
 THEN
 	RESPONSE #100
 		TakePartyItem("NWQUINTT")  // ?????? ?????? ???????

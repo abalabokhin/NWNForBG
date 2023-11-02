@@ -3,17 +3,17 @@
 BEGIN ~NWHASHER~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("HasherJob","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWHasherJob","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWChapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @4
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWChapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
 END
 
@@ -24,8 +24,8 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @7
-  IF ~  Global("HasherJob","GLOBAL",0)~ THEN GOTO 5
-  IF ~  GlobalGT("HasherJob","GLOBAL",0)~ THEN GOTO 6
+  IF ~  Global("NWHasherJob","GLOBAL",0)~ THEN GOTO 5
+  IF ~  GlobalGT("NWHasherJob","GLOBAL",0)~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
@@ -59,7 +59,7 @@ END
 IF ~~ THEN BEGIN 8 // from: 5.3
   SAY @15
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWChapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
 END
 
@@ -105,12 +105,12 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 13.1
   SAY @30
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4000)AddexperienceParty(122000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("NWHasherJob","GLOBAL",2)GiveGoldForce(4000)AddexperienceParty(122000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 13.2
   SAY @32
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(122000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("NWHasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(122000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 13.3
@@ -121,7 +121,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 13.4
   SAY @35
-  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("HasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(102000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
+  IF ~~ THEN DO ~  TakePartyItem("Nwgem08")SetGlobal("NWHasherJob","GLOBAL",2)GiveGoldForce(4400)AddexperienceParty(102000)EraseJournalEntry(@104941)~ SOLVED_JOURNAL @104969 EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 14.1
@@ -139,13 +139,13 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @40
-  IF ~~ THEN DO ~  SetGlobal("HasherJob","GLOBAL",1)~ UNSOLVED_JOURNAL @104941 EXIT
+  IF ~~ THEN DO ~  SetGlobal("NWHasherJob","GLOBAL",1)~ UNSOLVED_JOURNAL @104941 EXIT
 END
 
 // ----------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("HasherJob","GLOBAL",1)~ THEN BEGIN 22 // from:
+~  Global("NWHasherJob","GLOBAL",1)~ THEN BEGIN 22 // from:
   SAY @42
  IF ~  PartyHasItem("NWGEM08")~ THEN REPLY @21 GOTO 13
   IF ~~ THEN REPLY @43 GOTO 23
@@ -163,18 +163,18 @@ END
 // ----------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("HasherJob","GLOBAL",1)~ THEN BEGIN 24 // from:
+~  GlobalGT("NWHasherJob","GLOBAL",1)~ THEN BEGIN 24 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 25
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 26
+  IF ~  GlobalGT("NWChapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 26
   IF ~~ THEN REPLY @44 GOTO 4
 END
 
 IF ~~ THEN BEGIN 25 // from: 24.1
   SAY @4
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  GlobalGT("Chapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 26
+  IF ~  GlobalGT("NWChapter3AarinJob","GLOBAL",0)~ THEN REPLY @3 GOTO 26
   IF ~~ THEN REPLY @5 GOTO 4
 END
 

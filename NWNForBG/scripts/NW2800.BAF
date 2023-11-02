@@ -1,5 +1,5 @@
 IF
-	GlobalGT("AavillQuest","GLOBAL",0)
+	GlobalGT("NWAavillQuest","GLOBAL",0)
 	Global("BridgeOpen","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -9,7 +9,7 @@ THEN
 END
 
 IF
-	Global("Druid1Saved","GLOBAL",1)
+	Global("NWDruid1Saved","GLOBAL",1)
 	Global("Druid1Spawn","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -20,7 +20,7 @@ THEN
 END
 
 IF
-	Global("Druid2Saved","GLOBAL",1)
+	Global("NWDruid2Saved","GLOBAL",1)
 	Global("Druid2Spawn","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -30,7 +30,7 @@ THEN
 END
 
 IF
-	Global("Druid3Saved","GLOBAL",1)
+	Global("NWDruid3Saved","GLOBAL",1)
 	Global("Druid3Spawn","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -40,7 +40,7 @@ THEN
 END
 
 IF
-	GlobalGT("KendrackQuest","GLOBAL",0)
+	GlobalGT("NWKendrackQuest","GLOBAL",0)
 	Global("WyvernSpawn","NW2800",0)  // ???? ???????
 THEN
 	RESPONSE #100

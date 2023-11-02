@@ -17,7 +17,7 @@ THEN
 END
 
 IF
-	GlobalGT("KendrackQuest","GLOBAL",0)
+	GlobalGT("NWKendrackQuest","GLOBAL",0)
 	Global("StirgeSpawn","NW2400",0)  // ?????
 THEN
 	RESPONSE #100
@@ -29,7 +29,7 @@ END
 
 IF
 	Global("Cult1Spawn","NW2400",0)  // ?????
-	Global("SolomonRing","GLOBAL",3)
+	Global("NWSolomonRing","GLOBAL",3)
 	!Dead("NWSOLOMN")  // ???????
 THEN
 	RESPONSE #100
@@ -43,10 +43,10 @@ THEN
 END
 
 IF
-	Global("SearchNeva","GLOBAL",1)
+	Global("NWSearchNeva","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("SearchNeva","GLOBAL",2)
+		SetGlobal("NWSearchNeva","GLOBAL",2)
 		CreateCreature("NWNEVA",[4646.2931],6)  // ????
 		CreateCreature("NWCULT03",[4691.2740],4)  // ???? ??????
 		CreateCreature("NWCULT04",[4500.2912],3)  // ??????? ??????
@@ -65,10 +65,10 @@ THEN
 END
 
 IF
-	Global("RevealNW2510","GLOBAL",1)
+	Global("NWRevealNW2510","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("RevealNW2510","GLOBAL",2)
+		SetGlobal("NWRevealNW2510","GLOBAL",2)
 		RevealAreaOnMap("NW2510")  // ????????? ???
 END
 
@@ -93,7 +93,7 @@ THEN
 END
 
 IF
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("SpawnPoint","NW2400",0)  // ?????
 THEN
 	RESPONSE #100

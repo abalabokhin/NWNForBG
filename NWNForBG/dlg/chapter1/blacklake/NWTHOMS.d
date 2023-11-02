@@ -26,12 +26,12 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
     SAY @8
-  IF ~~ THEN DO ~ChangeClass(Myself,FIGHTER)SetGlobal("ThomsAttack","GLOBAL",1)Enemy()~ EXIT
+  IF ~~ THEN DO ~ChangeClass(Myself,FIGHTER)SetGlobal("NWThomsAttack","GLOBAL",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
   SAY @9
-  IF ~~ THEN DO ~SetGlobal("ThomsAttack","GLOBAL",1)Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThomsAttack","GLOBAL",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.2

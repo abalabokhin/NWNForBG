@@ -9,13 +9,13 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(4,2)GlobalLT("JusamJob","GLOBAL",2)~ THEN BEGIN 1 // from:
+~  RandomNum(4,2)GlobalLT("NWJusamJob","GLOBAL",2)~ THEN BEGIN 1 // from:
   SAY @1
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  RandomNum(4,2)GlobalGT("JusamJob","GLOBAL",1)~ THEN BEGIN 2 // from:
+~  RandomNum(4,2)GlobalGT("NWJusamJob","GLOBAL",1)~ THEN BEGIN 2 // from:
   SAY @2
   IF ~~ THEN EXIT
 END

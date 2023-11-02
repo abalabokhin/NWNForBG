@@ -1,9 +1,9 @@
 IF
-	Global("LuscanVizited","GLOBAL",0)
+	Global("NWLuscanVizited","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("LuscanVizited","GLOBAL",1)
-		SetGlobal("CultInLuskan","GLOBAL",2)
+		SetGlobal("NWLuscanVizited","GLOBAL",1)
+		SetGlobal("NWCultInLuskan","GLOBAL",2)
 		Explore()
 		Continue()
 END
@@ -38,57 +38,57 @@ END
 
 IF
 	OpenState("Luke22",FALSE)
-	Global("2E56to2E00A","GLOBAL",1)
+	Global("NW2E56to2E00A","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E00A","GLOBAL",0)
+		SetGlobal("NW2E56to2E00A","GLOBAL",0)
 END
 
 IF
 	OpenState("Luke22",TRUE)
-	Global("2E56to2E00A","GLOBAL",1)
+	Global("NW2E56to2E00A","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E00A","GLOBAL",0)
+		SetGlobal("NW2E56to2E00A","GLOBAL",0)
 		CloseDoor("Luke22")
 END
 
 IF
 	OpenState("Luke23",FALSE)
-	Global("2E56to2E00B","GLOBAL",1)
+	Global("NW2E56to2E00B","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E00B","GLOBAL",0)
+		SetGlobal("NW2E56to2E00B","GLOBAL",0)
 END
 
 IF
 	OpenState("Luke23",TRUE)
-	Global("2E56to2E00B","GLOBAL",1)
+	Global("NW2E56to2E00B","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E00B","GLOBAL",0)
+		SetGlobal("NW2E56to2E00B","GLOBAL",0)
 		CloseDoor("Luke23")
 END
 
 IF
 	OpenState("Luke24",FALSE)
-	Global("2E56to2E00C","GLOBAL",1)
+	Global("NW2E56to2E00C","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E00C","GLOBAL",0)
+		SetGlobal("NW2E56to2E00C","GLOBAL",0)
 END
 
 IF
 	OpenState("Luke24",TRUE)
-	Global("2E56to2E00C","GLOBAL",1)
+	Global("NW2E56to2E00C","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("2E56to2E00C","GLOBAL",0)
+		SetGlobal("NW2E56to2E00C","GLOBAL",0)
 		CloseDoor("Luke24")
 END
 
 IF
-	GlobalGT("CultInLuskan","GLOBAL",3)
+	GlobalGT("NWCultInLuskan","GLOBAL",3)
 	Global("ExitEnabled","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -97,7 +97,7 @@ THEN
 END
 
 IF
-	GlobalGT("LuscanTower","GLOBAL",2)
+	GlobalGT("NWLuscanTower","GLOBAL",2)
 	Allegiance("NWTOWERD",NEUTRAL)  // ????? ?????
 THEN
 	RESPONSE #100

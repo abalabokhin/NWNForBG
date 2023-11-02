@@ -33,7 +33,7 @@ IF ~~ THEN BEGIN 4 // from: 1.1
   SAY @10
   IF ~~ THEN REPLY @11 GOTO 7
   IF ~~ THEN REPLY @12 GOTO 8
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @13 GOTO 9
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @13 GOTO 9
   IF ~~ THEN REPLY @14 GOTO 10
 END
 
@@ -52,24 +52,24 @@ END
 IF ~~ THEN BEGIN 7 // from: 4.1
   SAY @17
   IF ~~ THEN REPLY @18 GOTO 11
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.2
   SAY @21
   IF ~~ THEN REPLY @18 GOTO 11
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
 IF ~~ THEN BEGIN 9 // from: 4.3
   SAY @22
   IF ~~ THEN REPLY @18 GOTO 11
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -231,8 +231,8 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 ~  Global("QuestBroken","LOCALS",0)Global("Journal","LOCALS",0)Global("Staff","LOCALS",0)~ THEN BEGIN 34 // from:
   SAY @68
   IF ~~ THEN REPLY @5 GOTO 4
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
-  IF ~  Global("KnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @19 GOTO 12
+  IF ~  Global("NWKnowMarcus","GLOBAL",1)~ THEN REPLY @20 GOTO 13
   IF ~~ THEN REPLY @3 GOTO 3
 END
 

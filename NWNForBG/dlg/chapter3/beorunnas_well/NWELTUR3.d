@@ -3,15 +3,15 @@
 BEGIN ~NWELTUR3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)GlobalGT("CloakTower","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 0 // from:
+~  Class(Player1,MAGE_ALL)GlobalGT("NWCloakTower","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @1
-  IF ~  Global("CloakTower","GLOBAL",0)~ THEN REPLY @2 GOTO 2
-  IF ~  Global("CloakTower","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  Global("NWCloakTower","GLOBAL",0)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWCloakTower","GLOBAL",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @5 GOTO 5
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @6 GOTO 12
@@ -23,7 +23,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 1.1
   SAY @9
-  IF ~  Global("CloakTower","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  Global("NWCloakTower","GLOBAL",0)~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @5 GOTO 5
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @6 GOTO 12
@@ -35,7 +35,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 1.2
   SAY @10
-  IF ~  Global("CloakTower","GLOBAL",0)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWCloakTower","GLOBAL",0)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @5 GOTO 5
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @6 GOTO 12
@@ -47,8 +47,8 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 1.3
   SAY @11
-  IF ~  Global("CloakTower","GLOBAL",0)~ THEN REPLY @2 GOTO 2
-  IF ~  Global("CloakTower","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  Global("NWCloakTower","GLOBAL",0)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWCloakTower","GLOBAL",0)~ THEN REPLY @3 GOTO 3
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @5 GOTO 5
   IF ~  Class(Player1,MAGE_ALL)~ THEN REPLY @6 GOTO 12
   IF ~  !Class(Player1,MAGE_ALL)~ THEN REPLY @5 GOTO 6
@@ -90,7 +90,7 @@ END
 // ---------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Class(Player1,MAGE_ALL)GlobalLT("CloakTower","GLOBAL",4)IsGabber(Player1)~ THEN BEGIN 9 // from:
+~  Class(Player1,MAGE_ALL)GlobalLT("NWCloakTower","GLOBAL",4)IsGabber(Player1)~ THEN BEGIN 9 // from:
   SAY @17
   IF ~~ THEN GOTO 1
 END

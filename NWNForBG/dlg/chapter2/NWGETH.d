@@ -43,8 +43,8 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
   SAY @17
-  IF ~~ THEN DO ~SetGlobal("GethFraud","GLOBAL",1)
-SetGlobal("Pause","LOCALS",1)GiveItem("NWGETRIG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGethFraud","GLOBAL",1)
+SetGlobal("Pause","LOCALS",1)GiveItem("NWGETRIG",LastTalkedToBy(Myself))IncrementGlobal("NWDeceiveNeurrik","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
@@ -89,7 +89,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Dialogue","LOCALS",1)Global("GethFraud","GLOBAL",0)~ THEN BEGIN 13 // from:
+~  Global("Dialogue","LOCALS",1)Global("NWGethFraud","GLOBAL",0)~ THEN BEGIN 13 // from:
   SAY @25
   IF ~~ THEN GOTO 14
 END
@@ -97,13 +97,13 @@ END
 IF ~~ THEN BEGIN 14 // from: 13.1
   SAY @26
   IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWGETH","GLOBAL",0)
-SetGlobal("Dialogue","LOCALS",2)GiveItem("NWGETRIG",LastTalkedToBy(Myself))IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)EscapeArea()~ EXIT
+SetGlobal("Dialogue","LOCALS",2)GiveItem("NWGETRIG",LastTalkedToBy(Myself))IncrementGlobal("NWDeceiveNeurrik","GLOBAL",-1)EscapeArea()~ EXIT
 END
 
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Dialogue","LOCALS",1)Global("GethFraud","GLOBAL",1)~ THEN BEGIN 18 // from:
+~  Global("Dialogue","LOCALS",1)Global("NWGethFraud","GLOBAL",1)~ THEN BEGIN 18 // from:
   SAY @27
   IF ~~ THEN GOTO 19
 END
@@ -111,7 +111,7 @@ END
 IF ~~ THEN BEGIN 19 // from: 18.1
   SAY @26
   IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWGETH","GLOBAL",0)
-SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWGETRIG")IncrementGlobal("DeceiveNeurrik","GLOBAL",-1)EscapeArea()~ EXIT
+SetGlobal("Dialogue","LOCALS",2)DestroyItem("NWGETRIG")IncrementGlobal("NWDeceiveNeurrik","GLOBAL",-1)EscapeArea()~ EXIT
 END
 
 // ---------------------------------

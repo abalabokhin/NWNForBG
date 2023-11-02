@@ -9,7 +9,7 @@ THEN
 END
 
 IF
-	Global("MakingMedicine","GLOBAL",1)
+	Global("NWMakingMedicine","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ClearAllActions()
@@ -28,7 +28,7 @@ THEN
 END
 
 IF
-	GlobalGT("MakingMedicine","GLOBAL",1)
+	GlobalGT("NWMakingMedicine","GLOBAL",1)
 	InMyArea("NWARIBEH")  // ??????
 THEN
 	RESPONSE #100
@@ -37,7 +37,7 @@ THEN
 END
 
 IF
-	GlobalGT("MakingMedicine","GLOBAL",1)
+	GlobalGT("NWMakingMedicine","GLOBAL",1)
 	InMyArea("NWFENTHK")  // ??????
 THEN
 	RESPONSE #100
@@ -46,7 +46,7 @@ THEN
 END
 
 IF
-	GlobalGT("MakingMedicine","GLOBAL",1)
+	GlobalGT("NWMakingMedicine","GLOBAL",1)
 	InMyArea("NWDESTHR")  // ??????
 THEN
 	RESPONSE #100
@@ -54,7 +54,7 @@ THEN
 END
 
 IF
-	Global("WtDeepCreature","GLOBAL",1)
+	Global("NWWtDeepCreature","GLOBAL",1)
 	Global("Hapter1Journal","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -63,7 +63,7 @@ THEN
 END
 
 IF
-	Global("WtDeepCreature","GLOBAL",2)
+	Global("NWWtDeepCreature","GLOBAL",2)
 	Global("Hapter1Journal","MYAREA",1)
 THEN
 	RESPONSE #100
@@ -73,7 +73,7 @@ THEN
 END
 
 IF
-	Global("WtDeepCreature","GLOBAL",3)
+	Global("NWWtDeepCreature","GLOBAL",3)
 	Global("Hapter1Journal","MYAREA",3)
 THEN
 	RESPONSE #100

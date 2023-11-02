@@ -3,7 +3,7 @@
 BEGIN ~NWFORMEU~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -98,7 +98,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)GlobalGT("SedosQuest","GLOBAL",0)GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 12 // from:
+~  OR(2)GlobalGT("NWSedosQuest","GLOBAL",0)GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 12 // from:
   SAY @26
   IF ~~ THEN GOTO 13
 END

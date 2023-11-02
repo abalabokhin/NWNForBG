@@ -6,7 +6,7 @@ THEN
 END
 
 IF
-	GlobalTimerNotExpired("DMWWTimeStopRunning","GLOBAL")
+	GlobalTimerNotExpired("NWDMWWTimeStopRunning","GLOBAL")
 	!GlobalTimerNotExpired("timestopreset","LOCALS")
 THEN
 	RESPONSE #100
@@ -108,7 +108,7 @@ IF
 	Allegiance(Myself,ENEMY)
 	!See(NearestEnemyOf(Myself))
 	OR(2)
-		!GlobalTimerNotExpired("DMWWCuringBlindness","GLOBAL")
+		!GlobalTimerNotExpired("NWDMWWCuringBlindness","GLOBAL")
 		!StateCheck(Myself,STATE_BLIND)
 	OR(13)
 		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)

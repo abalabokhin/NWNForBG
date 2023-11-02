@@ -1,8 +1,8 @@
 IF
-	Global("CreateNwmisc40","GLOBAL",0)
+	Global("NWCreateNwmisc40","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("CreateNwmisc40","GLOBAL",1)
+		SetGlobal("NWCreateNwmisc40","GLOBAL",1)
 		ActionOverride("Pile1",CreateItem("Nwmisc40",0,0,0))  // ???????? ?????
 		ActionOverride("Pile1",DestroyItem("RNDTRE03"))  // No such index
 		Continue()

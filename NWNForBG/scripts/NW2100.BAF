@@ -1,7 +1,7 @@
 IF
 	!Dead("NWLEAH")  // ???
 	Global("LeahExists","MYAREA",0)
-	Global("LeahSaved","GLOBAL",1)
+	Global("NWLeahSaved","GLOBAL",1)
 THEN
 	RESPONSE #100
 		SetGlobal("LeahExists","MYAREA",1)

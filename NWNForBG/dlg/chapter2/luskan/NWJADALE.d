@@ -5,16 +5,16 @@ BEGIN ~NWJADALE~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Give","LOCALS",0)Global("Ring_Is_Stolen","LOCALS",0)CheckStatGT(LastTalkedToBy,9,CHR)CheckStatLT(LastTalkedToBy,15,CHR)~ THEN BEGIN 0 // 
   SAY @0
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4
@@ -59,16 +59,16 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.2
   SAY @13
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4
@@ -79,16 +79,16 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 0.4
   SAY @16
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4
@@ -155,16 +155,16 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 1.2
   SAY @35
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4
@@ -175,16 +175,16 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 1.2
   SAY @36
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4
@@ -595,16 +595,16 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Give","LOCALS",0)CheckStatGT(LastTalkedToBy,14,CHR)Global("Ring_Is_Stolen","LOCALS",0)~ THEN BEGIN 67 // from:
   SAY @100
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4
@@ -618,16 +618,16 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Give","LOCALS",0)Global("Ring_Is_Stolen","LOCALS",0)CheckStatLT(LastTalkedToBy,10,CHR)~ THEN BEGIN 68 // from:
   SAY @101
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 !HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 Global("Give","LOCALS",1)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 3
-  IF ~  Global("ErbQuest","GLOBAL",2)
+  IF ~  Global("NWErbQuest","GLOBAL",2)
 HasItem("Nwmisc61",Myself)
 Global("Give","LOCALS",0)
 Global("Talked","LOCALS",1)~ THEN REPLY @1 GOTO 4

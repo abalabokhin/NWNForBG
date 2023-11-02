@@ -3,7 +3,7 @@
 BEGIN ~NWHARN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("BlackLakeDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWBlackLakeDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -53,8 +53,8 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.2
   SAY @19
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY @20 GOTO 11
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)~ THEN REPLY @20 GOTO 30
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",1)~ THEN REPLY @20 GOTO 11
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)~ THEN REPLY @20 GOTO 30
   IF ~~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @22 GOTO 13
   IF ~  GlobalGT("GateOpened","MYAREA",0)~ THEN REPLY @9 GOTO 8
@@ -146,8 +146,8 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 9.1
   SAY @42
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN GOTO 28
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)~ THEN GOTO 29
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",1)~ THEN GOTO 28
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)~ THEN GOTO 29
 END
 
 IF ~~ THEN BEGIN 18 // from: 9.2
@@ -274,11 +274,11 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)!NumTimesTalkedTo(0)GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN BEGIN 32 // from:
+~  OR(2)!NumTimesTalkedTo(0)GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN BEGIN 32 // from:
   SAY @58
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)GlobalGT("FormosaQuest","GLOBAL",1)~ THEN GOTO 33
-  IF ~  OR(2)Global("BlackLakeDone","GLOBAL",0)GlobalLT("FormosaQuest","GLOBAL",2)GlobalGT("GateOpened","MYAREA",0)~ THEN GOTO 34
-  IF ~  OR(2)Global("BlackLakeDone","GLOBAL",0)GlobalLT("FormosaQuest","GLOBAL",2)Global("GateOpened","MYAREA",0)~ THEN GOTO 35
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)GlobalGT("NWFormosaQuest","GLOBAL",1)~ THEN GOTO 33
+  IF ~  OR(2)Global("NWBlackLakeDone","GLOBAL",0)GlobalLT("NWFormosaQuest","GLOBAL",2)GlobalGT("GateOpened","MYAREA",0)~ THEN GOTO 34
+  IF ~  OR(2)Global("NWBlackLakeDone","GLOBAL",0)GlobalLT("NWFormosaQuest","GLOBAL",2)Global("GateOpened","MYAREA",0)~ THEN GOTO 35
 END
 
 IF ~~ THEN BEGIN 33 // from: 32.1

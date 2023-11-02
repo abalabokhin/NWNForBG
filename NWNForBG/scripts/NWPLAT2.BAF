@@ -10,7 +10,7 @@ END
 IF
 	See([0.0.0.0.CULTIST])
 	Allegiance(Myself,GOODCUTOFF)
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 THEN
 	RESPONSE #100
 		EquipMostDamagingMelee()
@@ -18,7 +18,7 @@ THEN
 END
 
 IF
-	Global("In1042PlatAll","GLOBAL",1)
+	Global("NWIn1042PlatAll","GLOBAL",1)
 	AreaCheck("NW1041")
 THEN
 	RESPONSE #100
@@ -26,7 +26,7 @@ THEN
 END
 
 IF
-	Global("In1043PlatAll","GLOBAL",1)
+	Global("NWIn1043PlatAll","GLOBAL",1)
 	AreaCheck("NW1042")
 THEN
 	RESPONSE #100
@@ -62,7 +62,7 @@ END
 
 IF
 	Allegiance(Myself,GOODCUTOFF)
-	GlobalLT("ArmorQuest","GLOBAL",3)
+	GlobalLT("NWArmorQuest","GLOBAL",3)
 THEN
 	RESPONSE #100
 		NoAction()
@@ -71,7 +71,7 @@ END
 IF
 	See([0.0.0.0.CULTIST])
 	Allegiance(Myself,GOODCUTOFF)
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 THEN
 	RESPONSE #100
 		EquipMostDamagingMelee()
@@ -82,7 +82,7 @@ IF
 	!See([0.0.0.0.CULTIST])
 	!See([PC])
 	Allegiance(Myself,GOODCUTOFF)
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	InMyArea(Player1)
 THEN
 	RESPONSE #100
@@ -93,7 +93,7 @@ IF
 	!See([0.0.0.0.CULTIST])
 	See([PC])
 	Allegiance(Myself,GOODCUTOFF)
-	Global("ArmorQuest","GLOBAL",3)
+	Global("NWArmorQuest","GLOBAL",3)
 	InMyArea(Player1)
 THEN
 	RESPONSE #100

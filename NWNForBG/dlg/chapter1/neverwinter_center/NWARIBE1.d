@@ -36,7 +36,7 @@ END
 IF ~~ THEN BEGIN 5 // from: 1.4
   SAY @12
   IF ~  PartyHasItem("NWCREWT1")~ THEN REPLY @13 GOTO 7
-  IF ~  PartyHasItem("NWCREWT2")~ THEN REPLY @14 DO ~SetGlobal("Brainworm","GLOBAL",1)~ GOTO 8
+  IF ~  PartyHasItem("NWCREWT2")~ THEN REPLY @14 DO ~SetGlobal("NWBrainworm","GLOBAL",1)~ GOTO 8
   IF ~  PartyHasItem("NWCREWT3")~ THEN REPLY @15 GOTO 9
   IF ~  PartyHasItem("NWCREWT4")~ THEN REPLY @16 GOTO 10
 END
@@ -48,26 +48,26 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
   SAY @18
-  IF ~  GlobalLT("WtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT1")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
-  IF ~  Global("WtDeepCreature","GLOBAL",3)~ THEN GOTO 12
+  IF ~  GlobalLT("NWWtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT1")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
+  IF ~  Global("NWWtDeepCreature","GLOBAL",3)~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.2
   SAY @19
-  IF ~  GlobalLT("WtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT2")DestroyItem("NWCREWT2")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
-  IF ~  Global("WtDeepCreature","GLOBAL",3)~ THEN GOTO 12
+  IF ~  GlobalLT("NWWtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT2")DestroyItem("NWCREWT2")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
+  IF ~  Global("NWWtDeepCreature","GLOBAL",3)~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 9 // from: 5.3
   SAY @20
-  IF ~  GlobalLT("WtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT3")DestroyItem("NWCREWT3")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
-  IF ~  Global("WtDeepCreature","GLOBAL",3)~ THEN GOTO 12
+  IF ~  GlobalLT("NWWtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT3")DestroyItem("NWCREWT3")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
+  IF ~  Global("NWWtDeepCreature","GLOBAL",3)~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 10 // from: 5.4
   SAY @21
-  IF ~  GlobalLT("WtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT4")DestroyItem("NWCREWT4")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
-  IF ~  Global("WtDeepCreature","GLOBAL",3)~ THEN GOTO 12
+  IF ~  GlobalLT("NWWtDeepCreature","GLOBAL",3)~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT4")DestroyItem("NWCREWT4")GiveGoldForce(2000)AddexperienceParty(100000)~ EXIT
+  IF ~  Global("NWWtDeepCreature","GLOBAL",3)~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 11 // from: 6.1
@@ -96,46 +96,46 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 12.1
   SAY @30
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("NWCREWT1")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)
+TakePartyItem("NWCREWT1")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("NWMakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 63 // from: 12.2
   SAY @30
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("NWCREWT2")DestroyItem("NWCREWT2")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)
+TakePartyItem("NWCREWT2")DestroyItem("NWCREWT2")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("NWMakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 64 // from: 12.3
   SAY @30
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("NWCREWT3")DestroyItem("NWCREWT3")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)
+TakePartyItem("NWCREWT3")DestroyItem("NWCREWT3")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("NWMakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 65 // from: 12.4
   SAY @30
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)
-TakePartyItem("NWCREWT4")DestroyItem("NWCREWT4")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("MakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)
+TakePartyItem("NWCREWT4")DestroyItem("NWCREWT4")GiveGoldForce(2000)AddexperienceParty(100000)SetGlobal("NWMakingMedicine","GLOBAL",1)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.5
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT1")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT1")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 66 // from: 12.6
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",2)TakePartyItem("NWCREWT2")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",2)TakePartyItem("NWCREWT2")DestroyItem("NWCREWT1")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 67 // from: 12.7
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT3")DestroyItem("NWCREWT3")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT3")DestroyItem("NWCREWT3")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 68 // from: 12.8
   SAY @32
-  IF ~~ THEN DO ~IncrementGlobal("WtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT4")DestroyItem("NWCREWT4")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
+  IF ~~ THEN DO ~IncrementGlobal("NWWtDeepCreature","GLOBAL",1)TakePartyItem("NWCREWT4")DestroyItem("NWCREWT4")GiveGoldForce(2000)AddexperienceParty(100000)EraseJournalEntry(@89835)EraseJournalEntry(@89836)~ UNSOLVED_JOURNAL @89868 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 13.1
@@ -405,7 +405,7 @@ END
 // ---------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 49 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 49 // from:
   SAY @98
   IF ~~ THEN REPLY @99 GOTO 50
   IF ~  OR(4)PartyHasItem("NWCREWT1")PartyHasItem("NWCREWT2")PartyHasItem("NWCREWT3")PartyHasItem("NWCREWT4")~ THEN REPLY @8 GOTO 5
@@ -441,7 +441,7 @@ END
 // ---------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 53 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 53 // from:
   SAY @106
   IF ~~ THEN REPLY @99 GOTO 50
   IF ~  OR(4)PartyHasItem("NWCREWT1")PartyHasItem("NWCREWT2")PartyHasItem("NWCREWT3")PartyHasItem("NWCREWT4")~ THEN REPLY @8 GOTO 5
@@ -454,7 +454,7 @@ END
 // ---------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 54 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 54 // from:
   SAY @107
   IF ~~ THEN REPLY @99 GOTO 50
   IF ~  OR(4)PartyHasItem("NWCREWT1")PartyHasItem("NWCREWT2")PartyHasItem("NWCREWT3")PartyHasItem("NWCREWT4")~ THEN REPLY @8 GOTO 5
@@ -467,7 +467,7 @@ END
 // ---------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 55 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 55 // from:
   SAY @108
   IF ~~ THEN REPLY @99 GOTO 50
   IF ~  OR(4)PartyHasItem("NWCREWT1")PartyHasItem("NWCREWT2")PartyHasItem("NWCREWT3")PartyHasItem("NWCREWT4")~ THEN REPLY @109 GOTO 56
@@ -488,7 +488,7 @@ END
 // ---------------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",4)Global("MakingMedicine","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 57 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",4)Global("NWMakingMedicine","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 57 // from:
   SAY @111
   IF ~~ THEN REPLY @27 GOTO 58
   IF ~~ THEN REPLY @28 GOTO 59
@@ -496,7 +496,7 @@ END
 
 IF ~~ THEN BEGIN 58 // from: 57.1
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("MakingMedicine","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWMakingMedicine","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 59 // from: 57.2

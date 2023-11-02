@@ -1,5 +1,5 @@
 IF
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("ChangeDoor","MYAREA",0)
 THEN
 	RESPONSE #100

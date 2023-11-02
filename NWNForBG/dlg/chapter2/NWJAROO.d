@@ -3,7 +3,7 @@
 BEGIN ~NWJAROO~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Vizited","LOCALS",0)GlobalLT("KnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 0 // from:
+~  Global("Vizited","LOCALS",0)GlobalLT("NWKnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -26,7 +26,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Vizited","LOCALS",1)GlobalLT("KnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 4 // from:
+~  Global("Vizited","LOCALS",1)GlobalLT("NWKnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 4 // from:
   SAY @4
   IF ~  PartyGoldGT(999)~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
@@ -35,7 +35,7 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 5.1
   SAY @8
-  IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("KnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(@97572)~ UNSOLVED_JOURNAL @97550 EXIT
+  IF ~~ THEN DO ~TakePartyGold(1000)SetGlobal("NWKnowsAboutMatch","GLOBAL",3)Unlock("Door1")OpenDoor("Door1")EraseJournalEntry(@97572)~ UNSOLVED_JOURNAL @97550 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 5.2
@@ -52,7 +52,7 @@ END
 // ------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 8 // from:
+~  Global("NWKnowsAboutMatch","GLOBAL",3)~ THEN BEGIN 8 // from:
   SAY @12
   IF ~~ THEN EXIT
 END
@@ -60,7 +60,7 @@ END
 // ------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowsAboutMatch","GLOBAL",4)~ THEN BEGIN 9 // from:
+~  Global("NWKnowsAboutMatch","GLOBAL",4)~ THEN BEGIN 9 // from:
   SAY @13
   IF ~~ THEN EXIT
 END
@@ -68,7 +68,7 @@ END
 // ------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("KnowsAboutMatch","GLOBAL",4)GlobalLT("KnowsAboutMatch","GLOBAL",7)~ THEN BEGIN 10 // from:
+~  GlobalGT("NWKnowsAboutMatch","GLOBAL",4)GlobalLT("NWKnowsAboutMatch","GLOBAL",7)~ THEN BEGIN 10 // from:
   SAY @14
   IF ~~ THEN EXIT
 END
@@ -76,7 +76,7 @@ END
 // ------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("KnowsAboutMatch","GLOBAL",6)~ THEN BEGIN 11 // from:
+~  GlobalGT("NWKnowsAboutMatch","GLOBAL",6)~ THEN BEGIN 11 // from:
   SAY @15
   IF ~~ THEN EXIT
 END

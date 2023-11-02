@@ -3,7 +3,7 @@
 BEGIN ~NWIGLAN2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("IslandDialogue","GLOBAL",2)~ THEN BEGIN 0 // from:
+~  Global("NWIslandDialogue","GLOBAL",2)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN EXTERN ~NWVAND~ 12
 END
@@ -40,12 +40,12 @@ END
 
 IF ~~ THEN BEGIN 7 // from: NWVAND 17
   SAY @7
-  IF ~~ THEN DO ~IncrementGlobal("Justification","GLOBAL",1)~ EXTERN ~NWNEURI2~ 39
+  IF ~~ THEN DO ~IncrementGlobal("NWJustification","GLOBAL",1)~ EXTERN ~NWNEURI2~ 39
 END
 
 IF ~~ THEN BEGIN 8 // from: NWNEURI2 39
   SAY @8
-  IF ~~ THEN REPLY @9 DO ~SetGlobal("IslandDialogue","GLOBAL",3)~ EXIT
-  IF ~~ THEN REPLY @10 DO ~SetGlobal("IslandDialogue","GLOBAL",4)~ EXIT
+  IF ~~ THEN REPLY @9 DO ~SetGlobal("NWIslandDialogue","GLOBAL",3)~ EXIT
+  IF ~~ THEN REPLY @10 DO ~SetGlobal("NWIslandDialogue","GLOBAL",4)~ EXIT
 END
 

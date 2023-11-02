@@ -3,7 +3,7 @@
 BEGIN ~NWDRAKE~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("BeggarsNestDone","GLOBAL",0)Global("WtDeepCreature","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWBeggarsNestDone","GLOBAL",0)Global("NWWtDeepCreature","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -33,9 +33,9 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 1.2
   SAY @13
-  IF ~  Global("DrakeQuest","GLOBAL",0)Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)EraseJournalEntry(@95176)~ UNSOLVED_JOURNAL @95191 EXIT
-  IF ~  GlobalGT("DrakeQuest","GLOBAL",0)~ THEN EXIT
-  IF ~  Global("DrakeQuest","GLOBAL",0)!Global("HarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("DrakeQuest","GLOBAL",1)~ EXIT
+  IF ~  Global("NWDrakeQuest","GLOBAL",0)Global("NWHarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("NWDrakeQuest","GLOBAL",1)EraseJournalEntry(@95176)~ UNSOLVED_JOURNAL @95191 EXIT
+  IF ~  GlobalGT("NWDrakeQuest","GLOBAL",0)~ THEN EXIT
+  IF ~  Global("NWDrakeQuest","GLOBAL",0)!Global("NWHarbenQuest","GLOBAL",1)~ THEN DO ~SetGlobal("NWDrakeQuest","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
@@ -59,7 +59,7 @@ END
 // ----------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("BeggarsNestDone","GLOBAL",0)GlobalGT("WtDeepCreature","GLOBAL",0)~ THEN BEGIN 8 // from:
+~  NumTimesTalkedTo(0)Global("NWBeggarsNestDone","GLOBAL",0)GlobalGT("NWWtDeepCreature","GLOBAL",0)~ THEN BEGIN 8 // from:
   SAY @18
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -69,26 +69,26 @@ END
 // ----------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 9 // from:
+~  !NumTimesTalkedTo(0)Global("NWBeggarsNestDone","GLOBAL",0)~ THEN BEGIN 9 // from:
   SAY @19
   IF ~~ THEN REPLY @20 GOTO 10
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @6 GOTO 4
 END
 
 IF ~~ THEN BEGIN 10 // from: 9.1
   SAY @22
-  IF ~  Global("KnowKrestal","GLOBAL",0)Global("KnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 15
-  IF ~  Global("KnowKrestal","GLOBAL",0)GlobalGT("KnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 16
-  IF ~  GlobalGT("KnowKrestal","GLOBAL",0)Global("KnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 17
-  IF ~  GlobalGT("KnowKrestal","GLOBAL",0)GlobalGT("KnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 18
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~  Global("NWKnowKrestal","GLOBAL",0)Global("NWKnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 15
+  IF ~  Global("NWKnowKrestal","GLOBAL",0)GlobalGT("NWKnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 16
+  IF ~  GlobalGT("NWKnowKrestal","GLOBAL",0)Global("NWKnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 17
+  IF ~  GlobalGT("NWKnowKrestal","GLOBAL",0)GlobalGT("NWKnowJemanie","GLOBAL",0)~ THEN REPLY @23 GOTO 18
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @6 GOTO 4
 END
 
@@ -120,37 +120,37 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 10.1
   SAY @31
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @6 GOTO 4
 END
 
 IF ~~ THEN BEGIN 16 // from: 10.2
   SAY @32
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @6 GOTO 4
 END
 
 IF ~~ THEN BEGIN 17 // from: 10.3
   SAY @33
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @6 GOTO 4
 END
 
 IF ~~ THEN BEGIN 18// from: 10.4
   SAY @34
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
-  IF ~  Global("KnowBandit","GLOBAL",1)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
-  IF ~  Global("KnowBandit","GLOBAL",0)Global("KnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 11
+  IF ~  Global("NWKnowBandit","GLOBAL",1)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",1)~ THEN REPLY @21 GOTO 13
+  IF ~  Global("NWKnowBandit","GLOBAL",0)Global("NWKnowKult","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @6 GOTO 4
 END
 
@@ -179,7 +179,7 @@ END
 // ---------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("BeggarsNestDone","GLOBAL",0)Global("WtDeepCreature","GLOBAL",0)~ THEN BEGIN 23 // from:
+~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)Global("NWWtDeepCreature","GLOBAL",0)~ THEN BEGIN 23 // from:
   SAY @37
   IF ~~ THEN GOTO 24
 END
@@ -192,7 +192,7 @@ END
 // ---------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("BeggarsNestDone","GLOBAL",0)GlobalGT("WtDeepCreature","GLOBAL",0)~ THEN BEGIN 25 // from:
+~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)GlobalGT("NWWtDeepCreature","GLOBAL",0)~ THEN BEGIN 25 // from:
   SAY @39
   IF ~~ THEN GOTO 24
 END

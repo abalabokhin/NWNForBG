@@ -109,7 +109,7 @@ THEN
 		ActionOverride("NWFENTHK",MoveToPoint([1803.357]))
 		Wait(1)
 		ActionOverride("NWFENTHK",DestroySelf())
-		SetGlobal("DestherIsTraitor","GLOBAL",1)
+		SetGlobal("NWDestherIsTraitor","GLOBAL",1)
 		Wait(1)
 		EndCutSceneMode()
 END

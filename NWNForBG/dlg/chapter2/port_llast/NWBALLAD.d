@@ -38,13 +38,13 @@ END
 IF ~~ THEN BEGIN 5 // from: 4.1
   SAY @15
   IF ~~ THEN REPLY @16 GOTO 8
-  IF ~~ THEN REPLY @17 DO ~SetGlobal("BallardQuest","GLOBAL",1)
+  IF ~~ THEN REPLY @17 DO ~SetGlobal("NWBallardQuest","GLOBAL",1)
 StartStore("NWBALLAD",LastTalkedToBy(Myself))~ UNSOLVED_JOURNAL @96270 EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.1
   SAY @19
-  IF ~~ THEN DO ~SetGlobal("BallardQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96270 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBallardQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96270 EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
@@ -62,11 +62,11 @@ IF ~~ THEN BEGIN 7 // from: 4.3
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("SpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 9 // from:
+~  !NumTimesTalkedTo(0)Global("NWSpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 9 // from:
   SAY @22
-  IF ~  Global("BallardQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 2
-  IF ~  Global("BallardQuest","GLOBAL",1)~ THEN REPLY @23 GOTO 10
-  IF ~  Global("BallardQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 11
+  IF ~  Global("NWBallardQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 2
+  IF ~  Global("NWBallardQuest","GLOBAL",1)~ THEN REPLY @23 GOTO 10
+  IF ~  Global("NWBallardQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 11
   IF ~~ THEN REPLY @25 GOTO 12
   IF ~~ THEN REPLY @26 EXIT
 END
@@ -85,8 +85,8 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 9.3
   SAY @20
-  IF ~  Global("BallardQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 2
-  IF ~  Global("BallardQuest","GLOBAL",1)~ THEN REPLY @23 GOTO 10
+  IF ~  Global("NWBallardQuest","GLOBAL",0)~ THEN REPLY @23 GOTO 2
+  IF ~  Global("NWBallardQuest","GLOBAL",1)~ THEN REPLY @23 GOTO 10
   IF ~~ THEN REPLY @25 GOTO 12
   IF ~~ THEN REPLY @28 EXIT
 END
@@ -97,7 +97,7 @@ IF ~~ THEN BEGIN 12 // from: 9.4
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("SpiritSaved","GLOBAL",0)~ THEN BEGIN 14 // from:
+~  GlobalGT("NWSpiritSaved","GLOBAL",0)~ THEN BEGIN 14 // from:
   SAY @30
   IF ~~ THEN REPLY @25 GOTO 12
   IF ~~ THEN REPLY @31 EXIT

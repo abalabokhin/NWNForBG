@@ -27,11 +27,11 @@ THEN
 END
 
 IF
-	Global("DeadJanis","GLOBAL",1)
+	Global("NWDeadJanis","GLOBAL",1)
 	GlobalTimerExpired("NWJANIS","GLOBAL")
 THEN
 	RESPONSE #100
-		SetGlobal("DeadJanis","GLOBAL",2)
+		SetGlobal("NWDeadJanis","GLOBAL",2)
 		CreateVisualEffectObject("SPDEATH3",Myself)
 		PlaySound("NWDELO04")
 		Wait(1)
@@ -57,7 +57,7 @@ END
 
 IF
 	Global("EscapeJanis","LOCALS",0)
-	Global("RevatQuest","GLOBAL",3)
+	Global("NWRevatQuest","GLOBAL",3)
 	Delay(3)
 THEN
 	RESPONSE #100

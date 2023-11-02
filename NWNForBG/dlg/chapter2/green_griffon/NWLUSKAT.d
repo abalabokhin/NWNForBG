@@ -3,7 +3,7 @@
 BEGIN ~NWLUSKAT~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("GoToLuskan","GLOBAL",1)~ THEN BEGIN 0 // from:
+~  Global("NWGoToLuskan","GLOBAL",1)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -25,7 +25,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @8
-  IF ~~ THEN DO ~SetGlobal("GoToLuskan","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGoToLuskan","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
@@ -34,7 +34,7 @@ IF ~~ THEN BEGIN 4 // from: 0.4
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("GoToLuskan","GLOBAL",1)~ THEN BEGIN 5 // from:
+~  GlobalGT("NWGoToLuskan","GLOBAL",1)~ THEN BEGIN 5 // from:
   SAY @10
   IF ~~ THEN EXIT
 END

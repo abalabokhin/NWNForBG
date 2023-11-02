@@ -14,30 +14,30 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @4
-  IF ~  Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 6
-  IF ~  !Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
+  IF ~  !Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
   IF ~~ THEN REPLY @9 GOTO 8
   IF ~~ THEN REPLY @10 GOTO 9
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @11
-  IF ~  Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 6
-  IF ~  !Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
+  IF ~  !Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
   IF ~~ THEN REPLY @9 GOTO 8
   IF ~~ THEN REPLY @10 GOTO 9
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @12
-  IF ~  Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 6
-  IF ~  !Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
+  IF ~  !Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
   IF ~~ THEN REPLY @9 GOTO 8
   IF ~~ THEN REPLY @10 GOTO 9
 END
@@ -51,9 +51,9 @@ END
 IF ~~ THEN BEGIN 5 // from: 1.2
   SAY @14
   IF ~~ THEN REPLY @15 GOTO 17
-  IF ~  Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
+  IF ~  Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @7 GOTO 6
-  IF ~  !Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
+  IF ~  !Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @8 GOTO 7
   IF ~~ THEN REPLY @9 GOTO 8
   IF ~~ THEN REPLY @10 GOTO 9
 END
@@ -76,10 +76,10 @@ END
 IF ~~ THEN BEGIN 8 // from: 1.5
   SAY @23
   IF ~~ THEN REPLY @7 GOTO 6
-  IF ~  Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 13
-  IF ~  !Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 14
-  IF ~  Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @25 GOTO 15
-  IF ~  !Global("ThurinQuest","GLOBAL",1)~ THEN REPLY @25 GOTO 16
+  IF ~  Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 13
+  IF ~  !Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 14
+  IF ~  Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @25 GOTO 15
+  IF ~  !Global("NWThurinQuest","GLOBAL",1)~ THEN REPLY @25 GOTO 16
 END
 
 IF ~~ THEN BEGIN 9 // from: 1.6
@@ -112,22 +112,22 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 8.2
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",3)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",3)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 8.3
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",2)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",2)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 8.4
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",3)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",3)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 8.5
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("ThurinQuest","GLOBAL",2)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWThurinQuest","GLOBAL",2)EraseJournalEntry(@89667)EscapeArea()~ UNSOLVED_JOURNAL @89700 EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 5.1

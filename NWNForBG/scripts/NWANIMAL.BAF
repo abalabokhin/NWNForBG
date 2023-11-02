@@ -4,8 +4,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("#logged_dv","LOCALS",1)
-		IncrementGlobal("AnimalsDead","GLOBAL",1)
-		IncrementGlobal("AnimalsRescued","GLOBAL",1)
+		IncrementGlobal("NWAnimalsDead","GLOBAL",1)
+		IncrementGlobal("NWAnimalsRescued","GLOBAL",1)
 END
 
 IF
@@ -16,7 +16,7 @@ THEN
 	RESPONSE #100
 		MoveToObjectNoInterrupt("Tree")
 		SetGlobal("MyPortal","LOCALS",1)
-		IncrementGlobal("AnimalsRescued","GLOBAL",1)
+		IncrementGlobal("NWAnimalsRescued","GLOBAL",1)
 		ForceSpell(Myself,DRYAD_TELEPORT)  // SPWI995.SPL (????? ?????????)
 END
 

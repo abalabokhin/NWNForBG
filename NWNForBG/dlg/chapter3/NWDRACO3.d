@@ -3,23 +3,23 @@
 BEGIN ~NWDRACO3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)!PartyHasItem("NWHEADD1")Global("Draco4Job","GLOBAL",0)GlobalLT("Draco3Job","GLOBAL",2)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)!PartyHasItem("NWHEADD1")Global("NWDraco4Job","GLOBAL",0)GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  Dead("NWKLAUT")~ THEN REPLY @1 GOTO 1
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @1 GOTO 2
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 3
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 4
   IF ~~ THEN REPLY @3 GOTO 5
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @5
   IF ~~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @7 GOTO 9
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
@@ -28,8 +28,8 @@ IF ~~ THEN BEGIN 2 // from: 0.2
   IF ~~ THEN REPLY @10 GOTO 10
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
@@ -39,8 +39,8 @@ IF ~~ THEN BEGIN 3 // from: 0.3
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~  Dead("NWKLAUT")~ THEN REPLY @12 GOTO 1
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @12 GOTO 2
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
@@ -48,8 +48,8 @@ IF ~~ THEN BEGIN 4 // from: 0.4
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~  Dead("NWKLAUT")~ THEN REPLY @12 GOTO 1
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @12 GOTO 2
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
@@ -71,8 +71,8 @@ IF ~~ THEN BEGIN 8 // from: 1.1
   SAY @17
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 9 // from: 1.2
@@ -81,8 +81,8 @@ IF ~~ THEN BEGIN 9 // from: 1.2
   IF ~  Dead("NWKLAUT")~ THEN REPLY @6 GOTO 8
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 10 // from: 2.1
@@ -92,8 +92,8 @@ IF ~~ THEN BEGIN 10 // from: 2.1
   IF ~~ THEN REPLY @22 GOTO 15
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 11 // from: 2.2
@@ -101,16 +101,16 @@ IF ~~ THEN BEGIN 11 // from: 2.2
   IF ~~ THEN REPLY @9 GOTO 10
   IF ~~ THEN REPLY @10 GOTO 10
   IF ~~ THEN REPLY @7 GOTO 9
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 12 // from: 2.3
   SAY @23
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @7 GOTO 9
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.1
@@ -119,8 +119,8 @@ IF ~~ THEN BEGIN 13 // from: 10.1
   IF ~~ THEN REPLY @22 GOTO 15
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 14 // from: 10.2
@@ -129,8 +129,8 @@ IF ~~ THEN BEGIN 14 // from: 10.2
   IF ~~ THEN REPLY @22 GOTO 15
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 15 // from: 10.3
@@ -145,13 +145,13 @@ IF ~~ THEN BEGIN 16 // from: 15.1
   IF ~~ THEN REPLY @21 GOTO 14
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("Draco3Job","GLOBAL",1)~ UNSOLVED_JOURNAL @106297 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDraco3Job","GLOBAL",1)~ UNSOLVED_JOURNAL @106297 EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.2
@@ -160,14 +160,14 @@ IF ~~ THEN BEGIN 18 // from: 16.2
   IF ~~ THEN REPLY @21 GOTO 14
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 11
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 12
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)!PartyHasItem("NWHEADD1")Global("Draco4Job","GLOBAL",1)GlobalLT("Draco3Job","GLOBAL",2)~ THEN BEGIN 19 // from:
+~  NumTimesTalkedTo(0)!PartyHasItem("NWHEADD1")Global("NWDraco4Job","GLOBAL",1)GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN BEGIN 19 // from:
   SAY @33
   IF ~~ THEN REPLY @34 GOTO 20
   IF ~  Dead("NWKLAUT")~ THEN REPLY @1 GOTO 1
@@ -175,8 +175,8 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 3
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 4
   IF ~~ THEN REPLY @3 GOTO 5
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 20 // from: 19.1
@@ -186,28 +186,28 @@ IF ~~ THEN BEGIN 20 // from: 19.1
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~  Dead("NWKLAUT")~ THEN REPLY @36 GOTO 1
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @36 GOTO 2
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)!PartyHasItem("NWHEADD1")GlobalLT("Draco3Job","GLOBAL",2)~ THEN BEGIN 21 // from:
+~  !NumTimesTalkedTo(0)!PartyHasItem("NWHEADD1")GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN BEGIN 21 // from:
   SAY @37
   IF ~  Dead("NWKLAUT")~ THEN REPLY @1 GOTO 1
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @1 GOTO 2
   IF ~  !Dead("NWKLAUT")~ THEN REPLY @2 GOTO 3
   IF ~  Dead("NWKLAUT")~ THEN REPLY @2 GOTO 4
   IF ~~ THEN REPLY @3 GOTO 5
-  IF ~  GlobalLT("Draco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN REPLY @4 GOTO 7
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  PartyHasItem("NWHEADD1")GlobalLT("Draco3Job","GLOBAL",2)~ THEN BEGIN 22 // from:
+~  PartyHasItem("NWHEADD1")GlobalLT("NWDraco3Job","GLOBAL",2)~ THEN BEGIN 22 // from:
   SAY @38
   IF ~~ THEN REPLY @39 GOTO 23
 END
@@ -243,7 +243,7 @@ END
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("Draco3Job","GLOBAL",1)~ THEN BEGIN 28 // from:
+~  GlobalGT("NWDraco3Job","GLOBAL",1)~ THEN BEGIN 28 // from:
   SAY @50
   IF ~~ THEN REPLY @2 GOTO 4
   IF ~~ THEN REPLY @3 GOTO 5

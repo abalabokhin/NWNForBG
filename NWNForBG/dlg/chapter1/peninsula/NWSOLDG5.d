@@ -3,7 +3,7 @@
 BEGIN ~NWSOLDG5~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)RandomNum(1,2)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)RandomNum(1,2)GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~  IsGabber(Player1)~ THEN REPLY @2 GOTO 2
@@ -57,7 +57,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)RandomNum(2,2)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 7 // from:
+~  NumTimesTalkedTo(0)RandomNum(2,2)GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 7 // from:
   SAY @13
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~  IsGabber(Player1)~ THEN REPLY @2 GOTO 2
@@ -69,7 +69,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)GlobalGT("SedosQuest","GLOBAL",2)GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 8 // from:
+~  OR(2)GlobalGT("NWSedosQuest","GLOBAL",2)GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 8 // from:
   SAY @14
   IF ~~ THEN EXIT
 END
@@ -77,7 +77,7 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)GlobalLT("SedosQuest","GLOBAL",3)Global("PeninsulaDone","GLOBAL",0)~ THEN BEGIN 9 // from:
+~  !NumTimesTalkedTo(0)GlobalLT("NWSedosQuest","GLOBAL",3)Global("NWPeninsulaDone","GLOBAL",0)~ THEN BEGIN 9 // from:
   SAY @15
   IF ~~ THEN EXIT
 END

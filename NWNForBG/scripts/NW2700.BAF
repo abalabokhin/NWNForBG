@@ -1,5 +1,5 @@
 IF
-	GlobalGT("NeurikQuest","GLOBAL",0)
+	GlobalGT("NWNeurikQuest","GLOBAL",0)
 	Global("GethSpawn","MYAREA",0)
 THEN
 	RESPONSE #100

@@ -1,7 +1,7 @@
 IF
-	GlobalLT("LuscanTower","GLOBAL",6)
+	GlobalLT("NWLuscanTower","GLOBAL",6)
 THEN
 	RESPONSE #100
-		SetGlobal("LuscanTower","GLOBAL",6)
+		SetGlobal("NWLuscanTower","GLOBAL",6)
 END
 

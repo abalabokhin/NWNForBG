@@ -3,7 +3,7 @@
 BEGIN ~NWLILLIN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("PartyHasNWWord1","GLOBAL",1)~ THEN BEGIN 0 // from:
+~  Global("NWPartyHasNWWord1","GLOBAL",1)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 1
@@ -29,7 +29,7 @@ END
 // -------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("PartyHasNWWord1","GLOBAL",0)Global("LillianJob","GLOBAL",2)~ THEN BEGIN 4 // from:
+~  Global("NWPartyHasNWWord1","GLOBAL",0)Global("NWLillianJob","GLOBAL",2)~ THEN BEGIN 4 // from:
   SAY @8
   IF ~~ THEN REPLY @9 GOTO 5
 END
@@ -64,16 +64,16 @@ END
 // -------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("PartyHasNWWord1","GLOBAL",0)Global("Chapter3AarinJob","GLOBAL",1)Global("LillianJob","GLOBAL",0)~ THEN BEGIN 10 // from:
+~  Global("NWPartyHasNWWord1","GLOBAL",0)Global("NWChapter3AarinJob","GLOBAL",1)Global("NWLillianJob","GLOBAL",0)~ THEN BEGIN 10 // from:
   SAY @19
   IF ~~ THEN REPLY @20 GOTO 11
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1
   SAY @22
   IF ~~ THEN REPLY @23 GOTO 13
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @12 GOTO 7
 END
 
@@ -89,7 +89,7 @@ IF ~~ THEN BEGIN 13 // from: 11.1
   IF ~~ THEN REPLY @29 GOTO 16
   IF ~~ THEN REPLY @30 GOTO 17
   IF ~~ THEN REPLY @31 GOTO 18
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @12 GOTO 7
 END
 
@@ -140,8 +140,8 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 15.1
   SAY @48
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN GOTO 28
-  IF ~  Global("LillianJob","GLOBAL",0)~ THEN GOTO 29
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN GOTO 28
+  IF ~  Global("NWLillianJob","GLOBAL",0)~ THEN GOTO 29
 END
 
 IF ~~ THEN BEGIN 22 // from: 16.1
@@ -149,7 +149,7 @@ IF ~~ THEN BEGIN 22 // from: 16.1
   IF ~~ THEN REPLY @28 GOTO 15
   IF ~~ THEN REPLY @30 GOTO 17
   IF ~~ THEN REPLY @31 GOTO 18
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @21 GOTO 12
   IF ~~ THEN REPLY @12 GOTO 7
 END
 
@@ -160,8 +160,8 @@ END
 
 IF ~~ THEN BEGIN 24 // from: 17.2
   SAY @51
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN GOTO 30
-  IF ~  Global("LillianJob","GLOBAL",0)~ THEN GOTO 31
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN GOTO 30
+  IF ~  Global("NWLillianJob","GLOBAL",0)~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 25 // from: 19.1
@@ -186,7 +186,7 @@ IF ~~ THEN BEGIN 28 // from: 21.1
   IF ~  PartyHasItem("NWSNOWOB")~ THEN REPLY @26 GOTO 14
   IF ~~ THEN REPLY @58 GOTO 35
   IF ~~ THEN REPLY @23 GOTO 13
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
   IF ~~ THEN REPLY @12 GOTO 37
 END
 
@@ -199,7 +199,7 @@ IF ~~ THEN BEGIN 30 // from: 24.1
   SAY @61
   IF ~  PartyHasItem("NWSNOWOB")~ THEN REPLY @26 GOTO 14
   IF ~~ THEN REPLY @23 GOTO 13
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
   IF ~~ THEN REPLY @12 GOTO 37
 END
 
@@ -222,7 +222,7 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 27.1
   SAY @65
-  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",2)TakePartyItem("NWSNOWOB")DestroyItem("NWSNOWOB")AddexperienceParty(102000)EraseJournalEntry(@107747)~ SOLVED_JOURNAL @104724 GOTO 41
+  IF ~~ THEN DO ~SetGlobal("NWLillianJob","GLOBAL",2)TakePartyItem("NWSNOWOB")DestroyItem("NWSNOWOB")AddexperienceParty(102000)EraseJournalEntry(@107747)~ SOLVED_JOURNAL @104724 GOTO 41
 END
 
 IF ~~ THEN BEGIN 35 // from: 28.2
@@ -258,7 +258,7 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 32.1
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",2)TakePartyItem("NWSNOWOB")DestroyItem("NWSNOWOB")GiveGoldForce(300)AddexperienceParty(102000)EraseJournalEntry(@107747)~ SOLVED_JOURNAL @104724 GOTO 41
+  IF ~~ THEN DO ~SetGlobal("NWLillianJob","GLOBAL",2)TakePartyItem("NWSNOWOB")DestroyItem("NWSNOWOB")GiveGoldForce(300)AddexperienceParty(102000)EraseJournalEntry(@107747)~ SOLVED_JOURNAL @104724 GOTO 41
 END
 
 IF ~~ THEN BEGIN 41 // from: 34.1 40.1
@@ -271,7 +271,7 @@ IF ~~ THEN BEGIN 42 // from: 35.1
   SAY @79
   IF ~  PartyHasItem("NWSNOWOB")~ THEN REPLY @26 GOTO 14
   IF ~~ THEN REPLY @23 GOTO 13
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
   IF ~~ THEN REPLY @12 GOTO 37
 END
 
@@ -331,7 +331,7 @@ END
 
 IF ~~ THEN BEGIN 54 // from: 51.1
   SAY @94
-  IF ~~ THEN DO ~SetGlobal("LillianJob","GLOBAL",1)~ UNSOLVED_JOURNAL @107747 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLillianJob","GLOBAL",1)~ UNSOLVED_JOURNAL @107747 EXIT
 END
 
 IF ~~ THEN BEGIN 55 // from: 53.2
@@ -342,9 +342,9 @@ END
 // -------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("PartyHasNWWord1","GLOBAL",0)Global("LillianJob","GLOBAL",1)~ THEN BEGIN 56 // from:
+~  Global("NWPartyHasNWWord1","GLOBAL",0)Global("NWLillianJob","GLOBAL",1)~ THEN BEGIN 56 // from:
   SAY @97
-  IF ~  Global("LillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
+  IF ~  Global("NWLillianJob","GLOBAL",1)~ THEN REPLY @25 GOTO 36
   IF ~  PartyHasItem("NWSNOWOB")~ THEN REPLY @26 GOTO 14
   IF ~~ THEN REPLY @23 GOTO 13
   IF ~~ THEN REPLY @12 GOTO 37

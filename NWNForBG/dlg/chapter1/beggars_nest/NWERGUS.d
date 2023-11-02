@@ -3,10 +3,10 @@
 BEGIN ~NWERGUS~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  GlobalGT("ErgusQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("ErgusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
+  IF ~  GlobalGT("NWErgusQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWErgusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
   IF ~~ THEN REPLY @2 GOTO 3
   IF ~~ THEN REPLY @3 GOTO 4
   IF ~~ THEN REPLY @4 GOTO 5
@@ -19,7 +19,7 @@ END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @6
-  IF ~  Global("ErgusQuest","GLOBAL",0)~ THEN REPLY @7 DO ~SetGlobal("ErgusQuest","GLOBAL",1)~ GOTO 7
+  IF ~  Global("NWErgusQuest","GLOBAL",0)~ THEN REPLY @7 DO ~SetGlobal("NWErgusQuest","GLOBAL",1)~ GOTO 7
   IF ~~ THEN REPLY @8 GOTO 8
   IF ~~ THEN REPLY @9 GOTO 9
   IF ~~ THEN REPLY @4 GOTO 5
@@ -35,8 +35,8 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
   SAY @13
-  IF ~  GlobalGT("ErgusQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("ErgusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
+  IF ~  GlobalGT("NWErgusQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWErgusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
   IF ~~ THEN REPLY @2 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 5
 END
@@ -63,15 +63,15 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 2.2
   SAY @18
-  IF ~  Global("ErgusQuest","GLOBAL",0)~ THEN REPLY @7 DO ~SetGlobal("ErgusQuest","GLOBAL",1)~ GOTO 7
+  IF ~  Global("NWErgusQuest","GLOBAL",0)~ THEN REPLY @7 DO ~SetGlobal("NWErgusQuest","GLOBAL",1)~ GOTO 7
   IF ~~ THEN REPLY @9 GOTO 9
   IF ~~ THEN REPLY @4 GOTO 5
 END
 
 IF ~~ THEN BEGIN 9 // from: 2.3
   SAY @19
-  IF ~  GlobalGT("ErgusQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
-  IF ~  GlobalLT("ErgusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
+  IF ~  GlobalGT("NWErgusQuest","GLOBAL",1)~ THEN REPLY @1 GOTO 1
+  IF ~  GlobalLT("NWErgusQuest","GLOBAL",2)~ THEN REPLY @1 GOTO 2
   IF ~~ THEN REPLY @2 GOTO 3
   IF ~~ THEN REPLY @3 GOTO 4
   IF ~~ THEN REPLY @4 GOTO 5
@@ -105,10 +105,10 @@ END
 // ----------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN BEGIN 10 // from:
+~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN BEGIN 10 // from:
   SAY @24
-  IF ~  GlobalGT("ErgusQuest","GLOBAL",1)~ THEN GOTO 11
-  IF ~  GlobalLT("ErgusQuest","GLOBAL",2)~ THEN GOTO 12
+  IF ~  GlobalGT("NWErgusQuest","GLOBAL",1)~ THEN GOTO 11
+  IF ~  GlobalLT("NWErgusQuest","GLOBAL",2)~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 11 // from: 10.1

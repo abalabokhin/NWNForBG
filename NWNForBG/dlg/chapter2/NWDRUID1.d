@@ -77,7 +77,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 6.3
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("Druid1Saved","GLOBAL",1)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid1Saved","GLOBAL",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.1
@@ -112,9 +112,9 @@ END
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @39
   IF ~  Dead("NWSPIRIO")~ THEN REPLY @40 GOTO 20
-  IF ~  Global("SpiritSaved","GLOBAL",1)~ THEN REPLY @41 GOTO 21
+  IF ~  Global("NWSpiritSaved","GLOBAL",1)~ THEN REPLY @41 GOTO 21
   IF ~~ THEN REPLY @19 GOTO 5
-  IF ~  OR(2)Global("Druid2Saved","GLOBAL",0)Global("Druid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
+  IF ~  OR(2)Global("NWDruid2Saved","GLOBAL",0)Global("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
   IF ~~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @43 GOTO 3
 END
@@ -127,7 +127,7 @@ END
 IF ~~ THEN BEGIN 19 // from: 14.1
   SAY @45
   IF ~~ THEN REPLY @20 GOTO 8
-  IF ~  OR(2)Global("Druid2Saved","GLOBAL",0)Global("Druid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
+  IF ~  OR(2)Global("NWDruid2Saved","GLOBAL",0)Global("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
   IF ~~ THEN REPLY @21 GOTO 11
   IF ~~ THEN REPLY @3 GOTO 3
 END
@@ -140,7 +140,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 17.2
   SAY @49
-  IF ~~ THEN DO ~SetGlobal("Druid1Saved","GLOBAL",1)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid1Saved","GLOBAL",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 20.1
@@ -152,20 +152,20 @@ END
 
 IF ~~ THEN BEGIN 23 // from: 20.2
   SAY @53
-  IF ~  OR(2)Global("Druid2Saved","GLOBAL",0)Global("Druid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
+  IF ~  OR(2)Global("NWDruid2Saved","GLOBAL",0)Global("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
   IF ~~ THEN REPLY @54 GOTO 11
 END
 
 IF ~~ THEN BEGIN 24 // from: 22.1 22.2
   SAY @55
-  IF ~  OR(2)Global("Druid2Saved","GLOBAL",0)Global("Druid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
+  IF ~  OR(2)Global("NWDruid2Saved","GLOBAL",0)Global("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @42 GOTO 6
   IF ~~ THEN REPLY @54 GOTO 11
 END
 
 // -----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)AreaCheck("NW2902")Global("Druid1Saved","GLOBAL",0)~ THEN BEGIN 28 // from:
+~  !NumTimesTalkedTo(0)AreaCheck("NW2902")Global("NWDruid1Saved","GLOBAL",0)~ THEN BEGIN 28 // from:
   SAY @56
   IF ~~ THEN REPLY @57 GOTO 8
   IF ~~ THEN REPLY @58 GOTO 11
@@ -175,7 +175,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  AreaCheck("NW2800")GlobalGT("Druid1Saved","GLOBAL",0)~ THEN BEGIN 29 // from:
+~  AreaCheck("NW2800")GlobalGT("NWDruid1Saved","GLOBAL",0)~ THEN BEGIN 29 // from:
   SAY @59
   IF ~~ THEN EXIT
 END

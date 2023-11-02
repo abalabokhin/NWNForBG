@@ -3,7 +3,7 @@
 BEGIN ~NWLUCE2~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LuceJob","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWLuceJob","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -66,7 +66,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 6.3
   SAY @21
-  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",1)~ UNSOLVED_JOURNAL @107444 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLuceJob","GLOBAL",1)~ UNSOLVED_JOURNAL @107444 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 6.3
@@ -77,7 +77,7 @@ END
 // ---------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~ Global("LuceJob","GLOBAL",1)~ THEN BEGIN 11 // from:
+~ Global("NWLuceJob","GLOBAL",1)~ THEN BEGIN 11 // from:
   SAY @25
   IF ~  Dead("NWLEES")~ THEN REPLY @20 GOTO 10
   IF ~~ THEN REPLY @26 GOTO 9
@@ -92,7 +92,7 @@ END
 // ---------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~ Global("LuceJob","GLOBAL",2)~ THEN BEGIN 13 // from:
+~ Global("NWLuceJob","GLOBAL",2)~ THEN BEGIN 13 // from:
   SAY @29
   IF ~~ THEN REPLY @30 GOTO 14
   IF ~~ THEN REPLY @31 GOTO 15
@@ -100,18 +100,18 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 13.1
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",3)GiveItemCreate("NWCLCK5",LastTalkedToBy,1,1,1)EraseJournalEntry(@107444)EraseJournalEntry(@107445)~ SOLVED_JOURNAL @107447 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLuceJob","GLOBAL",3)GiveItemCreate("NWCLCK5",LastTalkedToBy,1,1,1)EraseJournalEntry(@107444)EraseJournalEntry(@107445)~ SOLVED_JOURNAL @107447 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 13.2
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("LuceJob","GLOBAL",3)AddexperienceParty(80000)EraseJournalEntry(@107444)EraseJournalEntry(@107445)~ SOLVED_JOURNAL @107447 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLuceJob","GLOBAL",3)AddexperienceParty(80000)EraseJournalEntry(@107444)EraseJournalEntry(@107445)~ SOLVED_JOURNAL @107447 EXIT
 END
 
 // ---------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~ Global("LuceJob","GLOBAL",3)~ THEN BEGIN 16 // from:
+~ Global("NWLuceJob","GLOBAL",3)~ THEN BEGIN 16 // from:
   SAY @35
   IF ~~ THEN GOTO 17
 END

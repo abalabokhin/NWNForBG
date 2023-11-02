@@ -3,7 +3,7 @@
 BEGIN ~NWALHELR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalLT("NeurikQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~  GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -67,7 +67,7 @@ IF ~~ THEN BEGIN 8 // from: 6.2
   SAY @20
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
-  IF ~ GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~ GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -94,7 +94,7 @@ IF ~~ THEN BEGIN 11 // from: 4.2
   IF ~~ THEN REPLY @26 GOTO 8
   IF ~~ THEN REPLY @16 GOTO 12
   IF ~~ THEN REPLY @17 GOTO 13
-  IF ~ GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~ GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -104,7 +104,7 @@ IF ~~ THEN BEGIN 12 // from: 4.3
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @15 GOTO 11
   IF ~~ THEN REPLY @17 GOTO 13
-  IF ~ GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~ GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -114,7 +114,7 @@ IF ~~ THEN BEGIN 13 // from: 4.4
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @15 GOTO 11
   IF ~~ THEN REPLY @16 GOTO 12
-  IF ~ GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
+  IF ~ GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @21 GOTO 14
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 5
 END
@@ -134,7 +134,7 @@ IF ~~ THEN BEGIN 23 // from: 10.1
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",6)~ THEN BEGIN 15 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",6)~ THEN BEGIN 15 // from:
   SAY @32
   IF ~~ THEN REPLY @33 GOTO 16
   IF ~~ THEN REPLY @34 GOTO 17
@@ -181,13 +181,13 @@ IF ~~ THEN BEGIN 21 // from: 18.2
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NeurikQuest","GLOBAL",4)~ THEN BEGIN 22 // from:
+~  Global("NWNeurikQuest","GLOBAL",4)~ THEN BEGIN 22 // from:
   SAY @45
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN WER01 // from: NWANDER 1.0
   SAY @46
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @47 EXTERN ~NWANDER~ 7
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @47 EXTERN ~NWANDER~ 8
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @47 EXTERN ~NWANDER~ 7
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @47 EXTERN ~NWANDER~ 8
 END

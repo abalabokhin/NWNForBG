@@ -87,7 +87,7 @@ END
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AribetHostile1","LOCALS",2)Global("AribetSurrendered","GLOBAL",0)~ THEN BEGIN 14 // from:
+~  Global("AribetHostile1","LOCALS",2)Global("NWAribetSurrendered","GLOBAL",0)~ THEN BEGIN 14 // from:
   SAY @21
   IF ~~ THEN GOTO 15
 END
@@ -345,13 +345,13 @@ END
 
 IF ~~ THEN BEGIN 58 // from: 54.1
   SAY @101
-  IF ~~ THEN  DO ~GiveItem("Nwkey16",LastTalkedToBy)SetGlobal("AribetSurrendered","GLOBAL",1)EscapeAreaDestroy(60)~ EXIT
+  IF ~~ THEN  DO ~GiveItem("Nwkey16",LastTalkedToBy)SetGlobal("NWAribetSurrendered","GLOBAL",1)EscapeAreaDestroy(60)~ EXIT
 END
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AribetSurrendered","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 59 // from:
+~  Global("NWAribetSurrendered","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 59 // from:
   SAY @102
   IF ~~ THEN GOTO 60
 END

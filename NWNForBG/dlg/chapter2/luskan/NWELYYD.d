@@ -3,7 +3,7 @@
 BEGIN ~NWELYYD~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("QuestBroken","LOCALS",0)Global("ElynwydQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("QuestBroken","LOCALS",0)Global("NWElynwydQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -132,7 +132,7 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 12.1
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",1)GiveItemCreate("NWMISC58",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @100800 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",1)GiveItemCreate("NWMISC58",LastTalkedToBy,0,0,0)~ UNSOLVED_JOURNAL @100800 EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 13.1
@@ -158,12 +158,12 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~    Global("QuestBroken","LOCALS",0)Global("ElynwydQuest","GLOBAL",1)Global("QuestTalked","LOCALS",0)~ THEN BEGIN 21 // from:
+~    Global("QuestBroken","LOCALS",0)Global("NWElynwydQuest","GLOBAL",1)Global("QuestTalked","LOCALS",0)~ THEN BEGIN 21 // from:
   SAY @39
   IF ~~ THEN REPLY @40 GOTO 22
   IF ~ Global("NWELYYD","GLOBAL",1)~ THEN REPLY @41 GOTO 23
-  IF ~  Global("NWELYYD","GLOBAL",2)Global("FindEvaine","GLOBAL",0)~ THEN REPLY @42 GOTO 24
-  IF ~  Global("FindEvaine","GLOBAL",1)~ THEN REPLY @43 GOTO 25
+  IF ~  Global("NWELYYD","GLOBAL",2)Global("NWFindEvaine","GLOBAL",0)~ THEN REPLY @42 GOTO 24
+  IF ~  Global("NWFindEvaine","GLOBAL",1)~ THEN REPLY @43 GOTO 25
   IF ~  Dead("NWEVAINE")~ THEN REPLY @44 GOTO 26
   IF ~~ THEN REPLY @45 GOTO 27
 END
@@ -255,18 +255,18 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 26.6
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)IncrementGlobal("EvilNW1","GLOBAL",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
+  IF ~~ THEN DO ~SetGlobal("QuestBroken","LOCALS",1)IncrementGlobal("NWEvilNW1","GLOBAL",1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)~ SOLVED_JOURNAL @100863 EXIT
 END
 
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~    Global("QuestBroken","LOCALS",0)Global("ElynwydQuest","GLOBAL",1)Global("QuestTalked","LOCALS",1)~ THEN BEGIN 38 // from:
+~    Global("QuestBroken","LOCALS",0)Global("NWElynwydQuest","GLOBAL",1)Global("QuestTalked","LOCALS",1)~ THEN BEGIN 38 // from:
   SAY @76
   IF ~~ THEN REPLY @40 GOTO 22
   IF ~ Global("NWELYYD","GLOBAL",1)~ THEN REPLY @41 GOTO 23
-  IF ~  Global("NWELYYD","GLOBAL",2)Global("FindEvaine","GLOBAL",0)~ THEN REPLY @42 GOTO 24
-  IF ~  Global("FindEvaine","GLOBAL",1)~ THEN REPLY @43 GOTO 25
+  IF ~  Global("NWELYYD","GLOBAL",2)Global("NWFindEvaine","GLOBAL",0)~ THEN REPLY @42 GOTO 24
+  IF ~  Global("NWFindEvaine","GLOBAL",1)~ THEN REPLY @43 GOTO 25
   IF ~  Dead("NWEVAINE")~ THEN REPLY @44 GOTO 26
   IF ~~ THEN REPLY @45 GOTO 27
 END
@@ -274,7 +274,7 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("ElynwydQuest","GLOBAL",2)!Dead("NWEVAINE")~ THEN BEGIN 39 // from:
+~  Global("NWElynwydQuest","GLOBAL",2)!Dead("NWEVAINE")~ THEN BEGIN 39 // from:
   SAY @77
   IF ~~ THEN GOTO 40
 END
@@ -292,7 +292,7 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 40.1
   SAY @83
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 42 // from: 40.2
@@ -304,22 +304,22 @@ END
 
 IF ~~ THEN BEGIN 43 // from: 40.3
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 40.4
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(50000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",3)GiveGoldForce(875)AddexperienceParty(50000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 40.5
   SAY @87
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)GiveGoldForce(800)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",3)GiveGoldForce(800)AddexperienceParty(70000)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 IF ~~ THEN BEGIN 46 // from: 40.6
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)AddexperienceParty(80000)
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",3)AddexperienceParty(80000)
 EraseJournalEntry(@100798)
 EraseJournalEntry(@100799)
 EraseJournalEntry(@100800)
@@ -329,7 +329,7 @@ END
 
 IF ~~ THEN BEGIN 47 // from: 40.7
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",3)AddexperienceParty(70000)ReputationInc(1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",3)AddexperienceParty(70000)ReputationInc(1)EraseJournalEntry(@100798)EraseJournalEntry(@100799)EraseJournalEntry(@100800)EraseJournalEntry(@100801)ActionOverride("NWEVAINE",EscapeAreaObject("To2E00"))EscapeAreaObject("To2E00")~ SOLVED_JOURNAL @100877 EXIT
 END
 
 // -----------------------------------------------------------------------------------

@@ -1,17 +1,17 @@
 IF
 	PartyHasItem("NWVGEM")  // ??????????? ?????? ???????
-	Global("WanevGem","GLOBAL",0)
+	Global("NWWanevGem","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("WanevGem","GLOBAL",1)
+		SetGlobal("NWWanevGem","GLOBAL",1)
 END
 
 IF
-	Global("GuglashHeart","GLOBAL",1)
+	Global("NWGuglashHeart","GLOBAL",1)
 THEN
 	RESPONSE #100
 		ContainerEnable("Brazier",FALSE)
-		SetGlobal("GuglashHeart","GLOBAL",2)
+		SetGlobal("NWGuglashHeart","GLOBAL",2)
 		AmbientActivate("Portal",FALSE)
 		SoundActivate("NWPORTA0",FALSE)
 		AmbientActivate("NWBRAZI2",TRUE)  // ???????
@@ -19,7 +19,7 @@ END
 
 IF
 	Dead("NWELEFIR")  // ????? ?????????? ????
-	Global("GuglashHeart","GLOBAL",0)
+	Global("NWGuglashHeart","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("SPRITE_IS_DEADNWELEFIR","GLOBAL",0)
@@ -28,7 +28,7 @@ END
 
 IF
 	Dead("NWMEPSMO")  // ??????? ?????
-	Global("GuglashHeart","GLOBAL",0)
+	Global("NWGuglashHeart","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("SPRITE_IS_DEADNWMEPSMO","GLOBAL",0)
@@ -37,7 +37,7 @@ END
 
 IF
 	Dead("NWMEPFIR")  // ???????? ?????
-	Global("GuglashHeart","GLOBAL",0)
+	Global("NWGuglashHeart","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("SPRITE_IS_DEADNWMEPFIR","GLOBAL",0)
@@ -46,7 +46,7 @@ END
 
 IF
 	Dead("NWMEPMAG")  // ???????? ?????
-	Global("GuglashHeart","GLOBAL",0)
+	Global("NWGuglashHeart","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("SPRITE_IS_DEADNWMEPMAG","GLOBAL",0)
@@ -54,19 +54,19 @@ THEN
 END
 
 IF
-	GlobalGT("GuglashHeart","GLOBAL",0)
-	GlobalGT("WanevQuest","GLOBAL",0)
-	GlobalLT("WanevQuest","GLOBAL",3)
+	GlobalGT("NWGuglashHeart","GLOBAL",0)
+	GlobalGT("NWWanevQuest","GLOBAL",0)
+	GlobalLT("NWWanevQuest","GLOBAL",3)
 THEN
 	RESPONSE #100
-		SetGlobal("WanevQuest","GLOBAL",3)
+		SetGlobal("NWWanevQuest","GLOBAL",3)
 END
 
 IF
-	GlobalGT("GuglashHeart","GLOBAL",0)
-	Global("WanevQuest2","GLOBAL",1)
+	GlobalGT("NWGuglashHeart","GLOBAL",0)
+	Global("NWWanevQuest2","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("WanevQuest2","GLOBAL",2)
+		SetGlobal("NWWanevQuest2","GLOBAL",2)
 END
 

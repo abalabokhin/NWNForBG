@@ -3,7 +3,7 @@
 BEGIN ~NWDAELAN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("NWDaelanReleased","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -88,12 +88,12 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
   SAY @27
-  IF ~~ THEN DO ~TakePartyGold(850)DestroyGold(850)SetGlobal("DaelanReleased","GLOBAL",1)JoinParty()~ EXIT
+  IF ~~ THEN DO ~TakePartyGold(850)DestroyGold(850)SetGlobal("NWDaelanReleased","GLOBAL",1)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.2
   SAY @28
-  IF ~~ THEN DO ~TakePartyGold(600)DestroyGold(600)SetGlobal("DaelanReleased","GLOBAL",1)JoinParty()~ EXIT
+  IF ~~ THEN DO ~TakePartyGold(600)DestroyGold(600)SetGlobal("NWDaelanReleased","GLOBAL",1)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.3
@@ -129,7 +129,7 @@ END
 // -----------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 20 // from:
+~  !NumTimesTalkedTo(0)AreaCheck("NW1012")!InParty(Myself)Global("NWDaelanReleased","GLOBAL",0)~ THEN BEGIN 20 // from:
   SAY @37
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @7 GOTO 7
@@ -148,7 +148,7 @@ END
 // --------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",1)~ THEN BEGIN 22 // from:
+~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("NWDaelanReleased","GLOBAL",1)~ THEN BEGIN 22 // from:
   SAY @40
   IF ~~ THEN REPLY @41 GOTO 23
   IF ~~ THEN REPLY @42 GOTO 24
@@ -193,7 +193,7 @@ END
 
 IF ~~ THEN BEGIN 29 // from: 27.2
   SAY @56
-  IF ~~ THEN DO ~SetGlobal("DaelanReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 27.3
@@ -210,7 +210,7 @@ END
 // --------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",1)~ THEN BEGIN 32 // from:
+~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("NWDaelanReleased","GLOBAL",1)~ THEN BEGIN 32 // from:
   SAY @59
   IF ~~ THEN REPLY @60 GOTO 33
   IF ~~ THEN REPLY @61 GOTO 28
@@ -233,7 +233,7 @@ END
 
 IF ~~ THEN BEGIN 35 // from: 34.1
   SAY @66
-  IF ~~ THEN DO ~SetGlobal("DaelanReleased","GLOBAL",2)JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanReleased","GLOBAL",2)JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 34.2
@@ -244,7 +244,7 @@ END
 // --------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 37 // from:
+~  Global("Nw2020Talked","LOCALS",0)AreaCheck("NW2020")!InParty(Myself)Global("NWDaelanReleased","GLOBAL",0)~ THEN BEGIN 37 // from:
   SAY @68
   IF ~~ THEN REPLY @69 GOTO 38
   IF ~~ THEN REPLY @70 GOTO 39
@@ -264,7 +264,7 @@ END
 // --------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("DaelanReleased","GLOBAL",0)~ THEN BEGIN 40 // from:
+~  Global("Nw2020Talked","LOCALS",1)AreaCheck("NW2020")!InParty(Myself)Global("NWDaelanReleased","GLOBAL",0)~ THEN BEGIN 40 // from:
   SAY @59
   IF ~~ THEN REPLY @60 GOTO 33
   IF ~~ THEN REPLY @61 GOTO 28

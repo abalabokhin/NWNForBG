@@ -13,7 +13,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  GlobalGT("KendrackQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 4
+  IF ~  GlobalGT("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END

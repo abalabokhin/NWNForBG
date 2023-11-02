@@ -51,7 +51,7 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 4.1
   SAY @21
-  IF ~  GlobalGT("AavillQuest","GLOBAL",0)~ THEN REPLY @22 GOTO 9
+  IF ~  GlobalGT("NWAavillQuest","GLOBAL",0)~ THEN REPLY @22 GOTO 9
   IF ~~ THEN REPLY @23 GOTO 9
 END
 
@@ -121,7 +121,7 @@ END
 IF ~~ THEN BEGIN 19 // from: 16.1 17.1 18.1 18.2
   SAY @47
   IF ~~ THEN REPLY @48 GOTO 21
-  IF ~  GlobalGT("AavillQuest","GLOBAL",0)~ THEN REPLY @49 GOTO 21
+  IF ~  GlobalGT("NWAavillQuest","GLOBAL",0)~ THEN REPLY @49 GOTO 21
 END
 
 IF ~~ THEN BEGIN 20 // from: 18.3
@@ -196,9 +196,9 @@ END
 
 IF ~~ THEN BEGIN 32 // from: 30.1
   SAY @77
-  IF ~  GlobalGT("Druid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
-  IF ~  GlobalGT("KnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
-  IF ~  Global("SetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
+  IF ~  GlobalGT("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
+  IF ~  GlobalGT("NWKnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
+  IF ~  Global("NWSetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
   IF ~~ THEN REPLY @81 GOTO 39
   IF ~~ THEN REPLY @82 GOTO 40
 END
@@ -225,16 +225,16 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 36.1
   SAY @77
-  IF ~  GlobalGT("KnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
-  IF ~  Global("SetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
+  IF ~  GlobalGT("NWKnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
+  IF ~  Global("NWSetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
   IF ~~ THEN REPLY @81 GOTO 39
   IF ~~ THEN REPLY @82 GOTO 40
 END
 
 IF ~~ THEN BEGIN 37 // from: 32.2
   SAY @87
-  IF ~  GlobalGT("Druid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
-  IF ~  Global("SetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
+  IF ~  GlobalGT("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
+  IF ~  Global("NWSetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
   IF ~~ THEN REPLY @81 GOTO 39
   IF ~~ THEN REPLY @82 GOTO 40
 END
@@ -246,8 +246,8 @@ END
 
 IF ~~ THEN BEGIN 42 // from: 38.1
   SAY @89
-  IF ~  GlobalGT("Druid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
-  IF ~  GlobalGT("KnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
+  IF ~  GlobalGT("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
+  IF ~  GlobalGT("NWKnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
   IF ~~ THEN REPLY @81 GOTO 39
   IF ~~ THEN REPLY @82 GOTO 40
 END
@@ -259,9 +259,9 @@ END
 
 IF ~~ THEN BEGIN 46 // from: 39
   SAY @91
-  IF ~  GlobalGT("Druid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
-  IF ~  GlobalGT("KnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
-  IF ~  Global("SetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
+  IF ~  GlobalGT("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
+  IF ~  GlobalGT("NWKnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
+  IF ~  Global("NWSetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
   IF ~~ THEN REPLY @82 GOTO 40
 END
 
@@ -273,11 +273,11 @@ END
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowNymph","LOCALS",1)Global("SpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 43 // from:
+~  Global("KnowNymph","LOCALS",1)Global("NWSpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 43 // from:
   SAY @93
-  IF ~  GlobalGT("Druid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
-  IF ~  GlobalGT("KnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
-  IF ~  Global("SetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
+  IF ~  GlobalGT("NWDruid3Saved","GLOBAL",0)~ THEN REPLY @78 GOTO 36
+  IF ~  GlobalGT("NWKnowSetara","GLOBAL",0)~ THEN REPLY @79 GOTO 37
+  IF ~  Global("NWSetaraQuest","GLOBAL",1)~ THEN REPLY @80 GOTO 38
   IF ~~ THEN REPLY @81 GOTO 39
   IF ~~ THEN REPLY @82 GOTO 40
 END
@@ -285,7 +285,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowNymph","LOCALS",1)GlobalGT("SpiritSaved","GLOBAL",0)~ THEN BEGIN 44 // from:
+~  Global("KnowNymph","LOCALS",1)GlobalGT("NWSpiritSaved","GLOBAL",0)~ THEN BEGIN 44 // from:
   SAY @94
   IF ~~ THEN EXIT
 END

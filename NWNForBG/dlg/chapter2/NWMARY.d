@@ -52,8 +52,8 @@ END
 IF ~~ THEN BEGIN 6 // from: 3.1
   SAY @21
   IF ~~ THEN REPLY @22 GOTO 16
-  IF ~  GlobalLT("PeteQuest","GLOBAL",2)~ THEN REPLY @23 GOTO 17
-  IF ~  GlobalGT("PeteQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 18
+  IF ~  GlobalLT("NWPeteQuest","GLOBAL",2)~ THEN REPLY @23 GOTO 17
+  IF ~  GlobalGT("NWPeteQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 18
   IF ~~ THEN REPLY @10 GOTO 7
   IF ~~ THEN REPLY @11 GOTO 8
   IF ~~ THEN REPLY @12 GOTO 9
@@ -137,8 +137,8 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 6.1
   SAY @38
-  IF ~  GlobalLT("PeteQuest","GLOBAL",2)~ THEN REPLY @23 GOTO 17
-  IF ~  GlobalGT("PeteQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 18
+  IF ~  GlobalLT("NWPeteQuest","GLOBAL",2)~ THEN REPLY @23 GOTO 17
+  IF ~  GlobalGT("NWPeteQuest","GLOBAL",1)~ THEN REPLY @24 GOTO 18
   IF ~~ THEN REPLY @10 GOTO 7
   IF ~~ THEN REPLY @11 GOTO 8
   IF ~~ THEN REPLY @12 GOTO 9
@@ -180,7 +180,7 @@ IF ~~ THEN BEGIN 20 // from: 10.1
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~   !NumTimesTalkedTo(0)GlobalLT("PeteQuest","GLOBAL",2)~ THEN BEGIN 21 // from:
+~   !NumTimesTalkedTo(0)GlobalLT("NWPeteQuest","GLOBAL",2)~ THEN BEGIN 21 // from:
   SAY @43
   IF ~~ THEN REPLY @44 GOTO 22
   IF ~~ THEN REPLY @2 GOTO 2
@@ -195,7 +195,7 @@ IF ~~ THEN BEGIN 22// from: 0.1
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~   !NumTimesTalkedTo(0)GlobalGT("PeteQuest","GLOBAL",1)~ THEN BEGIN 23 // from:
+~   !NumTimesTalkedTo(0)GlobalGT("NWPeteQuest","GLOBAL",1)~ THEN BEGIN 23 // from:
   SAY @46
   IF ~~ THEN REPLY @44 GOTO 24
   IF ~~ THEN REPLY @2 GOTO 2

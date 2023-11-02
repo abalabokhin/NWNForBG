@@ -1,8 +1,8 @@
 IF
 	Clicked([ANYONE])
-	Global("KultDoor","GLOBAL",0)
+	Global("NWKultDoor","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("KultDoor","GLOBAL",1)
+		SetGlobal("NWKultDoor","GLOBAL",1)
 END
 

@@ -156,8 +156,8 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 11.2
   SAY @45
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 26
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN GOTO 27
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 26
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 21 // from: 11.3
@@ -168,14 +168,14 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 11.4
   SAY @47
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN GOTO 30
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN GOTO 31
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN GOTO 30
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 23 // from: 11.5
   SAY @48
-  IF ~  Global("PeninsulaDone","GLOBAL",0)~ THEN GOTO 32
-  IF ~  GlobalGT("PeninsulaDone","GLOBAL",0)~ THEN GOTO 33
+  IF ~  Global("NWPeninsulaDone","GLOBAL",0)~ THEN GOTO 32
+  IF ~  GlobalGT("NWPeninsulaDone","GLOBAL",0)~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 24 // from: 18.1

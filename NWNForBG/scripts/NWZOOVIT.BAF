@@ -109,7 +109,7 @@ THEN
 END
 
 IF
-	GlobalLT("ENDOFBG1","GLOBAL",2)
+	GlobalLT("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,MALE)
 	General(Myself,HUMANOID)
@@ -123,7 +123,7 @@ THEN
 END
 
 IF
-	GlobalLT("ENDOFBG1","GLOBAL",2)
+	GlobalLT("NWENDOFBG1","GLOBAL",2)
 	See([ENEMY])
 	Gender(Myself,FEMALE)
 	General(Myself,HUMANOID)

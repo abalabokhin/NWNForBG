@@ -3,7 +3,7 @@
 BEGIN ~NWDREGIN~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("AavillQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWAavillQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 1
@@ -21,19 +21,19 @@ IF ~~ THEN BEGIN 2 // from: 1.1
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("AavillQuest","GLOBAL",0)~ THEN BEGIN 3 // from:
+~  !NumTimesTalkedTo(0)Global("NWAavillQuest","GLOBAL",0)~ THEN BEGIN 3 // from:
   SAY @6
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AavillQuest","GLOBAL",1)Global("SpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 4 // from:
+~  Global("NWAavillQuest","GLOBAL",1)Global("NWSpiritSaved","GLOBAL",0)!Dead("NWSPIRIO")~ THEN BEGIN 4 // from:
   SAY @7
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SpiritSaved","GLOBAL",1)~ THEN BEGIN 5 // from:
+~  Global("NWSpiritSaved","GLOBAL",1)~ THEN BEGIN 5 // from:
   SAY @8
   IF ~~ THEN EXIT
 END

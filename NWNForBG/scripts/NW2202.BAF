@@ -1,5 +1,5 @@
 IF
-	Global("SexWithZamitra","GLOBAL",1)
+	Global("NWSexWithZamitra","GLOBAL",1)
 	Global("ZamitraSpawn","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -16,7 +16,7 @@ THEN
 END
 
 IF
-	Global("KendrackQuest","GLOBAL",1)
+	Global("NWKendrackQuest","GLOBAL",1)
 	Global("ZorSpawn","MYAREA",0)
 THEN
 	RESPONSE #100

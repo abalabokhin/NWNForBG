@@ -1,6 +1,6 @@
 // Холодный лес  Подземелье волшебника Накс  У этого эльфа голодный и совершенно отчаянный вид. Кажется, он слишком долго был пленником.
 
-//   Global("NaxJob","GLOBAL",2) - Ритуал вызова элементаля завершен
+//   Global("NWNaxJob","GLOBAL",2) - Ритуал вызова элементаля завершен
 
 BEGIN ~NWNAX~
 
@@ -69,8 +69,8 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 5.5
   SAY @20
-  IF ~  Global("NaxJob","GLOBAL",0)~ THEN DO ~SetGlobal("NaxJob","GLOBAL",1)~ EXIT
-  IF ~  !Global("NaxJob","GLOBAL",0)~ THEN EXIT
+  IF ~  Global("NWNaxJob","GLOBAL",0)~ THEN DO ~SetGlobal("NWNaxJob","GLOBAL",1)~ EXIT
+  IF ~  !Global("NWNaxJob","GLOBAL",0)~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 11 // from: 7.1
@@ -106,7 +106,7 @@ END
 // -----------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("NaxJob","GLOBAL",0)~ THEN BEGIN 15 // from:
+~  !NumTimesTalkedTo(0)Global("NWNaxJob","GLOBAL",0)~ THEN BEGIN 15 // from:
   SAY @26
   IF ~~ THEN REPLY @27 GOTO 1
   IF ~~ THEN REPLY @28 GOTO 16
@@ -127,7 +127,7 @@ END
 // -----------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("NaxJob","GLOBAL",1)~ THEN BEGIN 18 // from:
+~  !NumTimesTalkedTo(0)Global("NWNaxJob","GLOBAL",1)~ THEN BEGIN 18 // from:
   SAY @33
   IF ~  PartyHasItem("NWSNOWOB")~ THEN REPLY @10 GOTO 6
   IF ~~ THEN REPLY @27 GOTO 1
@@ -141,7 +141,7 @@ END
 // -----------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("NaxJob","GLOBAL",2)~ THEN BEGIN 19 // from:
+~  !NumTimesTalkedTo(0)Global("NWNaxJob","GLOBAL",2)~ THEN BEGIN 19 // from:
   SAY @35
   IF ~~ THEN REPLY @36 GOTO 20
   IF ~~ THEN REPLY @37 GOTO 20
@@ -155,7 +155,7 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 19.3
   SAY @40
-  IF ~~ THEN DO ~SetGlobal("NaxJob","GLOBAL",3)AddexperienceParty(60000)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNaxJob","GLOBAL",3)AddexperienceParty(60000)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 19.1

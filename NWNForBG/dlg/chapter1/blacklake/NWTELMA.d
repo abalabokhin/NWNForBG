@@ -8,7 +8,7 @@
 BEGIN ~NWTELMA~
 
 IF ~  NumberOfTimesTalkedTo(0)
-Global("TelmaSecret","GLOBAL",0)
+Global("NWTelmaSecret","GLOBAL",0)
 ~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
@@ -99,31 +99,31 @@ END
 
 IF ~~ THEN BEGIN 13 // from: 12.0 8.1
   SAY @26
-  IF ~~ THEN DO ~SetGlobal("TelmaSecret","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWTelmaSecret","GLOBAL",1)
 ~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.1 8.2
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("TelmaSecret","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWTelmaSecret","GLOBAL",1)
 ~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.2 8.3
   SAY @6
-  IF ~~ THEN DO ~SetGlobal("TelmaSecret","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWTelmaSecret","GLOBAL",1)
 ~ EXIT
 END
 
 IF ~  !NumberOfTimesTalkedTo(0)
-Global("TelmaSecret","GLOBAL",0)
+Global("NWTelmaSecret","GLOBAL",0)
 ~ THEN BEGIN 16 // from:
   SAY @28
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
 END
 
-IF ~  Global("TelmaSecret","GLOBAL",1)
+IF ~  Global("NWTelmaSecret","GLOBAL",1)
 ~ THEN BEGIN 17 // from:
   SAY @29
   IF ~~ THEN REPLY @30 GOTO 18
@@ -153,7 +153,7 @@ IF ~~ THEN BEGIN 21 // from: 19.0
   IF ~~ THEN EXIT
 END
 
-IF ~  GlobalGT("TelmaSecret","GLOBAL",1)
+IF ~  GlobalGT("NWTelmaSecret","GLOBAL",1)
 ~ THEN BEGIN 22 // from:
   SAY @36
   IF ~~ THEN EXIT

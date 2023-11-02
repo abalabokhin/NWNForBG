@@ -3,7 +3,7 @@
 BEGIN ~NWKARLAT~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowKarlat","GLOBAL",0)GlobalLT("JaregQuest","GLOBAL",3)~ THEN BEGIN 0 // from:
+~  Global("NWKnowKarlat","GLOBAL",0)GlobalLT("NWJaregQuest","GLOBAL",3)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -53,7 +53,7 @@ IF ~~ THEN BEGIN 8 // from: 7.1
   SAY @15
   IF ~~ THEN REPLY @16 GOTO 10
   IF ~~ THEN REPLY @17 GOTO 11
-  IF ~  Global("KnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
+  IF ~  Global("NWKnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
   IF ~  PartyHasItem("NWKARLAJ")~ THEN REPLY @19 GOTO 13
 END
 
@@ -61,7 +61,7 @@ IF ~~ THEN BEGIN 9 // from: 6.2 7.2
   SAY @20
   IF ~~ THEN REPLY @16 GOTO 10
   IF ~~ THEN REPLY @17 GOTO 11
-  IF ~  Global("KnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
+  IF ~  Global("NWKnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
   IF ~  PartyHasItem("NWKARLAJ")~ THEN REPLY @19 GOTO 13
 END
 
@@ -76,7 +76,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 8.2 9.2
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("KnowKarlat","GLOBAL",1)GiveItemCreate("NWKARLA0",LastTalkedToBy,1,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKnowKarlat","GLOBAL",1)GiveItemCreate("NWKARLA0",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.3 9.3
@@ -139,7 +139,7 @@ END
 IF ~~ THEN BEGIN 18 // from: 10.5
   SAY @40
   IF ~~ THEN REPLY @17 GOTO 11
-  IF ~  Global("KnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
+  IF ~  Global("NWKnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
   IF ~  PartyHasItem("NWKARLAJ")~ THEN REPLY @19 GOTO 13
 END
 
@@ -167,14 +167,14 @@ END
 IF ~~ THEN BEGIN 22 // from: 13.4
   SAY @45
   IF ~~ THEN REPLY @16 GOTO 10
-  IF ~  Global("KnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
+  IF ~  Global("NWKnowQuint","GLOBAL",1)~ THEN REPLY @18 GOTO 12
   IF ~~ THEN REPLY @17 GOTO 11
 END
 
 // ----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KnowKarlat","GLOBAL",1)GlobalLT("JaregQuest","GLOBAL",3)~ THEN BEGIN 25 // from:
+~  Global("NWKnowKarlat","GLOBAL",1)GlobalLT("NWJaregQuest","GLOBAL",3)~ THEN BEGIN 25 // from:
   SAY @46
   IF ~~ THEN EXIT
 END
@@ -182,7 +182,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("JaregQuest","GLOBAL",3)~ THEN BEGIN 26 // from:
+~  Global("NWJaregQuest","GLOBAL",3)~ THEN BEGIN 26 // from:
   SAY @47
   IF ~~ THEN EXTERN ~NWQUINT2~ 23
 END

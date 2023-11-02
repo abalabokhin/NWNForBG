@@ -20,7 +20,7 @@ THEN
 END
 
 IF
-	Global("SectSign","GLOBAL",1)
+	Global("NWSectSign","GLOBAL",1)
 	Global("JemanieJournalEntry","MYAREA",0)
 	PartyHasItem("Nwring1")  // ?????? ??????
 THEN

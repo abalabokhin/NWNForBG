@@ -1,5 +1,5 @@
 IF
-	Global("SilverbackTalk","GLOBAL",1)
+	Global("NWSilverbackTalk","GLOBAL",1)
 THEN
 	RESPONSE #100
 		EscapeAreaDestroy(2)

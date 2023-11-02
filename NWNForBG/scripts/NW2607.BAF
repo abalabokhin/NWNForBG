@@ -1,5 +1,5 @@
 IF
-	Global("JaregQuest","GLOBAL",1)
+	Global("NWJaregQuest","GLOBAL",1)
 	Global("DoorUnlock","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -17,7 +17,7 @@ THEN
 END
 
 IF
-	GlobalGT("JaregQuest","GLOBAL",2)
+	GlobalGT("NWJaregQuest","GLOBAL",2)
 	Global("DoorUnlock","MYAREA",1)
 THEN
 	RESPONSE #100
@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-	Global("Charwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Is_Saved","GLOBAL",1)
 	Global("ExitChange","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -40,9 +40,9 @@ END
 
 IF
 	OR(2)
-		Global("Charwood_Is_Cursed","GLOBAL",1)
-		Global("Charwood_Is_Saved","GLOBAL",1)
-	Global("Charwood_Letter","GLOBAL",0)
+		Global("NWCharwood_Is_Cursed","GLOBAL",1)
+		Global("NWCharwood_Is_Saved","GLOBAL",1)
+	Global("NWCharwood_Letter","GLOBAL",0)
 THEN
 	RESPONSE #100
 		TakePartyItem("NWQUINTT")  // ?????? ?????? ???????

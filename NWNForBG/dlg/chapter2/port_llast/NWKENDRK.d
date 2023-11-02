@@ -33,9 +33,9 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 1.1.2.3.4.5
   SAY @9
-  IF ~  Global("KendrackQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 6
+  IF ~  Global("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 6
   IF ~~ THEN REPLY @11 GOTO 7
-  IF ~  Global("KendrackQuest","GLOBAL",1)PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
+  IF ~  Global("NWKendrackQuest","GLOBAL",1)PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
   IF ~~ THEN REPLY @13 GOTO 9
   IF ~~ THEN REPLY @14 GOTO 10
   IF ~~ THEN REPLY @15 GOTO 11
@@ -73,7 +73,7 @@ IF ~~ THEN BEGIN 17 // from: 14.1
   IF ~~ THEN REPLY @28 GOTO 18
   IF ~~ THEN REPLY @29 GOTO 19
   IF ~~ THEN REPLY @30 GOTO 20
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("NWKendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -81,7 +81,7 @@ IF ~~ THEN BEGIN 18 // from: 17.1
   SAY @33
   IF ~~ THEN REPLY @29 GOTO 19
   IF ~~ THEN REPLY @30 GOTO 20
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("NWKendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -89,7 +89,7 @@ IF ~~ THEN BEGIN 19 // from: 17.2
   SAY @34
   IF ~~ THEN REPLY @28 GOTO 18
   IF ~~ THEN REPLY @30 GOTO 20
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("NWKendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -97,7 +97,7 @@ IF ~~ THEN BEGIN 20 // from: 17.3
   SAY @35
   IF ~~ THEN REPLY @28 GOTO 18
   IF ~~ THEN REPLY @29 GOTO 19
-  IF ~~ THEN REPLY @31 DO ~SetGlobal("KendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
+  IF ~~ THEN REPLY @31 DO ~SetGlobal("NWKendrackQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @96692 GOTO 21
   IF ~~ THEN REPLY @24 GOTO 22
 END
 
@@ -182,8 +182,8 @@ END
 
 IF ~~ THEN BEGIN 28 // from: 7.3
   SAY @54
-  IF ~  Global("KendrackQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 6
-  IF ~  Global("KendrackQuest","GLOBAL",1)PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
+  IF ~  Global("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 6
+  IF ~  Global("NWKendrackQuest","GLOBAL",1)PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
   IF ~~ THEN REPLY @13 GOTO 9
   IF ~~ THEN REPLY @14 GOTO 10
   IF ~~ THEN REPLY @15 GOTO 11
@@ -227,8 +227,8 @@ IF ~~ THEN BEGIN 9 // from: 5.4
   SAY @63
   IF ~~ THEN REPLY @64 GOTO 34
   IF ~~ THEN REPLY @65 GOTO 35
-  IF ~  Global("KendrackQuest","GLOBAL",0)~ THEN REPLY @66 GOTO 36
-  IF ~  Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @67 GOTO 37
+  IF ~  Global("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @66 GOTO 36
+  IF ~  Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @67 GOTO 37
   IF ~~ THEN REPLY @51 GOTO 28
   IF ~~ THEN REPLY @15 GOTO 11
 END
@@ -246,8 +246,8 @@ END
 IF ~~ THEN BEGIN 34 // from: 9.1
   SAY @69
   IF ~~ THEN REPLY @65 GOTO 35
-  IF ~  Global("KendrackQuest","GLOBAL",0)~ THEN REPLY @66 GOTO 36
-  IF ~  Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @67 GOTO 37
+  IF ~  Global("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @66 GOTO 36
+  IF ~  Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @67 GOTO 37
   IF ~~ THEN REPLY @51 GOTO 28
   IF ~~ THEN REPLY @15 GOTO 11
 END
@@ -260,8 +260,8 @@ END
 IF ~~ THEN BEGIN 38 // from: 35.1
   SAY @71
   IF ~~ THEN REPLY @64 GOTO 34
-  IF ~  Global("KendrackQuest","GLOBAL",0)~ THEN REPLY @66 GOTO 36
-  IF ~  Global("KendrackQuest","GLOBAL",1)~ THEN REPLY @67 GOTO 37
+  IF ~  Global("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @66 GOTO 36
+  IF ~  Global("NWKendrackQuest","GLOBAL",1)~ THEN REPLY @67 GOTO 37
   IF ~~ THEN REPLY @51 GOTO 28
   IF ~~ THEN REPLY @15 GOTO 11
 END
@@ -325,18 +325,18 @@ IF ~~ THEN BEGIN 11 // from: 5.6
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("KendrackQuest","GLOBAL",0)!Dead("NWSHALD1")~ THEN BEGIN 43 // from:
+~  !NumTimesTalkedTo(0)Global("NWKendrackQuest","GLOBAL",0)!Dead("NWSHALD1")~ THEN BEGIN 43 // from:
   SAY @84
-  IF ~  Global("KendrackQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 6
+  IF ~  Global("NWKendrackQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 6
   IF ~~ THEN REPLY @11 GOTO 7
-  IF ~  Global("KendrackQuest","GLOBAL",1)PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
+  IF ~  Global("NWKendrackQuest","GLOBAL",1)PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
   IF ~~ THEN REPLY @13 GOTO 9
   IF ~~ THEN REPLY @14 GOTO 10
   IF ~~ THEN REPLY @15 GOTO 11
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",1)!Dead("NWSHALD1")OR(4)!Dead("NWZOR")!Dead("NWSTIRGE")!Dead("NWWYVERB")!Dead("NWDELILH")~ THEN BEGIN 44 // from:
+~  Global("NWKendrackQuest","GLOBAL",1)!Dead("NWSHALD1")OR(4)!Dead("NWZOR")!Dead("NWSTIRGE")!Dead("NWWYVERB")!Dead("NWDELILH")~ THEN BEGIN 44 // from:
   SAY @85
   IF ~~ THEN REPLY @11 GOTO 7
   IF ~  PartyHasItem("NWEARBAD")~ THEN REPLY @12 GOTO 8
@@ -346,7 +346,7 @@ IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this st
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",1)Dead("NWZOR")Dead("NWSTIRGE")Dead("NWWYVERB")Dead("NWDELILH")!Dead("NWSHALD1")~ THEN BEGIN 45 // from:
+~  Global("NWKendrackQuest","GLOBAL",1)Dead("NWZOR")Dead("NWSTIRGE")Dead("NWWYVERB")Dead("NWDELILH")!Dead("NWSHALD1")~ THEN BEGIN 45 // from:
   SAY @86
   IF ~~ THEN REPLY @87 GOTO 46
   IF ~~ THEN REPLY @88 GOTO 47
@@ -382,24 +382,24 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 45.4
   SAY @95
-  IF ~  NumItemsParty("NWEARBAD",4)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",4)GiveGoldForce(4000)AddexperienceParty(120000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
-  IF ~  NumItemsParty("NWEARBAD",3)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",3)GiveGoldForce(3000)AddexperienceParty(90000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
-  IF ~  NumItemsParty("NWEARBAD",2)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",2)GiveGoldForce(2000)AddexperienceParty(60000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
-  IF ~  NumItemsParty("NWEARBAD",1)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",1)GiveGoldForce(1000)AddexperienceParty(30000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
-  IF ~  !PartyHasItem("NWEARBAD")~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("NWEARBAD",4)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",4)GiveGoldForce(4000)AddexperienceParty(120000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("NWEARBAD",3)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",3)GiveGoldForce(3000)AddexperienceParty(90000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("NWEARBAD",2)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",2)GiveGoldForce(2000)AddexperienceParty(60000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  NumItemsParty("NWEARBAD",1)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",3)TakePartyItemNum("NWEARBAD",1)GiveGoldForce(1000)AddexperienceParty(30000)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~  !PartyHasItem("NWEARBAD")~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",3)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 45.5
   SAY @97
-  IF ~  NumItemsParty("NWEARBAD",4)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",4)AddexperienceParty(120000)GiveGoldForce(4000)~ EXIT
-  IF ~  NumItemsParty("NWEARBAD",3)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",3)AddexperienceParty(90000)GiveGoldForce(3000)~ EXIT
-  IF ~  NumItemsParty("NWEARBAD",2)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",2)AddexperienceParty(60000)GiveGoldForce(2000)~ EXIT
-  IF ~  NumItemsParty("NWEARBAD",1)~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",1)AddexperienceParty(30000)GiveGoldForce(1000)~ EXIT
-  IF ~  !PartyHasItem("NWEARBAD")~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",2)~ EXIT
+  IF ~  NumItemsParty("NWEARBAD",4)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",4)AddexperienceParty(120000)GiveGoldForce(4000)~ EXIT
+  IF ~  NumItemsParty("NWEARBAD",3)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",3)AddexperienceParty(90000)GiveGoldForce(3000)~ EXIT
+  IF ~  NumItemsParty("NWEARBAD",2)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",2)AddexperienceParty(60000)GiveGoldForce(2000)~ EXIT
+  IF ~  NumItemsParty("NWEARBAD",1)~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",2)TakePartyItemNum("NWEARBAD",1)AddexperienceParty(30000)GiveGoldForce(1000)~ EXIT
+  IF ~  !PartyHasItem("NWEARBAD")~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",2)~ EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",2)!Dead("NWSHALD1")~ THEN BEGIN 51 // from:
+~  Global("NWKendrackQuest","GLOBAL",2)!Dead("NWSHALD1")~ THEN BEGIN 51 // from:
   SAY @98
   IF ~~ THEN REPLY @87 GOTO 46
   IF ~~ THEN REPLY @88 GOTO 47
@@ -410,11 +410,11 @@ END
 
 IF ~~ THEN BEGIN 52 // from: 51.4
   SAY @99
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",3)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",3)EraseJournalEntry(@96692)~ UNSOLVED_JOURNAL @96693 EXIT
 END
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",3)~ THEN BEGIN 53 // from:
+~  Global("NWKendrackQuest","GLOBAL",3)~ THEN BEGIN 53 // from:
   SAY @100
   IF ~~ THEN REPLY @101 GOTO 54
   IF ~~ THEN REPLY @102 GOTO 55
@@ -441,7 +441,7 @@ END
 
 IF ~~ THEN BEGIN 56 // from: 53.3
   SAY @108
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",66)EraseJournalEntry(@96693)~ SOLVED_JOURNAL @96790 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",66)EraseJournalEntry(@96693)~ SOLVED_JOURNAL @96790 EXIT
 END
 
 IF ~~ THEN BEGIN 57 // from: 53.4
@@ -451,34 +451,34 @@ END
 
 IF ~~ THEN BEGIN 58 // from: 53.5
   SAY @111
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",66)~ EXIT
 END
 
 IF WEIGHT #6 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",66)!Dead("NWSHALD2")~ THEN BEGIN 59 // from:
+~  Global("NWKendrackQuest","GLOBAL",66)!Dead("NWSHALD2")~ THEN BEGIN 59 // from:
   SAY @112
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #7 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",66)Dead("NWSHALD2")~ THEN BEGIN 60 // from:
+~  Global("NWKendrackQuest","GLOBAL",66)Dead("NWSHALD2")~ THEN BEGIN 60 // from:
   SAY @113
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",4)~ THEN BEGIN 61 // from:
+~  Global("NWKendrackQuest","GLOBAL",4)~ THEN BEGIN 61 // from:
   SAY @114
   IF ~~ THEN GOTO 62
 END
 
 IF ~~ THEN BEGIN 62 // from: 61.1
   SAY @115
-  IF ~~ THEN DO ~SetGlobal("KendrackQuest","GLOBAL",5)TakePartyItem("NWEARBAD")AddexperienceParty(100000)GiveGoldForce(1000)ReputationInc(1)EraseJournalEntry(@96693)~ SOLVED_JOURNAL @96797 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWKendrackQuest","GLOBAL",5)TakePartyItem("NWEARBAD")AddexperienceParty(100000)GiveGoldForce(1000)ReputationInc(1)EraseJournalEntry(@96693)~ SOLVED_JOURNAL @96797 EXIT
 END
 
 IF WEIGHT #9 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("KendrackQuest","GLOBAL",5)~ THEN BEGIN 63 // from:
+~  Global("NWKendrackQuest","GLOBAL",5)~ THEN BEGIN 63 // from:
   SAY @117
   IF ~~ THEN EXIT
 END

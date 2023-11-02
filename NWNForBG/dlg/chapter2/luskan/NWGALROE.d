@@ -5,9 +5,9 @@ BEGIN ~NWGALROE~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)CheckStatGT(LastTalkedToBy,13,CHR)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @2 GOTO 4
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6
@@ -41,9 +41,9 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
   SAY @16
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @6 GOTO 8
   IF ~~ THEN REPLY @7 GOTO 9
   IF ~~ THEN REPLY @8 GOTO 10
@@ -66,9 +66,9 @@ END
 
 IF ~~ THEN BEGIN 8 // from: 0.1
   SAY @20
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @22 GOTO 16
   IF ~~ THEN REPLY @8 GOTO 10
@@ -76,9 +76,9 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 0.1
   SAY @23
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @22 GOTO 16
   IF ~~ THEN REPLY @8 GOTO 10
@@ -123,9 +123,9 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 0.1
   SAY @32
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @22 GOTO 16
   IF ~~ THEN REPLY @8 GOTO 10
@@ -133,9 +133,9 @@ END
 
 IF ~~ THEN BEGIN 15 // from: 0.1
   SAY @33
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @22 GOTO 16
   IF ~~ THEN REPLY @8 GOTO 10
 END
@@ -143,9 +143,9 @@ END
 IF ~~ THEN BEGIN 16 // from: 0.1
   SAY @34
   IF ~~ THEN REPLY @35 GOTO 23
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @8 GOTO 10
 END
@@ -202,9 +202,9 @@ END
 
 IF ~~ THEN BEGIN 23 // from: 0.1
   SAY @47
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~~ THEN REPLY @21 GOTO 15
   IF ~~ THEN REPLY @8 GOTO 10
 END
@@ -252,9 +252,9 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)CheckStatLT(LastTalkedToBy,14,CHR)CheckStatGT(LastTalkedToBy,8,CHR)~ THEN BEGIN 30 // from:
   SAY @53
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @2 GOTO 4
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6
@@ -266,9 +266,9 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  NumTimesTalkedTo(0)CheckStatLT(LastTalkedToBy,9,CHR)~ THEN BEGIN 31 // from:
   SAY @54
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @2 GOTO 4
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6
@@ -280,9 +280,9 @@ END
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)CheckStatGT(LastTalkedToBy,13,CHR)Global("QuestDone","LOCALS",0)~ THEN BEGIN 32 // from:
   SAY @55
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @2 GOTO 4
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6
@@ -294,9 +294,9 @@ END
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)CheckStatLT(LastTalkedToBy,14,CHR)CheckStatGT(LastTalkedToBy,8,CHR)Global("QuestDone","LOCALS",0)~ THEN BEGIN 33 // from:
   SAY @56
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @2 GOTO 4
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6
@@ -308,9 +308,9 @@ END
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
 ~  !NumTimesTalkedTo(0)CheckStatLT(LastTalkedToBy,9,CHR)Global("QuestDone","LOCALS",0)~ THEN BEGIN 34 // from:
   SAY @57
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("YvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",1)~ THEN REPLY @1 GOTO 1
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("QuestDone","LOCALS",0)Global("Talked","LOCALS",0)~ THEN REPLY @1 GOTO 2
+  IF ~  Global("NWYvetteQuest","GLOBAL",1)Global("Talked","LOCALS",1)Global("QuestDone","LOCALS",0)~ THEN REPLY @1 GOTO 3
   IF ~  ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)~ THEN REPLY @2 GOTO 4
   IF ~  ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)~ THEN REPLY @2 GOTO 5
   IF ~~ THEN REPLY @3 GOTO 6

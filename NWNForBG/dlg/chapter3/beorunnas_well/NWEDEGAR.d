@@ -3,10 +3,10 @@
 BEGIN ~NWEDEGAR~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RolganConvicted","GLOBAL",0)Global("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWRolganConvicted","GLOBAL",0)Global("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("RolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
+  IF ~  Global("NWRolgansTrial","GLOBAL",1)~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -55,13 +55,13 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 6.2
   SAY @15
-  IF ~~ THEN DO ~SetGlobal("TrialBroken","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWTrialBroken","GLOBAL",2)~ EXIT
 END
 
 // ----------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganConvicted","GLOBAL",0)~ THEN BEGIN 10 // from:
+~  GlobalGT("NWRolganConvicted","GLOBAL",0)~ THEN BEGIN 10 // from:
   SAY @16
   IF ~~ THEN GOTO 11
 END
@@ -75,7 +75,7 @@ END
 // ----------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("RolganAcquitted","GLOBAL",0)~ THEN BEGIN 12 // from:
+~  GlobalGT("NWRolganAcquitted","GLOBAL",0)~ THEN BEGIN 12 // from:
   SAY @18
   IF ~~ THEN GOTO 13
 END

@@ -72,16 +72,16 @@ END
 IF ~~ THEN BEGIN 10 // from: 6.2
   SAY @20
   IF ~~ THEN REPLY @21 GOTO 12
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY @22 GOTO 13
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("NWFORMOA")~ THEN REPLY @22 GOTO 14
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)Dead("NWFORMOA")~ THEN REPLY @22 GOTO 13
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",1)~ THEN REPLY @22 GOTO 13
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)!Dead("NWFORMOA")~ THEN REPLY @22 GOTO 14
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)Dead("NWFORMOA")~ THEN REPLY @22 GOTO 13
   IF ~~ THEN REPLY @23 GOTO 19
 END
 
 IF ~~ THEN BEGIN 11 // from: 9.1
   SAY @24
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @25 GOTO 15
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @25 GOTO 16
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @25 GOTO 15
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @25 GOTO 16
   IF ~~ THEN REPLY @26 GOTO 17
   IF ~~ THEN REPLY @6 GOTO 7
 END
@@ -139,9 +139,9 @@ END
 IF ~~ THEN BEGIN 19 // from: 10.5
   SAY @35
   IF ~~ THEN REPLY @21 GOTO 12
-  IF ~  GlobalGT("FormosaQuest","GLOBAL",1)~ THEN REPLY @22 GOTO 13
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)!Dead("NWFORMOA")~ THEN REPLY @22 GOTO 14
-  IF ~  GlobalLT("FormosaQuest","GLOBAL",2)Dead("NWFORMOA")~ THEN REPLY @22 GOTO 13
+  IF ~  GlobalGT("NWFormosaQuest","GLOBAL",1)~ THEN REPLY @22 GOTO 13
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)!Dead("NWFORMOA")~ THEN REPLY @22 GOTO 14
+  IF ~  GlobalLT("NWFormosaQuest","GLOBAL",2)Dead("NWFORMOA")~ THEN REPLY @22 GOTO 13
   IF ~~ THEN REPLY @13 GOTO 9
   IF ~~ THEN REPLY @14 GOTO 10
   IF ~~ THEN REPLY @6 GOTO 7

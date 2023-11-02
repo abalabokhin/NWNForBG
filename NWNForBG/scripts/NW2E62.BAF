@@ -1,8 +1,8 @@
 IF
-	GlobalLT("LuscanTower","GLOBAL",5)
+	GlobalLT("NWLuscanTower","GLOBAL",5)
 THEN
 	RESPONSE #100
-		SetGlobal("LuscanTower","GLOBAL",5)
+		SetGlobal("NWLuscanTower","GLOBAL",5)
 END
 
 IF
@@ -18,11 +18,11 @@ END
 
 IF
 	InMyArea("NWNYPHIH")  // ???????
-	Global("NyphithusQuest","GLOBAL",2)
-	Global("NyphithusQuest","MYAREA",0)
+	Global("NWNyphithusQuest","GLOBAL",2)
+	Global("NWNyphithusQuest","MYAREA",0)
 THEN
 	RESPONSE #100
-		SetGlobal("NyphithusQuest","MYAREA",1)
+		SetGlobal("NWNyphithusQuest","MYAREA",1)
 		ActionOverride("NWNYPHIH",ForceSpell(Myself,DRYAD_TELEPORT))  // SPWI995.SPL (????? ?????????)
 END
 

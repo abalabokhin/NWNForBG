@@ -28,10 +28,10 @@ END
 //END
 
 //IF
-//	Global("WanevQuest","GLOBAL",5)
+//	Global("NWWanevQuest","GLOBAL",5)
 //THEN
 //	RESPONSE #100
-//	        SetGlobal("WanevQuest","GLOBAL",6)
+//	        SetGlobal("NWWanevQuest","GLOBAL",6)
 //		ClearAllActions()
 //		StartCutSceneMode()
 //		StartCutScene("Телепорт наружу")
@@ -62,21 +62,21 @@ END
 
 IF ~~ THEN BEGIN 5 // from: 3.1
   SAY @9
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("NWWanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
   IF ~~ THEN REPLY @11 GOTO 7
   IF ~  !PartyHasItem("NWWANEVH")~ THEN REPLY @12 GOTO 8
   IF ~  PartyHasItem("NWWANEVH")~ THEN REPLY @12 GOTO 51
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~  GlobalLT("NWAelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
   IF ~~ THEN REPLY @14 GOTO 4
 END
 
 IF ~~ THEN BEGIN 6 // from: 3.2
   SAY @15
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("NWWanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
   IF ~~ THEN REPLY @11 GOTO 7
   IF ~  !PartyHasItem("NWWANEVH")~ THEN REPLY @12 GOTO 8
   IF ~  PartyHasItem("NWWANEVH")~ THEN REPLY @12 GOTO 51
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~  GlobalLT("NWAelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
   IF ~~ THEN REPLY @14 GOTO 4
 END
 
@@ -108,8 +108,8 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 10.1 11.1
   SAY @23
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("NWWanevGem","GLOBAL",0)~ THEN REPLY @10 GOTO 12
+  IF ~  GlobalLT("NWAelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
   IF ~  !PartyHasItem("NWWANEVH")~ THEN REPLY @12 GOTO 8
   IF ~  PartyHasItem("NWWANEVH")~ THEN REPLY @12 GOTO 51
   IF ~~ THEN REPLY @14 GOTO 4
@@ -186,14 +186,14 @@ END
 IF ~~ THEN BEGIN 22 // from: 20.1
   SAY @46
   IF ~  PartyHasItem("NWWANEVH")~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)~ UNSOLVED_JOURNAL @100242 EXIT
+SetGlobal("NWWanevQuest","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)~ UNSOLVED_JOURNAL @100242 EXIT
   IF ~  !PartyHasItem("NWWANEVH")~ THEN GOTO 49
 END
 
 IF ~~ THEN BEGIN 49 // from: 22.2
   SAY @48
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)GiveItemCreate("NWWANEVH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @100242 EXIT
+SetGlobal("NWWanevQuest","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)GiveItemCreate("NWWANEVH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @100242 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.2
@@ -208,24 +208,24 @@ END
 IF ~~ THEN BEGIN 24 // from: 20.3
   SAY @50
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",2)GiveItem("NWVSCROL",LastTalkedToBy)GiveItemCreate("NWWANEVH",LastTalkedToBy,1,0,0)~ EXIT
+SetGlobal("NWWanevQuest","GLOBAL",2)GiveItem("NWVSCROL",LastTalkedToBy)GiveItemCreate("NWWANEVH",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 50 // from: 20.4
   SAY @51
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",2)GiveItem("NWVSCROL",LastTalkedToBy)~ EXIT
+SetGlobal("NWWanevQuest","GLOBAL",2)GiveItem("NWVSCROL",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 20.2
   SAY @46
-  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)~ UNSOLVED_JOURNAL @100242 EXIT
+  IF ~~ THEN DO ~ClearAllActions()SetGlobal("NWWanevQuest","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)~ UNSOLVED_JOURNAL @100242 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 20.5
   SAY @51
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest","GLOBAL",2)GiveItem("NWVSCROL",LastTalkedToBy)~ EXIT
+SetGlobal("NWWanevQuest","GLOBAL",2)GiveItem("NWVSCROL",LastTalkedToBy)~ EXIT
 END
 
 IF ~~ THEN BEGIN 52 // from: 14.1 15.1
@@ -239,7 +239,7 @@ END
 IF ~~ THEN BEGIN 53 // from: 14.1 15.1
   SAY @54
   IF ~  PartyHasItem("NWWANEVH")~ THEN REPLY @55 DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)~ UNSOLVED_JOURNAL @100243 EXIT
+SetGlobal("NWWanevQuest2","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)~ UNSOLVED_JOURNAL @100243 EXIT
   IF ~  !PartyHasItem("NWWANEVH")~ THEN REPLY @55 GOTO 54
   IF ~  !PartyHasItem("NWWANEVH")~ THEN REPLY @45 GOTO 8
   IF ~  PartyHasItem("NWWANEVH")~ THEN REPLY @45 GOTO 51
@@ -248,17 +248,17 @@ END
 IF ~~ THEN BEGIN 54 // from: 14.1 15.1
   SAY @48
   IF ~~ THEN DO ~ClearAllActions()SetGlobal("Attack","LOCALS",3)
-SetGlobal("WanevQuest2","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)GiveItemCreate("NWWANEVH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @100243 EXIT
+SetGlobal("NWWanevQuest2","GLOBAL",1)GiveItem("NWVSCROL",LastTalkedToBy)GiveItemCreate("NWWANEVH",LastTalkedToBy,1,0,0)~ UNSOLVED_JOURNAL @100243 EXIT
 END
 
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("WanevQuest","GLOBAL",0)Global("WanevQuest2","GLOBAL",0)Global("Attack","LOCALS",3)~ THEN BEGIN 27 // from:
+~  Global("NWWanevQuest","GLOBAL",0)Global("NWWanevQuest2","GLOBAL",0)Global("Attack","LOCALS",3)~ THEN BEGIN 27 // from:
   SAY @57
-  IF ~  GlobalGT("AelaithQuest","GLOBAL",0)Global("WanevGem","GLOBAL",0)Global("KnowAboutGem","LOCALS",0)~ THEN REPLY @10 GOTO 12
+  IF ~  GlobalGT("NWAelaithQuest","GLOBAL",0)Global("NWWanevGem","GLOBAL",0)Global("KnowAboutGem","LOCALS",0)~ THEN REPLY @10 GOTO 12
   IF ~  Global("KnowAboutGem","LOCALS",1)~ THEN REPLY @58 GOTO 28
-  IF ~  GlobalLT("AelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
+  IF ~  GlobalLT("NWAelaithQuest","GLOBAL",2)Global("KnowAboutStairs","MYAREA",1)~ THEN REPLY @13 GOTO 52
   IF ~~ THEN REPLY @59 GOTO 4
   IF ~~ THEN REPLY @60 GOTO 29
 END
@@ -276,7 +276,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("WanevQuest","GLOBAL",2)Global("WanevQuest2","GLOBAL",0)~ THEN BEGIN 30 // from:
+~  Global("NWWanevQuest","GLOBAL",2)Global("NWWanevQuest2","GLOBAL",0)~ THEN BEGIN 30 // from:
   SAY @63
   IF ~~ THEN REPLY @41 GOTO 31
   IF ~~ THEN REPLY @42 GOTO 32
@@ -286,7 +286,7 @@ END
 
 IF ~~ THEN BEGIN 31 // from: 30.1
   SAY @46
-  IF ~~ THEN DO ~ClearAllActions()SetGlobal("WanevQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @100242 EXIT
+  IF ~~ THEN DO ~ClearAllActions()SetGlobal("NWWanevQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @100242 EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 30.2
@@ -303,11 +303,11 @@ END
 // ---------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)Global("WanevQuest","GLOBAL",1)Global("WanevQuest","GLOBAL",3)Global("WanevQuest2","GLOBAL",0)~ THEN BEGIN 34// from:
+~  OR(2)Global("NWWanevQuest","GLOBAL",1)Global("NWWanevQuest","GLOBAL",3)Global("NWWanevQuest2","GLOBAL",0)~ THEN BEGIN 34// from:
   SAY @64
-  IF ~  !Global("WanevQuest","GLOBAL",3)~ THEN REPLY @65 GOTO 35
+  IF ~  !Global("NWWanevQuest","GLOBAL",3)~ THEN REPLY @65 GOTO 35
   IF ~~ THEN REPLY @66 GOTO 36
-  IF ~  Global("WanevQuest","GLOBAL",3)~ THEN REPLY @67 GOTO 37
+  IF ~  Global("NWWanevQuest","GLOBAL",3)~ THEN REPLY @67 GOTO 37
 END
 
 IF ~~ THEN BEGIN 35 // from: 34.1
@@ -365,7 +365,7 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",5)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -375,7 +375,7 @@ END
 
 IF ~~ THEN BEGIN 45 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",4)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -385,7 +385,7 @@ END
 
 IF ~~ THEN BEGIN 46 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",5)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -395,7 +395,7 @@ END
 
 IF ~~ THEN BEGIN 47 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",4)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -407,7 +407,7 @@ END
 // ---------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("WanevQuest","GLOBAL",3)~ THEN BEGIN 48// from:
+~  GlobalGT("NWWanevQuest","GLOBAL",3)~ THEN BEGIN 48// from:
   SAY @57
   IF ~~ THEN EXIT
 END
@@ -415,11 +415,11 @@ END
 // -----------------------------------------
 
 IF WEIGHT #8 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("WanevQuest2","GLOBAL",0)GlobalLT("WanevQuest2","GLOBAL",3)~ THEN BEGIN 55// from:
+~  GlobalGT("NWWanevQuest2","GLOBAL",0)GlobalLT("NWWanevQuest2","GLOBAL",3)~ THEN BEGIN 55// from:
   SAY @64
-  IF ~  !Global("WanevQuest2","GLOBAL",2)~ THEN REPLY @65 GOTO 35
+  IF ~  !Global("NWWanevQuest2","GLOBAL",2)~ THEN REPLY @65 GOTO 35
   IF ~~ THEN REPLY @66 GOTO 36
-  IF ~  Global("WanevQuest2","GLOBAL",2)~ THEN REPLY @84 GOTO 56
+  IF ~  Global("NWWanevQuest2","GLOBAL",2)~ THEN REPLY @84 GOTO 56
 END
 
 IF ~~ THEN BEGIN 56 // from: 34.3
@@ -449,8 +449,8 @@ END
 
 IF ~~ THEN BEGIN 60 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
-SetGlobal("WanevQuest2","GLOBAL",0)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",5)
+SetGlobal("NWWanevQuest2","GLOBAL",0)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -461,8 +461,8 @@ END
 
 IF ~~ THEN BEGIN 61 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
-SetGlobal("WanevQuest2","GLOBAL",0)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",4)
+SetGlobal("NWWanevQuest2","GLOBAL",0)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -473,8 +473,8 @@ END
 
 IF ~~ THEN BEGIN 62 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",5)
-SetGlobal("WanevQuest2","GLOBAL",0)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",5)
+SetGlobal("NWWanevQuest2","GLOBAL",0)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)
@@ -484,8 +484,8 @@ END
 
 IF ~~ THEN BEGIN 63 // from: 42.1
   SAY @82
-  IF ~~ THEN DO ~SetGlobal("WanevQuest","GLOBAL",4)
-SetGlobal("WanevQuest2","GLOBAL",0)
+  IF ~~ THEN DO ~SetGlobal("NWWanevQuest","GLOBAL",4)
+SetGlobal("NWWanevQuest2","GLOBAL",0)
 GiveItemCreate("NWWANPRE",LastTalkedToBy,1,1,1)
 GiveItemCreate("Wand10",LastTalkedToBy,8,0,0)
 GiveItemCreate("NWSCRX17",LastTalkedToBy,1,1,0)

@@ -3,7 +3,7 @@
 BEGIN ~NWYUSAM~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("JusamJob","GLOBAL",0)!Class(LastTalkedToBy,DRUID_ALL)!Class(LastTalkedToBy,RANGER_ALL)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWJusamJob","GLOBAL",0)!Class(LastTalkedToBy,DRUID_ALL)!Class(LastTalkedToBy,RANGER_ALL)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  IsGabber(Player1)~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -46,14 +46,14 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.1
   SAY @13
-  IF ~  Global("JusamJob","GLOBAL",1)~ THEN GOTO 7
-  IF ~  Global("JusamJob","GLOBAL",0)~ THEN GOTO 8
+  IF ~  Global("NWJusamJob","GLOBAL",1)~ THEN GOTO 7
+  IF ~  Global("NWJusamJob","GLOBAL",0)~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 7 // from: 6.1
   SAY @14
   IF ~  Dead("NWZOKAN")~ THEN REPLY @15 GOTO 9
-  IF ~  !Dead("NWZOKAN")Global("ZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
+  IF ~  !Dead("NWZOKAN")Global("NWZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
   IF ~  !Dead("NWZOKAN")PartyHasItem("NWMISC72")~ THEN REPLY @17 GOTO 11
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
@@ -62,7 +62,7 @@ END
 IF ~~ THEN BEGIN 8 // from: 7.1
   SAY @18
   IF ~  Dead("NWZOKAN")~ THEN REPLY @15 GOTO 9
-  IF ~  !Dead("NWZOKAN")Global("ZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
+  IF ~  !Dead("NWZOKAN")Global("NWZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
   IF ~  !Dead("NWZOKAN")PartyHasItem("NWMISC72")~ THEN REPLY @17 GOTO 11
   IF ~~ THEN REPLY @19 GOTO 12
   IF ~~ THEN REPLY @4 GOTO 4
@@ -71,7 +71,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 7.1
   SAY @20
-  IF ~~ THEN DO ~SetGlobal("JusamJob","GLOBAL",2)AddexperienceParty(52000)GiveItemCreate("NWYUSPRE",LastTalkedToBy,0,0,0)EraseJournalEntry(@105420)~ SOLVED_JOURNAL @105421 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJusamJob","GLOBAL",2)AddexperienceParty(52000)GiveItemCreate("NWYUSPRE",LastTalkedToBy,0,0,0)EraseJournalEntry(@105420)~ SOLVED_JOURNAL @105421 EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 7.2
@@ -84,7 +84,7 @@ END
 
 IF ~~ THEN BEGIN 11 // from: 7.3
   SAY @25
-  IF ~~ THEN DO ~TakePartyItem("NWMISC72")SetGlobal("JusamJob","GLOBAL",2)AddexperienceParty(104000)GiveItemCreate("NWYUSPRE",LastTalkedToBy,0,0,0)EraseJournalEntry(@105420)~ SOLVED_JOURNAL @105422 EXIT
+  IF ~~ THEN DO ~TakePartyItem("NWMISC72")SetGlobal("NWJusamJob","GLOBAL",2)AddexperienceParty(104000)GiveItemCreate("NWYUSPRE",LastTalkedToBy,0,0,0)EraseJournalEntry(@105420)~ SOLVED_JOURNAL @105422 EXIT
 END
 
 IF ~~ THEN BEGIN 12 // from: 8.4
@@ -129,7 +129,7 @@ END
 IF ~~ THEN BEGIN 18 // from: 15.1
   SAY @37
   IF ~  Dead("NWZOKAN")~ THEN REPLY @15 GOTO 9
-  IF ~  !Dead("NWZOKAN")Global("ZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
+  IF ~  !Dead("NWZOKAN")Global("NWZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
   IF ~  !Dead("NWZOKAN")PartyHasItem("NWMISC72")~ THEN REPLY @17 GOTO 11
   IF ~~ THEN REPLY @38 GOTO 21
   IF ~~ THEN REPLY @30 GOTO 17
@@ -147,13 +147,13 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 18.4
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("JusamJob","GLOBAL",1)~ UNSOLVED_JOURNAL @105420 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJusamJob","GLOBAL",1)~ UNSOLVED_JOURNAL @105420 EXIT
 END
 
 // ----------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("JusamJob","GLOBAL",0)!Class(LastTalkedToBy,DRUID_ALL)!Class(LastTalkedToBy,RANGER_ALL)~ THEN BEGIN 22 // from:
+~  NumTimesTalkedTo(0)Global("NWJusamJob","GLOBAL",0)!Class(LastTalkedToBy,DRUID_ALL)!Class(LastTalkedToBy,RANGER_ALL)~ THEN BEGIN 22 // from:
   SAY @42
   IF ~~ THEN GOTO 23
 END
@@ -170,10 +170,10 @@ END
 // ----------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("JusamJob","GLOBAL",1)~ THEN BEGIN 24 // from:
+~  Global("NWJusamJob","GLOBAL",1)~ THEN BEGIN 24 // from:
   SAY @43
   IF ~  Dead("NWZOKAN")~ THEN REPLY @15 GOTO 9
-  IF ~  !Dead("NWZOKAN")Global("ZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
+  IF ~  !Dead("NWZOKAN")Global("NWZokanJob","GLOBAL",1)~ THEN REPLY @16 GOTO 10
   IF ~  !Dead("NWZOKAN")PartyHasItem("NWMISC72")~ THEN REPLY @17 GOTO 11
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
@@ -182,7 +182,7 @@ END
 // ----------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("JusamJob","GLOBAL",1)~ THEN BEGIN 25 // from:
+~  GlobalGT("NWJusamJob","GLOBAL",1)~ THEN BEGIN 25 // from:
   SAY @44
   IF ~~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
@@ -191,7 +191,7 @@ END
 // ----------------------------------------
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("JusamJob","GLOBAL",0)~ THEN BEGIN 26 // from:
+~  !NumTimesTalkedTo(0)Global("NWJusamJob","GLOBAL",0)~ THEN BEGIN 26 // from:
   SAY @45
   IF ~~ THEN REPLY @46 GOTO 27
   IF ~~ THEN REPLY @3 GOTO 3

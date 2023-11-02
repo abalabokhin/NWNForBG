@@ -119,8 +119,8 @@ END
 
 IF ~~ THEN BEGIN 14 // from: 5.1
   SAY @36
-  IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @37 DO ~SetGlobal("Bela_Rhaine","GLOBAL",1)~ GOTO 28
-  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @37 DO ~SetGlobal("Bela_Oreth","GLOBAL",1)~ GOTO 29
+  IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @37 DO ~SetGlobal("NWBela_Rhaine","GLOBAL",1)~ GOTO 28
+  IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @37 DO ~SetGlobal("NWBela_Oreth","GLOBAL",1)~ GOTO 29
   IF ~~ THEN REPLY @38 GOTO 30
   IF ~  Gender(LastTalkedToBy,MALE)~ THEN REPLY @39 GOTO 31
   IF ~  Gender(LastTalkedToBy,FEMALE)~ THEN REPLY @39 GOTO 32

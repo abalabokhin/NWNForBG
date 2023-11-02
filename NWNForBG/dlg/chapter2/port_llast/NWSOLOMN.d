@@ -46,12 +46,12 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 5.1
   SAY @17
-  IF ~~ THEN DO ~GiveItem("NWSOLRIG",Player1)SetGlobal("SolomonRing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~GiveItem("NWSOLRIG",Player1)SetGlobal("NWSolomonRing","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.2
   SAY @18
-  IF ~~ THEN DO ~GiveItem("NWSOLRIG",Player1)SetGlobal("SolomonRing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~GiveItem("NWSOLRIG",Player1)SetGlobal("NWSolomonRing","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8 // from: 5.3
@@ -63,7 +63,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 8.2
   SAY @23
-  IF ~~ THEN DO ~GiveItem("NWSOLRIG",Player1)SetGlobal("SolomonRing","GLOBAL",1)GivePartyGold(400)~ EXIT
+  IF ~~ THEN DO ~GiveItem("NWSOLRIG",Player1)SetGlobal("NWSolomonRing","GLOBAL",1)GivePartyGold(400)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10 // from: 8.3
@@ -82,64 +82,64 @@ END
 // -----------------------------------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  AreaCheck("NW2300")GlobalLT("SolomonRing","GLOBAL",3)~ THEN BEGIN 12 // from:
+~  AreaCheck("NW2300")GlobalLT("NWSolomonRing","GLOBAL",3)~ THEN BEGIN 12 // from:
   SAY @26
-  IF ~  OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @27 GOTO 13
-  IF ~  Global("SolomonRing","GLOBAL",0)~ THEN REPLY @27 GOTO 14
+  IF ~  OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @27 GOTO 13
+  IF ~  Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @27 GOTO 14
   IF ~~ THEN REPLY @28 GOTO 15
   IF ~~ THEN REPLY @29 GOTO 16
-  IF ~    OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @30 GOTO 13
-  IF ~    Global("SolomonRing","GLOBAL",0)~ THEN REPLY @30 GOTO 17
-  IF ~  OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @31 GOTO 13
-  IF ~  Global("SolomonRing","GLOBAL",0)~ THEN REPLY @31 GOTO 18
+  IF ~    OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @30 GOTO 13
+  IF ~    Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @30 GOTO 17
+  IF ~  OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @31 GOTO 13
+  IF ~  Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @31 GOTO 18
 END
 
 IF ~~ THEN BEGIN 13 // from: 12.1
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("SolomonRing","GLOBAL",3)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSolomonRing","GLOBAL",3)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 12.2
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("SolomonRing","GLOBAL",3)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSolomonRing","GLOBAL",3)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 12.3
   SAY @34
-  IF ~  OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @27 GOTO 13
-  IF ~  Global("SolomonRing","GLOBAL",0)~ THEN REPLY @27 GOTO 14
+  IF ~  OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @27 GOTO 13
+  IF ~  Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @27 GOTO 14
   IF ~~ THEN REPLY @29 GOTO 16
-  IF ~    OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @30 GOTO 13
-  IF ~    Global("SolomonRing","GLOBAL",0)~ THEN REPLY @30 GOTO 17
-  IF ~  OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @31 GOTO 13
-  IF ~  Global("SolomonRing","GLOBAL",0)~ THEN REPLY @31 GOTO 18
+  IF ~    OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @30 GOTO 13
+  IF ~    Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @30 GOTO 17
+  IF ~  OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @31 GOTO 13
+  IF ~  Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @31 GOTO 18
 END
 
 IF ~~ THEN BEGIN 16 // from: 12.4
   SAY @35
-  IF ~  OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @27 GOTO 13
-  IF ~  Global("SolomonRing","GLOBAL",0)~ THEN REPLY @27 GOTO 14
+  IF ~  OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @27 GOTO 13
+  IF ~  Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @27 GOTO 14
   IF ~~ THEN REPLY @28 GOTO 15
-  IF ~    OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @30 GOTO 13
-  IF ~    Global("SolomonRing","GLOBAL",0)~ THEN REPLY @30 GOTO 17
-  IF ~  OR(2)Global("SolomonRing","GLOBAL",1)Global("SolomonRing","GLOBAL",2)~ THEN REPLY @31 GOTO 13
-  IF ~  Global("SolomonRing","GLOBAL",0)~ THEN REPLY @31 GOTO 18
+  IF ~    OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @30 GOTO 13
+  IF ~    Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @30 GOTO 17
+  IF ~  OR(2)Global("NWSolomonRing","GLOBAL",1)Global("NWSolomonRing","GLOBAL",2)~ THEN REPLY @31 GOTO 13
+  IF ~  Global("NWSolomonRing","GLOBAL",0)~ THEN REPLY @31 GOTO 18
 END
 
 IF ~~ THEN BEGIN 17 // from: 12.6
   SAY @36
-  IF ~~ THEN DO ~SetGlobal("SolomonRing","GLOBAL",3)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSolomonRing","GLOBAL",3)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 12.6
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("SolomonRing","GLOBAL",3)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWSolomonRing","GLOBAL",3)EscapeArea()~ EXIT
 END
 
 // -------------------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("SolomonRing","GLOBAL",3)AreaCheck("NW2400")~ THEN BEGIN 19 // from:
+~  Global("NWSolomonRing","GLOBAL",3)AreaCheck("NW2400")~ THEN BEGIN 19 // from:
   SAY @38
   IF ~~ THEN DO ~SetGlobal("CultHostile","MYAREA",1)Shout(HELP101)Shout(HELP79)Shout(HELP83)Shout(HELP_ME_GROUP151)Enemy()~ EXIT
 END

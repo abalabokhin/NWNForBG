@@ -1,6 +1,6 @@
 IF
 	OR(2)
-		GlobalGT("NeurikQuest","GLOBAL",3)
+		GlobalGT("NWNeurikQuest","GLOBAL",3)
 		GlobalGT("String","MYAREA",0)
 	OR(2)
 		Entered([ANYONE])
@@ -11,7 +11,7 @@ THEN
 END
 
 IF
-	GlobalLT("NeurikQuest","GLOBAL",4)
+	GlobalLT("NWNeurikQuest","GLOBAL",4)
 	Global("String","MYAREA",0)
 	OR(2)
 		Entered([ANYONE])

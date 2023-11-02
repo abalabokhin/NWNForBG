@@ -3,7 +3,7 @@
 BEGIN ~NWBRILEY~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",0)!Global("AttemptingOpenChest","MYAREA",1)~ THEN BEGIN 0 // from:
+~  Global("NWOleffQuest","GLOBAL",0)!Global("AttemptingOpenChest","MYAREA",1)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -30,7 +30,7 @@ END
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",1)!Global("AttemptingOpenChest","MYAREA",1)Global("ChestOpen","MYAREA",0)~ THEN BEGIN 4 // from:
+~  Global("NWOleffQuest","GLOBAL",1)!Global("AttemptingOpenChest","MYAREA",1)Global("ChestOpen","MYAREA",0)~ THEN BEGIN 4 // from:
   SAY @7
   IF ~  PartyHasItem("NWOLEFF1")~ THEN REPLY @8 GOTO 5
   IF ~  !PartyHasItem("NWOLEFF1")~ THEN REPLY @8 GOTO 6
@@ -134,7 +134,7 @@ END
 // ---------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("OleffQuest","GLOBAL",1)!Global("AttemptingOpenChest","MYAREA",1)GlobalGT("ChestOpen","MYAREA",0)~ THEN BEGIN 18 // from:
+~  Global("NWOleffQuest","GLOBAL",1)!Global("AttemptingOpenChest","MYAREA",1)GlobalGT("ChestOpen","MYAREA",0)~ THEN BEGIN 18 // from:
   SAY @31
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END

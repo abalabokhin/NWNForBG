@@ -8,7 +8,7 @@
 BEGIN ~NWGAM~
 
 IF ~  NumberOfTimesTalkedTo(0)
-GlobalLT("KnowsAboutMatch","GLOBAL",3)
+GlobalLT("NWKnowsAboutMatch","GLOBAL",3)
 ~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
@@ -18,7 +18,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.0
   SAY @4
-  IF ~  Global("KnowsAboutMatch","GLOBAL",0)
+  IF ~  Global("NWKnowsAboutMatch","GLOBAL",0)
 ~ THEN REPLY @5 GOTO 3
   IF ~~ THEN REPLY @6 GOTO 4
   IF ~~ THEN REPLY @7 GOTO 5
@@ -61,7 +61,7 @@ END
 
 IF ~~ THEN BEGIN 7 // from: 6.0
   SAY @16
-  IF ~~ THEN DO ~SetGlobal("KnowsAboutMatch","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWKnowsAboutMatch","GLOBAL",1)
 ~ EXIT
 END
 
@@ -85,21 +85,21 @@ IF ~~ THEN BEGIN 10 // from: 3.3
 END
 
 IF ~  !NumberOfTimesTalkedTo(0)
-GlobalLT("KnowsAboutMatch","GLOBAL",2)
+GlobalLT("NWKnowsAboutMatch","GLOBAL",2)
 ~ THEN BEGIN 11 // from:
   SAY @21
   IF ~~ THEN EXIT
 END
 
 IF ~  !NumberOfTimesTalkedTo(0)
-Global("KnowsAboutMatch","GLOBAL",2)
+Global("NWKnowsAboutMatch","GLOBAL",2)
 ~ THEN BEGIN 12 // from:
   SAY @22
   IF ~~ THEN EXIT
 END
 
 IF ~  AreaCheck("NW2210")
-GlobalGT("KnowsAboutMatch","GLOBAL",2)
+GlobalGT("NWKnowsAboutMatch","GLOBAL",2)
 Global("Cure","LOCALS",0)
 ~ THEN BEGIN 13 // from:
   SAY @23
@@ -200,7 +200,7 @@ IF ~~ THEN BEGIN 21 // from: 20.1 20.0
 END
 
 IF ~  AreaCheck("NW2210")
-GlobalGT("KnowsAboutMatch","GLOBAL",2)
+GlobalGT("NWKnowsAboutMatch","GLOBAL",2)
 Global("Cure","LOCALS",2)
 ~ THEN BEGIN 22 // from:
   SAY @33
@@ -215,15 +215,15 @@ END
 IF ~~ THEN BEGIN 24 // from: 23.0
   SAY @40
   IF ~~ THEN DO ~SetGlobal("Cure","LOCALS",3)
-SetGlobal("GamCure","GLOBAL",1)
+SetGlobal("NWGamCure","GLOBAL",1)
 GiveItemCreate("Book07",LastTalkedToBy,1,0,0)
 EscapeArea()
 ~ EXIT
 END
 
 IF ~  AreaCheck("NW2201")
-GlobalGT("KnowsAboutMatch","GLOBAL",2)
-Global("GamCure","GLOBAL",1)
+GlobalGT("NWKnowsAboutMatch","GLOBAL",2)
+Global("NWGamCure","GLOBAL",1)
 ~ THEN BEGIN 25 // from:
   SAY @41
   IF ~~ THEN EXIT

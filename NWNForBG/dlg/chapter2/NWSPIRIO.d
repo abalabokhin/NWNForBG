@@ -27,7 +27,7 @@ EraseJournalEntry(@98273)ForceSpellRES("NWSPIRIO",Myself)~ UNSOLVED_JOURNAL @982
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !Global("Dialog","LOCALS",1)PartyHasItem("NWANTIDE")Global("SpiritSaved","GLOBAL",0)~ THEN BEGIN 4 // from:
+~  !Global("Dialog","LOCALS",1)PartyHasItem("NWANTIDE")Global("NWSpiritSaved","GLOBAL",0)~ THEN BEGIN 4 // from:
   SAY @7
   IF ~~ THEN REPLY @8 GOTO 2
   IF ~~ THEN REPLY @9 GOTO 5
@@ -104,20 +104,20 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWSPIRIO","GLOBAL",0)SetGlobal("SpiritSaved","GLOBAL",1)TakePartyItem("NWANTIDE")EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("SPRITE_IS_DEADNWSPIRIO","GLOBAL",0)SetGlobal("NWSpiritSaved","GLOBAL",1)TakePartyItem("NWANTIDE")EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)~ UNSOLVED_JOURNAL @98275 EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !Global("Dialog","LOCALS",1)!PartyHasItem("NWANTIDE")Global("SpiritSaved","GLOBAL",0)~ THEN BEGIN 18 // from:
+~  !Global("Dialog","LOCALS",1)!PartyHasItem("NWANTIDE")Global("NWSpiritSaved","GLOBAL",0)~ THEN BEGIN 18 // from:
   SAY @37
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !Global("Dialog","LOCALS",1)GlobalGT("SpiritSaved","GLOBAL",0)~ THEN BEGIN 19 // from:
+~  !Global("Dialog","LOCALS",1)GlobalGT("NWSpiritSaved","GLOBAL",0)~ THEN BEGIN 19 // from:
   SAY @38
   IF ~~ THEN EXIT
 END

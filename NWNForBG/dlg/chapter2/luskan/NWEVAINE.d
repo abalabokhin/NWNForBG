@@ -2,7 +2,7 @@
 
 BEGIN ~NWEVAINE~
 
-IF ~  NumTimesTalkedTo(0)Global("ElynwydQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+IF ~  NumTimesTalkedTo(0)Global("NWElynwydQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -81,12 +81,12 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 5.1
   SAY @23
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 // -------------------------------------------------------------------
 
-IF ~  NumTimesTalkedTo(0)Global("ElynwydQuest","GLOBAL",1)~ THEN BEGIN 11 // from:
+IF ~  NumTimesTalkedTo(0)Global("NWElynwydQuest","GLOBAL",1)~ THEN BEGIN 11 // from:
   SAY @0
   IF ~~ THEN REPLY @24 GOTO 12
   IF ~~ THEN REPLY @25 GOTO 12
@@ -121,17 +121,17 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 12.2
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",2)TakePartyItem("NWMISC58")ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",2)TakePartyItem("NWMISC58")ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 10.2
   SAY @36
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 11.1
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",2)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 11.2
@@ -149,12 +149,12 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 12.2
   SAY @41
-  IF ~~ THEN DO ~SetGlobal("ElynwydQuest","GLOBAL",2)IncrementGlobal("EvilNW1","GLOBAL",1)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWElynwydQuest","GLOBAL",2)IncrementGlobal("NWEvilNW1","GLOBAL",1)ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 // -------------------------------------------------------------------
 
-IF ~  !NumTimesTalkedTo(0)GlobalLT("ElynwydQuest","GLOBAL",2)~ THEN BEGIN 22 // from:
+IF ~  !NumTimesTalkedTo(0)GlobalLT("NWElynwydQuest","GLOBAL",2)~ THEN BEGIN 22 // from:
   SAY @42
   IF ~  PartyHasItem("NWMISC58")~ THEN REPLY @33 GOTO 16
   IF ~  PartyHasItem("NWMISC58")~ THEN REPLY @26 GOTO 16
@@ -165,7 +165,7 @@ END
 
 // -------------------------------------------------------------------
 
-IF ~  !NumTimesTalkedTo(0)GlobalGT("ElynwydQuest","GLOBAL",1)~ THEN BEGIN 22 // from:
+IF ~  !NumTimesTalkedTo(0)GlobalGT("NWElynwydQuest","GLOBAL",1)~ THEN BEGIN 22 // from:
   SAY @43
   IF ~~ THEN EXIT
 END

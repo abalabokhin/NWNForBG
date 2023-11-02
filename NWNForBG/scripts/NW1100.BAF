@@ -68,44 +68,44 @@ THEN
 END
 
 IF
-	Global("1100ADOOR","GLOBAL",1)
+	Global("NW1100ADOOR","GLOBAL",1)
 	OpenState("Door1",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("1100ADOOR","GLOBAL",0)
+		SetGlobal("NW1100ADOOR","GLOBAL",0)
 END
 
 IF
-	Global("1100ADOOR","GLOBAL",1)
+	Global("NW1100ADOOR","GLOBAL",1)
 	OpenState("Door1",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("1100ADOOR","GLOBAL",0)
+		SetGlobal("NW1100ADOOR","GLOBAL",0)
 		OpenDoor("Door1")
 END
 
 IF
-	Global("1100BDOOR","GLOBAL",1)
+	Global("NW1100BDOOR","GLOBAL",1)
 	OpenState("Door3",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("1100BDOOR","GLOBAL",0)
+		SetGlobal("NW1100BDOOR","GLOBAL",0)
 END
 
 IF
-	Global("1100BDOOR","GLOBAL",1)
+	Global("NW1100BDOOR","GLOBAL",1)
 	OpenState("Door3",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("1100BDOOR","GLOBAL",0)
+		SetGlobal("NW1100BDOOR","GLOBAL",0)
 		OpenDoor("Door3")
 END
 
 IF
-	Global("Aqueducts","GLOBAL",1)
+	Global("NWAqueducts","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("Aqueducts","GLOBAL",2)
+		SetGlobal("NWAqueducts","GLOBAL",2)
 		TriggerActivation("DockInfo",FALSE)
 		TriggerActivation("To1119",TRUE)
 END

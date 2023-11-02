@@ -1,6 +1,6 @@
 IF
-	Global("OleffQuest","GLOBAL",1)
-	Global("GillesQuest","GLOBAL",0)
+	Global("NWOleffQuest","GLOBAL",1)
+	Global("NWGillesQuest","GLOBAL",0)
 	NumTimesTalkedTo(0)
 	See(Player1)
 	Range(Player1,10)
@@ -11,8 +11,8 @@ THEN
 END
 
 IF
-	Global("OleffQuest","GLOBAL",2)
-	GlobalGT("GillesQuest","GLOBAL",0)
+	Global("NWOleffQuest","GLOBAL",2)
+	GlobalGT("NWGillesQuest","GLOBAL",0)
 	See(Player1)
 	Range(Player1,10)
 	!Allegiance(Myself,ENEMY)

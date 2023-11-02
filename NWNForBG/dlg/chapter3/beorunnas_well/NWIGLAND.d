@@ -3,7 +3,7 @@
 BEGIN ~NWIGLAND~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RolgansTrial","GLOBAL",2)Global("IslandDialogue","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWRolgansTrial","GLOBAL",2)Global("NWIslandDialogue","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN GOTO 1
 END
@@ -26,7 +26,7 @@ END
 // ---------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("IslandDialogue","GLOBAL",1)~ THEN BEGIN 4 // from:
+~  Global("NWIslandDialogue","GLOBAL",1)~ THEN BEGIN 4 // from:
   SAY @4
   IF ~~ THEN EXTERN ~NWZED~ 27
 END
@@ -38,6 +38,6 @@ END
 
 IF ~~ THEN BEGIN 6 // from: NWZED 28.5
   SAY @6
-  IF ~~ THEN DO ~SetGlobal("IslandDialogue","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWIslandDialogue","GLOBAL",2)~ EXIT
 END
 

@@ -1,9 +1,9 @@
 IF
-	Global("Nw4002Entered","GLOBAL",1)
+	Global("NWNw4002Entered","GLOBAL",1)
 	OpenState("Carpet",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("Nw4002Entered","GLOBAL",2)
+		SetGlobal("NWNw4002Entered","GLOBAL",2)
 		OpenDoor("Carpet")
 		TriggerActivation("To4004",TRUE)
 END

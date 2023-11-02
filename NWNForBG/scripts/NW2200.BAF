@@ -1,5 +1,5 @@
 IF
-	Global("GoToLuskan","GLOBAL",1)
+	Global("NWGoToLuskan","GLOBAL",1)
 	Global("SergeantSpawn","NW2200",0)  // ??????? ??????
 THEN
 	RESPONSE #100
@@ -9,7 +9,7 @@ END
 
 IF
 	CombatCounter(0)
-	GlobalGT("GoToLuskan","GLOBAL",0)
+	GlobalGT("NWGoToLuskan","GLOBAL",0)
 	Global("SpawnDarktong","NW2200",0)  // ??????? ??????
 	!Dead("NWDARKTG")  // ????????? ????????
 THEN
@@ -20,7 +20,7 @@ END
 
 IF
 	OR(2)
-		Global("SearchNeva","GLOBAL",3)
+		Global("NWSearchNeva","GLOBAL",3)
 		Dead("NWNEVA")  // ????
 	InMyArea("NWJAHEL")  // ???????
 THEN
@@ -30,7 +30,7 @@ END
 
 IF
 	OR(2)
-		Global("SearchNeva","GLOBAL",3)
+		Global("NWSearchNeva","GLOBAL",3)
 		Dead("NWNEVA")  // ????
 	InMyArea("NWTARAN")  // ??????
 THEN
@@ -41,26 +41,26 @@ END
 IF
 	Gender(Player1,MALE)
 	Dead("NWSOLOMN")  // ???????
-	Global("JahelSpawn","GLOBAL",0)
+	Global("NWJahelSpawn","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("JahelSpawn","GLOBAL",1)
+		SetGlobal("NWJahelSpawn","GLOBAL",1)
 		CreateCreature("NWJAHEL",[4560.3190],2)  // ???????
 END
 
 IF
 	Gender(Player1,FEMALE)
 	Dead("NWSOLOMN")  // ???????
-	Global("TaranSpawn","GLOBAL",0)
+	Global("NWTaranSpawn","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("TaranSpawn","GLOBAL",1)
+		SetGlobal("NWTaranSpawn","GLOBAL",1)
 		CreateCreature("NWTARAN",[4560.3190],2)  // ??????
 END
 
 IF
 	Global("LuskanGate","NW2200",0)  // ??????? ??????
-	Global("GoToLuskan","GLOBAL",2)
+	Global("NWGoToLuskan","GLOBAL",2)
 THEN
 	RESPONSE #100
 		PlaySound("NWIRONG")
@@ -71,7 +71,7 @@ END
 
 IF
 	Global("MineDoor","NW2200",0)  // ??????? ??????
-	Global("KendrackQuest","GLOBAL",3)
+	Global("NWKendrackQuest","GLOBAL",3)
 THEN
 	RESPONSE #100
 		PlaySound("EFF_E07")

@@ -28,7 +28,7 @@ END
 
 IF
 	Global("BrazierDestroyed","MYAREA",3)
-	!Global("ArklemQuest","GLOBAL",2)
+	!Global("NWArklemQuest","GLOBAL",2)
 THEN
 	RESPONSE #100
 		ClearAllActions()

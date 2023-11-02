@@ -13,12 +13,12 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  Global("DaelanQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("DaelanQuest","GLOBAL",1)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 14
-  IF ~  Global("DaelanQuest","GLOBAL",2)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 25
-  IF ~  Global("DaelanQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 34
-  IF ~  OR(2)GlobalGT("DaelanQuest","GLOBAL",3)GlobalTimerNotExpired("DaelanTimer","LOCALS")!Global("DaelanQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 41
-  IF ~  Global("DaelanQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 42
+  IF ~  Global("NWDaelanQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWDaelanQuest","GLOBAL",1)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 14
+  IF ~  Global("NWDaelanQuest","GLOBAL",2)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 25
+  IF ~  Global("NWDaelanQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 34
+  IF ~  OR(2)GlobalGT("NWDaelanQuest","GLOBAL",3)GlobalTimerNotExpired("DaelanTimer","LOCALS")!Global("NWDaelanQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 41
+  IF ~  Global("NWDaelanQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 42
   IF ~  Global("NWNDocksDone","GLOBAL",0)~ THEN REPLY @7 GOTO 43
   IF ~  GlobalGT("NWNDocksDone","GLOBAL",0)~ THEN REPLY @7 GOTO 44
 END
@@ -81,12 +81,12 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 10.1 11.1
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest","GLOBAL",1)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest","GLOBAL",1)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13 // from: 10.2 11.2
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14 // from: 1.2
@@ -150,7 +150,7 @@ END
 
 IF ~~ THEN BEGIN 24 // from: 23.1 23.2
   SAY @49
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest","GLOBAL",2)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest","GLOBAL",2)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 1.3
@@ -222,18 +222,18 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 34.2
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 34.3
   SAY @72
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 36.1
   SAY @73
   IF ~~ THEN DO ~
-    SetGlobal("DaelanQuest","GLOBAL",4)
+    SetGlobal("NWDaelanQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -298,12 +298,12 @@ END
 
 IF ~~ THEN BEGIN 50 // from: 0.2
   SAY @3
-  IF ~  Global("DaelanQuest2","GLOBAL",0)~ THEN REPLY @87 GOTO 51
-  IF ~  Global("DaelanQuest2","GLOBAL",1)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @88 GOTO 56
-  IF ~  Global("DaelanQuest2","GLOBAL",2)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @88 GOTO 69
-  IF ~  Global("DaelanQuest2","GLOBAL",3)~ THEN REPLY @88 GOTO 79
-  IF ~  OR(2)GlobalGT("DaelanQuest2","GLOBAL",3)GlobalTimerNotExpired("DaelanTimer","LOCALS")!Global("DaelanQuest2","GLOBAL",66)~ THEN REPLY @88 GOTO 80
-  IF ~Global("DaelanQuest2","GLOBAL",66)~ THEN REPLY @88 GOTO 42
+  IF ~  Global("NWDaelanQuest2","GLOBAL",0)~ THEN REPLY @87 GOTO 51
+  IF ~  Global("NWDaelanQuest2","GLOBAL",1)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @88 GOTO 56
+  IF ~  Global("NWDaelanQuest2","GLOBAL",2)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @88 GOTO 69
+  IF ~  Global("NWDaelanQuest2","GLOBAL",3)~ THEN REPLY @88 GOTO 79
+  IF ~  OR(2)GlobalGT("NWDaelanQuest2","GLOBAL",3)GlobalTimerNotExpired("DaelanTimer","LOCALS")!Global("NWDaelanQuest2","GLOBAL",66)~ THEN REPLY @88 GOTO 80
+  IF ~Global("NWDaelanQuest2","GLOBAL",66)~ THEN REPLY @88 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 81
 END
 
@@ -330,7 +330,7 @@ END
 
 IF ~~ THEN BEGIN 55 // from: 54.1
   SAY @94
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest2","GLOBAL",1)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest2","GLOBAL",1)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 56 // from: 50.2
@@ -390,7 +390,7 @@ END
 
 IF ~~ THEN BEGIN 66 // from: 63.4
   SAY @113
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 67 // from: 64.1 65.1
@@ -401,7 +401,7 @@ END
 
 IF ~~ THEN BEGIN 68 // from: 67.1 67.2
   SAY @117
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest2","GLOBAL",2)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest2","GLOBAL",2)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 69 // from: 50.3
@@ -433,12 +433,12 @@ END
 
 IF ~~ THEN BEGIN 74 // from: 72.2
   SAY @127
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 75 // from: 72.3
   SAY @128
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 76 // from: 73.1
@@ -450,7 +450,7 @@ END
 IF ~~ THEN BEGIN 77 // from: 76.1
   SAY @130
   IF ~~THEN DO ~
-    SetGlobal("DaelanQuest2","GLOBAL",4)
+    SetGlobal("NWDaelanQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -466,7 +466,7 @@ END
 IF ~~ THEN BEGIN 78 // from: 76.2
   SAY @131
   IF ~~THEN DO ~
-    SetGlobal("DaelanQuest2","GLOBAL",4)
+    SetGlobal("NWDaelanQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -519,12 +519,12 @@ END
 
 IF ~~ THEN BEGIN 86 // from: 0.3
   SAY @3
-  IF ~  Global("DaelanQuest3","GLOBAL",0)~ THEN REPLY @142 GOTO 87
-  IF ~  Global("DaelanQuest3","GLOBAL",1)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 93
-  IF ~  Global("DaelanQuest3","GLOBAL",2)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 104
-  IF ~  Global("DaelanQuest3","GLOBAL",3)~ THEN REPLY @5 GOTO 114
-  IF ~  OR(2)GlobalGT("DaelanQuest3","GLOBAL",3)GlobalTimerNotExpired("DaelanTimer","LOCALS")!Global("DaelanQuest3","GLOBAL",66)~ THEN REPLY @6 GOTO 115
-  IF ~  Global("DaelanQuest3","GLOBAL",66)~ THEN REPLY @6 GOTO 42
+  IF ~  Global("NWDaelanQuest3","GLOBAL",0)~ THEN REPLY @142 GOTO 87
+  IF ~  Global("NWDaelanQuest3","GLOBAL",1)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 93
+  IF ~  Global("NWDaelanQuest3","GLOBAL",2)GlobalTimerExpired("DaelanTimer","LOCALS")~ THEN REPLY @5 GOTO 104
+  IF ~  Global("NWDaelanQuest3","GLOBAL",3)~ THEN REPLY @5 GOTO 114
+  IF ~  OR(2)GlobalGT("NWDaelanQuest3","GLOBAL",3)GlobalTimerNotExpired("DaelanTimer","LOCALS")!Global("NWDaelanQuest3","GLOBAL",66)~ THEN REPLY @6 GOTO 115
+  IF ~  Global("NWDaelanQuest3","GLOBAL",66)~ THEN REPLY @6 GOTO 42
   IF ~~ THEN REPLY @7 GOTO 116
 END
 
@@ -558,7 +558,7 @@ END
 
 IF ~~ THEN BEGIN 92 // from: 91.1
   SAY @154
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest3","GLOBAL",1)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest3","GLOBAL",1)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 93 // from: 86.2
@@ -617,7 +617,7 @@ END
 
 IF ~~ THEN BEGIN 103 // from: 102.1
   SAY @171
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest3","GLOBAL",2)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest3","GLOBAL",2)SetGlobalTimer("DaelanTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 104 // from: 86.3
@@ -640,12 +640,12 @@ END
 
 IF ~~ THEN BEGIN 107 // from: 105.2
   SAY @180
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 108 // from: 105.3
   SAY @181
-  IF ~~ THEN DO ~SetGlobal("DaelanQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDaelanQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 109 // from: 106.1
@@ -672,7 +672,7 @@ END
 IF ~~ THEN BEGIN 113 // from: 112.1
   SAY @189
   IF ~~ THEN DO ~
-    SetGlobal("DaelanQuest3","GLOBAL",4)
+    SetGlobal("NWDaelanQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWDAELAN",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)

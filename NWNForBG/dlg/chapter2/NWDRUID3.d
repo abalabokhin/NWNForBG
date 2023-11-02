@@ -87,9 +87,9 @@ END
 IF ~~ THEN BEGIN 14 // from: 11.1
   SAY @28
   IF ~  Dead("NWSPIRIO")~ THEN REPLY @29 GOTO 15
-  IF ~  Global("SpiritSaved","GLOBAL",1)~ THEN REPLY @30 GOTO 16
+  IF ~  Global("NWSpiritSaved","GLOBAL",1)~ THEN REPLY @30 GOTO 16
   IF ~~ THEN REPLY @31 GOTO 17
-  IF ~  OR(2)Global("Druid1Saved","GLOBAL",0)Global("Druid2Saved","GLOBAL",0)~ THEN REPLY @32 GOTO 18
+  IF ~  OR(2)Global("NWDruid1Saved","GLOBAL",0)Global("NWDruid2Saved","GLOBAL",0)~ THEN REPLY @32 GOTO 18
   IF ~~ THEN REPLY @33 GOTO 19
   IF ~~ THEN REPLY @3 GOTO 3
 END
@@ -107,17 +107,17 @@ END
 
 IF ~~ THEN BEGIN 20 // from: 15.1
   SAY @38
-  IF ~~ THEN DO ~SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 15.2
   SAY @39
-  IF ~~ THEN DO ~SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 16
   SAY @40
-  IF ~~ THEN DO ~SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 14.3
@@ -135,7 +135,7 @@ END
 
 IF ~~ THEN BEGIN 19 // from: 14.5
   SAY @45
-  IF ~~ THEN DO ~EraseJournalEntry(@98271)SetGlobal("Druid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ UNSOLVED_JOURNAL @98272 EXIT
+  IF ~~ THEN DO ~EraseJournalEntry(@98271)SetGlobal("NWDruid3Saved","GLOBAL",1)MoveToPointNoInterrupt([1128.452])DestroySelf()~ UNSOLVED_JOURNAL @98272 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 17.1
@@ -170,7 +170,7 @@ END
 // -----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)AreaCheck("NW2901")Global("Druid3Saved","GLOBAL",0)~ THEN BEGIN 28 // from:
+~  !NumTimesTalkedTo(0)AreaCheck("NW2901")Global("NWDruid3Saved","GLOBAL",0)~ THEN BEGIN 28 // from:
   SAY @55
   IF ~~ THEN REPLY @56 GOTO 7
   IF ~~ THEN REPLY @33 GOTO 19
@@ -180,7 +180,7 @@ END
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  AreaCheck("NW2800")GlobalGT("Druid3Saved","GLOBAL",0)~ THEN BEGIN 29 // from:
+~  AreaCheck("NW2800")GlobalGT("NWDruid3Saved","GLOBAL",0)~ THEN BEGIN 29 // from:
   SAY @57
   IF ~~ THEN EXIT
 END

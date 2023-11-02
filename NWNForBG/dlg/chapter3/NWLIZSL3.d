@@ -152,28 +152,28 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 20.1
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 20.2
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.3
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Crushing","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Crushing","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 20.4
   SAY @43
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Slashing","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Slashing","GLOBAL",1)SetGlobal("PlayerTalk","LOCALS",1)~ EXIT
 END
 
 // -------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("Golem3_Afraid_of_Fire","GLOBAL",1)~ THEN BEGIN 25 // from:
+~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("NWGolem3_Afraid_of_Fire","GLOBAL",1)~ THEN BEGIN 25 // from:
   SAY @44
   IF ~~ THEN REPLY @45 GOTO 26
   IF ~~ THEN REPLY @46 GOTO 27
@@ -184,23 +184,23 @@ END
 
 IF ~~ THEN BEGIN 26 // from: 25.1
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 25.2
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Crushing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Crushing","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 25.3
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Slashing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Slashing","GLOBAL",1)~ EXIT
 END
 
 // -------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("Golem3_Afraid_of_Cold","GLOBAL",1)~ THEN BEGIN 29 // from:
+~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("NWGolem3_Afraid_of_Cold","GLOBAL",1)~ THEN BEGIN 29 // from:
   SAY @49
   IF ~~ THEN REPLY @50 GOTO 30
   IF ~~ THEN REPLY @46 GOTO 31
@@ -211,23 +211,23 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 29.1
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 29.2
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",0)SetGlobal("Golem3_Afraid1_of_Crushing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",0)SetGlobal("NWGolem3_Afraid1_of_Crushing","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 29.3
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",0)SetGlobal("Golem3_Afraid1_of_Slashing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",0)SetGlobal("NWGolem3_Afraid1_of_Slashing","GLOBAL",1)~ EXIT
 END
 
 // -------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("Golem3_Afraid_of_Crushing","GLOBAL",1)~ THEN BEGIN 33 // from:
+~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("NWGolem3_Afraid_of_Crushing","GLOBAL",1)~ THEN BEGIN 33 // from:
   SAY @51
   IF ~~ THEN REPLY @50 GOTO 34
   IF ~~ THEN REPLY @45 GOTO 35
@@ -238,23 +238,23 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 33.1
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Crushing","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Crushing","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 33.2
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Crushing","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Crushing","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 36 // from: 33.3
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Crushing","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Slashing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Crushing","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Slashing","GLOBAL",1)~ EXIT
 END
 
 // -------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("Golem3_Afraid_of_Slashing","GLOBAL",1)~ THEN BEGIN 37 // from:
+~  HasItemEquiped("NWTRANST",LastTalkedToBy(Myself))Global("NWGolem3_Afraid_of_Slashing","GLOBAL",1)~ THEN BEGIN 37 // from:
   SAY @52
   IF ~~ THEN REPLY @50 GOTO 38
   IF ~~ THEN REPLY @45 GOTO 39
@@ -265,16 +265,16 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 37.1
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Slashing","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Fire","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Slashing","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Fire","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 37.2
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Slashing","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Cold","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Slashing","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Cold","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 37.3
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("Golem3_Afraid_of_Slashing","GLOBAL",0)SetGlobal("Golem3_Afraid_of_Crushing","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWGolem3_Afraid_of_Slashing","GLOBAL",0)SetGlobal("NWGolem3_Afraid_of_Crushing","GLOBAL",1)~ EXIT
 END
 

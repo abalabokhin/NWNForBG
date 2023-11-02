@@ -1,9 +1,9 @@
 IF
 	OnCreation()
-	GlobalGT("RakCloud","GLOBAL",0)
+	GlobalGT("NWRakCloud","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("RakCloud","GLOBAL",0)
+		SetGlobal("NWRakCloud","GLOBAL",0)
 END
 
 IF
@@ -18,17 +18,17 @@ END
 
 IF
 	See(NearestEnemyOf(Myself))
-	Global("RakCloud","GLOBAL",0)
+	Global("NWRakCloud","GLOBAL",0)
 THEN
 	RESPONSE #30
 		ForceSpell(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)  // SPWI502.SPL (???????????? ??????)
-		SetGlobal("RakCloud","GLOBAL",1)
+		SetGlobal("NWRakCloud","GLOBAL",1)
 	RESPONSE #30
 		ForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_FOG)  // SPWI614.SPL (????? ??????)
-		SetGlobal("RakCloud","GLOBAL",1)
+		SetGlobal("NWRakCloud","GLOBAL",1)
 	RESPONSE #40
 		AttackReevaluate(NearestEnemyOf(Myself),10)
-		SetGlobal("RakCloud","GLOBAL",1)
+		SetGlobal("NWRakCloud","GLOBAL",1)
 END
 
 IF

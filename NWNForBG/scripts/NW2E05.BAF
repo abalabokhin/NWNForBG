@@ -1,6 +1,6 @@
 IF
 	Global("EvaineReturn","MYAREA",0)
-	Global("ElynwydQuest","GLOBAL",2)
+	Global("NWElynwydQuest","GLOBAL",2)
 	!Dead("NWEVAINE")  // ?????
 THEN
 	RESPONSE #100

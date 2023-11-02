@@ -41,19 +41,19 @@ THEN
 END
 
 IF
-	Global("2E59_To_2E55","GLOBAL",1)
+	Global("NW2E59_To_2E55","GLOBAL",1)
 	OpenState("Door2",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("2E59_To_2E55","GLOBAL",0)
+		SetGlobal("NW2E59_To_2E55","GLOBAL",0)
 END
 
 IF
-	Global("2E59_To_2E55","GLOBAL",1)
+	Global("NW2E59_To_2E55","GLOBAL",1)
 	OpenState("Door2",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("2E59_To_2E55","GLOBAL",0)
+		SetGlobal("NW2E59_To_2E55","GLOBAL",0)
 		Unlock("Door2")
 		OpenDoor("Door2")
 END

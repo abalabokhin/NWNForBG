@@ -159,7 +159,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  OR(2)Global("NWNChapter","GLOBAL",0)Global("WtDeepCreature","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 22 // from:
+~  OR(2)Global("NWNChapter","GLOBAL",0)Global("NWWtDeepCreature","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 22 // from:
   SAY @38
   IF ~~ THEN REPLY @39 GOTO 23
   IF ~  PartyHasItem("NWANONY1")~ THEN REPLY @40 GOTO 24
@@ -275,7 +275,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 42 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",1)IsGabber(Player1)~ THEN BEGIN 42 // from:
   SAY @61
   IF ~~ THEN EXTERN ~NWDESTHR~ 21 // На что нам одно существо, Фентик? Это как меч без клинка. Вы бы пошли в бой, имея лишь рукоять от меча?
 END
@@ -297,7 +297,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 45 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",2)IsGabber(Player1)~ THEN BEGIN 45 // from:
   SAY @64
   IF ~~ THEN EXTERN ~NWDESTHR~ 23 // Двое из четырех существ, Фентик. Половина лекарства так же бесполезна, как половина лошади!
 END
@@ -319,7 +319,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 48 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",3)IsGabber(Player1)~ THEN BEGIN 48 // from:
   SAY @66
   IF ~~ THEN EXTERN ~NWDESTHR~ 25 // Одного существа так и нет, Фентик. К этому времени оно могло деться куда угодно. А без четвертого существа не будет и лекарства.
 END
@@ -341,7 +341,7 @@ END
 // ------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWNChapter","GLOBAL",1)Global("WtDeepCreature","GLOBAL",4)Global("MakingMedicine","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 51 // from:
+~  Global("NWNChapter","GLOBAL",1)Global("NWWtDeepCreature","GLOBAL",4)Global("NWMakingMedicine","GLOBAL",0)IsGabber(Player1)~ THEN BEGIN 51 // from:
   SAY @68
   IF ~  PartyHasItem("NWANONY1")~ THEN REPLY @40 GOTO 24
   IF ~  PartyHasItem("NWANONY2")~ THEN REPLY @41 GOTO 31

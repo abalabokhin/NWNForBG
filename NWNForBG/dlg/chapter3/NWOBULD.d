@@ -15,7 +15,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @5
-  IF ~  Global("RolkidQuest","GLOBAL",3)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWRolkidQuest","GLOBAL",3)~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 6
   IF ~~ THEN REPLY @8 GOTO 4
 END
@@ -29,7 +29,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.3
   SAY @13
-  IF ~  Global("RolkidQuest","GLOBAL",3)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWRolkidQuest","GLOBAL",3)~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @7 GOTO 6
   IF ~~ THEN REPLY @10 GOTO 4
   IF ~~ THEN REPLY @12 GOTO 4
@@ -48,7 +48,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 1.2
   SAY @17
-  IF ~  Global("RolkidQuest","GLOBAL",3)~ THEN REPLY @6 GOTO 5
+  IF ~  Global("NWRolkidQuest","GLOBAL",3)~ THEN REPLY @6 GOTO 5
   IF ~~ THEN REPLY @16 GOTO 8
   IF ~~ THEN REPLY @10 GOTO 4
 END

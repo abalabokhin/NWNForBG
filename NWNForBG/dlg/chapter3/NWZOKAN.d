@@ -15,7 +15,7 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @6
   IF ~~ THEN REPLY @7 GOTO 5
-  IF ~  Global("JusamJob","GLOBAL",1)~ THEN REPLY @8 GOTO 5
+  IF ~  Global("NWJusamJob","GLOBAL",1)~ THEN REPLY @8 GOTO 5
   IF ~~ THEN REPLY @9 GOTO 5
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
@@ -30,7 +30,7 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 0.4
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("ZokanHostile","GLOBAL",1)Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWZokanHostile","GLOBAL",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 0.5
@@ -49,7 +49,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 2.3
   SAY @19
-  IF ~~ THEN DO ~SetGlobal("ZokanHostile","GLOBAL",1)Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWZokanHostile","GLOBAL",1)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.1
@@ -106,7 +106,7 @@ IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this st
 ~  !NumTimesTalkedTo(0)Global("NWCoverlet","GLOBAL",0)!Global("NW_Medicine","GLOBAL",2)~ THEN BEGIN 14 // from:
   SAY @6
   IF ~~ THEN REPLY @7 GOTO 5
-  IF ~  Global("JusamJob","GLOBAL",1)~ THEN REPLY @8 GOTO 5
+  IF ~  Global("NWJusamJob","GLOBAL",1)~ THEN REPLY @8 GOTO 5
   IF ~~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
 END

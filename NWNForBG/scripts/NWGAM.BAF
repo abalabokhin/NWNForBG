@@ -1,5 +1,5 @@
 IF
-	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("NWKnowsAboutMatch","GLOBAL",3)
 	Global("Cure","LOCALS",0)
 	AreaCheck("NW2210")
 	See([PC])
@@ -21,7 +21,7 @@ IF
 		SpellCastOnMe([GOODCUTOFF],PALADIN_LAY_ON_HANDS)  // SPCL211.SPL (?????????? ???)
 		SpellCastOnMe([GOODCUTOFF],MONK_LAY_ON_HANDS)  // SPCL815.SPL (?????????? ???)
 		SpellCastOnMe([GOODCUTOFF],MAZZY_LAY)  // SPIN827.SPL (?????????? ???)
-	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("NWKnowsAboutMatch","GLOBAL",3)
 	Global("Promise","LOCALS",1)
 	GlobalLT("Cure","LOCALS",2)
 	AreaCheck("NW2210")
@@ -34,7 +34,7 @@ END
 
 IF
 	HasItem("Potn52",Myself)  // ????? ??????????? ???????
-	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("NWKnowsAboutMatch","GLOBAL",3)
 	Global("Cure","LOCALS",1)
 	AreaCheck("NW2210")
 THEN
@@ -47,7 +47,7 @@ END
 
 IF
 	HasItem("Potn55",Myself)  // ????? ????????????? ???????
-	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("NWKnowsAboutMatch","GLOBAL",3)
 	Global("Cure","LOCALS",1)
 	AreaCheck("NW2210")
 THEN
@@ -60,7 +60,7 @@ END
 
 IF
 	HasItem("NWPOTN08",Myself)  // ????? ???????
-	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("NWKnowsAboutMatch","GLOBAL",3)
 	Global("Cure","LOCALS",1)
 	AreaCheck("NW2210")
 THEN
@@ -72,7 +72,7 @@ THEN
 END
 
 IF
-	Global("KnowsAboutMatch","GLOBAL",3)
+	Global("NWKnowsAboutMatch","GLOBAL",3)
 	Global("Cure","LOCALS",2)
 	AreaCheck("NW2210")
 	See([PC])

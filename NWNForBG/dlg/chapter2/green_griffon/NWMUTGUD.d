@@ -2,7 +2,7 @@
 BEGIN ~NWMUTGUD~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("KnowsAboutMatch","GLOBAL",3)GlobalLT("KnowsAboutMatch","GLOBAL",7)Global("Komplement","LOCALS",0)~ THEN BEGIN 0 // from:
+~  GlobalGT("NWKnowsAboutMatch","GLOBAL",3)GlobalLT("NWKnowsAboutMatch","GLOBAL",7)Global("Komplement","LOCALS",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN DO ~SetGlobal("Komplement","LOCALS",0)~ EXIT
 END

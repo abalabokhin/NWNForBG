@@ -1,9 +1,9 @@
 IF
-	Global("GuglashHeart","GLOBAL",0)
+	Global("NWGuglashHeart","GLOBAL",0)
 	HasItem("NWGULGAH",Myself)  // ?????? ???????
 THEN
 	RESPONSE #100
-		SetGlobal("GuglashHeart","GLOBAL",1)
+		SetGlobal("NWGuglashHeart","GLOBAL",1)
 		CreateVisualEffect("NWICFIRI",[572.533])
 		DestroyItem("NWGULGAH")  // ?????? ???????
 END

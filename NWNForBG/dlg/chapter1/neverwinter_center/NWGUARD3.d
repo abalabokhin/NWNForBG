@@ -3,7 +3,7 @@
 BEGIN ~NWGUARD3~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("BlackLakeGate","MYAREA",0)Global("BlackLakeDone","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("BlackLakeGate","MYAREA",0)Global("NWBlackLakeDone","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  Global("NWNChapter","GLOBAL",1)~ THEN REPLY @1 DO ~SetGlobal("BlackLakeGate","MYAREA",1)~ GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -119,11 +119,11 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 1.1
   SAY @33
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 17
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 18
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 19
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 20
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @36 GOTO 21
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 17
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 18
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 19
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 20
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @36 GOTO 21
   IF ~~ THEN REPLY @37 GOTO 5
   IF ~~ THEN REPLY @8 GOTO 6
 END
@@ -158,10 +158,10 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 16.5
   SAY @43
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 17
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 18
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 19
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 20
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 17
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @34 GOTO 18
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 19
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @35 GOTO 20
   IF ~~ THEN REPLY @37 GOTO 5
   IF ~~ THEN REPLY @8 GOTO 6
 END
@@ -169,7 +169,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("BlackLakeGate","MYAREA",0)Global("BlackLakeDone","GLOBAL",0)~ THEN BEGIN 22 // from:
+~  GlobalGT("BlackLakeGate","MYAREA",0)Global("NWBlackLakeDone","GLOBAL",0)~ THEN BEGIN 22 // from:
   SAY @44
   IF ~~ THEN REPLY @6 GOTO 16
   IF ~~ THEN REPLY @7 GOTO 5
@@ -179,7 +179,7 @@ END
 // -------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("BlackLakeGate","MYAREA",0)GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN BEGIN 23 // from:
+~  GlobalGT("BlackLakeGate","MYAREA",0)GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN BEGIN 23 // from:
   SAY @45
   IF ~~ THEN REPLY @6 GOTO 16
   IF ~~ THEN REPLY @7 GOTO 5

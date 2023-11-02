@@ -14,7 +14,7 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
   SAY @1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 4
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END
@@ -22,7 +22,7 @@ END
 IF ~~ THEN BEGIN 2 // from: 1.1
   SAY @7
   IF ~~ THEN REPLY @3 GOTO 3
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 4
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 4
   IF ~~ THEN REPLY @5 GOTO 5
   IF ~~ THEN REPLY @6 GOTO 6
 END
@@ -30,7 +30,7 @@ END
 IF ~~ THEN BEGIN 3 // from: 1.2
   SAY @8
   IF ~~ THEN REPLY @9 GOTO 7
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 8
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 8
   IF ~~ THEN REPLY @11 GOTO 6
 END
 
@@ -42,7 +42,7 @@ END
 IF ~~ THEN BEGIN 5 // from: 1.4
   SAY @14
   IF ~~ THEN REPLY @9 GOTO 7
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 4
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @10 GOTO 4
   IF ~~ THEN REPLY @11 GOTO 6
 END
 

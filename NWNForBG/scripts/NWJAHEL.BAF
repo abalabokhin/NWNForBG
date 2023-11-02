@@ -8,7 +8,7 @@ THEN
 END
 
 IF
-	GlobalGT("SearchNeva","GLOBAL",1)
+	GlobalGT("NWSearchNeva","GLOBAL",1)
 THEN
 	RESPONSE #100
 		DestroySelf()

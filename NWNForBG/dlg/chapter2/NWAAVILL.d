@@ -157,7 +157,7 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 22.3
   SAY @55
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",1)EraseJournalEntry(@96270)~ UNSOLVED_JOURNAL @98271 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",1)EraseJournalEntry(@96270)~ UNSOLVED_JOURNAL @98271 EXIT
 END
 
 // ---------------------------------
@@ -174,14 +174,14 @@ END
 // ---------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("AavillQuest","GLOBAL",0)~ THEN BEGIN 27 // from:
+~  !NumTimesTalkedTo(0)Global("NWAavillQuest","GLOBAL",0)~ THEN BEGIN 27 // from:
   SAY @58
   IF ~~ THEN REPLY @59 GOTO 28
   IF ~~ THEN REPLY @60 GOTO 16
-  IF ~  Global("Druid1Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
-  IF ~  Global("Druid2Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
-  IF ~  Global("Druid3Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
-  IF ~  Global("Druid1Saved","GLOBAL",1)Global("Druid2Saved","GLOBAL",1)Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
+  IF ~  Global("NWDruid2Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
+  IF ~  Global("NWDruid3Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)Global("NWDruid2Saved","GLOBAL",1)Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
   IF ~~ THEN REPLY @65 EXIT
 END
 
@@ -193,35 +193,35 @@ END
 
 IF ~~ THEN BEGIN 29 // from: 27.2
   SAY @68
-  IF ~~ THEN DO ~SetGlobal("Druid1Saved","GLOBAL",2)AddexperienceParty(12000)GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid1Saved","GLOBAL",2)AddexperienceParty(12000)GiveGoldForce(1000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 27.3
   SAY @69
-  IF ~~ THEN DO ~SetGlobal("Druid2Saved","GLOBAL",2)AddexperienceParty(12000)GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid2Saved","GLOBAL",2)AddexperienceParty(12000)GiveGoldForce(1000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 27.4
   SAY @70
-  IF ~~ THEN DO ~SetGlobal("Druid2Saved","GLOBAL",2)AddexperienceParty(12000)GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid2Saved","GLOBAL",2)AddexperienceParty(12000)GiveGoldForce(1000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 27.5
   SAY @71
-  IF ~~ THEN DO ~SetGlobal("Druid1Saved","GLOBAL",2)SetGlobal("Druid2Saved","GLOBAL",2)SetGlobal("Druid3Saved","GLOBAL",2)AddexperienceParty(36000)GiveGoldForce(3000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWDruid1Saved","GLOBAL",2)SetGlobal("NWDruid2Saved","GLOBAL",2)SetGlobal("NWDruid3Saved","GLOBAL",2)AddexperienceParty(36000)GiveGoldForce(3000)~ EXIT
 END
 
 // -----------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("AavillQuest","GLOBAL",1)~ THEN BEGIN 33 // from:
+~  !NumTimesTalkedTo(0)Global("NWAavillQuest","GLOBAL",1)~ THEN BEGIN 33 // from:
   SAY @72
   IF ~~ THEN REPLY @73 GOTO 34
-  IF ~  Global("Druid1Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
-  IF ~  Global("Druid2Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
-  IF ~  Global("Druid3Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
-  IF ~  Global("Druid1Saved","GLOBAL",1)Global("Druid2Saved","GLOBAL",1)Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
-  IF ~  Global("SpiritSaved","GLOBAL",1)~ THEN REPLY @74 GOTO 35
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
+  IF ~  Global("NWDruid2Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
+  IF ~  Global("NWDruid3Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)Global("NWDruid2Saved","GLOBAL",1)Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
+  IF ~  Global("NWSpiritSaved","GLOBAL",1)~ THEN REPLY @74 GOTO 35
   IF ~  Dead("NWSPIRIO")~ THEN REPLY @75 GOTO 36
   IF ~~ THEN REPLY @76 EXIT
 END
@@ -248,7 +248,7 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 35.1
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(5000)AddexperienceParty(180000)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",2)GiveGoldForce(5000)AddexperienceParty(180000)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -258,7 +258,7 @@ END
 
 IF ~~ THEN BEGIN 38 // from: 35.2
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -274,7 +274,7 @@ END
 
 IF ~~ THEN BEGIN 40 // from: 35.4
   SAY @90
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)ReputationInc(-1)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",2)GiveGoldForce(6000)AddexperienceParty(180000)ReputationInc(-1)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -284,7 +284,7 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 35.5
   SAY @91
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",2)AddexperienceParty(180000)ReputationInc(1)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",2)AddexperienceParty(180000)ReputationInc(1)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -308,7 +308,7 @@ END
 
 IF ~~ THEN BEGIN 44 // from: 36.1
   SAY @97
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -318,7 +318,7 @@ END
 
 IF ~~ THEN BEGIN 45 // from: 36.2
   SAY @99
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)AddexperienceParty(90000)ReputationInc(1)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",3)AddexperienceParty(90000)ReputationInc(1)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -328,7 +328,7 @@ END
 
 IF ~~ THEN BEGIN 46 // from: 36.3
   SAY @100
-  IF ~~ THEN DO ~SetGlobal("AavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)ReputationInc(-1)EraseJournalEntry(@98271)
+  IF ~~ THEN DO ~SetGlobal("NWAavillQuest","GLOBAL",3)GiveGoldForce(2500)AddexperienceParty(90000)ReputationInc(-1)EraseJournalEntry(@98271)
 EraseJournalEntry(@98272)
 EraseJournalEntry(@98273)
 EraseJournalEntry(@98274)
@@ -339,23 +339,23 @@ END
 // -----------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AavillQuest","GLOBAL",2)~ THEN BEGIN 47 // from:
+~  Global("NWAavillQuest","GLOBAL",2)~ THEN BEGIN 47 // from:
   SAY @101
-  IF ~  Global("Druid1Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
-  IF ~  Global("Druid2Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
-  IF ~  Global("Druid3Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
-  IF ~  Global("Druid1Saved","GLOBAL",1)Global("Druid2Saved","GLOBAL",1)Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
-  IF ~  !Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN EXIT
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
+  IF ~  Global("NWDruid2Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
+  IF ~  Global("NWDruid3Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)Global("NWDruid2Saved","GLOBAL",1)Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
+  IF ~  !Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN EXIT
 END
 
 // -----------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("AavillQuest","GLOBAL",3)~ THEN BEGIN 48 // from:
+~  Global("NWAavillQuest","GLOBAL",3)~ THEN BEGIN 48 // from:
   SAY @102
-  IF ~  Global("Druid1Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
-  IF ~  Global("Druid2Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
-  IF ~  Global("Druid3Saved","GLOBAL",1)OR(3)!Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
-  IF ~  Global("Druid1Saved","GLOBAL",1)Global("Druid2Saved","GLOBAL",1)Global("Druid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
-  IF ~  !Global("Druid1Saved","GLOBAL",1)!Global("Druid2Saved","GLOBAL",1)!Global("Druid3Saved","GLOBAL",1)~ THEN EXIT
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @61 GOTO 29
+  IF ~  Global("NWDruid2Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @62 GOTO 30
+  IF ~  Global("NWDruid3Saved","GLOBAL",1)OR(3)!Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @63 GOTO 31
+  IF ~  Global("NWDruid1Saved","GLOBAL",1)Global("NWDruid2Saved","GLOBAL",1)Global("NWDruid3Saved","GLOBAL",1)~ THEN REPLY @64 GOTO 32
+  IF ~  !Global("NWDruid1Saved","GLOBAL",1)!Global("NWDruid2Saved","GLOBAL",1)!Global("NWDruid3Saved","GLOBAL",1)~ THEN EXIT
 END

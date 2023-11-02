@@ -56,7 +56,7 @@ THEN
 END
 
 IF
-	GlobalGT("FormosaQuest","GLOBAL",1)
+	GlobalGT("NWFormosaQuest","GLOBAL",1)
 	Global("ScriptChange","LOCALS",0)
 THEN
 	RESPONSE #30

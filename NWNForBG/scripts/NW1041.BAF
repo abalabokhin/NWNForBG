@@ -1,5 +1,5 @@
 IF
-	Global("ArmorQuest","GLOBAL",1)
+	Global("NWArmorQuest","GLOBAL",1)
 THEN
 	RESPONSE #100
 		TakeItemReplace("Misc18","NWMINH1Y","Nwplat1")  // ????????? ??????
@@ -7,11 +7,11 @@ THEN
 		TakeItemReplace("Misc18","NWMINH1Y","Nwplat3")  // ????????? ??????
 		TakeItemReplace("Misc18","NWMINH1Y","Nwplat4")  // ????????? ??????
 		AddexperienceParty(36000)
-		SetGlobal("ArmorQuest","GLOBAL",2)
+		SetGlobal("NWArmorQuest","GLOBAL",2)
 END
 
 IF
-	Global("In1042PlatAll","GLOBAL",1)
+	Global("NWIn1042PlatAll","GLOBAL",1)
 	Global("PlatNoActions","MYAREA",0)
 THEN
 	RESPONSE #100

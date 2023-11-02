@@ -13,14 +13,14 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  Global("BoddinokQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
-  IF ~  Global("BoddinokQuest","GLOBAL",1)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @5 GOTO 19
-  IF ~  Global("BoddinokQuest","GLOBAL",2)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @5 GOTO 32
-  IF ~  Global("BoddinokQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 42
-  IF ~  OR(2)GlobalGT("BoddinokQuest","GLOBAL",3)GlobalTimerNotExpired("BoddinokTimer","LOCALS")!Global("BoddinokQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 43
-  IF ~  Global("BoddinokQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 44
-  IF ~  Global("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 45
-  IF ~  GlobalGT("BeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 46
+  IF ~  Global("NWBoddinokQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  Global("NWBoddinokQuest","GLOBAL",1)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @5 GOTO 19
+  IF ~  Global("NWBoddinokQuest","GLOBAL",2)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @5 GOTO 32
+  IF ~  Global("NWBoddinokQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 42
+  IF ~  OR(2)GlobalGT("NWBoddinokQuest","GLOBAL",3)GlobalTimerNotExpired("BoddinokTimer","LOCALS")!Global("NWBoddinokQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 43
+  IF ~  Global("NWBoddinokQuest","GLOBAL",66)~ THEN REPLY @6 GOTO 44
+  IF ~  Global("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 45
+  IF ~  GlobalGT("NWBeggarsNestDone","GLOBAL",0)~ THEN REPLY @7 GOTO 46
   IF ~~ THEN REPLY @2 GOTO 2
 END
 
@@ -109,12 +109,12 @@ END
 
 IF ~~ THEN BEGIN 17 // from: 16.1
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 16.2
   SAY @38
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 1.2
@@ -180,12 +180,12 @@ END
 
 IF ~~ THEN BEGIN 30 // from: 29.1
   SAY @61
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",2)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest","GLOBAL",2)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 29.2
   SAY @62
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 1.3
@@ -218,12 +218,12 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 35.2
   SAY @73
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 35.3
   SAY @74
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 39 // from: 35.1
@@ -235,7 +235,7 @@ END
 IF ~~ THEN BEGIN 40 // from: 39.1
   SAY @78
   IF ~~ THEN DO ~
-    SetGlobal("BoddinokQuest","GLOBAL",4)
+    SetGlobal("NWBoddinokQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -308,12 +308,12 @@ END
 
 IF ~~ THEN BEGIN 52 // from: 0.2
   SAY @3
-  IF ~  Global("BoddinokQuest2","GLOBAL",0)~ THEN REPLY @94 GOTO 53
-  IF ~  Global("BoddinokQuest2","GLOBAL",1)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @95 GOTO 62
-  IF ~  Global("BoddinokQuest2","GLOBAL",2)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @95 GOTO 79
-  IF ~  Global("BoddinokQuest2","GLOBAL",3)~ THEN REPLY @95 GOTO 91
-  IF ~  OR(2)GlobalGT("BoddinokQuest2","GLOBAL",3)GlobalTimerNotExpired("BoddinokTimer","LOCALS")!Global("BoddinokQuest2","GLOBAL",66)~ THEN REPLY @95 GOTO 92
-  IF ~Global("BoddinokQuest2","GLOBAL",66)~ THEN REPLY @95 GOTO 44
+  IF ~  Global("NWBoddinokQuest2","GLOBAL",0)~ THEN REPLY @94 GOTO 53
+  IF ~  Global("NWBoddinokQuest2","GLOBAL",1)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @95 GOTO 62
+  IF ~  Global("NWBoddinokQuest2","GLOBAL",2)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @95 GOTO 79
+  IF ~  Global("NWBoddinokQuest2","GLOBAL",3)~ THEN REPLY @95 GOTO 91
+  IF ~  OR(2)GlobalGT("NWBoddinokQuest2","GLOBAL",3)GlobalTimerNotExpired("BoddinokTimer","LOCALS")!Global("NWBoddinokQuest2","GLOBAL",66)~ THEN REPLY @95 GOTO 92
+  IF ~Global("NWBoddinokQuest2","GLOBAL",66)~ THEN REPLY @95 GOTO 44
   IF ~~ THEN REPLY @7 GOTO 93
 END
 
@@ -359,12 +359,12 @@ END
 
 IF ~~ THEN BEGIN 60 // from: 58.2
   SAY @112
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 61 // from: 59.1
   SAY @113
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest2","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 62 // from: 52.2
@@ -444,7 +444,7 @@ END
 
 IF ~~ THEN BEGIN 76 // from: 73.3
   SAY @138
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 77 // from: 74.1 75.1
@@ -454,7 +454,7 @@ END
 
 IF ~~ THEN BEGIN 78 // from: 77.1
   SAY @141
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",2)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest2","GLOBAL",2)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 79 // from: 52.3
@@ -501,12 +501,12 @@ END
 
 IF ~~ THEN BEGIN 86 // from: 84.2
   SAY @158
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 87 // from: 84.3
   SAY @159
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 88 // from: 85.1
@@ -517,7 +517,7 @@ END
 IF ~~ THEN BEGIN 89 // from: 88.1
   SAY @161
   IF ~~THEN DO ~
-    SetGlobal("BoddinokQuest2","GLOBAL",4)
+    SetGlobal("NWBoddinokQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -533,7 +533,7 @@ END
 IF ~~ THEN BEGIN 90 // from: 88.2
   SAY @162
   IF ~~THEN DO ~
-    SetGlobal("BoddinokQuest2","GLOBAL",4)
+    SetGlobal("NWBoddinokQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -591,12 +591,12 @@ END
 
 IF ~~ THEN BEGIN 99 // from: 0.3
   SAY @3
-  IF ~  Global("BoddinokQuest3","GLOBAL",0)~ THEN REPLY @174 GOTO 100
-  IF ~  Global("BoddinokQuest3","GLOBAL",1)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @175 GOTO 110
-  IF ~  Global("BoddinokQuest3","GLOBAL",2)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @175 GOTO 122
-  IF ~  Global("BoddinokQuest3","GLOBAL",3)~ THEN REPLY @175 GOTO 139
-  IF ~  OR(2)GlobalGT("BoddinokQuest3","GLOBAL",3)GlobalTimerNotExpired("BoddinokTimer","LOCALS")!Global("BoddinokQuest3","GLOBAL",66)~ THEN REPLY @175 GOTO 140
-  IF ~  Global("BoddinokQuest3","GLOBAL",66)~ THEN REPLY @175 GOTO 44
+  IF ~  Global("NWBoddinokQuest3","GLOBAL",0)~ THEN REPLY @174 GOTO 100
+  IF ~  Global("NWBoddinokQuest3","GLOBAL",1)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @175 GOTO 110
+  IF ~  Global("NWBoddinokQuest3","GLOBAL",2)GlobalTimerExpired("BoddinokTimer","LOCALS")~ THEN REPLY @175 GOTO 122
+  IF ~  Global("NWBoddinokQuest3","GLOBAL",3)~ THEN REPLY @175 GOTO 139
+  IF ~  OR(2)GlobalGT("NWBoddinokQuest3","GLOBAL",3)GlobalTimerNotExpired("BoddinokTimer","LOCALS")!Global("NWBoddinokQuest3","GLOBAL",66)~ THEN REPLY @175 GOTO 140
+  IF ~  Global("NWBoddinokQuest3","GLOBAL",66)~ THEN REPLY @175 GOTO 44
   IF ~~ THEN REPLY @7 GOTO 141
 END
 
@@ -651,7 +651,7 @@ END
 
 IF ~~ THEN BEGIN 109 // from: 107.1 108.1
   SAY @193
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest3","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest3","GLOBAL",1)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 110 // from: 99.2
@@ -716,7 +716,7 @@ END
 
 IF ~~ THEN BEGIN 121 // from: 120
   SAY @215
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest3","GLOBAL",2)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest3","GLOBAL",2)SetGlobalTimer("BoddinokTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 122 // from: 99.3
@@ -781,12 +781,12 @@ END
 
 IF ~~ THEN BEGIN 133 // from: 131.2
   SAY @236
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 134 // from: 131.3
   SAY @237
-  IF ~~ THEN DO ~SetGlobal("BoddinokQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWBoddinokQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 135 // from: 132.1
@@ -809,7 +809,7 @@ END
 IF ~~ THEN BEGIN 138 // from: 137
   SAY @246
   IF ~~ THEN DO ~
-    SetGlobal("BoddinokQuest3","GLOBAL",4)
+    SetGlobal("NWBoddinokQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWBODDIK",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)

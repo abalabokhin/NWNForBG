@@ -1,8 +1,8 @@
 IF
-	Global("Portal2510","GLOBAL",1)
+	Global("NWPortal2510","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("Portal2510","GLOBAL",2)
+		SetGlobal("NWPortal2510","GLOBAL",2)
 		TriggerActivation("NWRUNETR",FALSE)
 		AmbientActivate("Runes",FALSE)
 		AmbientActivate("Portal",TRUE)
@@ -34,19 +34,19 @@ IF
 	OR(2)
 		PartyHasItem("NWSCROL2")  // ?????? ??????
 		!Contains("NWSCROL2","Bone")  // ?????? ??????
-	Global("BoneHasScrolln2","GLOBAL",0)
+	Global("NWBoneHasScrolln2","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("BoneHasScrolln2","GLOBAL",1)
+		SetGlobal("NWBoneHasScrolln2","GLOBAL",1)
 END
 
 IF
 	OR(2)
 		PartyHasItem("NWBOOK35")  // ??????? ?????????????
 		!Contains("NWBOOK35","Corpse")  // ??????? ?????????????
-	Global("CorpseHasNwbook35","GLOBAL",0)
+	Global("NWCorpseHasNwbook35","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("CorpseHasNwbook35","GLOBAL",1)
+		SetGlobal("NWCorpseHasNwbook35","GLOBAL",1)
 END
 

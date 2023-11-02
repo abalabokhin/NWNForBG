@@ -7,10 +7,10 @@ IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this st
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
-  IF ~  Global("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 3
-  IF ~  GlobalGT("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 14
-  IF ~  Global("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 4
-  IF ~  GlobalGT("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 5
+  IF ~  Global("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 14
+  IF ~  Global("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 4
+  IF ~  GlobalGT("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 5
   IF ~~ THEN REPLY @5 GOTO 6
 END
 
@@ -46,8 +46,8 @@ END
 IF ~~ THEN BEGIN 5 // from: 0.5
   SAY @17
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 3
-  IF ~  GlobalGT("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 14
+  IF ~  Global("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 3
+  IF ~  GlobalGT("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @3 GOTO 14
   IF ~~ THEN REPLY @5 GOTO 6
 END
 
@@ -100,8 +100,8 @@ END
 IF ~~ THEN BEGIN 14 // from: 0.4
   SAY @29
   IF ~~ THEN REPLY @1 GOTO 1
-  IF ~  Global("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 4
-  IF ~  GlobalGT("SeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 5
+  IF ~  Global("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 4
+  IF ~  GlobalGT("NWSeedsArePlanted","GLOBAL",0)~ THEN REPLY @4 GOTO 5
   IF ~~ THEN REPLY @5 GOTO 6
 END
 
@@ -264,7 +264,7 @@ END
 // ------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWSapphiraJob","GLOBAL",1)Global("SeedsArePlanted","GLOBAL",0)~ THEN BEGIN 40 // from:
+~  Global("NWSapphiraJob","GLOBAL",1)Global("NWSeedsArePlanted","GLOBAL",0)~ THEN BEGIN 40 // from:
   SAY @72
   IF ~~ THEN REPLY @73 GOTO 41
   IF ~~ THEN REPLY @5 GOTO 6
@@ -278,7 +278,7 @@ END
 // ------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("NWSapphiraJob","GLOBAL",1)Global("SeedsArePlanted","GLOBAL",1)~ THEN BEGIN 42 // from:
+~  Global("NWSapphiraJob","GLOBAL",1)Global("NWSeedsArePlanted","GLOBAL",1)~ THEN BEGIN 42 // from:
   SAY @75
   IF ~~ THEN REPLY @76 GOTO 43
   IF ~~ THEN REPLY @5 GOTO 6

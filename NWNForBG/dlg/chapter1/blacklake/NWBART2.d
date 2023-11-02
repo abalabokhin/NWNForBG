@@ -107,117 +107,117 @@ IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this st
 ~  Global("NWArena","GLOBAL",4)~ THEN BEGIN 14 // from:
   SAY @21
   IF ~~ THEN REPLY @3 DO ~StartStore("NWBART2",LastTalkedToBy(Myself))~ EXIT
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",499)GlobalLT("NwTavTaxes","GLOBAL",501)~ THEN REPLY @22 GOTO 15
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",999)GlobalLT("NwTavTaxes","GLOBAL",1501)~ THEN REPLY @22 GOTO 16
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",1499)GlobalLT("NwTavTaxes","GLOBAL",2001)~ THEN REPLY @22 GOTO 17
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",1999)GlobalLT("NwTavTaxes","GLOBAL",2501)~ THEN REPLY @22 GOTO 18
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",2499)GlobalLT("NwTavTaxes","GLOBAL",3001)~ THEN REPLY @22 GOTO 19
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",2999)GlobalLT("NwTavTaxes","GLOBAL",3501)~ THEN REPLY @22 GOTO 20
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",3499)GlobalLT("NwTavTaxes","GLOBAL",4001)~ THEN REPLY @22 GOTO 21
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",3999)GlobalLT("NwTavTaxes","GLOBAL",4501)~ THEN REPLY @22 GOTO 22
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",4499)GlobalLT("NwTavTaxes","GLOBAL",5001)~ THEN REPLY @22 GOTO 23
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",4999)GlobalLT("NwTavTaxes","GLOBAL",5501)~ THEN REPLY @22 GOTO 24
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",5499)GlobalLT("NwTavTaxes","GLOBAL",6001)~ THEN REPLY @22 GOTO 25
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",5999)GlobalLT("NwTavTaxes","GLOBAL",6501)~ THEN REPLY @22 GOTO 26
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",6999)GlobalLT("NwTavTaxes","GLOBAL",7501)~ THEN REPLY @22 GOTO 27
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",7999)GlobalLT("NwTavTaxes","GLOBAL",8501)~ THEN REPLY @22 GOTO 28
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",9999)GlobalLT("NwTavTaxes","GLOBAL",10501)~ THEN REPLY @22 GOTO 29
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",14999)GlobalLT("NwTavTaxes","GLOBAL",15501)~ THEN REPLY @22 GOTO 30
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",24999)GlobalLT("NwTavTaxes","GLOBAL",25501)~ THEN REPLY @22 GOTO 31
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",44999)~ THEN REPLY @22 GOTO 32
-  IF ~  GlobalLT("NwTavTaxes","GLOBAL",499)~ THEN REPLY @22 GOTO 33
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",499)GlobalLT("NWNwTavTaxes","GLOBAL",501)~ THEN REPLY @22 GOTO 15
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",999)GlobalLT("NWNwTavTaxes","GLOBAL",1501)~ THEN REPLY @22 GOTO 16
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",1499)GlobalLT("NWNwTavTaxes","GLOBAL",2001)~ THEN REPLY @22 GOTO 17
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",1999)GlobalLT("NWNwTavTaxes","GLOBAL",2501)~ THEN REPLY @22 GOTO 18
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",2499)GlobalLT("NWNwTavTaxes","GLOBAL",3001)~ THEN REPLY @22 GOTO 19
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",2999)GlobalLT("NWNwTavTaxes","GLOBAL",3501)~ THEN REPLY @22 GOTO 20
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",3499)GlobalLT("NWNwTavTaxes","GLOBAL",4001)~ THEN REPLY @22 GOTO 21
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",3999)GlobalLT("NWNwTavTaxes","GLOBAL",4501)~ THEN REPLY @22 GOTO 22
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",4499)GlobalLT("NWNwTavTaxes","GLOBAL",5001)~ THEN REPLY @22 GOTO 23
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",4999)GlobalLT("NWNwTavTaxes","GLOBAL",5501)~ THEN REPLY @22 GOTO 24
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",5499)GlobalLT("NWNwTavTaxes","GLOBAL",6001)~ THEN REPLY @22 GOTO 25
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",5999)GlobalLT("NWNwTavTaxes","GLOBAL",6501)~ THEN REPLY @22 GOTO 26
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",6999)GlobalLT("NWNwTavTaxes","GLOBAL",7501)~ THEN REPLY @22 GOTO 27
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",7999)GlobalLT("NWNwTavTaxes","GLOBAL",8501)~ THEN REPLY @22 GOTO 28
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",9999)GlobalLT("NWNwTavTaxes","GLOBAL",10501)~ THEN REPLY @22 GOTO 29
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",14999)GlobalLT("NWNwTavTaxes","GLOBAL",15501)~ THEN REPLY @22 GOTO 30
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",24999)GlobalLT("NWNwTavTaxes","GLOBAL",25501)~ THEN REPLY @22 GOTO 31
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",44999)~ THEN REPLY @22 GOTO 32
+  IF ~  GlobalLT("NWNwTavTaxes","GLOBAL",499)~ THEN REPLY @22 GOTO 33
   IF ~  Global("Acquaintance","LOCALS",0)~ THEN REPLY @23 DO ~SetGlobal("Acquaintance","LOCALS",1)~ GOTO 34
   IF ~~ THEN REPLY @7 GOTO 35
 END
 
 IF ~~ THEN BEGIN 15 // from: 14.2
   SAY @24
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 16 // from: 14.3
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(1000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 17 // from: 14.3
   SAY @26
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(1500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(1500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18 // from: 14.4
   SAY @27
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(2000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(2000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19 // from: 14.5
   SAY @28
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(2500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(2500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20 // from: 14.6
   SAY @29
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(3000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(3000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 21 // from: 14.7
   SAY @30
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(3500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(3500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 14.8
   SAY @31
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(4000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(4000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 14.9
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(4500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(4500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 14.9
   SAY @33
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(5000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(5000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 14.10
   SAY @34
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(5500)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(5500)~ EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 14.11
   SAY @35
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(6000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(6000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 14.12
   SAY @36
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(7000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(7000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 28 // from: 14.13
   SAY @37
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(8000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(8000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 29 // from: 14.14
   SAY @38
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(10000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(10000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 30 // from: 14.15
   SAY @39
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(15000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(15000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 31 // from: 14.16
   SAY @40
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(25000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(25000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 32 // from: 14.17
   SAY @41
-  IF ~~ THEN DO ~SetGlobal("NwTavTaxes","GLOBAL",0)GiveGoldForce(50000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWNwTavTaxes","GLOBAL",0)GiveGoldForce(50000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 33 // from: 14.18
@@ -230,25 +230,25 @@ END
 IF ~~ THEN BEGIN 34 // from: 14.19
   SAY @43
   IF ~~ THEN REPLY @3 DO ~StartStore("NWBART2",LastTalkedToBy(Myself))~ EXIT
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",499)GlobalLT("NwTavTaxes","GLOBAL",501)~ THEN REPLY @22 GOTO 15
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",999)GlobalLT("NwTavTaxes","GLOBAL",1501)~ THEN REPLY @22 GOTO 16
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",1499)GlobalLT("NwTavTaxes","GLOBAL",2001)~ THEN REPLY @22 GOTO 17
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",1999)GlobalLT("NwTavTaxes","GLOBAL",2501)~ THEN REPLY @22 GOTO 18
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",2499)GlobalLT("NwTavTaxes","GLOBAL",3001)~ THEN REPLY @22 GOTO 19
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",2999)GlobalLT("NwTavTaxes","GLOBAL",3501)~ THEN REPLY @22 GOTO 20
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",3499)GlobalLT("NwTavTaxes","GLOBAL",4001)~ THEN REPLY @22 GOTO 21
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",3999)GlobalLT("NwTavTaxes","GLOBAL",4501)~ THEN REPLY @22 GOTO 22
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",4499)GlobalLT("NwTavTaxes","GLOBAL",5001)~ THEN REPLY @22 GOTO 23
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",4999)GlobalLT("NwTavTaxes","GLOBAL",5501)~ THEN REPLY @22 GOTO 24
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",5499)GlobalLT("NwTavTaxes","GLOBAL",6001)~ THEN REPLY @22 GOTO 25
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",5999)GlobalLT("NwTavTaxes","GLOBAL",6501)~ THEN REPLY @22 GOTO 26
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",6999)GlobalLT("NwTavTaxes","GLOBAL",7501)~ THEN REPLY @22 GOTO 27
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",7999)GlobalLT("NwTavTaxes","GLOBAL",8501)~ THEN REPLY @22 GOTO 28
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",9999)GlobalLT("NwTavTaxes","GLOBAL",10501)~ THEN REPLY @22 GOTO 29
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",14999)GlobalLT("NwTavTaxes","GLOBAL",15501)~ THEN REPLY @22 GOTO 30
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",24999)GlobalLT("NwTavTaxes","GLOBAL",25501)~ THEN REPLY @22 GOTO 31
-  IF ~  GlobalGT("NwTavTaxes","GLOBAL",44999)~ THEN REPLY @22 GOTO 32
-  IF ~  GlobalLT("NwTavTaxes","GLOBAL",499)~ THEN REPLY @22 GOTO 33
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",499)GlobalLT("NWNwTavTaxes","GLOBAL",501)~ THEN REPLY @22 GOTO 15
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",999)GlobalLT("NWNwTavTaxes","GLOBAL",1501)~ THEN REPLY @22 GOTO 16
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",1499)GlobalLT("NWNwTavTaxes","GLOBAL",2001)~ THEN REPLY @22 GOTO 17
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",1999)GlobalLT("NWNwTavTaxes","GLOBAL",2501)~ THEN REPLY @22 GOTO 18
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",2499)GlobalLT("NWNwTavTaxes","GLOBAL",3001)~ THEN REPLY @22 GOTO 19
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",2999)GlobalLT("NWNwTavTaxes","GLOBAL",3501)~ THEN REPLY @22 GOTO 20
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",3499)GlobalLT("NWNwTavTaxes","GLOBAL",4001)~ THEN REPLY @22 GOTO 21
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",3999)GlobalLT("NWNwTavTaxes","GLOBAL",4501)~ THEN REPLY @22 GOTO 22
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",4499)GlobalLT("NWNwTavTaxes","GLOBAL",5001)~ THEN REPLY @22 GOTO 23
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",4999)GlobalLT("NWNwTavTaxes","GLOBAL",5501)~ THEN REPLY @22 GOTO 24
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",5499)GlobalLT("NWNwTavTaxes","GLOBAL",6001)~ THEN REPLY @22 GOTO 25
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",5999)GlobalLT("NWNwTavTaxes","GLOBAL",6501)~ THEN REPLY @22 GOTO 26
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",6999)GlobalLT("NWNwTavTaxes","GLOBAL",7501)~ THEN REPLY @22 GOTO 27
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",7999)GlobalLT("NWNwTavTaxes","GLOBAL",8501)~ THEN REPLY @22 GOTO 28
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",9999)GlobalLT("NWNwTavTaxes","GLOBAL",10501)~ THEN REPLY @22 GOTO 29
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",14999)GlobalLT("NWNwTavTaxes","GLOBAL",15501)~ THEN REPLY @22 GOTO 30
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",24999)GlobalLT("NWNwTavTaxes","GLOBAL",25501)~ THEN REPLY @22 GOTO 31
+  IF ~  GlobalGT("NWNwTavTaxes","GLOBAL",44999)~ THEN REPLY @22 GOTO 32
+  IF ~  GlobalLT("NWNwTavTaxes","GLOBAL",499)~ THEN REPLY @22 GOTO 33
   IF ~~ THEN REPLY @7 GOTO 35
 END
 

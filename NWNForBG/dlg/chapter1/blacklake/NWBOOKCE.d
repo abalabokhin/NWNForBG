@@ -7,10 +7,10 @@
 
 BEGIN ~NWBOOKCE~
 
-IF ~  Global("DoorOpened","GLOBAL",0)
+IF ~  Global("NWDoorOpened","GLOBAL",0)
 ~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  OR(2)GlobalGT("TelmaSecret","GLOBAL",0)GlobalGT("PankinSecret","GLOBAL",0)~ THEN REPLY @1GOTO 1
+  IF ~  OR(2)GlobalGT("NWTelmaSecret","GLOBAL",0)GlobalGT("NWPankinSecret","GLOBAL",0)~ THEN REPLY @1GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 2
@@ -20,7 +20,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.0
   SAY @7
-  IF ~~ THEN DO ~SetGlobal("DoorOpened","GLOBAL",1)
+  IF ~~ THEN DO ~SetGlobal("NWDoorOpened","GLOBAL",1)
 ~ EXIT
 END
 

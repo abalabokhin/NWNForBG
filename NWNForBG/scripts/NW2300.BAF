@@ -7,19 +7,19 @@ THEN
 END
 
 IF
-	Global("2300DOOR","GLOBAL",1)
+	Global("NW2300DOOR","GLOBAL",1)
 	OpenState("Door1",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("2300DOOR","GLOBAL",0)
+		SetGlobal("NW2300DOOR","GLOBAL",0)
 END
 
 IF
-	Global("2300DOOR","GLOBAL",1)
+	Global("NW2300DOOR","GLOBAL",1)
 	OpenState("Door1",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("2300DOOR","GLOBAL",0)
+		SetGlobal("NW2300DOOR","GLOBAL",0)
 		OpenDoor("Door1")
 END
 

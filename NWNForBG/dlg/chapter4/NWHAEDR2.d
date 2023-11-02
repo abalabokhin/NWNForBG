@@ -40,7 +40,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 5.1
   SAY @12
-  IF ~~ THEN DO ~SetGlobal("HaedralinJob","GLOBAL",2)EraseJournalEntry(@107603)~ UNSOLVED_JOURNAL @107602 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHaedralinJob","GLOBAL",2)EraseJournalEntry(@107603)~ UNSOLVED_JOURNAL @107602 EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 5.2
@@ -201,7 +201,7 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 30.2
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("HaedralinJob","GLOBAL",1)EraseJournalEntry(@104662)~ UNSOLVED_JOURNAL @107603 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWHaedralinJob","GLOBAL",1)EraseJournalEntry(@104662)~ UNSOLVED_JOURNAL @107603 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 30.3
@@ -341,7 +341,7 @@ END
 // ------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)!PartyHasItem("NWWORD4")Global("HaedralinJob","GLOBAL",0)~ THEN BEGIN 54 // from:
+~  !NumTimesTalkedTo(0)!PartyHasItem("NWWORD4")Global("NWHaedralinJob","GLOBAL",0)~ THEN BEGIN 54 // from:
   SAY @83
   IF ~~ THEN GOTO 15
 END
@@ -349,7 +349,7 @@ END
 // ------------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)!PartyHasItem("NWWORD4")Global("HaedralinJob","GLOBAL",1)~ THEN BEGIN 55 // from:
+~  !NumTimesTalkedTo(0)!PartyHasItem("NWWORD4")Global("NWHaedralinJob","GLOBAL",1)~ THEN BEGIN 55 // from:
   SAY @84
   IF ~~ THEN GOTO 56
 END
@@ -365,7 +365,7 @@ END
 // ------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)!PartyHasItem("NWWORD4")GlobalGT("HaedralinJob","GLOBAL",1)~ THEN BEGIN 57 // from:
+~  !NumTimesTalkedTo(0)!PartyHasItem("NWWORD4")GlobalGT("NWHaedralinJob","GLOBAL",1)~ THEN BEGIN 57 // from:
   SAY @86
   IF ~~ THEN GOTO 58
 END

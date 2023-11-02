@@ -105,7 +105,7 @@ END
 
 IF ~~ THEN BEGIN 16 // from: 14.1
   SAY @32
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",1)GiveItemCreate("NWRINGRA",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @99856 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRevatQuest","GLOBAL",1)GiveItemCreate("NWRINGRA",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @99856 EXIT
 END
 
 IF ~~ THEN BEGIN 15 // from: 9.5
@@ -116,7 +116,7 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RevatQuest","GLOBAL",0)~ THEN BEGIN 17 // from:
+~  Global("NWRevatQuest","GLOBAL",0)~ THEN BEGIN 17 // from:
   SAY @35
   IF ~~ THEN REPLY @36 GOTO 5
   IF ~  Global("KnowRevat","LOCALS",1)~ THEN REPLY @37 GOTO 14
@@ -126,11 +126,11 @@ END
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RevatQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
+~  Global("NWRevatQuest","GLOBAL",1)~ THEN BEGIN 18 // from:
   SAY @39
   IF ~~ THEN REPLY @40 GOTO 19
   IF ~~ THEN REPLY @41 GOTO 20
-  IF ~  OR(2)Dead("NWJANIS")Global("DeadJanis","GLOBAL",2)~ THEN REPLY @42 GOTO 21
+  IF ~  OR(2)Dead("NWJANIS")Global("NWDeadJanis","GLOBAL",2)~ THEN REPLY @42 GOTO 21
 END
 
 IF ~~ THEN BEGIN 19 // from: 18.1
@@ -145,13 +145,13 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 18.3
   SAY @45
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",6)EraseJournalEntry(@99856)EscapeArea() ~ SOLVED_JOURNAL @99901 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRevatQuest","GLOBAL",6)EraseJournalEntry(@99856)EscapeArea() ~ SOLVED_JOURNAL @99901 EXIT
 END
 
 // -----------------------------------------------------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("RevatQuest","GLOBAL",2)~ THEN BEGIN 22 // from:
+~  Global("NWRevatQuest","GLOBAL",2)~ THEN BEGIN 22 // from:
   SAY @47
   IF ~~ THEN REPLY @48 GOTO 23
   IF ~~ THEN REPLY @49 GOTO 24
@@ -173,23 +173,23 @@ END
 
 IF ~~ THEN BEGIN 27 // from: 24.1
   SAY @54
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(990)EraseJournalEntry(@99856)ReputationInc(-1)~ SOLVED_JOURNAL @99908 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(990)EraseJournalEntry(@99856)ReputationInc(-1)~ SOLVED_JOURNAL @99908 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 22.3
   SAY @56
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(740)EraseJournalEntry(@99856)~ SOLVED_JOURNAL @99908 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRevatQuest","GLOBAL",3)AddexperienceParty(10000)GiveGoldForce(740)EraseJournalEntry(@99856)~ SOLVED_JOURNAL @99908 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 22.4
   SAY @57
-  IF ~~ THEN DO ~SetGlobal("RevatQuest","GLOBAL",3)AddexperienceParty(10000)EraseJournalEntry(@99856)ReputationInc(1)~ SOLVED_JOURNAL @99908 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWRevatQuest","GLOBAL",3)AddexperienceParty(10000)EraseJournalEntry(@99856)ReputationInc(1)~ SOLVED_JOURNAL @99908 EXIT
 END
 
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("LentonQuest","GLOBAL",3)~ THEN BEGIN 28 // from:
+~  Global("NWLentonQuest","GLOBAL",3)~ THEN BEGIN 28 // from:
   SAY @58
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
@@ -197,7 +197,7 @@ END
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #5 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("LentonQuest","GLOBAL",3)~ THEN BEGIN 29 // from:
+~  GlobalGT("NWLentonQuest","GLOBAL",3)~ THEN BEGIN 29 // from:
   SAY @59
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END

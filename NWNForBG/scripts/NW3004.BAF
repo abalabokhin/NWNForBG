@@ -1,5 +1,5 @@
 IF
-	Global("LillianJob","GLOBAL",2)
+	Global("NWLillianJob","GLOBAL",2)
 	OpenState("Sphere",FALSE)
 	Global("ActivateOrb","MYAREA",0)
 THEN

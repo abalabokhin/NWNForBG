@@ -10,7 +10,7 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.1
   SAY @3
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
   IF ~  !Dead("NWVAATH")~ THEN REPLY @6 GOTO 5
   IF ~  Dead("NWVAATH")~ THEN REPLY @7 GOTO 6
@@ -32,21 +32,21 @@ END
 IF ~~ THEN BEGIN 4 // from: 1.2 С золотом
   SAY @12
   IF ~~ THEN REPLY @10 GOTO 11
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 12
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 12
   IF ~  !Dead("NWVAATH")~ THEN REPLY @6 GOTO 13
   IF ~~ THEN REPLY @11 GOTO 10
 END
 
 IF ~~ THEN BEGIN 5 // from: 1.3
   SAY @13
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @11 GOTO 10
 END
 
 IF ~~ THEN BEGIN 6 // from: 1.4
   SAY @14
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 3
   IF ~~ THEN REPLY @5 GOTO 4
   IF ~~ THEN REPLY @11 GOTO 10
 END
@@ -90,7 +90,7 @@ END
 IF ~~ THEN BEGIN 13 // from: 4.3 С золотом
   SAY @13
   IF ~~ THEN REPLY @10 GOTO 11
-  IF ~  GlobalGT("RolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 12
+  IF ~  GlobalGT("NWRolkidQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 12
   IF ~~ THEN REPLY @11 GOTO 10
 END
 

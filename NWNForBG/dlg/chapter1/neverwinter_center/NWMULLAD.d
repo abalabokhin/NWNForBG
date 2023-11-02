@@ -3,7 +3,7 @@
 BEGIN ~NWMULLAD~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("WtDeepCreature","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  Global("NWWtDeepCreature","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 1
@@ -24,7 +24,7 @@ END
 // ------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("WtDeepCreature","GLOBAL",0)GlobalLT("WtDeepCreature","GLOBAL",3)~ THEN BEGIN 3 // from:
+~  GlobalGT("NWWtDeepCreature","GLOBAL",0)GlobalLT("NWWtDeepCreature","GLOBAL",3)~ THEN BEGIN 3 // from:
   SAY @7
   IF ~~ THEN REPLY @8 GOTO 4
   IF ~~ THEN REPLY @9 GOTO 5
@@ -49,7 +49,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("WtDeepCreature","GLOBAL",3)~ THEN BEGIN 7 // from:
+~  Global("NWWtDeepCreature","GLOBAL",3)~ THEN BEGIN 7 // from:
   SAY @14
   IF ~~ THEN EXIT
 END
@@ -57,7 +57,7 @@ END
 // -------------------------------------
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("WtDeepCreature","GLOBAL",3)GlobalLT("NWNChapter","GLOBAL",2)~ THEN BEGIN 8 // from:
+~  GlobalGT("NWWtDeepCreature","GLOBAL",3)GlobalLT("NWNChapter","GLOBAL",2)~ THEN BEGIN 8 // from:
   SAY @15
   IF ~~ THEN GOTO 9
 END

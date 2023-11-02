@@ -1,7 +1,7 @@
 IF
 	Global("Premium","MYAREA",0)
-	Global("DeceiveNeurrik","GLOBAL",-3)
-	Global("NeurikQuest","GLOBAL",4)
+	Global("NWDeceiveNeurrik","GLOBAL",-3)
+	Global("NWNeurikQuest","GLOBAL",4)
 THEN
 	RESPONSE #100
 		SetGlobal("Premium","MYAREA",1)
@@ -10,8 +10,8 @@ END
 
 IF
 	Global("Premium","MYAREA",0)
-	Global("DeceiveNeurrik","GLOBAL",1)
-	Global("NeurikQuest","GLOBAL",4)
+	Global("NWDeceiveNeurrik","GLOBAL",1)
+	Global("NWNeurikQuest","GLOBAL",4)
 THEN
 	RESPONSE #100
 		SetGlobal("Premium","MYAREA",1)
@@ -20,8 +20,8 @@ END
 
 IF
 	Global("Premium","MYAREA",0)
-	Global("DeceiveNeurrik","GLOBAL",2)
-	Global("NeurikQuest","GLOBAL",4)
+	Global("NWDeceiveNeurrik","GLOBAL",2)
+	Global("NWNeurikQuest","GLOBAL",4)
 THEN
 	RESPONSE #100
 		SetGlobal("Premium","MYAREA",1)
@@ -30,8 +30,8 @@ END
 
 IF
 	Global("Premium","MYAREA",0)
-	Global("DeceiveNeurrik","GLOBAL",3)
-	Global("NeurikQuest","GLOBAL",4)
+	Global("NWDeceiveNeurrik","GLOBAL",3)
+	Global("NWNeurikQuest","GLOBAL",4)
 THEN
 	RESPONSE #100
 		SetGlobal("Premium","MYAREA",1)

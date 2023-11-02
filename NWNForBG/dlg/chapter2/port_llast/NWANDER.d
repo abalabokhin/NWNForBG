@@ -3,15 +3,15 @@
 BEGIN ~NWANDER~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalLT("NeurikQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
+~  GlobalLT("NWNeurikQuest","GLOBAL",4)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 1
   IF ~  !NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 2
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",1)~ THEN REPLY @2 GOTO 26
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",0)~ THEN REPLY @3 GOTO 5
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",1)~ THEN REPLY @2 GOTO 26
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)Global("TalkAboutWerewolw","LOCALS",0)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 26 // from: 0.4
@@ -41,17 +41,17 @@ END
 
 IF ~~ THEN BEGIN 25 // from: 1.2
   SAY @13
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @14 GOTO 8
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @14 GOTO 9
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @14 GOTO 8
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @14 GOTO 9
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.2
   SAY @15
   IF ~  ~ THEN REPLY @16 GOTO 4
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @3 GOTO 5
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 8 // from: 4.2
@@ -88,12 +88,12 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
   SAY @26
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 9
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 8
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @3 GOTO 5
-  IF ~  Global("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
-  IF ~  GlobalGT("NeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 9
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @27 GOTO 8
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @2 GOTO 3
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @3 GOTO 5
+  IF ~  Global("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 6
+  IF ~  GlobalGT("NWNeurikQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 7
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
@@ -205,16 +205,16 @@ IF ~~ THEN BEGIN 24 // from: 15.4
 END
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",3)GlobalLT("NeurikQuest","GLOBAL",7)~ THEN BEGIN 27 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",3)GlobalLT("NWNeurikQuest","GLOBAL",7)~ THEN BEGIN 27 // from:
   SAY @51
-  IF ~  GlobalLT("NeurikQuest","GLOBAL",6)~ THEN REPLY @52 GOTO 48
+  IF ~  GlobalLT("NWNeurikQuest","GLOBAL",6)~ THEN REPLY @52 GOTO 48
   IF ~  !InMyArea("Alhelor1")~ THEN REPLY @53 GOTO 49
   IF ~  !InMyArea("Alhelor1")~ THEN REPLY @54 GOTO 47
   IF ~~ THEN REPLY @4 GOTO 7
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",6)GlobalLT("NeurikQuest","GLOBAL",10)!Dead("NWALHELR")!Dead("Alhelor1")Global("TalkAboutAlhelor","LOCALS",0)~ THEN BEGIN 28 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",6)GlobalLT("NWNeurikQuest","GLOBAL",10)!Dead("NWALHELR")!Dead("Alhelor1")Global("TalkAboutAlhelor","LOCALS",0)~ THEN BEGIN 28 // from:
   SAY @55
   IF ~  NumTimesTalkedTo(0)~ THEN REPLY @1 GOTO 29
   IF ~~ THEN REPLY @56 GOTO 31
@@ -269,14 +269,14 @@ IF ~~ THEN BEGIN 34 // from: 32
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",6)GlobalLT("NeurikQuest","GLOBAL",10)!Dead("NWALHELR")!Dead("Alhelor1")Global("TalkAboutAlhelor","LOCALS",1)~ THEN BEGIN 35 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",6)GlobalLT("NWNeurikQuest","GLOBAL",10)!Dead("NWALHELR")!Dead("Alhelor1")Global("TalkAboutAlhelor","LOCALS",1)~ THEN BEGIN 35 // from:
   SAY @68
   IF ~~ THEN REPLY @69 GOTO 47
   IF ~~ THEN REPLY @70 EXIT
 END
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  GlobalGT("NeurikQuest","GLOBAL",6)Dead("NWALHELR")~ THEN BEGIN 36 // from:
+~  GlobalGT("NWNeurikQuest","GLOBAL",6)Dead("NWALHELR")~ THEN BEGIN 36 // from:
   SAY @71
   IF ~~ THEN REPLY @72 GOTO 37
   IF ~~ THEN REPLY @73 GOTO 38
@@ -327,12 +327,12 @@ END
 
 IF ~~ THEN BEGIN 43 // from: 39.1
   SAY @88
-  IF ~~ THEN DO ~SetGlobal("AnderIsMerchant","GLOBAL",1)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAnderIsMerchant","GLOBAL",1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 44 // from: 39.2
   SAY @89
-  IF ~~ THEN DO ~SetGlobal("AnderIsMerchant","GLOBAL",2)TakePartyGold(300)ReputationInc(1)EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWAnderIsMerchant","GLOBAL",2)TakePartyGold(300)ReputationInc(1)EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 45 // from: 41.3
@@ -354,7 +354,7 @@ END
 
 IF ~~ THEN BEGIN 49 // from: 27.2
   SAY @92
-  IF ~  GlobalLT("NeurikQuest","GLOBAL",6)~ THEN REPLY @52 GOTO 48
+  IF ~  GlobalLT("NWNeurikQuest","GLOBAL",6)~ THEN REPLY @52 GOTO 48
   IF ~  !InMyArea("Alhelor1")~ THEN REPLY @54 GOTO 47
   IF ~~ THEN REPLY @4 GOTO 7
 END

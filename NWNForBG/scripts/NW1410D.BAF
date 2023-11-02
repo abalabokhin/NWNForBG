@@ -2,9 +2,9 @@ IF
 	OR(2)
 		Clicked([ANYONE])
 		IsOverMe([ANYONE])
-	!Global("Door1410","GLOBAL",1)
+	!Global("NWDoor1410","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("Door1410","GLOBAL",1)
+		SetGlobal("NWDoor1410","GLOBAL",1)
 END
 

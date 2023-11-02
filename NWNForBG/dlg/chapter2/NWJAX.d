@@ -3,7 +3,7 @@
 BEGIN ~NWJAX~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("JaxQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWJaxQuest","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
   IF ~~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
@@ -134,23 +134,23 @@ END
 
 IF ~~ THEN BEGIN 22 // from: 20.1
   SAY @48
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)GiveGoldForce(300)SetGlobal("Prepayment","LOCALS",1)~ UNSOLVED_JOURNAL @99363 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",1)GiveGoldForce(300)SetGlobal("Prepayment","LOCALS",1)~ UNSOLVED_JOURNAL @99363 EXIT
 END
 
 IF ~~ THEN BEGIN 23 // from: 20.2
   SAY @50
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99363 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99363 EXIT
 END
 
 IF ~~ THEN BEGIN 24 // from: 20.3
   SAY @51
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99363 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",1)~ UNSOLVED_JOURNAL @99363 EXIT
 END
 
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("JaxQuest","GLOBAL",0)!PartyHasItem("NWSTORYC")~ THEN BEGIN 25 // from:
+~  !NumTimesTalkedTo(0)Global("NWJaxQuest","GLOBAL",0)!PartyHasItem("NWSTORYC")~ THEN BEGIN 25 // from:
   SAY @52
   IF ~~ THEN REPLY @53 GOTO 1
   IF ~~ THEN REPLY @54 GOTO 26
@@ -164,7 +164,7 @@ END
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("JaxQuest","GLOBAL",0)PartyHasItem("NWSTORYC")~ THEN BEGIN 27 // from:
+~  !NumTimesTalkedTo(0)Global("NWJaxQuest","GLOBAL",0)PartyHasItem("NWSTORYC")~ THEN BEGIN 27 // from:
   SAY @56
   IF ~~ THEN REPLY @57 GOTO 28
   IF ~~ THEN REPLY @58 GOTO 20
@@ -218,8 +218,8 @@ END
 
 IF ~~ THEN BEGIN 37 // from: 34
   SAY @75
-  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1500)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
-  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1200)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1500)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1200)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
 END
 
 IF ~~ THEN BEGIN 35 // from: 29.5
@@ -233,8 +233,8 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 29.4
   SAY @78
-  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1750)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
-  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1450)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1750)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1450)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
 END
 
 IF ~~ THEN BEGIN 38 // from: 31.2 32.3 33.2 35.5
@@ -250,8 +250,8 @@ END
 
 IF ~~ THEN BEGIN 41 // from: 39
   SAY @75
-  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(2000)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
-  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1700)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",0)~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(2000)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
+  IF ~  Global("Prepayment","LOCALS",1)~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",2)AddexperienceParty(80000)GiveGoldForce(1700)TakePartyItem("NWSTORYC")EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99436 EXIT
 END
 
 IF ~~ THEN BEGIN 40 // from: 38.2
@@ -261,13 +261,13 @@ END
 
 IF ~~ THEN BEGIN 42 // from: 40
   SAY @75
-  IF ~~ THEN DO ~SetGlobal("JaxQuest","GLOBAL",6)EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99444 EXIT
+  IF ~~ THEN DO ~SetGlobal("NWJaxQuest","GLOBAL",6)EraseJournalEntry(@99363)EscapeArea()~ SOLVED_JOURNAL @99444 EXIT
 END
 
 // --------------------------------------------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("JaxQuest","GLOBAL",1)~ THEN BEGIN 43 // from:
+~  !NumTimesTalkedTo(0)Global("NWJaxQuest","GLOBAL",1)~ THEN BEGIN 43 // from:
   SAY @85
   IF ~~ THEN REPLY @86 GOTO 44
   IF ~  PartyHasItem("NWSTORYC")~ THEN REPLY @87 GOTO 29

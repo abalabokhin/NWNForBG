@@ -9,30 +9,30 @@ THEN
 END
 
 IF
-	Global("Door1410","GLOBAL",1)
+	Global("NWDoor1410","GLOBAL",1)
 	OpenState("Door11",FALSE)
 THEN
 	RESPONSE #100
-		SetGlobal("Door1410","GLOBAL",0)
+		SetGlobal("NWDoor1410","GLOBAL",0)
 		Unlock("Door11")
 		OpenDoor("Door11")
 END
 
 IF
-	Global("Door1410","GLOBAL",1)
+	Global("NWDoor1410","GLOBAL",1)
 	OpenState("Door11",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("Door1410","GLOBAL",0)
+		SetGlobal("NWDoor1410","GLOBAL",0)
 END
 
 IF
-	Global("Door1406","GLOBAL",1)
+	Global("NWDoor1406","GLOBAL",1)
 	OpenState("Door16",FALSE)
 THEN
 	RESPONSE #100
 		SetGlobal("MeldanenDoor","MYAREA",2)
-		SetGlobal("Door1406","GLOBAL",0)
+		SetGlobal("NWDoor1406","GLOBAL",0)
 		Unlock("Door16")
 		OpenDoor("Door16")
 END
@@ -47,11 +47,11 @@ THEN
 END
 
 IF
-	Global("Door1406","GLOBAL",1)
+	Global("NWDoor1406","GLOBAL",1)
 	OpenState("Door16",TRUE)
 THEN
 	RESPONSE #100
-		SetGlobal("Door1406","GLOBAL",0)
+		SetGlobal("NWDoor1406","GLOBAL",0)
 END
 
 IF
@@ -92,13 +92,13 @@ THEN
 END
 
 IF
-	Global("Nwnzoo","GLOBAL",1)
+	Global("NWNwnzoo","GLOBAL",1)
 	AreaCheck("NW1400")  // ??????????
 	Global("TreeActive","MYAREA",0)
 THEN
 	RESPONSE #100
 		SetGlobal("TreeActive","MYAREA",1)
-		SetGlobal("Nwnzoo","GLOBAL",2)
+		SetGlobal("NWNwnzoo","GLOBAL",2)
 		TakePartyItem("NWNYATSL")  // ?????? ???????? ????? ????????
 		DestroyItem("NWNYATSL")  // ?????? ???????? ????? ????????
 		PlaySound("EFF_M27")
@@ -112,8 +112,8 @@ END
 IF
 	Global("TreeActive","MYAREA",1)
 	OR(2)
-		GlobalGT("NyatarQuest","GLOBAL",2)
-		GlobalGT("AnimalsRescued","GLOBAL",4)
+		GlobalGT("NWNyatarQuest","GLOBAL",2)
+		GlobalGT("NWAnimalsRescued","GLOBAL",4)
 THEN
 	RESPONSE #100
 		SetGlobal("TreeActive","MYAREA",2)
@@ -123,35 +123,35 @@ THEN
 END
 
 IF
-	Global("Door1410","GLOBAL",1)
+	Global("NWDoor1410","GLOBAL",1)
 	OpenState("Door11",FALSE)
 THEN
 	RESPONSE #100
 		Unlock("Door11")
 		OpenDoor("Door11")
-		SetGlobal("Door1410","GLOBAL",0)
+		SetGlobal("NWDoor1410","GLOBAL",0)
 END
 
 IF
-	GlobalGT("FormosaQuest","GLOBAL",1)
+	GlobalGT("NWFormosaQuest","GLOBAL",1)
 	!Dead("NWFORMOA")  // ???????
-	Global("OpenWarehouse","GLOBAL",0)
+	Global("NWOpenWarehouse","GLOBAL",0)
 	Delay(3)
 THEN
 	RESPONSE #100
-		SetGlobal("OpenWarehouse","GLOBAL",1)
+		SetGlobal("NWOpenWarehouse","GLOBAL",1)
 		ActionOverride("NWFORMOA",EscapeAreaObject("To1402"))
 		Unlock("Door20")
 		OpenDoor("Door20")
 END
 
 IF
-	Global("BlackLakeDone","GLOBAL",0)
+	Global("NWBlackLakeDone","GLOBAL",0)
 	OR(2)
-		GlobalGT("FormosaQuest","GLOBAL",1)
-		GlobalGT("MeldanenQuest","GLOBAL",1)
+		GlobalGT("NWFormosaQuest","GLOBAL",1)
+		GlobalGT("NWMeldanenQuest","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("BlackLakeDone","GLOBAL",1)
+		SetGlobal("NWBlackLakeDone","GLOBAL",1)
 END
 

@@ -3,9 +3,9 @@
 BEGIN ~NWMOBLEY~
 
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
-~  NumTimesTalkedTo(0)Global("Charwood_Is_Saved","GLOBAL",0)Global("Charwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 0 // from:
+~  NumTimesTalkedTo(0)Global("NWCharwood_Is_Saved","GLOBAL",0)Global("NWCharwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~~ THEN REPLY @1 DO ~SetGlobal("KnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @98004 GOTO 1
+  IF ~~ THEN REPLY @1 DO ~SetGlobal("NWKnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @98004 GOTO 1
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
@@ -133,17 +133,17 @@ END
 // -----------------------------------------------------
 
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
-~  !NumTimesTalkedTo(0)Global("Charwood_Is_Saved","GLOBAL",0)Global("Charwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 20 // from:
+~  !NumTimesTalkedTo(0)Global("NWCharwood_Is_Saved","GLOBAL",0)Global("NWCharwood_Is_Cursed","GLOBAL",0)~ THEN BEGIN 20 // from:
   SAY @40
-  IF ~  GlobalGT("KnowMajor","GLOBAL",0)~ THEN REPLY @41 GOTO 2
-  IF ~  Global("KnowMajor","GLOBAL",0)~ THEN REPLY @41 DO ~SetGlobal("KnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @98004 GOTO 2
+  IF ~  GlobalGT("NWKnowMajor","GLOBAL",0)~ THEN REPLY @41 GOTO 2
+  IF ~  Global("NWKnowMajor","GLOBAL",0)~ THEN REPLY @41 DO ~SetGlobal("NWKnowMajor","GLOBAL",1)~ UNSOLVED_JOURNAL @98004 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
 END
 
 // --------------------------------------------------------
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Charwood_Is_Saved","GLOBAL",1)~ THEN BEGIN 21 // from:
+~  Global("NWCharwood_Is_Saved","GLOBAL",1)~ THEN BEGIN 21 // from:
   SAY @42
   IF ~~ THEN REPLY @43 GOTO 22
   IF ~~ THEN REPLY @44 GOTO 23
@@ -172,7 +172,7 @@ IF ~~ THEN BEGIN 25 // from: 21.4
 END
 
 IF WEIGHT #3 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Charwood_Is_Cursed","GLOBAL",1)Global("JaregQuest","GLOBAL",5)~ THEN BEGIN 26 // from:
+~  Global("NWCharwood_Is_Cursed","GLOBAL",1)Global("NWJaregQuest","GLOBAL",5)~ THEN BEGIN 26 // from:
   SAY @50
   IF ~~ THEN REPLY @51 GOTO 27
   IF ~~ THEN REPLY @52 GOTO 28
@@ -203,7 +203,7 @@ END
 // ----------------------------------------------------
 
 IF WEIGHT #4 /* Triggers after states #: 9 even though they appear after this state */
-~  Global("Charwood_Is_Cursed","GLOBAL",1)Global("JaregQuest","GLOBAL",6)~ THEN BEGIN 39 // from:
+~  Global("NWCharwood_Is_Cursed","GLOBAL",1)Global("NWJaregQuest","GLOBAL",6)~ THEN BEGIN 39 // from:
   SAY @0
   IF ~~ THEN REPLY @1GOTO 31
   IF ~~ THEN REPLY @41 GOTO 32

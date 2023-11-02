@@ -13,13 +13,13 @@ END
 
 IF ~~ THEN BEGIN 61 // from: 60.1
   SAY @3
-  IF ~  Global("LinaQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 63
-  IF ~  Global("LinaQuest","GLOBAL",1)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @5 GOTO 64
-  IF ~  Global("LinaQuest","GLOBAL",2)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @5 GOTO 65
-  IF ~  Global("LinaQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 66
-  IF ~  OR(2)GlobalGT("LinaQuest","GLOBAL",3)GlobalTimerNotExpired("LinaTimer","LOCALS")~ THEN REPLY @5 GOTO 67
-  IF ~  Global("BlackLakeDone","GLOBAL",0)~ THEN REPLY @6 GOTO 70
-  IF ~  GlobalGT("BlackLakeDone","GLOBAL",0)~ THEN REPLY @6 GOTO 73
+  IF ~  Global("NWLinaQuest","GLOBAL",0)~ THEN REPLY @4 GOTO 63
+  IF ~  Global("NWLinaQuest","GLOBAL",1)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @5 GOTO 64
+  IF ~  Global("NWLinaQuest","GLOBAL",2)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @5 GOTO 65
+  IF ~  Global("NWLinaQuest","GLOBAL",3)~ THEN REPLY @5 GOTO 66
+  IF ~  OR(2)GlobalGT("NWLinaQuest","GLOBAL",3)GlobalTimerNotExpired("LinaTimer","LOCALS")~ THEN REPLY @5 GOTO 67
+  IF ~  Global("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @6 GOTO 70
+  IF ~  GlobalGT("NWBlackLakeDone","GLOBAL",0)~ THEN REPLY @6 GOTO 73
 END
 
 IF ~~ THEN BEGIN 62 // from: 60.5
@@ -245,12 +245,12 @@ END
 
 IF ~~ THEN BEGIN 101 // from: 99.1
   SAY @86
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",2)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest","GLOBAL",2)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 102 // from: 99.3
   SAY @87
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 103 // from: 79.1
@@ -305,12 +305,12 @@ END
 
 IF ~~ THEN BEGIN 112 // from: 111.1
   SAY @106
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 113 // from: 111.2
   SAY @107
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 114 // from: 81.1
@@ -322,7 +322,7 @@ END
 IF ~~ THEN BEGIN 115 // from: 114.1
   SAY @111
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest","GLOBAL",4)
+    SetGlobal("NWLinaQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -335,7 +335,7 @@ END
 IF ~~ THEN BEGIN 116 // from: 114.2
   SAY @112
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest","GLOBAL",4)
+    SetGlobal("NWLinaQuest","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -373,7 +373,7 @@ END
 
 IF ~~ THEN BEGIN 122 // from: 120.1
   SAY @121
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",1)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest2","GLOBAL",1)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 123 // from: 86.1
@@ -416,7 +416,7 @@ END
 
 IF ~~ THEN BEGIN 130 // from: 128.1
   SAY @135
-  IF ~~ THEN DO ~SetGlobal("LinaQuest3","GLOBAL",1)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest3","GLOBAL",1)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 131 // from: 87.1
@@ -447,33 +447,33 @@ END
 
 IF ~~ THEN BEGIN 136 // from: 91.1
   SAY @143
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",1)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest","GLOBAL",1)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 137 // from: 91.2
   SAY @144
-  IF ~~ THEN DO ~SetGlobal("LinaQuest","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 138 // from: 60.2
   SAY @3
-  IF ~  Global("LinaQuest2","GLOBAL",0)~ THEN REPLY @145 GOTO 68
-  IF ~  Global("LinaQuest2","GLOBAL",1)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @146 GOTO 148
-  IF ~  Global("LinaQuest2","GLOBAL",2)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @147 GOTO 140
-  IF ~  Global("LinaQuest2","GLOBAL",3)~ THEN REPLY @147 GOTO 141
-  IF ~  OR(2)GlobalGT("LinaQuest2","GLOBAL",3)GlobalTimerNotExpired("LinaTimer","LOCALS")~ THEN REPLY @147 GOTO 142
-  IF ~  Global("AavillQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 71
-  IF ~  GlobalGT("AavillQuest","GLOBAL",0)Global("LinaQuest3","GLOBAL",3)~ THEN REPLY @6 GOTO 73
+  IF ~  Global("NWLinaQuest2","GLOBAL",0)~ THEN REPLY @145 GOTO 68
+  IF ~  Global("NWLinaQuest2","GLOBAL",1)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @146 GOTO 148
+  IF ~  Global("NWLinaQuest2","GLOBAL",2)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @147 GOTO 140
+  IF ~  Global("NWLinaQuest2","GLOBAL",3)~ THEN REPLY @147 GOTO 141
+  IF ~  OR(2)GlobalGT("NWLinaQuest2","GLOBAL",3)GlobalTimerNotExpired("LinaTimer","LOCALS")~ THEN REPLY @147 GOTO 142
+  IF ~  Global("NWAavillQuest","GLOBAL",0)~ THEN REPLY @6 GOTO 71
+  IF ~  GlobalGT("NWAavillQuest","GLOBAL",0)Global("NWLinaQuest3","GLOBAL",3)~ THEN REPLY @6 GOTO 73
   IF ~  PartyHasItem("Nwmisc33")~ THEN REPLY @148 GOTO 211
 END
 
 IF ~~ THEN BEGIN 139 // from: 60.3
   SAY @3
-  IF ~  Global("LinaQuest3","GLOBAL",0)~ THEN REPLY @149 GOTO 69
-  IF ~  Global("LinaQuest3","GLOBAL",1)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @150 GOTO 170
-  IF ~  Global("LinaQuest3","GLOBAL",2)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @150 GOTO 171
-  IF ~  Global("LinaQuest3","GLOBAL",3)~ THEN REPLY @150 GOTO 172
-  IF ~  OR(2)GlobalGT("LinaQuest3","GLOBAL",3)GlobalTimerNotExpired("LinaTimer","LOCALS")~ THEN REPLY @150 GOTO 173
+  IF ~  Global("NWLinaQuest3","GLOBAL",0)~ THEN REPLY @149 GOTO 69
+  IF ~  Global("NWLinaQuest3","GLOBAL",1)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @150 GOTO 170
+  IF ~  Global("NWLinaQuest3","GLOBAL",2)GlobalTimerExpired("LinaTimer","LOCALS")~ THEN REPLY @150 GOTO 171
+  IF ~  Global("NWLinaQuest3","GLOBAL",3)~ THEN REPLY @150 GOTO 172
+  IF ~  OR(2)GlobalGT("NWLinaQuest3","GLOBAL",3)GlobalTimerNotExpired("LinaTimer","LOCALS")~ THEN REPLY @150 GOTO 173
   IF ~~ THEN REPLY @6 GOTO 72
 END
 
@@ -518,7 +518,7 @@ END
 
 IF ~~ THEN BEGIN 147 // from: 145.1
   SAY @165
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest2","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 148 // from: 138.2
@@ -550,7 +550,7 @@ END
 IF ~~ THEN BEGIN 152 // from: 149.1
   SAY @175
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest2","GLOBAL",4)
+    SetGlobal("NWLinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -564,7 +564,7 @@ END
 IF ~~ THEN BEGIN 153 // from: 149.2
   SAY @176
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest2","GLOBAL",4)
+    SetGlobal("NWLinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -580,7 +580,7 @@ END
 IF ~~ THEN BEGIN 154 // from: 149.3
   SAY @177
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest2","GLOBAL",4)
+    SetGlobal("NWLinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -596,7 +596,7 @@ END
 IF ~~ THEN BEGIN 155 // from: 149.4
   SAY @178
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest2","GLOBAL",4)
+    SetGlobal("NWLinaQuest2","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",100000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -674,12 +674,12 @@ END
 
 IF ~~ THEN BEGIN 168 // from: 166.1
   SAY @202
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",2)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest2","GLOBAL",2)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 169 // from: 166.2
   SAY @203
-  IF ~~ THEN DO ~SetGlobal("LinaQuest2","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest2","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 170 // from: 139.2
@@ -802,7 +802,7 @@ END
 
 IF ~~ THEN BEGIN 191 // from: 186.2
   SAY @246
-  IF ~~ THEN DO ~SetGlobal("LinaQuest3","GLOBAL",66)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest3","GLOBAL",66)~ EXIT
 END
 
 IF ~~ THEN BEGIN 192 // from: 188.1
@@ -840,7 +840,7 @@ END
 
 IF ~~ THEN BEGIN 198 // from: 197.1
   SAY @260
-  IF ~~ THEN DO ~SetGlobal("LinaQuest3","GLOBAL",2)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest3","GLOBAL",2)SetGlobalTimer("LinaTimer","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 199 // from: 171.1
@@ -905,7 +905,7 @@ END
 
 IF ~~ THEN BEGIN 210 // from: 208.1
   SAY @280
-  IF ~~ THEN DO ~SetGlobal("LinaQuest3","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("NWLinaQuest3","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 211 // from: 172.1
@@ -927,7 +927,7 @@ END
 IF ~~ THEN BEGIN 214 // from: 211.1
   SAY @284
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest3","GLOBAL",4)
+    SetGlobal("NWLinaQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
@@ -945,7 +945,7 @@ END
 IF ~~ THEN BEGIN 215 // from: 211.2
   SAY @285
   IF ~~ THEN DO ~
-    SetGlobal("LinaQuest3","GLOBAL",4)
+    SetGlobal("NWLinaQuest3","GLOBAL",4)
     AddexperienceParty(60000)
     AddXPObject("NWLINA",150000)
     CreateCreatureObject("NWITMDES",Player1,0,0,0)
