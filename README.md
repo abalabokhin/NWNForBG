@@ -83,6 +83,7 @@ In development:
 - Added prefix to more files (manually)
 - Removed IMPRISONMENT spell casting from some mages to make the mod more ballanced.
 - All new wizard spells are added properly (using ADD\_SPELL, not just copied as before).
+- Add prefix for all global variables.
 
 0.92 (10/18/23)
 
