@@ -73,18 +73,19 @@ Version History
 ---------------
 In development:
 
-- One forge recepie is fixed, thanks to megrimlock
-- Many lines in english tra files are automatically (using python script) found in the original NWN texts and/or proof read by paladin84 and megrimlock
-- Implemented autotra, so the original tra files are not modified during installation process, thanks to JohnBob
-- "Usable By", etc are now removing for EE automatically during installation process, thanks to JohnBob
-- Some areas are added to "Cheat Areas" for EE, thanks to JohnBob
-- Some map icons are repositioned on the global map, thanks to JohnBob
+- One forge recepie is fixed, thanks to megrimlock.
+- Many lines in english tra files are automatically (using python script) found in the original NWN texts and/or proof read by paladin84 and megrimlock.
+- Implemented autotra, so the original tra files are not modified during installation process, thanks to JohnBob.
+- "Usable By", etc are now removing for EE automatically during installation process, thanks to JohnBob.
+- Some areas are added to "Cheat Areas" for EE, thanks to JohnBob.
+- Some map icons are repositioned on the global map, thanks to JohnBob.
 - Transform into Wererat ability now works as intended, after turning into Wererat you can speak and after turning back to human all your abilities are recovered.
-- Added prefix to more files (manually)
+- Added prefix to more files (manually).
 - Removed IMPRISONMENT spell casting from some mages to make the mod more ballanced.
 - All new wizard spells are added properly (using ADD\_SPELL, not just copied as before).
 - Added prefix for all global variables.
 - Added missing resource for oBG2 (they might be already there if some mods are installed).
+- Added check for the PC doing NWN quest and not triggering actions for main bg content (like is underdark), thanks to JohnBob.
 
 0.92 (10/18/23)
 

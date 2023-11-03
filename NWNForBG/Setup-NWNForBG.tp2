@@ -4,7 +4,6 @@ AUTHOR ~AGKanevchev, weidu EE adapation: paladin84, support: https://arcanecoast
 VERSION ~0.92~
 
 ALWAYS
-
   ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET bg2_chapter = 12
   END ELSE BEGIN
@@ -16,23 +15,16 @@ ALWAYS
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
   ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
-
     OUTER_SET cd_always = 1 // just do this once per install
-
-    
-
     // Copies tra files into the autotra-folder (to leave the originals untouched)
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
       COPY ~NWNForBG/tra/english~  ~NWNForBG/tra/autotra/%LANGUAGE%~
       COPY ~NWNForBG/tra/%LANGUAGE%~  ~NWNForBG/tra/autotra/%LANGUAGE%~
     END
-
     LAF autotra_workaround END
 
-// ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
-
-ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
-
+  // ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+  ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
     LAF HANDLE_CHARSETS
       INT_VAR
         infer_charsets = 1
@@ -684,8 +676,8 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~)
   END
 END
 
-/*
 
+/*
 // Add variables to NWN AREAS (Thanks to Argent77 )
 
 MKDIR ~NWNForBG/are~
