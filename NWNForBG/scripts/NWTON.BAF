@@ -2,6 +2,7 @@ IF
 	True()
 THEN
 	RESPONSE #100
+	        SetGlobal("NWN_Quest_Status","GLOBAL",1)
 		CutSceneId(Player1)
 		ClearAllActions()
 		FadeToColor([30.0],0)

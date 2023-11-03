@@ -33,6 +33,7 @@ THEN
 		MultiPlayerSync()
 		UnhideGUI()
 		EndCutSceneMode()
+		SetGlobal("NWN_Quest_Status","GLOBAL",2)
 END
 
 IF

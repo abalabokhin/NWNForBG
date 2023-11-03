@@ -26,5 +26,6 @@ THEN
 		FadeFromColor([20.0],0)
 		Wait(1)
 		EndCutSceneMode()
+	        SetGlobal("NWN_Quest_Status","GLOBAL",3)
 END
 
