@@ -83,7 +83,8 @@ In development:
 - Added prefix to more files (manually)
 - Removed IMPRISONMENT spell casting from some mages to make the mod more ballanced.
 - All new wizard spells are added properly (using ADD\_SPELL, not just copied as before).
-- Add prefix for all global variables.
+- Added prefix for all global variables.
+- Added missing resource for oBG2 (they might be already there if some mods are installed).
 
 0.92 (10/18/23)
 
