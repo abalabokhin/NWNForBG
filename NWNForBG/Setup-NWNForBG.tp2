@@ -4,6 +4,7 @@ AUTHOR ~AGKanevchev, weidu EE adapation: paladin84, support: https://arcanecoast
 VERSION ~0.92~
 
 ALWAYS
+
   ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET bg2_chapter = 12
   END ELSE BEGIN
@@ -651,6 +652,60 @@ END ELSE BEGIN
     END
   END
 END
+
+COPY ~NWNForBG/wed~ ~override~
+
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~) BEGIN
+
+  // Prevent specific events from triggering during NWN travels (Borrowed from TotLM by Argent77 )
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY area_checks BEGIN
+    ~baldur~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~aerie~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~anomen~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~cernd~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~edwin~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~jaheira~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~jan~       => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~keldorn~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~korgan~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~mazzy~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~minsc~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~nalia~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~yoshimo~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+  END
+
+  OUTER_TEXT_SPRINT bcs_quest_check ~!Global("NWN_Quest_Status","GLOBAL",1)~
+  ACTION_PHP_EACH area_checks AS script => search BEGIN
+    COPY_EXISTING ~%script%.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~%search%~ ~%bcs_quest_check% \1~
+      END
+    BUT_ONLY IF_EXISTS
+  END
+END
+
+/*
+
+// Add variables to NWN AREAS (Thanks to Argent77 )
+
+MKDIR ~NWNForBG/are~
+
+ACTION_BASH_FOR ~NWNForBG/are~ ~^.+$~ BEGIN
+
+PRINT ~         ~
+PRINT ~Start AREATYPE~
+PRINT ~         ~
+
+  COPY ~%BASH_FOR_FILESPEC%~ ~weidu_external/%BASH_FOR_FILESPEC%~
+  LPF fj_are_structure
+    INT_VAR
+      fj_variable_value = 1
+    STR_VAR
+      fj_structure_type = "variable"
+      fj_name           = "NWNAREA"
+  END
+END
+*/
 
 COPY ~NWNForBG/are~ ~override~
 
