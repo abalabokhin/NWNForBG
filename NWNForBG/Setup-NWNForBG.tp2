@@ -4,6 +4,7 @@ AUTHOR ~AGKanevchev, weidu EE adapation: paladin84, support: https://arcanecoast
 VERSION ~0.92~
 
 ALWAYS
+
   ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET bg2_chapter = 12
   END ELSE BEGIN
@@ -647,13 +648,6 @@ END
 
 COPY ~NWNForBG/wed~ ~override~
 
-// Add NWNAREA to AREATYPE.IDS (Borrowed from EET by K4thos )
-
-ADD_AREA_TYPE NWNAREA
-OUTER_SET dummy = IDS_OF_SYMBOL (AREATYPE NWNAREA)
-PRINT ~NWNAREA = %NWNAREA% (%dummy%)~
-
-
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~) BEGIN
 
   // Prevent specific events from triggering during NWN travels (Borrowed from TotLM by Argent77 )
@@ -673,7 +667,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~)
     ~yoshimo~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
   END
 
-  OUTER_TEXT_SPRINT bcs_quest_check ~!AreaType(NWNAREA)~
+  OUTER_TEXT_SPRINT bcs_quest_check ~!Global("NWNAREA","MYAREA",1)~
   ACTION_PHP_EACH area_checks AS script => search BEGIN
     COPY_EXISTING ~%script%.bcs~ ~override~
       DECOMPILE_AND_PATCH BEGIN
@@ -683,8 +677,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~)
   END
 END
 
-
-// ADD AREATYPE TO NWN AREAS (Borrowed from EET by K4thos )
+// Add variables to NWN AREAS (Thanks to Argent77 )
 
 MKDIR ~weidu_external/NWNForBG/are~
 
@@ -695,9 +688,14 @@ PRINT ~Start AREATYPE~
 PRINT ~         ~
 
   COPY ~%BASH_FOR_FILESPEC%~ ~weidu_external/%BASH_FOR_FILESPEC%~
-	WRITE_SHORT 0x48 THIS | (1 << NWNAREA)
-	
-	END
+  LPF fj_are_structure
+    INT_VAR
+      fj_variable_value = 1
+    STR_VAR
+      fj_structure_type = "variable"
+      fj_name           = "NWNAREA"
+  END
+END
 	
 COPY ~weidu_external/NWNForBG/are~ ~override~
 
