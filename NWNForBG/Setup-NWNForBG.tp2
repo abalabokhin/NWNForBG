@@ -167,6 +167,13 @@ END
 
 INCLUDE ~NWNForBG/lib/a7_functions.tpa~
 
+// Install all the missing standart resources, they should already be there, but just in case
+ACTION_BASH_FOR ~%MOD_FOLDER%/missing_standard_res~ ~.+$~ BEGIN
+    ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+        COPY_LARGE ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+    END
+END
+
 // Install all animations. It is only valid for ee.
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     // First: install animation that exists in ee animate.ids, but ini file and animation files themselved might not
