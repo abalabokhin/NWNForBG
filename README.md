@@ -67,7 +67,7 @@ BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Ba
 Known Bugs:
 -----------
 
-- Transform into Wererat ability doesn't work well on EE: after turning into wererat, turning back to human form plays the anmation, but a character still cannot talk or cast spells.
+- In fight with Intellect devourer after its current body destroyed and while it in the process of going to a new body if this new body is destroyed or convinced to leave, the Intellect devourer dissapear.
 
 Version History
 ---------------
