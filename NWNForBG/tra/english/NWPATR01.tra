@@ -7,13 +7,13 @@
 @6 = ~Goodbye.~
 @7 = ~Who says you passed the gate? Not I. Now, <SIRMAAM>, I have strict orders regarding intruders in the district.~
 @8 = ~Err... yes, my <LADYLORD>. I think I recognize you now. You're one of them working for Aribeth de Tylmarande, aren't you? My apologies, my <LADYLORD>. Can't be too careful with folks getting desperate and all. I'll tell the other patrolmen about you, to be sure.~ /*My apologies, my <LADYLORD>. Can't be too careful with folks getting desperate and all. I'll tell the other patrolmen about you, to be sure.*/
-@9 = ~NP: And that's the least of my concerns.<SIRMAAM> . Sea in the city!~ /*I'm not interested anymore.*/
-@10 = ~NP: Yes, and I don't care what your orders are. I go where I want.~ /*Yeah, and me no care about orders. Me go where me wants.*/
-@11 = ~Right, I remember now. My apologies, my <LADYLORD>. Can't be too careful with folks getting desperate and all. I'll tell the other patrolmen about you, to be sure.~ /*My apologies, my <LADYLORD>. Can't be too careful with folks getting desperate and all. I'll tell the other patrolmen about you, to be sure.*/
+@9 = ~And that's the least of my concerns, <SIRMAAM>. There's a plague in the city!~
+@10 = ~Yes, and I don't care what your orders are. I go where I want.~
+@11 = ~Right, I remember now. My apologies, my <LADYLORD>. Can't be too careful with folks getting desperate and all. I'll tell the other patrolmen about you, to be sure.~
 @12 = ~I suppose I can answer a question for you, <SIRMAAM>.~
 @13 = ~What do you know of the plague?~
 @14 = ~Anything interesting going on in Blacklake?~
-@15 = ~NP: As you wish,<SIRMAAM> .~ /*As you wish, <SIRMAAM>.*/
+@15 = ~As you wish, <SIRMAAM>.~
 @16 = ~I suppose you have that right, working for the city as you do. I'd be more polite around the established guards, though; you'll need what friends you can get.~
 @17 = ~Not much more than anyone else, thankfully. Patrolling here in Blacklake has its advantages, after all.~
 @18 = ~What have you heard of the Waterdhavian creatures on the loose?~
