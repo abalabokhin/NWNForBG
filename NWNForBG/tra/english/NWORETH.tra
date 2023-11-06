@@ -1,8 +1,8 @@
 @0 = ~I don't know why you've barged into my room, but whoever you are: I'm not entertaining today. I'm required to go... elsewhere.~
 @1 = ~Who are you?~
 @2 = ~You don't seem happy about that.~
-@3 = ~NP: Can I ask you a question?~ /*Can I ask you a question?*/
-@4 = ~NP: What does that mean, "somewhere else"?~ /*What you means 'elsewhere?'*/
+@3 = ~Can I ask you a question?~
+@4 = ~What you means 'elsewhere?'~
 @5 = ~Bela told me to see you.~
 @6 = ~Goodbye.~
 @7 = ~My name is Oreth. While I am one of Miss Bela's courtesans, I don't work here anymore... thanks to those damned High Captains.~
@@ -14,10 +14,10 @@
 @13 = ~No you can't. I'm not really in the mood for chit-chat. I don't suppose you'd mind just leaving me be?~
 @14 = ~I mean not here, where I should be. I mean wherever those damnable High Captains want me to go, that's where.~
 @15 = ~She did? Why would she do that?~
-@16 = ~NP: Why do you think she sent me to you?~ /*Why do you think she'd send me to you?*/
+@16 = ~Why do you think she'd send me to you?~
 @17 = ~I said I thought the High Captains should be stopped.~
 @18 = ~We were discussing the High Captains.~
-@19 = ~NP: Okay, forget it.~ /*"Forget I asked..."*/
+@19 = ~Okay, forget it.~
 @20 = ~Aye, I'm sure you can see yourself out.~
 @21 = ~I really shouldn't even be discussing Kurth and Baram. That's a sure way to trouble. So, if you don't mind...?~
 @22 = ~I won't tell anyone what you say.~
