@@ -1,6 +1,6 @@
-@0 = ~NP: Greetings, you! You have done an invaluable service to all of Neverwinter in these difficult times.~ [NWOLE055] /*Hail, <CHARNAME>! You have provided a great service to all of Neverwinter in these trying times.*/
+@0 = ~Hail! You have provided a great service to all of Neverwinter in these trying times.~ [NWOLE055]
 @1 = ~As a token of Lord Nasher's gratitude, he thought you might want to bear witness to the cure's creation after all of your hard work.~ [NWOLE056]
 @2 = ~Before the ritual proceeds, however, the four assembled would each like the chance to speak with you and offer their personal thanks for what you have achieved.~ [NWOLE057]
 @3 = ~Go on, speak with them -- I must inform the town crier of the good news.~ [NWOLE058]
 @4 = ~Olef glares, obviously wondering why you waste time talking to him when the ritual awaits. With infinite patience he repeats what is required of you.~
-@5 = ~NP: Oleff is too shocked to speak, instead he points you to a portal for you to enter and retrieve the stolen medicine.~ /*Olef is too distressed to speak, and instead gestures toward the other room, hoping you will proceed through the portal and find the now stolen cure.*/
+@5 = ~Olef is too distressed to speak, and instead gestures toward the portal, hoping you will proceed and find the now stolen cure.~
