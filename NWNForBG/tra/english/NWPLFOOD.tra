@@ -1,7 +1,7 @@
-@0 = ~NP: I'm just a simple grocery merchant. I don't think you are interested.~ /*I'm just a merchant. What it is you want me to say?*/
-@1 = ~NP: Where can I buy the items I need?~ /*Where can I go to buy supplies?*/
-@2 = ~NP: I'm looking for the mayor's office, can you tell me where it is?~ /*You tell me where stuff be?*/
-@3 = ~NP: Okay, I'll move on then.~ /*Okays, we go now.*/
-@4 = ~NP: In the Cracked Anvil, of course. Haljal has everything a hero like you might need. In addition, there are many street vendors in Port Llast, one of them even sells scrolls for magicians. Such a strange guy, I'm afraid of him.~ /*I have never been there myself, though I know it lies far, far to the South of Port Llast. However, I know there must be great danger there.*/
-@5 = ~NP: City Hall is located in the west near the city wall. They say that Lady Aribeth herself came to our mayor, probably she is there now.~ /*My name is Caliandros, a cleric of Tyr. I serve Aribeth by aiding those who work for her.*/
-@6 = ~NP: Have a good time in Port Llast. Goodbye.~ /*I hope you enjoy your time in Port Llast. Goodbye.*/
+@0 = ~I'm just a simple grocery merchant. I don't think you are interested.~
+@1 = ~Where can I buy the goods I need?~
+@2 = ~I'm looking for the the town hall, can you tell me where it is?~
+@3 = ~Okay, I'll move on then.~
+@4 = ~In the Cracked Anvil, of course. Haljal has everything a hero like you might need. In addition, there are many street vendors in Port Llast, one of them even sells scrolls for magicians. Such a strange guy, I'm afraid of him.~
+@5 = ~The town hall is west near the city wall. They say Lady Aribeth herself came to see our mayor, probably she is there now.~
+@6 = ~Have a good time in Port Llast. Goodbye.~
