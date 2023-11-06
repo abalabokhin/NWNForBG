@@ -1,8 +1,8 @@
-@0 = ~NP: Welcome to my shop! I sell potions here. Would you like to take a look at my products?~ /*Welcome to my shop. Would you like to see my wares?*/
-@1 = ~Please do. Show what yous got.~ /*Show what yous got.*/
-@2 = ~NP: Oh, no, no, some other time.~ /*Another time, perhaps.*/
-@3 = ~NP: You're back! Would you like to take a look at my potions?~ /*Are you sure you want to delete this resource?*/
-@4 = ~NP: I think, yes.~ /*Please do.*/
-@5 = ~NP: No, some other time.~ /*Another time, perhaps.*/
-@6 = ~NP: I'm sure you'll be satisfied<SIRMAAM> !~ /*You don't seem happy about that.*/
-@7 = ~NP: Hope we see you again!~ /*I guess I'll see you around.*/
+@0 = ~Welcome to my shop! I sell potions here. Would you like to take a look at my wares?~
+@1 = ~Yes, please. Show me what you've got.~
+@2 = ~Oh, no, no, some other time.~
+@3 = ~You're back! Would you like to take a look at my potions?~
+@4 = ~Yeah, I guess so.~
+@5 = ~Another time, perhaps.~
+@6 = ~I'm sure you'll be satisfied, <SIRMAAM>!~
+@7 = ~Hope we see you again!~

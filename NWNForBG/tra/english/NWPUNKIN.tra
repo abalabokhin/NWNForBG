@@ -4,7 +4,7 @@
 @3 = ~Goodbye.~
 @4 = ~Yeah, there's something behind the bookcase, but momma says not to talk about... uh... I can't say anymore.~
 @5 = ~I 'spose, but Momma doesn't mind. She says people get sick at home at work and at church, so what's wrong with me in the street? 'Sides, she was mad because I went behind the bookcase again. Says it's not good to be there.~ /*I 'spose, but Momma doesn't mind. She says people get sick at home at work and at church, so what's wrong with me in the street?*/
-@6 = ~NP: And what about the closet? Is there anything in your house?~ /*What's downstairs? Is there something in your house?*/
+@6 = ~What about the bookcase? Is there something in your house?~
 @7 = ~Okay, goodbye and stuff.~
 @8 = ~I don't want momma to know I know the secret word. You maybe go talk to her about it, okay?~
 @9 = ~Secret word? Tell me about it. We're friends, right?~
@@ -15,4 +15,4 @@
 @14 = ~I 'spose, but Momma doesn't mind. She says people get sick at home at work and at church, so what's wrong with me in the street?~
 @15 = ~Who you? Ha? You come for my house? Don't think so. I'll kick your tail! Like I keep the bad guys downstairs!~
 @16 = ~You ugly. Basement ugly.~
-@17 = ~NP: Mom says people can get sick at home, at work, at church, so why can't I go for a walk?~ /*I 'spose, but Momma doesn't mind. She says people get sick at home at work and at church, so what's wrong with me in the street?*/
+@17 = ~Momma says people get sick at home at work and at church, so what's wrong with me in the street?~
