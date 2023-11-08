@@ -30,10 +30,10 @@
 @29 = ~Where might I find Urth?~
 @30 = ~Do you know where Sir Karathis is?~
 @31 = ~Let me ask about something else.~
-@32 = ~NP: Of course, I will answer all your questions.~ /*I have questions I want answered.*/
-@33 = ~NP: Ender is a young man who went out of his way to help others. They are so naive and trusting at this age... If you want to talk to him, you can find him at the Union Arms Hotel. However, keep in mind that he may still not have recovered from his experiences.~ /*If you care to speak with him, you'll find him at the Alliance Arms Inn. Mind, however, that he's probably still shaken up from his experiences.*/
+@32 = ~Of course, I will answer all your questions.~
+@33 = ~Ander is a youth who goes out of his way to help others. They're so naive and trusting at that age... If you care to speak with him, you'll find him at the Alliance Arms Inn. Mind, however, that he's probably still shaken up from his experiences.~
 @34 = ~I hope that it will come to such bloodletting only as a last resort. These are innocent lads under a curse. There is a peddler who came to town after hearing of our plight... his name is Alhelor. You'll find him at the Alliance Arms Inn. He can provide you with silvered arrows, as well as access to some belladonna. But please, use them only if you must.~ /*I hope that it will come to such bloodletting only as a last resort. These are innocent lads under a curse. There is a peddler who came to town after hearing of our plight... his name is Alhelor.*/
-@35 = ~NP: I heard he was last seen in the Charwood area, but exactly where I can't say. Please don't give up on your search for this. I'm sure luck will be on your side. Is there anything else you want to ask about boys? I feel so helpless... If only I had a better idea of where they could have gone...~ /*I've heard that he was last spotted in the Charwood area, though where, specifically, I could not say. Please don't let that dissuade you from looking. I'm sure luck will be on your side.*/
+@35 = ~I've heard that he was last spotted in the Charwood area, though where, specifically, I could not say. Please don't let that dissuade you from looking. I'm sure luck will be on your side. Is there anything more about the boys you want to ask? I feel so helpless... If only I knew better where they might have gone...~
 @36 = ~I know for fact that Geth traveled to the Neverwinter Wood. You know, he enjoyed being around people. I'd look for campgrounds or villages within the woods. He's sure to be close by.~
 @37 = ~Urth, I'm afraid, could be anywhere. His family has been so very fearful for him and his whereabouts. To be unable to do something for their pain....~
 @38 = ~Could I speak with his family?~
@@ -67,8 +67,8 @@
 @66 = ~A grim topic, though I find I can think of little else. Have you been successful?~
 @67 = ~I've some questions about the boys you wish cured.~
 @68 = ~I've had some success in finding the boys, actually.~
-@69 = ~"I want to ask something else."~
-@70 = ~NP: Certainly,<BROTHERSISTER> I will answer all your questions.~ /*Want questions answered now.*/
+@69 = ~I want to ask something else.~
+@70 = ~Certainly, <BROTHERSISTER>, I will answer all your questions.~
 @71 = ~I've heard that he was last spotted in the Charwood area, though where, specifically, I could not say. Please don't let that dissuade you from looking. I'm sure luck will be on your side.~
 @72 = ~Truly! I had little doubt that you would do well. Oh, Port Llast is lucky indeed to have you in its midst.~
 @73 = ~I found all three of them. Here are their rings.~

@@ -30,10 +30,10 @@
 @29 = ~Ah, <CHARNAME> - I see you are back. But... where is your trial notebook? You agreed to defend Rolgan; without that book no one will recognize you as an officer of the court! Please, <CHARNAME>, I know you have much on your mind. But if you are to participate in Rolgan's trial you must keep that notebook with you at all times.~ /*Ah, <CHARNAME> - I see you are back. But... where is your trial notebook? You agreed to defend Rolgan; without that book no one will recognize you as an officer of the court!*/
 @30 = ~In the meantime, is there anything else I can do for you before Rolgan's trial, <CHARNAME>?~
 @31 = ~Can I get another copy of the notebook?~
-@32 = ~NP: Of course, <CHARNAME>. Here is another copy of the book for you. Remember, you must keep it with you at all times as a symbol of Tyr's authority. Without it, no one will recognize you as a judicial officer.~ /*Of course, <CHARNAME>. Here is another copy of the notebook. Remember, you must keep it on at all times as a symbol ofTyr's authority.*/
+@32 = ~Of course, <CHARNAME>. Here is another copy of the notebook. Remember, you must keep it on at all times as a symbol of Tyr's authority. Without it, no one will recognize you as an officer of the court.~
 @33 = ~Oh... hello, again, <CHARNAME>. Welcome back to the temple of the just god.~
 @34 = ~Forgive me if I seem... distracted. The outcome of Rolgan's trial has created as many problems as it seems to have solved.~
-@35 = ~NP: What's the problem?~ /*What problem?*/
+@35 = ~What problems?
 @36 = ~Forgive me if I seem somewhat... distracted. Rolgan's impending trial has me a little out of sorts.~
 @37 = ~I've completed my investigations and I'm ready to begin Rolgan's trial.~
 @38 = ~Trial?~
@@ -65,7 +65,7 @@
 @64 = ~Because he was drunk, Rolgan is clearly not responsible for his actions.~
 @65 = ~Griff spiked Rolgan's drink, making Rolgan more prone to act irrationally.~
 @66 = ~Griff cheated at cards, and when he saw Rolgan he attacked him out of fear Rolgan had found out.~
-@67 = ~NP: The family valuables that Griff took were religious artifacts for the Black Lion Tribe.~ /*The heirlooms Griff had taken were valuable religious artifacts of great value to the Black Lion tribe.*/
+@67 = ~The heirlooms Griff had taken were valuable religious artifacts of great value to the Black Lion tribe.~
 @68 = ~Rolgan is here because he is an Uthgardt, an outsider. Don't let your racist prejudices judge him.~
 @69 = ~The defense rests its case.~
 @70 = ~Igland, your time to speak is over!~
@@ -80,6 +80,6 @@
 @79 = ~Tell me about the significance of the heirlooms your husband had gambled away.~
 @80 = ~The verdict is clear, a unanimous five to zero decision to acquit. Rolgan, you are free go, as are the rest of you. The court thanks you for time. Igland, your work here is done. I suggest you leave before I write you up for your loutish behavior during these proceedings. You are a disgrace to the hallowed halls of this Temple!~ /*Igland, your work here is done. I suggest you leave before I write you up for your loutish behavior during these proceedings. You are a disgrace to the hallowed halls of this Temple!*/
 @81 = ~The verdict is clear, a four to one decision to acquit. Rolgan, you are free to go, as are the rest of you. The court thanks you for time.~
-@82 = ~NP: Igland, you've done your job. I suggest you leave before I make a note somewhere of your disgusting behavior during this meeting. You dishonor the sacred halls of this Temple! <CHARNAME>, come talk to me whenever you want to talk.~ /*Igland, your work here is done. I suggest you leave before I write you up for your loutish behavior during these proceedings. You are a disgrace to the hallowed halls of this Temple!*/
+@82 = ~Igland, your work here is done. I suggest you leave before I write you up for your loutish behavior during these proceedings. You are a disgrace to the hallowed halls of this Temple! <CHARNAME>, come speak to me whenever you wish to talk.~
 @83 = ~The verdict is clear, a three to two decision to acquit. Rolgan, you are free go, as are the rest of you. The court thanks you for time.~
 @84 = ~I do not see three torches in the jury, the verdict is clear: guilty as charged. Rolgan shall be taken away for immediate execution. The rest of you are dismissed. The court thanks you for time.~
