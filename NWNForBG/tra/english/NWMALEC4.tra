@@ -1,7 +1,7 @@
 @0 = ~Who are you? Why are you in my home? I don't want to think my fellow Neverwintans would stoop to banditry.~
 @1 = ~I am in service to Aribeth and the city guard.~
 @2 = ~I just need to ask a few questions.~
-@3 = ~NP: I'm going where I want to go.~ /*I'm looking for work.*/
+@3 = ~I'm going where I want to go.~
 @4 = ~I will leave.~
 @5 = ~Hmph. Outsiders hired to replace our dead. I suppose they expect me to trust you? I'll answer a few questions, but then you should leave.~
 @6 = ~I need infomation about Neverwinter.~
@@ -33,11 +33,11 @@
 @32 = ~Tell me about the Peninsula district.~
 @33 = ~I don't pay much attention to politics. I follow Lord Nasher as our leader, and Lady Aribeth of the Neverwinter Nine.~
 @34 = ~How has Lord Nasher dealt with the plague?~
-@35 = ~NP: What was Lady Aribeth doing when the plague came?~ /*Have you seen the Lady Aribeth? Isn't she pretty?*/
-@36 = ~NP: All right, I'll talk to you. I hope this won't take too long.~ /*I'll answer one of your questions... if it doesn't take long.*/
+@35 = ~What was Lady Aribeth doing when the plague came?~
+@36 = ~All right, I'll talk to you. I hope this won't take too long.~
 @37 = ~Lord Nasher assures us that all efforts are being made to find a cure. Beyond that... I haven't heard anything.~
 @38 = ~With the plague going the way it is, everyone will need that gold eventually, so I might as well keep it. I could get it like everyone else.~
-@39 = ~NP: Well, I can't give much, but if I give something, maybe others will help too. Who knows, maybe I'll get sick too, and then I'll get it all back. All right, well, can you give me a piece of paper with a stamp to prove that a donation was made? That's the only way I'm gonna get it from the tax collector.~ /*Well, I can't afford much, but if I give something, maybe someone else will too. Who knows, I might end up with the plague and get it back.*/
+@39 = ~Well, I can't afford much, but if I give something, maybe someone else will too. Who knows, I might end up with the plague and get it back. Now, don't you have a charity seal for me? I can't get a break from the taxman without...~
 @40 = ~W-what? You... you don't mean that, do you? I don't have anything here worth my life! I'm... I'm nobody!~
 @41 = ~Then no one will miss you! Pay or die!~
 @42 = ~I am sorry. I didn't mean to scare you.~
@@ -58,7 +58,7 @@
 @57 = ~It's worse than the Docks, I hear. I've never been there, though.~
 @58 = ~Oh, I did hear about some sort of trouble. Something about the Head Gaoler being taken over by something. It all sounded rather unpleasant to me. But, it's not my affair. Your kind probably keep a closer eye on that sort of thing. In fact, you look similar to the one I heard fixed the problem. Probably unrelated.~ /*But, it's not my affair. Your kind probably keep a closer eye on that sort of thing. In fact, you look similar to the one I heard fixed the problem. Probably unrelated.*/
 @59 = ~Lord Nasher has pledged any needed resources to curing the plague. He has been quite supportive, as any leader would when tragedy strikes. Actually, I should say that it was his advisors that made his intentions known. Lord Nasher himself has wisely been locked away to protect against the plague.~ /*Lord Nasher has pledged any needed resources to curing the plague. He has been quite supportive, as any leader would when tragedy strikes.*/
-@60 = ~NP: I don't know exactly, but she was at the forefront, working with people, organizing everything.... All we see are Helmites handing out their blessings. I don't know who they're serving. Maybe it's someone Aribeth started?~ /*The only people we see more are the Helmites, dispensing their blessings. I'm not sure who they report to. Someone under Aribeth?*/
-@61 = ~NP: Wait... you don't have a ribbon... tape of an authorized fundraiser........ You bitch... I've been conned, haven't I... Get out... Get out of my house! Get out!!!~ /*You filthy... I've been had, haven't I... Get out... get out of my home! Get out!!*/
+@60 = ~I don't know any specifics, but she has been on the front lines of everything, working with people, trying to organize... The only people we see more are the Helmites, dispensing their blessings. I'm not sure who they report to. Someone under Aribeth?~
+@61 = ~Wait... you aren't wearing the sash... the sash of approved charity solicitors... You filthy... I've been had, haven't I... Get out... get out of my home! Get out!!~
 @62 = ~You again? I'm sorry, but is there really a reason for you to remain in my home?~
-@63 = ~NP: You're a disgrace to our fair city. Get out of my sight.~ /*You <SIRMAAM>, are an absolute disgrace to this fine city. Get out of my sight.*/
+@63 = ~You <SIRMAAM>, are an absolute disgrace to this fine city. Get out of my sight.~
