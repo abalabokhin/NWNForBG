@@ -11,7 +11,7 @@
 @10 = ~You certainly needn't worry about any tricks from me. If I had intended to harm you, don't you think I would have already done so? So you aren't one of Maugrim's. I would know if you were one of Arklem's. The only question, then, how did you come to be this deep within the Host Tower?~ /*So you aren't one of Maugrim's. I would know if you were one of Arklem's. The only question, then, how did you come to be this deep within the Host Tower?*/
 @11 = ~An evasive answer... and far from the truth, no doubt. Or do you truly expect me to believe that you haplessly wandered past the Tower's wards? Oh, I suppose it's possible that Maugrim was stupid enough that he removed the spells from the bridge... but I doubt it. Regardless, who am I to question your word?~ /*An evasive answer... and far from the truth, no doubt. Or do you truly expect me to believe that you haplessly wandered past the Tower's wards?*/
 @12 = ~A noble goal. I wouldn't put such a feat past you, either... you must have managed to bypass the wards on the bridge and the guards, after all. Maugrim will be no simple task to overcome, but somehow I doubt that will deter you. Don't let me keep you from your task, by all means.~ /*Maugrim will be no simple task to overcome, but somehow I doubt that will deter you. Don't let me keep you from your task, by all means.*/
-@13 = ~NP: Of course. Ask away, <MALEFEMALE>.~ /*By all means. Ask away, <MALEFEMALE>.*/
+@13 = ~By all means. Ask away, <MALEFEMALE>.~
 @14 = ~Why are you here? Something seems very... odd.~
 @15 = ~Tell me who you are.~
 @16 = ~What do you know about Maugrim? Where is he?~
@@ -23,7 +23,7 @@
 @22 = ~It's a trick, isn't it? The brazier will explode or something.~
 @23 = ~Why would I want to help you?~
 @24 = ~All right, I'll do it.~
-@25 = ~NP: Forget it. you're staying here.~ /*Forget it. You're staying here.*/
+@25 = ~Forget it. You're staying here.~
 @26 = ~Hmmm. There isn't much that you don't notice, is there? You are quite correct, <MALEFEMALE>... all is not quite as it seems. This is a prison, this room I am in. I am quite stuck... though perhaps your arrival is an opportunity for me to escape. Do you see that brazier on the other side of the room? It contains a spell that keeps me from leaving. Would you be so kind as to destroy it?~ /*This is a prison, this room I am in. I am quite stuck... though perhaps your arrival is an opportunity for me to escape.*/
 @27 = ~Technically that's not a question, it's a request. It is rather nice of you to ask, however... my name is Nyphithys. I am pleased to meet you, <MALEFEMALE>.~
 @28 = ~Maugrim is the new Archmage Arcane of the Brotherhood, a position he took by force. Arklem, the former Archmage, fled while he could. You know this, however, do you not? As for where Maugrim is... that I have no idea of. I am unaware of anything beyond the confines of this room.~ /*You know this, however, do you not? As for where Maugrim is... that I have no idea of. I am unaware of anything beyond the confines of this room.*/
@@ -54,12 +54,12 @@
 @53 = ~Are you telling me everything?~
 @54 = ~So you are evil like the rest of the Brotherhood.~
 @55 = ~Why didn't you flee with Arklem, then?~
-@56 = ~NP: Defenses? Well, I doubt Maugrim would have had time to put the tower's defenses back in place. If you have the right rune stones, you should be able to move through the halls quite freely. I suspect Maugrim himself will take over Arklem's office. That would be quite in the spirit of the idiot. Look for Valinda Shadowmantle, she may have a rune stone that will help you get to Arklem's study.~ /*Their defenses? Well, I doubt Maugrim has had time to set most of the Tower's wards back up. With the right runestones, I suspect you could move throughout the halls at will.*/
+@56 = ~Their defenses? Well, I doubt Maugrim has had time to set most of the Tower's wards back up. With the right runestones, I suspect you could move throughout the halls at will. Maugrim himself will have taken over Arklem's sanctum, I suspect. It would fit with that fool's bloated sense of pride. If you found Valinda Shadowmantle, I would wager she has a runestone to reach the sanctum. I bet there is a stone to reach her on this very level.~
 @57 = ~Then what shall it be? Will you destroy the brazier or not? It is a simple enough act.~
 @58 = ~So I can watch you walk out the door and have nothing at all to offer the next <MALEFEMALE> who stumbles in here? Not likely. I can offer you plenty... more than you suspect, I imagine... if you simply help me to free myself from this prison. What do you say?~ /*I can offer you plenty... more than you suspect, I imagine... if you simply help me to free myself from this prison. What do you say?*/
 @59 = ~I can offer you plenty... more than you suspect, I imagine... if you simply help me to free myself from this prison. What do you say?~
 @60 = ~So it's greed, is it? Well... there's all kinds of things you would no doubt like to have right here in the Tower, with no one particularly guarding them. I can offer you plenty... more than you suspect, I imagine... if you simply help me to free myself from this prison. What do you say?~ /*So it's greed, is it? Well... there's all kinds of things you would no doubt like to have right here in the Tower, with no one particularly guarding them.*/
-@61 = ~NP: And what's troubling you? What will I do when you set me free? Do I represent good or evil? Honestly, when you release me, I'm going to find Arklem. I doubt you and I will meet again.~ /*So your concern would be what? What I intend to do after you free me? Whether I am a good person or not?*/
+@61 = ~So your concern would be what? What I intend to do after you free me? Whether I am a good person or not? I intend to find Arklem once you free me, to be truthful. I doubt you and I will meet again~
 @62 = ~That is too bad. I would have enjoyed freedom. As it is, I shall have to be satisfied with a little carnage.~
 @63 = ~Then what keeps you from aiding me? Will you destroy the brazier or not? It is a simple enough act.~
 @64 = ~Changed my mind again... ha ha!~
@@ -93,7 +93,7 @@
 @92 = ~Forget it... I'm not going to help you.~
 @93 = ~I'll do it.~
 @94 = ~And why is that? I am asking you to do nothing strenuous. Will you do it or not?~
-@95 = ~NP: Then do it. I'm tired of waiting.~ /*Then do so. I tire of waiting.*/
+@95 = ~Then do so. I tire of waiting.~
 @96 = ~I will not be questioned any further, <MALEFEMALE>. I am sure you know more than enough... now destroy the brazier before I grow impatient.~ [NWNYPH54]
 @97 = ~You have done well. Maugrim will be chagrined to know that some adventurer stumbled in to rescue me from his spell. I am eager to be off in search of Arklem. It will be difficult to say where he might have hidden himself in his... condition. Regardless, the Tower will be ours again in time.~ [NWNYPH50] /*I am eager to be off in search of Arklem. It will be difficult to say where he might have hidden himself in his... condition. Regardless, the Tower will be ours again in time.*/
 @98 = ~As for you, <MALEFEMALE>... you did your part. You freed me, and the reward is yours by right. Take this item and go. I suggest that you not still be present in the Host Tower when I return.~ /*As for you, <MALEFEMALE>... you did your part. You freed me, and the reward is yours by right. Take this item and go.*/

@@ -1,22 +1,22 @@
-@0 = ~NP: No, I won't let you kill me! Creatures of nature must be protected, obey my will!~ /*No, I will not allow you to kill me! Nature's creatures must be protected.*/
+@0 = ~No, I will not allow you to kill me! Nature's creatures must be protected, obey my will!~
 @1 = ~Foolish <MANWOMAN>! I don't know why you thought you could just steal into my house, kill my slaves and destroy another of nature's protectors, but now you have fallen to my charms. Now, bow to your mistress!~
 @2 = ~What are you talking about? I'm not a slave.~
 @3 = ~Yes mistress. What is your command?~
-@4 = ~NP: If you tried to subdue me with your charms, you lost. Try again if you want to die..~ /*If you were trying to dominate me with your powers, you have failed. If you want to die, just try to pull that again.*/
+@4 = ~If you were trying to dominate me with your powers, you have failed. If you want to die, just try to pull that again.~
 @5 = ~I am not your slave, villianous creature. Prepare yourself for death.~
 @6 = ~Don't talk back to me slave! Now, what menial task should I put you to work at?~
-@7 = ~NP: If you tried to subdue me with your charms, you lost. Try again if you want to die.~ /*If you were trying to dominate me with your powers, you have failed. If you want to die, just try to pull that again.*/
+@7 = ~If you were trying to dominate me with your powers, you have failed. If you want to die, just try to pull that again.~
 @8 = ~I am not your slave, villianous creature. Prepare yourself for death.~
 @9 = ~First, you can go and clean up any mess you made while getting in here. After that, you can go and collect all of the chamber pots and clean them out. Before you go, I want you to put on this cute little outfit.~
 @10 = ~Menial labor? I don't think so!~
 @11 = ~Cleaning out your chamber pots? That's disgusting, forget it.~
 @12 = ~I'm not wearing that! It's pink!!!~
 @13 = ~No! How is this possible? What has happened to my powers?~
-@14 = ~NP: You and your slaves attacked me. Give me one reason why I shouldn't kill you?~ /*Me attacked by you and your slaves. Why me not kill you now, huh?*/
-@15 = ~NP: Yes, I do not care about your strength. They are not, and now answer, what is going on here?~ /*Come on, we're both <RACE> kind. What's going on?*/
+@14 = ~You and your slaves attacked me. Give me one reason why I shouldn't kill you?~
+@15 = ~I don't give a damn about your powers. I don't have any, now tell me what's going on here.~
 @16 = ~No, please! Please don't hurt me. What have I done to provoke this attack on my home?~
 @17 = ~You attacked me! I didn't start this.~
-@18 = ~NP: Your slaves attacked me, then you did the same. This is not enough?~ /*Your slaves attacked me and then you did the same thing. How is this my fault?*/
+@18 = ~Your slaves attacked me and then you did the same thing. This is not enough?~
 @19 = ~You are the one who started this, but now I will finish it!~
 @20 = ~What? How dare you talk back to me! You're my unthinking sla... you... you tricked me! No! How is this possible? What has happened to my powers?~ /*What? How dare you talk back to me! You're my unthinking sla... you... you tricked me!*/
 @21 = ~You... you mean you didn't come here to destroy me?~
@@ -26,7 +26,7 @@
 @25 = ~Oh, this is terrible. I'm so sorry, but I was certain that you... oh, I don't know why I thought that now. There is nothing I can do to make up for this. I was wrong; how is that possible?~
 @26 = ~You were here to kill me. That was what I thought the moment I felt your presence near my tree. I... I just wanted to stop you. Could you ever forgive me?~
 @27 = ~I guess I can forgive you, but I expect you to help me in any way you can now.~
-@28 = ~NP: I can't forgive you, but I won't touch you unless you throw something else away.~ /*That's a pretty horrible mistake. I can't forgive you, but I won't hurt you unless you try something again.*/
+@28 = ~I can't forgive you, but I won't hurt you unless you try something again.~
 @29 = ~There can be no forgiveness for what you have done, there can be only death.~
 @30 = ~Oh thank you <LADYLORD>! You are very kind. I will do whatever I can to help you. I just wish I still had my powers, I don't know why they have become so weakened.~
 @31 = ~How long have you been having trouble?~
@@ -37,7 +37,7 @@
 @36 = ~Just barely. My ability to control them has been weakening for a while now.~
 @37 = ~It was the Spirit of the Wood. I have been sensing its pain and fear ever since that day. It is constantly screaming for help. It is all I can do to keep my sanity; indeed I guess you have experienced just how I am losing that battle. As time passed I began to keep myself closer to home, until recently I have not even been able to leave my room, so great is the fear.~ /*It was the Spirit of the Wood. I have been sensing its pain and fear ever since that day. It is constantly screaming for help. It is all I can do to keep my sanity; indeed I guess you have experienced just how I am losing that battle.*/
 @38 = ~If it is so bad, then why don't you leave?~
-@39 = ~NP: Well, you got it. I think everyone would have mental problems.~ /*You have suffered greatly. I suppose anyone would have trouble retaining their sanity.*/
+@39 = ~You have suffered greatly. I suppose anyone would have trouble retaining their sanity.~
 @40 = ~You must be weak, if you give in so easily and enslave other's minds.~
 @41 = ~It is not so simple as that. This tree is my home, I have been here for centuries. I feel as though every person who comes along is a danger to both my home and myself.~
 @42 = ~That is very comforting to hear you say. I... I feel as though you give me strength. The fear is not as consuming when we speak. Uh... well, I guess there is more I should tell you.~
@@ -54,7 +54,7 @@
 @53 = ~There must be a way! Where is this portal?~
 @54 = ~The Spirit lives on another realm, somewhere between the world of the living and the world of the dead. It is the only creature on this plane who can enter the portal.~
 @55 = ~The portal is in a pool, below a waterfall, but finding it won't help you. It wouldn't help anyone.~
-@56 = ~NP: And are you sure that no one entered there except the Spirit?~ /*Are you sure revenge will be so satisfying?*/
+@56 = ~And are you sure that no one but the Spirit entered there?~
 @57 = ~There has got to be a way for me to get there.~
 @58 = ~Well... several have tried... but no... that's not a good solution. Forget it. The Spirit is the only one who can do so successfully.~
 @59 = ~You were going to say something else. You must tell me, please.~
@@ -68,7 +68,7 @@
 @67 = ~I never saw the dwarf again, but shortly before everything started going wrong in the forest, I found the dagger in front of the altar.~
 @68 = ~I need that dagger. Do you have it?~
 
-@70 = ~NP: Was the dwarf's body in the pool?~ /*Was the dwarf's body in the pool?*/
+@70 = ~Was the dwarf's body in the pool?~
 @71 = ~I brought it back here, but I don't remember where I put it, because the pain hit me before I made it back here. I'm sure it's somewhere in my house though. If you look around, you should be able to find it, but you shouldn't use it! I don't want another death on my hands; they are so bloody already.~ /*I'm sure it's somewhere in my house though. If you look around, you should be able to find it, but you shouldn't use it! I don't want another death on my hands; they are so bloody already.*/
 @72 = ~Is there anything else you can tell me that might help?~
 @73 = ~It's okay. I'm going to find the Spirit and help you escape this fear.~
@@ -76,7 +76,7 @@
 @75 = ~I don't think I can listen to you anymore. Goodbye.~
 @76 = ~No, now that you mention it, his corpse wasn't there.~
 @77 = ~I can't think of anything else that would help, but I will answer any questions you have.~
-@78 = ~NP: In one of your rooms, there was a druid who was enchanted by you. Do you know where the rest of the druids are?~ /*I met the druid you had locked up in the other room. Do you know about the other missing druids?*/
+@78 = ~I met the druid in the other room. Do you know about the other missing druids?~
 @79 = ~What do you know about the witch, Setara?~
 @80 = ~Do you have the mirror that Setara is seeking?~
 @81 = ~Could you tell me your story again?~
