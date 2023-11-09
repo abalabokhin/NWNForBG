@@ -10,7 +10,7 @@
 @9 = ~Have you heard anything about a cure for the Wailing Death?~
 @10 = ~Did you hear anything about the attack on the Academy?~
 @11 = ~How did you end up tending the afflicted here?~
-@12 = ~NP: I'd like to ask another question.~ /*I want to ask you something else.*/
+@12 = ~I want to ask you something else.~
 @13 = ~I've heard my share. Desther and Aribeth are always arguing and Fenthick's always trying to keep the peace. None of them pay any attention to a quiet little nurse going about her duties, so I've heard all sorts of stuff about each and every one of them.~ /*None of them pay any attention to a quiet little nurse going about her duties, so I've heard all sorts of stuff about each and every one of them.*/
 @14 = ~Tell me what you've heard about Desther.~
 @15 = ~Tell me what you've heard about Aribeth.~
@@ -23,9 +23,9 @@
 @22 = ~You don't like Desther much, do you?~
 @23 = ~I was a midwife, before the plague. But there ain't many babies being born now - not live ones, anyhow. I heard Castle Never needed nurses to tend their sick and dying, so I came.~
 @24 = ~Aren't you afraid of contracting the plague yourself?~
-@25 = ~NP: I have to tend to the sick, but I can spare a few minutes for you.~ /*I really should be tending the sick, but for you my <LADYLORD> I can spare a few moments.*/
+@25 = ~I really should be tending the sick, but for I can spare a few moments.~ /**/
 @26 = ~Aribeth doesn't like him, I know that much. He's got a sharp tongue and a sour face, but I think it's more than that. But it's not really my place to speak of such things.~
-@27 = ~NP: Tell me. There's no harm done.~ /*Come now, telling me won't do any harm.*/
+@27 = ~Come now, telling me won't do any harm.~ /**/
 @28 = ~Lady Aribeth's always telling Fenthick not to put so much faith in Desther and his Helmites. You know they're lovers? Fenthick and Aribeth, I mean. Of course you know. Everybody knows.~
 @29 = ~Poor Fenthick. He's caught in the middle between Desther and Aribeth, always ends up having to pick one side or the other when they argue about how to save the city. You think he'd always side with Aribeth, since they are lovers. But Fenthick's an honest man, and when Aribeth is wrong, he's not afraid to tell her so.~ /*Poor Fenthick. He's caught in the middle between Desther and Aribeth, always ends up having to pick one side or the other when they argue about how to save the city.*/
 @30 = ~A cure from Waterdeep? How are they going to get it here with Neverwinter under quarantine! Throw it up over the walls? You're talking crazy.~
