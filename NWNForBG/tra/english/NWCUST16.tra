@@ -1,5 +1,5 @@
-@0 = ~NP: Don't go outside, buddy. It's dangerous out there. You know that word? Dangerous?~ /*Don't go into the streets, <GIRLBOY>. It be dangerous. Ye know that word? Danger?*/
-@1 = ~NP: The people here are scared enough as it is. Put your weapons away.~ /*People are scared enough here as it is. Put that away.*/
+@0 = ~Don't go into the streets, <GIRLBOY>. It be dangerous. Ye know that word? Danger?~
+@1 = ~People are scared enough here as it is. Put that away.~ 
 @2 = ~The High Captains have gone mad! They've put monsters in their armies and are going to kill each other while Luskan suffers!~
 @3 = ~Maybe prayin's what we should be doing. Luskan's gone to hell, it seems.~
 @4 = ~Ye're not part of the Arcane Brotherhood, are ye?~

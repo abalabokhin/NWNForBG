@@ -1,8 +1,8 @@
-@0 = ~NP: Lately the catches have not been very good. And for poor fishermen, this is the only way to earn a living.~ /*Ah, fine. I will put up with the rat, if there is the possibility we can escape.*/
-@1 = ~NP: Don't let the smell fool you... I just didn't have time to wash my clothes after the recent fishing trip.~ /*Are there any places I should look out for in the Blacklake district?*/
-@2 = ~NP: A whole day on land... well, why don't I knock over a pint or two of ale, right?~ /*If it is so bad, then why don't you leave?*/
-@3 = ~NP: Do you know that last week we met a huge animal in the sea? We barely escaped ... Not otherwise - Helm keeps us.~ /*Would you know a "special item" if you saw one? Ah, what do I care? If you have the coins, I'll sell to ya.*/
-@4 = ~NP: Hey... why are you looking at me sideways, huh?~ /*Why you two not be team?*/
-@5 = ~NP: I don't know where all the red fish went. My nets have been empty lately.~ /*Know someone who might have gone there recently?*/
-@6 = ~NP: *sighs* I'm telling you for sure, fish won't just wave a magic wand here. It's just that catching has gotten really damn hard lately.~ /*You certainly bring a different flavor to the district, my lady. A treat for the eyes in this dark time.*/
-@7 = ~NP: Ahhh, you see, the gods are really angry with me for something. I work from dawn to dusk, but all around is poverty, poverty, poverty!~ /*No, and I really don't care. I think you're moving a little fast for me.*/
+@0 = ~Lately the catches have not been very good. And for poor fishermen, this is the only way to earn a living.~ 
+@1 = ~Don't let the smell fool you... I just didn't have time to wash my clothes after the recent fishing trip.~ 
+@2 = ~A whole day on land... well, why don't I down a pint or two of ale, right?~ 
+@3 = ~Do you know that last week we met a huge animal in the sea? We barely escaped ... Helm preserve us.~ 
+@4 = ~Hey... why are you looking at me sideways, huh?~ 
+@5 = ~I don't know where all the red fish went. My nets have been empty lately.~ 
+@6 = ~I'm telling you for sure, fish won't appear by magic here. Catching has gotten really damn hard lately.~ 
+@7 = ~Ahhh, you see, the gods are really angry with me for something. I work from dawn to dusk, but all around is poverty, poverty, poverty!~ 

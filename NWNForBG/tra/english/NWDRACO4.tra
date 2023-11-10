@@ -8,25 +8,25 @@
 @7 = ~I'll be going now.~
 @8 = ~I am old as time itself, the infinite wisdom of eternity is mine to command. Your name and your deeds are known to me, <CHARNAME>, and I shall remember them long after history has forgotten you.~
 @9 = ~I am Klauth, Wyrm of the North, oldest of the Dragons, greatest of the mortal creatures who walk the Realms. My power and my knowledge know no bounds!~
-@10 = ~I am Klauth the ancient Wyrm. I know much that is hidden. I even know you seek the Words of Power, remnants of the Creator Race, so you can save the city you call Neverwinter. Ask your question, <CHARNAME>, and I shall answer if it pleases me.~ /*I am Klauth the ancient Wyrm. I know much that is hidden. I even know you seek the Words of Power, remnants of the Creator Race, so you can save the city you call Neverwinter.*/
+@10 = ~I am Klauth the ancient Wyrm. I know much that is hidden. I even know you seek the Words of Power, remnants of the Creator Race, so you can save the city you call Neverwinter. Ask your question, <CHARNAME>, and I shall answer if it pleases me.~ 
 @11 = ~Tell me about the Words of Power.~
 @12 = ~Tell me about the Creator Race.~
 @13 = ~Do you know anything about Maugrim and his cult?~
-@14 = ~NP: What happened to the dragon in another lair, in these same caves?~ /*What's wrong with the dragon in the other lair within this complex?*/
-@15 = ~Ah, you have one of my essence spheres. Within the ritual rooms here beneath the fire giant complex my servants use the spheres to trap the soul of a full grown dragon. But since you are here, I suspect my servants are slain. No matter, I will find other servants. There are many who will perform tasks for me to gain access to the gold I possess.~ /*But since you are here, I suspect my servants are slain. No matter, I will find other servants. There are many who will perform tasks for me to gain access to the gold I possess.*/
+@14 = ~What's wrong with the dragon in the other lair within these caves?~ 
+@15 = ~Ah, you have one of my essence spheres. Within the ritual rooms here beneath the fire giant complex my servants use the spheres to trap the soul of a full grown dragon. But since you are here, I suspect my servants are slain. No matter, I will find other servants. There are many who will perform tasks for me to gain access to the gold I possess.~ 
 @16 = ~Maybe I could do this task for you.~
 @17 = ~What if I just decide to destroy this essence sphere?~
 @18 = ~Ah, an essence sphere with the soul of a full grown dragon already trapped within for me to feast upon. Give it to me, <CHARNAME>, and I shall reward you with a mountain of gold from my vast hoard.~
 @19 = ~Here, take the orb.~
 @20 = ~What if I decide to destroy the orb instead?~
-@21 = ~NP: I would like to get something more substantial. Maybe a powerful magic item?~ /*I was hoping for a more substantial reward than gold. A powerful magic item, perhaps?*/
-@22 = ~Then your life will end, <CHARNAME>. I have seen what awaits beyond this world: a void of still darkness. Are you ready to face the bleak nothingness beyond this life? Speak with me if you dare, or flee like insignificant fleck of dust before the storming glory of my existence. But do not attack me, <CHARNAME>, unless you are ready for death.~ /*Speak with me if you dare, or flee like insignificant fleck of dust before the storming glory of my existence. But do not attack me, <CHARNAME>, unless you are ready for death.*/
+@21 = ~I was hoping for a more substantial reward than gold. A powerful magic item, perhaps?~ 
+@22 = ~Then your life will end, <CHARNAME>. I have seen what awaits beyond this world: a void of still darkness. Are you ready to face the bleak nothingness beyond this life? Speak with me if you dare, or flee like insignificant fleck of dust before the storming glory of my existence. But do not attack me, <CHARNAME>, unless you are ready for death.~ 
 @23 = ~Stuff it you old windbag! You're dragon meat!~
 @24 = ~I'm ready to face my death, Klauth. Are you?~
 @25 = ~Your comings and goings make no matter to me. You are insignificant, a nothing beside my own existence. Go, stay, it doesn't matter to me. For I, Klauth, am eternal.~
 @26 = ~The Words are ancient, fashioned by the Creator Race when even I was young. The power of the Words is great. Once I even thought their magic could sustain me, though I know better now.~
-@27 = ~This land was not always ice and snow. Once it was steaming jungle, ruled over by a race of powerful, ruthless lizardmen who forced the lesser creatures, all of you humans, dwarves, and elves, to serve them as slaves. But the land changed, the world grew cold, the Old Ones died out and became a forgotten legend in the mists of time. Now all that remains is the legacy of their glory, the Words of Power.~ /*This land was not always ice and snow. Once it was steaming jungle, ruled over by a race of powerful, ruthless lizardmen who forced the lesser creatures, all of you humans, dwarves, and elves, to serve them as slaves.*/
-@28 = ~Maugrim and his cult are nothing, a single drop of water in the ocean of history. He dreams of greatness, of the legacy of the Creator Race and claiming the Words of Power... but they are the dreams of a fool. His people came to me seeking the Word of Power, but I sent them away. Maugrim is blind with ambition, consumed by an insane lust for power. I will not deal with a madman. I have too much to lose.~ /*His people came to me seeking the Word of Power, but I sent them away. Maugrim is blind with ambition, consumed by an insane lust for power. I will not deal with a madman. I have too much to lose.*/
+@27 = ~This land was not always ice and snow. Once it was steaming jungle, ruled over by a race of powerful, ruthless lizardmen who forced the lesser creatures, all of you humans, dwarves, and elves, to serve them as slaves. But the land changed, the world grew cold, the Old Ones died out and became a forgotten legend in the mists of time. Now all that remains is the legacy of their glory, the Words of Power.~ 
+@28 = ~Maugrim and his cult are nothing, a single drop of water in the ocean of history. He dreams of greatness, of the legacy of the Creator Race and claiming the Words of Power... but they are the dreams of a fool. His people came to me seeking the Word of Power, but I sent them away. Maugrim is blind with ambition, consumed by an insane lust for power. I will not deal with a madman. I have too much to lose.~ 
 @29 = ~What do you mean, too much to lose?~
 @30 = ~Dragon? That term hardly applies. That creature is simply a vessel for the essence of my existence, an ignorant beast created by the power of my sorcerer servants' magic from the eggs of another dragon.~
 @31 = ~Your threat is meaningless to me. I can create more essence spheres, and I will find more servants. There are many who will perform tasks for me to obtain treasure from my hoard.~
@@ -34,7 +34,7 @@
 
 @34 = ~You have performed a simple task, <CHARNAME>. It required no great risk or capabilities on your part. If the gold I offer is not to your liking, keep the sphere for yourself. I can make other orbs and find other servants.~
 @35 = ~The wisdom of eternity speaks, but you refuse to listen. So be it. I shall bring you the death you so eagerly seek.~
-@36 = ~The magic of the Words is not the sort I need to prolong my life, and so the Word of Power sits in my hoard, as meaningless as all the other material treasures I have collected over eons of time. I know you desire the Word, <CHARNAME>, and it is of no use to me. So I will give it to you in trade.~ /*The magic of the Words is not the sort I need to prolong my life, and so the Word of Power sits in my hoard, as meaningless as all the other material treasures I have collected over eons of time.*/
+@36 = ~The magic of the Words is not the sort I need to prolong my life, and so the Word of Power sits in my hoard, as meaningless as all the other material treasures I have collected over eons of time. I know you desire the Word, <CHARNAME>, and it is of no use to me. So I will give it to you in trade.~ 
 @37 = ~Forget it, I'm not striking a deal with you!~
 @38 = ~Trade? What kind of trade?~
 @39 = ~My continued existence is my only concern. Maugrim and his followers could not recognize my grandeur. All the same, they possessed just enough power to be a threat to me. That is why I sent them away.~
@@ -44,7 +44,7 @@
 @43 = ~Gold? I was hoping for some other reward. A powerful magic item, perhaps?~
 @44 = ~How do I use this sphere?~
 @45 = ~Then you shall get no reward. I can make other orbs, I can find other servants. Keep the orb if you wish, <CHARNAME>, it makes no difference to me.~
-@46 = ~My own kind? I am unique! There is no other creature like me in the world! What value is the life of a common dragon against my own continued existence? I am great and terrible and awe-inspiring like no other being! If I succumb to the darkness that encircles me, the world will not even comprehend what it has lost. I do not expect you to understand, <CHARNAME>. Ironically, only I have the wisdom to appreciate the value of my own life.~ /*If I succumb to the darkness that encircles me, the world will not even comprehend what it has lost. I do not expect you to understand, <CHARNAME>. Ironically, only I have the wisdom to appreciate the value of my own life.*/
+@46 = ~My own kind? I am unique! There is no other creature like me in the world! What value is the life of a common dragon against my own continued existence? I am great and terrible and awe-inspiring like no other being! If I succumb to the darkness that encircles me, the world will not even comprehend what it has lost. I do not expect you to understand, <CHARNAME>. Ironically, only I have the wisdom to appreciate the value of my own life.~ 
 @47 = ~I think you're an insane egomaniac.~
 @48 = ~This is a simple task, <CHARNAME>. It requires no great skill or capabilities on your part. If the offer of gold does not entice you, do not perform the task. Others will come to serve me later and perform this task for me.~
 @49 = ~Then you shall not have the Word of Power I possess. There are others who will serve me in this matter, if you are unwilling or unable.~
@@ -63,12 +63,12 @@
 @62 = ~Then go. When you return you will reap your just reward.~
 
 @64 = ~Ask your question, <CHARNAME>, and I shall answer if it pleases me.~
-@65 = ~NP: Then I will give you the legacy of the Creator Race. This key will open the chamber behind me where the Word is kept. Your word of power<CHARNAME> especially since its useless to me.~ /*Then I give you the legacy of the Creator Race. This key will open the chamber behind me, where the Word is stored. The Word of Power is yours, <CHARNAME>, as it is of no use to me, anyway. Now, is there something else you wish of me?*/
+@65 = ~Then I give you the legacy of the Creator Race. This key will open the chamber behind me, where the Word is stored. The Word of Power is yours, <CHARNAME>, as it is of no use to me, anyway.~ 
 
 @67 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <RACE> mortal. My offer stands. You will get nothing more from me.~
 @68 = ~Fine, take the eggs.~
 @69 = ~Then I think I'll just keep these eggs for myself, Klauth!~
-@70 = ~Keep them, it matters not to me. There are others who will serve me in this; there are other caches of eggs to be found. Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?~ /*Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?*/
+@70 = ~Keep them, it matters not to me. There are others who will serve me in this; there are other caches of eggs to be found. Since you are not here to give me the eggs, I assume you have some other reason for coming to speak with me. What boon do you ask of me, <CHARNAME>?~ 
 @71 = ~So you return, <CHARNAME>.~ [NWDRA454]
 @72 = ~Have you considered my offer? Have you brought me the eggs of a dragon?~
 @73 = ~No, I do not have the eggs yet.~
@@ -79,12 +79,12 @@
 @78 = ~Here, take the eggs.~
 @79 = ~I think I deserve a little more than 5000 gold.~
 @80 = ~What's wrong with the dragon in the other lair within this complex?~
-@81 = ~NP: Then the gold is yours<CHARNAME> because its useless to me anyway.~ /*Then the gold is yours, <CHARNAME>, as it is of little use to me. Now, is there more you wish of me?*/
+@81 = ~Then the gold is yours, <CHARNAME>, as it is of little use to me.~ 
 @82 = ~It is beneath me to bargain with the likes of you, <CHARNAME>. I am an ancient red dragon, and you are a mere <RACE> mortal. My offer stands. You will get nothing more from me.~
 @83 = ~Then I think I'll just keep these eggs for myself!~
-@84 = ~NP: Gold? I would like to receive another reward. Maybe a powerful magic item?~ /*Gold? I was hoping for some other reward. A powerful magic item, perhaps?*/
+@84 = ~Gold? I was hoping for some other reward. A powerful magic item, perhaps?~ 
 @85 = ~Then you shall get no reward. I can make other orbs, I can find other servants. Keep the orb if you wish, <CHARNAME>, it makes no difference to me.~
 @86 = ~Dragon? That term hardly applies. That creature is simply a vessel for the essence of my existence, an ignorant beast created by the power of my sorcerer servants' magic from the eggs of another dragon.~
 @87 = ~Keep them, it matters not to me. There are others who will serve me in this; there are other caches of eggs to be found.~
-@88 = ~NP: Find the staircase in the giants village that leads to the ritual rooms where the blue dragon lives. The orb will absorb the dragons soul if placed on a pedestal. Then bring the orb to me.~ /*Find the staircases in the giant complex that lead down to the ritual rooms, where a dragon is held in stasis. The orb will absorb the soul of the dragon when it is placed upon the pedestal. Then return the sphere to me.*/
+@88 = ~Find the staircase in the giants village that leads to the ritual rooms where the blue dragon lives. The orb will absorb the dragon's soul when it is placed on the pedestal. Then bring the orb to me.~ 
 @89 = ~I'll be back as soon as I get this sphere filled up!~

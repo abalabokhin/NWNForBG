@@ -1,8 +1,8 @@
-@0 = ~NP: You do not know how and for what you can use this book.~ /*If I could harness that power...*/
-@1 = ~NP: You must get closer to the demon.~ /*You will have to speak with my commander.*/
-@2 = ~NP: You cannot use the book in this location.~ /*You cannot use this skill.*/
-@3 = ~NP: How would you like to use this book?~ /*You cannot use this skill.*/
+@0 = ~You do not know how or for what to use this book.~ 
+@1 = ~You must get closer to the demon.~ 
+@2 = ~You cannot use the book in this location.~
+@3 = ~How would you like to use this book?~
 @4 = ~Complete the Ritual.~
 @5 = ~Banish the Demon.~
 
-@7 = ~NP: Close book.~ /*Close Window*/
+@7 = ~Close book.~

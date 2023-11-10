@@ -3,7 +3,7 @@
 @2 = ~What competition? What are you talking about?~
 @3 = ~Oh yeah, I know all about the competition.~
 @4 = ~No, I'm not here for any competition.~
-@5 = ~NP: I'm here to win the match.~ /*Yes. Me is here to *win* competition.*/
+@5 = ~I'm here to *win* the competition.~ 
 @6 = ~I will leave.~
 @7 = ~The name's Dydd. My vast intelligence will see me through the competition, dear <MANWOMAN>... and then everyone will know of me.~
 @8 = ~Oh. You don't know? Well, I'm not going to be the one to tell you, then. Mutamin likes to keep it a secret. Oops!~
@@ -19,6 +19,6 @@
 @18 = ~As you wish.~
 @19 = ~Certainly not. I plan on entering and winning the competition, not on earning Mutamin's wrath. Good day to you, <SIRMAAM>.~
 @20 = ~Hey! I'm too busy preparing my strategies. I don't need you distracting me. Go bother someone else.~
-@21 = ~Well... I suspect I'll head on in soon enough. I *am* planning a brilliant strategy to make it past all the obstacles and traps, after all. And I'm *not* sharing any of them with you. Mutamin's reward is too high to share, so good day to you.~ /*Well... I suspect I'll head on in soon enough. I *am* planning a brilliant strategy to make it past all the obstacles and traps, after all.*/
+@21 = ~Well... I suspect I'll head on in soon enough. I *am* planning a brilliant strategy to make it past all the obstacles and traps, after all. And I'm *not* sharing any of them with you. Mutamin's reward is too high to share, so good day to you.~ 
 @22 = ~I trust I'll be seeing you again soon enough, dear <MANWOMAN>. Until then, please let me strategize.~
-@23 = ~NP: It's useless to compete with me<MALEFEMALE> . My brilliant intellect can easily deal with you.~ /*It is pointless for you to compete against me, dear <MANWOMAN>. My superior intelligence will prevail in the end.*/
+@23 = ~It is pointless for you to compete against me, dear <MANWOMAN>. My superior intelligence will prevail in the end.~ 

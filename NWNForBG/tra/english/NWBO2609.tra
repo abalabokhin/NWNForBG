@@ -1,7 +1,7 @@
-@0 = ~NP: In the hazy candlelight, you parse the intermittent text...~ /*By the dim light of the candelabra, you can decipher the book's ragged text...*/
+@0 = ~By the dim light of the candelabra, you can decipher the book's ragged text...~ 
 @1 = ~Read the book...~
-@2 = ~NP: Go...~ /*Leave...*/
-@3 = ~NP: "My attempts to summon the demon Belial, Lord of Fire, continue. It is difficult work, and my robe has ended up looking like a half-burned rag smeared with ashes.... But I must continue, for only Belial knows the whereabouts of the phylactery I seek, a vessel that only the gods can destroy..."~ /*"My research into the summoning of the demon Belial, Lord of Fire, continues. It is rugged work and my robes are little more than ashen rags as a result..."*/
+@2 = ~Leave...~ 
+@3 = ~My research into the summoning of the demon Belial, Lord of Fire, continues. It is rugged work and my robes are little more than ashen rags as a result... But I must continue, for only Belial knows the whereabouts of the phylactery I seek, a vessel that only the gods can destroy..."~
 @4 = ~Continue reading...~
-@5 = ~"Yes, Belial is the Lord of Fire so, aside from the customary casting of Protection from Evil, it shall also take fire to summon him. I am sure that the belly of the fire beetle is the proper reagent, but what spell?" "I have cast every high-level fire spell there is upon that brazier, to no effect! I have tried even those of mid-level, and there is nothing!"~ /*"Yes, Belial is the Lord of Fire so, aside from the customary casting of Protection from Evil, it shall also take fire to summon him. I am sure that the belly of the fire beetle is the proper reagent, but what spell?"*/
-@6 = ~"There is but one fire spell left of all those known but that can't be it! I haven't cast since I was a mischievous child! Still, I must try... "~
+@5 = ~"Yes, Belial is the Lord of Fire so, aside from the customary casting of Protection from Evil, it shall also take fire to summon him. I am sure that the belly of the fire beetle is the proper reagent, but what spell?" "I have cast every high-level fire spell there is upon that brazier, to no effect! I have tried even those of mid-level, and there is nothing!"~
+@6 = ~"There is but one fire spell left of all those known but that can't be it! I haven't cast since I was a mischievous child! Still, I must try..."~

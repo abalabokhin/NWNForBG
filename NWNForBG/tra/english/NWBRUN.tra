@@ -1,9 +1,9 @@
 @0 = ~Grrrr. Get out of my cave...~
 @1 = ~Who are you?~
 @2 = ~I am Bran, from Port Llast - at one time normal, not afflicted with this... grrr... lycanthropic disease. Why don't you take your sneering self away from here?~
-@3 = ~NP: Newrick gave me these silver charms. I think this will help you.~ /*Neurik gave me these silver charms. I think they can help you.*/
+@3 = ~Neurik gave me these silver charms. I think they can help you.~ 
 @4 = ~Tell me how you became a werewolf.~
-@5 = ~NP: I have to end the werewolves. If you give me your ring, I will leave and no one will look for you again.~ /*I've been sent to end the werewolf menace. If you give me your ring, I will leave and no one will come searching for you in the future.*/
+@5 = ~I've been sent to end the werewolf menace. If you give me your ring, I will leave and no one will come searching for you in the future.~ 
 @6 = ~Look, sit tight, okay? I'll see if I can find help for you.~
 @7 = ~Have you dug your grave, lycanthrope? It's time to die.~
 @8 = ~Grrrr... silver? You're trying to kill me, aren't you?~
@@ -11,7 +11,7 @@
 @10 = ~Nonsense. Neurik made it and, if you can't trust him, you can't trust anyone.~
 @11 = ~Look, kid. Take it or I *will* kill you. It's that simple.~
 @12 = ~All right, kid, dig your grave.~
-@13 = ~I came out here on an expedition with Sir Karathis and some friends, Urth, Ander and Geth. We were hunting a - grrr - werewolf. The battle, of course, didn't fare as we expected. Karathis became a werewolf, or was killed. I don't know. Or care. The rest of us fled. Only Ander escaped becoming a werewolf.~ /*The battle, of course, didn't fare as we expected. Karathis became a werewolf, or was killed. I don't know. Or care. The rest of us fled. Only Ander escaped becoming a werewolf.*/
+@13 = ~I came out here on an expedition with Sir Karathis and some friends, Urth, Ander and Geth. We were hunting a - grrr - werewolf. The battle, of course, didn't fare as we expected. Karathis became a werewolf, or was killed. I don't know. Or care. The rest of us fled. Only Ander escaped becoming a werewolf.~ 
 @14 = ~Do you know where I can find Urth?~
 @15 = ~Would you know where would I find Geth?~
 @16 = ~Where is Karathis now?~
@@ -34,7 +34,7 @@
 @33 = ~Yuck, this place smells horrible! I'm going to get some fresh air, all right?~
 @34 = ~It - It worked, I can feel it! I never thought I would be normal again, but - you proved me wrong!~
 @35 = ~Grrr - Please! - Grrrrr - Can't control... Myself!~
-@36 = ~NP: I have silver charms from Newrick.~ /*I have silver charms - from Neurik.*/
+@36 = ~I have silver charms - from Neurik.~
 @37 = ~I'll try to find some help for you. Stay here.~
 @38 = ~I'm here to kill you, Geth. Are you ready?~
-@39 = ~NP: Please! Now I'm human again! Do not kill me!~ /*Please! I am myself again! Don't kill me!*/
+@39 = ~Please! I am myself again! Don't kill me!~ 

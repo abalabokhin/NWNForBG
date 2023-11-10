@@ -1,17 +1,17 @@
-@0 = ~NP: Ahhhh, zz-hello, <SIRMAAM>.~ [NWELY57] /*Ahhh, h-hello, there, <SIRMAAM>.*/
+@0 = ~Ahhh, h-hello, there, <SIRMAAM>.~ [NWELY57]
 @1 = ~Might I ask your name, friend?~
 @2 = ~May I ask you some questions?~
 @3 = ~Who are you?~
 @4 = ~Goodbye.~
-@5 = ~NP: О. Yes, my name is Elinvid. Elinvid Direlin. I apologize for my mood... It's a bad day.~ /*Ah. Now we know each other, then. Please pardon my mood... this is not a good day.*/
+@5 = ~Оh. Yes, my name is Elynwyd. Elynwyd Direlin. I apologize for my mood... It's a bad day.~ 
 @6 = ~What's so terrible about today?~
 @7 = ~Can you tell me what's going on in Luskan?~
 @8 = ~Do you know of any work around here?~
 @9 = ~I need some directions.~
-@10 = ~NP: All right. If you want. Although, uh. I'm not myself today. Did you want something from me?~ /*Aye. If you wish. Although... I am not myself, today. I do not know how much help I shall be.*/
-@11 = ~NP: Who... ? О. I guess, uh. My name is Elinweed. Why do you ask?~ /*Who... ? Oh. I guess... my name is Elynwyd. Why do you want to know? Who are you?*/
+@10 = ~Aye. If you wish. Although... I am not myself, today. Did you want something from me?~ 
+@11 = ~Who... ? Oh. I guess... my name is Elynwyd. Why do you ask?~ 
 @12 = ~(sigh) Go, then.~
-@13 = ~My sister... my dear Evaine... is being held by Captain Kurth, the most powerful of the High Captains fighting for control of the city. I have paid him a fortune in ransom... begged him, even, to release her... but he refuses. There is no authority for me to turn to... Kurth does as he pleases. I fear I shall never see her again.~ /*I have paid him a fortune in ransom... begged him, even, to release her... but he refuses. There is no authority for me to turn to... Kurth does as he pleases. I fear I shall never see her again.*/
+@13 = ~My sister... my dear Evaine... is being held by Captain Kurth, the most powerful of the High Captains fighting for control of the city. I have paid him a fortune in ransom... begged him, even, to release her... but he refuses. There is no authority for me to turn to... Kurth does as he pleases. I fear I shall never see her again.~ 
 @14 = ~Actually, I have news for you... Evaine is dead.~
 @15 = ~Why is Kurth holding her captive?~
 @16 = ~Where is she being held? Do you know?~
@@ -30,9 +30,9 @@
 @29 = ~I'm sure I can get your sister back safely.~
 @30 = ~Fine, if you don't want my help, so be it.~
 @31 = ~I thank you for the offer, <SIRMAAM>, but... I mean no offense, but I'd be entrusting the life of my sister to you. Who knows what could happen to her if you fail?~
-@32 = ~I... yes, I see. I did not expect to find anyone... not in Luskan... who would be willing to help me, to be honest. Now please... leave me be, if you cannot help. It is too difficult to discuss.~ /*I... yes, I see. I did not expect to find anyone... not in Luskan... who would be willing to help me, to be honest.*/
-@33 = ~Kurth once had a tower not far from here, but it was burnt down in the recent fighting. My Evaine could be dead... and if not, she is wherever Kurth has moved to. Some say that his Bloody Hands have taken over the West Harbor district... walled it off from the rest of the city. If so, I have no clue how anyone might reach her.~ /*Kurth once had a tower not far from here, but it was burnt down in the recent fighting. My Evaine could be dead... and if not, she is wherever Kurth has moved to.*/
-@34 = ~I... I have been told that near Kurth's ruined tower there is a gap in the wall which may lead into West Harbor. I have been too frightened to try it, myself, but perhaps you... perhaps you could attempt it. Here... I'm giving you a ring that belongs to Evaine. If you find her, she will likely be so frightened... this will let her know that I've sent you. Perhaps it will help.~ /*I... I have been told that near Kurth's ruined tower there is a gap in the wall which may lead into West Harbor. I have been too frightened to try it, myself, but perhaps you... perhaps you could attempt it.*/
+@32 = ~I... yes, I see. I did not expect to find anyone... not in Luskan... who would be willing to help me, to be honest. Now please... leave me be, if you cannot help. It is too difficult to discuss.~ 
+@33 = ~Kurth once had a tower not far from here, but it was burnt down in the recent fighting. My Evaine could be dead... and if not, she is wherever Kurth has moved to. Some say that his Bloody Hands have taken over the West Harbor district... walled it off from the rest of the city. If so, I have no clue how anyone might reach her.~ 
+@34 = ~I... I have been told that near Kurth's ruined tower there is a gap in the wall which may lead into West Harbor. I have been too frightened to try it, myself, but perhaps you... perhaps you could attempt it. Here... I'm giving you a ring that belongs to Evaine. If you find her, she will likely be so frightened... this will let her know that I've sent you. Perhaps it will help.~
 
 @36 = ~I... I suppose I have little choice. The fact that you offer to save her at all is more than most would do. If there is even a chance for her rescue, I must take it...~
 @37 = ~Thank you for the offer, <SIRMAAM>, but I must find some other way.~
@@ -51,9 +51,9 @@
 @50 = ~Kurth want me to kill Baram, but me say no.~
 @51 = ~I'll try, Elynwyd.~
 @52 = ~I don't think so.~
-@53 = ~That loathesome bastard! Ahhhh, one could only expect it from one such as he! Please... please find out if Evaine is at least all right! Storm his base, or... or something! I beg you, please!~ /*Please... please find out if Evaine is at least all right! Storm his base, or... or something! I beg you, please!*/
+@53 = ~That loathesome bastard! Ahhhh, one could only expect it from one such as he! Please... please find out if Evaine is at least all right! Storm his base, or... or something! I beg you, please!~ 
 @54 = ~You... you've found her? Don't tell me that you left her there! Or... or worse, that you've left her somewhere in the streets! Something worse could happen to her! What are you waiting for? Please, go and bring her back!~
-@55 = ~NP: What?! Dead?! How could you-- ? No... I guess it's not your fault, is it? There's no reason why Ewaine's fate should be any better than any other person in the city... S-tell me, <SIRMAAM>... Did she suffer? And Kurt... Did he at least pay for what he did?~ /*What?! Dead?! How could you... ? No... I suppose it is not truly your fault, is it? There is no reason Evaine's fortune should be better than anyone else in this town.*/
+@55 = ~What?! Dead?! How could you... ? No... I suppose it is not truly your fault, is it? There is no reason Evaine's fortune should be better than anyone else in this town. Tell me, <SIRMAAM>... Did she suffer? And Kurth... Did he at least pay for what he did?~
 @56 = ~She suffered plenty at Kurth's hands... and he has paid for it with his life.~
 @57 = ~She did not suffer, no... but Kurth is dead for what he did.~
 @58 = ~She suffered, yes. Kurth remains alive, however.~
@@ -69,23 +69,23 @@
 @68 = ~Please! Do something, don't leave her there! I beg you!~
 @69 = ~I... good. I hope the bastard rots in hell. E-excuse me, then...~
 
-@71 = ~That is... good to know. Thank you, <SIRMAAM>. Now, please... excuse me...~
+@71 = ~That is... good to know. Thank you, <PRO_SIRMAAM>. Now, please... excuse me...~
 @72 = ~I... I see. Than I shall see that he pays for what he has done. Somehow. E-excuse me, please...~
 @73 = ~I... I suppose it is good that she did not suffer, then. Thank you for that much, at least. As for him... I shall see he pays. Somehow.~
 @74 = ~I see. No... perhaps I don't, at that. Excuse me, then, I... must go.~
-@75 = ~NP: You... You are very mean and cruel, <MALEFEMALE>. I wish I had never met you.~ /*You... are a very cruel and evil <MANWOMAN>. I am very sorry I ever met you.*/
+@75 = ~You... are a very cruel and evil <MANWOMAN>. I am very sorry I ever met you.~ 
 @76 = ~Ahhh... hello, again. Might you have heard anything of Evaine? I know it is much to hope for...~ [NWELY59]
 @77 = ~I... I can scarce believe it! You have returned Evaine to me! I had almost... almost lost hope.~ [NWELY61]
 @78 = ~Evaine explained to me your rescue after she appeared. How can I ever thank you, my <LADYLORD>? Here is the 300 gold pieces... I only wish I could give you more.~
 @79 = ~Are you sure you can't? This is your sister, after all.~
-@80 = ~NP: Give me more gold or I'll kill your sister.~ /*Cough up some more gold, or I kill your sister now.*/
-@81 = ~NP: That's great. I'm fine with that amount.~ /*Grand. Simply grand.*/
-@82 = ~No, me no need gold. You loses enough.~
-@83 = ~Obviously you are correct I would rather be poor and destitute than have Evaine killed. Here is 375 gold... though it is truly all I own. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ /*Obviously you are correct I would rather be poor and destitute than have Evaine killed. Here is 375 gold... though it is truly all I own.*/
+@80 = ~Cough up some more gold, or I kill your sister now.~ 
+@81 = ~That's great. I'm fine with that amount.~
+@82 = ~No, I don't need gold. You lost enough.~
+@83 = ~Obviously you are correct I would rather be poor and destitute than have Evaine killed. Here is 375 gold... though it is truly all I own. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ 
 
-@85 = ~NP: I don't have any more money. Are you going to take the last of it from me?~ /*I have a letter from Oleff. He sent me.*/
-@86 = ~I... you wouldn't! How could you?! Ahhh, what else was I to expect in this city? Here... take it. Take all the gold I have. 375 gold pieces... I have nothing else to give you. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ /*I... you wouldn't! How could you?! Ahhh, what else was I to expect in this city? Here... take it. Take all the gold I have. 375 gold pieces... I have nothing else to give you.*/
-@87 = ~Take it, then. You deserve far more, my <LADYLORD>. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ /*Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.*/
-@88 = ~You... are far, far too kind, my <LADYLORD>. Far too good for this city, at the very least. I hope the gods smile kindly on you for all that you've done. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ /*You... are far, far too kind, my <LADYLORD>. Far too good for this city, at the very least. I hope the gods smile kindly on you for all that you've done.*/
+@85 = ~I don't have any more money. Are you going to take the last of it from me?~ 
+@86 = ~I... you wouldn't! How could you?! Ahhh, what else was I to expect in this city? Here... take it. Take all the gold I have. 375 gold pieces... I have nothing else to give you. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ 
+@87 = ~Take it, then. You deserve far more, my <PRO_LADYLORD>. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~
+@88 = ~You... are far, far too kind, my <PRO_LADYLORD>. Far too good for this city, at the very least. I hope the gods smile kindly on you for all that you've done. Come, then, Evaine. I believe I have arranged a way out of this hellish city... let us use it at once.~ 
 @89 = ~I really must be going. I have arranged a way out of this city once and for all... I intend to leave as quickly as possible.~ [NWELY62]
 

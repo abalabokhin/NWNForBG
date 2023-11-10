@@ -1,5 +1,5 @@
-@0 = ~NP: My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ /*You've the right good manners of a gentleman. Not like that Meldanen cad.*/
-@1 = ~NP: Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ /*Hmmm... ignore my husband, wherever he is... I'd rather talk to a man like you.*/
-@2 = ~NP: I already have a cavalier, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ /*You've done the puzzle correctly! Too bad the magics haven't been finished yet, so all your work is for naught.*/
-@3 = ~NP: What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ /*What is an adventurous fellow like you doing in a crap-town like this?*/
-@4 = ~NP: My name is Lady Merana and I am waiting for a gentleman. I ask you to move away so that my friend is not seduced by your beauty.~ /*My name is Urth, and I've been infected with lycanthropy. That's why I'm hiding here, so no one has to see - this.*/
+@0 = ~My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ 
+@1 = ~Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ 
+@2 = ~I already have a gentleman, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ 
+@3 = ~What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ 
+@4 = ~My name is Lady Merana and I am waiting for a gentleman. I ask you to move away so that my friend is not seduced by your beauty.~ 
