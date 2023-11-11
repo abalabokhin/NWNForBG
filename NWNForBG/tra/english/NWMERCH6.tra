@@ -1,11 +1,11 @@
-@0 = ~NP: Ah, the buyer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~ /*I beg you to leave me be. I have nothing to say and nothing left to steal, I assure you.*/
+@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~
 @1 = ~I need to ask a few questions.~
 @2 = ~Goodbye.~
-@3 = ~NP: Hmm, I can tell you about my product.~ /*I will help you find these tombs.*/
+@3 = ~Hmm, I can tell you about my product.~ /*I will help you find these tombs.*/
 @4 = ~I need infomation about places in Neverwinter.~
 @5 = ~What do you know of the plague?~
 @6 = ~Have you heard of anything odd? Any rumors?~
-@7 = ~NP: Come again.~ /*Yes, come again.*/
-@8 = ~NP: Sorry, I can't help. Ask someone else about it.~ /*"I'm sorry, but I have joined with somebody else."*/
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is rumor. I'm not sure I can add much to it all.~
-@10 = ~NP: What could I hear? I don't have anyone to talk to right now. There are very few buyers, everyone is afraid of the plague.~ /*I... I can't talk about that right now. The memories are too unpleasant.*/
+@7 = ~Come again.~ /*Yes, come again.*/
+@8 = ~Sorry, I can't help. Ask someone else about it.~ /*"I'm sorry, but I have joined with somebody else."*/
+@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~
+@10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~

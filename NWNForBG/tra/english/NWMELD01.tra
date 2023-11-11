@@ -3,7 +3,7 @@
 @2 = ~Perhaps I could arrange a meeting with the owner?~
 @3 = ~Fine. Can I ask you some questions, then?~
 @4 = ~I am a member of the city guard under Aribeth. I think I can enter.~
-@5 = ~NP: Step aside and let me in, otherwise blame yourself.~ /*You'll stand aside and let me enter, or it's your head.*/
+@5 = ~You'll stand aside and let me enter, or it's your head.~
 @6 = ~Goodbye.~
 @7 = ~This is none other than the home of the noble Meldanen, one of the greatest sorcerers in the city! The man enjoys his privacy, as well, so you'll do well to just keep on walking. You don't bother him, he won't bother you, heh.~ /*The man enjoys his privacy, as well, so you'll do well to just keep on walking. You don't bother him, he won't bother you, heh.*/
 @8 = ~No. He doesn't meet with anyone. And before you ask, he doesn't have visitors... period. Now go.~
@@ -15,10 +15,10 @@
 @14 = ~I don't care if you're Lord Bloody Nasher, himself, and neither would Lord Meldanen. You're not getting in.~
 @15 = ~How about 200 gp? Would that change your mind?~
 @16 = ~You don't want trouble with me, fool. Think very carefully.~
-@17 = ~NP: I SAY, I serve Aribet! You risk angering her! Forget about Meldanen, think about yourself!~ /*I SAID that I serve Lady Aribeth! You risk her wrath if you don't stand aside! Meldanen be damned, think of yourself!*/
+@17 = ~I SAID that I serve Lady Aribeth! You risk her wrath if you don't stand aside! Meldanen be damned, think of yourself!~
 @18 = ~Then I'll have to do this the hard way. Time to die, fool.~
-@19 = ~NP: Is it true? Or maybe you will return to where you came from, and I will just forget about your words, huh?~ /*Oh yeah? How about you just slink back to the castle and I'll forget you said that, little <MANWOMAN>.*/
-@20 = ~NP: I serve Aribeth! You risk angering her! Forget about Meldanen, think about yourself!~ /*Me works for Aribeth and Nasher guy. You let me go.*/
+@19 = ~Oh yeah? How about you just slink back to the castle and I'll forget you said that, little <MANWOMAN>.~
+@20 = ~I serve Lady Aribeth! You risk her wrath if you don't stand aside! Meldanen be damned, think of yourself!~
 @21 = ~On your way.~
 @22 = ~Lord Meldanen lives here, of course. He's one of them sorcerer types, so some strangeness is expected. Lots of it, actually. But that's okay. We don't go inside the mansion... well, except for that dunce, Grommin... so the strangeness can just stay in there for all we care. Beyond that, it's nothing you need concern yourself about. Local folks are just superstitious, that's all.~ /*But that's okay. We don't go inside the mansion... well, except for that dunce, Grommin... so the strangeness can just stay in there for all we care.*/
 @23 = ~Lord Meldanen has lots of strange creatures. It's sort of his hobby, or something. You'd have to be more specific.~
@@ -44,4 +44,4 @@
 @43 = ~That's it. You've been asking for this... time to die!~
 @44 = ~I don't know. I think so. We haven't seen her leave, that's for sure.~
 @45 = ~Go on, get out of here, you! You certainly won't be allowed in here.~
-@46 = ~NP: Come in if you need it. I'll pretend I don't see anything.~ /*Go on in, then. I'll pretend I didn't see anything.*/
+@46 = ~Go on in, then. I'll pretend I didn't see anything.~
