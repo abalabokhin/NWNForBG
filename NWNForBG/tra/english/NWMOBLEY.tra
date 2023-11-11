@@ -14,7 +14,7 @@
 @13 = ~That isn't right. Do you even know the season?~
 @14 = ~Well, on the whole it is a fine place. The Lords Jhareg keep us safe and we have very little to worry about. Very little...~
 @15 = ~You sound nervous. Are your lords fair?~
-@16 = ~NP: I'd like to ask another question.~ /*I want to ask you some questions.*/
+@16 = ~I'd like to ask another question.~
 @17 = ~Oh, perhaps I just have a carefree manner. The Lords Jhareg worry so we don't have to. Yes, that's it. That's what he said...~
 @18 = ~I... Look, there is nothing amiss here. Time just passes slowly in a small village. Just tell your tale and go.~
 @19 = ~Mayor, if there is a threat, perhaps I can help?~
@@ -24,10 +24,10 @@
 @23 = ~You can tell me. Can't you, handsome?~
 @24 = ~There is no threat! I don't want you making trouble out of nothing! If you disturb the Lords Jhareg, everything will end!~
 @25 = ~Jhareg? Who's that?~
-@26 = ~NP: I suppose so, although I don't want any trouble. We've been protected from stories for so long. Lord Carlat Jareg and his brother. what's his name. they built a castle here and founded our village beside it. We are protected, that's all that matters. We have had to make certain sacrifices and listen to their stories..... but we are protected.~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
+@26 = ~I suppose, though I do not wish to make trouble. We have been safe from the stories for so long... Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~
 @27 = ~What stories?~
-@28 = ~NP: What sacrifices?~ /*What kind of sounds?*/
-@29 = ~NP: I-I don't want any trouble. I just, uh. well, there's not much I can say. For so long we've been protected from stories. Lord Carlat Jareg and his brother. what's his name. they built a castle here and founded our village beside it. We are protected, that's all that matters. We have had to make certain sacrifices and listen to their stories..... but we are protected.~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
+@28 = ~What sacrifices?~
+@29 = ~I d-don't want trouble. I just... very well, but there is not that much to tell. We have been safe from the stories for so long... Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~
 @30 = ~I... don't think that I find your approach very... attractive, madam. Please, just ask your questions and leave.~
 @31 = ~Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~ /*We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...*/
 @32 = ~Oh, you won't find anything like that here. The Lords Jhareg keep us safe from changes like that. From everything.~
@@ -41,7 +41,7 @@
 @40 = ~Yes? I am Mayor Mobley. What can I help you with?~ [NWMOBL56]
 @41 = ~I want to go over some things you said before.~
 @42 = ~Look how the light shines through the leaves again! See all you've done? I stayed behind to thank you.~
-@43 = ~NP: I'm glad it's over, Mayor.~ /*How does it end?*/
+@43 = ~I'm glad it's over, mayor.~
 @44 = ~I did it for my own reasons.~
 @45 = ~Is there anything else I can do for you?~
 @46 = ~Know that it's appreciated. The entire town, all of us ghosts and spirits, we're finally free now. We leave these woods to the animals... and to you.~

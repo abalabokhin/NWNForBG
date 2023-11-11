@@ -33,23 +33,23 @@
 @32 = ~Don't kid yourself, though: it's bloody dangerous. If you go down, chances are you don't come out. And that's the reason for all the secrecy. You're free to come back out any time an' try again, but of course someone might make it through first if you take too long. So, still interested?~ /*Don't kid yourself, though: it's bloody dangerous. If you go down, chances are you don't come out. And that's the reason for all the secrecy.*/
 @33 = ~Could you explain all that again?~
 @34 = ~Yeah, now that's what I like to see. Some adventurer spirit and an open mind! Gotta keep your smarts about you. What do you want to know?~
-@35 = ~NP: I will take part.~ /*Remove Buddy*/
+@35 = ~I will take part.~
 @36 = ~Hmph. Then tell the militia... if you can get inside Luskan, that is. Now, if you'll excuse me, I have patrons to attend to.~
 @37 = ~I assure you, Madam, we run a very safe establishment.~ [NWMUT050]
 @38 = ~So! It seems you're the one who's won my little contest, eh? Congratulations are certainly in order!~ [NWMUT053]
 @39 = ~Why, sometimes I long for the days when I used to travel and adventure as you do... but I'm sure you didn't come here to hear me talk. Heh heh. Here you go: half my fortune for your troubles. I hope it was worth it for you. Once again, congratulations!~ /*Why, sometimes I long for the days when I used to travel and adventure as you do... but I'm sure you didn't come here to hear me talk. Heh heh.*/
 @40 = ~Thank you. It was quite the experience.~
-@41 = ~NP: What? Some pathetic 5000 gold? Throw in another 1000 and I'll be fine.~ /*Make it 100 more, and I'll leave satisfied.*/
+@41 = ~What? A measly 5,000 gold pieces? Add another 1,000 and I'll leave in peace.~
 @42 = ~I want more gold, and I'm taking it.~
 @43 = ~Well, I'd love to ask you all about it, but I'm sure you're busy, and I saw well-enough with my own eyes. Farewell.~
 
 @45 = ~Generally, the pay-outs are set and immutable. But what the heck, I like your style and I'm feeling generous. Here you go, pal.~
-@46 = ~NP: The prize amounts have been set and I have no intention of changing them. Some people just do not know how to be satisfied, they always want something else. Well, I have nothing to give you. Take what they give you and stop pestering me.~ /*Some people just can't be happy, they always want more. Well, I ain't giving you more. You take what you got and stop bothering me.*/
-@47 = ~Fine! Take your stinking gold. Here's 100 coins to add to what I gave you already. But you bother me again, and I'll have your throat slit.~
+@46 = ~Generally, the pay-outs are set and immutable. Some people just can't be happy, they always want more. Well, I ain't giving you more. You take what you got and stop bothering me.~
+@47 = ~Fine! Take your stinking gold. Here's 1000 coins to add to what I gave you already. But you bother me again, and I'll have your throat slit.~
 @48 = ~Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open. Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.~ [NWMUT054] /*Sorry, but since the competition's been won, the dungeon's going to need some re-tooling. Maybe next spring or so she'll re-open.*/
-@49 = ~NP: Certainly. Several rooms have recently been vacated.~ /*Of course. I am sorry, Fiona.*/
-@50 = ~NP: I'm sorry, but you lost the match. Maybe I'll do it again next spring. Until then, I'm afraid the Green Gryphon will be an ordinary inn. Hehe.~ /*Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.*/
+@49 = ~Of course. A couple rooms have recently become available.~
+@50 = ~I'm sorry, but you have lost the competition. Maybe next spring or so she'll re-open. Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.~ /*Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.*/
 
-@52 = ~NP: Are you here now? Hurry up, the competition is about to begin, other applicants may get ahead of you.~ /*You have yet to speak with Fenthick. I'm sure he would like to congratulate you.*/
-@53 = ~NP: I want to rest before the competition. Do you have a free room?~ /*I don't need to talk to someone like you. Get out of my room.*/
+@52 = ~Are you still here? Hurry up, the competition is about to start, the other contenders may beat you.~
+@53 = ~I want to rest before the competition. Do you have a spare room?~
 
