@@ -8,11 +8,11 @@
 @7 = ~I didn't expect to find any prisoners. Can you get out on your own?~
 @8 = ~I'll go make sure it's safe. Can you wait here? I'll come back.~
 @9 = ~Please, don't go! I don't want to be left in here, not alone... I'm so scared. It's so dark...~
-@10 = ~NP: What? What questions? What do you want to ask for?~ /*Oh? What kind of questions? What did you want to ask?*/
+@10 = ~Oh? What kind of questions? What did you want to ask?~
 @11 = ~What can you tell me of these caves?~
 @12 = ~Why did the monsters kidnap you?~
 @13 = ~He does? He - oh... this has been so horrible. I just want to go home. Will you help me escape?~
-@14 = ~NP: Certainly. You can leave, the path is clear.~ /*Then you are free to go. The way behind me is clear.*/
+@14 = ~Then you are free to go. The way behind me is clear.~
 @15 = ~Thank you so much, kind <SIRMAAM>. I wish I could show you my appreciation. Please come and visit me and my husband when you are done here.~
 @16 = ~I... I suppose I could, yes. You did kill the monsters that were guarding me, right?~
 @17 = ~Yes. Just follow the trail of carnage and you'll be fine.~
@@ -24,5 +24,5 @@
 @23 = ~Um... come to think of it... they mentioned something about their "master." It was more like a threat to them, though, to keep them in line. It was as if the truly heroic monsters would be rewarded by this monster some how. Well, that's the impression that I got from it.~ /*Um... come to think of it... they mentioned something about their "master." It was more like a threat to them, though, to keep them in line.*/
 @24 = ~Please! Don't leave me here again, I beg of you. My name is Leah. My husband must be so worried!~ [NWLEA054]
 @25 = ~(sob) I miss my family!~ [NWLEA050]
-@26 = ~NP: Wait here? Ill be back soon.~ /*"Wait here until I return."*/
+@26 = ~Wait here. I'll be back soon.~
 @27 = ~Thank you so much for all you have done!~ [NWLEA056]
