@@ -1,4 +1,4 @@
-@0 = ~NP: Э? I suppose you're here to join our ranks, aren't you? However, I don't have time for new students right now, so get out.~ [NWKEN056] /*Eh? I suppose you're here to sign up, <GIRLBOY>, are ye? I've no time for a new apprentice, however, so off ye go.*/
+@0 = ~Eh? I suppose you're here to sign up, <GIRLBOY>, are ye? I've no time for a new apprentice, however, so off ye go.~ [NWKEN056] /**/
 @1 = ~Sign up for what?~
 @2 = ~I'm not here to apprentice for anything.~
 @3 = ~Bite your tongue, old man.~
@@ -17,7 +17,7 @@
 @16 = ~Me name be Kendrack, head of the guild, here, and mayor of Port Llast. Also known as the First Captain. Yer name be, then... ?~
 @17 = ~I am <CHARNAME>.~
 @18 = ~Pleased to meet you. My name is <CHARNAME>.~
-@19 = ~NP: My name means nothing. <CHARNAME> leads our team.~ /*Me name be <CHARNAME>. It be nice to meet you.*/
+@19 = ~My name means nothing. <CHARNAME> leads our group.~
 @20 = ~You don't need to know who I am.~
 @21 = ~Aye, I think I recall the Lady mentioning ye now. She said ye be a hero, in fact... which makes me doubly glad ye're here. I have a problem someone competent like yerself might be able to help with... an' there's coin in it for ye, to boot. Might ye be interested?~ /*Aye, I think I recall the Lady mentioning ye now. She said ye be a hero, in fact... which makes me doubly glad ye're here.*/
 @22 = ~What's the problem?~
@@ -25,7 +25,7 @@
 @24 = ~No, I'm not interested.~
 @25 = ~The mysterious type, are ye? No need... I seem to recall the Lady mentioning ye. A hero, she said, an' perhaps I should be glad ye're here. I have a problem someone competent like yerself might be able to help with... an' there's coin in it for ye, to boot. Might ye be interested?~ /*The mysterious type, are ye? No need... I seem to recall the Lady mentioning ye. A hero, she said, an' perhaps I should be glad ye're here.*/
 @26 = ~I received word from Waterdeep not long ago that a group o' criminals escaped from the Bulwark prison. Dangerous bunch, killers all. According to the word, the group be split up to avoid capture... but all of them be in this region. That makes me nervous, it does. Each o' them has a sizeable bounty for their left ear, marked with the seal of the Bulwark, to prove that they be dead.~ /*According to the word, the group be split up to avoid capture... but all of them be in this region. That makes me nervous, it does.*/
-@27 = ~NP: It's too dangerous a task to send my own men on. but maybe you're up to it. What do you think?~ /*'Tis too dangerous a task to set me own men to it... but perhaps ye might be up to the challenge. What does ye think, <GIRLBOY>?*/
+@27 = ~'Tis too dangerous a task to set me own men to it... but perhaps ye might be up to the challenge. What does ye think, <GIRLBOY>?~
 @28 = ~How much are the bounties?~
 @29 = ~Just how dangerous are these men?~
 @30 = ~So I would have to bring back their ear?~
@@ -40,7 +40,7 @@
 @39 = ~Tell me about Wyvern.~
 @40 = ~Tell me about Delilah.~
 @41 = ~Tell me about Yesgar.~
-@42 = ~NP: That's a shame. I thought we'd get this one out of the way sooner. Let me know if you change your mind.~ /*That be too bad. 'Tis a bit of a worry for me that I'd like t' see resolved soon. Let me know if ye change yer mind, <GIRLBOY>.*/
+@42 = ~That be too bad. 'Tis a bit of a worry for me that I'd like t' see resolved soon. Let me know if ye change yer mind, <GIRLBOY>.~
 @43 = ~Zor be a minotaur, so he should stick out wherever he goes. He be strong and a fierce warrior... but is a wee bit simple in the head. I am told that he has many friends still in Luskan. It may be that he will be there, or at least attempting to enter the city.~ /*Zor be a minotaur, so he should stick out wherever he goes. He be strong and a fierce warrior... but is a wee bit simple in the head.*/
 @44 = ~The Stirge be a strange one. A gnome thief, it is said, who believes himself t' be the smartest man alive. The gnome were sighted last in the wildlands along the South Road, though he could be anywhere there.~ /*The gnome were sighted last in the wildlands along the South Road, though he could be anywhere there.*/
 @45 = ~The Wyvern is an elven man, a renowned bandit who is familiar with the ways of the wood. He be deceptive and cunning, and skilled with the bow. The elf has not been sighted, but I have little doubt he be hidden within the Neverwinter Wood. Best search for him there.~ /*The elf has not been sighted, but I have little doubt he be hidden within the Neverwinter Wood. Best search for him there.*/
@@ -50,24 +50,24 @@
 @49 = ~Can you train me?~
 @50 = ~Do you sell arms and armor, then?~
 @51 = ~Let me ask you something else.~
-@52 = ~NP: You won't learn much in such a short time, and besides, like I said, the guild is full of people.~ /*In such a short time, it would benefit ye little, <GIRLBOY>. An' besides, as I already said, the guild be full.*/
+@52 = ~In such a short time, it would benefit ye little, <GIRLBOY>. An' besides, as I already said, the guild be full.~ /**/
 @53 = ~Nay. If ye wishes such, go an' speak to Haljal at the Cracked Anvil. He would have all ye need, I assure ye.~
 @54 = ~Aye, of course.~
 @55 = ~Aye? Ye found one of the convicts? Which ear do ye have there?~
-@56 = ~NP: I have Zora's ear.~ /*Me got questions me want ask.*/
-@57 = ~NP: I have Stirge's ear.~ /*I have a question.*/
-@58 = ~NP: I have Wyvern's ear.~ /*I have a question.*/
-@59 = ~NP: I have Dalila's Ear.~ /*Me gots stuff from one of the tomb-things.*/
+@56 = ~I have Zor's ear.~ /*Me got questions me want ask.*/
+@57 = ~I have the Stirge's ear.~ /*I have a question.*/
+@58 = ~I have Wyvern's ear.~ /*I have a question.*/
+@59 = ~I have Delilah's Ear.~ /*Me gots stuff from one of the tomb-things.*/
 @60 = ~Oops, me no have nothin'.~
-@61 = ~NP: Yeah. In fact, those tags the guy from Bastion told me about. Congratulations, that's a big favor for all of us. So I'll be happy to offer a reward. Come back when you catch more bandits.~ /*Aye. 'Tis indeed the markings that the men of the Bulwark told me of. Congratulations, <GIRLBOY>, ye've done a service fer us all.*/
-@62 = ~NP: Well, I hope you find those bastards soon.~ /*I certainly hope that you find Samuel soon.*/
+@61 = ~Aye. 'Tis indeed the markings that the men of the Bulwark told me of. Congratulations, <GIRLBOY>, ye've done a service fer us all. So I'll be happy to offer the bounty. Come back when you find more of the bandits.~
+@62 = ~Well, I hope you'll find those bastards soon.~
 @63 = ~Aye, I'm sure I can tell ye what ye need to know.~
 @64 = ~What have you heard about the plague in Neverwinter?~
 @65 = ~Do you know of anything odd in the area?~
 @66 = ~I'm looking for work, if you know of any.~
 @67 = ~I have some questions about the bounties.~
 @68 = ~I'm sure ye do. What do ye need t' know?~
-@69 = ~NP: All I know is that it's over. Well, the news made our hearts feel better... people were afraid that the plague would spread to us.~ /*Only that it be over, <GIRLBOY>. A mighty relief that news was, as well... folk were terrified that the plague would spread to town.*/
+@69 = ~Only that it be over, <GIRLBOY>. A mighty relief that news was, as well... folk were terrified that the plague would spread to town.~ /**/
 @70 = ~Aye, we be getting reports of all kinds o' strangeness in the region. Monsters rampagin', bandits traveling about at will, that sort o' thing. It is most strange. I suppose maybe it's to be expected, though... neither Neverwinter nor Luskan has the manpower for patrols right now, aye?~ /*It is most strange. I suppose maybe it's to be expected, though... neither Neverwinter nor Luskan has the manpower for patrols right now, aye?*/
 @71 = ~If ye're askin' about odd things in Port Llast, hmmm... maybe ye should speak to Nuirek at the temple. I hear the cleric has grave worries as o' late.~
 @72 = ~I have a problem someone competent like yerself might be able to help with... an' there's coin in it for ye, to boot. Might ye be interested?~
@@ -75,15 +75,15 @@
 @74 = ~Is there a good inn nearby?~
 @75 = ~Is there a decent store in town?~
 @76 = ~What temples are nearby?~
-@77 = ~NP: Are there any druids in the area?~ /*Is there a druid grove in the area?*/
+@77 = ~Is druid grove around, maybe?~
 @78 = ~Me asks something else.~
 @79 = ~Aye. The Alliance Arms is a fine inn, and ye'll find other adventurers like yerself there, this time o' year. Do ye need t' find something else?~ /*Aye. The Alliance Arms is a fine inn, and ye'll find other adventurers like yerself there, this time o' year.*/
-@80 = ~NP: Halyal's 'Cracked Anvil' has just about everything you need. You want to find something else?~ /*Haljal at the Cracked Anvil should have just about everything ye need, <GIRLBOY>.*/
-@81 = ~NP: The only temple in town is the Temple of Tyre, run by Father Newrick. You want to find something else?~ /*The only temple in town is Tyr's, <GIRLBOY>. Your Lady Aribeth be there, as is Father Neurik.*/
-@82 = ~NP: There's a grove in Neverwinter Forest, yeah. You should talk to Ballard about it. you'll find him in a little grove northeast of the city walls. You want to find something else?~ /*There be one off in the Neverwinter Wood, aye. Ye may wish to speak to Ballard about it... ye'll find him at his little grove just outside o' town.*/
-@83 = ~NP: Good luck on your wanderings, hero.~ /*I wish ye the best o' luck on yer quest, <GIRLBOY>.*/
-@84 = ~NP: Uh, good afternoon? Is there anything I can do for you? Do you have any business in the guild?~ [NWKEN057] /*Aye, <GIRLBOY>? Something I can do for ye? Has ye business with the guild?*/
-@85 = ~NP: It's good to see you again, <LADYLORD>. Did you manage to track down the fugitives?~ [NWKEN058] /*'Tis good to see ye again, <GIRLBOY>. Have ye had any luck tracking down the bounties?*/
+@80 = ~Haljal at the Cracked Anvil should have just about everything ye need, <GIRLBOY>. Do ye need t' find something else?~ /**/
+@81 = ~The only temple in town is Tyr's, <GIRLBOY> run by Father Neurik. Do ye need t' find something else?~
+@82 = ~There be one off in the Neverwinter Wood, aye. Ye may wish to speak to Ballard about it... ye'll find him at his little grove northeast of the town walls. Do ye need t' find something else?~
+@83 = ~I wish ye the best o' luck on yer quest, <GIRLBOY>.~
+@84 = ~Aye, <GIRLBOY>? Something I can do for ye? Has ye business with the guild?~ [NWKEN057] /**/
+@85 = ~'Tis good to see ye again, <GIRLBOY>. Have ye had any luck tracking down the bounties?~ [NWKEN058] /**/
 @86 = ~Thank the gods you've come! While ye were gone from Port Llast, that fiend of a half-orc, Yesgar, kidnapped my Shaldrissa! He demanded a ransom for her return, and it was paid! But still he did not return her! Please, I beg of ye... get my Shaldrissa back! She is my only child!~ [NWKEN055] /*He demanded a ransom for her return, and it was paid! But still he did not return her! Please, I beg of ye... get my Shaldrissa back! She is my only child!*/
 @87 = ~Why don't you and your men get her back?~
 @88 = ~Do you know where she's being held?~
@@ -93,11 +93,11 @@
 @92 = ~I... I could not endanger my daughter, and I would not trust me men to do it, if the truth be told. You, however, are a powerful <MANWOMAN> who has done so much... I would trust you. You may be her only hope!~
 @93 = ~Aye, I do. The old Port Llast mines are to the north o' town, near the Green Griffon Inn. He holds her there, I am sure of it. It is a treacherous place, and easy to defend, which is why I dare not approach. I can only hope ye have the skills I don't.~ /*It is a treacherous place, and easy to defend, which is why I dare not approach. I can only hope ye have the skills I don't.*/
 @94 = ~Reward? Ye can keep the ransom, if he has it. Just get her back safe, I beg ye!~
-@95 = ~NP: Then go to the old mines by the 'Green Gryphon' tavern, north of the city. Hurry, <LADYLORD>, hurry! Oh yeah, I almost forgot, here's your reward for the bandits' ears.~ /*Go to the old mines by the Green Griffon Inn to the north of town, then. They are locked and you shall need this key. Hurry, <GIRLBOY>, hurry!*/
+@95 = ~Go to the old mines by the Green Griffon Inn to the north of town, then. Hurry, <GIRLBOY>, hurry! Oh yeah, I almost forgot, here be rest of the bounty for the ears.~
 
 @97 = ~I... I suppose I cannot blame ye. It is very dangerous. Here be rest of the bounty for the ears. I beg ye to change yer mind and find her. Shaldrissa is hot-headed and impetuous because she is young... she doesn't deserve this fate at the hands of a murderer.~ /*I beg ye to change yer mind and find her. Shaldrissa is hot-headed and impetuous because she is young... she doesn't deserve this fate at the hands of a murderer.*/
-@98 = ~NP: Have you changed your mind? Please, I pray you... bring back my Shaldress! She's my only child!~ /*You are dead. Please load a saved game or exit.*/
-@99 = ~NP: Then go to the old mines at the Green Gryphon Tavern, north of town. Hurry, my friend, hurry!~ /*Go to the old mines by the Green Griffon Inn to the north of town, then. They are locked and you shall need this key. Hurry, <GIRLBOY>, hurry!*/
+@98 = ~You've changed your mind? Please, I beg of you... bring back my Shaldrissa! She's my only child!~
+@99 = ~Then go to the old mines by the Green Griffon Inn to the north of town, then. Hurry, <GIRLBOY>, hurry!~
 @100 = ~What is the word? Have you found my daughter? Is she safe?!~ [NWKEN054]
 @101 = ~Tell me what happened again.~
 @102 = ~Where do I find her?~
@@ -110,10 +110,10 @@
 
 @110 = ~Please hurry!~
 @111 = ~Go on, then. Leave the poor lass to die, heartless wretch!~
-@112 = ~NP: Leave me alone, <MALEFEMALE>. We have nothing to talk about.~ [NWKEN051] /*Leave me be, <GIRLBOY>. We have nothing to talk about.*/
+@112 = ~Leave me be, <GIRLBOY>. We have nothing to talk about.~ [NWKEN051] /**/
 @113 = ~Get away from me! Some hero ye are... my Shaldrissa lies dead because of ye!~ [NWKEN052]
 @114 = ~Shaldrissa is safe and returned! I cannot thank ye enough! Ye truly are the hero the Lady told me of! The girl is shaken, but otherwise she is all right. Perhaps this will serve to curb her desire for adventure, now, aye?~ [NWKEN053] /*Shaldrissa is safe and returned! I cannot thank ye enough! Ye truly are the hero the Lady told me of!*/
 @115 = ~Here, take the bounty for Yesgar. I wish I had more to reward ye with. If ye found the ransom, please do keep it... and as for whatever quest the Lady put ye on, I wish ye the best of luck.~ /*I wish I had more to reward ye with. If ye found the ransom, please do keep it... and as for whatever quest the Lady put ye on, I wish ye the best of luck.*/
 
-@117 = ~NP: I wish you luck, hero. I hope you find what you're looking for.~ [NWKEN050] /*I wish ye good luck, <GIRLBOY>. Hopefully ye finds what ye're searching for.*/
-@118 = ~NP: You killed my daughter, you scoundrels! I'll take revenge!~ /*You killed my Mistress!*/
+@117 = ~I wish ye good luck, <GIRLBOY>. Hopefully ye finds what ye're searching for.~ [NWKEN050] /**/
+@118 = ~You killed my daughter, you scoundrels! I'll take revenge!~

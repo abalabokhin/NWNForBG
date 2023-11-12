@@ -16,14 +16,14 @@
 @15 = ~Well, then... either that shows your good sense or Baram's wasted his coin. Either way, you've come quite far enough. Attempt to come pass this gate and I'll just have to assume you intend to carry out your agreement. Understand?~ /*Either way, you've come quite far enough. Attempt to come pass this gate and I'll just have to assume you intend to carry out your agreement. Understand?*/
 @16 = ~Oh? You don't say? I find that hard to believe... High Captain Suljack was supposed to be dead, as well, but I've had it on good authority he's quite alive. You wouldn't happen to have his head, would you? I'd consider that definitive proof.~ /*Oh? You don't say? I find that hard to believe... High Captain Suljack was supposed to be dead, as well, but I've had it on good authority he's quite alive.*/
 @17 = ~Yes, I have his head here.~
-@18 = ~NP: Uh. I don't have a head.~ /*Uhhh... no, me not haves head.*/
+@18 = ~Uh. I don't have the head.~
 @19 = ~I'd be more than willing to answer your questions... *if* you agree to kill Baram.~
 @20 = ~Ahhh, that's a shame really. Do let me know if you change your mind. And should you get any ideas about continuing your path past this portcullis... I'd forget them, were I you.~ /*And should you get any ideas about continuing your path past this portcullis... I'd forget them, were I you.*/
 @21 = ~Now why would you want to get into there? I suppose it's no concern of mine... if you wish to kill yourself, it's your business. Regardless, I'm not about to cross the tower by giving you my own papers. Baram has his own, however... accept my offer and you can take his, if you wish.~ /*Regardless, I'm not about to cross the tower by giving you my own papers. Baram has his own, however... accept my offer and you can take his, if you wish.*/
 @22 = ~The elf girl? Why... yes, I do. Quite a pretty lass, that one. Why would she interest you?~
 @23 = ~I want her released.~
 @24 = ~I just wanted to know that, that's all.~
-@25 = ~Greedy, are we? Ha ha... I could learn to like you. Very well: 1250 gold pieces, no more. What do you think now?~
+@25 = ~Greedy, are we? Ha ha... I could learn to like you. Very well: 1500 gold pieces, no more. What do you think now?~
 @26 = ~I want to get into the Host Tower, as well.~
 @27 = ~No, thanks.~
 @28 = ~Good to hear! Let's hope you can settle the matter for me... and then all of us will be that much happier. Now, then... I imagine you have some questions for me, yes? Or are you ready to go and give that little rat what he deserves?~ /*Now, then... I imagine you have some questions for me, yes? Or are you ready to go and give that little rat what he deserves?*/
@@ -40,10 +40,10 @@
 @39 = ~What about Evaine?~
 @40 = ~I want Evaine released, as well.~
 @41 = ~That's it? We're done?~
-@42 = ~NP: Good. Now we can kill you.~ /*Good. Time to kill you, now.*/
+@42 = ~Good. Now we can kill you.~
 @43 = ~Ah. Well, until I see the rat's little head up close, I'll not believe he's dead for a second.~
 @44 = ~Hmmm... you want me to give her up, do you? Very well. Bring me Baram's head and you can have her.~
-@45 = ~NP:  Then what about my first offer? Baram's head in exchange for gold?~ /*Fair enough. What about my original offer, then? Baram's head in exchange for the reward... ?*/
+@45 = ~What about my original offer, then? Baram's head in exchange for the reward... ?~
 @46 = ~Now, now, stranger... 1000 gold is a lot of coin, and that's *if* you can do the job. Are you interested or not?~
 @47 = ~Ahhh, that's a shame really. Do let me know if you change your mind. And should you get any ideas about continuing your path past this portcullis... I'd forget them, were I you.~ /*And should you get any ideas about continuing your path past this portcullis... I'd forget them, were I you.*/
 @48 = ~Ask away.~
@@ -62,7 +62,7 @@
 @61 = ~Hah! I wouldn't trust that you'd keep your end of the bargain for a second! Either way, you've come quite far enough. Attempt to come pass this gate and I'll just have to assume you intend to carry out your agreement. Understand?~ /*Either way, you've come quite far enough. Attempt to come pass this gate and I'll just have to assume you intend to carry out your agreement. Understand?*/
 @62 = ~What about her? Oh... you didn't actually think I was going to release her, did you? Foolish <MANWOMAN>! The girl's been a source of endless pleasure and amusement. Since I'm the last High Captain, I can do what I like... and I'll be holding onto her, thank you. As for you and I, our business is done. Off you go... before you get hurt.~ /*The girl's been a source of endless pleasure and amusement. Since I'm the last High Captain, I can do what I like... and I'll be holding onto her, thank you.*/
 @63 = ~Fine. But this isn't over.~
-@64 = ~NP: I've killed one High Captain. I could easily kill another.~ /*I killed one High Captain, Baram... I can just as easily kill another.*/
+@64 = ~I killed one High Captain... I can just as easily kill another.~
 @65 = ~That's horrible! You'll never get away with this!~
 @66 = ~Now, now... that wasn't part of our agreement, was it? And even if it was, I doubt I'd be releasing her now, anyway. The girl's been a source of endless pleasure and amusement. Since I'm the last High Captain, I can do what I like... and I'll be holding onto her, thank you. As for you and I, our business is done. Off you go... before you get hurt.~ /*The girl's been a source of endless pleasure and amusement. Since I'm the last High Captain, I can do what I like... and I'll be holding onto her, thank you.*/
 @67 = ~We are very done. Now that I am the last High Captain, I have plenty of business to attend to. You have done well... now off you go.~
@@ -72,7 +72,7 @@
 @71 = ~What kind of reward?~
 @72 = ~No Thanks~
 @73 = ~I'm interested.~
-@74 = ~NP: Then what about my first offer? Baram's head in exchange for gold?~ /*Fair enough. What about my original offer, then? Baram's head in exchange for the reward... ?*/
+@74 = ~What about my original offer, then? Baram's head in exchange for the reward... ?~
 @75 = ~What of elf girl, Evaine?~
 @76 = ~Ask away.~
 @77 = ~You have, have you? I think you've been trying to play me all along. Well, then, stranger... good for you. Well done. However you think your schemes will turn out, attempt to take one foot into my base and you will quickly discover otherwise.~ /*However you think your schemes will turn out, attempt to take one foot into my base and you will quickly discover otherwise.*/
@@ -97,5 +97,5 @@
 @96 = ~What is it now? I trust you bring me word of Baram's death, correct?~ [NWKURT52]
 @97 = ~I do. Baram is dead.~
 @98 = ~Very well. I hope to see Baram's head soon.~
-@99 = ~NP: Baram is dead.~ /*Baram dead, already.*/
+@99 = ~Baram dead.~
 @100 = ~We have no further business, you and I! Take one step into my base and you'll pay the consequences, fool!~ [NWKURT51]
