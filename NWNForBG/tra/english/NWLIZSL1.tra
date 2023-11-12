@@ -18,7 +18,7 @@
 @17 = ~The Mistresses are forcing us to build a great vault. When finished it will be protected by magical wards of smoke, light and sound, as well as the golem guardians I am working on.~
 @18 = ~What can you tell me about these golem guardians?~
 @19 = ~What was that you said about magical wards?~
-@20 = ~NP: Do you know what will be stored in the shelter?~ /*Do you know what the vault protects?*/
+@20 = ~Do you know what the vault protects?~
 @21 = ~Thank you for your help. I will be going now.~
 @22 = ~I am sorry, I have not heard of such a thing. But I am only a slave, born into servitude. My knowledge is limited to what the Mistresses tell me. Is there anything else you wish to know?~
 @23 = ~When complete, the vault will be protected by three indestructible guardians: golems immune to all physical and magical attacks. My task is to complete the creation of one of these golems.~
@@ -31,7 +31,7 @@
 @30 = ~Here is Lokar's ring. He said you would help me.~
 @31 = ~I do not know the secret to deactivating the wards once they are finished, but I imagine you would have to solve the riddles of smoke, light and sound to gain entry once the wards are in place. And once my work here is complete, the golems will have to be vanquished as well.~
 @32 = ~Where would I go? The lizard people rule the entire world! I would be a fugitive forever on the run, knowing a horrible fate awaits if I am captured. I am a high ranking, privileged slave. I am given private quarters and bountiful food. I am allowed to choose a mate and I am rarely beaten. Your offer is nothing compared to that.~ /*I am a high ranking, privileged slave. I am given private quarters and bountiful food. I am allowed to choose a mate and I am rarely beaten. Your offer is nothing compared to that.*/
-@33 = ~NP: Please, if you help me, it will be the strongest blow to the tyranny of the Creator Race.~ /*Please, if you help me it will strike a great blow against the tyranny of the Creator Race that has enslaved you.*/
+@33 = ~Please, if you help me it will strike a great blow against the tyranny of the Creator Race that has enslaved you.~
 @34 = ~What use would gold serve me? I am not allowed property, I cannot buy anything with it. If the Mistresses find it they will take it and no doubt whip me for being a thief. I am a high ranking, privileged slave. I am given private quarters and bountiful food. I am allowed to choose a mate and I am rarely beaten. Your offer is nothing compared to that.~ /*I am a high ranking, privileged slave. I am given private quarters and bountiful food. I am allowed to choose a mate and I am rarely beaten. Your offer is nothing compared to that.*/
 @35 = ~Why did you not say so earlier? If Lokar sent you, your mission must be one of great importance to the fate of all those enslaved by the Creator Race! If I do not build the golem the Mistresses will know I have aided you. But it might be possible for me to construct the golem with a single subtle flaw they will not detect. This will give the golem one fatal vulnerability.~ /*If I do not build the golem the Mistresses will know I have aided you. But it might be possible for me to construct the golem with a single subtle flaw they will not detect. This will give the golem one fatal vulnerability.*/
 @36 = ~There is something strange about you. You seem more than an escaped slave. Perhaps you speak the truth. If I aid you I am taking a terrible risk but it would be worth it if you could truly strike a blow against the Mistresses. If I do not build the golem the Mistresses will know I have aided you. But it might be possible for me to construct the golem with a single subtle flaw they will not detect. This will give the golem one fatal vulnerability.~ /*There is something strange about you. You seem more than an escaped slave. Perhaps you speak the truth. If I aid you I am taking a terrible risk but it would be worth it if you could truly strike a blow against the Mistresses.*/
@@ -43,10 +43,10 @@
 @42 = ~Slashing and piercing weapons.~
 @43 = ~I shall do as you have asked. However, my change will only affect the golem I am working on. There are other golems, but you would have to speak to the slaves building them or they will be invulnerable. Now please go before the Mistresses see you here.~ /*I shall do as you have asked. However, my change will only affect the golem I am working on. There are other golems, but you would have to speak to the slaves building them or they will be invulnerable.*/
 @44 = ~Do not worry, we will make the Golem vulnerable to fire as you have asked us.~
-@45 = ~NP: No, I need something else. I want the golem to become vulnerable to the cold.~ /*I've changed my mind. I want you to make the golem vulnerable to cold instead.*/
-@46 = ~NP: No, I need something else. I want the golem to be vulnerable to blunt weapons.~ /*I've changed my mind. I want you to make the golem vulnerable to blunt weapons instead.*/
-@47 = ~NP: No, I need something else. I want the golem to become vulnerable to cutting and piercing weapons.~ /*I've changed my mind. I want you to make the golem vulnerable to slashing and piercing weapons.*/
-@48 = ~NP: We will do as you say.~ /*I shall do as you have asked.*/
+@45 = ~I've changed my mind. I want you to make the golem vulnerable to cold instead.~ /**/
+@46 = ~I've changed my mind. I want you to make the golem vulnerable to blunt weapons instead.~ /**/
+@47 = ~I've changed my mind. I want you to make the golem vulnerable to slashing and piercing weapons.~ /**/
+@48 = ~We will do as you say.~
 @49 = ~Do not worry, we will make the golem vulnerable to cold as you have asked us.~
 @50 = ~I've changed my mind. I want you to make the golem vulnerable to fire instead.~
 @51 = ~Do not worry, we will make the golem vulnerable to blunt weapons as you have asked us.~

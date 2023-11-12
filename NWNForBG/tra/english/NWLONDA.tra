@@ -1,7 +1,7 @@
 @0 = ~I beg you to leave me be, my <LADYLORD>. I have nothing to say and nothing left to steal, I assure you.~ [NWLOND54]
 @1 = ~Who are you?~
 @2 = ~I have some questions.~
-@3 = ~NP: What happened to you?~ /*What happened here?*/
+@3 = ~What happened to you?~
 @4 = ~Fine, I'll go.~
 @5 = ~I am... or, rather, I was... the Countess Londa Whitesnow. That means nothing anymore. Now I am merely... Londa.~
 @6 = ~Then what happened?~
@@ -40,7 +40,7 @@
 @39 = ~Do you know where your children might be?~
 @40 = ~Why would Baram be holding your children?~
 @41 = ~Does Baram have any enemies?~
-@42 = ~NP: I do not have any questions.~ /*Me have other question.*/
+@42 = ~I do not have any questions.~ /*Me have other question.*/
 @43 = ~I... I see. Then leave me alone.~
 @44 = ~His men once had a base in the slums... but that was burnt down more than a month ago as the war in the streets went on. Where he has gone since, I... simply do not know. Some people say he lives in the sewers, now, but I truly hope not.~ /*His men once had a base in the slums... but that was burnt down more than a month ago as the war in the streets went on.*/
 @45 = ~No. I have heard no news, and Baram will tell me nothing. He is the only one who would know where they are.~
@@ -55,12 +55,12 @@
 @54 = ~Your children are fine, Londa... but I can't bring them to you.~
 @55 = ~I am sorry, Londa. All your children are dead...~
 @56 = ~They're dead, actually. Baram and his rats ate them.~
-@57 = ~NP: So far there are no results.~ /*Not yet, no.*/
+@57 = ~So far there are no results.~
 @58 = ~That is a great relief... though until I see my children in person, I have my doubts as to whether the fiend is telling the truth. Is there any way my children can be rescued? Do you know?~ /*That is a great relief... though until I see my children in person, I have my doubts as to whether the fiend is telling the truth.*/
 @59 = ~I have agreed to perform a service for Baram in return for their release.~
 @60 = ~Baram wanted me to kill Kurth for their release, but I refused.~
 @61 = ~I'll see what I can do.~
-@62 = ~NP: No! Noooo! Please... do something! A little more, and we would meet again! Please find my children!~ /*No! No-ooo! Please, my <LADYLORD>... do something! I cannot come this close and not find them! Please find my babies!*/
+@62 = ~No! No-ooo! Please, my <LADYLORD>... do something! I cannot come this close and not find them! Please find my babies!~
 @63 = ~Fine? I... but why not? Bring me to them, then! I must see them!~
 @64 = ~Baram... sent them away. To orphanages, elsewhere. I don't know where they are.~
 @65 = ~I can't lie to you, Londa. Your children are dead...~
@@ -82,8 +82,8 @@
 @81 = ~Forget it. I don't care if you don't believe me.~
 @82 = ~Look... I just want the coin. That's all.~
 @83 = ~And I... shall... wait here. Yes.~
-@84 = ~NP: Oh. I... forgive me for... not believing you... Forgive me,<SIRMAAM> . I need... I need to go.~ /*Ah. I... forgive me for... doubting you...*/
+@84 = ~Ah. I... forgive me for... doubting you... Excuse me, <SIRMAAM>. I must... I must go.~
 @85 = ~No. You won't get it. I want the proof!~
 @86 = ~You gives me coin or you meets husband!~
 @87 = ~You wretch! You evil, pathetic <MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault! Now I... I must... go. I... excuse me...~ /*You wretch! You evil, pathetic <MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault!*/
-@88 = ~NP: For the sake of your gods, help. My children disappeared, Baram took them. Do you know anything about them?~ /*I gave it to someone else already. I'm sorry. Is there something else you wanted?*/
+@88 = ~For the sake of your gods, help. My children disappeared, Baram took them. Do you know anything about them?~

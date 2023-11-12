@@ -1,11 +1,11 @@
 @0 = ~Good day, sir. My name is Luce. I trust you wish your visit to the Moonstone Mask to be a pleasant one.~ [NWLUC054]
-@1 = ~NP: I will talk to you. And not just talk.~ /*I would speak with you... and perhaps more.*/
+@1 = ~I would speak with you... and perhaps more.~
 @2 = ~There's more than talking, right?~
 @3 = ~Whatever, harlot. I'm not here to talk.~
 @4 = ~Goodbye.~
 @5 = ~Well, aren't you sweet, but remember that a Pass Coin only entitles you to my time. Anything beyond that is my discretion. I'm sure we'll get along fine, though.~
 @6 = ~Here is a Pass Coin. My name is <CHARNAME>.~
-@7 = ~NP: Here's the pass.~ /*Question*/
+@7 = ~Here is a Pass Coin.~
 @8 = ~I don't have a Pass Coin.~
 @9 = ~I will try to abide your gruff demeanor, but remember that a Pass Coin buys my time, not my will. If your words displease me, this encounter will end.~
 @10 = ~I think you should reconsider your tone. A Pass Coin purchases my time, not my will. If I am not pleased with your behavior, this encounter will end.~
@@ -17,7 +17,7 @@
 @16 = ~Perhaps we could... retire to your bedchambers, my lady?~
 @17 = ~Let's knock boots, honey!~
 @18 = ~I must be on my way.~
-@19 = ~NP: Great, now tell me about yourself. What's on your mind? Here at The Mask, we're all very good listeners.~ /*Very well, <CHARNAME>. Now, tell me a little something about yourself. What's on your mind? We are very good listeners here at the Mask.*/
+@19 = ~Very well, now, tell me a little something about yourself. What's on your mind? We are very good listeners here at the Mask.~ /**/
 @20 = ~Well, I regret to inform you that I cannnot speak with you unless you have one. I'm sorry. See the bartender if you wish to purchase one.~
 @21 = ~Important people are not often able to confide with people that care. I am a surrogate and a friend, if need be. Tell me, what bothers you?~
 @22 = ~Lament the inherent loneliness of the adventurer lifestyle.~
@@ -29,7 +29,7 @@
 @28 = ~That's very selfless, giving of yourself like that.~
 @29 = ~Where are you from? What is your story?~
 @30 = ~A prostitute with a heart of gold. Oh, that's new.~
-@31 = ~NP: I'll try not to bother my coworkers unnecessarily, but I can talk to you about anything you want.~ /*How serious is "serious?" I try not to worry my companions unnecessarily, but I will endeavor to talk about whatever you like.*/
+@31 = ~I try not to worry my companions unnecessarily, but I will endeavor to talk about whatever you like.~ /*How serious is "serious?" */
 @32 = ~What do you know of the plague?~
 @33 = ~Shouldn't you be ashamed of working here?~
 @34 = ~Such a gentleman. You know, <CHARNAME>, I think I quite like you. I think your suggestion is worth pursuing. Follow me, my dear. Let's leave these bright lights off for awhile.~ /*Such a gentleman. You know, <CHARNAME>, I think I quite like you. I think your suggestion is worth pursuing.*/
@@ -48,12 +48,12 @@
 @47 = ~Many people come here not knowing what it is they want. I try to make them comfortable. I try to ease what bothers them. Some people just need a sympathetic ear. More than you would think, actually. I hope I make a difference in their lives.~ /*Some people just need a sympathetic ear. More than you would think, actually. I hope I make a difference in their lives.*/
 @48 = ~Well, a long time ago I was born to a loving family. And now I am here with you. Nothing is more important than that right now.~
 @49 = ~Look, if you want someone to kick you in the head there are special rooms for that in some of the dirtier dockside taverns. My job is to listen and further a positive dialogue. If you don't want that, the door is behind you. Now... (ahem)... You were saying?~ /*My job is to listen and further a positive dialogue. If you don't want that, the door is behind you. Now... (ahem)... You were saying?*/
-@50 = ~NP: I will not tolerate rudeness.~ /*Me don't want troubles.*/
-@51 = ~NP: You look like you are skilled with weapons, and you have other talents as well. Such versatility and a taste for battle might scare off your friends. I can fill that void, if you wish. That's what I'm here for, and you probably are too.~ /*For instance, you look like someone familiar in the use of weapons. That affinity for battle can keep companions at a distance sometimes.*/
+@50 = ~I will not tolerate rudeness.~ /*Me don't want troubles.*/
+@51 = ~For instance, you look like someone familiar in the use of weapons, and you have other talents as well. Such versatility and the affinity for battle can keep companions at a distance sometimes. I can close that distance, if you like. That's why I'm here, and likely that's why you are here too.~
 @52 = ~Nothing, and I couldn't say if I did. Call it superstitious, but Ophala was very explicit in requesting that we don't talk of it. This really isn't the time or place for such things. Let's get back to you, and what you need.~ /*Nothing, and I couldn't say if I did. Call it superstitious, but Ophala was very explicit in requesting that we don't talk of it.*/
 @53 = ~Confide that you might have a big role in curing the plague.~
 @54 = ~Shouldn't you reserve your judgment for your own actions? I stand before you unashamed. Who are you to project your fears on me? Now, shall we return to our pleasant chat, or will you exercise your right to use the door behind you?~ /*Shouldn't you reserve your judgment for your own actions? I stand before you unashamed. Who are you to project your fears on me?*/
-@55 = ~NP: I'm glad. Maybe we can talk some more.~ /*Goodbye. Perhaps we'll talk another time.*/
+@55 = ~I'm glad. Maybe we can talk some more.~
 @56 = ~Another time, then. See the bartender for additional Pass Coins.~
 @57 = ~For instance, you seem a roguish type. Irreverent. Perhaps someone that enjoys playing with people. Sometimes that can keep companions at a distance. I can close that distance, if you like. That's why I'm here, and likely that's why you are here too.~ /*For instance, you seem a roguish type. Irreverent. Perhaps someone that enjoys playing with people. Sometimes that can keep companions at a distance.*/
 @58 = ~For instance, you look very in tune with nature. A good calling, but perhaps it keeps your companions at a distance? I can close that distance, if you like. That's why I'm here, and likely that's why you are here too.~ /*For instance, you look very in tune with nature. A good calling, but perhaps it keeps your companions at a distance?*/
@@ -71,5 +71,5 @@
 @70 = ~You just one more for the road. Ha!~
 @71 = ~<CHARNAME>, you are ever the perfect gentleman. You needn't worry. No judgments, remember?~
 @72 = ~Yes, silly, I like you fine. Don't let people get you down saying you are... uh... slow. You're a charmer, you are.~
-@73 = ~NP: Ah, are you all right? I hope I helped you. Some people never admit to themselves that they need someone to talk to.~ [NWLUC052] /*Ah, <CHARNAME>. I trust you are well? I hope I had some impact on you. Some people have trouble recognizing when they really need someone to talk to.*/
-@74 = ~NP: You're a real gentleman. Don't worry. I'm not judging anyone, remember?~ /*<CHARNAME>, you are ever the perfect gentleman. You needn't worry. No judgments, remember?*/
+@73 = ~Ah, I trust you are well? I hope I had some impact on you. Some people have trouble recognizing when they really need someone to talk to.~ [NWLUC052]
+@74 = ~You are ever the perfect gentleman. You needn't worry. No judgments, remember?~
