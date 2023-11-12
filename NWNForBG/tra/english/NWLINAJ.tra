@@ -23,7 +23,7 @@
 @22 = ~Please, <CHARNAME>, I should not have said so much. We will talk more about this later, but not now.~
 @23 = ~I always wanted to be an adventurer, <CHARNAME>. I have a natural curiosity about everything, and I wanted to experience the things I read in books. But I am from Evereska, the home of philosophers, mages, scholars and students of the mysteries. Adventurous souls are few, and they are often looked down upon. Except one.~ /*I always wanted to be an adventurer, <CHARNAME>. I have a natural curiosity about everything, and I wanted to experience the things I read in books.*/
 @24 = ~Oh? Who is that?~
-@25 = ~NP: It's clear. We'll speak another time.~ /*Sure, another time.*/
+@25 = ~I see. We'll talk another time.~ /*Sure, another time.*/
 @26 = ~My... it's been a long time since someone asked me that question. I came to Sehanine Moonbow when I was very young, which is unusual, since my parents were both mages and followers of the god Corellon. It started when I was sent to Gaedolin Sentristi's School for 'Potentials'. You see, both of my parents were deep into the mysteries, and held positions of respect. It was assumed that I would take after my parents in the magical arts.~ /*My... it's been a long time since someone asked me that question. I came to Sehanine Moonbow when I was very young, which is unusual, since my parents were both mages and followers of the god Corellon.*/
 @27 = ~What are 'potentials'?~
 @28 = ~But you didn't take after them?~
@@ -38,7 +38,7 @@
 @37 = ~(Sigh) You don't start with the easy questions do you? That is a bit of a difficult question to answer, but I will do my best. I had worked in the Temple of the Full Moon in Evereska for about six years before I left my home. I loved the peacefulness of the temple. But even there, accidents and tricks of fate made life difficult. It wasn't usually anything big, just me in the wrong place at the wrong time. I don't know why, but I just didn't have any luck.~ /*But even there, accidents and tricks of fate made life difficult. It wasn't usually anything big, just me in the wrong place at the wrong time. I don't know why, but I just didn't have any luck.*/
 @38 = ~Well, bad luck happens to all of us at one time or other.~
 @39 = ~You'd better not bring any bad luck my way.~
-@40 = ~NP: These dirty, mean, low, SCARY, EVIL... um, sorry. I'm shaking just thinking about them. Most of my problems were related to thieves. To be honest, it was because of the thieves that I left my house. Before I left my home, I worked for six years at the Full Moon Temple. I really liked the peaceful atmosphere of the temple. But even there, failures and jokes of fate burdened my life. Usually it was the little things. More often than not, I just happened to be in the wrong place at the wrong time. I don't even know why, I just got unlucky.~ /*But even there, accidents and tricks of fate made life difficult. It wasn't usually anything big, just me in the wrong place at the wrong time. I don't know why, but I just didn't have any luck.*/
+@40 = ~Those mangy, sneaky, low-down, GUTLESS, EVIL... um, oh sorry. Just thinking about them makes my skin crawl. Most of my problems have been caused by thieves. In fact, the reason I had to leave my home was because of a thief. I had worked in the Temple of the Full Moon in Evereska for about six years before I left my home. I loved the peacefulness of the temple. But even there, accidents and tricks of fate made life difficult. It wasn't usually anything big, just me in the wrong place at the wrong time. I don't know why, but I just didn't have any luck.~
 @41 = ~I have good and bad memories of my home in Evereska. I never fit in too well, mostly because of my... accident-prone nature, I guess you could call it. I still remember falling during a childhood game of Tambaliya and all the children dancing around me chanting "Human, human, Linu is a human." (Sniff) Elven children can be so cruel. I put up with that for 60 years.~ /*I have good and bad memories of my home in Evereska. I never fit in too well, mostly because of my... accident-prone nature, I guess you could call it.*/
 @42 = ~There were good times too, right?~
 @43 = ~(Snicker) That's, um... terrible Linu.~
@@ -68,7 +68,7 @@
 @67 = ~It's not always bad luck though. Sometimes I can be a little gullible. That's what got me into trouble and sent away from Evereska. I was collecting tithes one day, when a heavily cloaked figure came begging at the temple. He looked like a starving child, so I took him inside the inner sanctum to get him some food and when I came back, he was gone. There was also something else missing, something very precious to the church.~ /*I was collecting tithes one day, when a heavily cloaked figure came begging at the temple. He looked like a starving child, so I took him inside the inner sanctum to get him some food and when I came back, he was gone.*/
 @68 = ~What did the thief steal?~
 @69 = ~You really are a piece of work. You better not bring catastrophe down on me.~
-@70 = ~NP: You don't have to talk to me like that. I am very careful. Your mission is important to me too.~ /*No need to talk to me in that tone of voice, <CHARNAME>. I am being very careful. Your mission is very important to me too.*/
+@70 = ~No need to talk to me in that tone of voice, <CHARNAME>. I am being very careful. Your mission is very important to me too.~
 @71 = ~There were good times. I loved the mysteries and magic of our homeland. And when I grew up, things were different. I had worked in the Temple of the Full Moon in Evereska for about six years before I left my home. I loved the peacefulness of the temple. But even there, accidents and tricks of fate made life difficult. It wasn't usually anything big, just me in the wrong place at the wrong time. I don't know why, but I just didn't have any luck.~ /*But even there, accidents and tricks of fate made life difficult. It wasn't usually anything big, just me in the wrong place at the wrong time. I don't know why, but I just didn't have any luck.*/
 @72 = ~I suppose I can laugh about it now, but it wasn't very funny back then. I don't know why that came to mind. I shouldn't have said anything.~
 @73 = ~I shouldn't have said anything about that. I don't know why that came to mind all of a sudden.~
@@ -85,7 +85,7 @@
 @84 = ~Good. I'm paying you to keep me alive, not to worry about some stupid quest.~
 @85 = ~I... well... no, it's just easier to accept it that way. And if I'm clueless, at least I'm not exceedingly RUDE!~
 @86 = ~No, you do not understand. No one will ever understand. I shall be an outcast for life!~
-@87 = ~NP: As you say<SIRMAAM> .~ /*As you command, <SIRMAAM>.*/
+@87 = ~As you command, <SIRMAAM>.~
 @88 = ~Obviously he never committed the crime. It never fails to shock me when people are capable of such injustice.~
 @89 = ~How did you find all of this out?~
 @90 = ~Sounds like he had just about as much luck as you do.~
@@ -106,7 +106,7 @@
 @105 = ~Better forget about it then. He probably sold it and you'll never find it again.~
 @106 = ~Thank you, sweet <CHARNAME>. That is a kind answer from a good friend.~
 @107 = ~I know I shall probably never find the chalice again, <CHARNAME>, but I shall not give up. I must return it to my people to restore my honor.~
-@108 = ~NP: On this day, you managed to prove that you are a true friend of the Elven people. I'm proud to call you my friend<CHARNAME> .~ /*You have proven this day that you are a true friend to the elven people. This pendant only works for those who prove such worthiness. I am proud to be able to call you my friend, <CHARNAME>.*/
+@108 = ~You have proven this day that you are a true friend to the elven people. I am proud to be able to call you my friend, <CHARNAME>.~
 @109 = ~Thank you, Linu.~
 @110 = ~That's it? A pendant?~
 @111 = ~Because of you, <CHARNAME>, I can return the chalice to where it belongs. I shall protect it with my life until the opportunity arises for me to visit Evereska. Until that time, I shall remain by your side and help you achieve your goals. Thank you again, my dear friend.~ /*Because of you, <CHARNAME>, I can return the chalice to where it belongs. I shall protect it with my life until the opportunity arises for me to visit Evereska.*/
@@ -123,7 +123,7 @@
 @122 = ~My first day of classes was a disaster, but I don't think it had anything to do with my ability for spellcasting. I had an insatiable curiosity, and Gaedolin was a crotchety old master who expected all elven children to be patient, quiet, and orderly. I barely possess those traits now, let alone when I was a child.~ /*I had an insatiable curiosity, and Gaedolin was a crotchety old master who expected all elven children to be patient, quiet, and orderly. I barely possess those traits now, let alone when I was a child.*/
 @123 = ~The master decided to open class with a powerful spell, to awe us into submission to his tutelage. He turned his back and I moved in.~
 @124 = ~What do you mean by moved in?~
-@125 = ~NP: It never occurred to me that it was possible to be worse than you are now.~ /*I didn't think it was possible for you to be worse than you are now.*/
+@125 = ~I didn't think it was possible for you to be worse than you are now.~
 @126 = ~I just wanted to look at the spell components. They were very interesting, especially the wonderful gem he had sitting beside the circle. Well, he went to reach for the gem, and it wasn't there. The spell misfired, causing him to ooze purple smoke for weeks.~ /*Well, he went to reach for the gem, and it wasn't there. The spell misfired, causing him to ooze purple smoke for weeks.*/
 @127 = ~So he kicked you out?~
 @128 = ~I'd have kicked you out too, how stupid.~
@@ -144,12 +144,12 @@
 @143 = ~Please forgive me, <CHARNAME>. I can talk no more about this. We don't know each other well and I can't share my most embarrassing moment with a stranger.~
 @144 = ~Perhaps we will not become the best of friends. I will not be distracted from our task again. Let's go.~
 @145 = ~Tell me, how do you like being an adventurer?~
-@146 = ~NP: Tell me more about your meeting with Sint.~ /*Tell me more about you Order, dwarf.*/
+@146 = ~Tell me more about how you met Synth.~ /*Tell me more about you Order, dwarf.*/
 @147 = ~I'd like you to tell me more of your story, Linu.~
 @148 = ~I have an unusual seed right here. Is this it?~
 @149 = ~What made you decide that you should be a cleric?~
 @150 = ~I want you to continue your story from before.~
-@151 = ~NP: You are truly my friend<CHARNAME> . Maybe you can help me with this. Sint retired from the life of an adventurer for several years. Then he returned home with the news that he had discovered the ancient city. The moment he said those words, I knew he was about to embark on another great journey. I wanted to go with him, but I had to prepare a festive ceremony at the temple.~ /*I knew as soon as he uttered those words that he would be off on another of his grand adventures. I wanted to go with him, but I was involved in preparing a special celebration for the temple.*/
+@151 = ~You have been a true friend to me, <CHARNAME>. Perhaps you can help me with this as well. Synth retired from his adventuring life, for a couple of years. Then one day he came home with news that he had discovered the location of an ancient city. I knew as soon as he uttered those words that he would be off on another of his grand adventures. I wanted to go with him, but I was involved in preparing a special celebration for the temple.~ /*I knew as soon as he uttered those words that he would be off on another of his grand adventures. I wanted to go with him, but I was involved in preparing a special celebration for the temple.*/
 @152 = ~He wouldn't wait for you?~
 @153 = ~So? Why couldn't they do it without you?~
 @154 = ~We will find the cultists <CHARNAME>, and justice shall be done. Then perhaps I can resume my quest. I am certain that the journal must exist somewhere, and someday I shall find it.~ /*We will find the cultists <CHARNAME>, and justice shall be done. Then perhaps I can resume my quest.*/
@@ -173,10 +173,10 @@
 @172 = ~Quit whining Linu. He's been dead for a long time, get over it.~
 @173 = ~Sweet <CHARNAME>, I know that with you by my side, anything is possible.~
 @174 = ~I haven't let anything else get in the way, and this won't either. You don't need to remind me.~
-@175 = ~NP: I... I wish I could believe... I don't know what to wish for. I just need time... But thank you for your words. You are a true friend, now it is certain. My heart will heal with time. I have to tell you something. Take this elven amulet. It can enhance some of your abilities, making them similar to those of those with elven blood.~ /*There is something I have that might be of some use to you. This is the Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.*/
-@176 = ~NP: I... I wish I could believe... I don't know what to wish for. I just need time... But thank you for your words. You are a true friend, now it is certain. My heart will heal with time. I have to tell you something. As our friendship grows, so will the power of the amulet I gave you. I think now you will find that he is stronger than before.~ /*As our friendship grows, so will the power of the pendant I gave you. I think that you shall find it is stronger now than it was before.*/
+@175 = ~I... I wish that I could believe... I don't know what I wish. I just need some time... but thank you for your words. You have proven to be a true friend once again. My heart will heal, in time. I must tell you something. Take this Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.~
+@176 = ~I... I wish that I could believe... I don't know what I wish. I just need some time... but thank you for your words. You have proven to be a true friend once again. My heart will heal, in time. I must tell you something. As our friendship grows, so will the power of the pendant I gave you. I think that you shall find it is stronger now than it was before.~
 @177 = ~Oh, <CHARNAME>, how can you be so cruel? Do you expect that love is so easily forgotten? Still, you helped me find the journal. Deeds speak louder than words. I shall count this a truer sign of your friendship than your words. As our friendship grows, so will the power of the pendant I gave you. I think that you shall find it is stronger now than it was before.~ /*Still, you helped me find the journal. Deeds speak louder than words. I shall count this a truer sign of your friendship than your words.*/
-@178 = ~NP: ABOUT,<CHARNAME> How can you speak so cruelly? Don't you think that love is so easy to forget? But still, thanks to you, this diary was found. Actions speak louder than words. This is a more significant sign of friendship than any of your statements. Take this elven amulet. It can enhance some of your abilities, making them similar to those of those with elven blood.~ /*There is something I have that might be of some use to you. This is the Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.*/
+@178 = ~Oh, <CHARNAME>, how can you be so cruel? Do you expect that love is so easily forgotten? Still, you helped me find the journal. Deeds speak louder than words. I shall count this a truer sign of your friendship than your words. Take this Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.~
 @179 = ~As he began to quietly serenade me, I sat bolt upright in bed and opened my mouth to scream. He jumped toward me, to quiet me, but I didn't know it was him, so I brought my foot up and kicked him in the jaw. He stumbled backwards, out onto the balcony. I leapt up to continue my attack, but when I got to the balcony, I saw his face in the moonlight. He was holding his jaw, his face wrinkled in pain.~ /*I leapt up to continue my attack, but when I got to the balcony, I saw his face in the moonlight. He was holding his jaw, his face wrinkled in pain.*/
 @180 = ~You mean you broke his jaw?~
 @181 = ~Remind me never to try to wake you quietly in the night.~
@@ -204,7 +204,7 @@
 @203 = ~That... that is a cruel thing to say. You have a heart like a rock. I have treated you as a friend; a lesson you should well learn.~
 @204 = ~I suppose you won't rest until I tell you about the accident that led to my becoming a cleric of Sehanine. I guess I can tell you, though it was a horrifying experience.~
 @205 = ~I want to hear it.~
-@206 = ~NP: We'll speak another time.~ /*Me talk about different things.*/
+@206 = ~We'll speak another time.~
 @207 = ~<CHARNAME>, you are my truest friend in the world. I know now that we must work together to accomplish all of our quests. I told you that I overheard Sehanine Moonbow speaking with the head cleric of her order. The words that I heard would echo in my mind for the rest of my life.~ /*I told you that I overheard Sehanine Moonbow speaking with the head cleric of her order. The words that I heard would echo in my mind for the rest of my life.*/
 @208 = ~Tell me what they said.~
 @209 = ~I've changed my mind. I don't really want to hear this.~
@@ -225,11 +225,11 @@
 @224 = ~All I know is that my body seemed to expand and contract at a horribly fast rate, like a hyperventilating toad. The feeling seemed to last for hours, but was over in seconds. I can't explain it any better than that. When it stopped, I opened my eyes.~ /*All I know is that my body seemed to expand and contract at a horribly fast rate, like a hyperventilating toad. The feeling seemed to last for hours, but was over in seconds.*/
 @225 = ~What did you see?~
 @226 = ~Does that make me blessed, or cursed?~
-@227 = ~NP: I think it's a blessing. You are an exceptionally dangerous and most exciting woman.~ /*I think it's a blessing. You are the most dangerous, yet exciting woman I have ever met.*/
-@228 = ~NP: Both, I think.~ /*No, no I'd say not.*/
+@227 = ~I think it's a blessing. You are the most dangerous, yet exciting woman I have ever met.~
+@228 = ~Both, I think.~
 @229 = ~Cursed.~
 @230 = ~There was a large, gray, squishy thing that looked at me with twenty large eyes. I whimpered a little, I remember that. Then it started to move. I don't think I have ever seen anything move so very fast. I screamed as it attacked and continued to scream as a bolt of glowing blue light ripped through its body, just seconds before it could reach me.~ /*There was a large, gray, squishy thing that looked at me with twenty large eyes. I whimpered a little, I remember that. Then it started to move. I don't think I have ever seen anything move so very fast.*/
-@231 = ~NP: I... I... yes, thank you. I don't know if I'm ready for a deeper relationship, but I appreciate your kind opinion.~ /*<CHARNAME>! I... I... well, thank you. I don't know if I'm ready for a deeper relationship, but I value your good opinion.*/
+@231 = ~I... I... well, thank you. I don't know if I'm ready for a deeper relationship, but I value your good opinion.~ /*<CHARNAME>! I... I... well, thank you. I don't know if I'm ready for a deeper relationship, but I value your good opinion.*/
 @232 = ~Then let's continue your story.~
 @233 = ~Then I don't want to listen to your whiny stories anymore.~
 @234 = ~Woah! Deeper relationship? It was just a compliment.~
@@ -283,7 +283,7 @@
 @282 = ~Thank you, my <CHARNAME>. Your words are dear to my heart. I have had no close companion since my husband's death. You fill a void that I thought would be empty forever. But for now we must focus on finding the Words of Power. Aarin Gend is counting on us.~ /*Thank you, my <CHARNAME>. Your words are dear to my heart. I have had no close companion since my husband's death. You fill a void that I thought would be empty forever.*/
 @283 = ~Your father was an abusive bastard wasn't he? I shall imagine that he was so that I can continue to serve someone whose heart is so cold.~
 @284 = ~I think you shall find that the pendant I gave you is now much stronger than before.~
-@285 = ~NP: Take this elven amulet. It can enhance some of your abilities, making them similar to those of those with elven blood.~ /*There is something I have that might be of some use to you. This is the Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.*/
+@285 = ~Take this Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.~ /*There is something I have that might be of some use to you. This is the Pendant of the Elf. */
 @286 = ~Dear <CHARNAME>, I would like to talk to you for a moment.~ [NWLIN050]
 @287 = ~Yes Linu, what did you want to talk about?~
 @288 = ~I'm too busy right now, Linu.~
@@ -300,7 +300,7 @@
 @299 = ~Well, I need all the inspiration I can get. If it weren't for you I would still be trapped or dead in a plague-ridden NeverWinter. That's if I hadn't managed to burn the entire city down around me. I can't tell you the number of nightmares I've had about this coming battle, where I would slip in some blood and knock you into a huge chasm.~ /*That's if I hadn't managed to burn the entire city down around me. I can't tell you the number of nightmares I've had about this coming battle, where I would slip in some blood and knock you into a huge chasm.*/
 @300 = ~All right, <CHARNAME>. I won't waste any more of your time with my boring thoughts. Now let's go show them what legends are made of and kick some scaly-ass!~ /*Now let's go show them what legends are made of and kick some scaly-ass!*/
 @301 = ~Or I would start to cast a healing spell and it would go wrong and you'd be turned inside out. Or you would be just about to kill Morag and I'd lean against a giant boulder that would fall over and crush you.~
-@302 = ~NP: Maybe it's just your lack of self-confidence.~ /*Maybe you're just weaker than you thought.*/
+@302 = ~Maybe it's just your lack of self-confidence.~
 @303 = ~Okay Linu, I get the point.~
 @304 = ~I have learned from your confidence and skill, and I truly believe that, no matter what happens next, I am a stronger, better person than I was when we first met. I know now that I can have all the grace and elegance of my elven ancestors. I just have to believe in myself. That is a lesson I don't think I would have learned without you, <CHARNAME>.~ /*I have learned from your confidence and skill, and I truly believe that, no matter what happens next, I am a stronger, better person than I was when we first met.*/
 @305 = ~Enough speeches, we need to get going now.~
