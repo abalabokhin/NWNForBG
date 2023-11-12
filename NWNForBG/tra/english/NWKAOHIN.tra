@@ -19,18 +19,18 @@
 @18 = ~Now you die, evil beastie!~
 @19 = ~WHAAAAHAHHAHAAAA!! Now that IS funny. You are not worth my time! Goodbye, fool!!~
 
-@21 = ~Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss... Perhaps I will tempt you? A magical cape, an ensorcelled double-axe, or a taste of power for a VERY limited time?~ /*Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss...*/
-@22 = ~NP: I need a magical cloak.~ /*I want the magic item.*/
-@23 = ~NP: I'll take the enchanted axe.~ /*I will take the gold.*/
+@21 = ~Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss... Perhaps I will tempt you? A magical cape, an ensorcelled axe, or a taste of power for a VERY limited time?~ /*Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss...*/
+@22 = ~I need a magical cape.~
+@23 = ~I'll take the ensorcelled axe.~ /*I will take the gold.*/
 @24 = ~Grant me some of your power.~
-@25 = ~NP: I don't need your help!~ /*I need a little help over here.*/
+@25 = ~I don't need your help!~ /*I need a little help over here.*/
 @26 = ~Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss... Something for the black of heart? Yes, we are alike in some ways. I will offer something... more. Name your payment. Is it a weapon, a magical trinket, a portion of my power for a VERY short time, or... my insight?~ /*Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss...*/
 @27 = ~I want the magic item.~
 @28 = ~I will take the weapon.~
 @29 = ~Grant me your insight.~
-@30 = ~Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss... I sense that you distance yourself from extremes. Bah! Creatures of whimsy are no more welcome than those of pure intent. Perhaps I will tempt you? A magical cape, an ensorcelled double-axe, or a taste of power for a VERY limited time?~ /*I sense that you distance yourself from extremes. Bah! Creatures of whimsy are no more welcome than those of pure intent.*/
+@30 = ~Hmm? Ah yes, my... little... friend. Let me ask what you wish of me. Something... appropriate. Yessssss... I sense that you distance yourself from extremes. Bah! Creatures of whimsy are no more welcome than those of pure intent. Perhaps I will tempt you? A magical cape, an ensorcelled axe, or a taste of power for a VERY limited time?~ /*I sense that you distance yourself from extremes. Bah! Creatures of whimsy are no more welcome than those of pure intent.*/
 @31 = ~And that shall be all. Make adequate use of my gifts, mortal. My kind are not normaly so charitable. My obligations are done. I am free of what tied me to this place. I leave you to your trials ahead.~ /*My obligations are done. I am free of what tied me to this place. I leave you to your trials ahead.*/
-@32 = ~NP: You have changed your mind? Great, don't take the reward, but I'm already free!!! Such deals are not so easy to terminate. Nothing binds me to this place anymore. And you go for new challenges.~ /*Changed your mind? Fine, accept no reward, but I am already free!! Deals such as this are difficult to rescind.*/
+@32 = ~Changed your mind? Fine, accept no reward, but I am already free!! Deals such as this are difficult to rescind. I am free of what tied me to this place. I leave you to your trials ahead.~
 @33 = ~Ah, you seek knowledge from the infernal. I like that. I shall answer, and you may do what you will with the answers.~
 @34 = ~Where is my enemy?~
 @35 = ~What caused the plague?~
