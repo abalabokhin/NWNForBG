@@ -10,7 +10,7 @@
 @9 = ~My brother has been acting... funny. He goes to a strange house just north of here. The undead leave it alone! He's not himself... I think they took his mind. There's a group in there... a cult... and my brother mentioned some kind of... creature. I don't know anything more about it than that. It's all happened so fast... right about when the zombies started showing up.~ /*He's not himself... I think they took his mind. There's a group in there... a cult... and my brother mentioned some kind of... creature.*/
 @10 = ~I have questions about this strange house.~
 @11 = ~I want to know some things about your brother.~
-@12 = ~NP: I'll see what's going on in there. What are you gonna do?~ /*I might check it out. What are you going to do?*/
+@12 = ~I might check it out. What are you going to do?~ /**/
 @13 = ~All right... just leave me, then. I guess I'll stay here. Not much I can do on my own.~
 @14 = ~I'll tell you what I can.~
 @15 = ~Any idea who lives at this house you mention?~
@@ -18,7 +18,7 @@
 @17 = ~I suppose. What do you want to know?~
 @18 = ~What's his name? What does he do?~
 @19 = ~I found this ring in the cult hideout. Was it his?~
-@20 = ~NP: Ð¯... I don't know. I wish I could help you find him, but I don't know if I can. I feel so helpless. He needs my help. I know he does.~ /*I... I don't know. I'd like to help find him, but I don't know if I could make it.*/
+@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ /**/
 @21 = ~No clue, but I know they don't get attacked by the zombies, and I know my brother is acting weirder and weirder. They don't want any visitors, either. He uses some sort of key to get in, but it's not a normal one. Some kind of magic thing.~ /*They don't want any visitors, either. He uses some sort of key to get in, but it's not a normal one. Some kind of magic thing.*/
 @22 = ~Could I have it?~
 @23 = ~It's the strangest thing: They walk right around it, and don't attack the people going in. My brother said the creature keeps them safe? I honestly don't know what he's talking about anymore, and now he's been gone for days.~ /*It's the strangest thing: They walk right around it, and don't attack the people going in. My brother said the creature keeps them safe?*/
@@ -27,8 +27,8 @@
 
 @27 = ~I have this thing that he used to get in the hideout... well, I'm sure it's not important. What do I know? The cult hideout is north of here. If you are going to look for him, that's where I'd start.~ /*I have this thing that he used to get in the hideout... well, I'm sure it's not important. What do I know?*/
 
-@29 = ~NP: The cult's lair is just east of here, next door. If you want to find it, I suggest you start your search from there.~ /*The cult hideout is north of here. If you are going to look for him, that's where I'd start.*/
-@30 = ~NP: I guess. I hope that means you'll try to find him. I'm worried. The cult's lair is just east of here, next door. If you want to find him, I suggest you start your search there.~ /*The cult hideout is north of here. If you are going to look for him, that's where I'd start.*/
+@29 = ~The cult hideout is east of here. If you are going to look for him, that's where I'd start.~ /**/
+@30 = ~I suppose. I hope that means you'll try and find him. I'm worried. The cult hideout is east of here. If you are going to look for him, that's where I'd start.~
 @31 = ~Hello there... I gave that magic key-thing to you, didn't I? Oh, I'm just so worried about my brother that I don't know which way is up. Please, investigate that cult estate north of here. Please find my brother. I wish I could help... I'm not much use when things get dangerous. I know they are up to something in there, though.~ /*Please, investigate that cult estate north of here. Please find my brother. I wish I could help... I'm not much use when things get dangerous. I know they are up to something in there, though.*/
-@32 = ~NP: My brother is dead. I don't know what to do.~ /*He's dead... I don't know what to do...*/
+@32 = ~My brother is dead... I don't know what to do...~ /*He*/
 

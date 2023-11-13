@@ -24,6 +24,7 @@
 @23 = ~Just stay here for a moment.~
 @24 = ~If you're leaving me here, oh please don't be long...~
 @25 = ~There's the District gates! Thanks so much for your help, my friend.~
-@26 = ~NP: Thank you so much for your help my friend.~ /*There's the District gates! Thanks so much for your help, my friend.*/
+@26 = ~Thanks so much for your help, my friend.~ /*There's the District gates! */
 @27 = ~Bless Helm for adventurers! Things have gotten a lot better since the prison riots were finally put to rest!~
-@28 = ~NP: For help! Bandits want to kill me!~ /*To my aid! I must be reinforced!*/
+@28 = ~Help! Bandits are trying to kill me!~
+
