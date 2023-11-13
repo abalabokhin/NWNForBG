@@ -1,16 +1,16 @@
 @0 = ~So... *this* is the latest group of entrants, is it? Very well. My name is Jaroo - Master of the Games. Allow me to explain how this will work:~ [NWJAR050]
-@1 = ~NP: Entrance to the dungeon costs 1000 gold. Leaving this basement through the northern door, you will be taken to level 1 of the labyrinth, there are three levels in total. You must explore all the dungeons and find four crystal items. If you can do this and answer the riddle, you will return here as winners.~ /*I'd join you if I could, but until this war with Luskan is over all the conscripts have to stay here to defend Fort Ilkard. If you need anything else, you know where to find me.*/
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~
 @2 = ~Neither I nor Mutamin are responsible for your deaths or the deaths of your companions. If you enter, it is your risk to take.~ [NWJAR056]
-@3 = ~NP: Now, if anyone wants to enter, give me the money and I'll let you through the maze.~ [NWJAR057] /*Now, then, should anyone wish to enter, approach me with your gold and I'll teleport you within.*/
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /* teleport you within.*/
 @4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]
-@5 = ~Yes, let me inside. Here is your  gold.~ /*Yes, I am. Here is your 500 gold.*/
-@6 = ~NP: I'm not ready yet.~ /*I'll go now.*/
-@7 = ~Yes, but is 500 gold pieces really necessary?~
-@8 = ~NP: All right, come in, I'll open the grate. So, the competition begins!~ /*Excellent. Prepare yourself, my <LADYLORD>! And let the contest begin!!*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /**/
+@6 = ~I'm not ready yet.~ /*I'll go now.*/
+@7 = ~Yes, but is 1000 gold pieces really necessary?~
+@8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
 
 @10 = ~As you desire. I shall remain here, should you change your mind.~
 @11 = ~It is. Each entry is added to the total that will be given to the winner who makes it through the dungeon. Since you have an equal chance of succeeding, I'm afraid it wouldn't be fair to offer a discount. So are you ready for the competition?~ /*Since you have an equal chance of succeeding, I'm afraid it wouldn't be fair to offer a discount. So are you ready for the competition?*/
-@12 = ~NP: hurry up<LADYLORD> . The competition has already begun, other participants can get ahead of you.~ /*I wish the damn thing would start. Have they got the goods or not?*/
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~
 @13 = ~You've won the competition. Congratulations! Speak to Mutamin to collect your reward!~ [NWJAR052]
 @14 = ~The competition has been won. Come back another time, when the dungeon has been re-worked for the sequel!~ [NWJAR053]
-@15 = ~NP: I'm sorry, but you lost the match. Come back another time when we prepare a new challenge!~ /*The competition has been won. Come back another time, when the dungeon has been re-worked for the sequel!*/
+@15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ /*The competition has been won. */

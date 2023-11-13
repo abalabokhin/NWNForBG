@@ -1,8 +1,8 @@
-@0 = ~NP: Eh... your skin isn't green... You don't really look like those ugly trolls. What are you doing here?~ [NOBFE09] /*Eh... you don't look much like one of those ugly trolls. What are you doing here?*/
+@0 = ~Eh... your skin isn't green... you don't look much like one of those ugly trolls. What are you doing here?~ [NOBFE09] /**/
 @1 = ~I am clearing the trolls and ogres out of these caves. Who are you and why are you here?~
 @2 = ~You're Revat's Momma right? I am here to rescue you.~
 @3 = ~You can stop worrying. I'm here to rescue you.~
-@4 = ~NP: There are no more trolls, go wherever you want, but not with me. You can get out yourself.~ /*You are free to go, but not with me. You can leave on your own.*/
+@4 = ~The trolls are gone, you are free to go, but not with me. You can leave on your own.~
 @5 = ~Just stay right there and don't move. I'll be back.~
 @6 = ~My name is Janis and I was a prisoner of those monsters. Well, kind of a prisoner.~
 @7 = ~What do you mean 'kind of' a prisoner?~
@@ -13,7 +13,7 @@
 @12 = ~I'm afraid it's not that easy. Why don't I just tell you the whole story? It's easier to explain that way. You see, I am a mage of no small accomplishment, but I also am fascinated by archeology. I was with a troop of archeologists and we were exploring these caves. I became interested in an unusual pattern on the cave walls and accidentally became separated from the others. Then I heard the screams.~ /*I was with a troop of archeologists and we were exploring these caves. I became interested in an unusual pattern on the cave walls and accidentally became separated from the others. Then I heard the screams.*/
 @13 = ~The others were attacked by the trolls and ogres, right?~
 @14 = ~So what did you do?~
-@15 = ~NP: Are you telling me what to do? However, there is nothing else left for me.~ /*Sounds like you think she was justified.*/
+@15 = ~Are you telling me what to do? However, there is nothing else left for me.~ /*Sounds like you think she was justified.*/
 @16 = ~Why don't I just tell you the whole story? It's easier to explain that way. You see, I am a mage of no small accomplishment, but I also am fascinated by archeology. I was with a troop of archeologists and we were exploring these caves. I became interested in an unusual pattern on the cave walls and accidentally became separated from the others. Then I heard the screams.~ /*I was with a troop of archeologists and we were exploring these caves. I became interested in an unusual pattern on the cave walls and accidentally became separated from the others. Then I heard the screams.*/
 @17 = ~Not too bright are you? I just hope you have more manners than those slobbering trolls.~
 @18 = ~Are you always this miserable?~
@@ -31,7 +31,7 @@
 @30 = ~Somebody's going senile, I think.~
 @31 = ~Have a little patience. I'm almost done.~
 @32 = ~There is enough room in this 'shell' for me to talk. When I could talk, but they couldn't hurt me, they started bowing down and bringing me gifts. Not that I could accept them, but they brought them anyway.~
-@33 = ~NP: Watch your language<MALEFEMALE> young years. Nothing justifies disrespect for elders.~ /*Watch your tongue young <MANWOMAN>. There is no excuse for being disrespectful to your elders.*/
+@33 = ~Watch your tongue young <MANWOMAN>. There is no excuse for being disrespectful to your elders.~ /**/
 @34 = ~I see that you have the ring from Revat. If you would just touch me with the ring, it should negate the spell.~
 @35 = ~How will it do that?~
 @36 = ~All right, here's the ring.~
@@ -45,7 +45,7 @@
 @44 = ~I need you to find Revat. He has a ring that was his father's. The ring has a one-time cancellation spell on it. I created it to protect Revat from spellcasters who might seek to harm me by harming my child.~
 @45 = ~Where would I find your son?~
 @46 = ~I'm busy now, but maybe later.~
-@47 = ~NP: I lost my ring, wait here.~ /*All right, wait here.*/
+@47 = ~I lost the ring, wait here.~ /*All right, wait here.*/
 @48 = ~What do I look like, somebody's weak, old granny? I'm a powerful mage and I can make my own way back, now that the spell is broken.~
 @49 = ~What do you think I am, senile? Of course I know the way is clear. I can make it back on my own, and I don't need you to tell me so.~
 @50 = ~My death is on your soul. You have doomed me.~
@@ -61,8 +61,8 @@
 @60 = ~Could you explain what happened to you again?~
 @61 = ~You can come with me now.~
 @62 = ~You're just not worth rescuing. Goodbye.~
-@63 = ~NP: I'm afraid it's not that simple. I ask you to find my son Revat and take from him the ring that he inherited from his father. The ring contains a one-time cancellation spell. I created it to protect Revat from spellcasters who would want to harm me by hurting my child. Only with this ring will I be able to get out of the Orb of Otiluk.~ /*I need you to find Revat. He has a ring that was his father's. The ring has a one-time cancellation spell on it. I created it to protect Revat from spellcasters who might seek to harm me by harming my child.*/
-@64 = ~NP: Talk to Revat, he will reward you for saving me. Anyway, you're doing great, come and visit us in Waterdeep and I'll bake some cookies for you.~ /*You be good. Come visit us in Waterdeep and I'll bake you some cookies.*/
-@65 = ~NP: Well, thanks again for your help, try not to get in trouble. My son and I are going to Waterdeep.~ /*Well, thank you again for the assistance, even if it was a bit slow. Try to stay safe.*/
-@66 = ~NP: You came back in time, a little more and I would have died. Will you save me?~ /*You've come back? Er... what do you wish of me?*/
-@67 = ~NP: And I won't think.~ /*You lost me.*/
+@63 = ~I'm afraid it's not that easy. I need you to find Revat. He has a ring that was his father's. The ring has a one-time cancellation spell on it. I created it to protect Revat from spellcasters who might seek to harm me by harming my child. Only with this ring will I be able to get out of the Otiluke's Resilient Sphere.~ /*I need you to find Revat. He has a ring that was his father's. The ring has a one-time cancellation spell on it. I created it to protect Revat from spellcasters who might seek to harm me by harming my child.*/
+@64 = ~Talk to Revat, he will reward you for saving me. You be good. Come visit us in Waterdeep and I'll bake you some cookies.~ /**/
+@65 = ~Well, thank you again for the assistance, try to stay safe. My son and I are going to Waterdeep.~
+@66 = ~You came back in time, a little more and I would have died. Will you save me?~ /*You've come back? Er... what do you wish of me?*/
+@67 = ~I wouldn't think of it.~ /*You lost me.*/

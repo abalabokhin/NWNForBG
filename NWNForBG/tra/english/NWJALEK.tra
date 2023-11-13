@@ -4,7 +4,7 @@
 @3 = ~I'll pass. I'm not looking for trouble.~
 @4 = ~All right then! Let's start off with a little Neverwintan Sailor Spirit. A bathtub special here at the Seedy Tavern. Go!~
 @5 = ~Bottoms up!~
-@6 = ~NP: Uh, I think I'm gonna have to pass.~ /*Ehh, I've changed my mind.*/
+@6 = ~Uh, I think I'm gonna have to pass.~
 @7 = ~You bet you will, but deep pockets don't get you much here. We respect strength. Can you go drink for drink or not?!~
 @8 = ~I thought so. All bluff and no stuff. Come back when you've got a spine.~
 @9 = ~Ah, that's pretty good. You're not so flimsy after all. How about some Dockside Dunn's, a rank bit of swill if I ever had some!~
@@ -19,14 +19,14 @@
 @18 = ~That right! You and me, drink it back!~
 @19 = ~Well I'll be a... How about that?! So... you want to keep going with some... Catoblepas Death Cheese Wine?! Or have you had enough?~
 @20 = ~I am just fine! Swig it back!~
-@21 = ~NP: Yes, you needed to sit down. And yet, you managed to prove your power to me. Anything you've had since the Red-Eyed Dwarf was just to see how crazy you are. Hey, you need to talk to my friend Kristoff. Show him how to relax. He's too serious.~ /*Well, I guess you should have sat down. Still, you've proven yourself to me. Everything after Dwarven Red Eye was just to see how crazy you are.*/
-@22 = ~NP: Yeah, I think you've proven your strength. I mean, after "Red-Eyed Dwarf," they only drank to see how crazy you were. Hey, you need to talk to my friend Kristoff. Show him how to relax. He's too serious. And, uh, to tell you the truth, I don't really feel like trying the next drink. Eh. This stuff is scary to hold.~ /*Yeah, I think you've proven yourself to me. I mean, everything after the Dwarven Red Eye was just to see how crazy you are.*/
+@21 = ~Well, I guess you should have sat down. Still, you've proven yourself to me. Everything after Dwarven Red Eye was just to see how crazy you are. Hey, you should talk to my buddy Christov. Show him how to loosen up. He's too serious.~ /**/
+@22 = ~Yeah, I think you've proven yourself to me. I mean, everything after the Dwarven Red Eye was just to see how crazy you are. Hey, you should talk to my buddy Christov. Show him how to loosen up. He's too serious. And, uh, to tell you the truth, I wasn't looking forward to some of what was coming next. Ugh. Nobody should touch any of that stuff.~ /**/
 @23 = ~Well... looks like we're getting... serious. All right then, from the bowels of the earth, a downright poisonous brew... Dark Elven T'Keela.~
 @24 = ~You're not stopping are you? Swig it!~
 @25 = ~Thanks. Maybe I'll just sit down for a bit, now.~
 @26 = ~And, uh, to tell you the truth, I wasn't looking forward to some of what was coming next. Ugh. Nobody should touch any of that stuff.~
 @27 = ~Okay... Not that I'm queasy... but do you want to quit... or try a... a Screaming Harpy! You can't imagine... the horror...~
-@28 = ~NP: О! They're diluting! One more!~ /*Bah! Nothing but water! Tip it back!*/
+@28 = ~Bah! Nothing but water! Tip it back!~ /*Bah! Nothing but water! Tip it back!*/
 @29 = ~Oh hell... okay... you want to play games... *hic*... okay... The meanest... the foulest... black bile of the earth... A bottle... of Scurrd.~
 @30 = ~Through the lips and over the gums!~
 @31 = ~What is in Scurrd?~
@@ -35,7 +35,7 @@
 @34 = ~What is in Scurrd? What, indeed. Scurrd... just seems to find its way... to where it can do the most harm. It's truly vicious. It cannot be smelled by the elderly... it cannot be held by small children... It is Scurrd, and woe be to ye that take it to your tongue.~ /*What is in Scurrd? What, indeed. Scurrd... just seems to find its way... to where it can do the most harm. It's truly vicious.*/
 @35 = ~Who are you, fool? Don't you know not to go bothering a Bloodsailor while he's drinking?~ [NWJALE53]
 @36 = ~Hmm... do I know you? You wear the uniform, but I don't recognize your face. How long you been a Bloodsailor, <GIRLBOY>?~ [NWJALE52]
-@37 = ~NP: [False] Recently. I was able to replace the plague victim.~ /*Not long. I replaced a plague victim.*/
+@37 = ~Not long. I replaced a plague victim.~ /*Not long. I replaced a plague victim.*/
 @38 = ~I'm just looking for information. That's all.~
 @39 = ~I'm no Bloodsailor. I'm acting as a city guard.~
 @40 = ~All right then, I suppose you are okay... but do you have what it takes, I wonder? Care to go drink for drink? My respect is what's on the line!~ /*All right then, I suppose you are okay... but do you have what it takes, I wonder?*/
@@ -44,7 +44,7 @@
 @43 = ~You are in the wrong neighborhood. City officials ain't popular with us. Unless you prove your worth drink for drink! Up for it?~
 @44 = ~Damnedest thing I ever saw. You are okay with me and Christov. You bet.~ [NWJALE54]
 @45 = ~I had some questions.~
-@46 = ~NP: Thank you for your such an important endorsement.~ /*Thanks for your oh so important approval.*/
+@46 = ~Thanks for your oh so important approval.~ /**/
 @47 = ~Goodbye.~
 @48 = ~I don't bother worrying about much, friend, but I'll answer if I can.~
 @49 = ~Why are you here? What do you do?~
