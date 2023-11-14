@@ -86,6 +86,7 @@ In development:
 - Added prefix for all global variables.
 - Added missing resource for oBG2 (they might be already there if some mods are installed).
 - Added check for the PC doing NWN quest and not triggering actions for main bg content (like is underdark), thanks to JohnBob.
+- Fixed animation for Death Slaad, thanks to BSpecific
 
 0.92 (10/18/23)
 
