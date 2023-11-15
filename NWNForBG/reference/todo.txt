@@ -1,17 +1,13 @@
 TODO:
 Fix some bugs from BSpecific:
-3: Chapter 1: Helm's Hold, spider caves, there is a massive spider (might be using a Bebelith model). When it
-enters combat, the game crashes. I worked around this with either Invisibility (so it never noticed me or
-entered combat) or CONTROL-Y to kill it. - double check it.
-4: NWLERK.DLG, the dialog for when the party already has Wanev's Guardian Stone has a broken trigger. (SetGlobal("BridgeIsOpen","MYAREA",1), so it only triggers when the bridge is already open. I got around this with DLTCEP and fixing the variable trigger to (SetGlobal("BridgeIsOpen","MYAREA",0).
-5: Quest Item NWMISC32 (Journal of Synth La'narel), found in Chapter 2 Troll Caves area NW2704, disappears after resting if it's on the ground, and it starts on the ground. I got around this with console commands. For cut and paste if anyone else needs it, I used CLUAConsole:CreateItem("NWMISC32")
-6: Creature "Death Slaad Lord" (NWSLAADD) uses the wrong model (0x5013 cleric_female_halfling).
+
+*. Игра зависает в сборке p_zombie - чекнуть
 *. Довычитать английский перевод
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. заменить русский перевод на что-то более хорошее...
+*. вычитать термины в русском переводе + может быть ёфикация...
 
 Новый контент:
 *. Может быть Шарлин сделать подклассом барда - Jester, а то она бесполезна :) и хоббита тоже подклассом вора -
