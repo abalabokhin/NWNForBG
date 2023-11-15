@@ -3,8 +3,8 @@
 @2 = ~Goodbye.~
 @3 = ~I am the guardian of the first seal. None may pass.~
 @4 = ~What is the first seal?~
-@5 = ~NP: This place is not for you. Only masters can enter here.~ /*It is the portal that stands behind me. Only the masters may pass through.*/
-@6 = ~NP: I need to get into this cave.~ /*I need to get through the portal.*/
+@5 = ~This place is not for you. Only the masters can enter here.~ 
+@6 = ~I need to get through the portal.~ 
 @7 = ~None may pass.~
 @8 = ~Here is the ring.~
 @9 = ~I am one of the Masters. Let me pass.~
@@ -13,6 +13,6 @@
 @12 = ~You do not possess the creator's ring. Slaves who have been sent by the creators always have the ring of Gax.~
 @13 = ~Where can I get such a ring?~
 @14 = ~I will answer no more questions, slave.~
-@15 = ~NP: You can't get through, slave.~ /*You may pass.*/
+@15 = ~You can't get through, slave.~ 
 @16 = ~You may pass.~
 @17 = ~I am done with you.~

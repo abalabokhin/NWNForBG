@@ -2,9 +2,9 @@
 @1 = ~Who are you?~
 @2 = ~Excuse me. I will leave.~
 @3 = ~Geth - at one time a normal man, and not a horrific beast - who hails from Port Llast. Why do you care?~
-@4 = ~NP: I have silver charms from Newrick.~ /*I have silver charms - from Neurik.*/
+@4 = ~I have silver charms - from Neurik.~ 
 @5 = ~What makes you become werewolf?~
-@6 = ~NP: I was sent to finish off the werewolves. If you give me your ring, I will leave and no one will look for you again.~ /*I've been sent to end the werewolf menace. If you give me your ring, I will leave and no one will come searching for you in the future.*/
+@6 = ~I've been sent to end the werewolf menace. If you give me your ring, I will leave and no one will come searching for you in the future.~ 
 @7 = ~I'll try to find some help for you. Stay here.~
 @8 = ~I'm here to kill you, Geth. Are you ready?~
 @9 = ~Thank you...~
@@ -13,7 +13,7 @@
 @12 = ~This charm comes from Neurik. It is safe.~
 @13 = ~Take the charm, or I'll see you dead myself.~
 @14 = ~I don't care. I'm killing you now.~
-@15 = ~Karathis brought me out here with some of my friends: Urth, Bran and Ander. He wanted us to help him kill a werewolf. It sounded fun, but this is how it ended. Everyone ran. We all became werewolves except for Ander. As far as I know, he wasn't caught.~ /*It sounded fun, but this is how it ended. Everyone ran. We all became werewolves except for Ander. As far as I know, he wasn't caught.*/
+@15 = ~Karathis brought me out here with some of my friends: Urth, Bran and Ander. He wanted us to help him kill a werewolf. It sounded fun, but this is how it ended. Everyone ran. We all became werewolves except for Ander. As far as I know, he wasn't caught.~ 
 @16 = ~Do you know where I can find any of them?~
 @17 = ~Fine, take it. I need it not. It will not change the course of my life.~
 @18 = ~As if I have any interest in going elsewhere. But you wouldn't understand. Fine, farewell - just leave me alone.~
@@ -25,6 +25,6 @@
 @24 = ~No, I don't. And I grow weary of this conversation. Perhaps we can put it to an end, yes?~
 @25 = ~I - am human again! Is this a joke? A dream that I will wake from? Let it be truth! Oh, take my ring, and bring it to Neurik.~
 @26 = ~I am overjoyed. I am human again! Thank you, stranger, thank you. I am forever indebted!~
-@27 = ~NP: I am human again! What is this, a joke? Or is it all in my dream? I wish this was true!~ /*I - am human again! Is this a joke? A dream that I will wake from? Let it be truth! Oh, take my ring, and bring it to Neurik.*/
+@27 = ~I - am human again! Is this a joke? A dream that I will wake from? Let it be truth!~ 
 @28 = ~Grrr - Please! - Grrrrr - Can't control... Myself!~
 @29 = ~Stop hurting me! I will no longer attack you!~

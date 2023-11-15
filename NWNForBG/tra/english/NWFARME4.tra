@@ -1,7 +1,7 @@
-@0 = ~NP: You'd better talk to my husband if you want to find out what's going on around here.~ /*You should speak with Fenthick and Aribeth. You have helped them immensely.*/
-@1 = ~NP: You must be travelers, right? Listen to what I'm going to tell you! When I was young, I wanted to be a traveler so badly.  Oh.~ /*Please, hear the words that I speak. They will have meaning for you.*/
-@2 = ~NP: My sister should have arrived from Luskan a few days ago. I hope she'll be here soon.~ /*Me working for lady Aribeth. Can't tell you me mission. It secret.*/
-@3 = ~NP: I'd give you a couple cooking lessons, but tramps like you don't stay in one place long.~ /*"I've given you my signet ring, and now I expect you to fulfill your end of the bargain."*/
-@4 = ~NP: Oh! You frightened me. I'm not used to meeting strangers, because traveling is dangerous these days.~ /*That makes me glad. You do me a great honor by carrying it.*/
-@5 = ~NP: I hope the weather turns soon. Without a good harvest, we'll have a hard time.~ /*I hope you enjoy your time in Port Llast. Goodbye.*/
-@6 = ~NP: You look good, but my husband's coming over soon, so I apologize.~ /*You look troubled. Not that the situation doesn't call for it.*/
+@0 = ~You'd better talk to my husband if you want to find out what's going on around here.~
+@1 = ~You must be travelers, right? When I was young, I wanted to be a traveler so badly.~ 
+@2 = ~My sister should have arrived from Luskan a few days ago. I hope she'll be here soon.~ 
+@3 = ~I'd give you a couple cooking lessons, but tramps like you don't stay in one place long.~ 
+@4 = ~Oh! You frightened me. I'm not used to meeting strangers, because traveling is dangerous these days.~ 
+@5 = ~I hope the weather turns soon. Without a good harvest, we'll have a hard time.~ 
+@6 = ~I like the look of you, but my husband's coming over soon, so I'm sorry.~ 

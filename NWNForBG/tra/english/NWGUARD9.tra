@@ -1,6 +1,6 @@
-@0 = ~NP: I serve Lord Nasher and Lady Aribeth.~ /*I'm waiting here at the orders of Lady Aribeth.*/
+@0 = ~I serve Lord Nasher and Lady Aribeth.~ 
 @1 = ~Look, I'm busy, okay?~
-@2 = ~NP: We need to practice, don't interfere.~ /*I need some directions.*/
-@3 = ~NP: I don't recognize you, are you new?~ /*That all me need. Bye bye.*/
-@4 = ~NP: *sigh* Since the epidemic started, we've had a lot of work to do...~ /**Sigh* Business has been a little *too* busy since the plague hit, you know what I mean... ?*/
-@5 = ~NP: If you have any business, speak to Lady Aribeth.~ /*I'd like to meet the Lady Aribeth.*/
+@2 = ~We need to train, don't interfere.~ 
+@3 = ~I don't recognize you, are you new?~ 
+@4 = ~*Sigh* Business has been a little *too* busy since the plague hit, you know what I mean... ?~ 
+@5 = ~If you have any business, speak to Lady Aribeth.~

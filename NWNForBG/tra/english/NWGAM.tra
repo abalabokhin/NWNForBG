@@ -13,7 +13,7 @@
 @12 = ~Ah. Well, I wouldn't be interested in such a thing, then.~
 @13 = ~That's your choice. Me, I intend to take that reward. Anyone with that much money to place as a wager deserves to lose it.~
 @14 = ~Is that so? I guess you and I will be running into each other below, then. Good luck to you.~
-@15 = ~Hmmm. Well, it does look like something that you'd do, anyway. I suppose there's no harm in it. Mutamin, the owner of this place, is a retired adventurer himself. Quite wealthy, or so I hear. Wealthy enough that he's set up a contest. There's a dungeon below this place full of traps and monsters... first one through wins the prize.~ /*Wealthy enough that he's set up a contest. There's a dungeon below this place full of traps and monsters... first one through wins the prize.*/
+@15 = ~Hmmm. Well, it does look like something that you'd do, anyway. I suppose there's no harm in it. Mutamin, the owner of this place, is a retired adventurer himself. Quite wealthy, or so I hear. Wealthy enough that he's set up a contest. There's a dungeon below this place full of traps and monsters... first one through wins the prize.~ 
 @16 = ~But don't ask me about it. Talk to Mutamin, if you're interested.~
 @17 = ~You won't hear about it from me, friend, as I said. Try someone else.~
 @18 = ~I'm not interested in your money. Try your coin elsewhere and you'll likely find freer lips than mine.~
@@ -36,7 +36,7 @@
 @35 = ~Please... do not leave me here to die, friend! I beg you!~
 @36 = ~Perhaps I should put you out of your misery.~
 @37 = ~Tough. I can handle myself.~
-@38 = ~NP: What cruelty, <MALEFEMALE>. Pray that you never suffer the same fate.~ /*You are a cruel <MANWOMAN>. Pray you do not meet the same fate as I.*/
-@39 = ~I was ambushed by invisible creatures in the next room. They are quite powerful. I thought I was skilled enough to battle them anyway, but I was wrong. During the battle, one of them came too close to that pillar of light and it... it exploded. I was too injured to take advantage of that knowledge... but you are not.~ /*During the battle, one of them came too close to that pillar of light and it... it exploded. I was too injured to take advantage of that knowledge... but you are not.*/
-@40 = ~NP: Now I intend to get out of here. Here, take this book I found here as a thank you. Thank you again, my friend. I wish you good luck.~ /*Now I intend to find my way out of here. Thank you again, friend. I wish you luck.*/
-@41 = ~NP: Thank you, uh. so much for your help, my friend. I thought I was going to die in that dungeon.~ /*I... am most grateful for your aid, my friend. I was almost certain that I was about to die here in this dungeon.*/
+@38 = ~You are a cruel <MANWOMAN>. Pray you do not meet the same fate as I.~
+@39 = ~I was ambushed by invisible creatures in the next room. They are quite powerful. I thought I was skilled enough to battle them anyway, but I was wrong. During the battle, one of them came too close to that pillar of light and it... it exploded. I was too injured to take advantage of that knowledge... but you are not.~ 
+@40 = ~Now I intend to find my way out of here. Here, take this book I found here as a thank you. Thank you again, my friend. I wish you luck.~ 
+@41 = ~I... am most grateful for your aid, my friend. I was almost certain that I was about to die here in this dungeon.~

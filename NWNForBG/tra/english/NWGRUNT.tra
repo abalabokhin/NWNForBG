@@ -1,5 +1,5 @@
-@0 = ~NP: Do you want to plant the seeds of the Ulthark tree?~ /*Plant the Ultarg Tree Seeds*/
+@0 = ~Do you want to plant the seeds of the Ultarg tree?~ 
 @1 = ~Yes~
-@2 = ~None~
-@3 = ~NP: The seeds have been planted.~ /*Bullets of Smiting*/
-@4 = ~NP: You have not planted the seeds of the Ulthark tree.~ /*Plant the Ultarg Tree Seeds*/
+@2 = ~No~
+@3 = ~The seeds have been planted.~ 
+@4 = ~You have not planted the seeds of the Ultarg tree.~

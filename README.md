@@ -74,7 +74,7 @@ Version History
 In development:
 
 - One forge recepie is fixed, thanks to megrimlock.
-- Many lines in english tra files are automatically (using python script) found in the original NWN texts and/or proof read by paladin84 and megrimlock.
+- All the lines in English tra files are automatically (using python script) found in the original NWN texts and/or proof read by paladin84 and megrimlock.
 - Implemented autotra, so the original tra files are not modified during installation process, thanks to JohnBob.
 - "Usable By", etc are now removing for EE automatically during installation process, thanks to JohnBob.
 - Some areas are added to "Cheat Areas" for EE, thanks to JohnBob.
