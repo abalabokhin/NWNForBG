@@ -4,11 +4,11 @@
 @3 = ~You're one of the brothel girls, then?~
 @4 = ~I'd like to ask you some questions.~
 @5 = ~Goodbye.~
-@6 = ~My name is Yvette. I have been entertaining here at Miss Bela's for only a short time. But... I'm sure I am no one that would interest you. What could you want from me?~ /*But... I'm sure I am no one that would interest you. What could you want from me?*/
+@6 = ~My name is Yvette. I have been entertaining here at Miss Bela's for only a short time. But... I'm sure I am no one that would interest you. What could you want from me?~ 
 @7 = ~Do you know what's going on in Luskan?~
 @8 = ~I'm looking for work, if you know of any.~
 @9 = ~I need some directions.~
-@10 = ~I... had a baby, <SIRMAAM>. With a client. I didn't mean to, but it happened, and my little daughter was the joy of my life when I had her. The father, however... Galrone... he does not believe I would make a proper mother. He took my daughter away and will not return her. I wish... I would pay you to get my child back.~ /*The father, however... Galrone... he does not believe I would make a proper mother. He took my daughter away and will not return her. I wish... I would pay you to get my child back.*/
+@10 = ~I... had a baby, <SIRMAAM>. With a client. I didn't mean to, but it happened, and my little daughter was the joy of my life when I had her. The father, however... Galrone... he does not believe I would make a proper mother. He took my daughter away and will not return her. I wish... I would pay you to get my child back.~ 
 @11 = ~I have your baby with me.~
 @12 = ~Why does he want the baby?~
 @13 = ~I can't just take the baby from her father, either.~
@@ -24,15 +24,15 @@
 @23 = ~I am no expert in such matters, <SIRMAAM>. The fighting has been going on for several weeks, now... it's quite horrible. I wish it would just stop.~
 @24 = ~You said you would find my baby. I... don't know of anything else beyond that.~
 @25 = ~I don't know my way around Luskan, myself. You might be better off asking Miss Bela... or maybe Erb. Erb could help you. You'll probably find him out in the lounge.~
-@26 = ~You found her! Oh, thank you, thank you! How did you ever manage to convince Galrone to give her up? Oh, I don't care! All that matters is I have her back once more. My gold doesn't seem enough of a reward... but it's all I have to give you. I... can spare 500 gold pieces. I... hope that is enough?~ /*You found her! Oh, thank you, thank you! How did you ever manage to convince Galrone to give her up? Oh, I don't care! All that matters is I have her back once more.*/
+@26 = ~You found her! Oh, thank you, thank you! How did you ever manage to convince Galrone to give her up? Oh, I don't care! All that matters is I have her back once more. My gold doesn't seem enough of a reward... but it's all I have to give you. I... can spare 500 gold pieces. I... hope that is enough?~ 
 @27 = ~No it not enough. Give all or baby dies!~
 @28 = ~Is that all? I guess I'll take the baby back to Galrone.~
 @29 = ~Keep your gold for the baby. It was my pleasure.~
 @30 = ~That would be fine.~
-@31 = ~I don't know. Galrone is a haughty and... and sometimes cruel man. I didn't think he'd even want to know about the child, nevermind want it. It frightens me to think what he might do to her. Please... if you get her back, I will reward you.~ /*I don't know. Galrone is a haughty and... and sometimes cruel man. I didn't think he'd even want to know about the child, nevermind want it.*/
-@32 = ~But... it's my baby, <SIRMAAM>. I don't think Galrone even wants her... I think he just doesn't want it known that he has a... a bastard child. He won't talk to me and won't let me see her at all. Please help me, <SIRMAAM>, and I'll give you what gold I have.~ /*But... it's my baby, <SIRMAAM>. I don't think Galrone even wants her... I think he just doesn't want it known that he has a... a bastard child.*/
-@33 = ~I could, I know I could. Miss Bela has put aside much of the coin I've... earned here. I want to leave Luskan and go back home... to raise my daughter proper. I've enough money to pay you and... and still make a good life for her. Please, please help me!~ /*I could, I know I could. Miss Bela has put aside much of the coin I've... earned here. I want to leave Luskan and go back home... to raise my daughter proper.*/
-@34 = ~Oh, that's wonderful news! Galrone is in a house to the north, in the slums... though I've no idea if he's remained there with all this fighting. Please do whatever you can to get my daughter back... just don't hurt Galrone, please, if you can avoid it. He... he is still my child's father.~ /*Please do whatever you can to get my daughter back... just don't hurt Galrone, please, if you can avoid it. He... he is still my child's father.*/
+@31 = ~I don't know. Galrone is a haughty and... and sometimes cruel man. I didn't think he'd even want to know about the child, nevermind want it. It frightens me to think what he might do to her. Please... if you get her back, I will reward you.~ 
+@32 = ~But... it's my baby, <SIRMAAM>. I don't think Galrone even wants her... I think he just doesn't want it known that he has a... a bastard child. He won't talk to me and won't let me see her at all. Please help me, <SIRMAAM>, and I'll give you what gold I have.~ 
+@33 = ~I could, I know I could. Miss Bela has put aside much of the coin I've... earned here. I want to leave Luskan and go back home... to raise my daughter proper. I've enough money to pay you and... and still make a good life for her. Please, please help me!~ 
+@34 = ~Oh, that's wonderful news! Galrone is in a house to the north, in the slums... though I've no idea if he's remained there with all this fighting. Please do whatever you can to get my daughter back... just don't hurt Galrone, please, if you can avoid it. He... he is still my child's father.~ 
 @35 = ~Me want money up front to do this.~
 @36 = ~I'll be right back.~
 @37 = ~I see. Yes, of course you don't... that is, thank you for at least considering it. Now, if you could... leave me alone, <SIRMAAM>, I'd appreciate it.~
@@ -45,17 +45,17 @@
 @44 = ~I don't know much else. Maybe Miss Bela could tell you more? She is so smart and kind... she's been so helpful with my... little problem.~
 @45 = ~What problem is that?~
 @46 = ~You... want a job? Maybe you could help me, <SIRMAAM>. I haven't anyone else to turn to... perhaps I could hire you?~
-@47 = ~No! You... you wouldn't! Here, then... take it. All of it. I... I will simply have to find... some way of supporting her back home. You are a cruel, cruel <MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!~ /*You are a cruel, cruel <MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!*/
+@47 = ~No! You... you wouldn't! Here, then... take it. All of it. I... I will simply have to find... some way of supporting her back home. You are a cruel, cruel <MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!~ 
 
-@49 = ~No, don't do that! I... here, I shall give you more! It means much less for the baby, but... but I cannot give her up again. You are a cruel, cruel <MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!~ /*You are a cruel, cruel <MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!*/
+@49 = ~No, don't do that! I... here, I shall give you more! It means much less for the baby, but... but I cannot give her up again. You are a cruel, cruel <MANWOMAN>. Miss Bela has found me a way to leave this city and people like you behind... I hope I never have to return!~ 
 @50 = ~Are... are you sure, <SIRMAAM>? You earned the gold, after all. The baby and I can... make do.~
 @51 = ~You're right. The original reward will do.~
 @52 = ~No, no, keep the gold.~
 @53 = ~I am sure. In fact, I have another 250 gp. Take it and be safe.~
-@54 = ~Take it, then. I don't know what I would have done without your help. I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
+@54 = ~Take it, then. I don't know what I would have done without your help. I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ 
 @55 = ~I... I suppose you should know that Galrone is a very wealthy man. He has many guards, and had influence in Luskan before all this fighting started. I don't know his situation now, though.~
-@56 = ~You... you have done far more than I could ever have hoped. Thank you, my <LADYLORD>... I shall remember your kindness always. I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
-@57 = ~You are so generous, I... I don't know what to say. Bless you, my <LADYLORD>, I shall remember your kindness always! I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ /*I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!*/
+@56 = ~You... you have done far more than I could ever have hoped. Thank you, my <LADYLORD>... I shall remember your kindness always. I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ 
+@57 = ~You are so generous, I... I don't know what to say. Bless you, my <LADYLORD>, I shall remember your kindness always! I have to go, now. Miss Bela arranged for someone to take us out of the city, to start our lives anew. Thank you again!~ 
 @58 = ~Miss Bela warned me not to give my gold away. You... you will get a reward once I get my daughter, <SIRMAAM>. I won't give it out before then.~
 
 @60 = ~You return. Is there something else I can do for you, <SIRMAAM>?~

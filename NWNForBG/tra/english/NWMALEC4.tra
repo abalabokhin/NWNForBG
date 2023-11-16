@@ -25,7 +25,7 @@
 @24 = ~I'm collecting to fund plague relief. Will you do your duty?~
 @25 = ~You give me gold and I leave without killing you!~
 @26 = ~Actually, I don't need anything except the answers to some questions.~
-@27 = ~I can't say much. I live and work in the City Core. The Blacklake district is beyond my means, and I certainly have no business in the others. I don't bother with the Beggar's Nest, the Docks, or the Peninsula. They were rough enough before the Wailing took hold.~ /*I can't say much. I live and work in the City Core. The Blacklake district is beyond my means, and I certainly have no business in the others.*/
+@27 = ~I can't say much. I live and work in the City Core. The Blacklake district is beyond my means, and I certainly have no business in the others. I don't bother with the Beggar's Nest, the Docks, or the Peninsula. They were rough enough before the Wailing took hold.~ 
 @28 = ~Tell me about the City Core.~
 @29 = ~Tell me about the Beggar's Nest.~
 @30 = ~Tell me about the Docks district.~
@@ -56,8 +56,8 @@
 @55 = ~The Blacklake district is the wealthiest part of the city. I don't have much cause to go there. I can't afford to look like I belong there.~
 @56 = ~I think someone took care of him, but I haven't heard any details. Hmm... I think maybe they mentioned something about someone like you being in the area. I don't know, though.~
 @57 = ~It's worse than the Docks, I hear. I've never been there, though.~
-@58 = ~Oh, I did hear about some sort of trouble. Something about the Head Gaoler being taken over by something. It all sounded rather unpleasant to me. But, it's not my affair. Your kind probably keep a closer eye on that sort of thing. In fact, you look similar to the one I heard fixed the problem. Probably unrelated.~ /*But, it's not my affair. Your kind probably keep a closer eye on that sort of thing. In fact, you look similar to the one I heard fixed the problem. Probably unrelated.*/
-@59 = ~Lord Nasher has pledged any needed resources to curing the plague. He has been quite supportive, as any leader would when tragedy strikes. Actually, I should say that it was his advisors that made his intentions known. Lord Nasher himself has wisely been locked away to protect against the plague.~ /*Lord Nasher has pledged any needed resources to curing the plague. He has been quite supportive, as any leader would when tragedy strikes.*/
+@58 = ~Oh, I did hear about some sort of trouble. Something about the Head Gaoler being taken over by something. It all sounded rather unpleasant to me. But, it's not my affair. Your kind probably keep a closer eye on that sort of thing. In fact, you look similar to the one I heard fixed the problem. Probably unrelated.~ 
+@59 = ~Lord Nasher has pledged any needed resources to curing the plague. He has been quite supportive, as any leader would when tragedy strikes. Actually, I should say that it was his advisors that made his intentions known. Lord Nasher himself has wisely been locked away to protect against the plague.~ 
 @60 = ~I don't know any specifics, but she has been on the front lines of everything, working with people, trying to organize... The only people we see more are the Helmites, dispensing their blessings. I'm not sure who they report to. Someone under Aribeth?~
 @61 = ~Wait... you aren't wearing the sash... the sash of approved charity solicitors... You filthy... I've been had, haven't I... Get out... get out of my home! Get out!!~
 @62 = ~You again? I'm sorry, but is there really a reason for you to remain in my home?~

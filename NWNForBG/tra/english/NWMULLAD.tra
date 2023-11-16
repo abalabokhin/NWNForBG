@@ -1,4 +1,4 @@
-@0 = ~Stand down, citizen. Castle Never is sealed by order of Lord Nasher. No one is allowed within. To protect the castle against plague it is closed to all but Lady Aribeth. That is all I can say.~ /*To protect the castle against plague it is closed to all but Lady Aribeth. That is all I can say.*/
+@0 = ~Stand down, citizen. Castle Never is sealed by order of Lord Nasher. No one is allowed within. To protect the castle against plague it is closed to all but Lady Aribeth. That is all I can say.~ 
 @1 = ~I serve him under the command of Aribeth, let me pass.~
 @2 = ~Does he fear the plague so much?~
 @3 = ~Can you tell me anything about the plague?~
@@ -11,14 +11,14 @@
 @10 = ~Spare me your lies. He is either deathly ill or dead.~
 @11 = ~Of course. Your efforts mean we are closer than ever to a cure... not that Lord Nasher has the... *sigh* Only the closest to him know the extent of his sickness. If the people knew... He wishes that the people not see him in this... condition. You understand, I hope? They have enough to fear. Continue your efforts, please. We need all the help we can get in these dark times.~
 @12 = ~As I have indicated, the castle must remain closed for fear of the plague. This is for your safety, and others... As you may have gathered, we do not fear the plague getting in, so much as... getting out. He wishes that the people not see him in this... condition. You understand, I hope? They have enough to fear. Continue your efforts, please. We need all the help we can get in these dark times.~
-@13 = ~*sigh* Only the closest to him know the extent of his sickness. If the people knew... He wishes that the people not see him in this... condition. You understand, I hope? They have enough to fear. Continue your efforts, please. We need all the help we can get in these dark times.~ /**sigh* Only the closest to him know the extent of his sickness. If the people knew...*/
+@13 = ~*sigh* Only the closest to him know the extent of his sickness. If the people knew... He wishes that the people not see him in this... condition. You understand, I hope? They have enough to fear. Continue your efforts, please. We need all the help we can get in these dark times.~ 
 @14 = ~Three of the Waterdhavian creatures have been returned to Aribeth. Fenthick and Desther assure us that we are close to a cure! Lord Nasher will be among the first to sample it, of course. His rejuvenation will inspire people... They need inspiring. I will not waste your time, <CHARNAME>. Lord Nasher feels you have proven too valuable to harass with idle chatter. For his health, and for everyone in Neverwinter... please continue your efforts.~
-@15 = ~The four creatures! All four of the Waterdhavian creatures have been returned! Aribeth has them now! If this was your doing, we owe you a great debt! Please, don't waste time speaking with me. Return to Aribeth as soon as you are ready to proceed. Honestly, I don't know how you can stand around here delaying the cure after spending so much effort collecting the components!~ /*You need to go speak to Aribeth. Honestly, I don't know how you can stand around here delaying the cure after spending so much effort collecting the components!*/
+@15 = ~The four creatures! All four of the Waterdhavian creatures have been returned! Aribeth has them now! If this was your doing, we owe you a great debt! Please, don't waste time speaking with me. Return to Aribeth as soon as you are ready to proceed. Honestly, I don't know how you can stand around here delaying the cure after spending so much effort collecting the components!~ 
 @16 = ~I'm sorry, I didn't mean to get anxious, but we are so close. Please, go to Aribeth as soon as you are ready.~
 @17 = ~Is Lord Nasher well?~
 @18 = ~Goodbye.~
 @19 = ~I don't know... he was so weak. I know they were working on the cure, but I didn't hear how it turned out.~
 @20 = ~What needs to be done?~
-@21 = ~You have done much for Neverwinter. Please, don't waste time speaking with me. Return to Aribeth.~ /* Please see this through.*/
-@22 = ~You need to go speak to Aribeth. Honestly, I don't know how you can stand around here delaying the cure after spending so much effort collecting the components! Please, don't waste time speaking with me. Return to Aribeth.~ /**/
+@21 = ~You have done much for Neverwinter. Please, don't waste time speaking with me. Return to Aribeth.~ 
+@22 = ~You need to go speak to Aribeth. Honestly, I don't know how you can stand around here delaying the cure after spending so much effort collecting the components! Please, don't waste time speaking with me. Return to Aribeth.~ 
 @23 = ~Оh! These are the heroes who saved Neverwinter from the plague! Of course you may come in, Lord Nasher will be pleased to see you again. However, I'm afraid you'll hear nothing new from him.~
