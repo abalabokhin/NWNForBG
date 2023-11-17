@@ -73,6 +73,8 @@ Version History
 ---------------
 In development:
 
+- Fixed death script for NWSPID3 to actually cast fireball again, thanks to JohnBob
+
 0.93 (11/15/23)
 
 - One forge recepie is fixed, thanks to megrimlock.
