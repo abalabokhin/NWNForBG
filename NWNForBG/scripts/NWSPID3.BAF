@@ -14,7 +14,8 @@ IF
 	Die()
 THEN
 	RESPONSE #100
-		ReallyForceSpell(Myself,RED_FIREBALL)  // SPWI957.SPL (???????? ???)
+		ReallyForceSpellDead(Myself,RED_FIREBALL)  // SPWI957.SPL
+		Wait(1)
 		DestroySelf()
 END
 
