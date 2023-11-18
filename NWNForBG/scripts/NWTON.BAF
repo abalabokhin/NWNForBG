@@ -2,7 +2,6 @@ IF
 	True()
 THEN
 	RESPONSE #100
-	        SetGlobal("NWN_Quest_Status","GLOBAL",1)
 		CutSceneId(Player1)
 		ClearAllActions()
 		FadeToColor([30.0],0)
@@ -14,7 +13,10 @@ THEN
 		ActionOverride(Player4,LeaveAreaLUA("NW1001","",[988.789],10))
 		ActionOverride(Player5,LeaveAreaLUA("NW1001","",[1043.813],10))
 		ActionOverride(Player6,LeaveAreaLUA("NW1001","",[1112.843],10))
+		Wait(1)
+		Explore()
 		MultiPlayerSync()
+		SetGlobal("NWN_Quest_Status","GLOBAL",1)
 		Wait(1)
 		MoveViewObject(Player1,INSTANT)
 		Wait(1)
@@ -27,4 +29,3 @@ THEN
 		UnhideGUI()
 		EndCutSceneMode()
 END
-
