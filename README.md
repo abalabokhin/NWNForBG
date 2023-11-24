@@ -74,6 +74,11 @@ Version History
 In development:
 
 - Fixed death script for NWSPID3 to actually cast fireball again, thanks to JohnBob
+- Probably fixed again the script for NWSPID3 and NWSPID0 not to crash the game, thanks to BSpecific
+- Fixed NWSLAADD animation, thanks to BSpecific
+- Fixed item NWMISC32 not to dissapear after rest, thanks to BSpecific
+- Fixed script for NWLERK to open bridge after the death
+- Fix game freeze if Mwssanger from Neverwinter talk not to main hero, thanks to p\_zombie
 
 0.93 (11/15/23)
 
