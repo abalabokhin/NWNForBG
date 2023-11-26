@@ -76,13 +76,14 @@ to find all the lines that needs to be corrected by searching open comments stri
 What else needs to be done:
 
 1. Pay extra attention the amount of gold in texts, it was changes everywhere.
-2. Fix lines @1 and @2 in setup.tra file to match "Usable by" lines in items description, so they can be
+2. Translate worlmap.tra and CheatAreas.tra files manually.
+3. Fix lines @1 and @2 in setup.tra file to match "Usable by" lines in items description, so they can be
    removed automatically for EE version (see details in NWNForBG/tra/TranslatorNoteItemDescription).
-3. All the items should be properly translated (for some of them there is a decriptions in original NWN texts,
+4. All the items should be properly translated (for some of them there is a decriptions in original NWN texts,
    but not for many).
-4. In setup.tra file, there are many journal entries, add empty line after the title (see how it is done in
+5. In setup.tra file, there are many journal entries, add empty line after the title (see how it is done in
    English).
-5. If you have any questions, feel free to ask on the support forums.
+6. If you have any questions, feel free to ask on the support forums.
 
 
 Known Bugs:
