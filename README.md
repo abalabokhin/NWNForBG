@@ -79,7 +79,7 @@ What else needs to be done:
 2. Translate worlmap.tra and CheatAreas.tra files manually.
 3. Fix lines @1 and @2 in setup.tra file to match "Usable by" lines in items description, so they can be
    removed automatically for EE version (see details in NWNForBG/tra/TranslatorNoteItemDescription).
-4. All the items should be properly translated (for some of them there is a decriptions in original NWN texts,
+4. All the items should be properly translated (for some of them there is a desriptions in original NWN texts,
    but not for many).
 5. In setup.tra file, there are many journal entries, add empty line after the title (see how it is done in
    English).
