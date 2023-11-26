@@ -64,6 +64,27 @@ Make sure ToBex (or other mods, increasing maximum number of music), Baldur's Ga
 
 BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate.
 
+Translator Notes:
+----------------
+Russian and English languages are pretty much done, but any corrections are always welcome.
+Other languages are mixed English and other language lines (eg French and English). For every line on English,
+the "closest" line in the language (eg French) from the original NWN texts is shown in comments. Often,
+the original NWN lines were changed in English and should be change in the other language respectively. For
+the new lines, what in comments is usually garbage, so just translate them and remove the comments. It is easy
+to find all the lines that needs to be corrected by searching open comments string (without quotes): "/*".
+
+What else needs to be done:
+
+1. Pay extra attention the amount of gold in texts, it was changes everywhere.
+2. Fix lines @1 and @2 in setup.tra file to match "Usable by" lines in items description, so they can be
+   removed automatically for EE version (see details in NWNForBG/tra/TranslatorNoteItemDescription).
+3. All the items should be properly translated (for some of them there is a decriptions in original NWN texts,
+   but not for many).
+4. In setup.tra file, there are many journal entries, add empty line after the title (see how it is done in
+   English).
+5. If you have any questions, feel free to ask on the support forums.
+
+
 Known Bugs:
 -----------
 
@@ -73,6 +94,8 @@ Version History
 ---------------
 In development:
 
+- Added other languages (mixed with English), see tranlator notes to finish other languages
+- Checked and fixed names in Russian and change "е" to "ё" where appropriate
 - Fixed death script for NWSPID3 to actually cast fireball again, thanks to JohnBob
 - Probably fixed again the script for NWSPID3 and NWSPID0 not to crash the game, thanks to BSpecific
 - Fixed NWSLAADD animation, thanks to BSpecific
