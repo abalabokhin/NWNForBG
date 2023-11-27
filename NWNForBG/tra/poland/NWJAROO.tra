@@ -1,17 +1,17 @@
-@0 = ~A... *oto* i kolejna grupka ÂœmiaÂ³kÃ³w, czyÂ¿ nie? Znakomicie. Nazywam siÃª Jaroo i jestem Mistrzem Gier. ObjaÂœniÃª ci teraz zasady wyÂœcigu.~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*WejÂœcie do Krypt. Kiedy to pole jest zaznaczone, edytor spyta ciÃª o tekst od razu po dodaniu wÃªzÂ³a. Ty mÃ³wiÃ¦, co wiedzieÃ¦, a ja nie marnowaÃ¦ czas. JeÂœli chcesz zmieniÃ¦ swÃ³j los, musisz zrobiÃ¦ to sam.*/
-@2 = ~Ani ja, ani Mutamin nie ponosimy odpowiedzialnoÂœci za twÂ¹ ewentualnÂ¹ ÂœmierÃ¦ Â– bÂ¹dÂŸ ÂœmierÃ¦ towarzyszÂ¹cych ci osÃ³b. Wkraczasz tam na wÂ³asne ryzyko.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Ci, ktÃ³rzy gotowi sÂ¹ wkroczyÃ¦ do podziemi, niech podejdÂ¹ do mnie i uiszczÂ¹ opÂ³atÃª. PrzeniosÃª ich na miejsce zawodÃ³w.*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*SÂ³ucham? Chcesz wkroczyÃ¦ do podziemi?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*Tak. Oto 500 sztuk zÂ³ota.*/
+@0 = ~A... *oto* i kolejna grupka œmia³ków, czy¿ nie? Znakomicie. Nazywam siê Jaroo i jestem Mistrzem Gier. Objaœniê ci teraz zasady wyœcigu.~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Wejœcie do Krypt. Kiedy to pole jest zaznaczone, edytor spyta ciê o tekst od razu po dodaniu wêz³a. Ty mówiæ, co wiedzieæ, a ja nie marnowaæ czas. Jeœli chcesz zmieniæ swój los, musisz zrobiæ to sam.*/
+@2 = ~Ani ja, ani Mutamin nie ponosimy odpowiedzialnoœci za tw¹ ewentualn¹ œmieræ – b¹dŸ œmieræ towarzysz¹cych ci osób. Wkraczasz tam na w³asne ryzyko.~ [NWJAR056]
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Ci, którzy gotowi s¹ wkroczyæ do podziemi, niech podejd¹ do mnie i uiszcz¹ op³atê. Przeniosê ich na miejsce zawodów.*/
+@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*S³ucham? Chcesz wkroczyæ do podziemi?*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*Tak. Oto 500 sztuk z³ota.*/
 @6 = ~I'm not ready yet.~ /*Nie specjalnie.*/
-@7 = ~Tak, ale czy koniecznie muszÃª mieÃ¦ te 500 sztuk zÂ³ota?~
+@7 = ~Tak, ale czy koniecznie muszê mieæ te 500 sztuk z³ota?~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-/*Znakomicie. Przygotuj siÃª, <panie/pani>! Niechaj rozpocznÂ¹ siÃª zawody!!*/
-@10 = ~Jak chcesz. JeÂœli zmienisz zdanie, to wiesz, gdzie mnie szukaÃ¦.~
-@11 = ~Tak. KaÂ¿da taka opÂ³ata dodawana jest do wspÃ³lnej puli. Dostanie jÂ¹ pÃ³ÂŸniej ta osoba, ktÃ³rej uda siÃª przetrwaÃ¦ w podziemiach. Jako Â¿e wszyscy majÂ¹ rÃ³wne szanse, nie mogÃª policzyÃ¦ ci mniej, gdyÂ¿ byÂ³oby to nieuczciwe. JesteÂœ gotow<y/a>, by przystÂ¹piÃ¦ do zawodÃ³w?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Ty siÃª pospieszyÃ¦. Ostatnia pieczÃªÃ¦ zostaÂ³a zÂ³amana. WejÂœcie do ruin Illusk stoi otworem.*/
-@13 = ~Moje gratulacje! Oto i nasz zwyciÃªzca. Porozmawiaj z Mutaminem i odbierz nagrodÃª!~ [NWJAR052]
-@14 = ~Zawody dobiegÂ³y koÃ±ca. PrzyjdÂŸ innym razem, gdy juÂ¿ przygotujemy podziemia na kolejne wyzwanie!~ [NWJAR053]
+/*Znakomicie. Przygotuj siê, <panie/pani>! Niechaj rozpoczn¹ siê zawody!!*/
+@10 = ~Jak chcesz. Jeœli zmienisz zdanie, to wiesz, gdzie mnie szukaæ.~
+@11 = ~Tak. Ka¿da taka op³ata dodawana jest do wspólnej puli. Dostanie j¹ póŸniej ta osoba, której uda siê przetrwaæ w podziemiach. Jako ¿e wszyscy maj¹ równe szanse, nie mogê policzyæ ci mniej, gdy¿ by³oby to nieuczciwe. Jesteœ gotow<y/a>, by przyst¹piæ do zawodów?~ 
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Ty siê pospieszyæ. Ostatnia pieczêæ zosta³a z³amana. Wejœcie do ruin Illusk stoi otworem.*/
+@13 = ~Moje gratulacje! Oto i nasz zwyciêzca. Porozmawiaj z Mutaminem i odbierz nagrodê!~ [NWJAR052]
+@14 = ~Zawody dobieg³y koñca. PrzyjdŸ innym razem, gdy ju¿ przygotujemy podziemia na kolejne wyzwanie!~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*Zawody dobiegÂ³y koÃ±ca. PrzyjdÂŸ innym razem, gdy juÂ¿ przygotujemy podziemia na kolejne wyzwanie!*/
+/*Zawody dobieg³y koñca. PrzyjdŸ innym razem, gdy ju¿ przygotujemy podziemia na kolejne wyzwanie!*/

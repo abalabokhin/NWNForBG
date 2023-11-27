@@ -1,17 +1,17 @@
-@0 = ~So ... 'das' sind also die neuen Teilnehmer, ja? Gut. Mein Name ist Jaroo ... Ich bin der Leiter der Spiele. Erlaubt mir, Euch zu erklÃ¤ren, wie das Ganze ablaufen wird:~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Eingang zu den GrÃ¼ften Wenn dieser Kasten aktiviert ist, wird Sie der Editor direkt nach dem Text fragen, nachdem Sie einen Knoten hinzugefÃ¼gt haben. Ihr mir sagen alles, was Ihr wissen. Nicht Zeit vergeuden mir. Wenn Ihr Eure Zukunft Ã¤ndern wollt, mÃ¼sst Ihr sie selbst in die Hand nehmen.*/
-@2 = ~Weder ich noch Mutamin Ã¼bernehmen die Verantwortung fÃ¼r Eure Leben. Wenn Ihr dort hineingeht, so geschieht dies auf Euer eigenes Risiko.~ [NWJAR056]
+@0 = ~So ... 'das' sind also die neuen Teilnehmer, ja? Gut. Mein Name ist Jaroo ... Ich bin der Leiter der Spiele. Erlaubt mir, Euch zu erklären, wie das Ganze ablaufen wird:~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Eingang zu den Grüften Wenn dieser Kasten aktiviert ist, wird Sie der Editor direkt nach dem Text fragen, nachdem Sie einen Knoten hinzugefügt haben. Ihr mir sagen alles, was Ihr wissen. Nicht Zeit vergeuden mir. Wenn Ihr Eure Zukunft ändern wollt, müsst Ihr sie selbst in die Hand nehmen.*/
+@2 = ~Weder ich noch Mutamin übernehmen die Verantwortung für Eure Leben. Wenn Ihr dort hineingeht, so geschieht dies auf Euer eigenes Risiko.~ [NWJAR056]
 @3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Nun denn, sollte einer von Euch hinein wollen, so gebt mir Euer Gold und ich teleportiere Euch hinein.*/
 @4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*Ja? Seid Ihr bereit, das Verlies zu betreten?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*Ja, ich bin bereit. Hier sind Eure 500 GoldmÃ¼nzen.*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*Ja, ich bin bereit. Hier sind Eure 500 Goldmünzen.*/
 @6 = ~I'm not ready yet.~ /*Nein, nicht wirklich.*/
-@7 = ~Ja, aber sind die 500 GoldmÃ¼nzen wirklich notwendig?~
+@7 = ~Ja, aber sind die 500 Goldmünzen wirklich notwendig?~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-/*Ausgezeichnet. Wappnet Euch! MÃ¶ge der Wettbewerb beginnen!*/
-@10 = ~Wie Ihr wÃ¼nscht. Ich werde hier sein, falls Ihr es Euch anders Ã¼berlegt.~
-@11 = ~Das sind sie. Aus den StartgebÃ¼hren wird das Preisgeld gebildet, das der Sieger erhÃ¤lt ... Derjenige, der durch das Verlies kommt. Da Ihr die gleiche Chance habt, erfolgreich zu sein, wie alle anderen, die das GewÃ¶lbe betreten, wÃ¤re es den anderen gegenÃ¼ber nicht fair, einen Rabatt zu gewÃ¤hren. Also dann ... Seid Ihr fÃ¼r den Wettbewerb bereit?~ 
+/*Ausgezeichnet. Wappnet Euch! Möge der Wettbewerb beginnen!*/
+@10 = ~Wie Ihr wünscht. Ich werde hier sein, falls Ihr es Euch anders überlegt.~
+@11 = ~Das sind sie. Aus den Startgebühren wird das Preisgeld gebildet, das der Sieger erhält ... Derjenige, der durch das Verlies kommt. Da Ihr die gleiche Chance habt, erfolgreich zu sein, wie alle anderen, die das Gewölbe betreten, wäre es den anderen gegenüber nicht fair, einen Rabatt zu gewähren. Also dann ... Seid Ihr für den Wettbewerb bereit?~ 
 @12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Beeilung. Das letzte Siegel wurde aufgebrochen, und die Ruinen von Illusk stehen Euch offen.*/
-@13 = ~Ihr habt den Wettbewerb gewonnen. Meine GlÃ¼ckwunsche! Sprecht mit Mutamin, um Eure Belohnung zu erhalten!~ [NWJAR052]
-@14 = ~Der Wettbewerb ist beendet. Bitte kommt ein anderes Mal wieder. Wir mÃ¼ssen das Verlies erst umgestalten!~ [NWJAR053]
+@13 = ~Ihr habt den Wettbewerb gewonnen. Meine Glückwunsche! Sprecht mit Mutamin, um Eure Belohnung zu erhalten!~ [NWJAR052]
+@14 = ~Der Wettbewerb ist beendet. Bitte kommt ein anderes Mal wieder. Wir müssen das Verlies erst umgestalten!~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*Der Wettbewerb ist beendet. Bitte kommt ein anderes Mal wieder. Wir mÃ¼ssen das Verlies erst umgestalten!*/
+/*Der Wettbewerb ist beendet. Bitte kommt ein anderes Mal wieder. Wir müssen das Verlies erst umgestalten!*/

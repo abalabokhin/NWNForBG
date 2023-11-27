@@ -1,17 +1,17 @@
-@0 = ~Cos√¨...*questo* √® l'ultimo gruppo ad entrare, giusto? Molto bene. Il mio nome √® Jaroo - Signore dei Giochi. Lasciate che vi spieghi come funziona:~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Ingresso alle Cripte. Quando questo riquadro √® selezionato l'editor ti chieder√† il testo immediatamente dopo l'aggiunta di un nodo. Tu dice me tutto quello che sa o tu non fa perdere tempo a me. Se vuoi cambiare il futuro, devi essere tu a farlo.*/
-@2 = ~N√© io n√© Mutamin siamo responsabili della tua morte, o di quella dei tuoi compagni. Se entri, lo fai a tuo rischio e pericolo.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Ora, chiunque voglia entrare, si avvicini con l'oro e verr√† teletrasportato all'interno.*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*S√¨, mio <LADYLORD>? Sei pronto a entrare nel sotterraneo?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*S√¨, lo sono. Eccoti le tue 500 monete d'oro.*/
+@0 = ~CosÏ...*questo* Ë l'ultimo gruppo ad entrare, giusto? Molto bene. Il mio nome Ë Jaroo - Signore dei Giochi. Lasciate che vi spieghi come funziona:~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Ingresso alle Cripte. Quando questo riquadro Ë selezionato l'editor ti chieder‡ il testo immediatamente dopo l'aggiunta di un nodo. Tu dice me tutto quello che sa o tu non fa perdere tempo a me. Se vuoi cambiare il futuro, devi essere tu a farlo.*/
+@2 = ~NÈ io nÈ Mutamin siamo responsabili della tua morte, o di quella dei tuoi compagni. Se entri, lo fai a tuo rischio e pericolo.~ [NWJAR056]
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Ora, chiunque voglia entrare, si avvicini con l'oro e verr‡ teletrasportato all'interno.*/
+@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*SÏ, mio <LADYLORD>? Sei pronto a entrare nel sotterraneo?*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*SÏ, lo sono. Eccoti le tue 500 monete d'oro.*/
 @6 = ~I'm not ready yet.~ /*No, non proprio.*/
-@7 = ~S√¨, ma le 500 monete d'oro sono veramente necessarie?~
+@7 = ~SÏ, ma le 500 monete d'oro sono veramente necessarie?~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
 /*Eccellente. Preparati, mio <LADYLORD>! E che la gara abbia inizio!*/
-@10 = ~Come preferisci. Io sar√≤ qui se dovessi cambiare idea.~
-@11 = ~Lo sono. Ogni quota sar√† aggiunta al totale che verr√† dato al vincitore, colui che riesce a superare tutto il sotterraneo. Dal momento che avete tutti le stesse possibilit√† di successo, temo non sia giusto applicare eventuali sconti. Allora... siete pronti per la competizione?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Tu fa presto. Il sigillo finale √® stato infranto e ora puoi accedere alle rovine di Illusk.*/
+@10 = ~Come preferisci. Io sarÚ qui se dovessi cambiare idea.~
+@11 = ~Lo sono. Ogni quota sar‡ aggiunta al totale che verr‡ dato al vincitore, colui che riesce a superare tutto il sotterraneo. Dal momento che avete tutti le stesse possibilit‡ di successo, temo non sia giusto applicare eventuali sconti. Allora... siete pronti per la competizione?~ 
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Tu fa presto. Il sigillo finale Ë stato infranto e ora puoi accedere alle rovine di Illusk.*/
 @13 = ~Hai vinto la competizione. Congratulazioni! Parla a Mutamin per prendere la tua ricompensa!~ [NWJAR052]
-@14 = ~La competizione √® stata vinta. Torna un'altra volta, quando il sotterraneo sar√† stato riorganizzato per un'altra sfida!~ [NWJAR053]
+@14 = ~La competizione Ë stata vinta. Torna un'altra volta, quando il sotterraneo sar‡ stato riorganizzato per un'altra sfida!~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*La competizione √® stata vinta. Torna un'altra volta, quando il sotterraneo sar√† stato riorganizzato per un'altra sfida!*/
+/*La competizione Ë stata vinta. Torna un'altra volta, quando il sotterraneo sar‡ stato riorganizzato per un'altra sfida!*/

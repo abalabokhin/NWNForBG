@@ -1,29 +1,29 @@
-@0 = ~Vous... vous Ãªtes un aventurier, non ? Enfin... je veux dire salutations. Euh, mais, mon pÃ¨re aurait bien besoin de votre aide.~
+@0 = ~Vous... vous êtes un aventurier, non ? Enfin... je veux dire salutations. Euh, mais, mon père aurait bien besoin de votre aide.~
 @1 = ~Tu ne me connais pas ?~
-@2 = ~Du calme. Quel est le problÃ¨me ?~
-@3 = ~Il y a une rÃ©compense pour moi ?~
-@4 = ~Je nÂ’ai pas le temps de tÂ’Ã©couter.~
-@5 = ~Euh, non ? Je devrais ? Je vis dans une ferme hors de la ville, nous nÂ’avons pas beaucoup de nouvelles, jÂ’en ai peur. Nous savons que quelques aventuriers sont Ã  Port Llast, et mon pÃ¨re mÂ’a envoyÃ© ici pour trouver des gens pour lÂ’aider. CÂ’est trÃ¨s important !~ 
+@2 = ~Du calme. Quel est le problème ?~
+@3 = ~Il y a une récompense pour moi ?~
+@4 = ~Je n’ai pas le temps de t’écouter.~
+@5 = ~Euh, non ? Je devrais ? Je vis dans une ferme hors de la ville, nous n’avons pas beaucoup de nouvelles, j’en ai peur. Nous savons que quelques aventuriers sont à Port Llast, et mon père m’a envoyé ici pour trouver des gens pour l’aider. C’est très important !~ 
 @6 = ~Cela a-t-il un rapport avec une secte ?~
-@7 = ~Explique-moi le problÃ¨me.~
-@8 = ~Euh... peut-Ãªtre. Je nÂ’ai pas entendu parler de secte. Il faudrait en parler Ã  mon pÃ¨re.~
-@9 = ~Eh bien, papa et moi... Il sÂ’appelle Gerrol, tout le monde le connaÃ®t Ã  Port Llast... nous vivons dans une ferme au nord des portes. Il y a beaucoup de monstres dans les collines autour. Normalement, ils ne nous embÃªtent pas, mais ces derniers temps, ils attaquent les voyageurs et les caravanes et tout, et sont tÃ©mÃ©raires.~ 
-@10 = ~Ils ont mÃªme enlevÃ© ma mÃ¨re pendant que papa et moi Ã©tions partis la semaine derniÃ¨re ! Papa mÂ’a envoyÃ© en ville pour trouver de lÂ’aide.~
-@11 = ~Les autoritÃ©s doivent pouvoir vous aider.~
-@12 = ~Toi vouloir moi trouver mÃ¨re de toi ?~
-@13 = ~Pourquoi ne pas partir avec ton pÃ¨re ?~
-@14 = ~Ã‡a ne me concerne pas.~
+@7 = ~Explique-moi le problème.~
+@8 = ~Euh... peut-être. Je n’ai pas entendu parler de secte. Il faudrait en parler à mon père.~
+@9 = ~Eh bien, papa et moi... Il s’appelle Gerrol, tout le monde le connaît à Port Llast... nous vivons dans une ferme au nord des portes. Il y a beaucoup de monstres dans les collines autour. Normalement, ils ne nous embêtent pas, mais ces derniers temps, ils attaquent les voyageurs et les caravanes et tout, et sont téméraires.~ 
+@10 = ~Ils ont même enlevé ma mère pendant que papa et moi étions partis la semaine dernière ! Papa m’a envoyé en ville pour trouver de l’aide.~
+@11 = ~Les autorités doivent pouvoir vous aider.~
+@12 = ~Toi vouloir moi trouver mère de toi ?~
+@13 = ~Pourquoi ne pas partir avec ton père ?~
+@14 = ~Ça ne me concerne pas.~
 @15 = ~Je pense. Papa vous paierait sans doute, si vous aidiez. Vous pourriez lui en parler, au moins.~
-@16 = ~Mais... sÂ’il vous plaÃ®t ! Il nÂ’y a personne dÂ’autre qui peut nous aider ! Tout le monde est occupÃ© par ses urgences !~
-@17 = ~Et moi par les miennes. DÃ©solÃ©.~
-@18 = ~DÃ©gage, gamin.~
+@16 = ~Mais... s’il vous plaît ! Il n’y a personne d’autre qui peut nous aider ! Tout le monde est occupé par ses urgences !~
+@17 = ~Et moi par les miennes. Désolé.~
+@18 = ~Dégage, gamin.~
 @19 = ~Bien, bien. Raconte-moi tout.~
 @20 = ~Je... bon... je ne peux rien dire pour vous convaincre.~
-@21 = ~Papa dit quÂ’il a souvent Ã©crit pour tout cela, mais le maire est occupÃ© Ã  aider Padhiver et nÂ’a pas de temps Ã  nous consacrer. Il y a eu dÂ’autres aventuriers qui y sont allÃ©s, mais aucun nÂ’est revenu. JÂ’espÃ©rais... que vous rÃ©ussiriez lÃ  oÃ¹ ils ont Ã©chouÃ©...~ 
-@22 = ~DÂ’accord, je vais vous aider.~
-@23 = ~Nous avons besoin dÂ’aide ! Je vous demande simplement dÂ’aller parler Ã  Gerrol, mon pÃ¨re, rien dÂ’autre.~
-@24 = ~Papa ne veut pas abandonner maman... et puis, cÂ’est chez nous. Papa ne veut pas partir. Vous pourriez... juste lui parler ?~
+@21 = ~Papa dit qu’il a souvent écrit pour tout cela, mais le maire est occupé à aider Padhiver et n’a pas de temps à nous consacrer. Il y a eu d’autres aventuriers qui y sont allés, mais aucun n’est revenu. J’espérais... que vous réussiriez là où ils ont échoué...~ 
+@22 = ~D’accord, je vais vous aider.~
+@23 = ~Nous avons besoin d’aide ! Je vous demande simplement d’aller parler à Gerrol, mon père, rien d’autre.~
+@24 = ~Papa ne veut pas abandonner maman... et puis, c’est chez nous. Papa ne veut pas partir. Vous pourriez... juste lui parler ?~
 @25 = ~That would be great, my <LADYLORD>. I'm sure my pa would appreciate it. To get to our farm, you just need to go through the east gate and turn north. I'll stay here for now and find some more people to send to pa, until he calls me back. I'm sure you'll do the trick, though. Just go and talk to him.~
-/*Ce serait formidable, mon <LADYLORD>. Je suis sÃ»r que papa sera content. Pour aller Ã  notre ferme, il suffit de prendre la porte du nord et de suivre un peu la route. Je vais encore un peu rester lÃ  pour trouver des gens Ã  envoyer Ã  papa, jusquÂ’Ã  ce quÂ’il me rappelle. Mais je suis sÃ»r que vous conviendrez. Allez lui parler.*/
+/*Ce serait formidable, mon <LADYLORD>. Je suis sûr que papa sera content. Pour aller à notre ferme, il suffit de prendre la porte du nord et de suivre un peu la route. Je vais encore un peu rester là pour trouver des gens à envoyer à papa, jusqu’à ce qu’il me rappelle. Mais je suis sûr que vous conviendrez. Allez lui parler.*/
 @27 = ~Please find my mother!~
-/*Aidez-moi, s'il vous plaÃ®t.*/
+/*Aidez-moi, s'il vous plaît.*/

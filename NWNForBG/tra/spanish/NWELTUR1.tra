@@ -1,37 +1,37 @@
-@0 = ~Mmm... yo te conozco. Eres de los nuevos reclutas de Aribeth, Â¿verdad? Lo siento, pero Ã©sta es la cofradÃ­a de lanzadores de conjuros. No te va a interesar.~ [NWELT050]
+@0 = ~Mmm... yo te conozco. Eres de los nuevos reclutas de Aribeth, ¿verdad? Lo siento, pero ésta es la cofradía de lanzadores de conjuros. No te va a interesar.~ [NWELT050]
 @1 = ~Necesito algunos materiales para lanzar conjuros.~
-@2 = ~AdiÃ³s, pues.~
-@3 = ~SÃ­, esto serÃ¡ suficiente. Ven, echemos un vistazo a lo que tenemos para ofrecerte, Â¿de acuerdo?~
-@4 = ~I wish you a good <DAYNIGHT>, <SIRMAAM>. Please come back again.~/*Feliz <DAYNIGHTALL>, seÃ±or. Por favor, vuelve por aquÃ­.*/
-@5 = ~Bien, hola, <CHARNAME>. HabÃ­a oÃ­do que habÃ­a un nuevo adepto de la magia al servicio de la ciudad. El gremio del Manto de Milestrellas te da la bienvenida.~ [NWELT052]
-@6 = ~Â¿QuÃ© clase de gremio es Ã©ste?~
-@7 = ~Me gustarÃ­a unirme al gremio.~
-@8 = ~I didn't give my name, how do you know it?~ /*MÃ­ no decir mi nombre. Â¿CÃ³mo saber tÃº?*/
+@2 = ~Adiós, pues.~
+@3 = ~Sí, esto será suficiente. Ven, echemos un vistazo a lo que tenemos para ofrecerte, ¿de acuerdo?~
+@4 = ~I wish you a good <DAYNIGHT>, <SIRMAAM>. Please come back again.~/*Feliz <DAYNIGHTALL>, señor. Por favor, vuelve por aquí.*/
+@5 = ~Bien, hola, <CHARNAME>. Había oído que había un nuevo adepto de la magia al servicio de la ciudad. El gremio del Manto de Milestrellas te da la bienvenida.~ [NWELT052]
+@6 = ~¿Qué clase de gremio es éste?~
+@7 = ~Me gustaría unirme al gremio.~
+@8 = ~I didn't give my name, how do you know it?~ /*Mí no decir mi nombre. ¿Cómo saber tú?*/
 @9 = ~Debo seguir mi camino.~
-@10 = ~CreÃ­a que resultarÃ­a obvio. Dentro de esta torre se guarda toda la experiencia que Noyvern atesora en el arte y la disciplina de la magia. Somos el Manto de Milestrellas, y nuestro objetivo es llevar a cada estudiante de magia hasta su mÃ¡ximo potencial. Damos acceso a nuestro inventario mÃ¡gico, asÃ­ como paso libre por toda la Mantorre. Â¿Te interesa ingresar en nuestro gremio?~ 
-@11 = ~Bien, estoy encantada de oÃ­r esto. Pero antes de que puedas entrar en el gremio, tendrÃ¡s que mostrar tu competencia en varias capacidades importantes. Para tu primera prueba, necesito que me demuestres que eres capaz de hallar conocimiento por tu cuenta, y despuÃ©s aplicarlo a casos independientes. Para echarte una mano, te dirÃ© dÃ³nde empezar. Encuentra los cuatro objetos siguientes, y una vez lo hayas hecho, trÃ¡emelos.~ 
-@12 = ~Bueno, si *Ã©sta* es la mayor de tus inquietudes, vamos a tener una conversaciÃ³n interesante. De eso estoy segura.~
-@13 = ~Bueno, nada mÃ¡s lejos de mi intenciÃ³n que apartarte de tus deberes. Vuelve a visitarnos cuando nos necesites. Hasta la vista.~
-@14 = ~Los cuatro objetos que debes encontrar son: un puÃ±ado de arcilla, un frasco de agua, un soplo de niebla y unas astillas para prender. FÃ­jate bien en el orden. Los objetos pueden encontrarse en los laboratorios arcanos del Manto de Milestrellas, que se encuentran a lo largo de la ciudad. Los edificios estÃ¡n marcados con relojes de sol. Ten esta llave. Ten cuidado, ya que los laboratorios estÃ¡n protegidos contra los aspirantes a iniciados. Vuelve conmigo cuando tengas los cuatro objetos.~ 
+@10 = ~Creía que resultaría obvio. Dentro de esta torre se guarda toda la experiencia que Noyvern atesora en el arte y la disciplina de la magia. Somos el Manto de Milestrellas, y nuestro objetivo es llevar a cada estudiante de magia hasta su máximo potencial. Damos acceso a nuestro inventario mágico, así como paso libre por toda la Mantorre. ¿Te interesa ingresar en nuestro gremio?~ 
+@11 = ~Bien, estoy encantada de oír esto. Pero antes de que puedas entrar en el gremio, tendrás que mostrar tu competencia en varias capacidades importantes. Para tu primera prueba, necesito que me demuestres que eres capaz de hallar conocimiento por tu cuenta, y después aplicarlo a casos independientes. Para echarte una mano, te diré dónde empezar. Encuentra los cuatro objetos siguientes, y una vez lo hayas hecho, tráemelos.~ 
+@12 = ~Bueno, si *ésta* es la mayor de tus inquietudes, vamos a tener una conversación interesante. De eso estoy segura.~
+@13 = ~Bueno, nada más lejos de mi intención que apartarte de tus deberes. Vuelve a visitarnos cuando nos necesites. Hasta la vista.~
+@14 = ~Los cuatro objetos que debes encontrar son: un puñado de arcilla, un frasco de agua, un soplo de niebla y unas astillas para prender. Fíjate bien en el orden. Los objetos pueden encontrarse en los laboratorios arcanos del Manto de Milestrellas, que se encuentran a lo largo de la ciudad. Los edificios están marcados con relojes de sol. Ten esta llave. Ten cuidado, ya que los laboratorios están protegidos contra los aspirantes a iniciados. Vuelve conmigo cuando tengas los cuatro objetos.~ 
 
-@16 = ~Hola, <CHARNAME>. Â¿Vamos con nuestra siguiente tanda de desafÃ­os? Â¿O tenemos pensado algo mejor?~ [NWELT051]
+@16 = ~Hola, <CHARNAME>. ¿Vamos con nuestra siguiente tanda de desafíos? ¿O tenemos pensado algo mejor?~ [NWELT051]
 @17 = ~Ponme a prueba para ser miembro del gremio.~
-@18 = ~Se te enviÃ³ a por cuatro reactivos y ya los tienes. Bien hecho. Ahora te enfrentarÃ¡s a una prueba de mente y cuerpo.~
-@19 = ~You will be teleported to a room where you will need to destroy one of my mechanisms. You will find the tools there, it will make your task easier. Use the knowledge from my first task and this test will be simple, but if you leave before the automaton is destroyed, you have failed. Are you ready? When you're ready, tell me about it, I'll teleport you to the testing room.~ /*SerÃ¡s teleportado a una sala donde debes destruir a uno de mis autÃ³matas. AllÃ­ encontrarÃ¡s herramientas que simplificarÃ¡n tu tarea. Emplea el conocimiento de mi primera tarea y esta prueba serÃ¡ fÃ¡cil, pero si te vas antes de haber destruido al autÃ³mata, habrÃ¡s fracasado. Â¿Listo? Â¡No me tomes el pelo! HÃ¡blame de tu cliente o cÃ¡llate de una vez!*/
+@18 = ~Se te envió a por cuatro reactivos y ya los tienes. Bien hecho. Ahora te enfrentarás a una prueba de mente y cuerpo.~
+@19 = ~You will be teleported to a room where you will need to destroy one of my mechanisms. You will find the tools there, it will make your task easier. Use the knowledge from my first task and this test will be simple, but if you leave before the automaton is destroyed, you have failed. Are you ready? When you're ready, tell me about it, I'll teleport you to the testing room.~ /*Serás teleportado a una sala donde debes destruir a uno de mis autómatas. Allí encontrarás herramientas que simplificarán tu tarea. Emplea el conocimiento de mi primera tarea y esta prueba será fácil, pero si te vas antes de haber destruido al autómata, habrás fracasado. ¿Listo? ¡No me tomes el pelo! Háblame de tu cliente o cállate de una vez!*/
 @20 = ~Sea.~
 
 @22 = ~No.~
-@23 = ~You have to test the body and mind. You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task. If you leave without destroying the mechanism, it will be counted as a failure. Ready?~ /*Has abandonado el grupo. SerÃ¡s teleportado a una sala donde debes destruir a uno de mis autÃ³matas. AllÃ­ encontrarÃ¡s herramientas que simplificarÃ¡n tu tarea. No has destruido al gÃ³lem en mi segundo desafÃ­o. Preparado.*/
-@24 = ~Se te enviÃ³ a por cuatro reactivos y no los tienes. Vuelve cuando los tengas. Los cuatro objetos que debes encontrar son: un puÃ±ado de arcilla, un frasco de agua, un soplo de niebla y unas astillas para prender. FÃ­jate bien en el orden.~ 
-@25 = ~Has intentado destruir al autÃ³mata y has fracasado. Hay una penalizaciÃ³n por fallar, pero es mÃ¡s un gesto simbÃ³lico por tu intento de continuar. Si quieres hacer la prueba otra vez, la penalizaciÃ³n aligerarÃ¡ tu bolsa. Una "donaciÃ³n" de 200 de oro al gremio serÃ¡ suficiente.~ 
-@26 = ~AquÃ­ tienes mis 200 de oro. DÃ©jame hacer la prueba otra vez.~
+@23 = ~You have to test the body and mind. You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task. If you leave without destroying the mechanism, it will be counted as a failure. Ready?~ /*Has abandonado el grupo. Serás teleportado a una sala donde debes destruir a uno de mis autómatas. Allí encontrarás herramientas que simplificarán tu tarea. No has destruido al gólem en mi segundo desafío. Preparado.*/
+@24 = ~Se te envió a por cuatro reactivos y no los tienes. Vuelve cuando los tengas. Los cuatro objetos que debes encontrar son: un puñado de arcilla, un frasco de agua, un soplo de niebla y unas astillas para prender. Fíjate bien en el orden.~ 
+@25 = ~Has intentado destruir al autómata y has fracasado. Hay una penalización por fallar, pero es más un gesto simbólico por tu intento de continuar. Si quieres hacer la prueba otra vez, la penalización aligerará tu bolsa. Una "donación" de 200 de oro al gremio será suficiente.~ 
+@26 = ~Aquí tienes mis 200 de oro. Déjame hacer la prueba otra vez.~
 @27 = ~I'll try later.~ /*Tirar de la palanca.*/
-@28 = ~Felicidades. Has mostrado tener gran ingenio. Al destruir a mi autÃ³mata te has ganado un puesto en el Manto de Milestrellas. Te obsequio con el sÃ­mbolo de tu gremio. Lleva esta capa con orgullo, sabiendo que el gremio estÃ¡ listo para servir en el futuro.~ 
+@28 = ~Felicidades. Has mostrado tener gran ingenio. Al destruir a mi autómata te has ganado un puesto en el Manto de Milestrellas. Te obsequio con el símbolo de tu gremio. Lleva esta capa con orgullo, sabiendo que el gremio está listo para servir en el futuro.~ 
 
-@30 = ~Entonces regresa cuando lo estÃ©s.~
-@31 = ~You have to test the body and mind. You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task. If you leave without destroying the mechanism, it will be counted as a failure.~/*Has abandonado el grupo. SerÃ¡s teleportado a una sala donde debes destruir a uno de mis autÃ³matas. AllÃ­ encontrarÃ¡s herramientas que simplificarÃ¡n tu tarea. No has destruido al gÃ³lem en mi segundo desafÃ­o.*/
-@32 = ~Bienvenido, cofrade. Â¿QuÃ© se te ofrece?~ [NWELT053]
-@33 = ~Â¿TenÃ©is algÃºn equipo especial a disposiciÃ³n de los miembros del gremio?~
-@34 = ~Yes, there is special equipment for sale for guild members. Here, take a look.~ /*Â¿TenÃ©is algÃºn equipo especial a disposiciÃ³n de los miembros del gremio? EcharÃ© un vistazo.*/
+@30 = ~Entonces regresa cuando lo estés.~
+@31 = ~You have to test the body and mind. You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task. If you leave without destroying the mechanism, it will be counted as a failure.~/*Has abandonado el grupo. Serás teleportado a una sala donde debes destruir a uno de mis autómatas. Allí encontrarás herramientas que simplificarán tu tarea. No has destruido al gólem en mi segundo desafío.*/
+@32 = ~Bienvenido, cofrade. ¿Qué se te ofrece?~ [NWELT053]
+@33 = ~¿Tenéis algún equipo especial a disposición de los miembros del gremio?~
+@34 = ~Yes, there is special equipment for sale for guild members. Here, take a look.~ /*¿Tenéis algún equipo especial a disposición de los miembros del gremio? Echaré un vistazo.*/
 @35 = ~Congratulations. You have shown great ingenuity. By destroying my automaton you have earned a place in the Many-Starred Cloak. I give you the symbol of the guild. Wear this cloak with pride and know that the guild will be ready to help you from now on. You can also use the laboratory on the top floor of the tower.~ 
-/*Felicidades. Has mostrado tener gran ingenio. Al destruir a mi autÃ³mata te has ganado un puesto en el Manto de Milestrellas. Te obsequio con el sÃ­mbolo de tu gremio. Lleva esta capa con orgullo, sabiendo que el gremio estÃ¡ listo para servir en el futuro. Solo puedes utilizar esta aptitud con tu arma escogida.*/
+/*Felicidades. Has mostrado tener gran ingenio. Al destruir a mi autómata te has ganado un puesto en el Manto de Milestrellas. Te obsequio con el símbolo de tu gremio. Lleva esta capa con orgullo, sabiendo que el gremio está listo para servir en el futuro. Solo puedes utilizar esta aptitud con tu arma escogida.*/
