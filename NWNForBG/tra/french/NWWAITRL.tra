@@ -1,12 +1,13 @@
-@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~
-@1 = ~Who are you?~
-@2 = ~May I ask you some questions?~
-@3 = ~All right, I'm gonna go.~
-@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~
-@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~
-@6 = ~Enjoy your time in our establishment.~
-@7 = ~Please enjoy your stay here, <LADYLORD>.~
-@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~
-@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~
-@10 = ~If you want to order something, talk to the bartender.~
+@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~/*Eh bien, quest-ce que vous voulez ? Si vous aviez assez dhommes pour cela, vous nauriez pas besoin de moi.*/
+@1 = ~Qui êtes-vous ?~
+@2 = ~Je peux vous poser quelques questions ?~
+@3 = ~All right, I'm gonna go.~/*Très bien, je suis parti*/
+@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~/*Moi juste vouloir oreille. Je sers mon dieu. Je voudrais vous demander autre chose.*/
+@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~/*S'il vous plaît. Je suis sûr que cela me sera d'un grand secours. Si vous avez des questions, posez-les. Sinon, laissez-moi travailler.*/
+@6 = ~Enjoy your time in our establishment.~/*Votre devoir vous lie à moi, pensez-y.*/
+@7 = ~Please enjoy your stay here, <LADYLORD>.~/*Il ta eu sur ce coup-là, <CHARNAME>.*/
+@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~/*Toute l'aide ne devrait-elle pas être la bienvenue ? Eh bien... il y a cette dryade enfermée dans une cage...*/
+@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~/*Laisse-la tranquille, Xanos. Vous devez soit ouvrir le magasin avec ce tag soi indiquer à l'utilisateur qu'aucun magasin n'existe.*/
+@10 = ~If you want to order something, talk to the bartender.~/*Je veux en savoir un peu plus sur votre frère.*/
 @11 = ~That elf over there, I think his name is Elaith, is looking at me strangely, I'm afraid of him.~
+/*Pas idiot ça, moi dire. Toi peut-être OK, alors.*/

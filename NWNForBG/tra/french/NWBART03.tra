@@ -1,5 +1,6 @@
-@0 = ~Be polite with guests. Everyone comes here to relax. So, do you want a drink?~ 
-@1 = ~Yep.~
-@2 = ~No.~
-@3 = ~Be careful not to drink too much. You don't want to stumble around Luskan without thinking. So, do you want a drink?~ 
+@0 = ~Be polite with guests. Everyone comes here to relax. So, do you want a drink?~ /*Moi fini questions. Venez ici et causons. Pourquoi voulez-vous une femme ?*/
+@1 = ~Ouaip.~
+@2 = ~Non.~
+@3 = ~Be careful not to drink too much. You don't want to stumble around Luskan without thinking. So, do you want a drink?~ /*[Hic !] Je bois trop ! C'est pas une bonne idée de me chauffer. Pourquoi voulez-vous une femme ?*/
 @4 = ~As long as you're ready to buy, you're welcome here. So, do you want a drink?~
+/*Vous n'êtes plus le bienvenu ici. Pourquoi voulez-vous une femme ?*/

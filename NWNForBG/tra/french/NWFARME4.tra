@@ -1,7 +1,8 @@
-@0 = ~You'd better talk to my husband if you want to find out what's going on around here.~
-@1 = ~You must be travelers, right? When I was young, I wanted to be a traveler so badly.~ 
-@2 = ~My sister should have arrived from Luskan a few days ago. I hope she'll be here soon.~ 
-@3 = ~I'd give you a couple cooking lessons, but tramps like you don't stay in one place long.~ 
-@4 = ~Oh! You frightened me. I'm not used to meeting strangers, because traveling is dangerous these days.~ 
-@5 = ~I hope the weather turns soon. Without a good harvest, we'll have a hard time.~ 
+@0 = ~You'd better talk to my husband if you want to find out what's going on around here.~/*Vous feriez mieux de parler à Pierre, mon époux. Il est probablement dehors en train de surveiller son troupeau.*/
+@1 = ~You must be travelers, right? When I was young, I wanted to be a traveler so badly.~ /*Insinuez-vous qu'il y a encore des orques à chasser ? Pourquoi avez-vous tant besoin de cette amulette ?*/
+@2 = ~My sister should have arrived from Luskan a few days ago. I hope she'll be here soon.~ /*Moi aurais tué lui, si être vous. Tout sera bientôt terminé.*/
+@3 = ~I'd give you a couple cooking lessons, but tramps like you don't stay in one place long.~ /*Je veux bien répondre à une ou deux questions.. si ça ne prend pas trop de temps.*/
+@4 = ~Oh! You frightened me. I'm not used to meeting strangers, because traveling is dangerous these days.~ /*Ah ! Effrayé Je ne dois pas parler aux étrangers. C'est Luce qui me l'a dit.*/
+@5 = ~I hope the weather turns soon. Without a good harvest, we'll have a hard time.~ /*J'ai d'autres questions. Au revoir. Peut-être pourrons-nous parler une autre fois.*/
 @6 = ~I like the look of you, but my husband's coming over soon, so I'm sorry.~ 
+/*J'aimerais vous poser des questions à propos de cette compétition.*/

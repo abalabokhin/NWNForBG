@@ -1,7 +1,7 @@
-@0 = ~I'm sorry sir, I don't have time to talk.~ 
-@1 = ~Nice to see people of quality in our town. Welcome to Port Llast!~
-@2 = ~Oh, adventurers! There are too many of them in Port Llast.~ 
-@3 = ~Don't bother me, I don't have time to talk.~ 
-@4 = ~People say everyone in Neverwinter is dead!~ 
-@5 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ 
-@6 = ~Go wash up, son. You've got the smell of the sea on you.~
+@0 = ~I'm sorry sir, I don't have time to talk.~ /*Navré mais je n'ai pas le temps pour l'instant.*/
+@1 = ~C'est un plaisir de voir des personnes de qualité dans notre ville. Bienvenue à Port Llast !~
+@2 = ~Oh, adventurers! There are too many of them in Port Llast.~ /*aventurier Il y a des loups-garous à Port Llast ?*/
+@3 = ~Don't bother me, I don't have time to talk.~ /*Navré mais je n'ai pas le temps pour l'instant.*/
+@4 = ~People say everyone in Neverwinter is dead!~ /*Moi dire maître à vous mort.*/
+@5 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ /*Vous êtes de Padhiver? Vous avez contracté le fléau?*/
+@6 = ~Va te laver, fiston. Tu es imprégné de l'odeur de la mer.~

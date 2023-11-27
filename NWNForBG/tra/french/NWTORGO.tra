@@ -1,10 +1,11 @@
-@0 = ~What can I get you?~
-@1 = ~I need a Pass Coin.~
-@2 = ~Let me see your wares.~
-@3 = ~Goodbye.~
-@4 = ~The Pass costs 200 gold pieces. Since you have received permission from Ophala, all that remains is to pay.~
-@5 = ~Here's 200 gold.~
-@6 = ~It's too much, I don't have that much gold~
-@7 = ~The Pass costs 200 gold. But first you need to talk to Ophala and get the permission.~
-@8 = ~All right, here's the Pass. When you get upstairs, just give this to the companion of your choice.~
+@0 = ~Que puis-je vous proposer ?~
+@1 = ~J'ai besoin d'un jeton de passe.~
+@2 = ~Montrez-moi ce que vous avez.~
+@3 = ~Au revoir.~
+@4 = ~The Pass costs 200 gold pieces. Since you have received permission from Ophala, all that remains is to pay.~/*Tenez... prenez cette pièce d'or. C'est que vous avez entrevu une possibilité qui a échappé à Kel-Garas.*/
+@5 = ~Voilà 200 pièces d'or.~
+@6 = ~It's too much, I don't have that much gold~/*Je nai pas assez.*/
+@7 = ~The Pass costs 200 gold. But first you need to talk to Ophala and get the permission.~/*Voilà 200 pièces d'or. C'est tout ce que j'ai besoin de savoir au sujet de la prison.*/
+@8 = ~Très bien, voici l'anneau. En arrivant en haut, donnez ça à la compagne que vous aurez choisie.~
 @9 = ~Well, the boys and girls will be waiting for you when you can afford it. They're well worth the price.~
+/*Eh bien, les filles seront prêtes pour vous lorsque vous aurez de quoi venir les voir. Elles valent bien ce prix.*/

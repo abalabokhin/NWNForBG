@@ -1,6 +1,7 @@
-@0 = ~I serve Lord Nasher and Lady Aribeth.~ 
-@1 = ~Look, I'm busy, okay?~
-@2 = ~We need to train, don't interfere.~ 
-@3 = ~I don't recognize you, are you new?~ 
-@4 = ~*Sigh* Business has been a little *too* busy since the plague hit, you know what I mean... ?~ 
+@0 = ~I serve Lord Nasher and Lady Aribeth.~ /*Où puis-je trouver Dame Aribeth ?*/
+@1 = ~Ecoutez, je suis occupé, compris ?~
+@2 = ~We need to train, don't interfere.~ /*Il faut que nous parlions argent.*/
+@3 = ~I don't recognize you, are you new?~ /*Je préfère ne pas vous répondre.*/
+@4 = ~**soupir** Les affaires marchent un *peu* trop bien depuis le début de l'épidémie, vous voyez ce que je veux dire... ?~ 
 @5 = ~If you have any business, speak to Lady Aribeth.~
+/*Pourquoi vous intéressez-vous tant à dame Aribeth ?*/

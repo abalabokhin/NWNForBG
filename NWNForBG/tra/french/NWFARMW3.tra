@@ -1,9 +1,10 @@
-@0 = ~We've got guests here, hon. Go make yourself presentable.~
-@1 = ~Don't you be pesterin' the likes of me, now.~
-@2 = ~Nice to see people of quality in our town. Welcome to Port Llast!~
-@3 = ~Oh, adventurers! There are too many of them in Port Llast.~ 
-@4 = ~Don't bother me, I don't have time to talk.~ 
-@5 = ~People say everyone in Neverwinter is dead!~
-@6 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ 
-@7 = ~And you'll make a perfectly presentable spinster someday, too, so go put on a nice blouse.~
+@0 = ~Chérie, nous avons des invités. Va te rendre présentable.~
+@1 = ~Pourriez-vous éviter de m'importuner ?~
+@2 = ~C'est un plaisir de voir des personnes de qualité dans notre ville. Bienvenue à Port Llast !~
+@3 = ~Oh, adventurers! There are too many of them in Port Llast.~ /*aventurier Il y a des loups-garous à Port Llast ?*/
+@4 = ~Don't bother me, I don't have time to talk.~ /*Navré mais je n'ai pas le temps pour l'instant.*/
+@5 = ~People say everyone in Neverwinter is dead!~/*Moi dire maître à vous mort.*/
+@6 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ /*Vous êtes de Padhiver? Vous avez contracté le fléau?*/
+@7 = ~Et tu feras une vieille fille parfaitement présentable un de ces jours, alors va enfiler une belle blouse.~
 @8 = ~I'm sorry, but my daughter is completely out of hand. It's nice to see first-class people in our city. Welcome to Port Llast!~ 
+/*Navré mais je n'ai pas le temps pour l'instant. C'est un plaisir de voir des personnes de qualité dans notre ville. Bienvenue à Port Llast !*/

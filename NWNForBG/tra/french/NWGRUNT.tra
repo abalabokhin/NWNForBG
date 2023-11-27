@@ -1,5 +1,6 @@
-@0 = ~Do you want to plant the seeds of the Ultarg tree?~ 
-@1 = ~Yes~
-@2 = ~No~
-@3 = ~The seeds have been planted.~ 
+@0 = ~Do you want to plant the seeds of the Ultarg tree?~ /*Voulez-vous mettre à jour votre personnage local ?*/
+@1 = ~Oui~
+@2 = ~Non~
+@3 = ~The seeds have been planted.~ /*La mise à jour a été annulée*/
 @4 = ~You have not planted the seeds of the Ultarg tree.~
+/*Vous avez gagné le titre de  le .*/
