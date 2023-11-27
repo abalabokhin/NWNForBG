@@ -1,13 +1,14 @@
 // FTOBE2 translation file from BG1
-@1 = ~Ahh! By what right are ye in mine house?!~
-@2 = ~I am sorry for intruding, but I was just wondering what you were doing.~
-@3 = ~Save your breath, I mean you no harm.~
-@4 = ~By right of might! I would suggest that you cooperate while I help myself to your valuables.~
-@5 = ~My apologies! I must have the wrong address. I will leave immediately.~
-@6 = ~What I am doing be no concern of yours! Leave at once, lest I call the guards!~
-@7 = ~Then leave me and mine! You were not invited to my home so get out!~
-@8 = ~I can do naught to stop you, but I can call those who can. Leave now, lest the guard dispatch you.~
-@9 = ~And well you should! If my husband were to catch you here, it would surely be the end of you!~
-@10 = ~I'm a simple town girl, and I don't think anything I know would be of any use to mighty adventurers.~
-@11 = ~I told you before. I don't want you here! Now git!~
+@1 = ~Ahh! By what right are ye in mine house?!~/*Aaach! A w co dok³adnie siê wmieszalimy?*/
+@2 = ~I am sorry for intruding, but I was just wondering what you were doing.~/*Wspó³czujê ci, ale odpowiedzia³<e/a>m poprawnie.*/
+@3 = ~Save your breath, I mean you no harm.~/*Dobra, uspokój siê. Nie zrobiê ci krzywdy.*/
+@4 = ~By right of might! I would suggest that you cooperate while I help myself to your valuables.~/*Znikajmy z widoku! Jestem zaszczycony, mo¿liwoci¹ do³¹czenia do ciebie w tej chwalebnej misji.*/
+@5 = ~My apologies! I must have the wrong address. I will leave immediately.~/*Archeolog Muszê ostrzec innych! Natychmiast potrzebujê uzdrowiciela.*/
+@6 = ~What I am doing be no concern of yours! Leave at once, lest I call the guards!~/*Co ja robiæ, nie obchodziæ twoja. Leczenie! Trzeba wyleczy rany!*/
+@7 = ~Then leave me and mine! You were not invited to my home so get out!~/*Zostaw mnie w spokoju! Nie zosta³<e/a> zaproszon<y/a>! Wyno siê!*/
+@8 = ~I can do naught to stop you, but I can call those who can. Leave now, lest the guard dispatch you.~/*Nie mogê tego od ciebie wzi¹æ... Proszê... oto poro¿e. Daj tera a ja sobie pójæ.*/
+@9 = ~And well you should! If my husband were to catch you here, it would surely be the end of you!~/*No i to w³anie powiniene zrobiæ. Gdybym siê ciebie spodziewa³a, zamknê³abym drzwi!*/
+@10 = ~I'm a simple town girl, and I don't think anything I know would be of any use to mighty adventurers.~/*Jestem przekonany, ¿e nasze pojêcia tego, co mo¿na uznaæ za *interesuj¹ce* bardzo siê rozmijaj¹.*/
+@11 = ~I told you before. I don't want you here! Now git!~/*Ja ci pomóc znaleæ ksiêga. Nie chcê umieraæ. Staæ!*/
 @12 = ~You've outstayed your welcome!~
+/*Nie ma za co.*/

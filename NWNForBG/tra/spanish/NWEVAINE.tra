@@ -1,44 +1,44 @@
-@0 = ~You... aren't one of Kurth's soldiers, are you? You don't seem like the type.~
-@1 = ~Are you a prisoner here?~
-@2 = ~Stand back! I'll have no tricks out of you!~
-@3 = ~Of course I'm not one of Kurth's soldiers.~
-@4 = ~Yes I am. My name is Evaine, and Kurth has held me here by force since he took me from my home more than a week ago. Does this mean... you would free me from this cell, my <LADYLORD>?~
-@5 = ~How do I know you're actually a prisoner, that this isn't some ruse?~
-@6 = ~Just how did you end up here?~
-@7 = ~What reward would I get for letting you go?~
-@8 = ~Would you be able to find your way out on your own?~
-@9 = ~I'm not here to rescue you.~
-@10 = ~I don't have any weapons, my <LADYLORD>... and the magical wards on the door prevented me from casting spells. Please, my name is Evaine... Kurth has been keeping me here against my will. Could you not release me from here?~
-@11 = ~That... that is quite a relief! My name is Evaine, my <LADYLORD>. Kurth has been keeping me here since he stole me from my brother's home weeks ago. I never thought anyone would come!~
-@12 = ~I... am certainly no threat to you, and I've no reason to lie. All I want is to get out of this horrid place and for Kurth to leave my brother and I in peace. Please, my <LADYLORD>... could you not release me from this cell?~
-@13 = ~I don't trust you. Time to die!~
-@14 = ~Kurth and his men raided my brother's home weeks ago, where I was staying. They took most of his wealth and burned everything. Then... then Kurth decided he would take me, as well, for his own. My brother pleaded for Kurth to let me go, but Kurth just laughed in his face. He said he would keep me for his... his pleasure... if he wanted to. That fiend said he would kill my brother if I tried to use my magic to teleport away. I've been... trapped here, forced to do his bidding... ever since...~ 
-@15 = ~I... have no money of my own. My brother, Elynwyd, might be able to reward you if he still lives. I do not know if he is even still in Luskan, however.~
-@16 = ~On your way, then.~
-@17 = ~You're of no use to me, then.~
-@18 = ~I... I have magic that I can leave by, now that the wards on the door are gone... if you allow me to leave, that is...~
-@19 = ~Oh, please, my <LADYLORD>! Please don't leave me in here! I'm begging you! Kurth has... put me through so much, I cannot stand another moment of it! Please let me leave this cell and escape!!~
-@20 = ~Perhaps it's time I put you out of your misery, then.~
-@21 = ~Go, then, I could not care less.~
-@22 = ~Aieee! Help me, someone! Please!!~
-@23 = ~I... can leave, then? Oh, thank the gods! Kurth has been keeping me held here in this cell so I can't use my spells to teleport away. Now that the wards on the door are gone, I can leave on my own... if you'll let me. Thank you for releasing me, my <LADYLORD>! I am very grateful. Please find Elynwyd when you have a chance... I am sure he can reward you.~
-@24 = ~You're Evaine, yes? I am here to rescue you.~
-@25 = ~I'm here to take you away. Don't give me any grief.~
-@26 = ~I'm freeing you, but I'm no babysitter. Can you get out on your own?~
-@27 = ~Just stay there and don't move.~
-@28 = ~Then you... you're here to rescue me?~
-@29 = ~I... I think so, yes. I can use my magic to leave... now that the ward on the door is gone...~
-@30 = ~Then you can go.~
-@31 = ~All... all right... I won't go anywhere...~
-@32 = ~But how do I know that? Kurth keeps testing me... he says he will kill Elynwyd if I even think of teleporting away.~
-@33 = ~Calm down. Just follow me and I'll bring you to Elynwyd, I promise.~
-@34 = ~Stupid woman! If I have to drag you out, you're coming with me!~
-@35 = ~That... that ring. That's Elynwyd's ring! Oh, thank the gods! Kurth has been keeping me held here in this cell so I can't use my spells to teleport away. Now that the wards on the door are gone, I can leave on my own... if you'll let me. Thank you for releasing me, my <LADYLORD>! I am very grateful. Please find Elynwyd when you have a chance... I am sure he can reward you.~ 
-@36 = ~Thank you for releasing me, my <LADYLORD>! I am very grateful. Please find Elynwyd when you have a chance... I am sure he can reward you.~
-@37 = ~Elynwyd sent you? I... I believe you. Perhaps it is all right if I escape, now... thank the gods! Kurth has been keeping me held here in this cell so I can't use my spells to teleport away. Now that the wards on the door are gone, I can leave on my own... if you'll let me. Thank you for releasing me, my <LADYLORD>! I am very grateful. Please find Elynwyd when you have a chance... I am sure he can reward you.~ 
-@38 = ~No, I don't believe you! Leave me alone, I'm too frightened!~
-@39 = ~No, no! Please don't hurt me! Leave me alone, leave me alone!!~
-@40 = ~I'll slit your throat if you don't do as I say! I am not joking!!~
-@41 = ~Aiiee! All... all right, I'm coming! Please don't hurt me!! You... you don't have to take me anywhere, though, my <LADYLORD>! I... I can teleport away, now that the ward is gone from the door. I'll go, now... I hope you're right...~ 
-@42 = ~Please... I just want to get back to Elynwyd!~
-@43 = ~Thank you so much! I thought Kurth would have me as his slave forever! It gives me hope to know there are still heroes in this world.~
+@0 = ~Tú no eres uno de los soldados de Kurth, ¿verdad? No pareces de esa clase.~
+@1 = ~¿Estás prisionero aquí?~
+@2 = ~¡Aléjate de mí! ¡No quiero que me vengas con trucos!~
+@3 = ~Claro que no soy uno de los soldados de Kurth.~
+@4 = ~Sí. Me llamo Evaine, y Kurth me ha retenido aquí por la fuerza desde que me sacó de mi hogar, hace más de una semana. ¿Significa esto... que me sacarás de esta celda, mi señor?~
+@5 = ~¿Cómo puedo saber si eres un prisionero de verdad y que esto no es una trampa?~
+@6 = ~¿Cómo acabaste aquí?~
+@7 = ~¿Qué recompensa obtendría por liberarte?~
+@8 = ~¿Podrás encontrar la salida por tu cuenta?~
+@9 = ~No he venido a rescatarte.~
+@10 = ~No tengo armas, mi señor... y las custodias mágicas de la puerta impiden que lance conjuros. Por favor, me llamo Evaine... Kurth me ha estado reteniendo aquí contra mi voluntad. ¿Me puedes sacar de aquí?~
+@11 = ~¡Eso eso es un verdadero alivio! Me llamo Evaine, mi señor. Kurth me ha tenido aquí desde que hace semanas me raptara de la casa de mi hermano. ¡Nunca pensé que vendría nadie!~
+@12 = ~Yo ciertamente no soy una amenaza, y no tengo razones para mentirte. Todo lo que quiero es salir de este lugar horrible y que Kurth deje en paz a mi hermano. Por favor, mi señor... ¿cómo podrías no liberarme de esta celda?~
+@13 = ~No me fío de ti. ¡Muere!~
+@14 = ~Hace unas semanas, Kurth y sus hombres asaltaron la casa de mi hermano, donde yo vivía. Se llevaron casi todo lo de valor y quemaron lo demás. Luego... luego Kurth decidió que también se quedaría conmigo. Mi hermano suplicó a Kurth que me dejase marchar, pero lo único que éste hizo fue reírse en su cara. Dijo que me retenía... por placer... porque quería. Ese demonio dijo que mataría a mi hermano si intentaba utilizar mi magia para teleportarme fuera de aquí. He estado... atrapada aquí, obligada a hacer su voluntad... desde entonces...~ 
+@15 = ~Yo no tengo dinero. Mi hermano, Elynwyd, podría recompensarte si aún vive. Sin embargo, ni siquiera sé si todavía está en Luskan.~
+@16 = ~Sigue tu camino, pues.~
+@17 = ~Entonces no me sirves de nada.~
+@18 = ~Yo... dispongo de magia para marcharme, ahora que las custodias de la puerta han desaparecido... es decir, si me lo permites...~
+@19 = ~¡Oh, mi señor, por favor! ¡Por favor, no me dejes aquí! ¡Te lo ruego! ¡Kurth me ha hecho sufrir tanto, no puedo resistirlo más! ¡¡Por favor, deja que salga de esta celda y pueda escapar!!~
+@20 = ~Entonces, quizá no deba hacerte esperar más.~
+@21 = ~Vale, vete, me importa un rábano.~
+@22 = ~¡Ayyyyy! ¡Qué alguien me ayude! ¡¡Por favor!!~
+@23 = ~¿Puedo irme? ¡Oh, loados sean los dioses! Kurth me ha estado reteniendo en esta celda para que no pudiera usar mis conjuros y me teleportara. Ahora que han desaparecido las custodias de la puerta, puedo marcharme... si me lo permites. ¡Gracias por liberarme, mi señor! Te estoy muy agradecida. Por favor, busca a Elynwyd cuando tengas ocasión... estoy segura de que podrá recompensarte.~
+@24 = ~Eres Evaine, ¿verdad? He venido a rescatarte.~
+@25 = ~He venido a sacarte. No me des problemas.~
+@26 = ~Te estoy liberando, pero no soy ninguna niñera. ¿Puedes salir por tu cuenta?~
+@27 = ~Sólo quédate ahí y no te muevas.~
+@28 = ~¿Es... estás aquí para rescatarme?~
+@29 = ~Me... me parece que sí, sí. Puedo usar mi magia para marcharme... ahora que ha desaparecido la custodia de la puerta...~
+@30 = ~Entonces puedes marcharte.~
+@31 = ~De de acuerdo no iré a ningún sitio...~
+@32 = ~Pero, ¿cómo sé yo eso? Kurth sigue probándome... dice que matará a Elynwyd si intento teleportarme.~
+@33 = ~> Cálmate. Sígueme y te llevaré hasta Elynwyd, te lo prometo.~
+@34 = ~¡Estúpida mujer! ¡Vendrás conmigo aunque tenga que arrastrarte!~
+@35 = ~Ese... ese anillo. ¡Es el anillo de Elynwyd! ¡Oh, gracias a los dioses! Kurth me ha estado reteniendo en esta celda para que no pudiera usar mis conjuros y me teleportara. Ahora que han desaparecido las custodias de la puerta, puedo marcharme... si me lo permites. ¡Gracias por liberarme, mi señor! Te estoy muy agradecida. Por favor, busca a Elynwyd cuando tengas ocasión... estoy segura de que podrá recompensarte.~ 
+@36 = ~¡Gracias por liberarme, mi señor! Te estoy muy agradecida. Por favor, busca a Elynwyd cuando tengas ocasión... estoy segura de que podrá recompensarte.~
+@37 = ~¿Te envía Elynwyd? Te... te creo. Tal vez convenga que me escape ahora... ¡gracias a los dioses! Kurth me ha estado reteniendo en esta celda para que no pudiera usar mis conjuros y me teleportara. Ahora que han desaparecido las custodias de la puerta, puedo marcharme... si me lo permites. ¡Gracias por liberarme, mi señor! Te estoy muy agradecida. Por favor, busca a Elynwyd cuando tengas ocasión... estoy segura de que podrá recompensarte.~ 
+@38 = ~No, ¡no te creo! ¡Déjame en paz, tengo demasiado miedo!~
+@39 = ~¡No, no! ¡Por favor, no me hagas daño! ¡Déjame en paz, déjame en paz!~
+@40 = ~¡Te rebanaré el cuello si no haces lo que te digo! ¡No estoy bromeando!~
+@41 = ~¡Ahhh! De... de acuerdo, ¡ya voy! ¡Por favor, no me hagas daño! ¡No obstante, no... no tienes que llevarme a ningún sitio, mi señor! Ahora que la custodia ha desaparecido de la puerta, puedo... puedo teleportarme. Me marcho ya... espero que estés bien...~ 
+@42 = ~Por favor ¡sólo quiero volver con Elynwyd!~
+@43 = ~¡Muchísimas gracias! ¡Pensé que Kurth me tendría como su esclava para siempre! Me da esperanza saber que aún quedan héroes en el mundo.~

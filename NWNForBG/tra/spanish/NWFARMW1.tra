@@ -1,7 +1,7 @@
-@0 = ~I'm sorry sir, I don't have time to talk.~ 
-@1 = ~Nice to see people of quality in our town. Welcome to Port Llast!~
-@2 = ~Oh, adventurers! There are too many of them in Port Llast.~ 
-@3 = ~Don't bother me, I don't have time to talk.~ 
-@4 = ~People say everyone in Neverwinter is dead!~ 
-@5 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ 
-@6 = ~Go wash up, son. You've got the smell of the sea on you.~
+@0 = ~I'm sorry sir, I don't have time to talk.~ /*Lo siento, pero ahora mismo no tengo tiempo.*/
+@1 = ~Me alegro de ver a gente de calidad en nuestra ciudad. ¡Bienvenido a Puerto Final!~
+@2 = ~Oh, adventurers! There are too many of them in Port Llast.~ /*aventurero ¿Hay hombres-lobo en Puerto Final?*/
+@3 = ~Don't bother me, I don't have time to talk.~ /*Lo siento, pero ahora mismo no tengo tiempo.*/
+@4 = ~People say everyone in Neverwinter is dead!~ /*Yo decir que tu amo muerto.*/
+@5 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ /*¿No eres de Noyvern? ¿Tienes la plaga?*/
+@6 = ~Ve a lavarte, hijo. Hueles a pescado podrido.~

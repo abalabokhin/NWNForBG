@@ -1,10 +1,11 @@
-@0 = ~This camp is a mess! Uthgardt savages up on the plateau and morons wandering the streets. Uh... not you though, <CHARNAME>.~ 
-@1 = ~You may not be the swiftest soldier in the camp, <CHARNAME>, but you sure know how to get the job done.~
-@2 = ~Hey, the camp is safe. No need to wave your weapons about here. Save that for the battle front.~
-@3 = ~Looks like you're ready to head out in search of the traitor Aribeth - you're armed and everything!~
-@4 = ~You may be a famous hero and all, <CHARNAME>, but you don't need to walk around camp with your weapon drawn all the time!~
-@5 = ~I didn't expect to see another <RACE> face in these parts - especially not one as famous as yours, <CHARNAME>.~ 
-@6 = ~Gend must be paying you guys a fortune, <CHARNAME>. I heard you <RACE> heroes don't work cheap.~
-@7 = ~I know we need all the help we can get, but I don't trust them Uthgardt up on the plateau.~
-@8 = ~Nothing like a pretty lady to remind us soldiers what we're fighting for before we ship off to the front.~
+@0 = ~Questo accampamento è un bordello! Selvaggi Uthgardt sull'altopiano e imbecilli in giro per le strade. Ehm... presenti esclusi, <CHARNAME>.~ 
+@1 = ~Non sarai forse il soldato più furbo dell'accampamento, <CHARNAME>, ma sai di sicuro come fare il tuo lavoro.~
+@2 = ~Ehi, l'accampamento è sicuro. Qui non c'è bisogno di agitare le armi. Risparmia le tue energie per la battaglia al fronte.~
+@3 = ~Pare proprio che tu sia pronto a dare la caccia alla traditrice Aribeth, sei armato fino ai denti!~
+@4 = ~Sarai anche un famoso eroe, <CHARNAME>, ma non vedo la necessità di andare tutto il giorno in giro per l'accampamento con le armi sguainate!~
+@5 = ~Non mi aspettavo di vedere un'altra faccia da <RACE> da queste parti, specialmente non una famosa come la tua, <CHARNAME>.~ 
+@6 = ~Gend deve proprio pagarli bene i tipi come te, <CHARNAME>. Ho sentito dire che voi eroi del popolo <RACE> non vi accontentate di poco.~
+@7 = ~Lo so che abbiamo bisogno di tutto l'aiuto possibile, ma non mi fido degli Uthgardt dell'altopiano.~
+@8 = ~Non c'è niente di meglio di una graziosa signorinella per ricordare a noi soldati per cosa stiamo combattendo prima che ci mandino al fronte.~
 @9 = ~You're here to save us all from that big, bad Luskan army, aren't you?~ 
+/*Per essere una guardia non sei esattamente sveglio, vero?*/

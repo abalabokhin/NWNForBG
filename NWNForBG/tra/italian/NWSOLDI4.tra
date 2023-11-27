@@ -1,9 +1,10 @@
-@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~
-@1 = ~Who's your superior?~
-@2 = ~If these are barracks, then where are the soldiers?~
-@3 = ~Fine, I'll go.~
-@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~
-@5 = ~Since you're a mercenary. That mean you're for hire?~
-@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~
-@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~
+@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~/*Ho bisogno di un guaritore subito. Questa porta non è stata creata per te...*/
+@1 = ~Who's your superior?~/*Chi tu serve?*/
+@2 = ~If these are barracks, then where are the soldiers?~/*Ne ho trovati tre. Ecco i loro anelli.*/
+@3 = ~Va bene, vado.~
+@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~/*Sono pronto per le prove della fede. Chi sono io? Chi è me? Nemmeno l'albero sa il perché. Io andare, allora. Ciao.*/
+@5 = ~Since you're a mercenary. That mean you're for hire?~/*Sei un mercenario. Significa che ti si può assoldare?*/
+@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~/*Cosa tu pulisce? Certo, certo. Chi sei? E cosa stai facendo per strada? Ho la verga.*/
+@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~/*Sono pronto. > Calmati, non voglio farti alcun male.*/
 @8 = ~Go your own way. You don't belong here.~
+/*Trovatevela da soli. Non puoi dirlo con certezza.*/

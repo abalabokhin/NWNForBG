@@ -1,7 +1,8 @@
 // FTOBE7 translation file from BG1
 
-@1 = ~Who might you be? No, don't answer because I really don't care. You have gone and tracked up my kitchen with nary an invitation, nor even an unlocked door! You better get going, or the only thing worse than the guard coming to take you off, will be if they don't get there in time to save you from me! Out!~
-@2 = ~Shoo!~
-@3 = ~Don't make me break mine foot off in your nethers! Get going!~
-@4 = ~If you want, I could give you an entire course on cooking. But knowing you adventurer types, you won't be around long enough.~
+@1 = ~Who might you be? No, don't answer because I really don't care. You have gone and tracked up my kitchen with nary an invitation, nor even an unlocked door! You better get going, or the only thing worse than the guard coming to take you off, will be if they don't get there in time to save you from me! Out!~/*E tu chi saresti? Io no sa chi è e a me no importa! Hai rifiutato l'invito a unirsi al gruppo da . Sei libero di goderti la tranquillità del mio bosco sacro, se lo desideri. O c'è qualche altra ragione per cui mi stavi cercando?*/
+@2 = ~Shoo!~/*Fermo!*/
+@3 = ~Don't make me break mine foot off in your nethers! Get going!~/*Non costringermi a dover arrivare fin nella tua testa! Punti Ferita*/
+@4 = ~If you want, I could give you an entire course on cooking. But knowing you adventurer types, you won't be around long enough.~/*Se ci tieni alla pelle farai meglio a rispondere alle mie domande! Io so che hai la cura. Ora consegnamela.*/
 @5 = ~You're not welcome here!~
+/*Sono felice di vederti.*/

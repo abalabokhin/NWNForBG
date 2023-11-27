@@ -1,10 +1,11 @@
-@0 = ~This camp is a mess! Uthgardt savages up on the plateau and morons wandering the streets. Uh... not you though, <CHARNAME>.~ 
-@1 = ~You may not be the swiftest soldier in the camp, <CHARNAME>, but you sure know how to get the job done.~
-@2 = ~Hey, the camp is safe. No need to wave your weapons about here. Save that for the battle front.~
-@3 = ~Looks like you're ready to head out in search of the traitor Aribeth - you're armed and everything!~
-@4 = ~You may be a famous hero and all, <CHARNAME>, but you don't need to walk around camp with your weapon drawn all the time!~
-@5 = ~I didn't expect to see another <RACE> face in these parts - especially not one as famous as yours, <CHARNAME>.~ 
-@6 = ~Gend must be paying you guys a fortune, <CHARNAME>. I heard you <RACE> heroes don't work cheap.~
-@7 = ~I know we need all the help we can get, but I don't trust them Uthgardt up on the plateau.~
-@8 = ~Nothing like a pretty lady to remind us soldiers what we're fighting for before we ship off to the front.~
+@0 = ~¡Este campamento es un desbarajuste! Salvajes uthgardt en la meseta y tarados vagando por las calles. Uh... no pensaba en ti, <CHARNAME>.~ 
+@1 = ~Puede que no seas el soldado más listo del campamento, <CHARNAME>, pero seguro que sabes cómo hacer bien un trabajo.~
+@2 = ~Eh, el campamento es seguro. No es necesario que blandas tus armas aquí. Resérvate para el frente.~
+@3 = ~Parece que estás preparado para salir en busca de la traidora Aribeth, ¡vas armado y todo!~
+@4 = ~Puede que seas un héroe famoso y todo eso, <CHARNAME>, ¡pero no es necesario que vayas por el campamento con tu arma desenvainada todo el tiempo!~
+@5 = ~No esperaba encontrar otro <RACE> en este lugar. Especialmente nadie tan famoso como tú, <CHARNAME>.~ 
+@6 = ~Gend debe estar pagando una fortuna por vosotros, <CHARNAME>. He oído que los héroes del pueblo <RACE> no sois baratos.~
+@7 = ~Sé que necesitamos toda la ayuda que podamos conseguir, pero no confío en esos uthgardt de la meseta.~
+@8 = ~Nada como una chica bonita para recodar a los soldados por qué estamos luchando antes de ir al frente.~
 @9 = ~You're here to save us all from that big, bad Luskan army, aren't you?~ 
+/*No eres demasiado listo para ser un guardián, ¿no?*/

@@ -1,13 +1,14 @@
-@0 = ~Greetings of the Even-Handed to you. Welcome to the House of Tyr. I am Reverend Judge Oleff Uskar, in service of the Maimed God.~ [NWOLE052]
-@1 = ~Hello Oleff. Will you answer some questions?~
-@2 = ~Enough chatter. I have questions for you.~
-@3 = ~Goodbye.~
-@4 = ~This Tyrran home welcomes your well-mannered address. Ask what you will, and I shall respond as I am able.~
-@5 = ~What is your position here?~
-@6 = ~What are the tenets of the Tyrran faith?~
-@7 = ~I require temple services. What can you offer?~
-@8 = ~I am bound by Tyr to serve as long as the cause is just, but mind your tone. Disrespect is not tolerated in this place.~
-@9 = ~Tyr guide to you justice.~
-@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~
-@11 = ~There are many aspects to the worship of Tyr. He is the Blind Overlord, the Even-Handed. He is the guardian and governor of justice. The clergy are charged to reveal the truth, punish the guilty, right the wrong, and to always be true and just in their actions. We serve as judges, juries and, should the situation require it, executioners. Justice through benevolent force and armed vigilance.~ 
+@0 = ~Der Unparteiische grüßt Euch. Willkommen im Haus' Tyrs. Ich bin der Ehrwürdige Richter Oleff Uskar, im Dienste des Verkrüppelten Gottes.~ [NWOLE052]
+@1 = ~Hello Oleff. Will you answer some questions?~/*He da! Seid Ihr bereit, weitere Fragen zu beantworten?*/
+@2 = ~Enough chatter. I have questions for you.~/*Genug geredet. Ich habe einige Fragen an Euch.*/
+@3 = ~Gehabt Euch wohl.~
+@4 = ~Dieses Haus Tyrs begrüßt Eure höfliche Anrede. Fragt was Ihr wollt, und ich werde antworten so gut ich kann.~
+@5 = ~Was ist Eure Position hier?~
+@6 = ~Was sind die Lehren des Glaubens an Tyr?~
+@7 = ~Ich benötige die Dienste des Tempels. Was könnt Ihr anbieten?~
+@8 = ~Tyr verpflichtet mich zu dienen, solange die Sache gerecht ist. Aber achtet auf Eure Worte. Respektlosigkeit wird hier nicht toleriert.~
+@9 = ~Möge Tyr Euch zur Gerechtigkeit führen.~
+@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~/*Ich suche einen Kult, der für die Pest in Niewinter verantwortlich ist.*/
+@11 = ~Es gibt viele Aspekte bei der Verehrung von Tyr. Er ist der Blinde, der Unparteiische. Er ist der Wächter und Beherrscher der Gerechtigkeit. Der Klerus hat die Pflicht, die Wahrheit aufzudecken, die Schuldigen zu strafen, das Unrecht auszugleichen, und immer ehrlich und gerecht in seinen Handlungen zu sein. Wir dienen als Richter, Geschworene und, sollte die Situation es erfordern, Henker. Gerechtigkeit durch gütige Strenge und bewaffnete Vorsicht.~ 
 @12 = ~Temple services are available to all who are suffering.~
+/*Ich stehe in Diensten Aribeths und der Stadtwache.*/

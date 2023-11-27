@@ -1,38 +1,38 @@
-@0 = ~Please, <SIRMAAM>! I beg of you, help my sister. Leesa's just a little girl.~ [NWLUC058]
-@1 = ~I will help you, if I can.~
-@2 = ~I have no time for this.~
-@3 = ~I want to ask you some questions.~
-@4 = ~I might help you... if the price is right.~
-@5 = ~Goodbye.~
-@6 = ~Thank you, kind <SIRMAAM>. I'm so worried about Leesa. Before our mother died from the plague I promised her I'd watch out for my sister. When Luskan attacked we tried to sneak out of the city one night, but we couldn't get through. There were Luskan soldiers everywhere. We had to hide while they passed by. We hid for hours, it seemed.~ 
-@7 = ~Why won't anybody help me? She's just a little girl! Please, somebody find her. Please.~
-@8 = ~Please, I have no time for questions. Don't you understand? Leesa is missing! Please, help her. I beg you.~
-@9 = ~I... I have no gold to pay you. But there is something. A family heirloom. It's all I have left. You can have it if you bring back Leesa.~
-@10 = ~What kind of heirloom? Let me see.~
-@11 = ~Okay, I'll help you.~
-@12 = ~Please, Leesa's just a little girl. Please bring her back to me. Please.~
-@13 = ~I... I must have fallen asleep, waiting there in the dark. I didn't mean to, but I was so tired. And when I woke up Leesa was... *sob*... she was *sob*... she was gone!~
-@14 = ~Didn't you look for her?~
-@15 = ~Where did you last see her?~
-@16 = ~Don't worry, I'll bring her back!~
-@17 = ~No, I can't show it to you. I'm afraid to even say what it is. Someone will steal it. This place is full of thieves. I... I don't even have it with me. Bring Leesa to me and I'll get it for you. I just want Leesa back.~ 
-@18 = ~Forget it. Show me the heirloom or no Leesa.~
-@19 = ~I searched all night, until the dawn came. But there were so many soldiers! If they caught me... I can't go back. I just can't! Poor Leesa! I had to leave her there, wandering around in that war zone to the south. I... I had no other choice.~ 
-@20 = ~Your sister is dead.~
-@21 = ~She's somewhere in the Luskan war zone. To the south. I know she's still alive... She has to be! Please, bring her back to me!~
+@0 = ~Please, <SIRMAAM>! I beg of you, help my sister. Leesa's just a little girl.~ [NWLUC058]/*Bitte, ich flehe Euch an, helft meiner Schwester. Leesa ist doch nur ein kleines, unschuldiges Mädchen.*/
+@1 = ~Ich werde Euch helfen, wenn ich kann.~
+@2 = ~Ich habe keine Zeit für so etwas.~
+@3 = ~Ich möchte Euch ein paar Fragen stellen.~
+@4 = ~Ich könnte Euch helfen, für einen Preis, versteht sich.~
+@5 = ~Gehabt Euch wohl.~
+@6 = ~Danke, <SIRMAAM>. Ich mache mir solche Sorgen um Leesa. Bevor unsere Mutter an der Seuche starb, habe ich ihr versprochen, dass ich mich um Leesa kümmern würde. Als Luskan angriff, versuchten wir eines Nachts, aus der Stadt herauszuschleichen, aber wir kamen nicht durch. Überall waren da luskanische Soldaten. Wir mussten uns verstecken, während sie vorbeigingen. Es schien, als hätten wir uns für Stunden versteckt.~ 
+@7 = ~Warum hilft mir bloß niemand? Sie ist doch nur ein kleines Mädchen! Bitte, jemand muss sie finden. Bitte.~
+@8 = ~Bitte, ich habe keine Zeit für Fragen. Versteht Ihr denn nicht? Leesa ist verschwunden! Bitte, helft ihr. Ich flehe Euch an.~
+@9 = ~Ich  Ich habe kein Gold. Aber ich kann Euch etwas anderes geben. Es ist ein Familienerbstück. Mehr habe ich nicht. Ihr könnt es haben, wenn Ihr mir meine Leesa bringt.~
+@10 = ~Was ist das für ein Erbstück? Lasst es mich sehen.~
+@11 = ~Nun gut, ich werde Euch helfen.~
+@12 = ~Bitte, Leesa ist nur ein kleines Mädchen. Bitte bringt sie mir wieder. Bitte.~
+@13 = ~Ich ... Ich muss beim Warten im Dunkeln eingeschlafen sein. Ich wollte es nicht, aber ich war so müde. Und als ich aufwachte, war Leesa ... **Schluchz** Sie war ... **Schluchz** Sie war fort!~
+@14 = ~Habt Ihr sie nicht gesucht?~
+@15 = ~Wo habt Ihr sie zuletzt gesehen?~
+@16 = ~Sorgt Euch nicht, ich bringe sie zurück.~
+@17 = ~Nein, ich kann es Euch nicht zeigen. Ich kann Euch nicht einmal sagen, was es ist. Sofort würde es jemand stehlen. Hier gibt es viele Diebe. Ich ... Ich habe es nicht einmal bei mir. Bringt Leesa zu mir, und ich hole es für Euch. Ich will nur Leesa zurück.~ 
+@18 = ~Vergesst es. Zeigt mir das Erbstück, oder es gibt keine Leesa.~
+@19 = ~Ich habe die ganze Nacht gesucht, bis die Dämmerung kam. Aber da waren so viele Soldaten! Wenn sie mich erwischt hätten ... Ich kann nicht zurückgehen. Ich kann einfach nicht! Arme Leesa! Ich musste sie dort lassen, umherirrend im Kriegsgebiet im Süden, ich ... Ich hatte keine andere Wahl.~ 
+@20 = ~Eure Schwester ist tot.~
+@21 = ~Sie ist irgendwo im Süden, wo der Krieg mit der luskanischen Armee tobt. Ich weiß, dass sie noch lebt. Sie muss einfach noch am Leben sein! Bitte, findet sie und bringt sie zu mir!~
 
-@23 = ~No! Why would you say that? NO! It isn't true! I know it isn't! You just don't want to help me!~
+@23 = ~Nein! Warum sagt Ihr so etwas? NEIN! Es ist nicht wahr! Ich weiß es! Ihr wollt mir nicht helfen!~
 
-@25 = ~Have you... have you found my sister? Have you found Leesa yet?~ [NWLUC057]
-@26 = ~No, but I am still looking.~
-@27 = ~Forget it. I've changed my mind.~
-@28 = ~But... but you promised! Please, bring her back! Please, I beg you! Bring Leesa back to me!~
-@29 = ~Thank you, my <LADYLORD>. Thank you for bringing me back my little Leesa. I... I have no gold to give you, but I do have this cloak. It was a family heirloom. My mother said it was magic.~ [NWLUC056] 
-@30 = ~Thank you.~
-@31 = ~Keep your cloak. You need it more than I do.~
-@32 = ~Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.~
+@25 = ~Habt Ihr... meine Schwester gefunden? Wisst Ihr, wo Leesa ist?~ [NWLUC057]
+@26 = ~Nein, ich suche noch nach ihr.~
+@27 = ~Vergesst es, ich habe es mir anders überlegt.~
+@28 = ~Aber  Ihr habt es mir versprochen! Bitte, findet sie! Bitte, ich flehe Euch an! Bringt mir Leesa wieder!~
+@29 = ~Danke! Danke, dass Ihr Leesa zu mir zurück gebracht habt. Ich ... Ich habe kein Gold, das ich Euch geben kann, aber ich habe diesen Umhang. Es ist ein Erbstück. Meine Mutter erzählte mir, er sei magisch.~ [NWLUC056] 
+@30 = ~Danke!~
+@31 = ~Behaltet Euren Umhang. Ihr benötigt ihn mehr als ich.~
+@32 = ~Nun werde ich wohl auf sie aufpassen müssen. Bei allem, was passiert ist hoffe ich, dass wir es überstehen.~
 
-@34 = ~You... you are too kind, my <LADYLORD>. Thank you. For everything. Now I just have to keep an eye on her. With all that's happened, I hope we make it through this.~ 
-@35 = ~I'm sorry, but I can't speak with you right now, <SIRMAAM>. I have to keep an eye on my little sister.~ [NWLUC059]
-@36 = ~Leesa already vanished once. I don't want her to disappear on me again.~
+@34 = ~Ihr ... Ihr seid zu freundlich, mein Herr. Dank Euch. Für Alles. Nun werde ich wohl auf sie aufpassen müssen. Bei allem, was passiert ist hoffe ich, dass wir es überstehen.~ 
+@35 = ~Tut mir Leid, aber ich kann nicht mit Euch sprechen. Ich muss auf meine kleine Schwester Acht geben.~ [NWLUC059]
+@36 = ~Leesa ist schon einmal verschwunden. Ich will sie nicht noch einmal verlieren.~
 

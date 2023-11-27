@@ -1,8 +1,9 @@
-@0 = ~You do not know how or for what to use this book.~ 
-@1 = ~You must get closer to the demon.~ 
-@2 = ~You cannot use the book in this location.~
-@3 = ~How would you like to use this book?~
-@4 = ~Complete the Ritual.~
-@5 = ~Banish the Demon.~
+@0 = ~You do not know how or for what to use this book.~ /*Nie wiesz, jakim ból ryzykujesz!*/
+@1 = ~You must get closer to the demon.~ /*Musicie mnie wys³uchaæ.*/
+@2 = ~You cannot use the book in this location.~/*Tym razem nie mo¿esz u¿yæ reliktu.*/
+@3 = ~How would you like to use this book?~/*Jak móg³by podnieæ ten kamieñ?*/
+@4 = ~Dokoñcz rytua³.~
+@5 = ~Wygnaj demona.~
 
 @7 = ~Close book.~
+/*ST zamykania zamku*/

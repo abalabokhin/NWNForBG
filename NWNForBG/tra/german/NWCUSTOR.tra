@@ -1,9 +1,10 @@
-@0 = ~Isn't there a policy in the taverns against walking around with a weapon out?~
-@1 = ~Please put that away, <SIRMAAM>. It makes me nervous.~
-@2 = ~What's that smell? It's like... bear dung, or something...~
-@3 = ~Who is this with us? New? Have you all decided to move out of Neverwinter now?~ 
-@4 = ~I don't have time to talk to the likes of you, sorry. You could be one of them werewolves around here, for all I know.~
-@5 = ~It's a good thing the plague in Neverwinter is over. If it went on any longer, the city would be too weak and there'd be war for sure!~
-@6 = ~You'd best be careful on the roads. We gots werewolves in these parts... and I hear there's monster bandits all over the northern routes.~
-@7 = ~Pleased to meet you, <SIRMAAM>. Don't remember seeing you in Port Llast before now.~
+@0 = ~Ist es in den Tavernen nicht untersagt, mit gezogener Waffe herumzulaufen?~
+@1 = ~Please put that away, <SIRMAAM>. It makes me nervous.~/*Bitte steckt das weg, mein Herr. Es macht mich nervös.*/
+@2 = ~Wo kommt denn dieser Gestank her? Riecht wie ... Bärenkot oder so ...~
+@3 = ~Who is this with us? New? Have you all decided to move out of Neverwinter now?~ /*Wer ist dieser Lenton? Neu Habt Ihr in letzter Zeit etwas über die Wälder von Niewinter gehört?*/
+@4 = ~Ich habe keine Zeit, mich mit Leuten wie Euch zu unterhalten, tut mir Leid. Nach allem, was ich weiß, könntet Ihr einer dieser Werwölfe sein.~
+@5 = ~Es ist wirklich gut, dass die Pest in Niewinter vorbei ist. Wenn sie länger gewütet hätte, wäre die Stadt zu schwach, und es hätte sicher Krieg gegeben!~
+@6 = ~Ihr solltet auf den Straßen lieber vorsichtig sein. Es gibt Werwölfe in der Gegend ... Und ich habe gehört, dass Monster die Reisenden auf allen nördlichen Routen überfallen.~
+@7 = ~Freut mich, Euch kennen zu lernen, mein Herr. Ich kann mich nicht daran erinnern, Euch in Letzthafen schon einmal gesehen zu haben.~
 @8 = ~I don't suppose there's a chance you'd buy me a drink, friend?~ 
+/*Na, wollt Ihr mich nicht auf einen Drink einladen?*/

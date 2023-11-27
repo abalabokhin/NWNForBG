@@ -1,11 +1,12 @@
-@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~
-@1 = ~I need to ask a few questions.~
-@2 = ~Goodbye.~
-@3 = ~Hmm, I can tell you about my product.~ 
-@4 = ~I need infomation about places in Neverwinter.~
-@5 = ~What do you know of the plague?~
-@6 = ~Have you heard of anything odd? Any rumors?~
-@7 = ~Come again.~ 
-@8 = ~Sorry, I can't help. Ask someone else about it.~ 
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~
+@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*Adliger Kunde Ich habe eine Abschrift Eures Briefes und werde mich darum kümmern. Seid gegrüßt! Es ist schön, Euch zu sehen!*/
+@1 = ~Ich möchte Euch ein paar Fragen stellen.~
+@2 = ~Gehabt Euch wohl.~
+@3 = ~Hmm, I can tell you about my product.~ /*Sicher! Ich kann es gerne noch mal wiederholen.*/
+@4 = ~Ich würde gerne etwas über Niewinter wissen.~
+@5 = ~Was wisst Ihr über die Pest?~
+@6 = ~Sind Euch Berichte über seltsame Vorkommnisse zu Ohren gekommen? Irgendwelche Gerüchte, vielleicht?~
+@7 = ~Come again.~ /*Auf baldiges Wiedersehen!*/
+@8 = ~Sorry, I can't help. Ask someone else about it.~ /*Da kann ich Euch leider nicht helfen. "Fragt jemand anderen."*/
+@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*Jeder weiß irgendetwas über die Pest. Die Hälfte davon ist falsch, und die andere Hälfte besteht aus Gerüchten. Weiß gar nicht, ob ich Euch etwas Neues erzählen kann.*/
 @10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~
+/*Was haben sie wohl gefunden? Ich habe jetzt keine Zeit, mich zu unterhalten. Im Vergleich zur Pest scheint das Problem mit dem Zoo unbedeutend zu sein.*/

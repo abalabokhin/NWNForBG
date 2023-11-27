@@ -1,9 +1,10 @@
-@0 = ~Pardon me, but I have a lot of things to do.~
-@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~
-@2 = ~No, you may not.~
-@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~
-@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~
-@5 = ~Oh, okay.~
-@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~
-@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~
+@0 = ~Pardon me, but I have a lot of things to do.~/*Olvídalo. Tengo otras cosas que hacer.*/
+@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~/*Yo encontrar hermana en fortaleza de Kurth... pero ella no estar aquí ahora. Talona reconoce tu valor. Márchate conservando la vida.*/
+@2 = ~No, you may not.~/*No, yo diría que no.*/
+@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~/*"Sí, por favor." Yo no he dicho eso. Podrías traicionarme... Tendré que matarte.*/
+@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~/*¿Tú oír algo o alguna cosa interesante?*/
+@5 = ~Ah, vale.~
+@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~/*¡P-por favor, no nos hagas daño! ¡Sólo somos simples plebeyos! ¡Éste es nuestro hogar!*/
+@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~/*Me marcho. Siento haberte molestado.*/
 @8 = ~I think you'll be a better master than the last one!~
+/*Creo que lo haré mejor a mi manera.*/

@@ -1,5 +1,6 @@
-@0 = ~Oh, you're a mage. How nice to find such an educated customer here in Port Llasta. I have some scrolls for you to sell, would you care to see them?~
-@1 = ~Yeah, show me what you got.~
-@2 = ~No, not now, maybe later.~
-@3 = ~Oh, that's too bad. Well, come back again, I'll be waiting for you.~
+@0 = ~Oh, you're a mage. How nice to find such an educated customer here in Port Llasta. I have some scrolls for you to sell, would you care to see them?~/*Andatevene. È bello vedere brava gente come te in giro per Porto Llast. Hai apportato delle modifiche a questa trama. Desideri salvarle?*/
+@1 = ~Già, mostra me cosa tu ha.~
+@2 = ~No, not now, maybe later.~/*Io fa presto, o forse dopo.*/
+@3 = ~Oh, that's too bad. Well, come back again, I'll be waiting for you.~/*"Peccato." Beh, ma guarda che cervellone che sei!*/
 @4 = ~Good afternoon. Are there any mages among you? I have some scrolls for sale, would you care to take a look?~
+/*pomeriggio Ci sono dei posti sicuri? Ho qualcosa di cui devo informarti.*/

@@ -1,10 +1,11 @@
-@0 = ~What can I get you?~
-@1 = ~I need a Pass Coin.~
-@2 = ~Let me see your wares.~
-@3 = ~Goodbye.~
-@4 = ~The Pass costs 200 gold pieces. Since you have received permission from Ophala, all that remains is to pay.~
-@5 = ~Here's 200 gold.~
-@6 = ~It's too much, I don't have that much gold~
-@7 = ~The Pass costs 200 gold. But first you need to talk to Ophala and get the permission.~
-@8 = ~All right, here's the Pass. When you get upstairs, just give this to the companion of your choice.~
+@0 = ~Czego sobie ¿yczysz?~
+@1 = ~Potrzebujê Obiegówki.~
+@2 = ~Chcê zobaczyæ twoj¹ ofertê.~
+@3 = ~Do zobaczenia.~
+@4 = ~The Pass costs 200 gold pieces. Since you have received permission from Ophala, all that remains is to pay.~/*Masz... we tê monetê. Pomyla³e wiêc o czym, co umknê³o uwagi Kel-Garasa.*/
+@5 = ~Oto 200 sztuk z³ota.~
+@6 = ~It's too much, I don't have that much gold~/*Nie mam tyle.*/
+@7 = ~The Pass costs 200 gold. But first you need to talk to Ophala and get the permission.~/*Oto 200 sztuk z³ota. To chyba wszystko, co chcia³<_/a>bym wiedzieæ o wiêzieniu.*/
+@8 = ~Dobrze, oto piercieñ. Kiedy ju¿ bêdziesz na górze, po prostu wrêcz j¹ osobie, któr¹ wybierzesz.~
 @9 = ~Well, the boys and girls will be waiting for you when you can afford it. They're well worth the price.~
+/*Ch³opcy i dziewczyny w wewnêtrznej sali czekaj¹ na ciebie, pod warunkiem, ¿e masz czym p³aciæ. A zaufaj mi, ka¿de z nich warte jest swojej ceny.*/

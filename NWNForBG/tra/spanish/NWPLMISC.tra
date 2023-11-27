@@ -1,12 +1,13 @@
-@0 = ~Welcome! Looks like you've come a long way.~
-@1 = ~You're right. Can you tell me where is the nearest hotel?~
-@2 = ~Yes, and I'd like to see your wares.~
-@3 = ~I don't have the slightest desire to talk to you.~
-@4 = ~Certainly! Look for the oldest building in the center. It was built a long time ago, and as far as I can remember, it has always been there.~
-@5 = ~Thank you. But before I leave, I'd like to take a look at your merchandise.~
-@6 = ~Thanks. I have to go.~
-@7 = ~This is what I like.~
-@8 = ~Oh, you're back! Would you like to take a look at my merchandise?~
-@9 = ~Yes, let's see what you have.~
-@10 = ~No, not now.~
+@0 = ~Welcome! Looks like you've come a long way.~/*¡Te damos la bienvenida! Parece que vienen malas gentes.*/
+@1 = ~You're right. Can you tell me where is the nearest hotel?~/*¡Te ha tocado! ¿Puedes decirme por qué Desther está haciendo esto?*/
+@2 = ~Yes, and I'd like to see your wares.~/*Me gustaría ver tu mercancía.*/
+@3 = ~I don't have the slightest desire to talk to you.~/*No quiero hablar contigo.*/
+@4 = ~Certainly! Look for the oldest building in the center. It was built a long time ago, and as far as I can remember, it has always been there.~/*Por supuesto. Hay que buscar aquello que esté oculto. Tiene una torre en algún lugar en dirección a Bosquemado, pero no he estado allí.*/
+@5 = ~Thank you. But before I leave, I'd like to take a look at your merchandise.~/*Gracias. Me gustaría echarle un vistazo a tu inventario.*/
+@6 = ~Gracias. Tengo que irme.~
+@7 = ~This is what I like.~/*¡Como a mí me gusta!*/
+@8 = ~Oh, you're back! Would you like to take a look at my merchandise?~/*Sigue tu camino. ¿Te interesaría adquirir esta mano momificada?*/
+@9 = ~Yes, let's see what you have.~/*Sí, enséñame lo que tengas.*/
+@10 = ~No, ahora no.~
 @11 = ~But don't forget to come back when you need anything!~
+/*Vuelve si necesitas algo más.*/

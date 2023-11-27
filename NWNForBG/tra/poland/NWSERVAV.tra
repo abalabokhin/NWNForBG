@@ -1,9 +1,10 @@
-@0 = ~Pardon me, but I have a lot of things to do.~
-@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~
-@2 = ~No, you may not.~
-@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~
-@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~
-@5 = ~Oh, okay.~
-@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~
-@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~
+@0 = ~Pardon me, but I have a lot of things to do.~/*Niewa¿ne. Mam na g³owie inne sprawy.*/
+@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~/*Ja znaleæ siostra w twierdza Kurtha... Ale ona tu teraz nie byæ. Talona docenia twoj¹ wartoæ. Mo¿esz odejæ z ¿yciem.*/
+@2 = ~No, you may not.~/*S¹dzê, ¿e raczej nie.*/
+@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~/*"Owszem." Tego nie powiedzia³<e/a>m. Mo¿esz mnie zdradziæ... Muszê ciê zabiæ.*/
+@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~/*Ty s³yszeæ co ciekawego?*/
+@5 = ~Och, dobra.~
+@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~/*P-proszê, nie rób nam krzywdy! Jestemy prostymi ludmi, a to nasz dom!*/
+@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~/*Po prostu wyjdê. Wybacz, ¿e ciê niepokoi³<e/a>m.*/
 @8 = ~I think you'll be a better master than the last one!~
+/*Mylê, ¿e lepiej poradzê sobie sam<_/a>.*/

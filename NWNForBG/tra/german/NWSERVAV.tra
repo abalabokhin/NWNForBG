@@ -1,9 +1,10 @@
-@0 = ~Pardon me, but I have a lot of things to do.~
-@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~
-@2 = ~No, you may not.~
-@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~
-@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~
-@5 = ~Oh, okay.~
-@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~
-@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~
+@0 = ~Pardon me, but I have a lot of things to do.~/*Vergesst es. Ich habe Besseres zu tun.*/
+@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~/*Ich finden Schwester in Festung von Kurth ... Aber sie jetzt nicht hier. Talona erkennt Euren Wert. Geht mit Eurem Leben.*/
+@2 = ~No, you may not.~/*Nein. Ich denke nicht.*/
+@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~/*"Ja, gerne." Das habe ich nie gesagt. Ihr könntet mich verraten  Ich muss Euch wohl töten.*/
+@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~/*Irgendwas gehört haben? Interessantes?*/
+@5 = ~Oh, na gut.~
+@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~/*Bitte tut uns nichts! Wir sind einfache Leute. Das hier ist unser Haus!*/
+@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~/*Ich werde gehen. Tut mir Leid, dass ich Euch belästigt habe.*/
 @8 = ~I think you'll be a better master than the last one!~
+/*Ich glaube, ich komme allein besser zurecht.*/

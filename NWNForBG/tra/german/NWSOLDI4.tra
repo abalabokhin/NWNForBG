@@ -1,9 +1,10 @@
-@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~
-@1 = ~Who's your superior?~
-@2 = ~If these are barracks, then where are the soldiers?~
-@3 = ~Fine, I'll go.~
-@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~
-@5 = ~Since you're a mercenary. That mean you're for hire?~
-@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~
-@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~
+@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~/*Ich brauche sofort einen Heiler. Diese Tür wurde nicht für Euch geschaffen.*/
+@1 = ~Who's your superior?~/*Wem Ihr dienen?*/
+@2 = ~If these are barracks, then where are the soldiers?~/*Ich habe sie alle drei gefunden. Hier sind ihre Ringe.*/
+@3 = ~Gut, ich werde gehen.~
+@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~/*Ich bin bereit für die Prüfung des Glaubens. Wer bist ich? Wer sind ich? Genau das sagte dem Baum ich nich. Ich dann gehen. Tschüss.*/
+@5 = ~Since you're a mercenary. That mean you're for hire?~/*Ihr seid ein Söldner. Kann ich Euch also anheuern?*/
+@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~/*Was machen sauber? Natürlich, gerne. Wer seid Ihr? Was macht Ihr hier auf den Straßen? Ich habe das Zepter.*/
+@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~/*Ich bin bereit. Jetzt beruhigt Euch schon! Ich möchte Euch nichts Böses tun!*/
 @8 = ~Go your own way. You don't belong here.~
+/*Besorgt Euch Euer eigenes Wasser. Woher wollt Ihr das wissen?*/

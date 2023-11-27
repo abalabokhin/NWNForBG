@@ -1,12 +1,13 @@
-@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~
-@1 = ~Who are you?~
-@2 = ~May I ask you some questions?~
-@3 = ~All right, I'm gonna go.~
-@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~
-@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~
-@6 = ~Enjoy your time in our establishment.~
-@7 = ~Please enjoy your stay here, <LADYLORD>.~
-@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~
-@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~
-@10 = ~If you want to order something, talk to the bartender.~
+@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~/*Bueno, ¿qué es lo que quieres? En primer lugar, si tuvieras a gente para este trabajo, no me necesitarías a mí.*/
+@1 = ~¿Quién eres?~
+@2 = ~¿Podría hacerte unas preguntas?~
+@3 = ~All right, I'm gonna go.~/*De acuerdo, me voy.*/
+@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~/*Yo sólo querer oreja. Yo sirvo a mi dios. Quiero preguntarte algo más.*/
+@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~/*Sí, por favor. Estoy seguro de que me será de ayuda. Si tienes preguntas, hazlas. Si no, déjame hacer mi trabajo.*/
+@6 = ~Enjoy your time in our establishment.~/*Céntrate en tus obligaciones para conmigo.*/
+@7 = ~Please enjoy your stay here, <LADYLORD>.~/*Ahí te ha pillado, <CHARNAME>.*/
+@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~/*¿No se supone que toda ayuda debería ser bienvenida? Bueno... está el asunto de la dríada enjaulada.*/
+@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~/*Déjala en paz, Xanos. Abre la tienda con esta etiqueta o bien hace saber al usuario que no existe tienda alguna.*/
+@10 = ~If you want to order something, talk to the bartender.~/*Quiero saber algunas cosas sobre tu hermano.*/
 @11 = ~That elf over there, I think his name is Elaith, is looking at me strangely, I'm afraid of him.~
+/*Yo suponer que eso tener sentido. Yo creer que tú tal vez ir por lo legal.*/

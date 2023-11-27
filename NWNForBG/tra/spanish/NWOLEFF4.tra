@@ -1,13 +1,14 @@
-@0 = ~Greetings of the Even-Handed to you. Welcome to the House of Tyr. I am Reverend Judge Oleff Uskar, in service of the Maimed God.~ [NWOLE052]
-@1 = ~Hello Oleff. Will you answer some questions?~
-@2 = ~Enough chatter. I have questions for you.~
-@3 = ~Goodbye.~
-@4 = ~This Tyrran home welcomes your well-mannered address. Ask what you will, and I shall respond as I am able.~
-@5 = ~What is your position here?~
-@6 = ~What are the tenets of the Tyrran faith?~
-@7 = ~I require temple services. What can you offer?~
-@8 = ~I am bound by Tyr to serve as long as the cause is just, but mind your tone. Disrespect is not tolerated in this place.~
-@9 = ~Tyr guide to you justice.~
-@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~
-@11 = ~There are many aspects to the worship of Tyr. He is the Blind Overlord, the Even-Handed. He is the guardian and governor of justice. The clergy are charged to reveal the truth, punish the guilty, right the wrong, and to always be true and just in their actions. We serve as judges, juries and, should the situation require it, executioners. Justice through benevolent force and armed vigilance.~ 
+@0 = ~Que los saludos del Ecuánime sean contigo. Bienvenido a la Casa de Tyr. Soy el Juez Reverendo Oleff Uskar, al servicio del Dios Mutilado.~ [NWOLE052]
+@1 = ~Hello Oleff. Will you answer some questions?~/*Hola, buenas. ¿Responderás más preguntas?*/
+@2 = ~Enough chatter. I have questions for you.~/*Basta de charla. Tengo unas preguntas que hacerte.*/
+@3 = ~Adiós.~
+@4 = ~Este hogar de Tyr agradece tu educada alocución. Pregunta lo que quieras y te contestaré lo mejor que pueda.~
+@5 = ~¿Qué posición ocupas aquí?~
+@6 = ~¿Cuáles son los dogmas de la fe de Tyr?~
+@7 = ~Necesito los servicios que ofrezca el templo. ¿Qué puedes ofrecerme?~
+@8 = ~Tyr me obliga a ayudar siempre que la causa sea justa, pero ten cuidado con cómo te diriges a mí. En este lugar no se toleran las faltas de respeto.~
+@9 = ~Que Tyr te guíe a la justicia.~
+@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~/*Busco una secta que está tras la plaga de Noyvern.*/
+@11 = ~El culto a Tyr abarca muchas facetas. Es el Ciego Señor Supremo, el Ecuánime. Es el guardián y administrador de la justicia. Los clérigos se encargan de revelar la verdad, castigar al culpable, reparar injusticias y ser siempre sinceros y justos en sus acciones. Servimos de jueces, jurados y, si la situación lo requiere, de verdugos. Justicia por medio de la fuerza benévola y la vigilancia armada.~ 
 @12 = ~Temple services are available to all who are suffering.~
+/*Sirvo a Aribeth y a la guardia de la ciudad.*/

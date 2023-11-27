@@ -1,11 +1,12 @@
-@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~
-@1 = ~I need to ask a few questions.~
-@2 = ~Goodbye.~
-@3 = ~Hmm, I can tell you about my product.~ 
-@4 = ~I need infomation about places in Neverwinter.~
-@5 = ~What do you know of the plague?~
-@6 = ~Have you heard of anything odd? Any rumors?~
-@7 = ~Come again.~ 
-@8 = ~Sorry, I can't help. Ask someone else about it.~ 
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~
+@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*Cliente Nobile Ho una copia della tua lettera e ci darò un'occhiata. Di nuovo salve! Che bello vederti!*/
+@1 = ~Ho bisogno di farti qualche domanda.~
+@2 = ~Addio.~
+@3 = ~Hmm, I can tell you about my product.~ /*Certo, te lo posso dire di nuovo.*/
+@4 = ~Ho bisogno di informazioni sulle zone di Neverwinter.~
+@5 = ~Cosa sai dell'epidemia?~
+@6 = ~Hai sentito qualcosa di strano? Qualche notizia?~
+@7 = ~Come again.~ /*Torna presto!*/
+@8 = ~Sorry, I can't help. Ask someone else about it.~ /*Mi spiace, non ti posso aiutare. "Chiedilo a qualcun altro."*/
+@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*Ognuno sa qualcosa dell'epidemia. La metà di ciò non è vero e l'altra metà sono solo chiacchiere. Non sono sicuro di poter aggiungere qualcosa.*/
 @10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~
+/*Cosa potrebbero aver trovato? Non ho tempo per parlare adesso. Questo zoo sembra una piccola cosa a confronto con l'epidemia.*/

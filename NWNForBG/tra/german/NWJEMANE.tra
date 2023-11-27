@@ -1,34 +1,35 @@
-@0 = ~What do you want? There's squat I can do to stop you looting, if that's what you're here for.~
-@1 = ~I've been fighting undead. You need some help?~
-@2 = ~Maybe I am, but I've undead to kill first.~
-@3 = ~Just thank your lucky stars I'm not a flesh-eating corpse.~
-@4 = ~I could use some. I'm probably going to be dead in an hour. I... might know something about these undead...~
-@5 = ~Why do you think that?~
-@6 = ~I don't have time right now.~
-@7 = ~Yeah? I could use your help if you are looking to kill things. I think I know something about these undead...~
-@8 = ~I suppose you could be worse. I'm going after worse right now. I think I know something about these undead...~
-@9 = ~My brother has been acting... funny. He goes to a strange house just north of here. The undead leave it alone! He's not himself... I think they took his mind. There's a group in there... a cult... and my brother mentioned some kind of... creature. I don't know anything more about it than that. It's all happened so fast... right about when the zombies started showing up.~ 
-@10 = ~I have questions about this strange house.~
-@11 = ~I want to know some things about your brother.~
-@12 = ~I might check it out. What are you going to do?~ 
-@13 = ~All right... just leave me, then. I guess I'll stay here. Not much I can do on my own.~
-@14 = ~I'll tell you what I can.~
-@15 = ~Any idea who lives at this house you mention?~
-@16 = ~You say the undead leave the house alone?~
-@17 = ~I suppose. What do you want to know?~
-@18 = ~What's his name? What does he do?~
-@19 = ~I found this ring in the cult hideout. Was it his?~
-@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ 
-@21 = ~No clue, but I know they don't get attacked by the zombies, and I know my brother is acting weirder and weirder. They don't want any visitors, either. He uses some sort of key to get in, but it's not a normal one. Some kind of magic thing.~ 
-@22 = ~Could I have it?~
-@23 = ~It's the strangest thing: They walk right around it, and don't attack the people going in. My brother said the creature keeps them safe? I honestly don't know what he's talking about anymore, and now he's been gone for days.~ 
-@24 = ~His name is Torin. He studied at a mage tower outside Waterdeep for a while, but never stuck with it. He's been a little lost. I think he wanted something that had quicker rewards. He didn't have much patience for books.~ 
-@25 = ~That's... that was my brother's. He always had it with him... he's dead. I know it. Thanks. I don't have much to give you... Just keep the ring. It reminds me of how he died, not his life.~ 
+@0 = ~Was wollt Ihr? Wenn Ihr hier seid, um zu plündern, kann ich Euch leider auch nicht aufhalten.~
+@1 = ~Ich kämpfe gegen die Untoten. Benötigt Ihr Hilfe?~
+@2 = ~Vielleicht ja, aber erst muss ich die Untoten töten.~
+@3 = ~Dankt einfach Eurem Glücksstern, dass ich kein Fleisch fressender Zombie bin.~
+@4 = ~Ich könnte wohl ein wenig Hilfe benötigen. Wenn das so weitergeht, bin ich in einer Stunde ohnehin tot. Ich ... weiß aber vielleicht etwas über die Untoten, das Euch interessieren könnte ...~
+@5 = ~Warum glaubt Ihr das?~
+@6 = ~Im Moment habe ich leider keine Zeit dafür.~
+@7 = ~Ja? Ich könnte Eure Hilfe durchaus benötigen, wenn Ihr Untote töten wollt. Ich weiß vielleicht etwas über diese Untoten, das Euch interessieren könnte ...~
+@8 = ~Na ja, ich schätze, es hätte schlimmer kommen können. So dreckig wie es mir im Moment geht ... Auf jeden Fall, weiß ich wohl etwas über die Untoten, dass Euch interessieren könnte ...~
+@9 = ~Mein Bruder hat sich in letzter Zeit sehr ... komisch verhalten. Er geht in so ein seltsames Haus nördlich von hier. Die Untoten lassen dieses Haus seltsamerweise in Frieden! Er ist nicht mehr er selbst... Ich glaube, die haben seine Seele geraubt. Da drin ist eine Gruppe ... ein Kult ... und mein Bruder erwähnte irgendeine ... Kreatur. Mehr weiß ich nicht darüber. Es ging alles so schnell ... genau, als die Zombies damals auftauchten.~ 
+@10 = ~Ich habe Fragen über dieses seltsame Haus.~
+@11 = ~Ich würde gern etwas über Euren Bruder erfahren.~
+@12 = ~Vielleicht sehe ich mal nach. Und Ihr? Was habt Ihr jetzt vor?~ 
+@13 = ~In Ordnung ... Dann geht halt. Ich schätze, ich werde einfach hier bleiben, was? Allein kann ich wohl nicht viel ausrichten.~
+@14 = ~Ich sage Euch gern, was ich weiß.~
+@15 = ~Habt Ihr eine Ahnung, wer in diesem Haus lebt?~
+@16 = ~Ihr sagt, die Untoten lassen das Haus in Ruhe?~
+@17 = ~Gerne. Was wollt Ihr denn wissen?~
+@18 = ~Wie heißt er denn? Und was tut er so?~
+@19 = ~Ich habe diesen Ring im Versteck des Kults gefunden. Könnte der ihm gehört haben?~
+@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ /*Ich  ich weiß nicht recht. Ich würde gern bei der Suche helfen, aber ich weiß nicht, ob ich zu viel nutze wäre. Ich brauche etwas Heilung. Brauchen Hilfe. Sofort!*/
+@21 = ~Nein, überhaupt nicht. Aber ich weiß, dass die Zombies den Bewohnern nichts tun. Und ich weiß, dass mein Bruder sich immer merkwürdiger benimmt. Sie dulden auch keine Besucher dort. Er hat eine Art Schlüssel, um hineinzukommen. Aber es ist kein normaler Schlüssel, es ist irgendetwas Magisches.~ 
+@22 = ~Könnte ich es haben?~
+@23 = ~Es ist sehr merkwürdig: Sie machen einen Bogen um das Haus und greifen niemand an, der hineingeht. Mein Bruder sagte irgendetwas von einer Kreatur, die es beschützt. Ich verstehe ehrlich nicht mehr, was er da redet, und jetzt ist er schon seit Tagen fort.~ 
+@24 = ~Sein Name ist Torin. Eine Zeit lang hat er in einem Magierturm bei Tiefwasser studiert, aber er blieb nicht dabei. Er wusste nie so recht, wo er hingehört. Ich glaube, er suchte etwas, das schneller zum Erfolg führt. Für Bücher fehlte ihm die Geduld.~ 
+@25 = ~Der  hat meinem Bruder gehört. Er hatte ihn immer bei sich ... Er ist tot. Da bin ich ganz sicher. Danke. Ich kann Euch leider nicht viel geben ... Behaltet einfach den Ring. Er erinnert mich ja doch nur an seinen Tod, nicht an sein Leben.~ 
 
-@27 = ~I have this thing that he used to get in the hideout... well, I'm sure it's not important. What do I know? The cult hideout is north of here. If you are going to look for him, that's where I'd start.~ 
+@27 = ~Ich habe dieses Ding, mit dem er in das Versteck hineinkam ... na ja, sicher ist es nicht wichtig. Was weiß denn ich? Das Versteck des Kults liegt nördlich von hier. Wenn Ihr ihn suchen wollt, solltet Ihr dort anfangen.~ 
 
-@29 = ~The cult hideout is east of here. If you are going to look for him, that's where I'd start.~ 
-@30 = ~I suppose. I hope that means you'll try and find him. I'm worried. The cult hideout is east of here. If you are going to look for him, that's where I'd start.~
-@31 = ~Hello there... I gave that magic key-thing to you, didn't I? Oh, I'm just so worried about my brother that I don't know which way is up. Please, investigate that cult estate north of here. Please find my brother. I wish I could help... I'm not much use when things get dangerous. I know they are up to something in there, though.~ 
+@29 = ~Das Versteck des Kults liegt nördlich von hier. Wenn Ihr ihn suchen wollt, solltet Ihr dort anfangen.~ 
+@30 = ~Warum nicht? Wenn das bedeutet, dass Ihr ihn suchen geht. Ich mache mir Sorgen. Das Versteck des Kults liegt nördlich von hier. Wenn Ihr ihn suchen wollt, solltet Ihr dort anfangen.~
+@31 = ~Hallo Ihr  Hatte ich Euch jetzt dieses magische Schlüsselding gegeben, oder nicht? Ach, ich bin völlig durch den Wind vor lauter Sorge um meinen Bruder. Bitte, Ihr müsst das Anwesen von diesem Kult untersuchen. Es liegt nördlich von hier. Ich wünschte, ich könnte Euch helfen  Ich bin zu nicht viel nutze, wenn es gefährlich wird. Aber ich weiß, dass die dort irgendwas im Schilde führen.~ 
 @32 = ~My brother is dead... I don't know what to do...~ 
 
+/*Er ist tot ... Ich weiß nicht, was ich tun soll ...*/

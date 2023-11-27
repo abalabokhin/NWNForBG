@@ -1,9 +1,10 @@
-@0 = ~You have come to the Cloak Tower in dark times, friend. The others of my guild have left to lend their spells to the battle and I've heard nothing of them since.~ [NWELT061]
-@1 = ~I need supplies. Are you still selling them?~
-@2 = ~You didn't join the others?~
-@3 = ~I would like to use your laboratory.~
-@4 = ~I must be on my way.~
-@5 = ~I'll take whatever gold you've got. I'm casting a wardspell to protect the castle and every ounce of gold I can commit to it will make it stronger.~
-@6 = ~I had a funny feeling people like you might show up here. Looks like I was right.~
-@7 = ~Tell those Arcane Brothers that they won't they won't lay their filthy hands on the castle. Not if I can help it at any rate...~
+@0 = ~Sei giunto alla Torre Ammantata in tempi oscuri, amico. Gli altri della mia gilda sono partiti per prestare i loro incantesimi in battaglia e da allora non ne ho più notizia.~ [NWELT061]
+@1 = ~Ho bisogno di rifornimenti, ne vendi ancora?~
+@2 = ~Non ti sei unita agli altri?~
+@3 = ~Vorrei usare il tuo laboratorio.~
+@4 = ~Devo andarmene.~
+@5 = ~Accetterò il tuo oro. Sto lanciando un incantesimo di interdizione per proteggere il castello e ogni oncia d'oro che riesco ad ottenere lo renderà più forte.~
+@6 = ~Ho avuto lo strano presentimento che uno come te sarebbe potuto giungere qui. Sembra proprio che avessi ragione.~
+@7 = ~Riferisci a quei Fratelli Arcani che non metteranno le loro sporche manacce sul castello. Non se io riuscirò a fare qualcosa in proposito.~
 @8 = ~The table for magical experiments is located on the top floor of the tower. However, if you do not have crafting books, you are unlikely to be able to do anything.~ 
+/*Una forza magica di qualche tipo blocca il potere dell'anello. Nessuno, credo. Probabilmente puoi badare a te stesso. Dimentica quel che ho detto.*/

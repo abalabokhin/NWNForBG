@@ -1,12 +1,13 @@
-@0 = ~Welcome! Looks like you've come a long way.~
-@1 = ~You're right. Can you tell me where is the nearest hotel?~
-@2 = ~Yes, and I'd like to see your wares.~
-@3 = ~I don't have the slightest desire to talk to you.~
-@4 = ~Certainly! Look for the oldest building in the center. It was built a long time ago, and as far as I can remember, it has always been there.~
-@5 = ~Thank you. But before I leave, I'd like to take a look at your merchandise.~
-@6 = ~Thanks. I have to go.~
-@7 = ~This is what I like.~
-@8 = ~Oh, you're back! Would you like to take a look at my merchandise?~
-@9 = ~Yes, let's see what you have.~
-@10 = ~No, not now.~
+@0 = ~Welcome! Looks like you've come a long way.~/*Witaj! Przed nami nieprzyjaciel.*/
+@1 = ~You're right. Can you tell me where is the nearest hotel?~/*Gonisz! Czy mo¿esz mi powiedzieæ, dlaczego Desther to robi?*/
+@2 = ~Yes, and I'd like to see your wares.~/*Poka¿, co masz na sprzeda¿.*/
+@3 = ~I don't have the slightest desire to talk to you.~/*Nie chce mi siê z tob¹ rozmawiaæ.*/
+@4 = ~Certainly! Look for the oldest building in the center. It was built a long time ago, and as far as I can remember, it has always been there.~/*Oczywicie. Szukaj tego, czego oko nie widzi. Ma swoj¹ wie¿ê gdzie w pobli¿u Czarnydrzewu, ale nigdy tam nie by³am.*/
+@5 = ~Thank you. But before I leave, I'd like to take a look at your merchandise.~/*Dziêki. Chcia³<_/a>bym rzuciæ okiem na to, co masz.*/
+@6 = ~Dziêki. Muszê ju¿ iæ.~
+@7 = ~This is what I like.~/*To lubiê!*/
+@8 = ~Oh, you're back! Would you like to take a look at my merchandise?~/*Ruszaj w drogê. Mo¿e kupisz tê oto zmumifikowan¹ rêkê?*/
+@9 = ~Yes, let's see what you have.~/*Tak, poka¿ mi, co masz.*/
+@10 = ~Nie, nie teraz.~
 @11 = ~But don't forget to come back when you need anything!~
+/*Wróæ, jeli bêdziesz czego potrzebowaæ.*/

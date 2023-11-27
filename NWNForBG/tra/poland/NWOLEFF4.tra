@@ -1,13 +1,14 @@
-@0 = ~Greetings of the Even-Handed to you. Welcome to the House of Tyr. I am Reverend Judge Oleff Uskar, in service of the Maimed God.~ [NWOLE052]
-@1 = ~Hello Oleff. Will you answer some questions?~
-@2 = ~Enough chatter. I have questions for you.~
-@3 = ~Goodbye.~
-@4 = ~This Tyrran home welcomes your well-mannered address. Ask what you will, and I shall respond as I am able.~
-@5 = ~What is your position here?~
-@6 = ~What are the tenets of the Tyrran faith?~
-@7 = ~I require temple services. What can you offer?~
-@8 = ~I am bound by Tyr to serve as long as the cause is just, but mind your tone. Disrespect is not tolerated in this place.~
-@9 = ~Tyr guide to you justice.~
-@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~
-@11 = ~There are many aspects to the worship of Tyr. He is the Blind Overlord, the Even-Handed. He is the guardian and governor of justice. The clergy are charged to reveal the truth, punish the guilty, right the wrong, and to always be true and just in their actions. We serve as judges, juries and, should the situation require it, executioners. Justice through benevolent force and armed vigilance.~ 
+@0 = ~Witam ciê w imieniu Sprawiedliwego. Witaj w Domu Tyra. Jestem Wielebny Sêdzia Oleff Uskar, s³uga Okaleczonego Boga.~ [NWOLE052]
+@1 = ~Hello Oleff. Will you answer some questions?~/*Witam! Czy odpowiesz na wiêcej pytañ?*/
+@2 = ~Enough chatter. I have questions for you.~/*Doæ tej rozmowy. Chcê ciê o co zapytaæ.*/
+@3 = ~Do zobaczenia.~
+@4 = ~Dom Tyra docenia twe nienaganne maniery. Pytaj, o co chcesz, a odpowiem jeli zdo³am.~
+@5 = ~Jak¹ zajmujesz tu pozycjê?~
+@6 = ~Jakie s¹ za³o¿enia wiary wyznawców Tyra?~
+@7 = ~Chcê skorzystaæ z us³ug wi¹tyni. Co mo¿esz zaoferowaæ?~
+@8 = ~Jestem zobowi¹zany s³u¿yæ Tyrowi tak d³ugo, jak sprawa jest s³uszna, ale uwa¿aj na swój jêzyk. W tym miejscu nie toleruje siê braku respektu.~
+@9 = ~Niech Tyr prowadzi ciê ku sprawiedliwoci.~
+@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~/*Szukam sekty, odpowiedzialnej za zarazê w Neverwinter.*/
+@11 = ~Wiara w Tyra ma wiele aspektów. Jest lepym Panem, Sprawiedliwym. Jest stra¿nikiem i zarz¹dc¹ sprawiedliwoci. Kap³ani maj¹ ujawniaæ prawdê, karaæ winnych, naprawiaæ z³o i zawsze byæ szczerymi i prawymi w swoich czynach. S³u¿ymy jako sêdziowie, ³awnicy i, jeli wymaga tego sytuacja, kaci. Sprawiedliwoæ poprzez dobroczynn¹ si³ê i zbroj¹ czujnoæ.~ 
 @12 = ~Temple services are available to all who are suffering.~
+/*Jestem w s³u¿bie Aribeth i stra¿y miejskiej.*/

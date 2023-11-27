@@ -1,9 +1,10 @@
-@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~
-@1 = ~Who's your superior?~
-@2 = ~If these are barracks, then where are the soldiers?~
-@3 = ~Fine, I'll go.~
-@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~
-@5 = ~Since you're a mercenary. That mean you're for hire?~
-@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~
-@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~
+@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~/*Natychmiast potrzebujê uzdrowiciela. Te drzwi nie zosta³y stworzone dla ciebie...*/
+@1 = ~Who's your superior?~/*Komu ty s³u¿yæ?*/
+@2 = ~If these are barracks, then where are the soldiers?~/*Znalaz³<e/a>m ca³¹ trójkê. Oto ich piercienie.*/
+@3 = ~Dobrze, ju¿ idê.~
+@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~/*Chcê siê podj¹æ Prób Wiary. Kim ja jestem? Jestem kim? Trudno temu znaleæ rym. To ja iæ. Cze.*/
+@5 = ~Since you're a mercenary. That mean you're for hire?~/*Jeste najemnikiem. Czy w zwi¹zku z tym nie szukasz pracy?*/
+@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~/*Co ty sprz¹taæ? Oczywicie, oczywicie. Kim jeste i co robisz na ulicy? Mam ber³o.*/
+@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~/*Jestem gotow<y/a>. Uspokój siê ju¿, nie zrobiê ci krzywdy.*/
 @8 = ~Go your own way. You don't belong here.~
+/*Sama sobie za³atw wodê. Nie mo¿esz powiedzieæ niczego na pewno...*/

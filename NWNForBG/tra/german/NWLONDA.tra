@@ -1,89 +1,90 @@
-@0 = ~I beg you to leave me be, my <LADYLORD>. I have nothing to say and nothing left to steal, I assure you.~ [NWLOND54]
-@1 = ~Who are you?~
-@2 = ~I have some questions.~
-@3 = ~What happened to you?~
-@4 = ~Fine, I'll go.~
-@5 = ~I am... or, rather, I was... the Countess Londa Whitesnow. That means nothing anymore. Now I am merely... Londa.~
-@6 = ~Then what happened?~
-@7 = ~Aww... poor rich noble lost all her gold?~
-@8 = ~You lost your title? That isn't everything.~
-@9 = ~Did you not hear me? I wish to be left alone, <SIRMAAM>. Please respect that.~
-@10 = ~At least tell me who you are, then.~
-@11 = ~Why? What's wrong?~
-@12 = ~I see. You're too good to talk to me, is that it?~
-@13 = ~(sigh) I see you intend to be persistent. Very well. You wish to know what is wrong? I shall tell you... though my story is not a unique one, here. That evil man, High Captain Baram, invaded our home with his soldiers. He desired all our wealth... to pay for his army and his war, no doubt.~ 
-@14 = ~You have my sincere thanks. I only wish to be left to my grief.~
-@15 = ~You know nothing of me, and obviously you would not understand if you did. Indeed, I have no gold for myself or anyone else any longer. Now begone, and leave me to my misery.~
-@16 = ~The title is nothing. I would have gladly given it up, and all the wealth that went with it, to still have my family. They are all that gave the others meaning.~
-@17 = ~Uh-huh. It be bad story, me thinking.~
-@18 = ~That... that is not what I meant at all. In fact, it is quite the opposite. I was once Countess Londa Whitesnow... but now I am... merely Londa.~
-@19 = ~My husband objected, naturally. Without even a thought, Baram... he... cut my husband down. Murdered him. I still remember his laughter as he took my children... all nine of them... and turned me out of my home. Once he was done with it, he burned it to the ground. Now my husband is dead, and that fiend holds my children. I know nothing of their fate and have nothing left and nowhere to turn. That is my tale, <SIRMAAM>.~ 
-@20 = ~That is very sad.~
-@21 = ~Sounds like a tough break.~
-@22 = ~Hah! At least you're still alive.~
-@23 = ~Aye, it is very sad. I would do anything to have my children back, but Baram will not even see me... and no one can help.~
-@24 = ~Perhaps I could help.~
-@25 = ~I could help... for the right reward.~
-@26 = ~Yes, well, life's tough all over.~
-@27 = ~You speak crudely, but it is true enough. I would do anything to have my children back... but Baram will not even see me, and no one can help.~
-@28 = ~Forgive me, but that fact currently pales compared to all I have lost. Please... leave me to my misery.~
-@29 = ~I am grateful. I only wish to be left to my misery.~
-@30 = ~Could you? I would give anything to have my children saved from that fiend, or to at least... at least know that they are all right! I could reward you. I have no coin here, but... my husband had some saved. I know where it is, and I could tell you. It would be enough, I think.~ 
-@31 = ~Tell me where it is now and I'll do it.~
-@32 = ~Very well... I'll help you.~
-@33 = ~I'll do what I can.~
-@34 = ~I changed my mind. Not interested.~
-@35 = ~Aye... life is 'tough' for everyone in Luskan, and we should all just bear through it, is that what you mean? Just... leave me be, <SIRMAAM>.~
-@36 = ~I am no fool. If that is all there is that will get someone to find my children, then I will never give it up beforehand.~
-@37 = ~I am glad to hear it. Have you any questions for me, then?~
-@38 = ~Where can I find Baram?~
-@39 = ~Do you know where your children might be?~
-@40 = ~Why would Baram be holding your children?~
-@41 = ~Does Baram have any enemies?~
-@42 = ~I do not have any questions.~ 
-@43 = ~I... I see. Then leave me alone.~
-@44 = ~His men once had a base in the slums... but that was burnt down more than a month ago as the war in the streets went on. Where he has gone since, I... simply do not know. Some people say he lives in the sewers, now, but I truly hope not.~ 
-@45 = ~No. I have heard no news, and Baram will tell me nothing. He is the only one who would know where they are.~
-@46 = ~I... wish I knew. Perhaps he has some sinister purpose in mind for them... I do not even want to imagine it. I am hoping he has already sent them somewhere or released them and I simply do not know where they are.~
-@47 = ~Aye. The other High Captains who he has fought with these long weeks. Only Kurth remains... but no one is sure where he is. Kurth would want Baram dead, it is certain.~
-@48 = ~You have given me a glimmer of hope. I... I wish you the best of luck.~
+@0 = ~Bitte lasst mich in Ruhe. Ich versichere Euch, dass ich nichts zu sagen habe, und ich besitze nichts mehr, was man mir noch stehlen könnte.~ [NWLOND54]
+@1 = ~Wer seid Ihr?~
+@2 = ~Ich habe einige Fragen.~
+@3 = ~What happened to you?~/*Was ist mit ihnen passiert?*/
+@4 = ~Gut, ich werde gehen.~
+@5 = ~Ich bin ... Nein, besser ... Ich war die Herzogin Londa Weißschnee. Aber das bedeutet nichts mehr. Jetzt bin ich nur noch ... Londa.~
+@6 = ~Was geschah dann?~
+@7 = ~Hmm... Arme reiche Adelige hat all ihr Gold verloren?~
+@8 = ~Ihr habt Euren Titel verloren? Das ist doch nicht alles.~
+@9 = ~Did you not hear me? I wish to be left alone, <SIRMAAM>. Please respect that.~/*Habt Ihr mich nicht gehört? Ich möchte allein gelassen werden, <SIRMAAM>. Bitte respektiert das.*/
+@10 = ~Dann sagt mir wenigstens, wer Ihr seid.~
+@11 = ~Warum? Was stimmt nicht?~
+@12 = ~Ich verstehe. Ihr seid Euch zu gut, um mit mir zu reden, stimmt's?~
+@13 = ~(Seufz) Ich sehe, Ihr wollt hartnäckig sein. Nun gut. Ihr wollt wissen, was nicht stimmt? Ich werde es Euch erzählen, wenngleich meine Geschichte in dieser Gegend nicht einzigartig ist. Dieser teuflische Mann, Oberkommandant Baram, ist mit seinen Soldaten in unser Heim eingedrungen. Er trachtete nach unserem Besitz ... vermutlich, um seine Soldaten und seinen Krieg bezahlen zu können.~ 
+@14 = ~Ich danke Euch sehr. Ich möchte nur noch allein mit meinem Schmerz sein.~
+@15 = ~Ihr wisst nichts über mich, und offensichtlich würdet Ihr es nicht verstehen, wenn es anders wäre. Tatsächlich habe ich kein Gold mehr für mich oder für andere. Nun geht und überlasst mich meiner Trauer.~
+@16 = ~Der Titel bedeutet nichts. Ich hätte ihn gerne aufgegeben, und den ganzen Reichtum mit dazu, wenn ich meine Familie hätte behalten dürfen. Sie war es, die allem anderen Bedeutung gab.~
+@17 = ~Uh-oh. Denken, das traurige Geschichte sein.~
+@18 = ~Das ... Das habe ich damit nicht gemeint. Ganz im Gegenteil. Ich war einst Herzogin Londa Weißschnee ... Aber jetzt bin ich ... nur noch Londa.~
+@19 = ~Mein Gemahl hat sich natürlich gewehrt. Ohne mit der Wimper zu zucken, hat Baram ... meinen Gemahl  getötet. Ermordet. Ich höre noch sein Lachen, als er mir meine Kinder nahm ... alle neun ... und mich aus meinem Haus jagte. Als er dort fertig war, brannte er es bis auf die Grundmauern nieder. Mein Gemahl ist tot, und dieser Unhold hält meine Kinder gefangen. Ich weiß nichts über ihr Schicksal, nichts ist mir geblieben ... Ich weiß nicht, wohin. Das ist meine Geschichte, werter Herr.~ 
+@20 = ~Das ist sehr traurig~
+@21 = ~Ziemlich üble Geschichte.~
+@22 = ~Hah! Immerhin seid Ihr noch am Leben.~
+@23 = ~Ja, das ist es. Ich würde alles geben, um meine Kinder wiederzubekommen, doch Baram will mich nicht einmal empfangen ... und keiner kann helfen.~
+@24 = ~Vielleicht kann ich helfen?~
+@25 = ~Ich könnte helfen. Gegen eine gewisse Belohnung.~
+@26 = ~Ja nun, das Leben ist hart.~
+@27 = ~Ihr sprecht nicht sehr einfühlsam, aber Ihr habt recht. Ich würde alles tun, um meine Kinder wiederzubekommen ... Aber Baram will mich nicht einmal vorlassen, und niemand kann helfen.~
+@28 = ~Verzeiht mir, aber im Augenblick verblasst diese Tatsache angesichts all dessen, was ich verloren habe. Bitte ... überlasst mich meiner Trauer.~
+@29 = ~Vielen Dank. Bitte lasst mich in meiner Trauer allein.~
+@30 = ~Das würdet Ihr? Ich würde alles geben, um meine Kinder vor diesem Unhold zu retten oder um zumindest zu wissen, dass es ihnen gut geht. Ich könnte Euch belohnen. Ich habe nichts bei mir, aber ... mein Gemahl hatte ein paar Ersparnisse. Ich weiß, wo sie sind und könnte es Euch sagen. Es würde reichen, denke ich.~ 
+@31 = ~Sagt mir, wo es ist, und ich werde es tun.~
+@32 = ~Also gut  Ich werde Euch helfen.~
+@33 = ~Ich werde tun was ich kann.~
+@34 = ~Ich habe es mir überlegt. Kein Interesse.~
+@35 = ~Ja ... das Leben ist 'hart' für alle in Luskan, und wir müssen das einfach so hinnehmen. Ist es das, was Ihr meint? Lasst mich einfach in Ruhe, mein Herr.~
+@36 = ~Ich bin keine Närrin. Wenn jemand meine Kinder nur deswegen suchen will, dann werde ich es ihm niemals vorher verraten.~
+@37 = ~Es freut mich das zu hören. Habt Ihr denn noch Fragen an mich?~
+@38 = ~Wo finde ich Baram?~
+@39 = ~Wisst Ihr, wo Eure Kinder sein könnten?~
+@40 = ~Warum würde Baram Eure Kinder festhalten?~
+@41 = ~Hat Baram Feinde?~
+@42 = ~I do not have any questions.~ /*Ich habe keine weiteren Fragen.*/
+@43 = ~Ich  Ich verstehe. Dann lasst mich allein.~
+@44 = ~Seine Männer hatten früher einen Stützpunkt im Armenviertel ... Aber er ist vor über einem Monat ausgebrannt, als der Krieg in den Straßen tobte. Wo er sich inzwischen aufhält  Ich  weiß es einfach nicht. Manche sagen, er lebt in den Abwasserkanälen. Ich kann nur hoffen, dass das nicht stimmt.~ 
+@45 = ~Nein. Ich habe nichts von ihnen gehört, und Baram will mir nichts sagen. Er ist der einzige, der wissen könnte, wo sie sind.~
+@46 = ~Ich  wünschte, ich wüsste es. Vielleicht hat er finstere Pläne mit ihnen ... Ich will nicht einmal daran denken. Ich hoffe, er hat sie irgendwo hingeschickt oder sie freigelassen, und ich weiß lediglich nicht, wo sie sind.~
+@47 = ~Ja. Die anderen Oberkommandanten, die er seit Wochen bekämpft hat. Nur Kurth ist übriggeblieben ... Aber keiner kann sagen, wo er ist. Kurth würde Baram gern tot sehen, so viel ist sicher.~
+@48 = ~Ihr habt mir einen Hoffnungsschimmer geschenkt. Ich  Ich wünsche Euch viel Glück.~
 
-@50 = ~You have heard my sorry tale, <SIRMAAM>. Is that not enough?~ [NWLOND52]
-@51 = ~You... return. Have you found my children? Are they safe?~ [NWLOND51]
-@52 = ~I have spoken to Baram... He says your children are safe.~
-@53 = ~Baram has reneged on his deal. He will not release your children.~
-@54 = ~Your children are fine, Londa... but I can't bring them to you.~
-@55 = ~I am sorry, Londa. All your children are dead...~
-@56 = ~They're dead, actually. Baram and his rats ate them.~
-@57 = ~So far there are no results.~
-@58 = ~That is a great relief... though until I see my children in person, I have my doubts as to whether the fiend is telling the truth. Is there any way my children can be rescued? Do you know?~ 
-@59 = ~I have agreed to perform a service for Baram in return for their release.~
-@60 = ~Baram wanted me to kill Kurth for their release, but I refused.~
-@61 = ~I'll see what I can do.~
-@62 = ~No! No-ooo! Please, my <LADYLORD>... do something! I cannot come this close and not find them! Please find my babies!~
-@63 = ~Fine? I... but why not? Bring me to them, then! I must see them!~
-@64 = ~Baram... sent them away. To orphanages, elsewhere. I don't know where they are.~
-@65 = ~I can't lie to you, Londa. Your children are dead...~
-@66 = ~Fine, make me tell the truth. Baram and his rats ate your kids.~
-@67 = ~D-dead? No... no, I don't believe it...~
-@68 = ~They... ate them?~
-@69 = ~The small ones. The rest he turned into wererats... and they're dead, too.~
-@70 = ~It's the truth. I thought you should know.~
-@71 = ~(yawn!) You'll get over it.~
-@72 = ~I had gotten my hopes up, seeing you. Please find them! I cannot bear not knowing where they are!~
-@73 = ~You have? I... dare not ask what it is. Whatever you do, free my children and I will be forever grateful. If they are well, I must see them!~
-@74 = ~Nor do I blame you. I certainly could not ask you to do such a thing. But... surely there must be some way to free them! Can you not... sneak into his base, or wherever Baram is? Break the door down, I don't know... just find them, I beg you!~ 
-@75 = ~When you find out more, please tell me. If they are truly safe, I cannot bear to be apart from them! You must rescue them, I beg you!~
-@76 = ~He... sent them to orphanages? Outside the city?~
-@77 = ~But you have... little Tomlen's bear. That's his, without a doubt. Th-thank you for... telling me... the truth. Here is the key to my husband's vault. It is in the sewers... in a long passage north of the water. Now I must... I must go. I... please, excuse me...~ 
+@50 = ~You have heard my sorry tale, <SIRMAAM>. Is that not enough?~ [NWLOND52]/*Ihr habt meine traurige Geschichte gehört. Reicht das nicht?*/
+@51 = ~Ihr... kommt zurück. Habt Ihr meine Kinder gefunden? Sind sie in Sicherheit?~ [NWLOND51]
+@52 = ~Ich habe mit Baram gesprochen. Er sagt, Eure Kinder sind in Sicherheit.~
+@53 = ~Baram hat den Handel rückgängig gemacht. Er will Eure Kinder nicht freilassen.~
+@54 = ~Euren Kindern geht es gut, Londa ... aber ich kann sie nicht zu Euch bringen.~
+@55 = ~Es tut mir Leid, Londa. Alle Eure Kinder sind tot.~
+@56 = ~Sie sind tatsächlich tot. Baram und seine Ratten haben sie gefressen.~
+@57 = ~So far there are no results.~/*Also handelt es sich um Piraten?*/
+@58 = ~Was für eine Erleichterung ... Aber bis ich meine Kinder nicht selbst gesehen habe, glaube ich dem Unhold kein Wort. Gibt es einen Weg, meine Kinder zu retten? Wisst Ihr etwas?~ 
+@59 = ~Ich habe mich bereit erklärt, Baram im Austausch für ihre Freilassung einen Dienst zu erweisen.~
+@60 = ~Baram wollte, dass ich für ihre Freilassung Kurth töte, aber das habe ich abgelehnt.~
+@61 = ~Ich werde sehen, was ich tun kann.~
+@62 = ~Nein! Neeein! Bitte tut etwas! Ich kann nicht so weit kommen und sie dann doch nicht finden! Bitte rettet meine Babys.~
+@63 = ~Gut? Ich ... Aber warum nicht? Dann bringt mich wenigstens zu ihnen! Ich muss sie sehen!~
+@64 = ~Baram ... hat sie weggebracht. In Waisenhäuser. Ich weiß nicht, wo sie sind.~
+@65 = ~Ich kann Euch nicht anlügen, Londa. Eure Kinder sind tot ...~
+@66 = ~Gut, dann zwingt Ihr mich, die Wahrheit zu sagen. Baram und seine Ratten haben Eure Kinder gefressen.~
+@67 = ~T-tot? Nein ... Nein, das kann ich nicht glauben ...~
+@68 = ~Sie ... haben sie gefressen?~
+@69 = ~Die kleinen zumindest. Die anderen hat er in Werratten verwandelt ... Und die sind auch tot.~
+@70 = ~Das ist die Wahrheit. Ich dachte, Ihr solltet sie erfahren.~
+@71 = ~(Gähn!) Ihr werdet's überstehen.~
+@72 = ~Ich hatte schon solche Hoffnungen, als ich Euch sah. Bitte findet sie! Ich kann es nicht länger ertragen, nicht zu wissen, wo sie sind.~
+@73 = ~Habt Ihr das? Ich  traue mich nicht zu fragen, was es ist. Was immer Ihr tut: Befreit meine Kinder, und ich bin Euch ewig dankbar. Wenn es Ihnen gut geht, muss ich sie sehen!~
+@74 = ~Recht habt Ihr getan. Etwas Derartiges könnte ich nie von Euch verlangen. Aber ... es muss doch sicher einen Weg geben, sie freizubekommen! Könnt Ihr Euch nicht  in seinen Stützpunkt schleichen, oder wo auch immer Baram ist? Brecht die Tür auf, tut irgendwas  aber findet sie, ich bitte Euch!~ 
+@75 = ~Wenn Ihr mehr erfahrt, sagt es mir bitte. Wenn sie wirklich in Sicherheit sind, dann ertrage ich es nicht, von ihnen getrennt zu sein! Ihr müsst sie retten, bitte!~
+@76 = ~Er hat sie in Waisenhäuser gebracht? Außerhalb der Stadt?~
+@77 = ~Aber Ihr habt ja  Klein-Tomlens Teddy. Das ist seiner, ganz bestimmt. D-Danke, dass Ihr ... mir ... die Wahrheit gesagt habt. Hier ist der Schlüssel zur Schatzkammer meines Gemahls. Sie liegt in den Abwasserkanälen, in einem langen Gang nördlich des Wassers. Nun muss ich  gehen. Ich ... Bitte entschuldigt mich ...~ 
 
-@79 = ~No. I refuse to believe it. I won't! You have no proof, none, that what you're saying is true! Bring me something... anything... that proves what you say and I'll... I'll believe it. Please, my <LADYLORD>... I'm begging you!~ 
-@80 = ~Very well. I shall return.~
-@81 = ~Forget it. I don't care if you don't believe me.~
-@82 = ~Look... I just want the coin. That's all.~
-@83 = ~And I... shall... wait here. Yes.~
-@84 = ~Ah. I... forgive me for... doubting you... Excuse me, <SIRMAAM>. I must... I must go.~
-@85 = ~No. You won't get it. I want the proof!~
-@86 = ~You gives me coin or you meets husband!~
-@87 = ~You wretch! You evil, pathetic <MANWOMAN>! You want my husband's coin, do you?! Is that all you desire?! Then here... take the key to his vault! Now I... I must... go. I... excuse me...~ 
+@79 = ~Nein, ich will das nicht glauben. Ich will nicht! Ihr habt keinen Beweis ... nicht einen ... dass es stimmt, was Ihr sagt! Bringt mir etwas  irgendetwas  das beweist, was Ihr sagt, und ich werde  Ich werde es glauben. Bitte, mein Herr... Ich flehe Euch an!~ 
+@80 = ~Nun gut. Ich werde wiederkommen.~
+@81 = ~Vergesst es. Was kümmert es mich, ob Ihr mir glaubt oder nicht?~
+@82 = ~Hört mal  Ich will nur das Geld. Das ist alles.~
+@83 = ~Und ich  werde  hier warten. Ja.~
+@84 = ~Ach. Ich  Vergebt mir meine... Zweifel ... Verzeiht, werter Herr. Ich muss ... ich muss gehen.~
+@85 = ~Nein. Ihr bekommt es nicht. Ich will den Beweis!~
+@86 = ~Geben mich Münzen oder treffen Gemahl!~
+@87 = ~Unglückseliger! Bösartiger, bemitleidenswerter Mann! Ihr wollt das Geld meines Gemahls, ja? Ist das alles, woran Ihr denken könnt?! Hier, der Schlüssel zu seiner Schatzkammer! Nun  nun muss ich ... gehen. Ich ... Entschuldigt mich ...~ 
 @88 = ~For the sake of your gods, help. My children disappeared, Baram took them. Do you know anything about them?~
+/*Also dann. Alle hier rüber. Ich habe dieses magische Geweih gefunden. Wisst Ihr etwas darüber?*/

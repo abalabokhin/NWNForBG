@@ -1,13 +1,14 @@
-@0 = ~Greetings of the Even-Handed to you. Welcome to the House of Tyr. I am Reverend Judge Oleff Uskar, in service of the Maimed God.~ [NWOLE052]
-@1 = ~Hello Oleff. Will you answer some questions?~
-@2 = ~Enough chatter. I have questions for you.~
-@3 = ~Goodbye.~
-@4 = ~This Tyrran home welcomes your well-mannered address. Ask what you will, and I shall respond as I am able.~
-@5 = ~What is your position here?~
-@6 = ~What are the tenets of the Tyrran faith?~
-@7 = ~I require temple services. What can you offer?~
-@8 = ~I am bound by Tyr to serve as long as the cause is just, but mind your tone. Disrespect is not tolerated in this place.~
-@9 = ~Tyr guide to you justice.~
-@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~
-@11 = ~There are many aspects to the worship of Tyr. He is the Blind Overlord, the Even-Handed. He is the guardian and governor of justice. The clergy are charged to reveal the truth, punish the guilty, right the wrong, and to always be true and just in their actions. We serve as judges, juries and, should the situation require it, executioners. Justice through benevolent force and armed vigilance.~ 
+@0 = ~Ti porgo il saluto del Mancino. Benvenuto nella Casa di Tyr. Io sono il Reverendo Giudice Oleff Uskar, al servizio del Dio Ferito.~ [NWOLE052]
+@1 = ~Hello Oleff. Will you answer some questions?~/*Salve a te. Risponderai a qualche altra domanda?*/
+@2 = ~Enough chatter. I have questions for you.~/*Basta con le chiacchiere. Ho delle domande per te.*/
+@3 = ~Addio.~
+@4 = ~Questa casa di Tyr accoglie a braccia aperte i tuoi modi cortesi. Chiedi ciò che vuoi e risponderò come posso.~
+@5 = ~Che posizione rivesti qui?~
+@6 = ~Quali sono i dogmi della fede in Tyr?~
+@7 = ~Ho bisogno dei servizi del tempio. Cosa puoi offrirmi?~
+@8 = ~Tyr mi impone di servire qualsiasi causa che sia considerata giusta, ma bada a come parli. La mancanza di rispetto non viene tollerata in questo luogo.~
+@9 = ~Che Tyr ti guidi verso la giustizia.~
+@10 = ~I am the Minister of the Temple of Tyr in Neverwinter.~/*Cerco il culto responsabile dell'epidemia di Neverwinter.*/
+@11 = ~L'adorazione di Tyr si manifesta in molti aspetti. Egli è il Cieco Signore Supremo, il Mancino. È il guardiano e il protettore della giustizia. Il clero ha il compito di rivelare la verità, punire i colpevoli, raddrizzare i torti e di essere sempre giusto e leale nelle proprie azioni. Noi facciamo da giudici, giurie e se la situazione dovesse richiederlo, da esecutori. Giustizia attraverso una forza benevola e una vigilanza armata.~ 
 @12 = ~Temple services are available to all who are suffering.~
+/*Sono al servizio di Aribeth e della guardia cittadina.*/

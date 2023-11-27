@@ -1,0 +1,29 @@
+//NWN Areas
+@NW1100 = "Docks"
+@NW1000 = "Core"
+@NW1200 = "Beggar's###Nest"
+@NW1400 = "Blacklake"
+@NW1300 = "Peninsula"
+
+@NW2600 = "Charwood"
+@NW2601 = "Charwood"
+@NW2500 = "Dark###Wood"
+@NW2510 = "Dark###Wood"
+@NW2400 = "Farms"
+@NW2900 = "Heart###of###the###Forest"
+@NW2300 = "South###Road"
+@NW2800 = "Druids###Grove"
+@NW2100 = "North###Road"
+@NW2700 = "East###Road"
+
+@NW1033 = "Helm###Hold"
+@NW2200 = "Green###Grifon"
+
+@NW2E55 = "Host###Tower"
+@NW2E31 = "Docks"
+
+@NW3100 = "Ford###Ilkard"
+@NW3200 = "Elk###Tribe###Keep"
+@NW3300 = "Ruins"
+
+@NW4000 = "Suburbs"

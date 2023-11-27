@@ -1,8 +1,9 @@
-@0 = ~Hello! No time to chat, I have to tend to the sick and wounded.~
-@1 = ~It looks like an infirmary. Can you fix me up?~
-@2 = ~Why are there so many sick people here? I hope it's not the plague.~
-@3 = ~Fine, I'll go.~
-@4 = ~Sorry, <SIRMAAM>.My knowledge is not sufficient for this. Speak to Neurik at the temple, he will surely help you.~
-@5 = ~The plague? No, of course not. These are common sick people, as well as warriors who have been wounded. If you'll excuse me, I'll mind my own business.~
-@6 = ~Sorry, no time to talk, I have to tend to the sick and wounded.~
+@0 = ~Hello! No time to chat, I have to tend to the sick and wounded.~/*Witaj! Daruj sobie sarkazm, nie musisz byæ tak niegrzeczny.*/
+@1 = ~It looks like an infirmary. Can you fix me up?~/*Wygl¹dasz jak poszukiwacz przygód. Mo¿esz mnie przeszkoliæ?*/
+@2 = ~Why are there so many sick people here? I hope it's not the plague.~/*Czemu jest tutaj tak wielu ludzi? Opowiedz mi o zarazie.*/
+@3 = ~Dobrze, ju¿ idê.~
+@4 = ~Sorry, <SIRMAAM>.My knowledge is not sufficient for this. Speak to Neurik at the temple, he will surely help you.~/*Wybacz <panie/pani>. Mój b³¹d. Nie przeszkadzam wiêc. Je¿eli zrobisz krzywdê dziecku, bêdê musia³<_/a> ciê zabiæ.*/
+@5 = ~The plague? No, of course not. These are common sick people, as well as warriors who have been wounded. If you'll excuse me, I'll mind my own business.~/*Zaraza "Nie, absolutnie." Nie obawiaj siê, otrzymasz sw¹ nagrodê, gdy bêdê wolny. Mylê, ¿eby lepiej pilnowa³ swoich w³asnych spraw...*/
+@6 = ~Sorry, no time to talk, I have to tend to the sick and wounded.~/*Przykro mi, Deekinie. Musisz sobie radziæ sam.*/
 @7 = ~You know, I'm an aspiring writer. I've just finished working on a novel based on true events in the life of the great but misunderstood Drizzt Do'Urden. If you have a few minutes, I can read you a passage.~
+/*Nie, zatrzymam j¹ sobie. Znajduje siê on w piwnicy domu we wschodniej czêci Pó³wyspu. Jeli co znajdziesz, wróæ do mnie po nagrodê.*/

@@ -1,5 +1,6 @@
-@0 = ~My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ 
-@1 = ~Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ 
-@2 = ~I already have a gentleman, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ 
-@3 = ~What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ 
+@0 = ~My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ /*Mio nome è <CHARNAME>. Io avventuriero. Il mio nome è solo affar mio.*/
+@1 = ~Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ /*Ahhaa... Tu provato a dominare mia mente, ma tu non c'è riuscita. Tu non prova ancora o io ammazza te.*/
+@2 = ~I already have a gentleman, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ /*Ho già la sua ordinanza. Ecco. Cosa ti fa credere che la tua razza dominerà sulla nostra? No.*/
+@3 = ~What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ /*Cosa succede? Non mi sembra che ti importi molto di questa J'nah. Ah!*/
 @4 = ~My name is Lady Merana and I am waiting for a gentleman. I ask you to move away so that my friend is not seduced by your beauty.~ 
+/*"Mi chiamo <CHARNAME>, e non lavoro per nessuno." Sono un lupo vecchio e furbo, amico mio! Non uno che muore così facilmente.*/
