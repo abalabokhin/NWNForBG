@@ -335,13 +335,22 @@ COPY_EXISTING ~SPWI103.SPL~ ~override/SPWI103.SPL~
   END
 END
 
-
 //Videos
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY ~NWNForBG/movies_ee/%LANGUAGE%~ ~movies~
+  COPY ~NWNForBG/movies_ee/english~ ~movies~
 END ELSE BEGIN
   MAKE_BIFF ~NWNMOVIE~ BEGIN
-    ~NWNForBG/movies/%LANGUAGE%~ ~.*\.MVE~
+    ~NWNForBG/movies/english~ ~.*\.MVE~
+  END
+END
+
+ACTION_IF STRING_EQUAL ~%LANGUAGE%~ ~russian~ BEGIN
+  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY ~NWNForBG/movies_ee/%LANGUAGE%~ ~movies~
+  END ELSE BEGIN
+    MAKE_BIFF ~NWNMOVIE~ BEGIN
+      ~NWNForBG/movies/%LANGUAGE%~ ~.*\.MVE~
+    END
   END
 END
 
