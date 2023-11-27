@@ -68,10 +68,11 @@ Translator Notes:
 ----------------
 Russian and English languages are pretty much done, but any corrections are always welcome.
 Other languages are mixed English and other language lines (eg French and English). For every line on English,
-the "closest" line in the language (eg French) from the original NWN texts is shown in comments. Often,
+the "closest" line(s) in the language (eg French) from the original NWN texts is shown in comments. Often,
 the original NWN lines were changed in English and should be change in the other language respectively. For
-the new lines, what in comments is usually garbage, so just translate them and remove the comments. It is easy
-to find all the lines that needs to be corrected by searching open comments string (without quotes): "/*".
+the new lines, what in comments is usually garbage, so just translate them. After correcting/translating the
+line, the comment should be removed. It is easy to find all the lines that needs to be corrected by searching
+open comments string (without quotes): "/*".
 
 What else needs to be done:
 
