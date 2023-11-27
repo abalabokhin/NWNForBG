@@ -97,7 +97,7 @@ Version History
 ---------------
 In development:
 
-- Added other languages (mixed with English), see tranlator notes to finish other languages
+- Added other languages (mixed with English), see tranlator notes if you want to finish them
 - Checked and fixed names in Russian and change "е" to "ё" where appropriate
 - Fixed death script for NWSPID3 to actually cast fireball again, thanks to JohnBob
 - Probably fixed again the script for NWSPID3 and NWSPID0 not to crash the game, thanks to BSpecific
