@@ -1,4 +1,20 @@
 TODO:
+*. для других языков - ошибки в следующих файлах:
+./NWMULLAD.tra
+iconv: illegal input sequence at position 5280
+
+./setup.tra
+iconv: illegal input sequence at position 157283
+
+./NWELYYD.tra
+iconv: illegal input sequence at position 226
+
+./NWRUMORL.tra
+iconv: illegal input sequence at position 1712
+
+./NWTANIT.tra
+iconv: illegal input sequence at position 10805
+или кодировать их руками, или понять в чем ошибки
 *. добавить таки все другие языки для НВН.
 *. перенести Крепость Хельма: Менее чем в дне пути на юго-восток от Невервинтера находится Твердыня Хельма, укрепленный монастырь, посвященный Богу Стражей.
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
