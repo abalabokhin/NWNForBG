@@ -1,7 +1,7 @@
 // NWN For BG
 BACKUP ~NWNForBG\backup~
 AUTHOR ~AGKanevchev, weidu EE adapation: paladin84, support: https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773~
-VERSION ~0.93~
+VERSION ~0.94~
 
 ALWAYS
   ACTION_IF GAME_IS ~eet~ BEGIN
@@ -46,23 +46,23 @@ LANGUAGE ~English~
 ~english~
 ~NWNForBG/tra/english/setup.tra~
 
-LANGUAGE ~French~
+LANGUAGE ~French with little English~
 ~french~
 ~NWNForBG/tra/french/setup.tra~
 
-LANGUAGE ~Spanish~
+LANGUAGE ~Spanish with little English~
 ~spanish~
 ~NWNForBG/tra/spanish/setup.tra~
 
-LANGUAGE ~German~
+LANGUAGE ~German with little English~
 ~german~
 ~NWNForBG/tra/german/setup.tra~
 
-LANGUAGE ~Italian~
+LANGUAGE ~Italian with little English~
 ~italian~
 ~NWNForBG/tra/italian/setup.tra~
 
-LANGUAGE ~Polish~
+LANGUAGE ~Polish with little English~
 ~polish~
 ~NWNForBG/tra/polish/setup.tra~
 

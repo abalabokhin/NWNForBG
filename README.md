@@ -3,7 +3,7 @@ NWNForBG
 
 Neverwinter Nights for Baldur's Gate
 ------------------------------------
-Version: 0.93
+Version: 0.94
 
 Author: AGKanevchev
 ---------------
@@ -97,6 +97,8 @@ Version History
 ---------------
 In development:
 
+0.94 (11/27/23)
+
 - Added other languages (mixed with English), see tranlator notes if you want to finish them
 - Checked and fixed names in Russian and change "е" to "ё" where appropriate
 - Fixed death script for NWSPID3 to actually cast fireball again, thanks to JohnBob
@@ -104,7 +106,7 @@ In development:
 - Fixed NWSLAADD animation, thanks to BSpecific
 - Fixed item NWMISC32 not to dissapear after rest, thanks to BSpecific
 - Fixed script for NWLERK to open bridge after the death
-- Fix game freeze if Mwssanger from Neverwinter talk not to main hero, thanks to p\_zombie
+- Fix game freeze if a messenger from Neverwinter talk not to main hero, thanks to p\_zombie
 
 0.93 (11/15/23)
 
