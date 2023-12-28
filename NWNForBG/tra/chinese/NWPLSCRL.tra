@@ -1,5 +1,6 @@
-@0 = ~Oh, you're a mage. How nice to find such an educated customer here in Port Llasta. I have some scrolls for you to sell, would you care to see them?~
-@1 = ~Yeah, show me what you got.~
-@2 = ~No, not now, maybe later.~
-@3 = ~Oh, that's too bad. Well, come back again, I'll be waiting for you.~
+@0 = ~Oh, you're a mage. How nice to find such an educated customer here in Port Llasta. I have some scrolls for you to sell, would you care to see them?~/*走你的路。 能在赖斯特港见到像你一样好的家伙真是不错。 剧情已被修改。你希望保存它们吗？*/
+@1 = ~当然，让我看看你有什么。~
+@2 = ~No, not now, maybe later.~/*我会马上开始的，或许等一下。*/
+@3 = ~Oh, that's too bad. Well, come back again, I'll be waiting for you.~/*“那太糟糕了。” 嗯，看看你的大“脑”袋！*/
 @4 = ~Good afternoon. Are there any mages among you? I have some scrolls for sale, would you care to take a look?~
+/*下午 那有什么安全的地方？ 我有事情提醒你注意。*/

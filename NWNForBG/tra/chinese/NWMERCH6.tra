@@ -1,11 +1,12 @@
-@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~
-@1 = ~I need to ask a few questions.~
-@2 = ~Goodbye.~
-@3 = ~Hmm, I can tell you about my product.~ 
-@4 = ~I need infomation about places in Neverwinter.~
-@5 = ~What do you know of the plague?~
-@6 = ~Have you heard of anything odd? Any rumors?~
-@7 = ~Come again.~ 
-@8 = ~Sorry, I can't help. Ask someone else about it.~ 
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~
+@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*贵族顾客 我有一份你的信件的副本，会好好看看的。 再次问候你，真高兴见到你！*/
+@1 = ~我得问点问题。~
+@2 = ~再见。~
+@3 = ~Hmm, I can tell you about my product.~ /*当然，我可以再说一遍。*/
+@4 = ~我需要无冬城里的一些讯息。~
+@5 = ~你知道些瘟疫的什么？~
+@6 = ~你有听到任何奇怪的事情吗？任何谣传？~
+@7 = ~Come again.~ /*再会！*/
+@8 = ~Sorry, I can't help. Ask someone else about it.~ /*对不起，我帮不了你。 “问别人吧。”*/
+@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*每个人多少都知道有关瘟疫的事情。其中有一半不是真的，另一半则是真的。我不确定我能不能告诉你更多的事情。*/
 @10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~
+/*他们究竟找到了什么？ 我现在没时间谈这些。 这动物园看来不比瘟疫重要。*/

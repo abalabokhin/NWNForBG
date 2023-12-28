@@ -1,9 +1,10 @@
-@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~
-@1 = ~Who's your superior?~
-@2 = ~If these are barracks, then where are the soldiers?~
-@3 = ~Fine, I'll go.~
-@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~
-@5 = ~Since you're a mercenary. That mean you're for hire?~
-@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~
-@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~
+@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~/*我马上需要治疗。 这扇门不是为你创造的……*/
+@1 = ~Who's your superior?~/*你为谁工作？*/
+@2 = ~If these are barracks, then where are the soldiers?~/*我找到他们了，这是他们的戒指。*/
+@3 = ~好，我要走了。~
+@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~/*我准备好要接受信念的测试了。 我是谁？我是谁？那不是我告诉树的事情。 我得走了，再见。*/
+@5 = ~Since you're a mercenary. That mean you're for hire?~/*你是佣兵。那表示你可以被雇佣？*/
+@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~/*你打扫什么？ 当然当然。 你是谁？在这条街上做什么？ 我有了权杖。*/
+@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~/*我准备好了。 >现在安静下来，我真的不会伤害你的。*/
 @8 = ~Go your own way. You don't belong here.~
+/*你自己去取水。 你那么确定。*/

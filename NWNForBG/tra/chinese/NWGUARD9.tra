@@ -1,6 +1,7 @@
-@0 = ~I serve Lord Nasher and Lady Aribeth.~ 
-@1 = ~Look, I'm busy, okay?~
-@2 = ~We need to train, don't interfere.~ 
-@3 = ~I don't recognize you, are you new?~ 
-@4 = ~*Sigh* Business has been a little *too* busy since the plague hit, you know what I mean... ?~ 
+@0 = ~I serve Lord Nasher and Lady Aribeth.~ /*那里找得到艾瑞贝丝女士？*/
+@1 = ~看，我很忙，是吧？~
+@2 = ~We need to train, don't interfere.~ /*我想谈谈报酬。*/
+@3 = ~I don't recognize you, are you new?~ /*我认为你不会想知道的。*/
+@4 = ~唉，自从瘟疫来到这里之后，生意变的有一点点*太*忙了，你知道我的意思吧……？~ 
 @5 = ~If you have any business, speak to Lady Aribeth.~
+/*为什么你会对艾瑞贝丝女士这么有兴趣？*/

@@ -1,4 +1,5 @@
-@0 = ~Hey. Welcome, make yourselves at home. Just try not to bother the locals, okay? Times are tough, so they're in enough trouble as it is. Well, what can I do for you?~ 
-@1 = ~Show us what you have to offer.~
-@2 = ~Nothing.~
+@0 = ~Hey. Welcome, make yourselves at home. Just try not to bother the locals, okay? Times are tough, so they're in enough trouble as it is. Well, what can I do for you?~ /*欢迎你，你好呀。 回到我其他的问题上，好吧？ 你们为什么在我家？请离开。 是的？我能为你效劳吗？*/
+@1 = ~Show us what you have to offer.~/*那，给我看看你有什么东西。*/
+@2 = ~没什么。~
 @3 = ~Hi. I don't want no trouble from you hobos. Looks like every other bar in this town has already kicked you out. You're not gonna stay here for long if you're loud. If you don't, you're welcome. Well, what can I do for you?~
+/*我不想跟你聊天。 把另一个耳朵放进剩下的孔里。 你不要再哭了好吗？ 现在只剩我们了，我能为你做什么？*/

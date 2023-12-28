@@ -1,5 +1,6 @@
-@0 = ~Be polite with guests. Everyone comes here to relax. So, do you want a drink?~ 
-@1 = ~Yep.~
-@2 = ~No.~
-@3 = ~Be careful not to drink too much. You don't want to stumble around Luskan without thinking. So, do you want a drink?~ 
+@0 = ~Be polite with guests. Everyone comes here to relax. So, do you want a drink?~ /*我问完了。 借一步说话。 你为什么想要一个妻子？*/
+@1 = ~对。~
+@2 = ~不。~
+@3 = ~Be careful not to drink too much. You don't want to stumble around Luskan without thinking. So, do you want a drink?~ /*[打嗝]我喝太多了！ 你绝对不会想惹我的。 你为什么想要一个妻子？*/
 @4 = ~As long as you're ready to buy, you're welcome here. So, do you want a drink?~
+/*这里不再欢迎你了。 你为什么想要一个妻子？*/

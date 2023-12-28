@@ -1,9 +1,10 @@
-@0 = ~Isn't there a policy in the taverns against walking around with a weapon out?~
-@1 = ~Please put that away, <SIRMAAM>. It makes me nervous.~
-@2 = ~What's that smell? It's like... bear dung, or something...~
-@3 = ~Who is this with us? New? Have you all decided to move out of Neverwinter now?~ 
-@4 = ~I don't have time to talk to the likes of you, sorry. You could be one of them werewolves around here, for all I know.~
-@5 = ~It's a good thing the plague in Neverwinter is over. If it went on any longer, the city would be too weak and there'd be war for sure!~
-@6 = ~You'd best be careful on the roads. We gots werewolves in these parts... and I hear there's monster bandits all over the northern routes.~
-@7 = ~Pleased to meet you, <SIRMAAM>. Don't remember seeing you in Port Llast before now.~
+@0 = ~出门在外不是应该有些礼貌吗？特别是又带了家伙的。~
+@1 = ~Please put that away, <SIRMAAM>. It makes me nervous.~/*请把它拿开<SIRMAAM>。不然我很紧张。*/
+@2 = ~什么味道？闻起来像……像是大便……还是什么的。~
+@3 = ~Who is this with us? New? Have you all decided to move out of Neverwinter now?~ /*谁是莱恩顿呀？ 创建新档 你听到任何来自无冬森林的消息么？*/
+@4 = ~我没时间在这里跟你耗。你就跟那些狼人一样，我就知道。~
+@5 = ~真高兴在无冬城的瘟疫已经过去了。如果拖得太久，整个城市就会衰退，可能还会发生战争。~
+@6 = ~你在路上务必小心。我们曾在那边抓过狼人，我听说北边全都是些怪物强盗。~
+@7 = ~真高兴见到你，<SIRMAAM>。不记得是不是在赖斯特港见过你。~
 @8 = ~I don't suppose there's a chance you'd buy me a drink, friend?~ 
+/*我不认为你有机会可以请我喝一杯，帅哥。*/

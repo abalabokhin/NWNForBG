@@ -1,8 +1,9 @@
-@0 = ~Welcome to my shop! I sell potions here. Would you like to take a look at my wares?~
-@1 = ~Yes, please. Show me what you've got.~
-@2 = ~Oh, no, no, some other time.~
-@3 = ~You're back! Would you like to take a look at my potions?~
-@4 = ~Yeah, I guess so.~
-@5 = ~Another time, perhaps.~
-@6 = ~I'm sure you'll be satisfied, <SIRMAAM>!~
+@0 = ~Welcome to my shop! I sell potions here. Would you like to take a look at my wares?~/*欢迎你来。 我这儿全都完成了。 你愿意买个奴隶吗？*/
+@1 = ~Yes, please. Show me what you've got.~/*“是的，请。” 把你找到的东西交出来。*/
+@2 = ~Oh, no, no, some other time.~/*好吧，另找时间。*/
+@3 = ~You're back! Would you like to take a look at my potions?~/*你完蛋了！ 我想看看你的货柜。*/
+@4 = ~Yeah, I guess so.~/*是……我想是。*/
+@5 = ~或许另一次吧。~
+@6 = ~I'm sure you'll be satisfied, <SIRMAAM>!~/*我尽力而为，<SIRMAAM>。*/
 @7 = ~Hope we see you again!~
+/*哈！我觉得又年轻了！*/

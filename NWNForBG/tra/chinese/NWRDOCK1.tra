@@ -1,8 +1,9 @@
-@0 = ~Beware of going down the sewers at the docks, I've heard stories of some madmen.~
-@1 = ~Business is slow enough as it is, and then there's this auction at the Seedy Tavern.~
-@2 = ~I hear there's a split among the Bloodsailors who have settled in this region. Some support Vengaul, while others have taken Callik's side.~
-@3 = ~Jerol, the owner of the Twenty in a Quiver, accepts Smugglers' Coin for some reason, what a fool! You can't buy anything in other parts of the city with those coins anyway.~
-@4 = ~Vengaul spread a rumor that one of the ingredients for a cure for pestilence would be auctioned off. It seems the auction has been canceled, I don't know why.~
-@5 = ~Lieutenant Callik is an impatient and greedy man... He may have taken, uh, some measures to get rid of old Vengaul, Bloodysailors' leaders.~
-@6 = ~There are a few places in the docks where you can go down into the sewers, but I wouldn't advise you to go there. It's run by Bloodysailors, and you'll be dead before you know it.~
+@0 = ~Beware of going down the sewers at the docks, I've heard stories of some madmen.~/*没机会。我已经看到神为我们准备了什么。*/
+@1 = ~Business is slow enough as it is, and then there's this auction at the Seedy Tavern.~/*这个嘛，反正我要就对了，希迪酒馆在哪儿？*/
+@2 = ~I hear there's a split among the Bloodsailors who have settled in this region. Some support Vengaul, while others have taken Callik's side.~/*我要问关于血腥水手和温古埃尔的事。 你无法在附近有敌人时休息。*/
+@3 = ~Jerol, the owner of the Twenty in a Quiver, accepts Smugglers' Coin for some reason, what a fool! You can't buy anything in other parts of the city with those coins anyway.~/*他拥有“满囊二十支箭”市场。你会在这儿的东部找到它，在那条往这区的另一方的路上。*/
+@4 = ~Vengaul spread a rumor that one of the ingredients for a cure for pestilence would be auctioned off. It seems the auction has been canceled, I don't know why.~/*那么这个杰娜一定有了一件宝物了。很容易想到的。 看来这个法术没有被法球吸收。*/
+@5 = ~Lieutenant Callik is an impatient and greedy man... He may have taken, uh, some measures to get rid of old Vengaul, Bloodysailors' leaders.~/*苍白之主/武僧是强有力的对手。 我在找摧毁邪教和他们头目的方法。*/
+@6 = ~There are a few places in the docks where you can go down into the sewers, but I wouldn't advise you to go there. It's run by Bloodysailors, and you'll be dead before you know it.~/*在沙土上有许多脚印，无论狗头人们藏在哪里，种种迹象表明他们就在附近。 说来话长。我不想讲这些无聊事来烦你*/
 @7 = ~If you meet Helm's priests on the street, don't trust them. All their favors are worthless, and the priests themselves are suspicious.~
+/*我在街上看过你，你已经死了啊。 牌子上写着“自由村”，但污迹上的花纹令人起疑。*/

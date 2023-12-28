@@ -1,16 +1,17 @@
-@0 = ~So... *this* is the latest group of entrants, is it? Very well. My name is Jaroo - Master of the Games. Allow me to explain how this will work:~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~
-@2 = ~Neither I nor Mutamin are responsible for your deaths or the deaths of your companions. If you enter, it is your risk to take.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] 
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]
-@5 = ~Yes, I am. Here is your 1000 gold.~ 
-@6 = ~I'm not ready yet.~ 
-@7 = ~Yes, but is 1000 gold pieces really necessary?~
+@0 = ~你们就是最后加入的一组是吧？我叫贾尔儒，是这个游戏的主办人，现在就让我来介绍游戏规则吧！~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*地穴入口 当此选项被勾选时，编辑器会在你加入一个点后马上询问所需的文字。 你把所有知道得都告诉我，别浪费时间。 如果你想改变将来，你必须自己做这项工作。*/
+@2 = ~无论是我或是穆塔密都不会为你的死或你朋友的死负责。如果你要进入，那你就必须承担风险。~ [NWJAR056]
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*现在，既然每一个人都想进入，那就带着你们的钱来找我，我会送你们进入。*/
+@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*<LADYLORD>，你准备好进入地牢了吗？*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*是的，这里是500枚金币。*/
+@6 = ~I'm not ready yet.~ /*不，没那么严重。*/
+@7 = ~是的，但一定要付500枚金币吗？~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-
-@10 = ~As you desire. I shall remain here, should you change your mind.~
-@11 = ~It is. Each entry is added to the total that will be given to the winner who makes it through the dungeon. Since you have an equal chance of succeeding, I'm afraid it wouldn't be fair to offer a discount. So are you ready for the competition?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~
-@13 = ~You've won the competition. Congratulations! Speak to Mutamin to collect your reward!~ [NWJAR052]
-@14 = ~The competition has been won. Come back another time, when the dungeon has been re-worked for the sequel!~ [NWJAR053]
+/*很好，现在，<LADYLORD>！请预备——比赛开始！*/
+@10 = ~你要改变主意吗？~
+@11 = ~是的。最后的优胜者将可以独享这一大笔钱。 之后你有一次相同的机会，但是恐怕我无法给你什么优惠。那么-你准备好了吗？~ 
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*快点。 最后的封印被打开，伊路斯克的遗迹对你开放了。*/
+@13 = ~你赢了，恭喜你！赶快去向穆塔密拿你的奖金吧！~ [NWJAR052]
+@14 = ~有人赢得比赛了。等下次地牢重新开启的时候再来吧！~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
+/*有人赢得比赛了。等下次地牢重新开启的时候再来吧！*/

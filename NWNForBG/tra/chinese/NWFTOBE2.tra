@@ -1,13 +1,14 @@
 // FTOBE2 translation file from BG1
-@1 = ~Ahh! By what right are ye in mine house?!~
-@2 = ~I am sorry for intruding, but I was just wondering what you were doing.~
-@3 = ~Save your breath, I mean you no harm.~
-@4 = ~By right of might! I would suggest that you cooperate while I help myself to your valuables.~
-@5 = ~My apologies! I must have the wrong address. I will leave immediately.~
-@6 = ~What I am doing be no concern of yours! Leave at once, lest I call the guards!~
-@7 = ~Then leave me and mine! You were not invited to my home so get out!~
-@8 = ~I can do naught to stop you, but I can call those who can. Leave now, lest the guard dispatch you.~
-@9 = ~And well you should! If my husband were to catch you here, it would surely be the end of you!~
-@10 = ~I'm a simple town girl, and I don't think anything I know would be of any use to mighty adventurers.~
-@11 = ~I told you before. I don't want you here! Now git!~
+@1 = ~Ahh! By what right are ye in mine house?!~/*啊！ 准确地说，我们碰上了怎样的大麻烦？*/
+@2 = ~I am sorry for intruding, but I was just wondering what you were doing.~/*很对不起，但我的回答是正确的！*/
+@3 = ~Save your breath, I mean you no harm.~/*冷静下来。我并没有责怪你的意思。*/
+@4 = ~By right of might! I would suggest that you cooperate while I help myself to your valuables.~/*躲起来！ 能以我手中之剑为你服务是我的荣幸。*/
+@5 = ~My apologies! I must have the wrong address. I will leave immediately.~/*考古学家 我得警告其他人！ 我马上需要治疗。*/
+@6 = ~What I am doing be no concern of yours! Leave at once, lest I call the guards!~/*我的事与你无关。 医疗！一定要医这些伤！*/
+@7 = ~Then leave me and mine! You were not invited to my home so get out!~/*就别来找我了！ 你不在邀请之列，滚出去！*/
+@8 = ~I can do naught to stop you, but I can call those who can. Leave now, lest the guard dispatch you.~/*我不能从你那里拿走它们。给…拿这这些角。 现在给我，我就离开。*/
+@9 = ~And well you should! If my husband were to catch you here, it would surely be the end of you!~/*那是你应该的。 如果不是知道你要来，我早就把门锁起来了！*/
+@10 = ~I'm a simple town girl, and I don't think anything I know would be of any use to mighty adventurers.~/*我确定我可不是你认为“有趣”的事。*/
+@11 = ~I told you before. I don't want you here! Now git!~/*我帮你找书。 我不想死。 等等！*/
 @12 = ~You've outstayed your welcome!~
+/*你当然受欢迎。*/
