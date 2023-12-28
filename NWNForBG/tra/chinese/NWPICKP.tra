@@ -1,19 +1,19 @@
-@0 = ~Uh? Hey, you! Are you trying to get into my pocket?~/*å•Šï¼Ÿ å˜¿å˜¿ï¼ ä½ æœ‰å°è¯•å»æ¬ºéª—æˆ‘å—ï¼Ÿ*/
-@1 = ~\[Intelligence\] - I am shocked by the groundlessness of your accusations. I have been anywhere but near you, and I have a whole group of witnesses who will confirm this.~/*æˆ‘æƒ³æˆ‘æ‰¾åˆ°å…¶ä¸­ä¸€ä¸ªå¾·é²ä¼Šäº†ï¼ æˆ‘æ˜¯å—äººä¹‹æ‰˜ï¼Œè€Œä¸”æˆ‘ä¹Ÿä¸æ‰“ç®—ç©ºæ‰‹è€Œå›ã€‚å¿«æŠŠå®çŸ³äº¤å‡ºæ¥ï¼*/
-@2 = ~\[Wisdom\] - Use your head before making such unfounded statements. I was in a hurry and probably hit you as I was passing by. But no one was hurt.~/*ä½ æ˜¯è°ï¼Ÿåœ¨è¿™æ¡è¡—ä¸Šåšä»€ä¹ˆï¼Ÿ æˆ‘ä¸äº†è§£ä½ åœ¨è¯´äº›ä»€ä¹ˆä¸œè¥¿ã€‚ ä¸ï¼Œæˆ‘è®¤ä¸ºä¸æ˜¯ã€‚*/
-@3 = ~\[Charisma\] - I assure you, I didn't do it. But I did see a shrouded silhouette walking by. Could that be the real culprit?~/*ä½†æ˜¯ï¼Œå½“ç„¶ä½ æ²¡æœ‰åšã€‚ ä½†æˆ‘å¿…é¡»åšåˆ°ï¼æˆ‘éœ€è¦é‚£æˆ’æŒ‡ã€‚ èƒ½ç»™æˆ‘é‚£ç¡¬å¸å—ï¼Œæ‹œæ‰˜ï¼Ÿ*/
-@4 = ~\[Lore\] - On the contrary. I was fascinated by this thing that fell out of your pocket and just wanted to take a closer look at it before returning it to you.~/*[ä¸“æ³¨äºçŒæ‰‹ã€‚] â€œä½†æ˜¯ç°åœ¨ï¼Œæˆ‘å°±ç¥ä½ å¥½è¿å§ã€‚æˆ‘å¾—èµ¶ç´§åœ¨å–ä¸Šä¸€æ¯ã€‚â€*/
-@5 = ~\[Reputation\] - Hmm, I'll kindly remind you that you're talking to an honorable citizen. Your wallet was dangling from your belt and about to fall. I just wanted to correct him and warn you.~/*è€é¼ åœ¨ä½ èº«ä¸Šå—…æ¥å—…å»ï¼Œæœ€åæ–­å®šä½ ä¸æ˜¯å°¸ä½“â€¦â€¦è‡³å°‘ç›®å‰è¿˜ä¸æ˜¯ã€‚ ä½ éœ€è¦åŒ»æ²»ï¼Œæ‰€ä»¥ä½ å†å»æ¯”èµ›ä¸€æ¬¡å§ã€‚ æˆ‘åªæ˜¯è¦ä½ è¯´å‡ºæ¥ã€‚*/
-@6 = ~\[Reputation\] - Maybe you shouldn't make me angry, huh? Shut your mouth and get out of here while you still can.~/*æˆ–è®¸ä½ è¯¥å»é—®æ³•å¸ˆï¼Œå—¯ï¼Ÿ é—­ä¸Šä½ çš„å˜´å®‰é™ï¼Œä¸ç„¶æˆ‘æ€äº†ä½ ï¼*/
-@7 = ~(Try to run away.)~/*èµ°ä½ çš„è·¯ã€‚*/
-@8 = ~What insolence! Once again, you're trying to steal from me.~/*ä»€ä¹ˆä¸è§äº†ï¼Ÿ åŸæ¥ä½ ä¸è¿‡æ˜¯åœ¨æ¬ºéª—æˆ‘ï¼*/
-@9 = ~This is the last straw! I won't be robbed by the likes of you!~/*è¿™å¤ªè½»è€Œæ˜“ä¸¾äº†ï¼ æˆ‘è¦åœ¨ä½ èº«ä¸Šæå‡ºä¸ªå‡è®¾ã€‚*/
-@10 = ~Hmm... This time you'll get off with just a warning. This time...~/*å“ˆå“ˆâ€¦â€¦ â€œé‚£ä¹ˆå‘Šè¯‰æˆ‘è¿™ä¸ªæˆ’æŒ‡çš„äº‹æƒ…å§ã€‚â€ è¿™è¾¹ã€‚*/
-@11 = ~But from now on, I'll be watching you more closely!~/*æ˜¯çš„ï¼Œæˆ‘ä¼šåœ¨ä¸€æ—ç…§é¡¾ä½ çš„ã€‚*/
-@12 = ~Bah! I'll close my eyes this time, but don't try it again!~/*å“ˆï¼ æˆ‘ä¼šæ•‘ä½ çš„ï¼Œä½†åˆ«å¦¨ç¢æˆ‘ã€‚*/
-@13 = ~Great! But remember well, this is your last warning!~/*å·¨å¤§çš„ å†è§ï¼Œåä¼šæœ‰æœŸã€‚*/
-@14 = ~Run wherever you want, thief! But this dirty theft will soon be known!~/*èƒ½è·‘å°±å¿«è·‘ï¼ æˆ‘ä»¬ä¸ä¼šæ‰“è¾“è¿™åœºä»—ï¼*/
-@15 = ~This is it! No more apologies!~/*ä»€ä¹ˆäº‹å•Šï¼Ÿï¼ å¤Ÿäº†ã€‚å—æ­»å§ï¼*/
-@16 = ~This time I will report this brazen robbery attempt! Now get out of my sight!~/*â€œè¿™ä¸ªå¤´ç›”èƒ½ä¿æŠ¤æˆ‘ã€‚â€ èº²èµ·æ¥ï¼*/
+@0 = ~Uh? Hey, you! Are you trying to get into my pocket?~/*°¡£¿ ºÙºÙ£¡ ÄãÓĞ³¢ÊÔÈ¥ÆÛÆ­ÎÒÂğ£¿*/
+@1 = ~\[Intelligence\] - I am shocked by the groundlessness of your accusations. I have been anywhere but near you, and I have a whole group of witnesses who will confirm this.~/*ÎÒÏëÎÒÕÒµ½ÆäÖĞÒ»¸öµÂÂ³ÒÁÁË£¡ ÎÒÊÇÊÜÈËÖ®ÍĞ£¬¶øÇÒÎÒÒ²²»´òËã¿ÕÊÖ¶ø»Ø¡£¿ì°Ñ±¦Ê¯½»³öÀ´£¡*/
+@2 = ~\[Wisdom\] - Use your head before making such unfounded statements. I was in a hurry and probably hit you as I was passing by. But no one was hurt.~/*ÄãÊÇË­£¿ÔÚÕâÌõ½ÖÉÏ×öÊ²Ã´£¿ ÎÒ²»ÁË½âÄãÔÚËµĞ©Ê²Ã´¶«Î÷¡£ ²»£¬ÎÒÈÏÎª²»ÊÇ¡£*/
+@3 = ~\[Charisma\] - I assure you, I didn't do it. But I did see a shrouded silhouette walking by. Could that be the real culprit?~/*µ«ÊÇ£¬µ±È»ÄãÃ»ÓĞ×ö¡£ µ«ÎÒ±ØĞë×öµ½£¡ÎÒĞèÒªÄÇ½äÖ¸¡£ ÄÜ¸øÎÒÄÇÓ²±ÒÂğ£¬°İÍĞ£¿*/
+@4 = ~\[Lore\] - On the contrary. I was fascinated by this thing that fell out of your pocket and just wanted to take a closer look at it before returning it to you.~/*[×¨×¢ÓÚÁÔÊÖ¡£] ¡°µ«ÊÇÏÖÔÚ£¬ÎÒ¾Í×£ÄãºÃÔË°É¡£ÎÒµÃ¸Ï½ôÔÚºÈÉÏÒ»±­¡£¡±*/
+@5 = ~\[Reputation\] - Hmm, I'll kindly remind you that you're talking to an honorable citizen. Your wallet was dangling from your belt and about to fall. I just wanted to correct him and warn you.~/*ÀÏÊóÔÚÄãÉíÉÏĞáÀ´ĞáÈ¥£¬×îºó¶Ï¶¨Äã²»ÊÇÊ¬Ìå¡­¡­ÖÁÉÙÄ¿Ç°»¹²»ÊÇ¡£ ÄãĞèÒªÒ½ÖÎ£¬ËùÒÔÄãÔÙÈ¥±ÈÈüÒ»´Î°É¡£ ÎÒÖ»ÊÇÒªÄãËµ³öÀ´¡£*/
+@6 = ~\[Reputation\] - Maybe you shouldn't make me angry, huh? Shut your mouth and get out of here while you still can.~/*»òĞíÄã¸ÃÈ¥ÎÊ·¨Ê¦£¬àÅ£¿ ±ÕÉÏÄãµÄ×ì°²¾²£¬²»È»ÎÒÉ±ÁËÄã£¡*/
+@7 = ~(Try to run away.)~/*×ßÄãµÄÂ·¡£*/
+@8 = ~What insolence! Once again, you're trying to steal from me.~/*Ê²Ã´²»¼ûÁË£¿ Ô­À´Äã²»¹ıÊÇÔÚÆÛÆ­ÎÒ£¡*/
+@9 = ~This is the last straw! I won't be robbed by the likes of you!~/*ÕâÌ«Çá¶øÒ×¾ÙÁË£¡ ÎÒÒªÔÚÄãÉíÉÏÌá³ö¸ö¼ÙÉè¡£*/
+@10 = ~Hmm... This time you'll get off with just a warning. This time...~/*¹ş¹ş¡­¡­ ¡°ÄÇÃ´¸æËßÎÒÕâ¸ö½äÖ¸µÄÊÂÇé°É¡£¡± Õâ±ß¡£*/
+@11 = ~But from now on, I'll be watching you more closely!~/*ÊÇµÄ£¬ÎÒ»áÔÚÒ»ÅÔÕÕ¹ËÄãµÄ¡£*/
+@12 = ~Bah! I'll close my eyes this time, but don't try it again!~/*¹ş£¡ ÎÒ»á¾ÈÄãµÄ£¬µ«±ğ·Á°­ÎÒ¡£*/
+@13 = ~Great! But remember well, this is your last warning!~/*¾Ş´óµÄ ÔÙ¼û£¬ºó»áÓĞÆÚ¡£*/
+@14 = ~Run wherever you want, thief! But this dirty theft will soon be known!~/*ÄÜÅÜ¾Í¿ìÅÜ£¡ ÎÒÃÇ²»»á´òÊäÕâ³¡ÕÌ£¡*/
+@15 = ~This is it! No more apologies!~/*Ê²Ã´ÊÂ°¡£¿£¡ ¹»ÁË¡£ÊÜËÀ°É£¡*/
+@16 = ~This time I will report this brazen robbery attempt! Now get out of my sight!~/*¡°Õâ¸öÍ·¿øÄÜ±£»¤ÎÒ¡£¡± ¶ãÆğÀ´£¡*/
 @17 = ~Once again, eh, thief? You can't have it! These pathetic attempts at thievery must be stopped.~
-/*ä½ åˆå›æ¥å•¦ï¼Ÿ ä½ ä¸èƒ½è¿™ä¹ˆåšï¼ æˆ‘éœ€è¦ä½ çš„å¸®åŠ©ã€‚å¿…é¡»é˜»æ­¢èµ«æ´›è¿ªæ–¯ã€‚*/
+/*ÄãÓÖ»ØÀ´À²£¿ Äã²»ÄÜÕâÃ´×ö£¡ ÎÒĞèÒªÄãµÄ°ïÖú¡£±ØĞë×èÖ¹ºÕÂåµÏË¹¡£*/

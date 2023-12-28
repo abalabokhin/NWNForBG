@@ -1,17 +1,17 @@
-@0 = ~ä½ ä»¬å°±æ˜¯æœ€ååŠ å…¥çš„ä¸€ç»„æ˜¯å§ï¼Ÿæˆ‘å«è´¾å°”å„’ï¼Œæ˜¯è¿™ä¸ªæ¸¸æˆçš„ä¸»åŠäººï¼Œç°åœ¨å°±è®©æˆ‘æ¥ä»‹ç»æ¸¸æˆè§„åˆ™å§ï¼~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*åœ°ç©´å…¥å£ å½“æ­¤é€‰é¡¹è¢«å‹¾é€‰æ—¶ï¼Œç¼–è¾‘å™¨ä¼šåœ¨ä½ åŠ å…¥ä¸€ä¸ªç‚¹åé©¬ä¸Šè¯¢é—®æ‰€éœ€çš„æ–‡å­—ã€‚ ä½ æŠŠæ‰€æœ‰çŸ¥é“å¾—éƒ½å‘Šè¯‰æˆ‘ï¼Œåˆ«æµªè´¹æ—¶é—´ã€‚ å¦‚æœä½ æƒ³æ”¹å˜å°†æ¥ï¼Œä½ å¿…é¡»è‡ªå·±åšè¿™é¡¹å·¥ä½œã€‚*/
-@2 = ~æ— è®ºæ˜¯æˆ‘æˆ–æ˜¯ç©†å¡”å¯†éƒ½ä¸ä¼šä¸ºä½ çš„æ­»æˆ–ä½ æœ‹å‹çš„æ­»è´Ÿè´£ã€‚å¦‚æœä½ è¦è¿›å…¥ï¼Œé‚£ä½ å°±å¿…é¡»æ‰¿æ‹…é£é™©ã€‚~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*ç°åœ¨ï¼Œæ—¢ç„¶æ¯ä¸€ä¸ªäººéƒ½æƒ³è¿›å…¥ï¼Œé‚£å°±å¸¦ç€ä½ ä»¬çš„é’±æ¥æ‰¾æˆ‘ï¼Œæˆ‘ä¼šé€ä½ ä»¬è¿›å…¥ã€‚*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*<LADYLORD>ï¼Œä½ å‡†å¤‡å¥½è¿›å…¥åœ°ç‰¢äº†å—ï¼Ÿ*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*æ˜¯çš„ï¼Œè¿™é‡Œæ˜¯500æšé‡‘å¸ã€‚*/
-@6 = ~I'm not ready yet.~ /*ä¸ï¼Œæ²¡é‚£ä¹ˆä¸¥é‡ã€‚*/
-@7 = ~æ˜¯çš„ï¼Œä½†ä¸€å®šè¦ä»˜500æšé‡‘å¸å—ï¼Ÿ~
+@0 = ~ÄãÃÇ¾ÍÊÇ×îºó¼ÓÈëµÄÒ»×éÊÇ°É£¿ÎÒ½Ğ¼Ö¶ûÈå£¬ÊÇÕâ¸öÓÎÏ·µÄÖ÷°ìÈË£¬ÏÖÔÚ¾ÍÈÃÎÒÀ´½éÉÜÓÎÏ·¹æÔò°É£¡~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*µØÑ¨Èë¿Ú µ±´ËÑ¡Ïî±»¹´Ñ¡Ê±£¬±à¼­Æ÷»áÔÚÄã¼ÓÈëÒ»¸öµãºóÂíÉÏÑ¯ÎÊËùĞèµÄÎÄ×Ö¡£ Äã°ÑËùÓĞÖªµÀµÃ¶¼¸æËßÎÒ£¬±ğÀË·ÑÊ±¼ä¡£ Èç¹ûÄãÏë¸Ä±ä½«À´£¬Äã±ØĞë×Ô¼º×öÕâÏî¹¤×÷¡£*/
+@2 = ~ÎŞÂÛÊÇÎÒ»òÊÇÄÂËşÃÜ¶¼²»»áÎªÄãµÄËÀ»òÄãÅóÓÑµÄËÀ¸ºÔğ¡£Èç¹ûÄãÒª½øÈë£¬ÄÇÄã¾Í±ØĞë³Ğµ£·çÏÕ¡£~ [NWJAR056]
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*ÏÖÔÚ£¬¼ÈÈ»Ã¿Ò»¸öÈË¶¼Ïë½øÈë£¬ÄÇ¾Í´ø×ÅÄãÃÇµÄÇ®À´ÕÒÎÒ£¬ÎÒ»áËÍÄãÃÇ½øÈë¡£*/
+@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*<LADYLORD>£¬Äã×¼±¸ºÃ½øÈëµØÀÎÁËÂğ£¿*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*ÊÇµÄ£¬ÕâÀïÊÇ500Ã¶½ğ±Ò¡£*/
+@6 = ~I'm not ready yet.~ /*²»£¬Ã»ÄÇÃ´ÑÏÖØ¡£*/
+@7 = ~ÊÇµÄ£¬µ«Ò»¶¨Òª¸¶500Ã¶½ğ±ÒÂğ£¿~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-/*å¾ˆå¥½ï¼Œç°åœ¨ï¼Œ<LADYLORD>ï¼è¯·é¢„å¤‡â€”â€”æ¯”èµ›å¼€å§‹ï¼*/
-@10 = ~ä½ è¦æ”¹å˜ä¸»æ„å—ï¼Ÿ~
-@11 = ~æ˜¯çš„ã€‚æœ€åçš„ä¼˜èƒœè€…å°†å¯ä»¥ç‹¬äº«è¿™ä¸€å¤§ç¬”é’±ã€‚ ä¹‹åä½ æœ‰ä¸€æ¬¡ç›¸åŒçš„æœºä¼šï¼Œä½†æ˜¯ææ€•æˆ‘æ— æ³•ç»™ä½ ä»€ä¹ˆä¼˜æƒ ã€‚é‚£ä¹ˆ-ä½ å‡†å¤‡å¥½äº†å—ï¼Ÿ~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*å¿«ç‚¹ã€‚ æœ€åçš„å°å°è¢«æ‰“å¼€ï¼Œä¼Šè·¯æ–¯å…‹çš„é—è¿¹å¯¹ä½ å¼€æ”¾äº†ã€‚*/
-@13 = ~ä½ èµ¢äº†ï¼Œæ­å–œä½ ï¼èµ¶å¿«å»å‘ç©†å¡”å¯†æ‹¿ä½ çš„å¥–é‡‘å§ï¼~ [NWJAR052]
-@14 = ~æœ‰äººèµ¢å¾—æ¯”èµ›äº†ã€‚ç­‰ä¸‹æ¬¡åœ°ç‰¢é‡æ–°å¼€å¯çš„æ—¶å€™å†æ¥å§ï¼~ [NWJAR053]
+/*ºÜºÃ£¬ÏÖÔÚ£¬<LADYLORD>£¡ÇëÔ¤±¸¡ª¡ª±ÈÈü¿ªÊ¼£¡*/
+@10 = ~ÄãÒª¸Ä±äÖ÷ÒâÂğ£¿~
+@11 = ~ÊÇµÄ¡£×îºóµÄÓÅÊ¤Õß½«¿ÉÒÔ¶ÀÏíÕâÒ»´ó±ÊÇ®¡£ Ö®ºóÄãÓĞÒ»´ÎÏàÍ¬µÄ»ú»á£¬µ«ÊÇ¿ÖÅÂÎÒÎŞ·¨¸øÄãÊ²Ã´ÓÅ»İ¡£ÄÇÃ´-Äã×¼±¸ºÃÁËÂğ£¿~ 
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*¿ìµã¡£ ×îºóµÄ·âÓ¡±»´ò¿ª£¬ÒÁÂ·Ë¹¿ËµÄÒÅ¼£¶ÔÄã¿ª·ÅÁË¡£*/
+@13 = ~ÄãÓ®ÁË£¬¹§Ï²Äã£¡¸Ï¿ìÈ¥ÏòÄÂËşÃÜÄÃÄãµÄ½±½ğ°É£¡~ [NWJAR052]
+@14 = ~ÓĞÈËÓ®µÃ±ÈÈüÁË¡£µÈÏÂ´ÎµØÀÎÖØĞÂ¿ªÆôµÄÊ±ºòÔÙÀ´°É£¡~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*æœ‰äººèµ¢å¾—æ¯”èµ›äº†ã€‚ç­‰ä¸‹æ¬¡åœ°ç‰¢é‡æ–°å¼€å¯çš„æ—¶å€™å†æ¥å§ï¼*/
+/*ÓĞÈËÓ®µÃ±ÈÈüÁË¡£µÈÏÂ´ÎµØÀÎÖØĞÂ¿ªÆôµÄÊ±ºòÔÙÀ´°É£¡*/

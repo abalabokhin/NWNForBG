@@ -1,9 +1,9 @@
-@0 = ~Hello! No time to chat, I have to tend to the sick and wounded.~/*ä½ å¥½ï¼ ä½ ä¸å¿…è¿™ä¹ˆè®½åˆºæ— ç¤¼ã€‚*/
-@1 = ~It looks like an infirmary. Can you fix me up?~/*ä½ çœ‹èµ·æ¥åƒä¸ªå†’é™©è€…ã€‚ ä½ å¯ä»¥è®­ç»ƒæˆ‘å—ï¼Ÿ*/
-@2 = ~Why are there so many sick people here? I hope it's not the plague.~/*ä¸ºä»€ä¹ˆæœ‰è¿™ä¹ˆå¤šäººåœ¨è¿™é‡Œï¼Ÿ å‘Šè¯‰æˆ‘å…³äºç˜Ÿç–«çš„äº‹æƒ…ã€‚*/
-@3 = ~å¥½ï¼Œæˆ‘è¦èµ°äº†ã€‚~
-@4 = ~Sorry, <SIRMAAM>.My knowledge is not sufficient for this. Speak to Neurik at the temple, he will surely help you.~/*æŠ±æ­‰ï¼Œ<SIRMAAM>ã€‚æˆ‘çš„é”™ï¼Œæˆ‘ä¸ä¼šå†æ‰“æ‰°ä½ äº†ã€‚ å¦‚æœä½ æ€äº†å­©å­ï¼Œæˆ‘åªå¥½æ€äº†ä½ ã€‚*/
-@5 = ~The plague? No, of course not. These are common sick people, as well as warriors who have been wounded. If you'll excuse me, I'll mind my own business.~/*ç˜Ÿç–« â€œä¸ï¼Œå½“ç„¶ä¸ã€‚â€ åˆ«å®³æ€•ï¼Œåªè¦ä½ æ”¾æˆ‘å‡ºæ¥å°±ä¼šå¾—åˆ°ä½ çš„å¥–èµäº†ã€‚ æˆ‘è§‰å¾—ä½ æœ€å¥½ç®¡ä½ è‡ªå·±çš„äº‹å°±å¥½â€¦â€¦*/
-@6 = ~Sorry, no time to talk, I have to tend to the sick and wounded.~/*å¯¹ä¸èµ·ï¼Œå¾·é‡‘ã€‚ä½ å¾—è‡ªå·±å»æ‰¾ä½ çš„å†’é™©ã€‚*/
+@0 = ~Hello! No time to chat, I have to tend to the sick and wounded.~/*ÄãºÃ£¡ Äã²»±ØÕâÃ´·í´ÌÎŞÀñ¡£*/
+@1 = ~It looks like an infirmary. Can you fix me up?~/*Äã¿´ÆğÀ´Ïñ¸öÃ°ÏÕÕß¡£ Äã¿ÉÒÔÑµÁ·ÎÒÂğ£¿*/
+@2 = ~Why are there so many sick people here? I hope it's not the plague.~/*ÎªÊ²Ã´ÓĞÕâÃ´¶àÈËÔÚÕâÀï£¿ ¸æËßÎÒ¹ØÓÚÎÁÒßµÄÊÂÇé¡£*/
+@3 = ~ºÃ£¬ÎÒÒª×ßÁË¡£~
+@4 = ~Sorry, <SIRMAAM>.My knowledge is not sufficient for this. Speak to Neurik at the temple, he will surely help you.~/*±§Ç¸£¬<SIRMAAM>¡£ÎÒµÄ´í£¬ÎÒ²»»áÔÙ´òÈÅÄãÁË¡£ Èç¹ûÄãÉ±ÁËº¢×Ó£¬ÎÒÖ»ºÃÉ±ÁËÄã¡£*/
+@5 = ~The plague? No, of course not. These are common sick people, as well as warriors who have been wounded. If you'll excuse me, I'll mind my own business.~/*ÎÁÒß ¡°²»£¬µ±È»²»¡£¡± ±ğº¦ÅÂ£¬Ö»ÒªÄã·ÅÎÒ³öÀ´¾Í»áµÃµ½ÄãµÄ½±ÉÍÁË¡£ ÎÒ¾õµÃÄã×îºÃ¹ÜÄã×Ô¼ºµÄÊÂ¾ÍºÃ¡­¡­*/
+@6 = ~Sorry, no time to talk, I have to tend to the sick and wounded.~/*¶Ô²»Æğ£¬µÂ½ğ¡£ÄãµÃ×Ô¼ºÈ¥ÕÒÄãµÄÃ°ÏÕ¡£*/
 @7 = ~You know, I'm an aspiring writer. I've just finished working on a novel based on true events in the life of the great but misunderstood Drizzt Do'Urden. If you have a few minutes, I can read you a passage.~
-/*ä¸ï¼Œæˆ‘è¦ç•™ç€å®ƒã€‚ å®ƒåœ¨æ½˜å°¼è‹æ‹‰åŒºä¸œè¾¹çš„ä¸€æ‰€æˆ¿å­çš„åœ°ä¸‹å®¤é‡Œã€‚å¦‚æœä½ å‘ç°ä»»ä½•å°±å›æ¥ï¼Œæˆ‘ä»˜ç»™ä½ é…¬é‡‘ã€‚*/
+/*²»£¬ÎÒÒªÁô×ÅËü¡£ ËüÔÚÅËÄáËÕÀ­Çø¶«±ßµÄÒ»Ëù·¿×ÓµÄµØÏÂÊÒÀï¡£Èç¹ûÄã·¢ÏÖÈÎºÎ¾Í»ØÀ´£¬ÎÒ¸¶¸øÄã³ê½ğ¡£*/

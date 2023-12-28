@@ -1,6 +1,6 @@
-@0 = ~My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ /*æˆ‘çš„åå­—æ˜¯<CHARNAME>Â·<CHARNAME>ã€‚æˆ‘æ˜¯ä¸€ä¸ªå†’é™©è€…ã€‚ æˆ‘å«ä»€ä¹ˆåå­—ä¸å…³ä½ çš„äº‹ã€‚*/
-@1 = ~Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ /*å“ˆå“ˆâ€¦â€¦ æˆ‘è™½ç„¶ä¸çŸ¥é“ä½ æƒ³è¯•ç€åšä»€ä¹ˆï¼Œä½†æ˜¯å¦‚æœä½ å†åšä¸€æ¬¡è¿™ä»¶äº‹çš„è¯ï¼Œæˆ‘ä¼šæ€äº†ä½ ï¼*/
-@2 = ~I already have a gentleman, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ /*æˆ‘å·²ç»æœ‰ä»–çš„çº¸æ¡äº†ï¼Œåœ¨è¿™é‡Œã€‚ ä»€ä¹ˆäº‹è®©ä½ è§‰å¾—ä½ çš„ç§æ—å°†ä¼šç»Ÿæ²»æˆ‘ä»¬çš„ç§æ—ï¼Ÿ ä¸ã€‚*/
-@3 = ~What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ /*å‘ç”Ÿäº†ä»€ä¹ˆï¼Ÿ ä½ å¬èµ·æ¥å¯¹æ°å¨œçŸ¥é“çš„å¹¶ä¸å¾ˆå¤šã€‚ å•Šï¼*/
+@0 = ~My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ /*ÎÒµÄÃû×ÖÊÇ<CHARNAME>¡¤<CHARNAME>¡£ÎÒÊÇÒ»¸öÃ°ÏÕÕß¡£ ÎÒ½ĞÊ²Ã´Ãû×Ö²»¹ØÄãµÄÊÂ¡£*/
+@1 = ~Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ /*¹ş¹ş¡­¡­ ÎÒËäÈ»²»ÖªµÀÄãÏëÊÔ×Å×öÊ²Ã´£¬µ«ÊÇÈç¹ûÄãÔÙ×öÒ»´ÎÕâ¼şÊÂµÄ»°£¬ÎÒ»áÉ±ÁËÄã£¡*/
+@2 = ~I already have a gentleman, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ /*ÎÒÒÑ¾­ÓĞËûµÄÖ½ÌõÁË£¬ÔÚÕâÀï¡£ Ê²Ã´ÊÂÈÃÄã¾õµÃÄãµÄÖÖ×å½«»áÍ³ÖÎÎÒÃÇµÄÖÖ×å£¿ ²»¡£*/
+@3 = ~What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ /*·¢ÉúÁËÊ²Ã´£¿ ÄãÌıÆğÀ´¶Ô½ÜÄÈÖªµÀµÄ²¢²»ºÜ¶à¡£ °¡£¡*/
 @4 = ~My name is Lady Merana and I am waiting for a gentleman. I ask you to move away so that my friend is not seduced by your beauty.~ 
-/*â€œæˆ‘çš„åå­—æ˜¯<CHARNAME>ï¼Œæˆ‘ä¸ä¸ºä»»ä½•ä¸€è¾¹å·¥ä½œã€‚â€ æˆ‘æ˜¯åªå¤è€æ®‹é…·çš„ç‹¼ï¼Œäº²çˆ±çš„æœ‹å‹â€”â€”ä¸æ˜¯é‚£ä¹ˆå®¹æ˜“æ­»çš„ã€‚*/
+/*¡°ÎÒµÄÃû×ÖÊÇ<CHARNAME>£¬ÎÒ²»ÎªÈÎºÎÒ»±ß¹¤×÷¡£¡± ÎÒÊÇÖ»¹ÅÀÏ²Ğ¿áµÄÀÇ£¬Ç×°®µÄÅóÓÑ¡ª¡ª²»ÊÇÄÇÃ´ÈİÒ×ËÀµÄ¡£*/

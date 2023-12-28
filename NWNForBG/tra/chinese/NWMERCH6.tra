@@ -1,12 +1,12 @@
-@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*è´µæ—é¡¾å®¢ æˆ‘æœ‰ä¸€ä»½ä½ çš„ä¿¡ä»¶çš„å‰¯æœ¬ï¼Œä¼šå¥½å¥½çœ‹çœ‹çš„ã€‚ å†æ¬¡é—®å€™ä½ ï¼ŒçœŸé«˜å…´è§åˆ°ä½ ï¼*/
-@1 = ~æˆ‘å¾—é—®ç‚¹é—®é¢˜ã€‚~
-@2 = ~å†è§ã€‚~
-@3 = ~Hmm, I can tell you about my product.~ /*å½“ç„¶ï¼Œæˆ‘å¯ä»¥å†è¯´ä¸€éã€‚*/
-@4 = ~æˆ‘éœ€è¦æ— å†¬åŸé‡Œçš„ä¸€äº›è®¯æ¯ã€‚~
-@5 = ~ä½ çŸ¥é“äº›ç˜Ÿç–«çš„ä»€ä¹ˆï¼Ÿ~
-@6 = ~ä½ æœ‰å¬åˆ°ä»»ä½•å¥‡æ€ªçš„äº‹æƒ…å—ï¼Ÿä»»ä½•è°£ä¼ ï¼Ÿ~
-@7 = ~Come again.~ /*å†ä¼šï¼*/
-@8 = ~Sorry, I can't help. Ask someone else about it.~ /*å¯¹ä¸èµ·ï¼Œæˆ‘å¸®ä¸äº†ä½ ã€‚ â€œé—®åˆ«äººå§ã€‚â€*/
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*æ¯ä¸ªäººå¤šå°‘éƒ½çŸ¥é“æœ‰å…³ç˜Ÿç–«çš„äº‹æƒ…ã€‚å…¶ä¸­æœ‰ä¸€åŠä¸æ˜¯çœŸçš„ï¼Œå¦ä¸€åŠåˆ™æ˜¯çœŸçš„ã€‚æˆ‘ä¸ç¡®å®šæˆ‘èƒ½ä¸èƒ½å‘Šè¯‰ä½ æ›´å¤šçš„äº‹æƒ…ã€‚*/
+@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*¹ó×å¹Ë¿Í ÎÒÓĞÒ»·İÄãµÄĞÅ¼şµÄ¸±±¾£¬»áºÃºÃ¿´¿´µÄ¡£ ÔÙ´ÎÎÊºòÄã£¬Õæ¸ßĞË¼ûµ½Äã£¡*/
+@1 = ~ÎÒµÃÎÊµãÎÊÌâ¡£~
+@2 = ~ÔÙ¼û¡£~
+@3 = ~Hmm, I can tell you about my product.~ /*µ±È»£¬ÎÒ¿ÉÒÔÔÙËµÒ»±é¡£*/
+@4 = ~ÎÒĞèÒªÎŞ¶¬³ÇÀïµÄÒ»Ğ©Ñ¶Ï¢¡£~
+@5 = ~ÄãÖªµÀĞ©ÎÁÒßµÄÊ²Ã´£¿~
+@6 = ~ÄãÓĞÌıµ½ÈÎºÎÆæ¹ÖµÄÊÂÇéÂğ£¿ÈÎºÎÒ¥´«£¿~
+@7 = ~Come again.~ /*ÔÙ»á£¡*/
+@8 = ~Sorry, I can't help. Ask someone else about it.~ /*¶Ô²»Æğ£¬ÎÒ°ï²»ÁËÄã¡£ ¡°ÎÊ±ğÈË°É¡£¡±*/
+@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*Ã¿¸öÈË¶àÉÙ¶¼ÖªµÀÓĞ¹ØÎÁÒßµÄÊÂÇé¡£ÆäÖĞÓĞÒ»°ë²»ÊÇÕæµÄ£¬ÁíÒ»°ëÔòÊÇÕæµÄ¡£ÎÒ²»È·¶¨ÎÒÄÜ²»ÄÜ¸æËßÄã¸ü¶àµÄÊÂÇé¡£*/
 @10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~
-/*ä»–ä»¬ç©¶ç«Ÿæ‰¾åˆ°äº†ä»€ä¹ˆï¼Ÿ æˆ‘ç°åœ¨æ²¡æ—¶é—´è°ˆè¿™äº›ã€‚ è¿™åŠ¨ç‰©å›­çœ‹æ¥ä¸æ¯”ç˜Ÿç–«é‡è¦ã€‚*/
+/*ËûÃÇ¾¿¾¹ÕÒµ½ÁËÊ²Ã´£¿ ÎÒÏÖÔÚÃ»Ê±¼äÌ¸ÕâĞ©¡£ Õâ¶¯ÎïÔ°¿´À´²»±ÈÎÁÒßÖØÒª¡£*/

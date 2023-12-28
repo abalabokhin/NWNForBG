@@ -1,16 +1,16 @@
-@0 = ~You can't go through.~/*ä½ ä¸è¦é‚£ä¹ˆç²—é²ï¼*/
-@1 = ~ä¸ºä»€ä¹ˆï¼Ÿ~
-@2 = ~We didn't come all this way to be stopped by some talking door.~/*ä¸ºä»€ä¹ˆç¬¬ä¸€æ¬¡æåŠçš„æ—¶å€™ä½ ä¸æ‹¿å‡ºæ¥ï¼Ÿ*/
-@3 = ~ä½ æ˜¯å“ªä½ï¼Ÿ~
-@4 = ~Only those with four crystal trinkets can pass through this door.~/*ä¸ã€‚æ—¶å€™æ™šäº†ã€‚è®©æˆ‘ä»¬ç»“æŸè¿™ä¸ªæ³•åº­ã€‚*/
-@5 = ~What? That's ridiculous.~/*ä»€ä¹ˆï¼Ÿ â€œå¤ªè’å”äº†ã€‚â€*/
-@6 = ~I'm sick of these riddles. Open up, or you'll be a pile of talking rubble.~/*æˆ‘åœ¨è¯´ç«–ç´æ‰‹ã€‚ åœ¨è¿™é‡Œå·¥ä½œä½ ä¸åº”æ„Ÿåˆ°ç¾è€»å—ï¼Ÿ*/
-@7 = ~I give up. I don't want any more of these riddles. Take me back to the tavern.~/*æˆ‘çˆ±ã€‚ æˆ‘æ²¡æœ‰å…¶ä»–çš„é—®é¢˜äº†ã€‚ â€œæˆ‘ä»¬åˆå†æ¬¡å›åˆ°é‚£ä¸ªé—®é¢˜äº†ï¼Ÿâ€*/
-@8 = ~å¥½çš„ã€‚ å†è§ã€‚~ 
-@9 = ~Are you sure? You can't go back, you can't go back.~/*ä½ å—ä¼¤äº†ï¼Ÿ ä½ è¦æˆ‘å¸¦ä½ å›åˆ°åœ°è¡¨å—ï¼Ÿ*/
-@10 = ~Tell us again who you're gonna pass?~/*åœ¨å‘Šè¯‰æˆ‘ä¸€æ¬¡è¦å¦‚ä½•æ‰¾åˆ°å¥¹ï¼Ÿ*/
-@11 = ~It's settled, I'm going back to the tavern.~ /*æ‘”å›äº†åœ°é“ã€‚*/
-@12 = ~I was just stopping by. See you later.~ /*æˆ‘åªæ˜¯å¼€ç©ç¬‘ã€‚ ä»¥åè§ã€‚*/
-@13 = ~So be it.~ /*â€œå°±é‚£æ ·ã€‚â€*/
+@0 = ~You can't go through.~/*Äã²»ÒªÄÇÃ´´ÖÂ³£¡*/
+@1 = ~ÎªÊ²Ã´£¿~
+@2 = ~We didn't come all this way to be stopped by some talking door.~/*ÎªÊ²Ã´µÚÒ»´ÎÌá¼°µÄÊ±ºòÄã²»ÄÃ³öÀ´£¿*/
+@3 = ~ÄãÊÇÄÄÎ»£¿~
+@4 = ~Only those with four crystal trinkets can pass through this door.~/*²»¡£Ê±ºòÍíÁË¡£ÈÃÎÒÃÇ½áÊøÕâ¸ö·¨Í¥¡£*/
+@5 = ~What? That's ridiculous.~/*Ê²Ã´£¿ ¡°Ì«»ÄÌÆÁË¡£¡±*/
+@6 = ~I'm sick of these riddles. Open up, or you'll be a pile of talking rubble.~/*ÎÒÔÚËµÊúÇÙÊÖ¡£ ÔÚÕâÀï¹¤×÷Äã²»Ó¦¸Ğµ½Ğß³ÜÂğ£¿*/
+@7 = ~I give up. I don't want any more of these riddles. Take me back to the tavern.~/*ÎÒ°®¡£ ÎÒÃ»ÓĞÆäËûµÄÎÊÌâÁË¡£ ¡°ÎÒÃÇÓÖÔÙ´Î»Øµ½ÄÇ¸öÎÊÌâÁË£¿¡±*/
+@8 = ~ºÃµÄ¡£ ÔÙ¼û¡£~ 
+@9 = ~Are you sure? You can't go back, you can't go back.~/*ÄãÊÜÉËÁË£¿ ÄãÒªÎÒ´øÄã»Øµ½µØ±íÂğ£¿*/
+@10 = ~Tell us again who you're gonna pass?~/*ÔÚ¸æËßÎÒÒ»´ÎÒªÈçºÎÕÒµ½Ëı£¿*/
+@11 = ~It's settled, I'm going back to the tavern.~ /*Ë¤»ØÁËµØµÀ¡£*/
+@12 = ~I was just stopping by. See you later.~ /*ÎÒÖ»ÊÇ¿ªÍæĞ¦¡£ ÒÔºó¼û¡£*/
+@13 = ~So be it.~ /*¡°¾ÍÄÇÑù¡£¡±*/
 @14 = ~You can pass.~ 
-/*ä½ å¯ä»¥è¿‡å»ã€‚*/
+/*Äã¿ÉÒÔ¹ıÈ¥¡£*/

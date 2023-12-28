@@ -1,7 +1,7 @@
-@0 = ~Don't you have anything else to do?~/*ä½ æœ‰ä»€ä¹ˆä¸œè¥¿å–çš„å—ï¼Ÿ*/
-@1 = ~I swear I saw a ghost the other day, so now I keep a torch and a good club ready all the time. As long as it stays out of my backyard, I don't care.~ /*æˆ‘ç›®å‰æ­£ä¸ºåˆ«äººæœåŠ¡ã€‚æ²¡æœ‰ä»€ä¹ˆå¯ä»¥å†å’Œä½ è¯´çš„äº†ã€‚ æˆ‘ä¸çŸ¥é“é‚£æ˜¯è°è€Œæˆ‘ä¹Ÿä¸åœ¨ä¹ï¼*/
-@2 = ~You'd better go to Pete O'Deel's farm. I'll tell you a secret, he has a marriageable daughter, a great girl.~ /*ä½ æœ€è¦å¾—èµ°äº†ï¼Œä¿æŒåœ¨æš—å¤„é‡Œã€‚ ä½ å‘Šè¯‰æˆ‘ä½ çš„ç§˜å¯†ï¼Œæˆ‘ç­”åº”ä½ æˆ‘ç»å¯¹ä¸ä¼šè·Ÿåˆ«äººè®²ã€‚*/
-@3 = ~I've no time to chat - need to sow one more plot. But I will give you one piece of advice: be careful on the roads. Rogues can take more than just gold from you.~ /*æˆ‘ç°åœ¨æ²¡æœ‰æ—¶é—´å’Œä½ è¯´è¯ã€‚å†ä¼šã€‚ ä¸€å—å·¨å¤§è€Œç»“å®çš„èŠ±å²—å²©æ¨ªèººåœ¨åœ°ä¸Šã€‚ æˆ‘æƒ³è·Ÿä½ é—®äº›é—®é¢˜ã€‚*/
-@4 = ~If you are heading to Charwood, then it is better to turn back, there are a lot of ghosts there. No one has yet returned from the gloomy forest in my lifetime, I'm telling you.~ /*ä½ è¯¥ä¸ä¼šæ˜¯è¦å»é™†æ–¯åå§ï¼Œæ˜¯å—ï¼Ÿæˆ‘å¬è¯´ä»–ä»¬å…³é—­äº†é‚£é‡Œçš„æ‰€æœ‰æ•™å ‚äº†ã€‚ ä½ è¿˜æ²¡æ‰“è´¥æˆ‘çš„ç¬¬äºŒåœºæ¯”èµ›é‡Œçš„é­”åƒã€‚*/
+@0 = ~Don't you have anything else to do?~/*ÄãÓĞÊ²Ã´¶«Î÷ÂôµÄÂğ£¿*/
+@1 = ~I swear I saw a ghost the other day, so now I keep a torch and a good club ready all the time. As long as it stays out of my backyard, I don't care.~ /*ÎÒÄ¿Ç°ÕıÎª±ğÈË·şÎñ¡£Ã»ÓĞÊ²Ã´¿ÉÒÔÔÙºÍÄãËµµÄÁË¡£ ÎÒ²»ÖªµÀÄÇÊÇË­¶øÎÒÒ²²»ÔÚºõ£¡*/
+@2 = ~You'd better go to Pete O'Deel's farm. I'll tell you a secret, he has a marriageable daughter, a great girl.~ /*Äã×îÒªµÃ×ßÁË£¬±£³ÖÔÚ°µ´¦Àï¡£ Äã¸æËßÎÒÄãµÄÃØÃÜ£¬ÎÒ´ğÓ¦ÄãÎÒ¾ø¶Ô²»»á¸ú±ğÈË½²¡£*/
+@3 = ~I've no time to chat - need to sow one more plot. But I will give you one piece of advice: be careful on the roads. Rogues can take more than just gold from you.~ /*ÎÒÏÖÔÚÃ»ÓĞÊ±¼äºÍÄãËµ»°¡£ÔÙ»á¡£ Ò»¿é¾Ş´ó¶ø½áÊµµÄ»¨¸ÚÑÒºáÌÉÔÚµØÉÏ¡£ ÎÒÏë¸úÄãÎÊĞ©ÎÊÌâ¡£*/
+@4 = ~If you are heading to Charwood, then it is better to turn back, there are a lot of ghosts there. No one has yet returned from the gloomy forest in my lifetime, I'm telling you.~ /*Äã¸Ã²»»áÊÇÒªÈ¥Â½Ë¹¿²°É£¬ÊÇÂğ£¿ÎÒÌıËµËûÃÇ¹Ø±ÕÁËÄÇÀïµÄËùÓĞ½ÌÌÃÁË¡£ Äã»¹Ã»´ò°ÜÎÒµÄµÚ¶ş³¡±ÈÈüÀïµÄÄ§Ïñ¡£*/
 @5 = ~I am a simple farmer. I do not know anything. And there is no need to trample on my crops.~ 
-/*æˆ‘æ˜¯ä¸ªå¦“å¥³ã€‚ æˆ‘æ²¡æœ‰é—®ä»€ä¹ˆã€‚ å–‚ï¼Œæˆ‘æƒ³è¦è·Ÿä½ è°ˆè°ˆã€‚*/
+/*ÎÒÊÇ¸ö¼ËÅ®¡£ ÎÒÃ»ÓĞÎÊÊ²Ã´¡£ Î¹£¬ÎÒÏëÒª¸úÄãÌ¸Ì¸¡£*/

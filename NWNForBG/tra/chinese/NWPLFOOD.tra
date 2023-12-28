@@ -1,8 +1,8 @@
-@0 = ~I'm just a simple grocery merchant. I don't think you are interested.~/*æˆ‘æƒ³ï¼Œè¿™ä¸è¿‡æ˜¯ä¸ªæ•…äº‹ã€‚ â€œæˆ‘å¯¹ä»–ä»¬æ²¡ä»€ä¹ˆå…´è¶£â€¦â€¦â€*/
-@1 = ~Where can I buy the goods I need?~/*æˆ‘å¯ä»¥åœ¨å“ªé‡Œæ‰¾åˆ°åŠ›é‡ä¹‹å’’ï¼Ÿ*/
-@2 = ~I'm looking for the the Town Hall, can you tell me where it is?~/*æˆ‘æ­£åœ¨æ‰¾ä¸€åå¥½çš„æ²»ç–—è€…åœ¨æˆ‘çš„ä»»åŠ¡ä¸­èƒ½å¸®åŠ©æˆ‘ã€‚*/
-@3 = ~Okay, I'll move on then.~/*å¥½ï¼Œæˆ‘æ¥ã€‚*/
-@4 = ~In the Cracked Anvil, of course. Haljal has everything a hero like you might need. In addition, there are many street vendors in Port Llast, one of them even sells scrolls for magicians. Such a strange guy, I'm afraid of him.~/*ç¢é“ç §ã€‚ æˆ‘å’Œä½ æ²¡æœ‰ä»€ä¹ˆå¥½åšçš„äº†ã€‚ ç„¶è€Œåœ¨è¿™åŒ—æ–¹åœ°åŒºï¼Œä»ç„¶æœ‰è®¸å¤šå†’é™©è€…ï¼›æˆ‘åº”è¯¥åšå…¬å¹³è´¸æ˜“ã€‚ çœŸæ˜¯æµªè´¹å¤§è„‘ã€‚*/
-@5 = ~The Town Hall is west near the city wall. They say Lady Aribeth herself came to see our mayor, probably she is there now.~/*é‚£ä½ å°±ä¼šå˜å¾—å¾ˆæ²®ä¸§è€Œä¸”ç©ºè™šã€‚ è¿™ä¸ªçŸ³å¤´çš„å¹´ä»£æ˜¯å¾ˆä¹…è¿œä»¥å‰çš„ã€‚æ€ä¹ˆåˆ°ç°åœ¨æ‰æœ‰äººæ³¨æ„åˆ°å®ƒçš„å­˜åœ¨å‘¢ï¼Ÿ*/
+@0 = ~I'm just a simple grocery merchant. I don't think you are interested.~/*ÎÒÏë£¬Õâ²»¹ıÊÇ¸ö¹ÊÊÂ¡£ ¡°ÎÒ¶ÔËûÃÇÃ»Ê²Ã´ĞËÈ¤¡­¡­¡±*/
+@1 = ~Where can I buy the goods I need?~/*ÎÒ¿ÉÒÔÔÚÄÄÀïÕÒµ½Á¦Á¿Ö®Öä£¿*/
+@2 = ~I'm looking for the the Town Hall, can you tell me where it is?~/*ÎÒÕıÔÚÕÒÒ»ÃûºÃµÄÖÎÁÆÕßÔÚÎÒµÄÈÎÎñÖĞÄÜ°ïÖúÎÒ¡£*/
+@3 = ~Okay, I'll move on then.~/*ºÃ£¬ÎÒ½Ó¡£*/
+@4 = ~In the Cracked Anvil, of course. Haljal has everything a hero like you might need. In addition, there are many street vendors in Port Llast, one of them even sells scrolls for magicians. Such a strange guy, I'm afraid of him.~/*ËéÌúÕè¡£ ÎÒºÍÄãÃ»ÓĞÊ²Ã´ºÃ×öµÄÁË¡£ È»¶øÔÚÕâ±±·½µØÇø£¬ÈÔÈ»ÓĞĞí¶àÃ°ÏÕÕß£»ÎÒÓ¦¸Ã×ö¹«Æ½Ã³Ò×¡£ ÕæÊÇÀË·Ñ´óÄÔ¡£*/
+@5 = ~The Town Hall is west near the city wall. They say Lady Aribeth herself came to see our mayor, probably she is there now.~/*ÄÇÄã¾Í»á±äµÃºÜ¾ÚÉ¥¶øÇÒ¿ÕĞé¡£ Õâ¸öÊ¯Í·µÄÄê´úÊÇºÜ¾ÃÔ¶ÒÔÇ°µÄ¡£ÔõÃ´µ½ÏÖÔÚ²ÅÓĞÈË×¢Òâµ½ËüµÄ´æÔÚÄØ£¿*/
 @6 = ~Have a good time in Port Llast. Goodbye.~
-/*èµ–æ–¯ç‰¹æ¸¯å‘ç”Ÿäº†ä»€ä¹ˆäº‹ï¼Ÿ å†è§ã€‚*/
+/*ÀµË¹ÌØ¸Û·¢ÉúÁËÊ²Ã´ÊÂ£¿ ÔÙ¼û¡£*/

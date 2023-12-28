@@ -1,8 +1,8 @@
-@0 = ~You are a great hero! Through every generation the legend of how you saved the Elk people from the Wailing Death shall be retold.~/*ä½ æ˜¯ä¸€ä¸ªä¼Ÿå¤§çš„è‹±é›„ï¼Œ<CHARNAME>Â·<CHARNAME>ï¼ä½ å¦‚ä½•ä»æ‚²å“€çš„æ­»ç¥é‚£å„¿æ‹¯æ•‘äº†éº‹é¹¿æ—äººä»¬å°†è¢«ä¸–ä»£æµä¼ ã€‚*/
-@1 = ~è·Ÿæˆ‘æ¥ï¼æˆ‘å¸¦ä½ å»ä½åã€‚~
-@2 = ~ä½ å¸¦ç€ä¹Œæ–¯å˜‰çš„å’Œå¹³è±¡å¾ç‰©ã€‚ä½ å¸Œæœ›å’Œéº‹é¹¿éƒ¨è½çš„äººè°ˆåˆ¤å—ï¼Ÿ~
-@3 = ~æˆ‘å¸Œæœ›å’Œä½ ä»¬çš„é¦–é¢†ä½åÂ·èµå¾·å°”è°ˆè°ˆã€‚~
-@4 = ~æˆ‘å”¯ä¸€æƒ³åˆ°å°±æ˜¯è®©ä½ æ­»ï¼~
-@5 = ~ä½ å¸¦ç€å’Œå¹³æ ‡å¿—è€Œæ¥ï¼Œä½ çœ‹èµ·æ¥åƒä¸€ä¸ªè´µæ—ï¼Œæ˜¯ä¸ªå€¼å¾—ä¿¡èµ–çš„<MANWOMAN>ã€‚ è·Ÿæˆ‘æ¥ï¼æˆ‘å¸¦ä½ å»ä½åã€‚~
-@6 = ~You have come under a banner of peace and you look like a noble and trustworthy <MANWOMAN>. Go speak with Zokan. His rooms are in the center of the keep.~/*ä½ å¸¦ç€å’Œå¹³æ ‡å¿—è€Œæ¥ï¼Œä½ çœ‹èµ·æ¥åƒä¸€ä¸ªè´µæ—ï¼Œæ˜¯ä¸ªå€¼å¾—ä¿¡èµ–çš„<MANWOMAN>ã€‚ è·Ÿæˆ‘è°ˆè°ˆå§ã€‚ è¿™ä¹±ä¸ƒå…«ç³Ÿçš„åœºé¢æœ‰ä»»ä½•ç†ç”±å¯ä»¥è§£é‡Šå—ï¼Ÿ*/
-@7 = ~é¢†ç•¥ä¹Œæ–¯å˜‰éº‹é¹¿éƒ¨æ—çš„ç‹‚æš´ï¼Ÿ~
+@0 = ~You are a great hero! Through every generation the legend of how you saved the Elk people from the Wailing Death shall be retold.~/*ÄãÊÇÒ»¸öÎ°´óµÄÓ¢ĞÛ£¬<CHARNAME>¡¤<CHARNAME>£¡ÄãÈçºÎ´Ó±¯°§µÄËÀÉñÄÇ¶ùÕü¾ÈÁË÷çÂ¹×åÈËÃÇ½«±»ÊÀ´úÁ÷´«¡£*/
+@1 = ~¸úÎÒÀ´£¡ÎÒ´øÄãÈ¥×ô¿²¡£~
+@2 = ~Äã´ø×ÅÎÚË¹¼ÎµÄºÍÆ½ÏóÕ÷Îï¡£ÄãÏ£ÍûºÍ÷çÂ¹²¿ÂäµÄÈËÌ¸ÅĞÂğ£¿~
+@3 = ~ÎÒÏ£ÍûºÍÄãÃÇµÄÊ×Áì×ô¿²¡¤ÔŞµÂ¶ûÌ¸Ì¸¡£~
+@4 = ~ÎÒÎ¨Ò»Ïëµ½¾ÍÊÇÈÃÄãËÀ£¡~
+@5 = ~Äã´ø×ÅºÍÆ½±êÖ¾¶øÀ´£¬Äã¿´ÆğÀ´ÏñÒ»¸ö¹ó×å£¬ÊÇ¸öÖµµÃĞÅÀµµÄ<MANWOMAN>¡£ ¸úÎÒÀ´£¡ÎÒ´øÄãÈ¥×ô¿²¡£~
+@6 = ~You have come under a banner of peace and you look like a noble and trustworthy <MANWOMAN>. Go speak with Zokan. His rooms are in the center of the keep.~/*Äã´ø×ÅºÍÆ½±êÖ¾¶øÀ´£¬Äã¿´ÆğÀ´ÏñÒ»¸ö¹ó×å£¬ÊÇ¸öÖµµÃĞÅÀµµÄ<MANWOMAN>¡£ ¸úÎÒÌ¸Ì¸°É¡£ ÕâÂÒÆß°ËÔãµÄ³¡ÃæÓĞÈÎºÎÀíÓÉ¿ÉÒÔ½âÊÍÂğ£¿*/
+@7 = ~ÁìÂÔÎÚË¹¼Î÷çÂ¹²¿×åµÄ¿ñ±©£¿~

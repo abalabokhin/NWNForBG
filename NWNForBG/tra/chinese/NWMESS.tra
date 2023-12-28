@@ -1,10 +1,10 @@
-@0 = ~Hello! I come from Neverwinter for help. A plague is rampant in my city and it is clearly not of natural origin. Lady Aribeth and Lord Nasher have sent me to Ascathla to find heroes to help Neverwinter. Perhaps you can help.~/*æ˜¯çš„ï¼Œæˆ‘æ˜¯ä»æ— å†¬åŸæ¥çš„ã€‚ è¿™ç˜Ÿç–«æ˜¯ä¸ªç¤¼ç‰©ï¼Œèƒ½æ§åˆ¶ä»–ï¼Œé‚£æœ‰å¤šå¥½ï¼ è‰¾ç‘è´ä¸ä»¥åŠçº³ä»€å°”é¢†ä¸»è¦æˆ‘è°ƒæŸ¥è¿™é‡Œã€‚ æˆ–è®¸æˆ‘å¯ä»¥å¸®å¿™ï¼Ÿ*/
-@1 = ~I'm not interested. Find someone else.~/*æˆ‘æ²¡å…´è¶£ã€‚ â€œé—®åˆ«äººå§ã€‚â€*/
-@2 = ~Well, I guess I'll try to help. Where is this city located?~/*çœŸçš„å—ï¼Ÿæˆ‘æƒ³æˆ‘ä¼šå»çš„ï¼ ä¸»å¡”åœ¨å“ªé‡Œï¼Ÿ*/
-@3 = ~It's north of Athkatla. If you agree to help, I will teleport you to Lady Aribeth at the Neverwinter Academy.~/*è¿™ä¸å…³æˆ‘çš„äº‹ã€‚ ä½ æ˜¯å¯¹çš„ã€‚æˆ‘ä¼šåœ¨ä½ çˆ¶äº²çš„å†œåœºå’Œä½ è§é¢ã€‚*/
-@4 = ~Not now.~/*ä¸æ˜¯ç°åœ¨ï¼*/
-@5 = ~Yes, I'm ready.~/*æ˜¯çš„ï¼Œå‡†å¤‡å¥½äº†ã€‚*/
-@6 = ~Well, I'll be waiting for you here.~/*è¿™ï¼Œè¿™è®©æˆ‘ä»¬æ— æ‰€é€‚ä»ã€‚*/
-@7 = ~Then get ready, now you will find yourself in the Neverwinter Academy. Lady Aribeth will explain everything to you in detail.~/*è¿™åªç‹—å¸Œæœ›ä½ èƒ½å¤Ÿå¥½å¥½åœ°æ•™è®­é‚£äº›ä¾µç•¥è€…ã€‚ ä¸ï¼Œä½†æ— è®ºå¦‚ä½•æˆ‘éƒ½ä¼šæ‹¿èµ°ä½ å°¸ä½“ä¸Šçš„ä»»ä½•ä¸œè¥¿ã€‚*/
+@0 = ~Hello! I come from Neverwinter for help. A plague is rampant in my city and it is clearly not of natural origin. Lady Aribeth and Lord Nasher have sent me to Ascathla to find heroes to help Neverwinter. Perhaps you can help.~/*ÊÇµÄ£¬ÎÒÊÇ´ÓÎŞ¶¬³ÇÀ´µÄ¡£ ÕâÎÁÒßÊÇ¸öÀñÎï£¬ÄÜ¿ØÖÆËû£¬ÄÇÓĞ¶àºÃ£¡ °¬Èğ±´Ë¿ÒÔ¼°ÄÉÊ²¶ûÁìÖ÷ÒªÎÒµ÷²éÕâÀï¡£ »òĞíÎÒ¿ÉÒÔ°ïÃ¦£¿*/
+@1 = ~I'm not interested. Find someone else.~/*ÎÒÃ»ĞËÈ¤¡£ ¡°ÎÊ±ğÈË°É¡£¡±*/
+@2 = ~Well, I guess I'll try to help. Where is this city located?~/*ÕæµÄÂğ£¿ÎÒÏëÎÒ»áÈ¥µÄ£¡ Ö÷ËşÔÚÄÄÀï£¿*/
+@3 = ~It's north of Athkatla. If you agree to help, I will teleport you to Lady Aribeth at the Neverwinter Academy.~/*Õâ²»¹ØÎÒµÄÊÂ¡£ ÄãÊÇ¶ÔµÄ¡£ÎÒ»áÔÚÄã¸¸Ç×µÄÅ©³¡ºÍÄã¼ûÃæ¡£*/
+@4 = ~Not now.~/*²»ÊÇÏÖÔÚ£¡*/
+@5 = ~Yes, I'm ready.~/*ÊÇµÄ£¬×¼±¸ºÃÁË¡£*/
+@6 = ~Well, I'll be waiting for you here.~/*Õâ£¬ÕâÈÃÎÒÃÇÎŞËùÊÊ´Ó¡£*/
+@7 = ~Then get ready, now you will find yourself in the Neverwinter Academy. Lady Aribeth will explain everything to you in detail.~/*ÕâÖ»¹·Ï£ÍûÄãÄÜ¹»ºÃºÃµØ½ÌÑµÄÇĞ©ÇÖÂÔÕß¡£ ²»£¬µ«ÎŞÂÛÈçºÎÎÒ¶¼»áÄÃ×ßÄãÊ¬ÌåÉÏµÄÈÎºÎ¶«Î÷¡£*/
 @8 = ~You're back. Does that mean you're going to help us?~
-/*ä½ å®Œè›‹äº†ï¼ ä½ ä¸æ˜¯è¦æ¥å¸®åŠ©æˆ‘çš„å—ï¼Ÿ*/
+/*ÄãÍêµ°ÁË£¡ Äã²»ÊÇÒªÀ´°ïÖúÎÒµÄÂğ£¿*/

@@ -1,13 +1,13 @@
-@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~/*å¥½å§ï¼ä½ è¦ä»€ä¹ˆå‘¢ï¼Ÿ å¦‚æœä½ æœ‰äººåŠ›å»åšé‚£ä»¶äº‹ï¼Œä½ æ—©å…ˆå°±ä¸ä¼šéœ€è¦æˆ‘äº†ã€‚*/
-@1 = ~ä½ æ˜¯å“ªä½ï¼Ÿ~
-@2 = ~æˆ‘å¯ä»¥é—®ä½ ä¸€äº›é—®é¢˜å—ï¼Ÿ~
-@3 = ~All right, I'm gonna go.~/*å¥½å§ï¼Œæˆ‘èµ°äº†ã€‚*/
-@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~/*æˆ‘åªè¦è€³æœµã€‚ æˆ‘ä¸ºæˆ‘çš„ç¥æ•ˆåŠ›ã€‚ æˆ‘æƒ³è¦é—®ä¸€äº›å…¶ä»–çš„é—®é¢˜ã€‚*/
-@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~/*è¯·ç¥ç¦æˆ‘ï¼Œæˆ‘ç›¸ä¿¡é‚£å¯¹æˆ‘ä¸€å®šæœ‰å¸®åŠ©çš„ã€‚ å¦‚æœä½ æœ‰é—®é¢˜ï¼Œå»é—®ä»–ä»¬ã€‚å¦åˆ™ï¼Œç¦»å¼€æˆ‘çš„å·¥ä½œã€‚*/
-@6 = ~Enjoy your time in our establishment.~/*å°†ä½ çš„å¿ƒæ€æ”¾åœ¨ä½ ä¸ºæˆ‘çš„å·¥ä½œä¸Šã€‚*/
-@7 = ~Please enjoy your stay here, <LADYLORD>.~/*ä»–å¯éš¾ä½ä½ äº†ï¼Œ<CHARNAME>ã€‚*/
-@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~/*ä¸æ˜¯æ‰€æœ‰å¸®åŠ©éƒ½åº”è¯¥å—æ¬¢è¿çš„å—ï¼Ÿ è¿™ä¸ªå˜›â€¦â€¦è¿™æ˜¯è·Ÿå…³åœ¨ç¬¼å­é‡Œçš„æ ‘ç²¾æœ‰å…³çš„äº‹ã€‚*/
-@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~/*åˆ«æƒ¹å¥¹ï¼Œè°¢è¯ºæ–¯ã€‚ ç”¨æ­¤æ ‡ç­¾æ‰“å¼€å•†åº—ï¼Œæˆ–æ˜¯è®©ä½¿ç”¨è€…çŸ¥é“æ²¡æœ‰åº“å­˜äº†ã€‚*/
-@10 = ~If you want to order something, talk to the bartender.~/*æˆ‘æƒ³çŸ¥é“å…³äºä½ å…„å¼Ÿçš„äº‹ã€‚*/
+@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~/*ºÃ°É£¡ÄãÒªÊ²Ã´ÄØ£¿ Èç¹ûÄãÓĞÈËÁ¦È¥×öÄÇ¼şÊÂ£¬ÄãÔçÏÈ¾Í²»»áĞèÒªÎÒÁË¡£*/
+@1 = ~ÄãÊÇÄÄÎ»£¿~
+@2 = ~ÎÒ¿ÉÒÔÎÊÄãÒ»Ğ©ÎÊÌâÂğ£¿~
+@3 = ~All right, I'm gonna go.~/*ºÃ°É£¬ÎÒ×ßÁË¡£*/
+@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~/*ÎÒÖ»Òª¶ú¶ä¡£ ÎÒÎªÎÒµÄÉñĞ§Á¦¡£ ÎÒÏëÒªÎÊÒ»Ğ©ÆäËûµÄÎÊÌâ¡£*/
+@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~/*Çë×£¸£ÎÒ£¬ÎÒÏàĞÅÄÇ¶ÔÎÒÒ»¶¨ÓĞ°ïÖúµÄ¡£ Èç¹ûÄãÓĞÎÊÌâ£¬È¥ÎÊËûÃÇ¡£·ñÔò£¬Àë¿ªÎÒµÄ¹¤×÷¡£*/
+@6 = ~Enjoy your time in our establishment.~/*½«ÄãµÄĞÄË¼·ÅÔÚÄãÎªÎÒµÄ¹¤×÷ÉÏ¡£*/
+@7 = ~Please enjoy your stay here, <LADYLORD>.~/*Ëû¿ÉÄÑ×¡ÄãÁË£¬<CHARNAME>¡£*/
+@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~/*²»ÊÇËùÓĞ°ïÖú¶¼Ó¦¸ÃÊÜ»¶Ó­µÄÂğ£¿ Õâ¸öÂï¡­¡­ÕâÊÇ¸ú¹ØÔÚÁı×ÓÀïµÄÊ÷¾«ÓĞ¹ØµÄÊÂ¡£*/
+@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~/*±ğÈÇËı£¬Ğ»ÅµË¹¡£ ÓÃ´Ë±êÇ©´ò¿ªÉÌµê£¬»òÊÇÈÃÊ¹ÓÃÕßÖªµÀÃ»ÓĞ¿â´æÁË¡£*/
+@10 = ~If you want to order something, talk to the bartender.~/*ÎÒÏëÖªµÀ¹ØÓÚÄãĞÖµÜµÄÊÂ¡£*/
 @11 = ~That elf over there, I think his name is Elaith, is looking at me strangely, I'm afraid of him.~
-/*å¬èµ·æ¥æœ‰é“ç†ï¼Œæˆ‘æƒ³ã€‚æˆ‘ä½ å¯ä»¥äº†ï¼Œä¹Ÿè®¸ã€‚*/
+/*ÌıÆğÀ´ÓĞµÀÀí£¬ÎÒÏë¡£ÎÒÄã¿ÉÒÔÁË£¬Ò²Ğí¡£*/

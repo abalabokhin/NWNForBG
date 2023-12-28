@@ -1,9 +1,9 @@
-@0 = ~My husband is going to sea right now. Please come back tomorrow morning, I'll have fresh fish.~/*æˆ‘ç°åœ¨ä¸æƒ³ä»˜é’±ã€‚ è¯·ä¸€å®šå°†æˆ‘çš„å°å­©å¸¦å›æ¥ã€‚*/
-@1 = ~Want to buy fish? I always have the freshest fish on sale. Check out this bass right here, isn't it huge?~/*æˆ‘æƒ³ä¹°ä¸‹å®ƒã€‚ æˆ‘æœ‰æŠ¤èº«ç¬¦ï¼Œåœ¨è¿™ã€‚ æ²¡æœ‰äººèƒ½å¤Ÿåœ¨é‚£å„¿åå‡»å—ï¼Ÿ*/
-@2 = ~I supply fish to the tavern here, I can sell to you too. Would you like to buy?~/*å¥½å§ï¼Œé‚£è®©æˆ‘çœ‹ä¸€ä¸‹æœ‰ä»€ä¹ˆå¯ä»¥å–ç»™ä½ çš„ã€‚ ä½ æœ‰ä»€ä¹ˆéœ€è¦å—ï¼Ÿ*/
-@3 = ~Damn cats! They come to me from all over Port Llast at the smell of fish. They're always trying to steal my fish.~/*ä¸‹åœ°ç‹±å»å§ï¼ ä½ å®³äº†é‚£ä¸ªä»èµ–æ–¯ç‰¹æ¸¯æ¥çš„ç”·å­©ï¼Œå»æ­»å§ï¼ ä½ è¦å»å“ªé‡Œï¼Ÿ*/
-@4 = ~These kids need an eye on them, always in trouble one way or the other. If I find my son in a fishing basket again, I'll smack him with a raw fish.~/*æˆ‘ä¸æ˜¯å¾ˆåœ¨ä¹ï¼Œä¸€è¾¹æˆ–å¦ä¸€è¾¹ã€‚ æœ‰ä»€ä¹ˆäººå°†é‚£äº›ä¸æ­»ç”Ÿç‰©æ‰“è·‘äº†å—ï¼Ÿ*/
-@5 = ~Lately, my husband's catch has been a mess. It has become difficult for a poor fishmonger to make a living, that's the way things are.~/*å—¯ï¼ŒçœŸæ˜¯ä¸å¦™ã€‚ å•Šï¼Œæˆ‘ä¼šæŠ±æ€¨ï¼Œä½†æ˜¯æˆ‘æƒ³æˆ‘è¿˜æ˜¯åŠçš„åˆ°ã€‚ä¸è¿‡è¿˜æ˜¯è°¢è°¢ä½ è¿™ä¹ˆè¯´ã€‚*/
-@6 = ~I'll tell in confidence... my man says he's been fishing all day long... but may I die on the spot, if he not in the Alliance Arms Inn all the time.~/*æˆ‘ä¹Ÿå¹¶ä¸æ¸…æ¥šã€‚ä¹Ÿè®¸é‚£ä¸æ˜¯ä¸€åº§çœŸçš„å¡”â€¦â€¦ä½†æˆ‘ä¸ºä½ æŠ½çš„æœ€åä¸€å¼ ç‰Œæ€»æ˜¯å¡”ã€‚æ€»æ˜¯è¿™æ ·ã€‚*/
+@0 = ~My husband is going to sea right now. Please come back tomorrow morning, I'll have fresh fish.~/*ÎÒÏÖÔÚ²»Ïë¸¶Ç®¡£ ÇëÒ»¶¨½«ÎÒµÄĞ¡º¢´ø»ØÀ´¡£*/
+@1 = ~Want to buy fish? I always have the freshest fish on sale. Check out this bass right here, isn't it huge?~/*ÎÒÏëÂòÏÂËü¡£ ÎÒÓĞ»¤Éí·û£¬ÔÚÕâ¡£ Ã»ÓĞÈËÄÜ¹»ÔÚÄÇ¶ù·´»÷Âğ£¿*/
+@2 = ~I supply fish to the tavern here, I can sell to you too. Would you like to buy?~/*ºÃ°É£¬ÄÇÈÃÎÒ¿´Ò»ÏÂÓĞÊ²Ã´¿ÉÒÔÂô¸øÄãµÄ¡£ ÄãÓĞÊ²Ã´ĞèÒªÂğ£¿*/
+@3 = ~Damn cats! They come to me from all over Port Llast at the smell of fish. They're always trying to steal my fish.~/*ÏÂµØÓüÈ¥°É£¡ Äãº¦ÁËÄÇ¸ö´ÓÀµË¹ÌØ¸ÛÀ´µÄÄĞº¢£¬È¥ËÀ°É£¡ ÄãÒªÈ¥ÄÄÀï£¿*/
+@4 = ~These kids need an eye on them, always in trouble one way or the other. If I find my son in a fishing basket again, I'll smack him with a raw fish.~/*ÎÒ²»ÊÇºÜÔÚºõ£¬Ò»±ß»òÁíÒ»±ß¡£ ÓĞÊ²Ã´ÈË½«ÄÇĞ©²»ËÀÉúÎï´òÅÜÁËÂğ£¿*/
+@5 = ~Lately, my husband's catch has been a mess. It has become difficult for a poor fishmonger to make a living, that's the way things are.~/*àÅ£¬ÕæÊÇ²»Ãî¡£ °¡£¬ÎÒ»á±§Ô¹£¬µ«ÊÇÎÒÏëÎÒ»¹ÊÇ°ìµÄµ½¡£²»¹ı»¹ÊÇĞ»Ğ»ÄãÕâÃ´Ëµ¡£*/
+@6 = ~I'll tell in confidence... my man says he's been fishing all day long... but may I die on the spot, if he not in the Alliance Arms Inn all the time.~/*ÎÒÒ²²¢²»Çå³ş¡£Ò²ĞíÄÇ²»ÊÇÒ»×ùÕæµÄËş¡­¡­µ«ÎÒÎªÄã³éµÄ×îºóÒ»ÕÅÅÆ×ÜÊÇËş¡£×ÜÊÇÕâÑù¡£*/
 @7 = ~Well, get outta here if you ain't buying anything. People will think you're buying up the whole lot from the way you're standing there. FISH! FREEEEESH FIIIIISH!~
-/*å¥½ï¼Œé‚£ä¹ˆä½ ä»€ä¹ˆéƒ½æ‹¿ä¸åˆ°ã€‚ äººä»¬ä¼šè®¤ä¸ºæ˜¯ä»–åšçš„ã€‚ä»–æ”¯æŒå¾·æ–¯æ³½å°”ã€‚ è‡ªç”±ï¼å•Šï¼å•Šï¼*/
+/*ºÃ£¬ÄÇÃ´ÄãÊ²Ã´¶¼ÄÃ²»µ½¡£ ÈËÃÇ»áÈÏÎªÊÇËû×öµÄ¡£ËûÖ§³ÖµÂË¹Ôó¶û¡£ ×ÔÓÉ£¡°¡£¡°¡£¡*/

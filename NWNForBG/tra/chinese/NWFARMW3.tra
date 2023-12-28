@@ -1,10 +1,10 @@
-@0 = ~æˆ‘ä»¬æœ‰å®¢äººä¸Šé—¨äº†ï¼Œä½ å»æ‰“æ‰®çš„å¥½ä¸€ç‚¹ã€‚~
-@1 = ~ä½ ä¸æ˜¯åœ¨çƒ¦æ¼å—ã€‚~
-@2 = ~çœŸé«˜å…´çœ‹åˆ°åŸé‡Œæœ‰è¿™ä¹ˆå¤šäººã€‚æ¬¢è¿æ¥åˆ°èµ–æ–¯ç‰¹æ¸¯ï¼~
-@3 = ~Oh, adventurers! There are too many of them in Port Llast.~ /*å†’é™©è€… èµ–æ–¯ç‰¹æ¸¯æœ‰ç‹¼äººå‡ºæ²¡å—ï¼Ÿ*/
-@4 = ~Don't bother me, I don't have time to talk.~ /*å¾ˆå¯¹ä¸èµ·ï¼Œä½†æˆ‘ç°åœ¨æ²¡æœ‰æ—¶é—´*/
-@5 = ~People say everyone in Neverwinter is dead!~/*æˆ‘è¯´ä½ çš„ä¸»äººå·²ç»æ­»äº†ã€‚*/
-@6 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ /*ä½ ä»æ— å†¬åŸæ¥çš„å—ï¼Ÿä½ æœ‰æ²¡æœ‰æ„ŸæŸ“ç˜Ÿç–«ï¼Ÿ*/
-@7 = ~è¿™æ ·å«å¥½çœ‹ï¼Ÿä½ å°å¿ƒå«ä¸å‡ºå»ï¼è¿˜ä¸å¿«å»æ¢ä»¶æ¼‚äº®çš„ä¸Šè¡£ï¼~
+@0 = ~ÎÒÃÇÓĞ¿ÍÈËÉÏÃÅÁË£¬ÄãÈ¥´ò°çµÄºÃÒ»µã¡£~
+@1 = ~Äã²»ÊÇÔÚ·³ÄÕÂğ¡£~
+@2 = ~Õæ¸ßĞË¿´µ½³ÇÀïÓĞÕâÃ´¶àÈË¡£»¶Ó­À´µ½ÀµË¹ÌØ¸Û£¡~
+@3 = ~Oh, adventurers! There are too many of them in Port Llast.~ /*Ã°ÏÕÕß ÀµË¹ÌØ¸ÛÓĞÀÇÈË³öÃ»Âğ£¿*/
+@4 = ~Don't bother me, I don't have time to talk.~ /*ºÜ¶Ô²»Æğ£¬µ«ÎÒÏÖÔÚÃ»ÓĞÊ±¼ä*/
+@5 = ~People say everyone in Neverwinter is dead!~/*ÎÒËµÄãµÄÖ÷ÈËÒÑ¾­ËÀÁË¡£*/
+@6 = ~Are you from Neverwinter? Do not come near me, you are contagious.~ /*Äã´ÓÎŞ¶¬³ÇÀ´µÄÂğ£¿ÄãÓĞÃ»ÓĞ¸ĞÈ¾ÎÁÒß£¿*/
+@7 = ~ÕâÑù½ĞºÃ¿´£¿ÄãĞ¡ĞÄ¼Ş²»³öÈ¥£¡»¹²»¿ìÈ¥»»¼şÆ¯ÁÁµÄÉÏÒÂ£¡~
 @8 = ~I'm sorry, but my daughter is completely out of hand. It's nice to see first-class people in our city. Welcome to Port Llast!~ 
-/*å¾ˆå¯¹ä¸èµ·ï¼Œä½†æˆ‘ç°åœ¨æ²¡æœ‰æ—¶é—´ çœŸé«˜å…´çœ‹åˆ°åŸé‡Œæœ‰è¿™ä¹ˆå¤šäººã€‚æ¬¢è¿æ¥åˆ°èµ–æ–¯ç‰¹æ¸¯ï¼*/
+/*ºÜ¶Ô²»Æğ£¬µ«ÎÒÏÖÔÚÃ»ÓĞÊ±¼ä Õæ¸ßĞË¿´µ½³ÇÀïÓĞÕâÃ´¶àÈË¡£»¶Ó­À´µ½ÀµË¹ÌØ¸Û£¡*/

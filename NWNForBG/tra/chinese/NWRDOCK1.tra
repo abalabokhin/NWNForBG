@@ -1,9 +1,9 @@
-@0 = ~Beware of going down the sewers at the docks, I've heard stories of some madmen.~/*æ²¡æœºä¼šã€‚æˆ‘å·²ç»çœ‹åˆ°ç¥ä¸ºæˆ‘ä»¬å‡†å¤‡äº†ä»€ä¹ˆã€‚*/
-@1 = ~Business is slow enough as it is, and then there's this auction at the Seedy Tavern.~/*è¿™ä¸ªå˜›ï¼Œåæ­£æˆ‘è¦å°±å¯¹äº†ï¼Œå¸Œè¿ªé…’é¦†åœ¨å“ªå„¿ï¼Ÿ*/
-@2 = ~I hear there's a split among the Bloodsailors who have settled in this region. Some support Vengaul, while others have taken Callik's side.~/*æˆ‘è¦é—®å…³äºè¡€è…¥æ°´æ‰‹å’Œæ¸©å¤åŸƒå°”çš„äº‹ã€‚ ä½ æ— æ³•åœ¨é™„è¿‘æœ‰æ•Œäººæ—¶ä¼‘æ¯ã€‚*/
-@3 = ~Jerol, the owner of the Twenty in a Quiver, accepts Smugglers' Coin for some reason, what a fool! You can't buy anything in other parts of the city with those coins anyway.~/*ä»–æ‹¥æœ‰â€œæ»¡å›ŠäºŒåæ”¯ç®­â€å¸‚åœºã€‚ä½ ä¼šåœ¨è¿™å„¿çš„ä¸œéƒ¨æ‰¾åˆ°å®ƒï¼Œåœ¨é‚£æ¡å¾€è¿™åŒºçš„å¦ä¸€æ–¹çš„è·¯ä¸Šã€‚*/
-@4 = ~Vengaul spread a rumor that one of the ingredients for a cure for pestilence would be auctioned off. It seems the auction has been canceled, I don't know why.~/*é‚£ä¹ˆè¿™ä¸ªæ°å¨œä¸€å®šæœ‰äº†ä¸€ä»¶å®ç‰©äº†ã€‚å¾ˆå®¹æ˜“æƒ³åˆ°çš„ã€‚ çœ‹æ¥è¿™ä¸ªæ³•æœ¯æ²¡æœ‰è¢«æ³•çƒå¸æ”¶ã€‚*/
-@5 = ~Lieutenant Callik is an impatient and greedy man... He may have taken, uh, some measures to get rid of old Vengaul, Bloodysailors' leaders.~/*è‹ç™½ä¹‹ä¸»/æ­¦åƒ§æ˜¯å¼ºæœ‰åŠ›çš„å¯¹æ‰‹ã€‚ æˆ‘åœ¨æ‰¾æ‘§æ¯é‚ªæ•™å’Œä»–ä»¬å¤´ç›®çš„æ–¹æ³•ã€‚*/
-@6 = ~There are a few places in the docks where you can go down into the sewers, but I wouldn't advise you to go there. It's run by Bloodysailors, and you'll be dead before you know it.~/*åœ¨æ²™åœŸä¸Šæœ‰è®¸å¤šè„šå°ï¼Œæ— è®ºç‹—å¤´äººä»¬è—åœ¨å“ªé‡Œï¼Œç§ç§è¿¹è±¡è¡¨æ˜ä»–ä»¬å°±åœ¨é™„è¿‘ã€‚ è¯´æ¥è¯é•¿ã€‚æˆ‘ä¸æƒ³è®²è¿™äº›æ— èŠäº‹æ¥çƒ¦ä½ */
+@0 = ~Beware of going down the sewers at the docks, I've heard stories of some madmen.~/*Ã»»ú»á¡£ÎÒÒÑ¾­¿´µ½ÉñÎªÎÒÃÇ×¼±¸ÁËÊ²Ã´¡£*/
+@1 = ~Business is slow enough as it is, and then there's this auction at the Seedy Tavern.~/*Õâ¸öÂï£¬·´ÕıÎÒÒª¾Í¶ÔÁË£¬Ï£µÏ¾Æ¹İÔÚÄÄ¶ù£¿*/
+@2 = ~I hear there's a split among the Bloodsailors who have settled in this region. Some support Vengaul, while others have taken Callik's side.~/*ÎÒÒªÎÊ¹ØÓÚÑªĞÈË®ÊÖºÍÎÂ¹Å°£¶ûµÄÊÂ¡£ ÄãÎŞ·¨ÔÚ¸½½üÓĞµĞÈËÊ±ĞİÏ¢¡£*/
+@3 = ~Jerol, the owner of the Twenty in a Quiver, accepts Smugglers' Coin for some reason, what a fool! You can't buy anything in other parts of the city with those coins anyway.~/*ËûÓµÓĞ¡°ÂúÄÒ¶şÊ®Ö§¼ı¡±ÊĞ³¡¡£Äã»áÔÚÕâ¶ùµÄ¶«²¿ÕÒµ½Ëü£¬ÔÚÄÇÌõÍùÕâÇøµÄÁíÒ»·½µÄÂ·ÉÏ¡£*/
+@4 = ~Vengaul spread a rumor that one of the ingredients for a cure for pestilence would be auctioned off. It seems the auction has been canceled, I don't know why.~/*ÄÇÃ´Õâ¸ö½ÜÄÈÒ»¶¨ÓĞÁËÒ»¼ş±¦ÎïÁË¡£ºÜÈİÒ×Ïëµ½µÄ¡£ ¿´À´Õâ¸ö·¨ÊõÃ»ÓĞ±»·¨ÇòÎüÊÕ¡£*/
+@5 = ~Lieutenant Callik is an impatient and greedy man... He may have taken, uh, some measures to get rid of old Vengaul, Bloodysailors' leaders.~/*²Ô°×Ö®Ö÷/ÎäÉ®ÊÇÇ¿ÓĞÁ¦µÄ¶ÔÊÖ¡£ ÎÒÔÚÕÒ´İ»ÙĞ°½ÌºÍËûÃÇÍ·Ä¿µÄ·½·¨¡£*/
+@6 = ~There are a few places in the docks where you can go down into the sewers, but I wouldn't advise you to go there. It's run by Bloodysailors, and you'll be dead before you know it.~/*ÔÚÉ³ÍÁÉÏÓĞĞí¶à½ÅÓ¡£¬ÎŞÂÛ¹·Í·ÈËÃÇ²ØÔÚÄÄÀï£¬ÖÖÖÖ¼£Ïó±íÃ÷ËûÃÇ¾ÍÔÚ¸½½ü¡£ ËµÀ´»°³¤¡£ÎÒ²»Ïë½²ÕâĞ©ÎŞÁÄÊÂÀ´·³Äã*/
 @7 = ~If you meet Helm's priests on the street, don't trust them. All their favors are worthless, and the priests themselves are suspicious.~
-/*æˆ‘åœ¨è¡—ä¸Šçœ‹è¿‡ä½ ï¼Œä½ å·²ç»æ­»äº†å•Šã€‚ ç‰Œå­ä¸Šå†™ç€â€œè‡ªç”±æ‘â€ï¼Œä½†æ±¡è¿¹ä¸Šçš„èŠ±çº¹ä»¤äººèµ·ç–‘ã€‚*/
+/*ÎÒÔÚ½ÖÉÏ¿´¹ıÄã£¬ÄãÒÑ¾­ËÀÁË°¡¡£ ÅÆ×ÓÉÏĞ´×Å¡°×ÔÓÉ´å¡±£¬µ«ÎÛ¼£ÉÏµÄ»¨ÎÆÁîÈËÆğÒÉ¡£*/

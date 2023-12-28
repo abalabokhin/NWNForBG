@@ -1,5 +1,5 @@
-@0 = ~Hey. Welcome, make yourselves at home. Just try not to bother the locals, okay? Times are tough, so they're in enough trouble as it is. Well, what can I do for you?~ /*æ¬¢è¿ä½ ï¼Œä½ å¥½å‘€ã€‚ å›åˆ°æˆ‘å…¶ä»–çš„é—®é¢˜ä¸Šï¼Œå¥½å§ï¼Ÿ ä½ ä»¬ä¸ºä»€ä¹ˆåœ¨æˆ‘å®¶ï¼Ÿè¯·ç¦»å¼€ã€‚ æ˜¯çš„ï¼Ÿæˆ‘èƒ½ä¸ºä½ æ•ˆåŠ³å—ï¼Ÿ*/
-@1 = ~Show us what you have to offer.~/*é‚£ï¼Œç»™æˆ‘çœ‹çœ‹ä½ æœ‰ä»€ä¹ˆä¸œè¥¿ã€‚*/
-@2 = ~æ²¡ä»€ä¹ˆã€‚~
+@0 = ~Hey. Welcome, make yourselves at home. Just try not to bother the locals, okay? Times are tough, so they're in enough trouble as it is. Well, what can I do for you?~ /*»¶Ó­Äã£¬ÄãºÃÑ½¡£ »Øµ½ÎÒÆäËûµÄÎÊÌâÉÏ£¬ºÃ°É£¿ ÄãÃÇÎªÊ²Ã´ÔÚÎÒ¼Ò£¿ÇëÀë¿ª¡£ ÊÇµÄ£¿ÎÒÄÜÎªÄãĞ§ÀÍÂğ£¿*/
+@1 = ~Show us what you have to offer.~/*ÄÇ£¬¸øÎÒ¿´¿´ÄãÓĞÊ²Ã´¶«Î÷¡£*/
+@2 = ~Ã»Ê²Ã´¡£~
 @3 = ~Hi. I don't want no trouble from you hobos. Looks like every other bar in this town has already kicked you out. You're not gonna stay here for long if you're loud. If you don't, you're welcome. Well, what can I do for you?~
-/*æˆ‘ä¸æƒ³è·Ÿä½ èŠå¤©ã€‚ æŠŠå¦ä¸€ä¸ªè€³æœµæ”¾è¿›å‰©ä¸‹çš„å­”é‡Œã€‚ ä½ ä¸è¦å†å“­äº†å¥½å—ï¼Ÿ ç°åœ¨åªå‰©æˆ‘ä»¬äº†ï¼Œæˆ‘èƒ½ä¸ºä½ åšä»€ä¹ˆï¼Ÿ*/
+/*ÎÒ²»Ïë¸úÄãÁÄÌì¡£ °ÑÁíÒ»¸ö¶ú¶ä·Å½øÊ£ÏÂµÄ¿×Àï¡£ Äã²»ÒªÔÙ¿ŞÁËºÃÂğ£¿ ÏÖÔÚÖ»Ê£ÎÒÃÇÁË£¬ÎÒÄÜÎªÄã×öÊ²Ã´£¿*/
