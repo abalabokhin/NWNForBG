@@ -102,6 +102,8 @@ Version History
 ---------------
 In development:
 
+- Make NWCULT1 creature a little weaker to be more ballanced.
+
 0.94 (11/27/23)
 
 - Added other languages (mixed with English), see tranlator notes if you want to finish them
