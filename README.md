@@ -42,6 +42,7 @@ Languages
 * Italian, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Spanish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
+* Chinese, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 
 Description:
 ------------
@@ -103,6 +104,7 @@ Version History
 In development:
 
 - Make NWCULT1 creature a little weaker to be more ballanced.
+- Add Chinese, thanks to MephistoSatanDevil and icecool.
 
 0.94 (11/27/23)
 
