@@ -17,7 +17,7 @@
 @16 = ~只有我一个人的话恐怕没办法在那样的危险下存活。对于侍奉寂静领主，就这样舍弃自己的生命是一个愚蠢的方法。我的死亡会在约定时刻到达时降临。~
 @17 = ~实际上，我在找一些可以雇佣的帮手，来协助我的任务。~
 @18 = ~我得离开了。~
-@19 = ~The monks and priests of the Order of the Dying Death rarely join those who are not members of their order, but I can smell my master's mark on you. A storm of blood is raging around you, torment and death follow your arrival... Yet there are many whom death will follow in this city - many who are willing to pay for my services. My fee to join your cause is 850 gold.~ /*我们永亡僧团的武僧是不会跟外人一起行动的，不过我在你身上感觉到吾主的标记。 我将撕裂你的血肉并以你的灵魂飨宴！ 已经有非常多的人在这座城市里了——更多人愿意雇佣我。你只要付我150块金币我便加入你的队伍。*/
+@19 = ~The priests and priests of the Order of the Dying Death rarely join those who are not members of their order, but I can smell my master's mark on you. A storm of blood is raging around you, torment and death follow your arrival... Yet there are many whom death will follow in this city - many who are willing to pay for my services. My fee to join your cause is 850 gold.~ /*我们永亡僧团的武僧是不会跟外人一起行动的，不过我在你身上感觉到吾主的标记。 我将撕裂你的血肉并以你的灵魂飨宴！ 已经有非常多的人在这座城市里了——更多人愿意雇佣我。你只要付我150块金币我便加入你的队伍。*/
 @20 = ~Here's your 850 gold. Welcome aboard, Grimgnaw.~ /*这是给你的150枚金币。欢迎同行，沙尔文。*/
 @21 = ~给你150枚金币，并且向你保证会有非常多的杀戮可以吗？~
 @22 = ~我没有可以花在雇佣伙伴上的钱。~
@@ -41,7 +41,7 @@
 @40 = ~雇佣你的价钱是多少？~ 
 @41 = ~当艾瑞贝丝雇佣我们这些佣兵的时候，都预先付给了足够的费用，以换取我们的服务，那可是一大笔钱。纳什尔领主在追寻那些教派份子上可是毫不在乎代价。 我们的指令只是全力帮助任何可能需要我们协助的人。所以，有什么我可以帮你的吗？~ 
 @42 = ~你有什么关于瘟疫背后的邪教的讯息吗？~
-@43 = ~I could use a monk.~/*我要休息一下。*/
+@43 = ~I could use a priest.~/*我要休息一下。*/
 @44 = ~我现在不需要任何东西。~
 @45 = ~他们的根据地被隐藏的很好。不过我认为他们应该会派人与黑森林中的村庄取得联系。~
 @46 = ~黑森林？~
@@ -62,5 +62,5 @@
 @61 = ~哦，我并不是独自行动的。艾瑞贝丝和其他的城市卫兵也和我一样做了很多。~ 
 @62 = ~是的，那就是我。~
 @63 = ~其他人也许有参与，但我知道真正的事实。因为我在你身上看建了寂静领主的标记。~
-@64 = ~I have known about your existence for a while. The most beautiful whirlpool of inhuman slaughter revolves around you. I am Grimgnaw, a monk of the Order of the Long Death. No doubt you have come for the same reason as I: to join Aribeth in hunting and slaying the cult that was responsible for the Wailing Death.~ 
+@64 = ~I have known about your existence for a while. The most beautiful whirlpool of inhuman slaughter revolves around you. I am Grimgnaw, a priest of the Order of the Long Death. No doubt you have come for the same reason as I: to join Aribeth in hunting and slaying the cult that was responsible for the Wailing Death.~ 
 /*自从学院发生大屠杀之后，我对你是了如指掌，<CHARNAME>。一个血腥、屠杀、死亡的美丽漩涡环绕在你身旁。 我是格瑞姆格诺，永亡僧团的一名武僧。毫无疑问的，你来这里的目的跟我一样：帮助艾瑞贝丝追踪并消灭那个该为瘟疫付出代价的邪教。*/

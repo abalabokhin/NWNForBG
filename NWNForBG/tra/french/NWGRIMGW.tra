@@ -17,7 +17,7 @@
 @16 = ~Seul, je n’ai aucune chance de survivre dans ce quartier, et perdre ma vie en vain ne rapporterait rien au Seigneur Silencieux. Ma mort viendra à son heure.~
 @17 = ~En fait, je cherche à engager quelqu’un qui pourrait m’accompagner en mission.~
 @18 = ~Je m’en vais.~
-@19 = ~The monks and priests of the Order of the Dying Death rarely join those who are not members of their order, but I can smell my master's mark on you. A storm of blood is raging around you, torment and death follow your arrival... Yet there are many whom death will follow in this city - many who are willing to pay for my services. My fee to join your cause is 850 gold.~ /*Les moines de la Mort Lente se joignent rarement à ceux qui ne font pas partie de notre Ordre, mais la marque de mon maître est sur vous. Je vais arracher ta chair et me régaler de ton âme ! Pourtant, beaucoup seront accompagnés par la mort dans cette ville, et nombreux sont prêts à payer mes services. Mon prix pour rallier votre cause sera de 150 pièces d’or.*/
+@19 = ~The priests and priests of the Order of the Dying Death rarely join those who are not members of their order, but I can smell my master's mark on you. A storm of blood is raging around you, torment and death follow your arrival... Yet there are many whom death will follow in this city - many who are willing to pay for my services. My fee to join your cause is 850 gold.~ /*Les moines de la Mort Lente se joignent rarement à ceux qui ne font pas partie de notre Ordre, mais la marque de mon maître est sur vous. Je vais arracher ta chair et me régaler de ton âme ! Pourtant, beaucoup seront accompagnés par la mort dans cette ville, et nombreux sont prêts à payer mes services. Mon prix pour rallier votre cause sera de 150 pièces d’or.*/
 @20 = ~Here's your 850 gold. Welcome aboard, Grimgnaw.~ /*Voici vos 150 pièces d'or. Bienvenue à bord, Sharwyn.*/
 @21 = ~Que dites-vous de 150 po et la promesse de grands massacres ?~
 @22 = ~Je n’ai pas tout cet or pour engager un compagnons d'armes.~
@@ -41,7 +41,7 @@
 @40 = ~Combien vos services me coûteraient-ils ?~ 
 @41 = ~Quand Aribeth a recruté les mercenaires, nous avons tous été payés, et bien payés, en avance. Le Seigneur Nasher ne recule devant aucune dépense pour retrouver la secte. Nos instructions étaient de nous mettre à disposition de ceux qui auraient besoin de notre aide. Et à ce sujet, puis-je vous aider en quoi que ce soit ?~ 
 @42 = ~Avez-vous des renseignements sur la secte derrière la Mort Hurlante ?~
-@43 = ~I could use a monk.~/*Une pause ne me ferait pas de mal.*/
+@43 = ~I could use a priest.~/*Une pause ne me ferait pas de mal.*/
 @44 = ~Je n’ai besoin de rien pour l’instant.~
 @45 = ~Leur base est bien cachée. Toutefois, je ne serais pas surpris qu’ils soient liés au village de Boisroussi.~
 @46 = ~Boisroussi ?~
@@ -62,5 +62,5 @@
 @61 = ~A vrai dire, je n'étais pas seul. Aribeth et les autres gardes en ont fait autant que moi.~ 
 @62 = ~C'est moi, oui.~
 @63 = ~D'autres vous ont peut-être aidé, en effet, mais je sais ce qu'il en est vraiment. La marque du Seigneur Silencieux est sur vous.~
-@64 = ~I have known about your existence for a while. The most beautiful whirlpool of inhuman slaughter revolves around you. I am Grimgnaw, a monk of the Order of the Long Death. No doubt you have come for the same reason as I: to join Aribeth in hunting and slaying the cult that was responsible for the Wailing Death.~ 
+@64 = ~I have known about your existence for a while. The most beautiful whirlpool of inhuman slaughter revolves around you. I am Grimgnaw, a priest of the Order of the Long Death. No doubt you have come for the same reason as I: to join Aribeth in hunting and slaying the cult that was responsible for the Wailing Death.~ 
 /*Je vous connais depuis le massacre de l'Académie, <CHARNAME>. Un merveilleux maelstrom de carnage tourbillonne autour de vous. Je suis Rongemort, moine de l’Ordre de la Mort Lente. Vous venez sans aucune doute pour la même raison que moi : aider Aribeth à retrouver et à tuer la secte qui a propagé la Mort Hurlante.*/
