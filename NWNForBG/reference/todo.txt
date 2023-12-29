@@ -1,11 +1,6 @@
 TODO:
 *. пофиксить весь английский (с форума бимдогов):
 
--Aribeth's dialogue at the start doesn't always match what she's saying (sometimes it's very different). And in some dialogue choices she repeats the "second, ..." part, which makes no sense unless it's right after the line that starts with "first,...".
--Bethany, who you meet right outside of the academy, tells you that the Peninsula District is to the southwest, but it's actually to the east.
--Invisibility Hat description doesn't mention the actual (improved) invisibility charge ability, how often it can be used etc.
--Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
--Don't know if this is a bug, but it's weird, so I'm mentioning it: the mod starts with you at 1.35 million xp, but most of the companions you can hire only come with ~660k (except Daelan and Linu who start with ~1 million and Boddyknock starts with 784k).
 -Grimgnaw is referred to as a Monk in dialogue, but he's a Cleric (I'm aware that there's no animation for dwarven monks, but then the dialogue should be changed, no? Or maybe he should be turned into a human so he can be a Monk?).
 -The audio in the cutscene with Drawl is messed up, it lags behind the subtitles a lot and is waaaaaaay to quiet/distorted.
 -The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand).
@@ -18,6 +13,8 @@ TODO:
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
+*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat
+*. Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
 
 Новый контент:
 *. Может быть Шарлин сделать подклассом барда - Jester, а то она бесполезна :) и хоббита тоже подклассом вора -
