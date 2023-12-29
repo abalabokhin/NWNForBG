@@ -1,7 +1,18 @@
 TODO:
-*. сделать китайский - файлы есть, но не знаю, как закодировать
-*. пофиксить весь английский (с форума бимдогов).
-*. исправить NWCULT1.CRE (с форума арканы).
+*. пофиксить весь английский (с форума бимдогов):
+
+-Aribeth's dialogue at the start doesn't always match what she's saying (sometimes it's very different). And in some dialogue choices she repeats the "second, ..." part, which makes no sense unless it's right after the line that starts with "first,...".
+-Bethany, who you meet right outside of the academy, tells you that the Peninsula District is to the southwest, but it's actually to the east.
+-Invisibility Hat description doesn't mention the actual (improved) invisibility charge ability, how often it can be used etc.
+-Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
+-Don't know if this is a bug, but it's weird, so I'm mentioning it: the mod starts with you at 1.35 million xp, but most of the companions you can hire only come with ~660k (except Daelan and Linu who start with ~1 million and Boddyknock starts with 784k).
+-Grimgnaw is referred to as a Monk in dialogue, but he's a Cleric (I'm aware that there's no animation for dwarven monks, but then the dialogue should be changed, no? Or maybe he should be turned into a human so he can be a Monk?).
+-The audio in the cutscene with Drawl is messed up, it lags behind the subtitles a lot and is waaaaaaay to quiet/distorted.
+-The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand).
+-Drake in the Serpent place in Beggar's Nest gives wrong directions to Krestal (he says he's north of the Helmite shrine to the west, but the Helmite shrine is to the east).
+-Jemaine talks about his brother going to a house north of there, but Jemaine's house is already at the northernmost part of the map. The house is actually right next door, to the east.
+-When fighting the aforementioned god Cult Mages, sometimes a random invincible creature (with no animation) named "target" shows up.
+-Kipp in the Peninsula district says the prison is to the southwest, but you're already at the southwest part of the area where you find him and the prison is to the north. 
 
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
