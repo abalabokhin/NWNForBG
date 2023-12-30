@@ -106,6 +106,7 @@ In development:
 - Make NWCULT1 creature a little weaker to be more ballanced.
 - Add Chinese, thanks to MephistoSatanDevil and icecool.
 - Fix some texts, thanks to TheWildestMage
+- Probably fix crash with a big spider one more time, thanks to TheWildestMage
 
 0.94 (11/27/23)
 
