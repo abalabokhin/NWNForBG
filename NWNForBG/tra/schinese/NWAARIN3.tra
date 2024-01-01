@@ -1,4 +1,4 @@
-@0 = ~Excuse me, but where is <CHARNAME>? I'll only talk to him.~ /*我叫<CHARNAME>·<CHARNAME>，你是谁？ 我绝对不会向你屈服！*/
+@0 = ~打扰一下，<CHARNAME> 在哪里？ 我只会跟他说话。~ 
 @1 = ~不要放弃希望啊，我的领主。不管如何我们还拥有力量之咒，不是吗？~ [NWAAR471]
 @2 = ~如果你把她从地牢里放出来的话——也许海卓琳会把它们的秘密告诉我们。~ [NWAAR472]
 @3 = ~海卓琳告诉了我们无冬城下面有一个秘门。没有她的话，我们可能永远都找不到源石。~ [NWAAR473]
@@ -101,5 +101,4 @@
 @100 = ~我已经把所有的精力耗费在组织剩余的部队去抵御陆斯坎军队的下一个突袭了，<CHARNAME>。如果敌人破坏都市的核心，那我们就彻底失败了。~ [NWAAR488]
 @101 = ~抱歉，虽然我会尽我的全力帮你，但我能给你的时间不多！~ [NWAAR489]
 @102 = ~喔，我的爱，很高兴能再见到你，我只希望不是在这么令人讨厌的情况下相见。~ [NWAAR487]
-@103 = ~It is an honor to speak with you. You are now a hero of Neverwinter, your name will forever be written in the history of the city!~ 
-/*我想和你谈谈。 你是不是无冬城的英雄啊？你是的！你是的！*/
+@103 = ~很荣幸与您交谈。 你现在是无冬城的英雄，你的名字将永远写在这座城市的历史上！~ 

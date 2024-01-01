@@ -1,11 +1,11 @@
-@0 = ~A stranger to Luskan... and a <RACE> <MANWOMAN>, besides. The Cutlass Inn certainly hasn't gotten many visitors since the High Captains sealed the gates and the docks... allow me to welcome you, <SIRMAAM>.~ /*对陆斯坎来说的陌生人……一个<RACE><MANWOMAN>。自从大统领封锁了城门和码头，自然就很少访客会到弯刀客栈……请容我诚挚的欢迎你，<SIRMAAM>。*/
+@0 = ~对陆斯坎来说的陌生人……一个<RACE><MANWOMAN>。自从大统领封锁了城门和码头，自然就很少访客会到弯刀客栈……请容我诚挚的欢迎你，<SIRMAAM>~ 
 @1 = ~多数的战争都发生在我的旅馆旁，如果你要留下来，那应该还算安全。补给品已经缺乏……但是我还是会竭尽所能的为你服务。~
 @2 = ~你是哪位？~
 @3 = ~你的房间要多少钱？~
 @4 = ~我可以问你几个问题吗？~
 @5 = ~再见，祝你好运。~
 @6 = ~我的名字是阿如弗·雷拳，如果你必须知道的话。我是这家旅馆的经营者……虽然不是太豪华，但一切自然就好。 正常来说，此时我们正为来到这城市的水手与旅客们而忙碌着。就在一瞬间，我就变成躲避战争的可怜家伙。~ 
-@7 = ~Sorry. I'd like to accomodate you, but the inn is packed to the rafters with refugees as it is. However, one room has recently been vacated, but it is very expensive. Will you take it?~ /*很抱歉。我想帮你找适合的房间，不过如你所见的，这里挤满了难民。 你可以捐一些钱。治疗是非常昂贵的。 你要它做什么？*/
+@7 = ~很抱歉。我想帮你找适合的房间，不过如你所见的，这里挤满了难民。不过最近空出了一间房，但是价格很贵。你愿意接受吗？~ 
 @8 = ~是~
 @9 = ~我想那应该没什么损失，你想知道些什么？~
 @10 = ~到底在陆斯坎发生了什么事？~
@@ -13,7 +13,7 @@
 @12 = ~我可以在这里找到工作吗？~
 @13 = ~如何才能进入主塔？~
 @14 = ~注意，如果你往外走请务必小心。~
-@15 = ~Ah. Well, that's the big question, isn't it? The High Captains have been fighting for weeks, now, each trying to kill the other. They've gone completely crazy, I've heard, each trying to take power in the city for himself. The belligerents have already burned half the city. Pirates from Mirabar have sealed off this area.~/*嗯，那是一个大问题，不是吗？大统领已经争战厮杀好几周了，现在每个人都想置对方于死地，他们完完全全都疯掉了，我听说他们每个人都想在城市中建立自己的霸权。 文件%s正在使用中并且被锁定。 此地不允许骑乘。*/
+@15 = ~嗯，那是一个大问题，不是吗？大统领已经争战厮杀好几周了，现在每个人都想置对方于死地，他们完完全全都疯掉了，我听说他们每个人都想在城市中建立自己的霸权。交战双方已经烧毁了半座城市。来自米拉巴的海盗已经封锁了该地区。~ 
 @16 = ~嘿！在陆斯坎任何宗教的教派都有可能，朋友，而且没人在乎。 我没有听说过任何有关教徒的事。可能我还听说过一些亡灵法师的事，但是从没听说过教徒的事。~ 
 @17 = ~那个亡灵法师是什么？~
 @18 = ~你能想到还有谁还知道更多事吗？~
@@ -21,7 +21,7 @@
 @20 = ~几乎没有人在工作了，因为战争的缘故，这个城市差不多都荒废停顿了下来，如果你是属于爱冒险的人，我想有些居民还是需要人帮忙完成他们的一些事务吧。 或许找龙达女士谈谈吧，或是伊林维德。他们都在这家客栈里，他们都急于找到自己的亲友或爱人。我不知道，或许他们会雇佣你吧。~ 
 @21 = ~你为什么想要进去主塔？不，等一下……我不想知道了，不用告诉我。 正是这样，你无法进入主塔。位于行政区的西北方有一座通往他们的岛的桥，除非兄弟会们允许你进去，否则你无法渡过那座桥。 我料想大统领们会知道更多有关于他们的事。他们是少数会愿意离开那里的人，相信我。~ 
 @22 = ~告诉我有关于大统领们的事。~
-@23 = ~Rumor has it that the High Captains have sorcerers who summon monsters to fight for them...~ /*库尔泽说假如我能为他做一些事，他同意释放艾温妮。*/
+@23 = ~有传言说，大统领麾下有魔法师，可以召唤怪物为他们作战...~ 
 @24 = ~你知道这一切是如何开始的吗？~
 @25 = ~为何没有人出面制止这事情的发生呢？~
 @26 = ~你有听到任何的谣言吗？~
@@ -47,5 +47,4 @@
 @46 = ~欢迎，<SIRMAAM>。你是……从北方森林来的吧？通常我是不准许野蛮人住在弯刀客栈，但是自从大统领封锁了城门和码头，我就没什么生意可做了。~
 @47 = ~我不会问你如何进去陆斯坎，<BROTHERSISTER>，但是一个神圣<MANWOMAN>总是被欢迎居住在弯刀客栈。天知道，自从大统领封锁了城门和港口之后我的店就没有什么生意上门了……希望天神可以帮帮我~
 @48 = ~欢迎，<LADYLORD>。你有没有感觉就像其他人一样在弯刀客栈可以得到安全的庇护？自从大统领们封锁了城门和港口之后生意就一落千丈，所以我非常高兴并欢迎你来。~
-@49 = ~Back already? What can I do for you, <SIRMAAM>?~
-/*回来了吗？我能为你做什么吗，<SIRMAAM>？*/
+@49 = ~回来了吗？我能为你做什么吗，<SIRMAAM>？~ 
