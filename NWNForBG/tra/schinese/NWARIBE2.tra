@@ -43,7 +43,7 @@
 @42 = ~那听起来似乎是个危险的任务。~
 @43 = ~我能要求一些协助吗？你会前来与我会合吗？~
 @44 = ~我要怎样才能进塔？~
-@45 = ~Okay, I'll go to Aarin.~ /*好，我接。*/
+@45 = ~好吧，我这就去找艾瑞恩。~ 
 @46 = ~那是毫无疑问的。你已遭遇过一些类似的危险，然而也都顺利克服了。无庸置疑的，在威胁解除之前，还有更棘手的需要面对。 你会同意帮助纳什尔领主的，难道不是吗？不论你的理由为何，我很难相信你会预期这是个简单任务。~ [NWARI317] 
 @47 = ~当然，艾瑞恩和我都会和你一起进到陆斯坎。在那儿艾瑞恩会帮助你进塔，<CHARNAME>。至于我，我……另有计划。~ [NWARI319]
 @48 = ~正如我之前所说，去找艾瑞恩·甄德谈。幸运的话，他的计划不但能助你进城，还能让你进到塔中。~ [NWARI323]
@@ -92,15 +92,15 @@
 @91 = ~救你的人是谁？~
 @92 = ~救你的人是……泰尔？~
 @93 = ~你是对的，你讲了好久啊。~
-@94 = ~I have often thought that he was none other than an avatar of Tyr, himself, the Lord of Justice. Though perhaps that is presumptuous of me. Whoever he was, the monks of Ilmater had not seen him bring me... and I never saw him again. Or perhaps I should say I never saw him in person. He came to me time and time again in my dreams for many months afterwards, telling me that my vengeance would bring no true justice.I refused him at first, determined to return to my bloody hunt. The dreams came more frequently, and the man grew more stern with me. The path lay elsewhere, I was told, and reluctantly I left the mountains and came to Neverwinter and entered the service of Tyr. The dreams never came again.~ [NWARI402] /*我常常想，他可能就是正义之神泰尔的化身。尽管那可能只是我华丽的想像而已。 无论他是谁，伊尔玛特修道院的德鲁伊并没有看见他将我带来……而我不曾再见过他。也或许我该说我不曾亲自再见到他。 起初我抗拒着他，并下定决心再回去做残忍的猎人，同样的梦一再地重复，而那一个男人也一再地困扰着我。 我被告知，还有其他的方法，于是并不情愿地离开了那座山，到无冬城为泰尔服务。此后就再也没有做噩梦了。*/
+@94 = ~我常常想，他可能就是正义之神泰尔的化身。尽管那可能只是我华丽的想像而已。无论他是谁，伊尔玛特修道院的德鲁伊并没有看见他将我带来……而我不曾再见过他。也或许我该说我不曾亲自见到他本人。此后的好几个月里，他一次又一次地出现在我的梦中，告诉我，我的复仇不会带来真正的正义。我起初拒绝了他，决心重返我的血腥狩猎。梦越来越频繁，男人对我的态度也越来越严厉。我被告知，还有其他的方法，于是并不情愿地离开了那座山，到无冬城为泰尔服务。此后就再也没有做噩梦了。~ [NWARI402] 
 @95 = ~那时发生了什么事？~
 @96 = ~于是，你和范斯维克一样成为牧师？~
 @97 = ~因此你认为是泰尔本身要求你信仰它吗？~
-@98 = ~I have often thought him thus. An avatar of the Maimed God, himself. Though perhaps that is presumptuous of me. Whoever he was, the monks of Ilmater had not seen him bring me... and I never saw him again. Or perhaps I should say I never saw him in person. He came to me time and time again in my dreams for many months afterwards, telling me that my vengeance would bring no true justice.I refused him at first, determined to return to my bloody hunt. The dreams came more frequently, and the man grew more stern with me. The path lay elsewhere, I was told, and reluctantly I left the mountains and came to Neverwinter and entered the service of Tyr. The dreams never came again.~ [NWARI402] /*我常常想，他就是残障之神泰尔的化身。尽管那可能只是我华丽的想像而已。 无论他是谁，伊尔玛特修道院的德鲁伊并没有看见他将我带来……而我不曾再见过他。也或许我该说我不曾亲自再见到他。 起初我抗拒着他，并下定决心再回去做残忍的猎人，同样的梦一再地重复，而那一个男人也一再地困扰着我。 我被告知，还有其他的方法，于是并不情愿地离开了那座山，到无冬城为泰尔服务。此后就再也没有做噩梦了。*/
+@98 = ~我常常想，他可能就是残障之神泰尔的化身。尽管那可能只是我华丽的想像而已。无论他是谁，伊尔玛特修道院的德鲁伊并没有看见他将我带来……而我不曾再见过他。也或许我该说我不曾亲自见到他本人。此后的好几个月里，他一次又一次地出现在我的梦中，告诉我，我的复仇不会带来真正的正义。我起初拒绝了他，决心重返我的血腥狩猎。梦越来越频繁，男人对我的态度也越来越严厉。我被告知，还有其他的方法，于是并不情愿地离开了那座山，到无冬城为泰尔服务。此后就再也没有做噩梦了。~ [NWARI402] 
 @99 = ~（叹息）你好像不是很有兴趣听，<CHARNAME>。你要我就此打住吗？~ [NWARI426]
 @100 = ~不，我是说着玩的。~ 
 @101 = ~好的，也许我晚一点会再来听这段。~
-@102 = ~Very funny. Perhaps I am just not in the mood for levity. Let me return to the topic of the man who saved me. I have often thought that he was none other than an avatar of Tyr, himself, the Lord of Justice. Though perhaps that is presumptuous of me. Whoever he was, the monks of Ilmater had not seen him bring me... and I never saw him again. Or perhaps I should say I never saw him in person. He came to me time and time again in my dreams for many months afterwards, telling me that my vengeance would bring no true justice.I refused him at first, determined to return to my bloody hunt. The dreams came more frequently, and the man grew more stern with me. The path lay elsewhere, I was told, and reluctantly I left the mountains and came to Neverwinter and entered the service of Tyr. The dreams never came again.~ [NWARI427] /*我常常想，他可能就是正义之神泰尔的化身。尽管那可能只是我华丽的想像而已。 无论他是谁，伊尔玛特修道院的德鲁伊并没有看见他将我带来……而我不曾再见过他。也或许我该说我不曾亲自再见到他。 起初我抗拒着他，并下定决心再回去做残忍的猎人，同样的梦一再地重复，而那一个男人也一再地困扰着我。 我被告知，还有其他的方法，于是并不情愿地离开了那座山，到无冬城为泰尔服务。此后就再也没有做噩梦了。*/
+@102 = ~非常有趣。但我没心情开玩笑。让我回到拯救我的那个人的话题。我常常想，他可能就是正义之神泰尔的化身。尽管那可能只是我华丽的想像而已。无论他是谁，伊尔玛特修道院的德鲁伊并没有看见他将我带来……而我不曾再见过他。也或许我该说我不曾亲自见到他本人。此后的好几个月里，他一次又一次地出现在我的梦中，告诉我，我的复仇不会带来真正的正义。我起初拒绝了他，决心重返我的血腥狩猎。梦越来越频繁，男人对我的态度也越来越严厉。我被告知，还有其他的方法，于是并不情愿地离开了那座山，到无冬城为泰尔服务。此后就再也没有做噩梦了。~ [NWARI427] 
 @103 = ~泰尔的牧师带领着我，而过了一些时候我学习他们的方法来赞美残障之神。我被选作正义之神的圣武士，自此心里就平静好一阵子。 我的奉献提升了我的地位，许久之后我遇上了一个年轻的侍僧，范斯维克，而他知道我。发现我的过去……~ [NWARI407] 
 @104 = ~我很抱歉，我无意要使你悲伤。~
 @105 = ~你不要再哭了好吗？~
@@ -111,15 +111,15 @@
 @110 = ~咳……放慢速度，女士！ 这是意味了我们可以上床睡觉吗？~ 
 @111 = ~我很高兴，我的朋友。之后让我们将话题转回到你的任务上吧。~ [NWARI412]
 @112 = ~我……我了解了。这真是太糟糕了，以为有一个真正朋友而自己空欢喜一场，那么让我们将话题转回到你的任务上吧。~ [NWARI413]
-@113 = ~... I shall forget you said that, sir. Perhaps we should forget that I said anything, either. Let's get back to discussing your task.~ [NWARI415] /*先生，我会忘记你所说过的话。或许我们应该也要忘记我所说过任何事。 回到我的第一个问题。*/
+@113 = ~... 先生，我会忘记你所说过的话。或许我们应该也要忘记我所说过任何事。让我们回过头来讨论您的任务。~ [NWARI415] 
 @114 = ~不是立刻的。事实上，过了一些时候，我才遇见范斯维克。 泰尔的牧师带领着我，而过了一些时候我学习他们的方法来赞美残障之神。我被选作正义之神的圣武士，自此心里就平静好一阵子。 我的奉献提升了我的地位，许久之后我遇上了一个年轻的侍僧，范斯维克，而他知道我。发现我的过去……~ [NWARI423] 
 @115 = ~我不知道。起初，我并不把它当一回事。我痛恨那些梦，并且因为终止复仇行动而痛苦不已。 泰尔的牧师带领着我，而过了一些时候我学习他们的方法来赞美残障之神。我被选作正义之神的圣武士，自此心里就平静好一阵子。 我的奉献提升了我的地位，许久之后我遇上了一个年轻的侍僧，范斯维克，而他知道我。发现我的过去……~ [NWARI424] 
-@116 = ~No. No... I am done with crying. Thank you for listening to my tale. You have been a great comfort to me. I would be glad to call you a... a friend, <CHARNAME>. Tyr only knows that finding a friend in times like these is difficult enough. I hope you feel the same.~ [NWARI409]/*不。 那么…… 不，我……谢谢你。谢谢你听我说这个故事。你让我好过一点了。 我很高兴能这么称呼你，一个……一个朋友，<CHARNAME>。泰尔知道找个这样子的一个朋友是一件多么困难的事。我希望你能有同样的体会。*/
+@116 = ~不，不……我已经哭够了。感谢您聆听我的故事。你给了我很大的安慰。我很高兴能这么称呼你，一个……一个朋友，<CHARNAME>。泰尔知道找个这样子的一个朋友是一件多么困难的事。我希望你能有同样的体会。~ [NWARI409]
 @117 = ~我们来谈点别的吧。~ [NWARI422]
 @118 = ~对，我在生气。我反复思索范斯维克怎会走上绝路……而我又怎能不去试着做些什么加以阻止……这么一想，我更是生气！ 范斯维克终其一生为正义的伸张而奔波劳苦，为职责的履行而鞠躬尽瘁，就如同我一样。但为什么他得到的却是那样的下场呢？ 都是背弃。为了平息愚民的愤怨，他的君王背弃他；他的神则因为一个愚蠢的错误也背弃了他。你说，我怎能不生气，<CHARNAME>！~ [NWARI432]
 @119 = ~但范斯维克与数以万计人民的死有所牵连！~
 @120 = ~或许你应该要气范斯维克。~
-@121 = ~Perhaps you are right. You have reason to be angry.~ /*也许你是对的。 你已经离开队伍。*/
+@121 = ~也许你是对的。 你有理由生气。~ 
 @122 = ~我不喜欢听到你这么说。~
 @123 = ~你让他听起来活像个谋杀犯！不是范斯维克造成了这场瘟疫，也不是范斯维克摧毁了城市！他只不过是太信任，太专注于他的职责。~ [ARIBE434]
 @124 = ~是的，同样的，我是该对范斯维克发一顿脾气的。这个傻瓜，大傻瓜！如果他不要那么容易的信任别人，那么虔诚，他就永远不会死！~ [NWARI458]
@@ -161,5 +161,4 @@
 @160 = ~我要走了。~
 @161 = ~我真高兴见到你是安全的，我的朋友。纳什尔领主告诉我他对你的成功有信心，虽然我真的为你的处境担心。 你是否还没有找到任何与有关邪教的新消息？~ [NWARI475] 
 @162 = ~能再见到你真好，<CHARNAME>。我曾担心你负起了太多的责任，但你的机智与成功又总会令我惊讶。 你是否还没有找到任何与有关邪教的新消息？~ [NWARI476] 
-@163 = ~I am sorry, but I cannot discuss Neverwinter's business with you. Let <CHARNAME> come to me. I will only talk to them.~ 
-/*谢谢。跟你做生意真是令人感到愉快。 我的名字是<CHARNAME>。你是谁？ 我不会倒向你！*/
+@163 = ~抱歉，我不能和你讨论无冬城的事情。让<CHARNAME>来找我。我只会与他们交谈。~ 

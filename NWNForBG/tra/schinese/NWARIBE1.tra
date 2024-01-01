@@ -2,7 +2,7 @@
 @1 = ~我已经尽力最快赶来这里了，艾瑞贝丝女士。~
 @2 = ~你在等我？为什么？~
 @3 = ~我现在在这里了，要说什么你说吧！~
-@4 = ~Neverwinter needs you to survive the Howling Death. The attack on the Academy doused the one faint spark of hope this city had. I need you to help recover that which we have lost, <CHARNAME>.~ [NWARI054]/*俺希望你能做些别的事。 这次学院受到攻击，已经浇息了这城市仅存的一丝希望，<CHARNAME>，我需要你来帮助我们找回那些我们所失去的生物。*/
+@4 = ~无冬城需要你在死亡嚎叫中生存下来。这次学院受到攻击，已经浇息了这城市仅存的一丝希望。我需要你帮助找回我们失去的东西，<CHARNAME>。~ [NWARI054]
 @5 = ~能为你服务是我的荣幸，艾瑞贝丝女士。~
 @6 = ~我只替我自己做事。~
 @7 = ~给我个价钱，我会帮你。~
@@ -34,7 +34,7 @@
 @33 = ~在各个无冬城家族中的冒险者心中，都对本学院的训练中心十分推崇。我让他们将野兽们送到那里去。我本身也曾经在那里学习过，那儿的学生与讲师都对纳什尔领主十分地忠诚。 不久之后学院就遭到攻击了。~ [NWARI060] 
 @34 = ~说下去！~
 @35 = ~所以，你认为学院里有人背叛你？~
-@36 = ~The attack took us by surprise. After this massacre at the Academy, only a handful of people remained alive. Fenthick and Desther arrived with reinforcements, but during the confusion of battle the Waterdhavian creatures disappeared into the streets of Neverwinter - and our hopes of a cure vanished with them.~ [NWARI062] /*不，这一点都不令人惊讶。 那些死人是从哪里来的啊？ 虽然范斯维克和德斯泽尔带着援兵抵达，但在战斗一团混乱时，深水城生物就消失在无冬城的街上，我们治愈此疾病的希望，也随着幻灭了。*/
+@36 = ~这次袭击让我们措手不及。 学院大屠杀之后，只剩下少数人活着。虽然范斯维克和德斯泽尔带着援兵抵达，但在战斗一团混乱时，深水城生物就消失在无冬城的街上，我们治愈此疾病的希望，也随着幻灭了。~ [NWARI062] 
 @37 = ~艾瑞贝丝女士，那我该如何为你效劳呢？~
 @38 = ~我猜猜看，你希望我能带回那些野兽们。~
 @39 = ~你希望我现在怎么做，艾瑞贝丝？~
@@ -48,8 +48,8 @@
 @47 = ~那我们怎么知道那些怪兽们还是不是生存着呢？~
 @48 = ~<CHARNAME>，我希望你对此事能详细调查。攻击事件和奇怪异兽出现在市区中的消息只会加深民众的恐慌，让街道上的秩序更加混乱。 <CHARNAME>，关于这次行动，还有一点要告诉你，当你需要物资补给时，告诉我，泰尔神殿的商店内的东西我都可卖给你。~ [NWARI073] 
 @49 = ~无论要求什么，名望、荣耀或财富，若你成功地达成任务，你将得到你该得的，充裕的报酬。~ [NWARI072]
-@50 = ~Your skill and courage are evident, and I know that you are not with those who want to destroy Neverwinter. The city watch can do little to help in this search; their numbers are barely enough to keep order in the streets of Neverwinter. Others, like Fenthick or myself, have duties that require we stay here.~ [NWARI070] /*我要你带着你的族人立刻离开这里。希望我们别再碰上。 城市护卫们可以在这次搜索中帮点小忙，他们的人数仅仅足够维持无冬城街道的次序。其他的，像是范斯维克或我自己，就必须负起守卫无冬城城堡的责任。*/
-@51 = ~The city watch can do little to help in this search; their numbers are barely enough to keep order in the streets of Neverwinter. Others, like Fenthick or myself, have duties that require we stay here. Your fame precedes you, <CHARNAME>. Your bravery and skill are obvious, and I know you are not in league with those who seek to destroy Neverwinter.~ [NWARI071] /*城市护卫们可以在这次搜索中帮点小忙，他们的人数仅仅足够维持无冬城街道的次序。其他的，像是范斯维克或我自己，就必须负起守卫无冬城城堡的责任。 <CHARNAME>，这次学院受攻击时，你表现得很出色。你的勇敢和技能都很杰出，而且我知道你跟那群想摧毁无冬城的人并不在同一阵线。*/
+@50 = ~你的勇敢和技能都很杰出，且我知道你跟那群想摧毁无冬城的人并不在同一阵线。城市护卫们在这次搜寻中几乎无能为力。他们的人数仅够维持无冬城街道的秩序。其他的人，像是范斯维克或我自己，就必须负起守卫无冬城城堡的责任。~ [NWARI070] 
+@51 = ~城市护卫们在这次搜寻中几乎无能为力。他们的人数仅够维持无冬城街道的秩序。其他的人，像是范斯维克或我自己，就必须负起守卫无冬城城堡的责任。你表现得很出色，<CHARNAME>。你的勇敢和技能都很杰出，而且我知道你跟那群想摧毁无冬城的人并不在同一阵线。~ [NWARI071] 
 @52 = ~从学院战斗中脱逃的那些生物都未受伤，据说在城市的很多地方都有人看见过这些异兽。 如果我们想要度过瘟疫的病情，你就一定要找到深水城生物。我们无冬城的命运就掌握在你手上。~ [NWARI068] 
 @53 = ~拿着这些金币，好让你在执行任务途中可买些必需品。记得，走之前准备好几剂药，它们会是救命恩人。~ [NWARI160]
 @54 = ~我会马上去研究关于深水城生物的资料。~
@@ -111,5 +111,4 @@
 @110 = ~<CHARNAME>，你真的是位英雄啊！在那么多搜寻者中，你真的是出类拔萃！~ [NWARI152]
 @111 = ~我们拿到了所有的四剂药。快走吧，<CHARNAME>，时间紧迫。 在这样的黑暗时代，有很多人想效忠无冬城，你却赢得了荣耀的名望。等我们举行医治仪式时，你将可与我们并列在台前。 准备好要去祭典庭了吗？我们得尽快启程了。~ [NWARI155]
 @112 = ~我这就回来。~
-@113 = ~I am sorry, but I cannot discuss Neverwinter's business with you. Let <CHARNAME> come to me. I will only talk to them.~ 
-/*谢谢。跟你做生意真是令人感到愉快。 我的名字是<CHARNAME>。你是谁？ 我不会倒向你！*/
+@113 = ~抱歉，我不能和你讨论无冬城的事情。让<CHARNAME>来找我。我只会与他们交谈。~ 

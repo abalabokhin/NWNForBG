@@ -1,4 +1,4 @@
-@0 = ~Greetings, my <LADYLORD>. It is rare we see new faces come to drink with us at the Alliance Inn.~ [NWAEL052]/*这位<LADYLORD>，你好。难得在同盟客栈中看到新面孔加入我们。*/
+@0 = ~你好, 我的 <LADYLORD>. 难得在同盟客栈中看到新面孔加入我们。~ [NWAEL052]
 @1 = ~你看起来很面熟，是不是在哪见过？~
 @2 = ~你好，先生。我叫<CHARNAME>·<CHARNAME>。~
 @3 = ~你是哪位？~
@@ -28,7 +28,7 @@
 @27 = ~请继续下去！~
 @28 = ~我希望这件事有个重点！~
 @29 = ~我已经感到枯燥了！~
-@30 = ~Once upon a time, I would have stabbed you on the spot for such comments. Do not interrupt me with rudeness. I will, however, keep my tale short to accomodate your attention span.~ /*我想跟你讲一下话。 不要那么粗鲁的打断我！我会简短我的故事来配合你的注意力啦！*/
+@30 = ~如果是以前，我会因为这样的言论当场捅你一刀。不要那么粗鲁的打断我。不过，为了吸引您的注意力，我的故事会简短一些。~ 
 @31 = ~有一个方法也许可以让我回到家里，就是利用仪式权杖来通融，那是要给鲁西斯派的官员的！那是个贿赂，虽然有很多种类，但都是古老且具文化性的东西……而条件都非常的特别！ 应该会有五个分开的宝石陪衬着权杖。基本上，在费伦很难找到它们！~ 
 @32 = ~我有其中的两个宝石，其他三个我已经查出来在这地方，但很遗憾它们的主人并不想卖出它们！ 没有它们，我就不能完成权杖，我的女儿就将不能回到埃尔米特了！或许对我来说是命运，但对我女儿来说，这真是太不公平了！~ 
 @33 = ~所以你打算怎么做呢？~
@@ -57,13 +57,13 @@
 @56 = ~我并不信任你，艾莱斯。~
 @57 = ~我们所谈的是怎样的报酬呢？~
 @58 = ~很好，艾莱斯。我会帮你找回宝石的。~
-@59 = ~I refuse.~/*我答应你。*/
+@59 = ~我拒绝。~
 @60 = ~我想这些误会是可以解释的，我知道这要求很难，但要不是因为答应过我女儿，我早就放弃了。~
 @61 = ~如果你不为我做这件事，那请你为她做吧！之前我对你隐瞒实情，现在我已经没有任何可以做的事，或者说什么来证明我的诚意了！要接受或拒绝，你决定吧！~
-@62 = ~I have no illusions, getting these gems is not an easy task. I can offer you this: 1500 gold for each of the gems that you return to me. If you bring all three, I'll add 1500 gold to that as well as a magic item that I'm sure you'll find a use for. That's more than you'll get these tiny pebbles anywhere else if you decide to just sell them - I assure you.~ /*我有件事一定要说。 你找回一个宝石，我就给你200枚金币！如果你带回来所有的三个宝石，我就会再加400枚金币给你！ 我向你保证，这绝对比你卖的钱多，那真的是非常值得的！*/
+@62 = ~我没有幻想，获得这些宝石不是一件容易的事。我可以给你一个条件:你每还给我一颗宝石，我就给你1500金币。如果你带回来所有的三个宝石，我就给你再加1500金币，以及一件魔法物品，我相信你会用得上的。我向你保证，这绝对比你卖的钱多，那真的是非常值得的。~ 
 @63 = ~太好了！我还正觉得不会有人愿意帮我做这件事呢！ 让我明确的告诉你要找东西的样子！那三个宝石很小，和手指的指甲一般大，且用精细的刀工来切割，有很多细致的表面！它们非常有光泽，不过中心是个黑暗的物体！~
 @64 = ~唉，就依你吧！要是你改变主意，或是有其他的可能，就通知我一声。~
-@65 = ~One of the gems is in the possession of Wanev, a local wizard. I suspect the gem is secreted away in his tower, which can be found in the grasslands between Port Llast and Charwood. The tower gates are magically locked and I do not know how they can be opened. However, Wanve has a house here in Port Llast, perhaps you will find something there.~/*有颗宝石属于一个名叫维利弗的本地法师，我怀疑宝石被藏在他的塔里，你可以在介于赖斯特港和黑森林之间的绿地上找到那座塔。对了，塔的大门被魔法锁住了，不知如何才能打开。 我当然可以帮助你，如果你也会帮我做点事情的话。*/
+@65 = ~有颗宝石属于一个名叫维利弗的本地法师，我怀疑宝石被藏在他的塔里，你可以在介于赖斯特港和黑森林之间的绿地上找到那座塔。塔的大门被魔法锁住了，不知如何才能打开。不过，维利弗在赖斯特港有一栋房子，也许你会在那里找到一些东西。~ 
 @66 = ~另一个宝石被一个凶猛的战士守着，她叫赞米泽拉，几天前她才经过这儿！她说她住在陆斯坎那，但她有可能是在说谎！~
 @67 = ~第三个，我听说是在塞塔拉……她是个女巫，住在东边的无冬森林。要和她联络实在是很困难！ 我希望我有更多的消息可以告诉你！不过这些应该就已经够了！祝你好运罗！~ 
 
@@ -74,14 +74,14 @@
 @73 = ~这位<LADYLORD>您好吗？您已经幸运地取得宝石了？或者您还有其他的需要吗？~ [NWAEL051]
 @74 = ~再说一遍，谁拥有这些宝石？~
 @75 = ~我现在已经有其中一颗宝石了。~
-@76 = ~I already have all the gems.~/*已经说过他要帮我了。*/
+@76 = ~我已经找齐所有的宝石了。~ 
 @77 = ~找到最后一颗宝石了。~
 @78 = ~不，我要走了。~
 @79 = ~我懂了，祝你好运。~
-@80 = ~This is good news. Which gem do you have?~/*这太轻而易举了！ 你有哪一种？*/
-@81 = ~I have Wanev's gem.~/*找到最后一颗宝石了。*/
-@82 = ~I have Zamithra's gem.~ /*我有瓦斯的头。*/
-@83 = ~I have Setara's gem.~ /*找到最后一颗宝石了。*/
+@80 = ~这是个好消息。 你有哪一颗宝石？~ 
+@81 = ~我有维利弗的宝石。~ 
+@82 = ~我有赞米泽拉的宝石。~ 
+@83 = ~我有塞塔拉的宝石。~ 
 @84 = ~最后一颗宝石，多么耀眼啊！那么，依照约定，我会付给你400枚金币和这件魔法物品。~
 @85 = ~艾莱斯。拿着宝石。~
 @86 = ~这些宝石花了我好大的力气，我总该有更好的报酬吧！~ 
@@ -89,10 +89,9 @@
 @88 = ~噢！你是说那个法师拒绝交给我的宝石吗？什么那白痴还活着吗？噢，不！别回答！我宁愿不知道。如果他够聪明的话，他会答应我的提议的。 这里是我之前答应过你的500枚金币。~ 
 @89 = ~我懂了！这的确是那女战士拥有的宝石。虽然她不愿意跟我谈生意，但如果对象是你应该没问题，或者你去找她谈。 这里是我之前答应过你的500枚金币。~ 
 @90 = ~太好了，那女巫放弃了对吧？我可不想过问你到底付出什么代价。 这里是我之前答应过你的500枚金币。~ 
-@91 = ~I will not deprive you of your reward, my friend. Here it is. And let me take the gem from your hands. Oh, how good it will be to be back home. I cannot thank you enough for delivering the gems to me. Now I can at last take my daughter to Evermeet, as I promised. I cannot wait to show her Corellon's Grove. Farewell, friend. Perhaps someday we'll see each other again.~ 
-/*我不该夺走你应得的报酬的，给你吧！ 让我从你手上拿走宝石吧！呃，很好！它终于回来了！ 真是感谢你将宝石带来给我！现在我终于可以带我的女儿去埃尔米特了，我之前就已经答应她的！我真等不及要给她看看寇尔勒的小树林了呢！ 祝你健康，也许下次再谈。*/
+@91 = ~我不该夺走你应得的报酬的，给你吧！ 让我从你手上拿走宝石吧！呃，很好！它终于回来了！ 真是感谢你将宝石带来给我！现在我终于可以带我的女儿去埃尔米特了，我之前就已经答应她的！我真等不及要给她看看寇尔勒的小树林了呢！再见，朋友。 也许有一天我们会再次见面。~ 
 @93 = ~我懂了，毕竟，我是个走私贩。我愿意出超过300枚金币的价钱。~
-@94 = ~You want to deceive me. Pay more or get nothing!~/*你打不赢我的！ 不，我不需要任何东西。*/
+@94 = ~你想欺骗我。 要么付出更多，要么什么都得不到！~ 
 @95 = ~我对违约的人没有丝毫仁慈之心。如果有活着从我手中逃出的人，应该会警告你小心你的措辞。~
 @96 = ~如果你的女儿出了什么事，我将于心不安的，艾莱斯。~
 @97 = ~我才不怕你！你将什么都得不到。~
