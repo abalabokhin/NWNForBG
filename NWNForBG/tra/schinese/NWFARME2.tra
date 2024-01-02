@@ -1,9 +1,9 @@
-@0 = ~Howdy. How you doing?~ /*坚持。 你去死吧！*/
+@0 = ~你好。你怎么样？~ 
 @1 = ~我很好，谢谢你。~
 @2 = ~我感到害怕。~
 @3 = ~够了别说了，我有些问题问你。~
-@4 = ~All right, I'm gonna take off.~/*好吧，我走了。*/
-@5 = ~Take care young <MANWOMAN>. May Chauntea favor you with predictable weather.~/*保重<MANWOMAN>。也许查恩提可以帮你预测天气。*/
+@4 = ~好吧，我要出发了。~ 
+@5 = ~保重<MANWOMAN>。也许查恩提可以帮你预测天气。~ 
 @6 = ~嗯，很高兴听到这样的话。我想天气就是这样了，你可能会感到沮丧，我怎么帮你呢？~
 @7 = ~我怎么会因为天气感到沮丧？~
 @8 = ~我想谈谈其他的东西。~

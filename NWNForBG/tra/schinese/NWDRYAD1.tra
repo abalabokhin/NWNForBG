@@ -1,9 +1,9 @@
-@0 = ~I have prayed to the great oak for a savior! Are you <HESHE>, <RACE>? Shall I be freed at last to rejoin my tree?~ [NWDRYAD8] /*我已经向伟大的橡树祈求救世主的出现！你是<HESHE>，<RACE>吗？我在最后有可能回到我的树下吗？*/
+@0 = ~我已经向伟大的橡树祈求救世主的出现！你是<HESHE>，<RACE>吗？我在最后有可能被释放，重新回到我的树上吗？~ [NWDRYAD8] 
 @1 = ~术士把你囚禁在这里？~
 @2 = ~退后！我不是开玩笑的，树精！~
 @3 = ~冷静点，我会放你自由。~
 @4 = ~是的，真不幸。在逃离那场可怕的战斗后，我迷失在这座陌生的城市里……我不知道哪儿是回到我渴望的橡树的路途。 曼达恩找到我并把我带来这里。他想要……要伤害我，还要把我当作治疗瘟疫的药引。我只是做我能做的，魅惑了他。~ 
-@5 = ~I mean you no harm, <RACE>, and shall not use my glamors to charm you, I swear it! It has brought me no end of grief with Meldanen! Please just let me go!~ /*我对你这个<RACE>没有恶意，而且不要用我的魔法去魅惑你，我发誓！曼达恩带给我无止尽的悲痛！请你让我走吧！*/
+@5 = ~我对你这个<RACE>没有恶意，而且不会用我的魔法去魅惑你，我发誓！曼达恩带给我无止尽的悲痛！请你让我走吧！~ 
 @6 = ~你被下咒了？这是你被关在这里的原因吗？~
 @7 = ~如果我放了你，你要怎么报答我？~
 @8 = ~我请你先到艾瑞贝丝这里帮忙治疗瘟疫。~
@@ -20,14 +20,13 @@
 @19 = ~你可以自己找到回家的路吗？~
 @20 = ~你在这城市迷路了。我带你见可以帮你的人。~
 @21 = ~不，你现在无处可逃。我可以用个好奴隶。~
-@22 = ~Now I know that I need a piece of your hair. Die, creature.~ /*我已经得到我要的东西了。现在你去死吧，畜生。*/
+@22 = ~现在我知道我需要你的一根头发。你去死吧，畜生。~ 
 @23 = ~不，不！伟大的橡树保护你的仆人！~
-@24 = ~No, just not that! I can't take it! The great oak will protect me.~ /*不，我决不倒下！ 我办不到！ 你打算保护他们？*/
+@24 = ~不，不是那样！我不能接受！伟大的橡树会保护我。~ 
 @25 = ~是……是的，我相信我可以。我只需要找到最近的树……那个术士告诉我任何树可以让我返回家。~
 @26 = ~你可以自由地离开了。我身后的路是安全的。~
 @27 = ~也许你该跟我走。那样会比较安全。~
 @28 = ~你就像大多数的提供者一样，<RACE>人，但是我只是要去最近的一棵树。那个法师告诉我一株树可以让我返回家。 我应该永远不会忘记你的！如果我们再相遇，我会祈祷我会奖赏你个东西！再见！~ 
-@29 = ~Thank you, kind <RACE>. I shall not forget you. If we meet again, I hope I shall have the chance to reward you properly. Farewell!~/*谢谢你，<RACE>大好人。我不会忘记你的。如果我们再相遇，我希望我能有机会回报你。再见。*/
+@29 = ~谢谢你，善良的<RACE>。我不会忘记你的。如果我们再相遇，我希望我能有机会回报你。再见。~ 
 @30 = ~尽管你很友善，我还是不能与你这个<RACE>多谈了。我不会忘记你的。如果我们再相遇，我希望我能有机会回报你。再见。~
-@31 = ~Oh, please let this servant of the oak be free at last! Are you kind, <RACE>, or but another captor come to torment me?~ [NWDRYAD9] 
-/*喔，拜托，请把自由给予我这个橡树的仆人吧！你这个<RACE>应该是仁慈的吧，还是只是另外一个令我痛苦的捕捉者？*/
+@31 = ~喔，拜托，请把自由给予我这个橡树的仆人吧！你是仁慈的吗？<RACE>，还是只是另外一个令我痛苦的捕捉者？~ [NWDRYAD9] 

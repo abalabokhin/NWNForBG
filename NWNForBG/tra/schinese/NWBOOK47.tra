@@ -1,9 +1,8 @@
-@0 = ~You do not know how or for what to use this book.~ /*你还不知道你将面临的风险！*/
-@1 = ~You must get closer to the demon.~ /*你得好好在这边听我说。*/
-@2 = ~You cannot use the book in this location.~/*这个时候你不能使用神物。*/
-@3 = ~How would you like to use this book?~/*你怎么举起那块巨石的？*/
+@0 = ~你不知道如何使用这本书。~ 
+@1 = ~你必须更接近那个恶魔。~ 
+@2 = ~你不能在这个地方用这本书。~ 
+@3 = ~你想如何使用这本书?~ 
 @4 = ~完成这个仪式。~
 @5 = ~放逐恶魔。~
 
-@7 = ~Close book.~
-/*封闭上锁防御等级*/
+@7 = ~合上书.~

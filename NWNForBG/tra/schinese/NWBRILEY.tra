@@ -11,7 +11,7 @@
 @10 = ~你能告诉我一些关于这些坟墓的事情吗？~
 @11 = ~你知道些瘟疫的什么？~
 @12 = ~你有听到任何奇怪的事情吗？任何谣传？~
-@13 = ~I'm sorry, but I don't see any letter. Maybe you lost it. In any case, I can't do anything for you without Oleff's written permission.~ /*很对不起，但我现在没有时间 也许你会去找找？ 无论如何，现在我说够话了。也许晚些时候吧。*/
+@13 = ~抱歉，我没有看到任何信。 也许你把它弄丢了。 无论如何，没有奥莱夫的书面许可，我不能为你做任何事。~ 
 @14 = ~我们所在的墓穴属于米亚斯兰斯尼亚·费洛尔布莱德。虽然我不知道确切年代，但她沉寂在此已经很多很多年了。 她是哈琉斯·奈瓦所信赖的朋友，所以在这里是有希望找到创始人墓地的线索的。 这个表面上看起来很接近了，暗示这它在无冬城历史上被迁移了至少一次，但却没有一点儿相关的记载。~ 
 @15 = ~你在这个墓穴里找到了什么？~
 @16 = ~其他的坟墓在哪儿？~
@@ -26,8 +26,7 @@
 @25 = ~我不清楚。保险柜里的雅各布日志可能是这么说的，可我没有得到指令读它，所以你不得不自己去看。 我希望它有用。毫无价值的死掉而无人分享他的见识对于他来说一定是个耻辱。~
 @26 = ~我不这么想。当然我在全队死于瘟疫后才到达。但愿他们没有受到怨恨的折磨。 日志中可能还有其他的讯息，但我没有得到指示去看它。~ 
 @27 = ~我会回答我所了解的。~
-@28 = ~I don't want to speak ill of them, but the transgression was not that serious. They sinned a little. They-- Well, they began to doubt Tyr's power. I guess these are the times when faith is tested. They consorted somewhat with the Helmites and accepted blessings. There are many gods, I know, and Tyr favors Helm well enough, but it didn't seem appropriate. Again, it's a minor sin. They did nothing wrong, and did their duty to the end.~/*我不想说他们是坏人，但我估计他们的罪过不是很大。只是些小过失。 好的，朋友，这并不是我需要的；很多条命现在正危如累卵。 他们有些同海姆信徒结合并得到公认。很多神，我知道，包括泰尔在内对海姆非常好，但似乎并不被感激。 别钦佩他！对没有荣誉的人没有什么好钦佩的。*/
-@29 = ~It's a shame they'll never be absolved of that sin..... But this does not really concern you. They have departed this mortal realm, and you have other duties to attend to.~/*看来这个法术没有被法球吸收。 但……这都不足以威胁到你。他们已经离开了这个死亡地带，而你还有其他的职责要去考虑。*/
+@28 = ~我不想说他们的坏话，但我估计他们的罪过不是很大。只是些小过失。他们——嗯，他们开始怀疑泰尔的力量。我想这正是考验信仰的时刻。他们有些同海姆信徒交往并接受祝福。我知道，很多神，包括泰尔在内对海姆非常好，但似乎并不被感激。再说一遍，这只是些小过失。他们没有做错任何事，并且尽到了自己的职责。~  
+@29 = ~很遗憾，他们永远不会被赦免.....但这与你无关。他们已经离开凡尘了，你还有其他的事情要做。~ 
 @30 = ~求求你，不要碰那个。我奉命在这里不要让任何人接近这里，除了奥利弗派来的人以外。~
-@31 = ~Thank heavens you're here. I can leave my post now, farewell.~ 
-/*谢谢你的帮助。 好吧，那我现在出发了。再会！*/
+@31 = ~谢天谢地你还在这里。 我现在可以离开岗位了，再见。~ 

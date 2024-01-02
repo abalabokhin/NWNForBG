@@ -2,11 +2,11 @@
 @1 = ~我需要一些施法装备。~
 @2 = ~再会了。~
 @3 = ~这个可以，那我们来看看你要什么吧！~
-@4 = ~I wish you a good <DAYNIGHT>, <SIRMAAM>. Please come back again.~/*祝你有个愉快的<DAYNIGHTALL>，<SIRMAAM>。有空要再来喔！*/
-@5 = ~好吧，喂，<CHARNAME>·<CHARNAME>。我听说有一个善于魔法的人在这个城市里服务，繁星斗篷公会很欢迎你的到来。~ [NWELT052]
+@4 = ~祝你有个愉快的<DAYNIGHTALL>，<SIRMAAM>。有空要再来喔！~ 
+@5 = ~好吧，喂，<CHARNAME>。我听说有一个善于魔法的人在这个城市里服务，繁星斗篷公会很欢迎你的到来。~ [NWELT052]
 @6 = ~这里是哪一类的公会？~
 @7 = ~我想要加入你的公会。~
-@8 = ~I didn't give my name, how do you know it?~ /*我没有告诉过你我的名字，你怎么知道的？*/
+@8 = ~我没有告诉过你我的名字，你怎么知道的？~ 
 @9 = ~我得上路了。~
 @10 = ~我想我认为那是很明显的了。在这个高楼里面所贮藏的是无冬城所收集到的全部魔法的训练和艺术。 我们是繁星斗篷，带领每一位学习魔法的学生至他们潜力的最高极限是我们的目标。 我们会提供魔法物品，并让你自由出入斗篷塔。你愿意成为我们公会的成员吗？~ 
 @11 = ~好吧，我很高兴听到那个，但是，在你可以加入公会前，你得先表现出你重要方面的能力。 对于你的第一个测验是，我要你证明给我看，你可以靠自己寻找知识以解决未被叙述过的问题。 为了帮助你，我会告诉你从何开始。将下列四个物品找来给我，一旦你找到它们，带来给我。~ 
@@ -17,21 +17,20 @@
 @16 = ~你好，<CHARNAME>。回来继续下一场挑战吗？不然，我们还要再考虑什么吗？~ [NWELT051]
 @17 = ~评估一下我在公会里的身份吧。~
 @18 = ~你被送来这里是为了四个药引，而且你也不会拥有它们。做得很好，现在你得去面对对你身心的测试。~
-@19 = ~You will be teleported to a room where you will need to destroy one of my mechanisms. You will find the tools there, it will make your task easier. Use the knowledge from my first task and this test will be simple, but if you leave before the automaton is destroyed, you have failed. Are you ready? When you're ready, tell me about it, I'll teleport you to the testing room.~ /*你将会被以心灵传导的方式到达一间房间，那里你必须破坏其中一个自动机械装置。那里有一些工具可以使用，以简化这次的任务。 使用从你第一个任务得来的知识，任务将会是简单的，但是如果你在自动机械装置被破坏之前离开，也是失败。你已经准备好了吗？ 别闹了！告诉我有关你的客人的消息或是就给我闭上你的鸟嘴！*/
+@19 = ~你将会被传送到达一间房间，在那里需要你破坏我的一个自动机械装置。那里有一些工具可以使用，这将使你的任务变得更轻松。使用从你第一个任务得来的知识，这个测试会很简单，但是如果你在自动机械装置被破坏之前离开，你就失败了。当你准备好后，告诉我，我会传送你到测试室。~ 
 @20 = ~对。~
 
 @22 = ~不。~
-@23 = ~You have to test the body and mind. You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task. If you leave without destroying the mechanism, it will be counted as a failure. Ready?~ /*你已经离开队伍。 你将会被以心灵传导的方式到达一间房间，那里你必须破坏其中一个自动机械装置。那里有一些工具可以使用，以简化这次的任务。 你还没打败我的第二场比赛里的魔像。 准备好了。*/
+@23 = ~我必须考验你的身体和心灵。你将会被传送到达一间房间，在那里需要你破坏我的一个自动机械装置。那里有一些工具可以使用，这将使你的任务变得更轻松。但是如果你在自动机械装置被破坏之前离开，你就失败了。准备好了吗？~ 
 @24 = ~你被送来这里是为了四个药引，而且你也不会拥有它们，当你试好之后就回来吧。 这四个物品你必须找来给我的是：一块陶土、一烧杯的水、一片烟雾及一根引火木头。好好依照指示做。~ 
 @25 = ~你已经试着去打败那个自动机械装置了，只是失败了。失败是得受到处罚的，但是，还有一点点小手势以让你继续。 如果你想要再次接受测验，这处罚将会使你减少资金。200枚金币将会“捐献”给公会。~ 
 @26 = ~这里有200枚金币。让我再次开始测验。~
-@27 = ~I'll try later.~ /*拉动杠杆。*/
+@27 = ~我稍后会尝试。~ 
 @28 = ~恭喜你，你已经表现出你的机智多谋，在毁了我的自动机械装置之后，你已经赢得了在繁星斗篷中的位置。 我赠予你公会的标记。骄傲地穿上这件斗篷吧，并且了解公会中未来担任的职务。~ 
 
 @30 = ~你完成后就回来。~
-@31 = ~You have to test the body and mind. You will be teleported to a room where you must destroy one of my automatons. Tools will be found there that will simplify the task. If you leave without destroying the mechanism, it will be counted as a failure.~/*你已经离开队伍。 你将会被以心灵传导的方式到达一间房间，那里你必须破坏其中一个自动机械装置。那里有一些工具可以使用，以简化这次的任务。 你还没打败我的第二场比赛里的魔像。*/
+@31 = ~我必须考验你的身体和心灵。你将会被传送到达一间房间，在那里需要你破坏我的一个自动机械装置。那里有一些工具可以使用，这将使你的任务变得更轻松。但是如果你在自动机械装置被破坏之前离开，你就失败了。~ 
 @32 = ~欢迎你，成员，你需要什么呢？~ [NWELT053]
 @33 = ~你有给公会里的成员的特别的装备吗？~
-@34 = ~Yes, there is special equipment for sale for guild members. Here, take a look.~ /*你有给公会里的成员的特别的装备吗？ 让我看看吧！*/
-@35 = ~Congratulations. You have shown great ingenuity. By destroying my automaton you have earned a place in the Many-Starred Cloak. I give you the symbol of the guild. Wear this cloak with pride and know that the guild will be ready to help you from now on. You can also use the laboratory on the top floor of the tower.~ 
-/*恭喜你，你已经表现出你的机智多谋，在毁了我的自动机械装置之后，你已经赢得了在繁星斗篷中的位置。 我赠予你公会的标记。骄傲地穿上这件斗篷吧，并且了解公会中未来担任的职务。 只有持用选定的武器的时候才能使用这项能力！*/
+@34 = ~是的，有专门为公会成员出售的装备。在这里，来看看。~ 
+@35 = ~恭喜你，你已经表现出你的机智多谋，在毁了我的自动机械装置之后，你已经赢得了在繁星斗篷中的位置。我赠予你公会的标记。骄傲地穿上这件斗篷吧，从此以后，公会将会为你提供帮助。你还可以使用塔楼顶层的实验室。~ 

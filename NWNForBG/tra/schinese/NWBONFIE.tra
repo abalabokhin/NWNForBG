@@ -1,6 +1,5 @@
-@0 = ~These are the books from the library of the wizard Burke that are burning.~ /*三之门的其中一个锁已经被打开了。*/
-@1 = ~Put out the fire.~ /*让开。*/
-@2 = ~Let them burn.~ /*离开那个瓮。*/
-@3 = ~Before your eyes, the fire goes out. You can try to save the rest of the books.~/*闭上我们的眼睛，就是这样。 你这样无法扳动这个杠杆。*/
-@4 = ~The goblin keeps the fire going and doesn't let the fire go out.~ 
-/*熊在空气里嗅了嗅，然后跑到了森林里。*/
+@0 = ~这些是巫师伯克的图书馆里正在燃烧的书。~ 
+@1 = ~扑灭火焰~ 
+@2 = ~让他们继续燃烧吧。~ 
+@3 = ~在你眼前，火焰熄灭了。你可以试着保存剩下的书。~ 
+@4 = ~地精让火继续燃烧，不让火熄灭。~ 
