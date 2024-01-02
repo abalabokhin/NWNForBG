@@ -1,0 +1,52 @@
+////////////////////
+
+ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWD1_EET.TP2~ ~1~) BEGIN
+    COPY_EXISTING ~songlist.2da~ ~override~
+      COUNT_2DA_ROWS 3 rows
+      FOR (row = 1; row < rows; ++row) BEGIN
+        READ_2DA_ENTRY row 0 3 index
+        READ_2DA_ENTRY row 1 3 theme
+        PATCH_IF (~%theme%~ STRING_EQUAL_CASE ~idthm~) BEGIN
+          PATCH_PRINT ~iwd1_theme_music = %index%~
+          SET iwd1_theme_music = %index%
+        END
+      END
+    BUT_ONLY
+  ACTION_IF !(VARIABLE_IS_SET %iwd1_theme_music%) BEGIN
+    OUTER_SPRINT iwd1_theme_music ~*~
+  END
+
+  APPEND ~campaign.2da~ ~ID1            BALDUR         -1             7              *              *              MASTAREA       %iwd1_theme_music%           -1             *              *              *              save           IDSTARTA       STRTGOLD       IDSTARTP       STWEAPON       STWEAPON       *              *              WORLDMAP       BALDUR         1              0xFFFFFFFF     0              IDINTRO        PARTY          INTERACT       D5IDYRS        REPUTATI       CLASTEXT       RACETEXT
+~
+
+  COPY ~%MOD_FOLDER%/data/idstarta.2da~ ~override~
+  COPY ~%MOD_FOLDER%/data/idstartp.2da~ ~override~
+  COPY ~%MOD_FOLDER%/data/d5idyrs.2da~ ~override~
+
+  COPY_EXISTING ~bgee.lua~ ~override~
+    REPLACE_TEXTUALLY ~START_CAMPAIGN_TUT = 7,~ ~START_CAMPAIGN_TUT = 7,%WNL%%TAB%START_CAMPAIGN_ID1 = 8,~
+  IF_EXISTS BUT_ONLY
+
+  COPY_EXISTING ~M_K#TBL.lua~ ~override~
+    REPLACE_TEXTUALLY 
+~{id = 'TUT', name = 'EET_CMP_TITLE_TUT', description = 'EET_CMP_TEXT_TUT', title = 6, bigLogo = 6, icon = 6, background = 2, button = 2, sidebar = 2, importEnabled = false, tutorialEnabled = false, forceParty = false, cheatAreasTable = cheatAreasTutorial},
+}~
+~{id = 'TUT', name = 'EET_CMP_TITLE_TUT', description = 'EET_CMP_TEXT_TUT', title = 6, bigLogo = 6, icon = 6, background = 2, button = 2, sidebar = 2, importEnabled = false, tutorialEnabled = false, forceParty = false, cheatAreasTable = cheatAreasTutorial},
+%TAB%{id = 'ID1', name = 'EET_CMP_TITLE_ID1', description = 'EET_CMP_TEXT_ID1', title = 7, bigLogo = 7, icon = 7, background = 2, button = 2, sidebar = 2, importEnabled = false, tutorialEnabled = false, forceParty = true, cheatAreasTable = cheatAreas},
+}~
+
+	PATCH_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
+	
+	
+	~EET_CMP_TITLE_BG1 =~                                                            => 999999001
+
+	~EET_WARNING_TITLE =~                                                            => 999999002
+
+END
+
+    PATCH_PHP_EACH strings AS find => replace_ref BEGIN
+        SPRINT replace (AT replace_ref)
+        REPLACE_TEXTUALLY ~%find%~ ~%replace%~
+    END
+END
+

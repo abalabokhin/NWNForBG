@@ -1,3 +1,15 @@
+// Process standalone campaign
+IF
+        Global("NWMessenger_of_Neverwinter","GLOBAL",0)
+        Global("NWStandalone","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("NWTON")
+		SetGlobal("NWStandalone","GLOBAL",1)
+END
+
 IF
 	Global("NWNChapter","GLOBAL",1)
 	Global("DoorToNW1000","MYAREA",0)
