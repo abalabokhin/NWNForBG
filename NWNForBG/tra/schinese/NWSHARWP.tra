@@ -1,10 +1,10 @@
-@0 = ~I... I don't think you're interested in doing good deeds at all, and I doubt I'd go with you again if you asked me to. I... I don't think we'll see each other again.~ [NWSHARB0]/*不，此刻我不想拿我的脖子冒险。我不太喜欢你。你难道不能做得更好？ ... 我们会再相遇的。*/
+@0 = ~我……我认为你根本没有兴趣做好事，如果你让我去的话，我怀疑我是否会再和你一起去。我V我想我们不会再见了。~ [NWSHARB0]
 @1 = ~你真这么想的，是吗？嗯。不叫我我就不帮忙，就算你真的需要也不帮。~ [NWSHARB0]
 @2 = ~是的，走吧。~
 @3 = ~不。留下。~
-@4 = ~Well, goodbye, then. Where can we meet if you change your mind?~/*（叹息）再见了！ 那我给你金币好不好？*/
-@5 = ~Go back to the Trade of Blades.~/*佣兵公会*/
-@6 = ~I'll find you at Kendrack's Barracks.~/*坎德拉克镇长的兵营*/
+@4 = ~好吧，那就再见吧。如果你改变主意了， 我们在哪里可以见面？~
+@5 = ~回佣兵公会去。~
+@6 = ~我会在坎德拉克的军营找到你~
 @7 = ~在这儿等着。~
 @8 = ~很公平。~
 @9 = ~我就猜到你很快就会出现的。很高兴我猜对了。那么……我们还能再次合作吗？~ [NWSHAR60]
@@ -26,7 +26,7 @@
 @25 = ~你有什么关于瘟疫背后的邪教的讯息吗？~
 @26 = ~我需要帮手。~
 @27 = ~我现在不需要任何东西。~
-@28 = ~The cult could be practically anywhere. You may want to look in the hills near the crossroads, right at the exit of the town... I've heard many tales of monsters raiding the roads nearby in force.~/*邪教也许在什么特别的地方。你或许应该去绿狮鹫客栈旁边的小山找找……我听过很多传说提到怪兽对道路附近进行大规模袭击。*/
+@28 = ~邪教几乎无处不在。你可能想去十字路口附近的山丘看看，就在小镇的出口……我听过很多关于怪物强行袭击附近道路的故事。~
 @29 = ~怪兽？~
 @30 = ~现在是你发令的时候了。我听从你的驱遣，<CHARNAME>。~
 @31 = ~重要是熊地精和兽人。很明显，他们是受一些人类指使的，然而很奇怪。 无论如何，因为陆斯坎专注于自己的利益，郊区已经强盗出没……然而那些怪兽多是有组织的。~ 
@@ -38,5 +38,4 @@
 @37 = ~嗯，原本好玩的事变得很乏味……也许我应该得到指令，帮你或是艾瑞贝丝，可我还没得到任何指令。 那又怎样？你有魄力带上我，<CHARNAME>对吗？那可比站在这好玩多了。~ 
 @38 = ~我不在乎多添人手。你加入吧。~
 @39 = ~抱歉，但是我没兴趣。再见。~
-@40 = ~That's fine. I am at your disposal, then. I'll tag along as you need me, <CHARNAME>.~
-/*很好。那么，我听你驱遣了。 你还需要其他东西吗，<CHARNAME>？*/
+@40 = ~很好。那我就任你差遣了。我会在你需要我的时候跟着你，<CHARNAME>。~

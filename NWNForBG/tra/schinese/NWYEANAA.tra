@@ -19,7 +19,7 @@
 @18 = ~你听说过一个叫玛格瑞姆的人吗？~
 @19 = ~你在这里有听过关于邪教的事吗？~
 @20 = ~为什么你房间里有个魔像？~
-@21 = ~Perhaps not, but I've no desire to speak to some perfumed fool. Go question the orc and leave me be.~/*也许不会，但是我不想和某个身上喷香水的蠢蛋交谈。把你的问题拿去问下一个房间里的那个兽人吧，让我耳根清静点。*/
+@21 = ~也许不会，但是我不想和某个身上喷香水的蠢蛋交谈。去质问兽人吧，别管我。~/*Perhaps not, but I've no desire to speak to some perfumed fool. Go question the orc and leave me be.也许不会，但是我不想和某个身上喷香水的蠢蛋交谈。把你的问题拿去问下一个房间里的那个兽人吧，让我耳根清静点。*/
 @22 = ~是这样子的吗？这就是你们这些文明人矫柔造做的调情方式吗，还是实际上你发现到耶娜莎因你的注视而感到愉悦？~
 @23 = ~我觉得你很漂亮。~
 @24 = ~我只是表达友善而已……~
@@ -28,7 +28,7 @@
 @27 = ~我不需要像你这样摇尾乞怜的男人来讨好我。快滚，如果你没有更好的东西可以献宝的话。~
 @28 = ~喔？一个行动派的男人罗，是吧？我之前还质疑我能不能在这个地方，那群身上拼命喷香水的蠢材里找到这样的一个人呢。 来吧，那就问我你的问题吧，如果你一定要的话。~ 
 @29 = ~我偏好开门见山，虽然你是个出身于我自己部落的女人，我也会打倒你，要你回答我的问题。 来吧，那就问我你的问题吧，如果你一定要的话。~ 
-@30 = ~Yes. Was there something else you wanted, <MANWOMAN>?~/*我会的。你还想要其他的东西吗，<MANWOMAN>？*/
+@30 = ~是的。你还想要其他的东西吗，<MANWOMAN>？~/*Yes. Was there something else you wanted, <MANWOMAN>?我会的。你还想要其他的东西吗，<MANWOMAN>？*/
 @31 = ~你说有关法师是什么意思？~
 @32 = ~我所知不多，我并没有到别的区域到处溜溜。为什么？你想知道些什么？~
 @33 = ~告诉我关于奥术兄弟会的事。~
@@ -49,7 +49,7 @@
 @48 = ~你不知道他们吗？他们是一群想要尽他们所能，要掌握住北方的法师，就我所了解的是这样。 他们从没有将势力范围扩展超出陆斯坎，但是那是他们做事的方法。他们的计划保持得十分隐密，比竭尽所能还要来的竭尽所能。 他们本身包含着少数新的外来者。或者该说是曾经，是过去式，直到这个新领导者变成他们的头头为止。~ 
 @49 = ~新的领导者？~
 @50 = ~法师们在这个薰香腐烂的城市里的所作所为并没什么不同。他们彼此战斗，以看谁应该取得主宰这座塔，当然的喽。 我所听到的是，这塔里被弃置了好些死尸。然而这个玛格瑞姆似乎是赢了，宣称他自己是新的主要神秘魔法师。 是他邀请大使们到这里来的……不过他已经如他所该表现的，跟我们做了一个糟糕至极的交谈。~ 
-@51 = ~It is a large building... far larger than we care to build in the lands I come from. The wizards connect their rooms with magic stairs from what I can see. The wizards travel from area to area in the tower using runestones.  How they do this I do not even wish to know. One of those stairs is not far from here... but do not go there. One dark-skinned ambassador became curious and was killed swiftly. The wizards do not tolerate intrusion.~/*这是栋大建筑呢……远比我所来字的地方，我们在这块土地上用心建造的任何一个都要来的大。法师们不用楼梯啊门啊，那种肉眼可见的简单方法来连接他们的房间。 法师利用闪耀的圆柱光来回穿梭各个区域。他们是如何做到这一点的，我甚至不想知道。 那些圆柱光中有一道是通到那远处厅堂的末端……但是不要到那儿去。有一个黑黑瘦瘦的大使因为太好奇，很快就被杀掉了。法师们不容许有人侵扰。*/
+@51 = ~这是一座大建筑。。。比我们在我家乡的土地上建造的要大得多。如我所见，巫师们用魔法楼梯将房间连接起来。他们使用符石在塔中从一个区域移动到另一个区域。我甚至不想知道他们是如何做到这一点的。其中一个楼梯离这里不远……但不要去那里。一位皮肤黝黑的大使开始很好奇，但很快就被杀了。巫师们不能容忍别人的侵扰。~/*It is a large building... far larger than we care to build in the lands I come from. The wizards connect their rooms with magic stairs from what I can see. The wizards travel from area to area in the tower using runestones.  How they do this I do not even wish to know. One of those stairs is not far from here... but do not go there. One dark-skinned ambassador became curious and was killed swiftly. The wizards do not tolerate intrusion.这是栋大建筑呢……远比我所来字的地方，我们在这块土地上用心建造的任何一个都要来的大。法师们不用楼梯啊门啊，那种肉眼可见的简单方法来连接他们的房间。 法师利用闪耀的圆柱光来回穿梭各个区域。他们是如何做到这一点的，我甚至不想知道。 那些圆柱光中有一道是通到那远处厅堂的末端……但是不要到那儿去。有一个黑黑瘦瘦的大使因为太好奇，很快就被杀掉了。法师们不容许有人侵扰。*/
 @52 = ~现在怎么办？~
 @53 = ~呃……他似乎不是寻常的法师，我来看啦。不过这个说不准。他好像比狂人还要超过，好像是某种奇怪力量的仆人。 那个力量可能会是什么东西，我不知道。其实也并不重要，如果法师遵守他的诺言的话。~ 
 @54 = ~他许下了什么承诺？~

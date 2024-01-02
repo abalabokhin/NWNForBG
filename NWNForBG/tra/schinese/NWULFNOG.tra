@@ -1,4 +1,4 @@
-@0 = ~Nice to meet you. Why don't you sit quietly with me, huh? It's so noisy down there.~/*很高兴见到你！ 为什么你不跟我来？ 我怎样才能下去？*/
+@0 = ~很高兴见到你！ 你为什么不和我安静地坐在一起？下面太吵了。~
 @1 = ~我想问关于你本身的问题？~
 @2 = ~我想问你一些关于酒馆的事？~
 @3 = ~我要走了。~
@@ -26,6 +26,5 @@
 @25 = ~密码是“墙角石”。至少那不是什么自大的昵称或者某人的狗名字。那些恶棍搞这些可爱的东西时，我真是恨死他们了。~
 @26 = ~谢谢，嗯，你怎么知道这一切的？~
 @27 = ~你在一间小黑屋中可以学到很多东西，不要让任何人告诉你有何不同。~
-@28 = ~Hello again. Was it the unimaginable ruckus downstairs that made you go back?~/*你好啊。 你在楼下遇到麻烦了是吧？*/
-@29 = ~Not a lot happening in the tavern now, what with the shakeup in the Bloodsailors over. Nice and quiet.~
-/*当血腥水手的骚动结束后，酒馆没发生什么事。真是美好平安的夜晚啊。*/
+@28 = ~你好啊。 是楼下难以想象的喧闹声让你回去了吗？~
+@29 = ~当血腥水手的骚动结束后，酒馆没发生什么事。很好，很安静。~

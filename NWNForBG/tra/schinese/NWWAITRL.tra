@@ -1,13 +1,12 @@
-@0 = ~Yes, gentlemen, what do you want? If you want ale or a room for the night, then you should go to the bartender, he is in charge of all this.~/*好吧！你要什么呢？ 如果你有人力去做那件事，你早先就不会需要我了。*/
+@0 = ~是的，先生，你想要什么？如果你想要啤酒或一个房间过夜，那么你应该去找酒保，他负责这一切。~
 @1 = ~你是哪位？~
 @2 = ~我可以问你一些问题吗？~
-@3 = ~All right, I'm gonna go.~/*好吧，我走了。*/
-@4 = ~I'm just a waitress. I serve guests. I bring food and drink, nothing else.~/*我只要耳朵。 我为我的神效力。 我想要问一些其他的问题。*/
-@5 = ~No, please, I'm just a waitress. If you have any questions, please ask the bartender, but I don't have time, the customers are waiting.~/*请祝福我，我相信那对我一定有帮助的。 如果你有问题，去问他们。否则，离开我的工作。*/
-@6 = ~Enjoy your time in our establishment.~/*将你的心思放在你为我的工作上。*/
-@7 = ~Please enjoy your stay here, <LADYLORD>.~/*他可难住你了，<CHARNAME>。*/
-@8 = ~I shouldn't talk idly, <SIRMAAM>. I'll be fired if the owner of the place catches me loafing.~/*不是所有帮助都应该受欢迎的吗？ 这个嘛……这是跟关在笼子里的树精有关的事。*/
-@9 = ~Leave me alone, please. I've got a mouthful of trouble with that sailor - he's always trying to get under my skirt!~/*别惹她，谢诺斯。 用此标签打开商店，或是让使用者知道没有库存了。*/
-@10 = ~If you want to order something, talk to the bartender.~/*我想知道关于你兄弟的事。*/
-@11 = ~That elf over there, I think his name is Elaith, is looking at me strangely, I'm afraid of him.~
-/*听起来有道理，我想。我你可以了，也许。*/
+@3 = ~好吧，我要走了。~
+@4 = ~我只是个女侍应。我为客人服务。我给拿食物和饮料，没有别的。~
+@5 = ~不，求你了，~我只是个女侍应。如果你有任何问题，请问酒保，但我没有时间，顾客在等着呢。~
+@6 = ~享受您在我们旅馆的时光。~
+@7 = ~请在这里过得愉快，<LADYLORD>。~
+@8 = ~我不应该闲言碎语，<SIRMAAM>。如果这个地方的老板发现我在闲逛，我会被解雇的。~
+@9 = ~别管我，求你了。我对那个水手有很大的不满——他总是想钻到我的裙子下面！~
+@10 = ~如果你想点什么，可以和酒保谈谈。~
+@11 = ~那边那个小精灵，我想他的名字叫伊莱斯，他奇怪地看着我，我害怕他。~
