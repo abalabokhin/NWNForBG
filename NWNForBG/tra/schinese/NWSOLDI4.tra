@@ -1,10 +1,9 @@
-@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~/*我马上需要治疗。 这扇门不是为你创造的……*/
-@1 = ~Who's your superior?~/*你为谁工作？*/
-@2 = ~If these are barracks, then where are the soldiers?~/*我找到他们了，这是他们的戒指。*/
+@0 = ~我要求你立即离开！这是一个军营，不是游客的博物馆！~
+@1 = ~你的上司是谁？~
+@2 = ~如果这些是军营，那么士兵在哪里？~
 @3 = ~好，我要走了。~
-@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~/*我准备好要接受信念的测试了。 我是谁？我是谁？那不是我告诉树的事情。 我得走了，再见。*/
-@5 = ~Since you're a mercenary. That mean you're for hire?~/*你是佣兵。那表示你可以被雇佣？*/
-@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~/*你打扫什么？ 当然当然。 你是谁？在这条街上做什么？ 我有了权杖。*/
-@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~/*我准备好了。 >现在安静下来，我真的不会伤害你的。*/
-@8 = ~Go your own way. You don't belong here.~
-/*你自己去取水。 你那么确定。*/
+@4 = ~我是一个雇佣兵，受雇于这个城镇的市长。他叫坎德拉克，就在街对面的那栋楼里。现在离开这里。~/
+@5 = ~既然你是佣兵。那表示你可以被雇用？~
+@6 = ~不是很清楚吗？当然是在他们的岗位上。然而，有些人在市政厅，街对面的大楼里。现在离开房间。~
+@7 = ~我已经被雇用了。离开这里，我不会再告诉你第三次了。~
+@8 = ~走你自己的路。你不属于这里。~

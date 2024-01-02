@@ -1,10 +1,10 @@
-@0 = ~I... I don't think you're interested in doing good deeds at all, and I doubt I'd go with you again if you asked. I... don't think we'll see each other again.~ /*不，此刻我不想拿我的脖子冒险。我不太喜欢你。你难道不能做得更好？ 我们会再相遇的。*/
+@0 = ~我…我觉得你对做好事一点兴趣都没有，如果你问我，我也不会再和你一起去了。我…我想我们不会再见面了。~ 
 @1 = ~如果你不高兴，做你的伙伴就没意思了。你确定要我离开？~ [NWBODDNO]
 @2 = ~是的，走吧。~
 @3 = ~不。留下。~
-@4 = ~Then I guess the only logical thing for us to do is split up for now. Where can we meet if you change your mind?~ /*那么我想我们还是分开好了。但是我都会在这里，以免你会再度要我加入你。*/
-@5 = ~Go back to the Trade of Blades.~/*佣兵公会*/
-@6 = ~I'll find you at Kendrack's Barracks.~ /*坎德拉克镇长的兵营*/
+@4 = ~那么我想我们还是分开好了。如果你改变主意了，我们可以在哪里见面?~ 
+@5 = ~回到佣兵公会~ 
+@6 = ~我会去坎德拉克镇长的兵营找你。~ 
 @7 = ~在这儿等着。~ 
 @8 = ~你的行为真是很不合理，你要我走，又要我留下，非常奇怪耶。~
 @9 = ~你又回来了，所以你一定有想要的东西。最合理的假设就是你要我再次地加入你，对吧？~ [NWBODD60]
@@ -16,7 +16,7 @@
 @15 = ~你在这里做什么，波迪诺克？~
 @16 = ~又是你？你是否跟踪我？我以前从未被侏儒跟踪过。~
 @17 = ~再见。~
-@18 = ~I was going to continue my exploration of the North. But then I heard that Aribeth was recruiting mercenaries to find the cult that was causing the plague. You may have discovered a cure for the plague and flushed out those behind it, <CHARNAME>, but the process by which the Wailing Death was spawned has not yet been determined.~ /*当我们分道扬镳，<CHARNAME>我是说我会继续朝北方的冒险。但是我听到艾瑞贝丝正在召募佣兵寻找瘟疫的教徒谋。 你或许可以找到瘟疫的疗法，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。*/
+@18 = ~我是说我会继续朝北方的冒险。但是我听到艾瑞贝丝正在召募佣兵寻找瘟疫的教徒，你可能已经发现了一种治愈瘟疫的方法，并清除了它的幕后黑手，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。~ 
 @19 = ~我*不*会妨碍你，<CHARNAME>！我被授以科学性的方式调查瘟疫以及它对无冬城的影响。 你或许可以找到瘟疫的疗法，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。~ 
 @20 = ~好吧，<CHARNAME>。如果你想找到一位好的术士，你知道在那里找到我……除非其他人已经雇佣我了。~
 @21 = ~在我的瘟疫科学研究兴趣下，我希望能保证它不会再发生。这就是我接受艾瑞贝丝征召的原因。~
@@ -37,8 +37,7 @@
 @36 = ~我是一位熟练的术士，<CHARNAME>，但是我也明白我自己的能力上限。在这个区域的野外生存将会是个挑战，这迫使我达到我的能力极限。 除此之外，艾瑞贝丝雇佣我们来帮忙那些拥有的英雄特质及善良行为的人。~ 
 @37 = ~你是众所皆知的英雄，<CHARNAME>。如果我能与你同行，我确定我的技巧会更些用处的。~
 @38 = ~抱歉，但是我没兴趣。再见。~
-@39 = ~Then I will be glad to join your cause, <CHARNAME>. It is an honor to serve with a hero such as you. I will follow you and do my best in obedience to your orders.~ /*我很高兴加入你，<CHARNAME>。它是一种荣耀为你这种英雄服务。 我不会让你继续下去的，控制你自己。*/
+@39 = ~那么我将很高兴加入你的事业，<CHARNAME>。能和你这样的英雄共事是我的荣幸。我将跟随你，尽我最大的努力服从你的命令。~ 
 @40 = ~遇到你真好，<CHARNAME>。我是波迪诺克·格林克尔，岚坛小岛来的。我相信上次见面后你还记得我。 当我听到艾瑞贝丝正在召募生力军以搜查在瘟疫背后的邪教主谋，我想你加入我们是合理的推断。~ [NWBODD55]
 @41 = ~这么说，你是为艾瑞贝丝工作的喽？~
-@42 = ~When Aribeth called in the mercenaries, we were all paid up front for our services - well paid. You managed to get a cure for the plague, but the process by which the Howling Death spreads has not yet been determined. I am eager to solve that mystery, if only so such a horror can never be unleashed upon the world yet again. But that can only be accomplished if we first locate the cult.~ 
-/*当艾瑞贝丝雇佣我们这些佣兵的时候，都预先付给了足够的费用，以换取我们的服务，那可是一大笔钱。纳什尔领主在追寻那些教派份子上可是毫不在乎代价。 我急切地想要解开谜题，如此邪恶的家伙不能让他再出现。但是我们要先找到邪教才能完成工作。*/
+@42 = ~当艾瑞贝丝雇佣我们这些佣兵的时候，都预先付给了足够的费用，以换取我们的服务--那可是一大笔钱。你设法找到了治愈瘟疫的方法，但瘟疫的传播途径还未确定。我渴望解开这个谜团，但愿这样这样的恐怖瘟疫再也不会在这个世界上爆发。但只有我们先找到邪教徒才能做到这一点。~ 

@@ -31,8 +31,8 @@
 @30 = ~当僵尸不停在此地游荡，我无法进行我的理论研究。但是我怀疑说不定解药就在乞丐之巢内。~
 @31 = ~实际上，我在找一些可以雇佣的帮手，来协助我的任务。~
 @32 = ~我要走了，再见。~
-@33 = ~Every expedition needs a leader. Since you're paying it's only logical that you should be the one in charge. I will use my spells and skills to help you to the best of my ability.~ /*每一次的冒险都要一位领导者，因为是你雇佣我，所以由你负责是相当合理的。 好，我会尽我所能的回答你的问题。*/
-@34 = ~There is something to be said for new experiences. Okay, I agree to your terms. 600 gold it is. I will use my spells and skills to help you to the best of my ability.~ /*至少有一种新体验是值得的。好的，我同意你的条件，200枚金币。 好，我会尽我所能的回答你的问题。*/
+@33 = ~每一次的冒险都要一位领导者，因为是你雇佣我，所以由你负责是相当合理的。我会尽我所能的用我的法术和技能来帮助你。~ 
+@34 = ~这是一种新的体验。好吧，我同意你的条件。是600金币。我会用我的法术和技能来帮助你，尽我所能。~ 
 @35 = ~你不是唯一想要雇佣我的人。在面对“求大于供”的情形下，要我降低我的价钱是不合理。我的价格仍维持在250枚金币。~
 @36 = ~如果你无法负担雇佣一名佣兵的费用，为什么你要找我讲话？那是没有意义的，不是吗？等你有金子后，再回来找我。~
 @37 = ~你回来了，<CHARNAME>。那我得到一个结论，就是你要从我这里得到一些帮助。我可以为你做什么？~ [NWBODD52]
@@ -42,7 +42,7 @@
 @41 = ~高兴又见到你，<CHARNAME>。事实上，我不能说我很惊讶看到你。 当我听到艾瑞贝丝正在召募生力军寻找瘟疫背后的教徒，我立刻推断你是征召来的人之一。~ [NWBODD53] 
 @42 = ~你在这里做什么，波迪诺克？~
 @43 = ~又是你？你是否跟踪我？我以前从未被侏儒跟踪过。~
-@44 = ~I was going to continue my exploration of the North. But then I heard that Aribeth was recruiting mercenaries to find the cult that was causing the plague. You may have discovered a cure for the plague and flushed out those behind it, <CHARNAME>, but the process by which the Wailing Death was spawned has not yet been determined.~ /*当我们分道扬镳，<CHARNAME>我是说我会继续朝北方的冒险。但是我听到艾瑞贝丝正在召募佣兵寻找瘟疫的教徒谋。 你或许可以找到瘟疫的疗法，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。*/
+@44 = ~我会继续朝北方的冒险。但是我听到艾瑞贝丝正在召募佣兵寻找瘟疫的教徒谋。你或许可以找到瘟疫的疗法并清理了幕后黑手，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。 
 @45 = ~我*不*会妨碍你，<CHARNAME>！我被授以科学性的方式调查瘟疫以及它对无冬城的影响。 你或许可以找到瘟疫的疗法，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。~ 
 @46 = ~好吧，<CHARNAME>。如果你想找到一位好的术士，你知道在那里找到我……除非其他人已经雇佣我了。~
 @47 = ~在我的瘟疫科学研究兴趣下，我希望能保证它不会再发生。这就是我接受艾瑞贝丝征召的原因。~
@@ -63,10 +63,10 @@
 @62 = ~我是一位熟练的术士，<CHARNAME>，但是我也明白我自己的能力上限。在这个区域的野外生存将会是个挑战，这迫使我达到我的能力极限。 除此之外，艾瑞贝丝雇佣我们来帮忙那些拥有的英雄特质及善良行为的人。~ 
 @63 = ~你是众所皆知的英雄，<CHARNAME>。如果我能与你同行，我确定我的技巧会更些用处的。~
 @64 = ~抱歉，但是我没兴趣。再见。~
-@65 = ~Then I will be glad to join your cause, <CHARNAME>. It is an honor to serve with a hero such as you. I will follow you and do my best in obedience to your orders.~/*我很高兴加入你，<CHARNAME>。它是一种荣耀为你这种英雄服务。 我不会让你继续下去的，控制你自己。*/
+@65 = ~那么我将很高兴加入你的事业，<CHARNAME>。能和你这样的英雄共事是我的荣幸。我将跟随你，尽我最大的努力服从你的命令。~
 @66 = ~遇到你真好，<CHARNAME>。我是波迪诺克·格林克尔，岚坛小岛来的。我相信上次见面后你还记得我。 当我听到艾瑞贝丝正在召募生力军以搜查在瘟疫背后的邪教主谋，我想你加入我们是合理的推断。~ [NWBODD55]
 @67 = ~这么说，你是为艾瑞贝丝工作的喽？~
-@68 = ~When Aribeth called in the mercenaries, we were all paid up front for our services - well paid. You managed to get a cure for the plague, but the process by which the Howling Death spreads has not yet been determined. I am eager to solve that mystery, if only so such a horror can never be unleashed upon the world yet again. But that can only be accomplished if we first locate the cult.~ /*当艾瑞贝丝雇佣我们这些佣兵的时候，都预先付给了足够的费用，以换取我们的服务，那可是一大笔钱。纳什尔领主在追寻那些教派份子上可是毫不在乎代价。 我急切地想要解开谜题，如此邪恶的家伙不能让他再出现。但是我们要先找到邪教才能完成工作。*/
+@68 = ~当艾瑞贝丝雇佣我们这些佣兵的时候，都预先付给了足够的费用，以换取我们的服务--那可是一大笔钱。你设法找到了治愈瘟疫的方法，但瘟疫的传播途径还未确定。我渴望解开这个谜团，但愿这样这样的恐怖瘟疫再也不会在这个世界上爆发。但只有我们先找到邪教徒才能做到这一点。~ 
 @69 = ~欢迎，好<MANWOMAN>。原谅我如此的无理，你就是众所周知的<CHARNAME>·<CHARNAME>，对吧？~ [NWBODD54]
 @70 = ~是的，我是<CHARNAME>·<CHARNAME>。你怎么知道我的？~
 @71 = ~不，我想你把我跟其他人弄混了。~
@@ -77,5 +77,4 @@
 @76 = ~你的品德令人尊敬，但是事实不能被否认。其他人可能已经牵涉在其中了。每个人都同意你扮演一位重要的角色。~
 @77 = ~现在我了解到为什么他们称赞你的能力而不是的品德。~
 @78 = ~我是波迪诺克·格林克尔，一位从岚坛的侏儒术士。我必须承认我并不惊讶在这里看到你，<CHARNAME>。 当我听到艾瑞贝丝正在召募生力军以搜查在瘟疫背后的邪教主谋，我想你加入我们是合理的推断。~ 
-@79 = ~I came to Neverwinter to study the plague - its causes and effects - in order to avoid a similar catastrophe in the future. You have managed to obtain a cure for the plague, but the process by which the Howling Death spreads has not yet been determined. I am eager to solve that mystery, if only so such a horror can never be unleashed upon the world yet again. But that can only be accomplished if we first locate the cult.~
-/*我在无冬城研究瘟疫——它的起因及影响——以便在未来，大灾难发生前先预防阻止。 你或许可以找到瘟疫的疗法，<CHARNAME>，但是瘟疫真正发生的过程尚未被了解。 我急切地想要解开谜题，如此邪恶的家伙不能让他再出现。但是我们要先找到邪教才能完成工作。*/
+@79 = ~我来无冬岛是为了研究瘟疫——它的原因和影响——以避免未来发生类似的灾难。你已经成功地获得了治愈瘟疫的方法，但是瘟疫真正发生的过程尚未被了解。我渴望解开这个谜团，但愿这样这样的恐怖瘟疫再也不会在这个世界上爆发。但只有我们先找到邪教才能做到这一点。~

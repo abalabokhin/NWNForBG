@@ -1,10 +1,16 @@
 // Texts from BG1
 
-@0 = ~Well, hello there. I fear you have "mistaken" my unlocked door as an invitation to enter. Forgive me if this was misleading, as it was not my intent to allow entry to just any stranger off the street. Please accept my apologies, but I should appreciate it if you would leave. Mine husband       is one of the guards and I should think he would be perturbed if there were people milling about his house when he got home.~/*你好啊。 “我相信你是把我认成别人了。” 你是对的，我很抱歉……轻视那位女士并不是我的意图，那完全是一个悲惨的故事，让我想想其他的。 蛇小姐？蛇人？真是的，如果他们真的要危害那些人，他们必须为了医治而分开呀！*/
-@1 = ~I should not like to appear rude, but you have entered mine house without permission. I hardly think merely having an unlocked door is an invitation. Leave lest my husband extricate you himself when he returns from guard duty.~/*我想看看你有什么。 正在考虑邀请。 我已经说过我不喜欢巴拉姆和库尔泽。*/
-@2 = ~You must be a considerable fool to enter this house uninvited. Best that you should leave, because if I call the guard there is a good chance my husband will be with them. No doubt he would expel you from his own house with... extra vigor.~/*你还不算是笨到家，我做这个完全是因为钱。 但是我仍担心困难横阻前面，你的能力及勇气将会被考验。 也许我可以从主人那里放你自由。*/
-@3 = ~My husband should be here soon; I would suggest that you leave.~/*给我一个放你一马的理由！*/
-@4 = ~I wish I could run away with you darling, but my husband can be such a jealous man. I wouldn't want to arouse his wrath. Take this ring, with which you may always remember me.~/*你改变不了你之前所做的事，但是你可以改变你所走的路。 要是我不干呢？ 我同意你所做的……而且我很难过。*/
+@0 = ~嗨。是否我的门没上锁，就使你……“误以为”我请你来。请原谅我使你误解，但我并不欢迎街上的陌生人。请接受我的……道歉，希望你能离开。我先生是守卫，如果他发现有人闯进家里，他会很不高兴。~
+/*（此句翻译直接从BG1EE复制而来）Well, hello there. I fear you have "mistaken" my unlocked door as an invitation to enter. Forgive me if this was misleading, as it was not my intent to allow entry to just any stranger off the street. Please accept my apologies, but I should appreciate it if you would leave. Mine husband       is one of the guards and I should think he would be perturbed if there were people milling about his house when he got home.~
+/*（此句翻译直接从BG1EE复制而来）你好啊。 “我相信你是把我认成别人了。” 你是对的，我很抱歉……轻视那位女士并不是我的意图，那完全是一个悲惨的故事，让我想想其他的。 蛇小姐？蛇人？真是的，如果他们真的要危害那些人，他们必须为了医治而分开呀！*/
+@1 = ~我不想冒犯你，但你擅自进入我的房子。我的门没上锁，并不表示邀请你进来。走吧，不然我先生站完守卫岗回来，会把你大卸八块。~
+/*（此句翻译直接从BG1EE复制而来）I should not like to appear rude, but you have entered mine house without permission. I hardly think merely having an unlocked door is an invitation. Leave lest my husband extricate you himself when he returns from guard duty.我想看看你有什么。 正在考虑邀请。 我已经说过我不喜欢巴拉姆和库尔泽。*/
+@2 = ~你竟笨到擅自闯入这间房子。你最好离开，等我叫守卫时，我的先生可能也会来。他可是会把你从屋中摔出去。~
+/*You must be a considerable fool to enter this house uninvited. Best that you should leave, because if I call the guard there is a good chance my husband will be with them. No doubt he would expel you from his own house with... extra vigor.你还不算是笨到家，我做这个完全是因为钱。 但是我仍担心困难横阻前面，你的能力及勇气将会被考验。 也许我可以从主人那里放你自由。（此句翻译直接从BG1EE复制而来）*/
+@3 = ~我先生快来了，我劝你快走。~
+/*（此句翻译直接从BG1EE复制而来）My husband should be here soon; I would suggest that you leave.给我一个放你一马的理由！*/
+@4 = ~我想和你私奔，亲爱的，但是我先生很会吃醋。我不想惹怒他。拿着这个戒指，看到它你就会想起我。~
+/*（此句翻译直接从BG1EE复制而来）I wish I could run away with you darling, but my husband can be such a jealous man. I wouldn't want to arouse his wrath. Take this ring, with which you may always remember me.你改变不了你之前所做的事，但是你可以改变你所走的路。 要是我不干呢？ 我同意你所做的……而且我很难过。*/
 @5 = ~离我远一点！~
-@6 = ~I told you my husband would be here!~
-/*到我这边。过来帮我！*/
+@6 = ~我告诉你，我丈夫马上就要回来了！~
+/*（此句翻译直接从BG1EE复制而来）I told you my husband would be here!到我这边。过来帮我！*/

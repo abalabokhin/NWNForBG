@@ -4,7 +4,7 @@
 @3 = ~你怎么知道我的名字？~
 @4 = ~为什么这里会有繁星斗篷公会的分会？~
 @5 = ~我想买一些魔法用品。~
-@6 = ~I want to acquire spells.~ /*我想雇你。*/
+@6 = ~我想获得法术。~ 
 @7 = ~我想用你的实验室。~
 @8 = ~我得离开了。~
 @9 = ~奇怪。我以为即使以你有限的智商至少也该知道我的名号。我是爱图拉·萨泰尔，无冬城繁星斗篷公会的一个巫师。~
@@ -13,9 +13,8 @@
 @12 = ~当然，<CHARNAME>。你将得到一个施法者想要的一切。~
 @13 = ~当然，<CHARNAME>，恐怕你会发现我货柜中多数的东西更适合那些懂魔法的人。~
 @14 = ~当然，<CHARNAME>，恐怕你会发现我货柜中多数的东西更适合那些懂魔法的人。~ 
-@15 = ~You have unlimited access to everything that the guild has at its disposal,<CHARNAME> , however, if you don't have a crafting book, I doubt you'll be able to do anything. Use the bowl in the center of the hall to mix ingredients.~ /*我从没听过这些神器，<CHARNAME>。虽然我的部落曾经居住在北方的山脉中。 集中注意力看发光物体的影像。*/
+@15 = ~你可以无限制地使用公会所拥有的一切，<CHARNAME>，但是，如果你没有配方书，我怀疑你无法制作任何事物。使用大厅中央的碗来混合原料。~ 
 @16 = ~如你所愿。和你道别，<CHARNAME>。或许我们会再相见。~
 @17 = ~欢迎，<CHARNAME>，欢迎你到繁星斗篷的临时分会。通常我们的神秘知识只传授给会员，但是在这种情况下艾瑞恩·甄德要求我打破常规。~ [NWELT057]
 @18 = ~欢迎，<CHARNAME>。通常我不会和没有魔法经验的人做交易，但是艾瑞恩·甄德让我把货柜向所有人开放，只要对战争有利。~ [NWELT059]
-@19 = ~Hello, good to see you. But where is <CHARNAME>?~ 
-/*看到你真高兴。 我的名字是<CHARNAME>。*/
+@19 = ~你好，很高兴见到你。 但是<CHARNAME>在哪里？~ 

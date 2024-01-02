@@ -1,6 +1,6 @@
 @0 = ~为什么你来了，小东西？为什么你要探索这个洞穴？你为什么要打扰高尚的阿库拉特拉克塞斯？~ [NWDRA251]
-@1 = ~我是<CHARNAME>·<CHARNAME>。我在找力量之咒。~
-@2 = ~I'm with <CHARNAME>. I'm looking for Words of Power.~ /*我叫<CHARNAME>。 我在找力量之咒。*/
+@1 = ~我是<CHARNAME>。我在找力量之咒。~
+@2 = ~我和<CHARNAME>一起，我在寻找力量之咒。~ 
 @3 = ~强大的阿库拉特拉克塞斯，我请求你用你的睿智解答我的问题。~
 @4 = ~我有一些问题问你。~
 @5 = ~给我你的财宝，上古龙，否则我就杀了你！~
@@ -39,8 +39,7 @@
 @38 = ~你最好把这堆金子埋的深些，阿库拉特拉克塞斯，否则你的蛋不会像你想的一样安全！~
 @39 = ~小心些走，<RACE>生物。当在龙的窝里和他谈话时暴露你的贪婪是很不明智的，以免我认为你要偷我的财宝。到时候你会等到回报的，只要你拿到首领的。~
 @40 = ~我不同意你的看法，龙。我想我应该保住我的头。~
-@41 = ~You show the respect that should be shown to dragons. That's good, <RACE>.~
-/*你说米瑟拉可以当武器？ 你那样做得好。*/
-@43 = ~You are bold, <MALEFEMALE>. A smarter creature would accept an offer of dragon's gold before the dragon changes her mind. But I like you, <MALEFEMALE>. You amuse me, as my last few pets failed to do. Why would I want a pet without a collar? Take this necklace, <RACE>. Its magic is not worth my attention, but you may find it amusing.~ /*你的胆子太大了，<MALEFEMALE>。之前一个聪明的家伙，在龙改变心意之前接受了龙的黄金。但我喜欢你，<MALEFEMALE>。你真能逗我开心，我最后几个宠物都没做到。 我为什么要跟他打？ 这里是什么地方？ 北边是能找到东西的方向。*/
-@44 = ~Your manner is displeasing, creature... but I will forgive your coarse nature because of the task you have done for me. Take this necklace as a final boon, and let this matter be done. In the future, I suggest you show more respect when speaking to a creature so much larger than you.~/*你的举止令人不愉快，生物……但我会原谅你的粗鲁，因为你要帮我完成任务。拿这个项链当作最后一点恩惠吧，这件事就这样完结了。 这些岩石暗示着某些巨大的雕像或者生物曾经站在这里。*/
+@41 = ~你表现出了对龙应有的尊重。很好，<RACE>。~
+@43 = ~你很大胆，<MALEFEMALE>。一个更聪明的生物会在龙改变主意之前接受龙的黄金提议。 但我喜欢你，<MALEFEMALE>。你让我感到很有趣，我最后几个宠物都没做到。我为什么要养一只没有项圈的宠物？拿着这条项链，<RACE>。它的魔力不值得我关注，但你可能会觉得很有趣。~ 
+@44 = ~你的举止令人不快，生物……但因为你为我完成的任务，我会原谅你粗俗的本性。拿这个项链当作最后一点恩惠吧，这件事就这样完结了。今后，我建议你在与比你大得多的生物交谈时表现出更多的尊重。~ 
 @45 = ~你敢恐吓我的孩子，愚蠢的<RACE>动物？这种行为不可原谅！现在你一定感受到阿库拉特拉克塞斯的愤怒！~

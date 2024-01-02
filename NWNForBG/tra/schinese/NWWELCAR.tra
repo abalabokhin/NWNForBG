@@ -1,6 +1,6 @@
 @0 = ~嗨，陌生人。欢迎到这里来。我的名字是威尔卡，你是谁啊？~
 @1 = ~我是<CHARNAME>。你看来很友善。~
-@2 = ~We are a group of adventurers led by <CHARNAME>.~/*我叫<CHARNAME>·<CHARNAME>，你是谁？*/
+@2 = ~我们是由<CHARNAME>领导的一群冒险者。~
 @3 = ~不关你的事，要你回答几个问题如何？~
 @4 = ~我现在非常兴奋。最近我在一个重要的挑战中赢的胜利，但是你应该不知道这个消息的。~
 @5 = ~这个挑战什么？~
@@ -10,7 +10,7 @@
 @9 = ~这里发生了什么事？~
 @10 = ~这里谁是老大？~
 @11 = ~你在这里真正的目的是什么？~
-@12 = ~I do not have any questions. Goodbye.~/*我没有其他的问题了。 再见。*/
+@12 = ~我没有其他的问题了。 再见。~
 @13 = ~我刚刚成为这里得第四法阵守护者。~
 @14 = ~那是什么意思？~
 @15 = ~好吧。你要问什么问题？~
@@ -26,7 +26,6 @@
 @25 = ~好，再见。~
 @26 = ~说来话长。我不想讲这些无聊事来烦你 你还有其他问题嘛？~ 
 @27 = ~你又回来啦。我能为你服务吗？~
-@28 = ~You agreed to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~/*我同意你的条件。 就如你所愿，祝你好运。 席尔瓦诺斯会与你同在。*/
-@29 = ~Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~/*谢谢你解脱这全部的力量，莉努。 谢谢，那真的是很好！*/
-@30 = ~The Spirit of the Wood is dead! Our forest will never be the same, it's a great loss!~
-/*森林之灵死了。 这森林再也不一样了。*/
+@28 = ~你同意帮助我们的森林吗？这是一项艰巨的任务，祝你好运。愿席尔瓦诺斯会与你同在。~
+@29 = ~多亏了你，我们的森林又恢复了从前的生活。谢谢你，愿好运永远伴随着你！~
+@30 = ~森林之灵死了。 这森林再也不一样了。这是一个巨大的损失！~
