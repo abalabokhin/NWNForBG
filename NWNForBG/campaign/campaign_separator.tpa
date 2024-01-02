@@ -50,3 +50,23 @@ END
     END
 END
 
+/*
+It should be possible to check for all the instances of START_CAMPAIGN_LALALA = N by checking all the numbers from 1 to 1000000 and checking is there corresponding regexp. The code to do it should be like this:
+       SET number_to_check = 0
+       SET num_matches = 1
+       WHILE (num_mathces > 0) BEGIN
+              COUNT_REGEXP_INSTANCES ~START_CAMPAIGN_LALALA = N~ num_matches
+              SET number_to_check = number_to_check + 1
+       END
+and replace as in code above, but JOURNAL_MODE_EDIT = 3, (what it goes before any START_COMPAIGN)
+
+
+
+
+
+
+
+
+
+
+*/
