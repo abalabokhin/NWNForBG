@@ -1,6 +1,5 @@
-@0 = ~Do you want to plant the seeds of the Ultarg tree?~ /*你要更新本机角色吗？*/
+@0 = ~你想种下阿尔塔格树的种子吗？~ 
 @1 = ~是~
 @2 = ~否~
-@3 = ~The seeds have been planted.~ /*放弃升级*/
-@4 = ~You have not planted the seeds of the Ultarg tree.~
-/*你得到了·的名号。*/
+@3 = ~种子已经种下了。~ 
+@4 = ~你还没有种下阿尔塔格树的种子。~ 
