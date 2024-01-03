@@ -1,6 +1,6 @@
 @0 = ~好吧，欢迎来到月石面具。我是欧菲拉，店主，并提供好酒和娱乐。~ [NWOPHA51]
 @1 = ~我特别高兴见到女人来访。如你所见，看来男人在危难的时候更容易到此来求安慰。~
-@2 = ~你好，我是<CHARNAME>·<CHARNAME>。你可以回答一些问题吗？~
+@2 = ~你好，我是<CHARNAME>。你可以回答一些问题吗？~
 @3 = ~回答问题吧。~
 @4 = ~再见。~
 @5 = ~我怕你今晚得极力争取注意力。看来有比女人更多的男人在寻找安慰。~
@@ -36,13 +36,13 @@
 @35 = ~我确定你要。很好。首先，你需要泰尔神殿里的奥利弗给你写张纸条，确定你没有受瘟疫感染。只是预防措施，你了解的。 当你拿到纸条，回来找我，我会给你钥匙……还有两百金币的奉献。这是很标准的收费。~ 
 @36 = ~我已经有他的纸条了，在这里。~
 @37 = ~谢谢，我会直接回来。~
-@38 = ~Begging your pardon, but haven't we settled these business with you? All you need now is to purchase a pass from the bartender.~/*请你再说一次，可是你不是已经有了后面的钥匙吗？你现在是需要向酒保购买通行币。*/
+@38 = ~抱歉，这件事我们还没有和你谈妥吗？你现在是需要向酒保购买通行币。~ 
 @39 = ~听着，这里什么事也没发生，但大家都知道用钱来交换服务。还有，大部分的人只是想聊天。 如果你想留在我高雅的地方，我建议你控制怒气。我对搞不清楚状况的人没有耐性。~ 
 @40 = ~很好。拉姆波特姆庄园在黑湖区，安卓鲁的家在码头区。两个地方都出名地陷入恐慌。 上次我听说，霍奇可能在黑湖区。毫无疑问他藏匿在某个贵族家里，但是我不知道是哪个。 我不是要你杀人，只是把东西带回来给我，我会好好酬谢你的。~ 
 @41 = ~看起来没问题。好，好，我想你没问题。我很高兴给你后面房间的钥匙。 还有一件关于通行币的小事。只要你喜欢跟我们的友善员工相处，就买一个你可以付的。 你可以用200枚金币向酒保购买。记得要用最佳仪态。这个钱币只是买时间，不是许可，只有礼貌的说服才有。~ 
 @42 = ~这是那张纸。奥利弗会认得。我会确认后面有房间给你。快点回来。~
 @43 = ~只要拿着你有的纸条。奥利弗会认得。我会确认后面有房间给你。快点回来。~
-@44 = ~Greetings to you again, <CHARNAME>. Have you come to sample the delights of our company in the backroom, or is this about... business?~ [NWOPHA52]/*再度向您致意，<CHARNAME>。你是来找后面房间的友伴寻欢，还是……来做生意？*/
+@44 = ~再度向您致意，<CHARNAME>。你是来找后面房间的友伴寻欢，还是……来做生意？~ [NWOPHA52] 
 @45 = ~我有件艺术品，你可能感兴趣。~
 @46 = ~我有奥利弗的亲笔信，说我没有瘟疫。~
 @47 = ~这个声名狼藉的地方要关门！~
@@ -51,7 +51,7 @@
 @50 = ~描述如何从安卓鲁·戈尔登那儿获取雕像的。~
 @51 = ~描述如何从泽姆斯·拉姆波特姆那儿获取画像的。~
 @52 = ~描述如何从霍奇那儿获取瓮的。~
-@53 = ~I have all three items you are looking for.~/*这是你在找的角吗？*/
+@53 = ~你要找的三样东西我都有。~ 
 @54 = ~没事，别介意。~
 @55 = ~听着，这里什么事也没发生，但大家都知道用钱来交换服务。还有，大部分的人只是想聊天。~
 @56 = ~好吧，我只关心我自己，但是你可能有用……不过我不知道。~
@@ -61,10 +61,10 @@
 
 @61 = ~谢谢你。我从不在乎他的叔叔，但是泽姆斯把这个画在很脆弱的羊皮纸上。我不能将它置于他的手中。 还有，这可能可以除掉他。他不太关心月石面具。我想他……知道状况。 好，我会付钱给你买那东西。干得好，400枚金币应该可以满足你。 还有更多给你去追踪。找到了带回来，我会给你奖赏。如果我找到全部三件艺术品，我也会奖励你。~
 @62 = ~画像画在很脆弱的纸上，但是这也不是杀死泽姆斯的理由。他不是个战士。 他可能甚至不知道这幅画有什么问题，他也不需要只是因为反对月石面具而死。 我是付钱给你去偷东西，你应该要控制自己。给你200枚金币，是你应得的。 还有更多给你去追踪。找到了带回来，我会给你奖赏。如果我找到全部三件艺术品，我也会奖励你。~
-@63 = ~Thank you. I never cared for his uncle, but Thoms had this painted on some rather sensitive parchment. I couldn't leave it in his care. Besides, this might get him off my back. He doesn't care much for the Moonstone Mask. I think he's... got a condition. Here, I'll pay you now for this piece. That is the last of them. These items were very personal to me, Here, take this 1500 gold and a little something special. You deserve it.~/*谢谢你。我从不在乎他的叔叔，但是泽姆斯把这个画在很脆弱的羊皮纸上。我不能将它置于他的手中。 还有，这可能可以除掉他。他不太关心月石面具。我想他……知道状况。 在游戏里有许多非常罕见的物品。这就是其中之一。 喂，拿这400枚金币，你应得的。*/
+@63 = ~谢谢你。我从不在乎他的叔叔，但是泽姆斯把这个画在很脆弱的羊皮纸上。我不能将它置于他的手中。此外，这可能会让他摆脱我的困扰。他不太关心月石面具。我想他……知道情况。在这里，我现在就付给你这件作品的钱。这是他们中的最后一个。这些物品对我来说非常有用，给你，拿走这 1500 金币和一些特别的东西。~ 
 @64 = ~瓮并没有真正的价值，但是我想要找霍奇麻烦。若你刚好毁了他正在搞的事情，更好。 好，我会付钱给你买那东西。干得好，400枚金币应该可以满足你。 还有更多给你去追踪。找到了带回来，我会给你奖赏。如果我找到全部三件艺术品，我也会奖励你。~ 
 @65 = ~瓮并没有真正的价值，但是我想要找霍奇麻烦。若你刚好毁了他正在搞的事情，更好。 这是最后一件。这对我是很私人的事情，我愿意加倍付钱。 喂，拿这400枚金币，你应得的。~ 
-@66 = ~Oh, that's great! I never liked Androd's statuette, but I certainly couldn't allow him to retain this piece. The portrait of Uncle Thomas Rambottom was painted on some rather sensitive parchment, it was impossible to leave it with Thomas. There's no real value to the urn, but I love messing with Hodge. These items were very personal to me, and I am more than willing to sweeten what I have already paid. Here, take this 4500 gold and a little something special. You deserve it.~/*你，走，滚出这里！你一定不会被允许进入这里的。 谢谢你。我从不在乎他的叔叔，但是泽姆斯把这个画在很脆弱的羊皮纸上。我不能将它置于他的手中。 这是最后一件。这对我是很私人的事情，我愿意加倍付钱。 喂，拿这400枚金币，你应得的。*/
-@67 = ~Oh, that's great! I never liked Androd's statuette, but I certainly couldn't allow him to retain this piece. The portrait of Uncle Thomas Rambottom was painted on some rather sensitive parchment, it was impossible to leave it with Thomas. There's no real value to the urn, but I love messing with Hodge. These items were very personal to me, but it was not at all necessary to kill one of their owners. I'm paying less for this bungled affair. You should have restrained yourself. Here, take this 2250 gold and a little something special.~ /*你，走，滚出这里！你一定不会被允许进入这里的。 谢谢你。我从不在乎他的叔叔，但是泽姆斯把这个画在很脆弱的羊皮纸上。我不能将它置于他的手中。 瓮并没有真正的价值，但是我想要找霍奇麻烦。若你刚好毁了他正在搞的事情，更好。 我是付钱给你去偷东西，你应该要控制自己。给你200枚金币，是你应得的。*/
+@66 = ~哦，那太好了！ 我一直不喜欢安卓鲁的小雕像，但我当然不能让他保留这件作品。泽姆斯·拉姆波特姆叔叔的肖像画在一张相当敏感的羊皮纸上，不可能把它留给泽姆斯。这个瓮并没有什么实际价值，但我喜欢和霍奇玩弄。这些物品对我来说非常有用，我非常愿意让我已经支付的东西更加美好。给你，收下这4500金币和一些特别的东西。这是你应得的。~ 
+@67 = ~哦，那太好了！ 我一直不喜欢安卓鲁的小雕像，但我当然不能让他保留这件作品。泽姆斯·拉姆波特姆叔叔的肖像画在一张相当敏感的羊皮纸上，不可能把它留给泽姆斯。这个瓮并没有什么实际价值，但我喜欢和霍奇玩弄。这些物品对我来说非常有用，但完全没有必要杀死它们的主人。我为这件糟糕的事情付出的金额更少。你应该克制一下自己。给你，收下这2250金币和一些特别的东西。~  
 @68 = ~请别这样欺负我。我有很多可以干得比你更好的员工。~
 @69 = ~你好，你是不是跟<CHARNAME>一起？他们是我最近唯一花很多时间相处的新来家伙。这次来是为了找乐子还是谈生意？~ [NWOPHA53]

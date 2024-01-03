@@ -1,9 +1,8 @@
-@0 = ~Hello! No time to chat, I have to tend to the sick and wounded.~/*你好！ 你不必这么讽刺无礼。*/
-@1 = ~It looks like an infirmary. Can you fix me up?~/*你看起来像个冒险者。 你可以训练我吗？*/
-@2 = ~Why are there so many sick people here? I hope it's not the plague.~/*为什么有这么多人在这里？ 告诉我关于瘟疫的事情。*/
+@0 = ~你好！我没时间聊天，我还要照顾伤病员。~ 
+@1 = ~你看起来像个治疗者。你可以帮我恢复吗？~ 
+@2 = ~为什么这里有这么多病人？ 希望这与瘟疫无关。~ 
 @3 = ~好，我要走了。~
-@4 = ~Sorry, <SIRMAAM>.My knowledge is not sufficient for this. Speak to Neurik at the temple, he will surely help you.~/*抱歉，<SIRMAAM>。我的错，我不会再打扰你了。 如果你杀了孩子，我只好杀了你。*/
-@5 = ~The plague? No, of course not. These are common sick people, as well as warriors who have been wounded. If you'll excuse me, I'll mind my own business.~/*瘟疫 “不，当然不。” 别害怕，只要你放我出来就会得到你的奖赏了。 我觉得你最好管你自己的事就好……*/
-@6 = ~Sorry, no time to talk, I have to tend to the sick and wounded.~/*对不起，德金。你得自己去找你的冒险。*/
-@7 = ~You know, I'm an aspiring writer. I've just finished working on a novel based on true events in the life of the great but misunderstood Drizzt Do'Urden. If you have a few minutes, I can read you a passage.~
-/*不，我要留着它。 它在潘尼苏拉区东边的一所房子的地下室里。如果你发现任何就回来，我付给你酬金。*/
+@4 = ~抱歉，<SIRMAAM>。我的知识不足以完成此任务。在神殿与那文瑞可交谈，他一定会帮助你。~ 
+@5 = ~瘟疫？不，当然不 这些是普通的病人，也有受伤的战士。如果你不介意的话，我想做我自己的事情了。~ 
+@6 = ~抱歉，没时间说话，我得照顾伤病员。~ 
+@7 = ~你知道，我是一个有抱负的作家。我刚刚完成了一部小说，该小说改编自伟大但被误解的崔斯特·杜垩登一生中的真实事件。如果你有几分钟的时间，我可以给你读一段话。~

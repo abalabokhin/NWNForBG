@@ -1,10 +1,9 @@
-@0 = ~Pardon me, but I have a lot of things to do.~/*算了。我有其他事要做。*/
-@1 = ~Good afternoon, this is Master Wanev's house and he's not here right now. I don't recognize you... May I ask who you are?~/*我发现妹妹在库尔泽城堡中，但是她现在不在那里。 塔洛娜知道你的价值，快活着离开吧！*/
-@2 = ~No, you may not.~/*不！我认为不是。*/
-@3 = ~Yes, please. We're criminals, the worst kind, so if you don't keep quiet, we'll have to kill you.~/*“是的，请。” 我可没说过。你会出卖我……我就杀了你。*/
-@4 = ~We're here on behalf of Wanev, he asked us to bring him something.~/*你有没有听说任何有意思的事呢？*/
+@0 = ~对不起，我有很多事情要做。~
+@1 = ~下午好，这是瓦涅夫大师的家，他现在不在。我不认识……我可以问一下你是谁吗？~
+@2 = ~不，你不能。~
+@3 = ~是的，请吧。我们是罪犯，是最坏的一类，所以如果你不保持安静，我们就不得不杀了你。~
+@4 = ~我们是代表瓦涅夫来的，他让我们给他带点东西。~
 @5 = ~喔！好吧！~
-@6 = ~P-please don't touch me, I'm just a lowly servant, I won't cause you any trouble.~/*请……请不要伤害我们！我们只是普通人，这是我们的家！*/
-@7 = ~Uh, I don't remember my master... Oh, well, I'm sorry to bother you.~/*我会离开，抱歉打扰你。*/
-@8 = ~I think you'll be a better master than the last one!~
-/*我想我自己来可能会更好。*/
+@6 = ~请……请不要碰我，我只是个下人，我不会给你添麻烦的。~
+@7 = ~呃，我不记得我的主人了……哦，好吧，很抱歉打扰你。~
+@8 = ~我认为你会比上一个主人更好！~
