@@ -29,7 +29,7 @@
 @28 = ~其余的部分，如同他们所说的都已经是历史了。逃出牢笼后，这些深水城生物遁入了无尽的黑夜中，现在仍在那里，躲避着我们。 那么，你还有什么要求吗？~ 
 @29 = ~你可能要与海姆的信徒德斯泽尔谈谈。他刚来到这里，却将自己的健康放在一旁而提供海姆的祝福来打击瘟疫。 那么，你还有什么要求吗？~ 
 @30 = ~现在我失去了我的一半家人。我只能护卫着对他们的记忆。 那么，你还有什么要求吗？~ 
-@31 = ~If you want the dirt on Lady Aribeth, you'd best talk to good sir Fenthick. They're due to be married in the summer, you know... Might there be something else you need?~ /*如果你想知道艾瑞贝丝女士的私隐，你最好与范斯维克好好先生谈谈。他们应该要在夏天结婚，你知道……*/
+@31 = ~如果你想知道艾瑞贝丝女士的私隐，你最好与范斯维克好好先生谈谈。他们应该要在夏天结婚，你知道……你还需要什么？~ 
 @32 = ~恐怕不行。我们必须尊重一个人的隐私，尤其像现在这种悲伤时候。 那么，你还有什么要求吗？~ 
 @33 = ~我很高兴回答一两个问题，你想知道什么？~
 @34 = ~在那儿我能帮上什么忙呢？~
@@ -43,6 +43,5 @@
 @42 = ~相当糟糕，我确信在没有装备的情况下是不会去的。一旦你到门另一边，城门卫队长奇普会对你做简要的情况介绍。 还有其他你想知道的事吗？~ 
 @43 = ~那里没什么好说的，讲真的。关于监狱问题。你应该与那边的城门卫队长奇普谈谈——他会让你进去。~
 @44 = ~我想你们是正确的……显然那里已发生逃狱。她刚处理完毕。 如果你们想要了解更多，我提议你们亲自与西比尔司令谈话。她在这个地区某处将设置临时性司令部。 还有其他你想知道的事吗？~ 
-@45 = ~Hail, good <SIRMAAM>! The Wailing Death has taken a heavy toll beyond these gates. The Peninsula is a dangerous place and we're restricting access on Lady Aribeth's orders, but you may pass through~/*嗨，你好<SIRMAAM>！瘟疫在这些大门之后引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。*/
-@46 = ~Hail, good <SIRMAAM>! The Wailing Death has taken a heavy toll beyond these gates. The Peninsula was a dangerous area, but things are much better now. I don't know what happened there, but it looks like the fugitive criminals have been dealt with.~ 
-/*嗨，你好<SIRMAAM>！瘟疫在这些大门之后引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。 我不知道你在说些什么耶。是我们“动物”在统治这世界。*/
+@45 = ~嗨，你好<SIRMAAM>！瘟疫在这些大门之外引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。但你可以通过。~ 
+@46 = ~嗨，你好<SIRMAAM>！瘟疫在这些大门之外引起了许多冲突。潘尼苏拉曾经是一个危险的地方，但现在情况好多了。我不知道那里发生了什么，但看起来那些暴徒已经被处理掉了。~ 

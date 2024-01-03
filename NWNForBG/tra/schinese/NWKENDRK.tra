@@ -16,8 +16,8 @@
 @15 = ~我走了。~
 @16 = ~我的名字是坎德拉克，是这里的领袖以及赖斯特港的镇长。也被称为第一队长。你的名字是……？~
 @17 = ~我叫做<CHARNAME>。~
-@18 = ~很高兴遇见你，我的名字是<CHARNAME>·<CHARNAME>。~
-@19 = ~My name means nothing. <CHARNAME> leads our group.~/*我不需要任何东西。 <CHARNAME>离你太远了。*/
+@18 = ~很高兴遇见你，我的名字是<CHARNAME>。~
+@19 = ~我的名字没有任何意义。 <CHARNAME> 领导着我们的队伍。~ 
 @20 = ~你不需要知道我是谁。~
 @21 = ~太好了！我想起来女士曾经提过你，她说你是个英雄。老实话，现在能见到你在这里让我比往常更加高兴！ 我现在有个麻烦。有人向我推荐你，说你或许能够帮我……而我会给你一些报酬。有兴趣吗？~ 
 @22 = ~有什么问题吗？~
@@ -54,13 +54,13 @@
 @53 = ~没有。如果你想要，你可以去找破碎铁砧的哈尔杰尔。他有你要的东西。~
 @54 = ~当然。~
 @55 = ~真的吗？你找到其中一个逃犯了？是谁的？~
-@56 = ~I have Zor's ear.~ /*我不知道。*/
-@57 = ~I have the Stirge's ear.~ /*蚊蝠的耳朵。*/
-@58 = ~I have Wyvern's ear.~ /*威恩的耳朵。*/
-@59 = ~I have Delilah's Ear.~ /*黛莉拉的耳朵。*/
+@56 = ~我有索尔的耳朵。~ 
+@57 = ~我有蚊蝠的耳朵。~ 
+@58 = ~我有威恩的耳朵。~ 
+@59 = ~我有黛莉拉的耳朵。~ 
 @60 = ~喔喔，我没有了。~
-@61 = ~Aye. 'Tis indeed the markings that the men of the Bulwark told me of. Congratulations, <GIRLBOY>, ye've done a service fer us all. So I'll be happy to offer the bounty. Come back when you find more of the bandits.~/*没错，这的确是布尔瓦克的标记。恭喜了，<GIRLBOY>，你帮了我们一个大忙。 我会回来取那些赏金的！ 我得到更多麋鹿部落的情况后就回来。*/
-@62 = ~Well, I hope you'll find those bastards soon.~/*好吧，我希望你学到了教训。*/
+@61 = ~没错，这的确是布尔瓦克告诉我的标记。恭喜了，<GIRLBOY>，你帮了我们一个大忙。 因此，我很乐意提供赏金。等你发现更多强盗后再回来。~ 
+@62 = ~好吧，我希望你能尽快找到那些混蛋。~  
 @63 = ~好吧，我确信我可以告诉你想知道的事。~
 @64 = ~你有听说过无冬城的瘟疫吗？~
 @65 = ~你知道这附近有什么奇怪的事吗？~
@@ -79,10 +79,10 @@
 @78 = ~我想问其他一些事情。~
 @79 = ~当然，同盟客栈是一间不错的客栈，在每年的这个时候你还可以遇见许多跟你一样的冒险者。 你还需要找其他的东西吗？~ 
 @80 = ~破碎铁砧的哈尔杰尔会有你想要的任何东西的，<GIRLBOY>。 你还需要找其他的东西吗？~ 
-@81 = ~The only temple in town is Tyr's, <GIRLBOY> run by Father Neurik. Do ye need t' find something else?~/*这里唯一的神殿信奉泰尔，<GIRLBOY>，那文瑞可祭司在这里的地位就像你的艾瑞贝丝女士。 你还需要找其他的东西吗？*/
-@82 = ~There be one off in the Neverwinter Wood, aye. Ye may wish to speak to Ballard about it... ye'll find him at his little grove northeast of the town walls. Do ye need t' find something else?~/*在无冬森林里有。你或许可以去问贝拉德有关于那边的事……他在城外的一个小树园里。 你还需要找其他的东西吗？*/
-@83 = ~I wish ye the best o' luck on yer quest, <GIRLBOY>.~/*我希望你的任务顺利，<GIRLBOY>。*/
-@84 = ~Aye, <GIRLBOY>? Something I can do for ye? Has ye business with the guild?~ [NWKEN057] /*是的，<GIRLBOY>，我能帮你什么忙吗？你到公会有什么事吗？*/
+@81 = ~这里唯一的神殿信奉泰尔，<GIRLBOY>，那文瑞可祭司在这里的地位就像你的艾瑞贝丝女士。 你还需要找其他的东西吗？~ 
+@82 = ~在无冬森林里有。你或许可以去问贝拉德有关于那边的事……他在城墙东北方向的一个小树园里。 你还需要找其他的东西吗？~ 
+@83 = ~我希望你的任务顺利，<GIRLBOY>。~ 
+@84 = ~是的，<GIRLBOY>，我能帮你什么忙吗？你到公会有什么事吗？~ [NWKEN057] 
 @85 = ~很高兴又见到你了，<GIRLBOY>。追查的行动有什么进展吗？~ [NWKEN058] 
 @86 = ~谢天谢地你来了！当你离开赖斯特港的时候，邪恶的半兽人伊斯格绑走了我的沙尔德里萨！ 他要一笔赎金来交换她回来，而且我已经付赎金了！但他仍然没有把她放回来！拜托，我求求你……把我的沙尔德里萨救回来！她是我唯一的孩子呀！~ [NWKEN055] 
 @87 = ~为什么你和你的人不去把她救回来呢？~
@@ -93,11 +93,10 @@
 @92 = ~老实说，我不能让我的女儿受到危险，而且我也不相信我的人可以胜任这工作！而你，一个能力强大的<MANWOMAN>，你做过那么多的事……所以我相信你！你是她唯一的希望呀！~
 @93 = ~是的，我知道！在城市北边，古老的赖斯特港矿坑里，靠近绿狮鹫客栈。他把她关在那，我很确定！ 那是个危险的地方，易守难攻，所以我才不敢靠近！我只希望你有着我所没有的技能了！~ 
 @94 = ~酬劳？如果还有的话，你可以把赎金留着！就是把她安全的救回来就对了！我求你呀！~
-@95 = ~Go to the old mines by the Green Griffon Inn to the north of town, then. Hurry, <GIRLBOY>, hurry! Oh yeah, I almost forgot, here be rest of the bounty for the ears.~
-/*去绿狮鹫兽旅馆那靠城市北边的老矿场吧。他们被关在那，你需要这把钥匙。快呀！<GIRLBOY>，快呀！*/
+@95 = ~去那靠城市北边绿狮鹫兽旅馆附近的老矿场吧。快呀！<GIRLBOY>，快呀！哦，是的，我差点忘了，这是耳朵的剩余赏金。~
 @97 = ~我……我觉得我不能责怪你。那真的是太危险了。这里是因为这只耳朵而给你的赏金。 求求你去把她救出来吧！沙尔德里萨因为很年轻，所以个性很冲动又暴躁……她在凶手的手中一定不会认命的！~ 
-@98 = ~You've changed your mind? Please, I beg of you... bring back my Shaldrissa! She's my only child!~/*我改变主意了。 拜托，我请你加入我的队伍。 这儿是我的50枚金币。*/
-@99 = ~Then go to the old mines by the Green Griffon Inn to the north of town, then. Hurry, <GIRLBOY>, hurry!~/*去绿狮鹫兽旅馆那靠城市北边的老矿场吧。他们被关在那，你需要这把钥匙。快呀！<GIRLBOY>，快呀！*/
+@98 = ~你改变主意了吗？ 拜托，我求你了……把我的沙尔德里萨带回来！ 她是我唯一的孩子！~ 
+@99 = 然后去那靠城市北边绿狮鹫兽旅馆附近的老矿场吧。快呀！<GIRLBOY>，快呀！~
 @100 = ~什么话？你找到我的女儿了？她安全吗？~ [NWKEN054]
 @101 = ~再告诉我一次发生了什么事。~
 @102 = ~我能在哪找到她？~
@@ -110,11 +109,10 @@
 
 @110 = ~请快一点！~
 @111 = ~继续呀。把一个可怜的小女孩留在那等死，你这个没人性的家伙！~
-@112 = ~Leave me be, <GIRLBOY>. We have nothing to talk about.~ [NWKEN051] /*走开，<GIRLBOY>。我们没什么好说的。*/
+@112 = ~走开，<GIRLBOY>。我们没什么好说的。~ [NWKEN051] 
 @113 = ~滚开啦！你们算是什么英雄嘛……我的沙尔德里萨都是被你们害死的！~ [NWKEN052]
 @114 = ~沙尔德里萨安全回来了！我不知道要怎么感谢你！你真的像艾瑞贝丝女士告诉我的那样是个真英雄！ 那女孩在发抖，除此之外她一切都很好。或许这可以抑制她对冒险的渴望，对不对呀？~ [NWKEN053] 
 @115 = ~拿去吧！这是为伊斯格所得到的赏金。 我真希望能给你更多酬劳！如果你找到赎金，请你留着吧……无论艾瑞贝丝女士给了你什么样的任务，我祝你好运了！~ 
 
-@117 = ~I wish ye good luck, <GIRLBOY>. Hopefully ye finds what ye're searching for.~ [NWKEN050] /*祝你幸运，<GIRLBOY>。希望你能找到你要找的。*/
-@118 = ~You killed my daughter, you scoundrels! I'll take revenge!~
-/*你杀了她？你怎能这样？！ 我要走了。*/
+@117 = ~祝你幸运，<GIRLBOY>。希望你能找到你要找的。~ [NWKEN050] 
+@118 = ~你们杀了我的女儿，你们这帮恶棍！我要为她报仇！~ 

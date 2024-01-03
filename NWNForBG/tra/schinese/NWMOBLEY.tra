@@ -14,7 +14,7 @@
 @13 = ~不对呀！难道你连现在是什么季节都不知道？~
 @14 = ~我得说这是个很棒的地方，贾拉格领主会保护我们，我们几乎没有什么好担心的，真的。~
 @15 = ~你听起来有点紧张，那个领主对你们好吗？~
-@16 = ~I'd like to ask another question.~/*我想问另一个问题。*/
+@16 = ~我想问另一个问题。~ 
 @17 = ~喔，或许我刚好有一轻松愉快的方法。所以我们就不必让贾拉格领主担心。是的，那就是它，就是他所说的……~
 @18 = ~这里没什么不对劲呀！只不过在小镇上时间过得比较慢而已。你话问完了就快走吧！~
 @19 = ~镇长，如果你们有麻烦的话，我可以帮忙。~
@@ -24,10 +24,10 @@
 @23 = ~也许你可以告诉我，是不是呀，帅哥？~
 @24 = ~我们才没有什么麻烦呢！你别多管闲事了！如果你惹毛了贾拉格，我们全都会完蛋的！~
 @25 = ~这个贾拉格是什么人物？~
-@26 = ~I suppose, though I do not wish to make trouble. We have been safe from the stories for so long... Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~/*我猜想。你想知道些什么？ 贾拉格领主和他的兄弟在岩壁上建了一个城堡，然后又建立了我们这个村庄，环绕在城堡四周。 我们是受到保护的，而且那就是所有问题的关键。我们必须献祭并且听从他们的命令……但是我们是受到保护的……*/
+@26 = ~我猜想，虽然我不想惹麻烦。这么长时间以来，我们一直在远离这些故事……贾拉格领主和他的兄弟在岩壁上建了一个城堡，然后又建立了我们这个村庄，环绕在城堡四周。 我们是受到保护的，而且那就是所有问题的关键。我们必须献祭并且听从他们的命令……但是我们是受到保护的……~ 
 @27 = ~这是什么情况？~
-@28 = ~What sacrifices?~/*这是什么情况？*/
-@29 = ~I d-don't want trouble. I just... very well, but there is not that much to tell. We have been safe from the stories for so long... Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~/*我不想惹麻烦呀！可是真的没有什么好说的啊！ 贾拉格领主和他的兄弟在岩壁上建了一个城堡，然后又建立了我们这个村庄，环绕在城堡四周。 我们是受到保护的，而且那就是所有问题的关键。我们必须献祭并且听从他们的命令……但是我们是受到保护的……*/
+@28 = ~牺牲什么？~ 
+@29 = ~我不想惹麻烦呀！我只是……很好，可是真的没有什么好说的啊。贾拉格领主和他的兄弟在岩壁上建了一个城堡，然后又建立了我们这个村庄，环绕在城堡四周。 我们是受到保护的，而且那就是所有问题的关键。我们必须献祭并且听从他们的命令……但是我们是受到保护的……~ 
 @30 = ~我可不觉得你很有魅力，小姐。问了问题就赶快走吧。~
 @31 = ~贾拉格领主和他的兄弟在岩壁上建了一个城堡，然后又建立了我们这个村庄，环绕在城堡四周。 我们是受到保护的，而且那就是所有问题的关键。我们必须献祭并且听从他们的命令……但是我们是受到保护的……~ 
 @32 = ~在这儿你找不到那种东西的，贾拉格领主会保护我们免于各种灾害。~
@@ -41,7 +41,7 @@
 @40 = ~是吗！我是镇长莫伯立，有什么我可以帮的上忙的？~ [NWMOBL56]
 @41 = ~我想请教你一些你告诉过我的事。~
 @42 = ~看阳光又从叶间洒落！看你所做的一切，我衷心感谢你！~
-@43 = ~I'm glad it's over, mayor.~/*很高兴你了解我的立场。*/
+@43 = ~我很高兴一切都结束了，镇长。~ 
 @44 = ~我这么做是有我自己的理由的。~
 @45 = ~还有什么我能效劳的么？~
 @46 = ~感谢所有。整个城镇，我们所有的灵魂，现在都自由了。我们把森林还给动物们……还有你们。~

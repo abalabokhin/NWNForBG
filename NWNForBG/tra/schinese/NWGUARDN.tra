@@ -6,7 +6,7 @@
 @5 = ~因为你就是审判者，孩子，只是你还不知道而已。那些记号是黎明之主洛山达为你留下来的。~
 @6 = ~我是一个神圣幽灵，是洛山达派我来守护这里，直到审判的那一天来临。而这一天已经到了……~
 @7 = ~这城堡曾属于贾拉格兄弟的，现在则属于黎明之主洛山达，他知道你会来这里。~
-@8 = ~I am no ordinary ghost, though there is no shortage of ghosts in these halls..... I am a divine spirit sent by the god Lathander to watch over this place until the day of Judgment. And now that day has come....~ /*我不只是个不死的幽灵，虽然这个地方有不少…… 我是一个神圣幽灵，是洛山达派我来守护这里，直到审判的那一天来临。而这一天已经到了……*/
+@8 = ~我不是普通的幽灵，虽然这个地方有不少…… 我是一个神圣幽灵，是洛山达派我来守护这里，直到审判的那一天来临。而这一天已经到了……~ 
 @9 = ~很久之前发生了这个罪行，它的后果如此严重，以致于洛山达觉得自己不适合站在这些被告面前做审判……~
 @10 = ~再告诉我一些……~
 @11 = ~说重点，好吗？~
@@ -15,7 +15,7 @@
 @14 = ~我有一些问题要问，幽灵。~
 @15 = ~好的，我会带着供词回来找你的。~
 @16 = ~我不是审判者，而我也不会去你那愚蠢的塔！~
-@17 = ~You must learn from them the nature of the crime and from them obtain their written oath. When both oaths are in my hands, I shall hear your Judgment. I will open doors for you, behind which you will find staircases to both towers. Show wisdom, judge, and compassion for all of us....~ /*你必须从他们那儿得知这件罪行的本质，并且由他们手上拿到手写的供词。当两份供词交到我手中时，我会聆听你的审判。 穿过北边的门，有楼梯可以通往两座塔。展现睿智吧，审判者，以及对我们全部的怜悯……*/
+@17 = ~你必须从他们那儿得知这件罪行的本质，并且由他们手上拿到手写的供词。当两份供词交到我手中时，我会聆听你的审判。 我会为你打开门，门后有楼梯可以通往两座塔。向我们所有人展现你的智慧、判断力和怜悯吧……~ 
 @18 = ~那么就问吧，而我会依照洛山达的吩咐回答的。~
 @19 = ~昆特是被告？我之前不是曾碰到他吗？~
 @20 = ~我要审判的是什么样的罪呢？~
@@ -55,8 +55,8 @@
 @54 = ~昆特·贾拉格和卡尔莱特·贾拉格，我召唤你们出来接受审判！~
 @55 = ~我已经有贾拉格兄弟的供词了，现在只差一位审判者。你准备好开始审判了吗？~ [NWGUA052]
 @56 = ~审判？我不懂你的意思？~
-@57 = ~Ah, then perhaps you are still unfamiliar with the sad history of Jhareg Castle. This castle once belonged to the Jhareg brothers. Now it has been turned into a time trap by Lathander, the Morninglord, awaiting your arrival. Long ago did the crime take place and so great were its consequences that Lathander himself felt unfit to stand in Judgment over those accused... It was the crime of mortals, and mortal was to be the judge. And so this castle and the village around it have been withdrawn from the flow of time to await your arrival.~ /*也许你没听过贾拉格城堡悲惨的传说。 这城堡曾属于贾拉格兄弟的，现在则属于黎明之主洛山达，他知道你会来这里。 很久之前发生了这个罪行，它的后果如此严重，以致于洛山达觉得自己不适合站在这些被告面前做审判…… 它是人所犯下的错误，所以需要一个人来做审判。因此这座城堡和村庄被置于时间之维以外，等待着你的到来。*/
-@58 = ~The accused are imprisoned in their towers. They are known as the brothers Jhareg, Karlat in the western tower and Quintus in the eastern tower. You must learn from them the nature of the crime and from them obtain their written oath. When both oaths are in my hands, I shall hear your Judgment. Show wisdom, judge, and compassion for all of us....~ /*被告被囚禁在北边门后的塔中。他们是贾拉格兄弟，卡尔莱特在西塔，而昆特则在东塔。 你必须从他们那儿得知这件罪行的本质，并且由他们手上拿到手写的供词。当两份供词交到我手中时，我会聆听你的审判。 显示3d音效收听者的位置*/
+@57 = ~也许你没听过贾拉格城堡悲惨的传说。这城堡曾属于贾拉格兄弟的，现在它被黎明之主洛山达变成了一个时间陷阱，他知道你会来这里。很久之前发生了这个罪行，它的后果如此严重，以致于洛山达觉得自己不适合站在这些被告面前做审判…… 它是凡人所犯下的错误，所以需要一个凡人来做审判。因此这座城堡和村庄被置于时间之维以外，等待着你的到来。~ 
+@58 = ~被告被囚禁在他们的塔楼中。他们是贾拉格兄弟，卡尔莱特在西塔，而昆特则在东塔。 你必须从他们那儿得知这件罪行的本质，并且由他们手上拿到手写的供词。当两份供词交到我手中时，我会聆听你的审判。向我们所有人展现你的智慧、判断力和怜悯吧……~ 
 @59 = ~是的，准备好了。~ 
 @60 = ~我想我还要再考虑一下。~ 
 @61 = ~你知道黎明之主对你们的控诉：很久以前，在一个冬夜里，黑森林的孩子们被带来这里，然后被屠杀。 你们，被告，已经说出了你们的抗辩，也交出了你们手写的供词给面前的这位审判者。~ 
@@ -75,18 +75,18 @@
 @74 = ~那很简单。昆特承认了他自己的罪行。~
 @75 = ~我觉得卡尔莱特的行动是对的。~
 @76 = ~我随便选一个。~
-@77 = ~The Judge's heart is theirs alone. Ask no more.~/*审判者的想法是<HESHE>自己的，别问了。*/
+@77 = ~审判者的有他们的想法，别问了。~ 
 @78 = ~卡尔莱特的故事无法通过严格的检查。~
 @79 = ~我觉得昆特的行动是对的。~
 @80 = ~那倒是没错。你现在想听听洛山达对这个悲剧的看法吗？~
 @81 = ~好的，告诉我黎明之主的观点。~
-@82 = ~No. It's getting late.~/*不。 我要走了。*/
+@82 = ~不，已经晚了。~ 
 @83 = ~也许是吧。你想听听洛山达对这个悲剧的观点吗？~
 @84 = ~原来是这样。有时候命运是最明智的审判者。你想听听洛山达对这个悲剧的观点吗？~
 @85 = ~能看透事情表面的审判者是很明智的。你想听听洛山达对这个悲剧的观点吗？~
 @86 = ~各位，一切都结束了。洛山达宣布法庭闭会。 当你离开之后，我会封印城堡的大门，而你也无法再回来了……希望审判者永远与黎明之主的祝福同在。~ 
 @87 = ~在那个冬夜里发生在这座城里，对孩子们的屠杀是无可争议的。然而，不明显的是，什么样的事情导致这件事发生。 实际上，是昆特·贾拉格邀请了全村的小孩来城里的图书馆参加一场宴会……~ 
-@88 = ~But it was his brother, Karlat, who tricked him into doing it and started the slaughter with his spell....Karlat sought to become a noble baelnorn, you see, and had been told that the blood of innocents would be required...~ /*卡尔莱特希望变成一个高贵的贝诺巫妖，你知道的。而有人告诉他这需要纯正的血统……*/
+@88 = ~但是他的兄弟卡尔莱特欺骗了他，并用他的法术开始了屠杀……希望变成一个高贵的贝诺巫妖，你知道的。而有人告诉他这需要纯正的血统……~ 
 @89 = ~是恶魔贝利亚告诉他这个谎言，将卡尔莱特的善意扭曲成邪恶的结果……~
 @90 = ~护符匣是这一切的中心。卡尔莱特需要它，贝利亚给了它，昆特偷了它，洛山达没收了它，我守护着它，而你决定了它的命运。~
 @91 = ~我一直都感觉到，你也被困在这座城堡里。审判者带来了你手写的供词，并且认定你有罪。~
@@ -97,9 +97,8 @@
 @96 = ~我们都应该是自由的，不论是好是坏。~
 @97 = ~我并不晓得结果会是这样。~
 @98 = ~但是……但是审判者……不，我不应该和审判者争执……但是你要知道，做下这个决定，你便诅咒了在这里的我们。 我们必须留在这里，永远被流放在时间之维以外，在疯狂和腐化中过我们永生不死的日子。你这么判决了，那么就这样吧。~
-@99 = ~I have but one question left: What brought this Judge to <HISHER> Judgment?~ /*我只有一个问题：<HISHER>的判决是做出的？*/
+@99 = ~我只有一个问题：是什么让这位审判者做出<HISHER>的判决？~ 
 @100 = ~每个人都有罪，依各自的行为。~
 @101 = ~说的好，而且很有价值。你想听听洛山达对这个悲剧的观点吗？~
 @102 = ~那么愿悔恨跟随着你，不论你到那里……你想听听洛山达对这个悲剧的观点吗？~
-@103 = ~Very well. To all assembled, then, the Judge declares this court adjourned. When you leave, I will seal the castle doors and you will never return....~ 
-/*很好，各位，那么，审判者宣布法庭闭会。 你已经杀死了[Villain]而且带回了他的首级。*/
+@103 = ~很好，那么，审判者宣布法庭闭会。当你离开后，我会封住城堡的门，你就再也不会回来了……~ 
