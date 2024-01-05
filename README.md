@@ -108,6 +108,7 @@ In development:
 - Fix some texts, thanks to TheWildestMage
 - Probably fix crash with a big spider one more time, thanks to TheWildestMage
 - Fix NWDRAWL2 cut scene, thanks to TheWildestMage
+- Fix NW2305.TIS thanks to p\_zombie
 
 0.94 (11/27/23)
 
