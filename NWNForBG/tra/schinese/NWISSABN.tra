@@ -12,7 +12,7 @@
 @11 = ~因为它，我已经失去了两个我最亲近的朋友了，伟大的海姆信徒说他们不可以用一般的埋葬，得用火葬——但是，最少，他们真的是黑湖区的骄傲……~
 @12 = ~瘟疫已经破坏了这个城市的社会秩序吗？~
 @13 = ~对于寻找治愈你知道些什么？~
-@14 = ~There's another question.~/*我有其他的问题。*/
+@14 = ~我还有一个问题。~ 
 @15 = ~贵族们的闲言闲语并不关你的事，而且那也不会是你想要知道的消息的。 我确信每个地方都各自怀有诡计。黑湖区几乎是会这样做只要有一次法律不张。~ 
 @16 = ~无冬城被分成几个区域，但是，在每个大门里，都有民兵部队在看守着，它已经不像表面上所看到的了。 有五个区域你对那个有兴趣？乞丐之巢，码头区，黑湖区，潘尼苏拉还是市中心？~ 
 @17 = ~告诉我关于市中心的事情。~
@@ -39,10 +39,10 @@
 @38 = ~我朋友无力作些什么，太野蛮了！这似乎是简单易懂得警惕。 如果你对这事件有意见的话，你应该自己去那地方并且对那祭品表达哀悼。~ 
 @39 = ~我对潘尼苏拉区里面发生的事情没什么兴趣。已经有太多的事情使得我无法顾及监狱里面的犯人。 现在那边甚至有谣传说犯人在街上自由行走，你最好独自离开。~ 
 @40 = ~我对潘尼苏拉区里面发生的事情没什么兴趣。已经有太多的事情使得我无法顾及监狱里面的犯人。 我是说，天呀，那边甚至有犯人在街上胡作非为！我听说狱卒老大已经发疯了，并让他们自由。 现在似乎对新招募的兵不太好，整件事情已经失去控制了。失控是够影响我的了，这不是可以选择的。现在那边应该是平静了。~ 
-@41 = ~I get the sense, however, that you seek something larcenous in nature. I'd suggest visiting the Moonstone Mask, near the main exit of the City, to the south east. Not that I have ever been there, and any assumption that I have is merely the wildest of conjecture. Ah, and If you wish to bolster yourself with a hireling, the Trade of Blades mercenary enclave in the southeast is where the adventurers are gathering.~/*我似乎能察觉到，你在寻找本质上习惯窃盗的。我建议你去看看月石面具，是在市中心西方靠近潘尼苏拉出口。 我从没去过那儿，所有的事都是我自己的猜测。 如果你想要加强你自己受雇的机率，在西南方有个佣兵公会，那边聚集着勇敢者。*/
-@42 = ~You seem to move by Nature's hand? Perhaps the Druid Tree in the southwest of the area, near the gate would be a location of interest for you. Ah, and If you wish to bolster yourself with a hireling, the Trade of Blades mercenary enclave in the southeast is where the adventurers are gathering.~/*你似乎是借着自然的力量移动的？也许在市中心西方方阵的德鲁伊之树会是你有兴趣的地方。 如果你想要加强你自己受雇的机率，在西南方有个佣兵公会，那边聚集着勇敢者。*/
-@43 = ~You appear quite strong in your faith. Perhaps you should pay a visit to the Temple of Tyr in the City Core, west of the district, near Castle Never. Ah, and If you wish to bolster yourself with a hireling, the Trade of Blades mercenary enclave in the southeast is where the adventurers are gathering.~/*你似乎对你的信仰相当坚持。或许你应该去拜访泰尔神殿，它位于市中心西边上方。 如果你想要加强你自己受雇的机率，在西南方有个佣兵公会，那边聚集着勇敢者。*/
-@44 = ~Are scrolls and incantations your interest? You might wish to make yourself known at the Cloaktower east if the district. Ah, and If you wish to bolster yourself with a hireling, the Trade of Blades mercenary enclave in the southeast is where the adventurers are gathering.~/*你对卷轴和咒文有兴趣吗？你会想知道斗篷塔的事情，就是在无冬城外的地方。 如果你想要加强你自己受雇的机率，在西南方有个佣兵公会，那边聚集着勇敢者。*/
-@45 = ~You look quick with a weapon. The Shining Knight Arms and Armor may have what you are looking for. It's just south of the main square. Ah, and If you wish to bolster yourself with a hireling, the Trade of Blades mercenary enclave in the southeast is where the adventurers are gathering.~/*你看起来需要武器。光明骑士武器护甲店在市中心东南方，会有你所要找的东西。 我确定你知道回去的路。 如果你想要加强你自己受雇的机率，在西南方有个佣兵公会，那边聚集着勇敢者。*/
-@46 = ~You must have many talents. Warriors should visit The Shining Knight Arms and Armor, mages should visit the Cloaktower, for priests we have the Temple of Tyr, those interested in nature should visit the Druid Tree. Thieves are welcome at the Moonstone Mask. Ah, and If you wish to bolster yourself with a hireling, the Trade of Blades mercenary enclave in the southeast is where the adventurers are gathering.~/*谢谢你。 你用武器很厉害？光明骑士武器护甲店有最好的装备——那店就是我开的，它位于市中心东南方。 为什么你不想到月石面具？ 如果你想要加强你自己受雇的机率，在西南方有个佣兵公会，那边聚集着勇敢者。*/
+@41 = ~我似乎能察觉到，你在寻找本质上习惯窃盗的。我建议你去看看月石面具，是在市中心东南方靠近潘尼苏拉出口。 我从没去过那儿，所有的事都是我自己的猜测。 如果你想用雇佣兵增强自己的队伍，在东南方有个佣兵公会，那边聚集着勇敢者。~ 
+@42 = ~你似乎是借着自然的力量移动的？也许在这里西南方靠近大门的德鲁伊之树会是你有兴趣的地方。如果你想用雇佣兵增强自己的队伍，在东南方有个佣兵公会，那边聚集着勇敢者。~ 
+@43 = ~你似乎对你的信仰相当坚持。或许你应该去拜访市中心的泰尔神殿，它位于这里的西边西边。如果你想用雇佣兵增强自己的队伍，在东南方有个佣兵公会，那边聚集着勇敢者。~ 
+@44 = ~你对卷轴和咒文有兴趣吗？你会想知道这里东边斗篷塔的事情。如果你想用雇佣兵增强自己的队伍，在东南方有个佣兵公会，那边聚集着勇敢者。~ 
+@45 = ~你看起来需要武器。光明骑士武器护甲店在主广场的南方，会有你所要找的东西。 我确定你知道回去的路。 如果你想用雇佣兵增强自己的队伍，在东南方有个佣兵公会，那边聚集着勇敢者。~ 
+@46 = ~你一定有很多才能。 战士应该参观光明骑士武器护甲店，法师应该参观斗篷塔，牧师我们有泰尔神殿，对自然感兴趣的人应该参观德鲁伊树。月石面具欢迎盗贼。啊，如果你想用雇佣兵增强自己的队伍，在东南方有个佣兵公会，那边聚集着勇敢者。~ 
 @47 = ~你可以不要管我在悲伤中的事情吗？对你那些较好的人尊敬点，不管是活着的人还是死去的人！~

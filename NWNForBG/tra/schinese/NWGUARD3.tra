@@ -29,7 +29,7 @@
 @28 = ~其余的部分，如同他们所说的都已经是历史了。逃出牢笼后，这些深水城生物遁入了无尽的黑夜中，现在仍在那里，躲避着我们。 那么，你还有什么要求吗？~ 
 @29 = ~你可能要与海姆的信徒德斯泽尔谈谈。他刚来到这里，却将自己的健康放在一旁而提供海姆的祝福来打击瘟疫。 那么，你还有什么要求吗？~ 
 @30 = ~现在我失去了我的一半家人。我只能护卫着对他们的记忆。 那么，你还有什么要求吗？~ 
-@31 = ~If you want the dirt on Lady Aribeth, you'd best talk to good sir Fenthick. They're due to be married in the summer, you know... Might there be something else you need?~ /*如果你想知道艾瑞贝丝女士的私隐，你最好与范斯维克好好先生谈谈。他们应该要在夏天结婚，你知道……*/
+@31 = ~如果你想知道艾瑞贝丝女士的私隐，你最好与范斯维克好好先生谈谈。他们应该要在夏天结婚，你知道……你还需要什么？~ 
 @32 = ~恐怕不行。我们必须尊重一个人的隐私，尤其像现在这种悲伤时候。 那么，你还有什么要求吗？~ 
 @33 = ~我很高兴回答一两个问题，你想知道什么？~
 @34 = ~在那儿我能帮上什么忙呢？~
@@ -37,10 +37,10 @@
 @36 = ~在黑湖区里，有我应该多加留意的地方吗？~ 
 @37 = ~你介意回答我的一些问题么？~
 @38 = ~我不知道是否有许多事情要做。有个名叫曼达恩总是带来麻烦给别人。但是，这些都已经结束了。 如果你可以在那里得到其他商机，你会很受欢迎。但是我认为现在大多数的情况是相当平静的。 还有其他你想知道的事吗？~ 
-@39 = ~Well, your best bet is to talk to the guards. On the other side stands the gatekeeper of Blacklake. Maybe he can tell you how you can get in or out. Be careful on the way in, though. There's a burned-out bit of the city between here and the Blacklake proper. Nothing but plague-crazed thugs in there. Blacklake is fine, but the first bit is dangerous as hell. Would you like to know something else?~ /*嗯，我至少没有像那些在要塞中的傻瓜们那样即将死去。 或许你来告诉我你怎么这么漂亮？ 在路上小心点。在那个城市和黑湖区之间有一点被烧过的情况。是有一些得到瘟疫的疯狂者在那里。黑湖区是没问题，只是，它像地狱一样的危险。 现在你想买些东西吗？*/
+@39 = ~好吧，你最好的选择是和守卫交谈。另一边站着黑湖区的守门人。也许他可以告诉你如何进出。不过进去的时候要小心。这里和黑湖区之间有一片被烧毁的城市。那里除了疯狂的瘟疫暴徒之外什么也没有。黑湖区虽然是没问题，但第一点就非常危险。你还想了解其他事情吗？~ 
 @40 = ~比起其他任何地方并不差。现在，某个贵族有一些麻烦，他将食品储藏所设在与每个人不同之处。但是，他已经处理了。 还有其他你想知道的事吗？~ 
 @41 = ~哦，黑湖区被分成二个部分，贵族区和其余的部分。贵族现在为了不受瘟疫之害而紧紧封锁。有些传言说贵族他们有解药但是他们不愿意与其余的人分享。 我怀疑这是真实的，但是，食物引来一些苍蝇——瘟疫阻碍了到黑湖区的边界。在那里有一些冲突，所以小心地通过那里。 在这个大门和黑湖区之间尤其危险。是有一些得到瘟疫的疯狂者在那里。黑湖区是没问题，只是，它像地狱一样的危险。~ 
 @42 = ~在这个潘尼苏拉地区，有任何我应该寻找的地方吗？~
 @43 = ~贵族区本身设了路障，但是守卫会带你进出。一旦进入里面，你能够检查位于北边的动物园和在这个地区中心的荒野之板酒馆。 还有其他你想知道的事吗？~ 
-@44 = ~The Wailing's caused its fair share of conflict beyond these gates, <GIRLBOY>, making it a dangerous place. Lady Aribeth has ordered us to restrict access, but you may pass.~/*由于瘟疫城门里面为了公平分配而冲突频起，<GIRLBOY>，现在这里是个危险的地方了。艾瑞贝丝女士命令我们要限制人们进出。*/
-@45 = ~Because of the Howling Death, a terrible conflict erupted outside this gate. There was some trouble with someone named Meldanen and his cache of grain, but that's over now. If you still have business there, come in, but everything is already calm there.~/*我不知道是否有许多事情要做。有个名叫曼达恩总是带来麻烦给别人。但是，这些都已经结束了。 假如你忘记了，我提醒你在这里秘密行动是非常必要的。*/
+@44 = ~瘟疫在这些大门之外引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。但你可以通过。~ 
+@45 = ~因为瘟疫，这扇门外爆发了一场可怕的冲突。一个名叫曼达恩的人和他的粮食储藏室遇到了一些麻烦，但现在已经结束了。如果你在那里还有事要做，就进来吧，但那里一切都已经平静了。~ 

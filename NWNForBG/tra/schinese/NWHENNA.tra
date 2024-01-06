@@ -24,7 +24,7 @@
 @23 = ~哪一种的咨询家？~
 @24 = ~你所说的守护者是什么意思？~
 @25 = ~我问你另一个问题！~
-@26 = ~If you mean overall, then Aawill the Archdruid is in charge. If you refer to the challenges for entrance into the druid circle, however, then you should speak to Jaer. Anything else?~/*这要看你需要的是什么！如果是这里的统治者的话，就是德鲁伊艾威尔如果你指的是负责加入这里的一些挑战事宜的人，那你应该要去找洁儿聊聊。还有什么其他的事吗？*/
+@26 = ~这要看你需要的是什么！如果是这里的统治者的话，就是德鲁伊艾威尔。如果你指的是负责加入这里的一些挑战事宜的人，那你应该要去找洁儿聊聊。还有什么其他的事吗？~ 
 @27 = ~小心啊！在你选择的路上总是会发生一些危险及悲惨的事情。~
 @28 = ~真抱歉，我不应该突然变成那样，只是你刚好说到了一个令人痛苦的主题，我只是不喜欢别人刺探我的过去。~
 @29 = ~我能了解，但是有些时候这样可以帮助你分担你的痛苦！~
@@ -44,8 +44,7 @@
 @43 = ~谢谢你告诉我你的故事，要好好保重喔，再见了！~
 @44 = ~森林之灵使里面的生物会攻击任何接近或进入森林的东西。如果你样帮忙的话，你应该去跟艾威尔谈谈。~
 @45 = ~你回来了！我可以为你做些什么吗？~
-@46 = ~You agree to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~ /*我同意你的条件。 就如你所愿，祝你好运。 席尔瓦诺斯会与你同在。*/
-@47 = ~Thanks to you, our forest is alive again. Thank you, may luck always be with you!~ /*以为你能打败我？再好好想想。 谢谢，那真的是很好！*/
-@48 = ~Thanks to you, our forest is alive again, and I can finally go to Kend's grave. Thank you, may luck always be with you!~ /*我们得找出怎么回事。也许我们已经太晚了。 谢谢，那真的是很好！*/
-@49 = ~The spirit of the forest is dead! Our forest will never be the same, this is a huge loss!~ 
-/*森林之灵死了。 这森林再也不一样了。*/
+@46 = ~你同意帮助我们的森林吗?这是一项艰巨的任务，祝你好运。席尔瓦诺斯会与你同在。~ 
+@47 = ~多亏了你，我们的森林才重新焕发活力。 谢谢你，愿好运永远伴随你！~ 
+@48 = ~多亏了你，我们的森林又恢复了活力，我终于可以去肯德的坟墓了。谢谢你，愿好运永远伴随你！~ 
+@49 = ~森林之灵已经死了！我们的森林将不再是原来的样子，这是巨大的损失！~ 

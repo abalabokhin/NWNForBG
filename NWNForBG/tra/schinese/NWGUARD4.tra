@@ -29,7 +29,7 @@
 @28 = ~其余的部分，如同他们所说的都已经是历史了。逃出牢笼后，这些深水城生物遁入了无尽的黑夜中，现在仍在那里，躲避着我们。 那么，你还有什么要求吗？~ 
 @29 = ~你可能要与海姆的信徒德斯泽尔谈谈。他刚来到这里，却将自己的健康放在一旁而提供海姆的祝福来打击瘟疫。 那么，你还有什么要求吗？~ 
 @30 = ~现在我失去了我的一半家人。我只能护卫着对他们的记忆。 那么，你还有什么要求吗？~ 
-@31 = ~If you want the dirt on Lady Aribeth, you'd best talk to good sir Fenthick. They're due to be married in the summer, you know... Might there be something else you need?~ /*如果你想知道艾瑞贝丝女士的私隐，你最好与范斯维克好好先生谈谈。他们应该要在夏天结婚，你知道……*/
+@31 = ~如果你想知道艾瑞贝丝女士的私隐，你最好与范斯维克好好先生谈谈。他们应该要在夏天结婚，你知道……你还需要什么？~ 
 @32 = ~恐怕不行。我们必须尊重一个人的隐私，尤其像现在这种悲伤时候。 那么，你还有什么要求吗？~ 
 @33 = ~我很高兴回答一两个问题，你想知道什么？~
 @34 = ~在那儿我能帮上什么忙呢？~
@@ -44,5 +44,5 @@
 @43 = ~哦，最大的标志性建筑物是靠着北方城墙的希迪酒馆，由老吉姆·希迪所经营。稍微偏西南一点，是金苹果客栈。 如果它是你正在寻找的商店，让我提醒你，满囊二十支箭是这个地区最好的。它是在老希迪西南方的一家小店铺。 还有其他你想知道的事吗？~ 
 @44 = ~我想你是正确的……显而易见本地海盗组织的血腥水手们的活动越来越频繁。每个人都在猜测他们究竟干了什么坏事，可以肯定的是，绝对不是普通的小事…… 如果你想了解得更多一些，我提议你与码头边大门守卫谈谈。不管什么消息，他总会有最新的。 还有其他你想知道的事吗？~ 
 @45 = ~在这个潘尼苏拉地区，有任何我应该寻找的地方吗？~
-@46 = ~Hail, good <SIRMAAM>! The Wailing Death has taken a heavy toll beyond these gates. The Peninsula is a dangerous place and we're restricting access on Lady Aribeth's orders, but you may pass.~/*嗨，你好<SIRMAAM>！瘟疫在这些大门之后引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。*/
-@47 = ~Hail, good <SIRMAAM>! The Wailing Death has taken a heavy toll beyond these gates. The Peninsula was a dangerous area, but now there is nothing to do there. The jailbreak is already sorted out, as far as I know.~ /*嗨，你好<SIRMAAM>！瘟疫在这些大门之后引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。 文件%s正在使用中并且被锁定。*/
+@46 = ~瘟疫在这些大门之外引起了许多冲突。潘尼苏拉是一个危险的地方，艾瑞贝丝女士命令我们限制往该地区的通路。但你可以通过。~ 
+@47 = ~嗨，你好<SIRMAAM>！瘟疫在这些大门之外引起了许多冲突。潘尼苏拉曾经是一个危险的地方，但现在那里已经没什么可做的了。据我所知，那里的暴动已经解决了。~ 

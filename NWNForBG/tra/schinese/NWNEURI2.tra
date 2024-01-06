@@ -30,7 +30,7 @@
 @29 = ~啊，<CHARNAME>——我知道到你回来了。不过……你的审判笔记本呢？你答应要为罗尔甘辩护，要是没有那个笔记本就没人会承认你是法庭中的一员了。 拜托，<CHARNAME>，我知道你有很多自己的意见，但如果你要参加罗尔甘的审判，就拜托你把笔记本随身携带好吗。~ 
 @30 = ~在罗尔甘的审判开始之前，有什么要我帮忙的吗，<CHARNAME>？~
 @31 = ~我可以再拿一份这笔记的复制件吗？~
-@32 = ~Of course, <CHARNAME>. Here is another copy of the notebook. Remember, you must keep it on at all times as a symbol of Tyr's authority. Without it, no one will recognize you as an officer of the court.~/*当然，<CHARNAME>。这里是笔记本的复印件。记得随时带着，这就好比是泰尔权威的象征。 什么意思？他还给你们其他礼物？*/
+@32 = ~当然，<CHARNAME>。这里是笔记本的复印件。记得随时带着，这就好比是泰尔权威的象征。没有它，没有人会承认您是法庭的一员。~ 
 @33 = ~哦……你好，<CHARNAME>。欢迎回到公义之神的神殿。~
 @34 = ~请原谅我，如果我看上去有些……走神。罗尔甘的审判结果看起来解决了一些问题，但产生的问题也一样多。~
 @35 = ~什么问题？~
@@ -80,6 +80,6 @@
 @79 = ~告诉我你丈夫赌博输掉的那个祖传宝物的重要性。~
 @80 = ~判决结果是，五票全票通过裁定无罪。罗尔甘，你可以自由离开了，其他人也是。本庭感谢大家的参与。 伊格兰德，你在这儿的工作已经结束了。我建议你离开，在我写信投诉你在审判过程中的无礼行为之前。你玷污了这座神殿的神圣殿堂！~ 
 @81 = ~判决结果是，四票对一票裁定无罪。罗尔甘，你可以自由离开了，其他人也是。本庭感谢大家的参与。~
-@82 = ~Igland, your work here is done. I suggest you leave before I write you up for your loutish behavior during these proceedings. You are a disgrace to the hallowed halls of this Temple! <CHARNAME>, come speak to me whenever you wish to talk.~/*伊格兰德，你在这儿的工作已经结束了。我建议你离开，在我写信投诉你在审判过程中的无礼行为之前。你玷污了这座神殿的神圣殿堂！ <CHARNAME>拒绝与你交易。*/
+@82 = ~伊格兰德，你在这儿的工作已经结束了。我建议你离开，在我写信投诉你在审判过程中的无礼行为之前。你玷污了这座神殿的神圣殿堂！ <CHARNAME>，只要你想说话就来找我吧。~ 
 @83 = ~判决结果是，三票对两票裁定无罪。罗尔甘，你可以自由离开了，其他人也是。本庭感谢大家的参与。~
 @84 = ~我没有看到陪审团亮出三个火炬，判决结果是：有罪。罗尔甘将被带走，立即执行死刑。余下的人解散。本庭感谢大家的参与。~

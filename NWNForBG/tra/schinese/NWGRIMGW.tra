@@ -1,6 +1,6 @@
-@0 = ~I know you. You were hired by Aribeth to search for the Waterdhavian creatures.~ [NWGRIM51] /*我听到了。 我有深水城最后的那只生物。*/
-@1 = ~Who are you? How do you know about my assignment?~ /*你是谁？你是怎么知道学院的？*/
-@2 = ~我现在不想谈天，再见。~ 
+@0 = ~我认识你。艾瑞贝丝雇佣你来寻找深水城生物。~ [NWGRIM51] 
+@1 = ~你是谁？ 你怎么知道我的任务？~ 
+@2 = ~我现在不想聊天，再见。~ 
 @3 = ~我是格瑞姆格诺，永亡僧团的一名武僧。那些关于学院的恐怖传说并不是什么大不了的秘密，<CHARNAME>。尤其是对于那些寻求恐怖的人。~ 
 @4 = ~你让人觉得有点毛骨悚然，格瑞姆格诺。~ 
 @5 = ~你们永亡僧团的武僧学习什么样的技能？~ 
@@ -17,12 +17,12 @@
 @16 = ~只有我一个人的话恐怕没办法在那样的危险下存活。对于侍奉寂静领主，就这样舍弃自己的生命是一个愚蠢的方法。我的死亡会在约定时刻到达时降临。~
 @17 = ~实际上，我在找一些可以雇佣的帮手，来协助我的任务。~
 @18 = ~我得离开了。~
-@19 = ~The priests and priests of the Order of the Dying Death rarely join those who are not members of their order, but I can smell my master's mark on you. A storm of blood is raging around you, torment and death follow your arrival... Yet there are many whom death will follow in this city - many who are willing to pay for my services. My fee to join your cause is 850 gold.~ /*我们永亡僧团的武僧是不会跟外人一起行动的，不过我在你身上感觉到吾主的标记。 我将撕裂你的血肉并以你的灵魂飨宴！ 已经有非常多的人在这座城市里了——更多人愿意雇佣我。你只要付我150块金币我便加入你的队伍。*/
-@20 = ~Here's your 850 gold. Welcome aboard, Grimgnaw.~ /*这是给你的150枚金币。欢迎同行，沙尔文。*/
+@19 = ~永亡僧团的牧师和武僧很少会加入非其僧团成员的行列，但我能在你身上闻到吾主的标记。 血腥风暴在你周围肆虐，折磨和死亡随着你的到来而到来……然而，在这座城市里，还有许多人将面临死亡——很多人愿意雇佣我。你只要付我850块金币我便加入你的队伍。~ 
+@20 = ~这是你的850金币。欢迎同行，格瑞姆格诺。~ 
 @21 = ~给你150枚金币，并且向你保证会有非常多的杀戮可以吗？~
 @22 = ~我没有可以花在雇佣伙伴上的钱。~
-@23 = ~I foresee a future of brutal and savage slaughter at your side, <CHARNAME>. My Order will be pleased. My hands will bring death to your enemies, and all my skills are ready for your orders.~ /*我感应到如果我跟你一起行动，那么一场惨烈的大屠杀就会发生，<CHARNAME>。我的永亡僧团会很高兴的。 你受到敌人的埋伏，你必须保护你自己。*/
-@24 = ~I foresee a future of brutal, savage slaughter at your side, <CHARNAME>. Very well, I will join you for 650. My hands will bring death to your enemies, and all my skills are ready for your orders.~ /*我感受到如果跟你同行可以带来大量的死亡，<CHARNAME>。好，我愿意只收150枚金币便加入你。 你受到敌人的埋伏，你必须保护你自己。*/
+@23 = ~我预见到未来你的身边将充满残酷和野蛮的屠杀，<CHARNAME>。我的永亡僧团会很高兴的。我的双手将为你的敌人带来死亡，我的所有技能都已准备好听从你的命令。~ 
+@24 = ~我预见到未来你的身边将充满残酷和野蛮的屠杀，<CHARNAME>。很好，我愿意只收650枚金币便加入你。我的双手将为你的敌人带来死亡，我的所有技能都已准备好听从你的命令。~ 
 @25 = ~有许多人提供我大量的机会享受杀戮与死亡 – 而且他们愿意付给我更多金钱。我的价码就是150块。~
 @26 = ~那恐怕我们不能一起做事了，虽然我认为即使没有我在你身边，你仍会是毁灭的工具、死亡的代言人。~
 @27 = ~你回来了，<CHARNAME>。也许在学院那场屠杀的血迹可以被洗掉，但是我仍然可以辨认出你身上的死亡纹章。~ [NWGRIM52]
@@ -41,7 +41,7 @@
 @40 = ~雇佣你的价钱是多少？~ 
 @41 = ~当艾瑞贝丝雇佣我们这些佣兵的时候，都预先付给了足够的费用，以换取我们的服务，那可是一大笔钱。纳什尔领主在追寻那些教派份子上可是毫不在乎代价。 我们的指令只是全力帮助任何可能需要我们协助的人。所以，有什么我可以帮你的吗？~ 
 @42 = ~你有什么关于瘟疫背后的邪教的讯息吗？~
-@43 = ~I could use a priest.~/*我要休息一下。*/
+@43 = ~我可以雇佣一位牧师。~ 
 @44 = ~我现在不需要任何东西。~
 @45 = ~他们的根据地被隐藏的很好。不过我认为他们应该会派人与黑森林中的村庄取得联系。~
 @46 = ~黑森林？~
@@ -58,9 +58,8 @@
 @57 = ~死亡的标记就在你身上，如果我们一起行动一定可以为北方带来一场毁灭风暴，并且喂饱饥饿已久的寂静领主。~
 @58 = ~我想我会需要一位嗜杀成性的武僧，我让你加入。~
 @59 = ~抱歉，但是我没兴趣。再见。~
-@60 = ~我认识你，你是<CHARNAME>·<CHARNAME>。你就是那位出现在满地尸体的街道上、把无冬城从恐怖的瘟疫之中解救出来的英雄。~ [NWGRIM54] 
+@60 = ~我认识你，你是<CHARNAME>。你就是那位出现在满地尸体的街道上、把无冬城从恐怖的瘟疫之中解救出来的英雄。~ [NWGRIM54] 
 @61 = ~哦，我并不是独自行动的。艾瑞贝丝和其他的城市卫兵也和我一样做了很多。~ 
 @62 = ~是的，那就是我。~
 @63 = ~其他人也许有参与，但我知道真正的事实。因为我在你身上看建了寂静领主的标记。~
-@64 = ~I have known about your existence for a while. The most beautiful whirlpool of inhuman slaughter revolves around you. I am Grimgnaw, a priest of the Order of the Long Death. No doubt you have come for the same reason as I: to join Aribeth in hunting and slaying the cult that was responsible for the Wailing Death.~ 
-/*自从学院发生大屠杀之后，我对你是了如指掌，<CHARNAME>。一个血腥、屠杀、死亡的美丽漩涡环绕在你身旁。 我是格瑞姆格诺，永亡僧团的一名武僧。毫无疑问的，你来这里的目的跟我一样：帮助艾瑞贝丝追踪并消灭那个该为瘟疫付出代价的邪教。*/
+@64 = ~我知道你的存在有一段时间了。一个血腥、屠杀、死亡的美丽漩涡环绕在你身旁。我是格瑞姆格诺，永亡僧团的一名武僧。毫无疑问的，你来这里的目的跟我一样：帮助艾瑞贝丝追踪并消灭那个该为瘟疫付出代价的邪教。~ 
