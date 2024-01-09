@@ -1,11 +1,4 @@
 TODO:
-*. пофиксить все проблемы (с форума бимдогов):
-
--Idk how you're supposed to start the Tyrran artifacts quest, cause Oleff kept saying he doesn't want me and Gilles just told me to fuck off. I already had the three artifacts and the only way I found to actually start the quest (cause I looked up the dialogue tree in NearInfinity!) was to pickpocket Jacob's Quill from Gilles and then Oleff talked to me about it, starting the quest... And then I somehow was able to tell Oleff about Gilles looting the quill from some Tyrrans even though I had no idea about that, cause I just picked his pocket! - was able to open chest in oleff quest without the quest - check it out
--The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand), the same with priest at area NW1300.
--Drake in the Serpent place in Beggar's Nest gives wrong directions to Krestal (he says he's north of the Helmite shrine to the west, but the Helmite shrine is to the east).
--Jemaine talks about his brother going to a house north of there, but Jemaine's house is already at the northernmost part of the map. The house is actually right next door, to the east.
--Kipp in the Peninsula district says the prison is to the southwest, but you're already at the southwest part of the area where you find him and the prison is to the north. 
 -video has a horizontal green line, fix it somehow
 -ToF complains on a spell (try to ionstall tof after NWN)
 -The wagon parts quest at the beggar's nest seems to be bugged. I spoke with Aldo first, then found Hector, who eventually left the room/house, but then he was nowhere to be found anymore (according to a walkthrough of the NWN campaign, Hector is supposed to follow you to Aldo?). So I had to spawn in Hector outside to fix it.
@@ -33,6 +26,7 @@ Finally, the mod has been TONS of fun so far and, like you said, there haven't b
 -If you open the door in area NW1110 (Seedy Tavern) with the key that Cristov gave you, you can't actually enter and the "Cook" has no reaction to you opening it. You NEED to talk to the Cook and only then does the area transition work, which is bizarre (as the door is open, why can't I walk through it?).
 -Some of the area transitions are preeeeeetty hard to see. For example, the one from the Beggar's Nest Crypt to the Graveyard and the stairs to go down from area NW1112 (the Silver Sails entrance hall). There should probably be map markers for those, cause I had to check out the areas in NearInfinity to find those area transitions!!
 -Bug? The permanent Fireshield: Blue effect from the Ice Cloak has no visual whatsoever (it does work, but the fireshield doesn't show). And it also stacks with regular Fireshield: Blue. Is that intentional?
+-The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand), the same with priest at area NW1300.
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
