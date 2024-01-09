@@ -1903,15 +1903,15 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~/*Meine Mama hat gesagt, dass in Niewinter alle tot sind. Er nahm mir den Stab ab und zerbrach ihn ... und der ganze Wahnsinn hörte auf. Oh, und er schrie und schrie und schrie ...er warf mich aus dem Turm und sagte mir, ich sollte nie wieder kommen. Jeder der sich im kegelförmigen Wirkungsbereichs des Gedankenschlags befindet, muss einen Willenswurf (SG 17) bestehen. Wer scheitert, ist für 3W4 Runden betäubt. Waffen wie diese schützen den Träger nicht nur vor magischen Angriffen, sie ermöglichen es ihm auch, Zauber besser zu erforschen. Außerdem erkennt er Gefahren früher. Nach langen Forschungen hat man festgestellt, dass sie nesserischer Herkunft sind, doch über ihren Erschaffer ist nicht bekannt.*/
-@102566 = ~Founder's Flail~/*Gegenzauber*/
-@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Founder's Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
+@102566 = ~Foundation Flail~/*Gegenzauber*/
+@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
 - Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
-- 25% chance per hit to stun the target
+- 30% chance per hit to stun the target
 
 THAC0: +4
 Damage: 1d6+4, +2 (piercing)
@@ -2986,7 +2986,7 @@ Mögen die Götter meiner Seele gnädig sein ...~
 @102919 = ~Jones~
 @102920 = ~FOOLS! I CANNOT BE KILLED, I AM NOT HERE... I AM BETWEEN THE WORLDS.~/*Hoppla! FEHLER: DATEI NICHT GEÖFFNET FEHLER: TOKEN ZU LANG*/
 @102921 = ~SPECK!! YOU WILL PAY IN THE END!! YOUR FUTURE IS MARKED!! YOU WILL SUFFER!!! SUFFERRRRR!!!~/*Abschaum! STAUBKORN! DAFÜR WERDET IHR NOCH BEZAHLEN!! EURE ZUKUNFT WIRD EINE ZUKUNFT DES LEIDENS SEIN!! IHR WERDET LEIDEN!! OH JA ... LEEEEEEIDEN!!!*/
-@102922 = ~Chaohinon from the Abyss~/*zieht Karten aus einem Kartenspiel.*/
+@102922 = ~Chaohinon of the Void~/*zieht Karten aus einem Kartenspiel.*/
 @102923 = ~Sir Karathis~/*Karathis*/
 @102953 = ~Werewolf Karathis~/*Werwolf Lagerstätte*/
 @102954 = ~Karlat Jharegs Tagebuch~

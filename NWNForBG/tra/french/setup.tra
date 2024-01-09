@@ -1901,15 +1901,15 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~/*Ma maman dit que tout le monde est mort, à Padhiver. Il m’a arraché la baguette et l’a brisée... et tout s’est arrêté. Il a hurlé, et hurlé. Il m’a pratiquement jeté hors de la tour, et m’a dit de ne jamais plus revenir. Toute créature prise dans la zone d'effet d'une décharge mentale doit réussir un jet de Volonté (DD 17) ou rester sonnée pendant 3d4 rounds. Les armes telles que celle-ci protègent contre les attaques magiques, tout en permettant à leur propriétaire de concevoir plus facilement de nouveaux sorts et en lui faisant prendre davantage conscience des dangers qu'il encourt. De longues recherches ont permis de déterminer qu'elles venaient de Néthéril, mais on ignore tout de leur créateur.*/
-@102566 = ~Founder's Flail~/*Contresort*/
-@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Founder's Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
+@102566 = ~Foundation Flail~/*Contresort*/
+@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
 - Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
-- 25% chance per hit to stun the target
+- 30% chance per hit to stun the target
 
 THAC0: +4
 Damage: 1d6+4, +2 (piercing)
@@ -2984,7 +2984,7 @@ Puissent les dieux avoir pitié de moi...~
 @102919 = ~Jones~
 @102920 = ~FOOLS! I CANNOT BE KILLED, I AM NOT HERE... I AM BETWEEN THE WORLDS.~/*Oups ! ERREUR : FILE NOT OPENED ERREUR : TOKEN TOO LONG*/
 @102921 = ~SPECK!! YOU WILL PAY IN THE END!! YOUR FUTURE IS MARKED!! YOU WILL SUFFER!!! SUFFERRRRR!!!~/*Ordure ! Misérable grain de poussière ! Tu me le paieras ! Tu viens de sceller ton destin ! Tu souffriras ! Tu souffriras atrocement !*/
-@102922 = ~Chaohinon from the Abyss~/*tire une carte*/
+@102922 = ~Chaohinon of the Void~/*tire une carte*/
 @102923 = ~Sir Karathis~/*Karathis*/
 @102953 = ~Werewolf Karathis~/*Repaire du Loup-garou*/
 @102954 = ~Journal intime de Karlat Jhareg~

@@ -1901,15 +1901,15 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~/*Moja mama mówi, ¿e w Neverwinter wszyscy poumierali. Wyrwa³ mi ró¿d¿kê i z³ama³ j¹... i ca³e szaleñstwo znik³o. Och, a on krzycza³ na mnie i krzycza³... i w³aœciwie wyrzuci³ mnie z wie¿y, i zakaza³ wracaæ. Ka¿dy schwytany w sto¿ek Pora¿enia Umys³u musi zdaæ test Si³y woli (ST 17) albo zostanie og³uszony na 3k4 rundy. Ta broñ nie tylko chroni przed magicznymi atakami, ale obdarza te¿ w³aœciciela talentem do opracowywania nowych zaklêæ i wzmaga jego czujnoœæ. D³ugotrwa³e badania pozwoli³y ustaliæ, ¿e takie bronie stworzy³a nieistniej¹ca ju¿ cywilizacja Netherese, ale nie wiadomo spod czyjej wysz³y rêki.*/
-@102566 = ~Founder's Flail~/*Przeciwzaklêcie*/
-@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Founder's Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
+@102566 = ~Foundation Flail~/*Przeciwzaklêcie*/
+@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
 - Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
-- 25% chance per hit to stun the target
+- 30% chance per hit to stun the target
 
 THAC0: +4
 Damage: 1d6+4, +2 (piercing)
@@ -2983,7 +2983,7 @@ Niech bogowie maj¹ litoœæ nad moj¹ dusz¹...~
 @102919 = ~Jones~
 @102920 = ~FOOLS! I CANNOT BE KILLED, I AM NOT HERE... I AM BETWEEN THE WORLDS.~/*Ups! B£¥D: PLIK NIE ZOSTA£ OTWARTY B£¥D: ZBYT D£UGI ZNACZNIK*/
 @102921 = ~SPECK!! YOU WILL PAY IN THE END!! YOUR FUTURE IS MARKED!! YOU WILL SUFFER!!! SUFFERRRRR!!!~/*Nieszczêsna istoto! KIEDYŒ ZA TO ZAP£ACISZ!!! TWÓJ LOS JEST NAZNACZONY!! BÊDZIESZ CIERPIEÆ STRASZLIWE MÊKI!!!*/
-@102922 = ~Chaohinon from the Abyss~/*wyci¹ga kartê z talii.*/
+@102922 = ~Chaohinon of the Void~/*wyci¹ga kartê z talii.*/
 @102923 = ~Sir Karathis~/*Karathis*/
 @102953 = ~Werewolf Karathis~/*Siedlisko wilko³aków*/
 @102954 = ~Dziennik Karlata Jharega~

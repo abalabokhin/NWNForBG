@@ -1812,15 +1812,15 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~
-@102566 = ~Founder's Flail~
-@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Founder's Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
+@102566 = ~Foundation Flail~
+@102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
 - Armor Class: +1 (except against missile attacks)
 
 Combat abilities:
 - Destroy any golem less than 20 level per hit if it fails Saving Throw vs. Death with penalty -4
-- 25% chance per hit to stun the target
+- 30% chance per hit to stun the target
 
 THAC0: +4
 Damage: 1d6+4, +2 (piercing)
@@ -2851,7 +2851,7 @@ Not Usable By:
 @102919 = ~Jones~
 @102920 = ~FOOLS! I CANNOT BE KILLED, I AM NOT HERE... I AM BETWEEN THE WORLDS.~
 @102921 = ~SPECK!! YOU WILL PAY IN THE END!! YOUR FUTURE IS MARKED!! YOU WILL SUFFER!!! SUFFERRRRR!!!~
-@102922 = ~Chaohinon from the Abyss~
+@102922 = ~Chaohinon of the Void~
 @102923 = ~Sir Karathis~
 @102953 = ~Werewolf Karathis~
 @102954 = ~The Journal of Karlat Jhareg~
