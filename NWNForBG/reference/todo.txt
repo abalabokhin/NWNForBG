@@ -9,8 +9,6 @@ TODO:
 -video has a horiaontal green line, fix it somehow
 -ToF complains on a spell (try to ionstall tof after NWN)
 -The wagon parts quest at the beggar's nest seems to be bugged. I spoke with Aldo first, then found Hector, who eventually left the room/house, but then he was nowhere to be found anymore (according to a walkthrough of the NWN campaign, Hector is supposed to follow you to Aldo?). So I had to spawn in Hector outside to fix it.
--The Stonefire Great Axe uses the axe proficiency (correctly) and gives you +1 to axe proficiency (correctly), BUT the description wrongly states it gives "+1 to halberd skill".
--A ton of weapon descriptions (eg Gladiator's Club) mention that they do x effect (eg stun), but they rarely state the duration of the effect.
 -Sword Saint Katana's description has a typo: "traget" instead of "target"
 -Naming inconsistency: Founder's Flail is called Foundation Flail in the recipe book
 -These crafted weapons have +4 enchantment, BUT their names/descriptions never state that (as opposed to the Sentinel axe, for example, that's called Sentinel +4 or the Rune Hammer +4): Stonefire Great Axe, Ironwood Mace, Gladiator's Club, Storm Hammer, Founder's Flail, Drone Morningstar, Harbinger Kin Greatsword, Sword Saint Katana, Astral Blade Long Sword + Bastard Sword, Desert Wind Scimitar, Feyduster Short Sword, Fey Spear.
@@ -44,7 +42,7 @@ Finally, the mod has been TONS of fun so far and, like you said, there haven't b
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat
+*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club
 *. Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
 
 Новый контент:
