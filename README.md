@@ -103,12 +103,13 @@ Version History
 ---------------
 In development:
 
-- Make NWCULT1 creature a little weaker to be more ballanced.
-- Add Chinese, thanks to MephistoSatanDevil and icecool.
-- Fix some texts, thanks to TheWildestMage
-- Probably fix crash with a big spider one more time, thanks to TheWildestMage
-- Fix NWDRAWL2 cut scene, thanks to TheWildestMage
-- Fix NW2305.TIS thanks to p\_zombie
+- Chinese translation were finished by Shuiyue Jushi, Youye and Lewis Liu.
+- Added auto genrated Chinese translation, thanks to MephistoSatanDevil and icecool for the provided NWN dialog.tlk.
+- Made NWCULT1 creature a little weaker to be more ballanced.
+- Fixed some texts, thanks to TheWildestMage
+- Probably fixed crash with a big spider one more time, thanks to TheWildestMage
+- Fixed NWDRAWL2 cut scene, thanks to TheWildestMage
+- Fixed NW2305.TIS thanks to p\_zombie
 
 0.94 (11/27/23)
 
