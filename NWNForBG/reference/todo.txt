@@ -9,7 +9,6 @@ TODO:
 -video has a horiaontal green line, fix it somehow
 -ToF complains on a spell (try to ionstall tof after NWN)
 -The wagon parts quest at the beggar's nest seems to be bugged. I spoke with Aldo first, then found Hector, who eventually left the room/house, but then he was nowhere to be found anymore (according to a walkthrough of the NWN campaign, Hector is supposed to follow you to Aldo?). So I had to spawn in Hector outside to fix it.
--Sword Saint Katana's description has a typo: "traget" instead of "target"
 -Naming inconsistency: Founder's Flail is called Foundation Flail in the recipe book
 -These crafted weapons have +4 enchantment, BUT their names/descriptions never state that (as opposed to the Sentinel axe, for example, that's called Sentinel +4 or the Rune Hammer +4): Stonefire Great Axe, Ironwood Mace, Gladiator's Club, Storm Hammer, Founder's Flail, Drone Morningstar, Harbinger Kin Greatsword, Sword Saint Katana, Astral Blade Long Sword + Bastard Sword, Desert Wind Scimitar, Feyduster Short Sword, Fey Spear.
 -In area NW1220 you can use the stairs/secret passage on the wall to the west of the area BEFORE actually finding the secret wall, making it seem like you're just entering the wall.
@@ -19,7 +18,6 @@ TODO:
 -In area NW1308 Briley tells me not to touch the chest unless Oleff gives permission, but I just did it anyway and nothing happened. Is that how it's supposed to go?
 -Jared in area NW1223 talks about being set free from the prison and I tell him that I'll find a way to help him... But the prison door is already open (in fact, I couldn't talk to him otherwise).
 -Not a bug, but another really weird balance choice (even though this enemy ain't too tough): "Gang Leader", despite being just a nameless random dude, also has saving throws that are better than GODS (-1/0/0/0/1, more than appears in NearInfinity, cause he's wearing a Ring of Protection +2 that lowers the saves). He's basically immune to a lot of spells unless you use Greater Malison, Doom, etc. (and how is a regular player supposed to know that?).
--Not sure if this is a bug: Idk if the Intellect Devourer (who Kurdan described as like a dog, which makes sense for the original creature, but not for this swarm-like version in the mod) was supposed to open all cages before I can kill it, but I ended up killing it with two cages still closed (with the dudes still inside and all).
 -Formosa at the Blacklake District says Meldanen lives in a mansion in the northwest corner of the district, but it's actually in the northern part (his warehouse is in the northwest, not his mansion).
 -The Dancing Broadsword that you can summon with the Dancing Long Sword +3 clears the fog of war like a familiar or a wizard eye, is that supposed to happen?
 -Weird balance, not a bug: out of all the weapons you can craft with adamantite, only the Harbinger King Greatsword and the Sword Saint Katana get +1 attack per round. Isn't that a bit odd? They're strictly MUCH better than the rest (and, in fact, the Sword Saint Katana is one of the most OP weapons in all the infinity games. Using two of them turns a Bard into a Fighter with the insane THAC0 bonus and extra attacks). The other two-handed weapon (the Stonefire "great axe") doesn't get that and neither do the other one-handed weapons (though the Desert Wind Scimitar at least gets a cast of Sunfire...).
@@ -42,7 +40,7 @@ Finally, the mod has been TONS of fun so far and, like you said, there haven't b
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club
+*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some items description
 *. Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
 
 Новый контент:
