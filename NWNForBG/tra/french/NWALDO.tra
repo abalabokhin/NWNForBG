@@ -2,7 +2,7 @@
 @1 = ~Du calme, je ne suis pas votre ennemi.~
 @2 = ~Les bonnes manières ne vous étouffent pas. Vous ne devez pas vous faire beaucoup d'amis, pas vrai ?~
 @3 = ~Attention à vos menaces, idiot !~
-@4 = ~Hmm! The dead don't answer, which means you're probably fine. But you can't be too careful, right? You ain't seen a tall-folk named Hector, have ya? Sent him out for wagon parts and damned if he ain't just disappeared.~/*Hum ? Moi pas pouvoir répondre toutes ces questions ! Mais vous pas avoir encore gagné, hein ? Vous n'auriez pas vu un grand type qui s'appelle Hector, par hasard ? J'l'ai envoyé chercher des pièces détachées de chariot, et il n'est toujours pas r'venu.*/
+@4 = ~Hmm! Les morts ne parlent pas, alors vous ne risquez sûrement rien. Mais on n'est jamais trop prudent, hein ?  Vous n'auriez pas vu un grand type qui s'appelle Hector, par hasard ? J'l'ai envoyé chercher des pièces détachées de chariot, et il n'est toujours pas r'venu.~
 @5 = ~Il doit être mort. Je ne vois pas comment il aurait survécu.~
 @6 = ~Je l'ai vu, mais je ne l'ai pas amené avec moi.~
 @7 = ~Hector ? Oui, il est là. Mais pas visible d'ici.~
@@ -22,10 +22,10 @@
 @21 = ~Je le trouverai si je peux.~
 @22 = ~Pas besoin de s'énerver. Si vous le voyez, dites-lui de ramener vite fait les pièces des chariots.~
 @23 = ~Oh, merci beaucoup pour votre aide. Eh bien, il ne nous reste plus qu'à mettre les voiles, alors. Il y a quelque chose qui remue, par là ? Allez, saletés de morts-vivants ! Essayez un peu !~
-@24 = ~On dirait que je n'ai plus vraiment le choix. Eh bien, le moment est venu de prendre ses jambes à son cou, je suppose. Et aucun traîne-savates de zombie n'est capable de rattraper un halfelin à la course, croyez-moi.~
+@24 = ~On dirait que je n'ai plus vraiment le choix. Eh bien, le moment est venu de prendre ses jambes à son cou, je suppose. Et aucun traîne-savates de zombie n'est capable de rattraper une petite-personne à la course, croyez-moi.~
 @25 = ~Il n'y a pas assez de bière dans cette taverne pour me faire oublier tout ce que j'ai dû abandonner. Merci pour tout ce que vous avez fait, mais je vais tenter le coup tout seul. Merci quand même.~
 @26 = ~Des adeptes de Heaum, hein ? Non merci. Je ne crois pas un mot de ce que racontent ces culs-bénis. Je vais me débrouiller tout seul. Mais merci quand même.~
-@27 = ~I don't get good luck. I get stuck in a zombie-filled city with a broken wagon and the scorn of my wife. But anyway, thanks.~ /*Ne me parlez pas de chance. Je suis coincé dans une ville pleine de zombis avec un chariot cassé et une femme hystérique... Ça aller, merci.*/
+@27 = ~Ne me parlez pas de chance. Je suis coincé dans une ville pleine de zombis avec un chariot cassé et une femme hystérique... Ça aller, merci.~
 @29 = ~Je dois attendre son retour. Je ne quitterai ce chariot que s'il n'y a plus aucun espoir. Un point c'est tout.~
 
 @30 = ~Je n'en sais rien. Peut-être que les pièces sont trop grandes pour lui, mais zombis ou pas, je ne laisserai pas mes affaires avant que ce soit indispensable !~

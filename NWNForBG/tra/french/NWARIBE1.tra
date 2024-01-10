@@ -2,7 +2,7 @@
 @1 = ~Je suis venu aussi vite que possible, Dame Aribeth.~
 @2 = ~Vous m'attendiez ? Pourquoi ?~
 @3 = ~Maintenant je suis ici. Dites ce que vous avez à dire.~
-@4 = ~Neverwinter needs you to survive the Howling Death. The attack on the Academy doused the one faint spark of hope this city had. I need you to help recover that which we have lost, <CHARNAME>.~ [NWARI054]/*Moi besoin que toi faire autre chose. L'attaque contre l'Académie a soufflé la seule lueur d'espoir de la ville. J'ai besoin que vous récupériez ce qui a été perdu, <CHARNAME>.*/
+@4 = ~Padhiver a besoin de gens comme vous pour survivre à la Mort Hurlante. L'attaque contre l'Académie a soufflé la seule lueur d'espoir de la ville. J'ai besoin que vous récupériez ce qui a été perdu, <CHARNAME>.~ [NWARI054]
 @5 = ~Ce sera un honneur de vous servir, Dame Aribeth !~
 @6 = ~Je ne sers nul autre maître que moi !~
 @7 = ~Je vous aiderai... contre récompense.~
@@ -24,7 +24,7 @@
 @23 = ~J'ai déjà entendu ces rumeurs.~
 @24 = ~Que sont devenues ces créatures?~
 @25 = ~Perte de temps. Vous aller droit au but, Aribeth.~
-@26 = ~Vous avez gagné une place d'honneur parmi tous ceux qui ont tenté d'aider Padhiver en ces temps troublés. Vous demeurerez avec nous pendant que nous accomplirons le rituel pour créer le remède. Etes-vous disposé à vous rendre dans la salle du rituel ? Nous devons y aller le plus vite possible.~ [NWARI135] 
+@26 = ~Vous avez gagné une place d'honneur parmi tous ceux qui ont tenté d'aider Padhiver en ces temps troublés. Vous demeurerez avec nous pendant que nous accomplirons le rituel pour créer le remède. Êtes-vous disposé à vous rendre dans la salle du rituel ? Nous devons y aller le plus vite possible.~ [NWARI135] 
 @27 = ~Oui, finissons-en !~
 @28 = ~Non, je dois m'occuper de quelques petites choses.~
 @29 = ~Dans le plus grand secret, les quatre créatures ont été réunies à Eauprofonde puis envoyées ici, à Padhiver, une ménagerie des plus étranges : une cockatrice, un dévoreur d'intellect, un yuan-ti et une dryade.~ [NWARI059]
@@ -34,7 +34,7 @@
 @33 = ~J'ai ordonné qu'elles soient envoyées à l'Académie, l'institution pour aventuriers de Padhiver. J'ai moi-même étudié là-bas et je pensais que les instructeurs et les étudiants étaient loyaux envers le Seigneur Nasher. Puis l'Académie a été attaquée.~ [NWARI060] 
 @34 = ~Allez-y.~
 @35 = ~Alors vous pensez que, au sein de l'Académie, quelqu'un vous a trahie.~
-@36 = ~The attack took us by surprise. After this massacre at the Academy, only a handful of people remained alive. Fenthick and Desther arrived with reinforcements, but during the confusion of battle the Waterdhavian creatures disappeared into the streets of Neverwinter - and our hopes of a cure vanished with them.~ [NWARI062] /*Ça pas être surprise. D'où viennent tous ces corps ? Fenthick et Desther sont arrivés avec les renforts mais, au cours de la bataille, les créatures d'Eauprofonde ont disparu dans les rues de Padhiver et nos espoirs se sont envolés avec elles.*/
+@36 = ~L'attaque nous a pris au dépourvu. Seul une poignée a survécu au carnage de l'Académie. Fenthick et Desther sont arrivés avec les renforts mais, au cours de la bataille, les créatures d'Eauprofonde ont disparu dans les rues de Padhiver et nos espoirs se sont envolés avec elles.~ [NWARI062]
 @37 = ~Comment puis-je vous être utile, Dame Aribeth ?~
 @38 = ~Laissez-moi deviner. Vous voulez que je vous ramène ces créatures.~
 @39 = ~Quoi vous vouloir moi faire, Aribeth ?~
@@ -48,8 +48,8 @@
 @47 = ~Comment savoir si les créatures sont encore en vie ?~
 @48 = ~Je vous demande la plus grande discrétion dans cette affaire. Des nouvelles de l'attaque et des étranges créatures qui errent dans la ville ne feraient qu'ajouter à la panique et au chaos qui règnent déjà dans les rues. Je n'ai pas grand-chose d'autre à vous dire sur cette mission, <CHARNAME>. Si vous avez besoin d'équipement, revenez me voir et je pourrai vous vendre ce qu'il y a en réserve dans le magasin du temple de Tyr.~ [NWARI073] 
 @49 = ~Quelle que soit la récompense que vous cherchez, gloire, fortune ou célébrité, elle sera conséquente si vous réussissez.~ [NWARI072]
-@50 = ~Your skill and courage are evident, and I know that you are not with those who want to destroy Neverwinter. The city watch can do little to help in this search; their numbers are barely enough to keep order in the streets of Neverwinter. Others, like Fenthick or myself, have duties that require we stay here.~ [NWARI070] /*Bon, maintenant partez, vous et votre tribu. Je ne veux plus jamais vous revoir. Les gardes de la ville ne vous seront guère utiles pour vos recherches. Ils parviennent à peine à maintenir l'ordre dans les rues de Padhiver. Certains, comme Fenthick ou moi-même, sont retenus ici par des devoirs qui nécessitent leur présence.*/
-@51 = ~The city watch can do little to help in this search; their numbers are barely enough to keep order in the streets of Neverwinter. Others, like Fenthick or myself, have duties that require we stay here. Your fame precedes you, <CHARNAME>. Your bravery and skill are obvious, and I know you are not in league with those who seek to destroy Neverwinter.~ [NWARI071] /*Les gardes de la ville ne vous seront guère utiles pour vos recherches. Ils parviennent à peine à maintenir l'ordre dans les rues de Padhiver. Certains, comme Fenthick ou moi-même, sont retenus ici par des devoirs qui nécessitent leur présence. Vous avez fait vos preuves au cours de l'attaque contre l'Académie, <CHARNAME>.  Votre bravoure et vos compétences ne font aucun doute. Et je sais que vous n'avez aucun lien avec ceux qui désirent détruire Padhiver.*/
+@50 = ~Votre bravoure et vos compétences ne font aucun doute. Et je sais que vous n'avez aucun lien avec ceux qui désirent détruire Padhiver. Les gardes de la ville ne vous seront guère utiles pour vos recherches. Ils parviennent à peine à maintenir l'ordre dans les rues de Padhiver. Certains, comme Fenthick ou moi-même, sont retenus ici par des devoirs qui nécessitent leur présence.~ [NWARI070] 
+@51 = ~ Les gardes de la ville ne vous seront guère utiles pour vos recherches. Ils parviennent à peine à maintenir l'ordre dans les rues de Padhiver. Certains, comme Fenthick ou moi-même, sont retenus ici par des devoirs qui nécessitent leur présence. Votre renommée vous précède, <CHARNAME>. Votre bravoure et vos compétences ne font aucun doute. Et je sais que vous n'avez aucun lien avec ceux qui désirent détruire Padhiver.~ [NWARI071]
 @52 = ~D'après tous nos rapports, les créatures ont réussi à fuir les combats à l'Académie et on nous a signalé la présence d'étranges bêtes dans chaque quartier. Vous devez récupérer les créatures aquafondiennes si nous voulons survivre à la Mort Hurlante. Le destin de Padhiver est désormais entre vos mains.~ [NWARI068] 
 @53 = ~Prenez cet or pour vous acheter l'équipement nécessaire à cette mission. Pensez bien à faire le plein de potions de soins avant de partir. Elles seront très importantes si vous voulez survivre.~ [NWARI160]
 @54 = ~Je vais immédiatement partir en quête des créatures aquafondiennes !~
@@ -111,5 +111,4 @@
 @110 = ~Vous avez véritablement un coeur de héros, <CHARNAME> ! De toutes les personnes qui ont cherché les créatures, vous êtes sans conteste la plus brave !~ [NWARI152]
 @111 = ~Maintenant nous avons les quatre éléments. Vite, <CHARNAME>, il nous reste peu de temps. Vous avez gagné une place d'honneur parmi tous ceux qui ont tenté d'aider Padhiver en ces temps troublés. Vous demeurerez avec nous pendant que nous accomplirons le rituel pour créer le remède. Etes-vous disposé à vous rendre dans la salle du rituel ? Nous devons y aller le plus vite possible.~ [NWARI155]
 @112 = ~Je reviens de suite.~
-@113 = ~I am sorry, but I cannot discuss Neverwinter's business with you. Let <CHARNAME> come to me. I will only talk to them.~ 
-/*Merci bien. Ce fut un véritable plaisir que de travailler avec vous. Moi <CHARNAME>. Qui vous être ? Vous ne m'aurez pas !*/
+@113 = ~Désolé, mais je ne peux pas discuter des affaires de Padhiver avec vous. Je ne parlerai qu'à <CHARNAME>.~

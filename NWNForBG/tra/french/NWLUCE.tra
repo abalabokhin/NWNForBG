@@ -10,16 +10,16 @@
 @9 = ~Je vais essayer de supporter vos manières abruptes, mais rappelez-vous qu'un jeton de passe n'achète que mon temps, pas ma volonté. Si vos paroles me déplaisent, cette entrevue prendra fin immédiatement.~
 @10 = ~Je pense que vous devriez surveiller vos paroles. Un jeton de passe achète mon temps, pas ma volonté. Si vos manières ne me plaisent pas, notre entrevue cessera sur-le-champ.~
 @11 = ~Au revoir. Peut-être aurons-nous une autre occasion de nous parler ? Pensez alors à vous procurer un jeton de passe. Voyez avec le tavernier.~
-@12 = ~Très bien, <CHARNAME>. Maintenant, parlez-moi un peu de vous. Qu’est-ce qui vous préoccupe ? Nous, au Masque, nous savons très bien écouter.~
+@12 = ~Très bien, <CHARNAME>. Maintenant, parlez-moi un peu de vous. Qu'est-ce qui vous préoccupe ? Nous, au Masque, nous savons très bien écouter.~
 @13 = ~Vous savez écouter ? Le fait de parler détend-il vos "clients" ?~
 @14 = ~Parlons de vous et de ce que vous aimez.~
 @15 = ~Peut-être puis-je vous poser quelques questions sérieuses ?~
 @16 = ~Nous pourrions peut-être... nous retirer dans votre chambre, Madame ?~
 @17 = ~Allez, chérie, à cheval !~
 @18 = ~Je dois y aller.~
-@19 = ~Very well, now, tell me a little something about yourself. What's on your mind? We are very good listeners here at the Mask.~ /*Très bien, <CHARNAME>. Maintenant, parlez-moi un peu de vous. Qu’est-ce qui vous préoccupe ? Nous, au Masque, nous savons très bien écouter.*/
+@19 = ~Very well, now, tell me a little something about yourself. What's on your mind? We are very good listeners here at the Mask.~ /*Très bien, <CHARNAME>. Maintenant, parlez-moi un peu de vous. Qu'est-ce qui vous préoccupe ? Nous, au Masque, nous savons très bien écouter.*/
 @20 = ~Eh bien, je suis au regret de vous annoncer que je ne peux pas vous parler si vous n'en avez pas. Je regrette. Si vous voulez en acheter un, voyez avec le tavernier.~
-@21 = ~Les gens importants n’ont pas souvent l’occasion de se confier. Je suis une sorte de "substitut" et d'amie, si besoin est. Dites-moi ce qui vous préoccupe.~
+@21 = ~Les gens importants n'ont pas souvent l'occasion de se confier. Je suis une sorte de "substitut" et d'amie, si besoin est. Dites-moi ce qui vous préoccupe.~
 @22 = ~Se plaindre de la solitude de la vie d'aventurier.~
 @23 = ~Se plaindre du manque de respect.~
 @24 = ~Moi fort. Rien me toucher.~
@@ -35,7 +35,7 @@
 @34 = ~Quelle délicatesse. Vous savez, <CHARNAME>, je crois que vous me plaisez et je trouve votre proposition intéressante. Suivez-moi mon cher. Eteignons ces lumières trop vives quelque temps.~ 
 @35 = ~Quelle délicatesse. Vous savez, <CHARNAME>, je crois que vous me plaisez et je trouve votre proposition intéressante. Suivez-moi mon cher. Eteignons ces lumières trop vives quelque temps.~ 
 @36 = ~Pas encore. La patience est une vertu. Nous devrions peut-être passer un peu plus de temps à mieux nous connaître...~
-@37 = ~Je ne crois pas, non. J'ai parfaitement le droit de refuser d'aussi... malséantes avances. C’est tout un art. Vous ne pouvez pas vous contenter de charger comme un taureau.~
+@37 = ~Je ne crois pas, non. J'ai parfaitement le droit de refuser d'aussi... malséantes avances. C'est tout un art. Vous ne pouvez pas vous contenter de charger comme un taureau.~
 @38 = ~C'est votre droit, mais sachez que vous devrez acheter un autre jeton de passe si vous souhaitez me parler de nouveau. Voulez-vous toujours partir ?~
 @39 = ~Je vais rester un peu, je pense.~
 @40 = ~Je dois partir. Adieu.~
@@ -46,7 +46,7 @@
 @45 = ~Eh bien, dans ce cas, il est heureux que ce soit moi qui ai à le faire et non vous. J'apporte le réconfort à qui en a besoin. Que faites-vous de votre vie, à part dénigrer les choix des autres ?~
 @46 = ~J'en ai terminé avec vous. Ce fut pénible et inconvenant.~
 @47 = ~Beaucoup de gens viennent ici sans savoir ce qu'ils veulent vraiment. J'essaie de les mettre à l'aise, d'éloigner leurs soucis. Certaines personnes ont juste besoin d'une oreille attentive. Bien plus que vous ne pourriez l'imaginer. J'espère leur apporter ce qui leur manque dans la vie.~ 
-@48 = ~Eh bien, il y a longtemps, je suis née dans une famille très aimante. Mais maintenant, je suis ici avec vous et c’est tout ce qui compte pour le moment.~
+@48 = ~Eh bien, il y a longtemps, je suis née dans une famille très aimante. Mais maintenant, je suis ici avec vous et c'est tout ce qui compte pour le moment.~
 @49 = ~Ecoutez, si vous cherchez quelqu'un pour vous frapper, il y a des salles spéciales pour ça dans les tavernes les plus malfamées des quais... Mon travail consiste à écouter et à  établir un dialogue positif. Si vous ne voulez pas de ça, la porte est derrière vous. Bien... hum... vous disiez ?~ 
 @50 = ~I will not tolerate rudeness.~ /*Impossible de traduire l'adresse.*/
 @51 = ~For instance, you look like someone familiar in the use of weapons, and you have other talents as well. Such versatility and the affinity for battle can keep companions at a distance sometimes. I can close that distance, if you like. That's why I'm here, and likely that's why you are here too.~/*Vous semblez maîtriser le maniement des armes. Ce penchant pour le combat peut paraître dangereux et vous éloigner des gens. Je peux me rapprocher si vous le désirez. C'est pour ça que je suis ici et vous aussi il me semble.*/
@@ -66,7 +66,7 @@
 @65 = ~Je suis désolée, gente dame, mais ma compagnie est réservée aux mâles. Vous pouvez aller voir si Tanith est libre.~ [NWLUC050]
 @66 = ~Non, j'ai été suffisamment maltraitée pour aujourd'hui. Je ne travaille plus. Allez ailleurs.~ [NWLUC051]
 @67 = ~Ah ! <CHARNAME>. Vous allez bien ? J'espère vous avoir été utile. Certaines personnes ont du mal à reconnaître qu'elles ont vraiment besoin de parler à quelqu'un.~ [NWLUC052]
-@68 = ~J'ai apprécié le temps que nous avons passé ensemble. Vous aussi, j’espère.~
+@68 = ~J'ai apprécié le temps que nous avons passé ensemble. Vous aussi, j'espère.~
 @69 = ~Moi aimer vous. Moi espérer vous aimer un peu moi.~
 @70 = ~Vous juste une autre pour la route. Ha !~
 @71 = ~<CHARNAME>, vous êtes le parfait gentilhomme. Inutile de vous inquiéter. Rappelez-vous... on ne juge personne.~

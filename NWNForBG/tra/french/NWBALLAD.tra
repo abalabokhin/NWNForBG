@@ -1,8 +1,8 @@
-@0 = ~Bonjour à vous, <GIRLBOY>. Je m'appelle Ballard. Je suis un rôdeur en quête d'un individu intéressé par une mission dangereuse. Cela vous tente-t-il ?~ [NWBAL052] 
+@0 = ~Bonjour à vous. Je m'appelle Ballard. Je suis un rôdeur en quête d'un individu intéressé par une mission dangereuse. Cela vous tente-t-il ?~ [NWBAL052] 
 @1 = ~Pourquoi pas ! Je m'appelle <CHARNAME>. De quoi s'agit-il ?~
 @2 = ~Pourquoi pas. Que demandez-vous ?~
 @3 = ~Merci, pas pour le moment. Au revoir.~
-@4 = ~Ecoutez, mon ami, il ne s'agit pas d'un simple coup de main ; des vies sont en jeu.~ 
+@4 = ~Écoutez, mon ami, il ne s'agit pas d'un simple coup de main ; des vies sont en jeu.~ 
 @5 = ~Sachez que des vies sont en jeu. J'espère que vous reviendrez sur votre décision.~
 @6 = ~Dernièrement, des troubles ont agité les bois de Padhiver. Tout commença par des récits de voyageurs parlant d'animaux normalement paisibles les attaquant sans raison. Ensuite, les fermiers et les bûcherons ont commencé à disparaître. Les animaux ont attaqué tout le monde, même les druides et les rôdeurs qui étaient là pour aider la forêt. Je crains que, sans aide, les villages proches du bois ne soient détruits.~
 @7 = ~Je n'aime pas m'en prendre aux animaux, alors que suis- je censé faire ?~
@@ -17,13 +17,13 @@
 @16 = ~Je n'ai besoin de rien, merci.~
 @17 = ~J'aimerais voir les articles que vous proposez.~
 
-@19 = ~Then Mielikki speed your way <BROTHERSISTER>.~/*Dans ce cas, que Mailikki vous montre la voie, mon <BROTHERSISTER>.*/
+@19 = ~Dans ce cas, que Mailikki vous montre la voie, mon frère.~ ~Dans ce cas, que Mailikki vous montre la voie, ma soeur.~
 @20 = ~Elle est à l'est. Mais arrêtez-vous au bosquet avant de mettre les pieds dans la forêt. Aawill aura peut-être des renseignements utiles à vous livrer.~
-@21 = ~Ecoutez, je ne sais pas vraiment. Cependant, Aawill ne se montre jamais avare quand il s'agit de louer les services d'autrui.~
+@21 = ~Écoutez, je ne sais pas vraiment. Cependant, Aawill ne se montre jamais avare quand il s'agit de louer les services d'autrui.~
 @22 = ~Je vous souhaite de nouveau la bienvenue. Que puis-je faire pour vous ?~ [NWBAL051]
 @23 = ~Rappelez-moi en quoi vous avez besoin d'aide ?~
 @24 = ~Où se trouve la forêt de Padhiver ?~
-@25 = ~I need to see what you have in stock.~ /*J'aimerais voir ce que vous avez en magasin.*/
+@25 = ~J'aimerais voir ce que vous avez en magasin.~
 @26 = ~Rien. Salut.~
 @27 = ~Il est possible que les druides soient rentrés pendant mon absence, mais Aawill pourrait quand même avoir besoin de votre aide pour protéger le bois. Si vous en avez le courage, allez à la recherche d'Aawill dans le bosquet situé à l'extérieur du bois de Padhiver.~
 @28 = ~Très bien, j'y vais.~

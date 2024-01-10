@@ -7,7 +7,7 @@
 @6 = ~Je n'ai pas le temps pour l'instant.~
 @7 = ~Ouais ? Je pourrais avoir besoin de votre aide si vous avez l'intention de tuer ces choses. Je pense que je sais quelque chose sur ces morts-vivants...~
 @8 = ~Je suppose que vous pourriez être pire que ce que vous êtes. Mais je cherche pire. Je pense que je sais quelque chose sur ces morts-vivants...~
-@9 = ~Mon frère se comporte... bizarrement. Il va dans une maison étrange un peu au nord d'ici. Les morts-vivants le laissent tranquille ! Il n'est pas lui-même... Je pense qu'il est fou. Il y a un groupe... une secte... et mon frère a parlé d'une sorte de... créature. Je ne sais rien de plus. Tout s'est passé si vite... juste quand les zombis ont commencé à se montrer.~ 
+@9 = ~Mon frère se comporte... bizarrement. Il va dans une maison étrange un peu à l'Est d'ici. Les morts-vivants le laissent tranquille ! Il n'est pas lui-même... Je pense qu'il est fou. Il y a un groupe... une secte... et mon frère a parlé d'une sorte de... créature. Je ne sais rien de plus. Tout s'est passé si vite... juste quand les zombis ont commencé à se montrer.~ 
 @10 = ~J'ai des questions sur cette maison étrange.~
 @11 = ~Je veux en savoir un peu plus sur votre frère.~
 @12 = ~Je pourrais y jeter un oeil. Qu'allez-vous faire ?~ 
@@ -18,18 +18,18 @@
 @17 = ~Bien sûr. Quoi donc ?~
 @18 = ~Comment s'appelle-t-il ? Que fait-il ?~
 @19 = ~J'ai trouvé cet anneau dans la cachette de la secte. C'est à lui ?~
-@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ /*Je... je ne sais pas. J'aimerais aider à le trouver, mais je ne pense pas y arriver. J’ai besoin de soins. Moi avoir besoin aide. Je m'en charge.*/
+@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ /*Je... je ne sais pas. J'aimerais aider à le trouver, mais je ne pense pas y arriver. J'ai besoin de soins. Moi avoir besoin aide. Je m'en charge.*/
 @21 = ~Aucune idée, mais je sais qu'ils ne se font pas attaquer par les zombis et que mon frère est de plus en plus bizarre. Ils ne veulent aucun visiteur. Il utilise une sorte de clef pour entrer, mais ce n'est pas une clef banale. Une espèce de truc magique.~ 
 @22 = ~Je pourrais la voir ?~
 @23 = ~C'est très étrange. Ils la contournent, et n'attaquent pas les gens qui y entrent. Mon frère dit que la créature les protège... Je ne sais pas de quoi il parle et il a disparu depuis des jours et des jours.~ 
 @24 = ~Il s'appelle Torin. Il a étudié la magie près d'Eauprofonde pendant un temps, mais n'a jamais accroché. Il est un peu perdu. Je pense qu'il voulait quelque chose de plus gratifiant. Il n'était pas passionné par les livres.~ 
 @25 = ~Ce... C'était à mon frère. Il l'avait toujours sur lui. Il est mort... Je le sais. Merci. Je n'ai rien à vous donner... Gardez l'anneau. Il me rappellerait sa mort, et pas sa vie.~ 
 
-@27 = ~J'ai cette clef, qu'il utilisait pour entrer dans la cachette. Je suis sûr que c'est inutile. Et puis, qu'est-ce que j'en sais ? La cachette de la secte est au Nord. Si vous voulez le chercher, commencez par là.~ 
+@27 = ~J'ai cette clef, qu'il utilisait pour entrer dans la cachette. Je suis sûr que c'est inutile. Et puis, qu'est-ce que j'en sais ? La cachette de la secte est à l'Est. Si vous voulez le chercher, commencez par là.~ 
 
 @29 = ~La cachette de la secte est au Nord. Si vous voulez le chercher, commencez par là.~ 
 @30 = ~Bien sûr ? J'espère que vous allez essayer de le trouver. Je m'inquiète. La cachette de la secte est au Nord. Si vous voulez le chercher, commencez par là.~
-@31 = ~Bonjour... Je vous ai donné la clef magique, non ? Oh, je suis si inquiet pour mon frère que je ne sais plus où j'habite. Allez voir la secte au nord d'ici. Allez trouver mon frère. J'aimerais pouvoir vous aider... Je ne sers pas à grand-chose face au danger. Mais je sais qu'ils manigancent quelque chose.~ 
+@31 = ~Bonjour... Je vous ai donné la clef magique, non ? Oh, je suis si inquiet pour mon frère que je ne sais plus où j'habite. Allez voir la secte à l'Est d'ici. Allez trouver mon frère. J'aimerais pouvoir vous aider... Je ne sers pas à grand-chose face au danger. Mais je sais qu'ils manigancent quelque chose.~ 
 @32 = ~My brother is dead... I don't know what to do...~ 
 
 /*Il est mort... je ne sais pas quoi faire...*/
