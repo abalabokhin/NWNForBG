@@ -40,7 +40,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 0.4
   SAY @10
-  IF ~~ THEN DO ~ApplySpell(LastTalkedToBy(Myself),CLERIC_BLESS)~ EXIT
+  IF ~~ THEN DO ~ForceSpellRes("NWSP101",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 5 // from: 0.5
