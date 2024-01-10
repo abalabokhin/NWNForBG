@@ -7,7 +7,6 @@ TODO:
 -ToF complains on a spell (try to ionstall tof after NWN)
 *. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some item names
 *. Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
--In area NW1220 you can use the stairs/secret passage on the wall to the west of the area BEFORE actually finding the secret wall, making it seem like you're just entering the wall.
 -The Dancing Broadsword that you can summon with the Dancing Long Sword +3 clears the fog of war like a familiar or a wizard eye, is that supposed to happen?
 -Weird balance, not a bug: out of all the weapons you can craft with adamantite, only the Harbinger King Greatsword and the Sword Saint Katana get +1 attack per round. Isn't that a bit odd? They're strictly MUCH better than the rest (and, in fact, the Sword Saint Katana is one of the most OP weapons in all the infinity games. Using two of them turns a Bard into a Fighter with the insane THAC0 bonus and extra attacks). The other two-handed weapon (the Stonefire "great axe") doesn't get that and neither do the other one-handed weapons (though the Desert Wind Scimitar at least gets a cast of Sunfire...).
 -The quest "Beggar's Nest: Undead Infestation" doesn't show up as finished, despite the fact I already cleared the undead infestation (killed the Yuan-ti etc.).
@@ -21,7 +20,6 @@ TODO:
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
 *. add more music, eg for Aribeth battle from Kyros
-*. Check for iwdfication mod spells and patch resources if spells are already in the game from Connelly
 *. Может быть Шарлин сделать подклассом барда - Jester, а то она бесполезна :) и хоббита тоже подклассом вора -
 Swashbuckler.
 *. добавить наполненности карты - типа красивое новое поместье, но нет ни одного сундука... + в куче мест
