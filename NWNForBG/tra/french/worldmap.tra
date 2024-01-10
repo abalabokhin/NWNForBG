@@ -1,14 +1,14 @@
 //NWN Areas
-@NW1100 = "Docks"
-@NW1000 = "Core"
-@NW1200 = "Beggar's###Nest"
-@NW1400 = "Blacklake"
-@NW1300 = "Peninsula"
+@NW1100 = "Quais"
+@NW1000 = "Cœur###de###Padhiver"
+@NW1200 = "Nid###des###Mendiants"
+@NW1400 = "Lacnoir"
+@NW1300 = "Péninsule"
 
-@NW2600 = "Charwood"
-@NW2601 = "Charwood"
-@NW2500 = "Dark###Wood"
-@NW2510 = "Dark###Wood"
+@NW2600 = "Boisroussi"
+@NW2601 = "Boisroussi"
+@NW2500 = "Boisombre"
+@NW2510 = "Boisombre" // Boisnuit ?
 @NW2400 = "Farms"
 @NW2900 = "Heart###of###the###Forest"
 @NW2300 = "South###Road"
@@ -20,10 +20,10 @@
 @NW2200 = "Green###Grifon"
 
 @NW2E55 = "Host###Tower"
-@NW2E31 = "Docks"
+@NW2E31 = "Quais"
 
-@NW3100 = "Ford###Ilkard"
+@NW3100 = "Fort###Ilkard"
 @NW3200 = "Elk###Tribe###Keep"
 @NW3300 = "Ruins"
 
-@NW4000 = "Suburbs"
+@NW4000 = "Faubourgs"
