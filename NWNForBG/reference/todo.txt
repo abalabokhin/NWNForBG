@@ -3,18 +3,12 @@ TODO:
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
--video has a horizontal green line, fix it somehow
--ToF complains on a spell (try to ionstall tof after NWN)
+*.video has a horizontal green line, fix it somehow
+*.ToF complains on a spell (try to ionstall tof after NWN) - still trying to reproduce - ToF is very slow to install
 *. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some item names
-*. Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
--The Dancing Broadsword that you can summon with the Dancing Long Sword +3 clears the fog of war like a familiar or a wizard eye, is that supposed to happen?
--Weird balance, not a bug: out of all the weapons you can craft with adamantite, only the Harbinger King Greatsword and the Sword Saint Katana get +1 attack per round. Isn't that a bit odd? They're strictly MUCH better than the rest (and, in fact, the Sword Saint Katana is one of the most OP weapons in all the infinity games. Using two of them turns a Bard into a Fighter with the insane THAC0 bonus and extra attacks). The other two-handed weapon (the Stonefire "great axe") doesn't get that and neither do the other one-handed weapons (though the Desert Wind Scimitar at least gets a cast of Sunfire...).
--The quest "Beggar's Nest: Undead Infestation" doesn't show up as finished, despite the fact I already cleared the undead infestation (killed the Yuan-ti etc.).
--If you open the door in area NW1110 (Seedy Tavern) with the key that Cristov gave you, you can't actually enter and the "Cook" has no reaction to you opening it. You NEED to talk to the Cook and only then does the area transition work, which is bizarre (as the door is open, why can't I walk through it?).
--Some of the area transitions are preeeeeetty hard to see. For example, the one from the Beggar's Nest Crypt to the Graveyard and the stairs to go down from area NW1112 (the Silver Sails entrance hall). There should probably be map markers for those, cause I had to check out the areas in NearInfinity to find those area transitions!!
--Bug? The permanent Fireshield: Blue effect from the Ice Cloak has no visual whatsoever (it does work, but the fireshield doesn't show). And it also stacks with regular Fireshield: Blue. Is that intentional?
--The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand), the same with priest at area NW1300.
--Web traps (NWWI215N.SPL) found in area NW1034 (spider area below Helmite Hold) web you with NO SAVE. That's craaaaazy. Sure, I'm adept at finding cheese, I could deal with that, but I think a lot of people are not gonna be able to, cause it really is a bit bs. For most players, it's probably either: you have free action equipment/spells or you die. And considering you can't leave that place to get any free action equipment/spells, that's even worse!
+*.The quest "Beggar's Nest: Undead Infestation" doesn't show up as finished, despite the fact I already cleared the undead infestation (killed the Yuan-ti etc.). - need more details on this
+*.If you open the door in area NW1110 (Seedy Tavern) with the key that Cristov gave you, you can't actually enter and the "Cook" has no reaction to you opening it. You NEED to talk to the Cook and only then does the area transition work, which is bizarre (as the door is open, why can't I walk through it?). - it should work this way, but there is another bag to fix...
+*.The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand), the same with priest at area NW1300. - fix it
 
 
 Новый контент:
@@ -23,7 +17,8 @@ TODO:
 *. Может быть Шарлин сделать подклассом барда - Jester, а то она бесполезна :) и хоббита тоже подклассом вора -
 Swashbuckler.
 *. добавить наполненности карты - типа красивое новое поместье, но нет ни одного сундука... + в куче мест
-просится объект на карте рассмотреть через ? - а этого нет. Особенно в красивых новых поместьях...
+просится объект на карте рассмотреть через ? - а этого нет. Особенно в красивых новых поместьях... + сделать
+пометки на картах переходы - по крайней мере на кладбище, а то там фиг что найдешь...
 *. Сделать квестовые записи для квестов: 1. Куртизанка из Маски 2. Три бездельника в доках просят какойто фамильный
 амулет Мастерионов 3. Квесты спутников 4. В гнезде нищих мужик в храме хельма просит найти брата - бертран 5.
 У входа в гнездо нищих стоит стражник (Эргус) и жалуется что его человек пропал (Уолтерс). 6. В портовом
@@ -41,6 +36,3 @@ Swashbuckler.
 5. воровство на Ярмарке Мечей
 6. все говорят "лорд", вместо мой лорд - режет слух
 4. Спутники никак не комментируют твои действия
-
-Ценная информация - почему-то если в заклинании стоит эффект "Replace self" и там Timing mode -
-Delay/Permanent, его надо заменить на Instant/Limited, чтобы появлялось существо.
