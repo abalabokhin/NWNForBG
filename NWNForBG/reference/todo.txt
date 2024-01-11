@@ -1,17 +1,28 @@
 TODO:
 
+*.ToF complains on a spell(spells) (if installing tof after NWN) - fix it
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
 *. video has a horizontal green line, fix it somehow - скорее всего поправлено - проверить. Еще перекодировать
 русские ролики для ЕЕ в 800x600 - взять из оригинальных NWN Diamond Edition
-*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some item names + fix error from JohnBob in items
-*. сделать катану +3
-*. проверить ошибки в предметах от джон боба
 *. fix bug with openning Oleff chest with "Knock" again
-
-*.ToF complains on a spell(spells) (if installing tof after NWN) - install iwdfication version of new spells and check how it works with tof.
+*. fix error from JohnBob in items + чекнуть их описания
+NWADISEE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWADISEE.ITM : Opcode 221: Wrong parameter2 : 21
+NWAMUL02.ITM : Opcode 166: Unknown type 3.
+NWANTIDE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWANTIDE.ITM : Opcode 221: Wrong parameter2 : 21
+NWBELT01.ITM : Opcode 178 : No change detected : Value = Value + 0.
+NWCLCK2.ITM : Opcode 36: No change detected: Value = Value + 0.
+NWDSPO01.ITM : Opcode 179 : No change detected : Value = Value + 0.
+NWPHILTR.ITM : Opcode 233: Invalid Type 4 (89-134 expected)
+NWPHILTR.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWPHILTR.ITM : Opcode 221: Wrong parameter2 : 21
+NWPLATN1.ITM : Opcode 166: Unknown type 3.
+NWSTAF04.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
+NWSW1H73.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
