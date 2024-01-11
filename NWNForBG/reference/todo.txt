@@ -4,7 +4,8 @@ TODO:
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*.video has a horizontal green line, fix it somehow
+*.video has a horizontal green line, fix it somehow - скорее всего поправлено - проверить. Еще перекодировать
+русские ролики для ЕЕ в 800x600 - взять из оригинальных NWN Diamond Edition
 *.ToF complains on a spell (after installing tof after NWN) - install iwdfication version of new spells and check how it works with tof.
 *. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some item names + fix error from JohnBob in items
 *. сделать катану +3
