@@ -4,6 +4,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("ABCD23","MYAREA",1)
+		ContainerEnable("Chest1",TRUE)
 		Unlock("Chest1")
 END
 
