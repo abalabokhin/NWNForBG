@@ -52,7 +52,7 @@ The mod repeats, with some minor modifications, the plot of Neverwinter Nights g
 Compatibility
 -------------
 
-Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there.
+Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. However, some of the new spells might have copnflicts with some Talents of Faerûn mod components as for Beta 3 version.
 
 Installation
 -------------
