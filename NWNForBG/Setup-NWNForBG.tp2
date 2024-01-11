@@ -341,20 +341,12 @@ END
 
 //Videos
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  ACTION_IF (DIRECTORY_EXISTS ~NWNForBG/movies_ee/%LANGUAGE%~) BEGIN
-    COPY ~NWNForBG/movies_ee/%LANGUAGE%~ ~movies~
-  END ELSE BEGIN
-    COPY ~NWNForBG/movies_ee/english~ ~movies~
-  END
+  COPY ~NWNForBG/movies_ee/english~ ~movies~
+  COPY ~NWNForBG/movies_ee/%LANGUAGE%~ ~movies~
 END ELSE BEGIN
-  ACTION_IF (DIRECTORY_EXISTS ~NWNForBG/movies/%LANGUAGE%~) BEGIN
-    MAKE_BIFF ~NWNMOVIE~ BEGIN
-      ~NWNForBG/movies/%LANGUAGE%~ ~.*\.MVE~
-    END
-  END ELSE BEGIN
-    MAKE_BIFF ~NWNMOVIE~ BEGIN
-      ~NWNForBG/movies/english~ ~.*\.MVE~
-    END
+  MAKE_BIFF ~NWNMOVIE~ BEGIN
+    ~NWNForBG/movies/english~ ~.*\.MVE~
+	~NWNForBG/movies/%LANGUAGE%~ ~.*\.MVE~
   END
 END
 
@@ -5667,7 +5659,20 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 //Sounds
-LAF HANDLE_AUDIO END
+// LAF HANDLE_AUDIO END
+
+ACTION_BASH_FOR ~NWNForBG/Audio/english~ ~^.+\.ogg$~ BEGIN
+	ACTION_IF NOT FILE_EXISTS ~NWNForBG/Audio/%LANGUAGE%/%BASH_FOR_FILE%~ BEGIN
+		COPY ~%BASH_FOR_FILESPEC%~ ~NWNForBG/Audio/%LANGUAGE%~
+	END
+END
+
+LAF HANDLE_AUDIO
+	STR_VAR
+	audio_path = EVAL ~NWNForBG/Audio/%LANGUAGE%~
+	oggdec_path = ~NWNForBG/Audio~
+END
+
 
 INCLUDE ~NWNForBG/lib/gw_functions.tpa~
 

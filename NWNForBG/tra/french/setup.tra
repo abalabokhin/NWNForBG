@@ -1,14 +1,11 @@
 @0 = ~NWN For BG~
-/*NWN, Morag*/
-@1 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~/*Utilisable uniquement par : Impossible d'atteindre la cible !*/
+@1 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 @2 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-/*Rien à faire ! Vous avez joué, et perdu !*/
-@10 = ~Incorrect game type. NWN For BG mod is only for BG2+ToB, BGT, BG2EE or EET games~/*J'apprécie. Combien coûter si vous travailler pour moi ?*/
-@20 = ~INFINITYANIMATIONS is not installed, install it before NWN For BG.~/*Le jeu n'est pas installé. Vous devez installer le jeu.*/
-@1121 = ~ ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~/*Aucun fichier n'a été installé.*/
-@1122 = ~ ==> Animation %inifile%.ini file not installed.~/*1 fichier invalide a été trouvé et n'a pas été installé.*/
+@10 = ~Incorrect game type. NWN For BG mod is only for BG2+ToB, BGT, BG2EE or EET games~
+@20 = ~INFINITYANIMATIONS is not installed, install it before NWN For BG.~
+@1121 = ~ ==> Animation %inifile%.ini file installed as 0x%GW_nv_ini%.ini~
+@1122 = ~ ==> Animation %inifile%.ini file not installed.~
 @1141 = ~!!! WARNING : No free creature animation slot found for %GWNewAnim% !!!~
-/*Pourquoi ne pouvez-vous pas trouver la pierre pour eux ? Ah !*/
 @74135 = ~Paysanne~
 @74188 = ~Babau~/*Barax*/
 @74524 = ~Telekinesis~/*Vigilance*/
@@ -18,25 +15,30 @@
 @86241 = ~Ring of Wizardry: Evermemory
 Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical rings that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
 
-STATISTICS:
+PARAMÈTRES : 
 
-Equipped abilities:
-- Can memorize double the amount of 1st-level wizard spells
+Capacités d'équipement : 
+- Double le nombre de sorts profanes mémorisables de 1er niveau
 
-Weight: 0
+Poids : 0
 
 Only Usable by:
  Mage~/*On supposait que je succèderais à mes parents dans les arts magiques. Oui, elle a dû sentir la présence du cristal dans la région et elle a pensé que nous l'avions. C'est la seule explication possible. Le coeur d'un Ombrecerf... une des créatures les plus singulières des royaumes. Ces saletés de loups ont presque eu notre peau, même s'ils ne se sont attaqués qu'au bétail.*/
 @86242 = ~Two-handed Sword +3: "The World's Edge"
 This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
 
-THAC0: +3
-Damage: 1d10+3
-Damage type: slashing
-Weight: 9
-Speed Factor: 7
-Proficiency Type: Two-handed Sword
-Type: Two-handed
+PARAMÈTRES : 
+
+TAC0 : +3
+Dégâts : 1d10 +3 (Tranchant)
+Facteur de vitesse : 7
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Nécessite : 
+- 13 en Force
+
+Poids : 9
 
 Not Usable By:
  Druid
@@ -1290,7 +1292,7 @@ Type de dégâts : perforant
 Taille de l'arme : P
 Dons requis : Arme courante, Druide, Roublard*/
 @102436 = ~Avista~
-@102437 = ~Sentinel +4~/*Hache d'armes (+1) Sentinelle*/
+@102437 = ~La Sentinelle~/*Hache d'armes (+1) Sentinelle*/
 @102438 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some adamantite ore to it. The result is an axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
@@ -1316,7 +1318,7 @@ Not Usable By:
  Mage
  Thief~/*J'aurais besoin d'informations sur les différents secteurs de Padhiver. Cet homme donne des signes d'impatience. Il a tout l'air d'être venu ici ce soir dans l'espoir qu'il s'y passerait quelque chose. On supposait que je succèderais à mes parents dans les arts magiques. Puisque le fait de pouvoir s'adapter est une question de vie ou de mort dans l'arène, le gladiateur maîtrise différentes capacités de combat. Tous les gladiateurs savent utiliser deux armes en même temps.
 Ces archétypes n'octroient aucune capacité spéciale à votre personnage. Ils ne servent qu'à sélectionner à votre place vos compétences et vos dons.*/
-@102439 = ~Dragon Horror +4~/*Armure de dragon*/
+@102439 = ~Hache Tranchedragon~/*Armure de dragon*/
 @102440 = ~This unique axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted axe by adding some dragon blood to it. The result is an axe with amazing properties. This axe is just a dragons' nightmare. The wielder of this axe can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
 
 STATISTICS:
@@ -1852,7 +1854,7 @@ Not Usable By:
 Type de dégâts : perforant
 Taille de l'arme : Min
 Dons requis : Arme courante, Druide, Magicien, Moine, Roublard*/
-@102562 = ~Gladiator's Club~/*Gourdin (+1) de Gladiateur*/
+@102562 = ~Gourdin du Gladiateur~/*Gourdin (+1) de Gladiateur*/
 @102563 = ~This club is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of an ordinary club is a mystery, all that is known is that the blacksmith needed Ironwood to make it. The Gladiator's Club is so strong that it can smash into dust any golem up to level 20 inclusive. However, any other creature struck with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1875,7 +1877,7 @@ Requirements: 5 Strength
 
 Not Usable By:
  Mage~/*J'ai besoin d'informations sur les différents secteurs de Padhiver. J'ai un vieil ami qui est sergent et qui est en poste aux portes de la ville. Je l'ai convaincu que le fléau n'était plus une menace, et il a accepté de laisser mes agents entrer et sortir de la ville pour me rendre service. Toute créature prise dans la zone d'effet d'une décharge mentale doit réussir un jet de Volonté (DD 17) ou rester sonnée pendant 3d4 rounds. Les armes telles que celle-ci protègent contre les attaques magiques, tout en permettant à leur propriétaire de concevoir plus facilement de nouveaux sorts et en lui faisant prendre davantage conscience des dangers qu'il encourt. De longues recherches ont permis de déterminer qu'elles venaient de Néthéril, mais on ignore tout de leur créateur.*/
-@102564 = ~Ironwood Mace~/*Masse d'armes double (+1) de bois de fer*/
+@102564 = ~Masse de bois de fer~/*Masse d'armes double (+1) de bois de fer*/
 @102565 = ~This mace was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Ironwood Mace is so strong that it can crush any golem up to and including level 20 into dust. However, any other creature struck by this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1901,7 +1903,7 @@ Not Usable By:
  Druid
  Monk
 Beastmaster~/*Ma maman dit que tout le monde est mort, à Padhiver. Il m'a arraché la baguette et l'a brisée... et tout s'est arrêté. Il a hurlé, et hurlé. Il m'a pratiquement jeté hors de la tour, et m'a dit de ne jamais plus revenir. Toute créature prise dans la zone d'effet d'une décharge mentale doit réussir un jet de Volonté (DD 17) ou rester sonnée pendant 3d4 rounds. Les armes telles que celle-ci protègent contre les attaques magiques, tout en permettant à leur propriétaire de concevoir plus facilement de nouveaux sorts et en lui faisant prendre davantage conscience des dangers qu'il encourt. De longues recherches ont permis de déterminer qu'elles venaient de Néthéril, mais on ignore tout de leur créateur.*/
-@102566 = ~Foundation Flail~/*Contresort*/
+@102566 = ~Fléau de la Fondation~
 @102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
@@ -1925,7 +1927,7 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~/*Le fléau... il jubilait à l'idée qu'on l'eût envoyé à Padhiver pour le propager ! Ses maîtres souhaitaient qu'il dure aussi longtemps que possible ! Ils voulaient que nous mourrions tous... Le golem regarde droit devant lui et ne semble pas remarquer votre présence. Toute créature prise dans la zone d'effet d'une décharge mentale doit réussir un jet de Volonté (DD 17) ou rester sonnée pendant 3d4 rounds. La propriété de la secte a été explorée de fond en comble, ce qui a permis de découvrir le repaire s'étendant dans son sous-sol. Sans doute est-ce depuis ce Dédale des Damnés que Gulnan crée et dirige son armée de morts-vivants. Il est temps de mettre un terme aux ravages dont elle est responsable dans le Nid des Mendiants.*/
-@102568 = ~Mace of Repose +4~/*Chance des héros*/
+@102568 = ~Masse du repos éternel~/*Chance des héros*/
 @102569 = ~This mace is made by the finest blacksmiths in Neverwinter. The gods themselves must have helped the blacksmith in his work. He was able to forge a mace of repose from an unremarkable mace, but he used the special holy water we found. This mace is a terrible dream for all evil forces, it can destroy the undead with a single blow and causes a lot of additional damage to all demonic creatures. To be fair, it cannot destroy higher level undead (above level 20).
 
 STATISTICS:
@@ -1949,7 +1951,7 @@ Not Usable By:
  Monk~/*Quelle est la situation à Padhiver ? La même chose qu'aux autres Gars. Drawl a fait un pacte pour devenir... ce qu'il est devenu, et les autres ont été tués. Cette masse d'armes dispose d'un bonus d'altération à l'attaque et aux dégâts, mais aucune marque n'indique sa provenance ni l'identité de son créateur. Type de don : ClasseCondition : Archer-mage niveau 8
 Fonctionnement : au lieu d'effectuer une attaque normale, l'Archer-mage peut, une fois par jour, décocher une flèche à chaque ennemi à sa portée, jusqu'à un maximum d'adversaires égal au niveau de l'archer.
 Utilisation : doit être sélectionné.*/
-@102570 = ~Drone Morning Star~/*Morgenstern rouillée*/
+@102570 = ~Morgenstern de bourdonnement~/*Morgenstern rouillée*/
 @102571 = ~This unusual morning star is made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple morning star is a mystery, all we know is that the blacksmith needed magic dust to make it. Drone Morning Star is simply filled with the magic of fairies, it is able to blind enemies, make invisible its owner and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -2097,7 +2099,7 @@ Charge abilities:
 Usable By:
  Mage
  Bard~/*"Alors je ne comprends pas comment quelqu'un pourrait avoir envie de descendre ici. Pourquoi risquer votre vie dans un donjon conçu précisément pour vous tuer?" Les esclaves entrent dans l'arène ; le combat va commencer.*/
-@102607 = ~Scales of Truth~/*Armure d'écailles du juste +1*/
+@102607 = ~Armure d'écailles du juste~/*Armure d'écailles du juste +1*/
 @102608 = ~This remarkable chain mail is made by the finest blacksmiths in Neverwinter. In some unfathomable way, they managed to combine the incompatible - enchanted armor and special holy water. The result is a unique undead armor that protects the wearer from vampires, preventing them from sucking your life energy. Three times a day you can activate its special properties to repel the undead that surround you. It will also protect you from certain necromancer spells such as Wail of the Banshee, Finger of Death, Death Spell, or Abi-Dalzim's Horrid Wilting.
 
 STATISTICS:
@@ -2679,7 +2681,7 @@ Et dire qu'il m'a envoyé ici chercher un artefact tandis qu'il envoyait mes frèr
 @102824 = ~Come out spy... I can feel your presence~/*Approchez, que je vous voie mieux.*/
 @102825 = ~Gurak Fouailletripe~
 @102826 = ~Grande hache~
-@102827 = ~Stonefire Great Axe~/*Grande hache (+1) de Pierrefeu*/
+@102827 = ~Pierre à feu~/*Grande hache (+1) de Pierrefeu*/
 @102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamantite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
@@ -2705,7 +2707,7 @@ Not Usable By:
  Mage
  Thief~/*J'aurais besoin d'informations sur les différents secteurs de Padhiver. Cet homme donne des signes d'impatience. Il a tout l'air d'être venu ici ce soir dans l'espoir qu'il s'y passerait quelque chose. On supposait que je succèderais à mes parents dans les arts magiques. Puisque le fait de pouvoir s'adapter est une question de vie ou de mort dans l'arène, le gladiateur maîtrise différentes capacités de combat. Tous les gladiateurs savent utiliser deux armes en même temps.
 Ces archétypes n'octroient aucune capacité spéciale à votre personnage. Ils ne servent qu'à sélectionner à votre place vos compétences et vos dons.*/
-@102829 = ~Ravager Halberd~/*Hallebarde rouillée*/
+@102829 = ~Hallebarde de la dévastation~/*Hallebarde rouillée*/
 @102830 = ~This unique halberd is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some dragon blood to it. The result is a halberd with amazing properties. This weapon is just a dragons' nightmare. The wielder of this halberd can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
 
 STATISTICS:
@@ -2734,7 +2736,7 @@ Not Usable By:
  Mage
  Thief~/*J'ai besoin d'informations sur les différents secteurs de Padhiver. Quoi ? Je ne vais pas laisser un lézard bouffi vivant dans une grotte me traiter de la sorte ! Cet individu a l'air en proie à une grande agitation. Nul doute que la peur du fléau lui a tourné les esprits. Utilisé contre une créature artificielle, cet objet libère un rayon dévastateur qui inflige à un golem 3d10+30 dégâts et le projette au sol pendant 1d4 rounds. 
 Chaque utilisation coûte une charge.*/
-@102831 = ~Storm Hammer~/*Armure des tempêtes*/
+@102831 = ~Marteau des Ouragans~/*Armure des tempêtes*/
 @102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Hammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -2761,7 +2763,7 @@ Not Usable By:
  Mage
  Thief
  Monk~/*Pourquoi rédigerais-je une fausse note au sujet d'une secte à Padhiver ? La baguette est un objet magique potentiel. Pouvoirs et effets varient grandement d'un modèle à l'autre. "Ce donjon est peuplé de toutes sortes de créatures puissantes et dangereuses. Si elles se regroupaient, la situation pourrait être extrêmement délicate, même pour un archimage comme Halaster." Ce sceptre long et mince se manie comme un bâton, et tout golem qu'il frappe a des chances d'être détruit d'un seul coup. Conçu pour affronter les créatures contraires à l'ordre naturel des choses, il est également plus efficace contre les Extérieurs, à savoir les créatures natives d'un plan autre que le Plan matériel primaire.*/
-@102833 = ~Rune Hammer +4~/*Marteau de guerre (+1) runique*/
+@102833 = ~Marteau runique~/*Marteau de guerre (+1) runique*/
 @102834 = ~This unique war hammer is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted war hammer by adding some adamantite ore to it. The result is an war hammer with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this hammer can handle it much better than any other hammer.
 
 STATISTICS:
@@ -3095,7 +3097,7 @@ Not Usable By:
  Kensai
  Shapeshifter
  Avenger~/*Ce brave Desther y m'a demandé de détruire l'pont avec mon boeuf juste après qu'y soit parti pour Padhiver... y m'a dit qu'ça m'protégerait des gens comme vous. Je me moque de vos pouvoirs. Maintenant qu'ils ont disparu, pourquoi ne pas me dire ce qui se passe ici ? Je suis désolé des dégâts que j'ai causés, mais vous ignorez comment cela s'est passé. Si vous voulez apprendre des choses sur Husher Clay, demandez-les lui directement. Il est là-bas, à l'autre bout de la salle. Autre chose ?*/
-@102995 = ~Whitebone Armor~/*Armure d'os blanc +2*/
+@102995 = ~Armure d'os blanc~/*Armure d'os blanc +2*/
 @102996 = ~This beautiful leather armor is crafted by the finest blacksmiths in Neverwinter. In an unfathomable way, they managed to combine the enchanted leather armor with the mysterious magical properties of the gargoyle skull. The result is a unique armor that allows you to face the most powerful sorcerers in battle. Once a day you can activate the special properties of the armor and gain immunity to Abjuration magic for three turns.
 
 STATISTICS:
@@ -4695,7 +4697,7 @@ Not Usable By:
  Druid
  Mage
  Thief~/*Cette porte est fermée par une barre située de l'autre côté. Ils sont d'accord pour que vous vendiez leur vin à condition que vous partagiez les bénéfices. Parce que je peux récupérer les objets qu'elle cherche. Recherchée pour sa belle couleur verte, l'émeraude est une pierre fragile qu'il convient de protéger des chocs et des changements de température qui émaillent souvent la vie d'aventurier. Elle est particulièrement appréciée par les riches et par les nobles.*/
-@103646 = ~Chromatic Armor~/*Création d'armure*/
+@103646 = ~Cuirasse arc-en-ciel~/*Création d'armure*/
 @103647 = ~This beautiful armor is crafted by the finest blacksmiths in Neverwinter. In some unfathomable way, they have managed to combine full armor and a mystical alloy called 'ritellium'. The result is a unique armor that allows you to stand up to the most powerful sorcerers and lichs in battle. Once per day, you can activate the armor's special properties and gain immunity to the most powerful death magic and Imprisonment for one hour.
 
 STATISTICS:
@@ -5260,7 +5262,7 @@ Not Usable By:
 Type de dégâts : tranchant
 Taille de l'arme : P
 Dons requis : Arme courante, Druide*/
-@103774 = ~Sword Saint Katana~/*Katana (+1) "Saint héritage"*/
+@103774 = ~Katana sacré~/*Katana (+1) "Saint héritage"*/
 @103775 = ~This unique katana is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted katana by adding some adamantite ore to it. The result is a katana with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this katana can wield it much better and faster than any other katana.
 
 STATISTICS:
@@ -5286,7 +5288,7 @@ Not Usable By:
  Cleric
  Mage~/*Cette terre est sacrée aux yeux de la tribu du Lion Noir. L'Alliance Seigneuriale devrait traiter les Uthgardt qui sont ici avec plus de respect. Je suis souillée... empoisonnée. On supposait que je succèderais à mes parents dans les arts magiques. Puisque le fait de pouvoir s'adapter est une question de vie ou de mort dans l'arène, le gladiateur maîtrise différentes capacités de combat. Tous les gladiateurs savent utiliser deux armes en même temps.
 Ces archétypes n'octroient aucune capacité spéciale à votre personnage. Ils ne servent qu'à sélectionner à votre place vos compétences et vos dons.*/
-@103776 = ~Astral Blade Long Sword~/*Epée longue (+1) "Epée astrale"*/
+@103776 = ~Épée longue astrale~
 @103777 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Long Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5314,7 +5316,7 @@ Not Usable By:
  Mage
  Monk~/*Cette épée magique a été prise sur le cadavre d'Aribeth. La baguette est un objet magique potentiel. Pouvoirs et effets varient grandement d'un modèle à l'autre. "Ce donjon est peuplé de toutes sortes de créatures puissantes et dangereuses. Si elles se regroupaient, la situation pourrait être extrêmement délicate, même pour un archimage comme Halaster." Puisque le fait de pouvoir s'adapter est une question de vie ou de mort dans l'arène, le gladiateur maîtrise différentes capacités de combat. Tous les gladiateurs savent utiliser deux armes en même temps.
 Ces archétypes n'octroient aucune capacité spéciale à votre personnage. Ils ne servent qu'à sélectionner à votre place vos compétences et vos dons.*/
-@103778 = ~Astral Blade Bastard Sword~/*Epée bâtarde rouillée*/
+@103778 = ~Épée bâtarde astrale~
 @103779 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a bastard sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Bastard Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5342,7 +5344,7 @@ Not Usable By:
  Mage
  Thief
  Monk~/*Cette épée magique a été prise sur le cadavre d'Aribeth. La boule à neige flotte sur le piédestal magique. Vous voyez de petites formes bouger dans la boule. "Ce donjon est peuplé de toutes sortes de créatures puissantes et dangereuses. Si elles se regroupaient, la situation pourrait être extrêmement délicate, même pour un archimage comme Halaster." Ce sceptre long et mince se manie comme un bâton, et tout golem qu'il frappe a des chances d'être détruit d'un seul coup. Conçu pour affronter les créatures contraires à l'ordre naturel des choses, il est également plus efficace contre les Extérieurs, à savoir les créatures natives d'un plan autre que le Plan matériel primaire.*/
-@103780 = ~Desert Wind Scimitar~/*Cimeterre (+1) "Vent du désert"*/
+@103780 = ~Vent du désert~
 @103781 = ~This unique scimitar is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted scimitar by adding some adamantite ore to it. The result is a scimitar with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this scimitar can wield it much better and faster than any other katana. In addition, the owner of this scimitar can burn his enemies with solar fire twice a day without harm to himself.
 
 STATISTICS:
@@ -5369,7 +5371,7 @@ Not Usable By:
  Cleric
  Mage~/*La mort des Anciens se ressentit dans tout Padhiver. Ayant perdu l'influence de Morag, l'armée d'envahisseurs se dispersa. Le siège fut levé. Je ne suis pas un expert, mais je pense qu'il n'y a qu'une seule explication : cette pestilence est d'origine magique, et non naturelle. Mutamin, le propriétaire des lieux, est un aventurier à la retraite. Il est très riche, d'après ce que j'ai entendu dire. Puisque le fait de pouvoir s'adapter est une question de vie ou de mort dans l'arène, le gladiateur maîtrise différentes capacités de combat. Tous les gladiateurs savent utiliser deux armes en même temps.
 Ces archétypes n'octroient aucune capacité spéciale à votre personnage. Ils ne servent qu'à sélectionner à votre place vos compétences et vos dons.*/
-@103782 = ~Feyduster Short Sword~/*Epée courte rouillée*/
+@103782 = ~Lame des fées~
 @103783 = ~This unusual short sword is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted short sword remains a mystery, it is only known that it required Fairy Dust. Feyduster Short Sword is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
