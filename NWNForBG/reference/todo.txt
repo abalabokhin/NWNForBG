@@ -1,16 +1,28 @@
 TODO:
 
+*.ToF complains on a spell(spells) (if installing tof after NWN) - fix it
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*.video has a horizontal green line, fix it somehow
-*.ToF complains on a spell (after installing tof after NWN) - install iwdfication version of new spells and check how it works with tof.
-*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some item names + fix error from JohnBob in items
-*. сделать катану +3
-*. The quest "Beggar's Nest: Undead Infestation" doesn't show up as finished, despite the fact I already cleared the undead infestation (killed the Yuan-ti etc.). - need more details on this
-*. Check if you can open "Knock" Oleff chest - fix it - you can, so fix it
-
+*. video has a horizontal green line, fix it somehow - скорее всего поправлено - проверить. Еще перекодировать
+русские ролики для ЕЕ в 800x600 - взять из оригинальных NWN Diamond Edition
+*. fix bug with openning Oleff chest with "Knock" again
+*. fix error from JohnBob in items + чекнуть их описания
+NWADISEE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWADISEE.ITM : Opcode 221: Wrong parameter2 : 21
+NWAMUL02.ITM : Opcode 166: Unknown type 3.
+NWANTIDE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWANTIDE.ITM : Opcode 221: Wrong parameter2 : 21
+NWBELT01.ITM : Opcode 178 : No change detected : Value = Value + 0.
+NWCLCK2.ITM : Opcode 36: No change detected: Value = Value + 0.
+NWDSPO01.ITM : Opcode 179 : No change detected : Value = Value + 0.
+NWPHILTR.ITM : Opcode 233: Invalid Type 4 (89-134 expected)
+NWPHILTR.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWPHILTR.ITM : Opcode 221: Wrong parameter2 : 21
+NWPLATN1.ITM : Opcode 166: Unknown type 3.
+NWSTAF04.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
+NWSW1H73.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
@@ -19,7 +31,8 @@ TODO:
 Swashbuckler.
 *. добавить наполненности карты - типа красивое новое поместье, но нет ни одного сундука... + в куче мест
 просится объект на карте рассмотреть через ? - а этого нет. Особенно в красивых новых поместьях... + сделать
-пометки на картах переходы - по крайней мере на кладбище, а то там фиг что найдешь...
+пометки на картах переходы - по крайней мере на кладбище, а то там фиг что найдешь... и у каналиазации в
+гнезде нищих
 *. Сделать квестовые записи для квестов: 1. Куртизанка из Маски 2. Три бездельника в доках просят какойто фамильный
 амулет Мастерионов 3. Квесты спутников 4. В гнезде нищих мужик в храме хельма просит найти брата - бертран 5.
 У входа в гнездо нищих стоит стражник (Эргус) и жалуется что его человек пропал (Уолтерс). 6. В портовом
