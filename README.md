@@ -42,7 +42,7 @@ Languages
 * Italian, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Spanish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
-* Chinese, partially taken from the original NWN texts with script, partially English (needs checking/translating)
+* Simplified Chinese partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
 
 Description:
 ------------
@@ -103,6 +103,7 @@ Version History
 ---------------
 In development:
 
+- Improved quality of English and Russian movies for EE version, added French movies (thanks to JohnBob).
 - Chinese translation were finished by Shuiyue Jushi, Youye and Lewis Liu.
 - Added auto genrated Chinese translation, thanks to MephistoSatanDevil and icecool for the provided NWN dialog.tlk.
 - Made some creatures a little weaker to be more ballanced, thanks to TheWildestMage
