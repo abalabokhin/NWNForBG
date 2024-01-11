@@ -1851,7 +1851,7 @@ Not Usable By:
 Tipo di Danno Base: Perforante
 Taglia dell'Arma: Minuscola
 Talenti Richiesti: Semplici, Druido, Monaco, Ladro o Mago*/
-@102562 = ~Gladiator's Club~/*Randello del Gladiatore +1*/
+@102562 = ~Gladiator's Club +4~/*Randello del Gladiatore +1*/
 @102563 = ~This club is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of an ordinary club is a mystery, all that is known is that the blacksmith needed Ironwood to make it. The Gladiator's Club is so strong that it can smash into dust any golem up to level 20 inclusive. However, any other creature struck with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1874,7 +1874,7 @@ Requirements: 5 Strength
 
 Not Usable By:
  Mage~/*Ho bisogno di informazioni sulle zone di Neverwinter. Un mio vecchio amico è un sergente che lavora preso i cancelli. L'ho convinto che l'epidemia non è più una minaccia e come favore personale permetterà a me e ai miei agenti di entrare in città. Tutti coloro che rimangono intrappolati nel cono del colpo mentale devono effettuare un tiro salvezza di volontà (CD 17), o restano storditi per 3d4 turni. Le armi di questo genere non soltanto difendono da attacchi magici, ma migliorano anche le capacità di chi le impugna nella ricerca di nuovi incantesimi e lo rendono più consapevole dei pericoli in agguato. Lunghe ricerche hanno fatto risalire la loro origine alla civiltà estinta di Nether, ma nulla si sa del loro artefice.*/
-@102564 = ~Ironwood Mace~/*Mazza di Legno di Ferro +1*/
+@102564 = ~Ironwood Mace +4~/*Mazza di Legno di Ferro +1*/
 @102565 = ~This mace was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Ironwood Mace is so strong that it can crush any golem up to and including level 20 into dust. However, any other creature struck by this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1900,7 +1900,7 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~/*La mamma dice che a Neverwinter sono tutti morti. Mi strappò la bacchetta e la ruppe... e questo fermò tutta quella baraonda. Oh, e mi urlò e urlò contro... praticamente mi gettò fuori dalla torre e mi disse di non tornare mai più. Tutti coloro che rimangono intrappolati nel cono del colpo mentale devono effettuare un tiro salvezza di volontà (CD 17), o restano storditi per 3d4 turni. Le armi di questo genere non soltanto difendono da attacchi magici, ma migliorano anche le capacità di chi le impugna nella ricerca di nuovi incantesimi e lo rendono più consapevole dei pericoli in agguato. Lunghe ricerche hanno fatto risalire la loro origine alla civiltà estinta di Nether, ma nulla si sa del loro artefice.*/
-@102566 = ~Foundation Flail~/*Controincantesimo*/
+@102566 = ~Foundation Flail +4~/*Controincantesimo*/
 @102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
@@ -1948,7 +1948,7 @@ Not Usable By:
  Monk~/*Com'è la situazione a Neverwinter? La stessa cosa che è accaduta a tutti i ragazzi. Drawl ha fatto qualche accordo per diventare...quello che è diventato e il resto di loro è stato ucciso. Questa mazza ha un bonus di potenziamento al colpire e ai danni, ma non porta il simbolo di alcun costruttore specifico. Tipo di talento: di classePrerequisito: 8 livelli come arciere arcano.
 Dettagli: a partire dall'8° livello, per una volta al giorno, al posto di un normale attacco, un arciere arcano può tirare una freccia su ciascun bersaglio che si trovi entro la gittata, fino a un numero massimo di bersagli pari al proprio livello di arciere arcano.
 Uso: selezionato.*/
-@102570 = ~Drone Morning Star~/*Morning star arrugginita*/
+@102570 = ~Drone Morning Star +4~/*Morning star arrugginita*/
 @102571 = ~This unusual morning star is made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple morning star is a mystery, all we know is that the blacksmith needed magic dust to make it. Drone Morning Star is simply filled with the magic of fairies, it is able to blind enemies, make invisible its owner and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -2133,7 +2133,7 @@ Silenzio, stanno tornando per essere uccisi un'altra volta. Sembra che più tempo
 @102616 = ~Hrusk~
 @102617 = ~Abitante del Porto~
 @102618 = ~Claudus~
-@102619 = ~Harbinger Kin Greatsword~/*Fratello dell'Araldo +1*/
+@102619 = ~Harbinger Kin Greatsword +4~/*Fratello dell'Araldo +1*/
 @102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamantite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
 
 STATISTICS:
@@ -2675,7 +2675,7 @@ E pensare che mi ha mandato qui per cercare un qualche antico artefatto, come ha
 @102824 = ~Come out spy... I can feel your presence~/*Avvicinati, così che ti possa vedere meglio.*/
 @102825 = ~Gurak Entrailspiller~
 @102826 = ~Ascia Bipenne~
-@102827 = ~Stonefire Great Axe~/*Ascia del Fuoco di Pietra +1*/
+@102827 = ~Stonefire Great Axe +4~/*Ascia del Fuoco di Pietra +1*/
 @102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamantite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
@@ -2700,7 +2700,7 @@ Not Usable By:
  Priest
  Mage
  Thief~/*Ho bisogno di alcune informazioni sulle zone di Neverwinter. Quest'uomo pare molto impaziente. Sembra che sia venuto qui stanotte aspettandosi che accadesse qualcosa. Si pensava che avrei seguito le orme dei miei genitori nelle arti magiche. Dal momento che la versatilità può fare la differenza tra la vita e la morte nell'arena, il gladiatore è un maestro in una vasta gamma di capacità da combattimento. Tutti i gladiatori vengono addestrati per usare due armi alla volta.*/
-@102829 = ~Ravager Halberd~/*Alabarda arrugginita*/
+@102829 = ~Ravager Halberd +4~/*Alabarda arrugginita*/
 @102830 = ~This unique halberd is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some dragon blood to it. The result is a halberd with amazing properties. This weapon is just a dragons' nightmare. The wielder of this halberd can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
 
 STATISTICS:
@@ -2729,7 +2729,7 @@ Not Usable By:
  Mage
  Thief~/*Ho bisogno di informazioni sulle zone di Neverwinter. Cooome? Devo essere giudicato da una lucertola troppo cresciuta che vive in una caverna? Non credo proprio! Questa persona è palesemente agitata. Dal suo aspetto stravolto, è facile presumere che l'epidemia abbia sconvolto la sua vita. Quando viene usato contro un costrutto, quest'oggetto emette un raggio devastante che danneggia il golem per 3d10+30 punti danno, oltre a bloccarlo al suolo per 1d4 turni.
 Ogni utilizzo consuma una singola carica dell'oggetto.*/
-@102831 = ~Storm Hammer~/*Armatura delle Tempeste*/
+@102831 = ~Storm Hammer +4~/*Armatura delle Tempeste*/
 @102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Hammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5022,7 +5022,7 @@ Not Usable By:
 @103736 = ~Ragazzo~
 @103737 = ~Soren~/*Conoscenze*/
 @103738 = ~Shield of Oblivion~/*Scudo della fede*/
-@103739 = ~Fey Spear~/*Lancia Fatata +1*/
+@103739 = ~Fey Spear +4~/*Lancia Fatata +1*/
 @103740 = ~This unusual trident-shaped spear is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted spear remains a mystery, it is only known that it required Fairy Dust. The trident is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -5283,7 +5283,7 @@ Not Usable By:
 Tipo di Danno Base: Tagliente
 Taglia dell'Arma: Piccola
 Talenti Richiesti: Semplici o Druido*/
-@103774 = ~Sword Saint Katana~/*Spada della Santa Eredità +1*/
+@103774 = ~Sword Saint Katana +4~/*Spada della Santa Eredità +1*/
 @103775 = ~This unique katana is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted katana by adding some adamantite ore to it. The result is a katana with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this katana can wield it much better and faster than any other katana.
 
 STATISTICS:
@@ -5308,7 +5308,7 @@ Not Usable By:
  Druid
  Cleric
  Mage~/*Questa terra è sacra alla tribù del Leone Nero. L'Alleanza dei Lord dovrebbe trattare con maggior rispetto gli Uthgardt. Sono contaminato... deve essere veleno. Si pensava che avrei seguito le orme dei miei genitori nelle arti magiche. Dal momento che la versatilità può fare la differenza tra la vita e la morte nell'arena, il gladiatore è un maestro in una vasta gamma di capacità da combattimento. Tutti i gladiatori vengono addestrati per usare due armi alla volta.*/
-@103776 = ~Astral Blade Long Sword~/*Lama Astrale +1*/
+@103776 = ~Astral Blade Long Sword +4~/*Lama Astrale +1*/
 @103777 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Long Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5335,7 +5335,7 @@ Not Usable By:
  Priest
  Mage
  Monk~/*Questa spada magica è stata presa dal cadavere di Aribeth. La bacchetta è in pratica un oggetto magico a cariche. I suoi poteri ed effetti variano considerevolmente. "Questo sotterraneo è pieno di ogni sorta di creature potenti e pericolose. Se si fossero alleate avrebbero potuto costituire una minaccia, anche per un arcimago come Halaster." Dal momento che la versatilità può fare la differenza tra la vita e la morte nell'arena, il gladiatore è un maestro in una vasta gamma di capacità da combattimento. Tutti i gladiatori vengono addestrati per usare due armi alla volta.*/
-@103778 = ~Astral Blade Bastard Sword~/*Spada bastarda arrugginita*/
+@103778 = ~Astral Blade Bastard Sword +4~/*Spada bastarda arrugginita*/
 @103779 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a bastard sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Bastard Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5363,7 +5363,7 @@ Not Usable By:
  Mage
  Thief
  Monk~/*Questa spada magica è stata presa dal cadavere di Aribeth. Il globo di neve fluttua sopra un piedistallo magico. All'interno del globo di neve vedi delle piccole figure che si muovono. "Questo sotterraneo è pieno di ogni sorta di creature potenti e pericolose. Se si fossero alleate avrebbero potuto costituire una minaccia, anche per un arcimago come Halaster." Queste verghe lunghe e sottili possono essere impugnate come dei bastoni e ogni golem colpito con esse subisce una buona probabilità di essere distrutto completamente e istantaneamente. Progettati evidentemente per combattere il soprannaturale, questi oggetti sembrano ancora più potenti contro gli esterni al Primo Piano Materiale.*/
-@103780 = ~Desert Wind Scimitar~/*Vento del Deserto +1*/
+@103780 = ~Desert Wind Scimitar +4~/*Vento del Deserto +1*/
 @103781 = ~This unique scimitar is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted scimitar by adding some adamantite ore to it. The result is a scimitar with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this scimitar can wield it much better and faster than any other katana. In addition, the owner of this scimitar can burn his enemies with solar fire twice a day without harm to himself.
 
 STATISTICS:
@@ -5389,7 +5389,7 @@ Type: One-handed
 Not Usable By:
  Cleric
  Mage~/*La morte degli antichi è echeggiata in tutta Neverwinter. Privato dell'influenza di Morag, l'esercito degli invasori ha iniziato a vacillare. Presto le sorti dell'assedio si sono invertite. Non sono un esperto, ma i fatti dimostrano, per come la vedo io, una sola spiegazione logica: la fonte dell'epidemia è magica, non naturale. Mutamin, il proprietario di questo posto, è a sua volta un avventuriero a riposo. È molto ricco, o almeno così si dice in giro. Dal momento che la versatilità può fare la differenza tra la vita e la morte nell'arena, il gladiatore è un maestro in una vasta gamma di capacità da combattimento. Tutti i gladiatori vengono addestrati per usare due armi alla volta.*/
-@103782 = ~Feyduster Short Sword~/*Spada corta arrugginita*/
+@103782 = ~Feyduster Short Sword +4~/*Spada corta arrugginita*/
 @103783 = ~This unusual short sword is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted short sword remains a mystery, it is only known that it required Fairy Dust. Feyduster Short Sword is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:

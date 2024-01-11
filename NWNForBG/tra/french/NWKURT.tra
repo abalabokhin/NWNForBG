@@ -13,10 +13,10 @@
 @12 = ~Ainsi vous vous êtes déjà adressé à Baram... Et ce petit rat a eu la même idée que moi. C'est bien cela, n'est-ce pas ? Eh bien, étranger, que comptez-vous faire ?~
 @13 = ~J'espérais que vous me feriez une meilleure offre.~
 @14 = ~Rien du tout.~
-@15 = ~Dans ce cas, soit vous faites montre de bon sens, soit Baram jette son argent par les fenêtres. Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j’estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
+@15 = ~Dans ce cas, soit vous faites montre de bon sens, soit Baram jette son argent par les fenêtres. Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j'estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
 @16 = ~Ça alors ! J'ai du mal à le croire... Le haut capitaine Suljack était censé être mort, lui aussi. Mais je sais de source sûre qu'il est bel et bien vivant. Vous n'auriez pas sa tête sur vous, des fois ? Voilà une preuve qui me convaincrait...~ 
 @17 = ~Si, je l'ai là.~
-@18 = ~Uh. I don't have the head.~/*Utiliser Je n’ai pas assez.*/
+@18 = ~Uh. I don't have the head.~/*Utiliser Je n'ai pas assez.*/
 @19 = ~Je vous répondrais volontiers... si seulement vous acceptiez de terrasser Baram.~
 @20 = ~Ah ! quel dommage, vraiment. Revenez me voir si vous changez d'avis. Des fois que vous ayez dans l'idée de franchir cette herse, je vous le déconseille vivement.~ 
 @21 = ~Pour quelle raison ? Mais cela ne me regarde pas, me direz-vous. Si vous tenez vraiment à mourir, c'est votre affaire. Néanmoins, je ne vais pas me mettre la Confrérie à dos en vous remettant mon laissez-passer. Mais Baram a le même. Acceptez mon offre et vous pourrez prendre le sien, si vous voulez.~ 
@@ -35,7 +35,7 @@
 @34 = ~1 500 pièces d'or.~
 @35 = ~2 000 pièces d'or.~
 @36 = ~Vous oublier ça. Moi pas intéressé.~
-@37 = ~Ha ! Je savais bien que vous ne tiendriez jamais parole ! Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j’estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
+@37 = ~Ha ! Je savais bien que vous ne tiendriez jamais parole ! Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j'estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
 @38 = ~Vraiment ? Montrez-la moi. Ah, oui, c'est bien lui. Je m'étais laissé dire qu'il était récemment passé de vie à trépas, mais je n'étais pas sûr que c'était vous qui l'aviez aidé à faire le grand voyage. Vous avez bien mérité votre récompense, étranger. Voici l'or et les objets convenus. Prenez-les et partez.~ 
 @39 = ~Et Evaine ?~
 @40 = ~Je veux également qu'Evaine soit libérée.~
@@ -54,17 +54,17 @@
 @53 = ~Je préfère parler d'autre chose.~
 @54 = ~Je voulais juste savoir, c'est tout.~
 @55 = ~Tiens, entendez-vous cela ? J'ai surtout l'impression que vous vous jouez de moi depuis le début. Eh bien, tant mieux pour vous, étranger. Quoi que vous puissiez avoir en tête, essayez d'entrer dans mon repaire et vous comprendrez que vous vous êtes lourdement trompé sur mon compte.~ 
-@56 = ~Très bien. J'espère voir la tête de Baram rapidement. Je préfère que notre accord reste secret, afin que Baram n'en entende pas parler. Cela signifie que mes hommes ne seront pas mis au courant, et donc qu'ils continueront à vous attaquer. Remarquez, ils ne semblent guère vous avoir gêné, jusqu'à présent... Ah, une dernière précision : malgré notre accord, si jamais vous tentez de pénétrer dans mon repaire, j’estimerai que vos intentions à mon égard sont hostiles. Mais cela ne risque pas d'arriver, n'est-ce pas ?~ 
+@56 = ~Très bien. J'espère voir la tête de Baram rapidement. Je préfère que notre accord reste secret, afin que Baram n'en entende pas parler. Cela signifie que mes hommes ne seront pas mis au courant, et donc qu'ils continueront à vous attaquer. Remarquez, ils ne semblent guère vous avoir gêné, jusqu'à présent... Ah, une dernière précision : malgré notre accord, si jamais vous tentez de pénétrer dans mon repaire, j'estimerai que vos intentions à mon égard sont hostiles. Mais cela ne risque pas d'arriver, n'est-ce pas ?~ 
 
 @58 = ~Vraiment ? Je puis vous en offrir davantage. Disons 1 500 pièces d'or. Sans oublier un ou deux objets magiques, histoire de vous faire une belle proposition. Tout cela contre la tête de Baram... Qu'en dites-vous ?~
 @59 = ~Vraiment ? Je puis vous en offrir davantage. Disons 1 500 pièces d'or. Sans oublier un ou deux objets magiques, histoire de vous faire une belle proposition. Tout cela contre la tête de Baram... Qu'en dites-vous ?~
 @60 = ~> Je suis certain qu'il ne vous paye pas autant. Cependant, je vous remettrai 1 500 pièces d'or et quelques objets magiques en échange de la tête de Baram. Qu'en dites-vous ?~
-@61 = ~Ha ! Je savais bien que vous ne tiendriez jamais parole ! Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j’estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
-@62 = ~Quoi, Evaine ? Oh, vous ne pensiez tout de même pas que j'allais la libérer, si ? Quel idiot vous faites ! C’est une source intarissable de plaisir et d’amusement... Et comme je suis le dernier haut capitaine, je peux faire ce qui me plaît. En conséquence, je la garde, merci beaucoup. Quant à nous, notre affaire est conclue. Filez, si vous ne voulez pas qu'il vous arrive malheur.~ 
+@61 = ~Ha ! Je savais bien que vous ne tiendriez jamais parole ! Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j'estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
+@62 = ~Quoi, Evaine ? Oh, vous ne pensiez tout de même pas que j'allais la libérer, si ? Quel idiot vous faites ! C'est une source intarissable de plaisir et d'amusement... Et comme je suis le dernier haut capitaine, je peux faire ce qui me plaît. En conséquence, je la garde, merci beaucoup. Quant à nous, notre affaire est conclue. Filez, si vous ne voulez pas qu'il vous arrive malheur.~ 
 @63 = ~Très bien, mais cette affaire n'est pas terminée.~
 @64 = ~I killed one High Captain... I can just as easily kill another.~/*Je viens de tuer un haut capitaine, Kurth... Je peux tout aussi bien en tuer un deuxième...*/
 @65 = ~Mais c'est abominable ! Vous ne vous en tirerez pas comme ça !~
-@66 = ~Voyons, cela ne faisait pas partie de notre accord... Et même dans le cas contraire, je doute que j'aurais accepté de la relâcher, compte tenu de la situation actuelle. C’est une source intarissable de plaisir et d’amusement... Et comme je suis le dernier haut capitaine, je peux faire ce qui me plaît. En conséquence, je la garde, merci beaucoup. Quant à nous, notre affaire est conclue. Filez, si vous ne voulez pas qu'il vous arrive malheur.~ 
+@66 = ~Voyons, cela ne faisait pas partie de notre accord... Et même dans le cas contraire, je doute que j'aurais accepté de la relâcher, compte tenu de la situation actuelle. C'est une source intarissable de plaisir et d'amusement... Et comme je suis le dernier haut capitaine, je peux faire ce qui me plaît. En conséquence, je la garde, merci beaucoup. Quant à nous, notre affaire est conclue. Filez, si vous ne voulez pas qu'il vous arrive malheur.~ 
 @67 = ~Tout à fait. J'ai fort à faire, maintenant que je suis le seul haut capitaine. Vous m'avez été fort utile, mais je n'ai plus besoin de vous, désormais. Débarrassez-moi le plancher.~
 @68 = ~Vraiment ? Ne soyez pas stupide. Je suis le dernier haut capitaine et j'ai de nombreux préparatifs à achever, alors faites preuve d'un minimum d'intelligence et disparaissez.~
 @69 = ~Peut-être avez-vous cru que je plaisantais lorsque je vous ai demandé la tête de Baram, mais j'étais on ne peut plus sérieux. Vous n'aurez pas votre récompense tant que vous ne me l'aurez pas apportée.~
@@ -76,7 +76,7 @@
 @75 = ~Et fille elfe ? Evaine ?~
 @76 = ~Je vous écoute.~
 @77 = ~Tiens, entendez-vous cela ? J'ai surtout l'impression que vous vous jouez de moi depuis le début. Eh bien, tant mieux pour vous, étranger. Quoi que vous puissiez avoir en tête, essayez d'entrer dans mon repaire et vous comprendrez que vous vous êtes lourdement trompé sur mon compte.~ 
-@78 = ~Très bien. J'espère voir la tête de Baram rapidement. Je préfère que notre accord reste secret, afin que Baram n'en entende pas parler. Cela signifie que mes hommes ne seront pas mis au courant, et donc qu'ils continueront à vous attaquer. Remarquez, ils ne semblent guère vous avoir gêné, jusqu'à présent... Ah, une dernière précision : malgré notre accord, si jamais vous tentez de pénétrer dans mon repaire, j’estimerai que vos intentions à mon égard sont hostiles. Mais cela ne risque pas d'arriver, n'est-ce pas ?~ 
+@78 = ~Très bien. J'espère voir la tête de Baram rapidement. Je préfère que notre accord reste secret, afin que Baram n'en entende pas parler. Cela signifie que mes hommes ne seront pas mis au courant, et donc qu'ils continueront à vous attaquer. Remarquez, ils ne semblent guère vous avoir gêné, jusqu'à présent... Ah, une dernière précision : malgré notre accord, si jamais vous tentez de pénétrer dans mon repaire, j'estimerai que vos intentions à mon égard sont hostiles. Mais cela ne risque pas d'arriver, n'est-ce pas ?~ 
 @79 = ~Ah ! voilà une question plutôt directe ! La plupart pensent tout bonnement que je souhaite gouverner la ville... d'autres que je suis devenu fou. Mais il y a bien plus, naturellement. Le haut capitaine survivant deviendra le chef de guerre de Luskan. Et ce chef, ce sera moi.~ 
 @80 = ~Pourquoi Luskan aurait-il besoin d'un chef de guerre ?~
 @81 = ~Pas vraiment. Récemment, une sanglante lutte de pouvoir s'y est déroulée et un nouvel Archimage profane a fait son apparition. J'ai rencontré ce mage, une fois. Il s'appelle Maugrim. C'est quelqu'un de très intéressant. Il a l'air de vouer une terrible haine à Padhiver...~ 

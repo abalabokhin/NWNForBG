@@ -1763,7 +1763,7 @@ Not Usable By:
  Monk
  Ranger
  Beastmaster~
-@102562 = ~Gladiator's Club~
+@102562 = ~Gladiator's Club +4~
 @102563 = ~This club is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of an ordinary club is a mystery, all that is known is that the blacksmith needed Ironwood to make it. The Gladiator's Club is so strong that it can smash into dust any golem up to level 20 inclusive. However, any other creature struck with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1786,7 +1786,7 @@ Requirements: 5 Strength
 
 Not Usable By:
  Mage~
-@102564 = ~Ironwood Mace~
+@102564 = ~Ironwood Mace +4~
 @102565 = ~This mace was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Ironwood Mace is so strong that it can crush any golem up to and including level 20 into dust. However, any other creature struck by this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1812,7 +1812,7 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~
-@102566 = ~Foundation Flail~
+@102566 = ~Foundation Flail +4~
 @102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
@@ -1858,7 +1858,7 @@ Not Usable By:
  Mage
  Druid
  Monk~
-@102570 = ~Drone Morning Star~
+@102570 = ~Drone Morning Star +4~
 @102571 = ~This unusual morning star is made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple morning star is a mystery, all we know is that the blacksmith needed magic dust to make it. Drone Morning Star is simply filled with the magic of fairies, it is able to blind enemies, make invisible its owner and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -2034,7 +2034,7 @@ Hush, here they come to be killed once more. The longer I stay here, the more I 
 @102616 = ~Hrusk~
 @102617 = ~Docks Citizen~
 @102618 = ~Claudus~
-@102619 = ~Harbinger Kin Greatsword~
+@102619 = ~Harbinger Kin Greatsword +4~
 @102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamantite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
 
 STATISTICS:
@@ -2557,7 +2557,7 @@ And to think he sent me here to search for some ancient artifact as he sent my b
 @102824 = ~Come out spy... I can feel your presence~
 @102825 = ~Gurak Entrailspiller~
 @102826 = ~Greataxe~
-@102827 = ~Stonefire Great Axe~
+@102827 = ~Stonefire Great Axe +4~
 @102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamantite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
@@ -2582,7 +2582,7 @@ Not Usable By:
  Priest
  Mage
  Thief~
-@102829 = ~Ravager Halberd~
+@102829 = ~Ravager Halberd +4~
 @102830 = ~This unique halberd is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some dragon blood to it. The result is a halberd with amazing properties. This weapon is just a dragons' nightmare. The wielder of this halberd can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
 
 STATISTICS:
@@ -2610,7 +2610,7 @@ Not Usable By:
  Priest
  Mage
  Thief~
-@102831 = ~Storm Hammer~
+@102831 = ~Storm Hammer +4~
 @102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Hammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -3863,7 +3863,7 @@ The last page is of particular interest and reads:
 @103318 = ~This book details the initial search for the tomb of Halueth Never. It is unfinished, the writer obviously falling to the plague before he could include many details, but it does point to the possible locations for three tombs in addition to the one in the Peninsula District.
 Beggar's Nest: Great Graveyard
 Docks District: Northwestern quarter aqueducts
-Blacklake District: Southwestern quarter
+Blacklake District: Northern quarter
 
 The directions are vague, but the book does mention that each tomb is likely sealed with a magically protected door. A riddle of some sort is the "key" to each. The solution to the Peninsula tomb door was "Emerald," which was answered by actually placing an emerald in the container immediately next to the door. It is worth noting that this action seemed to destroy the item, making it an expensive discovery.~
 @103319 = ~Lady Tanglebrook's Journal~
@@ -4787,7 +4787,7 @@ Not Usable By:
 @103736 = ~Lad~
 @103737 = ~Soren~
 @103738 = ~Shield of Oblivion~
-@103739 = ~Fey Spear~
+@103739 = ~Fey Spear +4~
 @103740 = ~This unusual trident-shaped spear is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted spear remains a mystery, it is only known that it required Fairy Dust. The trident is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -5033,7 +5033,7 @@ Not Usable By:
  Druid
  Cleric
  Mage~
-@103774 = ~Sword Saint Katana~
+@103774 = ~Sword Saint Katana +4~
 @103775 = ~This unique katana is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted katana by adding some adamantite ore to it. The result is a katana with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this katana can wield it much better and faster than any other katana.
 
 STATISTICS:
@@ -5058,7 +5058,7 @@ Not Usable By:
  Druid
  Cleric
  Mage~
-@103776 = ~Astral Blade Long Sword~
+@103776 = ~Astral Blade Long Sword +4~
 @103777 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Long Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5085,7 +5085,7 @@ Not Usable By:
  Priest
  Mage
  Monk~
-@103778 = ~Astral Blade Bastard Sword~
+@103778 = ~Astral Blade Bastard Sword +4~
 @103779 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a bastard sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Bastard Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5113,7 +5113,7 @@ Not Usable By:
  Mage
  Thief
  Monk~
-@103780 = ~Desert Wind Scimitar~
+@103780 = ~Desert Wind Scimitar +4~
 @103781 = ~This unique scimitar is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted scimitar by adding some adamantite ore to it. The result is a scimitar with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this scimitar can wield it much better and faster than any other katana. In addition, the owner of this scimitar can burn his enemies with solar fire twice a day without harm to himself.
 
 STATISTICS:
@@ -5139,7 +5139,7 @@ Type: One-handed
 Not Usable By:
  Cleric
  Mage~
-@103782 = ~Feyduster Short Sword~
+@103782 = ~Feyduster Short Sword +4~
 @103783 = ~This unusual short sword is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted short sword remains a mystery, it is only known that it required Fairy Dust. Feyduster Short Sword is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:

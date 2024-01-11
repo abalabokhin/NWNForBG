@@ -5,7 +5,7 @@ BEGIN ~NWHELMI1~
 IF WEIGHT #0 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,1)Global("Robbed","LOCALS",0)~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~~ THEN REPLY @1 DO ~ForceSpell(LastTalkedToBy(Myself),CLERIC_BLESS)~ GOTO 1
+  IF ~~ THEN REPLY @1 DO ~ForceSpellRes("NWSP101",LastTalkedToBy(Myself))~ GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4
@@ -125,7 +125,7 @@ END
 IF WEIGHT #1 /* Triggers after states #: 9 even though they appear after this state */
 ~  RandomNum(2,2)Global("Robbed","LOCALS",0)~ THEN BEGIN 15 // from:
   SAY @35
-  IF ~~ THEN REPLY @1 DO ~ForceSpell(LastTalkedToBy(Myself),CLERIC_BLESS)~ GOTO 1
+  IF ~~ THEN REPLY @1 DO ~ForceSpellRes("NWSP101",LastTalkedToBy(Myself))~ GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 3
   IF ~~ THEN REPLY @4 GOTO 4

@@ -11,7 +11,7 @@
 @10 = ~Je cherche du travail. Avez-vous quelque chose à me proposer ?~
 @11 = ~Et comment ! Un expert dès lors qu'il s'agit d'amuser les jeunes femmes. Et ce depuis ce jour fatidique où Mademoiselle Béla remarqua un jeune et naïf gnome qui parcourait cette belle ville sans rien de plus sur le dos qu'un sac de navets. Au début, j'ai cru que j'étais juste un invité, même si j'étais particulièrement bien traité, mais cela m'a surpris de recevoir de si gros pourboire. C'est un bon métier, dans l'ensemble. Je m'en sors bien mieux que l'Oncle Fédard Jansen.~ 
 @12 = ~Qui ça ?~
-@13 = ~Oh, vraiment ? Ce serait une première pour moi. L’offre est tentante, mais je suis trop énervé pour accepter un nouveau client maintenant.~
+@13 = ~Oh, vraiment ? Ce serait une première pour moi. L'offre est tentante, mais je suis trop énervé pour accepter un nouveau client maintenant.~
 @14 = ~Bouleversé ? Mais à quel sujet ?~
 @15 = ~J'imagine que mon vin n'a pas fini de décanter, alors allez-y, je vous écoute.~
 @16 = ~Je souhaite que nous reparlions de la récupération de cet anneau.~
@@ -37,7 +37,7 @@
 @36 = ~Autre chose ?~
 @37 = ~Je n'ai pas grand-chose d'autre à vous dire, veuillez m'en excuser. En temps normal, je suis bien plus bavard, mais je suis de mauvaise humeur, aujourd'hui.~
 @38 = ~Pourquoi donc ?~
-@39 = ~Eh bien, j’ai un travail à vous confier, comme un fainéant d’halfelin. Une petite commission, un tantinet dangereuse à faire avec ce qui se passe dans les rues.~
+@39 = ~Eh bien, j'ai un travail à vous confier, comme une fainéante petite-personne. Une petite commission, un tantinet dangereuse à faire avec ce qui se passe dans les rues.~
 @40 = ~Dites-m'en plus au sujet de ce travail.~
 @41 = ~Bien, par où commencer ? Disons que l'une de mes clientes, une belle et noble femme du nom de dame Jadale, a en sa possession un objet qui m'appartient. Techniquement, j'imagine qu'il lui appartient puisque je le lui ai donné... Néanmoins, je souhaite le récupérer. Il s'agit d'une bague que je lui ai offerte en cadeau et sur laquelle mon nom est gravé. Ramenez-la moi et vous me ferez très plaisir.~ 
 @42 = ~Justement, il est en ma possession.~
@@ -48,22 +48,22 @@
 @47 = ~Tell me where to find Lady Jadale.~ /*"Dites-moi où se trouve le château."*/
 @48 = ~N'est-ce pas ? Evidemment, mes ancêtres ont chassé l'Oncle Pinto pour s'être laissé berner de la sorte. Eux n'auraient jamais accepté à moins de deux sacs de navets. Bien. Vous désirez quelque chose ?~ 
 @49 = ~D'accord, peut-être qu'une somme d'or a également changé de mains, mais l'Oncle Pinto n'a jamais mentionné que les navets. Et comme l'année suivante a été particulièrement bonne, il a été descendu en flammes pour avoir conclu un tel accord. Quel dommage... Bien. Vous désirez quelque chose ?~ 
-@50 = ~Comment avez-vous réussi à convaincre cette femme de vous le céder ? Peu importe. Mieux vaut que je ne le sache pas. Comme ma tante Binny, toute aveugle qu’elle était, le disait lorsqu'elle épousa le malheureux oncle Dent-Saillante : "Qui rien ne sait de rien ne doute."~
-@51 = ~N’avions-nous pas convenu de quelque récompense ?~
+@50 = ~Comment avez-vous réussi à convaincre cette femme de vous le céder ? Peu importe. Mieux vaut que je ne le sache pas. Comme ma tante Binny, toute aveugle qu'elle était, le disait lorsqu'elle épousa le malheureux oncle Dent-Saillante : "Qui rien ne sait de rien ne doute."~
+@51 = ~N'avions-nous pas convenu de quelque récompense ?~
 @52 = ~Y-a-t-il aussi une récompense pour cette affaire ?~
 @53 = ~Ha ! Elle a été folle de joie quand je lui offert ce petit présent... et livide de rage quand je le lui ai redemandé. Elle dit qu'elle adore cette bague... je pense même qu'elle préfère le bijou à votre serviteur, en ce moment... C'est pour cela qu'il faut que quelqu'un d'autre aille rechercher la bague à ma place. Ces temps-ci, dame Jadale refuse même de m'adresser la parole.~ 
 @54 = ~Splendid! Lady Jadale is at her home, not far from here. Go north, then turn right. Do be kind to her, though, if you can. I don't wish any harm on the dotty woman... I just don't want any harm to come my way.~ 
-/*Sous l'effet du silence Surveillez cet endroit. N’en bougez surtout pas. Effectivement. Mais ne soyez pas dur avec elle, si vous pouvez. Je ne lui veux aucun mal, à cette folle... Je tiens juste à ce qu'il ne m'arrive rien, c'est tout.*/
+/*Sous l'effet du silence Surveillez cet endroit. N'en bougez surtout pas. Effectivement. Mais ne soyez pas dur avec elle, si vous pouvez. Je ne lui veux aucun mal, à cette folle... Je tiens juste à ce qu'il ne m'arrive rien, c'est tout.*/
 @56 = ~Très bien, comme vous voudrez. Jenny Jenson était du genre à y regarder à deux fois, elle aussi, et elle a fini comme couturière dans une bicoque minable. A vous de voir.~
 @57 = ~Dame Jadale ne semble pas comprendre que son mari pourrait ne pas voir la bague d'un bon oeil. Elle est plus écervelée qu'un elfe perdu dans un magasin de chaussures, c'est dire ! Bien. J'imagine que vous allez vouloir me poser des questions avant d'aller chercher ma bague...~ 
-@58 = ~Dès que je vous ai vu, j’ai su que vous n’étiez pas du style à échouer. "Erb", me suis-je dit, "cet <MANWOMAN> est plus fort encore qu’oncle Gros-Derrière!" Et vous avez fait très fort. Alors, voici pour vous 650 po pour l’anneau.~
+@58 = ~Dès que je vous ai vu, j'ai su que vous n'étiez pas du style à échouer. "Erb", me suis-je dit, "cet <MANWOMAN> est plus fort encore qu'oncle Gros-Derrière!" Et vous avez fait très fort. Alors, voici pour vous 650 po pour l'anneau.~
 @59 = ~Ne pourriez-vous pas vous montrer plus généreux pour un camarade gnome ?~ 
 @60 = ~[Persuasion] Vous savez, il n'a pas été facile de mettre la main dessus. Peut-être pourriez-vous faire un dernier effort ?~
 @61 = ~Vous feriez mieux d'allonger quelques pièces de plus où vous ne vivrez pas assez longtemps pour le regretter !~
 @62 = ~Merci bien. Ce fut un véritable plaisir que de travailler avec vous.~
-@63 = ~Oui, bien sûr ! J’ai dit ça, hein ? Qu’on n’aille pas penser qu’Erb est revenu sur une promesse... pas comme ma pauvre Tante Fanny, la folle, mariée trois fois. Alors, où en étais-je ? Ah oui. Tenez, 500 po pour l’anneau.~
+@63 = ~Oui, bien sûr ! J'ai dit ça, hein ? Qu'on n'aille pas penser qu'Erb est revenu sur une promesse... pas comme ma pauvre Tante Fanny, la folle, mariée trois fois. Alors, où en étais-je ? Ah oui. Tenez, 500 po pour l'anneau.~
 @64 = ~Pour être honnête avec vous, je sentais les choses mal parties lorsque tout cela commença. Un peu comme lorsque l'on avale une pièce de cuivre sans le faire exprès. Ça a du mal à passer. Mais nous sommes bien là et personne n'étouffe ! Que pensez-vous de 350 pièces d'or ?~
-@65 = ~(Soupir.) Je suppose qu’il m’échoit le devoir d’assurer la prospérité des gnomes. Très bien. Dans ce cas, voici, disons, 100 po de plus pour le dérangement. Ne dépensez pas tout d’un coup. Bien, je vais m'absenter quelque temps, des fois que dame Jadale vienne me voir, ou pire encore. Quelle chance que les gnomes soient petits et qu'ils aient tant de facilités à se cacher. Adieu, mon ami !~ 
+@65 = ~(Soupir.) Je suppose qu'il m'échoit le devoir d'assurer la prospérité des gnomes. Très bien. Dans ce cas, voici, disons, 100 po de plus pour le dérangement. Ne dépensez pas tout d'un coup. Bien, je vais m'absenter quelque temps, des fois que dame Jadale vienne me voir, ou pire encore. Quelle chance que les gnomes soient petits et qu'ils aient tant de facilités à se cacher. Adieu, mon ami !~ 
 
 @67 = ~> J'imagine que vous méritez un petit bonus. Je suppose qu'il ne fut guère agréable de traiter avec dame Jadale. Quand elle s'énerve, elle a davantage de cran qu'un griffon ayant perdu les plumes de sa queue. Voilà 100 pièces d'or de plus. Bien, je vais m'absenter quelque temps, des fois que dame Jadale vienne me voir, ou pire encore. Quelle chance que les gnomes soient petits et qu'ils aient tant de facilités à se cacher. Adieu, mon ami !~ 
 @68 = ~> C'est bien gentil à vous de tenter de m'escroquer, mais la récompense dépasse déjà de loin la valeur de l'anneau.~

@@ -1,4 +1,4 @@
-@0 = ~Excuse me, but where is <CHARNAME>? I'll only talk to him.~/*Qui vous être ? Moi être <CHARNAME>. Je ne tomberai pas face à vous !*/
+@0 = ~Pardonnez-moi, mais où est donc <CHARNAME> ? Je ne parlerai qu'avec lui.~ ~Pardonnez-moi, mais où est donc <CHARNAME> ? Je ne parlerai qu'avec elle.~
 @1 = ~Cela devient une habitude, n'est-ce pas ? Une fois encore, Padhiver est en danger et, une fois encore, on vous appelle pour tous nous sauver...~ [NWAAR310]
 @2 = ~Je dois admettre que cela m'a soulagé que le seigneur Nasher me dise que vous participeriez également à cette mission, <CHARNAME>. L'idée d'être séparé de vous était déplaisante.~ [NWAAR311]
 @3 = ~Mais cette fois-ci, c'est à moi que vous ferez vos rapports. Depuis la défection d'Aribeth, le seigneur Nasher a décidé de faire de moi son bras droit.~ [NWAAR313]
@@ -30,10 +30,10 @@
 @29 = ~Auriez-vous une idée de l'endroit où pourraient se trouver les Mots de Pouvoir ?~
 @30 = ~Et que devrai-je faire lorsque j'aurai trouvé ces Mots de Pouvoir ?~
 @31 = ~Où pourrai-je trouver du matériel et du ravitaillement ?~
-@32 = ~Je m’en vais.~
+@32 = ~Je m'en vais.~
 @33 = ~On dit que les disciples de Maugrim mènent des recherches un peu partout dans le pays : dans les collines et les montagnes situées au nord, dans les forêts à l'ouest et même dans les régions de cultures du sud.~ [NWAAR330]
 @34 = ~Je souhaiterais pouvoir vous être utile. Peut-être pourrez-vous en apprendre davantage auprès de Lillian Cambridge, spécialiste des artefacts anciens qui affirme savoir certaines choses sur les Mots de Pouvoir.~ [NWAAR331]
-@35 = ~Lillian m'a promis de nous fournir toute l'aide posssible. Vous devriez la trouver dans la taverne située au coin sud-est du camp..~ [NWAAR332]
+@35 = ~Lillian m'a promis de nous fournir toute l'aide possible. Vous devriez la trouver dans la taverne située au coin sud-est du camp..~ [NWAAR332]
 @36 = ~Je sais que cela peut sembler une tâche insurmontable, mais je ne vois personne d'autre que vous capable de mener à bien cette mission.~ [NWAAR333]
 @37 = ~Qu'ai-je à y gagner ?~
 @38 = ~Si vous trouvez l'un des Mots, rapportez-le moi. Mon réseau clandestin ira le mettre à l'abri dans le château du Seigneur Nasher.~ [NWAAR336]
@@ -94,7 +94,7 @@
 @93 = ~Je suis soudain devenu le bras droit du seigneur Nasher, et mes responsabilités sont devenues énormes. Quant à vous... une fois de plus, tout le monde compte sur vous pour nous sauver car vous seul en êtes capable.~ [NWAAR374]
 @94 = ~Et je n'étais pas certain que vous vouliez continuer. Je veux parler de nous. Alors j'ai préféré vous laisser l'initiative.~ [NWAAR375]
 @95 = ~Pourquoi ne pas me l'avoir dit ?~
-@96 = ~Etes-vous en train de me dire que vous êtes trop occupé pour être avec moi ?~
+@96 = ~Êtes-vous en train de me dire que vous êtes trop occupé pour être avec moi ?~
 @97 = ~Voilà, j'ai fait le premier pas. Et maintenant ?~
 @98 = ~Je regrette, Aarin. Je ne partage pas vos sentiments. Pour moi, vous êtes juste un bon ami.~
 @99 = ~Je... Je ne sais pas. Pardonnez-moi si j'ai fait une erreur, mais tout cela est très nouveau pour moi. Je n'ai pas eu beaucoup de relations... à part avec Calli.~ [NWAAR376]
@@ -136,7 +136,7 @@
 @135 = ~Laissez-moi me préoccuper de Haédraline. Maugrim et ses hommes rôdent encore dans la région, ce qui signifie qu'ils doivent penser qu'il reste encore au moins un Mot à découvrir. Trouvez-le avant eux.~ [NWAAR395]
 
 @137 = ~J'aimerais pouvoir vous donner quelque chose, mais les quelques objets magiques offerts par les héros de l'Alliance Seigneuriale sont réquisitionnés pour la défense de Padhiver. Je n'ai rien à vous donner, navré.~ [NWAAR400]
-@138 = ~Je viens de recevoir les derniers rapports du champ de bataille, et l’heure est grave. Les murs de Padhiver sont tombés, et l’Alliance Seigneuriale s’est retranchée dans le château de Padhiver sous l’assaut.~ [NWAAR417]
+@138 = ~Je viens de recevoir les derniers rapports du champ de bataille, et l'heure est grave. Les murs de Padhiver sont tombés, et l'Alliance Seigneuriale s'est retranchée dans le château de Padhiver sous l'assaut.~ [NWAAR417]
 @139 = ~Aribeth connaît extrêmement bien nos tactiques, ce qui lui permet de nous battre à plate couture à chaque fois. La moitié de la cité est sous contrôle de l'armée de Luskan. Et qu'en est-il de votre mission ?~ [NWAAR418]
 @140 = ~Enfin une bonne nouvelle ! Je pars à l'instant même pour le château de Padhiver, afin de m'assurer que les Mots que j'y ai envoyés sont en sécurité et qu'Aribeth ne risque pas s'en emparer.~ [NWAAR419]
 @141 = ~Autant que je vide mes coffres avant notre départ. Cet argent devait financer la défense de la ville, et personne n'a obtenu d'aussi bons résultats que vous. Je préfère tout vous donner plutôt que de voir cet argent finir dans les coffres de Luskan.~ [NWAAR420]
@@ -148,9 +148,8 @@
 @147 = ~Le temps nous est compté. Nous devons rejoindre le château de Padhiver pour défendre ses murs et les Mots de Pouvoir qu'il abrite contre Aribeth et Maugrim !~ [NWAAR459]
 @148 = ~Si tout est prêt, nous allons partir.~ [NWAAR460]
 @149 = ~Je suis prêt.~
-@150 = ~I still have some business to take care of here.~ /*J'ai encore quelques questions...*/
+@150 = ~J'ai encore des choses à faire dans le coin.~
 @151 = ~J'espère simplement que nous n'arriverons pas trop tard...~ [NWAAR461]
 
 @153 = ~J'aurais aimé avoir quelque chose à vous donner, mais tous les objets de ce type ont été envoyés au front pour l'effort de guerre.~ [NWAAR426]
-@154 = ~Hurry up <CHARNAME>. We might be late.~
-/*Moi être <CHARNAME>. Nous déjà vu l'autre ?*/
+@154 = ~Alors, dépêchez-vous, <CHARNAME>. Nous pourrions arriver trop tard.~

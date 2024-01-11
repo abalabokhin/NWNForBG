@@ -1,47 +1,38 @@
 TODO:
-*. пофиксить все проблемы (с форума бимдогов):
 
--Idk how you're supposed to start the Tyrran artifacts quest, cause Oleff kept saying he doesn't want me and Gilles just told me to fuck off. I already had the three artifacts and the only way I found to actually start the quest (cause I looked up the dialogue tree in NearInfinity!) was to pickpocket Jacob's Quill from Gilles and then Oleff talked to me about it, starting the quest... And then I somehow was able to tell Oleff about Gilles looting the quill from some Tyrrans even though I had no idea about that, cause I just picked his pocket! - was able to open chest in oleff quest without the quest - check it out
--The Helmite priest in the Beggar's Nest offers a blessing, but when he casts it, it doesn't actually bless the party, only the priest himself and the guy next to him (Bertrand), the same with priest at area NW1300.
--Drake in the Serpent place in Beggar's Nest gives wrong directions to Krestal (he says he's north of the Helmite shrine to the west, but the Helmite shrine is to the east).
--Jemaine talks about his brother going to a house north of there, but Jemaine's house is already at the northernmost part of the map. The house is actually right next door, to the east.
--Kipp in the Peninsula district says the prison is to the southwest, but you're already at the southwest part of the area where you find him and the prison is to the north. 
--video has a horizontal green line, fix it somehow
--ToF complains on a spell (try to ionstall tof after NWN)
--The wagon parts quest at the beggar's nest seems to be bugged. I spoke with Aldo first, then found Hector, who eventually left the room/house, but then he was nowhere to be found anymore (according to a walkthrough of the NWN campaign, Hector is supposed to follow you to Aldo?). So I had to spawn in Hector outside to fix it.
--Sedos Sebille in the Peninsula District points refers to "the sewers" in the southwest of the district, but there are no sewers anywhere in that district AFAIK (I even checked the area in NearInfinity). So I wasted quite a bit of time there.
--Not a bug, but another really weird balance choice (even though this enemy ain't too tough): "Gang Leader", despite being just a nameless random dude, also has saving throws that are better than GODS (-1/0/0/0/1, more than appears in NearInfinity, cause he's wearing a Ring of Protection +2 that lowers the saves). He's basically immune to a lot of spells unless you use Greater Malison, Doom, etc. (and how is a regular player supposed to know that?).
--Formosa at the Blacklake District says Meldanen lives in a mansion in the northwest corner of the district, but it's actually in the northern part (his warehouse is in the northwest, not his mansion).
--Halueth Dig's Logbook's directions for the tombs are all totally wrong (eg. the one in the Blacklake District is in the northern part, not the southwestern one). Pretty much all directions in the mod are wrong, which makes playing through it confusing.
--Nyatar's Ring doesn't give *any* magic resistance (it's supposed to give +15%, according to the description), because the modifier type is set to '3' in the magic resistance bonus effect (166). It's supposed to be '1' (which shows up as "increment" type in NearInfinity).
--Web traps (NWWI215N.SPL) found in area NW1034 (spider area below Helmite Hold) web you with NO SAVE. That's craaaaazy. Sure, I'm adept at finding cheese, I could deal with that, but I think a lot of people are not gonna be able to, cause it really is a bit bs. For most players, it's probably either: you have free action equipment/spells or you die. And considering you can't leave that place to get any free action equipment/spells, that's even worse!
--The Huge Zombies in the Desther fight are incorrectly classified as "humanoids" not "undead", so anti-undead equipment/spells don't work against them.
--There are lots of weird dialogue choices throughout the mod with broken English like "where the cure?" (instead of "where IS the cure?") and "who you serve?", for example, when you talk to Desther. Was there some low intelligence-based dialogue choices in NWN that I don't remember?
-And that's it! Again, none of these are MAJOR bugs, but the directions and the visibility of area transitions actually made me waste a lot of time finding out how to progress (combat has been a breeze since you told me about the crafted weapons, cause, again, wielding two of those saint katanas is OP as hell).
-Finally, the mod has been TONS of fun so far and, like you said, there haven't been many completely nonsensical enemies like that Cultist Mage, only the odd decision here and there like the Gang Leader with ungodly saves or enemies having insane AC, but we get weapons with insane -6 to THAC0 (why not just have enemies with balanced AC instead? Not a major problem, but it's a strange choice, cause it sorta pushes you to use those weapons if you're not a Warrior class). 
-
+*.ToF complains on a spell(spells) (if installing tof after NWN) - fix it
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. Проверить (или воспользоваться скриптом, который автоматически генерирует описания) все предметы, скорее всего там множество неаккуратных описаний, eg Invisibility Hat, Gladiator's Club and probably add +4 to some item names
-*. Failing a steal attempt in a shop has no penalties whatsoever (at least in Eltoora's shop). It just boots you out of the menu, but the shopkeeper doesn't turn hostile.
--In area NW1220 you can use the stairs/secret passage on the wall to the west of the area BEFORE actually finding the secret wall, making it seem like you're just entering the wall.
--The Dancing Broadsword that you can summon with the Dancing Long Sword +3 clears the fog of war like a familiar or a wizard eye, is that supposed to happen?
--Weird balance, not a bug: out of all the weapons you can craft with adamantite, only the Harbinger King Greatsword and the Sword Saint Katana get +1 attack per round. Isn't that a bit odd? They're strictly MUCH better than the rest (and, in fact, the Sword Saint Katana is one of the most OP weapons in all the infinity games. Using two of them turns a Bard into a Fighter with the insane THAC0 bonus and extra attacks). The other two-handed weapon (the Stonefire "great axe") doesn't get that and neither do the other one-handed weapons (though the Desert Wind Scimitar at least gets a cast of Sunfire...).
--The quest "Beggar's Nest: Undead Infestation" doesn't show up as finished, despite the fact I already cleared the undead infestation (killed the Yuan-ti etc.).
--If you open the door in area NW1110 (Seedy Tavern) with the key that Cristov gave you, you can't actually enter and the "Cook" has no reaction to you opening it. You NEED to talk to the Cook and only then does the area transition work, which is bizarre (as the door is open, why can't I walk through it?).
--Some of the area transitions are preeeeeetty hard to see. For example, the one from the Beggar's Nest Crypt to the Graveyard and the stairs to go down from area NW1112 (the Silver Sails entrance hall). There should probably be map markers for those, cause I had to check out the areas in NearInfinity to find those area transitions!!
--Bug? The permanent Fireshield: Blue effect from the Ice Cloak has no visual whatsoever (it does work, but the fireshield doesn't show). And it also stacks with regular Fireshield: Blue. Is that intentional?
+*. video has a horizontal green line, fix it somehow - скорее всего поправлено - проверить. Еще перекодировать
+русские ролики для ЕЕ в 800x600 - взять из оригинальных NWN Diamond Edition
+*. fix bug with openning Oleff chest with "Knock" again
+*. fix error from JohnBob in items + чекнуть их описания
+NWADISEE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWADISEE.ITM : Opcode 221: Wrong parameter2 : 21
+NWAMUL02.ITM : Opcode 166: Unknown type 3.
+NWANTIDE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWANTIDE.ITM : Opcode 221: Wrong parameter2 : 21
+NWBELT01.ITM : Opcode 178 : No change detected : Value = Value + 0.
+NWCLCK2.ITM : Opcode 36: No change detected: Value = Value + 0.
+NWDSPO01.ITM : Opcode 179 : No change detected : Value = Value + 0.
+NWPHILTR.ITM : Opcode 233: Invalid Type 4 (89-134 expected)
+NWPHILTR.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
+NWPHILTR.ITM : Opcode 221: Wrong parameter2 : 21
+NWPLATN1.ITM : Opcode 166: Unknown type 3.
+NWSTAF04.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
+NWSW1H73.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
 *. add more music, eg for Aribeth battle from Kyros
-*. Check for iwdfication mod spells and patch resources if spells are already in the game from Connelly
 *. Может быть Шарлин сделать подклассом барда - Jester, а то она бесполезна :) и хоббита тоже подклассом вора -
 Swashbuckler.
 *. добавить наполненности карты - типа красивое новое поместье, но нет ни одного сундука... + в куче мест
-просится объект на карте рассмотреть через ? - а этого нет. Особенно в красивых новых поместьях...
+просится объект на карте рассмотреть через ? - а этого нет. Особенно в красивых новых поместьях... + сделать
+пометки на картах переходы - по крайней мере на кладбище, а то там фиг что найдешь... и у каналиазации в
+гнезде нищих
 *. Сделать квестовые записи для квестов: 1. Куртизанка из Маски 2. Три бездельника в доках просят какойто фамильный
 амулет Мастерионов 3. Квесты спутников 4. В гнезде нищих мужик в храме хельма просит найти брата - бертран 5.
 У входа в гнездо нищих стоит стражник (Эргус) и жалуется что его человек пропал (Уолтерс). 6. В портовом
@@ -59,6 +50,3 @@ Swashbuckler.
 5. воровство на Ярмарке Мечей
 6. все говорят "лорд", вместо мой лорд - режет слух
 4. Спутники никак не комментируют твои действия
-
-Ценная информация - почему-то если в заклинании стоит эффект "Replace self" и там Timing mode -
-Delay/Permanent, его надо заменить на Instant/Limited, чтобы появлялось существо.

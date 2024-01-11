@@ -1852,7 +1852,7 @@ Not Usable By:
 Rodzaj bazowych obra¿eñ: k³ute
 Wielkoœæ broni: bardzo ma³a
 Wymagane atuty: broñ prosta, Druid, Mnich, £otrzyk lub Czarodziej*/
-@102562 = ~Gladiator's Club~/*Maczuga gladiatora +1*/
+@102562 = ~Gladiator's Club +4~/*Maczuga gladiatora +1*/
 @102563 = ~This club is crafted by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of an ordinary club is a mystery, all that is known is that the blacksmith needed Ironwood to make it. The Gladiator's Club is so strong that it can smash into dust any golem up to level 20 inclusive. However, any other creature struck with this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1875,7 +1875,7 @@ Requirements: 5 Strength
 
 Not Usable By:
  Mage~/*Szukam informacji odnoœnie ró¿nych miejsc w Neverwinter. Mój stary druh jest sier¿antem, s³u¿¹cym przy bramie miejskiej. Przekona³em go, ¿e zaraza nie jest ju¿ zagro¿eniem, zgodzi³ siê wiêc wpuœciæ mnie i moich agentów do miasta. Ka¿dy schwytany w sto¿ek Pora¿enia Umys³u musi zdaæ test Si³y woli (ST 17) albo zostanie og³uszony na 3k4 rundy. Ta broñ nie tylko chroni przed magicznymi atakami, ale obdarza te¿ w³aœciciela talentem do opracowywania nowych zaklêæ i wzmaga jego czujnoœæ. D³ugotrwa³e badania pozwoli³y ustaliæ, ¿e takie bronie stworzy³a nieistniej¹ca ju¿ cywilizacja Netherese, ale nie wiadomo spod czyjej wysz³y rêki.*/
-@102564 = ~Ironwood Mace~/*Bu³awa z Drzewa ¯elaznego +1*/
+@102564 = ~Ironwood Mace +4~/*Bu³awa z Drzewa ¯elaznego +1*/
 @102565 = ~This mace was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece from a simple mace is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Ironwood Mace is so strong that it can crush any golem up to and including level 20 into dust. However, any other creature struck by this mace will also have a hard time. There is a 30% chance that the enemy will be stunned for 3 rounds.
 
 STATISTICS:
@@ -1901,7 +1901,7 @@ Not Usable By:
  Druid
  Monk
  Beastmaster~/*Moja mama mówi, ¿e w Neverwinter wszyscy poumierali. Wyrwa³ mi ró¿d¿kê i z³ama³ j¹... i ca³e szaleñstwo znik³o. Och, a on krzycza³ na mnie i krzycza³... i w³aœciwie wyrzuci³ mnie z wie¿y, i zakaza³ wracaæ. Ka¿dy schwytany w sto¿ek Pora¿enia Umys³u musi zdaæ test Si³y woli (ST 17) albo zostanie og³uszony na 3k4 rundy. Ta broñ nie tylko chroni przed magicznymi atakami, ale obdarza te¿ w³aœciciela talentem do opracowywania nowych zaklêæ i wzmaga jego czujnoœæ. D³ugotrwa³e badania pozwoli³y ustaliæ, ¿e takie bronie stworzy³a nieistniej¹ca ju¿ cywilizacja Netherese, ale nie wiadomo spod czyjej wysz³y rêki.*/
-@102566 = ~Foundation Flail~/*Przeciwzaklêcie*/
+@102566 = ~Foundation Flail +4~/*Przeciwzaklêcie*/
 @102567 = ~This flail is was made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple flail is a mystery, all that is known is that the blacksmith needed ironwood to make it. The Foundation Flair is so strong that it can smash any golem up to level 20 into dust. However, any other creature struck by this chain will also have a hard time. There is a 25% chance that the enemy will be stunned for 3 rounds.
 
 Equipped Abilities:
@@ -1949,7 +1949,7 @@ Not Usable By:
  Monk~/*Jak wygl¹da sytuacja w Neverwinter? To samo sta³o siê z reszt¹ ch³opaków. Drawl zawar³ jakiœ uk³ad, ¿eby staæ siê... tym, czym siê sta³, a reszta z nich zginê³a. Ta bu³awa daje premiê za ulepszenie do ataku i obra¿eñ, ale nie ma na sobie znaku swego twórcy. Rodzaj atutu: KlasowyWymagania: Mistyczny £ucznik, poziom 8.
 Opis: W przypadku regularnej bitwy Mistyczny £ucznik 8. poziomu mo¿e raz dziennie wystrzeliæ strza³ê do ka¿dego celu znajduj¹cego siê w zasiêgu. Maksymalna liczba celów jest równa liczbie poziomów Mistycznego £ucznika.
 U¿ycie: Po wybraniu.*/
-@102570 = ~Drone Morning Star~/*Zardzewia³y morgensztern*/
+@102570 = ~Drone Morning Star +4~/*Zardzewia³y morgensztern*/
 @102571 = ~This unusual morning star is made by the finest blacksmiths in Neverwinter. How they managed to make this masterpiece out of a simple morning star is a mystery, all we know is that the blacksmith needed magic dust to make it. Drone Morning Star is simply filled with the magic of fairies, it is able to blind enemies, make invisible its owner and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -2134,7 +2134,7 @@ Szz, znowu id¹ daæ siê zabiæ. Wygl¹da na to, ¿e im d³u¿ej tu jestem, tym bardzie
 @102616 = ~Hrusk~
 @102617 = ~Mieszkaniec Doków~
 @102618 = ~Klaudiusz~
-@102619 = ~Harbinger Kin Greatsword~/*Przyjaciel Pioniera +1*/
+@102619 = ~Harbinger Kin Greatsword +4~/*Przyjaciel Pioniera +1*/
 @102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamantite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
 
 STATISTICS:
@@ -2679,7 +2679,7 @@ I pomyœleæ, ¿e przys³a³ mnie tutaj na poszukiwania jakiegoœ staro¿ytnego artefak
 @102824 = ~Come out spy... I can feel your presence~/*PodejdŸ bli¿ej. Chcê ci siê lepiej przyjrzeæ.*/
 @102825 = ~Gurak Wyrwiflak~
 @102826 = ~Topór Dwurêczny~
-@102827 = ~Stonefire Great Axe~/*Topór Kamiennego Ognia +1*/
+@102827 = ~Stonefire Great Axe +4~/*Topór Kamiennego Ognia +1*/
 @102828 = ~This unique great axe is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some adamantite ore to it. The result is an great axe with amazing properties. It is so easy to wield that even a bad hit on an enemy causes significant damage and armor damage. The owner of this axe can handle it much better than any other axe.
 
 STATISTICS:
@@ -2705,7 +2705,7 @@ Not Usable By:
  Mage
  Thief~/*Poszukujê informacji o ró¿nych miejscach w Neverwinter. Ten cz³owiek sprawia wra¿enie niecierpliwego. Wygl¹da na to, ¿e przyszed³ tu, spodziewaj¹c siê, ¿e coœ siê wydarzy. Wszyscy spodziewali siê, ¿e przejmê po rodzicach talent do wszelkich sztuk magicznych. Na arenie wszechstronnoœæ mo¿e oznaczaæ ró¿nicê pomiêdzy ¿yciem, a œmierci¹. Dlatego w³aœnie gladiator jest mistrzem w wielu rodzajach walki. Wszyscy gladiatorzy potrafi¹ walczyæ dwiema broniami jednoczeœnie.
 Profile nie daj¹ postaciom ¿adnych specjalnych zdolnoœci - po prostu konfiguruj¹ umiejêtnoœci i atuty, aby nie musia³ tego robiæ gracz.*/
-@102829 = ~Ravager Halberd~/*Zardzewia³a halabarda*/
+@102829 = ~Ravager Halberd +4~/*Zardzewia³a halabarda*/
 @102830 = ~This unique halberd is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted halberd by adding some dragon blood to it. The result is a halberd with amazing properties. This weapon is just a dragons' nightmare. The wielder of this halberd can fear neither Wing Buffet nor fear. In addition, he himself can spew dragon breath on his enemies once a day, just like a dragon.
 
 STATISTICS:
@@ -2733,7 +2733,7 @@ Not Usable By:
  Priest
  Mage
  Thief~/*Szukam informacji odnoœnie ró¿nych miejsc w Neverwinter. Cooo? Bêdzie mi ubli¿a³ jakiœ przeroœniêty jaszczur mieszkaj¹cy w jaskini?! Po moim trupie! Widaæ wyraŸnie, ¿e cz³owiek ten jest wstrz¹œniêty. Oceniaj¹c po jego nêdznym wygl¹dzie ³atwo mo¿na dojœæ do wniosku, ¿e zaraza zrujnowa³a mu ¿ycie. Gdy przedmiot ten zostanie u¿yty przeciwko konstruktowi, wyemituje niszczycielski promieñ, który zada golemowi 3k10+30 pkt. obra¿eñ, a tak¿e na 1k4 rundy powali go na ziemiê.*/
-@102831 = ~Storm Hammer~/*Zbroja Burzy*/
+@102831 = ~Storm Hammer +4~/*Zbroja Burzy*/
 @102832 = ~This magical hammer is made by the finest blacksmiths in Neverwinter. They managed to combine a battle hammer and a magical alloy called ritellium, gods alone know how the smiths did it. Storm Hammer is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5032,7 +5032,7 @@ Not Usable By:
 @103736 = ~Lad~
 @103737 = ~Soren~/*Wiedza*/
 @103738 = ~Shield of Oblivion~/*Tarcza Wiary*/
-@103739 = ~Fey Spear~/*W³ócznia Fey +1*/
+@103739 = ~Fey Spear +4~/*W³ócznia Fey +1*/
 @103740 = ~This unusual trident-shaped spear is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted spear remains a mystery, it is only known that it required Fairy Dust. The trident is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:
@@ -5292,7 +5292,7 @@ Not Usable By:
 Rodzaj bazowych obra¿eñ: sieczne
 Wielkoœæ broni: ma³a
 Wymagane atuty: broñ prosta lub Druid*/
-@103774 = ~Sword Saint Katana~/*Miecz Œwiêtego Dziedzictwa +1*/
+@103774 = ~Sword Saint Katana +4~/*Miecz Œwiêtego Dziedzictwa +1*/
 @103775 = ~This unique katana is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted katana by adding some adamantite ore to it. The result is a katana with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this katana can wield it much better and faster than any other katana.
 
 STATISTICS:
@@ -5318,7 +5318,7 @@ Not Usable By:
  Cleric
  Mage~/*Dla plemienia Czarnego Lwa ta ziemia jest œwiêta. Przymierze Lordów powinno traktowaæ ludy Uthgardczyka z wiêkszym szacunkiem. Skaza w mojej krwi... jestem zatruty. Wszyscy spodziewali siê, ¿e przejmê po rodzicach talent do wszelkich sztuk magicznych. Na arenie wszechstronnoœæ mo¿e oznaczaæ ró¿nicê pomiêdzy ¿yciem, a œmierci¹. Dlatego w³aœnie gladiator jest mistrzem w wielu rodzajach walki. Wszyscy gladiatorzy potrafi¹ walczyæ dwiema broniami jednoczeœnie.
 Profile nie daj¹ postaciom ¿adnych specjalnych zdolnoœci - po prostu konfiguruj¹ umiejêtnoœci i atuty, aby nie musia³ tego robiæ gracz.*/
-@103776 = ~Astral Blade Long Sword~/*Gwiezdne Ostrze +1*/
+@103776 = ~Astral Blade Long Sword +4~/*Gwiezdne Ostrze +1*/
 @103777 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a long sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Long Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5346,7 +5346,7 @@ Not Usable By:
  Mage
  Monk~/*Ten magiczny miecz zosta³ zabrany z cia³a Aribeth. Ró¿d¿ka jest przedmiotem, który móg³ zostaæ nasycony magi¹. Jego moce mog¹ byæ bardzo ró¿ne. "Te lochy pe³ne s¹ wszelkich rodzajów niebezpiecznych i potê¿nych istot. Gdyby po³¹czy³y si³y, mog³yby staæ siê niebezpieczne - nawet dla takiego arcymaga, jak Halaster." Na arenie wszechstronnoœæ mo¿e oznaczaæ ró¿nicê pomiêdzy ¿yciem, a œmierci¹. Dlatego w³aœnie gladiator jest mistrzem w wielu rodzajach walki. Wszyscy gladiatorzy potrafi¹ walczyæ dwiema broniami jednoczeœnie.
 Profile nie daj¹ postaciom ¿adnych specjalnych zdolnoœci - po prostu konfiguruj¹ umiejêtnoœci i atuty, aby nie musia³ tego robiæ gracz.*/
-@103778 = ~Astral Blade Bastard Sword~/*Zardzewia³y miecz pó³torarêczny*/
+@103778 = ~Astral Blade Bastard Sword +4~/*Zardzewia³y miecz pó³torarêczny*/
 @103779 = ~This magical sword is made by the finest blacksmiths in Neverwinter. They managed to combine a bastard sword and a magical alloy called ritellium, gods alone know how the smiths did it. Astral Blade Bastard Sword is filled with magic and can sometimes cast Sunray on a creature struck with it, each blow dispelling the magic. It is also a great weapon for fighting trolls - any troll will be killed instantly. The hammer also protects its wielder from hostile magic by absorbing some of it into itself.
 
 STATISTICS:
@@ -5374,7 +5374,7 @@ Not Usable By:
  Mage
  Thief
  Monk~/*Ten magiczny miecz zosta³ zabrany z cia³a Aribeth. Nad magicznym piedesta³em unosi siê Zimowa Kula. Widzisz, jak wewn¹trz poruszaj¹ siê ma³e kszta³y. "Te lochy pe³ne s¹ wszelkich rodzajów niebezpiecznych i potê¿nych istot. Gdyby po³¹czy³y si³y, mog³yby staæ siê niebezpieczne - nawet dla takiego arcymaga, jak Halaster." Tymi d³ugimi, cienkimi ró¿d¿kami mo¿na w³adaæ jak laskami. Trafiony któr¹œ z nich golem mo¿e siê od razu rozpaœæ na kawa³ki. Urz¹dzenia te przeznaczono do walki z nienaturalnymi stworzeniami, ale sprawdzaj¹ siê tak¿e przeciwko istotom pochodz¹cym spoza Pierwotnej Sfery Materialnej.*/
-@103780 = ~Desert Wind Scimitar~/*Wiatr Pustyni +1*/
+@103780 = ~Desert Wind Scimitar +4~/*Wiatr Pustyni +1*/
 @103781 = ~This unique scimitar is crafted by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted scimitar by adding some adamantite ore to it. The result is a scimitar with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this scimitar can wield it much better and faster than any other katana. In addition, the owner of this scimitar can burn his enemies with solar fire twice a day without harm to himself.
 
 STATISTICS:
@@ -5401,7 +5401,7 @@ Not Usable By:
  Cleric
  Mage~/*Skutki œmierci staro¿ytnych istot da³o siê odczuæ w ca³ym Neverwinter. Pozbawiona pomocy Moragi armia zachwia³a siê, zawaha³a i os³ab³a. Oblegaj¹cy rzucili siê do ucieczki. Nie jestem znawc¹, ale dowody prowadz¹ mnie do jednego logicznego wniosku: Ÿród³o tego choróbska jest raczej magiczne ni¿ naturalne. Mutamin, w³aœciciel tego miejsca, jest by³ym awanturnikiem. Z tego co s³ysza³em nawet zamo¿nym. Na arenie wszechstronnoœæ mo¿e oznaczaæ ró¿nicê pomiêdzy ¿yciem, a œmierci¹. Dlatego w³aœnie gladiator jest mistrzem w wielu rodzajach walki. Wszyscy gladiatorzy potrafi¹ walczyæ dwiema broniami jednoczeœnie.
 Profile nie daj¹ postaciom ¿adnych specjalnych zdolnoœci - po prostu konfiguruj¹ umiejêtnoœci i atuty, aby nie musia³ tego robiæ gracz.*/
-@103782 = ~Feyduster Short Sword~/*Zardzewia³y krótki miecz*/
+@103782 = ~Feyduster Short Sword +4~/*Zardzewia³y krótki miecz*/
 @103783 = ~This unusual short sword is crafted by Neverwinter's finest blacksmiths. How they managed to make this masterpiece from a simple weakly enchanted short sword remains a mystery, it is only known that it required Fairy Dust. Feyduster Short Sword is simply filled with Fairy Magic, it is able to blind enemies, make its owner invisible and beat enemies with electricity. In addition, the wielder becomes more agile when wielding this weapon.
 
 STATISTICS:

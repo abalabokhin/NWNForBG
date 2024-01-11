@@ -42,7 +42,7 @@ Languages
 * Italian, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Spanish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
-* Chinese, partially taken from the original NWN texts with script, partially English (needs checking/translating)
+* Simplified Chinese partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
 
 Description:
 ------------
@@ -52,7 +52,7 @@ The mod repeats, with some minor modifications, the plot of Neverwinter Nights g
 Compatibility
 -------------
 
-Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there.
+Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. However, some of the new spells might have copnflicts with some Talents of Faerûn mod components as for Beta 3 version.
 
 Installation
 -------------
@@ -103,10 +103,11 @@ Version History
 ---------------
 In development:
 
+- Improved quality of English and Russian movies for EE version, added French movies (thanks to JohnBob).
 - Chinese translation were finished by Shuiyue Jushi, Youye and Lewis Liu.
 - Added auto genrated Chinese translation, thanks to MephistoSatanDevil and icecool for the provided NWN dialog.tlk.
-- Made NWCULT1 creature a little weaker to be more ballanced.
-- Fixed some texts, thanks to TheWildestMage
+- Made some creatures a little weaker to be more ballanced, thanks to TheWildestMage
+- Fixed some texts, items and other small bugs, thanks to TheWildestMage and JohnBob
 - Probably fixed crash with a big spider one more time, thanks to TheWildestMage
 - Fixed NWDRAWL2 cut scene, thanks to TheWildestMage
 - Fixed NW2305.TIS thanks to p\_zombie
