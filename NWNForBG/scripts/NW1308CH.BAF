@@ -1,4 +1,12 @@
 IF
+    SpellCastOnMe([ANYONE],WIZARD_KNOCK)
+    Global("ChestOpen","MYAREA",0)
+    THEN
+        RESPONSE #100
+            Lock("Chest1")
+END
+
+IF
 	OR(2)
 		!Global("AttemptingOpenChest","MYAREA",0)
 		!Global("ChestOpen","MYAREA",0)
