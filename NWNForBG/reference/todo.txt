@@ -5,24 +5,7 @@ TODO:
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. video has a horizontal green line, fix it somehow - скорее всего поправлено - проверить. Еще перекодировать
-русские ролики для ЕЕ в 800x600 - взять из оригинальных NWN Diamond Edition
-*. fix bug with openning Oleff chest with "Knock" again
-*. fix error from JohnBob in items + чекнуть их описания
-NWADISEE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
-NWADISEE.ITM : Opcode 221: Wrong parameter2 : 21
-NWAMUL02.ITM : Opcode 166: Unknown type 3.
-NWANTIDE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
-NWANTIDE.ITM : Opcode 221: Wrong parameter2 : 21
-NWBELT01.ITM : Opcode 178 : No change detected : Value = Value + 0.
-NWCLCK2.ITM : Opcode 36: No change detected: Value = Value + 0.
-NWDSPO01.ITM : Opcode 179 : No change detected : Value = Value + 0.
-NWPHILTR.ITM : Opcode 233: Invalid Type 4 (89-134 expected)
-NWPHILTR.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
-NWPHILTR.ITM : Opcode 221: Wrong parameter2 : 21
-NWPLATN1.ITM : Opcode 166: Unknown type 3.
-NWSTAF04.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
-NWSW1H73.ITM : Opcode 0: parameter1 equal to 0 for a bonus/malus to the armor class.
+Найти гдето русские ролики с субтитрами (все варианты, которые ставил из NWN Diamond Edition - без субтитров) и перекодировать в 800x600 для ее
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
