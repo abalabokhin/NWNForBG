@@ -10,7 +10,6 @@ TODO:
 удалить из магазина NWNEURIK.STO - вещь NWDSPO01 сама вещь из мода уже удалена
 
 Еще проверить вещи:
-NWDSPO01 - посмотреть а как вообще это работает и работает ли - может просто удалить вещь + ошибка - NWDSPO01.ITM : Opcode 179: has no effect : levelMin (8) > levelMax (1)
 NWSTAFF1 - не даёт сопротивление магии, как должен по описанию, добавить
 NWANTIDE - починить:
 NWANTIDE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
