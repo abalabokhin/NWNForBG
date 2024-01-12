@@ -1,3 +1,2 @@
 ffmpeg -y -i Chap2_Chap3.bik -vf "drawbox=x=0:y=470:w=800:h=150:color=black@1:t=fill" out.mp4
-ffmpeg -y -i Chap2_Chap3.bik -vf subtitles=chap2_chap3_ru0.srt out.mp4
-
+ffmpeg -i NWN1_2.mp4 -vf subtitles=chap1_chap2_ru0.srt:force_style='Fontsize=12' -c:v libvpx -c:a libvorbis -crf 4 -b:v 0 -b:a 64k NWN1_2.webm
