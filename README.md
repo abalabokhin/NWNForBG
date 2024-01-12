@@ -107,7 +107,7 @@ In development:
 - Chinese translation were finished by Shuiyue Jushi, Youye and Lewis Liu.
 - Added auto genrated Chinese translation, thanks to MephistoSatanDevil and icecool for the provided NWN dialog.tlk.
 - Made some creatures a little weaker to be more ballanced, thanks to TheWildestMage
-- Fixed some texts, items and other small bugs, thanks to TheWildestMage and JohnBob
+- Fixed some texts, items and other small bugs, thanks to TheWildestMage, JohnBob and AGKanevchev
 - Probably fixed crash with a big spider one more time, thanks to TheWildestMage
 - Fixed NWDRAWL2 cut scene, thanks to TheWildestMage
 - Fixed NW2305.TIS thanks to p\_zombie
