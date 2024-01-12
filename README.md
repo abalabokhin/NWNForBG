@@ -104,6 +104,7 @@ Version History
 In development:
 
 - Improved quality of English and Russian movies for EE version, added French movies (thanks to JohnBob).
+- French texts are partially fixed and French sounds are added for some NPCs, thanks to JohnBob.
 - Chinese translation were finished by Shuiyue Jushi, Youye and Lewis Liu.
 - Added auto genrated Chinese translation, thanks to MephistoSatanDevil and icecool for the provided NWN dialog.tlk.
 - Made some creatures a little weaker to be more ballanced, thanks to TheWildestMage
