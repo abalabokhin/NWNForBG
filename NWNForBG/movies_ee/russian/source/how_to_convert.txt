@@ -1,3 +1,0 @@
-ffmpeg -y -i Chap2_Chap3.bik -vf "drawbox=x=0:y=470:w=800:h=150:color=black@1:t=fill" out.mp4
-ffmpeg -y -i Chap2_Chap3.bik -vf subtitles=chap2_chap3_ru0.srt out.mp4
-
