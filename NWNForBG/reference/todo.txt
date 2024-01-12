@@ -1,10 +1,11 @@
 TODO:
 
-*.ToF complains on a spell(spells) (if installing tof after NWN) - fix it
+*.ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
+
 *. Найти гдето русские ролики с субтитрами (все варианты, которые ставил из NWN Diamond Edition - без субтитров) и перекодировать в 800x600 для ее
 Еще проверить вещи:
 NWDSPO01 - посмотреть а как вообще это работает и работает ли - может просто удалить вещь + ошибка - NWDSPO01.ITM : Opcode 179: has no effect : levelMin (8) > levelMax (1)
