@@ -6,59 +6,6 @@ TODO:
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
 
-проверить русскую установку - что ролики на русском проигрываются, а звуки все равно на английском
-удалить из магазина NWNEURIK.STO - вещь NWDSPO01 сама вещь из мода уже удалена
-
-Еще проверить вещи:
-NWSTAFF1 - не даёт сопротивление магии, как должен по описанию, добавить
-NWANTIDE - починить:
-NWANTIDE.ITM : Opcode 221: secondary type (21) must be between 0 and 13 inclusive
-NWANTIDE.ITM : Opcode 221: Wrong parameter2 : 21
-
-проверить это все на наличие ресурсов в оригинальной сборке, если нету, то забить
-NWGOLEM3.ITM : Opcode 206 : Resource cdsw1h58.spl doesn't exist.
-NWGOLEM3.ITM : Opcode 206 : Resource cdmound.spl doesn't exist.
-NWGOLEM3.ITM : Opcode 206 : Resource cdhgnya1.spl doesn't exist.
-NWGOLEM3.ITM : Opcode 206 : Resource cdmound.spl doesn't exist.
-NWGOLEM3.ITM : Opcode 206 : Resource cdhgnya1.spl doesn't exist.
-NWMINH1Y.ITM : Opcode 206 : Resource rr#dpdis.spl doesn't exist.
-NWMINH1Y.ITM : Opcode 206 : Resource rr#dpdis.spl doesn't exist.
-NWMINH1Z.ITM : Opcode 206 : Resource rr#dpdis.spl doesn't exist.
-NWMINH1Z.ITM : Opcode 206 : Resource rr#dpdis.spl doesn't exist.
-NWMORAG4.ITM : Opcode 206 : Resource cdsw1h58.spl doesn't exist.
-NWMORAG4.ITM : Opcode 206 : Resource cdmound.spl doesn't exist.
-NWMORAG4.ITM : Opcode 206 : Resource cdmound.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource rr#dpdis.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource spcl661.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource spcl657.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource spcl653.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 518 : Resource sppsq5.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource rr#dpdis.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource spcl661.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource spcl657.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource spcl653.spl doesn't exist.
-NWPSC08M.ITM : Opcode 206 : Resource sppsq5.spl doesn't exist.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN542 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN543 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN544 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN545 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN546 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN547 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN727 not found.
-NWCLCKAC.ITM : Fichier NWCLCKAC.ITM : Immunity against psionic spells: Opcode 206 with resref SPIN804 not found.
-NWSTAF04.ITM : Immunity to Stun: Opcode 206 with resref SPIN543 not found.
-
-
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
 *. add more music, eg for Aribeth battle from Kyros
