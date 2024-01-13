@@ -35,14 +35,14 @@ Thanks and Acknowledgements
 Languages
 ---------
 
-* Russian, based on Russian NWN translation from 1C
-* English, partially taken from the original NWN texts with script (there are still might be some errors), partially machine translated and proof-read by paladn84 and megrimlock
+* Russian (finished), based on Russian NWN translation from 1C
+* English (finished), partially taken from the original NWN texts with script (there are still might be some errors), partially machine translated and proof-read by paladn84 and megrimlock
 * French, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * German, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Italian, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Spanish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
-* Simplified Chinese partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
+* Simplified Chinese (finished) partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
 
 Description:
 ------------
@@ -102,6 +102,8 @@ Known Bugs:
 Version History
 ---------------
 In development:
+
+0.95 (1/12/24)
 
 - Improved quality of English and Russian movies for EE version, added French movies (thanks to JohnBob).
 - French texts are partially fixed and French sounds are added for some NPCs, thanks to JohnBob.
