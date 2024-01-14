@@ -19,11 +19,4 @@
 @18 = ~Parfait. Je crois qu'il est temps pour nous de commencer. Que le rituel commence !~
 @19 = ~Oui, laissez-moi me concentrer sur le rituel à venir. Au revoir, <CHARNAME>. Je suis certain que vous êtes fier de tout ce que vous avez fait. Vous devriez aller parler aux autres avant que nous ne commencions le rituel. Ils voudront certainement vous féliciter. C'est très important, j'en suis sûr.~ 
 @20 = ~Eh bien, cela fut considéré. Aribeth ne m'apprécie guère, et il m'est difficile de traiter avec elle. Je ne vois vraiment pas ce que Fenthick lui trouve. Je doute qu'elle puisse fournir une vraie raison à sa méfiance. Fenthick est plus compréhensif. Il sait que la foi est un outil puissant.~
-@21 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWFEN237] // @25560
-
-
-/*
-@25560 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWDES144]
-
-@21 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWDES144]
-*/
+@21 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWDES144] // @25560
