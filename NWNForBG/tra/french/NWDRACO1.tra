@@ -1,7 +1,7 @@
 @0 = ~Hmmm... vous n'êtes pas un de mes esclaves. Il étrange pour moi de voir quelqu'un qui ne tremble pas de terreur en ma présence, minuscule <RACE>. Je trouve votre courage... étonnant.~ [NWDRA152]
 @1 = ~Hum, les visiteurs sont une grande curiosité, dans mon monde, aussi pardonnerai-je votre intrusion. Dites-moi, petite créature, que faites-vous dans mon domaine ?~ [NWDRA153]
 @2 = ~Je suis <CHARNAME>. Je recherche les Mots de Pouvoir.~
-@3 = ~I'm with <CHARNAME>. I am searching for the Words of Power.~ /*Je suis <CHARNAME>. Je recherche les Mots de Pouvoir.*/
+@3 = ~Je fais parti du groupe de <CHARNAME>. nous sommes à la rechercher des Mots de Pouvoir.~
 @4 = ~J'aurais des questions à vous poser.~
 @5 = ~Je suis ici pour vous tuer, Dragon!~
 @6 = ~Je dois y aller.~
@@ -40,5 +40,5 @@
 @39 = ~Vous mourriez en essayant. Ne me provoquez pas, minuscule créature. Le sang de mes veines est épaissi par l'âge et lent à bouillir, mais ma colère est terrible, quand elle éclate.~
 @40 = ~Donnez-moi le Mot ou vous allez mourir !~ 
 @41 = ~L'immortalité, peut-être ? Le Mot m'alimente, il est ma vie. Vous ne pouvez rien me proposer de mieux, mortel.~
-@42 = ~I have suffered you to live far too long, <RACE> fool!~/*J'ai trop longtemps supporté votre existence, stupide créature !*/
+@42 = ~J'ai trop longtemps supporté votre existence, stupide créature !~
 @43 = ~Vous venez une fois de plus troubler ma solitude, minuscule créature. Et, cette fois encore, je vous pardonnerai cette intrusion. Pour quelle raison êtes-vous revenu ?~ [NWDRA154]

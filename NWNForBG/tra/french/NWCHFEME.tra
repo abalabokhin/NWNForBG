@@ -25,13 +25,13 @@
 @24 = ~Contre quoi le garde vous protège-t-il ?~
 @25 = ~Il ne faut pas raconter des histoires... Vous devriez en parler au bourgmestre Mobley... Lui vous écoutera, j'en suis sûre...~
 @26 = ~De qui voulez-vous que je vous parle ?~
-@27 = ~Do these Jharegs have a castle?~ /*Les Jhareg ont-ils un château ?*/
+@27 = ~Les Jhareg ont-ils un château ?~
 @28 = ~Qui sont les gens importants en ville ?~
 @29 = ~Oh ! Nous sommes sous la protection des deux Seigneurs Jhareg : Karlat et...j'ai oublié le nom du deuxième. Ils nous protègent. Nous sommes bien protégés... Euh... Je regrette, mais... Vous devriez aller voir le bourgmestre, s'il vous plaît. Ce n'est pas à moi de parler de ces choses-là...~ 
 @30 = ~Avez-vous peur du second Jhareg ?~
-@31 = ~No. We don't want to attract attention, you know... well... I mean, we don't need any suspicious people here... We keep everything the way it is... everything stays the same... We shouldn't let things change, you know... Perhaps you'd be better served by camping along the Neverwinter trade route... there's a new outpost... Port Llast... ?~/*Non. Je n'ai pas le temps de t'écouter. Peut-être feriez-vous mieux d'emprunter la route de Padhiver. Il y a un village qui vient de se construire par là... Port Llast, il me semble...*/
+@31 = ~Non. Nous ne voulons pas attirer l'attention, voyez-vous... en fait... ce que je veux dire c'est que nous ne voulons pas attirer les gens indésirables... Nous gardons les choses comme elles sont, toujours... Il ne faut pas qu'elles changent, vous comprenez... Peut-être feriez-vous mieux d'emprunter la route de Padhiver. Il y a un village qui vient de se construire par là... Port Llast, il me semble...~
 @32 = ~Un village qui vient de se construire ? Mais Port Llast existe depuis de longues années !~
-@33 = ~No... no I was quite sure I heard they were just starting... Castle Never was being rebuilt, too, what with the orc wars and all... I think... Stopped... frozen... He did it . He brought it to this with his stories... even after... the end...~ /*Non... je suis certaine d'avoir entendu dire qu'ils venaient juste de commencer les travaux... Le château de Padhiver était également en cours de rénovation, avec les guerres contre les orques et tout ça... enfin, je pense... Figé... Immobilisé... C'est lui, lui, avec ses histoires... Et ils vécurent heureux jusqu'à... jusqu'à... la fin...*/
+@33 = ~Non... je suis certaine d'avoir entendu dire qu'ils venaient juste de commencer les travaux... Le château de Padhiver était également en cours de rénovation, avec les guerres contre les orques et tout ça... enfin, je pense... Figé... Immobilisé... C'est lui, lui, avec ses histoires... Et ils vécurent heureux jusqu'à... jusqu'à... la fin...~
 @34 = ~Pardon, je ne voulais pas dire cela. J'ai du mal à garder les idées claires, ces temps-ci. Je suis sûr que vous trouverez tout ce dont vous avez besoin à Port Llast.~
 @35 = ~Nous n'avons pas besoins de gardes... à part celui qui est à la porte du château. Les frères Jhareg ont fondé Boisroussi. Ils nous protègent... ils organisent des fêtes pour les enfants... C'est pour les frères Jhareg que nous sommes ici. Il ne faut pas évoquer leurs affaires. Cela pourrait amener le changement... Mettre un terme... à tout...~
 @36 = ~Vous devriez aller voir le bourgmestre Mobley. C'est tout ce que je peux vous dire. Les gens parlent trop, racontent trop d'histoires... comme ce Quint...~
@@ -42,5 +42,5 @@
 @41 = ~Vous devriez aller parler au bourgmestre Mobley. Il vous racontera toute l'histoire... contentez-vous de son récit... et pas de celui de Quint. Il dit trop de...~
 @42 = ~Je voudrais vous demander autre chose sur Boisroussi.~
 @43 = ~Quint... C'est Quint, son nom. Il lisait toujours des histoires aux enfants... Et cela pose toujours des problèmes... Je vous en prie, je ne peux pas parler de cela. Allez voir le bourgmestre Mobley. Lui vous aidera...~
-@44 = ~But it's not... no... you're wrong... you... Stopped... frozen... He did it. He brought it to an end with his stories... happily ever after... the end...~ 
-/*Mais ce n'est pas... Non, vous vous trompez, vous... Figé... Immobilisé... C'est lui, lui, avec ses histoires... Et ils vécurent heureux jusqu'à... jusqu'à... la fin...*/
+@44 = ~Mais ce n'est pas... Non, vous vous trompez, vous... Figé... Immobilisé... C'est lui, lui, avec ses histoires... Et ils vécurent heureux jusqu'à... jusqu'à... la fin...~
+/**/

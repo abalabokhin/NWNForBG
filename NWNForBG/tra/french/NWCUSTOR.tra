@@ -1,10 +1,9 @@
 @0 = ~N'est-il pas interdit de se balader dans les tavernes avec une arme à la main ?~
-@1 = ~Please put that away, <SIRMAAM>. It makes me nervous.~/*S'il vous plaît, rangez ça, <SIRMAAM>. Ça me fout les jetons.*/
+@1 = ~S'il vous plaît, rangez ça, mon bon sir. Ça me fout les jetons.~ ~S'il vous plaît, rangez ça, ma bonne dame. Ça me fout les jetons.~
 @2 = ~Quelle est cette odeur ? On dirait... des excréments d'ours, ou quelque chose comme ça...~
-@3 = ~Who is this with us? New? Have you all decided to move out of Neverwinter now?~ /*Qui est donc ce Lenton? Nouveau Avez-vous des nouvelles du Bois de Padhiver ?*/
-@4 = ~Je n'ai guère le temps de parler à des gens comme vous, désolé. Vous pouriez être un des ces loups-garous qui hantent la région !~
+@3 = ~Qui est avec nous ? Qui nous a rejoint ? Avez-vous tous décidé de quitter Padhiver pour de bon ?~ 
+@4 = ~Je n'ai guère le temps de parler à des gens comme vous, désolé. Vous pourriez être un des ces loups-garous qui hantent la région !~
 @5 = ~C'est une bonne chose que l'épidémie de Padhiver soit terminée. Si cela avait duré, la ville aurait trop souffert et il y aurait certainement eu la guerre !~
 @6 = ~Redoublez de prudence sur les routes. Il y a des loups-garous dans la région... et j'ai entendu dire qu'il y avait des bandits monstrueux sur les routes du nord.~
-@7 = ~C'est un plaisir de vous rencontrer, <SIRMAAM>. Je ne crois pas vous avoir déjà vu à Port Llast.~
-@8 = ~I don't suppose there's a chance you'd buy me a drink, friend?~ 
-/*J'imagine qu'il n'y a aucune chance que tu m'offres un verre, mon mignon ?*/
+@7 = ~C'est un plaisir de vous rencontrer. Je ne crois pas vous avoir déjà vu à Port Llast.~
+@8 = ~J'imagine qu'il n'y a aucune chance que tu m'offres un verre, l'ami ?~ ~J'imagine qu'il n'y a aucune chance que tu m'offres un verre, l'amie ?~

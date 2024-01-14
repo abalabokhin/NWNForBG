@@ -2,9 +2,9 @@
 @1 = ~Heureux d'avoir pu aider à trouver un remède. C'est ce que nous faisons tous, chacun à sa manière.~
 @2 = ~Moi juste héros. Héros faire choses comme ça.~
 @3 = ~Vous parlez bien, mais moi j'agis et j'ai obtenu des résultats.~
-@4 = ~Ecoutez, Fenthick, ce n'est pas le moment de parler de ça. Les autres ne pourront pas comprendre.~
+@4 = ~Écoutez, Fenthick, ce n'est pas le moment de parler de ça. Les autres ne pourront pas comprendre.~
 @5 = ~Peut-être, mais ce sont vos méthodes de bandit qui nous ont amenés jusque là. Bravo, vous avez fait mieux que mes condisciples Heaumites. Bien sûr, maintenant il est temps pour vous de vous éloigner. Votre présence n'est pas nécessaire pour le rituel. Vous pouvez nous regarder fabriquer le remède à l'épidémie, mais n'interférez pas.~
-@6 = ~Why did you have Fentick reveal the secret of Castle Nevers' defense?~ /*Pourquoi avez-vous poussé Fenthick a vous donner sa clef du château de Padhiver ?*/
+@6 = ~Pourquoi avez-vous poussé Fenthick a vous révéler le secret de la défense du château de Padhiver ?~
 @7 = ~J'ai des questions à vous poser au sujet du rituel.~
 @8 = ~Que ferez-vous une fois le fléau éradiqué ?~
 @9 = ~J'aurais des question au sujet de la région.~
@@ -19,4 +19,11 @@
 @18 = ~Parfait. Je crois qu'il est temps pour nous de commencer. Que le rituel commence !~
 @19 = ~Oui, laissez-moi me concentrer sur le rituel à venir. Au revoir, <CHARNAME>. Je suis certain que vous êtes fier de tout ce que vous avez fait. Vous devriez aller parler aux autres avant que nous ne commencions le rituel. Ils voudront certainement vous féliciter. C'est très important, j'en suis sûr.~ 
 @20 = ~Eh bien, cela fut considéré. Aribeth ne m'apprécie guère, et il m'est difficile de traiter avec elle. Je ne vois vraiment pas ce que Fenthick lui trouve. Je doute qu'elle puisse fournir une vraie raison à sa méfiance. Fenthick est plus compréhensif. Il sait que la foi est un outil puissant.~
-@21 = ~Content de vous revoir. Je peux vous accorder un moment, mais nous commencerons le rituel dès que vous aurez parlé à tout le monde. Avec mon aide, Desther va... eh bien... c'est sans importance.~ [NWDES144]
+@21 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWFEN237] // @25560
+
+
+/*
+@25560 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWDES144]
+
+@21 = ~Je veux bien que nous nous entretenions, mais vous devriez consacrer un peu de votre temps aux autres avant la cérémonie. Il voudront vous féliciter, j'en suis sûr.~ [NWDES144]
+*/

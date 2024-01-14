@@ -10,12 +10,12 @@ BEGIN ~NWBOOKCE~
 IF ~  Global("NWDoorOpened","GLOBAL",0)
 ~ THEN BEGIN 0 // from:
   SAY @0
-  IF ~  OR(2)GlobalGT("NWTelmaSecret","GLOBAL",0)GlobalGT("NWPankinSecret","GLOBAL",0)~ THEN REPLY @1GOTO 1
+  IF ~  OR(2)GlobalGT("NWTelmaSecret","GLOBAL",0)GlobalGT("NWPankinSecret","GLOBAL",0)~ THEN REPLY @1 GOTO 1
   IF ~~ THEN REPLY @2 GOTO 2
   IF ~~ THEN REPLY @3 GOTO 2
   IF ~~ THEN REPLY @4 GOTO 2
   IF ~~ THEN REPLY @5 GOTO 2
-  IF ~  HaveSpell(WIZARD_KNOCK)~ THEN REPLY @6 GOTO 3
+  IF ~HaveSpell(WIZARD_KNOCK)~ THEN REPLY @6 GOTO 3
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.0

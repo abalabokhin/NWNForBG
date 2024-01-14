@@ -195,7 +195,7 @@ All three artifacts from Lord Never's tomb have been returned to Judge Oleff at 
 @92734 = ~Temple of Tyr: Never's Tomb
 
 All of the artifacts to be found in the tombs of Halueth Never and his companions have been accounted for. Unfortunately, some of them are now in the hands of a rival church. Oleff was understandably disturbed by this, though there is little he, or anyone, can do. For whatever reason, an evil hand had a part in this quest.~/*Tous les artefacts qui se trouvaient dans les tombes d'Halueth Padhiver et de ses compagnons ont été retrouvés. Malheureusement, certains sont à présent aux mains d'une église rivale. Cela a plus qu'irrité Oleff, mais personne n'y peut rien. Un esprit malfaisant s'est pour quelque raison impliqué dans cette quête.*/
-@92742 = ~Ophala Cheldarstorn du Masque de Pierrelune a demandé à ce que soient volés plusieurs objets d'art appartenant à des gens qui se ne sont pas privés de critiquer son établissement. Une urne en possession d'un certain Hodge se trouve quelque part dans le quartier de Lacnoir. Quant au portrait du défunt Réginald Fondrhum III serait caché dans la propriété Fondrhum, également dans le quartier de Lacnoir. Enfin, une statuette de femme se trouverait dans une propriété du quartier des Docks, et plus particulièrement chez un dénommé Androd Golden. Ophala est disposée à payer très cher chacun de ces trois objets.~
+@92742 = ~Ophala Cheldarstorn du Masque de Pierrelune a demandé à ce que soient volés plusieurs objets d'art appartenant à des gens qui se ne sont pas privés de critiquer son établissement. Une urne en possession d'un certain Hodge se trouve quelque part dans le quartier de Lacnoir. Quant au portrait du défunt Réginald Fondrhum III serait caché dans la propriété Fondrhum, également dans le quartier de Lacnoir. Enfin, une statuette de femme se trouverait dans une propriété du quartier des Quais, et plus particulièrement chez un dénommé Androd Golden. Ophala est disposée à payer très cher chacun de ces trois objets.~
 @92799 = ~Moonstone Mask: Art Theft
 
 Ophala Cheldarstorn of the Moonstone Mask is very pleased. She had requested the theft of a series of art objects from people who have been critical of her establishment and all of those hits have been carried out with great success.~/*Ophala Cheldarstorn du Masque de Pierrelune est très heureuse. Elle avait commandité le vol d'objets d'art appartenant à des gens qui avaient osé critiquer son établissement, et tous les forfaits ont été menés à bien.*/
@@ -734,7 +734,7 @@ Not Usable By:
 @102325 = ~Agnes Masterson~/*Maîtres blêmes*/
 @102326 = ~Règle ces problèmes, Kurdan, ou ton corps sera le prochain que je posséderai.~
 @102327 = ~Oui, maître. On les attendra ici.~
-@102328 = ~Captain Alaefin~/*Capitaine Aédoric*/
+@102328 = ~Capitaine Alaéfin~
 @102329 = ~Sssi tu détruis cccce corps, j'en trouverai un autre ! Je ne finirai pas dans une cage !~
 @102330 = ~Ici, minable ! Je suis à l'intérieur ! HAHAHAHAHAHA !~
 @102331 = ~Attaque-toi à cette chair si tu y tiens ! Ça ne te servira à rien !~
@@ -1179,7 +1179,7 @@ Equipped abilities:
 Weight: 4
 
 Usable By:
- Mage (single-, double-, and multi-class)~/*Où trouverai-je ces magiciens ? Donnez-moi une bonne raison de ne pas me mêler des affaires de ce culte... La Voile d'Argent est dans la zone ouest des Docks. Il y a un passage à l'intérieur. Vengaul dit qu'il est sûr... pour lui, en tout cas.*/
+ Mage (single-, double-, and multi-class)~/*Où trouverai-je ces magiciens ? Donnez-moi une bonne raison de ne pas me mêler des affaires de ce culte... La Voile d'Argent est dans la zone ouest des Quais. Il y a un passage à l'intérieur. Vengaul dit qu'il est sûr... pour lui, en tout cas.*/
 @102418 = ~Typically carried by traveling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.
 
 STATISTICS:
@@ -2134,7 +2134,7 @@ C'est un honneur de servir le Culte de l'Oeil. Si seulement j'avais pu assister 
 Les voilà qui reviennent se faire tuer. Plus je reste ici et plus j'ai l'impression de devenir comme eux. Je commence à me demander si je reverrai un jour ma maison...~
 @102615 = ~You lost!~/*Tope là !*/
 @102616 = ~Hrusk~
-@102617 = ~Citoyen du quartier des docks~
+@102617 = ~Citoyen du quartier des quais~
 @102618 = ~Claudus~
 @102619 = ~Harbinger Kin Greatsword +4~/*Epée à deux mains (+1) "Lame du destin"*/
 @102620 = ~This unique two-handed sword is made by the finest blacksmiths in Neverwinter. They managed to forge a simple enchanted sword by adding some adamantite ore to it. The result is a two-handed sword with amazing properties. It is so easy to use that even a bad hit on an enemy can cause significant damage and damage to armor. The owner of this sword can wield it much better and faster than any other two-handed sword. The sword also deals additional damage to the enemy with fire and cold magic.
@@ -3393,13 +3393,13 @@ Dons requis : Arme courante, Druide*/
 @103065 = ~Souvenez-vous, Maugrim, qu'il est important de localiser les autres Mots de Pouvoir. Mais il faut vous méfier d'Haédraline, car elle...~
 @103066 = ~Tu as fait preuve d'imprudence, Maugrim. Nous avons de la visite...~
 @103067 = ~Le Mot de Pouvoir ne doit pas tomber entre les mains de l'ennemi. Prends Aribeth avec toi et va-t-en. Je vais appeler mes serviteurs afin qu'ils se chargent de ces idiots.~
-@103068 = ~Etrange visage~
+@103068 = ~Étrange visage~
 @103069 = ~Morden~
 @103070 = ~Mulland~
 @103071 = ~Capitaine Mung~
 @103072 = ~Garde~
-@103073 = ~Mutamin's Key~/*Clé de Meldanen*/
-@103074 = ~This key opens the door to the Green Griffin Basement.~/*Route de l'Est ; au nord, l'auberge du Griffon Vert.*/
+@103073 = ~Clé de Mutamin~
+@103074 = ~Cette clé ouvre la porte du sous-sol du Griffon vert.~
 @103075 = ~Lord Nasher~
 @103076 = ~Neurik~
 @103079 = ~Blessed Flail +4~/*Crevice +4*/
@@ -3449,7 +3449,7 @@ Maugrim Korothir~
 @103097 = ~City Exit~/*Sortie de la grotte*/
 @103098 = ~Vers Lacnoir~
 @103099 = ~Vers le Quartier de la Péninsule~
-@103100 = ~Vers le quartier des docks~
+@103100 = ~Vers le quartier des quais~
 @103101 = ~Vres le Nid des Mendiants~
 @103102 = ~The door is closed. Before you can leave, you must talk to Lady Aribeth.~/*La porte est verrouillée. Comment puis-je vous être utile, Dame Aribeth ?*/
 @103103 = ~Vers le Coeur de la Ville~
@@ -3496,7 +3496,7 @@ A portrait of Sir Reginald Rumbottom III has been found that appears to have the
 @103131 = ~Chaumière de Wanev~
 @103132 = ~L'Enclume Fendue~
 @103133 = ~Grove Entrance~/*Entrée de grotte*/
-@103134 = ~Docks Warehouse~/*Bureau des docks*/
+@103134 = ~Quais Warehouse~/*Bureau des quais*/
 @103135 = ~Enfeeblement~/*Débilité*/
 @103136 = ~Enfeeblement
 (Divination)
@@ -3508,7 +3508,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Neg.
 
-By means of Enfeeblement, a wizard weakens an opponent, reducing its Strength and thereby the attacks that rely upon it. The victim is reduced to a Strength of 5 for the duration of the spell unless a Save vs. Spell with penalty -2 is made. This spell can be devastating, weakening the strongest enemies.~/*Je conseille à tout le monde de rester à l'écart des Docks. Non pas que les autres quartiers soient beaucoup plus accueillants. Vous pourrez peut-être sauver quelques cas parmi les plus désespérés, mais le mal est déjà fait. L'épidémie a sapé les forces vives de la ville. Elle a accompli son oeuvre. Parlez-moi si vous le pouvez. Ce sort en peut être utilisé avec le Don Préparation de potions.*/
+By means of Enfeeblement, a wizard weakens an opponent, reducing its Strength and thereby the attacks that rely upon it. The victim is reduced to a Strength of 5 for the duration of the spell unless a Save vs. Spell with penalty -2 is made. This spell can be devastating, weakening the strongest enemies.~/*Je conseille à tout le monde de rester à l'écart des Quais. Non pas que les autres quartiers soient beaucoup plus accueillants. Vous pourrez peut-être sauver quelques cas parmi les plus désespérés, mais le mal est déjà fait. L'épidémie a sapé les forces vives de la ville. Elle a accompli son oeuvre. Parlez-moi si vous le pouvez. Ce sort en peut être utilisé avec le Don Préparation de potions.*/
 @103137 = ~South Road - to Charwood and Neverwinter~/*Route du Sud : Pierre et les Loups*/
 @103138 = ~North Road - to Luskan~/*Route du Nord - grange*/
 @103139 = ~Vers Port Llast.~
@@ -3724,7 +3724,7 @@ The city of Luskan rises and falls on the quarrels of its High Captains. Lately,
 The city of Luskan rises and falls on the quarrels of its High Captains. When those quarrels recently escalated into an all-out war for supremacy, the two remaining contenders, Kurth and Baram, pulled out all the stops. Adventurers from Neverwinter took advantage of the situation and assassinated both men, finally bringing the longstanding reign of the High Captains to its bitter end.~/*La ville de Luskan vit au rythme des querelles entre ses Hauts Capitaines. Ces derniers temps, ces querelles se sont transformées en véritable guerre ouverte pour la suprématie, et les deux derniers concurrents, Kurth et Baram, ne reculent plus devant rien. Des aventuriers venus de Padhiver ont profité de cette situation pour tuer les deux hommes, mettant enfin un terme au long règne des Hauts Capitaines.*/
 @103215 = ~Le portail a été refermé.~
 @103216 = ~To Baram's Lair~/*Homme de Baram*/
-@103217 = ~To the Docks of Luskan~/*La ville de Luskan*/
+@103217 = ~To the Quais of Luskan~/*La ville de Luskan*/
 @103218 = ~Le portail au centre de la pièce est de toute évidence une construction magique, artificiellement alimentée en énergie. Son rôle est inconnu... mais l'aura qu'il émet emplit la pièce d'un air glacé et maléfique.~
 @103219 = ~This statue is cold. There is no marker identifying who this figure might have been.~/*C'est réglé. Il n'y a pas de mal à parler, non ?*/
 @103220 = ~You cannot use the portal without a magical stone.~/*Vous ne pouvez utiliser la relique pour le moment.*/
@@ -3811,7 +3811,7 @@ Les habitants de Padhiver sont souvent calmes, bien élevés, érudits et efficaces
 
 Padhiver est peut-être la cité la plus cosmopolite de tout le continent, puisqu'elle n'est pas désavantagée par les bas quartiers et la concurrence sauvage qui caractérisent Eauprofonde, ni le climat plus rude et le besoin permanent de se défendre contre les orques et autres races malfaisantes qui sont la spécialité de Luneargent. Plusieurs villes d'Amn et de Calimshan prétendent souvent être plus civilisées, mais les marchands qui s'y rendent s'accordent pour dire que Padhiver est vraiment civilisée, elle, contrairement à ces cités prétentieuses qui se voudraient ses rivales mais "ont atteint le stade de la décadence sans passer au préalable par celui de la civilisation", pour reprendre les paroles de Mellomir le sage.
 
-Padhiver est divisée en plusieurs quartiers : le Coeur de la Ville, les quartiers de Lacnoir, de la Péninsule et des Docks et, enfin, le Nid des Mendiants. L'activité commerciale gravite autour du Coeur de la Ville, qui regroupe le château de Padhiver, siège du gouvernement, et le palais de justice, un temple de Tyr. Le quartier de Lacnoir accueille la noblesse tandis que le Nid des Mendiants regroupe les citoyens les plus pauvres. La Péninsule est construite autour d'une prison et le quartier des Docks est doté de l'un des ports les plus actifs de la Côte des Epées.~
+Padhiver est divisée en plusieurs quartiers : le Coeur de la Ville, les quartiers de Lacnoir, de la Péninsule et des Quais et, enfin, le Nid des Mendiants. L'activité commerciale gravite autour du Coeur de la Ville, qui regroupe le château de Padhiver, siège du gouvernement, et le palais de justice, un temple de Tyr. Le quartier de Lacnoir accueille la noblesse tandis que le Nid des Mendiants regroupe les citoyens les plus pauvres. La Péninsule est construite autour d'une prison et le quartier des Quais est doté de l'un des ports les plus actifs de la Côte des Epées.~
 @103245 = ~Le Bois de Padhiver~
 @103246 = ~"La mine et le bois de Padhiver"
 Padhiver contrôle une grande partie de l'économie minière due aux nains et gnomes remontés des Tréfonds Obscurs par des passages débouchant en secret dans divers entrepôts de la ville. La cité est également dotée d'une industrie de la pêche florissante, les pêcheurs opérant autant en haute mer que près des côtes. Les eaux tempérées sont un terrain propice à la prolifération de nombreuses espèces de poissons et de crustacés. 
@@ -4039,12 +4039,12 @@ Il lui fallut dix ans pour mener ce projet à terme mais, quand il en eut fini, l
 @103317 = ~Carnet de fouilles du tombeau d'Halueth~
 @103318 = ~This book details the initial search for the tomb of Halueth Never. It is unfinished, the writer obviously falling to the plague before he could include many details, but it does point to the possible locations for three tombs in addition to the one in the Peninsula District.
 Beggar's Nest: Great Graveyard
-Docks District: Northwestern quarter aqueducts
+Quais District: Northwestern quarter aqueducts
 Blacklake District: Northern quarter
 
 The directions are vague, but the book does mention that each tomb is likely sealed with a magically protected door. A riddle of some sort is the "key" to each. The solution to the Peninsula tomb door was "Emerald," which was answered by actually placing an emerald in the container immediately next to the door. It is worth noting that this action seemed to destroy the item, making it an expensive discovery.~/*Ce livre détaille les recherches entreprises pour retrouver le tombeau d'Halueth Padhiver. Il n'a pas été terminé, son auteur ayant succombé à la maladie avant d'inclure de nombreux détails, mais il mentionne trois sites possibles pour le tombeau, en plus de celui du quartier de la Péninsule.
 Nid des Mendiants : le Grand Cimetière
-Quartier des Docks : aqueducs de la partie nord-est
+Quartier des Quais : aqueducs de la partie nord-est
 Quartier de Lacnoir : partie sud-ouest
 
 Les indications sont vagues, mais le livre souligne que chaque tombeau est probablement défendu par une porte protégée par magie. C'est une sorte d'énigme qui permet d'ouvrir chaque porte. La solution correspondant à la porte du quartier de la Péninsule était "Emeraude", et il fallait, pour pouvoir entrer, placer une émeraude à l'endroit prévu à cet effet, juste à côté de la porte. Il est utile de noter que cela détruisait l'objet. Une découverte qui s'avéra donc fort coûteuse.
@@ -4332,7 +4332,7 @@ Not Usable By:
 @103463 = ~Annonce de vente aux enchères~
 @103464 = ~Annonce de vente aux enchèresCe document parle d'une vente aux enchères qui doit se tenir à la Taverne Miteuse. Il ne révèle pas ce qui sera mis en vente, mais il incite toutes les personnes souhaitant survivre à l'épidémie à venir, et ajoute que quiconque porterait ce texte à l'attention de la garde vivrait là ses derniers instants. Le sceau qui conclut le texte est apparemment celui des Sanguinaires, un groupe de pirates.
 
-Au dos du document se trouve un plan du quartier des Docks. La Taverne Miteuse est l'un des plus grands bâtiments du côté nord.
+Au dos du document se trouve un plan du quartier des Quais. La Taverne Miteuse est l'un des plus grands bâtiments du côté nord.
 (votre carte automatique a été mise à jour)~
 @103465 = ~Calice d'argent de Lunarc~
 @103466 = ~Ce calice est aussi simple qu'élégant. Selon la légende, la déesse elfique Sehanine Lunarc  l'aurait donné il y a bien longtemps à un prêtre elfe ayant découvert une conspiration des drows visant les elfes de lune.~
@@ -4406,8 +4406,8 @@ Dons requis : Arme de guerre, elfe*/
 @103492 = ~Ce petit rubis de forme étrange semble luire de l'intérieur. Il a manifestement une grande valeur, malgré sa taille réduite.~
 @103493 = ~Les cendres de Loup Bondissant~
 @103494 = ~Cette urne de bronze est remplie de cendres... ce qui reste d'un humain de toute évidence... Elle est décorée avec des runes uthgardt qui indiquent que le défunt était un guerrier légendaire de sa tribu. L'urne est grossièrement faite et n'a que peu de valeur intrinsèque.~
-@103495 = ~Médaillon de Daranei~
-@103496 = ~En ouvrant ce médaillon, vous découvrez un message de Vengaul Sanguin à l'attention de Daranei : "Si nous venions à être séparés, ce médaillon déplierait ses voiles d'argent et t'amènerait en sécurité dans mes bras."~
+@103495 = ~Médaillon de Dara'nei~
+@103496 = ~En ouvrant ce médaillon, vous découvrez un message de Vengaul Sanguin à l'attention de Dara'nei : "Si nous venions à être séparés, ce médaillon déplierait ses voiles d'argent et t'amènerait en sécurité dans mes bras."~
 @103497 = ~Ordres de Callik~
 @103498 = ~Cette note est couverte d'inscriptions rédigées à la hâte. Ce sont, pour la plupart, des ordres donnés aux membres d'un groupe de recherche.
 Extrait :
@@ -4418,7 +4418,7 @@ Callik~
 @103500 = ~Ordres de Callik~
 @103501 = ~Cette note a été rédigée par Callik, le fourbe lieutenant de Vengaul Sanguin. Elle explique comment accéder à la grotte sous-marine par l'aqueduc de la ville.
 Extrait :
-Quand tu auras appris tout ce que tu pourras de la donzelle de Vengaul, viens nous rejoindre dans l'aqueduc. L'entrée est située au nord-ouest du quartier des Docks, dans un vieux bâtiment de maintenance. Je crois connaître un autre chemin pour atteindre la réserve secrète du vieux fou. La cockatrice devrait s'y trouver, de même que tout ce sur quoi il nous a empêchés de mettre la main. L'heure est venue de récupérer notre dû ! Les gestes ci-dessous te permettront d'ouvrir la grille scellée de l'aqueduc. Garde bien cette note sur toi, sans quoi tu oublieras sûrement les gestes !
+Quand tu auras appris tout ce que tu pourras de la donzelle de Vengaul, viens nous rejoindre dans l'aqueduc. L'entrée est située au nord-ouest du quartier des Quais, dans un vieux bâtiment de maintenance. Je crois connaître un autre chemin pour atteindre la réserve secrète du vieux fou. La cockatrice devrait s'y trouver, de même que tout ce sur quoi il nous a empêchés de mettre la main. L'heure est venue de récupérer notre dû ! Les gestes ci-dessous te permettront d'ouvrir la grille scellée de l'aqueduc. Garde bien cette note sur toi, sans quoi tu oublieras sûrement les gestes !
 
 Callik
 
@@ -5511,7 +5511,7 @@ Requirements: 19 Strength~/*Les disciples d'Ao veulent que vous vous convertissi
 @103814 = ~Uniforme de Sanguinaire~
 @103815 = ~Urth~
 @103816 = ~Anneau de Urth~
-@103817 = ~This is Urth's Ring, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~/*Pourquoi endroit s'appeler Port Llast ? Avoir docks dans environs ? "Je dois retourner à la Cité des âmes perdues. Pouvez-vous m'y conduire ?"*/
+@103817 = ~This is Urth's Ring, one of Port Llast's youths who became werewolves. It must be presented to the priest of Tyr Neurik in Port Llast as evidence.~/*Pourquoi endroit s'appeler Port Llast ? Avoir quais dans environs ? "Je dois retourner à la Cité des âmes perdues. Pouvez-vous m'y conduire ?"*/
 @103818 = ~Un intrus ! Un intrus !~
 @103819 = ~Vengaul~
 @103820 = ~Gemme de Wanev~
@@ -6215,78 +6215,42 @@ Rolkid Grande-Lance~
 @104504 = ~Tête de Vaath~
 @104505 = ~[Elément du scénario : tête de Vaath]~
 @104508 = ~Blacksmith Barun's Recipes~/*Le quartier de Lacnoir : au secours de Samuel*/
-@104509 = ~Barun's catalog of weapon and armor modifications.
+@104509 = ~Catalogue des modifications d'armes et armures de Barun.
 
-Toss the magical weapon and the component I require to improve it onto my forge and I'll give it a whack with my hammer.
-You'll need to pay me first, of course.
-
-Armor and Axes:
-
-Chromatic Armor: Requires ritellium and full plate with Armor Class: 1.
-Scales of Truth: Requires special holy water and a chain mail +1 with Armor Class: 4.
-Whitebone Armor: Requires gargoyle skull and studded leather armor +2 with Armor Class: 5.
-Sentinel: Requires adamantite and a battle axe +1.
-Stonefire Great Axe: Requires adamantite and a halberd +1.
-Dragon Horror: Requires dragon blood and a battle axe +1.
-
-Maces and the like:
-
-Gladiator Club: Requires ironwood and a club.
-Ironwood Mace: Requires ironwood and a mace +1.
-Storm Hammer: Requires ritellium and a war hammer +1.
-Foundation Flail: Requires ironwood and a magic flail +1.
-Mace of Disruption: Requires special holy water and a mace +1.
-Drone Morning Star: Requires fairy dust and a morning star +1.
-Rune Hammer: Requires adamantite and a war hammer +2.
-
-Blades both Sharp and True:
-
-Harbinger Kin Greatsword: Requires adamantite and a two-handed sword +1.
-Sword Saint Katana: Requires adamantite and a katana +1.
-Astral Blade Long Sword: Requires ritellium and a long sword +1.
-Astral Blade Bastard Sword: Requires ritellium and a bastard sword +1.
-Desert Wind Scimitar: Requires adamantite and a scimitar +1.
-Feyduster Short Sword: Requires fairy dust and a short sword +1.
-
-Rarer Fare:
-Ravager Halberd: Requires dragon blood and a halberd +2.
-Fey Spear: Requires fairy dust and a spear +1.~/*Catalogue des modifications d'armes et armures de Barun.
 Placez les armes magiques et les composants requis sur la forge et j'userai de mon marteau.
 Il va sans dire que vous devrez d'abord me payer.
 
 Armures et haches :
-Cuirasse arc-en-ciel : nécessite un diamant et une armure magique de CA +6.
-Armure d'écailles du Juste : Nécessite de l'eau bénite spéciale et une armure magique de CA +5.
-Armure d'os blanc en cuir : nécessite un crâne de gargouille et une armure magique de CA +3.
-La Sentinelle : nécessite de l'adamantite et une hache d'armes magique.
-Hache double des grands peuples : nécessite de l'adamantite et une hache double magique.
-Grande hache de pierre-de-feu : nécessite de l'adamantite et une grande hache magique.
-Hachette Trancheglace : nécessite du sang de dragon et une hachette magique.
+
+Cuirasse arc-en-ciel : exige du ritellium et une armure de plate complète.
+Armure d'écailles du juste : nécessite de l'eau bénite spéciale et une cotte de mailles +1.
+Armure d'os blanc : exige un crâne de gargouille et une Besantine +2.
+La Sentinelle : nécessite de l'adamantite et une hache d'armes +1.
+Grande hache Pierre à feu : nécessite de l'adamantite et une Hallebarde +1.
+Hache Tranchedragon : nécessite du sang de dragon  et une hache d'armes +1.
 
 Masses et armes assimilées :
-Gourdin de Gladiateur : nécessite du bois de fer et un gourdin magique.
-Masse de bois de fer : nécessite du bois de fer et une masse d'arme double magique.
-Fléau d'armes lourd destructeur : nécessite du sang de dragon et un fléau d'armes lourd magique.
-Marteau léger tempêtes : nécessite un diamant et un marteau léger magique.
-Fléau d'armes léger Fondation : nécessite du bois de fer et un fléau d'armes léger magique.
-Masse de disruption : nécessite de l'eau bénite spéciale et une masse magique.
-Morgenstern de bourdonnement : nécessite de la poudre féerique et une morgenstern magique.
-Marteau runique : nécessite de l'adamantite et un marteau de guerre magique.
+
+Gourdin du Gladiateur : nécessite du bois de fer et un gourdin.
+Masse de bois de fer : nécessite du bois de fer et une masse d'arme +1.
+Marteau des Ouragans : nécessite du ritellium et un marteau de guerre +1.
+Fléau de la Fondation : nécessite du bois de fer et un fléau d'arme +1.
+Masse du repos éternel : nécessite de l'eau bénite spéciale et une masse +1.
+Morgenstern de bourdonnement : nécessite de la poudre féerique et une morgenstern +1.
+Marteau runique : nécessite de l'adamantite et un marteau de guerre +2.
 
 Lames tranchantes :
-Epée à deux mains Lame du Destin : Nécessite de l'adamantite et une épée à deux mains magique.
-Katana sacré : nécessite de l'adamantite et un katana magique.
-Epée longue astrale : Nécessite un diamant et une épée longue magique.
-Rapière Namarra : nécessite du sang de dragon et une rapière magique.
-Cimeterre Vent du désert : nécessite de l'adamantite et un cimeterre magique.
-Epée courte Lame des fées : nécessite de la poudre féerique et une épée courte magique.
-Double-lame de cérémonie Uthgardt : nécessite du bois de fer et une épée double-lame magique.
+
+Épée à deux mains Lame du Destin : Nécessite de l'adamantite et une épée à deux mains +1.
+Katana sacré : nécessite de l'adamantite et un katana +1.
+Épée longue astrale : Nécessite du ritellium et une épée longue +1.
+Cimeterre Vent du désert : nécessite de l'adamantite et un cimeterre +1.
+Épée courte Lame des fées : nécessite de la poudre féerique et une épée courte +1.
 
 Armes rares :
-Hallebarde Ravageuse : nécessite du sang de dragon  et une hallebarde magique.
-Faux Destruction marine : nécessite de l'adamantite et une faux magique.
-Lance des fées : nécessite de la poudre féerique et une lance magique.
-Serpe dorée : nécessite de l'eau bénite spéciale et une serpe magique.*/
+
+Hallebarde de la dévastation : nécessite du sang de dragon et une hallebarde +2.
+Lance des fées : nécessite de la poudre féerique et une lance +1.~
 @104510 = ~Your rest has been disturbed by by the shouts of the sentries.~/*Un monstre errant dérange votre repos.*/
 @104511 = ~Words of Power
 

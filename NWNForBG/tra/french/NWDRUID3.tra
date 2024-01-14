@@ -2,9 +2,9 @@
 @1 = ~Non, je ne le suis pas. Je domine mon esprit. Qui êtes-vous ?~
 @2 = ~Je ne suis pas stupide au point de me faire capturer par une nymphe. Maintenant, grâce à moi, vous pouvez partir.~
 @3 = ~Attendez ici. Je reviens.~
-@4 = ~Je me nomme Térari. Je suis un druide du bosquet druidique du bois de Padhiver. Et qui êtes-vous, <SIRMAAM> ?~
+@4 = ~Je me nomme Térari. Je suis un druide du bosquet druidique du bois de Padhiver. Et qui êtes-vous ?~
 @5 = ~Je me nomme <CHARNAME>. Aawill m'a envoyé à votre recherche.~
-@6 = ~I'm with <CHARNAME>. Aawill sent us to find you.~ /*Je me nomme <CHARNAME>. Aawill m'a envoyé à votre recherche.*/
+@6 = ~Je suis avec <CHARNAME>. Aawill nous a envoyé à votre recherche.~
 @7 = ~Dites, avant de partir, c'est Aawill qui vous envoie ?~
 @8 = ~Il m'a envoyé sauver quelques druides. Etes-vous l'un d'eux ?~
 @9 = ~J'ai rencontré un certain Aawill. Comment le connaissez-vous ?~
@@ -12,8 +12,8 @@
 @11 = ~Alors j'ai une dette d'honneur envers Aawill et vous-même. Je regrette simplement de ne pas avoir mené à bien ma mission pour sauver l'Esprit des bois.~
 @12 = ~Qu'avez-vous découvert ?~
 @13 = ~"Comment êtes-vous arrivé ici ?"~
-@14 = ~Wise Aawill. He always takes care of everything. My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <SIRMAAM>?~ /*Qui est Aawill ? Moi désolé. Prendre remède, gratuit. Je me nomme Térari. Je suis un druide du bosquet druidique du bois de Padhiver. Et qui êtes-vous, <SIRMAAM> ?*/
-@15 = ~He is the head of our circle of druids. My name is Terari. I am a druid of the Neverwinter Wood grove. And who are you good <SIRMAAM>?~ /*Il est le chef de notre cercle druidique. Je me nomme Térari. Je suis un druide du bosquet druidique du bois de Padhiver. Et qui êtes-vous, <SIRMAAM> ?*/
+@14 = ~Sage Aawill. Il veille toujours à ne rien laisser au hasard. Je me nomme Térari. Je suis l'un des druides du bosquet des bois de Padhiver. Et qui êtes-vous ?~
+@15 = ~Il est le chef de notre cercle druidique. Je me nomme Térari. Je suis l'un des druides du bosquet des bois de Padhiver. Et qui êtes-vous ?~
 @16 = ~Je ne suis pas allé très loin. Bien que les animaux se refusent à toute communication, je pensais que les nymphes pourraient me renseigner. Elles sont certes volages, mais je les croyais assez fortes mentalement pour résister à la folie de l'Esprit.~
 @17 = ~En fait, c'est assez embarrassant. Je pensais que les nymphes pourraient me renseigner, étant donné qu'elles ont bien plus de volonté que les animaux de la forêt.~
 @18 = ~Je suis venu d'abord ici parce que j'avais autrefois... hum... connu cette nymphe. Elle semblait heureuse de me revoir, très heureuse, même. J'espérais obtenir d'elle quelques informations sans... eh bien... sans avoir à entrer chez elle.~
@@ -22,7 +22,7 @@
 @21 = ~Quelque part, au fond de mon esprit, une part de moi se demandait pourquoi elle n'employait jamais mon nom, alors que nous nous connaissions depuis assez longtemps. Cela paraissait... bizarre. Malheureusement, mes pensées n'étaient pas claires. J'étais certain de pouvoir gérer tout ce qu'elle tenterait. Lorsque nous sommes entrés dans sa maison, elle m'a invité à me déshabiller et, pendant que je le faisais, elle m'a lancé un sort.~ 
 @22 = ~Elle savait comment vous manipuler.~
 @23 = ~Je vois comment cela a pu arriver.~
-@24 = ~Etre enfermé est une punition modeste pour un comportement aussi dégoûtant.~
+@24 = ~Être enfermé est une punition modeste pour un comportement aussi dégoûtant.~
 @25 = ~Elle semblait un peu plus empressée que d'habitude à me faire entrer chez elle.~
 @26 = ~Ensuite, je me suis retrouvé ici, incapable de m'enfuir. La nymphe ne m'avait fait aucun mal, mais elle refusait de me laisser partir. Avant d'entrer dans la pièce, elle lançait un sort et je me réveillais sans me rappeler ce qui s'était passé.~
 @27 = ~Vous jugerez mon comportement lorsque vous aurez prouvé que le vôtre est parfait.~
@@ -31,11 +31,11 @@
 @30 = ~J'ai guéri l'Esprit des Bois. Ne vous inquiétez plus pour ce problème.~
 @31 = ~Je vais essayer de vous aider. Que savez-vous de l'Esprit des bois ?~
 @32 = ~Les autres druides ne sont jamais revenus, eux non plus. Vous ignorez où ils pourraient être ?~
-@33 = ~Etes-vous capable de sortir d'ici tout seul ?~
+@33 = ~Êtes-vous capable de sortir d'ici tout seul ?~
 @34 = ~C'est horrible. La forêt va souffrir pendant des générations. J'espère vraiment que vous avez tout essayé avant d'arriver à de telles extrémités.~
 @35 = ~Je n'avais pas le choix. Si j'avais pu faire autrement, je l'aurais fait.~
 @36 = ~Il y aurait eu un autre moyen, mais c'était le plus rapide.~
-@37 = ~Vous devez être le genre de héros dont on fait des légendes ? Comment avez-vous accompli cet exploit ? Non, ne me dites rien, il doit vous rester fort à faire. Quand vous serez célèbre et que tous les bardes raconteront vos exploits, j'espère que vous reviendrez dans ces bois pour les parcourir en paix.~ 
+@37 = ~Vous devez être le genre de héros dont on fait des légendes ? Comment avez-vous accompli cet exploit ? Non, ne me dites rien, il doit vous rester fort à faire. Quand vous serez célèbre et que tous les bardes raconteront vos exploits, j'espère que vous reviendrez dans ces bois pour les parcourir en paix.~ ~Vous devez être le genre d'héroïne dont on fait des légendes ? Comment avez-vous accompli cet exploit ? Non, ne me dites rien, il doit vous rester fort à faire. Quand vous serez célèbre et que tous les bardes raconteront vos exploits, j'espère que vous reviendrez dans ces bois pour les parcourir en paix.~
 @38 = ~Je suis sûr que vous avez fait de votre mieux. J'espère que les bois survivront à cette perte. Je dois m'en aller. Je peux me débrouiller. Je vous rejoindrai au bosquet des druides.~
 @39 = ~Une attitude aussi dure envers la nature est le signe d'une âme troublée. Croyez-moi, ce que vous avez fait reviendra vous hanter un jour. Le mal attire le mal et sa propre chute. Il reste beaucoup à dire, mais je pense que mes sermons vous indiffèrent. Je vous laisse aux mains de la nature. Je peux me débrouiller. Je vous rejoindrai au bosquet des druides.~ 
 @40 = ~Peut-être pourrons-nous partager des histoires et devenir amis. Pour l'heure, je dois partir. Je peux me débrouiller. Je vous rejoindrai au bosquet des druides.~ 

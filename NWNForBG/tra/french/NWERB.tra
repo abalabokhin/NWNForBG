@@ -1,6 +1,6 @@
 @0 = ~Ah ! encore une jeune femme venue tenter sa chance auprès d'un gnome dans la fleur de l'âge !~ [NWERB058]
 @1 = ~Qui êtes-vous ?~
-@2 = ~Etes-vous l'un des hommes de la maison de débauche ?~
+@2 = ~Êtes-vous l'un des hommes de la maison de débauche ?~
 @3 = ~Moi vouloir engager vous.~
 @4 = ~J'aimerais vous poser quelques questions.~
 @5 = ~Au revoir.~
@@ -15,11 +15,11 @@
 @14 = ~Bouleversé ? Mais à quel sujet ?~
 @15 = ~J'imagine que mon vin n'a pas fini de décanter, alors allez-y, je vous écoute.~
 @16 = ~Je souhaite que nous reparlions de la récupération de cet anneau.~
-@17 = ~Farewell, good <SIRMAAM>. May fortune smile upon you always.~/*Adieu, mon bon <SIRMAAM>. Puisse la chance vous sourire éternellement.*/
+@17 = ~Adieu, mon bon ami. Puisse la chance vous sourire éternellement.~ ~Adieu, ma bonne amie. Puisse la chance vous sourire éternellement.~
 @18 = ~Ah, c'était le bon temps ! Autrefois, on savait faire de vrais coffres, pas ces petites boîtes fragiles que n'importe quel minable voleur <RACE> est capable d'ouvrir. Ne le prenez pas mal, surtout... Lors de ma jeunesse à Culver, je ne pensais qu'aux coffres de qualité et à la belle vie qu'ils me permettraient de mener. Mais hélas, cela ne devait pas être. Et maintenant, je ne fais plus que donner du plaisir aux femmes.~ 
-@19 = ~Evidemment, vu que Culver n'existe plus depuis la grande pénurie de navets de '45.~
+@19 = ~Évidemment, vu que Culver n'existe plus depuis la grande pénurie de navets de '45.~
 @20 = ~Je vois. Tout le monde est mort de faim ?~
-@21 = ~Je sais que les chefs militaires de la ville, ces hauts-capitaines, s'entretuent pour tenter de prendre le pouvoir. Hormis cela, je ne sais rien... Pour être franc, je ne suis pas le gnome le plus doué en politique de cette partie de l'Anauroch.~
+@21 = ~Je sais que les chefs militaires de la ville, ces hauts-capitaines, s’entre tuent pour tenter de prendre le pouvoir. Hormis cela, je ne sais rien... Pour être franc, je ne suis pas le gnome le plus doué en politique de cette partie de l'Anauroch.~
 @22 = ~Peut-être n'est-ce là qu'un sentiment exacerbé de déjà vu, mais je jurerais vous avoir déjà donné un travail. Vous souvenez-vous de mon anneau ou avez-vous déjà oublié ?~
 @23 = ~C'est drôle, tout le monde a la même réaction quand on prononce son nom, ces temps-ci. Je lui avais bien dit que sa machine ailée ne volerait jamais. Pour ce que j'en sais, il est toujours au fond du gouffre.~
 @24 = ~Je suis certain de vous avoir déjà conté cette histoire... D'ailleurs, vous aviez accepté de me ramener l'anneau. A moins que vous n'ayez déjà oublié ?~

@@ -249,7 +249,7 @@
 @248 = ~Je peux faire ça.~
 @249 = ~Oh, allons, un peu d'imagination.~
 @250 = ~Bah, laissez tomber.~
-@251 = ~Je vois. Ainsi, le grand héros claque des doigts et je suis censée faire ce qu'il me dit, hein ? Ha, ha ! Eh bien, <CHARNAME>. Je vais vous raconter votre histoire... si vous me promettez de vous comporter en public digne de ce nom.~
+@251 = ~Je vois. Ainsi, le grand héros claque des doigts et je suis censée faire ce qu'il me dit, hein ? Ha, ha ! Eh bien, <CHARNAME>. Je vais vous raconter votre histoire... si vous me promettez de vous comporter en public digne de ce nom.~ // V FEMININE
 @252 = ~Me payer ? Vous croyez vraiment que c'est l'argent qui me motive ? Ha ! Je fais ce métier pour mon public. Eh bien, <CHARNAME>. Je vais vous raconter votre histoire... si vous me promettez de vous comporter en public digne de ce nom.~ 
 @253 = ~Hmm... voilà qui est tentant, je dois bien le reconnaître. Peut-être devrais-je vous demander d'ôter votre tunique pendant que je vous parle, afin que nous soyons à armes égales, hein ? Eh bien, <CHARNAME>. Je vais vous raconter votre histoire... si vous me promettez de vous comporter en public digne de ce nom.~ 
 @254 = ~Très bien ! Je vous prends au mot, alors. Mais quelle histoire devrais-je dire ? Celle du grand <CHARNAME>, sauveur de Padhiver, et de sa quête pour les Mots de Pouvoir ?~ 
@@ -328,12 +328,12 @@
 @327 = ~Non. Pas regrets.~
 @328 = ~Je regrette de ne jamais vous avoir embrassée. Cela compte ?~
 @329 = ~Seulement d'avoir amené votre grande bouche jusqu'ici.~
-@330 = ~Vraiment ? Vous les oublierez peut-être quand tout sera fini. Tout Féérune vous fêtera en vrai héros. Vous le savez, n'est-ce pas ?~
+@330 = ~Vraiment ? Vous les oublierez peut-être quand tout sera fini. Tout Féérune vous fêtera en vrai héros. Vous le savez, n'est-ce pas ?~ // V FEMININE
 @331 = ~Je fais cela parce que c'est juste, pas pour être un héros.~
 @332 = ~Ne soyez pas naïve. Je fais cela en quête de fortune.~
 @333 = ~Rien de mal à être un héros, je crois.~
-@334 = ~Je ne serai pas le seul héros, Sharwyn.~
-@335 = ~Je m'en doutais. Après tout, quand tout sera fini, tout Féérune vous fêtera en véritable héros. Vous le savez, bien sûr ?~
+@334 = ~Je ne serai pas le seul héros, Sharwyn.~ // V FEMININE
+@335 = ~Je m'en doutais. Après tout, quand tout sera fini, tout Féérune vous fêtera en véritable héros. Vous le savez, bien sûr ?~ // V FEMININE
 @336 = ~Je ne sais pas. Peut-être. Vous pourriez sans doute me convaincre... puisque nos morts pourraient être imminentes.~
 @337 = ~Hah ! Peu importe, <CHARNAME>. Ma propre légende s'écrit à côté de la vôtre, que cela vous plaise ou non. Je suis heureuse de jouer mon rôle. Mais inutile d'en rajouter pour vous contrarier. Finissons cette histoire comme il se doit. D'accord ?~ 
 @338 = ~C'est ce qui me plait en vous. Il faudra que je fasse attention à bien écrire votre histoire. Je suis sûre que d'autres bardes ont hâte d'écrire au sujet de votre légende.~
@@ -354,4 +354,4 @@
 @353 = ~Bien. Bien sûr, il nous reste une histoire à finir avant d'écrire la suivante, n'est-ce pas ? Je vous suis,<CHARNAME>... finissons-en comme il se doit.~ 
 @354 = ~C'est vrai. Je suppose qu'il nous reste à finir une histoire avant de commencer l'autre. Je vous suis,<CHARNAME>... finissons-en comme il se doit.~ 
 @355 = ~J'imagine que c'est ainsi. Dommage. Enfin, il nous reste une histoire à écrire avant de commencer la suivante. Je vous suis,<CHARNAME>... finissons-en comme il se doit.~ 
-@356 = ~La compagnie ne vous manquera pas si nous réussissons, <CHARNAME>. Vous serez un héros dans tout Féérune, les femmes seront à vos pieds. Vous le savez, non ?~
+@356 = ~La compagnie ne vous manquera pas si nous réussissons, <CHARNAME>. Vous serez un héros dans tout Féérune, les femmes seront à vos pieds. Vous le savez, non ?~ // V FEMININE

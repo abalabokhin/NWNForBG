@@ -13,7 +13,7 @@
 @12 = ~Je ne veux plus en entendre parler, je crois.~
 @13 = ~Oh, rien d'aussi sordide et de mauvais que vous pensez. J'ai souvent eu la gloire et la fortune... et je les ai perdues aussi souvent.~
 @14 = ~Alors vous êtes un <MANWOMAN> comme je les aime. On a souvent de bonnes raisons d'agir, mais les meilleures sont toujours l'or et la gloire. J'ai fait beaucoup pour trouver ces deux récompenses. Je les ai eues en abondance plusieurs fois, vous savez.~ 
-@15 = ~Ha ha ! Pas d'erreur, mon <LADYLORD>... je ne suis pas un héros, mais je ne passe pas non plus mon temps à détrousser des enfants ou frapper des chiens. Non, Tomi La Potence suivrait l'odeur de l'or et de la gloire jusqu'au bout du monde, mais je n'ai pas encore d'histoire à effrayer les bonnes gens.~ 
+@15 = ~Ha ha ! Pas d'erreur, mon <LADYLORD>... je ne suis pas un héros, mais je ne passe pas non plus mon temps à détrousser des enfants ou frapper des chiens. Non, Tomi La Potence suivrait l'odeur de l'or et de la gloire jusqu'au bout du monde, mais je n'ai pas encore d'histoire à effrayer les bonnes gens.~  // V FEMININE
 @16 = ~Mon exploit le plus célèbre est en fait la raison de ma venue à Padhiver quand j'ai fui Calimshan. Vous voyez, j'ai passé presque toutes mes années à Calimport au service d'une puissante méduse. Elle était très importante dans la pègre de la ville, et ce n'est pas rien, avec ou sans regard pétrifiant.~ 
 @17 = ~Une méduse ? Sérieusement ?~
 @18 = ~Mais les méduses sont des monstres maléfiques !~
@@ -212,7 +212,7 @@
 @211 = ~Ces informations me suffisent pour l'instant.~
 @212 = ~Ouais. Il y en a cinq, tous d'anciens pirates, qui dirigent la ville d'une poigne de fer. Pourquoi cinq au lieu d'un, j''en sais rien. Attention, ce ne sont pas les vrais chefs. Tout le monde sait qu'à Luskan, c'est la Confrérie des Arcanes qui mène vraiment la barque.~ 
 @213 = ~Parlez-moi de la Confrérie des Arcanes.~
-@214 = ~Pas de problème. Allez faire votre héros, alors.~
+@214 = ~Pas de problème. Allez faire votre héros, alors.~ // V FEMININE
 @215 = ~Ah, ce n'est qu'un groupe de magiciens maléfiques qui veut dominer le monde. Vous savez, des magiciens normaux. Ils sont aux ordres d'un gars appelé l'Archimage Profane, il me semble. Si je me souviens bien, ils sont tous entassés dans la Tour des Arcanes, qui est au large, sur une petite île. Ils ne sortent jamais, restent entre eux... Vous voyez le topo...~ 
 @216 = ~Eh bien, Luskan n'est pas un endroit très accueillant... surtout pour nous les demi-humains. C'est plein d'humains assez méchants qui seraient pendus ailleurs. Si la secte s'y trouve, elle peut être n'importe où. Mais il y aurait quelqu'un au courant à Luskan, à mon avis.~ 
 @217 = ~Avez-vous toujours été un roublard, Tomi ?~
@@ -319,7 +319,7 @@
 @318 = ~Savez quoi ? Vous avez raison ! J'ai trop de chance pour mourir. Les La Potence y sont destinés à d'venir riches et adorés par les dames p'tites-personne dans tout Féérune. Si j'passe l'arme à gauche, je me contenterai de rencontrer Brandobaris et de draguer Arvoreen dans l'au-delà. Et peut-être ben qu'Sammy s'ra là aussi ! Et si je meurs pas, j'suis un héros ! C'est tout bénef !~ 
 @319 = ~Vous avez vraiment réponse à tout, hein ? Espèce de baratineur ! Ha ha ! Si j'passe l'arme à gauche, je me contenterai de rencontrer Brandobaris et de draguer Arvoreen dans l'au-delà. Et peut-être ben qu'Sammy s'ra là aussi ! Et si je meurs pas, j'suis un héros ! C'est tout bénef !~ 
 @320 = ~Vous avez réponse à tout, hein ? Aaaah, c'est le charme des La Potence qui fait son oeuvre. Vous me voulez pour vous tout seul. Ça fait rien. Si j'passe l'arme à gauche, je me contenterai de rencontrer Brandobaris et de draguer Arvoreen dans l'au-delà. Et peut-être ben qu'Sammy s'ra là aussi ! Et si je meurs pas, j'suis un héros ! C'est tout bénef !~ 
-@321 = ~Savez, z'êtes pas trop mal non plus. Vous f'rez un sacré héros un jour, à mon avis.~
+@321 = ~Savez, z'êtes pas trop mal non plus. Vous f'rez un sacré héros un jour, à mon avis.~ // V FEMININE
 @322 = ~Flatté de votre avis.~
 @323 = ~Attention, ou c'est moi qui vous tue.~
 @324 = ~Allons-y alors...~

@@ -1,10 +1,10 @@
-@0 = ~You've shown yourself to be a completely immoral person. I'm so glad I'm leaving.~/*Allez vous jeter dans un tas de fumier. Oubliez tout ça, je m'en vais.*/
+@0 = ~Vous vous êtes révélé être une personne dénuée de toute moralité. Je suis ravie de m'en aller.~
 @1 = ~En êtes-vous sûr ? Ne vous attendez pas à ce que je vous rende une partie de la somme que vous m'avez versée, surtout. Voulez-vous toujours que je m'en aille ?~
 @2 = ~Oui. Partez.~
 @3 = ~Non. Restez avec moi.~
-@4 = ~Then we shall part ways, though I will wait here in case you reconsider and wish to join me again. Farewell. Where can we meet if you change your mind?~ /*Dans ce cas, je vais retourner à l'enclave des mercenaires pour y chercher un nouvel employeur. Au revoir, mon <LADYLORD>. Peut-être qu'un peu d'or vous ferait changer d'avis ?*/
-@5 = ~Go back to the Trade of Blades.~ /*Le Marché des Lames*/
-@6 = ~I'll find you at Kendrack's Barracks.~/*Quartiers du Bourgmestre Kendrack*/
+@4 = ~Alors il est temps que nous nous séparions, mais j'attendrai ici au cas où vous reviendriez sur votre décision. À moins que vous souhaitiez que nous nous rejoignions ailleurs si vous changez d'avis ?~
+@5 = ~Retournez au Marché des Lames.~
+@6 = ~Je vous retrouverais aux quartiers du Bourgmestre Kendrack.~
 @7 = ~Attendez ici.~ 
 @8 = ~Je vous attendais ; je me doutais que vous reviendriez. Souhaitez-vous que je me joigne de nouveau à vous ?~ [NWDAEL60]
 @9 = ~Ouaip.~
@@ -17,7 +17,7 @@
 @16 = ~Au revoir.~
 @17 = ~Chacun de nous a suivi son propre chemin, <CHARNAME>, mais les dieux ont apparemment jugé bon de nous réunir de nouveau. Après notre séparation à Padhiver, je suis retourné au Marché des Lames pour y louer mes services. C'est là que Dame Aribeth m'a contacté pour le compte du Seigneur Nasher lui-même.~ 
 @18 = ~Je vous suis reconnaissant de ce que vous avez fait pour moi, <CHARNAME>, mais je ne vous ai pas suivi. Ne vous y trompez pas : Daélan Tigre Rouge n'obéit qu'à lui-même.~
-@19 = ~Adieu, <SIRMAAM>. Ma lame est à votre service si vous avez besoin de l'aide d'un guerrier de talent et d'honneur.~
+@19 = ~Adieu. Ma lame est à votre service si vous avez besoin de l'aide d'un guerrier de talent et d'honneur.~
 @20 = ~Il semble que le Seigneur Nasher a décidé de retrouver la secte qui a causé tant de souffrances dans sa ville. Il a ordonné à tous les mercenaires de Padhiver de venir à Port Llast afin de prendre part aux recherches.~
 @21 = ~Vous avez été réquisitionné par Aribeth ?~
 @22 = ~Combien vos services me coûteraient-ils ?~ 
@@ -27,7 +27,7 @@
 @26 = ~Je n'ai besoin de rien pour l'instant.~
 @27 = ~Je n'ai rien entendu sur la secte, mais beaucoup – dont moi – soupçonnent qu'on pourrait trouver des réponses à Luskan.~
 @28 = ~Luskan ?~
-@29 = ~What kind of town is this?~ /*De quel genre de guilde s'agit-il ?*/
+@29 = ~C'est quel genre de ville ?~
 @30 = ~Je serais honoré de prêter ma lame à votre cause.~
 @31 = ~Alors je vous dis adieu. Si vous avez besoin d'un bon guerrier doué du sens de l'honneur, revenez me parler.~
 @32 = ~Cette ville est depuis longtemps ennemie de Padhiver. Plaie maléfique du Nord, on sait qu'elle abrite souvent des meurtriers et des voleurs – une ville sans honneur ! Je ne serais pas étonné de trouver un quelconque lien avec la secte dans ce cloaque. Puis-je vous aider en autre chose, <CHARNAME> ?~ 
@@ -36,7 +36,7 @@
 @35 = ~Avez-vous entendu des rumeurs sur la secte depuis votre arrivée ?~
 @36 = ~Si vous cherchez tant que cela la vengeance, pourquoi rester ici ?~
 @37 = ~Il semble que le Seigneur Nasher a décidé de retrouver la secte qui a causé tant de souffrances dans sa ville. Il a ordonné à tous les mercenaires de Padhiver de venir à Port Llast afin de prendre part aux recherches. J'ai répondu à son appel sans hésiter. J'ai perdu de nombreux amis dans ce fléau, et j'ai hâte de venger leur mort. Les couards qui sont à l'origine de cette tragédie doivent payer.~ 
-@38 = ~Je servirais à peu de choses en me précipitant seul. Mes ordres étaient de venir ici pour aider ceux qui auraient besoin de ma lame. Votre réputation est connue, <CHARNAME>. Je ne suis pas un grand héros comme vous, mais un bon guerrier de la tribu du Tigre Rouge. Mon peuple est connu pour sa bravoure, son honneur et sa férocité au combat. Je pourrais vous rendre de grands services dans votre traque de la secte, si vous le souhaitez.~ 
+@38 = ~Je servirais à peu de choses en me précipitant seul. Mes ordres étaient de venir ici pour aider ceux qui auraient besoin de ma lame. Votre réputation est connue, <CHARNAME>. Je ne suis pas un grand héros comme vous, mais un bon guerrier de la tribu du Tigre Rouge. Mon peuple est connu pour sa bravoure, son honneur et sa férocité au combat. Je pourrais vous rendre de grands services dans votre traque de la secte, si vous le souhaitez.~
 @39 = ~J'ai besoin d'un guerrier de plus. Je vous engage.~
-@40 = ~Of course I will bow to your lead, <CHARNAME>. I am honored to join my blade to the cause of such a great hero. I will follow you and carry out your orders as best I can.~ /*Bien sûr, je vous obéirai, <CHARNAME>. Je suis honoré de prêter ma lame à la cause d'un si grand héros. Je m'en occupe dès que possible.*/
+@40 = ~Bien sûr, je vous obéirai, <CHARNAME>. Je suis honoré de prêter ma lame à la cause d'un si grand héros. Je vous suivrai et exécuterai vos ordres du mieux que je pourrai.~ ~Bien sûr, je vous obéirai, <CHARNAME>. Je suis honoré de prêter ma lame à la cause d'une si grande héroïne. Je vous suivrai et exécuterai vos ordres du mieux que je pourrai.~
 @41 = ~Si vous avez besoin d'un guerrier capable de vous aider, n'hésitez pas à revenir me trouver. Mon bras vous est acquis pour cette mission.~

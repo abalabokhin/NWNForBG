@@ -25,7 +25,7 @@
 @24 = ~L'épidémie a décimé les gardes du secteur. Tout était calme tant que les gens étaient enfermés mais maintenant c'est le chaos. Mais certains essaient tout de même .... Sédos Sébile est ici. C'est une des personnes de confiance du  Seigneur Nasher mais elle n'a pas beaucoup de gens avec qui travailler. Elle se contente de garder la porte permettant de quitter le quartier.~ 
 @25 = ~Je suppose que c'est normal que vous demandiez ça... les temps sont durs. Je suis désolée mais je ne peux rien vous offrir. Vraiment navrée. Acceptez-vous quand même de nous aider ?~
 @26 = ~Comment ça vous n'allez rien faire ? Quelle sorte de garde êtes-vous donc ? S'il vous plaît... non, je ne vous supplierai pas. Je serai ici si vous décidez de changer d'avis... Je n'ai nulle part où aller.~ 
-@27 = ~Please don't hurt me! Please! I've got... maybe something... Please!! Here! take it all... it's all I've got... Ilmater damn you... damn you... Leave me alone!~ /*S'il vous plaît, ne me faites pas de mal ! J'ai... peut-être quelque chose... Par pitié ! Tenez ! Prenez tout... c'est tout ce que j'ai... Qu'Illmater vous maudisse... soyez maudit !*/
+@27 = ~S'il vous plaît, ne me faites pas de mal ! J'ai... peut-être quelque chose... Par pitié ! Tenez ! Prenez tout... c'est tout ce que j'ai... Qu'Illmater vous maudisse... soyez maudit ! Partez maintenant !~
 @28 = ~Laissez-moi tranquille ! J'en ai assez entendu à votre sujet ! J'irai chercher de l'aide auprès de... de n'importe qui, mais pas vous...~
 @29 = ~Alors, savez-vous quelque chose ? Y-a-t-il des nouvelles ? Par pitié, dites-moi que tout est rentré dans l'ordre dans la Péninsule. J'avais tellement peur de demander. Tout le monde semble occupé. Je veux juste rentrer chez moi.~
 @30 = ~Tout est rentré dans l'ordre dans la Péninsule. Tout va bien.~
@@ -34,10 +34,10 @@
 @33 = ~Fiche le camp, femme. Je ne suis pas ton larbin.~
 @34 = ~Oh ! Je ne sais pas comment vous remercier. Vraiment, vous êtes trop généreux. J'espère juste... j'espère juste que vous êtes intervenu à temps pour certains de mes voisins. Merci. Vraiment. Je n'ai rien d'autre à vous offrir mais je le pense vraiment. Merci... mille fois. Je... je ne connais même pas votre nom.~ 
 @35 = ~<CHARNAME>. Merci de l'avoir demandé.~
-@36 = ~<CHARNAME> is our leader.~ /*<CHARNAME> est trop loin.*/
+@36 = ~<CHARNAME> est notre chef.~ ~<CHARNAME> est notre cheffe.~
 @37 = ~Si cela ne vous fait rien je préfère ne pas vous le dire.~
 @38 = ~Je pense que ... je vais attendre là. Je ne peux rien faire d'autre tant que le quartier de la Péninsule n'est pas pacifié.~
-@39 = ~But... I just... I just hoped I could get some help... anything... Well... Well fine! You just... You just go to hell!~ /*Mais... je voulais juste... j'espérais que je pourrais trouver de l'aide... n'importe quoi... Bien... Très bien ! Vous... allez au diable ! Allez-vous-en !*/
+@39 = ~Mais... je voulais juste... j'espérais que je pourrais trouver de l'aide... n'importe quoi... Bien... Très bien ! Vous... Allez-vous... Allez au diable !~
 @40 = ~<CHARNAME>. Merci de me l'avoir dit. Je vous promets de faire en sorte qu'on ne dise que du bien de vous. Merci encore. Maintenant je vais rentrer chez moi.~
 @41 = ~C'est votre droit mais je ne voulais que chanter vos louanges. Mais je vous suis tout de même reconnaissante et c'est ce que je dirai à tout le monde. Encore merci. Maintenant, je crois que je vais rentrer chez moi... grâce à vous.~
 @42 = ~La Péninsule. Alors moi rapporter oreille ? Alors, savez-vous quelque chose ? Y-a-t-il des nouvelles ? Par pitié, dites-moi que tout est rentré dans l'ordre dans la Péninsule. J'avais tellement peur de demander. Tout le monde semble occupé. Je veux juste rentrer chez moi.~ 

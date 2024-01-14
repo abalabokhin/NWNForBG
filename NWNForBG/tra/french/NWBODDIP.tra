@@ -1,11 +1,11 @@
-@0 = ~I... I don't think you're interested in doing good deeds at all, and I doubt I'd go with you again if you asked. I... don't think we'll see each other again.~ /*Non, je ne veux pas risquer ma peau pour si peu. Je ne vous aime pas beaucoup. Vous pouvez faire mieux ? Peut-être nous reverrons-nous un jour.*/
-@1 = ~Il ne servirait à rien de rester ensemble si cela ne vous convient pas, c'est vrai. Etes-vous sûr de vouloir que je m'en aille ?~ [NWBODDNO]
+@0 = ~Je... Je ne pense pas que vous soyez intéressé par faire de bonnes actions, et je doute de vous rejoindre à nouveau si vous me le demandez. Nous... Nous ne nous reverrons sûrement pas.~
+@1 = ~Il ne servirait à rien de rester ensemble si cela ne vous convient pas, c'est vrai. Êtes-vous sûr de vouloir que je m'en aille ?~ [NWBODDNO]
 @2 = ~Oui. Partez.~
 @3 = ~Non. Restez avec moi.~
-@4 = ~Then I guess the only logical thing for us to do is split up for now. Where can we meet if you change your mind?~ /*Dans ce cas, je pense que je vais retourner à l'enclave des mercenaires, afin de voir si je trouve un autre emploi.*/
-@5 = ~Go back to the Trade of Blades.~/*Le Marché des Lames*/
-@6 = ~I'll find you at Kendrack's Barracks.~ /*Quartiers du Bourgmestre Kendrack*/
-@7 = ~Attendez ici.~ 
+@4 = ~Alors je pense que nous séparer est la seule chose à faire pour le moment. Où pourrions-nous nous retrouver si vous changez d'avis ?~
+@5 = ~Retourne au Marché des Lames.~
+@6 = ~Je vous rejoindrais aux quartiers du Bourgmestre Kendrack.~
+@7 = ~Attendez moi ici.~ 
 @8 = ~Vous vous comportez d'une manière bien peu logique. Vous me demandez de partir, puis de rester. C'est très étrange...~
 @9 = ~Vous êtes de retour ? Cela doit vouloir dire que vous avez besoin de quelque chose, et l'hypothèse la plus logique est que vous souhaitez que je me joigne de nouveau à vous. Correct ?~ [NWBODD60]
 @10 = ~Ouaip.~
@@ -16,7 +16,7 @@
 @15 = ~Que faites-vous ici, Fauche-corps ?~
 @16 = ~Encore vous ? Vous me suivez ? Je n'avais encore jamais été traqué par un gnome.~
 @17 = ~Au revoir.~
-@18 = ~I was going to continue my exploration of the North. But then I heard that Aribeth was recruiting mercenaries to find the cult that was causing the plague. You may have discovered a cure for the plague and flushed out those behind it, <CHARNAME>, but the process by which the Wailing Death was spawned has not yet been determined.~ /*Quand nous nous sommes séparés, <CHARNAME>, j'ai voulu continuer mon exploration du Nord. Puis j'ai entendu dire qu'Aribeth recrutait des mercenaires pour chercher la secte responsable du fléau. Vous avez peut-être découvert un remède à la Mort Hurlante et trouvé les coupables, <CHARNAME>, mais la manière dont la maladie s'est répandue n'a pas encore été déterminée.*/
+@18 = ~J'ai voulu continuer mon exploration du Nord. Puis j'ai entendu dire qu'Aribeth recrutait des mercenaires pour chercher la secte responsable du fléau. Vous avez peut-être découvert un remède à la Mort Hurlante et trouvé les coupables, <CHARNAME>, mais la manière dont la maladie s'est répandue n'a pas encore été déterminée.~
 @19 = ~Je ne vous traque pas, <CHARNAME> ! Cette Mort hurlante et les événements qui se sont déroulés à Padhiver sont d'un grand intérêt scientifique. Vous avez peut-être découvert un remède à la Mort Hurlante et trouvé les coupables, <CHARNAME>, mais la manière dont la maladie s'est répandue n'a pas encore été déterminée.~ 
 @20 = ~Adieu, <CHARNAME>. Si vous avez besoin d'un ensorceleur, vous savez où me trouver... jusqu'à ce que quelqu'un d'autre m'engage.~
 @21 = ~Vu mon intérêt scientifique pour le fléau et mon désir de l'éradiquer à jamais de Féérune, il était logique que je réponde présent à l'appel d'Aribeth.~
@@ -35,10 +35,9 @@
 @34 = ~Un ensorceleur me serait très utile, Fauche-corps.~
 @35 = ~Comme je l'ai dit, c'est une hypothèse préliminaire. Mais je ne serais pas surpris le moins du monde si cette théorie se révélait fausse.~
 @36 = ~Je suis un ensorceleur accompli, <CHARNAME>, mais je reste réaliste quant à mes propres limites. Mes capacités ne me permettraient pas de survivre seul dans les bois de cette région. Et puis Aribeth nous a engagés pour servir et aider ceux qui sont plus susceptibles d'héroïsme et de grandes actions.~ 
-@37 = ~Vous êtes un héros bien connu, <CHARNAME>. Si je vous accompagnais, je suis certain que mes talents vous serviraient.~
+@37 = ~Vous êtes un héros bien connu, <CHARNAME>. Si je vous accompagnais, je suis certain que mes talents vous serviraient.~ ~Vous êtes une héroïne bien connu, <CHARNAME>. Si je vous accompagnais, je suis certain que mes talents vous serviraient.~
 @38 = ~Désolé, ça ne m'intéresse pas. Au revoir.~
-@39 = ~Then I will be glad to join your cause, <CHARNAME>. It is an honor to serve with a hero such as you. I will follow you and do my best in obedience to your orders.~ /*Alors je me joins à vous avec plaisir, <CHARNAME>. C'est un honneur de servir un héros tel que vous. Je vous interdis de continuer. Reprenez-vous.*/
+@39 = ~Alors je me joins à vous avec plaisir, <CHARNAME>. C'est un honneur de servir un héros tel que vous. Je vous suivrai et ferai de mon mieux pour vous aider, en obéissant scrupuleusement aux ordres que vous me donnerez.~ ~Alors je me joins à vous avec plaisir, <CHARNAME>. C'est un honneur de servir une héroïne tel que vous. Je vous suivrai et ferai de mon mieux pour vous aider, en obéissant scrupuleusement aux ordres que vous me donnerez.~
 @40 = ~Bien le bonjour, <CHARNAME>. C'est moi, Glinckle Fauche-corps, de l'île de Lantan. Je suis sûr que vous vous souvenez de notre dernière rencontre. Quand on m'a dit qu'Aribeth recrutait des gens pour aider à chercher la secte responsable de la Mort Hurlante, il m'a semblé logique que vous soyez des nôtres.~ [NWBODD55]
 @41 = ~Ainsi, vous travaillez pour Aribeth ?~
-@42 = ~When Aribeth called in the mercenaries, we were all paid up front for our services - well paid. You managed to get a cure for the plague, but the process by which the Howling Death spreads has not yet been determined. I am eager to solve that mystery, if only so such a horror can never be unleashed upon the world yet again. But that can only be accomplished if we first locate the cult.~ 
-/*Quand Aribeth a recruté les mercenaires, nous avons tous été payés, et bien payés, en avance. Le Seigneur Nasher ne recule devant aucune dépense pour retrouver la secte. J'ai hâte de résoudre ce mystère, ne serait-ce que pour qu'une telle horreur ne touche plus jamais le monde. Mais pour cela, nous devons d'abord trouver la secte.*/
+@42 = ~Quand Aribeth a recruté les mercenaires, nous avons tous été payés, et bien payés, en avance. Vous avez peut-être découvert un remède à la Mort Hurlante, mais la manière dont la maladie s'est répandue n'a pas encore été déterminée. J'ai hâte de résoudre ce mystère, ne serait-ce que pour qu'une telle horreur ne touche plus jamais le monde. Mais pour cela, nous devons d'abord trouver la secte.~ 

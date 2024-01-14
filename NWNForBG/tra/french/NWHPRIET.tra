@@ -21,10 +21,10 @@
 @20 = ~Donnez-moi votre or ou je vous tue et je dirai que vous l'aviez volé.~
 @21 = ~Simple curiosité. Revenons à mes questions.~
 @22 = ~Non, je n'ai rien. Quelqu'un m'a déjà dépouillé de tout ce que j'avais, alors posez vos questions et partez.~
-@23 = ~La ville est divisée en plusieurs quartiers. Visiblement, cette division a ralenti la propagation de l'épidémie, mais elle sépare également les gens. Je crois que les différents secteurs sont le Nid des Mendiants, les Docks, le quartier de Lacnoir, la Péninsule et le Coeur de la Ville.~ 
+@23 = ~La ville est divisée en plusieurs quartiers. Visiblement, cette division a ralenti la propagation de l'épidémie, mais elle sépare également les gens. Je crois que les différents secteurs sont le Nid des Mendiants, les Quais, le quartier de Lacnoir, la Péninsule et le Coeur de la Ville.~ 
 @24 = ~Parlez-moi du Coeur de la Ville.~
 @25 = ~Parlez-moi du Nid des Mendiants.~
-@26 = ~Parlez-moi du quartier des Docks.~
+@26 = ~Parlez-moi du quartier des Quais.~
 @27 = ~Parlez-moi du quartier de Lacnoir.~
 @28 = ~Parlez-moi de la Péninsule.~
 @29 = ~Je ne sais pas grand chose dans ce domaine. Je n'ai besoin que de mes bénédictions. Mais je crois qu'il existe quelques établissements qui peuvent avoir ce que vous cherchez.~
@@ -48,8 +48,8 @@
 @47 = ~Toute l'aide ne devrait-elle pas être la bienvenue ?~
 @48 = ~Il paraît que les morts-vivants qui erraient dans ce secteur sont calmes désormais. Il ne faudrait pas que les gens courent un danger en se trouvant faces à ces choses...~
 @49 = ~Certainement mais si elle est appropriée. L'épidémie ne sera pas vaincue par la force mais par la renaissance de l'espoir dans le coeur des gens. Les bénédictions accompliront ce miracle. D'autres actions pourront suivre mais il faut faire attention à ne pas faire plus de mal que de bien. Nous autres les fidèles d'Heaum faisons ce qui est nécessaire. Nos bénédictions délivreront la ville. Vous verrez.~ 
-@50 = ~Les docks sont le havre des hors-la-loi, même en ces temps troublés. Heureusement ils n'empêchent pas mes frères d'accomplir leurs bons offices.~
-@51 = ~On y récupère également beaucoup d'or. Les agressions sont fréquentes. J'espère que cela ne nuira pas davantage au moral des gens. J'éviterais les docks, si j'étais vous. Laissez-nous y administrer nos bénédictions et calmer la situation de manière diplomatique.~ 
+@50 = ~Les quais sont le havre des hors-la-loi, même en ces temps troublés. Heureusement ils n'empêchent pas mes frères d'accomplir leurs bons offices.~
+@51 = ~On y récupère également beaucoup d'or. Les agressions sont fréquentes. J'espère que cela ne nuira pas davantage au moral des gens. J'éviterais les quais, si j'étais vous. Laissez-nous y administrer nos bénédictions et calmer la situation de manière diplomatique.~ 
 @52 = ~D'ailleurs, j'ai entendu dire que le secteur était assez calme en ce moment. J'espère que personne n'a pris de risque en agissant par témérité.~
 @53 = ~Lacnoir est la demeure de la noblesse, une partie de la population qui, je regrette de devoir le dire, ne s'est pas particulièrement distinguée en ces temps troublés.~
 @54 = ~Il est même possible qu'on y ait entreposé des marchandises destinées aux quartiers les plus pauvres. Heureusement personne ne vient envenimer la situation.~
