@@ -1,9 +1,9 @@
-@0 = ~I have prayed to the great oak for a savior! Are you <HESHE>, <RACE>? Shall I be freed at last to rejoin my tree?~ [NWDRYAD8] /*J'ai prié le grand chêne pour qu'il nous envoie quelqu'un pour nous sauver ! Est-ce vous ? Suis-je enfin libre de regagner mon arbre ?*/
+@0 = ~J'ai prié le grand chêne pour qu'il nous envoie quelqu'un pour nous sauver ! Est-ce vous ? Suis-je enfin libre de regagner mon arbre ?~ [NWDRYAD8]
 @1 = ~Le mage vous retient prisonnière ici ?~
 @2 = ~Arrière ! Je ne me laisserai pas avoir par vos ruses, dryade !~
 @3 = ~Du calme. Je suis là pour vous libérer.~
 @4 = ~Oui, hélas. La servante que vous voyez a erré dans l'étrange ville après avoir fui l'horrible bataille... Je ne savais pas par où aller et mon chêne me manquait tant. Meldanen m'a découverte et m'a amenée ici. Il voulait me... Me faire du mal et mettre au point un remède contre une grande maladie. J'ai fait ce que j'ai pu et je l'ai charmé.~ 
-@5 = ~I mean you no harm, <RACE>, and shall not use my glamors to charm you, I swear it! It has brought me no end of grief with Meldanen! Please just let me go!~ /*Je ne vous veux aucun mal, <RACE>, et je n'utiliserai pas mes charmes pour vous séduire, je le jure ! Cela ne m'a apporté que des ennuis avec Meldanen ! Laissez moi simplement partir !*/
+@5 = ~Je ne vous veux aucun mal, <RACE>, et je n'utiliserai pas mes charmes pour vous séduire, je le jure ! Cela ne m'a apporté que des ennuis avec Meldanen ! Laissez moi simplement partir !~
 @6 = ~Vous avez charmé le mage ? Mais alors, pourquoi avez-vous fini emprisonnée ici ?~
 @7 = ~Et comment me remercierez-vous si je vous libère ?~
 @8 = ~Je voudrais que vous alliez voir Aribeth et aidiez à guérir le fléau.~
@@ -20,14 +20,13 @@
 @19 = ~Serez-vous capable de rentrer seule chez vous ?~
 @20 = ~Vous pourriez vous perdre en ville. Je vais vous conduire auprès de quelqu'un qui pourra vous aider.~
 @21 = ~Non, vous n'irez nulle part. Une bonne esclave peut m'être utile.~
-@22 = ~Now I know that I need a piece of your hair. Die, creature.~ /*J'ai ce dont j'avais besoin. Maintenant, créature, vous allez mourir.*/
+@22 = ~Maintenant je sais ce qu'il me faut... Une mèche de vos cheveux. Meurs, créature.~
 @23 = ~Non, non ! Grand chêne, protège ta servante !~
-@24 = ~No, just not that! I can't take it! The great oak will protect me.~ /*Non, il ne faut pas que je meure ! Je ne peux faire ça. Alors, tu les protégeras ?*/
+@24 = ~Non, pas ça ! Je ne peux pas le supporter ! Le grand chêne me protégera.~
 @25 = ~Oui... oui, je pense en être capable. Il me faut juste atteindre l'arbre le plus proche... Le magicien qui est venu dans ma forêt a dit que n'importe quel arbre me permettrait de rentrer chez moi.~
 @26 = ~Alors, vous êtes libre de partir. Le chemin derrière moi est dégagé.~
 @27 = ~Peut-être devriez-vous m'accompagner... Ce serait plus sûr !~
 @28 = ~C'est une proposition généreuse, <RACE>, mais il me faut uniquement atteindre l'arbre le plus proche. Le magicien qui est venu dans ma forêt a dit que n'importe quel arbre me permettrait de rentrer chez moi. Je ne vous oublierai jamais ! Si nous nous revoyons, j'espère pouvoir vous récompenser comme il convient ! Au revoir !~ 
-@29 = ~Thank you, kind <RACE>. I shall not forget you. If we meet again, I hope I shall have the chance to reward you properly. Farewell!~/*Merci, gentil <RACE>. Je ne vous oublierai pas. Si nous nous revoyons, j'espère avoir l'occasion de vous récompenser comme il convient. Au revoir !*/
+@29 = ~Merci, gentil <RACE>. Je ne vous oublierai pas. Si nous nous revoyons, j'espère avoir l'occasion de vous récompenser comme il convient. Au revoir !~
 @30 = ~Je ne ferais que vous ralentir, <RACE>, mais j'apprécie votre gentillesse. Je ne vous oublierai jamais ! Si nous nous revoyons, j'espère vous récompenser comme il convient ! Au revoir !~
-@31 = ~Oh, please let this servant of the oak be free at last! Are you kind, <RACE>, or but another captor come to torment me?~ [NWDRYAD9] 
-/*Oh, de grâce, rendez enfin la liberté à la servante du chêne que je suis ! Allez-vous faire preuve de bonté, <RACE>, ou comptez-vous aussi me tourmenter ?*/
+@31 = ~Oh, de grâce, rendez enfin la liberté à la servante du chêne que je suis ! Allez-vous faire preuve de bonté, <RACE>, ou comptez-vous aussi me tourmenter ?~ [NWDRYAD9]

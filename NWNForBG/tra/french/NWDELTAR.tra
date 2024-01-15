@@ -1,5 +1,5 @@
-@0 = ~Par les dieux ! Vous ne me semblez pas être un <MANWOMAN> au service de Maugrim. N'est-ce pas ?~ [NWDELT50] 
-@1 = ~Etes-vous prisonnier ici ?~
+@0 = ~Par les dieux ! Vous ne me semblez pas être au service de Maugrim. N'est-ce pas ?~ [NWDELT50] 
+@1 = ~Êtes-vous prisonnier ici ?~
 @2 = ~Reculez ! Pas de sale tour avec moi !~
 @3 = ~Non, je ne fais absolument pas partie de ce culte.~
 @4 = ~Oui. Maugrim m'a jeté ici quand j'ai refusé de me joindre à sa cause. Je me nomme Deltagar Zhelhund... ancien Mage Suprême de la confrérie. Dites-moi... seriez-vous en mesure de me faire sortir de cette cellule ?~
@@ -15,7 +15,7 @@
 @14 = ~Je vais vous dire tout ce que je sais. Je dois avouer, cependant, que je sais peu de choses sur ce qui s'est passé depuis que Maugrim m'a jeté en prison.~
 @15 = ~Que s'est-il passé dans cette tour ?~
 @16 = ~Dites-moi ce que vous savez au sujet du culte.~
-@17 = ~Très bien. J'en ai terminé avec mes qusetions.~
+@17 = ~Très bien. J'en ai terminé avec mes questions.~
 @18 = ~Je n'ai aucune récompense à vous donner. Maugrim a certainement retiré mon lien de sang avec les téléporteurs, je ne peux donc même pas vous faire une pierre runique. Cependant, je peux vous dire ce que je sais, si vous le souhaitez.~
 @19 = ~Oui, des informations me seraient utiles.~
 @20 = ~Dans ces conditions, vous ne m'êtes d'aucune utilité.~
@@ -43,7 +43,7 @@
 @42 = ~Alors vous ne voulez pas m'aider ?~
 @43 = ~Alors oubliez ça. Partez tant que vous le pouvez.~
 @44 = ~Alors je vais être forcé de vous tuer.~
-@45 = ~Merci. Heureusement, je peux encore me téléporter hors d'ici... et revenir plus tard combattre Maugrim. Mes voeux vous accompagnent, <SIRMAAM>.~
+@45 = ~Merci. Heureusement, je peux encore me téléporter hors d'ici... et revenir plus tard combattre Maugrim. Mes voeux vous accompagnent.~
 @46 = ~Maugrim est arrivé il y a de nombreux mois, mais j'ignore d'où il venait. Il prétendait avoir découvert un mystérieux pouvoir... pouvoir qu'il voulait partager avec nous. Il a jalousement gardé le secret au sujet de la nature de ce pouvoir, comme de bien entendu, mais Arklem était trop intéressé pour s'en préoccuper. Maugrim a donc rejoint la Confrérie, qui lui a confié la formation des élèves. Nous l'ignorions, mais tous les élèves sont peu à peu tombés sous son influence. Eux aussi se sont mis à vénérer la même entité que lui et son culte s'est agrandi.~ 
 @47 = ~En fait, il semble qu'il aimerait utiliser les ressources des magiciens pour une grande guerre qu'il prépare. Il a l'intention d'envahir Padhiver. Cela ne fait aucun doute à mon sens, même si j'ignore ce qu'il a fait au cours de ces dernières semaines. Il ne recherche pas le pouvoir en soi, mais plutôt... quelque chose qui se trouve à Padhiver.~ 
 @48 = ~Quelle est l'entité qu'il vénère ?~

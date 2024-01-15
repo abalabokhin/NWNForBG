@@ -1,10 +1,10 @@
-@0 = ~Bonjour <CHARNAME>, héros de Padhiver ! Je suis Barax, ancien soldat de Padhiver qui se consacre désormais à traquer les bousiers qui nous ont fait ça !~
+@0 = ~Bonjour <CHARNAME>, héros de Padhiver ! Je suis Barax, ancien soldat de Padhiver qui se consacre désormais à traquer les bousiers qui nous ont fait ça !~ ~Bonjour <CHARNAME>, héroïne de Padhiver ! Je suis Barax, ancien soldat de Padhiver qui se consacre désormais à traquer les bousiers qui nous ont fait ça !~
 @1 = ~Comment connaissez-vous mon nom ?~
 @2 = ~Traquer qui ?~
 @3 = ~Je ne peux pas parler.~
 @4 = ~Tout le monde à Padhiver connaît votre nom. Vous faites partie de ceux qui nous ont sauvés de l'épidémie et je suis persuadé que vous nous aiderez aussi à retrouver ces chiens qui en sont à l'origine.~
 @5 = ~Qui devons-nous rechercher ?~
-@6 = ~Le culte bien évidemment ! Cette mystérieuse organisation qui a lâché l'épidémie sur Padhiver et tué de nombreux innocents. Un héros tel que vous est justement ce dont nous avons besoin pour la retrouver.~
+@6 = ~Le culte bien évidemment ! Cette mystérieuse organisation qui a lâché l'épidémie sur Padhiver et tué de nombreux innocents. Un héros tel que vous est justement ce dont nous avons besoin pour la retrouver.~ ~Le culte bien évidemment ! Cette mystérieuse organisation qui a lâché l'épidémie sur Padhiver et tué de nombreux innocents. Une héroïne tel que vous est justement ce dont nous avons besoin pour la retrouver.~
 @7 = ~Je ferai de mon mieux.~
 @8 = ~Cela ne m'intéresse pas d'essayer de retrouver ce culte.~
 @9 = ~Je ne vous retarderai pas davantage. Je suis persuadé que vous voulez parler à Dame Aribeth. Nous devons lui signaler tout ce que nous découvrons. Bonne chance pour vos recherches !~
@@ -12,7 +12,7 @@
 @11 = ~Quoi ?! Ces chiens ont lâché sur notre ville une terrible épidémie qui a tué un nombre incalculable d'innocents ! Nous avons une chance de les débusquer et cela ne vous intéresse pas ?~
 @12 = ~Ça ne vous regarde pas, soldat. Au revoir.~
 @13 = ~Vous avez raison. Nous devons les débusquer. Je ferai de mon mieux.~
-@14 = ~Je n'ai plus rien à vous dire. Je pensais que vous étiez un héros.~
+@14 = ~Je n'ai plus rien à vous dire. Je pensais que vous étiez un héros.~ ~Je n'ai plus rien à vous dire. Je pensais que vous étiez une héroïne.~
 @15 = ~Excusez-moi, mais je ne désire pas parler à quelqu'un qui se fiche des innocents qui ont souffert à cause de l'épidémie.~
 @16 = ~Salutations, <CHARNAME>. J'espère que vous débusquerez bientôt le culte. Ces chiens doivent être punis !~
 @17 = ~J'ai entendu dire que vous aviez repéré le culte à Luskan. Faites-leur en baver de notre part à tous, <CHARNAME> !~

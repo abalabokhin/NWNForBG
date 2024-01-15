@@ -1,9 +1,8 @@
-@0 = ~You do not know how or for what to use this book.~ /*Vous n'imaginez même pas le risque que vous prenez !*/
-@1 = ~You must get closer to the demon.~ /*Vous devez absolument m'écouter.*/
-@2 = ~You cannot use the book in this location.~/*Vous ne pouvez utiliser la relique pour le moment.*/
-@3 = ~How would you like to use this book?~/*Comment faites-vous pour soulever le rocher ?*/
-@4 = ~Mener à bien le rituel~
-@5 = ~Bannir le démon~
+@0 = ~Vous n'avez aucune idée de l'utilité de ce livre et vous ne savez pas comment vous en servir.~
+@1 = ~YVous devez vous rapprocher du démon.~
+@2 = ~Vous ne pouvez pas utiliser le livre à de cet endroit.~
+@3 = ~Que souhaitez-vous faire avec ce livre ?~
+@4 = ~*Mener à bien le rituel*~
+@5 = ~*Bannir le démon*~
 
-@7 = ~Close book.~
-/*DD Verrouillage*/
+@7 = ~*Ferme le livre*~

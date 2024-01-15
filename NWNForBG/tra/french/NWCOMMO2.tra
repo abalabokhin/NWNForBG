@@ -2,10 +2,9 @@
 @1 = ~Vous n'êtes peut-être pas le soldat le plus intelligent du camp, <CHARNAME>, mais vous connaissez votre affaire.~
 @2 = ~Eh, ce camp est sûr ! Pas la peine de brandir vos armes ici ! Gardez-les pour le champ de bataille !~
 @3 = ~On dirait que vous êtes sur le point de partir à la recherche d'Aribeth la traîtresse : vous êtes armé et tout !~
-@4 = ~Vous avez beau être un héros célèbre, <CHARNAME>, vous n'avez pas besoin de vous promener tout le temps les armes à la main...~
+@4 = ~Vous avez beau être un héros célèbre, <CHARNAME>, vous n'avez pas besoin de vous promener tout le temps les armes à la main...~ ~Vous avez beau être une héroïne célèbre, <CHARNAME>, vous n'avez pas besoin de vous promener tout le temps les armes à la main...~
 @5 = ~Je ne m'attendais pas à rencontrer un autre visage <RACE> par ici, en particulier quelqu'un d'aussi célèbre que vous, <CHARNAME>.~ 
-@6 = ~Gend doit vous payer une fortune, <CHARNAME>. J'ai toujours entendu dire que les héros <RACE>s se faisaient bien payer...~
+@6 = ~Gend doit vous payer une fortune, <CHARNAME>. J'ai toujours entendu dire que les héros <PRO_RACE>s se faisaient bien payer...~ ~Gend doit vous payer une fortune, <CHARNAME>. J'ai toujours entendu dire que les héroInes <PRO_RACE>s se faisaient bien payer...~
 @7 = ~J'ai beau savoir que nous avons besoin de toute l'aide que nous pourrons trouver, je ne fais pas confiance aux Uthgardt qui campent sur le plateau.~
 @8 = ~Rien de tel qu'une jolie femme pour rappeler aux soldats qui vont partir au front pourquoi ils se battent.~
-@9 = ~You're here to save us all from that big, bad Luskan army, aren't you?~ 
-/*Vous n'êtes pas très futé pour un garde, je me trompe ?*/
+@9 = ~Vous êtes venu nous sauver des grands méchants soldats de Luskan ?~ 

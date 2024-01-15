@@ -4,7 +4,7 @@
 @3 = ~Je suis ici en qualité de Juge et j'exige des réponses.~
 @4 = ~Jadis, un mortel répondant au nom de Karlat Jhareg me donna un tel ordre. A l'époque, je lui remis un phylactère capable d'abriter son âme, afin que nul mortel ne le menace. J'avais mes raisons de le lui donner, à l'époque, mais je ne vois pas en quoi te l'offrir me conférerait le moindre avantage. Choisis autre chose et essaye de te montrer plus avisé, cette fois-ci.~ 
 @5 = ~J'ai besoin d'un objet magique !~
-@6 = ~Take this and leave.~/*Moi devoir partir.*/
+@6 = ~Prenez ceci et partez d'ici.~
 @7 = ~Toi, être de chair et de sang ? Tu es le Juge ? En ce cas, ma charade prend fin : tu exerces sur moi un contrôle plus grand que quiconque auparavant...~
 @8 = ~Vous êtes également pris au piège, n'est-ce pas ?~
 @9 = ~Dans ce cas, contez-moi l'histoire des frères Jhareg...~
@@ -14,10 +14,10 @@
 @13 = ~Oui, mon Juge. Le marché que je conclus avec le mage ne mentionnait pas l'intervention de Lathandre. A l'instar des fantômes et autres mortels, je suis coincé en ces lieux... C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.~
 @14 = ~Dites-m'en plus...~
 @15 = ~Viens-en au fait.~
-@16 = ~Let the brothers tell their own tales, Judge. I am here to tell my own... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ /*Laissez-moi franchir la porte, alors. C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.*/
+@16 = ~Que les frères vous en fassent eux-mêmes le récit de leur histoire, Juge. Je suis ici pour narrer la mienne... C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.~
 @17 = ~Nous sommes tous coupables, mon Juge, et tous innocents, à l'exception d'un seul... Et c'est de moi qu'il s'agit. C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.~
-@18 = ~I am Belial, prince of demons! Did you believe that such a simple spell would summon me? No, I answered Karlat Jhareg's call for my own reasons, Judge... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ /*Je suis Bélial, le prince des démons ! Croyais-tu qu'un sort aussi trivial serait capable de me convoquer ? Non, car j'ai délibérément répondu à l'appel de Karlat Jhareg, Juge... Lui pas mort, et moi pas vouloir tuer lui.*/
-@19 = ~Where does the crime begin? Where does it end? A crime is not an event! It is a thread that must be followed through the weave... You see, it was I who first planted the seed of slaughter in Karlat's mind. He was but a weapon and it was my hand that controlled him.~ /*Où mène ce pont ? Comme s'achève-t-elle ? Ce n'est pas terminé ! C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.*/
+@18 = ~Je suis Bélial, le prince des démons ! Croyais-tu qu'un sort aussi trivial serait capable de me convoquer ? Non, car j'ai délibérément répondu à l'appel de Karlat Jhareg, Juge... C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.~
+@19 = ~Où le crime commence-t-il ? Et où s'achève-t-il ? Un crime n'est pas un fait isolé, il se perd dans une trame bien plus complexe... C'est moi qui ait fait germer ces idées de meurtre dans l'esprit de Karlat, vois-tu. Il n'était qu'un outil, une arme ; c'est ma main qui le contrôlait.~
 @20 = ~Quint était, en quelque sorte, l'arme de mon arme, le serviteur de mon esclave. C'est lui qui a amené les enfants au château, après quoi Karlat a lancé le sort qui les a tués. Et moi seul savais que ce carnage n'était en rien justifié, car le rituel de Karlat n'en avait nul besoin. Mais je lui ai dit le contraire, et il m'a cru.~ 
 @21 = ~Mais alors, c'est toi, le responsable du massacre ?~
 @22 = ~Mais pourquoi as-tu fait cela ?~
@@ -28,12 +28,11 @@
 @27 = ~Telle est la nature des démons, juge. Pourquoi y a-t-il tant de souffrances inutiles en ce monde ? Pourquoi tout n'est-il qu'injustice, guerre et tyrannie ? A cause de nous, bien sûr...~
 @28 = ~Pour commencer, Lathandre oblige tous les occupants du château à obéir au juge... Et puis, comment comptes-tu châtier un démon ? J'habite les Abysses, et je ne souhaite qu'une chose : retourner dans leurs mers de feu.~ 
 @29 = ~Si cela peut me permettre d'échapper à ce lieu maudit, oui, et avec joie, encore. Tiens, prends-la et fais-en ce que bon te semblera.~
-@30 = ~The agreement has been fulfilled.~ 
-/*Le compagnon d'armes est devenu aveugle.*/
+@30 = ~L'accord a été honoré.~ 
 @32 = ~Stupide mortel ! Tu as oublié de lancer ton charme de protection ! Belial va t'anéantir !~
 
 @34 = ~Lathandre a-t-il besoin de mes services, gardienne ?~
-@35 = ~Etablir ma culpabilité est une chose, me punir en est une autre. Tu n'as aucune autorité sur moi, gardienne.~
+@35 = ~Établir ma culpabilité est une chose, me punir en est une autre. Tu n'as aucune autorité sur moi, gardienne.~
 @36 = ~Ah ! Ton juge est stupide, gardienne ! Cette cour est donc dissoute et l'affaire est résolue. Selon la volonté de Lathandre, nous sommes tous libres de partir, même moi !~
 @37 = ~Mais cela nous condamne à rester enfermés ici éternellement ! Non, c'est impossible !~
 @38 = ~Et je suis très fier du résultat, dois-je dire. Aujourd'hui encore, les seigneurs ténébreux se ruent au combat en prononçant le nom de Bélial, Seigneur du Feu !~

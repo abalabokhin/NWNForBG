@@ -1,4 +1,4 @@
-@0 = ~**hic** Eh, je vous connais ! Vous faites partie des héros que Gend a engagé pour lui retrouver les Mots de Pouvoir, hein ! **hic** C-c'est sûr que c'est  v-vous ! Il f-faut m'aider. C-cette s-serveuse veut plus me d-donner à b-boire! Elle dit que je s-suis s-saoule! Elle d-doit p-pas me t-traiter comme ça! Je suis Lillian Cambridge! Aarin Gend v-veut que je l'aide à t-trouver les M-mots de Pouvoir!~ [NWLILL54] 
+@0 = ~**hic** Eh, je vous connais ! Vous faites partie des héros que Gend a engagé pour lui retrouver les Mots de Pouvoir, hein ! **hic** C-c'est sûr que c'est  v-vous ! Il f-faut m'aider. C-cette s-serveuse veut plus me d-donner à b-boire! Elle dit que je s-suis s-saoule! Elle d-doit p-pas me t-traiter comme ça! Je suis Lillian Cambridge! Aarin Gend v-veut que je l'aide à t-trouver les M-mots de Pouvoir!~ [NWLILL54]  // V FEMININE
 @1 = ~Je crois que vous avez assez bu, Lillian.~
 @2 = ~Je ferais peut-être mieux de vous payer un autre verre pour que vous tombiez raide et que vous arrêtiez de parler comme ça.~
 @3 = ~Que pouvez-vous me dire sur les Mots de Pouvoir ?~
@@ -6,7 +6,7 @@
 @5 = ~Vous avez pas le d-droit de me p-parler comme ça ! Je suis pas une ivrogne : je suis une arché... archéolo... Je suis une eksss-perte dans mon d-domaine !~
 @6 = ~J'avais un de ces M-mots de Pouvoir, vous savez. Il était dans ce j-joli globe de neige. *hic* Mais un héros est arrivé et l'a ouvert, et m-maintenant le g-globe de neige est tout vide. Tout vide et tout seul. J'ai besoin d'un autre verre pour me remonter le moral ! **hic** S-si vous voyez le t-tavernier, dites-lui de m'apporter une autre b-bouteille. Celle-là est p-presque v-vide.~ 
 @7 = ~J'ai besoin d'un autre verre pour me remonter le moral ! **hic** S-si vous voyez le t-tavernier, dites-lui de m'apporter une autre b-bouteille. Celle-là est p-presque v-vide.~
-@8 = ~**hic** Eh, je vous connais ! Vous faites partie des héros que Gend a engagé pour lui retrouver les Mots de Pouvoir, hein ! **hic** C-c'est sûr que c'est  v-vous ! Vous d'vriez vraiment ‘sayer l'vin d'ici. Les deux premières bouteilles font un peu mal, mais après... pfiou !~ [NWLILL54] 
+@8 = ~**hic** Eh, je vous connais ! Vous faites partie des héros que Gend a engagé pour lui retrouver les Mots de Pouvoir, hein ! **hic** C-c'est sûr que c'est  v-vous ! Vous d'vriez vraiment ‘sayer l'vin d'ici. Les deux premières bouteilles font un peu mal, mais après... pfiou !~ [NWLILL54]  // V FEMININE
 @9 = ~Vous êtes ivre !~
 @10 = ~Chuis pas ivre ! **rire** Chuis Lillian Cambridge, archéologue émérite ! Gend, y veut qu'j'aide les aventuriers à trouver les Mots d'Pouvoir ! Allez, posez une question.~
 @11 = ~Je dois trouver les Mots de Pouvoir.~
@@ -20,7 +20,7 @@
 @19 = ~L'était temps qu'vous arriviez. J'attends d'puis au moins dix minutes que quelqu'un vienne remplir mon verre !~ [NWLILL57]
 @20 = ~I'm not here to fill your drink. I work for Aarin Gend.~ /*Je ne suis pas ici pour remplir votre verre. Je suis <CHARNAME>. Je travaille pour Aarin Gend.*/
 @21 = ~J'espérais que vous me parleriez de la boule à neige.~
-@22 = ~Ah ! Oui, <CHARNAME>, le héros de Padhiver. J'porterais bien un toast à vos exploits légendaires... si mon verre était pas vide ! Je m'appelle Lillian Cambridge, archéologue - l'experte du Nord en matière d'antiquités et d'artefacts anciens. Aarin Gend a dû vous dire que je venais proposer mon savoir tout à fait unique à la cause de l'Alliance Seigneuriale.~ 
+@22 = ~Ah ! Oui, <CHARNAME>, le héros de Padhiver. J'porterais bien un toast à vos exploits légendaires... si mon verre était pas vide ! Je m'appelle Lillian Cambridge, archéologue - l'experte du Nord en matière d'antiquités et d'artefacts anciens. Aarin Gend a dû vous dire que je venais proposer mon savoir tout à fait unique à la cause de l'Alliance Seigneuriale.~  // V FEMININE
 @23 = ~J'aimerais vous poser quelques questions.~
 @24 = ~Une boule à neige ? On m'en a volé une il y a quelque temps. Un mage assez charmant, d'ailleurs, du nom de Nax. Vous auriez récupéré mon trésor disparu ? Faites voir, <CHARNAME>. Je dois l'examiner pour être sûre que c'est bien celle qu'on m'a volée.~ 
 @25 = ~Redites-moi où je peux trouver cette boule à neige.~
@@ -60,7 +60,7 @@
 @59 = ~En fait, ils pourraient se trouver n'importe où... mais je crois savoir où se trouve l'un des Mots, après des années de recherches et d'études.~
 @60 = ~Où puis-je le trouver ?~
 @61 = ~Et bien sûr, j'avais envie de trouver quelqu'un pour reprendre à Nax ma boule à neige, comme je te l'ai déjà dit.~
-@62 = ~Et j'espérais aussi trouver un brave aventurier, un héros intrépide qui m'aiderait dans ma tâche.~
+@62 = ~Et j'espérais aussi trouver un brave aventurier, un héros intrépide qui m'aiderait dans ma tâche.~ // V FEMININE
 @63 = ~Tâche ? Quelle tâche ?~
 @64 = ~Comme vous voulez, <CHARNAME>. Ça ne doit même pas être la bonne boule à neige. Et si c'est elle, j'attendrai ici que vous changiez d'avis. Souvenez-vous – si vous ne me donnez pas la boule à neige, je ne vous dis pas où trouver le Mot de Pouvoir.~ 
 @65 = ~Comme promis, je vais vous dire où trouver le Mot de Pouvoir. La clé, comme vous l'aurez déjà deviné, est la boule à neige.~

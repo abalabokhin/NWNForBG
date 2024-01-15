@@ -1,15 +1,15 @@
-@0 = ~Ahhh, h-hello, there, <SIRMAAM>.~ [NWELY57]/*Ahhh, b-bonjour, <SIRMAAM>.*/
+@0 = ~Ahhh, b-bonjour.~ [NWELY57]
 @1 = ~Puis-je vous demander votre nom, mon ami ?~
 @2 = ~Je peux vous poser quelques questions ?~
 @3 = ~Qui êtes-vous ?~
-@4 = ~Au revoir.~
-@5 = ~Oh. Yes, my name is Elynwyd. Elynwyd Direlin. I apologize for my mood... It's a bad day.~ /*Oh. Oui, je m'appelle Elynwyd. Elynwyd Direlean. Euh... et vous êtes ? C'est un bon début.*/
+@4 = ~Au revoir.~Elynwyd Direlean
+@5 = ~Oh. Oui, je m'appelle Elynwyd. Elynwyd Direlean. Veuillez pardonner mon humeur... Ce n'est pas un bon jour.~
 @6 = ~Qu'y a-t-il de si terrible aujourd'hui ?~
 @7 = ~Pouvez-vous me dire ce qui se passe à Luskan ?~
 @8 = ~Savez-vous s'il y a du travail dans le coin ?~
 @9 = ~J'ai besoin d'aide pour trouver mon chemin.~
-@10 = ~Aye. If you wish. Although... I am not myself, today. Did you want something from me?~ /*Oui. Si vous le désirez. Mais... je ne suis pas moi-même aujourd'hui. J'ignore dans quelle mesure je pourrai vous aider.*/
-@11 = ~Who... ? Oh. I guess... my name is Elynwyd. Why do you ask?~ /*Qui... ? Oh. Bien sûr... je m'appelle Elynwyd. Pourquoi voulez-vous le savoir ? Qui êtes-vous ?*/
+@10 = ~Oui. Si vous le désirez. Mais... je ne suis pas moi-même aujourd'hui. J'ignore dans quelle mesure je pourrai vous aider.~
+@11 = ~Qui... ? Oh. Bien sûr... je m'appelle Elynwyd. Pourquoi voulez-vous le savoir ?~
 @12 = ~(soupir) Allez-y, alors.~
 @13 = ~Ma soeur... Ma chère Evaine... est détenue par le capitaine Kurth, le plus puissant des Hauts Capitaines qui combattent pour le contrôle de la ville. Je lui versée une énorme rançon et je l'ai supplié de la libérer, mais il s'y refuse. Je ne peux me tourner vers personne, Kurth fait ce qui lui plaît. Je crains de ne jamais la revoir.~ 
 @14 = ~En réalité, j'ai des nouvelles pour vous... Evaine est morte.~
@@ -35,7 +35,7 @@
 @34 = ~Je... je me suis laissé dire que le mur situé près de la tour en ruines de Kurth était troué et que cela permettrait d'entrer dans le quartier de la rade ouest. Je n'ai pas eu le courage d'essayer, mais peut-être pourriez-vous le faire... Tenez, prenez cet anneau. Il appartient à Evaine. Si vous la retrouvez, elle sera probablement si effrayée qu'il est possible qu'elle refuse de vous suivre. Mais l'anneau lui prouvera que c'est moi qui vous envoie.~
 
 @36 = ~Je... j'imagine que je n'ai pas le choix, de toute façon. La plupart des gens ne m'offriraient même pas de m'aider et... s'il y a la moindre chance de revoir Evaine en vie, je... je me dois de la saisir.~
-@37 = ~Thank you for the offer, <SIRMAAM>, but I must find some other way.~/*Merci de votre offre, <monsieur/madame>, mais je dois trouver un autre moyen.*/
+@37 = ~Merci de votre offre, <monsieur/madame>, mais je dois trouver un autre moyen.~
 @38 = ~Ma soeur a quelques connaissances magiques. J'espérais que cela lui permettrait de s'enfuir d'elle-même, mais ce n'a manifestement pas été le cas.~
 @39 = ~Avez... Avez-vous trouvé Evaine ? Y a-t-il des nouvelles d'elle ?~ [NWELY58]
 @40 = ~Rappelez-moi comment la trouver.~
@@ -53,7 +53,7 @@
 @52 = ~Je ne crois pas.~
 @53 = ~Quel bâtard répugnant ! Ahhhh, c'est bien le genre de choses auxquelles on pouvait s'attendre de sa part ! Je vous en prie, acceptez au moins d'aller voir si Evaine va bien ! Attaquez la base de Kurth ou... je ne sais pas, moi... s'il vous plaît...~ 
 @54 = ~Vous... vous l'avez trouvée ? Ne me dites pas que vous l'avez laissée là-bas ! Ou... ou pire, que vous l'avez abandonnée dans les rues ! Il pourrait lui arriver quelque chose d'encore pire ! Qu'attendez-vous ? Je vous en prie, allez la rechercher et ramenez-la moi !~
-@55 = ~What?! Dead?! How could you... ? No... I suppose it is not truly your fault, is it? There is no reason Evaine's fortune should be better than anyone else in this town. Tell me, <SIRMAAM>... Did she suffer? And Kurth... Did he at least pay for what he did?~/*Quoi ? Morte ? Comment avez-vous pu ? Non... je suppose que ce n'était pas entièrement votre faute, n'est-ce pas ? Il n'y avait aucune raison qu'Evaine ait plus de chance que les autres habitants de cette maudite ville. Dites-moi, <monsieur/madame>... a-t-elle souffert ? Et Kurth a-t-il... a-t-il payé pour son horrible crime ?*/
+@55 = ~Quoi ? Morte ? Comment avez-vous pu ? Non... je suppose que ce n'était pas entièrement votre faute, n'est-ce pas ? Il n'y avait aucune raison qu'Evaine ait plus de chance que les autres habitants de cette maudite ville. Dites-moi... a-t-elle souffert ? Et Kurth a-t-il... a-t-il payé pour son horrible crime ?~
 @56 = ~Elle a beaucoup souffert, oui, mais Kurth l'a payé de sa vie.~
 @57 = ~Elle n'a pas souffert, non, mais Kurth l'a tout de même payé de sa vie.~
 @58 = ~Elle a souffert, oui, et Kurth est toujours en vie.~
@@ -69,21 +69,21 @@
 @68 = ~S'il vous plaît ! Faites quelque chose, ne la laissez pas là-bas ! Je vous en conjure !~
 @69 = ~Je... bien. J'espère que ce monstre brûlera éternellement dans les flammes de l'enfer. Je... excusez-moi...~
 
-@71 = ~That is... good to know. Thank you, <SIRMAAM>. Now, please... excuse me...~/*C'est... bon de le savoir. Merci,<monsieur/madame>. Je... excusez-moi...*/
+@71 = ~C'est... bon de le savoir. Merci. Je... excusez-moi...~
 @72 = ~Je... je vois. Dans ce cas, je dois veiller à ce qu'il paye son méfait au centuple. Je... excusez-moi...~
 @73 = ~Je... j'imagine que c'est déjà quelque chose. Merci. Quant à lui, je veillerai à ce qu'il paye... d'une manière ou d'une autre...~
 @74 = ~Je... je vois. Enfin... peut-être pas, non. Excusez-moi, je... je dois m'en aller.~
-@75 = ~You... are a very cruel and evil <MANWOMAN>. I am very sorry I ever met you.~ /*Vous... vous êtes cruel et mauvais, <monsieur/madame>. J'aurais préféré ne jamais vous rencontrer.*/
+@75 = ~Vous... vous êtes cruel et mauvais. J'aurais préféré ne jamais vous rencontrer.~ ~Vous... vous êtes cruelle et mauvaise. J'aurais préféré ne jamais vous rencontrer.~
 @76 = ~Ahhh... Vous revoilà. Avez-vous eu des nouvelles d'Evaine ? Je sais qu'il y a peu d'espoir...~ [NWELY59]
 @77 = ~Je... j'arrive à peine à y croire ! Vous m'avez rendu Evaine ! J'avais presque... presque perdu espoir.~ [NWELY61]
 @78 = ~Evaine m'a raconté comment vous l'aviez sauvée. Comment pourrai-je jamais vous remercier, <monsieur/madame> ? Tenez, voici 300 pièces d'or. J'aimerais tant pouvoir vous donner plus...~
 @79 = ~Vous êtes sûr de ne pas pouvoir faire un effort ? C'est de votre soeur qu'il s'agit, tout de même...~
 @80 = ~Si vous n'augmentez pas cette somme, je tue votre soeur.~ 
-@81 = ~That's great. I'm fine with that amount.~/*C'est absolument génial ! Voilà, c'est fait.*/
-@82 = ~No, I don't need gold. You lost enough.~/*Non, moi pas besoin de or. Vous assez perdu.*/
+@81 = ~C'est parfait. Cette somme me convient.~
+@82 = ~Non, je n'ai pas besoin de votre or. Vous avez perdu suffisamment.~
 @83 = ~Vous avez raison, bien sûr. Je préfère ne plus rien avoir et savoir ma soeur en bonne santé. Tenez, voici 375 pièces d'or... c'est tout ce que je possède... Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~ 
 
-@85 = ~I don't have any more money. Are you going to take the last of it from me?~ /*Je n'ai pas d'autres questions. Allez-vous enquêter un peu plus ?*/
+@85 = ~Je n'ai plus un sou. Allez-vous me soutirer mes dernières possessions ?~
 @86 = ~Que... vous n'oseriez pas ! Mais si, bien sûr... en quoi cela serait-il surprenant, dans cette ville ? Voilà, c'est tout ce qui me reste... 375 pièces d'or... Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~ 
 @87 = ~Dans ce cas, prenez. Vous méritez bien plus, <monsieur/madame>. Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~
 @88 = ~Vous... vous êtes bien trop bon avec moi, <monsieur/madame>, bien plus que les habitants de cette cité. J'espère que les dieux vous seront favorables pour vous remercier de ce que vous avez fait. Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~ 

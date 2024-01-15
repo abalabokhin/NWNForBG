@@ -1,4 +1,4 @@
-@0 = ~Bienvenue à l'Auberge de l'Alliance. C'est un vrai plaisir de servir un héros dans mon humble établissement. Y a-t-il quelque chose que je puisse faire pour vous, <SIRMAAM> ?~
+@0 = ~Bienvenue à l'Auberge de l'Alliance. C'est un vrai plaisir de servir un héros dans mon humble établissement. Y a-t-il quelque chose que je puisse faire pour vous, <SIRMAAM> ?~ // V FEMININE
 @1 = ~Combien coûte une chambre ?~
 @2 = ~Je viens percevoir un nouvel impôt.~
 @3 = ~Je peux vous poser quelques questions ?~
@@ -28,7 +28,7 @@
 @27 = ~Peut-être, mais avant, j'ai une autre question à poser.~
 @28 = ~Si cela peut vous rendre service.~
 @29 = ~Où puis-je trouver de quoi m'équiper ?~
-@30 = ~Pourquoi endroit s'appeler Port Llast ? Avoir docks dans environs ?~
+@30 = ~Pourquoi endroit s'appeler Port Llast ? Avoir quais dans environs ?~
 @31 = ~Je parie qu'un verre de vin vous fera penser à plein d'autres questions. Réfléchissez-y.~
 @32 = ~Bien sûr le fléau ne sévit plus, mais je crois qu'on en ressent encore les effets. Certes, les pillards et les bandits posent toujours problème, mais la nature également semble subir les répercussions d'un phénomène aussi grave.~
 @33 = ~La nature ? Que voulez-vous dire ?~
@@ -41,7 +41,7 @@
 @40 = ~For normal supplies I would suggest the Cracked Anvil in the center of the town. And there is Alhelor, he has some special equipment to sell to werewolf hunters.~ /*Pour des marchandises normales, je vous suggère l'Enclume Fendue, au sud-est. Où être eau ? Deekin plus voir eau !*/
 @41 = ~Pourriez-vous répondre à une autre question ?~
 @42 = ~C'est tout ce dont j'ai besoin, merci.~
-@43 = ~Oui, <SIRMAAM>. Les docks sont situés à l'ouest d'ici. C'est un endroit assez tranquille, du moins aussi tranquille qu'il est possible de l'être en ces temps troublés.~
+@43 = ~Oui, <SIRMAAM>. Les quais sont situés à l'ouest d'ici. C'est un endroit assez tranquille, du moins aussi tranquille qu'il est possible de l'être en ces temps troublés.~
 @44 = ~C'est-à-dire ?~
 @45 = ~Très bien. J'ai encore quelques questions à vous poser.~
 @46 = ~J'ai entendu parler de choses étranges dans le Bois de Padhiver. Bien entendu, il est possible que cela n'ait rien à voir. C'est juste que ce rôdeur, Ballard, en parlait ici l'autre jour. Il avait l'air assez perturbé. Si vous voulez en savoir plus, allez interroger Ballard. Il campe dans un bosquet, au nord-est de l'auberge.~ 

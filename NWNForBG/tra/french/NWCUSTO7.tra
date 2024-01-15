@@ -1,6 +1,5 @@
-@0 = ~My name is Lady Merana and I'm waiting for a gentleman. But I'm sure it's none of your business, though.~ /*Je m'appelle <CHARNAME>. Je suis un aventurier. Mon nom ne vous regarde pas.*/
-@1 = ~Hmmmm... I'm waiting for a friend of mine, a gentleman, but if you insist, I'd love to spend the evening with a handsome man like you....~ /*Haaa... Vous essayer dominer esprit de moi, mais pas faire. Pas réessayer, ou moi tuer vous.*/
-@2 = ~I already have a gentleman, sir, I'm just waiting for him. Please don't embarrass yourself as all your offers will definitely be rejected. Pf.~ /*J'ai déjà un certificat. Tenez. Qu'est-ce qui vous fait penser que votre race dominera la nôtre ? Non.*/
-@3 = ~What impudence! How does a vile bandit like you dare to flirt with a noble woman?! Oh!~ /*Que se passe-t-il ? Vous n'avez pas l'air de porter cette J'nah dans votre coeur. Ah !*/
-@4 = ~My name is Lady Merana and I am waiting for a gentleman. I ask you to move away so that my friend is not seduced by your beauty.~ 
-/*"Je suis <CHARNAME>, et je ne travaille pour personne." Je suis un vieux loup rusé, mon ami. Vous ne m'aurez pas facilement.*/
+@0 = ~Je suis Lady Merana et j'attends un gentilhomme. Mais tout cela ne vous regarde pas.~
+@1 = ~Hmmmm... J'attends un ami, un gentilhomme, mais si vous insistez, je passerais volontiers la soirée avec un bel homme comme vous...~ ~Hmmmm... J'attends un ami, un gentilhomme, mais si vous insistez, je passerais volontiers la soirée avec une belle femme comme vous...~
+@2 = ~J'attends déjà un gentilhomme. Monsieur, s'il vous plaît, ne vous mettez pas dans l'embarras, toutes vos tentatives seront éconduites.~ ~J'attends déjà un gentilhomme, madame, s'il vous plaît, ne vous mettez pas dans l'embarras, toutes vos tentatives seront éconduites.~
+@3 = ~Quelle impudence ! Comment une vile fripouille dans votre genre ose-t-elle flirter avec une femme de ma condition ?! Oh !~
+@4 = ~Je suis Lady Merana et j'attends un gentilhomme. Je vais vous demander de bien vouloir vous éloigner afin que mon prétendant ne soit pas ébloui par votre beauté.~

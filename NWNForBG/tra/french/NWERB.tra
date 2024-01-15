@@ -1,6 +1,6 @@
 @0 = ~Ah ! encore une jeune femme venue tenter sa chance auprès d'un gnome dans la fleur de l'âge !~ [NWERB058]
 @1 = ~Qui êtes-vous ?~
-@2 = ~Etes-vous l'un des hommes de la maison de débauche ?~
+@2 = ~Êtes-vous l'un des hommes de la maison de débauche ?~
 @3 = ~Moi vouloir engager vous.~
 @4 = ~J'aimerais vous poser quelques questions.~
 @5 = ~Au revoir.~
@@ -15,11 +15,11 @@
 @14 = ~Bouleversé ? Mais à quel sujet ?~
 @15 = ~J'imagine que mon vin n'a pas fini de décanter, alors allez-y, je vous écoute.~
 @16 = ~Je souhaite que nous reparlions de la récupération de cet anneau.~
-@17 = ~Farewell, good <SIRMAAM>. May fortune smile upon you always.~/*Adieu, mon bon <SIRMAAM>. Puisse la chance vous sourire éternellement.*/
+@17 = ~Adieu, mon bon ami. Puisse la chance vous sourire éternellement.~ ~Adieu, ma bonne amie. Puisse la chance vous sourire éternellement.~
 @18 = ~Ah, c'était le bon temps ! Autrefois, on savait faire de vrais coffres, pas ces petites boîtes fragiles que n'importe quel minable voleur <RACE> est capable d'ouvrir. Ne le prenez pas mal, surtout... Lors de ma jeunesse à Culver, je ne pensais qu'aux coffres de qualité et à la belle vie qu'ils me permettraient de mener. Mais hélas, cela ne devait pas être. Et maintenant, je ne fais plus que donner du plaisir aux femmes.~ 
-@19 = ~Evidemment, vu que Culver n'existe plus depuis la grande pénurie de navets de '45.~
+@19 = ~Évidemment, vu que Culver n'existe plus depuis la grande pénurie de navets de '45.~
 @20 = ~Je vois. Tout le monde est mort de faim ?~
-@21 = ~Je sais que les chefs militaires de la ville, ces hauts-capitaines, s'entretuent pour tenter de prendre le pouvoir. Hormis cela, je ne sais rien... Pour être franc, je ne suis pas le gnome le plus doué en politique de cette partie de l'Anauroch.~
+@21 = ~Je sais que les chefs militaires de la ville, ces hauts-capitaines, s’entre tuent pour tenter de prendre le pouvoir. Hormis cela, je ne sais rien... Pour être franc, je ne suis pas le gnome le plus doué en politique de cette partie de l'Anauroch.~
 @22 = ~Peut-être n'est-ce là qu'un sentiment exacerbé de déjà vu, mais je jurerais vous avoir déjà donné un travail. Vous souvenez-vous de mon anneau ou avez-vous déjà oublié ?~
 @23 = ~C'est drôle, tout le monde a la même réaction quand on prononce son nom, ces temps-ci. Je lui avais bien dit que sa machine ailée ne volerait jamais. Pour ce que j'en sais, il est toujours au fond du gouffre.~
 @24 = ~Je suis certain de vous avoir déjà conté cette histoire... D'ailleurs, vous aviez accepté de me ramener l'anneau. A moins que vous n'ayez déjà oublié ?~
@@ -30,7 +30,7 @@
 @29 = ~Puis-je vous demander autre chose ?~
 @30 = ~D'accord.~
 @31 = ~Cela ne m'intéresse pas.~
-@32 = ~Repassez me voir lorsque vous aurez trouvé cet anneau, <SIRMAAM>. Je suis impatient de mettre la main dessus.~
+@32 = ~Repassez me voir lorsque vous aurez trouvé cet anneau. Je suis impatient de mettre la main dessus.~
 @33 = ~Bien sûr que non ! Ce serait une histoire affreuse ! Mais tout le monde avait très faim, c'est sûr, et beaucoup ont dû croire leur dernière heure venue. Vous avez essayé, vous, de vivre sans navets ? Non, c'est l'Oncle Pinto qui a signé la perte du village en en vendant les droits à un humain en échange d'un sac de navets. Depuis, je crois bien que les humains l'ont renommé Eauprofonde, ou un autre nom ridicule du même genre.~ 
 @34 = ~Voilà une histoire remarquable !~
 @35 = ~Cela m'étonnerait que ce soit vrai.~
@@ -45,20 +45,19 @@
 @44 = ~Eh bien, je n'aurais jamais dû la lui offrir, voyez-vous. Le mari de dame Jadale est un homme très puissant et je l'ai momentanément oublié, aveuglé que j'étais par la passion. Quand il reviendra, je préférerais que sa femme n'ait pas ma bague au doigt. Il est connu pour ses crises de colères et, si je pouvais garder l'usage de mes jambes...~ 
 @45 = ~Elle est chez elle, dans le nord du quartier. Mais rappelez-vous qu'il ne faut pas lui faire de mal, si possible bien entendu. Elle est humaine, et n'est donc pas responsable du fait qu'il lui manque quelques cases.~
 @46 = ~Pas vraiment. Je lui ai offert la bague et le fait de la lui reprendre est extrêmement mal élevé, j'en conviens. Mais comme il s'agit d'une affaire de vie ou de mort, ça ne va pas m'empêcher de me regarder dans la glace.~
-@47 = ~Tell me where to find Lady Jadale.~ /*"Dites-moi où se trouve le château."*/
-@48 = ~N'est-ce pas ? Evidemment, mes ancêtres ont chassé l'Oncle Pinto pour s'être laissé berner de la sorte. Eux n'auraient jamais accepté à moins de deux sacs de navets. Bien. Vous désirez quelque chose ?~ 
+@47 = ~Dites-moi où trouver Lady Jadale.~
+@48 = ~N'est-ce pas ? Évidemment, mes ancêtres ont chassé l'Oncle Pinto pour s'être laissé berner de la sorte. Eux n'auraient jamais accepté à moins de deux sacs de navets. Bien. Vous désirez quelque chose ?~ 
 @49 = ~D'accord, peut-être qu'une somme d'or a également changé de mains, mais l'Oncle Pinto n'a jamais mentionné que les navets. Et comme l'année suivante a été particulièrement bonne, il a été descendu en flammes pour avoir conclu un tel accord. Quel dommage... Bien. Vous désirez quelque chose ?~ 
-@50 = ~Comment avez-vous réussi à convaincre cette femme de vous le céder ? Peu importe. Mieux vaut que je ne le sache pas. Comme ma tante Binny, toute aveugle qu'elle était, le disait lorsqu'elle épousa le malheureux oncle Dent-Saillante : "Qui rien ne sait de rien ne doute."~
+@50 = ~Comment avez-vous réussi à convaincre cette femme de vous le céder ? Peu importe. Mieux vaut que je ne le sache pas. Comme ma tante Binny, toute aveugle qu'elle était, le disait lorsqu'elle épousa le malheureux oncle Dent-Saillante : « Qui rien ne sait de rien ne doute. »~
 @51 = ~N'avions-nous pas convenu de quelque récompense ?~
 @52 = ~Y-a-t-il aussi une récompense pour cette affaire ?~
 @53 = ~Ha ! Elle a été folle de joie quand je lui offert ce petit présent... et livide de rage quand je le lui ai redemandé. Elle dit qu'elle adore cette bague... je pense même qu'elle préfère le bijou à votre serviteur, en ce moment... C'est pour cela qu'il faut que quelqu'un d'autre aille rechercher la bague à ma place. Ces temps-ci, dame Jadale refuse même de m'adresser la parole.~ 
-@54 = ~Splendid! Lady Jadale is at her home, not far from here. Go north, then turn right. Do be kind to her, though, if you can. I don't wish any harm on the dotty woman... I just don't want any harm to come my way.~ 
-/*Sous l'effet du silence Surveillez cet endroit. N'en bougez surtout pas. Effectivement. Mais ne soyez pas dur avec elle, si vous pouvez. Je ne lui veux aucun mal, à cette folle... Je tiens juste à ce qu'il ne m'arrive rien, c'est tout.*/
+@54 = ~Excellent ! Vous trouverez la maison de dame Jadale non loin d'ici. Allez vers le nord puis tournez à droite... Mais ne soyez pas dur avec elle, si vous pouvez. Je ne lui veux aucun mal, à cette folle... Je tiens juste à ce qu'il ne m'arrive rien, c'est tout.~ 
 @56 = ~Très bien, comme vous voudrez. Jenny Jenson était du genre à y regarder à deux fois, elle aussi, et elle a fini comme couturière dans une bicoque minable. A vous de voir.~
 @57 = ~Dame Jadale ne semble pas comprendre que son mari pourrait ne pas voir la bague d'un bon oeil. Elle est plus écervelée qu'un elfe perdu dans un magasin de chaussures, c'est dire ! Bien. J'imagine que vous allez vouloir me poser des questions avant d'aller chercher ma bague...~ 
-@58 = ~Dès que je vous ai vu, j'ai su que vous n'étiez pas du style à échouer. "Erb", me suis-je dit, "cet <MANWOMAN> est plus fort encore qu'oncle Gros-Derrière!" Et vous avez fait très fort. Alors, voici pour vous 650 po pour l'anneau.~
+@58 = ~Dès que je vous ai vu, j'ai su que vous n'étiez pas du style à échouer. « Erb », me suis-je dit, « cet homme est plus fort encore qu'oncle Gros-Derrière! » Et vous avez fait très fort. Alors, voici pour vous 650 po pour l'anneau.~ ~Dès que je vous ai vu, j'ai su que vous n'étiez pas du style à échouer. « Erb », me suis-je dit, « cet femme est plus forte encore qu'oncle Gros-Derrière! » Et vous avez fait très fort. Alors, voici pour vous 650 po pour l'anneau.~
 @59 = ~Ne pourriez-vous pas vous montrer plus généreux pour un camarade gnome ?~ 
-@60 = ~[Persuasion] Vous savez, il n'a pas été facile de mettre la main dessus. Peut-être pourriez-vous faire un dernier effort ?~
+@60 = ~Vous savez, il n'a pas été facile de mettre la main dessus. Peut-être pourriez-vous faire un dernier effort ?~
 @61 = ~Vous feriez mieux d'allonger quelques pièces de plus où vous ne vivrez pas assez longtemps pour le regretter !~
 @62 = ~Merci bien. Ce fut un véritable plaisir que de travailler avec vous.~
 @63 = ~Oui, bien sûr ! J'ai dit ça, hein ? Qu'on n'aille pas penser qu'Erb est revenu sur une promesse... pas comme ma pauvre Tante Fanny, la folle, mariée trois fois. Alors, où en étais-je ? Ah oui. Tenez, 500 po pour l'anneau.~
@@ -71,7 +70,7 @@
 @70 = ~Bien, je vais m'absenter quelque temps, des fois que dame Jadale vienne me voir, ou pire encore. Quelle chance que les gnomes soient petits et qu'ils aient tant de facilités à se cacher. Adieu, mon ami !~
 @71 = ~Tiens ! Bien le bonjour, ma mignonne. Vous ne ressemblez guère aux vieilles biques que j'ai l'habitude de fréquenter. Mais je ne vais pas faire le difficile, hein ?~ [NWERB057]
 @72 = ~Hum ! Je vois que les rues de Luskan ne valent guère mieux que le fond des chausses d'un elfe quand on en vient au nombre de femmes en quête d'un bon gnome. Mais qu'importe ! Il m'est arrivé d'accepter des boulots bien plus difficiles, croyez-moi !~ [NWERB059]
-@73 = ~Etes-vous en train de m'insulter ?~
+@73 = ~Êtes-vous en train de m'insulter ?~
 @74 = ~Bien sûr que non. Mon charme est tel que même les plus belles femmes recherchent mes faveurs... Inutile donc de vous blâmer sous prétexte que vous recherchez de la marchandise de qualité.~
 @75 = ~Je me demande si ce jeune homme est là pour me faire la conversation ou s'il possède quelque fétiche gnome dont je n'ose parler ? J'espère qu'il s'agit de la première solution, mais avec un gnome de qualité tel que moi, tout est possible.~ [NWERB056]
 @76 = ~Tiens, vous voici de nouveau ! Ils finissent tous par revenir, même les chasseurs de primes, bien que cela ne soit pas le sujet d'aujourd'hui.~ [NWERB055]

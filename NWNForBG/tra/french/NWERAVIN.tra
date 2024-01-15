@@ -1,7 +1,7 @@
-@0 = ~Je vous conjure de rester éloigné de ces cadavres, <LADYLORD>. Il y a risque de contamination, d'après ce que j'ai compris.~
+@0 = ~Je vous conjure de rester éloigné de ces cadavres. Il y a risque de contamination, d'après ce que j'ai compris.~
 @1 = ~Pourrais-je vous poser quelques questions ?~
 @2 = ~Au revoir.~
-@3 = ~Je répondrai si je le peux. Mais restez loin des corps, <SIRMAAM>. Et essayez de ne pas respirer les vapeurs, c'est... euh... écoeurant.~
+@3 = ~Je répondrai si je le peux. Mais restez loin des corps. Et essayez de ne pas respirer les vapeurs, c'est... euh... écoeurant.~
 @4 = ~Ne craignez-vous pas d'être vous-même contaminé ?~
 @5 = ~D'où viennent tous ces corps ?~
 @6 = ~Ce ne doit pas être une tâche très agréable.~
@@ -17,11 +17,11 @@
 @16 = ~Que pouvez-vous me dire sur le fléau ?~
 @17 = ~Avez-vous entendu parler d'étranges animaux dans le secteur ?~
 @18 = ~Je voudrais vous demander autre chose.~ 
-@19 = ~La Mort Hurlante rôde, imbécile. Ah ! Ne faites pas attention à ce que j'ai dit, <SIRMAAM>, mais le Coeur de la Ville n'est pas un endroit pour les gens sains en ce moment.~
-@20 = ~Je ne suis pas de ce quartier. Et, même si je l'étais, je n'aurais aucune envie de vous indiquer votre chemin, <SIRMAAM>. Demandez de l'aide à quelqu'un d'autre.~
+@19 = ~La Mort Hurlante rôde, imbécile. Ah ! Ne faites pas attention à ce que je dis, mais le Coeur de la Ville n'est pas un endroit pour les gens sains en ce moment.~
+@20 = ~Je ne suis pas de ce quartier. Et, même si je l'étais, je n'aurais aucune envie de vous indiquer votre chemin. Demandez de l'aide à quelqu'un d'autre.~
 @21 = ~A part ce qui est évident ? La Mort Hurlante ne peut être guérie par les dieux, à ce qu'il semble. Aucune des bénédictions des prêtres n'est efficace. On dirait que les dieux nous ont abandonné, n'est-ce pas? On pourrait croire que le pire est à venir. Pourrait même croire que l'hiver va arriver. Bon, aviez-vous besoin d'autre chose?~ 
 @22 = ~Des animaux ? Ça me dit vaguement quelque chose. J'ai entendu parler d'animaux venus de Eauprofonde, mais rien de plus. Aucun doute que c'est un travail pour les autres gardes de la cité. A ce poste, on ne m'en a pas dit beaucoup plus.~ 
 @23 = ~Donc vous n'avez entendu parler d'aucun animal rôdant dans le coin?~
 @24 = ~Que voulez-vous savoir ?~
-@25 = ~**Soupir** Voyez ce que je fais, <SIRMAAM>. Très peu de gens prennent le temps de parler avec moi, si ce n'est personne. Peut-être que vous aurez plus de chance en posant ces questions dans une taverne du quartier. Bon, y a-t-il quelque chose d'autre que vous vouliez savoir?~ 
+@25 = ~**Soupir** Voyez ce que je fais. Très peu de gens prennent le temps de parler avec moi, si ce n'est personne. Peut-être que vous aurez plus de chance en posant ces questions dans une taverne du quartier. Bon, y a-t-il quelque chose d'autre que vous vouliez savoir?~ 
 @26 = ~Arrière. Ces corps sont contaminés par le fléau.~

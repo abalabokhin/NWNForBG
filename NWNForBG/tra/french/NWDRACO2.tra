@@ -1,6 +1,6 @@
 @0 = ~Pourquoi êtes-vous ici, petite chose ? Quelle est la raison pour laquelle vous pénétrez dans la caverne d'un être plus puissant que vous ? Pourquoi déranger la sublime Akulatraxas ?~ [NWDRA251]
 @1 = ~Je me nomme <CHARNAME>. Je recherche les Mots de Pouvoir.~
-@2 = ~I'm with <CHARNAME>. I'm looking for Words of Power.~ /*Je m'appelle <CHARNAME>. Moi chercher Mots de Pouvoir.*/
+@2 = ~Je fais parti du groupe de <CHARNAME>. nous sommes à la rechercher des Mots de Pouvoir.~
 @3 = ~S'il vous plaît, puissante Akulatraxas, je viens solliciter votre sagesse et vous poser quelques questions.~
 @4 = ~J'ai quelques questions auxquelles vous devez répondre.~
 @5 = ~Donne-moi ton trésor, reptile, ou je te tue !~
@@ -33,14 +33,13 @@
 @32 = ~**Reniflements** Akulatraxas sent le sang et... autre chose. Quelque chose d'immonde. **reniflement** Vous avez la tête du chef des géants des collines ! Donnez-la-moi que je puisse avoir la preuve de sa mort !~ [NWDRA250]
 @33 = ~C'est un honneur pour moi que de vous remettre la tête du géant des collines, puissante Akulatraxas.~
 @34 = ~Quelle sorte de récompense puis-je attendre pour vous avoir apporté sa tête ?~
-@35 = ~Les géants des collines ne s'en prendront plus aux antres des miens ! En tuant leur chef, vous avez gagné ma gratitude. Et un dragon n'accorde pas ce genre de faveur à la légère. Nous autres dragons répugnons à nous séparer de nos trésors, mais tu as sauvé mes oeufs et la vie de mes enfants à naître de toute menace de la part des géants. Prends cet or, <MANWOMAN> <RACE> - une fortune, pour beaucoup.~ 
+@35 = ~Les géants des collines ne s'en prendront plus aux antres des miens ! En tuant leur chef, vous avez gagné ma gratitude. Et un dragon n'accorde pas ce genre de faveur à la légère. Nous autres dragons répugnons à nous séparer de nos trésors, mais tu as sauvé mes oeufs et la vie de mes enfants à naître de toute menace de la part des géants. Prends cet or, <RACE> - une fortune, pour beaucoup.~ 
 @36 = ~Je te remercie de ce généreux présent, puissante Akulatraxas.~
 @37 = ~Grande Akulatraxas, ton trésor est aussi grand que ton pouvoir. La vie de tes enfants vaut bien un peu plus ?~ 
 @38 = ~Tu ferais bien de puiser un peu plus dans cette pile d'or, Akulatraxas – ou tes oeufs  ne seront pas vraiment en sécurité !~
 @39 = ~Prenez garde, il n'est guère avisé de faire preuve d'avidité dans l'antre d'un dragon, car je pourrais bien croire que vous projetez de piller mon trésor. Votre récompense viendra en temps opportun, c'est-à-dire quand vous m'aurez remis la tête de leur chef !~
 @40 = ~Je n'apprécie pas vos manières, dragon. Je crois que je vais garder la tête.~
-@41 = ~You show the respect that should be shown to dragons. That's good, <RACE>.~
-/*Vous avez dit que le Mythallar pouvait servir d'arme ? C'est gentil à vous.*/
-@43 = ~You are bold, <MALEFEMALE>. A smarter creature would accept an offer of dragon's gold before the dragon changes her mind. But I like you, <MALEFEMALE>. You amuse me, as my last few pets failed to do. Why would I want a pet without a collar? Take this necklace, <RACE>. Its magic is not worth my attention, but you may find it amusing.~ /*Tu es audacieux, <MALEFEMALE>. Une créature plus intelligente accepterait mon offre avant que je change d'avis. Mais je t'aime bien, <MALEFEMALE>. Tu m'amuses, et mes derniers animaux de compagnie n'y sont pas parvenu. Pourquoi voudrais-je le combattre ? Cet endroit être quoi ? C'est au nord que vous trouverez le truc.*/
-@44 = ~Your manner is displeasing, creature... but I will forgive your coarse nature because of the task you have done for me. Take this necklace as a final boon, and let this matter be done. In the future, I suggest you show more respect when speaking to a creature so much larger than you.~/*Tes manières sont déplaisantes, créature. Mais je pardonne ta nature grossière en raison de ce que tu as fait pour moi. Prends ce collier en dernier remerciement, et va-t'en. Il semble, en voyant ces pierres, qu'une grande statue ou créature devait se tenir ici.*/
+@41 = ~Vous parlez avec le respect qui est dû à un dragon. C'est une bonne chose, <RACE>.~
+@43 = ~Tu es audacieux. Une créature plus intelligente accepterait mon offre avant que je change d'avis. Mais je t'aime bien, tu m'amuses, et mes derniers animaux de compagnie n'y sont pas parvenu. Et que serait un animal familier sans collier ? Prends celui-ci, <RACE>. Sa magie m'échappe, mais tu la trouveras sans doute amusante.~ ~Tu es audacieuse. Une créature plus intelligente accepterait mon offre avant que je change d'avis. Mais je t'aime bien, tu m'amuses, et mes derniers animaux de compagnie n'y sont pas parvenu. Et que serait un animal familier sans collier ? Prends celui-ci, <RACE>. Sa magie m'échappe, mais tu la trouveras sans doute amusante.~
+@44 = ~Tes manières sont déplaisantes, créature. Mais je pardonne ta nature grossière en raison de ce que tu as fait pour moi. Prends ce collier en dernier remerciement, et va-t'en. À l'avenir, tu pourrais montrer plus de respect quand tu parles à une créature supérieure.~
 @45 = ~Tu oses menacer mes enfants, <RACE> inconscient ? C'est impardonnable ! Contemple la colère d'Akulatraxas !~

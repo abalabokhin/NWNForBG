@@ -1,5 +1,5 @@
 @0 = ~Enfin vous êtes venu. Je suppose que mes serviteurs, les géants du feu, sont morts. Qu'importe, ils sont sans importance. Je peux trouver d'autres serviteurs. Peut-être même que vous me servirez.~ [NWDRA453]
-@1 = ~Approche – je ne te ferai pas de mal. Ces derniers jours des âges de ma vie s'écoulent lentement, et j'aimerais te parler pour en briser la monotonie.~ [NWDRA455]
+@1 = ~Approche – je ne te ferai pas de mal. Ces derniers jours des âges de ma vie s'écoulent lentement, et j'aimerais te parler pour en briser la monotonie.~
 @2 = ~Comment connaissez-vous mon nom ?~
 @3 = ~Qui êtes-vous ?~
 @4 = ~J'aurais des questions à vous poser.~
@@ -7,12 +7,12 @@
 @6 = ~J'ai décidé de faire un trophée de votre tête malfaisante, lézard !~
 @7 = ~Je m'en vais.~
 @8 = ~Je suis aussi vieux que le temps, je commande à la sagesse infinie de l'éternité. Votre nom et vos exploits me sont connus, <CHARNAME>, et je m'en souviendrai bien après que l'Histoire vous aura oublié.~
-@9 = ~Je suis Klauth , dracosire du nord, le plus vieux de tous les dragons, la plus puissante des créatures mortelles à fouler la terre des Royaumes. Ma puissance et mes connaissances ne connaissent aucune limite !~
+@9 = ~Je suis Klauth , dracosire du nord, le plus vieux de tous les dragons, la plus puissante des créatures mortelles à fouler la terre des Royaumes. Ma puissance et mes connaissances ne connaissent aucune limite !~ [NWDRA455]
 @10 = ~Je suis Klauth, l'ancien dracosire. Je connais les secrets. Je sais même que vous cherchez les Mots de Pouvoir, héritages de la Race Créatrice, pour sauver la ville que vous appelez Padhiver. Posez votre question, <CHARNAME>, et j'y répondrai peut-être.~ 
 @11 = ~Parlez-moi des Mots de Pouvoir.~
 @12 = ~Parlez-moi de la Race Créatrice.~
 @13 = ~Savez-vous quelque chose au sujet de Maugrim et de son culte ?~
-@14 = ~What's wrong with the dragon in the other lair within these caves?~ /*Qu'est-ce qui ne va pas avec le dragon qui se trouve dans l'autre antre de ce complexe ?*/
+@14 = ~Quel est le problème avec le dragon qui se trouve dans l'autre antre de ce complexe ?~
 @15 = ~Ah ! Vous avez l'une de mes sphères spirituelles. Dans les salles de rituel sous le complexe des géants du feu, mes serviteurs utilisent ces orbes pour emprisonner l'âme des dragons adultes. Mais puisque tu es ici, mes serviteurs ont dû mourir. Peu importe, j'en trouverai d'autres. Nombreux sont ceux qui accepteront de travailler pour moi afin d'accéder à mon or.~ 
 @16 = ~Je pourrais peut-être le faire pour vous.~
 @17 = ~Et si je décidais de détruire cette sphère d'essence ?~
@@ -20,7 +20,7 @@
 @19 = ~Tenez, prenez la sphère.~
 @20 = ~Et si je décidais de détruire cette orbe ?~
 @21 = ~J'aurai préféré une récompense plus consistante que de l'or. Un puissant objet magique, peut-être ?~ 
-@22 = ~Alors vous allez mourir, <CHARNAME>. J'ai vu ce qui attend au-delà de ce monde, un vide de ténèbres. Etes-vous prêt à affronter le néant au-delà de la vie ? Parle-moi si tu l'oses, ou fuis comme un grain de poussière face à la gloire écrasante de mon existence. Mais ne m'attaque pas, <CHARNAME>, sauf si tu es prêt à mourir.~ 
+@22 = ~Alors vous allez mourir, <CHARNAME>. J'ai vu ce qui attend au-delà de ce monde, un vide de ténèbres. Êtes-vous prêt à affronter le néant au-delà de la vie ? Parle-moi si tu l'oses, ou fuis comme un grain de poussière face à la gloire écrasante de mon existence. Mais ne m'attaque pas, <CHARNAME>, sauf si tu es prêt à mourir.~ 
 @23 = ~Silence, vieux lézard sénile ! Tu vas mourir !~
 @24 = ~Je suis prêt à mourir, Klauth – et toi, l'es-tu ?~
 @25 = ~Vos allées et venues m'importent peu. Vous êtes insignifiant comparé à ma propre existence. Partez, restez, cela m'est égal. Car je suis Klauth et je suis éternel.~
@@ -63,8 +63,7 @@
 @62 = ~Alors va. Quand tu reviendras, tu seras récompensé comme il se doit.~
 
 @64 = ~Posez votre question, <CHARNAME>, et j'y répondrai peut-être.~
-@65 = ~Then I give you the legacy of the Creator Race. This key will open the chamber behind me, where the Word is stored. The Word of Power is yours, <CHARNAME>, as it is of no use to me, anyway.~ 
-/*Je te donne donc l'héritage de la Race Créatrice. Cette clé ouvrira les chambres derrière moi, où se trouve le Mot. Le Mot de Pouvoir est à toi, <CHARNAME> - il ne me sert à rien. Désires-tu me demander autre chose, à présent ?*/
+@65 = ~Alors, je te donne donc l'héritage de la Race Créatrice. Cette clé ouvrira les chambres derrière moi, où se trouve le Mot. Le Mot de Pouvoir est à toi, <CHARNAME>. Il ne me sert à rien de toute façon.~ 
 @67 = ~Il serait indigne de ma part de marchander avec un être comme toi, <CHARNAME>. Je suis un ancien dragon rouge, et tu n'es qu'un simple <RACE> mortel. Ma proposition reste inchangée.~
 @68 = ~Bien. Prenez les oeufs.~
 @69 = ~Alors je vais garder les oeufs, Klauth, merci beaucoup !~
@@ -79,12 +78,12 @@
 @78 = ~Tenez, voici les oeufs.~
 @79 = ~Je pense mériter un peu plus que 5.000 pièces d'or.~
 @80 = ~Qu'est-ce qui ne va pas avec le dragon qui se trouve dans l'autre antre de ce complexe ?~
-@81 = ~Then the gold is yours, <CHARNAME>, as it is of little use to me.~ /*Alors l'or est à vous, <CHARNAME>. Il ne m'est guère utile. Maintenant, attendez-vous autre chose de moi ?*/
+@81 = ~Alors, l'or est à vous, <CHARNAME>. Il ne m'est guère utile.~
 @82 = ~Il serait indigne de ma part de marchander avec un être comme toi, <CHARNAME>. Je suis un ancien dragon rouge, et tu n'es qu'un simple <RACE> mortel. Ma proposition reste inchangée.~
 @83 = ~Alors je pense que je vais garder les oeufs !~
 @84 = ~De l'or ? J'espérais une autre récompense. Une puissante magie, peut-être ?~ 
 @85 = ~Alors vous n'auriez aucune récompense. Je peux créer d'autres orbes et trouver d'autres serviteurs. Gardez l'orbe si vous voulez, <CHARNAME>, cela m'indiffère.~
 @86 = ~Un dragon ? Ce qualificatif lui convient à peine. Cette créature n'est qu'un véhicule de l'essence de mon existence, une bête ignorante créée par le pouvoir de la magie de mes serviteurs sorciers à partir des oeufs d'un autre dragon.~
 @87 = ~Gardez-les, cela m'importe peu. D'autres que vous accepteront d'accomplir cette tâche pour moi. Et il y a d'autres oeufs à découvrir ailleurs.~
-@88 = ~Find the staircase in the giants village that leads to the ritual rooms where the blue dragon lives. The orb will absorb the dragon's soul when it is placed on the pedestal. Then bring the orb to me.~ /*Trouve l'escalier dans le complexe géant qui descend aux salles rituelles, où un dragon est en stase. L'orbe absorbera l'âme du dragon quand il sera placé sur le piédestal. Ensuite, ramène-moi la sphère.*/
+@88 = ~Dans le complexe des géants, trouve l'escalier qui descend aux salles rituelles, où vit un dragon bleu. L'orbe absorbera l'âme du dragon quand il sera placé sur le piédestal. Ensuite, ramène-moi la sphère.~
 @89 = ~Je reviens dès que la sphère est pleine !~

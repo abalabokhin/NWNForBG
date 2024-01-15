@@ -1,5 +1,5 @@
 @0 = ~Hé ! Qui va là ? Quelqu'un vient semer la pagaille dans mon cimetière ? Hé ! Qui va là ? L'un de mes morts serait-il revenu pour me hanter dans mon cimetière ?~ 
-@1 = ~Your graveyard? I don't see your name written on it.~ /*Cimetière à "vous" ? Moi pas voir nom à vous dessus.*/
+@1 = ~Votre cimetière ? Je ne vois pas votre nom écrit dessus.~
 @2 = ~Qui êtes-vous ?~
 @3 = ~Que faites-vous ici ?~
 @4 = ~Je m'en vais.~
@@ -23,7 +23,7 @@
 @22 = ~Où ce magicien a-t-il été enterré ?~ 
 @23 = ~Ce qui est intéressant, c'est qu'un grand tombeau a été creusé sous le mausolée. Et, à ce que j'en sais, il serait plein d'objets magiques et... d'autres choses...~ 
 @24 = ~Vous n'y êtes jamais allé ?~
-@25 = ~They carved an entire crypt into the stone wall! My dad told me that the Brotherhood is very finicky when it comes to building. I'm surprised they've forgotten about it. None of them wizards ever visits. I've always wondered what goes on down there, myself.~ /*Tu t'intéresses à l'histoire ? Et maintenant j'ai le sceptre où l'on a placé votre âme. Je suis étonné qu'ils l'aient oublié. Aucun magicien ne vient jamais. Moi, je me suis toujours demandé ce qu'il se passait là-dessous.*/
+@25 = ~C'est qu'un grand tombeau a été creusé sous le mausolée ! Mon père m'a dit que la Confrérie avait des desiderata très précis quant à la construction de ce dernier. Je suis étonné qu'ils l'aient oublié. Aucun des magiciens ne vient jamais. Moi, je me suis toujours demandé ce qu'il se passait là-dessous.~ 
 @26 = ~Oh non, non ! J'ai la clé, bien sûr, mais il y a des zombis. Ils montent de temps à autre... c'est pour ça que je ferme le mausolée.~
 @27 = ~Des zombis ?~
 @28 = ~Mm ? Oh, oui. Ils sont assez turbulents depuis quelques temps. Je pense que ce doit être un de ces magiciens par là-bas, pas aussi mort qu'il devrait. Vous connaissez cela.~
@@ -50,14 +50,14 @@
 @49 = ~Ça ne va pas, non ? Les magiciens m'ont chargé de... euh, m'occuper de leur ami. Ce sera 200 pièces ou rien !~
 @50 = ~Hein ? Mais vous venez de me demander ce qu'était la Confrérie...~
 @51 = ~Oui, c'est vrai.~
-@52 = ~I didn't ask anything, you're confused.~ /*Je n'ai rien d'autre qui lui ait appartenu.*/
+@52 = ~Je n'ai rien demandé, vous devez vous tromper.~
 @53 = ~Oui, mais nous n'appelons plus cela la Confrérie des Arcanes.~
 @54 = ~Comment ? Un pilleur de tombes ? N'allez pas croire que je suis du genre à me laisser faire !~
 @55 = ~Il me semblait bien. Je ne suis pas si vieux que ça.~
 @56 = ~Oh, je dois avoir les oreilles toutes bouchées. J'aurais juré que si. Je dois me faire vieux. Vous devez avoir des morts à déposer là-dessous, hein ? Eh eh... Eh bien, avec tous ces zombis qui traînent, ça va faire de la place. Tenez, voilà la clé.~ 
 @57 = ~Bon sang de bois ! Je suis vraiment gâteux... Et quel est leur nouveau nom ? Pas de nouveau les Joyeux Utilisateurs de Magie ? Bah, peu importe. Vous devez avoir des morts à déposer là-dessous, hein ? Eh eh... Eh bien, avec tous ces zombis qui traînent, ça va faire de la place. Tenez, voilà la clé.~ 
-@58 = ~I have a lot of work. Leave me alone, the devil take you.~ /*J'ai besoin de vous. Laissez-moi ! Je ne suis rien !*/
-@59 = ~Take your 500 gold, scoundrel. I need a key.~ /*Que diriez-vous de 200 pièces d'or ? J'ai besoin d'une clef.*/
+@58 = ~J'ai beaucoup de travail. Laissez-moi tranquille et que le diable vous emporte.~
+@59 = ~Prends tes 500 pièces d'or, canaille. J'ai besoin de la clé.~
 @60 = ~Avec toute la pagaille que vous avez semée, j'ai du travail maintenant. Allez, filez, sacré nom d'une pipe !~
 @61 = ~Que savez-vous de ce traité que j'ai trouvé dans la tombe ?~
 @62 = ~Mmh. Alors c'est de ça que parlait mon grand-père, hein ? Pour moi, on dirait un vieux livre de cuisine tout usé. Et il pue la vieille chaussette... Je ne sais rien qui puisse vous aider. Pourquoi vous n'iriez pas voir la femme qui posait plein de questions là-dessus ? Eltoura, qu'elle a dit qu'elle s'appelait. De Port Llast.~ 

@@ -4,7 +4,7 @@
 @3 = ~J'ai le temps pour ça, c'est sûr. Que voulez-vous savoir ?~
 @4 = ~Vous savez quelque chose sur le fléau ?~
 @5 = ~Il se passe quelque chose de bizarre ici ?~
-@6 = ~Quels sont les endroits importants du quartier des Docks ?~
+@6 = ~Quels sont les endroits importants du quartier des Quais ?~
 @7 = ~Très bien. Adieu.~
 @8 = ~Non, et je m'en moque. Je ne veux même pas y penser. Bien sûr, je suis venu ici... Oh, nous sommes tous ici pour d'étranges raisons.~
 @9 = ~Ben, regardez autour de vous. Les Sanguinaires sont sur les dents, y'a une vente aux enchères qui se fait attendre et je n'ai vu aucun chef Sanguinaire ce soir.~
@@ -18,13 +18,13 @@
 @17 = ~Je cherche des services de base. Du général.~
 @18 = ~Je m'intéresse pas à leurs affaires, et surtout pas à leurs luttes internes... Je ne devrais vraiment pas en dire plus. Je ne suis pas bon nageur, surtout dans un sac rempli de cailloux.~
 @19 = ~Allez, il n'y a pas de mal à me le dire.~
-@20 = ~We both have <RACE> blood. Why not give me a break?~/*Du sang <RACE> coule dans nos veines à tous deux. Aidez-moi un peu...*/
+@20 = ~le même sang d'<RACE> coule dans nos veines. Aidez-moi un peu...?~
 @21 = ~Allez, mon beau. Vous pouvez bien me le dire, non ?~
 @22 = ~Personne n'a l'air de savoir ce qui va se passer. Vengaul l'a organisée lui-même, mais il est en retard. Elle va peut-être être annulée. Il paraît qu'il y a un remède contre le fléau en vente. Les rumeurs vont bon train, et je pense que certains ont peur que la garde entende. Bizarre, d'ailleurs. Vengaul voulait que les gardes soient au courant. Il aime épater, prendre des risques. Pas ses hommes.~ 
 @23 = ~Oui, si vous faites vite.~
 @24 = ~Ici ? C'est le centre de tout. C'est là que se tient le marché noir, mais les choses sont un peu étranges en ce moment.~
 @25 = ~Que voulez-vous dire par "étranges" ?~
-@26 = ~The Golden Apple? A fine little tavern. Not much happens there, though. The Seedy Tavern is where you want to be for action. The Golden Apple is in the southern part of the neighborhood, if you're interested.~ /*La Pomme dorée ? Une bien belle taverne. Il ne s'y passe pas grand-chose. C'est à la Taverne Miteuse qu'on trouve ce qu'on veut. Mais ce n'est pas à moi qu'il faut demander. Si cela vous intéresse, allez voir Mutamin.*/
+@26 = ~La Pomme dorée ? Une bien belle taverne. Il ne s'y passe pas grand-chose. C'est à la Taverne Miteuse qu'on trouve ce qu'on veut. La Pomme dorée est dans la partie sud des quais, si ça vous intéresse.~
 @27 = ~Euh, c'est le seul endroit où on fait encore du commerce. Beaucoup de tout, mais le marché noir finit presque toujours par revenir ici. C'est un peu au sud-est de la Taverne Miteuse. Vers le centre et le nord-est du quartier, je pense.~
 @28 = ~Bah, vous allez devoir faire vos courses ici ou au Carquois des Vingt. Les autres coins sont fermés, avec le fléau. Il faudra aller au Coeur de la Ville si vous cherchez des temples ou la tour de mage.~ 
 @29 = ~Vous avez sans doute raison. Ils doivent être trop occupés pour se soucier de moi. Les Sanguinaires n'ont pas toujours été des durs, mais les choses ont changé. Callik se permet de discuter les décisions de Vengaul, maintenant.~

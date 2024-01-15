@@ -1,4 +1,4 @@
-@0 = ~Eh ! Ce sont les quartiers du commandant ! Je ne veux pas y voir traîner la piétaille... Oh ! Désolé, <LADYLORD>. Je croyais que c'était un de mes soldats. Veuillez me pardonner cet accès de colère... je ne voudrais pas qu'on dise que le Commandant Damas n'a aucun savoir vivre. Que puis-je pour votre service ?~ [NWDAMA56]
+@0 = ~Eh ! Ce sont les quartiers du commandant ! Je ne veux pas y voir traîner la piétaille... Oh ! Désolé, monseigneur. Je croyais que c'était un de mes soldats. Veuillez me pardonner cet accès de colère... je ne voudrais pas qu'on dise que le Commandant Damas n'a aucun savoir vivre. Que puis-je pour votre service ?~ [NWDAMA56] ~Eh ! Ce sont les quartiers du commandant ! Je ne veux pas y voir traîner la piétaille... Oh ! Désolé, milady. Je croyais que c'était une de mes soldates. Veuillez me pardonner cet accès de colère... je ne voudrais pas qu'on dise que le Commandant Damas n'a aucun savoir vivre. Que puis-je pour votre service ?~ [NWDAMA56]
 @1 = ~J'ai quelques questions.~
 @2 = ~Vous avez contaminé la tribu de l'Élan avec ces couvertures infectées par le fléau !~
 @3 = ~Je m'en vais.~
@@ -15,9 +15,9 @@
 @14 = ~Je suppose que je peux vous accorder un peu de mon temps, bien que j'aie déjà plus que mon content de migraines entre les incessantes réclamations de mes recrues et l'alliance de la tribu Uthgardt de l'Élan avec Luskan...~
 @15 = ~Et alors? Les Uthgardt ne sont que des sauvages primitifs! Leur époque est révolue : nous avons la puissance nécessaire pour les balayer de leurs terres, ce qui nous donne le *droit* de le faire! Ces couvertures ne changeront rien, nous sommes en guerre! Les Uthgardt sont l'ennemi, vous l'avez oublié? Ils se sont alliés à Luskan!~ 
 @16 = ~Bien, c'est compris. La tribu Uthgardt de l'Élan doit être anéantie.~
-@17 = ~The only reason the Elk tribe joined Luskan is because they were promised a cure for the plague!~ /*La tribu de l'Élan s'est ralliée à Luskan uniquement pour recevoir le remède qu'on leur a promis pour guérir la maladie que vous leur avez envoyée !*/
+@17 = ~La tribu de l'Élan s'est ralliée à Luskan uniquement pour recevoir le remède qu'on leur a promis pour guérir la maladie que vous leur avez envoyée !~
 @18 = ~Je me moque de la tribu de l'Élan, mais je veux tirer profit de toute cette histoire !~
-@19 = ~As you wish, my <LADYLORD>. If you need anything else, I am at your disposal.~/*Comme vous l'entendrez, <LADYLORD>. Si vous avez besoin d'autre chose, je reste à votre disposition.*/
+@19 = ~Comme vous l'entendrez. Si vous avez besoin d'autre chose, je reste à votre disposition.~
 @20 = ~Ce sont des mous et des faibles ! Ils se plaignent d'être éloignés de leurs familles et demandent à rejoindre leurs fermes et leurs terres ! Ils ne comprennent pas qu'il y a la guerre ! Il faut tenir Fort Ilkard si nous voulons gagner cette guerre ! Et ce serait mieux si mes soldats ne discutaient pas tous mes ordres. Bien, si vous n'avez pas d'autres questions...~ 
 @21 = ~Que sait ce qui peut passer par la tête de ces animaux ? Ils ont dû se dire que cela représentait une occasion de tuer et de piller et se sont rués dessus !~
 @22 = ~Vous pourriez peut-être négocier une trêve avec la tribu Uthgardt de l'Élan...~
@@ -26,13 +26,13 @@
 @25 = ~Je vais vous dire une chose : si vous parvenez à détruire les six catapultes qui bombardent le fort, je vous accorderai une récompense substantielle venant tout droit du trésor de Fort Ilkard. Maintenant, si vous n'avez rien d'autre à me dire...~
 
 @27 = ~Excellent ! Je vais de ce pas la faire planter sur un pieu devant les portes de Fort Ilkard ! Je suis heureux de vous remettre ces 750 pièces d'or, pour avoir mis fin au siège de Fort Ilkard! Puisque vous avez déjà prouvé votre valeur, j'aimerais vous demander autre chose.~
-@28 = ~Et la tribu de l'Élan n'existe plus ! Le monde est débarrassé de leur immonde présence. Enfin, les terres ont été nettoyées de ces barbares vagabonds ! Votre récompense. Bien entendu. 1200 pièces d'or me paraît une somme équitable. Vous allez devenir un <MANWOMAN> riche à force de travailler pour moi.~ 
+@28 = ~Et la tribu de l'Élan n'existe plus ! Le monde est débarrassé de leur immonde présence. Enfin, les terres ont été nettoyées de ces barbares vagabonds ! Votre récompense. Bien entendu. 1200 pièces d'or me paraît une somme équitable. Vous allez devenir riche à force de travailler pour moi.~ 
 
 @30 = ~Ravi que nous soyons d'accord. Bien, si vous n'avez pas d'autres questions...~
 @31 = ~Vous n'y croyez pas vraiment, quand même ? Vous pensez que si je leur donne le remède, la tribu de l'Élan va abandonner Luskan ? Euh... non pas que j'aie un remède sur moi hein...~
 @32 = ~Je sais que vous l'avez. Donnez-le-moi.~
 @33 = ~Donnez-moi le remède ou vous souffrirez tellement qu'à côté, le fléau aurait été une partie de plaisir !~
-@34 = ~Un <MANWOMAN> qui serait prêt à laisser toute la tribu de l'Élan mourir du fléau en échange d'un simple bénéfice mérite toute ma sympathie. Mais ce n'est pas parce que nous pensons la même chose que je vais vous donner mon or. Pourquoi le ferais-je, hein ?~ 
+@34 = ~Quelqu'un qui serait prêt à laisser toute la tribu de l'Élan mourir du fléau en échange d'un simple bénéfice mérite toute ma sympathie. Mais ce n'est pas parce que nous pensons la même chose que je vais vous donner mon or. Pourquoi le ferais-je, hein ?~ 
 @35 = ~Vous achetez mon silence et je ne dirai à personne que vous avez l'intention de contaminer la tribu de l'Élan.~
 @36 = ~J'ai changé d'avis. La tribu de l'Élan ne mérite pas ça. Donnez-moi le remède au fléau.~
 @37 = ~Comment pouvez-vous demander une chose pareille? Les Uthgardt sont des tueurs sans pitié qui s'attaquent aux faibles et aux gens sans défense! Ils sont une vraie plaie et doivent être exterminés! Bon, si vous n'avez rien d'autre à me dire...~
@@ -40,9 +40,9 @@
 @39 = ~Je suppose que je n'ai pas le choix. Voici votre or.~
 @40 = ~Je pense que je vais plutôt prendre le remède sur ton cadavre.~
 @41 = ~Votre prix est trop élevé, laissez tomber. Je m'en vais !~
-@42 = ~Même si vous en parlez, ça ne changera rien. Mes supérieurs me donneront peut-être un avertissement, mais ça n'aura pas vraiment de conséquence. Mais bon, un avertissement, ça représente quand même un tas de paperasse dont je peux me passer. Voilà - vous me donnez ces couvertures, vous gardez le secret sur mon plan, et je vous donne 100 pièces d'or.~ 
+@42 = ~Même si vous en parlez, ça ne changera rien. Mes supérieurs me donneront peut-être un avertissement, mais ça n'aura pas vraiment de conséquence. Mais bon, un avertissement, ça représente quand même un tas de paperasse dont je peux me passer. Voilà - vous me donnez ces couvertures, vous gardez le secret sur mon plan, et je vous donne 300 pièces d'or.~ 
 @43 = ~D'accord.~
-@44 = ~Make it 500.~/*Disons 200.*/
+@44 = ~Disons 500.~
 @45 = ~Il y a quelques ruines désertes sur les terres situées au sud du fort. L'une de mes unités de reconnaissance est allée là-bas et y a trouvé d'étranges piliers de lumière magique. On a trouvé à proximité une entrée de grotte lumineuse et, à l'intérieur, des ruines très anciennes. Personne ne semble savoir qui les a construites, mais selon mes éclaireurs, il ne s'agit pas d'architecture naine, elfique ou humaine.~ 
 @46 = ~Vraiment ? Dans ce cas, je ne vois pas comment vous aider. Les ruines du sud sont, à ma connaissance,  le seul endroit susceptible d'abriter une forme quelconque de magie antique. Bon, j'imagine qu'il est temps pour vous de partir et de me laisser retourner à mon commandement.~
 @47 = ~Je savais que nous pouvions nous entendre. Tenez, voilà le remède. Si vous changez d'avis et que vous décidez finalement d'exterminer ces Uthgardts, ramenez-moi la tête de leur chef, Zokan. Maintenant, si vous voulez bien m'excuser, mes affaires me réclament.~
@@ -53,7 +53,7 @@
 @52 = ~C'est un plaisir de faire affaire avec vous, <SIRMAAM>. Je vais veiller à ce que ces couvertures soient brûlées et plus personne n'aura à s'en inquiéter.~
 @53 = ~Je pense que vous sous-estimez l'indifférence que cela m'inspire. Je préfère éviter les questions gênantes sur mes activités, mais je ne vais pas vous donner une fortune pour ça. Si vous ne voulez pas de mon or, gardez les couvertures. Ça m'est égal. Je vous laisse une dernière chance. Voulez-vous les 100 pièces d'or ?~ 
 @54 = ~Laissez tomber.~
-@55 = ~Like I said, I think these Words of Power are a waste of time. But if you're determined to search them out I'd suggest you head south until you see those ruins. Well, I think its time for you to go, and I should get back to managing this fort.~/*Comme je vous l'ai dit, je pense que ces Mots de Pouvoir sont une perte de temps. Mais si vous êtes décidé à les chercher, je vous suggère de partir vers le sud jusqu'à ces colonnes de lumière. L'entrée de la caverne devrait se trouver juste à l'est.*/
+@55 = ~Comme je vous l'ai dit, je pense que ces Mots de Pouvoir sont une perte de temps. Mais si vous êtes décidé à les chercher, je vous suggère de partir vers le sud jusqu'aux ruines. Je pense qu'il est temps pour vous de partir, et que je devrais retourner à mes occupations.~
 @56 = ~Mais je n'aimerais pas que l'on pense que je ne montre pas coopératif avec l'un des agents d'Aarin. Avez-vous fouillé les ruines situées au sud ? C'est probablement le meilleur endroit...~
 @57 = ~Des ruines ?~
 @58 = ~Je suis déjà allé là-bas.~

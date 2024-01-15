@@ -1,6 +1,6 @@
 @0 = ~Laissez mon visage tranquille, espèce d'horrible... oh, mais attendez, vous n'êtes pas cette sinistre sorcière.~
 @1 = ~Non, je ne le suis pas. Je suis <CHARNAME>. Et vous, qui êtes-vous ?~
-@2 = ~No I'm not. Who are you?~ /*Je suis perdu. Qui êtes-vous ?*/
+@2 = ~Non, en effet. Qui êtes-vous ?~
 @3 = ~Vous avez remarqué ? Vous feriez mieux de partir avant que la sorcière revienne.~
 @4 = ~Attendez ici. Je reviens.~
 @5 = ~Je me nomme Bréa. Mis à part le fait d'être la plus belle druidesse du bosquet druidique du bois de Padhiver, j'étais également l'une des personnes chargées d'enquêter sur le problème de l'Esprit des bois.~
@@ -9,13 +9,13 @@
 @8 = ~Qu'avez-vous découvert au sujet de l'Esprit ?~
 @9 = ~D'autres druides ont également disparu. Savez-vous où ils peuvent être ?~ 
 @10 = ~Dites, avant de partir, c'est Aawill qui vous envoie ?~
-@11 = ~Il m'a envoyé sauver quelques druides. Etes-vous l'un d'eux ?~
+@11 = ~Il m'a envoyé sauver quelques druides. Êtes-vous l'un d'eux ?~
 @12 = ~J'ai rencontré un certain Aawill. Comment le connaissez-vous ?~
 @13 = ~Faites vite, s'il vous plaît. Je dois vite partir d'ici.~
 @14 = ~Je traversais les bois, en évitant les rencontres avec la faune locale. Il était inutile d'essayer de parler aux animaux, ils étaient tous enragés et fous de colère. Alors j'ai pensé à la sorcière.~
 @15 = ~Pourquoi vouliez-vous trouver la sorcière ?~
 @16 = ~On dirait que ça n'était pas une idée de génie.~
-@17 = ~Il est devenu fou ! Toute la forêt est frappée de folie et, si personne ne met un terme à cela, je crains que les créatures ne se mettent à s'entredéchirer très bientôt. L'Esprit est ordinairement paisible et rejoint la forêt par le biais de son bassin pour prendre soin des créatures. Depuis le début des violences, L'Esprit n'est plus jamais venu. Sinon, j'aurais essayé de lui parler.~ 
+@17 = ~Il est devenu fou ! Toute la forêt est frappée de folie et, si personne ne met un terme à cela, je crains que les créatures ne se mettent à s’entre-déchirer très bientôt. L'Esprit est ordinairement paisible et rejoint la forêt par le biais de son bassin pour prendre soin des créatures. Depuis le début des violences, L'Esprit n'est plus jamais venu. Sinon, j'aurais essayé de lui parler.~ 
 @18 = ~Dites m'en plus sur ce bassin.~
 @19 = ~Comment croyez-vous que l'Esprit aurait réagi en vous voyant ?~
 @20 = ~J'ignore où est passé le petit druide, Orlane, mais je sais que le charmant elfe, Térari, était parti essayer ses charmes sur les nymphes. Vous pourriez aller lui demander. Elles pourraient savoir où il est allé. Bien entendu, il est possible qu'elles soient devenues aussi folles que le reste de la forêt, alors soyez prudent en posant vos questions.~ 
@@ -46,7 +46,7 @@
 @45 = ~Il est mort ? J'avais peur qu'un tel acte soit nécessaire. Les autres druides refusaient de l'admettre, mais personne ne savait comment arrêter l'Esprit. Tôt ou tard, d'autres devaient comprendre qu'il fallait le tuer.~ 
 @46 = ~Vous ne m'en voulez donc pas ?~
 @47 = ~Je suis heureux que vous soyez d'accord.~
-@48 = ~Vous... vous l'avez guéri ? Je suis pour le moins surpris. Vous êtes un <MANWOMAN> admirable pour avoir réussi cet exploit. Vous êtes un vrai héros, même si vous êtes moins beau que moi.~ 
+@48 = ~Vous... vous l'avez guéri ? Je suis pour le moins surpris. Vous êtes admirable pour avoir réussi cet exploit. Vous êtes un vrai héros, même si vous êtes moins beau que moi.~
 @49 = ~Je dois partir. Prenez soin de vous, et merci pour votre aide.~
 @50 = ~Il vous faut trouver le moyen de franchir le portail et de guérir l'Esprit ou - je déteste avoir à dire ça - le tuer, si vous ne pouvez pas le soigner. La plupart des druides ne suggéreraient jamais cela, mais il faut parfois faire ce qui est nécessaire. Ne me demandez pas les modes d'emploi : je les ignore. Je suis belle et intelligente, mais je n'ai tout simplement pas les réponses à ces questions.~ 
 @51 = ~Parfois, la seule façon de résoudre un problème est de choisir la solution la moins populaire. Quoi qu'en disent les autres, vous avez fait ce qu'il fallait. Je dois partir. Prenez soin de vous, et merci pour votre aide.~ 
