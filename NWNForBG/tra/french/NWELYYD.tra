@@ -2,8 +2,8 @@
 @1 = ~Puis-je vous demander votre nom, mon ami ?~
 @2 = ~Je peux vous poser quelques questions ?~
 @3 = ~Qui êtes-vous ?~
-@4 = ~Au revoir.~
-@5 = ~Oh. Yes, my name is Elynwyd. Elynwyd Direlin. I apologize for my mood... It's a bad day.~ /*Oh. Oui, je m'appelle Elynwyd. Elynwyd Direlean. Euh... et vous êtes ? C'est un bon début.*/
+@4 = ~Au revoir.~Elynwyd Direlean
+@5 = ~Oh. Oui, je m'appelle Elynwyd. Elynwyd Direlean. Veuillez pardonner mon humeur... Ce n'est pas un bon jour.~
 @6 = ~Qu'y a-t-il de si terrible aujourd'hui ?~
 @7 = ~Pouvez-vous me dire ce qui se passe à Luskan ?~
 @8 = ~Savez-vous s'il y a du travail dans le coin ?~
@@ -79,11 +79,11 @@
 @78 = ~Evaine m'a raconté comment vous l'aviez sauvée. Comment pourrai-je jamais vous remercier, <monsieur/madame> ? Tenez, voici 300 pièces d'or. J'aimerais tant pouvoir vous donner plus...~
 @79 = ~Vous êtes sûr de ne pas pouvoir faire un effort ? C'est de votre soeur qu'il s'agit, tout de même...~
 @80 = ~Si vous n'augmentez pas cette somme, je tue votre soeur.~ 
-@81 = ~That's great. I'm fine with that amount.~/*C'est absolument génial ! Voilà, c'est fait.*/
-@82 = ~No, I don't need gold. You lost enough.~/*Non, moi pas besoin de or. Vous assez perdu.*/
+@81 = ~C'est parfait. Cette somme me convient.~
+@82 = ~Non, je n'ai pas besoin de votre or. Vous avez perdu suffisamment.~
 @83 = ~Vous avez raison, bien sûr. Je préfère ne plus rien avoir et savoir ma soeur en bonne santé. Tenez, voici 375 pièces d'or... c'est tout ce que je possède... Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~ 
 
-@85 = ~I don't have any more money. Are you going to take the last of it from me?~ /*Je n'ai pas d'autres questions. Allez-vous enquêter un peu plus ?*/
+@85 = ~Je n'ai plus un sou. Allez-vous me soutirer mes dernières possessions ?~
 @86 = ~Que... vous n'oseriez pas ! Mais si, bien sûr... en quoi cela serait-il surprenant, dans cette ville ? Voilà, c'est tout ce qui me reste... 375 pièces d'or... Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~ 
 @87 = ~Dans ce cas, prenez. Vous méritez bien plus, <monsieur/madame>. Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~
 @88 = ~Vous... vous êtes bien trop bon avec moi, <monsieur/madame>, bien plus que les habitants de cette cité. J'espère que les dieux vous seront favorables pour vous remercier de ce que vous avez fait. Viens, Evaine. Je crois avoir trouvé le moyen de quitter cette ville cauchemardesque. Partons sans attendre.~ 

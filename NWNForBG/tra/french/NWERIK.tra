@@ -23,15 +23,15 @@
 @22 = ~M'avez tout dit à son sujet ?~
 @23 = ~J'aimerais vous demander autre chose.~
 @24 = ~On n'est pas au courant de grand-chose dans la région. Il y a  environ une semaine, j'ai aperçu un type à l'air louche sur la route de Boisroussi. Peut-être bien qu'il en faisait partie. Bon, aviez-vous besoin d'autre chose?~ 
-@25 = ~Hum. J'aurais effectivement bien besoin qu'on me rende un service, et je suis sûr que vous êtes un <MANWOMAN> qui peut m'aider. Ça vous intéresse d'en savoir plus ?~
+@25 = ~Hum. J'aurais effectivement bien besoin qu'on me rende un service, et je suis sûr que vous pouvez m'aider. Ça vous intéresse d'en savoir plus ?~
 @26 = ~Je ne rends pas de services, je travaille. Si vous voulez me payer, parlez-moi de ce travail.~
 @27 = ~Parlez-moi de ce service.~
 @28 = ~Je connais bien la région, je pense donc pouvoir vous aider. Sur quelles directions puis-je vous éclairer ?~
 @29 = ~Où conduit la route nord ?~
 @30 = ~Où mène la route est ?~
 @31 = ~Où puis-je trouver de l'équipement ?~
-@32 = ~Where can I stay overnight?~ /*Où puis-je trouver du matériel ?*/
-@33 = ~Ce fut un plaisir de vous parler.~/*Ce fut un plaisir de vous parler, <SIRMAAM>.*/
+@32 = ~Où puis-je faire une halte pour la nuit ?~
+@33 = ~Ce fut un plaisir de vous parler.~
 @34 = ~C'est tout ce qui reste à mon p'pa en souvenir de m'man. Quelle idée de la montrer à Constance ! **soupir** J'aurais dû rester aux fleurs des champs... Autre chose avant que vous alliez chercher cette broche ?~
 @35 = ~C'est la fille d'O'Deel le fermier, celui qui élève du bétail dans une ferme voisine... Rappelez-vous bien qu'il ne faut pas lui faire du mal... je veux juste récupérer cette broche.~
 @36 = ~Ses cheveux sont de la couleur du blé mûr, son rire est comme le chant de l'eau des cascades... et ses yeux, ils ont le bleu du ciel ! Autre chose avant que vous alliez chercher cette broche ?~ 
@@ -40,7 +40,7 @@
 @39 = ~La route ouest ? Elle vous mène à la tour de cette espèce de magicien, Wanev, et si vous continuez, vous arrivez à Port Llast.~
 @40 = ~Celle-ci mène dans les bois. Mon père dit qu'ils sont hantés et il sait de quoi il parle. On dit qu'il y avait autrefois un village appelé Boisroussi là-bas, mais je n'y suis jamais allé...~
 @41 = ~Je crains qu'il n'y ait pas grand-chose entre ici et Port Llast. Nous n'y allons que pendant la saison des récoltes. Moi, mon père, et les O'Deel, on vit de manière autonome. Les O'Deel habitent un peu plus loin à l'Est.~
-@42 = ~There are no hotels here, I think my father will not mind if you spend the night in our house.~ /*Cette zone est prête à être créée. Cliquez sur Terminer pour ajouter cette zone à votre module.*/
+@42 = ~Il n'y a pas d'auberge dans les parages, je pense que mon père ne verra pas d'inconvénient à ce que vous passiez la nuit dans chez nous.~
 @43 = ~Quoi ? Oh, bien sûr, c'est possible. Je vous paierai, si vous le faites.~
 @44 = ~Mon père vous a peut-être dit que ça ne va pas très fort pour mois ces derniers temps. Eh bien il ne se doute pas à quel point. Pour sûr, j'ai le coeur brisé mais... C'est cette garce de Constance O'Deel. Elle sait que je suis fou d'elle, et elle joue avec moi. Oh, je suis si bête... Elle voulait voir la broche de ma mère, alors je la lui ai apportée. Maintenant, cette sorcière ne veut plus me la rendre.~ 
 @45 = ~Peu importe mon coeur... Si je ne récupère pas cette broche, c'est ma peau que mon père va avoir...~
