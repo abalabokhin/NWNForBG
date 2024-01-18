@@ -103,6 +103,8 @@ Version History
 ---------------
 In development:
 
+- Converted (not yet) TIS files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
+
 0.95 (1/12/24)
 
 - Improved quality of English and Russian movies for EE version, added French movies (thanks to JohnBob).
