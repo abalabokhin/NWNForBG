@@ -2,12 +2,13 @@ TODO:
 
 *. проверить что там с водой - в оригинальной сборке и в моде (на классике и на ее).
 Переделать оверлеи воды для областей:
-NW2E00 - лускан
+NW2E00
 NW2E31
 NW2E52
 NW2E55
-NW1000 - невервинтер
-NW1033 - хелм холд
+NW1000
+NW1030
+NW1033
 NW1100
 NW1108
 NW1119
@@ -18,9 +19,25 @@ NW1300
 NW1316
 NW1400
 NW2000
-
-и проверить все после NW2000
-
+NW2300
+NW2301
+NW2302
+NW2303
+NW2308
+NW2400
+NW2600
+NW2601
+NW2607
+NW2800
+NW2900
+NW2905
+NW3007
+NW3302
+NW3303
+NW3406
+NW3501
+NW3502
+NW3504
 
 *. Some music from NWN is slow (eg NW84) - see g3 discussion.
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
