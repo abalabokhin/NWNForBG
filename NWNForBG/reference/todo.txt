@@ -1,36 +1,26 @@
 TODO:
 
-*. проверить что там с водой - в оригинальной сборке и в моде (на классике и на ее). - минусом помечены области, которые плохо вышли - вернусть все кроме хороший областей
+выключить воду и расставить двери в областях:
 NW2E00 -
 NW2E31 -
-NW2E52 - отлично!
 NW2E55 -
 NW1000 -
-NW1030 - отлично!
 NW1033 -
 NW1100 -
-NW1108 - отлично!
 NW1119 -
 NW1120-
 NW1200
 NW1200N
 NW1300
 NW1316
-NW1400 - отлично
 NW2000
-NW2300 - отлично
-NW2301 - норм
 NW2302
-NW2303 - отлично
-NW2308 - из ивд - можно взять оттуда, но так плохо
-NW2400 
+NW2308
+NW2400
 NW2600
 NW2601
-NW2607 - отлично
-NW2800 - отлично
 NW2900
 NW2905
-NW3007 - отлично
 NW3302
 NW3303
 NW3406
@@ -38,8 +28,10 @@ NW3501
 NW3502
 NW3504
 
-попробовать убрать полосы в двери в NW1219
+расставить двери в остальных областях с помощью нового скрипта.
 
+попробовать убрать полосы в двери в NW1219
+*. Probably move Beorunna well and other locations around it to be more cononic.
 *. update icon for port Llast to be as on the map (Slums district).
 *. Move Helm Hold to be at the proper position after bp-bgt-worldmap is released.
 *. Some music from IWD is slow (eg NW84) - see g3 discussion.
