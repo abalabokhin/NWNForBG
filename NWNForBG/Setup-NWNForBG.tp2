@@ -633,6 +633,8 @@ COPY ~NWNForBG/mus/NW84~ ~music/NW84~
 ADD_MUSIC ~NWN84~ ~NWNForBG/mus/NW84.mus~            // was 156
 
 //Areas
+COPY ~NWNForBG/wed~ ~override~
+
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   INCLUDE ~NWNForBG/lib/a7_pvrz_copying.tpa~
   // Installing all TIS files from the specified folder
@@ -660,8 +662,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     END
   END
 END ELSE BEGIN
-  // installing MOS
-  COPY ~NWNForBG/map~ ~override~
   INCLUDE ~NWNForBG/lib/a7_tools.tpa~
   // installing TIS for vanila
   ACTION_BASH_FOR  ~NWNForBG/map_ee~ ~.*\.TIS$~ BEGIN
@@ -677,9 +677,10 @@ END ELSE BEGIN
       FAIL ~Error converting %file%~
     END
   END
+  // installing MOS, some TIS and WED files (the ones with water overlay that cannot be 
+  // properly converted with HANDLE_TILE2EE
+  COPY ~NWNForBG/map~ ~override~
 END
-
-COPY ~NWNForBG/wed~ ~override~
 
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~) BEGIN
 
