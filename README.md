@@ -104,7 +104,7 @@ Version History
 In development:
 
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
-- Converted WED files to remove black lines next to doors
+- Converted WED files to remove black lines next to doors and fireplaces
 
 0.95 (1/12/24)
 
