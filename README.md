@@ -103,7 +103,8 @@ Version History
 ---------------
 In development:
 
-- Converted (not yet) TIS files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
+- Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
+- Converted WED files to remove black lines next to doors
 
 0.95 (1/12/24)
 

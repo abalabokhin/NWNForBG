@@ -1,39 +1,13 @@
 TODO:
 
-выключить воду и расставить двери в областях:
-NW2E00 -
-NW2E31 -
-NW2E55 -
-NW1000 -
-NW1033 -
-NW1100 -
-NW1119 -
-NW1120-
-NW1200
-NW1200N
-NW1300
-NW1316
-NW2000
-NW2302
-NW2308
-NW2400
-NW2600
-NW2601
-NW2900
-NW2905
-NW3302
-NW3303
-NW3406
-NW3501
-NW3502
-NW3504
+*. Fix fireplaces
 
-расставить двери в остальных областях с помощью нового скрипта.
-
-*. from JohnBob: the line associated to a creature is not the same in BG2 and BG2EE. It's NWJAILGR.CRE and the line in tlk is @12890. and the creature is part of NW4100.ARE. 
+After bp-bgt-update:
 *. move Beorunna well and other locations around it to be more cononic after new map release
 *. update icon for port Llast to be as on the map (Slums district).
 *. Move Helm Hold to be at the proper position after bp-bgt-worldmap is released.
+
+*. from JohnBob: the line associated to a creature is not the same in BG2 and BG2EE. It's NWJAILGR.CRE and the line in tlk is @12890. and the creature is part of NW4100.ARE. 
 *. Some music from IWD is slow (eg NW84) - see g3 discussion.
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
