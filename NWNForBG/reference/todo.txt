@@ -1,6 +1,27 @@
 TODO:
 
-*. Fix fireplaces
+*. Fix glitches at fireplaces:
+NW2E10
+NW2E11
+NW2E14
+NW2E38
+NW2E39
+NW1016
+NW1020
+NW1413
+NW1433
+NW2003
+NW2018
+NW2019
+NW2028
+NW2101
+NW2202
+NW2401
+NW2402
+NW2403
+NW2603
+NW3102
+
 *. from JohnBob: the line associated to a creature is not the same in BG2 and BG2EE. It's NWJAILGR.CRE and the line in tlk is @12890. and the creature is part of NW4100.ARE. 
 *. Some music from IWD is slow (eg NW84) - see g3 discussion.
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
