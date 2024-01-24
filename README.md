@@ -105,6 +105,7 @@ In development:
 
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
 - Converted WED files to remove black lines next to doors and fireplaces
+- Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros
 
 0.95 (1/12/24)
 

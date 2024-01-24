@@ -628,9 +628,9 @@ MKDIR ~music/NWb6~
 COPY ~NWNForBG/mus/NWb6~ ~music/NWb6~
 ADD_MUSIC ~NWNB6~ ~NWNForBG/mus/NWb6.mus~            // was 155
 
-MKDIR ~music/NW84~
-COPY ~NWNForBG/mus/NW84~ ~music/NW84~
-ADD_MUSIC ~NWN84~ ~NWNForBG/mus/NW84.mus~            // was 156
+MKDIR ~music/b1~
+COPY ~NWNForBG/mus/b1~ ~music/b1~
+ADD_MUSIC ~NWN84~ ~NWNForBG/mus/b1.mus~            // was 156
 
 //Areas
 COPY ~NWNForBG/wed~ ~override~
