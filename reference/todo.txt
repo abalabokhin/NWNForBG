@@ -6,14 +6,17 @@ TODO:
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
 *. Make NWN to be standalone compaign
+*. сделать пометки на картах переходы - по крайней мере на кладбище, а то там фиг что найдешь... и у каналиазации в гнезде нищих и у пиратов...:
+NW1112 - сделать пометку для "cellar" - ведет в погреб и потом в подземелье
+NW1300 - сделать пометку для "sewers"
+NW1221 - сделать пометку - exit
+
+
 
 After bp-bgt-update:
 *. move Beorunna well and other locations around it to be more cononic after new map release
 *. update icon for port Llast to be as on the map (Slums district).
 *. Move Helm Hold to be at the proper position after bp-bgt-worldmap is released.
-
-Новый контент high priority:
-*. сделать пометки на картах переходы - по крайней мере на кладбище, а то там фиг что найдешь... и у каналиазации в гнезде нищих
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
