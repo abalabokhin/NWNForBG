@@ -1,0 +1,180 @@
+
+
+ACTION_IF NWN_Worldmap = 0 THEN BEGIN
+  //BP-Worldmap
+
+  ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+    COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+    APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
+
+    //preliminary step - making LANGUAGE temporary file until the new WeiDU
+    COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+    COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+    APPEND_FILE ~tmp_worldmap.tra~
+
+    ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links.tbl~ THEN BEGIN
+      COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+      APPEND_FILE ~NWNForBG/Worldmap/links.tbl~
+    END ELSE BEGIN
+      COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+    END
+  END
+  ELSE BEGIN
+    MKDIR ~Worldmap~
+    COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
+    COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+    COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+  END
+
+END ELSE ACTION_IF NWN_Worldmap = 1 THEN BEGIN
+  //New Worldmap for EE
+  COPY ~%MOD_FOLDER%/Worldmap/nwnworld.wmp~ override
+
+  //Making dummy files to bypass ADD_MAP_ICONS_EE script protection
+  COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo01.are~
+  COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo02.are~
+
+  ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/tra/%LANGUAGE%/worldmap/nwnicon2.bam~ THEN BEGIN
+    OUTER_SPRINT map_language ~%LANGUAGE%~
+  END ELSE BEGIN
+    OUTER_SPRINT map_language english
+  END
+
+  //BAMv2 worldmap icons
+  COPY ~%MOD_FOLDER%/Worldmap/ee/icons/nwnicons.bam~ override
+    LPF UPDATE_PVRZ_INDICES
+      RET
+        original_base_index
+        new_base_index
+    END
+	PATCH_PRINT ~original_base_index: %original_base_index%; new_base_index: %new_base_index%~
+  ACTION_IF original_base_index >= 0 AND new_base_index >= 0 BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/Worldmap/ee/icons~ ~.+\.pvrz~ BEGIN
+      LAF INSTALL_PVRZ
+        INT_VAR
+          original_base_index
+          new_base_index
+        STR_VAR
+          source_file = EVAL ~%BASH_FOR_FILESPEC%~
+      END
+    END
+  END ELSE FAIL ~Couldn't install PVRZ files~
+
+  //BAMv2 worldmap canvas
+  COPY ~%MOD_FOLDER%/Worldmap/ee/map/nwnworld.mos~ override
+    LPF UPDATE_PVRZ_INDICES
+      RET
+        original_base_index
+        new_base_index
+    END
+	PATCH_PRINT ~original_base_index: %original_base_index%; new_base_index: %new_base_index%~
+  ACTION_IF original_base_index >= 0 AND new_base_index >= 0 BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/Worldmap/ee/map~ ~.+\.pvrz~ BEGIN
+      LAF INSTALL_PVRZ
+        INT_VAR
+          original_base_index
+          new_base_index
+        STR_VAR
+          source_file = EVAL ~%BASH_FOR_FILESPEC%~
+      END
+    END
+  END ELSE FAIL ~Couldn't install PVRZ files~
+
+  //Add language specific bams (v2)
+  INCLUDE ~%MOD_FOLDER%/lib/ADD_MAP_ICONS_EE.tpa~
+	LAF ADD_MAP_ICONS_EE
+		INT_VAR
+		icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
+		STR_VAR
+		path_to_icons = EVAL ~%MOD_FOLDER%/tra/%map_language%/worldmap/nwnicon2.bam~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
+		patch_to_pvrz = EVAL ~%MOD_FOLDER%/tra/%map_language%/worldmap~ // directory patch to .pvrz files associated with your merging .bam icon, e.g. ~mymod/pvrz~
+		worldmap = ~nwnworld~ // which .wmp file should these icons be associated with, e.g. ~worldm25~
+		RET
+		new_icon_index // sequence number of your first icon in the new .bam - use this when you patch the worldmap
+	END
+	COPY ~%MOD_FOLDER%/Worldmap/ee/areas.tbl~  ~%MOD_FOLDER%/Worldmap/ee~
+		FOR (cnt=0;cnt<2;cnt=cnt+1) BEGIN
+			SET BAM_ANIM = new_icon_index + cnt
+			REPLACE_TEXTUALLY ~new#%cnt%~ ~%BAM_ANIM%~
+  END
+
+  //Put areas and links on the worldmap
+  INCLUDE ~%MOD_FOLDER%/lib/add_worldmap_tbl.tpa~ 
+  LAF ADD_WORLDMAP_TBL
+    INT_VAR
+      verbose = 1
+      inclSv = 0
+    STR_VAR
+      path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/ee/areas.tbl~
+      path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/ee/links.tbl~
+      path_to_trans = EVAL ~%MOD_FOLDER%/tra/autotra/%LANGUAGE%/worldmap.tra~
+      worldmap = ~nwnworld~
+    END
+
+  //Add SetWorldmap() command to scripts
+  COPY_EXISTING ~NWTON.BCS~ override
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",[0-9])~ ~SetGlobal("NWN_Quest_Status","GLOBAL",1) SetWorldmap("nwnworld")~
+    END
+
+  COPY_EXISTING ~NW4104T.BCS~ override
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",[0-9])~ ~SetGlobal("NWN_Quest_Status","GLOBAL",2) SetWorldmap("worldmap")~
+    END
+
+  COPY_EXISTING ~NWN_BG.BCS~ override
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\","GLOBAL\",[0-9])~ ~SetGlobal("NWN_Quest_Status","GLOBAL",3) SetWorldmap("worldmap")~
+    END
+
+END /* ELSE ACTION_IF NWN_Worldmap = 2 THEN BEGIN
+  //New Worldmap for original engine
+  COPY ~%MOD_FOLDER%/Worldmap/nwnworld.wmp~ ~override/worldmap.wmp~
+
+  //Making dummy files to bypass ADD_MAP_ICONS script protection
+  COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo01.are~
+  COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo02.are~
+
+  ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/tra/%LANGUAGE%/worldmap/nwnicon1.bam~ THEN BEGIN
+    OUTER_SPRINT map_language ~%LANGUAGE%~
+  END ELSE BEGIN
+    OUTER_SPRINT map_language english
+  END
+
+  //BAMv1 worldmap icons
+  COPY ~%MOD_FOLDER%/Worldmap/tc/nwnicons.bam~ override
+  //BAMv1 worldmap canvas
+  COPY ~%MOD_FOLDER%/Worldmap/tc/nwnworld.mos~ override
+
+  //Add language specific bams (v1)
+  INCLUDE ~%MOD_FOLDER%/lib/ADD_MAP_ICONS.tpa~
+	LAF ADD_MAP_ICONS
+		INT_VAR
+		  icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
+		STR_VAR
+		  path_to_icons = EVAL ~%MOD_FOLDER%/tra/%map_language%/worldmap/nwnicon1.bam~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
+		  worldmap = ~worldmap~ // which .wmp file should these icons be associated with, e.g. ~worldm25~
+		RET
+		  new_icon_index // sequence number of your first icon in the new .bam - use this when you patch the worldmap
+	END
+	COPY ~%MOD_FOLDER%/Worldmap/tc/areas.tbl~  ~%MOD_FOLDER%/Worldmap/tc~
+		FOR (cnt=0;cnt<2;cnt=cnt+1) BEGIN
+			SET BAM_ANIM = new_icon_index + cnt
+			REPLACE_TEXTUALLY ~new#%cnt%~ ~%BAM_ANIM%~
+  END
+
+  //Put areas and links on the worldmap
+  INCLUDE ~%MOD_FOLDER%/lib/add_worldmap_tbl.tpa~ 
+  LAF ADD_WORLDMAP_TBL
+    INT_VAR
+      verbose = 1
+      inclSv = 0
+    STR_VAR
+      path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/tc/areas.tbl~
+      path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/tc/links.tbl~
+      path_to_trans = EVAL ~%MOD_FOLDER%/tra/autotra/%LANGUAGE%/worldmap.tra~
+      worldmap = ~worldmap~
+  END
+
+END
+*/

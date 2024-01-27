@@ -1,0 +1,226 @@
+// BAM v2 worldmap icon file patching (for EE games that use PVRZ based map icons)
+// extracts all icons in file path_to_icons with a cycle number equal to or greater than icon_index
+// and appends them, in order, to the map icon .bam file associated with the specified worldmap
+DEFINE_ACTION_FUNCTION ~ADD_MAP_ICONS_EE~
+	INT_VAR
+	icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
+	STR_VAR
+	path_to_icons = ~~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
+	patch_to_pvrz = ~~ // directory patch to .pvrz files associated with your merging .bam icon, e.g. ~mymod/pvrz~
+	worldmap = ~worldmap~ // which .wmp file should these icons be associated with, e.g. ~worldm25~
+	RET
+	icons_added // how many icons were successfully added. if this is 0, you have a problem
+	new_icon_index // sequence number of your first icon in the new .bam - use this when you patch the worldmap
+BEGIN
+	ACTION_IF (NOT FILE_EXISTS ~%path_to_icons%~) BEGIN
+		FAIL ~ADD_MAP_ICONS: could not find specified icon file (%path_to_icons%)~
+	END ELSE ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%worldmap%.wmp~) BEGIN
+		FAIL ~ADD_MAP_ICONS: could not find worldmap (%worldmap%.wmp) in your game~
+	END
+	OUTER_SET icons_added = 0
+	OUTER_SET new_icon_index = 0
+	OUTER_SET cycles_to_add = 0
+	OUTER_SET frames_to_add = 0
+	OUTER_SET blocks_to_add = 0
+	// find which .bam contains icons for this worldmap
+	OUTER_TEXT_SPRINT mapicons ~~
+	COPY_EXISTING ~%worldmap%.wmp~ ~override~
+		PATCH_IF (SOURCE_SIZE > 0xf) BEGIN
+			READ_LONG 0xc worldmap_off
+			PATCH_IF (SOURCE_SIZE > (worldmap_off + 0x37)) BEGIN
+				READ_ASCII (worldmap_off + 0x30) mapicons
+			END
+		END
+	BUT_ONLY
+	ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%mapicons%.bam~) BEGIN
+		FAIL ~ADD_MAP_ICONS: could not find map icon file (%mapicons%.bam) in your game~
+	END
+	// read data from %mapicons%.bam
+	COPY_EXISTING ~%mapicons%.bam~ ~override~
+		READ_ASCII 0x0 sig (4)
+		READ_ASCII 0x4 version (4)
+		PATCH_IF (NOT (~%sig%~ STRING_EQUAL_CASE ~BAM ~ OR ~%version%~ STRING_EQUAL_CASE ~v2 ~)) BEGIN
+			PATCH_FAIL ~ADD_MAP_ICONS: map icon file (%mapicons%.bam) is not a BAM v2 file~
+		END
+	BUT_ONLY
+	// read data from our map icon .bam
+	COPY - ~%path_to_icons%~ ~%path_to_icons%~
+		READ_ASCII 0x0 sig (4)
+		READ_ASCII 0x4 version (4)
+		PATCH_IF (NOT (~%sig%~ STRING_EQUAL_CASE ~BAM ~ OR ~%version%~ STRING_EQUAL_CASE ~v2 ~)) BEGIN
+			PATCH_FAIL ~ADD_MAP_ICONS: specified icon file (%path_to_icons%) is not a BAM v2 file~
+		END
+		READ_LONG 0x8 num_frames //Count of frame entries
+		READ_LONG 0xc num_cycles //Count of cycle entries
+		READ_LONG 0x10 num_blocks //Count of data blocks
+		READ_LONG 0x14 frames_off //Offset (from start of file) to frame entries
+		READ_LONG 0x18 cycles_off //Offset (from start of file) to cycle entries
+		READ_LONG 0x1c blocks_off //Offset (from start of file) to data blocks
+		SET cycles_to_add = num_cycles - icon_index
+		PATCH_IF (cycles_to_add < 1 OR cycles_to_add > num_cycles) BEGIN
+			SET cycles_to_add = 0
+			SET max_cycle = num_cycles - 1
+			PATCH_FAIL ~ADD_MAP_ICONS: icon_index specified (%icon_index%) is outside of range 0 to %max_cycle% cycles in %path_to_icons%~
+		END
+		// read our cycle, frame, block data
+		//Cycle Entries (0x4)
+		//PATCH_PRINT ~cycles_to_add = %cycles_to_add%~
+		FOR (i = 0; i < cycles_to_add; i += 1) BEGIN // for each new icon
+			READ_SHORT (cycles_off + 0x4*(icon_index + i) + 0x0) frames_in_cycle //Count of frame entries in this cycle
+			READ_SHORT (cycles_off + 0x4*(icon_index + i) + 0x2) start_cycle //Start index of frame entries in this cycle
+			//PATCH_PRINT ~ Cycle %i%: frames_in_cycle = %frames_in_cycle%; start_cycle = %start_cycle%~
+			DEFINE_ASSOCIATIVE_ARRAY cycles_tbl BEGIN ~%i%~ , ~%frames_in_cycle%~ => ~%start_cycle%~ END
+			//Frame Entries (0xc)
+			FOR (j = 0; j < frames_in_cycle; j += 1) BEGIN
+				SET frame = start_cycle + j
+				READ_SHORT (frames_off + 0xc*frame + 0x0) frame_width //Frame width
+				READ_SHORT (frames_off + 0xc*frame + 0x2) frame_height //Frame height
+				READ_SHORT (frames_off + 0xc*frame + 0x4) frame_x //Frame center X coordinate
+				READ_SHORT (frames_off + 0xc*frame + 0x6) frame_y //Frame center Y coordinate
+				READ_SHORT (frames_off + 0xc*frame + 0x8) start_block //Start index of data blocks
+				READ_SHORT (frames_off + 0xc*frame + 0xa) blocks_in_frame //Count of data blocks
+				//PATCH_PRINT ~  Frame %frame% (%j%): frame_width = %frame_width%; frame_height = %frame_height%; frame_x = %frame_x%; frame_y = %frame_y%; start_block = %start_block%; blocks_in_frame = %blocks_in_frame%~
+				DEFINE_ASSOCIATIVE_ARRAY frames_tbl BEGIN ~%frame%~ , ~%frame_width%~ , ~%frame_height%~ , ~%frame_x%~ , ~%frame_y%~ , ~%start_block%~ => ~%blocks_in_frame%~ END
+				//Data Block (0x1c)
+				FOR (k = 0; k < blocks_in_frame; k += 1) BEGIN
+					SET block = start_block + k
+					READ_LONG (blocks_off + 0x1c*block + 0x0) block_page //PVRZ page (Refers to MOSxxxx.PVRZ files, where xxxx is a zero-padded four-digits decimal number.)
+					READ_LONG (blocks_off + 0x1c*block + 0x4) block_srcX //Source x coordinate
+					READ_LONG (blocks_off + 0x1c*block + 0x8) block_srcY //Source y coordinate
+					READ_LONG (blocks_off + 0x1c*block + 0xc) block_width //Width
+					READ_LONG (blocks_off + 0x1c*block + 0x10) block_height //Height
+					READ_LONG (blocks_off + 0x1c*block + 0x14) block_trgX //Target x coordinate
+					READ_LONG (blocks_off + 0x1c*block + 0x18) block_trgY //Target y coordinate
+					//PATCH_PRINT ~   Block %block% (%k%): block_page = %block_page%; block_srcX = %block_srcX%; block_srcY = %block_srcY%; block_width = %block_width%; block_height = %block_height%; block_trgX = %block_trgX%; block_trgY = %block_trgY%~
+					DEFINE_ASSOCIATIVE_ARRAY blocks_tbl BEGIN ~%block%~ , ~%block_srcX%~ , ~%block_srcY%~ , ~%block_width%~ , ~%block_height%~ , ~%block_trgX%~ , ~%block_trgY%~ => ~%block_page%~ END
+				END
+			END
+		END
+	ACTION_PHP_EACH cycles_tbl AS data => start_cycle BEGIN
+		//PRINT ~cycles_tbl: cycle = %data%; frames_in_cycle = %data_1%; start_cycle = %start_cycle%~
+	END
+	ACTION_PHP_EACH frames_tbl AS data => blocks_in_frame BEGIN
+		OUTER_SET frames_to_add = frames_to_add + 1
+		//PRINT ~frames_tbl: frame = %data%; frame_width = %data_1%; frame_height = %data_2%; frame_x = %data_3%; frame_y = %data_4%; start_block = %data_5%; blocks_in_frame = %blocks_in_frame%~
+	END
+	ACTION_PHP_EACH blocks_tbl AS data => block_page BEGIN
+		OUTER_SET blocks_to_add = blocks_to_add + 1
+		//PRINT ~blocks_tbl: block = %data%; block_srcX = %data_1%; block_srcY = %data_2%; block_width = %data_3%; block_height = %data_4%; block_trgX = %data_5%; block_trgY = %data_6%; block_page = %block_page%~
+	END
+	ACTION_IF (cycles_to_add >= 1) BEGIN // only continue if a valid initial icon index was provided
+		// add new icons to .bam
+		COPY_EXISTING ~%mapicons%.bam~ ~override~
+			READ_LONG 0x8 num_frames //Count of frame entries
+			READ_LONG 0xc num_cycles //Count of cycle entries
+			READ_LONG 0x10 num_blocks //Count of data blocks
+			READ_LONG 0x14 frames_off //Offset (from start of file) to frame entries
+			READ_LONG 0x18 cycles_off //Offset (from start of file) to cycle entries
+			READ_LONG 0x1c blocks_off //Offset (from start of file) to data blocks
+			// how many bytes we are adding to the file
+			SET new_frame_bytes = 0xc*frames_to_add
+			SET new_cycle_bytes = 0x4*cycles_to_add
+			SET new_block_bytes = 0x1c*blocks_to_add
+			SET old_frames_off = frames_off
+			SET old_cycles_off = cycles_off
+			SET old_blocks_off = blocks_off
+			//PATCH_PRINT ~frames_off = %frames_off%; cycles_off = %cycles_off%; blocks_off = %blocks_off%; new_frame_bytes = %new_frame_bytes%; new_cycle_bytes = %new_cycle_bytes%; new_block_bytes = %new_block_bytes%~
+			// add new frame bytes
+			INSERT_BYTES (frames_off + 0xc*num_frames) new_frame_bytes
+			PATCH_IF (old_cycles_off > old_frames_off) BEGIN
+				SET cycles_off = cycles_off + new_frame_bytes
+			END
+			PATCH_IF (old_blocks_off > old_frames_off) BEGIN
+				SET blocks_off = blocks_off + new_frame_bytes
+			END
+			// add new cycle bytes
+			INSERT_BYTES (cycles_off + 0x4*num_cycles) new_cycle_bytes
+			PATCH_IF (old_blocks_off > old_cycles_off) BEGIN
+				SET blocks_off = blocks_off + new_cycle_bytes
+			END
+			PATCH_IF (old_frames_off > old_cycles_off) BEGIN
+				SET frames_off = frames_off + new_cycle_bytes
+			END
+			// add new block bytes
+			INSERT_BYTES (blocks_off + 0x1c*num_blocks) new_block_bytes
+			PATCH_IF (old_frames_off > old_blocks_off) BEGIN
+				SET frames_off = frames_off + new_block_bytes
+			END
+			PATCH_IF (old_cycles_off > old_blocks_off) BEGIN
+				SET cycles_off = cycles_off + new_block_bytes
+			END
+			// write cycle data
+			i = 0
+			PHP_EACH cycles_tbl AS data => start_cycle BEGIN
+				WRITE_SHORT (cycles_off + 0x4*(num_cycles + i) + 0x0) ~%data_1%~ //Count of frame entries in this cycle
+				READ_SHORT (cycles_off + 0x4*(num_cycles + i - 1) + 0x0) old_count_of_frames
+				READ_SHORT (cycles_off + 0x4*(num_cycles + i - 1) + 0x2) old_start_cycle
+				SET new_start_cycle = old_start_cycle + old_count_of_frames // + ~%data_1%~
+				WRITE_SHORT (cycles_off + 0x4*(num_cycles + i) + 0x2) new_start_cycle //Start index of frame entries in this cycle
+				i = i + 1
+			END
+			// write frame data
+			i = 0
+			PHP_EACH frames_tbl AS data => blocks_in_frame BEGIN
+				WRITE_SHORT (frames_off + 0xc*(num_frames + i) + 0x0) ~%data_1%~ //Frame width
+				WRITE_SHORT (frames_off + 0xc*(num_frames + i) + 0x2) ~%data_2%~ //Frame height
+				WRITE_SHORT (frames_off + 0xc*(num_frames + i) + 0x4) ~%data_3%~ //Frame center X coordinate
+				WRITE_SHORT (frames_off + 0xc*(num_frames + i) + 0x6) ~%data_4%~ //Frame center Y coordinate
+				READ_SHORT (frames_off + 0xc*(num_frames + i - 1) + 0x8) old_start_block
+				READ_SHORT (frames_off + 0xc*(num_frames + i - 1) + 0xa) old_blocks_in_frame
+				SET new_start_block = old_start_block + old_blocks_in_frame
+				WRITE_SHORT (frames_off + 0xc*(num_frames + i) + 0x8) new_start_block //Start index of data blocks
+				WRITE_SHORT (frames_off + 0xc*(num_frames + i) + 0xa) blocks_in_frame //Count of data blocks
+				i = i + 1
+			END
+			// write block data
+			LPF ~FIND_FREE_PVRZ_INDEX~ RET free_index END
+			SET free_index_cnt = 0
+			i = 0
+			PHP_EACH blocks_tbl AS data => block_page BEGIN
+				PATCH_IF (VARIABLE_IS_SET $remapped_pvrz(~%block_page%~)) BEGIN
+					TEXT_SPRINT new_block_page $remapped_pvrz(~%block_page%~)
+				END ELSE BEGIN
+					SET new_block_page = free_index + free_index_cnt
+					DEFINE_ASSOCIATIVE_ARRAY remapped_pvrz BEGIN ~%block_page%~ => ~%new_block_page%~ END
+					SET free_index_cnt = free_index_cnt + 1
+				END
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0x0) new_block_page //PVRZ page (Refers to MOSxxxx.PVRZ files, where xxxx is a zero-padded four-digits decimal number.)
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0x4) ~%data_1%~ //Source x coordinate
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0x8) ~%data_2%~ //Source y coordinate
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0xc) ~%data_3%~ //Width
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0x10) ~%data_4%~ //Height
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0x14) ~%data_5%~ //Target x coordinate
+				WRITE_LONG (blocks_off + 0x1c*(num_blocks + i) + 0x18) ~%data_6%~ //Target y coordinate
+				i = i + 1
+			END
+            // set return values
+            SET new_icon_index = num_cycles // first new index equals old number of cycles
+            SET icons_added = cycles_to_add // we added all icons successfully
+			// update header values
+			SET num_frames += frames_to_add
+			SET num_cycles += cycles_to_add
+			SET num_blocks += blocks_to_add
+			WRITE_LONG 0x8 num_frames
+			WRITE_LONG 0xc num_cycles
+			WRITE_LONG 0x10 num_blocks
+			WRITE_LONG 0x14 frames_off
+			WRITE_LONG 0x18 cycles_off
+			WRITE_LONG 0x1c blocks_off
+		BUT_ONLY
+	END
+	ACTION_PHP_EACH remapped_pvrz AS block_page => new_block_page BEGIN
+		ACTION_FOR_EACH index IN block_page new_block_page BEGIN
+			OUTER_SET value = EVAL ~%index%~
+			ACTION_IF (value < 10) BEGIN
+				OUTER_SPRINT EVAL ~%index%~ ~000%value%~
+			END ELSE ACTION_IF (value < 100) BEGIN
+				OUTER_SPRINT EVAL ~%index%~ ~00%value%~
+			END ELSE ACTION_IF (value < 1000) BEGIN
+				OUTER_SPRINT EVAL ~%index%~ ~0%value%~
+			END ELSE BEGIN
+				OUTER_SPRINT EVAL ~%index%~ ~%value%~
+			END
+		END
+		COPY_LARGE ~%patch_to_pvrz%/mos%block_page%.pvrz~ ~override/mos%new_block_page%.pvrz~
+	END
+END
