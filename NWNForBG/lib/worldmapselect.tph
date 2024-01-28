@@ -114,20 +114,20 @@ END ELSE ACTION_IF NWN_Worldmap = 1 THEN BEGIN
   //Add SetWorldmap() command to scripts
   COPY_EXISTING ~NWTON.BCS~ override
     DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",[0-9])~ ~SetGlobal("NWN_Quest_Status","GLOBAL",1) SetWorldmap("nwnworld")~
+      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",1)~ ~SetGlobal("NWN_Quest_Status","GLOBAL",1) SetWorldmap("nwnworld")~
     END
 
   COPY_EXISTING ~NW4104T.BCS~ override
     DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",[0-9])~ ~SetGlobal("NWN_Quest_Status","GLOBAL",2) SetWorldmap("worldmap")~
+      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",2)~ ~SetGlobal("NWN_Quest_Status","GLOBAL",2) SetWorldmap("worldmap")~
     END
 
   COPY_EXISTING ~NWN_BG.BCS~ override
     DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\","GLOBAL\",[0-9])~ ~SetGlobal("NWN_Quest_Status","GLOBAL",3) SetWorldmap("worldmap")~
+      REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\","GLOBAL\",3)~ ~SetGlobal("NWN_Quest_Status","GLOBAL",3) SetWorldmap("worldmap")~
     END
 
-END /* ELSE ACTION_IF NWN_Worldmap = 2 THEN BEGIN
+END /*ELSE ACTION_IF NWN_Worldmap = 2 THEN BEGIN
   //New Worldmap for original engine
   COPY ~%MOD_FOLDER%/Worldmap/nwnworld.wmp~ ~override/worldmap.wmp~
 
@@ -176,5 +176,4 @@ END /* ELSE ACTION_IF NWN_Worldmap = 2 THEN BEGIN
       worldmap = ~worldmap~
   END
 
-END
-*/
+END*/
