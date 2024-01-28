@@ -104,9 +104,10 @@ Version History
 In development:
 
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
-- Converted WED files to remove black lines next to doors and fireplaces
+- Converted TIS and WED files to remove black lines next to doors and fireplaces
 - Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros
 - Added ini file for Project Infinity
+- Added a few of map notes in Chapter 1, where it is difficult to find an area exit
 
 0.95 (1/12/24)
 
