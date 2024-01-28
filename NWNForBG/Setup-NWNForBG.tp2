@@ -6125,26 +6125,47 @@ REPLACE ~XXX104456~ @104456
 REPLACE ~XXX104457~ @104456
 
 // worldmap
-ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
-  COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
-   APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
+//NEW: Force it on original installations, skip it for EE
+ACTION_IF GAME_IS ~bg2 tob bgt~ THEN BEGIN
+  ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+    COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+    APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
 
-  //preliminary step - making LANGUAGE temporary file until the new WeiDU
-  COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
-  COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
-   APPEND_FILE ~tmp_worldmap.tra~
+    //preliminary step - making LANGUAGE temporary file until the new WeiDU
+    COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+    COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+    APPEND_FILE ~tmp_worldmap.tra~
 
-  ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links.tbl~ THEN BEGIN
-    COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
-     APPEND_FILE ~NWNForBG/Worldmap/links.tbl~
-  END ELSE BEGIN
+    ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links.tbl~ THEN BEGIN
+      COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+      APPEND_FILE ~NWNForBG/Worldmap/links.tbl~
+    END ELSE BEGIN
+      COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+    END
+  END
+  ELSE BEGIN
+    MKDIR ~Worldmap~
+    COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
     COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+    COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
   END
 END
-ELSE BEGIN
-  MKDIR ~Worldmap~
-  COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
-  COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
-  COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
-END
 
+//New component - Worldmap select
+BEGIN ~Place NWN locations on BP-BGT Worldmap~
+SUBCOMPONENT ~NWN For BG - Worldmap select (EE-games only)~
+DESIGNATED 10
+LABEL ~NWN_WorldmapSelect_BP-Worldmap~
+REQUIRE_COMPONENT ~NWNForBG/Setup-NWNForBG.tp2~ ~0~ ~Main component must be installed first~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This component is only available for EE version of the game~
+OUTER_SET NWN_Worldmap = 0
+INCLUDE ~NWNForBG/lib/worldmapselect.tph~
+
+BEGIN ~Use separate worldmap for NWN areas~
+SUBCOMPONENT ~NWN For BG - Worldmap select (EE-games only)~
+DESIGNATED 11
+LABEL ~NWN_WorldmapSelect_NWNWorld~
+REQUIRE_COMPONENT ~NWNForBG/Setup-NWNForBG.tp2~ ~0~ ~Main component must be installed first~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This component is only available for EE version of the game~
+OUTER_SET NWN_Worldmap = 1
+INCLUDE ~NWNForBG/lib/worldmapselect.tph~

@@ -1,0 +1,303 @@
+// extracts all icons in file path_to_icons with a cycle number equal to or greater than icon_index
+// and appends them, in order, to the map icon .bam file associated with the specified worldmap, 
+// converting the palette of the new icons to that of the existing map icon .bam if necessary
+DEFINE_ACTION_FUNCTION ~ADD_MAP_ICONS~
+  INT_VAR icon_index = 0        // sequence (cycle) number of your first icon in your .bam, indexed from 0
+  STR_VAR path_to_icons = ~~    // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
+          worldmap = ~worldmap~ // which .wmp file should these icons be associated with, e.g. ~worldm25~
+  
+  RET     icons_added           // how many icons were successfully added. if this is 0, you have a problem
+          new_icon_index        // sequence number of your first icon in the new .bam - use this when you patch the worldmap
+BEGIN
+  OUTER_SET icons_added = 0
+  OUTER_SET new_icon_index = 0
+  
+  ACTION_IF (NOT FILE_EXISTS ~%path_to_icons%~) BEGIN
+    FAIL ~ADD_MAP_ICONS: could not find specified icon file (%path_to_icons%)~
+  END
+  ELSE ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%worldmap%.wmp~) BEGIN
+    FAIL ~ADD_MAP_ICONS: could not find worldmap (%worldmap%.wmp) in your game~
+  END
+  ELSE BEGIN
+    OUTER_SET cycles_to_add = 0
+    OUTER_SET lookups_to_add = 0
+    OUTER_SET frames_to_add = 0
+    
+    // find which .bam contains icons for this worldmap
+    OUTER_TEXT_SPRINT mapicons ~~
+    COPY_EXISTING ~%worldmap%.wmp~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0xf) BEGIN
+        READ_LONG 0x0c worldmap_off
+        PATCH_IF (SOURCE_SIZE > (worldmap_off + 0x37)) BEGIN
+          READ_ASCII (worldmap_off + 0x30) mapicons
+        END
+      END
+      BUT_ONLY
+    
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%mapicons%.bam~) BEGIN
+      FAIL ~ADD_MAP_ICONS: could not find map icon file (%mapicons%.bam) in your game~
+    END
+    ELSE BEGIN
+      // read palette from existing map icon .bam
+      COPY_EXISTING ~%mapicons%.bam~ ~override~
+        READ_ASCII 0x00 sig (4)
+        READ_ASCII 0x04 version (4)
+        PATCH_IF (NOT (~%sig%~ STRING_EQUAL_CASE ~BAM ~ || ~%sig%~ STRING_EQUAL_CASE ~BAMC~) || NOT ~%version%~ STRING_EQUAL_CASE ~V1  ~) BEGIN
+          PATCH_FAIL ~ADD_MAP_ICONS: map icon file (%mapicons%.bam) is not a BAM V1 file~
+        END
+        SET was_compressed = 0
+        PATCH_IF (~%sig%~ STRING_EQUAL_CASE ~BAMC~) BEGIN // if compressed, uncompress
+          SET was_compressed = 1
+          READ_LONG 0x08 uncompressed_size
+          DECOMPRESS_REPLACE_FILE 0x0c (SOURCE_SIZE - 0x0c) uncompressed_size
+        END
+        READ_LONG  0x10 palette_off
+        FOR (i = 2; i < 256; i += 1) BEGIN
+          READ_BYTE (palette_off + i*4) blue
+          READ_BYTE (palette_off + i*4 + 1) green
+          READ_BYTE (palette_off + i*4 + 2) red
+          SET $red(~%i%~) = red
+          SET $blue(~%i%~) = blue
+          SET $green(~%i%~) = green
+        END
+        BUT_ONLY
+      
+      // read data from our map icon .bam
+      COPY - ~%path_to_icons%~ ~%path_to_icons%~
+        READ_ASCII 0x00 sig (4)
+        READ_ASCII 0x04 version (4)
+        PATCH_IF (NOT (~%sig%~ STRING_EQUAL_CASE ~BAM ~ || ~%sig%~ STRING_EQUAL_CASE ~BAMC~) || NOT ~%version%~ STRING_EQUAL_CASE ~V1  ~) BEGIN
+          PATCH_FAIL ~ADD_MAP_ICONS: specified icon file (%path_to_icons%) is not a BAM V1 file~
+        END
+        PATCH_IF (~%sig%~ STRING_EQUAL_CASE ~BAMC~) BEGIN // if compressed, uncompress
+          READ_LONG 0x08 uncompressed_size
+          DECOMPRESS_REPLACE_FILE 0x0c (SOURCE_SIZE - 0x0c) uncompressed_size
+        END
+        READ_SHORT 0x08 num_frames
+        READ_BYTE  0x0a num_cycles
+        READ_BYTE  0x0b compressed_colour
+        READ_LONG  0x0c frames_off
+        SET cycles_off = frames_off + 0x0c*num_frames
+        READ_LONG  0x14 lookups_off
+        SET cycles_to_add = num_cycles - icon_index
+        PATCH_IF (cycles_to_add < 1 || cycles_to_add > num_cycles) BEGIN
+          SET cycles_to_add = 0
+          SET max_cycle = num_cycles - 1
+          PATCH_FAIL ~ADD_MAP_ICONS: icon_index specified (%icon_index%) is outside of range 0 to %max_cycle% cycles in %path_to_icons%~
+        END
+        ELSE BEGIN
+          // map the entries in our palette to their closest neighbours in the existing palette
+          READ_LONG 0x10 palette_off
+          SET $map(~0~) = 0
+          SET $map(~1~) = 1
+          FOR (i = 2; i < 256; i += 1) BEGIN // for each palette entry in our file
+            READ_BYTE (palette_off + i*4) b1
+            READ_BYTE (palette_off + i*4 + 1) g1
+            READ_BYTE (palette_off + i*4 + 2) r1
+            
+            // calculate the default shortest distance with the same numbered palette entry in the existing file (this can save time if the entries happen to be identical)
+            SET b2 = $blue(~%i%~)
+            SET g2 = $green(~%i%~)
+            SET r2 = $red(~%i%~)
+            
+            SET shortest_dist = (((b1 - b2) ** 2) + ((g1 - g2) ** 2) + ((r1 - r2) ** 2)) ** (1 2)
+            SET $map(~%i%~) = i
+            
+            // find the palette entry in the existing file that is closest to our entry
+            FOR (j = 2; j < 256 && shortest_dist != 0; j += 1) BEGIN
+              SET b2 = $blue(~%j%~)
+              SET g2 = $green(~%j%~)
+              SET r2 = $red(~%j%~)
+              
+              SET dist = (((b1 - b2) ** 2) + ((g1 - g2) ** 2) + ((r1 - r2) ** 2)) ** (1 2) // euclidean distance
+              
+              PATCH_IF (dist < shortest_dist) BEGIN
+                SET shortest_dist = dist
+                SET $map(~%i%~) = j
+              END
+            END
+          END
+          
+          // read our cycle and frame data
+          FOR (i = 0; i < cycles_to_add; i += 1) BEGIN // for each new icon
+            READ_SHORT (cycles_off + 0x04*(icon_index + i)) frames_in_cycle
+            READ_SHORT (cycles_off + 0x04*(icon_index + i) + 0x02) frame_lookup_ind
+            // store info about which frames belong to this icon's cycle
+            SET $cycle(~%i%~ ~length~) = frames_in_cycle
+            SET lookups_to_add += frames_in_cycle
+            FOR (j = 0; j < frames_in_cycle; j += 1) BEGIN
+              READ_SHORT (lookups_off + 0x02*(frame_lookup_ind + j)) frame
+              SET $cycle(~%i%~ ~%j%~) = frame
+              PATCH_IF (NOT VARIABLE_IS_SET $frame(~%frame%~ ~data~)) BEGIN // store frame data
+                SET $old_frame(~%frames_to_add%~) = frame
+                SET $new_frame(~%frame%~) = frames_to_add
+                SET frames_to_add += 1
+                READ_SHORT (frames_off + 0x0c*frame) frame_width
+                READ_SHORT (frames_off + 0x0c*frame + 0x02) frame_height
+                READ_LONG  (frames_off + 0x0c*frame + 0x08) frame_data_off
+                SET is_uncompressed = (frame_data_off & 0b10000000000000000000000000000000) >> 31
+                SET frame_data_off  = (frame_data_off & 0b01111111111111111111111111111111)
+                SET max_size = frame_width*frame_height
+                PATCH_IF (is_uncompressed) BEGIN
+                  FOR (bytes = 0; bytes < max_size; bytes += 1) BEGIN
+                    READ_BYTE (frame_data_off + bytes) pixel
+                    SET new_pixel = $map(~%pixel%~)
+                    WRITE_BYTE (frame_data_off + bytes) new_pixel // change our frame data to use the new palette
+                  END
+                  SET frame_data_size = max_size
+                END
+                ELSE BEGIN // compressed, may be smaller
+                  SET pixels = 0
+                  FOR (bytes = 0; bytes < max_size && pixels < max_size; bytes += 1) BEGIN
+                    READ_BYTE (frame_data_off + bytes) pixel
+                    SET new_pixel = $map(~%pixel%~)
+                    WRITE_BYTE (frame_data_off + bytes) new_pixel // change our frame data to use the new palette
+                    SET pixels += 1
+                    PATCH_IF (pixel == compressed_colour) BEGIN
+                      SET bytes += 1
+                      READ_BYTE (frame_data_off + bytes) count
+                      SET pixels += count
+                    END
+                  END
+                  SET frame_data_size = bytes
+                END
+                READ_ASCII frame_data_off frame_data (frame_data_size)
+                READ_ASCII (frames_off + 0x0c*frame) frame_info (0x0c)
+                TEXT_SPRINT $frame(~%frame%~ ~data~) ~%frame_data%~
+                TEXT_SPRINT $frame(~%frame%~ ~info~) ~%frame_info%~
+                SET $frame(~%frame%~ ~size~) = frame_data_size
+              END
+            END
+          END
+        END
+      
+      ACTION_IF (cycles_to_add >= 1) BEGIN // only continue if a valid initial icon index was provided
+        // add new icons to .bam
+        COPY_EXISTING ~%mapicons%.bam~ ~override~
+          READ_SHORT 0x08 num_frames
+          READ_BYTE  0x0a num_cycles
+          READ_LONG  0x0c frames_off
+          SET cycles_off = frames_off + 0x0c*num_frames
+          READ_LONG  0x10 palette_off
+          READ_LONG  0x14 lookups_off
+          
+          PATCH_IF (num_cycles + cycles_to_add <= 255) BEGIN
+            // how many bytes we are adding to the file
+            SET new_frame_bytes = 0x0c*frames_to_add
+            SET new_cycle_bytes = 0x04*cycles_to_add
+            SET new_lookup_bytes = 0x02*lookups_to_add
+            
+            // adjust frame data offsets
+            FOR (i = 0; i < num_frames; i += 1) BEGIN
+              READ_LONG (frames_off + 0x0c*i + 0x08) frame_data_off
+              SET bit31 = frame_data_off & 0b10000000000000000000000000000000
+              SET frame_data_off &= 0b01111111111111111111111111111111
+              PATCH_IF (frame_data_off > frames_off) BEGIN
+                SET frame_data_off += new_frame_bytes
+              END
+              PATCH_IF (frame_data_off > cycles_off) BEGIN
+                SET frame_data_off += new_cycle_bytes
+              END
+              PATCH_IF (frame_data_off > lookups_off) BEGIN
+                SET frame_data_off += new_lookup_bytes
+              END
+              SET frame_data_off |=  bit31
+              WRITE_LONG (frames_off + 0x0c*i + 0x08) frame_data_off
+            END
+            
+            // add new frame bytes
+            INSERT_BYTES (frames_off + 0x0c*num_frames) new_frame_bytes
+            SET SOURCE_SIZE += new_frame_bytes
+            // adjust affected offsets
+            SET cycles_off += new_frame_bytes
+            PATCH_IF (palette_off > frames_off) BEGIN
+              SET palette_off += new_frame_bytes
+            END
+            PATCH_IF (lookups_off > frames_off) BEGIN
+              SET lookups_off += new_frame_bytes
+            END
+            
+            // add new cycle bytes
+            INSERT_BYTES (cycles_off + 0x04*num_cycles) new_cycle_bytes
+            SET SOURCE_SIZE += new_cycle_bytes
+            // adjust affected offsets
+            PATCH_IF (palette_off > cycles_off) BEGIN
+              SET palette_off += new_cycle_bytes
+            END
+            PATCH_IF (lookups_off > cycles_off) BEGIN
+              SET lookups_off += new_cycle_bytes
+            END
+            
+            // add new lookup bytes
+            SET num_lookups = 0
+            FOR (i = 0; i < num_cycles; i += 1) BEGIN
+              READ_SHORT (cycles_off + 0x04*i) frames_in_cycle
+              READ_SHORT (cycles_off + 0x04*i + 0x02) frame_lookup_ind
+              SET last_frame = frame_lookup_ind + frames_in_cycle
+              SET num_lookups = (last_frame > num_lookups ? last_frame : num_lookups)
+            END
+            INSERT_BYTES (lookups_off + 0x02*num_lookups) new_lookup_bytes
+            SET SOURCE_SIZE += new_lookup_bytes
+            // adjust affected offsets
+            PATCH_IF (frames_off > lookups_off) BEGIN
+              SET frames_off += new_lookup_bytes
+              SET cycles_off += new_lookup_bytes
+            END
+            PATCH_IF (palette_off > lookups_off) BEGIN
+              SET palette_off += new_lookup_bytes
+            END
+            
+            // write frame info
+            FOR (i = 0; i < frames_to_add; i += 1) BEGIN
+              SET frame = $old_frame(~%i%~)
+              SET size = $frame(~%frame%~ ~size~)
+              TEXT_SPRINT info $frame(~%frame%~ ~info~)
+              TEXT_SPRINT data $frame(~%frame%~ ~data~)
+              WRITE_ASCIIE (frames_off + 0x0c*(num_frames + i)) ~%info%~
+              WRITE_LONG   (frames_off + 0x0c*(num_frames + i) + 0x08) ((THIS & 0b10000000000000000000000000000000) | SOURCE_SIZE)
+              INSERT_BYTES SOURCE_SIZE size
+              WRITE_ASCIIE SOURCE_SIZE ~%data%~
+              SET SOURCE_SIZE += size
+            END
+            
+            // write cycle info
+            FOR (i = 0; i < cycles_to_add; i += 1) BEGIN
+              SET frames_in_cycle = $cycle(~%i%~ ~length~)
+              WRITE_SHORT (cycles_off + 0x04*(num_cycles + i)) frames_in_cycle
+              WRITE_SHORT (cycles_off + 0x04*(num_cycles + i) + 0x02) num_lookups
+              FOR (j = 0; j < frames_in_cycle; j += 1) BEGIN
+                SET frame = $cycle(~%i%~ ~%j%~)
+                SET frame = num_frames + $new_frame(~%frame%~)
+                WRITE_SHORT (lookups_off + 0x02*(num_lookups + j)) frame
+              END
+              SET num_lookups += frames_in_cycle
+            END
+            
+            // set return values
+            SET new_icon_index = num_cycles // first new index equals old number of cycles
+            SET icons_added = cycles_to_add // we added all icons successfully
+            
+            // update values in the file
+            SET num_frames += frames_to_add
+            SET num_cycles += cycles_to_add
+            WRITE_SHORT 0x08 num_frames
+            WRITE_BYTE  0x0a num_cycles
+            WRITE_LONG  0x0c frames_off
+            WRITE_LONG  0x10 palette_off
+            WRITE_LONG  0x14 lookups_off
+          END
+          ELSE BEGIN
+            PATCH_FAIL ~ADD_MAP_ICONS: map icon file already has %num_cycles% cycles, so cannot add %cycles_to_add% more cycles without exceeding limit of 255 cycles~
+          END
+          
+          PATCH_IF (was_compressed) BEGIN // recompress, just to be tidy
+            COMPRESS_REPLACE_FILE 0 SOURCE_SIZE 9
+            INSERT_BYTES 0x0 0x0c
+            WRITE_ASCII  0x0 ~BAMCV1  ~
+            WRITE_LONG   0x8 SOURCE_SIZE
+          END
+          BUT_ONLY
+      END
+    END
+  END
+END

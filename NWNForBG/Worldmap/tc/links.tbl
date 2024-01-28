@@ -1,0 +1,117 @@
+SRC_AREA  SRC_NWSE  TARGET_ARE  ENTRY_NAME  TRV_TIME  DEF_ENTRY  ENC1     ENC2     ENC3     ENC4     ENC5     ENC_PROB
+
+NW1000    N         NW4000      EXIT1000      0         1          N        N        N         N        N        0
+NW1000    N         NW2400      EXIT1000      1         5          N        N        N         N        N        0
+NW1000    N         NW2000      MAIN          3         4          N        N        N         N        N        0
+NW1000    W         NW4000      EXIT1000      0         1          N        N        N         N        N        0
+NW1000    W         NW2400      EXIT1000      1         5          N        N        N         N        N        0
+NW1000    W         NW2000      MAIN          3         4          N        N        N         N        N        0
+NW1000    S         NW4000      EXIT1000      0         1          N        N        N         N        N        0
+NW1000    S         NW2400      EXIT1000      1         5          N        N        N         N        N        0
+NW1000    S         NW2000      MAIN          3         4          N        N        N         N        N        0
+NW1000    E         NW4000      EXIT1000      0         1          N        N        N         N        N        0
+NW1000    E         NW2400      EXIT1000      1         5          N        N        N         N        N        0
+NW1000    E         NW2000      MAIN          3         4          N        N        N         N        N        0
+
+NW2000    N         NW1000      MAIN          3         1          N        N        N         N        N        0
+NW2000    N         NW2100      EXIT2000      1         10         N        N        N         N        N        0
+NW2000    W         NW1000      MAIN          3         1          N        N        N         N        N        0
+NW2000    W         NW2100      EXIT2000      1         10         N        N        N         N        N        0
+NW2000    S         NW1000      MAIN          3         1          N        N        N         N        N        0
+NW2000    S         NW2100      EXIT2000      1         10         N        N        N         N        N        0
+NW2000    E         NW1000      MAIN          3         1          N        N        N         N        N        0
+NW2000    E         NW2100      EXIT2000      1         10         N        N        N         N        N        0
+
+NW2100    N         NW2200      EXIT2100      1         1          N        N        N         N        N        0
+NW2100    W         NW2000      MAIN          1         8          N        N        N         N        N        0
+NW2100    S         NW2300      EXIT2100      1         1          N        N        N         N        N        0
+NW2100    E         NW2700      EXIT2100      1         2          N        N        N         N        N        0
+
+NW2200    N         NW3000      EXIT2200      4         1          N        N        N         N        N        0
+NW2200    W         NW3000      EXIT2200      4         1          N        N        N         N        N        0
+NW2200    S         NW3000      EXIT2200      4         1          N        N        N         N        N        0
+NW2200    S         NW2100      EXIT2200      1         1          N        N        N         N        N        0
+NW2200    E         NW3000      EXIT2200      4         1          N        N        N         N        N        0
+
+NW2300    N         NW2100      EXIT2300      1         1          N        N        N         N        N        0
+NW2300    S         NW2400      EXIT2300      1         4          N        N        N         N        N        0
+
+NW2400    N         NW2300      EXIT2400      1         1          N        N        N         N        N        0
+NW2400    W         NW2500      EXIT2400      1         8          N        N        N         N        N        0
+NW2400    W         NW2510      EXIT2400      1         8          N        N        N         N        N        0
+NW2400    S         NW1000      MAIN          1         4          N        N        N         N        N        0
+NW2400    E         NW2500      EXIT2400      1         8          N        N        N         N        N        0
+NW2400    E         NW2510      EXIT2400      1         8          N        N        N         N        N        0
+
+NW2500    N         NW2400      EXIT2500      1         1          N        N        N         N        N        0
+NW2500    W         NW2400      EXIT2500      1         8          N        N        N         N        N        0
+NW2500    S         NW2400      EXIT2500      1         4          N        N        N         N        N        0
+NW2500    E         NW2400      EXIT2500      1         2          N        N        N         N        N        0
+
+NW2510    N         NW2400      EXIT2500      1         1          N        N        N         N        N        0
+NW2510    W         NW2400      EXIT2500      1         8          N        N        N         N        N        0
+NW2510    S         NW2400      EXIT2500      1         4          N        N        N         N        N        0
+NW2510    E         NW2400      EXIT2500      1         2          N        N        N         N        N        0
+
+NW2700    W         NW2100      EXIT2700      1         8          N        N        N         N        N        0
+NW2700    E         NW2800      EXIT2700      1         2          N        N        N         N        N        0
+
+NW2800    N         NW2700      EXIT2800      1         1          N        N        N         N        N        0
+NW2800    W         NW2700      EXIT2800      1         8          N        N        N         N        N        0
+NW2800    S         NW2700      EXIT2800      1         4          N        N        N         N        N        0
+NW2800    E         NW2700      EXIT2800      1         2          N        N        N         N        N        0
+
+NW3000    N         NW3100      EXIT3000      1         1          N        N        N         N        N        0
+NW3000    N         NW2200      EXIT2100      1         1          N        N        N         N        N        0
+NW3000    W         NW3100      EXIT3000      1         1          N        N        N         N        N        0
+NW3000    W         NW2200      EXIT2100      1         1          N        N        N         N        N        0
+NW3000    S         NW3100      EXIT3000      1         1          N        N        N         N        N        0
+NW3000    S         NW2200      EXIT2100      1         1          N        N        N         N        N        0
+NW3000    E         NW3100      EXIT3000      1         1          N        N        N         N        N        0
+NW3000    E         NW2200      EXIT2100      1         1          N        N        N         N        N        0
+
+NW3100    N         NW3000      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    N         NW3200      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    W         NW3000      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    W         NW3200      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    S         NW3000      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    S         NW3200      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    E         NW3000      EXIT3100      1         1          N        N        N         N        N        0
+NW3100    E         NW3200      EXIT3100      1         1          N        N        N         N        N        0
+
+NW3200    N         NW3500      EXIT3200      2         1          N        N        N         N        N        0
+NW3200    N         NW3300      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    N         NW3100      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    N         NW3400      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    W         NW3500      EXIT3200      2         1          N        N        N         N        N        0
+NW3200    W         NW3300      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    W         NW3100      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    W         NW3400      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    S         NW3500      EXIT3200      2         1          N        N        N         N        N        0
+NW3200    S         NW3300      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    S         NW3100      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    S         NW3400      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    E         NW3500      EXIT3200      2         1          N        N        N         N        N        0
+NW3200    E         NW3300      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    E         NW3100      EXIT3200      1         1          N        N        N         N        N        0
+NW3200    E         NW3400      EXIT3200      1         1          N        N        N         N        N        0
+
+NW3300    N         NW3200      EXIT3300      1         1          N        N        N         N        N        0
+NW3300    W         NW3200      EXIT3300      1         1          N        N        N         N        N        0
+NW3300    S         NW3200      EXIT3300      1         1          N        N        N         N        N        0
+NW3300    E         NW3200      EXIT3300      1         1          N        N        N         N        N        0
+
+NW3400    N         NW3200      EXIT3400      1         1          N        N        N         N        N        0
+NW3400    W         NW3200      EXIT3400      1         1          N        N        N         N        N        0
+NW3400    S         NW3200      EXIT3400      1         1          N        N        N         N        N        0
+NW3400    E         NW3200      EXIT3400      1         1          N        N        N         N        N        0
+
+NW3500    N         NW3200      EXIT3500      2         1          N        N        N         N        N        0
+NW3500    W         NW3200      EXIT3500      2         1          N        N        N         N        N        0
+NW3500    S         NW3200      EXIT3500      2         1          N        N        N         N        N        0
+NW3500    E         NW3200      EXIT3500      2         1          N        N        N         N        N        0
+
+NW4000    N         NW1000      Main          0         1          N        N        N         N        N        0
+NW4000    W         NW1000      Main          0         1          N        N        N         N        N        0
+NW4000    S         NW1000      Main          0         1          N        N        N         N        N        0
+NW4000    E         NW1000      Main          0         1          N        N        N         N        N        0
