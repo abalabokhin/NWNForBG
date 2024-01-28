@@ -24,13 +24,14 @@ Thanks and Acknowledgements
 * Gorion - for the provided night Beggar's Nest location image
 * Insomniator2 - for a great help with weidu adaptation and especially for the script that can generate weidu code to set string refs for binary files (cre, are, etc.)
 * megrimlock - for helping with proof-reading english tra files
-* p\_zombie - for testing and help with bp-bgt-worldmap adaptation
+* p\_zombie - for testing, help with bp-bgt-worldmap adaptation and preparing a dedicated map for NWN content
+* Apxu - for coding a component with a dedicated NWN content map
 * JohnBob - for helping with icons positins and some weidu coding
-* Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod
+* Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod and for the bp-bgt-worldmap mod itself
 * argent77 - for help with TIS files and useful weidu libraries
 * scheele - for testing, some ideas for the mod and help with proof-reading Russian texts
-* arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing
-* gibberlings3.net - thanks to the whole community for the help with weidu modding
+* arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing, bug reporting, etc
+* gibberlings3.net - thanks to the whole community for the help with weidu modding, testing, bug reporting, etc
 
 Languages
 ---------
@@ -103,11 +104,13 @@ Version History
 ---------------
 In development:
 
+- Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Some weidu code is taken from BP-BGT-Worldmap mod.
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
 - Converted TIS and WED files to remove black lines next to doors and fireplaces
 - Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros
 - Added ini file for Project Infinity
 - Added a few of map notes in Chapter 1, where it is difficult to find an area exit
+- Fixed some small bugs thanks to tipun
 
 0.95 (1/12/24)
 

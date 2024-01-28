@@ -5,7 +5,8 @@ TODO:
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. Make NWN to be standalone compaign
+*. Make NWN to be a standalone compaign
+*. Prepare bam files for labels (Neverwinter City and Luskan) for other languages or add instruction how to do this in readme (based on Apxu Russian instruction).
 
 After bp-bgt-update:
 *. move Beorunna well and other locations around it to be more cononic after new map release
