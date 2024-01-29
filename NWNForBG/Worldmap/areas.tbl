@@ -15,22 +15,17 @@ NW2900			NW2900		NW2900			2			 59			1090	1035		@NW2900			N		N // Heart of the Fo
 NW2300			NW2300		NW2300			2			 39			 920	 990		@NW2300			N		N // South Road
 NW2800			NW2800		NW2800			2			 38			1150	 880		@NW2800			N		N // Druids Grove
 NW2100			NW2100		NW2100			2			 65			 950	 815		@NW2100			N		N // North Road
-NW2000			NW2000		NW2000			0			 53			 867	 892		@NW2000			N		N // Port Llast
+NW2000			NW2000		NW2000			0			 53			 867	 892		N			N		N // Port Llast
 NW2700			NW2700		NW2700			2			 61			1060	 845		@NW2700			N		N // East Road
 NW2200			NW2200		NW2200			2			 51			 910	 730		@NW2200			N		N // Green Griffon
 NW1033			NW1033		NW1033			0			 90			1080	 745		@NW1033			N		N // Helm Hold
 NW2E31			NW2E31		NW2E31			0			 25			 436	 882		@NW2E31			N		N // Docks of Luskan
 NW2E00			NW2E00		NW2E00			0			 20			 467	 785		@NW2E00			N		N // Luskan
 NW2E55			NW2E55		NW2E55			0			 62			 417	 753		@NW2E55			N		N // Host Tower
-NW3000			NW3000		NW3000			4			 13			1205	 525		@NW3000			N		N // Beorunna's Well
+NW3000			NW3000		NW3000			4			 13			1205	 525		N			N		N // Beorunna's Well
 NW3100			NW3100		NW3100			6			 12			1318	 501		@NW3100			N		N // Ford Ilkard
 NW3300			NW3300		NW3300			6			  9			1546	 503		@NW3300			N		N // Ruins
 NW3200			NW3200		NW3200			6			 61			1450	 414		@NW3200			N		N // Elk Tribe Keep
-NW3400			NW3400		NW3400			6			 69			1323	 283		@NW3400			N		N // Lurkwood
-NW3500			NW3500		NW3500			6			 83			1800	  46		@NW3500			N		N // The Moonwood
+NW3400			NW3400		NW3400			6			 69			1323	 283		N			N		N // Coldwood
+NW3500			NW3500		NW3500			6			 83			1800	  46		N			N		N // Moonwood
 
-// V13
-// NW3000			NW3000		NW3000			4			 13			1205	 650		@NW3000			N		N // Beorunna's Well
-// NW3100			NW3100		NW3100			6			 12			1330	 555		@NW3100			N		N // Ford Ilkard
-// NW3300			NW3300		NW3300			6			  9			1585	 450		@NW3300			N		N // Ruins
-// NW3500			NW3500		NW3500			6			 83			1800	  46		@NW3500			N		N // The Moonwood

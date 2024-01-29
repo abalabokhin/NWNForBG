@@ -1,11 +1,49 @@
 TODO:
 
+finish spanish for bg-bgt-worldmap:
+
+Easthaven       Easthaven
+Lonelywood      Solobosque
+Bremen          Bremen
+Bryn Shander    Bryn Shander
+Termalaine      Termalaine
+Caer-Dineval    Caer-Dinival
+Dougan's Hole   Poblado de Dougan
+Good Mead       Buen Aguamiel
+Caer-Konig	 =	Caer-Koenig - somewhere in the internet - check iwd2
+Frozen Forest	= "Bosque Helado" (iwd1 translation and probably bg1/bg2) - double check it
+Abbey Mountains/Turnback Mountains = Montañas de la Abadía/Montañas de Vuelta - deepl
+White Peaks	 	                   Picos Blancos - deepl
+Lilinuk	 		 - assuming the same, but haven't found
+Utui			 - assuming the same, but haven't found
+Jukum	 		 - assuming the same, but haven't found
+Hykopgruk	 	 - assuming the same, but haven't found
+Imajuvisik	 	 - assuming the same, but haven't found
+ANGALPUK	 	 - assuming the same, but haven't found
+ALPUK	 		 - assuming the same, but haven't found
+RUATHYM	 		 - the same - from BG1NPC
+Moonshae Isles	   Islas Moonshaes - bg1/bg2
+Caer Callidyrr	 - assuming the same, but haven't found
+Caer Corwell	 - in bg2 - check
+Lugalpgotak Sea	 - Mar de Lugalpgotak - deepl
+
+
+
+*. попробовать другие разрешения карты, например как в бг1... - может там не будет черных полос
+*. проверить, что когда покидаешь НВН карта меняется обратно
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
-*. Make NWN to be standalone compaign
+*. Make NWN to be a standalone compaign
+*. Prepare bam files for labels (Neverwinter City and Luskan) for other languages or add instruction how to do this in readme (based on Apxu Russian instruction):
+de - Niewinter     Luskaner
+es - Noyvern       Luskanita
+fr - Padhiver      Luskan
+it - Neverwinter   Luskan
+pl - Neverwinter   Luskan
+china - 无冬城   陆斯坎人
 
 After bp-bgt-update:
 *. move Beorunna well and other locations around it to be more cononic after new map release
