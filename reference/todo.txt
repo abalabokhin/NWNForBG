@@ -6,7 +6,13 @@ TODO:
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
 *. Make NWN to be a standalone compaign
-*. Prepare bam files for labels (Neverwinter City and Luskan) for other languages or add instruction how to do this in readme (based on Apxu Russian instruction).
+*. Prepare bam files for labels (Neverwinter City and Luskan) for other languages or add instruction how to do this in readme (based on Apxu Russian instruction):
+de - Niewinter     Luskaner
+es - Noyvern       Luskanita
+fr - Padhiver      Luskan
+it - Neverwinter   Luskan
+pl - Neverwinter   Luskan
+china - 无冬城   陆斯坎人
 
 After bp-bgt-update:
 *. move Beorunna well and other locations around it to be more cononic after new map release
