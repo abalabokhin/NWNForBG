@@ -1,17 +1,17 @@
-@0 = ~Así que... *éste* es el último grupo de participantes, ¿verdad? Muy bien, me llamo Jaroo y soy el Maestro de Juegos. Permitid que os explique cómo funciona esto:~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Entrada a las criptas. Cuando esta casilla esté marcada, el editor te pedirá el texto inmediatamente después de que agregues un nodo. Tú decirme todo lo que saber y no hacerme perder el tiempo. Si quieres cambiar el futuro, debes hacerlo tú mismo.*/
-@2 = ~Ni Mutamin ni yo somos responsables de vuestras muertes ni de las muertes de vuestros compañeros. Si entráis, es responsabilidad vuestra.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Bueno, si alguien desea entrar, que se acerque a mí con el oro y le teleportaré al interior.*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*¿Sí, mi señor? ¿Estas preparado para entrar en la mazmorra?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*Sí, lo estoy. Aquí tienes mis 500 de oro.*/
+@0 = ~AsÃ­ que... *Ã©ste* es el Ãºltimo grupo de participantes, Â¿verdad? Muy bien, me llamo Jaroo y soy el Maestro de Juegos. Permitid que os explique cÃ³mo funciona esto:~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Entrada a las criptas. Cuando esta casilla estÃ© marcada, el editor te pedirÃ¡ el texto inmediatamente despuÃ©s de que agregues un nodo. TÃº decirme todo lo que saber y no hacerme perder el tiempo. Si quieres cambiar el futuro, debes hacerlo tÃº mismo.*/
+@2 = ~Ni Mutamin ni yo somos responsables de vuestras muertes ni de las muertes de vuestros compaÃ±eros. Si entrÃ¡is, es responsabilidad vuestra.~ [NWJAR056]
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Bueno, si alguien desea entrar, que se acerque a mÃ­ con el oro y le teleportarÃ© al interior.*/
+@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*Â¿SÃ­, mi seÃ±or? Â¿Estas preparado para entrar en la mazmorra?*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*SÃ­, lo estoy. AquÃ­ tienes mis 500 de oro.*/
 @6 = ~I'm not ready yet.~ /*No, la verdad es que no.*/
-@7 = ~Sí, ¿pero de verdad que son necesarias 500 piezas de oro?~
+@7 = ~SÃ­, Â¿pero de verdad que son necesarias 500 piezas de oro?~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-/*Excelente. ¡Prepárate entonces, mi señor! ¡¡Que empiece la competición!!*/
-@10 = ~Como quieras. Estaré aquí por si cambias de idea.~
-@11 = ~Lo son. Cada aportación se suma al total que se dará al ganador que atraviese toda la mazmorra. Como todos tenéis las mismas posibilidades de conseguirlo, me temo que no sería justo ofrecer un descuento. Bien, ¿estáis preparados para la competición?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Deprisa. El último sello se ha roto y las ruinas de Illusk quedan abiertas para ti.*/
-@13 = ~Has ganado la competición. ¡Felicidades! Habla con Mutamin para que te dé tu recompensa.~ [NWJAR052]
-@14 = ~La competición ya ha terminado. Vuelve en otro momento, cuando la mazmorra haya sido remodelada para una nueva.~ [NWJAR053]
+/*Excelente. Â¡PrepÃ¡rate entonces, mi seÃ±or! Â¡Â¡Que empiece la competiciÃ³n!!*/
+@10 = ~Como quieras. EstarÃ© aquÃ­ por si cambias de idea.~
+@11 = ~Lo son. Cada aportaciÃ³n se suma al total que se darÃ¡ al ganador que atraviese toda la mazmorra. Como todos tenÃ©is las mismas posibilidades de conseguirlo, me temo que no serÃ­a justo ofrecer un descuento. Bien, Â¿estÃ¡is preparados para la competiciÃ³n?~ 
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Deprisa. El Ãºltimo sello se ha roto y las ruinas de Illusk quedan abiertas para ti.*/
+@13 = ~Has ganado la competiciÃ³n. Â¡Felicidades! Habla con Mutamin para que te dÃ© tu recompensa.~ [NWJAR052]
+@14 = ~La competiciÃ³n ya ha terminado. Vuelve en otro momento, cuando la mazmorra haya sido remodelada para una nueva.~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*La competición ya ha terminado. Vuelve en otro momento, cuando la mazmorra haya sido remodelada para una nueva.*/
+/*La competiciÃ³n ya ha terminado. Vuelve en otro momento, cuando la mazmorra haya sido remodelada para una nueva.*/

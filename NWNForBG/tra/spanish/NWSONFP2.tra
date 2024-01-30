@@ -1,29 +1,29 @@
-@0 = ~Tú... eres un aventurero, ¿verdad? O sea... saludos. Uh... esto... a mi papá y a mí nos vendría bien tu ayuda.~
-@1 = ~¿No has oído hablar de mí?~
-@2 = ~Tranquilízate. ¿Cuál se supone que es el problema?~
-@3 = ~¿Hay una recompensa para mí?~
+@0 = ~TÃº... eres un aventurero, Â¿verdad? O sea... saludos. Uh... esto... a mi papÃ¡ y a mÃ­ nos vendrÃ­a bien tu ayuda.~
+@1 = ~Â¿No has oÃ­do hablar de mÃ­?~
+@2 = ~TranquilÃ­zate. Â¿CuÃ¡l se supone que es el problema?~
+@3 = ~Â¿Hay una recompensa para mÃ­?~
 @4 = ~No puedo perder el tiempo con esto.~
-@5 = ~Umm... no. ¿Debería? Vivo en una granja fuera de la ciudad, y me temo que no nos llegan muchas noticias. Sin embargo, hemos oído que han llegado un puñado de aventureros a Puerto Final, y mi papá me mandó aquí para encontrar a gente que enviarle. ¡Es muy importante!~ 
-@6 = ~¿Tiene que ver esto con alguna secta?~
-@7 = ~Entonces, cuéntame qué pasa.~
-@8 = ~Uhh... a lo mejor. No sé nada de una secta. Tendrías que hablar del tema con mi papá.~
-@9 = ~Bueno, yo y mi padre... se llama Gerrol, en Puerto Final lo conoce todo el mundo... vivimos en una granja al norte de las puertas de la ciudad. Hay muchos monstruos que viven en las colinas que rodean nuestra granja. Normalmente no nos molestan, pero últimamente se han mostrado muy atrevidos, tendiendo emboscadas a viajeros y caravanas.~ 
-@10 = ~¡Llegaron incluso a secuestrar a mi madre mientras mi papá y yo no estábamos en la granja la semana pasada! Por eso me mandó mi padre a la ciudad a buscar ayuda.~
+@5 = ~Umm... no. Â¿DeberÃ­a? Vivo en una granja fuera de la ciudad, y me temo que no nos llegan muchas noticias. Sin embargo, hemos oÃ­do que han llegado un puÃ±ado de aventureros a Puerto Final, y mi papÃ¡ me mandÃ³ aquÃ­ para encontrar a gente que enviarle. Â¡Es muy importante!~ 
+@6 = ~Â¿Tiene que ver esto con alguna secta?~
+@7 = ~Entonces, cuÃ©ntame quÃ© pasa.~
+@8 = ~Uhh... a lo mejor. No sÃ© nada de una secta. TendrÃ­as que hablar del tema con mi papÃ¡.~
+@9 = ~Bueno, yo y mi padre... se llama Gerrol, en Puerto Final lo conoce todo el mundo... vivimos en una granja al norte de las puertas de la ciudad. Hay muchos monstruos que viven en las colinas que rodean nuestra granja. Normalmente no nos molestan, pero Ãºltimamente se han mostrado muy atrevidos, tendiendo emboscadas a viajeros y caravanas.~ 
+@10 = ~Â¡Llegaron incluso a secuestrar a mi madre mientras mi papÃ¡ y yo no estÃ¡bamos en la granja la semana pasada! Por eso me mandÃ³ mi padre a la ciudad a buscar ayuda.~
 @11 = ~Seguro que puede ayudarte alguien de la autoridad.~
-@12 = ~¿Quieres que encuentre a tu madre?~
-@13 = ~¿Por qué no os marcháis tú y tu padre?~
-@14 = ~No es asunto mío.~
-@15 = ~Creo que sí. Seguro que si ayudas, mi papá podría pagarte. Al menos podrías hablar con él del tema.~
-@16 = ~Pero... ¡pero por favor! ¡No nos puede ayudar nadie más! ¡Todo el mundo está ocupado con sus emergencias!~
-@17 = ~Y yo estoy ocupado con las mías. Disculpa.~
-@18 = ~Piérdete, chaval.~
-@19 = ~Bien, bien. Bueno, dime de qué va todo esto.~
+@12 = ~Â¿Quieres que encuentre a tu madre?~
+@13 = ~Â¿Por quÃ© no os marchÃ¡is tÃº y tu padre?~
+@14 = ~No es asunto mÃ­o.~
+@15 = ~Creo que sÃ­. Seguro que si ayudas, mi papÃ¡ podrÃ­a pagarte. Al menos podrÃ­as hablar con Ã©l del tema.~
+@16 = ~Pero... Â¡pero por favor! Â¡No nos puede ayudar nadie mÃ¡s! Â¡Todo el mundo estÃ¡ ocupado con sus emergencias!~
+@17 = ~Y yo estoy ocupado con las mÃ­as. Disculpa.~
+@18 = ~PiÃ©rdete, chaval.~
+@19 = ~Bien, bien. Bueno, dime de quÃ© va todo esto.~
 @20 = ~Yo... oh... vale. Supongo que no puedo decir nada para convencerte.~
-@21 = ~Papá dice que ha enviado un montón de mensajes informando de los problemas, pero el alcalde está tan ocupado asistiendo a Noyvern que no tiene tiempo para ayudarnos. Antes fueron algunos otros aventureros, pero ninguno ha vuelto. Tenía la esperanza de que... tal vez lograras lo que ellos no pudieron hacer...~ 
-@22 = ~De acuerdo, te ayudaré.~
-@23 = ~¡Sólo necesitamos tu ayuda! Lo único que pido es que vayas a hablar con mi papá, Gerrol, nada más.~
-@24 = ~Papá dice que no quiere abandonar a mamá... y, además, son nuestras tierras. Papá no quiere marcharse. ¿No podrías... ir a hablar con él?~
+@21 = ~PapÃ¡ dice que ha enviado un montÃ³n de mensajes informando de los problemas, pero el alcalde estÃ¡ tan ocupado asistiendo a Noyvern que no tiene tiempo para ayudarnos. Antes fueron algunos otros aventureros, pero ninguno ha vuelto. TenÃ­a la esperanza de que... tal vez lograras lo que ellos no pudieron hacer...~ 
+@22 = ~De acuerdo, te ayudarÃ©.~
+@23 = ~Â¡SÃ³lo necesitamos tu ayuda! Lo Ãºnico que pido es que vayas a hablar con mi papÃ¡, Gerrol, nada mÃ¡s.~
+@24 = ~PapÃ¡ dice que no quiere abandonar a mamÃ¡... y, ademÃ¡s, son nuestras tierras. PapÃ¡ no quiere marcharse. Â¿No podrÃ­as... ir a hablar con Ã©l?~
 @25 = ~That would be great, my <LADYLORD>. I'm sure my pa would appreciate it. To get to our farm, you just need to go through the east gate and turn north. I'll stay here for now and find some more people to send to pa, until he calls me back. I'm sure you'll do the trick, though. Just go and talk to him.~
-/*Estupendo, mi señor. Seguro que mi papá te lo agradece. Para llegar a nuestra granja, tienes que salir por la puerta norte y continuar un poco por el camino. Yo me quedaré aquí para encontrar a más gente que enviarle a mi papá, hasta que me llame para que vuelva. No obstante, seguro que tú lo solucionas. Ve a hablar con él.*/
+/*Estupendo, mi seÃ±or. Seguro que mi papÃ¡ te lo agradece. Para llegar a nuestra granja, tienes que salir por la puerta norte y continuar un poco por el camino. Yo me quedarÃ© aquÃ­ para encontrar a mÃ¡s gente que enviarle a mi papÃ¡, hasta que me llame para que vuelva. No obstante, seguro que tÃº lo solucionas. Ve a hablar con Ã©l.*/
 @27 = ~Please find my mother!~
-/*Por favor, ayúdame.*/
+/*Por favor, ayÃºdame.*/

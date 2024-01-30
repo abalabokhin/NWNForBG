@@ -1,9 +1,12 @@
 // NWN For BG
-BACKUP ~NWNForBG\backup~
+BACKUP ~weidu_external/backup/NWNForBG~
 AUTHOR ~AGKanevchev, weidu EE adapation: paladin84, support: https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773~
 VERSION ~0.95~
 
 ALWAYS
+
+  OUTER_SPRINT workspace "weidu_external/workspace/%MOD_FOLDER%"
+
   ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET bg2_chapter = 12
   END ELSE BEGIN
@@ -14,29 +17,30 @@ ALWAYS
     OUTER_SPRINT name_source ~bg2_chapter_%i%~
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
-  ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
-    OUTER_SET cd_always = 1 // just do this once per install
-    // Copies tra files into the autotra-folder (to leave the originals untouched)
-    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
-      COPY ~NWNForBG/tra/english~  ~NWNForBG/tra/autotra/%LANGUAGE%~
-      COPY ~NWNForBG/tra/%LANGUAGE%~  ~NWNForBG/tra/autotra/%LANGUAGE%~
-    END
-    LAF autotra_workaround END
 
-  // ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
-  ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
-    LAF HANDLE_CHARSETS
-      INT_VAR
-        infer_charsets = 1
-      STR_VAR
-        tra_path = EVAL ~NWNForBG/tra/autotra~
-        // noconvert_array = fl#noconvert
-        reload_array = fl#reload
-    END
-  END
+	INCLUDE "%MOD_FOLDER%/lib/charset_wrapper.tph"
+	LAF charset_wrapper
+		INT_VAR
+			from_utf8=1 // set this to 0 if your tra files are encoded for non-EE games and need to be converted to utf-8
+			overwrite=0 // set this to 1 if you want the function to redo the conversion every time you install a new
+				// component. (I recommend doing this while developing so that changes you make to the .tra files
+				// get caught immediately.)
+			verbose=0 // set this to 1 to get more feedback from HANDLE_CHARSETS
+		STR_VAR
+			tra_path="" // set this to the folder containing your tra files, if it's not 'tra' or 'lang'. It doesn't matter
+					// whether or not you include the mod folder root, i.e. 'mymod/mytra' and 'mytra' get treated the same
+			setup="" // set this to the name of the tra file with your component names in, if it's not setup.tra
+			load="" // set this to a list of tra files you want to always be loaded, separated by spaces. (You can include
+				// the '.tra' or not as you like, it doesn't matter)
+			default_language="english" // set this to the language you wrote the mod in
+    RET out_path END
+
+  OUTER_SPRINT tra_loc "%out_path%"
+  
+  LOAD_TRA ~%tra_loc%/%LANGUAGE%/install.tra~
 END
 
-AUTO_TRA ~NWNForBG/tra/autotra/%s~
+AUTO_TRA ~%tra_loc%/%LANGUAGE%~
 
 LANGUAGE ~Russian~
 ~russian~
@@ -1385,7 +1389,7 @@ COPY ~NWNForBG/are/nw4103.are~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 
-LOAD_TRA ~NWNForBG/tra/autotra/%LANGUAGE%/CheatsAreas.tra~
+LOAD_TRA ~NWNForBG/tra/%LANGUAGE%/CheatsAreas.tra~
 
 INCLUDE ~NWNForBG/Lib/NeverWinterCheats.tph~
 

@@ -1,19 +1,19 @@
-@0 = ~B'jour. Vous êtes gentil ? Vous avez l'air gentil. Ma maman elle dit que beaucoup de gens y sont pas gentils. Même en bas de l'escalier.~
+@0 = ~B'jour. Vous Ãªtes gentil ? Vous avez l'air gentil. Ma maman elle dit que beaucoup de gens y sont pas gentils. MÃªme en bas de l'escalier.~
 @1 = ~Qu'y-a-t-il en bas de l'escalier ? Il y a quelque chose dans ta maison ?~
-@2 = ~Tu ne devrais pas être dehors. C'est dangereux.~
+@2 = ~Tu ne devrais pas Ãªtre dehors. C'est dangereux.~
 @3 = ~Au revoir.~
-@4 = ~Ouaip, y'a quelque chose derrière la bibliothèque, mais ma maman elle dit qu'il faut pas en parler... euh... je dois rien dire d'autre.~
-@5 = ~Ben p't'être mais ma maman elle s'en fiche. Elle dit que les gens sont malades à la maison, au travail et à l'église, alors ça fait rien si je suis dans la rue. En plus, elle était en colère parce que je suis encore allée derrière l'étagère. Elle dit que c'est pas bien d'aller là.~ 
+@4 = ~Ouaip, y'a quelque chose derriÃ¨re la bibliothÃ¨que, mais ma maman elle dit qu'il faut pas en parler... euh... je dois rien dire d'autre.~
+@5 = ~Ben p't'Ãªtre mais ma maman elle s'en fiche. Elle dit que les gens sont malades Ã  la maison, au travail et Ã  l'Ã©glise, alors Ã§a fait rien si je suis dans la rue. En plus, elle Ã©tait en colÃ¨re parce que je suis encore allÃ©e derriÃ¨re l'Ã©tagÃ¨re. Elle dit que c'est pas bien d'aller lÃ .~ 
 @6 = ~What about the bookcase? Is there something in your house?~/*Et au sujet des autres ? Il y a quelque chose dans ta maison ?*/
-@7 = ~Oui, au revoir et tout ça.~
-@8 = ~Maman ne doit pas savoir que je sais le mot secret. Vous pourriez peut-être aller en parler avec elle, d'accord ?~
-@9 = ~Un mot secret ? Raconte-moi ça. On est copains, non ?~
-@10 = ~Dis-moi ce mot ou tu auras des ennuis. Je dirai à ta mère que tu as volé quelque chose.~
-@11 = ~Eh bien, oui, je crois. Mais ne dites rien à maman. Je me cache derrière la bibliothèque. Il suffit de dire un mot et elle s'ouvre. Mais c'est un drôle de mot. Le mot est "Al-Hu-Ess". Je ne sais pas ce que ça veut dire, mais la bibliothèque s'ouvre quand on le dit. C'est bizarre, hein ?~ 
-@12 = ~Non, sinon j'aurai des ennuis. Je ne veux pas que les choses aillent plus mal. Maman pleure beaucoup à cause des gens malades.~
-@13 = ~Pourquoi est-ce que vous mentiriez comme ça ? Je n'ai jamais rien fait. Je vais vous le dire, mais ne mentez pas à maman. C'est juste un mot, après tout. Il ouvre la bibliothèque. Le mot est "Al-Hu-Ess". Je ne sais pas ce que ça veut dire, mais la bibliothèque s'ouvre quand on le dit. C'est bizarre, hein ? Vous partir.~ 
-@14 = ~Ben p't'être mais ma maman elle s'en fiche. Elle dit que les gens sont malades à la maison, au travail et à l'église, alors ça fait rien si je suis dans la rue.~
-@15 = ~Vous êtes qui ? Hein ? Vous venez pour ma maison ? Moi j'crois pas. J'vais vous botter les fesses comme aux méchants en bas de l'escalier !~
-@16 = ~Vous êtes pas beau. Moche comme tout.~
+@7 = ~Oui, au revoir et tout Ã§a.~
+@8 = ~Maman ne doit pas savoir que je sais le mot secret. Vous pourriez peut-Ãªtre aller en parler avec elle, d'accord ?~
+@9 = ~Un mot secret ? Raconte-moi Ã§a. On est copains, non ?~
+@10 = ~Dis-moi ce mot ou tu auras des ennuis. Je dirai Ã  ta mÃ¨re que tu as volÃ© quelque chose.~
+@11 = ~Eh bien, oui, je crois. Mais ne dites rien Ã  maman. Je me cache derriÃ¨re la bibliothÃ¨que. Il suffit de dire un mot et elle s'ouvre. Mais c'est un drÃ´le de mot. Le mot est "Al-Hu-Ess". Je ne sais pas ce que Ã§a veut dire, mais la bibliothÃ¨que s'ouvre quand on le dit. C'est bizarre, hein ?~ 
+@12 = ~Non, sinon j'aurai des ennuis. Je ne veux pas que les choses aillent plus mal. Maman pleure beaucoup Ã  cause des gens malades.~
+@13 = ~Pourquoi est-ce que vous mentiriez comme Ã§a ? Je n'ai jamais rien fait. Je vais vous le dire, mais ne mentez pas Ã  maman. C'est juste un mot, aprÃ¨s tout. Il ouvre la bibliothÃ¨que. Le mot est "Al-Hu-Ess". Je ne sais pas ce que Ã§a veut dire, mais la bibliothÃ¨que s'ouvre quand on le dit. C'est bizarre, hein ? Vous partir.~ 
+@14 = ~Ben p't'Ãªtre mais ma maman elle s'en fiche. Elle dit que les gens sont malades Ã  la maison, au travail et Ã  l'Ã©glise, alors Ã§a fait rien si je suis dans la rue.~
+@15 = ~Vous Ãªtes qui ? Hein ? Vous venez pour ma maison ? Moi j'crois pas. J'vais vous botter les fesses comme aux mÃ©chants en bas de l'escalier !~
+@16 = ~Vous Ãªtes pas beau. Moche comme tout.~
 @17 = ~Momma says people get sick at home at work and at church, so what's wrong with me in the street?~
-/*Ben p't'être mais ma maman elle s'en fiche. Elle dit que les gens sont malades à la maison, au travail et à l'église, alors ça fait rien si je suis dans la rue.*/
+/*Ben p't'Ãªtre mais ma maman elle s'en fiche. Elle dit que les gens sont malades Ã  la maison, au travail et Ã  l'Ã©glise, alors Ã§a fait rien si je suis dans la rue.*/

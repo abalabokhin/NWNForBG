@@ -1,4 +1,4 @@
-@0 = ~Ehilà, straniero. Benvenuto nel bosco sacro. Mi chiamo Welcar, e tu chi sei?~
+@0 = ~EhilÃ , straniero. Benvenuto nel bosco sacro. Mi chiamo Welcar, e tu chi sei?~
 @1 = ~Io sono <CHARNAME>. Mi sembri molto amichevole.~
 @2 = ~We are a group of adventurers led by <CHARNAME>.~/*Chi sei tu? Io mi chiamo <CHARNAME>.*/
 @3 = ~Non sono affari tuoi. Cosa ne diresti di rispondere ad alcune domande?~
@@ -6,7 +6,7 @@
 @5 = ~Di cosa si trattava?~
 @6 = ~Chi se ne importa. Voglio solo che tu risponda a qualche domanda.~
 @7 = ~Congratulazioni. Ti piacerebbe rispondere ad alcune domande?~
-@8 = ~Sai, neppure il tuo atteggiamento sgarbato può far crollare il mio umore. Che domande vuoi farmi?~
+@8 = ~Sai, neppure il tuo atteggiamento sgarbato puÃ² far crollare il mio umore. Che domande vuoi farmi?~
 @9 = ~Cosa sta succedendo qui?~
 @10 = ~Chi comanda qui?~
 @11 = ~Cosa fai di preciso tu qui?~
@@ -14,19 +14,19 @@
 @13 = ~Sono appena divenuto difensore per il quarto circolo di questo bosco sacro.~
 @14 = ~Che cosa significa questo?~
 @15 = ~D'accordo. Che domande vuoi farmi?~
-@16 = ~La notizia più importante, in questo momento, è il modo in cui le creature dei boschi hanno iniziato ad attaccare tutti. Ormai non si esce neanche più dal bosco sacro. Alcuni dicono che lo Spirito del Bosco sia impazzito e che stia facendo impazzire anche le altre creature. Non sono troppo sicuro di ciò che sta succedendo. Sono rimasto bloccato qui nel bosco sacro in quest'ultimo mese. Dovresti parlare con Aawill, se vuoi altre informazioni.~ 
-@17 = ~Chi è Aawill?~
+@16 = ~La notizia piÃ¹ importante, in questo momento, Ã¨ il modo in cui le creature dei boschi hanno iniziato ad attaccare tutti. Ormai non si esce neanche piÃ¹ dal bosco sacro. Alcuni dicono che lo Spirito del Bosco sia impazzito e che stia facendo impazzire anche le altre creature. Non sono troppo sicuro di ciÃ² che sta succedendo. Sono rimasto bloccato qui nel bosco sacro in quest'ultimo mese. Dovresti parlare con Aawill, se vuoi altre informazioni.~ 
+@17 = ~Chi Ã¨ Aawill?~
 @18 = ~Non importa. Addio.~
-@19 = ~Aawill è l'Arcidruido. Ha il comando su tutti gli altri druidi e si accerta che tutti lavorino insieme per il bene del bosco. Se ti interessa dare una mano con alcuni dei problemi che ci sono qui intorno, ti suggerirei di parlare con lui.~
+@19 = ~Aawill Ã¨ l'Arcidruido. Ha il comando su tutti gli altri druidi e si accerta che tutti lavorino insieme per il bene del bosco. Se ti interessa dare una mano con alcuni dei problemi che ci sono qui intorno, ti suggerirei di parlare con lui.~
 @20 = ~Sono il difensore del quarto circolo dei druidi per questo bosco sacro.~
 @21 = ~D'accordo, buona fortuna!~
 @22 = ~Se un druido arriva al bosco sacro e vuole diventare membro, deve convincere Jaer a preparare una sfida con il difensore del quarto circolo. Se lo sfidante vince, ha il permesso di unirsi al quarto circolo. Jaer mi ha promosso difensore solo da poco tempo.~
 @23 = ~Quindi come hai ottenuto questa promozione?~
 @24 = ~Voglio fare qualche altra domanda.~
 @25 = ~Va bene, arrivederci.~
-@26 = ~È una lunga storia. Non vorrei annoiarti. Hai altre domande?~ 
+@26 = ~Ãˆ una lunga storia. Non vorrei annoiarti. Hai altre domande?~ 
 @27 = ~Vedo che sei tornato. Posso aiutarti in qualche modo?~
 @28 = ~You agreed to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~/*Accetto le tue condizioni. Come desideri. Buona fortuna a te. Silvanus sia con te.*/
-@29 = ~Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~/*Grazie per aver sbloccato il suo pieno potere, Linu. Grazie, andrà benissimo.*/
+@29 = ~Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~/*Grazie per aver sbloccato il suo pieno potere, Linu. Grazie, andrÃ  benissimo.*/
 @30 = ~The Spirit of the Wood is dead! Our forest will never be the same, it's a great loss!~
-/*Lo Spirito della Foresta è morto. La foresta non sarà più la stessa.*/
+/*Lo Spirito della Foresta Ã¨ morto. La foresta non sarÃ  piÃ¹ la stessa.*/

@@ -1,19 +1,19 @@
 @0 = ~Uh? Hey, you! Are you trying to get into my pocket?~/*Unh? Hey hey! Wollt Ihr mich hereinlegen?*/
-@1 = ~\[Intelligence\] - I am shocked by the groundlessness of your accusations. I have been anywhere but near you, and I have a whole group of witnesses who will confirm this.~/*Ich glaube, ich habe einen Eurer Druiden gefunden. Ich bin angeheuert worden, um den Edelstein zu holen, und ich werde ihn holen. Händigt ihn mir aus!*/
-@2 = ~\[Wisdom\] - Use your head before making such unfounded statements. I was in a hurry and probably hit you as I was passing by. But no one was hurt.~/*Wer seid Ihr? Was macht Ihr hier auf den Straßen? Ich verstehe nicht, was Ihr sagt. Nein, ich denke nicht.*/
-@3 = ~\[Charisma\] - I assure you, I didn't do it. But I did see a shrouded silhouette walking by. Could that be the real culprit?~/*Aber natürlich nicht getan. Aber ich muss! Ich brauche diesen Ring. Kann ich die Münze haben, bitte?*/
-@4 = ~\[Lore\] - On the contrary. I was fascinated by this thing that fell out of your pocket and just wanted to take a closer look at it before returning it to you.~/*[Fokus auf Jäger] "Ich wünsch Euch viel Glück. Ich werd jetzt noch ein Bierchen kippen und dann runtergehen."*/
-@5 = ~\[Reputation\] - Hmm, I'll kindly remind you that you're talking to an honorable citizen. Your wallet was dangling from your belt and about to fall. I just wanted to correct him and warn you.~/*Die Ratte schnüffelt an Euch und stellt fest, dass Ihr noch am Leben seid ... noch! Ihr wollen Heilung, dann Ihr wieder in Wettkampf. Ich wollte das nur aus Eurem Mund hören.*/
-@6 = ~\[Reputation\] - Maybe you shouldn't make me angry, huh? Shut your mouth and get out of here while you still can.~/*Vielleicht Ihr Magier selbst fragen, hä? Haltet das Maul und macht ja keinen Mucks, oder ich töte Euch!*/
+@1 = ~\[Intelligence\] - I am shocked by the groundlessness of your accusations. I have been anywhere but near you, and I have a whole group of witnesses who will confirm this.~/*Ich glaube, ich habe einen Eurer Druiden gefunden. Ich bin angeheuert worden, um den Edelstein zu holen, und ich werde ihn holen. HÃ¤ndigt ihn mir aus!*/
+@2 = ~\[Wisdom\] - Use your head before making such unfounded statements. I was in a hurry and probably hit you as I was passing by. But no one was hurt.~/*Wer seid Ihr? Was macht Ihr hier auf den StraÃŸen? Ich verstehe nicht, was Ihr sagt. Nein, ich denke nicht.*/
+@3 = ~\[Charisma\] - I assure you, I didn't do it. But I did see a shrouded silhouette walking by. Could that be the real culprit?~/*Aber natÃ¼rlich nicht getan. Aber ich muss! Ich brauche diesen Ring. Kann ich die MÃ¼nze haben, bitte?*/
+@4 = ~\[Lore\] - On the contrary. I was fascinated by this thing that fell out of your pocket and just wanted to take a closer look at it before returning it to you.~/*[Fokus auf JÃ¤ger] "Ich wÃ¼nsch Euch viel GlÃ¼ck. Ich werd jetzt noch ein Bierchen kippen und dann runtergehen."*/
+@5 = ~\[Reputation\] - Hmm, I'll kindly remind you that you're talking to an honorable citizen. Your wallet was dangling from your belt and about to fall. I just wanted to correct him and warn you.~/*Die Ratte schnÃ¼ffelt an Euch und stellt fest, dass Ihr noch am Leben seid ... noch! Ihr wollen Heilung, dann Ihr wieder in Wettkampf. Ich wollte das nur aus Eurem Mund hÃ¶ren.*/
+@6 = ~\[Reputation\] - Maybe you shouldn't make me angry, huh? Shut your mouth and get out of here while you still can.~/*Vielleicht Ihr Magier selbst fragen, hÃ¤? Haltet das Maul und macht ja keinen Mucks, oder ich tÃ¶te Euch!*/
 @7 = ~(Try to run away.)~/*Zu Diensten.*/
-@8 = ~What insolence! Once again, you're trying to steal from me.~/*Was ist denn verschwunden? Ihr versucht mich also zu betrügen!*/
-@9 = ~This is the last straw! I won't be robbed by the likes of you!~/*Das ist doch viel zu einfach! Dürfte ich Euch einige meiner Gedanken näherbringen?*/
-@10 = ~Hmm... This time you'll get off with just a warning. This time...~/*Haaa .... "Nun erzählt mir von dem Ring." Hier lang.*/
+@8 = ~What insolence! Once again, you're trying to steal from me.~/*Was ist denn verschwunden? Ihr versucht mich also zu betrÃ¼gen!*/
+@9 = ~This is the last straw! I won't be robbed by the likes of you!~/*Das ist doch viel zu einfach! DÃ¼rfte ich Euch einige meiner Gedanken nÃ¤herbringen?*/
+@10 = ~Hmm... This time you'll get off with just a warning. This time...~/*Haaa .... "Nun erzÃ¤hlt mir von dem Ring." Hier lang.*/
 @11 = ~But from now on, I'll be watching you more closely!~/*Ja. Ich werde Euch im Auge behalten.*/
 @12 = ~Bah! I'll close my eyes this time, but don't try it again!~/*Ha! Ich nehme Euch jetzt mit, aber haltet Euch hinten.*/
-@13 = ~Great! But remember well, this is your last warning!~/*Groß Lebt wohl, bis wir uns wieder sehen.*/
-@14 = ~Run wherever you want, thief! But this dirty theft will soon be known!~/*Lauft, solange Ihr noch könnt! Wir werden diesen Kampf nicht verlieren!*/
+@13 = ~Great! But remember well, this is your last warning!~/*GroÃŸ Lebt wohl, bis wir uns wieder sehen.*/
+@14 = ~Run wherever you want, thief! But this dirty theft will soon be known!~/*Lauft, solange Ihr noch kÃ¶nnt! Wir werden diesen Kampf nicht verlieren!*/
 @15 = ~This is it! No more apologies!~/*Was gibt es? Schluss sein. Ihr sterben!*/
-@16 = ~This time I will report this brazen robbery attempt! Now get out of my sight!~/*"Dieser Helm wird mich vor ihnen schützen." In Deckung!*/
+@16 = ~This time I will report this brazen robbery attempt! Now get out of my sight!~/*"Dieser Helm wird mich vor ihnen schÃ¼tzen." In Deckung!*/
 @17 = ~Once again, eh, thief? You can't have it! These pathetic attempts at thievery must be stopped.~
-/*Ihr seid wieder zurück, ja? Das könnt Ihr nicht tun! Ich brauche Eure Hilfe. Heurodis muss aufgehalten werden.*/
+/*Ihr seid wieder zurÃ¼ck, ja? Das kÃ¶nnt Ihr nicht tun! Ich brauche Eure Hilfe. Heurodis muss aufgehalten werden.*/
