@@ -30,14 +30,17 @@ ALWAYS
 			tra_path="" // set this to the folder containing your tra files, if it's not 'tra' or 'lang'. It doesn't matter
 					// whether or not you include the mod folder root, i.e. 'mymod/mytra' and 'mytra' get treated the same
 			setup="" // set this to the name of the tra file with your component names in, if it's not setup.tra
-			load="install" // set this to a list of tra files you want to always be loaded, separated by spaces. (You can include
+			load="" // set this to a list of tra files you want to always be loaded, separated by spaces. (You can include
 				// the '.tra' or not as you like, it doesn't matter)
 			default_language="english" // set this to the language you wrote the mod in
     RET out_path END
+
   OUTER_SPRINT tra_loc "%out_path%"
+  
+  LOAD_TRA ~%tra_loc%/%LANGUAGE%/install.tra~
 END
 
-AUTO_TRA ~%tra_loc%/%s~
+AUTO_TRA ~%tra_loc%/%LANGUAGE%~
 
 LANGUAGE ~Russian~
 ~russian~
