@@ -29,8 +29,6 @@ Lugalpgotak Sea	 - Mar de Lugalpgotak - deepl
 
 
 
-*. попробовать другие разрешения карты, например как в бг1... - может там не будет черных полос
-*. проверить, что когда покидаешь НВН карта меняется обратно
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
@@ -45,7 +43,7 @@ it - Neverwinter   Luskan
 pl - Neverwinter   Luskan
 china - 无冬城   陆斯坎人
 
-After bp-bgt-update:
+After bp-bgt-update, также поперемещать все иконки, чтобы было более похоже на одиночную карту:
 *. move Beorunna well and other locations around it to be more cononic after new map release
 *. update icon for port Llast to be as on the map (Slums district).
 *. Move Helm Hold to be at the proper position after bp-bgt-worldmap is released.
