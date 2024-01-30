@@ -1,34 +1,34 @@
 SHORT_NAME		CONTENT		LONG_NAME		FLAGS		BAM_ANIM	X_POS	Y_POS		NAME		TOOLTIP	LOAD_IM
 
-nwinfo01        nwinfo01    nwinfo01        9           new#0    170     655              N         N       N // Luskan Label
-nwinfo02        nwinfo02    nwinfo02        9           new#1    300     990              N         N       N // Neverwinter Label
+nwinfo01        nwinfo01    nwinfo01        9           new#0    170     515              N         N       N // Luskan Label
+nwinfo02        nwinfo02    nwinfo02        9           new#1    300     850              N         N       N // Neverwinter Label
 
-NW4000			NW4000		NW4000			0			5		 450	1245		@NW4000			N		N // Suburbs (Nevewinter)
-NW1200			NW1200		NW1200			0			22		 325	1210		@NW1200			N		N // Beggar's Nest (Nevewinter)
-NW1400			NW1400		NW1400			0			24		 505	1190		@NW1400			N		N // Blacklake (Nevewinter)
-NW1000			NW1000		NW1000			0			20		 410	1180		@NW1000			N		N // Core (Nevewinter)
-NW1100			NW1100		NW1100			0			21		 290	1105		@NW1100			N		N // Docks (Nevewinter)
-NW1300			NW1300		NW1300			0			23		 405	1095		@NW1300			N		N // Peninsula (Nevewinter)
-NW2600			NW2600		NW2600			0			17		1010	1195		@NW2600			N		N // Charwood
-NW2601			NW2601		NW2601			0			17		1010	1195		@NW2601			N		N // Charwood (Bis)
-NW2500			NW2500		NW2500			0			10		1025	1105		@NW2500			N		N // Dark Wood
-NW2510			NW2510		NW2510			4			10		1025	1105		@NW2510			N		N // Dark Wood (Bis)
-NW2400			NW2400		NW2400			4			11		 755	1070		@NW2400			N		N // Farms
-NW2900			NW2900		NW2900			2			12		 890	1035		@NW2900			N		N // Heart of the Forest
-NW2300			NW2300		NW2300			2			7		 720	 990		@NW2300			N		N // South Road
-NW2800			NW2800		NW2800			2			6		 950	 880		@NW2800			N		N // Druids Grove
-NW2100			NW2100		NW2100			2			15		 750	 815		@NW2100			N		N // North Road
-NW2000			NW2000		NW2000			0			9		 667	 892		@NW2000			    N		N // Port Llast
-NW2700			NW2700		NW2700			2			13		 860	 845		@NW2700			N		N // East Road
-NW2200			NW2200		NW2200			2			8		 710	 730		@NW2200			N		N // Green Griffon
-NW1033			NW1033		NW1033			0			19		 880	 745		@NW1033			N		N // Helm Hold
-NW2E31			NW2E31		NW2E31			0			4		 236	 882		@NW2E31			N		N // Docks of Luskan
-NW2E00			NW2E00		NW2E00			0			3		 267	 785		N			    N		N // Luskan
-NW2E55			NW2E55		NW2E55			0			14		 217	 753		@NW2E55			N		N // Host Tower
-NW3000			NW3000		NW3000			4			2		1005	 525		@NW3000			    N		N // Beorunna's Well
-NW3100			NW3100		NW3100			6			1		1118	 501		@NW3100			N		N // Ford Ilkard
-NW3300			NW3300		NW3300			6			0		1346	 503		@NW3300			N		N // Ruins
-NW3200			NW3200		NW3200			6			13		1250	 414		@NW3200			N		N // Elk Tribe Keep
-NW3400			NW3400		NW3400			6			16		1123	 283		@NW3400			    N		N // Coldwood
-NW3500			NW3500		NW3500			6			18		1600	  46		@NW3500			    N		N // Moonwood
+NW4000			NW4000		NW4000			0			5		 450	1105		@NW4000			N		N // Suburbs (Nevewinter)
+NW1200			NW1200		NW1200			0			22		 325	1070		@NW1200			N		N // Beggar's Nest (Nevewinter)
+NW1400			NW1400		NW1400			0			24		 505	1050		@NW1400			N		N // Blacklake (Nevewinter)
+NW1000			NW1000		NW1000			0			20		 410	1040		@NW1000			N		N // Core (Nevewinter)
+NW1100			NW1100		NW1100			0			21		 290	965		@NW1100			N		N // Docks (Nevewinter)
+NW1300			NW1300		NW1300			0			23		 405	955		@NW1300			N		N // Peninsula (Nevewinter)
+NW2600			NW2600		NW2600			0			17		880	1080		@NW2600			N		N // Charwood
+NW2601			NW2601		NW2601			0			17		880	1080		@NW2601			N		N // Charwood (Bis)
+NW2500			NW2500		NW2500			0			10		810	1020		@NW2500			N		N // Dark Wood
+NW2510			NW2510		NW2510			4			10		810	1020		@NW2510			N		N // Dark Wood (Bis)
+NW2400			NW2400		NW2400			4			11		 720	960		@NW2400			N		N // Farms
+NW2900			NW2900		NW2900			2			12		 890	895		@NW2900			N		N // Heart of the Forest
+NW2300			NW2300		NW2300			2			7		 750	 800		@NW2300			N		N // South Road
+NW2800			NW2800		NW2800			2			6		 880	 810		@NW2800			N		N // Druids Grove
+NW2100			NW2100		NW2100			2			15		 760	 700		@NW2100			N		N // North Road
+NW2000			NW2000		NW2000			0			9		 670	 700		@NW2000			    N		N // Port Llast
+NW2700			NW2700		NW2700			2			13		 860	 705		@NW2700			N		N // East Road
+NW2200			NW2200		NW2200			2			8		 660	 580		@NW2200			N		N // Green Griffon
+NW1033			NW1033		NW1033			0			19		 960	 1040		@NW1033			N		N // Helm Hold
+NW2E31			NW2E31		NW2E31			0			4		 236	 742		@NW2E31			N		N // Docks of Luskan
+NW2E00			NW2E00		NW2E00			0			3		 267	 645		N			    N		N // Luskan
+NW2E55			NW2E55		NW2E55			0			14		 217	 613		@NW2E55			N		N // Host Tower
+NW3000			NW3000		NW3000			4			2		970	 310		@NW3000			    N		N // Beorunna's Well
+NW3100			NW3100		NW3100			6			1		1070	 320		@NW3100			N		N // Ford Ilkard
+NW3300			NW3300		NW3300			6			0		1346	 363		@NW3300			N		N // Ruins
+NW3200			NW3200		NW3200			6			13		1250	 274		@NW3200			N		N // Elk Tribe Keep
+NW3400			NW3400		NW3400			6			16		1060	 125		@NW3400			    N		N // Coldwood
+NW3500			NW3500		NW3500			6			18		1540	 40		@NW3500			    N		N // Moonwood
 
