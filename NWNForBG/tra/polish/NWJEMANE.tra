@@ -1,35 +1,35 @@
-@0 = ~Czego tu chcesz? Je¿eli chcesz spl¹drowaæ to miejsce, to mogê co najwy¿ej za³amaæ rêce, ale nic poza tym.~
-@1 = ~Walczy³<e/a>m z nieumar³ymi. Potrzebujesz pomocy?~
-@2 = ~Mo¿e w³aœnie po to, ale przedtem zabijê wszystkich nieumar³ych.~
-@3 = ~Podziêkuj swojej szczêœliwej gwieŸdzie, ¿e nie jestem jakimœ zombie.~
-@4 = ~Przyda³aby siê jakaœ pomoc. Prawdopodobnie za godzinê bêdê ju¿ martwy. Chyba... chyba coœ wiem o tych nieumar³ych.~
+@0 = ~Czego tu chcesz? JeÅ¼eli chcesz splÄ…drowaÄ‡ to miejsce, to mogÄ™ co najwyÅ¼ej zaÅ‚amaÄ‡ rÄ™ce, ale nic poza tym.~
+@1 = ~WalczyÅ‚<e/a>m z nieumarÅ‚ymi. Potrzebujesz pomocy?~
+@2 = ~MoÅ¼e wÅ‚aÅ›nie po to, ale przedtem zabijÄ™ wszystkich nieumarÅ‚ych.~
+@3 = ~PodziÄ™kuj swojej szczÄ™Å›liwej gwieÅºdzie, Å¼e nie jestem jakimÅ› zombie.~
+@4 = ~PrzydaÅ‚aby siÄ™ jakaÅ› pomoc. Prawdopodobnie za godzinÄ™ bÄ™dÄ™ juÅ¼ martwy. Chyba... chyba coÅ› wiem o tych nieumarÅ‚ych.~
 @5 = ~Dlaczego? Co takiego wiesz?~
 @6 = ~Nie mam teraz czasu.~
-@7 = ~Tak? Skorzysta³bym z twojej pomocy, jeœli lubisz zabijaæ. S¹dzê, ¿e wiem coœ na temat tych nieumar³ych.~
-@8 = ~Myœlê, ¿e mog³o byæ gorzej. W³aœnie zmagam siê z czymœ gorszym od ciebie. Wydaje mi siê, ¿e wiem coœ o tych nieumar³ych.~
-@9 = ~Mój brat od jakiegoœ czasu zachowuje siê... œmiesznie. Chodzi do dziwnego domu na pó³noc st¹d, do którego nieumarli nigdy nie zagl¹daj¹. On ju¿ nie jest sob¹... myœlê, ¿e zaw³adnêli jego umys³em. Jest tam jakaœ grupa... sekta... a brat wspomina³ coœ o jakiejœ... istocie. Oprócz tego nic nie wiem. To wszystko wydarzy³o siê tak szybko... dok³adnie wtedy, gdy zaczê³y pojawiaæ siê zombie.~ 
-@10 = ~Chcê dowiedzieæ siê czegoœ o tym dziwnym domu.~
-@11 = ~Chcê dowiedzieæ siê czegoœ o twoim bracie.~
-@12 = ~Mogê tam zajrzeæ. A co ty zamierzasz zrobiæ?~ 
-@13 = ~W porz¹dku... w takim razie zostaw mnie tu samego. Choæ sam za wiele nie wskóram.~
+@7 = ~Tak? SkorzystaÅ‚bym z twojej pomocy, jeÅ›li lubisz zabijaÄ‡. SÄ…dzÄ™, Å¼e wiem coÅ› na temat tych nieumarÅ‚ych.~
+@8 = ~MyÅ›lÄ™, Å¼e mogÅ‚o byÄ‡ gorzej. WÅ‚aÅ›nie zmagam siÄ™ z czymÅ› gorszym od ciebie. Wydaje mi siÄ™, Å¼e wiem coÅ› o tych nieumarÅ‚ych.~
+@9 = ~MÃ³j brat od jakiegoÅ› czasu zachowuje siÄ™... Å›miesznie. Chodzi do dziwnego domu na pÃ³Å‚noc stÄ…d, do ktÃ³rego nieumarli nigdy nie zaglÄ…dajÄ…. On juÅ¼ nie jest sobÄ…... myÅ›lÄ™, Å¼e zawÅ‚adnÄ™li jego umysÅ‚em. Jest tam jakaÅ› grupa... sekta... a brat wspominaÅ‚ coÅ› o jakiejÅ›... istocie. OprÃ³cz tego nic nie wiem. To wszystko wydarzyÅ‚o siÄ™ tak szybko... dokÅ‚adnie wtedy, gdy zaczÄ™Å‚y pojawiaÄ‡ siÄ™ zombie.~ 
+@10 = ~ChcÄ™ dowiedzieÄ‡ siÄ™ czegoÅ› o tym dziwnym domu.~
+@11 = ~ChcÄ™ dowiedzieÄ‡ siÄ™ czegoÅ› o twoim bracie.~
+@12 = ~MogÄ™ tam zajrzeÄ‡. A co ty zamierzasz zrobiÄ‡?~ 
+@13 = ~W porzÄ…dku... w takim razie zostaw mnie tu samego. ChoÄ‡ sam za wiele nie wskÃ³ram.~
 @14 = ~Powiem ci to, co wiem.~
-@15 = ~Nie wiesz, kto mieszka w tym domu, o którym wspomnia³eœ?~
-@16 = ~Mówisz, ¿e nieumarli nie atakuj¹ tego domu?~
-@17 = ~Myœlê, ¿e tak. Co chcesz wiedzieæ?~
-@18 = ~Jak siê nazywa? Czym siê zajmuje?~
-@19 = ~W kryjówce sekty znalaz³<e/a>m ten pierœcieñ. Nale¿a³ do niego?~
-@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ /*Nie... nie wiem. Chcia³bym pomóc go znaleŸæ, ale nie wiem, czy mi siê uda. Potrzebujê leczenia. Ja potrzebowaæ pomoc. Zajmê siê tym.*/
-@21 = ~Nie mam pojêcia, ale wiem, ¿e zombie ich nie atakuj¹. Za to mój brat zachowuje siê coraz dziwniej. Nie wpuszczaj¹ tam te¿ obcych. Mój brat u¿ywa specjalnego klucza, by tam wejœæ, ale to magiczny przedmiot.~ 
-@22 = ~Czy mo¿esz mi go daæ?~
-@23 = ~Najdziwniejsze jest to, ¿e one chodz¹ wokó³ domu, ale nie atakuj¹ tych, którzy tam wchodz¹. Brat mówi³, ¿e ta istota zapewnia im ochronê. Naprawdê ju¿ nie wiem o czym on mówi, a w dodatku od kilku dni ju¿ go nie widzia³em.~ 
-@24 = ~Nazywa siê Torin. Przez jakiœ czas pobiera³ nauki w wie¿y magów w pobli¿u Waterdeep, ale nie wytrwa³ do koñca. By³ trochê zagubiony. Myœlê, ¿e szuka³ czegoœ, co szybciej przyniesie mu zyski. Nie mia³ za du¿o cierpliwoœci do ksi¹¿ek.~ 
-@25 = ~To nale¿y... To nale¿a³o do mojego brata. Zawsze go nosi³... on ju¿ nie ¿yje, jestem tego pewien. Dziêki. Nie mam prawie nic, co móg³bym ci daæ... zatrzymaj ten pierœcieñ. On nie przypomina mi ¿ycia mojego brata, ale jego œmieræ.~ 
+@15 = ~Nie wiesz, kto mieszka w tym domu, o ktÃ³rym wspomniaÅ‚eÅ›?~
+@16 = ~MÃ³wisz, Å¼e nieumarli nie atakujÄ… tego domu?~
+@17 = ~MyÅ›lÄ™, Å¼e tak. Co chcesz wiedzieÄ‡?~
+@18 = ~Jak siÄ™ nazywa? Czym siÄ™ zajmuje?~
+@19 = ~W kryjÃ³wce sekty znalazÅ‚<e/a>m ten pierÅ›cieÅ„. NaleÅ¼aÅ‚ do niego?~
+@20 = ~I... I don't know. I'd like to help find him, but I don't know if I could make it. I feel so helpless here. He needs my help. I know it.~ /*Nie... nie wiem. ChciaÅ‚bym pomÃ³c go znaleÅºÄ‡, ale nie wiem, czy mi siÄ™ uda. PotrzebujÄ™ leczenia. Ja potrzebowaÄ‡ pomoc. ZajmÄ™ siÄ™ tym.*/
+@21 = ~Nie mam pojÄ™cia, ale wiem, Å¼e zombie ich nie atakujÄ…. Za to mÃ³j brat zachowuje siÄ™ coraz dziwniej. Nie wpuszczajÄ… tam teÅ¼ obcych. MÃ³j brat uÅ¼ywa specjalnego klucza, by tam wejÅ›Ä‡, ale to magiczny przedmiot.~ 
+@22 = ~Czy moÅ¼esz mi go daÄ‡?~
+@23 = ~Najdziwniejsze jest to, Å¼e one chodzÄ… wokÃ³Å‚ domu, ale nie atakujÄ… tych, ktÃ³rzy tam wchodzÄ…. Brat mÃ³wiÅ‚, Å¼e ta istota zapewnia im ochronÄ™. NaprawdÄ™ juÅ¼ nie wiem o czym on mÃ³wi, a w dodatku od kilku dni juÅ¼ go nie widziaÅ‚em.~ 
+@24 = ~Nazywa siÄ™ Torin. Przez jakiÅ› czas pobieraÅ‚ nauki w wieÅ¼y magÃ³w w pobliÅ¼u Waterdeep, ale nie wytrwaÅ‚ do koÅ„ca. ByÅ‚ trochÄ™ zagubiony. MyÅ›lÄ™, Å¼e szukaÅ‚ czegoÅ›, co szybciej przyniesie mu zyski. Nie miaÅ‚ za duÅ¼o cierpliwoÅ›ci do ksiÄ…Å¼ek.~ 
+@25 = ~To naleÅ¼y... To naleÅ¼aÅ‚o do mojego brata. Zawsze go nosiÅ‚... on juÅ¼ nie Å¼yje, jestem tego pewien. DziÄ™ki. Nie mam prawie nic, co mÃ³gÅ‚bym ci daÄ‡... zatrzymaj ten pierÅ›cieÅ„. On nie przypomina mi Å¼ycia mojego brata, ale jego Å›mierÄ‡.~ 
 
-@27 = ~Mam ten przedmiot, dziêki któremu dostawa³ siê do kryjówki... ale to chyba nie jest wa¿ne. Zreszt¹ sam nie wiem. Kryjówka sekty jest na pó³noc st¹d. Je¿eli chcesz go odnaleŸæ, to zacznij od tamtego miejsca.~ 
+@27 = ~Mam ten przedmiot, dziÄ™ki ktÃ³remu dostawaÅ‚ siÄ™ do kryjÃ³wki... ale to chyba nie jest waÅ¼ne. ZresztÄ… sam nie wiem. KryjÃ³wka sekty jest na pÃ³Å‚noc stÄ…d. JeÅ¼eli chcesz go odnaleÅºÄ‡, to zacznij od tamtego miejsca.~ 
 
-@29 = ~Kryjówka sekty jest na pó³noc st¹d. Je¿eli chcesz go odnaleŸæ, to zacznij od tamtego miejsca.~ 
-@30 = ~Tak. Mam nadziejê, ¿e spróbujesz go odnaleŸæ. Martwiê siê o niego. Kryjówka sekty jest na pó³noc st¹d. Je¿eli chcesz go odnaleŸæ, to zacznij od tamtego miejsca.~
-@31 = ~Kogo ja widzê? To tobie odda³em ten magiczny klucz, prawda? Tak martwiê siê o brata, ¿e ju¿ wszystko mi siê miesza. Proszê, przeszukaj siedzibê sekty na pó³noc st¹d. ZnajdŸ mojego brata. Tak chcia³bym pomóc... nie zdajê siê na wiele, gdy sprawy przejmuj¹ niebezpieczny obrót. Wiem jednak, ¿e oni coœ tam knuj¹.~ 
+@29 = ~KryjÃ³wka sekty jest na pÃ³Å‚noc stÄ…d. JeÅ¼eli chcesz go odnaleÅºÄ‡, to zacznij od tamtego miejsca.~ 
+@30 = ~Tak. Mam nadziejÄ™, Å¼e sprÃ³bujesz go odnaleÅºÄ‡. MartwiÄ™ siÄ™ o niego. KryjÃ³wka sekty jest na pÃ³Å‚noc stÄ…d. JeÅ¼eli chcesz go odnaleÅºÄ‡, to zacznij od tamtego miejsca.~
+@31 = ~Kogo ja widzÄ™? To tobie oddaÅ‚em ten magiczny klucz, prawda? Tak martwiÄ™ siÄ™ o brata, Å¼e juÅ¼ wszystko mi siÄ™ miesza. ProszÄ™, przeszukaj siedzibÄ™ sekty na pÃ³Å‚noc stÄ…d. ZnajdÅº mojego brata. Tak chciaÅ‚bym pomÃ³c... nie zdajÄ™ siÄ™ na wiele, gdy sprawy przejmujÄ… niebezpieczny obrÃ³t. Wiem jednak, Å¼e oni coÅ› tam knujÄ….~ 
 @32 = ~My brother is dead... I don't know what to do...~ 
 
-/*On nie ¿yje... Nie wiem, co mam teraz zrobiæ...*/
+/*On nie Å¼yje... Nie wiem, co mam teraz zrobiÄ‡...*/

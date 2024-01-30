@@ -1,17 +1,17 @@
-@0 = ~Ainsi... *voici* le dernier groupe d'entrants, n'est-ce pas ? Très bien. Je me nomme Jarou, le Maître des Jeux. Permettez-moi de vous expliquer comment ça marche :~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Entrée des cryptes Si cette case est cochée, l'éditeur vous demandera le texte de la réplique dès que vous aurez ajouté une entrée texte. Vous dire tout quoi savoir, et plus perdre de temps. Si vous voulez que tout s'arrange, vous devez prendre les choses en main.*/
-@2 = ~Ni moi ni Mutamin ne pourrons être tenus responsables de votre mort ou de celle de vos compagnons. Vous entrez dans les souterrains à vos risques et périls.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Si quelqu'un est intéressé, qu'il vienne me donner la somme convenue pour être téléporté à l'intérieur des souterrains.*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*Oui, <LADYLORD> ? Etes-vous prêt à entrer dans le donjon ?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*Oui, je suis prêt. Voici vos 500 pièces d'or.*/
+@0 = ~Ainsi... *voici* le dernier groupe d'entrants, n'est-ce pas ? TrÃ¨s bien. Je me nomme Jarou, le MaÃ®tre des Jeux. Permettez-moi de vous expliquer comment Ã§a marche :~ [NWJAR050]
+@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*EntrÃ©e des cryptes Si cette case est cochÃ©e, l'Ã©diteur vous demandera le texte de la rÃ©plique dÃ¨s que vous aurez ajoutÃ© une entrÃ©e texte. Vous dire tout quoi savoir, et plus perdre de temps. Si vous voulez que tout s'arrange, vous devez prendre les choses en main.*/
+@2 = ~Ni moi ni Mutamin ne pourrons Ãªtre tenus responsables de votre mort ou de celle de vos compagnons. Vous entrez dans les souterrains Ã  vos risques et pÃ©rils.~ [NWJAR056]
+@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Si quelqu'un est intÃ©ressÃ©, qu'il vienne me donner la somme convenue pour Ãªtre tÃ©lÃ©portÃ© Ã  l'intÃ©rieur des souterrains.*/
+@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*Oui, <LADYLORD> ? Etes-vous prÃªt Ã  entrer dans le donjon ?*/
+@5 = ~Yes, I am. Here is your 1000 gold.~ /*Oui, je suis prÃªt. Voici vos 500 piÃ¨ces d'or.*/
 @6 = ~I'm not ready yet.~ /*Pas vraiment, non.*/
-@7 = ~Oui, mais les 500 pièces d'or sont-elles vraiment nécessaires ?~
+@7 = ~Oui, mais les 500 piÃ¨ces d'or sont-elles vraiment nÃ©cessaires ?~
 @8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-/*Excellent. Préparez-vous <LADYLORD> ! Et que la compétition commence !!*/
+/*Excellent. PrÃ©parez-vous <LADYLORD> ! Et que la compÃ©tition commence !!*/
 @10 = ~Comme vous voulez. Je reste ici si jamais vous changez d'avis.~
-@11 = ~Oui. Ce que donne chaque personne est ajouté à la somme totale qui sera remise à celui ou celle qui traversera le donjon. Comme tout le monde a autant de chances de réussir, il ne serait pas juste d'accorder une réduction à certains participants. Alors vous êtes prêt ?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Plus vite. Le dernier sceau a été rompu, les ruines d'Illusk vous sont ouvertes.*/
-@13 = ~Vous avez gagné la compétition. Félicitations ! Allez parler à Mutamin pour obtenir votre récompense !~ [NWJAR052]
-@14 = ~Quelqu'un a remporté la compétition. Revenez une autre fois, quand le donjon aura été rénové pour la suite !~ [NWJAR053]
+@11 = ~Oui. Ce que donne chaque personne est ajoutÃ© Ã  la somme totale qui sera remise Ã  celui ou celle qui traversera le donjon. Comme tout le monde a autant de chances de rÃ©ussir, il ne serait pas juste d'accorder une rÃ©duction Ã  certains participants. Alors vous Ãªtes prÃªt ?~ 
+@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Plus vite. Le dernier sceau a Ã©tÃ© rompu, les ruines d'Illusk vous sont ouvertes.*/
+@13 = ~Vous avez gagnÃ© la compÃ©tition. FÃ©licitations ! Allez parler Ã  Mutamin pour obtenir votre rÃ©compense !~ [NWJAR052]
+@14 = ~Quelqu'un a remportÃ© la compÃ©tition. Revenez une autre fois, quand le donjon aura Ã©tÃ© rÃ©novÃ© pour la suite !~ [NWJAR053]
 @15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*Quelqu'un a remporté la compétition. Revenez une autre fois, quand le donjon aura été rénové pour la suite !*/
+/*Quelqu'un a remportÃ© la compÃ©tition. Revenez une autre fois, quand le donjon aura Ã©tÃ© rÃ©novÃ© pour la suite !*/

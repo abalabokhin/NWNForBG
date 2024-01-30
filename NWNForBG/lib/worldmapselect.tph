@@ -6,9 +6,10 @@ DEFINE_ACTION_FUNCTION WORLDMAP_SELECT
 BEGIN
   //BP-Worldmap
   ACTION_MATCH "%worldmap_var%" WITH bp_worldmap BEGIN
+    PRINT ~Adding icons on BP Worldmap (don't forget to install it later!)~
     ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
       COPY ~Worldmap/map_mods_areas.tbl~ ~Worldmap~ APPEND_FILE ~NWNForBG/Worldmap/areas.tbl~
-      COPY ~Worldmap/map_mods_trans.tra~ ~Worldmap~ APPEND_FILE ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~
+      COPY ~Worldmap/map_mods_trans.tra~ ~Worldmap~ APPEND_FILE ~%tra_loc%/%LANGUAGE%/worldmap.tra~
       ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links.tbl~ THEN BEGIN
         COPY ~Worldmap/map_mods_links.tbl~ ~Worldmap~ APPEND_FILE ~NWNForBG/Worldmap/links.tbl~
       END ELSE BEGIN
@@ -18,32 +19,40 @@ BEGIN
       MKDIR ~Worldmap~
       COPY ~NWNForBG/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
       COPY ~NWNForBG/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
-      COPY ~NWNForBG/tra/autotra/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+      COPY ~%tra_loc%/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
     END
   END
+
   //New Worldmap for NWN Locations
   nwn_worldmap BEGIN
-
     //Assign variables
     ACTION_IF GAME_IS ~bg2 tob bgt~ THEN BEGIN
       OUTER_SPRINT worldmap_wmp_name worldmap
-      OUTER_SPRINT worldmap_res_loc "%MOD_FOLDER%/worldmap/og/"
-      OUTER_SPRINT worldmap_append_bam_loc "%MOD_FOLDER%/tra/%LANGUAGE%/worldmap"
+      OUTER_SPRINT worldmap_res_loc "%MOD_FOLDER%/worldmap/og"
+      ACTION_IF FILE_EXISTS EVAL ~%MOD_FOLDER%/tra/%LANGUAGE%/worldmap/nwnicon1.bam~ THEN BEGIN
+        OUTER_SPRINT worldmap_bam_append_loc ~%MOD_FOLDER%/tra/%LANGUAGE%/worldmap~
+      END ELSE BEGIN
+        OUTER_SPRINT worldmap_bam_append_loc ~%MOD_FOLDER%/tra/english/worldmap~
+      END
     END
     ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
       OUTER_SPRINT worldmap_wmp_name nwnworld
-      OUTER_SPRINT worldmap_res_loc "%MOD_FOLDER%/worldmap/ee/"
-      OUTER_SPRINT worldmap_append_bam_loc "%MOD_FOLDER%/tra/%LANGUAGE%/worldmap"
+      OUTER_SPRINT worldmap_res_loc "%MOD_FOLDER%/worldmap/ee"
+      ACTION_IF FILE_EXISTS EVAL ~%MOD_FOLDER%/tra/%LANGUAGE%/worldmap/nwnicon2.bam~ THEN BEGIN
+        OUTER_SPRINT worldmap_bam_append_loc ~%MOD_FOLDER%/tra/%LANGUAGE%/worldmap~
+      END ELSE BEGIN
+        OUTER_SPRINT worldmap_bam_append_loc ~%MOD_FOLDER%/tra/english/worldmap~
+      END
     END
-
-  ACTION_IF FILE_EXISTS EVAL %worldmap_append_bam% THEN BEGIN
-    OUTER_SPRINT map_language ~%LANGUAGE%~
-  END ELSE BEGIN
-    OUTER_SPRINT map_language english
-  END
 
   //Copy WMAP file
   COPY ~%MOD_FOLDER%/worldmap/nwnworld.wmp~ ~override/%worldmap_wmp_name%.wmp~
+
+  //Copy map resources to the workspace folder
+  COPY ~%worldmap_res_loc%~ ~%workspace%/worldmap~
+       ~%worldmap_res_loc%/icons~ ~%workspace%/worldmap/icons~
+       ~%worldmap_res_loc%/map~ ~%workspace%/worldmap/map~
+       ~%worldmap_bam_append_loc%~ ~%workspace%/worldmap/bam_append~
 
   //Making dummy files to bypass ADD_MAP_ICONS script protection
   COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo01.are~
@@ -51,8 +60,9 @@ BEGIN
 
   ACTION_IF GAME_IS ~bg2 tob bgt~ THEN BEGIN
     //Copy resources
-    COPY ~%worldmap_res_loc%/icons/nwnicons.bam~ override
-    COPY ~%worldmap_res_loc%/map/nwnworld.mos~ override
+    PRINT ~Replacing default worldmap with the %worldmap_wmp_name%~
+    COPY ~%workspace%/worldmap/icons/nwnicons.bam~ override
+    COPY ~%workspace%/worldmap/map/nwnworld.mos~ override
 
     //Add language specific bams
     INCLUDE ~%MOD_FOLDER%/lib/ADD_MAP_ICONS.tpa~
@@ -60,13 +70,13 @@ BEGIN
       INT_VAR
         icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
       STR_VAR
-        path_to_icons = EVAL ~%worldmap_append_bam_loc%/nwnicon1.bam~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
+        path_to_icons = EVAL ~%workspace%/worldmap/bam_append/nwnicon1.bam~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
         worldmap = EVAL ~%worldmap_wmp_name%~ // which .wmp file should these icons be associated with, e.g. ~worldm25~
       RET
         new_icon_index // sequence number of your first icon in the new .bam - use this when you patch the worldmap
     END
 
-    COPY ~%worldmap_res_loc%/areas.tbl~ ~%worldmap_res_loc%~
+    COPY ~%workspace%/worldmap/areas.tbl~ ~%workspace%/worldmap~
       FOR (cnt=0;cnt<2;cnt=cnt+1) BEGIN
         SET BAM_ANIM = new_icon_index + cnt
         REPLACE_TEXTUALLY ~new#%cnt%~ ~%BAM_ANIM%~
@@ -74,8 +84,9 @@ BEGIN
   END
 
   ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+    PRINT ~Installing new worldmap: %worldmap_wmp_name%~
     //BAMv2 worldmap icons
-    COPY ~%worldmap_res_loc%/icons/nwnicons.bam~ override
+    COPY ~%workspace%/worldmap/icons/nwnicons.bam~ override
       LPF UPDATE_PVRZ_INDICES
         RET
           original_base_index
@@ -83,7 +94,7 @@ BEGIN
       END
     PATCH_PRINT ~original_base_index: %original_base_index%; new_base_index: %new_base_index%~
     ACTION_IF original_base_index >= 0 AND new_base_index >= 0 BEGIN
-      ACTION_BASH_FOR ~%worldmap_res_loc%/icons~ ~.+\.pvrz~ BEGIN
+      ACTION_BASH_FOR ~%workspace%/worldmap/icons~ ~.+\.pvrz~ BEGIN
         LAF INSTALL_PVRZ
           INT_VAR
             original_base_index
@@ -95,7 +106,7 @@ BEGIN
     END ELSE FAIL ~Couldn't install PVRZ files~
 
     //BAMv2 worldmap canvas
-    COPY ~%worldmap_res_loc%/map/nwnworld.mos~ override
+    COPY ~%workspace%/worldmap/map/nwnworld.mos~ override
       LPF UPDATE_PVRZ_INDICES
         RET
           original_base_index
@@ -103,7 +114,7 @@ BEGIN
       END
     PATCH_PRINT ~original_base_index: %original_base_index%; new_base_index: %new_base_index%~
     ACTION_IF original_base_index >= 0 AND new_base_index >= 0 BEGIN
-      ACTION_BASH_FOR ~%worldmap_res_loc%/map~ ~.+\.pvrz~ BEGIN
+      ACTION_BASH_FOR ~%workspace%/worldmap/map~ ~.+\.pvrz~ BEGIN
         LAF INSTALL_PVRZ
           INT_VAR
             original_base_index
@@ -120,14 +131,14 @@ BEGIN
       INT_VAR
         icon_index = 0 // sequence (cycle) number of your first icon in your .bam, indexed from 0
       STR_VAR
-        path_to_icons = EVAL ~%worldmap_append_bam_loc%/nwnicon2.bam~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
-        patch_to_pvrz = EVAL ~%worldmap_append_bam_loc%~ // directory patch to .pvrz files associated with your merging .bam icon, e.g. ~mymod/pvrz~
+        path_to_icons = EVAL ~%workspace%/worldmap/bam_append/nwnicon2.bam~ // full path to the .bam file containing your icons, e.g. ~mymod/bam/mapicons.bam~
+        patch_to_pvrz = EVAL ~%workspace%/worldmap/bam_append~ // directory patch to .pvrz files associated with your merging .bam icon, e.g. ~mymod/pvrz~
         worldmap = EVAL ~%worldmap_wmp_name%~ // which .wmp file should these icons be associated with, e.g. ~worldm25~
       RET
         new_icon_index // sequence number of your first icon in the new .bam - use this when you patch the worldmap
     END
 
-    COPY ~%worldmap_res_loc%/areas.tbl~ ~%worldmap_res_loc%~
+    COPY ~%workspace%/worldmap/areas.tbl~ ~%workspace%/worldmap~
       FOR (cnt=0;cnt<2;cnt=cnt+1) BEGIN
         SET BAM_ANIM = new_icon_index + cnt
         REPLACE_TEXTUALLY ~new#%cnt%~ ~%BAM_ANIM%~
@@ -141,9 +152,9 @@ BEGIN
       verbose = 1
       inclSv = 0
     STR_VAR
-      path_to_areas = EVAL ~%worldmap_res_loc%/areas.tbl~
-      path_to_links = EVAL ~%worldmap_res_loc%/links.tbl~
-      path_to_trans = EVAL ~%MOD_FOLDER%/tra/autotra/%LANGUAGE%/worldmap.tra~
+      path_to_areas = EVAL ~%workspace%/worldmap/areas.tbl~
+      path_to_links = EVAL ~%workspace%/worldmap/links.tbl~
+      path_to_trans = EVAL ~%tra_loc%/%LANGUAGE%/worldmap.tra~
       worldmap = EVAL ~%worldmap_wmp_name%~
   END
 
