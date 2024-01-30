@@ -6165,5 +6165,5 @@ COPY_EXISTING ~NW4104T.BCS~ override
 
 COPY_EXISTING ~NWN_BG.BCS~ override
   DECOMPILE_AND_PATCH BEGIN
-    REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\","GLOBAL\",3)~ ~SetGlobal("NWN_Quest_Status","GLOBAL",3) SetWorldmap("worldmap")~
+    REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",3)~ ~SetGlobal("NWN_Quest_Status","GLOBAL",3) SetWorldmap("worldmap")~
   END
