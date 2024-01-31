@@ -104,7 +104,7 @@ Version History
 ---------------
 In development:
 
-- Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Some weidu code is taken from BP-BGT-Worldmap mod.
+- Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Weidu code to place icons on a map is taken from BP-BGT-Worldmap mod.
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
 - Converted TIS and WED files to remove black lines next to doors and fireplaces
 - Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros
