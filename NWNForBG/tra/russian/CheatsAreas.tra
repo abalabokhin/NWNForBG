@@ -1,11 +1,11 @@
 @999999  = ~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},
 	{"  ", "	NEVERWINTER NIGHT	"},	
-    {"NW1000", " (NWN)    Core"},
-    {"NW1400", " (NWN)    Blacklake"},
-    {"NW1300", " (NWN)    Peninsula"},
-    {"NW1100", " (NWN)    Docks"},
-    {"NW1200", " (NWN)    Beggar's Nest"},
-    {"NW4000", " (NWN)    Suburbs"},
+    {"NW1000", " (NWN)    Neverwinter Core"},
+    {"NW1400", " (NWN)    Neverwinter Blacklake"},
+    {"NW1300", " (NWN)    Neverwinter Peninsula"},
+    {"NW1100", " (NWN)    Neverwinter Docks"},
+    {"NW1200", " (NWN)    Neverwinter Beggar's Nest"},
+    {"NW4000", " (NWN)    Neverwinter Suburbs"},
     {"NW2000", "        PORT LLAST"},
     {"NW1033", " (NWN)    Helm Hold"},
     {"NW2100", " (NWN)    North Road"},
@@ -20,7 +20,7 @@
     {"NW2601", " (NWN)    Charwood (Bis)"},
     {"NW2E00", "        LUSKAN"},
     {"NW2200", " (NWN)    Green Grifon"},
-    {"NW2E31", " (NWN)    Docks"},
+    {"NW2E31", " (NWN)    Luskan Docks"},
     {"NW2E55", " (NWN)    Host Tower"},
     {"NW3000", "        BEORUNNA'S WELL"},
     {"NW3100", " (NWN)    Ford Ilkard"},
@@ -28,4 +28,4 @@
     {"NW3400", " (NWN)    Lurkwood"},
     {"NW3300", " (NWN)    Ruins"},
     {"NW3500", " (NWN)    The Moonwood"},~
-	
+
