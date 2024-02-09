@@ -1,5 +1,28 @@
 TODO:
 
+After bp-bgt-update, также поперемещать все иконки, чтобы было более похоже на одиночную карту:
+*. move Beorunna well and other locations around it to be more cononic after new map release
+*. update icon for port Llast to be as on the map (Slums district).
+*. Move Helm Hold to be at the proper position after bp-bgt-worldmap is released.
+loc         was on map        new on map
+
+NW3000      1205 1025         1961 547
+NW3100      1318 1001         2054 556
+NW3400      2500 458          2130 436
+NW3300      2441 685          2108 687
+NW3200      1450 914          2152 602
+
+NW2100      950 1315          959 1362
+NW2400      955 1570          987 1600
+NW2500(10)  1225 1605         1057 1700
+NW2600(01)  1210 1695         1170 1725
+NW2900      1090 1535         1160 1475
+NW1033      1080 1245         1305 1762
+
+NW2000 - change icon to 21  867 1392    879 1401
++ change icon for NW2000 on the dedicated map
+
+
 *. NWNThem и NWNThm одинаковые музыки - убрать одну из них (подождать типуна, чтобы он добавил НВН отдельной
 компанией - там одна из этих музык используется и убрать другую)
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
@@ -8,11 +31,6 @@ TODO:
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
 *. Make NWN to be a standalone compaign
-
-After bp-bgt-update, также поперемещать все иконки, чтобы было более похоже на одиночную карту:
-*. move Beorunna well and other locations around it to be more cononic after new map release
-*. update icon for port Llast to be as on the map (Slums district).
-*. Move Helm Hold to be at the proper position after bp-bgt-worldmap is released.
 
 Новый контент:
 *. make Klauth more powerful (abilities, script) from Kyros
