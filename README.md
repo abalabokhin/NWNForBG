@@ -73,7 +73,7 @@ BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Ba
 
 Translator Notes:
 ----------------
-Russian and English languages are pretty much done, but any corrections are always welcome.
+Russian, English and Chinese languages are pretty much done, but any corrections are always welcome.
 Other languages are mixed English and other language lines (eg French and English). For every line on English,
 the "closest" line(s) in the language (eg French) from the original NWN texts is shown in comments. Often,
 the original NWN lines were changed in English and should be change in the other language respectively. For
@@ -88,12 +88,14 @@ What else needs to be done:
 3. Verify with the original NWN texts if necessary, they are located in eg "NWNForBG/reference/bash\_scripts/entries\_fr.txt.tra".
 4. Fix lines @1 and @2 in setup.tra file to match "Usable by" lines in items description, so they can be
    removed automatically for EE games (see details in NWNForBG/tra/TranslatorNoteItemDescription).
-5. All the items in setup.tra should be properly translated (for some of them there is a desriptions in original NWN texts,
+5. All the items in install.tra should be properly translated (for some of them there is a desriptions in original NWN texts,
    but not for many).
-6. In setup.tra file, there are many names that are combined First and Last name from the original NWN texts.
-7. In setup.tra file, there are many journal entries, add empty line after the title (see how it is done in
+6. In install.tra file, there are many names that are combined First and Last name from the original NWN texts.
+7. In install.tra file, there are many journal entries, add empty line after the title (see how it is done in
    English).
-8. If you have any questions, feel free to ask on the support forums.
+8. If there is a difference for BG2EE/EET line in install.tra file (to compare woth oBG/BGT lines) that cannot be solved by removing 
+   "Usable by", add such lines in install-ee.tra file.
+9. If you have any questions, feel free to ask on the support forums.
 
 Known Bugs:
 -----------
