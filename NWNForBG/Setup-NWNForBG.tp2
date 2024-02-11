@@ -35,6 +35,8 @@ ALWAYS
         default_language="english" // set this to the language you wrote the mod in
     RET out_path END
 
+  OUTER_SPRINT tra_loc "%out_path%"
+
   LOAD_TRA ~%tra_loc%/%LANGUAGE%/install.tra~
   ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     LOAD_TRA ~%tra_loc%/%LANGUAGE%/install-ee.tra~
