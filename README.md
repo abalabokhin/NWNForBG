@@ -37,7 +37,7 @@ Languages
 ---------
 
 * Russian (finished), based on Russian NWN translation from 1C
-* English (finished), partially taken from the original NWN texts with script (there are still might be some errors), partially machine translated and proof-read by paladn84 and megrimlock
+* English (finished), partially taken from the original NWN texts with script (there are still might be some errors), partially machine translated and proof-read by paladin84 and megrimlock
 * French, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * German, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Italian, partially taken from the original NWN texts with script, partially English (needs checking/translating)
