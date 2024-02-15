@@ -1,5 +1,40 @@
 TODO:
 
+Bugs for github and beamdog forum:
+In the peninsula, or what was the name ... with the prisoners,
+Master Johns moves back to his default position after being escorted.
+
+First, I escorted him to the entrance, but when I leave and go back,
+he is back in his usual spawning place. If he is no longer necessary
+for the game, AFTER having been escorted to the entrance, perhaps
+remove him; or change his spawning place to be near the entrance
+afterwards. Right now this is confusing that he was escorted, but
+then returns to his default spawning place, so I think this is a
+small bug.
+
+ 2) I have one scene that freezes the game, in the brothel. There
+are two female NPCs I seem to be able to interact; one of them
+gives a task to find some guy in the Docks. This part works. The
+other, though, after asking for some ... action, leads to a freezing
+scene and the game stalls and does not progress. This is interesting
+because the other scene with ... action, proceeds (and then I get
+that quest to find the guy in the Docks), so I think something must
+be wrong with that mini-scene; it's the left-bottom female NPC.
+
+3) I had one house that was half-black (its top-left area was totally
+black), that is, some sprite or however the game engine renders things,
+was not shown. I think it was the house in the prison district, top-right.
+
+Oddly enough I don't recall this being an issue in the first run-through I
+tried, but I installed other mods, so who knows what the difference was.
+Either way that house is the only house I found so far that does not show
+the layer correctly; the other estates are mostly fine. I also like the
+NN graphics - they are a bit better than the default BG2 for the
+most part, IMO. (Though I wonder if NN was originally just confined
+to a single city? Being able to explore different cities is, IMO,
+what makes computer RPGs more interesting.)
+
+
 *. Make NWN to be a standalone compaign
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
