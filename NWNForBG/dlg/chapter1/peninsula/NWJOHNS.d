@@ -106,7 +106,7 @@ END
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
 ~  Global("Follow","LOCALS",2)~ THEN BEGIN 13 // from:
   SAY @25
-  IF ~~ THEN DO ~SetGlobal("JohnsQuest","MYAREA",1)SetGlobal("Follow","LOCALS",3)AddexperienceParty(12000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("JohnsQuest","MYAREA",1)SetGlobal("Follow","LOCALS",3)AddexperienceParty(12000)MoveToPointNoInterrupt([275.2076])~ EXIT
 END
 
 // ----------------------------------------------------------------------
