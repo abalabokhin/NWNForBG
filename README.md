@@ -53,7 +53,7 @@ The mod repeats, with some minor modifications, the plot of Neverwinter Nights g
 Compatibility
 -------------
 
-Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. However, some of the new spells might have copnflicts with some Talents of Faerûn mod components as for Beta 3 version.
+Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. Also, some of the new spells might have copnflicts with some Talents of Faerûn mod components as for Beta 3 version.
 
 Installation
 -------------
@@ -96,6 +96,7 @@ What else needs to be done:
 8. If there is a difference for BG2EE/EET line in install.tra file (to compare woth oBG/BGT lines) that cannot be solved by removing 
    "Usable by", add such lines in install-ee.tra file.
 9. If you have any questions, feel free to ask on the support forums.
+10. Try to fix all low intellect dialog options, they are in the texts by mistake. In English they look like "me go".
 
 Known Bugs:
 -----------
@@ -113,6 +114,7 @@ In development:
 - Added ini file for Project Infinity
 - Added few map notes in Chapter 1, where it is difficult to find an area exit
 - Fixed some small bugs thanks to tipun
+- Fixed some English texts thanks to Daulmakan
 
 0.95 (1/12/24)
 
