@@ -141,12 +141,12 @@ END
 
 IF ~~ THEN BEGIN 21 // from: 18.3
   SAY @44
-  IF ~~ THEN DO ~IncrementGlobal("KnowDarktong","LOCALS",1)SetGlobal("Luscan","LOCALS",1)AddXPObject(Player1,5000)~ EXIT
+  IF ~~ THEN DO ~IncrementGlobal("KnowDarktong","LOCALS",1)SetGlobal("Luscan","LOCALS",1)AddXPObject(Player1,-5000)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22 // from: 18.4
   SAY @45
-  IF ~~ THEN DO ~IncrementGlobal("KnowDarktong","LOCALS",1)SetGlobal("Caves","LOCALS",1)AddXPObject(Player1,5000)~ EXIT
+  IF ~~ THEN DO ~IncrementGlobal("KnowDarktong","LOCALS",1)SetGlobal("Caves","LOCALS",1)AddXPObject(Player1,-5000)~ EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 9 even though they appear after this state */
