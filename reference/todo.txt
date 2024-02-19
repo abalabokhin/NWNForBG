@@ -1,7 +1,10 @@
 TODO:
 
+*. Check compatibility with these mods:
+Minor heads up, some mods seem to be tripped by this mod, at least Trap Overhaul and Jtweaks's random spawn points components that I could see. Easily avoided by installing them before NWNforBG2 of course, but just in case someone else find this problem.
+The conflict seems to be with two worldmap files, NWINFO01.ARE and NWINFO02.ARE. The comments in the code mention being dummy files to work with the game's map system, so I'm guessing they have non standard formatting or data that might be catching those other mods unaware.
 *. Fix fixes from Daulmakan for other languages.
-*. Fix readme to mantion blocking BG events
+*. Fix readme to mention blocking BG events
 *. Fix reported 'bout things.
 *. Check if Daulmakan icon is better and probably use it
 *. Add NWN NPCs to level1 project (see g3 post)
@@ -11,11 +14,11 @@ TODO:
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
+
+Новый контент:
 *. Another suggestion: everyone having portraits is business as usual per the original NWN, but is somewhat offputting when playing BG2. Maybe you could make them optional? Something like: "Install portraits component?
 A) Everyone
 B) Major NPCs only (Aribeth, Nasher, Gend, etc)." 
-
-Новый контент:
 *. add proper low-intellectual text options
 *. make Klauth more powerful (abilities, script) from Kyros
 *. add more music, eg for Aribeth battle from Kyros
