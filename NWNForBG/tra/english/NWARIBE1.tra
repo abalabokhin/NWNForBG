@@ -11,10 +11,10 @@
 @10 = ~You will answer only to me, <CHARNAME>, and I will give you free reign in your tasks.~ [NWARI120]
 @11 = ~I promise your reward for this task will be well worth your efforts. There are many rumors about the plague, but if you are to aid me in this, it is important you know the truth about the Wailing Death.~ [NWARI121]
 @12 = ~Well done, <CHARNAME>! I knew you wouldn't let me down!~ [NWARI125]
-@13 = ~Explain about the Yuan-Ti in the Beggar's Nest.~
-@14 = ~Explain about the Intellect Devourer in the prison.~
-@15 = ~Explain about the Dryad in the Blacklake district.~
-@16 = ~Explain about the Cockatrice in the Docks district.~
+@13 = ~(Explain about the Yuan-Ti in the Beggar's Nest.)~
+@14 = ~(Explain about the Intellect Devourer in the prison.)~
+@15 = ~(Explain about the Dryad in the Blacklake district.)~
+@16 = ~(Explain about the Cockatrice in the Docks district.)~
 @17 = ~Our divine healers can do nothing to help those afflicted by the Wailing Death, and even our most powerful magic cannot raise those who succumb to the illness.~ [NWARI057]
 @18 = ~I heard of the trouble in the Beggar's Nest. This malevolent thing was behind it? As if the plague was not enough. <CHARNAME>, where others have found only failure you have discovered shining success. Neverwinter is in your debt. Battling the plague has drained the coffers of Neverwinter. I regret I cannot offer you more than 500 gold pieces for all you have accomplished.~ [NWARI126] 
 @19 = ~That was the reason we lost contact with those in the prison? As if the plague was not enough. <CHARNAME>, where others have found only failure you have discovered shining success. Neverwinter is in your debt. Battling the plague has drained the coffers of Neverwinter. I regret I cannot offer you more than 500 gold pieces for all you have accomplished.~ [NWARI127]
@@ -87,8 +87,8 @@
 @86 = ~Tell me about the yuan-ti.~
 @87 = ~Tell me about the intellect devourer.~
 @88 = ~Tell me about the dryad.~
-@89 = ~You gonna kill monsters for make cure?~
-@90 = ~Me not need nothing else 'bout Waterdeep monsters.~
+@89 = ~Are you going to kill the monsters to make the cure?~
+@90 = ~I have no more questions about the Waterdhavian creatures.~
 @91 = ~Perhaps that is what is so terrible about this affliction. There is no rhyme or reason to it, seemingly no way to guard against it and, until we have all the Waterdhavian creatures, no way to cure it. Is there something else I can help you with, <CHARNAME>?~ [NWARI096] 
 @92 = ~A cockatrice resembles a hybrid of chicken, lizard, and bat. They are repulsive animals that can petrify opponents. You must be extremely cautious when dealing with this beast.~ [NWARI102]
 @93 = ~The yuan-ti are a race of beings whose bloodlines are a mixture of human and snake. They can be any combination of snake and human characteristics. They are highly intelligent and many of the creatures practice magic. It is rumored that some even have the ability to alter their shape.~ [NWARI103] 
