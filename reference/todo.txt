@@ -4,7 +4,6 @@ TODO:
 Minor heads up, some mods seem to be tripped by this mod, at least Trap Overhaul and Jtweaks's random spawn points components that I could see. Easily avoided by installing them before NWNforBG2 of course, but just in case someone else find this problem.
 The conflict seems to be with two worldmap files, NWINFO01.ARE and NWINFO02.ARE. The comments in the code mention being dummy files to work with the game's map system, so I'm guessing they have non standard formatting or data that might be catching those other mods unaware.
 *. Fix reported 'bout things.
-*. Check if Daulmakan icon is better and probably use it
 *. Add NWN NPCs to level1 project (see g3 post)
 *. Make NWN to be a standalone compaign
 *. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
