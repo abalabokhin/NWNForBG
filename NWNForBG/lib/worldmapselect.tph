@@ -55,8 +55,8 @@ BEGIN
        ~%worldmap_bam_append_loc%~ ~%workspace%/worldmap/bam_append~
 
   //Making dummy files to bypass ADD_MAP_ICONS script protection
-  COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo01.are~
-  COPY_EXISTING ~sw1h01.itm~ ~override/nwinfo02.are~
+  COPY_EXISTING ~AR0011.ARE~ ~override/nwinfo01.are~
+  COPY_EXISTING ~AR0011.ARE~ ~override/nwinfo02.are~
 
   ACTION_IF GAME_IS ~bg2 tob bgt~ THEN BEGIN
     //Copy resources
