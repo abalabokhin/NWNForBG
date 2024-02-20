@@ -114,7 +114,8 @@ In development:
 - Added ini file for Project Infinity
 - Added few map notes in Chapter 1, where it is difficult to find an area exit
 - Fixed some small bugs thanks to tipun
-- Fixed some English texts and an item icon thanks to Daulmakan
+- Fixed some English texts thanks to Daulmakan
+- Updated some item icons thanks to Daulmakan
 
 0.95 (1/12/24)
 
