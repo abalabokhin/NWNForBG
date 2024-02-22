@@ -116,6 +116,7 @@ In development:
 - Fixed some small bugs thanks to tipun
 - Fixed some English texts thanks to Daulmakan
 - Updated some item icons thanks to Daulmakan
+- Added component to install the mod as a dedicated compaing. This component is coded by Tipun
 
 0.95 (1/12/24)
 

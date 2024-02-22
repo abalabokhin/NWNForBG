@@ -22,3 +22,6 @@ BCS/BAF with strings
     DisplayStringHeadOwner
     SetPlayerSound
     RemoveMapNote
+
+how to create git archive with changed files since some commit:
+git archive --output=changes.zip HEAD $(git diff --name-only SHA1 SHA2 --diff-filter=ACMRTUXB)
