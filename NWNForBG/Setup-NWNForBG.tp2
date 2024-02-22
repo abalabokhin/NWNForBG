@@ -6174,3 +6174,12 @@ COPY_EXISTING ~NWN_BG.BCS~ override
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY ~SetGlobal(\"NWN_Quest_Status\",\"GLOBAL\",3)~ ~SetGlobal("NWN_Quest_Status","GLOBAL",3) SetWorldmap("worldmap")~
   END
+
+//New component - install nwn as a dedicated compaing, BG2EE, EET only
+BEGIN ~Install NWN as a dedicated campaign~
+DESIGNATED 20
+LABEL ~NWN_WorldmapDedicatedCampaign~
+REQUIRE_COMPONENT ~NWNForBG/Setup-NWNForBG.tp2~ ~0~ ~Main component must be installed first~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This component is only available for EE versions~
+
+INCLUDE ~%MOD_FOLDER%/lib/_campaign.tph~

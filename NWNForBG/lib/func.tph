@@ -1,0 +1,194 @@
+DEFINE_PATCH_FUNCTION GET_SCRIPT_BLOCK
+INT_VAR
+  start_offset  = 0
+  reverse       = 0
+STR_VAR
+  search_regexp = ~~
+RET
+  script_block
+  start_offset
+  end_offset
+BEGIN
+  SET offset = start_offset
+  PATCH_IF (offset < 0) BEGIN SET offset = 0 END
+  PATCH_IF (offset > BUFFER_LENGTH) BEGIN SET offset = BUFFER_LENGTH END
+
+  TEXT_SPRINT script_block ~~
+  SET start_offset = "-1"
+  SET end_offset = "-1"
+
+  PATCH_IF (NOT ~%search_regexp%~ STR_EQ ~~) BEGIN
+    PATCH_IF (reverse) BEGIN
+      SET offset = RINDEX_BUFFER(~%search_regexp%~ offset)
+    END ELSE BEGIN
+      SET offset = INDEX_BUFFER(~%search_regexp%~ offset)
+    END
+
+    PATCH_IF (offset >= 0) BEGIN
+      SET ofsStart = RINDEX_BUFFER(~^IF$~ offset)
+      PATCH_IF (ofsStart >= 0) BEGIN
+        SET ofsEnd = INDEX_BUFFER(~^END$~ offset)
+        PATCH_IF (ofsEnd >= 0) BEGIN
+          SET ofsEnd += 3
+          READ_ASCII ofsStart script_block (ofsEnd - ofsStart)
+          SET start_offset = ofsStart
+          SET end_offset = ofsEnd
+        END
+      END
+    END
+  END
+END
+
+//LUA
+DEFINE_PATCH_FUNCTION FC_FIND_UI_TABLE
+	STR_VAR searchtabl = ""
+	RET offset_start offset_end offset_open numpairs exists
+	RET_ARRAY numpairs tables
+BEGIN
+	SET offset_start = (0 - 1)
+	SET offset_end = (0 - 1)
+	SET offset_open = (0 - 1)
+	SET numpairs = 0
+	CLEAR_ARRAY numpairs
+	CLEAR_ARRAY tables
+	SET exists = 0
+	SET offsA = INDEX_BUFFER(~%searchtabl%[ %TAB%%LNL%%WNL%%MNL%]*=[ %TAB%%LNL%%WNL%%MNL%]*{~)
+	PATCH_IF ( offsA >= 0 ) BEGIN
+		SET exists = 1
+		offset_start = offsA
+		offset_open = INDEX_BUFFER(~{~ offsA)
+		SET nums = 1
+		SET offsA = offset_open + 1
+		WHILE ( nums > 0 ) BEGIN
+			SET offsst = INDEX_BUFFER(~{~ offsA)
+			SET offsen = INDEX_BUFFER(~}~ offsA)
+			PATCH_IF ( offsst >= 0 ) AND ( offsst < offsen ) BEGIN
+				SET offsA = offsst + 1
+				SET nums = nums + 1
+				PATCH_IF ( nums = 2 ) BEGIN
+					SET $numpairs(~%numpairs%~) = offsst
+					SET numpairs = numpairs + 1
+					SET offsst2 = offsst
+				END
+			END ELSE BEGIN
+				SET nums = nums - 1
+				SET offsA = offsen + 1
+				PATCH_IF ( nums = 0 ) BEGIN
+					offset_end = offsA
+				END
+				PATCH_IF ( nums = 1 ) BEGIN
+					READ_ASCII offsst2 str ( offsen - offsst2 )
+					SPRINT $tables(~%numpairs%~) ~%str%},~
+				END
+			END
+		END
+		PATCH_IF ( numpairs = 0 ) BEGIN
+			SET offset_end = INDEX_BUFFER(~}~ offset_open)
+			/*PATCH_IF ( offsen >= 0 ) BEGIN
+				READ_ASCII offsA str ( offsen - offsA)
+				INNER_PATCH_SAVE strX ~%str%~ BEGIN
+					REPLACE_TEXTUALLY ~[ %LNL%%WNL%%MNL%]~ ~~
+				END
+				PATCH_IF ( ~%strX%~ STR_CMP ~~ ) BEGIN
+					SET numpairs = numpairs + 1
+					SET $numpairs(~%numpairs%~) = offsA + 1
+					SPRINT $tables(~%numpairs%~) ~%str%~
+				END
+			END*/
+		END
+	END
+	PATCH_IF numpairs = 0 BEGIN
+		SET $numpairs(~%numpairs%~) = (0 - 1)
+		SPRINT $tables(~%numpairs%~) ~none~
+	END
+END
+
+DEFINE_PATCH_FUNCTION READ_TEXT_LINES
+	INT_VAR
+		upper = 0 // whether to upper-case the textual content
+	RET
+		lines         // number of array elements
+	RET_ARRAY
+		lines   // array containing text lines, numbered sequentially, starting at 0
+BEGIN
+	SET lines = 0
+	SET ofs1 = 0
+	CLEAR_ARRAY ~lines~
+	WHILE (ofs1 >= 0) BEGIN
+		SET ofs2 = INDEX_BUFFER(~[%WNL%]~ ofs1)
+		PATCH_IF (ofs2 < 0) BEGIN SET ofs2 = BUFFER_LENGTH END
+		READ_ASCII ofs1 line (ofs2 - ofs1)
+		PATCH_IF (upper) BEGIN TO_UPPER ~line~ END
+		TEXT_SPRINT $lines(~%lines%~) ~%line%~
+		SET lines += 1
+		SET ofs1 = INDEX_BUFFER(~[^%WNL%]~ ofs2)
+	END
+	// Workaround for WeiDU bug: return array must contain at least one element.
+	PATCH_IF (lines = 0) BEGIN
+		TEXT_SPRINT $lines(~%lines%~) ~~
+	END
+END
+/*DEFINE_PATCH_FUNCTION GET_LUA_TABLE
+	STR_VAR
+		table_name = ""
+	RET
+		table_text
+		lines
+		offset_start
+		offset_end
+		offset_start_tbl
+	RET_ARRAY
+		lines
+		tables //array of integer, 1 - exists inner table, 0 - not exists 
+BEGIN
+	SET lines = 0
+	SET offs1 = 0 - 1
+	SET offset_start = 0 - 1
+	SET offset_end = 0 - 1
+	SET offset_start_tbl = 0 - 1
+	CLEAR_ARRAY ~lines~
+	CLEAR_ARRAY ~tables~
+	SPRINT $lines(~%lines%~) "none"
+	SET $tables(~%lines%~) = 0
+	SET offs1 = INDEX_BUFFER( ~%table_name%~ offs1 )
+	PATCH_IF ( offs1 >= 0 ) BEGIN
+		SET offset_start = offs1
+		SET offs1 = INDEX_BUFFER( ~{~ offs1 )
+		PATCH_IF ( offs1 >= 0 ) BEGIN
+			SET offset_start_tbl = offs1
+			SET nums = 2
+			SET offsO = offs1 + 1
+			WHILE ( nums > 1 ) BEGIN
+				SET offsO = INDEX_BUFFER( ~{~ offs1+1 )
+				SET offsE = INDEX_BUFFER( ~}~ offs1+1                             )
+				PATCH_IF ( offsO > offsE ) OR ( ( offsO < 0 ) AND ( offsE >= 0 ) ) BEGIN
+					//not inner table
+					
+				END ELSE BEGIN
+					PATCH_IF ( offsO >= 0 ) AND ( offsO < offsE ) BEGIN
+						//exists inner table
+						SET nums = nums + 1
+						SET offsO = offsO + 1
+					END ELSE BEGIN
+						SET nums = nums - 1
+						SET offsO = offsO + 1
+					END
+				END
+			END
+		END
+	END
+	/*PATCH_IF ( lines = 0 ) BEGIN
+		SPRINT $lines
+	END*/
+END*/
+
+
+
+
+
+
+
+
+
+
+

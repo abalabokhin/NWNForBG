@@ -1,0 +1,42 @@
+
+
+IF
+	GlobalTimerExpired("NWTaxTime","GLOBAL")
+	Global("NWLuscanVizited","GLOBAL",0)
+	Global("NWArena","GLOBAL",4)
+THEN
+	RESPONSE #100
+		DisplayString(Player1,@103871)  // �� ������ �������� ������� � '����� �����'
+		SetGlobalTimer("NWTaxTime","GLOBAL",SEVEN_DAYS)
+		IncrementGlobal("NWNwTavTaxes","GLOBAL",500)
+		Continue()
+END
+
+IF
+	Global("Nwspmep","GLOBAL",1)
+	!AreaCheck("NW3303")
+THEN
+	RESPONSE #100
+		SetGlobal("Nwspmep","GLOBAL",0)
+		DisplayStringHead(Player1,@107762)  // �� �� ������ ������������ ��� ������� � ���� �����.
+		GiveItemCreate("Nwmisc81",Player1,1,0,0)  // ��������� � �������
+END
+
+IF
+	Global("Nwnzoo","GLOBAL",1)
+	!AreaCheck("NW1400")  // ����������
+THEN
+	RESPONSE #100
+		SetGlobal("Nwnzoo","GLOBAL",0)
+		DisplayStringHead(Player1,@103872)  // ���� ������ ����� ������������ ����� � ������� ������� � �������� � ����������. � ���� ����� �� �� �����������.
+END
+
+IF
+	!AreaCheck("NW2306")
+	Global("NWVanPrt","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("NWVanPrt","GLOBAL",0)
+		DisplayStringHead(Player1,@103873)  // ���� ������ ������� ���������� ������ � ����� �� ������ ����� �������. � ���� ����� �� �� �����������.
+END
+
