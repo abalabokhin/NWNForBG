@@ -26,6 +26,7 @@ Thanks and Acknowledgements
 * megrimlock - for helping with proof-reading english tra files
 * p\_zombie - for testing, help with bp-bgt-worldmap adaptation and preparing a dedicated map for NWN content
 * Apxu - for coding a component with a dedicated NWN content map
+* Tipun - for coding a component to make the mod to be a dedicated compaing
 * JohnBob - for helping with icons positins and some weidu coding
 * Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod and for the bp-bgt-worldmap mod itself
 * argent77 - for help with TIS files and useful weidu libraries
