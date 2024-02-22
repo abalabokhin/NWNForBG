@@ -26,7 +26,7 @@ Thanks and Acknowledgements
 * megrimlock - for helping with proof-reading english tra files
 * p\_zombie - for testing, help with bp-bgt-worldmap adaptation and preparing a dedicated map for NWN content
 * Apxu - for coding a component with a dedicated NWN content map
-* Tipun - for coding a component to make the mod to be a dedicated compaing
+* Tipun - for coding a component to make the mod to be a dedicated campaign
 * JohnBob - for helping with icons positins and some weidu coding
 * Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod and for the bp-bgt-worldmap mod itself
 * argent77 - for help with TIS files and useful weidu libraries
@@ -117,7 +117,7 @@ In development:
 - Fixed some small bugs thanks to tipun
 - Fixed some English texts thanks to Daulmakan
 - Updated some item icons thanks to Daulmakan
-- Added component to install the mod as a dedicated compaing. This component is coded by Tipun
+- Added component to install the mod as a dedicated campaign. This component is coded by Tipun.
 
 0.95 (1/12/24)
 

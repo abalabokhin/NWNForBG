@@ -1,7 +1,7 @@
-INCLUDE ~nwncampaign/lib/edit_bam.tph~
-INCLUDE ~nwncampaign/lib/campaigns.tph~
-INCLUDE ~nwncampaign/lib/func.tph~
-INCLUDE ~nwncampaign/lib/lua_functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/edit_bam.tph~
+INCLUDE ~%MOD_FOLDER%/lib/campaigns.tph~
+INCLUDE ~%MOD_FOLDER%/lib/func.tph~
+INCLUDE ~%MOD_FOLDER%/lib/lua_functions.tph~
 /* todo:
 4. ֳכאגû ֲֽֽ
 5. cheatAreasTable
