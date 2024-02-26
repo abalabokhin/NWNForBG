@@ -14,7 +14,7 @@ OUTER_SPRINT tilde "~"
 //worldscript 
 COMPILE ~%MOD_FOLDER%/NWNWSCRP.BAF~
 
-PRINT ~Instlling 2da files...~
+PRINT ~Installing 2da files...~
 SILENT //2da
 //song
 COPY_EXISTING ~songlist.2da~ ~override~
@@ -163,7 +163,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 	PRINT ~New frame index = %cmplogo%~
 END
 
-PRINT ~Instlling Campaign data...~
+PRINT ~Installing Campaign data...~
 SILENT
 OUTER_SET camp_number = 0
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~campaign.2da~ BEGIN
@@ -250,7 +250,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 			SPRINT ~camp~ ~{id = 'NWN', name = 'EET_CMP_TITLE_NWN', description = 'EET_CMP_TEXT_NWN', title = %line_text%, bigLogo = %biglogo%, icon = %cmplogo%, background = 2, button = 2, sidebar = 2, importEnabled = false, tutorialEnabled = false, forceParty = false, cheatAreasTable = cheatAreas},~
 			FOR ( i = 1 ; i <= numpairs ; ++i ) BEGIN
 				SPRINT str $tables(~%i%~)
-				INNER_PATCH_SAVE sss ~%str%~ BEGIN
+				/*INNER_PATCH_SAVE sss ~%str%~ BEGIN
 					REPLACE_EVALUATE ~[ %TAB%%LNL%%WNL%%MNL%]*{id = '\([A-Za-z0-9]+\)',.*$~
 					BEGIN
 						SET x = 0
@@ -259,6 +259,9 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 				END
 				PATCH_IF ( ( ~%str%~ STRING_CONTAINS_REGEXP ~EET_CMP_TITLE_BP1~ ) = 0 ) BEGIN
 					SPRINT str ~%camp%%LNL%%TAB%%str%~
+				END*/
+				PATCH_IF ( i = numpairs ) BEGIN
+					SPRINT str ~%str%%LNL%%TAB%%camp%~
 				END
 				SPRINT str_all ~%str_all%%LNL%%TAB%%str%~
 			END
@@ -287,22 +290,23 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 			WRITE_ASCIIE offset_start ~%str_all%~ (len)
 			SET exists = 0
 		END
+		//REPLACE_TEXTUALLY ~(currentCampaign == const.START_CAMPAIGN_BP1) or (currentCampaign == const.START_CAMPAIGN_BP2)~
 
 	COPY_EXISTING ~bgee.lua~ ~override~
 		REPLACE_TEXTUALLY ~START_CAMPAIGN_TUT = 7,~ ~START_CAMPAIGN_TUT = 7,%LNL%%TAB%START_CAMPAIGN_NWN = %camp_number%,~
 
 	COPY_EXISTING ~ui.menu~ ~override~
-		REPLACE_TEXTUALLY ~(chapter == 0)~ ~(chapter == 0) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN)~
-		REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and inity_GetScriptVarInt('NWN_Quest_Status') == 1) then
-		currentCampaign = const.START_CAMPAIGN_NWN
-	elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
+		//REPLACE_TEXTUALLY ~(chapter == 0)~ ~(chapter == 0) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN)~
+		REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1) then
+			currentCampaign = const.START_CAMPAIGN_NWN
+		elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
 
 	ACTION_IF FILE_EXISTS ~EET/SoD_GUI/UI.MENU~ BEGIN
 		COPY ~EET/SoD_GUI/UI.MENU~ ~EET/SoD_GUI~
-			REPLACE_TEXTUALLY ~(chapter == 0)~ ~(chapter == 0) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN)~
-			REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) ~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and inity_GetScriptVarInt('NWN_Quest_Status') == 1) then
-		currentCampaign = const.START_CAMPAIGN_NWN
-	elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
+			//REPLACE_TEXTUALLY ~(chapter == 0)~ ~(chapter == 0) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN)~
+			REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1) then
+			currentCampaign = const.START_CAMPAIGN_NWN
+		elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
 	END
 END ELSE BEGIN /*----*/
 	COPY_EXISTING ~bgee.lua~ ~override~
@@ -550,7 +554,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("NWStandalone","GLOBAL",1)
 		SetGlobal("DREAM","GLOBAL",7)
-		SetGlobal("Chapter","GLOBAL",0)
+		SetGlobal("Chapter","GLOBAL",1)
 		ClearAllActions()
 		StartCutSceneMode()
 		StartCutSceneEx("NWTON",TRUE)
@@ -603,9 +607,9 @@ THEN
 END
 >>>>>>>>
 EXTEND_TOP ~NWNWSCRP.bcs~ ~nwnchap.baf~
-OUTER_SET prologue = RESOLVE_STR_REF( @2000220 )
+//OUTER_SET prologue = RESOLVE_STR_REF( @2000220 )
 
-ACTION_IF GAME_IS ~bg2ee~ BEGIN
+/*ACTION_IF GAME_IS ~bg2ee~ BEGIN
 	COPY_EXISTING ~util.lua~ ~override~
 		REPLACE_TEXTUALLY ~return t("ARENA_MODE_LABEL")~ ~if logoFrame == %biglogo% then
 			return Infinity_FetchString(%prologue%)
@@ -614,7 +618,7 @@ ACTION_IF GAME_IS ~bg2ee~ BEGIN
 		end~
 		REPLACE_TEXTUALLY ~(game:GetMissionPackInfoTBP())~ ~(game:GetMissionPackInfoTBP()) or (logoFrame == %biglogo%)~
 		BUT_ONLY_IF_IT_CHANGES
-END
+END*/
 
 
 
