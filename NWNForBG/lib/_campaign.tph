@@ -4,7 +4,7 @@ INCLUDE ~%MOD_FOLDER%/lib/func.tph~
 INCLUDE ~%MOD_FOLDER%/lib/lua_functions.tph~
 /* todo:
 4. Главы НВН
-5. cheatAreasTable
+5. Год в НВН
 6. Количество золота. Надо в экселе таблицу накатать для оригинальных значений и на их основе сделать свою
 */ 
 OUTER_SPRINT tilde "~"
@@ -387,7 +387,7 @@ END ELSE BEGIN /*----*/
 				WRITE_ASCIIE menu_menu_start ~%menu_menu%~
 			END
 		END
-		REPLACE_TEXTUALLY ~function startThreeBookHighlight(book)~ ~highlightNWN = 0
+		REPLACE_TEXTUALLY ~function startThreeBookHighlight(book)~ ~highlightNWN = false
 	function GetLogoTitle()
 		if logoFrame == %biglogo% then
 			return 'TITLEN'
@@ -462,10 +462,53 @@ THEN
 		FadeFromColor([20.0],0)
 		Wait(1)
 		EndCutSceneMode()
-		GameOver(%nwnbg%)
+		GoToStartScreen()
 END
 >>>>>>>>
 EXTEND_BOTTOM ~NWN_BG.bcs~ ~nwn_bg_add.baf~ EVALUATE_BUFFER
+COPY_EXISTING ~NW4104T.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		LPF GET_SCRIPT_BLOCK
+			STR_VAR search_regexp = "MultiPlayerSync"
+			RET script_block start_offset end_offset
+		END
+		PATCH_IF ( start_offset >= 0 ) BEGIN
+			DELETE_BYTES start_offset ( end_offset - start_offset )
+			INNER_PATCH_SAVE block_final ~%script_block%~ BEGIN
+				REPLACE_TEXTUALLY ~Range~ ~!Global("NWStandalone","GLOBAL",1) Range~
+			END
+			SET len = STRING_LENGTH ~%block_final%~
+			INSERT_BYTES start_offset len
+			WRITE_ASCIIE start_offset ~%block_final%~ (len)
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+<<<<<<<< nwn_bg_add.baf
+IF
+	Clicked([ANYONE])
+	Global("NWStandalone","GLOBAL",1)
+	Range(LastTrigger,6)
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		SaveGame(0)
+		MultiPlayerSync()
+		Wait(1)
+		MoveViewObject(Player1,INSTANT)
+		Wait(1)
+		StartMovie("NWNEND")
+		Wait(2)
+		FadeFromColor([20.0],0)
+		MultiPlayerSync()
+		UnhideGUI()
+		EndCutSceneMode()
+		GoToStartScreen()
+END
+>>>>>>>>
+EXTEND_TOP ~NW4104T.bcs~ ~nwn_bg_add.baf~ EVALUATE_BUFFER
 
 COPY_EXISTING_REGEXP GLOB ~^NW.*\.bcs~ ~override~
 	DECOMPILE_AND_PATCH BEGIN
@@ -549,6 +592,29 @@ ACTION_IF GAME_IS ~bg2ee~ BEGIN
 	COPY ~%MOD_FOLDER%/LOGONWN.bam~ ~override~
 END
 
+PRINT ~Installing NWN chapters...~
+<<<<<<<< nwnchap.baf
+IF
+	!Global("NWStandalone","GLOBAL",0)
+	GlobalsGT("NWNChapter","Chapter")
+THEN
+	RESPONSE #100
+		IncrementGlobal("Chapter","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_TOP ~NWNWSCRP.bcs~ ~nwnchap.baf~
+OUTER_SET prologue = RESOLVE_STR_REF( @2000220 )
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN
+	COPY_EXISTING ~util.lua~ ~override~
+		REPLACE_TEXTUALLY ~return t("ARENA_MODE_LABEL")~ ~if logoFrame == %biglogo% then
+			return Infinity_FetchString(%prologue%)
+		else
+			return t("ARENA_MODE_LABEL")
+		end~
+		REPLACE_TEXTUALLY ~(game:GetMissionPackInfoTBP())~ ~(game:GetMissionPackInfoTBP()) or (logoFrame == %biglogo%)~
+		BUT_ONLY_IF_IT_CHANGES
+END
 
 
 
