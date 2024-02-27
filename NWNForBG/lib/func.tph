@@ -83,7 +83,7 @@ BEGIN
 			END
 		END
 		PATCH_IF ( numpairs = 0 ) BEGIN
-			SET offset_end = INDEX_BUFFER(~}~ offset_open)
+			SET offset_end = INDEX_BUFFER(~}~ offset_open) + 1
 			/*PATCH_IF ( offsen >= 0 ) BEGIN
 				READ_ASCII offsA str ( offsen - offsA)
 				INNER_PATCH_SAVE strX ~%str%~ BEGIN

@@ -164,7 +164,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 END
 
 PRINT ~Installing Campaign data...~
-SILENT
+SILENT //campaign
 OUTER_SET camp_number = 0
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~campaign.2da~ BEGIN
 <<<<<<<< campaign.2da
@@ -237,7 +237,8 @@ OUTER_PATCH_SAVE nwn_text ~%nwn_text%~ BEGIN
 END
 
 ACTION_IF GAME_IS ~eet~ BEGIN
-	COPY_EXISTING_REGEXP GLOB ~^M_.*\.LUA~ ~override~
+	ACTION_CLEAR_ARRAY camps
+	COPY_EXISTING_REGEXP GLOB ~.*\.LUA$~ ~override~ //~^M_.*\.LUA~ ~override~
 		/*chapters*/
 		SET exists = 0
 		LPF FC_FIND_UI_TABLE
@@ -247,22 +248,26 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 		END
 		PATCH_IF exists BEGIN
 			SPRINT str_all ~~
+			SET idx = 0
 			SPRINT ~camp~ ~{id = 'NWN', name = 'EET_CMP_TITLE_NWN', description = 'EET_CMP_TEXT_NWN', title = %line_text%, bigLogo = %biglogo%, icon = %cmplogo%, background = 2, button = 2, sidebar = 2, importEnabled = false, tutorialEnabled = false, forceParty = false, cheatAreasTable = cheatAreas},~
 			FOR ( i = 1 ; i <= numpairs ; ++i ) BEGIN
 				SPRINT str $tables(~%i%~)
-				/*INNER_PATCH_SAVE sss ~%str%~ BEGIN
+				SPRINT cmp_name ~~
+				INNER_PATCH_SAVE sss ~%str%~ BEGIN
 					REPLACE_EVALUATE ~[ %TAB%%LNL%%WNL%%MNL%]*{id = '\([A-Za-z0-9]+\)',.*$~
 					BEGIN
-						SET x = 0
+						SPRINT cmp_name ~%MATCH1%~
 					END
 					~%MATCH1%~
 				END
-				PATCH_IF ( ( ~%str%~ STRING_CONTAINS_REGEXP ~EET_CMP_TITLE_BP1~ ) = 0 ) BEGIN
+				PATCH_IF ( ( ~%cmp_name%~ STRING_CONTAINS_REGEXP ~BP1~ ) = 0 ) BEGIN
 					SPRINT str ~%camp%%LNL%%TAB%%str%~
-				END*/
-				PATCH_IF ( i = numpairs ) BEGIN
-					SPRINT str ~%str%%LNL%%TAB%%camp%~
+					SET val = i + idx
+					DEFINE_ASSOCIATIVE_ARRAY camps BEGIN ~NWN~ => ~%val%~ END
+					SET idx = 1
 				END
+				SET val = i + idx
+				DEFINE_ASSOCIATIVE_ARRAY camps BEGIN ~%cmp_name%~ => ~%val%~ END
 				SPRINT str_all ~%str_all%%LNL%%TAB%%str%~
 			END
 			SPRINT str_all ~startCampaignData = {%LNL%%TAB%%str_all%%LNL%}~
@@ -290,20 +295,42 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 			WRITE_ASCIIE offset_start ~%str_all%~ (len)
 			SET exists = 0
 		END
-		//REPLACE_TEXTUALLY ~(currentCampaign == const.START_CAMPAIGN_BP1) or (currentCampaign == const.START_CAMPAIGN_BP2)~
+		BUT_ONLY_IF_IT_CHANGES
 
-	COPY_EXISTING ~bgee.lua~ ~override~
-		REPLACE_TEXTUALLY ~START_CAMPAIGN_TUT = 7,~ ~START_CAMPAIGN_TUT = 7,%LNL%%TAB%START_CAMPAIGN_NWN = %camp_number%,~
+	COPY_EXISTING_REGEXP GLOB ~.*\.LUA$~ ~override~
+		LPF FC_FIND_UI_TABLE
+			STR_VAR searchtabl = "const"
+			RET offset_start offset_end offset_open numpairs exists
+			RET_ARRAY numpairs tables
+		END
+		PATCH_IF exists BEGIN
+			SPRINT str_all ~~
+			READ_ASCII offset_start str_all ( offset_end - offset_start )
+			INNER_PATCH_SAVE str_all ~%str_all%~ BEGIN
+				SET offs = INDEX_BUFFER (~START_CAMPAIGN_NWN~)
+				PATCH_IF ( offs < 0 ) BEGIN
+					REPLACE_TEXTUALLY ~}~ ~%TAB%START_CAMPAIGN_NWN = %camp_number%,%LNL%}~
+				END
+			END
+			INNER_PATCH_SAVE str_all ~%str_all%~ BEGIN
+				PHP_EACH camps AS name => value BEGIN
+					REPLACE_TEXTUALLY ~START_CAMPAIGN_%name%[ %TAB%]*=[ %TAB%]*[0-9]+,~ ~START_CAMPAIGN_%name% = %value%,~
+				END
+			END
+			DELETE_BYTES offset_start ( offset_end - offset_start )
+			SET len = STRING_LENGTH ~%str_all%~
+			INSERT_BYTES offset_start len
+			WRITE_ASCIIE offset_start ~%str_all%~ (len)
+		END
+		BUT_ONLY_IF_IT_CHANGES
 
 	COPY_EXISTING ~ui.menu~ ~override~
-		//REPLACE_TEXTUALLY ~(chapter == 0)~ ~(chapter == 0) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN)~
 		REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1) then
 			currentCampaign = const.START_CAMPAIGN_NWN
 		elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
 
 	ACTION_IF FILE_EXISTS ~EET/SoD_GUI/UI.MENU~ BEGIN
 		COPY ~EET/SoD_GUI/UI.MENU~ ~EET/SoD_GUI~
-			//REPLACE_TEXTUALLY ~(chapter == 0)~ ~(chapter == 0) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN)~
 			REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1) then
 			currentCampaign = const.START_CAMPAIGN_NWN
 		elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
@@ -340,7 +367,7 @@ END ELSE BEGIN /*----*/
 					SET biglogo = number - 1
 					REPLACE_TEXTUALLY ~\([ %TAB%]*\)text.*$~ ~\1text CCCCCCCCCC~
 					REPLACE_TEXTUALLY ~LOGOTBP~ ~LOGONWN~
-					REPLACE_TEXTUALLY ~area.*$~ ~area 287 617 434 80~ /* coordinates */
+					REPLACE_TEXTUALLY ~area.*$~ ~area 287 617 434 80~
 					REPLACE_TEXTUALLY ~logoFrame.*$~ ~logoFrame = %biglogo%~
 					REPLACE_TEXTUALLY ~startEngine.*$~ ~startEngine:OnCampaignButtonClick('NWN',true)~
 					REPLACE_TEXTUALLY ~highlightBP~ ~highlightNWN~
@@ -434,7 +461,7 @@ END
 VERBOSE
 
 
-PRINT ~Patching scris and dialogue files...~
+PRINT ~Patching script and dialogue files...~
 SILENT //scripts/dialogues
 //NWN_BG
 OUTER_SET nwnbg = 0 - 1
@@ -607,18 +634,6 @@ THEN
 END
 >>>>>>>>
 EXTEND_TOP ~NWNWSCRP.bcs~ ~nwnchap.baf~
-//OUTER_SET prologue = RESOLVE_STR_REF( @2000220 )
-
-/*ACTION_IF GAME_IS ~bg2ee~ BEGIN
-	COPY_EXISTING ~util.lua~ ~override~
-		REPLACE_TEXTUALLY ~return t("ARENA_MODE_LABEL")~ ~if logoFrame == %biglogo% then
-			return Infinity_FetchString(%prologue%)
-		else
-			return t("ARENA_MODE_LABEL")
-		end~
-		REPLACE_TEXTUALLY ~(game:GetMissionPackInfoTBP())~ ~(game:GetMissionPackInfoTBP()) or (logoFrame == %biglogo%)~
-		BUT_ONLY_IF_IT_CHANGES
-END*/
 
 
 
