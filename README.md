@@ -54,7 +54,7 @@ The mod repeats, with some minor modifications, the plot of Neverwinter Nights g
 Compatibility
 -------------
 
-Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. Also, some of the new spells might have copnflicts with some Talents of Faerûn mod components as for Beta 3 version.
+Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. Also, some of the new spells might have conflicts with some Talents of Faerûn mod components as for Beta 3 version. For mods that add other campaigns to EET, third component of this mod should be installed after them. If there are UI mods that change BG2EE starting screen dramatically, installing third compoment with BG2EE might not add NWN campaign propeprly (UI mods were not tested with third component, installed on BG2EE).
 
 Installation
 -------------
