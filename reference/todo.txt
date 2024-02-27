@@ -1,13 +1,15 @@
 TODO:
 
-*. Add NWN NPCs to level1 project (see g3 post)
-*. ToF complains on a spell(spells) (if installing tof after NWN) - fix it or wait at least for ToF release
+*. описать подробно что делает каждый компонент в readme + органичения (типа UI) + обновить, что именно было
+сделано
+*. ToF complains on a spell(spells) - fix it after ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
 *. Иконки, позиции - почемуто JohnBob считает что Лусканские иконки "ugly"
 
 Новый контент:
+*. Add NWN NPCs to level1 project (see g3 post)
 *. Another suggestion: everyone having portraits is business as usual per the original NWN, but is somewhat offputting when playing BG2. Maybe you could make them optional? Something like: "Install portraits component?
 A) Everyone
 B) Major NPCs only (Aribeth, Nasher, Gend, etc)." 
