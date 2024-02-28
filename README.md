@@ -24,11 +24,11 @@ Thanks and Acknowledgements
 * Gorion - for the provided night Beggar's Nest location image
 * Insomniator2 - for a great help with weidu adaptation and especially for the script that can generate weidu code to set string refs for binary files (cre, are, etc.)
 * megrimlock - for helping with proof-reading english tra files
-* p\_zombie - for testing, help with bp-bgt-worldmap adaptation and preparing a dedicated map for NWN content
+* p\_zombie - for testing, help with BP-BGT-Worldmap adaptation and preparing a dedicated map for NWN content
 * Apxu - for coding a component with a dedicated NWN content map
 * Tipun - for coding a component to make the mod to be a dedicated campaign
 * JohnBob - for helping with icons positins and some weidu coding
-* Roberciiik and Weigo - for changing bp-bgt-worldmap for this mod and for the bp-bgt-worldmap mod itself
+* Roberciiik and Weigo - for changing BP-BGT-Worldmap for this mod and for the BP-BGT-Worldmap mod itself
 * argent77 - for help with TIS files and useful weidu libraries
 * scheele - for testing, some ideas for the mod and help with proof-reading Russian texts
 * arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing, bug reporting, etc
@@ -51,10 +51,15 @@ Description:
 
 The mod repeats, with some minor modifications, the plot of Neverwinter Nights game. Once Gorion's Ward reaches the experience of 1350000 XP, he/she can start Neverwinter Nights. At this moment, a messenger from Neverwinter will approach him/her in any of the Athkatla's Districts and ask for help. However, recommended amount of XP to start NWN content is 1750000.
 
+There three components in this mod:
+1. Main component, that install all the resources for the mod.
+2. Map component, for EET for BG2EE you can select between using map icons with BP-BGT-Worldmap or to use a dedicated map for NWN content. For BGT and oBG2 icons for BG-BGTr-Worldmap are used.
+3. Install NWNForBG as a didicated campaign (for BG2EE and EET only) depending on the second component the appropriate map will be used. For EET, NWN is added to the list of campaigns, for BG2EE, UI is modified (ATTENTION: this was not tested with different UI mods for BG2EE). PC starts the dedicated campaign with 1.5M XP and about 10K GP.
+
 Compatibility
 -------------
 
-Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. Also, some of the new spells might have conflicts with some Talents of Faerûn mod components as for Beta 3 version. For mods that add other campaigns to EET, third component of this mod should be installed after them. If there are UI mods that change BG2EE starting screen dramatically, installing third compoment with BG2EE might not add NWN campaign propeprly (UI mods were not tested with third component, installed on BG2EE).
+Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. Also, some of the new spells might have conflicts with some Talents of Faerûn mod components as for Beta 3 version. If there are UI mods that change BG2EE starting screen dramatically, installing third compoment with BG2EE might not add NWN campaign propeprly (UI mods were not tested with third component of the mod, installed on BG2EE).
 
 Installation
 -------------
@@ -66,11 +71,11 @@ Dependencies
 
 <h3>For BG2:TOB and BGT:</h3>
 
-Make sure ToBex (or other mods, increasing maximum number of music), Baldur's Gate II Fixpack and Infinity-Animations (there can be a problem with code page for non-English window systems, be careful, read README and [here](https://www.gibberlings3.net/forums/topic/37297-bg2-crashes-due-to-some-mod/).) are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized\_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
+Make sure ToBex (or other mods, increasing maximum number of music), Baldur's Gate II Fixpack and Infinity-Animations (there can be a problem with code page for non-English window systems, be careful, read README and [here](https://www.gibberlings3.net/forums/topic/37297-bg2-crashes-due-to-some-mod/).) are installed prior to Neverwinter Nights for Baldur's Gate. BP-BGT-Worldmap v13.0 or later must be installed after Neverwinter Nights for Baldur's Gate. It is highly recommened to install generalized\_biffing (only works properly if installed with Weidu 24600, be careful here) after Neverwinter Nights for Baldur's Gate.
 
 <h3>For BG2EE and EET:</h3>
 
-BP-BGT-Worldmap v12.0 or later must be installed after Neverwinter Nights for Baldur's Gate.
+Depending on second component of the mod, BP-BGT-Worldmap v13.0 or later should be installed after Neverwinter Nights for Baldur's Gate. For mods that add other campaigns to EET (eg IWD\_EET\_Integration), third component of this mod should be installed after them.
 
 Translator Notes:
 ----------------
@@ -117,7 +122,7 @@ In development:
 - Fixed some small bugs thanks to tipun
 - Fixed some English texts thanks to Daulmakan
 - Updated some item icons thanks to Daulmakan
-- Added component to install the mod as a dedicated campaign. This component is coded by Tipun.
+- Added component to install the mod as a dedicated campaign for EET and BG2EE. This component is coded by Tipun.
 
 0.95 (1/12/24)
 
