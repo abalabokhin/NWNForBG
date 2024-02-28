@@ -123,6 +123,7 @@ In development:
 - Fixed some English texts thanks to Daulmakan
 - Updated some item icons thanks to Daulmakan
 - Added component to install the mod as a dedicated campaign for EET and BG2EE. This component is coded by Tipun.
+- Fixed some Russian texts thanks to p\_zombie
 
 0.95 (1/12/24)
 
