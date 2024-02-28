@@ -46,15 +46,17 @@ Languages
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Simplified Chinese (finished) partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
 
-Description:
+General Information:
 ------------
 
 The mod repeats, with some minor modifications, the plot of Neverwinter Nights game. Once Gorion's Ward reaches the experience of 1350000 XP, he/she can start Neverwinter Nights. At this moment, a messenger from Neverwinter will approach him/her in any of the Athkatla's Districts and ask for help. However, recommended amount of XP to start NWN content is 1750000.
 
-There three components in this mod:
+There are three components in this mod:
 1. Main component, that install all the resources for the mod.
-2. Map component, for EET for BG2EE you can select between using map icons with BP-BGT-Worldmap or to use a dedicated map for NWN content. For BGT and oBG2 icons for BG-BGTr-Worldmap are used.
+2. Map component, for EET for BG2EE you can select between using map icons with BP-BGT-Worldmap or using a dedicated map for NWN content. For BGT and oBG2 icons for BG-BGT-Worldmap are used.
 3. Install NWNForBG as a didicated campaign (for BG2EE and EET only) depending on the second component the appropriate map will be used. For EET, NWN is added to the list of campaigns, for BG2EE, UI is modified (ATTENTION: this was not tested with different UI mods for BG2EE). PC starts the dedicated campaign with 1.5M XP and about 10K GP.
+
+Mods which extend material presented here are welcome as separate modifications, with the appropriate credit given to the authors. If you want something to become a direct part of this mod, you will need to contact AGKanevchev and/or paladin84.
 
 Compatibility
 -------------
