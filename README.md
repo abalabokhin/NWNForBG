@@ -3,7 +3,7 @@ NWNForBG
 
 Neverwinter Nights for Baldur's Gate
 ------------------------------------
-Version: 0.95
+Version: 0.96
 
 Author: AGKanevchev
 ---------------
@@ -77,7 +77,7 @@ Make sure ToBex (or other mods, increasing maximum number of music), Baldur's Ga
 
 <h3>For BG2EE and EET:</h3>
 
-Depending on second component of the mod, BP-BGT-Worldmap v13.0 or later should be installed after Neverwinter Nights for Baldur's Gate. For mods that add other campaigns to EET (eg IWD\_EET\_Integration), third component of this mod should be installed after them.
+Depending on second component of the mod, BP-BGT-Worldmap v13.0 or later might need to be installed after Neverwinter Nights for Baldur's Gate. For mods that add other campaigns to EET (eg IWD\_EET\_Integration), third component of this mod should be installed after them.
 
 Translator Notes:
 ----------------
@@ -115,9 +115,11 @@ Version History
 ---------------
 In development:
 
+0.96 (2/29/24)
+
 - Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Weidu code to place icons on a map is taken from BP-BGT-Worldmap mod.
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
-- Converted TIS and WED files to remove black lines next to doors and fireplaces
+- Converted TIS and WED files to remove glitches next to doors and fireplaces
 - Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros
 - Added ini file for Project Infinity
 - Added few map notes in Chapter 1, where it is difficult to find an area exit
