@@ -717,29 +717,6 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND FILE_EXISTS_IN_GAME ~BALDUR.BCS~)
   END
 END
 
-
-/*
-// Add variables to NWN AREAS (Thanks to Argent77 )
-
-MKDIR ~NWNForBG/are~
-
-ACTION_BASH_FOR ~NWNForBG/are~ ~^.+$~ BEGIN
-
-PRINT ~         ~
-PRINT ~Start AREATYPE~
-PRINT ~         ~
-
-  COPY ~%BASH_FOR_FILESPEC%~ ~weidu_external/%BASH_FOR_FILESPEC%~
-  LPF fj_are_structure
-    INT_VAR
-      fj_variable_value = 1
-    STR_VAR
-      fj_structure_type = "variable"
-      fj_name           = "NWNAREA"
-  END
-END
-*/
-
 COPY ~NWNForBG/are~ ~override~
 
 COPY ~NWNForBG/are/nw1000.are~ ~override~
