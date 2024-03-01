@@ -118,16 +118,18 @@ In development:
 0.96 (2/29/24)
 
 - Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Weidu code to place icons on a map is taken from BP-BGT-Worldmap mod.
-- Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu
-- Converted TIS and WED files to remove glitches next to doors and fireplaces
-- Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros
-- Added ini file for Project Infinity
-- Added few map notes in Chapter 1, where it is difficult to find an area exit
-- Fixed some small bugs thanks to tipun
-- Fixed some English texts thanks to Daulmakan
-- Updated some item icons thanks to Daulmakan
+- Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu.
+- Converted TIS and WED files to remove glitches next to doors and fireplaces.
+- Fixed slow music NW84 (it is from IWD1, so I renamed it to be b1 - no prefixes, but since it is original IWD resource, it should be ok) thanks to Kyros.
+- Added ini file for Project Infinity.
+- Added few map notes in Chapter 1, where it is difficult to find an area exit.
+- Fixed some small bugs thanks to tipun.
+- Fixed some English texts thanks to Daulmakan.
+- Updated some item icons thanks to Daulmakan.
 - Added component to install the mod as a dedicated campaign for EET and BG2EE. This component is coded by Tipun.
-- Fixed some Russian texts thanks to p\_zombie
+- Fixed some Russian texts thanks to p\_zombie.
+- All the map icon positions for BP-BGT-Worldmap mod updated to match BP-BGT-Worldmap v13.
+- Small various bugs are fixed thanks to everyone who reported about them.
 
 0.95 (1/12/24)
 
