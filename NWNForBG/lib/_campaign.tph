@@ -36,13 +36,13 @@ END
 OUTER_SPRINT ~script_text~ ~2DA                 V1.0
 BADVAL
                     VALUE
-START_AREA          NW1000
+START_AREA          NW1001
 START_XPOS          1073
 START_YPOS          790
 START_AREA_TUTORIAL TU0015
 START_XPOS_TUTORIAL 607
 START_YPOS_TUTORIAL 660
-START_AREA_MP       NW1000 
+START_AREA_MP       NW1001 
 START_XPOS_MP       1073   
 START_YPOS_MP       790    
 START_XP            1500000
@@ -573,7 +573,7 @@ COPY_EXISTING ~NW1001.bcs~ ~override~
 	END
 	BUT_ONLY_IF_IT_CHANGES
 
-<<<<<<<< NW1000_.baf
+<<<<<<<< NW1001_.baf
 IF
 	Global("NWMessenger_of_Neverwinter","GLOBAL",0)
 	Global("NWStandalone","GLOBAL",0)
@@ -587,7 +587,7 @@ THEN
 		StartCutSceneEx("NWTON",TRUE)
 END
 >>>>>>>>
-EXTEND_TOP ~NW1000.bcs~ ~NW1000_.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~NW1001.bcs~ ~NW1001_.baf~ EVALUATE_BUFFER
 
 COPY ~%MOD_FOLDER%/D5NWYRS.2DA~ ~override~
 
