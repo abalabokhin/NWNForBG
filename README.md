@@ -115,6 +115,9 @@ Version History
 ---------------
 In development:
 
+- Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773
+- Fixed icon for a contrainer in NW1002, thanks to sese\_ser
+
 0.96 (2/29/24)
 
 - Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Weidu code to place icons on a map is taken from BP-BGT-Worldmap mod.
