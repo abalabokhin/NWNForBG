@@ -116,7 +116,7 @@ Version History
 In development:
 
 - Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773
-- Fixed icon for a contrainer in NW1002, thanks to sese\_ser
+- Fixed icon for several containers, thanks to sese\_ser
 
 0.96 (2/29/24)
 
