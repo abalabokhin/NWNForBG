@@ -117,6 +117,7 @@ In development:
 
 - Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773
 - Fixed icon for several containers, thanks to sese\_ser
+- Fixed reputation table for dedicated campaign
 
 0.96 (2/29/24)
 
