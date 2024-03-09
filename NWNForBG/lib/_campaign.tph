@@ -2,11 +2,7 @@ INCLUDE ~%MOD_FOLDER%/lib/edit_bam.tph~
 INCLUDE ~%MOD_FOLDER%/lib/campaigns.tph~
 INCLUDE ~%MOD_FOLDER%/lib/func.tph~
 INCLUDE ~%MOD_FOLDER%/lib/lua_functions.tph~
-/* todo:
-4. Главы НВН
-5. Год в НВН
-6. Количество золота. Надо в экселе таблицу накатать для оригинальных значений и на их основе сделать свою
-*/ 
+
 OUTER_SPRINT tilde "~"
 <<<<<<<< file.file
 %script_text%
@@ -29,7 +25,7 @@ COPY_EXISTING ~songlist.2da~ ~override~
 	END
     BUT_ONLY_IF_IT_CHANGES
 ACTION_IF !(VARIABLE_IS_SET %nwn_music%) BEGIN
-	OUTER_SPRINT nwn_music ~*~
+	OUTER_SPRINT nwn_music ~-1~
 END
 
 //NWSTARTA
@@ -42,9 +38,9 @@ START_YPOS          790
 START_AREA_TUTORIAL TU0015
 START_XPOS_TUTORIAL 607
 START_YPOS_TUTORIAL 660
-START_AREA_MP       NW1001 
-START_XPOS_MP       1073   
-START_YPOS_MP       790    
+START_AREA_MP       NW1001
+START_XPOS_MP       1073
+START_YPOS_MP       790
 START_XP            1500000
 START_XP_CAP        8000000
 START_MP_XP_CAP     8000000~
@@ -89,6 +85,7 @@ MONK	40	4	1	100
 SHAMAN	60	4	0	100~
 COPY ~file.file~ ~override/NWSTARTG.2DA~ EVALUATE_BUFFER PRETTY_PRINT_2DA
 
+/* Use me if non standard values of reputations loss should be used
 //NWNREPUT
 OUTER_SPRINT ~script_text~ ~2DA             V1.0
 0
@@ -116,13 +113,25 @@ OUTER_SPRINT ~script_text~ ~2DA             V1.0
 ~
 COPY ~file.file~ ~override/NWNREPUT.2DA~ EVALUATE_BUFFER PRETTY_PRINT_2DA
 VERBOSE
+*/
+
+//NWYEARS
+OUTER_SPRINT ~script_text~ ~2DA V1.0
+0
+                        VALUE
+STARTTIME               878400
+STARTYEAR               1372
+NORMALDAYMONTHFORMAT    15981
+SPECIALDAYMONTHFORMAT   16001
+~
+COPY ~file.file~ ~override/NWYEARS.2DA~ EVALUATE_BUFFER PRETTY_PRINT_2DA
+VERBOSE
 
 ACTION_IF FILE_EXISTS_IN_GAME ~NWNWORLD.WMP~ BEGIN
 	OUTER_SPRINT NWNWORLD ~NWNWORLD~
 END ELSE BEGIN
 	OUTER_SPRINT NWNWORLD ~WORLDMAP~
 END
-
 
 
 SILENT //biglogo bam
@@ -214,8 +223,8 @@ ACTION_IF NOT cmp_exists BEGIN
 			cmp_intro_movie     = ~NWNPRE~
 			cmp_import          = ~PARTY~
 			cmp_interact        = ~INTERACT~
-			cmp_years           = ~D5NWYRS~
-			cmp_reputation      = ~NWNREPUT~
+			cmp_years           = ~NWYEARS~
+			cmp_reputation      = ~REPUTATI~
 			cmp_clastext        = ~CLASTEXT~
 			cmp_racetext        = ~RACETEXT~
 	END
@@ -588,8 +597,6 @@ THEN
 END
 >>>>>>>>
 EXTEND_TOP ~NW1001.bcs~ ~NW1001_.baf~ EVALUATE_BUFFER
-
-COPY ~%MOD_FOLDER%/D5NWYRS.2DA~ ~override~
 
 APPEND ~MASTAREA.2DA~ ~NW1001 value~  UNLESS ~NW1001~
 
