@@ -5683,18 +5683,18 @@ INCLUDE ~NWNForBG/lib/names_for_spells.tph~
 //Add new wizard spells
 PRINT ~Adding new wizard spells~
 
-OUTER_SPRINT current_spell_name "WIZARD_SNILLOCS_SNOWBALL_SWARM"
-OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ "%current_spell_name%")
+OUTER_SPRINT current_spell_name ~WIZARD_SNILLOCS_SNOWBALL_SWARM~
+OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
-  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name="%current_spell_name%" RET current_spell_res=spell_res END
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name=~%current_spell_name%~ RET current_spell_res=spell_res END
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
-  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI204.SPL~ 2 2 ~WIZARD_SNILLOCS_SNOWBALL_SWARM~
+  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI204.SPL~ 2 2 ~current_spell_name~
     SAY 0x8      @103221
     SAY 0x50     @103222
-    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI204~ "%DEST_RES%"
-    SPRINT current_spell_res "%DEST_RES%"
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI204~ ~%DEST_RES%~
+    SPRINT current_spell_res ~%DEST_RES%~
 END
 
 COPY_EXISTING ~NWSCSNIL.ITM~ ~override~
@@ -5704,10 +5704,18 @@ COPY_EXISTING ~NWSCSNIL.ITM~ ~override~
 COPY_EXISTING ~NWAURIL1.CRE~ ~override~
   REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI204~ "%current_spell_res%"
 
-ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI328.SPL~ 2 3 ~WIZARD_ICELANCE~
-  SAY 0x8      @103175
-  SAY 0x50     @103176
-  SPRINT current_spell_res "%DEST_RES%"
+OUTER_SPRINT current_spell_name ~WIZARD_ICELANCE~
+OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
+ACTION_IF spell_slot>=0 THEN BEGIN
+  PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name=~%current_spell_name%~ RET current_spell_res=spell_res END
+END ELSE BEGIN
+  PRINT ~%current_spell_name% is not found, adding it~
+  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI328.SPL~ 2 3 ~%current_spell_name%~
+    SAY 0x8      @103175
+    SAY 0x50     @103176
+    SPRINT current_spell_res "%DEST_RES%"
+END
 
 COPY_EXISTING ~NWSCRX9.ITM~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
@@ -5716,19 +5724,35 @@ COPY_EXISTING ~NWSCRX9.ITM~ ~override~
 COPY_EXISTING ~NWAURIL1.CRE~ ~override~
   REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI328~ "%current_spell_res%"
 
-ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI428.SPL~ 2 4 ~WIZARD_ENFEEBLEMENT~
-  SAY 0x8      @103135
-  SAY 0x50     @103136
-  SPRINT current_spell_res "%DEST_RES%"
+OUTER_SPRINT current_spell_name ~WIZARD_ENFEEBLEMENT~
+OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
+ACTION_IF spell_slot>=0 THEN BEGIN
+  PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name=~%current_spell_name%~ RET current_spell_res=spell_res END
+END ELSE BEGIN
+  PRINT ~%current_spell_name% is not found, adding it~
+  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI428.SPL~ 2 4 ~%current_spell_name%~
+    SAY 0x8      @103135
+    SAY 0x50     @103136
+    SPRINT current_spell_res "%DEST_RES%"
+END
 
 COPY_EXISTING ~NWSCRX13.ITM~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
-ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI429.SPL~ 2 4 ~WIZARD_BELTYNS_BURNING_BLOOD~
-  SAY 0x8      @102862
-  SAY 0x50     @102863
-  SPRINT current_spell_res "%DEST_RES%"
+OUTER_SPRINT current_spell_name ~WIZARD_BELTYNS_BURNING_BLOOD~
+OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
+ACTION_IF spell_slot>=0 THEN BEGIN
+  PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name=~%current_spell_name%~ RET current_spell_res=spell_res END
+END ELSE BEGIN
+  PRINT ~%current_spell_name% is not found, adding it~
+  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI429.SPL~ 2 4 ~%current_spell_name%~
+    SAY 0x8      @102862
+    SAY 0x50     @102863
+    SPRINT current_spell_res "%DEST_RES%"
+END
 
 COPY_EXISTING ~NWCBR008.ITM~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
@@ -5740,19 +5764,35 @@ COPY_EXISTING ~NWHRPMAT.CRE~ ~override~
 COPY_EXISTING ~NWHRPMA2.CRE~ ~override~
   REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI429~ "%current_spell_res%"
 
-ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI733.SPL~ 2 7 ~WIZARD_MONSTER_SUMMONING_4~
-  SAY 0x8      @103882
-  SAY 0x50     @103883
-  SPRINT current_spell_res "%DEST_RES%"
+OUTER_SPRINT current_spell_name ~WIZARD_MONSTER_SUMMONING_4~
+OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
+ACTION_IF spell_slot>=0 THEN BEGIN
+  PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name=~%current_spell_name%~ RET current_spell_res=spell_res END
+END ELSE BEGIN
+  PRINT ~%current_spell_name% is not found, adding it~
+  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI733.SPL~ 2 7 ~%current_spell_name%~
+    SAY 0x8      @103882
+    SAY 0x50     @103883
+    SPRINT current_spell_res "%DEST_RES%"
+END
 
 COPY_EXISTING ~NWSCRX17.ITM~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
-ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI828.SPL~ 2 8 ~WIZARD_MONSTER_SUMMONING_5~
-  SAY 0x8      @103173
-  SAY 0x50     @103174
-  SPRINT current_spell_res "%DEST_RES%"
+OUTER_SPRINT current_spell_name ~WIZARD_MONSTER_SUMMONING_5~
+OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
+ACTION_IF spell_slot>=0 THEN BEGIN
+  PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name=~%current_spell_name%~ RET current_spell_res=spell_res END
+END ELSE BEGIN
+  PRINT ~%current_spell_name% is not found, adding it~
+  ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI828.SPL~ 2 8 ~%current_spell_name%~
+    SAY 0x8      @103173
+    SAY 0x50     @103174
+    SPRINT current_spell_res "%DEST_RES%"
+END
 
 COPY_EXISTING ~NWSCRX24.ITM~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
