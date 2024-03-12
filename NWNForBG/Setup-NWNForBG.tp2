@@ -5684,6 +5684,7 @@ INCLUDE ~NWNForBG/lib/names_for_spells.tph~
 PRINT ~Adding new wizard spells~
 
 OUTER_SPRINT current_spell_name ~WIZARD_SNILLOCS_SNOWBALL_SWARM~
+OUTER_SPRINT current_spell_scrool_res ~NWSCSNIL.ITM~
 OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
@@ -5691,8 +5692,16 @@ ACTION_IF spell_slot>=0 THEN BEGIN
     STR_VAR
       spell_name=EVAL ~%current_spell_name%~
     RET
-      current_spell_res=spell_res 
+      current_spell_res=spell_res
   END
+  COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
+    READ_LONG 0xC spell_name
+    READ_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+  COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
+    WRITE_LONG 0xC spell_name
+    WRITE_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
   ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI204.SPL~ 2 2 ~current_spell_name~
@@ -5702,7 +5711,7 @@ END ELSE BEGIN
     SPRINT current_spell_res ~%DEST_RES%~
 END
 
-COPY_EXISTING ~NWSCSNIL.ITM~ ~override~
+COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
@@ -5710,6 +5719,7 @@ COPY_EXISTING ~NWAURIL1.CRE~ ~override~
   REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI204~ "%current_spell_res%"
 
 OUTER_SPRINT current_spell_name ~WIZARD_ICELANCE~
+OUTER_SPRINT current_spell_scrool_res ~NWSCRX9.ITM~
 OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
@@ -5719,6 +5729,14 @@ ACTION_IF spell_slot>=0 THEN BEGIN
     RET
       current_spell_res=spell_res 
   END
+  COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
+    READ_LONG 0xC spell_name
+    READ_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+  COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
+    WRITE_LONG 0xC spell_name
+    WRITE_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
   ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI328.SPL~ 2 3 ~%current_spell_name%~
@@ -5727,7 +5745,7 @@ END ELSE BEGIN
     SPRINT current_spell_res "%DEST_RES%"
 END
 
-COPY_EXISTING ~NWSCRX9.ITM~ ~override~
+COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
@@ -5735,6 +5753,7 @@ COPY_EXISTING ~NWAURIL1.CRE~ ~override~
   REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI328~ "%current_spell_res%"
 
 OUTER_SPRINT current_spell_name ~WIZARD_ENFEEBLEMENT~
+OUTER_SPRINT current_spell_scrool_res ~NWSCRX13.ITM~
 OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
@@ -5744,6 +5763,14 @@ ACTION_IF spell_slot>=0 THEN BEGIN
     RET
       current_spell_res=spell_res 
   END
+  COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
+    READ_LONG 0xC spell_name
+    READ_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+  COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
+    WRITE_LONG 0xC spell_name
+    WRITE_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
   ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI428.SPL~ 2 4 ~%current_spell_name%~
@@ -5752,11 +5779,12 @@ END ELSE BEGIN
     SPRINT current_spell_res "%DEST_RES%"
 END
 
-COPY_EXISTING ~NWSCRX13.ITM~ ~override~
+COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
 OUTER_SPRINT current_spell_name ~WIZARD_BELTYNS_BURNING_BLOOD~
+OUTER_SPRINT current_spell_scrool_res ~NWCBR008.ITM~
 OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
@@ -5766,6 +5794,15 @@ ACTION_IF spell_slot>=0 THEN BEGIN
     RET
       current_spell_res=spell_res 
   END
+  COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
+    READ_LONG 0xC spell_name
+    READ_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+  COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
+    WRITE_LONG 0xC spell_name
+    WRITE_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
   ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI429.SPL~ 2 4 ~%current_spell_name%~
@@ -5773,8 +5810,7 @@ END ELSE BEGIN
     SAY 0x50     @102863
     SPRINT current_spell_res "%DEST_RES%"
 END
-
-COPY_EXISTING ~NWCBR008.ITM~ ~override~
+COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
@@ -5785,6 +5821,7 @@ COPY_EXISTING ~NWHRPMA2.CRE~ ~override~
   REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~SPWI429~ "%current_spell_res%"
 
 OUTER_SPRINT current_spell_name ~WIZARD_MONSTER_SUMMONING_4~
+OUTER_SPRINT current_spell_scrool_res ~NWSCRX17.ITM~
 OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
@@ -5794,6 +5831,14 @@ ACTION_IF spell_slot>=0 THEN BEGIN
     RET
       current_spell_res=spell_res 
   END
+  COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
+    READ_LONG 0xC spell_name
+    READ_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+  COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
+    WRITE_LONG 0xC spell_name
+    WRITE_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
   ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI733.SPL~ 2 7 ~%current_spell_name%~
@@ -5802,11 +5847,12 @@ END ELSE BEGIN
     SPRINT current_spell_res "%DEST_RES%"
 END
 
-COPY_EXISTING ~NWSCRX17.ITM~ ~override~
+COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
 OUTER_SPRINT current_spell_name ~WIZARD_MONSTER_SUMMONING_5~
+OUTER_SPRINT current_spell_scrool_res ~NWSCRX24.ITM~
 OUTER_SET spell_slot = IDS_OF_SYMBOL (~spell~ ~%current_spell_name%~)
 ACTION_IF spell_slot>=0 THEN BEGIN
   PRINT ~%current_spell_name% is found, it will be used in NWNForBG~
@@ -5816,6 +5862,14 @@ ACTION_IF spell_slot>=0 THEN BEGIN
     RET
       current_spell_res=spell_res 
   END
+  COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
+    READ_LONG 0xC spell_name
+    READ_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
+  COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
+    WRITE_LONG 0xC spell_name
+    WRITE_LONG 0x54 spell_desc
+  BUT_ONLY_IF_IT_CHANGES
 END ELSE BEGIN
   PRINT ~%current_spell_name% is not found, adding it~
   ADD_SPELL ~%MOD_FOLDER%/new_wi_spl/SPWI828.SPL~ 2 8 ~%current_spell_name%~
@@ -5824,7 +5878,7 @@ END ELSE BEGIN
     SPRINT current_spell_res "%DEST_RES%"
 END
 
-COPY_EXISTING ~NWSCRX24.ITM~ ~override~
+COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
   WRITE_ASCIIE 0xf6  ~%current_spell_res%~ #7
   WRITE_ASCIIE 0x126 ~%current_spell_res%~ #7
 
