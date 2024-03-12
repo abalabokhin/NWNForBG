@@ -1,41 +1,5 @@
 TODO:
 
-write in README about how spells works, with scrolls
-COPY ~NWNForBG/itm/NWSCRX9.itm~ ~override~
-SAY 0xC      @103175
-LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103176" END
-
-COPY ~NWNForBG/itm/NWSCSNIL.itm~ ~override~
-SAY 0xC      @103221
-LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103222" END
-
-COPY ~NWNForBG/itm/NWSCRX13.itm~ ~override~
-  SAY 0xC	@103135
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103136" END
-
-COPY ~NWNForBG/itm/NWCBR008.itm~ ~override~
-  SAY 0xC	@102862
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@102863" END
-
-COPY ~NWNForBG/itm/NWSCRX17.itm~ ~override~
-  SAY 0xC	@103882
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103883" END
-  
-COPY ~NWNForBG/itm/NWSCRX24.itm~ ~override~
-  SAY 0xC	@103173
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103174" END
-  
-WRITE_LONG 0x54
-  
-NWSCSNIL.ITM
-NWSCRX9.ITM
-NWSCRX13.ITM
-NWCBR008.ITM
-NWSCRX17.ITM
-NWSCRX24.ITM
-
-
-*. ToF complains on a spell(spells) - fix it after ToF release
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
