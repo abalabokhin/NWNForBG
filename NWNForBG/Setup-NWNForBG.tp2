@@ -5695,8 +5695,8 @@ ACTION_IF spell_slot>=0 THEN BEGIN
       current_spell_res=spell_res
   END
   COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
-    READ_LONG 0xC spell_name
-    READ_LONG 0x54 spell_desc
+    READ_LONG 0x8 spell_name
+    READ_LONG 0x50 spell_desc
   BUT_ONLY_IF_IT_CHANGES
   COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
     WRITE_LONG 0xC spell_name
@@ -5730,8 +5730,8 @@ ACTION_IF spell_slot>=0 THEN BEGIN
       current_spell_res=spell_res 
   END
   COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
-    READ_LONG 0xC spell_name
-    READ_LONG 0x54 spell_desc
+    READ_LONG 0x8 spell_name
+    READ_LONG 0x50 spell_desc
   BUT_ONLY_IF_IT_CHANGES
   COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
     WRITE_LONG 0xC spell_name
@@ -5764,8 +5764,8 @@ ACTION_IF spell_slot>=0 THEN BEGIN
       current_spell_res=spell_res 
   END
   COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
-    READ_LONG 0xC spell_name
-    READ_LONG 0x54 spell_desc
+    READ_LONG 0x8 spell_name
+    READ_LONG 0x50 spell_desc
   BUT_ONLY_IF_IT_CHANGES
   COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
     WRITE_LONG 0xC spell_name
@@ -5795,8 +5795,8 @@ ACTION_IF spell_slot>=0 THEN BEGIN
       current_spell_res=spell_res 
   END
   COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
-    READ_LONG 0xC spell_name
-    READ_LONG 0x54 spell_desc
+    READ_LONG 0x8 spell_name
+    READ_LONG 0x50 spell_desc
   BUT_ONLY_IF_IT_CHANGES
   COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
     WRITE_LONG 0xC spell_name
@@ -5832,8 +5832,8 @@ ACTION_IF spell_slot>=0 THEN BEGIN
       current_spell_res=spell_res 
   END
   COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
-    READ_LONG 0xC spell_name
-    READ_LONG 0x54 spell_desc
+    READ_LONG 0x8 spell_name
+    READ_LONG 0x50 spell_desc
   BUT_ONLY_IF_IT_CHANGES
   COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
     WRITE_LONG 0xC spell_name
@@ -5863,8 +5863,8 @@ ACTION_IF spell_slot>=0 THEN BEGIN
       current_spell_res=spell_res 
   END
   COPY_EXISTING ~%current_spell_res%.SPL~ ~override~
-    READ_LONG 0xC spell_name
-    READ_LONG 0x54 spell_desc
+    READ_LONG 0x8 spell_name
+    READ_LONG 0x50 spell_desc
   BUT_ONLY_IF_IT_CHANGES
   COPY_EXISTING ~%current_spell_scrool_res%~ ~override~
     WRITE_LONG 0xC spell_name
