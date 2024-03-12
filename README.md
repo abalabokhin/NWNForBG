@@ -125,6 +125,7 @@ In development:
 - Made new wizard spells to use lasready installed wizard spells (eg from IWDification if any)
 - Fixed some English texts thanks to Daulmakan.
 - Updated some item icons thanks to Daulmakan.
+- Fixed some audio in Aribeth dialog, thanks to sese_ser.
 
 0.96 (2/29/24)
 
