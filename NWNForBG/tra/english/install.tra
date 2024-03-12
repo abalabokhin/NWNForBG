@@ -736,7 +736,7 @@ As Nazgar had no immediate family the city guard did little investigation.  All 
 
 The powers of the blade may have become revealed to the caravan and thus kept, or may have remained unknown and sold as merely a silver sword.
 
-The Sword of Nazger is an unintelligent magic blade that is normally +1 to hit/damage, but gives a +3 bonus to hit/damage versus werecreatures of all types.  It also gives the wielder a tingling sensation similar to when one's hand falls asleep when werecreatures are within 60' of the user, though it won't indicate who it is that is a werecreature, nor get more powerful if the werebeast gets closer.   The blade will also appear to have a set of glyphs along the blade if viewed under a full moon.
+The Sword of Nazger is an unintelligent magic blade that is normally +1 to hit/damage, but gives a +3 bonus to hit/damage versus werecreatures of all types.  It also gives the wielder a tingling sensation similar to when one's hand falls asleep when werecreatures are within 60' of the user, though it won't indicate who it is that is a werecreature, nor get more powerful if the werebeast gets closer. The blade will also appear to have a set of glyphs along the blade if viewed under a full moon.
 
 STATISTICS:
 
@@ -1001,7 +1001,7 @@ Not Usable By:
 This note should be shown to someone in authority.~
 @102378 = ~In place of a signature, this letter bears the mark of a stylized, reptilian eye. It strikes you as somehow familiar, as if you've seen it before, perhaps in a different context. You examine the text closer...
 
-"Read this letter well. Commit its words to heart, for I am your Master and there are those who would seek to thwart us, the People of the Eye.Lady Aribeth has promoted some adventurers into the militia and sent them out to seek the creatures of the cure. They have already been successful once and they must not be so again. You must stalk them from every shadow, pursue them at every turn. Those creatures are to be set loose and hidden wherever they are out of reach."~
+"Read this letter well. Commit its words to heart, for I am your Master and there are those who would seek to thwart us, the People of the Eye. Lady Aribeth has promoted some adventurers into the militia and sent them out to seek the creatures of the cure. They have already been successful once and they must not be so again. You must stalk them from every shadow, pursue them at every turn. Those creatures are to be set loose and hidden wherever they are out of reach."~
 @102379 = ~In place of a signature, this letter bears the mark of a stylized, reptilian eye. Other than this marking, there is nothing to indicate who the author may be:
 
 "Our agent within Neverwinter has informed us that several of the Waterdhavian Creatures have been delivered to Aribeth and are now stored in the safety of Castle Never. If all of the creatures are recovered a cure for the Wailing Death will be discovered, and our efforts will be for naught. It will not be possible for our agent to orchestrate an attack upon Castle Never, as was done with the Academy. Those who serve Lady Aribeth must be stopped before they deliver the creatures to the safety of the castle, at any cost. Should you succeed in this your rewards will surpass your grandest imaginings. Should you fail, you will feel pain and suffering such as no mortal was meant to bear. «Long live the People of the Eye.»"
@@ -1724,13 +1724,13 @@ Not Usable By:
  Wizard Slayers~
 @102557 = ~Ice Shard~
 @102558 = ~Staff of Sight~
-@102559 = ~This spiral-shaped staff with silver inlay and amber tip allows to use Wizard Eye and True Vision spells once per day.
+@102559 = ~This spiral-shaped staff with silver inlay and amber tip allows to use Wizard Eye and True Sight spells once per day.
 
 STATISTICS:
 
 Charge abilities:
 - Can cast Wizard Eye ones per day
-- Can cast True Vision ones per day
+- Can cast True Sight ones per day
 
 Damage: 1d6+1
 Damage Type: crushing
@@ -3127,7 +3127,7 @@ Fey Spear: Requires fairy dust and a spear +1.~
 STATISTICS:
 
 Equipped abilities:
-- Froged from cold iron
+- Forged from cold iron
 - The wielder has +2 to Bastard Sword proficiency
 
 Combat abilities:
@@ -3298,7 +3298,7 @@ A portrait of Sir Reginald Rumbottom III has been found that appears to have the
 @103129 = ~City Hall~
 @103130 = ~Eisenfeldt's House~
 @103131 = ~Wanev's Cottage~
-@103132 = ~The Cracked Anvil.~
+@103132 = ~The Cracked Anvil~
 @103133 = ~Grove Entrance~
 @103134 = ~Docks Warehouse~
 @103135 = ~Enfeeblement~
@@ -3689,7 +3689,7 @@ Sages speculate about the "overnight" destruction of the creator races. There ar
 @103270 = ~At first glance, this ragged tome appears to detail the ancient history of the Sword Coast. Closer inspection reveals the words "Return of the Beast" scrawled across the original title in an almost childlike hand. Whole sections of the book are crossed out and replaced by an indecipherable code, and weird sketches fill the margins. At one point the unnamed second author breaks into near-coherence, though the entry is obscured by some sort of fluid or slime:
 "... a slow change. After ages of waiting the BEAST that ruled the land returns to take back their world [from the] upstarts. The BEAST will make slaves of the five crowns, and put whole races to the lash: the elves, the dwarves, and the kingdoms of men will all fall as one..."~
 @103271 = ~Wind by the Fireside~
-@103272 = ~"Wind by the Fireside" is a poem that has changed much over the ages - that much is clear to those who have studied it - but it is not known how much it has been altered, or why the alterations have taken place. Many scholars assume that these changes are representative of the natural evolution of language, as well as modern innovations of style. Little is known about the actual history of the poem, though some believe it to have some bearing upon the creator races of Faerûn. Others have speculated that it may have been written as an ode by a follower of some ancient religion. The popular version sung in Neverwinter is noted as the following, though other regions have variations in theme.
+@103272 = ~Wind by the Fireside is a poem that has changed much over the ages - that much is clear to those who have studied it - but it is not known how much it has been altered, or why the alterations have taken place. Many scholars assume that these changes are representative of the natural evolution of language, as well as modern innovations of style. Little is known about the actual history of the poem, though some believe it to have some bearing upon the creator races of Faerûn. Others have speculated that it may have been written as an ode by a follower of some ancient religion. The popular version sung in Neverwinter is noted as the following, though other regions have variations in theme.
 So as you shiver in the cold and the dark,
 Look into the fire and see in its spark - 
 My eye
@@ -3865,7 +3865,7 @@ Blacklake District: Northern quarter
 
 The directions are vague, but the book does mention that each tomb is likely sealed with a magically protected door. A riddle of some sort is the "key" to each. The solution to the Peninsula tomb door was "Emerald," which was answered by actually placing an emerald in the container immediately next to the door. It is worth noting that this action seemed to destroy the item, making it an expensive discovery.~
 @103319 = ~Lady Tanglebrook's Journal~
-@103320 = ~...Everyone, everyone is dead. All I have left is my cousin Alaefin, the Head Gaoler. He has been so good to me in the past, even building a tunnel between his office and the estate so I could visit him without running the risk of actually walking the dangerous peninsula streets. How fortuitous that these same tunnels now protect me from exposure to the plague. I am going to meet with him later today, for I know a good game of chess shall cheer me up from this spiteful malaise into which I have fallen.
+@103320 = ~Everyone, everyone is dead. All I have left is my cousin Alaefin, the Head Gaoler. He has been so good to me in the past, even building a tunnel between his office and the estate so I could visit him without running the risk of actually walking the dangerous peninsula streets. How fortuitous that these same tunnels now protect me from exposure to the plague. I am going to meet with him later today, for I know a good game of chess shall cheer me up from this spiteful malaise into which I have fallen.
 Hmm -- that was odd. I thought I heard something crashing around downstairs but when I went down there, there was nothing. Must have been the rats! Oh, how I hate living alone. I shall visit my cousin at once!~
 @103321 = ~Journal of Meldanen~
 @103322 = ~This book is full of tightly-scripted dates and notes, a journal kept by the wizard Meldanen. Most entries are short and to the point, regarding his various magical experiments and some of the creatures he has paid to have smuggled into the city for his examination.
@@ -3925,7 +3925,7 @@ No conclusion seems to have been drawn, but it is pointed out in several places 
 STATISTICS:
 
 Equipped Abilities:
-- 2.5 attacke per round
+- 2.5 attacks per round
 
 Charge Abilities:
 - Create 5 Arrows of Piercing once per day
@@ -4223,7 +4223,7 @@ Excerpt:
 The old fool has to be somewhere! Even Vengaul can't disappear into thin air. I want patrols by the ship, and I want someone to get a hold of that damn wench he favors. She's usually around the Seedy Tavern somewhere. Take her downstairs and find out where Vengaul would hide himself. Shut down all his plans, boys, and when we find that fool we'll be rich as kings! I won't let him give up the chance at the largest ransom we've ever seen! We're doing things MY way now.
 
 Callik~
-@103499 = ~"Tooth of the forge"~
+@103499 = ~Tooth of the forge~
 @103500 = ~Instructions from Callik~
 @103501 = ~This note is from Callik, the traitorous lieutenant of Vengaul Bloodsail. It appears to be instructions on how to access the sea caves through the city aqueducts.
 Excerpt:
@@ -4232,10 +4232,10 @@ When you have pulled what information you can from Vengaul's wench, join us in t
 Callik
 
 (A complex series of hand motions is detailed below. You will definitely need this note present to reproduce them accurately enough to pass the gate.)~
-@103502 = ~"A wall at arms length"~
+@103502 = ~A wall at arms length~
 @103503 = ~Wizards' Records~
 @103504 = ~This sheet contains formulas and calculations that you do not understand. However, from the contents you can understand that this is the laboratory where magicians charged Wands of Lightning.~
-@103505 = ~"A splinter delivered in flight"~
+@103505 = ~A splinter delivered in flight~
 @103506 = ~Elynwyd's Signet Ring~
 @103507 = ~This finely crafted ring bears the family crest of a proud and noble elven family.~
 @103508 = ~Child's Bear~
@@ -4272,7 +4272,7 @@ STATISTICS:
 Seven layers of Stone Skin
 Duration: 12 hours~
 @103536 = ~Potion of Protection from Evil~
-@103537 = ~The potion creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack        roll. Second, summoned demons cannot target the protected creature.
+@103537 = ~The potion creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Second, summoned demons cannot target the protected creature.
 
 STATISTICS:
 
@@ -5016,7 +5016,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-- If target fail saving throw vs. Poison it will be poisoned for 2 rounds and will take 2 damage per second
+- If target fails a saving throw vs. Poison it will be poisoned for 2 rounds and will take 2 damage per second
 
 THAC0: +3
 Damage: 1d8 +3
