@@ -118,14 +118,14 @@ Version History
 ---------------
 In development:
 
-- Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773
-- Fixed icon for several containers, thanks to sese\_ser
-- Fixed reputation table for the dedicated campaign
-- Fixed some resources (itm, cre, etc), thanks to shadowlich
-- Made new wizard spells to use lasready installed wizard spells (eg from IWDification if any)
+- Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773.
+- Fixed icon for several containers, thanks to sese\_ser.
+- Fixed reputation table for the dedicated campaign.
+- Fixed some resources (itm, cre, etc), thanks to shadowlich.
+- Made new wizard spells to use lasready installed wizard spells (eg from IWDification if any).
 - Fixed some English texts thanks to Daulmakan.
 - Updated some item icons thanks to Daulmakan.
-- Fixed some audio in Aribeth dialog, thanks to sese_ser.
+- Fixed some audio in Aribeth dialog, thanks to sese\_ser and AGKanevchev.
 
 0.96 (2/29/24)
 
