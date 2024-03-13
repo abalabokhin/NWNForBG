@@ -119,6 +119,7 @@ Version History
 In development:
 
 - Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773.
+- Updated Chinese translation, thanks to Lzw104522773.
 - Fixed icon for several containers, thanks to sese\_ser.
 - Fixed reputation table for the dedicated campaign.
 - Fixed some resources (itm, cre, etc), thanks to shadowlich.
