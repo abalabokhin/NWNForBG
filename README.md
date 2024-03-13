@@ -124,9 +124,10 @@ In development:
 - Fixed reputation table for the dedicated campaign.
 - Fixed some resources (itm, cre, etc), thanks to shadowlich.
 - Made new wizard spells to use lasready installed wizard spells (eg from IWDification if any).
-- Fixed some English texts thanks to Daulmakan.
-- Updated some item icons thanks to Daulmakan.
+- Fixed some English texts, thanks to Daulmakan.
+- Updated some item icons, thanks to Daulmakan.
 - Fixed some audio in Aribeth dialog, thanks to sese\_ser and AGKanevchev.
+- Changed LOTAR icon, thanks to Daulmakan and scheele.
 
 0.96 (2/29/24)
 
