@@ -1,5 +1,18 @@
 TODO:
 
+Installing on empty bg2ee - похоже заклинание есть в таблице, но нужен файл а его нет - сделать проверку на это
+
+35115 WIZARD_MONSTER_SUMMONING_4 is found, it will be used in NWNForBG
+35116 Copying and patching 1 file ...
+35117 
+35118 ERROR locating resource for 'COPY' 
+35119 Resource [SPWI610.SPL] not found in KEY file:
+35120 >       [./chitin.key]
+35121 Stopping installation because of error.
+35122 Stopping installation because of error.
+35123 
+
+для горготы - пусть выдает кольцо защиты +3 - RING41
 
 *. Portrait for Lokar seems to be an edit (or an uncanny resemblance) of Domingo Sarmiento, statesman and former president of Argentina. While most won't know him, this is immersion-breaking. I'd suggest changing it.
 
