@@ -222,17 +222,17 @@ END
 
 IF ~~ THEN BEGIN 24 // from: 23.1
   SAY @44
-  IF ~~ THEN DO~TakePartyItem("NWHEADD1")GiveGoldForce(8000)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
+  IF ~~ THEN DO~TakePartyItem("NWHEADD1")GiveItemCreate("NWDRAC3M",LastTalkedToBy,1,1,1)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
 END
 
 IF ~~ THEN BEGIN 25 // from: 23.2
   SAY @46
-  IF ~~ THEN DO~TakePartyItem("NWHEADD1")GiveGoldForce(8000)GiveItemCreate("NWDRAC3M",LastTalkedToBy,1,1,1)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
+  IF ~~ THEN DO~TakePartyItem("NWHEADD1")GiveItemCreate("NWDRAC3M",LastTalkedToBy,1,1,1)GiveItemCreate("RING41",LastTalkedToBy,1,1,1)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
 END
 
 IF ~~ THEN BEGIN 26 // from: 23.3
   SAY @47
-  IF ~~ THEN DO~TakePartyItem("NWHEADD1")GiveGoldForce(8000)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
+  IF ~~ THEN DO~TakePartyItem("NWHEADD1")GiveItemCreate("NWDRAC3M",LastTalkedToBy,1,1,1)AddexperienceParty(120000)EraseJournalEntry(@106297)~ SOLVED_JOURNAL @106298 EXIT
 END
 
 IF ~~ THEN BEGIN 27 // from: 23.4
