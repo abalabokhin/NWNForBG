@@ -130,6 +130,7 @@ In development:
 - Changed LOTAR icon, thanks to Daulmakan and scheele.
 - Removed "boat" from NW3000 area, thanks to Roberciiik and Daulmakan.
 - Cleaned some resources, thanks to shadowlich.
+- Fixed NWN Campaign logo, thanks to p\_zombie.
 
 0.96 (2/29/24)
 
