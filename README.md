@@ -140,6 +140,7 @@ In development:
 - Removed "boat" from NW3000 area, thanks to Roberciiik and Daulmakan.
 - Cleaned some resources, thanks to shadowlich.
 - Fixed NWN Campaign logo, thanks to p\_zombie.
+- Made enemies not to go in NWN Core from other disctricts, thanks to tipun and sese\_ser.
 
 0.96 (2/29/24)
 
