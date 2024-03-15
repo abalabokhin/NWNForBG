@@ -129,6 +129,7 @@ In development:
 - Fixed some audio in Aribeth dialog, thanks to sese\_ser and AGKanevchev.
 - Changed LOTAR icon, thanks to Daulmakan and scheele.
 - Removed "boat" from NW3000 area, thanks to Roberciiik and Daulmakan.
+- Cleaned some resources, thanks to shadowlich.
 
 0.96 (2/29/24)
 
