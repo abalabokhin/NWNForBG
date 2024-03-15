@@ -34,6 +34,15 @@ Thanks and Acknowledgements
 * arcanecoast.ru - thanks to the whole community for the help with weidu modding and mod/assembly testing, bug reporting, etc
 * gibberlings3.net - thanks to the whole community for the help with weidu modding, testing, bug reporting, etc
 
+
+Copyright Concerns
+------------------
+
+Some area maps and other visual assets were taken from other games (Pillars of Eternity, Witcher 3). If you
+are a right owner and your intellectual property cannot be used in this mod, let me know and I will remove your
+assets from the mod or remove the mod competely from the public access (if removing your assets from the mod is not
+possible).
+
 Languages
 ---------
 
