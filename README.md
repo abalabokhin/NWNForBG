@@ -141,6 +141,7 @@ In development:
 - Cleaned some resources, thanks to shadowlich.
 - Fixed NWN Campaign logo, thanks to p\_zombie.
 - Made enemies not to go in NWN Core from other disctricts, thanks to tipun and sese\_ser.
+- Fixed some dialogs with Tomi, thanks to scheele.
 
 0.96 (2/29/24)
 
