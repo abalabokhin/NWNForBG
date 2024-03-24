@@ -179,7 +179,6 @@ ADD_KIT ~SEHHANEEN~
  SAY @88750
  SAY @88751
 
-
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     INCLUDE ~NWNForBG/lib/fl#add_kit_ee.tpa~
     LAF fl#add_kit_ee

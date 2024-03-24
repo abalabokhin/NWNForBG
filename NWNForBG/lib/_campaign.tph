@@ -588,6 +588,7 @@ IF
 	Global("NWStandalone","GLOBAL",0)
 THEN
 	RESPONSE #100
+		SetPlayerSound(Player1,@2000300,EXISTANCE5)
 		SetGlobal("NWStandalone","GLOBAL",1)
 		SetGlobal("DREAM","GLOBAL",7)
 		SetGlobal("Chapter","GLOBAL",1)
