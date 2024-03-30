@@ -127,7 +127,7 @@ Version History
 ---------------
 In development:
 
-0.96 (03/30/24)
+0.97 (03/30/24)
 
 - Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773.
 - Updated Chinese translation, thanks to Lzw104522773.
