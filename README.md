@@ -3,7 +3,7 @@ NWNForBG
 
 Neverwinter Nights for Baldur's Gate
 ------------------------------------
-Version: 0.96
+Version: 0.97
 
 Author: AGKanevchev
 ---------------
@@ -127,23 +127,25 @@ Version History
 ---------------
 In development:
 
+0.96 (03/30/24)
+
 - Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773.
 - Updated Chinese translation, thanks to Lzw104522773.
 - Fixed icon for several containers, thanks to sese\_ser.
 - Fixed reputation table for the dedicated campaign.
-- Fixed some resources (itm, cre, etc), thanks to shadowlich.
-- Made new wizard spells to use lasready installed wizard spells (eg from IWDification if any).
+- Fixed and cleaned some resources (itm, cre, etc), thanks to shadowlich.
+- Made new wizard spells to use already installed wizard spells (eg from IWDification if any).
 - Fixed some English texts, thanks to Daulmakan.
 - Updated some item icons, thanks to Daulmakan.
 - Fixed some audio in Aribeth dialog, thanks to sese\_ser and AGKanevchev.
 - Changed LOTAR icon, thanks to Daulmakan and scheele.
 - Removed "boat" from NW3000 area, thanks to Roberciiik and Daulmakan.
-- Cleaned some resources, thanks to shadowlich.
 - Fixed NWN Campaign logo, thanks to p\_zombie.
 - Made enemies not to go in NWN Core from other disctricts, thanks to tipun and sese\_ser.
 - Fixed some dialogs with Tomi, thanks to scheele.
+- Add a dedicated bio if start NWN as a dedicated campaign, thanks to scheele.
 
-0.96 (2/29/24)
+0.96 (02/29/24)
 
 - Added a dedicated map option as an optional component (EE/EET only) to change the map during NWN content and change it back after returning to Amn. In this case there is no need in BP-BGT-Worldmap mod. The component is coded by Apxu and the map image is prepared by p\_zombie. Weidu code to place icons on a map is taken from BP-BGT-Worldmap mod.
 - Converted TIS and WED files to have proper water overlay thanks to Sour, AGKanevchev and Apxu.
@@ -159,7 +161,7 @@ In development:
 - All the map icon positions for BP-BGT-Worldmap mod updated to match BP-BGT-Worldmap v13.
 - Small various bugs are fixed thanks to everyone who reported about them.
 
-0.95 (1/12/24)
+0.95 (01/12/24)
 
 - Improved quality of English and Russian movies for EE version, added French movies (thanks to JohnBob).
 - French texts are partially fixed and French sounds are added for some NPCs, thanks to JohnBob.
