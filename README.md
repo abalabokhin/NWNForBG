@@ -127,6 +127,10 @@ Version History
 ---------------
 In development:
 
+- Updated Chinese translation, thanks to Lzw104522773.
+- Updated Russian translation.
+- Minor resource corrections.
+
 0.97 (03/30/24)
 
 - Added movies for Chinese language (English ones with Chinese subtitles), thanks to Lzw104522773.
