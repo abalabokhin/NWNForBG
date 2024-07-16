@@ -130,6 +130,7 @@ In development:
 - Updated Chinese translation, thanks to Lzw104522773.
 - Updated Russian translation.
 - Minor resource corrections.
+- Fixed some sounds for dialogs, thanks to sese\_ser.
 
 0.97 (03/30/24)
 
