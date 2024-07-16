@@ -131,7 +131,7 @@ In development:
 - Updated Russian translation.
 - Minor resource corrections.
 - Fixed some sounds for dialogs, thanks to sese\_ser.
-- Corrected some dialogs in English, thanks to sese\_ser.
+- Corrected some dialogs in English and other languages, thanks to sese\_ser and lynx.
 
 0.97 (03/30/24)
 
