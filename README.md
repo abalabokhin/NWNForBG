@@ -17,6 +17,9 @@ Wiedu Adaptation: paladin84
 [Github sources](https://github.com/abalabokhin/NWNForBG)
 -------------------
 
+[FAQ](https://github.com/abalabokhin/NWNForBG/wiki/FAQ)
+-------------------
+
 Thanks and Acknowledgements
 -----------------------
 
