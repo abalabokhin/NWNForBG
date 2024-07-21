@@ -1385,6 +1385,10 @@ COPY ~NWNForBG/cre/NW2302WT.cre~ ~override~
   SAY 0x8	@102095
   SAY 0xC	@102095
 
+COPY ~NWNForBG/cre/NWAMEL.cre~ ~override~
+  SAY 0x8	@110004
+  SAY 0xC	@110004
+
 COPY ~NWNForBG/cre/NWA#AMNM.cre~ ~override~
   SAY 0x8	@88560
   SAY 0xC	@88560
