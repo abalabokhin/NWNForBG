@@ -5,7 +5,7 @@ IF
 THEN
 	RESPONSE #100
 		CreateCreatureObjectOffset("NW2902TR",LastTrigger,[1.1])  // No such index
-		ActionOverride("NW2902TR",StartDialog("NWCOCOON",LastTrigger))
+		ActionOverride("NW2902TR",StartDialog("NWCOCOON",[PC]))
 END
 
 IF
