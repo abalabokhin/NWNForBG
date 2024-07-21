@@ -132,7 +132,7 @@ In development:
 
 - Updated Chinese translation, thanks to Lzw104522773.
 - Updated Russian translation.
-- Minor resource corrections.
+- Minor resource corrections, thanks to sese\_ser and lynx.
 - Fixed some sounds for dialogs, thanks to sese\_ser.
 - Corrected some dialogs in English and other languages, thanks to sese\_ser and lynx.
 - Corrected delays, when werewolf kids start talking to you, now they do it immediately after transforming into humans, thanks to lynx.
