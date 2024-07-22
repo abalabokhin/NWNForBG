@@ -137,6 +137,7 @@ In development:
 - Corrected some dialogs in English and other languages, thanks to sese\_ser and lynx.
 - Corrected delays, when werewolf kids start talking to you, now they do it immediately after transforming into humans, thanks to lynx.
 - Corrected some minor script erros, thanks to lynx.
+- Fixed Belial's check on Protection from Evil for oBG. Now it recognize it from spells as well, thanks to lynx.
 
 0.97 (03/30/24)
 

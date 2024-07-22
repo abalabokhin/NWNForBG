@@ -344,6 +344,66 @@ COPY_EXISTING ~SPWI103.SPL~ ~override/SPWI103.SPL~
   END
 END
 
+// For oBG add proficiency 117 (PROTECTION_FROM_EVIL) to targets of all variants of this spell (for NWBELIAL Summoning quest).
+ACTION_IF GAME_IS ~bg2 tob bgt~ THEN BEGIN
+  ACTION_FOR_EACH spell_res IN
+    ~SPCL213.SPL~ //Protection From Evil
+    ~SPCL233.SPL~ //Protection From Evil 10' radius
+    ~SPIN121.SPL~ //Protection From Evil
+    ~SPPR107.SPL~ //Protection From Evil
+    ~SPPR408.SPL~ //Protection From Evil 10' radius
+    ~SPWI113.SPL~ //Protection From Evil
+  BEGIN
+    COPY_EXISTING ~%spell_res%~ ~override/%spell_res%~
+      READ_LONG 0x64 abil_off
+      READ_SHORT 0x68 abil_num
+      READ_LONG 0x6a fx_off
+
+      FOR (i = 0; i < "%abil_num%"; i += 1) BEGIN //parse each ability
+      //verify specific ability - check the ability is the correct one to change here, must be unique
+      READ_BYTE (%abil_off% + %i% * 0x28) abil_type
+      PATCH_IF (%abil_type% = 1) BEGIN
+        READ_SHORT (%abil_off% + %i% * 0x28 + 0x1e) abil_fx_num
+        READ_SHORT (%abil_off% + %i% * 0x28 + 0x20) abil_fx_idx
+
+        //read the duration of previous effect
+        READ_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0xe) effect_duration
+
+        //add effect
+        INSERT_BYTES (%fx_off% + %abil_fx_idx% * 0x30) 0x30
+
+        //effect fields
+        WRITE_SHORT (%fx_off% + %abil_fx_idx% * 0x30) 233 //type
+        WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x2) 2 //target
+        WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x3) 1 //power
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x4) 1 //param1
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x8) 117 //param2
+        WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0xc) 0 //timing mode
+        WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0xd) 3 //dispel/resistance
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0xe) %effect_duration% //duration
+        WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x12) 100 //prob1
+        WRITE_BYTE (%fx_off% + %abil_fx_idx% * 0x30 + 0x13) 0 //prob2
+        WRITE_ASCII (%fx_off% + %abil_fx_idx% * 0x30 + 0x14) ~~ #8 //resource
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x1c) 0 //#dice, maxlevel
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x20) 0 //dicesize, minlevel
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x24) 0 //save type
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x28) 0 //save bonus
+        WRITE_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0x2c) 0 //unknown  END
+
+        //update #ability effects
+        SET %abil_fx_num% += 1
+        WRITE_SHORT (%abil_off% + %i% * 0x28 + 0x1e) %abil_fx_num%
+
+        //update ability effect indices for abilities after current one
+        FOR (j = %i% + 1; j < "%abil_num%"; j += 1) BEGIN
+          READ_SHORT (%abil_off% + %j% * 0x28 + 0x20) abil_fx_idx
+          WRITE_SHORT (%abil_off% + %j% * 0x28 + 0x20) (%abil_fx_idx% + 1)
+        END
+      END
+    END
+  END
+END
+
 //Videos
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   ACTION_IF (DIRECTORY_EXISTS ~NWNForBG/movies_ee/%LANGUAGE%~) BEGIN
