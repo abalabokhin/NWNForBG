@@ -366,8 +366,14 @@ ACTION_IF GAME_IS ~bg2 tob bgt~ THEN BEGIN
         READ_SHORT (%abil_off% + %i% * 0x28 + 0x1e) abil_fx_num
         READ_SHORT (%abil_off% + %i% * 0x28 + 0x20) abil_fx_idx
 
-        //read the duration of previous effect
-        READ_LONG (%fx_off% + %abil_fx_idx% * 0x30 + 0xe) effect_duration
+        effect_duration = 180
+        //Read the duration of Display Portrait Icon effect if any
+        FOR (j = "%abil_fx_idx%"; j < "%abil_fx_idx%" + "%abil_fx_num%"; j += 1) BEGIN
+          READ_SHORT (%fx_off% + %j% * 0x30) effect_type
+          PATCH_IF (%effect_type% = 142) BEGIN
+            READ_LONG (%fx_off% + %j% * 0x30 + 0xe) effect_duration
+          END
+        END
 
         //add effect
         INSERT_BYTES (%fx_off% + %abil_fx_idx% * 0x30) 0x30
