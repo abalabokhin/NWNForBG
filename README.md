@@ -120,6 +120,7 @@ What else needs to be done:
    "Usable by", add such lines in install-ee.tra file.
 9. If you have any questions, feel free to ask on the support forums.
 10. Try to fix all low intellect dialog options, they are in the texts by mistake. In English they look like "me go".
+11. Fix @105718 in install.tra - the description was changed compared to the original NWN games. Two stones must be set in each of primary color pools (see how it is in English or Russian).
 
 Known Bugs:
 -----------
