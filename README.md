@@ -131,6 +131,8 @@ Version History
 ---------------
 In development:
 
+- Fixed note for the mixing colors quest in English, so it is less confusing.
+
 0.98 (07/23/24)
 
 - Updated Chinese translation, thanks to Lzw104522773.
