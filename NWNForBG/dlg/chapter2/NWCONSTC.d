@@ -81,7 +81,7 @@ END
 
 IF ~~ THEN BEGIN 10 // from: 3.2
   SAY @24
-  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(250)SetGlobal("NWPriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
+  IF ~  PartyGoldGT(999)~ THEN REPLY @25 DO ~TakePartyGold(1000)SetGlobal("NWPriceXL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 18
   IF ~  PartyGoldGT(249)CheckStatGT(LastTalkedToBy(Myself),8,CHR)~ THEN REPLY @26 DO ~TakePartyGold(250)SetGlobal("NWPriceL","GLOBAL",1)GiveItem("NWMisc01",LastTalkedToBy)SetGlobal("Success","LOCALS",1)SetGlobal("Failure","LOCALS",0)~ GOTO 19
   IF ~  PartyGoldGT(249)CheckStatLT(LastTalkedToBy(Myself),9,CHR)~ THEN REPLY @26 GOTO 32
   IF ~~ THEN REPLY @27 GOTO 20
