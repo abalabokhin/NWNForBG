@@ -54,7 +54,7 @@ Languages
 * French, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * German, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Italian, partially taken from the original NWN texts with script, partially English (needs checking/translating)
-* Spanish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
+* Spanish (finished), partially taken from the original NWN texts with script and partially made by AlleyV and Lechuk87
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Simplified Chinese (finished) partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
 
@@ -96,7 +96,7 @@ Depending on second component of the mod, BP-BGT-Worldmap v13.0 or later might n
 
 Translator Notes:
 ----------------
-Russian, English and Chinese languages are pretty much done, but any corrections are always welcome.
+Russian, English, Spanish and Chinese languages are pretty much done, but any corrections are always welcome.
 Other languages are mixed English and other language lines (eg French and English). For every line on English,
 the "closest" line(s) in the language (eg French) from the original NWN texts is shown in comments. Often,
 the original NWN lines were changed in English and should be change in the other language respectively. For
@@ -132,6 +132,7 @@ Version History
 In development:
 
 - Fixed note for the mixing colors quest in English, so it is less confusing.
+- Added Spanish translation made by AlleyV and Lechuk87
 
 0.98 (07/23/24)
 
