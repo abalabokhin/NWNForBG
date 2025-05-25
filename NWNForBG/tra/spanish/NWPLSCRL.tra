@@ -1,6 +1,5 @@
-@0 = ~Oh, you're a mage. How nice to find such an educated customer here in Port Llasta. I have some scrolls for you to sell, would you care to see them?~/*Sigue tu camino. Es agradable ver a buena gente como tú en Puerto Final. Has realizado cambios en esta trama. ¿Quieres guardarlos?*/
-@1 = ~Sí, tú enseñarme lo que tú tener.~
-@2 = ~No, not now, maybe later.~/*Yo hacerlo tarde o quizá temprano.*/
-@3 = ~Oh, that's too bad. Well, come back again, I'll be waiting for you.~/*"¡Es una lástima!" Bueno, tú sí que eres un cerebrito.*/
-@4 = ~Good afternoon. Are there any mages among you? I have some scrolls for sale, would you care to take a look?~
-/*tarde ¿Hay algún lugar seguro? Quiero señalar algo.*/
+@0 = ~: ¡Oh, eres un mago! Qué bueno encontrar un cliente tan educado aquí en Puerto Llasta. Tengo unos pergaminos para que los vendas, ¿te gustaría verlos? ~
+@1 = ~Sí, muéstrame lo que tienes.~
+@2 = ~No, ahora no, tal vez más tarde.~
+@3 = ~¡Qué lástima! Bueno, vuelve pronto, te espero. ~
+@4 = ~Buenas tardes. ¿Hay algún mago entre ustedes? Tengo algunos pergaminos a la venta, ¿les importaría echarles un vistazo? ~

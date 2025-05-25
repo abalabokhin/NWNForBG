@@ -1,17 +1,15 @@
-@0 = ~Así que... *éste* es el último grupo de participantes, ¿verdad? Muy bien, me llamo Jaroo y soy el Maestro de Juegos. Permitid que os explique cómo funciona esto:~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Entrada a las criptas. Cuando esta casilla esté marcada, el editor te pedirá el texto inmediatamente después de que agregues un nodo. Tú decirme todo lo que saber y no hacerme perder el tiempo. Si quieres cambiar el futuro, debes hacerlo tú mismo.*/
-@2 = ~Ni Mutamin ni yo somos responsables de vuestras muertes ni de las muertes de vuestros compañeros. Si entráis, es responsabilidad vuestra.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Bueno, si alguien desea entrar, que se acerque a mí con el oro y le teleportaré al interior.*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*¿Sí, mi señor? ¿Estas preparado para entrar en la mazmorra?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*Sí, lo estoy. Aquí tienes mis 500 de oro.*/
-@6 = ~I'm not ready yet.~ /*No, la verdad es que no.*/
-@7 = ~Sí, ¿pero de verdad que son necesarias 500 piezas de oro?~
-@8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
-/*Excelente. ¡Prepárate entonces, mi señor! ¡¡Que empiece la competición!!*/
-@10 = ~Como quieras. Estaré aquí por si cambias de idea.~
-@11 = ~Lo son. Cada aportación se suma al total que se dará al ganador que atraviese toda la mazmorra. Como todos tenéis las mismas posibilidades de conseguirlo, me temo que no sería justo ofrecer un descuento. Bien, ¿estáis preparados para la competición?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Deprisa. El último sello se ha roto y las ruinas de Illusk quedan abiertas para ti.*/
-@13 = ~Has ganado la competición. ¡Felicidades! Habla con Mutamin para que te dé tu recompensa.~ [NWJAR052]
-@14 = ~La competición ya ha terminado. Vuelve en otro momento, cuando la mazmorra haya sido remodelada para una nueva.~ [NWJAR053]
-@15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
-/*La competición ya ha terminado. Vuelve en otro momento, cuando la mazmorra haya sido remodelada para una nueva.*/
+@0 = ~Entonces... *este* es el último grupo de participantes, ¿verdad? Muy bien. Mi nombre es Jaroo, Maestro de los Juegos. Permítanme explicarles cómo funcionará esto: ~[NWJAR050]
+@1 = ~Entrar a la mazmorra cuesta 1000 de oro. Salir de esta mazmorra por la puerta norte te llevará al primer nivel del laberinto; hay tres niveles en total. Debes explorar todas las mazmorras y encontrar los cuatro cristales. Si logras hacerlo y resuelves el acertijo, regresarás aquí como ganador. ~
+@2 = ~Ni yo ni Mutamin somos responsables de sus muertes ni de las de sus compañeros. Si entran, el riesgo es suyo. ~[NWJAR056]
+@3 = ~Ahora bien, si alguno desea entrar, acérquese a mí con su oro y le dejaré entrar al laberinto. ~[NWJAR057]
+@4 = ~Sí, mi <LADYLORD>. ¿Estás lista para entrar a la mazmorra? ~[NWJAR051]
+@5 = ~Sí, lo soy. Aquí tienes tus 1000 de oro.~
+@6 = ~Aún no estoy listo.~
+@7 = ~Sí, pero ¿son realmente necesarias 1000 piezas de oro?~
+@8 = ~¡Excelente! Pasen, voy a abrir la reja. ¡Que empiece el concurso! ~
+@10 = ~Como desees. Me quedaré aquí si cambias de opinión. ~
+@11 = ~Así es. Cada participación se suma al total que se otorgará al ganador que supere la mazmorra. Dado que tienen las mismas posibilidades de éxito, me temo que no sería justo ofrecer un descuento. ¿Listos para la competencia? ~
+@12 = ~¡Date prisa, <LADYLORD>! La competencia ya comenzó, y los demás competidores podrían llevarte ventaja. ~
+@13 = ~¡Ganaste la competencia! ¡Felicidades! ¡Habla con Mutamin para recoger tu recompensa! ~[NWJAR052]
+@14 = ~¡La competencia está ganada! ¡Vuelve pronto, cuando la mazmorra haya sido rediseñada para la secuela! ~[NWJAR053]
+@15 = ~Lo siento, pero perdiste la competencia. ¡Vuelve en otro momento, cuando la mazmorra haya sido rediseñada para la secuela! ~

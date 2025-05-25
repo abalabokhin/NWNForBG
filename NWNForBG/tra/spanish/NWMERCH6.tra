@@ -1,12 +1,11 @@
-@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*Cliente noble Tengo una copia de tu carta y me ocuparé del asunto. ¡Saludos de nuevo! ¡Encantado de volver a verte!*/
-@1 = ~Tengo que hacerte unas preguntas.~
+@0 = ~¡Ah, el cliente! Tengo muchas frutas y verduras a la venta, ¿las acepta? ¡Todo está limpio, sin infecciones, se lo aseguro! ~
+@1 = ~Necesito hacer algunas preguntas.~
 @2 = ~Adiós.~
-@3 = ~Hmm, I can tell you about my product.~ /*Claro, te lo explicaré de nuevo.*/
-@4 = ~Necesito información sobre lugares de Noyvern.~
-@5 = ~¿Qué sabes sobre la plaga?~
-@6 = ~¿Has oído algo extraño? ¿Algún rumor?~
-@7 = ~Come again.~ /*¡Hasta pronto!*/
-@8 = ~Sorry, I can't help. Ask someone else about it.~ /*Lo siento, no puedo ayudarte. "Pregúntale a otro."*/
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*Todo el mundo sabe algo acerca de la plaga. La mitad de lo que saben es falso y la otra mitad no son más que rumores. No estoy seguro de poder añadir nada a todo eso.*/
-@10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~
-/*¿Qué pueden haber encontrado? Ahora no tengo tiempo para hablar. Este zoo parece algo pequeño al lado de la plaga.*/
+@3 = ~Hmm, puedo contarte sobre mi producto.~
+@4 = ~Necesito información sobre lugares en Neverwinter.~
+@5 = ~¿Qué sabes de la peste?~
+@6 = ~¿Has oído algo raro? ¿Algún rumor? ~
+@7 = ~Vuelve.~
+@8 = ~Lo siento, no puedo ayudarte. Pregúntale a alguien más. ~
+@9 = ~Todo el mundo sabe algo sobre la peste. La mitad no es verdad y la otra mitad son chismes. No creo tener nada que añadir. ~
+@10 = ~¿Qué habrá oído? No tengo con quién hablar ahora mismo. No hay suficientes clientes, todos le temen a la peste. ~

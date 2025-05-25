@@ -1,9 +1,8 @@
-@0 = ~Welcome to my shop! I sell potions here. Would you like to take a look at my wares?~/*Te doy la bienvenida. Esto está acabado. ¿Querrías adquirir un esclavo?*/
-@1 = ~Yes, please. Show me what you've got.~/*"Sí, por favor." Enséñame lo que hay que tener...*/
-@2 = ~Oh, no, no, some other time.~/*Valer; quizás en otra ocasión.*/
-@3 = ~You're back! Would you like to take a look at my potions?~/*¡Te ha tocado! Me gustaría echarle un vistazo a tu inventario.*/
-@4 = ~Yeah, I guess so.~/*Sí... eso creo.*/
-@5 = ~Quizá en otro momento.~
-@6 = ~I'm sure you'll be satisfied, <SIRMAAM>!~/*Lo haré lo mejor que pueda, señor.*/
-@7 = ~Hope we see you again!~
-/*¡Ja! ¡Vuelvo a sentirme joven!*/
+@0 = ~¡Bienvenidos a mi tienda! Vendo pociones. ¿Quieren echar un vistazo a mis productos? ~
+@1 = ~Sí, por favor. Muéstrame lo que tienes. ~
+@2 = ~Ay, no, no, en otro momento.~
+@3 = ~¡Has vuelto! ¿Te gustaría echarle un vistazo a mis pociones? ~
+@4 = ~Sí, supongo que sí.~
+@5 = ~En otra ocasión, tal vez.~
+@6 = ~¡Estoy seguro de que quedarás satisfecho, <SIRMAAM>!~
+@7 = ~¡Espero volver a verte!~

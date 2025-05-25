@@ -1,6 +1,5 @@
-@0 = ~Felicidades por tu victoria, mi señor. Sólo vi una parte, pero fue muy impresionante, sí.~
-@1 = ~Esto es la Posada del Grifo Verde. No sé si habrá una habitación para ti... Para eso, mejor que hables con Mutamin, el dueño.~
-@2 = ~Bienvenido al Grifo Verde, mi señor. Como mínimo, es un refugio para los vagabundos del lugar.~
-@3 = ~Mind yourself while staying at the inn, <SIRMAAM>.~/*Ocúpate de tus propios asuntos mientras estés en la posada, señor.*/
-@4 = ~Don't make any trouble, <SIRMAAM>, or I'll be forced to eject you from the inn.~
-/*No montes follones, señor, o me veré obligado a echarte de la posada.*/
+@0 = ~Felicidades por tu victoria, mi <LADYLORD>. Solo vi una parte, pero fue realmente impresionante. ~
+@1 = ~Esta es la Posada del Grifo Verde. No sé si hay habitación para ti... para eso, tendrás que hablar con Mutamin, el dueño. ~
+@2 = ~: Eres bienvenido aquí en el Grifo Verde, mi <LADYLORD>. Como mínimo, es un refugio de los vagabundos locales. ~
+@3 = ~Ten cuidado mientras te alojas en la posada, <SIRMAAM>.~
+@4 = ~No causes problemas, <SIRMAAM>, o me veré obligado a expulsarte de la posada.~

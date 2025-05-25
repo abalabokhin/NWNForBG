@@ -1,6 +1,5 @@
-@0 = ~Be polite with guests. Everyone comes here to relax. So, do you want a drink?~ /*Yo haber acabado con preguntas. Tú venir aquí a hablar. ¿Por qué quieres una esposa?*/
-@1 = ~Sea.~
+@0 = ~Sé cortés con los invitados. Todos vienen aquí a relajarse. ¿Quieres algo de beber? ~
+@1 = ~Sí.~
 @2 = ~No.~
-@3 = ~Be careful not to drink too much. You don't want to stumble around Luskan without thinking. So, do you want a drink?~ /*[¡Hip!] ¡Bebo demasiado! No te conviene meterte conmigo. ¿Por qué quieres una esposa?*/
-@4 = ~As long as you're ready to buy, you're welcome here. So, do you want a drink?~
-/*Ya no eres bienvenido aquí. ¿Por qué quieres una esposa?*/
+@3 = ~Ten cuidado de no beber demasiado. No querrás andar por Luskan sin pensar. ¿Quieres algo de beber? ~
+@4 = ~Si estás listo para comprar, eres bienvenido. ¿Quieres algo de beber? ~

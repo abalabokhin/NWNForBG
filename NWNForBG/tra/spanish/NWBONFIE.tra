@@ -1,6 +1,5 @@
-@0 = ~These are the books from the library of the wizard Burke that are burning.~ /*Una de las cerraduras de la Puerta de Tres ha sido abierta.*/
-@1 = ~Put out the fire.~ /*Fuera de mi camino.*/
-@2 = ~Let them burn.~ /*Dejar la urna.*/
-@3 = ~Before your eyes, the fire goes out. You can try to save the rest of the books.~/*Cerrar los ojos, eso es lo que haremos. No puedes accionar la palanca en esta forma.*/
-@4 = ~The goblin keeps the fire going and doesn't let the fire go out.~ 
-/*El oso olisquea el aire y luego se pierde en el bosque.*/
+@0 = ~Estos son los libros de la biblioteca del mago Burke que se están quemando.~
+@1 = ~Apaga el fuego.~
+@2 = ~Que se quemen.~
+@3 = ~Ante tus ojos, el fuego se apaga. Puedes intentar salvar el resto de los libros. ~
+@4 = ~El duende mantiene el fuego encendido y no deja que se apague.~
