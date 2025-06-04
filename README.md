@@ -136,7 +136,7 @@ In development:
 - Fixed note for the mixing colors quest in English, so it is less confusing.
 - Added proper Spanish translation made by AlleyV and Lechuk87, thank you.
 - Updated Chinese translation, thanks to Lzw104522773.
-- Update Russian translation (minor changes).
+- Update Russian translation (minor changes), thanks to Andrey88.
 
 0.98 (07/23/24)
 
