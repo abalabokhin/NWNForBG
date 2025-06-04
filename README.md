@@ -3,7 +3,7 @@ NWNForBG
 
 Neverwinter Nights for Baldur's Gate
 ------------------------------------
-Version: 0.98
+Version: 0.99
 
 Author: AGKanevchev
 ---------------
@@ -131,8 +131,12 @@ Version History
 ---------------
 In development:
 
+0.99 (06/04/25)
+
 - Fixed note for the mixing colors quest in English, so it is less confusing.
-- Added Spanish translation made by AlleyV and Lechuk87
+- Added proper Spanish translation made by AlleyV and Lechuk87, thank you.
+- Updated Chinese translation, thanks to Lzw104522773.
+- Update Russian translation (minor changes).
 
 0.98 (07/23/24)
 
