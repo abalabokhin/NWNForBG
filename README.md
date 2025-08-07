@@ -1,24 +1,23 @@
-NWNForBG
-=============
+## NWNForBG
 
-Neverwinter Nights for Baldur's Gate
-------------------------------------
+
+# Neverwinter Nights for Baldur's Gate
+
+---
+
 Version: 0.99
 
-Author: AGKanevchev
----------------
+**Author** : AGKanevchev
 
-Wiedu Adaptation: paladin84
----------------
+**Weidu Adaptation** : paladin84
 
-[Russian Discussion Forum](https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773), [English Discussion Forum](https://www.gibberlings3.net/forums/topic/37267-neverwinter-night-for-baldurs-gate-mod)
----------------
+#### [Russian Discussion Forum](https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1773), [English Discussion Forum](https://www.gibberlings3.net/forums/topic/37267-neverwinter-night-for-baldurs-gate-mod)
 
 [Github sources](https://github.com/abalabokhin/NWNForBG)
--------------------
 
-[FAQ](https://github.com/abalabokhin/NWNForBG/wiki/FAQ)
--------------------
+#### [FAQ](https://github.com/abalabokhin/NWNForBG/wiki/FAQ)
+
+---
 
 Thanks and Acknowledgements
 -----------------------
@@ -73,11 +72,15 @@ Mods which extend material presented here are welcome as separate modifications,
 Compatibility
 -------------
 
-Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. 
-Also, some of the new wizard spells (eg Icelance) might have conflicts with some Talents of Faerûn mod components as for Beta 3 version if Talents of Faerûn is installed after NWNForBG.
-This mod also pathes some existing spells, so any mod that replaces spells entirely (eg Spell Revisions mod main component) should be installed prior Neverwinter Nights for Baldur's Gate. 
-If there are any of new wizard spells (eg Icelance) already installed in the game (eg from IWDification), only new unique spells are going to be installed and previously installed version of already existing spells are going to be used. Thus, if you want to use spells from IWDification, install NWNForBG after IWDification or rewrite existing spells with IWDifications if it is installed after NWNForBG. If IWDification spells are used there are also should not be any issues with Talents of Faerûn (not tested).
-If there are UI mods that change BG2EE starting screen dramatically, installing third compoment with BG2EE might not add NWN campaign propeprly (UI mods were not tested with third component of the mod, installed on BG2EE), but everything should work with EET.
+- Neverwinter Nights for Baldur's Gate should be fully compatible with BG2:TOB, BGT, BG2EE, EET games and with pretty much any other mod that's out there. All bg2 events are blocked while you are doing NWN content, so don't be afraid that Jaheira's personal quest will be broken. 
+
+- Also, some of the new wizard spells (eg Icelance) might have conflicts with some Talents of Faerûn mod components as for Beta 3 version if Talents of Faerûn is installed after NWNForBG.
+
+- This mod also pathes some existing spells, so any mod that replaces spells entirely (eg Spell Revisions mod main component) should be installed prior Neverwinter Nights for Baldur's Gate. 
+
+- If there are any of new wizard spells (eg Icelance) already installed in the game (eg from IWDification), only new unique spells are going to be installed and previously installed version of already existing spells are going to be used. Thus, if you want to use spells from IWDification, install NWNForBG after IWDification or rewrite existing spells with IWDifications if it is installed after NWNForBG. If IWDification spells are used there are also should not be any issues with Talents of Faerûn (not tested).
+
+- If there are UI mods that change BG2EE starting screen dramatically, installing third compoment with BG2EE might not add NWN campaign propeprly (UI mods were not tested with third component of the mod, installed on BG2EE), but everything should work with EET.
 
 Installation
 -------------
