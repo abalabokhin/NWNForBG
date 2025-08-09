@@ -135,6 +135,10 @@ Version History
 ---------------
 In development:
 
+- Fixed NWMUMX1.CRE not to use mummy.bcs script as it caused issues with Korgan, thanks to cnieuweboer.
+- Made quest items for Sharwyn and Boddinok appear in their locations without conditions (they had to be in the party before), thanks to Andrey88 and cnieuweboer.
+- Fixed Cromwell script to proper craft Blue Dragon Scale, thanks to cnieuweboer.
+
 0.99 (06/04/25)
 
 - Fixed note for the mixing colors quest in English, so it is less confusing.
