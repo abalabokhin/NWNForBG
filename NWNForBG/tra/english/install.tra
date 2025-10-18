@@ -2170,9 +2170,9 @@ The strange village of Charwood is buried deep within the forest that shares its
 @102661 = ~This is a lock of dryad hair, an important component for the spell to stop the Wailing Death plague. The dryad this came from was one of four magical creatures brought from Waterdeep to participate in the cure attempt. All were lost in an attack, and Lady Aribeth eagerly awaits their return.~
 @102662 = ~Cockatrice Feather~
 @102663 = ~This cockatrice feather is a spell component for the magical attempt to stop the Wailing Death plague. The bird-like beast it came from was one of four magical creatures sent from Waterdeep to be part of the cure attempt. They were all lost in an attack as they were brought into the city. This feather should be delivered to Lady Aribeth with all haste.~
-@102664 = ~Cristov~
+@102664 = ~Christov~
 @102665 = ~The inscription on this sarcophagus has been slowly eroded by water and whatever mold grows in this dank place. You are not sure it would have been important but you can still try to read the inscription.~
-@102666 = ~The inscription reads, "The great warrior Maegal is buried here."~
+@102666 = ~The inscription reads, "The great warrior Maegel is buried here."~
 @102667 = ~You have already read the inscription on the sarcophagus. There is nothing more you can do with it.~
 @102668 = ~Vault Key~
 @102669 = ~You received this key from the cemetary caretaker on the North Road. It opens the door of the crypt where a wizard from the Arcane Brotherhood, the greatest order of Luskan, is buried.~
@@ -2248,8 +2248,8 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayers~
-@102723 = ~Eltura's Goods~
-@102729 = ~Eltura's Special Goods~
+@102723 = ~Eltoora's Goods~
+@102729 = ~Eltoora's Special Goods~
 @102730 = ~Ring of Elemental Mastery~
 @102731 = ~This ring combines the power of the elements of Earth, Air, and Fire and gives the user a certain amount of power over the beings that inhabit these Planes.
 
@@ -2527,7 +2527,7 @@ And to think he sent me here to search for some ancient artifact as he sent my b
 @102794 = ~Gerrol~
 @102795 = ~Geth~
 @102796 = ~Geth's Ring~
-@102797 = ~It is the ring of Geth, one of one of the young men of Port Llast who became werewolves. It must be presented to the priest of Tyr, Neuric, in Port Llast as proof.~
+@102797 = ~It is the ring of Geth, one of one of the young men of Port Llast who became werewolves. It must be presented to the priest of Tyr, Neurik, in Port Llast as proof.~
 @102798 = ~Gilda~
 @102799 = ~Smugglers' Coin~
 @102800 = ~It's a special coin of the Neverwinter smugglers.~
@@ -4210,7 +4210,7 @@ Usable By:
 @103487 = ~Tamorlyn's Song~
 @103488 = ~It's a sheet of sheet music and lyrics to one of the elven songs.~
 @103489 = ~Official Document~
-@103490 = ~This document seems to be official; the wax stamped with what appears to be the official seal of Lord Nasher and the delicately-written script spelling out a friendly endorsement for one 'Hayden, Lord Freidling'. It appears to prove that Mr. Freidling worked as a coachman in Murann for the entire duration of the previous year... and so couldn't possibly have been present in the city of Calimport for an unmentioned crime. Several words are poorly spelled and the ink smudged badly in numerous spots... making the quality of this obvious forgery rather questionable.~
+@103490 = ~This document seems to be official; the wax stamped with what appears to be the official seal of Lord Nasher and the delicately-written script spelling out a friendly endorsement for one 'Hayden, Lord Friedling'. It appears to prove that Mr. Friedling worked as a coachman in Murann for the entire duration of the previous year... and so couldn't possibly have been present in the city of Calimport for an unmentioned crime. Several words are poorly spelled and the ink smudged badly in numerous spots... making the quality of this obvious forgery rather questionable.~
 @103491 = ~The Star of Calimshan~
 @103492 = ~This small, oddly-shaped ruby appears to sparkle from within. Even for its size, it no doubt has considerable value.~
 @103493 = ~The Ashes of Running Wolf~
@@ -4429,7 +4429,7 @@ Usable By:
 @103621 = ~Letter from Ophala~
 @103622 = ~This letter is from Ophala Cheldarstorn of the Moonstone Mask. It directs Oleff of the Temple of Tyr to examine the bearer and certify that they are plague-free.~
 @103623 = ~Moonstone Amulet~
-@103624 = ~This amulet was received from Ofala of the Moonstone Mask, in gratitude for a favor. The magical properties of this amulet would certainly be admired by any adventurer, but unfortunately only thieves can use it.
+@103624 = ~This amulet was received from Ophala of the Moonstone Mask, in gratitude for a favor. The magical properties of this amulet would certainly be admired by any adventurer, but unfortunately only thieves can use it.
 
 STATISTICS:
 
@@ -5255,7 +5255,7 @@ Not Usable By:
 @103805 = ~Torgo~
 @103806 = ~Bridge Guard~
 @103807 = ~Treatise on Forgotten Heroes~
-@103808 = ~This book is full of stories about the deeds of ancient heroes. A particular passage has been marked: The Mirialis Clan, led by the great warrior Maegal, braved near certain death to rid their lands of the Black Lich and his minions.~
+@103808 = ~This book is full of stories about the deeds of ancient heroes. A particular passage has been marked: The Mirialis Clan, led by the great warrior Maegel, braved near certain death to rid their lands of the Black Lich and his minions.~
 @103809 = ~Pitiful creature! Die!~
 @103810 = ~Troll Chieftain~
 @103811 = ~Boulder~
@@ -5555,7 +5555,7 @@ Not Usable By:
 @104077 = ~Obviously you overestimate the weight I can manage.~ [NWBODDEM]
 @104078 = ~Silence seems to be the best option in this case.~ [NWBODDHE]
 @104079 = ~My spell - failed? But I did everything right!~ [NWBODDSL]
-@104080 = ~Boddyknock Glinckle is a gnomish sorcerer from the island of Lantan. Lantanese are a people guided by the analytical principles of science: observation, reason and logic. It is common for the people of Lanthan to undertake such journeys. He was exploring the northern part of the Sword Coast when he heard echoes of rumors of a previously unknown epidemic spreading in Neverwinter. In the name of scientific research, Boddinok came to investigate and describe this new disease.~
+@104080 = ~Boddyknock Glinckle is a gnomish sorcerer from the island of Lantan. Lantanese are a people guided by the analytical principles of science: observation, reason and logic. It is common for the people of Lanthan to undertake such journeys. He was exploring the northern part of the Sword Coast when he heard echoes of rumors of a previously unknown epidemic spreading in Neverwinter. In the name of scientific research, Boddyknock came to investigate and describe this new disease.~
 @104081 = ~~
 @104082 = ~~ [NWTCM02A]
 @104083 = ~~ [NWTCM03]
@@ -5688,7 +5688,7 @@ Not Usable By:
 @104228 = ~I am overburdened.~ [NWGRIMEM]
 @104229 = ~Be still as the Silent Lord himself.~ [NWGRIMHE]
 @104230 = ~My spell has failed!~ [NWGRIMSL]
-@104231 = ~Grimgnaw, a dwarven priest of the Order of Long Death spent several years at Mithral Hall in the service of Bruenor Battlehammer, but was banished by his kin because of his strange tendencies. After the battles he would walk among the scattered corpses, fascinated by the... truth... of their deaths. In the end, he left Mithral Hall in search of... something and found the Order of the Long Death. Many find the members of his Order unsettling, for them embrace Death in all its incarnations. Grimgnau is a disciple of torment and a messenger of Death, the Silent Lord, he embraces the beauty and perfection of his enemy's death with a zeal others often lack. Members of the Order of Long Death bring pain, torment and anguish to the denizens of this world to prepare them for the release of death. The monks and priests of the order worship Death.~
+@104231 = ~Grimgnaw, a dwarven priest of the Order of Long Death spent several years at Mithral Hall in the service of Bruenor Battlehammer, but was banished by his kin because of his strange tendencies. After the battles he would walk among the scattered corpses, fascinated by the... truth... of their deaths. In the end, he left Mithral Hall in search of... something and found the Order of the Long Death. Many find the members of his Order unsettling, for them embrace Death in all its incarnations. Grimgnaw is a disciple of torment and a messenger of Death, the Silent Lord, he embraces the beauty and perfection of his enemy's death with a zeal others often lack. Members of the Order of Long Death bring pain, torment and anguish to the denizens of this world to prepare them for the release of death. The monks and priests of the order worship Death.~
 @104234 = ~~ [NWHOO09A]
 @104235 = ~~ [NWHOO01A]
 @104236 = ~~ [NWHOO02A]
@@ -5741,7 +5741,7 @@ Not Usable By:
 @104285 = ~I'm all done here.~ [NWLINADE]
 @104286 = ~My weapon just bounces right off.~ [NWLINAIF]
 @104287 = ~Either my arms have suddenly lost strength, or I'm carrying too much.~ [NWLINAEM]
-@104288 = ~Linu La'neral is an elf priestess, servant of Sehanine Moonbow, came to Neverwinter from her native Evereska, believing she could resist the onslaught of the plague with the help of Sehanin's powers. Her parents were both mages and followers of the god Corellon. When Linu was a little older, she was sent to Gaedolin Sentristi's School for 'Potentials', it was assumed that she would take after her parents in the magical arts. However her fate became sealed to my faith in Sehanine one day by coincidence. Linu was always being haunted by bad luck, and when she got into trouble once again, she was saved by Sehanine Moonbow herself. The goddess smiled and kissed Linu on the forehead. "My child," she said, "you have exceeded the boundaries of luck." A green light surrounded her body as she stepped back and disappeared. Lina later learned the real reason for this attention of the goddess to her person, it turns out that Sehanin had high hopes for Lina to accomplish a very important mission. Sehanine thinks it is possible that one day an elf priestess will find a seed of the volcanic oak and bring it to Evereska to be a symbol of rebirth for the elven people and this priestess might be Linu La'neral.~
+@104288 = ~Linu La'neral is an elf priestess, servant of Sehanine Moonbow, came to Neverwinter from her native Evereska, believing she could resist the onslaught of the plague with the help of Sehanine's powers. Her parents were both mages and followers of the god Corellon. When Linu was a little older, she was sent to Gaedolin Sentristi's School for 'Potentials', it was assumed that she would take after her parents in the magical arts. However her fate became sealed to my faith in Sehanine one day by coincidence. Linu was always being haunted by bad luck, and when she got into trouble once again, she was saved by Sehanine Moonbow herself. The goddess smiled and kissed Linu on the forehead. "My child," she said, "you have exceeded the boundaries of luck." A green light surrounded her body as she stepped back and disappeared. Lina later learned the real reason for this attention of the goddess to her person, it turns out that Sehanine had high hopes for Lina to accomplish a very important mission. Sehanine thinks it is possible that one day an elf priestess will find a seed of the volcanic oak and bring it to Evereska to be a symbol of rebirth for the elven people and this priestess might be Linu La'neral.~
 @104289 = ~~ [NWTUM01]
 @104290 = ~~ [NWTUM02]
 @104291 = ~~ [NWTUM03]
@@ -5862,7 +5862,7 @@ Not Usable By:
 @104391 = ~In the shadows...~ [NWSHARHE]
 @104392 = ~I can't get my spell off!~ [NWSHARSL]
 @104393 = ~You better watch it!~ [NWSHARW0]
-@104394 = ~Sherwyn is a bard from Neverwinter, an adventurer and merrymaker. Her mother was an adventurer, who married a man of wealth after her daughter was born. Because of her spending too much money, the man lost his fortune and left his wife and daughter with only debts. In order not to give up the rich life to which she was already accustomed, Sherwyn's mother wanted to see her wed to a wealthy bachelor. But these plans were not to be, because Sherwyn fell in love with the poor bard and ran off with him. For several years they traveled together, and Sherwyn learned how to become a bard in her own right. She returned to Neverwinter only many years later to save her hometown from the plague. She found her mother has been living all these years as a poor seamstress and sufferng from bonerot. She blamed her daughter for the poor luck which had befallen her. Nevertheless, Sherwyn hopes to find a way to heal his mother and get on the path to reconciliation.~
+@104394 = ~Sharwyn is a bard from Neverwinter, an adventurer and merrymaker. Her mother was an adventurer, who married a man of wealth after her daughter was born. Because of her spending too much money, the man lost his fortune and left his wife and daughter with only debts. In order not to give up the rich life to which she was already accustomed, Sharwyn's mother wanted to see her wed to a wealthy bachelor. But these plans were not to be, because Sharwyn fell in love with the poor bard and ran off with him. For several years they traveled together, and Sharwyn learned how to become a bard in her own right. She returned to Neverwinter only many years later to save her hometown from the plague. She found her mother has been living all these years as a poor seamstress and sufferng from bonerot. She blamed her daughter for the poor luck which had befallen her. Nevertheless, Sharwyn hopes to find a way to heal his mother and get on the path to reconciliation.~
 @104395 = ~Silverback~
 @104396 = ~~ [NWSKP01]
 @104397 = ~~ [NWSKP02]
@@ -5897,7 +5897,7 @@ Not Usable By:
 @104431 = ~Eh? What's this?~ [NWTOMILK]
 @104432 = ~Time to slip into the shadows!~ [NWTOMILD]
 @104433 = ~I hate it when my spell fizzles!~ [NWTOMISL]
-@104434 = ~Tomi "Grin" Undergallows is a halfling rogue and thief from Calimport. Tomi hails from Kalimshan and, like most locals, has followed the path of crime. Tomi is a master of lockpicking and detecting and disarming traps. He had an eventful youth, though all of his adventures involve stealing and girls. He spent the larger part of his years in Calimport in the employ of a powerful medusa, and one day she ordered Tomi to kill a mage of no little power. However, Tomi showed more zeal in seducing the mage's daughter, and kept delaying in fulfilling the order. The medusa fed up with this, and she decided to take matters into her own hands. During the ensuing turmoil, Medusa and the wizard killed each other, and Tomi was found guilty of killing them. I was good for his reputationa, but he become a wanted man for murdering the wizard. Finally, Tome decided to come to Neverwinter where one of his oldest friends, a forgery master, lives to make some documents and clear his name in Calimport. In Neverwinter, the rogue went to prison, but was quickly released.~
+@104434 = ~Tomi "Grin" Undergallows is a halfling rogue and thief from Calimport. Tomi hails from Calimshan and, like most locals, has followed the path of crime. Tomi is a master of lockpicking and detecting and disarming traps. He had an eventful youth, though all of his adventures involve stealing and girls. He spent the larger part of his years in Calimport in the employ of a powerful medusa, and one day she ordered Tomi to kill a mage of no little power. However, Tomi showed more zeal in seducing the mage's daughter, and kept delaying in fulfilling the order. The medusa fed up with this, and she decided to take matters into her own hands. During the ensuing turmoil, Medusa and the wizard killed each other, and Tomi was found guilty of killing them. I was good for his reputationa, but he become a wanted man for murdering the wizard. Finally, Tome decided to come to Neverwinter where one of his oldest friends, a forgery master, lives to make some documents and clear his name in Calimport. In Neverwinter, the rogue went to prison, but was quickly released.~
 @104435 = ~This is the somewhat garish uniform of the Bloodsailors pirate guild. By wearing this, a person might be able to fool a casual observer into thinking they are a Bloodsailor. Other actual members would probably see through the deception, however, as such groups are usually very adept at recognizing their own people.
 
 STATISTICS:
