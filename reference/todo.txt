@@ -42,13 +42,8 @@ Swashbuckler.
 
 Bugs:
 3. нашер (телепортировать обратно) - проверить в игре после переустановки, должно быть норм...
-6.  i have just found what seems like normal potions. Potion of Healing and Potion of Invisibility. However these are variants for this mod. If they are truly the same I suggest making them vanilla versions so they will stack.
-
-POTN08 vs NWPOTN08
-
-POTN10 vs NWPOTN10 
 7. There is a Chromatic Armor the smith made for me, that has 25% Cold and Fire resistance, that are set to Magic Cold and Magic Fire, which I believe is an error. 
 8. Robe of Voleron the Damned doesn't effectively vocalize or resist silence.
 9. Fireball ability from Sorcerer's Staff uses magical fire damage unlike other fireballs. I don't think magical fire is ever used in the game, but if it is the case for this particular staff it should be noted in the description.
 10. Some of the mouse-hover notes for equipped item abilities on the quick menu will show the name of the ability, while others merely show the name of the item. For example Wizard Hat shows ability name, Sorcerer's Staff and Spellbinding Gloves do not. 
-11. Ok! This worked, but afterwards he gave his "greeting" dialogue rather than "enjoy your new item" (or whatever he says).  
+11. Ok! This worked, but afterwards he gave his "greeting" dialogue rather than "enjoy your new item" (or whatever he says).

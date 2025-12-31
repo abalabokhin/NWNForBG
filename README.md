@@ -138,9 +138,9 @@ Version History
 ---------------
 In development:
 
-
-- Fix Nasher dissappearing thanks to Thendril and Guest bugger.
 - Added proper Portuguese translation made by DarthNihilus530, thank you.
+- Fix NWPOTN08 and NTPOTN10 to be just POTN08 and POTN10 thanks to Sanderson.
+- Fix Nasher dissappearing thanks to Thendril and Guest bugger.
 - Fix Sniloc's Snowball Storm, so that conjurers can use it, thanks to Sanderson.
 - Fixed NWMUMX1.CRE not to use mummy.bcs script as it caused issues with Korgan, thanks to cnieuweboer.
 - Made quest items for Sharwyn and Boddinok appear in their locations without conditions (they had to be in the party before), thanks to Andrey88 and cnieuweboer.

@@ -112,7 +112,7 @@ PartyHasItem("Potn55")
 ~ THEN REPLY @26 GOTO 17
   IF ~  !PartyHasItem("Potn52")
 !PartyHasItem("Potn55")
-PartyHasItem("NWPOTN08")
+PartyHasItem("POTN08")
 ~ THEN REPLY @26 GOTO 18
   IF ~~ THEN REPLY @27 DO ~SetGlobal("Promise","LOCALS",1)~ EXIT
   IF ~~ THEN REPLY @28 GOTO 19
@@ -130,7 +130,7 @@ PartyHasItem("Potn55")
 ~ THEN REPLY @26 GOTO 17
   IF ~  !PartyHasItem("Potn52")
 !PartyHasItem("Potn55")
-PartyHasItem("NWPOTN08")
+PartyHasItem("POTN08")
 ~ THEN REPLY @26 GOTO 18
   IF ~~ THEN REPLY @27 EXIT
   IF ~~ THEN REPLY @28 GOTO 19
@@ -146,7 +146,7 @@ PartyHasItem("Potn55")
 ~ THEN REPLY @26 GOTO 17
   IF ~  !PartyHasItem("Potn52")
 !PartyHasItem("Potn55")
-PartyHasItem("NWPOTN08")
+PartyHasItem("POTN08")
 ~ THEN REPLY @26 GOTO 18
   IF ~~ THEN REPLY @27 EXIT
   IF ~~ THEN REPLY @28 GOTO 19
@@ -168,7 +168,7 @@ END
 
 IF ~~ THEN BEGIN 18 // from: 20.3 15.3 14.4 13.4
   SAY @33
-  IF ~~ THEN DO ~TakePartyItem("NWPOTN08")
+  IF ~~ THEN DO ~TakePartyItem("POTN08")
 SetGlobal("Cure","LOCALS",1)
 ~ EXIT
 END
@@ -187,7 +187,7 @@ PartyHasItem("Potn55")
 ~ THEN REPLY @26 GOTO 17
   IF ~  !PartyHasItem("Potn52")
 !PartyHasItem("Potn55")
-PartyHasItem("NWPOTN08")
+PartyHasItem("POTN08")
 ~ THEN REPLY @26 GOTO 18
   IF ~~ THEN REPLY @27 EXIT
   IF ~~ THEN REPLY @28 GOTO 19

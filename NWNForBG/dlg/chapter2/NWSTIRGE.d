@@ -1,7 +1,7 @@
 // Южная дорога 2  Стирж Стирж - странный тип. Дварф-вор, говорят, верит, что он умней всех живущих на земле. Этого дварфа в последний раз видели в необитаемых землях вдоль Южной дороги, хотя там он может скрываться где угодно. 
 
 // Enemy()
-// UseItem("NWPOTN10",Myself) // Зелье невидимости
+// UseItem("POTN10",Myself) // Зелье невидимости
 // EquipMostDamagingMelee()
 // AttackReevaluate(NearestEnemyOf(Myself),15)
 
@@ -46,7 +46,7 @@ END
 
 IF ~~ THEN BEGIN 6 // from: 4.2
   SAY @13
-  IF ~~ THEN DO ~Enemy()UseItem("NWPOTN10",Myself)~ EXIT
+  IF ~~ THEN DO ~Enemy()UseItem("POTN10",Myself)~ EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.1
