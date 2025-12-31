@@ -42,7 +42,5 @@ Swashbuckler.
 
 Bugs:
 3. нашер (телепортировать обратно) - проверить в игре после переустановки, должно быть норм...
-8. Robe of Voleron the Damned doesn't effectively vocalize or resist silence.
-9. Fireball ability from Sorcerer's Staff uses magical fire damage unlike other fireballs. I don't think magical fire is ever used in the game, but if it is the case for this particular staff it should be noted in the description.
 10. Some of the mouse-hover notes for equipped item abilities on the quick menu will show the name of the ability, while others merely show the name of the item. For example Wizard Hat shows ability name, Sorcerer's Staff and Spellbinding Gloves do not. 
 11. Ok! This worked, but afterwards he gave his "greeting" dialogue rather than "enjoy your new item" (or whatever he says).

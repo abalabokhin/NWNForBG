@@ -139,6 +139,7 @@ Version History
 In development:
 
 - Added proper Portuguese translation made by DarthNihilus530, thank you.
+- Fix Sorcerer's Staff to make fireball's fire to be normal (not magic) as per desription thanks to Sanderson.
 - Fix Robe of Voleron the Damned to give proper vocalize and silence resistance as per desription thanks to Sanderson.
 - Fix Chromatic Armor to give resistance to cold and fire (not to magic cold and fire) as per desription thanks to Sanderson.
 - Fix NWPOTN08 and NTPOTN10 to be just POTN08 and POTN10 thanks to Sanderson.
