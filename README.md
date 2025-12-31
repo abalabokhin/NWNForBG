@@ -56,6 +56,7 @@ Languages
 * Spanish (finished), partially taken from the original NWN texts with script and partially made by AlleyV and Lechuk87
 * Polish, partially taken from the original NWN texts with script, partially English (needs checking/translating)
 * Simplified Chinese (finished) partially taken from the original NWN texts with script and partially made by Youye, Lewis Liu and Shuiyue Jushi
+* Prtuguese (finished) made by DarthNihilus530
 
 General Information:
 ------------
@@ -135,6 +136,8 @@ Version History
 ---------------
 In development:
 
+
+- Added proper Portuguese translation made by DarthNihilus530, thank you.
 - Fixed NWMUMX1.CRE not to use mummy.bcs script as it caused issues with Korgan, thanks to cnieuweboer.
 - Made quest items for Sharwyn and Boddinok appear in their locations without conditions (they had to be in the party before), thanks to Andrey88 and cnieuweboer.
 - Fixed Cromwell script to proper craft Blue Dragon Scale, thanks to cnieuweboer.

@@ -27,7 +27,7 @@ THEN
 		ActionOverride("Nwprst3",DestroySelf())
 		ActionOverride("Nwprst4",DestroySelf())
 		Wait(1)
-		ActionOverride("NWNASCHR",JumpToPoint([852.662]))
+		MoveGlobal("NW1030","NWNASCHR",[852.662]))
 		Wait(1)
 		ActionOverride("NWNASCHR",Face(0))
 		Wait(1)

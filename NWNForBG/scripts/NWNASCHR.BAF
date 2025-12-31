@@ -1,3 +1,14 @@
+// Make Nasher to be a global object, so we can move him back into the castle even if he is on the different map.
+IF
+	Global("IAmGlobalObject","LOCALS",0)
+
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		SetGlobal("IAmGlobalObject","LOCALS",1)
+END
+
+
 IF
 	PickPocketFailed([PC])
 	Allegiance(Myself,NEUTRAL)

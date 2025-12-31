@@ -1,0 +1,34 @@
+//NWN Areas
+@NW1100 = "Docas"
+@NW1000 = "Centro"
+@NW1200 = "Ninho###dos###Mendigo"
+@NW1400 = "Lago###Negro"
+@NW1300 = "Península"
+
+@NW2600 = "Charwood"
+@NW2601 = "Charwood"
+@NW2500 = "Floresta###Sombria"
+@NW2510 = "Floresta###Sombria"
+@NW2400 = "Fazendas"
+@NW2900 = "Coração###da###Floresta"
+@NW2300 = "Estrada###Sul"
+@NW2800 = "Bosque###dos###Druidas"
+@NW2100 = "Estrada###Norte"
+@NW2700 = "Estrada###Leste"
+
+@NW1033 = "Fortaleza###de###Helm"
+@NW2200 = "Grifo###Verde"
+
+@NW2E55 = "Torre###do###Hospedeiro"
+@NW2E31 = "Docas"
+
+@NW3100 = "Forte###Ilkard"
+@NW3200 = "Reduto###da###Tribo###do###Alce"
+@NW3300 = "Ruínas"
+
+@NW4000 = "Subúrbios"
+
+@NW2000 = "Porto###Llast"
+@NW3000 = "Poço###de###Beorunna"
+@NW3400 = "Floresta###Fria"
+@NW3500 = "Floresta###da###Lua"

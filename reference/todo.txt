@@ -1,6 +1,5 @@
 TODO:
 
-*. fix what lynx reported at g3
 *. по анимациям: сделать всем звуки в PST (включая двух скелетов) - не уверен что надо, обычные же кричи
 *. Почему-то катсцена в NW4101 играет два раза если подходить по одному - похоже только в EE версии - вроде по
 скриптам все хорошо - трудно воспроизводится...
@@ -32,7 +31,6 @@ Swashbuckler.
 *. Понабрать отсутствующие звуки из NWN игры
 *. Возвращение в НВН после победы... - куча модификаций в диалогах и все такое
 
-
 Пожелания от шили и меня:
 1. В Черном Озере звук дождя проблемный, прерывается. Еще Томи выпил бутылку "Марсемберского розового" и инт. упал до 1, хоббит застыл. Лечится заклинанием "лечить болезнь", но так быть не должно.
 2. горожан побольше, чтобы город не выглядел пустым, нищих там, всяких
@@ -43,9 +41,8 @@ Swashbuckler.
 4. Спутники никак не комментируют твои действия
 
 Bugs:
-1. добавить перевод и проверить что устанавливается
-2. посмотреть что там за меч - 103047 - как он прописан и что на самом деле дает
-3. нашер (или телепортировать обратно или я хз).
+2. посмотреть что там за меч - 103047 - как он прописан и что на самом деле дает - проверить в игре
+3. нашер (телепортировать обратно).
 4. I have a scroll Snilocs Snowball Storm that is set to be unusable by conjurers. Is this supposed to be this way? Nwscsnil.itm 
 At least in bgee it does not work like that, conjurers are only forbidden divination. I am not sure about iwdee. I know the originals are different. But since it is a Baldur's Gate ee mod I believe it is fair to expect it to play by Baldurs Gate ee rules, as my conjurer can use all the standard evocation scrolls. 
 5. Eta. I am running into a situation where I'll need the console because I am using tweaks component "NPCs can't use doors" and I found a man called Hector in Beggars Nest that wants me to escort him from inside to outside. Thanks for the notice about tweaks (you are talking about "Tweaks Anthology", right?). I will add the information about incompatibility in the README. You could report the bug to the TA forums as well, since it already has to exclude the dream Candlekeep castle or it'd break bg2. What's one door more?
