@@ -139,6 +139,7 @@ Version History
 In development:
 
 - Added proper Portuguese translation made by DarthNihilus530, thank you.
+- Fix Chromatic Armor to give resistance to cold and fire (not to magic cold and fire) as per desription thanks to Sanderson.
 - Fix NWPOTN08 and NTPOTN10 to be just POTN08 and POTN10 thanks to Sanderson.
 - Fix Nasher dissappearing thanks to Thendril and Guest bugger.
 - Fix Sniloc's Snowball Storm, so that conjurers can use it, thanks to Sanderson.
