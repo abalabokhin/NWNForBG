@@ -83,6 +83,8 @@ Compatibility
 
 - If there are UI mods that change BG2EE starting screen dramatically, installing third compoment with BG2EE might not add NWN campaign propeprly (UI mods were not tested with third component of the mod, installed on BG2EE), but everything should work with EET.
 
+- Component from Tweaks-Anthology mod "NPCs Cannot Use Doors" breaks one minor quest in NWNForBG, so don't install it, or be ready to have a bug with Hector.
+
 Installation
 -------------
 
@@ -137,7 +139,9 @@ Version History
 In development:
 
 
+- Fix Nasher dissappearing thanks to Thendril and Guest bugger.
 - Added proper Portuguese translation made by DarthNihilus530, thank you.
+- Fix Sniloc's Snowball Storm, so that conjurers can use it, thanks to Sanderson.
 - Fixed NWMUMX1.CRE not to use mummy.bcs script as it caused issues with Korgan, thanks to cnieuweboer.
 - Made quest items for Sharwyn and Boddinok appear in their locations without conditions (they had to be in the party before), thanks to Andrey88 and cnieuweboer.
 - Fixed Cromwell script to proper craft Blue Dragon Scale, thanks to cnieuweboer.
