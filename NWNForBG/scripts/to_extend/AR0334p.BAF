@@ -3,6 +3,7 @@ IF
     Global("ForgeStuff","GLOBAL",1)
 THEN
     RESPONSE #100
+	SetGlobal("ForgeItem","GLOBAL",1)
         SetGlobal("NW#Items","ar0334",0)
         SetGlobal("ForgeStuff","GLOBAL",0)
         TakePartyItem("NWSCALEL")  // „ешу€ синего дракона

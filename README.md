@@ -147,7 +147,7 @@ In development:
 - Fix Sniloc's Snowball Storm, so that conjurers can use it, thanks to Sanderson.
 - Fixed NWMUMX1.CRE not to use mummy.bcs script as it caused issues with Korgan, thanks to cnieuweboer.
 - Made quest items for Sharwyn and Boddinok appear in their locations without conditions (they had to be in the party before), thanks to Andrey88 and cnieuweboer.
-- Fixed Cromwell script to proper craft Blue Dragon Scale, thanks to cnieuweboer.
+- Fixed Cromwell script to proper craft Blue Dragon Scale, thanks to cnieuweboer and Sanderson.
 
 0.99 (06/04/25)
 
