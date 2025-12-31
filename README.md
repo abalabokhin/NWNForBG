@@ -5,7 +5,7 @@
 
 ---
 
-Version: 0.99
+Version: 1.00
 
 **Author** : AGKanevchev
 
@@ -137,6 +137,8 @@ Known Bugs:
 Version History
 ---------------
 In development:
+
+1.00 (12/31/25)
 
 - Added proper Portuguese translation made by DarthNihilus530, thank you.
 - Fix Sorcerer's Staff to make fireball's fire to be normal (not magic) as per desription thanks to Sanderson.
