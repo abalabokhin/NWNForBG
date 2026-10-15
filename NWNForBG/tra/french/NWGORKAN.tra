@@ -6,11 +6,11 @@
 @5 = ~Je m'en vais.~
 @6 = ~Qu'est-ce que vous savez ? Vous ne savez rien. Humph. Si ça vous intéresse, donnez-moi une centaine de pièces d'or et je vous dirai ce qu'il en est.~
 @7 = ~Très bien, voilà 100 pièces d'or.~
-@8 = ~I'll give you 100.~ /*Je vous en donne 50.*/
+@8 = ~Je vous en donne 100.~ /*Je vous en donne 50.*/
 @9 = ~Vous allez parler et MAINTENANT !~
 @10 = ~Laissez tomber.~
 @11 = ~J'me d'mande comment Mutamin a fait sa pub. Il y a des nobles qui sont venus d'un peu partout pour voir des types avancer dans un donjon. Et vous savez aussi bien que moi qu'il n'y a qu'un bon voleur qui pourra repérer tous les pièges... autrement dit, moi. Donc, vous feriez mieux de rentrer chez vous sans insister.~ 
-@12 = ~You don't have to worry. I will do it.~ /*Vous n'avez aucune chance ! Certainement.*/
+@12 = ~Ne vous inquiétez pas. Je m'en charge.~ /*Vous n'avez aucune chance ! Certainement.*/
 @13 = ~Allons, allons... des amateurs comme vous, j'en mange une demi-douzaine au petit-déjeuner.~
 @14 = ~Mais c'est affreux, comme compétition !~
 @15 = ~Ah, ouais ? Désolé mais j'ai du mal à vous croire. Un roublard n'est jamais trop prudent quand une grosse récompense est en jeu.~
@@ -23,8 +23,8 @@
 @22 = ~Comme tu voudras, mon <GIRLBOY>. Mais tu f'rais mieux de r'tourner chez ta mère. C'est l'heure de la tétée.~
 @23 = ~On va bien voir qui récoltera la récompense offerte par Mutamin et qui se fera éventrer pour faire plaisir à une poignée d'aristocrates, hein ?~
 @24 = ~Ha, ha, ha ! Voilà le genre d'attitude que j'apprécie chez mes concurrents ! Une chose est sûre, c'est pas en réagissant comme ça que vous aurez la moindre chance de l'emporter, <petit/petite> !~
-@25 = ~You again? You want to know about the caves, right?~ /*Quoi vous vouloir savoir sur cavernes, yip ?*/
-@26 = ~I already know everything.~ /*J'ai déjà rencontré votre chef.*/
+@25 = ~Encore vous ? Vous voulez en savoir plus sur les cavernes, c'est ça ?~ /*Quoi vous vouloir savoir sur cavernes, yip ?*/
+@26 = ~Je sais déjà tout.~ /*J'ai déjà rencontré votre chef.*/
 @27 = ~Décampez, j'ai des affaires à régler.~
 @28 = ~Bah, tu n'm'arrives pas à la cheville, mon <GIRLBOY> ! Te mets pas sur ma route dans le donjon, ou je te traiterai comme une vulgaire bestiole, c'est compris ?~
 @29 = ~Ha! Imbécile, j't'avais dit d'pas mettre un pied dans c'donjon ! J'vais donc être obligé de te hacher menu.~

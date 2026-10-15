@@ -24,7 +24,7 @@
 @23 = ~Comment se porte le Seigneur Nasher ?~
 @24 = ~Vos relations avec Aribeth vont-elles s'améliorer, maintenant ?~
 @25 = ~Oui, il est temps que je prenne part aux incantations. Nous disposerons très bientôt d'un remède, j'en suis certain !~
-@26 = ~Yes, yes, of course, and I'm not going to leave you out. You see, Desther has been pushed out of the plans for this ceremony. His efforts to help are ignored. My companions mean well, but they are too untrusting.~/*Ce n'était pas votre faute, Linu. Je ne vous quitterai pas. Vous voyez, Desther a été tenu à l'écart de la préparation de cette cérémonie. On ignore ses efforts pour apporter son aide. Mes compagnons veulent bien faire, mais ils sont trop méfiants.*/
+@26 = ~Oui, oui, bien sûr, et je ne compte pas vous laisser de côté. Voyez-vous, Desther a été écarté des préparatifs de cette cérémonie. Ses efforts pour nous aider sont ignorés. Mes compagnons sont bien intentionnés, mais trop méfiants.~/*Ce n'était pas votre faute, Linu. Je ne vous quitterai pas. Vous voyez, Desther a été tenu à l'écart de la préparation de cette cérémonie. On ignore ses efforts pour apporter son aide. Mes compagnons veulent bien faire, mais ils sont trop méfiants.*/
 @27 = ~Avez-vous fait quelque chose pour l'aider ?~
 @28 = ~Je ne sais pas. J'aimerais pouvoir vous faire confiance, mais je me demande s'il ne vaut mieux pas que cela reste entre Desther et moi.~
 @29 = ~Je pense que la lutte contre le fléau a épuisé votre patience, mon ami. Je sais que vous ne me feriez aucun mal, pas à l'intérieur de ce château. Nous sommes tellement bien protégés que les gardes peuvent intervenir en quelques secondes. C'est presque oppressant. Cela empêche certains d'entre nous de faire ce que nous devons accomplir.~
@@ -45,7 +45,7 @@
 @44 = ~Desther m'a affirmé que tout cela était parfaitement raisonné. C'est une chose très simple qui permettra au remède d'être aussi efficace que possible.~
 @45 = ~Est-ce que cela ne rend pas le château vulnérable ?~
 @46 = ~Bien sûr que non. Jamais je ne ferais courir le moindre danger au château. Desther va tout simplement canaliser un peu d'énergie de Heaum pour que le remède soit aussi puissant que possible.~
-@47 = ~There is no danger. The guard spells will remain where they were.~ /*Sans aucun doute. La forêt ne sera plus jamais la même.*/
+@47 = ~Il n'y a aucun danger. Les sorts de protection resteront en place.~ /*Sans aucun doute. La forêt ne sera plus jamais la même.*/
 @48 = ~Que va penser Aribeth de tout cela ?~
 @49 = ~Aribeth... je l'aime tendrement, mais son regard est voilé par l'horreur de l'épidémie. Je dois agir ainsi pour le bien de tous. Vous verrez.~
 @50 = ~Content de vous revoir. Je peux vous accorder un moment, mais nous commencerons le rituel dès que vous aurez parlé à tout le monde. Avec mon aide, Desther va... eh bien... c'est sans importance.~ [NWFEN237]

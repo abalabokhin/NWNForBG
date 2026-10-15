@@ -1,5 +1,5 @@
 @0 = ~Salutations, mon <LADYLORD>. Votre passe semble indiquer que vous appartenez à la délégation de la Mulhorande ?~ [NWISLU54]
-@1 = ~(Give him the pass.) Here, take a look for yourself.~/*Donnez-moi la dague. Soyez prudent.*/
+@1 = ~(Lui donner le laissez-passer.) Tenez, regardez vous-même.~/*Donnez-moi la dague. Soyez prudent.*/
 @2 = ~Cela semble... un voyage particulièrement long. On ne m'a informé d'aucune invitation faite aux gens de la Mulhorande. Nous ne vous attendions pas.~
 @3 = ~Vous osez me questionner ?!~
 @4 = ~Vous tient-on informé de chaque visiteur de la tour ?~
@@ -23,11 +23,11 @@
 @22 = ~Excellent. Maintenant, préparez-vous à mourir...~
 @23 = ~Au revoir.~
 @24 = ~Bah, il est très difficile de les contacter depuis que les affrontements ont cessé. Votre sceau est authentique et Tempus sait que nous avons vu défiler d'étranges visiteurs, depuis quelque temps...~
-@25 = ~I suppose there's no harm in it. Go ahead and ask.~ /*J'imagine qu'il n'y a pas de mal à ça. (Soupir) Allez-y...*/
+@25 = ~Je suppose que cela ne peut pas faire de mal. Allez-y, posez vos questions.~ /*J'imagine qu'il n'y a pas de mal à ça. (Soupir) Allez-y...*/
 @26 = ~Qui est le nouvel Archimage Profane ?~
 @27 = ~Vous avez parlé de combats ?~
 @28 = ~Parlez-moi de la Tour des Arcanes.~
-@29 = ~Fare you well, my <LADYLORD>.~ /*Bonne chance à vous, mon <LADYLORD>.*/
+@29 = ~Bonne route, <LADYLORD>.~ /*Bonne chance à vous, mon <LADYLORD>.*/
 @30 = ~Eh bien, l'Archimage était Arklen Greeth. Maintenant qu'il n'est plus là, quelqu'un l'a remplacé, mais je ne saurais vous dire qui.~
 @31 = ~L'ancien Archimage est mort ?~
 @32 = ~Oui, j'imagine que vous autres, étrangers, n'êtes pas au courant. Il n'y a pas si longtemps, les mages s'entretuaient dans la tour. J'ignore qui est à l'origine des affrontements, et je suis heureux de ne pas avoir été pris dedans. Mais ce qui compte, c'est qu'ils sont enfin terminés, même si la tour est dans un triste état.~ 

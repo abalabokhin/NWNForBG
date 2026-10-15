@@ -6,7 +6,7 @@
 @5 = ~Car c'est ce que vous êtes et ce que vous pouvez encore être, mon enfant. Cela fait longtemps que Lathandre, le dieu de l'Aube, vous attend.~
 @6 = ~Je suis un esprit divin envoyé par le dieu Lathandre pour surveiller cet endroit jusqu'au Jour du Jugement. Et ce jour est venu...~
 @7 = ~Ce château était autrefois la demeure des frères Jhareg. Maintenant, il est prisonnier du temps par la volonté de Lathandre, dieu de l'Aube, en prévision de votre venue.~
-@8 = ~I am no ordinary ghost, though there is no shortage of ghosts in these halls..... I am a divine spirit sent by the god Lathander to watch over this place until the day of Judgment. And now that day has come....~ /*Je ne suis pas un simple fantôme, bien que ces lieux soient effectivement hantés... Je suis un esprit divin envoyé par le dieu Lathandre pour surveiller cet endroit jusqu'au Jour du Jugement. Et ce jour est venu...*/
+@8 = ~Je ne suis pas un fantôme ordinaire, même si ces salles n'en manquent pas... Je suis un esprit divin envoyé par le dieu Lathandre pour veiller sur cet endroit jusqu'au jour du Jugement. Et ce jour est arrivé...~ /*Je ne suis pas un simple fantôme, bien que ces lieux soient effectivement hantés... Je suis un esprit divin envoyé par le dieu Lathandre pour surveiller cet endroit jusqu'au Jour du Jugement. Et ce jour est venu...*/
 @9 = ~Ce crime s'est déroulé il y a si longtemps et ses conséquences ont été tellement terribles que Lathandre lui-même ne s'est pas senti apte à juger les accusés.~
 @10 = ~Dites-m'en plus...~
 @11 = ~Allez en directement au fait, voulez-vous ?~
@@ -15,7 +15,7 @@
 @14 = ~J'aurais tout d'abord des questions à vous poser.~
 @15 = ~Très bien. Je reviendrai vous voir avec leurs déclarations sous serment.~
 @16 = ~Je ne suis pas le juge que vous attendez et il est *hors de question* que j'entre dans vos tours.~
-@17 = ~You must learn from them the nature of the crime and from them obtain their written oath. When both oaths are in my hands, I shall hear your Judgment. I will open doors for you, behind which you will find staircases to both towers. Show wisdom, judge, and compassion for all of us....~ /*Vous devez les interroger quant à la nature du crime et obtenir une déclaration écrite sous serment de leur part. Quand vous les aurez toutes les deux, vous viendrez me faire part de votre verdict. La porte nord conduit aux escaliers des deux tours. Faites preuve de sagesse et de compassion, juge.*/
+@17 = ~Vous devez apprendre de leur bouche la nature du crime et obtenir de chacun une déclaration écrite sous serment. Quand j'aurai ces deux déclarations, j'entendrai votre jugement. Je vais ouvrir les portes derrière lesquelles se trouvent les escaliers menant aux deux tours. Faites preuve de sagesse, juge, et de compassion envers nous tous...~ /*Vous devez les interroger quant à la nature du crime et obtenir une déclaration écrite sous serment de leur part. Quand vous les aurez toutes les deux, vous viendrez me faire part de votre verdict. La porte nord conduit aux escaliers des deux tours. Faites preuve de sagesse et de compassion, juge.*/
 @18 = ~Faites, et je vous répondrai si Lathandre m'y autorise.~
 @19 = ~Quint fait partie des accusés ? Mais je l'ai bien vu plus tôt, non ?~
 @20 = ~Quel est ce crime que je suis censé juger ?~
@@ -55,8 +55,8 @@
 @54 = ~Quint et Karlat Jhareg, je vous convoque à la Cour du Jugement.~
 @55 = ~Je détiens les serments des frères Jhareg et cette cour requiert la présence d'un Juge. Êtes-vous prêt pour le Jugement ?~ [NWGUA052]
 @56 = ~Un Jugement ? Je ne comprends pas ce qui se passe.~
-@57 = ~Ah, then perhaps you are still unfamiliar with the sad history of Jhareg Castle. This castle once belonged to the Jhareg brothers. Now it has been turned into a time trap by Lathander, the Morninglord, awaiting your arrival. Long ago did the crime take place and so great were its consequences that Lathander himself felt unfit to stand in Judgment over those accused... It was the crime of mortals, and mortal was to be the judge. And so this castle and the village around it have been withdrawn from the flow of time to await your arrival.~ /*Ah ! Peut-être ne connaissez-vous pas la triste histoire du Château Jhareg. Ce château était autrefois la demeure des frères Jhareg. Maintenant, il est prisonnier du temps par la volonté de Lathandre, dieu de l'Aube, en prévision de votre venue. Ce crime s'est déroulé il y a si longtemps et ses conséquences ont été tellement terribles que Lathandre lui-même ne s'est pas senti apte à juger les accusés. C'était un crime de mortel, qui ne pouvait être jugé que par un mortel. C'est pour cette raison que le château et le village ont été extraits du fil du temps, dans l'attente de votre venue.*/
-@58 = ~The accused are imprisoned in their towers. They are known as the brothers Jhareg, Karlat in the western tower and Quintus in the eastern tower. You must learn from them the nature of the crime and from them obtain their written oath. When both oaths are in my hands, I shall hear your Judgment. Show wisdom, judge, and compassion for all of us....~ /*Les accusés sont confinés dans leurs tours, derrière la porte nord. Ce sont les frères Jhareg. Karlat se trouve dans la tour ouest, Quint dans la tour est. Vous devez les interroger quant à la nature du crime et obtenir une déclaration écrite sous serment de leur part. Quand vous les aurez toutes les deux, vous viendrez me faire part de votre verdict. Position de celui qui écoute pour les sons 3D.*/
+@57 = ~Ah, peut-être ignorez-vous encore la triste histoire du château de Jhareg. Il appartenait autrefois aux frères Jhareg. Lathandre, le Seigneur de l'Aube, l'a enfermé dans le temps en attendant votre venue. Le crime est ancien, et ses conséquences furent si terribles que Lathandre lui-même ne s'estima pas apte à juger les accusés... Le crime était celui de mortels ; le juge devait donc être mortel. Ainsi, ce château et le village qui l'entoure ont été retirés du cours du temps pour attendre votre arrivée.~ /*Ah ! Peut-être ne connaissez-vous pas la triste histoire du Château Jhareg. Ce château était autrefois la demeure des frères Jhareg. Maintenant, il est prisonnier du temps par la volonté de Lathandre, dieu de l'Aube, en prévision de votre venue. Ce crime s'est déroulé il y a si longtemps et ses conséquences ont été tellement terribles que Lathandre lui-même ne s'est pas senti apte à juger les accusés. C'était un crime de mortel, qui ne pouvait être jugé que par un mortel. C'est pour cette raison que le château et le village ont été extraits du fil du temps, dans l'attente de votre venue.*/
+@58 = ~Les accusés sont emprisonnés dans leurs tours. Ce sont les frères Jhareg : Karlat dans la tour ouest et Quintus dans la tour est. Vous devez apprendre de leur bouche la nature du crime et obtenir de chacun une déclaration écrite sous serment. Quand j'aurai ces deux déclarations, j'entendrai votre jugement. Faites preuve de sagesse, juge, et de compassion envers nous tous...~ /*Les accusés sont confinés dans leurs tours, derrière la porte nord. Ce sont les frères Jhareg. Karlat se trouve dans la tour ouest, Quint dans la tour est. Vous devez les interroger quant à la nature du crime et obtenir une déclaration écrite sous serment de leur part. Quand vous les aurez toutes les deux, vous viendrez me faire part de votre verdict. Position de celui qui écoute pour les sons 3D.*/
 @59 = ~Oui, je suis prêt.~ 
 @60 = ~Non, j'ai encore besoin d'y réfléchir.~ 
 @61 = ~Vous savez les charges qui pèsent sur vous : par une nuit de solstice d'hiver, il y a bien longtemps, les enfants de Boisroussi ont été amenés ici et massacrés. En tant qu'accusés, vous vous êtes tous deux défendus et vous avez transmis votre témoignage écrit au juge qui se tient ici devant vous.~ 
@@ -75,18 +75,18 @@
 @74 = ~C'est bien simple : Quint a admis sa culpabilité.~
 @75 = ~Pour moi, la cause de Karlat était la plus juste.~
 @76 = ~J'ai choisi au hasard.~
-@77 = ~The Judge's heart is theirs alone. Ask no more.~/*Nul juge n'a à répondre de ses choix.*/
+@77 = ~Le cœur du juge n'appartient qu'à lui. N'en demandez pas davantage.~/*Nul juge n'a à répondre de ses choix.*/
 @78 = ~Il suffisait de s'intéresser de plus près à l'histoire de Karlat pour voir qu'elle n'était pas crédible.~
 @79 = ~Pour moi, la cause de Quint était la plus juste des deux.~
 @80 = ~C'est vrai. Mais souhaitez-vous connaître la version de Lathandre ?~
 @81 = ~Oui, donnez-la moi.~
-@82 = ~No. It's getting late.~/*Non. Je m'en vais.*/
+@82 = ~Non. Il se fait tard.~/*Non. Je m'en vais.*/
 @83 = ~Peut-être. Souhaitez-vous entendre la version de Lathandre ?~
 @84 = ~Qu'il en soit ainsi. Parfois, le destin est le meilleur des juges. Voulez-vous tout de même entendre la version de Lathandre.~
 @85 = ~Il faut une grande sagesse pour être capable de dépasser les apparences. Souhaitez-vous tout de même entendre la version de Lathandre ?~
 @86 = ~Voilà. Lathandre déclare que cette cour est dissoute. Lorsque vous serez parti, je scellerai les portes du château et vous ne pourrez jamais y revenir. Puisse la bénédiction de Lathandre vous accompagner, juge.~ 
 @87 = ~Le fait que de nombreux enfants aient été massacrés dans ce château lors d'une nuit de solstice d'hiver ne souffre aucune contestation, mais les événements qui ont conduit au crime sont bien plus nébuleux. Et c'est bien Quint Jhareg, en effet, qui a rassemblé les enfants du village en leur faisant miroiter une fête dans la bibliothèque du château...~ 
-@88 = ~But it was his brother, Karlat, who tricked him into doing it and started the slaughter with his spell....Karlat sought to become a noble baelnorn, you see, and had been told that the blood of innocents would be required...~ /*Car Karlat désirait devenir un baelnorn noble, voyez-vous, et il avait appris qu'il lui fallait pour cela faire couler le sang des innocents.*/
+@88 = ~Mais c'est son frère, Karlat, qui l'a poussé à agir par la ruse et qui a déclenché le massacre avec son sort... Karlat cherchait à devenir un noble baelnorn, voyez-vous, et on lui avait dit que cela nécessitait le sang d'innocents...~ /*Car Karlat désirait devenir un baelnorn noble, voyez-vous, et il avait appris qu'il lui fallait pour cela faire couler le sang des innocents.*/
 @89 = ~C'est Bélial le démon qui lui a menti, détournant ses nobles intentions pour l'inciter à commettre un acte abominable.~
 @90 = ~Le phylactère était au centre de l'affaire. Karlat en avait besoin et Bélial le lui a donné, mais Quint l'a volé. Puis Lathandre l'a confisqué, me le remettant en garde, et vous avez enfin déterminé son destin en rendant votre verdict.~
 @91 = ~Cela fait longtemps que je sens ta présence en ce château. Le juge vient de me montrer ta confession écrite et de te déclarer coupable.~
@@ -97,9 +97,9 @@
 @96 = ~Tout le monde doit vivre libre, que ce soit pour faire le bien ou le mal.~
 @97 = ~Je n'avais pas conscience des conséquences de mon verdict.~
 @98 = ~Mais... mais, juge... Non, je ne dois pas discuter le verdict. Sachez tout de même que, par votre décision, vous venez de nous maudire, nous tous qui sommes réunis ici. Nous allons donc demeurer ici, perpétuellement exilés du cours du temps et condamnés à vivre éternellement, en proie à la démence et à l'entropie. Tel est votre verdict. Qu'il en soit ainsi.~
-@99 = ~I have but one question left: What brought this Judge to <HISHER> Judgment?~ /*J'ai encore une question à vous poser : qu'est-ce qui vous a incité à rendre ce verdict ?*/
+@99 = ~Il ne me reste qu'une question : qu'est-ce qui a conduit le juge à rendre ce jugement ?~ /*J'ai encore une question à vous poser : qu'est-ce qui vous a incité à rendre ce verdict ?*/
 @100 = ~Nous sommes tous coupables, à notre manière.~
 @101 = ~Bien dit, et cette théorie n'est pas sans mérite. Souhaitez-vous tout de même entendre la version de Lathandre ?~
 @102 = ~Dans ce cas, malheur à vous, juge, et ce où que vous alliez. Souhaitez-vous entendre la version de Lathandre ?~
-@103 = ~Very well. To all assembled, then, the Judge declares this court adjourned. When you leave, I will seal the castle doors and you will never return....~ 
+@103 = ~Très bien. Le juge déclare donc devant tous que l'audience est levée. Quand vous serez parti, je scellerai les portes du château et vous ne pourrez plus revenir...~ 
 /*Très bien. Le juge déclare cette cour dissoute. Vous avez tué [Villain] et obtenu votre récompense.*/

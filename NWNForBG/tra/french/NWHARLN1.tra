@@ -30,8 +30,8 @@
 @29 = ~Peut-être avez-vous entendu parler de choses intéressantes ?~
 @30 = ~J'aimerais trouver du travail, alors si avez des pistes...~
 @31 = ~Ça suffit, partez maintenant, je n'ai pas le temps d'indiquer son chemin à une personne qui peut le trouver toute seule. Demandez à un garde, ça l'occupera et ça le tiendra éloigné de moi.~
-@32 = ~Then begone, cruel <LADYLORD>. May the plague take ye, too.~/*Alors fichez le camp. Que la maladie vous emporte vous aussi.*/
-@33 = ~I... no. No, my <LADYLORD>. I thank you, but 'tis not my time just yet.~/*Je... non merci, gentil <LADYLORD>. Je vous remercie mais l'heure n'est pas encore venue.*/
+@32 = ~Alors partez, <LADYLORD>, puisque vous êtes sans cœur. Que la peste vous emporte aussi.~/*Alors fichez le camp. Que la maladie vous emporte vous aussi.*/
+@33 = ~Je... non. Non, <LADYLORD>. Je vous remercie, mais mon heure n'est pas encore venue.~/*Je... non merci, gentil <LADYLORD>. Je vous remercie mais l'heure n'est pas encore venue.*/
 @34 = ~Alors laissez-moi et passez votre chemin.~
 @35 = ~Merci, <LADYLORD>, vous êtes bien gentil. Ce soir, mes enfants vont manger grâce à vous.~
 @36 = ~Je... vous êtes trop généreux, <LADYLORD> ! Soyez béni ! Mes enfants... mes enfants pourront vivre quand je ne serai plus. Soyez béni !~
@@ -46,5 +46,5 @@
 @45 = ~Personne ne dépense d'argent donc personne n'embauche. Sauf au Masque de Pierrelune peut-être... mais même là, il y a peu de chance. Oh, j'pense bien qu'on doit pouvoir trouver du boulot. Y'a pleins d'choses qu'les gens veulent faire surtout avec une ville plongée dans l'chaos. Mais j'n'ai entendu parler de rien.~ 
 @46 = ~Nan. Restez ici un peu et j'suis sûre qu'vous apprendrez tout ce que vous voulez et bien plus. Bon, aviez-vous besoin d'autre chose?~ 
 @47 = ~Que voulez-vous jeune fille ? Je dois travailler, enfin pour une pièce ou deux... sinon je vais encore devoir dormir dehors et je vais attraper la maladie.~
-@48 = ~Back again, my <LADYLORD>? You should really not be hangin' about me so much... I *am* ill with the Wailing Death, my <LADYLORD>.~
+@48 = ~Vous revoilà, <LADYLORD> ? Vous ne devriez pas rester aussi souvent près de moi... J'ai bel et bien la Mort Hurlante, <LADYLORD>.~
 /*De retour, noble <LADYLORD> ? Vous devriez pas traîner près de moi comme ça... je *souffre* de la Mort Hurlante.*/

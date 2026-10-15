@@ -1,17 +1,17 @@
 @0 = ~Ainsi... *voici* le dernier groupe d'entrants, n'est-ce pas ? Très bien. Je me nomme Jarou, le Maître des Jeux. Permettez-moi de vous expliquer comment ça marche :~ [NWJAR050]
-@1 = ~Entrance to the dungeon costs 1000 gold. Exiting this dungeon through the north door will take you to the first level of the labyrinth, there are three levels in total. You must explore all the dungeons and find the four crystal items. If you can do that and answer the riddle, you will return here as winners.~/*Entrée des cryptes Si cette case est cochée, l'éditeur vous demandera le texte de la réplique dès que vous aurez ajouté une entrée texte. Vous dire tout quoi savoir, et plus perdre de temps. Si vous voulez que tout s'arrange, vous devez prendre les choses en main.*/
+@1 = ~L'entrée du donjon coûte 1 000 pièces d'or. En franchissant la porte nord, vous atteindrez le premier niveau du labyrinthe, qui en compte trois. Vous devrez explorer tous les souterrains et retrouver les quatre objets de cristal. Si vous y parvenez et répondez à l'énigme, vous reviendrez ici en vainqueurs.~/*Entrée des cryptes Si cette case est cochée, l'éditeur vous demandera le texte de la réplique dès que vous aurez ajouté une entrée texte. Vous dire tout quoi savoir, et plus perdre de temps. Si vous voulez que tout s'arrange, vous devez prendre les choses en main.*/
 @2 = ~Ni moi ni Mutamin ne pourrons être tenus responsables de votre mort ou de celle de vos compagnons. Vous entrez dans les souterrains à vos risques et périls.~ [NWJAR056]
-@3 = ~Now, then, should anyone wish to enter, approach me with your gold and I'll let you into the maze.~ [NWJAR057] /*Si quelqu'un est intéressé, qu'il vienne me donner la somme convenue pour être téléporté à l'intérieur des souterrains.*/
-@4 = ~Yes, my <LADYLORD>? Are you ready to enter the dungeon?~ [NWJAR051]/*Oui, <LADYLORD> ? Etes-vous prêt à entrer dans le donjon ?*/
-@5 = ~Yes, I am. Here is your 1000 gold.~ /*Oui, je suis prêt. Voici vos 500 pièces d'or.*/
-@6 = ~I'm not ready yet.~ /*Pas vraiment, non.*/
+@3 = ~Bien. Si quelqu'un souhaite entrer, qu'il vienne me trouver avec son or et je le laisserai pénétrer dans le labyrinthe.~ [NWJAR057] /*Si quelqu'un est intéressé, qu'il vienne me donner la somme convenue pour être téléporté à l'intérieur des souterrains.*/
+@4 = ~Oui, <LADYLORD> ? Êtes-vous prêt à entrer dans le donjon ?~ [NWJAR051]/*Oui, <LADYLORD> ? Etes-vous prêt à entrer dans le donjon ?*/
+@5 = ~Oui. Voici vos 1 000 pièces d'or.~ /*Oui, je suis prêt. Voici vos 500 pièces d'or.*/
+@6 = ~Je ne suis pas encore prêt.~ /*Pas vraiment, non.*/
 @7 = ~Oui, mais les 500 pièces d'or sont-elles vraiment nécessaires ?~
-@8 = ~Excellent, come on in, I'll open the grate. And let the contest begin!~
+@8 = ~Excellent, entrez ! Je vais ouvrir la grille. Et que la compétition commence !~
 /*Excellent. Préparez-vous <LADYLORD> ! Et que la compétition commence !!*/
 @10 = ~Comme vous voulez. Je reste ici si jamais vous changez d'avis.~
 @11 = ~Oui. Ce que donne chaque personne est ajouté à la somme totale qui sera remise à celui ou celle qui traversera le donjon. Comme tout le monde a autant de chances de réussir, il ne serait pas juste d'accorder une réduction à certains participants. Alors vous êtes prêt ?~ 
-@12 = ~Hurry up, <LADYLORD>. The competition has already begun, and the other competitors may be ahead of you.~/*Plus vite. Le dernier sceau a été rompu, les ruines d'Illusk vous sont ouvertes.*/
+@12 = ~Dépêchez-vous, <LADYLORD>. La compétition a déjà commencé et les autres concurrents sont peut-être devant vous.~/*Plus vite. Le dernier sceau a été rompu, les ruines d'Illusk vous sont ouvertes.*/
 @13 = ~Vous avez gagné la compétition. Félicitations ! Allez parler à Mutamin pour obtenir votre récompense !~ [NWJAR052]
 @14 = ~Quelqu'un a remporté la compétition. Revenez une autre fois, quand le donjon aura été rénové pour la suite !~ [NWJAR053]
-@15 = ~I'm sorry, but you lost the competition. Come back another time, when the dungeon has been re-worked for the sequel!~ 
+@15 = ~Je suis désolé, mais vous avez perdu la compétition. Revenez une autre fois, lorsque le donjon aura été remanié pour la suite !~ 
 /*Quelqu'un a remporté la compétition. Revenez une autre fois, quand le donjon aura été rénové pour la suite !*/

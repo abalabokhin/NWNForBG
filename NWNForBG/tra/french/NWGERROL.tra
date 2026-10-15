@@ -15,7 +15,7 @@
 @14 = ~Pouvez-vous m'indiquer le chemin conduisant à Luskan ?~
 @15 = ~J'ai cru comprendre qu'il y avait des cavernes dans la région.~
 @16 = ~Parlons d'autre chose.~
-@17 = ~Aye, do be careful if you go into the hills, then, <GIRLBOY>. I wish you well.~/*Entendu, mais faites gaffe dans ces collines, mon <GIRLBOY>. Bonne chance à vous.*/
+@17 = ~Oui, soyez prudent si vous allez dans les collines, <GIRLBOY>. Bonne chance.~/*Entendu, mais faites gaffe dans ces collines, mon <GIRLBOY>. Bonne chance à vous.*/
 @18 = ~Eh bien, c'est une longue histoire. Ça m'étonne que mon gars vous ait pas mis au jus.~
 @19 = ~L'affaire s'annonce difficile, mais vous serez peut-être à la hauteur, mon <GIRLBOY>. Puisque mon fils ne vous a rien dit, laissez-moi tout vous expliquer.~
 @20 = ~Oh, je voulais pas vous forcer la main, mon <GIRLBOY>. Mais je suis content que vous soyez venu. Laissez-moi vous raconter ce qui se passe par ici.~
@@ -35,17 +35,17 @@
 @34 = ~D'autres sont venus avant moi ?~
 @35 = ~Quelle genre de récompense avez-vous en tête ?~
 @36 = ~J'ai quelques questions.~
-@37 = ~I'll take care of it.~/*Je vais rendre visite à Baram.*/
+@37 = ~Je m'en occupe.~/*Je vais rendre visite à Baram.*/
 @38 = ~J'ai mieux à faire.~
 @39 = ~Oui. C'est un vieil ami, comme je viens de vous le dire. Vous ne pensiez tout de même pas que j'étais fermier de naissance, si ? Ha ! Tous les aventuriers doivent bien finir par prendre leur retraite un jour ou l'autre, <GIRLBOY>. Si j'étais plus jeune, j'irais moi-même dans ces cavernes pour aller rechercher Léah. J'aimerais bien en être encore capable. Mais je suis obligé d'attendre quelqu'un qui pourra s'en charger à ma place.~ 
 @40 = ~Si Luskan avait continué à maintenir l'ordre dans la région, Dergiab ne se serait jamais mis en tête de changer ses habitudes... Et ma femme serait toujours là.~
 @41 = ~Eh bien, l'auberge la plus proche devrait être l'Auberge de l'Alliance, à Port Llast. Cela ne devrait pas vous prendre trop de temps pour vous y rendre. Sinon, la seule auberge qui me vienne à l'esprit est celle du Griffon vert. Elle se trouve en dehors de Luskan, au Nord, par-delà les collines. Si vous voulez, vous pouvez rester ici, mais je n'ai pas grand-chose à vous offrir, <GIRLBOY>.~
 @42 = ~C'est pas très loin au nord, mon <GIRLBOY>. Restez sur la route et vous y arriverez comme une fleur. Je peux vous dire que vous perdez votre temps. Luskan a fermé ses portes et on vous renverra vers l'auberge du Griffon vert. A vous de voir...~
-@43 = ~Aye. Plenty of caves in these parts, and full of creatures of all sorts. Nearest entrance is in the hills to the southeast of here. There are also two caves to the south. If you can't seriously handle yourself yet, dont go into those hills. There are many dangerous creatures there.~ /*Ouais, y'en a un paquet, et elles sont pleines de bestioles en tout genre. L'entrée la plus proche est dans les collines, au nord. Il y a deux serrures sur cette porte. Si vous changez d'avis, vous me trouverez ici. Où sont ces maudites créatures ?*/
-@44 = ~Something else old Gerrol can do for you, then, <GIRLBOY>?~/*Dans ce cas, y a-t-il autre chose que le vieux Gerrol puisse faire pour vous, mon <GIRLBOY> ?*/
+@43 = ~Oui. Il y a beaucoup de cavernes par ici, pleines de créatures de toutes sortes. L'entrée la plus proche est dans les collines, au sud-est. Il y a aussi deux cavernes au sud. Si vous ne savez pas encore bien vous défendre, n'allez pas dans ces collines. Il y a beaucoup de créatures dangereuses.~ /*Ouais, y'en a un paquet, et elles sont pleines de bestioles en tout genre. L'entrée la plus proche est dans les collines, au nord. Il y a deux serrures sur cette porte. Si vous changez d'avis, vous me trouverez ici. Où sont ces maudites créatures ?*/
+@44 = ~Le vieux Gerrol peut-il faire autre chose pour vous, <GIRLBOY> ?~/*Dans ce cas, y a-t-il autre chose que le vieux Gerrol puisse faire pour vous, mon <GIRLBOY> ?*/
 @45 = ~Oui, quelques aventuriers sont allés se mesurer à ces créatures... Et aucun n'en est revenu, j'en ai bien peur...~
 @46 = ~Pour être honnête, il ne me reste pas grand-chose du temps où j'étais moi-même aventurier. Mais tout l'or que je possède est à vous si vous pouvez me dire, preuves à l'appui, ce qui est arrivé à ma femme... Ou, mieux encore, si vous me la ramenez. Je vous offrirai également de l'argent si vous me rapportez la tête de Dergiab, afin d'être sûr qu'il ne terrorisera plus la région. Ce n'est pas grand-chose, je le sais bien, mais j'imagine que Dergiab a accumulé un joli magot.~ 
-@47 = ~Aye? I'll answer whatever I can, <GIRLBOY>.~ /*Ah oui ? J'y répondrai de mon mieux, mon <GIRLBOY>.*/
+@47 = ~Oui ? Je vous répondrai de mon mieux, <GIRLBOY>.~ /*Ah oui ? J'y répondrai de mon mieux, mon <GIRLBOY>.*/
 @48 = ~Parlez-moi de ce Dergiab.~
 @49 = ~Où puis-je trouver ces cavernes ?~
 @50 = ~Avez-vous entendu parler d'une secte dans la région ?~
@@ -64,7 +64,7 @@
 @63 = ~J'ai la bague de Léah. Elle est morte.~
 @64 = ~Je vois que Léah est revenue saine et sauve.~
 @65 = ~J'ai besoin de renseignements.~
-@66 = ~So far there is no news.~/*Votre père est mort.*/
+@66 = ~Je n'ai pas encore de nouvelles.~/*Votre père est mort.*/
 @67 = ~Je n'ai pas le temps de me charger de vos courses.~
 @68 = ~Quel soulagement ! Désormais plus personne ne nous terrorisera. Merci bien, mon <GIRLBOY>... J'espère que cet or suffira à vous payer de vos efforts.~
 @69 = ~La disparition de Dergiab ne vaut-elle pas un peu plus ?~
@@ -74,22 +74,22 @@
 @73 = ~Hélas, je m'y attendais. Mieux vaut savoir, j'imagine, mais il sera difficile de l'annoncer à l'enfant. Merci, <GIRLBOY>. Au moins, maitenant, je sais. J'espère que ces quelques pièces d'or vous dédommageront de vos efforts.~ 
 @74 = ~Cela mérite bien un peu plus, non ?~
 @75 = ~Je suis certain que vous pourriez me donner plus. Je n'aimerais pas me montrer brutal.~
-@76 = ~I won't take gold for bad news.~ /*Moi pas prendre or pour nouvelle triste.*/
+@76 = ~Je ne prendrai pas d'or pour une mauvaise nouvelle.~ /*Moi pas prendre or pour nouvelle triste.*/
 @77 = ~Oui, elle est revenue saine et sauve, et je n'aurais jamais cru cela possible. Merci bien, mon <GIRLBOY>... je vous serai toujours reconnaissant. J'espère que cet or fera une récompense convenable ?~
 @78 = ~Allons, le salut de votre femme ne vaut-il pas plus que cela ?~
 @79 = ~Que suis-je censé faire pour vous, déjà ?~
-@80 = ~I'll tell you everything I know. What are you looking for?~/*"Tout ce que je possède." Qu'est-ce que vous cherchez ?*/
+@80 = ~Je vous dirai tout ce que je sais. Que cherchez-vous ?~/*"Tout ce que je possède." Qu'est-ce que vous cherchez ?*/
 @81 = ~Eh bien, revenez me voir quand vous aurez quelque chose à me dire. Prudence ! Cette région est dangereuse.~
 @82 = ~Comme vous voudrez, mon <GIRLBOY>, je ne faisais que demander. Mais si vous trouvez quelque chose, ça serait gentil de me le dire.~ 
 @83 = ~Ne vous êtes-vous pas copieusement servi dans le trésor de Dergiab ? J'aimerais beaucoup vous donner plus, mais c'est impossible.~
-@84 = ~Okay, I agree.~ /*Au revoir.*/
+@84 = ~D'accord, j'accepte.~ /*Au revoir.*/
 @85 = ~Et moi qui croyais que tout allait s'arranger avec la disparition de ce monstre. **soupir** Entendu, vous êtes avide de gains, mais après tout vous l'avez mérité.~
 
 @87 = ~C'est le moins que je puisse faire pour vous.~
 @88 = ~Je n'ai plus rien à vous offrir, mon <GIRLBOY>. Je ne suis plus aussi riche que lorsque j'étais aventurier.~
 @89 = ~Fichtre ! De mon temps, les aventuriers ne menaçaient pas les braves gens. Mais vos manières vous regardent... Tenez, c'est tout ce que j'ai.~ 
 
-@91 = ~You... you are a good <MANWOMAN>, <GIRLBOY>. I appreciate it.~ /*Vous... vous êtes un brave <MANWOMAN>, mon <GIRLBOY>. Merci bien.*/
+@91 = ~Vous... vous avez bon cœur, <GIRLBOY>. Je vous en remercie.~ /*Vous... vous êtes un brave <MANWOMAN>, mon <GIRLBOY>. Merci bien.*/
 @92 = ~> Oui, vous devez avoir raison. Tenez, voilà pour vous, mon <GIRLBOY>... C'est tout ce que je possède.~
 
 @94 = ~Je ne vous l'ai pas déjà dit, mon <GIRLBOY> ? Bon, y'a pas de mal à recommencer cette histoire. Les collines environnantes abritent de nombreuses créatures : gobelours, gobelins et autres. En temps normal, elles ne nous dérangent guère, mais elles se sont enhardies depuis que Luskan a cessé de patrouiller la région. Cela fait plusieurs semaines qu'elles agressent quiconque passe dans la région. Elles ont aussi attaqué ma ferme à plusieurs reprises et ont enlevé ma femme.~ 
