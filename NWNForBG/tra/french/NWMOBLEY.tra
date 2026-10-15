@@ -14,7 +14,7 @@
 @13 = ~Non, pas du tout. Savez-vous au moins en quelle saison nous sommes ?~
 @14 = ~Eh bien ! Dans l'ensemble c'est un endroit tranquille. Les Seigneurs Jhareg assurent notre sécurité et nous n'avons pas grand souci à nous faire. Très peu...~
 @15 = ~Vous semblez nerveux. Vos seigneurs sont-ils justes ?~
-@16 = ~I'd like to ask another question.~/*J'aimerais vous poser une autre question.*/
+@16 = ~J'aimerais poser une autre question.~/*J'aimerais vous poser une autre question.*/
 @17 = ~Oh, c'est sans doute parce que je suis trop insouciant. Les Seigneurs Jhareg s'inquiètent à notre place, pour que nous n'ayons pas à le faire. Oui, c'est ça... C'est ce qu'il a dit...~
 @18 = ~Je... Ecoutez, rien ne cloche ici. Le temps passe juste lentement dans un petit village. Dites-moi ce que vous avez à dire et allez-vous-en.~
 @19 = ~Monsieur le bourgmestre, si vous craignez une menace, je peux peut-être vous aider ?~
@@ -24,10 +24,10 @@
 @23 = ~A moi vous pouvez parler. N'est-ce pas, mon bon ?~
 @24 = ~Il n'y a aucune menace ! Je ne veux pas que vous fassiez des histoires pour rien ! Si vousdérangez les Seigneurs Jhareg, ce sera la fin de tout !~
 @25 = ~Les Jhareg ? Qui sont-ils ?~
-@26 = ~I suppose, though I do not wish to make trouble. We have been safe from the stories for so long... Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~/*Bien sûr. Quoi donc ? Le Seigneur Karlat Jhareg et son frère... quel est son nom déjà ... ils ont construit un château à flanc de falaise et cette ville s'est développée tout autour. Nous sommes protégés, c'est tout ce qui compte. Il nous a fallu consentir à quelques sacrifices et écouter leurs histoires, mais nous sommes protégés...*/
+@26 = ~Je suppose, même si je ne veux pas d'ennuis. Cela fait si longtemps que nous sommes à l'abri des histoires... Le seigneur Karlat Jhareg et son frère... comment s'appelait-il déjà... ont taillé un château dans la falaise et bâti cette ville autour. Nous sommes protégés, et c'est tout ce qui compte. Il a fallu faire certains sacrifices et écouter leurs histoires... mais nous sommes protégés...~/*Bien sûr. Quoi donc ? Le Seigneur Karlat Jhareg et son frère... quel est son nom déjà ... ils ont construit un château à flanc de falaise et cette ville s'est développée tout autour. Nous sommes protégés, c'est tout ce qui compte. Il nous a fallu consentir à quelques sacrifices et écouter leurs histoires, mais nous sommes protégés...*/
 @27 = ~Quelles histoires ?~
-@28 = ~What sacrifices?~/*Quelles histoires ?*/
-@29 = ~I d-don't want trouble. I just... very well, but there is not that much to tell. We have been safe from the stories for so long... Lord Karlat Jhareg and his brother... what was his name... they carved a castle out of the cliffside and formed this town around it. We are protected, and that is all that matters. We have had to make certain sacrifices and listen to their stories... but we are protected...~/*Je... je ne veux pas d'ennuis. J'ai juste... très bien, mais il n'y a pas grand-chose à dire. Le Seigneur Karlat Jhareg et son frère... quel est son nom déjà ... ils ont construit un château à flanc de falaise et cette ville s'est développée tout autour. Nous sommes protégés, c'est tout ce qui compte. Il nous a fallu consentir à quelques sacrifices et écouter leurs histoires, mais nous sommes protégés...*/
+@28 = ~Quels sacrifices ?~/*Quelles histoires ?*/
+@29 = ~Je... je ne veux pas d'ennuis. Je voulais seulement... Très bien, mais il n'y a pas grand-chose à raconter. Cela fait si longtemps que nous sommes à l'abri des histoires... Le seigneur Karlat Jhareg et son frère... comment s'appelait-il déjà... ont taillé un château dans la falaise et bâti cette ville autour. Nous sommes protégés, et c'est tout ce qui compte. Il a fallu faire certains sacrifices et écouter leurs histoires... mais nous sommes protégés...~/*Je... je ne veux pas d'ennuis. J'ai juste... très bien, mais il n'y a pas grand-chose à dire. Le Seigneur Karlat Jhareg et son frère... quel est son nom déjà ... ils ont construit un château à flanc de falaise et cette ville s'est développée tout autour. Nous sommes protégés, c'est tout ce qui compte. Il nous a fallu consentir à quelques sacrifices et écouter leurs histoires, mais nous sommes protégés...*/
 @30 = ~Je... je ne trouve pas votre approche très.. engageante, <SIRMAAM>. Posez vos questions et partez, s'il vous plaît.~
 @31 = ~Le Seigneur Karlat Jhareg et son frère... quel est son nom déjà ... ils ont construit un château à flanc de falaise et cette ville s'est développée tout autour. Nous sommes protégés, c'est tout ce qui compte. Il nous a fallu consentir à quelques sacrifices et écouter leurs histoires, mais nous sommes protégés...~ 
 @32 = ~Oh ! Vous ne trouverez rien de ce genre ici. Les Seigneurs Jhareg nous protègent de tels bouleversements. Ils nous protègent de tout.~
@@ -41,7 +41,7 @@
 @40 = ~Oui ? Je suis le bourgmestre Mobley. En quoi puis-je vous être utile ?~ [NWMOBL56]
 @41 = ~Je voudrais revenir sur une chose dont vous m'avez parlé.~
 @42 = ~Regardez comme la lumière brille de nouveau à travers les feuilles ! Vous voyez tout ce que vous avez fait ? Je suis resté en retrait pour vous remercier.~
-@43 = ~I'm glad it's over, mayor.~/*Je suis heureux que vous soyez d'accord.*/
+@43 = ~Je suis heureux que ce soit terminé, monsieur le maire.~/*Je suis heureux que vous soyez d'accord.*/
 @44 = ~J'avais mes propres raisons de le faire.~
 @45 = ~Puis-je faire autre chose pour vous ?~
 @46 = ~Sachez que nous vous en sommes reconnaissants. Tous les habitants de la ville, chacun de nous, fantômes et esprits, nous sommes enfin libres désormais. Nous laissons cette forêt aux animaux... et à vous.~

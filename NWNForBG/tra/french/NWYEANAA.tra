@@ -19,7 +19,7 @@
 @18 = ~Avez-vous entendu parler d'un certain Maugrim ?~
 @19 = ~Avez-vous entendu parler d'un culte, ici ?~
 @20 = ~Pourquoi y a-t-il un golem dans vos quartiers ?~
-@21 = ~Perhaps not, but I've no desire to speak to some perfumed fool. Go question the orc and leave me be.~/*Peut-être pas, mais je n'ai pas envie de parler à un sot parfumé. Allez interroger l'orque dans l'autre salle et fichez-moi la paix.*/
+@21 = ~Peut-être pas, mais je n'ai aucune envie de parler à un imbécile parfumé. Allez interroger l'orque et laissez-moi tranquille.~/*Peut-être pas, mais je n'ai pas envie de parler à un sot parfumé. Allez interroger l'orque dans l'autre salle et fichez-moi la paix.*/
 @22 = ~Vraiment ? Est-ce simplement une de ces politesses d'hommes civilisés ou est-ce que Yénasha vous plaît vraiment ?~
 @23 = ~Je vous trouve sensationnelle.~
 @24 = ~Je veux juste me montrer amical...~
@@ -28,7 +28,7 @@
 @27 = ~Je n'ai pas besoin qu'un homme comme vous vienne me lécher les pieds. Fichez le camp si vous n'avez rien de mieux à m'offrir.~
 @28 = ~Oh ? Un homme d'action, un vrai ? Je ne pensais pas en trouver un parmi les dandys parfumés de cette communauté. Posez-moi vos questions, s'il le faut vraiment.~ 
 @29 = ~J'aime la franchise, mais si vous étiez une femme de ma tribu je vous terrasserais pour m'avoir parlé ainsi. Posez-moi vos questions, s'il le faut vraiment.~ 
-@30 = ~Yes. Was there something else you wanted, <MANWOMAN>?~/*C'est bien mon intention. Vous vouliez autre chose, <MANWOMAN> ?*/
+@30 = ~Oui. Vous vouliez autre chose, <MANWOMAN> ?~/*C'est bien mon intention. Vous vouliez autre chose, <MANWOMAN> ?*/
 @31 = ~Que vouliez-vous dire au sujet des mages ?~
 @32 = ~Je connais certaines choses, bien que je ne sois pas sortie de ces quartiers. Pourquoi cette question ?~
 @33 = ~Parlez-moi de la Confrérie des Arcanes.~
@@ -49,7 +49,7 @@
 @48 = ~Vous ne la connaissez pas ? C'est un groupe de magiciens qui cherche à s'emparer de tout le Nord, si j'ai bien compris. Jusqu'à présent, elle contrôlait à peine plus que Luskan, mais cela va changer. Ses plans sont très secrets. Elle s'allie rarement avec les autres, ou du moins était-ce le cas avant qu'elle ne se choisisse ce nouveau chef...~ 
 @49 = ~Un nouveau chef ?~
 @50 = ~Les magiciens sont comme le reste de cette ville pourrie jusqu'à l'os : ils ne cessent de se battre afin de déterminer qui contrôlera leur tour, comme de bien entendu. D'après ce que j'en sais, la tour est jonchée de cadavres. Mais Maugrim semble avoir gagné ; il s'est autoproclamé archimage. C'est lui qui a invité les ambassadeurs ici... mai il ne s'est pas encore adressé à nous, alors qu'il aurait dû.~ 
-@51 = ~It is a large building... far larger than we care to build in the lands I come from. The wizards connect their rooms with magic stairs from what I can see. The wizards travel from area to area in the tower using runestones.  How they do this I do not even wish to know. One of those stairs is not far from here... but do not go there. One dark-skinned ambassador became curious and was killed swiftly. The wizards do not tolerate intrusion.~/*Ce bâtiment est très grand, bien plus que ceux que nous construisons, là d'où je viens. Et d'après ce que j'en ai vu, les magiciens n'aiment pas relier leurs pièces à l'aide de couloirs ou d'escaliers. A l'intérieur de la tour, ils se déplacent d'un endroit à l'autre par le biais de colonnes de lumières, mais j'ignore comment ils font... et je ne veux surtout pas le savoir ! Il y a une de leurs colonnes au bout du couloir, mais n'y allez pas, surtout. Un ambassadeur à peau sombre s'est montré trop curieux et a instantanément péri. Les magiciens ne tolèrent pas les intrus.*/
+@51 = ~C'est un grand bâtiment... bien plus grand que ce que nous construisons dans mon pays. D'après ce que j'ai vu, les magiciens relient leurs salles par des escaliers magiques. Ils se déplacent d'un endroit à l'autre de la tour grâce à des pierres runiques. Je ne veux même pas savoir comment ils font. L'un de ces escaliers est tout près... mais n'y allez pas. Un ambassadeur à la peau sombre a voulu satisfaire sa curiosité et a été tué sur-le-champ. Les magiciens ne tolèrent aucune intrusion.~/*Ce bâtiment est très grand, bien plus que ceux que nous construisons, là d'où je viens. Et d'après ce que j'en ai vu, les magiciens n'aiment pas relier leurs pièces à l'aide de couloirs ou d'escaliers. A l'intérieur de la tour, ils se déplacent d'un endroit à l'autre par le biais de colonnes de lumières, mais j'ignore comment ils font... et je ne veux surtout pas le savoir ! Il y a une de leurs colonnes au bout du couloir, mais n'y allez pas, surtout. Un ambassadeur à peau sombre s'est montré trop curieux et a instantanément péri. Les magiciens ne tolèrent pas les intrus.*/
 @52 = ~Et maintenant ?~
 @53 = ~Euh... je n'ai pas l'impression qu'il s'agisse d'un magicien comme les autres, mais il est vrai que je ne m'y connais guère. Il me fait l'effet d'être un fou et de servir quelqu'un de plus puissant que lui. J'ignore qui peut bien être son maître, et cela n'a guère d'importance, si Maugrim tient ses promesses.~ 
 @54 = ~Que vous a-t-il promis ?~

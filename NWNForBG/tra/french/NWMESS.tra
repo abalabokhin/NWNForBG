@@ -1,10 +1,10 @@
-@0 = ~Hello! I come from Neverwinter for help. A plague is rampant in my city and it is clearly not of natural origin. Lady Aribeth and Lord Nasher have sent me to Athkatla to find heroes to help Neverwinter. Perhaps you can help.~/*En effet, je viens de Padhiver. Le fléau est un bienfait ! **ssss** Il m'apporte une armée ! Aribeth et le Seigneur Nasher m'ont ordonné d'enquêter ici. Je peux peut-être vous aider...*/
-@1 = ~I'm not interested. Find someone else.~/*Pas intéressé. "Demandez à quelqu'un d'autre."*/
-@2 = ~Well, I guess I'll try to help. Where is this city located?~/*Vraiment ? Dans ce cas, je pense que je vais m'en aller. Où se trouve cette Tour des Arcanes ?*/
-@3 = ~It's north of Athkatla. If you agree to help, I will teleport you to Lady Aribeth at the Neverwinter Academy.~/*Ça ne me concerne pas. Vous avez raison. Rendez-vous à la ferme de votre père.*/
-@4 = ~Not now.~/*Pas maintenant !*/
-@5 = ~Yes, I'm ready.~/*Oui, je suis prêt.*/
-@6 = ~Well, I'll be waiting for you here.~/*Eh bien, cela ne nous avance pas beaucoup.*/
-@7 = ~Then get ready, now you will find yourself in the Neverwinter Academy. Lady Aribeth will explain everything to you in detail.~/*Le chien vous souhaite bonne chance dans votre combat contre les envahisseurs. Non, mais je vais prendre tout ce qu'il y a sur votre cadavre.*/
-@8 = ~You're back. Does that mean you're going to help us?~
+@0 = ~Bonjour ! Je viens de Padhiver chercher de l'aide. Une épidémie ravage ma ville et elle n'est manifestement pas d'origine naturelle. Dame Aribeth et le Seigneur Nasher m'ont envoyé à Athkatla pour trouver des héros capables d'aider Padhiver. Peut-être pourriez-vous nous aider.~/*En effet, je viens de Padhiver. Le fléau est un bienfait ! **ssss** Il m'apporte une armée ! Aribeth et le Seigneur Nasher m'ont ordonné d'enquêter ici. Je peux peut-être vous aider...*/
+@1 = ~Cela ne m'intéresse pas. Trouvez quelqu'un d'autre.~/*Pas intéressé. "Demandez à quelqu'un d'autre."*/
+@2 = ~Bon, je suppose que je peux essayer de vous aider. Où se trouve cette ville ?~/*Vraiment ? Dans ce cas, je pense que je vais m'en aller. Où se trouve cette Tour des Arcanes ?*/
+@3 = ~Au nord d'Athkatla. Si vous acceptez de nous aider, je vous téléporterai auprès de Dame Aribeth, à l'Académie de Padhiver.~/*Ça ne me concerne pas. Vous avez raison. Rendez-vous à la ferme de votre père.*/
+@4 = ~Pas maintenant.~/*Pas maintenant !*/
+@5 = ~Oui, je suis prêt.~/*Oui, je suis prêt.*/
+@6 = ~Très bien, je vous attendrai ici.~/*Eh bien, cela ne nous avance pas beaucoup.*/
+@7 = ~Alors préparez-vous. Vous allez vous retrouver à l'Académie de Padhiver. Dame Aribeth vous expliquera tout en détail.~/*Le chien vous souhaite bonne chance dans votre combat contre les envahisseurs. Non, mais je vais prendre tout ce qu'il y a sur votre cadavre.*/
+@8 = ~Vous êtes de retour. Cela signifie-t-il que vous allez nous aider ?~
 /*C'est vous ! N'allez-vous donc pas m'aider ?*/

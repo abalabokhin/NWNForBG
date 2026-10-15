@@ -1,4 +1,4 @@
-@0 = ~No, I will not allow you to kill me! Nature's creatures must be protected, obey my will!~/*Non, je ne vous laisserai pas me tuer ! Les créatures de la nature doivent être protégées !*/
+@0 = ~Non, je ne vous laisserai pas me tuer ! Les créatures de la nature doivent être protégées. Obéissez à ma volonté !~/*Non, je ne vous laisserai pas me tuer ! Les créatures de la nature doivent être protégées !*/
 @1 = ~<MANWOMAN> stupide ! J'ignore pourquoi tu as pensé t'introduire clandestinement chez moi, tuer mes esclaves et détruire un autre des protecteurs de la nature, mais à présent tu as succombé à mes charmes. Prosterne-toi devant ta maîtresse !~
 @2 = ~De quoi parlez-vous ? Je ne suis pas un esclave.~
 @3 = ~Oui, maîtresse. Quels sont vos ordres ?~
@@ -12,11 +12,11 @@
 @11 = ~Nettoyer vos pots de chambre ? C'est dégoûtant, oubliez ça.~
 @12 = ~Je ne porterai pas ça, c'est rose !~
 @13 = ~Non ! Comment est-ce possible ? Qu'est-il arrivé à mes pouvoirs ?~
-@14 = ~You and your slaves attacked me. Give me one reason why I shouldn't kill you?~/*Vous m'attaqueriez ? Donne-moi une raison de t'épargner !*/
-@15 = ~I don't give a damn about your powers. I don't have any, now tell me what's going on here.~/*Je me moque royalement de tes objets. Calmez-vous et expliquez-moi ce qui se passe.*/
+@14 = ~Vous et vos esclaves m'avez attaqué. Donnez-moi une seule raison de ne pas vous tuer.~/*Vous m'attaqueriez ? Donne-moi une raison de t'épargner !*/
+@15 = ~Je me moque de vos pouvoirs. Je n'en ai pas moi-même. Maintenant, dites-moi ce qui se passe ici.~/*Je me moque royalement de tes objets. Calmez-vous et expliquez-moi ce qui se passe.*/
 @16 = ~Non, je vous en prie ! Ne me faites pas de mal. Qu'ai-je fait pour provoquer cette attaque contre ma demeure ?~
 @17 = ~C'est vous qui avez attaqué ! Ce n'est pas moi qui ai commencé.~
-@18 = ~Your slaves attacked me and then you did the same thing. This is not enough?~/*Vos esclaves m'ont attaqué et vous avez continué. Pourquoi serais-je fautif ?*/
+@18 = ~Vos esclaves m'ont attaqué, puis vous en avez fait autant. Cela ne vous suffit pas ?~/*Vos esclaves m'ont attaqué et vous avez continué. Pourquoi serais-je fautif ?*/
 @19 = ~C'est vous qui avez commencé, mais c'est moi qui vais finir !~
 @20 = ~Quoi ? Tu oses me répondre ! Tu es mon esclave... Tu... Tu m'as joué un tour ! Non ! Comment est-ce possible ? Qu'est-il arrivé à mes pouvoirs ?~ 
 @21 = ~Vous...vous voulez dire que vous n'êtes pas venu ici pour me détruire?~
@@ -26,7 +26,7 @@
 @25 = ~Oh, c'est terrible. Je suis désolée, je pensais que... Oh, je ne sais pas pourquoi j'ai pensé à cela. Je ne peux rien faire pour me racheter. J'avais tort, comment est-ce possible ?~
 @26 = ~Vous étiez venu me tuer. C'est ce que j'ai pensé en sentant votre présence près de mon arbre. Je... je voulais juste vous arrêter. Pourrez-vous me pardonner ?~
 @27 = ~Je vous pardonne, mais j'espère que vous allez tout mettre en oeuvre pour m'aider, maintenant.~
-@28 = ~I can't forgive you, but I won't hurt you unless you try something again.~/*C'est une erreur épouvantable. Je ne peux pas vous pardonner, mais je ne vous ferai aucun mal si vous ne tentez rien de nouveau.*/
+@28 = ~Je ne peux pas vous pardonner, mais je ne vous ferai aucun mal à moins que vous ne recommenciez.~/*C'est une erreur épouvantable. Je ne peux pas vous pardonner, mais je ne vous ferai aucun mal si vous ne tentez rien de nouveau.*/
 @29 = ~Il ne peut y avoir de pardon pour ce que vous avez fait, seulement la mort.~
 @30 = ~Oh, merci, <LADYLORD> ! Vous êtes vraiment bon. Je ferai tout mon possible pour vous aider. Si seulement j'avais tous mes pouvoirs, je ne comprends pas pourquoi ils sont si affaiblis.~
 @31 = ~Depuis combien de temps avez-vous des ennuis ?~
@@ -54,7 +54,7 @@
 @53 = ~Il doit y avoir un moyen ! Où est ce portail ?~
 @54 = ~L'Esprit vit dans un autre royaume, quelque part entre le monde des vivants et celui des morts. C'est la seule créature de ce plan capable de franchir le portail.~
 @55 = ~Le portail est dans un bassin situé sous une cascade, mais le trouver ne vous aidera pas. Cela n'aiderait personne.~
-@56 = ~And are you sure that no one but the Spirit entered there?~/*Etes-vous certaine que Dannen est toujours avec elle ?*/
+@56 = ~Et vous êtes certaine que personne d'autre que l'Esprit n'est entré là-bas ?~/*Etes-vous certaine que Dannen est toujours avec elle ?*/
 @57 = ~Il doit bien exister un moyen pour moi d'aller là-bas.~
 @58 = ~Eh bien, plusieurs ont essayé... mais non... ce n'est pas une solution. Tant pis. Seul l'Esprit pourrait réussir cela.~
 @59 = ~Vous étiez sur le point de dire autre chose. Vous devez me le dire, je vous en prie !~
@@ -76,7 +76,7 @@
 @75 = ~Je ne pense pas pouvoir vous écouter plus longtemps. Au revoir.~
 @76 = ~Non. Maintenant que vous le dites, son corps n'y était pas.~
 @77 = ~Je ne vois rien qui puisse vous aider, mais je suis prête à répondre à vos questions.~
-@78 = ~I met the druid in the other room. Do you know about the other missing druids?~/*J'ai rencontré le druide que vous aviez enfermé dans l'autre pièce. Savez-vous quelque chose au sujet des autres druides disparus ?*/
+@78 = ~J'ai rencontré le druide dans l'autre pièce. Savez-vous quelque chose au sujet des autres druides disparus ?~/*J'ai rencontré le druide que vous aviez enfermé dans l'autre pièce. Savez-vous quelque chose au sujet des autres druides disparus ?*/
 @79 = ~Que savez-vous au sujet de la sorcière, Sétara ?~
 @80 = ~Avez-vous le miroir que recherche Sétara ?~
 @81 = ~Pourriez-vous me répéter votre histoire ?~

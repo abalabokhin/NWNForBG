@@ -1,7 +1,7 @@
 @0 = ~Qui êtes-vous ? Que faites-vous chez moi ? Je refuse de croire que mes compatriotes de Padhiver puissent tomber dans le banditisme.~
 @1 = ~Je suis au service d'Aribeth et de la garde de la ville.~
 @2 = ~Je veux juste poser quelques questions.~
-@3 = ~I'm going where I want to go.~/*Moi pas intéressé, tout' façon.*/
+@3 = ~Je vais où bon me semble.~/*Moi pas intéressé, tout' façon.*/
 @4 = ~Je m'en vais.~
 @5 = ~Humph ! On engage des étrangers pour remplacer nos morts. Je suppose qu'ils s'attendent à ce que je vous fasse confiance ? Je répondrai à quelques questions mais, après, vous devrez partir.~
 @6 = ~J'ai besoin d'informations sur Padhiver.~
@@ -33,11 +33,11 @@
 @32 = ~Parlez-moi du quartier de la Péninsule.~
 @33 = ~Je ne m'intéresse que très peu à la politique. Le Seigneur Nasher est notre dirigeant et Dame Aribeth fait partie des Neuf de Padhiver.~
 @34 = ~Quelles mesures le Seigneur Nasher a-t-il prises pour contrer le fléau ?~
-@35 = ~What was Lady Aribeth doing when the plague came?~/*Quoi faire Dame Aribeth quand fléau arriver ?*/
-@36 = ~All right, I'll talk to you. I hope this won't take too long.~/*Très bien, je m'en vais. Oh, ça va mal se finir !*/
+@35 = ~Que faisait dame Aribeth quand la peste est arrivée ?~/*Quoi faire Dame Aribeth quand fléau arriver ?*/
+@36 = ~D'accord, je veux bien vous parler. J'espère que ça ne prendra pas trop longtemps.~/*Très bien, je m'en vais. Oh, ça va mal se finir !*/
 @37 = ~Le Seigneur Nasher nous a assuré que tout avait été mis en oeuvre pour trouver un remède. A part ça... je n'ai rien entendu d'autre.~
 @38 = ~Avec le fléau qui se répand, tout le monde va avoir besoin d'or, alors je ferais bien de garder le mien. Je suis aussi exposé que les autres.~
-@39 = ~Well, I can't afford much, but if I give something, maybe someone else will too. Who knows, I might end up with the plague and get it back. Now, don't you have a charity seal for me? I can't get a break from the taxman without...~/*Bon... je ne suis pas très riche mais si je donne un petit quelque chose, ils se peut que d'autres en fassent autant. Qui sait... si je l'attrape un jour, je serai peut-être amplement remboursé. Avez-vous des conseils à me donner ? J'ai un passe pour le Gantelet.*/
+@39 = ~Eh bien, je n'ai pas beaucoup de moyens, mais si je donne un peu, d'autres le feront peut-être aussi. Qui sait, je pourrais attraper la peste et en bénéficier à mon tour. Vous avez bien un reçu de bienfaisance pour moi ? Sans ça, le percepteur ne m'accordera aucun allègement...~/*Bon... je ne suis pas très riche mais si je donne un petit quelque chose, ils se peut que d'autres en fassent autant. Qui sait... si je l'attrape un jour, je serai peut-être amplement remboursé. Avez-vous des conseils à me donner ? J'ai un passe pour le Gantelet.*/
 @40 = ~Que- quoi ? Vous... vous ne parlez pas sérieusement, hein ? Je n'ai rien ici qui vaille ma vie ! Je... je ne suis personne !~
 @41 = ~Alors vous ne manquerez à personne ! Payez ou mourez !~
 @42 = ~Toutes mes excuses. Je ne voulais pas vous effrayer.~
@@ -59,7 +59,7 @@
 @58 = ~Oh ! J'ai entendu parler de problèmes dans le secteur. Quelque chose en rapport avec le Chef Geôlier possédé par quelque chose. Cela m'a paru extrêmement déplaisant. Mais ce ne sont pas mes affaires. Vous êtes du genre à vous intéresser beaucoup plus que moi à ces choses. En fait, vous ressemblez à ce qu'on m'a dit de la personne ayant réglé le problème là-bas. Ça n'a probablement rien à voir.~ 
 @59 = ~Le Seigneur Nasher a fait appel à toutes les ressources nécessaires pour éradiquer le fléau. Il a été d'un grand soutien, comme tout bon dirigeant en cas de tragédie. En fait, je dirais que ce sont ses conseillers qui font connaître ses intentions. Le Seigneur Nasher, dans sa grande sagesse, s'est enfermé pour se mettre à l'abri de la maladie.~ 
 @60 = ~J'ignore les détails mais elle est en première ligne depuis le début, travaillant aux côtés des gens du peuple et essayant de tout organiser. Les seules personnes que nous voyons fréquemment sont les fidèles d'Heaum qui dispensent leurs bénédictions. J'ignore à qui ils obéissent. Un des subordonnés d'Aribeth ?~
-@61 = ~Wait... you aren't wearing the sash... the sash of approved charity solicitors... You filthy... I've been had, haven't I... Get out... get out of my home! Get out!!~/*Eh bien... Je ne veux pas trop gêner les animaux... Je ne veux pas... Espèce de sale... vous m'avez eu... sortez... sortez de chez moi ! Sortez !!*/
+@61 = ~Attendez... vous ne portez pas l'écharpe... celle des collecteurs de dons agréés... Espèce de... Je me suis fait avoir, c'est ça ? Sortez... sortez de chez moi ! Dehors !~/*Eh bien... Je ne veux pas trop gêner les animaux... Je ne veux pas... Espèce de sale... vous m'avez eu... sortez... sortez de chez moi ! Sortez !!*/
 @62 = ~Encore vous ? Avez-vous vraiment une raison valable pour rester chez moi ?~
-@63 = ~You <SIRMAAM>, are an absolute disgrace to this fine city. Get out of my sight.~
+@63 = ~Vous êtes une honte pour notre belle cité, <SIRMAAM>. Hors de ma vue.~
 /*<SIRMAAM>, vous êtes une véritable souillure sur cette belle ville. Hors de ma vue.*/

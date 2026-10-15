@@ -1,12 +1,12 @@
-@0 = ~Ah, the customer! I have a lot of fruits and vegetables for sale, will you take them? Everything is clean, no infection, I assure you!~/*Client aristocrate J'ai une copie de votre lettre et j'irai jeter un coup d'oeil. Re-bonjour ! Ça fait plaisir de vous revoir !*/
+@0 = ~Ah, un client ! J'ai quantité de fruits et de légumes à vendre, ça vous tente ? Tout est propre, aucune contamination, je vous l'assure !~/*Client aristocrate J'ai une copie de votre lettre et j'irai jeter un coup d'oeil. Re-bonjour ! Ça fait plaisir de vous revoir !*/
 @1 = ~J'aimerais vous poser quelques questions.~
 @2 = ~Au revoir.~
-@3 = ~Hmm, I can tell you about my product.~ /*Bien sûr, je peux.*/
+@3 = ~Hum, je peux vous parler de mes marchandises.~ /*Bien sûr, je peux.*/
 @4 = ~J'ai besoin d'informations sur les différents secteurs de Padhiver.~
 @5 = ~Que savez-vous au sujet du fléau ?~
 @6 = ~Avez-vous entendu des choses bizarres ? Des rumeurs ?~
-@7 = ~Come again.~ /*A bientôt !*/
-@8 = ~Sorry, I can't help. Ask someone else about it.~ /*Désolé, je ne peux rien faire. "Demandez à quelqu'un d'autre."*/
-@9 = ~Everyone knows something about the plague. Half of it isn't true and the other half is gossip. I don't think I have anything to add.~/*Tout le monde sait quelque chose sur le fléau. La moitié est vraie et l'autre moitié n'est que rumeur. Je ne suis pas sûr d'avoir quelque chose à ajouter à tout ça.*/
-@10 = ~What could I have heard? I don't have anyone to talk to right now. There's not enough customers, they're all afraid of the plague.~
+@7 = ~Revenez me voir.~ /*A bientôt !*/
+@8 = ~Désolé, je ne peux pas vous aider. Demandez à quelqu'un d'autre.~ /*Désolé, je ne peux rien faire. "Demandez à quelqu'un d'autre."*/
+@9 = ~Tout le monde sait quelque chose au sujet du fléau. La moitié est fausse et l'autre moitié n'est que ragots. Je ne crois pas avoir quoi que ce soit à ajouter.~/*Tout le monde sait quelque chose sur le fléau. La moitié est vraie et l'autre moitié n'est que rumeur. Je ne suis pas sûr d'avoir quelque chose à ajouter à tout ça.*/
+@10 = ~Qu'aurais-je pu entendre ? Je n'ai personne avec qui bavarder en ce moment. Il n'y a pas assez de clients, ils ont tous peur du fléau.~
 /*Qu'ont-ils pu découvrir ? Je n'ai pas le temps de vous parler pour le moment. Ce zoo ne semble pas être un gros problème comparé à l'épidémie.*/

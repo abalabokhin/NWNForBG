@@ -33,24 +33,24 @@
 @32 = ~Mais ne vous y trompez pas, c'est un jeu sacrément dangereux. Si vous descendez, il y a de fortes chances pour que vous ne remontiez jamais. C'est pour cette raison que nous devons garder le secret. Vous avez le droit de ressortir à tout moment et d'y retourner quand vous voulez, mais quelqu'un peut très bien l'emporter entre-temps. Alors, toujours partant ?~ 
 @33 = ~Vous pourriez répéter ce que vous venez de dire ?~
 @34 = ~Ah, je préfère les gens courageux à l'esprit ouvert. Que voulez-vous savoir ?~
-@35 = ~I will take part.~/*C'est d'accord.*/
+@35 = ~Je participerai.~/*C'est d'accord.*/
 @36 = ~Hmph ! Dans ce cas, dénoncez-moi à la milice... si vous arrivez à entrer à Luskan, bien sûr. Veuillez m'excuser, mes clients m'appellent.~
 @37 = ~Je vous assure, madame, que notre établissement est parfaitement sûr.~ [NWMUT050]
 @38 = ~Ainsi, il me semble que ce soit vous qui ayez remporté ma petite compétition, hein ? Il semble que je doive vous féliciter !~ [NWMUT053]
 @39 = ~Il m'arrive de regretter le temps où j'étais aventurier, tout comme vous... mais j'imagine que vous n'êtes pas là pour m'écouter parler, hein ? Hé, hé... Tenez, voici la moitié de toute ma fortune. J'espère que vous ne serez pas déçu. Et, encore une fois, bravo !~ 
 @40 = ~Merci. Ce concours a été une expérience... enrichissante.~
-@41 = ~What? A measly 5,000 gold pieces? Add another 1,000 and I'll leave in peace.~/*Quoi ? 1 000 pièces d'or. Et sur ce, je vous quitte.*/
+@41 = ~Quoi ? À peine 5 000 pièces d'or ? Ajoutez-en 1 000 et je partirai sans faire d'histoires.~/*Quoi ? 1 000 pièces d'or. Et sur ce, je vous quitte.*/
 @42 = ~Je veux davantage d'or, et je le prendrai par la force, s'il le faut.~
 @43 = ~J'aimerais beaucoup vous poser des questions à ce sujet, mais j'ai vu une bonne partie de ce qui vous est arrivé et je ne doute pas que vous ayez mieux à faire. Au revoir.~
 
 @45 = ~En règle générale, la récompense est fixe. Mais que diable votre style me plaît, et je me sens d'humeur généreuse, aujourd'hui. Tenez, mon vieux !~
-@46 = ~Generally, the pay-outs are set and immutable. Some people just can't be happy, they always want more. Well, I ain't giving you more. You take what you got and stop bothering me.~/*Parlez-moi de la Péninsule. Vous faites partie de ces gens qui en veulent toujours plus, hein ? Eh bien, vous pouvez toujours courir. Prenez ce que je vous offre et cessez de m'importuner.*/
+@46 = ~En règle générale, les gains sont fixés à l'avance et ne changent pas. Certains ne sont jamais contents, ils en veulent toujours plus. Eh bien, vous n'aurez rien de plus. Prenez ce que vous avez gagné et cessez de m'importuner.~/*Parlez-moi de la Péninsule. Vous faites partie de ces gens qui en veulent toujours plus, hein ? Eh bien, vous pouvez toujours courir. Prenez ce que je vous offre et cessez de m'importuner.*/
 @47 = ~Très bien, prenez-le, votre fichu or ! Voilà 100 pièces d'or, en plus de la récompense convenue. Mais continuez de m'importuner et je vous fais trancher la gorge.~
 @48 = ~Navré, mais la compétition ayant été gagnée, il va falloir remettre en état le donjon. Peut-être sera-t-il rouvert au printemps prochain. D'ici là, j'ai bien peur que le Griffon vert ne redevienne une auberge comme les autres, hé, hé, hé...~ [NWMUT054] 
-@49 = ~Of course. A couple rooms have recently become available.~/*Les voici. Quand cette conversation devient-elle accessible ?*/
-@50 = ~I'm sorry, but you have lost the competition. Maybe next spring or so she'll re-open. Until then, I'm afraid the Green Griffon is back to being a regular inn. Heh heh.~ 
+@49 = ~Bien sûr. Deux chambres viennent justement de se libérer.~/*Les voici. Quand cette conversation devient-elle accessible ?*/
+@50 = ~Je suis désolé, mais vous avez perdu la compétition. Elle rouvrira peut-être au printemps prochain. D'ici là, le Griffon vert redevient une auberge ordinaire. Hé hé.~ 
 /*Oh, oui, bien sûr ! Je suis au courant de cette histoire de concours. Peut-être nous le trouver un jour. D'ici là, j'ai bien peur que le Griffon vert ne redevienne une auberge comme les autres, hé, hé, hé...*/
-@52 = ~Are you still here? Hurry up, the competition is about to start, the other contenders may beat you.~/*Elle encore ici ? Certes, le concours. Mais je ne crois pas que je vais courir le risque.*/
-@53 = ~I want to rest before the competition. Do you have a spare room?~
+@52 = ~Vous êtes encore là ? Dépêchez-vous, la compétition va commencer. Les autres concurrents pourraient vous devancer.~/*Elle encore ici ? Certes, le concours. Mais je ne crois pas que je vais courir le risque.*/
+@53 = ~Je voudrais me reposer avant la compétition. Avez-vous une chambre libre ?~
 
 /*Je voudrais en savoir plus sur la vente aux enchères. Avez-vous l'objet ?*/
