@@ -1,7 +1,7 @@
 @0 = ~Vous avez les salutations de l'Impartial. Bienvenue dans la Maison de Tyr. Je suis le révérend juge Oleff Uskar, serviteur du Dieu mutilé.~ [NWOLE052]
 @1 = ~Bonjour, Oleff. Je m'appelle <CHARNAME>. Accepteriez-vous de répondre à quelques questions ?~
-@2 = ~Hello Oleff. Will you answer some questions?~/*Bonjour. Acceptez-vous de répondre à d'autres questions ?*/
-@3 = ~Enough chatter. I have questions for you.~/*Il suffit. J'ai des questions à vous poser.*/
+@2 = ~Bonjour, Oleff. Pourriez-vous répondre à quelques questions ?~/*Bonjour. Acceptez-vous de répondre à d'autres questions ?*/
+@3 = ~Assez bavardé. J'ai des questions à vous poser.~/*Il suffit. J'ai des questions à vous poser.*/
 @4 = ~Au revoir.~
 @5 = ~La Maison de Tyr apprécie votre discours fort poli. Demandez-moi ce que vous voulez et je ferai tout mon possible pour vous répondre.~
 @6 = ~Je pense avoir découvert un objet proche de Tyr. Ça vous intéresse ?~
@@ -14,7 +14,7 @@
 @13 = ~Que Tyr vous guide vers la justice.~
 @14 = ~Par l'Impartial ! Si vous avez découvert un objet lié au culte de Tyr, je dois tout de suite vous convertir à notre cause ! Prenez cette lettre, elle indique que vous êtes à mon service. J'ai fait garder une tombe par Briley dans l'Est de la péninsule, mais je ne m'attendais pas à ça. Nous cherchons les dernières demeures du fondateur de Padhiver, Halueth, et de ses compagnons. Une telle découverte remonterait sûrement le moral de notre peuple en ces temps difficiles. Je vous offrirai une récompense, naturellement.~ 
 @15 = ~Raconter la récupération de la plume bénie de Jacob détenue par le maléfique Gilles.~
-@16 = ~I'm sorry, it was a joke.~/*Je suis désolée, c'est impossible.*/
+@16 = ~Je suis désolé, c'était une plaisanterie.~/*Je suis désolée, c'est impossible.*/
 @17 = ~Quoi ? Montrez-moi ça. Oh oui, bien sûr. Je vous en prie, parlez tout bas et je vous trouverai ce qu'il vous faut.~
 @18 = ~Nous nous occupons des victimes du fléau. Autrefois, nous étions chargés de rechercher des artefacts, ce qui pourrait être encore plus utile en ce moment d'ailleurs...~
 @19 = ~Elle compte de nombreux aspects. Il est le Seigneur Aveugle, l'Impartial. Il est le garant et le chef suprême de la justice. Le clergé est chargé de dévoiler la vérité, de punir les coupables, de redresser les torts et de toujours être juste dans ses actes. Nous faisons office de juges, jurés et, si cela est nécessaire, de bourreaux. La justice par la force bienveillante et la vigilance armée.~ 
@@ -31,13 +31,13 @@
 @30 = ~C'est quelque chose qui ne concerne que les personnes ayant une prédisposition aux choses de l'esprit. Je ne pense pas que ce soit votre cas, sans vouloir vous offenser.~
 @31 = ~Il se peut tout de même que je puisse vous aider.~
 @32 = ~La loi est inflexible, mais la vraie justice sait également faire preuve de clémence quand les circonstances l'exigent. Cela peut être difficile de s'en souvenir en temps de crise.~
-@33 = ~There are further artifacts of his travels. In the weeks before the plague, we uncovered the tomb of Miaslaznia Fairblade. She traveled widely with Halueth Never, founder of Neverwinter! This was a great discovery, and gave clues to the whereabouts of the founder's resting place. That would have been a great discovery indeed! The plague undoubtedly complicated things. It is very unfortunate, because pursuing these tombs becomes all the more important with the city in crisis, as it is.~/*Il y a trois serrures sur cette porte. Au cours des semaines précédant l'épidémie nous avons découvert le tombeau de Miaslaznia Finelame. Elle voyageait souvent avec Halueth Padhiver, le fondateur de la ville ! C'était une grande découverte et elle nous donnait des indices quant à l'endroit où pouvait se trouver le tombeau du fondateur. Cela aurait été une découverte capitale. Oui, c'est le moins qu'on puisse dire. C'est bien malheureux car la découverte de ces tombes devient de plus en plus importante avec la crise.*/
+@33 = ~Il existe d'autres reliques de ses voyages. Dans les semaines précédant la peste, nous avons découvert la tombe de Miaslaznia Finelame. Elle a beaucoup voyagé avec Halueth Never, le fondateur de Padhiver ! C'était une découverte majeure, qui nous a livré des indices sur l'emplacement de la sépulture du fondateur. La retrouver aurait été une découverte plus extraordinaire encore ! La peste a évidemment compliqué les choses. C'est d'autant plus regrettable que la crise traversée par la cité rend la recherche de ces tombeaux plus importante que jamais.~/*Il y a trois serrures sur cette porte. Au cours des semaines précédant l'épidémie nous avons découvert le tombeau de Miaslaznia Finelame. Elle voyageait souvent avec Halueth Padhiver, le fondateur de la ville ! C'était une grande découverte et elle nous donnait des indices quant à l'endroit où pouvait se trouver le tombeau du fondateur. Cela aurait été une découverte capitale. Oui, c'est le moins qu'on puisse dire. C'est bien malheureux car la découverte de ces tombes devient de plus en plus importante avec la crise.*/
 @34 = ~Les gens ont peur et le fait qu'il n'y ait aucun progrès dans la recherche d'un remède diminue leurs espoirs. Une découverte comme celle-ci leur remonterait le moral. Il est aussi possible que de puissants artefacts soient découverts avec la dépouille d'Halueth Padhiver, mais je n'y crois pas trop.~ 
 @35 = ~Je vous aiderai à trouver ces tombeaux.~
 @36 = ~Cela ne m'intéresse pas de vous aider.~
 @37 = ~Votre aide sera la bienvenue. Vous ne pouviez arriver à un moment plus approprié. Tenez, prenez cette lettre avec mon sceau. Cela signifie que vous agissez avec mon accord. Apportez ça à Briley dans le quartier de la Péninsule et il vous aidera. Il garde le tombeau que nous avons déjà découvert. Il se trouve au sous-sol d'une maison à l'est du quartier de la Péninsule. Revenez me voir si vous trouvez quelque chose et je vous récompenserai.~ 
 
-@39 = ~That is unfortunate, and I understand how you might be reluctant. If you change your mind, just speak to me again.~/*C'est malheureux mais je comprends vos réticences. Tenez, prenez ceci au cas où vous changeriez d'avis.*/
+@39 = ~C'est regrettable, mais je comprends vos réticences. Si vous changez d'avis, revenez simplement me parler.~/*C'est malheureux mais je comprends vos réticences. Tenez, prenez ceci au cas où vous changeriez d'avis.*/
 @40 = ~Quoi ? Mais... écoutez, Ophala a des amis très haut placés. Le Masque de Pierrelune fonctionnerait sans mon aide. Je fournis juste un service.~
 @41 = ~De l'or. Je veux de l'or pour ne rien dire à votre sujet.~
 @42 = ~Est-ce tout ? Juste de l'or ? Ecoutez ! Si je paie, je ne veux plus jamais entendre parler de ça ! Est-ce bien clair ? Je savais que j'aurais à le regretter un de ces jours. Très bien. Tenez. 500 pièces d'or. Et n'en parlez plus jamais !~ 
@@ -51,7 +51,7 @@
 @50 = ~Contrairement à votre opinion d'ignorant, il existe de très bonnes raisons de rechercher ces tombes, surtout maintenant que l'épidémie ravage la ville.~
 @51 = ~Que savez-vous au sujet d'Halueth Padhiver ?~
 @52 = ~Il est le fondateur de Padhiver. En fait, on ne sait pas grand-chose à son sujet. C'est devenu une figure de légende. On raconte qu'il a fortifié la Padhiver naissante contre les barbares Illusks qui s'en sont alors pris à Luskan. C'est sur ces bases qu'ont été établies nos difficiles relations avec cette ville. Connaître les détails de sa vie pourrait être très utile à la ville. Les gens doivent savoir qu'ils ont déjà triomphé de l'adversité par le passé.~ 
-@53 = ~Greetings to you again, <CHARNAME>. It is good to see you return to this house of Tyr.~ [NWOLE053]
+@53 = ~Salutations, <CHARNAME>. Je suis heureux de vous revoir dans cette maison de Tyr.~ [NWOLE053]
 /*Rebonjour <CHARNAME>. Il est bon de vous revoir dans la demeure de Tyr.*/
 @55 = ~J'espère qu'il y a du nouveau au sujet de la recherche du tombeau d'Halueth Padhiver. Cela remonterait le moral de la ville.~
 @56 = ~J'ai découvert un artefact dans un des tombeaux.~
@@ -75,7 +75,7 @@
 @74 = ~Comprenez si je me dispense de toute autre récompense. Il nous faudra toutes nos ressources pour comprendre ce qui s'est passé lors des fouilles.~
 
 @76 = ~Vous avez beaucoup fait et même découvert la dernière demeure d'Halueth Padhiver. Mais cependant, nous pensons qu'il reste des choses à découvrir. Il existe d'autres artefacts ramenés de ses voyages. Revenez me voir si vous les trouvez. Je vous récompenserai généreusement et vous aurez un supplément si vous les retrouvez tous.~ 
-@77 = ~Greetings. Are you with <CHARNAME>? I am curious as to how the search for Halueth Never's tomb is going.~ [NWOLE054]/*Salutations. Etes vous avec la personne à qui j'ai déjà parlé ? J'aimerais savoir où en sont les recherches sur le tombeau d'Halueth Padhiver.*/
+@77 = ~Salutations. Vous accompagnez <CHARNAME> ? J'aimerais savoir où en sont les recherches de la tombe de Halueth Never.~ [NWOLE054]/*Salutations. Etes vous avec la personne à qui j'ai déjà parlé ? J'aimerais savoir où en sont les recherches sur le tombeau d'Halueth Padhiver.*/
 @78 = ~Je suis franchement écoeuré par la nature des gens et je refuse de vous aider. Ce sont les actions de quelques personnes qui m'ont vraiment dégoûté de tout. C'est méprisable... imaginez, les reliques sacrées que nous cherchions... aux mains du mal ! Nous cherchions les tombeaux anciens... mais c'est inutile maintenant.~ [NWOLE051] 
 @79 = ~Pardonnez-moi. Vous continuez d'enquêter sur le fléau, et je vous en sais gré.~
 @80 = ~Je suis ravi que cet objet ait été récupéré, mais ce n'est qu'un rayon de soleil dans une journée bien sombre. Ça ne peut suffire à améliorer mon humeur. Tenez. Prenez un peu d'or. Il semble que le trésor soit la seule chose à laquelle tiennent les gens.~ 

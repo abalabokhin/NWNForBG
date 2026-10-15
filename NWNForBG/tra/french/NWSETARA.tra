@@ -4,14 +4,14 @@
 @3 = ~On m'a envoyé prendre une de vos gemmes.~
 @4 = ~Hors de mon chemin, hideuse sorcière, avant que je ne tranche cette vilaine tête !~
 @5 = ~Pensez-vous que cela vous donne le droit de débarquer chez moi ? Vous entrez, massacrez mes serviteurs, volez mes biens et pensez que de nobles intentions suffisent à expliquer vos actions ?~
-@6 = ~I'm sorry, but your servants as you call them, attacked me first.~/*Désolé, mais vos créatures, ou serviteurs comme vous les appelez, m'ont attaqué en premier.*/
+@6 = ~Je suis désolé, mais vos serviteurs, comme vous les appelez, m'ont attaqué les premiers.~/*Désolé, mais vos créatures, ou serviteurs comme vous les appelez, m'ont attaqué en premier.*/
 @7 = ~Si vous continuez à me crier dessus, vous verrez ce que j'ai fait à vos serviteurs.~
 @8 = ~Ne me prenez pas pour une idiote ! Sans doute ne suis-je pas aussi resplendissante qu'avant, mais je ne suis pas folle. Nul ne se promène dans les bois, où rien ne semble plus aller, pour se contenter d'y jeter un oeil. Que cherchez-vous au juste ?~
 @9 = ~Des druides ont disparu. Je suis à leur recherche et je me demandais si vous n'en aviez pas vu un.~
 @10 = ~J'en sais assez, je vais vous laisser à présent.~
 @11 = ~C'est ce sale elfe qui vous envoie ? Il vous a dit de me tuer pour me voler ma gemme ?~
 @12 = ~Non, j'espérais juste vous convaincre de me la donner.~
-@13 = ~I can kill you if I have to.~/*Je ne vous tuerai pas. Vous avez ma parole.*/
+@13 = ~Je peux vous tuer s'il le faut.~/*Je ne vous tuerai pas. Vous avez ma parole.*/
 @14 = ~Hideuse ?! Jadis, j'étais l'une des plus belles femmes de la région. Quittez ma demeure avant que je ne vous transforme en crapaud !~
 @15 = ~Vous étiez un intrus sous mon toit. Mes serviteurs essayaient de me protéger, comme il se doit. Pourquoi pensez-vous qu'il y a dans ma maison de quoi vous aider à sauver la forêt ?~ 
 @16 = ~J'ai entendu dire que vous étiez une amie des créatures de la forêt. J'en ai déduit que vous savez peut-être quelque chose susceptible de m'aider.~
@@ -49,7 +49,7 @@
 @48 = ~Je suis certaine que vous pourriez en tirer un bon prix. Je sais également où se trouve l'une de ces druides qui ont disparu. Elle pourrait avoir des informations sur l'Esprit des bois. Si vous faites ce que je vous demande, vous aurez les deux.~
 @49 = ~Très bien, que voulez-vous que je fasse ?~
 @50 = ~Ce n'est pas assez. Je veux de l'or.~
-@51 = ~I'm tired of your chatter. I'm leaving.~/*Parlez-moi de votre frère. Je m'en vais.*/
+@51 = ~J'en ai assez de votre bavardage. Je pars.~/*Parlez-moi de votre frère. Je m'en vais.*/
 @52 = ~Oh ! oui, oui, OUI ! Je suis si heureuse de vous avoir confié cette mission. Maintenant, si vous voulez bien me le remettre, pour que je me soigne. Vous aurez alors la chance de contempler ma beauté dans tout son éclat.~
 @53 = ~Certes, mais je veux la gemme et les informations.~
 @54 = ~Vous obtiendrez de l'or en vendant la gemme à l'elfe qui vit à Port Llast et vous devriez également pouvoir convaincre Aawill de vous en donner pour avoir sauvé la druidesse. Avec un peu de chance, vous récolterez également des informations susceptibles de vous aider au sujet de l'Esprit des bois - ce qu'Aawill vous paiera probablement aussi. Je pense que cela devrait être suffisant, même pour quelqu'un d'aussi intéressé que vous. Alors, faisons-nous affaire ensemble ?~ 
@@ -58,12 +58,12 @@
 @57 = ~Euh... Vous avez raison. Votre vue est un vrai choc.~
 @58 = ~Mais votre apparence n'a pas changé.~
 @59 = ~Pourquoi cette druidesse est-elle enfermée chez vous ?~
-@60 = ~Oh, it's true, it's true! And you are quite perceptive, so I'll help you even more. I found an old book that talks about entering the realm of the Spirit of the Wood. It's in a chest in the basement of my house. Good luck adventurers!~
+@60 = ~Oh, c'est vrai, c'est vrai ! Et vous avez l'esprit vif, alors je vais vous aider davantage. J'ai trouvé un vieux livre qui explique comment entrer dans le royaume de l'Esprit de la forêt. Il est dans un coffre au sous-sol de ma maison. Bonne chance, aventuriers !~
 /*Oh, c'est vrai, c'est vrai ! Et vous êtes très observateur, aussi vous aiderai-je. J'ai trouvé un vieux livre qui explique comment entrer dans le royaume de l'Esprit des bois. Il est dans ma bibliothèque, au sud-est. Bonne chance, aventuriers !*/
 @62 = ~Mais si ! Vous êtes aveugle ou quoi ? Attendez, vous êtes juste jaloux car je suis bien plus belle que vous. Oui, c'est ça. Partez, espèce d'arriéré. Oh, je suis si belle.~ 
 @63 = ~Il vaut mieux ne rien dire ; de plus, je suis jeune et belle à présent, et je promets que cela ne se reproduira pas. Enfin, ne me trouvez-vous pas ravissante, à présent ?~
 @64 = ~Je suis lasse des individus venant continuellement mirer le monstre de foire. Vous affichez un physique plutôt ingrat alors dites-moi rapidement ce que vous voulez.~ [NWSET053]
-@65 = ~I don't need anything. I'm leaving.~/*Je n'ai besoin de personne. Je m'en vais.*/
+@65 = ~Je n'ai besoin de rien. Je m'en vais.~/*Je n'ai besoin de personne. Je m'en vais.*/
 @66 = ~Je vois que vous êtes revenu. Que désirez-vous ?~ [NWSET052]
 @67 = ~Vous êtes de retour. Cela veut-il dire que vous avez trouvé le miroir ?~ [NWSET051]
 @68 = ~Pourriez-vous me rappeler où habite cette nymphe ?~

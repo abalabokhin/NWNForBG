@@ -7,7 +7,7 @@
 @6 = ~Très bien, comment avez-vous fait pour vous évader ?~
 @7 = ~J'ai assez parlé à un tueur de bébés. Défendez-vous !~
 @8 = ~Vous avez raison, mon ami. Je suis l'un des rares êtres vivants ayant réussi à s'enfuir de la prison la plus sûre d'Eauprofonde. Mais plutôt que de faire montre d'imprudence, je vous prie de bien vouloir m'écouter.~
-@9 = ~Why should I listen, dwarf?~/*Pourquoi devrais-je vous écouter, gnome ?*/
+@9 = ~Pourquoi vous écouterais-je, nain ?~/*Pourquoi devrais-je vous écouter, gnome ?*/
 @10 = ~Et pourquoi pas ? Il est important que vous compreniez que je ne suis pas un simple paysan papillonnant près d'une souche pourrie ! Je suis Stirge le Tueur d'Enfants !~
 @11 = ~J'étais sur le point de vous le dire. Content de voir une étincelle d'impatience en provenance du sac à vent qui se trouve entre vos oreilles. Je me suis retrouvé en prison par malchance, et assez pressé d'en sortir pour recommencer à faire ce que je fais de mieux. J'ai réalisé que l'on considérait comme impossible de s'évader de cette prison aquafondienne et j'ai compris que j'aurais besoin d'aide pour accomplir l'impossible.~ 
 @12 = ~Alors vous êtes allé voir les autres détenus ?~
@@ -20,7 +20,7 @@
 @19 = ~Moi ? J'ai aidé à tout organiser. C'est mon cerveau qu'a monté le coup, et nous a fait travailler en équipe... Enfin, avec Yesgar, mais c'est juste le prête-nom, pour inspirer la loyauté.~
 @20 = ~Moi penser vous toujours essayer évader. Pas encore réussi ?~
 @21 = ~Oh, mais si ! Personne ne s'était encore évadé de cette prison ! Nous avons été les premiers. Nous en avons franchi la porte. On peut toujours nous reprendre, cela ne changera rien. Nous nous sommes bel et bien évadés.~
-@22 = ~So what's next?~/*Quoi passer ?*/
+@22 = ~Et ensuite ?~/*Quoi passer ?*/
 @23 = ~Maintenant, on joue. Si vous gagnez, je me coupe l'oreille gauche et je vous la donne. C'est bien tout ce qui vous intéresse, non, la prime que vous toucherez pour mon oreille gauche ? Le jeu auquel nous allons jouer est le plus vieux de tous. Je vous donnerai un mot et vous devrez le vaincre par un autre mot qui n'est pas son contraire.~ 
 @24 = ~Si vous gagnez, je vous dirai où est Délilah et je vous donnerai ma précieuse oreille. Si vous perdez, nous règlerons ça avec nos lames.~
 @25 = ~Très bien, jouons.~
@@ -85,7 +85,7 @@
 @84 = ~L'amitié est certes un lien puissant, mais elle ne peut rien contre le vent. Vous avez perdu. Cela signifie que je ne vous remettrai pas mon oreille et que je ne vous dirai pas où est Délilah. En garde !~ 
 @85 = ~Ah, l'été est une saison presque sans nuages, mais ne peut les vaincre. Vous avez perdu. Cela signifie que je ne vous remettrai pas mon oreille et que je ne vous dirai pas où est Délilah. En garde !~ 
 @86 = ~Oui, le vent peut dissiper les nuages. Mais qui pourra vaincre le vent ? Je pense que vous avez gagné, mon ami. Je suis bien forcé de le reconnaître. Bon, je vais vous parler de Délilah et couper cette saleté d'oreille pour garder la vie.~ 
-@87 = ~Hurry up and give your ear dwarf!~/*Dépêchez-vous de me donner cette oreille, gnome !*/
+@87 = ~Dépêchez-vous de me donner votre oreille, nain !~/*Dépêchez-vous de me donner cette oreille, gnome !*/
 @88 = ~La foudre est la fille en colère du nuage. Bien qu'impétueuse, elle ne peut détruire ce qui lui a donné naissance. Vous avez perdu. Cela signifie que je ne vous remettrai pas mon oreille et que je ne vous dirai pas où est Délilah. En garde !~ 
 @89 = ~Nous venons d'établir que le nuage triomphe du soleil. Dans ce cas, ce que vous proposez ne peut être vrai. Vous avez perdu. Cela signifie que je ne vous remettrai pas mon oreille et que je ne vous dirai pas où est Délilah. En garde !~ 
 @90 = ~La pluie naît du nuage mais, en tombant, ne détruit pas son père. Vous avez perdu. Cela signifie que je ne vous remettrai pas mon oreille et que je ne vous dirai pas où est Délilah. En garde !~ 

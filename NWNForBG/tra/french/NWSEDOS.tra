@@ -7,7 +7,7 @@
 @6 = ~Sédos Sébile, de la milice de Padhiver. Je suis à la tête de cette opération... Et vous ?~
 @7 = ~Je m'appelle <CHARNAME>.~
 @8 = ~Je m'appelle <CHARNAME>. Je suis un aventurier.~
-@9 = ~My name doesn't matter, I'm the <RACE> of the <CHARNAME> team.~/*Peu importe. J'ai de toute façon l'intention de vous tuer.*/
+@9 = ~Mon nom n'a aucune importance. Je fais partie du groupe de <CHARNAME>.~/*Peu importe. J'ai de toute façon l'intention de vous tuer.*/
 @10 = ~En général, je ne donne pas mon nom.~
 @11 = ~Ecoutez, nous vivons un moment difficile et je n'ai pas de temps à perdre en bavardages. J'ai surtout besoin de gens pour m'aider à régler ce problème qui sort des attributions normales de la milice.~
 @12 = ~De quel travail s'agit-il ?~
@@ -16,7 +16,7 @@
 @15 = ~Très bien. Allons-y pour <CHARNAME>. Pour tout vous dire, nous avons beaucoup à faire ici, dans la Péninsule, et votre aide sera la bienvenue... même si notre tâche sort un peu du cadre de travail habituel de la milice.~
 @16 = ~Vous aimez l'aventure, hein ? Très bien, <CHARNAME>, votre aide pourrait m'être utile, ici, dans la Péninsule... Mais cela sort un peu des tâches habituelles de la milice.~
 @17 = ~Comme vous voudrez. Quoi qu'il en soit, nous sommes débordés ici, dans la Péninsule et votre aide nous serait précieuse... même s'il ne s'agit pas des tâches habituelles de la milice.~
-@18 = ~With all the prisoners in the streets, we're stretched to the limit just trying to keep the civilians safe... As if the Wailing wasn't enough... What I need is someone to get inside that prison and figure out what the hell is going on down there. Lady Aribeth's authorized a 1000 gold piece bonus to any militia member who can bring me proof that the situation's been resolved. Consider it danger pay.~/*Avec tous ces prisonniers dans les rues, nos effectifs permettent à peine d'assurer la sécurité des citoyens... Comme si la Mort Hurlante ne suffisait pas... Dame Aribeth m'a autorisée à verser une prime de 300 pièces d'or à tout membre de la milice qui peut rapporter la preuve que ce problème a été réglé. Disons que c'est une prime de danger.*/
+@18 = ~Avec tous ces prisonniers dans les rues, nos effectifs sont déjà à bout rien qu'en essayant de protéger les civils... Comme si la Mort Hurlante ne suffisait pas... Il me faut quelqu'un capable d'entrer dans cette prison et de découvrir ce qui se passe réellement là-dedans. Dame Aribeth a autorisé une prime de 1 000 pièces d'or pour tout membre de la milice qui m'apportera la preuve que la situation est réglée. Considérez cela comme une prime de risque.~/*Avec tous ces prisonniers dans les rues, nos effectifs permettent à peine d'assurer la sécurité des citoyens... Comme si la Mort Hurlante ne suffisait pas... Dame Aribeth m'a autorisée à verser une prime de 300 pièces d'or à tout membre de la milice qui peut rapporter la preuve que ce problème a été réglé. Disons que c'est une prime de danger.*/
 @19 = ~Comment comptez-vous me faire entrer dans la prison ?~
 @20 = ~Si vous ne pouvez le faire, comment le pourrais-je ?~
 @21 = ~Ils se servent de la prison comme d'une forteresse en effectuant des raids avant de s'y réfugier. Il est très difficile de les contrer. Je pense qu'ils ont certainement sur eux une clef pour entrer dans la forteresse quand ils en ont terminé avec les pillages. Cependant, aucun de ceux que nous avons capturés n'en avait.~ 
@@ -24,7 +24,7 @@
 @23 = ~Puisqu'on ne peut abattre la porte principale, vous devez trouver la personne qui a la clef. Si j'étais vous, je commencerais par aller jeter un coup d'oeil du côté des égouts, au sud-ouest du quartier. Nous avons repéré plusieurs groupes dans ce coin-là.~
 @24 = ~C'est peu payé, pour un tel travail.~
 @25 = ~Peut-être seriez-vous disposée à me donner une avance ?~
-@26 = ~What dangers await me?~/*Quoi dangers pouvoir avoir ?*/
+@26 = ~Quels dangers m'attendent ?~/*Quoi dangers pouvoir avoir ?*/
 @27 = ~Très bien, moi le faire.~
 @28 = ~Non, cela ne m'intéresse pas.~
 @29 = ~Peut-être, mais il est probable que les prisonniers aient récupéré pas mal d'objets de valeur. Vous êtes libre de garder tout ce que vous trouverez sur eux.~
@@ -61,5 +61,5 @@
 
 @61 = ~Vous aviez un travail à faire et vous l'avez fait. Voici vos 300 pièces d'or. Je signalerai dans mon rapport que vous m'avez menacée. Maintenant, si vous voulez bien m'excuser, je dois préparer mon rapport pour le Seigneur Nasher. Il ne va pas bien, mais la nouvelle de votre victoire devrait lui remonter le moral.~ 
 @62 = ~Tout à fait, <SIRMAAM>. Vous avez non seulement accompli une tâche admirable, vous déclinez aussi toute récompense. Je ferai votre éloge quand je rédigerai mon rapport. Maintenant, si vous voulez bien m'excuser, je dois préparer mon rapport pour le Seigneur Nasher. Il ne va pas bien, mais la nouvelle de votre victoire devrait lui remonter le moral.~ 
-@63 = ~I really must file my report with Lord Nasher. Excuse me, <SIRMAAM>.~ [NWSED055]
+@63 = ~Je dois vraiment transmettre mon rapport au Seigneur Nasher. Excusez-moi, <SIRMAAM>.~ [NWSED055]
 /*Je dois vraiment faire mon rapport au Seigneur Nasher. Excusez-moi, <SIRMAAM>.*/

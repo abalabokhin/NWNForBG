@@ -1,10 +1,10 @@
-@0 = ~I ask you to leave immediately! This is a barracks, not a museum for tourists!~/*Il me faut tout de suite un guérisseur. Cette porte n'a pas été créée à votre intention...*/
-@1 = ~Who's your superior?~/*Vous servir qui ?*/
-@2 = ~If these are barracks, then where are the soldiers?~/*J'ai trouvé les trois. Voici leurs anneaux.*/
+@0 = ~Je vous demande de partir immédiatement ! Ceci est une caserne, pas un musée pour touristes !~/*Il me faut tout de suite un guérisseur. Cette porte n'a pas été créée à votre intention...*/
+@1 = ~Qui est votre supérieur ?~/*Vous servir qui ?*/
+@2 = ~Si c'est une caserne, où sont les soldats ?~/*J'ai trouvé les trois. Voici leurs anneaux.*/
 @3 = ~Très bien, j'y vais.~
-@4 = ~I'm a mercenary, hired by the mayor of this town. His name is Kendrack and he's in the building across the street. Now leave the premises.~/*Je suis prêt pour l'épreuve de la foi. Qui que j'suis ? Qui je suis ? C'est pas c'que j'ai dit au buis. Moi partir, alors. Salut.*/
-@5 = ~Since you're a mercenary. That mean you're for hire?~/*Vous êtes un mercenaire. Cela signifie-t-il que l'on peut vous engager ?*/
-@6 = ~Isn't it clear? At their posts, of course. However, some are in town hall, the building across the street. Now leave the room.~/*Vous nettoyer quoi ? Bien sûr, bien sûr. Qui êtes-vous ? Et que faites-vous dans les rues ? J'ai le sceptre.*/
-@7 = ~I'm already hired. Leave the premises, I won't tell you a third time.~/*Je suis prêt. > Calmez-vous, maintenant. Je ne vous veux aucun mal.*/
-@8 = ~Go your own way. You don't belong here.~
+@4 = ~Je suis un mercenaire engagé par le bourgmestre de cette ville. Il s'appelle Kendrack et se trouve dans le bâtiment de l'autre côté de la rue. Maintenant, quittez les lieux.~/*Je suis prêt pour l'épreuve de la foi. Qui que j'suis ? Qui je suis ? C'est pas c'que j'ai dit au buis. Moi partir, alors. Salut.*/
+@5 = ~Puisque vous êtes mercenaire, cela veut dire qu'on peut vous engager ?~/*Vous êtes un mercenaire. Cela signifie-t-il que l'on peut vous engager ?*/
+@6 = ~Ce n'est pas évident ? À leurs postes, bien sûr. Certains sont toutefois à la mairie, dans le bâtiment de l'autre côté de la rue. Maintenant, quittez cette pièce.~/*Vous nettoyer quoi ? Bien sûr, bien sûr. Qui êtes-vous ? Et que faites-vous dans les rues ? J'ai le sceptre.*/
+@7 = ~Je suis déjà engagé. Quittez les lieux, je ne vous le répéterai pas une troisième fois.~/*Je suis prêt. > Calmez-vous, maintenant. Je ne vous veux aucun mal.*/
+@8 = ~Passez votre chemin. Vous n'avez rien à faire ici.~
 /*Débrouillez-vous. Tu n'as aucun moyen d'en avoir la certitude.*/

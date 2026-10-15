@@ -1,4 +1,4 @@
-@0 = ~Please, my <LADYLORD>... spare my life! I shall give you whatever you like...~ [NWRIMA55]/*Par pitié, <LADYLORD>... épargnez-moi ! Je vous donnerai ce que vous voudrez...*/
+@0 = ~Je vous en prie, <LADYLORD>... épargnez-moi ! Je vous donnerai tout ce que vous voudrez...~ [NWRIMA55]/*Par pitié, <LADYLORD>... épargnez-moi ! Je vous donnerai ce que vous voudrez...*/
 @1 = ~Alors, répondez à mes questions.~
 @2 = ~Donnez-moi tous vos objets de valeur, magicien.~
 @3 = ~Allez... fichez le camp et ne revenez pas.~
@@ -9,20 +9,20 @@
 @8 = ~Je n'ai pas d'autres questions.~
 @9 = ~Servez-vous. Cela ne représente sans doute pas grand-chose, mais c'est tout ce que j'ai. M'autorisez-vous à fuir cette tour, <LADYLORD> ? J'ai fait tout ce que vous m'avez demandé...~ 
 @10 = ~D'abord, répondez à mes questions.~
-@11 = ~Thank you, my <LADYLORD>! You are a kind and merciful <MANWOMAN>! I swear you shall never see me again!~/*Merci, mon <LADYLORD> ! Vous êtes un <MANWOMAN> bon et miséricordieux ! Je vous jure que vous n'entendrez plus jamais parler de moi.*/
+@11 = ~Merci, <LADYLORD> ! Vous faites preuve de tant de bonté et de miséricorde ! Je vous jure que vous ne me reverrez plus !~/*Merci, mon <LADYLORD> ! Vous êtes un <MANWOMAN> bon et miséricordieux ! Je vous jure que vous n'entendrez plus jamais parler de moi.*/
 @12 = ~Non ! Cela ne peut se terminer ainsi ! Maugrim, sauvez-moi !~
 @13 = ~Je m'appelle Rimardo Domine, mon <LADYLORD>. Autrefois, j'étais le Mage Suprême de la Tour Orientale. Mais c'était avant le renversement d'Arklem.~
 @14 = ~Alors que faites-vous ici maintenant ?~
 @15 = ~Par qui Arklem a-t-il été renversé ?~
 @16 = ~Qui est cet Arklem ?~
 @17 = ~Je veux savoir autre chose.~
-@18 = ~I have no more questions. Now you will die!~/*Je n'ai pas d'autres questions à te poser. Maintenant, à mort !*/
+@18 = ~Je n'ai plus de questions. Maintenant, vous allez mourir !~/*Je n'ai pas d'autres questions à te poser. Maintenant, à mort !*/
 @19 = ~C'est Maugrim qui est derrière tout cela, mon <LADYLORD>. Il sert une autre maîtresse, mais je ne sais rien d'elle. Seuls quelques-uns de ses disciples sont au courant, et ce sont tous des fanatiques.~
 @20 = ~Que veut ce culte ? Pourquoi font-il tout ça ?~
 @21 = ~Où est Maugrim ?~
 @22 = ~Qui sont ses lieutenants ?~
 @23 = ~M'autorisez-vous à fuir cette tour, <LADYLORD> ? J'ai fait tout ce que vous m'avez demandé...~
-@24 = ~But I... have nothing left, my <LADYLORD>. You have taken it all. Will you allow me to flee the tower, my <LADYLORD>? I have done as you have asked...~/*Mais... je n'ai plus rien, mon <LADYLORD>. Vous m'avez déjà tout pris. M'autorisez-vous à fuir cette tour, <LADYLORD> ? J'ai fait tout ce que vous m'avez demandé...*/
+@24 = ~Mais je... je n'ai plus rien, <LADYLORD>. Vous avez tout pris. Me laisserez-vous fuir la tour, <LADYLORD> ? J'ai fait ce que vous demandiez...~/*Mais... je n'ai plus rien, mon <LADYLORD>. Vous m'avez déjà tout pris. M'autorisez-vous à fuir cette tour, <LADYLORD> ? J'ai fait tout ce que vous m'avez demandé...*/
 @25 = ~Maugrim m'a... forcé à créer des golems. Des golems de guerre pour son armée.~
 @26 = ~Parlez-moi de ce Maugrim.~
 @27 = ~Pourquoi aurait-il besoin d'une armée ?~
@@ -30,7 +30,7 @@
 @29 = ~Quand Maugrim est-il arrivé ?~
 @30 = ~Comment le culte a-t-il réussi à prendre le dessus ?~
 @31 = ~Il... il rassemble une armée, <LADYLORD>. Les Hauts Capitaines, les troupes du nord, la confrérie... il les réunit pour bâtir une puissante armée.~
-@32 = ~I... I think he's at the top of the tower my <LADYLORD> .~/*... Je... je tâcherai de faire mieux la prochaine fois, <LADYLORD>.*/
+@32 = ~Je... je crois qu'il est au sommet de la tour, <LADYLORD>.~/*... Je... je tâcherai de faire mieux la prochaine fois, <LADYLORD>.*/
 @33 = ~Maugrim effectue de nombreux rituels secrets... il a peu de confidents. La seule qu'il garde auprès de lui en permanence est une elfe, Aribeth.~
 @34 = ~Aribeth ?~
 @35 = ~Maugrim est persuadé qu'une grande puissance se cache au coeur de Padhiver et il a rallié ses forces pour s'en emparer. De toute évidence, sa maîtresse en a grand besoin. Il a envoyé des agents dans tout le Nord afin de rechercher... quelque chose de lié à ce pouvoir. Mais j'ignore de quoi il s'agit au juste.~ 
@@ -54,5 +54,5 @@
 @53 = ~Je le savais ! Vous m'avez menti ! Vous allez mourir !~
 @54 = ~Ce que Maugrim recherche avec tant de détermination... et qui se trouve selon lui à Padhiver et dans le reste du Nord... il appelle cela les Mots de Pouvoir. La Confrérie n'a jamais entendu parler de ces "Mots", et j'ignore de quoi il peut bien s'agir. Mais ce qui est sûr, c'est que Maugrim ne ménage pas sa peine afin de les localiser pour sa maîtresse. Il a envoyé des agents dans tout le Nord afin de les repérer. Je... je crois bien qu'il en possède déjà un... et il compte s'emparer des autres par tous les moyens possibles et imaginables.~ 
 @55 = ~Non ! Maugrim est très puissant ! Il me retrouvera, je le sais ! Et il peut me faire des choses qui sont... pires que la mort...~
-@56 = ~That... that is all I know, my <LADYLORD>. Please believe me.~/*C'est... c'est tout ce que je sais, mon <seigneur/dame>. Vous devez me croire !*/
+@56 = ~C'est... c'est tout ce que je sais, <LADYLORD>. Croyez-moi, je vous en prie.~/*C'est... c'est tout ce que je sais, mon <seigneur/dame>. Vous devez me croire !*/
 @57 = ~Que faites-vous dans la Tour des Arcanes ?! C'est intolérable !~ [NWRIMA53]

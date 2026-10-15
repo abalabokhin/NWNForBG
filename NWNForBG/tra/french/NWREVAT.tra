@@ -3,12 +3,12 @@
 @2 = ~Allons, allons, mon garçon. Tout va s'arranger. Est-ce que je peux te poser des questions ?~
 @3 = ~Tu ne crois pas que tu es un peu grand pour pleurer comme ça ? Comment tu t'appelles ?~
 @4 = ~Heu, ne t'inquiète pas, je peux peut-être t'aider. Pourquoi ne répondrais-tu pas à quelques questions pour commencer ?~
-@5 = ~Me name be Revat. I glad meet you. Me wish could be on happy day.~/*Moi avoir besoin de soins. Moi content vous rencontrer <CHARNAME>. Mais moi aurait préféré une jolie journée.*/
+@5 = ~Moi appeler Révat. Moi content rencontrer vous. Moi vouloir rencontre jour moins triste.~/*Moi avoir besoin de soins. Moi content vous rencontrer <CHARNAME>. Mais moi aurait préféré une jolie journée.*/
 @6 = ~Qu'y a-t-il de si terrible aujourd'hui ?~
 @7 = ~Au revoir.~
 @8 = ~Vais essayer mais moi a pas envie de parler. Très mauvaise journée aujourd'hui.~
 @9 = ~Et si tu commençais par me dire qui tu es ?~
-@10 = ~You cry too if you have such bad day. Me name be Revat. I'm glad to see you, it's a pity it's such a bad day.~ /*Vous pleurez aussi si votre journée est mauvaise comme ça. M'appelle Révat. Dites-moi votre nom à vous. "Je suis heureux de voir que vous avez dépassé vos soupçons."*/
+@10 = ~Vous pleurer aussi si avoir si mauvaise journée. Moi appeler Révat. Moi content voir vous, dommage journée si mauvaise.~ /*Vous pleurez aussi si votre journée est mauvaise comme ça. M'appelle Révat. Dites-moi votre nom à vous. "Je suis heureux de voir que vous avez dépassé vos soupçons."*/
 @11 = ~Veux bien essayer mais eu une mauvaise journée. Ai pas très envie de parler.~
 @12 = ~Quel est votre nom ?~
 @13 = ~Ma maman enlevée par des trolls. Faut qu'elle revienne ou vais avoir gros ennuis. Moman être bonne arklogue, vous savez, gens creuser-trouver. Moi être son aide. Moi la protéger. Mais moi pas avoir bien fait travail.~ 
@@ -27,7 +27,7 @@
 @26 = ~J'aimerais pouvoir vous aider, mais je suis assez occupé en ce moment.~
 @27 = ~Pas être passé comme ça ! Vous attendre histoire. Moi raconter trolls à vous.~
 @28 = ~Non ! Vous pas dire trolls avoir mangé Moman ! Moman pas mangée ou moi être perdu ! Vous trouver Moman.~
-@29 = ~She be in cave in area. Same place you go for to help Jax. My hear, your talk.~/*Elle être dans grotte dans coin. Même endroit vous aller pour aider Jax. Moi voir vous avoir clé.*/
+@29 = ~Elle dans caverne du coin. Même endroit où vous aller aider Jax. Moi entendre vous parler.~/*Elle être dans grotte dans coin. Même endroit vous aller pour aider Jax. Moi voir vous avoir clé.*/
 @30 = ~Moi payer vous 300 pièces d'or. Moi pas avoir beaucoup plus. Ça être tout ce que Moman avoir donné.~
 @31 = ~Oh, vous <MANWOMAN> bon. Vous avoir trouvé Moman. Moi dire à vous quoi moi savoir. Eux avoir Moman dans grotte pas loin. Elle gentille, mais elle tirer oreille et crier si vous casser assiette ou faire tomber lait ou pas manger haricots ou gigoter ou... mais moi pas devoir parler comme ça sur elle.~ 
 @32 = ~Tenez... Voilà anneau à moi à montrer à Moman. Etre anneau de Popa quand lui mourir. Moi pas avoir connu lui, mais Moman dire lui homme bon et tranquille. Ami à moi dire lui s'enquiquiner à mourir, mais moi pas comprendre... Aller vite et mettre Moman à l'abri.~ 
@@ -36,11 +36,11 @@
 @35 = ~Oh ! Encore vous. Vous voulez quoi ?~
 @36 = ~Peux-tu me rappeler ce qui s'est passé ?~
 @37 = ~J'ai décidé que j'allais sauver ta mère.~
-@38 = ~I don't need anything, bye.~/*Je n'ai besoin de rien pour l'instant.*/
+@38 = ~Je n'ai besoin de rien. Au revoir.~/*Je n'ai besoin de rien pour l'instant.*/
 @39 = ~Eh ! Vous trouvé ma maman ? Moi ai des problèmes. Ma maman doit revenir.~
 @40 = ~Rappelle-moi où je peux la trouver ?~
 @41 = ~Je vais continuer de la chercher.~
-@42 = ~I'm sorry, but your momma died, there were too many trolls.~/*Navré mais je n'ai pas le temps pour l'instant.*/
+@42 = ~Je suis désolé, mais votre maman est morte. Il y avait trop de trolls.~/*Navré mais je n'ai pas le temps pour l'instant.*/
 @43 = ~Elle être dans caverne avec trolls et ogres près ici. Moi pas savoir plus. S'il vous plaît, retrouvez vite ma maman. Me manque beaucoup.~ 
 @44 = ~S'il vous plaît, retrouvez vite ma maman. Me manque beaucoup.~
 @45 = ~Noooonnnnnn ! Ma maman pas morte ! Ma maman pas morte ! Vous mentir ! Moi aller trouver Moman. Elle pas être morte.~ 
@@ -50,12 +50,12 @@
 @49 = ~Je regrette d'avoir à vous traiter de crétin, mais il me semble que nous étions d'accord pour plus.~
 @50 = ~Merci. Cela ira.~
 @51 = ~Nul besoin de récompense, je suis heureux de l'avoir fait.~
-@52 = ~Oh, you right. Momma worth 740 gp, 'cause that all I have.~/*Oh, vous avoir raison. Moman faire 375 pièces, parce que c'est tout ce que moi avoir.*/
+@52 = ~Oh, vous raison. Maman valoir 740 pièces d'or, parce que ça tout ce que moi avoir.~/*Oh, vous avoir raison. Moman faire 375 pièces, parce que c'est tout ce que moi avoir.*/
 @53 = ~Oh, moi oublier souvent. Désolé. Voilà 375 pièces d'or. Ça être tout ce que moi avoir. Moi plus pouvoir acheter petit animal, maintenant.~
 @54 = ~Bon, Moman dire moi devoir partir maintenant. Salut.~
 
-@56 = ~Thank you much. Me glad have Momma back. Hello Momma, me coming!~ /*Moi désolé pas pouvoir donner plus. Moi mercier vous. Moi content Moman revenue. Hou-hou, Moman, me voilà !*/
+@56 = ~Merci beaucoup. Moi content retrouver Maman. Bonjour Maman, moi arriver !~ /*Moi désolé pas pouvoir donner plus. Moi mercier vous. Moi content Moman revenue. Hou-hou, Moman, me voilà !*/
 @57 = ~Oh, vous être meilleur ami dans monde entier, <LADYLORD>. Moi espérer vous venir voir moi quand vous à Eauprofonde. Moman dire moi devoir partir maintenant. Salut.~
 @58 = ~Ma maman dit qu'on doit partir. Au revoir.~
-@59 = ~Me go find Momma. She no be dead.~
+@59 = ~Moi aller chercher Maman. Elle pas morte.~
 /*Vous mentir ! Moi aller trouver Moman. Elle pas être morte.*/

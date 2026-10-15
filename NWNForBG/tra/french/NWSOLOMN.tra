@@ -1,6 +1,6 @@
 @0 = ~Ils m'avaient dit que votre physique était plus que banal, et c'est vrai, mais c'est sur vos épaules que repose le destin de Padhiver, ça ne fait aucun doute.~ [NWSOL052]
 @1 = ~Pardon ?! Qui n'est pas très beau ?~
-@2 = ~Who told you about me?~/*Pourquoi m'avoir tendu une embuscade ?*/
+@2 = ~Qui vous a parlé de moi ?~/*Pourquoi m'avoir tendu une embuscade ?*/
 @3 = ~Que voulez-vous exactement ?~
 @4 = ~Moi pas vraiment héros...~ // V FEMININE
 @5 = ~Ne me faites pas perdre mon temps.~
@@ -13,14 +13,14 @@
 @12 = ~Je ne suis pas de votre avis. Vous avez sauvé toute une ville d'une mort aussi horrible que certaine. Sans doute méritez-vous toute l'attention que l'on accorde habituellement aux héros.~ // V FEMININE
 @13 = ~Excusez-moi, je voulais juste m'assurer que vous étiez bien qui vous prétendez être. Je tiens à vous remercier. J'ai de la famille à Padhiver et vous avez sauvé la vie des miens en mettant un terme à l'épidémie. Tenez, acceptez cet anneau en gage de gratitude.~
 @14 = ~C'est très aimable à vous. Merci.~
-@15 = ~I'll take the ring, it looks valuable.~/*Je prendrai l'arme magique.*/
+@15 = ~Je prends l'anneau. Il a l'air de valoir quelque chose.~/*Je prendrai l'arme magique.*/
 @16 = ~Non, gardez-le. Je n'en ai pas besoin.~
 @17 = ~J'ignore s'il est magique ou non, mais il m'a toujours porté chance. J'espère qu'il en sera de même pour vous. Encore merci, <CHARNAME>, et au revoir !~
 @18 = ~Oh non, ne le vendez pas, <CHARNAME> ! J'ignore s'il est magique ou non, mais il m'a toujours porté chance. J'espère également que cela vous portera chance... c'est pourquoi je voulais vous le donner. Tenez, faites-en bon usage, <CHARNAME>.~ 
 @19 = ~Mais... c'est un très bel anneau ! Acceptez-le, je vous en prie ! C'est pour ça que je vous cherchais, pour vous le donner en remerciement de tout ce que vous avez fait !~
 @20 = ~Très bien. Merci.~
 @21 = ~Si vous tenez vraiment à me remercier, pourquoi ne pas me donner autre chose en plus ?~
-@22 = ~No, I'm not taking your ring.~/*Non. Je ne désire pas votre aide.*/
+@22 = ~Non, je ne prendrai pas votre anneau.~/*Non. Je ne désire pas votre aide.*/
 @23 = ~Euh... oui, peut-être... tenez, voilà tout l'or que j'ai sur moi. Je sais que ce n'est pas grand-chose, mais je vous prie de l'accepter en plus de l'anneau. J'ignore s'il est magique ou non, mais il m'a toujours porté chance. J'espère qu'il en sera de même pour vous. Encore merci, <CHARNAME>, et au revoir !~ 
 @24 = ~Puisque vous le prenez comme ça, vous n'êtes pas le héros que je m'imaginais. Quelle impolitesse !~ // V FEMININE
 @25 = ~A bientôt.~ [NWSOL050]

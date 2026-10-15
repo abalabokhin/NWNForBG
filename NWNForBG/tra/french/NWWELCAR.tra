@@ -1,6 +1,6 @@
 @0 = ~Bonjour étranger. Bienvenue au bosquet des druides. Je me nomme Welcar, et vous, qui êtes-vous ?~
 @1 = ~Je suis <CHARNAME>. Vous semblez très amical.~
-@2 = ~We are a group of adventurers led by <CHARNAME>.~/*Qui êtes-vous ? Je me nomme <CHARNAME>.*/
+@2 = ~Nous sommes un groupe d'aventuriers dirigé par <CHARNAME>.~/*Qui êtes-vous ? Je me nomme <CHARNAME>.*/
 @3 = ~Cela ne vous regarde pas. Et si vous répondiez à quelques questions ?~
 @4 = ~Je suis simplement très content. Vous l'ignorez sans doute, mais je viens de remporter une épreuve très importante.~
 @5 = ~Et de quelle épreuve s'agit-il ?~
@@ -10,7 +10,7 @@
 @9 = ~Que se passe-t-il ici ?~
 @10 = ~Qui est le chef ici ?~
 @11 = ~Que faites-vous exactement ici ?~
-@12 = ~I do not have any questions. Goodbye.~/*Je n'ai pas d'autres questions. Au revoir.*/
+@12 = ~Je n'ai pas de questions. Au revoir.~/*Je n'ai pas d'autres questions. Au revoir.*/
 @13 = ~Je viens d'être nommé gardien du quatrième cercle du bosquet des druides.~
 @14 = ~Qu'est-ce que ça veut dire ?~
 @15 = ~Bien. Quelles sont ces questions ?~
@@ -26,7 +26,7 @@
 @25 = ~Très bien. Au revoir.~
 @26 = ~C'est une longue histoire. Je ne voudrais pas vous ennuyer avec ça. Avez-vous d'autres questions ?~ 
 @27 = ~Je constate que vous êtes de retour. Puis-je vous être utile en quoi que ce soit ?~
-@28 = ~You agreed to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~/*C'est d'accord. Comme vous voulez. Bonne chance à vous. Que Silvanus soit avec vous.*/
-@29 = ~Thanks to you, our forest is living its former life again. Thank you, may luck always be with you!~/*Merci d'avoir libéré son pouvoir, Linu. Merci, cela devrait faire l'affaire.*/
-@30 = ~The Spirit of the Wood is dead! Our forest will never be the same, it's a great loss!~
+@28 = ~Vous avez accepté d'aider notre forêt ? La tâche sera difficile. Bonne chance à vous. Que Silvanus soit avec vous.~/*C'est d'accord. Comme vous voulez. Bonne chance à vous. Que Silvanus soit avec vous.*/
+@29 = ~Grâce à vous, notre forêt a retrouvé sa vie d'autrefois. Merci. Puisse la chance toujours vous accompagner !~/*Merci d'avoir libéré son pouvoir, Linu. Merci, cela devrait faire l'affaire.*/
+@30 = ~L'Esprit des bois est mort ! Notre forêt ne sera plus jamais la même. C'est une perte immense !~
 /*L'Esprit des Forêts est mort. La forêt ne sera plus jamais la même.*/
