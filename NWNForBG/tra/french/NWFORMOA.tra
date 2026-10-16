@@ -57,16 +57,16 @@
 @56 = ~Très bien. Je le ferai.~
 @57 = ~J'ai changé d'avis. Cela ne m'intéresse pas.~
 @58 = ~Je ne suis pas une tueuse, <SIRMAAM>. Sinon j'aurais défié le sorcier il y a bien longtemps et tout ceci ne serait pas nécessaire.~
-@59 = ~Meldanen lives in a fenced mansion, its gates are well guarded. There are other defenses, but you have to get in somehow. I do not expect you to do this without reward, of course. Bring me the key and I will give you a magic necklace. For the sorcerer's silver tooth, I'll give you 1,000 gold coins.~/*Meldanen et les siens sont une vraie plaie. Je suis bien forcé de le reconnaître. Naturellement, je ne vous demande pas de le faire sans récompense. Ramenez-moi la clef et je vous donnerai un collier magique. Pour la dent en argent du sorcier, je vous offre 500 pièces d'or.*/
+@59 = ~Meldanen vit dans un manoir entouré d'une clôture, dont les portes sont bien gardées. Il y a d'autres défenses, mais vous trouverez bien un moyen d'entrer. Je ne vous demande évidemment pas de le faire sans récompense. Rapportez-moi la clé et je vous donnerai un collier magique. Quant à la dent en argent du sorcier, elle vous vaudra 1 000 pièces d'or.~/*Meldanen et les siens sont une vraie plaie. Je suis bien forcé de le reconnaître. Naturellement, je ne vous demande pas de le faire sans récompense. Ramenez-moi la clef et je vous donnerai un collier magique. Pour la dent en argent du sorcier, je vous offre 500 pièces d'or.*/
 @60 = ~Que les dieux soient remerciés pour votre venue. Peut-être que de tout cela ressortira un peu de bien. J'attends votre retour avec impatience.~
 
 @62 = ~Vous changez d'avis maintenant ? Très bien. Partez et laissez-moi me charger de ce qui doit être fait.~
 @63 = ~Ainsi vous revoilà ? Avez-vous changé d'avis, <LADYLORD> ? M'aiderez vous à récupérer la clé et à tuer Meldanen ?~ [NWFORMO3]
 @64 = ~Non. Je suis là pour vous tuer. Avec les compliments de Meldanen.~
-@65 = ~So you have returned, my <LADYLORD>. Do you have news?~ [NWFORMO4]/*Ainsi vous revoilà, <LADYLORD>. Avez-vous des nouvelles ?*/
+@65 = ~Vous voici donc de retour, <LADYLORD>. Avez-vous des nouvelles ?~ [NWFORMO4]/*Ainsi vous revoilà, <LADYLORD>. Avez-vous des nouvelles ?*/
 @66 = ~J'ai la clé de l'entrepôt de Meldanen.~
 @67 = ~J'ai la dent d'argent de Meldanen, que j'ai arrachée à sa tête.~
-@68 = ~I have Meldanen's tooth and the key to Meldanen's warehouse.~/*J'ai la clé de l'entrepôt de Meldanen.*/
+@68 = ~J'ai la dent de Meldanen et la clé de son entrepôt.~/*J'ai la clé de l'entrepôt de Meldanen.*/
 @69 = ~Meldanen est mort, mais je n'ai pas sa dent. Vous allez devoir me croire sur parole.~
 @70 = ~Pas encore, mais j'y travaille.~
 @71 = ~Je vous apporte un cadeau de la part de Meldanen : votre mort !~
@@ -79,10 +79,10 @@
 @78 = ~Non, et je n'ai pas non plus l'intention d'aller la récupérer.~
 @79 = ~Montrez-la moi. Oui... c'est bien elle, je peux détecter ses contresorts. Soyez béni, <SIRMAAM>, la ville remerciera les dieux pour vous dans les jours à venir. La dent... Oui, elle y ressemble fort. Je crois savoir qu'elle était la source du pouvoir de Meldanen et qu'il ne s'en serait jamais séparé facilement. Il est donc bien mort. Quel soulagement. Je vous suis.~ 
 @80 = ~Pardonnez-moi, <SIRMAAM>, mais j'insiste : je dois voir la dent de l'ensorceleur pour pouvoir croire à sa mort. Ce que vous avez pris pour Meldanen pouvait fort bien être une illusion ou un simulacre. Meldanen est malin, le doute subsiste. Je suis navrée, mais je dois voir la dent avant de vous récompenser.~ 
-@81 = ~Move swiftly, my <LADYLORD>. The longer you delay the more people suffer.~ /*Hâtez-vous, <LADYLORD>. Plus vous tarderez, plus les gens souffriront.*/
+@81 = ~Faites vite, <LADYLORD>. Plus vous tardez, plus les gens souffrent.~ /*Hâtez-vous, <LADYLORD>. Plus vous tarderez, plus les gens souffriront.*/
 @82 = ~Si vous voulez votre récompense, prouvez la mort du sorcier. Il se peut que vous ayez tué un simulacre ou une illusion. Sans preuve, je n'ai aucune certitude. Si vous le désirez, <SIRMAAM>, gardez la clef et revenez avec la dent du sorcier. Alors, je vous donnerai votre récompense pour les deux.~ 
 @83 = ~Très bien  Je reviendrai avec la clef.~
-@84 = ~Forget it. I just don't want any part of it.~ /*Laissez tomber. Non, je n'ai aucune preuve.*/
+@84 = ~Laissez tomber. Je ne veux tout simplement pas m'en mêler.~ /*Laissez tomber. Non, je n'ai aucune preuve.*/
 @85 = ~Si vous le désirez, <SIRMAAM>, gardez la clef et revenez avec la dent du sorcier. Alors, je vous donnerai votre récompense pour les deux.~
 @86 = ~Comme vous le souhaitez, <SIRMAAM>. Il se peut que les gens redoutent la vengeance de Meldanen et craignent d'entrer dans l'entrepôt... Heureusement, je peux les convaincre. Comme promis, voici votre collier. Ce n'est pas grand-chose mais, heureusement, cela suffira.~
 @87 = ~C'était assez risqué. Ne pourriez-vous pas me donner un peu plus d'or ?~
@@ -98,7 +98,7 @@
 @97 = ~J'ai été heureux d'aider, mais je ne veux pas de récompense pour avoir tué quelqu'un.~
 @98 = ~J'en ai... un peu plus. C'est vrai que vous le méritez. Tenez, voici 650 pièces d'or, je n'ai rien d'autre.~
 @99 = ~Oui, ce sera parfait.~
-@100 = ~I have nothing more to offer you, my <LADYLORD>, except my gratitude.~ /*Je n'ai rien d'autre à vous offrir, <LADYLORD>, sauf ma gratitude.*/
+@100 = ~Je n'ai plus rien à vous offrir, <LADYLORD>, sinon ma gratitude.~ /*Je n'ai rien d'autre à vous offrir, <LADYLORD>, sauf ma gratitude.*/
 @101 = ~Je vois. Des menaces, n'est-ce pas ? Est-ce ainsi que vous vous comportez quand on vous récompense ? Ou considérez-vous tout simplement cela comme une négociation d'arrière-salle ? Qu'importe, je ne céderai pas. Je vous ai offert une récompense pour vos services et j'apprécierais que vous l'acceptiez avec reconnaissance.~ 
 @102 = ~Ah ! Je crois qu'il est temps pour vous de mourir !~
 @103 = ~Très bien. Donnez-la-moi !~
@@ -107,9 +107,9 @@
 @106 = ~Vous êtes très généreux. Prenez tout de même le collier... Je refuse que vous ne soyez pas récompensé, même si c'est votre volonté. Vous m'avez aidée bien plus que je ne l'aurais cru. Maintenant, je dois y aller et réunir les gens pour entrer dans l'entrepôt. Au revoir, <LADYLORD>.~ 
 @107 = ~Traître ! Je vous combattrai si je le dois !~
 @108 = ~Je suis soulagée d'entendre ça. J'attendrai votre retour.~
-@109 = ~I suppose you're right. Here you are-- 250 gold pieces. You have helped far more than I thought anyone would. Now I must go and collect others to enter the warehouse. Farewell, my <LADYLORD>.~ 
+@109 = ~Vous avez sans doute raison. Tenez, 250 pièces d'or. Vous nous avez aidés bien au-delà de mes espérances. Je dois maintenant rassembler du monde pour entrer dans l'entrepôt. Adieu, <LADYLORD>.~ 
 /*Je suppose que tu as raison. Tenez... prenez cette pièce d'or. Vous m'avez aidée bien plus que je ne l'aurais cru. Maintenant, je dois y aller et réunir les gens pour entrer dans l'entrepôt. Au revoir, <LADYLORD>.*/
-@111 = ~I have nothing more to offer you than my gratitude. You have helped far more than I thought anyone would. Now I must go and collect others to enter the warehouse. Farewell, my <LADYLORD>.~ /*Je n'ai plus rien à vous dire. Vous m'avez aidée bien plus que je ne l'aurais cru. Maintenant, je dois y aller et réunir les gens pour entrer dans l'entrepôt. Au revoir, <LADYLORD>.*/
+@111 = ~Je n'ai plus rien à vous offrir que ma gratitude. Vous nous avez aidés bien au-delà de mes espérances. Je dois maintenant rassembler du monde pour entrer dans l'entrepôt. Adieu, <LADYLORD>.~ /*Je n'ai plus rien à vous dire. Vous m'avez aidée bien plus que je ne l'aurais cru. Maintenant, je dois y aller et réunir les gens pour entrer dans l'entrepôt. Au revoir, <LADYLORD>.*/
 @112 = ~Vous êtes très généreux. Prenez tout de même le collier... Je refuse que vous ne soyez pas récompensé, même si c'est votre volonté. Vous m'avez aidée bien plus que je ne l'aurais cru. Maintenant, je dois y aller et réunir les gens pour entrer dans l'entrepôt. Au revoir, <LADYLORD>.~ 
 @113 = ~Vous aurez votre récompense quand j'aurai la clef. Pas avant. C'est ce qui compte le plus.~
 @114 = ~Très bien. Je vais donc aller vous la chercher.~

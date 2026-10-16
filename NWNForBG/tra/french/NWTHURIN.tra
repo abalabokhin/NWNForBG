@@ -6,7 +6,7 @@
 @5 = ~Je suis Thurin, capitaine de la garde de Lacnoir, <SIRMAAM>. Puis-je savoir qui le demande ?~
 @6 = ~Je m'appelle <CHARNAME>.~
 @7 = ~Je m'appelle <CHARNAME>. Ravi de vous rencontrer, capitaine Thurin.~
-@8 = ~I just <RACE> from the <CHARNAME> command.~/*Appelez-moi <CHARNAME>.*/
+@8 = ~Je ne suis qu'un <RACE> du groupe de <CHARNAME>.~/*Appelez-moi <CHARNAME>.*/
 @9 = ~Vous n'avez pas besoin de savoir qui je suis.~
 @10 = ~Certainement, mais j'ai pas mal de problèmes et peu de temps pour bavarder. Que voulez-vous savoir ?~
 @11 = ~Peut-être pourriez-vous me dire qui vous êtes ?~
@@ -17,7 +17,7 @@
 @16 = ~Comme vous voulez.~
 @17 = ~Eh bien, les présentations sont faites. J'ai mes problèmes à régler, <CHARNAME>... Vous cherchez quelque chose ?~
 @18 = ~Moi aussi, <CHARNAME>. **soupir** Si seulement j'avais moins de problèmes à régler. Que puis-je faire pour vous ?~
-@19 = ~I don't know such a team, I have my own problems... is there something that you wanted?~/*Eh bien, les présentations sont faites. J'ai mes problèmes à régler, <CHARNAME>... Vous cherchez quelque chose ?*/
+@19 = ~Je ne connais pas ce groupe. J'ai mes propres problèmes... Vous vouliez quelque chose ?~/*Eh bien, les présentations sont faites. J'ai mes problèmes à régler, <CHARNAME>... Vous cherchez quelque chose ?*/
 @20 = ~J'ai déjà assez de problèmes, alors je suppose que cela n'a aucune importance. Qu'attendez-vous de moi, étranger ?~
 @21 = ~Je ne suis pas en mesure de vous apprendre grand-chose à ce sujet, <SIRMAAM>. Tout ce que nous pouvons faire pour l'instant est de maintenir un cordon sanitaire entre Lacnoir et le reste de la ville. Je ne peux pas dire que ça me plaît. Tous ces pauvres gens qui veulent entrer, sans se soucier de répandre la maladie jusqu'ici.~ 
 @22 = ~Du travail ? Eh bien, si vous en cherchez, vous pourriez peut-être m'aider. Eh bien, outre le fait de devoir contenir le fléau hors de ce quartier, un de mes hommes semble avoir disparu sans laisser de trace. En soi, cela ne serait pas si étrange, vu la situation, mais je connais bien cet homme. C'est un vieil ami appelé Samuel... Il ne partirait pas comme ça.~ 
@@ -36,7 +36,7 @@
 @35 = ~Je n'en ai pas assez. J'ai déjà assez de mal à tenir les portes et à garder le calme à Lacnoir. J'ai demandé à mes hommes de garder l'oeil ouvert... En vain, pour l'heure.~
 @36 = ~Samuel était l'un de mes inspecteurs. Le meilleur, en fait. Il devait enquêter sur quelque chose, mais il ne parlait jamais à personne de ce qu'il faisait.~
 @37 = ~Je donnerais volontiers 300 pièces d'or si quelqu'un ramenait Samuel sain et sauf. C'est tout ce que je peux faire.~
-@38 = ~Would you? I would be more than happy to have the aid of someone trustworthy in finding Samuel. If you do find him, tell him to return if he can. At the very least, I would like to be certain of his fate.~/*Vraiment ? Je serai plus qu'heureux d'avoir l'aide d'une personne aussi fiable pour trouver Samuel. Merci, mon <LADYLORD> ! Si vous le trouvez, dites-lui de revenir. Quoi qu'il en soit, j'aimerais savoir ce qui lui est arrivé.*/
+@38 = ~Vous feriez cela ? Je serais plus qu'heureux de recevoir l'aide d'une personne de confiance pour retrouver Samuel. Si vous le trouvez, dites-lui de revenir s'il le peut. À défaut, je voudrais au moins savoir avec certitude ce qui lui est arrivé.~/*Vraiment ? Je serai plus qu'heureux d'avoir l'aide d'une personne aussi fiable pour trouver Samuel. Merci, mon <LADYLORD> ! Si vous le trouvez, dites-lui de revenir. Quoi qu'il en soit, j'aimerais savoir ce qui lui est arrivé.*/
 @39 = ~D'accord... Mais je ne devrais pas avoir une avance, pour mes frais ?~
 @40 = ~Je le trouverai si je peux.~
 @41 = ~Je vois **soupir**. Je ne m'attendais pas à trouver de l'aide. Samuel finira bien par réapparaître, un jour. Bien... Laissez-moi tranquille, si vous refusez de m'aider.~ 
@@ -45,7 +45,7 @@
 @44 = ~Permettez-moi de vous demander autre chose.~
 @45 = ~Je n'ai aucune garantie que vous allez vraiment le chercher une fois que vous serez parti. Vous verrez la récompense quand j'aurai vu Samuel, point.~
 
-@47 = ~Thank you, <SIRMAAM>. I can only hope that you find him safe.~/*Merci, <SIRMAAM>. J'espère que vous le trouverez sain et sauf.*/
+@47 = ~Merci, <SIRMAAM>. Je ne peux qu'espérer que vous le retrouverez sain et sauf.~/*Merci, <SIRMAAM>. J'espère que vous le trouverez sain et sauf.*/
 @48 = ~Eh bien, outre le fait de devoir contenir le fléau hors de ce quartier, un de mes hommes semble avoir disparu sans laisser de trace. En soi, cela ne serait pas si étrange, vu la situation, mais je connais bien cet homme. C'est un vieil ami appelé Samuel... Il ne partirait pas comme ça.~ 
 @49 = ~Que voulez-vous savoir ?~
 @50 = ~Vous revoilà, . Avez-vous progressé ? Avez-vous retrouvé Samuel ?~
@@ -71,7 +71,7 @@
 
 @71 = ~Je suis tout sauf riche, <SIRMAAM>, et c'est bien tout ce que la garde peut se permettre. Merci encore... Vous avez été bien plus utile que je n'aurais cru. Si vous voulez bien m'excuser, il me reste encore fort à faire aujourd'hui.~ 
 @72 = ~Je suis censé avoir peur ? Puisque vous m'avez tant aidé, j'oublie ces menaces. Voici vos 300 pièces... Prenez-les et partez, à présent. Si vous voulez bien m'excuser, il me reste fort à faire aujourd'hui.~
-@73 = ~Then take the coins. I wish I could pay you more, I am far from wealthy, <SIRMAAM>. Thank you once again... you've helped far more than I would have hoped. Now, if you'll excuse me, there's still much for me to deal with today.~/*Au fait. Quels sont vos ordres, <SIRMAAM> ? Merci encore... Vous avez été bien plus utile que je n'aurais cru. Si vous voulez bien m'excuser, il me reste encore fort à faire aujourd'hui.*/
+@73 = ~Alors prenez cet argent. J'aimerais pouvoir vous donner davantage, mais je suis loin d'être riche, <SIRMAAM>. Merci encore... Vous m'avez aidé bien au-delà de mes espérances. Maintenant, excusez-moi, il me reste beaucoup à faire aujourd'hui.~/*Au fait. Quels sont vos ordres, <SIRMAAM> ? Merci encore... Vous avez été bien plus utile que je n'aurais cru. Si vous voulez bien m'excuser, il me reste encore fort à faire aujourd'hui.*/
 @74 = ~Vous êtes trop bon, mon <LADYLORD>. Je vais informer les gardes de votre geste. Merci encore... Vous avez été bien plus utile que je n'aurais cru. Si vous voulez bien m'excuser, il me reste encore fort à faire aujourd'hui.~ 
-@75 = ~I'm sorry, but I'm really busy. Please excuse me.~
+@75 = ~Je suis désolé, mais j'ai beaucoup à faire. Veuillez m'excuser.~
 /*Je suis désolé, mais je dois y aller. Excusez-moi.*/

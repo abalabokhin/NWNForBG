@@ -18,7 +18,7 @@
 @17 = ~Comment entrer dans la boule à neige ?~
 @18 = ~Faut l'toucher. Et PLOP ! Z'êtes dedans ! Mais vous attendez pas à c'que j'vienne vous sauver si z'avez des emm...nuis. C'trop dangereux pour moi. J'vais rester ici à boire mon vin.~ 
 @19 = ~L'était temps qu'vous arriviez. J'attends d'puis au moins dix minutes que quelqu'un vienne remplir mon verre !~ [NWLILL57]
-@20 = ~I'm not here to fill your drink. I work for Aarin Gend.~ /*Je ne suis pas ici pour remplir votre verre. Je suis <CHARNAME>. Je travaille pour Aarin Gend.*/
+@20 = ~Je ne suis pas ici pour vous servir à boire. Je travaille pour Aarin Gend.~ /*Je ne suis pas ici pour remplir votre verre. Je suis <CHARNAME>. Je travaille pour Aarin Gend.*/
 @21 = ~J'espérais que vous me parleriez de la boule à neige.~
 @22 = ~Ah ! Oui, <CHARNAME>, le héros de Padhiver. J'porterais bien un toast à vos exploits légendaires... si mon verre était pas vide ! Je m'appelle Lillian Cambridge, archéologue - l'experte du Nord en matière d'antiquités et d'artefacts anciens. Aarin Gend a dû vous dire que je venais proposer mon savoir tout à fait unique à la cause de l'Alliance Seigneuriale.~  // V FEMININE
 @23 = ~J'aimerais vous poser quelques questions.~
@@ -78,7 +78,7 @@
 @77 = ~Un monde miniature ? Comment est-ce possible ?~
 @78 = ~Quel rapport avec le Mot de Pouvoir ?~
 @79 = ~Mais peu importe tout cela. Si vous voulez savoir où se trouve le Mot de Pouvoir, vous me ramènerez cette boule à neige. Cela devrait suffir à vous convaincre de le faire, non ?~
-@80 = ~Find the snow globe and I'll tell where you can find one of the Words of Power.~ /*Trouvez la boule à neige et je vous dirai où trouver l'un des Mots de Pouvoir. Autre chose, peut-être, <CHARNAME> ?*/
+@80 = ~Retrouvez la boule à neige et je vous dirai où se trouve l'un des Mots de pouvoir.~ /*Trouvez la boule à neige et je vous dirai où trouver l'un des Mots de Pouvoir. Autre chose, peut-être, <CHARNAME> ?*/
 @81 = ~J'allais livrer le globe de neige à mon acheteur quand un magicien sans scrupule – mais assez charmant – nommé Nax me l'a volé. D'après ce qu'il m'a dit, Nax était là-bas en train de faire des recherches personnelles. Il semble qu'il ait découvert l'entrée magique d'un laboratoire abandonné appartenant à un magicien mort depuis longtemps, quelque part dans Bois Frileux, au Nord.~ 
 @82 = ~Épargnez-moi les menaces, <CHARNAME>. C'est Aarin Gend qui m'a invitée ici – à votre avis, si vous me faites du mal, que fera-t-il ? Amenez-moi ma boule à neige et je vous dirai avec plaisir où se trouve le Mot de Pouvoir. Mais jusqu'à ce que je l'aie en mains, je garderai mes secrets~ 
 @83 = ~Si les textes et documents anciens que j'ai lus sont justes, quelqu'un a caché l'un des Mots de Pouvoir dans ce monde miniature.~

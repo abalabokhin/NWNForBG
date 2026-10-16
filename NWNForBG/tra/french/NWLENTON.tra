@@ -2,10 +2,10 @@
 @1 = ~Qui êtes-vous ?~
 @2 = ~J'aurais des questions à vous poser.~
 @3 = ~Au revoir.~
-@4 = ~My name is Lenton. So like I said, what do you want?~/*Je m'appelle Torias. Enchanté. Alors je réitère ma question : que voulez-vous ?*/
+@4 = ~Je m'appelle Lenton. Alors, comme je vous le demandais, que voulez-vous ?~/*Je m'appelle Torias. Enchanté. Alors je réitère ma question : que voulez-vous ?*/
 @5 = ~Qu'est-ce qui vous a mis de si méchante humeur ?~
 @6 = ~Vous êtes vraiment désagréable.~
-@7 = ~I guess I'll try to answer. Don't waste my time though.~/*J'essaierai d'y répondre, mais ne me faites pas perdre mon temps.*/
+@7 = ~Je vais essayer de vous répondre. Mais ne me faites pas perdre mon temps.~/*J'essaierai d'y répondre, mais ne me faites pas perdre mon temps.*/
 @8 = ~Quel est votre nom ?~
 @9 = ~Que se passe-t-il ici ?~
 @10 = ~Pourquoi êtes-vous de si méchante humeur ?~
@@ -52,14 +52,14 @@
 @51 = ~Cela ne m'intéresse pas.~
 @52 = ~Vous êtes un <MANWOMAN> d'honneur. Je raconterai partout vos exploits héroïques.~
 
-@54 = ~Very well. Good luck to you in the future.~/*Très bien. Bonne chance à vous à l'avenir. Je file.*/
+@54 = ~Très bien. Bonne chance pour la suite.~/*Très bien. Bonne chance à vous à l'avenir. Je file.*/
 @55 = ~J'aurais dû m'attendre à un commentaire de ce genre de la part de quelqu'un comme vous. Vous pouvez me menacer autant que vous le voudrez. Vous ne trouverez pas un sou de plus sur mon cadavre. Voici les 500 pièces d'or promises plus tôt.~ 
 @56 = ~Ah vous revoilà. Vous avez la tête du chef troll ?~
-@57 = ~Once again, what should I do?~/*J'aimerais vous aider. Que puis-je faire ?*/
-@58 = ~I have a troll head.~/*J'ai la tête de Vaath.*/
+@57 = ~Rappelez-moi ce que je dois faire.~/*J'aimerais vous aider. Que puis-je faire ?*/
+@58 = ~J'ai une tête de troll.~/*J'ai la tête de Vaath.*/
 @59 = ~J'y travaille.~
 @60 = ~Oh ! Par pitié ! Je veux que vous alliez dans les cavernes pour tuer les trolls. Rapportez-moi la tête de leur chef. Maintenant, allez terminer ce travail.~ 
 @61 = ~Très bien, continuez. Je vous attends.~
-@62 = ~Thank you, now my brother is avenged.~/*Merci de votre aide.*/
-@63 = ~What do you need? Our business is over, don't bother me anymore.~
+@62 = ~Merci. Mon frère est maintenant vengé.~/*Merci de votre aide.*/
+@63 = ~Que voulez-vous ? Notre affaire est réglée, cessez de me déranger.~
 /*De quoi avez-vous besoin ? Nous en avons terminé ! Foutez le camp !*/

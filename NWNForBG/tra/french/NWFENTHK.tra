@@ -9,7 +9,7 @@
 @8 = ~Desther ferait mieux de faire attention à ce qu'il dit s'il ne veut pas perdre quelques dents !~
 @9 = ~Il n'y a rien de mal à vouloir faire fortune dans ce monde, Desther. Rassurez-vous, <CHARNAME>, vous serez bien récompensé pour vos efforts. Je vous en prie, <CHARNAME>, vous devez pardonner Desther. Le fléau nous épuise tous et la situation a encore empiré ces dernières semaines, avec l'attaque contre l'Académie et la perte du remède.~ 
 @10 = ~Vous ne pensez pas si bien dire, <CHARNAME>. L'horreur de la Mort Hurlante ne s'est pas encore fait sentir au sein de l'Académie. La quarantaine de Padhiver n'a pas été très efficace pour empêcher la propagation de la Mort Hurlante. Des bûchers brûlent jour et nuit pendant que la garde les alimente avec des cadavres, et pourtant les charniers sont de plus en plus importants. C'est tout ce que nous pouvons faire pour limiter le chaos et maintenir l'ordre dans les différents quartiers de la ville. Les rumeurs se font de plus en plus nombreuses, et la population est au bord de la panique.~ 
-@11 = ~What rumors?~ /*Quoi rumeurs être ?*/
+@11 = ~Quelles rumeurs ?~ /*Quoi rumeurs être ?*/
 @12 = ~Vous ne comprenez pas, <CHARNAME>. L'horreur de la Mort Hurlante ne s'est pas encore abattue au sein de l'Académie. La quarantaine de Padhiver n'a pas été très efficace pour empêcher la propagation de la Mort Hurlante. Des bûchers brûlent jour et nuit pendant que la garde les alimente avec des cadavres, et pourtant les charniers sont de plus en plus importants. C'est tout ce que nous pouvons faire pour limiter le chaos et maintenir l'ordre dans les différents quartiers de la ville. Les rumeurs se font de plus en plus nombreuses, et la population est au bord de la panique.~ 
 @13 = ~Puisque la maladie ne peut  être soignée par les prêtres de la ville, certains affirment qu'elle n'est pas naturelle et qu'elle nous a été envoyée par un ennemi inconnu pour détruire Padhiver.~
 @14 = ~Desther ! Je ne vous laisserai pas douter de la foi de ma bien-aimée ! Aribeth pensait que l'Académie était à l'abri. Quoi qu'il en soit, il ne nous appartient pas de discuter de cela. Ma bien-aimée Aribeth, nommée par le Seigneur Nasher en personne, est chargée de mettre un terme à la Mort Hurlante. Vous devez aller lui parler, <CHARNAME>, le plus vite possible.~ 
@@ -23,7 +23,7 @@
 @22 = ~Quel est votre rôle dans tout cela, Fenthick ?~
 @23 = ~Parlez-moi d'Aribeth.~
 @24 = ~Que savez-vous sur Desther ?~
-@25 = ~We haven't learned much in the week since the attack. The instructors were slaughtered, only a handful of students left. There is little else I can tell you about the attack, I fear. We have yet to uncover the identity of the mysterious assailants. Perhaps Aribeth can tell you more.~ /*Nous avons la permission d'utiliser le point d'eau. Ecoutez-moi bien. Je crains de ne pas pouvoir vous dire grand-chose d'autre au sujet de l'attaque. Il nous faut encore découvrir l'identité de nos mystérieux assaillants. Peut-être qu'Aribeth pourra vous en dire plus ?*/
+@25 = ~Nous n'avons pas appris grand-chose depuis l'attaque, il y a une semaine. Les instructeurs ont été massacrés et il ne reste qu'une poignée d'élèves. Je crains de ne pouvoir vous en dire davantage sur cette attaque. Nous n'avons toujours pas découvert l'identité des mystérieux assaillants. Aribeth pourra peut-être vous en dire plus.~ /*Nous avons la permission d'utiliser le point d'eau. Ecoutez-moi bien. Je crains de ne pas pouvoir vous dire grand-chose d'autre au sujet de l'attaque. Il nous faut encore découvrir l'identité de nos mystérieux assaillants. Peut-être qu'Aribeth pourra vous en dire plus ?*/
 @26 = ~Je m'en vais.~
 @27 = ~Malgré la quarantaine, la Mort Hurlante se répand très vite. Comme vous le prouvent les malades qui nous entourent, même le Palais de Justice est frappé. Desther et moi-même faisons notre possible pour réconforter ces pauvres âmes, mais nous ne pouvons pas faire grand-chose d'autre. Même les plus puissants prêtres de Padhiver sont incapables de redonner la vie aux victimes de la Mort Hurlante ou même de les soigner.~ 
 @28 = ~Ne craignez-vous pas de contracter le fléau ?~
@@ -39,8 +39,8 @@
 @38 = ~Bien le bonjour, <CHARNAME>. Etes-vous au courant ? La troisième créature aquafondienne a été récupérée Le remède est à portée de main ?~ [NWFEN127]
 @39 = ~Je souhaite vous poser quelques questions, Fenthick.~
 @40 = ~J'ai pensé que cette note pourrait vous intéresser.~
-@41 = ~Look, I got my hands on this strange message.~ /*J'ai des questions sur cette maison étrange.*/
-@42 = ~You might be interested in looking at this anonymous letter.~/*Cela vous intéresserait-il de m'acheter une dent de dragon ?*/
+@41 = ~Regardez, j'ai mis la main sur cet étrange message.~ /*J'ai des questions sur cette maison étrange.*/
+@42 = ~Cette lettre anonyme pourrait vous intéresser.~/*Cela vous intéresserait-il de m'acheter une dent de dragon ?*/
 @43 = ~J'y répondrai de mon mieux, mais sachez qu'Aribeth est la seule à être habilitée à parler de certaines choses.~
 @44 = ~Voyons voir... Mmmh... il semble que le fléau lancé contre nous ne soit que l'un des éléments d'un vaste complot ! Il est possible que des épreuves encore plus redoutables que la Mort Hurlante nous attendent.~
 @45 = ~S'il vous plaît, Desther ; j'ai peine à croire que <CHARNAME> soit <MANWOMAN> à faire une telle chose. Je pense que cela mérite une enquête approfondie.~
@@ -66,6 +66,6 @@
 @65 = ~Nous avons déjà récupéré deux créatures, Desther. Cela ne vous donne pas l'espoir que nous puissions réussir ?~
 @66 = ~Bien joué, <CHARNAME>. J'ai entendu dire que vous aviez retrouvé la troisième créature d'Eauprofonde. Le remède est désormais à portée de main !~ [NWFEN124]
 @67 = ~Nous sommes tellement proches du but, Desther. <CHARNAME> ne nous abandonnera pas ! La dernière créature sera à nous si nous restons fidèles à notre cause !~
-@68 = ~Amazing! You have found all the creatures! My Lady Aribeth awaits you in the Hall of Justice. Hurry, we must make the cure as quickly as possible.~ /*Guérison Vous avez découvert une porte dissimulée ! Je vous salue au nom de Mystra. Je vais le faire partir aussi vite que possible.*/
-@69 = ~I'm sorry, I can't discuss Neverwinter's affairs with you. Have <CHARNAME> come to me, I will only talk to them.~ 
+@68 = ~Incroyable ! Vous avez retrouvé toutes les créatures ! Dame Aribeth vous attend au Palais de Justice. Vite, nous devons préparer le remède au plus tôt.~ /*Guérison Vous avez découvert une porte dissimulée ! Je vous salue au nom de Mystra. Je vais le faire partir aussi vite que possible.*/
+@69 = ~Je suis désolé, je ne peux pas discuter des affaires de Padhiver avec vous. Envoyez-moi <CHARNAME>, c'est la seule personne à qui je parlerai.~ 
 /*Je regrette, je ne comprends pas. Laissez-moi. Ça suffit maintenant.*/

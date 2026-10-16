@@ -1,4 +1,4 @@
-@0 = ~Is there something I can do for you, <SIRMAAM>?~/*Y a-t-il quelque chose que je puisse faire pour vous, <SIRMAAM> ?*/
+@0 = ~Puis-je faire quelque chose pour vous, <SIRMAAM> ?~/*Y a-t-il quelque chose que je puisse faire pour vous, <SIRMAAM> ?*/
 @1 = ~Pourrais-je vous poser quelques questions ?~
 @2 = ~Au revoir.~
 @3 = ~Faites vite. Je dois soulager les souffrances de mes patients.~
@@ -23,7 +23,7 @@
 @22 = ~Vous n'aimez guère Desther, n'est-ce pas ?~
 @23 = ~Avant l'épidémie, j'étais sage-femme. Mais il n'y a plus guère de bébés qui naissent en ce moment, et encore moins qui survivent. J'ai entendu dire que le château de Padhiver avait besoin d'infirmières pour s'occuper des malades et des mourants, et je suis venue.~
 @24 = ~Mais n'avez-vous pas peur de contracter le fléau ?~
-@25 = ~I really should be tending the sick, but for I can spare a few moments.~ /*Il faut que je soigne les malades, mais je puis vous accorder quelques instants, <SIRMAAM>.*/
+@25 = ~Je devrais vraiment m'occuper des malades, mais je peux vous accorder quelques instants.~ /*Il faut que je soigne les malades, mais je puis vous accorder quelques instants, <SIRMAAM>.*/
 @26 = ~Aribeth ne l'apprécie pas, ça j'en suis sûre. Il a la langue acérée et le visage sévère mais je crois que ce n'est pas tout. Ce n'est pas à moi de parler de ces choses.~
 @27 = ~Allez, il n'y a pas de mal à me le dire.~ 
 @28 = ~Dame Aribeth ne cesse de répéter à Fenthick de ne pas trop avoir foi en Desther et en ses fidèles de Heaum. Vous savez qu'ils sont amants ? Je parle de Fenthick et d'Aribeth. Bien entendu, vous le savez. Tout le monde le sait.~

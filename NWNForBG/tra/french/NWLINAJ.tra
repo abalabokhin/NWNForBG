@@ -23,7 +23,7 @@
 @22 = ~Je vous en prie, <CHARNAME>... je n'aurai pas dû aborder le sujet. Nous parlerons de ceci plus tard, mais pas maintenant.~
 @23 = ~J'ai toujours voulu être aventurière, <CHARNAME>. Je suis dotée d'une grande curiosité naturelle et je veux vivre tout ce dont j'ai entendu parler dans les livres. Mais je viens d'Evereska, demeure des philosophes, mages, érudits et étudiants en mystères. Les âmes aventureuses y sont rares, et souvent méprisées. Sauf une.~ 
 @24 = ~Oh ? Qui ça ?~
-@25 = ~I see. We'll talk another time.~ /*Insérer D'accord, une autre fois.*/
+@25 = ~Je vois. Nous en parlerons une autre fois.~ /*Insérer D'accord, une autre fois.*/
 @26 = ~Eh bien, cela fait longtemps qu'on ne m'avait plus posé cette question. J'ai rejoint Sehanine Lunarc alors que j'étais très jeune, ce qui est pour le moins inhabituel, compte tenu du fait que mes parents étaient tous deux mages et disciples de Corellon. Tout a commencé quand je suis allée à l'école pour "Surdoués" de Gaedolin Sentristi. Mes deux parents étaient passionnés de mystères, et très respectés. On supposait que je succèderais à mes parents dans les arts magiques.~ 
 @27 = ~Que sont les "Surdoués" ?~
 @28 = ~Mais vous n'avez pas fait comme eux ?~
@@ -85,7 +85,7 @@
 @84 = ~Bien. Je vous paie pour me sauver la vie, pas pour vous inquiéter pour une quête à la noix.~
 @85 = ~Je... euh, non, c'est plus facile à accepter comme ça. Et si je ne suis pas futée, au moins je ne suis pas un RUSTRE !~
 @86 = ~Non, vous ne comprenez pas. Personne ne comprendra. Je serai rejetée toute ma vie !~
-@87 = ~As you command, <SIRMAAM>.~/*A vos ordres, <SIRMAAM>.*/
+@87 = ~À vos ordres, <SIRMAAM>.~/*A vos ordres, <SIRMAAM>.*/
 @88 = ~Il était bien sûr innocent. Je suis toujours choquée de voir que les gens peuvent se montrer aussi injustes.~
 @89 = ~Comment avez-vous appris tout cela ?~
 @90 = ~On dirait qu'il avait autant de chance que vous.~
@@ -106,7 +106,7 @@
 @105 = ~Autant l'oublier, alors. Il a dû le vendre, vous ne le reverrez jamais.~
 @106 = ~C'est gentil à vous, <CHARNAME>, merci. C'est là la réponse d'un véritable ami.~
 @107 = ~Je sais que je ne retrouverai probablement jamais le calice, <CHARNAME>, mais je n'abandonnerai jamais. Je dois le ramener aux miens pour laver mon honneur.~
-@108 = ~You have proven this day that you are a true friend to the elven people. I am proud to be able to call you my friend, <CHARNAME>.~/*Vous avez prouvé aujourd'hui que vous êtes un véritable ami des elfes. Ce pendentif ne fonctionne que pour ceux qui font preuve d'une telle valeur. Je suis fière d'être votre amie, <CHARNAME>.*/
+@108 = ~Vous avez prouvé aujourd'hui que vous étiez un véritable ami du peuple elfe. Je suis fière de pouvoir vous compter parmi mes amis, <CHARNAME>.~/*Vous avez prouvé aujourd'hui que vous êtes un véritable ami des elfes. Ce pendentif ne fonctionne que pour ceux qui font preuve d'une telle valeur. Je suis fière d'être votre amie, <CHARNAME>.*/
 @109 = ~Merci, Linu.~
 @110 = ~C'est tout ? Un pendentif ?~
 @111 = ~Grâce à vous, <CHARNAME>, je peux ramener le calice à sa place. Je le protégerai de ma vie jusqu'à ce que je puisse me rendre à Evereska. Jusque là, je resterai à vos côtés et vous aiderai à accomplir ce que vous voulez. Encore merci, mon ami.~ 
@@ -144,12 +144,12 @@
 @143 = ~Pardonnez-moi, <CHARNAME>, mais je ne peux plus en parler. Nous ne nous connaissons pas bien, et je ne peux pas partager mon souvenir le plus honteux avec un étranger.~
 @144 = ~Nous ne deviendrons peut-être pas les meilleurs amis. Je ne me laisserai plus distraire de notre mission. Allons-y.~
 @145 = ~Dites-moi, la vie d'aventurière vous convient ?~
-@146 = ~Tell me more about how you met Synth.~ /*Dites-moi encore comment vous pouvez m'aider.*/
+@146 = ~Racontez-moi plus en détail votre rencontre avec Synth.~ /*Dites-moi encore comment vous pouvez m'aider.*/
 @147 = ~J'aimerais que vous me parliez un peu plus de vous, Linu.~
 @148 = ~J'ai une graine étrange, ici. C'est ce que vous cherchez ?~
 @149 = ~Qu'est-ce qui vous a décidé à devenir prêtresse ?~
 @150 = ~Je souhaiterais que vous poursuiviez votre histoire.~
-@151 = ~You have been a true friend to me, <CHARNAME>. Perhaps you can help me with this as well. Synth retired from his adventuring life, for a couple of years. Then one day he came home with news that he had discovered the location of an ancient city. I knew as soon as he uttered those words that he would be off on another of his grand adventures. I wanted to go with him, but I was involved in preparing a special celebration for the temple.~ /*Vos pouvoirs m'ont sauvé, <CHARNAME>. Peut-être pourriez-vous m'offrir quelques renseignements ? Synth se retira pendant quelques années de sa vie d'aventure. Puis il rentra un jour  à la maison en disant qu'il avait découvert l'emplacement d'une ancienne ville. Je sus dès qu'il eut dit cela qu'il allait repartir pour une de ses grandes aventures. Je voulais l'accompagner, mais j'étais en pleins préparatifs d'une grande fête pour le temple.*/
+@151 = ~Vous avez été un véritable ami pour moi, <CHARNAME>. Peut-être pourrez-vous aussi m'aider dans cette affaire. Synth avait quitté la vie d'aventurier depuis quelques années. Puis, un jour, il est rentré en m'annonçant qu'il avait découvert l'emplacement d'une cité antique. Dès qu'il a prononcé ces mots, j'ai su qu'il repartirait pour une de ses grandes aventures. Je voulais l'accompagner, mais je participais aux préparatifs d'une fête particulière au temple.~ /*Vos pouvoirs m'ont sauvé, <CHARNAME>. Peut-être pourriez-vous m'offrir quelques renseignements ? Synth se retira pendant quelques années de sa vie d'aventure. Puis il rentra un jour  à la maison en disant qu'il avait découvert l'emplacement d'une ancienne ville. Je sus dès qu'il eut dit cela qu'il allait repartir pour une de ses grandes aventures. Je voulais l'accompagner, mais j'étais en pleins préparatifs d'une grande fête pour le temple.*/
 @152 = ~Il ne vous a pas attendue ?~
 @153 = ~Et alors ? Ils ne pouvaient pas le faire sans vous ?~
 @154 = ~Nous devons d'abord retrouver la secte et faire en sorte que justice soit rendue, <CHARNAME>. Alors, et alors seulement, je pourrai reprendre ma quête. Je suis sûre que le journal existe encore, et que je le trouverai un jour ou l'autre.~ 
@@ -173,10 +173,10 @@
 @172 = ~Assez de jérémiades, Linu. Il est mort depuis longtemps, oubliez-le.~
 @173 = ~Cher <CHARNAME>, je sais qu'à vos côtés, tout devient possible.~
 @174 = ~Je n'ai rien laissé d'autre m'arrêter, je ne changerai pas. Inutile de me le rappeler.~
-@175 = ~I... I wish that I could believe... I don't know what I wish. I just need some time... but thank you for your words. You have proven to be a true friend once again. My heart will heal, in time. I must tell you something. Take this Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.~/*Oh ! <CHARNAME> ! Je... J'aimerais pouvoir croire... en fait, je ne sais même plus ce que j'aimerais. J'ai juste besoin d'un peu de temps... mais merci pour ces paroles réconfortantes. J'ai de nouveau parlé à Szaren. J'ai ici quelque chose qui pourrait vous servir. Voici le Pendentif de l'elfe. Il a le pouvoir de renforcer certaines de vos capacités grâce à celles de vos ancêtres elfes.*/
-@176 = ~I... I wish that I could believe... I don't know what I wish. I just need some time... but thank you for your words. You have proven to be a true friend once again. My heart will heal, in time. I must tell you something. As our friendship grows, so will the power of the pendant I gave you. I think that you shall find it is stronger now than it was before.~/*Oh ! <CHARNAME> ! Je... J'aimerais pouvoir croire... en fait, je ne sais même plus ce que j'aimerais. J'ai juste besoin d'un peu de temps... mais merci pour ces paroles réconfortantes. Merci, <CHARNAME> - à nouveau, vous êtes le meilleur des amis. Mon coeur guérira, avec le temps. Je dois vous dire quelque chose. A mesure que grandit notre amitié, le pouvoir du pendentif fait de même. Je pense qu'il est plus puissant à présent qu'auparavant.*/
+@175 = ~Je... j'aimerais pouvoir croire... Je ne sais pas ce que je souhaite. Il me faut juste un peu de temps... mais merci pour vos paroles. Vous avez encore prouvé que vous étiez un véritable ami. Mon cœur guérira avec le temps. Il y a autre chose. Prenez ce pendentif de l'elfe. Il renforcera certaines de vos aptitudes grâce au pouvoir des ancêtres elfes.~/*Oh ! <CHARNAME> ! Je... J'aimerais pouvoir croire... en fait, je ne sais même plus ce que j'aimerais. J'ai juste besoin d'un peu de temps... mais merci pour ces paroles réconfortantes. J'ai de nouveau parlé à Szaren. J'ai ici quelque chose qui pourrait vous servir. Voici le Pendentif de l'elfe. Il a le pouvoir de renforcer certaines de vos capacités grâce à celles de vos ancêtres elfes.*/
+@176 = ~Je... j'aimerais pouvoir croire... Je ne sais pas ce que je souhaite. Il me faut juste un peu de temps... mais merci pour vos paroles. Vous avez encore prouvé que vous étiez un véritable ami. Mon cœur guérira avec le temps. Il y a autre chose. À mesure que notre amitié grandira, le pouvoir du pendentif que je vous ai donné se renforcera. Vous devriez le trouver plus puissant qu'auparavant.~/*Oh ! <CHARNAME> ! Je... J'aimerais pouvoir croire... en fait, je ne sais même plus ce que j'aimerais. J'ai juste besoin d'un peu de temps... mais merci pour ces paroles réconfortantes. Merci, <CHARNAME> - à nouveau, vous êtes le meilleur des amis. Mon coeur guérira, avec le temps. Je dois vous dire quelque chose. A mesure que grandit notre amitié, le pouvoir du pendentif fait de même. Je pense qu'il est plus puissant à présent qu'auparavant.*/
 @177 = ~Oh, <CHARNAME>, pourquoi tant de cruauté ? Pensez-vous que l'amour s'oublie si facilement ? Enfin, vous m'avez aidée à trouver le journal. Les actions valent plus que les mots. C'est en eux que je verrai le vrai signe de votre amitié. A mesure que grandit notre amitié, le pouvoir du pendentif fait de même. Je pense qu'il est plus puissant à présent qu'auparavant.~ 
-@178 = ~Oh, <CHARNAME>, how can you be so cruel? Do you expect that love is so easily forgotten? Still, you helped me find the journal. Deeds speak louder than words. I shall count this a truer sign of your friendship than your words. Take this Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.~/*Oh, <CHARNAME>, pourquoi tant de cruauté ? Pensez-vous que l'amour s'oublie si facilement ? Enfin, vous m'avez aidée à trouver le journal. Les actions valent plus que les mots. C'est en eux que je verrai le vrai signe de votre amitié. Pendentif de l'elfe +1 Alors, repartons au devant de notre destin avec le courage de nos ancêtres.*/
+@178 = ~Oh, <CHARNAME>, comment pouvez-vous être aussi cruel ? Vous croyez que l'amour s'oublie si facilement ? Pourtant, vous m'avez aidée à retrouver le journal. Les actes comptent davantage que les mots. J'y verrai un signe de votre amitié plus sincère que vos paroles. Prenez ce pendentif de l'elfe. Il renforcera certaines de vos aptitudes grâce au pouvoir des ancêtres elfes.~/*Oh, <CHARNAME>, pourquoi tant de cruauté ? Pensez-vous que l'amour s'oublie si facilement ? Enfin, vous m'avez aidée à trouver le journal. Les actions valent plus que les mots. C'est en eux que je verrai le vrai signe de votre amitié. Pendentif de l'elfe +1 Alors, repartons au devant de notre destin avec le courage de nos ancêtres.*/
 @179 = ~Il commença sa sérénade, mais je me réveillai en sursaut et ouvris la bouche pour hurler. Il s'approcha pour me calmer, mais je ne l'avais pas reconnu, et je lui décochai un coup de pied à la mâchoire. Il fit quelques pas en arrière, jusqu'au balcon. Je me levai pour continuer mon attaque, mais en arrivant au balcon, je vis son visage au clair de lune. Il se tenait la mâchoire, le visage tordu de douleur.~ 
 @180 = ~Vous lui aviez cassé la mâchoire ?~
 @181 = ~Rappelez-moi de ne jamais vous réveiller en douceur dans la nuit.~
@@ -204,7 +204,7 @@
 @203 = ~C'est... c'est cruel de dire ça. Votre coeur est dur comme pierre. Je vous ai traité en ami ; vous feriez bien d'apprendre la leçon.~
 @204 = ~J'imagine que vous ne cesserez de m'interroger tant que je ne vous aurai pas raconté l'incident qui m'a incité à rejoindre les rangs de la prêtrise de Sehanine. Mais je vous préviens, cette histoire est difficilement supportable.~
 @205 = ~Je vous écoute.~
-@206 = ~We'll speak another time.~/*D'accord, une autre fois.*/
+@206 = ~Nous en parlerons une autre fois.~/*D'accord, une autre fois.*/
 @207 = ~Vous êtes mon meilleur ami, <CHARNAME>. Je sais que nous devons oeuvrer ensemble pour mener toutes nos quêtes à bien. Je vous ai dit que j'ai entendu Séhanine Lunarc parler avec le grand prêtre de son ordre. Ces paroles ne m'ont plus jamais quittée depuis lors.~ 
 @208 = ~Répétez-les moi.~
 @209 = ~J'ai changé d'avis. Je ne veux rien savoir.~
@@ -229,7 +229,7 @@
 @228 = ~Les deux, je pense.~
 @229 = ~Maudite.~
 @230 = ~Il y avait un gros trucs gris et visqueux qui me regardait avec vingt grands yeux. J'ai gémi, je m'en souviens. Et la chose s'est mise à bouger. Je ne pense pas avoir vu quoi que ce soit d'aussi rapide de ma vie. J'ai crié quand il m'a attaqué, et j'ai continué de crier quand un éclair bleu lui a traversé le corps, quelques secondes avant qu'il m'atteigne.~ 
-@231 = ~I... I... well, thank you. I don't know if I'm ready for a deeper relationship, but I value your good opinion.~ /*<CHARNAME> ! Je... merci. Je ne sais pas si je suis prête pour une relation plus profonde, mais j'apprécie votre gentillesse.*/
+@231 = ~Je... je... eh bien, merci. Je ne sais pas si je suis prête pour une relation plus intime, mais votre estime me touche.~ /*<CHARNAME> ! Je... merci. Je ne sais pas si je suis prête pour une relation plus profonde, mais j'apprécie votre gentillesse.*/
 @232 = ~Alors reprenons votre histoire.~
 @233 = ~Alors je ne veux plus écouter vos histoire pleurnichardes.~
 @234 = ~Ohh ! Relation plus profonde ? Ce n'était qu'un compliment.~
@@ -283,7 +283,7 @@
 @282 = ~Merci, mon bon <CHARNAME>. Vos paroles sont douces à mon coeur. Je n'ai pas eu de compagnon proche depuis la mort de mon mari. Vous comblez un gouffre que je croyais vide à jamais. Mais pour l'heure, concentrons-nous sur la quête des Mots de Pouvoir. Aarin Gend compte sur nous.~ 
 @283 = ~Votre père devait être tyrannique, n'est-ce pas ? J'imaginerai cela, pour pouvoir continuer à servir un être au coeur aussi froid.~
 @284 = ~Je pense que le pendentif que je vous ai donné est à présent plus fort que jamais.~
-@285 = ~Take this Pendant of the Elf. It has the power to enhance some of your abilities with those of the elven ancestors.~ /*Pendentif de l'elfe +1 Alors, repartons au devant de notre destin avec le courage de nos ancêtres.*/
+@285 = ~Prenez ce pendentif de l'elfe. Il renforcera certaines de vos aptitudes grâce au pouvoir des ancêtres elfes.~ /*Pendentif de l'elfe +1 Alors, repartons au devant de notre destin avec le courage de nos ancêtres.*/
 @286 = ~Cher <CHARNAME>, j'aimerais vous parler un instant.~ [NWLIN050]
 @287 = ~Oui Linu, que voulez-vous me dire ?~
 @288 = ~Je n'ai pas le temps, Linu.~
@@ -300,7 +300,7 @@
 @299 = ~Eh bien, j'ai besoin de toute l'inspiration possible. Sans vous, je serais encore piégée ou morte du fléau à Padhiver. Si je n'avais pas fini par faire brûler toute la ville avant, bien sûr. Je ne puis vous dire combien de cauchemars m'a inspiré cette bataille à venir, où je pourrais glisser dans du sang et vous précipiter dans un abîme sans fond.~ 
 @300 = ~Très bien, <CHARNAME>. Je ne vous ferai plus perdre de temps avec mes idées idiotes. A présent, allons leur montrer de quoi sont faites les légendes ! Sus aux écailleux !~ 
 @301 = ~Ou bien je commencerais à lancer un sort de soin, le raterais et vous écorcherais vif. Ou bien je m'appuierais contre un grand rocher qui vous écraserait juste avant que vous puissiez tuer Morag.~
-@302 = ~Maybe it's just your lack of self-confidence.~/*Moi plutôt revenir à autres questions.*/
+@302 = ~Peut-être manquez-vous simplement de confiance en vous.~/*Moi plutôt revenir à autres questions.*/
 @303 = ~Bien, Linu, j'ai compris.~
 @304 = ~J'ai appris par votre expérience et votre compétence, et je crois vraiment que, quoi qu'il arrive, je suis plus forte et meilleure qu'à notre première rencontre. Je sais que je peux avoir toute la grâce et l'élégance de mes ancêtres elfes. Je dois juste croire en moi-même. C'est une leçon que je n'aurais pas apprise sans vous, <CHARNAME>.~ 
 @305 = ~Assez de paroles, nous devons y aller.~

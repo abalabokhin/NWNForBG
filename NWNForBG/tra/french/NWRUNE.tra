@@ -1,4 +1,4 @@
-@0 = ~This ancient structure is weathered with age and covered with moss and small vines... there is no telling how long it has been standing here. Of particular interest are the large runes that seem to cover most of its surface, in no language you recognize.~/*Ce pilier est lustré par l'âge et couvert de mousse et de petites lianes. Nul ne pourrait dire depuis combien de temps il se dresse ici. Les grandes runes qui semblent couvrir presque toute sa surface sont intéressantes : leur langage vous est inconnu.*/
+@0 = ~Cette antique structure est usée par les âges et couverte de mousse et de petites lianes... impossible de savoir depuis combien de temps elle se dresse ici. Les grandes runes qui semblent recouvrir la majeure partie de sa surface sont particulièrement intéressantes : elles appartiennent à une langue qui vous est inconnue.~/*Ce pilier est lustré par l'âge et couvert de mousse et de petites lianes. Nul ne pourrait dire depuis combien de temps il se dresse ici. Les grandes runes qui semblent couvrir presque toute sa surface sont intéressantes : leur langage vous est inconnu.*/
 @1 = ~Sans moyen de traduire ces runes, toutefois, impossible de déterminer ce qu'elles disent ou le rôle du pilier. Son mystère reste entier.~
 @2 = ~Avec l'aide des notes du journal de l'explorateur, vous identifiez ces runes comme du Nétherisse ancien, et faites une traduction rapide. Les runes sont placées dans des creux... trois rangées de quatre runes. Appuyer sur une rune de chaque rangée donne une phrase de trois mots en Nétherisse... à l'effet inconnu.~ 
 @3 = ~Voulez-vous appuyer sur une rune de la première rangée ?~
@@ -18,6 +18,6 @@
 @17 = ~Appuyer sur la rune 'Commander'.~
 @18 = ~Appuyer sur la rune 'Détruire'.~
 @19 = ~Vous vous écartez du pilier, soudain conscient d'une impression diffuse mais maléfique.~
-@20 = ~As you press the last rune, an ominous sound is heard. Watch out...~/*Vous appuyez sur la dernière rune, et le pilier se met à vibrer... Attention !*/
-@21 = ~As you press the last rune, the ancient structure begins to hum...~
+@20 = ~Lorsque vous appuyez sur la dernière rune, un son sinistre retentit. Attention...~/*Vous appuyez sur la dernière rune, et le pilier se met à vibrer... Attention !*/
+@21 = ~Lorsque vous appuyez sur la dernière rune, l'antique structure se met à bourdonner...~
 /*Vous appuyez sur la dernière rune, et le pilier se met à vibrer...*/

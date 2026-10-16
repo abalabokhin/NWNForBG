@@ -1,13 +1,13 @@
 @0 = ~Je vous prie de me laisser, monsieur. Je n'ai rien à dire et pas davantage que l'on puisse me voler, je vous l'assure.~ [NWLOND54]
 @1 = ~Qui êtes-vous ?~
 @2 = ~J'ai quelques questions.~
-@3 = ~What happened to you?~/*Que leur est-il arrivé ?*/
+@3 = ~Que vous est-il arrivé ?~/*Que leur est-il arrivé ?*/
 @4 = ~Très bien, j'y vais.~
 @5 = ~Je suis... ou plutôt j'étais... la comtesse Londa Neigeblanche. Mais cela ne signifie plus rien. Je ne suis plus que... Londa.~
 @6 = ~Que s'est-il passé ?~
 @7 = ~Oh, la pauvre petite fille riche a perdu tout son or ?~
 @8 = ~Vous avez perdu votre titre ? Il n'y a pas que ça dans la vie...~
-@9 = ~Did you not hear me? I wish to be left alone, <SIRMAAM>. Please respect that.~/*N'avez-vous pas entendu ? Je veux qu'on me laisse seule, <SIRMAAM>. Respectez au moins cela.*/
+@9 = ~Vous ne m'avez pas entendu ? Je veux qu'on me laisse seule, <SIRMAAM>. Respectez au moins cela.~/*N'avez-vous pas entendu ? Je veux qu'on me laisse seule, <SIRMAAM>. Respectez au moins cela.*/
 @10 = ~Dites-moi au moins qui vous êtes, alors.~
 @11 = ~Pourquoi ? Qu'est-ce qui ne va pas ?~
 @12 = ~Je vois. Vous êtes trop bien pour me parler, c'est ça ?~
@@ -40,7 +40,7 @@
 @39 = ~Savez-vous où vos enfants pourraient se trouver ?~
 @40 = ~Pour quelle raison Baram s'est-il emparé de vos enfants ?~
 @41 = ~Baram a-t-il des ennemis ?~
-@42 = ~I do not have any questions.~ /*Je n'ai pas d'autres questions.*/
+@42 = ~Je n'ai pas de questions.~ /*Je n'ai pas d'autres questions.*/
 @43 = ~Je... je vois. Dans ce cas, laissez-moi.~
 @44 = ~Il avait autrefois un repaire dans les bas quartiers, mais il a été incendié voilà plus d'un mois. J'ignore où il se cache, désormais. On raconte qu'il vit dans les égouts, mais j'espère que ce n'est pas vrai...~ 
 @45 = ~Non. Je n'ai aucune nouvelle d'eux. Baram refuse de me dire quoi que ce soit. Si quelqu'un sait où ils sont, c'est lui.~
@@ -48,14 +48,14 @@
 @47 = ~Oui, les autres hauts capitaines, qu'il affronte depuis de longues semaines. Il ne reste plus que Kurth, mais nul ne sait où il se trouve. Kurth veut la mort de Baram, cela ne fait aucun doute.~
 @48 = ~Vous me redonnez l'espoir. Je... bonne chance !~
 
-@50 = ~You have heard my sorry tale, <SIRMAAM>. Is that not enough?~ [NWLOND52]/*Vous avez entendu ma triste histoire, <SIRMAAM>. Cela ne vous suffit pas ?*/
+@50 = ~Vous avez entendu ma triste histoire, <SIRMAAM>. Cela ne vous suffit-il pas ?~ [NWLOND52]/*Vous avez entendu ma triste histoire, <SIRMAAM>. Cela ne vous suffit pas ?*/
 @51 = ~Vous... revoilà. Avez-vous trouvé mes enfants ? Sont-ils sains et saufs ?~ [NWLOND51]
 @52 = ~J'ai parlé à Baram... Il dit que vos enfants vont bien.~
 @53 = ~Baram est revenu sur sa parole. Il refuse de relâcher vos enfants.~
 @54 = ~Vos enfants vont bien, Londa... mais je ne peux pas vous les amener.~
 @55 = ~Je suis désolé, Londa. Tous vos enfants sont morts...~
 @56 = ~Ils sont morts, en réalité. Baram et ses rats les ont dévorés.~
-@57 = ~So far there are no results.~/*Alors ce sont des pirates ?*/
+@57 = ~Je n'ai encore rien trouvé.~/*Alors ce sont des pirates ?*/
 @58 = ~C'est un grand soulagement... Quoique je continuerai à douter des paroles de cette... bête... tant que je n'aurai pas vu mes enfants de mes yeux. A votre avis, existe-t-il un moyen de secourir mes enfants ?~ 
 @59 = ~J'ai accepté de rendre un service à Baram en échange de leur libération.~
 @60 = ~Baram voulait que je tue Kurth en échange de leur libération, mais j'ai refusé.~
@@ -86,5 +86,5 @@
 @85 = ~Et vous ne l'aurez pas ! Je veux des preuves !~
 @86 = ~Vous donner or à moi ou vous rejoindre mari à vous !~
 @87 = ~Espèce de monstre ! Il n'y a donc que l'or de mon mari qui vous intéresse, n'est-ce pas ? Très bien, prenez la clé de sa salle au trésor ! Moi, je dois m'en aller... Excusez-moi...~ 
-@88 = ~For the sake of your gods, help. My children disappeared, Baram took them. Do you know anything about them?~
+@88 = ~Au nom de vos dieux, aidez-moi. Mes enfants ont disparu, Baram les a emmenés. Savez-vous quelque chose à leur sujet ?~
 /*Très bien ! Venez tous ici. J'ai trouvé ces bois magiques. Vous les connaissez ?*/

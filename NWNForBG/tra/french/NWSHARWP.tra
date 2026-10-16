@@ -1,10 +1,10 @@
-@0 = ~I... I don't think you're interested in doing good deeds at all, and I doubt I'd go with you again if you asked me to. I... I don't think we'll see each other again.~ [NWSHARB0]/*Non, je ne veux pas risquer ma peau pour si peu. Je ne vous aime pas beaucoup. Vous pouvez faire mieux ? ... Peut-être nous reverrons-nous un jour.*/
+@0 = ~Je... je crois que les bonnes actions ne vous intéressent absolument pas, et je ne vous accompagnerais sans doute plus, même si vous me le demandiez. Je... je ne pense pas que nous nous reverrons.~ [NWSHARB0]/*Non, je ne veux pas risquer ma peau pour si peu. Je ne vous aime pas beaucoup. Vous pouvez faire mieux ? ... Peut-être nous reverrons-nous un jour.*/
 @1 = ~Vraiment ? Hmph ! Si vous ne voulez pas de moi, ne comptez pas sur moi pour vous aider.~ [NWSHARB0]
 @2 = ~Oui. Partez.~
 @3 = ~Non. Restez avec moi.~
-@4 = ~Well, goodbye, then. Where can we meet if you change your mind?~/***soupir** Eh bien, au revoir. Peut-être qu'un peu d'or vous ferait changer d'avis ?*/
-@5 = ~Go back to the Trade of Blades.~/*Le Marché des Lames*/
-@6 = ~I'll find you at Kendrack's Barracks.~/*Quartiers du Bourgmestre Kendrack*/
+@4 = ~Eh bien, adieu. Où pourrons-nous nous retrouver si vous changez d'avis ?~/***soupir** Eh bien, au revoir. Peut-être qu'un peu d'or vous ferait changer d'avis ?*/
+@5 = ~Retournez au Marché des Lames.~/*Le Marché des Lames*/
+@6 = ~Je vous retrouverai à la caserne de Kendrack.~/*Quartiers du Bourgmestre Kendrack*/
 @7 = ~Attendez ici.~
 @8 = ~Très bien.~
 @9 = ~Je me doutais que je vous verrais bientôt arriver et je suis heureuse de ne pas m'être trompée. Alors, voulez-vous que nous fassions à nouveau équipe ?~ [NWSHAR60]
@@ -26,7 +26,7 @@
 @25 = ~Avez-vous des renseignements sur la secte derrière la Mort Hurlante ?~
 @26 = ~Un peu d'aide ne me ferait pas de mal.~
 @27 = ~Je n'ai besoin de rien pour l'instant.~
-@28 = ~The cult could be practically anywhere. You may want to look in the hills near the crossroads, right at the exit of the town... I've heard many tales of monsters raiding the roads nearby in force.~/*La secte pourrait être n'importe où. Allez toujours jeter un oeil dans les collines près de l'auberge du Griffon Vert... Il paraît que des monstres attaquent les voyageurs sur les routes alentour.*/
+@28 = ~Le culte pourrait se cacher à peu près n'importe où. Vous devriez peut-être fouiller les collines près du carrefour, juste à la sortie de la ville... J'ai entendu bien des récits d'attaques de monstres en grand nombre sur les routes voisines.~/*La secte pourrait être n'importe où. Allez toujours jeter un oeil dans les collines près de l'auberge du Griffon Vert... Il paraît que des monstres attaquent les voyageurs sur les routes alentour.*/
 @29 = ~Des monstres ?~
 @30 = ~Il est temps que vous y pensiez. Je suis à vos ordres, <CHARNAME>.~
 @31 = ~Des gobelours et des orques, surtout. Apparemment, ils seraient dirigés par des humains, ce qui est pour le moins étrange. Enfin, depuis que Luskan se regarde le nombril, la campagne est devenue un terrain de chasse ouvert à tous les bandits. Mais ces monstres sont plus organisés que de coutume.~ 
@@ -38,5 +38,5 @@
 @37 = ~Eh bien, soit j'aime m'ennuyer, soit mes instructions sont d'aider Aribeth et vous, et on ne m'a pas donné d'autre ordre pour l'instant. Qu'en pensez vous ? J'ai ce qu'il faut pour vous acompagner, <CHARNAME> ? Ce serait bien plus intéressant que de rester ici.~ 
 @38 = ~Un peu d'aide serait bienvenue. Ça marche.~
 @39 = ~Désolé, ça ne m'intéresse pas. Au revoir.~
-@40 = ~That's fine. I am at your disposal, then. I'll tag along as you need me, <CHARNAME>.~
+@40 = ~Très bien. Je suis donc à votre disposition. Je vous accompagnerai aussi longtemps que vous aurez besoin de moi, <CHARNAME>.~
 /*Excellent. Je suis à votre disposition. Avez-vous besoin d'autre chose, <CHARNAME> ?*/

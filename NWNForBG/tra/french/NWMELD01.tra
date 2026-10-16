@@ -1,4 +1,4 @@
-@0 = ~Sorry, <SIRMAAM>, but I can't let you in. My employer likes his privacy.~/*Désolé, <SIRMAAM>, mais je ne peux vous laisser entrer. Mon employeur tient à sa vie privée.*/
+@0 = ~Désolé, <SIRMAAM>, mais je ne peux pas vous laisser entrer. Mon employeur tient à sa tranquillité.~/*Désolé, <SIRMAAM>, mais je ne peux vous laisser entrer. Mon employeur tient à sa vie privée.*/
 @1 = ~Qui habite ici ?~
 @2 = ~Peut-être pourriez-vous m'arranger une entrevue avec le maître de maison ?~
 @3 = ~Très bien. Est-ce que je peux vous poser quelques questions, alors ?~
@@ -18,7 +18,7 @@
 @17 = ~J'ai DIT que je travaille pour Dame Aribeth. Vous encourez sa colère en m'arrêtant. Tant pis pour Meldanen, pensez à vous !~
 @18 = ~Dans ce cas, je vais devoir employer la manière forte. Meurs, idiot !~
 @19 = ~Ah ouais? Et si vous retourniez au château en espérant que j'oublie ce que vous venez de dire, petit <MANWOMAN> ?~
-@20 = ~I serve Lady Aribeth! You risk her wrath if you don't stand aside! Meldanen be damned, think of yourself!~/*J'ai DIT que je travaille pour Dame Aribeth. Vous encourez sa colère en m'arrêtant. Tant pis pour Meldanen, pensez à vous !*/
+@20 = ~Je sers dame Aribeth ! Vous risquez sa colère si vous ne vous écartez pas ! Au diable Meldanen, pensez à vous !~/*J'ai DIT que je travaille pour Dame Aribeth. Vous encourez sa colère en m'arrêtant. Tant pis pour Meldanen, pensez à vous !*/
 @21 = ~Bon vent.~
 @22 = ~Le Seigneur Meldanen habite ici. C'est un sorcier, alors on peut s'attendre à quelques choses... bizarres. A beaucoup de choses bizarres, même. Mais peu importe. Nous n'entrons pas dans la maison... Enfin, sauf Grommin, cet idiot... Alors, là-dedans, il peut faire autant de trucs étranges qu'il veut. À part ça, rien de préoccupant. Les gens du coin sont plutôt superstitieux, c'est tout.~ 
 @23 = ~Lord Meldanen possède un grand nombre de créatures étranges. C'est une sorte de passe-temps, chez lui. Il faudrait que vous soyez plus précis.~

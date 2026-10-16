@@ -31,7 +31,7 @@
 @30 = ~Que savez-vous du quartier de Lacnoir ?~
 @31 = ~Je cherche quelqu'un qui pourrait m'aider à accomplir ma mission.~
 @32 = ~Peu m'importe ce que vous pensez. J'ai survécu à pires railleries venant de personnes plus importantes, mon <LADYLORD>.~
-@33 = ~Thank you. You're not the typical sort of <MANWOMAN> yourself, are you?~/*Merci. Vous ne paraissez pas vraiment être un <MANWOMAN> ordinaire non plus...*/
+@33 = ~Merci. Vous aussi, vous sortez de l'ordinaire, n'est-ce pas ?~/*Merci. Vous ne paraissez pas vraiment être un <MANWOMAN> ordinaire non plus...*/
 @34 = ~Beaucoup. Il est presque plein à craquer de nobles riches et effrayés qui préféreraient murer le quartier et faire semblant de ne pas savoir que la ville existe plutôt que de donner un coup de main. Certains dans le quartier essaient de rallier les riches pour qu'ils aident le reste de la ville, mais ils s'époumonent en vain pour la plupart. Un jour, le fléau les atteindra de toute sa force, et ils regretteront leur égoïsme.~ 
 @35 = ~Autre chose que vous pourriez me dire sur Lacnoir ?~
 @36 = ~C'est ce que j'ai cru comprendre. Pourriez-vous éclairer ma lanterne pour ce qui est de la teneur de la mission en question ?~
@@ -43,11 +43,11 @@
 @42 = ~Ce que je sais, si vous voulez entrer à Lacnoir, c'est qu'il faudra utiliser le charme plus que le muscle. Ou peut-être amener une compagne qui connaît le terrain ?~
 @43 = ~En fait, je cherche quelqu'un pour m'aider dans ma mission.~
 @44 = ~Non merci. Au revoir.~
-@45 = ~My skills don't come cheaply, however. I'll follow you gladly and to the best of my ability, my <LADYLORD>... provided my price is met. Hmmm... What will be the price? Well, you seem to be a <MALEFEMALE> the kind of person who can be trusted. 750 gold and I'm yours.~/*Mes dons ne sont pas donnés. Je vous suivrai avec joie et vous aiderai de mon mieux, mon <LADYLORD>... si vous pouvez y mettre le prix. Hmm... Quel sera ce prix ? Eh bien, vous êtes un <MANWOMAN> bon, et un bon compagnon. Disons 150 pièces d'or ?*/
+@45 = ~Mes talents ne sont toutefois pas bon marché. Je vous suivrai volontiers et ferai de mon mieux, <LADYLORD>... à condition d'y mettre le prix. Hum... Combien demander ? Eh bien, vous m'avez l'air d'une personne de confiance. Pour 750 pièces d'or, je suis à vous.~/*Mes dons ne sont pas donnés. Je vous suivrai avec joie et vous aiderai de mon mieux, mon <LADYLORD>... si vous pouvez y mettre le prix. Hmm... Quel sera ce prix ? Eh bien, vous êtes un <MANWOMAN> bon, et un bon compagnon. Disons 150 pièces d'or ?*/
 @46 = ~Voici vos 150 pièces d'or. Bienvenue à bord, Sharwyn.~
 @47 = ~Ça me paraît un peu cher. Je vous en propose 100.~
 @48 = ~Je n'ai pas tout cet or pour engager un compagnons d'armes.~
-@49 = ~Fair enough, my <LADYLORD>. I am at your disposal.~/*Très bien, mon <LADYLORD>. Je suis à vos ordres.*/
+@49 = ~Très bien, <LADYLORD>. Je suis à votre disposition.~/*Très bien, mon <LADYLORD>. Je suis à vos ordres.*/
 @50 = ~D'accord. J'imagine qu'un peu d'or n'est pas primordial. Je suis à vos ordres, mon <LADYLORD>.~
 @51 = ~Je ne suis pas une caisse de sel que l'on marchande. 150 ou rien.~
 @52 = ~Vous vouliez me faire travailler gratuitement ? Soyons réalistes. Revenez quand vous aurez plus à m'offrir que des promesses, entendu ?~
@@ -68,7 +68,7 @@
 @67 = ~Avez-vous des renseignements sur la secte derrière la Mort Hurlante ?~
 @68 = ~Un peu d'aide ne me ferait pas de mal.~
 @69 = ~Je n'ai besoin de rien pour l'instant.~
-@70 = ~The cult could be practically anywhere. You may want to look in the hills near the crossroads, right at the exit of the town... I've heard many tales of monsters raiding the roads nearby in force.~/*La secte pourrait être n'importe où. Allez toujours jeter un oeil dans les collines près de l'auberge du Griffon Vert... Il paraît que des monstres attaquent les voyageurs sur les routes alentour.*/
+@70 = ~Le culte pourrait se cacher à peu près n'importe où. Vous devriez peut-être fouiller les collines près du carrefour, juste à la sortie de la ville... J'ai entendu bien des récits d'attaques de monstres en grand nombre sur les routes voisines.~/*La secte pourrait être n'importe où. Allez toujours jeter un oeil dans les collines près de l'auberge du Griffon Vert... Il paraît que des monstres attaquent les voyageurs sur les routes alentour.*/
 @71 = ~Des monstres ?~
 @72 = ~Il est temps que vous y pensiez. Je suis à vos ordres, <CHARNAME>.~
 @73 = ~Des gobelours et des orques, surtout. Apparemment, ils seraient dirigés par des humains, ce qui est pour le moins étrange. Enfin, depuis que Luskan se regarde le nombril, la campagne est devenue un terrain de chasse ouvert à tous les bandits. Mais ces monstres sont plus organisés que de coutume.~ 
@@ -80,7 +80,7 @@
 @79 = ~Eh bien, soit j'aime m'ennuyer, soit mes instructions sont d'aider Aribeth et vous, et on ne m'a pas donné d'autre ordre pour l'instant. Qu'en pensez vous ? J'ai ce qu'il faut pour vous acompagner, <CHARNAME> ? Ce serait bien plus intéressant que de rester ici.~ 
 @80 = ~Un peu d'aide serait bienvenue. Ça marche.~
 @81 = ~Désolé, ça ne m'intéresse pas. Au revoir.~
-@82 = ~Excellent. I am at your disposal, then. I'll tag along as you need me, <CHARNAME>.~/*Excellent. Je suis à votre disposition. Avez-vous besoin d'autre chose, <CHARNAME> ?*/
+@82 = ~Excellent. Je suis donc à votre disposition. Je vous accompagnerai aussi longtemps que vous aurez besoin de moi, <CHARNAME>.~/*Excellent. Je suis à votre disposition. Avez-vous besoin d'autre chose, <CHARNAME> ?*/
 @83 = ~Bon, bon, bon... vous devez être la personne dont j'ai entendu parler ? La personne qui est venue sauver Padhiver ? J'ai entendu une ou deux ballades que l'on a écrites sur vous.~ [NWSHAR54]
 @84 = ~Eh bien, je n'ai pas agi seul.~
 @85 = ~C'est moi, oui.~

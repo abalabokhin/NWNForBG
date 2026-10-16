@@ -1,13 +1,13 @@
-@0 = ~Ugh! I'm fed up with your virtue! You're a pathetic parody of a friend. If we meet again, believe me, it will be in a fight!~ /*Rhaaa ! Je suis ici pour vous tuer, Dragon! Vermine pathétique ! Au plaisir de ne pas vous revoir de sitôt.*/
+@0 = ~Pouah ! J'en ai assez de votre vertu ! Vous faites un bien pitoyable ami. Si nous nous revoyons, croyez-moi, ce sera pour nous battre !~ /*Rhaaa ! Je suis ici pour vous tuer, Dragon! Vermine pathétique ! Au plaisir de ne pas vous revoir de sitôt.*/
 @1 = ~Ensemble, nous pouvons semer la mort et la destruction dans tout le Nord. Pourquoi vouloir mettre un terme à notre association et priver le Seigneur Silencieux de ce qui lui revient de droit ?~ [NWGRIMBD]
 @2 = ~Vous êtes un homme malfaisant, Rongemort. Bien trop à mon goût.~ 
 @3 = ~Je crois qu'il est temps que nous nous séparions, c'est tout.~
 @4 = ~J'ai changé d'avis. Restez avec moi et nous sèmerons la mort d'un bout à l'autre du pays.~ 
 @5 = ~Je ne suis qu'un agent de la mort, <CHARNAME>, tout comme vous. Nous servons tous deux le Seigneur Silencieux à notre manière, même si vous refusez de le reconnaître. Qu'il en soit ainsi. Je vais retourner à l'enclave des mercenaires. D'autres que vous nagent dans un océan de sang ; nul doute que je pourrai me joindre à eux. Peut-être moi rencontrer patron ?~ 
-@6 = ~Go back to the Trade of Blades.~/*Le Marché des Lames*/
-@7 = ~I'll find you at Kendrack's Barracks.~ /*Quartiers du Bourgmestre Kendrack*/
+@6 = ~Retournez au Marché des Lames.~/*Le Marché des Lames*/
+@7 = ~Je vous retrouverai à la caserne de Kendrack.~ /*Quartiers du Bourgmestre Kendrack*/
 @8 = ~Attendez ici.~ 
-@9 = ~We part now, but you are destined to swim in an ocean of blood. Our fates are intertwined, and I shall wait here for your inevitable return so we may once more join together to perform the will of the Silent Lord. Where can we meet if you change your mind?~ /*Qu'il en soit ainsi. Je vais retourner à l'enclave des mercenaires. D'autres que vous nagent dans un océan de sang ; nul doute que je pourrai me joindre à eux. Peut-être qu'un peu d'or vous ferait changer d'avis ?*/
+@9 = ~Nous nous séparons, mais votre destin est de nager dans un océan de sang. Nos destinées sont liées, et j'attendrai ici votre inévitable retour pour que nous accomplissions à nouveau ensemble la volonté du Seigneur Silencieux. Où pourrons-nous nous retrouver si vous changez d'avis ?~ /*Qu'il en soit ainsi. Je vais retourner à l'enclave des mercenaires. D'autres que vous nagent dans un océan de sang ; nul doute que je pourrai me joindre à eux. Peut-être qu'un peu d'or vous ferait changer d'avis ?*/
 @10 = ~Bien dit, <CHARNAME> ! Je frémis d'aise à l'idée du carnage que nous allons causer dans les Royaumes !~
 @11 = ~Je vous attendais ; je me doutais que vous reviendriez. Souhaitez-vous que je me joigne de nouveau à vous ?~ [NWGRIM60]
 @12 = ~Ouaip.~
@@ -26,7 +26,7 @@
 @25 = ~Combien vos services me coûteraient-ils ?~
 @26 = ~Quand Aribeth a recruté les mercenaires, nous avons tous été payés, et bien payés, en avance. Le Seigneur Nasher ne recule devant aucune dépense pour retrouver la secte. Nos instructions étaient de nous mettre à disposition de ceux qui auraient besoin de notre aide. Et à ce sujet, puis-je vous aider en quoi que ce soit ?~ 
 @27 = ~Avez-vous des renseignements sur la secte derrière la Mort Hurlante ?~
-@28 = ~I could use a priest.~ /*Une pause ne me ferait pas de mal.*/
+@28 = ~Un prêtre me serait utile.~ /*Une pause ne me ferait pas de mal.*/
 @29 = ~Je n'ai besoin de rien pour l'instant.~
 @30 = ~Leur base est bien cachée. Toutefois, je ne serais pas surpris qu'ils soient liés au village de Boisroussi.~
 @31 = ~Boisroussi ?~

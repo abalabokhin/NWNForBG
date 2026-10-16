@@ -15,7 +15,7 @@
 @14 = ~Très bien, arrêtons là les questions. Pensez-vous pouvoir sortir d'ici seul ?~
 @15 = ~Je ne sais pas, mais je vais essayer. J'imagine que si je me dépêche, je parviendrai à atteindre la porte principale. Je suppose qu'à l'heure qu'il est, la milice a fait encercler cet endroit.~ 
 @16 = ~Avant que vous partiez, certaines informations pourraient m'être utiles.~
-@17 = ~Yes, <SIRMAAM>! Wish me luck.~ /*Très bien, <SIRMAAM> ! Souhaitez-moi bonne chance.*/
+@17 = ~Oui, <SIRMAAM> ! Souhaitez-moi bonne chance.~ /*Très bien, <SIRMAAM> ! Souhaitez-moi bonne chance.*/
 @18 = ~Difficile à dire. Un après-midi, le surveillant en chef est descendu et a ouvert la porte menant aux Puits. Il est entré là et tous les prisonniers sont sortis. Les combats ont duré deux jours, mais tous les gardes sont maintenant capturés... ou pire.~ 
 @19 = ~Les Puits ? De quoi s'agit-il ?~
 @20 = ~Et le chef geôlier ?~

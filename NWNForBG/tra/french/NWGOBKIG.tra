@@ -8,7 +8,7 @@
 @7 = ~Savez-vous autre chose au sujet du maître ?~
 @8 = ~On dirait bien que les autres chefs seraient prêts à payer pour avoir *votre* tête...~
 @9 = ~Non, je préfère vous tuer.~ 
-@10 = ~Kill the <RACE> intruders!!*!~ [NWGKI053] /*Tuez les intrus !*/
+@10 = ~Tuer intrus <RACE> !!!~ [NWGKI053] /*Tuez les intrus !*/
 @11 = ~Ça bien. Gobelins attendre têtes de autres chefs. Planter sur des pieux et danser autour, ça oui, quand nous aura ! Ha ! Et après, nous oublier Dergiab.~
 
 @13 = ~Maître grand et fort. Grande magie. Trop fort pour nous...~
@@ -31,11 +31,11 @@
 @30 = ~Maintenant, vous amener nous une autre tête seulement et nous contents.~
 @31 = ~Ha ! Ha ! Orques  morts ! Gobelins contents. Voici récompense !~
 
-@33 = ~We waits eagerly for heads! You tough <RACE> friend, they stand no chance!~/*Nous attendre têtes avec impatience ! Peuple <RACE> être fort, eux aucune chance !*/
+@33 = ~Nous attendre têtes avec impatience ! Vous fort, ami <RACE>, eux aucune chance !~/*Nous attendre têtes avec impatience ! Peuple <RACE> être fort, eux aucune chance !*/
 @34 = ~Puissant est le maître. Grande magie, il possède. Fort et redoutable, il est. Trop fort pour nous, il est. Grand ogre, puissante magie. Lui battre même vous, puissant ami <RACE>.~ 
 @35 = ~Moi déjà dire nous pas savoir. Nous vouloir récupérer cavernes, vivre sans combattre tout le temps. Rester tranquilles, OK ? Nous pas vouloir combattre contre orques et gobelours, et pas vouloir que maître prendre meilleurs guerriers de nous.~ 
 @36 = ~Très heureux voir vous, nous sommes. Vous faire de gobelins seigneurs des cavernes ! Nous plus combattre avec orques et gobelours !~ [NWGKI052]
 @37 = ~Hé bien ! J'ai bien peur qu'il soit temps de vous tuer !~
 @38 = ~Alors, je vous laisse tout à votre joie.~
-@39 = ~Goblins wish the <RACE> friend goodness and stuff!~
+@39 = ~Gobelins souhaiter bonnes choses et tout à ami <RACE> !~
 /*Gobelins souhaiter bonne chance à représentant du peuple <RACE> !*/

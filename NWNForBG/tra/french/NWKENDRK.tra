@@ -17,7 +17,7 @@
 @16 = ~J'm'appelle Kendreck. Je suis l'maître de cette guilde, et aussi le bourgmestre de Port Llast, également connu sous le titre de Premier Capitaine. C'est quoi votre nom ?~
 @17 = ~Je m'appelle <CHARNAME>.~
 @18 = ~Ravi de faire votre connaissance. Je m'appelle <CHARNAME>.~
-@19 = ~My name means nothing. <CHARNAME> leads our group.~/*Moi besoin de rien. <CHARNAME> est trop loin.*/
+@19 = ~Mon nom ne vous dirait rien. <CHARNAME> dirige notre groupe.~/*Moi besoin de rien. <CHARNAME> est trop loin.*/
 @20 = ~Vous n'avez pas besoin de savoir qui je suis.~
 @21 = ~Oui, je crois me souvenir que la Dame m'a parlé de vous. D'ailleurs, elle prétend que vous êtes un véritable héros, ce qui me rend d'autant plus heureux de vous voir. J'ai un problème auquel un individu compétent dans votre genre pourrait trouver une solution... Bien entendu, il y a de l'or à la clef. Ça pourrait vous intéresser ?~  // V FEMININE
 @22 = ~Quel est le problème ?~
@@ -54,13 +54,13 @@
 @53 = ~Nan. Si vous en cherchez, allez faire un tour chez Haljal, à l'Enclume Fendue. Il aura sûrement tout c'qu'y vous faut.~
 @54 = ~Allez-y, j'vous écoute.~
 @55 = ~Ah oui ? Vous avez mis la main sur l'un des criminels ? Quelle oreille vous avez ?~
-@56 = ~I have Zor's ear.~ /*Je n'en ai aucune idée.*/
-@57 = ~I have the Stirge's ear.~ /*Celle de Stirge.*/
-@58 = ~I have Wyvern's ear.~ /*Celle de Wyvern.*/
-@59 = ~I have Delilah's Ear.~ /*Celle de Delilah.*/
+@56 = ~J'ai l'oreille de Zor.~ /*Je n'en ai aucune idée.*/
+@57 = ~J'ai l'oreille de Stirge.~ /*Celle de Stirge.*/
+@58 = ~J'ai l'oreille de Wyvern.~ /*Celle de Wyvern.*/
+@59 = ~J'ai l'oreille de Delilah.~ /*Celle de Delilah.*/
 @60 = ~Oups ! moi rien avoir.~
-@61 = ~Aye. 'Tis indeed the markings that the men of the Bulwark told me of. Congratulations, <GIRLBOY>, ye've done a service fer us all. So I'll be happy to offer the bounty. Come back when you find more of the bandits.~/*En effet, y s'agit bien d'la marque qu'les hommes d'la prison de Bulwark m'ont décrite. Bravo, mon gars, vous nous avez rendu un fier service. Je reviendrai pour la récompense. Je reviendrai quand j'en saurai plus sur la tribu de l'Élan.*/
-@62 = ~Well, I hope you'll find those bastards soon.~/*J'espère que la leçon portera ses fruits.*/
+@61 = ~Oui, ce sont bien les marques que les hommes du Rempart m'ont décrites. Félicitations, <GIRLBOY>, vous nous avez rendu service à tous. C'est donc avec plaisir que je vous verse la prime. Revenez quand vous aurez trouvé d'autres bandits.~/*En effet, y s'agit bien d'la marque qu'les hommes d'la prison de Bulwark m'ont décrite. Bravo, mon gars, vous nous avez rendu un fier service. Je reviendrai pour la récompense. Je reviendrai quand j'en saurai plus sur la tribu de l'Élan.*/
+@62 = ~J'espère que vous trouverez bientôt ces salauds.~/*J'espère que la leçon portera ses fruits.*/
 @63 = ~J'vous écoute. Que voulez-vous savoir ?~
 @64 = ~Que savez-vous du fléau de Padhiver ?~
 @65 = ~Avez-vous eu vent de choses bizarres dans les environs ?~
@@ -79,10 +79,10 @@
 @78 = ~Moi demander autre chose.~
 @79 = ~Oui. L'Auberge de l'Alliance est très bien. D'ailleurs, à cette époque de l'année, vous y ferez sans doute la connaissance d'autres aventuriers. Avez-vous besoin d'autre chose ?~ 
 @80 = ~Haljal, de l'Enclume Fendue, a certainement tout ce dont vous avez besoin, <GIRLBOY>. Avez-vous besoin d'autre chose ?~ 
-@81 = ~The only temple in town is Tyr's, <GIRLBOY> run by Father Neurik. Do ye need t' find something else?~/*Le seul temple de la ville est celui de Tyr, <GIRLBOY>. Vous y trouverez dame Aribeth ainsi que le père Neurik. Avez-vous besoin d'autre chose ?*/
-@82 = ~There be one off in the Neverwinter Wood, aye. Ye may wish to speak to Ballard about it... ye'll find him at his little grove northeast of the town walls. Do ye need t' find something else?~/*Oui, il se trouve pas loin, dans la forêt de Padhiver. Mais allez en parler à Ballard. Vous le trouverez dans son petit bosquet, juste en dehors de la ville. Avez-vous besoin d'autre chose ?*/
-@83 = ~I wish ye the best o' luck on yer quest, <GIRLBOY>.~/*Bonne chance dans votre quête, <GIRLBOY>.*/
-@84 = ~Aye, <GIRLBOY>? Something I can do for ye? Has ye business with the guild?~ [NWKEN057] /*Oui, <GIRLBOY> ? Y a-t-il quelque chose que je puisse faire pour vous ? Quelle affaire vous mène à la guilde ?*/
+@81 = ~Le seul temple de la ville est celui de Tyr, <GIRLBOY>. Le père Neurik s'en occupe. Vous cherchez autre chose ?~/*Le seul temple de la ville est celui de Tyr, <GIRLBOY>. Vous y trouverez dame Aribeth ainsi que le père Neurik. Avez-vous besoin d'autre chose ?*/
+@82 = ~Oui, il y en a un dans le bois de Padhiver. Vous devriez en parler à Ballard... Il est dans son petit bosquet, au nord-est des remparts. Vous cherchez autre chose ?~/*Oui, il se trouve pas loin, dans la forêt de Padhiver. Mais allez en parler à Ballard. Vous le trouverez dans son petit bosquet, juste en dehors de la ville. Avez-vous besoin d'autre chose ?*/
+@83 = ~Je vous souhaite bonne chance dans votre quête, <GIRLBOY>.~/*Bonne chance dans votre quête, <GIRLBOY>.*/
+@84 = ~Oui, <GIRLBOY> ? Puis-je faire quelque chose pour vous ? Vous avez affaire à la guilde ?~ [NWKEN057] /*Oui, <GIRLBOY> ? Y a-t-il quelque chose que je puisse faire pour vous ? Quelle affaire vous mène à la guilde ?*/
 @85 = ~C'est bon de vous revoir, <GIRLBOY>. Z'avez mis la main sur un de ces évadés ?~ [NWKEN058] 
 @86 = ~Par les dieux, vous êtes venu ! Pendant que vous vous trouviez à Port Llast, ce diable de demi-orque, Yesgar, a enlevé ma Shaldrissa ! Il a exigé une rançon et je l'ai payée ! Mais il ne me l'a pas rendue ! Je vous en prie... je vous en supplie... Ramenez-moi ma Shaldrissa ! Elle est mon seul enfant !~ [NWKEN055] 
 @87 = ~Pourquoi n'allez-vous pas la chercher avec vos hommes ?~
@@ -93,11 +93,11 @@
 @92 = ~Je... Je ne veux pas mettre en danger la vie de ma fille et, à dire vrai, je ne crois pas mes hommes capables de la ramener. Vous, en revanche, êtes un <MANWOMAN> très puissant qui a accompli tant de choses... Je peux vous faire confiance. Vous êtes peut-être son seul espoir !~
 @93 = ~Oui, je le sais. Les anciennes mines de Port Llast sont au nord d'la ville, près de l'auberge du Griffon Vert. C'est là qu'il la retient, j'en suis sûr. C'est un endroit dangereux et facile à défendre. C'est pour cela que je n'ose pas m'en approcher. J'espère que vous avez les compétences dont je manque.~ 
 @94 = ~La récompense ? Vous pourrez garder la rançon, s'il l'a. Mais ramenez ma fille saine et sauve, je vous en supplie !~
-@95 = ~Go to the old mines by the Green Griffon Inn to the north of town, then. Hurry, <GIRLBOY>, hurry! Oh yeah, I almost forgot, here be rest of the bounty for the ears.~
+@95 = ~Alors allez aux anciennes mines, près de l'auberge du Griffon vert, au nord de la ville. Vite, <GIRLBOY>, vite ! Oh, j'allais oublier : voici le reste de la prime pour les oreilles.~
 /*Alors, rejoignez les anciennes mines situées près de l'auberge du Griffon Vert, au nord de la ville. Elles sont fermées et vous aurez besoin de cette clef. Faites vite, mon <GIRLBOY>, faites vite !*/
 @97 = ~Je... je suppose que je ne peux pas vous le reprocher. C'est très dangereux. Voici le reste de la prime pour les oreilles. Je vous supplie de changer d'avis et de la retrouver. Shaldrissa est jeune et impétueuse... elle ne mérite pas un tel sort dans les mains d'un meurtrier.~ 
-@98 = ~You've changed your mind? Please, I beg of you... bring back my Shaldrissa! She's my only child!~/*J'ai changé d'avis. Veuillez vous regrouper près de moi, s'il vous plaît. Tenez, voici 50 pièces d'or.*/
-@99 = ~Then go to the old mines by the Green Griffon Inn to the north of town, then. Hurry, <GIRLBOY>, hurry!~/*Alors, rejoignez les anciennes mines situées près de l'auberge du Griffon Vert, au nord de la ville. Elles sont fermées et vous aurez besoin de cette clef. Faites vite, mon <GIRLBOY>, faites vite !*/
+@98 = ~Vous avez changé d'avis ? S'il vous plaît, je vous en supplie... ramenez ma Shaldrissa ! C'est mon seul enfant !~/*J'ai changé d'avis. Veuillez vous regrouper près de moi, s'il vous plaît. Tenez, voici 50 pièces d'or.*/
+@99 = ~Alors allez aux anciennes mines, près de l'auberge du Griffon vert, au nord de la ville. Vite, <GIRLBOY>, vite !~/*Alors, rejoignez les anciennes mines situées près de l'auberge du Griffon Vert, au nord de la ville. Elles sont fermées et vous aurez besoin de cette clef. Faites vite, mon <GIRLBOY>, faites vite !*/
 @100 = ~Alors, quelles sont les nouvelles ? Avez-vous retrouvé ma fille ? Est-elle sauve ?~ [NWKEN054]
 @101 = ~Rappelez-moi ce qui s'est passé.~
 @102 = ~Où puis-je la trouver ?~
@@ -110,11 +110,11 @@
 
 @110 = ~Par pitié, dépêchez-vous !~
 @111 = ~Dans ce cas, allez-vous-en. Abandonnez ma pauvre fille à son destin, sans coeur !~
-@112 = ~Leave me be, <GIRLBOY>. We have nothing to talk about.~ [NWKEN051] /*Laissez moi tranquille. Nous n'avons rien à nous dire.*/
+@112 = ~Laissez-moi, <GIRLBOY>. Nous n'avons rien à nous dire.~ [NWKEN051] /*Laissez moi tranquille. Nous n'avons rien à nous dire.*/
 @113 = ~Eloignez-vous de moi ! Certes, vous êtes héroïque, mais ma Shaldrissa est morte à cause de vous !~ [NWKEN052]
 @114 = ~Shaldrissa est saine et sauve ! Jamais je ne pourrai vous remercier comme vous le méritez ! Assurément,  la Dame ne s'était pas trompée sur votre héroïsme ! Elle est un peu secouée, mais à part ça elle va bien. Cela lui fera peut-être un peu oublier ses envies d'aventure, pas vrai ?~ [NWKEN053] 
 @115 = ~Tenez, voici la prime pour Yesgar. J'aurais aimé avoir davantage à vous offrir. Si vous trouvez la rançon, gardez-la, d'accord ? Et pour toutes les quêtes que pourra vous confier la Dame, je vous souhaite bonne chance.~ 
 
-@117 = ~I wish ye good luck, <GIRLBOY>. Hopefully ye finds what ye're searching for.~ [NWKEN050] /*Je vous souhaite bonne chance. Espérons que vous trouverez ce que vous chercher.*/
-@118 = ~You killed my daughter, you scoundrels! I'll take revenge!~
+@117 = ~Bonne chance, <GIRLBOY>. J'espère que vous trouverez ce que vous cherchez.~ [NWKEN050] /*Je vous souhaite bonne chance. Espérons que vous trouverez ce que vous chercher.*/
+@118 = ~Vous avez tué ma fille, misérables ! Je me vengerai !~
 /*Vous tuer elle ? Comment vous avoir pu ? Je vais partir.*/

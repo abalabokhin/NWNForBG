@@ -1,8 +1,8 @@
-@0 = ~Eh... your skin isn't green... you don't look much like one of those ugly trolls. What are you doing here?~ [NOBFE09] /*Euh... vous n'avez pas l'air d'être l'un de ces monstrueux trolls. Que faites-vous ici ?*/
+@0 = ~Euh... votre peau n'est pas verte... vous ne ressemblez pas vraiment à l'un de ces affreux trolls. Que faites-vous ici ?~ [NOBFE09] /*Euh... vous n'avez pas l'air d'être l'un de ces monstrueux trolls. Que faites-vous ici ?*/
 @1 = ~Je chasse les trolls et les ogres de ces cavernes. Qui êtes-vous, pourquoi êtes-vous là ?~
 @2 = ~Vous êtes la maman de Révat, n'est-ce pas ? Je suis ici pour vous sauver.~
 @3 = ~Tout va s'arranger, je suis ici pour vous sauver.~
-@4 = ~The trolls are gone, you are free to go, but not with me. You can leave on your own.~/*Vous êtes libre de partir mais pas avec moi. Débrouillez-vous toute seule.*/
+@4 = ~Les trolls sont partis, vous êtes libre de partir, mais pas avec moi. Vous pouvez rentrer seule.~/*Vous êtes libre de partir mais pas avec moi. Débrouillez-vous toute seule.*/
 @5 = ~Restez ici et ne bougez pas. Je reviens.~
 @6 = ~Je m'appelle Janis, j'étais prisonnière de ces monstres. Enfin, plus ou moins prisonnière.~
 @7 = ~Que voulez-vous dire par 'plus ou moins' prisonnière ?~
@@ -13,7 +13,7 @@
 @12 = ~Je crains que ce ne soit pas aussi simple. Et si je vous racontais toute l'histoire ? Ce serait peut-être plus simple. Vous voyez, je suis une magicienne assez réputée mais je suis également fascinée par l'archéologie. J'étais avec un groupe d'archéologues et nous explorions ces grottes. J'ai été attirée par un motif inhabituel sur l'une des parois et je me suis retrouvée séparée du reste du groupe. Ensuite, j'ai entendu les cris.~ 
 @13 = ~Les autres ont été attaqués par des trolls et des ogres, c'est ça ?~
 @14 = ~Qu'avez-vous fait ?~
-@15 = ~Are you telling me what to do? However, there is nothing else left for me.~ /*Est-ce que vous me dites vraiment tout ? Non, moi rien trouver autre.*/
+@15 = ~Vous êtes en train de me dire ce que je dois faire ? Enfin, il ne me reste pas vraiment d'autre choix.~ /*Est-ce que vous me dites vraiment tout ? Non, moi rien trouver autre.*/
 @16 = ~Et si je vous racontais toute l'histoire ? Ce serait peut-être plus simple. Vous voyez, je suis une magicienne assez réputée mais je suis également fascinée par l'archéologie. J'étais avec un groupe d'archéologues et nous explorions ces grottes. J'ai été attirée par un motif inhabituel sur l'une des parois et je me suis retrouvée séparée du reste du groupe. Ensuite, j'ai entendu les cris.~ 
 @17 = ~Vous n'êtes pas très futé, hein ? J'espère simplement que vous avez plus de manières que ces trolls baveux.~
 @18 = ~Etes-vous toujours aussi désagréable ?~
@@ -45,7 +45,7 @@
 @44 = ~Il faut que vous trouviez Révat. Il possède un anneau qui appartenait à son père. Cet anneau porte un sort d'annulation à usage unique. Je l'ai créé pour protéger Révat des lanceurs de sort qui auraient pu chercher à m'atteindre en s'en prenant à mon fils.~
 @45 = ~Où vais-je trouver votre fils ?~
 @46 = ~Je suis occupé pour l'instant, mais peut-être plus tard.~
-@47 = ~I lost the ring, wait here.~ /*Justement, il est en ma possession.*/
+@47 = ~J'ai perdu l'anneau. Attendez ici.~ /*Justement, il est en ma possession.*/
 @48 = ~J'ai l'air d'une grand-mère impotente ? Je suis une puissante magicienne : je peux rentrer seule, à présent que le sort est levé.~
 @49 = ~Vous me croyez sénile ? Bien sûr que la voie est libre. Je peux rentrer seule, je n'ai pas besoin qu'on me le dise.~
 @50 = ~Ma mort pèsera sur votre conscience. Vous m'avez condamnée.~
@@ -61,9 +61,9 @@
 @60 = ~Pourriez-vous me ré-expliquer ce qui vous est arrivé ?~
 @61 = ~Vous pouvez venir avec moi maintenant.~
 @62 = ~Vous ne méritez pas d'être secourue. Au revoir.~
-@63 = ~I'm afraid it's not that easy. I need you to find Revat. He has a ring that was his father's. The ring has a one-time cancellation spell on it. I created it to protect Revat from spellcasters who might seek to harm me by harming my child. Only with this ring will I be able to get out of the Otiluke's Resilient Sphere.~ /*Je crains que ce ne soit pas aussi simple. Il faut que vous trouviez Révat. Il possède un anneau qui appartenait à son père. Cet anneau porte un sort d'annulation à usage unique. Je l'ai créé pour protéger Révat des lanceurs de sort qui auraient pu chercher à m'atteindre en s'en prenant à mon fils. Non. Donnez-moi tout ce que vous avez ou la petite y passe...*/
-@64 = ~Talk to Revat, he will reward you for saving me. You be good. Come visit us in Waterdeep and I'll bake you some cookies.~ /*Merci de m'avoir sauvée. Vous êtes bon. Venez nous rendre visite à Eauprofonde et je vous préparerais des petits gâteaux.*/
-@65 = ~Well, thank you again for the assistance, try to stay safe. My son and I are going to Waterdeep.~/*Eh bien ! Encore merci pour votre aide, même si ce fut un peu laborieux. Soyez prudent.*/
-@66 = ~You came back in time, a little more and I would have died. Will you save me?~ /*Vous arrivez juste à temps. Que puis-je faire pour vous ? Aidez-moi !*/
-@67 = ~I wouldn't think of it.~ 
+@63 = ~Je crains que ce ne soit pas aussi simple. Il faut que vous trouviez Révat. Il possède un anneau qui appartenait à son père. Cet anneau porte un sort d'annulation à usage unique. Je l'ai créé pour protéger Révat des lanceurs de sorts qui chercheraient à m'atteindre en faisant du mal à mon enfant. Seul cet anneau me permettra de sortir de la Sphère résiliente d'Otiluke.~ /*Je crains que ce ne soit pas aussi simple. Il faut que vous trouviez Révat. Il possède un anneau qui appartenait à son père. Cet anneau porte un sort d'annulation à usage unique. Je l'ai créé pour protéger Révat des lanceurs de sort qui auraient pu chercher à m'atteindre en s'en prenant à mon fils. Non. Donnez-moi tout ce que vous avez ou la petite y passe...*/
+@64 = ~Parlez à Révat, il vous récompensera de m'avoir sauvée. Vous êtes quelqu'un de bien. Venez nous rendre visite à Eauprofonde et je vous préparerai des petits gâteaux.~ /*Merci de m'avoir sauvée. Vous êtes bon. Venez nous rendre visite à Eauprofonde et je vous préparerais des petits gâteaux.*/
+@65 = ~Eh bien, encore merci pour votre aide. Essayez de rester prudent. Mon fils et moi partons pour Eauprofonde.~/*Eh bien ! Encore merci pour votre aide, même si ce fut un peu laborieux. Soyez prudent.*/
+@66 = ~Vous êtes revenu à temps. Encore un peu et je serais morte. Allez-vous me sauver ?~ /*Vous arrivez juste à temps. Que puis-je faire pour vous ? Aidez-moi !*/
+@67 = ~Je n'y compte pas.~ 
 /*Je ne crois pas.*/

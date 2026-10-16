@@ -21,7 +21,7 @@
 @20 = ~Rien de spécial ne vous vient à l'esprit ?~
 @21 = ~J'aimerais trouver du travail, alors si avez des pistes...~
 @22 = ~Y a-t-il d'autres lieux de Lacnoir que je devrais visiter ?~
-@23 = ~I can show you the way out. (sigh) What were you looking for?~/*Je suis certaine que vous connaissez la sortie. Qu'est-ce que vous cherchez ?*/
+@23 = ~Je peux vous montrer la sortie. **soupir** Qu'est-ce que vous cherchiez ?~/*Je suis certaine que vous connaissez la sortie. Qu'est-ce que vous cherchez ?*/
 @24 = ~Où se trouve l'auberge la plus proche ?~
 @25 = ~Où se trouve le temple le plus proche ?~
 @26 = ~Y a-t-il un endroit où acheter de l'équipement ?~
@@ -40,11 +40,11 @@
 @39 = ~Non, pas vraiment. Il y a bien eu des histoires avec un mage nommé Meldanen, mais c'est réglé, maintenant. Le quartier est assez calme en ce moment. Y a-t-il quelque chose d'autre que vous vouliez savoir?~ 
 @40 = ~Il y avait quelque chose avec cette dénommée Formosa, mais je crois que ses affaires sont réglées, maintenant. Le quartier est plutôt calme.~
 @41 = ~Je ne sais pas. Peut être cette auberge, "A la Table Mise" ? Mais on m'a dit qu'elle jouit d'une fort mauvaise réputation. Y a-t-il quelque chose d'autre que vous vouliez savoir?~ 
-@42 = ~Hmph. Angling for an invitation, are we? Well you can't stay here. The Board Laid Bare in the center of the district is the nearest place.~/*Mmh. Est-ce une manière détournée de vous faire inviter ? Eh bien, vous ne pouvez pas rester ici. L'auberge "A la table mise", à la porte sud, est la plus proche.*/
+@42 = ~Hum. Vous cherchez à vous faire inviter, c'est ça ? Eh bien, vous ne pouvez pas rester ici. L'établissement le plus proche est la taverne À la Table Mise, au centre du quartier.~/*Mmh. Est-ce une manière détournée de vous faire inviter ? Eh bien, vous ne pouvez pas rester ici. L'auberge "A la table mise", à la porte sud, est la plus proche.*/
 @43 = ~Je crains qu'il n'y en ait pas dans les environs. Nous essayons de rassembler des fonds afin d'ériger un temple à Sunie... mais je suis sûre que ça ne vous intéresse pas. Autre chose ?~ 
-@44 = ~No. But you can buy equipment at the Board Laid Bare, I hear. It's in the center of the area.~/*Non. Mais j'ai entendu dire qu'il était possible d'en acheter à l'auberge "A la Table Mise". Elle se trouve près de la porte sud.*/
+@44 = ~Non. Mais il paraît que vous pouvez acheter de l'équipement À la Table Mise. L'établissement se trouve au centre du quartier.~/*Non. Mais j'ai entendu dire qu'il était possible d'en acheter à l'auberge "A la Table Mise". Elle se trouve près de la porte sud.*/
 @45 = ~Attendez... Si vous cherchez à savoir si j'ai de l'or à voler, la réponse est non. D'autres sont passés avant vous, alors dites ce que vous avez à dire puis partez.~
-@46 = ~Ah, I see. Well, it appears I have very little choice. Take what you must. Here is all my gold. Just get the hell out afterward.~/*Ah, je vois. Eh bien, il semble que je n'aie pas le choix. Prenez ce que vous voudrez. Mais ensuite, allez au diable.*/
+@46 = ~Ah, je vois. Eh bien, il semble que je n'aie guère le choix. Prenez ce qu'il vous faut. Voici tout mon or. Mais ensuite, fichez le camp.~/*Ah, je vois. Eh bien, il semble que je n'aie pas le choix. Prenez ce que vous voudrez. Mais ensuite, allez au diable.*/
 @47 = ~Très bien. Je n'ai toujours pas compris ce que vous avez en tête, mais je suis contente de vous voir partir.~
 @48 = ~Euh... peut-être, je n'en sais rien. Tireclair... c'est-à-dire, le Seigneur Montgomery... dirige le zoo et je n'ai pas entendu parler de lui depuis l'apparition du fléau. Vous devriez peut-être lui parler. Le zoo se trouve au nord-est du quartier, si vous n'y êtes pas encore allé.~ 
 @49 = ~Pas que je sache. Mais les nobles restent tous à l'écart, ces temps-ci. Le zoo est au Nord-est, si vous voulez le voir par vous-même.~
@@ -55,7 +55,7 @@
 @54 = ~Je suppose que ce magicien n'a aucun moyen de l'apprendre, pas vrai ? Eh bien... il se dit que Meldanen a récemment acheté une jeune femme pour son amusement. Il ne la laisse pas sortir, et les rumeurs disent qu'elle est étrange... Peut-être pas humaine. Les dieux seuls savent ce qu'il lui veut. Assez sordide, non ? Quoi qu'il en soit, si vous le voulez, vous pouvez aller voir la propriété de Meldanen, au Nord-ouest. Mais inutile d'entrer... Il ne reçoit personne.~ 
 @55 = ~Oh, vous savez vous y prendre. Je suppose qu'il n'y a pas de mal à... se dire des choses. Eh bien... on raconte que Meldanen a récemment acheté une jeune femme pour son amusement. Il ne la laisse pas sortir, et les rumeurs disent qu'elle est étrange... Peut-être pas humaine. Les dieux seuls savent ce qu'il lui veut. Assez sordide, non ? Quoi qu'il en soit, si vous voulez l'apercevoir, la propriété de Meldanen se trouve au Nord-ouest. Mais inutile de vous y rendre, il ne reçoit plus.~ 
 @56 = ~Pour être franche, je ne tiens pas à passer trop de temps en votre... charmante compagnie. En outre, Meldanen est un homme dangereux. Cela ne me dérangerait pas qu'il disparaisse un beau jour. Mais je n'ai jamais dit cela. Sa maison est au nord-est du quartier... Personellement, je l'évite comme la peste.~ 
-@57 = ~I... I can't fight you. Take what I have and go... Oooh! You already stole everything I had. What else do you need? Just go!~ /*Je... je ne peux rien contre vous. Prenez ce que j'ai et partez. Oui, partez. Vous tout dire à moi ? D'quoi d'autre vous avez besoin ? Personnalisé*/
+@57 = ~Je... je ne peux pas vous combattre. Prenez ce que j'ai et partez... Oh ! Vous m'avez déjà volé tout ce que j'avais. Que voulez-vous encore ? Partez !~ /*Je... je ne peux rien contre vous. Prenez ce que j'ai et partez. Oui, partez. Vous tout dire à moi ? D'quoi d'autre vous avez besoin ? Personnalisé*/
 @58 = ~Sortez de chez moi ! Voleur ! Maraudeur ! Où est la garde quand on a besoin d'elle ?~
 @59 = ~Vous voilà de retour, hein ? Il vous faut quelque chose ?~
 @60 = ~Pourrais-je vous poser quelques questions ?~

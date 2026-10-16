@@ -24,7 +24,7 @@
 @23 = ~Quelle sorte de conseil donnez-vous ?~
 @24 = ~Qu'entendez-vous par gardienne ?~
 @25 = ~Permettez-moi de vous poser une autre question.~
-@26 = ~If you mean overall, then Aawill the Archdruid is in charge. If you refer to the challenges for entrance into the druid circle, however, then you should speak to Jaer. Anything else?~/*Cela dépend de ce que vous voulez. Pour les questions générales, c'est Aawill, l'Archidruide, qui est responsable. Pour les défis permettant d'accéder au cercle druidique, il vous faut parler à Jaer. Autre chose ?*/
+@26 = ~Si vous parlez du bosquet en général, c'est Aawill, l'Archidruide, qui est responsable. Mais si vous parlez des épreuves permettant d'entrer dans le cercle druidique, vous devriez vous adresser à Jaer. Autre chose ?~/*Cela dépend de ce que vous voulez. Pour les questions générales, c'est Aawill, l'Archidruide, qui est responsable. Pour les défis permettant d'accéder au cercle druidique, il vous faut parler à Jaer. Autre chose ?*/
 @27 = ~Faites attention à vous. La voie que vous suivez est semée de dangers et de tragédies.~
 @28 = ~Navrée, je ne voulais pas me montrer désagréable. Vous avez juste mis le doigt sur un sujet douloureux. Je n'apprécie pas qu'on remue le passé.~
 @29 = ~Je comprends, mais quelquefois cela aide à soulager sa peine.~
@@ -44,8 +44,8 @@
 @43 = ~Merci de m'avoir raconté votre histoire. Adieu et prenez soin de vous.~
 @44 = ~L'Esprit des bois pousse les créatures à attaquer quiconque se trouve dans la forêt ou à proximité. Si vous avez envie d'aider, vous devriez en parler à Aawill.~
 @45 = ~Vous êtes de retour, à ce que je vois. Que puis-je faire pour vous ?~
-@46 = ~You agree to help our forest? This is a difficult task, good luck to you. May Silvanus be with you.~ /*C'est d'accord. Comme vous voulez. Bonne chance à vous. Que Silvanus soit avec vous.*/
-@47 = ~Thanks to you, our forest is alive again. Thank you, may luck always be with you!~ /*Vous pensez pouvoir vous mesurer à moi ? Réfléchissez encore. Merci, cela devrait faire l'affaire.*/
-@48 = ~Thanks to you, our forest is alive again, and I can finally go to Kend's grave. Thank you, may luck always be with you!~ /*Il faut découvrir ce qui se passe. Peut-être arrivons-nous déjà trop tard. Merci, cela devrait faire l'affaire.*/
-@49 = ~The spirit of the forest is dead! Our forest will never be the same, this is a huge loss!~ 
+@46 = ~Vous acceptez d'aider notre forêt ? La tâche sera difficile. Bonne chance à vous. Que Silvanus soit avec vous.~ /*C'est d'accord. Comme vous voulez. Bonne chance à vous. Que Silvanus soit avec vous.*/
+@47 = ~Grâce à vous, notre forêt vit de nouveau. Merci. Puisse la chance toujours vous accompagner !~ /*Vous pensez pouvoir vous mesurer à moi ? Réfléchissez encore. Merci, cela devrait faire l'affaire.*/
+@48 = ~Grâce à vous, notre forêt vit de nouveau et je peux enfin aller sur la tombe de Kend. Merci. Puisse la chance toujours vous accompagner !~ /*Il faut découvrir ce qui se passe. Peut-être arrivons-nous déjà trop tard. Merci, cela devrait faire l'affaire.*/
+@49 = ~L'Esprit des bois est mort ! Notre forêt ne sera plus jamais la même. C'est une perte immense !~ 
 /*L'Esprit des Forêts est mort. La forêt ne sera plus jamais la même.*/

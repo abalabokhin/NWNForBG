@@ -39,7 +39,7 @@
 @38 = ~J'ai besoin du fruit de l'Ultarg, un arbre rare. J'ai ses graines, mais l'arbre ne porte de fruits que tous les dix mille ans environ. Je voudrais que vous utilisiez ce siphon temporel pour planter un arbre.~
 @39 = ~Mais souvenez-vous des règles. Un – vous ne pouvez pas quitter la zone du siphon temporel. C'est physique, vous ne pourrez pas quitter le complexe souterrain une fois dans le passé. Deux – vous ne pouvez ramener du passé aucun objet de pouvoir avec vous. Quand vous reviendrez, seul ce que vous aviez emporté avec vous et les objets ordinaires pourront vous accompagner.~ 
 @40 = ~Simple.~
-@41 = ~That's what you said at our next meeting! Anyway, that's about all I can tell you about time travel.~/*C'est ce que vous avez dit la prochaine fois ! Enfin, c'est tout ce que je peux vous dire sur le voyage temporel. Autre chose ?*/
+@41 = ~C'est ce que vous m'avez dit lors de notre prochaine rencontre ! Enfin, c'est à peu près tout ce que je peux vous dire sur le voyage dans le temps.~/*C'est ce que vous avez dit la prochaine fois ! Enfin, c'est tout ce que je peux vous dire sur le voyage temporel. Autre chose ?*/
 @42 = ~D'après mes recherches, le seul endroit où l'on peut planter ces graines pour être sûr que l'arbre portera des fruits est sous la rune de garde rouge peinte sur le sol de ce jardin. Plantez l'arbre dans le passé, et je récolterai son fruit dans le présent.~
 @43 = ~D'accord.~
 @44 = ~Qu'ai-je à y gagner ?~
@@ -79,10 +79,10 @@
 @78 = ~Merci, Sapphira. Vous êtes très généreuse.~
 @79 = ~Je vous donne un arbre de dix mille ans, et vous n'avez rien d'autre à m'offrir qu'une poignée de pierres précieuses ?~
 @80 = ~Vous feriez bien de me donner autre chose, ou vous mourrez au pied de cet arbre !~
-@81 = ~Farewell, until we meet again for the first time. Ha! Another time travel joke! Or maybe I haven't told any yet...~
+@81 = ~Adieu, jusqu'à notre prochaine première rencontre. Ha ! Encore une plaisanterie sur le voyage dans le temps ! À moins que je n'en aie pas encore raconté...~
 /*Adieu, <CHARNAME>, jusqu'à notre prochaine première rencontre. Ha! Encore une blague de voyageur temporel!*/
 @83 = ~Eh bien, j'imagine que je peux vous donner autre chose. Après tout, vous avez failli être capturé par ces esclavagistes écailleux du passé. Je n'ai pas grand chose d'autre sur moi que ce parchemin. Vous pouvez le prendre. Je n'ai rien d'autre à vous donner.~ 
-@84 = ~True enough but those gems were a thousand centuries in the making, weren't they? I think we are even.~/*C'est vrai, mais ces pierres se sont faites en mille ans, non ? Je pense que nous sommes quittes, <CHARNAME>.*/
+@84 = ~C'est vrai, mais il a fallu mille siècles pour former ces gemmes, n'est-ce pas ? Je crois que nous sommes quittes.~/*C'est vrai, mais ces pierres se sont faites en mille ans, non ? Je pense que nous sommes quittes, <CHARNAME>.*/
 @85 = ~J'ai travaillé trop dur pour mourir aujourd'hui, quelques jours avant d'obtenir un fruit de l'Ultarg. Très bien, je vous donner ce parchemin contre ma vie.~
 @86 = ~Oh ! Bonjour ! Je ne vous avais pas vu. J'étais trop occupée à étudier cet arbre incroyable. Il est remarquable, n'est-ce pas ? Dix mille ans pour produire un seul fruit puis il meurt.~ [NWSAPP57]
 @87 = ~Quelques jours à peine jusqu'à ce que le fruit de l'Ultarg n'éclose, et je ne peux pas rater cette chance. Heureusement que j'ai trouvé quelqu'un pour remonter dans le temps et planter ces graines.~

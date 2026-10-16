@@ -1,4 +1,4 @@
-@0 = ~Welcome to my home. Is there something I can do for you, <SIRMAAM>?~ [NWJADA51]/*Bienvenue dans ma demeure. Puis-je faire quelque chose pour vous, <SIRMAAM> ?*/
+@0 = ~Bienvenue chez moi. Puis-je faire quelque chose pour vous, <SIRMAAM> ?~ [NWJADA51]/*Bienvenue dans ma demeure. Puis-je faire quelque chose pour vous, <SIRMAAM> ?*/
 @1 = ~Je veux vous parler de l'anneau d'Erb.~
 @2 = ~Qui êtes-vous ?~
 @3 = ~Pourrais-je vous poser quelques questions ?~
@@ -52,7 +52,7 @@
 @51 = ~J'en ai assez de marchander. Donnez-moi la bague !~
 @52 = ~Au revoir. Peut-être à une prochaine fois.~
 @53 = ~Ah, je préfère.~
-@54 = ~I... I... fine! If Erbie wants to send some goons to steal my ring, then you can have it! Just give me a moment...~/*Je... je... d'accord ! Si Erbie a besoin d'avoir recours à une brute pour me voler ma bague, prenez-la ! Laissez-moi quelques instants...*/
+@54 = ~Je... je... très bien ! Si Erbie veut envoyer des brutes voler ma bague, prenez-la ! Accordez-moi juste un instant...~/*Je... je... d'accord ! Si Erbie a besoin d'avoir recours à une brute pour me voler ma bague, prenez-la ! Laissez-moi quelques instants...*/
 @55 = ~Alors ? Vous vous excusez, oui ou non ?~
 @56 = ~Aïe ! Brute ! Bandit ! Gardes, à moi !~
 @57 = ~C'est une plaisanterie ! Je n'ai jamais entendu parler d'une telle loi !~

@@ -16,7 +16,7 @@
 @15 = ~Dans ce cas, soit vous faites montre de bon sens, soit Baram jette son argent par les fenêtres. Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j'estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
 @16 = ~Ça alors ! J'ai du mal à le croire... Le haut capitaine Suljack était censé être mort, lui aussi. Mais je sais de source sûre qu'il est bel et bien vivant. Vous n'auriez pas sa tête sur vous, des fois ? Voilà une preuve qui me convaincrait...~ 
 @17 = ~Si, je l'ai là.~
-@18 = ~Uh. I don't have the head.~/*Utiliser Je n'ai pas assez.*/
+@18 = ~Euh... Je n'ai pas la tête.~/*Utiliser Je n'ai pas assez.*/
 @19 = ~Je vous répondrais volontiers... si seulement vous acceptiez de terrasser Baram.~
 @20 = ~Ah ! quel dommage, vraiment. Revenez me voir si vous changez d'avis. Des fois que vous ayez dans l'idée de franchir cette herse, je vous le déconseille vivement.~ 
 @21 = ~Pour quelle raison ? Mais cela ne me regarde pas, me direz-vous. Si vous tenez vraiment à mourir, c'est votre affaire. Néanmoins, je ne vais pas me mettre la Confrérie à dos en vous remettant mon laissez-passer. Mais Baram a le même. Acceptez mon offre et vous pourrez prendre le sien, si vous voulez.~ 
@@ -40,10 +40,10 @@
 @39 = ~Et Evaine ?~
 @40 = ~Je veux également qu'Evaine soit libérée.~
 @41 = ~C'est tout ?~
-@42 = ~Good. Now we can kill you.~/*Très bien. Non, moi préférer tuer vous.*/
+@42 = ~Bien. Maintenant, nous pouvons vous tuer.~/*Très bien. Non, moi préférer tuer vous.*/
 @43 = ~Ah. Je vous préviens, vous ne me persuaderez pas que cette petite fouine a cessé de vivre tant que je ne verrai pas sa tête.~
 @44 = ~Hmmm... Vous voudriez que je la relâche, hein ? Très bien. Amenez-moi la tête de Baram et je la laisserai partir.~
-@45 = ~What about my original offer, then? Baram's head in exchange for the reward... ?~/*Parfait. Et que dites-vous de mon offre ? La tête de Baram en échange de la récompense...*/
+@45 = ~Et ma première proposition, alors ? La tête de Baram contre la récompense... ?~/*Parfait. Et que dites-vous de mon offre ? La tête de Baram en échange de la récompense...*/
 @46 = ~Allons, étranger... 1 000 pièces d'or représentent une belle somme, non ? Et n'oubliez pas que rien ne me dit que vous soyez capable de remplir cette mission. Alors, intéressé, oui ou non ?~
 @47 = ~Ah ! quel dommage, vraiment. Revenez me voir si vous changez d'avis. Des fois que vous ayez dans l'idée de franchir cette herse, je vous le déconseille vivement.~ 
 @48 = ~Je vous écoute.~
@@ -62,7 +62,7 @@
 @61 = ~Ha ! Je savais bien que vous ne tiendriez jamais parole ! Quoi qu'il en soit, vous voilà bien assez loin. Si vous tentez de franchir cette grille, j'estimerai que vous allez tenter d'accomplir votre mission, compris ?~ 
 @62 = ~Quoi, Evaine ? Oh, vous ne pensiez tout de même pas que j'allais la libérer, si ? Quel idiot vous faites ! C'est une source intarissable de plaisir et d'amusement... Et comme je suis le dernier haut capitaine, je peux faire ce qui me plaît. En conséquence, je la garde, merci beaucoup. Quant à nous, notre affaire est conclue. Filez, si vous ne voulez pas qu'il vous arrive malheur.~ 
 @63 = ~Très bien, mais cette affaire n'est pas terminée.~
-@64 = ~I killed one High Captain... I can just as easily kill another.~/*Je viens de tuer un haut capitaine, Kurth... Je peux tout aussi bien en tuer un deuxième...*/
+@64 = ~J'ai tué un Haut Capitaine... Je peux tout aussi bien en tuer un autre.~/*Je viens de tuer un haut capitaine, Kurth... Je peux tout aussi bien en tuer un deuxième...*/
 @65 = ~Mais c'est abominable ! Vous ne vous en tirerez pas comme ça !~
 @66 = ~Voyons, cela ne faisait pas partie de notre accord... Et même dans le cas contraire, je doute que j'aurais accepté de la relâcher, compte tenu de la situation actuelle. C'est une source intarissable de plaisir et d'amusement... Et comme je suis le dernier haut capitaine, je peux faire ce qui me plaît. En conséquence, je la garde, merci beaucoup. Quant à nous, notre affaire est conclue. Filez, si vous ne voulez pas qu'il vous arrive malheur.~ 
 @67 = ~Tout à fait. J'ai fort à faire, maintenant que je suis le seul haut capitaine. Vous m'avez été fort utile, mais je n'ai plus besoin de vous, désormais. Débarrassez-moi le plancher.~
@@ -72,7 +72,7 @@
 @71 = ~Quel genre de récompense ?~
 @72 = ~Non merci~
 @73 = ~Ça m'intéresse.~
-@74 = ~What about my original offer, then? Baram's head in exchange for the reward... ?~/*Parfait. Et que dites-vous de mon offre ? La tête de Baram en échange de la récompense...*/
+@74 = ~Et ma première proposition, alors ? La tête de Baram contre la récompense... ?~/*Parfait. Et que dites-vous de mon offre ? La tête de Baram en échange de la récompense...*/
 @75 = ~Et fille elfe ? Evaine ?~
 @76 = ~Je vous écoute.~
 @77 = ~Tiens, entendez-vous cela ? J'ai surtout l'impression que vous vous jouez de moi depuis le début. Eh bien, tant mieux pour vous, étranger. Quoi que vous puissiez avoir en tête, essayez d'entrer dans mon repaire et vous comprendrez que vous vous êtes lourdement trompé sur mon compte.~ 
@@ -97,5 +97,5 @@
 @96 = ~Qu'y a-t-il encore ? J'espère que vous venez m'apprendre la mort de Baram !~ [NWKURT52]
 @97 = ~En effet, Baram est mort.~
 @98 = ~Très bien. J'espère voir la tête de Baram rapidement.~
-@99 = ~Baram dead.~/*Tête de Baram*/
+@99 = ~Baram est mort.~/*Tête de Baram*/
 @100 = ~Vous et moi n'avons plus rien à nous dire ! Mettez un pied dans ma base et vous en subirez les conséquences, imbécile !~ [NWKURT51]
