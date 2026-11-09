@@ -334,13 +334,13 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 		BUT_ONLY_IF_IT_CHANGES
 
 	COPY_EXISTING ~ui.menu~ ~override~
-		REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1) then
+		REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1 then
 			currentCampaign = const.START_CAMPAIGN_NWN
 		elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
 
 	ACTION_IF FILE_EXISTS ~EET/SoD_GUI/UI.MENU~ BEGIN
 		COPY ~EET/SoD_GUI/UI.MENU~ ~EET/SoD_GUI~
-			REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1) then
+			REPLACE_TEXTUALLY ~elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~ ~elseif (chapter > 0) and (chapter < 5) and (checkCampaign %tilde%= const.START_CAMPAIGN_NWN) and Infinity_GetScriptVarInt('NWN_Quest_Status') == 1 then
 			currentCampaign = const.START_CAMPAIGN_NWN
 		elseif (chapter > 0) and (chapter < 7) and (checkCampaign %tilde%= const.START_CAMPAIGN_BG1) then~
 	END
